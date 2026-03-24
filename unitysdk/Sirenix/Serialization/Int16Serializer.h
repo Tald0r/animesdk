@@ -6,13 +6,13 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace System { class String; }
 
-#define SIRENIX_SERIALIZATION_INT16SERIALIZER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1B01FB40)
-#define SIRENIX_SERIALIZATION_INT16SERIALIZER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1B020000)
-#define SIRENIX_SERIALIZATION_INT16SERIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0200C0)
+#define SIRENIX_SERIALIZATION_INT16SERIALIZER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1B62BDA0)
+#define SIRENIX_SERIALIZATION_INT16SERIALIZER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1B62C260)
+#define SIRENIX_SERIALIZATION_INT16SERIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B62C320)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int Int16Serializer_TypeDefinitionIndex = 7408;
+	inline static constexpr unsigned int Int16Serializer_TypeDefinitionIndex = 7413;
 
 	class Int16Serializer : public ::Sirenix::Serialization::Serializer_1<::System::Int16>
 	{

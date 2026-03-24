@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define DEST_MATH_CONCAVEHULL2_EDGE__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3730)
+#define DEST_MATH_CONCAVEHULL2_EDGE__CTOR_OFFSET UNITYSDK_OFFSET(0x2F3C30)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int ConcaveHull2_Edge_TypeDefinitionIndex = 31612;
+	inline static constexpr unsigned int ConcaveHull2_Edge_TypeDefinitionIndex = 32566;
 
 	struct alignas(4) ConcaveHull2_Edge
 	{

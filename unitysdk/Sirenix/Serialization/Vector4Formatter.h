@@ -7,21 +7,21 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1A7182D0)
-#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1A718400)
-#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A718590)
-#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A718550)
+#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1ACC32D0)
+#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1ACC3400)
+#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ACC3590)
+#define SIRENIX_SERIALIZATION_VECTOR4FORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACC3550)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int Vector4Formatter_TypeDefinitionIndex = 7455;
+	inline static constexpr unsigned int Vector4Formatter_TypeDefinitionIndex = 7460;
 
 	class Vector4Formatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::UnityEngine::Vector4>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_FloatSerializer()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(Vector4Formatter_TypeDefinitionIndex)->GetStaticField(0x6530);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(Vector4Formatter_TypeDefinitionIndex)->GetStaticField(0x6570);
 		}
 
 		::System::Void _ctor()

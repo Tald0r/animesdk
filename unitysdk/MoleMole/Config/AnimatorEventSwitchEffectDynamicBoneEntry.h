@@ -5,18 +5,18 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTSWITCHEFFECTDYNAMICBONEENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x6D3EA30)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTSWITCHEFFECTDYNAMICBONEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3EAD0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTSWITCHEFFECTDYNAMICBONEENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xBADFB90)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTSWITCHEFFECTDYNAMICBONEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xBADFC30)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventSwitchEffectDynamicBoneEntry_TypeDefinitionIndex = 55683;
+	inline static constexpr unsigned int AnimatorEventSwitchEffectDynamicBoneEntry_TypeDefinitionIndex = 69995;
 
 	class AnimatorEventSwitchEffectDynamicBoneEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
-		::System::String* effectCodeName; // 0x58
-		::System::String* switchKey; // 0x60
+		::System::String* switchKey; // 0x58
+		::System::String* effectCodeName; // 0x60
 		::System::Boolean IsGlobal; // 0x68
 
 		::System::Void _ctor()

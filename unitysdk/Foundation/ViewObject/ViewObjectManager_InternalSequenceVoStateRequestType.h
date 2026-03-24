@@ -3,12 +3,12 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectManager_InternalSequenceVoStateRequestType_TypeDefinitionIndex = 49694;
+	inline static constexpr unsigned int ViewObjectManager_InternalSequenceVoStateRequestType_TypeDefinitionIndex = 74585;
 
 	enum class ViewObjectManager_InternalSequenceVoStateRequestType : ::System::Int32
 	{
-		UNKNOWN = -1,
 		WRITE = 1,
+		UNKNOWN = -1,
 		READ = 0,
 	};
 }

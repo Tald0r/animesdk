@@ -5,12 +5,12 @@
 namespace MoleMole { class UIHollowMainBottomWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS53_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA1A4050)
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS53_0__SCHEDULECALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0xA1A4060)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS53_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9D36470)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS53_0__SCHEDULECALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x9D36480)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass53_0_TypeDefinitionIndex = 78258;
+	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass53_0_TypeDefinitionIndex = 76064;
 
 	class UIHollowMainBottomWidgetController___c__DisplayClass53_0 : public ::System::Object
 	{

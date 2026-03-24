@@ -7,20 +7,20 @@ namespace MoleMole { class UIMissionTipsContainerWidgetController; }
 namespace MoleMole { class UIMissionTipsContainerWidgetController_MissionTipData; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS96_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2456D0)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS96_0__PLAYACTIVITYTIP_B__0_OFFSET UNITYSDK_OFFSET(0xB245820)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS96_0__PLAYACTIVITYTIP_B__3_OFFSET UNITYSDK_OFFSET(0xB2456E0)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS96_0__CTOR_OFFSET UNITYSDK_OFFSET(0x747A580)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS96_0__PLAYACTIVITYTIP_B__0_OFFSET UNITYSDK_OFFSET(0x747A6D0)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS96_0__PLAYACTIVITYTIP_B__3_OFFSET UNITYSDK_OFFSET(0x747A590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass96_0_TypeDefinitionIndex = 75682;
+	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass96_0_TypeDefinitionIndex = 70958;
 
 	class UIMissionTipsContainerWidgetController___c__DisplayClass96_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIMissionTipsContainerWidgetController* __4__this; // 0x10
-		::MoleMole::UIMissionTipsContainerWidgetController_MissionTipData* tipData; // 0x18
-		::Class_1_4865323EE33E9248* activityPopData; // 0x20
+		::Class_1_4865323EE33E9248* activityPopData; // 0x10
+		::MoleMole::UIMissionTipsContainerWidgetController* __4__this; // 0x18
+		::MoleMole::UIMissionTipsContainerWidgetController_MissionTipData* tipData; // 0x20
 
 		::System::Void _ctor()
 		{

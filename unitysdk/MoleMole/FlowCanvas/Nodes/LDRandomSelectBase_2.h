@@ -9,7 +9,7 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDRandomSelectBase_2_TypeDefinitionIndex = 50395;
+	inline static constexpr unsigned int LDRandomSelectBase_2_TypeDefinitionIndex = 52638;
 
 	template <typename TKey, typename TValue>
 	class LDRandomSelectBase_2 : public ::FlowCanvas::Nodes::SimplexNode

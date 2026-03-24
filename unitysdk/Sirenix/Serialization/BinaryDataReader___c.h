@@ -2,23 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A704F20)
-#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A704F50)
-#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_0_OFFSET UNITYSDK_OFFSET(0x1A704F60)
-#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_1_OFFSET UNITYSDK_OFFSET(0x1A704FE0)
-#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_2_OFFSET UNITYSDK_OFFSET(0x1A705020)
-#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_3_OFFSET UNITYSDK_OFFSET(0x1A705060)
+#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ACB0180)
+#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACB01B0)
+#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_0_OFFSET UNITYSDK_OFFSET(0x1ACB01C0)
+#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_1_OFFSET UNITYSDK_OFFSET(0x1ACB0240)
+#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_2_OFFSET UNITYSDK_OFFSET(0x1ACB0280)
+#define SIRENIX_SERIALIZATION_BINARYDATAREADER___C___CCTOR_B__70_3_OFFSET UNITYSDK_OFFSET(0x1ACB02C0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int BinaryDataReader___c_TypeDefinitionIndex = 7281;
+	inline static constexpr unsigned int BinaryDataReader___c_TypeDefinitionIndex = 7286;
 
 	class BinaryDataReader___c : public ::System::Object
 	{
 	public:
 		static ::Sirenix::Serialization::BinaryDataReader___c** StaticGet___9()
 		{
-			return (::Sirenix::Serialization::BinaryDataReader___c**)Il2CppClass::FromTypeDefinitionIndex(BinaryDataReader___c_TypeDefinitionIndex)->GetStaticField(0x6200);
+			return (::Sirenix::Serialization::BinaryDataReader___c**)Il2CppClass::FromTypeDefinitionIndex(BinaryDataReader___c_TypeDefinitionIndex)->GetStaticField(0x6240);
 		}
 
 		static ::System::Void _cctor()

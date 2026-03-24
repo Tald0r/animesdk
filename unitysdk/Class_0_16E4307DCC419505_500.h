@@ -1,9 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace UnityEngine { class Transform; }
+namespace MoleMole::MiniGame::BangbooPartyGame { class MonoBangbooPartyAIPathPoint; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_500_TypeDefinitionIndex = 62496;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_500_TypeDefinitionIndex = 53826;
 
 class Class_0_16E4307DCC419505_500
 {

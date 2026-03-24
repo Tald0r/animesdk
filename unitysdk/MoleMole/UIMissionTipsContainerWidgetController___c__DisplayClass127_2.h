@@ -6,24 +6,24 @@ namespace MoleMole { class UIMissionTipsContainerWidgetController___c__DisplayCl
 namespace MoleMole { class UIMissionTipsRowMultiWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__CTOR_OFFSET UNITYSDK_OFFSET(0x9455F90)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__0_OFFSET UNITYSDK_OFFSET(0x9455FA0)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__1_OFFSET UNITYSDK_OFFSET(0x9456030)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__2_OFFSET UNITYSDK_OFFSET(0x94561D0)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__3_OFFSET UNITYSDK_OFFSET(0x9456260)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__CTOR_OFFSET UNITYSDK_OFFSET(0xA41DD00)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__0_OFFSET UNITYSDK_OFFSET(0xA41DD10)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__1_OFFSET UNITYSDK_OFFSET(0xA41DDA0)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__2_OFFSET UNITYSDK_OFFSET(0xA41DF40)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS127_2__PLAYREFRESHTRACK_B__3_OFFSET UNITYSDK_OFFSET(0xA41DFD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass127_2_TypeDefinitionIndex = 75720;
+	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass127_2_TypeDefinitionIndex = 70929;
 
 	class UIMissionTipsContainerWidgetController___c__DisplayClass127_2 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIMissionTipsContainerWidgetController___c__DisplayClass127_1* CS___8__locals2; // 0x10
-		::System::Action* __9__3; // 0x18
-		::System::Action* __9__1; // 0x20
-		::System::Action* __9__2; // 0x28
-		::MoleMole::UIMissionTipsRowMultiWidgetController* trackWidget; // 0x30
+		::System::Action* __9__3; // 0x10
+		::System::Action* __9__1; // 0x18
+		::MoleMole::UIMissionTipsContainerWidgetController___c__DisplayClass127_1* CS___8__locals2; // 0x20
+		::MoleMole::UIMissionTipsRowMultiWidgetController* trackWidget; // 0x28
+		::System::Action* __9__2; // 0x30
 
 		::System::Void _ctor()
 		{

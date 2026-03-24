@@ -3,9 +3,9 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MONOSCENEMAP3DCONFIG_FLOORPOSINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xAD00730)
+#define MONOSCENEMAP3DCONFIG_FLOORPOSINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x9A32F60)
 
-inline static constexpr unsigned int MonoSceneMap3DConfig_FloorPosInfo_TypeDefinitionIndex = 57959;
+inline static constexpr unsigned int MonoSceneMap3DConfig_FloorPosInfo_TypeDefinitionIndex = 47949;
 
 class MonoSceneMap3DConfig_FloorPosInfo : public ::System::Object
 {

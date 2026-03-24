@@ -1,12 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_B986CD89D081894B.h"
-#include "unitysdk/Struct_2_519740F826A15881.h"
-#include "unitysdk/Struct_2_F213AC3D3FBF57B9.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
-class Class_0_16E4307DCC419505_395;
+class Class_2_7A1F9B1E855D33CF;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_634_TypeDefinitionIndex = 65251;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_634_TypeDefinitionIndex = 66890;
 
 class Class_0_16E4307DCC419505_634
 {

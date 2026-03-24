@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class LiftGammaGainBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_LIFTGAMMAGAINCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8FA3830)
-#define MOLEMOLE_TIMELINE_LIFTGAMMAGAINCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8FA3820)
-#define MOLEMOLE_TIMELINE_LIFTGAMMAGAINCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA3A30)
+#define MOLEMOLE_TIMELINE_LIFTGAMMAGAINCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xC330400)
+#define MOLEMOLE_TIMELINE_LIFTGAMMAGAINCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xC3303F0)
+#define MOLEMOLE_TIMELINE_LIFTGAMMAGAINCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xC330600)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int LiftGammaGainClip_TypeDefinitionIndex = 58530;
+	inline static constexpr unsigned int LiftGammaGainClip_TypeDefinitionIndex = 69861;
 
 	class LiftGammaGainClip : public ::UnityEngine::Playables::PlayableAsset
 	{

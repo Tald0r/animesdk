@@ -5,7 +5,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int UpdateKodamaLightingParams_TypeDefinitionIndex = 5922;
+	inline static constexpr unsigned int UpdateKodamaLightingParams_TypeDefinitionIndex = 5925;
 
 	struct alignas(4) UpdateKodamaLightingParams
 	{

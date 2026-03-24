@@ -3,12 +3,12 @@
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_5.h"
 #include "unitysdk/ParadoxNotion/Animation/EaseType.h"
 
-#define FLOWCANVAS_NODES_LERPFLOAT_INVOKE_OFFSET UNITYSDK_OFFSET(0x19C79CE0)
-#define FLOWCANVAS_NODES_LERPFLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x19C79E20)
+#define FLOWCANVAS_NODES_LERPFLOAT_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A21B480)
+#define FLOWCANVAS_NODES_LERPFLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A21B5C0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LerpFloat_TypeDefinitionIndex = 25813;
+	inline static constexpr unsigned int LerpFloat_TypeDefinitionIndex = 26375;
 
 	class LerpFloat : public ::FlowCanvas::Nodes::PureFunctionNode_5<::System::Single, ::System::Single, ::System::Single, ::System::Single, ::ParadoxNotion::Animation::EaseType>
 	{

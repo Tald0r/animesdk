@@ -7,11 +7,11 @@ namespace MoleMole::Config { class ConfigLensDistortion; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGLENSDISTORTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0xCC98040)
+#define MOLEMOLE_CONFIG_CONFIGLENSDISTORTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0xACC5FD0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLensDistortions_TypeDefinitionIndex = 62464;
+	inline static constexpr unsigned int ConfigLensDistortions_TypeDefinitionIndex = 45609;
 
 	class ConfigLensDistortions : public ::Foundation::MihoyoSerializedScriptableObject
 	{

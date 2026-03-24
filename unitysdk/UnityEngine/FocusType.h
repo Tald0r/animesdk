@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int FocusType_TypeDefinitionIndex = 6357;
+	inline static constexpr unsigned int FocusType_TypeDefinitionIndex = 6361;
 
 	enum class FocusType : ::System::Int32
 	{

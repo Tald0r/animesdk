@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_PROPERTYSPACEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AB09830)
-#define SIRENIX_ODININSPECTOR_PROPERTYSPACEATTRIBUTE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1AB09840)
-#define SIRENIX_ODININSPECTOR_PROPERTYSPACEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB09820)
+#define SIRENIX_ODININSPECTOR_PROPERTYSPACEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B115950)
+#define SIRENIX_ODININSPECTOR_PROPERTYSPACEATTRIBUTE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1B115960)
+#define SIRENIX_ODININSPECTOR_PROPERTYSPACEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115940)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int PropertySpaceAttribute_TypeDefinitionIndex = 7208;
+	inline static constexpr unsigned int PropertySpaceAttribute_TypeDefinitionIndex = 7213;
 
 	class PropertySpaceAttribute : public ::System::Attribute
 	{
 	public:
-		::System::Single SpaceBefore; // 0x10
-		::System::Single SpaceAfter; // 0x14
+		::System::Single SpaceAfter; // 0x10
+		::System::Single SpaceBefore; // 0x14
 
 		::System::Void _ctor()
 		{

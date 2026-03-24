@@ -10,13 +10,13 @@ namespace UnityEngine { class MeshFilter; }
 namespace UnityEngine { class MeshRenderer; }
 namespace UnityEngine { class SpriteRenderer; }
 
-#define MOLEMOLE_ARCADE_SNAKEDEMO_SNAKESURFACE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x18A50820)
-#define MOLEMOLE_ARCADE_SNAKEDEMO_SNAKESURFACE_SETPLAYER_OFFSET UNITYSDK_OFFSET(0x18A4C740)
-#define MOLEMOLE_ARCADE_SNAKEDEMO_SNAKESURFACE__CTOR_OFFSET UNITYSDK_OFFSET(0x18A509A0)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_SNAKESURFACE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x19BF4260)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_SNAKESURFACE_SETPLAYER_OFFSET UNITYSDK_OFFSET(0x19BF4200)
+#define MOLEMOLE_ARCADE_SNAKEDEMO_SNAKESURFACE__CTOR_OFFSET UNITYSDK_OFFSET(0x19BF43E0)
 
 namespace MoleMole::Arcade::SnakeDemo
 {
-	inline static constexpr unsigned int SnakeSurface_TypeDefinitionIndex = 81605;
+	inline static constexpr unsigned int SnakeSurface_TypeDefinitionIndex = 83644;
 
 	class SnakeSurface : public ::UnityEngine::MonoBehaviour
 	{

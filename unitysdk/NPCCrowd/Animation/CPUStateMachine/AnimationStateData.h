@@ -4,11 +4,11 @@
 #include "unitysdk/NPCCrowd/Animation/CPUStateMachine/AnimationData.h"
 #include "unitysdk/System/ValueType.h"
 
-#define NPCCROWD_ANIMATION_CPUSTATEMACHINE_ANIMATIONSTATEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x2CA000)
+#define NPCCROWD_ANIMATION_CPUSTATEMACHINE_ANIMATIONSTATEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x311B00)
 
 namespace NPCCrowd::Animation::CPUStateMachine
 {
-	inline static constexpr unsigned int AnimationStateData_TypeDefinitionIndex = 69794;
+	inline static constexpr unsigned int AnimationStateData_TypeDefinitionIndex = 66754;
 
 	struct alignas(8) AnimationStateData
 	{

@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER___C__DISPLAYCLASS0_0__CREATEVIRTUALMACHINE_B__0_OFFSET UNITYSDK_OFFSET(0x1991C010)
-#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1991BFF0)
+#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER___C__DISPLAYCLASS0_0__CREATEVIRTUALMACHINE_B__0_OFFSET UNITYSDK_OFFSET(0x19EB6070)
+#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19EB6050)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int SimpleVirtualMachineBuilder___c__DisplayClass0_0_TypeDefinitionIndex = 6788;
+	inline static constexpr unsigned int SimpleVirtualMachineBuilder___c__DisplayClass0_0_TypeDefinitionIndex = 6792;
 
 	class SimpleVirtualMachineBuilder___c__DisplayClass0_0 : public ::System::Object
 	{

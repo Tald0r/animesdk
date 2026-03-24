@@ -5,9 +5,9 @@
 namespace MoleMole { class UIWindowController; }
 namespace System { class Action; }
 
-#define CLASS_2_FFA1DC45E82895CA_STRUCT_2_46A3F15720DA5D2E__CTOR_OFFSET UNITYSDK_OFFSET(0x3481C0)
+#define CLASS_2_FFA1DC45E82895CA_STRUCT_2_46A3F15720DA5D2E__CTOR_OFFSET UNITYSDK_OFFSET(0x30B240)
 
-inline static constexpr unsigned int Class_2_FFA1DC45E82895CA_Struct_2_46A3F15720DA5D2E_TypeDefinitionIndex = 68249;
+inline static constexpr unsigned int Class_2_FFA1DC45E82895CA_Struct_2_46A3F15720DA5D2E_TypeDefinitionIndex = 57756;
 
 struct alignas(8) Class_2_FFA1DC45E82895CA_Struct_2_46A3F15720DA5D2E
 {

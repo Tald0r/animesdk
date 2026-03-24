@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/Config/TimePeriodType.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_LEVEL_LEVELCONFIG_DAYTIMERANGE_CHECKINTIMERANGE_OFFSET UNITYSDK_OFFSET(0x4E02A0)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_DAYTIMERANGE_CHECKINTIMERANGE_OFFSET UNITYSDK_OFFSET(0x33FC10)
 
 namespace MoleMole::Level
 {
-	inline static constexpr unsigned int LevelConfig_DayTimeRange_TypeDefinitionIndex = 55875;
+	inline static constexpr unsigned int LevelConfig_DayTimeRange_TypeDefinitionIndex = 39453;
 
 	struct alignas(4) LevelConfig_DayTimeRange
 	{

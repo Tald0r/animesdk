@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFashionStoreGameKeyOnTrailWidgetController_KeyState_TypeDefinitionIndex = 57279;
+	inline static constexpr unsigned int UIFashionStoreGameKeyOnTrailWidgetController_KeyState_TypeDefinitionIndex = 56893;
 
 	enum class UIFashionStoreGameKeyOnTrailWidgetController_KeyState : ::System::Int32
 	{

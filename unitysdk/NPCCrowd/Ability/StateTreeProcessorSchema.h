@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int StateTreeProcessorSchema_TypeDefinitionIndex = 64117;
+	inline static constexpr unsigned int StateTreeProcessorSchema_TypeDefinitionIndex = 78922;
 
 	class StateTreeProcessorSchema : public ::System::Object
 	{

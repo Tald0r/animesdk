@@ -8,13 +8,13 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CAMERAS_OVERSHOULDERCAMERACONFIG_GET_RUNTIMEMAXPITCH_OFFSET UNITYSDK_OFFSET(0x89E0CF0)
-#define MOLEMOLE_CAMERAS_OVERSHOULDERCAMERACONFIG_GET_RUNTIMEMINPITCH_OFFSET UNITYSDK_OFFSET(0x89E0CE0)
-#define MOLEMOLE_CAMERAS_OVERSHOULDERCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x89E0D00)
+#define MOLEMOLE_CAMERAS_OVERSHOULDERCAMERACONFIG_GET_RUNTIMEMAXPITCH_OFFSET UNITYSDK_OFFSET(0xB3808B0)
+#define MOLEMOLE_CAMERAS_OVERSHOULDERCAMERACONFIG_GET_RUNTIMEMINPITCH_OFFSET UNITYSDK_OFFSET(0xB3808A0)
+#define MOLEMOLE_CAMERAS_OVERSHOULDERCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB3808C0)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int OverShoulderCameraConfig_TypeDefinitionIndex = 44773;
+	inline static constexpr unsigned int OverShoulderCameraConfig_TypeDefinitionIndex = 70782;
 
 	class OverShoulderCameraConfig : public ::System::Object
 	{
@@ -48,19 +48,20 @@ namespace MoleMole::Cameras
 		::UnityEngine::Vector2 AccelTime; // 0xA0
 		::UnityEngine::Vector2 DecelTime; // 0xA8
 		::System::Boolean ApplyCameraFowardAsAimDir; // 0xB0
-		::System::Boolean EnableStretchPosOffsetY; // 0xB1
-		::System::Boolean forceUseActCameraFOV; // 0xB2
-		::System::Boolean forceUseActCameraRollAngle; // 0xB3
-		::System::Single OverrideCollisionInterpToSpeed; // 0xB4
-		::System::Boolean EnableShake; // 0xB8
-		::System::Single ShakeScale; // 0xBC
-		::System::Boolean EnableZoom; // 0xC0
-		::System::Single ZoomScale; // 0xC4
-		::System::Boolean EnableStretch; // 0xC8
-		::System::Single StretchScale; // 0xCC
-		::System::Boolean isFirstPersonView; // 0xD0
-		::System::Single animatorPitchMinAngle; // 0xD4
-		::System::Single animatorPitchMaxAngle; // 0xD8
+		::System::Boolean IgnoreLookAtScreenOffset; // 0xB1
+		::System::Boolean EnableStretchPosOffsetY; // 0xB2
+		::System::Boolean forceUseActCameraFOV; // 0xB3
+		::System::Boolean forceUseActCameraRollAngle; // 0xB4
+		::System::Single OverrideCollisionInterpToSpeed; // 0xB8
+		::System::Boolean EnableShake; // 0xBC
+		::System::Single ShakeScale; // 0xC0
+		::System::Boolean EnableZoom; // 0xC4
+		::System::Single ZoomScale; // 0xC8
+		::System::Boolean EnableStretch; // 0xCC
+		::System::Single StretchScale; // 0xD0
+		::System::Boolean isFirstPersonView; // 0xD4
+		::System::Single animatorPitchMinAngle; // 0xD8
+		::System::Single animatorPitchMaxAngle; // 0xDC
 		::System::String* animatorBlendTreeParam; // 0xE0
 		::System::Single exitFirstPersonPolarAngle; // 0xE8
 		::System::Boolean summonedAnimatorBlend; // 0xEC

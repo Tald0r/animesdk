@@ -7,17 +7,17 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Animator; }
 namespace UnityEngine::UI::Extension { class UIDynamicNumberLabel; }
 
-#define CLASS_2_B354AB6123DFAE49_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x99E8910)
-#define CLASS_2_B354AB6123DFAE49_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x99E89D0)
-#define CLASS_2_B354AB6123DFAE49__CTOR_OFFSET UNITYSDK_OFFSET(0x99E89C0)
+#define CLASS_2_B354AB6123DFAE49_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x826B750)
+#define CLASS_2_B354AB6123DFAE49_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x826B810)
+#define CLASS_2_B354AB6123DFAE49__CTOR_OFFSET UNITYSDK_OFFSET(0x826B800)
 
-inline static constexpr unsigned int Class_2_B354AB6123DFAE49_TypeDefinitionIndex = 37610;
+inline static constexpr unsigned int Class_2_B354AB6123DFAE49_TypeDefinitionIndex = 67743;
 
 class Class_2_B354AB6123DFAE49 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_0; // 0x18
-	::UnityEngine::Animator* Field_2_1; // 0x20
+	::UnityEngine::Animator* Field_2_1; // 0x18
+	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{

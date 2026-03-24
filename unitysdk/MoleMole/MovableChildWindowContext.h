@@ -7,19 +7,19 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_MOVABLECHILDWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB2EE420)
+#define MOLEMOLE_MOVABLECHILDWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB863070)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MovableChildWindowContext_TypeDefinitionIndex = 38823;
+	inline static constexpr unsigned int MovableChildWindowContext_TypeDefinitionIndex = 41876;
 
 	class MovableChildWindowContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::UnityEngine::Events::UnityAction* OnCloseBtnCallback; // 0x28
 		::System::Collections::Generic::List_1<::Foundation::ViewObject::ViewObjectHandle>* voHandles; // 0x30
-		::Foundation::ViewObject::ViewObjectHandle openVo; // 0x38
-		::System::Collections::Generic::List_1<::System::String*>* camKeyList; // 0x48
+		::System::Collections::Generic::List_1<::System::String*>* camKeyList; // 0x38
+		::Foundation::ViewObject::ViewObjectHandle openVo; // 0x40
 
 		::System::Void _ctor()
 		{

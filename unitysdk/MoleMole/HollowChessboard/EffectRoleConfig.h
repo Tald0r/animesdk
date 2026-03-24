@@ -6,12 +6,12 @@ class Class_1_DD6534260D7F9B1A;
 namespace MoleMole::HollowChessboard { class EffectRoleEntryConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_EFFECTROLECONFIG_CREATEEFFECTROLE_OFFSET UNITYSDK_OFFSET(0xA5F6580)
-#define MOLEMOLE_HOLLOWCHESSBOARD_EFFECTROLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA5F6770)
+#define MOLEMOLE_HOLLOWCHESSBOARD_EFFECTROLECONFIG_CREATEEFFECTROLE_OFFSET UNITYSDK_OFFSET(0xA7E03B0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_EFFECTROLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA7E05A0)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int EffectRoleConfig_TypeDefinitionIndex = 50595;
+	inline static constexpr unsigned int EffectRoleConfig_TypeDefinitionIndex = 78245;
 
 	class EffectRoleConfig : public ::System::Object
 	{

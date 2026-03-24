@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ClientSceneObjectStateLooperConfigBase_LoopConditionType_TypeDefinitionIndex = 68420;
+	inline static constexpr unsigned int ClientSceneObjectStateLooperConfigBase_LoopConditionType_TypeDefinitionIndex = 58814;
 
 	enum class ClientSceneObjectStateLooperConfigBase_LoopConditionType : ::System::Int32
 	{

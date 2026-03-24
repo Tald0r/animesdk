@@ -6,12 +6,12 @@ namespace MoleMole { class UIInLevelMainPageController; }
 namespace MoleMole::FlowCanvas::Nodes { class LDShowUIMiniGame; }
 namespace System { class Action; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWUIMINIGAME___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xF1AB5B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWUIMINIGAME___C__DISPLAYCLASS9_0__SHOWMAINCITYGAME_B__0_OFFSET UNITYSDK_OFFSET(0xF1AB5C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWUIMINIGAME___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB9854C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWUIMINIGAME___C__DISPLAYCLASS9_0__SHOWMAINCITYGAME_B__0_OFFSET UNITYSDK_OFFSET(0xB9854D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowUIMiniGame___c__DisplayClass9_0_TypeDefinitionIndex = 77016;
+	inline static constexpr unsigned int LDShowUIMiniGame___c__DisplayClass9_0_TypeDefinitionIndex = 51316;
 
 	class LDShowUIMiniGame___c__DisplayClass9_0 : public ::System::Object
 	{

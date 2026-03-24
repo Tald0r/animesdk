@@ -4,11 +4,11 @@
 
 namespace UnityEngine::InputSystem { class PlayerInput; }
 
-#define UNITYENGINE_INPUTSYSTEM_PLAYERINPUTMANAGER_PLAYERJOINEDEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18683760)
+#define UNITYENGINE_INPUTSYSTEM_PLAYERINPUTMANAGER_PLAYERJOINEDEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18CCC270)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int PlayerInputManager_PlayerJoinedEvent_TypeDefinitionIndex = 27593;
+	inline static constexpr unsigned int PlayerInputManager_PlayerJoinedEvent_TypeDefinitionIndex = 28533;
 
 	class PlayerInputManager_PlayerJoinedEvent : public ::UnityEngine::Events::UnityEvent_1<::UnityEngine::InputSystem::PlayerInput*>
 	{

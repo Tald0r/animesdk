@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int AudioDataLoadState_TypeDefinitionIndex = 9605;
+	inline static constexpr unsigned int AudioDataLoadState_TypeDefinitionIndex = 9607;
 
 	enum class AudioDataLoadState : ::System::Int32
 	{

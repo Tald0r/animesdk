@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAINCITYCAMERABTNWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA807460)
-#define MOLEMOLE_UIMAINCITYCAMERABTNWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA8074A0)
-#define MOLEMOLE_UIMAINCITYCAMERABTNWIDGETCONTROLLER___C__ONCLICKCAMERABTN_B__11_0_OFFSET UNITYSDK_OFFSET(0xA8074B0)
+#define MOLEMOLE_UIMAINCITYCAMERABTNWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F19F40)
+#define MOLEMOLE_UIMAINCITYCAMERABTNWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8F19F80)
+#define MOLEMOLE_UIMAINCITYCAMERABTNWIDGETCONTROLLER___C__ONCLICKCAMERABTN_B__11_0_OFFSET UNITYSDK_OFFSET(0x8F19F90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityCameraBtnWidgetController___c_TypeDefinitionIndex = 60913;
+	inline static constexpr unsigned int UIMainCityCameraBtnWidgetController___c_TypeDefinitionIndex = 49589;
 
 	class UIMainCityCameraBtnWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIMainCityCameraBtnWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIMainCityCameraBtnWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityCameraBtnWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x427A0);
+			return (::MoleMole::UIMainCityCameraBtnWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityCameraBtnWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x43300);
 		}
 		static ::System::Action** StaticGet___9__11_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityCameraBtnWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x427A8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMainCityCameraBtnWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x43308);
 		}
 
 		static ::System::Void _cctor()

@@ -13,11 +13,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIGUIFISHV2__CTOR_OFFSET UNITYSDK_OFFSET(0xE4552E0)
+#define MOLEMOLE_CONFIGUIFISHV2__CTOR_OFFSET UNITYSDK_OFFSET(0xD7DBEC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIFishV2_TypeDefinitionIndex = 75548;
+	inline static constexpr unsigned int ConfigUIFishV2_TypeDefinitionIndex = 47989;
 
 	class ConfigUIFishV2 : public ::Foundation::MihoyoSerializedScriptableObject
 	{

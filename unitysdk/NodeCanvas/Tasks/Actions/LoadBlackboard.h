@@ -6,13 +6,13 @@ namespace NodeCanvas::Framework { class Blackboard; }
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_ACTIONS_LOADBLACKBOARD_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19A0B570)
-#define NODECANVAS_TASKS_ACTIONS_LOADBLACKBOARD_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19A0B5F0)
-#define NODECANVAS_TASKS_ACTIONS_LOADBLACKBOARD__CTOR_OFFSET UNITYSDK_OFFSET(0x19A0B690)
+#define NODECANVAS_TASKS_ACTIONS_LOADBLACKBOARD_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19FFB550)
+#define NODECANVAS_TASKS_ACTIONS_LOADBLACKBOARD_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19FFB5D0)
+#define NODECANVAS_TASKS_ACTIONS_LOADBLACKBOARD__CTOR_OFFSET UNITYSDK_OFFSET(0x19FFB670)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int LoadBlackboard_TypeDefinitionIndex = 25754;
+	inline static constexpr unsigned int LoadBlackboard_TypeDefinitionIndex = 26582;
 
 	class LoadBlackboard : public ::NodeCanvas::Framework::ActionTask_1<::NodeCanvas::Framework::Blackboard*>
 	{

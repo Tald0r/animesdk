@@ -2,24 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_CUSTOMIDLETICKCONTROLLER_SHOULDTICKLATEUPDATE_OFFSET UNITYSDK_OFFSET(0x7647F70)
-#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_CUSTOMIDLETICKCONTROLLER_SHOULDUNDERCLOCKING_OFFSET UNITYSDK_OFFSET(0x7647E00)
-#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_CUSTOMIDLETICKCONTROLLER_SHOULDUPDATETHISFRAME_OFFSET UNITYSDK_OFFSET(0x7647E60)
+#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_CUSTOMIDLETICKCONTROLLER_SHOULDTICKLATEUPDATE_OFFSET UNITYSDK_OFFSET(0x862A380)
+#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_CUSTOMIDLETICKCONTROLLER_SHOULDUNDERCLOCKING_OFFSET UNITYSDK_OFFSET(0x862A210)
+#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_CUSTOMIDLETICKCONTROLLER_SHOULDUPDATETHISFRAME_OFFSET UNITYSDK_OFFSET(0x862A270)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCCustomIdleManager_CustomIdleTickController_TypeDefinitionIndex = 47437;
+	inline static constexpr unsigned int NPCCustomIdleManager_CustomIdleTickController_TypeDefinitionIndex = 69748;
 
 	class NPCCustomIdleManager_CustomIdleTickController : public ::System::Object
 	{
 	public:
 		static ::System::Single* StaticGet__lastUpdateTime()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NPCCustomIdleManager_CustomIdleTickController_TypeDefinitionIndex)->GetStaticField(0xCFA0);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NPCCustomIdleManager_CustomIdleTickController_TypeDefinitionIndex)->GetStaticField(0xDA80);
 		}
 		static ::System::Boolean* StaticGet__shouldUpdateCurrentFrame()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NPCCustomIdleManager_CustomIdleTickController_TypeDefinitionIndex)->GetStaticField(0xCFA4);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NPCCustomIdleManager_CustomIdleTickController_TypeDefinitionIndex)->GetStaticField(0xDA84);
 		}
 		// static const ::System::Single TargetTickRate; // 0x0
 		// static const ::System::Single FrameTime; // 0x0

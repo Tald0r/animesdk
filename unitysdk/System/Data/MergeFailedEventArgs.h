@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Data { class DataTable; }
 
-#define SYSTEM_DATA_MERGEFAILEDEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7BFD00)
+#define SYSTEM_DATA_MERGEFAILEDEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADA19A0)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int MergeFailedEventArgs_TypeDefinitionIndex = 35474;
+	inline static constexpr unsigned int MergeFailedEventArgs_TypeDefinitionIndex = 36494;
 
 	class MergeFailedEventArgs : public ::System::EventArgs
 	{

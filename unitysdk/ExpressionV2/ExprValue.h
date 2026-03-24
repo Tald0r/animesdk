@@ -4,26 +4,26 @@
 
 namespace System { class String; }
 
-#define EXPRESSIONV2_EXPRVALUE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x370630)
-#define EXPRESSIONV2_EXPRVALUE__CCTOR_OFFSET UNITYSDK_OFFSET(0x9C37570)
-#define EXPRESSIONV2_EXPRVALUE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x3705D0)
-#define EXPRESSIONV2_EXPRVALUE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x3705F0)
-#define EXPRESSIONV2_EXPRVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x3705B0)
-#define EXPRESSIONV2_EXPRVALUE___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x3706D0)
+#define EXPRESSIONV2_EXPRVALUE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x316BA0)
+#define EXPRESSIONV2_EXPRVALUE__CCTOR_OFFSET UNITYSDK_OFFSET(0x6C0DAA0)
+#define EXPRESSIONV2_EXPRVALUE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x316B40)
+#define EXPRESSIONV2_EXPRVALUE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x316B60)
+#define EXPRESSIONV2_EXPRVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x316B20)
+#define EXPRESSIONV2_EXPRVALUE___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x316C40)
 
 namespace ExpressionV2
 {
-	inline static constexpr unsigned int ExprValue_TypeDefinitionIndex = 57618;
+	inline static constexpr unsigned int ExprValue_TypeDefinitionIndex = 44301;
 
 	struct alignas(8) ExprValue
 	{
 		static ::ExpressionV2::ExprValue* StaticGet_Zero()
 		{
-			return (::ExpressionV2::ExprValue*)Il2CppClass::FromTypeDefinitionIndex(ExprValue_TypeDefinitionIndex)->GetStaticField(0x35900);
+			return (::ExpressionV2::ExprValue*)Il2CppClass::FromTypeDefinitionIndex(ExprValue_TypeDefinitionIndex)->GetStaticField(0x382D0);
 		}
 		static ::ExpressionV2::ExprValue* StaticGet_Empty()
 		{
-			return (::ExpressionV2::ExprValue*)Il2CppClass::FromTypeDefinitionIndex(ExprValue_TypeDefinitionIndex)->GetStaticField(0x35918);
+			return (::ExpressionV2::ExprValue*)Il2CppClass::FromTypeDefinitionIndex(ExprValue_TypeDefinitionIndex)->GetStaticField(0x382E8);
 		}
 		::System::Double Number; // 0x10
 		::System::String* Str; // 0x18

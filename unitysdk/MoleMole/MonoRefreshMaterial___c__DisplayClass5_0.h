@@ -8,21 +8,21 @@ namespace MoleMole { class MonoRefreshMaterial; }
 namespace MoleMole { class UIItemIconBtnWidgetController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8F960C0)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_0__PLAYITEMICONADDANI_B__2_OFFSET UNITYSDK_OFFSET(0x8F960D0)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_0__PLAYITEMICONADDANI_B__6_OFFSET UNITYSDK_OFFSET(0x8F961C0)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC3224F0)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_0__PLAYITEMICONADDANI_B__2_OFFSET UNITYSDK_OFFSET(0xC322500)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_0__PLAYITEMICONADDANI_B__6_OFFSET UNITYSDK_OFFSET(0xC3225F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoRefreshMaterial___c__DisplayClass5_0_TypeDefinitionIndex = 77818;
+	inline static constexpr unsigned int MonoRefreshMaterial___c__DisplayClass5_0_TypeDefinitionIndex = 40030;
 
 	class MonoRefreshMaterial___c__DisplayClass5_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::MonoRefreshMaterial* __4__this; // 0x10
-		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>* consumeList; // 0x18
-		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _expMatItems; // 0x20
-		::DG::Tweening::TweenCallback* __9__6; // 0x28
+		::System::Collections::Generic::List_1<::MoleMole::UIItemIconBtnWidgetController*>* _expMatItems; // 0x10
+		::DG::Tweening::TweenCallback* __9__6; // 0x18
+		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>* consumeList; // 0x20
+		::MoleMole::MonoRefreshMaterial* __4__this; // 0x28
 		::System::Int32 showItemCount; // 0x30
 
 		::System::Void _ctor()

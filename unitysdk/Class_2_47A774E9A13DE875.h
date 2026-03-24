@@ -12,27 +12,27 @@ namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define CLASS_2_47A774E9A13DE875_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0xDEB3690)
-#define CLASS_2_47A774E9A13DE875_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xDEB3400)
-#define CLASS_2_47A774E9A13DE875_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xDEB3740)
-#define CLASS_2_47A774E9A13DE875__CTOR_OFFSET UNITYSDK_OFFSET(0xDEB3730)
+#define CLASS_2_47A774E9A13DE875_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x863FA50)
+#define CLASS_2_47A774E9A13DE875_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x863F7C0)
+#define CLASS_2_47A774E9A13DE875_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x863FB00)
+#define CLASS_2_47A774E9A13DE875__CTOR_OFFSET UNITYSDK_OFFSET(0x863FAF0)
 
-inline static constexpr unsigned int Class_2_47A774E9A13DE875_TypeDefinitionIndex = 74895;
+inline static constexpr unsigned int Class_2_47A774E9A13DE875_TypeDefinitionIndex = 72101;
 
 class Class_2_47A774E9A13DE875 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Transform* Field_2_1; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x20
-	::UnityEngine::UI::Extension::UITabButton* Field_2_11; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x30
-	::Class_2_1F76884FC39FD584* Field_2_9; // 0x38
-	::UnityEngine::Transform* Field_2_2; // 0x40
-	::MoleMole::MonoGamepadNestedListDelegate* Field_2_4; // 0x48
-	::MonoUITableScrollV2* Field_2_0; // 0x50
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x60
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x68
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x18
+	::UnityEngine::Transform* Field_2_1; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x28
+	::MonoUITableScrollV2* Field_2_0; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UITabButton* Field_2_11; // 0x40
+	::UnityEngine::Transform* Field_2_2; // 0x48
+	::Class_2_1F76884FC39FD584* Field_2_9; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x60
+	::MoleMole::MonoGamepadNestedListDelegate* Field_2_4; // 0x68
 	::UnityEngine::UI::Extension::UITabButton* Field_2_10; // 0x70
 
 	::System::Void _ctor()

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGADDITIONALDATA_LYRAGICONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x183D66E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGADDITIONALDATA_LYRAGICONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18932930)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int WeatherConfigAdditionalData_LyraGIConfig_TypeDefinitionIndex = 28495;
+	inline static constexpr unsigned int WeatherConfigAdditionalData_LyraGIConfig_TypeDefinitionIndex = 29438;
 
 	class WeatherConfigAdditionalData_LyraGIConfig : public ::System::Object
 	{

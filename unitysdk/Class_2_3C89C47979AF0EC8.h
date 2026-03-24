@@ -11,29 +11,29 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI { class RawImage; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_3C89C47979AF0EC8_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xBA64330)
-#define CLASS_2_3C89C47979AF0EC8_METHOD_2_AAD864A9DF964170_OFFSET UNITYSDK_OFFSET(0xBA645F0)
-#define CLASS_2_3C89C47979AF0EC8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xBA64750)
-#define CLASS_2_3C89C47979AF0EC8__CTOR_OFFSET UNITYSDK_OFFSET(0xBA64740)
+#define CLASS_2_3C89C47979AF0EC8_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xD833190)
+#define CLASS_2_3C89C47979AF0EC8_METHOD_2_AAD864A9DF964170_OFFSET UNITYSDK_OFFSET(0xD833450)
+#define CLASS_2_3C89C47979AF0EC8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD8335B0)
+#define CLASS_2_3C89C47979AF0EC8__CTOR_OFFSET UNITYSDK_OFFSET(0xD8335A0)
 
-inline static constexpr unsigned int Class_2_3C89C47979AF0EC8_TypeDefinitionIndex = 62533;
+inline static constexpr unsigned int Class_2_3C89C47979AF0EC8_TypeDefinitionIndex = 68487;
 
 class Class_2_3C89C47979AF0EC8 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_11; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x38
-	::MonoUITableScrollV2* Field_2_12; // 0x40
-	::UnityEngine::GameObject* Field_2_9; // 0x48
-	::UnityEngine::GameObject* Field_2_4; // 0x50
-	::UnityEngine::UI::RawImage* Field_2_10; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x60
-	::UnityEngine::GameObject* Field_2_8; // 0x68
-	::UnityEngine::GameObject* Field_2_5; // 0x70
-	::UnityEngine::GameObject* Field_2_7; // 0x78
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x18
+	::UnityEngine::UI::RawImage* Field_2_10; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x28
+	::UnityEngine::GameObject* Field_2_7; // 0x30
+	::UnityEngine::GameObject* Field_2_9; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_11; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x48
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x58
+	::UnityEngine::GameObject* Field_2_8; // 0x60
+	::UnityEngine::GameObject* Field_2_5; // 0x68
+	::MonoUITableScrollV2* Field_2_12; // 0x70
+	::UnityEngine::GameObject* Field_2_4; // 0x78
 
 	::System::Void _ctor()
 	{

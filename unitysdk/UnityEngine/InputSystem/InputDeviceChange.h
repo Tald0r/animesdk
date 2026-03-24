@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputDeviceChange_TypeDefinitionIndex = 27516;
+	inline static constexpr unsigned int InputDeviceChange_TypeDefinitionIndex = 28456;
 
 	enum class InputDeviceChange : ::System::Int32
 	{

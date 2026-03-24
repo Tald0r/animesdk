@@ -4,11 +4,11 @@
 #include "unitysdk/NPCCrowd/AI/PathGraphFeaturePointComponent.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define NPCCROWD_AI_PATHGRAPHCROSSINGPOINTCOMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x7223B70)
+#define NPCCROWD_AI_PATHGRAPHCROSSINGPOINTCOMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x9AF8540)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphCrossingPointComponent_TypeDefinitionIndex = 40625;
+	inline static constexpr unsigned int PathGraphCrossingPointComponent_TypeDefinitionIndex = 41565;
 
 	class PathGraphCrossingPointComponent : public ::NPCCrowd::AI::PathGraphFeaturePointComponent
 	{

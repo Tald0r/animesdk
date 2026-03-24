@@ -6,12 +6,12 @@ namespace MoleMole::Config { class ConfigSoundWaveKey; }
 namespace System { class String; }
 namespace UnityEngine::Rendering { template <typename T1, typename T2> class SerializedDictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGSOUNDWAVE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x805F410)
-#define MOLEMOLE_CONFIG_CONFIGSOUNDWAVE__CTOR_OFFSET UNITYSDK_OFFSET(0x805F660)
+#define MOLEMOLE_CONFIG_CONFIGSOUNDWAVE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x9D12550)
+#define MOLEMOLE_CONFIG_CONFIGSOUNDWAVE__CTOR_OFFSET UNITYSDK_OFFSET(0x9D127A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSoundWave_TypeDefinitionIndex = 68941;
+	inline static constexpr unsigned int ConfigSoundWave_TypeDefinitionIndex = 39190;
 
 	class ConfigSoundWave : public ::Foundation::MihoyoSerializedScriptableObject
 	{

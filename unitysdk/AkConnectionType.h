@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int AkConnectionType_TypeDefinitionIndex = 29924;
+inline static constexpr unsigned int AkConnectionType_TypeDefinitionIndex = 30877;
 
 enum class AkConnectionType : ::System::Int32
 {

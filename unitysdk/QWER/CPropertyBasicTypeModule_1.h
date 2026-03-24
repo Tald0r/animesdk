@@ -8,7 +8,7 @@ namespace System { class String; }
 
 namespace QWER
 {
-	inline static constexpr unsigned int CPropertyBasicTypeModule_1_TypeDefinitionIndex = 9647;
+	inline static constexpr unsigned int CPropertyBasicTypeModule_1_TypeDefinitionIndex = 9649;
 
 	template <typename T>
 	class CPropertyBasicTypeModule_1 : public ::QWER::CPropertyModule

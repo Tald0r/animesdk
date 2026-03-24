@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SuperDebug___c__DisplayClass99_0_TypeDefinitionIndex = 8236;
+	inline static constexpr unsigned int SuperDebug___c__DisplayClass99_0_TypeDefinitionIndex = 8158;
 
 	struct alignas(4) SuperDebug___c__DisplayClass99_0
 	{

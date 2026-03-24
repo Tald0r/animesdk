@@ -6,12 +6,12 @@ class Class_2_468A4FBF2E9F527C;
 class Class_3_E9FF194CA9EF9D04;
 namespace MoleMole { class UIHadalZone_ImpactBattle_LineupWidgetController; }
 
-#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__BINDBTNS_B__3_OFFSET UNITYSDK_OFFSET(0x7A5D2A0)
-#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7A5D290)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__BINDBTNS_B__4_OFFSET UNITYSDK_OFFSET(0xA9B45B0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA9B45A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_ImpactBattle_LineupWidgetController___c__DisplayClass5_0_TypeDefinitionIndex = 58623;
+	inline static constexpr unsigned int UIHadalZone_ImpactBattle_LineupWidgetController___c__DisplayClass5_0_TypeDefinitionIndex = 54346;
 
 	class UIHadalZone_ImpactBattle_LineupWidgetController___c__DisplayClass5_0 : public ::System::Object
 	{
@@ -25,9 +25,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _BindBtns_b__3()
+		::System::Void _BindBtns_b__4()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__BINDBTNS_B__3_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS5_0__BINDBTNS_B__4_OFFSET))(this);
 		}
 	};
 }

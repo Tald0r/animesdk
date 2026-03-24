@@ -8,7 +8,7 @@
 
 namespace UnityEngine::InputSystem::GamepadEx
 {
-	inline static constexpr unsigned int TriggerEffectCommand_TypeDefinitionIndex = 35888;
+	inline static constexpr unsigned int TriggerEffectCommand_TypeDefinitionIndex = 36908;
 
 	struct alignas(4) TriggerEffectCommand
 	{

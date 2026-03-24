@@ -7,21 +7,21 @@ class MonoUITableScrollV2;
 namespace MoleMole { class UIAvatarActivityCoinBrushingWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class CanvasGroup; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_4C70427CB54FB33B_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0xA674810)
-#define CLASS_2_4C70427CB54FB33B_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA674900)
-#define CLASS_2_4C70427CB54FB33B_METHOD_2_ECD1B788BD780B17_OFFSET UNITYSDK_OFFSET(0xA674680)
-#define CLASS_2_4C70427CB54FB33B__CTOR_OFFSET UNITYSDK_OFFSET(0xA6748F0)
+#define CLASS_2_4C70427CB54FB33B_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x6F27980)
+#define CLASS_2_4C70427CB54FB33B_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6F27A70)
+#define CLASS_2_4C70427CB54FB33B_METHOD_2_ECD1B788BD780B17_OFFSET UNITYSDK_OFFSET(0x6F277F0)
+#define CLASS_2_4C70427CB54FB33B__CTOR_OFFSET UNITYSDK_OFFSET(0x6F27A60)
 
-inline static constexpr unsigned int Class_2_4C70427CB54FB33B_TypeDefinitionIndex = 75808;
+inline static constexpr unsigned int Class_2_4C70427CB54FB33B_TypeDefinitionIndex = 58754;
 
 class Class_2_4C70427CB54FB33B : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::MonoUITableScrollV2* Field_2_0; // 0x18
-	::UnityEngine::CanvasGroup* Field_2_1; // 0x20
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIAvatarActivityCoinBrushingWidgetController*>* Field_2_2; // 0x28
+	::Class_3_647A206587033F4E<::MoleMole::UIAvatarActivityCoinBrushingWidgetController*>* Field_2_2; // 0x20
+	::UnityEngine::CanvasGroup* Field_2_1; // 0x28
 
 	::System::Void _ctor()
 	{

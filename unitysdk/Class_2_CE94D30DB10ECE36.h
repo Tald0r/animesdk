@@ -1,14 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_127.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_91.h"
 
-class Class_0_16E4307DCC419505_242;
-class Class_2_208CC9941471731A_202;
+class Class_0_16E4307DCC419505_439;
+class Class_2_208CC9941471731A_857;
 
-inline static constexpr unsigned int Class_2_CE94D30DB10ECE36_TypeDefinitionIndex = 75459;
+inline static constexpr unsigned int Class_2_CE94D30DB10ECE36_TypeDefinitionIndex = 78443;
 
 template <typename T>
-class Class_2_CE94D30DB10ECE36 : public ::Class_1_43BD383C98B4C0C5_127
+class Class_2_CE94D30DB10ECE36 : public ::Class_1_43BD383C98B4C0C5_91
 {
 public:
 };

@@ -5,18 +5,18 @@
 class Class_1_0D6706375CDAAE8C;
 namespace MoleMole { class UIDailyChallengeRewardDialogPopWindowController; }
 
-#define MOLEMOLE_UIDAILYCHALLENGEREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA52F520)
-#define MOLEMOLE_UIDAILYCHALLENGEREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__OPENEQUIPDETAIL_B__0_OFFSET UNITYSDK_OFFSET(0xA52F530)
+#define MOLEMOLE_UIDAILYCHALLENGEREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADC65A0)
+#define MOLEMOLE_UIDAILYCHALLENGEREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__OPENEQUIPDETAIL_B__0_OFFSET UNITYSDK_OFFSET(0xADC65B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDailyChallengeRewardDialogPopWindowController___c__DisplayClass19_0_TypeDefinitionIndex = 67908;
+	inline static constexpr unsigned int UIDailyChallengeRewardDialogPopWindowController___c__DisplayClass19_0_TypeDefinitionIndex = 43120;
 
 	class UIDailyChallengeRewardDialogPopWindowController___c__DisplayClass19_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIDailyChallengeRewardDialogPopWindowController* __4__this; // 0x10
-		::Class_1_0D6706375CDAAE8C* itemData; // 0x18
+		::Class_1_0D6706375CDAAE8C* itemData; // 0x10
+		::MoleMole::UIDailyChallengeRewardDialogPopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

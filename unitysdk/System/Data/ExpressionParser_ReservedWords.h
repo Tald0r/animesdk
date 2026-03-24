@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define SYSTEM_DATA_EXPRESSIONPARSER_RESERVEDWORDS__CTOR_OFFSET UNITYSDK_OFFSET(0x315C50)
+#define SYSTEM_DATA_EXPRESSIONPARSER_RESERVEDWORDS__CTOR_OFFSET UNITYSDK_OFFSET(0x319460)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int ExpressionParser_ReservedWords_TypeDefinitionIndex = 35456;
+	inline static constexpr unsigned int ExpressionParser_ReservedWords_TypeDefinitionIndex = 36476;
 
 	struct alignas(8) ExpressionParser_ReservedWords
 	{

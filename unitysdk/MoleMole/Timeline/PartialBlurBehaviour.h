@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/Timeline/PartialBlurBehaviour_Struct_2_AA4EE15A8D4DB005_5.h"
+#include "unitysdk/MoleMole/Timeline/PartialBlurBehaviour_Struct_2_52AD02145F5FCE36_32.h"
 #include "unitysdk/MoleMole/Timeline/PostProcessBehaviourBase.h"
 #include "unitysdk/UnityEngine/Playables/Playable.h"
 
@@ -8,40 +8,43 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace UnityEngine::Rendering::Universal { class PartialBlur; }
 
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_COPYVALUEFROMCOMP_OFFSET UNITYSDK_OFFSET(0xBD629D0)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_290F00BC692CC660_OFFSET UNITYSDK_OFFSET(0xBD62B50)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0xBD63B10)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_6112A1276899AF0F_OFFSET UNITYSDK_OFFSET(0xBD62FD0)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET UNITYSDK_OFFSET(0xBD63AE0)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_1_OFFSET UNITYSDK_OFFSET(0xBD63B00)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_OFFSET UNITYSDK_OFFSET(0xBD63AF0)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0xBD62F00)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0xBD63740)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_SETVALUE_OFFSET UNITYSDK_OFFSET(0xBD63880)
-#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xBD63AC0)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_COPYVALUEFROMCOMP_OFFSET UNITYSDK_OFFSET(0xB1D8D80)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_290F00BC692CC660_OFFSET UNITYSDK_OFFSET(0xBEF3E00)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0xBEF4480)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_6112A1276899AF0F_OFFSET UNITYSDK_OFFSET(0xBEF3390)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET UNITYSDK_OFFSET(0xBEF44A0)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_1_OFFSET UNITYSDK_OFFSET(0xBEF44B0)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_OFFSET UNITYSDK_OFFSET(0xBEF4490)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0xBEF32B0)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0xBEF3CB0)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_SETVALUE_OFFSET UNITYSDK_OFFSET(0xBEF41B0)
+#define MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xBEF4460)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int PartialBlurBehaviour_TypeDefinitionIndex = 78911;
+	inline static constexpr unsigned int PartialBlurBehaviour_TypeDefinitionIndex = 68322;
 
 	class PartialBlurBehaviour : public ::MoleMole::Timeline::PostProcessBehaviourBase
 	{
 	public:
-		::MoleMole::Timeline::PartialBlurBehaviour_Struct_2_AA4EE15A8D4DB005_5 _methodParm; // 0x18
-		::System::Boolean enabled; // 0x3C
-		::System::Boolean active_downScaleFactor; // 0x3D
-		::System::Boolean use_downScaleFactor; // 0x3E
-		::System::Int32 downScaleFactor; // 0x40
-		::System::Boolean active_radius; // 0x44
-		::System::Boolean use_radius; // 0x45
-		::System::Single radius; // 0x48
-		::System::Boolean active_sampleCount; // 0x4C
-		::System::Boolean use_sampleCount; // 0x4D
-		::System::Int32 sampleCount; // 0x50
-		::System::Boolean active_standardDeviation; // 0x54
-		::System::Boolean use_standardDeviation; // 0x55
-		::System::Single standardDeviation; // 0x58
-		::UnityEngine::Rendering::Universal::PartialBlur* _PartialBlur; // 0x60
+		::MoleMole::Timeline::PartialBlurBehaviour_Struct_2_52AD02145F5FCE36_32 _methodParm; // 0x18
+		::System::Boolean enabled; // 0x40
+		::System::Boolean active_downScaleFactor; // 0x41
+		::System::Boolean use_downScaleFactor; // 0x42
+		::System::Int32 downScaleFactor; // 0x44
+		::System::Boolean active_radius; // 0x48
+		::System::Boolean use_radius; // 0x49
+		::System::Single radius; // 0x4C
+		::System::Boolean active_standardDeviation; // 0x50
+		::System::Boolean use_standardDeviation; // 0x51
+		::System::Single standardDeviation; // 0x54
+		::System::Boolean active_sampleCountMain; // 0x58
+		::System::Boolean use_sampleCountMain; // 0x59
+		::System::Int32 sampleCountMain; // 0x5C
+		::System::Boolean active_canBeDisabledByGlobalConfig; // 0x60
+		::System::Boolean use_canBeDisabledByGlobalConfig; // 0x61
+		::System::Boolean canBeDisabledByGlobalConfig; // 0x62
+		::UnityEngine::Rendering::Universal::PartialBlur* _PartialBlur; // 0x68
 
 		::System::Void _ctor()
 		{
@@ -68,6 +71,16 @@ namespace MoleMole::Timeline
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_SETVALUE_OFFSET))(this, a1, a2);
 		}
 
+		::System::Void Method_4_324AEE341AAA7A1B(::UnityEngine::Playables::Playable a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_4_B072873681D4192B(::System::Object* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_OFFSET))(this, a1);
+		}
+
 		::System::Void Method_4_63F7844DC2D57F6C(::System::String* a1, ::System::Single a2)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET))(this, a1, a2);
@@ -78,24 +91,14 @@ namespace MoleMole::Timeline
 			return ((::UnityEngine::Rendering::Universal::PartialBlur*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_290F00BC692CC660_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_4_6112A1276899AF0F()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_6112A1276899AF0F_OFFSET))(this);
-		}
-
-		::System::Void Method_4_B072873681D4192B(::System::Object* a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_OFFSET))(this, a1);
-		}
-
 		::System::Void Method_4_B072873681D4192B_1(::System::Object* a1)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_B072873681D4192B_1_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_4_324AEE341AAA7A1B(::UnityEngine::Playables::Playable a1)
+		::System::Void Method_4_6112A1276899AF0F()
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET))(this, a1);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_PARTIALBLURBEHAVIOUR_METHOD_4_6112A1276899AF0F_OFFSET))(this);
 		}
 	};
 }

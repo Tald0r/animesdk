@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SimulatingPlatform_TypeDefinitionIndex = 28534;
+	inline static constexpr unsigned int SimulatingPlatform_TypeDefinitionIndex = 29477;
 
 	enum class SimulatingPlatform : ::System::UInt32
 	{

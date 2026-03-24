@@ -10,22 +10,22 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_ACEECAD0D835D78E_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x7A22440)
-#define CLASS_2_ACEECAD0D835D78E_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x7A22640)
-#define CLASS_2_ACEECAD0D835D78E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7A22750)
-#define CLASS_2_ACEECAD0D835D78E__CTOR_OFFSET UNITYSDK_OFFSET(0x7A22740)
+#define CLASS_2_ACEECAD0D835D78E_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x8543020)
+#define CLASS_2_ACEECAD0D835D78E_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x8543220)
+#define CLASS_2_ACEECAD0D835D78E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8543330)
+#define CLASS_2_ACEECAD0D835D78E__CTOR_OFFSET UNITYSDK_OFFSET(0x8543320)
 
-inline static constexpr unsigned int Class_2_ACEECAD0D835D78E_TypeDefinitionIndex = 37762;
+inline static constexpr unsigned int Class_2_ACEECAD0D835D78E_TypeDefinitionIndex = 80769;
 
 class Class_2_ACEECAD0D835D78E : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
+	::MonoUITableScrollV2* Field_2_4; // 0x20
 	::UnityEngine::RectTransform* Field_2_1; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x38
-	::MonoUITableScrollV2* Field_2_4; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
 
 	::System::Void _ctor()
 	{

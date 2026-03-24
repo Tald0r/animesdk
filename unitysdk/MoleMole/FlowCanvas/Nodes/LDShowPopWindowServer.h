@@ -6,20 +6,20 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWPOPWINDOWSERVER_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8F764F0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWPOPWINDOWSERVER__CTOR_OFFSET UNITYSDK_OFFSET(0x8F76620)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWPOPWINDOWSERVER__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x8F76640)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWPOPWINDOWSERVER_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xD0D6020)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWPOPWINDOWSERVER__CTOR_OFFSET UNITYSDK_OFFSET(0xD0D6150)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWPOPWINDOWSERVER__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xD0D6170)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowPopWindowServer_TypeDefinitionIndex = 54093;
+	inline static constexpr unsigned int LDShowPopWindowServer_TypeDefinitionIndex = 53404;
 
 	class LDShowPopWindowServer : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::System::Int32>* popID; // 0xA8
+		::FlowCanvas::FlowOutput* output; // 0xA8
 		::FlowCanvas::ValueInput_1<::System::Boolean>* popNewIcon; // 0xB0
-		::FlowCanvas::FlowOutput* output; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Int32>* popID; // 0xB8
 
 		::System::Void _ctor()
 		{

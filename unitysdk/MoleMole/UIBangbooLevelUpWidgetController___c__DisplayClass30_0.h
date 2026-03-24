@@ -5,12 +5,12 @@
 class MatAnimation;
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_UIBANGBOOLEVELUPWIDGETCONTROLLER___C__DISPLAYCLASS30_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA51F800)
-#define MOLEMOLE_UIBANGBOOLEVELUPWIDGETCONTROLLER___C__DISPLAYCLASS30_0__ONMATITEMCHANGED_B__0_OFFSET UNITYSDK_OFFSET(0xA51F810)
+#define MOLEMOLE_UIBANGBOOLEVELUPWIDGETCONTROLLER___C__DISPLAYCLASS30_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADB82C0)
+#define MOLEMOLE_UIBANGBOOLEVELUPWIDGETCONTROLLER___C__DISPLAYCLASS30_0__ONMATITEMCHANGED_B__0_OFFSET UNITYSDK_OFFSET(0xADB82D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBangbooLevelUpWidgetController___c__DisplayClass30_0_TypeDefinitionIndex = 68509;
+	inline static constexpr unsigned int UIBangbooLevelUpWidgetController___c__DisplayClass30_0_TypeDefinitionIndex = 50993;
 
 	class UIBangbooLevelUpWidgetController___c__DisplayClass30_0 : public ::System::Object
 	{

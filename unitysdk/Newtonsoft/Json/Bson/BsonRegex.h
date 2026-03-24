@@ -6,22 +6,22 @@
 namespace Newtonsoft::Json::Bson { class BsonString; }
 namespace System { class String; }
 
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x1B108110)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_PATTERN_OFFSET UNITYSDK_OFFSET(0x1B1080F0)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1B1081B0)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x1B108120)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_PATTERN_OFFSET UNITYSDK_OFFSET(0x1B108100)
-#define NEWTONSOFT_JSON_BSON_BSONREGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x1B108130)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x1B71FBE0)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_PATTERN_OFFSET UNITYSDK_OFFSET(0x1B71FBC0)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_GET_TYPE_OFFSET UNITYSDK_OFFSET(0x1B71FC80)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_OPTIONS_OFFSET UNITYSDK_OFFSET(0x1B71FBF0)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX_SET_PATTERN_OFFSET UNITYSDK_OFFSET(0x1B71FBD0)
+#define NEWTONSOFT_JSON_BSON_BSONREGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x1B71FC00)
 
 namespace Newtonsoft::Json::Bson
 {
-	inline static constexpr unsigned int BsonRegex_TypeDefinitionIndex = 7106;
+	inline static constexpr unsigned int BsonRegex_TypeDefinitionIndex = 7110;
 
 	class BsonRegex : public ::Newtonsoft::Json::Bson::BsonToken
 	{
 	public:
-		::Newtonsoft::Json::Bson::BsonString* _Options_k__BackingField; // 0x20
-		::Newtonsoft::Json::Bson::BsonString* _Pattern_k__BackingField; // 0x28
+		::Newtonsoft::Json::Bson::BsonString* _Pattern_k__BackingField; // 0x20
+		::Newtonsoft::Json::Bson::BsonString* _Options_k__BackingField; // 0x28
 
 		::System::Void _ctor(::System::String* pattern, ::System::String* options)
 		{

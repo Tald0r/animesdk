@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_NEWCONFIGMETACONFIG_GET_GRAPHICSETTINGPATH_OFFSET UNITYSDK_OFFSET(0x8A887F0)
-#define MOLEMOLE_NEWCONFIGMETACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8A88880)
+#define MOLEMOLE_NEWCONFIGMETACONFIG_GET_GRAPHICSETTINGPATH_OFFSET UNITYSDK_OFFSET(0x8C90D80)
+#define MOLEMOLE_NEWCONFIGMETACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8C90E10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int NewConfigMetaConfig_TypeDefinitionIndex = 68806;
+	inline static constexpr unsigned int NewConfigMetaConfig_TypeDefinitionIndex = 75038;
 
 	class NewConfigMetaConfig : public ::Foundation::MihoyoSerializedScriptableObject
 	{
@@ -206,6 +206,8 @@ namespace MoleMole
 		::Foundation::AssetPath ConfigTimelineCameraPath; // 0xBF8
 		::Foundation::AssetPath MaterialPropertyModifierBatchLoadPath; // 0xC08
 		::Foundation::AssetPath MaterialPropertyModifierKeyBelongMapPath; // 0xC18
+		::Foundation::AssetPath TimelineDataExtraTargetMapPath; // 0xC28
+		::Foundation::AssetPath SwitchTeamActivityFilePath; // 0xC38
 
 		::System::Void _ctor()
 		{

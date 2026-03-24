@@ -6,7 +6,7 @@
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 template <typename T> class Class_2_FFA1DC45E82895CA_Class_1_CBC5476451FCB661;
 
-inline static constexpr unsigned int Class_2_FFA1DC45E82895CA_Class_1_CBC5476451FCB661_Struct_2_ADE963C90C2B2066_TypeDefinitionIndex = 68241;
+inline static constexpr unsigned int Class_2_FFA1DC45E82895CA_Class_1_CBC5476451FCB661_Struct_2_ADE963C90C2B2066_TypeDefinitionIndex = 57752;
 
 template <typename T>
 struct Class_2_FFA1DC45E82895CA_Class_1_CBC5476451FCB661_Struct_2_ADE963C90C2B2066

@@ -5,19 +5,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_GALGAMENPCACTIONBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2CF620)
+#define MOLEMOLE_GALGAME_GALGAMENPCACTIONBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xB8AB0C0)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalGameNPCActionBase_TypeDefinitionIndex = 70982;
+	inline static constexpr unsigned int GalGameNPCActionBase_TypeDefinitionIndex = 37513;
 
 	class GalGameNPCActionBase : public ::MoleMole::GalGame::GalGameActionBase
 	{
 	public:
-		::System::String* avatarShowingKey; // 0x10
-		::System::String* avatarFacialKey; // 0x18
-		::System::String* avatarName; // 0x20
-		::System::String* avatarPoseKey; // 0x28
+		::System::String* avatarFacialKey; // 0x10
+		::System::String* avatarPoseKey; // 0x18
+		::System::String* avatarShowingKey; // 0x20
+		::System::String* avatarName; // 0x28
 		::MoleMole::GalGame::GalNPCLocation location; // 0x30
 		::System::Int32 actorId; // 0x34
 

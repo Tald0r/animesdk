@@ -5,11 +5,11 @@
 namespace MoleMole { class UIForbiddenAreaTalentPointWidgetController; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 
-#define MOLEMOLE_UIFORBIDDENAREATALENTPOINTWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x95EE000)
+#define MOLEMOLE_UIFORBIDDENAREATALENTPOINTWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD569140)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIForbiddenAreaTalentPointWidgetContext_TypeDefinitionIndex = 48599;
+	inline static constexpr unsigned int UIForbiddenAreaTalentPointWidgetContext_TypeDefinitionIndex = 71125;
 
 	class UIForbiddenAreaTalentPointWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

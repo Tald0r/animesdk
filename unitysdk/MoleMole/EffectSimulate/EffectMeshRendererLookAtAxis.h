@@ -1,24 +1,24 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/EffectSimulate/EffectMeshRendererLookAtAxis_Enum_3_D87AE215C365C25C.h"
+#include "unitysdk/MoleMole/EffectSimulate/EffectMeshRendererLookAtAxis_Enum_3_7617917E7FC1AB4E.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
 namespace UnityEngine { class Camera; }
 
-#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS_DOBILLBOARD_OFFSET UNITYSDK_OFFSET(0x8F68AD0)
-#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x8F68A60)
-#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS_START_OFFSET UNITYSDK_OFFSET(0x8F68A00)
-#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS__CTOR_OFFSET UNITYSDK_OFFSET(0x8F68DA0)
+#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS_DOBILLBOARD_OFFSET UNITYSDK_OFFSET(0xD0C83A0)
+#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xD0C8330)
+#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS_START_OFFSET UNITYSDK_OFFSET(0xD0C82D0)
+#define MOLEMOLE_EFFECTSIMULATE_EFFECTMESHRENDERERLOOKATAXIS__CTOR_OFFSET UNITYSDK_OFFSET(0xD0C8670)
 
 namespace MoleMole::EffectSimulate
 {
-	inline static constexpr unsigned int EffectMeshRendererLookAtAxis_TypeDefinitionIndex = 63065;
+	inline static constexpr unsigned int EffectMeshRendererLookAtAxis_TypeDefinitionIndex = 37809;
 
 	class EffectMeshRendererLookAtAxis : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		::System::Single rotationAxis; // 0x18
-		::MoleMole::EffectSimulate::EffectMeshRendererLookAtAxis_Enum_3_D87AE215C365C25C Stretched_lockAxis; // 0x1C
+		::MoleMole::EffectSimulate::EffectMeshRendererLookAtAxis_Enum_3_7617917E7FC1AB4E Stretched_lockAxis; // 0x1C
 
 		::System::Void _ctor()
 		{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER_GRIDCOLLECTIONSHOWDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x7D11740)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER_GRIDCOLLECTIONSHOWDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9140620)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowItemCollectWidgetController_GridCollectionShowData_TypeDefinitionIndex = 62670;
+	inline static constexpr unsigned int UIHollowItemCollectWidgetController_GridCollectionShowData_TypeDefinitionIndex = 60077;
 
 	class UIHollowItemCollectWidgetController_GridCollectionShowData : public ::System::Object
 	{

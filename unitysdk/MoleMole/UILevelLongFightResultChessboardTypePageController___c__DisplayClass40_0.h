@@ -5,12 +5,12 @@
 class Class_1_0D6706375CDAAE8C;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UILEVELLONGFIGHTRESULTCHESSBOARDTYPEPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC11CF10)
-#define MOLEMOLE_UILEVELLONGFIGHTRESULTCHESSBOARDTYPEPAGECONTROLLER___C__DISPLAYCLASS40_0__INITCARD_B__0_OFFSET UNITYSDK_OFFSET(0xC11CF20)
+#define MOLEMOLE_UILEVELLONGFIGHTRESULTCHESSBOARDTYPEPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAD9B870)
+#define MOLEMOLE_UILEVELLONGFIGHTRESULTCHESSBOARDTYPEPAGECONTROLLER___C__DISPLAYCLASS40_0__INITCARD_B__0_OFFSET UNITYSDK_OFFSET(0xAD9B880)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILevelLongFightResultChessboardTypePageController___c__DisplayClass40_0_TypeDefinitionIndex = 54185;
+	inline static constexpr unsigned int UILevelLongFightResultChessboardTypePageController___c__DisplayClass40_0_TypeDefinitionIndex = 58703;
 
 	class UILevelLongFightResultChessboardTypePageController___c__DisplayClass40_0 : public ::System::Object
 	{

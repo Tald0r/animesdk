@@ -9,21 +9,21 @@ namespace UnityEngine { class Animation; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_7F0A32FA3DA7C616_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x5ED2CB0)
-#define CLASS_2_7F0A32FA3DA7C616_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x5ED2DF0)
-#define CLASS_2_7F0A32FA3DA7C616__CTOR_OFFSET UNITYSDK_OFFSET(0x5ED2DE0)
+#define CLASS_2_7F0A32FA3DA7C616_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x92FCE50)
+#define CLASS_2_7F0A32FA3DA7C616_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x92FCF90)
+#define CLASS_2_7F0A32FA3DA7C616__CTOR_OFFSET UNITYSDK_OFFSET(0x92FCF80)
 
-inline static constexpr unsigned int Class_2_7F0A32FA3DA7C616_TypeDefinitionIndex = 46762;
+inline static constexpr unsigned int Class_2_7F0A32FA3DA7C616_TypeDefinitionIndex = 78647;
 
 class Class_2_7F0A32FA3DA7C616 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_3; // 0x18
-	::MoleMole::MonoMaskSlider* Field_2_2; // 0x20
-	::UnityEngine::GameObject* Field_2_0; // 0x28
-	::UnityEngine::UI::Text* Field_2_4; // 0x30
-	::UnityEngine::UI::Text* Field_2_5; // 0x38
-	::UnityEngine::UI::Text* Field_2_6; // 0x40
+	::UnityEngine::GameObject* Field_2_0; // 0x18
+	::UnityEngine::UI::Text* Field_2_3; // 0x20
+	::UnityEngine::UI::Text* Field_2_6; // 0x28
+	::MoleMole::MonoMaskSlider* Field_2_2; // 0x30
+	::UnityEngine::UI::Text* Field_2_4; // 0x38
+	::UnityEngine::UI::Text* Field_2_5; // 0x40
 	::UnityEngine::Animation* Field_2_1; // 0x48
 
 	::System::Void _ctor()

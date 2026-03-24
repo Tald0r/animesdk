@@ -4,9 +4,9 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MONOEFFECTPARTICLEGUIDELINE_GUIDELINEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xF0CA4E0)
+#define MONOEFFECTPARTICLEGUIDELINE_GUIDELINEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xEA41F70)
 
-inline static constexpr unsigned int MonoEffectParticleGuideLine_GuideLineData_TypeDefinitionIndex = 39016;
+inline static constexpr unsigned int MonoEffectParticleGuideLine_GuideLineData_TypeDefinitionIndex = 55753;
 
 class MonoEffectParticleGuideLine_GuideLineData : public ::System::Object
 {

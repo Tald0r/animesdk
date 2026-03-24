@@ -5,22 +5,22 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class GameObject; }
 
-#define MB3_MESHBAKERCOMMON___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A8FDFC0)
-#define MB3_MESHBAKERCOMMON___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8FE000)
-#define MB3_MESHBAKERCOMMON___C__PURGENULLSFROMOBJECTSTOCOMBINE_B__20_0_OFFSET UNITYSDK_OFFSET(0x1A8FE010)
+#define MB3_MESHBAKERCOMMON___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AED7360)
+#define MB3_MESHBAKERCOMMON___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AED73A0)
+#define MB3_MESHBAKERCOMMON___C__PURGENULLSFROMOBJECTSTOCOMBINE_B__20_0_OFFSET UNITYSDK_OFFSET(0x1AED73B0)
 
-inline static constexpr unsigned int MB3_MeshBakerCommon___c_TypeDefinitionIndex = 81198;
+inline static constexpr unsigned int MB3_MeshBakerCommon___c_TypeDefinitionIndex = 83239;
 
 class MB3_MeshBakerCommon___c : public ::System::Object
 {
 public:
-	static ::MB3_MeshBakerCommon___c** StaticGet___9()
-	{
-		return (::MB3_MeshBakerCommon___c**)Il2CppClass::FromTypeDefinitionIndex(MB3_MeshBakerCommon___c_TypeDefinitionIndex)->GetStaticField(0x46770);
-	}
 	static ::System::Predicate_1<::UnityEngine::GameObject*>** StaticGet___9__20_0()
 	{
-		return (::System::Predicate_1<::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(MB3_MeshBakerCommon___c_TypeDefinitionIndex)->GetStaticField(0x46778);
+		return (::System::Predicate_1<::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(MB3_MeshBakerCommon___c_TypeDefinitionIndex)->GetStaticField(0x48180);
+	}
+	static ::MB3_MeshBakerCommon___c** StaticGet___9()
+	{
+		return (::MB3_MeshBakerCommon___c**)Il2CppClass::FromTypeDefinitionIndex(MB3_MeshBakerCommon___c_TypeDefinitionIndex)->GetStaticField(0x48188);
 	}
 
 	static ::System::Void _cctor()

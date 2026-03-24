@@ -3,11 +3,11 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TargetCamera_TypeDefinitionIndex = 71084;
+	inline static constexpr unsigned int TargetCamera_TypeDefinitionIndex = 60358;
 
 	enum class TargetCamera : ::System::Int32
 	{
-		Hollow = 0,
 		Effect = 1,
+		Hollow = 0,
 	};
 }

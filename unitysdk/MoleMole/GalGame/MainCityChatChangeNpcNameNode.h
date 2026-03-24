@@ -7,12 +7,12 @@ namespace MoleMole { class UIBaseChatPlayController; }
 namespace MoleMole { class UIMainCityChatPlayContext; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATCHANGENPCNAMENODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xA5F2970)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCHANGENPCNAMENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA5F2960)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCHANGENPCNAMENODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xA7DC8A0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCHANGENPCNAMENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA7DC890)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatChangeNpcNameNode_TypeDefinitionIndex = 36401;
+	inline static constexpr unsigned int MainCityChatChangeNpcNameNode_TypeDefinitionIndex = 47538;
 
 	class MainCityChatChangeNpcNameNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
 	{

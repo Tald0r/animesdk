@@ -5,9 +5,9 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Material; }
 
-#define MB_MULTIMATERIAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A961310)
+#define MB_MULTIMATERIAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF3DCB0)
 
-inline static constexpr unsigned int MB_MultiMaterial_TypeDefinitionIndex = 81177;
+inline static constexpr unsigned int MB_MultiMaterial_TypeDefinitionIndex = 83218;
 
 class MB_MultiMaterial : public ::System::Object
 {

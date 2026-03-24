@@ -4,7 +4,7 @@
 
 namespace FluffyUnderware::Curvy::ThirdParty::LibTessDotNet
 {
-	inline static constexpr unsigned int PriorityHeap_1_HandleElem_TypeDefinitionIndex = 24599;
+	inline static constexpr unsigned int PriorityHeap_1_HandleElem_TypeDefinitionIndex = 25424;
 
 	template <typename TValue>
 	class PriorityHeap_1_HandleElem : public ::System::Object

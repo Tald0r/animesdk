@@ -9,20 +9,20 @@ namespace MoleMole { class MonoGamepadRegion; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_2_635E72E5AB490154_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x94E97F0)
-#define CLASS_2_635E72E5AB490154_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x94E96C0)
-#define CLASS_2_635E72E5AB490154__CTOR_OFFSET UNITYSDK_OFFSET(0x94E97E0)
+#define CLASS_2_635E72E5AB490154_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x87C0820)
+#define CLASS_2_635E72E5AB490154_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x87C06F0)
+#define CLASS_2_635E72E5AB490154__CTOR_OFFSET UNITYSDK_OFFSET(0x87C0810)
 
-inline static constexpr unsigned int Class_2_635E72E5AB490154_TypeDefinitionIndex = 71051;
+inline static constexpr unsigned int Class_2_635E72E5AB490154_TypeDefinitionIndex = 68711;
 
 class Class_2_635E72E5AB490154 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::MonoGamepadModule* Field_2_4; // 0x18
-	::MonoUITableScrollV2* Field_2_0; // 0x20
-	::MoleMole::MonoGamepadRegion* Field_2_3; // 0x28
-	::UnityEngine::GameObject* Field_2_2; // 0x30
-	::UnityEngine::GameObject* Field_2_1; // 0x38
+	::UnityEngine::GameObject* Field_2_2; // 0x18
+	::UnityEngine::GameObject* Field_2_1; // 0x20
+	::MoleMole::MonoGamepadModule* Field_2_4; // 0x28
+	::MonoUITableScrollV2* Field_2_0; // 0x30
+	::MoleMole::MonoGamepadRegion* Field_2_3; // 0x38
 
 	::System::Void _ctor()
 	{

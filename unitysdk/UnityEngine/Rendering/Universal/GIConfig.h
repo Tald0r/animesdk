@@ -5,12 +5,12 @@
 #include "unitysdk/UnityEngine/Rendering/SphericalHarmonicsL2.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG_GETKODAMAGIPARAMS_OFFSET UNITYSDK_OFFSET(0x17BEF140)
-#define UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x17BEF2D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG_GICONFIGGETKODAMAGIPARAMS_OFFSET UNITYSDK_OFFSET(0x182D77E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x182D7970)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int GIConfig_TypeDefinitionIndex = 28501;
+	inline static constexpr unsigned int GIConfig_TypeDefinitionIndex = 29444;
 
 	class GIConfig : public ::System::Object
 	{
@@ -33,9 +33,9 @@ namespace UnityEngine::Rendering::Universal
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG__CTOR_OFFSET))(this);
 		}
 
-		::UnityEngine::Vector4 GetKodamaGIParams()
+		::UnityEngine::Vector4 GIConfigGetKodamaGIParams()
 		{
-			return ((::UnityEngine::Vector4(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG_GETKODAMAGIPARAMS_OFFSET))(this);
+			return ((::UnityEngine::Vector4(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_GICONFIG_GICONFIGGETKODAMAGIPARAMS_OFFSET))(this);
 		}
 	};
 }

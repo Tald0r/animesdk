@@ -4,9 +4,9 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MONOSCENEMAP3DFOGANIMATIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xAD00740)
+#define MONOSCENEMAP3DFOGANIMATIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9A32F70)
 
-inline static constexpr unsigned int MonoSceneMap3DFogAnimationConfig_TypeDefinitionIndex = 61368;
+inline static constexpr unsigned int MonoSceneMap3DFogAnimationConfig_TypeDefinitionIndex = 71600;
 
 class MonoSceneMap3DFogAnimationConfig : public ::UnityEngine::MonoBehaviour
 {

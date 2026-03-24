@@ -6,29 +6,29 @@
 namespace System { class Action; }
 namespace UnityEngine::InputSystem::Utilities { template <typename T> class SavedStructState_1_TypedRestore; }
 
-#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB0BB60)
-#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB0BBA0)
-#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__SAVEANDRESETSTATE_B__78_0_OFFSET UNITYSDK_OFFSET(0x1AB0BBB0)
-#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__SAVEANDRESETSTATE_B__78_1_OFFSET UNITYSDK_OFFSET(0x1AB0BC30)
+#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B153710)
+#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B153750)
+#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__SAVEANDRESETSTATE_B__78_0_OFFSET UNITYSDK_OFFSET(0x1B153760)
+#define UNITYENGINE_INPUTSYSTEM_ENHANCEDTOUCH_TOUCH___C__SAVEANDRESETSTATE_B__78_1_OFFSET UNITYSDK_OFFSET(0x1B1537E0)
 
 namespace UnityEngine::InputSystem::EnhancedTouch
 {
-	inline static constexpr unsigned int Touch___c_TypeDefinitionIndex = 27700;
+	inline static constexpr unsigned int Touch___c_TypeDefinitionIndex = 28640;
 
 	class Touch___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::InputSystem::EnhancedTouch::Touch___c** StaticGet___9()
 		{
-			return (::UnityEngine::InputSystem::EnhancedTouch::Touch___c**)Il2CppClass::FromTypeDefinitionIndex(Touch___c_TypeDefinitionIndex)->GetStaticField(0x1FE80);
+			return (::UnityEngine::InputSystem::EnhancedTouch::Touch___c**)Il2CppClass::FromTypeDefinitionIndex(Touch___c_TypeDefinitionIndex)->GetStaticField(0x214E0);
 		}
 		static ::System::Action** StaticGet___9__78_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Touch___c_TypeDefinitionIndex)->GetStaticField(0x1FE88);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Touch___c_TypeDefinitionIndex)->GetStaticField(0x214E8);
 		}
 		static ::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState>** StaticGet___9__78_0()
 		{
-			return (::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState>**)Il2CppClass::FromTypeDefinitionIndex(Touch___c_TypeDefinitionIndex)->GetStaticField(0x1FE90);
+			return (::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState>**)Il2CppClass::FromTypeDefinitionIndex(Touch___c_TypeDefinitionIndex)->GetStaticField(0x214F0);
 		}
 
 		static ::System::Void _cctor()

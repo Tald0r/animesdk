@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigTurnBasePreviewEffect; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGTURNBASEBATTLE__CTOR_OFFSET UNITYSDK_OFFSET(0x6251240)
+#define MOLEMOLE_CONFIG_CONFIGTURNBASEBATTLE__CTOR_OFFSET UNITYSDK_OFFSET(0xC23EC30)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTurnBaseBattle_TypeDefinitionIndex = 62752;
+	inline static constexpr unsigned int ConfigTurnBaseBattle_TypeDefinitionIndex = 63812;
 
 	class ConfigTurnBaseBattle : public ::Foundation::MihoyoSerializedScriptableObject
 	{

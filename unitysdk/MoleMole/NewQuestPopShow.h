@@ -1,34 +1,34 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_205E43D40B9E7AEA.h"
-#include "unitysdk/Enum_3_759B08C41000F376.h"
+#include "unitysdk/Enum_3_205B03D40B9BD873.h"
+#include "unitysdk/Enum_3_7590C8C40FF831C9.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_NEWQUESTPOPSHOW_GETMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xBD48FA0)
-#define MOLEMOLE_NEWQUESTPOPSHOW_GET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0xBD48C80)
-#define MOLEMOLE_NEWQUESTPOPSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xBD48C70)
-#define MOLEMOLE_NEWQUESTPOPSHOW_INITIGNOREPOPCTRL_OFFSET UNITYSDK_OFFSET(0xBD48E40)
-#define MOLEMOLE_NEWQUESTPOPSHOW_INITMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xBD48EC0)
-#define MOLEMOLE_NEWQUESTPOPSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xBD492B0)
-#define MOLEMOLE_NEWQUESTPOPSHOW_SET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0xBD48C90)
-#define MOLEMOLE_NEWQUESTPOPSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xBD48CA0)
+#define MOLEMOLE_NEWQUESTPOPSHOW_GETMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xB1B99C0)
+#define MOLEMOLE_NEWQUESTPOPSHOW_GET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0xB1B96A0)
+#define MOLEMOLE_NEWQUESTPOPSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xB1B9690)
+#define MOLEMOLE_NEWQUESTPOPSHOW_INITIGNOREPOPCTRL_OFFSET UNITYSDK_OFFSET(0xB1B9860)
+#define MOLEMOLE_NEWQUESTPOPSHOW_INITMATCHPAGE_OFFSET UNITYSDK_OFFSET(0xB1B98E0)
+#define MOLEMOLE_NEWQUESTPOPSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xB1B9CD0)
+#define MOLEMOLE_NEWQUESTPOPSHOW_SET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0xB1B96B0)
+#define MOLEMOLE_NEWQUESTPOPSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xB1B96C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int NewQuestPopShow_TypeDefinitionIndex = 40788;
+	inline static constexpr unsigned int NewQuestPopShow_TypeDefinitionIndex = 47578;
 
 	class NewQuestPopShow : public ::MoleMole::DisplayMessageBase
 	{
 	public:
 		::System::Collections::Generic::List_1<::System::Int32>* QuestIDList; // 0x28
-		::Enum_3_759B08C41000F376 QuestType; // 0x30
+		::Enum_3_7590C8C40FF831C9 QuestType; // 0x30
 		::System::Boolean _IsMessageSendingQuest_k__BackingField; // 0x34
 
-		::System::Void _ctor(::System::Collections::Generic::List_1<::System::Int32>* questIDList, ::System::Boolean isMessageSendingQuest, ::Enum_3_759B08C41000F376 questType)
+		::System::Void _ctor(::System::Collections::Generic::List_1<::System::Int32>* questIDList, ::System::Boolean isMessageSendingQuest, ::Enum_3_7590C8C40FF831C9 questType)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::Boolean, ::Enum_3_759B08C41000F376))((::PBYTE)hIl2Cpp + MOLEMOLE_NEWQUESTPOPSHOW__CTOR_OFFSET))(this, questIDList, isMessageSendingQuest, questType);
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::System::Int32>*, ::System::Boolean, ::Enum_3_7590C8C40FF831C9))((::PBYTE)hIl2Cpp + MOLEMOLE_NEWQUESTPOPSHOW__CTOR_OFFSET))(this, questIDList, isMessageSendingQuest, questType);
 		}
 
 		::System::Int32 get_Priority()
@@ -56,9 +56,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_NEWQUESTPOPSHOW_INITMATCHPAGE_OFFSET))(this);
 		}
 
-		::System::Boolean GetMatchPage(::Enum_3_205E43D40B9E7AEA& matchPage)
+		::System::Boolean GetMatchPage(::Enum_3_205B03D40B9BD873& matchPage)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Enum_3_205E43D40B9E7AEA&))((::PBYTE)hIl2Cpp + MOLEMOLE_NEWQUESTPOPSHOW_GETMATCHPAGE_OFFSET))(this, matchPage);
+			return ((::System::Boolean(*)(::PVOID, ::Enum_3_205B03D40B9BD873&))((::PBYTE)hIl2Cpp + MOLEMOLE_NEWQUESTPOPSHOW_GETMATCHPAGE_OFFSET))(this, matchPage);
 		}
 
 		::System::Void OnProcess()

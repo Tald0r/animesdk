@@ -8,15 +8,15 @@ class Class_2_5AD8A37AA06A2983_1;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0xB5BA560)
-#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_39FD7185C859CEAD_OFFSET UNITYSDK_OFFSET(0xB5BAA50)
-#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET UNITYSDK_OFFSET(0xB5BA9B0)
-#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_E69AA2E64A20143D_OFFSET UNITYSDK_OFFSET(0xB5BA790)
-#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xB5BA6E0)
+#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0xC7F2E70)
+#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_39FD7185C859CEAD_OFFSET UNITYSDK_OFFSET(0xC7F3090)
+#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET UNITYSDK_OFFSET(0xC7F33A0)
+#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_E69AA2E64A20143D_OFFSET UNITYSDK_OFFSET(0xC7F3440)
+#define MOLEMOLE_TIMELINE_WWISEMUSICTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xC7F2FF0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int WwiseMusicTrack_TypeDefinitionIndex = 77269;
+	inline static constexpr unsigned int WwiseMusicTrack_TypeDefinitionIndex = 47595;
 
 	class WwiseMusicTrack : public ::UnityEngine::Timeline::TrackAsset
 	{
@@ -33,9 +33,9 @@ namespace MoleMole::Timeline
 			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_WWISEMUSICTRACK_CREATETRACKMIXER_OFFSET))(this, a1, a2, a3);
 		}
 
-		::System::Void Method_5_E69AA2E64A20143D()
+		::System::Void Method_5_39FD7185C859CEAD()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_E69AA2E64A20143D_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_39FD7185C859CEAD_OFFSET))(this);
 		}
 
 		::UnityEngine::Playables::Playable Method_5_6CBA94B39B120DE0(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::System::Int32 a3)
@@ -43,9 +43,9 @@ namespace MoleMole::Timeline
 			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET))(this, a1, a2, a3);
 		}
 
-		::System::Void Method_5_39FD7185C859CEAD()
+		::System::Void Method_5_E69AA2E64A20143D()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_39FD7185C859CEAD_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_WWISEMUSICTRACK_METHOD_5_E69AA2E64A20143D_OFFSET))(this);
 		}
 	};
 }

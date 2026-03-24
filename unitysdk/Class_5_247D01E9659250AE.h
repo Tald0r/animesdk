@@ -10,21 +10,21 @@ namespace MoleMole::Config { class UISpecialNumGroup; }
 namespace System::Collections { class IEnumerator; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_5_247D01E9659250AE_METHOD_5_19ED8136218C5C0B_OFFSET UNITYSDK_OFFSET(0x84BCD50)
-#define CLASS_5_247D01E9659250AE_METHOD_5_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0x84BCF60)
-#define CLASS_5_247D01E9659250AE_METHOD_5_B2C52ACF9D9B435B_OFFSET UNITYSDK_OFFSET(0x84BC950)
-#define CLASS_5_247D01E9659250AE_METHOD_5_B430F3DD5F896C88_OFFSET UNITYSDK_OFFSET(0x84BCE10)
-#define CLASS_5_247D01E9659250AE_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x84BCF00)
-#define CLASS_5_247D01E9659250AE_METHOD_5_DFBA3759E53DCE38_OFFSET UNITYSDK_OFFSET(0x84BC8C0)
-#define CLASS_5_247D01E9659250AE__CTOR_OFFSET UNITYSDK_OFFSET(0x84BCEA0)
+#define CLASS_5_247D01E9659250AE_METHOD_5_19ED8136218C5C0B_OFFSET UNITYSDK_OFFSET(0xA866FC0)
+#define CLASS_5_247D01E9659250AE_METHOD_5_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xA8671D0)
+#define CLASS_5_247D01E9659250AE_METHOD_5_B2C52ACF9D9B435B_OFFSET UNITYSDK_OFFSET(0xA866BC0)
+#define CLASS_5_247D01E9659250AE_METHOD_5_B430F3DD5F896C88_OFFSET UNITYSDK_OFFSET(0xA867080)
+#define CLASS_5_247D01E9659250AE_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xA867170)
+#define CLASS_5_247D01E9659250AE_METHOD_5_DFBA3759E53DCE38_OFFSET UNITYSDK_OFFSET(0xA866B30)
+#define CLASS_5_247D01E9659250AE__CTOR_OFFSET UNITYSDK_OFFSET(0xA867110)
 
-inline static constexpr unsigned int Class_5_247D01E9659250AE_TypeDefinitionIndex = 48992;
+inline static constexpr unsigned int Class_5_247D01E9659250AE_TypeDefinitionIndex = 71786;
 
 class Class_5_247D01E9659250AE : public ::Class_4_86126C0ABC4F0231<::MoleMole::Config::ConfigPlayChessBGQuadFade*>
 {
 public:
-	::MoleMole::Config::ConfigPlayChessBGQuadFade* Field_5_0; // 0x40
-	::Class_1_F5B35B1B6669CF16* Field_5_1; // 0x48
+	::Class_1_F5B35B1B6669CF16* Field_5_1; // 0x40
+	::MoleMole::Config::ConfigPlayChessBGQuadFade* Field_5_0; // 0x48
 
 	::System::Void _ctor()
 	{
@@ -46,14 +46,14 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_5_247D01E9659250AE_METHOD_5_B430F3DD5F896C88_OFFSET))(this, a1);
 	}
 
-	::System::Collections::IEnumerator* Method_5_19ED8136218C5C0B(::System::Boolean a1, ::UnityEngine::AnimationCurve* a2, ::System::Single a3)
-	{
-		return ((::System::Collections::IEnumerator*(*)(::PVOID, ::System::Boolean, ::UnityEngine::AnimationCurve*, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_5_247D01E9659250AE_METHOD_5_19ED8136218C5C0B_OFFSET))(this, a1, a2, a3);
-	}
-
 	::System::Void Method_5_CA373AA1C7054598()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_5_247D01E9659250AE_METHOD_5_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Collections::IEnumerator* Method_5_19ED8136218C5C0B(::System::Boolean a1, ::UnityEngine::AnimationCurve* a2, ::System::Single a3)
+	{
+		return ((::System::Collections::IEnumerator*(*)(::PVOID, ::System::Boolean, ::UnityEngine::AnimationCurve*, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_5_247D01E9659250AE_METHOD_5_19ED8136218C5C0B_OFFSET))(this, a1, a2, a3);
 	}
 
 	::System::Void Method_5_2685B6183E614529(::System::Single a1)

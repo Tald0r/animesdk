@@ -6,30 +6,30 @@ namespace System { class String; }
 namespace UnityEngine::UI { class Slider; }
 namespace UnityEngine::UI { class Text; }
 
-#define MOLEMOLE_MONOFPSCONTROLLER_AWAKE_OFFSET UNITYSDK_OFFSET(0x8F1E210)
-#define MOLEMOLE_MONOFPSCONTROLLER_METHOD_5_627594C270CB38B4_OFFSET UNITYSDK_OFFSET(0x8F1E820)
-#define MOLEMOLE_MONOFPSCONTROLLER_START_OFFSET UNITYSDK_OFFSET(0x8F1E4D0)
-#define MOLEMOLE_MONOFPSCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F1E7D0)
-#define MOLEMOLE_MONOFPSCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x8F1E7B0)
+#define MOLEMOLE_MONOFPSCONTROLLER_AWAKE_OFFSET UNITYSDK_OFFSET(0xA02FD30)
+#define MOLEMOLE_MONOFPSCONTROLLER_METHOD_5_627594C270CB38B4_OFFSET UNITYSDK_OFFSET(0xA030340)
+#define MOLEMOLE_MONOFPSCONTROLLER_START_OFFSET UNITYSDK_OFFSET(0xA02FFF0)
+#define MOLEMOLE_MONOFPSCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA0302F0)
+#define MOLEMOLE_MONOFPSCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA0302D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoFPSController_TypeDefinitionIndex = 57870;
+	inline static constexpr unsigned int MonoFPSController_TypeDefinitionIndex = 74147;
 
 	class MonoFPSController : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::System::String** StaticGet_Field_5_4()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MonoFPSController_TypeDefinitionIndex)->GetStaticField(0x36690);
-		}
-		static ::System::Int32* StaticGet_Field_5_2()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSController_TypeDefinitionIndex)->GetStaticField(0xD920);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MonoFPSController_TypeDefinitionIndex)->GetStaticField(0x39340);
 		}
 		static ::System::Int32* StaticGet_Field_5_3()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSController_TypeDefinitionIndex)->GetStaticField(0xD924);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSController_TypeDefinitionIndex)->GetStaticField(0xDFA0);
+		}
+		static ::System::Int32* StaticGet_Field_5_2()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSController_TypeDefinitionIndex)->GetStaticField(0xDFA4);
 		}
 		::UnityEngine::UI::Text* Field_5_0; // 0x18
 		::UnityEngine::UI::Slider* Field_5_1; // 0x20

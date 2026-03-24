@@ -10,7 +10,7 @@ namespace UnityEngine { class Object; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int IBlackboard_TypeDefinitionIndex = 25404;
+	inline static constexpr unsigned int IBlackboard_TypeDefinitionIndex = 27029;
 
 	class IBlackboard
 	{

@@ -3,35 +3,55 @@
 #include "unitysdk/StateTreeCore/StateTreeDataSourceType.h"
 #include "unitysdk/StateTreeCore/StateTreeStateHandle.h"
 #include "unitysdk/System/ValueType.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define STATETREECORE_STATETREEDATAHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x8EB2D0)
-#define STATETREECORE_STATETREEDATAHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8EB340)
-#define STATETREECORE_STATETREEDATAHANDLE_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x315EF0)
-#define STATETREECORE_STATETREEDATAHANDLE_ISVALIDINDEX_OFFSET UNITYSDK_OFFSET(0x19BD8CA0)
-#define STATETREECORE_STATETREEDATAHANDLE_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x19BD8BC0)
-#define STATETREECORE_STATETREEDATAHANDLE_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x19BD8C30)
-#define STATETREECORE_STATETREEDATAHANDLE_RESET_OFFSET UNITYSDK_OFFSET(0x8EB270)
-#define STATETREECORE_STATETREEDATAHANDLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BD8CB0)
-#define STATETREECORE_STATETREEDATAHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8EB180)
-#define STATETREECORE_STATETREEDATAHANDLE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x8EB1F0)
-#define STATETREECORE_STATETREEDATAHANDLE__CTOR_3_OFFSET UNITYSDK_OFFSET(0x8EB200)
-#define STATETREECORE_STATETREEDATAHANDLE__CTOR_4_OFFSET UNITYSDK_OFFSET(0x8EB1F0)
-#define STATETREECORE_STATETREEDATAHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0x8EB110)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define STATETREECORE_STATETREEDATAHANDLE_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x93FD60)
+#define STATETREECORE_STATETREEDATAHANDLE_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x93FD40)
+#define STATETREECORE_STATETREEDATAHANDLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1A9C74A0)
+#define STATETREECORE_STATETREEDATAHANDLE_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x93FCD0)
+#define STATETREECORE_STATETREEDATAHANDLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define STATETREECORE_STATETREEDATAHANDLE_EQUALS_OFFSET UNITYSDK_OFFSET(0x93FB30)
+#define STATETREECORE_STATETREEDATAHANDLE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x93FBA0)
+#define STATETREECORE_STATETREEDATAHANDLE_GETTYPEHASH_OFFSET UNITYSDK_OFFSET(0x1A9C72A0)
+#define STATETREECORE_STATETREEDATAHANDLE_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x350D50)
+#define STATETREECORE_STATETREEDATAHANDLE_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x93FC70)
+#define STATETREECORE_STATETREEDATAHANDLE_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x93FDE0)
+#define STATETREECORE_STATETREEDATAHANDLE_ISVALIDINDEX_OFFSET UNITYSDK_OFFSET(0x1A9C7430)
+#define STATETREECORE_STATETREEDATAHANDLE_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x93FD60)
+#define STATETREECORE_STATETREEDATAHANDLE_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x93FD40)
+#define STATETREECORE_STATETREEDATAHANDLE_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x1A9C7330)
+#define STATETREECORE_STATETREEDATAHANDLE_OP_INEQUALITY_OFFSET UNITYSDK_OFFSET(0x1A9C73B0)
+#define STATETREECORE_STATETREEDATAHANDLE_RESET_OFFSET UNITYSDK_OFFSET(0x93FD80)
+#define STATETREECORE_STATETREEDATAHANDLE_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEDATAHANDLE__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x93FD60)
+#define STATETREECORE_STATETREEDATAHANDLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A9C76E0)
+#define STATETREECORE_STATETREEDATAHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x93FA40)
+#define STATETREECORE_STATETREEDATAHANDLE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x93FAB0)
+#define STATETREECORE_STATETREEDATAHANDLE__CTOR_3_OFFSET UNITYSDK_OFFSET(0x93FAC0)
+#define STATETREECORE_STATETREEDATAHANDLE__CTOR_4_OFFSET UNITYSDK_OFFSET(0x93FAB0)
+#define STATETREECORE_STATETREEDATAHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0x93F9D0)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeDataHandle_TypeDefinitionIndex = 26985;
+	inline static constexpr unsigned int StateTreeDataHandle_TypeDefinitionIndex = 27897;
 
-	struct alignas(4) StateTreeDataHandle
+	struct alignas(2) StateTreeDataHandle
 	{
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
+		{
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(StateTreeDataHandle_TypeDefinitionIndex)->GetStaticField(0x20630);
+		}
 		static ::StateTreeCore::StateTreeDataHandle* StaticGet_Invalid()
 		{
 			return (::StateTreeCore::StateTreeDataHandle*)Il2CppClass::FromTypeDefinitionIndex(StateTreeDataHandle_TypeDefinitionIndex)->GetStaticField(0x4A80);
 		}
 		// static const ::System::UInt16 InvalidIndex = 0xFFFF; // 0x0
+		// static const ::System::UInt32 PersistentTypeHash = 0x7E45BBC0; // 0x0
 		::StateTreeCore::StateTreeDataSourceType Source; // 0x10
-		::System::UInt16 Index; // 0x14
-		::StateTreeCore::StateTreeStateHandle StateHandle; // 0x16
+		::System::UInt16 Index; // 0x12
+		::StateTreeCore::StateTreeStateHandle StateHandle; // 0x14
 
 		::System::Void _ctor(::StateTreeCore::StateTreeDataSourceType source)
 		{
@@ -68,11 +88,6 @@ namespace StateTreeCore
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_GET_ISVALID_OFFSET))(this);
 		}
 
-		::System::Void Reset()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_RESET_OFFSET))(this);
-		}
-
 		::System::Boolean Equals(::StateTreeCore::StateTreeDataHandle other)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::StateTreeCore::StateTreeDataHandle))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_EQUALS_OFFSET))(this, other);
@@ -83,19 +98,79 @@ namespace StateTreeCore
 			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_GETHASHCODE_OFFSET))(this);
 		}
 
-		static ::System::Boolean op_Equality(::StateTreeCore::StateTreeDataHandle lhs, ::StateTreeCore::StateTreeDataHandle rhs)
+		static ::System::UInt32 GetTypeHash(::StateTreeCore::StateTreeDataHandle& self)
 		{
-			return ((::System::Boolean(*)(::StateTreeCore::StateTreeDataHandle, ::StateTreeCore::StateTreeDataHandle))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_OP_EQUALITY_OFFSET))(lhs, rhs);
+			return ((::System::UInt32(*)(::StateTreeCore::StateTreeDataHandle&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_GETTYPEHASH_OFFSET))(self);
 		}
 
-		static ::System::Boolean op_Inequality(::StateTreeCore::StateTreeDataHandle lhs, ::StateTreeCore::StateTreeDataHandle rhs)
+		static ::System::Boolean op_Equality(::StateTreeCore::StateTreeDataHandle& lhs, ::StateTreeCore::StateTreeDataHandle& rhs)
 		{
-			return ((::System::Boolean(*)(::StateTreeCore::StateTreeDataHandle, ::StateTreeCore::StateTreeDataHandle))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_OP_INEQUALITY_OFFSET))(lhs, rhs);
+			return ((::System::Boolean(*)(::StateTreeCore::StateTreeDataHandle&, ::StateTreeCore::StateTreeDataHandle&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_OP_EQUALITY_OFFSET))(lhs, rhs);
+		}
+
+		static ::System::Boolean op_Inequality(::StateTreeCore::StateTreeDataHandle& lhs, ::StateTreeCore::StateTreeDataHandle& rhs)
+		{
+			return ((::System::Boolean(*)(::StateTreeCore::StateTreeDataHandle&, ::StateTreeCore::StateTreeDataHandle&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_OP_INEQUALITY_OFFSET))(lhs, rhs);
 		}
 
 		static ::System::Boolean IsValidIndex(::System::Int32 index)
 		{
 			return ((::System::Boolean(*)(::System::Int32))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_ISVALIDINDEX_OFFSET))(index);
+		}
+
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
+		{
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_GET_STATICSTRUCT_OFFSET))(this);
+		}
+
+		static ::StateTreeCore::StateTreeDataHandle Create()
+		{
+			return ((::StateTreeCore::StateTreeDataHandle(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_CREATE_OFFSET))();
+		}
+
+		::StateTreeCore::StateTreeDataHandle DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeDataHandle(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::StateTreeCore::StateTreeDataHandle CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeDataHandle(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::StateTreeCore::StateTreeDataHandle MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeDataHandle(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::StateTreeCore::StateTreeDataHandle& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeDataHandle&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::StateTreeCore::StateTreeDataHandle& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeDataHandle&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_StateTreeCore_StateTreeDataHandle__CopyAssign(::StateTreeCore::StateTreeDataHandle& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeDataHandle&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEDATAHANDLE_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEDATAHANDLE__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

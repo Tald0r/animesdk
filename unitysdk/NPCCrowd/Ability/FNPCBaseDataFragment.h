@@ -2,30 +2,35 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/StateTreeCore/BaseFragment.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x743B1A0)
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x323990)
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x323930)
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x2C3E30)
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x743B000)
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_SET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x3238C0)
-#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x743B2E0)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x31D0D0)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x31CFB0)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x6F993C0)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x31CF90)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x31D220)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x31CF30)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x31D280)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x31D140)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x31D040)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_RESET_OFFSET UNITYSDK_OFFSET(0x31D1B0)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x31D2E0)
+#define NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x6F99880)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int FNPCBaseDataFragment_TypeDefinitionIndex = 42478;
+	inline static constexpr unsigned int FNPCBaseDataFragment_TypeDefinitionIndex = 70662;
 
 	struct alignas(4) FNPCBaseDataFragment
 	{
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(FNPCBaseDataFragment_TypeDefinitionIndex)->GetStaticField(0xBA70);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(FNPCBaseDataFragment_TypeDefinitionIndex)->GetStaticField(0x324F0);
 		}
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
-		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(FNPCBaseDataFragment_TypeDefinitionIndex)->GetStaticField(0xBA74);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xABCADC81; // 0x0
 		::StateTreeCore::BaseFragment Base; // 0x10
 		::System::UInt32 entityID; // 0x14
 		::System::Int32 TagID; // 0x18
@@ -35,34 +40,59 @@ namespace NPCCrowd::Ability
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT__CCTOR_OFFSET))();
 		}
 
-		::UnrealTypes::FStructHandle get_TypeInfo()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_TYPEINFO_OFFSET))(this);
-		}
-
-		::System::Void set_TypeInfo(::UnrealTypes::FStructHandle value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FStructHandle))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_SET_TYPEINFO_OFFSET))(this, value);
-		}
-
-		::System::UInt32 get_TypeId()
-		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_TYPEID_OFFSET))(this);
-		}
-
-		::UnrealTypes::FStructHandle get_StaticStruct()
-		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
-		}
-
-		static ::System::Void RegisterType()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_REGISTERTYPE_OFFSET))();
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
 		static ::NPCCrowd::Ability::FNPCBaseDataFragment Create()
 		{
 			return ((::NPCCrowd::Ability::FNPCBaseDataFragment(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_CREATE_OFFSET))();
+		}
+
+		::NPCCrowd::Ability::FNPCBaseDataFragment DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCBaseDataFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FNPCBaseDataFragment CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCBaseDataFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FNPCBaseDataFragment MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCBaseDataFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::FNPCBaseDataFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCBaseDataFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::FNPCBaseDataFragment& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCBaseDataFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_FNPCBaseDataFragment__CopyAssign(::NPCCrowd::Ability::FNPCBaseDataFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCBaseDataFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FNPCBASEDATAFRAGMENT__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

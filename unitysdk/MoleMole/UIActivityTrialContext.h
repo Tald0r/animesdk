@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIBackFlowContext.h"
 
-#define MOLEMOLE_UIACTIVITYTRIALCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD3CA010)
+#define MOLEMOLE_UIACTIVITYTRIALCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDEEA420)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityTrialContext_TypeDefinitionIndex = 66857;
+	inline static constexpr unsigned int UIActivityTrialContext_TypeDefinitionIndex = 40369;
 
 	class UIActivityTrialContext : public ::MoleMole::UIBackFlowContext
 	{

@@ -3,7 +3,7 @@
 
 namespace ICSharpCode::SharpZipLib::Zip
 {
-	inline static constexpr unsigned int EncryptionAlgorithm_TypeDefinitionIndex = 6709;
+	inline static constexpr unsigned int EncryptionAlgorithm_TypeDefinitionIndex = 6713;
 
 	enum class EncryptionAlgorithm : ::System::Int32
 	{

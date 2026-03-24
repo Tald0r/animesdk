@@ -4,13 +4,13 @@
 
 namespace System { class String; }
 
-#define QWER_CCONFIGFILEINFO_GET_URL_OFFSET UNITYSDK_OFFSET(0x1AA1D280)
-#define QWER_CCONFIGFILEINFO_SET_URL_OFFSET UNITYSDK_OFFSET(0x1AA1D290)
-#define QWER_CCONFIGFILEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA1B660)
+#define QWER_CCONFIGFILEINFO_GET_URL_OFFSET UNITYSDK_OFFSET(0x1B00CFC0)
+#define QWER_CCONFIGFILEINFO_SET_URL_OFFSET UNITYSDK_OFFSET(0x1B00CFD0)
+#define QWER_CCONFIGFILEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B00B3A0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CConfigFileInfo_TypeDefinitionIndex = 82072;
+	inline static constexpr unsigned int CConfigFileInfo_TypeDefinitionIndex = 84113;
 
 	class CConfigFileInfo : public ::System::Object
 	{

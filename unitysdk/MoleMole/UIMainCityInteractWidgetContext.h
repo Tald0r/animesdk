@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIMAINCITYINTERACTWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7D494B0)
+#define MOLEMOLE_UIMAINCITYINTERACTWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8EC5650)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityInteractWidgetContext_TypeDefinitionIndex = 49004;
+	inline static constexpr unsigned int UIMainCityInteractWidgetContext_TypeDefinitionIndex = 68146;
 
 	class UIMainCityInteractWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

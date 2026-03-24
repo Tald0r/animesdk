@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_EDBF989FCD2F91A5_Class_1_9E89B2D44593C915;
+class Class_1_8C25B6E4C19F237F_Class_1_9E89B2D44593C915;
 
-#define MOLEMOLE_UIINLEVELPAUSETUTORIALWIDGETCONTROLLER_TUTORIALDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x89588E0)
+#define MOLEMOLE_UIINLEVELPAUSETUTORIALWIDGETCONTROLLER_TUTORIALDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9822D20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelPauseTutorialWidgetController_TutorialData_TypeDefinitionIndex = 36793;
+	inline static constexpr unsigned int UIInLevelPauseTutorialWidgetController_TutorialData_TypeDefinitionIndex = 61896;
 
 	class UIInLevelPauseTutorialWidgetController_TutorialData : public ::System::Object
 	{
 	public:
-		::Class_1_EDBF989FCD2F91A5_Class_1_9E89B2D44593C915* data; // 0x10
+		::Class_1_8C25B6E4C19F237F_Class_1_9E89B2D44593C915* data; // 0x10
 		::System::Int32 trainQuestID; // 0x18
-		::System::Boolean getInCurQuest; // 0x1C
-		::System::Boolean redPoind; // 0x1D
+		::System::Boolean redPoind; // 0x1C
+		::System::Boolean getInCurQuest; // 0x1D
 		::System::Boolean isTrain; // 0x1E
 		::System::Int32 groupId; // 0x20
 

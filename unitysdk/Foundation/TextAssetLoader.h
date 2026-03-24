@@ -11,38 +11,38 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define FOUNDATION_TEXTASSETLOADER_CACHEREQUESTHANDLE_OFFSET UNITYSDK_OFFSET(0x1A997070)
-#define FOUNDATION_TEXTASSETLOADER_GETTEMPLATEUNLOADTYPE_OFFSET UNITYSDK_OFFSET(0x1A9969B0)
-#define FOUNDATION_TEXTASSETLOADER_LOAD_1_OFFSET UNITYSDK_OFFSET(0x1A997140)
-#define FOUNDATION_TEXTASSETLOADER_LOAD_OFFSET UNITYSDK_OFFSET(0x1A996B10)
-#define FOUNDATION_TEXTASSETLOADER_SETTEMPLATEUNLOADTYPE_OFFSET UNITYSDK_OFFSET(0x1A996880)
-#define FOUNDATION_TEXTASSETLOADER_UNLOADALLAUTO_OFFSET UNITYSDK_OFFSET(0x1A997570)
-#define FOUNDATION_TEXTASSETLOADER_UNLOAD_OFFSET UNITYSDK_OFFSET(0x1A9973F0)
-#define FOUNDATION_TEXTASSETLOADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A997820)
-#define FOUNDATION_TEXTASSETLOADER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A997810)
+#define FOUNDATION_TEXTASSETLOADER_CACHEREQUESTHANDLE_OFFSET UNITYSDK_OFFSET(0x1AEBF310)
+#define FOUNDATION_TEXTASSETLOADER_GETTEMPLATEUNLOADTYPE_OFFSET UNITYSDK_OFFSET(0x1AEBEC50)
+#define FOUNDATION_TEXTASSETLOADER_LOAD_1_OFFSET UNITYSDK_OFFSET(0x1AEBF3E0)
+#define FOUNDATION_TEXTASSETLOADER_LOAD_OFFSET UNITYSDK_OFFSET(0x1AEBEDA0)
+#define FOUNDATION_TEXTASSETLOADER_SETTEMPLATEUNLOADTYPE_OFFSET UNITYSDK_OFFSET(0x1AEBEB20)
+#define FOUNDATION_TEXTASSETLOADER_UNLOADALLAUTO_OFFSET UNITYSDK_OFFSET(0x1AEBF810)
+#define FOUNDATION_TEXTASSETLOADER_UNLOAD_OFFSET UNITYSDK_OFFSET(0x1AEBF690)
+#define FOUNDATION_TEXTASSETLOADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AEBFAC0)
+#define FOUNDATION_TEXTASSETLOADER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEBFAB0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int TextAssetLoader_TypeDefinitionIndex = 8276;
+	inline static constexpr unsigned int TextAssetLoader_TypeDefinitionIndex = 8036;
 
 	class TextAssetLoader : public ::System::Object
 	{
 	public:
-		static ::System::Action_2<::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*>** StaticGet_IEnumeratorLoadCacheLoadProxy()
+		static ::System::Action_2<::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*>** StaticGet_IEnumeratorLoadCacheHandleProxy()
 		{
-			return (::System::Action_2<::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x69F0);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetsUnloadType>** StaticGet__templateUnloadTypeDict()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetsUnloadType>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x69F8);
+			return (::System::Action_2<::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x6A10);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>** StaticGet__requestHandleDic()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x6A00);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x6A18);
 		}
-		static ::System::Action_2<::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*>** StaticGet_IEnumeratorLoadCacheHandleProxy()
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetsUnloadType>** StaticGet__templateUnloadTypeDict()
 		{
-			return (::System::Action_2<::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x6A08);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetsUnloadType>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x6A20);
+		}
+		static ::System::Action_2<::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*>** StaticGet_IEnumeratorLoadCacheLoadProxy()
+		{
+			return (::System::Action_2<::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*>**)Il2CppClass::FromTypeDefinitionIndex(TextAssetLoader_TypeDefinitionIndex)->GetStaticField(0x6A28);
 		}
 		static ::System::Boolean* StaticGet_EnableExcelAsyncLoadMode()
 		{

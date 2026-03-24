@@ -7,22 +7,22 @@
 namespace QWER { class CTaskHelper___c__DisplayClass4_0; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define QWER_CTASKHELPER__DELAY_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1AA21DC0)
-#define QWER_CTASKHELPER__DELAY_D__4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1AA22120)
-#define QWER_CTASKHELPER__DELAY_D__4__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA21CE0)
+#define QWER_CTASKHELPER__DELAY_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1B011AF0)
+#define QWER_CTASKHELPER__DELAY_D__4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1B011E50)
+#define QWER_CTASKHELPER__DELAY_D__4__CTOR_OFFSET UNITYSDK_OFFSET(0x1B011A10)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CTaskHelper__Delay_d__4_TypeDefinitionIndex = 82105;
+	inline static constexpr unsigned int CTaskHelper__Delay_d__4_TypeDefinitionIndex = 84146;
 
 	class CTaskHelper__Delay_d__4 : public ::System::Object
 	{
 	public:
-		::QWER::CTaskHelper___c__DisplayClass4_0* __8__1; // 0x10
-		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x18
-		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x20
-		::System::UInt64 qwMilliSeconds; // 0x38
-		::System::Int32 __1__state; // 0x40
+		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x10
+		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x28
+		::QWER::CTaskHelper___c__DisplayClass4_0* __8__1; // 0x30
+		::System::Int32 __1__state; // 0x38
+		::System::UInt64 qwMilliSeconds; // 0x40
 
 		::System::Void _ctor()
 		{

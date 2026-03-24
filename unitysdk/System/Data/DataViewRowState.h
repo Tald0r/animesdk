@@ -3,7 +3,7 @@
 
 namespace System::Data
 {
-	inline static constexpr unsigned int DataViewRowState_TypeDefinitionIndex = 35440;
+	inline static constexpr unsigned int DataViewRowState_TypeDefinitionIndex = 36460;
 
 	enum class DataViewRowState : ::System::Int32
 	{

@@ -9,12 +9,12 @@
 namespace System { class Type; }
 namespace UnityEngine { class Material; }
 
-#define UNITYENGINE_NATIVEADDITIONALLIGHTDATA_REGISTERADDITIONALLIGHTDATATYPE_OFFSET UNITYSDK_OFFSET(0x197CE690)
-#define UNITYENGINE_NATIVEADDITIONALLIGHTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x197CCDE0)
+#define UNITYENGINE_NATIVEADDITIONALLIGHTDATA_REGISTERADDITIONALLIGHTDATATYPE_OFFSET UNITYSDK_OFFSET(0x19C3E130)
+#define UNITYENGINE_NATIVEADDITIONALLIGHTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19C3B940)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int NativeAdditionalLightData_TypeDefinitionIndex = 5267;
+	inline static constexpr unsigned int NativeAdditionalLightData_TypeDefinitionIndex = 5268;
 
 	class NativeAdditionalLightData : public ::UnityEngine::MonoBehaviour
 	{

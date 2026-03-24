@@ -10,30 +10,30 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8A054C0)
-#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8A054D0)
-#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8A05E20)
-#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8A063B0)
-#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A06370)
+#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x10A9E170)
+#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x10A9E180)
+#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x10A9EAD0)
+#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x10A9F060)
+#define MOLEMOLE_CONFIG_CONFIGPOSROTREFERTARGET_CONFIGPOSROTREFERTARGET_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x10A9F020)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex = 77594;
+	inline static constexpr unsigned int ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex = 40231;
 
 	class ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigPosRotReferTarget*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>**)Il2CppClass::FromTypeDefinitionIndex(ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FE70);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DynamicString*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DynamicString*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FE78);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DynamicString*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46AB0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>**)Il2CppClass::FromTypeDefinitionIndex(ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46AB8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FE80);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigPosRotReferTarget_ConfigPosRotReferTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46AC0);
 		}
 
 		::System::Void _ctor()

@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int InteractionEndSuddenEventMsg_TypeDefinitionIndex = 49561;
+	inline static constexpr unsigned int InteractionEndSuddenEventMsg_TypeDefinitionIndex = 46451;
 
 	struct alignas(8) InteractionEndSuddenEventMsg
 	{

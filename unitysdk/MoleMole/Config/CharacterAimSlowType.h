@@ -3,12 +3,12 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CharacterAimSlowType_TypeDefinitionIndex = 68081;
+	inline static constexpr unsigned int CharacterAimSlowType_TypeDefinitionIndex = 62074;
 
 	enum class CharacterAimSlowType : ::System::Int32
 	{
 		Both = 2,
-		AttachPoint = 0,
 		Collision = 1,
+		AttachPoint = 0,
 	};
 }

@@ -3,11 +3,11 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int InteractPosType_TypeDefinitionIndex = 68217;
+	inline static constexpr unsigned int InteractPosType_TypeDefinitionIndex = 41314;
 
 	enum class InteractPosType : ::System::Int32
 	{
-		Near = 1,
 		None = 0,
+		Near = 1,
 	};
 }

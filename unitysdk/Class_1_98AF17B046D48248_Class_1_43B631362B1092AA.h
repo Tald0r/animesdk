@@ -7,16 +7,16 @@
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Object; }
 
-#define CLASS_1_98AF17B046D48248_CLASS_1_43B631362B1092AA_METHOD_1_75F61EAE4CE239AC_OFFSET UNITYSDK_OFFSET(0xA204C90)
-#define CLASS_1_98AF17B046D48248_CLASS_1_43B631362B1092AA__CTOR_OFFSET UNITYSDK_OFFSET(0xA204C80)
+#define CLASS_1_98AF17B046D48248_CLASS_1_43B631362B1092AA_METHOD_1_75F61EAE4CE239AC_OFFSET UNITYSDK_OFFSET(0x6064C00)
+#define CLASS_1_98AF17B046D48248_CLASS_1_43B631362B1092AA__CTOR_OFFSET UNITYSDK_OFFSET(0x6064BF0)
 
-inline static constexpr unsigned int Class_1_98AF17B046D48248_Class_1_43B631362B1092AA_TypeDefinitionIndex = 70505;
+inline static constexpr unsigned int Class_1_98AF17B046D48248_Class_1_43B631362B1092AA_TypeDefinitionIndex = 77004;
 
 class Class_1_98AF17B046D48248_Class_1_43B631362B1092AA : public ::System::Object
 {
 public:
-	::Foundation::AssetPath Field_1_1; // 0x10
-	::System::Action_1<::Foundation::AssetRequestHandle>* Field_1_0; // 0x20
+	::System::Action_1<::Foundation::AssetRequestHandle>* Field_1_0; // 0x10
+	::Foundation::AssetPath Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

@@ -7,7 +7,7 @@
 class Class_1_BDDDDB46A99CFF4C;
 namespace MoleMole::Config { class AnimatorZone; }
 
-inline static constexpr unsigned int Struct_2_77E02A35C116A0EE_TypeDefinitionIndex = 40858;
+inline static constexpr unsigned int Struct_2_77E02A35C116A0EE_TypeDefinitionIndex = 41132;
 
 struct alignas(8) Struct_2_77E02A35C116A0EE
 {

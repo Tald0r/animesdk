@@ -14,21 +14,21 @@
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Func_1; }
 
-#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_02B6663B077C485D_OFFSET UNITYSDK_OFFSET(0x35D790)
-#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_1428CC265AA1C570_OFFSET UNITYSDK_OFFSET(0x35D7F0)
-#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_67B7955FD5047F12_OFFSET UNITYSDK_OFFSET(0x35D770)
-#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_81F969B0AB89816D_OFFSET UNITYSDK_OFFSET(0x35D820)
-#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_D0A49964B6DE96BC_OFFSET UNITYSDK_OFFSET(0x35D7C0)
-#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_D1E9962DB2ABE4AB_OFFSET UNITYSDK_OFFSET(0x35D7B0)
-#define STRUCT_2_66C8C229A7C86FCA__CCTOR_OFFSET UNITYSDK_OFFSET(0x9046260)
+#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_02B6663B077C485D_OFFSET UNITYSDK_OFFSET(0x598950)
+#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_1428CC265AA1C570_OFFSET UNITYSDK_OFFSET(0x39A0A0)
+#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_67B7955FD5047F12_OFFSET UNITYSDK_OFFSET(0x39A0D0)
+#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_81F969B0AB89816D_OFFSET UNITYSDK_OFFSET(0x39A140)
+#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_D0A49964B6DE96BC_OFFSET UNITYSDK_OFFSET(0x5987A0)
+#define STRUCT_2_66C8C229A7C86FCA_METHOD_2_D1E9962DB2ABE4AB_OFFSET UNITYSDK_OFFSET(0x3186F0)
+#define STRUCT_2_66C8C229A7C86FCA__CCTOR_OFFSET UNITYSDK_OFFSET(0xFAE89B0)
 
-inline static constexpr unsigned int Struct_2_66C8C229A7C86FCA_TypeDefinitionIndex = 51668;
+inline static constexpr unsigned int Struct_2_66C8C229A7C86FCA_TypeDefinitionIndex = 59986;
 
 struct alignas(8) Struct_2_66C8C229A7C86FCA
 {
 	static ::PipelineCamera::PositionAxisDecomposer* StaticGet_Field_2_7()
 	{
-		return (::PipelineCamera::PositionAxisDecomposer*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_66C8C229A7C86FCA_TypeDefinitionIndex)->GetStaticField(0xEFB0);
+		return (::PipelineCamera::PositionAxisDecomposer*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_66C8C229A7C86FCA_TypeDefinitionIndex)->GetStaticField(0xF9D0);
 	}
 	::Foundation::Variable_1<::UnityEngine::Vector3> Field_2_0; // 0x10
 	::System::Single Field_2_1; // 0x30
@@ -43,24 +43,14 @@ struct alignas(8) Struct_2_66C8C229A7C86FCA
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA__CCTOR_OFFSET))();
 	}
 
-	::System::Void Method_2_67B7955FD5047F12(::System::Func_2<::Struct_2_4E049E2562254C08, ::UnityEngine::Vector3>* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Func_2<::Struct_2_4E049E2562254C08, ::UnityEngine::Vector3>*))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_67B7955FD5047F12_OFFSET))(this, a1);
-	}
-
-	::Struct_2_4E049E2562254C08 Method_2_02B6663B077C485D(::System::Single a1)
-	{
-		return ((::Struct_2_4E049E2562254C08(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_02B6663B077C485D_OFFSET))(this, a1);
-	}
-
 	::System::Void Method_2_D1E9962DB2ABE4AB(::UnityEngine::LayerMask a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::LayerMask))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_D1E9962DB2ABE4AB_OFFSET))(this, a1);
 	}
 
-	::System::Boolean Method_2_D0A49964B6DE96BC(::UnityEngine::Vector3 a1, ::UnityEngine::RaycastHit& a2)
+	::System::Void Method_2_81F969B0AB89816D(::System::Single a1, ::System::Single a2)
 	{
-		return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::RaycastHit&))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_D0A49964B6DE96BC_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_81F969B0AB89816D_OFFSET))(this, a1, a2);
 	}
 
 	::System::Void Method_2_1428CC265AA1C570(::System::Func_1<::UnityEngine::Vector3>* a1, ::System::Single a2, ::System::Single a3)
@@ -68,8 +58,18 @@ struct alignas(8) Struct_2_66C8C229A7C86FCA
 		return ((::System::Void(*)(::PVOID, ::System::Func_1<::UnityEngine::Vector3>*, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_1428CC265AA1C570_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Void Method_2_81F969B0AB89816D(::System::Single a1, ::System::Single a2)
+	::System::Boolean Method_2_D0A49964B6DE96BC(::UnityEngine::Vector3 a1, ::UnityEngine::RaycastHit& a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_81F969B0AB89816D_OFFSET))(this, a1, a2);
+		return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::RaycastHit&))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_D0A49964B6DE96BC_OFFSET))(this, a1, a2);
+	}
+
+	::Struct_2_4E049E2562254C08 Method_2_02B6663B077C485D(::System::Single a1)
+	{
+		return ((::Struct_2_4E049E2562254C08(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_02B6663B077C485D_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_67B7955FD5047F12(::System::Func_2<::Struct_2_4E049E2562254C08, ::UnityEngine::Vector3>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Func_2<::Struct_2_4E049E2562254C08, ::UnityEngine::Vector3>*))((::PBYTE)hIl2Cpp + STRUCT_2_66C8C229A7C86FCA_METHOD_2_67B7955FD5047F12_OFFSET))(this, a1);
 	}
 };

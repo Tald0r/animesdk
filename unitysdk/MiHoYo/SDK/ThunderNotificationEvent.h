@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ThunderNotificationEvent_TypeDefinitionIndex = 33599;
+	inline static constexpr unsigned int ThunderNotificationEvent_TypeDefinitionIndex = 34572;
 
 	enum class ThunderNotificationEvent : ::System::Int32
 	{

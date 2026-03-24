@@ -6,12 +6,12 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define FLOWCANVAS_NODES_SWITCHINT___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19DADF60)
-#define FLOWCANVAS_NODES_SWITCHINT___C__DISPLAYCLASS4_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x19DADF70)
+#define FLOWCANVAS_NODES_SWITCHINT___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A39F190)
+#define FLOWCANVAS_NODES_SWITCHINT___C__DISPLAYCLASS4_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A39F1A0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SwitchInt___c__DisplayClass4_0_TypeDefinitionIndex = 26087;
+	inline static constexpr unsigned int SwitchInt___c__DisplayClass4_0_TypeDefinitionIndex = 26501;
 
 	class SwitchInt___c__DisplayClass4_0 : public ::System::Object
 	{

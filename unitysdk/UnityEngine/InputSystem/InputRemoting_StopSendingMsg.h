@@ -4,11 +4,11 @@
 
 namespace UnityEngine::InputSystem { class InputRemoting; }
 
-#define UNITYENGINE_INPUTSYSTEM_INPUTREMOTING_STOPSENDINGMSG_PROCESS_OFFSET UNITYSDK_OFFSET(0x1AB0C9C0)
+#define UNITYENGINE_INPUTSYSTEM_INPUTREMOTING_STOPSENDINGMSG_PROCESS_OFFSET UNITYSDK_OFFSET(0x1B154570)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputRemoting_StopSendingMsg_TypeDefinitionIndex = 27536;
+	inline static constexpr unsigned int InputRemoting_StopSendingMsg_TypeDefinitionIndex = 28476;
 
 	class InputRemoting_StopSendingMsg : public ::System::Object
 	{

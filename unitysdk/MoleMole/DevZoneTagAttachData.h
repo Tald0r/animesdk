@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_DEVZONETAGATTACHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x16BBD3B0)
+#define MOLEMOLE_DEVZONETAGATTACHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1750A980)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int DevZoneTagAttachData_TypeDefinitionIndex = 79232;
+	inline static constexpr unsigned int DevZoneTagAttachData_TypeDefinitionIndex = 81274;
 
 	class DevZoneTagAttachData : public ::System::Object
 	{

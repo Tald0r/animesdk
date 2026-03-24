@@ -6,21 +6,21 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define EXPRESSIONV2_EXPRESSIONUTILS_GETSPANHASHCODE_OFFSET UNITYSDK_OFFSET(0x9C37680)
-#define EXPRESSIONV2_EXPRESSIONUTILS_GETSTRINGFROMHASH_OFFSET UNITYSDK_OFFSET(0x9C37910)
-#define EXPRESSIONV2_EXPRESSIONUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x9C37A80)
-#define EXPRESSIONV2_EXPRESSIONUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x9C37A70)
+#define EXPRESSIONV2_EXPRESSIONUTILS_GETSPANHASHCODE_OFFSET UNITYSDK_OFFSET(0x6C0DBB0)
+#define EXPRESSIONV2_EXPRESSIONUTILS_GETSTRINGFROMHASH_OFFSET UNITYSDK_OFFSET(0x6C0DE40)
+#define EXPRESSIONV2_EXPRESSIONUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x6C0DFB0)
+#define EXPRESSIONV2_EXPRESSIONUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x6C0DFA0)
 
 namespace ExpressionV2
 {
-	inline static constexpr unsigned int ExpressionUtils_TypeDefinitionIndex = 79198;
+	inline static constexpr unsigned int ExpressionUtils_TypeDefinitionIndex = 70524;
 
 	class ExpressionUtils : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>** StaticGet_s_hash2String()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ExpressionUtils_TypeDefinitionIndex)->GetStaticField(0x35930);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ExpressionUtils_TypeDefinitionIndex)->GetStaticField(0x38300);
 		}
 
 		::System::Void _ctor()

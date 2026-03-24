@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define ASSEMBLYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFE79F0)
+#define ASSEMBLYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5F6850)
 
-inline static constexpr unsigned int AssemblyInfo_TypeDefinitionIndex = 81174;
+inline static constexpr unsigned int AssemblyInfo_TypeDefinitionIndex = 83215;
 
 class AssemblyInfo : public ::System::Object
 {

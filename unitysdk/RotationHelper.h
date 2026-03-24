@@ -4,9 +4,9 @@
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define ROTATIONHELPER_GETROTATIONBYTWOPOSITION_OFFSET UNITYSDK_OFFSET(0x1815E650)
+#define ROTATIONHELPER_GETROTATIONBYTWOPOSITION_OFFSET UNITYSDK_OFFSET(0x1826EB90)
 
-inline static constexpr unsigned int RotationHelper_TypeDefinitionIndex = 48664;
+inline static constexpr unsigned int RotationHelper_TypeDefinitionIndex = 80783;
 
 class RotationHelper : public ::System::Object
 {

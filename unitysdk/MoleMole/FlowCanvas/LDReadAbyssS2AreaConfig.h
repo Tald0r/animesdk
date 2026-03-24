@@ -4,12 +4,12 @@
 
 namespace MoleMole::FlatBuffers::Config { class AbyssS2AreaConfigTemplate; }
 
-#define MOLEMOLE_FLOWCANVAS_LDREADABYSSS2AREACONFIG_INVOKE_OFFSET UNITYSDK_OFFSET(0xE8668B0)
-#define MOLEMOLE_FLOWCANVAS_LDREADABYSSS2AREACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE866A00)
+#define MOLEMOLE_FLOWCANVAS_LDREADABYSSS2AREACONFIG_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD357C0)
+#define MOLEMOLE_FLOWCANVAS_LDREADABYSSS2AREACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCD35910)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int LDReadAbyssS2AreaConfig_TypeDefinitionIndex = 67868;
+	inline static constexpr unsigned int LDReadAbyssS2AreaConfig_TypeDefinitionIndex = 76444;
 
 	class LDReadAbyssS2AreaConfig : public ::FlowCanvas::Nodes::CallableFunctionNode_1<::MoleMole::FlatBuffers::Config::AbyssS2AreaConfigTemplate*>
 	{

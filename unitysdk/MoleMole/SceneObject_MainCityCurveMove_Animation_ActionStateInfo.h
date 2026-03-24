@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SceneObject_MainCityCurveMove_Animation_ActionStateInfo_TypeDefinitionIndex = 72716;
+	inline static constexpr unsigned int SceneObject_MainCityCurveMove_Animation_ActionStateInfo_TypeDefinitionIndex = 62685;
 
 	struct alignas(4) SceneObject_MainCityCurveMove_Animation_ActionStateInfo
 	{

@@ -7,7 +7,7 @@ class Class_1_68E026DE4F7A0C2D;
 class Class_1_D9BAE726F869C3AC;
 namespace MoleMole { class UIWindowController; }
 
-inline static constexpr unsigned int Class_1_0425BAB2DA712771_Struct_2_9D6FA265B2DE3C13_TypeDefinitionIndex = 39984;
+inline static constexpr unsigned int Class_1_0425BAB2DA712771_Struct_2_9D6FA265B2DE3C13_TypeDefinitionIndex = 42613;
 
 struct alignas(8) Class_1_0425BAB2DA712771_Struct_2_9D6FA265B2DE3C13
 {

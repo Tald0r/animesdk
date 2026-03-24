@@ -3,15 +3,15 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int ENPCInteraction_TypeDefinitionIndex = 17127;
+	inline static constexpr unsigned int ENPCInteraction_TypeDefinitionIndex = 15317;
 
 	enum class ENPCInteraction : ::System::Int16
 	{
-		OnAddInteract = 3,
-		EnumCount = 5,
-		OnEnd = 1,
 		OnStart = 0,
-		OnInteract = 2,
+		OnEnd = 1,
+		EnumCount = 5,
+		OnAddInteract = 3,
 		OnRemoveInteract = 4,
+		OnInteract = 2,
 	};
 }

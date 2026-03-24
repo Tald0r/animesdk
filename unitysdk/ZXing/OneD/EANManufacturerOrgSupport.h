@@ -5,17 +5,17 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define ZXING_ONED_EANMANUFACTURERORGSUPPORT__CTOR_OFFSET UNITYSDK_OFFSET(0x17D3A0E0)
+#define ZXING_ONED_EANMANUFACTURERORGSUPPORT__CTOR_OFFSET UNITYSDK_OFFSET(0x18441B40)
 
 namespace ZXing::OneD
 {
-	inline static constexpr unsigned int EANManufacturerOrgSupport_TypeDefinitionIndex = 8656;
+	inline static constexpr unsigned int EANManufacturerOrgSupport_TypeDefinitionIndex = 8667;
 
 	class EANManufacturerOrgSupport : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::Il2CppArray<::System::Int32>*>* ranges; // 0x10
-		::System::Collections::Generic::List_1<::System::String*>* countryIdentifiers; // 0x18
+		::System::Collections::Generic::List_1<::System::String*>* countryIdentifiers; // 0x10
+		::System::Collections::Generic::List_1<::Il2CppArray<::System::Int32>*>* ranges; // 0x18
 
 		::System::Void _ctor()
 		{

@@ -8,21 +8,21 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE874BC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE_SETMONSTERENTITYACTIVE_OFFSET UNITYSDK_OFFSET(0xE874CF0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE_START_OFFSET UNITYSDK_OFFSET(0xE8756A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0xE875B70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xCD43790)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE_SETMONSTERENTITYACTIVE_OFFSET UNITYSDK_OFFSET(0xCD438C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE_START_OFFSET UNITYSDK_OFFSET(0xCD44270)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHITEMACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD44740)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSwitchItemActive_TypeDefinitionIndex = 45903;
+	inline static constexpr unsigned int LDSwitchItemActive_TypeDefinitionIndex = 49063;
 
 	class LDSwitchItemActive : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _output; // 0xA8
-		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* entityTargetInput; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* targetStateInput; // 0xB8
+		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* entityTargetInput; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* targetStateInput; // 0xB0
+		::FlowCanvas::FlowOutput* _output; // 0xB8
 
 		::System::Void _ctor()
 		{

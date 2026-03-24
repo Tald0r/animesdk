@@ -5,13 +5,11 @@
 namespace MoleMole { class GraphicSettingProfileBase; }
 namespace System { class String; }
 
-#define CLASS_2_B82F43BE25916F7C_5_METHOD_2_4487776BEE04D471_OFFSET UNITYSDK_OFFSET(0x6530D10)
-#define CLASS_2_B82F43BE25916F7C_5_METHOD_2_6424DA16BE1ACD1D_OFFSET UNITYSDK_OFFSET(0x6530F40)
-#define CLASS_2_B82F43BE25916F7C_5_METHOD_2_853C4BAB67B66148_OFFSET UNITYSDK_OFFSET(0x652F9B0)
-#define CLASS_2_B82F43BE25916F7C_5_METHOD_2_ACE888BF6F5BC5FD_OFFSET UNITYSDK_OFFSET(0x65308B0)
-#define CLASS_2_B82F43BE25916F7C_5__CTOR_OFFSET UNITYSDK_OFFSET(0x652F9A0)
+#define CLASS_2_B82F43BE25916F7C_5_METHOD_2_6424DA16BE1ACD1D_OFFSET UNITYSDK_OFFSET(0x6B3BD60)
+#define CLASS_2_B82F43BE25916F7C_5_METHOD_2_CF27EDB12528CE39_OFFSET UNITYSDK_OFFSET(0x6B3B610)
+#define CLASS_2_B82F43BE25916F7C_5__CTOR_OFFSET UNITYSDK_OFFSET(0x6B3B600)
 
-inline static constexpr unsigned int Class_2_B82F43BE25916F7C_5_TypeDefinitionIndex = 46470;
+inline static constexpr unsigned int Class_2_B82F43BE25916F7C_5_TypeDefinitionIndex = 50067;
 
 class Class_2_B82F43BE25916F7C_5 : public ::Class_1_480FC3B3774489BF
 {
@@ -21,19 +19,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::GraphicSettingProfileBase*))((::PBYTE)hIl2Cpp + CLASS_2_B82F43BE25916F7C_5__CTOR_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_2_853C4BAB67B66148(::System::String* a1, ::System::Boolean a2)
+	::System::Void Method_2_CF27EDB12528CE39(::System::String* a1, ::System::Boolean a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_B82F43BE25916F7C_5_METHOD_2_853C4BAB67B66148_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_2_ACE888BF6F5BC5FD()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B82F43BE25916F7C_5_METHOD_2_ACE888BF6F5BC5FD_OFFSET))(this);
-	}
-
-	::System::Boolean Method_2_4487776BEE04D471()
-	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_B82F43BE25916F7C_5_METHOD_2_4487776BEE04D471_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_B82F43BE25916F7C_5_METHOD_2_CF27EDB12528CE39_OFFSET))(this, a1, a2);
 	}
 
 	::System::Void Method_2_6424DA16BE1ACD1D(::System::String* a1, ::System::Boolean a2)

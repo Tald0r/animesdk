@@ -2,36 +2,36 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/MoleMole/GameSubsystemBaseEx_1.h"
-#include "unitysdk/Struct_2_11FD83788053949F_1.h"
-#include "unitysdk/Struct_2_A840136A4E657746_2.h"
+#include "unitysdk/Struct_2_A840136A4E657746.h"
+#include "unitysdk/Struct_2_A840136A4E657746_1.h"
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB3CB680)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xB3CB920)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERINDIVIDUALDAMAGESCORE_OFFSET UNITYSDK_OFFSET(0xB3CBCA0)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERINDIVIDUALSKILLSCORE_OFFSET UNITYSDK_OFFSET(0xB3CC090)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERLOSEPLATINUMTROPHY_OFFSET UNITYSDK_OFFSET(0xB3CC440)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTEROPENTREASURE_OFFSET UNITYSDK_OFFSET(0xB3CC4A0)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERSTYLISHSKILLID_OFFSET UNITYSDK_OFFSET(0xB3CBBB0)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM__CTOR_OFFSET UNITYSDK_OFFSET(0xB3CCC20)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB3CCC40)
-#define MOLEMOLE_STYLISHSCORESUBSYSTEM___BASE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xB3CCCA0)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA663A90)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xA663D30)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERINDIVIDUALDAMAGESCORE_OFFSET UNITYSDK_OFFSET(0xA6640B0)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERINDIVIDUALSKILLSCORE_OFFSET UNITYSDK_OFFSET(0xA664460)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERLOSEPLATINUMTROPHY_OFFSET UNITYSDK_OFFSET(0xA664820)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTEROPENTREASURE_OFFSET UNITYSDK_OFFSET(0xA664880)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM_REGISTERSTYLISHSKILLID_OFFSET UNITYSDK_OFFSET(0xA663FC0)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM__CTOR_OFFSET UNITYSDK_OFFSET(0xA665000)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA665020)
+#define MOLEMOLE_STYLISHSCORESUBSYSTEM___BASE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xA665080)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int StylishScoreSubsystem_TypeDefinitionIndex = 47027;
+	inline static constexpr unsigned int StylishScoreSubsystem_TypeDefinitionIndex = 39850;
 
 	class StylishScoreSubsystem : public ::MoleMole::GameSubsystemBaseEx_1<::MoleMole::StylishScoreSubsystem*>
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Struct_2_11FD83788053949F_1>* IndividualDamageScoreMap; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Struct_2_A840136A4E657746_2>* IndividualSkillScoreMap; // 0x18
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* StylishSkillCount; // 0x20
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Single>* StylishLevelTimer; // 0x28
-		::System::Int32 MaxModifierStackCount; // 0x30
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Single>* StylishLevelTimer; // 0x10
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Struct_2_A840136A4E657746>* IndividualSkillScoreMap; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Struct_2_A840136A4E657746_1>* IndividualDamageScoreMap; // 0x20
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* StylishSkillCount; // 0x28
+		::System::Boolean LosePlatinumTrophy; // 0x30
 		::System::Int32 CurrentModifierStackCount; // 0x34
-		::System::Boolean LosePlatinumTrophy; // 0x38
+		::System::Int32 MaxModifierStackCount; // 0x38
 
 		::System::Void _ctor()
 		{

@@ -9,18 +9,18 @@ namespace MoleMole::GalGame { class MainCityChatBranchItem; }
 namespace MoleMole::GalGame { class MainCityChatShowUIConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWUINODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xE107590)
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE107580)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWUINODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0x7A6BAB0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7A6BAA0)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatShowUINode_TypeDefinitionIndex = 56664;
+	inline static constexpr unsigned int MainCityChatShowUINode_TypeDefinitionIndex = 41639;
 
 	class MainCityChatShowUINode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
 	{
 	public:
-		::System::Collections::Generic::List_1<::MoleMole::GalGame::MainCityChatBranchItem*>* transitionList; // 0x18
-		::MoleMole::GalGame::MainCityChatShowUIConfig* Config; // 0x20
+		::MoleMole::GalGame::MainCityChatShowUIConfig* Config; // 0x18
+		::System::Collections::Generic::List_1<::MoleMole::GalGame::MainCityChatBranchItem*>* transitionList; // 0x20
 
 		::System::Void _ctor()
 		{

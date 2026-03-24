@@ -5,24 +5,24 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MIHOYO_SDK_WIN_CALENDARUTILS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18A22050)
-#define MIHOYO_SDK_WIN_CALENDARUTILS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18A22090)
-#define MIHOYO_SDK_WIN_CALENDARUTILS___C__GETMONTHSTRINGARRAY_B__8_0_OFFSET UNITYSDK_OFFSET(0x18A220A0)
+#define MIHOYO_SDK_WIN_CALENDARUTILS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18E4D990)
+#define MIHOYO_SDK_WIN_CALENDARUTILS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18E4D9D0)
+#define MIHOYO_SDK_WIN_CALENDARUTILS___C__GETMONTHSTRINGARRAY_B__8_0_OFFSET UNITYSDK_OFFSET(0x18E4D9E0)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int CalendarUtils___c_TypeDefinitionIndex = 18912;
+	inline static constexpr unsigned int CalendarUtils___c_TypeDefinitionIndex = 19510;
 
 	class CalendarUtils___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__8_0()
-		{
-			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(CalendarUtils___c_TypeDefinitionIndex)->GetStaticField(0x9B30);
-		}
 		static ::MiHoYo::SDK::Win::CalendarUtils___c** StaticGet___9()
 		{
-			return (::MiHoYo::SDK::Win::CalendarUtils___c**)Il2CppClass::FromTypeDefinitionIndex(CalendarUtils___c_TypeDefinitionIndex)->GetStaticField(0x9B38);
+			return (::MiHoYo::SDK::Win::CalendarUtils___c**)Il2CppClass::FromTypeDefinitionIndex(CalendarUtils___c_TypeDefinitionIndex)->GetStaticField(0x9C30);
+		}
+		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__8_0()
+		{
+			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(CalendarUtils___c_TypeDefinitionIndex)->GetStaticField(0x9C38);
 		}
 
 		static ::System::Void _cctor()

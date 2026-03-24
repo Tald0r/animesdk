@@ -6,16 +6,16 @@
 namespace System { class Action; }
 namespace System { class String; }
 
-#define CLASS_2_C52A9B432B07038D_CLASS_1_D1FF990DDB0B8B11_METHOD_1_E11AC65AA0DC2249_OFFSET UNITYSDK_OFFSET(0x6C0CEB0)
-#define CLASS_2_C52A9B432B07038D_CLASS_1_D1FF990DDB0B8B11__CTOR_OFFSET UNITYSDK_OFFSET(0x6C0CEA0)
+#define CLASS_2_C52A9B432B07038D_CLASS_1_D1FF990DDB0B8B11_METHOD_1_E11AC65AA0DC2249_OFFSET UNITYSDK_OFFSET(0xAC11A70)
+#define CLASS_2_C52A9B432B07038D_CLASS_1_D1FF990DDB0B8B11__CTOR_OFFSET UNITYSDK_OFFSET(0xAC11A60)
 
-inline static constexpr unsigned int Class_2_C52A9B432B07038D_Class_1_D1FF990DDB0B8B11_TypeDefinitionIndex = 74084;
+inline static constexpr unsigned int Class_2_C52A9B432B07038D_Class_1_D1FF990DDB0B8B11_TypeDefinitionIndex = 60292;
 
 class Class_2_C52A9B432B07038D_Class_1_D1FF990DDB0B8B11 : public ::System::Object
 {
 public:
-	::System::Action* Field_1_2; // 0x10
-	::System::String* Field_1_1; // 0x18
+	::System::String* Field_1_1; // 0x10
+	::System::Action* Field_1_2; // 0x18
 	::MoleMole::LanguageVoiceType Field_1_0; // 0x20
 
 	::System::Void _ctor()

@@ -3,12 +3,12 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Quaternion.h"
 
-#define FLUFFYUNDERWARE_DEVTOOLS_EXTENSIONS_QUATERNIONEXT_DIFFERENTORIENTATION_OFFSET UNITYSDK_OFFSET(0x1A242070)
-#define FLUFFYUNDERWARE_DEVTOOLS_EXTENSIONS_QUATERNIONEXT_SAMEORIENTATION_OFFSET UNITYSDK_OFFSET(0x1A242020)
+#define FLUFFYUNDERWARE_DEVTOOLS_EXTENSIONS_QUATERNIONEXT_DIFFERENTORIENTATION_OFFSET UNITYSDK_OFFSET(0x1A809980)
+#define FLUFFYUNDERWARE_DEVTOOLS_EXTENSIONS_QUATERNIONEXT_SAMEORIENTATION_OFFSET UNITYSDK_OFFSET(0x1A809930)
 
 namespace FluffyUnderware::DevTools::Extensions
 {
-	inline static constexpr unsigned int QuaternionExt_TypeDefinitionIndex = 24569;
+	inline static constexpr unsigned int QuaternionExt_TypeDefinitionIndex = 25394;
 
 	class QuaternionExt : public ::System::Object
 	{

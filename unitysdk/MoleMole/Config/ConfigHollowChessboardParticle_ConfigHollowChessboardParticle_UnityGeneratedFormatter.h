@@ -15,38 +15,38 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x6552950)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x6552960)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x6552D80)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x6553040)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x6553000)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x81EE4C0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x81EE4D0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x81EE8F0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x81EEBB0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE_CONFIGHOLLOWCHESSBOARDPARTICLE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x81EEB70)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex = 57741;
+	inline static constexpr unsigned int ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex = 66196;
 
 	class ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigHollowChessboardParticle*>
 	{
 	public:
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardParticleConfig*>*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardParticleConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44EE0);
+		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardUvAnimConfig*>*>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardUvAnimConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DB0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardUvAnimConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44EE8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowNapEffectConfig*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowNapEffectConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DB8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::VirtualSpaceLineEffectConfig*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::VirtualSpaceLineEffectConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DC0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowNapEffectConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44EF0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::SpaceEffectBaseConfig*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::SpaceEffectBaseConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DC8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::SpaceEffectBaseConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44EF8);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardParticleConfig*>*>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::VirtualSpaceLineEffectConfig*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowChessboardParticleConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DD0);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::VirtualSpaceLineEffectConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardParticle_ConfigHollowChessboardParticle_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44F00);
 		}
 
 		::System::Void _ctor()

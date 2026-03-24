@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_REFRESHMAINCITYCLOCKMESSAGE_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x6E57500)
-#define MOLEMOLE_REFRESHMAINCITYCLOCKMESSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x6E574D0)
+#define MOLEMOLE_REFRESHMAINCITYCLOCKMESSAGE_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x6EC9C10)
+#define MOLEMOLE_REFRESHMAINCITYCLOCKMESSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x6EC9BE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RefreshMainCityClockMessage_TypeDefinitionIndex = 76078;
+	inline static constexpr unsigned int RefreshMainCityClockMessage_TypeDefinitionIndex = 71689;
 
 	class RefreshMainCityClockMessage : public ::MoleMole::DisplayMessageBase
 	{

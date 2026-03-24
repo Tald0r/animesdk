@@ -5,11 +5,11 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_SUIBIANTEMPLEBANGBOOSELECTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA1C90)
+#define MOLEMOLE_SUIBIANTEMPLEBANGBOOSELECTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC32E030)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SuibianTempleBangbooSelectDialogContext_TypeDefinitionIndex = 46312;
+	inline static constexpr unsigned int SuibianTempleBangbooSelectDialogContext_TypeDefinitionIndex = 47077;
 
 	class SuibianTempleBangbooSelectDialogContext : public ::MoleMole::UIControllerContextBase
 	{
@@ -17,11 +17,11 @@ namespace MoleMole
 		::System::Action_1<::System::UInt32>* OnSelectBuddy; // 0x28
 		::System::UInt32 ProductWorkerBuddy; // 0x30
 		::Enum_3_D3384FC764485EA3 Type; // 0x34
-		::System::Boolean ConfirmDontCloseUI; // 0x38
-		::System::UInt32 CurShelveID; // 0x3C
-		::System::UInt32 InitSelectBuddy; // 0x40
-		::System::UInt32 WorkBenchID; // 0x44
-		::System::Int32 ProductID; // 0x48
+		::System::UInt32 CurShelveID; // 0x38
+		::System::UInt32 WorkBenchID; // 0x3C
+		::System::Boolean ConfirmDontCloseUI; // 0x40
+		::System::Int32 ProductID; // 0x44
+		::System::UInt32 InitSelectBuddy; // 0x48
 
 		::System::Void _ctor()
 		{

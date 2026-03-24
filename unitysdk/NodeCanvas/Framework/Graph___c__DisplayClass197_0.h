@@ -4,12 +4,12 @@
 
 namespace NodeCanvas::Framework { class Node; }
 
-#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS197_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1926B7F0)
-#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS197_0__GETNODEWITHID_B__0_OFFSET UNITYSDK_OFFSET(0x1926EEF0)
+#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS197_0__CTOR_OFFSET UNITYSDK_OFFSET(0x196E7DC0)
+#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS197_0__GETNODEWITHID_B__0_OFFSET UNITYSDK_OFFSET(0x196EB4B0)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Graph___c__DisplayClass197_0_TypeDefinitionIndex = 26029;
+	inline static constexpr unsigned int Graph___c__DisplayClass197_0_TypeDefinitionIndex = 27305;
 
 	class Graph___c__DisplayClass197_0 : public ::System::Object
 	{

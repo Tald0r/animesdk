@@ -4,11 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_FLOWCANVAS_HACKSHARDEDINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6E110A0)
+#define MOLEMOLE_FLOWCANVAS_HACKSHARDEDINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xC260600)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int HackShardedInfo_TypeDefinitionIndex = 73907;
+	inline static constexpr unsigned int HackShardedInfo_TypeDefinitionIndex = 38222;
 
 	class HackShardedInfo : public ::System::Object
 	{

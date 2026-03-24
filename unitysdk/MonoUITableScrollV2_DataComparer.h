@@ -3,19 +3,19 @@
 #include "unitysdk/MonoUITableScrollV2_Data.h"
 #include "unitysdk/System/Object.h"
 
-#define MONOUITABLESCROLLV2_DATACOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x6453480)
-#define MONOUITABLESCROLLV2_DATACOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x6453530)
-#define MONOUITABLESCROLLV2_DATACOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x64535D0)
-#define MONOUITABLESCROLLV2_DATACOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x64535C0)
+#define MONOUITABLESCROLLV2_DATACOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x792ACB0)
+#define MONOUITABLESCROLLV2_DATACOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x792AD60)
+#define MONOUITABLESCROLLV2_DATACOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x792AE00)
+#define MONOUITABLESCROLLV2_DATACOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x792ADF0)
 
-inline static constexpr unsigned int MonoUITableScrollV2_DataComparer_TypeDefinitionIndex = 43871;
+inline static constexpr unsigned int MonoUITableScrollV2_DataComparer_TypeDefinitionIndex = 64433;
 
 class MonoUITableScrollV2_DataComparer : public ::System::Object
 {
 public:
 	static ::MonoUITableScrollV2_DataComparer** StaticGet_Instance()
 	{
-		return (::MonoUITableScrollV2_DataComparer**)Il2CppClass::FromTypeDefinitionIndex(MonoUITableScrollV2_DataComparer_TypeDefinitionIndex)->GetStaticField(0x3ACF0);
+		return (::MonoUITableScrollV2_DataComparer**)Il2CppClass::FromTypeDefinitionIndex(MonoUITableScrollV2_DataComparer_TypeDefinitionIndex)->GetStaticField(0x3DA40);
 	}
 
 	::System::Void _ctor()

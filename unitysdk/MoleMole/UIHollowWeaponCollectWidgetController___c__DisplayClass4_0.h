@@ -6,12 +6,12 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA1B97C0)
-#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS4_0__INITSORT_B__1_OFFSET UNITYSDK_OFFSET(0xA1B97D0)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9D4C560)
+#define MOLEMOLE_UIHOLLOWWEAPONCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS4_0__INITSORT_B__1_OFFSET UNITYSDK_OFFSET(0x9D4C570)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowWeaponCollectWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 60438;
+	inline static constexpr unsigned int UIHollowWeaponCollectWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 45600;
 
 	class UIHollowWeaponCollectWidgetController___c__DisplayClass4_0 : public ::System::Object
 	{

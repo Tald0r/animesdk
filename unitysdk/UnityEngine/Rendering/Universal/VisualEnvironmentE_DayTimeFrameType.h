@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int VisualEnvironmentE_DayTimeFrameType_TypeDefinitionIndex = 28446;
+	inline static constexpr unsigned int VisualEnvironmentE_DayTimeFrameType_TypeDefinitionIndex = 29389;
 
 	enum class VisualEnvironmentE_DayTimeFrameType : ::System::Int32
 	{

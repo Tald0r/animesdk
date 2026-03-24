@@ -10,26 +10,26 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_0BD8E28F588D561E_METHOD_2_5A4C962718782000_OFFSET UNITYSDK_OFFSET(0x6779C70)
-#define CLASS_2_0BD8E28F588D561E_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x6779EC0)
-#define CLASS_2_0BD8E28F588D561E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6779FB0)
-#define CLASS_2_0BD8E28F588D561E__CTOR_OFFSET UNITYSDK_OFFSET(0x6779FA0)
+#define CLASS_2_0BD8E28F588D561E_METHOD_2_5A4C962718782000_OFFSET UNITYSDK_OFFSET(0xB7F60E0)
+#define CLASS_2_0BD8E28F588D561E_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xB7F6330)
+#define CLASS_2_0BD8E28F588D561E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB7F6420)
+#define CLASS_2_0BD8E28F588D561E__CTOR_OFFSET UNITYSDK_OFFSET(0xB7F6410)
 
-inline static constexpr unsigned int Class_2_0BD8E28F588D561E_TypeDefinitionIndex = 68676;
+inline static constexpr unsigned int Class_2_0BD8E28F588D561E_TypeDefinitionIndex = 68577;
 
 class Class_2_0BD8E28F588D561E : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x20
-	::UnityEngine::RectTransform* Field_2_6; // 0x28
+	::UnityEngine::RectTransform* Field_2_9; // 0x18
+	::UnityEngine::RectTransform* Field_2_6; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x28
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x38
-	::UnityEngine::RectTransform* Field_2_9; // 0x40
-	::UnityEngine::GameObject* Field_2_5; // 0x48
-	::MoleMole::MonoGamepadCustomList* Field_2_4; // 0x50
-	::UnityEngine::RectTransform* Field_2_0; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x60
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x40
+	::UnityEngine::RectTransform* Field_2_0; // 0x48
+	::UnityEngine::GameObject* Field_2_5; // 0x50
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x58
+	::MoleMole::MonoGamepadCustomList* Field_2_4; // 0x60
 
 	::System::Void _ctor()
 	{

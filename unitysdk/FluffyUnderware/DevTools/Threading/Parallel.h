@@ -4,11 +4,11 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_THREADING_PARALLEL_FOR_OFFSET UNITYSDK_OFFSET(0x1A247640)
+#define FLUFFYUNDERWARE_DEVTOOLS_THREADING_PARALLEL_FOR_OFFSET UNITYSDK_OFFSET(0x1A80EF60)
 
 namespace FluffyUnderware::DevTools::Threading
 {
-	inline static constexpr unsigned int Parallel_TypeDefinitionIndex = 24582;
+	inline static constexpr unsigned int Parallel_TypeDefinitionIndex = 25407;
 
 	class Parallel : public ::System::Object
 	{

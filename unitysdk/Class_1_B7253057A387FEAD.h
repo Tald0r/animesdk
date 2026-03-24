@@ -7,7 +7,7 @@ namespace System::Threading { class ReaderWriterLock; }
 template <typename T> class Class_1_B7253057A387FEAD;
 template <typename T> class Class_1_F4A7883B6C19BA9D;
 
-inline static constexpr unsigned int Class_1_B7253057A387FEAD_TypeDefinitionIndex = 64095;
+inline static constexpr unsigned int Class_1_B7253057A387FEAD_TypeDefinitionIndex = 72663;
 
 template <typename T>
 class Class_1_B7253057A387FEAD : public ::System::Object

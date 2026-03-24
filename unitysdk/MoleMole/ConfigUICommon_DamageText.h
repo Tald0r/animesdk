@@ -12,11 +12,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD33140)
+#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xE38C020)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUICommon_DamageText_TypeDefinitionIndex = 61697;
+	inline static constexpr unsigned int ConfigUICommon_DamageText_TypeDefinitionIndex = 78428;
 
 	class ConfigUICommon_DamageText : public ::Foundation::MihoyoSerializedScriptableObject
 	{

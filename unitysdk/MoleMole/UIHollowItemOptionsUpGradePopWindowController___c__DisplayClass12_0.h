@@ -5,19 +5,19 @@
 namespace MoleMole { class UIHollowItemOptionsUpGradeControllerContext; }
 namespace MoleMole { class UIHollowItemOptionsUpGradePopWindowController; }
 
-#define MOLEMOLE_UIHOLLOWITEMOPTIONSUPGRADEPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA370100)
-#define MOLEMOLE_UIHOLLOWITEMOPTIONSUPGRADEPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__INITVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xA370110)
-#define MOLEMOLE_UIHOLLOWITEMOPTIONSUPGRADEPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__INITVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xA370150)
+#define MOLEMOLE_UIHOLLOWITEMOPTIONSUPGRADEPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBB279C0)
+#define MOLEMOLE_UIHOLLOWITEMOPTIONSUPGRADEPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__INITVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBB279D0)
+#define MOLEMOLE_UIHOLLOWITEMOPTIONSUPGRADEPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__INITVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xBB27A10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowItemOptionsUpGradePopWindowController___c__DisplayClass12_0_TypeDefinitionIndex = 49858;
+	inline static constexpr unsigned int UIHollowItemOptionsUpGradePopWindowController___c__DisplayClass12_0_TypeDefinitionIndex = 41072;
 
 	class UIHollowItemOptionsUpGradePopWindowController___c__DisplayClass12_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHollowItemOptionsUpGradePopWindowController* __4__this; // 0x10
-		::MoleMole::UIHollowItemOptionsUpGradeControllerContext* openCtrlContext; // 0x18
+		::MoleMole::UIHollowItemOptionsUpGradeControllerContext* openCtrlContext; // 0x10
+		::MoleMole::UIHollowItemOptionsUpGradePopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

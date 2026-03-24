@@ -10,7 +10,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int StackFormatter_2_TypeDefinitionIndex = 7350;
+	inline static constexpr unsigned int StackFormatter_2_TypeDefinitionIndex = 7355;
 
 	template <typename TStack, typename TValue>
 	class StackFormatter_2 : public ::Sirenix::Serialization::BaseFormatter_1<TStack>

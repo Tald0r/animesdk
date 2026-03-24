@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_CD54B66100AEF2DB_Enum_3_33B16E3E02BB0BB4_4.h"
+#include "unitysdk/Class_1_CD54B66100AEF2DB_Enum_3_33B16E3E02BB0BB4_5.h"
 #include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
 #include "unitysdk/PipelineCamera/CameraVariableFetchContext_1.h"
 #include "unitysdk/PipelineCamera/ScopedDelegateHandle.h"
@@ -16,33 +16,33 @@ namespace PipelineCamera { template <typename T> class CameraVariableSubModule_1
 namespace PipelineCamera::Blender { class DefaultBlender; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_1_CD54B66100AEF2DB_DISPOSE_OFFSET UNITYSDK_OFFSET(0x77E6F80)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_01F5D018B0B2FAB5_OFFSET UNITYSDK_OFFSET(0x77E75E0)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_1F076D921EE66EC0_OFFSET UNITYSDK_OFFSET(0x77E6EE0)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_39590AB2089F9F4D_OFFSET UNITYSDK_OFFSET(0x77E74B0)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_44C9690AE8B43193_OFFSET UNITYSDK_OFFSET(0x77E72A0)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_44E7CDC5017E5A20_OFFSET UNITYSDK_OFFSET(0x77E7BA0)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_1_OFFSET UNITYSDK_OFFSET(0x77E7AB0)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_OFFSET UNITYSDK_OFFSET(0x77E7040)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_A03DF87934C312BC_OFFSET UNITYSDK_OFFSET(0x77E7130)
-#define CLASS_1_CD54B66100AEF2DB_METHOD_1_B5E5BA94BBE2108D_OFFSET UNITYSDK_OFFSET(0x77E7370)
-#define CLASS_1_CD54B66100AEF2DB__CTOR_OFFSET UNITYSDK_OFFSET(0x77E6DA0)
+#define CLASS_1_CD54B66100AEF2DB_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8D327C0)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_01F5D018B0B2FAB5_OFFSET UNITYSDK_OFFSET(0x8D329F0)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_1F076D921EE66EC0_OFFSET UNITYSDK_OFFSET(0x8D32720)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_39590AB2089F9F4D_OFFSET UNITYSDK_OFFSET(0x8D33480)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_44C9690AE8B43193_OFFSET UNITYSDK_OFFSET(0x8D33180)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_44E7CDC5017E5A20_OFFSET UNITYSDK_OFFSET(0x8D32ED0)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_1_OFFSET UNITYSDK_OFFSET(0x8D335B0)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_OFFSET UNITYSDK_OFFSET(0x8D33390)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_A03DF87934C312BC_OFFSET UNITYSDK_OFFSET(0x8D32880)
+#define CLASS_1_CD54B66100AEF2DB_METHOD_1_B5E5BA94BBE2108D_OFFSET UNITYSDK_OFFSET(0x8D33250)
+#define CLASS_1_CD54B66100AEF2DB__CTOR_OFFSET UNITYSDK_OFFSET(0x8D325D0)
 
-inline static constexpr unsigned int Class_1_CD54B66100AEF2DB_TypeDefinitionIndex = 52315;
+inline static constexpr unsigned int Class_1_CD54B66100AEF2DB_TypeDefinitionIndex = 52829;
 
 class Class_1_CD54B66100AEF2DB : public ::System::Object
 {
 public:
-	::UnityEngine::AnimationCurve* Field_1_7; // 0x10
-	::PipelineCamera::CameraVariableSubModule_1<::PipelineCamera::WorldBasicCameraData>* Field_1_9; // 0x18
+	::PipelineCamera::Blender::DefaultBlender* Field_1_2; // 0x10
+	::UnityEngine::AnimationCurve* Field_1_7; // 0x18
 	::MoleMole::Config::ConfigShootingGroundCamera* Field_1_1; // 0x20
-	::MoleMole::Utils::TaskBasedEventCollection_1<::Class_1_CD54B66100AEF2DB_Enum_3_33B16E3E02BB0BB4_4>* Field_1_0; // 0x28
-	::PipelineCamera::Blender::DefaultBlender* Field_1_2; // 0x30
-	::UnityEngine::Vector3 Field_1_4; // 0x38
-	::System::Single Field_1_6; // 0x44
-	::System::Single Field_1_8; // 0x48
-	::UnityEngine::Vector3 Field_1_5; // 0x4C
-	::UnityEngine::Vector3 Field_1_3; // 0x58
+	::MoleMole::Utils::TaskBasedEventCollection_1<::Class_1_CD54B66100AEF2DB_Enum_3_33B16E3E02BB0BB4_5>* Field_1_0; // 0x28
+	::PipelineCamera::CameraVariableSubModule_1<::PipelineCamera::WorldBasicCameraData>* Field_1_9; // 0x30
+	::UnityEngine::Vector3 Field_1_5; // 0x38
+	::UnityEngine::Vector3 Field_1_3; // 0x44
+	::System::Single Field_1_8; // 0x50
+	::System::Single Field_1_6; // 0x54
+	::UnityEngine::Vector3 Field_1_4; // 0x58
 
 	::System::Void _ctor(::MoleMole::Config::ConfigShootingGroundCamera*& a1)
 	{
@@ -54,14 +54,19 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_DISPOSE_OFFSET))(this);
 	}
 
-	::System::Void Method_1_89D1F247B9D324EE()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_OFFSET))(this);
-	}
-
 	::System::Void Method_1_A03DF87934C312BC(::PipelineCamera::CameraVariableSubModule_1<::PipelineCamera::WorldBasicCameraData>* a1, ::MoleMole::Config::ConfigShootingGroundCamera*& a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::PipelineCamera::CameraVariableSubModule_1<::PipelineCamera::WorldBasicCameraData>*, ::MoleMole::Config::ConfigShootingGroundCamera*&))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_A03DF87934C312BC_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_1_01F5D018B0B2FAB5(::MoleMole::Config::ConfigShootingGroundCamera* a1, ::PipelineCamera::CameraCommandSpawnSubModules*& a2, ::PipelineCamera::CameraCommandUnSpawnSubModules*& a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigShootingGroundCamera*, ::PipelineCamera::CameraCommandSpawnSubModules*&, ::PipelineCamera::CameraCommandUnSpawnSubModules*&))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_01F5D018B0B2FAB5_OFFSET))(this, a1, a2, a3);
+	}
+
+	::PipelineCamera::ScopedDelegateHandle Method_1_44E7CDC5017E5A20(::MoleMole::Config::ConfigShootingGroundCamera*& a1)
+	{
+		return ((::PipelineCamera::ScopedDelegateHandle(*)(::PVOID, ::MoleMole::Config::ConfigShootingGroundCamera*&))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_44E7CDC5017E5A20_OFFSET))(this, a1);
 	}
 
 	static ::PipelineCamera::Blender::DefaultBlender* Method_1_44C9690AE8B43193(::System::Single a1, ::UnityEngine::AnimationCurve* a2)
@@ -79,23 +84,18 @@ public:
 		return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::MoleMole::Config::ConfigShootingGroundCamera*))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_1F076D921EE66EC0_OFFSET))(this, a1);
 	}
 
+	::System::Void Method_1_89D1F247B9D324EE()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_OFFSET))(this);
+	}
+
 	::System::Void Method_1_39590AB2089F9F4D(::System::Single a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_39590AB2089F9F4D_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_1_01F5D018B0B2FAB5(::MoleMole::Config::ConfigShootingGroundCamera* a1, ::PipelineCamera::CameraCommandSpawnSubModules*& a2, ::PipelineCamera::CameraCommandUnSpawnSubModules*& a3)
-	{
-		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigShootingGroundCamera*, ::PipelineCamera::CameraCommandSpawnSubModules*&, ::PipelineCamera::CameraCommandUnSpawnSubModules*&))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_01F5D018B0B2FAB5_OFFSET))(this, a1, a2, a3);
-	}
-
 	::System::Void Method_1_89D1F247B9D324EE_1()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_89D1F247B9D324EE_1_OFFSET))(this);
-	}
-
-	::PipelineCamera::ScopedDelegateHandle Method_1_44E7CDC5017E5A20(::MoleMole::Config::ConfigShootingGroundCamera*& a1)
-	{
-		return ((::PipelineCamera::ScopedDelegateHandle(*)(::PVOID, ::MoleMole::Config::ConfigShootingGroundCamera*&))((::PBYTE)hIl2Cpp + CLASS_1_CD54B66100AEF2DB_METHOD_1_44E7CDC5017E5A20_OFFSET))(this, a1);
 	}
 };

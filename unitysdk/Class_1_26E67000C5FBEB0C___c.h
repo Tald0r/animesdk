@@ -5,27 +5,27 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class Component; }
 
-#define CLASS_1_26E67000C5FBEB0C___C_METHOD_1_71006041C93D2374_OFFSET UNITYSDK_OFFSET(0xB209390)
-#define CLASS_1_26E67000C5FBEB0C___C_METHOD_1_E38F36310BE855C2_OFFSET UNITYSDK_OFFSET(0xB209270)
-#define CLASS_1_26E67000C5FBEB0C___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB209220)
-#define CLASS_1_26E67000C5FBEB0C___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB209260)
+#define CLASS_1_26E67000C5FBEB0C___C_METHOD_1_71006041C93D2374_OFFSET UNITYSDK_OFFSET(0x98F1930)
+#define CLASS_1_26E67000C5FBEB0C___C_METHOD_1_E38F36310BE855C2_OFFSET UNITYSDK_OFFSET(0x98F1810)
+#define CLASS_1_26E67000C5FBEB0C___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x98F17C0)
+#define CLASS_1_26E67000C5FBEB0C___C__CTOR_OFFSET UNITYSDK_OFFSET(0x98F1800)
 
-inline static constexpr unsigned int Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex = 77257;
+inline static constexpr unsigned int Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex = 67437;
 
 class Class_1_26E67000C5FBEB0C___c : public ::System::Object
 {
 public:
+	static ::System::Predicate_1<::UnityEngine::Component*>** StaticGet___9__5_0()
+	{
+		return (::System::Predicate_1<::UnityEngine::Component*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex)->GetStaticField(0x38100);
+	}
 	static ::System::Predicate_1<::UnityEngine::Component*>** StaticGet___9__6_0()
 	{
-		return (::System::Predicate_1<::UnityEngine::Component*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex)->GetStaticField(0x332F0);
+		return (::System::Predicate_1<::UnityEngine::Component*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex)->GetStaticField(0x38108);
 	}
 	static ::Class_1_26E67000C5FBEB0C___c** StaticGet___9()
 	{
-		return (::Class_1_26E67000C5FBEB0C___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex)->GetStaticField(0x332F8);
-	}
-	static ::System::Predicate_1<::UnityEngine::Component*>** StaticGet___9__5_0()
-	{
-		return (::System::Predicate_1<::UnityEngine::Component*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex)->GetStaticField(0x33300);
+		return (::Class_1_26E67000C5FBEB0C___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_26E67000C5FBEB0C___c_TypeDefinitionIndex)->GetStaticField(0x38110);
 	}
 
 	static ::System::Void _cctor()

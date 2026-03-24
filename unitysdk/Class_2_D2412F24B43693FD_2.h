@@ -8,20 +8,20 @@ class MonoUITableScrollV2;
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_D2412F24B43693FD_2_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x6D52920)
-#define CLASS_2_D2412F24B43693FD_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6D52A10)
-#define CLASS_2_D2412F24B43693FD_2_METHOD_2_EBA1DA59141868AB_OFFSET UNITYSDK_OFFSET(0x6D52780)
-#define CLASS_2_D2412F24B43693FD_2__CTOR_OFFSET UNITYSDK_OFFSET(0x6D52A00)
+#define CLASS_2_D2412F24B43693FD_2_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x6D15FF0)
+#define CLASS_2_D2412F24B43693FD_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6D160E0)
+#define CLASS_2_D2412F24B43693FD_2_METHOD_2_EBA1DA59141868AB_OFFSET UNITYSDK_OFFSET(0x6D15E50)
+#define CLASS_2_D2412F24B43693FD_2__CTOR_OFFSET UNITYSDK_OFFSET(0x6D160D0)
 
-inline static constexpr unsigned int Class_2_D2412F24B43693FD_2_TypeDefinitionIndex = 46946;
+inline static constexpr unsigned int Class_2_D2412F24B43693FD_2_TypeDefinitionIndex = 60239;
 
 class Class_2_D2412F24B43693FD_2 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::Class_2_60DDD9C206686F44* Field_2_3; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x20
-	::MonoUITableScrollV2* Field_2_0; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
+	::MonoUITableScrollV2* Field_2_0; // 0x30
 
 	::System::Void _ctor()
 	{

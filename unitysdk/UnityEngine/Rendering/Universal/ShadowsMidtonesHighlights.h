@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/ShadowsMidtonesHighlights_NativeSRP.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SHADOWSMIDTONESHIGHLIGHTS__CTOR_OFFSET UNITYSDK_OFFSET(0x183C09F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SHADOWSMIDTONESHIGHLIGHTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1891C8E0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ShadowsMidtonesHighlights_TypeDefinitionIndex = 28701;
+	inline static constexpr unsigned int ShadowsMidtonesHighlights_TypeDefinitionIndex = 29644;
 
 	class ShadowsMidtonesHighlights : public ::UnityEngine::NAPRenderPipeline0::ShadowsMidtonesHighlights_NativeSRP
 	{

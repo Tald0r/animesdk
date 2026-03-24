@@ -1,11 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Foundation/AssetPath.h"
+#include "unitysdk/Struct_2_6E1B724B14572104_1.h"
+#include "unitysdk/Struct_2_C006DA4A56FC21E6.h"
+#include "unitysdk/Struct_2_D9E98FAEB7FF7336.h"
+#include "unitysdk/Struct_2_F213AC3D3FBF57B9_3.h"
 
-namespace System { class String; }
-namespace System { template <typename T> class Action_1; }
+class Class_0_16E4307DCC419505_261;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_352_TypeDefinitionIndex = 61437;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_352_TypeDefinitionIndex = 70504;
 
 class Class_0_16E4307DCC419505_352
 {

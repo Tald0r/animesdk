@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIInterKnotForumLevelRowWidgetController_InterKnotForumLevelRow_DataBind; }
 
-#define MOLEMOLE_UIINTERKNOTFORUMLEVELROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x896B7A0)
+#define MOLEMOLE_UIINTERKNOTFORUMLEVELROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9836560)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotForumLevelRowWidgetController_Data_TypeDefinitionIndex = 50840;
+	inline static constexpr unsigned int UIInterKnotForumLevelRowWidgetController_Data_TypeDefinitionIndex = 41778;
 
 	class UIInterKnotForumLevelRowWidgetController_Data : public ::System::Object
 	{

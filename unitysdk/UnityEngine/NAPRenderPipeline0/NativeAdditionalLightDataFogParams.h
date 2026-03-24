@@ -4,7 +4,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int NativeAdditionalLightDataFogParams_TypeDefinitionIndex = 5912;
+	inline static constexpr unsigned int NativeAdditionalLightDataFogParams_TypeDefinitionIndex = 5914;
 
 	struct alignas(4) NativeAdditionalLightDataFogParams
 	{

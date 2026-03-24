@@ -11,29 +11,29 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace UnityEngine { class Canvas; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_10E3A024E6C6EE6E_OFFSET UNITYSDK_OFFSET(0x7B85710)
-#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0x7B85A20)
-#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_3AA20A0DA6990FBE_OFFSET UNITYSDK_OFFSET(0x7B841D0)
-#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x7B85A10)
-#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_F57DD140ADB2B520_OFFSET UNITYSDK_OFFSET(0x7B85040)
-#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_F62EAF10EC557270_OFFSET UNITYSDK_OFFSET(0x7B84420)
-#define CLASS_2_BD2FB49EE6FE8BAF_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x7B85570)
-#define CLASS_2_BD2FB49EE6FE8BAF_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x7B83BA0)
-#define CLASS_2_BD2FB49EE6FE8BAF__CCTOR_OFFSET UNITYSDK_OFFSET(0x7B85700)
-#define CLASS_2_BD2FB49EE6FE8BAF__CTOR_OFFSET UNITYSDK_OFFSET(0x7B85680)
+#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_10E3A024E6C6EE6E_OFFSET UNITYSDK_OFFSET(0x92FF070)
+#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0x92FF060)
+#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_3AA20A0DA6990FBE_OFFSET UNITYSDK_OFFSET(0x92FDB20)
+#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x92FF370)
+#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_F57DD140ADB2B520_OFFSET UNITYSDK_OFFSET(0x92FE990)
+#define CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_F62EAF10EC557270_OFFSET UNITYSDK_OFFSET(0x92FDD70)
+#define CLASS_2_BD2FB49EE6FE8BAF_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x92FEEC0)
+#define CLASS_2_BD2FB49EE6FE8BAF_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x92FD4F0)
+#define CLASS_2_BD2FB49EE6FE8BAF__CCTOR_OFFSET UNITYSDK_OFFSET(0x92FF050)
+#define CLASS_2_BD2FB49EE6FE8BAF__CTOR_OFFSET UNITYSDK_OFFSET(0x92FEFD0)
 
-inline static constexpr unsigned int Class_2_BD2FB49EE6FE8BAF_TypeDefinitionIndex = 39521;
+inline static constexpr unsigned int Class_2_BD2FB49EE6FE8BAF_TypeDefinitionIndex = 57961;
 
 class Class_2_BD2FB49EE6FE8BAF : public ::UnityEngine::Playables::PlayableBehaviour
 {
 public:
 	static ::UnityEngine::Canvas** StaticGet_Field_2_1()
 	{
-		return (::UnityEngine::Canvas**)Il2CppClass::FromTypeDefinitionIndex(Class_2_BD2FB49EE6FE8BAF_TypeDefinitionIndex)->GetStaticField(0x443E0);
+		return (::UnityEngine::Canvas**)Il2CppClass::FromTypeDefinitionIndex(Class_2_BD2FB49EE6FE8BAF_TypeDefinitionIndex)->GetStaticField(0x46F10);
 	}
 	static ::System::Boolean* StaticGet_Field_2_2()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Class_2_BD2FB49EE6FE8BAF_TypeDefinitionIndex)->GetStaticField(0x11560);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Class_2_BD2FB49EE6FE8BAF_TypeDefinitionIndex)->GetStaticField(0x11700);
 	}
 	::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::GameObject*>* Field_2_0; // 0x10
 	::System::Boolean Field_2_3; // 0x18
@@ -58,21 +58,6 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_ONPLAYABLEDESTROY_OFFSET))(this, a1);
 	}
 
-	::UnityEngine::GameObject* Method_2_F62EAF10EC557270(::System::Int32 a1, ::MoleMole::Timeline::TextShowBehaviour* a2)
-	{
-		return ((::UnityEngine::GameObject*(*)(::PVOID, ::System::Int32, ::MoleMole::Timeline::TextShowBehaviour*))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_F62EAF10EC557270_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_2_E5E342154D4EA5F5(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2, ::System::Object* a3)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_E5E342154D4EA5F5_OFFSET))(this, a1, a2, a3);
-	}
-
-	static ::UnityEngine::Canvas* Method_2_10E3A024E6C6EE6E()
-	{
-		return ((::UnityEngine::Canvas*(*)())((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_10E3A024E6C6EE6E_OFFSET))();
-	}
-
 	::System::Void Method_2_3AA20A0DA6990FBE()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_3AA20A0DA6990FBE_OFFSET))(this);
@@ -86,5 +71,20 @@ public:
 	::System::Void Method_2_324AEE341AAA7A1B(::UnityEngine::Playables::Playable a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_324AEE341AAA7A1B_OFFSET))(this, a1);
+	}
+
+	static ::UnityEngine::Canvas* Method_2_10E3A024E6C6EE6E()
+	{
+		return ((::UnityEngine::Canvas*(*)())((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_10E3A024E6C6EE6E_OFFSET))();
+	}
+
+	::System::Void Method_2_E5E342154D4EA5F5(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2, ::System::Object* a3)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_E5E342154D4EA5F5_OFFSET))(this, a1, a2, a3);
+	}
+
+	::UnityEngine::GameObject* Method_2_F62EAF10EC557270(::System::Int32 a1, ::MoleMole::Timeline::TextShowBehaviour* a2)
+	{
+		return ((::UnityEngine::GameObject*(*)(::PVOID, ::System::Int32, ::MoleMole::Timeline::TextShowBehaviour*))((::PBYTE)hIl2Cpp + CLASS_2_BD2FB49EE6FE8BAF_METHOD_2_F62EAF10EC557270_OFFSET))(this, a1, a2);
 	}
 };

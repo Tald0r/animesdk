@@ -1,18 +1,18 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_D2BBBB758B896E04_5.h"
+#include "unitysdk/Enum_3_D2BBBB758B896E04.h"
 #include "unitysdk/System/MulticastDelegate.h"
 
 namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x5E28360)
-#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x5E283F0)
-#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_INVOKE_OFFSET UNITYSDK_OFFSET(0x5E28020)
-#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0__CTOR_OFFSET UNITYSDK_OFFSET(0x5E28010)
+#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0xB665420)
+#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0xB6654B0)
+#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_INVOKE_OFFSET UNITYSDK_OFFSET(0xB6650E0)
+#define CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0__CTOR_OFFSET UNITYSDK_OFFSET(0xB6650C0)
 
-inline static constexpr unsigned int Class_1_5C805055193EF43F_Class_3_B0990F33CFBA42B0_TypeDefinitionIndex = 73063;
+inline static constexpr unsigned int Class_1_5C805055193EF43F_Class_3_B0990F33CFBA42B0_TypeDefinitionIndex = 50971;
 
 class Class_1_5C805055193EF43F_Class_3_B0990F33CFBA42B0 : public ::System::MulticastDelegate
 {
@@ -22,14 +22,14 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::IntPtr))((::PBYTE)hIl2Cpp + CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0__CTOR_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Invoke(::System::Int32 a1, ::Enum_3_D2BBBB758B896E04_5 a2)
+	::System::Void Invoke(::System::Int32 a1, ::Enum_3_D2BBBB758B896E04 a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::System::Int32, ::Enum_3_D2BBBB758B896E04_5))((::PBYTE)hIl2Cpp + CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_INVOKE_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::System::Int32, ::Enum_3_D2BBBB758B896E04))((::PBYTE)hIl2Cpp + CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_INVOKE_OFFSET))(this, a1, a2);
 	}
 
-	::System::IAsyncResult* BeginInvoke(::System::Int32 a1, ::Enum_3_D2BBBB758B896E04_5 a2, ::System::AsyncCallback* a3, ::System::Object* a4)
+	::System::IAsyncResult* BeginInvoke(::System::Int32 a1, ::Enum_3_D2BBBB758B896E04 a2, ::System::AsyncCallback* a3, ::System::Object* a4)
 	{
-		return ((::System::IAsyncResult*(*)(::PVOID, ::System::Int32, ::Enum_3_D2BBBB758B896E04_5, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_BEGININVOKE_OFFSET))(this, a1, a2, a3, a4);
+		return ((::System::IAsyncResult*(*)(::PVOID, ::System::Int32, ::Enum_3_D2BBBB758B896E04, ::System::AsyncCallback*, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_1_5C805055193EF43F_CLASS_3_B0990F33CFBA42B0_BEGININVOKE_OFFSET))(this, a1, a2, a3, a4);
 	}
 
 	::System::Void EndInvoke(::System::IAsyncResult* a1)

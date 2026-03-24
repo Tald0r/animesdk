@@ -3,14 +3,14 @@
 #include "unitysdk/Struct_2_AAD2B1B6FB741157.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_0_16E4307DCC419505_192;
-class Class_0_16E4307DCC419505_230;
-class Class_0_16E4307DCC419505_256;
-class Class_0_16E4307DCC419505_340;
-class Class_0_16E4307DCC419505_442;
-class Class_0_16E4307DCC419505_443;
+class Class_0_16E4307DCC419505_132;
+class Class_0_16E4307DCC419505_257;
+class Class_0_16E4307DCC419505_425;
+class Class_0_16E4307DCC419505_452;
+class Class_0_16E4307DCC419505_464;
+class Class_0_16E4307DCC419505_465;
 
-inline static constexpr unsigned int Struct_2_86384ECD2885D438_TypeDefinitionIndex = 47853;
+inline static constexpr unsigned int Struct_2_86384ECD2885D438_TypeDefinitionIndex = 55937;
 
 template <typename TFilterPolicy>
 struct Struct_2_86384ECD2885D438

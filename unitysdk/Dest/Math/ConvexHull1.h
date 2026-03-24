@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define DEST_MATH_CONVEXHULL1_CREATE_OFFSET UNITYSDK_OFFSET(0x1B14EE00)
-#define DEST_MATH_CONVEXHULL1__CTOR_OFFSET UNITYSDK_OFFSET(0x1B14F190)
+#define DEST_MATH_CONVEXHULL1_CREATE_OFFSET UNITYSDK_OFFSET(0x1B76DDB0)
+#define DEST_MATH_CONVEXHULL1__CTOR_OFFSET UNITYSDK_OFFSET(0x1B76E140)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int ConvexHull1_TypeDefinitionIndex = 31615;
+	inline static constexpr unsigned int ConvexHull1_TypeDefinitionIndex = 32569;
 
 	class ConvexHull1 : public ::System::Object
 	{

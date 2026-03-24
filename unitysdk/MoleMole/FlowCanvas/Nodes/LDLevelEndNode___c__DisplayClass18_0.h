@@ -5,19 +5,19 @@
 class Class_3_DA02E6BABB5F027E;
 namespace System { class Action; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6AE2EE0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS18_0___TRYPLAYDYNAMICENDPERFORMS_B__1_OFFSET UNITYSDK_OFFSET(0x6AE2EF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB5D2140)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS18_0___TRYPLAYDYNAMICENDPERFORMS_B__1_OFFSET UNITYSDK_OFFSET(0xB5D2150)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDLevelEndNode___c__DisplayClass18_0_TypeDefinitionIndex = 56068;
+	inline static constexpr unsigned int LDLevelEndNode___c__DisplayClass18_0_TypeDefinitionIndex = 68174;
 
 	class LDLevelEndNode___c__DisplayClass18_0 : public ::System::Object
 	{
 	public:
 		::Class_3_DA02E6BABB5F027E* hgc; // 0x10
-		::System::Action* onFinish; // 0x18
-		::System::Action* __9__1; // 0x20
+		::System::Action* __9__1; // 0x18
+		::System::Action* onFinish; // 0x20
 
 		::System::Void _ctor()
 		{

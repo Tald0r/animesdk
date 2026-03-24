@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CHESSBOARDCOINSOUNDCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x15EA7440)
+#define MOLEMOLE_CONFIG_CHESSBOARDCOINSOUNDCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE2B8E40)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ChessboardCoinSoundConfig_TypeDefinitionIndex = 38534;
+	inline static constexpr unsigned int ChessboardCoinSoundConfig_TypeDefinitionIndex = 58662;
 
 	class ChessboardCoinSoundConfig : public ::System::Object
 	{

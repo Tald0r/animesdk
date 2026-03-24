@@ -6,12 +6,12 @@ namespace MoleMole { class ChessEntity; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMEUPDATEDAMAGESTATISTICS_INVOKE_OFFSET UNITYSDK_OFFSET(0x141CD340)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMEUPDATEDAMAGESTATISTICS__CTOR_OFFSET UNITYSDK_OFFSET(0x141CD580)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMEUPDATEDAMAGESTATISTICS_INVOKE_OFFSET UNITYSDK_OFFSET(0xA4F34D0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMEUPDATEDAMAGESTATISTICS__CTOR_OFFSET UNITYSDK_OFFSET(0xA4F3710)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int HackerGameUpdateDamageStatistics_TypeDefinitionIndex = 38491;
+	inline static constexpr unsigned int HackerGameUpdateDamageStatistics_TypeDefinitionIndex = 75169;
 
 	class HackerGameUpdateDamageStatistics : public ::FlowCanvas::Nodes::CallableActionNode_3<::MoleMole::ChessEntity*, ::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>
 	{

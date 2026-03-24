@@ -6,13 +6,13 @@ namespace CriWare { class CriFsBinder; }
 namespace CriWare { class CriFsLoadFileRequest; }
 namespace System { class String; }
 
-#define CRIWARE_CRIFSUTILITY_CRIWARECD0DC04A_OFFSET UNITYSDK_OFFSET(0x1B13B130)
-#define CRIWARE_CRIFSUTILITY_LOADFILE_OFFSET UNITYSDK_OFFSET(0x1B13AFA0)
-#define CRIWARE_CRIFSUTILITY_SETUSERAGENTSTRING_OFFSET UNITYSDK_OFFSET(0x1B13B090)
+#define CRIWARE_CRIFSUTILITY_CRIWARECD0DC04A_OFFSET UNITYSDK_OFFSET(0x1B757E10)
+#define CRIWARE_CRIFSUTILITY_LOADFILE_OFFSET UNITYSDK_OFFSET(0x1B757C80)
+#define CRIWARE_CRIFSUTILITY_SETUSERAGENTSTRING_OFFSET UNITYSDK_OFFSET(0x1B757D70)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsUtility_TypeDefinitionIndex = 31287;
+	inline static constexpr unsigned int CriFsUtility_TypeDefinitionIndex = 32239;
 
 	class CriFsUtility : public ::System::Object
 	{

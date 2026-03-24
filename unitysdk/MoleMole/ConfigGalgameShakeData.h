@@ -5,18 +5,18 @@
 namespace MoleMole { class ConfigGalgameAvatarCameraShake; }
 namespace MoleMole { class ConfigPerformUIShake; }
 
-#define MOLEMOLE_CONFIGGALGAMESHAKEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9716360)
+#define MOLEMOLE_CONFIGGALGAMESHAKEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB0A5510)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigGalgameShakeData_TypeDefinitionIndex = 50656;
+	inline static constexpr unsigned int ConfigGalgameShakeData_TypeDefinitionIndex = 40599;
 
 	class ConfigGalgameShakeData : public ::System::Object
 	{
 	public:
 		::MoleMole::ConfigPerformUIShake* configChatShake; // 0x10
-		::MoleMole::ConfigGalgameAvatarCameraShake* configAvatarCameraShake; // 0x18
-		::MoleMole::ConfigPerformUIShake* configBGShake; // 0x20
+		::MoleMole::ConfigPerformUIShake* configBGShake; // 0x18
+		::MoleMole::ConfigGalgameAvatarCameraShake* configAvatarCameraShake; // 0x20
 		::System::Single TotalDuration; // 0x28
 
 		::System::Void _ctor()

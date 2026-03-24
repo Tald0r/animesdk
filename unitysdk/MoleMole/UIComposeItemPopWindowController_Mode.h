@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComposeItemPopWindowController_Mode_TypeDefinitionIndex = 38645;
+	inline static constexpr unsigned int UIComposeItemPopWindowController_Mode_TypeDefinitionIndex = 53223;
 
 	enum class UIComposeItemPopWindowController_Mode : ::System::Int32
 	{
-		Recycle = 2,
 		Compose = 0,
-		Invalid = 5,
 		Decompose = 1,
+		Invalid = 5,
+		Recycle = 2,
 	};
 }

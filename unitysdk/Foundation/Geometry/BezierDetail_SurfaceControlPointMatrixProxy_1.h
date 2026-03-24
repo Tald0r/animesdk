@@ -5,7 +5,7 @@
 
 namespace Foundation::Geometry
 {
-	inline static constexpr unsigned int BezierDetail_SurfaceControlPointMatrixProxy_1_TypeDefinitionIndex = 9132;
+	inline static constexpr unsigned int BezierDetail_SurfaceControlPointMatrixProxy_1_TypeDefinitionIndex = 8865;
 
 	template <typename T>
 	struct BezierDetail_SurfaceControlPointMatrixProxy_1

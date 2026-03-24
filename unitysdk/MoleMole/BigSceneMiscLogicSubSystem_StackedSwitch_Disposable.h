@@ -4,19 +4,19 @@
 
 namespace MoleMole { class BigSceneMiscLogicSubSystem_StackedSwitch; }
 
-#define MOLEMOLE_BIGSCENEMISCLOGICSUBSYSTEM_STACKEDSWITCH_DISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0xB49BAB0)
-#define MOLEMOLE_BIGSCENEMISCLOGICSUBSYSTEM_STACKEDSWITCH_DISPOSABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xB49BB30)
+#define MOLEMOLE_BIGSCENEMISCLOGICSUBSYSTEM_STACKEDSWITCH_DISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0xE2A54C0)
+#define MOLEMOLE_BIGSCENEMISCLOGICSUBSYSTEM_STACKEDSWITCH_DISPOSABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xE2A5540)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BigSceneMiscLogicSubSystem_StackedSwitch_Disposable_TypeDefinitionIndex = 59899;
+	inline static constexpr unsigned int BigSceneMiscLogicSubSystem_StackedSwitch_Disposable_TypeDefinitionIndex = 65443;
 
 	class BigSceneMiscLogicSubSystem_StackedSwitch_Disposable : public ::System::Object
 	{
 	public:
 		::MoleMole::BigSceneMiscLogicSubSystem_StackedSwitch* Switch; // 0x10
-		::System::UInt32 GroupID; // 0x18
-		::System::Boolean IsCancelled; // 0x1C
+		::System::Boolean IsCancelled; // 0x18
+		::System::UInt32 GroupID; // 0x1C
 
 		::System::Void _ctor()
 		{

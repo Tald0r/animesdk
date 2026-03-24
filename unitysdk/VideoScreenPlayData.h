@@ -5,9 +5,9 @@
 namespace MoleMole { class IVideoPlayer; }
 namespace System { template <typename T> class Action_1; }
 
-#define VIDEOSCREENPLAYDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18186400)
+#define VIDEOSCREENPLAYDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x15352B40)
 
-inline static constexpr unsigned int VideoScreenPlayData_TypeDefinitionIndex = 42382;
+inline static constexpr unsigned int VideoScreenPlayData_TypeDefinitionIndex = 47510;
 
 class VideoScreenPlayData : public ::ScreenPlayData
 {

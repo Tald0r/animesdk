@@ -7,10 +7,10 @@ namespace MoleMole { class UIWindowController; }
 namespace MoleMole::Battle { class Entity; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_1_99C71F85A8560732_METHOD_1_0852445A7629ADD3_OFFSET UNITYSDK_OFFSET(0x6E77D00)
-#define CLASS_1_99C71F85A8560732__CTOR_OFFSET UNITYSDK_OFFSET(0x6E77CF0)
+#define CLASS_1_99C71F85A8560732_METHOD_1_0852445A7629ADD3_OFFSET UNITYSDK_OFFSET(0x73C3030)
+#define CLASS_1_99C71F85A8560732__CTOR_OFFSET UNITYSDK_OFFSET(0x73C3020)
 
-inline static constexpr unsigned int Class_1_99C71F85A8560732_TypeDefinitionIndex = 55842;
+inline static constexpr unsigned int Class_1_99C71F85A8560732_TypeDefinitionIndex = 58647;
 
 class Class_1_99C71F85A8560732 : public ::System::Object
 {

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_MAXHEIGHTPOPTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC22C550)
+#define MOLEMOLE_MAXHEIGHTPOPTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB842CD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MaxHeightPopText_TypeDefinitionIndex = 53456;
+	inline static constexpr unsigned int MaxHeightPopText_TypeDefinitionIndex = 72848;
 
 	class MaxHeightPopText : public ::UnityEngine::MonoBehaviour
 	{

@@ -6,12 +6,12 @@
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_CONDITIONS_ISWITHINLAYERMASK_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19F5CD10)
-#define NODECANVAS_TASKS_CONDITIONS_ISWITHINLAYERMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x19F5CDA0)
+#define NODECANVAS_TASKS_CONDITIONS_ISWITHINLAYERMASK_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A56DB50)
+#define NODECANVAS_TASKS_CONDITIONS_ISWITHINLAYERMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A56DBE0)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int IsWithinLayerMask_TypeDefinitionIndex = 25498;
+	inline static constexpr unsigned int IsWithinLayerMask_TypeDefinitionIndex = 26891;
 
 	class IsWithinLayerMask : public ::NodeCanvas::Framework::ConditionTask_1<::UnityEngine::Transform*>
 	{

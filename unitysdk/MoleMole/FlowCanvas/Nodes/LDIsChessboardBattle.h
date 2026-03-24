@@ -6,20 +6,20 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE_ISCHESSBOARDBATTLE_OFFSET UNITYSDK_OFFSET(0x141D5900)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x141D57F0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE__CTOR_OFFSET UNITYSDK_OFFSET(0x141D5AA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x141D5AC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE_ISCHESSBOARDBATTLE_OFFSET UNITYSDK_OFFSET(0xA4FBA80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA4FB970)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE__CTOR_OFFSET UNITYSDK_OFFSET(0xA4FBC20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISCHESSBOARDBATTLE__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xA4FBC40)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDIsChessboardBattle_TypeDefinitionIndex = 48285;
+	inline static constexpr unsigned int LDIsChessboardBattle_TypeDefinitionIndex = 54925;
 
 	class LDIsChessboardBattle : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* trueOutput; // 0xA8
-		::FlowCanvas::FlowOutput* falseOutput; // 0xB0
+		::FlowCanvas::FlowOutput* falseOutput; // 0xA8
+		::FlowCanvas::FlowOutput* trueOutput; // 0xB0
 		::FlowCanvas::ValueInput_1<::System::Boolean>* enableInput; // 0xB8
 
 		::System::Void _ctor()

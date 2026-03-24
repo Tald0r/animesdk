@@ -7,13 +7,13 @@ namespace MoleMole { class DownloadFileInfo; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_DIFFPATCHERUTIL_CLEANALLDIFF_OFFSET UNITYSDK_OFFSET(0x81B2B90)
-#define FOUNDATION_DIFFPATCHERUTIL_GETCLNUMBERFROMBASEURL_OFFSET UNITYSDK_OFFSET(0x81B2880)
-#define FOUNDATION_DIFFPATCHERUTIL_GETDOWNLOADPATCHVERSIONFILES_OFFSET UNITYSDK_OFFSET(0x81B29C0)
+#define FOUNDATION_DIFFPATCHERUTIL_CLEANALLDIFF_OFFSET UNITYSDK_OFFSET(0xB7F67D0)
+#define FOUNDATION_DIFFPATCHERUTIL_GETCLNUMBERFROMBASEURL_OFFSET UNITYSDK_OFFSET(0xB7F64C0)
+#define FOUNDATION_DIFFPATCHERUTIL_GETDOWNLOADPATCHVERSIONFILES_OFFSET UNITYSDK_OFFSET(0xB7F6600)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int DiffPatcherUtil_TypeDefinitionIndex = 72756;
+	inline static constexpr unsigned int DiffPatcherUtil_TypeDefinitionIndex = 41548;
 
 	class DiffPatcherUtil : public ::System::Object
 	{

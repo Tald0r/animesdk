@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISelectMonsterCardWidgetController_ItemRootTurningPhase_TypeDefinitionIndex = 46679;
+	inline static constexpr unsigned int UISelectMonsterCardWidgetController_ItemRootTurningPhase_TypeDefinitionIndex = 70705;
 
 	enum class UISelectMonsterCardWidgetController_ItemRootTurningPhase : ::System::Int32
 	{

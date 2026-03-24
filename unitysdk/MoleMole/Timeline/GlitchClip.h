@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class GlitchBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_GLITCHCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8F45DD0)
-#define MOLEMOLE_TIMELINE_GLITCHCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8F45DC0)
-#define MOLEMOLE_TIMELINE_GLITCHCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8F45FB0)
+#define MOLEMOLE_TIMELINE_GLITCHCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x985DDF0)
+#define MOLEMOLE_TIMELINE_GLITCHCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x985DDE0)
+#define MOLEMOLE_TIMELINE_GLITCHCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x985DFC0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int GlitchClip_TypeDefinitionIndex = 73761;
+	inline static constexpr unsigned int GlitchClip_TypeDefinitionIndex = 55493;
 
 	class GlitchClip : public ::UnityEngine::Playables::PlayableAsset
 	{

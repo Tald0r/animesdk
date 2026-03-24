@@ -5,7 +5,7 @@
 namespace MoleMole { class UILiveHouseInGameMultipleTrackWidgetController; }
 namespace MoleMole { class UILiveHouseInGameTrackResultWidgetController; }
 
-inline static constexpr unsigned int Class_2_37D5DAB0A27488C7_Struct_2_BC0262957A8845D5_TypeDefinitionIndex = 36871;
+inline static constexpr unsigned int Class_2_37D5DAB0A27488C7_Struct_2_BC0262957A8845D5_TypeDefinitionIndex = 80177;
 
 struct alignas(8) Class_2_37D5DAB0A27488C7_Struct_2_BC0262957A8845D5
 {

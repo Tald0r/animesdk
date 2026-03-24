@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_CONDITIONS_ISACTIVE_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A1B92F0)
-#define NODECANVAS_TASKS_CONDITIONS_ISACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1B9350)
+#define NODECANVAS_TASKS_CONDITIONS_ISACTIVE_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A126700)
+#define NODECANVAS_TASKS_CONDITIONS_ISACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A126760)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int IsActive_TypeDefinitionIndex = 26582;
+	inline static constexpr unsigned int IsActive_TypeDefinitionIndex = 26079;
 
 	class IsActive : public ::NodeCanvas::Framework::ConditionTask_1<::UnityEngine::Transform*>
 	{

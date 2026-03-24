@@ -1,9 +1,17 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_5DF9D0F5061CCF34_Struct_2_2821977B557C6070.h"
+#include "unitysdk/Foundation/NativeMemoryRequestHandle.h"
+#include "unitysdk/Struct_2_ACD0EF80A5330786.h"
+#include "unitysdk/System/ReadOnlySpan_1.h"
+#include "unitysdk/UnityEngine/Playables/Playable.h"
+#include "unitysdk/UnityEngine/Playables/PlayableGraph.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_544_TypeDefinitionIndex = 55185;
+namespace Foundation { class NativeMemory; }
+namespace UnityEngine { class Animator; }
 
+inline static constexpr unsigned int Class_0_16E4307DCC419505_544_TypeDefinitionIndex = 79366;
+
+template <typename T>
 class Class_0_16E4307DCC419505_544
 {
 public:

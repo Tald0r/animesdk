@@ -11,10 +11,10 @@ namespace NPCCrowd::Accessories { class NPCSlotAccessoryInfo; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCPREFABINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x77DCDC0)
-#define NPCPREFABINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x77DCAD0)
+#define NPCPREFABINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0xC2FE450)
+#define NPCPREFABINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xC2FE160)
 
-inline static constexpr unsigned int NPCPrefabInfo_TypeDefinitionIndex = 38326;
+inline static constexpr unsigned int NPCPrefabInfo_TypeDefinitionIndex = 63134;
 
 class NPCPrefabInfo : public ::System::Object
 {

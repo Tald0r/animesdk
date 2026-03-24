@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGADDITIONALDATA_AUTOEXPOSURECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x19257830)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGADDITIONALDATA_AUTOEXPOSURECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1967D2C0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int WeatherConfigAdditionalData_AutoExposureConfig_TypeDefinitionIndex = 28492;
+	inline static constexpr unsigned int WeatherConfigAdditionalData_AutoExposureConfig_TypeDefinitionIndex = 29435;
 
 	class WeatherConfigAdditionalData_AutoExposureConfig : public ::System::Object
 	{

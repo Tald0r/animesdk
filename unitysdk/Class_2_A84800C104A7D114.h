@@ -9,13 +9,13 @@
 namespace System { class Object; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_2_A84800C104A7D114_METHOD_2_74F89A4A8A47CF81_OFFSET UNITYSDK_OFFSET(0x9302C90)
-#define CLASS_2_A84800C104A7D114_METHOD_2_C433AF37CE9D6E5B_OFFSET UNITYSDK_OFFSET(0x9302C10)
-#define CLASS_2_A84800C104A7D114_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x9302C80)
-#define CLASS_2_A84800C104A7D114_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x9302AE0)
-#define CLASS_2_A84800C104A7D114__CTOR_OFFSET UNITYSDK_OFFSET(0x9302C00)
+#define CLASS_2_A84800C104A7D114_METHOD_2_74F89A4A8A47CF81_OFFSET UNITYSDK_OFFSET(0x70AE6D0)
+#define CLASS_2_A84800C104A7D114_METHOD_2_C433AF37CE9D6E5B_OFFSET UNITYSDK_OFFSET(0x70AE950)
+#define CLASS_2_A84800C104A7D114_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x70AE9C0)
+#define CLASS_2_A84800C104A7D114_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x70AE5A0)
+#define CLASS_2_A84800C104A7D114__CTOR_OFFSET UNITYSDK_OFFSET(0x70AE6C0)
 
-inline static constexpr unsigned int Class_2_A84800C104A7D114_TypeDefinitionIndex = 39547;
+inline static constexpr unsigned int Class_2_A84800C104A7D114_TypeDefinitionIndex = 52034;
 
 class Class_2_A84800C104A7D114 : public ::UnityEngine::Playables::PlayableBehaviour
 {
@@ -32,9 +32,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_A84800C104A7D114_PROCESSFRAME_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Void Method_2_C433AF37CE9D6E5B(::UnityEngine::GameObject* a1)
+	static ::UnityEngine::Playables::ScriptPlayable_1<::Class_2_A84800C104A7D114*> Method_2_74F89A4A8A47CF81(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_2_A84800C104A7D114_METHOD_2_C433AF37CE9D6E5B_OFFSET))(this, a1);
+		return ((::UnityEngine::Playables::ScriptPlayable_1<::Class_2_A84800C104A7D114*>(*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_2_A84800C104A7D114_METHOD_2_74F89A4A8A47CF81_OFFSET))(a1, a2);
 	}
 
 	::System::Void Method_2_E5E342154D4EA5F5(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2, ::System::Object* a3)
@@ -42,8 +42,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_A84800C104A7D114_METHOD_2_E5E342154D4EA5F5_OFFSET))(this, a1, a2, a3);
 	}
 
-	static ::UnityEngine::Playables::ScriptPlayable_1<::Class_2_A84800C104A7D114*> Method_2_74F89A4A8A47CF81(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2)
+	::System::Void Method_2_C433AF37CE9D6E5B(::UnityEngine::GameObject* a1)
 	{
-		return ((::UnityEngine::Playables::ScriptPlayable_1<::Class_2_A84800C104A7D114*>(*)(::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_2_A84800C104A7D114_METHOD_2_74F89A4A8A47CF81_OFFSET))(a1, a2);
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*))((::PBYTE)hIl2Cpp + CLASS_2_A84800C104A7D114_METHOD_2_C433AF37CE9D6E5B_OFFSET))(this, a1);
 	}
 };

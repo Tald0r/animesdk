@@ -12,23 +12,23 @@ namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 namespace UnityEngine::Rendering::Universal { class VolumetricCloudConfig; }
 
-#define VOLUMETRICCLOUDPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18B54370)
-#define VOLUMETRICCLOUDPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18B54880)
-#define VOLUMETRICCLOUDPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x18B54090)
-#define VOLUMETRICCLOUDPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18B54000)
-#define VOLUMETRICCLOUDPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18B548D0)
+#define VOLUMETRICCLOUDPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18F174A0)
+#define VOLUMETRICCLOUDPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18F179B0)
+#define VOLUMETRICCLOUDPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x18F172F0)
+#define VOLUMETRICCLOUDPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18F17260)
+#define VOLUMETRICCLOUDPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18F17A00)
 
-inline static constexpr unsigned int VolumetricCloudPass_TypeDefinitionIndex = 28155;
+inline static constexpr unsigned int VolumetricCloudPass_TypeDefinitionIndex = 29096;
 
 class VolumetricCloudPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 {
 public:
 	// static const ::System::String* k_ProfilerTag; // 0x0
-	::UnityEngine::Rendering::Universal::VolumetricCloudConfig* m_VolumetricCloudConfig; // 0xA8
-	::UnityEngine::ComputeShader* m_CloudCompute; // 0xB0
-	::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_Sampler; // 0xB8
-	::System::Boolean m_NeedDrawVolumetricMist; // 0xC0
-	::System::Boolean m_NeedDrawVolumetricCloud; // 0xC1
+	::UnityEngine::ComputeShader* m_CloudCompute; // 0xA8
+	::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_Sampler; // 0xB0
+	::UnityEngine::Rendering::Universal::VolumetricCloudConfig* m_VolumetricCloudConfig; // 0xB8
+	::System::Boolean m_NeedDrawVolumetricCloud; // 0xC0
+	::System::Boolean m_NeedDrawVolumetricMist; // 0xC1
 
 	::System::Void _ctor(::UnityEngine::NAPRenderPipeline0::RenderPassEvent evt, ::UnityEngine::ComputeShader* cloudCompute)
 	{

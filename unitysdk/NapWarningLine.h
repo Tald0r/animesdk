@@ -7,27 +7,31 @@ namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class Mesh; }
 namespace UnityEngine { class MeshRenderer; }
 
-#define NAPWARNINGLINE_INIT_OFFSET UNITYSDK_OFFSET(0x183B3FE0)
-#define NAPWARNINGLINE_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x183B4830)
-#define NAPWARNINGLINE_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x183B48C0)
-#define NAPWARNINGLINE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x183B3DD0)
-#define NAPWARNINGLINE_RECREATEMESH_OFFSET UNITYSDK_OFFSET(0x183B47E0)
-#define NAPWARNINGLINE_SYNCCHARACTERPOS_OFFSET UNITYSDK_OFFSET(0x183B45B0)
-#define NAPWARNINGLINE__CCTOR_OFFSET UNITYSDK_OFFSET(0x183B4A30)
-#define NAPWARNINGLINE__CTOR_OFFSET UNITYSDK_OFFSET(0x183B4A10)
+#define NAPWARNINGLINE_INIT_OFFSET UNITYSDK_OFFSET(0x1890F5F0)
+#define NAPWARNINGLINE_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1890F300)
+#define NAPWARNINGLINE_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1890FE40)
+#define NAPWARNINGLINE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1890F050)
+#define NAPWARNINGLINE_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x1890F4D0)
+#define NAPWARNINGLINE_ONLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1890F530)
+#define NAPWARNINGLINE_ONREALDISABLE_OFFSET UNITYSDK_OFFSET(0x1890F440)
+#define NAPWARNINGLINE_ONREALENABLE_OFFSET UNITYSDK_OFFSET(0x1890F0F0)
+#define NAPWARNINGLINE_RECREATEMESH_OFFSET UNITYSDK_OFFSET(0x1890FDF0)
+#define NAPWARNINGLINE_SYNCCHARACTERPOS_OFFSET UNITYSDK_OFFSET(0x1890FBC0)
+#define NAPWARNINGLINE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1890FFB0)
+#define NAPWARNINGLINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1890FF90)
 
-inline static constexpr unsigned int NapWarningLine_TypeDefinitionIndex = 28015;
+inline static constexpr unsigned int NapWarningLine_TypeDefinitionIndex = 28955;
 
 class NapWarningLine : public ::UnityEngine::MonoBehaviour
 {
 public:
-	static ::System::Int32* StaticGet__FrameXOffset()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapWarningLine_TypeDefinitionIndex)->GetStaticField(0x6240);
-	}
 	static ::System::Int32* StaticGet__DotFadeOut()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapWarningLine_TypeDefinitionIndex)->GetStaticField(0x6244);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapWarningLine_TypeDefinitionIndex)->GetStaticField(0x6690);
+	}
+	static ::System::Int32* StaticGet__FrameXOffset()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapWarningLine_TypeDefinitionIndex)->GetStaticField(0x6694);
 	}
 	::UnityEngine::MeshRenderer* m_MeshRenderer; // 0x18
 	::UnityEngine::MaterialPropertyBlock* m_PropertyBlock; // 0x20
@@ -48,6 +52,26 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONENABLE_OFFSET))(this);
 	}
 
+	::System::Void OnDisable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONDISABLE_OFFSET))(this);
+	}
+
+	::System::Void OnLightweightActive()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
+	}
+
+	::System::Void OnLightweightDeactive()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONLIGHTWEIGHTDEACTIVE_OFFSET))(this);
+	}
+
+	::System::Void OnRealEnable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONREALENABLE_OFFSET))(this);
+	}
+
 	::System::Void SyncCharacterPos(::UnityEngine::Vector3 positionWS)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_SYNCCHARACTERPOS_OFFSET))(this, positionWS);
@@ -63,9 +87,9 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_INIT_OFFSET))(this);
 	}
 
-	::System::Void OnDisable()
+	::System::Void OnRealDisable()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONDISABLE_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAPWARNINGLINE_ONREALDISABLE_OFFSET))(this);
 	}
 
 	::System::Void OnDrawGizmosSelected()

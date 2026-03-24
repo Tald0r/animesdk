@@ -5,12 +5,12 @@
 class AkCallbackInfo;
 namespace MoleMole { class UIActivityRhythmClickPageController; }
 
-#define MOLEMOLE_UIACTIVITYRHYTHMCLICKPAGECONTROLLER___C__DISPLAYCLASS160_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBADF840)
-#define MOLEMOLE_UIACTIVITYRHYTHMCLICKPAGECONTROLLER___C__DISPLAYCLASS160_0__DURATIONCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0xBADF850)
+#define MOLEMOLE_UIACTIVITYRHYTHMCLICKPAGECONTROLLER___C__DISPLAYCLASS160_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFAC2C0)
+#define MOLEMOLE_UIACTIVITYRHYTHMCLICKPAGECONTROLLER___C__DISPLAYCLASS160_0__DURATIONCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0xBFAC2D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityRhythmClickPageController___c__DisplayClass160_0_TypeDefinitionIndex = 41478;
+	inline static constexpr unsigned int UIActivityRhythmClickPageController___c__DisplayClass160_0_TypeDefinitionIndex = 42755;
 
 	class UIActivityRhythmClickPageController___c__DisplayClass160_0 : public ::System::Object
 	{

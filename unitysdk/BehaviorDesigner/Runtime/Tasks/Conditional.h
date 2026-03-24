@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/BehaviorDesigner/Runtime/Tasks/Task.h"
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_CONDITIONAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE54520)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_CONDITIONAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1B465870)
 
 namespace BehaviorDesigner::Runtime::Tasks
 {
-	inline static constexpr unsigned int Conditional_TypeDefinitionIndex = 30327;
+	inline static constexpr unsigned int Conditional_TypeDefinitionIndex = 31279;
 
 	class Conditional : public ::BehaviorDesigner::Runtime::Tasks::Task
 	{

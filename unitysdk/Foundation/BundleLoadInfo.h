@@ -4,19 +4,19 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_BUNDLELOADINFO_GETFILEPATH_OFFSET UNITYSDK_OFFSET(0x799810)
-#define FOUNDATION_BUNDLELOADINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x170C50E0)
-#define FOUNDATION_BUNDLELOADINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x3F0470)
+#define FOUNDATION_BUNDLELOADINFO_GETFILEPATH_OFFSET UNITYSDK_OFFSET(0x7D3B50)
+#define FOUNDATION_BUNDLELOADINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x178324D0)
+#define FOUNDATION_BUNDLELOADINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x3A6C90)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int BundleLoadInfo_TypeDefinitionIndex = 8035;
+	inline static constexpr unsigned int BundleLoadInfo_TypeDefinitionIndex = 8075;
 
 	struct alignas(8) BundleLoadInfo
 	{
 		static ::Foundation::BundleLoadInfo* StaticGet_None()
 		{
-			return (::Foundation::BundleLoadInfo*)Il2CppClass::FromTypeDefinitionIndex(BundleLoadInfo_TypeDefinitionIndex)->GetStaticField(0x7300);
+			return (::Foundation::BundleLoadInfo*)Il2CppClass::FromTypeDefinitionIndex(BundleLoadInfo_TypeDefinitionIndex)->GetStaticField(0x6FC0);
 		}
 		::System::String* folderPath; // 0x10
 		::System::UInt64 fileNameHash; // 0x18

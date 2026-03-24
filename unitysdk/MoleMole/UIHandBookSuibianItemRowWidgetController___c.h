@@ -4,24 +4,24 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAA18240)
-#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAA18280)
-#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___C__ONUIINIT_B__1_1_OFFSET UNITYSDK_OFFSET(0xAA18290)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7F64730)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7F64770)
+#define MOLEMOLE_UIHANDBOOKSUIBIANITEMROWWIDGETCONTROLLER___C__ONUIINIT_B__1_1_OFFSET UNITYSDK_OFFSET(0x7F64780)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookSuibianItemRowWidgetController___c_TypeDefinitionIndex = 47194;
+	inline static constexpr unsigned int UIHandBookSuibianItemRowWidgetController___c_TypeDefinitionIndex = 57726;
 
 	class UIHandBookSuibianItemRowWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIHandBookSuibianItemRowWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHandBookSuibianItemRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookSuibianItemRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x349E0);
+			return (::MoleMole::UIHandBookSuibianItemRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookSuibianItemRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x37340);
 		}
 		static ::System::Action_1<::System::Boolean>** StaticGet___9__1_1()
 		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookSuibianItemRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x349E8);
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookSuibianItemRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x37348);
 		}
 
 		static ::System::Void _cctor()

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Sirenix/OdinInspector/SerializedMonoBehaviour.h"
 
-#define MOLEMOLE_UITESTLAUNCHERINEDITOR__CTOR_OFFSET UNITYSDK_OFFSET(0xD6DEEF0)
+#define MOLEMOLE_UITESTLAUNCHERINEDITOR__CTOR_OFFSET UNITYSDK_OFFSET(0xDF4DFD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITestLauncherInEditor_TypeDefinitionIndex = 48618;
+	inline static constexpr unsigned int UITestLauncherInEditor_TypeDefinitionIndex = 68934;
 
 	class UITestLauncherInEditor : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

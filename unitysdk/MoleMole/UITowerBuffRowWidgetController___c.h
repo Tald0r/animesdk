@@ -4,29 +4,29 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A27010)
-#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A27050)
-#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__SETEMPTY_B__10_0_OFFSET UNITYSDK_OFFSET(0x9A27060)
-#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__SETEMPTY_B__10_1_OFFSET UNITYSDK_OFFSET(0x9A271C0)
+#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x88841D0)
+#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8884210)
+#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__SETEMPTY_B__10_0_OFFSET UNITYSDK_OFFSET(0x8884220)
+#define MOLEMOLE_UITOWERBUFFROWWIDGETCONTROLLER___C__SETEMPTY_B__10_1_OFFSET UNITYSDK_OFFSET(0x8884390)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITowerBuffRowWidgetController___c_TypeDefinitionIndex = 41768;
+	inline static constexpr unsigned int UITowerBuffRowWidgetController___c_TypeDefinitionIndex = 40515;
 
 	class UITowerBuffRowWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__10_0()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerBuffRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x41840);
-		}
 		static ::System::Action** StaticGet___9__10_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerBuffRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x41848);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerBuffRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45300);
 		}
 		static ::MoleMole::UITowerBuffRowWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UITowerBuffRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UITowerBuffRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x41850);
+			return (::MoleMole::UITowerBuffRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UITowerBuffRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45308);
+		}
+		static ::System::Action** StaticGet___9__10_0()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerBuffRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45310);
 		}
 
 		static ::System::Void _cctor()

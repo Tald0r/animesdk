@@ -4,9 +4,9 @@
 
 namespace System { class Action; }
 
-#define CLASS_1_EF32BCC5C168925E_STRUCT_2_52459899DB7358B9__CTOR_OFFSET UNITYSDK_OFFSET(0x44B790)
+#define CLASS_1_EF32BCC5C168925E_STRUCT_2_52459899DB7358B9__CTOR_OFFSET UNITYSDK_OFFSET(0x3BB0D0)
 
-inline static constexpr unsigned int Class_1_EF32BCC5C168925E_Struct_2_52459899DB7358B9_TypeDefinitionIndex = 39789;
+inline static constexpr unsigned int Class_1_EF32BCC5C168925E_Struct_2_52459899DB7358B9_TypeDefinitionIndex = 60391;
 
 struct alignas(8) Class_1_EF32BCC5C168925E_Struct_2_52459899DB7358B9
 {

@@ -6,13 +6,13 @@
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_ACTIONS_COMPOSEVECTOR_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1B3B30)
-#define NODECANVAS_TASKS_ACTIONS_COMPOSEVECTOR_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A1B3C10)
-#define NODECANVAS_TASKS_ACTIONS_COMPOSEVECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1B3CF0)
+#define NODECANVAS_TASKS_ACTIONS_COMPOSEVECTOR_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A120F40)
+#define NODECANVAS_TASKS_ACTIONS_COMPOSEVECTOR_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A121020)
+#define NODECANVAS_TASKS_ACTIONS_COMPOSEVECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A121100)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int ComposeVector_TypeDefinitionIndex = 25248;
+	inline static constexpr unsigned int ComposeVector_TypeDefinitionIndex = 26477;
 
 	class ComposeVector : public ::NodeCanvas::Framework::ActionTask
 	{

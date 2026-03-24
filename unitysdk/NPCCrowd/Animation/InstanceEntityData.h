@@ -5,11 +5,11 @@
 
 class Class_3_F2DAD7F45F518868;
 
-#define NPCCROWD_ANIMATION_INSTANCEENTITYDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x33CC30)
+#define NPCCROWD_ANIMATION_INSTANCEENTITYDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x3162F0)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int InstanceEntityData_TypeDefinitionIndex = 48460;
+	inline static constexpr unsigned int InstanceEntityData_TypeDefinitionIndex = 63031;
 
 	struct alignas(8) InstanceEntityData
 	{

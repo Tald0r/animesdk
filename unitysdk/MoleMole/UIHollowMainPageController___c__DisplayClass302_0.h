@@ -5,12 +5,12 @@
 class Class_1_7ECB9691B142D586;
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS302_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA2A210)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS302_0__LOADNXTLEVELFAKELOADINGVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xAA2A220)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS302_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7F76680)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS302_0__LOADNXTLEVELFAKELOADINGVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x7F76690)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass302_0_TypeDefinitionIndex = 52608;
+	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass302_0_TypeDefinitionIndex = 49552;
 
 	class UIHollowMainPageController___c__DisplayClass302_0 : public ::System::Object
 	{

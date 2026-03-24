@@ -5,25 +5,25 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0x139A5480)
-#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x139A53F0)
-#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0x139A5360)
-#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x139A5560)
+#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0x9197810)
+#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0x9197780)
+#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0x91976E0)
+#define MOLEMOLE_CONFIG_FANCOLLISIONWITHHEIGHTDETECT___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x91978F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int FanCollisionWithHeightDetect_TypeDefinitionIndex = 38338;
+	inline static constexpr unsigned int FanCollisionWithHeightDetect_TypeDefinitionIndex = 80328;
 
 	class FanCollisionWithHeightDetect : public ::MoleMole::Config::CollisionDetect
 	{
 	public:
-		::System::Int32 numberOfRays; // 0x80
+		::System::Single Height; // 0x80
 		::System::Single FanAngle; // 0x84
-		::System::Single InvalidAngle; // 0x88
-		::MoleMole::Config::FanCollisionWithHeightDetect_FanFollowAtkDirType FollowAtkDirType; // 0x8C
-		::System::Single Radius; // 0x90
-		::System::Single Height; // 0x94
-		::System::Single InvalidRadius; // 0x98
+		::MoleMole::Config::FanCollisionWithHeightDetect_FanFollowAtkDirType FollowAtkDirType; // 0x88
+		::System::Single Radius; // 0x8C
+		::System::Single InvalidRadius; // 0x90
+		::System::Int32 numberOfRays; // 0x94
+		::System::Single InvalidAngle; // 0x98
 
 		::System::Void _ctor()
 		{

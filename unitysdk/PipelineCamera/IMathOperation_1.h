@@ -3,7 +3,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int IMathOperation_1_TypeDefinitionIndex = 34546;
+	inline static constexpr unsigned int IMathOperation_1_TypeDefinitionIndex = 35548;
 
 	template <typename T>
 	class IMathOperation_1

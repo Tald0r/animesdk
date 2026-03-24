@@ -11,25 +11,25 @@ namespace MoleMole { class UIGeneralButtonController; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_260D74264003CECB_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xA698040)
-#define CLASS_2_260D74264003CECB_METHOD_2_8CE71901D76EEEA9_OFFSET UNITYSDK_OFFSET(0xA697E00)
-#define CLASS_2_260D74264003CECB_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA698150)
-#define CLASS_2_260D74264003CECB__CTOR_OFFSET UNITYSDK_OFFSET(0xA698140)
+#define CLASS_2_260D74264003CECB_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x6763E90)
+#define CLASS_2_260D74264003CECB_METHOD_2_8CE71901D76EEEA9_OFFSET UNITYSDK_OFFSET(0x6763C50)
+#define CLASS_2_260D74264003CECB_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6763FA0)
+#define CLASS_2_260D74264003CECB__CTOR_OFFSET UNITYSDK_OFFSET(0x6763F90)
 
-inline static constexpr unsigned int Class_2_260D74264003CECB_TypeDefinitionIndex = 45311;
+inline static constexpr unsigned int Class_2_260D74264003CECB_TypeDefinitionIndex = 56058;
 
 class Class_2_260D74264003CECB : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x20
+	::UnityEngine::Transform* Field_2_0; // 0x18
+	::UnityEngine::Transform* Field_2_6; // 0x20
 	::MonoUITableScrollV2* Field_2_2; // 0x28
-	::UnityEngine::Transform* Field_2_1; // 0x30
-	::UnityEngine::Transform* Field_2_0; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x40
-	::UnityEngine::Transform* Field_2_6; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x50
-	::MoleMole::UIGeneralButtonController* Field_2_4; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x40
+	::MoleMole::UIGeneralButtonController* Field_2_4; // 0x48
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x50
+	::UnityEngine::Transform* Field_2_1; // 0x58
 
 	::System::Void _ctor()
 	{

@@ -6,12 +6,12 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6A13040)
-#define NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS7_0__GETANYPREFABIDWHICHOWNACCESSORY_B__0_OFFSET UNITYSDK_OFFSET(0x6A13050)
+#define NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x640E800)
+#define NPCCROWD_ANIMATION_CROWDUNITTESTBASE___C__DISPLAYCLASS7_0__GETANYPREFABIDWHICHOWNACCESSORY_B__0_OFFSET UNITYSDK_OFFSET(0x640E810)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int CrowdUnitTestBase___c__DisplayClass7_0_TypeDefinitionIndex = 78066;
+	inline static constexpr unsigned int CrowdUnitTestBase___c__DisplayClass7_0_TypeDefinitionIndex = 57530;
 
 	class CrowdUnitTestBase___c__DisplayClass7_0 : public ::System::Object
 	{

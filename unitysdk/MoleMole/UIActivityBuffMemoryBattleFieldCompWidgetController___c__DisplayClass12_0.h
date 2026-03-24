@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_5DA2E7556103D5A3_288;
+class Class_1_5DA2E7556103D5A3_319;
 namespace MoleMole { class UIActivityBuffMemoryBattleFieldCompWidgetController; }
 
-#define MOLEMOLE_UIACTIVITYBUFFMEMORYBATTLEFIELDCOMPWIDGETCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC252720)
+#define MOLEMOLE_UIACTIVITYBUFFMEMORYBATTLEFIELDCOMPWIDGETCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC27DE20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityBuffMemoryBattleFieldCompWidgetController___c__DisplayClass12_0_TypeDefinitionIndex = 42778;
+	inline static constexpr unsigned int UIActivityBuffMemoryBattleFieldCompWidgetController___c__DisplayClass12_0_TypeDefinitionIndex = 50200;
 
 	class UIActivityBuffMemoryBattleFieldCompWidgetController___c__DisplayClass12_0 : public ::System::Object
 	{
 	public:
-		::Class_1_5DA2E7556103D5A3_288* layerInfo; // 0x10
+		::Class_1_5DA2E7556103D5A3_319* layerInfo; // 0x10
 		::MoleMole::UIActivityBuffMemoryBattleFieldCompWidgetController* __4__this; // 0x18
 		::System::Int32 roomID; // 0x20
 

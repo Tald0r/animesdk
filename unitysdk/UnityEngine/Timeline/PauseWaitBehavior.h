@@ -6,12 +6,12 @@
 
 namespace UnityEngine::Timeline { class PauseWaitInfo; }
 
-#define UNITYENGINE_TIMELINE_PAUSEWAITBEHAVIOR_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1A870DB0)
-#define UNITYENGINE_TIMELINE_PAUSEWAITBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A870F00)
+#define UNITYENGINE_TIMELINE_PAUSEWAITBEHAVIOR_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x1AE3B710)
+#define UNITYENGINE_TIMELINE_PAUSEWAITBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE3B860)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int PauseWaitBehavior_TypeDefinitionIndex = 29305;
+	inline static constexpr unsigned int PauseWaitBehavior_TypeDefinitionIndex = 30258;
 
 	class PauseWaitBehavior : public ::UnityEngine::Playables::PlayableBehaviour
 	{

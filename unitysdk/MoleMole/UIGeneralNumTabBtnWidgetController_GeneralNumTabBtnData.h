@@ -7,22 +7,22 @@ namespace MoleMole { class NotificationBadgeEx; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIGENERALNUMTABBTNWIDGETCONTROLLER_GENERALNUMTABBTNDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8A17270)
-#define MOLEMOLE_UIGENERALNUMTABBTNWIDGETCONTROLLER_GENERALNUMTABBTNDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0x8A17290)
-#define MOLEMOLE_UIGENERALNUMTABBTNWIDGETCONTROLLER_GENERALNUMTABBTNDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8A17250)
+#define MOLEMOLE_UIGENERALNUMTABBTNWIDGETCONTROLLER_GENERALNUMTABBTNDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0xB2BD6A0)
+#define MOLEMOLE_UIGENERALNUMTABBTNWIDGETCONTROLLER_GENERALNUMTABBTNDATA__CTOR_2_OFFSET UNITYSDK_OFFSET(0xB2BD6C0)
+#define MOLEMOLE_UIGENERALNUMTABBTNWIDGETCONTROLLER_GENERALNUMTABBTNDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB2BD680)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralNumTabBtnWidgetController_GeneralNumTabBtnData_TypeDefinitionIndex = 48221;
+	inline static constexpr unsigned int UIGeneralNumTabBtnWidgetController_GeneralNumTabBtnData_TypeDefinitionIndex = 45873;
 
 	class UIGeneralNumTabBtnWidgetController_GeneralNumTabBtnData : public ::System::Object
 	{
 	public:
-		::System::Action_1<::MoleMole::NotificationBadgeEx*>* badgeExAction; // 0x10
-		::System::String* m_tabText; // 0x18
-		::System::String* m_numLeft; // 0x20
-		::System::String* m_numRight; // 0x28
-		::System::Action_1<::MoleMole::NotificationBadge*>* m_badgeAction; // 0x30
+		::System::String* m_numLeft; // 0x10
+		::System::Action_1<::MoleMole::NotificationBadge*>* m_badgeAction; // 0x18
+		::System::String* m_tabText; // 0x20
+		::System::Action_1<::MoleMole::NotificationBadgeEx*>* badgeExAction; // 0x28
+		::System::String* m_numRight; // 0x30
 		::System::Boolean m_showProg; // 0x38
 		::System::Boolean m_isLock; // 0x39
 

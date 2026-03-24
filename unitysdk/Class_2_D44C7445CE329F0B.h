@@ -6,10 +6,10 @@ class Class_1_D07FAEB04D978617;
 namespace MoleMole::Config { class ConfigHollowInteractCondition; }
 namespace MoleMole::Config { class ConfigHollowInteractConditionBySubState; }
 
-#define CLASS_2_D44C7445CE329F0B_METHOD_2_2C4CACFCB85F415D_OFFSET UNITYSDK_OFFSET(0xAAE7BE0)
-#define CLASS_2_D44C7445CE329F0B__CTOR_OFFSET UNITYSDK_OFFSET(0xAAE7B60)
+#define CLASS_2_D44C7445CE329F0B_METHOD_2_2C4CACFCB85F415D_OFFSET UNITYSDK_OFFSET(0x6FBDF60)
+#define CLASS_2_D44C7445CE329F0B__CTOR_OFFSET UNITYSDK_OFFSET(0x6FBDEE0)
 
-inline static constexpr unsigned int Class_2_D44C7445CE329F0B_TypeDefinitionIndex = 56834;
+inline static constexpr unsigned int Class_2_D44C7445CE329F0B_TypeDefinitionIndex = 39854;
 
 class Class_2_D44C7445CE329F0B : public ::Class_1_0340E479638D8801
 {

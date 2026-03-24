@@ -9,12 +9,12 @@ namespace System::Net { class WebClient; }
 namespace System::Net { class WebClient_ProgressData; }
 namespace System::Net { class WebRequest; }
 
-#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_CLOSE_OFFSET UNITYSDK_OFFSET(0x18FFD2F0)
-#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_GET_ASYNC_OFFSET UNITYSDK_OFFSET(0x18FFCFA0)
-#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_GET_FILEUPLOAD_OFFSET UNITYSDK_OFFSET(0x18FFCF90)
-#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_SETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x18FFCFB0)
-#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_WRITEBYTES_OFFSET UNITYSDK_OFFSET(0x18FFD100)
-#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x18FFCEC0)
+#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_CLOSE_OFFSET UNITYSDK_OFFSET(0x1938E800)
+#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_GET_ASYNC_OFFSET UNITYSDK_OFFSET(0x1938E4B0)
+#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_GET_FILEUPLOAD_OFFSET UNITYSDK_OFFSET(0x1938E4A0)
+#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_SETREQUESTSTREAM_OFFSET UNITYSDK_OFFSET(0x1938E4C0)
+#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE_WRITEBYTES_OFFSET UNITYSDK_OFFSET(0x1938E610)
+#define SYSTEM_NET_WEBCLIENT_UPLOADBITSSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x1938E3D0)
 
 namespace System::Net
 {
@@ -23,19 +23,19 @@ namespace System::Net
 	class WebClient_UploadBitsState : public ::System::Object
 	{
 	public:
-		::System::Net::CompletionDelegate* UploadCompletionDelegate; // 0x10
-		::System::ComponentModel::AsyncOperation* AsyncOp; // 0x18
-		::System::Net::WebClient* WebClient; // 0x20
-		::System::Net::CompletionDelegate* DownloadCompletionDelegate; // 0x28
-		::System::IO::Stream* ReadStream; // 0x30
-		::Il2CppArray<::System::Byte>* Header; // 0x38
-		::System::Net::WebClient_ProgressData* Progress; // 0x40
-		::System::Net::WebRequest* Request; // 0x48
-		::System::IO::Stream* WriteStream; // 0x50
-		::Il2CppArray<::System::Byte>* Footer; // 0x58
-		::Il2CppArray<::System::Byte>* InnerBuffer; // 0x60
-		::System::Int32 m_BufferWritePosition; // 0x68
-		::System::Int32 m_ChunkSize; // 0x6C
+		::System::Net::WebClient* WebClient; // 0x10
+		::Il2CppArray<::System::Byte>* Footer; // 0x18
+		::Il2CppArray<::System::Byte>* Header; // 0x20
+		::System::Net::WebRequest* Request; // 0x28
+		::Il2CppArray<::System::Byte>* InnerBuffer; // 0x30
+		::System::IO::Stream* ReadStream; // 0x38
+		::System::ComponentModel::AsyncOperation* AsyncOp; // 0x40
+		::System::Net::CompletionDelegate* DownloadCompletionDelegate; // 0x48
+		::System::Net::WebClient_ProgressData* Progress; // 0x50
+		::System::IO::Stream* WriteStream; // 0x58
+		::System::Net::CompletionDelegate* UploadCompletionDelegate; // 0x60
+		::System::Int32 m_ChunkSize; // 0x68
+		::System::Int32 m_BufferWritePosition; // 0x6C
 
 		::System::Void _ctor(::System::Net::WebRequest* request, ::System::IO::Stream* readStream, ::Il2CppArray<::System::Byte>* buffer, ::System::Int32 chunkSize, ::Il2CppArray<::System::Byte>* header, ::Il2CppArray<::System::Byte>* footer, ::System::Net::CompletionDelegate* uploadCompletionDelegate, ::System::Net::CompletionDelegate* downloadCompletionDelegate, ::System::ComponentModel::AsyncOperation* asyncOp, ::System::Net::WebClient_ProgressData* progress, ::System::Net::WebClient* webClient)
 		{

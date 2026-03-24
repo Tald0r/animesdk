@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_D7E802D2192B688B_1.h"
+#include "unitysdk/Struct_2_5CD23A6C3B64A60B.h"
+#include "unitysdk/Struct_2_9E4D1804C70A9D58.h"
 
-class Class_1_FD893FD36F6A3A6D_1;
-namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_211_TypeDefinitionIndex = 72067;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_211_TypeDefinitionIndex = 39692;
 
 class Class_0_16E4307DCC419505_211
 {

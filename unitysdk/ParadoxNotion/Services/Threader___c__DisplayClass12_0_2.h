@@ -7,7 +7,7 @@ namespace System { template <typename T> class Action_1; }
 
 namespace ParadoxNotion::Services
 {
-	inline static constexpr unsigned int Threader___c__DisplayClass12_0_2_TypeDefinitionIndex = 25194;
+	inline static constexpr unsigned int Threader___c__DisplayClass12_0_2_TypeDefinitionIndex = 26004;
 
 	template <typename TResult, typename T1>
 	class Threader___c__DisplayClass12_0_2 : public ::System::Object

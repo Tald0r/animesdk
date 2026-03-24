@@ -8,25 +8,25 @@ class Class_2_777A5D016ADC7368;
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIFriendSystemWidgetController; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_14B8F1A93C1DC200_METHOD_2_5B900C0AEB2813BC_OFFSET UNITYSDK_OFFSET(0x69FB000)
-#define CLASS_2_14B8F1A93C1DC200_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x69FB240)
-#define CLASS_2_14B8F1A93C1DC200_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x69FB310)
-#define CLASS_2_14B8F1A93C1DC200__CTOR_OFFSET UNITYSDK_OFFSET(0x69FB300)
+#define CLASS_2_14B8F1A93C1DC200_METHOD_2_5B900C0AEB2813BC_OFFSET UNITYSDK_OFFSET(0x94D5470)
+#define CLASS_2_14B8F1A93C1DC200_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x94D56B0)
+#define CLASS_2_14B8F1A93C1DC200_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x94D5780)
+#define CLASS_2_14B8F1A93C1DC200__CTOR_OFFSET UNITYSDK_OFFSET(0x94D5770)
 
-inline static constexpr unsigned int Class_2_14B8F1A93C1DC200_TypeDefinitionIndex = 65254;
+inline static constexpr unsigned int Class_2_14B8F1A93C1DC200_TypeDefinitionIndex = 56446;
 
 class Class_2_14B8F1A93C1DC200 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
-	::UnityEngine::UI::Extension::UITabButton* Field_2_6; // 0x20
-	::UnityEngine::UI::Extension::UITabButton* Field_2_4; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIFriendSystemWidgetController*>* Field_2_1; // 0x30
-	::Class_2_1F76884FC39FD584* Field_2_2; // 0x38
-	::UnityEngine::UI::Extension::UITabButton* Field_2_3; // 0x40
-	::UnityEngine::UI::Extension::UITabButton* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UITabButton* Field_2_6; // 0x18
+	::Class_3_647A206587033F4E<::MoleMole::UIFriendSystemWidgetController*>* Field_2_1; // 0x20
+	::Class_2_1F76884FC39FD584* Field_2_2; // 0x28
+	::UnityEngine::UI::Extension::UITabButton* Field_2_5; // 0x30
+	::UnityEngine::UI::Extension::UITabButton* Field_2_4; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
+	::UnityEngine::UI::Extension::UITabButton* Field_2_3; // 0x48
 
 	::System::Void _ctor()
 	{

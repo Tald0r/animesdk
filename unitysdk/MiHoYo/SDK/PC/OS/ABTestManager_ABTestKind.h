@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::PC::OS
 {
-	inline static constexpr unsigned int ABTestManager_ABTestKind_TypeDefinitionIndex = 18448;
+	inline static constexpr unsigned int ABTestManager_ABTestKind_TypeDefinitionIndex = 18982;
 
 	enum class ABTestManager_ABTestKind : ::System::Int32
 	{

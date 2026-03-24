@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BaseMove_EAroundMoveMode_TypeDefinitionIndex = 61883;
+	inline static constexpr unsigned int BaseMove_EAroundMoveMode_TypeDefinitionIndex = 71380;
 
 	enum class BaseMove_EAroundMoveMode : ::System::Int32
 	{

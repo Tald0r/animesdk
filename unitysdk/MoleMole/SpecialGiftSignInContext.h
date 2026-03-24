@@ -4,11 +4,11 @@
 
 class Class_1_E43D938AEBE01021;
 
-#define MOLEMOLE_SPECIALGIFTSIGNINCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6B20C20)
+#define MOLEMOLE_SPECIALGIFTSIGNINCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD449B50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SpecialGiftSignInContext_TypeDefinitionIndex = 69413;
+	inline static constexpr unsigned int SpecialGiftSignInContext_TypeDefinitionIndex = 74744;
 
 	class SpecialGiftSignInContext : public ::MoleMole::UIControllerContextBase
 	{

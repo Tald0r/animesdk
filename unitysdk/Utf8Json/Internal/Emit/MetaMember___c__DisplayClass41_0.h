@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::Reflection { class MethodInfo; }
 
-#define UTF8JSON_INTERNAL_EMIT_METAMEMBER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFDCA80)
-#define UTF8JSON_INTERNAL_EMIT_METAMEMBER___C__DISPLAYCLASS41_0__GETSHOULDSERIALIZE_B__0_OFFSET UNITYSDK_OFFSET(0x1AFDCA90)
+#define UTF8JSON_INTERNAL_EMIT_METAMEMBER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5EB7F0)
+#define UTF8JSON_INTERNAL_EMIT_METAMEMBER___C__DISPLAYCLASS41_0__GETSHOULDSERIALIZE_B__0_OFFSET UNITYSDK_OFFSET(0x1B5EB800)
 
 namespace Utf8Json::Internal::Emit
 {
-	inline static constexpr unsigned int MetaMember___c__DisplayClass41_0_TypeDefinitionIndex = 81910;
+	inline static constexpr unsigned int MetaMember___c__DisplayClass41_0_TypeDefinitionIndex = 83951;
 
 	class MetaMember___c__DisplayClass41_0 : public ::System::Object
 	{

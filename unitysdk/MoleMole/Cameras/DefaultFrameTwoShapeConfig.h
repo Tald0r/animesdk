@@ -6,12 +6,12 @@ class Class_1_B60373C9F8774367;
 namespace MoleMole::Cameras { class CameraTrackBlending; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CAMERAS_DEFAULTFRAMETWOSHAPECONFIG_CREATEPOLICY_OFFSET UNITYSDK_OFFSET(0x6218630)
-#define MOLEMOLE_CAMERAS_DEFAULTFRAMETWOSHAPECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6218830)
+#define MOLEMOLE_CAMERAS_DEFAULTFRAMETWOSHAPECONFIG_CREATEPOLICY_OFFSET UNITYSDK_OFFSET(0x84EC850)
+#define MOLEMOLE_CAMERAS_DEFAULTFRAMETWOSHAPECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x84ECA50)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int DefaultFrameTwoShapeConfig_TypeDefinitionIndex = 59428;
+	inline static constexpr unsigned int DefaultFrameTwoShapeConfig_TypeDefinitionIndex = 71933;
 
 	class DefaultFrameTwoShapeConfig : public ::System::Object
 	{

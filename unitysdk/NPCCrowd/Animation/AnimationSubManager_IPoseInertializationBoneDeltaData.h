@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_IPoseInertializationBoneDeltaData_TypeDefinitionIndex = 71206;
+	inline static constexpr unsigned int AnimationSubManager_IPoseInertializationBoneDeltaData_TypeDefinitionIndex = 59646;
 
 	class AnimationSubManager_IPoseInertializationBoneDeltaData
 	{

@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigHitData; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGHITDATAS__CTOR_OFFSET UNITYSDK_OFFSET(0xCDABB90)
+#define MOLEMOLE_CONFIG_CONFIGHITDATAS__CTOR_OFFSET UNITYSDK_OFFSET(0xB9181E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHitDatas_TypeDefinitionIndex = 40864;
+	inline static constexpr unsigned int ConfigHitDatas_TypeDefinitionIndex = 75225;
 
 	class ConfigHitDatas : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -3,12 +3,12 @@
 
 namespace MonoNotRelateGameLogic
 {
-	inline static constexpr unsigned int DeviceCarType_TypeDefinitionIndex = 65377;
+	inline static constexpr unsigned int DeviceCarType_TypeDefinitionIndex = 52926;
 
 	enum class DeviceCarType : ::System::Int32
 	{
-		Middle = 2,
 		Large = 3,
+		Middle = 2,
 		Small = 1,
 	};
 }

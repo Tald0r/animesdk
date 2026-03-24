@@ -8,27 +8,27 @@ namespace MoleMole { class UIBossChallengeBadgeRowWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
-template <typename T> class Class_3_95EF0285C16C5E7C;
+template <typename T> class Class_3_CA832D813F452AD6;
 
-#define CLASS_2_BE97744DE3DEF97D_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x674D240)
-#define CLASS_2_BE97744DE3DEF97D_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0x674CFE0)
-#define CLASS_2_BE97744DE3DEF97D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x674D360)
-#define CLASS_2_BE97744DE3DEF97D__CTOR_OFFSET UNITYSDK_OFFSET(0x674D350)
+#define CLASS_2_BE97744DE3DEF97D_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x9F3D030)
+#define CLASS_2_BE97744DE3DEF97D_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0x9F3CDD0)
+#define CLASS_2_BE97744DE3DEF97D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9F3D150)
+#define CLASS_2_BE97744DE3DEF97D__CTOR_OFFSET UNITYSDK_OFFSET(0x9F3D140)
 
-inline static constexpr unsigned int Class_2_BE97744DE3DEF97D_TypeDefinitionIndex = 50516;
+inline static constexpr unsigned int Class_2_BE97744DE3DEF97D_TypeDefinitionIndex = 49272;
 
 class Class_2_BE97744DE3DEF97D : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x18
-	::Class_3_95EF0285C16C5E7C<::MoleMole::UIBossChallengeBadgeRowWidgetController*>* Field_2_7; // 0x20
-	::UnityEngine::RectTransform* Field_2_6; // 0x28
-	::UnityEngine::Transform* Field_2_5; // 0x30
-	::UnityEngine::Transform* Field_2_3; // 0x38
+	::Class_3_CA832D813F452AD6<::MoleMole::UIBossChallengeBadgeRowWidgetController*>* Field_2_7; // 0x18
+	::UnityEngine::Transform* Field_2_3; // 0x20
+	::UnityEngine::Transform* Field_2_0; // 0x28
+	::UnityEngine::RectTransform* Field_2_6; // 0x30
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x38
 	::UnityEngine::Transform* Field_2_4; // 0x40
 	::Class_2_60DDD9C206686F44* Field_2_1; // 0x48
 	::Class_2_60DDD9C206686F44* Field_2_8; // 0x50
-	::UnityEngine::Transform* Field_2_0; // 0x58
+	::UnityEngine::Transform* Field_2_5; // 0x58
 
 	::System::Void _ctor()
 	{

@@ -4,7 +4,7 @@
 
 namespace RBDDestruction
 {
-	inline static constexpr unsigned int RBDManager_BuildingConfigInfo_TypeDefinitionIndex = 28247;
+	inline static constexpr unsigned int RBDManager_BuildingConfigInfo_TypeDefinitionIndex = 29188;
 
 	struct alignas(4) RBDManager_BuildingConfigInfo
 	{

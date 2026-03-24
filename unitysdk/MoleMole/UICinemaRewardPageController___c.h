@@ -4,39 +4,39 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8067F70)
-#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8067FB0)
-#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_0_OFFSET UNITYSDK_OFFSET(0x8067FC0)
-#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_1_OFFSET UNITYSDK_OFFSET(0x8067FF0)
-#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_2_OFFSET UNITYSDK_OFFSET(0x8068010)
-#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_3_OFFSET UNITYSDK_OFFSET(0x8068040)
+#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAC433B0)
+#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAC433F0)
+#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_0_OFFSET UNITYSDK_OFFSET(0xAC43400)
+#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_1_OFFSET UNITYSDK_OFFSET(0xAC43430)
+#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_2_OFFSET UNITYSDK_OFFSET(0xAC43450)
+#define MOLEMOLE_UICINEMAREWARDPAGECONTROLLER___C__REFRESHLEFTEXPINFO_B__20_3_OFFSET UNITYSDK_OFFSET(0xAC43480)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaRewardPageController___c_TypeDefinitionIndex = 61780;
+	inline static constexpr unsigned int UICinemaRewardPageController___c_TypeDefinitionIndex = 69489;
 
 	class UICinemaRewardPageController___c : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::Events::UnityAction** StaticGet___9__20_3()
-		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x32510);
-		}
-		static ::MoleMole::UICinemaRewardPageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UICinemaRewardPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x32518);
-		}
-		static ::UnityEngine::Events::UnityAction** StaticGet___9__20_2()
-		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x32520);
-		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__20_0()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x32528);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x34390);
+		}
+		static ::UnityEngine::Events::UnityAction** StaticGet___9__20_3()
+		{
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x34398);
 		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__20_1()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x32530);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x343A0);
+		}
+		static ::UnityEngine::Events::UnityAction** StaticGet___9__20_2()
+		{
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x343A8);
+		}
+		static ::MoleMole::UICinemaRewardPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UICinemaRewardPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UICinemaRewardPageController___c_TypeDefinitionIndex)->GetStaticField(0x343B0);
 		}
 
 		static ::System::Void _cctor()

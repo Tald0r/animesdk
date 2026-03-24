@@ -6,15 +6,15 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_277F99B3E754A6A7__CTOR_OFFSET UNITYSDK_OFFSET(0x6706DC0)
+#define CLASS_1_277F99B3E754A6A7__CTOR_OFFSET UNITYSDK_OFFSET(0xA3CDBA0)
 
-inline static constexpr unsigned int Class_1_277F99B3E754A6A7_TypeDefinitionIndex = 50091;
+inline static constexpr unsigned int Class_1_277F99B3E754A6A7_TypeDefinitionIndex = 61815;
 
 class Class_1_277F99B3E754A6A7 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::System::Int32>* Field_1_1; // 0x10
-	::System::Action* Field_1_4; // 0x18
+	::System::Action* Field_1_4; // 0x10
+	::System::Collections::Generic::List_1<::System::Int32>* Field_1_1; // 0x18
 	::System::String* Field_1_2; // 0x20
 	::System::Int32 Field_1_3; // 0x28
 	::System::Int32 Field_1_0; // 0x2C

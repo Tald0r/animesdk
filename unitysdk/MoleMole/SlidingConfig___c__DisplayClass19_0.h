@@ -5,12 +5,12 @@
 namespace MoleMole { class SlidingConfig; }
 namespace System { class Action; }
 
-#define MOLEMOLE_SLIDINGCONFIG___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBD50D90)
-#define MOLEMOLE_SLIDINGCONFIG___C__DISPLAYCLASS19_0__RELOADFROMFILE_G__LOADCALLBACK_0_OFFSET UNITYSDK_OFFSET(0xBD50DA0)
+#define MOLEMOLE_SLIDINGCONFIG___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB1C0180)
+#define MOLEMOLE_SLIDINGCONFIG___C__DISPLAYCLASS19_0__RELOADFROMFILE_G__LOADCALLBACK_0_OFFSET UNITYSDK_OFFSET(0xB1C0190)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SlidingConfig___c__DisplayClass19_0_TypeDefinitionIndex = 46100;
+	inline static constexpr unsigned int SlidingConfig___c__DisplayClass19_0_TypeDefinitionIndex = 46264;
 
 	class SlidingConfig___c__DisplayClass19_0 : public ::System::Object
 	{

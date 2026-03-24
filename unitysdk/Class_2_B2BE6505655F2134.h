@@ -10,32 +10,32 @@ namespace MoleMole { class UISuibianStartRowWidgetController; }
 namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_B2BE6505655F2134_METHOD_2_29352E75304CF2A0_OFFSET UNITYSDK_OFFSET(0xAAF19F0)
-#define CLASS_2_B2BE6505655F2134_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xAAF16E0)
-#define CLASS_2_B2BE6505655F2134_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xAAF1B30)
-#define CLASS_2_B2BE6505655F2134__CTOR_OFFSET UNITYSDK_OFFSET(0xAAF1B20)
+#define CLASS_2_B2BE6505655F2134_METHOD_2_29352E75304CF2A0_OFFSET UNITYSDK_OFFSET(0x8035650)
+#define CLASS_2_B2BE6505655F2134_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x8035350)
+#define CLASS_2_B2BE6505655F2134_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8035790)
+#define CLASS_2_B2BE6505655F2134__CTOR_OFFSET UNITYSDK_OFFSET(0x8035780)
 
-inline static constexpr unsigned int Class_2_B2BE6505655F2134_TypeDefinitionIndex = 39173;
+inline static constexpr unsigned int Class_2_B2BE6505655F2134_TypeDefinitionIndex = 80744;
 
 class Class_2_B2BE6505655F2134 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x20
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x30
-	::UnityEngine::CanvasGroup* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x18
+	::UnityEngine::RectTransform* Field_2_13; // 0x20
+	::UnityEngine::CanvasGroup* Field_2_8; // 0x28
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x30
+	::UnityEngine::RectTransform* Field_2_12; // 0x38
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x40
-	::UnityEngine::RectTransform* Field_2_9; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x50
-	::UnityEngine::RectTransform* Field_2_12; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x60
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UISuibianStartRowWidgetController*>* Field_2_11; // 0x68
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x70
-	::UnityEngine::RectTransform* Field_2_13; // 0x78
-	::UnityEngine::CanvasGroup* Field_2_8; // 0x80
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x48
+	::UnityEngine::RectTransform* Field_2_9; // 0x50
+	::Class_3_647A206587033F4E<::MoleMole::UISuibianStartRowWidgetController*>* Field_2_11; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x60
+	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x68
+	::UnityEngine::CanvasGroup* Field_2_7; // 0x70
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x78
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x80
 
 	::System::Void _ctor()
 	{

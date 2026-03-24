@@ -4,11 +4,11 @@
 #include "unitysdk/UnityEngine/Experimental/Rendering/RayTracingAccelerationStructure_ManagementMode.h"
 #include "unitysdk/UnityEngine/Experimental/Rendering/RayTracingAccelerationStructure_RayTracingModeMask.h"
 
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_RAYTRACINGACCELERATIONSTRUCTURE_RASSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x2CA8F0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_RAYTRACINGACCELERATIONSTRUCTURE_RASSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x37EE40)
 
 namespace UnityEngine::Experimental::Rendering
 {
-	inline static constexpr unsigned int RayTracingAccelerationStructure_RASSettings_TypeDefinitionIndex = 6318;
+	inline static constexpr unsigned int RayTracingAccelerationStructure_RASSettings_TypeDefinitionIndex = 6322;
 
 	struct alignas(4) RayTracingAccelerationStructure_RASSettings
 	{

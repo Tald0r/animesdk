@@ -5,12 +5,12 @@
 namespace MoleMole { class UIInLevelBanYuePanelChildWindowController; }
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_UIINLEVELBANYUEPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7D1E290)
-#define MOLEMOLE_UIINLEVELBANYUEPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS41_0__REFRESHPOINT_B__0_OFFSET UNITYSDK_OFFSET(0x7D1E2A0)
+#define MOLEMOLE_UIINLEVELBANYUEPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x914D900)
+#define MOLEMOLE_UIINLEVELBANYUEPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS41_0__REFRESHPOINT_B__0_OFFSET UNITYSDK_OFFSET(0x914D910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelBanYuePanelChildWindowController___c__DisplayClass41_0_TypeDefinitionIndex = 58441;
+	inline static constexpr unsigned int UIInLevelBanYuePanelChildWindowController___c__DisplayClass41_0_TypeDefinitionIndex = 63878;
 
 	class UIInLevelBanYuePanelChildWindowController___c__DisplayClass41_0 : public ::System::Object
 	{

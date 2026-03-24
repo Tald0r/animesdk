@@ -7,7 +7,7 @@ namespace DG::Tweening::Core { template <typename T1, typename T2, typename T3> 
 
 namespace DG::Tweening::Core
 {
-	inline static constexpr unsigned int Extensions_TypeDefinitionIndex = 24161;
+	inline static constexpr unsigned int Extensions_TypeDefinitionIndex = 24985;
 
 	class Extensions : public ::System::Object
 	{

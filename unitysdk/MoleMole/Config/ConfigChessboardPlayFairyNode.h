@@ -5,12 +5,12 @@
 class Class_1_D72537470FC2F779;
 namespace MoleMole::Config { class IntUISpecialNum; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDPLAYFAIRYNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x6243AA0)
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDPLAYFAIRYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x6243B80)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDPLAYFAIRYNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xC230D10)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDPLAYFAIRYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC230DF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessboardPlayFairyNode_TypeDefinitionIndex = 65513;
+	inline static constexpr unsigned int ConfigChessboardPlayFairyNode_TypeDefinitionIndex = 66923;
 
 	class ConfigChessboardPlayFairyNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

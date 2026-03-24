@@ -6,34 +6,34 @@
 namespace MoleMole::Cameras { class CameraMoveModeData; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_0894D4B5D686C638_METHOD_1_3303033EC7109040_OFFSET UNITYSDK_OFFSET(0x8D57B90)
-#define CLASS_1_0894D4B5D686C638_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x8D57B20)
-#define CLASS_1_0894D4B5D686C638__CTOR_OFFSET UNITYSDK_OFFSET(0x8D57A70)
+#define CLASS_1_0894D4B5D686C638_METHOD_1_3303033EC7109040_OFFSET UNITYSDK_OFFSET(0xA718010)
+#define CLASS_1_0894D4B5D686C638_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xA718110)
+#define CLASS_1_0894D4B5D686C638__CTOR_OFFSET UNITYSDK_OFFSET(0xA717F60)
 
-inline static constexpr unsigned int Class_1_0894D4B5D686C638_TypeDefinitionIndex = 73167;
+inline static constexpr unsigned int Class_1_0894D4B5D686C638_TypeDefinitionIndex = 64771;
 
 class Class_1_0894D4B5D686C638 : public ::System::Object
 {
 public:
 	::System::Collections::Generic::List_1<::System::Int32>* Field_1_3; // 0x10
 	::System::Collections::Generic::List_1<::MoleMole::Cameras::CameraMoveModeData*>* Field_1_0; // 0x18
-	::MoleMole::Config::CameraDelayMoveMode Field_1_4; // 0x20
+	::System::Boolean Field_1_5; // 0x20
+	::System::Boolean Field_1_2; // 0x21
 	::System::Int32 Field_1_1; // 0x24
-	::System::Boolean Field_1_2; // 0x28
-	::System::Boolean Field_1_5; // 0x29
+	::MoleMole::Config::CameraDelayMoveMode Field_1_4; // 0x28
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_0894D4B5D686C638__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_CA373AA1C7054598()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_0894D4B5D686C638_METHOD_1_CA373AA1C7054598_OFFSET))(this);
-	}
-
 	::System::Void Method_1_3303033EC7109040()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_0894D4B5D686C638_METHOD_1_3303033EC7109040_OFFSET))(this);
+	}
+
+	::System::Void Method_1_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_0894D4B5D686C638_METHOD_1_CA373AA1C7054598_OFFSET))(this);
 	}
 };

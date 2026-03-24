@@ -4,7 +4,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int FrustumPlanes_TypeDefinitionIndex = 5297;
+	inline static constexpr unsigned int FrustumPlanes_TypeDefinitionIndex = 5298;
 
 	struct alignas(4) FrustumPlanes
 	{

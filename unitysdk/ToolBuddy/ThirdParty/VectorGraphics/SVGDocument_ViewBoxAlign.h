@@ -3,7 +3,7 @@
 
 namespace ToolBuddy::ThirdParty::VectorGraphics
 {
-	inline static constexpr unsigned int SVGDocument_ViewBoxAlign_TypeDefinitionIndex = 27004;
+	inline static constexpr unsigned int SVGDocument_ViewBoxAlign_TypeDefinitionIndex = 27944;
 
 	enum class SVGDocument_ViewBoxAlign : ::System::Int32
 	{

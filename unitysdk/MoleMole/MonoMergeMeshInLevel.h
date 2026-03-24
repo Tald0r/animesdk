@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_MONOMERGEMESHINLEVEL_MERGEMESH_OFFSET UNITYSDK_OFFSET(0x8B25290)
-#define MOLEMOLE_MONOMERGEMESHINLEVEL_START_OFFSET UNITYSDK_OFFSET(0x8B25220)
-#define MOLEMOLE_MONOMERGEMESHINLEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0x8B25990)
+#define MOLEMOLE_MONOMERGEMESHINLEVEL_MERGEMESH_OFFSET UNITYSDK_OFFSET(0xB1A96C0)
+#define MOLEMOLE_MONOMERGEMESHINLEVEL_START_OFFSET UNITYSDK_OFFSET(0xB1A9650)
+#define MOLEMOLE_MONOMERGEMESHINLEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0xB1A9DC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoMergeMeshInLevel_TypeDefinitionIndex = 69027;
+	inline static constexpr unsigned int MonoMergeMeshInLevel_TypeDefinitionIndex = 72521;
 
 	class MonoMergeMeshInLevel : public ::UnityEngine::MonoBehaviour
 	{

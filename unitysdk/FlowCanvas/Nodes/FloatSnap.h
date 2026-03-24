@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_3.h"
 
-#define FLOWCANVAS_NODES_FLOATSNAP_INVOKE_OFFSET UNITYSDK_OFFSET(0x19258700)
-#define FLOWCANVAS_NODES_FLOATSNAP__CTOR_OFFSET UNITYSDK_OFFSET(0x192587C0)
+#define FLOWCANVAS_NODES_FLOATSNAP_INVOKE_OFFSET UNITYSDK_OFFSET(0x196D4CB0)
+#define FLOWCANVAS_NODES_FLOATSNAP__CTOR_OFFSET UNITYSDK_OFFSET(0x196D4D70)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int FloatSnap_TypeDefinitionIndex = 26254;
+	inline static constexpr unsigned int FloatSnap_TypeDefinitionIndex = 26242;
 
 	class FloatSnap : public ::FlowCanvas::Nodes::PureFunctionNode_3<::System::Int32, ::System::Single, ::System::Int32>
 	{

@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB75010)
-#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS11_0__REFRESHSAB_B__3_OFFSET UNITYSDK_OFFSET(0xAB75020)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA225A50)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS11_0__REFRESHSAB_B__3_OFFSET UNITYSDK_OFFSET(0xA225A60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyResultPageController___c__DisplayClass11_0_TypeDefinitionIndex = 42429;
+	inline static constexpr unsigned int UIMonsterFantasyResultPageController___c__DisplayClass11_0_TypeDefinitionIndex = 43260;
 
 	class UIMonsterFantasyResultPageController___c__DisplayClass11_0 : public ::System::Object
 	{

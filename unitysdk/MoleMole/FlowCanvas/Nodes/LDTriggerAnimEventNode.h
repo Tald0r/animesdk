@@ -10,15 +10,15 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Coroutine; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE875B90)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_TRIGGERANIMEVENT_OFFSET UNITYSDK_OFFSET(0xE875CF0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_TRIGGERENTITYANIMEVENT_OFFSET UNITYSDK_OFFSET(0xE876140)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_WAITTRIGGER_OFFSET UNITYSDK_OFFSET(0xE876020)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE876690)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD44760)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_TRIGGERANIMEVENT_OFFSET UNITYSDK_OFFSET(0xCD448C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_TRIGGERENTITYANIMEVENT_OFFSET UNITYSDK_OFFSET(0xCD44D10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE_WAITTRIGGER_OFFSET UNITYSDK_OFFSET(0xCD44BF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTRIGGERANIMEVENTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD45260)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDTriggerAnimEventNode_TypeDefinitionIndex = 70027;
+	inline static constexpr unsigned int LDTriggerAnimEventNode_TypeDefinitionIndex = 59558;
 
 	class LDTriggerAnimEventNode : public ::FlowCanvas::Nodes::CallableFunctionNode_8<::System::Boolean, ::MoleMole::Battle::Entity*, ::MoleMole::FlowCanvas::Nodes::EntitySaveDataMap*, ::System::Single, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*, ::System::Collections::Generic::List_1<::System::String*>*>
 	{

@@ -4,7 +4,7 @@
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int UniTaskLoopRunners_UniTaskLoopRunnerYieldPostLateUpdate_TypeDefinitionIndex = 27101;
+	inline static constexpr unsigned int UniTaskLoopRunners_UniTaskLoopRunnerYieldPostLateUpdate_TypeDefinitionIndex = 28041;
 
 	struct alignas(1) UniTaskLoopRunners_UniTaskLoopRunnerYieldPostLateUpdate
 	{

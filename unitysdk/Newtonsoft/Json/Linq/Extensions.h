@@ -8,14 +8,14 @@ namespace Newtonsoft::Json::Linq { class JToken; }
 namespace Newtonsoft::Json::Linq { template <typename T> class IJEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_ASJENUMERABLE_OFFSET UNITYSDK_OFFSET(0x1A8C4E00)
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x1A8C4B50)
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_VALUES_1_OFFSET UNITYSDK_OFFSET(0x1A8C4E40)
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_VALUES_OFFSET UNITYSDK_OFFSET(0x1A8C4D90)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_ASJENUMERABLE_OFFSET UNITYSDK_OFFSET(0x1AE8EA40)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x1AE8E780)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_VALUES_1_OFFSET UNITYSDK_OFFSET(0x1AE8EA80)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS_VALUES_OFFSET UNITYSDK_OFFSET(0x1AE8E9D0)
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int Extensions_TypeDefinitionIndex = 7023;
+	inline static constexpr unsigned int Extensions_TypeDefinitionIndex = 7027;
 
 	class Extensions : public ::System::Object
 	{

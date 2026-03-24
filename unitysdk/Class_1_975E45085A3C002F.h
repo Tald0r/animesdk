@@ -11,40 +11,30 @@
 
 namespace MoleMole { class AdvancedCollisionConfigData; }
 
-#define CLASS_1_975E45085A3C002F_METHOD_1_421D01B3D9AAD573_OFFSET UNITYSDK_OFFSET(0xBB70030)
-#define CLASS_1_975E45085A3C002F_METHOD_1_544EB4FCBB61AD17_OFFSET UNITYSDK_OFFSET(0xBB70140)
-#define CLASS_1_975E45085A3C002F_METHOD_1_6ADC0DE1CE85896E_OFFSET UNITYSDK_OFFSET(0xBB6F560)
-#define CLASS_1_975E45085A3C002F_METHOD_1_726479441D50D4C5_OFFSET UNITYSDK_OFFSET(0xBB70A90)
-#define CLASS_1_975E45085A3C002F_METHOD_1_753447C3FC478CC0_OFFSET UNITYSDK_OFFSET(0xBB71CD0)
-#define CLASS_1_975E45085A3C002F_METHOD_1_8B5D6D6A6F722396_OFFSET UNITYSDK_OFFSET(0xBB6FAF0)
-#define CLASS_1_975E45085A3C002F_METHOD_1_A8F6F688241E6DBC_OFFSET UNITYSDK_OFFSET(0xBB6FB00)
-#define CLASS_1_975E45085A3C002F_METHOD_1_BE06DEE3D78E2A97_OFFSET UNITYSDK_OFFSET(0xBB6FC50)
-#define CLASS_1_975E45085A3C002F_METHOD_1_E5D7DA6AD4D9CD9B_OFFSET UNITYSDK_OFFSET(0xBB71640)
-#define CLASS_1_975E45085A3C002F__CTOR_OFFSET UNITYSDK_OFFSET(0xBB6F550)
+#define CLASS_1_975E45085A3C002F_METHOD_1_421D01B3D9AAD573_OFFSET UNITYSDK_OFFSET(0xB4E47F0)
+#define CLASS_1_975E45085A3C002F_METHOD_1_544EB4FCBB61AD17_OFFSET UNITYSDK_OFFSET(0xB4E4900)
+#define CLASS_1_975E45085A3C002F_METHOD_1_6ADC0DE1CE85896E_OFFSET UNITYSDK_OFFSET(0xB4E5250)
+#define CLASS_1_975E45085A3C002F_METHOD_1_726479441D50D4C5_OFFSET UNITYSDK_OFFSET(0xB4E3790)
+#define CLASS_1_975E45085A3C002F_METHOD_1_753447C3FC478CC0_OFFSET UNITYSDK_OFFSET(0xB4E4720)
+#define CLASS_1_975E45085A3C002F_METHOD_1_8B5D6D6A6F722396_OFFSET UNITYSDK_OFFSET(0xB4E3780)
+#define CLASS_1_975E45085A3C002F_METHOD_1_A8F6F688241E6DBC_OFFSET UNITYSDK_OFFSET(0xB4E3640)
+#define CLASS_1_975E45085A3C002F_METHOD_1_BE06DEE3D78E2A97_OFFSET UNITYSDK_OFFSET(0xB4E4340)
+#define CLASS_1_975E45085A3C002F_METHOD_1_E5D7DA6AD4D9CD9B_OFFSET UNITYSDK_OFFSET(0xB4E57E0)
+#define CLASS_1_975E45085A3C002F__CTOR_OFFSET UNITYSDK_OFFSET(0xB4E3630)
 
-inline static constexpr unsigned int Class_1_975E45085A3C002F_TypeDefinitionIndex = 72747;
+inline static constexpr unsigned int Class_1_975E45085A3C002F_TypeDefinitionIndex = 39409;
 
 class Class_1_975E45085A3C002F : public ::System::Object
 {
 public:
 	// static const ::System::Single Field_1_3; // 0x0
-	::UnityEngine::RaycastHit Field_1_1; // 0x10
-	::System::Single Field_1_0; // 0x44
-	::System::Single Field_1_2; // 0x48
+	::System::Single Field_1_2; // 0x10
+	::UnityEngine::RaycastHit Field_1_1; // 0x14
+	::System::Single Field_1_0; // 0x48
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F__CTOR_OFFSET))(this);
-	}
-
-	static ::System::Void Method_1_6ADC0DE1CE85896E(::System::Single a1, ::UnityEngine::RaycastHit& a2, ::System::Single& a3, ::System::Single& a4, ::UnityEngine::RaycastHit& a5, ::System::Single a6, ::MoleMole::AdvancedCollisionConfigData*& a7)
-	{
-		return ((::System::Void(*)(::System::Single, ::UnityEngine::RaycastHit&, ::System::Single&, ::System::Single&, ::UnityEngine::RaycastHit&, ::System::Single, ::MoleMole::AdvancedCollisionConfigData*&))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_6ADC0DE1CE85896E_OFFSET))(a1, a2, a3, a4, a5, a6, a7);
-	}
-
-	static ::System::ValueTuple_2<::System::Single, ::System::Single> Method_1_8B5D6D6A6F722396(::System::Single a1)
-	{
-		return ((::System::ValueTuple_2<::System::Single, ::System::Single>(*)(::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_8B5D6D6A6F722396_OFFSET))(a1);
 	}
 
 	static ::System::Boolean Method_1_A8F6F688241E6DBC()
@@ -52,9 +42,24 @@ public:
 		return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_A8F6F688241E6DBC_OFFSET))();
 	}
 
+	static ::System::ValueTuple_2<::System::Single, ::System::Single> Method_1_8B5D6D6A6F722396(::System::Single a1)
+	{
+		return ((::System::ValueTuple_2<::System::Single, ::System::Single>(*)(::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_8B5D6D6A6F722396_OFFSET))(a1);
+	}
+
+	static ::PipelineCamera::WorldBasicCameraData Method_1_726479441D50D4C5(::PipelineCamera::WorldBasicCameraData a1, ::System::Single a2, ::System::Single a3, ::Struct_2_5AC47B2D919D8407& a4, ::MoleMole::AdvancedCollisionConfigData* a5)
+	{
+		return ((::PipelineCamera::WorldBasicCameraData(*)(::PipelineCamera::WorldBasicCameraData, ::System::Single, ::System::Single, ::Struct_2_5AC47B2D919D8407&, ::MoleMole::AdvancedCollisionConfigData*))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_726479441D50D4C5_OFFSET))(a1, a2, a3, a4, a5);
+	}
+
 	static ::System::Single Method_1_BE06DEE3D78E2A97(::UnityEngine::Vector3& a1, ::UnityEngine::Vector3& a2, ::System::Single a3, ::MoleMole::AdvancedCollisionConfigData*& a4, ::UnityEngine::RaycastHit& a5)
 	{
 		return ((::System::Single(*)(::UnityEngine::Vector3&, ::UnityEngine::Vector3&, ::System::Single, ::MoleMole::AdvancedCollisionConfigData*&, ::UnityEngine::RaycastHit&))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_BE06DEE3D78E2A97_OFFSET))(a1, a2, a3, a4, a5);
+	}
+
+	::MoleMole::AdvancedCollisionConfigData* Method_1_753447C3FC478CC0()
+	{
+		return ((::MoleMole::AdvancedCollisionConfigData*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_753447C3FC478CC0_OFFSET))(this);
 	}
 
 	static ::System::Single Method_1_421D01B3D9AAD573(::System::Single a1, ::System::Single a2, ::Enum_3_8ADCB380438C5EA9 a3)
@@ -67,18 +72,13 @@ public:
 		return ((::System::Single(*)(::UnityEngine::Vector3&, ::UnityEngine::Vector3&, ::UnityEngine::Vector3&, ::System::Single, ::System::Single, ::System::Single, ::MoleMole::AdvancedCollisionConfigData*&, ::Enum_3_8ADCB380438C5EA9))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_544EB4FCBB61AD17_OFFSET))(a1, a2, a3, a4, a5, a6, a7, a8);
 	}
 
-	static ::PipelineCamera::WorldBasicCameraData Method_1_726479441D50D4C5(::PipelineCamera::WorldBasicCameraData a1, ::System::Single a2, ::System::Single a3, ::Struct_2_5AC47B2D919D8407& a4, ::MoleMole::AdvancedCollisionConfigData* a5)
+	static ::System::Void Method_1_6ADC0DE1CE85896E(::System::Single a1, ::UnityEngine::RaycastHit& a2, ::System::Single& a3, ::System::Single& a4, ::UnityEngine::RaycastHit& a5, ::System::Single a6, ::MoleMole::AdvancedCollisionConfigData*& a7)
 	{
-		return ((::PipelineCamera::WorldBasicCameraData(*)(::PipelineCamera::WorldBasicCameraData, ::System::Single, ::System::Single, ::Struct_2_5AC47B2D919D8407&, ::MoleMole::AdvancedCollisionConfigData*))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_726479441D50D4C5_OFFSET))(a1, a2, a3, a4, a5);
+		return ((::System::Void(*)(::System::Single, ::UnityEngine::RaycastHit&, ::System::Single&, ::System::Single&, ::UnityEngine::RaycastHit&, ::System::Single, ::MoleMole::AdvancedCollisionConfigData*&))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_6ADC0DE1CE85896E_OFFSET))(a1, a2, a3, a4, a5, a6, a7);
 	}
 
 	::System::Void Method_1_E5D7DA6AD4D9CD9B(::Cinemachine::CameraState& a1, ::System::Single a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::Cinemachine::CameraState&, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_E5D7DA6AD4D9CD9B_OFFSET))(this, a1, a2);
-	}
-
-	::MoleMole::AdvancedCollisionConfigData* Method_1_753447C3FC478CC0()
-	{
-		return ((::MoleMole::AdvancedCollisionConfigData*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_975E45085A3C002F_METHOD_1_753447C3FC478CC0_OFFSET))(this);
 	}
 };

@@ -3,7 +3,7 @@
 
 namespace PostProcess::MKGlow
 {
-	inline static constexpr unsigned int RenderPriority_TypeDefinitionIndex = 28181;
+	inline static constexpr unsigned int RenderPriority_TypeDefinitionIndex = 29122;
 
 	enum class RenderPriority : ::System::Int32
 	{

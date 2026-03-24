@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int ConnectionHeadingEnum_TypeDefinitionIndex = 35639;
+	inline static constexpr unsigned int ConnectionHeadingEnum_TypeDefinitionIndex = 36659;
 
 	enum class ConnectionHeadingEnum : ::System::Int32
 	{

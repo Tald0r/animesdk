@@ -1,22 +1,22 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_205E43D40B9E7AEA.h"
+#include "unitysdk/Enum_3_205B03D40B9BD873.h"
 #include "unitysdk/System/Object.h"
 
 class Class_5_BF1752C70A4AB089_Class_1_20ED9A26BDE59374;
 namespace MoleMole { class UIBubbleTips; }
 
-#define CLASS_5_BF1752C70A4AB089_CLASS_1_B07B8783F2968A1E_METHOD_1_096C7F7C8EC87129_OFFSET UNITYSDK_OFFSET(0x747DC60)
-#define CLASS_5_BF1752C70A4AB089_CLASS_1_B07B8783F2968A1E__CTOR_OFFSET UNITYSDK_OFFSET(0x747DC50)
+#define CLASS_5_BF1752C70A4AB089_CLASS_1_B07B8783F2968A1E_METHOD_1_096C7F7C8EC87129_OFFSET UNITYSDK_OFFSET(0x8029410)
+#define CLASS_5_BF1752C70A4AB089_CLASS_1_B07B8783F2968A1E__CTOR_OFFSET UNITYSDK_OFFSET(0x8029400)
 
-inline static constexpr unsigned int Class_5_BF1752C70A4AB089_Class_1_B07B8783F2968A1E_TypeDefinitionIndex = 52131;
+inline static constexpr unsigned int Class_5_BF1752C70A4AB089_Class_1_B07B8783F2968A1E_TypeDefinitionIndex = 44306;
 
 class Class_5_BF1752C70A4AB089_Class_1_B07B8783F2968A1E : public ::System::Object
 {
 public:
 	::Class_5_BF1752C70A4AB089_Class_1_20ED9A26BDE59374* Field_1_2; // 0x10
 	::MoleMole::UIBubbleTips* Field_1_1; // 0x18
-	::Enum_3_205E43D40B9E7AEA Field_1_0; // 0x20
+	::Enum_3_205B03D40B9BD873 Field_1_0; // 0x20
 
 	::System::Void _ctor()
 	{

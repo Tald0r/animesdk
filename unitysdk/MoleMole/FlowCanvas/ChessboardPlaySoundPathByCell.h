@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDPATHBYCELL_INVOKE_OFFSET UNITYSDK_OFFSET(0xE0E9D80)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDPATHBYCELL__CTOR_OFFSET UNITYSDK_OFFSET(0xE0E9E80)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDPATHBYCELL_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A4EA00)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDPATHBYCELL__CTOR_OFFSET UNITYSDK_OFFSET(0x7A4EB00)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardPlaySoundPathByCell_TypeDefinitionIndex = 45877;
+	inline static constexpr unsigned int ChessboardPlaySoundPathByCell_TypeDefinitionIndex = 80113;
 
 	class ChessboardPlaySoundPathByCell : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_3<::MoleMole::HollowChessboard::HollowCell, ::System::String*, ::System::Boolean>
 	{

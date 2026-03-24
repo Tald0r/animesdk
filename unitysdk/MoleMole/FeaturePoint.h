@@ -5,14 +5,14 @@
 
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_FEATUREPOINT_METHOD_1_009FA3CB66AE43C3_OFFSET UNITYSDK_OFFSET(0xCCD57F0)
-#define MOLEMOLE_FEATUREPOINT_METHOD_1_40E490E2772D5D75_OFFSET UNITYSDK_OFFSET(0xCCD5940)
-#define MOLEMOLE_FEATUREPOINT_METHOD_1_4F4018519B20BBDD_OFFSET UNITYSDK_OFFSET(0xCCD59C0)
-#define MOLEMOLE_FEATUREPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xCCD57D0)
+#define MOLEMOLE_FEATUREPOINT_METHOD_1_009FA3CB66AE43C3_OFFSET UNITYSDK_OFFSET(0xA0052A0)
+#define MOLEMOLE_FEATUREPOINT_METHOD_1_40E490E2772D5D75_OFFSET UNITYSDK_OFFSET(0xA005560)
+#define MOLEMOLE_FEATUREPOINT_METHOD_1_4F4018519B20BBDD_OFFSET UNITYSDK_OFFSET(0xA0053F0)
+#define MOLEMOLE_FEATUREPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xA005280)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FeaturePoint_TypeDefinitionIndex = 43673;
+	inline static constexpr unsigned int FeaturePoint_TypeDefinitionIndex = 70432;
 
 	class FeaturePoint : public ::System::Object
 	{
@@ -32,14 +32,14 @@ namespace MoleMole
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Vector3&))((::PBYTE)hIl2Cpp + MOLEMOLE_FEATUREPOINT_METHOD_1_009FA3CB66AE43C3_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_1_40E490E2772D5D75(::UnityEngine::Vector3 a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_FEATUREPOINT_METHOD_1_40E490E2772D5D75_OFFSET))(this, a1);
-		}
-
 		::UnityEngine::Vector3 Method_1_4F4018519B20BBDD()
 		{
 			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FEATUREPOINT_METHOD_1_4F4018519B20BBDD_OFFSET))(this);
+		}
+
+		::System::Void Method_1_40E490E2772D5D75(::UnityEngine::Vector3 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_FEATUREPOINT_METHOD_1_40E490E2772D5D75_OFFSET))(this, a1);
 		}
 	};
 }

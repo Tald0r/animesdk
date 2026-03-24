@@ -11,7 +11,7 @@ namespace UnityEngine::UI::Extension { template <typename T> class InteractionRa
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int InteractionRangeParam_1_TypeDefinitionIndex = 57944;
+	inline static constexpr unsigned int InteractionRangeParam_1_TypeDefinitionIndex = 53770;
 
 	template <typename T>
 	class InteractionRangeParam_1 : public ::System::Object

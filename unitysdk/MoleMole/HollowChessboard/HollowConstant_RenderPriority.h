@@ -3,16 +3,16 @@
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int HollowConstant_RenderPriority_TypeDefinitionIndex = 60907;
+	inline static constexpr unsigned int HollowConstant_RenderPriority_TypeDefinitionIndex = 57137;
 
 	enum class HollowConstant_RenderPriority : ::System::Int32
 	{
-		InteractMovie = 5,
-		Npc = 1,
-		InteractSecondaryMovie = 6,
-		GridEvent = 3,
 		Default = 0,
+		InteractMovie = 5,
+		GridEvent = 3,
 		NonInteract = 4,
+		InteractSecondaryMovie = 6,
 		Player = 2,
+		Npc = 1,
 	};
 }

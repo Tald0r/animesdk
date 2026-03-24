@@ -5,12 +5,12 @@
 namespace MoleMole { class TeamGroupDataItem; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATETEAMNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0x8AF4020)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATETEAMNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF41D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATETEAMNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0x1164AD30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATETEAMNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1164AEE0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCreateTeamNode_TypeDefinitionIndex = 36475;
+	inline static constexpr unsigned int LDCreateTeamNode_TypeDefinitionIndex = 54126;
 
 	class LDCreateTeamNode : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::System::Boolean, ::MoleMole::TeamGroupDataItem*, ::System::String*>
 	{

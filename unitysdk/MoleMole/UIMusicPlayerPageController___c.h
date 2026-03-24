@@ -5,29 +5,29 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Predicate_1; }
 
-#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x68DA790)
-#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x68DA7D0)
-#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__ONMAINBTNCLICKHANDLE_B__57_0_OFFSET UNITYSDK_OFFSET(0x68DA820)
-#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__ONUIOPEN_B__45_0_OFFSET UNITYSDK_OFFSET(0x68DA7E0)
+#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x86748B0)
+#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x86748F0)
+#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__ONMAINBTNCLICKHANDLE_B__57_0_OFFSET UNITYSDK_OFFSET(0x8674940)
+#define MOLEMOLE_UIMUSICPLAYERPAGECONTROLLER___C__ONUIOPEN_B__45_0_OFFSET UNITYSDK_OFFSET(0x8674900)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicPlayerPageController___c_TypeDefinitionIndex = 74000;
+	inline static constexpr unsigned int UIMusicPlayerPageController___c_TypeDefinitionIndex = 49614;
 
 	class UIMusicPlayerPageController___c : public ::System::Object
 	{
 	public:
 		static ::System::Predicate_1<::System::Int32>** StaticGet___9__45_0()
 		{
-			return (::System::Predicate_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMusicPlayerPageController___c_TypeDefinitionIndex)->GetStaticField(0x34CD0);
+			return (::System::Predicate_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMusicPlayerPageController___c_TypeDefinitionIndex)->GetStaticField(0x37620);
 		}
 		static ::System::Action** StaticGet___9__57_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMusicPlayerPageController___c_TypeDefinitionIndex)->GetStaticField(0x34CD8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMusicPlayerPageController___c_TypeDefinitionIndex)->GetStaticField(0x37628);
 		}
 		static ::MoleMole::UIMusicPlayerPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIMusicPlayerPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMusicPlayerPageController___c_TypeDefinitionIndex)->GetStaticField(0x34CE0);
+			return (::MoleMole::UIMusicPlayerPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMusicPlayerPageController___c_TypeDefinitionIndex)->GetStaticField(0x37630);
 		}
 
 		static ::System::Void _cctor()

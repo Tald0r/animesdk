@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSTYLISHRATINGPROGRESS_INVOKE_OFFSET UNITYSDK_OFFSET(0xC214780)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSTYLISHRATINGPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0xC2149B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSTYLISHRATINGPROGRESS_INVOKE_OFFSET UNITYSDK_OFFSET(0xB82B050)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSTYLISHRATINGPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0xB82B280)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetStylishRatingProgress_TypeDefinitionIndex = 55437;
+	inline static constexpr unsigned int LDGetStylishRatingProgress_TypeDefinitionIndex = 68946;
 
 	class LDGetStylishRatingProgress : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Single>
 	{

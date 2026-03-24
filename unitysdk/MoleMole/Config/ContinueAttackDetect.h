@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Config/ConfigEntityAttackPattern.h"
-#include "unitysdk/MoleMole/LayerMaskStatic_Enum_3_BA21CC391326FDD3.h"
+#include "unitysdk/MoleMole/LayerMaskStatic_Enum_3_C3BBA2B066959E6E.h"
 #include "unitysdk/Struct_2_B76C9DBDAECC6C19.h"
 #include "unitysdk/UnityEngine/LayerMask.h"
 #include "unitysdk/UnityEngine/Quaternion.h"
@@ -19,34 +19,34 @@ namespace System { template <typename T1, typename T2, typename T3, typename T4,
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONTINUEATTACKDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0x14194620)
-#define MOLEMOLE_CONFIG_CONTINUEATTACKDETECT_NEEDHIDECONTINUEATTACKFIELDS_OFFSET UNITYSDK_OFFSET(0x14194680)
-#define MOLEMOLE_CONFIG_CONTINUEATTACKDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0x14194700)
+#define MOLEMOLE_CONFIG_CONTINUEATTACKDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0xBB01D20)
+#define MOLEMOLE_CONFIG_CONTINUEATTACKDETECT_NEEDHIDECONTINUEATTACKFIELDS_OFFSET UNITYSDK_OFFSET(0xBB01D80)
+#define MOLEMOLE_CONFIG_CONTINUEATTACKDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0xBB01E00)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ContinueAttackDetect_TypeDefinitionIndex = 42029;
+	inline static constexpr unsigned int ContinueAttackDetect_TypeDefinitionIndex = 61740;
 
 	class ContinueAttackDetect : public ::MoleMole::Config::ConfigEntityAttackPattern
 	{
 	public:
-		::System::Func_15<::Class_1_1CDA382D823F8E80*, ::MoleMole::Config::ConfigEntityAttackPattern*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Collections::Generic::List_1<::Class_1_560B23058CA4940C*>*, ::System::UInt32, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Boolean>* patternMethodWithGroupIDAndPosRot; // 0x80
-		::System::Func_13<::Class_1_1CDA382D823F8E80*, ::MoleMole::Config::ConfigEntityAttackPattern*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Collections::Generic::List_1<::Class_1_560B23058CA4940C*>*, ::System::UInt32, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Boolean>* patternMethodWithGroupID; // 0x88
-		::MoleMole::Config::ConfigTimeDrivenAttackCollider* colliderCfg; // 0x90
-		::System::Collections::Generic::List_1<::MoleMole::Config::AttackPatternBindAnimatorState*>* bindAnimList; // 0x98
-		::System::Single aliveDuration; // 0xA0
-		::System::Boolean useAliveMaxRecoverTimes; // 0xA4
-		::System::Boolean IsHideContinueAttackFields; // 0xA5
-		::System::Boolean isClearHitCntExitPattern; // 0xA6
-		::System::Boolean isFollowAttacker; // 0xA7
-		::System::Single hitInterval; // 0xA8
-		::System::Int32 aliveMaxHitCnt; // 0xAC
-		::System::Boolean canSkipCurFixedUpdate; // 0xB0
-		::System::Boolean manualConfigurationPatternListData; // 0xB1
-		::System::Boolean KeepWhenHit; // 0xB2
-		::System::Boolean isReenterForceHitInterval; // 0xB3
+		::MoleMole::Config::ConfigTimeDrivenAttackCollider* colliderCfg; // 0x80
+		::System::Func_13<::Class_1_1CDA382D823F8E80*, ::MoleMole::Config::ConfigEntityAttackPattern*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Collections::Generic::List_1<::Class_1_560B23058CA4940C*>*, ::System::UInt32, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Boolean>* patternMethodWithGroupID; // 0x88
+		::System::Collections::Generic::List_1<::MoleMole::Config::AttackPatternBindAnimatorState*>* bindAnimList; // 0x90
+		::System::Func_15<::Class_1_1CDA382D823F8E80*, ::MoleMole::Config::ConfigEntityAttackPattern*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Collections::Generic::List_1<::Class_1_560B23058CA4940C*>*, ::System::UInt32, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Boolean>* patternMethodWithGroupIDAndPosRot; // 0x98
+		::System::Single hitInterval; // 0xA0
+		::System::Single unitMaxHitCnt; // 0xA4
+		::System::Int32 aliveMaxHitCnt; // 0xA8
+		::System::Single aliveDuration; // 0xAC
+		::System::Boolean IsHideContinueAttackFields; // 0xB0
+		::System::Boolean isReenterForceHitInterval; // 0xB1
+		::System::Boolean useAliveMaxRecoverTimes; // 0xB2
+		::System::Boolean isClearHitCntExitPattern; // 0xB3
 		::System::Int32 aliveMaxRecoverTimes; // 0xB4
-		::System::Single unitMaxHitCnt; // 0xB8
+		::System::Boolean manualConfigurationPatternListData; // 0xB8
+		::System::Boolean isFollowAttacker; // 0xB9
+		::System::Boolean KeepWhenHit; // 0xBA
+		::System::Boolean canSkipCurFixedUpdate; // 0xBB
 
 		::System::Void _ctor()
 		{

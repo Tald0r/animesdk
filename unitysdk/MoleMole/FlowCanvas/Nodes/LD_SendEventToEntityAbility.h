@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_5D65F42F0EEB3310.h"
+#include "unitysdk/Enum_3_E0707159A4819BEE.h"
 #include "unitysdk/FlowCanvas/Flow.h"
 #include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
 #include "unitysdk/MoleMole/EntityHandle.h"
@@ -9,25 +9,25 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOENTITYABILITY_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xF1B0EA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOENTITYABILITY__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B1070)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOENTITYABILITY__REGISTERPORTS_B__8_0_OFFSET UNITYSDK_OFFSET(0xF1B1090)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOENTITYABILITY_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB98AD40)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOENTITYABILITY__CTOR_OFFSET UNITYSDK_OFFSET(0xB98AF10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOENTITYABILITY__REGISTERPORTS_B__8_0_OFFSET UNITYSDK_OFFSET(0xB98AF30)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_SendEventToEntityAbility_TypeDefinitionIndex = 43370;
+	inline static constexpr unsigned int LD_SendEventToEntityAbility_TypeDefinitionIndex = 45378;
 
 	class LD_SendEventToEntityAbility : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::ValueInput_1<::System::Int32>* _valueInt; // 0xA8
 		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* _entity; // 0xB0
-		::FlowCanvas::FlowOutput* _out; // 0xB8
-		::FlowCanvas::ValueInput_1<::System::Single>* _valueFloat; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* _valueBool; // 0xC8
-		::FlowCanvas::ValueInput_1<::System::String*>* _valueString; // 0xD0
-		::FlowCanvas::ValueInput_1<::Enum_3_5D65F42F0EEB3310>* _valueType; // 0xD8
-		::FlowCanvas::ValueInput_1<::System::String*>* _eventName; // 0xE0
+		::FlowCanvas::ValueInput_1<::System::String*>* _eventName; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* _valueBool; // 0xC0
+		::FlowCanvas::ValueInput_1<::Enum_3_E0707159A4819BEE>* _valueType; // 0xC8
+		::FlowCanvas::ValueInput_1<::System::Single>* _valueFloat; // 0xD0
+		::FlowCanvas::ValueInput_1<::System::String*>* _valueString; // 0xD8
+		::FlowCanvas::FlowOutput* _out; // 0xE0
 
 		::System::Void _ctor()
 		{

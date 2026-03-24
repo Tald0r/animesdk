@@ -6,11 +6,11 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIINLEVELROTATORCONTROLCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8A539B0)
+#define MOLEMOLE_UIINLEVELROTATORCONTROLCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8955040)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelRotatorControlContext_TypeDefinitionIndex = 72459;
+	inline static constexpr unsigned int UIInLevelRotatorControlContext_TypeDefinitionIndex = 47127;
 
 	class UIInLevelRotatorControlContext : public ::MoleMole::UIControllerContextBase
 	{

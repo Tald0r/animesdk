@@ -5,11 +5,11 @@
 namespace MoleMole { class UIComicPageController___c__DisplayClass340_0; }
 namespace System { class String; }
 
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS340_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB2BEA60)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS340_1__CTOR_OFFSET UNITYSDK_OFFSET(0xACF8230)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicPageController___c__DisplayClass340_1_TypeDefinitionIndex = 45630;
+	inline static constexpr unsigned int UIComicPageController___c__DisplayClass340_1_TypeDefinitionIndex = 62525;
 
 	class UIComicPageController___c__DisplayClass340_1 : public ::System::Object
 	{

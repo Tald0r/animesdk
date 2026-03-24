@@ -8,14 +8,14 @@ namespace System { class String; }
 namespace System { template <typename T> class Predicate_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18446DD0)
-#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18446DE0)
-#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__SHOW_B__1_OFFSET UNITYSDK_OFFSET(0x18446F50)
-#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__SHOW_B__2_OFFSET UNITYSDK_OFFSET(0x18446FA0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18936EE0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18936EF0)
+#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__SHOW_B__1_OFFSET UNITYSDK_OFFSET(0x18937060)
+#define MIHOYO_SDK_CONSOLE_CONSOLEACCOUNTINFODIALOG___C__DISPLAYCLASS27_0__SHOW_B__2_OFFSET UNITYSDK_OFFSET(0x189370B0)
 
 namespace MiHoYo::SDK::Console
 {
-	inline static constexpr unsigned int ConsoleAccountInfoDialog___c__DisplayClass27_0_TypeDefinitionIndex = 18633;
+	inline static constexpr unsigned int ConsoleAccountInfoDialog___c__DisplayClass27_0_TypeDefinitionIndex = 19232;
 
 	class ConsoleAccountInfoDialog___c__DisplayClass27_0 : public ::System::Object
 	{
@@ -24,8 +24,8 @@ namespace MiHoYo::SDK::Console
 		::System::String* consoleAccountName; // 0x18
 		::System::Predicate_1<::MiHoYo::SDK::Console::UserGameServerInfo*>* __9__1; // 0x20
 		::System::String* hoyoAccountName; // 0x28
-		::System::Collections::Generic::List_1<::MiHoYo::SDK::Console::UserGameServerInfo*>* userGameInfoList; // 0x30
-		::System::String* currentZone; // 0x38
+		::System::String* currentZone; // 0x30
+		::System::Collections::Generic::List_1<::MiHoYo::SDK::Console::UserGameServerInfo*>* userGameInfoList; // 0x38
 
 		::System::Void _ctor()
 		{

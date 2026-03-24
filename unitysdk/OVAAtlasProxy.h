@@ -11,54 +11,54 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class MeshRenderer; }
 
-#define OVAATLASPROXY_DISABLEDEBUGMODE_OFFSET UNITYSDK_OFFSET(0x187ABC10)
-#define OVAATLASPROXY_ENABLEDEBUGMODE_OFFSET UNITYSDK_OFFSET(0x187AB7B0)
-#define OVAATLASPROXY_GENERATE3DMESH_OFFSET UNITYSDK_OFFSET(0x187ADE60)
-#define OVAATLASPROXY_GENERATEMESH_OFFSET UNITYSDK_OFFSET(0x187AC080)
-#define OVAATLASPROXY_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x187AE2F0)
-#define OVAATLASPROXY_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x187AE5C0)
-#define OVAATLASPROXY_REFRESHPROPERTY_OFFSET UNITYSDK_OFFSET(0x187ABE00)
-#define OVAATLASPROXY_START_OFFSET UNITYSDK_OFFSET(0x187AE520)
-#define OVAATLASPROXY_UPDATE_OFFSET UNITYSDK_OFFSET(0x187AE570)
-#define OVAATLASPROXY__CCTOR_OFFSET UNITYSDK_OFFSET(0x187AE660)
-#define OVAATLASPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x187AE610)
+#define OVAATLASPROXY_DISABLEDEBUGMODE_OFFSET UNITYSDK_OFFSET(0x18D0AAD0)
+#define OVAATLASPROXY_ENABLEDEBUGMODE_OFFSET UNITYSDK_OFFSET(0x18D0A670)
+#define OVAATLASPROXY_GENERATE3DMESH_OFFSET UNITYSDK_OFFSET(0x18D0CD20)
+#define OVAATLASPROXY_GENERATEMESH_OFFSET UNITYSDK_OFFSET(0x18D0AF40)
+#define OVAATLASPROXY_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x18D0D1B0)
+#define OVAATLASPROXY_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x18D0D480)
+#define OVAATLASPROXY_REFRESHPROPERTY_OFFSET UNITYSDK_OFFSET(0x18D0ACC0)
+#define OVAATLASPROXY_START_OFFSET UNITYSDK_OFFSET(0x18D0D3E0)
+#define OVAATLASPROXY_UPDATE_OFFSET UNITYSDK_OFFSET(0x18D0D430)
+#define OVAATLASPROXY__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D0D520)
+#define OVAATLASPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x18D0D4D0)
 
-inline static constexpr unsigned int OVAAtlasProxy_TypeDefinitionIndex = 28017;
+inline static constexpr unsigned int OVAAtlasProxy_TypeDefinitionIndex = 28957;
 
 class OVAAtlasProxy : public ::UnityEngine::MonoBehaviour
 {
 public:
-	static ::System::Int32* StaticGet__EmissionTex()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6CF0);
-	}
-	static ::System::Int32* StaticGet__FrameCount()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6CF4);
-	}
 	static ::System::Int32* StaticGet__MainTex()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6CF8);
-	}
-	static ::System::Int32* StaticGet__TextureSheetPrams()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6CFC);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x7440);
 	}
 	static ::System::Int32* StaticGet__BaseColor()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6D00);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x7444);
+	}
+	static ::System::Int32* StaticGet__TextureSheetPrams()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x7448);
+	}
+	static ::System::Int32* StaticGet__FrameCount()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x744C);
 	}
 	static ::System::Int32* StaticGet__EmissionColor()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6D04);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x7450);
 	}
 	static ::System::Int32* StaticGet__EmissionOn()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6D08);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x7454);
+	}
+	static ::System::Int32* StaticGet__EmissionTex()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x7458);
 	}
 	static ::System::Int32* StaticGet__EmissionPercent()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x6D0C);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OVAAtlasProxy_TypeDefinitionIndex)->GetStaticField(0x745C);
 	}
 	::System::Boolean IsEditorMode; // 0x18
 	::System::Collections::Generic::List_1<::OVAAtlasProxy_AtlasConfig*>* m_AtlasConfigs; // 0x20

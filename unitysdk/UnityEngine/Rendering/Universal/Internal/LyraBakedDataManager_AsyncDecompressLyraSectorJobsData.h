@@ -6,12 +6,12 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Threading::Tasks { class Task; }
 namespace UnityEngine::Rendering::Universal::Internal { class LyraBakedDataManager_AsyncDecompressLyraSectorSingleJobData; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_ASYNCDECOMPRESSLYRASECTORJOBSDATA_DECOMPRESSASYNC_OFFSET UNITYSDK_OFFSET(0x1795BF40)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_ASYNCDECOMPRESSLYRASECTORJOBSDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1795BE70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_ASYNCDECOMPRESSLYRASECTORJOBSDATA_DECOMPRESSASYNC_OFFSET UNITYSDK_OFFSET(0x17783C60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_ASYNCDECOMPRESSLYRASECTORJOBSDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17783B90)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int LyraBakedDataManager_AsyncDecompressLyraSectorJobsData_TypeDefinitionIndex = 28982;
+	inline static constexpr unsigned int LyraBakedDataManager_AsyncDecompressLyraSectorJobsData_TypeDefinitionIndex = 29933;
 
 	class LyraBakedDataManager_AsyncDecompressLyraSectorJobsData : public ::System::Object
 	{

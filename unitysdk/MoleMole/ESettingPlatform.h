@@ -3,17 +3,17 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ESettingPlatform_TypeDefinitionIndex = 72982;
+	inline static constexpr unsigned int ESettingPlatform_TypeDefinitionIndex = 62018;
 
 	enum class ESettingPlatform : ::System::Int32
 	{
-		PC = 1,
-		Android = 3,
-		IOS = 2,
-		Kid = 5,
-		Demara = 6,
-		PS5 = 4,
-		ALL = 999,
 		None = 0,
+		Android = 3,
+		Demara = 6,
+		Kid = 5,
+		ALL = 999,
+		PC = 1,
+		IOS = 2,
+		PS5 = 4,
 	};
 }

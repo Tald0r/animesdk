@@ -5,18 +5,18 @@
 class Class_1_B87FC40E0A5BBAE4;
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UISOULHOUNDSIIIINLEVELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__CREATEUIMULTIOBJECTEFFECT_B__0_OFFSET UNITYSDK_OFFSET(0x73C4D20)
-#define MOLEMOLE_UISOULHOUNDSIIIINLEVELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__CTOR_OFFSET UNITYSDK_OFFSET(0x73C4D10)
+#define MOLEMOLE_UISOULHOUNDSIIIINLEVELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__CREATEUIMULTIOBJECTEFFECT_B__0_OFFSET UNITYSDK_OFFSET(0x7BBA7B0)
+#define MOLEMOLE_UISOULHOUNDSIIIINLEVELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7BBA7A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISoulHoundsIIIInLevelChildWindowController___c__DisplayClass90_0_TypeDefinitionIndex = 45606;
+	inline static constexpr unsigned int UISoulHoundsIIIInLevelChildWindowController___c__DisplayClass90_0_TypeDefinitionIndex = 38009;
 
 	class UISoulHoundsIIIInLevelChildWindowController___c__DisplayClass90_0 : public ::System::Object
 	{
 	public:
-		::Class_1_B87FC40E0A5BBAE4* hpPropEffect; // 0x10
-		::System::Action_1<::Class_1_B87FC40E0A5BBAE4*>* finishPlayCallBack; // 0x18
+		::System::Action_1<::Class_1_B87FC40E0A5BBAE4*>* finishPlayCallBack; // 0x10
+		::Class_1_B87FC40E0A5BBAE4* hpPropEffect; // 0x18
 
 		::System::Void _ctor()
 		{

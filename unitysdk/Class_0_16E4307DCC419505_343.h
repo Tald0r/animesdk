@@ -1,11 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class Exception; }
-namespace System { class String; }
-namespace System { template <typename T1, typename T2> class Action_2; }
+class Class_1_318CB771FDB11E9B;
+class Class_1_9545B07472DE9BFD;
+class Class_1_9545B07472DE9BFD_Class_3_58CFE2A124E91724;
+class Class_1_9545B07472DE9BFD_Class_3_EC22137A5AE21E1C;
+class Class_1_9545B07472DE9BFD_Class_3_EC22137A5AE21E1C_1;
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_343_TypeDefinitionIndex = 67923;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_343_TypeDefinitionIndex = 57286;
 
 class Class_0_16E4307DCC419505_343
 {

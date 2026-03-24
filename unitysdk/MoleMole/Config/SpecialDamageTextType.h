@@ -3,31 +3,31 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SpecialDamageTextType_TypeDefinitionIndex = 56998;
+	inline static constexpr unsigned int SpecialDamageTextType_TypeDefinitionIndex = 69485;
 
 	enum class SpecialDamageTextType : ::System::Int32
 	{
-		Thunderbolt = 2,
-		Strike = 5,
-		None = 0,
-		StrikeShunguang = 19,
-		PartDestroy = 11,
-		LifeConversion = 21,
-		EtherInfectionBreak = 17,
-		Ether = 8,
-		Deflagrate = 1,
-		TotalizeDamage = 14,
-		Hiisazu = 4,
-		Frostburn = 13,
-		Disorder = 12,
-		HyperCoAttack = 18,
 		Icemist = 3,
-		ExtraElementAbnormal = 15,
-		PerfectCounter = 20,
-		Fire = 9,
-		Elec = 10,
-		EtherYixuan = 16,
+		Disorder = 12,
+		EtherInfectionBreak = 17,
+		PartDestroy = 11,
+		Deflagrate = 1,
+		Strike = 5,
+		Frostburn = 13,
+		Hiisazu = 4,
 		Froze = 6,
+		Fire = 9,
+		HyperCoAttack = 18,
+		LifeConversion = 21,
 		Icebreak = 7,
+		Elec = 10,
+		Ether = 8,
+		None = 0,
+		EtherYixuan = 16,
+		Thunderbolt = 2,
+		PerfectCounter = 20,
+		TotalizeDamage = 14,
+		StrikeShunguang = 19,
+		ExtraElementAbnormal = 15,
 	};
 }

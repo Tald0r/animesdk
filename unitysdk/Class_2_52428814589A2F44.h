@@ -8,19 +8,19 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_52428814589A2F44_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x999CE00)
-#define CLASS_2_52428814589A2F44_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x999CCE0)
-#define CLASS_2_52428814589A2F44__CTOR_OFFSET UNITYSDK_OFFSET(0x999CDF0)
+#define CLASS_2_52428814589A2F44_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB55A160)
+#define CLASS_2_52428814589A2F44_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0xB55A040)
+#define CLASS_2_52428814589A2F44__CTOR_OFFSET UNITYSDK_OFFSET(0xB55A150)
 
-inline static constexpr unsigned int Class_2_52428814589A2F44_TypeDefinitionIndex = 42963;
+inline static constexpr unsigned int Class_2_52428814589A2F44_TypeDefinitionIndex = 54051;
 
 class Class_2_52428814589A2F44 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::MonoInputKey* Field_2_3; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x20
+	::MoleMole::MonoInputKey* Field_2_2; // 0x18
+	::MoleMole::MonoInputKey* Field_2_3; // 0x20
 	::UnityEngine::Transform* Field_2_0; // 0x28
-	::MoleMole::MonoInputKey* Field_2_2; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x30
 
 	::System::Void _ctor()
 	{

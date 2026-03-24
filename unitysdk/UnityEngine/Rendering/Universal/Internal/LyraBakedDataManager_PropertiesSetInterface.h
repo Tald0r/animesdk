@@ -7,7 +7,7 @@ namespace UnityEngine { class Texture; }
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int LyraBakedDataManager_PropertiesSetInterface_TypeDefinitionIndex = 28996;
+	inline static constexpr unsigned int LyraBakedDataManager_PropertiesSetInterface_TypeDefinitionIndex = 29947;
 
 	class LyraBakedDataManager_PropertiesSetInterface
 	{

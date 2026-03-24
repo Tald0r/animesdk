@@ -3,7 +3,7 @@
 
 namespace DG::Tweening::Plugins::Core
 {
-	inline static constexpr unsigned int ITweenPlugin_TypeDefinitionIndex = 24139;
+	inline static constexpr unsigned int ITweenPlugin_TypeDefinitionIndex = 24963;
 
 	class ITweenPlugin
 	{

@@ -9,23 +9,23 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_CLEAR_OFFSET UNITYSDK_OFFSET(0xA09CC20)
-#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_CREATESCROLLVIEWITEM_OFFSET UNITYSDK_OFFSET(0xA09C2C0)
-#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_FLUSHALLTEMPRECYCLEITEMTORECYCLE_OFFSET UNITYSDK_OFFSET(0xA09C9C0)
-#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_GETTEMPLATEDATA_OFFSET UNITYSDK_OFFSET(0xA09C650)
-#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR__CTOR_1_OFFSET UNITYSDK_OFFSET(0xA09C220)
-#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR__CTOR_OFFSET UNITYSDK_OFFSET(0xA09C190)
+#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_CLEAR_OFFSET UNITYSDK_OFFSET(0x97302D0)
+#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_CREATESCROLLVIEWITEM_OFFSET UNITYSDK_OFFSET(0x972F970)
+#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_FLUSHALLTEMPRECYCLEITEMTORECYCLE_OFFSET UNITYSDK_OFFSET(0x9730070)
+#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR_GETTEMPLATEDATA_OFFSET UNITYSDK_OFFSET(0x972FD00)
+#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR__CTOR_1_OFFSET UNITYSDK_OFFSET(0x972F8D0)
+#define MONOUITABLESCROLLV2_ITEMTEMPLATEMGR__CTOR_OFFSET UNITYSDK_OFFSET(0x972F840)
 
-inline static constexpr unsigned int MonoUITableScrollV2_ItemTemplateMgr_TypeDefinitionIndex = 43795;
+inline static constexpr unsigned int MonoUITableScrollV2_ItemTemplateMgr_TypeDefinitionIndex = 64400;
 
 class MonoUITableScrollV2_ItemTemplateMgr : public ::System::Object
 {
 public:
-	::System::Func_2<::System::Int32, ::System::Int32>* _getTemplateIndexFromData; // 0x10
-	::System::Func_2<::System::Int32, ::Struct_2_FC34C7AD15A42B48>* _getTemplateCacheKey; // 0x18
-	::System::Func_2<::System::Int32, ::MoleMole::ScrollViewItemWidgetController*>* _templateCreateFuncByIndex; // 0x20
-	::System::Collections::Generic::Dictionary_2<::Struct_2_FC34C7AD15A42B48, ::MonoUITableScrollV2_TemplateData*>* _templateDataDic; // 0x28
-	::System::Collections::Generic::List_1<::MonoUITableScrollV2_TemplateData*>* _templateDatas; // 0x30
+	::System::Collections::Generic::Dictionary_2<::Struct_2_FC34C7AD15A42B48, ::MonoUITableScrollV2_TemplateData*>* _templateDataDic; // 0x10
+	::System::Collections::Generic::List_1<::MonoUITableScrollV2_TemplateData*>* _templateDatas; // 0x18
+	::System::Func_2<::System::Int32, ::System::Int32>* _getTemplateIndexFromData; // 0x20
+	::System::Func_2<::System::Int32, ::Struct_2_FC34C7AD15A42B48>* _getTemplateCacheKey; // 0x28
+	::System::Func_2<::System::Int32, ::MoleMole::ScrollViewItemWidgetController*>* _templateCreateFuncByIndex; // 0x30
 
 	::System::Void _ctor(::System::Func_2<::System::Int32, ::System::Int32>* getTemplateIndexFromData, ::System::Collections::Generic::List_1<::MonoUITableScrollV2_TemplateData*>* templateDatas)
 	{

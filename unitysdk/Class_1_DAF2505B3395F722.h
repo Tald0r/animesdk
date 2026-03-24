@@ -8,32 +8,27 @@ class Class_1_8111D94208AF9330;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_DAF2505B3395F722_METHOD_1_00644FC785788876_OFFSET UNITYSDK_OFFSET(0x903C2F0)
-#define CLASS_1_DAF2505B3395F722_METHOD_1_38133A7E5DD02F6E_OFFSET UNITYSDK_OFFSET(0x903C8A0)
-#define CLASS_1_DAF2505B3395F722_METHOD_1_83F0F7F90884B24C_OFFSET UNITYSDK_OFFSET(0x903B930)
-#define CLASS_1_DAF2505B3395F722_METHOD_1_AA748774B3766540_OFFSET UNITYSDK_OFFSET(0x903BEE0)
-#define CLASS_1_DAF2505B3395F722_METHOD_1_AC11AD783BED449F_OFFSET UNITYSDK_OFFSET(0x903C4E0)
-#define CLASS_1_DAF2505B3395F722_METHOD_1_E6446EC3D62F3366_OFFSET UNITYSDK_OFFSET(0x903BC90)
-#define CLASS_1_DAF2505B3395F722_METHOD_1_F82A446DB5AFAA34_OFFSET UNITYSDK_OFFSET(0x903C3B0)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_00644FC785788876_OFFSET UNITYSDK_OFFSET(0x9A59EE0)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_38133A7E5DD02F6E_OFFSET UNITYSDK_OFFSET(0x9A59FA0)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_83F0F7F90884B24C_OFFSET UNITYSDK_OFFSET(0x9A59B80)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_AA748774B3766540_OFFSET UNITYSDK_OFFSET(0x9A5A550)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_AC11AD783BED449F_OFFSET UNITYSDK_OFFSET(0x9A5A960)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_E6446EC3D62F3366_OFFSET UNITYSDK_OFFSET(0x9A5A300)
+#define CLASS_1_DAF2505B3395F722_METHOD_1_F82A446DB5AFAA34_OFFSET UNITYSDK_OFFSET(0x9A59A50)
 
-inline static constexpr unsigned int Class_1_DAF2505B3395F722_TypeDefinitionIndex = 79093;
+inline static constexpr unsigned int Class_1_DAF2505B3395F722_TypeDefinitionIndex = 75971;
 
 class Class_1_DAF2505B3395F722 : public ::System::Object
 {
 public:
+	static ::System::UInt32 Method_1_F82A446DB5AFAA34()
+	{
+		return ((::System::UInt32(*)())((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_F82A446DB5AFAA34_OFFSET))();
+	}
+
 	static ::System::Void Method_1_83F0F7F90884B24C(::System::Collections::Generic::List_1<::System::Int32>* a1, ::System::Int32 a2, ::System::Int32 a3)
 	{
 		return ((::System::Void(*)(::System::Collections::Generic::List_1<::System::Int32>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_83F0F7F90884B24C_OFFSET))(a1, a2, a3);
-	}
-
-	static ::MoleMole::EntityHandle Method_1_E6446EC3D62F3366(::System::UInt32 a1, ::UnityEngine::Vector3 a2, ::System::Single a3)
-	{
-		return ((::MoleMole::EntityHandle(*)(::System::UInt32, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_E6446EC3D62F3366_OFFSET))(a1, a2, a3);
-	}
-
-	static ::MoleMole::EntityHandle Method_1_AA748774B3766540(::System::UInt32 a1, ::Class_1_8111D94208AF9330* a2, ::UnityEngine::Vector3 a3, ::System::Single a4)
-	{
-		return ((::MoleMole::EntityHandle(*)(::System::UInt32, ::Class_1_8111D94208AF9330*, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_AA748774B3766540_OFFSET))(a1, a2, a3, a4);
 	}
 
 	static ::System::Int32 Method_1_00644FC785788876(::System::UInt32 a1)
@@ -41,9 +36,14 @@ public:
 		return ((::System::Int32(*)(::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_00644FC785788876_OFFSET))(a1);
 	}
 
-	static ::System::UInt32 Method_1_F82A446DB5AFAA34()
+	static ::System::Void Method_1_38133A7E5DD02F6E(::System::Collections::Generic::List_1<::System::UInt32>* a1, ::System::Int32 a2, ::System::Int32 a3)
 	{
-		return ((::System::UInt32(*)())((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_F82A446DB5AFAA34_OFFSET))();
+		return ((::System::Void(*)(::System::Collections::Generic::List_1<::System::UInt32>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_38133A7E5DD02F6E_OFFSET))(a1, a2, a3);
+	}
+
+	static ::MoleMole::EntityHandle Method_1_E6446EC3D62F3366(::System::UInt32 a1, ::UnityEngine::Vector3 a2, ::System::Single a3)
+	{
+		return ((::MoleMole::EntityHandle(*)(::System::UInt32, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_E6446EC3D62F3366_OFFSET))(a1, a2, a3);
 	}
 
 	static ::MoleMole::EntityHandle Method_1_AC11AD783BED449F(::System::UInt32 a1, ::System::String* a2)
@@ -51,8 +51,8 @@ public:
 		return ((::MoleMole::EntityHandle(*)(::System::UInt32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_AC11AD783BED449F_OFFSET))(a1, a2);
 	}
 
-	static ::System::Void Method_1_38133A7E5DD02F6E(::System::Collections::Generic::List_1<::System::UInt32>* a1, ::System::Int32 a2, ::System::Int32 a3)
+	static ::MoleMole::EntityHandle Method_1_AA748774B3766540(::System::UInt32 a1, ::Class_1_8111D94208AF9330* a2, ::UnityEngine::Vector3 a3, ::System::Single a4)
 	{
-		return ((::System::Void(*)(::System::Collections::Generic::List_1<::System::UInt32>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_38133A7E5DD02F6E_OFFSET))(a1, a2, a3);
+		return ((::MoleMole::EntityHandle(*)(::System::UInt32, ::Class_1_8111D94208AF9330*, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_DAF2505B3395F722_METHOD_1_AA748774B3766540_OFFSET))(a1, a2, a3, a4);
 	}
 };

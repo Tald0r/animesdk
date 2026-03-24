@@ -7,11 +7,11 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Material; }
 
-#define TWOPOINTSLINKGENERATOR_SETUPMATERIALS_OFFSET UNITYSDK_OFFSET(0x1388DEB0)
-#define TWOPOINTSLINKGENERATOR_UPDATE_OFFSET UNITYSDK_OFFSET(0x1388E0D0)
-#define TWOPOINTSLINKGENERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1388E460)
+#define TWOPOINTSLINKGENERATOR_SETUPMATERIALS_OFFSET UNITYSDK_OFFSET(0x1919F940)
+#define TWOPOINTSLINKGENERATOR_UPDATE_OFFSET UNITYSDK_OFFSET(0x1919FB60)
+#define TWOPOINTSLINKGENERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1919FEF0)
 
-inline static constexpr unsigned int TwoPointsLinkGenerator_TypeDefinitionIndex = 66229;
+inline static constexpr unsigned int TwoPointsLinkGenerator_TypeDefinitionIndex = 78823;
 
 class TwoPointsLinkGenerator : public ::UnityEngine::MonoBehaviour
 {

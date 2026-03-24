@@ -5,14 +5,10 @@
 #include "unitysdk/UnityEngine/Vector4.h"
 
 namespace UnityEngine { class Texture; }
-namespace UnityEngine::NAPRenderPipeline0 { class InterpolatedVolumeData; }
-
-#define UNITYENGINE_NAPRENDERPIPELINE0_CHARACTERCOLORGRADINGPARAMS_ISAMBIENTACTIVE_OFFSET UNITYSDK_OFFSET(0x8B4830)
-#define UNITYENGINE_NAPRENDERPIPELINE0_CHARACTERCOLORGRADINGPARAMS_READVALUE_OFFSET UNITYSDK_OFFSET(0x8B4840)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int CharacterColorGradingParams_TypeDefinitionIndex = 5954;
+	inline static constexpr unsigned int CharacterColorGradingParams_TypeDefinitionIndex = 5957;
 
 	struct alignas(8) CharacterColorGradingParams
 	{
@@ -53,15 +49,6 @@ namespace UnityEngine::NAPRenderPipeline0
 		::System::Single toeStrength; // 0x190
 		::System::Boolean useShadowTintAsOutline; // 0x194
 		::System::Boolean enable; // 0x195
-
-		::System::Boolean IsAmbientActive()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_CHARACTERCOLORGRADINGPARAMS_ISAMBIENTACTIVE_OFFSET))(this);
-		}
-
-		::System::Void ReadValue(::UnityEngine::NAPRenderPipeline0::InterpolatedVolumeData*& ivd)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::InterpolatedVolumeData*&))((::PBYTE)hIl2Cpp + UNITYENGINE_NAPRENDERPIPELINE0_CHARACTERCOLORGRADINGPARAMS_READVALUE_OFFSET))(this, ivd);
-		}
+		::System::Boolean revertSaturation; // 0x196
 	};
 }

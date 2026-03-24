@@ -4,11 +4,11 @@
 #include "unitysdk/Unity/Collections/NativeList_1.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTLODMANAGER_FLUSHDYNAMICLIGHTTRANSFORMJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x849350)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTLODMANAGER_FLUSHDYNAMICLIGHTTRANSFORMJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x874EC0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int LightLodManager_FlushDynamicLightTransformJob_TypeDefinitionIndex = 28559;
+	inline static constexpr unsigned int LightLodManager_FlushDynamicLightTransformJob_TypeDefinitionIndex = 29502;
 
 	struct alignas(8) LightLodManager_FlushDynamicLightTransformJob
 	{

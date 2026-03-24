@@ -1,12 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_4692A44270FF84F6.h"
-#include "unitysdk/MoleMole/UI/FlowerShop/ESlotType.h"
+#include "unitysdk/MoleMole/Config/BaseProperty.h"
 
-template <typename T> class Class_0_16E4307DCC419505_102;
-template <typename T> class Class_0_16E4307DCC419505_103;
+namespace System { class String; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_570_TypeDefinitionIndex = 71346;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_570_TypeDefinitionIndex = 72932;
 
 class Class_0_16E4307DCC419505_570
 {

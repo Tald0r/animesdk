@@ -12,8 +12,8 @@ namespace System::Net::WebSockets { class ManagedWebSocket; }
 namespace System::Net::WebSockets { class WebSocketReceiveResult; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define SYSTEM_NET_WEBSOCKETS_MANAGEDWEBSOCKET__HANDLERECEIVEDCLOSEASYNC_D__61_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x868F90)
-#define SYSTEM_NET_WEBSOCKETS_MANAGEDWEBSOCKET__HANDLERECEIVEDCLOSEASYNC_D__61_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x324FD0)
+#define SYSTEM_NET_WEBSOCKETS_MANAGEDWEBSOCKET__HANDLERECEIVEDCLOSEASYNC_D__61_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x897100)
+#define SYSTEM_NET_WEBSOCKETS_MANAGEDWEBSOCKET__HANDLERECEIVEDCLOSEASYNC_D__61_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2EA620)
 
 namespace System::Net::WebSockets
 {
@@ -21,14 +21,14 @@ namespace System::Net::WebSockets
 
 	struct alignas(8) ManagedWebSocket__HandleReceivedCloseAsync_d__61
 	{
-		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Net::WebSockets::WebSocketReceiveResult*> __t__builder; // 0x10
-		::System::String* _closeStatusDescription_5__2; // 0x28
-		::System::Threading::CancellationToken cancellationToken; // 0x30
-		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter __u__1; // 0x38
-		::System::Net::WebSockets::ManagedWebSocket* __4__this; // 0x48
-		::System::Net::WebSockets::WebSocketCloseStatus _closeStatus_5__1; // 0x50
-		::System::Int32 __1__state; // 0x54
-		::System::Net::WebSockets::ManagedWebSocket_MessageHeader header; // 0x58
+		::System::String* _closeStatusDescription_5__2; // 0x10
+		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Net::WebSockets::WebSocketReceiveResult*> __t__builder; // 0x18
+		::System::Net::WebSockets::ManagedWebSocket* __4__this; // 0x30
+		::System::Threading::CancellationToken cancellationToken; // 0x38
+		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter __u__1; // 0x40
+		::System::Net::WebSockets::ManagedWebSocket_MessageHeader header; // 0x50
+		::System::Net::WebSockets::WebSocketCloseStatus _closeStatus_5__1; // 0x60
+		::System::Int32 __1__state; // 0x64
 
 		::System::Void MoveNext()
 		{

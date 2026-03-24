@@ -5,7 +5,7 @@
 namespace System { class EventArgs; }
 namespace System { class EventHandler; }
 
-inline static constexpr unsigned int Class_2_6F45F4A853B79A6D_TypeDefinitionIndex = 24200;
+inline static constexpr unsigned int Class_2_6F45F4A853B79A6D_TypeDefinitionIndex = 25025;
 
 template <typename TVertex, typename TTag>
 class Class_2_6F45F4A853B79A6D : public ::Class_1_1D2D64B0F11327DE<TVertex>

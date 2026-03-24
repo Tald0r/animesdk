@@ -9,22 +9,22 @@ namespace MoleMole { class UIPlayerAccessoryPageController___c__DisplayClass152_
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Renderer; }
 
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWEFFECT_D__152_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3932A0)
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWEFFECT_D__152_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWEFFECT_D__152_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A9F50)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWEFFECT_D__152_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryPageController__ShowEffect_d__152_TypeDefinitionIndex = 77116;
+	inline static constexpr unsigned int UIPlayerAccessoryPageController__ShowEffect_d__152_TypeDefinitionIndex = 39887;
 
 	struct alignas(8) UIPlayerAccessoryPageController__ShowEffect_d__152
 	{
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
-		::MoleMole::UIPlayerAccessoryPageController___c__DisplayClass152_0* __8__1; // 0x20
-		::MoleMole::UIPlayerAccessoryPageController* __4__this; // 0x28
-		::UnityEngine::Renderer* _renderer_5__2; // 0x30
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x38
-		::System::Int32 cfgID; // 0x40
-		::System::Int32 __1__state; // 0x44
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x20
+		::UnityEngine::Renderer* _renderer_5__2; // 0x28
+		::MoleMole::UIPlayerAccessoryPageController* __4__this; // 0x30
+		::MoleMole::UIPlayerAccessoryPageController___c__DisplayClass152_0* __8__1; // 0x38
+		::System::Int32 __1__state; // 0x40
+		::System::Int32 cfgID; // 0x44
 
 		::System::Void MoveNext()
 		{

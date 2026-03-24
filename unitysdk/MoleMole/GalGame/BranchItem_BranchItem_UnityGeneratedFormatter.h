@@ -8,22 +8,22 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xA5EF460)
-#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xA5EF470)
-#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xA5EF730)
-#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA5EF940)
-#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xA5EF900)
+#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xA7D93A0)
+#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xA7D93B0)
+#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xA7D9670)
+#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA7D9880)
+#define MOLEMOLE_GALGAME_BRANCHITEM_BRANCHITEM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xA7D9840)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int BranchItem_BranchItem_UnityGeneratedFormatter_TypeDefinitionIndex = 41781;
+	inline static constexpr unsigned int BranchItem_BranchItem_UnityGeneratedFormatter_TypeDefinitionIndex = 72392;
 
 	class BranchItem_BranchItem_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::BranchItem*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(BranchItem_BranchItem_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38720);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(BranchItem_BranchItem_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B330);
 		}
 
 		::System::Void _ctor()

@@ -5,18 +5,18 @@
 class Class_1_D4F8C41AAD377B89;
 class Class_2_1556BC22B0BEF6B6;
 
-#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS55_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC0B170)
-#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS55_0__SORTMONSTERCARD_G__SORTEDFUNC_0_OFFSET UNITYSDK_OFFSET(0xAC0B180)
+#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS55_0__CTOR_OFFSET UNITYSDK_OFFSET(0x897EFB0)
+#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS55_0__SORTMONSTERCARD_G__SORTEDFUNC_0_OFFSET UNITYSDK_OFFSET(0x897EFC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterCardSelectionPopWindowController___c__DisplayClass55_0_TypeDefinitionIndex = 73003;
+	inline static constexpr unsigned int UIMonsterCardSelectionPopWindowController___c__DisplayClass55_0_TypeDefinitionIndex = 44371;
 
 	class UIMonsterCardSelectionPopWindowController___c__DisplayClass55_0 : public ::System::Object
 	{
 	public:
-		::Class_1_D4F8C41AAD377B89* build; // 0x10
-		::Class_2_1556BC22B0BEF6B6* cardModel; // 0x18
+		::Class_2_1556BC22B0BEF6B6* cardModel; // 0x10
+		::Class_1_D4F8C41AAD377B89* build; // 0x18
 
 		::System::Void _ctor()
 		{

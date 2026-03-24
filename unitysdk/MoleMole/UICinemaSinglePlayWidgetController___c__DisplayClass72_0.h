@@ -4,37 +4,37 @@
 #include "unitysdk/MoleMole/CinemaSingleBeatMapConfig_BeatMap_BeatItem.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_236;
+class Class_0_16E4307DCC419505_153;
 class Class_2_7341BF3E408F4DA8_Class_2_5F3C14FED1CE4C5F;
 namespace MoleMole { class UICinemaSinglePlayWidgetController; }
 namespace System { class Action; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD0439E0)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__0_OFFSET UNITYSDK_OFFSET(0xD0439F0)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__1_OFFSET UNITYSDK_OFFSET(0xD043C70)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__2_OFFSET UNITYSDK_OFFSET(0xD043D70)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__3_OFFSET UNITYSDK_OFFSET(0xD043BF0)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__4_OFFSET UNITYSDK_OFFSET(0xD043D20)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__5_OFFSET UNITYSDK_OFFSET(0xD044130)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDDD69D0)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__0_OFFSET UNITYSDK_OFFSET(0xDDD69E0)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__1_OFFSET UNITYSDK_OFFSET(0xDDD6C70)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__2_OFFSET UNITYSDK_OFFSET(0xDDD6D70)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__3_OFFSET UNITYSDK_OFFSET(0xDDD6BF0)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__4_OFFSET UNITYSDK_OFFSET(0xDDD6D20)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS72_0__SHOWNORMALBUBBLE_B__5_OFFSET UNITYSDK_OFFSET(0xDDD7140)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass72_0_TypeDefinitionIndex = 64975;
+	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass72_0_TypeDefinitionIndex = 38055;
 
 	class UICinemaSinglePlayWidgetController___c__DisplayClass72_0 : public ::System::Object
 	{
 	public:
-		::System::Action* __9__4; // 0x10
-		::Class_0_16E4307DCC419505_236* bubbleWidget; // 0x18
-		::MoleMole::UICinemaSinglePlayWidgetController* __4__this; // 0x20
-		::System::Func_1<::Foundation::Tuple_2<::System::Int32, ::System::Single>>* onClick; // 0x28
-		::System::Action* __9__5; // 0x30
+		::System::Func_1<::Foundation::Tuple_2<::System::Int32, ::System::Single>>* onClick; // 0x10
+		::Class_0_16E4307DCC419505_153* bubbleWidget; // 0x18
+		::System::Action* __9__5; // 0x20
+		::MoleMole::UICinemaSinglePlayWidgetController* __4__this; // 0x28
+		::System::Action* __9__3; // 0x30
 		::Class_2_7341BF3E408F4DA8_Class_2_5F3C14FED1CE4C5F* locationView; // 0x38
-		::System::Action* __9__3; // 0x40
-		::System::Int32 bubbleLocation; // 0x48
-		::MoleMole::CinemaSingleBeatMapConfig_BeatMap_BeatItem item; // 0x4C
-		::System::Boolean isRightSide; // 0x5C
+		::System::Action* __9__4; // 0x40
+		::System::Boolean isRightSide; // 0x48
+		::System::Int32 bubbleLocation; // 0x4C
+		::MoleMole::CinemaSingleBeatMapConfig_BeatMap_BeatItem item; // 0x50
 
 		::System::Void _ctor()
 		{

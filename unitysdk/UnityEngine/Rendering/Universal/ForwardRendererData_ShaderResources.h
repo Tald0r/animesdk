@@ -7,11 +7,11 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine { class Shader; }
 namespace UnityEngine::Experimental::Rendering { class RayTracingShader; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_FORWARDRENDERERDATA_SHADERRESOURCES__CTOR_OFFSET UNITYSDK_OFFSET(0x18394310)
+#define UNITYENGINE_RENDERING_UNIVERSAL_FORWARDRENDERERDATA_SHADERRESOURCES__CTOR_OFFSET UNITYSDK_OFFSET(0x189EA9B0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ForwardRendererData_ShaderResources_TypeDefinitionIndex = 28385;
+	inline static constexpr unsigned int ForwardRendererData_ShaderResources_TypeDefinitionIndex = 29328;
 
 	class ForwardRendererData_ShaderResources : public ::System::Object
 	{
@@ -100,6 +100,8 @@ namespace UnityEngine::Rendering::Universal
 		::UnityEngine::Experimental::Rendering::RayTracingShader* RTXAORTShader; // 0x298
 		::UnityEngine::ComputeShader* RTXAODenoiseCS; // 0x2A0
 		::UnityEngine::ComputeShader* RTXAOCS; // 0x2A8
+		::UnityEngine::ComputeShader* findBrightSpotsCS; // 0x2B0
+		::UnityEngine::Material* brightSpotsFlareMaterial; // 0x2B8
 
 		::System::Void _ctor()
 		{

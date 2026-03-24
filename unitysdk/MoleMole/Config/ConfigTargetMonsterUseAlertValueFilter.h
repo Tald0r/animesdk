@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_CONFIG_CONFIGTARGETMONSTERUSEALERTVALUEFILTER_VALUEPASS_OFFSET UNITYSDK_OFFSET(0x141932C0)
-#define MOLEMOLE_CONFIG_CONFIGTARGETMONSTERUSEALERTVALUEFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x14193430)
+#define MOLEMOLE_CONFIG_CONFIGTARGETMONSTERUSEALERTVALUEFILTER_VALUEPASS_OFFSET UNITYSDK_OFFSET(0xBB009C0)
+#define MOLEMOLE_CONFIG_CONFIGTARGETMONSTERUSEALERTVALUEFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0xBB00B30)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTargetMonsterUseAlertValueFilter_TypeDefinitionIndex = 44158;
+	inline static constexpr unsigned int ConfigTargetMonsterUseAlertValueFilter_TypeDefinitionIndex = 62059;
 
 	class ConfigTargetMonsterUseAlertValueFilter : public ::MoleMole::Config::ConfigEntityFilter
 	{

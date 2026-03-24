@@ -3,7 +3,7 @@
 
 namespace Utf8Json
 {
-	inline static constexpr unsigned int JsonToken_TypeDefinitionIndex = 81747;
+	inline static constexpr unsigned int JsonToken_TypeDefinitionIndex = 83788;
 
 	enum class JsonToken : ::System::Byte
 	{

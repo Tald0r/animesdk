@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIEtherInfectionProgressWidgetController_ShowState_TypeDefinitionIndex = 50923;
+	inline static constexpr unsigned int UIEtherInfectionProgressWidgetController_ShowState_TypeDefinitionIndex = 56082;
 
 	enum class UIEtherInfectionProgressWidgetController_ShowState : ::System::Int32
 	{

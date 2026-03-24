@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/RuntimeInitializeLoadType.h"
 #include "unitysdk/UnityEngine/RuntimeInitializeOnLoadMethodAttribute.h"
 
-#define FLUFFYUNDERWARE_DEVTOOLS_ENVIRONMENTAGNOSTICINITIALIZEONLOADMETHODATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A240460)
+#define FLUFFYUNDERWARE_DEVTOOLS_ENVIRONMENTAGNOSTICINITIALIZEONLOADMETHODATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A807D70)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int EnvironmentAgnosticInitializeOnLoadMethodAttribute_TypeDefinitionIndex = 24510;
+	inline static constexpr unsigned int EnvironmentAgnosticInitializeOnLoadMethodAttribute_TypeDefinitionIndex = 25335;
 
 	class EnvironmentAgnosticInitializeOnLoadMethodAttribute : public ::UnityEngine::RuntimeInitializeOnLoadMethodAttribute
 	{

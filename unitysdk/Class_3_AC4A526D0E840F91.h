@@ -8,27 +8,27 @@ namespace Nap::NapECS { class EcsFilter; }
 namespace Nap::NapECS { class EcsWorld; }
 namespace System { class String; }
 
-#define CLASS_3_AC4A526D0E840F91_CREATEFILTERS_OFFSET UNITYSDK_OFFSET(0xD281360)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_1_OFFSET UNITYSDK_OFFSET(0xD281B20)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_OFFSET UNITYSDK_OFFSET(0xD281F50)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_343E20205DB12AC4_OFFSET UNITYSDK_OFFSET(0xD282040)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_4B325DD8DE4934F1_OFFSET UNITYSDK_OFFSET(0xD2847C0)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_1_OFFSET UNITYSDK_OFFSET(0xD284250)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_2_OFFSET UNITYSDK_OFFSET(0xD284680)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_3_OFFSET UNITYSDK_OFFSET(0xD284BF0)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_OFFSET UNITYSDK_OFFSET(0xD281590)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_9D10D6B5907D68EA_OFFSET UNITYSDK_OFFSET(0xD284380)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_1_OFFSET UNITYSDK_OFFSET(0xD282870)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_2_OFFSET UNITYSDK_OFFSET(0xD282CC0)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_OFFSET UNITYSDK_OFFSET(0xD2816C0)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_BADC81CF9C936EDA_OFFSET UNITYSDK_OFFSET(0xD2838D0)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_C91F7C6C1EAEEDF3_OFFSET UNITYSDK_OFFSET(0xD283940)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_DD42286F25B47E80_1_OFFSET UNITYSDK_OFFSET(0xD283C20)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_DD42286F25B47E80_OFFSET UNITYSDK_OFFSET(0xD283120)
-#define CLASS_3_AC4A526D0E840F91_METHOD_3_F4D97839DCE92CB1_OFFSET UNITYSDK_OFFSET(0xD281C10)
-#define CLASS_3_AC4A526D0E840F91__CTOR_OFFSET UNITYSDK_OFFSET(0xD281570)
+#define CLASS_3_AC4A526D0E840F91_CREATEFILTERS_OFFSET UNITYSDK_OFFSET(0xB576A50)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_1_OFFSET UNITYSDK_OFFSET(0xB57A080)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_OFFSET UNITYSDK_OFFSET(0xB5797E0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_343E20205DB12AC4_OFFSET UNITYSDK_OFFSET(0xB5774B0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_4B325DD8DE4934F1_OFFSET UNITYSDK_OFFSET(0xB578340)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_1_OFFSET UNITYSDK_OFFSET(0xB5788B0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_2_OFFSET UNITYSDK_OFFSET(0xB5789E0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_3_OFFSET UNITYSDK_OFFSET(0xB578F70)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_OFFSET UNITYSDK_OFFSET(0xB578770)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_1_OFFSET UNITYSDK_OFFSET(0xB579380)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_2_OFFSET UNITYSDK_OFFSET(0xB5798D0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_OFFSET UNITYSDK_OFFSET(0xB578B20)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_BADC81CF9C936EDA_OFFSET UNITYSDK_OFFSET(0xB576C80)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_C91F7C6C1EAEEDF3_1_OFFSET UNITYSDK_OFFSET(0xB57A170)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_C91F7C6C1EAEEDF3_OFFSET UNITYSDK_OFFSET(0xB5790A0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_DD42286F25B47E80_1_OFFSET UNITYSDK_OFFSET(0xB577D00)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_DD42286F25B47E80_OFFSET UNITYSDK_OFFSET(0xB576CF0)
+#define CLASS_3_AC4A526D0E840F91_METHOD_3_F4D97839DCE92CB1_OFFSET UNITYSDK_OFFSET(0xB579D30)
+#define CLASS_3_AC4A526D0E840F91__CTOR_OFFSET UNITYSDK_OFFSET(0xB576C60)
 
-inline static constexpr unsigned int Class_3_AC4A526D0E840F91_TypeDefinitionIndex = 66515;
+inline static constexpr unsigned int Class_3_AC4A526D0E840F91_TypeDefinitionIndex = 72809;
 
 class Class_3_AC4A526D0E840F91 : public ::Class_2_F33340E023067DAF
 {
@@ -45,34 +45,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_CREATEFILTERS_OFFSET))(this, a1);
 	}
 
-	static ::System::Single Method_3_8762BF405BCB063F(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
+	::System::Void Method_3_BADC81CF9C936EDA(::Nap::NapECS::EcsWorld* a1)
 	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_OFFSET))(a1, a2, a3);
-	}
-
-	static ::System::Single Method_3_AF789C7DC4BF042C(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
-	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_OFFSET))(a1, a2, a3, a4);
-	}
-
-	static ::System::Single Method_3_F4D97839DCE92CB1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
-	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_F4D97839DCE92CB1_OFFSET))(a1, a2, a3, a4);
-	}
-
-	static ::System::Single Method_3_343E20205DB12AC4(::MoleMole::Battle::Entity* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
-	{
-		return ((::System::Single(*)(::MoleMole::Battle::Entity*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_343E20205DB12AC4_OFFSET))(a1, a2, a3, a4);
-	}
-
-	static ::System::Single Method_3_AF789C7DC4BF042C_1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
-	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_1_OFFSET))(a1, a2, a3, a4);
-	}
-
-	static ::System::Single Method_3_AF789C7DC4BF042C_2(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
-	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_2_OFFSET))(a1, a2, a3, a4);
+		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_BADC81CF9C936EDA_OFFSET))(this, a1);
 	}
 
 	static ::System::Single Method_3_DD42286F25B47E80(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
@@ -80,29 +55,19 @@ public:
 		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_DD42286F25B47E80_OFFSET))(a1, a2, a3, a4);
 	}
 
-	::System::Void Method_3_BADC81CF9C936EDA(::Nap::NapECS::EcsWorld* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::Nap::NapECS::EcsWorld*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_BADC81CF9C936EDA_OFFSET))(this, a1);
-	}
-
-	static ::System::Single Method_3_C91F7C6C1EAEEDF3(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
-	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_C91F7C6C1EAEEDF3_OFFSET))(a1, a2, a3, a4);
-	}
-
 	static ::System::Single Method_3_DD42286F25B47E80_1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
 	{
 		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_DD42286F25B47E80_1_OFFSET))(a1, a2, a3, a4);
 	}
 
-	static ::System::Single Method_3_16FA1849EEADCE9E(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
+	static ::System::Single Method_3_4B325DD8DE4934F1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
 	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_OFFSET))(a1, a2, a3);
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_4B325DD8DE4934F1_OFFSET))(a1, a2, a3, a4);
 	}
 
-	static ::System::Single Method_3_9D10D6B5907D68EA(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	static ::System::Single Method_3_8762BF405BCB063F(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
 	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_9D10D6B5907D68EA_OFFSET))(a1, a2, a3, a4);
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_OFFSET))(a1, a2, a3);
 	}
 
 	static ::System::Single Method_3_8762BF405BCB063F_1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
@@ -115,9 +80,9 @@ public:
 		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_2_OFFSET))(a1, a2, a3);
 	}
 
-	static ::System::Single Method_3_4B325DD8DE4934F1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	static ::System::Single Method_3_AF789C7DC4BF042C(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
 	{
-		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_4B325DD8DE4934F1_OFFSET))(a1, a2, a3, a4);
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_OFFSET))(a1, a2, a3, a4);
 	}
 
 	static ::System::Single Method_3_8762BF405BCB063F_3(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
@@ -125,8 +90,43 @@ public:
 		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_8762BF405BCB063F_3_OFFSET))(a1, a2, a3);
 	}
 
+	static ::System::Single Method_3_C91F7C6C1EAEEDF3(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	{
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_C91F7C6C1EAEEDF3_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::System::Single Method_3_AF789C7DC4BF042C_1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	{
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_1_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::System::Single Method_3_16FA1849EEADCE9E(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
+	{
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_OFFSET))(a1, a2, a3);
+	}
+
+	static ::System::Single Method_3_343E20205DB12AC4(::MoleMole::Battle::Entity* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	{
+		return ((::System::Single(*)(::MoleMole::Battle::Entity*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_343E20205DB12AC4_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::System::Single Method_3_AF789C7DC4BF042C_2(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	{
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_AF789C7DC4BF042C_2_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::System::Single Method_3_F4D97839DCE92CB1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	{
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_F4D97839DCE92CB1_OFFSET))(a1, a2, a3, a4);
+	}
+
 	static ::System::Single Method_3_16FA1849EEADCE9E_1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3)
 	{
 		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_16FA1849EEADCE9E_1_OFFSET))(a1, a2, a3);
+	}
+
+	static ::System::Single Method_3_C91F7C6C1EAEEDF3_1(::Class_3_F97B015544BE936B* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::String* a4)
+	{
+		return ((::System::Single(*)(::Class_3_F97B015544BE936B*, ::System::Int32, ::System::Int32, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_AC4A526D0E840F91_METHOD_3_C91F7C6C1EAEEDF3_1_OFFSET))(a1, a2, a3, a4);
 	}
 };

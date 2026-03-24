@@ -13,7 +13,7 @@ namespace Utf8Json::Internal { template <typename T> class ByteArrayStringHashTa
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int EnumFormatter_1_TypeDefinitionIndex = 81982;
+	inline static constexpr unsigned int EnumFormatter_1_TypeDefinitionIndex = 84023;
 
 	template <typename T>
 	class EnumFormatter_1 : public ::System::Object

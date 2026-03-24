@@ -2,10 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_8F9E26CA2B644EB8_1_METHOD_2_3D78D2E0F9F95F07_OFFSET UNITYSDK_OFFSET(0xB1D3DD0)
-#define STRUCT_2_8F9E26CA2B644EB8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x2CA8F0)
+#define STRUCT_2_8F9E26CA2B644EB8_1_METHOD_2_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0x488BA0)
+#define STRUCT_2_8F9E26CA2B644EB8_1_METHOD_2_ABFE6A357B89C69A_OFFSET UNITYSDK_OFFSET(0x488C10)
+#define STRUCT_2_8F9E26CA2B644EB8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x37EE40)
 
-inline static constexpr unsigned int Struct_2_8F9E26CA2B644EB8_1_TypeDefinitionIndex = 41971;
+inline static constexpr unsigned int Struct_2_8F9E26CA2B644EB8_1_TypeDefinitionIndex = 64896;
 
 struct alignas(4) Struct_2_8F9E26CA2B644EB8_1
 {
@@ -18,8 +19,13 @@ struct alignas(4) Struct_2_8F9E26CA2B644EB8_1
 		return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + STRUCT_2_8F9E26CA2B644EB8_1__CTOR_OFFSET))(this, a1, a2, a3);
 	}
 
-	static ::Struct_2_8F9E26CA2B644EB8_1 Method_2_3D78D2E0F9F95F07()
+	::System::Boolean Method_2_1D4018D4200358D0()
 	{
-		return ((::Struct_2_8F9E26CA2B644EB8_1(*)())((::PBYTE)hIl2Cpp + STRUCT_2_8F9E26CA2B644EB8_1_METHOD_2_3D78D2E0F9F95F07_OFFSET))();
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_8F9E26CA2B644EB8_1_METHOD_2_1D4018D4200358D0_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_ABFE6A357B89C69A()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_8F9E26CA2B644EB8_1_METHOD_2_ABFE6A357B89C69A_OFFSET))(this);
 	}
 };

@@ -6,12 +6,12 @@
 
 namespace MoleMole { class ChessEntity; }
 
-#define MOLEMOLE_FLOWCANVAS_GETENTITYRELATIVEPOSITION_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2B9B20)
-#define MOLEMOLE_FLOWCANVAS_GETENTITYRELATIVEPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0xC2B9C10)
+#define MOLEMOLE_FLOWCANVAS_GETENTITYRELATIVEPOSITION_INVOKE_OFFSET UNITYSDK_OFFSET(0xB895620)
+#define MOLEMOLE_FLOWCANVAS_GETENTITYRELATIVEPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0xB895710)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int GetEntityRelativePosition_TypeDefinitionIndex = 63478;
+	inline static constexpr unsigned int GetEntityRelativePosition_TypeDefinitionIndex = 43692;
 
 	class GetEntityRelativePosition : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::MoleMole::HollowChessboard::HollowCell, ::MoleMole::ChessEntity*, ::Share::GridDir>
 	{

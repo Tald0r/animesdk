@@ -11,16 +11,17 @@
 
 namespace System { class String; }
 
-#define SYSTEM_MEMORYEXTENSIONS_ASMEMORY_OFFSET UNITYSDK_OFFSET(0x1A7E3730)
-#define SYSTEM_MEMORYEXTENSIONS_ASSPAN_OFFSET UNITYSDK_OFFSET(0x1A7E36D0)
-#define SYSTEM_MEMORYEXTENSIONS_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1A7E3550)
-#define SYSTEM_MEMORYEXTENSIONS_INDEXOF_OFFSET UNITYSDK_OFFSET(0x1A7E35F0)
-#define SYSTEM_MEMORYEXTENSIONS_MEASURESTRINGADJUSTMENT_OFFSET UNITYSDK_OFFSET(0x1A7E3820)
-#define SYSTEM_MEMORYEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A7E3840)
+#define SYSTEM_MEMORYEXTENSIONS_ASMEMORY_OFFSET UNITYSDK_OFFSET(0x1ADB6970)
+#define SYSTEM_MEMORYEXTENSIONS_ASSPAN_1_OFFSET UNITYSDK_OFFSET(0x1ADB6840)
+#define SYSTEM_MEMORYEXTENSIONS_ASSPAN_OFFSET UNITYSDK_OFFSET(0x1ADB67E0)
+#define SYSTEM_MEMORYEXTENSIONS_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1ADB6660)
+#define SYSTEM_MEMORYEXTENSIONS_INDEXOF_OFFSET UNITYSDK_OFFSET(0x1ADB6700)
+#define SYSTEM_MEMORYEXTENSIONS_MEASURESTRINGADJUSTMENT_OFFSET UNITYSDK_OFFSET(0x1ADB6A20)
+#define SYSTEM_MEMORYEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADB6A40)
 
 namespace System
 {
-	inline static constexpr unsigned int MemoryExtensions_TypeDefinitionIndex = 7538;
+	inline static constexpr unsigned int MemoryExtensions_TypeDefinitionIndex = 7543;
 
 	class MemoryExtensions : public ::System::Object
 	{
@@ -48,6 +49,11 @@ namespace System
 		static ::System::ReadOnlySpan_1<::System::Char> AsSpan(::System::String* text)
 		{
 			return ((::System::ReadOnlySpan_1<::System::Char>(*)(::System::String*))((::PBYTE)hIl2Cpp + SYSTEM_MEMORYEXTENSIONS_ASSPAN_OFFSET))(text);
+		}
+
+		static ::System::ReadOnlySpan_1<::System::Char> AsSpan_1(::System::String* text, ::System::Int32 start, ::System::Int32 length)
+		{
+			return ((::System::ReadOnlySpan_1<::System::Char>(*)(::System::String*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + SYSTEM_MEMORYEXTENSIONS_ASSPAN_1_OFFSET))(text, start, length);
 		}
 
 		static ::System::ReadOnlyMemory_1<::System::Char> AsMemory(::System::String* text, ::System::Int32 start, ::System::Int32 length)

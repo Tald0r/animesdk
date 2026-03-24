@@ -11,7 +11,7 @@ namespace UnityEngine::InputSystem::EnhancedTouch { class Finger; }
 
 namespace UnityEngine::InputSystem::EnhancedTouch
 {
-	inline static constexpr unsigned int Touch_GlobalState_TypeDefinitionIndex = 27697;
+	inline static constexpr unsigned int Touch_GlobalState_TypeDefinitionIndex = 28637;
 
 	struct alignas(8) Touch_GlobalState
 	{

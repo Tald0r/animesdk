@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SQLITE_PRESERVEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0664B0)
+#define SQLITE_PRESERVEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6322D0)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int PreserveAttribute_TypeDefinitionIndex = 35231;
+	inline static constexpr unsigned int PreserveAttribute_TypeDefinitionIndex = 36233;
 
 	class PreserveAttribute : public ::System::Attribute
 	{
 	public:
-		::System::Boolean Conditional; // 0x10
-		::System::Boolean AllMembers; // 0x11
+		::System::Boolean AllMembers; // 0x10
+		::System::Boolean Conditional; // 0x11
 
 		::System::Void _ctor()
 		{

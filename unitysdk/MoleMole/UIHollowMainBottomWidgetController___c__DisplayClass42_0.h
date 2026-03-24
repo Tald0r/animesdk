@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_C2426F57DB2A743B_2;
+class Class_3_C2426F57DB2A743B;
 namespace MoleMole { class UIHollowMainBottomWidgetController; }
 
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS42_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA2A1D0)
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS42_0__INITPLAYERPROPERTY_B__0_OFFSET UNITYSDK_OFFSET(0xAA2A1E0)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS42_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7F76640)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS42_0__INITPLAYERPROPERTY_B__0_OFFSET UNITYSDK_OFFSET(0x7F76650)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass42_0_TypeDefinitionIndex = 78266;
+	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass42_0_TypeDefinitionIndex = 76066;
 
 	class UIHollowMainBottomWidgetController___c__DisplayClass42_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIHollowMainBottomWidgetController* __4__this; // 0x10
-		::Class_3_C2426F57DB2A743B_2* avatar; // 0x18
+		::Class_3_C2426F57DB2A743B* avatar; // 0x18
 
 		::System::Void _ctor()
 		{

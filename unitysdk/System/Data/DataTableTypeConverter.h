@@ -4,12 +4,12 @@
 
 namespace System::ComponentModel { class ITypeDescriptorContext; }
 
-#define SYSTEM_DATA_DATATABLETYPECONVERTER_GETPROPERTIESSUPPORTED_OFFSET UNITYSDK_OFFSET(0x1A135430)
-#define SYSTEM_DATA_DATATABLETYPECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1353C0)
+#define SYSTEM_DATA_DATATABLETYPECONVERTER_GETPROPERTIESSUPPORTED_OFFSET UNITYSDK_OFFSET(0x1A6B5370)
+#define SYSTEM_DATA_DATATABLETYPECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6B5300)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int DataTableTypeConverter_TypeDefinitionIndex = 35434;
+	inline static constexpr unsigned int DataTableTypeConverter_TypeDefinitionIndex = 36454;
 
 	class DataTableTypeConverter : public ::System::ComponentModel::ReferenceConverter
 	{

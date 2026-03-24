@@ -4,10 +4,10 @@
 
 namespace MoleMole::HollowChessboard { class HollowEntity; }
 
-#define CLASS_1_C4490EFF4F0AC379_EVALUATE_OFFSET UNITYSDK_OFFSET(0x9FF1C80)
-#define CLASS_1_C4490EFF4F0AC379__CTOR_OFFSET UNITYSDK_OFFSET(0x9FF1CF0)
+#define CLASS_1_C4490EFF4F0AC379_EVALUATE_OFFSET UNITYSDK_OFFSET(0x8928800)
+#define CLASS_1_C4490EFF4F0AC379__CTOR_OFFSET UNITYSDK_OFFSET(0x8928870)
 
-inline static constexpr unsigned int Class_1_C4490EFF4F0AC379_TypeDefinitionIndex = 58960;
+inline static constexpr unsigned int Class_1_C4490EFF4F0AC379_TypeDefinitionIndex = 51768;
 
 class Class_1_C4490EFF4F0AC379 : public ::System::Object
 {

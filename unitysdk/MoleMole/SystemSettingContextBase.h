@@ -4,19 +4,21 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_ISSHOWONUIINNER_OFFSET UNITYSDK_OFFSET(0x6B215D0)
-#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_ISSHOWONUI_OFFSET UNITYSDK_OFFSET(0x6B21630)
-#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x6B20C00)
+#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_GETOPTIONTEXTKEY_OFFSET UNITYSDK_OFFSET(0xD44A700)
+#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_GETOVERRIDEOPTIONTEXTKEY_OFFSET UNITYSDK_OFFSET(0xD44A6A0)
+#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_ISSHOWONUIINNER_OFFSET UNITYSDK_OFFSET(0xD44A5C0)
+#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_ISSHOWONUI_OFFSET UNITYSDK_OFFSET(0xD44A620)
+#define MOLEMOLE_SYSTEMSETTINGCONTEXTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xD449B30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SystemSettingContextBase_TypeDefinitionIndex = 49842;
+	inline static constexpr unsigned int SystemSettingContextBase_TypeDefinitionIndex = 60131;
 
 	class SystemSettingContextBase : public ::System::Object
 	{
 	public:
-		::System::String* OptionTextCode; // 0x10
-		::System::String* OptionText; // 0x18
+		::System::String* OptionText; // 0x10
+		::System::String* OptionTextCode; // 0x18
 		::System::Boolean HideOnUI; // 0x20
 
 		::System::Void _ctor()
@@ -32,6 +34,16 @@ namespace MoleMole
 		::System::Boolean IsShowOnUI()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_ISSHOWONUI_OFFSET))(this);
+		}
+
+		::System::String* GetOverrideOptionTextKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_GETOVERRIDEOPTIONTEXTKEY_OFFSET))(this);
+		}
+
+		::System::String* GetOptionTextKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SYSTEMSETTINGCONTEXTBASE_GETOPTIONTEXTKEY_OFFSET))(this);
 		}
 	};
 }

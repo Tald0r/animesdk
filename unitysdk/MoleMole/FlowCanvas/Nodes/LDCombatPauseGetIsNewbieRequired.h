@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCOMBATPAUSEGETISNEWBIEREQUIRED_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC75460)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCOMBATPAUSEGETISNEWBIEREQUIRED__CTOR_OFFSET UNITYSDK_OFFSET(0xEC754C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCOMBATPAUSEGETISNEWBIEREQUIRED_INVOKE_OFFSET UNITYSDK_OFFSET(0x7573F50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCOMBATPAUSEGETISNEWBIEREQUIRED__CTOR_OFFSET UNITYSDK_OFFSET(0x7573FB0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCombatPauseGetIsNewbieRequired_TypeDefinitionIndex = 58885;
+	inline static constexpr unsigned int LDCombatPauseGetIsNewbieRequired_TypeDefinitionIndex = 67742;
 
 	class LDCombatPauseGetIsNewbieRequired : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Boolean>
 	{

@@ -4,11 +4,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define MOLEMOLE_NOTETYPECOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0xA607440)
+#define MOLEMOLE_NOTETYPECOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0xA7F1800)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int NoteTypeColor_TypeDefinitionIndex = 78174;
+	inline static constexpr unsigned int NoteTypeColor_TypeDefinitionIndex = 42349;
 
 	class NoteTypeColor : public ::System::Object
 	{

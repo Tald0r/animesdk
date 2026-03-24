@@ -5,12 +5,12 @@
 namespace MoleMole::ChessStateMachine { class StateMachineAction; }
 namespace System { class Action; }
 
-#define MOLEMOLE_CHESSSTATEMACHINE_STATEMACHINEACTION___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6228510)
-#define MOLEMOLE_CHESSSTATEMACHINE_STATEMACHINEACTION___C__DISPLAYCLASS7_0__WARPINGVERSIONACTION_B__0_OFFSET UNITYSDK_OFFSET(0x6228520)
+#define MOLEMOLE_CHESSSTATEMACHINE_STATEMACHINEACTION___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC215790)
+#define MOLEMOLE_CHESSSTATEMACHINE_STATEMACHINEACTION___C__DISPLAYCLASS7_0__WARPINGVERSIONACTION_B__0_OFFSET UNITYSDK_OFFSET(0xC2157A0)
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int StateMachineAction___c__DisplayClass7_0_TypeDefinitionIndex = 50123;
+	inline static constexpr unsigned int StateMachineAction___c__DisplayClass7_0_TypeDefinitionIndex = 78199;
 
 	class StateMachineAction___c__DisplayClass7_0 : public ::System::Object
 	{

@@ -3,14 +3,14 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int EAvatarCameraShotType_TypeDefinitionIndex = 42624;
+	inline static constexpr unsigned int EAvatarCameraShotType_TypeDefinitionIndex = 75628;
 
 	enum class EAvatarCameraShotType : ::System::Int32
 	{
-		SURROUND_B = 3,
 		Override_None = 99,
-		SIMPLE_A = 1,
 		NONE = 0,
+		SURROUND_B = 3,
+		SIMPLE_A = 1,
 		NORMAL_C = 2,
 	};
 }

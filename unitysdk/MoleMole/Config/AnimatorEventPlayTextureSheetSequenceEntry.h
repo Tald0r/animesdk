@@ -6,20 +6,20 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTPLAYTEXTURESHEETSEQUENCEENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x8495760)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTPLAYTEXTURESHEETSEQUENCEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x8495800)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTPLAYTEXTURESHEETSEQUENCEENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x94ECD20)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTPLAYTEXTURESHEETSEQUENCEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x94ECDC0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventPlayTextureSheetSequenceEntry_TypeDefinitionIndex = 74958;
+	inline static constexpr unsigned int AnimatorEventPlayTextureSheetSequenceEntry_TypeDefinitionIndex = 39437;
 
 	class AnimatorEventPlayTextureSheetSequenceEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
-		::System::String* MeshPath; // 0x58
-		::System::String* TextureSheetKey; // 0x60
-		::MoleMole::Config::TextureSheetInterruptType InterruptType; // 0x68
-		::System::Boolean IsKeepLastFrame; // 0x6C
+		::System::String* TextureSheetKey; // 0x58
+		::System::String* MeshPath; // 0x60
+		::System::Boolean IsKeepLastFrame; // 0x68
+		::MoleMole::Config::TextureSheetInterruptType InterruptType; // 0x6C
 
 		::System::Void _ctor()
 		{

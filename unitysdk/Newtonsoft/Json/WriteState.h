@@ -3,7 +3,7 @@
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int WriteState_TypeDefinitionIndex = 6893;
+	inline static constexpr unsigned int WriteState_TypeDefinitionIndex = 6897;
 
 	enum class WriteState : ::System::Int32
 	{

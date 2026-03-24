@@ -5,12 +5,12 @@
 namespace MoleMole { class MonoEffectPluginFade; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE_METHOD_2_83A2D2FF4410F4BE_OFFSET UNITYSDK_OFFSET(0x6E0C060)
-#define MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE__CTOR_OFFSET UNITYSDK_OFFSET(0x6E0C110)
+#define MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE_METHOD_2_83A2D2FF4410F4BE_OFFSET UNITYSDK_OFFSET(0xC25B5B0)
+#define MOLEMOLE_EFFECTSIMULATE_NESNORMALFXDATACACHE__CTOR_OFFSET UNITYSDK_OFFSET(0xC25B660)
 
 namespace MoleMole::EffectSimulate
 {
-	inline static constexpr unsigned int NESNormalFxDataCache_TypeDefinitionIndex = 62278;
+	inline static constexpr unsigned int NESNormalFxDataCache_TypeDefinitionIndex = 48112;
 
 	class NESNormalFxDataCache : public ::MoleMole::EffectSimulate::NESDataCacheBase
 	{

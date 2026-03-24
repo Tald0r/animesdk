@@ -9,25 +9,25 @@ namespace MoleMole { class UIActivityCompWeekRewardBtnWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_6FA0188978D80149_METHOD_2_29352E75304CF2A0_OFFSET UNITYSDK_OFFSET(0x907A850)
-#define CLASS_2_6FA0188978D80149_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0x907A620)
-#define CLASS_2_6FA0188978D80149_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x907A990)
-#define CLASS_2_6FA0188978D80149__CTOR_OFFSET UNITYSDK_OFFSET(0x907A980)
+#define CLASS_2_6FA0188978D80149_METHOD_2_29352E75304CF2A0_OFFSET UNITYSDK_OFFSET(0x7DBFF30)
+#define CLASS_2_6FA0188978D80149_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0x7DBFD00)
+#define CLASS_2_6FA0188978D80149_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7DC0070)
+#define CLASS_2_6FA0188978D80149__CTOR_OFFSET UNITYSDK_OFFSET(0x7DC0060)
 
-inline static constexpr unsigned int Class_2_6FA0188978D80149_TypeDefinitionIndex = 59577;
+inline static constexpr unsigned int Class_2_6FA0188978D80149_TypeDefinitionIndex = 52710;
 
 class Class_2_6FA0188978D80149 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIActivityCompWeekRewardBtnWidgetController*>* Field_2_1; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x20
 	::MonoUITableScrollV2* Field_2_2; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_6; // 0x30
+	::Class_3_647A206587033F4E<::MoleMole::UIActivityCompWeekRewardBtnWidgetController*>* Field_2_1; // 0x30
 	::UnityEngine::UI::Extension::UITimeWidget* Field_2_4; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x48
+	::Class_2_60DDD9C206686F44* Field_2_6; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x48
 
 	::System::Void _ctor()
 	{

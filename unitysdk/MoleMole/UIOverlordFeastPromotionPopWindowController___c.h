@@ -2,28 +2,28 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_246;
+class Class_2_208CC9941471731A_711;
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7399A60)
-#define MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7399AA0)
-#define MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__9_0_OFFSET UNITYSDK_OFFSET(0x7399AB0)
+#define MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAF8D760)
+#define MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAF8D7A0)
+#define MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__9_0_OFFSET UNITYSDK_OFFSET(0xAF8D7B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOverlordFeastPromotionPopWindowController___c_TypeDefinitionIndex = 46363;
+	inline static constexpr unsigned int UIOverlordFeastPromotionPopWindowController___c_TypeDefinitionIndex = 66151;
 
 	class UIOverlordFeastPromotionPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::Class_2_208CC9941471731A_246*, ::System::String*>** StaticGet___9__9_0()
-		{
-			return (::System::Func_2<::Class_2_208CC9941471731A_246*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIOverlordFeastPromotionPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x36C90);
-		}
 		static ::MoleMole::UIOverlordFeastPromotionPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIOverlordFeastPromotionPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIOverlordFeastPromotionPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x36C98);
+			return (::MoleMole::UIOverlordFeastPromotionPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIOverlordFeastPromotionPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39930);
+		}
+		static ::System::Func_2<::Class_2_208CC9941471731A_711*, ::System::String*>** StaticGet___9__9_0()
+		{
+			return (::System::Func_2<::Class_2_208CC9941471731A_711*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIOverlordFeastPromotionPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39938);
 		}
 
 		static ::System::Void _cctor()
@@ -36,9 +36,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::String* _RefreshView_b__9_0(::Class_2_208CC9941471731A_246* t)
+		::System::String* _RefreshView_b__9_0(::Class_2_208CC9941471731A_711* t)
 		{
-			return ((::System::String*(*)(::PVOID, ::Class_2_208CC9941471731A_246*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__9_0_OFFSET))(this, t);
+			return ((::System::String*(*)(::PVOID, ::Class_2_208CC9941471731A_711*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIOVERLORDFEASTPROMOTIONPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__9_0_OFFSET))(this, t);
 		}
 	};
 }

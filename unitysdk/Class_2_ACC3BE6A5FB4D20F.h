@@ -11,24 +11,24 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_ACC3BE6A5FB4D20F_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x9F5BD40)
-#define CLASS_2_ACC3BE6A5FB4D20F_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x9F5BF40)
-#define CLASS_2_ACC3BE6A5FB4D20F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9F5C030)
-#define CLASS_2_ACC3BE6A5FB4D20F__CTOR_OFFSET UNITYSDK_OFFSET(0x9F5C020)
+#define CLASS_2_ACC3BE6A5FB4D20F_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x6D8DD20)
+#define CLASS_2_ACC3BE6A5FB4D20F_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x6D8DF20)
+#define CLASS_2_ACC3BE6A5FB4D20F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6D8E010)
+#define CLASS_2_ACC3BE6A5FB4D20F__CTOR_OFFSET UNITYSDK_OFFSET(0x6D8E000)
 
-inline static constexpr unsigned int Class_2_ACC3BE6A5FB4D20F_TypeDefinitionIndex = 77830;
+inline static constexpr unsigned int Class_2_ACC3BE6A5FB4D20F_TypeDefinitionIndex = 52925;
 
 class Class_2_ACC3BE6A5FB4D20F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x18
-	::UnityEngine::RectTransform* Field_2_6; // 0x20
-	::UnityEngine::RectTransform* Field_2_1; // 0x28
-	::MonoUILoopText* Field_2_3; // 0x30
-	::UnityEngine::GameObject* Field_2_4; // 0x38
-	::UnityEngine::UI::Text* Field_2_2; // 0x40
-	::UnityEngine::GameObject* Field_2_7; // 0x48
-	::UnityEngine::Animation* Field_2_0; // 0x50
+	::UnityEngine::GameObject* Field_2_4; // 0x18
+	::MonoUILoopText* Field_2_3; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x28
+	::UnityEngine::UI::Text* Field_2_2; // 0x30
+	::UnityEngine::GameObject* Field_2_7; // 0x38
+	::UnityEngine::RectTransform* Field_2_1; // 0x40
+	::UnityEngine::Animation* Field_2_0; // 0x48
+	::UnityEngine::RectTransform* Field_2_6; // 0x50
 
 	::System::Void _ctor()
 	{

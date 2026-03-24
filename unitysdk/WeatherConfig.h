@@ -63,176 +63,184 @@ namespace UnityEngine::Rendering::Universal { class SkyCloudConfig; }
 namespace UnityEngine::Rendering::Universal { class SkyGridConfig; }
 namespace UnityEngine::Rendering::Universal { class VolumetricCloudConfig; }
 
-#define WEATHERCONFIG_BINDMAINLIGHTDATA_OFFSET UNITYSDK_OFFSET(0x18047F80)
-#define WEATHERCONFIG_BINDNIGHTTEXTURES_OFFSET UNITYSDK_OFFSET(0x18048360)
-#define WEATHERCONFIG_CAPTUREDATAFORRENDER_OFFSET UNITYSDK_OFFSET(0x18048C60)
-#define WEATHERCONFIG_COPYCHARACTERCONFIG_OFFSET UNITYSDK_OFFSET(0x1804E2F0)
-#define WEATHERCONFIG_CREATETONECURVETEXTURE_OFFSET UNITYSDK_OFFSET(0x1804DFE0)
-#define WEATHERCONFIG_DEFAULTWEATHERCONFIG_OFFSET UNITYSDK_OFFSET(0x180455D0)
-#define WEATHERCONFIG_EVALUATEMAINLIGHTINTENSITY_OFFSET UNITYSDK_OFFSET(0x180484D0)
-#define WEATHERCONFIG_EVALUATESUNDISK_OFFSET UNITYSDK_OFFSET(0x18048450)
-#define WEATHERCONFIG_GETCHARACTERCOLORGRADINGENABLED_OFFSET UNITYSDK_OFFSET(0x180495D0)
-#define WEATHERCONFIG_GETDRAWCLOUDPARAMS_OFFSET UNITYSDK_OFFSET(0x1804A000)
-#define WEATHERCONFIG_GETDRAWFAKELIGHTVOLUMETRICFOGPARAM_OFFSET UNITYSDK_OFFSET(0x1804C2A0)
-#define WEATHERCONFIG_GETDRAWRAINDROPPARAMS_OFFSET UNITYSDK_OFFSET(0x1804B580)
-#define WEATHERCONFIG_GETDRAWRAINSPLASHPARAMS_OFFSET UNITYSDK_OFFSET(0x1804B830)
-#define WEATHERCONFIG_GETDRAWSKYCOVERPARAMS_OFFSET UNITYSDK_OFFSET(0x1804B500)
-#define WEATHERCONFIG_GETDRAWVOLUMETRICFOGWEATHERCONFIGPARAMS_OFFSET UNITYSDK_OFFSET(0x1804C1C0)
-#define WEATHERCONFIG_GETDYNAMICOBJECTGIINTENSITY_OFFSET UNITYSDK_OFFSET(0x180494F0)
-#define WEATHERCONFIG_GETGROUNDPOS_OFFSET UNITYSDK_OFFSET(0x1804A1E0)
-#define WEATHERCONFIG_GETIBLREFLECTIONPARAM_OFFSET UNITYSDK_OFFSET(0x1804A110)
-#define WEATHERCONFIG_GETKODAMAGIPARAMS_OFFSET UNITYSDK_OFFSET(0x18049550)
-#define WEATHERCONFIG_GETKODAMAGITYPE_OFFSET UNITYSDK_OFFSET(0x1804A060)
-#define WEATHERCONFIG_GETLIGHTSHAFTDRAWPARAMS_OFFSET UNITYSDK_OFFSET(0x1804BD80)
-#define WEATHERCONFIG_GETLOOKUPTABLE_OFFSET UNITYSDK_OFFSET(0x1804CA20)
-#define WEATHERCONFIG_GETMAINLIGHTDIR_OFFSET UNITYSDK_OFFSET(0x1804C670)
-#define WEATHERCONFIG_GETPOSTEXPOSURE_OFFSET UNITYSDK_OFFSET(0x1804A190)
-#define WEATHERCONFIG_GETPREVIEWSKYBOXFORBAKE_OFFSET UNITYSDK_OFFSET(0x18049FB0)
-#define WEATHERCONFIG_GETREPLACESKYBOXMAT_OFFSET UNITYSDK_OFFSET(0x1804A260)
-#define WEATHERCONFIG_GETSCENECOLORGRADINGPARAMS_OFFSET UNITYSDK_OFFSET(0x1804CA70)
-#define WEATHERCONFIG_GETSUPPORTEDGITYPE_OFFSET UNITYSDK_OFFSET(0x1804A0C0)
-#define WEATHERCONFIG_GETTINTSHADOWBLURRADIUS_OFFSET UNITYSDK_OFFSET(0x1804C0F0)
-#define WEATHERCONFIG_GETUPDATEKODAMAGILIGHTINGPARAMS_OFFSET UNITYSDK_OFFSET(0x1804BA60)
-#define WEATHERCONFIG_GETUSEANIMATION_OFFSET UNITYSDK_OFFSET(0x18049F60)
-#define WEATHERCONFIG_GETUSECLOUDMIDDLECOLOR_OFFSET UNITYSDK_OFFSET(0x18049F20)
-#define WEATHERCONFIG_GETUSERLOGLUTPARAMS_OFFSET UNITYSDK_OFFSET(0x18049B80)
-#define WEATHERCONFIG_GETUSERLOOKUPTABLEPARAMS_OFFSET UNITYSDK_OFFSET(0x180499E0)
-#define WEATHERCONFIG_GETWEATHERCONFIGDRAWSKYPARAMS_OFFSET UNITYSDK_OFFSET(0x1804A360)
-#define WEATHERCONFIG_GETWEATHERCONFIGSKYLUTGRADPARAMS_OFFSET UNITYSDK_OFFSET(0x1804C360)
-#define WEATHERCONFIG_GETWEATHERCONFIGSKYLUTHASHES_OFFSET UNITYSDK_OFFSET(0x1804C6E0)
-#define WEATHERCONFIG_GET_CLOUDLERPALPHA_OFFSET UNITYSDK_OFFSET(0x18045930)
-#define WEATHERCONFIG_GET_CUSTOMSKYBOXMESH_OFFSET UNITYSDK_OFFSET(0x18045830)
-#define WEATHERCONFIG_GET_DISABLESSPR_OFFSET UNITYSDK_OFFSET(0x180456E0)
-#define WEATHERCONFIG_GET_ENABLELOCALHEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x18045970)
-#define WEATHERCONFIG_GET_ENABLEOCEAN_OFFSET UNITYSDK_OFFSET(0x18045630)
-#define WEATHERCONFIG_GET_GLOBALDECALBLENDPARAMS_OFFSET UNITYSDK_OFFSET(0x18045AB0)
-#define WEATHERCONFIG_GET_GROUNDPOS_OFFSET UNITYSDK_OFFSET(0x18045CF0)
-#define WEATHERCONFIG_GET_HASTRIGGERSPECIALCLOUDLAYER_OFFSET UNITYSDK_OFFSET(0x180458F0)
-#define WEATHERCONFIG_GET_HEIGHTMAP2_OFFSET UNITYSDK_OFFSET(0x18045A90)
-#define WEATHERCONFIG_GET_HEIGHTMAPRESOLUTION_OFFSET UNITYSDK_OFFSET(0x18045B30)
-#define WEATHERCONFIG_GET_HEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x18045950)
-#define WEATHERCONFIG_GET_HOLLOWCOVERMESH_OFFSET UNITYSDK_OFFSET(0x18045890)
-#define WEATHERCONFIG_GET_HOLLOWCOVERSIZE_OFFSET UNITYSDK_OFFSET(0x18045870)
-#define WEATHERCONFIG_GET_ISOPTIMIZEDSCENEBOUNDBOXVALUE_OFFSET UNITYSDK_OFFSET(0x18045CB0)
-#define WEATHERCONFIG_GET_LERPVALUE_OFFSET UNITYSDK_OFFSET(0x18045910)
-#define WEATHERCONFIG_GET_NAVMESHBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18045CD0)
-#define WEATHERCONFIG_GET_OCEANCENTER_OFFSET UNITYSDK_OFFSET(0x18045A30)
-#define WEATHERCONFIG_GET_OCEANDEPTHOFFSET_OFFSET UNITYSDK_OFFSET(0x18045A70)
-#define WEATHERCONFIG_GET_OCEANFFTBAKEDATA_OFFSET UNITYSDK_OFFSET(0x18045A10)
-#define WEATHERCONFIG_GET_OCEANMASKHEIGHTOFFSET_OFFSET UNITYSDK_OFFSET(0x180459F0)
-#define WEATHERCONFIG_GET_OCEANMASKMAPRECT_OFFSET UNITYSDK_OFFSET(0x180459B0)
-#define WEATHERCONFIG_GET_OCEANMASKMAP_OFFSET UNITYSDK_OFFSET(0x18045990)
-#define WEATHERCONFIG_GET_OVERRIDELOWCLOUDDARKCOLOR_OFFSET UNITYSDK_OFFSET(0x180457D0)
-#define WEATHERCONFIG_GET_OVERRIDELOWCLOUDLIGHTCOLOR_OFFSET UNITYSDK_OFFSET(0x180457B0)
-#define WEATHERCONFIG_GET_OVERRIDESKYBTNCOLOR_OFFSET UNITYSDK_OFFSET(0x18045770)
-#define WEATHERCONFIG_GET_OVERRIDESKYTOPCOLOR_OFFSET UNITYSDK_OFFSET(0x18045790)
-#define WEATHERCONFIG_GET_OVERRIDESKYWEIGHT_OFFSET UNITYSDK_OFFSET(0x18045750)
-#define WEATHERCONFIG_GET_PARTICLECONFIG_OFFSET UNITYSDK_OFFSET(0x18045D10)
-#define WEATHERCONFIG_GET_SCENEBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18045C70)
-#define WEATHERCONFIG_GET_SCENECLIPPLANEY_OFFSET UNITYSDK_OFFSET(0x18045810)
-#define WEATHERCONFIG_GET_SCENEETHERCOVEREFFECTMAT_OFFSET UNITYSDK_OFFSET(0x18045850)
-#define WEATHERCONFIG_GET_SCENEHEIGHTMAPYOFFSET_OFFSET UNITYSDK_OFFSET(0x18045C90)
-#define WEATHERCONFIG_GET_SCENEWATERPOOLBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18045AF0)
-#define WEATHERCONFIG_GET_SCENEWATERPOOLMAP_OFFSET UNITYSDK_OFFSET(0x18045AD0)
-#define WEATHERCONFIG_GET_SCENEWATERPOOLMINMAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x18045B10)
-#define WEATHERCONFIG_GET_SEALEVELHEIGHT_OFFSET UNITYSDK_OFFSET(0x180459D0)
-#define WEATHERCONFIG_GET_SPECULARTONEMAPPINGCURVETEXTURE_OFFSET UNITYSDK_OFFSET(0x18045740)
-#define WEATHERCONFIG_GET_SUPPORTEDGITYPE_OFFSET UNITYSDK_OFFSET(0x180457F0)
-#define WEATHERCONFIG_GET_WATERCONFIG_OFFSET UNITYSDK_OFFSET(0x18045D30)
-#define WEATHERCONFIG_GET_WATERHEIGHT_OFFSET UNITYSDK_OFFSET(0x180458D0)
-#define WEATHERCONFIG_GET_WATERMATERIALS_OFFSET UNITYSDK_OFFSET(0x180458B0)
-#define WEATHERCONFIG_GET_WINDCONFIG_OFFSET UNITYSDK_OFFSET(0x18045D50)
-#define WEATHERCONFIG_HASGLOBALVOLUMETRICFOG_OFFSET UNITYSDK_OFFSET(0x1804C170)
-#define WEATHERCONFIG_HASLIGHTFOGPROXY_OFFSET UNITYSDK_OFFSET(0x1804C310)
-#define WEATHERCONFIG_ISAMBIENTACTIVE_OFFSET UNITYSDK_OFFSET(0x18048550)
-#define WEATHERCONFIG_ISLIGHTSHAFTON_OFFSET UNITYSDK_OFFSET(0x18047DC0)
-#define WEATHERCONFIG_ISSKYBOXFORBAKE_OFFSET UNITYSDK_OFFSET(0x1804A2B0)
-#define WEATHERCONFIG_LEARPCHARACTERCOLORGRADINGPARAMS_OFFSET UNITYSDK_OFFSET(0x18049620)
-#define WEATHERCONFIG_LERPWEATHERNEW_OFFSET UNITYSDK_OFFSET(0x18047640)
-#define WEATHERCONFIG_RELEASE_OFFSET UNITYSDK_OFFSET(0x18047160)
-#define WEATHERCONFIG_REPLACESKINRAMPCOLORSWITHOTHERRAMP_OFFSET UNITYSDK_OFFSET(0x1804E780)
-#define WEATHERCONFIG_SETDEFAULTVALUES_OFFSET UNITYSDK_OFFSET(0x1804E680)
-#define WEATHERCONFIG_SETFOG_OFFSET UNITYSDK_OFFSET(0x18047D60)
-#define WEATHERCONFIG_SETUPCHROMATICABERRATION_OFFSET UNITYSDK_OFFSET(0x1804AF90)
-#define WEATHERCONFIG_SETUPSPECULARTONEMAPPING_OFFSET UNITYSDK_OFFSET(0x1804E0A0)
-#define WEATHERCONFIG_SETVISUALENVDATA_OFFSET UNITYSDK_OFFSET(0x18047F40)
-#define WEATHERCONFIG_SET_CLOUDLERPALPHA_OFFSET UNITYSDK_OFFSET(0x18045940)
-#define WEATHERCONFIG_SET_CUSTOMSKYBOXMESH_OFFSET UNITYSDK_OFFSET(0x18045840)
-#define WEATHERCONFIG_SET_ENABLELOCALHEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x18045980)
-#define WEATHERCONFIG_SET_GLOBALDECALBLENDPARAMS_OFFSET UNITYSDK_OFFSET(0x18045AC0)
-#define WEATHERCONFIG_SET_GROUNDPOS_OFFSET UNITYSDK_OFFSET(0x18045D00)
-#define WEATHERCONFIG_SET_HASTRIGGERSPECIALCLOUDLAYER_OFFSET UNITYSDK_OFFSET(0x18045900)
-#define WEATHERCONFIG_SET_HEIGHTMAP2_OFFSET UNITYSDK_OFFSET(0x18045AA0)
-#define WEATHERCONFIG_SET_HEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x18045960)
-#define WEATHERCONFIG_SET_HOLLOWCOVERMESH_OFFSET UNITYSDK_OFFSET(0x180458A0)
-#define WEATHERCONFIG_SET_HOLLOWCOVERSIZE_OFFSET UNITYSDK_OFFSET(0x18045880)
-#define WEATHERCONFIG_SET_ISOPTIMIZEDSCENEBOUNDBOXVALUE_OFFSET UNITYSDK_OFFSET(0x18045CC0)
-#define WEATHERCONFIG_SET_LERPVALUE_OFFSET UNITYSDK_OFFSET(0x18045920)
-#define WEATHERCONFIG_SET_NAVMESHBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18045CE0)
-#define WEATHERCONFIG_SET_OCEANCENTER_OFFSET UNITYSDK_OFFSET(0x18045A50)
-#define WEATHERCONFIG_SET_OCEANDEPTHOFFSET_OFFSET UNITYSDK_OFFSET(0x18045A80)
-#define WEATHERCONFIG_SET_OCEANFFTBAKEDATA_OFFSET UNITYSDK_OFFSET(0x18045A20)
-#define WEATHERCONFIG_SET_OCEANMASKHEIGHTOFFSET_OFFSET UNITYSDK_OFFSET(0x18045A00)
-#define WEATHERCONFIG_SET_OCEANMASKMAPRECT_OFFSET UNITYSDK_OFFSET(0x180459C0)
-#define WEATHERCONFIG_SET_OCEANMASKMAP_OFFSET UNITYSDK_OFFSET(0x180459A0)
-#define WEATHERCONFIG_SET_OVERRIDELOWCLOUDDARKCOLOR_OFFSET UNITYSDK_OFFSET(0x180457E0)
-#define WEATHERCONFIG_SET_OVERRIDELOWCLOUDLIGHTCOLOR_OFFSET UNITYSDK_OFFSET(0x180457C0)
-#define WEATHERCONFIG_SET_OVERRIDESKYBTNCOLOR_OFFSET UNITYSDK_OFFSET(0x18045780)
-#define WEATHERCONFIG_SET_OVERRIDESKYTOPCOLOR_OFFSET UNITYSDK_OFFSET(0x180457A0)
-#define WEATHERCONFIG_SET_OVERRIDESKYWEIGHT_OFFSET UNITYSDK_OFFSET(0x18045760)
-#define WEATHERCONFIG_SET_PARTICLECONFIG_OFFSET UNITYSDK_OFFSET(0x18045D20)
-#define WEATHERCONFIG_SET_SCENEBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18045C80)
-#define WEATHERCONFIG_SET_SCENECLIPPLANEY_OFFSET UNITYSDK_OFFSET(0x18045820)
-#define WEATHERCONFIG_SET_SCENEETHERCOVEREFFECTMAT_OFFSET UNITYSDK_OFFSET(0x18045860)
-#define WEATHERCONFIG_SET_SCENEHEIGHTMAPYOFFSET_OFFSET UNITYSDK_OFFSET(0x18045CA0)
-#define WEATHERCONFIG_SET_SCENEWATERPOOLBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18045B00)
-#define WEATHERCONFIG_SET_SCENEWATERPOOLMAP_OFFSET UNITYSDK_OFFSET(0x18045AE0)
-#define WEATHERCONFIG_SET_SCENEWATERPOOLMINMAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x18045B20)
-#define WEATHERCONFIG_SET_SEALEVELHEIGHT_OFFSET UNITYSDK_OFFSET(0x180459E0)
-#define WEATHERCONFIG_SET_SUPPORTEDGITYPE_OFFSET UNITYSDK_OFFSET(0x18045800)
-#define WEATHERCONFIG_SET_WATERCONFIG_OFFSET UNITYSDK_OFFSET(0x18045D40)
-#define WEATHERCONFIG_SET_WATERHEIGHT_OFFSET UNITYSDK_OFFSET(0x180458E0)
-#define WEATHERCONFIG_SET_WATERMATERIALS_OFFSET UNITYSDK_OFFSET(0x180458C0)
-#define WEATHERCONFIG_SET_WINDCONFIG_OFFSET UNITYSDK_OFFSET(0x18045D60)
-#define WEATHERCONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x1804E870)
-#define WEATHERCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18045D70)
+#define WEATHERCONFIG_BINDMAINLIGHTDATA_OFFSET UNITYSDK_OFFSET(0x1866A030)
+#define WEATHERCONFIG_BINDNIGHTTEXTURES_OFFSET UNITYSDK_OFFSET(0x1866A410)
+#define WEATHERCONFIG_CAPTUREDATAFORRENDER_OFFSET UNITYSDK_OFFSET(0x1866AD10)
+#define WEATHERCONFIG_COPYCHARACTERCONFIG_OFFSET UNITYSDK_OFFSET(0x18670550)
+#define WEATHERCONFIG_CREATETONECURVETEXTURE_OFFSET UNITYSDK_OFFSET(0x18670240)
+#define WEATHERCONFIG_DEFAULTWEATHERCONFIG_OFFSET UNITYSDK_OFFSET(0x18667660)
+#define WEATHERCONFIG_EVALUATEMAINLIGHTINTENSITY_OFFSET UNITYSDK_OFFSET(0x1866A580)
+#define WEATHERCONFIG_EVALUATESUNDISK_OFFSET UNITYSDK_OFFSET(0x1866A500)
+#define WEATHERCONFIG_GETCHARACTERCOLORGRADINGENABLED_OFFSET UNITYSDK_OFFSET(0x1866B6B0)
+#define WEATHERCONFIG_GETDRAWCLOUDPARAMS_OFFSET UNITYSDK_OFFSET(0x1866C0E0)
+#define WEATHERCONFIG_GETDRAWFAKELIGHTVOLUMETRICFOGPARAM_OFFSET UNITYSDK_OFFSET(0x1866E410)
+#define WEATHERCONFIG_GETDRAWRAINDROPPARAMS_OFFSET UNITYSDK_OFFSET(0x1866D660)
+#define WEATHERCONFIG_GETDRAWRAINSPLASHPARAMS_OFFSET UNITYSDK_OFFSET(0x1866D910)
+#define WEATHERCONFIG_GETDRAWSKYCOVERPARAMS_OFFSET UNITYSDK_OFFSET(0x1866D5E0)
+#define WEATHERCONFIG_GETDRAWVOLUMETRICFOGWEATHERCONFIGPARAMS_OFFSET UNITYSDK_OFFSET(0x1866E330)
+#define WEATHERCONFIG_GETDYNAMICOBJECTGIINTENSITY_OFFSET UNITYSDK_OFFSET(0x1866B5A0)
+#define WEATHERCONFIG_GETGROUNDPOS_OFFSET UNITYSDK_OFFSET(0x1866C2C0)
+#define WEATHERCONFIG_GETIBLREFLECTIONPARAM_OFFSET UNITYSDK_OFFSET(0x1866C1F0)
+#define WEATHERCONFIG_GETKODAMAGIPARAMS_OFFSET UNITYSDK_OFFSET(0x1866B600)
+#define WEATHERCONFIG_GETKODAMAGITYPE_OFFSET UNITYSDK_OFFSET(0x1866C140)
+#define WEATHERCONFIG_GETLIGHTSHAFTDRAWPARAMS_OFFSET UNITYSDK_OFFSET(0x1866DEF0)
+#define WEATHERCONFIG_GETLOOKUPTABLE_OFFSET UNITYSDK_OFFSET(0x1866EB90)
+#define WEATHERCONFIG_GETMAINLIGHTDIR_OFFSET UNITYSDK_OFFSET(0x1866E7E0)
+#define WEATHERCONFIG_GETPOSTEXPOSURE_OFFSET UNITYSDK_OFFSET(0x1866C270)
+#define WEATHERCONFIG_GETPREVIEWSKYBOXFORBAKE_OFFSET UNITYSDK_OFFSET(0x1866C090)
+#define WEATHERCONFIG_GETREPLACESKYBOXMAT_OFFSET UNITYSDK_OFFSET(0x1866C340)
+#define WEATHERCONFIG_GETSCENECOLORGRADINGPARAMS_OFFSET UNITYSDK_OFFSET(0x1866EBE0)
+#define WEATHERCONFIG_GETSUPPORTEDGITYPE_OFFSET UNITYSDK_OFFSET(0x1866C1A0)
+#define WEATHERCONFIG_GETTINTSHADOWBLURRADIUS_OFFSET UNITYSDK_OFFSET(0x1866E260)
+#define WEATHERCONFIG_GETUPDATEKODAMAGILIGHTINGPARAMS_OFFSET UNITYSDK_OFFSET(0x1866DB40)
+#define WEATHERCONFIG_GETUSEANIMATION_OFFSET UNITYSDK_OFFSET(0x1866C040)
+#define WEATHERCONFIG_GETUSECLOUDMIDDLECOLOR_OFFSET UNITYSDK_OFFSET(0x1866C000)
+#define WEATHERCONFIG_GETUSERLOGLUTPARAMS_OFFSET UNITYSDK_OFFSET(0x1866BC60)
+#define WEATHERCONFIG_GETUSERLOOKUPTABLEPARAMS_OFFSET UNITYSDK_OFFSET(0x1866BAC0)
+#define WEATHERCONFIG_GETWEATHERCONFIGDRAWSKYPARAMS_OFFSET UNITYSDK_OFFSET(0x1866C440)
+#define WEATHERCONFIG_GETWEATHERCONFIGSKYLUTGRADPARAMS_OFFSET UNITYSDK_OFFSET(0x1866E4D0)
+#define WEATHERCONFIG_GETWEATHERCONFIGSKYLUTHASHES_OFFSET UNITYSDK_OFFSET(0x1866E850)
+#define WEATHERCONFIG_GET_CLOUDLERPALPHA_OFFSET UNITYSDK_OFFSET(0x186679C0)
+#define WEATHERCONFIG_GET_CUSTOMSKYBOXMESH_OFFSET UNITYSDK_OFFSET(0x186678C0)
+#define WEATHERCONFIG_GET_DISABLESSPR_OFFSET UNITYSDK_OFFSET(0x18667770)
+#define WEATHERCONFIG_GET_ENABLELOCALHEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x18667A00)
+#define WEATHERCONFIG_GET_ENABLEOCEAN_OFFSET UNITYSDK_OFFSET(0x186676C0)
+#define WEATHERCONFIG_GET_GLOBALDECALBLENDPARAMS_OFFSET UNITYSDK_OFFSET(0x18667B40)
+#define WEATHERCONFIG_GET_GROUNDPOS_OFFSET UNITYSDK_OFFSET(0x18667D80)
+#define WEATHERCONFIG_GET_HASTRIGGERSPECIALCLOUDLAYER_OFFSET UNITYSDK_OFFSET(0x18667980)
+#define WEATHERCONFIG_GET_HEIGHTMAP2_OFFSET UNITYSDK_OFFSET(0x18667B20)
+#define WEATHERCONFIG_GET_HEIGHTMAPRESOLUTION_OFFSET UNITYSDK_OFFSET(0x18667BC0)
+#define WEATHERCONFIG_GET_HEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x186679E0)
+#define WEATHERCONFIG_GET_HOLLOWCOVERMESH_OFFSET UNITYSDK_OFFSET(0x18667920)
+#define WEATHERCONFIG_GET_HOLLOWCOVERSIZE_OFFSET UNITYSDK_OFFSET(0x18667900)
+#define WEATHERCONFIG_GET_ISOPTIMIZEDSCENEBOUNDBOXVALUE_OFFSET UNITYSDK_OFFSET(0x18667D40)
+#define WEATHERCONFIG_GET_LERPVALUE_OFFSET UNITYSDK_OFFSET(0x186679A0)
+#define WEATHERCONFIG_GET_NAVMESHBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18667D60)
+#define WEATHERCONFIG_GET_OCEANCENTER_OFFSET UNITYSDK_OFFSET(0x18667AC0)
+#define WEATHERCONFIG_GET_OCEANDEPTHOFFSET_OFFSET UNITYSDK_OFFSET(0x18667B00)
+#define WEATHERCONFIG_GET_OCEANFFTBAKEDATA_OFFSET UNITYSDK_OFFSET(0x18667AA0)
+#define WEATHERCONFIG_GET_OCEANMASKHEIGHTOFFSET_OFFSET UNITYSDK_OFFSET(0x18667A80)
+#define WEATHERCONFIG_GET_OCEANMASKMAPRECT_OFFSET UNITYSDK_OFFSET(0x18667A40)
+#define WEATHERCONFIG_GET_OCEANMASKMAP_OFFSET UNITYSDK_OFFSET(0x18667A20)
+#define WEATHERCONFIG_GET_OVERRIDELOWCLOUDDARKCOLOR_OFFSET UNITYSDK_OFFSET(0x18667860)
+#define WEATHERCONFIG_GET_OVERRIDELOWCLOUDLIGHTCOLOR_OFFSET UNITYSDK_OFFSET(0x18667840)
+#define WEATHERCONFIG_GET_OVERRIDESKYBTNCOLOR_OFFSET UNITYSDK_OFFSET(0x18667800)
+#define WEATHERCONFIG_GET_OVERRIDESKYTOPCOLOR_OFFSET UNITYSDK_OFFSET(0x18667820)
+#define WEATHERCONFIG_GET_OVERRIDESKYWEIGHT_OFFSET UNITYSDK_OFFSET(0x186677E0)
+#define WEATHERCONFIG_GET_PARTICLECONFIG_OFFSET UNITYSDK_OFFSET(0x18667DA0)
+#define WEATHERCONFIG_GET_SCENEBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18667D00)
+#define WEATHERCONFIG_GET_SCENECLIPPLANEY_OFFSET UNITYSDK_OFFSET(0x186678A0)
+#define WEATHERCONFIG_GET_SCENEETHERCOVEREFFECTMAT_OFFSET UNITYSDK_OFFSET(0x186678E0)
+#define WEATHERCONFIG_GET_SCENEHEIGHTMAPYOFFSET_OFFSET UNITYSDK_OFFSET(0x18667D20)
+#define WEATHERCONFIG_GET_SCENEWATERPOOLBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18667B80)
+#define WEATHERCONFIG_GET_SCENEWATERPOOLMAP_OFFSET UNITYSDK_OFFSET(0x18667B60)
+#define WEATHERCONFIG_GET_SCENEWATERPOOLMINMAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x18667BA0)
+#define WEATHERCONFIG_GET_SEALEVELHEIGHT_OFFSET UNITYSDK_OFFSET(0x18667A60)
+#define WEATHERCONFIG_GET_SPECULARTONEMAPPINGCURVETEXTURE_OFFSET UNITYSDK_OFFSET(0x186677D0)
+#define WEATHERCONFIG_GET_SUPPORTEDGITYPE_OFFSET UNITYSDK_OFFSET(0x18667880)
+#define WEATHERCONFIG_GET_WATERCONFIG_OFFSET UNITYSDK_OFFSET(0x18667DC0)
+#define WEATHERCONFIG_GET_WATERHEIGHT_OFFSET UNITYSDK_OFFSET(0x18667960)
+#define WEATHERCONFIG_GET_WATERMATERIALS_OFFSET UNITYSDK_OFFSET(0x18667940)
+#define WEATHERCONFIG_GET_WINDCONFIG_OFFSET UNITYSDK_OFFSET(0x18667DE0)
+#define WEATHERCONFIG_HASGLOBALVOLUMETRICFOG_OFFSET UNITYSDK_OFFSET(0x1866E2E0)
+#define WEATHERCONFIG_HASLIGHTFOGPROXY_OFFSET UNITYSDK_OFFSET(0x1866E480)
+#define WEATHERCONFIG_ISAMBIENTACTIVE_OFFSET UNITYSDK_OFFSET(0x1866A600)
+#define WEATHERCONFIG_ISLIGHTSHAFTON_OFFSET UNITYSDK_OFFSET(0x18669E70)
+#define WEATHERCONFIG_ISSKYBOXFORBAKE_OFFSET UNITYSDK_OFFSET(0x1866C390)
+#define WEATHERCONFIG_LEARPCHARACTERCOLORGRADINGPARAMS_OFFSET UNITYSDK_OFFSET(0x1866B700)
+#define WEATHERCONFIG_LERPWEATHERNEW_OFFSET UNITYSDK_OFFSET(0x186696F0)
+#define WEATHERCONFIG_RELEASE_OFFSET UNITYSDK_OFFSET(0x18669210)
+#define WEATHERCONFIG_REPLACESKINRAMPCOLORSWITHOTHERRAMP_OFFSET UNITYSDK_OFFSET(0x186709E0)
+#define WEATHERCONFIG_SETDEFAULTVALUES_OFFSET UNITYSDK_OFFSET(0x186708E0)
+#define WEATHERCONFIG_SETFOG_OFFSET UNITYSDK_OFFSET(0x18669E10)
+#define WEATHERCONFIG_SETUPCHROMATICABERRATION_OFFSET UNITYSDK_OFFSET(0x1866D070)
+#define WEATHERCONFIG_SETUPSPECULARTONEMAPPING_OFFSET UNITYSDK_OFFSET(0x18670300)
+#define WEATHERCONFIG_SETVISUALENVDATA_OFFSET UNITYSDK_OFFSET(0x18669FF0)
+#define WEATHERCONFIG_SET_CLOUDLERPALPHA_OFFSET UNITYSDK_OFFSET(0x186679D0)
+#define WEATHERCONFIG_SET_CUSTOMSKYBOXMESH_OFFSET UNITYSDK_OFFSET(0x186678D0)
+#define WEATHERCONFIG_SET_ENABLELOCALHEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x18667A10)
+#define WEATHERCONFIG_SET_GLOBALDECALBLENDPARAMS_OFFSET UNITYSDK_OFFSET(0x18667B50)
+#define WEATHERCONFIG_SET_GROUNDPOS_OFFSET UNITYSDK_OFFSET(0x18667D90)
+#define WEATHERCONFIG_SET_HASTRIGGERSPECIALCLOUDLAYER_OFFSET UNITYSDK_OFFSET(0x18667990)
+#define WEATHERCONFIG_SET_HEIGHTMAP2_OFFSET UNITYSDK_OFFSET(0x18667B30)
+#define WEATHERCONFIG_SET_HEIGHTMAP_OFFSET UNITYSDK_OFFSET(0x186679F0)
+#define WEATHERCONFIG_SET_HOLLOWCOVERMESH_OFFSET UNITYSDK_OFFSET(0x18667930)
+#define WEATHERCONFIG_SET_HOLLOWCOVERSIZE_OFFSET UNITYSDK_OFFSET(0x18667910)
+#define WEATHERCONFIG_SET_ISOPTIMIZEDSCENEBOUNDBOXVALUE_OFFSET UNITYSDK_OFFSET(0x18667D50)
+#define WEATHERCONFIG_SET_LERPVALUE_OFFSET UNITYSDK_OFFSET(0x186679B0)
+#define WEATHERCONFIG_SET_NAVMESHBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18667D70)
+#define WEATHERCONFIG_SET_OCEANCENTER_OFFSET UNITYSDK_OFFSET(0x18667AE0)
+#define WEATHERCONFIG_SET_OCEANDEPTHOFFSET_OFFSET UNITYSDK_OFFSET(0x18667B10)
+#define WEATHERCONFIG_SET_OCEANFFTBAKEDATA_OFFSET UNITYSDK_OFFSET(0x18667AB0)
+#define WEATHERCONFIG_SET_OCEANMASKHEIGHTOFFSET_OFFSET UNITYSDK_OFFSET(0x18667A90)
+#define WEATHERCONFIG_SET_OCEANMASKMAPRECT_OFFSET UNITYSDK_OFFSET(0x18667A50)
+#define WEATHERCONFIG_SET_OCEANMASKMAP_OFFSET UNITYSDK_OFFSET(0x18667A30)
+#define WEATHERCONFIG_SET_OVERRIDELOWCLOUDDARKCOLOR_OFFSET UNITYSDK_OFFSET(0x18667870)
+#define WEATHERCONFIG_SET_OVERRIDELOWCLOUDLIGHTCOLOR_OFFSET UNITYSDK_OFFSET(0x18667850)
+#define WEATHERCONFIG_SET_OVERRIDESKYBTNCOLOR_OFFSET UNITYSDK_OFFSET(0x18667810)
+#define WEATHERCONFIG_SET_OVERRIDESKYTOPCOLOR_OFFSET UNITYSDK_OFFSET(0x18667830)
+#define WEATHERCONFIG_SET_OVERRIDESKYWEIGHT_OFFSET UNITYSDK_OFFSET(0x186677F0)
+#define WEATHERCONFIG_SET_PARTICLECONFIG_OFFSET UNITYSDK_OFFSET(0x18667DB0)
+#define WEATHERCONFIG_SET_SCENEBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18667D10)
+#define WEATHERCONFIG_SET_SCENECLIPPLANEY_OFFSET UNITYSDK_OFFSET(0x186678B0)
+#define WEATHERCONFIG_SET_SCENEETHERCOVEREFFECTMAT_OFFSET UNITYSDK_OFFSET(0x186678F0)
+#define WEATHERCONFIG_SET_SCENEHEIGHTMAPYOFFSET_OFFSET UNITYSDK_OFFSET(0x18667D30)
+#define WEATHERCONFIG_SET_SCENEWATERPOOLBOUNDBOX_OFFSET UNITYSDK_OFFSET(0x18667B90)
+#define WEATHERCONFIG_SET_SCENEWATERPOOLMAP_OFFSET UNITYSDK_OFFSET(0x18667B70)
+#define WEATHERCONFIG_SET_SCENEWATERPOOLMINMAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x18667BB0)
+#define WEATHERCONFIG_SET_SEALEVELHEIGHT_OFFSET UNITYSDK_OFFSET(0x18667A70)
+#define WEATHERCONFIG_SET_SUPPORTEDGITYPE_OFFSET UNITYSDK_OFFSET(0x18667890)
+#define WEATHERCONFIG_SET_WATERCONFIG_OFFSET UNITYSDK_OFFSET(0x18667DD0)
+#define WEATHERCONFIG_SET_WATERHEIGHT_OFFSET UNITYSDK_OFFSET(0x18667970)
+#define WEATHERCONFIG_SET_WATERMATERIALS_OFFSET UNITYSDK_OFFSET(0x18667950)
+#define WEATHERCONFIG_SET_WINDCONFIG_OFFSET UNITYSDK_OFFSET(0x18667DF0)
+#define WEATHERCONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x18670AD0)
+#define WEATHERCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18667E00)
 
-inline static constexpr unsigned int WeatherConfig_TypeDefinitionIndex = 28063;
+inline static constexpr unsigned int WeatherConfig_TypeDefinitionIndex = 29003;
 
 class WeatherConfig : public ::System::Object
 {
 public:
-	static ::UnityEngine::Gradient** StaticGet_defaultGradient()
+	static ::UnityEngine::Profiling::CustomSampler** StaticGet_Sampler_LerpWeatherNew()
 	{
-		return (::UnityEngine::Gradient**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x224E0);
-	}
-	static ::WeatherConfig** StaticGet_s_CachedConfig()
-	{
-		return (::WeatherConfig**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x224E8);
-	}
-	static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_rgbMaskType()
-	{
-		return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x224F0);
+		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x23F10);
 	}
 	static ::WeatherConfig** StaticGet_s_DefaultConfig()
 	{
-		return (::WeatherConfig**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x224F8);
+		return (::WeatherConfig**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x23F18);
 	}
-	static ::UnityEngine::Profiling::CustomSampler** StaticGet_Sampler_LerpWeatherNew()
+	static ::WeatherConfig** StaticGet_s_CachedConfig()
 	{
-		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x22500);
+		return (::WeatherConfig**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x23F20);
 	}
-	static ::System::Boolean* StaticGet_s_EnableStaticLighting()
+	static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_rgbMaskType()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x6F10);
+		return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x23F28);
+	}
+	static ::UnityEngine::Gradient** StaticGet_defaultGradient()
+	{
+		return (::UnityEngine::Gradient**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x23F30);
 	}
 	static ::System::Boolean* StaticGet_s_RefreshLocalLight()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x6F11);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x7660);
+	}
+	static ::System::Boolean* StaticGet_s_EnableStaticLighting()
+	{
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x7661);
+	}
+	static ::UnityEngine::NAPRenderPipeline0::UpdateKodamaLightingParams* StaticGet_s_CachedUpdateKodamaLightingParams()
+	{
+		return (::UnityEngine::NAPRenderPipeline0::UpdateKodamaLightingParams*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x7664);
 	}
 	static ::System::Single* StaticGet_lastLerpValue()
 	{
-		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x6F14);
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x76A0);
+	}
+	static ::UnityEngine::Vector4* StaticGet_s_CachedKodamaGIParams()
+	{
+		return (::UnityEngine::Vector4*)Il2CppClass::FromTypeDefinitionIndex(WeatherConfig_TypeDefinitionIndex)->GetStaticField(0x76A4);
 	}
 	::System::Boolean overrideGiConfig; // 0x10
 	::UnityEngine::Rendering::Universal::GIConfig* giConfig; // 0x18
@@ -266,416 +274,424 @@ public:
 	::System::Boolean overrideFakeInterior; // 0xC8
 	::System::Single interiorDayAndNight; // 0xCC
 	::System::Single interiorSmoothnessScale; // 0xD0
-	::System::Boolean overrideSceneTwist; // 0xD4
-	::System::Boolean mainCameraAsPivot; // 0xD5
-	::UnityEngine::GameObject* worldTwistPivot; // 0xD8
-	::System::Single worldTwistBendSize; // 0xE0
-	::System::Single worldTwistRotationSpeed; // 0xE4
-	::System::Single worldTwistSafeDistance; // 0xE8
-	::System::Single worldTwistFadeDistance; // 0xEC
-	::UnityEngine::Texture* worldTwistAdditionalNoiseMap; // 0xF0
-	::System::Single worldTwistNoise1Tiling; // 0xF8
-	::UnityEngine::Vector2 worldTwistNoise1Speed; // 0xFC
-	::System::Single worldTwistNoise1Intensity; // 0x104
-	::System::Single worldTwistNoise2Tiling; // 0x108
-	::UnityEngine::Vector2 worldTwistNoise2Speed; // 0x10C
-	::System::Single worldTwistNoise2Intensity; // 0x114
-	::System::Boolean worldTwistEnableCustomDirection; // 0x118
-	::System::Single worldTwistCustomDirection; // 0x11C
-	::System::Boolean overrideHotTwist; // 0x120
-	::System::Boolean enableHotTwist; // 0x121
-	::System::Single hotTwistStrength; // 0x124
-	::System::Single hotTwistNoiseScale; // 0x128
-	::UnityEngine::Vector2 hotTwistSpeed; // 0x12C
-	::UnityEngine::Vector2 hotTwistRepeatX; // 0x134
-	::UnityEngine::Vector2 hotTwistRepeatZ; // 0x13C
-	::System::Single hotTwistDepthDistance; // 0x144
-	::System::Single hotTwistDepthFade; // 0x148
-	::System::Boolean hotTwistHeightMaskDebugView; // 0x14C
-	::System::Single hotTwistHeightMaskStrength; // 0x150
-	::System::Single hotTwistHeightMaskOffset; // 0x154
-	::System::Single hotTwistHeightMaskPower; // 0x158
-	::System::Boolean overrideSceneSceneEffect; // 0x15C
-	::System::Boolean ScanlineOn; // 0x15D
-	::System::Single SceneScanlineWidth; // 0x160
-	::System::Single SceneScanlineContrast; // 0x164
-	::System::Single SceneScanlineAngle; // 0x168
-	::System::Single SceneScanlineLerpBrightness; // 0x16C
-	::System::Single outlineOpacity; // 0x170
-	::System::Single outlineDiffOffset; // 0x174
-	::System::Single outlineDepthThreshold; // 0x178
-	::System::Single outlineNormalThreshold; // 0x17C
-	::System::Single outlineNormalThresholdScale; // 0x180
-	::UnityEngine::Color outlineColor; // 0x184
-	::System::Single Heightfade; // 0x194
-	::System::Single Depthfade; // 0x198
-	::System::Single DepthfadeHardness; // 0x19C
-	::System::Boolean overrideExpHeightFog; // 0x1A0
-	::UnityEngine::Rendering::Universal::ExpHeightFogConfig* expHeightFogConfig; // 0x1A8
-	::System::Boolean overrideSecondFog; // 0x1B0
-	::UnityEngine::Rendering::Universal::SecondFogConfig* secondFogConfig; // 0x1B8
-	::System::Boolean overrideFogMask; // 0x1C0
-	::UnityEngine::Rendering::Universal::FogMaskConfig* fogMaskConfig; // 0x1C8
-	::System::Boolean overrideVolumetricFog; // 0x1D0
-	::System::Boolean hasGlobalVolumetricFog; // 0x1D1
-	::System::Boolean volumetricFogDisableFogShadow; // 0x1D2
-	::System::Single volumetricFogSize; // 0x1D4
-	::System::Single volumetricFog_Jittering; // 0x1D8
-	::System::Single volumetricFog_Dithering; // 0x1DC
-	::System::Single volumetricFog_IntensityTowardLight; // 0x1E0
-	::System::Single volumetricFog_DustIntensity; // 0x1E4
-	::System::Single volumetricFog_MaxIntensity; // 0x1E8
-	::System::Single volumetricFog_Step; // 0x1EC
-	::UnityEngine::Color volumetricFog_Color; // 0x1F0
-	::System::Single volumetricFog_PunctualLightMultiplier; // 0x200
-	::System::Single volumetricFog_PunctualLightFadePower; // 0x204
-	::System::Single volumetricFog_ExtraBlurValue; // 0x208
-	::System::Boolean VolumetricFogBlitBeforeEffect; // 0x20C
-	::System::Boolean overrideLightFog; // 0x20D
-	::System::Boolean hasLightFogProxy; // 0x20E
-	::System::Single lightFogMaxDensity; // 0x210
-	::System::Single lightFogSoftParticleStartFadeDistance; // 0x214
-	::System::Single lightFogSoftParticleFadeFactor; // 0x218
-	::System::Boolean useSimpleFakeLightFogProxy; // 0x21C
-	::System::Boolean overrideSceneFogCard; // 0x21D
-	::System::Boolean overrideSceneFogCardColor; // 0x21E
-	::UnityEngine::Color sceneFogCardAmbientScatteringColor; // 0x220
-	::System::Boolean useRevertVolumetricFog; // 0x230
-	::System::Boolean overrideSkyCloud; // 0x231
-	::UnityEngine::Rendering::Universal::SkyCloudConfig* skyCloudConfig; // 0x238
-	::System::Boolean overrideSkyCloudLighting; // 0x240
-	::System::Boolean CloudLightEnabled; // 0x241
-	::System::Single cloudLightWidth; // 0x244
-	::System::Single cloudLightStrength; // 0x248
-	::System::Single cloudLightMaxIntervalTime; // 0x24C
-	::System::Single cloudLightMinIntervalTime; // 0x250
-	::System::Single cloudLightDurationTime; // 0x254
-	::System::Single cloudLightMaxLength; // 0x258
-	::System::Single cloudLightMinLength; // 0x25C
-	::System::Single cloudLightLocalTime; // 0x260
-	::System::Single cloudLightRandom; // 0x264
-	::System::Boolean overrideCloudShadow; // 0x268
-	::System::Single cloudShadowIntensity; // 0x26C
-	::UnityEngine::Texture* cloudShadow; // 0x270
-	::UnityEngine::Vector4 cloudShadowTileAndOffset; // 0x278
-	::System::Boolean cloudGodRay; // 0x288
-	::UnityEngine::Vector2 cloudShadowMoveSpeed; // 0x28C
-	::UnityEngine::Vector3 cloudShadowRotation; // 0x294
-	::System::Boolean overrideVolumetricCloud; // 0x2A0
-	::UnityEngine::Rendering::Universal::VolumetricCloudConfig* volumetricCloudConfig; // 0x2A8
-	::System::Boolean mistBlitAfterColorGrading; // 0x2B0
-	::System::Boolean mistBlitAfterParticleDecal; // 0x2B1
-	::System::Boolean overrideCloudChromaAmount; // 0x2B2
-	::UnityEngine::Color cloudChromaAmountIntensity; // 0x2B4
-	::UnityEngine::Vector2 cloudChromaAmount; // 0x2C4
-	::UnityEngine::NAPRenderPipeline0::RGBMaskType cloudChromaType; // 0x2CC
-	::UnityEngine::Texture2D* cloudChromaAmountIntensityMask; // 0x2D0
-	::UnityEngine::Texture2D* cloudChromaAmountMask; // 0x2D8
-	::UnityEngine::Vector2 cloudChromaAmountMaskTiling; // 0x2E0
-	::UnityEngine::Vector2 cloudChromaAmountMaskSpeed; // 0x2E8
-	::UnityEngine::NAPRenderPipeline0::TextureChannel cloudChromaAmountMaskChannel; // 0x2F0
-	::System::Boolean overrideSkyCover; // 0x2F4
-	::System::Single SkyCoverMoveSpeed; // 0x2F8
-	::UnityEngine::Color SkyCoverColor; // 0x2FC
-	::System::Boolean useAnimatedSkyCover; // 0x30C
-	::System::Single skyCoverAnimationDeltaTime; // 0x310
-	::UnityEngine::AnimationCurve* skyCoverAlphaAnimation; // 0x318
-	::System::Boolean overrideSceneParticle; // 0x320
-	::UnityEngine::Rendering::Universal::SceneParticleConfig* sceneParticleConfig; // 0x328
-	::System::Boolean overrideEtherFX; // 0x330
-	::System::Single etherFXWaveAngle; // 0x334
-	::System::Single etherFXWaveSpeed; // 0x338
-	::System::Single etherFXWaveSpacing; // 0x33C
-	::System::Single etherEffectDirection; // 0x340
-	::System::Single etherEffectSpeed; // 0x344
-	::UnityEngine::Rendering::Universal::VisualEnvironmentE_WeatherType particleConfigWeatherType; // 0x348
-	::System::Single weatherEffectFoggyIntensity; // 0x34C
-	::System::Single weatherEffectSpecialRedIntensity; // 0x350
-	::System::Boolean overrideSkyColor; // 0x354
-	::UnityEngine::Gradient* skyVerticalGradient; // 0x358
-	::System::Single skyVerticalGradientMinRange; // 0x360
-	::System::Boolean overrideSunLight; // 0x364
-	::UnityEngine::Vector3 mainLightDir; // 0x368
-	::System::Boolean overrideSunLightColor; // 0x374
-	::UnityEngine::Color mainLightColor; // 0x378
-	::System::Single mainLightIntensity; // 0x388
-	::System::Boolean overrideSkySun; // 0x38C
-	::UnityEngine::Color sunDiskColor; // 0x390
-	::System::Single SunDiskSize; // 0x3A0
-	::System::Single SunDiskIntensity; // 0x3A4
-	::System::Boolean useSingleSunDiskPosition; // 0x3A8
-	::UnityEngine::Vector3 sunDiskPosition; // 0x3AC
-	::System::Single customSunHardness; // 0x3B8
-	::System::Boolean useSunAnimation; // 0x3BC
-	::System::Single SunanimationLifeTime; // 0x3C0
-	::UnityEngine::AnimationCurve* SunDiskCurve; // 0x3C8
-	::System::Boolean overrideSunPost; // 0x3D0
-	::System::Boolean enableLensFlareForSun; // 0x3D1
-	::UnityEngine::Rendering::LensFlareDataSRP* lensFlareDataSrp; // 0x3D8
-	::UnityEngine::Rendering::Universal::LensFlareConfig* lensFlareConfigForSun; // 0x3E0
-	::UnityEngine::Rendering::Universal::LightShaftConfig* lightShaftConfigForSun; // 0x3E8
-	::System::Boolean overrideMoonLight; // 0x3F0
-	::UnityEngine::Vector3 moonDir; // 0x3F4
-	::System::Boolean overrideMoonLightColor; // 0x400
-	::UnityEngine::Color MoonLightColor; // 0x404
-	::System::Single MoonLightIntensity; // 0x414
-	::System::Boolean overrideSkyMoon; // 0x418
-	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> moonOnSky; // 0x41C
-	::UnityEngine::Color MoonColor; // 0x420
-	::System::Single moonSize; // 0x430
-	::System::Single moonPhaseAlphaBlend; // 0x434
-	::UnityEngine::Color MoonGlowColor; // 0x438
-	::System::Boolean overrideMoonPost; // 0x448
-	::System::Boolean enableLensFlareForMoon; // 0x449
-	::UnityEngine::Rendering::LensFlareDataSRP* lensFlareDataSrpForMoon; // 0x450
-	::UnityEngine::Rendering::Universal::LensFlareConfig* lensFlareConfigForMoon; // 0x458
-	::UnityEngine::Rendering::Universal::LightShaftConfig* lightShaftConfigForMoon; // 0x460
-	::System::Boolean overrideSkyStar; // 0x468
-	::System::Boolean isNight; // 0x469
-	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> starMapOnSky; // 0x46C
-	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> starMaskOnSky; // 0x470
-	::System::Single starsTwinklingRate; // 0x474
-	::System::Single StarsIntensity; // 0x478
-	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> galaxyOnSky; // 0x47C
-	::UnityEngine::Vector3 galaxyDir; // 0x480
-	::UnityEngine::Vector3 galaxyAngleSpeed; // 0x48C
-	::System::Single GalaxyIntensity; // 0x498
-	::System::Boolean overrideShadowTint; // 0x49C
-	::System::Boolean mainLightShadowTint; // 0x49D
-	::UnityEngine::Color mainLightShadowTintColor; // 0x4A0
-	::System::Single mainLightShadowTintSourceAngle; // 0x4B0
-	::System::Single mainLightShadowTintPower; // 0x4B4
-	::System::Single mainLightShadowTintRadius; // 0x4B8
-	::System::Single mainLightShadowTintRadiusPower; // 0x4BC
-	::System::Single mainLightShadowTintDepthBias; // 0x4C0
-	::System::Boolean overrideCustomSkyBox; // 0x4C4
-	::System::Boolean controlMainLightParam; // 0x4C5
-	::UnityEngine::Material* replaceSkybox; // 0x4C8
-	::UnityEngine::Material* hollowCoverMat; // 0x4D0
-	::UnityEngine::Gradient* cloudOnSkyColor; // 0x4D8
-	::System::Single cloudRotateAngle; // 0x4E0
-	::System::Boolean overrideWetness; // 0x4E4
-	::System::Single wetness; // 0x4E8
-	::System::Boolean ignoreHeightMap; // 0x4EC
-	::System::Boolean ignoreNoiseMap; // 0x4ED
-	::UnityEngine::Texture* wetnessNoise; // 0x4F0
-	::System::Single wetnessNoiseTilling; // 0x4F8
-	::UnityEngine::Vector2 wetnessNoiseClampRange; // 0x4FC
-	::System::Boolean wetnessNoiseForHeight; // 0x504
-	::UnityEngine::Vector2 porosity; // 0x508
-	::System::Boolean overrideRainConfig; // 0x510
-	::System::Boolean isRaining; // 0x511
-	::UnityEngine::Texture* rainDropTexture; // 0x518
-	::UnityEngine::Color rainDropColor; // 0x520
-	::System::Single rainDropMultiplyLightColor; // 0x530
-	::System::Int32 rainDropBatchCount; // 0x534
-	::System::Single rainDropSpeed; // 0x538
-	::System::Single rainDropMaxHeight; // 0x53C
-	::System::Single rainDropMinHeight; // 0x540
-	::UnityEngine::Vector2 rainDropSizeX; // 0x544
-	::UnityEngine::Vector2 rainDropSizeY; // 0x54C
-	::System::Single rainDropAngle; // 0x554
-	::System::Single rainDropAngleIntensity; // 0x558
-	::System::Single rainDropOuterCircleRadius; // 0x55C
-	::System::Single rainDropInnerCircleRadius; // 0x560
-	::UnityEngine::Rendering::Universal::ScreenRainDropConfig* screenRainDropConfig; // 0x568
-	::UnityEngine::Texture* rainFlowTexture; // 0x570
-	::System::Single rainFlowTilling; // 0x578
-	::System::Single rainFlowSpeed; // 0x57C
-	::System::Single rainFlowIntensity; // 0x580
-	::UnityEngine::Texture* rainFlowNoise; // 0x588
-	::UnityEngine::Texture* rainTexture2; // 0x590
-	::System::Single rippleTextureTilling; // 0x598
-	::System::Single rippleSpeed; // 0x59C
-	::System::Single rippleDensity; // 0x5A0
-	::System::Single rippleFoamIntensity; // 0x5A4
-	::UnityEngine::Texture* rainSplashTexture; // 0x5A8
-	::UnityEngine::Texture* rainSplashTexture2; // 0x5B0
-	::UnityEngine::Texture* rainSplashTexture3; // 0x5B8
-	::UnityEngine::Color rainSplashColor; // 0x5C0
-	::UnityEngine::Vector2 rainSplashIntensityRange; // 0x5D0
-	::UnityEngine::Vector2 rainSplashSizeRange; // 0x5D8
-	::System::Single rainSplashPlayTime; // 0x5E0
-	::System::Int32 rainSplashCount; // 0x5E4
-	::System::Single rainSplashRange; // 0x5E8
-	::System::Boolean overrideLightning; // 0x5EC
-	::System::Boolean useAnimation; // 0x5ED
-	::System::Single animationLifeTime; // 0x5F0
-	::UnityEngine::AnimationCurve* mainLightIntensityCurve; // 0x5F8
-	::System::Boolean useLightningFx; // 0x600
-	::UnityEngine::ParticleSystem* lightningFxPrefab; // 0x608
-	::UnityEngine::Vector2 lightningFxDistanceRange; // 0x610
-	::UnityEngine::Vector2 lightningFxHeightRange; // 0x618
-	::UnityEngine::Vector2 lightningFxInterval; // 0x620
-	::System::Boolean overrideDetailLayerConfig; // 0x628
-	::UnityEngine::Rendering::Universal::DetailLayerConfig* detailLayerConfig; // 0x630
-	::System::Boolean overrideSkyGridConfig; // 0x638
-	::UnityEngine::Rendering::Universal::SkyGridConfig* skyGridConfig; // 0x640
-	::System::Boolean overrideCharacterToneMapping; // 0x648
-	::System::Single characterLightTonemapStart; // 0x64C
-	::System::Single characterLightTonemapMax; // 0x650
-	::System::Single characterLightTonemapFaceAdd; // 0x654
-	::System::Single characterLightTonemapFaceEnd; // 0x658
-	::System::Single characterGiWeight; // 0x65C
-	::System::Single toeStrength; // 0x660
-	::System::Single toeLength; // 0x664
-	::System::Single shoulderStrength; // 0x668
-	::System::Single shoulderLength; // 0x66C
-	::System::Single shoulderAngle; // 0x670
-	::System::Single customGamma; // 0x674
-	::System::Boolean characterEditorIsIndoor; // 0x678
-	::System::Boolean overrideCharacterLight; // 0x679
-	::UnityEngine::Color mainLightColorForChara; // 0x67C
-	::System::Single mainLightIntensityForChara; // 0x68C
-	::System::Single mainLightShadowStrengthForChara; // 0x690
-	::System::Single rimGlowIntensityForChara; // 0x694
-	::UnityEngine::Color MoonLightColorForChar; // 0x698
-	::System::Single MoonLightIntensityForChar; // 0x6A8
-	::System::Single moonLightShadowStrengthForChara; // 0x6AC
-	::System::Single moonRimGlowIntensityForChara; // 0x6B0
-	::UnityEngine::Color ambient; // 0x6B4
-	::UnityEngine::Color mainLightColorForCharaIndoor; // 0x6C4
-	::System::Single mainLightIntensityForCharaIndoor; // 0x6D4
-	::System::Single mainLightShadowStrengthForCharaIndoor; // 0x6D8
-	::System::Single rimGlowIntensityForCharaIndoor; // 0x6DC
-	::UnityEngine::Color MoonLightColorForCharIndoor; // 0x6E0
-	::System::Single MoonLightIntensityForCharIndoor; // 0x6F0
-	::System::Single moonLightShadowStrengthForCharaIndoor; // 0x6F4
-	::System::Single moonRimGlowIntensityForCharaIndoor; // 0x6F8
-	::UnityEngine::Color ambientIndoor; // 0x6FC
-	::System::Boolean overrideCharacterRamp; // 0x70C
-	::UnityEngine::Color skinFrontTint; // 0x710
-	::UnityEngine::Color frontTint; // 0x720
-	::UnityEngine::Color skinSssTint; // 0x730
-	::UnityEngine::Color sssTint; // 0x740
-	::UnityEngine::Color skinShallowTint; // 0x750
-	::UnityEngine::Color shallowTint; // 0x760
-	::UnityEngine::Color skinShallowFadeTint; // 0x770
-	::UnityEngine::Color shallowFadeTint; // 0x780
-	::UnityEngine::Color skinShadowTint; // 0x790
-	::UnityEngine::Color shadowTint; // 0x7A0
-	::UnityEngine::Color skinShadowFadeTint; // 0x7B0
-	::UnityEngine::Color shadowFadeTint; // 0x7C0
-	::UnityEngine::Color ambientGradient; // 0x7D0
-	::UnityEngine::Color outlineTint; // 0x7E0
-	::System::Boolean useShadowTintAsOutline; // 0x7F0
-	::UnityEngine::Color skinFrontTintIndoor; // 0x7F4
-	::UnityEngine::Color frontTintIndoor; // 0x804
-	::UnityEngine::Color skinSssTintIndoor; // 0x814
-	::UnityEngine::Color sssTintIndoor; // 0x824
-	::UnityEngine::Color skinShallowTintIndoor; // 0x834
-	::UnityEngine::Color shallowTintIndoor; // 0x844
-	::UnityEngine::Color skinShallowFadeTintIndoor; // 0x854
-	::UnityEngine::Color shallowFadeTintIndoor; // 0x864
-	::UnityEngine::Color skinShadowTintIndoor; // 0x874
-	::UnityEngine::Color shadowTintIndoor; // 0x884
-	::UnityEngine::Color skinShadowFadeTintIndoor; // 0x894
-	::UnityEngine::Color shadowFadeTintIndoor; // 0x8A4
-	::UnityEngine::Color ambientGradientIndoor; // 0x8B4
-	::UnityEngine::Color outlineTintIndoor; // 0x8C4
-	::System::Boolean useShadowTintAsOutlineIndoor; // 0x8D4
-	::System::Boolean overrideCharacterPost; // 0x8D5
-	::System::Boolean characterColorGradingEnabled; // 0x8D6
-	::System::Single characterPostExposure; // 0x8D8
-	::System::Single contrast; // 0x8DC
-	::System::Single saturation; // 0x8E0
-	::UnityEngine::Vector4 lift; // 0x8E4
-	::UnityEngine::Vector4 gamma; // 0x8F4
-	::UnityEngine::Vector4 gain; // 0x904
-	::System::Single characterPostExposureIndoor; // 0x914
-	::System::Single contrastIndoor; // 0x918
-	::System::Single saturationIndoor; // 0x91C
-	::UnityEngine::Vector4 liftIndoor; // 0x920
-	::UnityEngine::Vector4 gammaIndoor; // 0x930
-	::UnityEngine::Vector4 gainIndoor; // 0x940
-	::System::Boolean skinColorsInitialized; // 0x950
-	::System::Boolean overrideWaterConfig; // 0x951
-	::System::Boolean useGlobalWaterConfig; // 0x952
-	::UnityEngine::Rendering::Universal::SingleWeatherConfigWater* localWaterConfig; // 0x958
-	::System::Boolean overrideOceanConfig; // 0x960
-	::UnityEngine::Rendering::Universal::OceanConfig* oceanConfig; // 0x968
-	::System::Boolean trackControlScenePost; // 0x970
-	::System::Boolean overrideOldSceneLut; // 0x971
-	::System::Boolean useCustomLookupTable; // 0x972
-	::UnityEngine::Texture* lookupTable; // 0x978
-	::System::Single lutContribution; // 0x980
-	::System::Single postExposure; // 0x984
-	::UnityEngine::Rendering::Universal::ScenePostEffectConfig* scenePostEffectConfig; // 0x988
-	::System::Boolean overrideSceneLut; // 0x990
-	::System::Boolean useLogLookupTable; // 0x991
-	::UnityEngine::Texture* LogLutTex; // 0x998
-	::System::Single loglutContribution; // 0x9A0
-	::UnityEngine::Texture* PreLogLutTex; // 0x9A8
-	::System::Single preLoglutContribution; // 0x9B0
-	::System::Boolean overrideSceneBloom; // 0x9B4
-	::System::Boolean useSceneBloom; // 0x9B5
-	::System::Single bloomThreshold; // 0x9B8
-	::System::Single bloomMaxThreshold; // 0x9BC
-	::System::Single bloomIntensity; // 0x9C0
-	::System::Boolean overrideSpecularTonemapping; // 0x9C4
-	::System::Boolean enableSpecularTonemapping; // 0x9C5
-	::System::Boolean previewSpecularLutTexture; // 0x9C6
-	::UnityEngine::Texture2D* specularTonemappingLut; // 0x9C8
-	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_master; // 0x9D0
-	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_red; // 0x9D8
-	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_green; // 0x9E0
-	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_blue; // 0x9E8
-	::UnityEngine::RenderTexture* specularToneMappingCurveTexture; // 0x9F0
-	::UnityEngine::Texture2D* specularCurveTexMaster; // 0x9F8
-	::UnityEngine::Texture2D* specularCurveTexR; // 0xA00
-	::UnityEngine::Texture2D* specularCurveTexG; // 0xA08
-	::UnityEngine::Texture2D* specularCurveTexB; // 0xA10
-	::UnityEngine::Material* specularLUTMat; // 0xA18
-	::UnityEngine::Vector2 specularDistanceFade; // 0xA20
-	::UnityEngine::Vector2 specularDistanceFadeValue; // 0xA28
-	::UnityEngine::Vector2 specularAngleFade; // 0xA30
-	::UnityEngine::Vector2 specularAngleFadeValue; // 0xA38
-	::UnityEngine::Rendering::Universal::VisualEnvironmentE_WeatherType WeatherType; // 0xA40
-	::System::Boolean isSerializedData; // 0xA44
-	::WeatherConfig_ResultMainLightParams resultMainLightParams; // 0xA48
-	::System::Single _CachedMainLightIntensity; // 0xAA0
-	::System::Single _AnimationSunDisk; // 0xAA4
-	::WeatherConfig_CapturedWeatherData capturedData; // 0xAA8
-	::WeatherConfig_RuntimeUsedNightTextures nightTextures; // 0xB18
-	::System::Single _OverrideSkyWeight_k__BackingField; // 0xB38
-	::UnityEngine::Color _OverrideSkyBtnColor_k__BackingField; // 0xB3C
-	::UnityEngine::Color _OverrideSkyTopColor_k__BackingField; // 0xB4C
-	::UnityEngine::Color _OverrideLowCloudLightColor_k__BackingField; // 0xB5C
-	::UnityEngine::Color _OverrideLowCloudDarkColor_k__BackingField; // 0xB6C
-	::UnityEngine::NAPRenderPipeline0::ESupportedGIType _SupportedGIType_k__BackingField; // 0xB7C
-	::System::Single _SceneClipPlaneY_k__BackingField; // 0xB80
-	::UnityEngine::Mesh* _customSkyboxMesh_k__BackingField; // 0xB88
-	::UnityEngine::Material* _sceneEtherCoverEffectMat_k__BackingField; // 0xB90
-	::System::Single _hollowCoverSize_k__BackingField; // 0xB98
-	::UnityEngine::Mesh* _hollowCoverMesh_k__BackingField; // 0xBA0
-	::System::Collections::Generic::List_1<::UnityEngine::Material*>* _waterMaterials_k__BackingField; // 0xBA8
-	::System::Single _waterHeight_k__BackingField; // 0xBB0
-	::System::Boolean _hasTriggerSpecialCloudLayer_k__BackingField; // 0xBB4
-	::System::Single cloudLerpAlpha; // 0xBB8
-	::System::Single lerpValue; // 0xBBC
-	::UnityEngine::Texture* _HeightMap_k__BackingField; // 0xBC0
-	::System::Boolean _enableLocalHeightMap_k__BackingField; // 0xBC8
-	::UnityEngine::Texture* _OceanMaskMap_k__BackingField; // 0xBD0
-	::UnityEngine::Vector4 _OceanMaskMapRect_k__BackingField; // 0xBD8
-	::System::Single _SeaLevelHeight_k__BackingField; // 0xBE8
-	::System::Single _OceanMaskHeightOffset_k__BackingField; // 0xBEC
-	::UnityEngine::Rendering::Universal::OceanFFTBakeData* _OceanFFTBakeData_k__BackingField; // 0xBF0
-	::UnityEngine::Vector3 _OceanCenter_k__BackingField; // 0xBF8
-	::System::Single _OceanDepthOffset_k__BackingField; // 0xC04
-	::UnityEngine::Texture* _HeightMap2_k__BackingField; // 0xC08
-	::UnityEngine::Vector4 _GlobalDecalBlendParams_k__BackingField; // 0xC10
-	::UnityEngine::Texture* _SceneWaterPoolMap_k__BackingField; // 0xC20
-	::UnityEngine::Vector4 _SceneWaterPoolBoundBox_k__BackingField; // 0xC28
-	::UnityEngine::Vector2 _SceneWaterPoolMinMaxHeight_k__BackingField; // 0xC38
-	::UnityEngine::Vector4 _SceneBoundBox_k__BackingField; // 0xC40
-	::System::Single _sceneHeightMapYOffset_k__BackingField; // 0xC50
-	::System::Boolean _isOptimizedSceneBoundBoxValue_k__BackingField; // 0xC54
-	::UnityEngine::Vector4 _NavMeshBoundBox_k__BackingField; // 0xC58
-	::UnityEngine::Vector4 _GroundPos_k__BackingField; // 0xC68
-	::UnityEngine::Rendering::Universal::SingleWeatherConfigParticle* _particleConfig_k__BackingField; // 0xC78
-	::UnityEngine::Rendering::Universal::SingleWeatherConfigWater* _waterConfig_k__BackingField; // 0xC80
-	::UnityEngine::Rendering::Universal::SingleWeatherConfigWind* _windConfig_k__BackingField; // 0xC88
-	::System::Single preFrameDaytime; // 0xC90
+	::System::Boolean overrideBrightSpotsFlareConfig; // 0xD4
+	::System::Boolean enableBrightSpotsFlare; // 0xD5
+	::UnityEngine::Texture2D* flareTexture; // 0xD8
+	::System::Single flareLuminanceThreshold; // 0xE0
+	::System::Single flareOpacity; // 0xE4
+	::System::Single flareMinSize; // 0xE8
+	::System::Single flareMaxSize; // 0xEC
+	::System::Int32 flareVerticalGridCount; // 0xF0
+	::System::Boolean overrideSceneTwist; // 0xF4
+	::System::Boolean mainCameraAsPivot; // 0xF5
+	::UnityEngine::GameObject* worldTwistPivot; // 0xF8
+	::System::Single worldTwistBendSize; // 0x100
+	::System::Single worldTwistRotationSpeed; // 0x104
+	::System::Single worldTwistSafeDistance; // 0x108
+	::System::Single worldTwistFadeDistance; // 0x10C
+	::UnityEngine::Texture* worldTwistAdditionalNoiseMap; // 0x110
+	::System::Single worldTwistNoise1Tiling; // 0x118
+	::UnityEngine::Vector2 worldTwistNoise1Speed; // 0x11C
+	::System::Single worldTwistNoise1Intensity; // 0x124
+	::System::Single worldTwistNoise2Tiling; // 0x128
+	::UnityEngine::Vector2 worldTwistNoise2Speed; // 0x12C
+	::System::Single worldTwistNoise2Intensity; // 0x134
+	::System::Boolean worldTwistEnableCustomDirection; // 0x138
+	::System::Single worldTwistCustomDirection; // 0x13C
+	::System::Boolean overrideHotTwist; // 0x140
+	::System::Boolean enableHotTwist; // 0x141
+	::System::Single hotTwistStrength; // 0x144
+	::System::Single hotTwistNoiseScale; // 0x148
+	::UnityEngine::Vector2 hotTwistSpeed; // 0x14C
+	::UnityEngine::Vector2 hotTwistRepeatX; // 0x154
+	::UnityEngine::Vector2 hotTwistRepeatZ; // 0x15C
+	::System::Single hotTwistDepthDistance; // 0x164
+	::System::Single hotTwistDepthFade; // 0x168
+	::System::Boolean hotTwistHeightMaskDebugView; // 0x16C
+	::System::Single hotTwistHeightMaskStrength; // 0x170
+	::System::Single hotTwistHeightMaskOffset; // 0x174
+	::System::Single hotTwistHeightMaskPower; // 0x178
+	::System::Boolean overrideSceneSceneEffect; // 0x17C
+	::System::Boolean ScanlineOn; // 0x17D
+	::System::Single SceneScanlineWidth; // 0x180
+	::System::Single SceneScanlineContrast; // 0x184
+	::System::Single SceneScanlineAngle; // 0x188
+	::System::Single SceneScanlineLerpBrightness; // 0x18C
+	::System::Single outlineOpacity; // 0x190
+	::System::Single outlineDiffOffset; // 0x194
+	::System::Single outlineDepthThreshold; // 0x198
+	::System::Single outlineNormalThreshold; // 0x19C
+	::System::Single outlineNormalThresholdScale; // 0x1A0
+	::UnityEngine::Color outlineColor; // 0x1A4
+	::System::Single Heightfade; // 0x1B4
+	::System::Single Depthfade; // 0x1B8
+	::System::Single DepthfadeHardness; // 0x1BC
+	::System::Boolean overrideExpHeightFog; // 0x1C0
+	::UnityEngine::Rendering::Universal::ExpHeightFogConfig* expHeightFogConfig; // 0x1C8
+	::System::Boolean overrideSecondFog; // 0x1D0
+	::UnityEngine::Rendering::Universal::SecondFogConfig* secondFogConfig; // 0x1D8
+	::System::Boolean overrideFogMask; // 0x1E0
+	::UnityEngine::Rendering::Universal::FogMaskConfig* fogMaskConfig; // 0x1E8
+	::System::Boolean overrideVolumetricFog; // 0x1F0
+	::System::Boolean hasGlobalVolumetricFog; // 0x1F1
+	::System::Boolean volumetricFogDisableFogShadow; // 0x1F2
+	::System::Single volumetricFogSize; // 0x1F4
+	::System::Single volumetricFog_Jittering; // 0x1F8
+	::System::Single volumetricFog_Dithering; // 0x1FC
+	::System::Single volumetricFog_IntensityTowardLight; // 0x200
+	::System::Single volumetricFog_DustIntensity; // 0x204
+	::System::Single volumetricFog_MaxIntensity; // 0x208
+	::System::Single volumetricFog_Step; // 0x20C
+	::UnityEngine::Color volumetricFog_Color; // 0x210
+	::System::Single volumetricFog_PunctualLightMultiplier; // 0x220
+	::System::Single volumetricFog_PunctualLightFadePower; // 0x224
+	::System::Single volumetricFog_ExtraBlurValue; // 0x228
+	::System::Boolean VolumetricFogBlitBeforeEffect; // 0x22C
+	::System::Boolean overrideLightFog; // 0x22D
+	::System::Boolean hasLightFogProxy; // 0x22E
+	::System::Single lightFogMaxDensity; // 0x230
+	::System::Single lightFogSoftParticleStartFadeDistance; // 0x234
+	::System::Single lightFogSoftParticleFadeFactor; // 0x238
+	::System::Boolean useSimpleFakeLightFogProxy; // 0x23C
+	::System::Boolean overrideSceneFogCard; // 0x23D
+	::System::Boolean overrideSceneFogCardColor; // 0x23E
+	::UnityEngine::Color sceneFogCardAmbientScatteringColor; // 0x240
+	::System::Boolean useRevertVolumetricFog; // 0x250
+	::System::Boolean overrideSkyCloud; // 0x251
+	::UnityEngine::Rendering::Universal::SkyCloudConfig* skyCloudConfig; // 0x258
+	::System::Boolean overrideSkyCloudLighting; // 0x260
+	::System::Boolean CloudLightEnabled; // 0x261
+	::System::Single cloudLightWidth; // 0x264
+	::System::Single cloudLightStrength; // 0x268
+	::System::Single cloudLightMaxIntervalTime; // 0x26C
+	::System::Single cloudLightMinIntervalTime; // 0x270
+	::System::Single cloudLightDurationTime; // 0x274
+	::System::Single cloudLightMaxLength; // 0x278
+	::System::Single cloudLightMinLength; // 0x27C
+	::System::Single cloudLightLocalTime; // 0x280
+	::System::Single cloudLightRandom; // 0x284
+	::System::Boolean overrideCloudShadow; // 0x288
+	::System::Single cloudShadowIntensity; // 0x28C
+	::UnityEngine::Texture* cloudShadow; // 0x290
+	::UnityEngine::Vector4 cloudShadowTileAndOffset; // 0x298
+	::System::Boolean cloudGodRay; // 0x2A8
+	::UnityEngine::Vector2 cloudShadowMoveSpeed; // 0x2AC
+	::UnityEngine::Vector3 cloudShadowRotation; // 0x2B4
+	::System::Boolean overrideVolumetricCloud; // 0x2C0
+	::UnityEngine::Rendering::Universal::VolumetricCloudConfig* volumetricCloudConfig; // 0x2C8
+	::System::Boolean mistBlitAfterColorGrading; // 0x2D0
+	::System::Boolean mistBlitAfterParticleDecal; // 0x2D1
+	::System::Boolean overrideCloudChromaAmount; // 0x2D2
+	::UnityEngine::Color cloudChromaAmountIntensity; // 0x2D4
+	::UnityEngine::Vector2 cloudChromaAmount; // 0x2E4
+	::UnityEngine::NAPRenderPipeline0::RGBMaskType cloudChromaType; // 0x2EC
+	::UnityEngine::Texture2D* cloudChromaAmountIntensityMask; // 0x2F0
+	::UnityEngine::Texture2D* cloudChromaAmountMask; // 0x2F8
+	::UnityEngine::Vector2 cloudChromaAmountMaskTiling; // 0x300
+	::UnityEngine::Vector2 cloudChromaAmountMaskSpeed; // 0x308
+	::UnityEngine::NAPRenderPipeline0::TextureChannel cloudChromaAmountMaskChannel; // 0x310
+	::System::Boolean overrideSkyCover; // 0x314
+	::System::Single SkyCoverMoveSpeed; // 0x318
+	::UnityEngine::Color SkyCoverColor; // 0x31C
+	::System::Boolean useAnimatedSkyCover; // 0x32C
+	::System::Single skyCoverAnimationDeltaTime; // 0x330
+	::UnityEngine::AnimationCurve* skyCoverAlphaAnimation; // 0x338
+	::System::Boolean overrideSceneParticle; // 0x340
+	::UnityEngine::Rendering::Universal::SceneParticleConfig* sceneParticleConfig; // 0x348
+	::System::Boolean overrideEtherFX; // 0x350
+	::System::Single etherFXWaveAngle; // 0x354
+	::System::Single etherFXWaveSpeed; // 0x358
+	::System::Single etherFXWaveSpacing; // 0x35C
+	::System::Single etherEffectDirection; // 0x360
+	::System::Single etherEffectSpeed; // 0x364
+	::UnityEngine::Rendering::Universal::VisualEnvironmentE_WeatherType particleConfigWeatherType; // 0x368
+	::System::Single weatherEffectFoggyIntensity; // 0x36C
+	::System::Single weatherEffectSpecialRedIntensity; // 0x370
+	::System::Boolean overrideSkyColor; // 0x374
+	::UnityEngine::Gradient* skyVerticalGradient; // 0x378
+	::System::Single skyVerticalGradientMinRange; // 0x380
+	::System::Boolean overrideSunLight; // 0x384
+	::UnityEngine::Vector3 mainLightDir; // 0x388
+	::System::Boolean overrideSunLightColor; // 0x394
+	::UnityEngine::Color mainLightColor; // 0x398
+	::System::Single mainLightIntensity; // 0x3A8
+	::System::Boolean overrideSkySun; // 0x3AC
+	::UnityEngine::Color sunDiskColor; // 0x3B0
+	::System::Single SunDiskSize; // 0x3C0
+	::System::Single SunDiskIntensity; // 0x3C4
+	::System::Boolean useSingleSunDiskPosition; // 0x3C8
+	::UnityEngine::Vector3 sunDiskPosition; // 0x3CC
+	::System::Single customSunHardness; // 0x3D8
+	::System::Boolean useSunAnimation; // 0x3DC
+	::System::Single SunanimationLifeTime; // 0x3E0
+	::UnityEngine::AnimationCurve* SunDiskCurve; // 0x3E8
+	::System::Boolean overrideSunPost; // 0x3F0
+	::System::Boolean enableLensFlareForSun; // 0x3F1
+	::UnityEngine::Rendering::LensFlareDataSRP* lensFlareDataSrp; // 0x3F8
+	::UnityEngine::Rendering::Universal::LensFlareConfig* lensFlareConfigForSun; // 0x400
+	::UnityEngine::Rendering::Universal::LightShaftConfig* lightShaftConfigForSun; // 0x408
+	::System::Boolean overrideMoonLight; // 0x410
+	::UnityEngine::Vector3 moonDir; // 0x414
+	::System::Boolean overrideMoonLightColor; // 0x420
+	::UnityEngine::Color MoonLightColor; // 0x424
+	::System::Single MoonLightIntensity; // 0x434
+	::System::Boolean overrideSkyMoon; // 0x438
+	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> moonOnSky; // 0x43C
+	::UnityEngine::Color MoonColor; // 0x440
+	::System::Single moonSize; // 0x450
+	::System::Single moonPhaseAlphaBlend; // 0x454
+	::UnityEngine::Color MoonGlowColor; // 0x458
+	::System::Boolean overrideMoonPost; // 0x468
+	::System::Boolean enableLensFlareForMoon; // 0x469
+	::UnityEngine::Rendering::LensFlareDataSRP* lensFlareDataSrpForMoon; // 0x470
+	::UnityEngine::Rendering::Universal::LensFlareConfig* lensFlareConfigForMoon; // 0x478
+	::UnityEngine::Rendering::Universal::LightShaftConfig* lightShaftConfigForMoon; // 0x480
+	::System::Boolean overrideSkyStar; // 0x488
+	::System::Boolean isNight; // 0x489
+	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> starMapOnSky; // 0x48C
+	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> starMaskOnSky; // 0x490
+	::System::Single starsTwinklingRate; // 0x494
+	::System::Single StarsIntensity; // 0x498
+	::UnityEngine::LazyLoadReference_1<::UnityEngine::Texture*> galaxyOnSky; // 0x49C
+	::UnityEngine::Vector3 galaxyDir; // 0x4A0
+	::UnityEngine::Vector3 galaxyAngleSpeed; // 0x4AC
+	::System::Single GalaxyIntensity; // 0x4B8
+	::System::Boolean overrideShadowTint; // 0x4BC
+	::System::Boolean mainLightShadowTint; // 0x4BD
+	::UnityEngine::Color mainLightShadowTintColor; // 0x4C0
+	::System::Single mainLightShadowTintSourceAngle; // 0x4D0
+	::System::Single mainLightShadowTintPower; // 0x4D4
+	::System::Single mainLightShadowTintRadius; // 0x4D8
+	::System::Single mainLightShadowTintRadiusPower; // 0x4DC
+	::System::Single mainLightShadowTintDepthBias; // 0x4E0
+	::System::Boolean overrideCustomSkyBox; // 0x4E4
+	::System::Boolean controlMainLightParam; // 0x4E5
+	::UnityEngine::Material* replaceSkybox; // 0x4E8
+	::UnityEngine::Material* hollowCoverMat; // 0x4F0
+	::UnityEngine::Gradient* cloudOnSkyColor; // 0x4F8
+	::System::Single cloudRotateAngle; // 0x500
+	::System::Boolean overrideWetness; // 0x504
+	::System::Single wetness; // 0x508
+	::System::Boolean ignoreHeightMap; // 0x50C
+	::System::Boolean ignoreNoiseMap; // 0x50D
+	::UnityEngine::Texture* wetnessNoise; // 0x510
+	::System::Single wetnessNoiseTilling; // 0x518
+	::UnityEngine::Vector2 wetnessNoiseClampRange; // 0x51C
+	::System::Boolean wetnessNoiseForHeight; // 0x524
+	::UnityEngine::Vector2 porosity; // 0x528
+	::System::Boolean overrideRainConfig; // 0x530
+	::System::Boolean isRaining; // 0x531
+	::UnityEngine::Texture* rainDropTexture; // 0x538
+	::UnityEngine::Color rainDropColor; // 0x540
+	::System::Single rainDropMultiplyLightColor; // 0x550
+	::System::Int32 rainDropBatchCount; // 0x554
+	::System::Single rainDropSpeed; // 0x558
+	::System::Single rainDropMaxHeight; // 0x55C
+	::System::Single rainDropMinHeight; // 0x560
+	::UnityEngine::Vector2 rainDropSizeX; // 0x564
+	::UnityEngine::Vector2 rainDropSizeY; // 0x56C
+	::System::Single rainDropAngle; // 0x574
+	::System::Single rainDropAngleIntensity; // 0x578
+	::System::Single rainDropOuterCircleRadius; // 0x57C
+	::System::Single rainDropInnerCircleRadius; // 0x580
+	::UnityEngine::Rendering::Universal::ScreenRainDropConfig* screenRainDropConfig; // 0x588
+	::UnityEngine::Texture* rainFlowTexture; // 0x590
+	::System::Single rainFlowTilling; // 0x598
+	::System::Single rainFlowSpeed; // 0x59C
+	::System::Single rainFlowIntensity; // 0x5A0
+	::UnityEngine::Texture* rainFlowNoise; // 0x5A8
+	::UnityEngine::Texture* rainTexture2; // 0x5B0
+	::System::Single rippleTextureTilling; // 0x5B8
+	::System::Single rippleSpeed; // 0x5BC
+	::System::Single rippleDensity; // 0x5C0
+	::System::Single rippleFoamIntensity; // 0x5C4
+	::UnityEngine::Texture* rainSplashTexture; // 0x5C8
+	::UnityEngine::Texture* rainSplashTexture2; // 0x5D0
+	::UnityEngine::Texture* rainSplashTexture3; // 0x5D8
+	::UnityEngine::Color rainSplashColor; // 0x5E0
+	::UnityEngine::Vector2 rainSplashIntensityRange; // 0x5F0
+	::UnityEngine::Vector2 rainSplashSizeRange; // 0x5F8
+	::System::Single rainSplashPlayTime; // 0x600
+	::System::Int32 rainSplashCount; // 0x604
+	::System::Single rainSplashRange; // 0x608
+	::System::Boolean overrideLightning; // 0x60C
+	::System::Boolean useAnimation; // 0x60D
+	::System::Single animationLifeTime; // 0x610
+	::UnityEngine::AnimationCurve* mainLightIntensityCurve; // 0x618
+	::System::Boolean useLightningFx; // 0x620
+	::UnityEngine::ParticleSystem* lightningFxPrefab; // 0x628
+	::UnityEngine::Vector2 lightningFxDistanceRange; // 0x630
+	::UnityEngine::Vector2 lightningFxHeightRange; // 0x638
+	::UnityEngine::Vector2 lightningFxInterval; // 0x640
+	::System::Boolean overrideDetailLayerConfig; // 0x648
+	::UnityEngine::Rendering::Universal::DetailLayerConfig* detailLayerConfig; // 0x650
+	::System::Boolean overrideSkyGridConfig; // 0x658
+	::UnityEngine::Rendering::Universal::SkyGridConfig* skyGridConfig; // 0x660
+	::System::Boolean overrideCharacterToneMapping; // 0x668
+	::System::Single characterLightTonemapStart; // 0x66C
+	::System::Single characterLightTonemapMax; // 0x670
+	::System::Single characterLightTonemapFaceAdd; // 0x674
+	::System::Single characterLightTonemapFaceEnd; // 0x678
+	::System::Single characterGiWeight; // 0x67C
+	::System::Single toeStrength; // 0x680
+	::System::Single toeLength; // 0x684
+	::System::Single shoulderStrength; // 0x688
+	::System::Single shoulderLength; // 0x68C
+	::System::Single shoulderAngle; // 0x690
+	::System::Single customGamma; // 0x694
+	::System::Boolean characterEditorIsIndoor; // 0x698
+	::System::Boolean overrideCharacterLight; // 0x699
+	::UnityEngine::Color mainLightColorForChara; // 0x69C
+	::System::Single mainLightIntensityForChara; // 0x6AC
+	::System::Single mainLightShadowStrengthForChara; // 0x6B0
+	::System::Single rimGlowIntensityForChara; // 0x6B4
+	::UnityEngine::Color MoonLightColorForChar; // 0x6B8
+	::System::Single MoonLightIntensityForChar; // 0x6C8
+	::System::Single moonLightShadowStrengthForChara; // 0x6CC
+	::System::Single moonRimGlowIntensityForChara; // 0x6D0
+	::UnityEngine::Color ambient; // 0x6D4
+	::UnityEngine::Color mainLightColorForCharaIndoor; // 0x6E4
+	::System::Single mainLightIntensityForCharaIndoor; // 0x6F4
+	::System::Single mainLightShadowStrengthForCharaIndoor; // 0x6F8
+	::System::Single rimGlowIntensityForCharaIndoor; // 0x6FC
+	::UnityEngine::Color MoonLightColorForCharIndoor; // 0x700
+	::System::Single MoonLightIntensityForCharIndoor; // 0x710
+	::System::Single moonLightShadowStrengthForCharaIndoor; // 0x714
+	::System::Single moonRimGlowIntensityForCharaIndoor; // 0x718
+	::UnityEngine::Color ambientIndoor; // 0x71C
+	::System::Boolean overrideCharacterRamp; // 0x72C
+	::UnityEngine::Color skinFrontTint; // 0x730
+	::UnityEngine::Color frontTint; // 0x740
+	::UnityEngine::Color skinSssTint; // 0x750
+	::UnityEngine::Color sssTint; // 0x760
+	::UnityEngine::Color skinShallowTint; // 0x770
+	::UnityEngine::Color shallowTint; // 0x780
+	::UnityEngine::Color skinShallowFadeTint; // 0x790
+	::UnityEngine::Color shallowFadeTint; // 0x7A0
+	::UnityEngine::Color skinShadowTint; // 0x7B0
+	::UnityEngine::Color shadowTint; // 0x7C0
+	::UnityEngine::Color skinShadowFadeTint; // 0x7D0
+	::UnityEngine::Color shadowFadeTint; // 0x7E0
+	::UnityEngine::Color ambientGradient; // 0x7F0
+	::UnityEngine::Color outlineTint; // 0x800
+	::System::Boolean useShadowTintAsOutline; // 0x810
+	::UnityEngine::Color skinFrontTintIndoor; // 0x814
+	::UnityEngine::Color frontTintIndoor; // 0x824
+	::UnityEngine::Color skinSssTintIndoor; // 0x834
+	::UnityEngine::Color sssTintIndoor; // 0x844
+	::UnityEngine::Color skinShallowTintIndoor; // 0x854
+	::UnityEngine::Color shallowTintIndoor; // 0x864
+	::UnityEngine::Color skinShallowFadeTintIndoor; // 0x874
+	::UnityEngine::Color shallowFadeTintIndoor; // 0x884
+	::UnityEngine::Color skinShadowTintIndoor; // 0x894
+	::UnityEngine::Color shadowTintIndoor; // 0x8A4
+	::UnityEngine::Color skinShadowFadeTintIndoor; // 0x8B4
+	::UnityEngine::Color shadowFadeTintIndoor; // 0x8C4
+	::UnityEngine::Color ambientGradientIndoor; // 0x8D4
+	::UnityEngine::Color outlineTintIndoor; // 0x8E4
+	::System::Boolean useShadowTintAsOutlineIndoor; // 0x8F4
+	::System::Boolean overrideCharacterPost; // 0x8F5
+	::System::Boolean characterColorGradingEnabled; // 0x8F6
+	::System::Single characterPostExposure; // 0x8F8
+	::System::Single contrast; // 0x8FC
+	::System::Single saturation; // 0x900
+	::UnityEngine::Vector4 lift; // 0x904
+	::UnityEngine::Vector4 gamma; // 0x914
+	::UnityEngine::Vector4 gain; // 0x924
+	::System::Single characterPostExposureIndoor; // 0x934
+	::System::Single contrastIndoor; // 0x938
+	::System::Single saturationIndoor; // 0x93C
+	::UnityEngine::Vector4 liftIndoor; // 0x940
+	::UnityEngine::Vector4 gammaIndoor; // 0x950
+	::UnityEngine::Vector4 gainIndoor; // 0x960
+	::System::Boolean skinColorsInitialized; // 0x970
+	::System::Boolean overrideWaterConfig; // 0x971
+	::System::Boolean useGlobalWaterConfig; // 0x972
+	::UnityEngine::Rendering::Universal::SingleWeatherConfigWater* localWaterConfig; // 0x978
+	::System::Boolean overrideOceanConfig; // 0x980
+	::UnityEngine::Rendering::Universal::OceanConfig* oceanConfig; // 0x988
+	::System::Boolean trackControlScenePost; // 0x990
+	::System::Boolean overrideOldSceneLut; // 0x991
+	::System::Boolean useCustomLookupTable; // 0x992
+	::UnityEngine::Texture* lookupTable; // 0x998
+	::System::Single lutContribution; // 0x9A0
+	::System::Single postExposure; // 0x9A4
+	::UnityEngine::Rendering::Universal::ScenePostEffectConfig* scenePostEffectConfig; // 0x9A8
+	::System::Boolean overrideSceneLut; // 0x9B0
+	::System::Boolean useLogLookupTable; // 0x9B1
+	::UnityEngine::Texture* LogLutTex; // 0x9B8
+	::System::Single loglutContribution; // 0x9C0
+	::UnityEngine::Texture* PreLogLutTex; // 0x9C8
+	::System::Single preLoglutContribution; // 0x9D0
+	::System::Boolean overrideSceneBloom; // 0x9D4
+	::System::Boolean useSceneBloom; // 0x9D5
+	::System::Single bloomThreshold; // 0x9D8
+	::System::Single bloomMaxThreshold; // 0x9DC
+	::System::Single bloomIntensity; // 0x9E0
+	::System::Boolean overrideSpecularTonemapping; // 0x9E4
+	::System::Boolean enableSpecularTonemapping; // 0x9E5
+	::System::Boolean previewSpecularLutTexture; // 0x9E6
+	::UnityEngine::Texture2D* specularTonemappingLut; // 0x9E8
+	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_master; // 0x9F0
+	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_red; // 0x9F8
+	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_green; // 0xA00
+	::UnityEngine::NAPRenderPipeline0::TextureCurve* specularToneCurve_blue; // 0xA08
+	::UnityEngine::RenderTexture* specularToneMappingCurveTexture; // 0xA10
+	::UnityEngine::Texture2D* specularCurveTexMaster; // 0xA18
+	::UnityEngine::Texture2D* specularCurveTexR; // 0xA20
+	::UnityEngine::Texture2D* specularCurveTexG; // 0xA28
+	::UnityEngine::Texture2D* specularCurveTexB; // 0xA30
+	::UnityEngine::Material* specularLUTMat; // 0xA38
+	::UnityEngine::Vector2 specularDistanceFade; // 0xA40
+	::UnityEngine::Vector2 specularDistanceFadeValue; // 0xA48
+	::UnityEngine::Vector2 specularAngleFade; // 0xA50
+	::UnityEngine::Vector2 specularAngleFadeValue; // 0xA58
+	::UnityEngine::Rendering::Universal::VisualEnvironmentE_WeatherType WeatherType; // 0xA60
+	::System::Boolean isSerializedData; // 0xA64
+	::WeatherConfig_ResultMainLightParams resultMainLightParams; // 0xA68
+	::System::Single _CachedMainLightIntensity; // 0xAC0
+	::System::Single _AnimationSunDisk; // 0xAC4
+	::WeatherConfig_CapturedWeatherData capturedData; // 0xAC8
+	::WeatherConfig_RuntimeUsedNightTextures nightTextures; // 0xB38
+	::System::Single _OverrideSkyWeight_k__BackingField; // 0xB58
+	::UnityEngine::Color _OverrideSkyBtnColor_k__BackingField; // 0xB5C
+	::UnityEngine::Color _OverrideSkyTopColor_k__BackingField; // 0xB6C
+	::UnityEngine::Color _OverrideLowCloudLightColor_k__BackingField; // 0xB7C
+	::UnityEngine::Color _OverrideLowCloudDarkColor_k__BackingField; // 0xB8C
+	::UnityEngine::NAPRenderPipeline0::ESupportedGIType _SupportedGIType_k__BackingField; // 0xB9C
+	::System::Single _SceneClipPlaneY_k__BackingField; // 0xBA0
+	::UnityEngine::Mesh* _customSkyboxMesh_k__BackingField; // 0xBA8
+	::UnityEngine::Material* _sceneEtherCoverEffectMat_k__BackingField; // 0xBB0
+	::System::Single _hollowCoverSize_k__BackingField; // 0xBB8
+	::UnityEngine::Mesh* _hollowCoverMesh_k__BackingField; // 0xBC0
+	::System::Collections::Generic::List_1<::UnityEngine::Material*>* _waterMaterials_k__BackingField; // 0xBC8
+	::System::Single _waterHeight_k__BackingField; // 0xBD0
+	::System::Boolean _hasTriggerSpecialCloudLayer_k__BackingField; // 0xBD4
+	::System::Single cloudLerpAlpha; // 0xBD8
+	::System::Single lerpValue; // 0xBDC
+	::UnityEngine::Texture* _HeightMap_k__BackingField; // 0xBE0
+	::System::Boolean _enableLocalHeightMap_k__BackingField; // 0xBE8
+	::UnityEngine::Texture* _OceanMaskMap_k__BackingField; // 0xBF0
+	::UnityEngine::Vector4 _OceanMaskMapRect_k__BackingField; // 0xBF8
+	::System::Single _SeaLevelHeight_k__BackingField; // 0xC08
+	::System::Single _OceanMaskHeightOffset_k__BackingField; // 0xC0C
+	::UnityEngine::Rendering::Universal::OceanFFTBakeData* _OceanFFTBakeData_k__BackingField; // 0xC10
+	::UnityEngine::Vector3 _OceanCenter_k__BackingField; // 0xC18
+	::System::Single _OceanDepthOffset_k__BackingField; // 0xC24
+	::UnityEngine::Texture* _HeightMap2_k__BackingField; // 0xC28
+	::UnityEngine::Vector4 _GlobalDecalBlendParams_k__BackingField; // 0xC30
+	::UnityEngine::Texture* _SceneWaterPoolMap_k__BackingField; // 0xC40
+	::UnityEngine::Vector4 _SceneWaterPoolBoundBox_k__BackingField; // 0xC48
+	::UnityEngine::Vector2 _SceneWaterPoolMinMaxHeight_k__BackingField; // 0xC58
+	::UnityEngine::Vector4 _SceneBoundBox_k__BackingField; // 0xC60
+	::System::Single _sceneHeightMapYOffset_k__BackingField; // 0xC70
+	::System::Boolean _isOptimizedSceneBoundBoxValue_k__BackingField; // 0xC74
+	::UnityEngine::Vector4 _NavMeshBoundBox_k__BackingField; // 0xC78
+	::UnityEngine::Vector4 _GroundPos_k__BackingField; // 0xC88
+	::UnityEngine::Rendering::Universal::SingleWeatherConfigParticle* _particleConfig_k__BackingField; // 0xC98
+	::UnityEngine::Rendering::Universal::SingleWeatherConfigWater* _waterConfig_k__BackingField; // 0xCA0
+	::UnityEngine::Rendering::Universal::SingleWeatherConfigWind* _windConfig_k__BackingField; // 0xCA8
+	::System::Single preFrameDaytime; // 0xCB0
 
 	::System::Void _ctor()
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::Users
 {
-	inline static constexpr unsigned int InputUserChange_TypeDefinitionIndex = 27645;
+	inline static constexpr unsigned int InputUserChange_TypeDefinitionIndex = 28585;
 
 	enum class InputUserChange : ::System::Int32
 	{

@@ -3,7 +3,7 @@
 
 namespace DG::Tweening::Core::Enums
 {
-	inline static constexpr unsigned int UpdateNotice_TypeDefinitionIndex = 24170;
+	inline static constexpr unsigned int UpdateNotice_TypeDefinitionIndex = 24994;
 
 	enum class UpdateNotice : ::System::Int32
 	{

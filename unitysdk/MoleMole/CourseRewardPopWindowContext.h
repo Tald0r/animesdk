@@ -4,11 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-#define MOLEMOLE_COURSEREWARDPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xE8336A0)
+#define MOLEMOLE_COURSEREWARDPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB487FB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CourseRewardPopWindowContext_TypeDefinitionIndex = 63539;
+	inline static constexpr unsigned int CourseRewardPopWindowContext_TypeDefinitionIndex = 44047;
 
 	class CourseRewardPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{

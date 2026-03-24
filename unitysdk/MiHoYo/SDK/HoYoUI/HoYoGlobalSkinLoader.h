@@ -5,19 +5,19 @@
 namespace MiHoYo::SDK::HoYoUI { class HoYoGlobalSkinAsset; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_HOYOUI_HOYOGLOBALSKINLOADER_GET_SKINASSET_OFFSET UNITYSDK_OFFSET(0x19A770D0)
-#define MIHOYO_SDK_HOYOUI_HOYOGLOBALSKINLOADER__CTOR_OFFSET UNITYSDK_OFFSET(0x19A77190)
+#define MIHOYO_SDK_HOYOUI_HOYOGLOBALSKINLOADER_GET_SKINASSET_OFFSET UNITYSDK_OFFSET(0x1A0636D0)
+#define MIHOYO_SDK_HOYOUI_HOYOGLOBALSKINLOADER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A063790)
 
 namespace MiHoYo::SDK::HoYoUI
 {
-	inline static constexpr unsigned int HoYoGlobalSkinLoader_TypeDefinitionIndex = 33951;
+	inline static constexpr unsigned int HoYoGlobalSkinLoader_TypeDefinitionIndex = 34953;
 
 	class HoYoGlobalSkinLoader : public ::System::Object
 	{
 	public:
 		static ::MiHoYo::SDK::HoYoUI::HoYoGlobalSkinAsset** StaticGet_s_SkinAsset()
 		{
-			return (::MiHoYo::SDK::HoYoUI::HoYoGlobalSkinAsset**)Il2CppClass::FromTypeDefinitionIndex(HoYoGlobalSkinLoader_TypeDefinitionIndex)->GetStaticField(0x24520);
+			return (::MiHoYo::SDK::HoYoUI::HoYoGlobalSkinAsset**)Il2CppClass::FromTypeDefinitionIndex(HoYoGlobalSkinLoader_TypeDefinitionIndex)->GetStaticField(0x25F30);
 		}
 		// static const ::System::String* SKIN_JSON_FILE_PATH; // 0x0
 

@@ -6,24 +6,24 @@ namespace MoleMole::Config { class IndexAssetRef; }
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Converter_2; }
 
-#define MOLEMOLE_CONFIG_ASSETINDEX___C_METHOD_1_130AE7FAA8C8CA98_OFFSET UNITYSDK_OFFSET(0x89F0050)
-#define MOLEMOLE_CONFIG_ASSETINDEX___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x89F0000)
-#define MOLEMOLE_CONFIG_ASSETINDEX___C__CTOR_OFFSET UNITYSDK_OFFSET(0x89F0040)
+#define MOLEMOLE_CONFIG_ASSETINDEX___C_METHOD_1_130AE7FAA8C8CA98_OFFSET UNITYSDK_OFFSET(0x10A889F0)
+#define MOLEMOLE_CONFIG_ASSETINDEX___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x10A889A0)
+#define MOLEMOLE_CONFIG_ASSETINDEX___C__CTOR_OFFSET UNITYSDK_OFFSET(0x10A889E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AssetIndex___c_TypeDefinitionIndex = 51431;
+	inline static constexpr unsigned int AssetIndex___c_TypeDefinitionIndex = 43164;
 
 	class AssetIndex___c : public ::System::Object
 	{
 	public:
-		static ::System::Converter_2<::MoleMole::Config::IndexAssetRef*, ::System::String*>** StaticGet___9__2_0()
-		{
-			return (::System::Converter_2<::MoleMole::Config::IndexAssetRef*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(AssetIndex___c_TypeDefinitionIndex)->GetStaticField(0x383C0);
-		}
 		static ::MoleMole::Config::AssetIndex___c** StaticGet___9()
 		{
-			return (::MoleMole::Config::AssetIndex___c**)Il2CppClass::FromTypeDefinitionIndex(AssetIndex___c_TypeDefinitionIndex)->GetStaticField(0x383C8);
+			return (::MoleMole::Config::AssetIndex___c**)Il2CppClass::FromTypeDefinitionIndex(AssetIndex___c_TypeDefinitionIndex)->GetStaticField(0x3AFD0);
+		}
+		static ::System::Converter_2<::MoleMole::Config::IndexAssetRef*, ::System::String*>** StaticGet___9__2_0()
+		{
+			return (::System::Converter_2<::MoleMole::Config::IndexAssetRef*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(AssetIndex___c_TypeDefinitionIndex)->GetStaticField(0x3AFD8);
 		}
 
 		static ::System::Void _cctor()

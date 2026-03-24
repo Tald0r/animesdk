@@ -5,23 +5,25 @@
 namespace System { class Object; }
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETTEXT_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETVALUE_OFFSET UNITYSDK_OFFSET(0x2CB080)
-#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_TOSTRING_OFFSET UNITYSDK_OFFSET(0x726600)
-#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETSELECTEDTEXT_OFFSET UNITYSDK_OFFSET(0x6C4EA0)
+#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETTEXT_OFFSET UNITYSDK_OFFSET(0x223870)
+#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETVALUE_OFFSET UNITYSDK_OFFSET(0x2F2E10)
+#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_TOSTRING_OFFSET UNITYSDK_OFFSET(0x6C4EC0)
+#define SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x3D8880)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int ValueDropdownItem_TypeDefinitionIndex = 7246;
+	inline static constexpr unsigned int ValueDropdownItem_TypeDefinitionIndex = 7251;
 
 	struct alignas(8) ValueDropdownItem
 	{
 		::System::String* Text; // 0x10
-		::System::Object* Value; // 0x18
+		::System::String* SelectedText; // 0x18
+		::System::Object* Value; // 0x20
 
-		::System::Void _ctor(::System::String* text, ::System::Object* value)
+		::System::Void _ctor(::System::String* text, ::System::Object* value, ::System::String* selectedText)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM__CTOR_OFFSET))(this, text, value);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Object*, ::System::String*))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM__CTOR_OFFSET))(this, text, value, selectedText);
 		}
 
 		::System::String* ToString()
@@ -32,6 +34,11 @@ namespace Sirenix::OdinInspector
 		::System::String* Sirenix_OdinInspector_IValueDropdownItem_GetText()
 		{
 			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETTEXT_OFFSET))(this);
+		}
+
+		::System::String* Sirenix_OdinInspector_IValueDropdownItem_GetSelectedText()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SIRENIX_ODININSPECTOR_VALUEDROPDOWNITEM_SIRENIX_ODININSPECTOR_IVALUEDROPDOWNITEM_GETSELECTEDTEXT_OFFSET))(this);
 		}
 
 		::System::Object* Sirenix_OdinInspector_IValueDropdownItem_GetValue()

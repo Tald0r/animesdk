@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIDoubleWeekScheduleRowWidgetController; }
 
-#define MOLEMOLE_UIDOUBLEWEEKPAGECONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA2734C0)
-#define MOLEMOLE_UIDOUBLEWEEKPAGECONTROLLER___C__DISPLAYCLASS22_0__DOREFRESHBINGOFORSINGLEGRID_B__0_OFFSET UNITYSDK_OFFSET(0xA2734D0)
+#define MOLEMOLE_UIDOUBLEWEEKPAGECONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x90F9480)
+#define MOLEMOLE_UIDOUBLEWEEKPAGECONTROLLER___C__DISPLAYCLASS22_0__DOREFRESHBINGOFORSINGLEGRID_B__0_OFFSET UNITYSDK_OFFSET(0x90F9490)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDoubleWeekPageController___c__DisplayClass22_0_TypeDefinitionIndex = 55547;
+	inline static constexpr unsigned int UIDoubleWeekPageController___c__DisplayClass22_0_TypeDefinitionIndex = 66006;
 
 	class UIDoubleWeekPageController___c__DisplayClass22_0 : public ::System::Object
 	{

@@ -4,20 +4,20 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIFORBIDDENAREAINSIGHTLEVELUPPOPWINDOWCONTEXT_GET_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x8C36780)
-#define MOLEMOLE_UIFORBIDDENAREAINSIGHTLEVELUPPOPWINDOWCONTEXT_SET_ONCLOSE_OFFSET UNITYSDK_OFFSET(0x8C36790)
-#define MOLEMOLE_UIFORBIDDENAREAINSIGHTLEVELUPPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C367A0)
+#define MOLEMOLE_UIFORBIDDENAREAINSIGHTLEVELUPPOPWINDOWCONTEXT_GET_ONCLOSE_OFFSET UNITYSDK_OFFSET(0xB0E8570)
+#define MOLEMOLE_UIFORBIDDENAREAINSIGHTLEVELUPPOPWINDOWCONTEXT_SET_ONCLOSE_OFFSET UNITYSDK_OFFSET(0xB0E8580)
+#define MOLEMOLE_UIFORBIDDENAREAINSIGHTLEVELUPPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB0E8590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIForbiddenAreaInsightLevelUpPopWindowContext_TypeDefinitionIndex = 62120;
+	inline static constexpr unsigned int UIForbiddenAreaInsightLevelUpPopWindowContext_TypeDefinitionIndex = 78658;
 
 	class UIForbiddenAreaInsightLevelUpPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Action* _OnClose_k__BackingField; // 0x28
-		::System::UInt32 LastInsight; // 0x30
-		::System::UInt32 NewInsight; // 0x34
+		::System::UInt32 NewInsight; // 0x30
+		::System::UInt32 LastInsight; // 0x34
 
 		::System::Void _ctor(::System::UInt32 lastInsight, ::System::UInt32 newInsight, ::System::Action* onClose)
 		{

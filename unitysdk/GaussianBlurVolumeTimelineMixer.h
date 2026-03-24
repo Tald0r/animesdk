@@ -13,19 +13,19 @@ namespace UnityEngine::Rendering::Universal { class GaussianBlur; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 namespace UnityEngine::Timeline { class TrackAsset; }
 
-#define GAUSSIANBLURVOLUMETIMELINEMIXER_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x9112AC0)
-#define GAUSSIANBLURVOLUMETIMELINEMIXER__CTOR_OFFSET UNITYSDK_OFFSET(0x9113550)
-#define GAUSSIANBLURVOLUMETIMELINEMIXER___BASE_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x91135E0)
+#define GAUSSIANBLURVOLUMETIMELINEMIXER_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x66C7C60)
+#define GAUSSIANBLURVOLUMETIMELINEMIXER__CTOR_OFFSET UNITYSDK_OFFSET(0x66C86F0)
+#define GAUSSIANBLURVOLUMETIMELINEMIXER___BASE_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x66C8780)
 
-inline static constexpr unsigned int GaussianBlurVolumeTimelineMixer_TypeDefinitionIndex = 78129;
+inline static constexpr unsigned int GaussianBlurVolumeTimelineMixer_TypeDefinitionIndex = 73638;
 
 class GaussianBlurVolumeTimelineMixer : public ::UnityEngine::Playables::PlayableBehaviour
 {
 public:
-	::UnityEngine::Rendering::Universal::GaussianBlur* VolComponent; // 0x10
-	::UnityEngine::Timeline::TrackAsset* Track; // 0x18
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::GaussianBlurVolumeTimelineBehaviour*>* ClipToBehaviourMap; // 0x10
+	::UnityEngine::Rendering::Universal::GaussianBlur* VolComponent; // 0x18
 	::System::Collections::Generic::IEnumerable_1<::UnityEngine::Timeline::TimelineClip*>* _allClips; // 0x20
-	::System::Collections::Generic::Dictionary_2<::System::Int32, ::GaussianBlurVolumeTimelineBehaviour*>* ClipToBehaviourMap; // 0x28
+	::UnityEngine::Timeline::TrackAsset* Track; // 0x28
 	::UnityEngine::Playables::PlayableDirector* Director; // 0x30
 
 	::System::Void _ctor()

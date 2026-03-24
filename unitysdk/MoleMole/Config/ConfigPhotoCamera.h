@@ -5,12 +5,12 @@
 namespace MoleMole::Config { class CharacterConfigPhotoCamera; }
 namespace MoleMole::Config { class UIConfigPhotoCamera; }
 
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERA_RELOADCONFIG_OFFSET UNITYSDK_OFFSET(0x84AD290)
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0x84AD460)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERA_RELOADCONFIG_OFFSET UNITYSDK_OFFSET(0x95050D0)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0x95052A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPhotoCamera_TypeDefinitionIndex = 55146;
+	inline static constexpr unsigned int ConfigPhotoCamera_TypeDefinitionIndex = 57918;
 
 	class ConfigPhotoCamera : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int NapActionVirtualStateDrivenCamera_Instruction_TypeDefinitionIndex = 59330;
+	inline static constexpr unsigned int NapActionVirtualStateDrivenCamera_Instruction_TypeDefinitionIndex = 43907;
 
 	struct alignas(8) NapActionVirtualStateDrivenCamera_Instruction
 	{

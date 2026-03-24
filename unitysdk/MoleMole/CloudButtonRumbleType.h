@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CloudButtonRumbleType_TypeDefinitionIndex = 64340;
+	inline static constexpr unsigned int CloudButtonRumbleType_TypeDefinitionIndex = 70746;
 
 	enum class CloudButtonRumbleType : ::System::Int32
 	{

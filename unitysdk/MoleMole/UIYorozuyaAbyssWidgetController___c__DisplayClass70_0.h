@@ -3,27 +3,27 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_44EFB945CAE441A3;
-class Class_2_0A55B5A82A61DAFA_1;
+class Class_2_0A55B5A82A61DAFA;
 class Class_2_D89CCC627A66D0AD;
 namespace MoleMole { class UILineupSelectContext; }
 namespace MoleMole { class UIRoleSelectPageContext; }
 namespace MoleMole { class UIYorozuyaAbyssWidgetController; }
 
-#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9393290)
-#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GOTOBEGINBATTLE_B__0_OFFSET UNITYSDK_OFFSET(0x9393C10)
-#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GOTOBEGINBATTLE_B__1_OFFSET UNITYSDK_OFFSET(0x93932A0)
-#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GOTOBEGINBATTLE_B__3_OFFSET UNITYSDK_OFFSET(0x93935D0)
+#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9544270)
+#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GOTOBEGINBATTLE_B__0_OFFSET UNITYSDK_OFFSET(0x9544BE0)
+#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GOTOBEGINBATTLE_B__1_OFFSET UNITYSDK_OFFSET(0x9544280)
+#define MOLEMOLE_UIYOROZUYAABYSSWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GOTOBEGINBATTLE_B__3_OFFSET UNITYSDK_OFFSET(0x95445A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaAbyssWidgetController___c__DisplayClass70_0_TypeDefinitionIndex = 76413;
+	inline static constexpr unsigned int UIYorozuyaAbyssWidgetController___c__DisplayClass70_0_TypeDefinitionIndex = 70890;
 
 	class UIYorozuyaAbyssWidgetController___c__DisplayClass70_0 : public ::System::Object
 	{
 	public:
-		::Class_2_0A55B5A82A61DAFA_1* selectedConfig; // 0x10
+		::MoleMole::UILineupSelectContext* selectedPageData; // 0x10
 		::MoleMole::UIYorozuyaAbyssWidgetController* __4__this; // 0x18
-		::MoleMole::UILineupSelectContext* selectedPageData; // 0x20
+		::Class_2_0A55B5A82A61DAFA* selectedConfig; // 0x20
 
 		::System::Void _ctor()
 		{

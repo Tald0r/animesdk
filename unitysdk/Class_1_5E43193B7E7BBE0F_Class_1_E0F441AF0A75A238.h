@@ -6,9 +6,9 @@ namespace MoleMole::Config { class ConfigEntitySharedAnimEvents; }
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_5E43193B7E7BBE0F_CLASS_1_E0F441AF0A75A238__CTOR_OFFSET UNITYSDK_OFFSET(0x746E920)
+#define CLASS_1_5E43193B7E7BBE0F_CLASS_1_E0F441AF0A75A238__CTOR_OFFSET UNITYSDK_OFFSET(0x9F34920)
 
-inline static constexpr unsigned int Class_1_5E43193B7E7BBE0F_Class_1_E0F441AF0A75A238_TypeDefinitionIndex = 44932;
+inline static constexpr unsigned int Class_1_5E43193B7E7BBE0F_Class_1_E0F441AF0A75A238_TypeDefinitionIndex = 57379;
 
 class Class_1_5E43193B7E7BBE0F_Class_1_E0F441AF0A75A238 : public ::System::Object
 {

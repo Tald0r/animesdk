@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_COMIC_DIALOGUEAUDIOCONTENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC79260)
+#define MOLEMOLE_COMIC_DIALOGUEAUDIOCONTENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B29EE40)
 
 namespace MoleMole::Comic
 {
-	inline static constexpr unsigned int DialogueAudioContent_TypeDefinitionIndex = 29118;
+	inline static constexpr unsigned int DialogueAudioContent_TypeDefinitionIndex = 30071;
 
 	class DialogueAudioContent : public ::System::Object
 	{

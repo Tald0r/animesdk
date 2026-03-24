@@ -6,12 +6,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGRICHTAPSOUND_GETBASEAMPLITUDE_OFFSET UNITYSDK_OFFSET(0xCDCCD40)
-#define MOLEMOLE_CONFIGRICHTAPSOUND__CTOR_OFFSET UNITYSDK_OFFSET(0xCDCCDE0)
+#define MOLEMOLE_CONFIGRICHTAPSOUND_GETBASEAMPLITUDE_OFFSET UNITYSDK_OFFSET(0xD0B1CE0)
+#define MOLEMOLE_CONFIGRICHTAPSOUND__CTOR_OFFSET UNITYSDK_OFFSET(0xD0B1D80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigRichtapSound_TypeDefinitionIndex = 67544;
+	inline static constexpr unsigned int ConfigRichtapSound_TypeDefinitionIndex = 51318;
 
 	class ConfigRichtapSound : public ::Foundation::MihoyoSerializedScriptableObject
 	{

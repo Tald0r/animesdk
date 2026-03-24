@@ -3,22 +3,22 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY_LERP_OFFSET UNITYSDK_OFFSET(0x1AF86540)
-#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY_PLUS_OFFSET UNITYSDK_OFFSET(0x1AF865D0)
-#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY_SCALE_OFFSET UNITYSDK_OFFSET(0x1AF865A0)
-#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AF86610)
-#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF86600)
+#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY_LERP_OFFSET UNITYSDK_OFFSET(0x1B2F4B80)
+#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY_PLUS_OFFSET UNITYSDK_OFFSET(0x1B2F4C10)
+#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY_SCALE_OFFSET UNITYSDK_OFFSET(0x1B2F4BE0)
+#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B2F4C50)
+#define FOUNDATION_GEOMETRY_VECTOR3BEZIERCONTROLPOINTPOLICY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2F4C40)
 
 namespace Foundation::Geometry
 {
-	inline static constexpr unsigned int Vector3BezierControlPointPolicy_TypeDefinitionIndex = 9169;
+	inline static constexpr unsigned int Vector3BezierControlPointPolicy_TypeDefinitionIndex = 9124;
 
 	class Vector3BezierControlPointPolicy : public ::System::Object
 	{
 	public:
 		static ::Foundation::Geometry::Vector3BezierControlPointPolicy** StaticGet_Instance()
 		{
-			return (::Foundation::Geometry::Vector3BezierControlPointPolicy**)Il2CppClass::FromTypeDefinitionIndex(Vector3BezierControlPointPolicy_TypeDefinitionIndex)->GetStaticField(0x7EE0);
+			return (::Foundation::Geometry::Vector3BezierControlPointPolicy**)Il2CppClass::FromTypeDefinitionIndex(Vector3BezierControlPointPolicy_TypeDefinitionIndex)->GetStaticField(0x7F20);
 		}
 
 		::System::Void _ctor()

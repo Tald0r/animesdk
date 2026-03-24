@@ -6,22 +6,22 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTWRITEAIPARAMENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x89E7C40)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTWRITEAIPARAMENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x89E7CC0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTWRITEAIPARAMENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x10A80600)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTWRITEAIPARAMENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x10A80680)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventWriteAIParamEntry_TypeDefinitionIndex = 66999;
+	inline static constexpr unsigned int AnimatorEventWriteAIParamEntry_TypeDefinitionIndex = 49263;
 
 	class AnimatorEventWriteAIParamEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
-		::System::String* stringParamValue; // 0x58
-		::System::String* paramName; // 0x60
+		::System::String* paramName; // 0x58
+		::System::String* stringParamValue; // 0x60
 		::System::Boolean boolParamValue; // 0x68
-		::System::Int32 intParamValue; // 0x6C
-		::MoleMole::Config::AnimatorEventWriteAIParamEntry_ParaType paraType; // 0x70
-		::System::Single floatParamValue; // 0x74
+		::System::Single floatParamValue; // 0x6C
+		::System::Int32 intParamValue; // 0x70
+		::MoleMole::Config::AnimatorEventWriteAIParamEntry_ParaType paraType; // 0x74
 
 		::System::Void _ctor()
 		{

@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MONOUICHAPTERFINISHCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7C71130)
+#define MONOUICHAPTERFINISHCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA6E6D10)
 
-inline static constexpr unsigned int MonoUIChapterFinishConfig_TypeDefinitionIndex = 51018;
+inline static constexpr unsigned int MonoUIChapterFinishConfig_TypeDefinitionIndex = 63671;
 
 class MonoUIChapterFinishConfig : public ::UnityEngine::MonoBehaviour
 {

@@ -4,19 +4,19 @@
 
 namespace MoleMole { class UICampIdlePageController___c__DisplayClass182_0; }
 
-#define MOLEMOLE_UICAMPIDLEPAGECONTROLLER___C__DISPLAYCLASS182_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC0C9930)
-#define MOLEMOLE_UICAMPIDLEPAGECONTROLLER___C__DISPLAYCLASS182_1__REFRESHCURRENTQA_B__0_OFFSET UNITYSDK_OFFSET(0xC0C9940)
+#define MOLEMOLE_UICAMPIDLEPAGECONTROLLER___C__DISPLAYCLASS182_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD0332E0)
+#define MOLEMOLE_UICAMPIDLEPAGECONTROLLER___C__DISPLAYCLASS182_1__REFRESHCURRENTQA_B__0_OFFSET UNITYSDK_OFFSET(0xD0332F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICampIdlePageController___c__DisplayClass182_1_TypeDefinitionIndex = 71283;
+	inline static constexpr unsigned int UICampIdlePageController___c__DisplayClass182_1_TypeDefinitionIndex = 66513;
 
 	class UICampIdlePageController___c__DisplayClass182_1 : public ::System::Object
 	{
 	public:
 		::MoleMole::UICampIdlePageController___c__DisplayClass182_0* CS___8__locals1; // 0x10
-		::System::Boolean isCorrect; // 0x18
-		::System::Int32 index; // 0x1C
+		::System::Int32 index; // 0x18
+		::System::Boolean isCorrect; // 0x1C
 
 		::System::Void _ctor()
 		{

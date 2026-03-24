@@ -6,14 +6,14 @@ namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define DEST_MATH_ODEFUNCTION_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1AF91DA0)
-#define DEST_MATH_ODEFUNCTION_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1AF91E20)
-#define DEST_MATH_ODEFUNCTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1AF91A10)
-#define DEST_MATH_ODEFUNCTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF91A00)
+#define DEST_MATH_ODEFUNCTION_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1B59DB80)
+#define DEST_MATH_ODEFUNCTION_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1B59DC00)
+#define DEST_MATH_ODEFUNCTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1B59D7F0)
+#define DEST_MATH_ODEFUNCTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B59D7D0)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int OdeFunction_TypeDefinitionIndex = 31703;
+	inline static constexpr unsigned int OdeFunction_TypeDefinitionIndex = 32657;
 
 	class OdeFunction : public ::System::MulticastDelegate
 	{

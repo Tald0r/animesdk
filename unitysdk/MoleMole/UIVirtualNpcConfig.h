@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIVIRTUALNPCCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC3FEFD0)
+#define MOLEMOLE_UIVIRTUALNPCCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA12CC90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVirtualNpcConfig_TypeDefinitionIndex = 74608;
+	inline static constexpr unsigned int UIVirtualNpcConfig_TypeDefinitionIndex = 70301;
 
 	class UIVirtualNpcConfig : public ::System::Object
 	{

@@ -5,17 +5,17 @@
 class Class_1_90858D70BEDD91CA;
 namespace MoleMole { class UIGeneralFilterGroupRowWidgetController; }
 
-#define MOLEMOLE_UIGENERALFILTERGROUPROWWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8914EF0)
+#define MOLEMOLE_UIGENERALFILTERGROUPROWWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDFBE330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralFilterGroupRowWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 50161;
+	inline static constexpr unsigned int UIGeneralFilterGroupRowWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 72874;
 
 	class UIGeneralFilterGroupRowWidgetController___c__DisplayClass26_0 : public ::System::Object
 	{
 	public:
-		::Class_1_90858D70BEDD91CA* typedData; // 0x10
-		::MoleMole::UIGeneralFilterGroupRowWidgetController* __4__this; // 0x18
+		::MoleMole::UIGeneralFilterGroupRowWidgetController* __4__this; // 0x10
+		::Class_1_90858D70BEDD91CA* typedData; // 0x18
 		::System::Int32 filterGroupIndex; // 0x20
 
 		::System::Void _ctor()

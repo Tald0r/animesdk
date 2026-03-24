@@ -6,12 +6,12 @@ namespace MoleMole::Cameras { class CameraTrackBlending; }
 namespace MoleMole::Cameras { class OverlookCameraFocusOnMultipleAdditionalConfig; }
 namespace MoleMole::Cameras { class OverlookCameraFocusOnSingleConfig; }
 
-#define MOLEMOLE_CAMERAS_OVERLOOKCAMERACONFIG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x6294580)
-#define MOLEMOLE_CAMERAS_OVERLOOKCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x62948C0)
+#define MOLEMOLE_CAMERAS_OVERLOOKCAMERACONFIG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0xCAC6D40)
+#define MOLEMOLE_CAMERAS_OVERLOOKCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCAC7080)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int OverlookCameraConfig_TypeDefinitionIndex = 50265;
+	inline static constexpr unsigned int OverlookCameraConfig_TypeDefinitionIndex = 71174;
 
 	class OverlookCameraConfig : public ::System::Object
 	{

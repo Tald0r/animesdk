@@ -5,12 +5,12 @@
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SECONDFOGCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x17C19F80)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SECONDFOGCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x17C1A260)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SECONDFOGCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x18302690)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SECONDFOGCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18302970)
 
 namespace UnityEngine::Rendering::Universal::WeatherSystem
 {
-	inline static constexpr unsigned int SecondFogConfig_TypeDefinitionIndex = 28819;
+	inline static constexpr unsigned int SecondFogConfig_TypeDefinitionIndex = 29768;
 
 	class SecondFogConfig : public ::UnityEngine::Rendering::Universal::WeatherSystem::WeatherPropertiesBase_1<::UnityEngine::Rendering::Universal::WeatherSystem::SecondFogConfig*>
 	{

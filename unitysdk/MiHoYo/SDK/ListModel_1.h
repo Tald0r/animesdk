@@ -6,7 +6,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ListModel_1_TypeDefinitionIndex = 17887;
+	inline static constexpr unsigned int ListModel_1_TypeDefinitionIndex = 18394;
 
 	template <typename T>
 	class ListModel_1 : public ::System::Object

@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int CurvyRepeatingOrderEnum_TypeDefinitionIndex = 35624;
+	inline static constexpr unsigned int CurvyRepeatingOrderEnum_TypeDefinitionIndex = 36644;
 
 	enum class CurvyRepeatingOrderEnum : ::System::Int32
 	{

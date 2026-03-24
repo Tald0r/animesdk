@@ -5,12 +5,12 @@
 namespace MoleMole { class MovingWallConfig; }
 namespace System { class Action; }
 
-#define MOLEMOLE_MOVINGWALLCONFIG___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA606980)
-#define MOLEMOLE_MOVINGWALLCONFIG___C__DISPLAYCLASS2_0__RELOADFROMFILE_G__LOADCALLBACK_0_OFFSET UNITYSDK_OFFSET(0xA606990)
+#define MOLEMOLE_MOVINGWALLCONFIG___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA7F0D40)
+#define MOLEMOLE_MOVINGWALLCONFIG___C__DISPLAYCLASS2_0__RELOADFROMFILE_G__LOADCALLBACK_0_OFFSET UNITYSDK_OFFSET(0xA7F0D50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MovingWallConfig___c__DisplayClass2_0_TypeDefinitionIndex = 53085;
+	inline static constexpr unsigned int MovingWallConfig___c__DisplayClass2_0_TypeDefinitionIndex = 63926;
 
 	class MovingWallConfig___c__DisplayClass2_0 : public ::System::Object
 	{

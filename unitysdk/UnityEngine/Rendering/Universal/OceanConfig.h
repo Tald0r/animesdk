@@ -11,11 +11,11 @@ namespace UnityEngine { class Cubemap; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Texture2D; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_OCEANCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x16F9E960)
+#define UNITYENGINE_RENDERING_UNIVERSAL_OCEANCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x176704E0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int OceanConfig_TypeDefinitionIndex = 28514;
+	inline static constexpr unsigned int OceanConfig_TypeDefinitionIndex = 29457;
 
 	class OceanConfig : public ::System::Object
 	{

@@ -3,11 +3,11 @@
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessShowUIView_MiniGameUIType_TypeDefinitionIndex = 67155;
+	inline static constexpr unsigned int ChessShowUIView_MiniGameUIType_TypeDefinitionIndex = 50255;
 
 	enum class ChessShowUIView_MiniGameUIType : ::System::Int32
 	{
-		DefenceSceneLargeTv = 0,
 		RhythmMoveLargeTv = 1,
+		DefenceSceneLargeTv = 0,
 	};
 }

@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CAMERACHANGEATTRIBUTE_FOV__CTOR_OFFSET UNITYSDK_OFFSET(0xCC8B570)
+#define MOLEMOLE_CONFIG_CAMERACHANGEATTRIBUTE_FOV__CTOR_OFFSET UNITYSDK_OFFSET(0xACB9480)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CameraChangeAttribute_FOV_TypeDefinitionIndex = 72386;
+	inline static constexpr unsigned int CameraChangeAttribute_FOV_TypeDefinitionIndex = 46424;
 
 	class CameraChangeAttribute_FOV : public ::System::Object
 	{

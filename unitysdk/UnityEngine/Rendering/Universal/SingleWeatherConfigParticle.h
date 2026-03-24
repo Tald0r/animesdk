@@ -4,11 +4,11 @@
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SINGLEWEATHERCONFIGPARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x16DC34D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SINGLEWEATHERCONFIGPARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1742BD10)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SingleWeatherConfigParticle_TypeDefinitionIndex = 28346;
+	inline static constexpr unsigned int SingleWeatherConfigParticle_TypeDefinitionIndex = 29287;
 
 	class SingleWeatherConfigParticle : public ::System::Object
 	{

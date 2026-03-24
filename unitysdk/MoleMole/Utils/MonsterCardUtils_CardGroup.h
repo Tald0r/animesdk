@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UTILS_MONSTERCARDUTILS_CARDGROUP_GET_AVESTRENGTH_OFFSET UNITYSDK_OFFSET(0x69B61A0)
-#define MOLEMOLE_UTILS_MONSTERCARDUTILS_CARDGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x69B6210)
+#define MOLEMOLE_UTILS_MONSTERCARDUTILS_CARDGROUP_GET_AVESTRENGTH_OFFSET UNITYSDK_OFFSET(0xA141C40)
+#define MOLEMOLE_UTILS_MONSTERCARDUTILS_CARDGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0xA141CB0)
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int MonsterCardUtils_CardGroup_TypeDefinitionIndex = 44537;
+	inline static constexpr unsigned int MonsterCardUtils_CardGroup_TypeDefinitionIndex = 69817;
 
 	class MonsterCardUtils_CardGroup : public ::System::Object
 	{

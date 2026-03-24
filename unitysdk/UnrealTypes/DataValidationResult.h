@@ -3,7 +3,7 @@
 
 namespace UnrealTypes
 {
-	inline static constexpr unsigned int DataValidationResult_TypeDefinitionIndex = 23993;
+	inline static constexpr unsigned int DataValidationResult_TypeDefinitionIndex = 24754;
 
 	enum class DataValidationResult : ::System::Int32
 	{

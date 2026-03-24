@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AudioBasePathType_TypeDefinitionIndex = 77785;
+	inline static constexpr unsigned int AudioBasePathType_TypeDefinitionIndex = 57114;
 
 	enum class AudioBasePathType : ::System::Int32
 	{
 		Bare = 3,
-		AppData = 2,
 		Persistent = 1,
+		AppData = 2,
 		Streaming = 0,
 	};
 }

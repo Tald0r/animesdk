@@ -8,22 +8,22 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIGeneralButtonController; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_B641922BEA7E7FD3_1_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x65843C0)
-#define CLASS_2_B641922BEA7E7FD3_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6584470)
-#define CLASS_2_B641922BEA7E7FD3_1_METHOD_2_CBC0149B5D954D19_OFFSET UNITYSDK_OFFSET(0x65841F0)
-#define CLASS_2_B641922BEA7E7FD3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6584460)
+#define CLASS_2_B641922BEA7E7FD3_1_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x9E26780)
+#define CLASS_2_B641922BEA7E7FD3_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9E26830)
+#define CLASS_2_B641922BEA7E7FD3_1_METHOD_2_CBC0149B5D954D19_OFFSET UNITYSDK_OFFSET(0x9E265B0)
+#define CLASS_2_B641922BEA7E7FD3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9E26820)
 
-inline static constexpr unsigned int Class_2_B641922BEA7E7FD3_1_TypeDefinitionIndex = 58561;
+inline static constexpr unsigned int Class_2_B641922BEA7E7FD3_1_TypeDefinitionIndex = 39507;
 
 class Class_2_B641922BEA7E7FD3_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::UIGeneralButtonController* Field_2_4; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x20
-	::MoleMole::UIGeneralButtonController* Field_2_3; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x18
+	::MoleMole::UIGeneralButtonController* Field_2_4; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x28
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x38
+	::MoleMole::UIGeneralButtonController* Field_2_3; // 0x40
 
 	::System::Void _ctor()
 	{

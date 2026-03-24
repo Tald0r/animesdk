@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS16_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBFCA720)
-#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS16_1__INITSORT_B__4_OFFSET UNITYSDK_OFFSET(0xBFCA730)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS16_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9C06240)
+#define MOLEMOLE_UIHOLLOWCARDCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS16_1__INITSORT_B__4_OFFSET UNITYSDK_OFFSET(0x9C06250)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardCollectWidgetController___c__DisplayClass16_1_TypeDefinitionIndex = 72095;
+	inline static constexpr unsigned int UIHollowCardCollectWidgetController___c__DisplayClass16_1_TypeDefinitionIndex = 75064;
 
 	class UIHollowCardCollectWidgetController___c__DisplayClass16_1 : public ::System::Object
 	{

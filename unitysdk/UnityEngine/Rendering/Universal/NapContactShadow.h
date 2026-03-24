@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/NapContactShadow_NativeSRP.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCONTACTSHADOW__CTOR_OFFSET UNITYSDK_OFFSET(0x18399D50)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCONTACTSHADOW__CTOR_OFFSET UNITYSDK_OFFSET(0x189F02E0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapContactShadow_TypeDefinitionIndex = 28676;
+	inline static constexpr unsigned int NapContactShadow_TypeDefinitionIndex = 29619;
 
 	class NapContactShadow : public ::UnityEngine::NAPRenderPipeline0::NapContactShadow_NativeSRP
 	{

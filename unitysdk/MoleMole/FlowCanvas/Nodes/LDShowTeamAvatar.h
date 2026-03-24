@@ -7,20 +7,20 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC2C83D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR_SHOWAVATAR_OFFSET UNITYSDK_OFFSET(0xC2C84E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C8890)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xC2C88B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB8A3E90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR_SHOWAVATAR_OFFSET UNITYSDK_OFFSET(0xB8A3FA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A4350)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTEAMAVATAR__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xB8A4370)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowTeamAvatar_TypeDefinitionIndex = 60499;
+	inline static constexpr unsigned int LDShowTeamAvatar_TypeDefinitionIndex = 74799;
 
 	class LDShowTeamAvatar : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::Il2CppArray<::System::Int32>*>* _indices; // 0xA8
-		::FlowCanvas::FlowOutput* _out; // 0xB0
+		::FlowCanvas::FlowOutput* _out; // 0xA8
+		::FlowCanvas::ValueInput_1<::Il2CppArray<::System::Int32>*>* _indices; // 0xB0
 
 		::System::Void _ctor()
 		{

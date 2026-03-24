@@ -7,12 +7,12 @@
 namespace MoleMole { class UIMainCityClockWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER__SETCLOCKSTORYEND_D__40_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x385D00)
-#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER__SETCLOCKSTORYEND_D__40_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER__SETCLOCKSTORYEND_D__40_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x362D50)
+#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER__SETCLOCKSTORYEND_D__40_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityClockWidgetController__SetClockStoryEnd_d__40_TypeDefinitionIndex = 68087;
+	inline static constexpr unsigned int UIMainCityClockWidgetController__SetClockStoryEnd_d__40_TypeDefinitionIndex = 42189;
 
 	struct alignas(8) UIMainCityClockWidgetController__SetClockStoryEnd_d__40
 	{

@@ -6,12 +6,12 @@ namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class ParticleSystem; }
 
-#define MIHOYO_TOOLKIT_CGTOOLKIT_PSCOMPREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x847F9D0)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_PSCOMPREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x847F8C0)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_PSCOMPREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x94D8210)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_PSCOMPREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x94D8100)
 
 namespace MiHoYo::ToolKit::CGToolKit
 {
-	inline static constexpr unsigned int PsCompReference_TypeDefinitionIndex = 66758;
+	inline static constexpr unsigned int PsCompReference_TypeDefinitionIndex = 73457;
 
 	class PsCompReference : public ::System::Object
 	{

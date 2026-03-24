@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define CODE_LOGIC_CANVAS_LEVELDESIGN_BANGBOODRONE_LD_BANGBOODREAM_LOADNEXTAREA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD1FE700)
-#define CODE_LOGIC_CANVAS_LEVELDESIGN_BANGBOODRONE_LD_BANGBOODREAM_LOADNEXTAREA___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD1FE740)
-#define CODE_LOGIC_CANVAS_LEVELDESIGN_BANGBOODRONE_LD_BANGBOODREAM_LOADNEXTAREA___C__ONEVENTFROMANYONE_B__10_0_OFFSET UNITYSDK_OFFSET(0xD1FE750)
+#define CODE_LOGIC_CANVAS_LEVELDESIGN_BANGBOODRONE_LD_BANGBOODREAM_LOADNEXTAREA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6D08AF0)
+#define CODE_LOGIC_CANVAS_LEVELDESIGN_BANGBOODRONE_LD_BANGBOODREAM_LOADNEXTAREA___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6D08B30)
+#define CODE_LOGIC_CANVAS_LEVELDESIGN_BANGBOODRONE_LD_BANGBOODREAM_LOADNEXTAREA___C__ONEVENTFROMANYONE_B__10_0_OFFSET UNITYSDK_OFFSET(0x6D08B40)
 
 namespace Code::Logic::Canvas::LevelDesign::BangbooDrone
 {
-	inline static constexpr unsigned int LD_BangbooDream_LoadNextArea___c_TypeDefinitionIndex = 52676;
+	inline static constexpr unsigned int LD_BangbooDream_LoadNextArea___c_TypeDefinitionIndex = 45574;
 
 	class LD_BangbooDream_LoadNextArea___c : public ::System::Object
 	{
 	public:
-		static ::Code::Logic::Canvas::LevelDesign::BangbooDrone::LD_BangbooDream_LoadNextArea___c** StaticGet___9()
-		{
-			return (::Code::Logic::Canvas::LevelDesign::BangbooDrone::LD_BangbooDream_LoadNextArea___c**)Il2CppClass::FromTypeDefinitionIndex(LD_BangbooDream_LoadNextArea___c_TypeDefinitionIndex)->GetStaticField(0x30F30);
-		}
 		static ::System::Action** StaticGet___9__10_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(LD_BangbooDream_LoadNextArea___c_TypeDefinitionIndex)->GetStaticField(0x30F38);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(LD_BangbooDream_LoadNextArea___c_TypeDefinitionIndex)->GetStaticField(0x33190);
+		}
+		static ::Code::Logic::Canvas::LevelDesign::BangbooDrone::LD_BangbooDream_LoadNextArea___c** StaticGet___9()
+		{
+			return (::Code::Logic::Canvas::LevelDesign::BangbooDrone::LD_BangbooDream_LoadNextArea___c**)Il2CppClass::FromTypeDefinitionIndex(LD_BangbooDream_LoadNextArea___c_TypeDefinitionIndex)->GetStaticField(0x33198);
 		}
 
 		static ::System::Void _cctor()

@@ -7,9 +7,9 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections { class IEnumerable; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-#define CLASS_1_8D06FCA347C65CA3_METHOD_1_CE21B2676467522C_OFFSET UNITYSDK_OFFSET(0x6FCFE10)
+#define CLASS_1_8D06FCA347C65CA3_METHOD_1_CE21B2676467522C_OFFSET UNITYSDK_OFFSET(0x63C3950)
 
-inline static constexpr unsigned int Class_1_8D06FCA347C65CA3_TypeDefinitionIndex = 53445;
+inline static constexpr unsigned int Class_1_8D06FCA347C65CA3_TypeDefinitionIndex = 77859;
 
 class Class_1_8D06FCA347C65CA3 : public ::System::Object
 {

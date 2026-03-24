@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIBossChallengeSelectZonePageController___c__DisplayClass4_0; }
 
-#define MOLEMOLE_UIBOSSCHALLENGESELECTZONEPAGECONTROLLER___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBEDF3A0)
-#define MOLEMOLE_UIBOSSCHALLENGESELECTZONEPAGECONTROLLER___C__DISPLAYCLASS4_1__ONUIINIT_B__1_OFFSET UNITYSDK_OFFSET(0xBEDF4E0)
+#define MOLEMOLE_UIBOSSCHALLENGESELECTZONEPAGECONTROLLER___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBF41BE0)
+#define MOLEMOLE_UIBOSSCHALLENGESELECTZONEPAGECONTROLLER___C__DISPLAYCLASS4_1__ONUIINIT_B__1_OFFSET UNITYSDK_OFFSET(0xBF41D20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBossChallengeSelectZonePageController___c__DisplayClass4_1_TypeDefinitionIndex = 59890;
+	inline static constexpr unsigned int UIBossChallengeSelectZonePageController___c__DisplayClass4_1_TypeDefinitionIndex = 68890;
 
 	class UIBossChallengeSelectZonePageController___c__DisplayClass4_1 : public ::System::Object
 	{

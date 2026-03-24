@@ -2,25 +2,25 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_241;
+class Class_0_16E4307DCC419505_158;
 namespace MoleMole { class UIMechBooPrepWidgetController; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
 
-#define MOLEMOLE_UIMECHBOOPREPWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6CD2E00)
-#define MOLEMOLE_UIMECHBOOPREPWIDGETCONTROLLER___C__DISPLAYCLASS6_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x6CD2E10)
-#define MOLEMOLE_UIMECHBOOPREPWIDGETCONTROLLER___C__DISPLAYCLASS6_0__REFRESHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0x6CD2E40)
+#define MOLEMOLE_UIMECHBOOPREPWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB5017C0)
+#define MOLEMOLE_UIMECHBOOPREPWIDGETCONTROLLER___C__DISPLAYCLASS6_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xB5017D0)
+#define MOLEMOLE_UIMECHBOOPREPWIDGETCONTROLLER___C__DISPLAYCLASS6_0__REFRESHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xB501800)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMechBooPrepWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 41299;
+	inline static constexpr unsigned int UIMechBooPrepWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 76144;
 
 	class UIMechBooPrepWidgetController___c__DisplayClass6_0 : public ::System::Object
 	{
 	public:
-		::System::Action_1<::Class_0_16E4307DCC419505_241*>* onClickScriptBtn; // 0x10
-		::Class_0_16E4307DCC419505_241* levelInfo; // 0x18
-		::MoleMole::UIMechBooPrepWidgetController* __4__this; // 0x20
+		::MoleMole::UIMechBooPrepWidgetController* __4__this; // 0x10
+		::Class_0_16E4307DCC419505_158* levelInfo; // 0x18
+		::System::Action_1<::Class_0_16E4307DCC419505_158*>* onClickScriptBtn; // 0x20
 
 		::System::Void _ctor()
 		{

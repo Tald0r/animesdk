@@ -9,21 +9,21 @@ namespace System::Reflection::Emit { class AssemblyBuilder; }
 namespace System::Reflection::Emit { class ModuleBuilder; }
 namespace System::Reflection::Emit { class TypeBuilder; }
 
-#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY_DEFINETYPE_1_OFFSET UNITYSDK_OFFSET(0x1AEE5C60)
-#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY_DEFINETYPE_2_OFFSET UNITYSDK_OFFSET(0x1AEE5D30)
-#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY_DEFINETYPE_OFFSET UNITYSDK_OFFSET(0x1AEE5B90)
-#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEE5E10)
+#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY_DEFINETYPE_1_OFFSET UNITYSDK_OFFSET(0x1B50D9F0)
+#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY_DEFINETYPE_2_OFFSET UNITYSDK_OFFSET(0x1B50DAC0)
+#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY_DEFINETYPE_OFFSET UNITYSDK_OFFSET(0x1B50D920)
+#define UTF8JSON_INTERNAL_EMIT_DYNAMICASSEMBLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B50DBA0)
 
 namespace Utf8Json::Internal::Emit
 {
-	inline static constexpr unsigned int DynamicAssembly_TypeDefinitionIndex = 81904;
+	inline static constexpr unsigned int DynamicAssembly_TypeDefinitionIndex = 83945;
 
 	class DynamicAssembly : public ::System::Object
 	{
 	public:
-		::System::Reflection::Emit::AssemblyBuilder* assemblyBuilder; // 0x10
-		::System::Object* gate; // 0x18
-		::System::Reflection::Emit::ModuleBuilder* moduleBuilder; // 0x20
+		::System::Reflection::Emit::ModuleBuilder* moduleBuilder; // 0x10
+		::System::Reflection::Emit::AssemblyBuilder* assemblyBuilder; // 0x18
+		::System::Object* gate; // 0x20
 
 		::System::Void _ctor(::System::String* moduleName)
 		{

@@ -6,11 +6,11 @@ namespace MoleMole::Config { class GamepadRumbleEntry; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGGAMEPADRUMBLE__CTOR_OFFSET UNITYSDK_OFFSET(0x89F7190)
+#define MOLEMOLE_CONFIG_CONFIGGAMEPADRUMBLE__CTOR_OFFSET UNITYSDK_OFFSET(0x10A8FDC0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGamepadRumble_TypeDefinitionIndex = 63897;
+	inline static constexpr unsigned int ConfigGamepadRumble_TypeDefinitionIndex = 78365;
 
 	class ConfigGamepadRumble : public ::Foundation::MihoyoSerializedScriptableObject
 	{

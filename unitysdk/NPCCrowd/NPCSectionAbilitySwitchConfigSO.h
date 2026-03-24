@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NPCCROWD_NPCSECTIONABILITYSWITCHCONFIGSO__CTOR_OFFSET UNITYSDK_OFFSET(0x6042F10)
+#define NPCCROWD_NPCSECTIONABILITYSWITCHCONFIGSO__CTOR_OFFSET UNITYSDK_OFFSET(0x6A088E0)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int NPCSectionAbilitySwitchConfigSO_TypeDefinitionIndex = 65305;
+	inline static constexpr unsigned int NPCSectionAbilitySwitchConfigSO_TypeDefinitionIndex = 44188;
 
 	class NPCSectionAbilitySwitchConfigSO : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

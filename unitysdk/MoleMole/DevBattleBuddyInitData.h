@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DevBuddyInitData.h"
 
-#define MOLEMOLE_DEVBATTLEBUDDYINITDATA_GET_TEMPLATEID_OFFSET UNITYSDK_OFFSET(0x97202C0)
-#define MOLEMOLE_DEVBATTLEBUDDYINITDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x97202D0)
+#define MOLEMOLE_DEVBATTLEBUDDYINITDATA_GET_TEMPLATEID_OFFSET UNITYSDK_OFFSET(0xB0AF460)
+#define MOLEMOLE_DEVBATTLEBUDDYINITDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB0AF470)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int DevBattleBuddyInitData_TypeDefinitionIndex = 67753;
+	inline static constexpr unsigned int DevBattleBuddyInitData_TypeDefinitionIndex = 77371;
 
 	class DevBattleBuddyInitData : public ::MoleMole::DevBuddyInitData
 	{
 	public:
-		::System::Boolean CreateAsAvatar; // 0x20
-		::System::Int32 BuddyTemplateID; // 0x24
+		::System::Int32 BuddyTemplateID; // 0x20
+		::System::Boolean CreateAsAvatar; // 0x24
 
 		::System::Void _ctor()
 		{

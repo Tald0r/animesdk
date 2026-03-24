@@ -4,11 +4,11 @@
 #include "unitysdk/UnityEngine/FontStyle.h"
 #include "unitysdk/UnityEngine/Rect.h"
 
-#define UNITYENGINE_CHARACTERINFO_GET_ADVANCE_OFFSET UNITYSDK_OFFSET(0x9769F0)
+#define UNITYENGINE_CHARACTERINFO_GET_ADVANCE_OFFSET UNITYSDK_OFFSET(0x9A9820)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int CharacterInfo_TypeDefinitionIndex = 6338;
+	inline static constexpr unsigned int CharacterInfo_TypeDefinitionIndex = 6342;
 
 	struct alignas(4) CharacterInfo
 	{

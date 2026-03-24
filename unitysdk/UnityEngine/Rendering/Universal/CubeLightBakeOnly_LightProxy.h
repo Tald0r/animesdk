@@ -5,11 +5,11 @@
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Light; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_CUBELIGHTBAKEONLY_LIGHTPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x187BC620)
+#define UNITYENGINE_RENDERING_UNIVERSAL_CUBELIGHTBAKEONLY_LIGHTPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x18D1B390)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CubeLightBakeOnly_LightProxy_TypeDefinitionIndex = 28375;
+	inline static constexpr unsigned int CubeLightBakeOnly_LightProxy_TypeDefinitionIndex = 29318;
 
 	class CubeLightBakeOnly_LightProxy : public ::System::Object
 	{

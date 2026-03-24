@@ -5,12 +5,12 @@
 namespace MiHoYo::SDK { class HoYoSDKHttpDnsService___c__DisplayClass5_1; }
 namespace MiHoYo::SDK { class HoYoSDKNetworkNative_HttpResponse; }
 
-#define MIHOYO_SDK_HOYOSDKHTTPDNSSERVICE___C__DISPLAYCLASS5_2__CTOR_OFFSET UNITYSDK_OFFSET(0x190F5030)
-#define MIHOYO_SDK_HOYOSDKHTTPDNSSERVICE___C__DISPLAYCLASS5_2__REQUESTHOSTADDR_B__4_OFFSET UNITYSDK_OFFSET(0x190F5040)
+#define MIHOYO_SDK_HOYOSDKHTTPDNSSERVICE___C__DISPLAYCLASS5_2__CTOR_OFFSET UNITYSDK_OFFSET(0x19583F80)
+#define MIHOYO_SDK_HOYOSDKHTTPDNSSERVICE___C__DISPLAYCLASS5_2__REQUESTHOSTADDR_B__4_OFFSET UNITYSDK_OFFSET(0x19583F90)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int HoYoSDKHttpDnsService___c__DisplayClass5_2_TypeDefinitionIndex = 33438;
+	inline static constexpr unsigned int HoYoSDKHttpDnsService___c__DisplayClass5_2_TypeDefinitionIndex = 34392;
 
 	class HoYoSDKHttpDnsService___c__DisplayClass5_2 : public ::System::Object
 	{

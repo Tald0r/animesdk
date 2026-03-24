@@ -4,9 +4,9 @@
 
 namespace NPCCrowd::Avatar { class NPCAvatarGOReference; }
 
-#define NPCAVATARUTILS___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6011DD0)
+#define NPCAVATARUTILS___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0x69D2D20)
 
-inline static constexpr unsigned int NPCAvatarUtils___c__DisplayClass18_0_TypeDefinitionIndex = 50621;
+inline static constexpr unsigned int NPCAvatarUtils___c__DisplayClass18_0_TypeDefinitionIndex = 48373;
 
 class NPCAvatarUtils___c__DisplayClass18_0 : public ::System::Object
 {

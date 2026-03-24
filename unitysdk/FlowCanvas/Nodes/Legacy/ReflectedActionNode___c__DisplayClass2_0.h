@@ -6,12 +6,12 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas::Nodes::Legacy { class ReflectedActionNode; }
 
-#define FLOWCANVAS_NODES_LEGACY_REFLECTEDACTIONNODE___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19E02DA0)
-#define FLOWCANVAS_NODES_LEGACY_REFLECTEDACTIONNODE___C__DISPLAYCLASS2_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x19E02DB0)
+#define FLOWCANVAS_NODES_LEGACY_REFLECTEDACTIONNODE___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3F1610)
+#define FLOWCANVAS_NODES_LEGACY_REFLECTEDACTIONNODE___C__DISPLAYCLASS2_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A3F1620)
 
 namespace FlowCanvas::Nodes::Legacy
 {
-	inline static constexpr unsigned int ReflectedActionNode___c__DisplayClass2_0_TypeDefinitionIndex = 26470;
+	inline static constexpr unsigned int ReflectedActionNode___c__DisplayClass2_0_TypeDefinitionIndex = 26770;
 
 	class ReflectedActionNode___c__DisplayClass2_0 : public ::System::Object
 	{

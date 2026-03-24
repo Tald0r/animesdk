@@ -6,19 +6,19 @@ class Class_2_12BDE7300F0E061C;
 namespace MoleMole { class UIRoleEquipRecommendPopWindowController; }
 namespace MoleMole { template <typename T> class UIRoleEquipRecommendPopContext_1; }
 
-#define MOLEMOLE_UIROLEEQUIPRECOMMENDPOPWINDOWCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x68EC980)
-#define MOLEMOLE_UIROLEEQUIPRECOMMENDPOPWINDOWCONTROLLER___C__DISPLAYCLASS8_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0x68EC990)
-#define MOLEMOLE_UIROLEEQUIPRECOMMENDPOPWINDOWCONTROLLER___C__DISPLAYCLASS8_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0x68ECE50)
+#define MOLEMOLE_UIROLEEQUIPRECOMMENDPOPWINDOWCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8687ED0)
+#define MOLEMOLE_UIROLEEQUIPRECOMMENDPOPWINDOWCONTROLLER___C__DISPLAYCLASS8_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0x8687EE0)
+#define MOLEMOLE_UIROLEEQUIPRECOMMENDPOPWINDOWCONTROLLER___C__DISPLAYCLASS8_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0x86883A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleEquipRecommendPopWindowController___c__DisplayClass8_0_TypeDefinitionIndex = 71868;
+	inline static constexpr unsigned int UIRoleEquipRecommendPopWindowController___c__DisplayClass8_0_TypeDefinitionIndex = 43730;
 
 	class UIRoleEquipRecommendPopWindowController___c__DisplayClass8_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIRoleEquipRecommendPopWindowController* __4__this; // 0x10
-		::MoleMole::UIRoleEquipRecommendPopContext_1<::Class_2_12BDE7300F0E061C*>* dialogContext; // 0x18
+		::MoleMole::UIRoleEquipRecommendPopContext_1<::Class_2_12BDE7300F0E061C*>* dialogContext; // 0x10
+		::MoleMole::UIRoleEquipRecommendPopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

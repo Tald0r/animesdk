@@ -13,55 +13,55 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_GETINTERACTFLOATPARAM_OFFSET UNITYSDK_OFFSET(0xC210FD0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_ONEVENT_OFFSET UNITYSDK_OFFSET(0xC211090)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_PREPAREDATA_OFFSET UNITYSDK_OFFSET(0xC210D10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_PREPAREINTERACTOBJECTS_OFFSET UNITYSDK_OFFSET(0xC210D70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_PROCESSINTERACTCNT_OFFSET UNITYSDK_OFFSET(0xC211FE0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC210710)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_START_INTERACT_OFFSET UNITYSDK_OFFSET(0xC2116A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__CCTOR_OFFSET UNITYSDK_OFFSET(0xC212260)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__CTOR_OFFSET UNITYSDK_OFFSET(0xC212230)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__ONSUCCESS_OFFSET UNITYSDK_OFFSET(0xC2113A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__REGISTERPORTS_B__23_0_OFFSET UNITYSDK_OFFSET(0xC2122A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__REGISTERPORTS_B__23_1_OFFSET UNITYSDK_OFFSET(0xC212310)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__REGISTERPORTS_B__23_2_OFFSET UNITYSDK_OFFSET(0xC212340)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__START_INTERACT_B__29_0_OFFSET UNITYSDK_OFFSET(0xC212350)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__START_INTERACT_B__29_1_OFFSET UNITYSDK_OFFSET(0xC212390)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_GETINTERACTFLOATPARAM_OFFSET UNITYSDK_OFFSET(0xB8278B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_ONEVENT_OFFSET UNITYSDK_OFFSET(0xB827970)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_PREPAREDATA_OFFSET UNITYSDK_OFFSET(0xB8275F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_PREPAREINTERACTOBJECTS_OFFSET UNITYSDK_OFFSET(0xB827650)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_PROCESSINTERACTCNT_OFFSET UNITYSDK_OFFSET(0xB8288B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB826FF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT_START_INTERACT_OFFSET UNITYSDK_OFFSET(0xB827F80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__CCTOR_OFFSET UNITYSDK_OFFSET(0xB828B30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__CTOR_OFFSET UNITYSDK_OFFSET(0xB828B00)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__ONSUCCESS_OFFSET UNITYSDK_OFFSET(0xB827C80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__REGISTERPORTS_B__23_0_OFFSET UNITYSDK_OFFSET(0xB828B70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__REGISTERPORTS_B__23_1_OFFSET UNITYSDK_OFFSET(0xB828BE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__REGISTERPORTS_B__23_2_OFFSET UNITYSDK_OFFSET(0xB828C10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__START_INTERACT_B__29_0_OFFSET UNITYSDK_OFFSET(0xB828C20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDINTERACT__START_INTERACT_B__29_1_OFFSET UNITYSDK_OFFSET(0xB828C60)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAddInteract_TypeDefinitionIndex = 52702;
+	inline static constexpr unsigned int LDAddInteract_TypeDefinitionIndex = 63449;
 
 	class LDAddInteract : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		static ::System::Int32* StaticGet___InteractIDKEY()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LDAddInteract_TypeDefinitionIndex)->GetStaticField(0x112F0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LDAddInteract_TypeDefinitionIndex)->GetStaticField(0x10FB0);
 		}
 		// static const ::System::Int32 UPDATE_VALUE_MAGIC_NUMBER = 0x699; // 0x0
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* ownerEntity; // 0xA8
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Object*>* _interactValueDict; // 0xB0
-		::FlowCanvas::FlowOutput* onInteractForbidden; // 0xB8
-		::FlowCanvas::ValueInput_1<::System::String*>* interactTagName; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Int32>* _overrideInteractionCnt; // 0xC8
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* _overrideAbilityMap; // 0xD0
+		::Class_1_87C7E5A87E686986_Class_1_1EA32B1BCD0B78FD* _interactParam; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::String*>* interactTagName; // 0xB0
+		::FlowCanvas::FlowOutput* output; // 0xB8
+		::System::String* _GroupName; // 0xC0
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::FlowCanvas::FlowOutput*>* _interactMsgDict; // 0xC8
+		::MoleMole::Config::InteractEntry* entry; // 0xD0
 		::System::String* usingKey; // 0xD8
-		::Class_1_87C7E5A87E686986_Class_1_1EA32B1BCD0B78FD* _interactParam; // 0xE0
-		::System::String* inputInteractKey; // 0xE8
-		::FlowCanvas::ValueInput_1<::System::Boolean>* isGlobalMonopoly; // 0xF0
-		::FlowCanvas::ValueInput_1<::System::String*>* dynamicInputInteractKey; // 0xF8
-		::FlowCanvas::FlowOutput* onInteract; // 0x100
-		::FlowCanvas::FlowOutput* output; // 0x108
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::FlowCanvas::FlowOutput*>* _interactMsgDict; // 0x110
-		::FlowCanvas::ValueInput_1<::System::String*>* interactGroupName; // 0x118
-		::System::String* _GroupName; // 0x120
-		::MoleMole::Config::InteractEntry* entry; // 0x128
-		::System::Boolean isBindEvent; // 0x130
-		::System::Int32 _GroupItemID; // 0x134
-		::System::Single _lastUpdateResource; // 0x138
-		::System::Single _InteractStartTime; // 0x13C
+		::FlowCanvas::ValueInput_1<::System::Int32>* _overrideInteractionCnt; // 0xE0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* isGlobalMonopoly; // 0xE8
+		::System::String* inputInteractKey; // 0xF0
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Object*>* _interactValueDict; // 0xF8
+		::FlowCanvas::FlowOutput* onInteractForbidden; // 0x100
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* _overrideAbilityMap; // 0x108
+		::FlowCanvas::FlowOutput* onInteract; // 0x110
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* ownerEntity; // 0x118
+		::FlowCanvas::ValueInput_1<::System::String*>* interactGroupName; // 0x120
+		::FlowCanvas::ValueInput_1<::System::String*>* dynamicInputInteractKey; // 0x128
+		::System::Single _InteractStartTime; // 0x130
+		::System::Boolean isBindEvent; // 0x134
+		::System::Int32 _GroupItemID; // 0x138
+		::System::Single _lastUpdateResource; // 0x13C
 
 		::System::Void _ctor()
 		{

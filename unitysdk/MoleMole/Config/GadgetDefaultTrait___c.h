@@ -4,26 +4,26 @@
 #include "unitysdk/Struct_2_EB409772687773A2.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_D92ADC48CDFCC09B_1;
+class Class_3_D92ADC48CDFCC09B_2;
 
-#define MOLEMOLE_CONFIG_GADGETDEFAULTTRAIT___C_METHOD_1_86843C648953ACC3_OFFSET UNITYSDK_OFFSET(0x13FA0570)
-#define MOLEMOLE_CONFIG_GADGETDEFAULTTRAIT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x13FA0520)
-#define MOLEMOLE_CONFIG_GADGETDEFAULTTRAIT___C__CTOR_OFFSET UNITYSDK_OFFSET(0x13FA0560)
+#define MOLEMOLE_CONFIG_GADGETDEFAULTTRAIT___C_METHOD_1_86843C648953ACC3_OFFSET UNITYSDK_OFFSET(0xF2DA120)
+#define MOLEMOLE_CONFIG_GADGETDEFAULTTRAIT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xF2DA0D0)
+#define MOLEMOLE_CONFIG_GADGETDEFAULTTRAIT___C__CTOR_OFFSET UNITYSDK_OFFSET(0xF2DA110)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int GadgetDefaultTrait___c_TypeDefinitionIndex = 57019;
+	inline static constexpr unsigned int GadgetDefaultTrait___c_TypeDefinitionIndex = 56278;
 
 	class GadgetDefaultTrait___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Config::GadgetDefaultTrait___c** StaticGet___9()
 		{
-			return (::MoleMole::Config::GadgetDefaultTrait___c**)Il2CppClass::FromTypeDefinitionIndex(GadgetDefaultTrait___c_TypeDefinitionIndex)->GetStaticField(0x31F30);
+			return (::MoleMole::Config::GadgetDefaultTrait___c**)Il2CppClass::FromTypeDefinitionIndex(GadgetDefaultTrait___c_TypeDefinitionIndex)->GetStaticField(0x33DA0);
 		}
-		static ::Class_3_D92ADC48CDFCC09B_1** StaticGet___9__29_0()
+		static ::Class_3_D92ADC48CDFCC09B_2** StaticGet___9__29_0()
 		{
-			return (::Class_3_D92ADC48CDFCC09B_1**)Il2CppClass::FromTypeDefinitionIndex(GadgetDefaultTrait___c_TypeDefinitionIndex)->GetStaticField(0x31F38);
+			return (::Class_3_D92ADC48CDFCC09B_2**)Il2CppClass::FromTypeDefinitionIndex(GadgetDefaultTrait___c_TypeDefinitionIndex)->GetStaticField(0x33DA8);
 		}
 
 		static ::System::Void _cctor()

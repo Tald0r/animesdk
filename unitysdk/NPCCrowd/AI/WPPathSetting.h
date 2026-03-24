@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_AI_WPPATHSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x7EF3A20)
+#define NPCCROWD_AI_WPPATHSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x6BA2410)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int WPPathSetting_TypeDefinitionIndex = 40865;
+	inline static constexpr unsigned int WPPathSetting_TypeDefinitionIndex = 43862;
 
 	class WPPathSetting : public ::System::Object
 	{

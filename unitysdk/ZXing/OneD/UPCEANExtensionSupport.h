@@ -5,19 +5,19 @@
 namespace ZXing::OneD { class UPCEANExtension2Support; }
 namespace ZXing::OneD { class UPCEANExtension5Support; }
 
-#define ZXING_ONED_UPCEANEXTENSIONSUPPORT__CCTOR_OFFSET UNITYSDK_OFFSET(0x17D3EC40)
-#define ZXING_ONED_UPCEANEXTENSIONSUPPORT__CTOR_OFFSET UNITYSDK_OFFSET(0x17D3EAE0)
+#define ZXING_ONED_UPCEANEXTENSIONSUPPORT__CCTOR_OFFSET UNITYSDK_OFFSET(0x184466A0)
+#define ZXING_ONED_UPCEANEXTENSIONSUPPORT__CTOR_OFFSET UNITYSDK_OFFSET(0x18446540)
 
 namespace ZXing::OneD
 {
-	inline static constexpr unsigned int UPCEANExtensionSupport_TypeDefinitionIndex = 8663;
+	inline static constexpr unsigned int UPCEANExtensionSupport_TypeDefinitionIndex = 8674;
 
 	class UPCEANExtensionSupport : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::Int32>** StaticGet_EXTENSION_START_PATTERN()
 		{
-			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UPCEANExtensionSupport_TypeDefinitionIndex)->GetStaticField(0x7B30);
+			return (::Il2CppArray<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UPCEANExtensionSupport_TypeDefinitionIndex)->GetStaticField(0x7B70);
 		}
 		::ZXing::OneD::UPCEANExtension2Support* twoSupport; // 0x10
 		::ZXing::OneD::UPCEANExtension5Support* fiveSupport; // 0x18

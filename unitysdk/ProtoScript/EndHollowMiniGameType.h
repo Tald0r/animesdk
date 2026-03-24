@@ -3,7 +3,7 @@
 
 namespace ProtoScript
 {
-	inline static constexpr unsigned int EndHollowMiniGameType_TypeDefinitionIndex = 19245;
+	inline static constexpr unsigned int EndHollowMiniGameType_TypeDefinitionIndex = 21702;
 
 	enum class EndHollowMiniGameType : ::System::Int32
 	{

@@ -2,32 +2,32 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_6D6D57236F24B8FC;
+class Class_1_6D6D57236F24B8FC_1;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x96052B0)
-#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x96052F0)
-#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__ONUIOPENSHOW_B__23_0_OFFSET UNITYSDK_OFFSET(0x9605300)
-#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__REFRESHUIWHENDATAUPDATE_B__38_0_OFFSET UNITYSDK_OFFSET(0x9605350)
+#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8C29FF0)
+#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8C2A030)
+#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__ONUIOPENSHOW_B__23_0_OFFSET UNITYSDK_OFFSET(0x8C2A040)
+#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__REFRESHUIWHENDATAUPDATE_B__38_0_OFFSET UNITYSDK_OFFSET(0x8C2A090)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGroceryActivityPageController___c_TypeDefinitionIndex = 77254;
+	inline static constexpr unsigned int UIGroceryActivityPageController___c_TypeDefinitionIndex = 67057;
 
 	class UIGroceryActivityPageController___c : public ::System::Object
 	{
 	public:
+		static ::System::Comparison_1<::Class_1_6D6D57236F24B8FC_1*>** StaticGet___9__38_0()
+		{
+			return (::System::Comparison_1<::Class_1_6D6D57236F24B8FC_1*>**)Il2CppClass::FromTypeDefinitionIndex(UIGroceryActivityPageController___c_TypeDefinitionIndex)->GetStaticField(0x397F0);
+		}
+		static ::System::Comparison_1<::Class_1_6D6D57236F24B8FC_1*>** StaticGet___9__23_0()
+		{
+			return (::System::Comparison_1<::Class_1_6D6D57236F24B8FC_1*>**)Il2CppClass::FromTypeDefinitionIndex(UIGroceryActivityPageController___c_TypeDefinitionIndex)->GetStaticField(0x397F8);
+		}
 		static ::MoleMole::UIGroceryActivityPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIGroceryActivityPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGroceryActivityPageController___c_TypeDefinitionIndex)->GetStaticField(0x36B50);
-		}
-		static ::System::Comparison_1<::Class_1_6D6D57236F24B8FC*>** StaticGet___9__23_0()
-		{
-			return (::System::Comparison_1<::Class_1_6D6D57236F24B8FC*>**)Il2CppClass::FromTypeDefinitionIndex(UIGroceryActivityPageController___c_TypeDefinitionIndex)->GetStaticField(0x36B58);
-		}
-		static ::System::Comparison_1<::Class_1_6D6D57236F24B8FC*>** StaticGet___9__38_0()
-		{
-			return (::System::Comparison_1<::Class_1_6D6D57236F24B8FC*>**)Il2CppClass::FromTypeDefinitionIndex(UIGroceryActivityPageController___c_TypeDefinitionIndex)->GetStaticField(0x36B60);
+			return (::MoleMole::UIGroceryActivityPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGroceryActivityPageController___c_TypeDefinitionIndex)->GetStaticField(0x39800);
 		}
 
 		static ::System::Void _cctor()
@@ -40,14 +40,14 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _OnUIOpenShow_b__23_0(::Class_1_6D6D57236F24B8FC* x, ::Class_1_6D6D57236F24B8FC* y)
+		::System::Int32 _OnUIOpenShow_b__23_0(::Class_1_6D6D57236F24B8FC_1* x, ::Class_1_6D6D57236F24B8FC_1* y)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_1_6D6D57236F24B8FC*, ::Class_1_6D6D57236F24B8FC*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__ONUIOPENSHOW_B__23_0_OFFSET))(this, x, y);
+			return ((::System::Int32(*)(::PVOID, ::Class_1_6D6D57236F24B8FC_1*, ::Class_1_6D6D57236F24B8FC_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__ONUIOPENSHOW_B__23_0_OFFSET))(this, x, y);
 		}
 
-		::System::Int32 _RefreshUIWhenDataUpdate_b__38_0(::Class_1_6D6D57236F24B8FC* x, ::Class_1_6D6D57236F24B8FC* y)
+		::System::Int32 _RefreshUIWhenDataUpdate_b__38_0(::Class_1_6D6D57236F24B8FC_1* x, ::Class_1_6D6D57236F24B8FC_1* y)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_1_6D6D57236F24B8FC*, ::Class_1_6D6D57236F24B8FC*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__REFRESHUIWHENDATAUPDATE_B__38_0_OFFSET))(this, x, y);
+			return ((::System::Int32(*)(::PVOID, ::Class_1_6D6D57236F24B8FC_1*, ::Class_1_6D6D57236F24B8FC_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER___C__REFRESHUIWHENDATAUPDATE_B__38_0_OFFSET))(this, x, y);
 		}
 	};
 }

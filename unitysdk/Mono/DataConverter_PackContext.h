@@ -5,9 +5,9 @@
 namespace Mono { class DataConverter; }
 namespace System { class String; }
 
-#define MONO_DATACONVERTER_PACKCONTEXT_ADD_OFFSET UNITYSDK_OFFSET(0x19505F80)
-#define MONO_DATACONVERTER_PACKCONTEXT_GET_OFFSET UNITYSDK_OFFSET(0x19506120)
-#define MONO_DATACONVERTER_PACKCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x19506180)
+#define MONO_DATACONVERTER_PACKCONTEXT_ADD_OFFSET UNITYSDK_OFFSET(0x199E5D10)
+#define MONO_DATACONVERTER_PACKCONTEXT_GET_OFFSET UNITYSDK_OFFSET(0x199E5EB0)
+#define MONO_DATACONVERTER_PACKCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x199E5F10)
 
 namespace Mono
 {
@@ -16,13 +16,13 @@ namespace Mono
 	class DataConverter_PackContext : public ::System::Object
 	{
 	public:
-		::System::String* description; // 0x10
-		::Mono::DataConverter* conv; // 0x18
-		::Il2CppArray<::System::Byte>* buffer; // 0x20
+		::Mono::DataConverter* conv; // 0x10
+		::Il2CppArray<::System::Byte>* buffer; // 0x18
+		::System::String* description; // 0x20
 		::System::Int32 i; // 0x28
-		::System::Int32 next; // 0x2C
+		::System::Int32 repeat; // 0x2C
 		::System::Int32 align; // 0x30
-		::System::Int32 repeat; // 0x34
+		::System::Int32 next; // 0x34
 
 		::System::Void _ctor()
 		{

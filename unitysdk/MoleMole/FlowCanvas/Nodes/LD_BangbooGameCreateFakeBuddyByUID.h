@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMECREATEFAKEBUDDYBYUID_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2CAF20)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMECREATEFAKEBUDDYBYUID__CTOR_OFFSET UNITYSDK_OFFSET(0xC2CAFC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMECREATEFAKEBUDDYBYUID_INVOKE_OFFSET UNITYSDK_OFFSET(0xB8A69C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMECREATEFAKEBUDDYBYUID__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A6A60)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_BangbooGameCreateFakeBuddyByUID_TypeDefinitionIndex = 62764;
+	inline static constexpr unsigned int LD_BangbooGameCreateFakeBuddyByUID_TypeDefinitionIndex = 45918;
 
 	class LD_BangbooGameCreateFakeBuddyByUID : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::MoleMole::EntityHandle, ::System::UInt32, ::System::String*>
 	{

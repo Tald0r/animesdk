@@ -4,12 +4,12 @@
 
 namespace System::IO { class Stream; }
 
-#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2_COMPRESS_OFFSET UNITYSDK_OFFSET(0x1A26D510)
-#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2_DECOMPRESS_OFFSET UNITYSDK_OFFSET(0x1A26D320)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2_COMPRESS_OFFSET UNITYSDK_OFFSET(0x1A83E360)
+#define ICSHARPCODE_SHARPZIPLIB_BZIP2_BZIP2_DECOMPRESS_OFFSET UNITYSDK_OFFSET(0x1A83E170)
 
 namespace ICSharpCode::SharpZipLib::BZip2
 {
-	inline static constexpr unsigned int BZip2_TypeDefinitionIndex = 6629;
+	inline static constexpr unsigned int BZip2_TypeDefinitionIndex = 6633;
 
 	class BZip2 : public ::System::Object
 	{

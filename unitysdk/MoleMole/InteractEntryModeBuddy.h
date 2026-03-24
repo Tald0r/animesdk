@@ -7,23 +7,23 @@ namespace MoleMole { class AniamtorParamsSetting; }
 namespace MoleMole::Config { class InteractEntry; }
 namespace System { class String; }
 
-#define MOLEMOLE_INTERACTENTRYMODEBUDDY_CHECKACTIONCONTENT_OFFSET UNITYSDK_OFFSET(0xC226E20)
-#define MOLEMOLE_INTERACTENTRYMODEBUDDY_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xC226CF0)
-#define MOLEMOLE_INTERACTENTRYMODEBUDDY_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC226EE0)
-#define MOLEMOLE_INTERACTENTRYMODEBUDDY__CTOR_OFFSET UNITYSDK_OFFSET(0xC227000)
-#define MOLEMOLE_INTERACTENTRYMODEBUDDY___BASE_CHECKACTIONCONTENT_OFFSET UNITYSDK_OFFSET(0xC227010)
-#define MOLEMOLE_INTERACTENTRYMODEBUDDY___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC227070)
+#define MOLEMOLE_INTERACTENTRYMODEBUDDY_CHECKACTIONCONTENT_OFFSET UNITYSDK_OFFSET(0xB83D5C0)
+#define MOLEMOLE_INTERACTENTRYMODEBUDDY_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xB83D490)
+#define MOLEMOLE_INTERACTENTRYMODEBUDDY_TOSTRING_OFFSET UNITYSDK_OFFSET(0xB83D680)
+#define MOLEMOLE_INTERACTENTRYMODEBUDDY__CTOR_OFFSET UNITYSDK_OFFSET(0xB83D7A0)
+#define MOLEMOLE_INTERACTENTRYMODEBUDDY___BASE_CHECKACTIONCONTENT_OFFSET UNITYSDK_OFFSET(0xB83D7B0)
+#define MOLEMOLE_INTERACTENTRYMODEBUDDY___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xB83D810)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int InteractEntryModeBuddy_TypeDefinitionIndex = 54895;
+	inline static constexpr unsigned int InteractEntryModeBuddy_TypeDefinitionIndex = 78640;
 
 	class InteractEntryModeBuddy : public ::MoleMole::Config::InteractEntryMode
 	{
 	public:
-		::MoleMole::AniamtorParamsSetting* InteractAniamtorSetting; // 0x20
-		::MoleMole::AniamtorParamsSetting* BuddyAniamtorSetting; // 0x28
-		::System::String* PosAttachPoint; // 0x30
+		::System::String* PosAttachPoint; // 0x20
+		::MoleMole::AniamtorParamsSetting* InteractAniamtorSetting; // 0x28
+		::MoleMole::AniamtorParamsSetting* BuddyAniamtorSetting; // 0x30
 		::System::Boolean MuteLocalInput; // 0x38
 
 		::System::Void _ctor()

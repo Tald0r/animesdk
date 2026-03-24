@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int NapMaterialFlags_TypeDefinitionIndex = 28133;
+inline static constexpr unsigned int NapMaterialFlags_TypeDefinitionIndex = 29073;
 
 enum class NapMaterialFlags : ::System::UInt32
 {

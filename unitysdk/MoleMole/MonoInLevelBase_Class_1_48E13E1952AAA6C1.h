@@ -7,18 +7,18 @@ namespace MoleMole { class MonoInLevelBase; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Sprite; }
 
-#define MOLEMOLE_MONOINLEVELBASE_CLASS_1_48E13E1952AAA6C1_METHOD_1_86642315AB1FEF32_OFFSET UNITYSDK_OFFSET(0x8B242A0)
-#define MOLEMOLE_MONOINLEVELBASE_CLASS_1_48E13E1952AAA6C1__CTOR_OFFSET UNITYSDK_OFFSET(0x8B24290)
+#define MOLEMOLE_MONOINLEVELBASE_CLASS_1_48E13E1952AAA6C1_METHOD_1_86642315AB1FEF32_OFFSET UNITYSDK_OFFSET(0x7A924D0)
+#define MOLEMOLE_MONOINLEVELBASE_CLASS_1_48E13E1952AAA6C1__CTOR_OFFSET UNITYSDK_OFFSET(0x7A924C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoInLevelBase_Class_1_48E13E1952AAA6C1_TypeDefinitionIndex = 64024;
+	inline static constexpr unsigned int MonoInLevelBase_Class_1_48E13E1952AAA6C1_TypeDefinitionIndex = 42717;
 
 	class MonoInLevelBase_Class_1_48E13E1952AAA6C1 : public ::System::Object
 	{
 	public:
-		::MoleMole::MonoInLevelBase* Field_1_1; // 0x10
-		::System::Action_1<::UnityEngine::Sprite*>* Field_1_0; // 0x18
+		::System::Action_1<::UnityEngine::Sprite*>* Field_1_0; // 0x10
+		::MoleMole::MonoInLevelBase* Field_1_1; // 0x18
 
 		::System::Void _ctor()
 		{

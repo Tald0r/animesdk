@@ -1,9 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/UnityEngine/Quaternion.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
-namespace SimpleJSON { class JSONNode; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_584_TypeDefinitionIndex = 59379;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_584_TypeDefinitionIndex = 62245;
 
 class Class_0_16E4307DCC419505_584
 {

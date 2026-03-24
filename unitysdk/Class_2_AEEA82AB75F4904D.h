@@ -11,25 +11,25 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UIToggleButton; }
 
-#define CLASS_2_AEEA82AB75F4904D_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x88AB650)
-#define CLASS_2_AEEA82AB75F4904D_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0x88AB410)
-#define CLASS_2_AEEA82AB75F4904D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x88AB770)
-#define CLASS_2_AEEA82AB75F4904D__CTOR_OFFSET UNITYSDK_OFFSET(0x88AB760)
+#define CLASS_2_AEEA82AB75F4904D_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0xE28F630)
+#define CLASS_2_AEEA82AB75F4904D_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0xE28F3F0)
+#define CLASS_2_AEEA82AB75F4904D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xE28F750)
+#define CLASS_2_AEEA82AB75F4904D__CTOR_OFFSET UNITYSDK_OFFSET(0xE28F740)
 
-inline static constexpr unsigned int Class_2_AEEA82AB75F4904D_TypeDefinitionIndex = 41579;
+inline static constexpr unsigned int Class_2_AEEA82AB75F4904D_TypeDefinitionIndex = 38900;
 
 class Class_2_AEEA82AB75F4904D : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::NotificationBadgeEx* Field_2_5; // 0x18
-	::UnityEngine::RectTransform* Field_2_8; // 0x20
+	::UnityEngine::UI::Extension::UIToggleButton* Field_2_3; // 0x18
+	::UnityEngine::UI::Text* Field_2_0; // 0x20
 	::UnityEngine::GameObject* Field_2_1; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x38
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x40
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x48
-	::UnityEngine::UI::Extension::UIToggleButton* Field_2_3; // 0x50
-	::UnityEngine::UI::Text* Field_2_0; // 0x58
+	::UnityEngine::RectTransform* Field_2_8; // 0x30
+	::MoleMole::NotificationBadgeEx* Field_2_5; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x48
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x58
 
 	::System::Void _ctor()
 	{

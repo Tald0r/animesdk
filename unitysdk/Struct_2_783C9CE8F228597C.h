@@ -4,9 +4,9 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define STRUCT_2_783C9CE8F228597C_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x3166C0)
+#define STRUCT_2_783C9CE8F228597C_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x3A01C0)
 
-inline static constexpr unsigned int Struct_2_783C9CE8F228597C_TypeDefinitionIndex = 71669;
+inline static constexpr unsigned int Struct_2_783C9CE8F228597C_TypeDefinitionIndex = 50441;
 
 struct alignas(8) Struct_2_783C9CE8F228597C
 {

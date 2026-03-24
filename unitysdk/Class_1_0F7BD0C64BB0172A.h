@@ -4,9 +4,9 @@
 #include "unitysdk/System/DayOfWeek.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_0F7BD0C64BB0172A__CTOR_OFFSET UNITYSDK_OFFSET(0xC4E54F0)
+#define CLASS_1_0F7BD0C64BB0172A__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3FC80)
 
-inline static constexpr unsigned int Class_1_0F7BD0C64BB0172A_TypeDefinitionIndex = 41139;
+inline static constexpr unsigned int Class_1_0F7BD0C64BB0172A_TypeDefinitionIndex = 64891;
 
 class Class_1_0F7BD0C64BB0172A : public ::System::Object
 {

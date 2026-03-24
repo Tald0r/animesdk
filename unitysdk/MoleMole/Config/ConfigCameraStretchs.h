@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigCameraStretch; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGCAMERASTRETCHS__CTOR_OFFSET UNITYSDK_OFFSET(0xCD00080)
+#define MOLEMOLE_CONFIG_CONFIGCAMERASTRETCHS__CTOR_OFFSET UNITYSDK_OFFSET(0xE357640)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigCameraStretchs_TypeDefinitionIndex = 74976;
+	inline static constexpr unsigned int ConfigCameraStretchs_TypeDefinitionIndex = 72446;
 
 	class ConfigCameraStretchs : public ::Foundation::MihoyoSerializedScriptableObject
 	{

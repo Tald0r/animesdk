@@ -8,7 +8,7 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Object; }
 
-inline static constexpr unsigned int Class_1_1405E77D2B372893_Class_1_07FFFDE8F611C041_TypeDefinitionIndex = 65074;
+inline static constexpr unsigned int Class_1_1405E77D2B372893_Class_1_07FFFDE8F611C041_TypeDefinitionIndex = 52821;
 
 template <typename T>
 class Class_1_1405E77D2B372893_Class_1_07FFFDE8F611C041 : public ::System::Object

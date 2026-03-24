@@ -10,19 +10,19 @@ class ReplayFullData;
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_1_C353FCD1325B3415_STRUCT_2_05898449385544E4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x8C0550)
-#define CLASS_1_C353FCD1325B3415_STRUCT_2_05898449385544E4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_C353FCD1325B3415_STRUCT_2_05898449385544E4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x8ED460)
+#define CLASS_1_C353FCD1325B3415_STRUCT_2_05898449385544E4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_C353FCD1325B3415_Struct_2_05898449385544E4_TypeDefinitionIndex = 31506;
+inline static constexpr unsigned int Class_1_C353FCD1325B3415_Struct_2_05898449385544E4_TypeDefinitionIndex = 32485;
 
 struct alignas(8) Class_1_C353FCD1325B3415_Struct_2_05898449385544E4
 {
-	::ReplayFullData* Field_2_3; // 0x10
-	::Class_1_C353FCD1325B3415* Field_2_2; // 0x18
-	::System::Collections::Generic::IEnumerator_1<::ReplayChangeEvent*>* Field_2_5; // 0x20
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_8; // 0x28
-	::ReplayChangeEvent* Field_2_6; // 0x38
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x40
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x10
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_8; // 0x18
+	::System::Collections::Generic::IEnumerator_1<::ReplayChangeEvent*>* Field_2_5; // 0x28
+	::ReplayFullData* Field_2_3; // 0x30
+	::Class_1_C353FCD1325B3415* Field_2_2; // 0x38
+	::ReplayChangeEvent* Field_2_6; // 0x40
 	::System::Int32 Field_2_0; // 0x48
 	::System::Single Field_2_7; // 0x4C
 	::System::Single Field_2_4; // 0x50

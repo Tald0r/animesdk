@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define EDITORUPDATESCRIPT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B069270)
+#define EDITORUPDATESCRIPT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B676F80)
 
-inline static constexpr unsigned int EditorUpdateScript_TypeDefinitionIndex = 81718;
+inline static constexpr unsigned int EditorUpdateScript_TypeDefinitionIndex = 83755;
 
 class EditorUpdateScript : public ::UnityEngine::MonoBehaviour
 {

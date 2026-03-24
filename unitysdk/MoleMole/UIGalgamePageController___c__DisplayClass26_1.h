@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIGalgamePageController___c__DisplayClass26_0; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS26_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA295200)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS26_1__PLAYSUBNARRATORICONNODE_B__3_OFFSET UNITYSDK_OFFSET(0xA295210)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS26_1__CTOR_OFFSET UNITYSDK_OFFSET(0x911B1B0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS26_1__PLAYSUBNARRATORICONNODE_B__3_OFFSET UNITYSDK_OFFSET(0x911B1C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass26_1_TypeDefinitionIndex = 54702;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass26_1_TypeDefinitionIndex = 58927;
 
 	class UIGalgamePageController___c__DisplayClass26_1 : public ::System::Object
 	{

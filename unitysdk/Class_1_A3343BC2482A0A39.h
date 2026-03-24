@@ -5,22 +5,22 @@
 
 namespace System { class String; }
 
-#define CLASS_1_A3343BC2482A0A39_METHOD_1_050E70FEDB783306_OFFSET UNITYSDK_OFFSET(0xA2BAD40)
-#define CLASS_1_A3343BC2482A0A39_METHOD_1_F08DF4AEFEA53D40_OFFSET UNITYSDK_OFFSET(0xA2BAC50)
-#define CLASS_1_A3343BC2482A0A39__CTOR_1_OFFSET UNITYSDK_OFFSET(0xA2BAC30)
-#define CLASS_1_A3343BC2482A0A39__CTOR_OFFSET UNITYSDK_OFFSET(0xA2BAC20)
+#define CLASS_1_A3343BC2482A0A39_METHOD_1_050E70FEDB783306_OFFSET UNITYSDK_OFFSET(0x6286C00)
+#define CLASS_1_A3343BC2482A0A39_METHOD_1_F08DF4AEFEA53D40_OFFSET UNITYSDK_OFFSET(0x6286B10)
+#define CLASS_1_A3343BC2482A0A39__CTOR_1_OFFSET UNITYSDK_OFFSET(0x6286AF0)
+#define CLASS_1_A3343BC2482A0A39__CTOR_OFFSET UNITYSDK_OFFSET(0x6286AE0)
 
-inline static constexpr unsigned int Class_1_A3343BC2482A0A39_TypeDefinitionIndex = 77854;
+inline static constexpr unsigned int Class_1_A3343BC2482A0A39_TypeDefinitionIndex = 40883;
 
 class Class_1_A3343BC2482A0A39 : public ::System::Object
 {
 public:
 	::System::String* Field_1_0; // 0x10
-	::System::Int32 Field_1_3; // 0x18
-	::System::Single Field_1_4; // 0x1C
-	::System::Single Field_1_5; // 0x20
-	::System::Int32 Field_1_2; // 0x24
-	::Enum_3_A39345DBB4A757B0 Field_1_1; // 0x28
+	::System::Single Field_1_5; // 0x18
+	::System::Int32 Field_1_2; // 0x1C
+	::Enum_3_A39345DBB4A757B0 Field_1_1; // 0x20
+	::System::Single Field_1_4; // 0x24
+	::System::Int32 Field_1_3; // 0x28
 
 	::System::Void _ctor()
 	{

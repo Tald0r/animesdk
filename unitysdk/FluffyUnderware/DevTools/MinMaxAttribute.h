@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_MINMAXATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A244700)
+#define FLUFFYUNDERWARE_DEVTOOLS_MINMAXATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A80C010)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int MinMaxAttribute_TypeDefinitionIndex = 24531;
+	inline static constexpr unsigned int MinMaxAttribute_TypeDefinitionIndex = 25356;
 
 	class MinMaxAttribute : public ::FluffyUnderware::DevTools::DTPropertyAttribute
 	{
 	public:
-		::System::String* MaxBoundFieldOrPropertyName; // 0x30
+		::System::String* MinBoundFieldOrPropertyName; // 0x30
 		::System::String* MaxValueField; // 0x38
-		::System::String* MinBoundFieldOrPropertyName; // 0x40
+		::System::String* MaxBoundFieldOrPropertyName; // 0x40
 		::System::Single Min; // 0x48
 		::System::Single Max; // 0x4C
 

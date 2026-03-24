@@ -9,11 +9,11 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class LineRenderer; }
 namespace UnityEngine { class Material; }
 
-#define LINEWAVE_AWAKE_OFFSET UNITYSDK_OFFSET(0x1B0E3AB0)
-#define LINEWAVE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B0E3B80)
-#define LINEWAVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0E43E0)
+#define LINEWAVE_AWAKE_OFFSET UNITYSDK_OFFSET(0x1B6F46C0)
+#define LINEWAVE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B6F4790)
+#define LINEWAVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6F4FF0)
 
-inline static constexpr unsigned int LineWave_TypeDefinitionIndex = 31606;
+inline static constexpr unsigned int LineWave_TypeDefinitionIndex = 32560;
 
 class LineWave : public ::UnityEngine::MonoBehaviour
 {

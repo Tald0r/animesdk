@@ -4,18 +4,18 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMECHBOOMODULEPAGECONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x98C63A0)
+#define MOLEMOLE_UIMECHBOOMODULEPAGECONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xADFEE50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMechBooModulePageControllerContext_TypeDefinitionIndex = 42334;
+	inline static constexpr unsigned int UIMechBooModulePageControllerContext_TypeDefinitionIndex = 55805;
 
 	class UIMechBooModulePageControllerContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Action* UIOpenAction; // 0x28
-		::System::Int32 ScriptID; // 0x30
-		::System::Boolean DoPerform; // 0x34
+		::System::Boolean DoPerform; // 0x30
+		::System::Int32 ScriptID; // 0x34
 
 		::System::Void _ctor()
 		{

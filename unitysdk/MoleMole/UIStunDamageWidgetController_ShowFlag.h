@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIStunDamageWidgetController_ShowFlag_TypeDefinitionIndex = 63856;
+	inline static constexpr unsigned int UIStunDamageWidgetController_ShowFlag_TypeDefinitionIndex = 46500;
 
 	enum class UIStunDamageWidgetController_ShowFlag : ::System::Int32
 	{
 		KeepShow = 2,
-		TempShow = 1,
 		SpecialShow = 4,
+		TempShow = 1,
 		None = 0,
 	};
 }

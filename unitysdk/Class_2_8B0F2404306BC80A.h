@@ -10,23 +10,23 @@ namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_8B0F2404306BC80A_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x7E6DC50)
-#define CLASS_2_8B0F2404306BC80A_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x7E6DE50)
-#define CLASS_2_8B0F2404306BC80A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7E6DF40)
-#define CLASS_2_8B0F2404306BC80A__CTOR_OFFSET UNITYSDK_OFFSET(0x7E6DF30)
+#define CLASS_2_8B0F2404306BC80A_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x88B3D80)
+#define CLASS_2_8B0F2404306BC80A_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x88B3F80)
+#define CLASS_2_8B0F2404306BC80A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x88B4070)
+#define CLASS_2_8B0F2404306BC80A__CTOR_OFFSET UNITYSDK_OFFSET(0x88B4060)
 
-inline static constexpr unsigned int Class_2_8B0F2404306BC80A_TypeDefinitionIndex = 60031;
+inline static constexpr unsigned int Class_2_8B0F2404306BC80A_TypeDefinitionIndex = 70797;
 
 class Class_2_8B0F2404306BC80A : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x18
-	::UnityEngine::Transform* Field_2_3; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x28
-	::UnityEngine::Transform* Field_2_1; // 0x30
-	::UnityEngine::UI::Text* Field_2_4; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x20
+	::UnityEngine::UI::Text* Field_2_4; // 0x28
+	::UnityEngine::Transform* Field_2_3; // 0x30
+	::UnityEngine::Transform* Field_2_1; // 0x38
 	::UnityEngine::GameObject* Field_2_2; // 0x40
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x48
 	::UnityEngine::UI::Text* Field_2_0; // 0x50
 
 	::System::Void _ctor()

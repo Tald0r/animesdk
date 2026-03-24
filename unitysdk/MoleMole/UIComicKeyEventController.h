@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIComicEventController.h"
 
-#define MOLEMOLE_UICOMICKEYEVENTCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA336CC0)
+#define MOLEMOLE_UICOMICKEYEVENTCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD0FDAF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicKeyEventController_TypeDefinitionIndex = 41821;
+	inline static constexpr unsigned int UIComicKeyEventController_TypeDefinitionIndex = 38303;
 
 	class UIComicKeyEventController : public ::MoleMole::UIComicEventController
 	{

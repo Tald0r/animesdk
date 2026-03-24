@@ -5,12 +5,12 @@
 
 namespace Foundation::Geometry { template <typename T> class IBezierControlPointPolicy_1; }
 
-#define FOUNDATION_GEOMETRY_SMOOTHBEZIERSURFACE3D_GET_POLICY_OFFSET UNITYSDK_OFFSET(0x1AF864D0)
-#define FOUNDATION_GEOMETRY_SMOOTHBEZIERSURFACE3D__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF86530)
+#define FOUNDATION_GEOMETRY_SMOOTHBEZIERSURFACE3D_GET_POLICY_OFFSET UNITYSDK_OFFSET(0x1B2F4B10)
+#define FOUNDATION_GEOMETRY_SMOOTHBEZIERSURFACE3D__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2F4B70)
 
 namespace Foundation::Geometry
 {
-	inline static constexpr unsigned int SmoothBezierSurface3D_TypeDefinitionIndex = 9160;
+	inline static constexpr unsigned int SmoothBezierSurface3D_TypeDefinitionIndex = 8849;
 
 	class SmoothBezierSurface3D : public ::Foundation::Geometry::SmoothBezierSurface_1<::UnityEngine::Vector3>
 	{

@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_0_16E4307DCC419505_373;
+class Class_0_16E4307DCC419505_210;
 
-#define MOLEMOLE_UIINLEVELSCOREUICONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC092320)
+#define MOLEMOLE_UIINLEVELSCOREUICONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8750010)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelScoreUIContext_TypeDefinitionIndex = 48625;
+	inline static constexpr unsigned int UIInLevelScoreUIContext_TypeDefinitionIndex = 49438;
 
 	class UIInLevelScoreUIContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_0_16E4307DCC419505_373* newsBubbleSupport; // 0x28
+		::Class_0_16E4307DCC419505_210* newsBubbleSupport; // 0x28
 		::System::Int32 GroupID; // 0x30
 
 		::System::Void _ctor()

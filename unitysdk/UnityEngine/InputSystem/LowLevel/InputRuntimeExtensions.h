@@ -6,7 +6,7 @@ namespace UnityEngine::InputSystem::LowLevel { class IInputRuntime; }
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int InputRuntimeExtensions_TypeDefinitionIndex = 27817;
+	inline static constexpr unsigned int InputRuntimeExtensions_TypeDefinitionIndex = 28757;
 
 	class InputRuntimeExtensions : public ::System::Object
 	{

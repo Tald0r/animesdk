@@ -5,17 +5,17 @@
 namespace MoleMole { class ConfigUIMainPageShowSetting; }
 namespace MoleMole { class MainPageItemShowSetting; }
 
-#define MOLEMOLE_CONFIGUIMAINPAGESKINSHOWITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x6E06590)
+#define MOLEMOLE_CONFIGUIMAINPAGESKINSHOWITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xC2558D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIMainPageSkinShowItem_TypeDefinitionIndex = 72537;
+	inline static constexpr unsigned int ConfigUIMainPageSkinShowItem_TypeDefinitionIndex = 49615;
 
 	class ConfigUIMainPageSkinShowItem : public ::System::Object
 	{
 	public:
-		::MoleMole::MainPageItemShowSetting* SkinShowSetting; // 0x10
-		::MoleMole::ConfigUIMainPageShowSetting* MainPageShowSetting; // 0x18
+		::MoleMole::ConfigUIMainPageShowSetting* MainPageShowSetting; // 0x10
+		::MoleMole::MainPageItemShowSetting* SkinShowSetting; // 0x18
 		::System::Int32 PostGirlID; // 0x20
 
 		::System::Void _ctor()

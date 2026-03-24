@@ -2,32 +2,32 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_515;
+class Class_0_16E4307DCC419505_137;
 namespace MoleMole::Battle { class Entity; }
 namespace MoleMole::Config { class HitWallCameraShakeConfig; }
 
-#define CLASS_1_BDCD1259222B5A4A_METHOD_1_5E852A75624F0507_OFFSET UNITYSDK_OFFSET(0x65D9B50)
-#define CLASS_1_BDCD1259222B5A4A_METHOD_1_B9D8FD15D18938A0_OFFSET UNITYSDK_OFFSET(0x65D9B40)
-#define CLASS_1_BDCD1259222B5A4A_METHOD_1_E57D6F9393F28D86_OFFSET UNITYSDK_OFFSET(0x65D9AB0)
-#define CLASS_1_BDCD1259222B5A4A__CTOR_OFFSET UNITYSDK_OFFSET(0x65D9B30)
+#define CLASS_1_BDCD1259222B5A4A_METHOD_1_5E852A75624F0507_OFFSET UNITYSDK_OFFSET(0x777B800)
+#define CLASS_1_BDCD1259222B5A4A_METHOD_1_B9D8FD15D18938A0_OFFSET UNITYSDK_OFFSET(0x777B7F0)
+#define CLASS_1_BDCD1259222B5A4A_METHOD_1_E57D6F9393F28D86_OFFSET UNITYSDK_OFFSET(0x777B760)
+#define CLASS_1_BDCD1259222B5A4A__CTOR_OFFSET UNITYSDK_OFFSET(0x777B7E0)
 
-inline static constexpr unsigned int Class_1_BDCD1259222B5A4A_TypeDefinitionIndex = 52867;
+inline static constexpr unsigned int Class_1_BDCD1259222B5A4A_TypeDefinitionIndex = 37499;
 
 class Class_1_BDCD1259222B5A4A : public ::System::Object
 {
 public:
-	::MoleMole::Config::HitWallCameraShakeConfig* Field_1_1; // 0x10
-	::MoleMole::Battle::Entity* Field_1_2; // 0x18
-	::Class_0_16E4307DCC419505_515* Field_1_0; // 0x20
+	::MoleMole::Battle::Entity* Field_1_2; // 0x10
+	::Class_0_16E4307DCC419505_137* Field_1_0; // 0x18
+	::MoleMole::Config::HitWallCameraShakeConfig* Field_1_1; // 0x20
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_BDCD1259222B5A4A__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_E57D6F9393F28D86(::Class_0_16E4307DCC419505_515* a1, ::MoleMole::Config::HitWallCameraShakeConfig* a2)
+	::System::Void Method_1_E57D6F9393F28D86(::Class_0_16E4307DCC419505_137* a1, ::MoleMole::Config::HitWallCameraShakeConfig* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_515*, ::MoleMole::Config::HitWallCameraShakeConfig*))((::PBYTE)hIl2Cpp + CLASS_1_BDCD1259222B5A4A_METHOD_1_E57D6F9393F28D86_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_137*, ::MoleMole::Config::HitWallCameraShakeConfig*))((::PBYTE)hIl2Cpp + CLASS_1_BDCD1259222B5A4A_METHOD_1_E57D6F9393F28D86_OFFSET))(this, a1, a2);
 	}
 
 	::MoleMole::Battle::Entity* Method_1_B9D8FD15D18938A0()

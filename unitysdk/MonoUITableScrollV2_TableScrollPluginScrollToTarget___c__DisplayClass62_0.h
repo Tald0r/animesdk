@@ -6,7 +6,7 @@
 class MonoUITableScrollV2_ScrollParams_AlignParam;
 class MonoUITableScrollV2_TableScrollPluginScrollToTarget;
 
-inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginScrollToTarget___c__DisplayClass62_0_TypeDefinitionIndex = 43772;
+inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginScrollToTarget___c__DisplayClass62_0_TypeDefinitionIndex = 64396;
 
 struct alignas(8) MonoUITableScrollV2_TableScrollPluginScrollToTarget___c__DisplayClass62_0
 {

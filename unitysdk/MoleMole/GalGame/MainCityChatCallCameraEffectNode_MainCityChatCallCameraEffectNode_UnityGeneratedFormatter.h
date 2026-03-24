@@ -14,46 +14,46 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8B0D8E0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8B0D8F0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8B0E050)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8B0E4E0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8B0E4A0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB192670)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB192680)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB192DE0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB193270)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_MAINCITYCHATCALLCAMERAEFFECTNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB193230)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex = 48544;
+	inline static constexpr unsigned int MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex = 77711;
 
 	class MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::MainCityChatCallCameraEffectNode*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ShaderCustomType>** StaticGet_CachedSerializer5()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A550);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ShaderCustomType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2C0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer6()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A558);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ShaderCustomType>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ShaderCustomType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A560);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenEffectType>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenEffectType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A568);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2C8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::FlowCanvas::Nodes::LD_CallCameraEffect_CallType>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::FlowCanvas::Nodes::LD_CallCameraEffect_CallType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A570);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::FlowCanvas::Nodes::LD_CallCameraEffect_CallType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2D0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenEffectType>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenEffectType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2D8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2E0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Timeline::CallCameraEffectActionType>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Timeline::CallCameraEffectActionType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A578);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Timeline::CallCameraEffectActionType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2E8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A580);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatCallCameraEffectNode_MainCityChatCallCameraEffectNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D2F0);
 		}
 
 		::System::Void _ctor()

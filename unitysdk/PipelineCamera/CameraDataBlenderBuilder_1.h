@@ -6,7 +6,7 @@ namespace PipelineCamera { class ICameraDataBlender; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int CameraDataBlenderBuilder_1_TypeDefinitionIndex = 34425;
+	inline static constexpr unsigned int CameraDataBlenderBuilder_1_TypeDefinitionIndex = 35427;
 
 	template <typename TPriority>
 	class CameraDataBlenderBuilder_1 : public ::System::Object

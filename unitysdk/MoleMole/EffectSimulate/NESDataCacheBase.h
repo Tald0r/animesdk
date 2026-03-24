@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_EFFECTSIMULATE_NESDATACACHEBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x141C7290)
+#define MOLEMOLE_EFFECTSIMULATE_NESDATACACHEBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xA4ED690)
 
 namespace MoleMole::EffectSimulate
 {
-	inline static constexpr unsigned int NESDataCacheBase_TypeDefinitionIndex = 51905;
+	inline static constexpr unsigned int NESDataCacheBase_TypeDefinitionIndex = 41896;
 
 	class NESDataCacheBase : public ::System::Object
 	{

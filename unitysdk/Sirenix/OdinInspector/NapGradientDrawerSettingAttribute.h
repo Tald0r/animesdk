@@ -4,22 +4,22 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_NAPGRADIENTDRAWERSETTINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7DE9E0)
+#define SIRENIX_ODININSPECTOR_NAPGRADIENTDRAWERSETTINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD612B0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int NapGradientDrawerSettingAttribute_TypeDefinitionIndex = 8130;
+	inline static constexpr unsigned int NapGradientDrawerSettingAttribute_TypeDefinitionIndex = 8135;
 
 	class NapGradientDrawerSettingAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* InnerText; // 0x10
+		::System::String* NeedSplitRegionGetter; // 0x10
 		::System::String* TimeAxisCurTimeAtGetter; // 0x18
-		::System::String* BefText; // 0x20
+		::System::String* TimeAxisMinValGetter; // 0x20
 		::System::String* TimeAxisMaxValGetter; // 0x28
-		::System::String* NeedSplitRegionGetter; // 0x30
-		::System::String* AftText; // 0x38
-		::System::String* TimeAxisMinValGetter; // 0x40
+		::System::String* BefText; // 0x30
+		::System::String* InnerText; // 0x38
+		::System::String* AftText; // 0x40
 		::System::Single TimeAxisMinVal; // 0x48
 		::System::Single TimeAxisMaxVal; // 0x4C
 

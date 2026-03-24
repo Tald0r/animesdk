@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int ScreenYAnchorType_TypeDefinitionIndex = 70143;
+inline static constexpr unsigned int ScreenYAnchorType_TypeDefinitionIndex = 81156;
 
 enum class ScreenYAnchorType : ::System::Int32
 {

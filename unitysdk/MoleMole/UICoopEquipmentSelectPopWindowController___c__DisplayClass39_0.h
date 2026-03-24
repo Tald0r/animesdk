@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIRoleSelectPageContext; }
 
-#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA26D810)
-#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS39_0__ONJUMPBTNCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xA26D820)
+#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD271780)
+#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__DISPLAYCLASS39_0__ONJUMPBTNCLICK_B__0_OFFSET UNITYSDK_OFFSET(0x90F3810)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopEquipmentSelectPopWindowController___c__DisplayClass39_0_TypeDefinitionIndex = 69375;
+	inline static constexpr unsigned int UICoopEquipmentSelectPopWindowController___c__DisplayClass39_0_TypeDefinitionIndex = 51781;
 
 	class UICoopEquipmentSelectPopWindowController___c__DisplayClass39_0 : public ::System::Object
 	{

@@ -1,8 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/System/ValueTuple_2.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_232_TypeDefinitionIndex = 39020;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_232_TypeDefinitionIndex = 63464;
 
 class Class_0_16E4307DCC419505_232
 {

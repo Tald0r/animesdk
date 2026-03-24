@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIMINISCAPEMAPPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAF4A6C0)
+#define MOLEMOLE_UIMINISCAPEMAPPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB3FE400)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMiniscapeMapPageController_Context_TypeDefinitionIndex = 50709;
+	inline static constexpr unsigned int UIMiniscapeMapPageController_Context_TypeDefinitionIndex = 60435;
 
 	class UIMiniscapeMapPageController_Context : public ::MoleMole::UIControllerContextBase
 	{

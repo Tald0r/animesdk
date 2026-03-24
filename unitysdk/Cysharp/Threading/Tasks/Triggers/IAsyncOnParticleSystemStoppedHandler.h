@@ -4,7 +4,7 @@
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnParticleSystemStoppedHandler_TypeDefinitionIndex = 27276;
+	inline static constexpr unsigned int IAsyncOnParticleSystemStoppedHandler_TypeDefinitionIndex = 28216;
 
 	class IAsyncOnParticleSystemStoppedHandler
 	{

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UICONTROLLEROPTIONSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x8069C80)
+#define MOLEMOLE_UICONTROLLEROPTIONSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xAC47800)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIControllerOptionSetting_TypeDefinitionIndex = 69802;
+	inline static constexpr unsigned int UIControllerOptionSetting_TypeDefinitionIndex = 74443;
 
 	class UIControllerOptionSetting : public ::UnityEngine::MonoBehaviour
 	{

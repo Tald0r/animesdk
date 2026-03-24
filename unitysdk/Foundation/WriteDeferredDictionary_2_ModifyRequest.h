@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int WriteDeferredDictionary_2_ModifyRequest_TypeDefinitionIndex = 7711;
+	inline static constexpr unsigned int WriteDeferredDictionary_2_ModifyRequest_TypeDefinitionIndex = 8120;
 
 	template <typename TKey, typename TValue>
 	struct WriteDeferredDictionary_2_ModifyRequest

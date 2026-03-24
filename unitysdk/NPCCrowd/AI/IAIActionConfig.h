@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int IAIActionConfig_TypeDefinitionIndex = 67055;
+	inline static constexpr unsigned int IAIActionConfig_TypeDefinitionIndex = 66675;
 
 	class IAIActionConfig
 	{

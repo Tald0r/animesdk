@@ -7,22 +7,22 @@ namespace MoleMole::Config { class ConfigBlackCurtain; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define BLACKCURTAINEFFECT_GETCASTERENTITYID_OFFSET UNITYSDK_OFFSET(0x6AAB570)
-#define BLACKCURTAINEFFECT_GETCONFIG_OFFSET UNITYSDK_OFFSET(0x6AAB510)
-#define BLACKCURTAINEFFECT_GETWHITEENTITYTARGETLIST_OFFSET UNITYSDK_OFFSET(0x6AAB5D0)
-#define BLACKCURTAINEFFECT_GET_CASTERENTITYID_OFFSET UNITYSDK_OFFSET(0x6AAAF00)
-#define BLACKCURTAINEFFECT_REFRESHWHITEENTITYTARGETLIST_OFFSET UNITYSDK_OFFSET(0x6AAAF90)
-#define BLACKCURTAINEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x6AAAF10)
+#define BLACKCURTAINEFFECT_GETCASTERENTITYID_OFFSET UNITYSDK_OFFSET(0x86DCE20)
+#define BLACKCURTAINEFFECT_GETCONFIG_OFFSET UNITYSDK_OFFSET(0x86DCDC0)
+#define BLACKCURTAINEFFECT_GETWHITEENTITYTARGETLIST_OFFSET UNITYSDK_OFFSET(0x86DCE80)
+#define BLACKCURTAINEFFECT_GET_CASTERENTITYID_OFFSET UNITYSDK_OFFSET(0x86DC7C0)
+#define BLACKCURTAINEFFECT_REFRESHWHITEENTITYTARGETLIST_OFFSET UNITYSDK_OFFSET(0x86DC850)
+#define BLACKCURTAINEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x86DC7D0)
 
-inline static constexpr unsigned int BlackCurtainEffect_TypeDefinitionIndex = 49418;
+inline static constexpr unsigned int BlackCurtainEffect_TypeDefinitionIndex = 62197;
 
 class BlackCurtainEffect : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::System::String*>* _whiteAbilityTargetKeyList; // 0x10
-	::System::String* _key; // 0x18
-	::MoleMole::Config::ConfigBlackCurtain* _config; // 0x20
-	::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>* _whiteEntityTargetList; // 0x28
+	::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>* _whiteEntityTargetList; // 0x10
+	::System::Collections::Generic::List_1<::System::String*>* _whiteAbilityTargetKeyList; // 0x18
+	::System::String* _key; // 0x20
+	::MoleMole::Config::ConfigBlackCurtain* _config; // 0x28
 	::System::UInt32 _casterEntityID; // 0x30
 	::System::Single _startTick; // 0x34
 

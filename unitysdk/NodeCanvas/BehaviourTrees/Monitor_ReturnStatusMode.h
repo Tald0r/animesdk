@@ -3,11 +3,11 @@
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Monitor_ReturnStatusMode_TypeDefinitionIndex = 26483;
+	inline static constexpr unsigned int Monitor_ReturnStatusMode_TypeDefinitionIndex = 26713;
 
 	enum class Monitor_ReturnStatusMode : ::System::Int32
 	{
-		OriginalDecoratedChildStatus = 0,
 		NewDecoratorActionStatus = 1,
+		OriginalDecoratedChildStatus = 0,
 	};
 }

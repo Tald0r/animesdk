@@ -8,18 +8,18 @@ namespace UnityEngine { class Camera; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_E6A09AD9C43392D8_4_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x7598580)
-#define CLASS_2_E6A09AD9C43392D8_4_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7598650)
-#define CLASS_2_E6A09AD9C43392D8_4__CTOR_OFFSET UNITYSDK_OFFSET(0x7598640)
+#define CLASS_2_E6A09AD9C43392D8_4_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xC2DCE80)
+#define CLASS_2_E6A09AD9C43392D8_4_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC2DCF50)
+#define CLASS_2_E6A09AD9C43392D8_4__CTOR_OFFSET UNITYSDK_OFFSET(0xC2DCF40)
 
-inline static constexpr unsigned int Class_2_E6A09AD9C43392D8_4_TypeDefinitionIndex = 55281;
+inline static constexpr unsigned int Class_2_E6A09AD9C43392D8_4_TypeDefinitionIndex = 64835;
 
 class Class_2_E6A09AD9C43392D8_4 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::Transform* Field_2_2; // 0x18
-	::UnityEngine::Camera* Field_2_1; // 0x20
-	::UnityEngine::GameObject* Field_2_0; // 0x28
+	::UnityEngine::GameObject* Field_2_0; // 0x20
+	::UnityEngine::Camera* Field_2_1; // 0x28
 
 	::System::Void _ctor()
 	{

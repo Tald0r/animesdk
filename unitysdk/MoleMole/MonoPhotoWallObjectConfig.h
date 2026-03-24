@@ -4,11 +4,11 @@
 
 class Class_1_3E2902AE141B8B89;
 
-#define MOLEMOLE_MONOPHOTOWALLOBJECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x67C0420)
+#define MOLEMOLE_MONOPHOTOWALLOBJECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA4749B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoPhotoWallObjectConfig_TypeDefinitionIndex = 76487;
+	inline static constexpr unsigned int MonoPhotoWallObjectConfig_TypeDefinitionIndex = 67167;
 
 	class MonoPhotoWallObjectConfig : public ::UnityEngine::MonoBehaviour
 	{

@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK::Protobuf::Reflection
 {
-	inline static constexpr unsigned int IDescriptor_TypeDefinitionIndex = 24739;
+	inline static constexpr unsigned int IDescriptor_TypeDefinitionIndex = 25564;
 
 	class IDescriptor
 	{

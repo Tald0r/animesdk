@@ -13,13 +13,13 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_FILTERQTECAMERABASEINFO_OFFSET UNITYSDK_OFFSET(0x6BDE2F0)
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_GETALLCONFIGABILITYIDS_OFFSET UNITYSDK_OFFSET(0x6BDD8C0)
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDE4F0)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_FILTERQTECAMERABASEINFO_OFFSET UNITYSDK_OFFSET(0xACACC60)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_GETALLCONFIGABILITYIDS_OFFSET UNITYSDK_OFFSET(0xACAC220)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xACACE60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CharacterScriptConfigBase_TypeDefinitionIndex = 37848;
+	inline static constexpr unsigned int CharacterScriptConfigBase_TypeDefinitionIndex = 61930;
 
 	class CharacterScriptConfigBase : public ::MoleMole::ICharacterScriptConfig
 	{

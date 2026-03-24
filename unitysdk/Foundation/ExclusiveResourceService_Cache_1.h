@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ExclusiveResourceService_Cache_1_TypeDefinitionIndex = 9089;
+	inline static constexpr unsigned int ExclusiveResourceService_Cache_1_TypeDefinitionIndex = 9078;
 
 	template <typename T>
 	class ExclusiveResourceService_Cache_1 : public ::System::Object

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIINTERKNOTHEADINFODIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CHANGE_B__0_OFFSET UNITYSDK_OFFSET(0x86EB7E0)
-#define MOLEMOLE_UIINTERKNOTHEADINFODIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0x86EB7D0)
+#define MOLEMOLE_UIINTERKNOTHEADINFODIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CHANGE_B__0_OFFSET UNITYSDK_OFFSET(0x9A8E300)
+#define MOLEMOLE_UIINTERKNOTHEADINFODIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9A8E2F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotHeadInfoDialogPopWindowController___c__DisplayClass12_0_TypeDefinitionIndex = 63152;
+	inline static constexpr unsigned int UIInterKnotHeadInfoDialogPopWindowController___c__DisplayClass12_0_TypeDefinitionIndex = 53466;
 
 	class UIInterKnotHeadInfoDialogPopWindowController___c__DisplayClass12_0 : public ::System::Object
 	{

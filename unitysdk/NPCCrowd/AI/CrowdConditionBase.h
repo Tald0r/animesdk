@@ -4,11 +4,11 @@
 #include "unitysdk/NPCCrowd/AI/EConditionType.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_AI_CROWDCONDITIONBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x6B3B8C0)
+#define NPCCROWD_AI_CROWDCONDITIONBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x77EC460)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int CrowdConditionBase_TypeDefinitionIndex = 55255;
+	inline static constexpr unsigned int CrowdConditionBase_TypeDefinitionIndex = 76758;
 
 	class CrowdConditionBase : public ::System::Object
 	{

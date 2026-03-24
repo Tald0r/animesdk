@@ -1,8 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_475_TypeDefinitionIndex = 49584;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_475_TypeDefinitionIndex = 75541;
 
+template <typename TPose, typename TContext>
 class Class_0_16E4307DCC419505_475
 {
 public:

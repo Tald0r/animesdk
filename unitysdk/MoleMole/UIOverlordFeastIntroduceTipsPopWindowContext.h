@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9E917E0)
+#define MOLEMOLE_UIOVERLORDFEASTINTRODUCETIPSPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB6BA860)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOverlordFeastIntroduceTipsPopWindowContext_TypeDefinitionIndex = 44090;
+	inline static constexpr unsigned int UIOverlordFeastIntroduceTipsPopWindowContext_TypeDefinitionIndex = 49111;
 
 	class UIOverlordFeastIntroduceTipsPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Int32 GuestID; // 0x28
-		::System::Int32 GameID; // 0x2C
-		::System::Int32 DishID; // 0x30
+		::System::Int32 GameID; // 0x28
+		::System::Int32 DishID; // 0x2C
+		::System::Int32 GuestID; // 0x30
 
 		::System::Void _ctor()
 		{

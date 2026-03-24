@@ -7,11 +7,11 @@ namespace UnityEngine::NAPRenderPipeline0 { class ClampedFloatParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class ColorParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class FloatParameter; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_FXFOG__CTOR_OFFSET UNITYSDK_OFFSET(0x17952020)
+#define UNITYENGINE_RENDERING_UNIVERSAL_FXFOG__CTOR_OFFSET UNITYSDK_OFFSET(0x17779CB0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int FXFog_TypeDefinitionIndex = 28415;
+	inline static constexpr unsigned int FXFog_TypeDefinitionIndex = 29358;
 
 	class FXFog : public ::UnityEngine::NAPRenderPipeline0::FXFog_NativeSRP
 	{
@@ -23,8 +23,10 @@ namespace UnityEngine::Rendering::Universal
 		::UnityEngine::NAPRenderPipeline0::ColorParameter* PPFogColor; // 0xC0
 		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* PPFogMaxDensity; // 0xC8
 		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* fxFogIntensityForSceneAndChar; // 0xD0
-		::UnityEngine::NAPRenderPipeline0::BoolParameter* fxFogFixFxFogFinalColorANotWork; // 0xD8
-		::UnityEngine::NAPRenderPipeline0::BoolParameter* fxFogKeepCharFogSameAsScene; // 0xE0
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* fxFogIntensityScaleForChar; // 0xD8
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* fxFogFixFxFogFinalColorANotWork; // 0xE0
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* fxFogKeepCharFogSameAsScene; // 0xE8
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* fxFogBlendWithFogCard; // 0xF0
 
 		::System::Void _ctor()
 		{

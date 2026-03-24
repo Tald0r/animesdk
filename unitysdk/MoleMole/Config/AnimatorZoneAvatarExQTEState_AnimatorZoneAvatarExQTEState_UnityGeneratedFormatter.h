@@ -14,34 +14,34 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x15E9FA40)
-#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x15E9FA50)
-#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x15E9FE70)
-#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15EA0130)
-#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15EA00F0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE2B13F0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE2B1400)
+#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE2B1820)
+#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE2B1AE0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEAVATAREXQTESTATE_ANIMATORZONEAVATAREXQTESTATE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE2B1AA0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex = 70993;
+	inline static constexpr unsigned int AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex = 63327;
 
 	class AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneAvatarExQTEState*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31DA0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33C10);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31DA8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33C18);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31DB0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33C20);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31DB8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneAvatarExQTEState_AnimatorZoneAvatarExQTEState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33C28);
 		}
 
 		::System::Void _ctor()

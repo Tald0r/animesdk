@@ -3,7 +3,7 @@
 #include "unitysdk/ScePadTriggerEffectCommand.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int ScePadTriggerEffectParam_TypeDefinitionIndex = 60627;
+inline static constexpr unsigned int ScePadTriggerEffectParam_TypeDefinitionIndex = 40164;
 
 struct alignas(8) ScePadTriggerEffectParam
 {

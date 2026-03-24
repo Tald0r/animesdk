@@ -7,7 +7,7 @@ namespace System::Configuration { class SettingsContext; }
 namespace System::Configuration { class SettingsPropertyCollection; }
 namespace System::Configuration { class SettingsPropertyValueCollection; }
 
-#define SYSTEM_CONFIGURATION_SETTINGSPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x182D9A10)
+#define SYSTEM_CONFIGURATION_SETTINGSPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x188EE700)
 
 namespace System::Configuration
 {

@@ -9,7 +9,7 @@ namespace DigitalOpus::MB::Core { class MB_IMeshBakerSettings; }
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int IAssignToMeshCustomizer_NativeArrays_TypeDefinitionIndex = 81318;
+	inline static constexpr unsigned int IAssignToMeshCustomizer_NativeArrays_TypeDefinitionIndex = 83359;
 
 	class IAssignToMeshCustomizer_NativeArrays
 	{

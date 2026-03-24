@@ -12,26 +12,26 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCD10330)
-#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCD10340)
-#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCD10540)
-#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD10700)
-#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD106C0)
+#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE368840)
+#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE368850)
+#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE368A50)
+#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE368C10)
+#define MOLEMOLE_CONFIG_CONFIGREALTIMEQTE_CONFIGREALTIMEQTE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE368BD0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter_TypeDefinitionIndex = 38846;
+	inline static constexpr unsigned int ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter_TypeDefinitionIndex = 56798;
 
 	class ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigRealtimeQTE*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTETaskEntryBase*>*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTETaskEntryBase*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F7D0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTEStyleEntryBase*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTEStyleEntryBase*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F7D8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTEStyleEntryBase*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31310);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTETaskEntryBase*>*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::RealtimeQTETaskEntryBase*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigRealtimeQTE_ConfigRealtimeQTE_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31318);
 		}
 
 		::System::Void _ctor()

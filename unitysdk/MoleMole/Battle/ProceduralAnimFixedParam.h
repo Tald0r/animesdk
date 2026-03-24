@@ -7,7 +7,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int ProceduralAnimFixedParam_TypeDefinitionIndex = 38687;
+	inline static constexpr unsigned int ProceduralAnimFixedParam_TypeDefinitionIndex = 49725;
 
 	struct alignas(8) ProceduralAnimFixedParam
 	{

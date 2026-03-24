@@ -5,11 +5,11 @@
 
 namespace System::Collections { class IEnumerator; }
 
-#define FLOWCANVAS_NODES_LATENTACTIONNODEBASE_ROUTINEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x52CAE0)
+#define FLOWCANVAS_NODES_LATENTACTIONNODEBASE_ROUTINEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x547F80)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LatentActionNodeBase_RoutineData_TypeDefinitionIndex = 25743;
+	inline static constexpr unsigned int LatentActionNodeBase_RoutineData_TypeDefinitionIndex = 26843;
 
 	struct alignas(8) LatentActionNodeBase_RoutineData
 	{

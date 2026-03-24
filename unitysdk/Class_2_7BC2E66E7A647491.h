@@ -7,17 +7,17 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_7BC2E66E7A647491_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xCB0AAB0)
-#define CLASS_2_7BC2E66E7A647491_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xCB0AB70)
-#define CLASS_2_7BC2E66E7A647491__CTOR_OFFSET UNITYSDK_OFFSET(0xCB0AB60)
+#define CLASS_2_7BC2E66E7A647491_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xDC2DCF0)
+#define CLASS_2_7BC2E66E7A647491_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xDC2DDB0)
+#define CLASS_2_7BC2E66E7A647491__CTOR_OFFSET UNITYSDK_OFFSET(0xDC2DDA0)
 
-inline static constexpr unsigned int Class_2_7BC2E66E7A647491_TypeDefinitionIndex = 52383;
+inline static constexpr unsigned int Class_2_7BC2E66E7A647491_TypeDefinitionIndex = 51860;
 
 class Class_2_7BC2E66E7A647491 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Animation* Field_2_0; // 0x18
-	::UnityEngine::UI::Text* Field_2_1; // 0x20
+	::UnityEngine::UI::Text* Field_2_1; // 0x18
+	::UnityEngine::Animation* Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{

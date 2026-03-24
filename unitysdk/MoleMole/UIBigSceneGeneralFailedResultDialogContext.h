@@ -4,18 +4,18 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIBIGSCENEGENERALFAILEDRESULTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBEDB090)
+#define MOLEMOLE_UIBIGSCENEGENERALFAILEDRESULTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBF3D700)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBigSceneGeneralFailedResultDialogContext_TypeDefinitionIndex = 50597;
+	inline static constexpr unsigned int UIBigSceneGeneralFailedResultDialogContext_TypeDefinitionIndex = 40732;
 
 	class UIBigSceneGeneralFailedResultDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Action* OnDownAction; // 0x28
+		::System::Action* OnReviveAction; // 0x28
 		::System::Action* OnFairyAction; // 0x30
-		::System::Action* OnReviveAction; // 0x38
+		::System::Action* OnDownAction; // 0x38
 		::System::UInt32 KillerGroupID; // 0x40
 
 		::System::Void _ctor()

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int UberPostCBSlot_TypeDefinitionIndex = 28931;
+	inline static constexpr unsigned int UberPostCBSlot_TypeDefinitionIndex = 29882;
 
 	enum class UberPostCBSlot : ::System::Int32
 	{

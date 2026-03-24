@@ -6,11 +6,11 @@ namespace MoleMole::GalGame { class AudioEventItem; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_GALSUBNARRATORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x6AFB2A0)
+#define MOLEMOLE_GALGAME_GALSUBNARRATORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5EA640)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalSubNarratorNode_TypeDefinitionIndex = 39639;
+	inline static constexpr unsigned int GalSubNarratorNode_TypeDefinitionIndex = 76749;
 
 	class GalSubNarratorNode : public ::MoleMole::GalGame::GalPlayableNodeBase
 	{

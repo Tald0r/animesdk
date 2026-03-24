@@ -3,21 +3,21 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/RuntimePlatform.h"
 
-#define SIRENIX_SERIALIZATION_ARCHITECTUREINFO_SETRUNTIMEPLATFORM_OFFSET UNITYSDK_OFFSET(0x1A187080)
-#define SIRENIX_SERIALIZATION_ARCHITECTUREINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A186FF0)
+#define SIRENIX_SERIALIZATION_ARCHITECTUREINFO_SETRUNTIMEPLATFORM_OFFSET UNITYSDK_OFFSET(0x1A7057F0)
+#define SIRENIX_SERIALIZATION_ARCHITECTUREINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A705760)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int ArchitectureInfo_TypeDefinitionIndex = 7356;
+	inline static constexpr unsigned int ArchitectureInfo_TypeDefinitionIndex = 7361;
 
 	class ArchitectureInfo : public ::System::Object
 	{
 	public:
-		static ::System::Boolean* StaticGet_Architecture_Supports_All_Unaligned_ReadWrites()
+		static ::System::Boolean* StaticGet_Architecture_Supports_Unaligned_Float32_Reads()
 		{
 			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ArchitectureInfo_TypeDefinitionIndex)->GetStaticField(0x3250);
 		}
-		static ::System::Boolean* StaticGet_Architecture_Supports_Unaligned_Float32_Reads()
+		static ::System::Boolean* StaticGet_Architecture_Supports_All_Unaligned_ReadWrites()
 		{
 			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ArchitectureInfo_TypeDefinitionIndex)->GetStaticField(0x3251);
 		}

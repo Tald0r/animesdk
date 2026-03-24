@@ -5,7 +5,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int Lerped_2_TypeDefinitionIndex = 8860;
+	inline static constexpr unsigned int Lerped_2_TypeDefinitionIndex = 8827;
 
 	template <typename T, typename TFunc>
 	struct Lerped_2

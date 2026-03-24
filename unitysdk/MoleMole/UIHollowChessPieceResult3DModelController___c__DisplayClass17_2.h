@@ -5,12 +5,12 @@
 namespace MoleMole { class UIHollowChessPieceResult3DModelController___c__DisplayClass17_0; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIHOLLOWCHESSPIECERESULT3DMODELCONTROLLER___C__DISPLAYCLASS17_2__BLINK_B__1_OFFSET UNITYSDK_OFFSET(0x7D10CD0)
-#define MOLEMOLE_UIHOLLOWCHESSPIECERESULT3DMODELCONTROLLER___C__DISPLAYCLASS17_2__CTOR_OFFSET UNITYSDK_OFFSET(0x7D10CC0)
+#define MOLEMOLE_UIHOLLOWCHESSPIECERESULT3DMODELCONTROLLER___C__DISPLAYCLASS17_2__BLINK_B__1_OFFSET UNITYSDK_OFFSET(0x913FB10)
+#define MOLEMOLE_UIHOLLOWCHESSPIECERESULT3DMODELCONTROLLER___C__DISPLAYCLASS17_2__CTOR_OFFSET UNITYSDK_OFFSET(0x913FB00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowChessPieceResult3DModelController___c__DisplayClass17_2_TypeDefinitionIndex = 59519;
+	inline static constexpr unsigned int UIHollowChessPieceResult3DModelController___c__DisplayClass17_2_TypeDefinitionIndex = 60774;
 
 	class UIHollowChessPieceResult3DModelController___c__DisplayClass17_2 : public ::System::Object
 	{

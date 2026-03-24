@@ -3,7 +3,7 @@
 
 namespace ZenFulcrum::EmbeddedBrowser
 {
-	inline static constexpr unsigned int BrowserNative_FrameCommand_TypeDefinitionIndex = 29541;
+	inline static constexpr unsigned int BrowserNative_FrameCommand_TypeDefinitionIndex = 30494;
 
 	enum class BrowserNative_FrameCommand : ::System::Int32
 	{

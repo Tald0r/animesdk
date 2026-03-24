@@ -4,24 +4,24 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UISUMMERFISHREWARDDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAE44160)
-#define MOLEMOLE_UISUMMERFISHREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAE441A0)
-#define MOLEMOLE_UISUMMERFISHREWARDDIALOGPOPWINDOWCONTROLLER___C__ONUIINIT_B__3_1_OFFSET UNITYSDK_OFFSET(0xAE441B0)
+#define MOLEMOLE_UISUMMERFISHREWARDDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xABAA8B0)
+#define MOLEMOLE_UISUMMERFISHREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xABAA8F0)
+#define MOLEMOLE_UISUMMERFISHREWARDDIALOGPOPWINDOWCONTROLLER___C__ONUIINIT_B__3_1_OFFSET UNITYSDK_OFFSET(0xABAA900)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISummerFishRewardDialogPopWindowController___c_TypeDefinitionIndex = 49876;
+	inline static constexpr unsigned int UISummerFishRewardDialogPopWindowController___c_TypeDefinitionIndex = 54602;
 
 	class UISummerFishRewardDialogPopWindowController___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__3_1()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISummerFishRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x30290);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISummerFishRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31E60);
 		}
 		static ::MoleMole::UISummerFishRewardDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISummerFishRewardDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISummerFishRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x30298);
+			return (::MoleMole::UISummerFishRewardDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISummerFishRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31E68);
 		}
 
 		static ::System::Void _cctor()

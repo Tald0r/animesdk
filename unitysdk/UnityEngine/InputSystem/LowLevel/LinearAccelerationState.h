@@ -3,12 +3,12 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_LINEARACCELERATIONSTATE_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x8D6330)
-#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_LINEARACCELERATIONSTATE_GET_KFORMAT_OFFSET UNITYSDK_OFFSET(0x19ABFB90)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_LINEARACCELERATIONSTATE_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x908810)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_LINEARACCELERATIONSTATE_GET_KFORMAT_OFFSET UNITYSDK_OFFSET(0x1A0AE140)
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int LinearAccelerationState_TypeDefinitionIndex = 27778;
+	inline static constexpr unsigned int LinearAccelerationState_TypeDefinitionIndex = 28718;
 
 	struct alignas(4) LinearAccelerationState
 	{

@@ -4,11 +4,11 @@
 
 namespace MoleMole { class MonsterSpecialIdleEntry; }
 
-#define MOLEMOLE_MONSTERSPECIALIDLESERIALIZEDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xBD45B20)
+#define MOLEMOLE_MONSTERSPECIALIDLESERIALIZEDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB1B6A40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonsterSpecialIdleSerializedData_TypeDefinitionIndex = 58011;
+	inline static constexpr unsigned int MonsterSpecialIdleSerializedData_TypeDefinitionIndex = 70821;
 
 	class MonsterSpecialIdleSerializedData : public ::System::Object
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_SERIALIZATION_CUSTOMFORMATTERATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B114F90)
-#define SIRENIX_SERIALIZATION_CUSTOMFORMATTERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B114F80)
+#define SIRENIX_SERIALIZATION_CUSTOMFORMATTERATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B72C310)
+#define SIRENIX_SERIALIZATION_CUSTOMFORMATTERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B72C300)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int CustomFormatterAttribute_TypeDefinitionIndex = 7359;
+	inline static constexpr unsigned int CustomFormatterAttribute_TypeDefinitionIndex = 7364;
 
 	class CustomFormatterAttribute : public ::System::Attribute
 	{

@@ -10,24 +10,24 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define MDBEDITOR_MDBSKELETON_CREATESKELETONFROMOBJECTHIERARCHY_OFFSET UNITYSDK_OFFSET(0x124A47D0)
-#define MDBEDITOR_MDBSKELETON_CREATESKELETONRECURSIVE_OFFSET UNITYSDK_OFFSET(0x124A5320)
-#define MDBEDITOR_MDBSKELETON_GET_BONES_OFFSET UNITYSDK_OFFSET(0x124A56F0)
-#define MDBEDITOR_MDBSKELETON_GET_SKELETONNAME_OFFSET UNITYSDK_OFFSET(0x124A5710)
-#define MDBEDITOR_MDBSKELETON_SET_BONES_OFFSET UNITYSDK_OFFSET(0x124A5700)
-#define MDBEDITOR_MDBSKELETON_SET_SKELETONNAME_OFFSET UNITYSDK_OFFSET(0x124A5720)
-#define MDBEDITOR_MDBSKELETON__CTOR_OFFSET UNITYSDK_OFFSET(0x124A46C0)
+#define MDBEDITOR_MDBSKELETON_CREATESKELETONFROMOBJECTHIERARCHY_OFFSET UNITYSDK_OFFSET(0x11B20900)
+#define MDBEDITOR_MDBSKELETON_CREATESKELETONRECURSIVE_OFFSET UNITYSDK_OFFSET(0x11B21440)
+#define MDBEDITOR_MDBSKELETON_GET_BONES_OFFSET UNITYSDK_OFFSET(0x11B21810)
+#define MDBEDITOR_MDBSKELETON_GET_SKELETONNAME_OFFSET UNITYSDK_OFFSET(0x11B21830)
+#define MDBEDITOR_MDBSKELETON_SET_BONES_OFFSET UNITYSDK_OFFSET(0x11B21820)
+#define MDBEDITOR_MDBSKELETON_SET_SKELETONNAME_OFFSET UNITYSDK_OFFSET(0x11B21840)
+#define MDBEDITOR_MDBSKELETON__CTOR_OFFSET UNITYSDK_OFFSET(0x11B20800)
 
 namespace MdbEditor
 {
-	inline static constexpr unsigned int MdbSkeleton_TypeDefinitionIndex = 82143;
+	inline static constexpr unsigned int MdbSkeleton_TypeDefinitionIndex = 84203;
 
 	class MdbSkeleton : public ::System::Object
 	{
 	public:
 		::System::Collections::Generic::List_1<::MdbEditor::MdbSkeletalNode*>* _Bones_k__BackingField; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Transform*>* TransformCaches; // 0x18
-		::System::String* _SkeletonName_k__BackingField; // 0x20
+		::System::String* _SkeletonName_k__BackingField; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Transform*>* TransformCaches; // 0x20
 
 		::System::Void _ctor()
 		{

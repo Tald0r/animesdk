@@ -6,21 +6,21 @@
 
 namespace Utf8Json { class IJsonFormatterResolver; }
 
-#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1AFD9360)
-#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1AFD9100)
-#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AFD94D0)
-#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFD94C0)
+#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B5E80D0)
+#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B5E7E70)
+#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B5E8240)
+#define UTF8JSON_FORMATTERS_DOUBLEARRAYFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5E8230)
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int DoubleArrayFormatter_TypeDefinitionIndex = 82020;
+	inline static constexpr unsigned int DoubleArrayFormatter_TypeDefinitionIndex = 84061;
 
 	class DoubleArrayFormatter : public ::System::Object
 	{
 	public:
 		static ::Utf8Json::Formatters::DoubleArrayFormatter** StaticGet_Default()
 		{
-			return (::Utf8Json::Formatters::DoubleArrayFormatter**)Il2CppClass::FromTypeDefinitionIndex(DoubleArrayFormatter_TypeDefinitionIndex)->GetStaticField(0x47000);
+			return (::Utf8Json::Formatters::DoubleArrayFormatter**)Il2CppClass::FromTypeDefinitionIndex(DoubleArrayFormatter_TypeDefinitionIndex)->GetStaticField(0x48A10);
 		}
 
 		::System::Void _ctor()

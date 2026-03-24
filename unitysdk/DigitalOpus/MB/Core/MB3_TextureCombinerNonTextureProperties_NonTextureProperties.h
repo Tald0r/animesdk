@@ -11,7 +11,7 @@ namespace UnityEngine { class Texture2D; }
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB3_TextureCombinerNonTextureProperties_NonTextureProperties_TypeDefinitionIndex = 81373;
+	inline static constexpr unsigned int MB3_TextureCombinerNonTextureProperties_NonTextureProperties_TypeDefinitionIndex = 83414;
 
 	class MB3_TextureCombinerNonTextureProperties_NonTextureProperties
 	{

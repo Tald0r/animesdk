@@ -5,24 +5,24 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define NPCCROWD_ANIMATION_ANIMATOREVENTPATTERNWRAP___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7581620)
-#define NPCCROWD_ANIMATION_ANIMATOREVENTPATTERNWRAP___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7581660)
-#define NPCCROWD_ANIMATION_ANIMATOREVENTPATTERNWRAP___C___CTOR_B__4_0_OFFSET UNITYSDK_OFFSET(0x7581670)
+#define NPCCROWD_ANIMATION_ANIMATOREVENTPATTERNWRAP___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7520C80)
+#define NPCCROWD_ANIMATION_ANIMATOREVENTPATTERNWRAP___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7520CC0)
+#define NPCCROWD_ANIMATION_ANIMATOREVENTPATTERNWRAP___C___CTOR_B__4_0_OFFSET UNITYSDK_OFFSET(0x7520CD0)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimatorEventPatternWrap___c_TypeDefinitionIndex = 70732;
+	inline static constexpr unsigned int AnimatorEventPatternWrap___c_TypeDefinitionIndex = 72575;
 
 	class AnimatorEventPatternWrap___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::MoleMole::Config::AnimatorEvent*>** StaticGet___9__4_0()
 		{
-			return (::System::Comparison_1<::MoleMole::Config::AnimatorEvent*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorEventPatternWrap___c_TypeDefinitionIndex)->GetStaticField(0x3DAD0);
+			return (::System::Comparison_1<::MoleMole::Config::AnimatorEvent*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorEventPatternWrap___c_TypeDefinitionIndex)->GetStaticField(0x40AF0);
 		}
 		static ::NPCCrowd::Animation::AnimatorEventPatternWrap___c** StaticGet___9()
 		{
-			return (::NPCCrowd::Animation::AnimatorEventPatternWrap___c**)Il2CppClass::FromTypeDefinitionIndex(AnimatorEventPatternWrap___c_TypeDefinitionIndex)->GetStaticField(0x3DAD8);
+			return (::NPCCrowd::Animation::AnimatorEventPatternWrap___c**)Il2CppClass::FromTypeDefinitionIndex(AnimatorEventPatternWrap___c_TypeDefinitionIndex)->GetStaticField(0x40AF8);
 		}
 
 		static ::System::Void _cctor()

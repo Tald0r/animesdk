@@ -9,21 +9,21 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UIDynamicNumberLabel; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_70D108F342B321A6_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x9A75370)
-#define CLASS_2_70D108F342B321A6_METHOD_2_43ED31B02AD5E38E_OFFSET UNITYSDK_OFFSET(0x9A751B0)
-#define CLASS_2_70D108F342B321A6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9A75420)
-#define CLASS_2_70D108F342B321A6__CTOR_OFFSET UNITYSDK_OFFSET(0x9A75410)
+#define CLASS_2_70D108F342B321A6_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0xC8758C0)
+#define CLASS_2_70D108F342B321A6_METHOD_2_43ED31B02AD5E38E_OFFSET UNITYSDK_OFFSET(0xC875700)
+#define CLASS_2_70D108F342B321A6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC875970)
+#define CLASS_2_70D108F342B321A6__CTOR_OFFSET UNITYSDK_OFFSET(0xC875960)
 
-inline static constexpr unsigned int Class_2_70D108F342B321A6_TypeDefinitionIndex = 37771;
+inline static constexpr unsigned int Class_2_70D108F342B321A6_TypeDefinitionIndex = 51411;
 
 class Class_2_70D108F342B321A6 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_3; // 0x18
-	::UnityEngine::RectTransform* Field_2_2; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x18
+	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_3; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x30
+	::UnityEngine::RectTransform* Field_2_2; // 0x38
 
 	::System::Void _ctor()
 	{

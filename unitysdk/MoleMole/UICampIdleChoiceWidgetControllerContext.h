@@ -5,11 +5,11 @@
 namespace System { class Action; }
 namespace System { class String; }
 
-#define MOLEMOLE_UICAMPIDLECHOICEWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC0C96B0)
+#define MOLEMOLE_UICAMPIDLECHOICEWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD033060)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICampIdleChoiceWidgetControllerContext_TypeDefinitionIndex = 64207;
+	inline static constexpr unsigned int UICampIdleChoiceWidgetControllerContext_TypeDefinitionIndex = 58036;
 
 	class UICampIdleChoiceWidgetControllerContext : public ::MoleMole::UIControllerContextBase
 	{

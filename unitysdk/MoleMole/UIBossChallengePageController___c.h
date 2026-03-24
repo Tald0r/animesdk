@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA5207B0)
-#define MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA5207F0)
-#define MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__ONMAINCITYBTNCLICK_B__38_0_OFFSET UNITYSDK_OFFSET(0xA520800)
+#define MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xADB9070)
+#define MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xADB90B0)
+#define MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__ONMAINCITYBTNCLICK_B__39_0_OFFSET UNITYSDK_OFFSET(0xADB90C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBossChallengePageController___c_TypeDefinitionIndex = 77349;
+	inline static constexpr unsigned int UIBossChallengePageController___c_TypeDefinitionIndex = 38179;
 
 	class UIBossChallengePageController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIBossChallengePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIBossChallengePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIBossChallengePageController___c_TypeDefinitionIndex)->GetStaticField(0x2CF60);
+			return (::MoleMole::UIBossChallengePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIBossChallengePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E360);
 		}
-		static ::System::Action** StaticGet___9__38_0()
+		static ::System::Action** StaticGet___9__39_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIBossChallengePageController___c_TypeDefinitionIndex)->GetStaticField(0x2CF68);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIBossChallengePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E368);
 		}
 
 		static ::System::Void _cctor()
@@ -34,9 +34,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _OnMainCityBtnClick_b__38_0()
+		::System::Void _OnMainCityBtnClick_b__39_0()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__ONMAINCITYBTNCLICK_B__38_0_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIBOSSCHALLENGEPAGECONTROLLER___C__ONMAINCITYBTNCLICK_B__39_0_OFFSET))(this);
 		}
 	};
 }

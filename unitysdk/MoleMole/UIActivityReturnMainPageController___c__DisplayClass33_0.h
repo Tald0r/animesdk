@@ -3,12 +3,12 @@
 #include "unitysdk/Enum_3_01618AD0437C8486.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIACTIVITYRETURNMAINPAGECONTROLLER___C__DISPLAYCLASS33_0__CLICKJUMPRETURNPAGE_B__0_OFFSET UNITYSDK_OFFSET(0xC260620)
-#define MOLEMOLE_UIACTIVITYRETURNMAINPAGECONTROLLER___C__DISPLAYCLASS33_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC260610)
+#define MOLEMOLE_UIACTIVITYRETURNMAINPAGECONTROLLER___C__DISPLAYCLASS33_0__CLICKJUMPRETURNPAGE_B__0_OFFSET UNITYSDK_OFFSET(0xC291D10)
+#define MOLEMOLE_UIACTIVITYRETURNMAINPAGECONTROLLER___C__DISPLAYCLASS33_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC291D00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityReturnMainPageController___c__DisplayClass33_0_TypeDefinitionIndex = 41820;
+	inline static constexpr unsigned int UIActivityReturnMainPageController___c__DisplayClass33_0_TypeDefinitionIndex = 52504;
 
 	class UIActivityReturnMainPageController___c__DisplayClass33_0 : public ::System::Object
 	{

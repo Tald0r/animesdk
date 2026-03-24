@@ -1,22 +1,22 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/FlatBuffers/Config/MechaConfigTemplate.h"
-#include "unitysdk/Struct_2_3E75877A2888D88A_248.h"
+#include "unitysdk/Struct_2_3E75877A2888D88A_120.h"
 
 class Class_0_16E4307DCC419505_13;
 
-#define MOLEMOLE_PROJECT_CONFIG_MECHACONFIGTEMPLATEEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x182FF830)
+#define MOLEMOLE_PROJECT_CONFIG_MECHACONFIGTEMPLATEEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x13D912B0)
 
 namespace MoleMole::Project::Config
 {
-	inline static constexpr unsigned int MechaConfigTemplateExt_TypeDefinitionIndex = 15376;
+	inline static constexpr unsigned int MechaConfigTemplateExt_TypeDefinitionIndex = 10753;
 
 	class MechaConfigTemplateExt : public ::MoleMole::FlatBuffers::Config::MechaConfigTemplate
 	{
 	public:
-		::System::Void _ctor(::Struct_2_3E75877A2888D88A_248 data, ::Class_0_16E4307DCC419505_13* notify)
+		::System::Void _ctor(::Struct_2_3E75877A2888D88A_120 data, ::Class_0_16E4307DCC419505_13* notify)
 		{
-			return ((::System::Void(*)(::PVOID, ::Struct_2_3E75877A2888D88A_248, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_PROJECT_CONFIG_MECHACONFIGTEMPLATEEXT__CTOR_OFFSET))(this, data, notify);
+			return ((::System::Void(*)(::PVOID, ::Struct_2_3E75877A2888D88A_120, ::Class_0_16E4307DCC419505_13*))((::PBYTE)hIl2Cpp + MOLEMOLE_PROJECT_CONFIG_MECHACONFIGTEMPLATEEXT__CTOR_OFFSET))(this, data, notify);
 		}
 	};
 }

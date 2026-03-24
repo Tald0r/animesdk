@@ -8,12 +8,12 @@ class Class_1_0D6706375CDAAE8C;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_BIGSCENEBANGBOOLOGSUBSYSTEM__WAITTELEPORTCOMPLETE_D__23_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B8000)
-#define MOLEMOLE_BIGSCENEBANGBOOLOGSUBSYSTEM__WAITTELEPORTCOMPLETE_D__23_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_BIGSCENEBANGBOOLOGSUBSYSTEM__WAITTELEPORTCOMPLETE_D__23_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3827E0)
+#define MOLEMOLE_BIGSCENEBANGBOOLOGSUBSYSTEM__WAITTELEPORTCOMPLETE_D__23_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BigSceneBangBooLogSubsystem__WaitTeleportComplete_d__23_TypeDefinitionIndex = 39876;
+	inline static constexpr unsigned int BigSceneBangBooLogSubsystem__WaitTeleportComplete_d__23_TypeDefinitionIndex = 48143;
 
 	struct alignas(8) BigSceneBangBooLogSubsystem__WaitTeleportComplete_d__23
 	{

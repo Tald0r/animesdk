@@ -3,22 +3,22 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_44EFB945CAE441A3;
-class Class_2_0A55B5A82A61DAFA_1;
+class Class_2_0A55B5A82A61DAFA;
 namespace MoleMole { class UIAbyssApreggioTeamWidgetController; }
 namespace MoleMole { class UILineupSelectContext; }
 
-#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8AA5D30)
-#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__GOTOBEGINBATTLE_B__0_OFFSET UNITYSDK_OFFSET(0x8AA6440)
-#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__GOTOBEGINBATTLE_B__2_OFFSET UNITYSDK_OFFSET(0x8AA5D40)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8CAEB80)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__GOTOBEGINBATTLE_B__0_OFFSET UNITYSDK_OFFSET(0x8CAF290)
+#define MOLEMOLE_UIABYSSAPREGGIOTEAMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__GOTOBEGINBATTLE_B__2_OFFSET UNITYSDK_OFFSET(0x8CAEB90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssApreggioTeamWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 56518;
+	inline static constexpr unsigned int UIAbyssApreggioTeamWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 66177;
 
 	class UIAbyssApreggioTeamWidgetController___c__DisplayClass20_0 : public ::System::Object
 	{
 	public:
-		::Class_2_0A55B5A82A61DAFA_1* selectedConfig; // 0x10
+		::Class_2_0A55B5A82A61DAFA* selectedConfig; // 0x10
 		::MoleMole::UILineupSelectContext* selectedPageData; // 0x18
 		::MoleMole::UIAbyssApreggioTeamWidgetController* __4__this; // 0x20
 

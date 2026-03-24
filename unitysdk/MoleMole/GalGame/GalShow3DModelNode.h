@@ -3,17 +3,17 @@
 #include "unitysdk/MoleMole/GalGame/GalPlayableNodeBase.h"
 #include "unitysdk/MoleMole/GalGame/ModelConfigTemplateType.h"
 
-#define MOLEMOLE_GALGAME_GALSHOW3DMODELNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7F0CA90)
+#define MOLEMOLE_GALGAME_GALSHOW3DMODELNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD57110)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalShow3DModelNode_TypeDefinitionIndex = 71501;
+	inline static constexpr unsigned int GalShow3DModelNode_TypeDefinitionIndex = 76338;
 
 	class GalShow3DModelNode : public ::MoleMole::GalGame::GalPlayableNodeBase
 	{
 	public:
-		::MoleMole::GalGame::ModelConfigTemplateType configType; // 0x20
-		::System::Int32 modelID; // 0x24
+		::System::Int32 modelID; // 0x20
+		::MoleMole::GalGame::ModelConfigTemplateType configType; // 0x24
 
 		::System::Void _ctor()
 		{

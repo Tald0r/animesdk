@@ -5,9 +5,9 @@
 
 namespace Cinemachine { class CinemachineVirtualCamera; }
 
-#define CLASS_2_07803346940B96BF__CTOR_OFFSET UNITYSDK_OFFSET(0x997B2E0)
+#define CLASS_2_07803346940B96BF__CTOR_OFFSET UNITYSDK_OFFSET(0x626D450)
 
-inline static constexpr unsigned int Class_2_07803346940B96BF_TypeDefinitionIndex = 49313;
+inline static constexpr unsigned int Class_2_07803346940B96BF_TypeDefinitionIndex = 62254;
 
 class Class_2_07803346940B96BF : public ::Class_1_43BD383C98B4C0C5_19
 {

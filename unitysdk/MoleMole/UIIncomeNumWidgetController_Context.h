@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C8BB50)
+#define MOLEMOLE_UIINCOMENUMWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8F0C770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIIncomeNumWidgetController_Context_TypeDefinitionIndex = 70264;
+	inline static constexpr unsigned int UIIncomeNumWidgetController_Context_TypeDefinitionIndex = 46106;
 
 	class UIIncomeNumWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

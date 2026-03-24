@@ -5,9 +5,9 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_1_A7AB79E4D260AC9E__CTOR_OFFSET UNITYSDK_OFFSET(0x91333A0)
+#define CLASS_1_A7AB79E4D260AC9E__CTOR_OFFSET UNITYSDK_OFFSET(0x7E4DFB0)
 
-inline static constexpr unsigned int Class_1_A7AB79E4D260AC9E_TypeDefinitionIndex = 56458;
+inline static constexpr unsigned int Class_1_A7AB79E4D260AC9E_TypeDefinitionIndex = 67831;
 
 class Class_1_A7AB79E4D260AC9E : public ::System::Object
 {

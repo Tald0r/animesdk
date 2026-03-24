@@ -5,17 +5,17 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_1F219549AE9B7C82_CLASS_1_6F9A3C06E02402A3_METHOD_1_4FD4D0D76039CF16_OFFSET UNITYSDK_OFFSET(0x63C9B80)
-#define CLASS_1_1F219549AE9B7C82_CLASS_1_6F9A3C06E02402A3__CTOR_OFFSET UNITYSDK_OFFSET(0x63C9B70)
+#define CLASS_1_1F219549AE9B7C82_CLASS_1_6F9A3C06E02402A3_METHOD_1_4FD4D0D76039CF16_OFFSET UNITYSDK_OFFSET(0xB60C4D0)
+#define CLASS_1_1F219549AE9B7C82_CLASS_1_6F9A3C06E02402A3__CTOR_OFFSET UNITYSDK_OFFSET(0xB60C4C0)
 
-inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Class_1_6F9A3C06E02402A3_TypeDefinitionIndex = 57092;
+inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Class_1_6F9A3C06E02402A3_TypeDefinitionIndex = 62845;
 
 class Class_1_1F219549AE9B7C82_Class_1_6F9A3C06E02402A3 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* Field_1_1; // 0x10
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* Field_1_0; // 0x18
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>*>* Field_1_2; // 0x20
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* Field_1_0; // 0x10
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>*>* Field_1_2; // 0x18
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* Field_1_1; // 0x20
 
 	::System::Void _ctor()
 	{

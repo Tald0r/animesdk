@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___C__DISPLAYCLASS6_0__BINDCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x92934C0)
-#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x92934B0)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___C__DISPLAYCLASS6_0__BINDCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0xAF5A920)
+#define MOLEMOLE_UIINTERKNOTPERSONALWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAF5A910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotPersonalWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 77368;
+	inline static constexpr unsigned int UIInterKnotPersonalWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 68347;
 
 	class UIInterKnotPersonalWidgetController___c__DisplayClass6_0 : public ::System::Object
 	{

@@ -5,29 +5,29 @@
 namespace System { class Action; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC07FD00)
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC07FD40)
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITINLEVELCARDOBJ_B__9_2_OFFSET UNITYSDK_OFFSET(0xC07FE80)
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INIT_B__4_0_OFFSET UNITYSDK_OFFSET(0xC07FD50)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x873D4D0)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x873D510)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITINLEVELCARDOBJ_B__9_2_OFFSET UNITYSDK_OFFSET(0x873D640)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INIT_B__4_0_OFFSET UNITYSDK_OFFSET(0x873D520)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex = 66744;
+	inline static constexpr unsigned int UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex = 71077;
 
 	class UIInLevelCardOptionsDialogPopWindowController___c : public ::System::Object
 	{
 	public:
+		static ::MoleMole::UIInLevelCardOptionsDialogPopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIInLevelCardOptionsDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37430);
+		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__4_0()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34AD0);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37438);
 		}
 		static ::System::Action** StaticGet___9__9_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34AD8);
-		}
-		static ::MoleMole::UIInLevelCardOptionsDialogPopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIInLevelCardOptionsDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34AE0);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37440);
 		}
 
 		static ::System::Void _cctor()

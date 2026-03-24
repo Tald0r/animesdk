@@ -7,24 +7,24 @@ namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::AI { class NavMeshAgent; }
 
-#define NODECANVAS_TASKS_ACTIONS_FLEE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1B50A0)
-#define NODECANVAS_TASKS_ACTIONS_FLEE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A1B5110)
-#define NODECANVAS_TASKS_ACTIONS_FLEE_ONPAUSE_OFFSET UNITYSDK_OFFSET(0x1A1B5880)
-#define NODECANVAS_TASKS_ACTIONS_FLEE_ONSTOP_OFFSET UNITYSDK_OFFSET(0x1A1B5890)
-#define NODECANVAS_TASKS_ACTIONS_FLEE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A1B53E0)
-#define NODECANVAS_TASKS_ACTIONS_FLEE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1B5920)
+#define NODECANVAS_TASKS_ACTIONS_FLEE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1224B0)
+#define NODECANVAS_TASKS_ACTIONS_FLEE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A122520)
+#define NODECANVAS_TASKS_ACTIONS_FLEE_ONPAUSE_OFFSET UNITYSDK_OFFSET(0x1A122C90)
+#define NODECANVAS_TASKS_ACTIONS_FLEE_ONSTOP_OFFSET UNITYSDK_OFFSET(0x1A122CA0)
+#define NODECANVAS_TASKS_ACTIONS_FLEE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A1227F0)
+#define NODECANVAS_TASKS_ACTIONS_FLEE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A122D30)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int Flee_TypeDefinitionIndex = 26149;
+	inline static constexpr unsigned int Flee_TypeDefinitionIndex = 27266;
 
 	class Flee : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::AI::NavMeshAgent*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* fledDistance; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* lookAhead; // 0x60
 		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* target; // 0x68
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* lookAhead; // 0x70
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* speed; // 0x78
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* speed; // 0x70
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* fledDistance; // 0x78
 
 		::System::Void _ctor()
 		{

@@ -6,7 +6,7 @@ namespace UnityEngine { class Renderer; }
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LOD_TypeDefinitionIndex = 5257;
+	inline static constexpr unsigned int LOD_TypeDefinitionIndex = 5258;
 
 	struct alignas(8) LOD
 	{

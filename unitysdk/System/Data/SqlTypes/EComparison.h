@@ -3,7 +3,7 @@
 
 namespace System::Data::SqlTypes
 {
-	inline static constexpr unsigned int EComparison_TypeDefinitionIndex = 35546;
+	inline static constexpr unsigned int EComparison_TypeDefinitionIndex = 36566;
 
 	enum class EComparison : ::System::Int32
 	{

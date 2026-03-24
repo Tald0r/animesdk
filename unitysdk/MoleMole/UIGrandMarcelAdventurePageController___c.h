@@ -2,43 +2,43 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_871A5AD984DA0F15_1;
+class Class_3_7FECECA6F88FD15C;
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBFBAA10)
-#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CHECKTEMPUNLOCK_B__81_1_OFFSET UNITYSDK_OFFSET(0xBFBAB30)
-#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBFBAA50)
-#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__REFRESHVIEW_B__48_0_OFFSET UNITYSDK_OFFSET(0xBFBAA60)
-#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__96_0_OFFSET UNITYSDK_OFFSET(0xBFBAB90)
-#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__96_1_OFFSET UNITYSDK_OFFSET(0xBFBABA0)
+#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9BF6540)
+#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CHECKTEMPUNLOCK_B__82_1_OFFSET UNITYSDK_OFFSET(0x9BF6660)
+#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9BF6580)
+#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__REFRESHVIEW_B__49_0_OFFSET UNITYSDK_OFFSET(0x9BF6590)
+#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__97_0_OFFSET UNITYSDK_OFFSET(0x9BF66C0)
+#define MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__97_1_OFFSET UNITYSDK_OFFSET(0x9BF66D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex = 44765;
+	inline static constexpr unsigned int UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex = 74650;
 
 	class UIGrandMarcelAdventurePageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action_1<::Class_3_871A5AD984DA0F15_1*>** StaticGet___9__96_0()
+		static ::System::Action** StaticGet___9__82_1()
 		{
-			return (::System::Action_1<::Class_3_871A5AD984DA0F15_1*>**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D0F0);
-		}
-		static ::System::Action** StaticGet___9__81_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D0F8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E4F0);
 		}
 		static ::MoleMole::UIGrandMarcelAdventurePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIGrandMarcelAdventurePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D100);
+			return (::MoleMole::UIGrandMarcelAdventurePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E4F8);
 		}
-		static ::System::Action** StaticGet___9__48_0()
+		static ::System::Action** StaticGet___9__49_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D108);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E500);
 		}
-		static ::System::Action_1<::System::Int32>** StaticGet___9__96_1()
+		static ::System::Action_1<::System::Int32>** StaticGet___9__97_1()
 		{
-			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D110);
+			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E508);
+		}
+		static ::System::Action_1<::Class_3_7FECECA6F88FD15C*>** StaticGet___9__97_0()
+		{
+			return (::System::Action_1<::Class_3_7FECECA6F88FD15C*>**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventurePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E510);
 		}
 
 		static ::System::Void _cctor()
@@ -51,24 +51,24 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _RefreshView_b__48_0()
+		::System::Void _RefreshView_b__49_0()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__REFRESHVIEW_B__48_0_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__REFRESHVIEW_B__49_0_OFFSET))(this);
 		}
 
-		::System::Void _CheckTempUnlock_b__81_1()
+		::System::Void _CheckTempUnlock_b__82_1()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CHECKTEMPUNLOCK_B__81_1_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__CHECKTEMPUNLOCK_B__82_1_OFFSET))(this);
 		}
 
-		::System::Void _TryJoinMarcelAdventure_b__96_0(::Class_3_871A5AD984DA0F15_1* roomInfo)
+		::System::Void _TryJoinMarcelAdventure_b__97_0(::Class_3_7FECECA6F88FD15C* roomInfo)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_3_871A5AD984DA0F15_1*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__96_0_OFFSET))(this, roomInfo);
+			return ((::System::Void(*)(::PVOID, ::Class_3_7FECECA6F88FD15C*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__97_0_OFFSET))(this, roomInfo);
 		}
 
-		::System::Void _TryJoinMarcelAdventure_b__96_1(::System::Int32 _)
+		::System::Void _TryJoinMarcelAdventure_b__97_1(::System::Int32 _)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__96_1_OFFSET))(this, _);
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGRANDMARCELADVENTUREPAGECONTROLLER___C__TRYJOINMARCELADVENTURE_B__97_1_OFFSET))(this, _);
 		}
 	};
 }

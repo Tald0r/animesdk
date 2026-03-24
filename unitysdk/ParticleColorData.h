@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/ParticleBaseDataType.h"
 
-#define PARTICLECOLORDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1923AFB0)
+#define PARTICLECOLORDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1965FD90)
 
-inline static constexpr unsigned int ParticleColorData_TypeDefinitionIndex = 28049;
+inline static constexpr unsigned int ParticleColorData_TypeDefinitionIndex = 28989;
 
 class ParticleColorData : public ::ParticleBaseDataType
 {

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MESSAGEPACK_FORMATTERNOTREGISTEREDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A178E80)
+#define MESSAGEPACK_FORMATTERNOTREGISTEREDEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A721710)
 
 namespace MessagePack
 {
-	inline static constexpr unsigned int FormatterNotRegisteredException_TypeDefinitionIndex = 26436;
+	inline static constexpr unsigned int FormatterNotRegisteredException_TypeDefinitionIndex = 26687;
 
 	class FormatterNotRegisteredException : public ::MessagePack::MessagePackSerializationException
 	{

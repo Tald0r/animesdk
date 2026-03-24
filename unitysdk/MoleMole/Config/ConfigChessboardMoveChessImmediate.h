@@ -7,21 +7,21 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDMOVECHESSIMMEDIATE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x13F8DAB0)
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDMOVECHESSIMMEDIATE__CTOR_OFFSET UNITYSDK_OFFSET(0x13F8DB90)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDMOVECHESSIMMEDIATE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xF2C7090)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDMOVECHESSIMMEDIATE__CTOR_OFFSET UNITYSDK_OFFSET(0xF2C7170)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessboardMoveChessImmediate_TypeDefinitionIndex = 58370;
+	inline static constexpr unsigned int ConfigChessboardMoveChessImmediate_TypeDefinitionIndex = 75683;
 
 	class ConfigChessboardMoveChessImmediate : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
 		::System::String* PivotCellKey; // 0x18
 		::System::String* TargetPositionKey; // 0x20
-		::MoleMole::Config::ConfigSetSection_Order ConfigOrder; // 0x28
-		::UnityEngine::Vector3 Offset; // 0x2C
-		::System::Boolean UseSpecific; // 0x38
+		::System::Boolean UseSpecific; // 0x28
+		::MoleMole::Config::ConfigSetSection_Order ConfigOrder; // 0x2C
+		::UnityEngine::Vector3 Offset; // 0x30
 
 		::System::Void _ctor()
 		{

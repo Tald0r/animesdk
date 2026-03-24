@@ -4,11 +4,11 @@
 
 namespace miHoYoEmotion { class SequenceFrameBakeData_FrameBinding; }
 
-#define MIHOYOEMOTION_SEQUENCEFRAMEBAKEDATA_BAKEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18AF6DE0)
+#define MIHOYOEMOTION_SEQUENCEFRAMEBAKEDATA_BAKEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18FE1750)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int SequenceFrameBakeData_BakeData_TypeDefinitionIndex = 36197;
+	inline static constexpr unsigned int SequenceFrameBakeData_BakeData_TypeDefinitionIndex = 37217;
 
 	class SequenceFrameBakeData_BakeData : public ::miHoYoEmotion::SequenceBakeData_BakeData
 	{

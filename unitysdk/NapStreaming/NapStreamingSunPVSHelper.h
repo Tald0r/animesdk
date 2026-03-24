@@ -5,20 +5,20 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class MeshRenderer; }
 
-#define NAPSTREAMING_NAPSTREAMINGSUNPVSHELPER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x5E1E600)
-#define NAPSTREAMING_NAPSTREAMINGSUNPVSHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x5E1EE00)
-#define NAPSTREAMING_NAPSTREAMINGSUNPVSHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x5E1ECE0)
+#define NAPSTREAMING_NAPSTREAMINGSUNPVSHELPER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x63618B0)
+#define NAPSTREAMING_NAPSTREAMINGSUNPVSHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x63620B0)
+#define NAPSTREAMING_NAPSTREAMINGSUNPVSHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x6361F90)
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NapStreamingSunPVSHelper_TypeDefinitionIndex = 61948;
+	inline static constexpr unsigned int NapStreamingSunPVSHelper_TypeDefinitionIndex = 72817;
 
 	class NapStreamingSunPVSHelper : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::System::Boolean* StaticGet_EnableSunPVS()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapStreamingSunPVSHelper_TypeDefinitionIndex)->GetStaticField(0x11500);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapStreamingSunPVSHelper_TypeDefinitionIndex)->GetStaticField(0x11140);
 		}
 		::System::Collections::Generic::List_1<::UnityEngine::MeshRenderer*>* renderers; // 0x18
 		::System::Collections::Generic::List_1<::System::Int32>* pvsHandles; // 0x20

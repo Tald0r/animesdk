@@ -4,9 +4,9 @@
 #include "unitysdk/Foundation/AssetPath.h"
 #include "unitysdk/System/Object.h"
 
-#define PARTMATERIALS__CTOR_OFFSET UNITYSDK_OFFSET(0x17CC8530)
+#define PARTMATERIALS__CTOR_OFFSET UNITYSDK_OFFSET(0xD85B0F0)
 
-inline static constexpr unsigned int PartMaterials_TypeDefinitionIndex = 63541;
+inline static constexpr unsigned int PartMaterials_TypeDefinitionIndex = 50662;
 
 class PartMaterials : public ::System::Object
 {

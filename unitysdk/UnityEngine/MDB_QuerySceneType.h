@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int MDB_QuerySceneType_TypeDefinitionIndex = 36099;
+	inline static constexpr unsigned int MDB_QuerySceneType_TypeDefinitionIndex = 37119;
 
 	enum class MDB_QuerySceneType : ::System::Int32
 	{

@@ -6,19 +6,19 @@
 
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_CONDITIONS_CHECKKEYBOARDINPUT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19169D60)
-#define NODECANVAS_TASKS_CONDITIONS_CHECKKEYBOARDINPUT_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19169E30)
-#define NODECANVAS_TASKS_CONDITIONS_CHECKKEYBOARDINPUT__CTOR_OFFSET UNITYSDK_OFFSET(0x19169E70)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKKEYBOARDINPUT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1955BEA0)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKKEYBOARDINPUT_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1955BF70)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKKEYBOARDINPUT__CTOR_OFFSET UNITYSDK_OFFSET(0x1955BFB0)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int CheckKeyboardInput_TypeDefinitionIndex = 26541;
+	inline static constexpr unsigned int CheckKeyboardInput_TypeDefinitionIndex = 27685;
 
 	class CheckKeyboardInput : public ::NodeCanvas::Framework::ConditionTask
 	{
 	public:
-		::UnityEngine::KeyCode key; // 0x60
-		::ParadoxNotion::PressTypes pressType; // 0x64
+		::ParadoxNotion::PressTypes pressType; // 0x60
+		::UnityEngine::KeyCode key; // 0x64
 
 		::System::Void _ctor()
 		{

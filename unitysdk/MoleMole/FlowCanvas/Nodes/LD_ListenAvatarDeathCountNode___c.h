@@ -4,24 +4,24 @@
 
 namespace FlowCanvas { template <typename T> class ValueHandler_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6789DC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6789E00)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___C__REGISTERPORTS_B__2_1_OFFSET UNITYSDK_OFFSET(0x6789E10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x75866E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7586720)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LISTENAVATARDEATHCOUNTNODE___C__REGISTERPORTS_B__2_1_OFFSET UNITYSDK_OFFSET(0x7586730)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_ListenAvatarDeathCountNode___c_TypeDefinitionIndex = 40956;
+	inline static constexpr unsigned int LD_ListenAvatarDeathCountNode___c_TypeDefinitionIndex = 54110;
 
 	class LD_ListenAvatarDeathCountNode___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::FlowCanvas::Nodes::LD_ListenAvatarDeathCountNode___c** StaticGet___9()
-		{
-			return (::MoleMole::FlowCanvas::Nodes::LD_ListenAvatarDeathCountNode___c**)Il2CppClass::FromTypeDefinitionIndex(LD_ListenAvatarDeathCountNode___c_TypeDefinitionIndex)->GetStaticField(0x3A4C0);
-		}
 		static ::FlowCanvas::ValueHandler_1<::System::Int32>** StaticGet___9__2_1()
 		{
-			return (::FlowCanvas::ValueHandler_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(LD_ListenAvatarDeathCountNode___c_TypeDefinitionIndex)->GetStaticField(0x3A4C8);
+			return (::FlowCanvas::ValueHandler_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(LD_ListenAvatarDeathCountNode___c_TypeDefinitionIndex)->GetStaticField(0x3D230);
+		}
+		static ::MoleMole::FlowCanvas::Nodes::LD_ListenAvatarDeathCountNode___c** StaticGet___9()
+		{
+			return (::MoleMole::FlowCanvas::Nodes::LD_ListenAvatarDeathCountNode___c**)Il2CppClass::FromTypeDefinitionIndex(LD_ListenAvatarDeathCountNode___c_TypeDefinitionIndex)->GetStaticField(0x3D238);
 		}
 
 		static ::System::Void _cctor()

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHACKERGAMEDEBUG_GET_EVENTNAME_OFFSET UNITYSDK_OFFSET(0xE0E9C60)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHACKERGAMEDEBUG__CTOR_OFFSET UNITYSDK_OFFSET(0xE0E9CC0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHACKERGAMEDEBUG_GET_EVENTNAME_OFFSET UNITYSDK_OFFSET(0x7A4E8E0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHACKERGAMEDEBUG__CTOR_OFFSET UNITYSDK_OFFSET(0x7A4E940)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardHackerGameDebug_TypeDefinitionIndex = 43705;
+	inline static constexpr unsigned int ChessboardHackerGameDebug_TypeDefinitionIndex = 56042;
 
 	class ChessboardHackerGameDebug : public ::MoleMole::FlowCanvas::ChessboardEventNode_1<::System::String*>
 	{

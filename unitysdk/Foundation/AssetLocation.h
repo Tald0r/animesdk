@@ -3,15 +3,15 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AssetLocation_TypeDefinitionIndex = 7799;
+	inline static constexpr unsigned int AssetLocation_TypeDefinitionIndex = 8179;
 
 	enum class AssetLocation : ::System::Byte
 	{
+		Internal = 0x1,
+		Streaming = 0x3,
+		None = 0x2,
 		External = 0x5,
 		EditorOnly = 0x0,
-		Internal = 0x1,
-		None = 0x2,
 		Medium = 0x4,
-		Streaming = 0x3,
 	};
 }

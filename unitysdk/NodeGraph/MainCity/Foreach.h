@@ -12,36 +12,36 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NODEGRAPH_MAINCITY_FOREACH_ONNODEACTIVEWITHSTATE_OFFSET UNITYSDK_OFFSET(0xA11DEA0)
-#define NODEGRAPH_MAINCITY_FOREACH_ONNODECLEAR_OFFSET UNITYSDK_OFFSET(0xA11EA30)
-#define NODEGRAPH_MAINCITY_FOREACH_ONNODEEND_OFFSET UNITYSDK_OFFSET(0xA11EAE0)
-#define NODEGRAPH_MAINCITY_FOREACH_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0xA11DC30)
-#define NODEGRAPH_MAINCITY_FOREACH__CTOR_OFFSET UNITYSDK_OFFSET(0xA11DAF0)
-#define NODEGRAPH_MAINCITY_FOREACH__ONREGISTERPARAM_B__12_0_OFFSET UNITYSDK_OFFSET(0xA11EB90)
-#define NODEGRAPH_MAINCITY_FOREACH__ONREGISTERPARAM_B__12_1_OFFSET UNITYSDK_OFFSET(0xA11F610)
-#define NODEGRAPH_MAINCITY_FOREACH__ONREGISTERPARAM_B__12_2_OFFSET UNITYSDK_OFFSET(0xA11FF40)
-#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONNODEACTIVEWITHSTATE_OFFSET UNITYSDK_OFFSET(0xA120870)
-#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONNODECLEAR_OFFSET UNITYSDK_OFFSET(0xA1208E0)
-#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONNODEEND_OFFSET UNITYSDK_OFFSET(0xA120940)
-#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0xA1209A0)
+#define NODEGRAPH_MAINCITY_FOREACH_ONNODEACTIVEWITHSTATE_OFFSET UNITYSDK_OFFSET(0x76E43A0)
+#define NODEGRAPH_MAINCITY_FOREACH_ONNODECLEAR_OFFSET UNITYSDK_OFFSET(0x76E4F20)
+#define NODEGRAPH_MAINCITY_FOREACH_ONNODEEND_OFFSET UNITYSDK_OFFSET(0x76E4FD0)
+#define NODEGRAPH_MAINCITY_FOREACH_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x76E4130)
+#define NODEGRAPH_MAINCITY_FOREACH__CTOR_OFFSET UNITYSDK_OFFSET(0x76E3FF0)
+#define NODEGRAPH_MAINCITY_FOREACH__ONREGISTERPARAM_B__12_0_OFFSET UNITYSDK_OFFSET(0x76E5080)
+#define NODEGRAPH_MAINCITY_FOREACH__ONREGISTERPARAM_B__12_1_OFFSET UNITYSDK_OFFSET(0x76E5AF0)
+#define NODEGRAPH_MAINCITY_FOREACH__ONREGISTERPARAM_B__12_2_OFFSET UNITYSDK_OFFSET(0x76E6420)
+#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONNODEACTIVEWITHSTATE_OFFSET UNITYSDK_OFFSET(0x76E6D50)
+#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONNODECLEAR_OFFSET UNITYSDK_OFFSET(0x76E6DC0)
+#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONNODEEND_OFFSET UNITYSDK_OFFSET(0x76E6E20)
+#define NODEGRAPH_MAINCITY_FOREACH___BASE_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x76E6E80)
 
 namespace NodeGraph::MainCity
 {
-	inline static constexpr unsigned int Foreach_TypeDefinitionIndex = 42547;
+	inline static constexpr unsigned int Foreach_TypeDefinitionIndex = 49061;
 
 	class Foreach : public ::NodeGraph::GraphNodeFlow
 	{
 	public:
-		::NodeGraph::GraphOutputValuePort* IsLastValue; // 0x58
-		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::String*>*>* StringValues; // 0x60
-		::System::Collections::Generic::List_1<::NodeGraph::GraphOutputValuePort*>* FloatValue; // 0x68
+		::System::Collections::Generic::List_1<::NodeGraph::GraphOutputValuePort*>* StringValue; // 0x58
+		::NodeGraph::GraphOutputPort* onProcess; // 0x60
+		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::Single>*>* FloatValues; // 0x68
 		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::Int32>*>* IntValues; // 0x70
-		::NodeGraph::GraphOutputValuePort* IndexValue; // 0x78
-		::NodeGraph::GraphOutputPort* onProcess; // 0x80
-		::NodeGraph::GraphOutputPort* onEnd; // 0x88
-		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::Single>*>* FloatValues; // 0x90
-		::System::Collections::Generic::List_1<::NodeGraph::GraphOutputValuePort*>* IntValue; // 0x98
-		::System::Collections::Generic::List_1<::NodeGraph::GraphOutputValuePort*>* StringValue; // 0xA0
+		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::String*>*>* StringValues; // 0x78
+		::NodeGraph::GraphOutputValuePort* IsLastValue; // 0x80
+		::NodeGraph::GraphOutputValuePort* IndexValue; // 0x88
+		::System::Collections::Generic::List_1<::NodeGraph::GraphOutputValuePort*>* FloatValue; // 0x90
+		::NodeGraph::GraphOutputPort* onEnd; // 0x98
+		::System::Collections::Generic::List_1<::NodeGraph::GraphOutputValuePort*>* IntValue; // 0xA0
 		::System::Int32 _index; // 0xA8
 
 		::System::Void _ctor(::NodeGraph::NodeGraphBase* nodeGraphBase)

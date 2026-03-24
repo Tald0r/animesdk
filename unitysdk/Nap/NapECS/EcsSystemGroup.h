@@ -8,67 +8,67 @@ namespace Nap::NapECS { class EcsWorld; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NAP_NAPECS_ECSSYSTEMGROUP_ADDSYSTEM_OFFSET UNITYSDK_OFFSET(0x1882C590)
-#define NAP_NAPECS_ECSSYSTEMGROUP_AFTERANIMATORFIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x18830A80)
-#define NAP_NAPECS_ECSSYSTEMGROUP_ANIMIKPOSTUPDATE_OFFSET UNITYSDK_OFFSET(0x18833360)
-#define NAP_NAPECS_ECSSYSTEMGROUP_CACHEUPDATESYSTEMINDEX_OFFSET UNITYSDK_OFFSET(0x1882C710)
-#define NAP_NAPECS_ECSSYSTEMGROUP_DESTROY_OFFSET UNITYSDK_OFFSET(0x18834160)
-#define NAP_NAPECS_ECSSYSTEMGROUP_DISPOSE_OFFSET UNITYSDK_OFFSET(0x188341D0)
-#define NAP_NAPECS_ECSSYSTEMGROUP_ENDOFFIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x188322A0)
-#define NAP_NAPECS_ECSSYSTEMGROUP_FIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x1882F8A0)
-#define NAP_NAPECS_ECSSYSTEMGROUP_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x1882E470)
-#define NAP_NAPECS_ECSSYSTEMGROUP_ONPOSTPARTICLESYSTEMUPDATE_OFFSET UNITYSDK_OFFSET(0x18832BE0)
-#define NAP_NAPECS_ECSSYSTEMGROUP_POSTLATEUPDATE_OFFSET UNITYSDK_OFFSET(0x1882F150)
-#define NAP_NAPECS_ECSSYSTEMGROUP_POSTSIMULATIONUPDATE_OFFSET UNITYSDK_OFFSET(0x18833AB0)
-#define NAP_NAPECS_ECSSYSTEMGROUP_RESETFIXEDFRAMERATECONTEXT_OFFSET UNITYSDK_OFFSET(0x1882DA30)
-#define NAP_NAPECS_ECSSYSTEMGROUP_SETFIXEDFRAMERATECONTEXT60_OFFSET UNITYSDK_OFFSET(0x1882D990)
-#define NAP_NAPECS_ECSSYSTEMGROUP_START_OFFSET UNITYSDK_OFFSET(0x1882DAC0)
-#define NAP_NAPECS_ECSSYSTEMGROUP_UPDATE_OFFSET UNITYSDK_OFFSET(0x1882DD20)
-#define NAP_NAPECS_ECSSYSTEMGROUP_WAITFORFIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x18831200)
-#define NAP_NAPECS_ECSSYSTEMGROUP__CACHEUPDATESYSTEMINDEX_G__ADDSYSTEMTOUPDATE_28_0_OFFSET UNITYSDK_OFFSET(0x1882D810)
-#define NAP_NAPECS_ECSSYSTEMGROUP__CACHEUPDATESYSTEMINDEX_G__FILTER60VERSION_28_1_OFFSET UNITYSDK_OFFSET(0x1882D840)
-#define NAP_NAPECS_ECSSYSTEMGROUP__CCTOR_OFFSET UNITYSDK_OFFSET(0x18834490)
-#define NAP_NAPECS_ECSSYSTEMGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x1882C4F0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_ADDSYSTEM_OFFSET UNITYSDK_OFFSET(0x18D8B8B0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_AFTERANIMATORFIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x18D8FDB0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_ANIMIKPOSTUPDATE_OFFSET UNITYSDK_OFFSET(0x18D92690)
+#define NAP_NAPECS_ECSSYSTEMGROUP_CACHEUPDATESYSTEMINDEX_OFFSET UNITYSDK_OFFSET(0x18D8BA30)
+#define NAP_NAPECS_ECSSYSTEMGROUP_DESTROY_OFFSET UNITYSDK_OFFSET(0x18D93490)
+#define NAP_NAPECS_ECSSYSTEMGROUP_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18D93500)
+#define NAP_NAPECS_ECSSYSTEMGROUP_ENDOFFIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x18D915D0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_FIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x18D8EBD0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x18D8D790)
+#define NAP_NAPECS_ECSSYSTEMGROUP_ONPOSTPARTICLESYSTEMUPDATE_OFFSET UNITYSDK_OFFSET(0x18D91F10)
+#define NAP_NAPECS_ECSSYSTEMGROUP_POSTLATEUPDATE_OFFSET UNITYSDK_OFFSET(0x18D8E480)
+#define NAP_NAPECS_ECSSYSTEMGROUP_POSTSIMULATIONUPDATE_OFFSET UNITYSDK_OFFSET(0x18D92DE0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_RESETFIXEDFRAMERATECONTEXT_OFFSET UNITYSDK_OFFSET(0x18D8CD50)
+#define NAP_NAPECS_ECSSYSTEMGROUP_SETFIXEDFRAMERATECONTEXT60_OFFSET UNITYSDK_OFFSET(0x18D8CCB0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_START_OFFSET UNITYSDK_OFFSET(0x18D8CDE0)
+#define NAP_NAPECS_ECSSYSTEMGROUP_UPDATE_OFFSET UNITYSDK_OFFSET(0x18D8D040)
+#define NAP_NAPECS_ECSSYSTEMGROUP_WAITFORFIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0x18D90530)
+#define NAP_NAPECS_ECSSYSTEMGROUP__CACHEUPDATESYSTEMINDEX_G__ADDSYSTEMTOUPDATE_28_0_OFFSET UNITYSDK_OFFSET(0x18D8CB30)
+#define NAP_NAPECS_ECSSYSTEMGROUP__CACHEUPDATESYSTEMINDEX_G__FILTER60VERSION_28_1_OFFSET UNITYSDK_OFFSET(0x18D8CB60)
+#define NAP_NAPECS_ECSSYSTEMGROUP__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D937C0)
+#define NAP_NAPECS_ECSSYSTEMGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x18D8B810)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsSystemGroup_TypeDefinitionIndex = 34167;
+	inline static constexpr unsigned int EcsSystemGroup_TypeDefinitionIndex = 35175;
 
 	class EcsSystemGroup : public ::System::Object
 	{
 	public:
-		static ::System::Boolean* StaticGet_EnableProfile()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsSystemGroup_TypeDefinitionIndex)->GetStaticField(0x80C0);
-		}
 		static ::System::Boolean* StaticGet_EnableIndexedSystemUpdate()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsSystemGroup_TypeDefinitionIndex)->GetStaticField(0x80C1);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsSystemGroup_TypeDefinitionIndex)->GetStaticField(0x8420);
 		}
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Nap::NapECS::EcsSystem*>* systemList; // 0x10
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdateAgain60; // 0x18
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToPostParticleSystemUpdate; // 0x20
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToPostSimulationUpdate; // 0x28
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToAnimIKPostUpdate; // 0x30
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdate; // 0x38
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdate60; // 0x40
+		static ::System::Boolean* StaticGet_EnableProfile()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsSystemGroup_TypeDefinitionIndex)->GetStaticField(0x8421);
+		}
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToPostLateUpdate; // 0x10
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToLateUpdate; // 0x18
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToAfterAnimatorFixedUpdate; // 0x20
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdate60; // 0x28
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdate; // 0x30
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdate60; // 0x38
+		::Nap::NapECS::EcsWorld* worldRef; // 0x40
 		::System::Collections::Generic::List_1<::System::Int32>* systemOrderList; // 0x48
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToAfterAnimatorFixedUpdate; // 0x50
-		::Nap::NapECS::EcsWorld* worldRef; // 0x58
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToEndOfFixedUpdate; // 0x60
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Nap::NapECS::EcsSystem*>* systemList; // 0x50
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToEndOfFixedUpdate; // 0x58
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToUpdate; // 0x60
 		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToEndOfFixedUpdate60; // 0x68
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToPostLateUpdate; // 0x70
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToLateUpdateAgain; // 0x78
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdateAgain; // 0x80
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToUpdate; // 0x88
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdateAgain60; // 0x90
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdate; // 0x98
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToLateUpdate; // 0xA0
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToPostParticleSystemUpdate; // 0x70
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToPostSimulationUpdate; // 0x78
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToAnimIKPostUpdate; // 0x80
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdateAgain; // 0x88
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdateAgain60; // 0x90
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToLateUpdateAgain; // 0x98
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdate; // 0xA0
 		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToWaitForFixedUpdateAgain; // 0xA8
-		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdate60; // 0xB0
+		::Il2CppArray<::Nap::NapECS::EcsSystemUpdateItem>* Systems_ToFixedUpdateAgain60; // 0xB0
 		::System::Int32 contextFixedFrameRate; // 0xB8
-		::System::Int32 lastContextFixedFrameRate; // 0xBC
-		::System::Boolean _hasInit; // 0xC0
+		::System::Boolean _hasInit; // 0xBC
+		::System::Int32 lastContextFixedFrameRate; // 0xC0
 
 		::System::Void _ctor()
 		{

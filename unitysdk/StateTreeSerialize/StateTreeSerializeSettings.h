@@ -5,19 +5,19 @@
 
 namespace Newtonsoft::Json { class JsonSerializerSettings; }
 
-#define STATETREESERIALIZE_STATETREESERIALIZESETTINGS_GET_SETTINGS_OFFSET UNITYSDK_OFFSET(0x1A4B7210)
-#define STATETREESERIALIZE_STATETREESERIALIZESETTINGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A4B7FC0)
+#define STATETREESERIALIZE_STATETREESERIALIZESETTINGS_GET_SETTINGS_OFFSET UNITYSDK_OFFSET(0x1A3C2CC0)
+#define STATETREESERIALIZE_STATETREESERIALIZESETTINGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3C4340)
 
 namespace StateTreeSerialize
 {
-	inline static constexpr unsigned int StateTreeSerializeSettings_TypeDefinitionIndex = 35344;
+	inline static constexpr unsigned int StateTreeSerializeSettings_TypeDefinitionIndex = 36346;
 
 	class StateTreeSerializeSettings : public ::System::Object
 	{
 	public:
 		static ::Unity::Collections::Allocator* StaticGet_DeserializeAllocator()
 		{
-			return (::Unity::Collections::Allocator*)Il2CppClass::FromTypeDefinitionIndex(StateTreeSerializeSettings_TypeDefinitionIndex)->GetStaticField(0x8560);
+			return (::Unity::Collections::Allocator*)Il2CppClass::FromTypeDefinitionIndex(StateTreeSerializeSettings_TypeDefinitionIndex)->GetStaticField(0x88C0);
 		}
 
 		static ::System::Void _cctor()

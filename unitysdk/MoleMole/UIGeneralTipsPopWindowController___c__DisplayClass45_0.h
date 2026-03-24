@@ -7,19 +7,19 @@ namespace MoleMole { class ScrollViewItemWidgetController; }
 namespace MoleMole { class UIGeneralTipsPopWindowController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIGENERALTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS45_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA91E810)
-#define MOLEMOLE_UIGENERALTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS45_0__INITITEMLIST_B__0_OFFSET UNITYSDK_OFFSET(0xA91E820)
-#define MOLEMOLE_UIGENERALTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS45_0__INITITEMLIST_B__1_OFFSET UNITYSDK_OFFSET(0xA91E960)
+#define MOLEMOLE_UIGENERALTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS45_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA946130)
+#define MOLEMOLE_UIGENERALTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS45_0__INITITEMLIST_B__0_OFFSET UNITYSDK_OFFSET(0xA946140)
+#define MOLEMOLE_UIGENERALTIPSPOPWINDOWCONTROLLER___C__DISPLAYCLASS45_0__INITITEMLIST_B__1_OFFSET UNITYSDK_OFFSET(0xA946280)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralTipsPopWindowController___c__DisplayClass45_0_TypeDefinitionIndex = 73927;
+	inline static constexpr unsigned int UIGeneralTipsPopWindowController___c__DisplayClass45_0_TypeDefinitionIndex = 74349;
 
 	class UIGeneralTipsPopWindowController___c__DisplayClass45_0 : public ::System::Object
 	{
 	public:
-		::System::Action_1<::System::Int32>* overrideOnClickItemBtn; // 0x10
-		::MoleMole::UIGeneralTipsPopWindowController* __4__this; // 0x18
+		::MoleMole::UIGeneralTipsPopWindowController* __4__this; // 0x10
+		::System::Action_1<::System::Int32>* overrideOnClickItemBtn; // 0x18
 
 		::System::Void _ctor()
 		{

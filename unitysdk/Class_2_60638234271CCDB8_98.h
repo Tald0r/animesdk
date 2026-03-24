@@ -2,62 +2,64 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_1_EEA0111A28582B57.h"
 
-class Class_2_60DDD9C206686F44;
 class Class_2_777A5D016ADC7368;
-class Class_2_9E3E3CDA608A4F58;
-class Class_2_A8F5ABF31E066ED4;
+class EnvVolumeFogController;
+class VideoLightSync;
+namespace MoleMole { class MonoCinemaCameraConfig; }
+namespace MoleMole { class MonoCinemaCameraLightConfig; }
 namespace MoleMole { class UIControlCollection; }
-namespace UnityEngine { class CanvasGroup; }
+namespace UnityEngine { class Animator; }
+namespace UnityEngine { class Camera; }
 namespace UnityEngine { class GameObject; }
-namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
-namespace UnityEngine::UI { class Text; }
-namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_60638234271CCDB8_98_METHOD_2_52607DE4C357D269_OFFSET UNITYSDK_OFFSET(0x88E3B30)
-#define CLASS_2_60638234271CCDB8_98_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x88E3CA0)
-#define CLASS_2_60638234271CCDB8_98_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x88E37D0)
-#define CLASS_2_60638234271CCDB8_98__CTOR_OFFSET UNITYSDK_OFFSET(0x88E3C90)
+#define CLASS_2_60638234271CCDB8_98_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7202F60)
+#define CLASS_2_60638234271CCDB8_98_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x7202C20)
+#define CLASS_2_60638234271CCDB8_98__CTOR_OFFSET UNITYSDK_OFFSET(0x7202F50)
 
-inline static constexpr unsigned int Class_2_60638234271CCDB8_98_TypeDefinitionIndex = 54331;
+inline static constexpr unsigned int Class_2_60638234271CCDB8_98_TypeDefinitionIndex = 56114;
 
 class Class_2_60638234271CCDB8_98 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x18
-	::UnityEngine::CanvasGroup* Field_2_9; // 0x20
-	::Class_2_A8F5ABF31E066ED4* Field_2_11; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x38
-	::UnityEngine::UI::Text* Field_2_5; // 0x40
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x50
-	::UnityEngine::RectTransform* Field_2_7; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_15; // 0x60
-	::Class_2_9E3E3CDA608A4F58* Field_2_12; // 0x68
-	::UnityEngine::CanvasGroup* Field_2_14; // 0x70
-	::UnityEngine::Transform* Field_2_6; // 0x78
-	::Class_2_9E3E3CDA608A4F58* Field_2_13; // 0x80
-	::Class_2_9E3E3CDA608A4F58* Field_2_8; // 0x88
-	::UnityEngine::GameObject* Field_2_10; // 0x90
+	::UnityEngine::Camera* Field_2_4; // 0x18
+	::UnityEngine::GameObject* Field_2_21; // 0x20
+	::MoleMole::MonoCinemaCameraConfig* Field_2_17; // 0x28
+	::UnityEngine::Animator* Field_2_12; // 0x30
+	::UnityEngine::GameObject* Field_2_11; // 0x38
+	::UnityEngine::Transform* Field_2_15; // 0x40
+	::UnityEngine::GameObject* Field_2_10; // 0x48
+	::UnityEngine::Transform* Field_2_0; // 0x50
+	::UnityEngine::Camera* Field_2_6; // 0x58
+	::UnityEngine::Transform* Field_2_3; // 0x60
+	::EnvVolumeFogController* Field_2_22; // 0x68
+	::UnityEngine::Transform* Field_2_8; // 0x70
+	::UnityEngine::Transform* Field_2_1; // 0x78
+	::UnityEngine::Transform* Field_2_16; // 0x80
+	::UnityEngine::Transform* Field_2_24; // 0x88
+	::UnityEngine::Transform* Field_2_14; // 0x90
+	::MoleMole::MonoCinemaCameraConfig* Field_2_18; // 0x98
+	::UnityEngine::Transform* Field_2_20; // 0xA0
+	::MoleMole::MonoCinemaCameraConfig* Field_2_5; // 0xA8
+	::UnityEngine::Transform* Field_2_2; // 0xB0
+	::MoleMole::MonoCinemaCameraLightConfig* Field_2_13; // 0xB8
+	::UnityEngine::Transform* Field_2_9; // 0xC0
+	::VideoLightSync* Field_2_19; // 0xC8
+	::UnityEngine::Transform* Field_2_23; // 0xD0
+	::UnityEngine::Camera* Field_2_7; // 0xD8
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_60638234271CCDB8_98__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_2_E117CAE09780A0EE(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	::System::Void Method_2_E9A21D244C9D6B36(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_60638234271CCDB8_98_METHOD_2_E117CAE09780A0EE_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_60638234271CCDB8_98_METHOD_2_E9A21D244C9D6B36_OFFSET))(this, a1, a2);
 	}
 
 	::System::Void Method_2_C8903A36ECBA4078(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_60638234271CCDB8_98_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_2_52607DE4C357D269()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_60638234271CCDB8_98_METHOD_2_52607DE4C357D269_OFFSET))(this);
 	}
 };

@@ -6,18 +6,18 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Reflection { class MethodInfo; }
 
-#define MESSAGEPACK_MESSAGEPACKSERIALIZER_COMPILEDMETHODS___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A267740)
-#define MESSAGEPACK_MESSAGEPACKSERIALIZER_COMPILEDMETHODS___C__DISPLAYCLASS13_0__GETMETHOD_B__0_OFFSET UNITYSDK_OFFSET(0x1A267750)
+#define MESSAGEPACK_MESSAGEPACKSERIALIZER_COMPILEDMETHODS___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A82F0C0)
+#define MESSAGEPACK_MESSAGEPACKSERIALIZER_COMPILEDMETHODS___C__DISPLAYCLASS13_0__GETMETHOD_B__0_OFFSET UNITYSDK_OFFSET(0x1A82F0D0)
 
 namespace MessagePack
 {
-	inline static constexpr unsigned int MessagePackSerializer_CompiledMethods___c__DisplayClass13_0_TypeDefinitionIndex = 25579;
+	inline static constexpr unsigned int MessagePackSerializer_CompiledMethods___c__DisplayClass13_0_TypeDefinitionIndex = 27496;
 
 	class MessagePackSerializer_CompiledMethods___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Type*>* parameters; // 0x10
-		::System::String* methodName; // 0x18
+		::System::String* methodName; // 0x10
+		::Il2CppArray<::System::Type*>* parameters; // 0x18
 
 		::System::Void _ctor()
 		{

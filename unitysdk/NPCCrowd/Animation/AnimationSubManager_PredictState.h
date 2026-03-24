@@ -5,7 +5,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_PredictState_TypeDefinitionIndex = 71168;
+	inline static constexpr unsigned int AnimationSubManager_PredictState_TypeDefinitionIndex = 59721;
 
 	struct alignas(4) AnimationSubManager_PredictState
 	{

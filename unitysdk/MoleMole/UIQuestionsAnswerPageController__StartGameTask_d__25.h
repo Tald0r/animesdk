@@ -8,22 +8,22 @@ namespace MoleMole { class UIQuestionsAnswerPageController; }
 namespace MoleMole { class UIQuestionsAnswerPageController___c__DisplayClass25_0; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER__STARTGAMETASK_D__25_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37F1F0)
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER__STARTGAMETASK_D__25_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER__STARTGAMETASK_D__25_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37AD60)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER__STARTGAMETASK_D__25_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerPageController__StartGameTask_d__25_TypeDefinitionIndex = 56221;
+	inline static constexpr unsigned int UIQuestionsAnswerPageController__StartGameTask_d__25_TypeDefinitionIndex = 78276;
 
 	struct alignas(8) UIQuestionsAnswerPageController__StartGameTask_d__25
 	{
-		::MoleMole::UIQuestionsAnswerPageController* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x18
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
 		::MoleMole::UIQuestionsAnswerPageController___c__DisplayClass25_0* __8__1; // 0x20
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x28
-		::System::Boolean restart; // 0x38
-		::System::Int32 __1__state; // 0x3C
-		::System::Int32 stageId; // 0x40
+		::MoleMole::UIQuestionsAnswerPageController* __4__this; // 0x28
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x30
+		::System::Int32 stageId; // 0x38
+		::System::Boolean restart; // 0x3C
+		::System::Int32 __1__state; // 0x40
 
 		::System::Void MoveNext()
 		{

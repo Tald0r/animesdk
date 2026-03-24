@@ -9,23 +9,23 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_5FE47F3D2BA6E8D1_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0xB3417A0)
-#define CLASS_2_5FE47F3D2BA6E8D1_METHOD_2_1D05C371EBD1713E_OFFSET UNITYSDK_OFFSET(0xB341590)
-#define CLASS_2_5FE47F3D2BA6E8D1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB341850)
-#define CLASS_2_5FE47F3D2BA6E8D1__CTOR_OFFSET UNITYSDK_OFFSET(0xB341840)
+#define CLASS_2_5FE47F3D2BA6E8D1_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x9235D10)
+#define CLASS_2_5FE47F3D2BA6E8D1_METHOD_2_1D05C371EBD1713E_OFFSET UNITYSDK_OFFSET(0x9235B00)
+#define CLASS_2_5FE47F3D2BA6E8D1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9235DC0)
+#define CLASS_2_5FE47F3D2BA6E8D1__CTOR_OFFSET UNITYSDK_OFFSET(0x9235DB0)
 
-inline static constexpr unsigned int Class_2_5FE47F3D2BA6E8D1_TypeDefinitionIndex = 76140;
+inline static constexpr unsigned int Class_2_5FE47F3D2BA6E8D1_TypeDefinitionIndex = 53542;
 
 class Class_2_5FE47F3D2BA6E8D1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x18
-	::Class_2_9E3E3CDA608A4F58* Field_2_6; // 0x20
-	::UnityEngine::Transform* Field_2_3; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x38
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x18
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x30
+	::Class_2_9E3E3CDA608A4F58* Field_2_6; // 0x38
+	::UnityEngine::Transform* Field_2_3; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x48
 
 	::System::Void _ctor()
 	{

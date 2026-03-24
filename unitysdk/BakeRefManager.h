@@ -5,9 +5,9 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define BAKEREFMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x918CEE0)
+#define BAKEREFMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0xD07AE50)
 
-inline static constexpr unsigned int BakeRefManager_TypeDefinitionIndex = 70574;
+inline static constexpr unsigned int BakeRefManager_TypeDefinitionIndex = 38644;
 
 class BakeRefManager : public ::UnityEngine::MonoBehaviour
 {

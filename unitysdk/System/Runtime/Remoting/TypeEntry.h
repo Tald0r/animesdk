@@ -4,7 +4,7 @@
 
 namespace System { class String; }
 
-#define SYSTEM_RUNTIME_REMOTING_TYPEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x188B6600)
+#define SYSTEM_RUNTIME_REMOTING_TYPEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x18DAEF50)
 
 namespace System::Runtime::Remoting
 {
@@ -13,8 +13,8 @@ namespace System::Runtime::Remoting
 	class TypeEntry : public ::System::Object
 	{
 	public:
-		::System::String* type_name; // 0x10
-		::System::String* assembly_name; // 0x18
+		::System::String* assembly_name; // 0x10
+		::System::String* type_name; // 0x18
 
 		::System::Void _ctor()
 		{

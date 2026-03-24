@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardPureFunctionNode_3.h"
 #include "unitysdk/MoleMole/FlowCanvas/Nodes/ChessboardCoordinateTransform_TransformType.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCOORDINATETRANSFORM_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCD7C70)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCOORDINATETRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xCCD7CE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCOORDINATETRANSFORM_INVOKE_OFFSET UNITYSDK_OFFSET(0xA007720)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCOORDINATETRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xA007790)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardCoordinateTransform_TypeDefinitionIndex = 72963;
+	inline static constexpr unsigned int ChessboardCoordinateTransform_TypeDefinitionIndex = 75611;
 
 	class ChessboardCoordinateTransform : public ::MoleMole::FlowCanvas::ChessboardPureFunctionNode_3<::System::Int32, ::System::Int32, ::MoleMole::FlowCanvas::Nodes::ChessboardCoordinateTransform_TransformType>
 	{

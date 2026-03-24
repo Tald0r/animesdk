@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIURBANMAPPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA08AFC0)
-#define MOLEMOLE_UIURBANMAPPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA08B000)
-#define MOLEMOLE_UIURBANMAPPAGECONTROLLER___C__ONUICLOSE_B__14_0_OFFSET UNITYSDK_OFFSET(0xA08B010)
+#define MOLEMOLE_UIURBANMAPPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x971DFC0)
+#define MOLEMOLE_UIURBANMAPPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x971E000)
+#define MOLEMOLE_UIURBANMAPPAGECONTROLLER___C__ONUICLOSE_B__14_0_OFFSET UNITYSDK_OFFSET(0x971E010)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapPageController___c_TypeDefinitionIndex = 76656;
+	inline static constexpr unsigned int UIUrbanMapPageController___c_TypeDefinitionIndex = 76766;
 
 	class UIUrbanMapPageController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIUrbanMapPageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIUrbanMapPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F180);
-		}
 		static ::System::Action** StaticGet___9__14_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F188);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapPageController___c_TypeDefinitionIndex)->GetStaticField(0x41E20);
+		}
+		static ::MoleMole::UIUrbanMapPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIUrbanMapPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapPageController___c_TypeDefinitionIndex)->GetStaticField(0x41E28);
 		}
 
 		static ::System::Void _cctor()

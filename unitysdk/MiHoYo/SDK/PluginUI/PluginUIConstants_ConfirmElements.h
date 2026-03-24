@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int PluginUIConstants_ConfirmElements_TypeDefinitionIndex = 18800;
+	inline static constexpr unsigned int PluginUIConstants_ConfirmElements_TypeDefinitionIndex = 19399;
 
 	class PluginUIConstants_ConfirmElements : public ::System::Object
 	{

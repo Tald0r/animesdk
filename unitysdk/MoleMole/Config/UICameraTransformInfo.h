@@ -3,17 +3,17 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MOLEMOLE_CONFIG_UICAMERATRANSFORMINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x9715D70)
+#define MOLEMOLE_CONFIG_UICAMERATRANSFORMINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xB0A4F20)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UICameraTransformInfo_TypeDefinitionIndex = 77171;
+	inline static constexpr unsigned int UICameraTransformInfo_TypeDefinitionIndex = 48076;
 
 	class UICameraTransformInfo : public ::System::Object
 	{
 	public:
-		::UnityEngine::Vector3 cameraEulerAngles; // 0x10
-		::UnityEngine::Vector3 cameraPos; // 0x1C
+		::UnityEngine::Vector3 cameraPos; // 0x10
+		::UnityEngine::Vector3 cameraEulerAngles; // 0x1C
 
 		::System::Void _ctor()
 		{

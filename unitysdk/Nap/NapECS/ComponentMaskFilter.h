@@ -9,30 +9,30 @@
 namespace Nap::NapECS { class EcsWorld; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NAP_NAPECS_COMPONENTMASKFILTER_ALL_OFFSET UNITYSDK_OFFSET(0x18818B90)
-#define NAP_NAPECS_COMPONENTMASKFILTER_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x188176C0)
-#define NAP_NAPECS_COMPONENTMASKFILTER_GET_BUFFER_OFFSET UNITYSDK_OFFSET(0x18817420)
-#define NAP_NAPECS_COMPONENTMASKFILTER_GET_CACHEMASK_OFFSET UNITYSDK_OFFSET(0x18817360)
-#define NAP_NAPECS_COMPONENTMASKFILTER_ISPASS_OFFSET UNITYSDK_OFFSET(0x18817860)
-#define NAP_NAPECS_COMPONENTMASKFILTER_ISVALID_OFFSET UNITYSDK_OFFSET(0x188185B0)
-#define NAP_NAPECS_COMPONENTMASKFILTER_MARKCACHEDIRTY_OFFSET UNITYSDK_OFFSET(0x188174E0)
-#define NAP_NAPECS_COMPONENTMASKFILTER_RESETCACHE_OFFSET UNITYSDK_OFFSET(0x18817590)
-#define NAP_NAPECS_COMPONENTMASKFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18818EA0)
+#define NAP_NAPECS_COMPONENTMASKFILTER_ALL_OFFSET UNITYSDK_OFFSET(0x18D77EE0)
+#define NAP_NAPECS_COMPONENTMASKFILTER_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x18D76A10)
+#define NAP_NAPECS_COMPONENTMASKFILTER_GET_BUFFER_OFFSET UNITYSDK_OFFSET(0x18D76770)
+#define NAP_NAPECS_COMPONENTMASKFILTER_GET_CACHEMASK_OFFSET UNITYSDK_OFFSET(0x18D766B0)
+#define NAP_NAPECS_COMPONENTMASKFILTER_ISPASS_OFFSET UNITYSDK_OFFSET(0x18D76BB0)
+#define NAP_NAPECS_COMPONENTMASKFILTER_ISVALID_OFFSET UNITYSDK_OFFSET(0x18D77900)
+#define NAP_NAPECS_COMPONENTMASKFILTER_MARKCACHEDIRTY_OFFSET UNITYSDK_OFFSET(0x18D76830)
+#define NAP_NAPECS_COMPONENTMASKFILTER_RESETCACHE_OFFSET UNITYSDK_OFFSET(0x18D768E0)
+#define NAP_NAPECS_COMPONENTMASKFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18D781F0)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int ComponentMaskFilter_TypeDefinitionIndex = 34206;
+	inline static constexpr unsigned int ComponentMaskFilter_TypeDefinitionIndex = 35157;
 
 	class ComponentMaskFilter : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::Nap::NapECS::ComponentMask>* _buffer; // 0x10
-		::System::Collections::Generic::List_1<::Nap::NapECS::ComponentMask>* _cachedComponentMask; // 0x18
-		::System::Collections::Generic::List_1<::Nap::NapECS::ComponentMaskFilter_ComplexMask>* _complexMasks; // 0x20
-		::Nap::NapECS::EcsWorld* _cachedWorld; // 0x28
-		::Nap::NapECS::ComponentMask _allMask; // 0x30
-		::Nap::NapECS::ComponentMask _noneMask; // 0x50
-		::System::Nullable_1<::System::UInt32> _cachedVersion; // 0x70
+		::System::Collections::Generic::List_1<::Nap::NapECS::ComponentMaskFilter_ComplexMask>* _complexMasks; // 0x10
+		::Nap::NapECS::EcsWorld* _cachedWorld; // 0x18
+		::System::Collections::Generic::List_1<::Nap::NapECS::ComponentMask>* _buffer; // 0x20
+		::System::Collections::Generic::List_1<::Nap::NapECS::ComponentMask>* _cachedComponentMask; // 0x28
+		::Nap::NapECS::ComponentMask _noneMask; // 0x30
+		::System::Nullable_1<::System::UInt32> _cachedVersion; // 0x50
+		::Nap::NapECS::ComponentMask _allMask; // 0x58
 
 		::System::Void _ctor()
 		{

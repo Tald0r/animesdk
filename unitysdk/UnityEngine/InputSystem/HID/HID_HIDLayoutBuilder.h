@@ -7,12 +7,12 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace UnityEngine::InputSystem::Layouts { class InputControlLayout; }
 
-#define UNITYENGINE_INPUTSYSTEM_HID_HID_HIDLAYOUTBUILDER_BUILD_OFFSET UNITYSDK_OFFSET(0x1AB7EA20)
-#define UNITYENGINE_INPUTSYSTEM_HID_HID_HIDLAYOUTBUILDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB80280)
+#define UNITYENGINE_INPUTSYSTEM_HID_HID_HIDLAYOUTBUILDER_BUILD_OFFSET UNITYSDK_OFFSET(0x1B19E7D0)
+#define UNITYENGINE_INPUTSYSTEM_HID_HID_HIDLAYOUTBUILDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1A0030)
 
 namespace UnityEngine::InputSystem::HID
 {
-	inline static constexpr unsigned int HID_HIDLayoutBuilder_TypeDefinitionIndex = 27673;
+	inline static constexpr unsigned int HID_HIDLayoutBuilder_TypeDefinitionIndex = 28613;
 
 	class HID_HIDLayoutBuilder : public ::System::Object
 	{

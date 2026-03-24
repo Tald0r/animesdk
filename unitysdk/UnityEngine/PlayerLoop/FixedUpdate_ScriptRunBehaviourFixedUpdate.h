@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int FixedUpdate_ScriptRunBehaviourFixedUpdate_TypeDefinitionIndex = 5568;
+	inline static constexpr unsigned int FixedUpdate_ScriptRunBehaviourFixedUpdate_TypeDefinitionIndex = 5571;
 
 	struct alignas(1) FixedUpdate_ScriptRunBehaviourFixedUpdate
 	{

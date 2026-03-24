@@ -1,22 +1,22 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_5887222B9AE38D34_4.h"
+#include "unitysdk/Struct_2_5887222B9AE38D34_2.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
 namespace System::Net { class IPEndPoint; }
 namespace System::Net { class ServicePoint; }
 
-#define CLASS_2_6CAC28ACDD58FF63_CLASS_1_6927FD16C51719CF_METHOD_1_26EAB5A2D364D501_OFFSET UNITYSDK_OFFSET(0x8901440)
-#define CLASS_2_6CAC28ACDD58FF63_CLASS_1_6927FD16C51719CF__CTOR_OFFSET UNITYSDK_OFFSET(0x8901430)
+#define CLASS_2_6CAC28ACDD58FF63_CLASS_1_6927FD16C51719CF_METHOD_1_26EAB5A2D364D501_OFFSET UNITYSDK_OFFSET(0xD3FEE50)
+#define CLASS_2_6CAC28ACDD58FF63_CLASS_1_6927FD16C51719CF__CTOR_OFFSET UNITYSDK_OFFSET(0xD3FEE40)
 
-inline static constexpr unsigned int Class_2_6CAC28ACDD58FF63_Class_1_6927FD16C51719CF_TypeDefinitionIndex = 77621;
+inline static constexpr unsigned int Class_2_6CAC28ACDD58FF63_Class_1_6927FD16C51719CF_TypeDefinitionIndex = 49765;
 
 class Class_2_6CAC28ACDD58FF63_Class_1_6927FD16C51719CF : public ::System::Object
 {
 public:
-	::System::String* Field_1_1; // 0x10
-	::Struct_2_5887222B9AE38D34_4 Field_1_0; // 0x18
+	::Struct_2_5887222B9AE38D34_2 Field_1_0; // 0x10
+	::System::String* Field_1_1; // 0x30
 
 	::System::Void _ctor()
 	{

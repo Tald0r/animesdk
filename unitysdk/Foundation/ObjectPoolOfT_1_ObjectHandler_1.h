@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ObjectPoolOfT_1_ObjectHandler_1_TypeDefinitionIndex = 8019;
+	inline static constexpr unsigned int ObjectPoolOfT_1_ObjectHandler_1_TypeDefinitionIndex = 7872;
 
 	template <typename T, typename T>
 	struct ObjectPoolOfT_1_ObjectHandler_1

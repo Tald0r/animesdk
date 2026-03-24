@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FuncSwitchType_TypeDefinitionIndex = 40798;
+	inline static constexpr unsigned int FuncSwitchType_TypeDefinitionIndex = 74893;
 
 	enum class FuncSwitchType : ::System::Int32
 	{

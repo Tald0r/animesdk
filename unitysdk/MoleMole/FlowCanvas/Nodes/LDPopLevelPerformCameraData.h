@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPLEVELPERFORMCAMERADATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xE477E00)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPLEVELPERFORMCAMERADATA__CTOR_OFFSET UNITYSDK_OFFSET(0xE477EB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPLEVELPERFORMCAMERADATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FFD70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPLEVELPERFORMCAMERADATA__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FFE20)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDPopLevelPerformCameraData_TypeDefinitionIndex = 58388;
+	inline static constexpr unsigned int LDPopLevelPerformCameraData_TypeDefinitionIndex = 64021;
 
 	class LDPopLevelPerformCameraData : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::String*>
 	{

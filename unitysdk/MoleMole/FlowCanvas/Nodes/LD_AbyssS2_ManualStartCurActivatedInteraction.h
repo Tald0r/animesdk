@@ -7,19 +7,19 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTCURACTIVATEDINTERACTION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE0FE670)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTCURACTIVATEDINTERACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xE0FE7A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTCURACTIVATEDINTERACTION__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xE0FE7C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTCURACTIVATEDINTERACTION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7A63020)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTCURACTIVATEDINTERACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x7A63150)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTCURACTIVATEDINTERACTION__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x7A63170)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_ManualStartCurActivatedInteraction_TypeDefinitionIndex = 70111;
+	inline static constexpr unsigned int LD_AbyssS2_ManualStartCurActivatedInteraction_TypeDefinitionIndex = 72022;
 
 	class LD_AbyssS2_ManualStartCurActivatedInteraction : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _output; // 0xA8
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* _interactionObject; // 0xB0
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* _interactionObject; // 0xA8
+		::FlowCanvas::FlowOutput* _output; // 0xB0
 		::FlowCanvas::FlowOutput* _error; // 0xB8
 
 		::System::Void _ctor()

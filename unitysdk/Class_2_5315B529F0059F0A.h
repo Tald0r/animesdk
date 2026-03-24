@@ -1,17 +1,17 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_F9FBCC956DFCF137_2.h"
+#include "unitysdk/Class_1_F9FBCC956DFCF137_1.h"
 
 class Class_1_F50B5EAC0B6702FB;
 namespace MoleMole::Config { class ConfigUIStartFunctionNode; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_5315B529F0059F0A_METHOD_2_2DA8F7A684C1DC34_OFFSET UNITYSDK_OFFSET(0x5E71530)
-#define CLASS_2_5315B529F0059F0A__CTOR_OFFSET UNITYSDK_OFFSET(0x5E714E0)
+#define CLASS_2_5315B529F0059F0A_METHOD_2_2DA8F7A684C1DC34_OFFSET UNITYSDK_OFFSET(0xB4BC230)
+#define CLASS_2_5315B529F0059F0A__CTOR_OFFSET UNITYSDK_OFFSET(0xB4BC1E0)
 
-inline static constexpr unsigned int Class_2_5315B529F0059F0A_TypeDefinitionIndex = 40522;
+inline static constexpr unsigned int Class_2_5315B529F0059F0A_TypeDefinitionIndex = 50815;
 
-class Class_2_5315B529F0059F0A : public ::Class_1_F9FBCC956DFCF137_2
+class Class_2_5315B529F0059F0A : public ::Class_1_F9FBCC956DFCF137_1
 {
 public:
 	// static const ::System::Int32 Field_2_0 = 0xFFFFFFFF; // 0x0

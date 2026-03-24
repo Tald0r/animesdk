@@ -5,12 +5,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDTARGETAREASOURCE_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x6E16CA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDTARGETAREASOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0x6E16D70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDTARGETAREASOURCE_MOVENEXT_OFFSET UNITYSDK_OFFSET(0xC266210)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDTARGETAREASOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2662E0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDDTargetAreaSource_TypeDefinitionIndex = 69275;
+	inline static constexpr unsigned int LDDTargetAreaSource_TypeDefinitionIndex = 80335;
 
 	class LDDTargetAreaSource : public ::System::Object
 	{

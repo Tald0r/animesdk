@@ -6,7 +6,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int LightVolumeData_TypeDefinitionIndex = 5915;
+	inline static constexpr unsigned int LightVolumeData_TypeDefinitionIndex = 5917;
 
 	struct alignas(4) LightVolumeData
 	{

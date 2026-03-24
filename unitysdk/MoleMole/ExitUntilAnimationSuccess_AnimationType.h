@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ExitUntilAnimationSuccess_AnimationType_TypeDefinitionIndex = 36829;
+	inline static constexpr unsigned int ExitUntilAnimationSuccess_AnimationType_TypeDefinitionIndex = 43411;
 
 	enum class ExitUntilAnimationSuccess_AnimationType : ::System::Int32
 	{
-		Normal = 0,
 		LoopCheckFirst = 1,
+		Normal = 0,
 		LoopCheckAlways = 2,
 	};
 }

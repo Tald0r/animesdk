@@ -3,7 +3,7 @@
 
 namespace DG::Tweening::Core
 {
-	inline static constexpr unsigned int DOTweenSettings_SettingsLocation_TypeDefinitionIndex = 24160;
+	inline static constexpr unsigned int DOTweenSettings_SettingsLocation_TypeDefinitionIndex = 24984;
 
 	enum class DOTweenSettings_SettingsLocation : ::System::Int32
 	{

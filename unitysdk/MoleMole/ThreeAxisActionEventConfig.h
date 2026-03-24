@@ -4,12 +4,12 @@
 #include "unitysdk/MoleMole/BaseInputActionEventConfig.h"
 #include "unitysdk/MoleMole/LogicAxis3DInputType.h"
 
-#define MOLEMOLE_THREEAXISACTIONEVENTCONFIG_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x7F28EF0)
-#define MOLEMOLE_THREEAXISACTIONEVENTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7F28F00)
+#define MOLEMOLE_THREEAXISACTIONEVENTCONFIG_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x8B7B700)
+#define MOLEMOLE_THREEAXISACTIONEVENTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8B7B710)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ThreeAxisActionEventConfig_TypeDefinitionIndex = 39011;
+	inline static constexpr unsigned int ThreeAxisActionEventConfig_TypeDefinitionIndex = 58027;
 
 	class ThreeAxisActionEventConfig : public ::MoleMole::BaseInputActionEventConfig
 	{

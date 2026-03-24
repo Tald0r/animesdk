@@ -2,14 +2,14 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_689;
+class Class_2_208CC9941471731A_442;
 
-#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAC33EC0)
-#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__GETDEFAULTLEVELID_B__1_OFFSET UNITYSDK_OFFSET(0xAC33ED0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCA833E0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__GETDEFAULTLEVELID_B__1_OFFSET UNITYSDK_OFFSET(0xCA833F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController___c__DisplayClass39_1_TypeDefinitionIndex = 43392;
+	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController___c__DisplayClass39_1_TypeDefinitionIndex = 62721;
 
 	class UIRidusGotBooSelectLevelPageController___c__DisplayClass39_1 : public ::System::Object
 	{
@@ -21,9 +21,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__CTOR_OFFSET))(this);
 		}
 
-		::System::Boolean _GetDefaultLevelID_b__1(::Class_2_208CC9941471731A_689* x)
+		::System::Boolean _GetDefaultLevelID_b__1(::Class_2_208CC9941471731A_442* x)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_689*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__GETDEFAULTLEVELID_B__1_OFFSET))(this, x);
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_442*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS39_1__GETDEFAULTLEVELID_B__1_OFFSET))(this, x);
 		}
 	};
 }

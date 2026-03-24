@@ -3,11 +3,10 @@
 #include "unitysdk/UnityEngine/Bounds.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define SUNSHADOWPVSBAKERANGE_GETAABB_OFFSET UNITYSDK_OFFSET(0x15F5CE20)
-#define SUNSHADOWPVSBAKERANGE_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0x15F5CF50)
-#define SUNSHADOWPVSBAKERANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x15F5D080)
+#define SUNSHADOWPVSBAKERANGE_GETAABB_OFFSET UNITYSDK_OFFSET(0x15AC0220)
+#define SUNSHADOWPVSBAKERANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x15AC0350)
 
-inline static constexpr unsigned int SunShadowPVSBakeRange_TypeDefinitionIndex = 68228;
+inline static constexpr unsigned int SunShadowPVSBakeRange_TypeDefinitionIndex = 55714;
 
 class SunShadowPVSBakeRange : public ::UnityEngine::MonoBehaviour
 {
@@ -20,10 +19,5 @@ public:
 	::UnityEngine::Bounds GetAABB()
 	{
 		return ((::UnityEngine::Bounds(*)(::PVOID))((::PBYTE)hIl2Cpp + SUNSHADOWPVSBAKERANGE_GETAABB_OFFSET))(this);
-	}
-
-	::System::Void OnDrawGizmos()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SUNSHADOWPVSBAKERANGE_ONDRAWGIZMOS_OFFSET))(this);
 	}
 };

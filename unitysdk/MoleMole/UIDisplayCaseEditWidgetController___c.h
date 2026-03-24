@@ -3,38 +3,38 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_D890F2F8C9260D13;
-class Class_2_208CC9941471731A_822;
+class Class_2_208CC9941471731A_728;
 namespace System { class Action; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA272F30)
-#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA272F70)
-#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__INITSCROLLVIEW_B__35_0_OFFSET UNITYSDK_OFFSET(0xA272FD0)
-#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__ONUIINIT_B__15_2_OFFSET UNITYSDK_OFFSET(0xA272F80)
-#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__TRYSAVE_B__40_0_OFFSET UNITYSDK_OFFSET(0xA2730A0)
+#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x90F8EF0)
+#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x90F8F30)
+#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__INITSCROLLVIEW_B__35_0_OFFSET UNITYSDK_OFFSET(0x90F8F90)
+#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__ONUIINIT_B__15_2_OFFSET UNITYSDK_OFFSET(0x90F8F40)
+#define MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__TRYSAVE_B__40_0_OFFSET UNITYSDK_OFFSET(0x90F9060)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex = 54853;
+	inline static constexpr unsigned int UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex = 74247;
 
 	class UIDisplayCaseEditWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIDisplayCaseEditWidgetController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIDisplayCaseEditWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D710);
-		}
 		static ::System::Comparison_1<::Class_1_D890F2F8C9260D13*>** StaticGet___9__35_0()
 		{
-			return (::System::Comparison_1<::Class_1_D890F2F8C9260D13*>**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D718);
+			return (::System::Comparison_1<::Class_1_D890F2F8C9260D13*>**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40670);
 		}
 		static ::System::Action** StaticGet___9__40_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D720);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40678);
 		}
-		static ::System::Comparison_1<::Class_2_208CC9941471731A_822*>** StaticGet___9__15_2()
+		static ::MoleMole::UIDisplayCaseEditWidgetController___c** StaticGet___9()
 		{
-			return (::System::Comparison_1<::Class_2_208CC9941471731A_822*>**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D728);
+			return (::MoleMole::UIDisplayCaseEditWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40680);
+		}
+		static ::System::Comparison_1<::Class_2_208CC9941471731A_728*>** StaticGet___9__15_2()
+		{
+			return (::System::Comparison_1<::Class_2_208CC9941471731A_728*>**)Il2CppClass::FromTypeDefinitionIndex(UIDisplayCaseEditWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40688);
 		}
 
 		static ::System::Void _cctor()
@@ -47,9 +47,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _OnUIInit_b__15_2(::Class_2_208CC9941471731A_822* i, ::Class_2_208CC9941471731A_822* j)
+		::System::Int32 _OnUIInit_b__15_2(::Class_2_208CC9941471731A_728* i, ::Class_2_208CC9941471731A_728* j)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_822*, ::Class_2_208CC9941471731A_822*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__ONUIINIT_B__15_2_OFFSET))(this, i, j);
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_728*, ::Class_2_208CC9941471731A_728*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIDISPLAYCASEEDITWIDGETCONTROLLER___C__ONUIINIT_B__15_2_OFFSET))(this, i, j);
 		}
 
 		::System::Int32 _InitScrollView_b__35_0(::Class_1_D890F2F8C9260D13* a, ::Class_1_D890F2F8C9260D13* b)

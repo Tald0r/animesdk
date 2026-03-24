@@ -8,27 +8,22 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Sprite; }
 
-#define CLASS_1_0C791B68CB2A5BF5_METHOD_1_2FB9DA1F70998790_OFFSET UNITYSDK_OFFSET(0xB94F6C0)
-#define CLASS_1_0C791B68CB2A5BF5_METHOD_1_5558FFC4A45750C6_OFFSET UNITYSDK_OFFSET(0xB94F640)
-#define CLASS_1_0C791B68CB2A5BF5_METHOD_1_D799715F2EF979EA_OFFSET UNITYSDK_OFFSET(0xB94FAC0)
-#define CLASS_1_0C791B68CB2A5BF5__CTOR_OFFSET UNITYSDK_OFFSET(0xB94F540)
+#define CLASS_1_0C791B68CB2A5BF5_METHOD_1_2FB9DA1F70998790_OFFSET UNITYSDK_OFFSET(0xC4C4E70)
+#define CLASS_1_0C791B68CB2A5BF5_METHOD_1_5558FFC4A45750C6_OFFSET UNITYSDK_OFFSET(0xC4C5260)
+#define CLASS_1_0C791B68CB2A5BF5_METHOD_1_D799715F2EF979EA_OFFSET UNITYSDK_OFFSET(0xC4C4BC0)
+#define CLASS_1_0C791B68CB2A5BF5__CTOR_OFFSET UNITYSDK_OFFSET(0xC4C4AC0)
 
-inline static constexpr unsigned int Class_1_0C791B68CB2A5BF5_TypeDefinitionIndex = 69904;
+inline static constexpr unsigned int Class_1_0C791B68CB2A5BF5_TypeDefinitionIndex = 78655;
 
 class Class_1_0C791B68CB2A5BF5 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>* Field_1_0; // 0x10
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Sprite*>* Field_1_1; // 0x18
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Sprite*>* Field_1_1; // 0x10
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>* Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_0C791B68CB2A5BF5__CTOR_OFFSET))(this);
-	}
-
-	::System::Void Method_1_5558FFC4A45750C6(::MoleMole::TextureSheetData* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::MoleMole::TextureSheetData*))((::PBYTE)hIl2Cpp + CLASS_1_0C791B68CB2A5BF5_METHOD_1_5558FFC4A45750C6_OFFSET))(this, a1);
 	}
 
 	::System::Void Method_1_D799715F2EF979EA()
@@ -39,5 +34,10 @@ public:
 	::UnityEngine::Sprite* Method_1_2FB9DA1F70998790(::System::String* a1)
 	{
 		return ((::UnityEngine::Sprite*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_0C791B68CB2A5BF5_METHOD_1_2FB9DA1F70998790_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_5558FFC4A45750C6(::MoleMole::TextureSheetData* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::TextureSheetData*))((::PBYTE)hIl2Cpp + CLASS_1_0C791B68CB2A5BF5_METHOD_1_5558FFC4A45750C6_OFFSET))(this, a1);
 	}
 };

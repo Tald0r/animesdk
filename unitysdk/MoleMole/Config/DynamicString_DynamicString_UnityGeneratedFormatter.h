@@ -9,26 +9,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9712100)
-#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9712110)
-#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9712400)
-#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9712640)
-#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9712600)
+#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB0A1230)
+#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB0A1240)
+#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB0A1530)
+#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB0A1770)
+#define MOLEMOLE_CONFIG_DYNAMICSTRING_DYNAMICSTRING_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB0A1730)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int DynamicString_DynamicString_UnityGeneratedFormatter_TypeDefinitionIndex = 56995;
+	inline static constexpr unsigned int DynamicString_DynamicString_UnityGeneratedFormatter_TypeDefinitionIndex = 51898;
 
 	class DynamicString_DynamicString_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::DynamicString*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(DynamicString_DynamicString_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C490);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DynamicString_DynamicString_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C498);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DynamicString_DynamicString_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DB60);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(DynamicString_DynamicString_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DB68);
 		}
 
 		::System::Void _ctor()

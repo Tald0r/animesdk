@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class IConfigChangeBGVideo; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDBGVIDEO__CTOR_OFFSET UNITYSDK_OFFSET(0x624E530)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDBGVIDEO__CTOR_OFFSET UNITYSDK_OFFSET(0xC23B8A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboardBGVideo_TypeDefinitionIndex = 59708;
+	inline static constexpr unsigned int ConfigHollowChessboardBGVideo_TypeDefinitionIndex = 57713;
 
 	class ConfigHollowChessboardBGVideo : public ::System::Object
 	{

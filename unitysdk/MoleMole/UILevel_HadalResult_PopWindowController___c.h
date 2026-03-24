@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UILEVEL_HADALRESULT_POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x929DD00)
-#define MOLEMOLE_UILEVEL_HADALRESULT_POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x929DD40)
-#define MOLEMOLE_UILEVEL_HADALRESULT_POPWINDOWCONTROLLER___C__ONPOPSHOWED_B__10_0_OFFSET UNITYSDK_OFFSET(0x929DD50)
+#define MOLEMOLE_UILEVEL_HADALRESULT_POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAF66B10)
+#define MOLEMOLE_UILEVEL_HADALRESULT_POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAF66B50)
+#define MOLEMOLE_UILEVEL_HADALRESULT_POPWINDOWCONTROLLER___C__ONPOPSHOWED_B__10_0_OFFSET UNITYSDK_OFFSET(0xAF66B60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILevel_HadalResult_PopWindowController___c_TypeDefinitionIndex = 61431;
+	inline static constexpr unsigned int UILevel_HadalResult_PopWindowController___c_TypeDefinitionIndex = 61233;
 
 	class UILevel_HadalResult_PopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UILevel_HadalResult_PopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UILevel_HadalResult_PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UILevel_HadalResult_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x36C60);
-		}
 		static ::System::Action** StaticGet___9__10_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UILevel_HadalResult_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x36C68);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UILevel_HadalResult_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39900);
+		}
+		static ::MoleMole::UILevel_HadalResult_PopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UILevel_HadalResult_PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UILevel_HadalResult_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39908);
 		}
 
 		static ::System::Void _cctor()

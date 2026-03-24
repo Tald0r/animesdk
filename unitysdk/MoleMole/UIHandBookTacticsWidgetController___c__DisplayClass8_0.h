@@ -6,18 +6,18 @@
 namespace MoleMole { class UIHandBookTacticsWidgetController; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIHANDBOOKTACTICSWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x809B590)
-#define MOLEMOLE_UIHANDBOOKTACTICSWIDGETCONTROLLER___C__DISPLAYCLASS8_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x809B5A0)
+#define MOLEMOLE_UIHANDBOOKTACTICSWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC79770)
+#define MOLEMOLE_UIHANDBOOKTACTICSWIDGETCONTROLLER___C__DISPLAYCLASS8_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xAC79780)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookTacticsWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 62509;
+	inline static constexpr unsigned int UIHandBookTacticsWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 58992;
 
 	class UIHandBookTacticsWidgetController___c__DisplayClass8_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHandBookTacticsWidgetController* __4__this; // 0x10
-		::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::String*> kv; // 0x18
+		::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::String*> kv; // 0x10
+		::MoleMole::UIHandBookTacticsWidgetController* __4__this; // 0x20
 
 		::System::Void _ctor()
 		{

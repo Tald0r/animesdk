@@ -6,20 +6,20 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-#define CLASS_3_F2524388ACF07413_METHOD_3_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0xA694130)
-#define CLASS_3_F2524388ACF07413_METHOD_3_7D201B4343E63821_OFFSET UNITYSDK_OFFSET(0xA694140)
-#define CLASS_3_F2524388ACF07413_METHOD_3_8D61BE16C9463302_OFFSET UNITYSDK_OFFSET(0xA6941A0)
-#define CLASS_3_F2524388ACF07413_METHOD_3_D0CD9A971CA3B1CF_OFFSET UNITYSDK_OFFSET(0xA6947E0)
-#define CLASS_3_F2524388ACF07413__CTOR_OFFSET UNITYSDK_OFFSET(0xA694150)
+#define CLASS_3_F2524388ACF07413_METHOD_3_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x63896D0)
+#define CLASS_3_F2524388ACF07413_METHOD_3_7D201B4343E63821_OFFSET UNITYSDK_OFFSET(0x63896E0)
+#define CLASS_3_F2524388ACF07413_METHOD_3_8D61BE16C9463302_OFFSET UNITYSDK_OFFSET(0x6389740)
+#define CLASS_3_F2524388ACF07413_METHOD_3_D0CD9A971CA3B1CF_OFFSET UNITYSDK_OFFSET(0x6389D80)
+#define CLASS_3_F2524388ACF07413__CTOR_OFFSET UNITYSDK_OFFSET(0x63896F0)
 
-inline static constexpr unsigned int Class_3_F2524388ACF07413_TypeDefinitionIndex = 43102;
+inline static constexpr unsigned int Class_3_F2524388ACF07413_TypeDefinitionIndex = 37657;
 
 class Class_3_F2524388ACF07413 : public ::Class_2_2E40794F1F3D2434
 {
 public:
-	::System::String* Field_3_0; // 0x30
-	::System::Collections::Generic::IEnumerable_1<::System::String*>* Field_3_2; // 0x38
-	::System::Action_2<::System::Int32, ::System::String*>* Field_3_1; // 0x40
+	::System::Collections::Generic::IEnumerable_1<::System::String*>* Field_3_2; // 0x30
+	::System::Action_2<::System::Int32, ::System::String*>* Field_3_1; // 0x38
+	::System::String* Field_3_0; // 0x40
 
 	::System::Void _ctor(::System::Action_2<::System::Int32, ::System::String*>* a1, ::System::Collections::Generic::IEnumerable_1<::System::String*>* a2)
 	{

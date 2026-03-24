@@ -8,12 +8,12 @@ namespace UnityEngine { class GUILayoutOption; }
 namespace UnityEngine { class GUIStyle; }
 namespace UnityEngine { class GUI_WindowFunction; }
 
-#define UNITYENGINE_GUILAYOUT_LAYOUTEDWINDOW_DOWINDOW_OFFSET UNITYSDK_OFFSET(0x19C3AC50)
-#define UNITYENGINE_GUILAYOUT_LAYOUTEDWINDOW__CTOR_OFFSET UNITYSDK_OFFSET(0x19C3A990)
+#define UNITYENGINE_GUILAYOUT_LAYOUTEDWINDOW_DOWINDOW_OFFSET UNITYSDK_OFFSET(0x1A1F3930)
+#define UNITYENGINE_GUILAYOUT_LAYOUTEDWINDOW__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1F3670)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GUILayout_LayoutedWindow_TypeDefinitionIndex = 6359;
+	inline static constexpr unsigned int GUILayout_LayoutedWindow_TypeDefinitionIndex = 6363;
 
 	class GUILayout_LayoutedWindow : public ::System::Object
 	{

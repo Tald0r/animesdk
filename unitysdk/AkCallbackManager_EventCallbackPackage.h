@@ -5,23 +5,23 @@
 class AkCallbackManager_EventCallback;
 namespace System::Collections::Generic { template <typename T> class Stack_1; }
 
-#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE_CREATE_OFFSET UNITYSDK_OFFSET(0x1B08B890)
-#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE_RECYCLE_OFFSET UNITYSDK_OFFSET(0x1B08BA80)
-#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B08B760)
-#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B08B880)
+#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE_CREATE_OFFSET UNITYSDK_OFFSET(0x1B69A050)
+#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE_RECYCLE_OFFSET UNITYSDK_OFFSET(0x1B69A240)
+#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B699F20)
+#define AKCALLBACKMANAGER_EVENTCALLBACKPACKAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B69A040)
 
-inline static constexpr unsigned int AkCallbackManager_EventCallbackPackage_TypeDefinitionIndex = 30019;
+inline static constexpr unsigned int AkCallbackManager_EventCallbackPackage_TypeDefinitionIndex = 30972;
 
 class AkCallbackManager_EventCallbackPackage : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Stack_1<::AkCallbackManager_EventCallbackPackage*>** StaticGet_m_Pool()
 	{
-		return (::System::Collections::Generic::Stack_1<::AkCallbackManager_EventCallbackPackage*>**)Il2CppClass::FromTypeDefinitionIndex(AkCallbackManager_EventCallbackPackage_TypeDefinitionIndex)->GetStaticField(0x233F0);
+		return (::System::Collections::Generic::Stack_1<::AkCallbackManager_EventCallbackPackage*>**)Il2CppClass::FromTypeDefinitionIndex(AkCallbackManager_EventCallbackPackage_TypeDefinitionIndex)->GetStaticField(0x24D10);
 	}
 	// static const ::System::Int32 POOL_SIZE = 0x400; // 0x0
-	::System::Object* m_Cookie; // 0x10
-	::AkCallbackManager_EventCallback* m_Callback; // 0x18
+	::AkCallbackManager_EventCallback* m_Callback; // 0x10
+	::System::Object* m_Cookie; // 0x18
 	::System::UInt32 m_playingID; // 0x20
 	::System::Boolean m_bNotifyEndOfEvent; // 0x24
 

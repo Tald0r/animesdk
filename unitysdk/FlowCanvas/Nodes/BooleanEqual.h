@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_3.h"
 
-#define FLOWCANVAS_NODES_BOOLEANEQUAL_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A07E0B0)
-#define FLOWCANVAS_NODES_BOOLEANEQUAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A07E0C0)
+#define FLOWCANVAS_NODES_BOOLEANEQUAL_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A650C10)
+#define FLOWCANVAS_NODES_BOOLEANEQUAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A650C20)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int BooleanEqual_TypeDefinitionIndex = 25740;
+	inline static constexpr unsigned int BooleanEqual_TypeDefinitionIndex = 26764;
 
 	class BooleanEqual : public ::FlowCanvas::Nodes::PureFunctionNode_3<::System::Boolean, ::System::Boolean, ::System::Boolean>
 	{

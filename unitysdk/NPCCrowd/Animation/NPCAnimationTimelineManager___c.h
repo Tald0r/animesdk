@@ -5,24 +5,24 @@
 namespace NPCCrowd::Animation { class AnimatorZoneSegmentWrap; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define NPCCROWD_ANIMATION_NPCANIMATIONTIMELINEMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6A18C10)
-#define NPCCROWD_ANIMATION_NPCANIMATIONTIMELINEMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6A18C50)
-#define NPCCROWD_ANIMATION_NPCANIMATIONTIMELINEMANAGER___C__INITZONEDATA_B__22_0_OFFSET UNITYSDK_OFFSET(0x6A18C60)
+#define NPCCROWD_ANIMATION_NPCANIMATIONTIMELINEMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x64143C0)
+#define NPCCROWD_ANIMATION_NPCANIMATIONTIMELINEMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6414400)
+#define NPCCROWD_ANIMATION_NPCANIMATIONTIMELINEMANAGER___C__INITZONEDATA_B__22_0_OFFSET UNITYSDK_OFFSET(0x6414410)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCAnimationTimelineManager___c_TypeDefinitionIndex = 75554;
+	inline static constexpr unsigned int NPCAnimationTimelineManager___c_TypeDefinitionIndex = 53056;
 
 	class NPCAnimationTimelineManager___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::NPCCrowd::Animation::AnimatorZoneSegmentWrap*>** StaticGet___9__22_0()
 		{
-			return (::System::Comparison_1<::NPCCrowd::Animation::AnimatorZoneSegmentWrap*>**)Il2CppClass::FromTypeDefinitionIndex(NPCAnimationTimelineManager___c_TypeDefinitionIndex)->GetStaticField(0x30810);
+			return (::System::Comparison_1<::NPCCrowd::Animation::AnimatorZoneSegmentWrap*>**)Il2CppClass::FromTypeDefinitionIndex(NPCAnimationTimelineManager___c_TypeDefinitionIndex)->GetStaticField(0x326C0);
 		}
 		static ::NPCCrowd::Animation::NPCAnimationTimelineManager___c** StaticGet___9()
 		{
-			return (::NPCCrowd::Animation::NPCAnimationTimelineManager___c**)Il2CppClass::FromTypeDefinitionIndex(NPCAnimationTimelineManager___c_TypeDefinitionIndex)->GetStaticField(0x30818);
+			return (::NPCCrowd::Animation::NPCAnimationTimelineManager___c**)Il2CppClass::FromTypeDefinitionIndex(NPCAnimationTimelineManager___c_TypeDefinitionIndex)->GetStaticField(0x326C8);
 		}
 
 		static ::System::Void _cctor()

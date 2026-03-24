@@ -7,9 +7,9 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Xml { class XmlNameTable; }
 
-#define SYSTEM_XML_XPATH_XPATHDOCUMENT_GETXMLNAMESPACENODE_OFFSET UNITYSDK_OFFSET(0x1A4E0B60)
-#define SYSTEM_XML_XPATH_XPATHDOCUMENT_LOOKUPNAMESPACES_OFFSET UNITYSDK_OFFSET(0x1A4E0B70)
-#define SYSTEM_XML_XPATH_XPATHDOCUMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4E0AA0)
+#define SYSTEM_XML_XPATH_XPATHDOCUMENT_GETXMLNAMESPACENODE_OFFSET UNITYSDK_OFFSET(0x1AA93120)
+#define SYSTEM_XML_XPATH_XPATHDOCUMENT_LOOKUPNAMESPACES_OFFSET UNITYSDK_OFFSET(0x1AA93130)
+#define SYSTEM_XML_XPATH_XPATHDOCUMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA93060)
 
 namespace System::Xml::XPath
 {
@@ -19,8 +19,8 @@ namespace System::Xml::XPath
 	{
 	public:
 		::Il2CppArray<::MS::Internal::Xml::Cache::XPathNode>* pageXmlNmsp; // 0x10
-		::System::Xml::XmlNameTable* nameTable; // 0x18
-		::System::Collections::Generic::Dictionary_2<::MS::Internal::Xml::Cache::XPathNodeRef, ::MS::Internal::Xml::Cache::XPathNodeRef>* mapNmsp; // 0x20
+		::System::Collections::Generic::Dictionary_2<::MS::Internal::Xml::Cache::XPathNodeRef, ::MS::Internal::Xml::Cache::XPathNodeRef>* mapNmsp; // 0x18
+		::System::Xml::XmlNameTable* nameTable; // 0x20
 		::System::Int32 idxXmlNmsp; // 0x28
 
 		::System::Void _ctor()

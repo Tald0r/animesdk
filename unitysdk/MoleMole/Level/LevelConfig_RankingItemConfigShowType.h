@@ -3,7 +3,7 @@
 
 namespace MoleMole::Level
 {
-	inline static constexpr unsigned int LevelConfig_RankingItemConfigShowType_TypeDefinitionIndex = 55869;
+	inline static constexpr unsigned int LevelConfig_RankingItemConfigShowType_TypeDefinitionIndex = 39455;
 
 	enum class LevelConfig_RankingItemConfigShowType : ::System::Int32
 	{

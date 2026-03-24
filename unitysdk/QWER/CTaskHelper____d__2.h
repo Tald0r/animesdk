@@ -7,20 +7,20 @@
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace System::Threading::Tasks { class Task; }
 
-#define QWER_CTASKHELPER____D__2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1AA22130)
-#define QWER_CTASKHELPER____D__2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1AA22330)
-#define QWER_CTASKHELPER____D__2__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA21BD0)
+#define QWER_CTASKHELPER____D__2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1B011E60)
+#define QWER_CTASKHELPER____D__2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1B012060)
+#define QWER_CTASKHELPER____D__2__CTOR_OFFSET UNITYSDK_OFFSET(0x1B011900)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CTaskHelper____d__2_TypeDefinitionIndex = 82102;
+	inline static constexpr unsigned int CTaskHelper____d__2_TypeDefinitionIndex = 84143;
 
 	class CTaskHelper____d__2 : public ::System::Object
 	{
 	public:
-		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x10
-		::System::Threading::Tasks::Task* task; // 0x30
-		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x38
+		::System::Threading::Tasks::Task* task; // 0x10
+		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x18
+		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x20
 		::System::Int32 __1__state; // 0x40
 
 		::System::Void _ctor()

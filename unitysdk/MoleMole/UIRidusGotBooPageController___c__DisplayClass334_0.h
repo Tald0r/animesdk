@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_7;
+class Class_0_16E4307DCC419505_5;
 namespace MoleMole { class UIRidusGotBooPageController; }
 namespace MoleMole { class UIRidusGotBooResultPageControllerContext; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__CTOR_OFFSET UNITYSDK_OFFSET(0x750A020)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__DELAYFADEOUTUIANDPOPRESULTPAGE_B__0_OFFSET UNITYSDK_OFFSET(0x750A030)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAE3E5B0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__DELAYFADEOUTUIANDPOPRESULTPAGE_B__0_OFFSET UNITYSDK_OFFSET(0xAE3E5C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController___c__DisplayClass334_0_TypeDefinitionIndex = 66329;
+	inline static constexpr unsigned int UIRidusGotBooPageController___c__DisplayClass334_0_TypeDefinitionIndex = 44114;
 
 	class UIRidusGotBooPageController___c__DisplayClass334_0 : public ::System::Object
 	{
@@ -24,9 +24,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _DelayFadeoutUIAndPopResultPage_b__0(::Class_0_16E4307DCC419505_7* msg)
+		::System::Void _DelayFadeoutUIAndPopResultPage_b__0(::Class_0_16E4307DCC419505_5* msg)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__DELAYFADEOUTUIANDPOPRESULTPAGE_B__0_OFFSET))(this, msg);
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_5*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS334_0__DELAYFADEOUTUIANDPOPRESULTPAGE_B__0_OFFSET))(this, msg);
 		}
 	};
 }

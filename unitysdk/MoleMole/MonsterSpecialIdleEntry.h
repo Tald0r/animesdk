@@ -9,11 +9,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONSTERSPECIALIDLEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xBD45B10)
+#define MOLEMOLE_MONSTERSPECIALIDLEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xB1B6A30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonsterSpecialIdleEntry_TypeDefinitionIndex = 63690;
+	inline static constexpr unsigned int MonsterSpecialIdleEntry_TypeDefinitionIndex = 67363;
 
 	class MonsterSpecialIdleEntry : public ::System::Object
 	{

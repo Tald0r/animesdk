@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ParticleSystemRenderMode_TypeDefinitionIndex = 23701;
+	inline static constexpr unsigned int ParticleSystemRenderMode_TypeDefinitionIndex = 24384;
 
 	enum class ParticleSystemRenderMode : ::System::Int32
 	{

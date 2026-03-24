@@ -7,12 +7,12 @@
 namespace UnityEngine { class Canvas; }
 namespace UnityEngine { class RectTransform; }
 
-#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER_GETCANVASRECT_OFFSET UNITYSDK_OFFSET(0x1AFD7310)
-#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFD7740)
+#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER_GETCANVASRECT_OFFSET UNITYSDK_OFFSET(0x1B5E6030)
+#define UNITYENGINE_UI_RECTANGULARVERTEXCLIPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5E6460)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int RectangularVertexClipper_TypeDefinitionIndex = 8328;
+	inline static constexpr unsigned int RectangularVertexClipper_TypeDefinitionIndex = 8338;
 
 	class RectangularVertexClipper : public ::System::Object
 	{

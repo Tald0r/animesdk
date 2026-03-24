@@ -6,27 +6,27 @@
 
 namespace System::Collections { class IList; }
 
-#define CLASS_3_1B370FEFD2F669A9_CLASS_1_BA9F9359516198DF_METHOD_1_841F8C8179E5BE1C_OFFSET UNITYSDK_OFFSET(0x64EC190)
-#define CLASS_3_1B370FEFD2F669A9_CLASS_1_BA9F9359516198DF__CTOR_OFFSET UNITYSDK_OFFSET(0x64EC180)
+#define CLASS_3_1B370FEFD2F669A9_CLASS_1_BA9F9359516198DF_METHOD_1_841F8C8179E5BE1C_OFFSET UNITYSDK_OFFSET(0x90E4B00)
+#define CLASS_3_1B370FEFD2F669A9_CLASS_1_BA9F9359516198DF__CTOR_OFFSET UNITYSDK_OFFSET(0x90E4AF0)
 
-inline static constexpr unsigned int Class_3_1B370FEFD2F669A9_Class_1_BA9F9359516198DF_TypeDefinitionIndex = 38125;
+inline static constexpr unsigned int Class_3_1B370FEFD2F669A9_Class_1_BA9F9359516198DF_TypeDefinitionIndex = 72762;
 
 class Class_3_1B370FEFD2F669A9_Class_1_BA9F9359516198DF : public ::System::Object
 {
 public:
 	::System::Collections::IList* Field_1_11; // 0x10
 	::Struct_2_E147DFD2A4EE8B0B Field_1_12; // 0x18
-	::System::Int32 Field_1_2; // 0x30
-	::System::Int32 Field_1_5; // 0x34
-	::System::Int32 Field_1_0; // 0x38
+	::System::Int32 Field_1_0; // 0x30
+	::System::Int32 Field_1_2; // 0x34
+	::System::Int32 Field_1_1; // 0x38
 	::System::Int32 Field_1_9; // 0x3C
-	::System::Int32 Field_1_4; // 0x40
-	::System::Int32 Field_1_8; // 0x44
-	::System::Int32 Field_1_10; // 0x48
-	::System::Int32 Field_1_7; // 0x4C
-	::System::Boolean Field_1_6; // 0x50
-	::System::Int32 Field_1_3; // 0x54
-	::System::Int32 Field_1_1; // 0x58
+	::System::Int32 Field_1_7; // 0x40
+	::System::Int32 Field_1_10; // 0x44
+	::System::Int32 Field_1_3; // 0x48
+	::System::Int32 Field_1_5; // 0x4C
+	::System::Int32 Field_1_8; // 0x50
+	::System::Int32 Field_1_4; // 0x54
+	::System::Boolean Field_1_6; // 0x58
 
 	::System::Void _ctor()
 	{

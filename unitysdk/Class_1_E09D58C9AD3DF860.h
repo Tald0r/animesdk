@@ -4,9 +4,9 @@
 
 namespace System { class Action; }
 
-#define CLASS_1_E09D58C9AD3DF860__CTOR_OFFSET UNITYSDK_OFFSET(0x7413040)
+#define CLASS_1_E09D58C9AD3DF860__CTOR_OFFSET UNITYSDK_OFFSET(0x7D10440)
 
-inline static constexpr unsigned int Class_1_E09D58C9AD3DF860_TypeDefinitionIndex = 73349;
+inline static constexpr unsigned int Class_1_E09D58C9AD3DF860_TypeDefinitionIndex = 51074;
 
 class Class_1_E09D58C9AD3DF860 : public ::System::Object
 {

@@ -5,19 +5,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_TRANSITIONDISPLAYITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x8B10430)
+#define MOLEMOLE_GALGAME_TRANSITIONDISPLAYITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xB1951C0)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int TransitionDisplayItem_TypeDefinitionIndex = 65425;
+	inline static constexpr unsigned int TransitionDisplayItem_TypeDefinitionIndex = 80792;
 
 	class TransitionDisplayItem : public ::System::Object
 	{
 	public:
 		::System::String* textKey; // 0x10
-		::MoleMole::GalGame::TransitionDisplayItem_ItemType itemType; // 0x18
-		::System::Int32 bindSubSectionIndex; // 0x1C
-		::System::Int32 bindSectionIndex; // 0x20
+		::System::Int32 bindSectionIndex; // 0x18
+		::MoleMole::GalGame::TransitionDisplayItem_ItemType itemType; // 0x1C
+		::System::Int32 bindSubSectionIndex; // 0x20
 
 		::System::Void _ctor()
 		{

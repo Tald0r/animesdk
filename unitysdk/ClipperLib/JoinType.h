@@ -3,7 +3,7 @@
 
 namespace ClipperLib
 {
-	inline static constexpr unsigned int JoinType_TypeDefinitionIndex = 29743;
+	inline static constexpr unsigned int JoinType_TypeDefinitionIndex = 30696;
 
 	enum class JoinType : ::System::Int32
 	{

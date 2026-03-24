@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define FOUNDATION_EXTENSION___C__DISPLAYCLASS297_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0C7300)
-#define FOUNDATION_EXTENSION___C__DISPLAYCLASS297_0__SETBLENDOUT_B__0_OFFSET UNITYSDK_OFFSET(0x1B0C7310)
+#define FOUNDATION_EXTENSION___C__DISPLAYCLASS297_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6D53D0)
+#define FOUNDATION_EXTENSION___C__DISPLAYCLASS297_0__SETBLENDOUT_B__0_OFFSET UNITYSDK_OFFSET(0x1B6D53E0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int Extension___c__DisplayClass297_0_TypeDefinitionIndex = 9153;
+	inline static constexpr unsigned int Extension___c__DisplayClass297_0_TypeDefinitionIndex = 9042;
 
 	class Extension___c__DisplayClass297_0 : public ::System::Object
 	{

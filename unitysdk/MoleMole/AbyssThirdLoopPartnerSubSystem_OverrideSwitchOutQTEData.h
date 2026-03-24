@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AbyssThirdLoopPartnerSubSystem_OverrideSwitchOutQTEData_TypeDefinitionIndex = 37110;
+	inline static constexpr unsigned int AbyssThirdLoopPartnerSubSystem_OverrideSwitchOutQTEData_TypeDefinitionIndex = 63856;
 
 	struct alignas(8) AbyssThirdLoopPartnerSubSystem_OverrideSwitchOutQTEData
 	{

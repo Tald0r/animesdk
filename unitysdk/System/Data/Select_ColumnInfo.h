@@ -4,11 +4,11 @@
 
 namespace System::Data { class BinaryNode; }
 
-#define SYSTEM_DATA_SELECT_COLUMNINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x18A79600)
+#define SYSTEM_DATA_SELECT_COLUMNINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x18F94A50)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int Select_ColumnInfo_TypeDefinitionIndex = 35495;
+	inline static constexpr unsigned int Select_ColumnInfo_TypeDefinitionIndex = 36515;
 
 	class Select_ColumnInfo : public ::System::Object
 	{

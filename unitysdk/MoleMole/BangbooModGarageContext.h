@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_BANGBOOMODGARAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8483800)
+#define MOLEMOLE_BANGBOOMODGARAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x94DB8F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BangbooModGarageContext_TypeDefinitionIndex = 38256;
+	inline static constexpr unsigned int BangbooModGarageContext_TypeDefinitionIndex = 75293;
 
 	class BangbooModGarageContext : public ::MoleMole::UIControllerContextBase
 	{

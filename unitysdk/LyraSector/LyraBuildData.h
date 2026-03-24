@@ -4,7 +4,7 @@
 
 namespace LyraSector
 {
-	inline static constexpr unsigned int LyraBuildData_TypeDefinitionIndex = 28225;
+	inline static constexpr unsigned int LyraBuildData_TypeDefinitionIndex = 29166;
 
 	class LyraBuildData : public ::System::Object
 	{

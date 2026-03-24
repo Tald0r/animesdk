@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::XInput
 {
-	inline static constexpr unsigned int IXboxOneRumble_TypeDefinitionIndex = 27626;
+	inline static constexpr unsigned int IXboxOneRumble_TypeDefinitionIndex = 28566;
 
 	class IXboxOneRumble
 	{

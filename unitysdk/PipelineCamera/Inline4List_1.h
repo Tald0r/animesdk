@@ -5,7 +5,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int Inline4List_1_TypeDefinitionIndex = 34492;
+	inline static constexpr unsigned int Inline4List_1_TypeDefinitionIndex = 35494;
 
 	template <typename T>
 	struct Inline4List_1

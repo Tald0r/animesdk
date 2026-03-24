@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIIncomeNumWidgetController_EAnimState_TypeDefinitionIndex = 70266;
+	inline static constexpr unsigned int UIIncomeNumWidgetController_EAnimState_TypeDefinitionIndex = 46108;
 
 	enum class UIIncomeNumWidgetController_EAnimState : ::System::Int32
 	{
-		Idle = 0,
 		SwitchOut = 2,
+		Idle = 0,
 		SwitchIn = 1,
 	};
 }

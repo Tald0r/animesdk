@@ -5,17 +5,17 @@
 
 class Class_2_D89CCC627A66D0AD;
 
-#define MOLEMOLE_UIROLESKILLLEVELUPPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBEA88D0)
+#define MOLEMOLE_UIROLESKILLLEVELUPPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA69D7E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleSkillLevelUpPopContext_TypeDefinitionIndex = 77429;
+	inline static constexpr unsigned int UIRoleSkillLevelUpPopContext_TypeDefinitionIndex = 40878;
 
 	class UIRoleSkillLevelUpPopContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Struct_2_72D718364F0A8071 skill; // 0x28
-		::Class_2_D89CCC627A66D0AD* avatar; // 0x38
+		::Class_2_D89CCC627A66D0AD* avatar; // 0x28
+		::Struct_2_72D718364F0A8071 skill; // 0x30
 
 		::System::Void _ctor()
 		{

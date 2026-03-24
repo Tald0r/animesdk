@@ -6,7 +6,7 @@ namespace System { class Type; }
 
 namespace Foundation
 {
-	inline static constexpr unsigned int TypeOf_1_TypeDefinitionIndex = 7702;
+	inline static constexpr unsigned int TypeOf_1_TypeDefinitionIndex = 8246;
 
 	template <typename T>
 	class TypeOf_1 : public ::System::Object

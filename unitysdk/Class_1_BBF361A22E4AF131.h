@@ -9,32 +9,27 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_BBF361A22E4AF131_METHOD_1_074045F1FBDF8496_OFFSET UNITYSDK_OFFSET(0x6D699F0)
-#define CLASS_1_BBF361A22E4AF131_METHOD_1_415752109343FC19_OFFSET UNITYSDK_OFFSET(0x6D69800)
-#define CLASS_1_BBF361A22E4AF131_METHOD_1_4C9717BAC49A1DCF_OFFSET UNITYSDK_OFFSET(0x6D69980)
-#define CLASS_1_BBF361A22E4AF131_METHOD_1_BC9E974C030FC0DF_OFFSET UNITYSDK_OFFSET(0x6D69610)
-#define CLASS_1_BBF361A22E4AF131_METHOD_1_D0BD1377F2594D33_OFFSET UNITYSDK_OFFSET(0x6D696A0)
-#define CLASS_1_BBF361A22E4AF131_METHOD_1_F0EE34D049FA2477_OFFSET UNITYSDK_OFFSET(0x6D69D90)
-#define CLASS_1_BBF361A22E4AF131__CTOR_OFFSET UNITYSDK_OFFSET(0x6D69600)
+#define CLASS_1_BBF361A22E4AF131_METHOD_1_074045F1FBDF8496_OFFSET UNITYSDK_OFFSET(0x64867D0)
+#define CLASS_1_BBF361A22E4AF131_METHOD_1_415752109343FC19_OFFSET UNITYSDK_OFFSET(0x64865E0)
+#define CLASS_1_BBF361A22E4AF131_METHOD_1_4C9717BAC49A1DCF_OFFSET UNITYSDK_OFFSET(0x6486760)
+#define CLASS_1_BBF361A22E4AF131_METHOD_1_BC9E974C030FC0DF_OFFSET UNITYSDK_OFFSET(0x6486D70)
+#define CLASS_1_BBF361A22E4AF131_METHOD_1_D0BD1377F2594D33_OFFSET UNITYSDK_OFFSET(0x6486C10)
+#define CLASS_1_BBF361A22E4AF131_METHOD_1_F0EE34D049FA2477_OFFSET UNITYSDK_OFFSET(0x6486B70)
+#define CLASS_1_BBF361A22E4AF131__CTOR_OFFSET UNITYSDK_OFFSET(0x64865D0)
 
-inline static constexpr unsigned int Class_1_BBF361A22E4AF131_TypeDefinitionIndex = 43909;
+inline static constexpr unsigned int Class_1_BBF361A22E4AF131_TypeDefinitionIndex = 66646;
 
 class Class_1_BBF361A22E4AF131 : public ::System::Object
 {
 public:
 	static ::MoleMole::Config::ConfigHollowChessboardInteract** StaticGet_Field_1_0()
 	{
-		return (::MoleMole::Config::ConfigHollowChessboardInteract**)Il2CppClass::FromTypeDefinitionIndex(Class_1_BBF361A22E4AF131_TypeDefinitionIndex)->GetStaticField(0x2ADB0);
+		return (::MoleMole::Config::ConfigHollowChessboardInteract**)Il2CppClass::FromTypeDefinitionIndex(Class_1_BBF361A22E4AF131_TypeDefinitionIndex)->GetStaticField(0x3A4E0);
 	}
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_BBF361A22E4AF131__CTOR_OFFSET))(this);
-	}
-
-	static ::MoleMole::Config::ConfigHollowChessboardInteract* Method_1_BC9E974C030FC0DF()
-	{
-		return ((::MoleMole::Config::ConfigHollowChessboardInteract*(*)())((::PBYTE)hIl2Cpp + CLASS_1_BBF361A22E4AF131_METHOD_1_BC9E974C030FC0DF_OFFSET))();
 	}
 
 	static ::System::Void Method_1_415752109343FC19(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
@@ -60,5 +55,10 @@ public:
 	static ::System::Void Method_1_D0BD1377F2594D33()
 	{
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_BBF361A22E4AF131_METHOD_1_D0BD1377F2594D33_OFFSET))();
+	}
+
+	static ::MoleMole::Config::ConfigHollowChessboardInteract* Method_1_BC9E974C030FC0DF()
+	{
+		return ((::MoleMole::Config::ConfigHollowChessboardInteract*(*)())((::PBYTE)hIl2Cpp + CLASS_1_BBF361A22E4AF131_METHOD_1_BC9E974C030FC0DF_OFFSET))();
 	}
 };

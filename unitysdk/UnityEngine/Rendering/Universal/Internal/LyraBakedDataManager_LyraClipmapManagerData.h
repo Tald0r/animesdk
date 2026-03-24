@@ -12,28 +12,28 @@ namespace System::Threading { class Mutex; }
 namespace UnityEngine { class Texture2D; }
 namespace UnityEngine::Rendering::Universal::Internal { class LyraBakedDataManager_AsyncDecompressLyraSectorSingleJobData; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA_ADDASSET_OFFSET UNITYSDK_OFFSET(0x16DB4A30)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA_REMOVEASSETIMPL_OFFSET UNITYSDK_OFFSET(0x16DBECF0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA_REMOVEASSET_OFFSET UNITYSDK_OFFSET(0x16DB4F60)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x16DB2380)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA_ADDASSET_OFFSET UNITYSDK_OFFSET(0x1741B320)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA_REMOVEASSETIMPL_OFFSET UNITYSDK_OFFSET(0x174255E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA_REMOVEASSET_OFFSET UNITYSDK_OFFSET(0x1741B850)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRABAKEDDATAMANAGER_LYRACLIPMAPMANAGERDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17418C70)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int LyraBakedDataManager_LyraClipmapManagerData_TypeDefinitionIndex = 28991;
+	inline static constexpr unsigned int LyraBakedDataManager_LyraClipmapManagerData_TypeDefinitionIndex = 29942;
 
 	class LyraBakedDataManager_LyraClipmapManagerData : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_AsyncDecompressLyraSectorSingleJobData*>* m_DecompressingSectorJobs; // 0x10
-		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraPackedAsset*>* m_LoadedPackedAssets; // 0x18
-		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraPackedAsset*, ::System::Collections::Generic::HashSet_1<::LyraSector::LyraSectorCoord>*>* m_LoadedSectorAssetsCoords; // 0x20
-		::System::Threading::Mutex* m_SectorMutex; // 0x28
-		::System::Collections::Generic::HashSet_1<::LyraSector::LyraSectorCoord>* m_ChangedAssetsCoords; // 0x30
-		::UnityEngine::Texture2D* m_AlbedoLutTex; // 0x38
-		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraSectorRenderingData*>* m_SectorGpuData; // 0x40
-		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraSparseTreeBakedData*>* m_DecompressedSectors; // 0x48
-		::System::Int32 m_LoadedAssetSize; // 0x50
-		::System::Boolean m_IsForDistanceField; // 0x54
+		::System::Collections::Generic::HashSet_1<::LyraSector::LyraSectorCoord>* m_ChangedAssetsCoords; // 0x10
+		::UnityEngine::Texture2D* m_AlbedoLutTex; // 0x18
+		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraSectorRenderingData*>* m_SectorGpuData; // 0x20
+		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraPackedAsset*, ::System::Collections::Generic::HashSet_1<::LyraSector::LyraSectorCoord>*>* m_LoadedSectorAssetsCoords; // 0x28
+		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::UnityEngine::Rendering::Universal::Internal::LyraBakedDataManager_AsyncDecompressLyraSectorSingleJobData*>* m_DecompressingSectorJobs; // 0x30
+		::System::Threading::Mutex* m_SectorMutex; // 0x38
+		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraSparseTreeBakedData*>* m_DecompressedSectors; // 0x40
+		::System::Collections::Generic::Dictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraPackedAsset*>* m_LoadedPackedAssets; // 0x48
+		::System::Boolean m_IsForDistanceField; // 0x50
+		::System::Int32 m_LoadedAssetSize; // 0x54
 
 		::System::Void _ctor(::System::Boolean isForDistanceField)
 		{

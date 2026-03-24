@@ -3,13 +3,13 @@
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int SlotState_TypeDefinitionIndex = 51845;
+	inline static constexpr unsigned int SlotState_TypeDefinitionIndex = 45117;
 
 	enum class SlotState : ::System::Int32
 	{
-		Occupying = 1,
 		Occupied = 2,
-		Released = 0,
 		Releasing = 3,
+		Released = 0,
+		Occupying = 1,
 	};
 }

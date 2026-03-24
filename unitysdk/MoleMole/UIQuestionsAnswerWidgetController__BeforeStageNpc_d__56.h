@@ -4,27 +4,27 @@
 #include "unitysdk/Cysharp/Threading/Tasks/UniTask_Awaiter.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_3_C3F0E3B5AB5977AE_46;
+class Class_3_C3F0E3B5AB5977AE_49;
 namespace MoleMole { class UIQuestionsAnswerWidgetController; }
 namespace MoleMole { class UIQuestionsAnswerWidgetController___c__DisplayClass56_0; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__BEFORESTAGENPC_D__56_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B6750)
-#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__BEFORESTAGENPC_D__56_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__BEFORESTAGENPC_D__56_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x42F5D0)
+#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__BEFORESTAGENPC_D__56_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerWidgetController__BeforeStageNpc_d__56_TypeDefinitionIndex = 70200;
+	inline static constexpr unsigned int UIQuestionsAnswerWidgetController__BeforeStageNpc_d__56_TypeDefinitionIndex = 66342;
 
 	struct alignas(8) UIQuestionsAnswerWidgetController__BeforeStageNpc_d__56
 	{
-		::MoleMole::UIQuestionsAnswerWidgetController* __4__this; // 0x10
-		::Class_3_C3F0E3B5AB5977AE_46* _next_5__2; // 0x18
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x20
-		::MoleMole::UIQuestionsAnswerWidgetController___c__DisplayClass56_0* __8__1; // 0x30
+		::MoleMole::UIQuestionsAnswerWidgetController___c__DisplayClass56_0* __8__1; // 0x10
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x18
+		::MoleMole::UIQuestionsAnswerWidgetController* __4__this; // 0x28
+		::Class_3_C3F0E3B5AB5977AE_49* _next_5__2; // 0x30
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x38
-		::System::Int32 index; // 0x48
-		::System::Int32 __1__state; // 0x4C
+		::System::Int32 __1__state; // 0x48
+		::System::Int32 index; // 0x4C
 
 		::System::Void MoveNext()
 		{

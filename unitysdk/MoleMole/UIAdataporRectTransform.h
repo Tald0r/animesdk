@@ -7,29 +7,29 @@
 
 namespace UnityEngine { class RectTransform; }
 
-#define MOLEMOLE_UIADATAPORRECTTRANSFORM_COPYPOSITIONFROM_OFFSET UNITYSDK_OFFSET(0xBF236B0)
-#define MOLEMOLE_UIADATAPORRECTTRANSFORM_GET_VALUECHANGED_OFFSET UNITYSDK_OFFSET(0xBF23690)
-#define MOLEMOLE_UIADATAPORRECTTRANSFORM_MARKVALUECHANGE_OFFSET UNITYSDK_OFFSET(0xBF23810)
-#define MOLEMOLE_UIADATAPORRECTTRANSFORM_REINITFROMRECTTRANSFORM_OFFSET UNITYSDK_OFFSET(0xBF23400)
-#define MOLEMOLE_UIADATAPORRECTTRANSFORM_SET_VALUECHANGED_OFFSET UNITYSDK_OFFSET(0xBF236A0)
-#define MOLEMOLE_UIADATAPORRECTTRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xBF233F0)
+#define MOLEMOLE_UIADATAPORRECTTRANSFORM_COPYPOSITIONFROM_OFFSET UNITYSDK_OFFSET(0xE92A720)
+#define MOLEMOLE_UIADATAPORRECTTRANSFORM_GET_VALUECHANGED_OFFSET UNITYSDK_OFFSET(0xE92A700)
+#define MOLEMOLE_UIADATAPORRECTTRANSFORM_MARKVALUECHANGE_OFFSET UNITYSDK_OFFSET(0xE92A880)
+#define MOLEMOLE_UIADATAPORRECTTRANSFORM_REINITFROMRECTTRANSFORM_OFFSET UNITYSDK_OFFSET(0xE92A470)
+#define MOLEMOLE_UIADATAPORRECTTRANSFORM_SET_VALUECHANGED_OFFSET UNITYSDK_OFFSET(0xE92A710)
+#define MOLEMOLE_UIADATAPORRECTTRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xE92A460)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAdataporRectTransform_TypeDefinitionIndex = 44111;
+	inline static constexpr unsigned int UIAdataporRectTransform_TypeDefinitionIndex = 43348;
 
 	class UIAdataporRectTransform : public ::System::Object
 	{
 	public:
-		::UnityEngine::Vector2 pivot; // 0x10
-		::UnityEngine::Vector2 offsetMin; // 0x18
-		::UnityEngine::Vector2 anchorMax; // 0x20
-		::UnityEngine::Quaternion rotation; // 0x28
-		::UnityEngine::Vector2 anchoredPosition; // 0x38
-		::UnityEngine::Vector3 localScale; // 0x40
-		::System::Boolean _valueChanged_k__BackingField; // 0x4C
-		::UnityEngine::Quaternion localRotation; // 0x50
-		::UnityEngine::Vector2 anchorMin; // 0x60
+		::System::Boolean _valueChanged_k__BackingField; // 0x10
+		::UnityEngine::Vector2 anchoredPosition; // 0x14
+		::UnityEngine::Quaternion localRotation; // 0x1C
+		::UnityEngine::Vector2 anchorMax; // 0x2C
+		::UnityEngine::Vector2 anchorMin; // 0x34
+		::UnityEngine::Vector2 pivot; // 0x3C
+		::UnityEngine::Vector2 offsetMin; // 0x44
+		::UnityEngine::Vector3 localScale; // 0x4C
+		::UnityEngine::Quaternion rotation; // 0x58
 		::UnityEngine::Vector2 offsetMax; // 0x68
 
 		::System::Void _ctor(::UnityEngine::RectTransform* rectTransform)

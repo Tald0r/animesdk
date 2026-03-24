@@ -6,12 +6,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATESPAWNPOINTMASKREGIONBYENTITY_INVOKE_OFFSET UNITYSDK_OFFSET(0x8AF3DB0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATESPAWNPOINTMASKREGIONBYENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF4000)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATESPAWNPOINTMASKREGIONBYENTITY_INVOKE_OFFSET UNITYSDK_OFFSET(0x1164AAD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATESPAWNPOINTMASKREGIONBYENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x1164AD10)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCreateSpawnPointMaskRegionByEntity_TypeDefinitionIndex = 55930;
+	inline static constexpr unsigned int LDCreateSpawnPointMaskRegionByEntity_TypeDefinitionIndex = 39654;
 
 	class LDCreateSpawnPointMaskRegionByEntity : public ::FlowCanvas::Nodes::CallableActionNode_3<::System::String*, ::MoleMole::Battle::Entity*, ::MoleMole::SpawnPointMaskRegion>
 	{

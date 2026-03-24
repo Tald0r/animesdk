@@ -12,18 +12,18 @@
 namespace Cinemachine { class ConfinerOven_BakedSolution; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CINEMACHINE_CONFINEROVEN_BAKECONFINER_OFFSET UNITYSDK_OFFSET(0x1AF16E30)
-#define CINEMACHINE_CONFINEROVEN_COMPUTESKELETON_OFFSET UNITYSDK_OFFSET(0x1AF172F0)
-#define CINEMACHINE_CONFINEROVEN_GETBAKEDSOLUTION_OFFSET UNITYSDK_OFFSET(0x1AF168D0)
-#define CINEMACHINE_CONFINEROVEN_GETPOLYGONBOUNDINGBOX_OFFSET UNITYSDK_OFFSET(0x1AF16CD0)
-#define CINEMACHINE_CONFINEROVEN_GET_STATE_OFFSET UNITYSDK_OFFSET(0x1AF16CB0)
-#define CINEMACHINE_CONFINEROVEN_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1AF16240)
-#define CINEMACHINE_CONFINEROVEN_SET_STATE_OFFSET UNITYSDK_OFFSET(0x1AF16CC0)
-#define CINEMACHINE_CONFINEROVEN__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF16170)
+#define CINEMACHINE_CONFINEROVEN_BAKECONFINER_OFFSET UNITYSDK_OFFSET(0x1B534490)
+#define CINEMACHINE_CONFINEROVEN_COMPUTESKELETON_OFFSET UNITYSDK_OFFSET(0x1B534960)
+#define CINEMACHINE_CONFINEROVEN_GETBAKEDSOLUTION_OFFSET UNITYSDK_OFFSET(0x1B533F30)
+#define CINEMACHINE_CONFINEROVEN_GETPOLYGONBOUNDINGBOX_OFFSET UNITYSDK_OFFSET(0x1B534330)
+#define CINEMACHINE_CONFINEROVEN_GET_STATE_OFFSET UNITYSDK_OFFSET(0x1B534310)
+#define CINEMACHINE_CONFINEROVEN_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1B5338A0)
+#define CINEMACHINE_CONFINEROVEN_SET_STATE_OFFSET UNITYSDK_OFFSET(0x1B534320)
+#define CINEMACHINE_CONFINEROVEN__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5337D0)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int ConfinerOven_TypeDefinitionIndex = 31100;
+	inline static constexpr unsigned int ConfinerOven_TypeDefinitionIndex = 32052;
 
 	class ConfinerOven : public ::System::Object
 	{
@@ -31,14 +31,14 @@ namespace Cinemachine
 		// static const ::System::Int64 k_FloatToIntScaler = 0x186A0; // 0x0
 		// static const ::System::Single k_IntToFloatScaler; // 0x0
 		// static const ::System::Single k_MinStepSize; // 0x0
-		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::ClipperLib::IntPoint>*>* m_Skeleton; // 0x10
-		::Cinemachine::ConfinerOven_BakingStateCache m_Cache; // 0x18
+		::Cinemachine::ConfinerOven_BakingStateCache m_Cache; // 0x10
+		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::ClipperLib::IntPoint>*>* m_Skeleton; // 0x58
 		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::ClipperLib::IntPoint>*>* m_OriginalPolygon; // 0x60
-		::System::Single m_MinFrustumHeightWithBones; // 0x68
-		::Cinemachine::ConfinerOven_AspectStretcher m_AspectStretcher; // 0x6C
-		::Cinemachine::ConfinerOven_BakingState _State_k__BackingField; // 0x78
-		::System::Single m_BakeProgress; // 0x7C
-		::UnityEngine::Rect m_PolygonRect; // 0x80
+		::Cinemachine::ConfinerOven_AspectStretcher m_AspectStretcher; // 0x68
+		::UnityEngine::Rect m_PolygonRect; // 0x74
+		::Cinemachine::ConfinerOven_BakingState _State_k__BackingField; // 0x84
+		::System::Single m_MinFrustumHeightWithBones; // 0x88
+		::System::Single m_BakeProgress; // 0x8C
 		::System::Single m_maxComputationTimeForFullSkeletonBakeInSeconds; // 0x90
 
 		::System::Void _ctor(::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::UnityEngine::Vector2>*>*& inputPath, ::System::Single& aspectRatio, ::System::Single maxFrustumHeight)

@@ -5,11 +5,11 @@
 namespace MiHoYo::SDK { class WatermarkInfo; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYO_SDK_CONFIGMANAGER_WATERMARKCONFIGMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x180C1320)
+#define MIHOYO_SDK_CONFIGMANAGER_WATERMARKCONFIGMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x1867BA00)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ConfigManager_WatermarkConfigModel_TypeDefinitionIndex = 18219;
+	inline static constexpr unsigned int ConfigManager_WatermarkConfigModel_TypeDefinitionIndex = 18727;
 
 	class ConfigManager_WatermarkConfigModel : public ::System::Object
 	{

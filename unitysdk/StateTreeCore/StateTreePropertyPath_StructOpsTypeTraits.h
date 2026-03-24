@@ -1,0 +1,43 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnrealTypes/StructOpsTraitsBase.h"
+
+#define STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_CANMOVE_OFFSET UNITYSDK_OFFSET(0x1B670050)
+#define STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_HASALLOCATOR_OFFSET UNITYSDK_OFFSET(0x1B670060)
+#define STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_SHOULDCLONE_OFFSET UNITYSDK_OFFSET(0x1B670040)
+#define STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_SHOULDDISPOSE_OFFSET UNITYSDK_OFFSET(0x1B670030)
+#define STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS__CTOR_OFFSET UNITYSDK_OFFSET(0x1B670070)
+
+namespace StateTreeCore
+{
+	inline static constexpr unsigned int StateTreePropertyPath_StructOpsTypeTraits_TypeDefinitionIndex = 27829;
+
+	class StateTreePropertyPath_StructOpsTypeTraits : public ::UnrealTypes::StructOpsTraitsBase
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_ShouldDispose()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_SHOULDDISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean get_ShouldClone()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_SHOULDCLONE_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanMove()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_CANMOVE_OFFSET))(this);
+		}
+
+		::System::Boolean get_HasAllocator()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEPROPERTYPATH_STRUCTOPSTYPETRAITS_GET_HASALLOCATOR_OFFSET))(this);
+		}
+	};
+}

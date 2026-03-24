@@ -3,7 +3,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCCPUAnimator_LookAtIKFadeJob_ETargetType_TypeDefinitionIndex = 70922;
+	inline static constexpr unsigned int NPCCPUAnimator_LookAtIKFadeJob_ETargetType_TypeDefinitionIndex = 55830;
 
 	enum class NPCCPUAnimator_LookAtIKFadeJob_ETargetType : ::System::Int32
 	{

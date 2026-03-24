@@ -7,26 +7,26 @@ namespace UnityEngine::NAPRenderPipeline0 { class ClampedFloatParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class ColorParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class FloatParameter; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18B3FE50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18B40570)
-#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION__ONENABLE_G__COPYVALUEIFSKINVALUEISDEFAULT_8_0_OFFSET UNITYSDK_OFFSET(0x18B40490)
-#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION___BASE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18B407E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18F02D70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18F03490)
+#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION__ONENABLE_G__COPYVALUEIFSKINVALUEISDEFAULT_8_0_OFFSET UNITYSDK_OFFSET(0x18F033B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_CHARACTERCOLORCORRECTION___BASE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18F03700)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CharacterColorCorrection_TypeDefinitionIndex = 28635;
+	inline static constexpr unsigned int CharacterColorCorrection_TypeDefinitionIndex = 29578;
 
 	class CharacterColorCorrection : public ::UnityEngine::NAPRenderPipeline0::CharacterColorCorrection_NativeSRP
 	{
 	public:
-		::UnityEngine::NAPRenderPipeline0::BoolParameter* weaponUseCustomLightProperty; // 0x298
-		::UnityEngine::NAPRenderPipeline0::FloatParameter* rimGlowIntensityForChara; // 0x2A0
-		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowWidthForCharacter; // 0x2A8
-		::UnityEngine::NAPRenderPipeline0::ColorParameter* rimGlowColorForCharacter; // 0x2B0
-		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter01; // 0x2B8
-		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter02; // 0x2C0
-		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter03; // 0x2C8
-		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter04; // 0x2D0
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* weaponUseCustomLightProperty; // 0x2A0
+		::UnityEngine::NAPRenderPipeline0::FloatParameter* rimGlowIntensityForChara; // 0x2A8
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowWidthForCharacter; // 0x2B0
+		::UnityEngine::NAPRenderPipeline0::ColorParameter* rimGlowColorForCharacter; // 0x2B8
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter01; // 0x2C0
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter02; // 0x2C8
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter03; // 0x2D0
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* rimGlowStyleForCharacter04; // 0x2D8
 
 		::System::Void _ctor()
 		{

@@ -4,19 +4,19 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Keyframe.h"
 
-#define FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_CONSTANTINTERVAL_FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_IKEYFRAMEINTERVAL_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1AA8C1F0)
-#define FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_CONSTANTINTERVAL_FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_IKEYFRAMEINTERVAL_INTEGRAL_OFFSET UNITYSDK_OFFSET(0x1AA8C100)
-#define FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_CONSTANTINTERVAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA8C220)
+#define FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_CONSTANTINTERVAL_FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_IKEYFRAMEINTERVAL_CONTAINS_OFFSET UNITYSDK_OFFSET(0x1B0DE050)
+#define FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_CONSTANTINTERVAL_FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_IKEYFRAMEINTERVAL_INTEGRAL_OFFSET UNITYSDK_OFFSET(0x1B0DDF60)
+#define FOUNDATION_EXTENSION_ANIMATIONCURVEDETAIL_CONSTANTINTERVAL__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0DE080)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int Extension_AnimationCurveDetail_ConstantInterval_TypeDefinitionIndex = 9150;
+	inline static constexpr unsigned int Extension_AnimationCurveDetail_ConstantInterval_TypeDefinitionIndex = 9038;
 
 	class Extension_AnimationCurveDetail_ConstantInterval : public ::System::Object
 	{
 	public:
-		::System::Single _value; // 0x10
-		::Foundation::Unreal::Interval_1<::System::Single> _timeInterval; // 0x14
+		::Foundation::Unreal::Interval_1<::System::Single> _timeInterval; // 0x10
+		::System::Single _value; // 0x20
 
 		::System::Void _ctor(::UnityEngine::Keyframe& lhs, ::UnityEngine::Keyframe& rhs, ::System::Boolean inclusiveRight)
 		{

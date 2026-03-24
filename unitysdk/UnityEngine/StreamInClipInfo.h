@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int StreamInClipInfo_TypeDefinitionIndex = 6524;
+	inline static constexpr unsigned int StreamInClipInfo_TypeDefinitionIndex = 6528;
 
 	struct alignas(8) StreamInClipInfo
 	{

@@ -3,13 +3,13 @@
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UITimeWidget_TimeUpdateType_TypeDefinitionIndex = 46264;
+	inline static constexpr unsigned int UITimeWidget_TimeUpdateType_TypeDefinitionIndex = 64953;
 
 	enum class UITimeWidget_TimeUpdateType : ::System::Int32
 	{
-		CountDown = 1,
-		CountUp = 3,
 		Static = 0,
+		CountDown = 1,
 		TimeStampCountDown = 2,
+		CountUp = 3,
 	};
 }

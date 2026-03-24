@@ -6,13 +6,13 @@ namespace MoleMole::Battle { class Entity; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ATTACKABLETARGETSELECTOR_METHOD_2_6844B249C60DE97D_OFFSET UNITYSDK_OFFSET(0x8046B30)
-#define MOLEMOLE_CONFIG_ATTACKABLETARGETSELECTOR_METHOD_2_AD9D92D8E8D469F9_OFFSET UNITYSDK_OFFSET(0x8046760)
-#define MOLEMOLE_CONFIG_ATTACKABLETARGETSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x8046C30)
+#define MOLEMOLE_CONFIG_ATTACKABLETARGETSELECTOR_METHOD_2_6844B249C60DE97D_OFFSET UNITYSDK_OFFSET(0x9CF8E00)
+#define MOLEMOLE_CONFIG_ATTACKABLETARGETSELECTOR_METHOD_2_AD9D92D8E8D469F9_OFFSET UNITYSDK_OFFSET(0x9CF8A30)
+#define MOLEMOLE_CONFIG_ATTACKABLETARGETSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x9CF8F00)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AttackableTargetSelector_TypeDefinitionIndex = 65378;
+	inline static constexpr unsigned int AttackableTargetSelector_TypeDefinitionIndex = 58637;
 
 	class AttackableTargetSelector : public ::MoleMole::Config::ConfigTargetSelector
 	{

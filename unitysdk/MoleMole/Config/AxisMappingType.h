@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AxisMappingType_TypeDefinitionIndex = 61695;
+	inline static constexpr unsigned int AxisMappingType_TypeDefinitionIndex = 68684;
 
 	enum class AxisMappingType : ::System::Int32
 	{

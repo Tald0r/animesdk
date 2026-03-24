@@ -3,11 +3,11 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EQuestLifeType_TypeDefinitionIndex = 13360;
+	inline static constexpr unsigned int EQuestLifeType_TypeDefinitionIndex = 14852;
 
 	enum class EQuestLifeType : ::System::Int16
 	{
-		Dungeon = 1,
 		World = 0,
+		Dungeon = 1,
 	};
 }

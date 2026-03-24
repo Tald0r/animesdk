@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_1_F5305E2110EE0B0C;
-namespace System { template <typename T1, typename T2> class Func_2; }
-namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+class Class_1_EA1FEF8121ADE963;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_310_TypeDefinitionIndex = 41941;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_310_TypeDefinitionIndex = 42339;
 
 class Class_0_16E4307DCC419505_310
 {

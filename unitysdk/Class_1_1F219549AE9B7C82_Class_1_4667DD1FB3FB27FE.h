@@ -5,9 +5,9 @@
 class Class_1_1F219549AE9B7C82_Class_1_30CC7B254BCCB402;
 namespace MoleMole { class UIGeneralTipsPopWindowController; }
 
-#define CLASS_1_1F219549AE9B7C82_CLASS_1_4667DD1FB3FB27FE__CTOR_OFFSET UNITYSDK_OFFSET(0x8BC3510)
+#define CLASS_1_1F219549AE9B7C82_CLASS_1_4667DD1FB3FB27FE__CTOR_OFFSET UNITYSDK_OFFSET(0xD6D99B0)
 
-inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Class_1_4667DD1FB3FB27FE_TypeDefinitionIndex = 57097;
+inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Class_1_4667DD1FB3FB27FE_TypeDefinitionIndex = 62825;
 
 class Class_1_1F219549AE9B7C82_Class_1_4667DD1FB3FB27FE : public ::System::Object
 {

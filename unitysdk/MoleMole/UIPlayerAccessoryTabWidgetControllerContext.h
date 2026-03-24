@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIPLAYERACCESSORYTABWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCA3D7B0)
+#define MOLEMOLE_UIPLAYERACCESSORYTABWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD79E140)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryTabWidgetControllerContext_TypeDefinitionIndex = 69715;
+	inline static constexpr unsigned int UIPlayerAccessoryTabWidgetControllerContext_TypeDefinitionIndex = 68955;
 
 	class UIPlayerAccessoryTabWidgetControllerContext : public ::MoleMole::UIControllerContextBase
 	{

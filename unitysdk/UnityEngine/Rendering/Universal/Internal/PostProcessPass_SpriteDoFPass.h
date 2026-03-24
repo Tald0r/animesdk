@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int PostProcessPass_SpriteDoFPass_TypeDefinitionIndex = 29050;
+	inline static constexpr unsigned int PostProcessPass_SpriteDoFPass_TypeDefinitionIndex = 30003;
 
 	enum class PostProcessPass_SpriteDoFPass : ::System::Int32
 	{

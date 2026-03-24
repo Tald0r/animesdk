@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIMAINCITYNAVIGATIONPAGECONTROLLER___C__DISPLAYCLASS34_1__CTOR_OFFSET UNITYSDK_OFFSET(0x92AAB30)
-#define MOLEMOLE_UIMAINCITYNAVIGATIONPAGECONTROLLER___C__DISPLAYCLASS34_1__SELECTAREA_B__1_OFFSET UNITYSDK_OFFSET(0x92AAB40)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONPAGECONTROLLER___C__DISPLAYCLASS34_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAF73960)
+#define MOLEMOLE_UIMAINCITYNAVIGATIONPAGECONTROLLER___C__DISPLAYCLASS34_1__SELECTAREA_B__1_OFFSET UNITYSDK_OFFSET(0xAF73970)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityNavigationPageController___c__DisplayClass34_1_TypeDefinitionIndex = 41274;
+	inline static constexpr unsigned int UIMainCityNavigationPageController___c__DisplayClass34_1_TypeDefinitionIndex = 64297;
 
 	class UIMainCityNavigationPageController___c__DisplayClass34_1 : public ::System::Object
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_SRPGLOBALPARAMETERS__CTOR_OFFSET UNITYSDK_OFFSET(0x197CE140)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SRPGLOBALPARAMETERS__CTOR_OFFSET UNITYSDK_OFFSET(0x19C3DBE0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SRPGlobalParameters_TypeDefinitionIndex = 6020;
+	inline static constexpr unsigned int SRPGlobalParameters_TypeDefinitionIndex = 6023;
 
 	class SRPGlobalParameters : public ::System::Object
 	{

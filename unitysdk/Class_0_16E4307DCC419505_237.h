@@ -1,9 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/GameplayTag.h"
 
-class Class_1_EA1FEF8121ADE963;
+class Class_0_16E4307DCC419505_183;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_237_TypeDefinitionIndex = 57553;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_237_TypeDefinitionIndex = 64270;
 
 class Class_0_16E4307DCC419505_237
 {

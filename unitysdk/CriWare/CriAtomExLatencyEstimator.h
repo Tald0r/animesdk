@@ -3,12 +3,12 @@
 #include "unitysdk/CriWare/CriAtomExLatencyEstimator_EstimatorInfo.h"
 #include "unitysdk/System/Object.h"
 
-#define CRIWARE_CRIATOMEXLATENCYESTIMATOR_FINALIZEMODULE_OFFSET UNITYSDK_OFFSET(0x1B0D9DD0)
-#define CRIWARE_CRIATOMEXLATENCYESTIMATOR_GETCURRENTINFO_OFFSET UNITYSDK_OFFSET(0x1B0D9DE0)
+#define CRIWARE_CRIATOMEXLATENCYESTIMATOR_FINALIZEMODULE_OFFSET UNITYSDK_OFFSET(0x1B6EA940)
+#define CRIWARE_CRIATOMEXLATENCYESTIMATOR_GETCURRENTINFO_OFFSET UNITYSDK_OFFSET(0x1B6EA950)
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriAtomExLatencyEstimator_TypeDefinitionIndex = 31246;
+	inline static constexpr unsigned int CriAtomExLatencyEstimator_TypeDefinitionIndex = 32198;
 
 	class CriAtomExLatencyEstimator : public ::System::Object
 	{

@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/Enum_3_340DE32BA097F66C.h"
 #include "unitysdk/System/Object.h"
 
 namespace MoleMole { class ScrollViewItemWidgetController; }
@@ -8,18 +8,18 @@ namespace MoleMole { class UIControlReference; }
 namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA613870)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___C__DISPLAYCLASS41_0__SETSINGLECREATEFUNC_B__0_OFFSET UNITYSDK_OFFSET(0xA613880)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC131A50)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGV2POPWINDOWCONTROLLER___C__DISPLAYCLASS41_0__SETSINGLECREATEFUNC_B__0_OFFSET UNITYSDK_OFFSET(0xC131A60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardOptionsDialogV2PopWindowController___c__DisplayClass41_0_TypeDefinitionIndex = 44261;
+	inline static constexpr unsigned int UIHollowCardOptionsDialogV2PopWindowController___c__DisplayClass41_0_TypeDefinitionIndex = 51631;
 
 	class UIHollowCardOptionsDialogV2PopWindowController___c__DisplayClass41_0 : public ::System::Object
 	{
 	public:
-		::System::Func_3<::Enum_3_B90C1A15EA6E3C2B, ::System::Func_1<::MoleMole::UIControlReference*>*, ::MoleMole::ScrollViewItemWidgetController*>* createFunc; // 0x10
-		::Enum_3_B90C1A15EA6E3C2B ctrlId; // 0x18
+		::System::Func_3<::Enum_3_340DE32BA097F66C, ::System::Func_1<::MoleMole::UIControlReference*>*, ::MoleMole::ScrollViewItemWidgetController*>* createFunc; // 0x10
+		::Enum_3_340DE32BA097F66C ctrlId; // 0x18
 
 		::System::Void _ctor()
 		{

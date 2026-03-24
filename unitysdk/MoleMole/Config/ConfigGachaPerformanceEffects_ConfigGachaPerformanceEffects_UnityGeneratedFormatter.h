@@ -15,38 +15,38 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCD05B20)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCD05B30)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCD06350)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD06840)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD06800)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE35E000)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE35E010)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE35E830)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE35ED20)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEEFFECTS_CONFIGGACHAPERFORMANCEEFFECTS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE35ECE0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex = 75182;
+	inline static constexpr unsigned int ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex = 78204;
 
 	class ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigGachaPerformanceEffects*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaPerformanceScreenEffect>*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaPerformanceScreenEffect>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F720);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaTvResultGroupEffects>*>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaTvResultGroupEffects>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F728);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::String*>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F730);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaTvResultGroupEffects>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31260);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::Single>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F738);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31268);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::String*>*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31270);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaPerformanceScreenEffect>*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigGachaPerformanceScreenEffect>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31278);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityGaussianBlurEffect*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityGaussianBlurEffect*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F740);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityGaussianBlurEffect*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceEffects_ConfigGachaPerformanceEffects_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31280);
 		}
 
 		::System::Void _ctor()

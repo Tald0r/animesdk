@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTCULLOPTIMIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x180400A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTCULLOPTIMIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x18662120)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int LightCullOptimizer_TypeDefinitionIndex = 28563;
+	inline static constexpr unsigned int LightCullOptimizer_TypeDefinitionIndex = 29506;
 
 	class LightCullOptimizer : public ::UnityEngine::MonoBehaviour
 	{

@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIITEMICONBTNSMALLWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB228530)
+#define MOLEMOLE_UIITEMICONBTNSMALLWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x745D1A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIItemIconBtnSmallWidgetContext_TypeDefinitionIndex = 65464;
+	inline static constexpr unsigned int UIItemIconBtnSmallWidgetContext_TypeDefinitionIndex = 38816;
 
 	class UIItemIconBtnSmallWidgetContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Boolean EnableJump; // 0x28
-		::System::Boolean EmptyShowBg; // 0x29
+		::System::Boolean EmptyShowBg; // 0x28
+		::System::Boolean EnableJump; // 0x29
 
 		::System::Void _ctor()
 		{

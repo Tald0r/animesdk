@@ -6,11 +6,11 @@
 namespace NPCCrowd::AI { class FeaturePointPathRefList; }
 namespace NPCCrowd::AI { class FeaturePointRef; }
 
-#define NPCCROWD_AI_PATHGRAPHCROSSINGBATCHSPAWNGROUPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6B3C050)
+#define NPCCROWD_AI_PATHGRAPHCROSSINGBATCHSPAWNGROUPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x77ECBF0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphCrossingBatchSpawnGroupConfig_TypeDefinitionIndex = 41283;
+	inline static constexpr unsigned int PathGraphCrossingBatchSpawnGroupConfig_TypeDefinitionIndex = 77704;
 
 	class PathGraphCrossingBatchSpawnGroupConfig : public ::NPCCrowd::AI::PathGraphSpawnGroupConfig
 	{

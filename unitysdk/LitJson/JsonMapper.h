@@ -23,113 +23,113 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::IO { class TextReader; }
 namespace System::Reflection { class MethodInfo; }
 
-#define LITJSON_JSONMAPPER_ADDARRAYMETADATA_OFFSET UNITYSDK_OFFSET(0x1A4853B0)
-#define LITJSON_JSONMAPPER_ADDOBJECTMETADATA_OFFSET UNITYSDK_OFFSET(0x1A485870)
-#define LITJSON_JSONMAPPER_ADDTYPEPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1A4863C0)
-#define LITJSON_JSONMAPPER_CHECKSTATIC_OFFSET UNITYSDK_OFFSET(0x1A48A610)
-#define LITJSON_JSONMAPPER_CONVERTKEYTOSTRING_OFFSET UNITYSDK_OFFSET(0x1A48CA70)
-#define LITJSON_JSONMAPPER_GETCONVOP_OFFSET UNITYSDK_OFFSET(0x1A4869D0)
-#define LITJSON_JSONMAPPER_ISATTRIBUTEEXPORT_OFFSET UNITYSDK_OFFSET(0x1A48A700)
-#define LITJSON_JSONMAPPER_PARSEKEY_OFFSET UNITYSDK_OFFSET(0x1A487550)
-#define LITJSON_JSONMAPPER_READDICKEY_OFFSET UNITYSDK_OFFSET(0x1A487500)
-#define LITJSON_JSONMAPPER_READSKIP_OFFSET UNITYSDK_OFFSET(0x1A48A7D0)
-#define LITJSON_JSONMAPPER_READVALUE_1_OFFSET UNITYSDK_OFFSET(0x1A48A900)
-#define LITJSON_JSONMAPPER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1A487570)
-#define LITJSON_JSONMAPPER_REGISTERASSEMBLYNAME_OFFSET UNITYSDK_OFFSET(0x1A48D250)
-#define LITJSON_JSONMAPPER_REGISTERBASEEXPORTERS_OFFSET UNITYSDK_OFFSET(0x1A483000)
-#define LITJSON_JSONMAPPER_REGISTERBASEIMPORTERS_OFFSET UNITYSDK_OFFSET(0x1A4840B0)
-#define LITJSON_JSONMAPPER_REGISTERGENERICCONVERTTYPE_OFFSET UNITYSDK_OFFSET(0x1A48D310)
-#define LITJSON_JSONMAPPER_REGISTERIMPORTER_OFFSET UNITYSDK_OFFSET(0x1A48B620)
-#define LITJSON_JSONMAPPER_SAFECREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A4873F0)
-#define LITJSON_JSONMAPPER_TOJSON_1_OFFSET UNITYSDK_OFFSET(0x1A48CBF0)
-#define LITJSON_JSONMAPPER_TOJSON_2_OFFSET UNITYSDK_OFFSET(0x1A48CCF0)
-#define LITJSON_JSONMAPPER_TOJSON_OFFSET UNITYSDK_OFFSET(0x1A48CA90)
-#define LITJSON_JSONMAPPER_TOOBJECT_1_OFFSET UNITYSDK_OFFSET(0x1A48CE90)
-#define LITJSON_JSONMAPPER_TOOBJECT_2_OFFSET UNITYSDK_OFFSET(0x1A48D000)
-#define LITJSON_JSONMAPPER_TOOBJECT_3_OFFSET UNITYSDK_OFFSET(0x1A48D1F0)
-#define LITJSON_JSONMAPPER_TOOBJECT_OFFSET UNITYSDK_OFFSET(0x1A48CD60)
-#define LITJSON_JSONMAPPER_TOWRAPPER_1_OFFSET UNITYSDK_OFFSET(0x1A48D1A0)
-#define LITJSON_JSONMAPPER_TOWRAPPER_OFFSET UNITYSDK_OFFSET(0x1A48B5E0)
-#define LITJSON_JSONMAPPER_UNREGISTEREXPORTERS_OFFSET UNITYSDK_OFFSET(0x1A48D3D0)
-#define LITJSON_JSONMAPPER_UNREGISTERIMPORTERS_OFFSET UNITYSDK_OFFSET(0x1A48D4F0)
-#define LITJSON_JSONMAPPER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1A48B910)
-#define LITJSON_JSONMAPPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A482A90)
-#define LITJSON_JSONMAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A48D610)
+#define LITJSON_JSONMAPPER_ADDARRAYMETADATA_OFFSET UNITYSDK_OFFSET(0x1AA326D0)
+#define LITJSON_JSONMAPPER_ADDOBJECTMETADATA_OFFSET UNITYSDK_OFFSET(0x1AA32B90)
+#define LITJSON_JSONMAPPER_ADDTYPEPROPERTIES_OFFSET UNITYSDK_OFFSET(0x1AA336E0)
+#define LITJSON_JSONMAPPER_CHECKSTATIC_OFFSET UNITYSDK_OFFSET(0x1AA37930)
+#define LITJSON_JSONMAPPER_CONVERTKEYTOSTRING_OFFSET UNITYSDK_OFFSET(0x1AA39D90)
+#define LITJSON_JSONMAPPER_GETCONVOP_OFFSET UNITYSDK_OFFSET(0x1AA33CF0)
+#define LITJSON_JSONMAPPER_ISATTRIBUTEEXPORT_OFFSET UNITYSDK_OFFSET(0x1AA37A20)
+#define LITJSON_JSONMAPPER_PARSEKEY_OFFSET UNITYSDK_OFFSET(0x1AA34870)
+#define LITJSON_JSONMAPPER_READDICKEY_OFFSET UNITYSDK_OFFSET(0x1AA34820)
+#define LITJSON_JSONMAPPER_READSKIP_OFFSET UNITYSDK_OFFSET(0x1AA37AF0)
+#define LITJSON_JSONMAPPER_READVALUE_1_OFFSET UNITYSDK_OFFSET(0x1AA37C20)
+#define LITJSON_JSONMAPPER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1AA34890)
+#define LITJSON_JSONMAPPER_REGISTERASSEMBLYNAME_OFFSET UNITYSDK_OFFSET(0x1AA3A570)
+#define LITJSON_JSONMAPPER_REGISTERBASEEXPORTERS_OFFSET UNITYSDK_OFFSET(0x1AA30310)
+#define LITJSON_JSONMAPPER_REGISTERBASEIMPORTERS_OFFSET UNITYSDK_OFFSET(0x1AA313C0)
+#define LITJSON_JSONMAPPER_REGISTERGENERICCONVERTTYPE_OFFSET UNITYSDK_OFFSET(0x1AA3A630)
+#define LITJSON_JSONMAPPER_REGISTERIMPORTER_OFFSET UNITYSDK_OFFSET(0x1AA38940)
+#define LITJSON_JSONMAPPER_SAFECREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1AA34710)
+#define LITJSON_JSONMAPPER_TOJSON_1_OFFSET UNITYSDK_OFFSET(0x1AA39F10)
+#define LITJSON_JSONMAPPER_TOJSON_2_OFFSET UNITYSDK_OFFSET(0x1AA3A010)
+#define LITJSON_JSONMAPPER_TOJSON_OFFSET UNITYSDK_OFFSET(0x1AA39DB0)
+#define LITJSON_JSONMAPPER_TOOBJECT_1_OFFSET UNITYSDK_OFFSET(0x1AA3A1B0)
+#define LITJSON_JSONMAPPER_TOOBJECT_2_OFFSET UNITYSDK_OFFSET(0x1AA3A320)
+#define LITJSON_JSONMAPPER_TOOBJECT_3_OFFSET UNITYSDK_OFFSET(0x1AA3A510)
+#define LITJSON_JSONMAPPER_TOOBJECT_OFFSET UNITYSDK_OFFSET(0x1AA3A080)
+#define LITJSON_JSONMAPPER_TOWRAPPER_1_OFFSET UNITYSDK_OFFSET(0x1AA3A4C0)
+#define LITJSON_JSONMAPPER_TOWRAPPER_OFFSET UNITYSDK_OFFSET(0x1AA38900)
+#define LITJSON_JSONMAPPER_UNREGISTEREXPORTERS_OFFSET UNITYSDK_OFFSET(0x1AA3A6F0)
+#define LITJSON_JSONMAPPER_UNREGISTERIMPORTERS_OFFSET UNITYSDK_OFFSET(0x1AA3A810)
+#define LITJSON_JSONMAPPER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1AA38C30)
+#define LITJSON_JSONMAPPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AA2FDA0)
+#define LITJSON_JSONMAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA3A930)
 
 namespace LitJson
 {
-	inline static constexpr unsigned int JsonMapper_TypeDefinitionIndex = 8066;
+	inline static constexpr unsigned int JsonMapper_TypeDefinitionIndex = 8249;
 
 	class JsonMapper : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>** StaticGet_custom_importers_table()
-		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AC0);
-		}
-		static ::System::IFormatProvider** StaticGet_datetime_format()
-		{
-			return (::System::IFormatProvider**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AC8);
-		}
-		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_customGenericConvertList()
-		{
-			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AD0);
-		}
 		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>** StaticGet_base_importers_table()
 		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AD8);
-		}
-		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>*>** StaticGet_conv_ops()
-		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AE0);
-		}
-		static ::System::Object** StaticGet_type_properties_lock()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AE8);
-		}
-		static ::LitJson::JsonWriter** StaticGet_static_writer()
-		{
-			return (::LitJson::JsonWriter**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AF0);
-		}
-		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ObjectMetadata>** StaticGet_object_metadata()
-		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ObjectMetadata>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AF8);
-		}
-		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>** StaticGet_custom_exporters_table()
-		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B00);
-		}
-		static ::System::Object** StaticGet_array_metadata_lock()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B08);
-		}
-		static ::System::Object** StaticGet_static_writer_lock()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B10);
-		}
-		static ::System::Object** StaticGet_object_metadata_lock()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B18);
-		}
-		static ::System::Collections::Generic::List_1<::System::String*>** StaticGet_assemblyNames()
-		{
-			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B20);
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AF0);
 		}
 		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IList_1<::LitJson::PropertyMetadata>*>** StaticGet_type_properties()
 		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IList_1<::LitJson::PropertyMetadata>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B28);
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IList_1<::LitJson::PropertyMetadata>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6AF8);
+		}
+		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>** StaticGet_custom_importers_table()
+		{
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ImporterFunc*>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B00);
+		}
+		static ::LitJson::JsonWriter** StaticGet_static_writer()
+		{
+			return (::LitJson::JsonWriter**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B08);
+		}
+		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ObjectMetadata>** StaticGet_object_metadata()
+		{
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ObjectMetadata>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B10);
+		}
+		static ::System::IFormatProvider** StaticGet_datetime_format()
+		{
+			return (::System::IFormatProvider**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B18);
+		}
+		static ::System::Object** StaticGet_conv_ops_lock()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B20);
+		}
+		static ::System::Object** StaticGet_type_properties_lock()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B28);
 		}
 		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ArrayMetadata>** StaticGet_array_metadata()
 		{
 			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ArrayMetadata>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B30);
 		}
-		static ::System::Object** StaticGet_conv_ops_lock()
+		static ::System::Object** StaticGet_array_metadata_lock()
 		{
 			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B38);
 		}
+		static ::System::Object** StaticGet_object_metadata_lock()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B40);
+		}
+		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_customGenericConvertList()
+		{
+			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B48);
+		}
+		static ::System::Collections::Generic::List_1<::System::String*>** StaticGet_assemblyNames()
+		{
+			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B50);
+		}
+		static ::System::Object** StaticGet_static_writer_lock()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B58);
+		}
+		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>*>** StaticGet_conv_ops()
+		{
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Collections::Generic::IDictionary_2<::System::Type*, ::System::Reflection::MethodInfo*>*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B60);
+		}
 		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>** StaticGet_base_exporters_table()
 		{
-			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B40);
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B68);
+		}
+		static ::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>** StaticGet_custom_exporters_table()
+		{
+			return (::System::Collections::Generic::IDictionary_2<::System::Type*, ::LitJson::ExporterFunc*>**)Il2CppClass::FromTypeDefinitionIndex(JsonMapper_TypeDefinitionIndex)->GetStaticField(0x6B70);
 		}
 		static ::System::Int32* StaticGet_max_nesting_depth()
 		{

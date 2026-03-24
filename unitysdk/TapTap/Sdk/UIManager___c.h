@@ -4,24 +4,24 @@
 
 namespace TapTap::Sdk { class UIAnimator_Action; }
 
-#define TAPTAP_SDK_UIMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A7CCA40)
-#define TAPTAP_SDK_UIMANAGER___C__CREATECONTAINER_B__10_0_OFFSET UNITYSDK_OFFSET(0x1A7CCA90)
-#define TAPTAP_SDK_UIMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7CCA80)
+#define TAPTAP_SDK_UIMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADAE710)
+#define TAPTAP_SDK_UIMANAGER___C__CREATECONTAINER_B__10_0_OFFSET UNITYSDK_OFFSET(0x1ADAE760)
+#define TAPTAP_SDK_UIMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADAE750)
 
 namespace TapTap::Sdk
 {
-	inline static constexpr unsigned int UIManager___c_TypeDefinitionIndex = 9455;
+	inline static constexpr unsigned int UIManager___c_TypeDefinitionIndex = 9457;
 
 	class UIManager___c : public ::System::Object
 	{
 	public:
-		static ::TapTap::Sdk::UIManager___c** StaticGet___9()
-		{
-			return (::TapTap::Sdk::UIManager___c**)Il2CppClass::FromTypeDefinitionIndex(UIManager___c_TypeDefinitionIndex)->GetStaticField(0x8960);
-		}
 		static ::TapTap::Sdk::UIAnimator_Action** StaticGet___9__10_0()
 		{
-			return (::TapTap::Sdk::UIAnimator_Action**)Il2CppClass::FromTypeDefinitionIndex(UIManager___c_TypeDefinitionIndex)->GetStaticField(0x8968);
+			return (::TapTap::Sdk::UIAnimator_Action**)Il2CppClass::FromTypeDefinitionIndex(UIManager___c_TypeDefinitionIndex)->GetStaticField(0x89A0);
+		}
+		static ::TapTap::Sdk::UIManager___c** StaticGet___9()
+		{
+			return (::TapTap::Sdk::UIManager___c**)Il2CppClass::FromTypeDefinitionIndex(UIManager___c_TypeDefinitionIndex)->GetStaticField(0x89A8);
 		}
 
 		static ::System::Void _cctor()

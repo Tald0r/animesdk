@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define RECTANGLEPACKER_SORTABLESIZE__CTOR_OFFSET UNITYSDK_OFFSET(0x2CA8F0)
+#define RECTANGLEPACKER_SORTABLESIZE__CTOR_OFFSET UNITYSDK_OFFSET(0x37EE40)
 
-inline static constexpr unsigned int RectanglePacker_SortableSize_TypeDefinitionIndex = 28173;
+inline static constexpr unsigned int RectanglePacker_SortableSize_TypeDefinitionIndex = 29114;
 
 struct alignas(4) RectanglePacker_SortableSize
 {

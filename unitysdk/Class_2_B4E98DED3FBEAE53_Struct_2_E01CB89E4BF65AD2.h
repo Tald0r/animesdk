@@ -12,25 +12,25 @@ namespace MoleMole { class MapChangeLayerConfig; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace System::Threading { class CancellationTokenSource; }
 
-#define CLASS_2_B4E98DED3FBEAE53_STRUCT_2_E01CB89E4BF65AD2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2D00E0)
-#define CLASS_2_B4E98DED3FBEAE53_STRUCT_2_E01CB89E4BF65AD2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_B4E98DED3FBEAE53_STRUCT_2_E01CB89E4BF65AD2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x4C8810)
+#define CLASS_2_B4E98DED3FBEAE53_STRUCT_2_E01CB89E4BF65AD2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_B4E98DED3FBEAE53_Struct_2_E01CB89E4BF65AD2_TypeDefinitionIndex = 44504;
+inline static constexpr unsigned int Class_2_B4E98DED3FBEAE53_Struct_2_E01CB89E4BF65AD2_TypeDefinitionIndex = 76379;
 
 struct alignas(8) Class_2_B4E98DED3FBEAE53_Struct_2_E01CB89E4BF65AD2
 {
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x10
+	::MonoSceneMap3DConfig* Field_2_5; // 0x10
+	::MoleMole::MapChangeLayerConfig* Field_2_7; // 0x18
 	::System::Threading::CancellationToken Field_2_4; // 0x20
-	::Class_2_B4E98DED3FBEAE53* Field_2_2; // 0x28
-	::MoleMole::MapChangeLayerConfig* Field_2_7; // 0x30
-	::System::Threading::CancellationTokenSource* Field_2_10; // 0x38
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_11; // 0x40
-	::MonoSceneMap3DConfig* Field_2_5; // 0x50
-	::MoleMole::MapChangeLayerConfig* Field_2_6; // 0x58
-	::UnityEngine::Vector3 Field_2_8; // 0x60
-	::System::Int32 Field_2_3; // 0x6C
-	::System::Int32 Field_2_0; // 0x70
-	::UnityEngine::Vector3 Field_2_9; // 0x74
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x28
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_11; // 0x38
+	::MoleMole::MapChangeLayerConfig* Field_2_6; // 0x48
+	::System::Threading::CancellationTokenSource* Field_2_10; // 0x50
+	::Class_2_B4E98DED3FBEAE53* Field_2_2; // 0x58
+	::UnityEngine::Vector3 Field_2_9; // 0x60
+	::UnityEngine::Vector3 Field_2_8; // 0x6C
+	::System::Int32 Field_2_3; // 0x78
+	::System::Int32 Field_2_0; // 0x7C
 
 	::System::Void MoveNext()
 	{

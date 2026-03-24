@@ -2,25 +2,25 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_025FF4981524A424_227;
+class Class_3_025FF4981524A424_50;
 namespace System { template <typename T1, typename T2> class Action_2; }
 
-#define CLASS_4_7E82C7E8DB390FD9___C_METHOD_1_003058BFEB1A8728_OFFSET UNITYSDK_OFFSET(0x9EF9410)
-#define CLASS_4_7E82C7E8DB390FD9___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9EF93C0)
-#define CLASS_4_7E82C7E8DB390FD9___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9EF9400)
+#define CLASS_4_7E82C7E8DB390FD9___C_METHOD_1_003058BFEB1A8728_OFFSET UNITYSDK_OFFSET(0x8235B50)
+#define CLASS_4_7E82C7E8DB390FD9___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8235B00)
+#define CLASS_4_7E82C7E8DB390FD9___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8235B40)
 
-inline static constexpr unsigned int Class_4_7E82C7E8DB390FD9___c_TypeDefinitionIndex = 50399;
+inline static constexpr unsigned int Class_4_7E82C7E8DB390FD9___c_TypeDefinitionIndex = 78669;
 
 class Class_4_7E82C7E8DB390FD9___c : public ::System::Object
 {
 public:
 	static ::Class_4_7E82C7E8DB390FD9___c** StaticGet___9()
 	{
-		return (::Class_4_7E82C7E8DB390FD9___c**)Il2CppClass::FromTypeDefinitionIndex(Class_4_7E82C7E8DB390FD9___c_TypeDefinitionIndex)->GetStaticField(0x36F40);
+		return (::Class_4_7E82C7E8DB390FD9___c**)Il2CppClass::FromTypeDefinitionIndex(Class_4_7E82C7E8DB390FD9___c_TypeDefinitionIndex)->GetStaticField(0x389E0);
 	}
-	static ::System::Action_2<::System::Boolean, ::Class_3_025FF4981524A424_227*>** StaticGet___9__5_0()
+	static ::System::Action_2<::System::Boolean, ::Class_3_025FF4981524A424_50*>** StaticGet___9__5_0()
 	{
-		return (::System::Action_2<::System::Boolean, ::Class_3_025FF4981524A424_227*>**)Il2CppClass::FromTypeDefinitionIndex(Class_4_7E82C7E8DB390FD9___c_TypeDefinitionIndex)->GetStaticField(0x36F48);
+		return (::System::Action_2<::System::Boolean, ::Class_3_025FF4981524A424_50*>**)Il2CppClass::FromTypeDefinitionIndex(Class_4_7E82C7E8DB390FD9___c_TypeDefinitionIndex)->GetStaticField(0x389E8);
 	}
 
 	static ::System::Void _cctor()
@@ -33,8 +33,8 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_4_7E82C7E8DB390FD9___C__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_003058BFEB1A8728(::System::Boolean a1, ::Class_3_025FF4981524A424_227* a2)
+	::System::Void Method_1_003058BFEB1A8728(::System::Boolean a1, ::Class_3_025FF4981524A424_50* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_3_025FF4981524A424_227*))((::PBYTE)hIl2Cpp + CLASS_4_7E82C7E8DB390FD9___C_METHOD_1_003058BFEB1A8728_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_3_025FF4981524A424_50*))((::PBYTE)hIl2Cpp + CLASS_4_7E82C7E8DB390FD9___C_METHOD_1_003058BFEB1A8728_OFFSET))(this, a1, a2);
 	}
 };

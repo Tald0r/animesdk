@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
 
-#define FLOWCANVAS_NODES_LATCHBOOL_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19E8EBC0)
-#define FLOWCANVAS_NODES_LATCHBOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x19E8ED00)
+#define FLOWCANVAS_NODES_LATCHBOOL_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A47C3A0)
+#define FLOWCANVAS_NODES_LATCHBOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A47C4E0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LatchBool_TypeDefinitionIndex = 26561;
+	inline static constexpr unsigned int LatchBool_TypeDefinitionIndex = 27096;
 
 	class LatchBool : public ::FlowCanvas::Nodes::FlowControlNode
 	{

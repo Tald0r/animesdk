@@ -4,7 +4,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int Holder_1_TypeDefinitionIndex = 34526;
+	inline static constexpr unsigned int Holder_1_TypeDefinitionIndex = 35528;
 
 	template <typename T>
 	class Holder_1 : public ::System::Object

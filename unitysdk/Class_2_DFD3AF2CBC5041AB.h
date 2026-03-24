@@ -7,24 +7,24 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIOnlinePlayerItemWidgetController; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_DFD3AF2CBC5041AB_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x96875D0)
-#define CLASS_2_DFD3AF2CBC5041AB_METHOD_2_6C6C02341A6C6B8A_OFFSET UNITYSDK_OFFSET(0x9687400)
-#define CLASS_2_DFD3AF2CBC5041AB_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9687680)
-#define CLASS_2_DFD3AF2CBC5041AB__CTOR_OFFSET UNITYSDK_OFFSET(0x9687670)
+#define CLASS_2_DFD3AF2CBC5041AB_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0xD9F5690)
+#define CLASS_2_DFD3AF2CBC5041AB_METHOD_2_6C6C02341A6C6B8A_OFFSET UNITYSDK_OFFSET(0xD9F54C0)
+#define CLASS_2_DFD3AF2CBC5041AB_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD9F5740)
+#define CLASS_2_DFD3AF2CBC5041AB__CTOR_OFFSET UNITYSDK_OFFSET(0xD9F5730)
 
-inline static constexpr unsigned int Class_2_DFD3AF2CBC5041AB_TypeDefinitionIndex = 67586;
+inline static constexpr unsigned int Class_2_DFD3AF2CBC5041AB_TypeDefinitionIndex = 79394;
 
 class Class_2_DFD3AF2CBC5041AB : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Transform* Field_2_5; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIOnlinePlayerItemWidgetController*>* Field_2_1; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIOnlinePlayerItemWidgetController*>* Field_2_1; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
+	::UnityEngine::Transform* Field_2_5; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
 
 	::System::Void _ctor()
 	{

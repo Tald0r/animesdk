@@ -5,13 +5,13 @@
 namespace UnityEngine { class Canvas; }
 namespace UnityEngine { class Transform; }
 
-#define UNITYENGINE_UI_PARTICLEAUTOORDER_SEARCHCANVAS_OFFSET UNITYSDK_OFFSET(0xD5D8330)
-#define UNITYENGINE_UI_PARTICLEAUTOORDER_START_OFFSET UNITYSDK_OFFSET(0xD5D8030)
-#define UNITYENGINE_UI_PARTICLEAUTOORDER__CTOR_OFFSET UNITYSDK_OFFSET(0xD5D8510)
+#define UNITYENGINE_UI_PARTICLEAUTOORDER_SEARCHCANVAS_OFFSET UNITYSDK_OFFSET(0x1A4C1910)
+#define UNITYENGINE_UI_PARTICLEAUTOORDER_START_OFFSET UNITYSDK_OFFSET(0x1A4C1610)
+#define UNITYENGINE_UI_PARTICLEAUTOORDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4C1AF0)
 
 namespace UnityEngine::UI
 {
-	inline static constexpr unsigned int ParticleAutoOrder_TypeDefinitionIndex = 62330;
+	inline static constexpr unsigned int ParticleAutoOrder_TypeDefinitionIndex = 68938;
 
 	class ParticleAutoOrder : public ::UnityEngine::MonoBehaviour
 	{

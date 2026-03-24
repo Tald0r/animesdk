@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int ENPCAvatarHandItem_TypeDefinitionIndex = 72380;
+inline static constexpr unsigned int ENPCAvatarHandItem_TypeDefinitionIndex = 73329;
 
 enum class ENPCAvatarHandItem : ::System::Int32
 {
-	Phone = 0,
 	CoffeeCup = 1,
+	Phone = 0,
 };

@@ -3,19 +3,19 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_1685EC66FBD28897;
-template <typename T> class Class_0_16E4307DCC41950C_13;
+template <typename T> class Class_0_16E4307DCC41950C_15;
 
-#define MOLEMOLE_UIDEPOSITORYGACHAPREVIEWPAGECONTROLLER___C__DISPLAYCLASS41_0__CREATEFILTERANDSORTDATA_B__0_OFFSET UNITYSDK_OFFSET(0xC0E8B70)
-#define MOLEMOLE_UIDEPOSITORYGACHAPREVIEWPAGECONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC0E8B60)
+#define MOLEMOLE_UIDEPOSITORYGACHAPREVIEWPAGECONTROLLER___C__DISPLAYCLASS41_0__CREATEFILTERANDSORTDATA_B__0_OFFSET UNITYSDK_OFFSET(0xB0D6BA0)
+#define MOLEMOLE_UIDEPOSITORYGACHAPREVIEWPAGECONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB0D6B90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDepositoryGachaPreviewPageController___c__DisplayClass41_0_TypeDefinitionIndex = 63190;
+	inline static constexpr unsigned int UIDepositoryGachaPreviewPageController___c__DisplayClass41_0_TypeDefinitionIndex = 47413;
 
 	class UIDepositoryGachaPreviewPageController___c__DisplayClass41_0 : public ::System::Object
 	{
 	public:
-		::Class_0_16E4307DCC41950C_13<::Class_1_1685EC66FBD28897*>* slotFilterGroup; // 0x10
+		::Class_0_16E4307DCC41950C_15<::Class_1_1685EC66FBD28897*>* slotFilterGroup; // 0x10
 
 		::System::Void _ctor()
 		{

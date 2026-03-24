@@ -1,32 +1,32 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_54.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_62.h"
 
 class Class_1_E5B7864412CDC074;
 class Class_5_AF65C3A968E836D2;
 namespace MoleMole::Config { class ConfigHollowChessboard; }
 
-#define CLASS_2_EEDBB50F09BD3BB2_METHOD_2_DF249C0E36759C3F_OFFSET UNITYSDK_OFFSET(0x7B86610)
-#define CLASS_2_EEDBB50F09BD3BB2_METHOD_2_E3ADA5CA2C064E44_OFFSET UNITYSDK_OFFSET(0x7B86590)
-#define CLASS_2_EEDBB50F09BD3BB2_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x7B86750)
-#define CLASS_2_EEDBB50F09BD3BB2__CCTOR_OFFSET UNITYSDK_OFFSET(0x7B86760)
-#define CLASS_2_EEDBB50F09BD3BB2__CTOR_OFFSET UNITYSDK_OFFSET(0x7B86580)
+#define CLASS_2_EEDBB50F09BD3BB2_METHOD_2_DF249C0E36759C3F_OFFSET UNITYSDK_OFFSET(0x671D1A0)
+#define CLASS_2_EEDBB50F09BD3BB2_METHOD_2_E3ADA5CA2C064E44_OFFSET UNITYSDK_OFFSET(0x671D120)
+#define CLASS_2_EEDBB50F09BD3BB2_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x671D2E0)
+#define CLASS_2_EEDBB50F09BD3BB2__CCTOR_OFFSET UNITYSDK_OFFSET(0x671D2F0)
+#define CLASS_2_EEDBB50F09BD3BB2__CTOR_OFFSET UNITYSDK_OFFSET(0x671D110)
 
-inline static constexpr unsigned int Class_2_EEDBB50F09BD3BB2_TypeDefinitionIndex = 69738;
+inline static constexpr unsigned int Class_2_EEDBB50F09BD3BB2_TypeDefinitionIndex = 44015;
 
-class Class_2_EEDBB50F09BD3BB2 : public ::Class_1_43BD383C98B4C0C5_54
+class Class_2_EEDBB50F09BD3BB2 : public ::Class_1_43BD383C98B4C0C5_62
 {
 public:
-	static ::System::Single* StaticGet_Field_2_0()
-	{
-		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_2_EEDBB50F09BD3BB2_TypeDefinitionIndex)->GetStaticField(0x11570);
-	}
 	static ::System::Single* StaticGet_Field_2_1()
 	{
-		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_2_EEDBB50F09BD3BB2_TypeDefinitionIndex)->GetStaticField(0x11574);
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_2_EEDBB50F09BD3BB2_TypeDefinitionIndex)->GetStaticField(0xA1A0);
 	}
-	::MoleMole::Config::ConfigHollowChessboard* Field_2_3; // 0x10
-	::Class_5_AF65C3A968E836D2* Field_2_2; // 0x18
+	static ::System::Single* StaticGet_Field_2_0()
+	{
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_2_EEDBB50F09BD3BB2_TypeDefinitionIndex)->GetStaticField(0xA1A4);
+	}
+	::Class_5_AF65C3A968E836D2* Field_2_2; // 0x10
+	::MoleMole::Config::ConfigHollowChessboard* Field_2_3; // 0x18
 	::Class_1_E5B7864412CDC074* Field_2_4; // 0x20
 	::System::Boolean Field_2_5; // 0x28
 

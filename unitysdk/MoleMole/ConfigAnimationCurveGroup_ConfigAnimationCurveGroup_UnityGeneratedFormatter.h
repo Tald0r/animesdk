@@ -11,38 +11,38 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE82AF20)
-#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE82AF30)
-#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE82B400)
-#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE82B720)
-#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE82B6E0)
+#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB47F680)
+#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB47F690)
+#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB47FB60)
+#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB47FE80)
+#define MOLEMOLE_CONFIGANIMATIONCURVEGROUP_CONFIGANIMATIONCURVEGROUP_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB47FE40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex = 52746;
+	inline static constexpr unsigned int ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex = 39665;
 
 	class ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigAnimationCurveGroup*>
 	{
 	public:
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47790);
+		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::AnimationCurve*>*>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::AnimationCurve*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41420);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::AnimationCurve*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47798);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41428);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41430);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477A0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41438);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477A8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41440);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAnimationCurveGroup_ConfigAnimationCurveGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477B0);
 		}
 
 		::System::Void _ctor()

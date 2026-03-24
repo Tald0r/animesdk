@@ -5,7 +5,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityGuideItemWidgetController___c__DisplayClass14_0_TypeDefinitionIndex = 37936;
+	inline static constexpr unsigned int UIMainCityGuideItemWidgetController___c__DisplayClass14_0_TypeDefinitionIndex = 42699;
 
 	struct alignas(4) UIMainCityGuideItemWidgetController___c__DisplayClass14_0
 	{

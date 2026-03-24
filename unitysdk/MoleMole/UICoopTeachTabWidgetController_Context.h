@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UICoopTeachTabWidgetController_Data; }
 
-#define MOLEMOLE_UICOOPTEACHTABWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA8EBD10)
+#define MOLEMOLE_UICOOPTEACHTABWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA915970)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopTeachTabWidgetController_Context_TypeDefinitionIndex = 52353;
+	inline static constexpr unsigned int UICoopTeachTabWidgetController_Context_TypeDefinitionIndex = 73681;
 
 	class UICoopTeachTabWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

@@ -4,17 +4,17 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_TABLECOLUMNNAMEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB0A5A0)
+#define SIRENIX_ODININSPECTOR_TABLECOLUMNNAMEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1166C0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int TableColumnNameAttribute_TypeDefinitionIndex = 7229;
+	inline static constexpr unsigned int TableColumnNameAttribute_TypeDefinitionIndex = 7234;
 
 	class TableColumnNameAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* Tooltip; // 0x10
-		::System::String* Name; // 0x18
+		::System::String* Name; // 0x10
+		::System::String* Tooltip; // 0x18
 
 		::System::Void _ctor(::System::String* name, ::System::String* tooltip)
 		{

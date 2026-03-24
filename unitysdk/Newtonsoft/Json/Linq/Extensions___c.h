@@ -7,24 +7,24 @@ namespace Newtonsoft::Json::Linq { class JProperty; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B137980)
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1379C0)
-#define NEWTONSOFT_JSON_LINQ_EXTENSIONS___C__PROPERTIES_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B1379D0)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B753FD0)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B754010)
+#define NEWTONSOFT_JSON_LINQ_EXTENSIONS___C__PROPERTIES_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B754020)
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int Extensions___c_TypeDefinitionIndex = 7028;
+	inline static constexpr unsigned int Extensions___c_TypeDefinitionIndex = 7032;
 
 	class Extensions___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::Newtonsoft::Json::Linq::JObject*, ::System::Collections::Generic::IEnumerable_1<::Newtonsoft::Json::Linq::JProperty*>*>** StaticGet___9__4_0()
 		{
-			return (::System::Func_2<::Newtonsoft::Json::Linq::JObject*, ::System::Collections::Generic::IEnumerable_1<::Newtonsoft::Json::Linq::JProperty*>*>**)Il2CppClass::FromTypeDefinitionIndex(Extensions___c_TypeDefinitionIndex)->GetStaticField(0x5F80);
+			return (::System::Func_2<::Newtonsoft::Json::Linq::JObject*, ::System::Collections::Generic::IEnumerable_1<::Newtonsoft::Json::Linq::JProperty*>*>**)Il2CppClass::FromTypeDefinitionIndex(Extensions___c_TypeDefinitionIndex)->GetStaticField(0x5FC0);
 		}
 		static ::Newtonsoft::Json::Linq::Extensions___c** StaticGet___9()
 		{
-			return (::Newtonsoft::Json::Linq::Extensions___c**)Il2CppClass::FromTypeDefinitionIndex(Extensions___c_TypeDefinitionIndex)->GetStaticField(0x5F88);
+			return (::Newtonsoft::Json::Linq::Extensions___c**)Il2CppClass::FromTypeDefinitionIndex(Extensions___c_TypeDefinitionIndex)->GetStaticField(0x5FC8);
 		}
 
 		static ::System::Void _cctor()

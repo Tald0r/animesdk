@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int TestLyraSectorLoader_SceneVoxelVisualizeMode_TypeDefinitionIndex = 28098;
+inline static constexpr unsigned int TestLyraSectorLoader_SceneVoxelVisualizeMode_TypeDefinitionIndex = 29038;
 
 enum class TestLyraSectorLoader_SceneVoxelVisualizeMode : ::System::Int32
 {

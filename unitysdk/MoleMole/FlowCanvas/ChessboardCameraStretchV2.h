@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCHV2_INVOKE_OFFSET UNITYSDK_OFFSET(0xA5DDB80)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCHV2__CTOR_OFFSET UNITYSDK_OFFSET(0xA5DDE90)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCHV2_INVOKE_OFFSET UNITYSDK_OFFSET(0xA7C79D0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCHV2__CTOR_OFFSET UNITYSDK_OFFSET(0xA7C7CE0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardCameraStretchV2_TypeDefinitionIndex = 74043;
+	inline static constexpr unsigned int ChessboardCameraStretchV2_TypeDefinitionIndex = 80450;
 
 	class ChessboardCameraStretchV2 : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_2<::System::String*, ::MoleMole::HollowChessboard::HollowCell>
 	{

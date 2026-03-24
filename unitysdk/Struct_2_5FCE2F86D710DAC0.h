@@ -4,9 +4,9 @@
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_5FCE2F86D710DAC0_METHOD_2_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0x35BB40)
+#define STRUCT_2_5FCE2F86D710DAC0_METHOD_2_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0x539B60)
 
-inline static constexpr unsigned int Struct_2_5FCE2F86D710DAC0_TypeDefinitionIndex = 74730;
+inline static constexpr unsigned int Struct_2_5FCE2F86D710DAC0_TypeDefinitionIndex = 53821;
 
 struct alignas(8) Struct_2_5FCE2F86D710DAC0
 {

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDREQUIREATMOSPHERE_INVOKE_OFFSET UNITYSDK_OFFSET(0x82C3780)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDREQUIREATMOSPHERE__CTOR_OFFSET UNITYSDK_OFFSET(0x82C3890)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDREQUIREATMOSPHERE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA37D800)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDREQUIREATMOSPHERE__CTOR_OFFSET UNITYSDK_OFFSET(0xA37D910)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardRequireAtmosphere_TypeDefinitionIndex = 68907;
+	inline static constexpr unsigned int ChessboardRequireAtmosphere_TypeDefinitionIndex = 42406;
 
 	class ChessboardRequireAtmosphere : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_3<::System::String*, ::System::Boolean, ::System::Boolean>
 	{

@@ -7,26 +7,26 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_52751AC37D753259_METHOD_2_33ACA6CB2ABC73F7_OFFSET UNITYSDK_OFFSET(0xB205E20)
-#define CLASS_2_52751AC37D753259_METHOD_2_BC516BD7B592E51E_OFFSET UNITYSDK_OFFSET(0xB205FF0)
-#define CLASS_2_52751AC37D753259_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xB206450)
-#define CLASS_2_52751AC37D753259_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB2060A0)
-#define CLASS_2_52751AC37D753259_METHOD_2_EF0E8E68D22B11ED_OFFSET UNITYSDK_OFFSET(0xB206110)
-#define CLASS_2_52751AC37D753259__CCTOR_OFFSET UNITYSDK_OFFSET(0xB205F70)
-#define CLASS_2_52751AC37D753259__CTOR_OFFSET UNITYSDK_OFFSET(0xB205FE0)
+#define CLASS_2_52751AC37D753259_METHOD_2_33ACA6CB2ABC73F7_OFFSET UNITYSDK_OFFSET(0x63C3E90)
+#define CLASS_2_52751AC37D753259_METHOD_2_BC516BD7B592E51E_OFFSET UNITYSDK_OFFSET(0x63C4060)
+#define CLASS_2_52751AC37D753259_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x63C4180)
+#define CLASS_2_52751AC37D753259_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x63C4110)
+#define CLASS_2_52751AC37D753259_METHOD_2_EF0E8E68D22B11ED_OFFSET UNITYSDK_OFFSET(0x63C41E0)
+#define CLASS_2_52751AC37D753259__CCTOR_OFFSET UNITYSDK_OFFSET(0x63C3FE0)
+#define CLASS_2_52751AC37D753259__CTOR_OFFSET UNITYSDK_OFFSET(0x63C4050)
 
-inline static constexpr unsigned int Class_2_52751AC37D753259_TypeDefinitionIndex = 53463;
+inline static constexpr unsigned int Class_2_52751AC37D753259_TypeDefinitionIndex = 77416;
 
 class Class_2_52751AC37D753259 : public ::Class_1_B7E341C5F1A6F199
 {
 public:
-	// static const ::System::UInt16 Field_2_8 = 0xBE; // 0x0
-	::MoleMole::Config::ConfigPosRot* Field_2_7; // 0x20
-	::MoleMole::Config::ConfigPosRot* Field_2_6; // 0x28
-	::System::Collections::Generic::HashSet_1<::System::String*>* Field_2_1; // 0x30
+	// static const ::System::UInt16 Field_2_8 = 0xBF; // 0x0
+	::System::String* Field_2_2; // 0x20
+	::System::Collections::Generic::HashSet_1<::System::String*>* Field_2_1; // 0x28
+	::MoleMole::Config::ConfigPosRot* Field_2_5; // 0x30
 	::System::String* Field_2_0; // 0x38
-	::MoleMole::Config::ConfigPosRot* Field_2_5; // 0x40
-	::System::String* Field_2_2; // 0x48
+	::MoleMole::Config::ConfigPosRot* Field_2_6; // 0x40
+	::MoleMole::Config::ConfigPosRot* Field_2_7; // 0x48
 	::System::Int32 Field_2_4; // 0x50
 	::System::Boolean Field_2_3; // 0x54
 
@@ -55,13 +55,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_52751AC37D753259_METHOD_2_CA373AA1C7054598_OFFSET))(this);
 	}
 
-	::System::Void Method_2_EF0E8E68D22B11ED(::System::String* a1, ::System::String* a2, ::System::Boolean a3, ::System::Int32 a4, ::MoleMole::Config::ConfigPosRot* a5, ::MoleMole::Config::ConfigPosRot* a6, ::MoleMole::Config::ConfigPosRot* a7, ::System::Collections::Generic::List_1<::System::String*>* a8)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::Boolean, ::System::Int32, ::MoleMole::Config::ConfigPosRot*, ::MoleMole::Config::ConfigPosRot*, ::MoleMole::Config::ConfigPosRot*, ::System::Collections::Generic::List_1<::System::String*>*))((::PBYTE)hIl2Cpp + CLASS_2_52751AC37D753259_METHOD_2_EF0E8E68D22B11ED_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7, a8);
-	}
-
 	::System::Void Method_2_CA373AA1C7054598_1()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_52751AC37D753259_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::System::Void Method_2_EF0E8E68D22B11ED(::System::String* a1, ::System::String* a2, ::System::Boolean a3, ::System::Int32 a4, ::MoleMole::Config::ConfigPosRot* a5, ::MoleMole::Config::ConfigPosRot* a6, ::MoleMole::Config::ConfigPosRot* a7, ::System::Collections::Generic::List_1<::System::String*>* a8)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*, ::System::Boolean, ::System::Int32, ::MoleMole::Config::ConfigPosRot*, ::MoleMole::Config::ConfigPosRot*, ::MoleMole::Config::ConfigPosRot*, ::System::Collections::Generic::List_1<::System::String*>*))((::PBYTE)hIl2Cpp + CLASS_2_52751AC37D753259_METHOD_2_EF0E8E68D22B11ED_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7, a8);
 	}
 };

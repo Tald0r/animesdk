@@ -10,25 +10,25 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_AFDB8E3CDAA089B8_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x8463880)
-#define CLASS_2_AFDB8E3CDAA089B8_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x8463640)
-#define CLASS_2_AFDB8E3CDAA089B8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8463950)
-#define CLASS_2_AFDB8E3CDAA089B8__CTOR_OFFSET UNITYSDK_OFFSET(0x8463940)
+#define CLASS_2_AFDB8E3CDAA089B8_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x8282790)
+#define CLASS_2_AFDB8E3CDAA089B8_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x8282550)
+#define CLASS_2_AFDB8E3CDAA089B8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8282860)
+#define CLASS_2_AFDB8E3CDAA089B8__CTOR_OFFSET UNITYSDK_OFFSET(0x8282850)
 
-inline static constexpr unsigned int Class_2_AFDB8E3CDAA089B8_TypeDefinitionIndex = 65635;
+inline static constexpr unsigned int Class_2_AFDB8E3CDAA089B8_TypeDefinitionIndex = 80416;
 
 class Class_2_AFDB8E3CDAA089B8 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_7; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x20
-	::MoleMole::NotificationBadgeEx* Field_2_8; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
+	::UnityEngine::GameObject* Field_2_6; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x28
 	::Class_2_60DDD9C206686F44* Field_2_0; // 0x30
-	::UnityEngine::GameObject* Field_2_6; // 0x38
+	::UnityEngine::GameObject* Field_2_1; // 0x38
 	::UnityEngine::GameObject* Field_2_5; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x50
-	::UnityEngine::GameObject* Field_2_1; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x48
+	::UnityEngine::GameObject* Field_2_7; // 0x50
+	::MoleMole::NotificationBadgeEx* Field_2_8; // 0x58
 
 	::System::Void _ctor()
 	{

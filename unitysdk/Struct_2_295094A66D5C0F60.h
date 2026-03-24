@@ -6,7 +6,7 @@
 class Class_2_D89CCC627A66D0AD;
 namespace MoleMole { class UIRoleTalentBGColor; }
 
-inline static constexpr unsigned int Struct_2_295094A66D5C0F60_TypeDefinitionIndex = 71625;
+inline static constexpr unsigned int Struct_2_295094A66D5C0F60_TypeDefinitionIndex = 38007;
 
 struct alignas(8) Struct_2_295094A66D5C0F60
 {

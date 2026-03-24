@@ -8,14 +8,14 @@ namespace System::Collections { class ArrayList; }
 namespace System::Xml { class XmlQualifiedName; }
 namespace System::Xml::Serialization { class TypeData; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GETREALELEMENTMAP_OFFSET UNITYSDK_OFFSET(0x18C7E8C0)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GETREALTYPEMAP_OFFSET UNITYSDK_OFFSET(0x18C7E7A0)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GET_HASXMLTYPENAMESPACE_OFFSET UNITYSDK_OFFSET(0x18C7E790)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GET_TYPEFULLNAME_OFFSET UNITYSDK_OFFSET(0x18C7E750)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GET_XMLTYPENAMESPACE_OFFSET UNITYSDK_OFFSET(0x18C7E770)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_UPDATEROOT_OFFSET UNITYSDK_OFFSET(0x18C7ED20)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18C7EDE0)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING__CTOR_OFFSET UNITYSDK_OFFSET(0x18C7E6C0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GETREALELEMENTMAP_OFFSET UNITYSDK_OFFSET(0x1913FFA0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GETREALTYPEMAP_OFFSET UNITYSDK_OFFSET(0x1913FE80)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GET_HASXMLTYPENAMESPACE_OFFSET UNITYSDK_OFFSET(0x1913FE70)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GET_TYPEFULLNAME_OFFSET UNITYSDK_OFFSET(0x1913FE30)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_GET_XMLTYPENAMESPACE_OFFSET UNITYSDK_OFFSET(0x1913FE50)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING_UPDATEROOT_OFFSET UNITYSDK_OFFSET(0x19140400)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING__CTOR_1_OFFSET UNITYSDK_OFFSET(0x191404B0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPPING__CTOR_OFFSET UNITYSDK_OFFSET(0x1913FDA0)
 
 namespace System::Xml::Serialization
 {
@@ -24,14 +24,14 @@ namespace System::Xml::Serialization
 	class XmlTypeMapping : public ::System::Xml::Serialization::XmlMapping
 	{
 	public:
-		::System::String* xmlType; // 0x48
-		::System::Collections::ArrayList* _derivedTypes; // 0x50
-		::System::String* xmlTypeNamespace; // 0x58
-		::System::Xml::Serialization::TypeData* type; // 0x60
+		::System::Xml::Serialization::TypeData* type; // 0x48
+		::System::String* xmlTypeNamespace; // 0x50
+		::System::String* xmlType; // 0x58
+		::System::Collections::ArrayList* _derivedTypes; // 0x60
 		::System::Xml::Serialization::XmlTypeMapping* baseMap; // 0x68
-		::System::Boolean isAny; // 0x70
-		::System::Boolean includeInSchema; // 0x71
-		::System::Boolean isNullable; // 0x72
+		::System::Boolean includeInSchema; // 0x70
+		::System::Boolean isNullable; // 0x71
+		::System::Boolean isAny; // 0x72
 		::System::Boolean multiReferenceType; // 0x73
 
 		::System::Void _ctor(::System::String* elementName, ::System::String* ns, ::System::Xml::Serialization::TypeData* typeData, ::System::String* xmlType, ::System::String* xmlTypeNamespace)

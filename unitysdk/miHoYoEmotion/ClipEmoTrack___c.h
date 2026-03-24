@@ -7,69 +7,69 @@
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace miHoYoEmotion { class ClipShapeCurveCell; }
 
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDCURVE_B__29_0_OFFSET UNITYSDK_OFFSET(0x18ADF450)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDCURVE_B__29_1_OFFSET UNITYSDK_OFFSET(0x18ADF460)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDCURVE_B__29_2_OFFSET UNITYSDK_OFFSET(0x18ADF470)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDSTOPCURVEBINDING_B__34_0_OFFSET UNITYSDK_OFFSET(0x18ADF4F0)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDSTOPCURVEBINDING_B__34_2_OFFSET UNITYSDK_OFFSET(0x18ADF510)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18ADF400)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18ADF440)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__HIGHMOODADDCURVE_B__31_0_OFFSET UNITYSDK_OFFSET(0x18ADF4B0)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__ISMATCHBLENDNAME_B__32_0_OFFSET UNITYSDK_OFFSET(0x18ADF4C0)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__LOWMOODADDCURVE_B__30_0_OFFSET UNITYSDK_OFFSET(0x18ADF480)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__LOWMOODADDCURVE_B__30_1_OFFSET UNITYSDK_OFFSET(0x18ADF490)
-#define MIHOYOEMOTION_CLIPEMOTRACK___C__LOWMOODADDCURVE_B__30_2_OFFSET UNITYSDK_OFFSET(0x18ADF4A0)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDCURVE_B__29_0_OFFSET UNITYSDK_OFFSET(0x18FC9AC0)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDCURVE_B__29_1_OFFSET UNITYSDK_OFFSET(0x18FC9AD0)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDCURVE_B__29_2_OFFSET UNITYSDK_OFFSET(0x18FC9AE0)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDSTOPCURVEBINDING_B__34_0_OFFSET UNITYSDK_OFFSET(0x18FC9B60)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__ADDSTOPCURVEBINDING_B__34_2_OFFSET UNITYSDK_OFFSET(0x18FC9B80)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FC9A70)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18FC9AB0)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__HIGHMOODADDCURVE_B__31_0_OFFSET UNITYSDK_OFFSET(0x18FC9B20)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__ISMATCHBLENDNAME_B__32_0_OFFSET UNITYSDK_OFFSET(0x18FC9B30)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__LOWMOODADDCURVE_B__30_0_OFFSET UNITYSDK_OFFSET(0x18FC9AF0)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__LOWMOODADDCURVE_B__30_1_OFFSET UNITYSDK_OFFSET(0x18FC9B00)
+#define MIHOYOEMOTION_CLIPEMOTRACK___C__LOWMOODADDCURVE_B__30_2_OFFSET UNITYSDK_OFFSET(0x18FC9B10)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int ClipEmoTrack___c_TypeDefinitionIndex = 36130;
+	inline static constexpr unsigned int ClipEmoTrack___c_TypeDefinitionIndex = 37150;
 
 	class ClipEmoTrack___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__31_0()
+		static ::System::Func_2<::System::Int32, ::System::Int32>** StaticGet___9__34_2()
 		{
-			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26C80);
-		}
-		static ::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>** StaticGet___9__29_1()
-		{
-			return (::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26C88);
-		}
-		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__30_0()
-		{
-			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26C90);
-		}
-		static ::System::Func_2<::miHoYoEmotion::BlendShapeData, ::System::Boolean>** StaticGet___9__34_0()
-		{
-			return (::System::Func_2<::miHoYoEmotion::BlendShapeData, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26C98);
-		}
-		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__29_0()
-		{
-			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CA0);
-		}
-		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__30_2()
-		{
-			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CA8);
+			return (::System::Func_2<::System::Int32, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286B0);
 		}
 		static ::System::Func_2<::miHoYoEmotion::ClipShapeCurveCell*, ::System::Boolean>** StaticGet___9__32_0()
 		{
-			return (::System::Func_2<::miHoYoEmotion::ClipShapeCurveCell*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CB0);
+			return (::System::Func_2<::miHoYoEmotion::ClipShapeCurveCell*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286B8);
 		}
-		static ::System::Func_2<::System::Int32, ::System::Int32>** StaticGet___9__34_2()
+		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__31_0()
 		{
-			return (::System::Func_2<::System::Int32, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CB8);
-		}
-		static ::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>** StaticGet___9__30_1()
-		{
-			return (::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CC0);
-		}
-		static ::miHoYoEmotion::ClipEmoTrack___c** StaticGet___9()
-		{
-			return (::miHoYoEmotion::ClipEmoTrack___c**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CC8);
+			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286C0);
 		}
 		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__29_2()
 		{
-			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x26CD0);
+			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286C8);
+		}
+		static ::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>** StaticGet___9__30_1()
+		{
+			return (::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286D0);
+		}
+		static ::System::Func_2<::miHoYoEmotion::BlendShapeData, ::System::Boolean>** StaticGet___9__34_0()
+		{
+			return (::System::Func_2<::miHoYoEmotion::BlendShapeData, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286D8);
+		}
+		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__30_0()
+		{
+			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286E0);
+		}
+		static ::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>** StaticGet___9__29_1()
+		{
+			return (::System::Func_2<::System::Int32, ::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286E8);
+		}
+		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__30_2()
+		{
+			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286F0);
+		}
+		static ::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>** StaticGet___9__29_0()
+		{
+			return (::System::Func_2<::System::ValueTuple_2<::System::Int32, ::miHoYoEmotion::ClipShapeCurveCell*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x286F8);
+		}
+		static ::miHoYoEmotion::ClipEmoTrack___c** StaticGet___9()
+		{
+			return (::miHoYoEmotion::ClipEmoTrack___c**)Il2CppClass::FromTypeDefinitionIndex(ClipEmoTrack___c_TypeDefinitionIndex)->GetStaticField(0x28700);
 		}
 
 		static ::System::Void _cctor()

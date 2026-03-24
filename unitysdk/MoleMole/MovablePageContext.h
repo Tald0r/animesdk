@@ -6,11 +6,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MOVABLEPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB2EE430)
+#define MOLEMOLE_MOVABLEPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB863080)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MovablePageContext_TypeDefinitionIndex = 49147;
+	inline static constexpr unsigned int MovablePageContext_TypeDefinitionIndex = 63270;
 
 	class MovablePageContext : public ::MoleMole::UIControllerContextBase
 	{

@@ -4,20 +4,20 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define CLASS_2_91B72B3CAB5F654C_METHOD_2_15C5F59C1B6F1B75_OFFSET UNITYSDK_OFFSET(0x7F71C70)
-#define CLASS_2_91B72B3CAB5F654C_METHOD_2_BC516BD7B592E51E_OFFSET UNITYSDK_OFFSET(0x7F71B60)
-#define CLASS_2_91B72B3CAB5F654C_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x7F71C10)
-#define CLASS_2_91B72B3CAB5F654C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7F71AE0)
-#define CLASS_2_91B72B3CAB5F654C__CTOR_OFFSET UNITYSDK_OFFSET(0x7F71B50)
+#define CLASS_2_91B72B3CAB5F654C_METHOD_2_15C5F59C1B6F1B75_OFFSET UNITYSDK_OFFSET(0x783AC00)
+#define CLASS_2_91B72B3CAB5F654C_METHOD_2_BC516BD7B592E51E_OFFSET UNITYSDK_OFFSET(0x783AB50)
+#define CLASS_2_91B72B3CAB5F654C_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x783ACE0)
+#define CLASS_2_91B72B3CAB5F654C__CCTOR_OFFSET UNITYSDK_OFFSET(0x783AAD0)
+#define CLASS_2_91B72B3CAB5F654C__CTOR_OFFSET UNITYSDK_OFFSET(0x783AB40)
 
-inline static constexpr unsigned int Class_2_91B72B3CAB5F654C_TypeDefinitionIndex = 49529;
+inline static constexpr unsigned int Class_2_91B72B3CAB5F654C_TypeDefinitionIndex = 52714;
 
 class Class_2_91B72B3CAB5F654C : public ::Class_1_B7E341C5F1A6F199
 {
 public:
-	// static const ::System::UInt16 Field_2_2 = 0x129; // 0x0
-	::MoleMole::Battle::Entity* Field_2_1; // 0x20
-	::MoleMole::Battle::Entity* Field_2_0; // 0x28
+	// static const ::System::UInt16 Field_2_2 = 0x12B; // 0x0
+	::MoleMole::Battle::Entity* Field_2_0; // 0x20
+	::MoleMole::Battle::Entity* Field_2_1; // 0x28
 
 	static ::System::Void _cctor()
 	{
@@ -34,13 +34,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_91B72B3CAB5F654C_METHOD_2_BC516BD7B592E51E_OFFSET))(this);
 	}
 
-	::System::Void Method_2_CA373AA1C7054598()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_91B72B3CAB5F654C_METHOD_2_CA373AA1C7054598_OFFSET))(this);
-	}
-
 	::System::Void Method_2_15C5F59C1B6F1B75(::MoleMole::Battle::Entity* a1, ::MoleMole::Battle::Entity* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_2_91B72B3CAB5F654C_METHOD_2_15C5F59C1B6F1B75_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_91B72B3CAB5F654C_METHOD_2_CA373AA1C7054598_OFFSET))(this);
 	}
 };

@@ -5,11 +5,11 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHDRSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C161D0)
+#define MOLEMOLE_UIHDRSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6C6F600)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHDRSettingContext_TypeDefinitionIndex = 74476;
+	inline static constexpr unsigned int UIHDRSettingContext_TypeDefinitionIndex = 38848;
 
 	class UIHDRSettingContext : public ::MoleMole::UIControllerContextBase
 	{

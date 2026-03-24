@@ -5,7 +5,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SkyLutUtils_LinearGraidentColorKey_TypeDefinitionIndex = 5968;
+	inline static constexpr unsigned int SkyLutUtils_LinearGraidentColorKey_TypeDefinitionIndex = 5971;
 
 	struct alignas(4) SkyLutUtils_LinearGraidentColorKey
 	{

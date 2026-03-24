@@ -3,15 +3,15 @@
 
 namespace LitJson
 {
-	inline static constexpr unsigned int Condition_TypeDefinitionIndex = 7875;
+	inline static constexpr unsigned int Condition_TypeDefinitionIndex = 7928;
 
 	enum class Condition : ::System::Int32
 	{
-		InObject = 1,
-		InArray = 0,
-		Property = 3,
-		Value = 4,
 		NotAProperty = 2,
+		InObject = 1,
 		Comment = 5,
+		Property = 3,
+		InArray = 0,
+		Value = 4,
 	};
 }

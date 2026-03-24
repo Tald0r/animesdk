@@ -8,12 +8,12 @@
 #include "unitysdk/System/Span_1.h"
 #include "unitysdk/Unity/Collections/NativeArray_1.h"
 
-#define FOUNDATION_NATIVETEMPMEMORYBUILDER_ALLOCATESTORAGE_OFFSET UNITYSDK_OFFSET(0x1AF48E90)
-#define FOUNDATION_NATIVETEMPMEMORYBUILDER_REQUESTINTERNAL_OFFSET UNITYSDK_OFFSET(0x1AF48E10)
+#define FOUNDATION_NATIVETEMPMEMORYBUILDER_ALLOCATESTORAGE_OFFSET UNITYSDK_OFFSET(0x1B4C4D90)
+#define FOUNDATION_NATIVETEMPMEMORYBUILDER_REQUESTINTERNAL_OFFSET UNITYSDK_OFFSET(0x1B4C4D10)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NativeTempMemoryBuilder_TypeDefinitionIndex = 8968;
+	inline static constexpr unsigned int NativeTempMemoryBuilder_TypeDefinitionIndex = 8950;
 
 	class NativeTempMemoryBuilder : public ::System::Object
 	{

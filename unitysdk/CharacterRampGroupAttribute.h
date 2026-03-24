@@ -4,16 +4,16 @@
 
 namespace System { class String; }
 
-#define CHARACTERRAMPGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1801F250)
+#define CHARACTERRAMPGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x18640F90)
 
-inline static constexpr unsigned int CharacterRampGroupAttribute_TypeDefinitionIndex = 28071;
+inline static constexpr unsigned int CharacterRampGroupAttribute_TypeDefinitionIndex = 29011;
 
 class CharacterRampGroupAttribute : public ::UnityEngine::PropertyAttribute
 {
 public:
-	::System::String* label; // 0x10
+	::System::String* leftFieldName; // 0x10
 	::System::String* rightPropertyName; // 0x18
-	::System::String* leftFieldName; // 0x20
+	::System::String* label; // 0x20
 
 	::System::Void _ctor(::System::String* leftFieldName, ::System::String* rightPropertyName, ::System::String* label)
 	{

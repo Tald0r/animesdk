@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_7;
+class Class_0_16E4307DCC419505_5;
 namespace Foundation::ViewObject { class GroupVariableHelper___c__DisplayClass15_1; }
 
-#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__CTOR_OFFSET UNITYSDK_OFFSET(0x8CEAD20)
-#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__0_OFFSET UNITYSDK_OFFSET(0x8CEAD30)
-#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__1_OFFSET UNITYSDK_OFFSET(0x8CEAEC0)
+#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__CTOR_OFFSET UNITYSDK_OFFSET(0x8FCD510)
+#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__0_OFFSET UNITYSDK_OFFSET(0x8FCD520)
+#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__1_OFFSET UNITYSDK_OFFSET(0x8FCD6B0)
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int GroupVariableHelper___c__DisplayClass15_2_TypeDefinitionIndex = 68070;
+	inline static constexpr unsigned int GroupVariableHelper___c__DisplayClass15_2_TypeDefinitionIndex = 41670;
 
 	class GroupVariableHelper___c__DisplayClass15_2 : public ::System::Object
 	{
@@ -24,14 +24,14 @@ namespace Foundation::ViewObject
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _Push_b__0(::Class_0_16E4307DCC419505_7* message)
+		::System::Void _Push_b__0(::Class_0_16E4307DCC419505_5* message)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__0_OFFSET))(this, message);
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_5*))((::PBYTE)hIl2Cpp + FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__0_OFFSET))(this, message);
 		}
 
-		::System::Void _Push_b__1(::Class_0_16E4307DCC419505_7* message)
+		::System::Void _Push_b__1(::Class_0_16E4307DCC419505_5* message)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__1_OFFSET))(this, message);
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_5*))((::PBYTE)hIl2Cpp + FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER___C__DISPLAYCLASS15_2__PUSH_B__1_OFFSET))(this, message);
 		}
 	};
 }

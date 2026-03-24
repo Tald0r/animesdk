@@ -3,7 +3,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int EulerRotationChannel_TypeDefinitionIndex = 34491;
+	inline static constexpr unsigned int EulerRotationChannel_TypeDefinitionIndex = 35493;
 
 	enum class EulerRotationChannel : ::System::Int32
 	{

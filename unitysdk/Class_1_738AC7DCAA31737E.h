@@ -3,9 +3,9 @@
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_738AC7DCAA31737E_METHOD_1_0171AF1A1B2198AD_OFFSET UNITYSDK_OFFSET(0x6AB9990)
+#define CLASS_1_738AC7DCAA31737E_METHOD_1_0171AF1A1B2198AD_OFFSET UNITYSDK_OFFSET(0x7955EA0)
 
-inline static constexpr unsigned int Class_1_738AC7DCAA31737E_TypeDefinitionIndex = 78106;
+inline static constexpr unsigned int Class_1_738AC7DCAA31737E_TypeDefinitionIndex = 56272;
 
 class Class_1_738AC7DCAA31737E : public ::System::Object
 {

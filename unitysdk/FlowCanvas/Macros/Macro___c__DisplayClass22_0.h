@@ -4,12 +4,12 @@
 
 namespace ParadoxNotion { class DynamicParameterDefinition; }
 
-#define FLOWCANVAS_MACROS_MACRO___C__DISPLAYCLASS22_0__ADDINPUTDEFINITION_B__0_OFFSET UNITYSDK_OFFSET(0x1A176C30)
-#define FLOWCANVAS_MACROS_MACRO___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A176C20)
+#define FLOWCANVAS_MACROS_MACRO___C__DISPLAYCLASS22_0__ADDINPUTDEFINITION_B__0_OFFSET UNITYSDK_OFFSET(0x1A71F4A0)
+#define FLOWCANVAS_MACROS_MACRO___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A71F490)
 
 namespace FlowCanvas::Macros
 {
-	inline static constexpr unsigned int Macro___c__DisplayClass22_0_TypeDefinitionIndex = 25867;
+	inline static constexpr unsigned int Macro___c__DisplayClass22_0_TypeDefinitionIndex = 27024;
 
 	class Macro___c__DisplayClass22_0 : public ::System::Object
 	{

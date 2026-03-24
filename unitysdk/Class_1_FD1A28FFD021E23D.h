@@ -11,22 +11,22 @@ namespace SimpleJSON { class JSONNode; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_FD1A28FFD021E23D_METHOD_1_0AF424198EC7565D_OFFSET UNITYSDK_OFFSET(0xAAF8970)
-#define CLASS_1_FD1A28FFD021E23D_METHOD_1_9C12A00315CAECCE_OFFSET UNITYSDK_OFFSET(0xAAF8220)
-#define CLASS_1_FD1A28FFD021E23D_METHOD_1_D9910045757586F0_OFFSET UNITYSDK_OFFSET(0xAAF82E0)
-#define CLASS_1_FD1A28FFD021E23D__CTOR_OFFSET UNITYSDK_OFFSET(0xAAF9030)
+#define CLASS_1_FD1A28FFD021E23D_METHOD_1_0AF424198EC7565D_OFFSET UNITYSDK_OFFSET(0x64FDEF0)
+#define CLASS_1_FD1A28FFD021E23D_METHOD_1_9C12A00315CAECCE_OFFSET UNITYSDK_OFFSET(0x64FD7A0)
+#define CLASS_1_FD1A28FFD021E23D_METHOD_1_D9910045757586F0_OFFSET UNITYSDK_OFFSET(0x64FD860)
+#define CLASS_1_FD1A28FFD021E23D__CTOR_OFFSET UNITYSDK_OFFSET(0x64FE5A0)
 
-inline static constexpr unsigned int Class_1_FD1A28FFD021E23D_TypeDefinitionIndex = 66944;
+inline static constexpr unsigned int Class_1_FD1A28FFD021E23D_TypeDefinitionIndex = 51447;
 
 class Class_1_FD1A28FFD021E23D : public ::System::Object
 {
 public:
-	::Struct_2_5D069F19E41FF0CC Field_1_4; // 0x10
-	::System::Collections::Generic::List_1<::Struct_2_949560F8E2E2D60D>* Field_1_0; // 0x28
-	::Struct_2_02B0702160B61CDD Field_1_5; // 0x30
+	::System::String* Field_1_6; // 0x10
+	::System::Collections::Generic::List_1<::Struct_2_949560F8E2E2D60D>* Field_1_0; // 0x18
+	::Struct_2_5D069F19E41FF0CC Field_1_4; // 0x20
 	::System::Collections::Generic::List_1<::Struct_2_ECA2CA7916C434B8>* Field_1_1; // 0x38
-	::System::Collections::Generic::List_1<::System::String*>* Field_1_3; // 0x40
-	::System::String* Field_1_6; // 0x48
+	::Struct_2_02B0702160B61CDD Field_1_5; // 0x40
+	::System::Collections::Generic::List_1<::System::String*>* Field_1_3; // 0x48
 	::Struct_2_77ED6AE6421E24B7 Field_1_2; // 0x50
 
 	::System::Void _ctor()

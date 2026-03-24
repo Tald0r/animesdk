@@ -3,7 +3,7 @@
 #include "unitysdk/Foundation/FixedArray2_1.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int Struct_2_BBB0E5634D109F01_TypeDefinitionIndex = 46220;
+inline static constexpr unsigned int Struct_2_BBB0E5634D109F01_TypeDefinitionIndex = 60500;
 
 struct alignas(4) Struct_2_BBB0E5634D109F01
 {

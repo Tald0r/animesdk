@@ -8,7 +8,7 @@ namespace PipelineCamera::DataOrientated { template <typename T> class Component
 
 namespace PipelineCamera::DataOrientated
 {
-	inline static constexpr unsigned int ComponentChuckData_1_TypeDefinitionIndex = 34579;
+	inline static constexpr unsigned int ComponentChuckData_1_TypeDefinitionIndex = 35581;
 
 	template <typename TScope>
 	class ComponentChuckData_1 : public ::System::Object

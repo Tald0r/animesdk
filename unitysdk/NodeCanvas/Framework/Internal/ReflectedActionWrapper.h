@@ -5,12 +5,12 @@
 namespace NodeCanvas::Framework { class IBlackboard; }
 namespace System::Reflection { class MethodInfo; }
 
-#define NODECANVAS_FRAMEWORK_INTERNAL_REFLECTEDACTIONWRAPPER_CREATE_OFFSET UNITYSDK_OFFSET(0x19FEFB40)
-#define NODECANVAS_FRAMEWORK_INTERNAL_REFLECTEDACTIONWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x19FF00F0)
+#define NODECANVAS_FRAMEWORK_INTERNAL_REFLECTEDACTIONWRAPPER_CREATE_OFFSET UNITYSDK_OFFSET(0x1A608BD0)
+#define NODECANVAS_FRAMEWORK_INTERNAL_REFLECTEDACTIONWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A609180)
 
 namespace NodeCanvas::Framework::Internal
 {
-	inline static constexpr unsigned int ReflectedActionWrapper_TypeDefinitionIndex = 26655;
+	inline static constexpr unsigned int ReflectedActionWrapper_TypeDefinitionIndex = 26685;
 
 	class ReflectedActionWrapper : public ::NodeCanvas::Framework::Internal::ReflectedWrapper
 	{

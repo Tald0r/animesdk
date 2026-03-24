@@ -3,9 +3,9 @@
 
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_34_TypeDefinitionIndex = 24188;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_34_TypeDefinitionIndex = 25015;
 
-template <typename TVertex, typename TEdge>
+template <typename TVertex>
 class Class_0_16E4307DCC419505_34
 {
 public:

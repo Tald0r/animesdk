@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBaseController_UIFadeState_TypeDefinitionIndex = 37243;
+	inline static constexpr unsigned int UIBaseController_UIFadeState_TypeDefinitionIndex = 58432;
 
 	enum class UIBaseController_UIFadeState : ::System::Int32
 	{
-		Other = 3,
+		FadingIn = 1,
 		FadingOut = 2,
 		None = 0,
-		FadingIn = 1,
+		Other = 3,
 	};
 }

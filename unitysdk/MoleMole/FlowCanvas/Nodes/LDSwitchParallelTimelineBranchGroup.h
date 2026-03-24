@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHPARALLELTIMELINEBRANCHGROUP_INVOKE_OFFSET UNITYSDK_OFFSET(0x82D08E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHPARALLELTIMELINEBRANCHGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x82D0A30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHPARALLELTIMELINEBRANCHGROUP_INVOKE_OFFSET UNITYSDK_OFFSET(0xA38AB20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHPARALLELTIMELINEBRANCHGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0xA38AC70)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSwitchParallelTimelineBranchGroup_TypeDefinitionIndex = 61105;
+	inline static constexpr unsigned int LDSwitchParallelTimelineBranchGroup_TypeDefinitionIndex = 49705;
 
 	class LDSwitchParallelTimelineBranchGroup : public ::FlowCanvas::Nodes::CallableActionNode_3<::System::String*, ::System::String*, ::System::Boolean>
 	{

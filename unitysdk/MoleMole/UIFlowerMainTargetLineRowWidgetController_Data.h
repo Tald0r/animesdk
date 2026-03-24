@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC0F0E50)
+#define MOLEMOLE_UIFLOWERMAINTARGETLINEROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB0DEEA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFlowerMainTargetLineRowWidgetController_Data_TypeDefinitionIndex = 72501;
+	inline static constexpr unsigned int UIFlowerMainTargetLineRowWidgetController_Data_TypeDefinitionIndex = 62051;
 
 	class UIFlowerMainTargetLineRowWidgetController_Data : public ::System::Object
 	{

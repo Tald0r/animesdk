@@ -5,19 +5,19 @@
 namespace NodeCanvas::Framework { class Variable; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define NODECANVAS_FRAMEWORK_VARIABLE___C__DISPLAYCLASS47_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2691E0)
-#define NODECANVAS_FRAMEWORK_VARIABLE___C__DISPLAYCLASS47_0__GETSETCONVERTER_B__0_OFFSET UNITYSDK_OFFSET(0x1A2691F0)
-#define NODECANVAS_FRAMEWORK_VARIABLE___C__DISPLAYCLASS47_0__GETSETCONVERTER_B__1_OFFSET UNITYSDK_OFFSET(0x1A269230)
+#define NODECANVAS_FRAMEWORK_VARIABLE___C__DISPLAYCLASS47_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A830B90)
+#define NODECANVAS_FRAMEWORK_VARIABLE___C__DISPLAYCLASS47_0__GETSETCONVERTER_B__0_OFFSET UNITYSDK_OFFSET(0x1A830BA0)
+#define NODECANVAS_FRAMEWORK_VARIABLE___C__DISPLAYCLASS47_0__GETSETCONVERTER_B__1_OFFSET UNITYSDK_OFFSET(0x1A830BE0)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Variable___c__DisplayClass47_0_TypeDefinitionIndex = 25231;
+	inline static constexpr unsigned int Variable___c__DisplayClass47_0_TypeDefinitionIndex = 26784;
 
 	class Variable___c__DisplayClass47_0 : public ::System::Object
 	{
 	public:
-		::System::Func_2<::System::Object*, ::System::Object*>* converter; // 0x10
-		::NodeCanvas::Framework::Variable* __4__this; // 0x18
+		::NodeCanvas::Framework::Variable* __4__this; // 0x10
+		::System::Func_2<::System::Object*, ::System::Object*>* converter; // 0x18
 
 		::System::Void _ctor()
 		{

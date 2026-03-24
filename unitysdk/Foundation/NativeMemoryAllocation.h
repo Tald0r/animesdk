@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_NATIVEMEMORYALLOCATION_GET_ISNULL_OFFSET UNITYSDK_OFFSET(0x969520)
-#define FOUNDATION_NATIVEMEMORYALLOCATION_MAKEVIEW_OFFSET UNITYSDK_OFFSET(0x969540)
-#define FOUNDATION_NATIVEMEMORYALLOCATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AE77620)
-#define FOUNDATION_NATIVEMEMORYALLOCATION__CTOR_OFFSET UNITYSDK_OFFSET(0x923600)
+#define FOUNDATION_NATIVEMEMORYALLOCATION_GET_ISNULL_OFFSET UNITYSDK_OFFSET(0x99B520)
+#define FOUNDATION_NATIVEMEMORYALLOCATION_MAKEVIEW_OFFSET UNITYSDK_OFFSET(0x99B540)
+#define FOUNDATION_NATIVEMEMORYALLOCATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B48B2B0)
+#define FOUNDATION_NATIVEMEMORYALLOCATION__CTOR_OFFSET UNITYSDK_OFFSET(0x9509E0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NativeMemoryAllocation_TypeDefinitionIndex = 9163;
+	inline static constexpr unsigned int NativeMemoryAllocation_TypeDefinitionIndex = 8996;
 
 	struct alignas(8) NativeMemoryAllocation
 	{
 		static ::Foundation::NativeMemoryAllocation* StaticGet_Null()
 		{
-			return (::Foundation::NativeMemoryAllocation*)Il2CppClass::FromTypeDefinitionIndex(NativeMemoryAllocation_TypeDefinitionIndex)->GetStaticField(0x3E70);
+			return (::Foundation::NativeMemoryAllocation*)Il2CppClass::FromTypeDefinitionIndex(NativeMemoryAllocation_TypeDefinitionIndex)->GetStaticField(0x3E90);
 		}
 		::System::UInt64 RequestId; // 0x10
 		::System::Int64 _typeHash; // 0x18

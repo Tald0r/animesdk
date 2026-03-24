@@ -3,11 +3,11 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeExternalDataRequirement_TypeDefinitionIndex = 26982;
+	inline static constexpr unsigned int StateTreeExternalDataRequirement_TypeDefinitionIndex = 27908;
 
-	enum class StateTreeExternalDataRequirement : ::System::Int32
+	enum class StateTreeExternalDataRequirement : ::System::Byte
 	{
-		Required = 0,
-		Optional = 1,
+		Required = 0x0,
+		Optional = 0x1,
 	};
 }

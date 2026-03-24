@@ -4,20 +4,20 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_HOLLOWNPCTEXTURECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCCA6510)
+#define MOLEMOLE_CONFIG_HOLLOWNPCTEXTURECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xACD53E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowNpcTextureConfig_TypeDefinitionIndex = 59865;
+	inline static constexpr unsigned int HollowNpcTextureConfig_TypeDefinitionIndex = 79395;
 
 	class HollowNpcTextureConfig : public ::System::Object
 	{
 	public:
-		::System::String* uv1; // 0x10
-		::System::String* behaviorKey; // 0x18
+		::System::String* refTextureSheet; // 0x10
+		::System::String* uv1; // 0x18
 		::System::String* textureSheet; // 0x20
-		::System::String* uv2; // 0x28
-		::System::String* refTextureSheet; // 0x30
+		::System::String* behaviorKey; // 0x28
+		::System::String* uv2; // 0x30
 		::System::Int32 soundID; // 0x38
 
 		::System::Void _ctor()

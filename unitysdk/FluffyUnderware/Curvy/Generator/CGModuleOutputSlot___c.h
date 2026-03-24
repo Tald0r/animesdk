@@ -5,24 +5,24 @@
 namespace FluffyUnderware::Curvy::Generator { class CGData; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGMODULEOUTPUTSLOT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A362A60)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGMODULEOUTPUTSLOT___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A362AA0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGMODULEOUTPUTSLOT___C__SETDATA_B__17_0_OFFSET UNITYSDK_OFFSET(0x1A362AB0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGMODULEOUTPUTSLOT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A926490)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGMODULEOUTPUTSLOT___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9264D0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGMODULEOUTPUTSLOT___C__SETDATA_B__17_0_OFFSET UNITYSDK_OFFSET(0x1A9264E0)
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int CGModuleOutputSlot___c_TypeDefinitionIndex = 35767;
+	inline static constexpr unsigned int CGModuleOutputSlot___c_TypeDefinitionIndex = 36787;
 
 	class CGModuleOutputSlot___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGData*, ::System::Boolean>** StaticGet___9__17_0()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGData*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CGModuleOutputSlot___c_TypeDefinitionIndex)->GetStaticField(0x25200);
-		}
 		static ::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot___c** StaticGet___9()
 		{
-			return (::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot___c**)Il2CppClass::FromTypeDefinitionIndex(CGModuleOutputSlot___c_TypeDefinitionIndex)->GetStaticField(0x25208);
+			return (::FluffyUnderware::Curvy::Generator::CGModuleOutputSlot___c**)Il2CppClass::FromTypeDefinitionIndex(CGModuleOutputSlot___c_TypeDefinitionIndex)->GetStaticField(0x26C30);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGData*, ::System::Boolean>** StaticGet___9__17_0()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGData*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CGModuleOutputSlot___c_TypeDefinitionIndex)->GetStaticField(0x26C38);
 		}
 
 		static ::System::Void _cctor()

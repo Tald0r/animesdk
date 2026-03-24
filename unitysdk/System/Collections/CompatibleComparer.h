@@ -5,10 +5,10 @@
 namespace System::Collections { class IComparer; }
 namespace System::Collections { class IHashCodeProvider; }
 
-#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x192ADE60)
-#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x192AE040)
-#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x192AE060)
-#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x192ADE50)
+#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x19795D20)
+#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x19795F00)
+#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19795F20)
+#define SYSTEM_COLLECTIONS_COMPATIBLECOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x19795D10)
 
 namespace System::Collections
 {
@@ -17,8 +17,8 @@ namespace System::Collections
 	class CompatibleComparer : public ::System::Object
 	{
 	public:
-		::System::Collections::IHashCodeProvider* _hcp; // 0x10
-		::System::Collections::IComparer* _comparer; // 0x18
+		::System::Collections::IComparer* _comparer; // 0x10
+		::System::Collections::IHashCodeProvider* _hcp; // 0x18
 
 		::System::Void _ctor(::System::Collections::IComparer* comparer, ::System::Collections::IHashCodeProvider* hashCodeProvider)
 		{

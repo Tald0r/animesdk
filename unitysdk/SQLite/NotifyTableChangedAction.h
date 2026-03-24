@@ -3,7 +3,7 @@
 
 namespace SQLite
 {
-	inline static constexpr unsigned int NotifyTableChangedAction_TypeDefinitionIndex = 35221;
+	inline static constexpr unsigned int NotifyTableChangedAction_TypeDefinitionIndex = 36223;
 
 	enum class NotifyTableChangedAction : ::System::Int32
 	{

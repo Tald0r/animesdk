@@ -8,14 +8,16 @@ namespace UnityEngine { class MeshFilter; }
 namespace UnityEngine { class MeshRenderer; }
 namespace UnityEngine { class ParticleSystem; }
 
-#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_INITTEMPLEPARTICLE_OFFSET UNITYSDK_OFFSET(0x8F97010)
-#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x8F96DF0)
-#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_START_OFFSET UNITYSDK_OFFSET(0x8F96D90)
-#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL__CTOR_OFFSET UNITYSDK_OFFSET(0x8F976C0)
+#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_INITTEMPLEPARTICLE_OFFSET UNITYSDK_OFFSET(0xC323500)
+#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_METHOD_5_35A1A641353400E6_OFFSET UNITYSDK_OFFSET(0xC323290)
+#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_METHOD_5_44AC3F3C85C7CAA3_OFFSET UNITYSDK_OFFSET(0xC323BD0)
+#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xC3231D0)
+#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL_START_OFFSET UNITYSDK_OFFSET(0xC3234A0)
+#define MOLEMOLE_MONOTEMPLEEFFECTCONTROL__CTOR_OFFSET UNITYSDK_OFFSET(0xC323BB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoTempleEffectControl_TypeDefinitionIndex = 60140;
+	inline static constexpr unsigned int MonoTempleEffectControl_TypeDefinitionIndex = 75209;
 
 	class MonoTempleEffectControl : public ::UnityEngine::MonoBehaviour
 	{
@@ -31,19 +33,29 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL__CTOR_OFFSET))(this);
 		}
 
-		::System::Void Start()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL_START_OFFSET))(this);
-		}
-
 		::System::Void OnDisable()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL_ONDISABLE_OFFSET))(this);
 		}
 
+		::System::Void Start()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL_START_OFFSET))(this);
+		}
+
 		::System::Void InitTempleParticle(::MoleMole::Battle::Entity* a1)
 		{
 			return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL_INITTEMPLEPARTICLE_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_35A1A641353400E6()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL_METHOD_5_35A1A641353400E6_OFFSET))(this);
+		}
+
+		::System::Void Method_5_44AC3F3C85C7CAA3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOTEMPLEEFFECTCONTROL_METHOD_5_44AC3F3C85C7CAA3_OFFSET))(this);
 		}
 	};
 }

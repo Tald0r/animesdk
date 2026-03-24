@@ -5,12 +5,12 @@
 namespace MoleMole { class UIActivityDemoInfoWidgetWidgetController; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIACTIVITYDEMOINFOWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CLICKJUMPROLEPV_B__0_OFFSET UNITYSDK_OFFSET(0x8AB9000)
-#define MOLEMOLE_UIACTIVITYDEMOINFOWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8AB8FF0)
+#define MOLEMOLE_UIACTIVITYDEMOINFOWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CLICKJUMPROLEPV_B__0_OFFSET UNITYSDK_OFFSET(0x8CC1DB0)
+#define MOLEMOLE_UIACTIVITYDEMOINFOWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8CC1DA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityDemoInfoWidgetWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 76468;
+	inline static constexpr unsigned int UIActivityDemoInfoWidgetWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 64651;
 
 	class UIActivityDemoInfoWidgetWidgetController___c__DisplayClass6_0 : public ::System::Object
 	{

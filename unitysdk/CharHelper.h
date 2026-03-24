@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define CHARHELPER_GETCHAR_OFFSET UNITYSDK_OFFSET(0xBCA9B60)
-#define CHARHELPER_ISNUMBERCHARBYINDEX_OFFSET UNITYSDK_OFFSET(0xBCA9C00)
-#define CHARHELPER_ISNUMBER_OFFSET UNITYSDK_OFFSET(0xBCA9D70)
+#define CHARHELPER_GETCHAR_OFFSET UNITYSDK_OFFSET(0x76A4EC0)
+#define CHARHELPER_ISNUMBERCHARBYINDEX_OFFSET UNITYSDK_OFFSET(0x76A4F60)
+#define CHARHELPER_ISNUMBER_OFFSET UNITYSDK_OFFSET(0x76A50D0)
 
-inline static constexpr unsigned int CharHelper_TypeDefinitionIndex = 36499;
+inline static constexpr unsigned int CharHelper_TypeDefinitionIndex = 41082;
 
 class CharHelper : public ::System::Object
 {

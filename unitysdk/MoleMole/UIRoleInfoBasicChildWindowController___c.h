@@ -6,34 +6,34 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBEA7F50)
-#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBEA7F90)
-#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__INITAVATARSCOREDIALOG_B__51_0_OFFSET UNITYSDK_OFFSET(0xBEA7FA0)
-#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__INITAVATARSCOREDIALOG_B__51_1_OFFSET UNITYSDK_OFFSET(0xBEA7FB0)
-#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__INITAVATARSCOREDIALOG_B__51_2_OFFSET UNITYSDK_OFFSET(0xBEA7FC0)
+#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA69CB90)
+#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA69CBD0)
+#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__INITAVATARSCOREDIALOG_B__51_0_OFFSET UNITYSDK_OFFSET(0xA69CBE0)
+#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__INITAVATARSCOREDIALOG_B__51_1_OFFSET UNITYSDK_OFFSET(0xA69CBF0)
+#define MOLEMOLE_UIROLEINFOBASICCHILDWINDOWCONTROLLER___C__INITAVATARSCOREDIALOG_B__51_2_OFFSET UNITYSDK_OFFSET(0xA69CC00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex = 40204;
+	inline static constexpr unsigned int UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex = 46380;
 
 	class UIRoleInfoBasicChildWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::Enum_3_CAE10C54ABAE6FAF>** StaticGet___9__51_1()
+		static ::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Single>** StaticGet___9__51_2()
 		{
-			return (::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::Enum_3_CAE10C54ABAE6FAF>**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x417D0);
+			return (::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x46100);
 		}
 		static ::MoleMole::UIRoleInfoBasicChildWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIRoleInfoBasicChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x417D8);
+			return (::MoleMole::UIRoleInfoBasicChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x46108);
 		}
 		static ::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Boolean>** StaticGet___9__51_0()
 		{
-			return (::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x417E0);
+			return (::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x46110);
 		}
-		static ::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Single>** StaticGet___9__51_2()
+		static ::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::Enum_3_CAE10C54ABAE6FAF>** StaticGet___9__51_1()
 		{
-			return (::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x417E8);
+			return (::System::Func_2<::MoleMole::UIRoleInfoBasicChildWindowController_ESortScoreLevel, ::Enum_3_CAE10C54ABAE6FAF>**)Il2CppClass::FromTypeDefinitionIndex(UIRoleInfoBasicChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x46118);
 		}
 
 		static ::System::Void _cctor()

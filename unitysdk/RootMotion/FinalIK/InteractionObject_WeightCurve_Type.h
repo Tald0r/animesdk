@@ -3,7 +3,7 @@
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int InteractionObject_WeightCurve_Type_TypeDefinitionIndex = 35110;
+	inline static constexpr unsigned int InteractionObject_WeightCurve_Type_TypeDefinitionIndex = 36112;
 
 	enum class InteractionObject_WeightCurve_Type : ::System::Int32
 	{

@@ -3,7 +3,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int Method_AdvanceTimeResult_TypeDefinitionIndex = 34335;
+	inline static constexpr unsigned int Method_AdvanceTimeResult_TypeDefinitionIndex = 35337;
 
 	enum class Method_AdvanceTimeResult : ::System::Int32
 	{

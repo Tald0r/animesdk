@@ -5,19 +5,19 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAEASING__CTOR_OFFSET UNITYSDK_OFFSET(0x89F9280)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAEASING__CTOR_OFFSET UNITYSDK_OFFSET(0x10A91EE0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowCameraEasing_TypeDefinitionIndex = 52663;
+	inline static constexpr unsigned int ConfigHollowCameraEasing_TypeDefinitionIndex = 43957;
 
 	class ConfigHollowCameraEasing : public ::System::Object
 	{
 	public:
 		::UnityEngine::AnimationCurve* easingCurve; // 0x10
-		::UnityEngine::Vector2 easingMaxSpeed; // 0x18
-		::System::Single easingSeconds; // 0x20
-		::System::Single MobileEasingThreshold; // 0x24
+		::System::Single MobileEasingThreshold; // 0x18
+		::UnityEngine::Vector2 easingMaxSpeed; // 0x1C
+		::System::Single easingSeconds; // 0x24
 
 		::System::Void _ctor()
 		{

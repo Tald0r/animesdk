@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CHARACTERSCRIPTCONFIG_CONFIGCUSTOMPROPERTYUIWITHMATDIC__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDD890)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIG_CONFIGCUSTOMPROPERTYUIWITHMATDIC__CTOR_OFFSET UNITYSDK_OFFSET(0xACAC1F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CharacterScriptConfig_ConfigCustomPropertyUIWithMatDic_TypeDefinitionIndex = 47306;
+	inline static constexpr unsigned int CharacterScriptConfig_ConfigCustomPropertyUIWithMatDic_TypeDefinitionIndex = 58769;
 
 	class CharacterScriptConfig_ConfigCustomPropertyUIWithMatDic : public ::MoleMole::CharacterScriptConfig_ConfigCustomPropertyUI
 	{

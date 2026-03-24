@@ -7,17 +7,17 @@ namespace MoleMole::Config { class ShowNpcMultiBodyParam; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_HOLLOWNPCSKINCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9713420)
+#define MOLEMOLE_CONFIG_HOLLOWNPCSKINCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB0A2550)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowNpcSkinConfig_TypeDefinitionIndex = 72833;
+	inline static constexpr unsigned int HollowNpcSkinConfig_TypeDefinitionIndex = 77607;
 
 	class HollowNpcSkinConfig : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowNpcConfig*>* npcSkins; // 0x10
-		::System::String* npcStateMachine; // 0x18
+		::System::String* npcStateMachine; // 0x10
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::HollowNpcConfig*>* npcSkins; // 0x18
 		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ShowNpcMultiBodyParam*>* bodyParam; // 0x20
 		::System::Int32 stateMachineID; // 0x28
 

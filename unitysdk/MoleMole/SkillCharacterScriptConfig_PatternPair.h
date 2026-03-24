@@ -5,12 +5,12 @@
 namespace MoleMole::Config { class AnimatorEventPattern; }
 namespace System { class String; }
 
-#define MOLEMOLE_SKILLCHARACTERSCRIPTCONFIG_PATTERNPAIR_GETNAME_OFFSET UNITYSDK_OFFSET(0xB3C2CA0)
-#define MOLEMOLE_SKILLCHARACTERSCRIPTCONFIG_PATTERNPAIR__CTOR_OFFSET UNITYSDK_OFFSET(0xB3C2D10)
+#define MOLEMOLE_SKILLCHARACTERSCRIPTCONFIG_PATTERNPAIR_GETNAME_OFFSET UNITYSDK_OFFSET(0xA65B120)
+#define MOLEMOLE_SKILLCHARACTERSCRIPTCONFIG_PATTERNPAIR__CTOR_OFFSET UNITYSDK_OFFSET(0xA65B190)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SkillCharacterScriptConfig_PatternPair_TypeDefinitionIndex = 61674;
+	inline static constexpr unsigned int SkillCharacterScriptConfig_PatternPair_TypeDefinitionIndex = 61836;
 
 	class SkillCharacterScriptConfig_PatternPair : public ::System::Object
 	{

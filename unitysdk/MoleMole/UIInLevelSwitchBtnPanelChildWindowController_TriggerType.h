@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelSwitchBtnPanelChildWindowController_TriggerType_TypeDefinitionIndex = 48348;
+	inline static constexpr unsigned int UIInLevelSwitchBtnPanelChildWindowController_TriggerType_TypeDefinitionIndex = 44611;
 
 	enum class UIInLevelSwitchBtnPanelChildWindowController_TriggerType : ::System::Int32
 	{
-		OnPointerDrag = 1,
 		OnPointerUp = 0,
 		OnPointerDragAndUp = 2,
+		OnPointerDrag = 1,
 	};
 }

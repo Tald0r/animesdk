@@ -7,7 +7,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfPhysics_TypeDefinitionIndex = 49780;
+	inline static constexpr unsigned int ConfigSurfPhysics_TypeDefinitionIndex = 78850;
 
 	struct alignas(8) ConfigSurfPhysics
 	{

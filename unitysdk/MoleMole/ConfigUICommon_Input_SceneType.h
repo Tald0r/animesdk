@@ -3,16 +3,16 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUICommon_Input_SceneType_TypeDefinitionIndex = 46458;
+	inline static constexpr unsigned int ConfigUICommon_Input_SceneType_TypeDefinitionIndex = 63111;
 
 	enum class ConfigUICommon_Input_SceneType : ::System::Int32
 	{
-		None = 0,
-		Hollow = 3,
-		InLevel = 1,
-		TriggerTPS = 5,
-		BigScene = 6,
 		Bangboo = 4,
+		TriggerTPS = 5,
 		MainCity = 2,
+		Hollow = 3,
+		BigScene = 6,
+		None = 0,
+		InLevel = 1,
 	};
 }

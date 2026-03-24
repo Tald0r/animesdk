@@ -8,12 +8,12 @@ namespace MoleMole { class UIRidusGotBooPageController; }
 namespace MoleMole::Battle { class Entity; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYANIFORENTITY_D__126_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x38F910)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYANIFORENTITY_D__126_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYANIFORENTITY_D__126_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x389660)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYANIFORENTITY_D__126_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController__PlayAniForEntity_d__126_TypeDefinitionIndex = 66335;
+	inline static constexpr unsigned int UIRidusGotBooPageController__PlayAniForEntity_d__126_TypeDefinitionIndex = 44113;
 
 	struct alignas(8) UIRidusGotBooPageController__PlayAniForEntity_d__126
 	{
@@ -21,8 +21,8 @@ namespace MoleMole
 		::MoleMole::Battle::Entity* entity; // 0x18
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x20
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x30
-		::System::Int32 __1__state; // 0x40
-		::System::Int32 aniID; // 0x44
+		::System::Int32 aniID; // 0x40
+		::System::Int32 __1__state; // 0x44
 
 		::System::Void MoveNext()
 		{

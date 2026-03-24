@@ -5,18 +5,18 @@
 namespace MoleMole { class UISuibianTempleExpeditionPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA75630)
-#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS41_0__OPENTEAMPREVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xCA75640)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x78FAEE0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__DISPLAYCLASS41_0__OPENTEAMPREVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x78FAEF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleExpeditionPageController___c__DisplayClass41_0_TypeDefinitionIndex = 37770;
+	inline static constexpr unsigned int UISuibianTempleExpeditionPageController___c__DisplayClass41_0_TypeDefinitionIndex = 58228;
 
 	class UISuibianTempleExpeditionPageController___c__DisplayClass41_0 : public ::System::Object
 	{
 	public:
-		::System::Action* call; // 0x10
-		::MoleMole::UISuibianTempleExpeditionPageController* __4__this; // 0x18
+		::MoleMole::UISuibianTempleExpeditionPageController* __4__this; // 0x10
+		::System::Action* call; // 0x18
 
 		::System::Void _ctor()
 		{

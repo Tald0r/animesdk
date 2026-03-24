@@ -4,12 +4,12 @@
 
 class Class_2_B8DA246CE054E60A;
 
-#define MOLEMOLE_UICINEMAREPORTPAGECONTEXT_INITREPORTCONTEXT_OFFSET UNITYSDK_OFFSET(0xCAA9D50)
-#define MOLEMOLE_UICINEMAREPORTPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCAA9EA0)
+#define MOLEMOLE_UICINEMAREPORTPAGECONTEXT_INITREPORTCONTEXT_OFFSET UNITYSDK_OFFSET(0xCB30110)
+#define MOLEMOLE_UICINEMAREPORTPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCB30260)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaReportPageContext_TypeDefinitionIndex = 71643;
+	inline static constexpr unsigned int UICinemaReportPageContext_TypeDefinitionIndex = 71008;
 
 	class UICinemaReportPageContext : public ::MoleMole::UIControllerContextBase
 	{

@@ -3,19 +3,20 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BubbleType_TypeDefinitionIndex = 40230;
+	inline static constexpr unsigned int BubbleType_TypeDefinitionIndex = 68409;
 
 	enum class BubbleType : ::System::Int32
 	{
-		CountUp = -6,
-		LevelQuest = 1,
-		ScoreUI2 = -8,
+		SwitchTeamLevel = -9,
 		Fairy = 0,
-		Task = -4,
-		CountDown = -3,
+		LevelQuest = 1,
+		CountUp = -6,
 		ScoreUI = -7,
-		Gold = -2,
 		NPCDomain = -1,
+		ScoreUI2 = -8,
 		Gold2 = -5,
+		CountDown = -3,
+		Task = -4,
+		Gold = -2,
 	};
 }

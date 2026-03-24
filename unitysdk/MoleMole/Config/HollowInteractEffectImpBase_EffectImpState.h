@@ -3,12 +3,12 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowInteractEffectImpBase_EffectImpState_TypeDefinitionIndex = 52486;
+	inline static constexpr unsigned int HollowInteractEffectImpBase_EffectImpState_TypeDefinitionIndex = 54164;
 
 	enum class HollowInteractEffectImpBase_EffectImpState : ::System::Int32
 	{
+		Executing = 1,
 		None = 0,
 		Finish = 2,
-		Executing = 1,
 	};
 }

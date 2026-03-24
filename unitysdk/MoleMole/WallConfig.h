@@ -7,17 +7,17 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_WALLCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xF0CA4D0)
+#define MOLEMOLE_WALLCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xEA41F60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int WallConfig_TypeDefinitionIndex = 50830;
+	inline static constexpr unsigned int WallConfig_TypeDefinitionIndex = 46858;
 
 	class WallConfig : public ::System::Object
 	{
 	public:
-		::Foundation::AssetPath PrefabPath; // 0x10
-		::System::Collections::Generic::List_1<::System::String*>* AbilityList; // 0x20
+		::System::Collections::Generic::List_1<::System::String*>* AbilityList; // 0x10
+		::Foundation::AssetPath PrefabPath; // 0x18
 		::UnityEngine::Vector2 Offset; // 0x28
 
 		::System::Void _ctor()

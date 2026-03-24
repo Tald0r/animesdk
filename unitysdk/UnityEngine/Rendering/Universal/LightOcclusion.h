@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTOCCLUSION__CTOR_OFFSET UNITYSDK_OFFSET(0x16F9E930)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTOCCLUSION__CTOR_OFFSET UNITYSDK_OFFSET(0x176704B0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int LightOcclusion_TypeDefinitionIndex = 28392;
+	inline static constexpr unsigned int LightOcclusion_TypeDefinitionIndex = 29335;
 
 	class LightOcclusion : public ::UnityEngine::MonoBehaviour
 	{

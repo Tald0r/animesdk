@@ -3,17 +3,17 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MOLEMOLE_CONFIG_CONFIGSETCAMERASTATECOMMONNODE_CAMERASTATE__CTOR_OFFSET UNITYSDK_OFFSET(0xF16CAA0)
+#define MOLEMOLE_CONFIG_CONFIGSETCAMERASTATECOMMONNODE_CAMERASTATE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4B420)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSetCameraStateCommonNode_CameraState_TypeDefinitionIndex = 51137;
+	inline static constexpr unsigned int ConfigSetCameraStateCommonNode_CameraState_TypeDefinitionIndex = 43185;
 
 	class ConfigSetCameraStateCommonNode_CameraState : public ::System::Object
 	{
 	public:
-		::System::Single FOV; // 0x10
-		::UnityEngine::Vector3 Position; // 0x14
+		::UnityEngine::Vector3 Position; // 0x10
+		::System::Single FOV; // 0x1C
 		::UnityEngine::Vector3 Rotation; // 0x20
 
 		::System::Void _ctor()

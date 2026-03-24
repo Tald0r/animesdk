@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 
 namespace Foundation
 {
-	inline static constexpr unsigned int EnumMetaData_1_TypeDefinitionIndex = 8881;
+	inline static constexpr unsigned int EnumMetaData_1_TypeDefinitionIndex = 8867;
 
 	template <typename TEnum>
 	class EnumMetaData_1 : public ::System::Object

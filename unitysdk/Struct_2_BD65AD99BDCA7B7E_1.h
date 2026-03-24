@@ -3,10 +3,10 @@
 #include "unitysdk/MoleMole/Config/BaseProperty.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_BD65AD99BDCA7B7E_1_EQUALS_OFFSET UNITYSDK_OFFSET(0x332E50)
-#define STRUCT_2_BD65AD99BDCA7B7E_1_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x332ED0)
+#define STRUCT_2_BD65AD99BDCA7B7E_1_EQUALS_OFFSET UNITYSDK_OFFSET(0x34C610)
+#define STRUCT_2_BD65AD99BDCA7B7E_1_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x34C690)
 
-inline static constexpr unsigned int Struct_2_BD65AD99BDCA7B7E_1_TypeDefinitionIndex = 60901;
+inline static constexpr unsigned int Struct_2_BD65AD99BDCA7B7E_1_TypeDefinitionIndex = 77019;
 
 struct alignas(1) Struct_2_BD65AD99BDCA7B7E_1
 {

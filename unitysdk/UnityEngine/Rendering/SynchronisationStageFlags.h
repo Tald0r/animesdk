@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int SynchronisationStageFlags_TypeDefinitionIndex = 6184;
+	inline static constexpr unsigned int SynchronisationStageFlags_TypeDefinitionIndex = 6188;
 
 	enum class SynchronisationStageFlags : ::System::Int32
 	{

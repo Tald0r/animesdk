@@ -5,12 +5,12 @@
 namespace NodeCanvas::Framework { class Node; }
 namespace System { class String; }
 
-#define NODECANVAS_STATEMACHINES_FSM___C__DISPLAYCLASS47_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19270B00)
-#define NODECANVAS_STATEMACHINES_FSM___C__DISPLAYCLASS47_0__GETSTATEWITHNAME_B__0_OFFSET UNITYSDK_OFFSET(0x19270B10)
+#define NODECANVAS_STATEMACHINES_FSM___C__DISPLAYCLASS47_0__CTOR_OFFSET UNITYSDK_OFFSET(0x196ED0C0)
+#define NODECANVAS_STATEMACHINES_FSM___C__DISPLAYCLASS47_0__GETSTATEWITHNAME_B__0_OFFSET UNITYSDK_OFFSET(0x196ED0D0)
 
 namespace NodeCanvas::StateMachines
 {
-	inline static constexpr unsigned int FSM___c__DisplayClass47_0_TypeDefinitionIndex = 25931;
+	inline static constexpr unsigned int FSM___c__DisplayClass47_0_TypeDefinitionIndex = 26386;
 
 	class FSM___c__DisplayClass47_0 : public ::System::Object
 	{

@@ -2,46 +2,46 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_PUNCTUALLIGHTSHADOWCASTERPASS_NATIVEIMPL_LOCALLIGHTSHADOWCACHECONFIGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19F4AFE0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PUNCTUALLIGHTSHADOWCASTERPASS_NATIVEIMPL_LOCALLIGHTSHADOWCACHECONFIGS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A527DC0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex = 5713;
+	inline static constexpr unsigned int PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex = 5716;
 
 	class PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs : public ::System::Object
 	{
 	public:
-		static ::System::UInt32* StaticGet_kMaxDynamicUpdatesPerFrame()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B00);
-		}
-		static ::System::UInt32* StaticGet_kMaxShadowedLightCount()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B04);
-		}
-		static ::System::UInt32* StaticGet_kSkipUpdateFrames()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B08);
-		}
-		static ::System::Single* StaticGet_kNoSkipDistance()
-		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B0C);
-		}
-		static ::System::UInt32* StaticGet_k_MaxShadowSlickCount()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B10);
-		}
 		static ::System::Single* StaticGet_kDynamicUpdateDistance()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B14);
-		}
-		static ::System::UInt32* StaticGet_kMaxStaticUpdatesPerFrame()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B18);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B00);
 		}
 		static ::System::Single* StaticGet_kLocalLightCastShadowDistance()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B1C);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B04);
+		}
+		static ::System::UInt32* StaticGet_kMaxStaticUpdatesPerFrame()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B08);
+		}
+		static ::System::UInt32* StaticGet_kMaxShadowedLightCount()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B0C);
+		}
+		static ::System::Single* StaticGet_kNoSkipDistance()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B10);
+		}
+		static ::System::UInt32* StaticGet_kMaxDynamicUpdatesPerFrame()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B14);
+		}
+		static ::System::UInt32* StaticGet_k_MaxShadowSlickCount()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B18);
+		}
+		static ::System::UInt32* StaticGet_kSkipUpdateFrames()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(PunctualLightShadowCasterPass_NativeImpl_LocalLightShadowCacheConfigs_TypeDefinitionIndex)->GetStaticField(0x2B1C);
 		}
 
 		static ::System::Void _cctor()

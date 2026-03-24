@@ -7,13 +7,13 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace System { class String; }
 
-#define SIRENIX_SERIALIZATION_GUIDSERIALIZER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1AEB64A0)
-#define SIRENIX_SERIALIZATION_GUIDSERIALIZER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1AEB6960)
-#define SIRENIX_SERIALIZATION_GUIDSERIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEB6A20)
+#define SIRENIX_SERIALIZATION_GUIDSERIALIZER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1B4CA580)
+#define SIRENIX_SERIALIZATION_GUIDSERIALIZER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1B4CAA40)
+#define SIRENIX_SERIALIZATION_GUIDSERIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B4CAB00)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int GuidSerializer_TypeDefinitionIndex = 7407;
+	inline static constexpr unsigned int GuidSerializer_TypeDefinitionIndex = 7412;
 
 	class GuidSerializer : public ::Sirenix::Serialization::Serializer_1<::System::Guid>
 	{

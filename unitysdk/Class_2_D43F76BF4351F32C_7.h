@@ -1,28 +1,26 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_1_275515F210334D06.h"
-#include "unitysdk/Struct_2_1862835F8661A21F_4.h"
+#include "unitysdk/Struct_2_1862835F8661A21F_258.h"
 
-class Class_2_208CC9941471731A_986;
+class Class_2_F6BD7FA5BF83F4CE;
 namespace FlatBuffers { class ByteBuffer; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_30D1209326FA87FC_OFFSET UNITYSDK_OFFSET(0x1A5E3690)
-#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_52F693593F7BBFE8_OFFSET UNITYSDK_OFFSET(0x1A5E31C0)
-#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1A5E3080)
-#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_CFC3030A2F1B39EC_1_OFFSET UNITYSDK_OFFSET(0x1A5E3940)
-#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_CFC3030A2F1B39EC_OFFSET UNITYSDK_OFFSET(0x1A5E3740)
-#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_DB4B6D1970066BE6_OFFSET UNITYSDK_OFFSET(0x1A5E3B40)
-#define CLASS_2_D43F76BF4351F32C_7__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5E30C0)
+#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_30D1209326FA87FC_OFFSET UNITYSDK_OFFSET(0x1AB63EF0)
+#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_5D6624A62F65B989_OFFSET UNITYSDK_OFFSET(0x1AB63FA0)
+#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1AB639E0)
+#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_CFC3030A2F1B39EC_OFFSET UNITYSDK_OFFSET(0x1AB63AB0)
+#define CLASS_2_D43F76BF4351F32C_7_METHOD_2_DB4B6D1970066BE6_OFFSET UNITYSDK_OFFSET(0x1AB63CB0)
+#define CLASS_2_D43F76BF4351F32C_7__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB63A20)
 
-inline static constexpr unsigned int Class_2_D43F76BF4351F32C_7_TypeDefinitionIndex = 79281;
+inline static constexpr unsigned int Class_2_D43F76BF4351F32C_7_TypeDefinitionIndex = 81591;
 
 class Class_2_D43F76BF4351F32C_7 : public ::Class_1_275515F210334D06
 {
 public:
-	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_2_208CC9941471731A_986*>* Field_2_2; // 0x18
-	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_2_208CC9941471731A_986*>* Field_2_1; // 0x20
-	::Struct_2_1862835F8661A21F_4 Field_2_0; // 0x28
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_2_F6BD7FA5BF83F4CE*>* Field_2_1; // 0x18
+	::Struct_2_1862835F8661A21F_258 Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{
@@ -34,9 +32,14 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_CA373AA1C7054598_OFFSET))(this);
 	}
 
-	::System::Void Method_2_52F693593F7BBFE8(::FlatBuffers::ByteBuffer* a1)
+	::Class_2_F6BD7FA5BF83F4CE* Method_2_CFC3030A2F1B39EC(::System::Int32 a1, ::System::Boolean a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::FlatBuffers::ByteBuffer*))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_52F693593F7BBFE8_OFFSET))(this, a1);
+		return ((::Class_2_F6BD7FA5BF83F4CE*(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_CFC3030A2F1B39EC_OFFSET))(this, a1, a2);
+	}
+
+	::System::Boolean Method_2_DB4B6D1970066BE6()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_DB4B6D1970066BE6_OFFSET))(this);
 	}
 
 	::System::Void Method_2_30D1209326FA87FC()
@@ -44,18 +47,8 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_30D1209326FA87FC_OFFSET))(this);
 	}
 
-	::Class_2_208CC9941471731A_986* Method_2_CFC3030A2F1B39EC(::System::Int32 a1, ::System::Boolean a2)
+	::System::Void Method_2_5D6624A62F65B989(::FlatBuffers::ByteBuffer* a1)
 	{
-		return ((::Class_2_208CC9941471731A_986*(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_CFC3030A2F1B39EC_OFFSET))(this, a1, a2);
-	}
-
-	::Class_2_208CC9941471731A_986* Method_2_CFC3030A2F1B39EC_1(::System::Int32 a1, ::System::Boolean a2)
-	{
-		return ((::Class_2_208CC9941471731A_986*(*)(::PVOID, ::System::Int32, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_CFC3030A2F1B39EC_1_OFFSET))(this, a1, a2);
-	}
-
-	::System::Boolean Method_2_DB4B6D1970066BE6()
-	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_DB4B6D1970066BE6_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::FlatBuffers::ByteBuffer*))((::PBYTE)hIl2Cpp + CLASS_2_D43F76BF4351F32C_7_METHOD_2_5D6624A62F65B989_OFFSET))(this, a1);
 	}
 };

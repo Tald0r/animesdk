@@ -5,22 +5,22 @@
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_FC45B5429438E193_CLASS_1_26A75D9F47C0ADAB_METHOD_1_4E2BCE3C8705DF5E_OFFSET UNITYSDK_OFFSET(0x62090E0)
-#define CLASS_1_FC45B5429438E193_CLASS_1_26A75D9F47C0ADAB_METHOD_1_5EC946237AFF8607_OFFSET UNITYSDK_OFFSET(0x6208E00)
-#define CLASS_1_FC45B5429438E193_CLASS_1_26A75D9F47C0ADAB__CCTOR_OFFSET UNITYSDK_OFFSET(0x6208D60)
+#define CLASS_1_FC45B5429438E193_CLASS_1_26A75D9F47C0ADAB_METHOD_1_4E2BCE3C8705DF5E_OFFSET UNITYSDK_OFFSET(0xA284D00)
+#define CLASS_1_FC45B5429438E193_CLASS_1_26A75D9F47C0ADAB_METHOD_1_5EC946237AFF8607_OFFSET UNITYSDK_OFFSET(0xA284A20)
+#define CLASS_1_FC45B5429438E193_CLASS_1_26A75D9F47C0ADAB__CCTOR_OFFSET UNITYSDK_OFFSET(0xA284980)
 
-inline static constexpr unsigned int Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB_TypeDefinitionIndex = 44383;
+inline static constexpr unsigned int Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB_TypeDefinitionIndex = 44984;
 
 class Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::UInt32>** StaticGet_Field_1_0()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB_TypeDefinitionIndex)->GetStaticField(0x44680);
+		return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB_TypeDefinitionIndex)->GetStaticField(0x2D250);
 	}
 	static ::System::UInt32* StaticGet_Field_1_1()
 	{
-		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB_TypeDefinitionIndex)->GetStaticField(0x11660);
+		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_FC45B5429438E193_Class_1_26A75D9F47C0ADAB_TypeDefinitionIndex)->GetStaticField(0xA440);
 	}
 
 	static ::System::Void _cctor()

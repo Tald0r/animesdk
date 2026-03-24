@@ -6,12 +6,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_NODEMAP_TRYGETVALUE_OFFSET UNITYSDK_OFFSET(0xA495550)
-#define MOLEMOLE_NODEMAP__CTOR_OFFSET UNITYSDK_OFFSET(0xA4956E0)
+#define MOLEMOLE_NODEMAP_TRYGETVALUE_OFFSET UNITYSDK_OFFSET(0x7A98BB0)
+#define MOLEMOLE_NODEMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x7A98D40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int NodeMap_TypeDefinitionIndex = 66754;
+	inline static constexpr unsigned int NodeMap_TypeDefinitionIndex = 42356;
 
 	class NodeMap : public ::UnityEngine::MonoBehaviour
 	{

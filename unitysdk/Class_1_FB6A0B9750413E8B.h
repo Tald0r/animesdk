@@ -6,22 +6,22 @@ class Class_2_78783A73BC2E7725;
 namespace System { class EventArgs; }
 namespace System { template <typename T> class WeakReference_1; }
 
-#define CLASS_1_FB6A0B9750413E8B_METHOD_1_BF10FA4CF868A326_OFFSET UNITYSDK_OFFSET(0x6BE8CD0)
-#define CLASS_1_FB6A0B9750413E8B_METHOD_1_CEBFF096B4C9D46B_OFFSET UNITYSDK_OFFSET(0x6BE8820)
-#define CLASS_1_FB6A0B9750413E8B__CCTOR_OFFSET UNITYSDK_OFFSET(0x6BE8780)
+#define CLASS_1_FB6A0B9750413E8B_METHOD_1_BF10FA4CF868A326_OFFSET UNITYSDK_OFFSET(0xD5E8CA0)
+#define CLASS_1_FB6A0B9750413E8B_METHOD_1_CEBFF096B4C9D46B_OFFSET UNITYSDK_OFFSET(0xD5E87F0)
+#define CLASS_1_FB6A0B9750413E8B__CCTOR_OFFSET UNITYSDK_OFFSET(0xD5E8750)
 
-inline static constexpr unsigned int Class_1_FB6A0B9750413E8B_TypeDefinitionIndex = 59777;
+inline static constexpr unsigned int Class_1_FB6A0B9750413E8B_TypeDefinitionIndex = 47631;
 
 class Class_1_FB6A0B9750413E8B : public ::System::Object
 {
 public:
 	static ::System::WeakReference_1<::Class_2_78783A73BC2E7725*>** StaticGet_Field_1_1()
 	{
-		return (::System::WeakReference_1<::Class_2_78783A73BC2E7725*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_FB6A0B9750413E8B_TypeDefinitionIndex)->GetStaticField(0x3F800);
+		return (::System::WeakReference_1<::Class_2_78783A73BC2E7725*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_FB6A0B9750413E8B_TypeDefinitionIndex)->GetStaticField(0x446A0);
 	}
 	static ::System::Boolean* StaticGet_Field_1_0()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Class_1_FB6A0B9750413E8B_TypeDefinitionIndex)->GetStaticField(0xFCD0);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Class_1_FB6A0B9750413E8B_TypeDefinitionIndex)->GetStaticField(0x10D60);
 	}
 
 	static ::System::Void _cctor()

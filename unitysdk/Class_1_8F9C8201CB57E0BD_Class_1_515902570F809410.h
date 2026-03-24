@@ -4,16 +4,16 @@
 
 namespace System { class String; }
 
-#define CLASS_1_8F9C8201CB57E0BD_CLASS_1_515902570F809410__CCTOR_OFFSET UNITYSDK_OFFSET(0x7BDDA90)
+#define CLASS_1_8F9C8201CB57E0BD_CLASS_1_515902570F809410__CCTOR_OFFSET UNITYSDK_OFFSET(0xBAC8710)
 
-inline static constexpr unsigned int Class_1_8F9C8201CB57E0BD_Class_1_515902570F809410_TypeDefinitionIndex = 70289;
+inline static constexpr unsigned int Class_1_8F9C8201CB57E0BD_Class_1_515902570F809410_TypeDefinitionIndex = 52447;
 
 class Class_1_8F9C8201CB57E0BD_Class_1_515902570F809410 : public ::System::Object
 {
 public:
 	static ::System::UInt32* StaticGet_Field_1_16()
 	{
-		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_8F9C8201CB57E0BD_Class_1_515902570F809410_TypeDefinitionIndex)->GetStaticField(0x9EC0);
+		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_8F9C8201CB57E0BD_Class_1_515902570F809410_TypeDefinitionIndex)->GetStaticField(0xD630);
 	}
 	// static const ::System::String* Field_1_0; // 0x0
 	// static const ::System::String* Field_1_1; // 0x0

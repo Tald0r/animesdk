@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int MeshOptimization_EMeshOptimizeType_TypeDefinitionIndex = 28144;
+inline static constexpr unsigned int MeshOptimization_EMeshOptimizeType_TypeDefinitionIndex = 29084;
 
 enum class MeshOptimization_EMeshOptimizeType : ::System::Int32
 {

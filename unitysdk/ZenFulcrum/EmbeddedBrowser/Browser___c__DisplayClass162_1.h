@@ -5,18 +5,18 @@
 namespace ZenFulcrum::EmbeddedBrowser { class BrowserNative_ReadyFunc; }
 namespace ZenFulcrum::EmbeddedBrowser { class Browser___c__DisplayClass162_0; }
 
-#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS162_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFE3B90)
-#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS162_1__WHENREADY_B__0_OFFSET UNITYSDK_OFFSET(0x1AFE3BA0)
+#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS162_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5EDBC0)
+#define ZENFULCRUM_EMBEDDEDBROWSER_BROWSER___C__DISPLAYCLASS162_1__WHENREADY_B__0_OFFSET UNITYSDK_OFFSET(0x1B5EDBD0)
 
 namespace ZenFulcrum::EmbeddedBrowser
 {
-	inline static constexpr unsigned int Browser___c__DisplayClass162_1_TypeDefinitionIndex = 29488;
+	inline static constexpr unsigned int Browser___c__DisplayClass162_1_TypeDefinitionIndex = 30441;
 
 	class Browser___c__DisplayClass162_1 : public ::System::Object
 	{
 	public:
-		::ZenFulcrum::EmbeddedBrowser::BrowserNative_ReadyFunc* func; // 0x10
-		::ZenFulcrum::EmbeddedBrowser::Browser___c__DisplayClass162_0* CS___8__locals1; // 0x18
+		::ZenFulcrum::EmbeddedBrowser::Browser___c__DisplayClass162_0* CS___8__locals1; // 0x10
+		::ZenFulcrum::EmbeddedBrowser::BrowserNative_ReadyFunc* func; // 0x18
 
 		::System::Void _ctor()
 		{

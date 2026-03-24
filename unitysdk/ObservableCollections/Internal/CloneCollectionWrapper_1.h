@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 
 namespace ObservableCollections::Internal
 {
-	inline static constexpr unsigned int CloneCollectionWrapper_1_TypeDefinitionIndex = 24193;
+	inline static constexpr unsigned int CloneCollectionWrapper_1_TypeDefinitionIndex = 25291;
 
 	template <typename T>
 	struct CloneCollectionWrapper_1

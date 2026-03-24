@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/ParadoxNotion/Design/DrawerAttribute.h"
 
-#define PARADOXNOTION_DESIGN_MINVALUEATTRIBUTE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x1916C0D0)
-#define PARADOXNOTION_DESIGN_MINVALUEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1916C0F0)
-#define PARADOXNOTION_DESIGN_MINVALUEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1916C0E0)
+#define PARADOXNOTION_DESIGN_MINVALUEATTRIBUTE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x1955E190)
+#define PARADOXNOTION_DESIGN_MINVALUEATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1955E1B0)
+#define PARADOXNOTION_DESIGN_MINVALUEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1955E1A0)
 
 namespace ParadoxNotion::Design
 {
-	inline static constexpr unsigned int MinValueAttribute_TypeDefinitionIndex = 25132;
+	inline static constexpr unsigned int MinValueAttribute_TypeDefinitionIndex = 27194;
 
 	class MinValueAttribute : public ::ParadoxNotion::Design::DrawerAttribute
 	{

@@ -10,21 +10,21 @@ namespace System::Net::Http::Headers { class HttpHeaders; }
 namespace System::Net::Http::Headers { template <typename T> class TryParseDelegate_1; }
 namespace System::Net::Http::Headers { template <typename T> class TryParseListDelegate_1; }
 
-#define SYSTEM_NET_HTTP_HEADERS_HEADERINFO_CREATECOLLECTION_OFFSET UNITYSDK_OFFSET(0x19DE9130)
-#define SYSTEM_NET_HTTP_HEADERS_HEADERINFO_GET_SEPARATOR_OFFSET UNITYSDK_OFFSET(0x19DE9150)
-#define SYSTEM_NET_HTTP_HEADERS_HEADERINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x19DE9120)
+#define SYSTEM_NET_HTTP_HEADERS_HEADERINFO_CREATECOLLECTION_OFFSET UNITYSDK_OFFSET(0x1A3CA920)
+#define SYSTEM_NET_HTTP_HEADERS_HEADERINFO_GET_SEPARATOR_OFFSET UNITYSDK_OFFSET(0x1A3CA940)
+#define SYSTEM_NET_HTTP_HEADERS_HEADERINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3CA910)
 
 namespace System::Net::Http::Headers
 {
-	inline static constexpr unsigned int HeaderInfo_TypeDefinitionIndex = 23540;
+	inline static constexpr unsigned int HeaderInfo_TypeDefinitionIndex = 24223;
 
 	class HeaderInfo : public ::System::Object
 	{
 	public:
-		::System::Func_2<::System::Object*, ::System::String*>* _CustomToString_k__BackingField; // 0x10
-		::System::String* Name; // 0x18
-		::System::Boolean AllowsMany; // 0x20
-		::System::Net::Http::Headers::HttpHeaderKind HeaderKind; // 0x24
+		::System::String* Name; // 0x10
+		::System::Func_2<::System::Object*, ::System::String*>* _CustomToString_k__BackingField; // 0x18
+		::System::Net::Http::Headers::HttpHeaderKind HeaderKind; // 0x20
+		::System::Boolean AllowsMany; // 0x24
 
 		::System::Void _ctor(::System::String* name, ::System::Net::Http::Headers::HttpHeaderKind headerKind)
 		{

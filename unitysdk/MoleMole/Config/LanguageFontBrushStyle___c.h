@@ -5,24 +5,24 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE___C_METHOD_1_3DC3FA08FDCAB5D3_OFFSET UNITYSDK_OFFSET(0xCCA65F0)
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCCA65A0)
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCCA65E0)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE___C_METHOD_1_3DC3FA08FDCAB5D3_OFFSET UNITYSDK_OFFSET(0xACD54C0)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xACD5470)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xACD54B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LanguageFontBrushStyle___c_TypeDefinitionIndex = 53816;
+	inline static constexpr unsigned int LanguageFontBrushStyle___c_TypeDefinitionIndex = 47014;
 
 	class LanguageFontBrushStyle___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Config::LanguageFontBrushStyle___c** StaticGet___9()
 		{
-			return (::MoleMole::Config::LanguageFontBrushStyle___c**)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle___c_TypeDefinitionIndex)->GetStaticField(0x31F50);
+			return (::MoleMole::Config::LanguageFontBrushStyle___c**)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle___c_TypeDefinitionIndex)->GetStaticField(0x33DC0);
 		}
 		static ::System::Comparison_1<::MoleMole::Config::LanguageSizeFontBrushStyle>** StaticGet___9__9_0()
 		{
-			return (::System::Comparison_1<::MoleMole::Config::LanguageSizeFontBrushStyle>**)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle___c_TypeDefinitionIndex)->GetStaticField(0x31F58);
+			return (::System::Comparison_1<::MoleMole::Config::LanguageSizeFontBrushStyle>**)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle___c_TypeDefinitionIndex)->GetStaticField(0x33DC8);
 		}
 
 		static ::System::Void _cctor()

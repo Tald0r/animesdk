@@ -4,11 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_97373C8E056325F8_METHOD_1_1E87171074AA7CDF_OFFSET UNITYSDK_OFFSET(0x9E39BC0)
-#define CLASS_1_97373C8E056325F8_METHOD_1_51CFFE2AF748ECD7_OFFSET UNITYSDK_OFFSET(0x9E39E50)
-#define CLASS_1_97373C8E056325F8__CTOR_OFFSET UNITYSDK_OFFSET(0x9E39BB0)
+#define CLASS_1_97373C8E056325F8_METHOD_1_1E87171074AA7CDF_OFFSET UNITYSDK_OFFSET(0xD482300)
+#define CLASS_1_97373C8E056325F8_METHOD_1_51CFFE2AF748ECD7_OFFSET UNITYSDK_OFFSET(0xD4821A0)
+#define CLASS_1_97373C8E056325F8__CTOR_OFFSET UNITYSDK_OFFSET(0xD482190)
 
-inline static constexpr unsigned int Class_1_97373C8E056325F8_TypeDefinitionIndex = 58844;
+inline static constexpr unsigned int Class_1_97373C8E056325F8_TypeDefinitionIndex = 43326;
 
 class Class_1_97373C8E056325F8 : public ::System::Object
 {
@@ -22,13 +22,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_97373C8E056325F8__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_1E87171074AA7CDF(::System::UInt32 a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_97373C8E056325F8_METHOD_1_1E87171074AA7CDF_OFFSET))(this, a1);
-	}
-
 	::System::Void Method_1_51CFFE2AF748ECD7()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_97373C8E056325F8_METHOD_1_51CFFE2AF748ECD7_OFFSET))(this);
+	}
+
+	::System::Void Method_1_1E87171074AA7CDF(::System::UInt32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_97373C8E056325F8_METHOD_1_1E87171074AA7CDF_OFFSET))(this, a1);
 	}
 };

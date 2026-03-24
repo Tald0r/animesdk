@@ -7,16 +7,16 @@ namespace System { class Object; }
 namespace System::Threading { class TimerCallback; }
 namespace System::Threading { class Timer_Scheduler; }
 
-#define SYSTEM_THREADING_TIMER_CHANGE_1_OFFSET UNITYSDK_OFFSET(0x1944F0D0)
-#define SYSTEM_THREADING_TIMER_CHANGE_2_OFFSET UNITYSDK_OFFSET(0x1944EE90)
-#define SYSTEM_THREADING_TIMER_CHANGE_OFFSET UNITYSDK_OFFSET(0x1944F0B0)
-#define SYSTEM_THREADING_TIMER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1944F160)
-#define SYSTEM_THREADING_TIMER_GETTIMEMONOTONIC_OFFSET UNITYSDK_OFFSET(0x1944F1D0)
-#define SYSTEM_THREADING_TIMER_INIT_OFFSET UNITYSDK_OFFSET(0x1944ECC0)
-#define SYSTEM_THREADING_TIMER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1944F210)
-#define SYSTEM_THREADING_TIMER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1944ED20)
-#define SYSTEM_THREADING_TIMER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1944EDF0)
-#define SYSTEM_THREADING_TIMER__CTOR_OFFSET UNITYSDK_OFFSET(0x1944EC60)
+#define SYSTEM_THREADING_TIMER_CHANGE_1_OFFSET UNITYSDK_OFFSET(0x19867120)
+#define SYSTEM_THREADING_TIMER_CHANGE_2_OFFSET UNITYSDK_OFFSET(0x19866EE0)
+#define SYSTEM_THREADING_TIMER_CHANGE_OFFSET UNITYSDK_OFFSET(0x19867100)
+#define SYSTEM_THREADING_TIMER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x198671B0)
+#define SYSTEM_THREADING_TIMER_GETTIMEMONOTONIC_OFFSET UNITYSDK_OFFSET(0x19867220)
+#define SYSTEM_THREADING_TIMER_INIT_OFFSET UNITYSDK_OFFSET(0x19866D10)
+#define SYSTEM_THREADING_TIMER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19867260)
+#define SYSTEM_THREADING_TIMER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19866D70)
+#define SYSTEM_THREADING_TIMER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x19866E40)
+#define SYSTEM_THREADING_TIMER__CTOR_OFFSET UNITYSDK_OFFSET(0x19866CB0)
 
 namespace System::Threading
 {
@@ -29,12 +29,12 @@ namespace System::Threading
 		{
 			return (::System::Threading::Timer_Scheduler**)Il2CppClass::FromTypeDefinitionIndex(Timer_TypeDefinitionIndex)->GetStaticField(0x3D0);
 		}
-		::System::Object* state; // 0x18
-		::System::Threading::TimerCallback* callback; // 0x20
-		::System::Boolean disposed; // 0x28
-		::System::Int64 due_time_ms; // 0x30
+		::System::Threading::TimerCallback* callback; // 0x18
+		::System::Object* state; // 0x20
+		::System::Int64 period_ms; // 0x28
+		::System::Boolean disposed; // 0x30
 		::System::Int64 next_run; // 0x38
-		::System::Int64 period_ms; // 0x40
+		::System::Int64 due_time_ms; // 0x40
 
 		::System::Void _ctor(::System::Threading::TimerCallback* callback, ::System::Object* state, ::System::Int32 dueTime, ::System::Int32 period)
 		{

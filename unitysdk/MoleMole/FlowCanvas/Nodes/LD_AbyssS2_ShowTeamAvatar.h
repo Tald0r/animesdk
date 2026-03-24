@@ -7,20 +7,20 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_SHOWTEAMAVATAR_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA5EBF70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_SHOWTEAMAVATAR__CTOR_OFFSET UNITYSDK_OFFSET(0xA5EC0A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_SHOWTEAMAVATAR__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xA5EC0C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_SHOWTEAMAVATAR_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA7D5D70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_SHOWTEAMAVATAR__CTOR_OFFSET UNITYSDK_OFFSET(0xA7D5EA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_SHOWTEAMAVATAR__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xA7D5EC0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_ShowTeamAvatar_TypeDefinitionIndex = 39275;
+	inline static constexpr unsigned int LD_AbyssS2_ShowTeamAvatar_TypeDefinitionIndex = 79859;
 
 	class LD_AbyssS2_ShowTeamAvatar : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _out; // 0xA8
-		::FlowCanvas::ValueInput_1<::Il2CppArray<::System::String*>*>* _spawnPoints; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::String*>* _animatorTrigger; // 0xB8
+		::FlowCanvas::ValueInput_1<::Il2CppArray<::System::String*>*>* _spawnPoints; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::String*>* _animatorTrigger; // 0xB0
+		::FlowCanvas::FlowOutput* _out; // 0xB8
 
 		::System::Void _ctor()
 		{

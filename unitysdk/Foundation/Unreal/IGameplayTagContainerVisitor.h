@@ -4,7 +4,7 @@
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int IGameplayTagContainerVisitor_TypeDefinitionIndex = 9126;
+	inline static constexpr unsigned int IGameplayTagContainerVisitor_TypeDefinitionIndex = 9052;
 
 	class IGameplayTagContainerVisitor
 	{

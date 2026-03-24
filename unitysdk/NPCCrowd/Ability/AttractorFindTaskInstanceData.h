@@ -1,46 +1,94 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2FCFB0)
-#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x2FCF50)
-#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x694D310)
-#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x694D3D0)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_CREATE_OFFSET UNITYSDK_OFFSET(0x62D0A20)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2F1E30)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x2F1EA0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_RESET_OFFSET UNITYSDK_OFFSET(0x2F1E90)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2F1F00)
+#define NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x62D0B50)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int AttractorFindTaskInstanceData_TypeDefinitionIndex = 60903;
+	inline static constexpr unsigned int AttractorFindTaskInstanceData_TypeDefinitionIndex = 49628;
 
 	struct alignas(1) AttractorFindTaskInstanceData
 	{
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(AttractorFindTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xE260);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(AttractorFindTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0x3BD60);
 		}
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
-		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(AttractorFindTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xE264);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xA671C8EA; // 0x0
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA__CCTOR_OFFSET))();
 		}
 
-		::System::UInt32 get_TypeId()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_TYPEID_OFFSET))(this);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_StaticStruct()
+		static ::NPCCrowd::Ability::AttractorFindTaskInstanceData Create()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
+			return ((::NPCCrowd::Ability::AttractorFindTaskInstanceData(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_CREATE_OFFSET))();
 		}
 
-		static ::System::Void RegisterType()
+		::NPCCrowd::Ability::AttractorFindTaskInstanceData DefaultCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_REGISTERTYPE_OFFSET))();
+			return ((::NPCCrowd::Ability::AttractorFindTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::AttractorFindTaskInstanceData CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::AttractorFindTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::AttractorFindTaskInstanceData MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::AttractorFindTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::AttractorFindTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::AttractorFindTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::AttractorFindTaskInstanceData& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::AttractorFindTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_AttractorFindTaskInstanceData__CopyAssign(::NPCCrowd::Ability::AttractorFindTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::AttractorFindTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_ATTRACTORFINDTASKINSTANCEDATA__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

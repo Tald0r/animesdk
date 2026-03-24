@@ -6,20 +6,20 @@
 class Class_1_1FCBF6F207BFD09E;
 class Class_1_22EF90524645AFD7;
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_GRIDSHOWEVENTTEXTURESECTION_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xF1B5CE0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_GRIDSHOWEVENTTEXTURESECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0xF1B5E00)
-#define MOLEMOLE_HOLLOWCHESSBOARD_GRIDSHOWEVENTTEXTURESECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B5DF0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_GRIDSHOWEVENTTEXTURESECTION_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xB98F7F0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_GRIDSHOWEVENTTEXTURESECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0xB98F910)
+#define MOLEMOLE_HOLLOWCHESSBOARD_GRIDSHOWEVENTTEXTURESECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xB98F900)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int GridShowEventTextureSection_TypeDefinitionIndex = 75920;
+	inline static constexpr unsigned int GridShowEventTextureSection_TypeDefinitionIndex = 49684;
 
 	class GridShowEventTextureSection : public ::System::Object
 	{
 	public:
 		static ::MoleMole::HollowChessboard::RenderSequenceSectionType* StaticGet_SectionType()
 		{
-			return (::MoleMole::HollowChessboard::RenderSequenceSectionType*)Il2CppClass::FromTypeDefinitionIndex(GridShowEventTextureSection_TypeDefinitionIndex)->GetStaticField(0x10750);
+			return (::MoleMole::HollowChessboard::RenderSequenceSectionType*)Il2CppClass::FromTypeDefinitionIndex(GridShowEventTextureSection_TypeDefinitionIndex)->GetStaticField(0x10710);
 		}
 		::System::Int32 IconTextureId; // 0x10
 

@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIMissionTipsRowMultiWidgetController; }
 
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS62_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA3C3C30)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS62_0__RESUME_B__0_OFFSET UNITYSDK_OFFSET(0xA3C3C40)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS62_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8ED7B30)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS62_0__RESUME_B__0_OFFSET UNITYSDK_OFFSET(0x8ED7B40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass62_0_TypeDefinitionIndex = 75709;
+	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass62_0_TypeDefinitionIndex = 70967;
 
 	class UIMissionTipsContainerWidgetController___c__DisplayClass62_0 : public ::System::Object
 	{

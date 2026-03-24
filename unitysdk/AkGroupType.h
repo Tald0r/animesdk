@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int AkGroupType_TypeDefinitionIndex = 29937;
+inline static constexpr unsigned int AkGroupType_TypeDefinitionIndex = 30890;
 
 enum class AkGroupType : ::System::Int32
 {

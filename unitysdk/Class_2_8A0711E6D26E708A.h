@@ -8,18 +8,18 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UIDynamicNumberLabel; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_8A0711E6D26E708A_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x9DE5480)
-#define CLASS_2_8A0711E6D26E708A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9DE5550)
-#define CLASS_2_8A0711E6D26E708A__CTOR_OFFSET UNITYSDK_OFFSET(0x9DE5540)
+#define CLASS_2_8A0711E6D26E708A_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x7B911E0)
+#define CLASS_2_8A0711E6D26E708A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7B912B0)
+#define CLASS_2_8A0711E6D26E708A__CTOR_OFFSET UNITYSDK_OFFSET(0x7B912A0)
 
-inline static constexpr unsigned int Class_2_8A0711E6D26E708A_TypeDefinitionIndex = 45593;
+inline static constexpr unsigned int Class_2_8A0711E6D26E708A_TypeDefinitionIndex = 44794;
 
 class Class_2_8A0711E6D26E708A : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_2; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x18
 	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_0; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
+	::UnityEngine::GameObject* Field_2_2; // 0x28
 
 	::System::Void _ctor()
 	{

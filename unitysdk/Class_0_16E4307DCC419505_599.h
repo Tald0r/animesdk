@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/System/Nullable_1.h"
+#include "unitysdk/PipelineCamera/WorldBasicCameraData.h"
+#include "unitysdk/Struct_2_9F85650CFFBE9F44.h"
 
-class Class_0_16E4307DCC419505_161;
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_599_TypeDefinitionIndex = 61344;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_599_TypeDefinitionIndex = 73971;
 
 class Class_0_16E4307DCC419505_599
 {

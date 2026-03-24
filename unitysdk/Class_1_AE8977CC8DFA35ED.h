@@ -3,12 +3,15 @@
 #include "unitysdk/System/Object.h"
 
 namespace MoleMole::Battle { class Entity; }
-namespace MoleMole::MiniGame::BangbooPartyGame { class MonoBangbooPartyAIPathPoint; }
+namespace UnityEngine { class Transform; }
 
-#define CLASS_1_AE8977CC8DFA35ED_METHOD_1_F529FE43CE7C9911_OFFSET UNITYSDK_OFFSET(0xB80E350)
-#define CLASS_1_AE8977CC8DFA35ED__CTOR_OFFSET UNITYSDK_OFFSET(0xB80E340)
+#define CLASS_1_AE8977CC8DFA35ED_METHOD_1_6D5F59BCE8B4A09A_OFFSET UNITYSDK_OFFSET(0x64A8F00)
+#define CLASS_1_AE8977CC8DFA35ED_METHOD_1_7A0D5FDBC5C9186C_OFFSET UNITYSDK_OFFSET(0x64A8AB0)
+#define CLASS_1_AE8977CC8DFA35ED_METHOD_1_99D60EF23C904C6D_OFFSET UNITYSDK_OFFSET(0x64A8FB0)
+#define CLASS_1_AE8977CC8DFA35ED_METHOD_1_B86122B0EE4F8679_OFFSET UNITYSDK_OFFSET(0x64A9080)
+#define CLASS_1_AE8977CC8DFA35ED__CTOR_OFFSET UNITYSDK_OFFSET(0x64A8AA0)
 
-inline static constexpr unsigned int Class_1_AE8977CC8DFA35ED_TypeDefinitionIndex = 53540;
+inline static constexpr unsigned int Class_1_AE8977CC8DFA35ED_TypeDefinitionIndex = 57794;
 
 class Class_1_AE8977CC8DFA35ED : public ::System::Object
 {
@@ -20,8 +23,23 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED__CTOR_OFFSET))(this, a1);
 	}
 
-	::Il2CppArray<::MoleMole::MiniGame::BangbooPartyGame::MonoBangbooPartyAIPathPoint*>* Method_1_F529FE43CE7C9911()
+	::System::Boolean Method_1_7A0D5FDBC5C9186C()
 	{
-		return ((::Il2CppArray<::MoleMole::MiniGame::BangbooPartyGame::MonoBangbooPartyAIPathPoint*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_METHOD_1_F529FE43CE7C9911_OFFSET))(this);
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_METHOD_1_7A0D5FDBC5C9186C_OFFSET))(this);
+	}
+
+	::System::Void Method_1_99D60EF23C904C6D()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_METHOD_1_99D60EF23C904C6D_OFFSET))(this);
+	}
+
+	::System::Void Method_1_B86122B0EE4F8679(::System::Single a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_METHOD_1_B86122B0EE4F8679_OFFSET))(this, a1);
+	}
+
+	::UnityEngine::Transform* Method_1_6D5F59BCE8B4A09A()
+	{
+		return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_METHOD_1_6D5F59BCE8B4A09A_OFFSET))(this);
 	}
 };

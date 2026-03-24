@@ -6,13 +6,13 @@
 namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 
-#define SIRENIX_SERIALIZATION_TIMESPANFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1AE2B070)
-#define SIRENIX_SERIALIZATION_TIMESPANFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1AE2B1D0)
-#define SIRENIX_SERIALIZATION_TIMESPANFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE2B290)
+#define SIRENIX_SERIALIZATION_TIMESPANFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B444950)
+#define SIRENIX_SERIALIZATION_TIMESPANFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B444AB0)
+#define SIRENIX_SERIALIZATION_TIMESPANFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B444B70)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int TimeSpanFormatter_TypeDefinitionIndex = 7351;
+	inline static constexpr unsigned int TimeSpanFormatter_TypeDefinitionIndex = 7356;
 
 	class TimeSpanFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::System::TimeSpan>
 	{

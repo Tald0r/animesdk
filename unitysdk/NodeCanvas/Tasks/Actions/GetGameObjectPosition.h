@@ -7,13 +7,13 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETGAMEOBJECTPOSITION_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1829A0)
-#define NODECANVAS_TASKS_ACTIONS_GETGAMEOBJECTPOSITION_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A182C10)
-#define NODECANVAS_TASKS_ACTIONS_GETGAMEOBJECTPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A182CF0)
+#define NODECANVAS_TASKS_ACTIONS_GETGAMEOBJECTPOSITION_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A72B220)
+#define NODECANVAS_TASKS_ACTIONS_GETGAMEOBJECTPOSITION_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A72B490)
+#define NODECANVAS_TASKS_ACTIONS_GETGAMEOBJECTPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A72B570)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetGameObjectPosition_TypeDefinitionIndex = 25809;
+	inline static constexpr unsigned int GetGameObjectPosition_TypeDefinitionIndex = 27272;
 
 	class GetGameObjectPosition : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{

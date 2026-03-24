@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_4.h"
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDV2_INVOKE_OFFSET UNITYSDK_OFFSET(0x8AEBBA0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDV2__CTOR_OFFSET UNITYSDK_OFFSET(0x8AEBD30)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDV2_INVOKE_OFFSET UNITYSDK_OFFSET(0x116428F0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYSOUNDV2__CTOR_OFFSET UNITYSDK_OFFSET(0x11642A80)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardPlaySoundV2_TypeDefinitionIndex = 38333;
+	inline static constexpr unsigned int ChessboardPlaySoundV2_TypeDefinitionIndex = 37990;
 
 	class ChessboardPlaySoundV2 : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_4<::System::Int32, ::System::Int32, ::System::Int32, ::System::Boolean>
 	{

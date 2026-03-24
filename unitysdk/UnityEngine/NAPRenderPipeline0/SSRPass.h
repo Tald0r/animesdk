@@ -14,22 +14,22 @@ namespace UnityEngine { class RenderTexture; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS_EXECUTESSRPASS_OFFSET UNITYSDK_OFFSET(0x19F3D340)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19F3E3B0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS_SETLOCALRENDERTARGET_OFFSET UNITYSDK_OFFSET(0x19F3C8E0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19F3E420)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19F3C850)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS_EXECUTESSRPASS_OFFSET UNITYSDK_OFFSET(0x1A535250)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1A5362C0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS_SETLOCALRENDERTARGET_OFFSET UNITYSDK_OFFSET(0x1A5347F0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A536330)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSRPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A534760)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SSRPass_TypeDefinitionIndex = 5815;
+	inline static constexpr unsigned int SSRPass_TypeDefinitionIndex = 5817;
 
 	class SSRPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::UnityEngine::NAPRenderPipeline0::ProfilingSampler** StaticGet_mProfilingSampler()
 		{
-			return (::UnityEngine::NAPRenderPipeline0::ProfilingSampler**)Il2CppClass::FromTypeDefinitionIndex(SSRPass_TypeDefinitionIndex)->GetStaticField(0x5600);
+			return (::UnityEngine::NAPRenderPipeline0::ProfilingSampler**)Il2CppClass::FromTypeDefinitionIndex(SSRPass_TypeDefinitionIndex)->GetStaticField(0x5630);
 		}
 
 		::System::Void _ctor(::System::String* profilerTag, ::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent>* renderPassEventConfig)

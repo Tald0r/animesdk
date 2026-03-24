@@ -3,7 +3,7 @@
 #include "unitysdk/OneBoneLayerRuntimeData.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int Blend2DRuntimeData_TypeDefinitionIndex = 70871;
+inline static constexpr unsigned int Blend2DRuntimeData_TypeDefinitionIndex = 77012;
 
 struct alignas(8) Blend2DRuntimeData
 {

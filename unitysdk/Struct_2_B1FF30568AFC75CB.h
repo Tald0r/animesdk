@@ -6,10 +6,10 @@ class Class_1_DFEB9A1A221CB8BE;
 namespace MoleMole::Vehicle { class VehicleTestCameraMono; }
 namespace UnityEngine { class Transform; }
 
-#define STRUCT_2_B1FF30568AFC75CB_METHOD_2_80E623F60C48CE30_OFFSET UNITYSDK_OFFSET(0x771CC70)
-#define STRUCT_2_B1FF30568AFC75CB__CTOR_OFFSET UNITYSDK_OFFSET(0x32A690)
+#define STRUCT_2_B1FF30568AFC75CB_METHOD_2_80E623F60C48CE30_OFFSET UNITYSDK_OFFSET(0x8901260)
+#define STRUCT_2_B1FF30568AFC75CB__CTOR_OFFSET UNITYSDK_OFFSET(0x358EE0)
 
-inline static constexpr unsigned int Struct_2_B1FF30568AFC75CB_TypeDefinitionIndex = 41496;
+inline static constexpr unsigned int Struct_2_B1FF30568AFC75CB_TypeDefinitionIndex = 59995;
 
 struct alignas(8) Struct_2_B1FF30568AFC75CB
 {

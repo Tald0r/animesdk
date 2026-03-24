@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MIHOYO_TOOLKIT_CGTOOLKIT_DOUBLESTRING_REPLACE_OFFSET UNITYSDK_OFFSET(0x80152E0)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_DOUBLESTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x80152D0)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_DOUBLESTRING_REPLACE_OFFSET UNITYSDK_OFFSET(0x9CCA050)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_DOUBLESTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x9CCA040)
 
 namespace MiHoYo::ToolKit::CGToolKit
 {
-	inline static constexpr unsigned int DoubleString_TypeDefinitionIndex = 55884;
+	inline static constexpr unsigned int DoubleString_TypeDefinitionIndex = 42595;
 
 	class DoubleString : public ::System::Object
 	{

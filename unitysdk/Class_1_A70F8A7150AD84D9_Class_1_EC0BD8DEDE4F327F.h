@@ -5,9 +5,9 @@
 class Class_1_A70F8A7150AD84D9_Class_3_C573DFE445EBACB6;
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 
-#define CLASS_1_A70F8A7150AD84D9_CLASS_1_EC0BD8DEDE4F327F__CTOR_OFFSET UNITYSDK_OFFSET(0x6A419B0)
+#define CLASS_1_A70F8A7150AD84D9_CLASS_1_EC0BD8DEDE4F327F__CTOR_OFFSET UNITYSDK_OFFSET(0xA286CE0)
 
-inline static constexpr unsigned int Class_1_A70F8A7150AD84D9_Class_1_EC0BD8DEDE4F327F_TypeDefinitionIndex = 45752;
+inline static constexpr unsigned int Class_1_A70F8A7150AD84D9_Class_1_EC0BD8DEDE4F327F_TypeDefinitionIndex = 52781;
 
 class Class_1_A70F8A7150AD84D9_Class_1_EC0BD8DEDE4F327F : public ::System::Object
 {

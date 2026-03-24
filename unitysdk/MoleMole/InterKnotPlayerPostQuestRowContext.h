@@ -4,11 +4,11 @@
 
 class Class_2_0591F49F42E285A4;
 
-#define MOLEMOLE_INTERKNOTPLAYERPOSTQUESTROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B7A40)
+#define MOLEMOLE_INTERKNOTPLAYERPOSTQUESTROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB9932C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int InterKnotPlayerPostQuestRowContext_TypeDefinitionIndex = 78818;
+	inline static constexpr unsigned int InterKnotPlayerPostQuestRowContext_TypeDefinitionIndex = 70270;
 
 	class InterKnotPlayerPostQuestRowContext : public ::MoleMole::UIControllerContextBase
 	{

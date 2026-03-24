@@ -5,12 +5,12 @@
 namespace MoleMole::FlowCanvas::Nodes { template <typename T> class LDDGenericDataSource_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSORTDAILYCARDDATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xC21BFE0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSORTDAILYCARDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC21C0C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSORTDAILYCARDDATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xB832750)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSORTDAILYCARDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB832830)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSortDailyCardData_TypeDefinitionIndex = 44756;
+	inline static constexpr unsigned int LDSortDailyCardData_TypeDefinitionIndex = 46777;
 
 	class LDSortDailyCardData : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::MoleMole::FlowCanvas::Nodes::LDDGenericDataSource_1<::System::Int32>*, ::System::Collections::Generic::List_1<::System::Int32>*>
 	{

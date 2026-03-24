@@ -4,13 +4,10 @@
 
 namespace System { class String; }
 
-#define STRUCT_2_DB31062B5932CACE_2_METHOD_2_126AB3935214AA22_1_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define STRUCT_2_DB31062B5932CACE_2_METHOD_2_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x2CB080)
-#define STRUCT_2_DB31062B5932CACE_2_METHOD_2_7D201B4343E63821_1_OFFSET UNITYSDK_OFFSET(0x2C3980)
-#define STRUCT_2_DB31062B5932CACE_2_METHOD_2_7D201B4343E63821_OFFSET UNITYSDK_OFFSET(0x2CB170)
-#define STRUCT_2_DB31062B5932CACE_2__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define STRUCT_2_DB31062B5932CACE_2_DISPOSE_OFFSET UNITYSDK_OFFSET(0x30DD70)
+#define STRUCT_2_DB31062B5932CACE_2__CTOR_OFFSET UNITYSDK_OFFSET(0x301710)
 
-inline static constexpr unsigned int Struct_2_DB31062B5932CACE_2_TypeDefinitionIndex = 50015;
+inline static constexpr unsigned int Struct_2_DB31062B5932CACE_2_TypeDefinitionIndex = 55106;
 
 struct alignas(8) Struct_2_DB31062B5932CACE_2
 {
@@ -22,23 +19,8 @@ struct alignas(8) Struct_2_DB31062B5932CACE_2
 		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_2__CTOR_OFFSET))(this, a1, a2);
 	}
 
-	::System::String* Method_2_126AB3935214AA22()
+	::System::Void Dispose()
 	{
-		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_2_METHOD_2_126AB3935214AA22_OFFSET))(this);
-	}
-
-	::System::Void Method_2_7D201B4343E63821(::System::String* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_2_METHOD_2_7D201B4343E63821_OFFSET))(this, a1);
-	}
-
-	::System::String* Method_2_126AB3935214AA22_1()
-	{
-		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_2_METHOD_2_126AB3935214AA22_1_OFFSET))(this);
-	}
-
-	::System::Void Method_2_7D201B4343E63821_1(::System::String* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_2_METHOD_2_7D201B4343E63821_1_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_2_DISPOSE_OFFSET))(this);
 	}
 };

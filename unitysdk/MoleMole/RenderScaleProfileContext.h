@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/GraphicSettingProfileContextBase.h"
 
-#define MOLEMOLE_RENDERSCALEPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA60E790)
+#define MOLEMOLE_RENDERSCALEPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA7F8B80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RenderScaleProfileContext_TypeDefinitionIndex = 38073;
+	inline static constexpr unsigned int RenderScaleProfileContext_TypeDefinitionIndex = 62769;
 
 	class RenderScaleProfileContext : public ::MoleMole::GraphicSettingProfileContextBase
 	{
 	public:
-		::System::Single RenderTargetFactor; // 0x18
-		::System::Single RenderScaleValue; // 0x1C
+		::System::Single RenderScaleValue; // 0x18
+		::System::Single RenderTargetFactor; // 0x1C
 
 		::System::Void _ctor()
 		{

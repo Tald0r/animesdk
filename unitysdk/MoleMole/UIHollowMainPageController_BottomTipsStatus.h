@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController_BottomTipsStatus_TypeDefinitionIndex = 52600;
+	inline static constexpr unsigned int UIHollowMainPageController_BottomTipsStatus_TypeDefinitionIndex = 49572;
 
 	enum class UIHollowMainPageController_BottomTipsStatus : ::System::Int32
 	{
-		Show = 2,
 		Hide = 1,
+		Show = 2,
 		None = 0,
 	};
 }

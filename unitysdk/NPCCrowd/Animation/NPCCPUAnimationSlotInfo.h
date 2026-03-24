@@ -7,11 +7,11 @@
 
 namespace System { class String; }
 
-#define NPCCROWD_ANIMATION_NPCCPUANIMATIONSLOTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x5E0B210)
+#define NPCCROWD_ANIMATION_NPCCPUANIMATIONSLOTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x634CD90)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCCPUAnimationSlotInfo_TypeDefinitionIndex = 57470;
+	inline static constexpr unsigned int NPCCPUAnimationSlotInfo_TypeDefinitionIndex = 63339;
 
 	class NPCCPUAnimationSlotInfo : public ::System::Object
 	{

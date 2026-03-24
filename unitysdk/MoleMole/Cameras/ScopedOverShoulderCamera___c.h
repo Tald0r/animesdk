@@ -7,29 +7,29 @@ namespace PipelineCamera { class ICameraDataBlender; }
 namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6150939D7C57528A_OFFSET UNITYSDK_OFFSET(0x9B45C50)
-#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6C6FE6B6DCEB2431_OFFSET UNITYSDK_OFFSET(0x9B45C40)
-#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9B45BF0)
-#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9B45C30)
+#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6150939D7C57528A_OFFSET UNITYSDK_OFFSET(0xB454390)
+#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6C6FE6B6DCEB2431_OFFSET UNITYSDK_OFFSET(0xB4543A0)
+#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB454340)
+#define MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB454380)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int ScopedOverShoulderCamera___c_TypeDefinitionIndex = 61546;
+	inline static constexpr unsigned int ScopedOverShoulderCamera___c_TypeDefinitionIndex = 60542;
 
 	class ScopedOverShoulderCamera___c : public ::System::Object
 	{
 	public:
+		static ::System::Action_1<::PipelineCamera::ICameraDataBlender*>** StaticGet___9__19_3()
+		{
+			return (::System::Action_1<::PipelineCamera::ICameraDataBlender*>**)Il2CppClass::FromTypeDefinitionIndex(ScopedOverShoulderCamera___c_TypeDefinitionIndex)->GetStaticField(0x43D60);
+		}
 		static ::MoleMole::Cameras::ScopedOverShoulderCamera___c** StaticGet___9()
 		{
-			return (::MoleMole::Cameras::ScopedOverShoulderCamera___c**)Il2CppClass::FromTypeDefinitionIndex(ScopedOverShoulderCamera___c_TypeDefinitionIndex)->GetStaticField(0x41030);
+			return (::MoleMole::Cameras::ScopedOverShoulderCamera___c**)Il2CppClass::FromTypeDefinitionIndex(ScopedOverShoulderCamera___c_TypeDefinitionIndex)->GetStaticField(0x43D68);
 		}
-		static ::System::Action_1<::PipelineCamera::ICameraDataBlender*>** StaticGet___9__16_3()
+		static ::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>** StaticGet___9__18_1()
 		{
-			return (::System::Action_1<::PipelineCamera::ICameraDataBlender*>**)Il2CppClass::FromTypeDefinitionIndex(ScopedOverShoulderCamera___c_TypeDefinitionIndex)->GetStaticField(0x41038);
-		}
-		static ::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>** StaticGet___9__15_1()
-		{
-			return (::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>**)Il2CppClass::FromTypeDefinitionIndex(ScopedOverShoulderCamera___c_TypeDefinitionIndex)->GetStaticField(0x41040);
+			return (::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>**)Il2CppClass::FromTypeDefinitionIndex(ScopedOverShoulderCamera___c_TypeDefinitionIndex)->GetStaticField(0x43D70);
 		}
 
 		static ::System::Void _cctor()
@@ -42,14 +42,14 @@ namespace MoleMole::Cameras
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Void Method_1_6C6FE6B6DCEB2431(::PipelineCamera::ICameraDataBlender* a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::PipelineCamera::ICameraDataBlender*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6C6FE6B6DCEB2431_OFFSET))(this, a1);
-		}
-
 		::System::Void Method_1_6150939D7C57528A(::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>* a1)
 		{
 			return ((::System::Void(*)(::PVOID, ::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6150939D7C57528A_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_1_6C6FE6B6DCEB2431(::PipelineCamera::ICameraDataBlender* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::PipelineCamera::ICameraDataBlender*))((::PBYTE)hIl2Cpp + MOLEMOLE_CAMERAS_SCOPEDOVERSHOULDERCAMERA___C_METHOD_1_6C6FE6B6DCEB2431_OFFSET))(this, a1);
 		}
 	};
 }

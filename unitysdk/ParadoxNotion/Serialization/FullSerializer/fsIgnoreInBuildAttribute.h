@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSIGNOREINBUILDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A26D0D0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSIGNOREINBUILDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A834A80)
 
 namespace ParadoxNotion::Serialization::FullSerializer
 {
-	inline static constexpr unsigned int fsIgnoreInBuildAttribute_TypeDefinitionIndex = 25972;
+	inline static constexpr unsigned int fsIgnoreInBuildAttribute_TypeDefinitionIndex = 26125;
 
 	class fsIgnoreInBuildAttribute : public ::System::Attribute
 	{

@@ -4,12 +4,12 @@
 
 namespace RootMotion::FinalIK { class PenetrationAvoidance_Avoider; }
 
-#define ROOTMOTION_FINALIK_PENETRATIONAVOIDANCE_ONMODIFYOFFSET_OFFSET UNITYSDK_OFFSET(0x1AB7DC00)
-#define ROOTMOTION_FINALIK_PENETRATIONAVOIDANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB7DC80)
+#define ROOTMOTION_FINALIK_PENETRATIONAVOIDANCE_ONMODIFYOFFSET_OFFSET UNITYSDK_OFFSET(0x1B19D9B0)
+#define ROOTMOTION_FINALIK_PENETRATIONAVOIDANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B19DA30)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int PenetrationAvoidance_TypeDefinitionIndex = 35174;
+	inline static constexpr unsigned int PenetrationAvoidance_TypeDefinitionIndex = 36176;
 
 	class PenetrationAvoidance : public ::RootMotion::FinalIK::OffsetModifier
 	{

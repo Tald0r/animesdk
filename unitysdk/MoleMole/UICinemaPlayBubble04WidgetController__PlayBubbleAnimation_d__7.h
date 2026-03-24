@@ -10,20 +10,20 @@ namespace MoleMole { class UICinemaPlayBubble04WidgetController; }
 namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UICINEMAPLAYBUBBLE04WIDGETCONTROLLER__PLAYBUBBLEANIMATION_D__7_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B67A0)
-#define MOLEMOLE_UICINEMAPLAYBUBBLE04WIDGETCONTROLLER__PLAYBUBBLEANIMATION_D__7_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UICINEMAPLAYBUBBLE04WIDGETCONTROLLER__PLAYBUBBLEANIMATION_D__7_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3BC420)
+#define MOLEMOLE_UICINEMAPLAYBUBBLE04WIDGETCONTROLLER__PLAYBUBBLEANIMATION_D__7_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaPlayBubble04WidgetController__PlayBubbleAnimation_d__7_TypeDefinitionIndex = 48981;
+	inline static constexpr unsigned int UICinemaPlayBubble04WidgetController__PlayBubbleAnimation_d__7_TypeDefinitionIndex = 78509;
 
 	struct alignas(8) UICinemaPlayBubble04WidgetController__PlayBubbleAnimation_d__7
 	{
 		::MoleMole::UICinemaPlayBubble04WidgetController* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x18
-		::System::String* animString; // 0x28
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x30
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x40
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x18
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x20
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x30
+		::System::String* animString; // 0x40
 		::System::Boolean isHide; // 0x48
 		::System::Int32 __1__state; // 0x4C
 

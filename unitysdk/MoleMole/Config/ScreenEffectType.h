@@ -3,34 +3,35 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ScreenEffectType_TypeDefinitionIndex = 72078;
+	inline static constexpr unsigned int ScreenEffectType_TypeDefinitionIndex = 51727;
 
 	enum class ScreenEffectType : ::System::Int32
 	{
-		MonsterIgnisFatuus = 22,
 		LensDirt = 18,
-		ColorLookup = 24,
-		OldCRT = 15,
-		DirectionalBlur = 20,
-		CharacterColorCorrection = 12,
-		NapBloom = 13,
-		GaussianBlur = 4,
-		LensDistortion = 10,
-		FXColorCorrection = 8,
-		Vignette = 2,
-		ChromaticAberration = 11,
-		ColorAdjustments = 7,
-		UnsharpMask = 23,
-		Unknown = 0,
-		FilmGrain = 9,
-		ScreenEffects = 6,
-		Glitch = 1,
-		RadialBlur = 3,
-		Distortion = 16,
-		VREffects = 17,
 		FXFog = 14,
-		CharacterIgnisFatuus = 21,
+		LensDistortion = 10,
+		NapBloom = 13,
+		ColorAdjustments = 7,
+		Distortion = 16,
+		DirectionalBlur = 20,
 		DepthOfField = 5,
+		FXColorCorrection = 8,
+		UnsharpMask = 23,
+		FilmGrain = 9,
+		Unknown = 0,
+		GaussianBlur = 4,
+		FXComicDot = 25,
+		Vignette = 2,
+		Glitch = 1,
+		OldCRT = 15,
+		CharacterIgnisFatuus = 21,
 		MotionBlur = 19,
+		RadialBlur = 3,
+		ChromaticAberration = 11,
+		VREffects = 17,
+		ColorLookup = 24,
+		MonsterIgnisFatuus = 22,
+		ScreenEffects = 6,
+		CharacterColorCorrection = 12,
 	};
 }

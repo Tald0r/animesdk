@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_INSPECTORNOTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A244260)
+#define FLUFFYUNDERWARE_DEVTOOLS_INSPECTORNOTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A80BB70)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int InspectorNote_TypeDefinitionIndex = 24557;
+	inline static constexpr unsigned int InspectorNote_TypeDefinitionIndex = 25382;
 
 	class InspectorNote : public ::FluffyUnderware::DevTools::DTVersionedMonoBehaviour
 	{

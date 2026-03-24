@@ -6,22 +6,22 @@
 namespace BehaviorDesigner::Runtime { class SharedFloat; }
 namespace BehaviorDesigner::Runtime { class SharedVector2; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A6E8DD0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A6E8C70)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6E8E30)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A6E8E70)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A6E8F00)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC93FF0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC93E90)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC94050)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC94090)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR2_DOT___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC94120)
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityVector2
 {
-	inline static constexpr unsigned int Dot_TypeDefinitionIndex = 30377;
+	inline static constexpr unsigned int Dot_TypeDefinitionIndex = 31329;
 
 	class Dot : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedFloat* storeResult; // 0x58
-		::BehaviorDesigner::Runtime::SharedVector2* leftHandSide; // 0x60
-		::BehaviorDesigner::Runtime::SharedVector2* rightHandSide; // 0x68
+		::BehaviorDesigner::Runtime::SharedVector2* leftHandSide; // 0x58
+		::BehaviorDesigner::Runtime::SharedVector2* rightHandSide; // 0x60
+		::BehaviorDesigner::Runtime::SharedFloat* storeResult; // 0x68
 
 		::System::Void _ctor()
 		{

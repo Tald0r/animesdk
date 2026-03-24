@@ -10,19 +10,19 @@ namespace MoleMole::Battle { class Entity; }
 namespace MoleMole::Cameras { class FirstPersonCameraConfig; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_1_3C7A2C6347C7498B_STRUCT_2_3D9BD7520FDC32F8_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x35A590)
-#define CLASS_1_3C7A2C6347C7498B_STRUCT_2_3D9BD7520FDC32F8_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_3C7A2C6347C7498B_STRUCT_2_3D9BD7520FDC32F8_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x45CD00)
+#define CLASS_1_3C7A2C6347C7498B_STRUCT_2_3D9BD7520FDC32F8_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_3C7A2C6347C7498B_Struct_2_3D9BD7520FDC32F8_TypeDefinitionIndex = 57487;
+inline static constexpr unsigned int Class_1_3C7A2C6347C7498B_Struct_2_3D9BD7520FDC32F8_TypeDefinitionIndex = 42196;
 
 struct alignas(8) Class_1_3C7A2C6347C7498B_Struct_2_3D9BD7520FDC32F8
 {
-	::Class_1_3C7A2C6347C7498B* Field_2_2; // 0x10
-	::PipelineCamera::ScopedDelegateHandle Field_2_5; // 0x18
-	::MoleMole::Battle::Entity* Field_2_3; // 0x20
-	::MoleMole::Cameras::FirstPersonCameraConfig* Field_2_4; // 0x28
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x30
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_6; // 0x38
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x10
+	::MoleMole::Cameras::FirstPersonCameraConfig* Field_2_4; // 0x18
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_6; // 0x20
+	::PipelineCamera::ScopedDelegateHandle Field_2_5; // 0x30
+	::Class_1_3C7A2C6347C7498B* Field_2_2; // 0x38
+	::MoleMole::Battle::Entity* Field_2_3; // 0x40
 	::System::Int32 Field_2_0; // 0x48
 
 	::System::Void MoveNext()

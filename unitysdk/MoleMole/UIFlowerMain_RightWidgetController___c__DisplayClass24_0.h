@@ -5,12 +5,12 @@
 namespace MoleMole { class UIFlowerMainListWidgetController_Data; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8078FE0)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS24_0__INITFILTER_B__9_OFFSET UNITYSDK_OFFSET(0x8078FF0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC56BB0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS24_0__INITFILTER_B__9_OFFSET UNITYSDK_OFFSET(0xAC56BC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFlowerMain_RightWidgetController___c__DisplayClass24_0_TypeDefinitionIndex = 57313;
+	inline static constexpr unsigned int UIFlowerMain_RightWidgetController___c__DisplayClass24_0_TypeDefinitionIndex = 50334;
 
 	class UIFlowerMain_RightWidgetController___c__DisplayClass24_0 : public ::System::Object
 	{

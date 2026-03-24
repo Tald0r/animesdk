@@ -4,20 +4,20 @@
 
 namespace MessagePack::Internal { class DynamicAssembly; }
 
-#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C08480)
-#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19C084C0)
-#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVER___C___CCTOR_B__4_0_OFFSET UNITYSDK_OFFSET(0x19C084D0)
+#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A1C71E0)
+#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1C7220)
+#define MESSAGEPACK_RESOLVERS_DYNAMICOBJECTRESOLVER___C___CCTOR_B__4_0_OFFSET UNITYSDK_OFFSET(0x1A1C7230)
 
 namespace MessagePack::Resolvers
 {
-	inline static constexpr unsigned int DynamicObjectResolver___c_TypeDefinitionIndex = 26407;
+	inline static constexpr unsigned int DynamicObjectResolver___c_TypeDefinitionIndex = 27518;
 
 	class DynamicObjectResolver___c : public ::System::Object
 	{
 	public:
 		static ::MessagePack::Resolvers::DynamicObjectResolver___c** StaticGet___9()
 		{
-			return (::MessagePack::Resolvers::DynamicObjectResolver___c**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolver___c_TypeDefinitionIndex)->GetStaticField(0x1EA60);
+			return (::MessagePack::Resolvers::DynamicObjectResolver___c**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolver___c_TypeDefinitionIndex)->GetStaticField(0x1F560);
 		}
 
 		static ::System::Void _cctor()

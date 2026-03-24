@@ -5,11 +5,11 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Collider; }
 
-#define RBDDESTRUCTION_RBDMANAGER_ASSETSCOLLIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x18B2C1A0)
+#define RBDDESTRUCTION_RBDMANAGER_ASSETSCOLLIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x18EED8E0)
 
 namespace RBDDestruction
 {
-	inline static constexpr unsigned int RBDManager_AssetsCollider_TypeDefinitionIndex = 28253;
+	inline static constexpr unsigned int RBDManager_AssetsCollider_TypeDefinitionIndex = 29194;
 
 	class RBDManager_AssetsCollider : public ::System::Object
 	{

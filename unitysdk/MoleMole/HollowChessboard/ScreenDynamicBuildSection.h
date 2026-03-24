@@ -6,21 +6,21 @@
 class Class_1_1FCBF6F207BFD09E;
 class Class_1_22EF90524645AFD7;
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xA5F6810)
-#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION_GETDYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xA5F6960)
-#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0xA5F69D0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xA5F69C0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xA7E0640)
+#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION_GETDYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xA7E0790)
+#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION__CCTOR_OFFSET UNITYSDK_OFFSET(0xA7E0800)
+#define MOLEMOLE_HOLLOWCHESSBOARD_SCREENDYNAMICBUILDSECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xA7E07F0)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int ScreenDynamicBuildSection_TypeDefinitionIndex = 45266;
+	inline static constexpr unsigned int ScreenDynamicBuildSection_TypeDefinitionIndex = 72511;
 
 	class ScreenDynamicBuildSection : public ::System::Object
 	{
 	public:
 		static ::MoleMole::HollowChessboard::RenderSequenceSectionType* StaticGet_SectionType()
 		{
-			return (::MoleMole::HollowChessboard::RenderSequenceSectionType*)Il2CppClass::FromTypeDefinitionIndex(ScreenDynamicBuildSection_TypeDefinitionIndex)->GetStaticField(0x11D80);
+			return (::MoleMole::HollowChessboard::RenderSequenceSectionType*)Il2CppClass::FromTypeDefinitionIndex(ScreenDynamicBuildSection_TypeDefinitionIndex)->GetStaticField(0x11F80);
 		}
 		::System::UInt32 DynamicKey; // 0x10
 

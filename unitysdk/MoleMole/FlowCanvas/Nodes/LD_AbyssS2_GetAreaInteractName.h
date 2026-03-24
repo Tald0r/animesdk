@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_2.h"
 
-class Class_3_88D140F5E09465E1_3;
+class Class_3_1F4762C34AABBBF6;
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_GETAREANAMEBYAREAID_OFFSET UNITYSDK_OFFSET(0x8F0B850)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_INVOKE_OFFSET UNITYSDK_OFFSET(0x8F0B360)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x8F0BB20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_GETAREANAMEBYAREAID_OFFSET UNITYSDK_OFFSET(0xA01D3A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_INVOKE_OFFSET UNITYSDK_OFFSET(0xA01CEC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME__CTOR_OFFSET UNITYSDK_OFFSET(0xA01D670)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_GetAreaInteractName_TypeDefinitionIndex = 73850;
+	inline static constexpr unsigned int LD_AbyssS2_GetAreaInteractName_TypeDefinitionIndex = 68189;
 
 	class LD_AbyssS2_GetAreaInteractName : public ::FlowCanvas::Nodes::PureFunctionNode_2<::System::String*, ::System::Int32>
 	{
@@ -28,9 +28,9 @@ namespace MoleMole::FlowCanvas::Nodes
 			return ((::System::String*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_INVOKE_OFFSET))(this, areaSelectIndex);
 		}
 
-		::System::String* GetAreaNameByAreaID(::Class_3_88D140F5E09465E1_3* rfMapArea)
+		::System::String* GetAreaNameByAreaID(::Class_3_1F4762C34AABBBF6* rfMapArea)
 		{
-			return ((::System::String*(*)(::PVOID, ::Class_3_88D140F5E09465E1_3*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_GETAREANAMEBYAREAID_OFFSET))(this, rfMapArea);
+			return ((::System::String*(*)(::PVOID, ::Class_3_1F4762C34AABBBF6*))((::PBYTE)hIl2Cpp + MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREAINTERACTNAME_GETAREANAMEBYAREAID_OFFSET))(this, rfMapArea);
 		}
 	};
 }

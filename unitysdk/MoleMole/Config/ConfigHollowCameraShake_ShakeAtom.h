@@ -7,7 +7,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowCameraShake_ShakeAtom_TypeDefinitionIndex = 52661;
+	inline static constexpr unsigned int ConfigHollowCameraShake_ShakeAtom_TypeDefinitionIndex = 54614;
 
 	struct alignas(8) ConfigHollowCameraShake_ShakeAtom
 	{

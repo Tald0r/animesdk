@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AttackEffectTriggerAt_TypeDefinitionIndex = 73465;
+	inline static constexpr unsigned int AttackEffectTriggerAt_TypeDefinitionIndex = 47665;
 
 	enum class AttackEffectTriggerAt : ::System::Int32
 	{
-		TriggerAtHitPointRandom = 2,
 		TriggerAtHitPoint = 1,
 		TriggerAtSelfCoordinate = 3,
+		TriggerAtHitPointRandom = 2,
 		TriggerAtEntity = 0,
 	};
 }

@@ -4,11 +4,11 @@
 
 namespace MiHoYo::SDK::Console { class NoticeManager; }
 
-#define MIHOYO_SDK_CONSOLE_NOTICEMANAGER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x17AAB710)
+#define MIHOYO_SDK_CONSOLE_NOTICEMANAGER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x176824A0)
 
 namespace MiHoYo::SDK::Console
 {
-	inline static constexpr unsigned int NoticeManager___c__DisplayClass11_0_TypeDefinitionIndex = 18615;
+	inline static constexpr unsigned int NoticeManager___c__DisplayClass11_0_TypeDefinitionIndex = 19214;
 
 	class NoticeManager___c__DisplayClass11_0 : public ::System::Object
 	{

@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int RenderEntityType_TypeDefinitionIndex = 28127;
+inline static constexpr unsigned int RenderEntityType_TypeDefinitionIndex = 29067;
 
 enum class RenderEntityType : ::System::Int32
 {

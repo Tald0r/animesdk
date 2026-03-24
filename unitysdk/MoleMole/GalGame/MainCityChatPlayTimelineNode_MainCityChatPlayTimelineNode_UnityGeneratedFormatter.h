@@ -10,30 +10,30 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8B0E660)
-#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8B0E670)
-#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8B0EA90)
-#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8B0ED50)
-#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8B0ED10)
+#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB1933F0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB193400)
+#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB193820)
+#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB193AE0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATPLAYTIMELINENODE_MAINCITYCHATPLAYTIMELINENODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB193AA0)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex = 62720;
+	inline static constexpr unsigned int MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex = 69456;
 
 	class MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::MainCityChatPlayTimelineNode*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A590);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A598);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D300);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D308);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A5A0);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatPlayTimelineNode_MainCityChatPlayTimelineNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D310);
 		}
 
 		::System::Void _ctor()

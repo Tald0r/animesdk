@@ -4,19 +4,18 @@
 
 namespace System { class String; }
 
-#define STRUCT_2_F2A7939F5DFF18C1_1__CCTOR_OFFSET UNITYSDK_OFFSET(0x9F02850)
+#define STRUCT_2_F2A7939F5DFF18C1_1__CCTOR_OFFSET UNITYSDK_OFFSET(0x98CB630)
 
-inline static constexpr unsigned int Struct_2_F2A7939F5DFF18C1_1_TypeDefinitionIndex = 44483;
+inline static constexpr unsigned int Struct_2_F2A7939F5DFF18C1_1_TypeDefinitionIndex = 65129;
 
 struct alignas(8) Struct_2_F2A7939F5DFF18C1_1
 {
-	static ::System::String** StaticGet_Field_2_3()
+	static ::System::String** StaticGet_Field_2_2()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_F2A7939F5DFF18C1_1_TypeDefinitionIndex)->GetStaticField(0x36F80);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_F2A7939F5DFF18C1_1_TypeDefinitionIndex)->GetStaticField(0x2FB30);
 	}
 	::System::String* Field_2_0; // 0x10
 	::System::Boolean Field_2_1; // 0x18
-	::System::Boolean Field_2_2; // 0x19
 
 	static ::System::Void _cctor()
 	{

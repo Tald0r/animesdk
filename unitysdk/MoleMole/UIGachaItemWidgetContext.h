@@ -4,11 +4,11 @@
 
 class Class_3_601FA52CA5E757A0;
 
-#define MOLEMOLE_UIGACHAITEMWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBF0F4A0)
+#define MOLEMOLE_UIGACHAITEMWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA976D60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaItemWidgetContext_TypeDefinitionIndex = 48159;
+	inline static constexpr unsigned int UIGachaItemWidgetContext_TypeDefinitionIndex = 42836;
 
 	class UIGachaItemWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

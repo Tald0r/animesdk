@@ -6,13 +6,13 @@
 namespace Foundation { class IObject; }
 namespace System { class Action; }
 
-#define FOUNDATION_FUNCTIONALOBJECT_GET_HANDLE_OFFSET UNITYSDK_OFFSET(0x1A20B230)
-#define FOUNDATION_FUNCTIONALOBJECT_RELEASE_OFFSET UNITYSDK_OFFSET(0x1A20B240)
-#define FOUNDATION_FUNCTIONALOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A209E70)
+#define FOUNDATION_FUNCTIONALOBJECT_GET_HANDLE_OFFSET UNITYSDK_OFFSET(0x1A83BD00)
+#define FOUNDATION_FUNCTIONALOBJECT_RELEASE_OFFSET UNITYSDK_OFFSET(0x1A83BD10)
+#define FOUNDATION_FUNCTIONALOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A83A760)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int FunctionalObject_TypeDefinitionIndex = 9016;
+	inline static constexpr unsigned int FunctionalObject_TypeDefinitionIndex = 9094;
 
 	class FunctionalObject : public ::System::Object
 	{

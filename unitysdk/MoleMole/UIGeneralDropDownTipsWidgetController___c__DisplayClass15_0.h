@@ -5,12 +5,12 @@
 namespace MoleMole { class DropDownItemWidgetController; }
 namespace MoleMole { class UIGeneralDropDownTipsWidgetController; }
 
-#define MOLEMOLE_UIGENERALDROPDOWNTIPSWIDGETCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8C06D70)
-#define MOLEMOLE_UIGENERALDROPDOWNTIPSWIDGETCONTROLLER___C__DISPLAYCLASS15_0__INITNORMALVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x8C06D80)
+#define MOLEMOLE_UIGENERALDROPDOWNTIPSWIDGETCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6C5FE70)
+#define MOLEMOLE_UIGENERALDROPDOWNTIPSWIDGETCONTROLLER___C__DISPLAYCLASS15_0__INITNORMALVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x6C5FE80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralDropDownTipsWidgetController___c__DisplayClass15_0_TypeDefinitionIndex = 49816;
+	inline static constexpr unsigned int UIGeneralDropDownTipsWidgetController___c__DisplayClass15_0_TypeDefinitionIndex = 68520;
 
 	class UIGeneralDropDownTipsWidgetController___c__DisplayClass15_0 : public ::System::Object
 	{

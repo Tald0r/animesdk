@@ -6,19 +6,19 @@ namespace ParadoxNotion { class HierarchyTree_Element; }
 namespace ParadoxNotion::Serialization::FullSerializer { class fsData; }
 namespace System::Collections::Generic { template <typename T> class Stack_1; }
 
-#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS214_0__COLLECTSUBELEMENTS_B__0_OFFSET UNITYSDK_OFFSET(0x19FEF5E0)
-#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS214_0__COLLECTSUBELEMENTS_B__1_OFFSET UNITYSDK_OFFSET(0x19FEF6A0)
-#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS214_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19FEF5D0)
+#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS214_0__COLLECTSUBELEMENTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A608660)
+#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS214_0__COLLECTSUBELEMENTS_B__1_OFFSET UNITYSDK_OFFSET(0x1A608720)
+#define NODECANVAS_FRAMEWORK_GRAPH___C__DISPLAYCLASS214_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A608650)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Graph___c__DisplayClass214_0_TypeDefinitionIndex = 26032;
+	inline static constexpr unsigned int Graph___c__DisplayClass214_0_TypeDefinitionIndex = 27309;
 
 	class Graph___c__DisplayClass214_0 : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::Stack_1<::ParadoxNotion::HierarchyTree_Element*>* stack; // 0x10
-		::ParadoxNotion::HierarchyTree_Element* parentElement; // 0x18
+		::ParadoxNotion::HierarchyTree_Element* parentElement; // 0x10
+		::System::Collections::Generic::Stack_1<::ParadoxNotion::HierarchyTree_Element*>* stack; // 0x18
 
 		::System::Void _ctor()
 		{

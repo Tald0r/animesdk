@@ -14,7 +14,7 @@ namespace UnityEngine::UIElements::UIR { class RenderChainCommand; }
 
 namespace UnityEngine::UIElements::UIR
 {
-	inline static constexpr unsigned int RenderChainVEData_TypeDefinitionIndex = 23911;
+	inline static constexpr unsigned int RenderChainVEData_TypeDefinitionIndex = 24594;
 
 	struct alignas(8) RenderChainVEData
 	{

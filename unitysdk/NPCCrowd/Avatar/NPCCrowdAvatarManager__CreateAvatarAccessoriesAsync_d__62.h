@@ -12,22 +12,22 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class GameObject; }
 
-#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARACCESSORIESASYNC_D__62_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x327680)
-#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARACCESSORIESASYNC_D__62_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARACCESSORIESASYNC_D__62_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x32E8C0)
+#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARACCESSORIESASYNC_D__62_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace NPCCrowd::Avatar
 {
-	inline static constexpr unsigned int NPCCrowdAvatarManager__CreateAvatarAccessoriesAsync_d__62_TypeDefinitionIndex = 75880;
+	inline static constexpr unsigned int NPCCrowdAvatarManager__CreateAvatarAccessoriesAsync_d__62_TypeDefinitionIndex = 51682;
 
 	struct alignas(8) NPCCrowdAvatarManager__CreateAvatarAccessoriesAsync_d__62
 	{
-		::UnityEngine::GameObject* avatarGo; // 0x10
-		::System::Collections::Generic::List_1<::NPCCrowd::Accessories::NPCAccessory*>* _accessories_5__2; // 0x18
-		::System::Collections::Generic::List_1<::FNpcAvatarGenericParams_AccessoryInfo>* accessoryInfos; // 0x20
-		::NPCCrowd::Animation::NPCUnionAnimator* unionAnimator; // 0x28
+		::System::Collections::Generic::List_1<::NPCCrowd::Accessories::NPCAccessory*>* _accessories_5__2; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::Collections::Generic::List_1<::NPCCrowd::Accessories::NPCAccessory*>*> __t__builder; // 0x18
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x30
-		::System::Threading::CancellationToken cancellationToken; // 0x40
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::Collections::Generic::List_1<::NPCCrowd::Accessories::NPCAccessory*>*> __t__builder; // 0x48
+		::UnityEngine::GameObject* avatarGo; // 0x40
+		::System::Threading::CancellationToken cancellationToken; // 0x48
+		::System::Collections::Generic::List_1<::FNpcAvatarGenericParams_AccessoryInfo>* accessoryInfos; // 0x50
+		::NPCCrowd::Animation::NPCUnionAnimator* unionAnimator; // 0x58
 		::System::Int32 __1__state; // 0x60
 
 		::System::Void MoveNext()

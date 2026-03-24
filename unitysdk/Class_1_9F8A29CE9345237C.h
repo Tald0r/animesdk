@@ -8,9 +8,9 @@ namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class ICollection_1; }
 namespace System::Collections::Generic { template <typename T> class IComparer_1; }
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
-template <typename T1, typename T2> class Class_1_5FBBEADEF1552532;
+template <typename T1, typename T2> class Class_1_68A5E75C6166FEAC;
 
-inline static constexpr unsigned int Class_1_9F8A29CE9345237C_TypeDefinitionIndex = 25035;
+inline static constexpr unsigned int Class_1_9F8A29CE9345237C_TypeDefinitionIndex = 25682;
 
 template <typename T, typename U>
 class Class_1_9F8A29CE9345237C : public ::System::Object
@@ -20,8 +20,8 @@ public:
 	{
 		return (::System::Random**)Il2CppClass::FromTypeDefinitionIndex(Class_1_9F8A29CE9345237C_TypeDefinitionIndex)->GetStaticField(0x0);
 	}
-	::Class_1_5FBBEADEF1552532<T, U>* Field_1_1; // 0x0
-	::Class_1_5FBBEADEF1552532<T, U>* Field_1_2; // 0x0
+	::Class_1_68A5E75C6166FEAC<T, U>* Field_1_1; // 0x0
+	::Class_1_68A5E75C6166FEAC<T, U>* Field_1_2; // 0x0
 	::System::Int32 Field_1_3; // 0x0
 	::System::Collections::Generic::ICollection_1<T>* Field_1_4; // 0x0
 	::System::Collections::Generic::ICollection_1<U>* Field_1_5; // 0x0

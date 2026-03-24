@@ -5,12 +5,12 @@
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MOLEMOLE_SCENESOUNDEMITTERSPACESHAPEPARAM_GET_ROTATION_OFFSET UNITYSDK_OFFSET(0xB8C61C0)
-#define MOLEMOLE_SCENESOUNDEMITTERSPACESHAPEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xB8C6220)
+#define MOLEMOLE_SCENESOUNDEMITTERSPACESHAPEPARAM_GET_ROTATION_OFFSET UNITYSDK_OFFSET(0xB933F40)
+#define MOLEMOLE_SCENESOUNDEMITTERSPACESHAPEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xB933FA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SceneSoundEmitterSpaceShapeParam_TypeDefinitionIndex = 69540;
+	inline static constexpr unsigned int SceneSoundEmitterSpaceShapeParam_TypeDefinitionIndex = 72166;
 
 	class SceneSoundEmitterSpaceShapeParam : public ::System::Object
 	{

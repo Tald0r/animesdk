@@ -5,7 +5,7 @@
 namespace System { class Type; }
 namespace UnityEngine { class ComputeBuffer; }
 
-inline static constexpr unsigned int StructCBuffer_1_TypeDefinitionIndex = 27996;
+inline static constexpr unsigned int StructCBuffer_1_TypeDefinitionIndex = 28936;
 
 template <typename T>
 class StructCBuffer_1 : public ::System::Object

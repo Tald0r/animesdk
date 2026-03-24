@@ -8,30 +8,30 @@ namespace System { class Type; }
 namespace System::Text::RegularExpressions { class Regex; }
 namespace Utf8Json { class IJsonFormatterResolver; }
 
-#define UTF8JSON_FORMATTERS_TYPEFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1ABFC790)
-#define UTF8JSON_FORMATTERS_TYPEFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1ABFC740)
-#define UTF8JSON_FORMATTERS_TYPEFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ABFC920)
-#define UTF8JSON_FORMATTERS_TYPEFORMATTER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1ABFC730)
-#define UTF8JSON_FORMATTERS_TYPEFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABFC720)
+#define UTF8JSON_FORMATTERS_TYPEFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B20DAB0)
+#define UTF8JSON_FORMATTERS_TYPEFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B20DA60)
+#define UTF8JSON_FORMATTERS_TYPEFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B20DC40)
+#define UTF8JSON_FORMATTERS_TYPEFORMATTER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B20DA50)
+#define UTF8JSON_FORMATTERS_TYPEFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B20DA40)
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int TypeFormatter_TypeDefinitionIndex = 82039;
+	inline static constexpr unsigned int TypeFormatter_TypeDefinitionIndex = 84080;
 
 	class TypeFormatter : public ::System::Object
 	{
 	public:
-		static ::Utf8Json::Formatters::TypeFormatter** StaticGet_Default()
-		{
-			return (::Utf8Json::Formatters::TypeFormatter**)Il2CppClass::FromTypeDefinitionIndex(TypeFormatter_TypeDefinitionIndex)->GetStaticField(0x472B0);
-		}
 		static ::System::Text::RegularExpressions::Regex** StaticGet_SubtractFullNameRegex()
 		{
-			return (::System::Text::RegularExpressions::Regex**)Il2CppClass::FromTypeDefinitionIndex(TypeFormatter_TypeDefinitionIndex)->GetStaticField(0x472B8);
+			return (::System::Text::RegularExpressions::Regex**)Il2CppClass::FromTypeDefinitionIndex(TypeFormatter_TypeDefinitionIndex)->GetStaticField(0x48CC0);
 		}
-		::System::Boolean deserializeSubtractAssemblyQualifiedName; // 0x10
-		::System::Boolean serializeAssemblyQualifiedName; // 0x11
-		::System::Boolean throwOnError; // 0x12
+		static ::Utf8Json::Formatters::TypeFormatter** StaticGet_Default()
+		{
+			return (::Utf8Json::Formatters::TypeFormatter**)Il2CppClass::FromTypeDefinitionIndex(TypeFormatter_TypeDefinitionIndex)->GetStaticField(0x48CC8);
+		}
+		::System::Boolean serializeAssemblyQualifiedName; // 0x10
+		::System::Boolean throwOnError; // 0x11
+		::System::Boolean deserializeSubtractAssemblyQualifiedName; // 0x12
 
 		::System::Void _ctor()
 		{

@@ -5,17 +5,17 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_600363D6B082AB1E_CLASS_1_028AD1C3428D6BC9_METHOD_1_B03BD337C608E98D_OFFSET UNITYSDK_OFFSET(0x6598500)
-#define CLASS_1_600363D6B082AB1E_CLASS_1_028AD1C3428D6BC9__CTOR_OFFSET UNITYSDK_OFFSET(0x65984F0)
+#define CLASS_1_600363D6B082AB1E_CLASS_1_028AD1C3428D6BC9_METHOD_1_B03BD337C608E98D_OFFSET UNITYSDK_OFFSET(0x9F892F0)
+#define CLASS_1_600363D6B082AB1E_CLASS_1_028AD1C3428D6BC9__CTOR_OFFSET UNITYSDK_OFFSET(0x9F892E0)
 
-inline static constexpr unsigned int Class_1_600363D6B082AB1E_Class_1_028AD1C3428D6BC9_TypeDefinitionIndex = 37301;
+inline static constexpr unsigned int Class_1_600363D6B082AB1E_Class_1_028AD1C3428D6BC9_TypeDefinitionIndex = 55391;
 
 class Class_1_600363D6B082AB1E_Class_1_028AD1C3428D6BC9 : public ::System::Object
 {
 public:
 	::System::Action_1<::System::Action*>* Field_1_2; // 0x10
-	::System::Int32 Field_1_0; // 0x18
-	::System::Int32 Field_1_1; // 0x1C
+	::System::Int32 Field_1_1; // 0x18
+	::System::Int32 Field_1_0; // 0x1C
 
 	::System::Void _ctor()
 	{

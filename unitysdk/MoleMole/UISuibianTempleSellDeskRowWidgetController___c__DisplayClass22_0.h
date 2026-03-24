@@ -4,20 +4,20 @@
 
 namespace MoleMole { class UISuibianTempleSellDeskRowWidgetController; }
 
-#define MOLEMOLE_UISUIBIANTEMPLESELLDESKROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC4E660)
-#define MOLEMOLE_UISUIBIANTEMPLESELLDESKROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__REFRESHONCEENDTIME_B__0_OFFSET UNITYSDK_OFFSET(0xAC4E670)
-#define MOLEMOLE_UISUIBIANTEMPLESELLDESKROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__REFRESHONCEENDTIME_B__1_OFFSET UNITYSDK_OFFSET(0xAC4E680)
+#define MOLEMOLE_UISUIBIANTEMPLESELLDESKROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA9DCD0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLDESKROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__REFRESHONCEENDTIME_B__0_OFFSET UNITYSDK_OFFSET(0xCA9DCE0)
+#define MOLEMOLE_UISUIBIANTEMPLESELLDESKROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__REFRESHONCEENDTIME_B__1_OFFSET UNITYSDK_OFFSET(0xCA9DCF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleSellDeskRowWidgetController___c__DisplayClass22_0_TypeDefinitionIndex = 77569;
+	inline static constexpr unsigned int UISuibianTempleSellDeskRowWidgetController___c__DisplayClass22_0_TypeDefinitionIndex = 72206;
 
 	class UISuibianTempleSellDeskRowWidgetController___c__DisplayClass22_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UISuibianTempleSellDeskRowWidgetController* __4__this; // 0x10
-		::System::Single alreadyTime; // 0x18
-		::System::Int64 onceTime; // 0x20
+		::System::Int64 onceTime; // 0x18
+		::System::Single alreadyTime; // 0x20
 
 		::System::Void _ctor()
 		{

@@ -9,30 +9,30 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x803A310)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x803A320)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x803A660)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x803A8D0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x803A870)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9CECCD0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9CECCE0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9CED020)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9CED290)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFOOTPRINT_FRAMESTEPONGROUNDSEGMENT_FRAMESTEPONGROUNDSEGMENT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9CED230)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex = 62741;
+	inline static constexpr unsigned int AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex = 57594;
 
 	class AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneFootPrint_FrameStepOnGroundSegment>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::Vector3>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382A0);
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AEB0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382A8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AEB8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382B0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneFootPrint_FrameStepOnGroundSegment_FrameStepOnGroundSegment_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AEC0);
 		}
 
 		::System::Void _ctor()

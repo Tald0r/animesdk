@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIAvatarShowType.h"
 
-#define MOLEMOLE_UIAVATARCOMMONLIGTOPENTYPE__CTOR_OFFSET UNITYSDK_OFFSET(0xB29AD00)
+#define MOLEMOLE_UIAVATARCOMMONLIGTOPENTYPE__CTOR_OFFSET UNITYSDK_OFFSET(0xDF02FC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAvatarCommonLigtOpenType_TypeDefinitionIndex = 56729;
+	inline static constexpr unsigned int UIAvatarCommonLigtOpenType_TypeDefinitionIndex = 73691;
 
 	class UIAvatarCommonLigtOpenType : public ::MoleMole::UIAvatarShowType
 	{

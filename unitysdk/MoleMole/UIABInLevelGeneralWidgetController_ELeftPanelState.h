@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIABInLevelGeneralWidgetController_ELeftPanelState_TypeDefinitionIndex = 46241;
+	inline static constexpr unsigned int UIABInLevelGeneralWidgetController_ELeftPanelState_TypeDefinitionIndex = 76548;
 
 	enum class UIABInLevelGeneralWidgetController_ELeftPanelState : ::System::Int32
 	{
-		Equip = 1,
 		Bond = 0,
+		Equip = 1,
 	};
 }

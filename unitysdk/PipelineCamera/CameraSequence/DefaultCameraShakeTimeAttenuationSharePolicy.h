@@ -3,7 +3,7 @@
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int DefaultCameraShakeTimeAttenuationSharePolicy_TypeDefinitionIndex = 34825;
+	inline static constexpr unsigned int DefaultCameraShakeTimeAttenuationSharePolicy_TypeDefinitionIndex = 35827;
 
 	enum class DefaultCameraShakeTimeAttenuationSharePolicy : ::System::Int32
 	{

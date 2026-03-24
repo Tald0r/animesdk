@@ -5,24 +5,24 @@
 namespace SQLite { class TableMapping_Column; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define SQLITE_TABLEMAPPING___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A076120)
-#define SQLITE_TABLEMAPPING___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A076160)
-#define SQLITE_TABLEMAPPING___C___CTOR_B__35_0_OFFSET UNITYSDK_OFFSET(0x1A076170)
+#define SQLITE_TABLEMAPPING___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A641F20)
+#define SQLITE_TABLEMAPPING___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A641F60)
+#define SQLITE_TABLEMAPPING___C___CTOR_B__35_0_OFFSET UNITYSDK_OFFSET(0x1A641F70)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int TableMapping___c_TypeDefinitionIndex = 35240;
+	inline static constexpr unsigned int TableMapping___c_TypeDefinitionIndex = 36242;
 
 	class TableMapping___c : public ::System::Object
 	{
 	public:
-		static ::SQLite::TableMapping___c** StaticGet___9()
-		{
-			return (::SQLite::TableMapping___c**)Il2CppClass::FromTypeDefinitionIndex(TableMapping___c_TypeDefinitionIndex)->GetStaticField(0x24DC0);
-		}
 		static ::System::Func_2<::SQLite::TableMapping_Column*, ::System::Boolean>** StaticGet___9__35_0()
 		{
-			return (::System::Func_2<::SQLite::TableMapping_Column*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TableMapping___c_TypeDefinitionIndex)->GetStaticField(0x24DC8);
+			return (::System::Func_2<::SQLite::TableMapping_Column*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TableMapping___c_TypeDefinitionIndex)->GetStaticField(0x267F0);
+		}
+		static ::SQLite::TableMapping___c** StaticGet___9()
+		{
+			return (::SQLite::TableMapping___c**)Il2CppClass::FromTypeDefinitionIndex(TableMapping___c_TypeDefinitionIndex)->GetStaticField(0x267F8);
 		}
 
 		static ::System::Void _cctor()

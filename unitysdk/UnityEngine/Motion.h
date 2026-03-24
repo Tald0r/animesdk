@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Object.h"
 
-#define UNITYENGINE_MOTION_GET_AVERAGEDURATION_OFFSET UNITYSDK_OFFSET(0x1B11C1C0)
-#define UNITYENGINE_MOTION_GET_ISLOOPING_OFFSET UNITYSDK_OFFSET(0x1B11C1D0)
-#define UNITYENGINE_MOTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B11C1A0)
+#define UNITYENGINE_MOTION_GET_AVERAGEDURATION_OFFSET UNITYSDK_OFFSET(0x1B733540)
+#define UNITYENGINE_MOTION_GET_ISLOOPING_OFFSET UNITYSDK_OFFSET(0x1B733550)
+#define UNITYENGINE_MOTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B733520)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int Motion_TypeDefinitionIndex = 6560;
+	inline static constexpr unsigned int Motion_TypeDefinitionIndex = 6564;
 
 	class Motion : public ::UnityEngine::Object
 	{

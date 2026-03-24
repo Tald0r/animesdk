@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate_TypeDefinitionIndex = 5624;
+	inline static constexpr unsigned int PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate_TypeDefinitionIndex = 5627;
 
 	struct alignas(1) PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate
 	{

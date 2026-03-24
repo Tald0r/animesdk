@@ -6,11 +6,11 @@ class Class_1_EA1FEF8121ADE963;
 namespace MoleMole::Config { class ConfigGhostMove; }
 namespace System { class String; }
 
-#define MOLEMOLE_MONOGHOSTEFFECT_STRUCT_2_52A49158BCC04821__CTOR_OFFSET UNITYSDK_OFFSET(0x2F9060)
+#define MOLEMOLE_MONOGHOSTEFFECT_STRUCT_2_52A49158BCC04821__CTOR_OFFSET UNITYSDK_OFFSET(0x431270)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoGhostEffect_Struct_2_52A49158BCC04821_TypeDefinitionIndex = 54560;
+	inline static constexpr unsigned int MonoGhostEffect_Struct_2_52A49158BCC04821_TypeDefinitionIndex = 75729;
 
 	struct alignas(8) MonoGhostEffect_Struct_2_52A49158BCC04821
 	{

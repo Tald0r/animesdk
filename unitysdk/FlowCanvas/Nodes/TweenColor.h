@@ -6,14 +6,14 @@
 
 namespace System::Collections { class IEnumerator; }
 
-#define FLOWCANVAS_NODES_TWEENCOLOR_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x19F521D0)
-#define FLOWCANVAS_NODES_TWEENCOLOR_INVOKE_OFFSET UNITYSDK_OFFSET(0x19F521F0)
-#define FLOWCANVAS_NODES_TWEENCOLOR_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x19F521E0)
-#define FLOWCANVAS_NODES_TWEENCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x19F52270)
+#define FLOWCANVAS_NODES_TWEENCOLOR_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x1A562FE0)
+#define FLOWCANVAS_NODES_TWEENCOLOR_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A563000)
+#define FLOWCANVAS_NODES_TWEENCOLOR_SET_VALUE_OFFSET UNITYSDK_OFFSET(0x1A562FF0)
+#define FLOWCANVAS_NODES_TWEENCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A563080)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int TweenColor_TypeDefinitionIndex = 25258;
+	inline static constexpr unsigned int TweenColor_TypeDefinitionIndex = 26625;
 
 	class TweenColor : public ::FlowCanvas::Nodes::LatentActionNode_4<::UnityEngine::Color, ::UnityEngine::Color, ::System::Single, ::ParadoxNotion::Animation::EaseType>
 	{

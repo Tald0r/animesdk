@@ -5,34 +5,34 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Predicate_1; }
 
-#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA4EA050)
-#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA4EA090)
-#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__ONRSPGETALLTASKREWARD_B__13_0_OFFSET UNITYSDK_OFFSET(0xA4EA0B0)
-#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__ONUIINIT_B__5_0_OFFSET UNITYSDK_OFFSET(0xA4EA0A0)
-#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__PLAYEXPANIM_B__30_2_OFFSET UNITYSDK_OFFSET(0xA4EA0C0)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA4AB720)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA4AB760)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__ONRSPGETALLTASKREWARD_B__13_0_OFFSET UNITYSDK_OFFSET(0xA4AB780)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__ONUIINIT_B__5_0_OFFSET UNITYSDK_OFFSET(0xA4AB770)
+#define MOLEMOLE_UIABYSSREWARDTIMELINEPOPWINDOWCONTROLLER___C__PLAYEXPANIM_B__30_2_OFFSET UNITYSDK_OFFSET(0xA4AB790)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex = 78148;
+	inline static constexpr unsigned int UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex = 46224;
 
 	class UIAbyssRewardTimeLinePopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Predicate_1<::System::Int32>** StaticGet___9__13_0()
+		static ::MoleMole::UIAbyssRewardTimeLinePopWindowController___c** StaticGet___9()
 		{
-			return (::System::Predicate_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x368A0);
+			return (::MoleMole::UIAbyssRewardTimeLinePopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39540);
 		}
 		static ::System::Action** StaticGet___9__30_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x368A8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39548);
+		}
+		static ::System::Predicate_1<::System::Int32>** StaticGet___9__13_0()
+		{
+			return (::System::Predicate_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39550);
 		}
 		static ::System::Action** StaticGet___9__5_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x368B0);
-		}
-		static ::MoleMole::UIAbyssRewardTimeLinePopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIAbyssRewardTimeLinePopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x368B8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIAbyssRewardTimeLinePopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x39558);
 		}
 
 		static ::System::Void _cctor()

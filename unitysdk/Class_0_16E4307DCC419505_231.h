@@ -1,8 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_D9E98FAEB7FF7336.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_231_TypeDefinitionIndex = 75976;
+class Class_1_2C434B932ED0B61F;
+namespace MoleMole { class CameraShotData; }
+namespace Nap::NapECS { class EcsWorld; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_231_TypeDefinitionIndex = 48780;
 
 class Class_0_16E4307DCC419505_231
 {

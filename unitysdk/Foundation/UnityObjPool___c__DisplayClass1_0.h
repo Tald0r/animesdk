@@ -6,12 +6,12 @@
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Object; }
 
-#define FOUNDATION_UNITYOBJPOOL___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC79100)
-#define FOUNDATION_UNITYOBJPOOL___C__DISPLAYCLASS1_0__INSTANTIATEWITHOUTPOOLASYNC_B__0_OFFSET UNITYSDK_OFFSET(0xAC79110)
+#define FOUNDATION_UNITYOBJPOOL___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x92139F0)
+#define FOUNDATION_UNITYOBJPOOL___C__DISPLAYCLASS1_0__INSTANTIATEWITHOUTPOOLASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x9213A00)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int UnityObjPool___c__DisplayClass1_0_TypeDefinitionIndex = 78204;
+	inline static constexpr unsigned int UnityObjPool___c__DisplayClass1_0_TypeDefinitionIndex = 44627;
 
 	class UnityObjPool___c__DisplayClass1_0 : public ::System::Object
 	{

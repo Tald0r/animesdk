@@ -6,7 +6,7 @@ namespace MoleMole { class UISuibianTempleBangbooSelectDialogPopWindowController
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleBangbooSelectDialogPopWindowController___c__DisplayClass44_0_TypeDefinitionIndex = 72130;
+	inline static constexpr unsigned int UISuibianTempleBangbooSelectDialogPopWindowController___c__DisplayClass44_0_TypeDefinitionIndex = 56960;
 
 	struct alignas(8) UISuibianTempleBangbooSelectDialogPopWindowController___c__DisplayClass44_0
 	{

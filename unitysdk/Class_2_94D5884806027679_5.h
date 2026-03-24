@@ -10,26 +10,26 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_94D5884806027679_5_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x9966060)
-#define CLASS_2_94D5884806027679_5_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0x99662E0)
-#define CLASS_2_94D5884806027679_5_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9966460)
-#define CLASS_2_94D5884806027679_5__CTOR_OFFSET UNITYSDK_OFFSET(0x9966450)
+#define CLASS_2_94D5884806027679_5_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0xA8EACC0)
+#define CLASS_2_94D5884806027679_5_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xA8EAA50)
+#define CLASS_2_94D5884806027679_5_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA8EAE00)
+#define CLASS_2_94D5884806027679_5__CTOR_OFFSET UNITYSDK_OFFSET(0xA8EADF0)
 
-inline static constexpr unsigned int Class_2_94D5884806027679_5_TypeDefinitionIndex = 74438;
+inline static constexpr unsigned int Class_2_94D5884806027679_5_TypeDefinitionIndex = 61237;
 
 class Class_2_94D5884806027679_5 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x18
-	::UnityEngine::Transform* Field_2_6; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_9; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x30
-	::UnityEngine::Transform* Field_2_3; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x40
-	::UnityEngine::Transform* Field_2_2; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_7; // 0x50
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x58
-	::UnityEngine::GameObject* Field_2_0; // 0x60
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x20
+	::UnityEngine::GameObject* Field_2_9; // 0x28
+	::UnityEngine::GameObject* Field_2_7; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x50
+	::UnityEngine::GameObject* Field_2_6; // 0x58
+	::UnityEngine::Transform* Field_2_0; // 0x60
 
 	::System::Void _ctor()
 	{
@@ -46,8 +46,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_94D5884806027679_5_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_2_8BCB3191E6BEE7CB()
+	::System::Void Method_2_572E53F76E315839()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_94D5884806027679_5_METHOD_2_8BCB3191E6BEE7CB_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_94D5884806027679_5_METHOD_2_572E53F76E315839_OFFSET))(this);
 	}
 };

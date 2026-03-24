@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int StreamingLayerGenerateData_TypeDefinitionIndex = 49192;
+	inline static constexpr unsigned int StreamingLayerGenerateData_TypeDefinitionIndex = 39662;
 
 	struct alignas(8) StreamingLayerGenerateData
 	{
@@ -22,5 +22,7 @@ namespace NapStreaming
 		::System::Boolean generateHlod; // 0x38
 		::System::Int32 mergeHlodMinCount; // 0x3C
 		::System::Boolean defaultLoad; // 0x40
+		::Il2CppArray<::System::Single>* lodDistances; // 0x48
+		::System::Boolean lodDisableCulled; // 0x50
 	};
 }

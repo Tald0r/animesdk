@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_MAINCITYPAGESTORYEND_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x991FB70)
-#define MOLEMOLE_MAINCITYPAGESTORYEND_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x991FB80)
-#define MOLEMOLE_MAINCITYPAGESTORYEND__CTOR_OFFSET UNITYSDK_OFFSET(0x991FB60)
+#define MOLEMOLE_MAINCITYPAGESTORYEND_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xA51B2D0)
+#define MOLEMOLE_MAINCITYPAGESTORYEND_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xA51B2E0)
+#define MOLEMOLE_MAINCITYPAGESTORYEND__CTOR_OFFSET UNITYSDK_OFFSET(0xA51B2C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MainCityPageStoryEnd_TypeDefinitionIndex = 47058;
+	inline static constexpr unsigned int MainCityPageStoryEnd_TypeDefinitionIndex = 50963;
 
 	class MainCityPageStoryEnd : public ::MoleMole::DisplayMessageBase
 	{

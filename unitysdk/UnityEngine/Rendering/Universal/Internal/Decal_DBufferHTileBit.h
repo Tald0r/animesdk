@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int Decal_DBufferHTileBit_TypeDefinitionIndex = 28859;
+	inline static constexpr unsigned int Decal_DBufferHTileBit_TypeDefinitionIndex = 29809;
 
 	enum class Decal_DBufferHTileBit : ::System::Int32
 	{

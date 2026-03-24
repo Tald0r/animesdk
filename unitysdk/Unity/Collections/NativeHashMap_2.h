@@ -6,7 +6,7 @@
 
 namespace Unity::Collections
 {
-	inline static constexpr unsigned int NativeHashMap_2_TypeDefinitionIndex = 19198;
+	inline static constexpr unsigned int NativeHashMap_2_TypeDefinitionIndex = 19796;
 
 	template <typename TKey, typename TValue>
 	struct NativeHashMap_2

@@ -3,13 +3,13 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int EViewObjectComponentFeatureEvent_TypeDefinitionIndex = 50295;
+	inline static constexpr unsigned int EViewObjectComponentFeatureEvent_TypeDefinitionIndex = 80638;
 
 	enum class EViewObjectComponentFeatureEvent : ::System::Int32
 	{
+		OnEntityAndGraphReady = 3,
+		OnPostReady = 1,
 		OnEntityReady = 2,
 		None = 0,
-		OnPostReady = 1,
-		OnEntityAndGraphReady = 3,
 	};
 }

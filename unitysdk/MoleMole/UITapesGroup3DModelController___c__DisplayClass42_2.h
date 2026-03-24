@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UITapesGroup3DModelController___c__DisplayClass42_1; }
 
-#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__DISPLAYCLASS42_2__CTOR_OFFSET UNITYSDK_OFFSET(0xAE92AE0)
-#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__DISPLAYCLASS42_2__PERFORMANCESHRINK_B__3_OFFSET UNITYSDK_OFFSET(0xAE92AF0)
+#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__DISPLAYCLASS42_2__CTOR_OFFSET UNITYSDK_OFFSET(0x9EE3E00)
+#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__DISPLAYCLASS42_2__PERFORMANCESHRINK_B__3_OFFSET UNITYSDK_OFFSET(0x9EE3E10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITapesGroup3DModelController___c__DisplayClass42_2_TypeDefinitionIndex = 69979;
+	inline static constexpr unsigned int UITapesGroup3DModelController___c__DisplayClass42_2_TypeDefinitionIndex = 53118;
 
 	class UITapesGroup3DModelController___c__DisplayClass42_2 : public ::System::Object
 	{

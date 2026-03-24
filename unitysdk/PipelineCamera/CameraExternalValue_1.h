@@ -6,7 +6,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int CameraExternalValue_1_TypeDefinitionIndex = 34357;
+	inline static constexpr unsigned int CameraExternalValue_1_TypeDefinitionIndex = 35359;
 
 	template <typename TController>
 	class CameraExternalValue_1 : public ::System::Object

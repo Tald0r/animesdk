@@ -4,11 +4,11 @@
 
 class Class_1_EBE2BDD5F8C33F00;
 
-#define MOLEMOLE_UICINEMACOLLECTPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBB11400)
+#define MOLEMOLE_UICINEMACOLLECTPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBFDE0D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaCollectPageContext_TypeDefinitionIndex = 36868;
+	inline static constexpr unsigned int UICinemaCollectPageContext_TypeDefinitionIndex = 73338;
 
 	class UICinemaCollectPageContext : public ::MoleMole::UIControllerContextBase
 	{

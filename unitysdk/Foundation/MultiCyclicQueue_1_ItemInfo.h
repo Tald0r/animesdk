@@ -5,7 +5,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int MultiCyclicQueue_1_ItemInfo_TypeDefinitionIndex = 8251;
+	inline static constexpr unsigned int MultiCyclicQueue_1_ItemInfo_TypeDefinitionIndex = 8211;
 
 	template <typename TItem>
 	struct MultiCyclicQueue_1_ItemInfo

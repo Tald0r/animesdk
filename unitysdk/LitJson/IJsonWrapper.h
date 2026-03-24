@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace LitJson
 {
-	inline static constexpr unsigned int IJsonWrapper_TypeDefinitionIndex = 8301;
+	inline static constexpr unsigned int IJsonWrapper_TypeDefinitionIndex = 8241;
 
 	class IJsonWrapper
 	{

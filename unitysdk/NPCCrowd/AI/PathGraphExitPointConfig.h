@@ -3,11 +3,11 @@
 #include "unitysdk/NPCCrowd/AI/PathGraphExitPointConfig_ExitStyle.h"
 #include "unitysdk/NPCCrowd/AI/PathGraphFeaturePointConfig.h"
 
-#define NPCCROWD_AI_PATHGRAPHEXITPOINTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA0FAA90)
+#define NPCCROWD_AI_PATHGRAPHEXITPOINTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x76C1900)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphExitPointConfig_TypeDefinitionIndex = 72119;
+	inline static constexpr unsigned int PathGraphExitPointConfig_TypeDefinitionIndex = 61949;
 
 	class PathGraphExitPointConfig : public ::NPCCrowd::AI::PathGraphFeaturePointConfig
 	{

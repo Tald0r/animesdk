@@ -7,29 +7,29 @@
 
 namespace System { template <typename T1, typename T2, typename T3, typename T4> class Func_4; }
 
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_APPLYCAMERAROTATION_OFFSET UNITYSDK_OFFSET(0x1AF80450)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_GETCAMERAROTATIONTOTARGET_OFFSET UNITYSDK_OFFSET(0x1AF7FEC0)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_NORMALIZED_OFFSET UNITYSDK_OFFSET(0x1AF7FE40)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPANTICLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1AF7FD30)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1AF7F2F0)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUP_OFFSET UNITYSDK_OFFSET(0x1AF7E9D0)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCE_OFFSET UNITYSDK_OFFSET(0x1AF7F400)
-#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AF806A0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_APPLYCAMERAROTATION_OFFSET UNITYSDK_OFFSET(0x1B598C30)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_GETCAMERAROTATIONTOTARGET_OFFSET UNITYSDK_OFFSET(0x1B5986A0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_NORMALIZED_OFFSET UNITYSDK_OFFSET(0x1B598620)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPANTICLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1B598510)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUPCLOCKWISE_OFFSET UNITYSDK_OFFSET(0x1B597AD0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCEUP_OFFSET UNITYSDK_OFFSET(0x1B5971B0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS_SLERPWITHREFERENCE_OFFSET UNITYSDK_OFFSET(0x1B597BE0)
+#define CINEMACHINE_UTILITY_UNITYQUATERNIONEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B598E80)
 
 namespace Cinemachine::Utility
 {
-	inline static constexpr unsigned int UnityQuaternionExtensions_TypeDefinitionIndex = 31170;
+	inline static constexpr unsigned int UnityQuaternionExtensions_TypeDefinitionIndex = 32122;
 
 	class UnityQuaternionExtensions : public ::System::Object
 	{
 	public:
-		static ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>** StaticGet_lerpAnagleClockwise()
-		{
-			return (::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UnityQuaternionExtensions_TypeDefinitionIndex)->GetStaticField(0x23900);
-		}
 		static ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>** StaticGet_lerpAnagleAnticlockwise()
 		{
-			return (::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UnityQuaternionExtensions_TypeDefinitionIndex)->GetStaticField(0x23908);
+			return (::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UnityQuaternionExtensions_TypeDefinitionIndex)->GetStaticField(0x25220);
+		}
+		static ::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>** StaticGet_lerpAnagleClockwise()
+		{
+			return (::System::Func_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(UnityQuaternionExtensions_TypeDefinitionIndex)->GetStaticField(0x25228);
 		}
 
 		static ::System::Void _cctor()

@@ -7,7 +7,7 @@ namespace UnityEngine { class Texture; }
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int OldCRTBehaviour_Struct_2_4D9DAE3E910E138B_TypeDefinitionIndex = 51122;
+	inline static constexpr unsigned int OldCRTBehaviour_Struct_2_4D9DAE3E910E138B_TypeDefinitionIndex = 72741;
 
 	struct alignas(8) OldCRTBehaviour_Struct_2_4D9DAE3E910E138B
 	{

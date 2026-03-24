@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_SCENEMARK_SCENEMARKDATABASE_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0xD81F730)
-#define MOLEMOLE_SCENEMARK_SCENEMARKDATABASE__CTOR_OFFSET UNITYSDK_OFFSET(0xD81F7A0)
+#define MOLEMOLE_SCENEMARK_SCENEMARKDATABASE_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0xB9AFD40)
+#define MOLEMOLE_SCENEMARK_SCENEMARKDATABASE__CTOR_OFFSET UNITYSDK_OFFSET(0xB9AFDB0)
 
 namespace MoleMole::SceneMark
 {
-	inline static constexpr unsigned int SceneMarkDataBase_TypeDefinitionIndex = 72382;
+	inline static constexpr unsigned int SceneMarkDataBase_TypeDefinitionIndex = 66870;
 
 	class SceneMarkDataBase : public ::MoleMole::SceneMark::LevelExtraData
 	{

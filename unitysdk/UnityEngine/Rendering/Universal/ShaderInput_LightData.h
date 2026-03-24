@@ -5,7 +5,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ShaderInput_LightData_TypeDefinitionIndex = 23594;
+	inline static constexpr unsigned int ShaderInput_LightData_TypeDefinitionIndex = 24277;
 
 	struct alignas(4) ShaderInput_LightData
 	{

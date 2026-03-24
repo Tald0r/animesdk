@@ -3,7 +3,7 @@
 
 namespace PostProcess::MKGlow
 {
-	inline static constexpr unsigned int Quality_TypeDefinitionIndex = 28179;
+	inline static constexpr unsigned int Quality_TypeDefinitionIndex = 29120;
 
 	enum class Quality : ::System::Int32
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/NodeCanvas/Framework/ActionTask.h"
 
-#define NODECANVAS_TASKS_ACTIONS_RUNFOREVER__CTOR_OFFSET UNITYSDK_OFFSET(0x19E0E050)
+#define NODECANVAS_TASKS_ACTIONS_RUNFOREVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3FC8E0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int RunForever_TypeDefinitionIndex = 26355;
+	inline static constexpr unsigned int RunForever_TypeDefinitionIndex = 27576;
 
 	class RunForever : public ::NodeCanvas::Framework::ActionTask
 	{

@@ -12,30 +12,30 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x993D4F0)
-#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x993D500)
-#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x993D7C0)
-#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x993D9D0)
-#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x993D990)
+#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xC7D05C0)
+#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xC7D05D0)
+#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xC7D0890)
+#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC7D0AA0)
+#define MOLEMOLE_MONOUIGAMEOBJECTNUMBER_MONOUIGAMEOBJECTNUMBER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D0A60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex = 61170;
+	inline static constexpr unsigned int MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex = 66476;
 
 	class MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::MonoUIGameObjectNumber*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Boolean>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Boolean>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x345E0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::MonoUIGameObjectNumber_SpecOffsetConfig>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::MonoUIGameObjectNumber_SpecOffsetConfig>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x345E8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::MonoUIGameObjectNumber_SpecOffsetConfig>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36F60);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::GameObject*>*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::GameObject*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x345F0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::GameObject*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36F68);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Boolean>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::MonoUIGameObjectNumber_NumberUnits, ::System::Boolean>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIGameObjectNumber_MonoUIGameObjectNumber_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36F70);
 		}
 
 		::System::Void _ctor()

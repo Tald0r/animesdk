@@ -3,7 +3,7 @@
 
 namespace QWER
 {
-	inline static constexpr unsigned int EPropertyDKDictionaryEvent_TypeDefinitionIndex = 9653;
+	inline static constexpr unsigned int EPropertyDKDictionaryEvent_TypeDefinitionIndex = 9655;
 
 	enum class EPropertyDKDictionaryEvent : ::System::Int32
 	{

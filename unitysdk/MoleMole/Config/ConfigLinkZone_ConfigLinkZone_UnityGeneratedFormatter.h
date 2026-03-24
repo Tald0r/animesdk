@@ -12,30 +12,30 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x6553FE0)
-#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x6553FF0)
-#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x6554370)
-#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x65545E0)
-#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x65545A0)
+#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x81EFB50)
+#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x81EFB60)
+#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x81EFEE0)
+#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x81F0150)
+#define MOLEMOLE_CONFIG_CONFIGLINKZONE_CONFIGLINKZONE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x81F0110)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex = 44412;
+	inline static constexpr unsigned int ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex = 59007;
 
 	class ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigLinkZone*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::LinkZoneTeamExQTEAvatarUIShowInfo*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::LinkZoneTeamExQTEAvatarUIShowInfo*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DF0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::LinkZoneTeamExQTEAvatarUIShowInfo*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44F20);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43DF8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44F28);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::RelayAttackType>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::RelayAttackType>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43E00);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::RelayAttackType>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinkZone_ConfigLinkZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44F30);
 		}
 
 		::System::Void _ctor()

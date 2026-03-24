@@ -5,18 +5,18 @@
 class Class_2_DF2C726EEEEC912D;
 namespace MoleMole { class UIFriendChatPopWindowController___c__DisplayClass48_0; }
 
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBF0EF50)
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__ONCIRCLECHATITEMSELECT_B__0_OFFSET UNITYSDK_OFFSET(0xBF0EF60)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA9760F0)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__ONCIRCLECHATITEMSELECT_B__0_OFFSET UNITYSDK_OFFSET(0xA976100)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendChatPopWindowController___c__DisplayClass48_1_TypeDefinitionIndex = 39145;
+	inline static constexpr unsigned int UIFriendChatPopWindowController___c__DisplayClass48_1_TypeDefinitionIndex = 63195;
 
 	class UIFriendChatPopWindowController___c__DisplayClass48_1 : public ::System::Object
 	{
 	public:
-		::Class_2_DF2C726EEEEC912D* circleDataExt; // 0x10
-		::MoleMole::UIFriendChatPopWindowController___c__DisplayClass48_0* CS___8__locals1; // 0x18
+		::MoleMole::UIFriendChatPopWindowController___c__DisplayClass48_0* CS___8__locals1; // 0x10
+		::Class_2_DF2C726EEEEC912D* circleDataExt; // 0x18
 
 		::System::Void _ctor()
 		{

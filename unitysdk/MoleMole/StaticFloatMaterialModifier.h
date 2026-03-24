@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_8855AD768EB2675C.h"
+#include "unitysdk/Enum_3_7F3F4476896DB547.h"
 #include "unitysdk/System/ValueType.h"
 
 class Class_1_A0B58236B258B7B2;
@@ -8,14 +8,14 @@ namespace MoleMole { class MonoRenderHandler; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_3750F4A9FEA7F5EF_OFFSET UNITYSDK_OFFSET(0x33E3F0)
-#define MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_C446CE6A5E1982BC_OFFSET UNITYSDK_OFFSET(0x33E470)
-#define MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x33E400)
-#define MOLEMOLE_STATICFLOATMATERIALMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x33E3D0)
+#define MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_3750F4A9FEA7F5EF_OFFSET UNITYSDK_OFFSET(0x35D760)
+#define MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_C446CE6A5E1982BC_OFFSET UNITYSDK_OFFSET(0x35D7E0)
+#define MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0x35D770)
+#define MOLEMOLE_STATICFLOATMATERIALMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x35D740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int StaticFloatMaterialModifier_TypeDefinitionIndex = 43701;
+	inline static constexpr unsigned int StaticFloatMaterialModifier_TypeDefinitionIndex = 59170;
 
 	struct alignas(8) StaticFloatMaterialModifier
 	{
@@ -31,9 +31,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_STATICFLOATMATERIALMODIFIER__CTOR_OFFSET))(this, a1);
 		}
 
-		::Class_1_A0B58236B258B7B2* Method_2_3750F4A9FEA7F5EF(::Enum_3_8855AD768EB2675C a1, ::MoleMole::MonoRenderHandler* a2)
+		::Class_1_A0B58236B258B7B2* Method_2_3750F4A9FEA7F5EF(::Enum_3_7F3F4476896DB547 a1, ::MoleMole::MonoRenderHandler* a2)
 		{
-			return ((::Class_1_A0B58236B258B7B2*(*)(::PVOID, ::Enum_3_8855AD768EB2675C, ::MoleMole::MonoRenderHandler*))((::PBYTE)hIl2Cpp + MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_3750F4A9FEA7F5EF_OFFSET))(this, a1, a2);
+			return ((::Class_1_A0B58236B258B7B2*(*)(::PVOID, ::Enum_3_7F3F4476896DB547, ::MoleMole::MonoRenderHandler*))((::PBYTE)hIl2Cpp + MOLEMOLE_STATICFLOATMATERIALMODIFIER_METHOD_2_3750F4A9FEA7F5EF_OFFSET))(this, a1, a2);
 		}
 
 		::System::String* Method_2_DA1BF2C227DC3D86()

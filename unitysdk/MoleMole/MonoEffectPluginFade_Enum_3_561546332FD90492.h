@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginFade_Enum_3_561546332FD90492_TypeDefinitionIndex = 40681;
+	inline static constexpr unsigned int MonoEffectPluginFade_Enum_3_561546332FD90492_TypeDefinitionIndex = 67374;
 
 	enum class MonoEffectPluginFade_Enum_3_561546332FD90492 : ::System::Byte
 	{

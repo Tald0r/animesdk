@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Comic/MonoComicEventBase.h"
 
-#define MOLEMOLE_COMIC_MONOCOMICKEYEVENTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x89E5B20)
+#define MOLEMOLE_COMIC_MONOCOMICKEYEVENTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x10A7E4F0)
 
 namespace MoleMole::Comic
 {
-	inline static constexpr unsigned int MonoComicKeyEventBase_TypeDefinitionIndex = 65176;
+	inline static constexpr unsigned int MonoComicKeyEventBase_TypeDefinitionIndex = 40765;
 
 	class MonoComicKeyEventBase : public ::MoleMole::Comic::MonoComicEventBase
 	{

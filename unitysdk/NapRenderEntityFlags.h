@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int NapRenderEntityFlags_TypeDefinitionIndex = 28123;
+inline static constexpr unsigned int NapRenderEntityFlags_TypeDefinitionIndex = 29063;
 
 enum class NapRenderEntityFlags : ::System::UInt32
 {
@@ -31,5 +31,6 @@ enum class NapRenderEntityFlags : ::System::UInt32
 	FixShadowCoverageOutOfFrustum = 0x800000,
 	IsVisible = 0x1000000,
 	IsCurFrameVisible = 0x2000000,
+	HasValidMaterial = 0x4000000,
 	KeepOnRefresh = 0x1,
 };

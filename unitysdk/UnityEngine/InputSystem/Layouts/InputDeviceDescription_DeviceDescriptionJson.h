@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace UnityEngine::InputSystem::Layouts
 {
-	inline static constexpr unsigned int InputDeviceDescription_DeviceDescriptionJson_TypeDefinitionIndex = 27886;
+	inline static constexpr unsigned int InputDeviceDescription_DeviceDescriptionJson_TypeDefinitionIndex = 28826;
 
 	struct alignas(8) InputDeviceDescription_DeviceDescriptionJson
 	{

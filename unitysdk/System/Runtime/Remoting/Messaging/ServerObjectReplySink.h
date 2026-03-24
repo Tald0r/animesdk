@@ -7,9 +7,9 @@ namespace System::Runtime::Remoting::Messaging { class IMessage; }
 namespace System::Runtime::Remoting::Messaging { class IMessageCtrl; }
 namespace System::Runtime::Remoting::Messaging { class IMessageSink; }
 
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_SERVEROBJECTREPLYSINK_ASYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x192BDB50)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_SERVEROBJECTREPLYSINK_SYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x192BDA10)
-#define SYSTEM_RUNTIME_REMOTING_MESSAGING_SERVEROBJECTREPLYSINK__CTOR_OFFSET UNITYSDK_OFFSET(0x192BDA00)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_SERVEROBJECTREPLYSINK_ASYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x197A5A20)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_SERVEROBJECTREPLYSINK_SYNCPROCESSMESSAGE_OFFSET UNITYSDK_OFFSET(0x197A58E0)
+#define SYSTEM_RUNTIME_REMOTING_MESSAGING_SERVEROBJECTREPLYSINK__CTOR_OFFSET UNITYSDK_OFFSET(0x197A58D0)
 
 namespace System::Runtime::Remoting::Messaging
 {
@@ -18,8 +18,8 @@ namespace System::Runtime::Remoting::Messaging
 	class ServerObjectReplySink : public ::System::Object
 	{
 	public:
-		::System::Runtime::Remoting::Messaging::IMessageSink* _replySink; // 0x10
-		::System::Runtime::Remoting::ServerIdentity* _identity; // 0x18
+		::System::Runtime::Remoting::ServerIdentity* _identity; // 0x10
+		::System::Runtime::Remoting::Messaging::IMessageSink* _replySink; // 0x18
 
 		::System::Void _ctor(::System::Runtime::Remoting::ServerIdentity* identity, ::System::Runtime::Remoting::Messaging::IMessageSink* replySink)
 		{

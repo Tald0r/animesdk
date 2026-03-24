@@ -9,22 +9,22 @@ namespace UnityEngine { class Camera; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define LAYOUTBLOCK_AWAKE_OFFSET UNITYSDK_OFFSET(0x1AF191B0)
-#define LAYOUTBLOCK_CREATEBLOCKSBYPOS_OFFSET UNITYSDK_OFFSET(0x1AF19680)
-#define LAYOUTBLOCK_CREATEWALL_1_OFFSET UNITYSDK_OFFSET(0x1AF193B0)
-#define LAYOUTBLOCK_CREATEWALL_OFFSET UNITYSDK_OFFSET(0x1AF19290)
-#define LAYOUTBLOCK_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x1AF19170)
-#define LAYOUTBLOCK_REALCREATEWALL_OFFSET UNITYSDK_OFFSET(0x1AF19420)
-#define LAYOUTBLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF19850)
+#define LAYOUTBLOCK_AWAKE_OFFSET UNITYSDK_OFFSET(0x1A9DD8D0)
+#define LAYOUTBLOCK_CREATEBLOCKSBYPOS_OFFSET UNITYSDK_OFFSET(0x1A9DDDA0)
+#define LAYOUTBLOCK_CREATEWALL_1_OFFSET UNITYSDK_OFFSET(0x1A9DDAD0)
+#define LAYOUTBLOCK_CREATEWALL_OFFSET UNITYSDK_OFFSET(0x1A9DD9B0)
+#define LAYOUTBLOCK_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x1A9DD890)
+#define LAYOUTBLOCK_REALCREATEWALL_OFFSET UNITYSDK_OFFSET(0x1A9DDB40)
+#define LAYOUTBLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9DDF70)
 
-inline static constexpr unsigned int LayoutBlock_TypeDefinitionIndex = 81654;
+inline static constexpr unsigned int LayoutBlock_TypeDefinitionIndex = 83657;
 
 class LayoutBlock : public ::UnityEngine::MonoBehaviour
 {
 public:
 	static ::LayoutBlock** StaticGet_instance()
 	{
-		return (::LayoutBlock**)Il2CppClass::FromTypeDefinitionIndex(LayoutBlock_TypeDefinitionIndex)->GetStaticField(0x46970);
+		return (::LayoutBlock**)Il2CppClass::FromTypeDefinitionIndex(LayoutBlock_TypeDefinitionIndex)->GetStaticField(0x483D0);
 	}
 	::UnityEngine::Transform* entityRoot; // 0x18
 	::UnityEngine::Camera* camera; // 0x20

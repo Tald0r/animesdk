@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGTRIGGERCACHE__CTOR_OFFSET UNITYSDK_OFFSET(0xCC9EA10)
+#define MOLEMOLE_CONFIG_CONFIGTRIGGERCACHE__CTOR_OFFSET UNITYSDK_OFFSET(0xACCD7D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTriggerCache_TypeDefinitionIndex = 70072;
+	inline static constexpr unsigned int ConfigTriggerCache_TypeDefinitionIndex = 74228;
 
 	class ConfigTriggerCache : public ::System::Object
 	{

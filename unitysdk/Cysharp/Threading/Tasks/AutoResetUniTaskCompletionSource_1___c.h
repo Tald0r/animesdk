@@ -6,7 +6,7 @@ namespace Cysharp::Threading::Tasks { template <typename T> class AutoResetUniTa
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int AutoResetUniTaskCompletionSource_1___c_TypeDefinitionIndex = 27173;
+	inline static constexpr unsigned int AutoResetUniTaskCompletionSource_1___c_TypeDefinitionIndex = 28113;
 
 	template <typename T>
 	class AutoResetUniTaskCompletionSource_1___c : public ::System::Object

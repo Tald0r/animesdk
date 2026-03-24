@@ -5,12 +5,12 @@
 namespace MoleMole { class UITowerDefenseTipsDialogPopWindowController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UITOWERDEFENSETIPSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x71DF500)
-#define MOLEMOLE_UITOWERDEFENSETIPSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHENHANCE_B__0_OFFSET UNITYSDK_OFFSET(0x71DF510)
+#define MOLEMOLE_UITOWERDEFENSETIPSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCAAE8C0)
+#define MOLEMOLE_UITOWERDEFENSETIPSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__REFRESHENHANCE_B__0_OFFSET UNITYSDK_OFFSET(0xCAAE8D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITowerDefenseTipsDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 69249;
+	inline static constexpr unsigned int UITowerDefenseTipsDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 64996;
 
 	class UITowerDefenseTipsDialogPopWindowController___c__DisplayClass9_0 : public ::System::Object
 	{

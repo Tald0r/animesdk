@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::IO { class FileInfo; }
 
-#define FOUNDATION_FILEHELPER___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABB5610)
-#define FOUNDATION_FILEHELPER___C__DISPLAYCLASS36_0__DELETEFILESEXCEPT_B__0_OFFSET UNITYSDK_OFFSET(0x1ABB5620)
+#define FOUNDATION_FILEHELPER___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEE2520)
+#define FOUNDATION_FILEHELPER___C__DISPLAYCLASS36_0__DELETEFILESEXCEPT_B__0_OFFSET UNITYSDK_OFFSET(0x1AEE2530)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int FileHelper___c__DisplayClass36_0_TypeDefinitionIndex = 8010;
+	inline static constexpr unsigned int FileHelper___c__DisplayClass36_0_TypeDefinitionIndex = 7957;
 
 	class FileHelper___c__DisplayClass36_0 : public ::System::Object
 	{

@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_ASSERT_NOTNULL_OFFSET UNITYSDK_OFFSET(0x1A602C10)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_ASSERT_NOTNULL_OFFSET UNITYSDK_OFFSET(0x1ABD0250)
 
 namespace System::Linq::Expressions::Interpreter
 {

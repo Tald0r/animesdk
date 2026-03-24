@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MIHOYOEMOTION_SEQUENCEFRAMEBAKEDATA_FRAMEBINDINGINDEX__CTOR_OFFSET UNITYSDK_OFFSET(0x18AF6E00)
+#define MIHOYOEMOTION_SEQUENCEFRAMEBAKEDATA_FRAMEBINDINGINDEX__CTOR_OFFSET UNITYSDK_OFFSET(0x18FE1770)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int SequenceFrameBakeData_FrameBindingIndex_TypeDefinitionIndex = 36195;
+	inline static constexpr unsigned int SequenceFrameBakeData_FrameBindingIndex_TypeDefinitionIndex = 37215;
 
 	class SequenceFrameBakeData_FrameBindingIndex : public ::System::Object
 	{

@@ -5,23 +5,23 @@
 
 namespace BehaviorDesigner::Runtime { class SharedString; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE_ONRESET_OFFSET UNITYSDK_OFFSET(0x19B627F0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x19B62600)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE__CTOR_OFFSET UNITYSDK_OFFSET(0x19B62870)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x19B628B0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x19B62940)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A10AC10)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A10AA20)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A10AC90)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A10ACD0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYSTRING_REPLACE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A10AD60)
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityString
 {
-	inline static constexpr unsigned int Replace_TypeDefinitionIndex = 30441;
+	inline static constexpr unsigned int Replace_TypeDefinitionIndex = 31393;
 
 	class Replace : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedString* oldString; // 0x58
-		::BehaviorDesigner::Runtime::SharedString* targetString; // 0x60
-		::BehaviorDesigner::Runtime::SharedString* storeResult; // 0x68
-		::BehaviorDesigner::Runtime::SharedString* newString; // 0x70
+		::BehaviorDesigner::Runtime::SharedString* storeResult; // 0x58
+		::BehaviorDesigner::Runtime::SharedString* newString; // 0x60
+		::BehaviorDesigner::Runtime::SharedString* targetString; // 0x68
+		::BehaviorDesigner::Runtime::SharedString* oldString; // 0x70
 
 		::System::Void _ctor()
 		{

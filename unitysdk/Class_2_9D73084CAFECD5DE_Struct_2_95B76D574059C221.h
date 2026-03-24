@@ -5,24 +5,24 @@
 #include "unitysdk/System/ValueType.h"
 
 class Class_2_477098397AE68C7E;
-class Class_2_9D73084CAFECD5DE_Class_1_BE8BAB4F87EAB1EC_1;
-class Class_3_1B2A8F1569E55080_3;
+class Class_2_9D73084CAFECD5DE_Class_1_BE8BAB4F87EAB1EC_2;
+class Class_3_1B2A8F1569E55080;
 namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_2_9D73084CAFECD5DE_STRUCT_2_95B76D574059C221_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x35FBF0)
-#define CLASS_2_9D73084CAFECD5DE_STRUCT_2_95B76D574059C221_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_9D73084CAFECD5DE_STRUCT_2_95B76D574059C221_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3AC760)
+#define CLASS_2_9D73084CAFECD5DE_STRUCT_2_95B76D574059C221_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_9D73084CAFECD5DE_Struct_2_95B76D574059C221_TypeDefinitionIndex = 47165;
+inline static constexpr unsigned int Class_2_9D73084CAFECD5DE_Struct_2_95B76D574059C221_TypeDefinitionIndex = 52173;
 
 struct alignas(8) Class_2_9D73084CAFECD5DE_Struct_2_95B76D574059C221
 {
-	::System::String* Field_2_4; // 0x10
+	::Class_3_1B2A8F1569E55080* Field_2_2; // 0x10
 	::Class_2_477098397AE68C7E* Field_2_6; // 0x18
-	::Class_3_1B2A8F1569E55080_3* Field_2_2; // 0x20
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_7; // 0x28
-	::Class_2_9D73084CAFECD5DE_Class_1_BE8BAB4F87EAB1EC_1* Field_2_3; // 0x38
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x40
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_7; // 0x20
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x30
+	::System::String* Field_2_4; // 0x40
+	::Class_2_9D73084CAFECD5DE_Class_1_BE8BAB4F87EAB1EC_2* Field_2_3; // 0x48
 	::System::Int32 Field_2_0; // 0x50
 	::System::Int32 Field_2_5; // 0x54
 

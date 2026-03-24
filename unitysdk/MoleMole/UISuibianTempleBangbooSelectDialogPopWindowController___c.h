@@ -7,34 +7,34 @@ namespace System { class Action; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xACBCE40)
-#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__CHECKBUDDY_B__14_0_OFFSET UNITYSDK_OFFSET(0xACBCF60)
-#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xACBCE80)
-#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__ONCREATEVIEW_B__13_2_OFFSET UNITYSDK_OFFSET(0xACBCE90)
-#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__ONUIDESTROY_B__17_0_OFFSET UNITYSDK_OFFSET(0xACBCF70)
+#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x869B0B0)
+#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__CHECKBUDDY_B__14_0_OFFSET UNITYSDK_OFFSET(0x869B1D0)
+#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x869B0F0)
+#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__ONCREATEVIEW_B__13_2_OFFSET UNITYSDK_OFFSET(0x869B100)
+#define MOLEMOLE_UISUIBIANTEMPLEBANGBOOSELECTDIALOGPOPWINDOWCONTROLLER___C__ONUIDESTROY_B__17_0_OFFSET UNITYSDK_OFFSET(0x869B1E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex = 72128;
+	inline static constexpr unsigned int UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex = 56964;
 
 	class UISuibianTempleBangbooSelectDialogPopWindowController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UISuibianTempleBangbooSelectDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISuibianTempleBangbooSelectDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34D40);
+			return (::MoleMole::UISuibianTempleBangbooSelectDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37690);
 		}
 		static ::System::Func_2<::Class_2_01B22E9930E7BB4D*, ::System::UInt32>** StaticGet___9__17_0()
 		{
-			return (::System::Func_2<::Class_2_01B22E9930E7BB4D*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34D48);
-		}
-		static ::System::Action** StaticGet___9__14_0()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34D50);
+			return (::System::Func_2<::Class_2_01B22E9930E7BB4D*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37698);
 		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__13_2()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34D58);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x376A0);
+		}
+		static ::System::Action** StaticGet___9__14_0()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBangbooSelectDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x376A8);
 		}
 
 		static ::System::Void _cctor()

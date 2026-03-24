@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCAnimatorUtils_TypeDefinitionIndex = 43467;
+	inline static constexpr unsigned int NPCAnimatorUtils_TypeDefinitionIndex = 54966;
 
 	class NPCAnimatorUtils : public ::System::Object
 	{

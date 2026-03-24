@@ -5,9 +5,9 @@
 
 class PushBoxPlayerView;
 
-#define PUSHBOXPLAYERVIEW___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1815E5A0)
+#define PUSHBOXPLAYERVIEW___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1826EAE0)
 
-inline static constexpr unsigned int PushBoxPlayerView___c__DisplayClass9_0_TypeDefinitionIndex = 73354;
+inline static constexpr unsigned int PushBoxPlayerView___c__DisplayClass9_0_TypeDefinitionIndex = 38841;
 
 class PushBoxPlayerView___c__DisplayClass9_0 : public ::System::Object
 {

@@ -1,19 +1,19 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Enum_3_E3AEF86448F7462E_TypeDefinitionIndex = 61185;
+inline static constexpr unsigned int Enum_3_E3AEF86448F7462E_TypeDefinitionIndex = 79021;
 
 enum class Enum_3_E3AEF86448F7462E : ::System::Int32
 {
-	SimpleRigidbodyObject = 7,
-	BangbooTowerHolder = 9,
-	DestructionObject = 4,
-	MainCitySceneObject = 3,
-	VehicleObject = 8,
-	CurveMoveObject = 6,
 	SceneMoveObject = 5,
-	Interest = 1,
-	EmptyObject = 10,
-	AnimatorSceneObject = 2,
 	PartyGameObj = 11,
+	AnimatorSceneObject = 2,
+	CurveMoveObject = 6,
+	SimpleRigidbodyObject = 7,
+	Interest = 1,
+	MainCitySceneObject = 3,
+	EmptyObject = 10,
+	DestructionObject = 4,
+	VehicleObject = 8,
+	BangbooTowerHolder = 9,
 };

@@ -4,10 +4,10 @@
 
 namespace Mono::Globalization::Unicode { class CodePointIndexer; }
 
-#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL_MAPIDX_OFFSET UNITYSDK_OFFSET(0x19173000)
-#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL_PROPIDX_OFFSET UNITYSDK_OFFSET(0x19172F20)
-#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL__CCTOR_OFFSET UNITYSDK_OFFSET(0x19172A20)
-#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL__CTOR_OFFSET UNITYSDK_OFFSET(0x191730E0)
+#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL_MAPIDX_OFFSET UNITYSDK_OFFSET(0x1958CFE0)
+#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL_PROPIDX_OFFSET UNITYSDK_OFFSET(0x1958CF00)
+#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1958CA00)
+#define MONO_GLOBALIZATION_UNICODE_NORMALIZATIONTABLEUTIL__CTOR_OFFSET UNITYSDK_OFFSET(0x1958D0C0)
 
 namespace Mono::Globalization::Unicode
 {
@@ -16,23 +16,23 @@ namespace Mono::Globalization::Unicode
 	class NormalizationTableUtil : public ::System::Object
 	{
 	public:
-		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Composite()
+		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Prop()
 		{
 			return (::Mono::Globalization::Unicode::CodePointIndexer**)Il2CppClass::FromTypeDefinitionIndex(NormalizationTableUtil_TypeDefinitionIndex)->GetStaticField(0x740);
 		}
-		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Helper()
+		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Map()
 		{
 			return (::Mono::Globalization::Unicode::CodePointIndexer**)Il2CppClass::FromTypeDefinitionIndex(NormalizationTableUtil_TypeDefinitionIndex)->GetStaticField(0x748);
 		}
-		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Map()
+		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Combining()
 		{
 			return (::Mono::Globalization::Unicode::CodePointIndexer**)Il2CppClass::FromTypeDefinitionIndex(NormalizationTableUtil_TypeDefinitionIndex)->GetStaticField(0x750);
 		}
-		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Prop()
+		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Helper()
 		{
 			return (::Mono::Globalization::Unicode::CodePointIndexer**)Il2CppClass::FromTypeDefinitionIndex(NormalizationTableUtil_TypeDefinitionIndex)->GetStaticField(0x758);
 		}
-		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Combining()
+		static ::Mono::Globalization::Unicode::CodePointIndexer** StaticGet_Composite()
 		{
 			return (::Mono::Globalization::Unicode::CodePointIndexer**)Il2CppClass::FromTypeDefinitionIndex(NormalizationTableUtil_TypeDefinitionIndex)->GetStaticField(0x760);
 		}

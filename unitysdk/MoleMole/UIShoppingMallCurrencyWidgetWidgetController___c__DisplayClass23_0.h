@@ -7,12 +7,12 @@ namespace MoleMole { class GroceryItemIconV2Context; }
 namespace MoleMole { class ScrollViewItemWidgetController; }
 namespace MoleMole { class UIShoppingMallCurrencyWidgetWidgetController; }
 
-#define MOLEMOLE_UISHOPPINGMALLCURRENCYWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB27B140)
-#define MOLEMOLE_UISHOPPINGMALLCURRENCYWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS23_0__INITVIEW_B__2_OFFSET UNITYSDK_OFFSET(0xB27B150)
+#define MOLEMOLE_UISHOPPINGMALLCURRENCYWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x95862F0)
+#define MOLEMOLE_UISHOPPINGMALLCURRENCYWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS23_0__INITVIEW_B__2_OFFSET UNITYSDK_OFFSET(0x9586300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallCurrencyWidgetWidgetController___c__DisplayClass23_0_TypeDefinitionIndex = 38309;
+	inline static constexpr unsigned int UIShoppingMallCurrencyWidgetWidgetController___c__DisplayClass23_0_TypeDefinitionIndex = 46044;
 
 	class UIShoppingMallCurrencyWidgetWidgetController___c__DisplayClass23_0 : public ::System::Object
 	{

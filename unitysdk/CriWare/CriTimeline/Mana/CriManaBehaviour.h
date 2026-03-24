@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Playables/PlayableBehaviour.h"
 
-#define CRIWARE_CRITIMELINE_MANA_CRIMANABEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACBA790)
+#define CRIWARE_CRITIMELINE_MANA_CRIMANABEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2DABA0)
 
 namespace CriWare::CriTimeline::Mana
 {
-	inline static constexpr unsigned int CriManaBehaviour_TypeDefinitionIndex = 31343;
+	inline static constexpr unsigned int CriManaBehaviour_TypeDefinitionIndex = 32295;
 
 	class CriManaBehaviour : public ::UnityEngine::Playables::PlayableBehaviour
 	{

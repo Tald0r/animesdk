@@ -4,11 +4,11 @@
 
 namespace NPCCrowd::AI { class TriggerEventStimulusItem; }
 
-#define NPCCROWD_AI_NPCCROWDREACTIONMANAGER___C__DISPLAYCLASS24_2__CTOR_OFFSET UNITYSDK_OFFSET(0x6014780)
+#define NPCCROWD_AI_NPCCROWDREACTIONMANAGER___C__DISPLAYCLASS24_2__CTOR_OFFSET UNITYSDK_OFFSET(0x69D5760)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int NPCCrowdReactionManager___c__DisplayClass24_2_TypeDefinitionIndex = 44999;
+	inline static constexpr unsigned int NPCCrowdReactionManager___c__DisplayClass24_2_TypeDefinitionIndex = 46749;
 
 	class NPCCrowdReactionManager___c__DisplayClass24_2 : public ::System::Object
 	{

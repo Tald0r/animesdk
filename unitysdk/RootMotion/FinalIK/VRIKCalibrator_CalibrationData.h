@@ -5,11 +5,11 @@
 
 namespace RootMotion::FinalIK { class VRIKCalibrator_CalibrationData_Target; }
 
-#define ROOTMOTION_FINALIK_VRIKCALIBRATOR_CALIBRATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A89B8A0)
+#define ROOTMOTION_FINALIK_VRIKCALIBRATOR_CALIBRATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE5D700)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int VRIKCalibrator_CalibrationData_TypeDefinitionIndex = 35184;
+	inline static constexpr unsigned int VRIKCalibrator_CalibrationData_TypeDefinitionIndex = 36186;
 
 	class VRIKCalibrator_CalibrationData : public ::System::Object
 	{

@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UISUIBIANTEMPLELEVELUPDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9369CB0)
-#define MOLEMOLE_UISUIBIANTEMPLELEVELUPDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9369CF0)
-#define MOLEMOLE_UISUIBIANTEMPLELEVELUPDIALOGPOPWINDOWCONTROLLER___C__ONUIDESTROY_B__7_0_OFFSET UNITYSDK_OFFSET(0x9369D00)
+#define MOLEMOLE_UISUIBIANTEMPLELEVELUPDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x951A460)
+#define MOLEMOLE_UISUIBIANTEMPLELEVELUPDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x951A4A0)
+#define MOLEMOLE_UISUIBIANTEMPLELEVELUPDIALOGPOPWINDOWCONTROLLER___C__ONUIDESTROY_B__7_0_OFFSET UNITYSDK_OFFSET(0x951A4B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleLevelUpDialogPopWindowController___c_TypeDefinitionIndex = 68392;
+	inline static constexpr unsigned int UISuibianTempleLevelUpDialogPopWindowController___c_TypeDefinitionIndex = 50372;
 
 	class UISuibianTempleLevelUpDialogPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UISuibianTempleLevelUpDialogPopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UISuibianTempleLevelUpDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleLevelUpDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D940);
-		}
 		static ::System::Action** StaticGet___9__7_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleLevelUpDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D948);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleLevelUpDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x40890);
+		}
+		static ::MoleMole::UISuibianTempleLevelUpDialogPopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UISuibianTempleLevelUpDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleLevelUpDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x40898);
 		}
 
 		static ::System::Void _cctor()

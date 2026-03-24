@@ -4,7 +4,7 @@
 
 namespace UnityEngine::Animations
 {
-	inline static constexpr unsigned int IAnimationJob_TypeDefinitionIndex = 6580;
+	inline static constexpr unsigned int IAnimationJob_TypeDefinitionIndex = 6584;
 
 	class IAnimationJob
 	{

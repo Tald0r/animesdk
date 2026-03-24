@@ -6,27 +6,27 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define UNITYENGINE_XR_INPUTDEVICES_INVOKECONNECTIONEVENT_OFFSET UNITYSDK_OFFSET(0x1B08A260)
-#define UNITYENGINE_XR_INPUTDEVICES__CTOR_OFFSET UNITYSDK_OFFSET(0x1B08A310)
+#define UNITYENGINE_XR_INPUTDEVICES_INVOKECONNECTIONEVENT_OFFSET UNITYSDK_OFFSET(0x1B698A20)
+#define UNITYENGINE_XR_INPUTDEVICES__CTOR_OFFSET UNITYSDK_OFFSET(0x1B698AD0)
 
 namespace UnityEngine::XR
 {
-	inline static constexpr unsigned int InputDevices_TypeDefinitionIndex = 23965;
+	inline static constexpr unsigned int InputDevices_TypeDefinitionIndex = 24648;
 
 	class InputDevices : public ::System::Object
 	{
 	public:
-		static ::System::Action_1<::UnityEngine::XR::InputDevice>** StaticGet_deviceConnected()
-		{
-			return (::System::Action_1<::UnityEngine::XR::InputDevice>**)Il2CppClass::FromTypeDefinitionIndex(InputDevices_TypeDefinitionIndex)->GetStaticField(0x1D7D0);
-		}
 		static ::System::Action_1<::UnityEngine::XR::InputDevice>** StaticGet_deviceDisconnected()
 		{
-			return (::System::Action_1<::UnityEngine::XR::InputDevice>**)Il2CppClass::FromTypeDefinitionIndex(InputDevices_TypeDefinitionIndex)->GetStaticField(0x1D7D8);
+			return (::System::Action_1<::UnityEngine::XR::InputDevice>**)Il2CppClass::FromTypeDefinitionIndex(InputDevices_TypeDefinitionIndex)->GetStaticField(0x1DF80);
 		}
 		static ::System::Action_1<::UnityEngine::XR::InputDevice>** StaticGet_deviceConfigChanged()
 		{
-			return (::System::Action_1<::UnityEngine::XR::InputDevice>**)Il2CppClass::FromTypeDefinitionIndex(InputDevices_TypeDefinitionIndex)->GetStaticField(0x1D7E0);
+			return (::System::Action_1<::UnityEngine::XR::InputDevice>**)Il2CppClass::FromTypeDefinitionIndex(InputDevices_TypeDefinitionIndex)->GetStaticField(0x1DF88);
+		}
+		static ::System::Action_1<::UnityEngine::XR::InputDevice>** StaticGet_deviceConnected()
+		{
+			return (::System::Action_1<::UnityEngine::XR::InputDevice>**)Il2CppClass::FromTypeDefinitionIndex(InputDevices_TypeDefinitionIndex)->GetStaticField(0x1DF90);
 		}
 
 		::System::Void _ctor()

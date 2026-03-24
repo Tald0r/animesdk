@@ -1,0 +1,36 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+class Class_1_7807B2B04302CD7B;
+class Class_1_B1BEE66E5F9EF706;
+
+#define MOLEMOLE_UIACTIVITYHOTPOTSERVEMENUPOPWINDOWCONTROLLER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8B9F8F0)
+#define MOLEMOLE_UIACTIVITYHOTPOTSERVEMENUPOPWINDOWCONTROLLER___C__DISPLAYCLASS23_0__REFRESHITEM_B__0_OFFSET UNITYSDK_OFFSET(0x8B9F900)
+#define MOLEMOLE_UIACTIVITYHOTPOTSERVEMENUPOPWINDOWCONTROLLER___C__DISPLAYCLASS23_0__REFRESHITEM_B__1_OFFSET UNITYSDK_OFFSET(0x8B9F940)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityHotpotServeMenuPopWindowController___c__DisplayClass23_0_TypeDefinitionIndex = 46754;
+
+	class UIActivityHotpotServeMenuPopWindowController___c__DisplayClass23_0 : public ::System::Object
+	{
+	public:
+		::Class_1_B1BEE66E5F9EF706* map; // 0x10
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTSERVEMENUPOPWINDOWCONTROLLER___C__DISPLAYCLASS23_0__CTOR_OFFSET))(this);
+		}
+
+		::System::Int32 _RefreshItem_b__0(::Class_1_7807B2B04302CD7B* x)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_7807B2B04302CD7B*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTSERVEMENUPOPWINDOWCONTROLLER___C__DISPLAYCLASS23_0__REFRESHITEM_B__0_OFFSET))(this, x);
+		}
+
+		::System::Int32 _RefreshItem_b__1(::Class_1_7807B2B04302CD7B* x)
+		{
+			return ((::System::Int32(*)(::PVOID, ::Class_1_7807B2B04302CD7B*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTSERVEMENUPOPWINDOWCONTROLLER___C__DISPLAYCLASS23_0__REFRESHITEM_B__1_OFFSET))(this, x);
+		}
+	};
+}

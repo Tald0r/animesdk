@@ -4,19 +4,19 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINFOPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA30B4C0)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINFOPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB736510)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityTeamTrialFightInfoPopWindowController_Context_TypeDefinitionIndex = 72600;
+	inline static constexpr unsigned int UIActivityTeamTrialFightInfoPopWindowController_Context_TypeDefinitionIndex = 42219;
 
 	class UIActivityTeamTrialFightInfoPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Collections::Generic::List_1<::System::Int32>* conditionList; // 0x28
 		::System::Collections::Generic::List_1<::System::Int32>* effectList; // 0x30
-		::System::Int32 questID; // 0x38
-		::System::Int32 activityID; // 0x3C
+		::System::Int32 activityID; // 0x38
+		::System::Int32 questID; // 0x3C
 
 		::System::Void _ctor()
 		{

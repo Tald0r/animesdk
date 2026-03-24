@@ -7,12 +7,12 @@ namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGLANGUAGEVIDEODATA_CLASS_1_3F92AD00BAB25628_METHOD_1_D77C10DC6DA3E3CE_OFFSET UNITYSDK_OFFSET(0xEC4A1C0)
-#define MOLEMOLE_CONFIGLANGUAGEVIDEODATA_CLASS_1_3F92AD00BAB25628__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4A1B0)
+#define MOLEMOLE_CONFIGLANGUAGEVIDEODATA_CLASS_1_3F92AD00BAB25628_METHOD_1_D77C10DC6DA3E3CE_OFFSET UNITYSDK_OFFSET(0xB480480)
+#define MOLEMOLE_CONFIGLANGUAGEVIDEODATA_CLASS_1_3F92AD00BAB25628__CTOR_OFFSET UNITYSDK_OFFSET(0xB480470)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigLanguageVideoData_Class_1_3F92AD00BAB25628_TypeDefinitionIndex = 56373;
+	inline static constexpr unsigned int ConfigLanguageVideoData_Class_1_3F92AD00BAB25628_TypeDefinitionIndex = 63568;
 
 	class ConfigLanguageVideoData_Class_1_3F92AD00BAB25628 : public ::System::Object
 	{

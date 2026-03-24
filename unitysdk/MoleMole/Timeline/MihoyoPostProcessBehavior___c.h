@@ -7,34 +7,34 @@ namespace MoleMole::EffectSimulate { class IEffectSimulate; }
 namespace System { class Type; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C_METHOD_1_4FA4012B828C8856_OFFSET UNITYSDK_OFFSET(0x9ADD890)
-#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C_METHOD_1_96144FAA1D41D8C3_OFFSET UNITYSDK_OFFSET(0x9ADD850)
-#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C_METHOD_1_FFACAEF09C217BD8_OFFSET UNITYSDK_OFFSET(0x9ADD900)
-#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9ADD800)
-#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9ADD840)
+#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C_METHOD_1_4FA4012B828C8856_OFFSET UNITYSDK_OFFSET(0xA552570)
+#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C_METHOD_1_96144FAA1D41D8C3_OFFSET UNITYSDK_OFFSET(0xA552530)
+#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C_METHOD_1_FFACAEF09C217BD8_OFFSET UNITYSDK_OFFSET(0xA5525E0)
+#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA5524E0)
+#define MOLEMOLE_TIMELINE_MIHOYOPOSTPROCESSBEHAVIOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA552520)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MihoyoPostProcessBehavior___c_TypeDefinitionIndex = 74716;
+	inline static constexpr unsigned int MihoyoPostProcessBehavior___c_TypeDefinitionIndex = 48009;
 
 	class MihoyoPostProcessBehavior___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Timeline::MihoyoPostProcessBehavior___c** StaticGet___9()
 		{
-			return (::MoleMole::Timeline::MihoyoPostProcessBehavior___c**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x2FC80);
+			return (::MoleMole::Timeline::MihoyoPostProcessBehavior___c**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x317E0);
 		}
 		static ::System::Func_2<::System::Type*, ::MoleMole::EffectSimulate::IEffectSimulate*>** StaticGet___9__9_1()
 		{
-			return (::System::Func_2<::System::Type*, ::MoleMole::EffectSimulate::IEffectSimulate*>**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x2FC88);
+			return (::System::Func_2<::System::Type*, ::MoleMole::EffectSimulate::IEffectSimulate*>**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x317E8);
 		}
 		static ::System::Func_2<::MoleMole::EffectSimulate::IEffectSimulate*, ::System::Int32>** StaticGet___9__9_4()
 		{
-			return (::System::Func_2<::MoleMole::EffectSimulate::IEffectSimulate*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x2FC90);
+			return (::System::Func_2<::MoleMole::EffectSimulate::IEffectSimulate*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x317F0);
 		}
 		static ::System::Func_2<::MoleMole::EffectSimulate::IEffectSimulate*, ::Sirenix::OdinInspector::ValueDropdownItem>** StaticGet___9__9_5()
 		{
-			return (::System::Func_2<::MoleMole::EffectSimulate::IEffectSimulate*, ::Sirenix::OdinInspector::ValueDropdownItem>**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x2FC98);
+			return (::System::Func_2<::MoleMole::EffectSimulate::IEffectSimulate*, ::Sirenix::OdinInspector::ValueDropdownItem>**)Il2CppClass::FromTypeDefinitionIndex(MihoyoPostProcessBehavior___c_TypeDefinitionIndex)->GetStaticField(0x317F8);
 		}
 
 		static ::System::Void _cctor()

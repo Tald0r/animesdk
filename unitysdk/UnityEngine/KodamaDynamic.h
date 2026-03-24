@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Component.h"
 
-#define UNITYENGINE_KODAMADYNAMIC__CTOR_OFFSET UNITYSDK_OFFSET(0x19E15EB0)
+#define UNITYENGINE_KODAMADYNAMIC__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3E5750)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int KodamaDynamic_TypeDefinitionIndex = 5167;
+	inline static constexpr unsigned int KodamaDynamic_TypeDefinitionIndex = 5168;
 
 	class KodamaDynamic : public ::UnityEngine::Component
 	{

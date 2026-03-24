@@ -6,7 +6,7 @@ namespace System::IO { class Stream; }
 
 namespace ICSharpCode::SharpZipLib::Zip
 {
-	inline static constexpr unsigned int IArchiveStorage_TypeDefinitionIndex = 6745;
+	inline static constexpr unsigned int IArchiveStorage_TypeDefinitionIndex = 6749;
 
 	class IArchiveStorage
 	{

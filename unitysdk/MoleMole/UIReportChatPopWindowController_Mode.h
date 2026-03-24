@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIReportChatPopWindowController_Mode_TypeDefinitionIndex = 44054;
+	inline static constexpr unsigned int UIReportChatPopWindowController_Mode_TypeDefinitionIndex = 48950;
 
 	enum class UIReportChatPopWindowController_Mode : ::System::Int32
 	{

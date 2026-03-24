@@ -7,21 +7,21 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPROPERTYENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x8037310)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPROPERTYENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x80373B0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPROPERTYENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x9CE9CD0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPROPERTYENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x9CE9D70)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventModifyPropertyEntry_TypeDefinitionIndex = 37194;
+	inline static constexpr unsigned int AnimatorEventModifyPropertyEntry_TypeDefinitionIndex = 70413;
 
 	class AnimatorEventModifyPropertyEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
 		::System::String* CustomPropertyType; // 0x58
-		::MoleMole::Config::PropertyModifyFunction PropertyModifyFunction; // 0x60
-		::System::Single Percentage; // 0x64
-		::System::Single Amount; // 0x68
-		::MoleMole::Config::BaseProperty PropertyType; // 0x6C
+		::System::Single Percentage; // 0x60
+		::System::Single Amount; // 0x64
+		::MoleMole::Config::BaseProperty PropertyType; // 0x68
+		::MoleMole::Config::PropertyModifyFunction PropertyModifyFunction; // 0x6C
 
 		::System::Void _ctor()
 		{

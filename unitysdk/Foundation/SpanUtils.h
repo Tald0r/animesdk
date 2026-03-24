@@ -8,13 +8,13 @@
 
 namespace System { template <typename T> class Predicate_1; }
 
-#define FOUNDATION_SPANUTILS_BEGININDEX_OFFSET UNITYSDK_OFFSET(0x1A794610)
-#define FOUNDATION_SPANUTILS_ENDINDEX_OFFSET UNITYSDK_OFFSET(0x1A794600)
-#define FOUNDATION_SPANUTILS_ENSUREINDEX_OFFSET UNITYSDK_OFFSET(0x1A794620)
+#define FOUNDATION_SPANUTILS_BEGININDEX_OFFSET UNITYSDK_OFFSET(0x1AD77440)
+#define FOUNDATION_SPANUTILS_ENDINDEX_OFFSET UNITYSDK_OFFSET(0x1AD77430)
+#define FOUNDATION_SPANUTILS_ENSUREINDEX_OFFSET UNITYSDK_OFFSET(0x1AD77450)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int SpanUtils_TypeDefinitionIndex = 9032;
+	inline static constexpr unsigned int SpanUtils_TypeDefinitionIndex = 9025;
 
 	class SpanUtils : public ::System::Object
 	{

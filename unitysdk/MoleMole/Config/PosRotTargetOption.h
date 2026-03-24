@@ -2,10 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlexBuffers/FlxMap.h"
 #include "unitysdk/FlexBuffers/FlxValue.h"
+#include "unitysdk/MoleMole/Config/AbilityTargetting.h"
 #include "unitysdk/MoleMole/Config/ReferTargetCoordsOption.h"
 #include "unitysdk/Struct_2_69EDF57FCDC7C5D3.h"
 #include "unitysdk/Struct_2_FA5F50563E60AFBA.h"
-#include "unitysdk/Struct_2_FC595D1A561D8C6F.h"
+#include "unitysdk/Struct_2_FC595D1A561D8C6F_1.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
@@ -17,27 +18,28 @@ namespace MoleMole::Config { class DynamicString; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_CLONE_OFFSET UNITYSDK_OFFSET(0xEC43D60)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_FOREACHREFTYPEMEMBER_OFFSET UNITYSDK_OFFSET(0xEC35090)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xEC34DF0)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_FROMFLX_OFFSET UNITYSDK_OFFSET(0xEC43F70)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETATTACHPOINT_OFFSET UNITYSDK_OFFSET(0xEC36920)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETENTITYPOSROTBYTARGET_OFFSET UNITYSDK_OFFSET(0xEC36A90)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETHASHNUM_OFFSET UNITYSDK_OFFSET(0xEC43E40)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETSAVEPOINTPOSROT_OFFSET UNITYSDK_OFFSET(0xEC36DD0)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETTARGETENTITYPOSROT_OFFSET UNITYSDK_OFFSET(0xEC37120)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETTARGETENTITY_OFFSET UNITYSDK_OFFSET(0xEC36FA0)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_INTERNALFROMBINARY_OFFSET UNITYSDK_OFFSET(0xEC43C00)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_INTERNALFROMFLX_OFFSET UNITYSDK_OFFSET(0xEC36720)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_ISREFERTARGETCAMERA_OFFSET UNITYSDK_OFFSET(0xEC37430)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_ISSAVEPOINTOPTION_OFFSET UNITYSDK_OFFSET(0xEC37550)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_PARSEFROMBINARY_OFFSET UNITYSDK_OFFSET(0xEC43C10)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_PARSEFROMFLX_OFFSET UNITYSDK_OFFSET(0xEC43FD0)
-#define MOLEMOLE_CONFIG_POSROTTARGETOPTION__CTOR_OFFSET UNITYSDK_OFFSET(0xEC368A0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_CLONE_OFFSET UNITYSDK_OFFSET(0xCB00970)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_FOREACHREFTYPEMEMBER_OFFSET UNITYSDK_OFFSET(0xCAF0E10)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xCAF0B70)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_FROMFLX_OFFSET UNITYSDK_OFFSET(0xCB00B80)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETATTACHPOINT_OFFSET UNITYSDK_OFFSET(0xCAF26A0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETENTITYPOSROTBYTARGET_OFFSET UNITYSDK_OFFSET(0xCAF2810)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETHASHNUM_OFFSET UNITYSDK_OFFSET(0xCB00A50)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETOFFSETREFERTARGET_OFFSET UNITYSDK_OFFSET(0xCAF2AC0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETSAVEPOINTPOSROT_OFFSET UNITYSDK_OFFSET(0xCAF2C50)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETTARGETENTITYPOSROT_OFFSET UNITYSDK_OFFSET(0xCAF2FA0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETTARGETENTITY_OFFSET UNITYSDK_OFFSET(0xCAF2E20)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_INTERNALFROMBINARY_OFFSET UNITYSDK_OFFSET(0xCB00810)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_INTERNALFROMFLX_OFFSET UNITYSDK_OFFSET(0xCAF24A0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_ISREFERTARGETCAMERA_OFFSET UNITYSDK_OFFSET(0xCAF32B0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_ISSAVEPOINTOPTION_OFFSET UNITYSDK_OFFSET(0xCAF33D0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_PARSEFROMBINARY_OFFSET UNITYSDK_OFFSET(0xCB00820)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION_PARSEFROMFLX_OFFSET UNITYSDK_OFFSET(0xCB00BE0)
+#define MOLEMOLE_CONFIG_POSROTTARGETOPTION__CTOR_OFFSET UNITYSDK_OFFSET(0xCAF2620)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int PosRotTargetOption_TypeDefinitionIndex = 47770;
+	inline static constexpr unsigned int PosRotTargetOption_TypeDefinitionIndex = 62943;
 
 	class PosRotTargetOption : public ::System::Object
 	{
@@ -57,9 +59,9 @@ namespace MoleMole::Config
 			return ((::System::Boolean(*)(::PVOID, ::Struct_2_FA5F50563E60AFBA, ::MoleMole::Config::ReferTargetCoordsOption, ::MoleMole::Config::ReferTargetCoordsOption, ::UnityEngine::Vector3&, ::UnityEngine::Quaternion&, ::Struct_2_FA5F50563E60AFBA&, ::UnityEngine::Transform*&, ::Struct_2_69EDF57FCDC7C5D3&, ::System::Boolean&, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::Class_2_14986121AA61AD99*, ::MoleMole::Config::DynamicString*, ::MoleMole::Config::DynamicString*, ::MoleMole::Config::DynamicString*, ::MoleMole::Config::DynamicString*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETTARGETENTITYPOSROT_OFFSET))(this, sourceEntity, coordsOption, backupCoordsOption, targetPos, targetRot, targetEntity, targetTrans, targetCoords, useDefaultTarget, caster, other, instancedAbility, relativeBaseSavePoint, relativeTargetSavePoint, backupRelativeBaseSavePoint, backupRelativeTargetSavePoint, forceUseBackUp);
 		}
 
-		::System::Boolean GetEntityPosRotByTarget(::Struct_2_FA5F50563E60AFBA targetEntity, ::Struct_2_FA5F50563E60AFBA sourceEntity, ::MoleMole::Config::ReferTargetCoordsOption coordsOption, ::UnityEngine::Vector3& targetPos, ::UnityEngine::Quaternion& targetRot, ::UnityEngine::Transform*& targetTrans, ::Struct_2_69EDF57FCDC7C5D3& targetCoods, ::System::Boolean useDefault, ::MoleMole::Battle::Entity* caster, ::MoleMole::Battle::Entity* other, ::UnityEngine::Transform* findTargetTransform, ::Class_2_14986121AA61AD99* instancedAbility, ::MoleMole::Config::DynamicString* relativeBaseSavePoint, ::MoleMole::Config::DynamicString* relativeTargetSavePoint, ::System::Boolean useLogicPosAndRot, ::Struct_2_FC595D1A561D8C6F logicPosRot)
+		::System::Boolean GetEntityPosRotByTarget(::Struct_2_FA5F50563E60AFBA targetEntity, ::Struct_2_FA5F50563E60AFBA sourceEntity, ::MoleMole::Config::ReferTargetCoordsOption coordsOption, ::UnityEngine::Vector3& targetPos, ::UnityEngine::Quaternion& targetRot, ::UnityEngine::Transform*& targetTrans, ::Struct_2_69EDF57FCDC7C5D3& targetCoods, ::System::Boolean useDefault, ::MoleMole::Battle::Entity* caster, ::MoleMole::Battle::Entity* other, ::UnityEngine::Transform* findTargetTransform, ::Class_2_14986121AA61AD99* instancedAbility, ::MoleMole::Config::DynamicString* relativeBaseSavePoint, ::MoleMole::Config::DynamicString* relativeTargetSavePoint, ::System::Boolean useLogicPosAndRot, ::Struct_2_FC595D1A561D8C6F_1 logicPosRot)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Struct_2_FA5F50563E60AFBA, ::Struct_2_FA5F50563E60AFBA, ::MoleMole::Config::ReferTargetCoordsOption, ::UnityEngine::Vector3&, ::UnityEngine::Quaternion&, ::UnityEngine::Transform*&, ::Struct_2_69EDF57FCDC7C5D3&, ::System::Boolean, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::Transform*, ::Class_2_14986121AA61AD99*, ::MoleMole::Config::DynamicString*, ::MoleMole::Config::DynamicString*, ::System::Boolean, ::Struct_2_FC595D1A561D8C6F))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETENTITYPOSROTBYTARGET_OFFSET))(this, targetEntity, sourceEntity, coordsOption, targetPos, targetRot, targetTrans, targetCoods, useDefault, caster, other, findTargetTransform, instancedAbility, relativeBaseSavePoint, relativeTargetSavePoint, useLogicPosAndRot, logicPosRot);
+			return ((::System::Boolean(*)(::PVOID, ::Struct_2_FA5F50563E60AFBA, ::Struct_2_FA5F50563E60AFBA, ::MoleMole::Config::ReferTargetCoordsOption, ::UnityEngine::Vector3&, ::UnityEngine::Quaternion&, ::UnityEngine::Transform*&, ::Struct_2_69EDF57FCDC7C5D3&, ::System::Boolean, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::Transform*, ::Class_2_14986121AA61AD99*, ::MoleMole::Config::DynamicString*, ::MoleMole::Config::DynamicString*, ::System::Boolean, ::Struct_2_FC595D1A561D8C6F_1))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETENTITYPOSROTBYTARGET_OFFSET))(this, targetEntity, sourceEntity, coordsOption, targetPos, targetRot, targetTrans, targetCoods, useDefault, caster, other, findTargetTransform, instancedAbility, relativeBaseSavePoint, relativeTargetSavePoint, useLogicPosAndRot, logicPosRot);
 		}
 
 		::UnityEngine::Transform* GetAttachPoint(::MoleMole::Battle::Entity* sourceEntity, ::Class_2_14986121AA61AD99* instancedAbility)
@@ -77,9 +79,14 @@ namespace MoleMole::Config
 			return ((::Struct_2_FA5F50563E60AFBA(*)(::PVOID, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::Class_2_14986121AA61AD99*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETTARGETENTITY_OFFSET))(this, sourceEntity, caster, other, instancedAbility);
 		}
 
-		::System::Boolean GetSavePointPosRot(::MoleMole::Battle::Entity* sourceEntity, ::Struct_2_FC595D1A561D8C6F& posRot, ::System::Boolean& useBackUp, ::MoleMole::Config::ReferTargetCoordsOption coordsOption, ::MoleMole::Battle::Entity* caster, ::MoleMole::Config::DynamicString* relativeBaseSavePoint, ::Class_2_14986121AA61AD99* instancedAbility)
+		::System::Boolean GetSavePointPosRot(::MoleMole::Battle::Entity* sourceEntity, ::Struct_2_FC595D1A561D8C6F_1& posRot, ::System::Boolean& useBackUp, ::MoleMole::Config::ReferTargetCoordsOption coordsOption, ::MoleMole::Battle::Entity* caster, ::MoleMole::Config::DynamicString* relativeBaseSavePoint, ::Class_2_14986121AA61AD99* instancedAbility)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Battle::Entity*, ::Struct_2_FC595D1A561D8C6F&, ::System::Boolean&, ::MoleMole::Config::ReferTargetCoordsOption, ::MoleMole::Battle::Entity*, ::MoleMole::Config::DynamicString*, ::Class_2_14986121AA61AD99*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETSAVEPOINTPOSROT_OFFSET))(this, sourceEntity, posRot, useBackUp, coordsOption, caster, relativeBaseSavePoint, instancedAbility);
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Battle::Entity*, ::Struct_2_FC595D1A561D8C6F_1&, ::System::Boolean&, ::MoleMole::Config::ReferTargetCoordsOption, ::MoleMole::Battle::Entity*, ::MoleMole::Config::DynamicString*, ::Class_2_14986121AA61AD99*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETSAVEPOINTPOSROT_OFFSET))(this, sourceEntity, posRot, useBackUp, coordsOption, caster, relativeBaseSavePoint, instancedAbility);
+		}
+
+		::System::Void GetOffsetReferTarget(::MoleMole::Config::AbilityTargetting& offsetReferTarget, ::MoleMole::Config::AbilityTargetting& backupOffsetReferTarget)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::AbilityTargetting&, ::MoleMole::Config::AbilityTargetting&))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_POSROTTARGETOPTION_GETOFFSETREFERTARGET_OFFSET))(this, offsetReferTarget, backupOffsetReferTarget);
 		}
 
 		::System::Boolean FromBinary(::Class_1_236FD73ABC492E3F* byteArray, ::System::Int32 threadFlag)

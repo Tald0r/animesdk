@@ -5,11 +5,11 @@
 namespace MoleMole { class PreloadSingleGroupConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_PRELOADSINGLELEVELCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9942720)
+#define MOLEMOLE_PRELOADSINGLELEVELCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D53E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PreloadSingleLevelConfig_TypeDefinitionIndex = 64684;
+	inline static constexpr unsigned int PreloadSingleLevelConfig_TypeDefinitionIndex = 74258;
 
 	class PreloadSingleLevelConfig : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RenderingPath_TypeDefinitionIndex = 5211;
+	inline static constexpr unsigned int RenderingPath_TypeDefinitionIndex = 5212;
 
 	enum class RenderingPath : ::System::Int32
 	{

@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_283223D064E35F85_Class_1_61AE483B33052410_30;
+class Class_1_283223D064E35F85_Class_1_61AE483B33052410_61;
 namespace MoleMole::Config { class ConfigGamepadRumble; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_283223D064E35F85_CLASS_1_B53C617F5FF16D05_METHOD_1_878B4E18708395ED_OFFSET UNITYSDK_OFFSET(0xD524B30)
-#define CLASS_1_283223D064E35F85_CLASS_1_B53C617F5FF16D05__CTOR_OFFSET UNITYSDK_OFFSET(0xD524870)
+#define CLASS_1_283223D064E35F85_CLASS_1_B53C617F5FF16D05_METHOD_1_878B4E18708395ED_OFFSET UNITYSDK_OFFSET(0x795A280)
+#define CLASS_1_283223D064E35F85_CLASS_1_B53C617F5FF16D05__CTOR_OFFSET UNITYSDK_OFFSET(0x795A270)
 
-inline static constexpr unsigned int Class_1_283223D064E35F85_Class_1_B53C617F5FF16D05_TypeDefinitionIndex = 45177;
+inline static constexpr unsigned int Class_1_283223D064E35F85_Class_1_B53C617F5FF16D05_TypeDefinitionIndex = 67203;
 
 class Class_1_283223D064E35F85_Class_1_B53C617F5FF16D05 : public ::System::Object
 {
 public:
-	::System::Action_1<::MoleMole::Config::ConfigGamepadRumble*>* Field_1_2; // 0x10
-	::Class_1_283223D064E35F85_Class_1_61AE483B33052410_30* Field_1_1; // 0x18
+	::Class_1_283223D064E35F85_Class_1_61AE483B33052410_61* Field_1_1; // 0x10
+	::System::Action_1<::MoleMole::Config::ConfigGamepadRumble*>* Field_1_2; // 0x18
 	::System::Int32 Field_1_0; // 0x20
 
 	::System::Void _ctor()

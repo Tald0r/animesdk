@@ -5,12 +5,12 @@
 class Class_3_A72BA6D8C1BF0087_1;
 namespace MoleMole { class UIGalgameReviewRowWidgetController; }
 
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8A106C0)
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS21_0__PLAYAUDIOEVENTLIST_B__0_OFFSET UNITYSDK_OFFSET(0x8A106D0)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2B6BA0)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS21_0__PLAYAUDIOEVENTLIST_B__0_OFFSET UNITYSDK_OFFSET(0xB2B6BB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgameReviewRowWidgetController___c__DisplayClass21_0_TypeDefinitionIndex = 63950;
+	inline static constexpr unsigned int UIGalgameReviewRowWidgetController___c__DisplayClass21_0_TypeDefinitionIndex = 71886;
 
 	class UIGalgameReviewRowWidgetController___c__DisplayClass21_0 : public ::System::Object
 	{

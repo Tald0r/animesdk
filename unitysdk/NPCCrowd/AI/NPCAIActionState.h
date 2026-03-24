@@ -3,14 +3,14 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int NPCAIActionState_TypeDefinitionIndex = 40270;
+	inline static constexpr unsigned int NPCAIActionState_TypeDefinitionIndex = 80908;
 
 	enum class NPCAIActionState : ::System::Int32
 	{
-		Completed = 2,
 		InProgress = 1,
 		Aborted = 3,
 		Failed = 4,
 		None = 0,
+		Completed = 2,
 	};
 }

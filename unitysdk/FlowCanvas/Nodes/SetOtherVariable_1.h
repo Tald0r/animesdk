@@ -9,7 +9,7 @@ namespace System { class String; }
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SetOtherVariable_1_TypeDefinitionIndex = 26322;
+	inline static constexpr unsigned int SetOtherVariable_1_TypeDefinitionIndex = 26387;
 
 	template <typename T>
 	class SetOtherVariable_1 : public ::FlowCanvas::FlowNode

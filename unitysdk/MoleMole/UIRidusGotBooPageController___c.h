@@ -13,84 +13,84 @@ namespace System { template <typename T> class Action_1; }
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA3ECFD0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA3ED010)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__GETCURLEVELPLAYERLEVELIDS_B__286_0_OFFSET UNITYSDK_OFFSET(0xA3ED1C0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYENVTIMELINE_B__146_0_OFFSET UNITYSDK_OFFSET(0xA3ED070)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYENVTIMELINE_B__146_1_OFFSET UNITYSDK_OFFSET(0xA3ED080)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYENVTIMELINE_B__146_2_OFFSET UNITYSDK_OFFSET(0xA3ED090)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYTIMELINE_B__148_2_OFFSET UNITYSDK_OFFSET(0xA3ED0A0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__POPRESULTPAGE_B__332_0_OFFSET UNITYSDK_OFFSET(0xA3ED1F0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__POPRESULTPAGE_B__332_1_OFFSET UNITYSDK_OFFSET(0xA3ED200)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__RESETFEVERTARGETKEY_B__40_0_OFFSET UNITYSDK_OFFSET(0xA3ED020)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__RESETFEVERTARGETKEY_B__40_1_OFFSET UNITYSDK_OFFSET(0xA3ED050)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__RESETFEVERTARGETKEY_B__40_2_OFFSET UNITYSDK_OFFSET(0xA3ED060)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__SETUPPASSIVESKILLS_B__273_0_OFFSET UNITYSDK_OFFSET(0xA3ED0B0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__SETUPPASSIVESKILLS_B__273_1_OFFSET UNITYSDK_OFFSET(0xA3ED120)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__SETUPPASSIVESKILLS_B__273_2_OFFSET UNITYSDK_OFFSET(0xA3ED150)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x96E9C30)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x96E9C70)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__GETCURLEVELPLAYERLEVELIDS_B__286_0_OFFSET UNITYSDK_OFFSET(0x96E9E20)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYENVTIMELINE_B__146_0_OFFSET UNITYSDK_OFFSET(0x96E9CD0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYENVTIMELINE_B__146_1_OFFSET UNITYSDK_OFFSET(0x96E9CE0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYENVTIMELINE_B__146_2_OFFSET UNITYSDK_OFFSET(0x96E9CF0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__PLAYTIMELINE_B__148_2_OFFSET UNITYSDK_OFFSET(0x96E9D00)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__POPRESULTPAGE_B__332_0_OFFSET UNITYSDK_OFFSET(0x96E9E50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__POPRESULTPAGE_B__332_1_OFFSET UNITYSDK_OFFSET(0x96E9E60)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__RESETFEVERTARGETKEY_B__40_0_OFFSET UNITYSDK_OFFSET(0x96E9C80)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__RESETFEVERTARGETKEY_B__40_1_OFFSET UNITYSDK_OFFSET(0x96E9CB0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__RESETFEVERTARGETKEY_B__40_2_OFFSET UNITYSDK_OFFSET(0x96E9CC0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__SETUPPASSIVESKILLS_B__273_0_OFFSET UNITYSDK_OFFSET(0x96E9D10)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__SETUPPASSIVESKILLS_B__273_1_OFFSET UNITYSDK_OFFSET(0x96E9D80)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__SETUPPASSIVESKILLS_B__273_2_OFFSET UNITYSDK_OFFSET(0x96E9DB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController___c_TypeDefinitionIndex = 66333;
+	inline static constexpr unsigned int UIRidusGotBooPageController___c_TypeDefinitionIndex = 44109;
 
 	class UIRidusGotBooPageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Converter_2<::System::String*, ::System::Int32>** StaticGet___9__40_0()
-		{
-			return (::System::Converter_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30160);
-		}
-		static ::System::Converter_2<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>, ::System::Int32>** StaticGet___9__332_1()
-		{
-			return (::System::Converter_2<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30168);
-		}
 		static ::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>** StaticGet___9__273_0()
 		{
-			return (::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30170);
-		}
-		static ::System::Action** StaticGet___9__146_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30178);
-		}
-		static ::System::Predicate_1<::System::Int32>** StaticGet___9__40_1()
-		{
-			return (::System::Predicate_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30180);
+			return (::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D30);
 		}
 		static ::System::Converter_2<::System::String*, ::System::Int32>** StaticGet___9__286_0()
 		{
-			return (::System::Converter_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30188);
+			return (::System::Converter_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D38);
+		}
+		static ::System::Predicate_1<::System::Int32>** StaticGet___9__40_1()
+		{
+			return (::System::Predicate_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D40);
 		}
 		static ::System::Action** StaticGet___9__148_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30190);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D48);
 		}
-		static ::MoleMole::UIRidusGotBooPageController___c** StaticGet___9()
+		static ::System::Converter_2<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>, ::System::Int32>** StaticGet___9__332_1()
 		{
-			return (::MoleMole::UIRidusGotBooPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x30198);
-		}
-		static ::System::Func_2<::Class_1_84CF6BFB7CE697B4*, ::System::Int32>** StaticGet___9__273_1()
-		{
-			return (::System::Func_2<::Class_1_84CF6BFB7CE697B4*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x301A0);
+			return (::System::Converter_2<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D50);
 		}
 		static ::System::Action_1<::UnityEngine::Transform*>** StaticGet___9__146_0()
 		{
-			return (::System::Action_1<::UnityEngine::Transform*>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x301A8);
-		}
-		static ::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>** StaticGet___9__273_2()
-		{
-			return (::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x301B0);
-		}
-		static ::System::Predicate_1<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>>** StaticGet___9__332_0()
-		{
-			return (::System::Predicate_1<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x301B8);
+			return (::System::Action_1<::UnityEngine::Transform*>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D58);
 		}
 		static ::System::Action** StaticGet___9__146_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x301C0);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D60);
 		}
 		static ::System::Converter_2<::System::Int32, ::MoleMole::UIRidusGotBooPageController_KeyPosition>** StaticGet___9__40_2()
 		{
-			return (::System::Converter_2<::System::Int32, ::MoleMole::UIRidusGotBooPageController_KeyPosition>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x301C8);
+			return (::System::Converter_2<::System::Int32, ::MoleMole::UIRidusGotBooPageController_KeyPosition>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D68);
+		}
+		static ::System::Action** StaticGet___9__146_1()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D70);
+		}
+		static ::System::Converter_2<::System::String*, ::System::Int32>** StaticGet___9__40_0()
+		{
+			return (::System::Converter_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D78);
+		}
+		static ::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>** StaticGet___9__273_2()
+		{
+			return (::System::Predicate_1<::Class_1_84CF6BFB7CE697B4*>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D80);
+		}
+		static ::MoleMole::UIRidusGotBooPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIRidusGotBooPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D88);
+		}
+		static ::System::Func_2<::Class_1_84CF6BFB7CE697B4*, ::System::Int32>** StaticGet___9__273_1()
+		{
+			return (::System::Func_2<::Class_1_84CF6BFB7CE697B4*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D90);
+		}
+		static ::System::Predicate_1<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>>** StaticGet___9__332_0()
+		{
+			return (::System::Predicate_1<::System::Collections::Generic::KeyValuePair_2<::System::Int32, ::System::Boolean>>**)Il2CppClass::FromTypeDefinitionIndex(UIRidusGotBooPageController___c_TypeDefinitionIndex)->GetStaticField(0x31D98);
 		}
 
 		static ::System::Void _cctor()

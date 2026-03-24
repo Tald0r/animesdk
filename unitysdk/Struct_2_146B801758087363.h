@@ -8,12 +8,12 @@ namespace MoleMole { class UIAvatarLightSetting; }
 namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class Transform; }
 
-#define STRUCT_2_146B801758087363_METHOD_2_45A28948EFC6A77D_OFFSET UNITYSDK_OFFSET(0x2FE350)
-#define STRUCT_2_146B801758087363_METHOD_2_570C5557A774C69E_OFFSET UNITYSDK_OFFSET(0x2FE290)
-#define STRUCT_2_146B801758087363_METHOD_2_D37CCCD272A7FD3E_OFFSET UNITYSDK_OFFSET(0x2FE330)
-#define STRUCT_2_146B801758087363_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x2CF9F0)
+#define STRUCT_2_146B801758087363_METHOD_2_45A28948EFC6A77D_OFFSET UNITYSDK_OFFSET(0x325520)
+#define STRUCT_2_146B801758087363_METHOD_2_570C5557A774C69E_OFFSET UNITYSDK_OFFSET(0x325540)
+#define STRUCT_2_146B801758087363_METHOD_2_D37CCCD272A7FD3E_OFFSET UNITYSDK_OFFSET(0x3255E0)
+#define STRUCT_2_146B801758087363_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x3076B0)
 
-inline static constexpr unsigned int Struct_2_146B801758087363_TypeDefinitionIndex = 36886;
+inline static constexpr unsigned int Struct_2_146B801758087363_TypeDefinitionIndex = 49240;
 
 struct alignas(8) Struct_2_146B801758087363
 {
@@ -23,6 +23,11 @@ struct alignas(8) Struct_2_146B801758087363
 	::UnityEngine::Quaternion Field_2_3; // 0x1C
 	::UnityEngine::Quaternion Field_2_4; // 0x2C
 	::UnityEngine::AnimationCurve* Field_2_5; // 0x40
+
+	::UnityEngine::Quaternion Method_2_45A28948EFC6A77D(::System::Single a1, ::UnityEngine::Transform* a2)
+	{
+		return ((::UnityEngine::Quaternion(*)(::PVOID, ::System::Single, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + STRUCT_2_146B801758087363_METHOD_2_45A28948EFC6A77D_OFFSET))(this, a1, a2);
+	}
 
 	::System::Single Method_2_570C5557A774C69E(::System::Single a1)
 	{
@@ -37,10 +42,5 @@ struct alignas(8) Struct_2_146B801758087363
 	::System::Boolean Method_2_F0088C88851A7DFB()
 	{
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_146B801758087363_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
-	}
-
-	::UnityEngine::Quaternion Method_2_45A28948EFC6A77D(::System::Single a1, ::UnityEngine::Transform* a2)
-	{
-		return ((::UnityEngine::Quaternion(*)(::PVOID, ::System::Single, ::UnityEngine::Transform*))((::PBYTE)hIl2Cpp + STRUCT_2_146B801758087363_METHOD_2_45A28948EFC6A77D_OFFSET))(this, a1, a2);
 	}
 };

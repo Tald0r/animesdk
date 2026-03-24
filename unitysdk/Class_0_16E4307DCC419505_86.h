@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class String; }
+namespace System::Collections::Generic { template <typename T1, typename T2> class IDictionary_2; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_86_TypeDefinitionIndex = 25092;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_86_TypeDefinitionIndex = 25936;
 
+template <typename TKey, typename TSubKey, typename TValue>
 class Class_0_16E4307DCC419505_86
 {
 public:

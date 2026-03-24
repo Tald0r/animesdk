@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ShadowResolution_TypeDefinitionIndex = 5225;
+	inline static constexpr unsigned int ShadowResolution_TypeDefinitionIndex = 5226;
 
 	enum class ShadowResolution : ::System::Int32
 	{

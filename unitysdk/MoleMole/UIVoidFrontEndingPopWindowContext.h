@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIVOIDFRONTENDINGPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8821370)
+#define MOLEMOLE_UIVOIDFRONTENDINGPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xABCE5A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVoidFrontEndingPopWindowContext_TypeDefinitionIndex = 56559;
+	inline static constexpr unsigned int UIVoidFrontEndingPopWindowContext_TypeDefinitionIndex = 70464;
 
 	class UIVoidFrontEndingPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Int32 ID; // 0x28
-		::System::Boolean IsShowRecord; // 0x2C
+		::System::Boolean IsShowRecord; // 0x28
+		::System::Int32 ID; // 0x2C
 
 		::System::Void _ctor()
 		{

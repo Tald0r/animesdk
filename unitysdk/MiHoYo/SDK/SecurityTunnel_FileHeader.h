@@ -4,25 +4,25 @@
 
 namespace System { class String; }
 
-#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER_GET_DIRECTORY_OFFSET UNITYSDK_OFFSET(0x16E9C650)
-#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER_GET_PATH_OFFSET UNITYSDK_OFFSET(0x16E95310)
-#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x16E9C780)
-#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x16E9C490)
-#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER__CTOR_OFFSET UNITYSDK_OFFSET(0x16E95A50)
+#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER_GET_DIRECTORY_OFFSET UNITYSDK_OFFSET(0x17600050)
+#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER_GET_PATH_OFFSET UNITYSDK_OFFSET(0x175F8D00)
+#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17600180)
+#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x175FFE90)
+#define MIHOYO_SDK_SECURITYTUNNEL_FILEHEADER__CTOR_OFFSET UNITYSDK_OFFSET(0x175F9440)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int SecurityTunnel_FileHeader_TypeDefinitionIndex = 33689;
+	inline static constexpr unsigned int SecurityTunnel_FileHeader_TypeDefinitionIndex = 34662;
 
 	class SecurityTunnel_FileHeader : public ::System::Object
 	{
 	public:
-		::System::String* Name; // 0x10
+		::System::String* Md5; // 0x10
 		::System::String* LocalPath; // 0x18
 		::Il2CppArray<::System::Byte>* MD5Hash; // 0x20
-		::System::String* Md5; // 0x28
-		::System::UInt64 ID; // 0x30
-		::System::UInt64 Length; // 0x38
+		::System::String* Name; // 0x28
+		::System::UInt64 Length; // 0x30
+		::System::UInt64 ID; // 0x38
 
 		::System::Void _ctor()
 		{

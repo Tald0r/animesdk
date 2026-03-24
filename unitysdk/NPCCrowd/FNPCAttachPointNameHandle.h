@@ -4,20 +4,20 @@
 
 namespace System { class String; }
 
-#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE_ISINVALID_OFFSET UNITYSDK_OFFSET(0x36F9A0)
-#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x9BCDC50)
-#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x2D3600)
-#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0x36F900)
+#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE_ISINVALID_OFFSET UNITYSDK_OFFSET(0x351540)
+#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x8490010)
+#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x302300)
+#define NPCCROWD_FNPCATTACHPOINTNAMEHANDLE__CTOR_OFFSET UNITYSDK_OFFSET(0x3514A0)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int FNPCAttachPointNameHandle_TypeDefinitionIndex = 52494;
+	inline static constexpr unsigned int FNPCAttachPointNameHandle_TypeDefinitionIndex = 76420;
 
 	struct alignas(4) FNPCAttachPointNameHandle
 	{
 		static ::System::Int32* StaticGet_INVALID_ID()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(FNPCAttachPointNameHandle_TypeDefinitionIndex)->GetStaticField(0xE920);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(FNPCAttachPointNameHandle_TypeDefinitionIndex)->GetStaticField(0xF0F0);
 		}
 		::System::Int32 NameHashID; // 0x10
 

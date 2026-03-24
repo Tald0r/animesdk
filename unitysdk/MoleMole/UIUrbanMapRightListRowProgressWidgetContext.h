@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIURBANMAPRIGHTLISTROWPROGRESSWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xACD8F30)
+#define MOLEMOLE_UIURBANMAPRIGHTLISTROWPROGRESSWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x86B7120)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapRightListRowProgressWidgetContext_TypeDefinitionIndex = 77470;
+	inline static constexpr unsigned int UIUrbanMapRightListRowProgressWidgetContext_TypeDefinitionIndex = 75571;
 
 	class UIUrbanMapRightListRowProgressWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

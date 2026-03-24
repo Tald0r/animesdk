@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define CLASS_2_0C3277E64DD2F79B_UIDAILYCHALLENGEPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA69F9C0)
+#define CLASS_2_0C3277E64DD2F79B_UIDAILYCHALLENGEPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x69CBF60)
 
-inline static constexpr unsigned int Class_2_0C3277E64DD2F79B_UIDailyChallengePageContext_TypeDefinitionIndex = 64327;
+inline static constexpr unsigned int Class_2_0C3277E64DD2F79B_UIDailyChallengePageContext_TypeDefinitionIndex = 81049;
 
 class Class_2_0C3277E64DD2F79B_UIDailyChallengePageContext : public ::MoleMole::UIControllerContextBase
 {

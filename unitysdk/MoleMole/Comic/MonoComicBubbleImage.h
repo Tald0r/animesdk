@@ -20,49 +20,49 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Sprite; }
 namespace UnityEngine::UI { class VertexHelper; }
 
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_INITGRAPHICPARAMS_OFFSET UNITYSDK_OFFSET(0xC327920)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_INITIMGCONFIG_OFFSET UNITYSDK_OFFSET(0xC32BB50)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_1B66B34E0C58BC56_OFFSET UNITYSDK_OFFSET(0xC328480)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_24CC767C63894B07_OFFSET UNITYSDK_OFFSET(0xC32BFD0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xC327E20)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_1_OFFSET UNITYSDK_OFFSET(0xC32BAD0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_2_OFFSET UNITYSDK_OFFSET(0xC3294A0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_3_OFFSET UNITYSDK_OFFSET(0xC327E90)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0xC3283F0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4411199993DF6425_OFFSET UNITYSDK_OFFSET(0xC32C7C0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4B52176A6D5FB435_OFFSET UNITYSDK_OFFSET(0xC32F770)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_5FB96F24B721AEA4_OFFSET UNITYSDK_OFFSET(0xC330170)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_62167C28EC14CC63_OFFSET UNITYSDK_OFFSET(0xC327A90)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_6DB41C3EEBB33D1B_OFFSET UNITYSDK_OFFSET(0xC32D1E0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_6F9D91E74E1A1712_OFFSET UNITYSDK_OFFSET(0xC32C510)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_7BC6179181D7B050_OFFSET UNITYSDK_OFFSET(0xC32C410)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_95A91FDC3076B1C3_OFFSET UNITYSDK_OFFSET(0xC329540)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_9FE9FDBBA485CA6E_OFFSET UNITYSDK_OFFSET(0xC32C8C0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A23131F66C6A15C2_OFFSET UNITYSDK_OFFSET(0xC32F480)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A7AAACFF88243D85_OFFSET UNITYSDK_OFFSET(0xC32C780)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_CB1C9D48897FC6C6_OFFSET UNITYSDK_OFFSET(0xC32F960)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D5D82F7752891AF2_OFFSET UNITYSDK_OFFSET(0xC32CE00)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D8E8A2AA5D1E44E6_OFFSET UNITYSDK_OFFSET(0xC32C340)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_DE7CF4FAEAA6D373_OFFSET UNITYSDK_OFFSET(0xC32D060)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_ED23625483EB73ED_OFFSET UNITYSDK_OFFSET(0xC328F40)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_F6FD2E653D0EF4CE_OFFSET UNITYSDK_OFFSET(0xC32F3B0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FA56723697B9BABB_OFFSET UNITYSDK_OFFSET(0xC32B1F0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FD2C657B5478CBD4_OFFSET UNITYSDK_OFFSET(0xC32BDC0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_ONPOPULATEMESH_OFFSET UNITYSDK_OFFSET(0xC327F20)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE__CCTOR_OFFSET UNITYSDK_OFFSET(0xC32BCD0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE__CTOR_OFFSET UNITYSDK_OFFSET(0xC32BBC0)
-#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE___BASE_ONPOPULATEMESH_OFFSET UNITYSDK_OFFSET(0xC32BDB0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_INITGRAPHICPARAMS_OFFSET UNITYSDK_OFFSET(0x9BAF460)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_INITIMGCONFIG_OFFSET UNITYSDK_OFFSET(0x9BB3680)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_1B66B34E0C58BC56_OFFSET UNITYSDK_OFFSET(0x9BAFFC0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_24CC767C63894B07_OFFSET UNITYSDK_OFFSET(0x9BB3930)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x9BAF960)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_1_OFFSET UNITYSDK_OFFSET(0x9BAFF30)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_2_OFFSET UNITYSDK_OFFSET(0x9BAF9D0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_3_OFFSET UNITYSDK_OFFSET(0x9BB0FD0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x9BB3600)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4411199993DF6425_OFFSET UNITYSDK_OFFSET(0x9BB40E0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4B52176A6D5FB435_OFFSET UNITYSDK_OFFSET(0x9BB5740)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_5FB96F24B721AEA4_OFFSET UNITYSDK_OFFSET(0x9BB4940)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_62167C28EC14CC63_OFFSET UNITYSDK_OFFSET(0x9BAF5D0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_6DB41C3EEBB33D1B_OFFSET UNITYSDK_OFFSET(0x9BB5930)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_6F9D91E74E1A1712_OFFSET UNITYSDK_OFFSET(0x9BB3E70)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_7BC6179181D7B050_OFFSET UNITYSDK_OFFSET(0x9BB3D70)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_95A91FDC3076B1C3_OFFSET UNITYSDK_OFFSET(0x9BB1070)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_9FE9FDBBA485CA6E_OFFSET UNITYSDK_OFFSET(0x9BB7D40)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A23131F66C6A15C2_OFFSET UNITYSDK_OFFSET(0x9BB41E0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A7AAACFF88243D85_OFFSET UNITYSDK_OFFSET(0x9BB38F0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_CB1C9D48897FC6C6_OFFSET UNITYSDK_OFFSET(0x9BB4F30)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D5D82F7752891AF2_OFFSET UNITYSDK_OFFSET(0x9BB46E0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D8E8A2AA5D1E44E6_OFFSET UNITYSDK_OFFSET(0x9BB3CA0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_DE7CF4FAEAA6D373_OFFSET UNITYSDK_OFFSET(0x9BB7AF0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_ED23625483EB73ED_OFFSET UNITYSDK_OFFSET(0x9BB0A80)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_F6FD2E653D0EF4CE_OFFSET UNITYSDK_OFFSET(0x9BB7C70)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FA56723697B9BABB_OFFSET UNITYSDK_OFFSET(0x9BB2D20)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FD2C657B5478CBD4_OFFSET UNITYSDK_OFFSET(0x9BB44D0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_ONPOPULATEMESH_OFFSET UNITYSDK_OFFSET(0x9BAFA60)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE__CCTOR_OFFSET UNITYSDK_OFFSET(0x9BB3800)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x9BB36F0)
+#define MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE___BASE_ONPOPULATEMESH_OFFSET UNITYSDK_OFFSET(0x9BB38E0)
 
 namespace MoleMole::Comic
 {
-	inline static constexpr unsigned int MonoComicBubbleImage_TypeDefinitionIndex = 67661;
+	inline static constexpr unsigned int MonoComicBubbleImage_TypeDefinitionIndex = 52312;
 
 	class MonoComicBubbleImage : public ::UnityEngine::UI::Image
 	{
 	public:
 		static ::Il2CppArray<::UnityEngine::Vector2>** StaticGet_Field_9_7()
 		{
-			return (::Il2CppArray<::UnityEngine::Vector2>**)Il2CppClass::FromTypeDefinitionIndex(MonoComicBubbleImage_TypeDefinitionIndex)->GetStaticField(0x421A0);
+			return (::Il2CppArray<::UnityEngine::Vector2>**)Il2CppClass::FromTypeDefinitionIndex(MonoComicBubbleImage_TypeDefinitionIndex)->GetStaticField(0x42C60);
 		}
 		::System::Single r; // 0x140
 		::System::Int32 precision; // 0x144
@@ -121,9 +121,9 @@ namespace MoleMole::Comic
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE___BASE_ONPOPULATEMESH_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_9_1B66B34E0C58BC56(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector4 a2, ::UnityEngine::Vector2 a3, ::UnityEngine::Color32 a4)
+		static ::UnityEngine::Vector2 Method_9_A7AAACFF88243D85(::UnityEngine::Vector2 a1, ::UnityEngine::Vector2 a2, ::System::Single a3)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_1B66B34E0C58BC56_OFFSET))(this, a1, a2, a3, a4);
+			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::UnityEngine::Vector2, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A7AAACFF88243D85_OFFSET))(a1, a2, a3);
 		}
 
 		::System::Void Method_9_24CC767C63894B07(::UnityEngine::Rect a1)
@@ -131,19 +131,9 @@ namespace MoleMole::Comic
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_24CC767C63894B07_OFFSET))(this, a1);
 		}
 
-		static ::UnityEngine::Vector2 Method_9_A7AAACFF88243D85(::UnityEngine::Vector2 a1, ::UnityEngine::Vector2 a2, ::System::Single a3)
+		::System::Boolean Method_9_391A84BCD9F51317()
 		{
-			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::UnityEngine::Vector2, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A7AAACFF88243D85_OFFSET))(a1, a2, a3);
-		}
-
-		static ::UnityEngine::Vector2 Method_9_4411199993DF6425(::UnityEngine::Vector2 a1, ::System::Single a2, ::System::Single a3, ::System::Single a4, ::System::Boolean a5)
-		{
-			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::System::Single, ::System::Single, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4411199993DF6425_OFFSET))(a1, a2, a3, a4, a5);
-		}
-
-		::System::Int32 Method_9_7BC6179181D7B050(::UnityEngine::Rect a1)
-		{
-			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_7BC6179181D7B050_OFFSET))(this, a1);
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_391A84BCD9F51317_OFFSET))(this);
 		}
 
 		::System::Void Method_9_4343F372F34C05BF()
@@ -151,9 +141,9 @@ namespace MoleMole::Comic
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_OFFSET))(this);
 		}
 
-		::System::Boolean Method_9_391A84BCD9F51317()
+		static ::UnityEngine::Vector2 Method_9_4411199993DF6425(::UnityEngine::Vector2 a1, ::System::Single a2, ::System::Single a3, ::System::Single a4, ::System::Boolean a5)
 		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_391A84BCD9F51317_OFFSET))(this);
+			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::System::Single, ::System::Single, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4411199993DF6425_OFFSET))(a1, a2, a3, a4, a5);
 		}
 
 		::System::Void Method_9_4343F372F34C05BF_1()
@@ -161,9 +151,9 @@ namespace MoleMole::Comic
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_1_OFFSET))(this);
 		}
 
-		::System::Void Method_9_9FE9FDBBA485CA6E(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::UnityEngine::Vector4 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Color32 a5, ::UnityEngine::Rect a6)
+		static ::UnityEngine::Vector2 Method_9_A23131F66C6A15C2(::UnityEngine::Vector2 a1, ::System::Single a2, ::UnityEngine::Vector2 a3, ::System::Boolean a4, ::System::Single a5)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_9FE9FDBBA485CA6E_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::System::Single, ::UnityEngine::Vector2, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A23131F66C6A15C2_OFFSET))(a1, a2, a3, a4, a5);
 		}
 
 		::System::Void Method_9_4343F372F34C05BF_2()
@@ -171,9 +161,84 @@ namespace MoleMole::Comic
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_2_OFFSET))(this);
 		}
 
+		::System::Void Method_9_95A91FDC3076B1C3(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector4 a2, ::UnityEngine::Vector2 a3, ::UnityEngine::Color32 a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_95A91FDC3076B1C3_OFFSET))(this, a1, a2, a3, a4);
+		}
+
 		::UnityEngine::Vector2 Method_9_D5D82F7752891AF2(::System::Single a1, ::System::Boolean a2, ::System::Single& a3, ::MoleMole::Comic::MonoComicBubbleImage_Struct_2_D7E5D2F89431C32A& a4)
 		{
 			return ((::UnityEngine::Vector2(*)(::PVOID, ::System::Single, ::System::Boolean, ::System::Single&, ::MoleMole::Comic::MonoComicBubbleImage_Struct_2_D7E5D2F89431C32A&))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D5D82F7752891AF2_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Void Method_9_FA56723697B9BABB(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::UnityEngine::Vector4 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Color32 a5, ::UnityEngine::Rect a6)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FA56723697B9BABB_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+		}
+
+		::System::Int32 Method_9_D8E8A2AA5D1E44E6(::UnityEngine::Rect a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D8E8A2AA5D1E44E6_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_9_62167C28EC14CC63()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_62167C28EC14CC63_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector2 Method_9_5FB96F24B721AEA4(::UnityEngine::Vector2 a1, ::UnityEngine::Vector4 a2, ::System::Single a3, ::System::Single& a4)
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::System::Single, ::System::Single&))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_5FB96F24B721AEA4_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Void Method_9_CB1C9D48897FC6C6(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::System::Single a3, ::System::Single a4, ::System::Single a5, ::UnityEngine::Color32 a6)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::Color32))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_CB1C9D48897FC6C6_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+		}
+
+		::System::Void Method_9_ED23625483EB73ED(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::UnityEngine::Vector4 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Color32 a5, ::UnityEngine::Rect a6)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_ED23625483EB73ED_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+		}
+
+		static ::System::Void Method_9_DE7CF4FAEAA6D373(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Color32 a2, ::UnityEngine::Vector2 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Vector2 a5)
+		{
+			return ((::System::Void(*)(::UnityEngine::UI::VertexHelper*, ::UnityEngine::Color32, ::UnityEngine::Vector2, ::UnityEngine::Vector2, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_DE7CF4FAEAA6D373_OFFSET))(a1, a2, a3, a4, a5);
+		}
+
+		static ::System::Void Method_9_FD2C657B5478CBD4(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector3 a2, ::UnityEngine::Vector3 a3, ::UnityEngine::Vector3 a4)
+		{
+			return ((::System::Void(*)(::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FD2C657B5478CBD4_OFFSET))(a1, a2, a3, a4);
+		}
+
+		::System::Int32 Method_9_7BC6179181D7B050(::UnityEngine::Rect a1)
+		{
+			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_7BC6179181D7B050_OFFSET))(this, a1);
+		}
+
+		static ::UnityEngine::Vector2 Method_9_F6FD2E653D0EF4CE(::System::Single a1, ::System::Single a2, ::System::Single a3, ::System::Single a4)
+		{
+			return ((::UnityEngine::Vector2(*)(::System::Single, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_F6FD2E653D0EF4CE_OFFSET))(a1, a2, a3, a4);
+		}
+
+		::System::Void Method_9_1B66B34E0C58BC56(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector4 a2, ::UnityEngine::Vector2 a3, ::UnityEngine::Color32 a4)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_1B66B34E0C58BC56_OFFSET))(this, a1, a2, a3, a4);
+		}
+
+		::System::Void Method_9_9FE9FDBBA485CA6E(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::UnityEngine::Vector4 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Color32 a5, ::UnityEngine::Rect a6)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_9FE9FDBBA485CA6E_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+		}
+
+		::System::Void Method_9_4343F372F34C05BF_3()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_3_OFFSET))(this);
+		}
+
+		::UnityEngine::Sprite* Method_9_6F9D91E74E1A1712(::System::Collections::Generic::Dictionary_2<::MoleMole::Comic::ComicBubbleImgType, ::MoleMole::Comic::ComicBubbleImgTypePicConfig*>* a1, ::MoleMole::Comic::ComicBubbleImgType a2, ::System::String* a3)
+		{
+			return ((::UnityEngine::Sprite*(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::MoleMole::Comic::ComicBubbleImgType, ::MoleMole::Comic::ComicBubbleImgTypePicConfig*>*, ::MoleMole::Comic::ComicBubbleImgType, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_6F9D91E74E1A1712_OFFSET))(this, a1, a2, a3);
 		}
 
 		::System::Void Method_9_6DB41C3EEBB33D1B(::System::Single a1, ::System::Single a2, ::UnityEngine::Vector2 a3, ::MoleMole::Comic::MonoComicBubbleImage_Struct_2_B97ADA5A37E1598F& a4)
@@ -184,71 +249,6 @@ namespace MoleMole::Comic
 		::System::Single Method_9_4B52176A6D5FB435(::UnityEngine::Vector2 a1, ::UnityEngine::Vector2 a2)
 		{
 			return ((::System::Single(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4B52176A6D5FB435_OFFSET))(this, a1, a2);
-		}
-
-		static ::UnityEngine::Vector2 Method_9_A23131F66C6A15C2(::UnityEngine::Vector2 a1, ::System::Single a2, ::UnityEngine::Vector2 a3, ::System::Boolean a4, ::System::Single a5)
-		{
-			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::System::Single, ::UnityEngine::Vector2, ::System::Boolean, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_A23131F66C6A15C2_OFFSET))(a1, a2, a3, a4, a5);
-		}
-
-		::System::Void Method_9_ED23625483EB73ED(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::UnityEngine::Vector4 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Color32 a5, ::UnityEngine::Rect a6)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_ED23625483EB73ED_OFFSET))(this, a1, a2, a3, a4, a5, a6);
-		}
-
-		::System::Void Method_9_62167C28EC14CC63()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_62167C28EC14CC63_OFFSET))(this);
-		}
-
-		static ::System::Void Method_9_DE7CF4FAEAA6D373(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Color32 a2, ::UnityEngine::Vector2 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Vector2 a5)
-		{
-			return ((::System::Void(*)(::UnityEngine::UI::VertexHelper*, ::UnityEngine::Color32, ::UnityEngine::Vector2, ::UnityEngine::Vector2, ::UnityEngine::Vector2))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_DE7CF4FAEAA6D373_OFFSET))(a1, a2, a3, a4, a5);
-		}
-
-		::System::Int32 Method_9_D8E8A2AA5D1E44E6(::UnityEngine::Rect a1)
-		{
-			return ((::System::Int32(*)(::PVOID, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_D8E8A2AA5D1E44E6_OFFSET))(this, a1);
-		}
-
-		static ::UnityEngine::Vector2 Method_9_F6FD2E653D0EF4CE(::System::Single a1, ::System::Single a2, ::System::Single a3, ::System::Single a4)
-		{
-			return ((::UnityEngine::Vector2(*)(::System::Single, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_F6FD2E653D0EF4CE_OFFSET))(a1, a2, a3, a4);
-		}
-
-		static ::System::Void Method_9_FD2C657B5478CBD4(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector3 a2, ::UnityEngine::Vector3 a3, ::UnityEngine::Vector3 a4)
-		{
-			return ((::System::Void(*)(::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FD2C657B5478CBD4_OFFSET))(a1, a2, a3, a4);
-		}
-
-		::System::Void Method_9_CB1C9D48897FC6C6(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::System::Single a3, ::System::Single a4, ::System::Single a5, ::UnityEngine::Color32 a6)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::Color32))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_CB1C9D48897FC6C6_OFFSET))(this, a1, a2, a3, a4, a5, a6);
-		}
-
-		::System::Void Method_9_FA56723697B9BABB(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector2 a2, ::UnityEngine::Vector4 a3, ::UnityEngine::Vector2 a4, ::UnityEngine::Color32 a5, ::UnityEngine::Rect a6)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32, ::UnityEngine::Rect))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_FA56723697B9BABB_OFFSET))(this, a1, a2, a3, a4, a5, a6);
-		}
-
-		::UnityEngine::Vector2 Method_9_5FB96F24B721AEA4(::UnityEngine::Vector2 a1, ::UnityEngine::Vector4 a2, ::System::Single a3, ::System::Single& a4)
-		{
-			return ((::UnityEngine::Vector2(*)(::PVOID, ::UnityEngine::Vector2, ::UnityEngine::Vector4, ::System::Single, ::System::Single&))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_5FB96F24B721AEA4_OFFSET))(this, a1, a2, a3, a4);
-		}
-
-		::System::Void Method_9_4343F372F34C05BF_3()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_4343F372F34C05BF_3_OFFSET))(this);
-		}
-
-		::System::Void Method_9_95A91FDC3076B1C3(::UnityEngine::UI::VertexHelper* a1, ::UnityEngine::Vector4 a2, ::UnityEngine::Vector2 a3, ::UnityEngine::Color32 a4)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::UI::VertexHelper*, ::UnityEngine::Vector4, ::UnityEngine::Vector2, ::UnityEngine::Color32))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_95A91FDC3076B1C3_OFFSET))(this, a1, a2, a3, a4);
-		}
-
-		::UnityEngine::Sprite* Method_9_6F9D91E74E1A1712(::System::Collections::Generic::Dictionary_2<::MoleMole::Comic::ComicBubbleImgType, ::MoleMole::Comic::ComicBubbleImgTypePicConfig*>* a1, ::MoleMole::Comic::ComicBubbleImgType a2, ::System::String* a3)
-		{
-			return ((::UnityEngine::Sprite*(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::MoleMole::Comic::ComicBubbleImgType, ::MoleMole::Comic::ComicBubbleImgTypePicConfig*>*, ::MoleMole::Comic::ComicBubbleImgType, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_COMIC_MONOCOMICBUBBLEIMAGE_METHOD_9_6F9D91E74E1A1712_OFFSET))(this, a1, a2, a3);
 		}
 	};
 }

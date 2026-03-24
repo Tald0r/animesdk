@@ -3,24 +3,24 @@
 #include "unitysdk/Enum_3_2FB1A61CD43E8B89.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_GET_ID_OFFSET UNITYSDK_OFFSET(0xBEA8030)
-#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_GET_ROLEJOINTIPSTYPE_OFFSET UNITYSDK_OFFSET(0xBEA8010)
-#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_SET_ID_OFFSET UNITYSDK_OFFSET(0xBEA8040)
-#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_SET_ROLEJOINTIPSTYPE_OFFSET UNITYSDK_OFFSET(0xBEA8020)
-#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBEA8050)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_GET_ID_OFFSET UNITYSDK_OFFSET(0xA69CC70)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_GET_ROLEJOINTIPSTYPE_OFFSET UNITYSDK_OFFSET(0xA69CC50)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_SET_ID_OFFSET UNITYSDK_OFFSET(0xA69CC80)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT_SET_ROLEJOINTIPSTYPE_OFFSET UNITYSDK_OFFSET(0xA69CC60)
+#define MOLEMOLE_UIROLEJOINTIPSPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA69CC90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleJoinTipsPopWindowContext_TypeDefinitionIndex = 51545;
+	inline static constexpr unsigned int UIRoleJoinTipsPopWindowContext_TypeDefinitionIndex = 40936;
 
 	class UIRoleJoinTipsPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::Enum_3_2FB1A61CD43E8B89 _RoleJoinTipsType_k__BackingField; // 0x28
-		::System::Int32 _ID_k__BackingField; // 0x2C
-		::System::Boolean ShowGoBtn; // 0x30
-		::System::Boolean ShowOKBtn; // 0x31
-		::System::Boolean ShowCancelBtn; // 0x32
+		::System::Boolean ShowCancelBtn; // 0x2C
+		::System::Boolean ShowOKBtn; // 0x2D
+		::System::Boolean ShowGoBtn; // 0x2E
+		::System::Int32 _ID_k__BackingField; // 0x30
 
 		::System::Void _ctor(::Enum_3_2FB1A61CD43E8B89 type, ::System::Int32 id, ::System::Boolean showOK, ::System::Boolean showCancel, ::System::Boolean showGo)
 		{

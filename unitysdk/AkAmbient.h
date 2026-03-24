@@ -12,24 +12,24 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define AKAMBIENT_BUILDAKPOSITIONARRAY_OFFSET UNITYSDK_OFFSET(0x1ADDECD0)
-#define AKAMBIENT_BUILDMULTIDIRECTIONARRAY_OFFSET UNITYSDK_OFFSET(0x1ADDE630)
-#define AKAMBIENT_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x1ADDF2C0)
-#define AKAMBIENT_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1ADDF060)
-#define AKAMBIENT_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1ADDF4C0)
-#define AKAMBIENT_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1ADDE1A0)
-#define AKAMBIENT_START_OFFSET UNITYSDK_OFFSET(0x1ADDEB00)
-#define AKAMBIENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADDF590)
-#define AKAMBIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADDF580)
+#define AKAMBIENT_BUILDAKPOSITIONARRAY_OFFSET UNITYSDK_OFFSET(0x1B3FA780)
+#define AKAMBIENT_BUILDMULTIDIRECTIONARRAY_OFFSET UNITYSDK_OFFSET(0x1B3FA0E0)
+#define AKAMBIENT_HANDLEEVENT_OFFSET UNITYSDK_OFFSET(0x1B3FAD70)
+#define AKAMBIENT_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1B3FAB10)
+#define AKAMBIENT_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1B3FAF70)
+#define AKAMBIENT_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1B3F9C60)
+#define AKAMBIENT_START_OFFSET UNITYSDK_OFFSET(0x1B3FA5B0)
+#define AKAMBIENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B3FB040)
+#define AKAMBIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3FB030)
 
-inline static constexpr unsigned int AkAmbient_TypeDefinitionIndex = 30098;
+inline static constexpr unsigned int AkAmbient_TypeDefinitionIndex = 31051;
 
 class AkAmbient : public ::AkEvent
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::AkMultiPosEvent*>** StaticGet_multiPosEventTree()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::AkMultiPosEvent*>**)Il2CppClass::FromTypeDefinitionIndex(AkAmbient_TypeDefinitionIndex)->GetStaticField(0x23430);
+		return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::AkMultiPosEvent*>**)Il2CppClass::FromTypeDefinitionIndex(AkAmbient_TypeDefinitionIndex)->GetStaticField(0x24D50);
 	}
 	::AkMultiPositionType MultiPositionType; // 0x90
 	::MultiPositionTypeLabel multiPositionTypeLabel; // 0x94

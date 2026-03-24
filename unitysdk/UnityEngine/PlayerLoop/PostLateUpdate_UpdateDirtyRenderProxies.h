@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int PostLateUpdate_UpdateDirtyRenderProxies_TypeDefinitionIndex = 5638;
+	inline static constexpr unsigned int PostLateUpdate_UpdateDirtyRenderProxies_TypeDefinitionIndex = 5641;
 
 	struct alignas(1) PostLateUpdate_UpdateDirtyRenderProxies
 	{

@@ -3,12 +3,12 @@
 #include "unitysdk/BehaviorDesigner/Runtime/SharedVariable_1.h"
 #include "unitysdk/UnityEngine/Vector2Int.h"
 
-#define BEHAVIORDESIGNER_RUNTIME_SHAREDVECTOR2INT_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1AC6E7D0)
-#define BEHAVIORDESIGNER_RUNTIME_SHAREDVECTOR2INT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC6E870)
+#define BEHAVIORDESIGNER_RUNTIME_SHAREDVECTOR2INT_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1B287D60)
+#define BEHAVIORDESIGNER_RUNTIME_SHAREDVECTOR2INT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B287E00)
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int SharedVector2Int_TypeDefinitionIndex = 30266;
+	inline static constexpr unsigned int SharedVector2Int_TypeDefinitionIndex = 31218;
 
 	class SharedVector2Int : public ::BehaviorDesigner::Runtime::SharedVariable_1<::UnityEngine::Vector2Int>
 	{

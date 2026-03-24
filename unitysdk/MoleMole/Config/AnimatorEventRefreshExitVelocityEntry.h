@@ -4,12 +4,12 @@
 
 namespace MoleMole::Config { class AnimatorEvent; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTREFRESHEXITVELOCITYENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x13F81CD0)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTREFRESHEXITVELOCITYENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x13F81D70)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTREFRESHEXITVELOCITYENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xF2BB740)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTREFRESHEXITVELOCITYENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xF2BB7E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventRefreshExitVelocityEntry_TypeDefinitionIndex = 43981;
+	inline static constexpr unsigned int AnimatorEventRefreshExitVelocityEntry_TypeDefinitionIndex = 67521;
 
 	class AnimatorEventRefreshExitVelocityEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{

@@ -6,12 +6,12 @@
 namespace System { class Object; }
 namespace System { class String; }
 
-#define ROOTMOTION_SHOWLARGEHEADERIF__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AD01460)
-#define ROOTMOTION_SHOWLARGEHEADERIF__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD013D0)
+#define ROOTMOTION_SHOWLARGEHEADERIF__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B314050)
+#define ROOTMOTION_SHOWLARGEHEADERIF__CTOR_OFFSET UNITYSDK_OFFSET(0x1B313FC0)
 
 namespace RootMotion
 {
-	inline static constexpr unsigned int ShowLargeHeaderIf_TypeDefinitionIndex = 34993;
+	inline static constexpr unsigned int ShowLargeHeaderIf_TypeDefinitionIndex = 35995;
 
 	class ShowLargeHeaderIf : public ::RootMotion::ShowIfAttribute
 	{

@@ -9,20 +9,20 @@ namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UIDynamicNumberLabel; }
 namespace UnityEngine::UI::Extension { class UIImgText; }
 
-#define CLASS_2_0126C9BF9ED3F165_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x9066760)
-#define CLASS_2_0126C9BF9ED3F165_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9066870)
-#define CLASS_2_0126C9BF9ED3F165__CTOR_OFFSET UNITYSDK_OFFSET(0x9066860)
+#define CLASS_2_0126C9BF9ED3F165_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x6B85D00)
+#define CLASS_2_0126C9BF9ED3F165_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6B85E10)
+#define CLASS_2_0126C9BF9ED3F165__CTOR_OFFSET UNITYSDK_OFFSET(0x6B85E00)
 
-inline static constexpr unsigned int Class_2_0126C9BF9ED3F165_TypeDefinitionIndex = 65873;
+inline static constexpr unsigned int Class_2_0126C9BF9ED3F165_TypeDefinitionIndex = 56734;
 
 class Class_2_0126C9BF9ED3F165 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_0; // 0x18
+	::UnityEngine::GameObject* Field_2_4; // 0x18
 	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_1; // 0x20
-	::UnityEngine::UI::Extension::UIImgText* Field_2_3; // 0x28
-	::UnityEngine::GameObject* Field_2_4; // 0x30
-	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_2; // 0x38
+	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_2; // 0x28
+	::UnityEngine::UI::Text* Field_2_0; // 0x30
+	::UnityEngine::UI::Extension::UIImgText* Field_2_3; // 0x38
 
 	::System::Void _ctor()
 	{

@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_BACKFLOWINTRPOPSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x6292190)
-#define MOLEMOLE_BACKFLOWINTRPOPSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x62921A0)
-#define MOLEMOLE_BACKFLOWINTRPOPSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6292400)
+#define MOLEMOLE_BACKFLOWINTRPOPSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xCAC4550)
+#define MOLEMOLE_BACKFLOWINTRPOPSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xCAC4560)
+#define MOLEMOLE_BACKFLOWINTRPOPSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xCAC47C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BackFlowIntrPopShow_TypeDefinitionIndex = 77377;
+	inline static constexpr unsigned int BackFlowIntrPopShow_TypeDefinitionIndex = 53395;
 
 	class BackFlowIntrPopShow : public ::MoleMole::DisplayMessageBase
 	{

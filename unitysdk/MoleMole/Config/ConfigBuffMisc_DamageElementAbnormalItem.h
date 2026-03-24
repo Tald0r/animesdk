@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigBuffMisc_DamageElementAbnormalItem_TypeDefinitionIndex = 46292;
+	inline static constexpr unsigned int ConfigBuffMisc_DamageElementAbnormalItem_TypeDefinitionIndex = 40306;
 
 	struct alignas(4) ConfigBuffMisc_DamageElementAbnormalItem
 	{

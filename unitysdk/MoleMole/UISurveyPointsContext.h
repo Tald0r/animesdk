@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UISURVEYPOINTSCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC3DD7A0)
+#define MOLEMOLE_UISURVEYPOINTSCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA10AA10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISurveyPointsContext_TypeDefinitionIndex = 75818;
+	inline static constexpr unsigned int UISurveyPointsContext_TypeDefinitionIndex = 73045;
 
 	class UISurveyPointsContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::String* content; // 0x28
-		::System::String* subTitle; // 0x30
-		::System::String* title; // 0x38
+		::System::String* subTitle; // 0x28
+		::System::String* title; // 0x30
+		::System::String* content; // 0x38
 
 		::System::Void _ctor()
 		{

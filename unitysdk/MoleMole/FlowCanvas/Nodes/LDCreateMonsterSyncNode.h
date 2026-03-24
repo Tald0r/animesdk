@@ -11,35 +11,35 @@ namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_CREATEMONSTER_OFFSET UNITYSDK_OFFSET(0xEC75E10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_ONENTITYREADY_OFFSET UNITYSDK_OFFSET(0xEC76AE0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_ONPOSTGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0xEC758E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xEC75680)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_TRYCREATEMONSTER_OFFSET UNITYSDK_OFFSET(0xEC75A50)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__CALLMONSTEROUTPUT_OFFSET UNITYSDK_OFFSET(0xEC76A50)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC76DB0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__REGISTERPORTS_B__11_0_OFFSET UNITYSDK_OFFSET(0xEC76DD0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__REGISTERPORTS_B__11_1_OFFSET UNITYSDK_OFFSET(0xEC76E90)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE___BASE_ONPOSTGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0xEC76EA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_CREATEMONSTER_OFFSET UNITYSDK_OFFSET(0x7574900)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_ONENTITYREADY_OFFSET UNITYSDK_OFFSET(0x75755D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_ONPOSTGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x75743D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7574170)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE_TRYCREATEMONSTER_OFFSET UNITYSDK_OFFSET(0x7574540)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__CALLMONSTEROUTPUT_OFFSET UNITYSDK_OFFSET(0x7575540)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x75758A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__REGISTERPORTS_B__11_0_OFFSET UNITYSDK_OFFSET(0x75758C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE__REGISTERPORTS_B__11_1_OFFSET UNITYSDK_OFFSET(0x7575980)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEMONSTERSYNCNODE___BASE_ONPOSTGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x7575990)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCreateMonsterSyncNode_TypeDefinitionIndex = 50558;
+	inline static constexpr unsigned int LDCreateMonsterSyncNode_TypeDefinitionIndex = 66373;
 
 	class LDCreateMonsterSyncNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::MonsterIDType>* inputMonsterIDType; // 0xA8
-		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* entityOutPut; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Int32>* inputAI; // 0xB8
-		::FlowCanvas::FlowOutput* output; // 0xC0
-		::FlowCanvas::ValueInput_1<::MoleMole::Config::CampType>* inputCamp; // 0xC8
-		::FlowCanvas::ValueInput_1<::System::Int32>* inputMonsterId; // 0xD0
-		::MoleMole::Battle::Entity* createEntity; // 0xD8
-		::FlowCanvas::ValueInput_1<::System::String*>* inputSpawnPoint; // 0xE0
-		::FlowCanvas::ValueInput_1<::System::Int32>* overrideMonsterLevel; // 0xE8
-		::System::Boolean isWaitingEntityReady; // 0xF0
-		::System::Boolean _IsCreateMyInOut; // 0xF1
+		::FlowCanvas::FlowOutput* output; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Int32>* overrideMonsterLevel; // 0xB0
+		::MoleMole::Battle::Entity* createEntity; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Int32>* inputMonsterId; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::Int32>* inputAI; // 0xC8
+		::FlowCanvas::ValueInput_1<::MoleMole::Config::CampType>* inputCamp; // 0xD0
+		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* entityOutPut; // 0xD8
+		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::MonsterIDType>* inputMonsterIDType; // 0xE0
+		::FlowCanvas::ValueInput_1<::System::String*>* inputSpawnPoint; // 0xE8
+		::System::Boolean _IsCreateMyInOut; // 0xF0
+		::System::Boolean isWaitingEntityReady; // 0xF1
 
 		::System::Void _ctor()
 		{

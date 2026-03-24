@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIINTERKNOTNEWSDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9439C10)
+#define MOLEMOLE_UIINTERKNOTNEWSDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x99FE3E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotNewsDialogContext_TypeDefinitionIndex = 58329;
+	inline static constexpr unsigned int UIInterKnotNewsDialogContext_TypeDefinitionIndex = 64830;
 
 	class UIInterKnotNewsDialogContext : public ::MoleMole::UIControllerContextBase
 	{

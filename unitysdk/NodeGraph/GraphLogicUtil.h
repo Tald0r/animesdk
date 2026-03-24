@@ -10,29 +10,29 @@ namespace MoleMole::Battle { class Entity; }
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NODEGRAPH_GRAPHLOGICUTIL_CONVERTTOSKINAVATARTAG_OFFSET UNITYSDK_OFFSET(0x7456260)
-#define NODEGRAPH_GRAPHLOGICUTIL_GETSWITCHINPOS_OFFSET UNITYSDK_OFFSET(0x74345E0)
-#define NODEGRAPH_GRAPHLOGICUTIL_ISGRAPHUPDATEVALID_OFFSET UNITYSDK_OFFSET(0x7457560)
-#define NODEGRAPH_GRAPHLOGICUTIL_ISSAMEAVATARTAG_OFFSET UNITYSDK_OFFSET(0x7455E80)
-#define NODEGRAPH_GRAPHLOGICUTIL_ISTELEPORTING_OFFSET UNITYSDK_OFFSET(0x7456670)
-#define NODEGRAPH_GRAPHLOGICUTIL_SETAIACTIVE_OFFSET UNITYSDK_OFFSET(0x7456D60)
-#define NODEGRAPH_GRAPHLOGICUTIL_TELEPORTTOPOS_OFFSET UNITYSDK_OFFSET(0x74567C0)
-#define NODEGRAPH_GRAPHLOGICUTIL__CCTOR_OFFSET UNITYSDK_OFFSET(0x74578F0)
+#define NODEGRAPH_GRAPHLOGICUTIL_CONVERTTOSKINAVATARTAG_OFFSET UNITYSDK_OFFSET(0x6FB4290)
+#define NODEGRAPH_GRAPHLOGICUTIL_GETSWITCHINPOS_OFFSET UNITYSDK_OFFSET(0x6F92CB0)
+#define NODEGRAPH_GRAPHLOGICUTIL_ISGRAPHUPDATEVALID_OFFSET UNITYSDK_OFFSET(0x6FB5590)
+#define NODEGRAPH_GRAPHLOGICUTIL_ISSAMEAVATARTAG_OFFSET UNITYSDK_OFFSET(0x6FB3EB0)
+#define NODEGRAPH_GRAPHLOGICUTIL_ISTELEPORTING_OFFSET UNITYSDK_OFFSET(0x6FB46A0)
+#define NODEGRAPH_GRAPHLOGICUTIL_SETAIACTIVE_OFFSET UNITYSDK_OFFSET(0x6FB4D90)
+#define NODEGRAPH_GRAPHLOGICUTIL_TELEPORTTOPOS_OFFSET UNITYSDK_OFFSET(0x6FB47F0)
+#define NODEGRAPH_GRAPHLOGICUTIL__CCTOR_OFFSET UNITYSDK_OFFSET(0x6FB5920)
 
 namespace NodeGraph
 {
-	inline static constexpr unsigned int GraphLogicUtil_TypeDefinitionIndex = 58490;
+	inline static constexpr unsigned int GraphLogicUtil_TypeDefinitionIndex = 48937;
 
 	class GraphLogicUtil : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Boolean>** StaticGet__teleporting()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(GraphLogicUtil_TypeDefinitionIndex)->GetStaticField(0x30840);
-		}
 		static ::MoleMole::Battle::AnimatorParamControl** StaticGet_AnimatorParamControl()
 		{
-			return (::MoleMole::Battle::AnimatorParamControl**)Il2CppClass::FromTypeDefinitionIndex(GraphLogicUtil_TypeDefinitionIndex)->GetStaticField(0x30848);
+			return (::MoleMole::Battle::AnimatorParamControl**)Il2CppClass::FromTypeDefinitionIndex(GraphLogicUtil_TypeDefinitionIndex)->GetStaticField(0x326F0);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Boolean>** StaticGet__teleporting()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(GraphLogicUtil_TypeDefinitionIndex)->GetStaticField(0x326F8);
 		}
 
 		static ::System::Void _cctor()

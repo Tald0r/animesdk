@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define PARADOXNOTION_DESIGN_SPOOFAOTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x192787C0)
+#define PARADOXNOTION_DESIGN_SPOOFAOTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x196F4DC0)
 
 namespace ParadoxNotion::Design
 {
-	inline static constexpr unsigned int SpoofAOTAttribute_TypeDefinitionIndex = 25506;
+	inline static constexpr unsigned int SpoofAOTAttribute_TypeDefinitionIndex = 27063;
 
 	class SpoofAOTAttribute : public ::System::Attribute
 	{

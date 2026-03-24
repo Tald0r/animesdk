@@ -5,7 +5,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int IUniversalRenderPipeilineAssetAccessor_TypeDefinitionIndex = 5902;
+	inline static constexpr unsigned int IUniversalRenderPipeilineAssetAccessor_TypeDefinitionIndex = 5904;
 
 	class IUniversalRenderPipeilineAssetAccessor
 	{

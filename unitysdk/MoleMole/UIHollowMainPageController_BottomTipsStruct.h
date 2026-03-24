@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController_BottomTipsStruct_TypeDefinitionIndex = 52602;
+	inline static constexpr unsigned int UIHollowMainPageController_BottomTipsStruct_TypeDefinitionIndex = 49547;
 
 	struct alignas(8) UIHollowMainPageController_BottomTipsStruct
 	{

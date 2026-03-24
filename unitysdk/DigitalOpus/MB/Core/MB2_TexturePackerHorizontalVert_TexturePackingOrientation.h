@@ -3,7 +3,7 @@
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB2_TexturePackerHorizontalVert_TexturePackingOrientation_TypeDefinitionIndex = 81344;
+	inline static constexpr unsigned int MB2_TexturePackerHorizontalVert_TexturePackingOrientation_TypeDefinitionIndex = 83385;
 
 	enum class MB2_TexturePackerHorizontalVert_TexturePackingOrientation : ::System::Int32
 	{

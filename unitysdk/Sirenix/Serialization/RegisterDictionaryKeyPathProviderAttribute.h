@@ -4,11 +4,11 @@
 
 namespace System { class Type; }
 
-#define SIRENIX_SERIALIZATION_REGISTERDICTIONARYKEYPATHPROVIDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B102EE0)
+#define SIRENIX_SERIALIZATION_REGISTERDICTIONARYKEYPATHPROVIDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B71A9C0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int RegisterDictionaryKeyPathProviderAttribute_TypeDefinitionIndex = 7431;
+	inline static constexpr unsigned int RegisterDictionaryKeyPathProviderAttribute_TypeDefinitionIndex = 7436;
 
 	class RegisterDictionaryKeyPathProviderAttribute : public ::System::Attribute
 	{

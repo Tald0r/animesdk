@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FluffyUnderware/DevTools/DTRegionAttribute.h"
 
-#define FLUFFYUNDERWARE_DEVTOOLS_INTREGIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A244620)
+#define FLUFFYUNDERWARE_DEVTOOLS_INTREGIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A80BF30)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int IntRegionAttribute_TypeDefinitionIndex = 24539;
+	inline static constexpr unsigned int IntRegionAttribute_TypeDefinitionIndex = 25364;
 
 	class IntRegionAttribute : public ::FluffyUnderware::DevTools::DTRegionAttribute
 	{

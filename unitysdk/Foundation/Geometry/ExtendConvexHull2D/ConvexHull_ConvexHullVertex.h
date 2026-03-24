@@ -4,12 +4,12 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define FOUNDATION_GEOMETRY_EXTENDCONVEXHULL2D_CONVEXHULL_CONVEXHULLVERTEX_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define FOUNDATION_GEOMETRY_EXTENDCONVEXHULL2D_CONVEXHULL_CONVEXHULLVERTEX__CTOR_OFFSET UNITYSDK_OFFSET(0x324900)
+#define FOUNDATION_GEOMETRY_EXTENDCONVEXHULL2D_CONVEXHULL_CONVEXHULLVERTEX_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x223870)
+#define FOUNDATION_GEOMETRY_EXTENDCONVEXHULL2D_CONVEXHULL_CONVEXHULLVERTEX__CTOR_OFFSET UNITYSDK_OFFSET(0x31E200)
 
 namespace Foundation::Geometry::ExtendConvexHull2D
 {
-	inline static constexpr unsigned int ConvexHull_ConvexHullVertex_TypeDefinitionIndex = 8929;
+	inline static constexpr unsigned int ConvexHull_ConvexHullVertex_TypeDefinitionIndex = 9127;
 
 	struct alignas(4) ConvexHull_ConvexHullVertex
 	{

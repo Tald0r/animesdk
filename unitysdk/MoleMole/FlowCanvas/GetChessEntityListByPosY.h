@@ -6,12 +6,12 @@ namespace MoleMole { class ChessEntity; }
 namespace MoleMole { class ChessEntityCollection; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_GETCHESSENTITYLISTBYPOSY_INVOKE_OFFSET UNITYSDK_OFFSET(0x82C3B30)
-#define MOLEMOLE_FLOWCANVAS_GETCHESSENTITYLISTBYPOSY__CTOR_OFFSET UNITYSDK_OFFSET(0x82C3E90)
+#define MOLEMOLE_FLOWCANVAS_GETCHESSENTITYLISTBYPOSY_INVOKE_OFFSET UNITYSDK_OFFSET(0xA37DBB0)
+#define MOLEMOLE_FLOWCANVAS_GETCHESSENTITYLISTBYPOSY__CTOR_OFFSET UNITYSDK_OFFSET(0xA37DF10)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int GetChessEntityListByPosY_TypeDefinitionIndex = 61341;
+	inline static constexpr unsigned int GetChessEntityListByPosY_TypeDefinitionIndex = 71180;
 
 	class GetChessEntityListByPosY : public ::MoleMole::FlowCanvas::ChessboardCallableFunctionNode_3<::System::Collections::Generic::List_1<::MoleMole::ChessEntity*>*, ::MoleMole::ChessEntityCollection*, ::System::Int32>
 	{

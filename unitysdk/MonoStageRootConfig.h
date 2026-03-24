@@ -4,9 +4,9 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MONOSTAGEROOTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x69B7BD0)
+#define MONOSTAGEROOTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA1435B0)
 
-inline static constexpr unsigned int MonoStageRootConfig_TypeDefinitionIndex = 59516;
+inline static constexpr unsigned int MonoStageRootConfig_TypeDefinitionIndex = 42306;
 
 class MonoStageRootConfig : public ::UnityEngine::MonoBehaviour
 {

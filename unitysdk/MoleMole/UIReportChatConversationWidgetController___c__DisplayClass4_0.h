@@ -5,12 +5,12 @@
 namespace MoleMole { class UIReportChatConversationWidgetController; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIREPORTCHATCONVERSATIONWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x68EB8C0)
-#define MOLEMOLE_UIREPORTCHATCONVERSATIONWIDGETCONTROLLER___C__DISPLAYCLASS4_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0x68EB8D0)
+#define MOLEMOLE_UIREPORTCHATCONVERSATIONWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8686E60)
+#define MOLEMOLE_UIREPORTCHATCONVERSATIONWIDGETCONTROLLER___C__DISPLAYCLASS4_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0x8686E70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIReportChatConversationWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 37716;
+	inline static constexpr unsigned int UIReportChatConversationWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 69896;
 
 	class UIReportChatConversationWidgetController___c__DisplayClass4_0 : public ::System::Object
 	{

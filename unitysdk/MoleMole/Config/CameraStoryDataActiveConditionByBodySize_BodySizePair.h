@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CameraStoryDataActiveConditionByBodySize_BodySizePair_TypeDefinitionIndex = 49381;
+	inline static constexpr unsigned int CameraStoryDataActiveConditionByBodySize_BodySizePair_TypeDefinitionIndex = 48945;
 
 	struct alignas(4) CameraStoryDataActiveConditionByBodySize_BodySizePair
 	{

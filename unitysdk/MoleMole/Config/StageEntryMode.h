@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_STAGEENTRYMODE__CTOR_OFFSET UNITYSDK_OFFSET(0x80640D0)
+#define MOLEMOLE_CONFIG_STAGEENTRYMODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9D17220)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int StageEntryMode_TypeDefinitionIndex = 67828;
+	inline static constexpr unsigned int StageEntryMode_TypeDefinitionIndex = 80797;
 
 	class StageEntryMode : public ::System::Object
 	{

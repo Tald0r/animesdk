@@ -5,18 +5,18 @@
 namespace MoleMole { class UILevelResultPageContext; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWHOLLOWLAYERRESULTDIALOGCONTEXT_EXECUTECLOSE_OFFSET UNITYSDK_OFFSET(0xC0393B0)
-#define MOLEMOLE_UIHOLLOWHOLLOWLAYERRESULTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC0393A0)
+#define MOLEMOLE_UIHOLLOWHOLLOWLAYERRESULTDIALOGCONTEXT_EXECUTECLOSE_OFFSET UNITYSDK_OFFSET(0x99DFB70)
+#define MOLEMOLE_UIHOLLOWHOLLOWLAYERRESULTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x99DFB60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowHollowLayerResultDialogContext_TypeDefinitionIndex = 39534;
+	inline static constexpr unsigned int UIHollowHollowLayerResultDialogContext_TypeDefinitionIndex = 73365;
 
 	class UIHollowHollowLayerResultDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::MoleMole::UILevelResultPageContext* _pageContext; // 0x28
-		::System::Action* _onClose; // 0x30
+		::System::Action* _onClose; // 0x28
+		::MoleMole::UILevelResultPageContext* _pageContext; // 0x30
 		::System::Boolean ShowBlackMask; // 0x38
 
 		::System::Void _ctor(::System::Action* onClose)

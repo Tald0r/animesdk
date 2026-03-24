@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputActionType_TypeDefinitionIndex = 27458;
+	inline static constexpr unsigned int InputActionType_TypeDefinitionIndex = 28398;
 
 	enum class InputActionType : ::System::Int32
 	{

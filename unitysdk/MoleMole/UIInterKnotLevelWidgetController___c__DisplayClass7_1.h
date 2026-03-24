@@ -4,22 +4,22 @@
 
 namespace MoleMole { class UIInterKnotLevelWidgetController___c__DisplayClass7_0; }
 
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA636360)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_1__REFRESHLEVELTXTVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xA6371C0)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_1__REFRESHLEVELTXTVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xA637280)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBD2ACA0)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_1__REFRESHLEVELTXTVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBD2BB00)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_1__REFRESHLEVELTXTVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xBD2BBC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotLevelWidgetController___c__DisplayClass7_1_TypeDefinitionIndex = 48996;
+	inline static constexpr unsigned int UIInterKnotLevelWidgetController___c__DisplayClass7_1_TypeDefinitionIndex = 71781;
 
 	class UIInterKnotLevelWidgetController___c__DisplayClass7_1 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIInterKnotLevelWidgetController___c__DisplayClass7_0* CS___8__locals1; // 0x10
-		::System::Single realExpProgressDuration; // 0x18
-		::System::Single timer; // 0x1C
-		::System::Single remainExpRatio; // 0x20
-		::System::Single prvExpRatio; // 0x24
+		::System::Single timer; // 0x18
+		::System::Single realExpProgressDuration; // 0x1C
+		::System::Single prvExpRatio; // 0x20
+		::System::Single remainExpRatio; // 0x24
 
 		::System::Void _ctor()
 		{

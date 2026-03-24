@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/Enum_3_340DE32BA097F66C.h"
 #include "unitysdk/System/Object.h"
 
 namespace MoleMole { class UIBaseController; }
@@ -9,10 +9,10 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_1_139A5DBBF3EFD181_METHOD_1_3B4D8A6E1C38CAD8_OFFSET UNITYSDK_OFFSET(0x6C3F240)
-#define CLASS_1_139A5DBBF3EFD181__CTOR_OFFSET UNITYSDK_OFFSET(0x6C3F230)
+#define CLASS_1_139A5DBBF3EFD181_METHOD_1_3B4D8A6E1C38CAD8_OFFSET UNITYSDK_OFFSET(0xE822830)
+#define CLASS_1_139A5DBBF3EFD181__CTOR_OFFSET UNITYSDK_OFFSET(0xE822820)
 
-inline static constexpr unsigned int Class_1_139A5DBBF3EFD181_TypeDefinitionIndex = 52238;
+inline static constexpr unsigned int Class_1_139A5DBBF3EFD181_TypeDefinitionIndex = 69539;
 
 class Class_1_139A5DBBF3EFD181 : public ::System::Object
 {

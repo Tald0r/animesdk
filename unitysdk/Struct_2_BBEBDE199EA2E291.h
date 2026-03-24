@@ -4,9 +4,9 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define STRUCT_2_BBEBDE199EA2E291_METHOD_2_CFA202D5D1478404_OFFSET UNITYSDK_OFFSET(0x397D70)
+#define STRUCT_2_BBEBDE199EA2E291_METHOD_2_CFA202D5D1478404_OFFSET UNITYSDK_OFFSET(0x3B9D00)
 
-inline static constexpr unsigned int Struct_2_BBEBDE199EA2E291_TypeDefinitionIndex = 78849;
+inline static constexpr unsigned int Struct_2_BBEBDE199EA2E291_TypeDefinitionIndex = 50397;
 
 struct alignas(8) Struct_2_BBEBDE199EA2E291
 {

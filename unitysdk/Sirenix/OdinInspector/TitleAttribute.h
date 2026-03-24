@@ -6,21 +6,21 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_TITLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB0A790)
+#define SIRENIX_ODININSPECTOR_TITLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1168C0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int TitleAttribute_TypeDefinitionIndex = 7233;
+	inline static constexpr unsigned int TitleAttribute_TypeDefinitionIndex = 7238;
 
 	class TitleAttribute : public ::System::Attribute
 	{
 	public:
 		::System::String* Title; // 0x10
 		::System::String* Subtitle; // 0x18
-		::Sirenix::OdinInspector::TitleAlignments TitleAlignment; // 0x20
+		::System::Boolean Bold; // 0x20
+		::System::Boolean HorizontalLine; // 0x21
 		::Sirenix::OdinInspector::TitleSizes TitleSize; // 0x24
-		::System::Boolean HorizontalLine; // 0x28
-		::System::Boolean Bold; // 0x29
+		::Sirenix::OdinInspector::TitleAlignments TitleAlignment; // 0x28
 
 		::System::Void _ctor(::System::String* title, ::System::String* subtitle, ::Sirenix::OdinInspector::TitleAlignments titleAlignment, ::Sirenix::OdinInspector::TitleSizes titleSize, ::System::Boolean horizontalLine, ::System::Boolean bold)
 		{

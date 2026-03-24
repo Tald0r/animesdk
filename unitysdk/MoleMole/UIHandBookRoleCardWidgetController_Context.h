@@ -4,11 +4,11 @@
 
 class Class_2_D89CCC627A66D0AD;
 
-#define MOLEMOLE_UIHANDBOOKROLECARDWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8A27B40)
+#define MOLEMOLE_UIHANDBOOKROLECARDWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB2CDFA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookRoleCardWidgetController_Context_TypeDefinitionIndex = 59924;
+	inline static constexpr unsigned int UIHandBookRoleCardWidgetController_Context_TypeDefinitionIndex = 37779;
 
 	class UIHandBookRoleCardWidgetController_Context : public ::System::Object
 	{

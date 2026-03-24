@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIHollowCardSuitDialogPopWindowController; }
 
-#define MOLEMOLE_UIHOLLOWCARDSUITDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS77_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8A2B3F0)
-#define MOLEMOLE_UIHOLLOWCARDSUITDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS77_0___REFRESHTABSDATA_B__0_OFFSET UNITYSDK_OFFSET(0x8A2B400)
+#define MOLEMOLE_UIHOLLOWCARDSUITDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS77_0__CTOR_OFFSET UNITYSDK_OFFSET(0x892A9C0)
+#define MOLEMOLE_UIHOLLOWCARDSUITDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS77_0___REFRESHTABSDATA_B__0_OFFSET UNITYSDK_OFFSET(0x892A9D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardSuitDialogPopWindowController___c__DisplayClass77_0_TypeDefinitionIndex = 60812;
+	inline static constexpr unsigned int UIHollowCardSuitDialogPopWindowController___c__DisplayClass77_0_TypeDefinitionIndex = 50131;
 
 	class UIHollowCardSuitDialogPopWindowController___c__DisplayClass77_0 : public ::System::Object
 	{

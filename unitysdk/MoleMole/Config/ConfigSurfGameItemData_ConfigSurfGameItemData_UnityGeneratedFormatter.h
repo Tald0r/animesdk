@@ -11,26 +11,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCDBB930)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCDBB940)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCDBBB40)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCDBBD00)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCDBBCC0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xD0A09A0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xD0A09B0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xD0A0BB0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0A0D70)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA_CONFIGSURFGAMEITEMDATA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A0D30)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter_TypeDefinitionIndex = 48131;
+	inline static constexpr unsigned int ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter_TypeDefinitionIndex = 57365;
 
 	class ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigSurfGameItemData*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameTriggerDataEntry>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameTriggerDataEntry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAE0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameItemDataEntry>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameItemDataEntry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAE8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameItemDataEntry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41760);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameTriggerDataEntry>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::SurfGameTriggerDataEntry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSurfGameItemData_ConfigSurfGameItemData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41768);
 		}
 
 		::System::Void _ctor()

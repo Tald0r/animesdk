@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class PlaySpeedBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_PLAYSPEEDCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x7F38C60)
-#define MOLEMOLE_TIMELINE_PLAYSPEEDCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x7F38C50)
-#define MOLEMOLE_TIMELINE_PLAYSPEEDCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x7F38E60)
+#define MOLEMOLE_TIMELINE_PLAYSPEEDCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8B8B1E0)
+#define MOLEMOLE_TIMELINE_PLAYSPEEDCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8B8B1D0)
+#define MOLEMOLE_TIMELINE_PLAYSPEEDCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8B8B3E0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int PlaySpeedClip_TypeDefinitionIndex = 75985;
+	inline static constexpr unsigned int PlaySpeedClip_TypeDefinitionIndex = 70744;
 
 	class PlaySpeedClip : public ::UnityEngine::Playables::PlayableAsset
 	{

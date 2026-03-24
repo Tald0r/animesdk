@@ -6,7 +6,7 @@
 namespace BehaviorDesigner::Runtime { class ExternalBehavior; }
 namespace System { class String; }
 
-inline static constexpr unsigned int Class_1_7F33D968FF9C898A_Struct_2_FBED4D22788F82F7_TypeDefinitionIndex = 64369;
+inline static constexpr unsigned int Class_1_7F33D968FF9C898A_Struct_2_FBED4D22788F82F7_TypeDefinitionIndex = 50944;
 
 struct alignas(8) Class_1_7F33D968FF9C898A_Struct_2_FBED4D22788F82F7
 {

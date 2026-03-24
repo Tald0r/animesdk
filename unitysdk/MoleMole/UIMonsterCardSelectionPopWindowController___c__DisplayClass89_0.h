@@ -5,12 +5,12 @@
 class Class_2_82E692415C3A4E10;
 namespace MoleMole { class UIMonsterCardSelectionPopWindowController; }
 
-#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS89_0__CTOR_OFFSET UNITYSDK_OFFSET(0x68CFF80)
-#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS89_0__UPDATECAFEVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x68CFF90)
+#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS89_0__CTOR_OFFSET UNITYSDK_OFFSET(0x866A110)
+#define MOLEMOLE_UIMONSTERCARDSELECTIONPOPWINDOWCONTROLLER___C__DISPLAYCLASS89_0__UPDATECAFEVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x866A120)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterCardSelectionPopWindowController___c__DisplayClass89_0_TypeDefinitionIndex = 73008;
+	inline static constexpr unsigned int UIMonsterCardSelectionPopWindowController___c__DisplayClass89_0_TypeDefinitionIndex = 44373;
 
 	class UIMonsterCardSelectionPopWindowController___c__DisplayClass89_0 : public ::System::Object
 	{

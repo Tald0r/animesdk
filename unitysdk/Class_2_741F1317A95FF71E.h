@@ -9,25 +9,25 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_741F1317A95FF71E_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x9091870)
-#define CLASS_2_741F1317A95FF71E_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x9091650)
-#define CLASS_2_741F1317A95FF71E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9091920)
-#define CLASS_2_741F1317A95FF71E__CTOR_OFFSET UNITYSDK_OFFSET(0x9091910)
+#define CLASS_2_741F1317A95FF71E_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x680BB50)
+#define CLASS_2_741F1317A95FF71E_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x680B930)
+#define CLASS_2_741F1317A95FF71E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x680BC00)
+#define CLASS_2_741F1317A95FF71E__CTOR_OFFSET UNITYSDK_OFFSET(0x680BBF0)
 
-inline static constexpr unsigned int Class_2_741F1317A95FF71E_TypeDefinitionIndex = 48772;
+inline static constexpr unsigned int Class_2_741F1317A95FF71E_TypeDefinitionIndex = 52637;
 
 class Class_2_741F1317A95FF71E : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_2; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x28
-	::UnityEngine::UI::Text* Field_2_1; // 0x30
-	::UnityEngine::UI::Text* Field_2_3; // 0x38
-	::MonoUITableScrollV2* Field_2_7; // 0x40
-	::UnityEngine::UI::Text* Field_2_6; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x50
-	::MonoUITableScrollV2* Field_2_0; // 0x58
+	::MonoUITableScrollV2* Field_2_0; // 0x18
+	::UnityEngine::UI::Text* Field_2_3; // 0x20
+	::UnityEngine::UI::Text* Field_2_6; // 0x28
+	::UnityEngine::UI::Text* Field_2_2; // 0x30
+	::MonoUITableScrollV2* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_8; // 0x48
+	::UnityEngine::UI::Text* Field_2_1; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x58
 
 	::System::Void _ctor()
 	{

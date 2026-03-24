@@ -8,12 +8,12 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_MULTITARGETTINGABILITYTARGET_METHOD_2_478C4498636A4056_OFFSET UNITYSDK_OFFSET(0xF172D30)
-#define MOLEMOLE_CONFIG_MULTITARGETTINGABILITYTARGET__CTOR_OFFSET UNITYSDK_OFFSET(0xF173130)
+#define MOLEMOLE_CONFIG_MULTITARGETTINGABILITYTARGET_METHOD_2_478C4498636A4056_OFFSET UNITYSDK_OFFSET(0xEC51780)
+#define MOLEMOLE_CONFIG_MULTITARGETTINGABILITYTARGET__CTOR_OFFSET UNITYSDK_OFFSET(0xEC51B90)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int MultiTargettingAbilityTarget_TypeDefinitionIndex = 54723;
+	inline static constexpr unsigned int MultiTargettingAbilityTarget_TypeDefinitionIndex = 38705;
 
 	class MultiTargettingAbilityTarget : public ::MoleMole::Config::ConfigAbilityTarget
 	{

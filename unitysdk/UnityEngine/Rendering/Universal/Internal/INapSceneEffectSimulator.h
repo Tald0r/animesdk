@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int INapSceneEffectSimulator_TypeDefinitionIndex = 28960;
+	inline static constexpr unsigned int INapSceneEffectSimulator_TypeDefinitionIndex = 29911;
 
 	class INapSceneEffectSimulator
 	{

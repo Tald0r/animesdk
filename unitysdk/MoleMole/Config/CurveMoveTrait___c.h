@@ -4,24 +4,24 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_CONFIG_CURVEMOVETRAIT___C_METHOD_1_3A233B47D17C0190_OFFSET UNITYSDK_OFFSET(0xCDBD5C0)
-#define MOLEMOLE_CONFIG_CURVEMOVETRAIT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCDBD570)
-#define MOLEMOLE_CONFIG_CURVEMOVETRAIT___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCDBD5B0)
+#define MOLEMOLE_CONFIG_CURVEMOVETRAIT___C_METHOD_1_3A233B47D17C0190_OFFSET UNITYSDK_OFFSET(0xD0A2610)
+#define MOLEMOLE_CONFIG_CURVEMOVETRAIT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0A25C0)
+#define MOLEMOLE_CONFIG_CURVEMOVETRAIT___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A2600)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CurveMoveTrait___c_TypeDefinitionIndex = 70892;
+	inline static constexpr unsigned int CurveMoveTrait___c_TypeDefinitionIndex = 40041;
 
 	class CurveMoveTrait___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::Config::CurveMoveTrait___c** StaticGet___9()
-		{
-			return (::MoleMole::Config::CurveMoveTrait___c**)Il2CppClass::FromTypeDefinitionIndex(CurveMoveTrait___c_TypeDefinitionIndex)->GetStaticField(0x3D2B0);
-		}
 		static ::System::Func_2<::System::Int32, ::System::Single>** StaticGet___9__18_0()
 		{
-			return (::System::Func_2<::System::Int32, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CurveMoveTrait___c_TypeDefinitionIndex)->GetStaticField(0x3D2B8);
+			return (::System::Func_2<::System::Int32, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CurveMoveTrait___c_TypeDefinitionIndex)->GetStaticField(0x40230);
+		}
+		static ::MoleMole::Config::CurveMoveTrait___c** StaticGet___9()
+		{
+			return (::MoleMole::Config::CurveMoveTrait___c**)Il2CppClass::FromTypeDefinitionIndex(CurveMoveTrait___c_TypeDefinitionIndex)->GetStaticField(0x40238);
 		}
 
 		static ::System::Void _cctor()

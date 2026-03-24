@@ -4,22 +4,22 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_COOPEQUIPMENTSELECTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x16BBCCE0)
+#define MOLEMOLE_COOPEQUIPMENTSELECTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1750A2B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CoopEquipmentSelectContext_TypeDefinitionIndex = 37646;
+	inline static constexpr unsigned int CoopEquipmentSelectContext_TypeDefinitionIndex = 73882;
 
 	class CoopEquipmentSelectContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Action* OnOnlyEquipJumpAction; // 0x28
-		::System::Boolean IsOnlyEquipType; // 0x30
-		::System::Boolean IsHideJumpBtn; // 0x31
-		::System::Boolean isAvatarType; // 0x32
-		::System::Int32 SelectAvatarID; // 0x34
-		::System::Int32 LevelATK; // 0x38
-		::System::Int32 SelectRobotID; // 0x3C
+		::System::Boolean IsHideJumpBtn; // 0x30
+		::System::Boolean isAvatarType; // 0x31
+		::System::Boolean IsOnlyEquipType; // 0x32
+		::System::Int32 LevelATK; // 0x34
+		::System::Int32 SelectRobotID; // 0x38
+		::System::Int32 SelectAvatarID; // 0x3C
 
 		::System::Void _ctor()
 		{

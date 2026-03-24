@@ -4,19 +4,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_VOPERFORMSUBSYSTEM_CURTAINSETINFO_GETID_OFFSET UNITYSDK_OFFSET(0xA095470)
-#define MOLEMOLE_VOPERFORMSUBSYSTEM_CURTAINSETINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0xA095620)
-#define MOLEMOLE_VOPERFORMSUBSYSTEM_CURTAINSETINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x379870)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM_CURTAINSETINFO_GETID_OFFSET UNITYSDK_OFFSET(0x9728C90)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM_CURTAINSETINFO__CCTOR_OFFSET UNITYSDK_OFFSET(0x9728E40)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM_CURTAINSETINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x37B000)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int VOPerformSubSystem_CurtainSetInfo_TypeDefinitionIndex = 62436;
+	inline static constexpr unsigned int VOPerformSubSystem_CurtainSetInfo_TypeDefinitionIndex = 55335;
 
 	struct alignas(8) VOPerformSubSystem_CurtainSetInfo
 	{
 		static ::System::Int32* StaticGet_ID_Gen()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(VOPerformSubSystem_CurtainSetInfo_TypeDefinitionIndex)->GetStaticField(0xFEA0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(VOPerformSubSystem_CurtainSetInfo_TypeDefinitionIndex)->GetStaticField(0x116C0);
 		}
 		::System::Int32 ID; // 0x10
 		::System::String* curtainName; // 0x18

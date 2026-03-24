@@ -16,45 +16,45 @@ namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ALLOCATECONTINUESTICKTASK_OFFSET UNITYSDK_OFFSET(0xC9B7F10)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_CLEARFLAGS_OFFSET UNITYSDK_OFFSET(0xC9B7BA0)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_DEALLOCATECONTINUESTICKTASK_OFFSET UNITYSDK_OFFSET(0xC9B8040)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_GETEXITTIME_OFFSET UNITYSDK_OFFSET(0xC9B8AB0)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xC9B77F0)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONCHECKANIMATION_OFFSET UNITYSDK_OFFSET(0xC9B7C10)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONSTART_OFFSET UNITYSDK_OFFSET(0xC9B7AD0)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xC9B81C0)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC9B8C10)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS__CTOR_OFFSET UNITYSDK_OFFSET(0xC9B8E50)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xC9B8F70)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0xC9B9000)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xC9B90A0)
-#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC9B9130)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ALLOCATECONTINUESTICKTASK_OFFSET UNITYSDK_OFFSET(0xB9FC900)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_CLEARFLAGS_OFFSET UNITYSDK_OFFSET(0xB9FC590)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_DEALLOCATECONTINUESTICKTASK_OFFSET UNITYSDK_OFFSET(0xB9FCA30)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_GETEXITTIME_OFFSET UNITYSDK_OFFSET(0xB9FD4A0)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB9FC1F0)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONCHECKANIMATION_OFFSET UNITYSDK_OFFSET(0xB9FC600)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONSTART_OFFSET UNITYSDK_OFFSET(0xB9FC4C0)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB9FCBB0)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS_TOSTRING_OFFSET UNITYSDK_OFFSET(0xB9FD600)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS__CTOR_OFFSET UNITYSDK_OFFSET(0xB9FD840)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB9FD950)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0xB9FD9E0)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB9FDA80)
+#define MOLEMOLE_EXITUNTILANIMATIONSUCCESS___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xB9FDB10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ExitUntilAnimationSuccess_TypeDefinitionIndex = 36828;
+	inline static constexpr unsigned int ExitUntilAnimationSuccess_TypeDefinitionIndex = 43409;
 
 	class ExitUntilAnimationSuccess : public ::BehaviorDesigner::Runtime::Tasks::ContinuesTickConditional
 	{
 	public:
-		::Class_3_F33F9DC5F4112336* _animCharacter; // 0x50
-		::BehaviorDesigner::Runtime::SharedInt* AnimatorLayerIndex; // 0x58
-		::MoleMole::Battle::Entity* _ownerEntity; // 0x60
+		::BehaviorDesigner::Runtime::SharedFloat* ForceAnimExitTime; // 0x50
+		::Class_3_F33F9DC5F4112336* _animCharacter; // 0x58
+		::Class_3_750DA0E74FE20AAE* _aiCharacter; // 0x60
 		::Class_2_57AD714CA60496DE* animationSuccessTask; // 0x68
-		::BehaviorDesigner::Runtime::SharedString* AnimationName; // 0x70
-		::BehaviorDesigner::Runtime::SharedFloat* ForceAnimExitTime; // 0x78
-		::Class_3_750DA0E74FE20AAE* _aiCharacter; // 0x80
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x88
-		::MoleMole::ExitUntilAnimationSuccess_AnimationType AnimationStateType; // 0x90
-		::MoleMole::ExitUntilAnimationSuccess_AnimationTimeType ExitTimeType; // 0x94
-		::System::Single _protectedTimer; // 0x98
-		::MoleMole::AICompareType AnimTimeCompareType; // 0x9C
-		::System::Boolean _inAnim; // 0xA0
-		::System::Boolean DontExitUntilSuccess; // 0xA1
-		::System::Single _protectedMaxTime; // 0xA4
-		::System::Single animationTotalFrameCount; // 0xA8
-		::System::Int32 AnimationNameHash; // 0xAC
+		::BehaviorDesigner::Runtime::SharedInt* AnimatorLayerIndex; // 0x70
+		::MoleMole::Battle::Entity* _ownerEntity; // 0x78
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x80
+		::BehaviorDesigner::Runtime::SharedString* AnimationName; // 0x88
+		::System::Boolean DontExitUntilSuccess; // 0x90
+		::System::Boolean _inAnim; // 0x91
+		::MoleMole::ExitUntilAnimationSuccess_AnimationType AnimationStateType; // 0x94
+		::MoleMole::ExitUntilAnimationSuccess_AnimationTimeType ExitTimeType; // 0x98
+		::System::Int32 AnimationNameHash; // 0x9C
+		::System::Single _protectedTimer; // 0xA0
+		::MoleMole::AICompareType AnimTimeCompareType; // 0xA4
+		::System::Single _protectedMaxTime; // 0xA8
+		::System::Single animationTotalFrameCount; // 0xAC
 
 		::System::Void _ctor()
 		{

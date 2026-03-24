@@ -7,11 +7,11 @@
 namespace MoleMole::Config { class BuffAttackProperty; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_BUFFVARIANTELEMENTATTACK__CTOR_OFFSET UNITYSDK_OFFSET(0x15EA7170)
+#define MOLEMOLE_CONFIG_BUFFVARIANTELEMENTATTACK__CTOR_OFFSET UNITYSDK_OFFSET(0xE2B8B70)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int BuffVariantElementAttack_TypeDefinitionIndex = 40329;
+	inline static constexpr unsigned int BuffVariantElementAttack_TypeDefinitionIndex = 46335;
 
 	class BuffVariantElementAttack : public ::System::Object
 	{

@@ -3,15 +3,15 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AICompareType_TypeDefinitionIndex = 37006;
+	inline static constexpr unsigned int AICompareType_TypeDefinitionIndex = 64847;
 
 	enum class AICompareType : ::System::Int32
 	{
-		Greater = 0,
 		Less = 3,
-		Equal = 2,
-		LessEqual = 4,
-		GreaterEqual = 1,
 		NotEqual = 5,
+		Greater = 0,
+		LessEqual = 4,
+		Equal = 2,
+		GreaterEqual = 1,
 	};
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int DynamicBone_UpdateMode_TypeDefinitionIndex = 31573;
+inline static constexpr unsigned int DynamicBone_UpdateMode_TypeDefinitionIndex = 32527;
 
 enum class DynamicBone_UpdateMode : ::System::Int32
 {

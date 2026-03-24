@@ -4,12 +4,12 @@
 
 namespace MoleMole::Project::Config { class TurnBasedEntityTemplateExt; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETTURNBASEDENTITYCONFIG_INVOKE_OFFSET UNITYSDK_OFFSET(0x8AFB690)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETTURNBASEDENTITYCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8AFB720)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETTURNBASEDENTITYCONFIG_INVOKE_OFFSET UNITYSDK_OFFSET(0xB180A50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETTURNBASEDENTITYCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB180AE0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDTurnBasedGetTurnBasedEntityConfig_TypeDefinitionIndex = 65782;
+	inline static constexpr unsigned int LDTurnBasedGetTurnBasedEntityConfig_TypeDefinitionIndex = 47021;
 
 	class LDTurnBasedGetTurnBasedEntityConfig : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::MoleMole::Project::Config::TurnBasedEntityTemplateExt*, ::System::Int32>
 	{

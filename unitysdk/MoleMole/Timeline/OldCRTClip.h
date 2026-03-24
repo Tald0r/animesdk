@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class OldCRTBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_OLDCRTCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8F46D90)
-#define MOLEMOLE_TIMELINE_OLDCRTCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8F46D80)
-#define MOLEMOLE_TIMELINE_OLDCRTCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8F46F90)
+#define MOLEMOLE_TIMELINE_OLDCRTCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x985EDC0)
+#define MOLEMOLE_TIMELINE_OLDCRTCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x985EDB0)
+#define MOLEMOLE_TIMELINE_OLDCRTCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x985EFC0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int OldCRTClip_TypeDefinitionIndex = 78966;
+	inline static constexpr unsigned int OldCRTClip_TypeDefinitionIndex = 56346;
 
 	class OldCRTClip : public ::UnityEngine::Playables::PlayableAsset
 	{

@@ -10,23 +10,23 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_FILEVERIFIERUTILS_CREATEERRORINFO_OFFSET UNITYSDK_OFFSET(0xB9A7F30)
-#define FOUNDATION_FILEVERIFIERUTILS_GETDEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0xB9A7590)
-#define FOUNDATION_FILEVERIFIERUTILS_GET_PARALLELFILEHASHCONFIG_OFFSET UNITYSDK_OFFSET(0xB9A7520)
-#define FOUNDATION_FILEVERIFIERUTILS_ISHUAWEIDEVICE_OFFSET UNITYSDK_OFFSET(0xB9A76F0)
-#define FOUNDATION_FILEVERIFIERUTILS_WRITEBADFILELIST_1_OFFSET UNITYSDK_OFFSET(0xB9A7A80)
-#define FOUNDATION_FILEVERIFIERUTILS_WRITEBADFILELIST_OFFSET UNITYSDK_OFFSET(0xB9A77B0)
+#define FOUNDATION_FILEVERIFIERUTILS_CREATEERRORINFO_OFFSET UNITYSDK_OFFSET(0x74DB600)
+#define FOUNDATION_FILEVERIFIERUTILS_GETDEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x74DAC60)
+#define FOUNDATION_FILEVERIFIERUTILS_GET_PARALLELFILEHASHCONFIG_OFFSET UNITYSDK_OFFSET(0x74DABF0)
+#define FOUNDATION_FILEVERIFIERUTILS_ISHUAWEIDEVICE_OFFSET UNITYSDK_OFFSET(0x74DADC0)
+#define FOUNDATION_FILEVERIFIERUTILS_WRITEBADFILELIST_1_OFFSET UNITYSDK_OFFSET(0x74DB150)
+#define FOUNDATION_FILEVERIFIERUTILS_WRITEBADFILELIST_OFFSET UNITYSDK_OFFSET(0x74DAE80)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int FileVerifierUtils_TypeDefinitionIndex = 77014;
+	inline static constexpr unsigned int FileVerifierUtils_TypeDefinitionIndex = 61015;
 
 	class FileVerifierUtils : public ::System::Object
 	{
 	public:
 		static ::Foundation::ParallelFileHash_Config** StaticGet__parallelFileHashConfig()
 		{
-			return (::Foundation::ParallelFileHash_Config**)Il2CppClass::FromTypeDefinitionIndex(FileVerifierUtils_TypeDefinitionIndex)->GetStaticField(0x37820);
+			return (::Foundation::ParallelFileHash_Config**)Il2CppClass::FromTypeDefinitionIndex(FileVerifierUtils_TypeDefinitionIndex)->GetStaticField(0x3A730);
 		}
 
 		static ::Foundation::ParallelFileHash_Config* get_ParallelFileHashConfig()

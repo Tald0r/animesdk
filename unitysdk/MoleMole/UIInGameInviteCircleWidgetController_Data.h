@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIINGAMEINVITECIRCLEWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x80B43C0)
+#define MOLEMOLE_UIINGAMEINVITECIRCLEWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x7450750)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInGameInviteCircleWidgetController_Data_TypeDefinitionIndex = 54983;
+	inline static constexpr unsigned int UIInGameInviteCircleWidgetController_Data_TypeDefinitionIndex = 50921;
 
 	class UIInGameInviteCircleWidgetController_Data : public ::System::Object
 	{

@@ -3,12 +3,12 @@
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int AvatarSwitchSortType_TypeDefinitionIndex = 66939;
+	inline static constexpr unsigned int AvatarSwitchSortType_TypeDefinitionIndex = 42209;
 
 	enum class AvatarSwitchSortType : ::System::Int32
 	{
-		None = 0,
-		PositionOrder = 1,
 		Fixed = 2,
+		PositionOrder = 1,
+		None = 0,
 	};
 }

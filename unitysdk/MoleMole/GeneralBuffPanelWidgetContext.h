@@ -4,11 +4,11 @@
 
 class Class_1_98DE5B0AA67D49FB;
 
-#define MOLEMOLE_GENERALBUFFPANELWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7F0F360)
+#define MOLEMOLE_GENERALBUFFPANELWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD599F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GeneralBuffPanelWidgetContext_TypeDefinitionIndex = 78276;
+	inline static constexpr unsigned int GeneralBuffPanelWidgetContext_TypeDefinitionIndex = 59621;
 
 	class GeneralBuffPanelWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

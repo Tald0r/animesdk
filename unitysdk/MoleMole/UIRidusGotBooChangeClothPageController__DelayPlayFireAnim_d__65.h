@@ -7,20 +7,20 @@
 namespace MoleMole { class UIRidusGotBooChangeClothPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER__DELAYPLAYFIREANIM_D__65_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x362430)
-#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER__DELAYPLAYFIREANIM_D__65_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER__DELAYPLAYFIREANIM_D__65_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x38BA10)
+#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER__DELAYPLAYFIREANIM_D__65_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooChangeClothPageController__DelayPlayFireAnim_d__65_TypeDefinitionIndex = 66426;
+	inline static constexpr unsigned int UIRidusGotBooChangeClothPageController__DelayPlayFireAnim_d__65_TypeDefinitionIndex = 68243;
 
 	struct alignas(8) UIRidusGotBooChangeClothPageController__DelayPlayFireAnim_d__65
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x18
-		::MoleMole::UIRidusGotBooChangeClothPageController* __4__this; // 0x28
-		::System::Int32 __1__state; // 0x30
-		::System::Single delayTime; // 0x34
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
+		::MoleMole::UIRidusGotBooChangeClothPageController* __4__this; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x28
+		::System::Single delayTime; // 0x30
+		::System::Int32 __1__state; // 0x34
 
 		::System::Void MoveNext()
 		{

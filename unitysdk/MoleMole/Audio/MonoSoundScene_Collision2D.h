@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace UnityEngine { class Collision2D; }
 
-#define MOLEMOLE_AUDIO_MONOSOUNDSCENE_COLLISION2D_ONCOLLISIONENTER2D_OFFSET UNITYSDK_OFFSET(0x6BD63E0)
-#define MOLEMOLE_AUDIO_MONOSOUNDSCENE_COLLISION2D__CTOR_OFFSET UNITYSDK_OFFSET(0x6BD6740)
+#define MOLEMOLE_AUDIO_MONOSOUNDSCENE_COLLISION2D_ONCOLLISIONENTER2D_OFFSET UNITYSDK_OFFSET(0xACA5460)
+#define MOLEMOLE_AUDIO_MONOSOUNDSCENE_COLLISION2D__CTOR_OFFSET UNITYSDK_OFFSET(0xACA57D0)
 
 namespace MoleMole::Audio
 {
-	inline static constexpr unsigned int MonoSoundScene_Collision2D_TypeDefinitionIndex = 58808;
+	inline static constexpr unsigned int MonoSoundScene_Collision2D_TypeDefinitionIndex = 40851;
 
 	class MonoSoundScene_Collision2D : public ::UnityEngine::MonoBehaviour
 	{

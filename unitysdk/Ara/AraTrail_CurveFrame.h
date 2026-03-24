@@ -3,12 +3,12 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define ARA_ARATRAIL_CURVEFRAME_TRANSPORT_OFFSET UNITYSDK_OFFSET(0x95BAC0)
-#define ARA_ARATRAIL_CURVEFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x95BA40)
+#define ARA_ARATRAIL_CURVEFRAME_TRANSPORT_OFFSET UNITYSDK_OFFSET(0x98E430)
+#define ARA_ARATRAIL_CURVEFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x98E3B0)
 
 namespace Ara
 {
-	inline static constexpr unsigned int AraTrail_CurveFrame_TypeDefinitionIndex = 29894;
+	inline static constexpr unsigned int AraTrail_CurveFrame_TypeDefinitionIndex = 30847;
 
 	struct alignas(4) AraTrail_CurveFrame
 	{

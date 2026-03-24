@@ -6,18 +6,18 @@
 namespace System { class Action; }
 namespace System { class String; }
 
-#define CLASS_1_6D89C3CD54F80A14__CTOR_OFFSET UNITYSDK_OFFSET(0x62FAA00)
+#define CLASS_1_6D89C3CD54F80A14__CTOR_OFFSET UNITYSDK_OFFSET(0x86BD0F0)
 
-inline static constexpr unsigned int Class_1_6D89C3CD54F80A14_TypeDefinitionIndex = 42417;
+inline static constexpr unsigned int Class_1_6D89C3CD54F80A14_TypeDefinitionIndex = 62430;
 
 class Class_1_6D89C3CD54F80A14 : public ::System::Object
 {
 public:
-	::System::String* Field_1_0; // 0x10
-	::System::Action* Field_1_1; // 0x18
+	::System::Action* Field_1_1; // 0x10
+	::System::String* Field_1_0; // 0x18
 	::MoleMole::HollowChessboard::HollowChessboardUID Field_1_2; // 0x20
-	::System::Boolean Field_1_4; // 0x28
-	::System::Boolean Field_1_3; // 0x29
+	::System::Boolean Field_1_3; // 0x28
+	::System::Boolean Field_1_4; // 0x29
 
 	::System::Void _ctor(::System::String* a1, ::MoleMole::HollowChessboard::HollowChessboardUID a2, ::System::Boolean a3, ::System::Action* a4)
 	{

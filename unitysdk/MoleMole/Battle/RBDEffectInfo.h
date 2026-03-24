@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_BATTLE_RBDEFFECTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6532B10)
+#define MOLEMOLE_BATTLE_RBDEFFECTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x81CCF90)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int RBDEffectInfo_TypeDefinitionIndex = 73110;
+	inline static constexpr unsigned int RBDEffectInfo_TypeDefinitionIndex = 66989;
 
 	class RBDEffectInfo : public ::System::Object
 	{

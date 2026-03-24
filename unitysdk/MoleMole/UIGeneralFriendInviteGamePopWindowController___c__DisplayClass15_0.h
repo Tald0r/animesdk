@@ -6,18 +6,18 @@ class Class_1_81D34D116310A358;
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIGENERALFRIENDINVITEGAMEPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA365010)
-#define MOLEMOLE_UIGENERALFRIENDINVITEGAMEPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__ONCLICKCHECKBTN_B__3_OFFSET UNITYSDK_OFFSET(0xA365020)
+#define MOLEMOLE_UIGENERALFRIENDINVITEGAMEPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD12ED10)
+#define MOLEMOLE_UIGENERALFRIENDINVITEGAMEPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__ONCLICKCHECKBTN_B__3_OFFSET UNITYSDK_OFFSET(0xD12ED20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralFriendInviteGamePopWindowController___c__DisplayClass15_0_TypeDefinitionIndex = 47359;
+	inline static constexpr unsigned int UIGeneralFriendInviteGamePopWindowController___c__DisplayClass15_0_TypeDefinitionIndex = 45155;
 
 	class UIGeneralFriendInviteGamePopWindowController___c__DisplayClass15_0 : public ::System::Object
 	{
 	public:
-		::Class_1_81D34D116310A358* currSelectInvite; // 0x10
-		::System::Action* onAcceptShowAction; // 0x18
+		::System::Action* onAcceptShowAction; // 0x10
+		::Class_1_81D34D116310A358* currSelectInvite; // 0x18
 		::System::Action* callOnCompleteAction; // 0x20
 
 		::System::Void _ctor()

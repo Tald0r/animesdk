@@ -5,7 +5,7 @@
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int CallbackArray_1_TypeDefinitionIndex = 27926;
+	inline static constexpr unsigned int CallbackArray_1_TypeDefinitionIndex = 28866;
 
 	template <typename TDelegate>
 	struct CallbackArray_1

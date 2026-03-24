@@ -1,13 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_BE4AEFAF48B2C9DB.h"
+#include "unitysdk/Enum_3_D3D10D3B12657E0D.h"
 #include "unitysdk/MoleMole/Project/Config/PointBaseData.h"
 
-#define MOLEMOLE_PROJECT_CONFIG_CONTROLPOINTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17D6F450)
+#define MOLEMOLE_PROJECT_CONFIG_CONTROLPOINTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18E10B00)
 
 namespace MoleMole::Project::Config
 {
-	inline static constexpr unsigned int ControlPointData_TypeDefinitionIndex = 15879;
+	inline static constexpr unsigned int ControlPointData_TypeDefinitionIndex = 12130;
 
 	class ControlPointData : public ::MoleMole::Project::Config::PointBaseData
 	{
@@ -18,7 +18,7 @@ namespace MoleMole::Project::Config
 		::System::Single handleInY; // 0x2C
 		::System::Single handleOutX; // 0x30
 		::System::Single handleOutY; // 0x34
-		::Enum_3_BE4AEFAF48B2C9DB controlPointColor; // 0x38
+		::Enum_3_D3D10D3B12657E0D controlPointColor; // 0x38
 
 		::System::Void _ctor()
 		{

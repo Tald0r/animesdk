@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_A850FEC42C5E8043.h"
+#include "unitysdk/Enum_3_A843FEC42C53F62F.h"
 #include "unitysdk/System/Object.h"
 
 class Class_1_59ACE1D68DDF9B15;
@@ -11,17 +11,17 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_33F15A5E8512BBA7_METHOD_1_2EA0E19C27E7D93B_OFFSET UNITYSDK_OFFSET(0xAA645E0)
-#define CLASS_1_33F15A5E8512BBA7_METHOD_1_51CFFE2AF748ECD7_OFFSET UNITYSDK_OFFSET(0xAA64670)
-#define CLASS_1_33F15A5E8512BBA7__CTOR_OFFSET UNITYSDK_OFFSET(0xAA645D0)
+#define CLASS_1_33F15A5E8512BBA7_METHOD_1_2EA0E19C27E7D93B_OFFSET UNITYSDK_OFFSET(0x64D8C30)
+#define CLASS_1_33F15A5E8512BBA7_METHOD_1_51CFFE2AF748ECD7_OFFSET UNITYSDK_OFFSET(0x64D8CC0)
+#define CLASS_1_33F15A5E8512BBA7__CTOR_OFFSET UNITYSDK_OFFSET(0x64D8C20)
 
-inline static constexpr unsigned int Class_1_33F15A5E8512BBA7_TypeDefinitionIndex = 68123;
+inline static constexpr unsigned int Class_1_33F15A5E8512BBA7_TypeDefinitionIndex = 65048;
 
 class Class_1_33F15A5E8512BBA7 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::Dictionary_2<::Enum_3_A850FEC42C5E8043, ::System::Func_2<::MoleMole::ActivityWidgetContext*, ::Class_1_C9FCD193B2E091DD*>*>* Field_1_0; // 0x10
-	::System::Collections::Generic::Dictionary_2<::Enum_3_A850FEC42C5E8043, ::System::Action_2<::Class_1_59ACE1D68DDF9B15*, ::MoleMole::UIControllerContextBase*>*>* Field_1_1; // 0x18
+	::System::Collections::Generic::Dictionary_2<::Enum_3_A843FEC42C53F62F, ::System::Action_2<::Class_1_59ACE1D68DDF9B15*, ::MoleMole::UIControllerContextBase*>*>* Field_1_1; // 0x10
+	::System::Collections::Generic::Dictionary_2<::Enum_3_A843FEC42C53F62F, ::System::Func_2<::MoleMole::ActivityWidgetContext*, ::Class_1_C9FCD193B2E091DD*>*>* Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

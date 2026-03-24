@@ -5,7 +5,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int SpanUtils_SortHelper_2_TypeDefinitionIndex = 9035;
+	inline static constexpr unsigned int SpanUtils_SortHelper_2_TypeDefinitionIndex = 9027;
 
 	template <typename T, typename TComparer>
 	class SpanUtils_SortHelper_2 : public ::System::Object

@@ -6,23 +6,23 @@
 
 namespace System { class String; }
 namespace UnityEngine::Events { class UnityAction; }
-template <typename T> class Class_0_16E4307DCC419505_103;
+template <typename T> class Class_0_16E4307DCC41950C_13;
 
-#define CLASS_2_9A3C6D4059C90B52_CLASS_2_D5806CE5D74DA368_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x6C76930)
-#define CLASS_2_9A3C6D4059C90B52_CLASS_2_D5806CE5D74DA368__CTOR_OFFSET UNITYSDK_OFFSET(0x6C76A80)
+#define CLASS_2_9A3C6D4059C90B52_CLASS_2_D5806CE5D74DA368_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x6F7EA80)
+#define CLASS_2_9A3C6D4059C90B52_CLASS_2_D5806CE5D74DA368__CTOR_OFFSET UNITYSDK_OFFSET(0x6F7EBD0)
 
-inline static constexpr unsigned int Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368_TypeDefinitionIndex = 53500;
+inline static constexpr unsigned int Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368_TypeDefinitionIndex = 37849;
 
 class Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368 : public ::Class_1_F57C3EEEB03201AF
 {
 public:
-	::Class_0_16E4307DCC419505_103<::System::Boolean>* Field_2_4; // 0x60
-	::Class_0_16E4307DCC419505_103<::Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368_Enum_3_4864555094AB37B4>* Field_2_3; // 0x68
-	::Class_0_16E4307DCC419505_103<::System::String*>* Field_2_1; // 0x70
-	::Class_0_16E4307DCC419505_103<::System::Boolean>* Field_2_6; // 0x78
-	::Class_0_16E4307DCC419505_103<::Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368_Struct_2_60DF5983B5B82E09>* Field_2_2; // 0x80
-	::UnityEngine::Events::UnityAction* Field_2_5; // 0x88
-	::Class_0_16E4307DCC419505_103<::System::String*>* Field_2_0; // 0x90
+	::Class_0_16E4307DCC41950C_13<::System::String*>* Field_2_1; // 0x60
+	::Class_0_16E4307DCC41950C_13<::System::String*>* Field_2_0; // 0x68
+	::Class_0_16E4307DCC41950C_13<::System::Boolean>* Field_2_4; // 0x70
+	::Class_0_16E4307DCC41950C_13<::Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368_Struct_2_60DF5983B5B82E09>* Field_2_2; // 0x78
+	::UnityEngine::Events::UnityAction* Field_2_5; // 0x80
+	::Class_0_16E4307DCC41950C_13<::Class_2_9A3C6D4059C90B52_Class_2_D5806CE5D74DA368_Enum_3_4864555094AB37B4>* Field_2_3; // 0x88
+	::Class_0_16E4307DCC41950C_13<::System::Boolean>* Field_2_6; // 0x90
 
 	::System::Void _ctor()
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int TouchFlags_TypeDefinitionIndex = 27779;
+	inline static constexpr unsigned int TouchFlags_TypeDefinitionIndex = 28719;
 
 	enum class TouchFlags : ::System::Byte
 	{

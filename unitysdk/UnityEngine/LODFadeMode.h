@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LODFadeMode_TypeDefinitionIndex = 5256;
+	inline static constexpr unsigned int LODFadeMode_TypeDefinitionIndex = 5257;
 
 	enum class LODFadeMode : ::System::Int32
 	{

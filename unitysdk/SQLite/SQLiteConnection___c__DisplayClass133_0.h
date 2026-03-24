@@ -5,12 +5,12 @@
 namespace SQLite { class SQLiteConnection; }
 namespace System::Collections { class IEnumerable; }
 
-#define SQLITE_SQLITECONNECTION___C__DISPLAYCLASS133_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0731A0)
-#define SQLITE_SQLITECONNECTION___C__DISPLAYCLASS133_0__UPDATEALL_B__0_OFFSET UNITYSDK_OFFSET(0x1A0744B0)
+#define SQLITE_SQLITECONNECTION___C__DISPLAYCLASS133_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A63EFC0)
+#define SQLITE_SQLITECONNECTION___C__DISPLAYCLASS133_0__UPDATEALL_B__0_OFFSET UNITYSDK_OFFSET(0x1A6402D0)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int SQLiteConnection___c__DisplayClass133_0_TypeDefinitionIndex = 35219;
+	inline static constexpr unsigned int SQLiteConnection___c__DisplayClass133_0_TypeDefinitionIndex = 36221;
 
 	class SQLiteConnection___c__DisplayClass133_0 : public ::System::Object
 	{

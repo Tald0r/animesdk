@@ -2,14 +2,15 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_1_328B10E9F3553A0D.h"
 
+class Class_1_B4B6517768F4059F;
 namespace MoleMole::GalGame { class MainCityChatPlayableNodeBase; }
 namespace MoleMole::GalGame { class MainCityChatShow3DModelNode; }
 
-#define CLASS_2_EF31D343665AA4E3_METHOD_2_21886A8411E71157_OFFSET UNITYSDK_OFFSET(0x9084110)
-#define CLASS_2_EF31D343665AA4E3_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x90843C0)
-#define CLASS_2_EF31D343665AA4E3__CTOR_OFFSET UNITYSDK_OFFSET(0x9084090)
+#define CLASS_2_EF31D343665AA4E3_METHOD_2_8E22B572EA9F050D_OFFSET UNITYSDK_OFFSET(0x648AC50)
+#define CLASS_2_EF31D343665AA4E3_METHOD_2_E9A575D18A0748D9_OFFSET UNITYSDK_OFFSET(0x648AF10)
+#define CLASS_2_EF31D343665AA4E3__CTOR_OFFSET UNITYSDK_OFFSET(0x648ABD0)
 
-inline static constexpr unsigned int Class_2_EF31D343665AA4E3_TypeDefinitionIndex = 54340;
+inline static constexpr unsigned int Class_2_EF31D343665AA4E3_TypeDefinitionIndex = 72021;
 
 class Class_2_EF31D343665AA4E3 : public ::Class_1_328B10E9F3553A0D
 {
@@ -21,13 +22,13 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::GalGame::MainCityChatPlayableNodeBase*))((::PBYTE)hIl2Cpp + CLASS_2_EF31D343665AA4E3__CTOR_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_2_21886A8411E71157()
+	::System::Void Method_2_8E22B572EA9F050D(::Class_1_B4B6517768F4059F* a1)
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_EF31D343665AA4E3_METHOD_2_21886A8411E71157_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::Class_1_B4B6517768F4059F*))((::PBYTE)hIl2Cpp + CLASS_2_EF31D343665AA4E3_METHOD_2_8E22B572EA9F050D_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_2_CA373AA1C7054598()
+	::System::Void Method_2_E9A575D18A0748D9(::Class_1_B4B6517768F4059F* a1)
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_EF31D343665AA4E3_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::Class_1_B4B6517768F4059F*))((::PBYTE)hIl2Cpp + CLASS_2_EF31D343665AA4E3_METHOD_2_E9A575D18A0748D9_OFFSET))(this, a1);
 	}
 };

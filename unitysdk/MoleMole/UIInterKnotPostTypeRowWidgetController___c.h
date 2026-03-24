@@ -4,24 +4,24 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIINTERKNOTPOSTTYPEROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA1E6630)
-#define MOLEMOLE_UIINTERKNOTPOSTTYPEROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA1E6670)
-#define MOLEMOLE_UIINTERKNOTPOSTTYPEROWWIDGETCONTROLLER___C__ONSCROLLITEMUPDATE_B__6_1_OFFSET UNITYSDK_OFFSET(0xA1E6680)
+#define MOLEMOLE_UIINTERKNOTPOSTTYPEROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9D792A0)
+#define MOLEMOLE_UIINTERKNOTPOSTTYPEROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9D792E0)
+#define MOLEMOLE_UIINTERKNOTPOSTTYPEROWWIDGETCONTROLLER___C__ONSCROLLITEMUPDATE_B__6_1_OFFSET UNITYSDK_OFFSET(0x9D792F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotPostTypeRowWidgetController___c_TypeDefinitionIndex = 50679;
+	inline static constexpr unsigned int UIInterKnotPostTypeRowWidgetController___c_TypeDefinitionIndex = 48662;
 
 	class UIInterKnotPostTypeRowWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIInterKnotPostTypeRowWidgetController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIInterKnotPostTypeRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostTypeRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x38D50);
-		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__6_1()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostTypeRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x38D58);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostTypeRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3B970);
+		}
+		static ::MoleMole::UIInterKnotPostTypeRowWidgetController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIInterKnotPostTypeRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostTypeRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3B978);
 		}
 
 		static ::System::Void _cctor()

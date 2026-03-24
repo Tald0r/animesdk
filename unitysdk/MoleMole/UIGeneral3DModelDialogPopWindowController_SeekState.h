@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneral3DModelDialogPopWindowController_SeekState_TypeDefinitionIndex = 40566;
+	inline static constexpr unsigned int UIGeneral3DModelDialogPopWindowController_SeekState_TypeDefinitionIndex = 42256;
 
 	enum class UIGeneral3DModelDialogPopWindowController_SeekState : ::System::Int32
 	{
-		WaitForSeekProcess = 1,
 		Finish = 0,
+		WaitForSeekProcess = 1,
 	};
 }

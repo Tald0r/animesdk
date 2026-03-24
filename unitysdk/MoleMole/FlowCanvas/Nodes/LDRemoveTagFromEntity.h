@@ -4,12 +4,12 @@
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/MoleMole/GameplayTag.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVETAGFROMENTITY_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC80C90)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVETAGFROMENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0xEC80E90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVETAGFROMENTITY_INVOKE_OFFSET UNITYSDK_OFFSET(0x757F5E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVETAGFROMENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x757F7D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDRemoveTagFromEntity_TypeDefinitionIndex = 72910;
+	inline static constexpr unsigned int LDRemoveTagFromEntity_TypeDefinitionIndex = 58974;
 
 	class LDRemoveTagFromEntity : public ::FlowCanvas::Nodes::CallableActionNode_2<::MoleMole::EntityHandle, ::MoleMole::GameplayTag>
 	{

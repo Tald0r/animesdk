@@ -10,7 +10,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int SerializableDictionary_2_TypeDefinitionIndex = 36189;
+	inline static constexpr unsigned int SerializableDictionary_2_TypeDefinitionIndex = 37209;
 
 	template <typename TK, typename TV>
 	class SerializableDictionary_2 : public ::System::Object

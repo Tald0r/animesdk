@@ -15,38 +15,38 @@ namespace System::Collections::Generic { template <typename T> class HashSet_1; 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x6545810)
-#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x6545820)
-#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x6545CF0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x6546010)
-#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x6545FD0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x81E0ED0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x81E0EE0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x81E13B0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x81E16D0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_ANIMATORZONEWITCHSLOWDOWNKEYOVERRIDE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x81E1690)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex = 76889;
+	inline static constexpr unsigned int AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex = 62698;
 
 	class AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneWitchSlowDownKeyOverride*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43CE0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43CE8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44E10);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43CF0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43CF8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44E18);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43D00);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44E20);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44E28);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneWitchSlowDownKeyOverride_AnimatorZoneWitchSlowDownKeyOverride_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x44E30);
 		}
 
 		::System::Void _ctor()

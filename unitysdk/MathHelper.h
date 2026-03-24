@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MATHHELPER_GETDIGITVALUEBYINDEX_OFFSET UNITYSDK_OFFSET(0x620F510)
+#define MATHHELPER_GETDIGITVALUEBYINDEX_OFFSET UNITYSDK_OFFSET(0x84E2EC0)
 
-inline static constexpr unsigned int MathHelper_TypeDefinitionIndex = 77907;
+inline static constexpr unsigned int MathHelper_TypeDefinitionIndex = 37844;
 
 class MathHelper : public ::System::Object
 {

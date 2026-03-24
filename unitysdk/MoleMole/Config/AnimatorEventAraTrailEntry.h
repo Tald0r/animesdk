@@ -5,19 +5,19 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTARATRAILENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x629F9F0)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTARATRAILENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x629FA90)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTARATRAILENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xCAD21D0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTARATRAILENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xCAD2270)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventAraTrailEntry_TypeDefinitionIndex = 47467;
+	inline static constexpr unsigned int AnimatorEventAraTrailEntry_TypeDefinitionIndex = 54924;
 
 	class AnimatorEventAraTrailEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
 		::System::String* ConfigKey; // 0x58
-		::System::String* Tag; // 0x60
-		::System::String* AttachPoint; // 0x68
+		::System::String* AttachPoint; // 0x60
+		::System::String* Tag; // 0x68
 
 		::System::Void _ctor()
 		{

@@ -3,9 +3,9 @@
 #include "unitysdk/Enum_3_B009262C81039D6C.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_C2A8EAAA55542082__CTOR_OFFSET UNITYSDK_OFFSET(0x3914D0)
+#define STRUCT_2_C2A8EAAA55542082__CTOR_OFFSET UNITYSDK_OFFSET(0x398520)
 
-inline static constexpr unsigned int Struct_2_C2A8EAAA55542082_TypeDefinitionIndex = 62626;
+inline static constexpr unsigned int Struct_2_C2A8EAAA55542082_TypeDefinitionIndex = 47373;
 
 struct alignas(1) Struct_2_C2A8EAAA55542082
 {

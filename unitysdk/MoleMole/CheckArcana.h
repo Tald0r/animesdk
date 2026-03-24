@@ -8,24 +8,24 @@ class Class_3_F97B015544BE936B;
 namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_CHECKARCANA_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x96ED410)
-#define MOLEMOLE_CHECKARCANA_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x96ED600)
-#define MOLEMOLE_CHECKARCANA__CTOR_OFFSET UNITYSDK_OFFSET(0x96ED6D0)
-#define MOLEMOLE_CHECKARCANA___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x96ED710)
-#define MOLEMOLE_CHECKARCANA___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x96ED7A0)
+#define MOLEMOLE_CHECKARCANA_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB07C4A0)
+#define MOLEMOLE_CHECKARCANA_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB07C690)
+#define MOLEMOLE_CHECKARCANA__CTOR_OFFSET UNITYSDK_OFFSET(0xB07C760)
+#define MOLEMOLE_CHECKARCANA___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB07C7A0)
+#define MOLEMOLE_CHECKARCANA___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB07C830)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CheckArcana_TypeDefinitionIndex = 71758;
+	inline static constexpr unsigned int CheckArcana_TypeDefinitionIndex = 74813;
 
 	class CheckArcana : public ::BehaviorDesigner::Runtime::Tasks::Conditional
 	{
 	public:
-		::MoleMole::SharedGameEntity* sharedOwnerEntity; // 0x50
-		::MoleMole::Battle::Entity* _ownerEntity; // 0x58
+		::MoleMole::Battle::Entity* _ownerEntity; // 0x50
+		::MoleMole::SharedGameEntity* sharedOwnerEntity; // 0x58
 		::Class_3_F97B015544BE936B* dataComponent; // 0x60
-		::System::Int32 Position; // 0x68
-		::MoleMole::Config::ArcanaType Type; // 0x6C
+		::MoleMole::Config::ArcanaType Type; // 0x68
+		::System::Int32 Position; // 0x6C
 
 		::System::Void _ctor()
 		{

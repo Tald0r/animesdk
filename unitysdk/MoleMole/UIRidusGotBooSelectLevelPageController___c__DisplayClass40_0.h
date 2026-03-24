@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_689;
+class Class_2_208CC9941471731A_442;
 namespace System { template <typename T> class Predicate_1; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC3AAA10)
-#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__GETDEFAULTTABINDEXANDLEVELINDEX_B__1_OFFSET UNITYSDK_OFFSET(0xC3AAA20)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA440640)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__GETDEFAULTTABINDEXANDLEVELINDEX_B__1_OFFSET UNITYSDK_OFFSET(0xA442A50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController___c__DisplayClass40_0_TypeDefinitionIndex = 43395;
+	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController___c__DisplayClass40_0_TypeDefinitionIndex = 62731;
 
 	class UIRidusGotBooSelectLevelPageController___c__DisplayClass40_0 : public ::System::Object
 	{
 	public:
-		::System::Predicate_1<::Class_2_208CC9941471731A_689*>* __9__1; // 0x10
+		::System::Predicate_1<::Class_2_208CC9941471731A_442*>* __9__1; // 0x10
 		::System::Int32 defaultLevelID; // 0x18
 
 		::System::Void _ctor()
@@ -23,9 +23,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Boolean _GetDefaultTabIndexAndLevelIndex_b__1(::Class_2_208CC9941471731A_689* x)
+		::System::Boolean _GetDefaultTabIndexAndLevelIndex_b__1(::Class_2_208CC9941471731A_442* x)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_689*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__GETDEFAULTTABINDEXANDLEVELINDEX_B__1_OFFSET))(this, x);
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_442*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS40_0__GETDEFAULTTABINDEXANDLEVELINDEX_B__1_OFFSET))(this, x);
 		}
 	};
 }

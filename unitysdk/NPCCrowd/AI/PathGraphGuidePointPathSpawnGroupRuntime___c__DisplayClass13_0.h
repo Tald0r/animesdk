@@ -6,18 +6,18 @@ namespace NPCCrowd::AI { class PathGraphFeaturePointPathConfig; }
 namespace NPCCrowd::AI { class PathGraphGuidePointPathSpawnGroupRuntime; }
 namespace NPCCrowd::AI { class PathGraphSpawnPointComponentRuntime; }
 
-#define NPCCROWD_AI_PATHGRAPHGUIDEPOINTPATHSPAWNGROUPRUNTIME___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x77C7FE0)
-#define NPCCROWD_AI_PATHGRAPHGUIDEPOINTPATHSPAWNGROUPRUNTIME___C__DISPLAYCLASS13_0__TRYSPAWNNPC_B__0_OFFSET UNITYSDK_OFFSET(0x77C7FF0)
+#define NPCCROWD_AI_PATHGRAPHGUIDEPOINTPATHSPAWNGROUPRUNTIME___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC2E64F0)
+#define NPCCROWD_AI_PATHGRAPHGUIDEPOINTPATHSPAWNGROUPRUNTIME___C__DISPLAYCLASS13_0__TRYSPAWNNPC_B__0_OFFSET UNITYSDK_OFFSET(0xC2E8160)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphGuidePointPathSpawnGroupRuntime___c__DisplayClass13_0_TypeDefinitionIndex = 79009;
+	inline static constexpr unsigned int PathGraphGuidePointPathSpawnGroupRuntime___c__DisplayClass13_0_TypeDefinitionIndex = 63042;
 
 	class PathGraphGuidePointPathSpawnGroupRuntime___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
-		::NPCCrowd::AI::PathGraphGuidePointPathSpawnGroupRuntime* __4__this; // 0x10
-		::NPCCrowd::AI::PathGraphSpawnPointComponentRuntime* spawnPoint; // 0x18
+		::NPCCrowd::AI::PathGraphSpawnPointComponentRuntime* spawnPoint; // 0x10
+		::NPCCrowd::AI::PathGraphGuidePointPathSpawnGroupRuntime* __4__this; // 0x18
 		::NPCCrowd::AI::PathGraphFeaturePointPathConfig* pathConfig; // 0x20
 
 		::System::Void _ctor()

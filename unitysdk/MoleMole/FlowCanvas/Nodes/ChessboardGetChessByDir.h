@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardPureFunctionNode_4.h"
 #include "unitysdk/Share/GridDir.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYDIR_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCD7D70)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYDIR__CTOR_OFFSET UNITYSDK_OFFSET(0xCCD80C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYDIR_INVOKE_OFFSET UNITYSDK_OFFSET(0xA007820)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYDIR__CTOR_OFFSET UNITYSDK_OFFSET(0xA007B70)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardGetChessByDir_TypeDefinitionIndex = 77649;
+	inline static constexpr unsigned int ChessboardGetChessByDir_TypeDefinitionIndex = 38375;
 
 	class ChessboardGetChessByDir : public ::MoleMole::FlowCanvas::ChessboardPureFunctionNode_4<::System::Int32, ::System::Int32, ::Share::GridDir, ::System::Int32>
 	{

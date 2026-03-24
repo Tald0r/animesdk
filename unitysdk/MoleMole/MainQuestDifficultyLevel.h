@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MainQuestDifficultyLevel_TypeDefinitionIndex = 58414;
+	inline static constexpr unsigned int MainQuestDifficultyLevel_TypeDefinitionIndex = 63842;
 
 	enum class MainQuestDifficultyLevel : ::System::Int32
 	{

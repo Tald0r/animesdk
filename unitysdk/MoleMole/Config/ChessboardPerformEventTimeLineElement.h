@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Config/ChessboardTimeLineElement.h"
 
-#define MOLEMOLE_CONFIG_CHESSBOARDPERFORMEVENTTIMELINEELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x623EB20)
+#define MOLEMOLE_CONFIG_CHESSBOARDPERFORMEVENTTIMELINEELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0xC22BD80)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ChessboardPerformEventTimeLineElement_TypeDefinitionIndex = 69680;
+	inline static constexpr unsigned int ChessboardPerformEventTimeLineElement_TypeDefinitionIndex = 69947;
 
 	class ChessboardPerformEventTimeLineElement : public ::MoleMole::Config::ChessboardTimeLineElement
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/AnchoredJoint2D.h"
 
-#define UNITYENGINE_FIXEDJOINT2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA911D0)
+#define UNITYENGINE_FIXEDJOINT2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1B077AB0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int FixedJoint2D_TypeDefinitionIndex = 7640;
+	inline static constexpr unsigned int FixedJoint2D_TypeDefinitionIndex = 7647;
 
 	class FixedJoint2D : public ::UnityEngine::AnchoredJoint2D
 	{

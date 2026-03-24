@@ -4,7 +4,7 @@
 
 namespace Foundation::ViewObject::Structures
 {
-	inline static constexpr unsigned int FMemberReadyEventArgs_TypeDefinitionIndex = 75269;
+	inline static constexpr unsigned int FMemberReadyEventArgs_TypeDefinitionIndex = 70775;
 
 	struct alignas(4) FMemberReadyEventArgs
 	{

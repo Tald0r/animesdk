@@ -9,7 +9,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 
 namespace System::Collections::Generic
 {
-	inline static constexpr unsigned int CollectionExtensions_TypeDefinitionIndex = 78227;
+	inline static constexpr unsigned int CollectionExtensions_TypeDefinitionIndex = 42183;
 
 	class CollectionExtensions : public ::System::Object
 	{

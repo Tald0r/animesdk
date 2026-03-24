@@ -1,41 +1,31 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Struct_2_DAFDD2A40891B364.h"
-#include "unitysdk/Struct_2_EB5102E89A0D104B_Enum_3_65426FEB15ABEF11.h"
+#include "unitysdk/Struct_2_EB5102E89A0D104B_Enum_3_CB83E5A36B8A0CCF.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_1_F89B971D2BF18070;
-class Class_3_4CEBE66D8E0DD3A7;
+class Class_1_0653B4DCF7808BED;
+class Class_3_0029CC0B0DA27E39;
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class IReadOnlyDictionary_2; }
 
-#define STRUCT_2_EB5102E89A0D104B_METHOD_2_37D8071CB6D517EF_OFFSET UNITYSDK_OFFSET(0x2CFAE0)
-#define STRUCT_2_EB5102E89A0D104B_METHOD_2_3D78D2E0F9F95F07_OFFSET UNITYSDK_OFFSET(0x2CFB00)
-#define STRUCT_2_EB5102E89A0D104B_METHOD_2_4362671001CC0EBF_OFFSET UNITYSDK_OFFSET(0x61FF650)
-#define STRUCT_2_EB5102E89A0D104B_METHOD_2_602A336CBD30C930_OFFSET UNITYSDK_OFFSET(0x2CFB20)
-#define STRUCT_2_EB5102E89A0D104B_METHOD_2_96E8372C380BBC46_OFFSET UNITYSDK_OFFSET(0x2CFB30)
-#define STRUCT_2_EB5102E89A0D104B_METHOD_2_D3B665142403311C_OFFSET UNITYSDK_OFFSET(0x2CFAF0)
+#define STRUCT_2_EB5102E89A0D104B_METHOD_2_37D8071CB6D517EF_OFFSET UNITYSDK_OFFSET(0x36EA40)
+#define STRUCT_2_EB5102E89A0D104B_METHOD_2_3D78D2E0F9F95F07_OFFSET UNITYSDK_OFFSET(0x31BC00)
+#define STRUCT_2_EB5102E89A0D104B_METHOD_2_4362671001CC0EBF_OFFSET UNITYSDK_OFFSET(0x9356670)
+#define STRUCT_2_EB5102E89A0D104B_METHOD_2_602A336CBD30C930_OFFSET UNITYSDK_OFFSET(0x34B600)
+#define STRUCT_2_EB5102E89A0D104B_METHOD_2_96E8372C380BBC46_OFFSET UNITYSDK_OFFSET(0x36EA50)
+#define STRUCT_2_EB5102E89A0D104B_METHOD_2_D3B665142403311C_OFFSET UNITYSDK_OFFSET(0x36EA30)
 
-inline static constexpr unsigned int Struct_2_EB5102E89A0D104B_TypeDefinitionIndex = 51699;
+inline static constexpr unsigned int Struct_2_EB5102E89A0D104B_TypeDefinitionIndex = 38525;
 
 struct alignas(8) Struct_2_EB5102E89A0D104B
 {
 	::Struct_2_DAFDD2A40891B364 Field_2_0; // 0x10
-	::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>* Field_2_1; // 0x28
+	::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>* Field_2_1; // 0x28
 
-	static ::Struct_2_EB5102E89A0D104B Method_2_4362671001CC0EBF(::Class_3_4CEBE66D8E0DD3A7* a1, ::System::Collections::Generic::IReadOnlyDictionary_2<::System::UInt32, ::System::UInt32>* a2)
+	::System::Void Method_2_602A336CBD30C930(::Struct_2_DAFDD2A40891B364 a1)
 	{
-		return ((::Struct_2_EB5102E89A0D104B(*)(::Class_3_4CEBE66D8E0DD3A7*, ::System::Collections::Generic::IReadOnlyDictionary_2<::System::UInt32, ::System::UInt32>*))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_4362671001CC0EBF_OFFSET))(a1, a2);
-	}
-
-	::System::Boolean Method_2_37D8071CB6D517EF(::System::Int32 a1, ::System::Int32 a2, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>* a3, ::Struct_2_EB5102E89A0D104B_Enum_3_65426FEB15ABEF11 a4)
-	{
-		return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>*, ::Struct_2_EB5102E89A0D104B_Enum_3_65426FEB15ABEF11))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_37D8071CB6D517EF_OFFSET))(this, a1, a2, a3, a4);
-	}
-
-	::System::Void Method_2_D3B665142403311C(::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>*))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_D3B665142403311C_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::Struct_2_DAFDD2A40891B364))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_602A336CBD30C930_OFFSET))(this, a1);
 	}
 
 	::Struct_2_DAFDD2A40891B364 Method_2_3D78D2E0F9F95F07()
@@ -43,15 +33,25 @@ struct alignas(8) Struct_2_EB5102E89A0D104B
 		return ((::Struct_2_DAFDD2A40891B364(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_3D78D2E0F9F95F07_OFFSET))(this);
 	}
 
-	::System::Void Method_2_602A336CBD30C930(::Struct_2_DAFDD2A40891B364 a1)
+	static ::Struct_2_EB5102E89A0D104B Method_2_4362671001CC0EBF(::Class_3_0029CC0B0DA27E39* a1, ::System::Collections::Generic::IReadOnlyDictionary_2<::System::UInt32, ::System::UInt32>* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::Struct_2_DAFDD2A40891B364))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_602A336CBD30C930_OFFSET))(this, a1);
+		return ((::Struct_2_EB5102E89A0D104B(*)(::Class_3_0029CC0B0DA27E39*, ::System::Collections::Generic::IReadOnlyDictionary_2<::System::UInt32, ::System::UInt32>*))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_4362671001CC0EBF_OFFSET))(a1, a2);
+	}
+
+	::System::Void Method_2_D3B665142403311C(::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>*))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_D3B665142403311C_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_2_37D8071CB6D517EF(::System::Int32 a1, ::System::Int32 a2, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>* a3, ::Struct_2_EB5102E89A0D104B_Enum_3_CB83E5A36B8A0CCF a4)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>*, ::Struct_2_EB5102E89A0D104B_Enum_3_CB83E5A36B8A0CCF))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_37D8071CB6D517EF_OFFSET))(this, a1, a2, a3, a4);
 	}
 
 	/*
-	::System::Nullable_1<::Struct_2_A1A45D8655270887> Method_2_96E8372C380BBC46(::System::UInt32 a1, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>* a2)
+	::System::Nullable_1<::Struct_2_A1A45D8655270887> Method_2_96E8372C380BBC46(::System::UInt32 a1, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>* a2)
 	{
-		return ((::System::Nullable_1<::Struct_2_A1A45D8655270887>(*)(::PVOID, ::System::UInt32, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_F89B971D2BF18070*>*))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_96E8372C380BBC46_OFFSET))(this, a1, a2);
+		return ((::System::Nullable_1<::Struct_2_A1A45D8655270887>(*)(::PVOID, ::System::UInt32, ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_1_0653B4DCF7808BED*>*))((::PBYTE)hIl2Cpp + STRUCT_2_EB5102E89A0D104B_METHOD_2_96E8372C380BBC46_OFFSET))(this, a1, a2);
 	}
 	*/
 };

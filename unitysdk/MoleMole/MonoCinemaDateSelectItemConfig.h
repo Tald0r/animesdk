@@ -5,11 +5,11 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class RectTransform; }
 
-#define MOLEMOLE_MONOCINEMADATESELECTITEMCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x82E4CB0)
+#define MOLEMOLE_MONOCINEMADATESELECTITEMCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA39F590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoCinemaDateSelectItemConfig_TypeDefinitionIndex = 49859;
+	inline static constexpr unsigned int MonoCinemaDateSelectItemConfig_TypeDefinitionIndex = 44735;
 
 	class MonoCinemaDateSelectItemConfig : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

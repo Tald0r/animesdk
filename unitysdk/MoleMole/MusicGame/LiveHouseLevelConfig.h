@@ -1,13 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_5F83A003C5E29080_1.h"
+#include "unitysdk/Enum_3_5F83A003C5E29080_2.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_MUSICGAME_LIVEHOUSELEVELCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3B550)
+#define MOLEMOLE_MUSICGAME_LIVEHOUSELEVELCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x98513E0)
 
 namespace MoleMole::MusicGame
 {
-	inline static constexpr unsigned int LiveHouseLevelConfig_TypeDefinitionIndex = 56616;
+	inline static constexpr unsigned int LiveHouseLevelConfig_TypeDefinitionIndex = 72344;
 
 	class LiveHouseLevelConfig : public ::System::Object
 	{
@@ -15,7 +15,7 @@ namespace MoleMole::MusicGame
 		::System::Boolean IsLockHP; // 0x10
 		::System::Boolean IsDisableResultUI; // 0x11
 		::System::Boolean IsDisableSkill; // 0x12
-		::Enum_3_5F83A003C5E29080_1 ExitType; // 0x14
+		::Enum_3_5F83A003C5E29080_2 ExitType; // 0x14
 
 		::System::Void _ctor()
 		{

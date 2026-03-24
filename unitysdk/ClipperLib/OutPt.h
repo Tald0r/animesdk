@@ -3,11 +3,11 @@
 #include "unitysdk/ClipperLib/IntPoint.h"
 #include "unitysdk/System/Object.h"
 
-#define CLIPPERLIB_OUTPT__CTOR_OFFSET UNITYSDK_OFFSET(0x19BA9020)
+#define CLIPPERLIB_OUTPT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A18D670)
 
 namespace ClipperLib
 {
-	inline static constexpr unsigned int OutPt_TypeDefinitionIndex = 29754;
+	inline static constexpr unsigned int OutPt_TypeDefinitionIndex = 30707;
 
 	class OutPt : public ::System::Object
 	{

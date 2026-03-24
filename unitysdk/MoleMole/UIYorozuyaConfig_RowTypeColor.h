@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIYOROZUYACONFIG_ROWTYPECOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0xF0A28D0)
+#define MOLEMOLE_UIYOROZUYACONFIG_ROWTYPECOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0xEA1A340)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaConfig_RowTypeColor_TypeDefinitionIndex = 48135;
+	inline static constexpr unsigned int UIYorozuyaConfig_RowTypeColor_TypeDefinitionIndex = 71687;
 
 	class UIYorozuyaConfig_RowTypeColor : public ::System::Object
 	{

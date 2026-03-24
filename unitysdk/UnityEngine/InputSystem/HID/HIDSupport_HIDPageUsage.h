@@ -4,12 +4,12 @@
 #include "unitysdk/UnityEngine/InputSystem/HID/HID_GenericDesktop.h"
 #include "unitysdk/UnityEngine/InputSystem/HID/HID_UsagePage.h"
 
-#define UNITYENGINE_INPUTSYSTEM_HID_HIDSUPPORT_HIDPAGEUSAGE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8D5430)
-#define UNITYENGINE_INPUTSYSTEM_HID_HIDSUPPORT_HIDPAGEUSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3730)
+#define UNITYENGINE_INPUTSYSTEM_HID_HIDSUPPORT_HIDPAGEUSAGE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x907930)
+#define UNITYENGINE_INPUTSYSTEM_HID_HIDSUPPORT_HIDPAGEUSAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x2F3C30)
 
 namespace UnityEngine::InputSystem::HID
 {
-	inline static constexpr unsigned int HIDSupport_HIDPageUsage_TypeDefinitionIndex = 27693;
+	inline static constexpr unsigned int HIDSupport_HIDPageUsage_TypeDefinitionIndex = 28633;
 
 	struct alignas(4) HIDSupport_HIDPageUsage
 	{

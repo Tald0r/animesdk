@@ -6,11 +6,11 @@ namespace System { class String; }
 namespace System::Diagnostics { class Stopwatch; }
 namespace System::Text { class StringBuilder; }
 
-#define CLASS_1_DC1970CC0568CA7E_DISPOSE_OFFSET UNITYSDK_OFFSET(0xD750250)
-#define CLASS_1_DC1970CC0568CA7E_METHOD_1_DB5DC8D2DC7EC5EF_OFFSET UNITYSDK_OFFSET(0xD750460)
-#define CLASS_1_DC1970CC0568CA7E__CTOR_OFFSET UNITYSDK_OFFSET(0xD750140)
+#define CLASS_1_DC1970CC0568CA7E_DISPOSE_OFFSET UNITYSDK_OFFSET(0x79863B0)
+#define CLASS_1_DC1970CC0568CA7E_METHOD_1_DB5DC8D2DC7EC5EF_OFFSET UNITYSDK_OFFSET(0x79865C0)
+#define CLASS_1_DC1970CC0568CA7E__CTOR_OFFSET UNITYSDK_OFFSET(0x79862A0)
 
-inline static constexpr unsigned int Class_1_DC1970CC0568CA7E_TypeDefinitionIndex = 55908;
+inline static constexpr unsigned int Class_1_DC1970CC0568CA7E_TypeDefinitionIndex = 68006;
 
 class Class_1_DC1970CC0568CA7E : public ::System::Object
 {
@@ -18,8 +18,8 @@ public:
 	// static const ::System::String* Field_1_0; // 0x0
 	// static const ::System::String* Field_1_1; // 0x0
 	::System::String* Field_1_4; // 0x10
-	::System::Diagnostics::Stopwatch* Field_1_3; // 0x18
-	::System::Text::StringBuilder* Field_1_2; // 0x20
+	::System::Text::StringBuilder* Field_1_2; // 0x18
+	::System::Diagnostics::Stopwatch* Field_1_3; // 0x20
 
 	::System::Void _ctor(::System::String* a1)
 	{

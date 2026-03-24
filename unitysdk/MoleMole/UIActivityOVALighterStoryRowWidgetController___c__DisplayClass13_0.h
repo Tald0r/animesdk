@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_147;
+class Class_2_208CC9941471731A_859;
 
-#define MOLEMOLE_UIACTIVITYOVALIGHTERSTORYROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD3C2750)
-#define MOLEMOLE_UIACTIVITYOVALIGHTERSTORYROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__OPENGOSTORYWIDGET_B__0_OFFSET UNITYSDK_OFFSET(0xD3C2760)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERSTORYROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDEE2B70)
+#define MOLEMOLE_UIACTIVITYOVALIGHTERSTORYROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__OPENGOSTORYWIDGET_B__0_OFFSET UNITYSDK_OFFSET(0xDEE2B80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityOVALighterStoryRowWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 46411;
+	inline static constexpr unsigned int UIActivityOVALighterStoryRowWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 46039;
 
 	class UIActivityOVALighterStoryRowWidgetController___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
-		::Class_2_208CC9941471731A_147* aSAStoryDisplayConfig; // 0x10
+		::Class_2_208CC9941471731A_859* aSAStoryDisplayConfig; // 0x10
 
 		::System::Void _ctor()
 		{

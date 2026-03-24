@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_UIELEMENTS_UIR_POOLITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x189346E0)
+#define UNITYENGINE_UIELEMENTS_UIR_POOLITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x18E8C620)
 
 namespace UnityEngine::UIElements::UIR
 {
-	inline static constexpr unsigned int PoolItem_TypeDefinitionIndex = 23915;
+	inline static constexpr unsigned int PoolItem_TypeDefinitionIndex = 24598;
 
 	class PoolItem : public ::System::Object
 	{

@@ -6,7 +6,7 @@ namespace UnityEngine { class Texture; }
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int GaussianBlurBehaviour_Struct_2_52AD02145F5FCE3A_2_TypeDefinitionIndex = 38880;
+	inline static constexpr unsigned int GaussianBlurBehaviour_Struct_2_52AD02145F5FCE3A_2_TypeDefinitionIndex = 40293;
 
 	struct alignas(8) GaussianBlurBehaviour_Struct_2_52AD02145F5FCE3A_2
 	{

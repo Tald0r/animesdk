@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FluffyUnderware/Curvy/CurvyShape.h"
 
-#define FLUFFYUNDERWARE_CURVY_CURVYSHAPE2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1B14C110)
+#define FLUFFYUNDERWARE_CURVY_CURVYSHAPE2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1B76A930)
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int CurvyShape2D_TypeDefinitionIndex = 35635;
+	inline static constexpr unsigned int CurvyShape2D_TypeDefinitionIndex = 36655;
 
 	class CurvyShape2D : public ::FluffyUnderware::Curvy::CurvyShape
 	{

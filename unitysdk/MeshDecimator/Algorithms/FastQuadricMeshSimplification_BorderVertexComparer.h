@@ -3,20 +3,20 @@
 #include "unitysdk/MeshDecimator/Algorithms/FastQuadricMeshSimplification_BorderVertex.h"
 #include "unitysdk/System/Object.h"
 
-#define MESHDECIMATOR_ALGORITHMS_FASTQUADRICMESHSIMPLIFICATION_BORDERVERTEXCOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x199F3860)
-#define MESHDECIMATOR_ALGORITHMS_FASTQUADRICMESHSIMPLIFICATION_BORDERVERTEXCOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x199F3890)
-#define MESHDECIMATOR_ALGORITHMS_FASTQUADRICMESHSIMPLIFICATION_BORDERVERTEXCOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x199F3880)
+#define MESHDECIMATOR_ALGORITHMS_FASTQUADRICMESHSIMPLIFICATION_BORDERVERTEXCOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x19FE3520)
+#define MESHDECIMATOR_ALGORITHMS_FASTQUADRICMESHSIMPLIFICATION_BORDERVERTEXCOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19FE3550)
+#define MESHDECIMATOR_ALGORITHMS_FASTQUADRICMESHSIMPLIFICATION_BORDERVERTEXCOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x19FE3540)
 
 namespace MeshDecimator::Algorithms
 {
-	inline static constexpr unsigned int FastQuadricMeshSimplification_BorderVertexComparer_TypeDefinitionIndex = 31786;
+	inline static constexpr unsigned int FastQuadricMeshSimplification_BorderVertexComparer_TypeDefinitionIndex = 32740;
 
 	class FastQuadricMeshSimplification_BorderVertexComparer : public ::System::Object
 	{
 	public:
 		static ::MeshDecimator::Algorithms::FastQuadricMeshSimplification_BorderVertexComparer** StaticGet_instance()
 		{
-			return (::MeshDecimator::Algorithms::FastQuadricMeshSimplification_BorderVertexComparer**)Il2CppClass::FromTypeDefinitionIndex(FastQuadricMeshSimplification_BorderVertexComparer_TypeDefinitionIndex)->GetStaticField(0x23C90);
+			return (::MeshDecimator::Algorithms::FastQuadricMeshSimplification_BorderVertexComparer**)Il2CppClass::FromTypeDefinitionIndex(FastQuadricMeshSimplification_BorderVertexComparer_TypeDefinitionIndex)->GetStaticField(0x255B0);
 		}
 
 		::System::Void _ctor()

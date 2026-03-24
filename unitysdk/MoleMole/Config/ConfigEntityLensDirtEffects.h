@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigEntityLensDirtEffect; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYLENSDIRTEFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0xCD04300)
+#define MOLEMOLE_CONFIG_CONFIGENTITYLENSDIRTEFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0xE35B8B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityLensDirtEffects_TypeDefinitionIndex = 65740;
+	inline static constexpr unsigned int ConfigEntityLensDirtEffects_TypeDefinitionIndex = 56499;
 
 	class ConfigEntityLensDirtEffects : public ::Foundation::MihoyoSerializedScriptableObject
 	{

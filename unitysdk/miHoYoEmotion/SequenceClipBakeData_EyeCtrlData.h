@@ -3,21 +3,21 @@
 #include "unitysdk/UnityEngine/Vector3.h"
 #include "unitysdk/miHoYoEmotion/SequenceBakeData_BakeData.h"
 
-#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA_LERP_OFFSET UNITYSDK_OFFSET(0x18AD3F20)
-#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA_RESETDATA_OFFSET UNITYSDK_OFFSET(0x18AD3C90)
-#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x18AF6BB0)
-#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18AD43A0)
+#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA_LERP_OFFSET UNITYSDK_OFFSET(0x18FBE5D0)
+#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA_RESETDATA_OFFSET UNITYSDK_OFFSET(0x18FBE340)
+#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FE1520)
+#define MIHOYOEMOTION_SEQUENCECLIPBAKEDATA_EYECTRLDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18FBEA50)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int SequenceClipBakeData_EyeCtrlData_TypeDefinitionIndex = 36192;
+	inline static constexpr unsigned int SequenceClipBakeData_EyeCtrlData_TypeDefinitionIndex = 37212;
 
 	class SequenceClipBakeData_EyeCtrlData : public ::miHoYoEmotion::SequenceBakeData_BakeData
 	{
 	public:
 		static ::miHoYoEmotion::SequenceClipBakeData_EyeCtrlData** StaticGet_dummyData()
 		{
-			return (::miHoYoEmotion::SequenceClipBakeData_EyeCtrlData**)Il2CppClass::FromTypeDefinitionIndex(SequenceClipBakeData_EyeCtrlData_TypeDefinitionIndex)->GetStaticField(0x26C70);
+			return (::miHoYoEmotion::SequenceClipBakeData_EyeCtrlData**)Il2CppClass::FromTypeDefinitionIndex(SequenceClipBakeData_EyeCtrlData_TypeDefinitionIndex)->GetStaticField(0x286A0);
 		}
 		::System::Single startTime; // 0x18
 		::UnityEngine::Vector3 leftEyeRot; // 0x1C

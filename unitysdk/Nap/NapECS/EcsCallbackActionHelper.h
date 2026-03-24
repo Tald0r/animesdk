@@ -7,7 +7,7 @@ namespace System { template <typename T> class Action_1; }
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsCallbackActionHelper_TypeDefinitionIndex = 34163;
+	inline static constexpr unsigned int EcsCallbackActionHelper_TypeDefinitionIndex = 35160;
 
 	class EcsCallbackActionHelper : public ::System::Object
 	{

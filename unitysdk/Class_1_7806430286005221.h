@@ -4,20 +4,20 @@
 
 namespace System { class String; }
 
-#define CLASS_1_7806430286005221__CCTOR_OFFSET UNITYSDK_OFFSET(0x7EC25D0)
+#define CLASS_1_7806430286005221__CCTOR_OFFSET UNITYSDK_OFFSET(0x6299C30)
 
-inline static constexpr unsigned int Class_1_7806430286005221_TypeDefinitionIndex = 77997;
+inline static constexpr unsigned int Class_1_7806430286005221_TypeDefinitionIndex = 73674;
 
 class Class_1_7806430286005221 : public ::System::Object
 {
 public:
-	static ::System::Int32* StaticGet_Field_1_3()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_7806430286005221_TypeDefinitionIndex)->GetStaticField(0x9190);
-	}
 	static ::System::Int32* StaticGet_Field_1_2()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_7806430286005221_TypeDefinitionIndex)->GetStaticField(0x9194);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_7806430286005221_TypeDefinitionIndex)->GetStaticField(0x9360);
+	}
+	static ::System::Int32* StaticGet_Field_1_3()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_7806430286005221_TypeDefinitionIndex)->GetStaticField(0x9364);
 	}
 	// static const ::System::Int32 Field_1_0 = 0xFB771; // 0x0
 	// static const ::System::Int32 Field_1_1 = 0xF4C0F; // 0x0

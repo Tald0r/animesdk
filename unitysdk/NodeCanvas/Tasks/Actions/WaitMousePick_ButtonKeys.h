@@ -3,12 +3,12 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int WaitMousePick_ButtonKeys_TypeDefinitionIndex = 25438;
+	inline static constexpr unsigned int WaitMousePick_ButtonKeys_TypeDefinitionIndex = 27622;
 
 	enum class WaitMousePick_ButtonKeys : ::System::Int32
 	{
 		Middle = 2,
-		Left = 0,
 		Right = 1,
+		Left = 0,
 	};
 }

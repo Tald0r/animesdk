@@ -9,7 +9,7 @@ namespace UnityEngine { class Object; }
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int IBehavior_TypeDefinitionIndex = 30210;
+	inline static constexpr unsigned int IBehavior_TypeDefinitionIndex = 31163;
 
 	class IBehavior
 	{

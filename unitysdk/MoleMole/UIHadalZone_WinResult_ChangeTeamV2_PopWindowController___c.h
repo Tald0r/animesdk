@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHADALZONE_WINRESULT_CHANGETEAMV2_POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAA13D60)
-#define MOLEMOLE_UIHADALZONE_WINRESULT_CHANGETEAMV2_POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAA13DA0)
-#define MOLEMOLE_UIHADALZONE_WINRESULT_CHANGETEAMV2_POPWINDOWCONTROLLER___C__ONUIOPEN_B__5_1_OFFSET UNITYSDK_OFFSET(0xAA13DB0)
+#define MOLEMOLE_UIHADALZONE_WINRESULT_CHANGETEAMV2_POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7F60260)
+#define MOLEMOLE_UIHADALZONE_WINRESULT_CHANGETEAMV2_POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7F602A0)
+#define MOLEMOLE_UIHADALZONE_WINRESULT_CHANGETEAMV2_POPWINDOWCONTROLLER___C__ONUIOPEN_B__5_1_OFFSET UNITYSDK_OFFSET(0x7F602B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c_TypeDefinitionIndex = 56611;
+	inline static constexpr unsigned int UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c_TypeDefinitionIndex = 75242;
 
 	class UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__5_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x349C0);
-		}
 		static ::MoleMole::UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x349C8);
+			return (::MoleMole::UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37320);
+		}
+		static ::System::Action** StaticGet___9__5_1()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_WinResult_ChangeTeamV2_PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37328);
 		}
 
 		static ::System::Void _cctor()

@@ -3,7 +3,7 @@
 
 namespace MoleMole::MathUtil
 {
-	inline static constexpr unsigned int FloatExtension_eEpsType_TypeDefinitionIndex = 66848;
+	inline static constexpr unsigned int FloatExtension_eEpsType_TypeDefinitionIndex = 42766;
 
 	enum class FloatExtension_eEpsType : ::System::Int32
 	{

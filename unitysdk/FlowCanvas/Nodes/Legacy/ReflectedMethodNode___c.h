@@ -6,29 +6,29 @@ namespace System { class Type; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Reflection { class ParameterInfo; }
 
-#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1974A810)
-#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1974A850)
-#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__TRYCREATEJIT_B__2_0_OFFSET UNITYSDK_OFFSET(0x1974A860)
-#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__TRYCREATEJIT_B__2_1_OFFSET UNITYSDK_OFFSET(0x1974A890)
+#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C186A0)
+#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19C186E0)
+#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__TRYCREATEJIT_B__2_0_OFFSET UNITYSDK_OFFSET(0x19C186F0)
+#define FLOWCANVAS_NODES_LEGACY_REFLECTEDMETHODNODE___C__TRYCREATEJIT_B__2_1_OFFSET UNITYSDK_OFFSET(0x19C18720)
 
 namespace FlowCanvas::Nodes::Legacy
 {
-	inline static constexpr unsigned int ReflectedMethodNode___c_TypeDefinitionIndex = 25614;
+	inline static constexpr unsigned int ReflectedMethodNode___c_TypeDefinitionIndex = 26746;
 
 	class ReflectedMethodNode___c : public ::System::Object
 	{
 	public:
 		static ::FlowCanvas::Nodes::Legacy::ReflectedMethodNode___c** StaticGet___9()
 		{
-			return (::FlowCanvas::Nodes::Legacy::ReflectedMethodNode___c**)Il2CppClass::FromTypeDefinitionIndex(ReflectedMethodNode___c_TypeDefinitionIndex)->GetStaticField(0x1E930);
+			return (::FlowCanvas::Nodes::Legacy::ReflectedMethodNode___c**)Il2CppClass::FromTypeDefinitionIndex(ReflectedMethodNode___c_TypeDefinitionIndex)->GetStaticField(0x1F430);
 		}
 		static ::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>** StaticGet___9__2_1()
 		{
-			return (::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(ReflectedMethodNode___c_TypeDefinitionIndex)->GetStaticField(0x1E938);
+			return (::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(ReflectedMethodNode___c_TypeDefinitionIndex)->GetStaticField(0x1F438);
 		}
 		static ::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>** StaticGet___9__2_0()
 		{
-			return (::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(ReflectedMethodNode___c_TypeDefinitionIndex)->GetStaticField(0x1E940);
+			return (::System::Func_2<::System::Reflection::ParameterInfo*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(ReflectedMethodNode___c_TypeDefinitionIndex)->GetStaticField(0x1F440);
 		}
 
 		static ::System::Void _cctor()

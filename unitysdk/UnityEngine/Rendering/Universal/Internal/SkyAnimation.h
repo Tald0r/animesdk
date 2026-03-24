@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SKYANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x187C7490)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SKYANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x18D261A0)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int SkyAnimation_TypeDefinitionIndex = 28947;
+	inline static constexpr unsigned int SkyAnimation_TypeDefinitionIndex = 29898;
 
 	class SkyAnimation : public ::UnityEngine::MonoBehaviour
 	{

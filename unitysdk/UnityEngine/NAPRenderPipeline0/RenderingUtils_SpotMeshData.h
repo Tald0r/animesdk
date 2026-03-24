@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Mesh; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_RENDERINGUTILS_SPOTMESHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19F4BEE0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RENDERINGUTILS_SPOTMESHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A528CB0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int RenderingUtils_SpotMeshData_TypeDefinitionIndex = 5976;
+	inline static constexpr unsigned int RenderingUtils_SpotMeshData_TypeDefinitionIndex = 5979;
 
 	class RenderingUtils_SpotMeshData : public ::System::Object
 	{

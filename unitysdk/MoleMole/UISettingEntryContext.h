@@ -5,19 +5,19 @@
 
 namespace MoleMole { class SystemSettingEntryBase; }
 
-#define MOLEMOLE_UISETTINGENTRYCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBEA9950)
+#define MOLEMOLE_UISETTINGENTRYCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA69E850)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISettingEntryContext_TypeDefinitionIndex = 64046;
+	inline static constexpr unsigned int UISettingEntryContext_TypeDefinitionIndex = 38975;
 
 	class UISettingEntryContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::MoleMole::SystemSettingEntryBase* SettingEntry; // 0x28
-		::System::Boolean IsFromLoginPage; // 0x30
-		::MoleMole::ESystemSettingType SystemSettingType; // 0x34
-		::System::Int32 maxHeight; // 0x38
+		::System::Int32 maxHeight; // 0x30
+		::System::Boolean IsFromLoginPage; // 0x34
+		::MoleMole::ESystemSettingType SystemSettingType; // 0x38
 		::System::Int32 ParentLayer; // 0x3C
 
 		::System::Void _ctor()

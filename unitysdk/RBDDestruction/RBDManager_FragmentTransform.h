@@ -6,7 +6,7 @@
 
 namespace RBDDestruction
 {
-	inline static constexpr unsigned int RBDManager_FragmentTransform_TypeDefinitionIndex = 28251;
+	inline static constexpr unsigned int RBDManager_FragmentTransform_TypeDefinitionIndex = 29192;
 
 	struct alignas(4) RBDManager_FragmentTransform
 	{

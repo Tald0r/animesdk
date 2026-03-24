@@ -4,11 +4,11 @@
 
 namespace MoleMole::Utils { class StretchDataTableEntry; }
 
-#define MOLEMOLE_UTILS_STRETCHDATATABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xEE6F2C0)
+#define MOLEMOLE_UTILS_STRETCHDATATABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xAA961F0)
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int StretchDataTable_TypeDefinitionIndex = 61111;
+	inline static constexpr unsigned int StretchDataTable_TypeDefinitionIndex = 55126;
 
 	class StretchDataTable : public ::MoleMole::Utils::NapDictionaryBasedDataTable_1<::MoleMole::Utils::StretchDataTableEntry*>
 	{

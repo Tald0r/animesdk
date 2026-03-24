@@ -4,21 +4,21 @@
 #include "unitysdk/MoleMole/UICpInfoChildWindowController_UIViewInfo.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADF7AA0)
-#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADF7AE0)
-#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C___CCTOR_B__53_0_OFFSET UNITYSDK_OFFSET(0x1ADF7AF0)
-#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C___CCTOR_B__53_1_OFFSET UNITYSDK_OFFSET(0x1ADF7B10)
+#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A76E2A0)
+#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A76E2E0)
+#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C___CCTOR_B__53_0_OFFSET UNITYSDK_OFFSET(0x1A76E2F0)
+#define MOLEMOLE_UICPINFOCHILDWINDOWCONTROLLER___C___CCTOR_B__53_1_OFFSET UNITYSDK_OFFSET(0x1A76E310)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICpInfoChildWindowController___c_TypeDefinitionIndex = 81571;
+	inline static constexpr unsigned int UICpInfoChildWindowController___c_TypeDefinitionIndex = 83534;
 
 	class UICpInfoChildWindowController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UICpInfoChildWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UICpInfoChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UICpInfoChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x467A0);
+			return (::MoleMole::UICpInfoChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UICpInfoChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x481D0);
 		}
 
 		static ::System::Void _cctor()

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIPlayerAccessoryPageController.h"
 
-#define MOLEMOLE_UIPLAYERACCESSORYEXTRAPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x98FA540)
+#define MOLEMOLE_UIPLAYERACCESSORYEXTRAPAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAE33930)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryExtraPageController_TypeDefinitionIndex = 46764;
+	inline static constexpr unsigned int UIPlayerAccessoryExtraPageController_TypeDefinitionIndex = 42724;
 
 	class UIPlayerAccessoryExtraPageController : public ::MoleMole::UIPlayerAccessoryPageController
 	{

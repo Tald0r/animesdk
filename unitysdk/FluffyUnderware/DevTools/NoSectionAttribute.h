@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FluffyUnderware/DevTools/SectionAttribute.h"
 
-#define FLUFFYUNDERWARE_DEVTOOLS_NOSECTIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A244730)
+#define FLUFFYUNDERWARE_DEVTOOLS_NOSECTIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A80C040)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int NoSectionAttribute_TypeDefinitionIndex = 24490;
+	inline static constexpr unsigned int NoSectionAttribute_TypeDefinitionIndex = 25315;
 
 	class NoSectionAttribute : public ::FluffyUnderware::DevTools::SectionAttribute
 	{

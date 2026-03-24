@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_SUPPRESSINVALIDATTRIBUTEERRORATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB09D50)
+#define SIRENIX_ODININSPECTOR_SUPPRESSINVALIDATTRIBUTEERRORATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115E70)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int SuppressInvalidAttributeErrorAttribute_TypeDefinitionIndex = 7225;
+	inline static constexpr unsigned int SuppressInvalidAttributeErrorAttribute_TypeDefinitionIndex = 7230;
 
 	class SuppressInvalidAttributeErrorAttribute : public ::System::Attribute
 	{

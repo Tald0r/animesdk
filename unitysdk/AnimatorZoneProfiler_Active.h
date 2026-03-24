@@ -4,7 +4,7 @@
 
 namespace System { class String; }
 
-inline static constexpr unsigned int AnimatorZoneProfiler_Active_TypeDefinitionIndex = 63717;
+inline static constexpr unsigned int AnimatorZoneProfiler_Active_TypeDefinitionIndex = 46848;
 
 struct alignas(8) AnimatorZoneProfiler_Active
 {

@@ -1,22 +1,27 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Foundation/AssetRequestHandle.h"
 #include "unitysdk/System/Object.h"
 
-namespace System { class String; }
-namespace System { template <typename T1, typename T2> class Action_2; }
+#define CLASS_1_83665B095F1535B5_13__CCTOR_OFFSET UNITYSDK_OFFSET(0x6AA2D90)
+#define CLASS_1_83665B095F1535B5_13__CTOR_OFFSET UNITYSDK_OFFSET(0x6AA2D80)
 
-#define CLASS_1_83665B095F1535B5_13__CTOR_OFFSET UNITYSDK_OFFSET(0x6B692D0)
-
-inline static constexpr unsigned int Class_1_83665B095F1535B5_13_TypeDefinitionIndex = 76556;
+inline static constexpr unsigned int Class_1_83665B095F1535B5_13_TypeDefinitionIndex = 72567;
 
 class Class_1_83665B095F1535B5_13 : public ::System::Object
 {
 public:
-	::System::Boolean Field_1_0; // 0x10
+	static ::System::Boolean* StaticGet_Field_1_0()
+	{
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Class_1_83665B095F1535B5_13_TypeDefinitionIndex)->GetStaticField(0x11F90);
+	}
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_83665B095F1535B5_13__CTOR_OFFSET))(this);
+	}
+
+	static ::System::Void _cctor()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_83665B095F1535B5_13__CCTOR_OFFSET))();
 	}
 };

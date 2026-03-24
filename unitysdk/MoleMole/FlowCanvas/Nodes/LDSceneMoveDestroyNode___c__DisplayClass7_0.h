@@ -7,7 +7,7 @@ namespace MoleMole::FlowCanvas::Nodes { class LDSceneMoveDestroyNode; }
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSceneMoveDestroyNode___c__DisplayClass7_0_TypeDefinitionIndex = 62109;
+	inline static constexpr unsigned int LDSceneMoveDestroyNode___c__DisplayClass7_0_TypeDefinitionIndex = 37578;
 
 	struct alignas(8) LDSceneMoveDestroyNode___c__DisplayClass7_0
 	{

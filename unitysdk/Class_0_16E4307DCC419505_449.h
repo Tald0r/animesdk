@@ -1,8 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Quaternion.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_449_TypeDefinitionIndex = 48120;
+namespace MoleMole { class TurnBattleUnitBase; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_449_TypeDefinitionIndex = 50383;
 
 class Class_0_16E4307DCC419505_449
 {

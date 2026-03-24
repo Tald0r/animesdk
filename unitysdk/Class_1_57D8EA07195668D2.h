@@ -3,9 +3,9 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/TextGenerationSettings.h"
 
-#define CLASS_1_57D8EA07195668D2_METHOD_1_1A05D2F346BC1606_OFFSET UNITYSDK_OFFSET(0xBA448E0)
+#define CLASS_1_57D8EA07195668D2_METHOD_1_1A05D2F346BC1606_OFFSET UNITYSDK_OFFSET(0xA3D0EC0)
 
-inline static constexpr unsigned int Class_1_57D8EA07195668D2_TypeDefinitionIndex = 71736;
+inline static constexpr unsigned int Class_1_57D8EA07195668D2_TypeDefinitionIndex = 75620;
 
 class Class_1_57D8EA07195668D2 : public ::System::Object
 {

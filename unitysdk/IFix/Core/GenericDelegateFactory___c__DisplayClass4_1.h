@@ -7,12 +7,12 @@ namespace IFix::Core { class GenericDelegateFactory___c__DisplayClass4_0; }
 namespace System { class Delegate; }
 namespace System::Reflection { class MethodInfo; }
 
-#define IFIX_CORE_GENERICDELEGATEFACTORY___C__DISPLAYCLASS4_1__CREATE_B__6_OFFSET UNITYSDK_OFFSET(0x19915130)
-#define IFIX_CORE_GENERICDELEGATEFACTORY___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19914E00)
+#define IFIX_CORE_GENERICDELEGATEFACTORY___C__DISPLAYCLASS4_1__CREATE_B__6_OFFSET UNITYSDK_OFFSET(0x19EAF160)
+#define IFIX_CORE_GENERICDELEGATEFACTORY___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19EAEE30)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int GenericDelegateFactory___c__DisplayClass4_1_TypeDefinitionIndex = 6796;
+	inline static constexpr unsigned int GenericDelegateFactory___c__DisplayClass4_1_TypeDefinitionIndex = 6800;
 
 	class GenericDelegateFactory___c__DisplayClass4_1 : public ::System::Object
 	{

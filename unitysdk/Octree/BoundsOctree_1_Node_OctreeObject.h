@@ -5,7 +5,7 @@
 
 namespace Octree
 {
-	inline static constexpr unsigned int BoundsOctree_1_Node_OctreeObject_TypeDefinitionIndex = 50047;
+	inline static constexpr unsigned int BoundsOctree_1_Node_OctreeObject_TypeDefinitionIndex = 46429;
 
 	template <typename T>
 	class BoundsOctree_1_Node_OctreeObject : public ::System::Object

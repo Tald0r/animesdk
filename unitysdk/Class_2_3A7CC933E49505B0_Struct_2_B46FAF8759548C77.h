@@ -1,30 +1,33 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67_1.h"
+#include "unitysdk/Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67.h"
 #include "unitysdk/Cysharp/Threading/Tasks/CompilerServices/AsyncUniTaskMethodBuilder_1.h"
 #include "unitysdk/Cysharp/Threading/Tasks/UniTask_1_Awaiter.h"
 #include "unitysdk/System/Threading/CancellationToken.h"
 #include "unitysdk/System/ValueTuple_2.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_2_3A7CC933E49505B0_Class_1_110CEE6864079A61_1;
+class Class_2_3A7CC933E49505B0;
+class Class_2_3A7CC933E49505B0_Class_1_110CEE6864079A61;
 namespace Newtonsoft::Json::Linq { class JToken; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_2_3A7CC933E49505B0_STRUCT_2_B46FAF8759548C77_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x345EE0)
-#define CLASS_2_3A7CC933E49505B0_STRUCT_2_B46FAF8759548C77_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_3A7CC933E49505B0_STRUCT_2_B46FAF8759548C77_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3251D0)
+#define CLASS_2_3A7CC933E49505B0_STRUCT_2_B46FAF8759548C77_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_3A7CC933E49505B0_Struct_2_B46FAF8759548C77_TypeDefinitionIndex = 61378;
+inline static constexpr unsigned int Class_2_3A7CC933E49505B0_Struct_2_B46FAF8759548C77_TypeDefinitionIndex = 54403;
 
 struct alignas(8) Class_2_3A7CC933E49505B0_Struct_2_B46FAF8759548C77
 {
-	::System::Threading::CancellationToken Field_2_4; // 0x10
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::ValueTuple_2<::Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67_1, ::System::Collections::Generic::List_1<::Class_2_3A7CC933E49505B0_Class_1_110CEE6864079A61_1*>*>> Field_2_1; // 0x18
-	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::ValueTuple_2<::Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67_1, ::Newtonsoft::Json::Linq::JToken*>> Field_2_5; // 0x38
-	::System::Int32 Field_2_2; // 0x58
-	::System::Int32 Field_2_0; // 0x5C
-	::System::Int32 Field_2_3; // 0x60
+	::Class_2_3A7CC933E49505B0* Field_2_4; // 0x10
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::ValueTuple_2<::Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67, ::System::Collections::Generic::List_1<::Class_2_3A7CC933E49505B0_Class_1_110CEE6864079A61*>*>> Field_2_1; // 0x18
+	::System::Threading::CancellationToken Field_2_3; // 0x38
+	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::ValueTuple_2<::Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67, ::Newtonsoft::Json::Linq::JToken*>> Field_2_7; // 0x40
+	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::ValueTuple_2<::Class_1_ABB13E12DFC246CE_Enum_3_0766F6645D096F67, ::System::Int32>> Field_2_6; // 0x60
+	::System::Int32 Field_2_0; // 0x78
+	::System::Int32 Field_2_2; // 0x7C
+	::System::Int32 Field_2_5; // 0x80
 
 	::System::Void MoveNext()
 	{

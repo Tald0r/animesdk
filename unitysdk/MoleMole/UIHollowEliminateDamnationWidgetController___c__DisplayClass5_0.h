@@ -4,12 +4,12 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHOLLOWELIMINATEDAMNATIONWIDGETCONTROLLER___C__DISPLAYCLASS5_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFD3090)
-#define MOLEMOLE_UIHOLLOWELIMINATEDAMNATIONWIDGETCONTROLLER___C__DISPLAYCLASS5_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBFD30A0)
+#define MOLEMOLE_UIHOLLOWELIMINATEDAMNATIONWIDGETCONTROLLER___C__DISPLAYCLASS5_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9C0EB70)
+#define MOLEMOLE_UIHOLLOWELIMINATEDAMNATIONWIDGETCONTROLLER___C__DISPLAYCLASS5_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x9C0EB80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowEliminateDamnationWidgetController___c__DisplayClass5_0_TypeDefinitionIndex = 75378;
+	inline static constexpr unsigned int UIHollowEliminateDamnationWidgetController___c__DisplayClass5_0_TypeDefinitionIndex = 63525;
 
 	class UIHollowEliminateDamnationWidgetController___c__DisplayClass5_0 : public ::System::Object
 	{

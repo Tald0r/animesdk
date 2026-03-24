@@ -12,40 +12,30 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Font; }
 
-#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_0BE1846AC20D43BE_OFFSET UNITYSDK_OFFSET(0x80CB2E0)
-#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_15C9989DE18E26D8_OFFSET UNITYSDK_OFFSET(0x80CB540)
-#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_9A636F3A65DC7119_OFFSET UNITYSDK_OFFSET(0x80CB5E0)
-#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_F730968E2645E14B_OFFSET UNITYSDK_OFFSET(0x80CB240)
-#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_FDDC5A41F149A0CC_OFFSET UNITYSDK_OFFSET(0x80CBC90)
-#define CLASS_1_E5449E4AD65AEFFF__CCTOR_OFFSET UNITYSDK_OFFSET(0x80CB1A0)
+#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_0BE1846AC20D43BE_OFFSET UNITYSDK_OFFSET(0x615FEC0)
+#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_15C9989DE18E26D8_OFFSET UNITYSDK_OFFSET(0x615F590)
+#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_9A636F3A65DC7119_OFFSET UNITYSDK_OFFSET(0x615F630)
+#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_F730968E2645E14B_OFFSET UNITYSDK_OFFSET(0x615FCE0)
+#define CLASS_1_E5449E4AD65AEFFF_METHOD_1_FDDC5A41F149A0CC_OFFSET UNITYSDK_OFFSET(0x615FD80)
+#define CLASS_1_E5449E4AD65AEFFF__CCTOR_OFFSET UNITYSDK_OFFSET(0x615F4F0)
 
-inline static constexpr unsigned int Class_1_E5449E4AD65AEFFF_TypeDefinitionIndex = 41312;
+inline static constexpr unsigned int Class_1_E5449E4AD65AEFFF_TypeDefinitionIndex = 63744;
 
 class Class_1_E5449E4AD65AEFFF : public ::System::Object
 {
 public:
-	static ::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>** StaticGet_Field_1_0()
-	{
-		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_E5449E4AD65AEFFF_TypeDefinitionIndex)->GetStaticField(0x3B290);
-	}
 	static ::MoleMole::Config::ConfigUIFont** StaticGet_Field_1_1()
 	{
-		return (::MoleMole::Config::ConfigUIFont**)Il2CppClass::FromTypeDefinitionIndex(Class_1_E5449E4AD65AEFFF_TypeDefinitionIndex)->GetStaticField(0x3B298);
+		return (::MoleMole::Config::ConfigUIFont**)Il2CppClass::FromTypeDefinitionIndex(Class_1_E5449E4AD65AEFFF_TypeDefinitionIndex)->GetStaticField(0x38C10);
+	}
+	static ::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>** StaticGet_Field_1_0()
+	{
+		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::Foundation::AssetRequestHandle>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_E5449E4AD65AEFFF_TypeDefinitionIndex)->GetStaticField(0x38C18);
 	}
 
 	static ::System::Void _cctor()
 	{
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF__CCTOR_OFFSET))();
-	}
-
-	static ::System::Void Method_1_F730968E2645E14B()
-	{
-		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF_METHOD_1_F730968E2645E14B_OFFSET))();
-	}
-
-	static ::System::Void Method_1_0BE1846AC20D43BE(::System::Boolean a1, ::System::Action* a2)
-	{
-		return ((::System::Void(*)(::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF_METHOD_1_0BE1846AC20D43BE_OFFSET))(a1, a2);
 	}
 
 	static ::MoleMole::Config::ConfigUIFont* Method_1_15C9989DE18E26D8()
@@ -58,8 +48,18 @@ public:
 		return ((::System::Boolean(*)(::System::String*, ::MoleMole::LanguageType, ::Enum_3_219B2CD5FA4A8100, ::UnityEngine::Font*&, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF_METHOD_1_9A636F3A65DC7119_OFFSET))(a1, a2, a3, a4, a5);
 	}
 
+	static ::System::Void Method_1_F730968E2645E14B()
+	{
+		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF_METHOD_1_F730968E2645E14B_OFFSET))();
+	}
+
 	static ::System::Void Method_1_FDDC5A41F149A0CC(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
 	{
 		return ((::System::Void(*)(::System::Single, ::System::Action_1<::System::Single>*, ::System::Action_1<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF_METHOD_1_FDDC5A41F149A0CC_OFFSET))(a1, a2, a3, a4);
+	}
+
+	static ::System::Void Method_1_0BE1846AC20D43BE(::System::Boolean a1, ::System::Action* a2)
+	{
+		return ((::System::Void(*)(::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_E5449E4AD65AEFFF_METHOD_1_0BE1846AC20D43BE_OFFSET))(a1, a2);
 	}
 };

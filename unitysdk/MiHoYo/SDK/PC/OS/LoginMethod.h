@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::PC::OS
 {
-	inline static constexpr unsigned int LoginMethod_TypeDefinitionIndex = 18450;
+	inline static constexpr unsigned int LoginMethod_TypeDefinitionIndex = 18984;
 
 	enum class LoginMethod : ::System::Int32
 	{

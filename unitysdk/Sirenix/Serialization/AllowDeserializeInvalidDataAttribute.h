@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_SERIALIZATION_ALLOWDESERIALIZEINVALIDDATAATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B076690)
+#define SIRENIX_SERIALIZATION_ALLOWDESERIALIZEINVALIDDATAATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6843F0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int AllowDeserializeInvalidDataAttribute_TypeDefinitionIndex = 7354;
+	inline static constexpr unsigned int AllowDeserializeInvalidDataAttribute_TypeDefinitionIndex = 7359;
 
 	class AllowDeserializeInvalidDataAttribute : public ::System::Attribute
 	{

@@ -5,7 +5,7 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectConst_TypeDefinitionIndex = 74409;
+	inline static constexpr unsigned int ViewObjectConst_TypeDefinitionIndex = 56443;
 
 	class ViewObjectConst : public ::System::Object
 	{

@@ -6,9 +6,9 @@
 namespace System { class String; }
 namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x1A4DFD40)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYATTRIBUTE_GET_ELEMENTNAME_OFFSET UNITYSDK_OFFSET(0x1A4DFD20)
-#define SYSTEM_XML_SERIALIZATION_XMLARRAYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4DFD10)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x1AA922F0)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYATTRIBUTE_GET_ELEMENTNAME_OFFSET UNITYSDK_OFFSET(0x1AA922D0)
+#define SYSTEM_XML_SERIALIZATION_XMLARRAYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA922C0)
 
 namespace System::Xml::Serialization
 {
@@ -17,11 +17,11 @@ namespace System::Xml::Serialization
 	class XmlArrayAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* elementName; // 0x10
-		::System::String* ns; // 0x18
-		::System::Xml::Schema::XmlSchemaForm form; // 0x20
-		::System::Boolean isNullable; // 0x24
-		::System::Int32 order; // 0x28
+		::System::String* ns; // 0x10
+		::System::String* elementName; // 0x18
+		::System::Int32 order; // 0x20
+		::System::Xml::Schema::XmlSchemaForm form; // 0x24
+		::System::Boolean isNullable; // 0x28
 
 		::System::Void _ctor()
 		{

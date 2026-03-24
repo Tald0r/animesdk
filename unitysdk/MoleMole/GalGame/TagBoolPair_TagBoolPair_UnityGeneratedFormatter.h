@@ -8,26 +8,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE107DB0)
-#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE107DC0)
-#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE107FC0)
-#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE108180)
-#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE108140)
+#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7A6C2D0)
+#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7A6C2E0)
+#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7A6C4E0)
+#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7A6C6A0)
+#define MOLEMOLE_GALGAME_TAGBOOLPAIR_TAGBOOLPAIR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A6C660)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int TagBoolPair_TagBoolPair_UnityGeneratedFormatter_TypeDefinitionIndex = 50397;
+	inline static constexpr unsigned int TagBoolPair_TagBoolPair_UnityGeneratedFormatter_TypeDefinitionIndex = 53154;
 
 	class TagBoolPair_TagBoolPair_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::TagBoolPair*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TagBoolPair_TagBoolPair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x400B0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(TagBoolPair_TagBoolPair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x400B8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(TagBoolPair_TagBoolPair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46CF0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TagBoolPair_TagBoolPair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46CF8);
 		}
 
 		::System::Void _ctor()

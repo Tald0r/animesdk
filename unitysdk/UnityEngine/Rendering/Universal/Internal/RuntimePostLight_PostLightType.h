@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int RuntimePostLight_PostLightType_TypeDefinitionIndex = 28884;
+	inline static constexpr unsigned int RuntimePostLight_PostLightType_TypeDefinitionIndex = 29834;
 
 	enum class RuntimePostLight_PostLightType : ::System::Int32
 	{

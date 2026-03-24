@@ -14,98 +14,98 @@ namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Profiling { class CustomSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18381F40)
-#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x183844C0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x18384570)
-#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18381EB0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18385070)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x189D8020)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x189DA570)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x189DA620)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x189D7F90)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PEROBJECTSHADOWPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x189DB120)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int PerObjectShadowPass_TypeDefinitionIndex = 28310;
+	inline static constexpr unsigned int PerObjectShadowPass_TypeDefinitionIndex = 29251;
 
 	class PerObjectShadowPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckMaterialNeedDraw()
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_GetSubMeshCount()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21770);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetRenderTarget()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21778);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetPerEntityVariables()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21780);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_ResetViewport()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21788);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckIsMaterialAlive()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21790);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetGlobalVariables()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21798);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckRendererMaterialAndDraw()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217A0);
-		}
-		static ::System::Collections::Generic::List_1<::UnityEngine::Vector4>** StaticGet_dummyUAVData()
-		{
-			return (::System::Collections::Generic::List_1<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217A8);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_ResetGlobalVariables()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217B0);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230B0);
 		}
 		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckRendererNeedDraw()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217B8);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230B8);
 		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_GetSubMeshCount()
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_ResetGlobalVariables()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217C0);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230C0);
 		}
 		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckMaterialNeedDrawAndDrawRenderer()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217C8);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230C8);
 		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_GetIPerObjectShadowRenderer()
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetGlobalVariables()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217D0);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_GetCachedSharedMaterials()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217D8);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CreateBuffer()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217E0);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230D0);
 		}
 		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckIsValid()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217E8);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230D8);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_GetCachedSharedMaterials()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230E0);
 		}
 		static ::UnityEngine::ComputeBuffer** StaticGet_dummyUAV()
 		{
-			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217F0);
+			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230E8);
 		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetViewport()
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CreateBuffer()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x217F8);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230F0);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckMaterialNeedDraw()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x230F8);
 		}
 		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CommandDrawRenderer()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x21800);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23100);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckRendererMaterialAndDraw()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23108);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_GetIPerObjectShadowRenderer()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23110);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetViewport()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23118);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_ResetViewport()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23120);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetRenderTarget()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23128);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_SetPerEntityVariables()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23130);
+		}
+		static ::System::Collections::Generic::List_1<::UnityEngine::Vector4>** StaticGet_dummyUAVData()
+		{
+			return (::System::Collections::Generic::List_1<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23138);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_CheckIsMaterialAlive()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x23140);
 		}
 		static ::UnityEngine::NAPRenderPipeline0::DirtyCache_1<::System::Single>* StaticGet_depthBiasCache()
 		{
-			return (::UnityEngine::NAPRenderPipeline0::DirtyCache_1<::System::Single>*)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x60A0);
+			return (::UnityEngine::NAPRenderPipeline0::DirtyCache_1<::System::Single>*)Il2CppClass::FromTypeDefinitionIndex(PerObjectShadowPass_TypeDefinitionIndex)->GetStaticField(0x64F0);
 		}
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* profilingSampler; // 0xA8
 

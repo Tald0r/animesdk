@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int NapAnimator_PlayModeEnum_TypeDefinitionIndex = 6563;
+	inline static constexpr unsigned int NapAnimator_PlayModeEnum_TypeDefinitionIndex = 6567;
 
 	enum class NapAnimator_PlayModeEnum : ::System::Int32
 	{

@@ -3,12 +3,13 @@
 #include "unitysdk/UnityEngine/Collider2D.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define UNITYENGINE_EDGECOLLIDER2D_SET_POINTS_OFFSET UNITYSDK_OFFSET(0x1AA911A0)
-#define UNITYENGINE_EDGECOLLIDER2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA911B0)
+#define UNITYENGINE_EDGECOLLIDER2D_GET_POINTS_OFFSET UNITYSDK_OFFSET(0x1B077A70)
+#define UNITYENGINE_EDGECOLLIDER2D_SET_POINTS_OFFSET UNITYSDK_OFFSET(0x1B077A80)
+#define UNITYENGINE_EDGECOLLIDER2D__CTOR_OFFSET UNITYSDK_OFFSET(0x1B077A90)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int EdgeCollider2D_TypeDefinitionIndex = 7632;
+	inline static constexpr unsigned int EdgeCollider2D_TypeDefinitionIndex = 7639;
 
 	class EdgeCollider2D : public ::UnityEngine::Collider2D
 	{
@@ -16,6 +17,11 @@ namespace UnityEngine
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EDGECOLLIDER2D__CTOR_OFFSET))(this);
+		}
+
+		::Il2CppArray<::UnityEngine::Vector2>* get_points()
+		{
+			return ((::Il2CppArray<::UnityEngine::Vector2>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EDGECOLLIDER2D_GET_POINTS_OFFSET))(this);
 		}
 
 		::System::Void set_points(::Il2CppArray<::UnityEngine::Vector2>* value)

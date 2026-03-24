@@ -5,13 +5,13 @@
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define NPCCROWD_ABILITY_INTERACTSLOT_ONRELEASED_OFFSET UNITYSDK_OFFSET(0x7EF3C50)
-#define NPCCROWD_ABILITY_INTERACTSLOT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x7EF3C30)
-#define NPCCROWD_ABILITY_INTERACTSLOT__CTOR_OFFSET UNITYSDK_OFFSET(0x7EF3C20)
+#define NPCCROWD_ABILITY_INTERACTSLOT_ONRELEASED_OFFSET UNITYSDK_OFFSET(0x6BA26F0)
+#define NPCCROWD_ABILITY_INTERACTSLOT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x6BA26D0)
+#define NPCCROWD_ABILITY_INTERACTSLOT__CTOR_OFFSET UNITYSDK_OFFSET(0x6BA26C0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int InteractSlot_TypeDefinitionIndex = 48070;
+	inline static constexpr unsigned int InteractSlot_TypeDefinitionIndex = 58680;
 
 	class InteractSlot : public ::System::Object
 	{

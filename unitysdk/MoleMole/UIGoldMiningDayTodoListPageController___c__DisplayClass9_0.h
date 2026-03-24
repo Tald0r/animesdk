@@ -5,12 +5,12 @@
 namespace MoleMole { class UIGoldMiningDayTodoListPageController; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define MOLEMOLE_UIGOLDMININGDAYTODOLISTPAGECONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8A24250)
-#define MOLEMOLE_UIGOLDMININGDAYTODOLISTPAGECONTROLLER___C__DISPLAYCLASS9_0__ONSHOW_B__1_OFFSET UNITYSDK_OFFSET(0x8A24260)
+#define MOLEMOLE_UIGOLDMININGDAYTODOLISTPAGECONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2CA690)
+#define MOLEMOLE_UIGOLDMININGDAYTODOLISTPAGECONTROLLER___C__DISPLAYCLASS9_0__ONSHOW_B__1_OFFSET UNITYSDK_OFFSET(0xB2CA6A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGoldMiningDayTodoListPageController___c__DisplayClass9_0_TypeDefinitionIndex = 52719;
+	inline static constexpr unsigned int UIGoldMiningDayTodoListPageController___c__DisplayClass9_0_TypeDefinitionIndex = 71287;
 
 	class UIGoldMiningDayTodoListPageController___c__DisplayClass9_0 : public ::System::Object
 	{

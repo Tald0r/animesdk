@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWholeEffectWidgetController_SortType_TypeDefinitionIndex = 76770;
+	inline static constexpr unsigned int UIWholeEffectWidgetController_SortType_TypeDefinitionIndex = 68792;
 
 	enum class UIWholeEffectWidgetController_SortType : ::System::Int32
 	{
-		Rarity = 2,
-		GetTime = 0,
 		Normal = 1,
+		GetTime = 0,
+		Rarity = 2,
 	};
 }

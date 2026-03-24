@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_ATTACHPOINT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x8E93900)
-#define MOLEMOLE_ATTACHPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0x8E938E0)
+#define MOLEMOLE_ATTACHPOINT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x78E1C90)
+#define MOLEMOLE_ATTACHPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0x78E1C70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AttachPoint_TypeDefinitionIndex = 57145;
+	inline static constexpr unsigned int AttachPoint_TypeDefinitionIndex = 58691;
 
 	class AttachPoint : public ::System::Object
 	{

@@ -7,7 +7,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int CachedLightData_TypeDefinitionIndex = 23504;
+	inline static constexpr unsigned int CachedLightData_TypeDefinitionIndex = 24187;
 
 	struct alignas(4) CachedLightData
 	{

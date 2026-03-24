@@ -9,19 +9,19 @@
 namespace MoleMole { class UIQuestionsAnswerWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENFADEOUT_D__104_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3226C0)
-#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENFADEOUT_D__104_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENFADEOUT_D__104_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A3D30)
+#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENFADEOUT_D__104_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerWidgetController__WaitBlackscreenFadeOut_d__104_TypeDefinitionIndex = 70195;
+	inline static constexpr unsigned int UIQuestionsAnswerWidgetController__WaitBlackscreenFadeOut_d__104_TypeDefinitionIndex = 66358;
 
 	struct alignas(8) UIQuestionsAnswerWidgetController__WaitBlackscreenFadeOut_d__104
 	{
-		::MoleMole::UIQuestionsAnswerWidgetController* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__2; // 0x18
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x28
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x38
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
+		::MoleMole::UIQuestionsAnswerWidgetController* __4__this; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__2; // 0x38
 		::System::Int32 __1__state; // 0x48
 
 		::System::Void MoveNext()

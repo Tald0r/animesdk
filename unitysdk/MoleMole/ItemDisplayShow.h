@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_ITEMDISPLAYSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xF1B7A50)
-#define MOLEMOLE_ITEMDISPLAYSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xF1B7AA0)
-#define MOLEMOLE_ITEMDISPLAYSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B7A60)
+#define MOLEMOLE_ITEMDISPLAYSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xB9932D0)
+#define MOLEMOLE_ITEMDISPLAYSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xB993320)
+#define MOLEMOLE_ITEMDISPLAYSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xB9932E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ItemDisplayShow_TypeDefinitionIndex = 65639;
+	inline static constexpr unsigned int ItemDisplayShow_TypeDefinitionIndex = 76316;
 
 	class ItemDisplayShow : public ::MoleMole::DisplayMessageBase
 	{

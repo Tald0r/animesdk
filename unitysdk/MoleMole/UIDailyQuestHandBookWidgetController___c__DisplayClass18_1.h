@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIDailyQuestHandBookWidgetController___c__DisplayClass18_0; }
 
-#define MOLEMOLE_UIDAILYQUESTHANDBOOKWIDGETCONTROLLER___C__DISPLAYCLASS18_1__CTOR_OFFSET UNITYSDK_OFFSET(0x806C9F0)
-#define MOLEMOLE_UIDAILYQUESTHANDBOOKWIDGETCONTROLLER___C__DISPLAYCLASS18_1__PLAYPROGRESSANIM_B__0_OFFSET UNITYSDK_OFFSET(0x806CA00)
+#define MOLEMOLE_UIDAILYQUESTHANDBOOKWIDGETCONTROLLER___C__DISPLAYCLASS18_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAC4A5C0)
+#define MOLEMOLE_UIDAILYQUESTHANDBOOKWIDGETCONTROLLER___C__DISPLAYCLASS18_1__PLAYPROGRESSANIM_B__0_OFFSET UNITYSDK_OFFSET(0xAC4A5D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDailyQuestHandBookWidgetController___c__DisplayClass18_1_TypeDefinitionIndex = 73750;
+	inline static constexpr unsigned int UIDailyQuestHandBookWidgetController___c__DisplayClass18_1_TypeDefinitionIndex = 59324;
 
 	class UIDailyQuestHandBookWidgetController___c__DisplayClass18_1 : public ::System::Object
 	{

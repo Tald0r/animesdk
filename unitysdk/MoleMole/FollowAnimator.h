@@ -6,17 +6,15 @@ namespace UnityEngine { class Animator; }
 namespace UnityEngine { class SkinnedMeshRenderer; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_FOLLOWANIMATOR_AWAKE_OFFSET UNITYSDK_OFFSET(0x990FB10)
-#define MOLEMOLE_FOLLOWANIMATOR_SETFOLLOWTARGET_1_OFFSET UNITYSDK_OFFSET(0x990FC80)
-#define MOLEMOLE_FOLLOWANIMATOR_SETFOLLOWTARGET_OFFSET UNITYSDK_OFFSET(0x990FBD0)
-#define MOLEMOLE_FOLLOWANIMATOR_STARTFOLLOW_OFFSET UNITYSDK_OFFSET(0x990FD00)
-#define MOLEMOLE_FOLLOWANIMATOR_STOPFOLLOW_OFFSET UNITYSDK_OFFSET(0x990FD60)
-#define MOLEMOLE_FOLLOWANIMATOR_UPDATE_OFFSET UNITYSDK_OFFSET(0x990FB70)
-#define MOLEMOLE_FOLLOWANIMATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x990FDC0)
+#define MOLEMOLE_FOLLOWANIMATOR_SETFOLLOWTARGET_1_OFFSET UNITYSDK_OFFSET(0xA50ACB0)
+#define MOLEMOLE_FOLLOWANIMATOR_SETFOLLOWTARGET_OFFSET UNITYSDK_OFFSET(0xA50AC00)
+#define MOLEMOLE_FOLLOWANIMATOR_STARTFOLLOW_OFFSET UNITYSDK_OFFSET(0xA50AD30)
+#define MOLEMOLE_FOLLOWANIMATOR_STOPFOLLOW_OFFSET UNITYSDK_OFFSET(0xA50AD90)
+#define MOLEMOLE_FOLLOWANIMATOR__CTOR_OFFSET UNITYSDK_OFFSET(0xA50ADF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FollowAnimator_TypeDefinitionIndex = 53918;
+	inline static constexpr unsigned int FollowAnimator_TypeDefinitionIndex = 67095;
 
 	class FollowAnimator : public ::UnityEngine::MonoBehaviour
 	{
@@ -31,16 +29,6 @@ namespace MoleMole
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FOLLOWANIMATOR__CTOR_OFFSET))(this);
-		}
-
-		::System::Void Awake()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FOLLOWANIMATOR_AWAKE_OFFSET))(this);
-		}
-
-		::System::Void Update()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_FOLLOWANIMATOR_UPDATE_OFFSET))(this);
 		}
 
 		::System::Void SetFollowTarget(::UnityEngine::Animator* a1, ::UnityEngine::SkinnedMeshRenderer* a2)

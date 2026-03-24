@@ -5,18 +5,18 @@
 namespace MoleMole::Battle { class Entity; }
 namespace UnityEngine { class Animator; }
 
-#define CLASS_1_254A1D88361B2006__CTOR_OFFSET UNITYSDK_OFFSET(0x88B4620)
+#define CLASS_1_254A1D88361B2006__CTOR_OFFSET UNITYSDK_OFFSET(0x620E3B0)
 
-inline static constexpr unsigned int Class_1_254A1D88361B2006_TypeDefinitionIndex = 67039;
+inline static constexpr unsigned int Class_1_254A1D88361B2006_TypeDefinitionIndex = 70192;
 
 class Class_1_254A1D88361B2006 : public ::System::Object
 {
 public:
 	::UnityEngine::Animator* Field_1_1; // 0x10
-	::System::Int16 Field_1_3; // 0x18
-	::System::UInt32 Field_1_0; // 0x1C
+	::System::Single Field_1_4; // 0x18
+	::System::Int16 Field_1_3; // 0x1C
 	::System::Int32 Field_1_2; // 0x20
-	::System::Single Field_1_4; // 0x24
+	::System::UInt32 Field_1_0; // 0x24
 
 	::System::Void _ctor(::UnityEngine::Animator* a1, ::MoleMole::Battle::Entity* a2)
 	{

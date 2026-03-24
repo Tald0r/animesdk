@@ -9,26 +9,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7F14AC0)
-#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7F14AD0)
-#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7F14D70)
-#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7F14F90)
-#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7F14F30)
+#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCD5ED80)
+#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCD5ED90)
+#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCD5F030)
+#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD5F250)
+#define MOLEMOLE_MATERIALPROPERTYMODIFIERVALUECOLOR_MATERIALPROPERTYMODIFIERVALUECOLOR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD5F1F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter_TypeDefinitionIndex = 58422;
+	inline static constexpr unsigned int MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter_TypeDefinitionIndex = 47799;
 
 	class MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::MaterialPropertyModifierValueColor>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>**)Il2CppClass::FromTypeDefinitionIndex(MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x415F0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x415F8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47950);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>**)Il2CppClass::FromTypeDefinitionIndex(MaterialPropertyModifierValueColor_MaterialPropertyModifierValueColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47958);
 		}
 
 		::System::Void _ctor()

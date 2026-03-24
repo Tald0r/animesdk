@@ -6,7 +6,7 @@ namespace UnityEngine { class Texture; }
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int ColorLookupBehaviour_Struct_2_DA0255BED8A7AC13_1_TypeDefinitionIndex = 73033;
+	inline static constexpr unsigned int ColorLookupBehaviour_Struct_2_DA0255BED8A7AC13_1_TypeDefinitionIndex = 80993;
 
 	struct alignas(8) ColorLookupBehaviour_Struct_2_DA0255BED8A7AC13_1
 	{

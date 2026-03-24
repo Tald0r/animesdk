@@ -5,20 +5,20 @@
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_1_0AF00976E6903061__CTOR_OFFSET UNITYSDK_OFFSET(0x957D3F0)
+#define CLASS_1_0AF00976E6903061__CTOR_OFFSET UNITYSDK_OFFSET(0x9767F90)
 
-inline static constexpr unsigned int Class_1_0AF00976E6903061_TypeDefinitionIndex = 70926;
+inline static constexpr unsigned int Class_1_0AF00976E6903061_TypeDefinitionIndex = 80024;
 
 class Class_1_0AF00976E6903061 : public ::System::Object
 {
 public:
-	::UnityEngine::Transform* Field_1_6; // 0x10
-	::System::String* Field_1_0; // 0x18
-	::System::String* Field_1_1; // 0x20
-	::System::Double Field_1_3; // 0x28
-	::System::Double Field_1_5; // 0x30
-	::System::Double Field_1_4; // 0x38
-	::System::Double Field_1_2; // 0x40
+	::System::String* Field_1_1; // 0x10
+	::UnityEngine::Transform* Field_1_6; // 0x18
+	::System::String* Field_1_0; // 0x20
+	::System::Double Field_1_2; // 0x28
+	::System::Double Field_1_4; // 0x30
+	::System::Double Field_1_5; // 0x38
+	::System::Double Field_1_3; // 0x40
 
 	::System::Void _ctor()
 	{

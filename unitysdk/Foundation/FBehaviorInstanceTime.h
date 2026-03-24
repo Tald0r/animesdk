@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int FBehaviorInstanceTime_TypeDefinitionIndex = 8835;
+	inline static constexpr unsigned int FBehaviorInstanceTime_TypeDefinitionIndex = 9066;
 
 	struct alignas(8) FBehaviorInstanceTime
 	{

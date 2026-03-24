@@ -5,7 +5,7 @@
 
 namespace ToolBuddy::ThirdParty::VectorGraphics
 {
-	inline static constexpr unsigned int BezierPathSegment_TypeDefinitionIndex = 27051;
+	inline static constexpr unsigned int BezierPathSegment_TypeDefinitionIndex = 27991;
 
 	struct alignas(4) BezierPathSegment
 	{

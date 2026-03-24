@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_POWERTIPSPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8A89830)
+#define MOLEMOLE_POWERTIPSPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C91DC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PowerTipsPopContext_TypeDefinitionIndex = 42745;
+	inline static constexpr unsigned int PowerTipsPopContext_TypeDefinitionIndex = 61644;
 
 	class PowerTipsPopContext : public ::MoleMole::UIControllerContextBase
 	{

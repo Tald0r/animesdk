@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_PLAYERSELECTOR_METHOD_2_C2750097377FC541_OFFSET UNITYSDK_OFFSET(0xCDC0860)
-#define MOLEMOLE_CONFIG_PLAYERSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xCDC0B80)
+#define MOLEMOLE_CONFIG_PLAYERSELECTOR_METHOD_2_C2750097377FC541_OFFSET UNITYSDK_OFFSET(0xD0A58B0)
+#define MOLEMOLE_CONFIG_PLAYERSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A5BD0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int PlayerSelector_TypeDefinitionIndex = 44633;
+	inline static constexpr unsigned int PlayerSelector_TypeDefinitionIndex = 63459;
 
 	class PlayerSelector : public ::MoleMole::Config::ConfigTargetSelector
 	{

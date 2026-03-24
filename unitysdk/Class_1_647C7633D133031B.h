@@ -5,18 +5,18 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_647C7633D133031B_METHOD_1_7A7F44411A8994A8_OFFSET UNITYSDK_OFFSET(0x92D8240)
-#define CLASS_1_647C7633D133031B__CTOR_OFFSET UNITYSDK_OFFSET(0x92D81C0)
+#define CLASS_1_647C7633D133031B_METHOD_1_7A7F44411A8994A8_OFFSET UNITYSDK_OFFSET(0x15A9A810)
+#define CLASS_1_647C7633D133031B__CTOR_OFFSET UNITYSDK_OFFSET(0x15A9A790)
 
-inline static constexpr unsigned int Class_1_647C7633D133031B_TypeDefinitionIndex = 55429;
+inline static constexpr unsigned int Class_1_647C7633D133031B_TypeDefinitionIndex = 60651;
 
 class Class_1_647C7633D133031B : public ::System::Object
 {
 public:
 	::System::Collections::Generic::List_1<::System::Int32>* Field_1_3; // 0x10
-	::MoleMole::Level::RatingType Field_1_1; // 0x18
-	::System::Single Field_1_2; // 0x1C
-	::System::Single Field_1_0; // 0x20
+	::System::Single Field_1_0; // 0x18
+	::MoleMole::Level::RatingType Field_1_1; // 0x1C
+	::System::Single Field_1_2; // 0x20
 
 	::System::Void _ctor(::System::Collections::Generic::List_1<::System::Int32>* a1)
 	{

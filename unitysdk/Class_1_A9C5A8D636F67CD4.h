@@ -5,10 +5,10 @@
 namespace MoleMole { class UIInLevelPauseChallengeRowWidgetController; }
 namespace System { class String; }
 
-#define CLASS_1_A9C5A8D636F67CD4_METHOD_1_C7BD9F683D50F3B7_OFFSET UNITYSDK_OFFSET(0xB41FAB0)
-#define CLASS_1_A9C5A8D636F67CD4__CTOR_OFFSET UNITYSDK_OFFSET(0xB41FC50)
+#define CLASS_1_A9C5A8D636F67CD4_METHOD_1_C7BD9F683D50F3B7_OFFSET UNITYSDK_OFFSET(0x81C8870)
+#define CLASS_1_A9C5A8D636F67CD4__CTOR_OFFSET UNITYSDK_OFFSET(0x81C8A10)
 
-inline static constexpr unsigned int Class_1_A9C5A8D636F67CD4_TypeDefinitionIndex = 77730;
+inline static constexpr unsigned int Class_1_A9C5A8D636F67CD4_TypeDefinitionIndex = 69627;
 
 class Class_1_A9C5A8D636F67CD4 : public ::System::Object
 {

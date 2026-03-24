@@ -8,19 +8,19 @@ class Class_1_0FB9C92968BA98DE_Class_1_41ABD6D17D196C60;
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_0FB9C92968BA98DE_CLASS_1_9BE8E984EE24259D_METHOD_1_29CA0DFD8ED5B73F_OFFSET UNITYSDK_OFFSET(0x70DD9C0)
-#define CLASS_1_0FB9C92968BA98DE_CLASS_1_9BE8E984EE24259D__CTOR_OFFSET UNITYSDK_OFFSET(0x70DD7C0)
+#define CLASS_1_0FB9C92968BA98DE_CLASS_1_9BE8E984EE24259D_METHOD_1_29CA0DFD8ED5B73F_OFFSET UNITYSDK_OFFSET(0x6B97130)
+#define CLASS_1_0FB9C92968BA98DE_CLASS_1_9BE8E984EE24259D__CTOR_OFFSET UNITYSDK_OFFSET(0x6B96F40)
 
-inline static constexpr unsigned int Class_1_0FB9C92968BA98DE_Class_1_9BE8E984EE24259D_TypeDefinitionIndex = 72048;
+inline static constexpr unsigned int Class_1_0FB9C92968BA98DE_Class_1_9BE8E984EE24259D_TypeDefinitionIndex = 74271;
 
 class Class_1_0FB9C92968BA98DE_Class_1_9BE8E984EE24259D : public ::System::Object
 {
 public:
 	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_0; // 0x10
-	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_1; // 0x18
-	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_2; // 0x20
+	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_2; // 0x18
+	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_3; // 0x20
 	::System::Collections::Generic::Dictionary_2<::Class_1_0FB9C92968BA98DE_Struct_2_B06C2CF9EAE96419, ::Class_1_0FB9C92968BA98DE_Class_1_41ABD6D17D196C60*>* Field_1_4; // 0x28
-	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_3; // 0x30
+	::System::Collections::Generic::List_1<::Class_1_0FB9C92968BA98DE_Class_1_32E4AB9E969DC9E7*>* Field_1_1; // 0x30
 
 	::System::Void _ctor()
 	{

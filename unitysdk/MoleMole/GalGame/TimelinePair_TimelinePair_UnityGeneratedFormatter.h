@@ -9,22 +9,22 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8F12720)
-#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8F12730)
-#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8F12880)
-#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F129E0)
-#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8F129A0)
+#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xA0242A0)
+#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xA0242B0)
+#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xA024400)
+#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA024560)
+#define MOLEMOLE_GALGAME_TIMELINEPAIR_TIMELINEPAIR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xA024520)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int TimelinePair_TimelinePair_UnityGeneratedFormatter_TypeDefinitionIndex = 75991;
+	inline static constexpr unsigned int TimelinePair_TimelinePair_UnityGeneratedFormatter_TypeDefinitionIndex = 40796;
 
 	class TimelinePair_TimelinePair_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::TimelinePair*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TimelinePair_TimelinePair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36600);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TimelinePair_TimelinePair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x392B0);
 		}
 
 		::System::Void _ctor()

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIABYSSS2ROLECHALLENGEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBD7E470)
-#define MOLEMOLE_UIABYSSS2ROLECHALLENGEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__GOLINEUPSELECT_B__0_OFFSET UNITYSDK_OFFSET(0xBD7E480)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF0EE70)
+#define MOLEMOLE_UIABYSSS2ROLECHALLENGEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__GOLINEUPSELECT_B__0_OFFSET UNITYSDK_OFFSET(0xBF0EE80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssS2RoleChallengeWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 64664;
+	inline static constexpr unsigned int UIAbyssS2RoleChallengeWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 56063;
 
 	class UIAbyssS2RoleChallengeWidgetController___c__DisplayClass20_0 : public ::System::Object
 	{

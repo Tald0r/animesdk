@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SSPRQuality_TypeDefinitionIndex = 5892;
+	inline static constexpr unsigned int SSPRQuality_TypeDefinitionIndex = 5894;
 
 	enum class SSPRQuality : ::System::Int32
 	{

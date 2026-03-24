@@ -4,14 +4,14 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_2_E7B5A02ED2B31407_METHOD_2_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0x99F73A0)
-#define CLASS_2_E7B5A02ED2B31407_METHOD_2_4DCA4871D90B0280_OFFSET UNITYSDK_OFFSET(0x99F7620)
-#define CLASS_2_E7B5A02ED2B31407_METHOD_2_4FC1C8CE4FDCC705_OFFSET UNITYSDK_OFFSET(0x99F7420)
-#define CLASS_2_E7B5A02ED2B31407_METHOD_2_8C97CA3BAB7FB2D7_OFFSET UNITYSDK_OFFSET(0x99F74E0)
-#define CLASS_2_E7B5A02ED2B31407_METHOD_2_DE2A6013C197E496_OFFSET UNITYSDK_OFFSET(0x99F7790)
-#define CLASS_2_E7B5A02ED2B31407__CTOR_OFFSET UNITYSDK_OFFSET(0x99F7340)
+#define CLASS_2_E7B5A02ED2B31407_METHOD_2_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xE9680F0)
+#define CLASS_2_E7B5A02ED2B31407_METHOD_2_4DCA4871D90B0280_OFFSET UNITYSDK_OFFSET(0xE967F80)
+#define CLASS_2_E7B5A02ED2B31407_METHOD_2_4FC1C8CE4FDCC705_OFFSET UNITYSDK_OFFSET(0xE967D80)
+#define CLASS_2_E7B5A02ED2B31407_METHOD_2_8C97CA3BAB7FB2D7_OFFSET UNITYSDK_OFFSET(0xE967E40)
+#define CLASS_2_E7B5A02ED2B31407_METHOD_2_DE2A6013C197E496_OFFSET UNITYSDK_OFFSET(0xE967C80)
+#define CLASS_2_E7B5A02ED2B31407__CTOR_OFFSET UNITYSDK_OFFSET(0xE967C20)
 
-inline static constexpr unsigned int Class_2_E7B5A02ED2B31407_TypeDefinitionIndex = 36437;
+inline static constexpr unsigned int Class_2_E7B5A02ED2B31407_TypeDefinitionIndex = 41825;
 
 class Class_2_E7B5A02ED2B31407 : public ::Class_1_30F59ECD344F611F
 {
@@ -25,9 +25,9 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_E7B5A02ED2B31407__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_2_2685B6183E614529(::System::Single a1)
+	::System::Void Method_2_DE2A6013C197E496(::System::Single a1, ::System::Single a2, ::System::Single a3, ::UnityEngine::AnimationCurve* a4)
 	{
-		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_2_E7B5A02ED2B31407_METHOD_2_2685B6183E614529_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::AnimationCurve*))((::PBYTE)hIl2Cpp + CLASS_2_E7B5A02ED2B31407_METHOD_2_DE2A6013C197E496_OFFSET))(this, a1, a2, a3, a4);
 	}
 
 	::System::Void Method_2_4FC1C8CE4FDCC705(::System::Single a1, ::System::Single a2, ::System::Single a3, ::UnityEngine::AnimationCurve* a4)
@@ -45,8 +45,8 @@ public:
 		return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single, ::UnityEngine::AnimationCurve*, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_2_E7B5A02ED2B31407_METHOD_2_4DCA4871D90B0280_OFFSET))(this, a1, a2, a3, a4, a5);
 	}
 
-	::System::Void Method_2_DE2A6013C197E496(::System::Single a1, ::System::Single a2, ::System::Single a3, ::UnityEngine::AnimationCurve* a4)
+	::System::Void Method_2_2685B6183E614529(::System::Single a1)
 	{
-		return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::AnimationCurve*))((::PBYTE)hIl2Cpp + CLASS_2_E7B5A02ED2B31407_METHOD_2_DE2A6013C197E496_OFFSET))(this, a1, a2, a3, a4);
+		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_2_E7B5A02ED2B31407_METHOD_2_2685B6183E614529_OFFSET))(this, a1);
 	}
 };

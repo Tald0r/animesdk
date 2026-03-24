@@ -10,8 +10,8 @@ namespace System::IO { class Stream; }
 namespace System::Net::WebSockets { class ClientWebSocketOptions; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__PARSEANDVALIDATECONNECTRESPONSEASYNC_D__28_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x84B470)
-#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__PARSEANDVALIDATECONNECTRESPONSEASYNC_D__28_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x310210)
+#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__PARSEANDVALIDATECONNECTRESPONSEASYNC_D__28_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x888720)
+#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__PARSEANDVALIDATECONNECTRESPONSEASYNC_D__28_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x30B2E0)
 
 namespace System::Net::WebSockets
 {
@@ -19,14 +19,14 @@ namespace System::Net::WebSockets
 
 	struct alignas(8) WebSocketHandle__ParseAndValidateConnectResponseAsync_d__28
 	{
-		::System::IO::Stream* stream; // 0x10
-		::System::String* _subprotocol_5__5; // 0x18
-		::System::String* _line_5__1; // 0x20
-		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::System::String*> __u__1; // 0x28
-		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::String*> __t__builder; // 0x38
-		::System::Threading::CancellationToken cancellationToken; // 0x50
-		::System::Net::WebSockets::ClientWebSocketOptions* options; // 0x58
-		::System::String* expectedSecWebSocketAccept; // 0x60
+		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::String*> __t__builder; // 0x10
+		::System::String* _line_5__1; // 0x28
+		::System::Threading::CancellationToken cancellationToken; // 0x30
+		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::System::String*> __u__1; // 0x38
+		::System::String* expectedSecWebSocketAccept; // 0x48
+		::System::Net::WebSockets::ClientWebSocketOptions* options; // 0x50
+		::System::IO::Stream* stream; // 0x58
+		::System::String* _subprotocol_5__5; // 0x60
 		::System::Boolean _foundUpgrade_5__3; // 0x68
 		::System::Boolean _foundSecWebSocketAccept_5__4; // 0x69
 		::System::Boolean _foundConnection_5__2; // 0x6A

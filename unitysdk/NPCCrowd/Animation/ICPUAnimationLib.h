@@ -10,7 +10,7 @@ namespace UnityEngine { class AvatarMask; }
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int ICPUAnimationLib_TypeDefinitionIndex = 46522;
+	inline static constexpr unsigned int ICPUAnimationLib_TypeDefinitionIndex = 67604;
 
 	class ICPUAnimationLib
 	{

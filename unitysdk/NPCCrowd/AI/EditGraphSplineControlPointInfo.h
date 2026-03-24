@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_AI_EDITGRAPHSPLINECONTROLPOINTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x694A550)
+#define NPCCROWD_AI_EDITGRAPHSPLINECONTROLPOINTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x62CDC90)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int EditGraphSplineControlPointInfo_TypeDefinitionIndex = 61022;
+	inline static constexpr unsigned int EditGraphSplineControlPointInfo_TypeDefinitionIndex = 65385;
 
 	class EditGraphSplineControlPointInfo : public ::System::Object
 	{

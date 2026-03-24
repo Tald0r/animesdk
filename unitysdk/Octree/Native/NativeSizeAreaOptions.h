@@ -3,7 +3,7 @@
 
 namespace Octree::Native
 {
-	inline static constexpr unsigned int NativeSizeAreaOptions_TypeDefinitionIndex = 47769;
+	inline static constexpr unsigned int NativeSizeAreaOptions_TypeDefinitionIndex = 38716;
 
 	enum class NativeSizeAreaOptions : ::System::Int32
 	{

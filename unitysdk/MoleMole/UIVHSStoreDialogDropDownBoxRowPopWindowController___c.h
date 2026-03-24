@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_217;
+class Class_2_208CC9941471731A_44;
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x71E0CE0)
-#define MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x71E0D20)
-#define MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__INITSELECTTYPE_B__9_0_OFFSET UNITYSDK_OFFSET(0x71E0D30)
+#define MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAB00A0)
+#define MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAB00E0)
+#define MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__INITSELECTTYPE_B__9_0_OFFSET UNITYSDK_OFFSET(0xCAB00F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreDialogDropDownBoxRowPopWindowController___c_TypeDefinitionIndex = 57173;
+	inline static constexpr unsigned int UIVHSStoreDialogDropDownBoxRowPopWindowController___c_TypeDefinitionIndex = 40860;
 
 	class UIVHSStoreDialogDropDownBoxRowPopWindowController___c : public ::System::Object
 	{
 	public:
+		static ::System::Func_2<::Class_2_208CC9941471731A_44*, ::System::Int32>** StaticGet___9__9_0()
+		{
+			return (::System::Func_2<::Class_2_208CC9941471731A_44*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogDropDownBoxRowPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34A40);
+		}
 		static ::MoleMole::UIVHSStoreDialogDropDownBoxRowPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIVHSStoreDialogDropDownBoxRowPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogDropDownBoxRowPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32B20);
-		}
-		static ::System::Func_2<::Class_2_208CC9941471731A_217*, ::System::Int32>** StaticGet___9__9_0()
-		{
-			return (::System::Func_2<::Class_2_208CC9941471731A_217*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogDropDownBoxRowPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32B28);
+			return (::MoleMole::UIVHSStoreDialogDropDownBoxRowPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogDropDownBoxRowPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34A48);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +35,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _InitSelectType_b__9_0(::Class_2_208CC9941471731A_217* template_)
+		::System::Int32 _InitSelectType_b__9_0(::Class_2_208CC9941471731A_44* template_)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_217*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__INITSELECTTYPE_B__9_0_OFFSET))(this, template_);
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_44*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSSTOREDIALOGDROPDOWNBOXROWPOPWINDOWCONTROLLER___C__INITSELECTTYPE_B__9_0_OFFSET))(this, template_);
 		}
 	};
 }

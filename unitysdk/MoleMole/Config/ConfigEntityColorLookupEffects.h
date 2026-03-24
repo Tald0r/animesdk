@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigEntityColorLookupEffect; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYCOLORLOOKUPEFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0x9B61BD0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYCOLORLOOKUPEFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0xB4719D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityColorLookupEffects_TypeDefinitionIndex = 70103;
+	inline static constexpr unsigned int ConfigEntityColorLookupEffects_TypeDefinitionIndex = 77821;
 
 	class ConfigEntityColorLookupEffects : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISnakeEndingAnimScript_Enum_3_E950BFCC4FF152A7_TypeDefinitionIndex = 81642;
+	inline static constexpr unsigned int UISnakeEndingAnimScript_Enum_3_E950BFCC4FF152A7_TypeDefinitionIndex = 83691;
 
 	enum class UISnakeEndingAnimScript_Enum_3_E950BFCC4FF152A7 : ::System::Int32
 	{

@@ -6,14 +6,14 @@ namespace MoleMole { class MonoUIGyro_ManipulatedTransform; }
 namespace MoleMole { class MonoUIGyro_Movable; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOUIGYRO_AWAKE_OFFSET UNITYSDK_OFFSET(0xA604830)
-#define MOLEMOLE_MONOUIGYRO_TRANSTIONBYGYRO_OFFSET UNITYSDK_OFFSET(0xA604CC0)
-#define MOLEMOLE_MONOUIGYRO_UPDATE_OFFSET UNITYSDK_OFFSET(0xA604B40)
-#define MOLEMOLE_MONOUIGYRO__CTOR_OFFSET UNITYSDK_OFFSET(0xA605030)
+#define MOLEMOLE_MONOUIGYRO_AWAKE_OFFSET UNITYSDK_OFFSET(0xA7EEBF0)
+#define MOLEMOLE_MONOUIGYRO_TRANSTIONBYGYRO_OFFSET UNITYSDK_OFFSET(0xA7EF080)
+#define MOLEMOLE_MONOUIGYRO_UPDATE_OFFSET UNITYSDK_OFFSET(0xA7EEF00)
+#define MOLEMOLE_MONOUIGYRO__CTOR_OFFSET UNITYSDK_OFFSET(0xA7EF3F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoUIGyro_TypeDefinitionIndex = 78285;
+	inline static constexpr unsigned int MonoUIGyro_TypeDefinitionIndex = 66288;
 
 	class MonoUIGyro : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

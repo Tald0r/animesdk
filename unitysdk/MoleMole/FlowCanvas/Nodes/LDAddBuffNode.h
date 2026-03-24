@@ -5,12 +5,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDBUFFNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE4738D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDBUFFNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE473BD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDBUFFNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FB890)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDBUFFNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FBB90)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAddBuffNode_TypeDefinitionIndex = 39124;
+	inline static constexpr unsigned int LDAddBuffNode_TypeDefinitionIndex = 55384;
 
 	class LDAddBuffNode : public ::FlowCanvas::Nodes::CallableFunctionNode_5<::System::Boolean, ::MoleMole::Battle::Entity*, ::System::Int32, ::System::Single, ::MoleMole::Config::ModifierStacking>
 	{

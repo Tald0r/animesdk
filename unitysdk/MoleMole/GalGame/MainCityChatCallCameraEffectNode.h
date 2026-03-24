@@ -11,24 +11,24 @@ namespace MoleMole { class UIBaseChatPlayController; }
 namespace MoleMole { class UIMainCityChatPlayContext; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0x82D6850)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x82D6840)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xA390B90)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCALLCAMERAEFFECTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA390B80)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatCallCameraEffectNode_TypeDefinitionIndex = 48543;
+	inline static constexpr unsigned int MainCityChatCallCameraEffectNode_TypeDefinitionIndex = 77710;
 
 	class MainCityChatCallCameraEffectNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
 	{
 	public:
 		::System::String* effectKey; // 0x18
 		::MoleMole::FlowCanvas::Nodes::LD_CallCameraEffect_CallType callType; // 0x20
-		::MoleMole::Timeline::CallCameraEffectActionType actionType; // 0x24
-		::MoleMole::Config::ScreenEffectType effectType; // 0x28
-		::System::Boolean isOneFrameEnd; // 0x2C
-		::System::Boolean isEndByKey; // 0x2D
-		::System::Boolean isInterruptType; // 0x2E
-		::MoleMole::Config::ShaderCustomType shaderCustomType; // 0x30
+		::MoleMole::Config::ScreenEffectType effectType; // 0x24
+		::MoleMole::Timeline::CallCameraEffectActionType actionType; // 0x28
+		::MoleMole::Config::ShaderCustomType shaderCustomType; // 0x2C
+		::System::Boolean isOneFrameEnd; // 0x30
+		::System::Boolean isEndByKey; // 0x31
+		::System::Boolean isInterruptType; // 0x32
 
 		::System::Void _ctor()
 		{

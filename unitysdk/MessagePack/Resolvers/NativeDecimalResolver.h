@@ -5,20 +5,20 @@
 namespace MessagePack::Formatters { template <typename T> class IMessagePackFormatter_1; }
 namespace System { class Type; }
 
-#define MESSAGEPACK_RESOLVERS_NATIVEDECIMALRESOLVER_GETFORMATTERHELPER_OFFSET UNITYSDK_OFFSET(0x1975CEA0)
-#define MESSAGEPACK_RESOLVERS_NATIVEDECIMALRESOLVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1975CFA0)
-#define MESSAGEPACK_RESOLVERS_NATIVEDECIMALRESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1975CE90)
+#define MESSAGEPACK_RESOLVERS_NATIVEDECIMALRESOLVER_GETFORMATTERHELPER_OFFSET UNITYSDK_OFFSET(0x19C2AD00)
+#define MESSAGEPACK_RESOLVERS_NATIVEDECIMALRESOLVER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C2AE00)
+#define MESSAGEPACK_RESOLVERS_NATIVEDECIMALRESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x19C2ACF0)
 
 namespace MessagePack::Resolvers
 {
-	inline static constexpr unsigned int NativeDecimalResolver_TypeDefinitionIndex = 26069;
+	inline static constexpr unsigned int NativeDecimalResolver_TypeDefinitionIndex = 26562;
 
 	class NativeDecimalResolver : public ::System::Object
 	{
 	public:
 		static ::MessagePack::Resolvers::NativeDecimalResolver** StaticGet_Instance()
 		{
-			return (::MessagePack::Resolvers::NativeDecimalResolver**)Il2CppClass::FromTypeDefinitionIndex(NativeDecimalResolver_TypeDefinitionIndex)->GetStaticField(0x1EC80);
+			return (::MessagePack::Resolvers::NativeDecimalResolver**)Il2CppClass::FromTypeDefinitionIndex(NativeDecimalResolver_TypeDefinitionIndex)->GetStaticField(0x1F750);
 		}
 
 		::System::Void _ctor()

@@ -9,19 +9,19 @@ class Class_1_0BF092863AC7E04F;
 namespace MoleMole::Cameras { class TelescopeCameraConfig; }
 namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
 
-#define CLASS_1_0BF092863AC7E04F_CLASS_1_8648DE035AE7FCA5_METHOD_1_1C536E9223C4CF4A_OFFSET UNITYSDK_OFFSET(0x15F4BD10)
-#define CLASS_1_0BF092863AC7E04F_CLASS_1_8648DE035AE7FCA5_METHOD_1_AA18621D12E9FC02_OFFSET UNITYSDK_OFFSET(0x15F4BC10)
-#define CLASS_1_0BF092863AC7E04F_CLASS_1_8648DE035AE7FCA5__CTOR_OFFSET UNITYSDK_OFFSET(0x15F4BC00)
+#define CLASS_1_0BF092863AC7E04F_CLASS_1_8648DE035AE7FCA5_METHOD_1_1C536E9223C4CF4A_OFFSET UNITYSDK_OFFSET(0x8E04190)
+#define CLASS_1_0BF092863AC7E04F_CLASS_1_8648DE035AE7FCA5_METHOD_1_AA18621D12E9FC02_OFFSET UNITYSDK_OFFSET(0x8E04090)
+#define CLASS_1_0BF092863AC7E04F_CLASS_1_8648DE035AE7FCA5__CTOR_OFFSET UNITYSDK_OFFSET(0x8E03010)
 
-inline static constexpr unsigned int Class_1_0BF092863AC7E04F_Class_1_8648DE035AE7FCA5_TypeDefinitionIndex = 68528;
+inline static constexpr unsigned int Class_1_0BF092863AC7E04F_Class_1_8648DE035AE7FCA5_TypeDefinitionIndex = 61073;
 
 class Class_1_0BF092863AC7E04F_Class_1_8648DE035AE7FCA5 : public ::System::Object
 {
 public:
-	::MoleMole::Cameras::TelescopeCameraConfig* Field_1_3; // 0x10
-	::Class_1_0BF092863AC7E04F* Field_1_0; // 0x18
-	::UnityEngine::Vector3 Field_1_1; // 0x20
-	::UnityEngine::Quaternion Field_1_2; // 0x2C
+	::Class_1_0BF092863AC7E04F* Field_1_0; // 0x10
+	::MoleMole::Cameras::TelescopeCameraConfig* Field_1_3; // 0x18
+	::UnityEngine::Quaternion Field_1_2; // 0x20
+	::UnityEngine::Vector3 Field_1_1; // 0x30
 
 	::System::Void _ctor()
 	{

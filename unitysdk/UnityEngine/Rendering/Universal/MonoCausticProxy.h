@@ -7,43 +7,45 @@
 
 namespace UnityEngine { class MaterialPropertyBlock; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_CLEARPROPERTYBLOCK_OFFSET UNITYSDK_OFFSET(0x187CE030)
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONENABLE_OFFSET UNITYSDK_OFFSET(0x187CE090)
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x187CE0E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_REFRESHMATRIX_OFFSET UNITYSDK_OFFSET(0x187CD830)
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY__CCTOR_OFFSET UNITYSDK_OFFSET(0x187CE170)
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x187CE130)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_CLEARPROPERTYBLOCK_OFFSET UNITYSDK_OFFSET(0x18D2CED0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONENABLE_OFFSET UNITYSDK_OFFSET(0x18D2C530)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x18D2C650)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONREALENABLE_OFFSET UNITYSDK_OFFSET(0x18D2C600)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x18D2CF30)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_REFRESHMATRIX_OFFSET UNITYSDK_OFFSET(0x18D2C6D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D2CFC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY__CTOR_OFFSET UNITYSDK_OFFSET(0x18D2CF80)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int MonoCausticProxy_TypeDefinitionIndex = 28401;
+	inline static constexpr unsigned int MonoCausticProxy_TypeDefinitionIndex = 29344;
 
 	class MonoCausticProxy : public ::UnityEngine::MonoBehaviour
 	{
 	public:
-		static ::System::Int32* StaticGet__FadeParams3()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x6E10);
-		}
 		static ::System::Int32* StaticGet__EnableYFade()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x6E14);
-		}
-		static ::System::Int32* StaticGet__EnableXZFade()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x6E18);
-		}
-		static ::System::Int32* StaticGet__CausticsBrightness()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x6E1C);
-		}
-		static ::System::Int32* StaticGet_CausticsProjection()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x6E20);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x7560);
 		}
 		static ::System::Int32* StaticGet__FadeParams2()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x6E24);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x7564);
+		}
+		static ::System::Int32* StaticGet_CausticsProjection()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x7568);
+		}
+		static ::System::Int32* StaticGet__CausticsBrightness()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x756C);
+		}
+		static ::System::Int32* StaticGet__FadeParams3()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x7570);
+		}
+		static ::System::Int32* StaticGet__EnableXZFade()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoCausticProxy_TypeDefinitionIndex)->GetStaticField(0x7574);
 		}
 		::UnityEngine::MaterialPropertyBlock* m_MaterialPropertyBlock; // 0x18
 		::System::Boolean overrideBrightness; // 0x20
@@ -64,6 +66,16 @@ namespace UnityEngine::Rendering::Universal
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY__CCTOR_OFFSET))();
 		}
 
+		::System::Void OnEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnLightweightActive()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
+		}
+
 		::System::Void RefreshMatrix()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_REFRESHMATRIX_OFFSET))(this);
@@ -74,9 +86,9 @@ namespace UnityEngine::Rendering::Universal
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_CLEARPROPERTYBLOCK_OFFSET))(this);
 		}
 
-		::System::Void OnEnable()
+		::System::Void OnRealEnable()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONENABLE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_MONOCAUSTICPROXY_ONREALENABLE_OFFSET))(this);
 		}
 
 		::System::Void OnValidate()

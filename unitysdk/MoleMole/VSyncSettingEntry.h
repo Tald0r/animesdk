@@ -4,13 +4,13 @@
 #include "unitysdk/MoleMole/GraphicEnumSettingEntryBase.h"
 #include "unitysdk/MoleMole/GraphicSettingProfileType.h"
 
-#define MOLEMOLE_VSYNCSETTINGENTRY_GET_PROFILETYPE_OFFSET UNITYSDK_OFFSET(0x7C6F4A0)
-#define MOLEMOLE_VSYNCSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x7C6F490)
-#define MOLEMOLE_VSYNCSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x7C6F4B0)
+#define MOLEMOLE_VSYNCSETTINGENTRY_GET_PROFILETYPE_OFFSET UNITYSDK_OFFSET(0xA6E5080)
+#define MOLEMOLE_VSYNCSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0xA6E5070)
+#define MOLEMOLE_VSYNCSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xA6E5090)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int VSyncSettingEntry_TypeDefinitionIndex = 60488;
+	inline static constexpr unsigned int VSyncSettingEntry_TypeDefinitionIndex = 77767;
 
 	class VSyncSettingEntry : public ::MoleMole::GraphicEnumSettingEntryBase
 	{

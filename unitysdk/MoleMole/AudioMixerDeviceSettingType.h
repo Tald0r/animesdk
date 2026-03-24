@@ -3,14 +3,14 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AudioMixerDeviceSettingType_TypeDefinitionIndex = 38902;
+	inline static constexpr unsigned int AudioMixerDeviceSettingType_TypeDefinitionIndex = 59552;
 
 	enum class AudioMixerDeviceSettingType : ::System::Int32
 	{
 		HeadPhones = 1,
-		TV = 4,
-		SoundBar = 2,
 		None = 0,
 		Phone = 3,
+		SoundBar = 2,
+		TV = 4,
 	};
 }

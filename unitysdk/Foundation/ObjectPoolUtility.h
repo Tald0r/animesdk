@@ -2,24 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define FOUNDATION_OBJECTPOOLUTILITY_GET_MAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1A49EC30)
-#define FOUNDATION_OBJECTPOOLUTILITY_ISTHISMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x1A49EE90)
-#define FOUNDATION_OBJECTPOOLUTILITY_MARKMAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1A49ECF0)
-#define FOUNDATION_OBJECTPOOLUTILITY_SET_MAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1A49EC90)
-#define FOUNDATION_OBJECTPOOLUTILITY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A49F100)
+#define FOUNDATION_OBJECTPOOLUTILITY_GET_MAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1AA1A320)
+#define FOUNDATION_OBJECTPOOLUTILITY_ISTHISMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x1AA1A580)
+#define FOUNDATION_OBJECTPOOLUTILITY_MARKMAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1AA1A3E0)
+#define FOUNDATION_OBJECTPOOLUTILITY_SET_MAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1AA1A380)
+#define FOUNDATION_OBJECTPOOLUTILITY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AA1A7F0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ObjectPoolUtility_TypeDefinitionIndex = 8215;
+	inline static constexpr unsigned int ObjectPoolUtility_TypeDefinitionIndex = 8208;
 
 	class ObjectPoolUtility : public ::System::Object
 	{
 	public:
-		static ::System::Int32* StaticGet__MainThreadID_k__BackingField()
+		static ::System::Int32* StaticGet_ObjectPoolSize()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ObjectPoolUtility_TypeDefinitionIndex)->GetStaticField(0x34C0);
 		}
-		static ::System::Int32* StaticGet_ObjectPoolSize()
+		static ::System::Int32* StaticGet__MainThreadID_k__BackingField()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ObjectPoolUtility_TypeDefinitionIndex)->GetStaticField(0x34C4);
 		}

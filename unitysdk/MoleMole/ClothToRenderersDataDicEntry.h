@@ -5,11 +5,11 @@
 namespace MoleMole { class ClothRenderers; }
 namespace MoleMole { class ClothWrapper; }
 
-#define MOLEMOLE_CLOTHTORENDERERSDATADICENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xCD97360)
+#define MOLEMOLE_CLOTHTORENDERERSDATADICENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xB9036A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ClothToRenderersDataDicEntry_TypeDefinitionIndex = 66829;
+	inline static constexpr unsigned int ClothToRenderersDataDicEntry_TypeDefinitionIndex = 53311;
 
 	class ClothToRenderersDataDicEntry : public ::MoleMole::DataStructures::Lists::EasySerializeDictionaryEntry_2<::MoleMole::ClothWrapper*, ::MoleMole::ClothRenderers*>
 	{

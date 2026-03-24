@@ -6,11 +6,11 @@
 
 namespace UnityEngine { class Transform; }
 
-#define NPCCROWD_AI_ATTRACTORSLOTCONFIG_RESETDATA_OFFSET UNITYSDK_OFFSET(0x3260B0)
+#define NPCCROWD_AI_ATTRACTORSLOTCONFIG_RESETDATA_OFFSET UNITYSDK_OFFSET(0x32CB40)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int AttractorSlotConfig_TypeDefinitionIndex = 64961;
+	inline static constexpr unsigned int AttractorSlotConfig_TypeDefinitionIndex = 65025;
 
 	struct alignas(4) AttractorSlotConfig
 	{

@@ -5,7 +5,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ArithmeticUtils_IFromToRotationWithoutZSelector_TypeDefinitionIndex = 9184;
+	inline static constexpr unsigned int ArithmeticUtils_IFromToRotationWithoutZSelector_TypeDefinitionIndex = 8917;
 
 	class ArithmeticUtils_IFromToRotationWithoutZSelector
 	{

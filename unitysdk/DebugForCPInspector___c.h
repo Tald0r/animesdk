@@ -4,19 +4,19 @@
 #include "unitysdk/DebugForCPInspector_EffInfo.h"
 #include "unitysdk/System/Object.h"
 
-#define DEBUGFORCPINSPECTOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x17B2A270)
-#define DEBUGFORCPINSPECTOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x17B2A2B0)
-#define DEBUGFORCPINSPECTOR___C___CCTOR_B__29_0_OFFSET UNITYSDK_OFFSET(0x17B2A2C0)
-#define DEBUGFORCPINSPECTOR___C___CCTOR_B__29_1_OFFSET UNITYSDK_OFFSET(0x17B2A2E0)
+#define DEBUGFORCPINSPECTOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A385EA0)
+#define DEBUGFORCPINSPECTOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A385EE0)
+#define DEBUGFORCPINSPECTOR___C___CCTOR_B__29_0_OFFSET UNITYSDK_OFFSET(0x1A385EF0)
+#define DEBUGFORCPINSPECTOR___C___CCTOR_B__29_1_OFFSET UNITYSDK_OFFSET(0x1A385F10)
 
-inline static constexpr unsigned int DebugForCPInspector___c_TypeDefinitionIndex = 81562;
+inline static constexpr unsigned int DebugForCPInspector___c_TypeDefinitionIndex = 83523;
 
 class DebugForCPInspector___c : public ::System::Object
 {
 public:
 	static ::DebugForCPInspector___c** StaticGet___9()
 	{
-		return (::DebugForCPInspector___c**)Il2CppClass::FromTypeDefinitionIndex(DebugForCPInspector___c_TypeDefinitionIndex)->GetStaticField(0x46850);
+		return (::DebugForCPInspector___c**)Il2CppClass::FromTypeDefinitionIndex(DebugForCPInspector___c_TypeDefinitionIndex)->GetStaticField(0x48230);
 	}
 
 	static ::System::Void _cctor()

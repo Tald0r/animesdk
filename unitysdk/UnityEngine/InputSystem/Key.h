@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int Key_TypeDefinitionIndex = 27518;
+	inline static constexpr unsigned int Key_TypeDefinitionIndex = 28458;
 
 	enum class Key : ::System::Int32
 	{

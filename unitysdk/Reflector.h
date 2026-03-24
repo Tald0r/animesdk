@@ -3,9 +3,9 @@
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define REFLECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x13919CB0)
+#define REFLECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x151A0F50)
 
-inline static constexpr unsigned int Reflector_TypeDefinitionIndex = 28176;
+inline static constexpr unsigned int Reflector_TypeDefinitionIndex = 29117;
 
 class Reflector : public ::UnityEngine::MonoBehaviour
 {

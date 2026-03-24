@@ -18,85 +18,85 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NAP_NAPECS_ECSARCHETYPE_BAKEFILTERCALLBACKS_OFFSET UNITYSDK_OFFSET(0x1881C5F0)
-#define NAP_NAPECS_ECSARCHETYPE_GETCACHEDCOMPONENTLISTBYINDEX_OFFSET UNITYSDK_OFFSET(0x1881A510)
-#define NAP_NAPECS_ECSARCHETYPE_GETCACHEDCOMPONENTLIST_OFFSET UNITYSDK_OFFSET(0x1881A5B0)
-#define NAP_NAPECS_ECSARCHETYPE_GETCOMPONENTINDEX_OFFSET UNITYSDK_OFFSET(0x1881A480)
-#define NAP_NAPECS_ECSARCHETYPE_GETENTITYFOREACHMASK_OFFSET UNITYSDK_OFFSET(0x1881B870)
-#define NAP_NAPECS_ECSARCHETYPE_GETENTITYINDEX_OFFSET UNITYSDK_OFFSET(0x1881A750)
-#define NAP_NAPECS_ECSARCHETYPE_GETFOREACHMASK_OFFSET UNITYSDK_OFFSET(0x1881EBA0)
-#define NAP_NAPECS_ECSARCHETYPE_GET_ARCHETYPEGROUP_OFFSET UNITYSDK_OFFSET(0x18818F50)
-#define NAP_NAPECS_ECSARCHETYPE_GET_COMPONENTCLASSIDLIST_OFFSET UNITYSDK_OFFSET(0x18818F00)
-#define NAP_NAPECS_ECSARCHETYPE_GET_COMPONENTMASK_OFFSET UNITYSDK_OFFSET(0x18818EF0)
-#define NAP_NAPECS_ECSARCHETYPE_GET_ENTITYCACHEEND_OFFSET UNITYSDK_OFFSET(0x18818F20)
-#define NAP_NAPECS_ECSARCHETYPE_GET_ENTITYCACHESTART_OFFSET UNITYSDK_OFFSET(0x18818F10)
-#define NAP_NAPECS_ECSARCHETYPE_GET_ENTITYCACHE_OFFSET UNITYSDK_OFFSET(0x18818F30)
-#define NAP_NAPECS_ECSARCHETYPE_GET_ISDUMMY_OFFSET UNITYSDK_OFFSET(0x18818EE0)
-#define NAP_NAPECS_ECSARCHETYPE_GET_RELATEDFILTERS_OFFSET UNITYSDK_OFFSET(0x18818FC0)
-#define NAP_NAPECS_ECSARCHETYPE_GET_WORLDTYPEID_OFFSET UNITYSDK_OFFSET(0x18818FD0)
-#define NAP_NAPECS_ECSARCHETYPE_GET_WORLD_OFFSET UNITYSDK_OFFSET(0x18818F40)
-#define NAP_NAPECS_ECSARCHETYPE_INFORMCOMPONENTREADYDIAGNOSE_OFFSET UNITYSDK_OFFSET(0x1881D9F0)
-#define NAP_NAPECS_ECSARCHETYPE_INFORMCOMPONENTREADY_OFFSET UNITYSDK_OFFSET(0x1881D6F0)
-#define NAP_NAPECS_ECSARCHETYPE_INFORMENTITYPAUSE_OFFSET UNITYSDK_OFFSET(0x1881D850)
-#define NAP_NAPECS_ECSARCHETYPE_INFORMENTITYRESUME_OFFSET UNITYSDK_OFFSET(0x1881D920)
-#define NAP_NAPECS_ECSARCHETYPE_INIT_OFFSET UNITYSDK_OFFSET(0x188191D0)
-#define NAP_NAPECS_ECSARCHETYPE_MARKSINGLEDATAWRITE_OFFSET UNITYSDK_OFFSET(0x1881E7A0)
-#define NAP_NAPECS_ECSARCHETYPE_ONENTITYADDTOARCHETYPE_OFFSET UNITYSDK_OFFSET(0x1881B4D0)
-#define NAP_NAPECS_ECSARCHETYPE_ONENTITYREADYCHANGE_OFFSET UNITYSDK_OFFSET(0x1881F010)
-#define NAP_NAPECS_ECSARCHETYPE_ONENTITYREMOVEFROMARCHETYPE_OFFSET UNITYSDK_OFFSET(0x1881C290)
-#define NAP_NAPECS_ECSARCHETYPE_ONENTITYRUNNABLECHANGE_OFFSET UNITYSDK_OFFSET(0x1881ECF0)
-#define NAP_NAPECS_ECSARCHETYPE_REGISTERENTITY_OFFSET UNITYSDK_OFFSET(0x1881A840)
-#define NAP_NAPECS_ECSARCHETYPE_TRANSFERSTRUCTCOMPONENT_OFFSET UNITYSDK_OFFSET(0x1881E2C0)
-#define NAP_NAPECS_ECSARCHETYPE_UNREGISTERENTITY_OFFSET UNITYSDK_OFFSET(0x1881B9D0)
-#define NAP_NAPECS_ECSARCHETYPE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1881F350)
-#define NAP_NAPECS_ECSARCHETYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x18819040)
+#define NAP_NAPECS_ECSARCHETYPE_BAKEFILTERCALLBACKS_OFFSET UNITYSDK_OFFSET(0x18D7B900)
+#define NAP_NAPECS_ECSARCHETYPE_GETCACHEDCOMPONENTLISTBYINDEX_OFFSET UNITYSDK_OFFSET(0x18D79840)
+#define NAP_NAPECS_ECSARCHETYPE_GETCACHEDCOMPONENTLIST_OFFSET UNITYSDK_OFFSET(0x18D798E0)
+#define NAP_NAPECS_ECSARCHETYPE_GETCOMPONENTINDEX_OFFSET UNITYSDK_OFFSET(0x18D797B0)
+#define NAP_NAPECS_ECSARCHETYPE_GETENTITYFOREACHMASK_OFFSET UNITYSDK_OFFSET(0x18D7AB80)
+#define NAP_NAPECS_ECSARCHETYPE_GETENTITYINDEX_OFFSET UNITYSDK_OFFSET(0x18D79A80)
+#define NAP_NAPECS_ECSARCHETYPE_GETFOREACHMASK_OFFSET UNITYSDK_OFFSET(0x18D7DF00)
+#define NAP_NAPECS_ECSARCHETYPE_GET_ARCHETYPEGROUP_OFFSET UNITYSDK_OFFSET(0x18D782A0)
+#define NAP_NAPECS_ECSARCHETYPE_GET_COMPONENTCLASSIDLIST_OFFSET UNITYSDK_OFFSET(0x18D78250)
+#define NAP_NAPECS_ECSARCHETYPE_GET_COMPONENTMASK_OFFSET UNITYSDK_OFFSET(0x18D78240)
+#define NAP_NAPECS_ECSARCHETYPE_GET_ENTITYCACHEEND_OFFSET UNITYSDK_OFFSET(0x18D78270)
+#define NAP_NAPECS_ECSARCHETYPE_GET_ENTITYCACHESTART_OFFSET UNITYSDK_OFFSET(0x18D78260)
+#define NAP_NAPECS_ECSARCHETYPE_GET_ENTITYCACHE_OFFSET UNITYSDK_OFFSET(0x18D78280)
+#define NAP_NAPECS_ECSARCHETYPE_GET_ISDUMMY_OFFSET UNITYSDK_OFFSET(0x18D78230)
+#define NAP_NAPECS_ECSARCHETYPE_GET_RELATEDFILTERS_OFFSET UNITYSDK_OFFSET(0x18D78310)
+#define NAP_NAPECS_ECSARCHETYPE_GET_WORLDTYPEID_OFFSET UNITYSDK_OFFSET(0x18D78320)
+#define NAP_NAPECS_ECSARCHETYPE_GET_WORLD_OFFSET UNITYSDK_OFFSET(0x18D78290)
+#define NAP_NAPECS_ECSARCHETYPE_INFORMCOMPONENTREADYDIAGNOSE_OFFSET UNITYSDK_OFFSET(0x18D7CD40)
+#define NAP_NAPECS_ECSARCHETYPE_INFORMCOMPONENTREADY_OFFSET UNITYSDK_OFFSET(0x18D7CA40)
+#define NAP_NAPECS_ECSARCHETYPE_INFORMENTITYPAUSE_OFFSET UNITYSDK_OFFSET(0x18D7CBA0)
+#define NAP_NAPECS_ECSARCHETYPE_INFORMENTITYRESUME_OFFSET UNITYSDK_OFFSET(0x18D7CC70)
+#define NAP_NAPECS_ECSARCHETYPE_INIT_OFFSET UNITYSDK_OFFSET(0x18D78520)
+#define NAP_NAPECS_ECSARCHETYPE_MARKSINGLEDATAWRITE_OFFSET UNITYSDK_OFFSET(0x18D7DB00)
+#define NAP_NAPECS_ECSARCHETYPE_ONENTITYADDTOARCHETYPE_OFFSET UNITYSDK_OFFSET(0x18D7A7F0)
+#define NAP_NAPECS_ECSARCHETYPE_ONENTITYREADYCHANGE_OFFSET UNITYSDK_OFFSET(0x18D7E370)
+#define NAP_NAPECS_ECSARCHETYPE_ONENTITYREMOVEFROMARCHETYPE_OFFSET UNITYSDK_OFFSET(0x18D7B5A0)
+#define NAP_NAPECS_ECSARCHETYPE_ONENTITYRUNNABLECHANGE_OFFSET UNITYSDK_OFFSET(0x18D7E050)
+#define NAP_NAPECS_ECSARCHETYPE_REGISTERENTITY_OFFSET UNITYSDK_OFFSET(0x18D79B70)
+#define NAP_NAPECS_ECSARCHETYPE_TRANSFERSTRUCTCOMPONENT_OFFSET UNITYSDK_OFFSET(0x18D7D620)
+#define NAP_NAPECS_ECSARCHETYPE_UNREGISTERENTITY_OFFSET UNITYSDK_OFFSET(0x18D7ACE0)
+#define NAP_NAPECS_ECSARCHETYPE__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D7E6B0)
+#define NAP_NAPECS_ECSARCHETYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x18D78390)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsArchetype_TypeDefinitionIndex = 34190;
+	inline static constexpr unsigned int EcsArchetype_TypeDefinitionIndex = 35176;
 
 	class EcsArchetype : public ::System::Object
 	{
 	public:
 		static ::Nap::NapECS::EcsArchetype** StaticGet_DummyArchetype()
 		{
-			return (::Nap::NapECS::EcsArchetype**)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x247E0);
-		}
-		static ::System::Boolean* StaticGet_EnableFilterComponentCache()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x8080);
-		}
-		static ::System::Boolean* StaticGet_enableOnEntityPauseAndOnEntityResume()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x8081);
+			return (::Nap::NapECS::EcsArchetype**)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x26210);
 		}
 		static ::System::Boolean* StaticGet_enableForEachAccelerateNextWorldCreate()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x8082);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x83E0);
 		}
 		static ::System::Boolean* StaticGet_EnableFilterComponentCacheConfig()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x8083);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x83E1);
 		}
-		::Il2CppArray<::System::Byte>* _compShotClassIdToIndex; // 0x10
-		::Il2CppArray<::Nap::NapECS::EcsArchetype_PauseAction>* _pauseActions; // 0x18
+		static ::System::Boolean* StaticGet_EnableFilterComponentCache()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x83E2);
+		}
+		static ::System::Boolean* StaticGet_enableOnEntityPauseAndOnEntityResume()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EcsArchetype_TypeDefinitionIndex)->GetStaticField(0x83E3);
+		}
+		::System::Collections::Generic::Dictionary_2<::Nap::NapECS::EcsEntity*, ::System::Int32>* _entityCheckSet; // 0x10
+		::Il2CppArray<::System::Object*>* _componentCache; // 0x18
 		::Nap::NapECS::EcsWorld* _refWorld; // 0x20
-		::System::Collections::Generic::List_1<::Nap::NapECS::EcsEntity*>* _entityCache; // 0x28
-		::System::Collections::Generic::List_1<::System::Int32>* _componentClassIdList; // 0x30
-		::System::Collections::Generic::Dictionary_2<::Nap::NapECS::EcsEntity*, ::System::Int32>* _entityCheckSet; // 0x38
-		::Nap::NapECS::EcsComponentChunk* _chunk; // 0x40
+		::Il2CppArray<::Nap::NapECS::EcsArchetype_ResumeAction>* _resumeActions; // 0x28
+		::Il2CppArray<::Nap::NapECS::EcsArchetype_PauseAction>* _pauseActions; // 0x30
+		::System::Collections::Generic::List_1<::Nap::NapECS::EcsEntity*>* _entityCache; // 0x38
+		::Il2CppArray<::System::Byte>* _compShotClassIdToIndex; // 0x40
 		::System::Collections::Generic::List_1<::Nap::NapECS::EcsFilter*>* _relatedFilters; // 0x48
-		::Il2CppArray<::Nap::NapECS::EcsArchetype_ReadyAction>* _readyActions; // 0x50
-		::Il2CppArray<::System::Object*>* _componentCache; // 0x58
-		::System::Collections::Generic::List_1<::System::Byte>* entityForEachMask; // 0x60
-		::Il2CppArray<::Nap::NapECS::EcsArchetype_ResumeAction>* _resumeActions; // 0x68
-		::System::Int32 _entityCount; // 0x70
-		::System::Int32 _entityCacheStart; // 0x74
-		::System::Boolean enableForEachAccelerate; // 0x78
-		::System::Int32 _nextEntityCacheIndex; // 0x7C
-		::Nap::NapECS::ComponentMask _compMask; // 0x80
-		::System::Int32 _classComponentCount; // 0xA0
-		::System::Int32 _entityCacheEnd; // 0xA4
+		::System::Collections::Generic::List_1<::System::Int32>* _componentClassIdList; // 0x50
+		::System::Collections::Generic::List_1<::System::Byte>* entityForEachMask; // 0x58
+		::Nap::NapECS::EcsComponentChunk* _chunk; // 0x60
+		::Il2CppArray<::Nap::NapECS::EcsArchetype_ReadyAction>* _readyActions; // 0x68
+		::System::Int32 _classComponentCount; // 0x70
+		::System::Boolean enableForEachAccelerate; // 0x74
+		::Nap::NapECS::ComponentMask _compMask; // 0x78
+		::System::Int32 _entityCount; // 0x98
+		::System::Int32 _entityCacheEnd; // 0x9C
+		::System::Int32 _entityCacheStart; // 0xA0
+		::System::Int32 _nextEntityCacheIndex; // 0xA4
 
 		::System::Void _ctor(::Nap::NapECS::ComponentMask compMask, ::Nap::NapECS::EcsWorld* world)
 		{

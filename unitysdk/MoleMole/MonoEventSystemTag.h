@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_C5CF16B9F11707EA.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_MONOEVENTSYSTEMTAG__CTOR_OFFSET UNITYSDK_OFFSET(0xC233C40)
+#define MOLEMOLE_MONOEVENTSYSTEMTAG__CTOR_OFFSET UNITYSDK_OFFSET(0xB84A800)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEventSystemTag_TypeDefinitionIndex = 40596;
+	inline static constexpr unsigned int MonoEventSystemTag_TypeDefinitionIndex = 41196;
 
 	class MonoEventSystemTag : public ::UnityEngine::MonoBehaviour
 	{

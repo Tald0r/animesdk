@@ -3,13 +3,13 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeTransitionSourceType_TypeDefinitionIndex = 26939;
+	inline static constexpr unsigned int StateTreeTransitionSourceType_TypeDefinitionIndex = 27780;
 
-	enum class StateTreeTransitionSourceType : ::System::Int32
+	enum class StateTreeTransitionSourceType : ::System::Byte
 	{
-		Unset = 0,
-		Asset = 1,
-		ExternalRequest = 2,
-		Internal = 3,
+		Unset = 0x0,
+		Asset = 0x1,
+		ExternalRequest = 0x2,
+		Internal = 0x3,
 	};
 }

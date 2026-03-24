@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_655;
+class Class_2_208CC9941471731A_645;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x71E7600)
-#define MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x71E7640)
-#define MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__INITMEMORYDATA_B__10_0_OFFSET UNITYSDK_OFFSET(0x71E7650)
+#define MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAB6920)
+#define MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAB6960)
+#define MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__INITMEMORYDATA_B__10_0_OFFSET UNITYSDK_OFFSET(0xCAB6970)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchMemoryDialogPopWindowController___c_TypeDefinitionIndex = 76616;
+	inline static constexpr unsigned int UIWorkBenchMemoryDialogPopWindowController___c_TypeDefinitionIndex = 68574;
 
 	class UIWorkBenchMemoryDialogPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::Class_2_208CC9941471731A_655*>** StaticGet___9__10_0()
+		static ::System::Comparison_1<::Class_2_208CC9941471731A_645*>** StaticGet___9__10_0()
 		{
-			return (::System::Comparison_1<::Class_2_208CC9941471731A_655*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMemoryDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42830);
+			return (::System::Comparison_1<::Class_2_208CC9941471731A_645*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMemoryDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x433F0);
 		}
 		static ::MoleMole::UIWorkBenchMemoryDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIWorkBenchMemoryDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMemoryDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42838);
+			return (::MoleMole::UIWorkBenchMemoryDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMemoryDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x433F8);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +35,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _InitMemoryData_b__10_0(::Class_2_208CC9941471731A_655* a, ::Class_2_208CC9941471731A_655* b)
+		::System::Int32 _InitMemoryData_b__10_0(::Class_2_208CC9941471731A_645* a, ::Class_2_208CC9941471731A_645* b)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_655*, ::Class_2_208CC9941471731A_655*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__INITMEMORYDATA_B__10_0_OFFSET))(this, a, b);
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_645*, ::Class_2_208CC9941471731A_645*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIWORKBENCHMEMORYDIALOGPOPWINDOWCONTROLLER___C__INITMEMORYDATA_B__10_0_OFFSET))(this, a, b);
 		}
 	};
 }

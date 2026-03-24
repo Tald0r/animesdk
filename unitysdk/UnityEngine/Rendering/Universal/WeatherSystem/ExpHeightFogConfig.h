@@ -4,12 +4,12 @@
 #include "unitysdk/UnityEngine/Rendering/Universal/WeatherSystem/WeatherPropertiesBase_1.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_EXPHEIGHTFOGCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x18044C90)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_EXPHEIGHTFOGCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18044EE0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_EXPHEIGHTFOGCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x18666D10)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_EXPHEIGHTFOGCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18666F60)
 
 namespace UnityEngine::Rendering::Universal::WeatherSystem
 {
-	inline static constexpr unsigned int ExpHeightFogConfig_TypeDefinitionIndex = 28818;
+	inline static constexpr unsigned int ExpHeightFogConfig_TypeDefinitionIndex = 29767;
 
 	class ExpHeightFogConfig : public ::UnityEngine::Rendering::Universal::WeatherSystem::WeatherPropertiesBase_1<::UnityEngine::Rendering::Universal::WeatherSystem::ExpHeightFogConfig*>
 	{

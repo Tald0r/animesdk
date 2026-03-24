@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/LanguageType.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_LANGUAGETEXTSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8F86610)
+#define MOLEMOLE_LANGUAGETEXTSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD0E6BA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LanguageTextSettingContext_TypeDefinitionIndex = 58849;
+	inline static constexpr unsigned int LanguageTextSettingContext_TypeDefinitionIndex = 62493;
 
 	class LanguageTextSettingContext : public ::MoleMole::SystemSettingContextBase
 	{

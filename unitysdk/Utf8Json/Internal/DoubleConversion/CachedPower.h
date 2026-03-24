@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UTF8JSON_INTERNAL_DOUBLECONVERSION_CACHEDPOWER__CTOR_OFFSET UNITYSDK_OFFSET(0x95DE20)
+#define UTF8JSON_INTERNAL_DOUBLECONVERSION_CACHEDPOWER__CTOR_OFFSET UNITYSDK_OFFSET(0x98F940)
 
 namespace Utf8Json::Internal::DoubleConversion
 {
-	inline static constexpr unsigned int CachedPower_TypeDefinitionIndex = 81926;
+	inline static constexpr unsigned int CachedPower_TypeDefinitionIndex = 83967;
 
 	struct alignas(8) CachedPower
 	{

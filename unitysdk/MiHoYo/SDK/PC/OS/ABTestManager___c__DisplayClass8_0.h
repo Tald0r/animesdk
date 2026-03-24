@@ -7,12 +7,12 @@ namespace MiHoYo::SDK::PC::OS { class ABTestManager; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_PC_OS_ABTESTMANAGER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18BA5A40)
-#define MIHOYO_SDK_PC_OS_ABTESTMANAGER___C__DISPLAYCLASS8_0__REQUESTALLACCOUNTABTEST_B__0_OFFSET UNITYSDK_OFFSET(0x18BA5A50)
+#define MIHOYO_SDK_PC_OS_ABTESTMANAGER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18C89F80)
+#define MIHOYO_SDK_PC_OS_ABTESTMANAGER___C__DISPLAYCLASS8_0__REQUESTALLACCOUNTABTEST_B__0_OFFSET UNITYSDK_OFFSET(0x18C89F90)
 
 namespace MiHoYo::SDK::PC::OS
 {
-	inline static constexpr unsigned int ABTestManager___c__DisplayClass8_0_TypeDefinitionIndex = 18449;
+	inline static constexpr unsigned int ABTestManager___c__DisplayClass8_0_TypeDefinitionIndex = 18983;
 
 	class ABTestManager___c__DisplayClass8_0 : public ::System::Object
 	{

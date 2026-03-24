@@ -5,22 +5,22 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGUIICONMOUNT_ICONMOUNTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9720160)
+#define MOLEMOLE_CONFIGUIICONMOUNT_ICONMOUNTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB0AF300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIIconMount_IconMountConfig_TypeDefinitionIndex = 62990;
+	inline static constexpr unsigned int ConfigUIIconMount_IconMountConfig_TypeDefinitionIndex = 59134;
 
 	class ConfigUIIconMount_IconMountConfig : public ::System::Object
 	{
 	public:
-		::System::String* desc; // 0x10
-		::System::String* iconPath; // 0x18
-		::UnityEngine::Vector3 newPosition; // 0x20
-		::UnityEngine::Vector3 urbanMapNamePosition; // 0x2C
-		::UnityEngine::Vector3 redpotPosition; // 0x38
-		::UnityEngine::Vector3 tempUnlockPosition; // 0x44
-		::UnityEngine::Vector3 missionGuidePosition; // 0x50
+		::System::String* iconPath; // 0x10
+		::System::String* desc; // 0x18
+		::UnityEngine::Vector3 missionGuidePosition; // 0x20
+		::UnityEngine::Vector3 newPosition; // 0x2C
+		::UnityEngine::Vector3 urbanMapNamePosition; // 0x38
+		::UnityEngine::Vector3 redpotPosition; // 0x44
+		::UnityEngine::Vector3 tempUnlockPosition; // 0x50
 
 		::System::Void _ctor()
 		{

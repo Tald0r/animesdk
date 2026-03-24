@@ -8,13 +8,13 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UIBATTLEPORTAL_HADALZONECONFIG_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xBB04390)
-#define MOLEMOLE_UIBATTLEPORTAL_HADALZONECONFIG_ONENABLE_OFFSET UNITYSDK_OFFSET(0xBB04330)
-#define MOLEMOLE_UIBATTLEPORTAL_HADALZONECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xBB043F0)
+#define MOLEMOLE_UIBATTLEPORTAL_HADALZONECONFIG_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xBFD0DF0)
+#define MOLEMOLE_UIBATTLEPORTAL_HADALZONECONFIG_ONENABLE_OFFSET UNITYSDK_OFFSET(0xBFD0D90)
+#define MOLEMOLE_UIBATTLEPORTAL_HADALZONECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xBFD0E50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBattlePortal_HadalZoneConfig_TypeDefinitionIndex = 53329;
+	inline static constexpr unsigned int UIBattlePortal_HadalZoneConfig_TypeDefinitionIndex = 76641;
 
 	class UIBattlePortal_HadalZoneConfig : public ::UnityEngine::MonoBehaviour
 	{

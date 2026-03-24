@@ -10,24 +10,24 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x19760BA0)
-#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19760600)
-#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL__CTOR_OFFSET UNITYSDK_OFFSET(0x19760DE0)
-#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL__ONEXECUTE_B__7_2_OFFSET UNITYSDK_OFFSET(0x19760E00)
+#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x19C2EA10)
+#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19C2E460)
+#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL__CTOR_OFFSET UNITYSDK_OFFSET(0x19C2EC50)
+#define NODECANVAS_TASKS_ACTIONS_GETLINECASTINFO2DALL__ONEXECUTE_B__7_2_OFFSET UNITYSDK_OFFSET(0x19C2EC70)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetLinecastInfo2DAll_TypeDefinitionIndex = 25962;
+	inline static constexpr unsigned int GetLinecastInfo2DAll_TypeDefinitionIndex = 26409;
 
 	class GetLinecastInfo2DAll : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>* saveHitGameObjectsAs; // 0x60
-		::Il2CppArray<::UnityEngine::RaycastHit2D>* hits; // 0x68
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* target; // 0x70
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>* saveNormalsAs; // 0x78
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::System::Single>*>* saveDistancesAs; // 0x80
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>* savePointsAs; // 0x88
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>* saveNormalsAs; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::System::Single>*>* saveDistancesAs; // 0x68
+		::Il2CppArray<::UnityEngine::RaycastHit2D>* hits; // 0x70
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>* savePointsAs; // 0x78
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* target; // 0x80
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>* saveHitGameObjectsAs; // 0x88
 		::UnityEngine::LayerMask mask; // 0x90
 
 		::System::Void _ctor()

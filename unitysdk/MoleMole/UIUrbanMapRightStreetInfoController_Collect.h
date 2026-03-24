@@ -5,11 +5,11 @@
 class Class_3_468AACA7FBAA98D9;
 namespace MoleMole { class UIUrbanMapRightStreetInfoContext_Collect; }
 
-#define MOLEMOLE_UIURBANMAPRIGHTSTREETINFOCONTROLLER_COLLECT__CTOR_OFFSET UNITYSDK_OFFSET(0xD6EB030)
+#define MOLEMOLE_UIURBANMAPRIGHTSTREETINFOCONTROLLER_COLLECT__CTOR_OFFSET UNITYSDK_OFFSET(0xDF5A0B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapRightStreetInfoController_Collect_TypeDefinitionIndex = 69611;
+	inline static constexpr unsigned int UIUrbanMapRightStreetInfoController_Collect_TypeDefinitionIndex = 63277;
 
 	class UIUrbanMapRightStreetInfoController_Collect : public ::MoleMole::UIUrbanMapRightTastListWidget02WidgetController_2<::Class_3_468AACA7FBAA98D9*, ::MoleMole::UIUrbanMapRightStreetInfoContext_Collect*>
 	{

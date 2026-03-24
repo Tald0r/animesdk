@@ -4,11 +4,11 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIGENERALACTIVITYTAGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCAC50A0)
+#define MOLEMOLE_UIGENERALACTIVITYTAGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCB4B4B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralActivityTagContext_TypeDefinitionIndex = 57669;
+	inline static constexpr unsigned int UIGeneralActivityTagContext_TypeDefinitionIndex = 49352;
 
 	class UIGeneralActivityTagContext : public ::MoleMole::UIControllerContextBase
 	{

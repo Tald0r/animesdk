@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/MonoRenderHandlerForAvatar_Enum_3_06AE57155DC501A1.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_MONORENDERHANDLERFORAVATAR_CLASS_1_7880090964FE4DC1__CTOR_OFFSET UNITYSDK_OFFSET(0x8F31900)
+#define MOLEMOLE_MONORENDERHANDLERFORAVATAR_CLASS_1_7880090964FE4DC1__CTOR_OFFSET UNITYSDK_OFFSET(0xA52A790)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoRenderHandlerForAvatar_Class_1_7880090964FE4DC1_TypeDefinitionIndex = 54389;
+	inline static constexpr unsigned int MonoRenderHandlerForAvatar_Class_1_7880090964FE4DC1_TypeDefinitionIndex = 66665;
 
 	class MonoRenderHandlerForAvatar_Class_1_7880090964FE4DC1 : public ::System::Object
 	{

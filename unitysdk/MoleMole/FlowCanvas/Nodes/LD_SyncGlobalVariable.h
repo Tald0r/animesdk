@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SYNCGLOBALVARIABLE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE102840)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SYNCGLOBALVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xE102980)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SYNCGLOBALVARIABLE_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A67200)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SYNCGLOBALVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x7A67340)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_SyncGlobalVariable_TypeDefinitionIndex = 64289;
+	inline static constexpr unsigned int LD_SyncGlobalVariable_TypeDefinitionIndex = 57233;
 
 	class LD_SyncGlobalVariable : public ::FlowCanvas::Nodes::CallableActionNode
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOOTGAMEGETSCORE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6AEA530)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOOTGAMEGETSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0x6AEA630)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOOTGAMEGETSCORE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB5D9770)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOOTGAMEGETSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5D9870)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShootGameGetScore_TypeDefinitionIndex = 57365;
+	inline static constexpr unsigned int LDShootGameGetScore_TypeDefinitionIndex = 52927;
 
 	class LDShootGameGetScore : public ::FlowCanvas::Nodes::FlowControlNode
 	{

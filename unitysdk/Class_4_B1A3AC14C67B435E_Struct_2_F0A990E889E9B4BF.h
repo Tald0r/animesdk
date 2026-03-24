@@ -5,11 +5,11 @@
 class Class_4_B1A3AC14C67B435E;
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 
-inline static constexpr unsigned int Class_4_B1A3AC14C67B435E_Struct_2_F0A990E889E9B4BF_TypeDefinitionIndex = 41943;
+inline static constexpr unsigned int Class_4_B1A3AC14C67B435E_Struct_2_F0A990E889E9B4BF_TypeDefinitionIndex = 41447;
 
 struct alignas(8) Class_4_B1A3AC14C67B435E_Struct_2_F0A990E889E9B4BF
 {
-	::Class_4_B1A3AC14C67B435E* Field_2_2; // 0x10
-	::System::Collections::Generic::IList_1<::System::UInt32>* Field_2_1; // 0x18
+	::System::Collections::Generic::IList_1<::System::UInt32>* Field_2_1; // 0x10
+	::Class_4_B1A3AC14C67B435E* Field_2_2; // 0x18
 	::System::Boolean Field_2_0; // 0x20
 };

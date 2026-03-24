@@ -5,7 +5,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int MdbSimWindData_TypeDefinitionIndex = 36100;
+	inline static constexpr unsigned int MdbSimWindData_TypeDefinitionIndex = 37120;
 
 	struct alignas(4) MdbSimWindData
 	{

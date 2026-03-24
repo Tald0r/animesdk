@@ -7,13 +7,13 @@ namespace System { class Type; }
 namespace System::ComponentModel { class ITypeDescriptorContext; }
 namespace System::Globalization { class CultureInfo; }
 
-#define SYSTEM_DATA_DEFAULTVALUETYPECONVERTER_CONVERTFROM_OFFSET UNITYSDK_OFFSET(0x1AC537C0)
-#define SYSTEM_DATA_DEFAULTVALUETYPECONVERTER_CONVERTTO_OFFSET UNITYSDK_OFFSET(0x1AC536A0)
-#define SYSTEM_DATA_DEFAULTVALUETYPECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC53690)
+#define SYSTEM_DATA_DEFAULTVALUETYPECONVERTER_CONVERTFROM_OFFSET UNITYSDK_OFFSET(0x1B255BE0)
+#define SYSTEM_DATA_DEFAULTVALUETYPECONVERTER_CONVERTTO_OFFSET UNITYSDK_OFFSET(0x1B255AC0)
+#define SYSTEM_DATA_DEFAULTVALUETYPECONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B255AB0)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int DefaultValueTypeConverter_TypeDefinitionIndex = 35444;
+	inline static constexpr unsigned int DefaultValueTypeConverter_TypeDefinitionIndex = 36464;
 
 	class DefaultValueTypeConverter : public ::System::ComponentModel::StringConverter
 	{

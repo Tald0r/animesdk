@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace UnityEngine::EventSystems { class EventSystem; }
 
-#define UNITYENGINE_INPUTSYSTEM_UI_EXTENDEDAXISEVENTDATA_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19AC0100)
-#define UNITYENGINE_INPUTSYSTEM_UI_EXTENDEDAXISEVENTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19AC00E0)
+#define UNITYENGINE_INPUTSYSTEM_UI_EXTENDEDAXISEVENTDATA_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1A0AE6B0)
+#define UNITYENGINE_INPUTSYSTEM_UI_EXTENDEDAXISEVENTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0AE690)
 
 namespace UnityEngine::InputSystem::UI
 {
-	inline static constexpr unsigned int ExtendedAxisEventData_TypeDefinitionIndex = 27649;
+	inline static constexpr unsigned int ExtendedAxisEventData_TypeDefinitionIndex = 28589;
 
 	class ExtendedAxisEventData : public ::UnityEngine::EventSystems::AxisEventData
 	{

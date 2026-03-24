@@ -5,7 +5,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaEntrustInfoRowWidgetController_OverrideChangeInfo_TypeDefinitionIndex = 65048;
+	inline static constexpr unsigned int UIYorozuyaEntrustInfoRowWidgetController_OverrideChangeInfo_TypeDefinitionIndex = 52622;
 
 	struct alignas(4) UIYorozuyaEntrustInfoRowWidgetController_OverrideChangeInfo
 	{

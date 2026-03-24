@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int MdbComponent_TransiteParam_TypeDefinitionIndex = 36102;
+	inline static constexpr unsigned int MdbComponent_TransiteParam_TypeDefinitionIndex = 37122;
 
 	struct alignas(8) MdbComponent_TransiteParam
 	{

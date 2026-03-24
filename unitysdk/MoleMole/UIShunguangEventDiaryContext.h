@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UISHUNGUANGEVENTDIARYCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC3C59E0)
+#define MOLEMOLE_UISHUNGUANGEVENTDIARYCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA45DA40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShunguangEventDiaryContext_TypeDefinitionIndex = 49085;
+	inline static constexpr unsigned int UIShunguangEventDiaryContext_TypeDefinitionIndex = 48671;
 
 	class UIShunguangEventDiaryContext : public ::MoleMole::UIControllerContextBase
 	{

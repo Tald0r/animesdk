@@ -7,32 +7,32 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define CLASS_1_CDE8F0D32DAEAA33___C_METHOD_1_347B3D903121FAD3_OFFSET UNITYSDK_OFFSET(0xADC9E60)
-#define CLASS_1_CDE8F0D32DAEAA33___C_METHOD_1_7DDE5D277792F816_OFFSET UNITYSDK_OFFSET(0xADC9DB0)
-#define CLASS_1_CDE8F0D32DAEAA33___C_METHOD_1_A0A2ED958A086248_OFFSET UNITYSDK_OFFSET(0xADC9E00)
-#define CLASS_1_CDE8F0D32DAEAA33___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xADC9D60)
-#define CLASS_1_CDE8F0D32DAEAA33___C__CTOR_OFFSET UNITYSDK_OFFSET(0xADC9DA0)
+#define CLASS_1_CDE8F0D32DAEAA33___C_METHOD_1_347B3D903121FAD3_OFFSET UNITYSDK_OFFSET(0x96A4A90)
+#define CLASS_1_CDE8F0D32DAEAA33___C_METHOD_1_7DDE5D277792F816_OFFSET UNITYSDK_OFFSET(0x96A49E0)
+#define CLASS_1_CDE8F0D32DAEAA33___C_METHOD_1_A0A2ED958A086248_OFFSET UNITYSDK_OFFSET(0x96A4A30)
+#define CLASS_1_CDE8F0D32DAEAA33___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x96A4990)
+#define CLASS_1_CDE8F0D32DAEAA33___C__CTOR_OFFSET UNITYSDK_OFFSET(0x96A49D0)
 
-inline static constexpr unsigned int Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex = 59759;
+inline static constexpr unsigned int Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex = 54157;
 
 class Class_1_CDE8F0D32DAEAA33___c : public ::System::Object
 {
 public:
-	static ::System::Comparison_1<::NapGradientColorKey>** StaticGet___9__34_0()
+	static ::System::Comparison_1<::NapGradientAlphaKey>** StaticGet___9__35_1()
 	{
-		return (::System::Comparison_1<::NapGradientColorKey>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x35750);
+		return (::System::Comparison_1<::NapGradientAlphaKey>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x3A130);
 	}
-	static ::System::Comparison_1<::UnityEngine::Keyframe>** StaticGet___9__37_3()
+	static ::System::Comparison_1<::UnityEngine::Keyframe>** StaticGet___9__38_3()
 	{
-		return (::System::Comparison_1<::UnityEngine::Keyframe>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x35758);
+		return (::System::Comparison_1<::UnityEngine::Keyframe>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x3A138);
 	}
 	static ::Class_1_CDE8F0D32DAEAA33___c** StaticGet___9()
 	{
-		return (::Class_1_CDE8F0D32DAEAA33___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x35760);
+		return (::Class_1_CDE8F0D32DAEAA33___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x3A140);
 	}
-	static ::System::Comparison_1<::NapGradientAlphaKey>** StaticGet___9__34_1()
+	static ::System::Comparison_1<::NapGradientColorKey>** StaticGet___9__35_0()
 	{
-		return (::System::Comparison_1<::NapGradientAlphaKey>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x35768);
+		return (::System::Comparison_1<::NapGradientColorKey>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_CDE8F0D32DAEAA33___c_TypeDefinitionIndex)->GetStaticField(0x3A148);
 	}
 
 	static ::System::Void _cctor()

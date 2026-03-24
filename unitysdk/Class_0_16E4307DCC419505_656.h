@@ -1,8 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_64D062C4691F838C.h"
+#include "unitysdk/Struct_2_ACD0EF80A5330786.h"
+#include "unitysdk/UnityEngine/Animations/AnimationScriptPlayable.h"
+#include "unitysdk/UnityEngine/Animations/AnimationStream.h"
+#include "unitysdk/UnityEngine/Playables/PlayableGraph.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_656_TypeDefinitionIndex = 67792;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_656_TypeDefinitionIndex = 69199;
 
 class Class_0_16E4307DCC419505_656
 {

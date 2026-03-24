@@ -10,7 +10,7 @@ namespace UnityEngine::InputSystem { class InputDevice; }
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int IInputActionCollection_TypeDefinitionIndex = 27407;
+	inline static constexpr unsigned int IInputActionCollection_TypeDefinitionIndex = 28347;
 
 	class IInputActionCollection
 	{

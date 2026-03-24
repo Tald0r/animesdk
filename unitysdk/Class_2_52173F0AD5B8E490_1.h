@@ -8,20 +8,20 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_52173F0AD5B8E490_1_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0xD08D610)
-#define CLASS_2_52173F0AD5B8E490_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD08D700)
-#define CLASS_2_52173F0AD5B8E490_1_METHOD_2_EBA1DA59141868AB_OFFSET UNITYSDK_OFFSET(0xD08D470)
-#define CLASS_2_52173F0AD5B8E490_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD08D6F0)
+#define CLASS_2_52173F0AD5B8E490_1_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x798EF50)
+#define CLASS_2_52173F0AD5B8E490_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x798F040)
+#define CLASS_2_52173F0AD5B8E490_1_METHOD_2_EBA1DA59141868AB_OFFSET UNITYSDK_OFFSET(0x798EDB0)
+#define CLASS_2_52173F0AD5B8E490_1__CTOR_OFFSET UNITYSDK_OFFSET(0x798F030)
 
-inline static constexpr unsigned int Class_2_52173F0AD5B8E490_1_TypeDefinitionIndex = 65514;
+inline static constexpr unsigned int Class_2_52173F0AD5B8E490_1_TypeDefinitionIndex = 58990;
 
 class Class_2_52173F0AD5B8E490_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_1; // 0x18
-	::UnityEngine::UI::Text* Field_2_3; // 0x20
-	::UnityEngine::GameObject* Field_2_2; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x30
+	::UnityEngine::UI::Text* Field_2_3; // 0x18
+	::UnityEngine::GameObject* Field_2_2; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x28
+	::UnityEngine::GameObject* Field_2_1; // 0x30
 
 	::System::Void _ctor()
 	{

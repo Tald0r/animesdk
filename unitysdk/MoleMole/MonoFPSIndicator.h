@@ -5,27 +5,27 @@
 namespace System { class String; }
 namespace UnityEngine::UI { class Text; }
 
-#define MOLEMOLE_MONOFPSINDICATOR_METHOD_5_2B152328DABB4A03_OFFSET UNITYSDK_OFFSET(0x9925BC0)
-#define MOLEMOLE_MONOFPSINDICATOR_METHOD_5_F7663B0135EC316E_OFFSET UNITYSDK_OFFSET(0x9925CA0)
-#define MOLEMOLE_MONOFPSINDICATOR_START_OFFSET UNITYSDK_OFFSET(0x9923DB0)
-#define MOLEMOLE_MONOFPSINDICATOR_UPDATE_OFFSET UNITYSDK_OFFSET(0x9924D40)
-#define MOLEMOLE_MONOFPSINDICATOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x9925B80)
-#define MOLEMOLE_MONOFPSINDICATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x9925B30)
+#define MOLEMOLE_MONOFPSINDICATOR_METHOD_5_2B152328DABB4A03_OFFSET UNITYSDK_OFFSET(0xA5219B0)
+#define MOLEMOLE_MONOFPSINDICATOR_METHOD_5_F7663B0135EC316E_OFFSET UNITYSDK_OFFSET(0xA521910)
+#define MOLEMOLE_MONOFPSINDICATOR_START_OFFSET UNITYSDK_OFFSET(0xA51FB00)
+#define MOLEMOLE_MONOFPSINDICATOR_UPDATE_OFFSET UNITYSDK_OFFSET(0xA520A90)
+#define MOLEMOLE_MONOFPSINDICATOR__CCTOR_OFFSET UNITYSDK_OFFSET(0xA5218D0)
+#define MOLEMOLE_MONOFPSINDICATOR__CTOR_OFFSET UNITYSDK_OFFSET(0xA521880)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoFPSIndicator_TypeDefinitionIndex = 69398;
+	inline static constexpr unsigned int MonoFPSIndicator_TypeDefinitionIndex = 77438;
 
 	class MonoFPSIndicator : public ::UnityEngine::MonoBehaviour
 	{
 	public:
-		static ::System::Boolean* StaticGet_dumpAssetMemory()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSIndicator_TypeDefinitionIndex)->GetStaticField(0xCC60);
-		}
 		static ::System::Boolean* StaticGet_CollectAndroidPssMemory()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSIndicator_TypeDefinitionIndex)->GetStaticField(0xCC61);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSIndicator_TypeDefinitionIndex)->GetStaticField(0xD780);
+		}
+		static ::System::Boolean* StaticGet_dumpAssetMemory()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoFPSIndicator_TypeDefinitionIndex)->GetStaticField(0xD781);
 		}
 		::System::Single updateInterval; // 0x18
 		::System::Single fps; // 0x1C
@@ -68,14 +68,14 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOFPSINDICATOR_UPDATE_OFFSET))(this);
 		}
 
-		static ::System::String* Method_5_2B152328DABB4A03(::System::Int64 a1)
-		{
-			return ((::System::String*(*)(::System::Int64))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOFPSINDICATOR_METHOD_5_2B152328DABB4A03_OFFSET))(a1);
-		}
-
 		static ::System::String* Method_5_F7663B0135EC316E(::System::UInt64 a1)
 		{
 			return ((::System::String*(*)(::System::UInt64))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOFPSINDICATOR_METHOD_5_F7663B0135EC316E_OFFSET))(a1);
+		}
+
+		static ::System::String* Method_5_2B152328DABB4A03(::System::Int64 a1)
+		{
+			return ((::System::String*(*)(::System::Int64))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOFPSINDICATOR_METHOD_5_2B152328DABB4A03_OFFSET))(a1);
 		}
 	};
 }

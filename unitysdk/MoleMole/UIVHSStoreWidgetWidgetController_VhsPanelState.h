@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreWidgetWidgetController_VhsPanelState_TypeDefinitionIndex = 46250;
+	inline static constexpr unsigned int UIVHSStoreWidgetWidgetController_VhsPanelState_TypeDefinitionIndex = 64638;
 
 	enum class UIVHSStoreWidgetWidgetController_VhsPanelState : ::System::Int32
 	{
 		None = -1,
+		Message = 0,
 		Limit = 2,
 		Information = 1,
-		Message = 0,
 	};
 }

@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/Timeline/CausticsBehaviour_Struct_2_52AD02145F5FCE3A_4.h"
+#include "unitysdk/MoleMole/Timeline/CausticsBehaviour_Struct_2_52AD02145F5FCE3A_24.h"
 #include "unitysdk/MoleMole/Timeline/PostProcessBehaviourBase.h"
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/Playables/Playable.h"
@@ -10,26 +10,26 @@ namespace System { class String; }
 namespace UnityEngine { class Texture; }
 namespace UnityEngine::Rendering::Universal { class Caustics; }
 
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_COPYVALUEFROMCOMP_OFFSET UNITYSDK_OFFSET(0xA611090)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_0458F502887DEEB5_OFFSET UNITYSDK_OFFSET(0xC23F010)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0xC240A70)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET UNITYSDK_OFFSET(0xC240A80)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_80313B77C31AD02B_OFFSET UNITYSDK_OFFSET(0xC23F3D0)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_B072873681D4192B_1_OFFSET UNITYSDK_OFFSET(0xC240A60)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_B072873681D4192B_OFFSET UNITYSDK_OFFSET(0xC240A50)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0xA611540)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0xC23EDF0)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_SETVALUE_OFFSET UNITYSDK_OFFSET(0xC2403D0)
-#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xC2409F0)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_COPYVALUEFROMCOMP_OFFSET UNITYSDK_OFFSET(0xA7FB3C0)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_0458F502887DEEB5_OFFSET UNITYSDK_OFFSET(0xC26B630)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0xC26C080)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET UNITYSDK_OFFSET(0xC26C070)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_80313B77C31AD02B_OFFSET UNITYSDK_OFFSET(0xC26A410)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_B072873681D4192B_1_OFFSET UNITYSDK_OFFSET(0xC26C0A0)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_B072873681D4192B_OFFSET UNITYSDK_OFFSET(0xC26C090)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0xC26A270)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0xC26B410)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_SETVALUE_OFFSET UNITYSDK_OFFSET(0xC26B9F0)
+#define MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xC26C010)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int CausticsBehaviour_TypeDefinitionIndex = 40606;
+	inline static constexpr unsigned int CausticsBehaviour_TypeDefinitionIndex = 68987;
 
 	class CausticsBehaviour : public ::MoleMole::Timeline::PostProcessBehaviourBase
 	{
 	public:
-		::MoleMole::Timeline::CausticsBehaviour_Struct_2_52AD02145F5FCE3A_4 _methodParm; // 0x18
+		::MoleMole::Timeline::CausticsBehaviour_Struct_2_52AD02145F5FCE3A_24 _methodParm; // 0x18
 		::System::Boolean enabled; // 0x88
 		::System::Boolean active_Use_Caustics; // 0x89
 		::System::Boolean use_Use_Caustics; // 0x8A
@@ -94,9 +94,24 @@ namespace MoleMole::Timeline
 			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_SETVALUE_OFFSET))(this, a1, a2);
 		}
 
+		::System::Void Method_4_63F7844DC2D57F6C(::System::String* a1, ::System::Single a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET))(this, a1, a2);
+		}
+
+		::UnityEngine::Rendering::Universal::Caustics* Method_4_0458F502887DEEB5(::System::Object* a1)
+		{
+			return ((::UnityEngine::Rendering::Universal::Caustics*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_0458F502887DEEB5_OFFSET))(this, a1);
+		}
+
 		::System::Void Method_4_80313B77C31AD02B()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_80313B77C31AD02B_OFFSET))(this);
+		}
+
+		::System::Void Method_4_324AEE341AAA7A1B(::UnityEngine::Playables::Playable a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET))(this, a1);
 		}
 
 		::System::Void Method_4_B072873681D4192B(::System::Object* a1)
@@ -107,21 +122,6 @@ namespace MoleMole::Timeline
 		::System::Void Method_4_B072873681D4192B_1(::System::Object* a1)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_B072873681D4192B_1_OFFSET))(this, a1);
-		}
-
-		::UnityEngine::Rendering::Universal::Caustics* Method_4_0458F502887DEEB5(::System::Object* a1)
-		{
-			return ((::UnityEngine::Rendering::Universal::Caustics*(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_0458F502887DEEB5_OFFSET))(this, a1);
-		}
-
-		::System::Void Method_4_324AEE341AAA7A1B(::UnityEngine::Playables::Playable a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_324AEE341AAA7A1B_OFFSET))(this, a1);
-		}
-
-		::System::Void Method_4_63F7844DC2D57F6C(::System::String* a1, ::System::Single a2)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_CAUSTICSBEHAVIOUR_METHOD_4_63F7844DC2D57F6C_OFFSET))(this, a1, a2);
 		}
 	};
 }

@@ -7,17 +7,17 @@ class MonoUITableScrollV2;
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class RectTransform; }
 
-#define CLASS_2_2930B6D633C2701E_7_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xD776B20)
-#define CLASS_2_2930B6D633C2701E_7_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD776BE0)
-#define CLASS_2_2930B6D633C2701E_7__CTOR_OFFSET UNITYSDK_OFFSET(0xD776BD0)
+#define CLASS_2_2930B6D633C2701E_7_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x70C6980)
+#define CLASS_2_2930B6D633C2701E_7_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x70C6A40)
+#define CLASS_2_2930B6D633C2701E_7__CTOR_OFFSET UNITYSDK_OFFSET(0x70C6A30)
 
-inline static constexpr unsigned int Class_2_2930B6D633C2701E_7_TypeDefinitionIndex = 74397;
+inline static constexpr unsigned int Class_2_2930B6D633C2701E_7_TypeDefinitionIndex = 81113;
 
 class Class_2_2930B6D633C2701E_7 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_0; // 0x18
-	::UnityEngine::RectTransform* Field_2_1; // 0x20
+	::UnityEngine::RectTransform* Field_2_1; // 0x18
+	::MonoUITableScrollV2* Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{

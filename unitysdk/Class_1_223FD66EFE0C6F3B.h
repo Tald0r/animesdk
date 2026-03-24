@@ -5,9 +5,9 @@
 
 namespace MoleMole::GalGame { class GalScript; }
 
-#define CLASS_1_223FD66EFE0C6F3B_METHOD_1_6FEC122B6F176886_OFFSET UNITYSDK_OFFSET(0x950A3D0)
+#define CLASS_1_223FD66EFE0C6F3B_METHOD_1_6FEC122B6F176886_OFFSET UNITYSDK_OFFSET(0x63E4930)
 
-inline static constexpr unsigned int Class_1_223FD66EFE0C6F3B_TypeDefinitionIndex = 63595;
+inline static constexpr unsigned int Class_1_223FD66EFE0C6F3B_TypeDefinitionIndex = 53998;
 
 class Class_1_223FD66EFE0C6F3B : public ::System::Object
 {

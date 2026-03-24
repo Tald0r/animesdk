@@ -15,7 +15,7 @@ namespace System::Collections::Generic { template <typename T> class Stack_1; }
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AggregateObject_1_TypeDefinitionIndex = 9043;
+	inline static constexpr unsigned int AggregateObject_1_TypeDefinitionIndex = 9182;
 
 	template <typename TEvent>
 	class AggregateObject_1 : public ::System::Object

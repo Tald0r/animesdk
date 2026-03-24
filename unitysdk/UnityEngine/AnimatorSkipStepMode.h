@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int AnimatorSkipStepMode_TypeDefinitionIndex = 6536;
+	inline static constexpr unsigned int AnimatorSkipStepMode_TypeDefinitionIndex = 6540;
 
 	enum class AnimatorSkipStepMode : ::System::Int32
 	{

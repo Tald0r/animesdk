@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITrendyStoreWidgetChildWindowController_Mode_TypeDefinitionIndex = 57463;
+	inline static constexpr unsigned int UITrendyStoreWidgetChildWindowController_Mode_TypeDefinitionIndex = 69650;
 
 	enum class UITrendyStoreWidgetChildWindowController_Mode : ::System::Int32
 	{
 		Other = 0,
-		WeaponShop = 2,
 		Preview = 1,
+		WeaponShop = 2,
 	};
 }

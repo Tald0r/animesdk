@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIMindscapeCutBgController; }
 
-#define MOLEMOLE_UIMINDSCAPECUTBGCONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9450C50)
-#define MOLEMOLE_UIMINDSCAPECUTBGCONTROLLER___C__DISPLAYCLASS40_0__SETMASKBGSTATE_G__SETSTATE_0_OFFSET UNITYSDK_OFFSET(0x9450C60)
+#define MOLEMOLE_UIMINDSCAPECUTBGCONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA418A00)
+#define MOLEMOLE_UIMINDSCAPECUTBGCONTROLLER___C__DISPLAYCLASS40_0__SETMASKBGSTATE_G__SETSTATE_0_OFFSET UNITYSDK_OFFSET(0xA418A10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMindscapeCutBgController___c__DisplayClass40_0_TypeDefinitionIndex = 40784;
+	inline static constexpr unsigned int UIMindscapeCutBgController___c__DisplayClass40_0_TypeDefinitionIndex = 40087;
 
 	class UIMindscapeCutBgController___c__DisplayClass40_0 : public ::System::Object
 	{

@@ -5,18 +5,18 @@
 namespace MoleMole { class UIMonsterFantasyQteMissWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMONSTERFANTASYQTEMISSWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC0C5F0)
-#define MOLEMOLE_UIMONSTERFANTASYQTEMISSWIDGETCONTROLLER___C__DISPLAYCLASS4_0__PLAYANIM_B__0_OFFSET UNITYSDK_OFFSET(0xAC0C600)
+#define MOLEMOLE_UIMONSTERFANTASYQTEMISSWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8980410)
+#define MOLEMOLE_UIMONSTERFANTASYQTEMISSWIDGETCONTROLLER___C__DISPLAYCLASS4_0__PLAYANIM_B__0_OFFSET UNITYSDK_OFFSET(0x8980420)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyQteMissWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 58072;
+	inline static constexpr unsigned int UIMonsterFantasyQteMissWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 47830;
 
 	class UIMonsterFantasyQteMissWidgetController___c__DisplayClass4_0 : public ::System::Object
 	{
 	public:
-		::System::Action* callback; // 0x10
-		::MoleMole::UIMonsterFantasyQteMissWidgetController* __4__this; // 0x18
+		::MoleMole::UIMonsterFantasyQteMissWidgetController* __4__this; // 0x10
+		::System::Action* callback; // 0x18
 
 		::System::Void _ctor()
 		{

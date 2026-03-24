@@ -6,20 +6,20 @@ class Class_2_777A5D016ADC7368;
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIFlowerMainTargetImgWidgetController; }
 namespace MoleMole { class UIFlowerMainTargetRoleWidgetController; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_3F217C90780E6324_METHOD_2_57DFF24ACF7DBF36_OFFSET UNITYSDK_OFFSET(0xC4F73C0)
-#define CLASS_2_3F217C90780E6324_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xC4F7560)
-#define CLASS_2_3F217C90780E6324_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC4F7630)
-#define CLASS_2_3F217C90780E6324__CTOR_OFFSET UNITYSDK_OFFSET(0xC4F7620)
+#define CLASS_2_3F217C90780E6324_METHOD_2_57DFF24ACF7DBF36_OFFSET UNITYSDK_OFFSET(0x73BD490)
+#define CLASS_2_3F217C90780E6324_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x73BD630)
+#define CLASS_2_3F217C90780E6324_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x73BD700)
+#define CLASS_2_3F217C90780E6324__CTOR_OFFSET UNITYSDK_OFFSET(0x73BD6F0)
 
-inline static constexpr unsigned int Class_2_3F217C90780E6324_TypeDefinitionIndex = 78386;
+inline static constexpr unsigned int Class_2_3F217C90780E6324_TypeDefinitionIndex = 47220;
 
 class Class_2_3F217C90780E6324 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIFlowerMainTargetImgWidgetController*>* Field_2_1; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIFlowerMainTargetRoleWidgetController*>* Field_2_0; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIFlowerMainTargetImgWidgetController*>* Field_2_1; // 0x18
+	::Class_3_647A206587033F4E<::MoleMole::UIFlowerMainTargetRoleWidgetController*>* Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{

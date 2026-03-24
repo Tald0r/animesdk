@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_AE02BC8285203464_19;
+class Class_3_BD5405822947C18D;
 namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController; }
 
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x73EED50)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_0__REFRESHPROGRESSBARITEMS_G__CONTAINSCURLEVELQUEST_0_OFFSET UNITYSDK_OFFSET(0x73EED60)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7BE5670)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_0__REFRESHPROGRESSBARITEMS_G__CONTAINSCURLEVELQUEST_0_OFFSET UNITYSDK_OFFSET(0x7BE5680)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_0_TypeDefinitionIndex = 60447;
+	inline static constexpr unsigned int UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_0_TypeDefinitionIndex = 53925;
 
 	class UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController* __4__this; // 0x10
-		::Class_3_AE02BC8285203464_19* partner; // 0x18
+		::Class_3_BD5405822947C18D* partner; // 0x10
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

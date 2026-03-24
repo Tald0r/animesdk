@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IInvocable_1_TypeDefinitionIndex = 8988;
+	inline static constexpr unsigned int IInvocable_1_TypeDefinitionIndex = 8958;
 
 	template <typename T1>
 	class IInvocable_1

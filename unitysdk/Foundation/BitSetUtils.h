@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define FOUNDATION_BITSETUTILS_FETCH4BIT_OFFSET UNITYSDK_OFFSET(0x1AF814E0)
+#define FOUNDATION_BITSETUTILS_FETCH4BIT_OFFSET UNITYSDK_OFFSET(0x1B2EFB50)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int BitSetUtils_TypeDefinitionIndex = 8867;
+	inline static constexpr unsigned int BitSetUtils_TypeDefinitionIndex = 8863;
 
 	class BitSetUtils : public ::System::Object
 	{

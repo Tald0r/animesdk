@@ -6,7 +6,7 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int VideoColorData_VideoEntry_TypeDefinitionIndex = 64015;
+inline static constexpr unsigned int VideoColorData_VideoEntry_TypeDefinitionIndex = 55858;
 
 struct alignas(8) VideoColorData_VideoEntry
 {

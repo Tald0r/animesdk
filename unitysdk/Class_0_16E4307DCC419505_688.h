@@ -1,8 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_2A15960F786F504C.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_688_TypeDefinitionIndex = 71846;
+namespace System { class String; }
+
+inline static constexpr unsigned int Class_0_16E4307DCC419505_688_TypeDefinitionIndex = 73477;
 
 class Class_0_16E4307DCC419505_688
 {

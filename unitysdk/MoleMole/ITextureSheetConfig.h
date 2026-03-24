@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ITextureSheetConfig_TypeDefinitionIndex = 44649;
+	inline static constexpr unsigned int ITextureSheetConfig_TypeDefinitionIndex = 45017;
 
 	class ITextureSheetConfig
 	{

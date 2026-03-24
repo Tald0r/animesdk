@@ -3,11 +3,11 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_ConfigHollowChessPieceEdge_HEdge_TypeDefinitionIndex = 59132;
+	inline static constexpr unsigned int ConfigHollowChessboard_ConfigHollowChessPieceEdge_HEdge_TypeDefinitionIndex = 79812;
 
 	enum class ConfigHollowChessboard_ConfigHollowChessPieceEdge_HEdge : ::System::Int32
 	{
-		Right = 1,
 		Left = 0,
+		Right = 1,
 	};
 }

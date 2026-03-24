@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int IDTFieldRenderAttribute_TypeDefinitionIndex = 24477;
+	inline static constexpr unsigned int IDTFieldRenderAttribute_TypeDefinitionIndex = 25302;
 
 	class IDTFieldRenderAttribute
 	{

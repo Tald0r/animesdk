@@ -7,13 +7,13 @@ namespace UnityEngine::Experimental::Rendering::Universal { class RenderObjectsP
 namespace UnityEngine::Experimental::Rendering::Universal { class RenderObjects_RenderObjectsSettings; }
 namespace UnityEngine::Rendering::Universal { class ScriptableRenderer; }
 
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTS_ADDRENDERPASSES_OFFSET UNITYSDK_OFFSET(0x196E1990)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTS_CREATE_OFFSET UNITYSDK_OFFSET(0x196E1710)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTS__CTOR_OFFSET UNITYSDK_OFFSET(0x196E1A70)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTS_ADDRENDERPASSES_OFFSET UNITYSDK_OFFSET(0x19B5E2D0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTS_CREATE_OFFSET UNITYSDK_OFFSET(0x19B5E050)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTS__CTOR_OFFSET UNITYSDK_OFFSET(0x19B5E3B0)
 
 namespace UnityEngine::Experimental::Rendering::Universal
 {
-	inline static constexpr unsigned int RenderObjects_TypeDefinitionIndex = 28271;
+	inline static constexpr unsigned int RenderObjects_TypeDefinitionIndex = 29212;
 
 	class RenderObjects : public ::UnityEngine::Rendering::Universal::ScriptableRendererFeature
 	{

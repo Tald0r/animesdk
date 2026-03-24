@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_ANIMATORZONESETAWARENESSTARGET_AWARENESSUPDATESEGMENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0xCD9FBB0)
-#define MOLEMOLE_CONFIG_ANIMATORZONESETAWARENESSTARGET_AWARENESSUPDATESEGMENT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD9FB70)
+#define MOLEMOLE_CONFIG_ANIMATORZONESETAWARENESSTARGET_AWARENESSUPDATESEGMENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0xB90C100)
+#define MOLEMOLE_CONFIG_ANIMATORZONESETAWARENESSTARGET_AWARENESSUPDATESEGMENT__CTOR_OFFSET UNITYSDK_OFFSET(0xB90C0C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneSetAwarenessTarget_AwarenessUpdateSegment_TypeDefinitionIndex = 79201;
+	inline static constexpr unsigned int AnimatorZoneSetAwarenessTarget_AwarenessUpdateSegment_TypeDefinitionIndex = 72793;
 
 	class AnimatorZoneSetAwarenessTarget_AwarenessUpdateSegment : public ::System::Object
 	{

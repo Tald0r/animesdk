@@ -4,24 +4,24 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UISUIBIANBUSINESSTOPPANELV2WIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA734420)
-#define MOLEMOLE_UISUIBIANBUSINESSTOPPANELV2WIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA734460)
-#define MOLEMOLE_UISUIBIANBUSINESSTOPPANELV2WIDGETCONTROLLER___C__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xA734470)
+#define MOLEMOLE_UISUIBIANBUSINESSTOPPANELV2WIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAADB3E0)
+#define MOLEMOLE_UISUIBIANBUSINESSTOPPANELV2WIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAADB420)
+#define MOLEMOLE_UISUIBIANBUSINESSTOPPANELV2WIDGETCONTROLLER___C__ONUIINIT_B__3_0_OFFSET UNITYSDK_OFFSET(0xAADB430)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianBusinessTopPanelV2WidgetController___c_TypeDefinitionIndex = 37456;
+	inline static constexpr unsigned int UISuibianBusinessTopPanelV2WidgetController___c_TypeDefinitionIndex = 72536;
 
 	class UISuibianBusinessTopPanelV2WidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UISuibianBusinessTopPanelV2WidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISuibianBusinessTopPanelV2WidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianBusinessTopPanelV2WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x30220);
+			return (::MoleMole::UISuibianBusinessTopPanelV2WidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianBusinessTopPanelV2WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x31DF0);
 		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__3_0()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISuibianBusinessTopPanelV2WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x30228);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISuibianBusinessTopPanelV2WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x31DF8);
 		}
 
 		static ::System::Void _cctor()

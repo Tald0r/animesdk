@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define CLASS_2_1DEA7AD9123A324A_PANELDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xBCBFDA0)
+#define CLASS_2_1DEA7AD9123A324A_PANELDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x700C890)
 
-inline static constexpr unsigned int Class_2_1DEA7AD9123A324A_PanelData_TypeDefinitionIndex = 65686;
+inline static constexpr unsigned int Class_2_1DEA7AD9123A324A_PanelData_TypeDefinitionIndex = 47452;
 
 class Class_2_1DEA7AD9123A324A_PanelData : public ::MoleMole::UIControllerContextBase
 {
 public:
-	::System::Int32 SelectId; // 0x28
-	::System::Boolean IsSelectBuddy; // 0x2C
-	::System::Boolean IsOnlyOne; // 0x2D
-	::System::Int32 NodeId; // 0x30
+	::System::Boolean IsOnlyOne; // 0x28
+	::System::Boolean IsSelectBuddy; // 0x29
+	::System::Int32 NodeId; // 0x2C
+	::System::Int32 SelectId; // 0x30
 
 	::System::Void _ctor()
 	{

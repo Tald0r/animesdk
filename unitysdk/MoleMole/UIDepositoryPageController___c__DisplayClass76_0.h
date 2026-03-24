@@ -3,19 +3,19 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_1685EC66FBD28897;
-template <typename T> class Class_0_16E4307DCC41950C_13;
+template <typename T> class Class_0_16E4307DCC41950C_15;
 
-#define MOLEMOLE_UIDEPOSITORYPAGECONTROLLER___C__DISPLAYCLASS76_0__CREATEFILTERANDSORTDATA_B__0_OFFSET UNITYSDK_OFFSET(0xBEED380)
-#define MOLEMOLE_UIDEPOSITORYPAGECONTROLLER___C__DISPLAYCLASS76_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBEED370)
+#define MOLEMOLE_UIDEPOSITORYPAGECONTROLLER___C__DISPLAYCLASS76_0__CREATEFILTERANDSORTDATA_B__0_OFFSET UNITYSDK_OFFSET(0xA95D930)
+#define MOLEMOLE_UIDEPOSITORYPAGECONTROLLER___C__DISPLAYCLASS76_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA95D920)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDepositoryPageController___c__DisplayClass76_0_TypeDefinitionIndex = 61050;
+	inline static constexpr unsigned int UIDepositoryPageController___c__DisplayClass76_0_TypeDefinitionIndex = 51950;
 
 	class UIDepositoryPageController___c__DisplayClass76_0 : public ::System::Object
 	{
 	public:
-		::Class_0_16E4307DCC41950C_13<::Class_1_1685EC66FBD28897*>* slotFilterGroup; // 0x10
+		::Class_0_16E4307DCC41950C_15<::Class_1_1685EC66FBD28897*>* slotFilterGroup; // 0x10
 
 		::System::Void _ctor()
 		{

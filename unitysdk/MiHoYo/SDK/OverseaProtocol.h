@@ -6,58 +6,41 @@
 
 namespace System { class Action; }
 namespace System { class String; }
-namespace System { template <typename T> class Action_1; }
 namespace UnityEngine::UI { class Button; }
 namespace UnityEngine::UI { class Toggle; }
 
-#define MIHOYO_SDK_OVERSEAPROTOCOL_AWAKE_OFFSET UNITYSDK_OFFSET(0x18208240)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKACCEPTBUTTON_OFFSET UNITYSDK_OFFSET(0x1820B230)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKAGREEALLTOGGLE_OFFSET UNITYSDK_OFFSET(0x1820B370)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKMARKETINGBUTTON_OFFSET UNITYSDK_OFFSET(0x1820B8D0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKMARKETINGTOGGLE_OFFSET UNITYSDK_OFFSET(0x1820B770)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKPRIVACYTOGGLE_OFFSET UNITYSDK_OFFSET(0x1820B750)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKREFUSEBUTTON_OFFSET UNITYSDK_OFFSET(0x1820B120)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERAGREEMENTBUTTON_OFFSET UNITYSDK_OFFSET(0x1820B890)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERAGREETOGGLE_OFFSET UNITYSDK_OFFSET(0x1820B730)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERPRIVACYBUTTON_OFFSET UNITYSDK_OFFSET(0x1820B8B0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_GET_MARKETINGTEXT_OFFSET UNITYSDK_OFFSET(0x18208030)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_GET_MARKETINGURL_OFFSET UNITYSDK_OFFSET(0x182080B0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_HIDE_OFFSET UNITYSDK_OFFSET(0x182081D0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_ISSHOWMARKETINGPROTOCOL_OFFSET UNITYSDK_OFFSET(0x1820AE50)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1820B950)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_SET_MARKETINGTEXT_OFFSET UNITYSDK_OFFSET(0x18207FF0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_SET_MARKETINGURL_OFFSET UNITYSDK_OFFSET(0x18208070)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_SHOW_OFFSET UNITYSDK_OFFSET(0x182080F0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_UPDATEACCEPTBUTTONSTATUS_OFFSET UNITYSDK_OFFSET(0x1820ADE0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_UPDATEAGREEALLTOGGLESTATUS_OFFSET UNITYSDK_OFFSET(0x1820AEF0)
-#define MIHOYO_SDK_OVERSEAPROTOCOL_UPDATETEXT_OFFSET UNITYSDK_OFFSET(0x18209340)
-#define MIHOYO_SDK_OVERSEAPROTOCOL__CLICKREFUSEBUTTON_B__47_0_OFFSET UNITYSDK_OFFSET(0x1820BA10)
-#define MIHOYO_SDK_OVERSEAPROTOCOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1820B990)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_AWAKE_OFFSET UNITYSDK_OFFSET(0x18778670)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKACCEPTBUTTON_OFFSET UNITYSDK_OFFSET(0x1877A760)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKAGREEALLTOGGLE_OFFSET UNITYSDK_OFFSET(0x1877A780)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKPRIVACYTOGGLE_OFFSET UNITYSDK_OFFSET(0x1877A8C0)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKREFUSEBUTTON_OFFSET UNITYSDK_OFFSET(0x1877A650)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERAGREEMENTBUTTON_OFFSET UNITYSDK_OFFSET(0x1877A8E0)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERAGREETOGGLE_OFFSET UNITYSDK_OFFSET(0x1877A8A0)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERPRIVACYBUTTON_OFFSET UNITYSDK_OFFSET(0x1877A900)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_HIDE_OFFSET UNITYSDK_OFFSET(0x18778600)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1877A920)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_SHOW_OFFSET UNITYSDK_OFFSET(0x18778520)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_UPDATEACCEPTBUTTONSTATUS_OFFSET UNITYSDK_OFFSET(0x1877A510)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_UPDATEAGREEALLTOGGLESTATUS_OFFSET UNITYSDK_OFFSET(0x1877A580)
+#define MIHOYO_SDK_OVERSEAPROTOCOL_UPDATETEXT_OFFSET UNITYSDK_OFFSET(0x187792A0)
+#define MIHOYO_SDK_OVERSEAPROTOCOL__CLICKREFUSEBUTTON_B__33_0_OFFSET UNITYSDK_OFFSET(0x1877A9E0)
+#define MIHOYO_SDK_OVERSEAPROTOCOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1877A960)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int OverseaProtocol_TypeDefinitionIndex = 18263;
+	inline static constexpr unsigned int OverseaProtocol_TypeDefinitionIndex = 18771;
 
 	class OverseaProtocol : public ::MiHoYo::SDK::UIElement
 	{
 	public:
-		static ::System::String** StaticGet__marketingText_k__BackingField()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(OverseaProtocol_TypeDefinitionIndex)->GetStaticField(0x9960);
-		}
 		static ::MiHoYo::SDK::OverseaProtocol** StaticGet_Instance()
 		{
-			return (::MiHoYo::SDK::OverseaProtocol**)Il2CppClass::FromTypeDefinitionIndex(OverseaProtocol_TypeDefinitionIndex)->GetStaticField(0x9968);
-		}
-		static ::System::String** StaticGet__marketingURL_k__BackingField()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(OverseaProtocol_TypeDefinitionIndex)->GetStaticField(0x9970);
+			return (::MiHoYo::SDK::OverseaProtocol**)Il2CppClass::FromTypeDefinitionIndex(OverseaProtocol_TypeDefinitionIndex)->GetStaticField(0x9E90);
 		}
 		// static const ::System::String* PrefabName; // 0x0
 		// static const ::System::String* AgreeAllPath; // 0x0
 		// static const ::System::String* UserAgreementPath; // 0x0
 		// static const ::System::String* PrivacyPath; // 0x0
-		// static const ::System::String* MarketingPath; // 0x0
 		// static const ::System::String* TogglePath; // 0x0
 		// static const ::System::String* TextPath; // 0x0
 		// static const ::System::String* ButtonPath; // 0x0
@@ -71,43 +54,19 @@ namespace MiHoYo::SDK
 		::UnityEngine::UI::Toggle* agreeAllToggle; // 0x58
 		::UnityEngine::UI::Toggle* userAgreeToggle; // 0x60
 		::UnityEngine::UI::Toggle* privacyToggle; // 0x68
-		::UnityEngine::UI::Toggle* marketingToggle; // 0x70
-		::UnityEngine::UI::Button* userAgreementButton; // 0x78
-		::UnityEngine::UI::Button* privacyButton; // 0x80
-		::UnityEngine::UI::Button* marketingButton; // 0x88
-		::UnityEngine::UI::Button* refuseButton; // 0x90
-		::UnityEngine::UI::Button* acceptButton; // 0x98
-		::System::Action_1<::System::String*>* OnAccept; // 0xA0
-		::System::Action* OnRefuse; // 0xA8
-		::System::Action* OnUserAgreement; // 0xB0
-		::System::Action* OnUserPrivacy; // 0xB8
-		::System::Action_1<::System::String*>* OnMarketing; // 0xC0
-		::System::String* marketingStatus; // 0xC8
-		::MiHoYo::SDK::ProtocolType protocolType; // 0xD0
+		::UnityEngine::UI::Button* userAgreementButton; // 0x70
+		::UnityEngine::UI::Button* privacyButton; // 0x78
+		::UnityEngine::UI::Button* refuseButton; // 0x80
+		::UnityEngine::UI::Button* acceptButton; // 0x88
+		::System::Action* OnAccept; // 0x90
+		::System::Action* OnRefuse; // 0x98
+		::System::Action* OnUserAgreement; // 0xA0
+		::System::Action* OnUserPrivacy; // 0xA8
+		::MiHoYo::SDK::ProtocolType protocolType; // 0xB0
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL__CTOR_OFFSET))(this);
-		}
-
-		static ::System::Void set_marketingText(::System::String* value)
-		{
-			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_SET_MARKETINGTEXT_OFFSET))(value);
-		}
-
-		static ::System::String* get_marketingText()
-		{
-			return ((::System::String*(*)())((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_GET_MARKETINGTEXT_OFFSET))();
-		}
-
-		static ::System::Void set_marketingURL(::System::String* value)
-		{
-			return ((::System::Void(*)(::System::String*))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_SET_MARKETINGURL_OFFSET))(value);
-		}
-
-		static ::System::String* get_marketingURL()
-		{
-			return ((::System::String*(*)())((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_GET_MARKETINGURL_OFFSET))();
 		}
 
 		static ::System::Void Show(::MiHoYo::SDK::ProtocolType type)
@@ -128,11 +87,6 @@ namespace MiHoYo::SDK
 		::System::Void UpdateText()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_UPDATETEXT_OFFSET))(this);
-		}
-
-		::System::Boolean IsShowMarketingProtocol()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_ISSHOWMARKETINGPROTOCOL_OFFSET))(this);
 		}
 
 		::System::Void UpdateAcceptButtonStatus()
@@ -170,11 +124,6 @@ namespace MiHoYo::SDK
 			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_CLICKPRIVACYTOGGLE_OFFSET))(this, value);
 		}
 
-		::System::Void ClickMarketingToggle(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_CLICKMARKETINGTOGGLE_OFFSET))(this, value);
-		}
-
 		::System::Void ClickUserAgreementButton()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERAGREEMENTBUTTON_OFFSET))(this);
@@ -185,19 +134,14 @@ namespace MiHoYo::SDK
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_CLICKUSERPRIVACYBUTTON_OFFSET))(this);
 		}
 
-		::System::Void ClickMarketingButton()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_CLICKMARKETINGBUTTON_OFFSET))(this);
-		}
-
 		::System::Void OnDestroy()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL_ONDESTROY_OFFSET))(this);
 		}
 
-		::System::Void _ClickRefuseButton_b__47_0(::MiHoYo::SDK::Confirm_ConfirmResult result)
+		::System::Void _ClickRefuseButton_b__33_0(::MiHoYo::SDK::Confirm_ConfirmResult result)
 		{
-			return ((::System::Void(*)(::PVOID, ::MiHoYo::SDK::Confirm_ConfirmResult))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL__CLICKREFUSEBUTTON_B__47_0_OFFSET))(this, result);
+			return ((::System::Void(*)(::PVOID, ::MiHoYo::SDK::Confirm_ConfirmResult))((::PBYTE)hIl2Cpp + MIHOYO_SDK_OVERSEAPROTOCOL__CLICKREFUSEBUTTON_B__33_0_OFFSET))(this, result);
 		}
 	};
 }

@@ -6,24 +6,24 @@ namespace MoleMole::Timeline::TimelineComponent { class TimelineBranchGroup; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine::Playables { class PlayableDirector; }
 
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEBRANCHMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC242680)
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEBRANCHMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC2426C0)
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEBRANCHMANAGER___C__GETBRANCHPLAYABLEDIRECTORS_B__11_0_OFFSET UNITYSDK_OFFSET(0xC2426D0)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEBRANCHMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC26DD50)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEBRANCHMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC26DD90)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEBRANCHMANAGER___C__GETBRANCHPLAYABLEDIRECTORS_B__11_0_OFFSET UNITYSDK_OFFSET(0xC26DDA0)
 
 namespace MoleMole::Timeline::TimelineComponent
 {
-	inline static constexpr unsigned int RuntimeTimelineBranchManager___c_TypeDefinitionIndex = 78451;
+	inline static constexpr unsigned int RuntimeTimelineBranchManager___c_TypeDefinitionIndex = 74320;
 
 	class RuntimeTimelineBranchManager___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::Timeline::TimelineComponent::RuntimeTimelineBranchManager___c** StaticGet___9()
-		{
-			return (::MoleMole::Timeline::TimelineComponent::RuntimeTimelineBranchManager___c**)Il2CppClass::FromTypeDefinitionIndex(RuntimeTimelineBranchManager___c_TypeDefinitionIndex)->GetStaticField(0x389A0);
-		}
 		static ::System::Func_2<::MoleMole::Timeline::TimelineComponent::TimelineBranchGroup*, ::UnityEngine::Playables::PlayableDirector*>** StaticGet___9__11_0()
 		{
-			return (::System::Func_2<::MoleMole::Timeline::TimelineComponent::TimelineBranchGroup*, ::UnityEngine::Playables::PlayableDirector*>**)Il2CppClass::FromTypeDefinitionIndex(RuntimeTimelineBranchManager___c_TypeDefinitionIndex)->GetStaticField(0x389A8);
+			return (::System::Func_2<::MoleMole::Timeline::TimelineComponent::TimelineBranchGroup*, ::UnityEngine::Playables::PlayableDirector*>**)Il2CppClass::FromTypeDefinitionIndex(RuntimeTimelineBranchManager___c_TypeDefinitionIndex)->GetStaticField(0x3B5B0);
+		}
+		static ::MoleMole::Timeline::TimelineComponent::RuntimeTimelineBranchManager___c** StaticGet___9()
+		{
+			return (::MoleMole::Timeline::TimelineComponent::RuntimeTimelineBranchManager___c**)Il2CppClass::FromTypeDefinitionIndex(RuntimeTimelineBranchManager___c_TypeDefinitionIndex)->GetStaticField(0x3B5B8);
 		}
 
 		static ::System::Void _cctor()

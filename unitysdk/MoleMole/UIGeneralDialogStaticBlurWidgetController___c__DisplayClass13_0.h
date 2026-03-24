@@ -5,18 +5,18 @@
 namespace MoleMole { class UIGeneralDialogStaticBlurWidgetController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIGENERALDIALOGSTATICBLURWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA363650)
-#define MOLEMOLE_UIGENERALDIALOGSTATICBLURWIDGETCONTROLLER___C__DISPLAYCLASS13_0__STARTUIBLURFADEOUT_B__0_OFFSET UNITYSDK_OFFSET(0xA363660)
+#define MOLEMOLE_UIGENERALDIALOGSTATICBLURWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD12D340)
+#define MOLEMOLE_UIGENERALDIALOGSTATICBLURWIDGETCONTROLLER___C__DISPLAYCLASS13_0__STARTUIBLURFADEOUT_B__0_OFFSET UNITYSDK_OFFSET(0xD12D350)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralDialogStaticBlurWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 56001;
+	inline static constexpr unsigned int UIGeneralDialogStaticBlurWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 54855;
 
 	class UIGeneralDialogStaticBlurWidgetController___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
-		::System::Action_1<::System::Int32>* endAction; // 0x10
-		::MoleMole::UIGeneralDialogStaticBlurWidgetController* __4__this; // 0x18
+		::MoleMole::UIGeneralDialogStaticBlurWidgetController* __4__this; // 0x10
+		::System::Action_1<::System::Int32>* endAction; // 0x18
 
 		::System::Void _ctor()
 		{

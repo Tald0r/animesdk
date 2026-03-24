@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIBOSSCHALLENGEQUICKTEAMLISTROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCC50170)
+#define MOLEMOLE_UIBOSSCHALLENGEQUICKTEAMLISTROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD9AFC70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBossChallengeQuickTeamListRowWidgetController_Context_TypeDefinitionIndex = 79041;
+	inline static constexpr unsigned int UIBossChallengeQuickTeamListRowWidgetController_Context_TypeDefinitionIndex = 77990;
 
 	class UIBossChallengeQuickTeamListRowWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

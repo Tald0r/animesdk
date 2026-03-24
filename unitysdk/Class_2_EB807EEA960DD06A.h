@@ -1,22 +1,22 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_59.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_77.h"
 #include "unitysdk/MoleMole/NAPInput/IMUData.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CLASS_2_EB807EEA960DD06A_METHOD_2_0356C28B02D972AE_OFFSET UNITYSDK_OFFSET(0x733E8C0)
-#define CLASS_2_EB807EEA960DD06A_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x733E9A0)
-#define CLASS_2_EB807EEA960DD06A__CTOR_OFFSET UNITYSDK_OFFSET(0x733E860)
+#define CLASS_2_EB807EEA960DD06A_METHOD_2_0356C28B02D972AE_OFFSET UNITYSDK_OFFSET(0xA293A90)
+#define CLASS_2_EB807EEA960DD06A_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xA293B70)
+#define CLASS_2_EB807EEA960DD06A__CTOR_OFFSET UNITYSDK_OFFSET(0xA293A30)
 
-inline static constexpr unsigned int Class_2_EB807EEA960DD06A_TypeDefinitionIndex = 52480;
+inline static constexpr unsigned int Class_2_EB807EEA960DD06A_TypeDefinitionIndex = 57449;
 
-class Class_2_EB807EEA960DD06A : public ::Class_1_43BD383C98B4C0C5_59
+class Class_2_EB807EEA960DD06A : public ::Class_1_43BD383C98B4C0C5_77
 {
 public:
-	::UnityEngine::Vector3 Field_2_0; // 0x10
-	::UnityEngine::Vector3 Field_2_1; // 0x1C
-	::UnityEngine::Vector3 Field_2_3; // 0x28
-	::UnityEngine::Vector3 Field_2_2; // 0x34
+	::UnityEngine::Vector3 Field_2_2; // 0x10
+	::UnityEngine::Vector3 Field_2_0; // 0x1C
+	::UnityEngine::Vector3 Field_2_1; // 0x28
+	::UnityEngine::Vector3 Field_2_3; // 0x34
 
 	::System::Void _ctor()
 	{

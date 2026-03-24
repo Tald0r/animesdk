@@ -9,24 +9,24 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC9B9860)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE_START_OFFSET UNITYSDK_OFFSET(0xC9B99D0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE__CTOR_OFFSET UNITYSDK_OFFSET(0xC9B9F70)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0xC9B9F90)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB9FE240)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE_START_OFFSET UNITYSDK_OFFSET(0xB9FE3B0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE__CTOR_OFFSET UNITYSDK_OFFSET(0xB9FE950)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSETFEVERWAVE__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0xB9FE970)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardSetFeverWave_TypeDefinitionIndex = 45660;
+	inline static constexpr unsigned int ChessboardSetFeverWave_TypeDefinitionIndex = 77130;
 
 	class ChessboardSetFeverWave : public ::FlowCanvas::FlowNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::System::Single>* targetValue; // 0xA8
-		::FlowCanvas::FlowInput* input; // 0xB0
-		::FlowCanvas::ValueInput_1<::MoleMole::HollowChessboard::HollowCell>* targetCell; // 0xB8
-		::FlowCanvas::FlowOutput* output; // 0xC0
-		::FlowCanvas::ValueInput_1<::UnityEngine::AnimationCurve*>* curve; // 0xC8
-		::FlowCanvas::ValueInput_1<::System::Single>* duration; // 0xD0
+		::FlowCanvas::FlowInput* input; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Single>* duration; // 0xB0
+		::FlowCanvas::FlowOutput* output; // 0xB8
+		::FlowCanvas::ValueInput_1<::UnityEngine::AnimationCurve*>* curve; // 0xC0
+		::FlowCanvas::ValueInput_1<::MoleMole::HollowChessboard::HollowCell>* targetCell; // 0xC8
+		::FlowCanvas::ValueInput_1<::System::Single>* targetValue; // 0xD0
 
 		::System::Void _ctor()
 		{

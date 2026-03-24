@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int PBDRotationMethod_TypeDefinitionIndex = 23641;
+	inline static constexpr unsigned int PBDRotationMethod_TypeDefinitionIndex = 24324;
 
 	enum class PBDRotationMethod : ::System::Int32
 	{

@@ -3,13 +3,13 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int EViewObjectComponentFlags_TypeDefinitionIndex = 46379;
+	inline static constexpr unsigned int EViewObjectComponentFlags_TypeDefinitionIndex = 64043;
 
 	enum class EViewObjectComponentFlags : ::System::Int32
 	{
-		Detaching = 32,
 		Enabled = 4,
-		CustomDestroy = 16,
+		Detaching = 32,
 		EnableUpdate = 2,
+		CustomDestroy = 16,
 	};
 }

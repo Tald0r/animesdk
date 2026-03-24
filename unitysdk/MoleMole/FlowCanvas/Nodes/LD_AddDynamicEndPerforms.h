@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDDYNAMICENDPERFORMS_INVOKE_OFFSET UNITYSDK_OFFSET(0x8F0C020)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDDYNAMICENDPERFORMS__CTOR_OFFSET UNITYSDK_OFFSET(0x8F0C210)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDDYNAMICENDPERFORMS_INVOKE_OFFSET UNITYSDK_OFFSET(0xA01DB70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDDYNAMICENDPERFORMS__CTOR_OFFSET UNITYSDK_OFFSET(0xA01DD60)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AddDynamicEndPerforms_TypeDefinitionIndex = 44939;
+	inline static constexpr unsigned int LD_AddDynamicEndPerforms_TypeDefinitionIndex = 45945;
 
 	class LD_AddDynamicEndPerforms : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Collections::Generic::List_1<::System::Int32>*>
 	{

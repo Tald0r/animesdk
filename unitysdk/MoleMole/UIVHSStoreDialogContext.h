@@ -9,23 +9,23 @@ namespace System { template <typename T> class Func_1; }
 namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0xACDBEA0)
-#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_MODE_OFFSET UNITYSDK_OFFSET(0xACDBE90)
-#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_PREVIEWTAGS_OFFSET UNITYSDK_OFFSET(0xACDBEC0)
-#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_SLOTS_OFFSET UNITYSDK_OFFSET(0xACDBEB0)
-#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xACDBED0)
+#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x9A0E340)
+#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_MODE_OFFSET UNITYSDK_OFFSET(0x9A0E330)
+#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_PREVIEWTAGS_OFFSET UNITYSDK_OFFSET(0x9A0E360)
+#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT_GET_SLOTS_OFFSET UNITYSDK_OFFSET(0x9A0E350)
+#define MOLEMOLE_UIVHSSTOREDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9A0E370)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreDialogContext_TypeDefinitionIndex = 69734;
+	inline static constexpr unsigned int UIVHSStoreDialogContext_TypeDefinitionIndex = 76393;
 
 	class UIVHSStoreDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Func_2<::System::Int32, ::System::Boolean>* checkVhsInCd; // 0x28
-		::System::Collections::Generic::List_1<::System::Int32>* _previewTags_k__BackingField; // 0x30
-		::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* _slots_k__BackingField; // 0x38
-		::System::Func_1<::System::Collections::Generic::List_1<::System::Int32>*>* validVhsGetter; // 0x40
+		::System::Collections::Generic::List_1<::Class_2_CE905445948732C1_Class_1_A6660CA21D7C1066_Class_1_C277D6FBDA93149D*>* _slots_k__BackingField; // 0x28
+		::System::Func_2<::System::Int32, ::System::Boolean>* checkVhsInCd; // 0x30
+		::System::Func_1<::System::Collections::Generic::List_1<::System::Int32>*>* validVhsGetter; // 0x38
+		::System::Collections::Generic::List_1<::System::Int32>* _previewTags_k__BackingField; // 0x40
 		::System::Boolean _isReadonly_k__BackingField; // 0x48
 		::MoleMole::UIVHSStoreDialogContext_Mode _mode_k__BackingField; // 0x4C
 

@@ -5,11 +5,11 @@
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Texture; }
 
-#define MOLEMOLE_SPINESKELETONGRAPHICRENDERTEXTURE_TEXTUREMATERIALPAIR__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define MOLEMOLE_SPINESKELETONGRAPHICRENDERTEXTURE_TEXTUREMATERIALPAIR__CTOR_OFFSET UNITYSDK_OFFSET(0x301710)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SpineSkeletonGraphicRenderTexture_TextureMaterialPair_TypeDefinitionIndex = 40277;
+	inline static constexpr unsigned int SpineSkeletonGraphicRenderTexture_TextureMaterialPair_TypeDefinitionIndex = 39805;
 
 	struct alignas(8) SpineSkeletonGraphicRenderTexture_TextureMaterialPair
 	{

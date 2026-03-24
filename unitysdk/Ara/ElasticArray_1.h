@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace Ara
 {
-	inline static constexpr unsigned int ElasticArray_1_TypeDefinitionIndex = 29896;
+	inline static constexpr unsigned int ElasticArray_1_TypeDefinitionIndex = 30849;
 
 	template <typename T>
 	class ElasticArray_1 : public ::System::Object

@@ -5,10 +5,10 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define CONFIGCAMERASPHERICALCOORDINATE_GETCONFIGBYID_OFFSET UNITYSDK_OFFSET(0x9068810)
-#define CONFIGCAMERASPHERICALCOORDINATE__CTOR_OFFSET UNITYSDK_OFFSET(0x90688D0)
+#define CONFIGCAMERASPHERICALCOORDINATE_GETCONFIGBYID_OFFSET UNITYSDK_OFFSET(0x6F6C940)
+#define CONFIGCAMERASPHERICALCOORDINATE__CTOR_OFFSET UNITYSDK_OFFSET(0x6F6CA00)
 
-inline static constexpr unsigned int ConfigCameraSphericalCoordinate_TypeDefinitionIndex = 75249;
+inline static constexpr unsigned int ConfigCameraSphericalCoordinate_TypeDefinitionIndex = 80710;
 
 class ConfigCameraSphericalCoordinate : public ::Foundation::MihoyoSerializedScriptableObject
 {

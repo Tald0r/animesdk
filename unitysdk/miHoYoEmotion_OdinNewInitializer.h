@@ -2,10 +2,10 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MIHOYOEMOTION_ODINNEWINITIALIZER_INITODINNEW_OFFSET UNITYSDK_OFFSET(0x18AF8590)
-#define MIHOYOEMOTION_ODINNEWINITIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x18AF87C0)
+#define MIHOYOEMOTION_ODINNEWINITIALIZER_INITODINNEW_OFFSET UNITYSDK_OFFSET(0x18FE2F00)
+#define MIHOYOEMOTION_ODINNEWINITIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x18FE3130)
 
-inline static constexpr unsigned int miHoYoEmotion_OdinNewInitializer_TypeDefinitionIndex = 36124;
+inline static constexpr unsigned int miHoYoEmotion_OdinNewInitializer_TypeDefinitionIndex = 37144;
 
 class miHoYoEmotion_OdinNewInitializer : public ::System::Object
 {

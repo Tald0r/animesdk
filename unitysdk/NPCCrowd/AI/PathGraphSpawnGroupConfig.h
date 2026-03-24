@@ -7,12 +7,12 @@ namespace NPCCrowd::AI { class PathGraphConfigExportComponent; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_AI_PATHGRAPHSPAWNGROUPCONFIG_GET_GROUPINDEX_OFFSET UNITYSDK_OFFSET(0x7223C20)
-#define NPCCROWD_AI_PATHGRAPHSPAWNGROUPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7223B80)
+#define NPCCROWD_AI_PATHGRAPHSPAWNGROUPCONFIG_GET_GROUPINDEX_OFFSET UNITYSDK_OFFSET(0x9AF85F0)
+#define NPCCROWD_AI_PATHGRAPHSPAWNGROUPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9AF8550)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphSpawnGroupConfig_TypeDefinitionIndex = 42263;
+	inline static constexpr unsigned int PathGraphSpawnGroupConfig_TypeDefinitionIndex = 76826;
 
 	class PathGraphSpawnGroupConfig : public ::System::Object
 	{

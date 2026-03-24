@@ -6,20 +6,20 @@ namespace MoleMole { class UIInterKnotPostDialogPopWindowController; }
 namespace System { class Action; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__BINDREPLY_B__0_OFFSET UNITYSDK_OFFSET(0xA1E6110)
-#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__BINDREPLY_B__1_OFFSET UNITYSDK_OFFSET(0xA1E6380)
-#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA1E6100)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__BINDREPLY_B__0_OFFSET UNITYSDK_OFFSET(0x9D78D80)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__BINDREPLY_B__1_OFFSET UNITYSDK_OFFSET(0x9D78FF0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9D78D70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotPostDialogPopWindowController___c__DisplayClass15_0_TypeDefinitionIndex = 44219;
+	inline static constexpr unsigned int UIInterKnotPostDialogPopWindowController___c__DisplayClass15_0_TypeDefinitionIndex = 79620;
 
 	class UIInterKnotPostDialogPopWindowController___c__DisplayClass15_0 : public ::System::Object
 	{
 	public:
-		::System::Action* __9__1; // 0x10
-		::MoleMole::UIInterKnotPostDialogPopWindowController* __4__this; // 0x18
-		::System::String* reply; // 0x20
+		::System::String* reply; // 0x10
+		::System::Action* __9__1; // 0x18
+		::MoleMole::UIInterKnotPostDialogPopWindowController* __4__this; // 0x20
 		::System::Int32 nextid; // 0x28
 
 		::System::Void _ctor()

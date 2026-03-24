@@ -7,12 +7,12 @@
 namespace MoleMole { class UIQuestionsAnswerWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENCLICK_D__103_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3226B0)
-#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENCLICK_D__103_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENCLICK_D__103_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A3D20)
+#define MOLEMOLE_UIQUESTIONSANSWERWIDGETCONTROLLER__WAITBLACKSCREENCLICK_D__103_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerWidgetController__WaitBlackscreenClick_d__103_TypeDefinitionIndex = 70204;
+	inline static constexpr unsigned int UIQuestionsAnswerWidgetController__WaitBlackscreenClick_d__103_TypeDefinitionIndex = 66338;
 
 	struct alignas(8) UIQuestionsAnswerWidgetController__WaitBlackscreenClick_d__103
 	{

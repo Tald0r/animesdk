@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/LanguageKeyboardLayoutType.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_LANGUAGEKEYBOARDLAYOUTSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x82DE8E0)
+#define MOLEMOLE_LANGUAGEKEYBOARDLAYOUTSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA3991D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LanguageKeyboardLayoutSettingContext_TypeDefinitionIndex = 37844;
+	inline static constexpr unsigned int LanguageKeyboardLayoutSettingContext_TypeDefinitionIndex = 57142;
 
 	class LanguageKeyboardLayoutSettingContext : public ::MoleMole::SystemSettingContextBase
 	{

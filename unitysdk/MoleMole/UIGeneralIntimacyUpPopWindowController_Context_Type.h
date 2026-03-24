@@ -3,15 +3,15 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralIntimacyUpPopWindowController_Context_Type_TypeDefinitionIndex = 39706;
+	inline static constexpr unsigned int UIGeneralIntimacyUpPopWindowController_Context_Type_TypeDefinitionIndex = 77644;
 
 	enum class UIGeneralIntimacyUpPopWindowController_Context_Type : ::System::Int32
 	{
-		None = 0,
-		UpGrade = 3,
-		Down = 4,
+		LargeUp = 2,
 		SmallUp = 1,
 		Exp = 5,
-		LargeUp = 2,
+		UpGrade = 3,
+		None = 0,
+		Down = 4,
 	};
 }

@@ -7,12 +7,12 @@ namespace System { class String; }
 namespace UnityEngine { class Sprite; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define MOLEMOLE_UITABBTNCONTROLLER_GET_TABBUTTON_OFFSET UNITYSDK_OFFSET(0xAE44AA0)
-#define MOLEMOLE_UITABBTNCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAE44AB0)
+#define MOLEMOLE_UITABBTNCONTROLLER_GET_TABBUTTON_OFFSET UNITYSDK_OFFSET(0xABAB7A0)
+#define MOLEMOLE_UITABBTNCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xABAB7B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITabBtnController_TypeDefinitionIndex = 48288;
+	inline static constexpr unsigned int UITabBtnController_TypeDefinitionIndex = 64622;
 
 	class UITabBtnController : public ::MoleMole::UIWidgetController
 	{

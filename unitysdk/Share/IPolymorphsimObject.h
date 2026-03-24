@@ -3,7 +3,7 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int IPolymorphsimObject_TypeDefinitionIndex = 13656;
+	inline static constexpr unsigned int IPolymorphsimObject_TypeDefinitionIndex = 9877;
 
 	class IPolymorphsimObject
 	{

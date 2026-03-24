@@ -5,17 +5,17 @@
 namespace System { class Object; }
 namespace System { class String; }
 
-#define MOLEMOLE_MONSTERFANTASYINFOTITLECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBD41B90)
+#define MOLEMOLE_MONSTERFANTASYINFOTITLECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB1B2AF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonsterFantasyInfoTitleContext_TypeDefinitionIndex = 57177;
+	inline static constexpr unsigned int MonsterFantasyInfoTitleContext_TypeDefinitionIndex = 53967;
 
 	class MonsterFantasyInfoTitleContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Il2CppArray<::System::Object*>* TextArgs; // 0x28
-		::System::String* TextKey; // 0x30
+		::System::String* TextKey; // 0x28
+		::Il2CppArray<::System::Object*>* TextArgs; // 0x30
 
 		::System::Void _ctor()
 		{

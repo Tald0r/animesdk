@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IList_1; }
 
 namespace MiHoYo::SDK::Protobuf::Reflection
 {
-	inline static constexpr unsigned int DescriptorUtil_TypeDefinitionIndex = 24727;
+	inline static constexpr unsigned int DescriptorUtil_TypeDefinitionIndex = 25552;
 
 	class DescriptorUtil : public ::System::Object
 	{

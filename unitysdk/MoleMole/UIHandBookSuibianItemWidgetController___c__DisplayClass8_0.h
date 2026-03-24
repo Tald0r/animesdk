@@ -8,12 +8,12 @@ namespace MoleMole { class UIHandBookSuibianItemWidgetController; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookSuibianItemWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 64697;
+	inline static constexpr unsigned int UIHandBookSuibianItemWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 69554;
 
 	struct alignas(8) UIHandBookSuibianItemWidgetController___c__DisplayClass8_0
 	{
 		::Class_1_082C291E835A01E6* expeditionTeamData; // 0x10
-		::Class_1_83DE381565FB61D2* expeditionLayer; // 0x18
-		::MoleMole::UIHandBookSuibianItemWidgetController* __4__this; // 0x20
+		::MoleMole::UIHandBookSuibianItemWidgetController* __4__this; // 0x18
+		::Class_1_83DE381565FB61D2* expeditionLayer; // 0x20
 	};
 }

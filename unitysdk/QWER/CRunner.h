@@ -20,63 +20,63 @@ namespace System::Threading { class SynchronizationContext; }
 namespace System::Threading::Tasks { class Task; }
 namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define QWER_CRUNNER_ADDPOLL_OFFSET UNITYSDK_OFFSET(0x1AA1F280)
-#define QWER_CRUNNER_GET_APPLICATION_OFFSET UNITYSDK_OFFSET(0x1AA1F150)
-#define QWER_CRUNNER_GET_ASYNCTASKCOUNT_OFFSET UNITYSDK_OFFSET(0x1AA1F180)
-#define QWER_CRUNNER_GET_CLOCKMGR_OFFSET UNITYSDK_OFFSET(0x1AA1F220)
-#define QWER_CRUNNER_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x1AA1F170)
-#define QWER_CRUNNER_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1AA1CAE0)
-#define QWER_CRUNNER_GET_EXECSYNCCONTEXTCALLBACKCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1AA1F260)
-#define QWER_CRUNNER_GET_EXECTIMERCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1AA1F240)
-#define QWER_CRUNNER_GET_ID_OFFSET UNITYSDK_OFFSET(0x1AA1F120)
-#define QWER_CRUNNER_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1AA1F130)
-#define QWER_CRUNNER_GET_TIMERMGR_OFFSET UNITYSDK_OFFSET(0x1AA1F210)
-#define QWER_CRUNNER_HASUPDATETASK_OFFSET UNITYSDK_OFFSET(0x1AA1CCA0)
-#define QWER_CRUNNER_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x1AA1CC00)
-#define QWER_CRUNNER_POLL_OFFSET UNITYSDK_OFFSET(0x1AA1CBF0)
-#define QWER_CRUNNER_POST_1_OFFSET UNITYSDK_OFFSET(0x1AA1FB30)
-#define QWER_CRUNNER_POST_OFFSET UNITYSDK_OFFSET(0x1AA1FA50)
-#define QWER_CRUNNER_REMOVEPOLL_OFFSET UNITYSDK_OFFSET(0x1AA1F300)
-#define QWER_CRUNNER_SET_APPLICATION_OFFSET UNITYSDK_OFFSET(0x1AA1F160)
-#define QWER_CRUNNER_SET_CLOCKMGR_OFFSET UNITYSDK_OFFSET(0x1AA1F230)
-#define QWER_CRUNNER_SET_EXECSYNCCONTEXTCALLBACKCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1AA1F270)
-#define QWER_CRUNNER_SET_EXECTIMERCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1AA1F250)
-#define QWER_CRUNNER_SET_NAME_OFFSET UNITYSDK_OFFSET(0x1AA1F140)
-#define QWER_CRUNNER_WAITFORLATEUPDATE_OFFSET UNITYSDK_OFFSET(0x1AA1FC40)
-#define QWER_CRUNNER_WAITFORUPDATE_OFFSET UNITYSDK_OFFSET(0x1AA1FC10)
-#define QWER_CRUNNER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA1EED0)
-#define QWER_CRUNNER__POLL_OFFSET UNITYSDK_OFFSET(0x1AA1F380)
+#define QWER_CRUNNER_ADDPOLL_OFFSET UNITYSDK_OFFSET(0x1B00EFC0)
+#define QWER_CRUNNER_GET_APPLICATION_OFFSET UNITYSDK_OFFSET(0x1B00EE90)
+#define QWER_CRUNNER_GET_ASYNCTASKCOUNT_OFFSET UNITYSDK_OFFSET(0x1B00EEC0)
+#define QWER_CRUNNER_GET_CLOCKMGR_OFFSET UNITYSDK_OFFSET(0x1B00EF60)
+#define QWER_CRUNNER_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x1B00EEB0)
+#define QWER_CRUNNER_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1B00C820)
+#define QWER_CRUNNER_GET_EXECSYNCCONTEXTCALLBACKCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1B00EFA0)
+#define QWER_CRUNNER_GET_EXECTIMERCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1B00EF80)
+#define QWER_CRUNNER_GET_ID_OFFSET UNITYSDK_OFFSET(0x1B00EE60)
+#define QWER_CRUNNER_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1B00EE70)
+#define QWER_CRUNNER_GET_TIMERMGR_OFFSET UNITYSDK_OFFSET(0x1B00EF50)
+#define QWER_CRUNNER_HASUPDATETASK_OFFSET UNITYSDK_OFFSET(0x1B00C9E0)
+#define QWER_CRUNNER_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x1B00C940)
+#define QWER_CRUNNER_POLL_OFFSET UNITYSDK_OFFSET(0x1B00C930)
+#define QWER_CRUNNER_POST_1_OFFSET UNITYSDK_OFFSET(0x1B00F860)
+#define QWER_CRUNNER_POST_OFFSET UNITYSDK_OFFSET(0x1B00F780)
+#define QWER_CRUNNER_REMOVEPOLL_OFFSET UNITYSDK_OFFSET(0x1B00F040)
+#define QWER_CRUNNER_SET_APPLICATION_OFFSET UNITYSDK_OFFSET(0x1B00EEA0)
+#define QWER_CRUNNER_SET_CLOCKMGR_OFFSET UNITYSDK_OFFSET(0x1B00EF70)
+#define QWER_CRUNNER_SET_EXECSYNCCONTEXTCALLBACKCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1B00EFB0)
+#define QWER_CRUNNER_SET_EXECTIMERCOUNTPERPOLL_OFFSET UNITYSDK_OFFSET(0x1B00EF90)
+#define QWER_CRUNNER_SET_NAME_OFFSET UNITYSDK_OFFSET(0x1B00EE80)
+#define QWER_CRUNNER_WAITFORLATEUPDATE_OFFSET UNITYSDK_OFFSET(0x1B00F970)
+#define QWER_CRUNNER_WAITFORUPDATE_OFFSET UNITYSDK_OFFSET(0x1B00F940)
+#define QWER_CRUNNER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B00EC10)
+#define QWER_CRUNNER__POLL_OFFSET UNITYSDK_OFFSET(0x1B00F0C0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CRunner_TypeDefinitionIndex = 82082;
+	inline static constexpr unsigned int CRunner_TypeDefinitionIndex = 84123;
 
 	class CRunner : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet_m_dwRunnerCount()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CRunner_TypeDefinitionIndex)->GetStaticField(0x11C90);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CRunner_TypeDefinitionIndex)->GetStaticField(0x11DA0);
 		}
 		static ::QWER::CRunner** StaticGet_m_oCurrent()
 		{
 			return (::QWER::CRunner**)Il2CppClass::FromTypeDefinitionIndex(CRunner_TypeDefinitionIndex)->GetStaticField(0x0);
 		}
-		::System::String* _Name_k__BackingField; // 0x10
-		::QWER::CClockMgr* _ClockMgr_k__BackingField; // 0x18
-		::QWER::CApplication* _Application_k__BackingField; // 0x20
-		::System::Collections::Generic::List_1<::QWER::IPollInRunner*>* m_oPollInRunnerList; // 0x28
-		::QWER::CTimerMgr* _TimerMgr_k__BackingField; // 0x30
-		::QWER::STask m_oLateUpdateEndTask; // 0x38
-		::QWER::STask m_oUpdateEndTask; // 0x48
-		::System::Threading::SynchronizationContext* _Context_k__BackingField; // 0x58
-		::System::Collections::Generic::Dictionary_2<::QWER::IService*, ::QWER::CServiceFrontend*>* m_oConnectedFrontends; // 0x60
-		::System::Boolean m_bIsNodeSynchronizationContextQueueEmpty; // 0x68
-		::System::Boolean m_bIsNodeSynchronizationContext; // 0x69
+		::QWER::STask m_oLateUpdateEndTask; // 0x10
+		::QWER::CClockMgr* _ClockMgr_k__BackingField; // 0x20
+		::QWER::CTimerMgr* _TimerMgr_k__BackingField; // 0x28
+		::System::String* _Name_k__BackingField; // 0x30
+		::QWER::CApplication* _Application_k__BackingField; // 0x38
+		::System::Collections::Generic::Dictionary_2<::QWER::IService*, ::QWER::CServiceFrontend*>* m_oConnectedFrontends; // 0x40
+		::System::Threading::SynchronizationContext* _Context_k__BackingField; // 0x48
+		::QWER::STask m_oUpdateEndTask; // 0x50
+		::System::Collections::Generic::List_1<::QWER::IPollInRunner*>* m_oPollInRunnerList; // 0x60
+		::System::UInt32 m_dwTime; // 0x68
 		::System::Int32 _ExecTimerCountPerPoll_k__BackingField; // 0x6C
-		::System::Int32 _ExecSyncContextCallbackCountPerPoll_k__BackingField; // 0x70
-		::System::UInt32 m_dwTime; // 0x74
-		::System::Int32 _ID_k__BackingField; // 0x78
+		::System::Boolean m_bIsNodeSynchronizationContextQueueEmpty; // 0x70
+		::System::Boolean m_bIsNodeSynchronizationContext; // 0x71
+		::System::Int32 _ID_k__BackingField; // 0x74
+		::System::Int32 _ExecSyncContextCallbackCountPerPoll_k__BackingField; // 0x78
 
 		::System::Void _ctor()
 		{

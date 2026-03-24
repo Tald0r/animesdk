@@ -5,12 +5,12 @@
 namespace MoleMole { class UITheGunLevelSelectItemWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC3EBC80)
-#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__PLAYUNLOCKANIM_B__0_OFFSET UNITYSDK_OFFSET(0xC3EBC90)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA1194E0)
+#define MOLEMOLE_UITHEGUNLEVELSELECTITEMWIDGETCONTROLLER___C__DISPLAYCLASS20_0__PLAYUNLOCKANIM_B__0_OFFSET UNITYSDK_OFFSET(0xA1194F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITheGunLevelSelectItemWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 52084;
+	inline static constexpr unsigned int UITheGunLevelSelectItemWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 52978;
 
 	class UITheGunLevelSelectItemWidgetController___c__DisplayClass20_0 : public ::System::Object
 	{

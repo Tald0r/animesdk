@@ -6,19 +6,19 @@ class Class_1_4791AD8D44B5F712;
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_4791AD8D44B5F712_CLASS_1_40299DA77FD405F9_METHOD_1_51CFFE2AF748ECD7_OFFSET UNITYSDK_OFFSET(0x7147E10)
-#define CLASS_1_4791AD8D44B5F712_CLASS_1_40299DA77FD405F9__CTOR_OFFSET UNITYSDK_OFFSET(0x7147E00)
+#define CLASS_1_4791AD8D44B5F712_CLASS_1_40299DA77FD405F9_METHOD_1_51CFFE2AF748ECD7_OFFSET UNITYSDK_OFFSET(0x672FD70)
+#define CLASS_1_4791AD8D44B5F712_CLASS_1_40299DA77FD405F9__CTOR_OFFSET UNITYSDK_OFFSET(0x672FD60)
 
-inline static constexpr unsigned int Class_1_4791AD8D44B5F712_Class_1_40299DA77FD405F9_TypeDefinitionIndex = 56388;
+inline static constexpr unsigned int Class_1_4791AD8D44B5F712_Class_1_40299DA77FD405F9_TypeDefinitionIndex = 73974;
 
 class Class_1_4791AD8D44B5F712_Class_1_40299DA77FD405F9 : public ::System::Object
 {
 public:
-	::Class_1_4791AD8D44B5F712* Field_1_0; // 0x10
+	::System::Action_1<::System::Int32>* Field_1_4; // 0x10
 	::System::Action* Field_1_5; // 0x18
-	::System::Action_1<::System::Int32>* Field_1_4; // 0x20
-	::System::Single Field_1_3; // 0x28
-	::System::Single Field_1_1; // 0x2C
+	::Class_1_4791AD8D44B5F712* Field_1_0; // 0x20
+	::System::Single Field_1_1; // 0x28
+	::System::Single Field_1_3; // 0x2C
 	::System::Single Field_1_2; // 0x30
 
 	::System::Void _ctor()

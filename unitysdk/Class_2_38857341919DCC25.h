@@ -7,17 +7,17 @@ class MonoLayoutElementProcessor;
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_38857341919DCC25_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x74FD500)
-#define CLASS_2_38857341919DCC25_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x74FD420)
-#define CLASS_2_38857341919DCC25__CTOR_OFFSET UNITYSDK_OFFSET(0x74FD4F0)
+#define CLASS_2_38857341919DCC25_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6062760)
+#define CLASS_2_38857341919DCC25_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x6062680)
+#define CLASS_2_38857341919DCC25__CTOR_OFFSET UNITYSDK_OFFSET(0x6062750)
 
-inline static constexpr unsigned int Class_2_38857341919DCC25_TypeDefinitionIndex = 65515;
+inline static constexpr unsigned int Class_2_38857341919DCC25_TypeDefinitionIndex = 53663;
 
 class Class_2_38857341919DCC25 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_0; // 0x18
-	::MonoLayoutElementProcessor* Field_2_1; // 0x20
+	::MonoLayoutElementProcessor* Field_2_1; // 0x18
+	::UnityEngine::UI::Text* Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/GraphicSettingProfileContextBase.h"
 
-#define MOLEMOLE_VSYNCPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x71F6C80)
+#define MOLEMOLE_VSYNCPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9ACAAA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int VSyncProfileContext_TypeDefinitionIndex = 56909;
+	inline static constexpr unsigned int VSyncProfileContext_TypeDefinitionIndex = 37893;
 
 	class VSyncProfileContext : public ::MoleMole::GraphicSettingProfileContextBase
 	{

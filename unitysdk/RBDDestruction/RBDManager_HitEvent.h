@@ -5,7 +5,7 @@
 
 namespace RBDDestruction
 {
-	inline static constexpr unsigned int RBDManager_HitEvent_TypeDefinitionIndex = 28254;
+	inline static constexpr unsigned int RBDManager_HitEvent_TypeDefinitionIndex = 29195;
 
 	struct alignas(4) RBDManager_HitEvent
 	{

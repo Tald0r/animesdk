@@ -4,12 +4,12 @@
 
 namespace MoleMole { class AbyssS2_DefaultRng; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2CREATECUSTOMRNG_INVOKE_OFFSET UNITYSDK_OFFSET(0x8B05850)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2CREATECUSTOMRNG__CTOR_OFFSET UNITYSDK_OFFSET(0x8B05910)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2CREATECUSTOMRNG_INVOKE_OFFSET UNITYSDK_OFFSET(0xB18A630)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2CREATECUSTOMRNG__CTOR_OFFSET UNITYSDK_OFFSET(0xB18A6F0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2CreateCustomRNG_TypeDefinitionIndex = 53714;
+	inline static constexpr unsigned int LD_AbyssS2CreateCustomRNG_TypeDefinitionIndex = 75746;
 
 	class LD_AbyssS2CreateCustomRNG : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::MoleMole::AbyssS2_DefaultRng*, ::System::Int32>
 	{

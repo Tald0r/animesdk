@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBlackEdge_Enum_3_80EED19D95A9C077_TypeDefinitionIndex = 48011;
+	inline static constexpr unsigned int UIBlackEdge_Enum_3_80EED19D95A9C077_TypeDefinitionIndex = 63841;
 
 	enum class UIBlackEdge_Enum_3_80EED19D95A9C077 : ::System::Int32
 	{
-		Global = 1,
 		Local = 0,
+		Global = 1,
 	};
 }

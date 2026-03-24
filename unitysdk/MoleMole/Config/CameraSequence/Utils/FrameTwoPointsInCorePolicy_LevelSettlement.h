@@ -10,103 +10,103 @@
 namespace MoleMole::FlowCanvas::Nodes { class AspectRatioProvider; }
 namespace PipelineCamera::CameraSequence { class CameraSequenceContext; }
 
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_COLLECTVARIABLE_OFFSET UNITYSDK_OFFSET(0x1398F500)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_GETDATA_OFFSET UNITYSDK_OFFSET(0x1398F6C0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x13991C40)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_0B7DB58570700F2E_OFFSET UNITYSDK_OFFSET(0x13992910)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_14818C3563DF6DE0_OFFSET UNITYSDK_OFFSET(0x13992240)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_24B1E1DE85E3C92F_OFFSET UNITYSDK_OFFSET(0x13991FA0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_1_OFFSET UNITYSDK_OFFSET(0x13993060)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_OFFSET UNITYSDK_OFFSET(0x139923F0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_439B588EB4881570_OFFSET UNITYSDK_OFFSET(0x13992380)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_5A60CCF7370A1875_OFFSET UNITYSDK_OFFSET(0x13992AF0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_83ED25F6A8C66D20_OFFSET UNITYSDK_OFFSET(0x13992840)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_10_OFFSET UNITYSDK_OFFSET(0x13993130)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_1_OFFSET UNITYSDK_OFFSET(0x13992160)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_2_OFFSET UNITYSDK_OFFSET(0x139924C0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_3_OFFSET UNITYSDK_OFFSET(0x139925A0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_4_OFFSET UNITYSDK_OFFSET(0x13992680)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_5_OFFSET UNITYSDK_OFFSET(0x13992760)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_6_OFFSET UNITYSDK_OFFSET(0x13992BB0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_7_OFFSET UNITYSDK_OFFSET(0x13992DC0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_8_OFFSET UNITYSDK_OFFSET(0x13992EA0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_9_OFFSET UNITYSDK_OFFSET(0x13992F80)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_OFFSET UNITYSDK_OFFSET(0x13992080)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C561FF611C07A44C_OFFSET UNITYSDK_OFFSET(0x13992C90)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_SETPATH_OFFSET UNITYSDK_OFFSET(0x1398F440)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x13991CA0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x13991C50)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_COLLECTVARIABLE_OFFSET UNITYSDK_OFFSET(0x9181900)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_GETDATA_OFFSET UNITYSDK_OFFSET(0x9181AC0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x9184050)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_0B7DB58570700F2E_OFFSET UNITYSDK_OFFSET(0x9184AF0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_14818C3563DF6DE0_OFFSET UNITYSDK_OFFSET(0x9185250)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_24B1E1DE85E3C92F_OFFSET UNITYSDK_OFFSET(0x9185090)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_1_OFFSET UNITYSDK_OFFSET(0x9184CD0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_OFFSET UNITYSDK_OFFSET(0x9184940)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_439B588EB4881570_OFFSET UNITYSDK_OFFSET(0x9184F40)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_5A60CCF7370A1875_OFFSET UNITYSDK_OFFSET(0x9184E80)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_83ED25F6A8C66D20_OFFSET UNITYSDK_OFFSET(0x9185470)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_10_OFFSET UNITYSDK_OFFSET(0x9185540)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_1_OFFSET UNITYSDK_OFFSET(0x9184490)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_2_OFFSET UNITYSDK_OFFSET(0x9184570)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_3_OFFSET UNITYSDK_OFFSET(0x9184650)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_4_OFFSET UNITYSDK_OFFSET(0x9184730)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_5_OFFSET UNITYSDK_OFFSET(0x9184A10)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_6_OFFSET UNITYSDK_OFFSET(0x9184DA0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_7_OFFSET UNITYSDK_OFFSET(0x9184FB0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_8_OFFSET UNITYSDK_OFFSET(0x9185170)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_9_OFFSET UNITYSDK_OFFSET(0x9185390)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_OFFSET UNITYSDK_OFFSET(0x91843B0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C561FF611C07A44C_OFFSET UNITYSDK_OFFSET(0x9184810)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_SETPATH_OFFSET UNITYSDK_OFFSET(0x9181840)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x91840B0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x9184060)
 
 namespace MoleMole::Config::CameraSequence::Utils
 {
-	inline static constexpr unsigned int FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex = 39522;
+	inline static constexpr unsigned int FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex = 51661;
 
 	class FrameTwoPointsInCorePolicy_LevelSettlement : public ::PipelineCamera::CameraSequence::FrameTwoPointsInCorePolicy
 	{
 	public:
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_mainVerticalOffset()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE5F0);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_IsPlayerOnLeft()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE5F8);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_MainHeight()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE600);
-		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_maxSubVerticalOffset()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE608);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_subHorizontalOffset()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE610);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_heightRatio()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE618);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_mainHorizontalOffset()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE620);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_roll()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE628);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEB90);
 		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_minAngle()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE630);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEB98);
 		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_minSubVerticalOffset()
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_mainVerticalOffset()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE638);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_fieldOfView()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE640);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_ensureSubVerticalOffset()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE648);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_pitch()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE650);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_IsMainOnLeft()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE658);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_LastCameraData()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE660);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBA0);
 		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_maxAngle()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xE668);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBA8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_MainHeight()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBB0);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_LastCameraData()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBB8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_pitch()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBC0);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_mainHorizontalOffset()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBC8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_fieldOfView()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBD0);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_heightRatio()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBD8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_ensureSubVerticalOffset()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBE0);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_IsMainOnLeft()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBE8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_roll()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBF0);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_subHorizontalOffset()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEBF8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_IsPlayerOnLeft()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEC00);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_minSubVerticalOffset()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameTwoPointsInCorePolicy_LevelSettlement_TypeDefinitionIndex)->GetStaticField(0xEC08);
 		}
 		::MoleMole::FlowCanvas::Nodes::AspectRatioProvider* aspectRatio; // 0x40
 		::System::Single heightRatio; // 0x48
@@ -159,11 +159,6 @@ namespace MoleMole::Config::CameraSequence::Utils
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_GET_ISCONTEXTDEPENDENT_OFFSET))(this);
 		}
 
-		::System::Boolean Method_4_24B1E1DE85E3C92F(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
-		{
-			return ((::System::Boolean(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_24B1E1DE85E3C92F_OFFSET))(this, a1);
-		}
-
 		::System::Single Method_4_C1397965C8E8E75A(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
 		{
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_OFFSET))(this, a1);
@@ -172,21 +167,6 @@ namespace MoleMole::Config::CameraSequence::Utils
 		::System::Single Method_4_C1397965C8E8E75A_1(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
 		{
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_1_OFFSET))(this, a1);
-		}
-
-		::PipelineCamera::WorldBasicCameraData Method_4_14818C3563DF6DE0(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
-		{
-			return ((::PipelineCamera::WorldBasicCameraData(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_14818C3563DF6DE0_OFFSET))(this, a1);
-		}
-
-		::System::Void Method_4_439B588EB4881570(::PipelineCamera::CameraSequence::CameraSequenceMemberPath& a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceMemberPath&))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_439B588EB4881570_OFFSET))(this, a1);
-		}
-
-		::System::Boolean Method_4_2E16F53A4F27C49D(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
-		{
-			return ((::System::Boolean(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_OFFSET))(this, a1);
 		}
 
 		::System::Single Method_4_C1397965C8E8E75A_2(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
@@ -204,14 +184,19 @@ namespace MoleMole::Config::CameraSequence::Utils
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_4_OFFSET))(this, a1);
 		}
 
+		::System::Void Method_4_C561FF611C07A44C()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C561FF611C07A44C_OFFSET))(this);
+		}
+
+		::System::Boolean Method_4_2E16F53A4F27C49D(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_OFFSET))(this, a1);
+		}
+
 		::System::Single Method_4_C1397965C8E8E75A_5(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
 		{
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_5_OFFSET))(this, a1);
-		}
-
-		::System::Single Method_4_83ED25F6A8C66D20(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
-		{
-			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_83ED25F6A8C66D20_OFFSET))(this, a1);
 		}
 
 		static ::System::Single Method_4_0B7DB58570700F2E(::System::Single a1, ::System::Single a2, ::System::Single a3, ::System::Single a4)
@@ -219,9 +204,9 @@ namespace MoleMole::Config::CameraSequence::Utils
 			return ((::System::Single(*)(::System::Single, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_0B7DB58570700F2E_OFFSET))(a1, a2, a3, a4);
 		}
 
-		::System::Void Method_4_5A60CCF7370A1875(::PipelineCamera::CameraSequence::CameraSequenceVariableCollector a1)
+		::System::Boolean Method_4_2E16F53A4F27C49D_1(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
 		{
-			return ((::System::Void(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceVariableCollector))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_5A60CCF7370A1875_OFFSET))(this, a1);
+			return ((::System::Boolean(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_1_OFFSET))(this, a1);
 		}
 
 		::System::Single Method_4_C1397965C8E8E75A_6(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
@@ -229,9 +214,14 @@ namespace MoleMole::Config::CameraSequence::Utils
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_6_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_4_C561FF611C07A44C()
+		::System::Void Method_4_5A60CCF7370A1875(::PipelineCamera::CameraSequence::CameraSequenceVariableCollector a1)
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C561FF611C07A44C_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceVariableCollector))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_5A60CCF7370A1875_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_4_439B588EB4881570(::PipelineCamera::CameraSequence::CameraSequenceMemberPath& a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceMemberPath&))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_439B588EB4881570_OFFSET))(this, a1);
 		}
 
 		::System::Single Method_4_C1397965C8E8E75A_7(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
@@ -239,9 +229,19 @@ namespace MoleMole::Config::CameraSequence::Utils
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_7_OFFSET))(this, a1);
 		}
 
+		::System::Boolean Method_4_24B1E1DE85E3C92F(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_24B1E1DE85E3C92F_OFFSET))(this, a1);
+		}
+
 		::System::Single Method_4_C1397965C8E8E75A_8(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
 		{
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_8_OFFSET))(this, a1);
+		}
+
+		::PipelineCamera::WorldBasicCameraData Method_4_14818C3563DF6DE0(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
+		{
+			return ((::PipelineCamera::WorldBasicCameraData(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_14818C3563DF6DE0_OFFSET))(this, a1);
 		}
 
 		::System::Single Method_4_C1397965C8E8E75A_9(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
@@ -249,9 +249,9 @@ namespace MoleMole::Config::CameraSequence::Utils
 			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_C1397965C8E8E75A_9_OFFSET))(this, a1);
 		}
 
-		::System::Boolean Method_4_2E16F53A4F27C49D_1(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
+		::System::Single Method_4_83ED25F6A8C66D20(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_2E16F53A4F27C49D_1_OFFSET))(this, a1);
+			return ((::System::Single(*)(::PVOID, ::PipelineCamera::CameraSequence::CameraSequenceContext*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMETWOPOINTSINCOREPOLICY_LEVELSETTLEMENT_METHOD_4_83ED25F6A8C66D20_OFFSET))(this, a1);
 		}
 
 		::System::Single Method_4_C1397965C8E8E75A_10(::PipelineCamera::CameraSequence::CameraSequenceContext* a1)

@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CINEMASINGLEBEATMAPCONFIG_BEATMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x6FBF0A0)
+#define MOLEMOLE_CINEMASINGLEBEATMAPCONFIG_BEATMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x916D640)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CinemaSingleBeatMapConfig_BeatMap_TypeDefinitionIndex = 37755;
+	inline static constexpr unsigned int CinemaSingleBeatMapConfig_BeatMap_TypeDefinitionIndex = 51468;
 
 	class CinemaSingleBeatMapConfig_BeatMap : public ::System::Object
 	{

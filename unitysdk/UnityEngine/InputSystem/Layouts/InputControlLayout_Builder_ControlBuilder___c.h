@@ -6,24 +6,24 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTCONTROLLAYOUT_BUILDER_CONTROLBUILDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1979B880)
-#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTCONTROLLAYOUT_BUILDER_CONTROLBUILDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1979B8C0)
-#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTCONTROLLAYOUT_BUILDER_CONTROLBUILDER___C__WITHUSAGES_B__14_0_OFFSET UNITYSDK_OFFSET(0x1979B8D0)
+#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTCONTROLLAYOUT_BUILDER_CONTROLBUILDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C0C1B0)
+#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTCONTROLLAYOUT_BUILDER_CONTROLBUILDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19C0C1F0)
+#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTCONTROLLAYOUT_BUILDER_CONTROLBUILDER___C__WITHUSAGES_B__14_0_OFFSET UNITYSDK_OFFSET(0x19C0C200)
 
 namespace UnityEngine::InputSystem::Layouts
 {
-	inline static constexpr unsigned int InputControlLayout_Builder_ControlBuilder___c_TypeDefinitionIndex = 27867;
+	inline static constexpr unsigned int InputControlLayout_Builder_ControlBuilder___c_TypeDefinitionIndex = 28807;
 
 	class InputControlLayout_Builder_ControlBuilder___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::System::String*, ::UnityEngine::InputSystem::Utilities::InternedString>** StaticGet___9__14_0()
 		{
-			return (::System::Func_2<::System::String*, ::UnityEngine::InputSystem::Utilities::InternedString>**)Il2CppClass::FromTypeDefinitionIndex(InputControlLayout_Builder_ControlBuilder___c_TypeDefinitionIndex)->GetStaticField(0x20630);
+			return (::System::Func_2<::System::String*, ::UnityEngine::InputSystem::Utilities::InternedString>**)Il2CppClass::FromTypeDefinitionIndex(InputControlLayout_Builder_ControlBuilder___c_TypeDefinitionIndex)->GetStaticField(0x21C90);
 		}
 		static ::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder_ControlBuilder___c** StaticGet___9()
 		{
-			return (::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder_ControlBuilder___c**)Il2CppClass::FromTypeDefinitionIndex(InputControlLayout_Builder_ControlBuilder___c_TypeDefinitionIndex)->GetStaticField(0x20638);
+			return (::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder_ControlBuilder___c**)Il2CppClass::FromTypeDefinitionIndex(InputControlLayout_Builder_ControlBuilder___c_TypeDefinitionIndex)->GetStaticField(0x21C98);
 		}
 
 		static ::System::Void _cctor()

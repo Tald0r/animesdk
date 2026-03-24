@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int TouchscreenState__touchData_e__FixedBuffer_TypeDefinitionIndex = 27783;
+	inline static constexpr unsigned int TouchscreenState__touchData_e__FixedBuffer_TypeDefinitionIndex = 28723;
 
 	struct alignas(1) TouchscreenState__touchData_e__FixedBuffer
 	{

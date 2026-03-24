@@ -3,12 +3,12 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int LoginType_TypeDefinitionIndex = 8048;
+	inline static constexpr unsigned int LoginType_TypeDefinitionIndex = 8034;
 
 	enum class LoginType : ::System::Int32
 	{
-		SDK = 1,
 		CloudPre = 2,
+		SDK = 1,
 		Debug = 0,
 	};
 }

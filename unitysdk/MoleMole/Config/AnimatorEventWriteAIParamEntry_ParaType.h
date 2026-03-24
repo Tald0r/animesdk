@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventWriteAIParamEntry_ParaType_TypeDefinitionIndex = 67000;
+	inline static constexpr unsigned int AnimatorEventWriteAIParamEntry_ParaType_TypeDefinitionIndex = 49264;
 
 	enum class AnimatorEventWriteAIParamEntry_ParaType : ::System::Int32
 	{
-		Float = 0,
-		String = 2,
-		Bool = 3,
 		Int = 1,
+		Bool = 3,
+		String = 2,
+		Float = 0,
 	};
 }

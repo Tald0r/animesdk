@@ -5,20 +5,20 @@
 namespace System { class String; }
 namespace UnityEngine::InputSystem { class InputActionRebindingExtensions___c__DisplayClass8_0; }
 
-#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONREBINDINGEXTENSIONS___C__DISPLAYCLASS8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3E6330)
-#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONREBINDINGEXTENSIONS___C__DISPLAYCLASS8_1__GETBINDINGDISPLAYSTRING_B__0_OFFSET UNITYSDK_OFFSET(0x1A3E6340)
+#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONREBINDINGEXTENSIONS___C__DISPLAYCLASS8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9AA960)
+#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONREBINDINGEXTENSIONS___C__DISPLAYCLASS8_1__GETBINDINGDISPLAYSTRING_B__0_OFFSET UNITYSDK_OFFSET(0x1A9AA970)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputActionRebindingExtensions___c__DisplayClass8_1_TypeDefinitionIndex = 27440;
+	inline static constexpr unsigned int InputActionRebindingExtensions___c__DisplayClass8_1_TypeDefinitionIndex = 28380;
 
 	class InputActionRebindingExtensions___c__DisplayClass8_1 : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::String*>* partStrings; // 0x10
-		::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass8_0* CS___8__locals1; // 0x18
-		::System::Int32 firstPartIndex; // 0x20
-		::System::Int32 partCount; // 0x24
+		::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass8_0* CS___8__locals1; // 0x10
+		::Il2CppArray<::System::String*>* partStrings; // 0x18
+		::System::Int32 partCount; // 0x20
+		::System::Int32 firstPartIndex; // 0x24
 
 		::System::Void _ctor()
 		{

@@ -3,14 +3,14 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int HollowPieceBlendMode_TypeDefinitionIndex = 65432;
+	inline static constexpr unsigned int HollowPieceBlendMode_TypeDefinitionIndex = 76841;
 
 	enum class HollowPieceBlendMode : ::System::Int32
 	{
-		Add = 1,
-		Overlay = 3,
-		None = -1,
 		AlphaBlend = 0,
+		None = -1,
+		Add = 1,
 		Multiply = 2,
+		Overlay = 3,
 	};
 }

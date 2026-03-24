@@ -6,27 +6,27 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class RectTransform; }
 
-#define POPEFFECT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x99FFD30)
-#define POPEFFECT___C__CTOR_OFFSET UNITYSDK_OFFSET(0x99FFD60)
-#define POPEFFECT___C__SETTEXTWITHOUTANIMATION_B__10_0_OFFSET UNITYSDK_OFFSET(0x99FFDA0)
-#define POPEFFECT___C__SETTEXT_B__9_0_OFFSET UNITYSDK_OFFSET(0x99FFD70)
+#define POPEFFECT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD60FDF0)
+#define POPEFFECT___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD60FE20)
+#define POPEFFECT___C__SETTEXTWITHOUTANIMATION_B__10_0_OFFSET UNITYSDK_OFFSET(0xD60FE60)
+#define POPEFFECT___C__SETTEXT_B__9_0_OFFSET UNITYSDK_OFFSET(0xD60FE30)
 
-inline static constexpr unsigned int PopEffect___c_TypeDefinitionIndex = 49423;
+inline static constexpr unsigned int PopEffect___c_TypeDefinitionIndex = 44808;
 
 class PopEffect___c : public ::System::Object
 {
 public:
-	static ::PopEffect___c** StaticGet___9()
-	{
-		return (::PopEffect___c**)Il2CppClass::FromTypeDefinitionIndex(PopEffect___c_TypeDefinitionIndex)->GetStaticField(0x438B0);
-	}
 	static ::System::Predicate_1<::System::ValueTuple_2<::UnityEngine::RectTransform*, ::System::Single>>** StaticGet___9__9_0()
 	{
-		return (::System::Predicate_1<::System::ValueTuple_2<::UnityEngine::RectTransform*, ::System::Single>>**)Il2CppClass::FromTypeDefinitionIndex(PopEffect___c_TypeDefinitionIndex)->GetStaticField(0x438B8);
+		return (::System::Predicate_1<::System::ValueTuple_2<::UnityEngine::RectTransform*, ::System::Single>>**)Il2CppClass::FromTypeDefinitionIndex(PopEffect___c_TypeDefinitionIndex)->GetStaticField(0x44710);
+	}
+	static ::PopEffect___c** StaticGet___9()
+	{
+		return (::PopEffect___c**)Il2CppClass::FromTypeDefinitionIndex(PopEffect___c_TypeDefinitionIndex)->GetStaticField(0x44718);
 	}
 	static ::System::Predicate_1<::System::ValueTuple_2<::UnityEngine::RectTransform*, ::System::Single>>** StaticGet___9__10_0()
 	{
-		return (::System::Predicate_1<::System::ValueTuple_2<::UnityEngine::RectTransform*, ::System::Single>>**)Il2CppClass::FromTypeDefinitionIndex(PopEffect___c_TypeDefinitionIndex)->GetStaticField(0x438C0);
+		return (::System::Predicate_1<::System::ValueTuple_2<::UnityEngine::RectTransform*, ::System::Single>>**)Il2CppClass::FromTypeDefinitionIndex(PopEffect___c_TypeDefinitionIndex)->GetStaticField(0x44720);
 	}
 
 	static ::System::Void _cctor()

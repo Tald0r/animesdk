@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/UIShoppingMallV2PageController_BgAnimationState.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER_BGFADETASK__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3600)
+#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER_BGFADETASK__CTOR_OFFSET UNITYSDK_OFFSET(0x302300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallV2PageController_BgFadeTask_TypeDefinitionIndex = 73551;
+	inline static constexpr unsigned int UIShoppingMallV2PageController_BgFadeTask_TypeDefinitionIndex = 66909;
 
 	struct alignas(4) UIShoppingMallV2PageController_BgFadeTask
 	{

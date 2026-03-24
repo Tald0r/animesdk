@@ -8,12 +8,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_TEXTTYPESETMIDCHAR_GET__PRASEDTOKEN_OFFSET UNITYSDK_OFFSET(0x354DD0)
-#define MOLEMOLE_TEXTTYPESETMIDCHAR_METHOD_2_BDBA00FB43D83ECB_OFFSET UNITYSDK_OFFSET(0x354DE0)
+#define MOLEMOLE_TEXTTYPESETMIDCHAR_GET__PRASEDTOKEN_OFFSET UNITYSDK_OFFSET(0x35E5B0)
+#define MOLEMOLE_TEXTTYPESETMIDCHAR_METHOD_2_BDBA00FB43D83ECB_OFFSET UNITYSDK_OFFSET(0x35E5C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TextTypesetMidChar_TypeDefinitionIndex = 61513;
+	inline static constexpr unsigned int TextTypesetMidChar_TypeDefinitionIndex = 64022;
 
 	struct alignas(8) TextTypesetMidChar
 	{

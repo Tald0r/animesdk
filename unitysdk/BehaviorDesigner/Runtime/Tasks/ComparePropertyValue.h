@@ -7,22 +7,22 @@ namespace BehaviorDesigner::Runtime { class SharedGameObject; }
 namespace BehaviorDesigner::Runtime { class SharedString; }
 namespace BehaviorDesigner::Runtime { class SharedVariable; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC59F90)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC599F0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC59FE0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC5A020)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC5A0B0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B25FD20)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B25F780)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B25FD70)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B25FDB0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_COMPAREPROPERTYVALUE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B25FE40)
 
 namespace BehaviorDesigner::Runtime::Tasks
 {
-	inline static constexpr unsigned int ComparePropertyValue_TypeDefinitionIndex = 30332;
+	inline static constexpr unsigned int ComparePropertyValue_TypeDefinitionIndex = 31284;
 
 	class ComparePropertyValue : public ::BehaviorDesigner::Runtime::Tasks::Conditional
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedGameObject* targetGameObject; // 0x50
-		::BehaviorDesigner::Runtime::SharedString* componentName; // 0x58
-		::BehaviorDesigner::Runtime::SharedString* propertyName; // 0x60
+		::BehaviorDesigner::Runtime::SharedString* componentName; // 0x50
+		::BehaviorDesigner::Runtime::SharedString* propertyName; // 0x58
+		::BehaviorDesigner::Runtime::SharedGameObject* targetGameObject; // 0x60
 		::BehaviorDesigner::Runtime::SharedVariable* compareValue; // 0x68
 
 		::System::Void _ctor()

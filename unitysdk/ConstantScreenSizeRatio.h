@@ -5,11 +5,13 @@
 namespace UnityEngine { class Camera; }
 namespace UnityEngine { class Transform; }
 
-#define CONSTANTSCREENSIZERATIO_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0xADC6DA0)
-#define CONSTANTSCREENSIZERATIO_ONENABLE_OFFSET UNITYSDK_OFFSET(0xADC6CC0)
-#define CONSTANTSCREENSIZERATIO__CTOR_OFFSET UNITYSDK_OFFSET(0xADC70F0)
+#define CONSTANTSCREENSIZERATIO_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x8A3FD10)
+#define CONSTANTSCREENSIZERATIO_ONENABLE_OFFSET UNITYSDK_OFFSET(0x8A3FAF0)
+#define CONSTANTSCREENSIZERATIO_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x8A3FC90)
+#define CONSTANTSCREENSIZERATIO_ONREALENABLE_OFFSET UNITYSDK_OFFSET(0x8A3FBB0)
+#define CONSTANTSCREENSIZERATIO__CTOR_OFFSET UNITYSDK_OFFSET(0x8A40060)
 
-inline static constexpr unsigned int ConstantScreenSizeRatio_TypeDefinitionIndex = 48906;
+inline static constexpr unsigned int ConstantScreenSizeRatio_TypeDefinitionIndex = 56010;
 
 class ConstantScreenSizeRatio : public ::UnityEngine::MonoBehaviour
 {
@@ -29,6 +31,16 @@ public:
 	::System::Void OnEnable()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CONSTANTSCREENSIZERATIO_ONENABLE_OFFSET))(this);
+	}
+
+	::System::Void OnLightweightActive()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CONSTANTSCREENSIZERATIO_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
+	}
+
+	::System::Void OnRealEnable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CONSTANTSCREENSIZERATIO_ONREALENABLE_OFFSET))(this);
 	}
 
 	::System::Void LateUpdate()

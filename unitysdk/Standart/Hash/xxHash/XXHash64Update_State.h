@@ -5,7 +5,7 @@
 
 namespace Standart::Hash::xxHash
 {
-	inline static constexpr unsigned int XXHash64Update_State_TypeDefinitionIndex = 7937;
+	inline static constexpr unsigned int XXHash64Update_State_TypeDefinitionIndex = 8163;
 
 	struct alignas(8) XXHash64Update_State
 	{

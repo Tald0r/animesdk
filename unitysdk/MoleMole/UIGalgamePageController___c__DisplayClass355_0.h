@@ -5,12 +5,12 @@
 namespace MoleMole { class UIGalgamePageController_AvatarDisplaySetting; }
 namespace MoleMole { class UIGalgamePageController_UIRoleInfo; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS355_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8C059D0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS355_0__PLAYONEPERSIONCLOSING_B__0_OFFSET UNITYSDK_OFFSET(0x8C059E0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS355_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6C5EA30)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS355_0__PLAYONEPERSIONCLOSING_B__0_OFFSET UNITYSDK_OFFSET(0x6C5EA40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass355_0_TypeDefinitionIndex = 54696;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass355_0_TypeDefinitionIndex = 58917;
 
 	class UIGalgamePageController___c__DisplayClass355_0 : public ::System::Object
 	{

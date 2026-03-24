@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int EnumAsFlag_1_TypeDefinitionIndex = 9181;
+	inline static constexpr unsigned int EnumAsFlag_1_TypeDefinitionIndex = 8944;
 
 	template <typename T>
 	struct EnumAsFlag_1

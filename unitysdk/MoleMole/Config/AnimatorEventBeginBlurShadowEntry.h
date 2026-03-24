@@ -5,24 +5,24 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTBEGINBLURSHADOWENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x6BE1B50)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTBEGINBLURSHADOWENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x6BE1C00)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTBEGINBLURSHADOWENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xACAFDA0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTBEGINBLURSHADOWENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xACAFE50)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventBeginBlurShadowEntry_TypeDefinitionIndex = 40258;
+	inline static constexpr unsigned int AnimatorEventBeginBlurShadowEntry_TypeDefinitionIndex = 69960;
 
 	class AnimatorEventBeginBlurShadowEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
 		::System::String* ConfigGhostEffectKey; // 0x58
 		::System::String* Tag; // 0x60
-		::System::Single LifeTime; // 0x68
-		::System::Boolean IgnoreOwnerTimescale; // 0x6C
-		::System::Boolean IgnoreWorldTimescale; // 0x6D
-		::System::Boolean HidePartsByEntity; // 0x6E
+		::System::Boolean HidePartsByEntity; // 0x68
+		::System::Boolean IgnoreWorldTimescale; // 0x69
+		::System::Boolean IgnoreOwnerTimescale; // 0x6A
+		::System::UInt32 MaxGhostCount; // 0x6C
 		::System::Single EchoTime; // 0x70
-		::System::UInt32 MaxGhostCount; // 0x74
+		::System::Single LifeTime; // 0x74
 
 		::System::Void _ctor()
 		{

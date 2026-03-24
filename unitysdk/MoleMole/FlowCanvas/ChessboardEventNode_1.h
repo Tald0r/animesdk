@@ -12,7 +12,7 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardEventNode_1_TypeDefinitionIndex = 65575;
+	inline static constexpr unsigned int ChessboardEventNode_1_TypeDefinitionIndex = 61137;
 
 	template <typename T>
 	class ChessboardEventNode_1 : public ::FlowCanvas::Nodes::RouterEventNode_1<::NodeCanvas::Framework::GraphOwner*>

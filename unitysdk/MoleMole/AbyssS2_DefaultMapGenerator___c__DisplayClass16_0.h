@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AbyssS2_DefaultMapGenerator___c__DisplayClass16_0_TypeDefinitionIndex = 68802;
+	inline static constexpr unsigned int AbyssS2_DefaultMapGenerator___c__DisplayClass16_0_TypeDefinitionIndex = 77492;
 
 	struct alignas(4) AbyssS2_DefaultMapGenerator___c__DisplayClass16_0
 	{

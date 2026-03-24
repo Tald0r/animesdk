@@ -8,22 +8,22 @@
 namespace NPCCrowd::Accessories { class NPCAccessory; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETMESHLOD_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2C99D0)
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETMESHLOD_D__4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETMESHLOD_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3113F0)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETMESHLOD_D__4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace NPCCrowd::Accessories
 {
-	inline static constexpr unsigned int NPCAccessoryUtils__SetMeshLOD_d__4_TypeDefinitionIndex = 75212;
+	inline static constexpr unsigned int NPCAccessoryUtils__SetMeshLOD_d__4_TypeDefinitionIndex = 44658;
 
 	struct alignas(8) NPCAccessoryUtils__SetMeshLOD_d__4
 	{
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
-		::NPCCrowd::Accessories::NPCAccessory* acc; // 0x20
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x28
-		::System::Boolean shouldFade; // 0x30
-		::System::Int32 __1__state; // 0x34
-		::NPCCrowd::Lod::ELODLevel oldLod; // 0x38
-		::NPCCrowd::Lod::ELODLevel lod; // 0x3C
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x20
+		::NPCCrowd::Accessories::NPCAccessory* acc; // 0x28
+		::NPCCrowd::Lod::ELODLevel lod; // 0x30
+		::System::Boolean shouldFade; // 0x34
+		::System::Int32 __1__state; // 0x38
+		::NPCCrowd::Lod::ELODLevel oldLod; // 0x3C
 
 		::System::Void MoveNext()
 		{

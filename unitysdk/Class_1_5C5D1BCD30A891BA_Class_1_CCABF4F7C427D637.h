@@ -6,16 +6,16 @@ namespace MoleMole::Config { class ConfigDepthOfFieldEffects; }
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_5C5D1BCD30A891BA_CLASS_1_CCABF4F7C427D637_METHOD_1_4B38D0C2233FA9B0_OFFSET UNITYSDK_OFFSET(0x900C6B0)
-#define CLASS_1_5C5D1BCD30A891BA_CLASS_1_CCABF4F7C427D637__CTOR_OFFSET UNITYSDK_OFFSET(0x900C6A0)
+#define CLASS_1_5C5D1BCD30A891BA_CLASS_1_CCABF4F7C427D637_METHOD_1_4B38D0C2233FA9B0_OFFSET UNITYSDK_OFFSET(0x642D880)
+#define CLASS_1_5C5D1BCD30A891BA_CLASS_1_CCABF4F7C427D637__CTOR_OFFSET UNITYSDK_OFFSET(0x642D870)
 
-inline static constexpr unsigned int Class_1_5C5D1BCD30A891BA_Class_1_CCABF4F7C427D637_TypeDefinitionIndex = 72921;
+inline static constexpr unsigned int Class_1_5C5D1BCD30A891BA_Class_1_CCABF4F7C427D637_TypeDefinitionIndex = 42121;
 
 class Class_1_5C5D1BCD30A891BA_Class_1_CCABF4F7C427D637 : public ::System::Object
 {
 public:
-	::System::Action* Field_1_1; // 0x10
-	::System::Action_1<::MoleMole::Config::ConfigDepthOfFieldEffects*>* Field_1_2; // 0x18
+	::System::Action_1<::MoleMole::Config::ConfigDepthOfFieldEffects*>* Field_1_2; // 0x10
+	::System::Action* Field_1_1; // 0x18
 	::System::Int32 Field_1_0; // 0x20
 
 	::System::Void _ctor()

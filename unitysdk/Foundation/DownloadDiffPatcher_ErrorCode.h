@@ -3,14 +3,14 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int DownloadDiffPatcher_ErrorCode_TypeDefinitionIndex = 61320;
+	inline static constexpr unsigned int DownloadDiffPatcher_ErrorCode_TypeDefinitionIndex = 43884;
 
 	enum class DownloadDiffPatcher_ErrorCode : ::System::SByte
 	{
-		VerifyError = -3,
-		CollectError = -1,
-		Succ = 0,
-		HDiffException = -2,
 		FileInvalid = -4,
+		VerifyError = -3,
+		HDiffException = -2,
+		Succ = 0,
+		CollectError = -1,
 	};
 }

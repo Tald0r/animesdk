@@ -11,34 +11,34 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE106880)
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE106890)
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE106EA0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE107270)
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE107230)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7A6ADA0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7A6ADB0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7A6B3C0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7A6B790)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_MAINCITYCHATSHOWCONFIRMPOPUPNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A6B750)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex = 40250;
+	inline static constexpr unsigned int MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex = 45123;
 
 	class MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::MainCityChatShowConfirmPopupNode*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40070);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40078);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46CB0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46CB8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatBranchItem*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatBranchItem*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40080);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatBranchItem*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46CC0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40088);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatShowConfirmPopupNode_MainCityChatShowConfirmPopupNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46CC8);
 		}
 
 		::System::Void _ctor()

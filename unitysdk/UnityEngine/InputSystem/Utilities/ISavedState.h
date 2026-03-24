@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int ISavedState_TypeDefinitionIndex = 27967;
+	inline static constexpr unsigned int ISavedState_TypeDefinitionIndex = 28907;
 
 	class ISavedState
 	{

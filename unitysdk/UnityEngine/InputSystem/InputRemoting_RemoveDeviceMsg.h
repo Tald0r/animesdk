@@ -6,12 +6,12 @@
 namespace UnityEngine::InputSystem { class InputDevice; }
 namespace UnityEngine::InputSystem { class InputRemoting; }
 
-#define UNITYENGINE_INPUTSYSTEM_INPUTREMOTING_REMOVEDEVICEMSG_CREATE_OFFSET UNITYSDK_OFFSET(0x1AB0C880)
-#define UNITYENGINE_INPUTSYSTEM_INPUTREMOTING_REMOVEDEVICEMSG_PROCESS_OFFSET UNITYSDK_OFFSET(0x1AB0C8D0)
+#define UNITYENGINE_INPUTSYSTEM_INPUTREMOTING_REMOVEDEVICEMSG_CREATE_OFFSET UNITYSDK_OFFSET(0x1B154430)
+#define UNITYENGINE_INPUTSYSTEM_INPUTREMOTING_REMOVEDEVICEMSG_PROCESS_OFFSET UNITYSDK_OFFSET(0x1B154480)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputRemoting_RemoveDeviceMsg_TypeDefinitionIndex = 27547;
+	inline static constexpr unsigned int InputRemoting_RemoveDeviceMsg_TypeDefinitionIndex = 28487;
 
 	class InputRemoting_RemoveDeviceMsg : public ::System::Object
 	{

@@ -8,11 +8,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGBATTLEPHOTOACTIVITY__CTOR_OFFSET UNITYSDK_OFFSET(0x84A1D90)
+#define MOLEMOLE_CONFIG_CONFIGBATTLEPHOTOACTIVITY__CTOR_OFFSET UNITYSDK_OFFSET(0x94F9B50)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigBattlePhotoActivity_TypeDefinitionIndex = 59166;
+	inline static constexpr unsigned int ConfigBattlePhotoActivity_TypeDefinitionIndex = 42336;
 
 	class ConfigBattlePhotoActivity : public ::Foundation::MihoyoSerializedScriptableObject
 	{

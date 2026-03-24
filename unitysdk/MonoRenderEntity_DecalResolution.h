@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int MonoRenderEntity_DecalResolution_TypeDefinitionIndex = 28111;
+inline static constexpr unsigned int MonoRenderEntity_DecalResolution_TypeDefinitionIndex = 29049;
 
 enum class MonoRenderEntity_DecalResolution : ::System::Int32
 {

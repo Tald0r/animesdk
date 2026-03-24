@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityWaterRewardWidgetController_ERewardType_TypeDefinitionIndex = 44388;
+	inline static constexpr unsigned int UIActivityWaterRewardWidgetController_ERewardType_TypeDefinitionIndex = 75600;
 
 	enum class UIActivityWaterRewardWidgetController_ERewardType : ::System::Int32
 	{
 		Accessory = 1,
-		Item = 0,
 		Skin = 2,
+		Item = 0,
 	};
 }

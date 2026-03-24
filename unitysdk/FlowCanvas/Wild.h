@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define FLOWCANVAS_WILD__CTOR_OFFSET UNITYSDK_OFFSET(0x19F52BB0)
+#define FLOWCANVAS_WILD__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5639C0)
 
 namespace FlowCanvas
 {
-	inline static constexpr unsigned int Wild_TypeDefinitionIndex = 26395;
+	inline static constexpr unsigned int Wild_TypeDefinitionIndex = 26814;
 
 	class Wild : public ::System::Object
 	{

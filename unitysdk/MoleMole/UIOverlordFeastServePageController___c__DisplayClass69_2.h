@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class RectTransform; }
 
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS69_2__CTOR_OFFSET UNITYSDK_OFFSET(0xB252800)
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS69_2__ONNUMCHANGE_B__2_OFFSET UNITYSDK_OFFSET(0xB252810)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS69_2__CTOR_OFFSET UNITYSDK_OFFSET(0x74875C0)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS69_2__ONNUMCHANGE_B__2_OFFSET UNITYSDK_OFFSET(0x74875D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass69_2_TypeDefinitionIndex = 78936;
+	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass69_2_TypeDefinitionIndex = 47737;
 
 	class UIOverlordFeastServePageController___c__DisplayClass69_2 : public ::System::Object
 	{

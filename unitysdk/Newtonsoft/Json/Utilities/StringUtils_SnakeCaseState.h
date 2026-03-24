@@ -3,7 +3,7 @@
 
 namespace Newtonsoft::Json::Utilities
 {
-	inline static constexpr unsigned int StringUtils_SnakeCaseState_TypeDefinitionIndex = 6952;
+	inline static constexpr unsigned int StringUtils_SnakeCaseState_TypeDefinitionIndex = 6956;
 
 	enum class StringUtils_SnakeCaseState : ::System::Int32
 	{

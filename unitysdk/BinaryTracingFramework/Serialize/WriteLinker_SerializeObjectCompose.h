@@ -5,11 +5,11 @@
 namespace BinaryTracingFramework::Serialize { class ISerializableObject; }
 namespace System { template <typename T> class Action_1; }
 
-#define BINARYTRACINGFRAMEWORK_SERIALIZE_WRITELINKER_SERIALIZEOBJECTCOMPOSE_COMPLETE_OFFSET UNITYSDK_OFFSET(0x95C440)
+#define BINARYTRACINGFRAMEWORK_SERIALIZE_WRITELINKER_SERIALIZEOBJECTCOMPOSE_COMPLETE_OFFSET UNITYSDK_OFFSET(0x98EF80)
 
 namespace BinaryTracingFramework::Serialize
 {
-	inline static constexpr unsigned int WriteLinker_SerializeObjectCompose_TypeDefinitionIndex = 30956;
+	inline static constexpr unsigned int WriteLinker_SerializeObjectCompose_TypeDefinitionIndex = 31908;
 
 	struct alignas(8) WriteLinker_SerializeObjectCompose
 	{

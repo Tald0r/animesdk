@@ -8,20 +8,20 @@ namespace MoleMole { class MonoImageRate; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_6EF46B4BE03754EE_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x68099E0)
-#define CLASS_2_6EF46B4BE03754EE_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6809A90)
-#define CLASS_2_6EF46B4BE03754EE_METHOD_2_ECD1B788BD780B17_OFFSET UNITYSDK_OFFSET(0x6809840)
-#define CLASS_2_6EF46B4BE03754EE__CTOR_OFFSET UNITYSDK_OFFSET(0x6809A80)
+#define CLASS_2_6EF46B4BE03754EE_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x935D440)
+#define CLASS_2_6EF46B4BE03754EE_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x935D4F0)
+#define CLASS_2_6EF46B4BE03754EE_METHOD_2_ECD1B788BD780B17_OFFSET UNITYSDK_OFFSET(0x935D2A0)
+#define CLASS_2_6EF46B4BE03754EE__CTOR_OFFSET UNITYSDK_OFFSET(0x935D4E0)
 
-inline static constexpr unsigned int Class_2_6EF46B4BE03754EE_TypeDefinitionIndex = 53337;
+inline static constexpr unsigned int Class_2_6EF46B4BE03754EE_TypeDefinitionIndex = 55320;
 
 class Class_2_6EF46B4BE03754EE : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x20
-	::MoleMole::MonoImageRate* Field_2_1; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x28
+	::MoleMole::MonoImageRate* Field_2_1; // 0x30
 
 	::System::Void _ctor()
 	{

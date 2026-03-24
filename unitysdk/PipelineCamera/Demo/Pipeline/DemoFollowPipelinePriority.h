@@ -3,7 +3,7 @@
 
 namespace PipelineCamera::Demo::Pipeline
 {
-	inline static constexpr unsigned int DemoFollowPipelinePriority_TypeDefinitionIndex = 34609;
+	inline static constexpr unsigned int DemoFollowPipelinePriority_TypeDefinitionIndex = 35611;
 
 	enum class DemoFollowPipelinePriority : ::System::Int32
 	{

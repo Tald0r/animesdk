@@ -5,15 +5,15 @@
 namespace MoleMole::Config { class ConfigPageCamera; }
 namespace MoleMole::Config { class ConfigUICameraStretch; }
 
-#define CLASS_1_1A7CB0711D16001A__CTOR_OFFSET UNITYSDK_OFFSET(0xBB384A0)
+#define CLASS_1_1A7CB0711D16001A__CTOR_OFFSET UNITYSDK_OFFSET(0x6F7A410)
 
-inline static constexpr unsigned int Class_1_1A7CB0711D16001A_TypeDefinitionIndex = 70591;
+inline static constexpr unsigned int Class_1_1A7CB0711D16001A_TypeDefinitionIndex = 57054;
 
 class Class_1_1A7CB0711D16001A : public ::System::Object
 {
 public:
-	::MoleMole::Config::ConfigUICameraStretch* Field_1_1; // 0x10
-	::MoleMole::Config::ConfigPageCamera* Field_1_0; // 0x18
+	::MoleMole::Config::ConfigPageCamera* Field_1_0; // 0x10
+	::MoleMole::Config::ConfigUICameraStretch* Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

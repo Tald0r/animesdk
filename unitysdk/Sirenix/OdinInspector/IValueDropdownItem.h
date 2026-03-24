@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int IValueDropdownItem_TypeDefinitionIndex = 7244;
+	inline static constexpr unsigned int IValueDropdownItem_TypeDefinitionIndex = 7249;
 
 	class IValueDropdownItem
 	{

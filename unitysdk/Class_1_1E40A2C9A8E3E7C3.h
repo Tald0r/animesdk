@@ -7,40 +7,25 @@ class Class_1_18149FBAC001C9F0;
 namespace MoleMole { class MonthCardDayReward; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_02A3D10A9D535169_OFFSET UNITYSDK_OFFSET(0x90A1CC0)
-#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_37D03196148AC5A0_OFFSET UNITYSDK_OFFSET(0x90A1CE0)
-#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_7786DC814C2FC3BE_OFFSET UNITYSDK_OFFSET(0x90A1CD0)
-#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_96BA415EF844E765_OFFSET UNITYSDK_OFFSET(0x90A1CF0)
-#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_F954DDAED4D01AF1_OFFSET UNITYSDK_OFFSET(0x90A1460)
-#define CLASS_1_1E40A2C9A8E3E7C3__CTOR_OFFSET UNITYSDK_OFFSET(0x90A0FC0)
+#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_02A3D10A9D535169_OFFSET UNITYSDK_OFFSET(0x76B1540)
+#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_37D03196148AC5A0_OFFSET UNITYSDK_OFFSET(0x76B1510)
+#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_7786DC814C2FC3BE_OFFSET UNITYSDK_OFFSET(0x76B1530)
+#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_96BA415EF844E765_OFFSET UNITYSDK_OFFSET(0x76B1520)
+#define CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_F954DDAED4D01AF1_OFFSET UNITYSDK_OFFSET(0x76B0CB0)
+#define CLASS_1_1E40A2C9A8E3E7C3__CTOR_OFFSET UNITYSDK_OFFSET(0x76B0810)
 
-inline static constexpr unsigned int Class_1_1E40A2C9A8E3E7C3_TypeDefinitionIndex = 38099;
+inline static constexpr unsigned int Class_1_1E40A2C9A8E3E7C3_TypeDefinitionIndex = 58118;
 
 class Class_1_1E40A2C9A8E3E7C3 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::MoleMole::MonthCardDayReward*>* Field_1_0; // 0x10
-	::System::Collections::Generic::List_1<::Class_1_18149FBAC001C9F0*>* Field_1_1; // 0x18
+	::System::Collections::Generic::List_1<::Class_1_18149FBAC001C9F0*>* Field_1_1; // 0x10
+	::System::Collections::Generic::List_1<::MoleMole::MonthCardDayReward*>* Field_1_0; // 0x18
 	::System::UInt32 Field_1_2; // 0x20
 
 	::System::Void _ctor(::System::DateTime a1, ::System::Collections::Generic::List_1<::Class_1_18149FBAC001C9F0*>* a2, ::System::UInt32 a3)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::DateTime, ::System::Collections::Generic::List_1<::Class_1_18149FBAC001C9F0*>*, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3__CTOR_OFFSET))(this, a1, a2, a3);
-	}
-
-	::System::Void Method_1_F954DDAED4D01AF1(::System::DateTime a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_F954DDAED4D01AF1_OFFSET))(this, a1);
-	}
-
-	::System::UInt32 Method_1_02A3D10A9D535169()
-	{
-		return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_02A3D10A9D535169_OFFSET))(this);
-	}
-
-	::System::Void Method_1_7786DC814C2FC3BE(::System::UInt32 a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_7786DC814C2FC3BE_OFFSET))(this, a1);
 	}
 
 	::System::Void Method_1_37D03196148AC5A0(::System::Collections::Generic::List_1<::MoleMole::MonthCardDayReward*>* a1)
@@ -51,5 +36,20 @@ public:
 	::System::Collections::Generic::List_1<::MoleMole::MonthCardDayReward*>* Method_1_96BA415EF844E765()
 	{
 		return ((::System::Collections::Generic::List_1<::MoleMole::MonthCardDayReward*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_96BA415EF844E765_OFFSET))(this);
+	}
+
+	::System::Void Method_1_7786DC814C2FC3BE(::System::UInt32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_7786DC814C2FC3BE_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_1_F954DDAED4D01AF1(::System::DateTime a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::DateTime))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_F954DDAED4D01AF1_OFFSET))(this, a1);
+	}
+
+	::System::UInt32 Method_1_02A3D10A9D535169()
+	{
+		return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1E40A2C9A8E3E7C3_METHOD_1_02A3D10A9D535169_OFFSET))(this);
 	}
 };

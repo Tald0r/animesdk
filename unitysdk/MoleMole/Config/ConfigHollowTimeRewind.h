@@ -7,11 +7,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWTIMEREWIND__CTOR_OFFSET UNITYSDK_OFFSET(0x89FD690)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWTIMEREWIND__CTOR_OFFSET UNITYSDK_OFFSET(0x10A962F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowTimeRewind_TypeDefinitionIndex = 56054;
+	inline static constexpr unsigned int ConfigHollowTimeRewind_TypeDefinitionIndex = 56218;
 
 	class ConfigHollowTimeRewind : public ::Foundation::MihoyoSerializedScriptableObject
 	{

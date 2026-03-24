@@ -7,24 +7,24 @@ class Class_4_E2880458FFC7DD8C;
 namespace BehaviorDesigner::Runtime { class SharedFloat; }
 namespace MoleMole { class SharedGameEntity; }
 
-#define MOLEMOLE_SETALERTVALUE_ONRESET_OFFSET UNITYSDK_OFFSET(0xA49D450)
-#define MOLEMOLE_SETALERTVALUE_ONSTART_OFFSET UNITYSDK_OFFSET(0xA49D210)
-#define MOLEMOLE_SETALERTVALUE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA49D380)
-#define MOLEMOLE_SETALERTVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0xA49D4C0)
-#define MOLEMOLE_SETALERTVALUE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0xA49D500)
-#define MOLEMOLE_SETALERTVALUE___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0xA49D590)
-#define MOLEMOLE_SETALERTVALUE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA49D620)
+#define MOLEMOLE_SETALERTVALUE_ONRESET_OFFSET UNITYSDK_OFFSET(0x7AA0AA0)
+#define MOLEMOLE_SETALERTVALUE_ONSTART_OFFSET UNITYSDK_OFFSET(0x7AA0860)
+#define MOLEMOLE_SETALERTVALUE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7AA09D0)
+#define MOLEMOLE_SETALERTVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x7AA0B10)
+#define MOLEMOLE_SETALERTVALUE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x7AA0B50)
+#define MOLEMOLE_SETALERTVALUE___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0x7AA0BE0)
+#define MOLEMOLE_SETALERTVALUE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7AA0C70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SetAlertValue_TypeDefinitionIndex = 77233;
+	inline static constexpr unsigned int SetAlertValue_TypeDefinitionIndex = 80965;
 
 	class SetAlertValue : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedFloat* TargetSharedValue; // 0x58
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x60
-		::Class_4_E2880458FFC7DD8C* _enterBattleComponent; // 0x68
+		::Class_4_E2880458FFC7DD8C* _enterBattleComponent; // 0x58
+		::BehaviorDesigner::Runtime::SharedFloat* TargetSharedValue; // 0x60
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x68
 
 		::System::Void _ctor()
 		{

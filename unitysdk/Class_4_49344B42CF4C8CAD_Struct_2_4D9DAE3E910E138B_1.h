@@ -5,7 +5,7 @@
 
 namespace UnityEngine { class Texture; }
 
-inline static constexpr unsigned int Class_4_49344B42CF4C8CAD_Struct_2_4D9DAE3E910E138B_1_TypeDefinitionIndex = 63859;
+inline static constexpr unsigned int Class_4_49344B42CF4C8CAD_Struct_2_4D9DAE3E910E138B_1_TypeDefinitionIndex = 80121;
 
 struct alignas(8) Class_4_49344B42CF4C8CAD_Struct_2_4D9DAE3E910E138B_1
 {

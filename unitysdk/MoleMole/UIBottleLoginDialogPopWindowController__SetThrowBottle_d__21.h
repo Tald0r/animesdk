@@ -8,20 +8,20 @@
 namespace MoleMole { class UIBottleLoginDialogPopWindowController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIBOTTLELOGINDIALOGPOPWINDOWCONTROLLER__SETTHROWBOTTLE_D__21_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x397000)
-#define MOLEMOLE_UIBOTTLELOGINDIALOGPOPWINDOWCONTROLLER__SETTHROWBOTTLE_D__21_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2C7C30)
+#define MOLEMOLE_UIBOTTLELOGINDIALOGPOPWINDOWCONTROLLER__SETTHROWBOTTLE_D__21_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A1CB0)
+#define MOLEMOLE_UIBOTTLELOGINDIALOGPOPWINDOWCONTROLLER__SETTHROWBOTTLE_D__21_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2EA620)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBottleLoginDialogPopWindowController__SetThrowBottle_d__21_TypeDefinitionIndex = 64928;
+	inline static constexpr unsigned int UIBottleLoginDialogPopWindowController__SetThrowBottle_d__21_TypeDefinitionIndex = 41657;
 
 	struct alignas(8) UIBottleLoginDialogPopWindowController__SetThrowBottle_d__21
 	{
 		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x30
-		::MoleMole::UIBottleLoginDialogPopWindowController* __4__this; // 0x40
-		::System::Int32 __1__state; // 0x48
-		::System::Int32 itemID; // 0x4C
+		::MoleMole::UIBottleLoginDialogPopWindowController* __4__this; // 0x30
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x38
+		::System::Int32 itemID; // 0x48
+		::System::Int32 __1__state; // 0x4C
 
 		::System::Void MoveNext()
 		{

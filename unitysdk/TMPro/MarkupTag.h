@@ -3,7 +3,7 @@
 
 namespace TMPro
 {
-	inline static constexpr unsigned int MarkupTag_TypeDefinitionIndex = 35991;
+	inline static constexpr unsigned int MarkupTag_TypeDefinitionIndex = 37011;
 
 	enum class MarkupTag : ::System::Int32
 	{

@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIBaseController; }
 
-#define MOLEMOLE_UINEWBIECONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x945E810)
+#define MOLEMOLE_UINEWBIECONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA426580)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UINewbieControllerContext_TypeDefinitionIndex = 78333;
+	inline static constexpr unsigned int UINewbieControllerContext_TypeDefinitionIndex = 52680;
 
 	class UINewbieControllerContext : public ::MoleMole::UIControllerContextBase
 	{

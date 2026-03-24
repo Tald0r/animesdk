@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SkinQuality_TypeDefinitionIndex = 5233;
+	inline static constexpr unsigned int SkinQuality_TypeDefinitionIndex = 5234;
 
 	enum class SkinQuality : ::System::Int32
 	{

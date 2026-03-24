@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class LanguageFontSizeAdaptive; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGUIFONTSIZE__CTOR_OFFSET UNITYSDK_OFFSET(0xCCA0D40)
+#define MOLEMOLE_CONFIG_CONFIGUIFONTSIZE__CTOR_OFFSET UNITYSDK_OFFSET(0xACCFAF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIFontSize_TypeDefinitionIndex = 62206;
+	inline static constexpr unsigned int ConfigUIFontSize_TypeDefinitionIndex = 70881;
 
 	class ConfigUIFontSize : public ::Foundation::MihoyoSerializedScriptableObject
 	{

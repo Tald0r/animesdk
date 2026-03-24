@@ -6,34 +6,34 @@
 namespace System { template <typename T1, typename T2> class Action_2; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8022CE0)
-#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8022D20)
-#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__PRELOADBATTLEREGIONDOORASSET_B__2_0_OFFSET UNITYSDK_OFFSET(0x8022D30)
-#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__PRELOADBATTLEREGIONDOORASSET_B__2_1_OFFSET UNITYSDK_OFFSET(0x8022DA0)
-#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__PRELOADBATTLEREGIONDOORASSET_B__2_2_OFFSET UNITYSDK_OFFSET(0x8022E10)
+#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9CD6B90)
+#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9CD6BD0)
+#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__PRELOADBATTLEREGIONDOORASSET_B__2_0_OFFSET UNITYSDK_OFFSET(0x9CD6BE0)
+#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__PRELOADBATTLEREGIONDOORASSET_B__2_1_OFFSET UNITYSDK_OFFSET(0x9CD6C50)
+#define MOLEMOLE_BATTLEREGIONSUBSYSTEM___C__PRELOADBATTLEREGIONDOORASSET_B__2_2_OFFSET UNITYSDK_OFFSET(0x9CD6CC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BattleRegionSubsystem___c_TypeDefinitionIndex = 50008;
+	inline static constexpr unsigned int BattleRegionSubsystem___c_TypeDefinitionIndex = 45467;
 
 	class BattleRegionSubsystem___c : public ::System::Object
 	{
 	public:
+		static ::MoleMole::BattleRegionSubsystem___c** StaticGet___9()
+		{
+			return (::MoleMole::BattleRegionSubsystem___c**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x3ADB0);
+		}
 		static ::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>** StaticGet___9__2_2()
 		{
-			return (::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x381A0);
+			return (::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x3ADB8);
 		}
 		static ::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>** StaticGet___9__2_0()
 		{
-			return (::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x381A8);
-		}
-		static ::MoleMole::BattleRegionSubsystem___c** StaticGet___9()
-		{
-			return (::MoleMole::BattleRegionSubsystem___c**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x381B0);
+			return (::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x3ADC0);
 		}
 		static ::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>** StaticGet___9__2_1()
 		{
-			return (::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x381B8);
+			return (::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(BattleRegionSubsystem___c_TypeDefinitionIndex)->GetStaticField(0x3ADC8);
 		}
 
 		static ::System::Void _cctor()

@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETAREAUI_INVOKE_OFFSET UNITYSDK_OFFSET(0xE474080)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETAREAUI__CTOR_OFFSET UNITYSDK_OFFSET(0xE474300)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETAREAUI_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FC040)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETAREAUI__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FC2C0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDDestroyTargetAreaUI_TypeDefinitionIndex = 44405;
+	inline static constexpr unsigned int LDDestroyTargetAreaUI_TypeDefinitionIndex = 47059;
 
 	class LDDestroyTargetAreaUI : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::System::Boolean, ::System::Collections::Generic::List_1<::System::String*>*>
 	{

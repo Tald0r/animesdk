@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace UnityEngine::InputSystem::XR
 {
-	inline static constexpr unsigned int XRUtilities_TypeDefinitionIndex = 27608;
+	inline static constexpr unsigned int XRUtilities_TypeDefinitionIndex = 28548;
 
 	class XRUtilities : public ::System::Object
 	{

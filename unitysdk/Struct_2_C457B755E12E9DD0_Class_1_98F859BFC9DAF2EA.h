@@ -8,17 +8,17 @@ namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define STRUCT_2_C457B755E12E9DD0_CLASS_1_98F859BFC9DAF2EA_METHOD_1_50AA22E7AB14BB60_OFFSET UNITYSDK_OFFSET(0x7470A90)
-#define STRUCT_2_C457B755E12E9DD0_CLASS_1_98F859BFC9DAF2EA__CTOR_OFFSET UNITYSDK_OFFSET(0x7470A80)
+#define STRUCT_2_C457B755E12E9DD0_CLASS_1_98F859BFC9DAF2EA_METHOD_1_50AA22E7AB14BB60_OFFSET UNITYSDK_OFFSET(0x6FD55F0)
+#define STRUCT_2_C457B755E12E9DD0_CLASS_1_98F859BFC9DAF2EA__CTOR_OFFSET UNITYSDK_OFFSET(0x6FD55E0)
 
-inline static constexpr unsigned int Struct_2_C457B755E12E9DD0_Class_1_98F859BFC9DAF2EA_TypeDefinitionIndex = 74034;
+inline static constexpr unsigned int Struct_2_C457B755E12E9DD0_Class_1_98F859BFC9DAF2EA_TypeDefinitionIndex = 53250;
 
 class Struct_2_C457B755E12E9DD0_Class_1_98F859BFC9DAF2EA : public ::System::Object
 {
 public:
 	::Class_2_125A8668F94B4EAE* Field_1_0; // 0x10
-	::Foundation::Variable_1<::System::UInt32> Field_1_1; // 0x18
-	::System::Collections::Generic::List_1<::System::String*>* Field_1_3; // 0x30
+	::System::Collections::Generic::List_1<::System::String*>* Field_1_3; // 0x18
+	::Foundation::Variable_1<::System::UInt32> Field_1_1; // 0x20
 	::System::UInt64 Field_1_2; // 0x38
 
 	::System::Void _ctor()

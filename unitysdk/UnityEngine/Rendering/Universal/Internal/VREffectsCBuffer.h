@@ -6,7 +6,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int VREffectsCBuffer_TypeDefinitionIndex = 28924;
+	inline static constexpr unsigned int VREffectsCBuffer_TypeDefinitionIndex = 29875;
 
 	struct alignas(4) VREffectsCBuffer
 	{

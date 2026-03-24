@@ -5,11 +5,11 @@
 namespace MoleMole { class UICoopTeamNameRowWidgetController_Context; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UICOOPTEAM3DMODELCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA26EBE0)
+#define MOLEMOLE_UICOOPTEAM3DMODELCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x90F4BD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopTeam3DModelController_Context_TypeDefinitionIndex = 41718;
+	inline static constexpr unsigned int UICoopTeam3DModelController_Context_TypeDefinitionIndex = 70486;
 
 	class UICoopTeam3DModelController_Context : public ::MoleMole::UIControllerContextBase
 	{

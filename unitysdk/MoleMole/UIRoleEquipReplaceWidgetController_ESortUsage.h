@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleEquipReplaceWidgetController_ESortUsage_TypeDefinitionIndex = 70975;
+	inline static constexpr unsigned int UIRoleEquipReplaceWidgetController_ESortUsage_TypeDefinitionIndex = 57490;
 
 	enum class UIRoleEquipReplaceWidgetController_ESortUsage : ::System::Int32
 	{

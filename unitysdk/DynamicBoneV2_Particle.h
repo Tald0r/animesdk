@@ -6,30 +6,30 @@
 
 namespace UnityEngine { class Transform; }
 
-#define DYNAMICBONEV2_PARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB6E290)
+#define DYNAMICBONEV2_PARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B17B390)
 
-inline static constexpr unsigned int DynamicBoneV2_Particle_TypeDefinitionIndex = 31589;
+inline static constexpr unsigned int DynamicBoneV2_Particle_TypeDefinitionIndex = 32543;
 
 class DynamicBoneV2_Particle : public ::System::Object
 {
 public:
 	::UnityEngine::Transform* m_Transform; // 0x10
-	::System::Single m_Inert; // 0x18
-	::UnityEngine::Vector3 m_Position; // 0x1C
-	::UnityEngine::Vector3 m_animPosition; // 0x28
-	::System::Single m_BoneLength; // 0x34
-	::System::Single m_Elasticity; // 0x38
-	::System::Single m_Stiffness; // 0x3C
-	::UnityEngine::Vector3 m_InitLocalPosition; // 0x40
-	::System::Int32 m_ParentIndex; // 0x4C
-	::System::Boolean m_isCollide; // 0x50
-	::System::Single m_Friction; // 0x54
-	::UnityEngine::Quaternion m_InitLocalRotation; // 0x58
-	::System::Single m_Radius; // 0x68
-	::System::Single m_Damping; // 0x6C
-	::UnityEngine::Vector3 m_PrevPosition; // 0x70
-	::UnityEngine::Vector3 m_EndOffset; // 0x7C
-	::UnityEngine::Quaternion m_animRotation; // 0x88
+	::UnityEngine::Quaternion m_animRotation; // 0x18
+	::System::Single m_Elasticity; // 0x28
+	::UnityEngine::Vector3 m_animPosition; // 0x2C
+	::System::Single m_Damping; // 0x38
+	::UnityEngine::Quaternion m_InitLocalRotation; // 0x3C
+	::UnityEngine::Vector3 m_PrevPosition; // 0x4C
+	::UnityEngine::Vector3 m_Position; // 0x58
+	::System::Single m_Stiffness; // 0x64
+	::System::Single m_Friction; // 0x68
+	::UnityEngine::Vector3 m_InitLocalPosition; // 0x6C
+	::UnityEngine::Vector3 m_EndOffset; // 0x78
+	::System::Int32 m_ParentIndex; // 0x84
+	::System::Boolean m_isCollide; // 0x88
+	::System::Single m_Radius; // 0x8C
+	::System::Single m_BoneLength; // 0x90
+	::System::Single m_Inert; // 0x94
 
 	::System::Void _ctor()
 	{

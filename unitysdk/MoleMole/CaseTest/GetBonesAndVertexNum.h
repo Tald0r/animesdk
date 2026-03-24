@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_CASETEST_GETBONESANDVERTEXNUM_START_OFFSET UNITYSDK_OFFSET(0x9B45C80)
-#define MOLEMOLE_CASETEST_GETBONESANDVERTEXNUM__CTOR_OFFSET UNITYSDK_OFFSET(0x9B462D0)
+#define MOLEMOLE_CASETEST_GETBONESANDVERTEXNUM_START_OFFSET UNITYSDK_OFFSET(0xB454FF0)
+#define MOLEMOLE_CASETEST_GETBONESANDVERTEXNUM__CTOR_OFFSET UNITYSDK_OFFSET(0xB455640)
 
 namespace MoleMole::CaseTest
 {
-	inline static constexpr unsigned int GetBonesAndVertexNum_TypeDefinitionIndex = 68597;
+	inline static constexpr unsigned int GetBonesAndVertexNum_TypeDefinitionIndex = 62040;
 
 	class GetBonesAndVertexNum : public ::UnityEngine::MonoBehaviour
 	{

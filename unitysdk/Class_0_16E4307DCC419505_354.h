@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
+#include "unitysdk/System/Threading/CancellationToken.h"
 
-class Class_3_DEF6B8E2ED2D1FB3_4;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_354_TypeDefinitionIndex = 75306;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_354_TypeDefinitionIndex = 43525;
-
+template <typename TPersistent, typename TTemporary>
 class Class_0_16E4307DCC419505_354
 {
 public:

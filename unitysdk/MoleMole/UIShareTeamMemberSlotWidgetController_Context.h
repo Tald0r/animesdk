@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_3_5B0D01C92C1E671E_2;
-class Class_3_C3F0E3B5AB5977AE_25;
+class Class_3_5B0D01C92C1E671E_13;
+class Class_3_C3F0E3B5AB5977AE_11;
 
-#define MOLEMOLE_UISHARETEAMMEMBERSLOTWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA3FE8E0)
+#define MOLEMOLE_UISHARETEAMMEMBERSLOTWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x96FB6B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShareTeamMemberSlotWidgetController_Context_TypeDefinitionIndex = 77170;
+	inline static constexpr unsigned int UIShareTeamMemberSlotWidgetController_Context_TypeDefinitionIndex = 79515;
 
 	class UIShareTeamMemberSlotWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_3_C3F0E3B5AB5977AE_25* Avatar; // 0x28
-		::Class_3_5B0D01C92C1E671E_2* Buddy; // 0x30
+		::Class_3_5B0D01C92C1E671E_13* Buddy; // 0x28
+		::Class_3_C3F0E3B5AB5977AE_11* Avatar; // 0x30
 		::System::Boolean IsAvatar; // 0x38
 		::System::Boolean IsEmpty; // 0x39
 

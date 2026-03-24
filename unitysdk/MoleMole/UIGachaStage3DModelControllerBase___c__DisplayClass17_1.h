@@ -6,18 +6,18 @@
 namespace MoleMole { class UIGachaStage3DModelControllerBase___c__DisplayClass17_0; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS17_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBF7AD60)
-#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS17_1__PRELOADITEMSTAGE_B__0_OFFSET UNITYSDK_OFFSET(0xBF7AD70)
+#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS17_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB2B1AF0)
+#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS17_1__PRELOADITEMSTAGE_B__0_OFFSET UNITYSDK_OFFSET(0xB2B1B00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaStage3DModelControllerBase___c__DisplayClass17_1_TypeDefinitionIndex = 60227;
+	inline static constexpr unsigned int UIGachaStage3DModelControllerBase___c__DisplayClass17_1_TypeDefinitionIndex = 45129;
 
 	class UIGachaStage3DModelControllerBase___c__DisplayClass17_1 : public ::System::Object
 	{
 	public:
-		::Foundation::AssetPath assetPath; // 0x10
-		::MoleMole::UIGachaStage3DModelControllerBase___c__DisplayClass17_0* CS___8__locals1; // 0x20
+		::MoleMole::UIGachaStage3DModelControllerBase___c__DisplayClass17_0* CS___8__locals1; // 0x10
+		::Foundation::AssetPath assetPath; // 0x18
 
 		::System::Void _ctor()
 		{

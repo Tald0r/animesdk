@@ -6,19 +6,19 @@ class Class_2_7109EE9F6F5F9F64;
 namespace MoleMole::HollowChessboard { class HollowEntity; }
 namespace MoleMole::HollowChessboard { class HollowRenderSequenceConfig; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWCHESSBOARDUVSTACKANIMATIONBEHAVIOR_INITFORMCONFIG_OFFSET UNITYSDK_OFFSET(0x8B16890)
-#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWCHESSBOARDUVSTACKANIMATIONBEHAVIOR_MOLEMOLE_HOLLOWCHESSBOARD_ICONFIGHOLLOWCHESSBOARDBEHAVIOR_INITFORMCONFIG_OFFSET UNITYSDK_OFFSET(0x8B16BA0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWCHESSBOARDUVSTACKANIMATIONBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0x8B16B90)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWCHESSBOARDUVSTACKANIMATIONBEHAVIOR_INITFORMCONFIG_OFFSET UNITYSDK_OFFSET(0xB19B730)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWCHESSBOARDUVSTACKANIMATIONBEHAVIOR_MOLEMOLE_HOLLOWCHESSBOARD_ICONFIGHOLLOWCHESSBOARDBEHAVIOR_INITFORMCONFIG_OFFSET UNITYSDK_OFFSET(0xB19BA40)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWCHESSBOARDUVSTACKANIMATIONBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0xB19BA30)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int ConfigHollowChessboardUvStackAnimationBehavior_TypeDefinitionIndex = 68237;
+	inline static constexpr unsigned int ConfigHollowChessboardUvStackAnimationBehavior_TypeDefinitionIndex = 51160;
 
 	class ConfigHollowChessboardUvStackAnimationBehavior : public ::System::Object
 	{
 	public:
-		::MoleMole::HollowChessboard::HollowRenderSequenceConfig* SequenceInConfig; // 0x10
-		::MoleMole::HollowChessboard::HollowRenderSequenceConfig* SequenceOutConfig; // 0x18
+		::MoleMole::HollowChessboard::HollowRenderSequenceConfig* SequenceOutConfig; // 0x10
+		::MoleMole::HollowChessboard::HollowRenderSequenceConfig* SequenceInConfig; // 0x18
 
 		::System::Void _ctor()
 		{

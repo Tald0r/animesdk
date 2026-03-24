@@ -3,15 +3,15 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AnimStatic_DieWay_TypeDefinitionIndex = 45438;
+	inline static constexpr unsigned int AnimStatic_DieWay_TypeDefinitionIndex = 70688;
 
 	enum class AnimStatic_DieWay : ::System::Int32
 	{
-		DieHitFlyFront = 2,
 		DieHitThrow = 1,
-		DieHitFlyBack = 3,
+		DieHitDown = 4,
 		Count = 5,
 		DieGround = 0,
-		DieHitDown = 4,
+		DieHitFlyFront = 2,
+		DieHitFlyBack = 3,
 	};
 }

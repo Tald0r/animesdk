@@ -12,26 +12,26 @@ namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_C263A752C471DD3C_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x62D9890)
-#define CLASS_2_C263A752C471DD3C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x62D9960)
-#define CLASS_2_C263A752C471DD3C_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x62D9600)
-#define CLASS_2_C263A752C471DD3C__CTOR_OFFSET UNITYSDK_OFFSET(0x62D9950)
+#define CLASS_2_C263A752C471DD3C_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xA406000)
+#define CLASS_2_C263A752C471DD3C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA4060D0)
+#define CLASS_2_C263A752C471DD3C_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0xA405D70)
+#define CLASS_2_C263A752C471DD3C__CTOR_OFFSET UNITYSDK_OFFSET(0xA4060C0)
 
-inline static constexpr unsigned int Class_2_C263A752C471DD3C_TypeDefinitionIndex = 40240;
+inline static constexpr unsigned int Class_2_C263A752C471DD3C_TypeDefinitionIndex = 66329;
 
 class Class_2_C263A752C471DD3C : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_3; // 0x18
-	::UnityEngine::Animator* Field_2_1; // 0x20
-	::UnityEngine::CanvasGroup* Field_2_4; // 0x28
-	::Class_2_9E3E3CDA608A4F58* Field_2_5; // 0x30
-	::Class_2_9E3E3CDA608A4F58* Field_2_9; // 0x38
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x40
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x48
-	::UnityEngine::Transform* Field_2_2; // 0x50
-	::UnityEngine::RectTransform* Field_2_8; // 0x58
-	::UnityEngine::RectTransform* Field_2_6; // 0x60
+	::Class_2_9E3E3CDA608A4F58* Field_2_5; // 0x18
+	::UnityEngine::Transform* Field_2_2; // 0x20
+	::UnityEngine::Animator* Field_2_1; // 0x28
+	::UnityEngine::CanvasGroup* Field_2_4; // 0x30
+	::UnityEngine::RectTransform* Field_2_8; // 0x38
+	::UnityEngine::RectTransform* Field_2_6; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x48
+	::UnityEngine::RectTransform* Field_2_3; // 0x50
+	::Class_2_9E3E3CDA608A4F58* Field_2_9; // 0x58
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x60
 
 	::System::Void _ctor()
 	{

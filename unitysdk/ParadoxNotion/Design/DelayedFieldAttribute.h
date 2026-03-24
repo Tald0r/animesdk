@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/ParadoxNotion/Design/DrawerAttribute.h"
 
-#define PARADOXNOTION_DESIGN_DELAYEDFIELDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19A0D430)
+#define PARADOXNOTION_DESIGN_DELAYEDFIELDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19FFD410)
 
 namespace ParadoxNotion::Design
 {
-	inline static constexpr unsigned int DelayedFieldAttribute_TypeDefinitionIndex = 26725;
+	inline static constexpr unsigned int DelayedFieldAttribute_TypeDefinitionIndex = 26293;
 
 	class DelayedFieldAttribute : public ::ParadoxNotion::Design::DrawerAttribute
 	{

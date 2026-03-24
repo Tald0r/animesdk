@@ -4,12 +4,12 @@
 
 namespace MoleMole::FlatBuffers::Config { class BangbooDefenseDataTemplate; }
 
-#define MOLEMOLE_FLOWCANVAS_LDREADBANGBOODEFENSEDATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xE472B00)
-#define MOLEMOLE_FLOWCANVAS_LDREADBANGBOODEFENSEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xE472C70)
+#define MOLEMOLE_FLOWCANVAS_LDREADBANGBOODEFENSEDATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FAAC0)
+#define MOLEMOLE_FLOWCANVAS_LDREADBANGBOODEFENSEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FAC30)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int LDReadBangbooDefenseData_TypeDefinitionIndex = 37176;
+	inline static constexpr unsigned int LDReadBangbooDefenseData_TypeDefinitionIndex = 68089;
 
 	class LDReadBangbooDefenseData : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::MoleMole::FlatBuffers::Config::BangbooDefenseDataTemplate*, ::System::Int32, ::System::Boolean>
 	{

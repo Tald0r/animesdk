@@ -8,33 +8,33 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Material; }
 
-#define ETHEREYEWIREMATSETUP_CLOSEVISION_OFFSET UNITYSDK_OFFSET(0xD77C5E0)
-#define ETHEREYEWIREMATSETUP_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xD77C850)
-#define ETHEREYEWIREMATSETUP_ONENABLE_OFFSET UNITYSDK_OFFSET(0xD77C1F0)
-#define ETHEREYEWIREMATSETUP_OPENVISION_OFFSET UNITYSDK_OFFSET(0xD77CB80)
-#define ETHEREYEWIREMATSETUP__CCTOR_OFFSET UNITYSDK_OFFSET(0xD77CE80)
-#define ETHEREYEWIREMATSETUP__CTOR_OFFSET UNITYSDK_OFFSET(0xD77CDC0)
+#define ETHEREYEWIREMATSETUP_CLOSEVISION_OFFSET UNITYSDK_OFFSET(0x8FAB760)
+#define ETHEREYEWIREMATSETUP_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x8FAB9D0)
+#define ETHEREYEWIREMATSETUP_ONENABLE_OFFSET UNITYSDK_OFFSET(0x8FAB370)
+#define ETHEREYEWIREMATSETUP_OPENVISION_OFFSET UNITYSDK_OFFSET(0x8FABD00)
+#define ETHEREYEWIREMATSETUP__CCTOR_OFFSET UNITYSDK_OFFSET(0x8FAC000)
+#define ETHEREYEWIREMATSETUP__CTOR_OFFSET UNITYSDK_OFFSET(0x8FABF40)
 
-inline static constexpr unsigned int EtherEyeWireMatSetup_TypeDefinitionIndex = 41972;
+inline static constexpr unsigned int EtherEyeWireMatSetup_TypeDefinitionIndex = 51274;
 
 class EtherEyeWireMatSetup : public ::UnityEngine::MonoBehaviour
 {
 public:
 	static ::System::Collections::Generic::List_1<::Foundation::AssetRequestHandle>** StaticGet_matHandles()
 	{
-		return (::System::Collections::Generic::List_1<::Foundation::AssetRequestHandle>**)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x29FD0);
+		return (::System::Collections::Generic::List_1<::Foundation::AssetRequestHandle>**)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x2BCB0);
 	}
 	static ::System::Collections::Generic::List_1<::UnityEngine::Material*>** StaticGet_pathMats()
 	{
-		return (::System::Collections::Generic::List_1<::UnityEngine::Material*>**)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x29FD8);
-	}
-	static ::System::Int32* StaticGet_pathCount()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x95D0);
+		return (::System::Collections::Generic::List_1<::UnityEngine::Material*>**)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x2BCB8);
 	}
 	static ::System::Boolean* StaticGet_pathMatLoaded()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x95D4);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x9A00);
+	}
+	static ::System::Int32* StaticGet_pathCount()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(EtherEyeWireMatSetup_TypeDefinitionIndex)->GetStaticField(0x9A04);
 	}
 	// static const ::System::String* configPath; // 0x0
 	::System::Int32 _AlphaSphereFadeOut; // 0x18

@@ -8,13 +8,13 @@ namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UILocalizationText___c__DisplayClass16_0_TypeDefinitionIndex = 60554;
+	inline static constexpr unsigned int UILocalizationText___c__DisplayClass16_0_TypeDefinitionIndex = 71654;
 
 	struct alignas(8) UILocalizationText___c__DisplayClass16_0
 	{
 		::UnityEngine::UI::Extension::UILocalizationText* __4__this; // 0x10
 		::System::Collections::Generic::IList_1<::UnityEngine::UICharInfo>* charInfos; // 0x18
-		::System::Boolean richMatch; // 0x20
-		::System::Int32 richStack; // 0x24
+		::System::Int32 richStack; // 0x20
+		::System::Boolean richMatch; // 0x24
 	};
 }

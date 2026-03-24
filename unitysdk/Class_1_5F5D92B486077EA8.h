@@ -6,10 +6,10 @@
 namespace System { class Random; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_5F5D92B486077EA8_METHOD_1_8FC5C096B5A46ED1_OFFSET UNITYSDK_OFFSET(0x7CCFA90)
-#define CLASS_1_5F5D92B486077EA8__CTOR_OFFSET UNITYSDK_OFFSET(0x7CCF9D0)
+#define CLASS_1_5F5D92B486077EA8_METHOD_1_8FC5C096B5A46ED1_OFFSET UNITYSDK_OFFSET(0x9B59B30)
+#define CLASS_1_5F5D92B486077EA8__CTOR_OFFSET UNITYSDK_OFFSET(0x9B59A70)
 
-inline static constexpr unsigned int Class_1_5F5D92B486077EA8_TypeDefinitionIndex = 48649;
+inline static constexpr unsigned int Class_1_5F5D92B486077EA8_TypeDefinitionIndex = 66643;
 
 class Class_1_5F5D92B486077EA8 : public ::System::Object
 {

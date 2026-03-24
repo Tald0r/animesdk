@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIVIRUSINFOROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8821270)
+#define MOLEMOLE_UIVIRUSINFOROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xABCE4A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVirusInfoRowWidgetController_Data_TypeDefinitionIndex = 77101;
+	inline static constexpr unsigned int UIVirusInfoRowWidgetController_Data_TypeDefinitionIndex = 52727;
 
 	class UIVirusInfoRowWidgetController_Data : public ::System::Object
 	{

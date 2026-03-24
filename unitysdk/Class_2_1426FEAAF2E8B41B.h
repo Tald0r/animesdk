@@ -1,14 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_59.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_77.h"
 #include "unitysdk/MoleMole/NAPInput/IMUData.h"
 
-#define CLASS_2_1426FEAAF2E8B41B_METHOD_2_0356C28B02D972AE_OFFSET UNITYSDK_OFFSET(0x8500EE0)
-#define CLASS_2_1426FEAAF2E8B41B__CTOR_OFFSET UNITYSDK_OFFSET(0x8500FF0)
+#define CLASS_2_1426FEAAF2E8B41B_METHOD_2_0356C28B02D972AE_OFFSET UNITYSDK_OFFSET(0x6088130)
+#define CLASS_2_1426FEAAF2E8B41B__CTOR_OFFSET UNITYSDK_OFFSET(0x6088240)
 
-inline static constexpr unsigned int Class_2_1426FEAAF2E8B41B_TypeDefinitionIndex = 52633;
+inline static constexpr unsigned int Class_2_1426FEAAF2E8B41B_TypeDefinitionIndex = 63290;
 
-class Class_2_1426FEAAF2E8B41B : public ::Class_1_43BD383C98B4C0C5_59
+class Class_2_1426FEAAF2E8B41B : public ::Class_1_43BD383C98B4C0C5_77
 {
 public:
 	::System::Single Field_2_0; // 0x10

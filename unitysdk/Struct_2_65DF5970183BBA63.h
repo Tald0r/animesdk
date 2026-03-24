@@ -5,20 +5,20 @@
 namespace MoleMole::Config { class ConfigPosRot; }
 namespace System { class String; }
 
-#define STRUCT_2_65DF5970183BBA63__CCTOR_OFFSET UNITYSDK_OFFSET(0x69FB3F0)
-#define STRUCT_2_65DF5970183BBA63__CTOR_OFFSET UNITYSDK_OFFSET(0x2FF1E0)
+#define STRUCT_2_65DF5970183BBA63__CCTOR_OFFSET UNITYSDK_OFFSET(0xCE68DE0)
+#define STRUCT_2_65DF5970183BBA63__CTOR_OFFSET UNITYSDK_OFFSET(0x419A70)
 
-inline static constexpr unsigned int Struct_2_65DF5970183BBA63_TypeDefinitionIndex = 42317;
+inline static constexpr unsigned int Struct_2_65DF5970183BBA63_TypeDefinitionIndex = 44561;
 
 struct alignas(8) Struct_2_65DF5970183BBA63
 {
 	static ::System::String** StaticGet_Field_2_6()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_65DF5970183BBA63_TypeDefinitionIndex)->GetStaticField(0x32D30);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_65DF5970183BBA63_TypeDefinitionIndex)->GetStaticField(0x40BA0);
 	}
 	static ::System::UInt32* StaticGet_Field_2_7()
 	{
-		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_65DF5970183BBA63_TypeDefinitionIndex)->GetStaticField(0xC530);
+		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_65DF5970183BBA63_TypeDefinitionIndex)->GetStaticField(0xFA00);
 	}
 	::System::String* Field_2_0; // 0x10
 	::System::Int32 Field_2_1; // 0x18

@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/Config/AnimatorBeHitTag.h"
 #include "unitysdk/MoleMole/Config/BaseConfigAnimatorBeHitPriority.h"
 
-#define MOLEMOLE_CONFIG_TAGCONFIGANIMATORBEHITPRIORITY__CTOR_OFFSET UNITYSDK_OFFSET(0xE0C3E50)
+#define MOLEMOLE_CONFIG_TAGCONFIGANIMATORBEHITPRIORITY__CTOR_OFFSET UNITYSDK_OFFSET(0x10AAADB0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TagConfigAnimatorBeHitPriority_TypeDefinitionIndex = 70662;
+	inline static constexpr unsigned int TagConfigAnimatorBeHitPriority_TypeDefinitionIndex = 61426;
 
 	class TagConfigAnimatorBeHitPriority : public ::MoleMole::Config::BaseConfigAnimatorBeHitPriority
 	{

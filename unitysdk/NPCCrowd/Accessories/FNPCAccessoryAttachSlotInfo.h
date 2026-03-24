@@ -8,7 +8,7 @@ namespace System { class String; }
 
 namespace NPCCrowd::Accessories
 {
-	inline static constexpr unsigned int FNPCAccessoryAttachSlotInfo_TypeDefinitionIndex = 43491;
+	inline static constexpr unsigned int FNPCAccessoryAttachSlotInfo_TypeDefinitionIndex = 57576;
 
 	struct alignas(8) FNPCAccessoryAttachSlotInfo
 	{

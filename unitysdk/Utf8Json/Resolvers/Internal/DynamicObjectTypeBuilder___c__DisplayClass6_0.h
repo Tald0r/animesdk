@@ -7,11 +7,11 @@ namespace System::Reflection { class FieldInfo; }
 namespace System::Reflection::Emit { class FieldBuilder; }
 namespace Utf8Json::Internal::Emit { class MetaMember; }
 
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B06FF20)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B67DC30)
 
 namespace Utf8Json::Resolvers::Internal
 {
-	inline static constexpr unsigned int DynamicObjectTypeBuilder___c__DisplayClass6_0_TypeDefinitionIndex = 81809;
+	inline static constexpr unsigned int DynamicObjectTypeBuilder___c__DisplayClass6_0_TypeDefinitionIndex = 83850;
 
 	class DynamicObjectTypeBuilder___c__DisplayClass6_0 : public ::System::Object
 	{

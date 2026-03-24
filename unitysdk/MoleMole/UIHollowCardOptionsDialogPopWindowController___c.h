@@ -5,39 +5,39 @@
 namespace System { class Action; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA6136C0)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA613700)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__EXITCHOICEEVENT_B__28_1_OFFSET UNITYSDK_OFFSET(0xA613860)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INIT_B__11_0_OFFSET UNITYSDK_OFFSET(0xA613710)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INIT_B__11_2_OFFSET UNITYSDK_OFFSET(0xA613840)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__ONCHOICERESPONSE_B__26_1_OFFSET UNITYSDK_OFFSET(0xA613850)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC1318B0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC1318F0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__EXITCHOICEEVENT_B__28_1_OFFSET UNITYSDK_OFFSET(0xC131A40)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INIT_B__11_0_OFFSET UNITYSDK_OFFSET(0xC131900)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INIT_B__11_2_OFFSET UNITYSDK_OFFSET(0xC131A20)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__ONCHOICERESPONSE_B__26_1_OFFSET UNITYSDK_OFFSET(0xC131A30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex = 64595;
+	inline static constexpr unsigned int UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex = 47085;
 
 	class UIHollowCardOptionsDialogPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__26_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32710);
-		}
 		static ::System::Action** StaticGet___9__28_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32718);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34640);
 		}
 		static ::MoleMole::UIHollowCardOptionsDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHollowCardOptionsDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32720);
+			return (::MoleMole::UIHollowCardOptionsDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34648);
+		}
+		static ::System::Action** StaticGet___9__26_1()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34650);
 		}
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__11_0()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32728);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34658);
 		}
 		static ::System::Action** StaticGet___9__11_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32730);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCardOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34660);
 		}
 
 		static ::System::Void _cctor()

@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define ROOTMOTION_INSPECTORCOMMENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1ADD8A70)
-#define ROOTMOTION_INSPECTORCOMMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADD8A20)
+#define ROOTMOTION_INSPECTORCOMMENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B3ED640)
+#define ROOTMOTION_INSPECTORCOMMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3ED5F0)
 
 namespace RootMotion
 {
-	inline static constexpr unsigned int InspectorComment_TypeDefinitionIndex = 34985;
+	inline static constexpr unsigned int InspectorComment_TypeDefinitionIndex = 35987;
 
 	class InspectorComment : public ::UnityEngine::PropertyAttribute
 	{
 	public:
-		::System::String* name; // 0x10
-		::System::String* color; // 0x18
+		::System::String* color; // 0x10
+		::System::String* name; // 0x18
 
 		::System::Void _ctor(::System::String* name)
 		{

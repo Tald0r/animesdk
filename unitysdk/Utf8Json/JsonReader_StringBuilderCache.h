@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UTF8JSON_JSONREADER_STRINGBUILDERCACHE_GETBUFFER_OFFSET UNITYSDK_OFFSET(0x1B0C1C50)
-#define UTF8JSON_JSONREADER_STRINGBUILDERCACHE_GETCODEPOINTSTRINGBUFFER_OFFSET UNITYSDK_OFFSET(0x1B0C1D50)
+#define UTF8JSON_JSONREADER_STRINGBUILDERCACHE_GETBUFFER_OFFSET UNITYSDK_OFFSET(0x1B6CFD20)
+#define UTF8JSON_JSONREADER_STRINGBUILDERCACHE_GETCODEPOINTSTRINGBUFFER_OFFSET UNITYSDK_OFFSET(0x1B6CFE20)
 
 namespace Utf8Json
 {
-	inline static constexpr unsigned int JsonReader_StringBuilderCache_TypeDefinitionIndex = 81736;
+	inline static constexpr unsigned int JsonReader_StringBuilderCache_TypeDefinitionIndex = 83777;
 
 	class JsonReader_StringBuilderCache : public ::System::Object
 	{

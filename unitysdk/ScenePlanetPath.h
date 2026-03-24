@@ -4,9 +4,9 @@
 
 class ScenePlanetPath_SinglePath;
 
-#define SCENEPLANETPATH__CTOR_OFFSET UNITYSDK_OFFSET(0x18032C80)
+#define SCENEPLANETPATH__CTOR_OFFSET UNITYSDK_OFFSET(0x18654970)
 
-inline static constexpr unsigned int ScenePlanetPath_TypeDefinitionIndex = 28034;
+inline static constexpr unsigned int ScenePlanetPath_TypeDefinitionIndex = 28974;
 
 class ScenePlanetPath : public ::UnityEngine::MonoBehaviour
 {

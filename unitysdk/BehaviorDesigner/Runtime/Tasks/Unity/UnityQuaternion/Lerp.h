@@ -6,22 +6,22 @@
 namespace BehaviorDesigner::Runtime { class SharedFloat; }
 namespace BehaviorDesigner::Runtime { class SharedQuaternion; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC2F7E0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC2F5C0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC2F850)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC2F890)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC2F920)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B23AC60)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B23AA40)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP__CTOR_OFFSET UNITYSDK_OFFSET(0x1B23ACD0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B23AD10)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYQUATERNION_LERP___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B23ADA0)
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityQuaternion
 {
-	inline static constexpr unsigned int Lerp_TypeDefinitionIndex = 30553;
+	inline static constexpr unsigned int Lerp_TypeDefinitionIndex = 31505;
 
 	class Lerp : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedFloat* amount; // 0x58
+		::BehaviorDesigner::Runtime::SharedQuaternion* toQuaternion; // 0x58
 		::BehaviorDesigner::Runtime::SharedQuaternion* storeResult; // 0x60
-		::BehaviorDesigner::Runtime::SharedQuaternion* toQuaternion; // 0x68
+		::BehaviorDesigner::Runtime::SharedFloat* amount; // 0x68
 		::BehaviorDesigner::Runtime::SharedQuaternion* fromQuaternion; // 0x70
 
 		::System::Void _ctor()

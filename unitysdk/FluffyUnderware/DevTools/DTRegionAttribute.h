@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_DTREGIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A23CC80)
+#define FLUFFYUNDERWARE_DEVTOOLS_DTREGIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A804590)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int DTRegionAttribute_TypeDefinitionIndex = 24537;
+	inline static constexpr unsigned int DTRegionAttribute_TypeDefinitionIndex = 25362;
 
 	class DTRegionAttribute : public ::FluffyUnderware::DevTools::DTPropertyAttribute
 	{

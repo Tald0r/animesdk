@@ -8,9 +8,9 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_D6D1B35AE0BED5AD_CLASS_1_87BAA6E5D9FF7C75__CTOR_OFFSET UNITYSDK_OFFSET(0xB957A70)
+#define CLASS_1_D6D1B35AE0BED5AD_CLASS_1_87BAA6E5D9FF7C75__CTOR_OFFSET UNITYSDK_OFFSET(0xA3CE850)
 
-inline static constexpr unsigned int Class_1_D6D1B35AE0BED5AD_Class_1_87BAA6E5D9FF7C75_TypeDefinitionIndex = 73162;
+inline static constexpr unsigned int Class_1_D6D1B35AE0BED5AD_Class_1_87BAA6E5D9FF7C75_TypeDefinitionIndex = 79568;
 
 class Class_1_D6D1B35AE0BED5AD_Class_1_87BAA6E5D9FF7C75 : public ::System::Object
 {

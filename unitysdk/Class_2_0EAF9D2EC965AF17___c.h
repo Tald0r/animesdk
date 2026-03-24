@@ -5,22 +5,22 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define CLASS_2_0EAF9D2EC965AF17___C_METHOD_1_26D960C4A13E91EE_OFFSET UNITYSDK_OFFSET(0xC54C420)
-#define CLASS_2_0EAF9D2EC965AF17___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC54C3D0)
-#define CLASS_2_0EAF9D2EC965AF17___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC54C410)
+#define CLASS_2_0EAF9D2EC965AF17___C_METHOD_1_26D960C4A13E91EE_OFFSET UNITYSDK_OFFSET(0x6459540)
+#define CLASS_2_0EAF9D2EC965AF17___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x64594F0)
+#define CLASS_2_0EAF9D2EC965AF17___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6459530)
 
-inline static constexpr unsigned int Class_2_0EAF9D2EC965AF17___c_TypeDefinitionIndex = 41157;
+inline static constexpr unsigned int Class_2_0EAF9D2EC965AF17___c_TypeDefinitionIndex = 54213;
 
 class Class_2_0EAF9D2EC965AF17___c : public ::System::Object
 {
 public:
 	static ::System::Comparison_1<::MoleMole::BattleGameWeatherAndTime>** StaticGet___9__37_0()
 	{
-		return (::System::Comparison_1<::MoleMole::BattleGameWeatherAndTime>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_0EAF9D2EC965AF17___c_TypeDefinitionIndex)->GetStaticField(0x3E630);
+		return (::System::Comparison_1<::MoleMole::BattleGameWeatherAndTime>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_0EAF9D2EC965AF17___c_TypeDefinitionIndex)->GetStaticField(0x2FDC0);
 	}
 	static ::Class_2_0EAF9D2EC965AF17___c** StaticGet___9()
 	{
-		return (::Class_2_0EAF9D2EC965AF17___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_0EAF9D2EC965AF17___c_TypeDefinitionIndex)->GetStaticField(0x3E638);
+		return (::Class_2_0EAF9D2EC965AF17___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_0EAF9D2EC965AF17___c_TypeDefinitionIndex)->GetStaticField(0x2FDC8);
 	}
 
 	static ::System::Void _cctor()

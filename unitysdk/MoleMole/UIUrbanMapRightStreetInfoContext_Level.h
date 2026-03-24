@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIUrbanMapRightTastListWidget02WidgetContext.h"
 
-#define MOLEMOLE_UIURBANMAPRIGHTSTREETINFOCONTEXT_LEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0xACD8F40)
+#define MOLEMOLE_UIURBANMAPRIGHTSTREETINFOCONTEXT_LEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0x86B7130)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapRightStreetInfoContext_Level_TypeDefinitionIndex = 36955;
+	inline static constexpr unsigned int UIUrbanMapRightStreetInfoContext_Level_TypeDefinitionIndex = 55621;
 
 	class UIUrbanMapRightStreetInfoContext_Level : public ::MoleMole::UIUrbanMapRightTastListWidget02WidgetContext
 	{

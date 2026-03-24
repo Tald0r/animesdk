@@ -7,7 +7,7 @@ namespace UnityEngine::Rendering { class CommandBuffer; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ILensFlareCommonSRP_TypeDefinitionIndex = 5904;
+	inline static constexpr unsigned int ILensFlareCommonSRP_TypeDefinitionIndex = 5906;
 
 	class ILensFlareCommonSRP
 	{

@@ -1,21 +1,30 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
+#include "unitysdk/MoleMole/GeneralTipsShow_GoBtnData.h"
 
+namespace System { class Action; }
 namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_GENERALTIPSSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x6E28610)
-#define MOLEMOLE_GENERALTIPSSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x6E28660)
-#define MOLEMOLE_GENERALTIPSSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6E28620)
+#define MOLEMOLE_GENERALTIPSSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x6E92DF0)
+#define MOLEMOLE_GENERALTIPSSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x6E92E40)
+#define MOLEMOLE_GENERALTIPSSHOW_SETDETAILANDTTITLE_OFFSET UNITYSDK_OFFSET(0x6E93190)
+#define MOLEMOLE_GENERALTIPSSHOW_SETGOBTN_OFFSET UNITYSDK_OFFSET(0x6E93100)
+#define MOLEMOLE_GENERALTIPSSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6E92E00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GeneralTipsShow_TypeDefinitionIndex = 68596;
+	inline static constexpr unsigned int GeneralTipsShow_TypeDefinitionIndex = 57968;
 
 	class GeneralTipsShow : public ::MoleMole::DisplayMessageBase
 	{
 	public:
 		::System::String* message; // 0x28
+		::MoleMole::GeneralTipsShow_GoBtnData GoData; // 0x30
+		::System::String* detail; // 0x50
+		::System::String* title; // 0x58
+		::System::Boolean showCustomDetailTitle; // 0x60
 
 		::System::Void _ctor(::System::String* message)
 		{
@@ -30,6 +39,16 @@ namespace MoleMole
 		::System::Void OnProcess()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GENERALTIPSSHOW_ONPROCESS_OFFSET))(this);
+		}
+
+		::System::Void SetGoBtn(::System::String* key, ::System::Action* callback, ::System::Func_1<::System::Boolean>* showGoPredicate)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Action*, ::System::Func_1<::System::Boolean>*))((::PBYTE)hIl2Cpp + MOLEMOLE_GENERALTIPSSHOW_SETGOBTN_OFFSET))(this, key, callback, showGoPredicate);
+		}
+
+		::System::Void SetDetailAndTtitle(::System::String* title, ::System::String* detail)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_GENERALTIPSSHOW_SETDETAILANDTTITLE_OFFSET))(this, title, detail);
 		}
 	};
 }

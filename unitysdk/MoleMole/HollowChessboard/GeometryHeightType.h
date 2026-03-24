@@ -3,14 +3,14 @@
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int GeometryHeightType_TypeDefinitionIndex = 48507;
+	inline static constexpr unsigned int GeometryHeightType_TypeDefinitionIndex = 52351;
 
 	enum class GeometryHeightType : ::System::Int32
 	{
-		NormalTop = 3,
 		HalfTop = 2,
-		None = 0,
 		Back = 1,
 		SpecialTop = 4,
+		NormalTop = 3,
+		None = 0,
 	};
 }

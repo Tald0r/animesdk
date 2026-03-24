@@ -5,18 +5,18 @@
 namespace MoleMole { class UIPlayerSkinSwitchRoleCardWidgetControllerContext; }
 namespace MoleMole { class UIPlayerSkinSwitchWidgetController; }
 
-#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAF81B60)
-#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS26_0__RESETCONTEXTS_B__0_OFFSET UNITYSDK_OFFSET(0xAF81B70)
+#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB436080)
+#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS26_0__RESETCONTEXTS_B__0_OFFSET UNITYSDK_OFFSET(0xB436090)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerSkinSwitchWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 59063;
+	inline static constexpr unsigned int UIPlayerSkinSwitchWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 45057;
 
 	class UIPlayerSkinSwitchWidgetController___c__DisplayClass26_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIPlayerSkinSwitchRoleCardWidgetControllerContext* ctx; // 0x10
-		::MoleMole::UIPlayerSkinSwitchWidgetController* __4__this; // 0x18
+		::MoleMole::UIPlayerSkinSwitchWidgetController* __4__this; // 0x10
+		::MoleMole::UIPlayerSkinSwitchRoleCardWidgetControllerContext* ctx; // 0x18
 
 		::System::Void _ctor()
 		{

@@ -2,14 +2,14 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define IFIX_CORE_CLEANNER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x19912080)
-#define IFIX_CORE_CLEANNER_START_OFFSET UNITYSDK_OFFSET(0x19911FE0)
-#define IFIX_CORE_CLEANNER_STOP_OFFSET UNITYSDK_OFFSET(0x19912040)
-#define IFIX_CORE_CLEANNER__CTOR_OFFSET UNITYSDK_OFFSET(0x19912030)
+#define IFIX_CORE_CLEANNER_FINALIZE_OFFSET UNITYSDK_OFFSET(0x19EAC080)
+#define IFIX_CORE_CLEANNER_START_OFFSET UNITYSDK_OFFSET(0x19EABFE0)
+#define IFIX_CORE_CLEANNER_STOP_OFFSET UNITYSDK_OFFSET(0x19EAC040)
+#define IFIX_CORE_CLEANNER__CTOR_OFFSET UNITYSDK_OFFSET(0x19EAC030)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int Cleanner_TypeDefinitionIndex = 6813;
+	inline static constexpr unsigned int Cleanner_TypeDefinitionIndex = 6817;
 
 	class Cleanner : public ::System::Object
 	{

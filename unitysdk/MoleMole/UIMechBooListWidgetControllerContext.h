@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIMECHBOOLISTWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x94508D0)
+#define MOLEMOLE_UIMECHBOOLISTWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA418680)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMechBooListWidgetControllerContext_TypeDefinitionIndex = 69883;
+	inline static constexpr unsigned int UIMechBooListWidgetControllerContext_TypeDefinitionIndex = 56057;
 
 	class UIMechBooListWidgetControllerContext : public ::MoleMole::UIControllerContextBase
 	{

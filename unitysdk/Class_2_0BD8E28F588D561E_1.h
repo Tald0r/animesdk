@@ -10,25 +10,25 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_0BD8E28F588D561E_1_METHOD_2_5A4C962718782000_OFFSET UNITYSDK_OFFSET(0xB030020)
-#define CLASS_2_0BD8E28F588D561E_1_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xB030270)
-#define CLASS_2_0BD8E28F588D561E_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB030360)
-#define CLASS_2_0BD8E28F588D561E_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB030350)
+#define CLASS_2_0BD8E28F588D561E_1_METHOD_2_5A4C962718782000_OFFSET UNITYSDK_OFFSET(0x9CB6DF0)
+#define CLASS_2_0BD8E28F588D561E_1_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x9CB7040)
+#define CLASS_2_0BD8E28F588D561E_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9CB7130)
+#define CLASS_2_0BD8E28F588D561E_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9CB7120)
 
-inline static constexpr unsigned int Class_2_0BD8E28F588D561E_1_TypeDefinitionIndex = 58123;
+inline static constexpr unsigned int Class_2_0BD8E28F588D561E_1_TypeDefinitionIndex = 74311;
 
 class Class_2_0BD8E28F588D561E_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x20
-	::UnityEngine::RectTransform* Field_2_6; // 0x28
-	::UnityEngine::GameObject* Field_2_5; // 0x30
-	::UnityEngine::RectTransform* Field_2_0; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x40
-	::UnityEngine::RectTransform* Field_2_9; // 0x48
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x50
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x58
+	::UnityEngine::RectTransform* Field_2_6; // 0x18
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x30
+	::UnityEngine::RectTransform* Field_2_9; // 0x38
+	::UnityEngine::RectTransform* Field_2_0; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x48
+	::UnityEngine::GameObject* Field_2_5; // 0x50
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x58
 	::MoleMole::MonoGamepadCustomList* Field_2_4; // 0x60
 
 	::System::Void _ctor()

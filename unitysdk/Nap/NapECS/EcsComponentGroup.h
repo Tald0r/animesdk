@@ -6,22 +6,22 @@ namespace Nap::NapECS { class EcsComponent; }
 namespace Nap::NapECS { class EcsIdGenerator; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NAP_NAPECS_ECSCOMPONENTGROUP_ADD_OFFSET UNITYSDK_OFFSET(0x18820F90)
-#define NAP_NAPECS_ECSCOMPONENTGROUP_DESTROY_OFFSET UNITYSDK_OFFSET(0x18822150)
-#define NAP_NAPECS_ECSCOMPONENTGROUP_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18822260)
-#define NAP_NAPECS_ECSCOMPONENTGROUP_REMOVE_1_OFFSET UNITYSDK_OFFSET(0x188220C0)
-#define NAP_NAPECS_ECSCOMPONENTGROUP_REMOVE_OFFSET UNITYSDK_OFFSET(0x18822040)
-#define NAP_NAPECS_ECSCOMPONENTGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x18821FA0)
+#define NAP_NAPECS_ECSCOMPONENTGROUP_ADD_OFFSET UNITYSDK_OFFSET(0x18D802E0)
+#define NAP_NAPECS_ECSCOMPONENTGROUP_DESTROY_OFFSET UNITYSDK_OFFSET(0x18D81490)
+#define NAP_NAPECS_ECSCOMPONENTGROUP_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18D815B0)
+#define NAP_NAPECS_ECSCOMPONENTGROUP_REMOVE_1_OFFSET UNITYSDK_OFFSET(0x18D81400)
+#define NAP_NAPECS_ECSCOMPONENTGROUP_REMOVE_OFFSET UNITYSDK_OFFSET(0x18D81380)
+#define NAP_NAPECS_ECSCOMPONENTGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x18D812E0)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsComponentGroup_TypeDefinitionIndex = 34114;
+	inline static constexpr unsigned int EcsComponentGroup_TypeDefinitionIndex = 35214;
 
 	class EcsComponentGroup : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Nap::NapECS::EcsComponent*>* componentList; // 0x10
-		::Nap::NapECS::EcsIdGenerator* componentIdGenerator; // 0x18
+		::Nap::NapECS::EcsIdGenerator* componentIdGenerator; // 0x10
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Nap::NapECS::EcsComponent*>* componentList; // 0x18
 
 		::System::Void _ctor()
 		{

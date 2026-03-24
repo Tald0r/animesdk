@@ -9,25 +9,25 @@ namespace BinaryTracingFramework::Serialize { class SerializableObjectInfo; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP_GETSERIALIZABLEOBJECTINFO_1_OFFSET UNITYSDK_OFFSET(0x1ABAC9E0)
-#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP_GETSERIALIZABLEOBJECTINFO_OFFSET UNITYSDK_OFFSET(0x1ABAC8B0)
-#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ABACB10)
-#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABACB00)
+#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP_GETSERIALIZABLEOBJECTINFO_1_OFFSET UNITYSDK_OFFSET(0x1B1D3EA0)
+#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP_GETSERIALIZABLEOBJECTINFO_OFFSET UNITYSDK_OFFSET(0x1B1D3D80)
+#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B1D3FD0)
+#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTINFOMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1D3FC0)
 
 namespace BinaryTracingFramework::Serialize
 {
-	inline static constexpr unsigned int SerializeObjectInfoMap_TypeDefinitionIndex = 30953;
+	inline static constexpr unsigned int SerializeObjectInfoMap_TypeDefinitionIndex = 31905;
 
 	class SerializeObjectInfoMap : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::Dictionary_2<::BinaryTracingFramework::Serialize::ClassTypeMeta, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>** StaticGet_TypeMeta2Info()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::BinaryTracingFramework::Serialize::ClassTypeMeta, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>**)Il2CppClass::FromTypeDefinitionIndex(SerializeObjectInfoMap_TypeDefinitionIndex)->GetStaticField(0x237D0);
-		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Guid, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>** StaticGet_Type2Info()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Guid, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>**)Il2CppClass::FromTypeDefinitionIndex(SerializeObjectInfoMap_TypeDefinitionIndex)->GetStaticField(0x237D8);
+			return (::System::Collections::Generic::Dictionary_2<::System::Guid, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>**)Il2CppClass::FromTypeDefinitionIndex(SerializeObjectInfoMap_TypeDefinitionIndex)->GetStaticField(0x250F0);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::BinaryTracingFramework::Serialize::ClassTypeMeta, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>** StaticGet_TypeMeta2Info()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::BinaryTracingFramework::Serialize::ClassTypeMeta, ::BinaryTracingFramework::Serialize::SerializableObjectInfo*>**)Il2CppClass::FromTypeDefinitionIndex(SerializeObjectInfoMap_TypeDefinitionIndex)->GetStaticField(0x250F8);
 		}
 
 		::System::Void _ctor()

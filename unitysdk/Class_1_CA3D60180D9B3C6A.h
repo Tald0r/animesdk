@@ -6,18 +6,18 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_CA3D60180D9B3C6A_METHOD_1_800F7FDEB2F03033_OFFSET UNITYSDK_OFFSET(0x93E7180)
-#define CLASS_1_CA3D60180D9B3C6A_METHOD_1_A26855E4C896E681_OFFSET UNITYSDK_OFFSET(0x93E6E60)
-#define CLASS_1_CA3D60180D9B3C6A_METHOD_1_DF83BFE99606639B_OFFSET UNITYSDK_OFFSET(0x93E6F40)
-#define CLASS_1_CA3D60180D9B3C6A__CTOR_OFFSET UNITYSDK_OFFSET(0x93E6D80)
+#define CLASS_1_CA3D60180D9B3C6A_METHOD_1_800F7FDEB2F03033_OFFSET UNITYSDK_OFFSET(0xD5E01E0)
+#define CLASS_1_CA3D60180D9B3C6A_METHOD_1_A26855E4C896E681_OFFSET UNITYSDK_OFFSET(0xD5DFEC0)
+#define CLASS_1_CA3D60180D9B3C6A_METHOD_1_DF83BFE99606639B_OFFSET UNITYSDK_OFFSET(0xD5DFFA0)
+#define CLASS_1_CA3D60180D9B3C6A__CTOR_OFFSET UNITYSDK_OFFSET(0xD5DFDE0)
 
-inline static constexpr unsigned int Class_1_CA3D60180D9B3C6A_TypeDefinitionIndex = 48388;
+inline static constexpr unsigned int Class_1_CA3D60180D9B3C6A_TypeDefinitionIndex = 67027;
 
 class Class_1_CA3D60180D9B3C6A : public ::System::Object
 {
 public:
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::Int32>*>* Field_1_0; // 0x10
-	::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>* Field_1_1; // 0x18
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>* Field_1_1; // 0x10
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::Int32>*>* Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

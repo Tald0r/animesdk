@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define ICSHARPCODE_SHARPZIPLIB_GZIP_GZIPCONSTANTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1366D0)
+#define ICSHARPCODE_SHARPZIPLIB_GZIP_GZIPCONSTANTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1B752D10)
 
 namespace ICSharpCode::SharpZipLib::GZip
 {
-	inline static constexpr unsigned int GZipConstants_TypeDefinitionIndex = 6666;
+	inline static constexpr unsigned int GZipConstants_TypeDefinitionIndex = 6670;
 
 	class GZipConstants : public ::System::Object
 	{

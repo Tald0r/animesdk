@@ -4,11 +4,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeArray_1.h"
 
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM_DEPENDENCYREMOVER_INVOKE_OFFSET UNITYSDK_OFFSET(0x30C8A0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM_DEPENDENCYREMOVER_INVOKE_OFFSET UNITYSDK_OFFSET(0x33A760)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_AnimationScheduler_ScheduleAlgorithm_DependencyRemover_TypeDefinitionIndex = 71181;
+	inline static constexpr unsigned int AnimationSubManager_AnimationScheduler_ScheduleAlgorithm_DependencyRemover_TypeDefinitionIndex = 59673;
 
 	struct alignas(8) AnimationSubManager_AnimationScheduler_ScheduleAlgorithm_DependencyRemover
 	{

@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/Photo/AnimationSelectByEnumConfig_1.h"
 #include "unitysdk/MoleMole/Photo/SlotState.h"
 
-#define MOLEMOLE_PHOTO_ANIMATIONSELECTBYSLOTSTATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8A897A0)
+#define MOLEMOLE_PHOTO_ANIMATIONSELECTBYSLOTSTATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8C91D30)
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int AnimationSelectBySlotStateConfig_TypeDefinitionIndex = 38353;
+	inline static constexpr unsigned int AnimationSelectBySlotStateConfig_TypeDefinitionIndex = 62990;
 
 	class AnimationSelectBySlotStateConfig : public ::MoleMole::Photo::AnimationSelectByEnumConfig_1<::MoleMole::Photo::SlotState>
 	{

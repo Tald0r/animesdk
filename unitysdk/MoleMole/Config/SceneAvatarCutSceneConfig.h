@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class SceneChessboardCutSceneConfig; }
 namespace MoleMole::Config { class SceneEntityCutSceneConfig; }
 
-#define MOLEMOLE_CONFIG_SCENEAVATARCUTSCENECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC1E2080)
+#define MOLEMOLE_CONFIG_SCENEAVATARCUTSCENECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x81F88D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SceneAvatarCutSceneConfig_TypeDefinitionIndex = 62326;
+	inline static constexpr unsigned int SceneAvatarCutSceneConfig_TypeDefinitionIndex = 77723;
 
 	class SceneAvatarCutSceneConfig : public ::System::Object
 	{

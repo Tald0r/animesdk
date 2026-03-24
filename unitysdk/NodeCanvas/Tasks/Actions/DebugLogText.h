@@ -9,26 +9,26 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1975EBF0)
-#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1975ECA0)
-#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONGUI_OFFSET UNITYSDK_OFFSET(0x1975F080)
-#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONSTOP_OFFSET UNITYSDK_OFFSET(0x1975EEA0)
-#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1975EF80)
-#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1975F560)
+#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19C2CA50)
+#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19C2CB00)
+#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONGUI_OFFSET UNITYSDK_OFFSET(0x19C2CEE0)
+#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONSTOP_OFFSET UNITYSDK_OFFSET(0x19C2CD00)
+#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x19C2CDE0)
+#define NODECANVAS_TASKS_ACTIONS_DEBUGLOGTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x19C2D3C0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int DebugLogText_TypeDefinitionIndex = 25979;
+	inline static constexpr unsigned int DebugLogText_TypeDefinitionIndex = 26749;
 
 	class DebugLogText : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{
 	public:
 		::NodeCanvas::Framework::BBParameter_1<::System::String*>* log; // 0x60
 		::NodeCanvas::Tasks::Actions::DebugLogText_VerboseMode verboseMode; // 0x68
-		::ParadoxNotion::CompactStatus finishStatus; // 0x6C
-		::NodeCanvas::Tasks::Actions::DebugLogText_LogMode logMode; // 0x70
+		::System::Single secondsToRun; // 0x6C
+		::ParadoxNotion::CompactStatus finishStatus; // 0x70
 		::System::Single labelYOffset; // 0x74
-		::System::Single secondsToRun; // 0x78
+		::NodeCanvas::Tasks::Actions::DebugLogText_LogMode logMode; // 0x78
 
 		::System::Void _ctor()
 		{

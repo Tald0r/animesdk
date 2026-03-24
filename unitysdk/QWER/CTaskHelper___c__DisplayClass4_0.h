@@ -5,12 +5,12 @@
 
 namespace QWER { class CTimer; }
 
-#define QWER_CTASKHELPER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA21D60)
-#define QWER_CTASKHELPER___C__DISPLAYCLASS4_0__DELAY_B__0_OFFSET UNITYSDK_OFFSET(0x1AA21D70)
+#define QWER_CTASKHELPER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B011A90)
+#define QWER_CTASKHELPER___C__DISPLAYCLASS4_0__DELAY_B__0_OFFSET UNITYSDK_OFFSET(0x1B011AA0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CTaskHelper___c__DisplayClass4_0_TypeDefinitionIndex = 82104;
+	inline static constexpr unsigned int CTaskHelper___c__DisplayClass4_0_TypeDefinitionIndex = 84145;
 
 	class CTaskHelper___c__DisplayClass4_0 : public ::System::Object
 	{

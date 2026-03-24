@@ -1,13 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_0_16E4307DCC419505_97;
-namespace System { class String; }
-namespace System { class Type; }
-template <typename T> class Class_0_16E4307DCC419505_102;
-template <typename T> class Class_0_16E4307DCC419505_103;
+class Class_0_16E4307DCC419505_100;
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_123_TypeDefinitionIndex = 31535;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_123_TypeDefinitionIndex = 32480;
 
 class Class_0_16E4307DCC419505_123
 {

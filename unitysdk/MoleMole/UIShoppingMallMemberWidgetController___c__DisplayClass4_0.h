@@ -1,24 +1,24 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_3659D99D9E0DCBB9_5.h"
+#include "unitysdk/Struct_2_3659D99D9E0DCBB9_2.h"
 #include "unitysdk/System/Object.h"
 
 namespace MoleMole { class UIShoppingMallMemberWidgetController; }
 
-#define MOLEMOLE_UISHOPPINGMALLMEMBERWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC3C5940)
-#define MOLEMOLE_UISHOPPINGMALLMEMBERWIDGETCONTROLLER___C__DISPLAYCLASS4_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0xC3C5950)
-#define MOLEMOLE_UISHOPPINGMALLMEMBERWIDGETCONTROLLER___C__DISPLAYCLASS4_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0xC3C5990)
+#define MOLEMOLE_UISHOPPINGMALLMEMBERWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA45D9A0)
+#define MOLEMOLE_UISHOPPINGMALLMEMBERWIDGETCONTROLLER___C__DISPLAYCLASS4_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0xA45D9B0)
+#define MOLEMOLE_UISHOPPINGMALLMEMBERWIDGETCONTROLLER___C__DISPLAYCLASS4_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0xA45D9F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallMemberWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 48240;
+	inline static constexpr unsigned int UIShoppingMallMemberWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 37585;
 
 	class UIShoppingMallMemberWidgetController___c__DisplayClass4_0 : public ::System::Object
 	{
 	public:
-		::Struct_2_3659D99D9E0DCBB9_5 dayReward_Item; // 0x10
-		::Struct_2_3659D99D9E0DCBB9_5 onceReward_Item; // 0x20
-		::MoleMole::UIShoppingMallMemberWidgetController* __4__this; // 0x30
+		::MoleMole::UIShoppingMallMemberWidgetController* __4__this; // 0x10
+		::Struct_2_3659D99D9E0DCBB9_2 dayReward_Item; // 0x18
+		::Struct_2_3659D99D9E0DCBB9_2 onceReward_Item; // 0x28
 
 		::System::Void _ctor()
 		{

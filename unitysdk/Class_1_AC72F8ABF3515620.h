@@ -5,16 +5,16 @@
 
 namespace MoleMole::HollowChessboard { class HollowEntity; }
 
-#define CLASS_1_AC72F8ABF3515620_EVALUATE_OFFSET UNITYSDK_OFFSET(0xB87B910)
-#define CLASS_1_AC72F8ABF3515620__CTOR_OFFSET UNITYSDK_OFFSET(0xB87BAE0)
+#define CLASS_1_AC72F8ABF3515620_EVALUATE_OFFSET UNITYSDK_OFFSET(0xA3ECDA0)
+#define CLASS_1_AC72F8ABF3515620__CTOR_OFFSET UNITYSDK_OFFSET(0xA3ECF70)
 
-inline static constexpr unsigned int Class_1_AC72F8ABF3515620_TypeDefinitionIndex = 68463;
+inline static constexpr unsigned int Class_1_AC72F8ABF3515620_TypeDefinitionIndex = 73540;
 
 class Class_1_AC72F8ABF3515620 : public ::System::Object
 {
 public:
-	::MoleMole::Config::ValueCompareType Field_1_1; // 0x10
-	::System::Int32 Field_1_0; // 0x14
+	::System::Int32 Field_1_0; // 0x10
+	::MoleMole::Config::ValueCompareType Field_1_1; // 0x14
 
 	::System::Void _ctor()
 	{

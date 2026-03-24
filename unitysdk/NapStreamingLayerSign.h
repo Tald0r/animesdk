@@ -3,9 +3,9 @@
 #include "unitysdk/NapStreaming/StreamingLayer.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define NAPSTREAMINGLAYERSIGN__CTOR_OFFSET UNITYSDK_OFFSET(0x76515D0)
+#define NAPSTREAMINGLAYERSIGN__CTOR_OFFSET UNITYSDK_OFFSET(0x8631630)
 
-inline static constexpr unsigned int NapStreamingLayerSign_TypeDefinitionIndex = 77988;
+inline static constexpr unsigned int NapStreamingLayerSign_TypeDefinitionIndex = 41609;
 
 class NapStreamingLayerSign : public ::UnityEngine::MonoBehaviour
 {

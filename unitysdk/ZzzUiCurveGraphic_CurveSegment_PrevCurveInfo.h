@@ -3,7 +3,7 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-inline static constexpr unsigned int ZzzUiCurveGraphic_CurveSegment_PrevCurveInfo_TypeDefinitionIndex = 39830;
+inline static constexpr unsigned int ZzzUiCurveGraphic_CurveSegment_PrevCurveInfo_TypeDefinitionIndex = 76423;
 
 struct alignas(4) ZzzUiCurveGraphic_CurveSegment_PrevCurveInfo
 {

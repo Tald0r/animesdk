@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_SUMMERSURFBARCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD1A3F00)
+#define MOLEMOLE_SUMMERSURFBARCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6ED8130)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SummerSurfBarContext_TypeDefinitionIndex = 46559;
+	inline static constexpr unsigned int SummerSurfBarContext_TypeDefinitionIndex = 79430;
 
 	class SummerSurfBarContext : public ::MoleMole::UIControllerContextBase
 	{

@@ -3,7 +3,7 @@
 
 namespace DG::Tweening::Core::Enums
 {
-	inline static constexpr unsigned int OperationType_TypeDefinitionIndex = 24168;
+	inline static constexpr unsigned int OperationType_TypeDefinitionIndex = 24992;
 
 	enum class OperationType : ::System::Int32
 	{

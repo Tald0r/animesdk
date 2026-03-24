@@ -4,11 +4,11 @@
 
 namespace UnityEngine::EventSystems { class BaseEventData; }
 
-#define UNITYENGINE_EVENTSYSTEMS_EVENTTRIGGER_TRIGGEREVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF4E0B0)
+#define UNITYENGINE_EVENTSYSTEMS_EVENTTRIGGER_TRIGGEREVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B571E80)
 
 namespace UnityEngine::EventSystems
 {
-	inline static constexpr unsigned int EventTrigger_TriggerEvent_TypeDefinitionIndex = 8509;
+	inline static constexpr unsigned int EventTrigger_TriggerEvent_TypeDefinitionIndex = 8520;
 
 	class EventTrigger_TriggerEvent : public ::UnityEngine::Events::UnityEvent_1<::UnityEngine::EventSystems::BaseEventData*>
 	{

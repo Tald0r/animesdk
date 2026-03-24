@@ -23,13 +23,13 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGBUFFMISC_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xCC8B710)
-#define MOLEMOLE_CONFIG_CONFIGBUFFMISC__CTOR_OFFSET UNITYSDK_OFFSET(0xCC8BB00)
-#define MOLEMOLE_CONFIG_CONFIGBUFFMISC___BASE_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xCC8BD80)
+#define MOLEMOLE_CONFIG_CONFIGBUFFMISC_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xACB9620)
+#define MOLEMOLE_CONFIG_CONFIGBUFFMISC__CTOR_OFFSET UNITYSDK_OFFSET(0xACB9A10)
+#define MOLEMOLE_CONFIG_CONFIGBUFFMISC___BASE_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xACB9C80)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigBuffMisc_TypeDefinitionIndex = 46291;
+	inline static constexpr unsigned int ConfigBuffMisc_TypeDefinitionIndex = 40305;
 
 	class ConfigBuffMisc : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallCurrencyWidgetWidgetController_BgData_TypeDefinitionIndex = 38308;
+	inline static constexpr unsigned int UIShoppingMallCurrencyWidgetWidgetController_BgData_TypeDefinitionIndex = 46043;
 
 	struct alignas(1) UIShoppingMallCurrencyWidgetWidgetController_BgData
 	{

@@ -11,13 +11,13 @@ namespace UnityEngine::NAPRenderPipeline0 { class TextureParameter; }
 namespace UnityEngine::Rendering::Universal { class ComicDotTypeParameter; }
 namespace UnityEngine::Rendering::Universal { class ComponentMaskParameter; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_FXCOMICDOT_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x183936E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_FXCOMICDOT_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x18393760)
-#define UNITYENGINE_RENDERING_UNIVERSAL_FXCOMICDOT__CTOR_OFFSET UNITYSDK_OFFSET(0x183937A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_FXCOMICDOT_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x189E9D00)
+#define UNITYENGINE_RENDERING_UNIVERSAL_FXCOMICDOT_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x189E9D80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_FXCOMICDOT__CTOR_OFFSET UNITYSDK_OFFSET(0x189E9DC0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int FXComicDot_TypeDefinitionIndex = 28412;
+	inline static constexpr unsigned int FXComicDot_TypeDefinitionIndex = 29355;
 
 	class FXComicDot : public ::UnityEngine::NAPRenderPipeline0::VolumeComponent
 	{
@@ -65,6 +65,8 @@ namespace UnityEngine::Rendering::Universal
 		::UnityEngine::NAPRenderPipeline0::BoolParameter* zClip2; // 0x178
 		::UnityEngine::NAPRenderPipeline0::BoolParameter* invertClip2; // 0x180
 		::UnityEngine::NAPRenderPipeline0::FloatParameter* depthThreshold2; // 0x188
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* pixelationOn; // 0x190
+		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* pixelSize; // 0x198
 
 		::System::Void _ctor()
 		{

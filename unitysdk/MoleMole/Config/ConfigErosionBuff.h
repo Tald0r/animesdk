@@ -4,17 +4,17 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGEROSIONBUFF__CTOR_OFFSET UNITYSDK_OFFSET(0x89F6970)
+#define MOLEMOLE_CONFIG_CONFIGEROSIONBUFF__CTOR_OFFSET UNITYSDK_OFFSET(0x10A8F590)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigErosionBuff_TypeDefinitionIndex = 42335;
+	inline static constexpr unsigned int ConfigErosionBuff_TypeDefinitionIndex = 77793;
 
 	class ConfigErosionBuff : public ::System::Object
 	{
 	public:
-		::System::String* DamageAudio; // 0x10
-		::System::String* MaterialPropertyKey; // 0x18
+		::System::String* MaterialPropertyKey; // 0x10
+		::System::String* DamageAudio; // 0x18
 
 		::System::Void _ctor()
 		{

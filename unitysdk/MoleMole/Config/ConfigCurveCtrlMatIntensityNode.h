@@ -5,12 +5,12 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATINTENSITYNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x9B5F3F0)
-#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATINTENSITYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9B5F480)
+#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATINTENSITYNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xB46F1F0)
+#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATINTENSITYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB46F280)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigCurveCtrlMatIntensityNode_TypeDefinitionIndex = 37805;
+	inline static constexpr unsigned int ConfigCurveCtrlMatIntensityNode_TypeDefinitionIndex = 65891;
 
 	class ConfigCurveCtrlMatIntensityNode : public ::MoleMole::Config::ConfigCurveCtrlBaseNode
 	{

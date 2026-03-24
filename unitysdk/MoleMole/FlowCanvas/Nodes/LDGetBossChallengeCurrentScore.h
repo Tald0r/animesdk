@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETBOSSCHALLENGECURRENTSCORE_INVOKE_OFFSET UNITYSDK_OFFSET(0x8AF4E60)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETBOSSCHALLENGECURRENTSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF4FD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETBOSSCHALLENGECURRENTSCORE_INVOKE_OFFSET UNITYSDK_OFFSET(0x1164BB60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETBOSSCHALLENGECURRENTSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0x1164BCD0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetBossChallengeCurrentScore_TypeDefinitionIndex = 66776;
+	inline static constexpr unsigned int LDGetBossChallengeCurrentScore_TypeDefinitionIndex = 69708;
 
 	class LDGetBossChallengeCurrentScore : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Int32>
 	{

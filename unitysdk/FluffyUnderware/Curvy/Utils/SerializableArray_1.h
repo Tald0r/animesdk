@@ -4,7 +4,7 @@
 
 namespace FluffyUnderware::Curvy::Utils
 {
-	inline static constexpr unsigned int SerializableArray_1_TypeDefinitionIndex = 35691;
+	inline static constexpr unsigned int SerializableArray_1_TypeDefinitionIndex = 36711;
 
 	template <typename T>
 	class SerializableArray_1 : public ::System::Object

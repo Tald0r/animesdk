@@ -4,9 +4,9 @@
 
 namespace MoleMole { class UIControllerContextBase; }
 
-#define CLASS_1_DA38FBD48EB57E08_METHOD_1_1852D6A943799EE2_OFFSET UNITYSDK_OFFSET(0x88BFF60)
+#define CLASS_1_DA38FBD48EB57E08_METHOD_1_1852D6A943799EE2_OFFSET UNITYSDK_OFFSET(0xA0DF360)
 
-inline static constexpr unsigned int Class_1_DA38FBD48EB57E08_TypeDefinitionIndex = 61903;
+inline static constexpr unsigned int Class_1_DA38FBD48EB57E08_TypeDefinitionIndex = 58224;
 
 class Class_1_DA38FBD48EB57E08 : public ::System::Object
 {

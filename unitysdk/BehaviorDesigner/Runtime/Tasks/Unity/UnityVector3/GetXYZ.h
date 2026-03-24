@@ -6,23 +6,23 @@
 namespace BehaviorDesigner::Runtime { class SharedFloat; }
 namespace BehaviorDesigner::Runtime { class SharedVector3; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AE35910)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AE35710)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE35990)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AE359D0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AE35A60)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B44F450)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B44F250)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ__CTOR_OFFSET UNITYSDK_OFFSET(0x1B44F4D0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B44F510)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_UNITYVECTOR3_GETXYZ___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B44F5A0)
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::UnityVector3
 {
-	inline static constexpr unsigned int GetXYZ_TypeDefinitionIndex = 30365;
+	inline static constexpr unsigned int GetXYZ_TypeDefinitionIndex = 31317;
 
 	class GetXYZ : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedFloat* storeZ; // 0x58
-		::BehaviorDesigner::Runtime::SharedVector3* vector3Variable; // 0x60
-		::BehaviorDesigner::Runtime::SharedFloat* storeY; // 0x68
-		::BehaviorDesigner::Runtime::SharedFloat* storeX; // 0x70
+		::BehaviorDesigner::Runtime::SharedFloat* storeX; // 0x58
+		::BehaviorDesigner::Runtime::SharedFloat* storeY; // 0x60
+		::BehaviorDesigner::Runtime::SharedFloat* storeZ; // 0x68
+		::BehaviorDesigner::Runtime::SharedVector3* vector3Variable; // 0x70
 
 		::System::Void _ctor()
 		{

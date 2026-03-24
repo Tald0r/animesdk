@@ -6,7 +6,7 @@ namespace System { class Type; }
 namespace System::ComponentModel { class License; }
 namespace System::ComponentModel { class LicenseContext; }
 
-#define SYSTEM_COMPONENTMODEL_LICENSEPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x19009930)
+#define SYSTEM_COMPONENTMODEL_LICENSEPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1941F7A0)
 
 namespace System::ComponentModel
 {

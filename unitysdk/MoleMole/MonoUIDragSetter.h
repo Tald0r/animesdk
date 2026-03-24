@@ -4,12 +4,12 @@
 
 namespace UnityEngine::EventSystems { class PointerEventData; }
 
-#define MOLEMOLE_MONOUIDRAGSETTER_ONBEGINDRAG_OFFSET UNITYSDK_OFFSET(0x8F3A610)
-#define MOLEMOLE_MONOUIDRAGSETTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3A690)
+#define MOLEMOLE_MONOUIDRAGSETTER_ONBEGINDRAG_OFFSET UNITYSDK_OFFSET(0x98504A0)
+#define MOLEMOLE_MONOUIDRAGSETTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9850520)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoUIDragSetter_TypeDefinitionIndex = 55266;
+	inline static constexpr unsigned int MonoUIDragSetter_TypeDefinitionIndex = 80884;
 
 	class MonoUIDragSetter : public ::UnityEngine::MonoBehaviour
 	{

@@ -4,11 +4,11 @@
 
 class Class_1_0D6706375CDAAE8C;
 
-#define MOLEMOLE_UIMAINCITYREWARDTIPSCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC12ADC0)
+#define MOLEMOLE_UIMAINCITYREWARDTIPSCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD773260)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityRewardTipsContext_TypeDefinitionIndex = 61908;
+	inline static constexpr unsigned int UIMainCityRewardTipsContext_TypeDefinitionIndex = 63069;
 
 	class UIMainCityRewardTipsContext : public ::MoleMole::UIControllerContextBase
 	{

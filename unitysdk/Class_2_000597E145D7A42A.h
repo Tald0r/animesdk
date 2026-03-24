@@ -3,12 +3,12 @@
 #include "unitysdk/Class_1_99CD31ECD20D42A6.h"
 #include "unitysdk/Enum_3_52BF7B0B9861B642.h"
 
-class Class_0_16E4307DCC419505_97;
-class Class_3_D92ADC48CDFCC09B;
+class Class_0_16E4307DCC419505_99;
+class Class_3_D92ADC48CDFCC09B_1;
 namespace System { class String; }
 template <typename T> class Class_2_000597E145D7A42A;
 
-inline static constexpr unsigned int Class_2_000597E145D7A42A_TypeDefinitionIndex = 31553;
+inline static constexpr unsigned int Class_2_000597E145D7A42A_TypeDefinitionIndex = 32494;
 
 template <typename T>
 class Class_2_000597E145D7A42A : public ::Class_1_99CD31ECD20D42A6

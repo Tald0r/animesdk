@@ -4,11 +4,11 @@
 
 namespace System { class Object; }
 
-#define MOLEMOLE_AUDIO_SOUNDSUBSCRIPTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x84835C0)
+#define MOLEMOLE_AUDIO_SOUNDSUBSCRIPTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x94DB6B0)
 
 namespace MoleMole::Audio
 {
-	inline static constexpr unsigned int SoundSubScriptBase_TypeDefinitionIndex = 50980;
+	inline static constexpr unsigned int SoundSubScriptBase_TypeDefinitionIndex = 67842;
 
 	class SoundSubScriptBase : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

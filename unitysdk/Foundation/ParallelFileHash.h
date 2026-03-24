@@ -13,53 +13,53 @@ namespace System::Diagnostics { class Stopwatch; }
 namespace System::IO { class FileStream; }
 namespace System::Threading { class Thread; }
 
-#define FOUNDATION_PARALLELFILEHASH_ABORT_OFFSET UNITYSDK_OFFSET(0x79F3910)
-#define FOUNDATION_PARALLELFILEHASH_ADDTASKS_OFFSET UNITYSDK_OFFSET(0x79F3170)
-#define FOUNDATION_PARALLELFILEHASH_CHECKALLFINISH_OFFSET UNITYSDK_OFFSET(0x79F14E0)
-#define FOUNDATION_PARALLELFILEHASH_GET_FILEREADRETRYCOUNTMAX_OFFSET UNITYSDK_OFFSET(0x79F16D0)
-#define FOUNDATION_PARALLELFILEHASH_GET_ISFILEREADRETRY_OFFSET UNITYSDK_OFFSET(0x79F1670)
-#define FOUNDATION_PARALLELFILEHASH_GO_OFFSET UNITYSDK_OFFSET(0x79F3420)
-#define FOUNDATION_PARALLELFILEHASH_HASHWORKTHREAD_OFFSET UNITYSDK_OFFSET(0x79EFB90)
-#define FOUNDATION_PARALLELFILEHASH_IOWORKTHREAD_OFFSET UNITYSDK_OFFSET(0x79F17E0)
-#define FOUNDATION_PARALLELFILEHASH_ONHASHFINISH_OFFSET UNITYSDK_OFFSET(0x79F0FD0)
-#define FOUNDATION_PARALLELFILEHASH_ONTASKFAILED_OFFSET UNITYSDK_OFFSET(0x79F1340)
-#define FOUNDATION_PARALLELFILEHASH_OPENFILESTREAM_OFFSET UNITYSDK_OFFSET(0x79F2D90)
-#define FOUNDATION_PARALLELFILEHASH_RESETBLOCK_OFFSET UNITYSDK_OFFSET(0x79F1170)
-#define FOUNDATION_PARALLELFILEHASH_RESET_OFFSET UNITYSDK_OFFSET(0x79F3490)
-#define FOUNDATION_PARALLELFILEHASH_SETCONFIG_OFFSET UNITYSDK_OFFSET(0x79F3390)
-#define FOUNDATION_PARALLELFILEHASH_START_OFFSET UNITYSDK_OFFSET(0x79F37D0)
-#define FOUNDATION_PARALLELFILEHASH__CCTOR_OFFSET UNITYSDK_OFFSET(0x79F3B20)
-#define FOUNDATION_PARALLELFILEHASH__CTOR_OFFSET UNITYSDK_OFFSET(0x79F3980)
+#define FOUNDATION_PARALLELFILEHASH_ABORT_OFFSET UNITYSDK_OFFSET(0xA798750)
+#define FOUNDATION_PARALLELFILEHASH_ADDTASKS_OFFSET UNITYSDK_OFFSET(0xA797FB0)
+#define FOUNDATION_PARALLELFILEHASH_CHECKALLFINISH_OFFSET UNITYSDK_OFFSET(0xA796330)
+#define FOUNDATION_PARALLELFILEHASH_GET_FILEREADRETRYCOUNTMAX_OFFSET UNITYSDK_OFFSET(0xA796520)
+#define FOUNDATION_PARALLELFILEHASH_GET_ISFILEREADRETRY_OFFSET UNITYSDK_OFFSET(0xA7964C0)
+#define FOUNDATION_PARALLELFILEHASH_GO_OFFSET UNITYSDK_OFFSET(0xA798260)
+#define FOUNDATION_PARALLELFILEHASH_HASHWORKTHREAD_OFFSET UNITYSDK_OFFSET(0xA794A00)
+#define FOUNDATION_PARALLELFILEHASH_IOWORKTHREAD_OFFSET UNITYSDK_OFFSET(0xA796630)
+#define FOUNDATION_PARALLELFILEHASH_ONHASHFINISH_OFFSET UNITYSDK_OFFSET(0xA795E20)
+#define FOUNDATION_PARALLELFILEHASH_ONTASKFAILED_OFFSET UNITYSDK_OFFSET(0xA796190)
+#define FOUNDATION_PARALLELFILEHASH_OPENFILESTREAM_OFFSET UNITYSDK_OFFSET(0xA797BD0)
+#define FOUNDATION_PARALLELFILEHASH_RESETBLOCK_OFFSET UNITYSDK_OFFSET(0xA795FC0)
+#define FOUNDATION_PARALLELFILEHASH_RESET_OFFSET UNITYSDK_OFFSET(0xA7982D0)
+#define FOUNDATION_PARALLELFILEHASH_SETCONFIG_OFFSET UNITYSDK_OFFSET(0xA7981D0)
+#define FOUNDATION_PARALLELFILEHASH_START_OFFSET UNITYSDK_OFFSET(0xA798610)
+#define FOUNDATION_PARALLELFILEHASH__CCTOR_OFFSET UNITYSDK_OFFSET(0xA798960)
+#define FOUNDATION_PARALLELFILEHASH__CTOR_OFFSET UNITYSDK_OFFSET(0xA7987C0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ParallelFileHash_TypeDefinitionIndex = 77634;
+	inline static constexpr unsigned int ParallelFileHash_TypeDefinitionIndex = 73486;
 
 	class ParallelFileHash : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet_FileReadRetryCount()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ParallelFileHash_TypeDefinitionIndex)->GetStaticField(0x10A10);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ParallelFileHash_TypeDefinitionIndex)->GetStaticField(0x11200);
 		}
 		// static const ::System::Int32 BlockTimeout = 0x5; // 0x0
-		::System::Diagnostics::Stopwatch* ioStopwatch; // 0x10
-		::System::Diagnostics::Stopwatch* hashStopwatch; // 0x18
-		::System::Object* ioBlock; // 0x20
-		::System::Object* hashCheckBlock; // 0x28
-		::System::Object* fileTaskBlock; // 0x30
-		::System::Collections::Generic::List_1<::Foundation::IFileHashTask*>* finishList; // 0x38
-		::System::Collections::Generic::List_1<::System::Threading::Thread*>* threads; // 0x40
-		::System::Collections::Concurrent::ConcurrentQueue_1<::Foundation::ParallelFileHash_FileChunk>* ioChunks; // 0x48
-		::System::Action_2<::Foundation::IFileHashTask*, ::System::UInt64>* onFileTaskFinish; // 0x50
-		::System::Collections::Concurrent::ConcurrentQueue_1<::Foundation::ParallelFileHash_Task*>* taskQueue; // 0x58
-		::System::Collections::Concurrent::ConcurrentQueue_1<::Foundation::IFileHashTask*>* fileTaskQueue; // 0x60
-		::System::Int32 _taskCount; // 0x68
-		::System::Int32 initialChunks; // 0x6C
-		::System::Boolean stop; // 0x70
-		::System::Int32 hashThreadCount; // 0x74
-		::System::Int32 ioThreadCount; // 0x78
-		::System::Int32 chunkSize; // 0x7C
+		::System::Collections::Concurrent::ConcurrentQueue_1<::Foundation::IFileHashTask*>* fileTaskQueue; // 0x10
+		::System::Object* hashCheckBlock; // 0x18
+		::System::Collections::Concurrent::ConcurrentQueue_1<::Foundation::ParallelFileHash_FileChunk>* ioChunks; // 0x20
+		::System::Collections::Concurrent::ConcurrentQueue_1<::Foundation::ParallelFileHash_Task*>* taskQueue; // 0x28
+		::System::Action_2<::Foundation::IFileHashTask*, ::System::UInt64>* onFileTaskFinish; // 0x30
+		::System::Diagnostics::Stopwatch* hashStopwatch; // 0x38
+		::System::Collections::Generic::List_1<::Foundation::IFileHashTask*>* finishList; // 0x40
+		::System::Object* fileTaskBlock; // 0x48
+		::System::Diagnostics::Stopwatch* ioStopwatch; // 0x50
+		::System::Collections::Generic::List_1<::System::Threading::Thread*>* threads; // 0x58
+		::System::Object* ioBlock; // 0x60
+		::System::Int32 initialChunks; // 0x68
+		::System::Int32 chunkSize; // 0x6C
+		::System::Int32 ioThreadCount; // 0x70
+		::System::Int32 _taskCount; // 0x74
+		::System::Int32 hashThreadCount; // 0x78
+		::System::Boolean stop; // 0x7C
 
 		::System::Void _ctor()
 		{

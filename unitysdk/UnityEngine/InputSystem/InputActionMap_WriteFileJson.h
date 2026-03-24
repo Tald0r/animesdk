@@ -6,12 +6,12 @@
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace UnityEngine::InputSystem { class InputActionMap; }
 
-#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONMAP_WRITEFILEJSON_FROMMAPS_OFFSET UNITYSDK_OFFSET(0x1A587780)
-#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONMAP_WRITEFILEJSON_FROMMAP_OFFSET UNITYSDK_OFFSET(0x1A5876F0)
+#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONMAP_WRITEFILEJSON_FROMMAPS_OFFSET UNITYSDK_OFFSET(0x1AB2AFA0)
+#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONMAP_WRITEFILEJSON_FROMMAP_OFFSET UNITYSDK_OFFSET(0x1AB2AF10)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputActionMap_WriteFileJson_TypeDefinitionIndex = 27430;
+	inline static constexpr unsigned int InputActionMap_WriteFileJson_TypeDefinitionIndex = 28370;
 
 	struct alignas(8) InputActionMap_WriteFileJson
 	{

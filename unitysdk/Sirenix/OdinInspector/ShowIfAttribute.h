@@ -5,20 +5,20 @@
 namespace System { class Object; }
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE_GET_MEMBERNAME_OFFSET UNITYSDK_OFFSET(0x1AB09A10)
-#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE_SET_MEMBERNAME_OFFSET UNITYSDK_OFFSET(0x1AB09A20)
-#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AB09A40)
-#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB09A30)
+#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE_GET_MEMBERNAME_OFFSET UNITYSDK_OFFSET(0x1B115B30)
+#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE_SET_MEMBERNAME_OFFSET UNITYSDK_OFFSET(0x1B115B40)
+#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B115B60)
+#define SIRENIX_ODININSPECTOR_SHOWIFATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115B50)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int ShowIfAttribute_TypeDefinitionIndex = 7217;
+	inline static constexpr unsigned int ShowIfAttribute_TypeDefinitionIndex = 7222;
 
 	class ShowIfAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* Condition; // 0x10
-		::System::Object* Value; // 0x18
+		::System::Object* Value; // 0x10
+		::System::String* Condition; // 0x18
 		::System::Boolean Animate; // 0x20
 
 		::System::Void _ctor(::System::String* condition, ::System::Boolean animate)

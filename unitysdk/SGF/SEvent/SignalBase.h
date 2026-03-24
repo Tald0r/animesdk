@@ -7,36 +7,36 @@
 namespace System { class Delegate; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define SGF_SEVENT_SIGNALBASE_ADDLISTENER_OFFSET UNITYSDK_OFFSET(0x19A5A210)
-#define SGF_SEVENT_SIGNALBASE_GETLISTENERCOUNT_OFFSET UNITYSDK_OFFSET(0x19A5B9B0)
-#define SGF_SEVENT_SIGNALBASE_GET_CUSTOMDEBUGNAME_OFFSET UNITYSDK_OFFSET(0x19A5A020)
-#define SGF_SEVENT_SIGNALBASE_GET__METHODDIC_OFFSET UNITYSDK_OFFSET(0x19A5A0F0)
-#define SGF_SEVENT_SIGNALBASE_GET__METHODS_OFFSET UNITYSDK_OFFSET(0x19A5A040)
-#define SGF_SEVENT_SIGNALBASE_REMOVEALLLISTENERS_OFFSET UNITYSDK_OFFSET(0x19A5B690)
-#define SGF_SEVENT_SIGNALBASE_REMOVELISTENER_OFFSET UNITYSDK_OFFSET(0x19A5AF00)
-#define SGF_SEVENT_SIGNALBASE_SET_CUSTOMDEBUGNAME_OFFSET UNITYSDK_OFFSET(0x19A5A030)
-#define SGF_SEVENT_SIGNALBASE_SET__METHODS_OFFSET UNITYSDK_OFFSET(0x19A5A0E0)
-#define SGF_SEVENT_SIGNALBASE_TRYCLEAN_OFFSET UNITYSDK_OFFSET(0x19A5B950)
-#define SGF_SEVENT_SIGNALBASE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19A5A200)
-#define SGF_SEVENT_SIGNALBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x19A5A1F0)
+#define SGF_SEVENT_SIGNALBASE_ADDLISTENER_OFFSET UNITYSDK_OFFSET(0x1A02C100)
+#define SGF_SEVENT_SIGNALBASE_GETLISTENERCOUNT_OFFSET UNITYSDK_OFFSET(0x1A02D8A0)
+#define SGF_SEVENT_SIGNALBASE_GET_CUSTOMDEBUGNAME_OFFSET UNITYSDK_OFFSET(0x1A02BF10)
+#define SGF_SEVENT_SIGNALBASE_GET__METHODDIC_OFFSET UNITYSDK_OFFSET(0x1A02BFE0)
+#define SGF_SEVENT_SIGNALBASE_GET__METHODS_OFFSET UNITYSDK_OFFSET(0x1A02BF30)
+#define SGF_SEVENT_SIGNALBASE_REMOVEALLLISTENERS_OFFSET UNITYSDK_OFFSET(0x1A02D580)
+#define SGF_SEVENT_SIGNALBASE_REMOVELISTENER_OFFSET UNITYSDK_OFFSET(0x1A02CDF0)
+#define SGF_SEVENT_SIGNALBASE_SET_CUSTOMDEBUGNAME_OFFSET UNITYSDK_OFFSET(0x1A02BF20)
+#define SGF_SEVENT_SIGNALBASE_SET__METHODS_OFFSET UNITYSDK_OFFSET(0x1A02BFD0)
+#define SGF_SEVENT_SIGNALBASE_TRYCLEAN_OFFSET UNITYSDK_OFFSET(0x1A02D840)
+#define SGF_SEVENT_SIGNALBASE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A02C0F0)
+#define SGF_SEVENT_SIGNALBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A02C0E0)
 
 namespace SGF::SEvent
 {
-	inline static constexpr unsigned int SignalBase_TypeDefinitionIndex = 7911;
+	inline static constexpr unsigned int SignalBase_TypeDefinitionIndex = 8181;
 
 	class SignalBase : public ::System::Object
 	{
 	public:
 		static ::System::Boolean* StaticGet_EnableDetailDebugName_ForInvoke()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SignalBase_TypeDefinitionIndex)->GetStaticField(0x11D00);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SignalBase_TypeDefinitionIndex)->GetStaticField(0x11E30);
 		}
-		::Il2CppArray<::SGF::SEvent::SignalBase_DelegateWrapper>* __methods; // 0x10
-		::SGF::SEvent::SignalBase_SCustomDebugName _customDebugName; // 0x18
-		::System::Collections::Generic::Dictionary_2<::System::Delegate*, ::System::Int32>* __methodDic; // 0x28
-		::System::Int32 _methodCount; // 0x30
-		::System::Int32 _capacity; // 0x34
-		::System::Boolean _needClean; // 0x38
+		::SGF::SEvent::SignalBase_SCustomDebugName _customDebugName; // 0x10
+		::System::Collections::Generic::Dictionary_2<::System::Delegate*, ::System::Int32>* __methodDic; // 0x20
+		::Il2CppArray<::SGF::SEvent::SignalBase_DelegateWrapper>* __methods; // 0x28
+		::System::Int32 _capacity; // 0x30
+		::System::Boolean _needClean; // 0x34
+		::System::Int32 _methodCount; // 0x38
 
 		::System::Void _ctor(::System::Int32 capacity)
 		{

@@ -6,13 +6,13 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace UnityEngine { class Animator; }
 
-#define NODECANVAS_TASKS_CONDITIONS_MECANIMISINTRANSITION_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19EA13F0)
-#define NODECANVAS_TASKS_CONDITIONS_MECANIMISINTRANSITION_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19EA1430)
-#define NODECANVAS_TASKS_CONDITIONS_MECANIMISINTRANSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x19EA14A0)
+#define NODECANVAS_TASKS_CONDITIONS_MECANIMISINTRANSITION_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A48EB70)
+#define NODECANVAS_TASKS_CONDITIONS_MECANIMISINTRANSITION_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A48EBB0)
+#define NODECANVAS_TASKS_CONDITIONS_MECANIMISINTRANSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A48EC20)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int MecanimIsInTransition_TypeDefinitionIndex = 25407;
+	inline static constexpr unsigned int MecanimIsInTransition_TypeDefinitionIndex = 27414;
 
 	class MecanimIsInTransition : public ::NodeCanvas::Framework::ConditionTask_1<::UnityEngine::Animator*>
 	{

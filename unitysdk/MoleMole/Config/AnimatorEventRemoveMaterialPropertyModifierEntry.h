@@ -5,12 +5,12 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTREMOVEMATERIALPROPERTYMODIFIERENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xCCED9B0)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTREMOVEMATERIALPROPERTYMODIFIERENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xCCEDA30)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTREMOVEMATERIALPROPERTYMODIFIERENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x7BBA640)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTREMOVEMATERIALPROPERTYMODIFIERENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x7BBA6C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventRemoveMaterialPropertyModifierEntry_TypeDefinitionIndex = 54175;
+	inline static constexpr unsigned int AnimatorEventRemoveMaterialPropertyModifierEntry_TypeDefinitionIndex = 75542;
 
 	class AnimatorEventRemoveMaterialPropertyModifierEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{

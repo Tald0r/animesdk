@@ -4,11 +4,11 @@
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/ScriptableObject.h"
 
-#define PATHCREATION_GLOBALDISPLAYSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A51A3C0)
+#define PATHCREATION_GLOBALDISPLAYSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD3D60)
 
 namespace PathCreation
 {
-	inline static constexpr unsigned int GlobalDisplaySettings_TypeDefinitionIndex = 34291;
+	inline static constexpr unsigned int GlobalDisplaySettings_TypeDefinitionIndex = 35293;
 
 	class GlobalDisplaySettings : public ::UnityEngine::ScriptableObject
 	{

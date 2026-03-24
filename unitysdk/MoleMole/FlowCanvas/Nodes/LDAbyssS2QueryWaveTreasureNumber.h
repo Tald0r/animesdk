@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_2.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2QUERYWAVETREASURENUMBER_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCDB340)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2QUERYWAVETREASURENUMBER__CTOR_OFFSET UNITYSDK_OFFSET(0xCCDB420)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2QUERYWAVETREASURENUMBER_INVOKE_OFFSET UNITYSDK_OFFSET(0xA00AE00)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2QUERYWAVETREASURENUMBER__CTOR_OFFSET UNITYSDK_OFFSET(0xA00AEE0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAbyssS2QueryWaveTreasureNumber_TypeDefinitionIndex = 43499;
+	inline static constexpr unsigned int LDAbyssS2QueryWaveTreasureNumber_TypeDefinitionIndex = 42182;
 
 	class LDAbyssS2QueryWaveTreasureNumber : public ::FlowCanvas::Nodes::PureFunctionNode_2<::System::Int32, ::System::Int32>
 	{

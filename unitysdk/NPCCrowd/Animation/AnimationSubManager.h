@@ -30,87 +30,87 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Avatar; }
 
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGESHAREDDATA_OFFSET UNITYSDK_OFFSET(0x60267D0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGE_OFFSET UNITYSDK_OFFSET(0x60264F0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ALLOCATE_OFFSET UNITYSDK_OFFSET(0x6028930)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_COMPARESTATEHASH_OFFSET UNITYSDK_OFFSET(0x6029450)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_CREATEPROCESSORSFROMCONFIG_OFFSET UNITYSDK_OFFSET(0x6025E10)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_CREATEPROCESSORS_OFFSET UNITYSDK_OFFSET(0x6025EC0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x6027EC0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FINDORADDANIMATION_OFFSET UNITYSDK_OFFSET(0x6027670)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FINDORADDAVATAR_OFFSET UNITYSDK_OFFSET(0x6027340)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FINDORADDSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x60261F0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FREE_OFFSET UNITYSDK_OFFSET(0x6028870)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_GETMONTAGESTARTIDX_OFFSET UNITYSDK_OFFSET(0x6027100)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_GETPARAMETER_OFFSET UNITYSDK_OFFSET(0x6028F30)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_GET_ENABLEFOOTIKGLOBAL_OFFSET UNITYSDK_OFFSET(0x6029740)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INITIALIZEPROCESSORS_OFFSET UNITYSDK_OFFSET(0x6025BF0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x6028B20)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ISVALIDINSTANCE_OFFSET UNITYSDK_OFFSET(0x60287A0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x6028D70)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSTUPDATE_OFFSET UNITYSDK_OFFSET(0x6028CE0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_PREUPDATE_OFFSET UNITYSDK_OFFSET(0x6028BA0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERBOOL_OFFSET UNITYSDK_OFFSET(0x6028E70)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERFLOAT_OFFSET UNITYSDK_OFFSET(0x60292C0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERINT_OFFSET UNITYSDK_OFFSET(0x6029200)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERTRIGGER_OFFSET UNITYSDK_OFFSET(0x6029390)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SET_ENABLEFOOTIKGLOBAL_OFFSET UNITYSDK_OFFSET(0x6029770)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_UPDATEFRAME_OFFSET UNITYSDK_OFFSET(0x6027E30)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_UPDATE_OFFSET UNITYSDK_OFFSET(0x6028C50)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x6029C70)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x60297F0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGESHAREDDATA_OFFSET UNITYSDK_OFFSET(0x69EABA0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGE_OFFSET UNITYSDK_OFFSET(0x69EA8D0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ALLOCATE_OFFSET UNITYSDK_OFFSET(0x69ECD10)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_COMPARESTATEHASH_OFFSET UNITYSDK_OFFSET(0x69ED830)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_CREATEPROCESSORSFROMCONFIG_OFFSET UNITYSDK_OFFSET(0x69EA1F0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_CREATEPROCESSORS_OFFSET UNITYSDK_OFFSET(0x69EA2A0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x69EC2A0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FINDORADDANIMATION_OFFSET UNITYSDK_OFFSET(0x69EBA50)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FINDORADDAVATAR_OFFSET UNITYSDK_OFFSET(0x69EB720)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FINDORADDSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x69EA5D0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FREE_OFFSET UNITYSDK_OFFSET(0x69ECC50)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_GETMONTAGESTARTIDX_OFFSET UNITYSDK_OFFSET(0x69EB4F0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_GETPARAMETER_OFFSET UNITYSDK_OFFSET(0x69ED310)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_GET_ENABLEFOOTIKGLOBAL_OFFSET UNITYSDK_OFFSET(0x69EDB20)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INITIALIZEPROCESSORS_OFFSET UNITYSDK_OFFSET(0x69E9FD0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x69ECF00)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ISVALIDINSTANCE_OFFSET UNITYSDK_OFFSET(0x69ECB80)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x69ED150)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSTUPDATE_OFFSET UNITYSDK_OFFSET(0x69ED0C0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_PREUPDATE_OFFSET UNITYSDK_OFFSET(0x69ECF80)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERBOOL_OFFSET UNITYSDK_OFFSET(0x69ED250)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERFLOAT_OFFSET UNITYSDK_OFFSET(0x69ED6A0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERINT_OFFSET UNITYSDK_OFFSET(0x69ED5E0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SETCONTROLLERPARAMETERTRIGGER_OFFSET UNITYSDK_OFFSET(0x69ED770)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_SET_ENABLEFOOTIKGLOBAL_OFFSET UNITYSDK_OFFSET(0x69EDB50)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_UPDATEFRAME_OFFSET UNITYSDK_OFFSET(0x69EC210)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_UPDATE_OFFSET UNITYSDK_OFFSET(0x69ED030)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x69EE040)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x69EDBD0)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_TypeDefinitionIndex = 71098;
+	inline static constexpr unsigned int AnimationSubManager_TypeDefinitionIndex = 59634;
 
 	class AnimationSubManager : public ::System::Object
 	{
 	public:
+		static ::System::UInt32* StaticGet_debugEntityId()
+		{
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xE240);
+		}
 		static ::System::Single* StaticGet_UpStairVelocityScale()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xDC20);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xE244);
 		}
 		static ::System::Single* StaticGet_DownStairVelocityScale()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xDC24);
-		}
-		static ::System::Boolean* StaticGet_BoneAdjustRecordDebugDataEnd()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xDC28);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xE248);
 		}
 		static ::System::Boolean* StaticGet_DebugApplyPoseWarping()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xDC29);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xE24C);
 		}
-		static ::System::UInt32* StaticGet_debugEntityId()
+		static ::System::Boolean* StaticGet_BoneAdjustRecordDebugDataEnd()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xDC2C);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xE24D);
 		}
 		static ::System::Single* StaticGet_DebugWarpingDistance()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xDC30);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_TypeDefinitionIndex)->GetStaticField(0xE250);
 		}
 		// static const ::System::UInt16 InvalidArchetypeIndex = 0xFFFF; // 0x0
 		// static const ::System::Int32 MaxArchetypeNum = 0xFFFF; // 0x0
 		// static const ::Unity::Collections::Allocator JobTempAllocator; // 0x0
 		// static const ::System::Int32 CurveBufferCapacity = 0x2C; // 0x0
 		// static const ::System::Single DefaultStateTransitionBlendingTime; // 0x0
-		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_AnimationArchetypeData*>* _animations; // 0x10
-		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Animation::AnimationArchetypeKey, ::NPCCrowd::Animation::AnimationSubManager_IndexData>* _animationArchetypeLookupTable; // 0x18
-		::NPCCrowd::Animation::AnimationSubManager_UnSpawnInstanceProcessor* _unSpawnProcessor; // 0x20
-		::NPCCrowd::Animation::AnimationSubManager_AnimationScheduler* _scheduler; // 0x28
-		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_IAnimationProcessor*>* _processors; // 0x30
+		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_AvatarArchetypeData*>* _avatars; // 0x10
+		::NPCCrowd::Animation::AnimationSubManager_UnSpawnInstanceProcessor* _unSpawnProcessor; // 0x18
+		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_StateMachineArchetypeData*>* _stateMachines; // 0x20
+		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::NPCCrowd::Animation::AnimationSubManager_IndexData>* _instanceLookupTable; // 0x28
+		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Animation::AnimationControllerTemplateConfig*, ::System::UInt16>* _stateMachineArchetypeLookupTable; // 0x30
 		::NPCCrowd::Animation::AnimationSubManager_SpawnInstanceProcessor* _spawnProcessor; // 0x38
-		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_AvatarArchetypeData*>* _avatars; // 0x40
-		::System::Collections::Generic::Dictionary_2<::UnityEngine::Avatar*, ::System::UInt16>* _avatarArchetypeLookUpTable; // 0x48
-		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_MontageArchetypeData*>* _montages; // 0x50
-		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Animation::AnimationControllerTemplateConfig*, ::System::UInt16>* _stateMachineArchetypeLookupTable; // 0x58
-		::NPCCrowd::Animation::AnimationSubManager_AnimationSharedData* _sharedData; // 0x60
-		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_StateMachineArchetypeData*>* _stateMachines; // 0x68
-		::System::Collections::Generic::Dictionary_2<::System::UInt32, ::NPCCrowd::Animation::AnimationSubManager_IndexData>* _instanceLookupTable; // 0x70
-		::System::Int32 _frameCount; // 0x78
-		::System::Single _deltaTime; // 0x7C
+		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Animation::AnimationArchetypeKey, ::NPCCrowd::Animation::AnimationSubManager_IndexData>* _animationArchetypeLookupTable; // 0x40
+		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_MontageArchetypeData*>* _montages; // 0x48
+		::NPCCrowd::Animation::AnimationSubManager_AnimationScheduler* _scheduler; // 0x50
+		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_IAnimationProcessor*>* _processors; // 0x58
+		::System::Collections::Generic::Dictionary_2<::UnityEngine::Avatar*, ::System::UInt16>* _avatarArchetypeLookUpTable; // 0x60
+		::System::Collections::Generic::List_1<::NPCCrowd::Animation::AnimationSubManager_AnimationArchetypeData*>* _animations; // 0x68
+		::NPCCrowd::Animation::AnimationSubManager_AnimationSharedData* _sharedData; // 0x70
+		::System::Single _deltaTime; // 0x78
+		::System::Int32 _frameCount; // 0x7C
 		::System::Double _timestamp; // 0x80
 
 		::System::Void _ctor()
@@ -148,9 +148,9 @@ namespace NPCCrowd::Animation
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGE_OFFSET))(this);
 		}
 
-		::System::Void AddMontageSharedData(::System::Int32 montageKey, ::NPCCrowd::Animation::AnimationControllerInstanceConfig* instanceConfig)
+		::System::Void AddMontageSharedData(::System::Int32 montageKey, ::NPCCrowd::Animation::AnimationControllerInstanceConfig* instanceConfig, ::System::Boolean& addedClip)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Int32, ::NPCCrowd::Animation::AnimationControllerInstanceConfig*))((::PBYTE)hIl2Cpp + NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGESHAREDDATA_OFFSET))(this, montageKey, instanceConfig);
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::NPCCrowd::Animation::AnimationControllerInstanceConfig*, ::System::Boolean&))((::PBYTE)hIl2Cpp + NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ADDMONTAGESHAREDDATA_OFFSET))(this, montageKey, instanceConfig, addedClip);
 		}
 
 		::System::Boolean GetMontageStartIdx(::System::Int32 montageKey, ::System::Int32 layer, ::System::Int32& startIdx, ::System::Int32 montageIdx)

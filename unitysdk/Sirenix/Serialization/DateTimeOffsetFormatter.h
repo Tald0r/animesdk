@@ -6,13 +6,13 @@
 namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 
-#define SIRENIX_SERIALIZATION_DATETIMEOFFSETFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B115260)
-#define SIRENIX_SERIALIZATION_DATETIMEOFFSETFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B1153E0)
-#define SIRENIX_SERIALIZATION_DATETIMEOFFSETFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1154C0)
+#define SIRENIX_SERIALIZATION_DATETIMEOFFSETFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B72C5E0)
+#define SIRENIX_SERIALIZATION_DATETIMEOFFSETFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B72C760)
+#define SIRENIX_SERIALIZATION_DATETIMEOFFSETFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B72C840)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int DateTimeOffsetFormatter_TypeDefinitionIndex = 7313;
+	inline static constexpr unsigned int DateTimeOffsetFormatter_TypeDefinitionIndex = 7318;
 
 	class DateTimeOffsetFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::System::DateTimeOffset>
 	{

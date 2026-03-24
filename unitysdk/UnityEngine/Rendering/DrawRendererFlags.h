@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DrawRendererFlags_TypeDefinitionIndex = 6212;
+	inline static constexpr unsigned int DrawRendererFlags_TypeDefinitionIndex = 6216;
 
 	enum class DrawRendererFlags : ::System::Int32
 	{

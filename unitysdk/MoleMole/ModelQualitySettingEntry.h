@@ -4,13 +4,13 @@
 #include "unitysdk/MoleMole/GraphicEnumSettingEntryBase.h"
 #include "unitysdk/MoleMole/GraphicSettingProfileType.h"
 
-#define MOLEMOLE_MODELQUALITYSETTINGENTRY_GET_PROFILETYPE_OFFSET UNITYSDK_OFFSET(0x8B1E2A0)
-#define MOLEMOLE_MODELQUALITYSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x8B1E290)
-#define MOLEMOLE_MODELQUALITYSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x8B1E2B0)
+#define MOLEMOLE_MODELQUALITYSETTINGENTRY_GET_PROFILETYPE_OFFSET UNITYSDK_OFFSET(0xB1A2AD0)
+#define MOLEMOLE_MODELQUALITYSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0xB1A2AC0)
+#define MOLEMOLE_MODELQUALITYSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xB1A2AE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ModelQualitySettingEntry_TypeDefinitionIndex = 60745;
+	inline static constexpr unsigned int ModelQualitySettingEntry_TypeDefinitionIndex = 44181;
 
 	class ModelQualitySettingEntry : public ::MoleMole::GraphicEnumSettingEntryBase
 	{

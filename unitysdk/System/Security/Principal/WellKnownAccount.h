@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT_LOOKUPBYNAME_OFFSET UNITYSDK_OFFSET(0x17FE91B0)
-#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT_LOOKUPBYSDDLFORM_OFFSET UNITYSDK_OFFSET(0x17FE92F0)
-#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT_LOOKUPBYSID_OFFSET UNITYSDK_OFFSET(0x17FE9070)
-#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT__CCTOR_OFFSET UNITYSDK_OFFSET(0x17FE9440)
-#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT__CTOR_OFFSET UNITYSDK_OFFSET(0x17FE9430)
+#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT_LOOKUPBYNAME_OFFSET UNITYSDK_OFFSET(0x1861CBA0)
+#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT_LOOKUPBYSDDLFORM_OFFSET UNITYSDK_OFFSET(0x1861CCE0)
+#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT_LOOKUPBYSID_OFFSET UNITYSDK_OFFSET(0x1861CA60)
+#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1861CE30)
+#define SYSTEM_SECURITY_PRINCIPAL_WELLKNOWNACCOUNT__CTOR_OFFSET UNITYSDK_OFFSET(0x1861CE20)
 
 namespace System::Security::Principal
 {
@@ -22,10 +22,10 @@ namespace System::Security::Principal
 		{
 			return (::Il2CppArray<::System::Security::Principal::WellKnownAccount*>**)Il2CppClass::FromTypeDefinitionIndex(WellKnownAccount_TypeDefinitionIndex)->GetStaticField(0x1570);
 		}
-		::System::String* _Sid_k__BackingField; // 0x10
-		::System::String* _Name_k__BackingField; // 0x18
-		::System::String* _SddlForm_k__BackingField; // 0x20
-		::System::String* _Rid_k__BackingField; // 0x28
+		::System::String* _Rid_k__BackingField; // 0x10
+		::System::String* _SddlForm_k__BackingField; // 0x18
+		::System::String* _Sid_k__BackingField; // 0x20
+		::System::String* _Name_k__BackingField; // 0x28
 		::System::Security::Principal::WellKnownSidType _WellKnownValue_k__BackingField; // 0x30
 		::System::Boolean _IsAbsolute_k__BackingField; // 0x34
 

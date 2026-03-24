@@ -11,17 +11,17 @@ namespace UnityEngine::Playables { class PlayableDirector; }
 namespace UnityEngine::Timeline { class IPropertyCollector; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x7F382E0)
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x7F38420)
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_GATHERPROPERTIES_OFFSET UNITYSDK_OFFSET(0x7F38560)
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_652F102150AC9967_OFFSET UNITYSDK_OFFSET(0x7F388A0)
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET UNITYSDK_OFFSET(0x7F387F0)
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_BAF1B727A81278E6_OFFSET UNITYSDK_OFFSET(0x7F38890)
-#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x7F387C0)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8B8A860)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x8B8A9A0)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_GATHERPROPERTIES_OFFSET UNITYSDK_OFFSET(0x8B8AAE0)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_652F102150AC9967_OFFSET UNITYSDK_OFFSET(0x8B8AD70)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET UNITYSDK_OFFSET(0x8B8ADB0)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_BAF1B727A81278E6_OFFSET UNITYSDK_OFFSET(0x8B8AE50)
+#define MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x8B8AD40)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MihoyoControlTrack_TypeDefinitionIndex = 39545;
+	inline static constexpr unsigned int MihoyoControlTrack_TypeDefinitionIndex = 51290;
 
 	class MihoyoControlTrack : public ::UnityEngine::Timeline::TrackAsset
 	{
@@ -49,6 +49,11 @@ namespace MoleMole::Timeline
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::PlayableDirector*, ::UnityEngine::Timeline::IPropertyCollector*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_GATHERPROPERTIES_OFFSET))(this, a1, a2);
 		}
 
+		::UnityEngine::Playables::Playable Method_5_652F102150AC9967(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::UnityEngine::Timeline::TimelineClip* a3)
+		{
+			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_652F102150AC9967_OFFSET))(this, a1, a2, a3);
+		}
+
 		::UnityEngine::Playables::Playable Method_5_6CBA94B39B120DE0(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::System::Int32 a3)
 		{
 			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET))(this, a1, a2, a3);
@@ -57,11 +62,6 @@ namespace MoleMole::Timeline
 		::System::Void Method_5_BAF1B727A81278E6(::UnityEngine::Playables::PlayableDirector* a1, ::UnityEngine::Timeline::IPropertyCollector* a2)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::PlayableDirector*, ::UnityEngine::Timeline::IPropertyCollector*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_BAF1B727A81278E6_OFFSET))(this, a1, a2);
-		}
-
-		::UnityEngine::Playables::Playable Method_5_652F102150AC9967(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::UnityEngine::Timeline::TimelineClip* a3)
-		{
-			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MIHOYOCONTROLTRACK_METHOD_5_652F102150AC9967_OFFSET))(this, a1, a2, a3);
 		}
 	};
 }

@@ -4,13 +4,13 @@
 
 namespace System { class String; }
 
-#define FLOWCANVAS_NODES_DUMMY_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19155160)
-#define FLOWCANVAS_NODES_DUMMY_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19155170)
-#define FLOWCANVAS_NODES_DUMMY__CTOR_OFFSET UNITYSDK_OFFSET(0x191551F0)
+#define FLOWCANVAS_NODES_DUMMY_GET_NAME_OFFSET UNITYSDK_OFFSET(0x195472C0)
+#define FLOWCANVAS_NODES_DUMMY_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x195472D0)
+#define FLOWCANVAS_NODES_DUMMY__CTOR_OFFSET UNITYSDK_OFFSET(0x19547350)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int Dummy_TypeDefinitionIndex = 25413;
+	inline static constexpr unsigned int Dummy_TypeDefinitionIndex = 26461;
 
 	class Dummy : public ::FlowCanvas::Nodes::FlowControlNode
 	{

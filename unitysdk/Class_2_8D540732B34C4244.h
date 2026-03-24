@@ -9,26 +9,26 @@ namespace MoleMole { class NotificationBadgeEx; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_8D540732B34C4244_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x9FAA050)
-#define CLASS_2_8D540732B34C4244_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9FAA4A0)
-#define CLASS_2_8D540732B34C4244_METHOD_2_EC2B405D0723571D_OFFSET UNITYSDK_OFFSET(0x9FAA2E0)
-#define CLASS_2_8D540732B34C4244__CTOR_OFFSET UNITYSDK_OFFSET(0x9FAA490)
+#define CLASS_2_8D540732B34C4244_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x83E80C0)
+#define CLASS_2_8D540732B34C4244_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x83E8510)
+#define CLASS_2_8D540732B34C4244_METHOD_2_EC2B405D0723571D_OFFSET UNITYSDK_OFFSET(0x83E8350)
+#define CLASS_2_8D540732B34C4244__CTOR_OFFSET UNITYSDK_OFFSET(0x83E8500)
 
-inline static constexpr unsigned int Class_2_8D540732B34C4244_TypeDefinitionIndex = 52242;
+inline static constexpr unsigned int Class_2_8D540732B34C4244_TypeDefinitionIndex = 77612;
 
 class Class_2_8D540732B34C4244 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x30
-	::MoleMole::NotificationBadgeEx* Field_2_2; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x18
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x30
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x38
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x40
-	::Class_2_A8F5ABF31E066ED4* Field_2_9; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x50
-	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x58
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x60
+	::MoleMole::NotificationBadgeEx* Field_2_2; // 0x48
+	::Class_2_A8F5ABF31E066ED4* Field_2_9; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x58
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x60
 
 	::System::Void _ctor()
 	{

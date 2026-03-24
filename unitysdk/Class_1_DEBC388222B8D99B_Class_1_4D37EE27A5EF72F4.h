@@ -6,9 +6,9 @@ namespace MoleMole::Config { class ConfigCameraCutscenes; }
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_DEBC388222B8D99B_CLASS_1_4D37EE27A5EF72F4__CTOR_OFFSET UNITYSDK_OFFSET(0x6A66960)
+#define CLASS_1_DEBC388222B8D99B_CLASS_1_4D37EE27A5EF72F4__CTOR_OFFSET UNITYSDK_OFFSET(0x6F79F50)
 
-inline static constexpr unsigned int Class_1_DEBC388222B8D99B_Class_1_4D37EE27A5EF72F4_TypeDefinitionIndex = 59263;
+inline static constexpr unsigned int Class_1_DEBC388222B8D99B_Class_1_4D37EE27A5EF72F4_TypeDefinitionIndex = 68336;
 
 class Class_1_DEBC388222B8D99B_Class_1_4D37EE27A5EF72F4 : public ::System::Object
 {

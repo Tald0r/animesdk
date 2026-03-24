@@ -3,12 +3,12 @@
 #include "unitysdk/Class_5_B435EF21ED19656E_Enum_3_80C1642A794C15B4.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_3.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETRALLYQUESTCONDPROGRESS_INVOKE_OFFSET UNITYSDK_OFFSET(0xE102570)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETRALLYQUESTCONDPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0xE1027C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETRALLYQUESTCONDPROGRESS_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A66F30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETRALLYQUESTCONDPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0x7A67180)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_SetRallyQuestCondProgress_TypeDefinitionIndex = 42959;
+	inline static constexpr unsigned int LD_SetRallyQuestCondProgress_TypeDefinitionIndex = 63606;
 
 	class LD_SetRallyQuestCondProgress : public ::FlowCanvas::Nodes::CallableActionNode_3<::System::Int32, ::Class_5_B435EF21ED19656E_Enum_3_80C1642A794C15B4, ::System::Int32>
 	{

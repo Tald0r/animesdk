@@ -3,7 +3,7 @@
 
 namespace NodeGraph
 {
-	inline static constexpr unsigned int IGraphConnection_TypeDefinitionIndex = 69294;
+	inline static constexpr unsigned int IGraphConnection_TypeDefinitionIndex = 52425;
 
 	class IGraphConnection
 	{

@@ -4,9 +4,9 @@
 #include "unitysdk/MoleMole/Arcade/CoreBase/ComponentMask.h"
 #include "unitysdk/System/ValueType.h"
 
-#define CLASS_1_903FA27AB1412992_STRUCT_2_F80D45BF1D56A38F__CTOR_OFFSET UNITYSDK_OFFSET(0x95DE50)
+#define CLASS_1_903FA27AB1412992_STRUCT_2_F80D45BF1D56A38F__CTOR_OFFSET UNITYSDK_OFFSET(0x986450)
 
-inline static constexpr unsigned int Class_1_903FA27AB1412992_Struct_2_F80D45BF1D56A38F_TypeDefinitionIndex = 24959;
+inline static constexpr unsigned int Class_1_903FA27AB1412992_Struct_2_F80D45BF1D56A38F_TypeDefinitionIndex = 25715;
 
 struct alignas(8) Class_1_903FA27AB1412992_Struct_2_F80D45BF1D56A38F
 {

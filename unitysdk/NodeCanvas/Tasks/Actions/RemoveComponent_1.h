@@ -7,7 +7,7 @@ namespace UnityEngine { class Transform; }
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int RemoveComponent_1_TypeDefinitionIndex = 26628;
+	inline static constexpr unsigned int RemoveComponent_1_TypeDefinitionIndex = 27125;
 
 	template <typename T>
 	class RemoveComponent_1 : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>

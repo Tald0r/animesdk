@@ -7,7 +7,7 @@ namespace System { class Object; }
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int DTSingleton_1_TypeDefinitionIndex = 24553;
+	inline static constexpr unsigned int DTSingleton_1_TypeDefinitionIndex = 25378;
 
 	template <typename T>
 	class DTSingleton_1 : public ::UnityEngine::MonoBehaviour

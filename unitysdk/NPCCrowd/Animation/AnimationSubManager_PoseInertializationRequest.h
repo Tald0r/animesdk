@@ -3,20 +3,20 @@
 #include "unitysdk/Foundation/DefaultConstruct.h"
 #include "unitysdk/System/ValueType.h"
 
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST_CONSUME_OFFSET UNITYSDK_OFFSET(0x300670)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST_REQUEST_OFFSET UNITYSDK_OFFSET(0x300660)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST__CCTOR_OFFSET UNITYSDK_OFFSET(0x6A11570)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x300690)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST_CONSUME_OFFSET UNITYSDK_OFFSET(0x2FBDF0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST_REQUEST_OFFSET UNITYSDK_OFFSET(0x2FBDE0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST__CCTOR_OFFSET UNITYSDK_OFFSET(0x640CC80)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_POSEINERTIALIZATIONREQUEST__CTOR_OFFSET UNITYSDK_OFFSET(0x2FBE10)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_PoseInertializationRequest_TypeDefinitionIndex = 71203;
+	inline static constexpr unsigned int AnimationSubManager_PoseInertializationRequest_TypeDefinitionIndex = 59689;
 
 	struct alignas(4) AnimationSubManager_PoseInertializationRequest
 	{
 		static ::NPCCrowd::Animation::AnimationSubManager_PoseInertializationRequest* StaticGet_Default()
 		{
-			return (::NPCCrowd::Animation::AnimationSubManager_PoseInertializationRequest*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_PoseInertializationRequest_TypeDefinitionIndex)->GetStaticField(0xA430);
+			return (::NPCCrowd::Animation::AnimationSubManager_PoseInertializationRequest*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_PoseInertializationRequest_TypeDefinitionIndex)->GetStaticField(0xAA50);
 		}
 		::System::Single _duration; // 0x10
 		::System::Int32 _frameCount; // 0x14

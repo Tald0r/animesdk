@@ -5,7 +5,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MaterialPropertyModifierValueColor_TypeDefinitionIndex = 58421;
+	inline static constexpr unsigned int MaterialPropertyModifierValueColor_TypeDefinitionIndex = 47798;
 
 	struct alignas(4) MaterialPropertyModifierValueColor
 	{

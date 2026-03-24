@@ -7,14 +7,14 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_COUNTEROFOBJECTPOOLOFT_DUMP_OFFSET UNITYSDK_OFFSET(0x1AB3E4E0)
-#define FOUNDATION_COUNTEROFOBJECTPOOLOFT_SWAPMARK_OFFSET UNITYSDK_OFFSET(0x1AB3E3B0)
-#define FOUNDATION_COUNTEROFOBJECTPOOLOFT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB3E670)
-#define FOUNDATION_COUNTEROFOBJECTPOOLOFT__UPDATELIST_OFFSET UNITYSDK_OFFSET(0x1AB3DE90)
+#define FOUNDATION_COUNTEROFOBJECTPOOLOFT_DUMP_OFFSET UNITYSDK_OFFSET(0x1B0F5B90)
+#define FOUNDATION_COUNTEROFOBJECTPOOLOFT_SWAPMARK_OFFSET UNITYSDK_OFFSET(0x1B0F5A60)
+#define FOUNDATION_COUNTEROFOBJECTPOOLOFT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0F5D20)
+#define FOUNDATION_COUNTEROFOBJECTPOOLOFT__UPDATELIST_OFFSET UNITYSDK_OFFSET(0x1B0F5550)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int CounterOfObjectPoolOfT_TypeDefinitionIndex = 7872;
+	inline static constexpr unsigned int CounterOfObjectPoolOfT_TypeDefinitionIndex = 7930;
 
 	class CounterOfObjectPoolOfT : public ::System::Object
 	{
@@ -23,13 +23,13 @@ namespace Foundation
 		{
 			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(CounterOfObjectPoolOfT_TypeDefinitionIndex)->GetStaticField(0x6EE0);
 		}
-		static ::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::String*, ::System::Int32>>** StaticGet__samplerNames()
-		{
-			return (::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::String*, ::System::Int32>>**)Il2CppClass::FromTypeDefinitionIndex(CounterOfObjectPoolOfT_TypeDefinitionIndex)->GetStaticField(0x6EE8);
-		}
 		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>** StaticGet_s_counter()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CounterOfObjectPoolOfT_TypeDefinitionIndex)->GetStaticField(0x6EF0);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CounterOfObjectPoolOfT_TypeDefinitionIndex)->GetStaticField(0x6EE8);
+		}
+		static ::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::String*, ::System::Int32>>** StaticGet__samplerNames()
+		{
+			return (::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::String*, ::System::Int32>>**)Il2CppClass::FromTypeDefinitionIndex(CounterOfObjectPoolOfT_TypeDefinitionIndex)->GetStaticField(0x6EF0);
 		}
 
 		static ::System::Void _cctor()

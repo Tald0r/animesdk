@@ -3,12 +3,12 @@
 
 namespace NPCCrowd::Lod
 {
-	inline static constexpr unsigned int NPCCrowdLodManager_LodParam_TypeDefinitionIndex = 68711;
+	inline static constexpr unsigned int NPCCrowdLodManager_LodParam_TypeDefinitionIndex = 56074;
 
 	enum class NPCCrowdLodManager_LodParam : ::System::Int32
 	{
+		Count = 2,
 		Avatar = 0,
 		Camera = 1,
-		Count = 2,
 	};
 }

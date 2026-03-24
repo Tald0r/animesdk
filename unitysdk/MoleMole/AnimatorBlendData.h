@@ -4,17 +4,17 @@
 
 namespace MoleMole { class AnimatorBlendGroup; }
 
-#define MOLEMOLE_ANIMATORBLENDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8015CC0)
+#define MOLEMOLE_ANIMATORBLENDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9CCAA30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AnimatorBlendData_TypeDefinitionIndex = 78315;
+	inline static constexpr unsigned int AnimatorBlendData_TypeDefinitionIndex = 79537;
 
 	class AnimatorBlendData : public ::System::Object
 	{
 	public:
-		::MoleMole::AnimatorBlendGroup* Group1; // 0x10
-		::MoleMole::AnimatorBlendGroup* Group2; // 0x18
+		::MoleMole::AnimatorBlendGroup* Group2; // 0x10
+		::MoleMole::AnimatorBlendGroup* Group1; // 0x18
 
 		::System::Void _ctor()
 		{

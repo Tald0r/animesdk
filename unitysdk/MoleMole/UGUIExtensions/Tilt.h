@@ -4,12 +4,12 @@
 
 namespace UnityEngine::UI { class VertexHelper; }
 
-#define MOLEMOLE_UGUIEXTENSIONS_TILT_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0x8FA81A0)
-#define MOLEMOLE_UGUIEXTENSIONS_TILT__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA8110)
+#define MOLEMOLE_UGUIEXTENSIONS_TILT_MODIFYMESH_OFFSET UNITYSDK_OFFSET(0xC334D40)
+#define MOLEMOLE_UGUIEXTENSIONS_TILT__CTOR_OFFSET UNITYSDK_OFFSET(0xC334CB0)
 
 namespace MoleMole::UGUIExtensions
 {
-	inline static constexpr unsigned int Tilt_TypeDefinitionIndex = 77888;
+	inline static constexpr unsigned int Tilt_TypeDefinitionIndex = 49688;
 
 	class Tilt : public ::UnityEngine::UI::BaseMeshEffect
 	{

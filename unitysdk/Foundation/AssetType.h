@@ -3,12 +3,12 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AssetType_TypeDefinitionIndex = 8031;
+	inline static constexpr unsigned int AssetType_TypeDefinitionIndex = 8288;
 
 	enum class AssetType : ::System::Int32
 	{
 		Default = 0,
-		Effect = 2,
 		UI = 1,
+		Effect = 2,
 	};
 }

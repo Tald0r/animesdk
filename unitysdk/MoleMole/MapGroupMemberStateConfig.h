@@ -5,12 +5,12 @@
 
 namespace UnityEngine { class Animator; }
 
-#define MOLEMOLE_MAPGROUPMEMBERSTATECONFIG_GET_ANIMATOR_OFFSET UNITYSDK_OFFSET(0xE1170B0)
-#define MOLEMOLE_MAPGROUPMEMBERSTATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE117240)
+#define MOLEMOLE_MAPGROUPMEMBERSTATECONFIG_GET_ANIMATOR_OFFSET UNITYSDK_OFFSET(0x7A7CD30)
+#define MOLEMOLE_MAPGROUPMEMBERSTATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7A7CEC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MapGroupMemberStateConfig_TypeDefinitionIndex = 36601;
+	inline static constexpr unsigned int MapGroupMemberStateConfig_TypeDefinitionIndex = 42776;
 
 	class MapGroupMemberStateConfig : public ::UnityEngine::MonoBehaviour
 	{

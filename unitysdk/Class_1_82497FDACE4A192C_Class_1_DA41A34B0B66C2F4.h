@@ -7,17 +7,17 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class RenderTexture; }
 
-#define CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_0A08A3994B2AE9FD_OFFSET UNITYSDK_OFFSET(0xC55B280)
-#define CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0xC55B270)
-#define CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4__CTOR_OFFSET UNITYSDK_OFFSET(0xC55B260)
+#define CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_0A08A3994B2AE9FD_OFFSET UNITYSDK_OFFSET(0xD601280)
+#define CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0xD601470)
+#define CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4__CTOR_OFFSET UNITYSDK_OFFSET(0xD601270)
 
-inline static constexpr unsigned int Class_1_82497FDACE4A192C_Class_1_DA41A34B0B66C2F4_TypeDefinitionIndex = 55662;
+inline static constexpr unsigned int Class_1_82497FDACE4A192C_Class_1_DA41A34B0B66C2F4_TypeDefinitionIndex = 66271;
 
 class Class_1_82497FDACE4A192C_Class_1_DA41A34B0B66C2F4 : public ::System::Object
 {
 public:
-	::System::Action_1<::System::String*>* Field_1_1; // 0x10
-	::UnityEngine::RenderTexture* Field_1_0; // 0x18
+	::UnityEngine::RenderTexture* Field_1_0; // 0x10
+	::System::Action_1<::System::String*>* Field_1_1; // 0x18
 	::System::Boolean Field_1_2; // 0x20
 
 	::System::Void _ctor()
@@ -25,13 +25,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4__CTOR_OFFSET))(this);
 	}
 
-	::System::Boolean Method_1_F0088C88851A7DFB()
-	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_F0088C88851A7DFB_OFFSET))(this);
-	}
-
 	::System::Void Method_1_0A08A3994B2AE9FD(::UnityEngine::Rendering::AsyncGPUReadbackRequest a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::AsyncGPUReadbackRequest))((::PBYTE)hIl2Cpp + CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_0A08A3994B2AE9FD_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_1_F0088C88851A7DFB()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_82497FDACE4A192C_CLASS_1_DA41A34B0B66C2F4_METHOD_1_F0088C88851A7DFB_OFFSET))(this);
 	}
 };

@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_GAMEPADRUMBLEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xCCA5FA0)
+#define MOLEMOLE_CONFIG_GAMEPADRUMBLEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xACD4E80)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int GamepadRumbleEntry_TypeDefinitionIndex = 41128;
+	inline static constexpr unsigned int GamepadRumbleEntry_TypeDefinitionIndex = 72530;
 
 	class GamepadRumbleEntry : public ::System::Object
 	{
 	public:
 		::System::String* EventName; // 0x10
-		::System::Single Amplitude; // 0x18
-		::System::Single Duration; // 0x1C
+		::System::Single Duration; // 0x18
+		::System::Single Amplitude; // 0x1C
 
 		::System::Void _ctor()
 		{

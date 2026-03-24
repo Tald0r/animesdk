@@ -29,118 +29,151 @@ namespace UnityEngine::NAPRenderPipeline0 { template <typename T> class DynamicA
 namespace UnityEngine::Profiling { class CustomSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ADDDATA_OFFSET UNITYSDK_OFFSET(0x18B35A30)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_BUILDCPUCONTEXTDATA_OFFSET UNITYSDK_OFFSET(0x18B37BD0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_COMPUTELOCALSIZE_OFFSET UNITYSDK_OFFSET(0x18B3E380)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_OFFSET UNITYSDK_OFFSET(0x18B38AD0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DOOCCLUSION_EXECUTEONMAIN_OFFSET UNITYSDK_OFFSET(0x18B387E0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DRAWLENSFLAREELEMENT_OFFSET UNITYSDK_OFFSET(0x18B389C0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ENSUREASSETS_OFFSET UNITYSDK_OFFSET(0x18B35800)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETFADETRANSPARENCY_OFFSET UNITYSDK_OFFSET(0x18B377A0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETFLAREDATA0_OFFSET UNITYSDK_OFFSET(0x18B36C30)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETLENSFLARELIGHTATTENUATION_OFFSET UNITYSDK_OFFSET(0x18B3DFC0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETLENSFLARERAYOFFSET_OFFSET UNITYSDK_OFFSET(0x18B36F00)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETORCREATECACHEDLENSFLAREDATA_OFFSET UNITYSDK_OFFSET(0x18B36FE0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_DATA_OFFSET UNITYSDK_OFFSET(0x18B35740)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x18B35680)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x18B35770)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_PREPARECONTEXT_OFFSET UNITYSDK_OFFSET(0x18B370F0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_REMOVEDATA_OFFSET UNITYSDK_OFFSET(0x18B35DB0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_SHAPEATTENUATIONDIRLIGHT_OFFSET UNITYSDK_OFFSET(0x18B36A60)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_SHAPEATTENUATIONPOINTLIGHT_OFFSET UNITYSDK_OFFSET(0x18B36A20)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_SHAPEATTENUATIONSPOTCONELIGHT_OFFSET UNITYSDK_OFFSET(0x18B36AF0)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_UPDATEFORLIGHTS_OFFSET UNITYSDK_OFFSET(0x18B36120)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__CCTOR_OFFSET UNITYSDK_OFFSET(0x18B3E630)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__CTOR_OFFSET UNITYSDK_OFFSET(0x18B35280)
-#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_G__RANDOMRANGE_50_0_OFFSET UNITYSDK_OFFSET(0x18B3E5E0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ADDDATA_OFFSET UNITYSDK_OFFSET(0x18EF81D0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_BUILDCPUCONTEXTDATA_OFFSET UNITYSDK_OFFSET(0x18EF96E0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_COMPUTELOCALSIZE_OFFSET UNITYSDK_OFFSET(0x18EF7C80)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_OFFSET UNITYSDK_OFFSET(0x18EFA090)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DOOCCLUSION_EXECUTEONMAIN_OFFSET UNITYSDK_OFFSET(0x18EF9DA0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DRAWLENSFLAREELEMENT_OFFSET UNITYSDK_OFFSET(0x18EF9F80)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ENSUREASSETS_OFFSET UNITYSDK_OFFSET(0x18EF7FA0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETFADETRANSPARENCY_OFFSET UNITYSDK_OFFSET(0x18EF7490)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETFLAREDATA0_OFFSET UNITYSDK_OFFSET(0x18EF6FD0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETLENSFLARELIGHTATTENUATION_OFFSET UNITYSDK_OFFSET(0x18EF78C0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETLENSFLARERAYOFFSET_OFFSET UNITYSDK_OFFSET(0x18EF72A0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETORCREATECACHEDLENSFLAREDATA_OFFSET UNITYSDK_OFFSET(0x18EF7380)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_DATA_OFFSET UNITYSDK_OFFSET(0x18EF7EE0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x18EF69B0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ISEMPTY_OFFSET UNITYSDK_OFFSET(0x18EF7F10)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_PREPARECONTEXT_OFFSET UNITYSDK_OFFSET(0x18EF91C0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_REMOVEDATA_OFFSET UNITYSDK_OFFSET(0x18EF8550)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_SHAPEATTENUATIONDIRLIGHT_OFFSET UNITYSDK_OFFSET(0x18EF6E00)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_SHAPEATTENUATIONPOINTLIGHT_OFFSET UNITYSDK_OFFSET(0x18EF6DC0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_SHAPEATTENUATIONSPOTCONELIGHT_OFFSET UNITYSDK_OFFSET(0x18EF6E90)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_UPDATEFORLIGHTS_OFFSET UNITYSDK_OFFSET(0x18EF88C0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__CCTOR_OFFSET UNITYSDK_OFFSET(0x18EFF1B0)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__CTOR_OFFSET UNITYSDK_OFFSET(0x18EF6A70)
+#define UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_G__RANDOMRANGE_58_0_OFFSET UNITYSDK_OFFSET(0x18EFF160)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int LensFlareCommonSRP_TypeDefinitionIndex = 28331;
+	inline static constexpr unsigned int LensFlareCommonSRP_TypeDefinitionIndex = 29272;
 
 	class LensFlareCommonSRP : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::UnityEngine::Matrix4x4>** StaticGet_s_FlareMatrix()
-		{
-			return (::Il2CppArray<::UnityEngine::Matrix4x4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21E80);
-		}
 		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_FlareAtlasScaleOffsets()
 		{
-			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21E88);
-		}
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_DoLensFlareDataDrivenCommonSampler()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21E90);
-		}
-		static ::UnityEngine::MaterialPropertyBlock** StaticGet_m_PropertyBlock()
-		{
-			return (::UnityEngine::MaterialPropertyBlock**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21E98);
-		}
-		static ::UnityEngine::Rendering::LensFlareCommonSRP** StaticGet_instance()
-		{
-			return (::UnityEngine::Rendering::LensFlareCommonSRP**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21EA0);
-		}
-		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_FlareDatas4()
-		{
-			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21EA8);
-		}
-		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_FlareDatas1()
-		{
-			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21EB0);
-		}
-		static ::UnityEngine::Mesh** StaticGet_m_QuadMesh()
-		{
-			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21EB8);
-		}
-		static ::Il2CppArray<::System::Single>** StaticGet_s_FlareBlendModes()
-		{
-			return (::Il2CppArray<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21EC0);
-		}
-		static ::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>** StaticGet_m_Data()
-		{
-			return (::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21EC8);
+			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23930);
 		}
 		static ::Il2CppArray<::UnityEngine::Matrix4x4>** StaticGet_instancingMatrices()
 		{
-			return (::Il2CppArray<::UnityEngine::Matrix4x4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21ED0);
+			return (::Il2CppArray<::UnityEngine::Matrix4x4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23938);
+		}
+		static ::UnityEngine::MaterialPropertyBlock** StaticGet_m_PropertyBlock()
+		{
+			return (::UnityEngine::MaterialPropertyBlock**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23940);
+		}
+		static ::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>** StaticGet_m_Data()
+		{
+			return (::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23948);
+		}
+		static ::Il2CppArray<::UnityEngine::Matrix4x4>** StaticGet_s_FlareMatrix()
+		{
+			return (::Il2CppArray<::UnityEngine::Matrix4x4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23950);
+		}
+		static ::Il2CppArray<::System::Single>** StaticGet_s_FlareBlendModes()
+		{
+			return (::Il2CppArray<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23958);
+		}
+		static ::UnityEngine::Mesh** StaticGet_m_QuadMesh()
+		{
+			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23960);
+		}
+		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_FlareDatas1()
+		{
+			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23968);
+		}
+		static ::UnityEngine::Rendering::LensFlareCommonSRP** StaticGet_instance()
+		{
+			return (::UnityEngine::Rendering::LensFlareCommonSRP**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23970);
+		}
+		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_FlareDatas4()
+		{
+			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23978);
 		}
 		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_FlareDatas5()
 		{
-			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x21ED8);
+			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23980);
 		}
-		static ::System::Int32* StaticGet__FlareBlendModes()
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_DoLensFlareDataDrivenCommonSampler()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x65F0);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x23988);
 		}
-		static ::System::Int32* StaticGet__FlareBlendMode()
+		static ::System::Int32* StaticGet__FlareData4()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x65F4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CE0);
 		}
 		static ::System::Int32* StaticGet_s_SizeOfLensFlareOcclusionTestInput()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x65F8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CE4);
+		}
+		static ::System::Int32* StaticGet__FlareBlendMode()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CE8);
+		}
+		static ::System::Int32* StaticGet__FlareAtlasScaleOffset()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CEC);
+		}
+		static ::System::Int32* StaticGet__FlareDatas4()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CF0);
+		}
+		static ::System::Int32* StaticGet__FlareTex()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CF4);
+		}
+		static ::System::Int32* StaticGet__FlareAtlasScaleOffsets()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CF8);
+		}
+		static ::System::Int32* StaticGet__FlareOcclusion()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6CFC);
+		}
+		static ::System::Int32* StaticGet__FlareDatas5()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6D00);
+		}
+		static ::System::Int32* StaticGet__FlareData1()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6D04);
+		}
+		static ::System::Int32* StaticGet__FlareBlendModes()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6D08);
+		}
+		static ::System::Int32* StaticGet__FlareDatas1()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6D0C);
+		}
+		static ::System::Int32* StaticGet__FlareAtlasTex()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6D10);
+		}
+		static ::System::Int32* StaticGet__FlareData5()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LensFlareCommonSRP_TypeDefinitionIndex)->GetStaticField(0x6D14);
 		}
 		// static const ::System::Int32 s_LensFlareMaxCount = 0x80; // 0x0
-		// static const ::System::Int32 maxBatchCount = 0x14; // 0x0
 		// static const ::System::Int32 kDrawIndexedBatchSize = 0x80; // 0x0
-		::System::Random* m_Random; // 0x10
-		::Il2CppArray<::UnityEngine::Rendering::LensFlareCommonSRP_ComponentContext>* componentContext; // 0x18
-		::System::Collections::Generic::Dictionary_2<::UnityEngine::NAPRenderPipeline0::SRPLensFlareType, ::System::Collections::Generic::List_1<::UnityEngine::Rendering::LensFlareCommonSRP_SingleLensFlareData>*>* s_SingleLensFlareDatas; // 0x20
-		::Il2CppArray<::UnityEngine::NAPRenderPipeline0::LensFlareOcclusionTestInput>* inBufferData; // 0x28
+		// static const ::System::Int32 maxBatchCount = 0x14; // 0x0
+		::System::Collections::Generic::Dictionary_2<::UnityEngine::NAPRenderPipeline0::SRPLensFlareType, ::System::Collections::Generic::List_1<::UnityEngine::Rendering::LensFlareCommonSRP_SingleLensFlareData>*>* s_SingleLensFlareDatas; // 0x10
+		::Il2CppArray<::UnityEngine::NAPRenderPipeline0::LensFlareOcclusionTestInput>* inBufferData; // 0x18
+		::System::Random* m_Random; // 0x20
+		::Il2CppArray<::UnityEngine::Rendering::LensFlareCommonSRP_ComponentContext>* componentContext; // 0x28
 		::System::Collections::Generic::Stack_1<::System::Int32>* unusedBufferIndex; // 0x30
-		::System::Int32 _FlareAtlasScaleOffset; // 0x38
-		::System::Int32 _FlareAtlasScaleOffsets; // 0x3C
-		::System::Int32 _FlareData5; // 0x40
-		::System::Int32 _FlareDatas1; // 0x44
-		::System::Int32 _FlareTex; // 0x48
-		::System::Int32 _FlareDatas5; // 0x4C
-		::System::Int32 componentContextCount; // 0x50
-		::System::Int32 _FlareData1; // 0x54
-		::System::Int32 _FlareAtlasTex; // 0x58
-		::System::Int32 _FlareData4; // 0x5C
-		::System::Int32 _FlareOcclusion; // 0x60
-		::System::Int32 _FlareDatas4; // 0x64
+		::System::Int32 componentContextCount; // 0x38
 
 		::System::Void _ctor()
 		{
@@ -155,36 +188,6 @@ namespace UnityEngine::Rendering
 		static ::UnityEngine::Rendering::LensFlareCommonSRP* get_Instance()
 		{
 			return ((::UnityEngine::Rendering::LensFlareCommonSRP*(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_INSTANCE_OFFSET))();
-		}
-
-		::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>* get_Data()
-		{
-			return ((::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_DATA_OFFSET))(this);
-		}
-
-		::System::Boolean IsEmpty()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ISEMPTY_OFFSET))(this);
-		}
-
-		::System::Void EnsureAssets()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ENSUREASSETS_OFFSET))(this);
-		}
-
-		::System::Void AddData(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* newData)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ADDDATA_OFFSET))(this, newData);
-		}
-
-		::System::Void RemoveData(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* data)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_REMOVEDATA_OFFSET))(this, data);
-		}
-
-		::System::Void UpdateForLights()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_UPDATEFORLIGHTS_OFFSET))(this);
 		}
 
 		static ::System::Single ShapeAttenuationPointLight()
@@ -217,6 +220,51 @@ namespace UnityEngine::Rendering
 			return ((::UnityEngine::NAPRenderPipeline0::PerCameraLensFlareData*(*)(::UnityEngine::NAPRenderPipeline0::CameraData&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETORCREATECACHEDLENSFLAREDATA_OFFSET))(cameraData);
 		}
 
+		static ::System::Void GetFadeTransparency(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* comp, ::UnityEngine::NAPRenderPipeline0::PerCameraLensFlareData* cameraLensFlareData, ::UnityEngine::Vector3 viewportPos, ::System::Single& fade)
+		{
+			return ((::System::Void(*)(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*, ::UnityEngine::NAPRenderPipeline0::PerCameraLensFlareData*, ::UnityEngine::Vector3, ::System::Single&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETFADETRANSPARENCY_OFFSET))(comp, cameraLensFlareData, viewportPos, fade);
+		}
+
+		static ::System::Single GetLensFlareLightAttenuation(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* lensFlareComponnet, ::UnityEngine::Vector3 wo)
+		{
+			return ((::System::Single(*)(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETLENSFLARELIGHTATTENUATION_OFFSET))(lensFlareComponnet, wo);
+		}
+
+		static ::UnityEngine::Vector2 ComputeLocalSize(::UnityEngine::Vector2 rayOff, ::UnityEngine::Vector2 rayOff0, ::UnityEngine::Vector2 curSize, ::UnityEngine::AnimationCurve* distortionCurve, ::UnityEngine::Rendering::LensFlareCommonSRP_ComputeLocalSizeParamPack& paramPack)
+		{
+			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::UnityEngine::Vector2, ::UnityEngine::Vector2, ::UnityEngine::AnimationCurve*, ::UnityEngine::Rendering::LensFlareCommonSRP_ComputeLocalSizeParamPack&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_COMPUTELOCALSIZE_OFFSET))(rayOff, rayOff0, curSize, distortionCurve, paramPack);
+		}
+
+		::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>* get_Data()
+		{
+			return ((::UnityEngine::NAPRenderPipeline0::DynamicArray_1<::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GET_DATA_OFFSET))(this);
+		}
+
+		::System::Boolean IsEmpty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ISEMPTY_OFFSET))(this);
+		}
+
+		::System::Void EnsureAssets()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ENSUREASSETS_OFFSET))(this);
+		}
+
+		::System::Void AddData(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* newData)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_ADDDATA_OFFSET))(this, newData);
+		}
+
+		::System::Void RemoveData(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_REMOVEDATA_OFFSET))(this, data);
+		}
+
+		::System::Void UpdateForLights()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_UPDATEFORLIGHTS_OFFSET))(this);
+		}
+
 		::UnityEngine::Rendering::LensFlareCommonSRP_ComponentContext PrepareContext(::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData& runtimeData, ::UnityEngine::NAPRenderPipeline0::CameraData& cameraData)
 		{
 			return ((::UnityEngine::Rendering::LensFlareCommonSRP_ComponentContext(*)(::PVOID, ::UnityEngine::Rendering::LensFlareCommonSRP_LensFlareRuntimeData&, ::UnityEngine::NAPRenderPipeline0::CameraData&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_PREPARECONTEXT_OFFSET))(this, runtimeData, cameraData);
@@ -242,24 +290,9 @@ namespace UnityEngine::Rendering
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CommandBuffer*, ::UnityEngine::Material*, ::UnityEngine::NAPRenderPipeline0::CameraData&, ::System::Single, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_OFFSET))(this, cmd, lensFlareMaterial, cameraData, actualWidth, actualHeight, debugView);
 		}
 
-		static ::System::Void GetFadeTransparency(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* comp, ::UnityEngine::NAPRenderPipeline0::PerCameraLensFlareData* cameraLensFlareData, ::UnityEngine::Vector3 viewportPos, ::System::Single& fade)
+		::System::Single _DoLensFlareDataDrivenCommon_ExecuteOnMain_g__RandomRange_58_0(::System::Single min, ::System::Single max)
 		{
-			return ((::System::Void(*)(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*, ::UnityEngine::NAPRenderPipeline0::PerCameraLensFlareData*, ::UnityEngine::Vector3, ::System::Single&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETFADETRANSPARENCY_OFFSET))(comp, cameraLensFlareData, viewportPos, fade);
-		}
-
-		static ::System::Single GetLensFlareLightAttenuation(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP* lensFlareComponnet, ::UnityEngine::Vector3 wo)
-		{
-			return ((::System::Single(*)(::UnityEngine::NAPRenderPipeline0::LensFlareComponentSRP*, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_GETLENSFLARELIGHTATTENUATION_OFFSET))(lensFlareComponnet, wo);
-		}
-
-		static ::UnityEngine::Vector2 ComputeLocalSize(::UnityEngine::Vector2 rayOff, ::UnityEngine::Vector2 rayOff0, ::UnityEngine::Vector2 curSize, ::UnityEngine::AnimationCurve* distortionCurve, ::UnityEngine::Rendering::LensFlareCommonSRP_ComputeLocalSizeParamPack& paramPack)
-		{
-			return ((::UnityEngine::Vector2(*)(::UnityEngine::Vector2, ::UnityEngine::Vector2, ::UnityEngine::Vector2, ::UnityEngine::AnimationCurve*, ::UnityEngine::Rendering::LensFlareCommonSRP_ComputeLocalSizeParamPack&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP_COMPUTELOCALSIZE_OFFSET))(rayOff, rayOff0, curSize, distortionCurve, paramPack);
-		}
-
-		::System::Single _DoLensFlareDataDrivenCommon_ExecuteOnMain_g__RandomRange_50_0(::System::Single min, ::System::Single max)
-		{
-			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_G__RANDOMRANGE_50_0_OFFSET))(this, min, max);
+			return ((::System::Single(*)(::PVOID, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_LENSFLARECOMMONSRP__DOLENSFLAREDATADRIVENCOMMON_EXECUTEONMAIN_G__RANDOMRANGE_58_0_OFFSET))(this, min, max);
 		}
 	};
 }

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::AI
 {
-	inline static constexpr unsigned int CollectObjects_TypeDefinitionIndex = 34236;
+	inline static constexpr unsigned int CollectObjects_TypeDefinitionIndex = 35240;
 
 	enum class CollectObjects : ::System::Int32
 	{

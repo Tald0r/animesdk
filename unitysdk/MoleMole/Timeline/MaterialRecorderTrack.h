@@ -6,12 +6,12 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_MATERIALRECORDERTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x1A437810)
-#define MOLEMOLE_TIMELINE_MATERIALRECORDERTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4378E0)
+#define MOLEMOLE_TIMELINE_MATERIALRECORDERTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0x1AA02EC0)
+#define MOLEMOLE_TIMELINE_MATERIALRECORDERTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA02F90)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialRecorderTrack_TypeDefinitionIndex = 29170;
+	inline static constexpr unsigned int MaterialRecorderTrack_TypeDefinitionIndex = 30123;
 
 	class MaterialRecorderTrack : public ::MoleMole::Timeline::MaterialBaseTrack
 	{

@@ -3,12 +3,12 @@
 #include "unitysdk/Enum_3_96FABCE3BF07E6CB.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONMULTIPLEADDITIONALCONFIG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0xCCEAD20)
-#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONMULTIPLEADDITIONALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCCEAE60)
+#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONMULTIPLEADDITIONALCONFIG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x7BB7710)
+#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONMULTIPLEADDITIONALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7BB7850)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int OverlookCameraFocusOnMultipleAdditionalConfig_TypeDefinitionIndex = 45818;
+	inline static constexpr unsigned int OverlookCameraFocusOnMultipleAdditionalConfig_TypeDefinitionIndex = 66520;
 
 	class OverlookCameraFocusOnMultipleAdditionalConfig : public ::System::Object
 	{

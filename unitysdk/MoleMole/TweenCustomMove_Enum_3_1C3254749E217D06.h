@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TweenCustomMove_Enum_3_1C3254749E217D06_TypeDefinitionIndex = 70241;
+	inline static constexpr unsigned int TweenCustomMove_Enum_3_1C3254749E217D06_TypeDefinitionIndex = 51235;
 
 	enum class TweenCustomMove_Enum_3_1C3254749E217D06 : ::System::Int32
 	{

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_HOLLOWVIDEOPLAYDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8B17680)
+#define MOLEMOLE_HOLLOWVIDEOPLAYDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB19BED0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int HollowVideoPlayDialogContext_TypeDefinitionIndex = 69406;
+	inline static constexpr unsigned int HollowVideoPlayDialogContext_TypeDefinitionIndex = 74124;
 
 	class HollowVideoPlayDialogContext : public ::MoleMole::UIControllerContextBase
 	{

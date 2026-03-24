@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define FLOWCANVAS_NODES_SENDGLOBALEVENT_INVOKE_OFFSET UNITYSDK_OFFSET(0x19E03250)
-#define FLOWCANVAS_NODES_SENDGLOBALEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19E03260)
+#define FLOWCANVAS_NODES_SENDGLOBALEVENT_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A3F1AD0)
+#define FLOWCANVAS_NODES_SENDGLOBALEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3F1AE0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SendGlobalEvent_TypeDefinitionIndex = 26300;
+	inline static constexpr unsigned int SendGlobalEvent_TypeDefinitionIndex = 27286;
 
 	class SendGlobalEvent : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::String*>
 	{

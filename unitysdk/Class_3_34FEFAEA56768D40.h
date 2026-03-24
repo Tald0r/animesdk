@@ -5,14 +5,14 @@
 namespace Foundation { template <typename T1, typename T2, typename T3> class DoubleKeyDictionary_3; }
 namespace System { class String; }
 
-#define CLASS_3_34FEFAEA56768D40_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x810A9E0)
-#define CLASS_3_34FEFAEA56768D40_METHOD_3_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x810AB60)
-#define CLASS_3_34FEFAEA56768D40_METHOD_3_EBB196BDA3A8423F_OFFSET UNITYSDK_OFFSET(0x810ABC0)
-#define CLASS_3_34FEFAEA56768D40_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x810A900)
-#define CLASS_3_34FEFAEA56768D40__CCTOR_OFFSET UNITYSDK_OFFSET(0x810AA40)
-#define CLASS_3_34FEFAEA56768D40__CTOR_OFFSET UNITYSDK_OFFSET(0x810AAC0)
+#define CLASS_3_34FEFAEA56768D40_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x9A43E50)
+#define CLASS_3_34FEFAEA56768D40_METHOD_3_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x9A43FD0)
+#define CLASS_3_34FEFAEA56768D40_METHOD_3_EBB196BDA3A8423F_OFFSET UNITYSDK_OFFSET(0x9A44030)
+#define CLASS_3_34FEFAEA56768D40_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x9A43D70)
+#define CLASS_3_34FEFAEA56768D40__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A43EB0)
+#define CLASS_3_34FEFAEA56768D40__CTOR_OFFSET UNITYSDK_OFFSET(0x9A43F30)
 
-inline static constexpr unsigned int Class_3_34FEFAEA56768D40_TypeDefinitionIndex = 43622;
+inline static constexpr unsigned int Class_3_34FEFAEA56768D40_TypeDefinitionIndex = 60612;
 
 class Class_3_34FEFAEA56768D40 : public ::Class_2_F3CFF1AFF7EE7DCD
 {
@@ -22,8 +22,8 @@ public:
 	::Foundation::DoubleKeyDictionary_3<::System::String*, ::System::String*, ::System::Single>* Field_3_0; // 0x50
 	::Foundation::DoubleKeyDictionary_3<::System::String*, ::System::String*, ::System::Boolean>* Field_3_3; // 0x58
 	::Foundation::DoubleKeyDictionary_3<::System::String*, ::System::String*, ::System::Single>* Field_3_2; // 0x60
-	::System::Single Field_3_4; // 0x68
-	::System::Single Field_3_6; // 0x6C
+	::System::Single Field_3_6; // 0x68
+	::System::Single Field_3_4; // 0x6C
 	::System::Single Field_3_5; // 0x70
 
 	static ::System::Void _cctor()

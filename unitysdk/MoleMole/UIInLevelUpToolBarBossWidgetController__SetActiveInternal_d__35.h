@@ -9,22 +9,22 @@
 namespace MoleMole { class UIInLevelUpToolBarBossWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIINLEVELUPTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__35_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37EE80)
-#define MOLEMOLE_UIINLEVELUPTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__35_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIINLEVELUPTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__35_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3BC070)
+#define MOLEMOLE_UIINLEVELUPTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__35_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelUpToolBarBossWidgetController__SetActiveInternal_d__35_TypeDefinitionIndex = 71774;
+	inline static constexpr unsigned int UIInLevelUpToolBarBossWidgetController__SetActiveInternal_d__35_TypeDefinitionIndex = 61168;
 
 	struct alignas(8) UIInLevelUpToolBarBossWidgetController__SetActiveInternal_d__35
 	{
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x10
-		::MoleMole::UIInLevelUpToolBarBossWidgetController* __4__this; // 0x20
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x28
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x38
-		::System::Boolean value; // 0x48
-		::System::Boolean _cacheValue_5__2; // 0x49
-		::System::Int32 __1__state; // 0x4C
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x20
+		::MoleMole::UIInLevelUpToolBarBossWidgetController* __4__this; // 0x30
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x38
+		::System::Int32 __1__state; // 0x48
+		::System::Boolean _cacheValue_5__2; // 0x4C
+		::System::Boolean value; // 0x4D
 
 		::System::Void MoveNext()
 		{

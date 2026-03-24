@@ -5,12 +5,12 @@
 
 namespace Foundation::Unreal { class SerializableGameplayTagContainer; }
 
-#define NPCCROWD_AI_AIACTIONTAGHANDLERCONFIG_GETBASEACTIONCONFIG_OFFSET UNITYSDK_OFFSET(0x360FE0)
-#define NPCCROWD_AI_AIACTIONTAGHANDLERCONFIG_ISMULTITHREAD_OFFSET UNITYSDK_OFFSET(0x361050)
+#define NPCCROWD_AI_AIACTIONTAGHANDLERCONFIG_GETBASEACTIONCONFIG_OFFSET UNITYSDK_OFFSET(0x33AF70)
+#define NPCCROWD_AI_AIACTIONTAGHANDLERCONFIG_ISMULTITHREAD_OFFSET UNITYSDK_OFFSET(0x33AFE0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int AIActionTagHandlerConfig_TypeDefinitionIndex = 51708;
+	inline static constexpr unsigned int AIActionTagHandlerConfig_TypeDefinitionIndex = 66261;
 
 	struct alignas(8) AIActionTagHandlerConfig
 	{

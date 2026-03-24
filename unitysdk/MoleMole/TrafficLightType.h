@@ -3,15 +3,15 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TrafficLightType_TypeDefinitionIndex = 58916;
+	inline static constexpr unsigned int TrafficLightType_TypeDefinitionIndex = 48109;
 
 	enum class TrafficLightType : ::System::Int32
 	{
-		Green = 3,
-		Red = 0,
-		Green_Breath = 2,
-		Yellow = 4,
 		None = 5,
+		Yellow = 4,
+		Red = 0,
+		Green = 3,
 		Red_Breath = 1,
+		Green_Breath = 2,
 	};
 }

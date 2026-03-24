@@ -6,10 +6,10 @@ namespace System { class String; }
 namespace System::Net { class Cookie; }
 namespace System::Net { class CookieTokenizer; }
 
-#define SYSTEM_NET_COOKIEPARSER_CHECKQUOTED_OFFSET UNITYSDK_OFFSET(0x18FB98E0)
-#define SYSTEM_NET_COOKIEPARSER_GETSERVER_OFFSET UNITYSDK_OFFSET(0x18FB9940)
-#define SYSTEM_NET_COOKIEPARSER_GET_OFFSET UNITYSDK_OFFSET(0x18FB8EC0)
-#define SYSTEM_NET_COOKIEPARSER__CTOR_OFFSET UNITYSDK_OFFSET(0x18FB8E50)
+#define SYSTEM_NET_COOKIEPARSER_CHECKQUOTED_OFFSET UNITYSDK_OFFSET(0x193A5CE0)
+#define SYSTEM_NET_COOKIEPARSER_GETSERVER_OFFSET UNITYSDK_OFFSET(0x193A5D40)
+#define SYSTEM_NET_COOKIEPARSER_GET_OFFSET UNITYSDK_OFFSET(0x193A52C0)
+#define SYSTEM_NET_COOKIEPARSER__CTOR_OFFSET UNITYSDK_OFFSET(0x193A5250)
 
 namespace System::Net
 {
@@ -18,8 +18,8 @@ namespace System::Net
 	class CookieParser : public ::System::Object
 	{
 	public:
-		::System::Net::CookieTokenizer* m_tokenizer; // 0x10
-		::System::Net::Cookie* m_savedCookie; // 0x18
+		::System::Net::Cookie* m_savedCookie; // 0x10
+		::System::Net::CookieTokenizer* m_tokenizer; // 0x18
 
 		::System::Void _ctor(::System::String* cookieString)
 		{

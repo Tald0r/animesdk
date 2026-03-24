@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_DISPLAYASSTRINGATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AB082F0)
-#define SIRENIX_ODININSPECTOR_DISPLAYASSTRINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB082E0)
+#define SIRENIX_ODININSPECTOR_DISPLAYASSTRINGATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B114370)
+#define SIRENIX_ODININSPECTOR_DISPLAYASSTRINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B114360)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int DisplayAsStringAttribute_TypeDefinitionIndex = 7150;
+	inline static constexpr unsigned int DisplayAsStringAttribute_TypeDefinitionIndex = 7154;
 
 	class DisplayAsStringAttribute : public ::System::Attribute
 	{

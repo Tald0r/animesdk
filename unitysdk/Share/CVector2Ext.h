@@ -5,12 +5,12 @@
 namespace Share { class CVector2; }
 namespace System { class String; }
 
-#define SHARE_CVECTOR2EXT_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x18321730)
-#define SHARE_CVECTOR2EXT_ISGREATERZERO_OFFSET UNITYSDK_OFFSET(0x183217E0)
+#define SHARE_CVECTOR2EXT_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x1B4D9670)
+#define SHARE_CVECTOR2EXT_ISGREATERZERO_OFFSET UNITYSDK_OFFSET(0x1B4D9720)
 
 namespace Share
 {
-	inline static constexpr unsigned int CVector2Ext_TypeDefinitionIndex = 15051;
+	inline static constexpr unsigned int CVector2Ext_TypeDefinitionIndex = 11138;
 
 	class CVector2Ext : public ::System::Object
 	{

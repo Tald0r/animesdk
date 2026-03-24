@@ -5,11 +5,11 @@
 namespace MoleMole::HollowChessboard { class IConfigHollowChessboardBehavior; }
 namespace MoleMole::HollowChessboard { class IConfigHollowEntityBehaviorSelection; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWBEHAVIORWITHSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xE486790)
+#define MOLEMOLE_HOLLOWCHESSBOARD_CONFIGHOLLOWBEHAVIORWITHSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xD80E840)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int ConfigHollowBehaviorWithSelector_TypeDefinitionIndex = 51109;
+	inline static constexpr unsigned int ConfigHollowBehaviorWithSelector_TypeDefinitionIndex = 58697;
 
 	class ConfigHollowBehaviorWithSelector : public ::System::Object
 	{

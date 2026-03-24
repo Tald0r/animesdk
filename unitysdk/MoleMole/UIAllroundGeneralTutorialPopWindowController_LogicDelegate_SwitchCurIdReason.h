@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAllroundGeneralTutorialPopWindowController_LogicDelegate_SwitchCurIdReason_TypeDefinitionIndex = 76752;
+	inline static constexpr unsigned int UIAllroundGeneralTutorialPopWindowController_LogicDelegate_SwitchCurIdReason_TypeDefinitionIndex = 46306;
 
 	enum class UIAllroundGeneralTutorialPopWindowController_LogicDelegate_SwitchCurIdReason : ::System::Int32
 	{

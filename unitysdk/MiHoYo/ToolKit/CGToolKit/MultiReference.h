@@ -7,12 +7,12 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::Timeline { class TimelineAsset; }
 
-#define MIHOYO_TOOLKIT_CGTOOLKIT_MULTIREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x847F3E0)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_MULTIREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x847F0F0)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_MULTIREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x94D7C20)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_MULTIREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x94D7930)
 
 namespace MiHoYo::ToolKit::CGToolKit
 {
-	inline static constexpr unsigned int MultiReference_TypeDefinitionIndex = 71232;
+	inline static constexpr unsigned int MultiReference_TypeDefinitionIndex = 80637;
 
 	class MultiReference : public ::System::Object
 	{

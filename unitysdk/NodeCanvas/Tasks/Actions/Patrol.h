@@ -11,25 +11,25 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::AI { class NavMeshAgent; }
 
-#define NODECANVAS_TASKS_ACTIONS_PATROL_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1B5A70)
-#define NODECANVAS_TASKS_ACTIONS_PATROL_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1A1B62A0)
-#define NODECANVAS_TASKS_ACTIONS_PATROL_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A1B5AE0)
-#define NODECANVAS_TASKS_ACTIONS_PATROL_ONPAUSE_OFFSET UNITYSDK_OFFSET(0x1A1B61E0)
-#define NODECANVAS_TASKS_ACTIONS_PATROL_ONSTOP_OFFSET UNITYSDK_OFFSET(0x1A1B61F0)
-#define NODECANVAS_TASKS_ACTIONS_PATROL_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A1B5F60)
-#define NODECANVAS_TASKS_ACTIONS_PATROL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1B6540)
+#define NODECANVAS_TASKS_ACTIONS_PATROL_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A122E80)
+#define NODECANVAS_TASKS_ACTIONS_PATROL_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1A1236B0)
+#define NODECANVAS_TASKS_ACTIONS_PATROL_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A122EF0)
+#define NODECANVAS_TASKS_ACTIONS_PATROL_ONPAUSE_OFFSET UNITYSDK_OFFSET(0x1A1235F0)
+#define NODECANVAS_TASKS_ACTIONS_PATROL_ONSTOP_OFFSET UNITYSDK_OFFSET(0x1A123600)
+#define NODECANVAS_TASKS_ACTIONS_PATROL_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A123370)
+#define NODECANVAS_TASKS_ACTIONS_PATROL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A123950)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int Patrol_TypeDefinitionIndex = 25995;
+	inline static constexpr unsigned int Patrol_TypeDefinitionIndex = 27499;
 
 	class Patrol : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::AI::NavMeshAgent*>
 	{
 	public:
 		::NodeCanvas::Framework::BBParameter_1<::System::Single>* speed; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* keepDistance; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>* targetList; // 0x68
 		::NodeCanvas::Framework::BBParameter_1<::NodeCanvas::Tasks::Actions::Patrol_PatrolMode>* patrolMode; // 0x70
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>* targetList; // 0x78
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* keepDistance; // 0x78
 		::System::Nullable_1<::UnityEngine::Vector3> lastRequest; // 0x80
 		::System::Int32 index; // 0x90
 

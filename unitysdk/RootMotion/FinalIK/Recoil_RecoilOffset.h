@@ -7,13 +7,13 @@
 namespace RootMotion::FinalIK { class IKSolverFullBodyBiped; }
 namespace RootMotion::FinalIK { class Recoil_RecoilOffset_EffectorLink; }
 
-#define ROOTMOTION_FINALIK_RECOIL_RECOILOFFSET_APPLY_OFFSET UNITYSDK_OFFSET(0x1ADD86E0)
-#define ROOTMOTION_FINALIK_RECOIL_RECOILOFFSET_START_OFFSET UNITYSDK_OFFSET(0x1ADD8630)
-#define ROOTMOTION_FINALIK_RECOIL_RECOILOFFSET__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADD8A10)
+#define ROOTMOTION_FINALIK_RECOIL_RECOILOFFSET_APPLY_OFFSET UNITYSDK_OFFSET(0x1B3ED2B0)
+#define ROOTMOTION_FINALIK_RECOIL_RECOILOFFSET_START_OFFSET UNITYSDK_OFFSET(0x1B3ED200)
+#define ROOTMOTION_FINALIK_RECOIL_RECOILOFFSET__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3ED5E0)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int Recoil_RecoilOffset_TypeDefinitionIndex = 35178;
+	inline static constexpr unsigned int Recoil_RecoilOffset_TypeDefinitionIndex = 36180;
 
 	class Recoil_RecoilOffset : public ::System::Object
 	{

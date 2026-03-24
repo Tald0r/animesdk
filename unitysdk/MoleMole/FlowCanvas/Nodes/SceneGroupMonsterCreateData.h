@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_SCENEGROUPMONSTERCREATEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC2211B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_SCENEGROUPMONSTERCREATEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB837920)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SceneGroupMonsterCreateData_TypeDefinitionIndex = 74921;
+	inline static constexpr unsigned int SceneGroupMonsterCreateData_TypeDefinitionIndex = 78932;
 
 	class SceneGroupMonsterCreateData : public ::System::Object
 	{

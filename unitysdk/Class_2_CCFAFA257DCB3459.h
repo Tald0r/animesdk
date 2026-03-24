@@ -8,12 +8,12 @@ namespace NPCCrowd::Lod { class NPCCrowdPositionAgent; }
 namespace System { class Object; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_2_CCFAFA257DCB3459_METHOD_2_DA0C05F7A3F43143_OFFSET UNITYSDK_OFFSET(0xD25A6A0)
-#define CLASS_2_CCFAFA257DCB3459_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0xD25A800)
-#define CLASS_2_CCFAFA257DCB3459_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0xD25A010)
-#define CLASS_2_CCFAFA257DCB3459__CTOR_OFFSET UNITYSDK_OFFSET(0xD25A770)
+#define CLASS_2_CCFAFA257DCB3459_METHOD_2_824495A1C1E813FA_OFFSET UNITYSDK_OFFSET(0x7550980)
+#define CLASS_2_CCFAFA257DCB3459_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x7550B60)
+#define CLASS_2_CCFAFA257DCB3459_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x7550390)
+#define CLASS_2_CCFAFA257DCB3459__CTOR_OFFSET UNITYSDK_OFFSET(0x7550AD0)
 
-inline static constexpr unsigned int Class_2_CCFAFA257DCB3459_TypeDefinitionIndex = 69742;
+inline static constexpr unsigned int Class_2_CCFAFA257DCB3459_TypeDefinitionIndex = 38600;
 
 class Class_2_CCFAFA257DCB3459 : public ::UnityEngine::Playables::PlayableBehaviour
 {
@@ -36,8 +36,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_CCFAFA257DCB3459_METHOD_2_E5E342154D4EA5F5_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Void Method_2_DA0C05F7A3F43143(::NPCCrowd::Lod::NPCCrowdPositionAgent* a1, ::System::Boolean a2)
+	::System::Void Method_2_824495A1C1E813FA(::NPCCrowd::Lod::NPCCrowdPositionAgent* a1, ::System::Boolean a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::NPCCrowd::Lod::NPCCrowdPositionAgent*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_CCFAFA257DCB3459_METHOD_2_DA0C05F7A3F43143_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::NPCCrowd::Lod::NPCCrowdPositionAgent*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_CCFAFA257DCB3459_METHOD_2_824495A1C1E813FA_OFFSET))(this, a1, a2);
 	}
 };

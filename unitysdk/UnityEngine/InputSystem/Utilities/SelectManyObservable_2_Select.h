@@ -8,7 +8,7 @@ namespace UnityEngine::InputSystem::Utilities { template <typename T1, typename 
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int SelectManyObservable_2_Select_TypeDefinitionIndex = 27956;
+	inline static constexpr unsigned int SelectManyObservable_2_Select_TypeDefinitionIndex = 28896;
 
 	template <typename TSource, typename TResult>
 	class SelectManyObservable_2_Select : public ::System::Object

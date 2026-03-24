@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/UIElements/PointerCaptureEventBase_1.h"
 
-#define UNITYENGINE_UIELEMENTS_POINTERCAPTUREEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18927DB0)
+#define UNITYENGINE_UIELEMENTS_POINTERCAPTUREEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18E7FD50)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int PointerCaptureEvent_TypeDefinitionIndex = 23787;
+	inline static constexpr unsigned int PointerCaptureEvent_TypeDefinitionIndex = 24470;
 
 	class PointerCaptureEvent : public ::UnityEngine::UIElements::PointerCaptureEventBase_1<::UnityEngine::UIElements::PointerCaptureEvent*>
 	{

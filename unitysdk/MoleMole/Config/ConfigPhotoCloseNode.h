@@ -4,12 +4,12 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCLOSENODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xEC2D5A0)
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCLOSENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC2D630)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCLOSENODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCAE9370)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCLOSENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCAE9400)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPhotoCloseNode_TypeDefinitionIndex = 75599;
+	inline static constexpr unsigned int ConfigPhotoCloseNode_TypeDefinitionIndex = 50191;
 
 	class ConfigPhotoCloseNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

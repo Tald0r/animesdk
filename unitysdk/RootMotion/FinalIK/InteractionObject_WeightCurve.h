@@ -5,12 +5,12 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_WEIGHTCURVE_GETVALUE_OFFSET UNITYSDK_OFFSET(0x1A3CCBF0)
-#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_WEIGHTCURVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3CCC20)
+#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_WEIGHTCURVE_GETVALUE_OFFSET UNITYSDK_OFFSET(0x1A991290)
+#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_WEIGHTCURVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9912C0)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int InteractionObject_WeightCurve_TypeDefinitionIndex = 35109;
+	inline static constexpr unsigned int InteractionObject_WeightCurve_TypeDefinitionIndex = 36111;
 
 	class InteractionObject_WeightCurve : public ::System::Object
 	{

@@ -8,13 +8,13 @@ namespace MoleMole::Timeline { class MaterialBaseBehavior; }
 namespace MoleMole::Timeline { class MaterialRecorderBehavior; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_MATERIALRECORDERPLAYABLEASSET_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1ADEA530)
-#define MOLEMOLE_TIMELINE_MATERIALRECORDERPLAYABLEASSET_GET_RECORDER_OFFSET UNITYSDK_OFFSET(0x1ADEA520)
-#define MOLEMOLE_TIMELINE_MATERIALRECORDERPLAYABLEASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADEA610)
+#define MOLEMOLE_TIMELINE_MATERIALRECORDERPLAYABLEASSET_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1B40ACC0)
+#define MOLEMOLE_TIMELINE_MATERIALRECORDERPLAYABLEASSET_GET_RECORDER_OFFSET UNITYSDK_OFFSET(0x1B40ACB0)
+#define MOLEMOLE_TIMELINE_MATERIALRECORDERPLAYABLEASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x1B40AD90)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialRecorderPlayableAsset_TypeDefinitionIndex = 29169;
+	inline static constexpr unsigned int MaterialRecorderPlayableAsset_TypeDefinitionIndex = 30122;
 
 	class MaterialRecorderPlayableAsset : public ::MoleMole::Timeline::MaterialBasePlayableAsset
 	{

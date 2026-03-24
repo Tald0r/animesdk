@@ -11,40 +11,40 @@ namespace System { class String; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7F07960)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7F07C90)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_0_OFFSET UNITYSDK_OFFSET(0x7F07D70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_1_OFFSET UNITYSDK_OFFSET(0x7F07D80)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_2_OFFSET UNITYSDK_OFFSET(0x7F09420)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_3_OFFSET UNITYSDK_OFFSET(0x7F09430)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_4_OFFSET UNITYSDK_OFFSET(0x7F09440)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_G____CALLFLOWOUT_18_5_OFFSET UNITYSDK_OFFSET(0x7F093D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xCD51FA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD522D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_0_OFFSET UNITYSDK_OFFSET(0xCD523B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_1_OFFSET UNITYSDK_OFFSET(0xCD523C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_2_OFFSET UNITYSDK_OFFSET(0xCD53A60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_3_OFFSET UNITYSDK_OFFSET(0xCD53A70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_B__18_4_OFFSET UNITYSDK_OFFSET(0xCD53A80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEEFFECTNODE__REGISTERPORTS_G____CALLFLOWOUT_18_5_OFFSET UNITYSDK_OFFSET(0xCD53A10)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_CreateEffectNode_TypeDefinitionIndex = 47808;
+	inline static constexpr unsigned int LD_CreateEffectNode_TypeDefinitionIndex = 59513;
 
 	class LD_CreateEffectNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::ValueInput_1<::System::Boolean>* IsSpawnOnAnchor; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Single>* minimumInput; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::String*>* effectName; // 0xB8
-		::System::String* _curExtractPosStr; // 0xC0
-		::FlowCanvas::FlowOutput* _flowOutput; // 0xC8
-		::MoleMole::Battle::Entity* _createdEffectEntity; // 0xD0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* isAwayFromTrap; // 0xD8
-		::System::String* _spawnPointName; // 0xE0
-		::FlowCanvas::ValueInput_1<::System::Single>* radiusInput; // 0xE8
-		::FlowCanvas::ValueInput_1<::System::Single>* angleRangeInput; // 0xF0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* additivePriorityFirst; // 0xF8
-		::System::Collections::Generic::HashSet_1<::System::Int32>* alreadySearchedSet; // 0x100
-		::FlowCanvas::ValueInput_1<::System::String*>* extractPos; // 0x108
-		::FlowCanvas::ValueInput_1<::System::String*>* anchorPosPrefixInput; // 0x110
-		::System::Boolean lastChooseLeft; // 0x118
-		::System::Boolean IsInteractive; // 0x119
-		::UnityEngine::Vector3 _curExtractPosV3; // 0x11C
-		::System::Single AnchorPlaneTolerance; // 0x128
+		::FlowCanvas::ValueInput_1<::System::Single>* radiusInput; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* isAwayFromTrap; // 0xB8
+		::System::String* _spawnPointName; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::Single>* angleRangeInput; // 0xC8
+		::System::String* _curExtractPosStr; // 0xD0
+		::FlowCanvas::FlowOutput* _flowOutput; // 0xD8
+		::FlowCanvas::ValueInput_1<::System::String*>* effectName; // 0xE0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* additivePriorityFirst; // 0xE8
+		::MoleMole::Battle::Entity* _createdEffectEntity; // 0xF0
+		::FlowCanvas::ValueInput_1<::System::Single>* minimumInput; // 0xF8
+		::FlowCanvas::ValueInput_1<::System::String*>* anchorPosPrefixInput; // 0x100
+		::System::Collections::Generic::HashSet_1<::System::Int32>* alreadySearchedSet; // 0x108
+		::FlowCanvas::ValueInput_1<::System::String*>* extractPos; // 0x110
+		::System::Single AnchorPlaneTolerance; // 0x118
+		::System::Boolean IsInteractive; // 0x11C
+		::System::Boolean lastChooseLeft; // 0x11D
+		::UnityEngine::Vector3 _curExtractPosV3; // 0x120
 
 		::System::Void _ctor()
 		{

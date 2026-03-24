@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class Gradient; }
 
-#define MOLEMOLE_CONFIG_BUDDYCAMPOUTLINECONFIG_GET_SHOWOUTLINE_OFFSET UNITYSDK_OFFSET(0x13F88EF0)
-#define MOLEMOLE_CONFIG_BUDDYCAMPOUTLINECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x13F88F90)
+#define MOLEMOLE_CONFIG_BUDDYCAMPOUTLINECONFIG_GET_SHOWOUTLINE_OFFSET UNITYSDK_OFFSET(0xF2C2970)
+#define MOLEMOLE_CONFIG_BUDDYCAMPOUTLINECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xF2C2A10)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int BuddyCampOutlineConfig_TypeDefinitionIndex = 73352;
+	inline static constexpr unsigned int BuddyCampOutlineConfig_TypeDefinitionIndex = 41668;
 
 	class BuddyCampOutlineConfig : public ::System::Object
 	{

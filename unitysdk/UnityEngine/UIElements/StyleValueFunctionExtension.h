@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_UIELEMENTS_STYLEVALUEFUNCTIONEXTENSION_TOUSSSTRING_OFFSET UNITYSDK_OFFSET(0x1892E340)
+#define UNITYENGINE_UIELEMENTS_STYLEVALUEFUNCTIONEXTENSION_TOUSSSTRING_OFFSET UNITYSDK_OFFSET(0x18E862D0)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int StyleValueFunctionExtension_TypeDefinitionIndex = 23904;
+	inline static constexpr unsigned int StyleValueFunctionExtension_TypeDefinitionIndex = 24587;
 
 	class StyleValueFunctionExtension : public ::System::Object
 	{

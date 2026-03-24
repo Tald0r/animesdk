@@ -4,13 +4,13 @@
 
 namespace Dest::Math { class OdeFunction; }
 
-#define DEST_MATH_ODESOLVER_GET_STEP_OFFSET UNITYSDK_OFFSET(0x1B1569B0)
-#define DEST_MATH_ODESOLVER_SET_STEP_OFFSET UNITYSDK_OFFSET(0x1B1569C0)
-#define DEST_MATH_ODESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1569D0)
+#define DEST_MATH_ODESOLVER_GET_STEP_OFFSET UNITYSDK_OFFSET(0x1B775B00)
+#define DEST_MATH_ODESOLVER_SET_STEP_OFFSET UNITYSDK_OFFSET(0x1B775B10)
+#define DEST_MATH_ODESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B775B20)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int OdeSolver_TypeDefinitionIndex = 31704;
+	inline static constexpr unsigned int OdeSolver_TypeDefinitionIndex = 32658;
 
 	class OdeSolver : public ::System::Object
 	{

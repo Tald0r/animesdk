@@ -8,11 +8,11 @@ namespace MoleMole::Config { class DynamicInt; }
 namespace MoleMole::Config { class DynamicString; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGLEVELCONDITIONDYNAMICWRAPPER_CREATE_OFFSET UNITYSDK_OFFSET(0x3104A0)
+#define MOLEMOLE_CONFIGLEVELCONDITIONDYNAMICWRAPPER_CREATE_OFFSET UNITYSDK_OFFSET(0x3C0A30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigLevelConditionDynamicWrapper_TypeDefinitionIndex = 55232;
+	inline static constexpr unsigned int ConfigLevelConditionDynamicWrapper_TypeDefinitionIndex = 71412;
 
 	struct alignas(8) ConfigLevelConditionDynamicWrapper
 	{

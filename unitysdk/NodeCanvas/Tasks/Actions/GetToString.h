@@ -6,13 +6,13 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class Object; }
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETTOSTRING_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A269CC0)
-#define NODECANVAS_TASKS_ACTIONS_GETTOSTRING_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A269D30)
-#define NODECANVAS_TASKS_ACTIONS_GETTOSTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x1A269E50)
+#define NODECANVAS_TASKS_ACTIONS_GETTOSTRING_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A831670)
+#define NODECANVAS_TASKS_ACTIONS_GETTOSTRING_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A8316E0)
+#define NODECANVAS_TASKS_ACTIONS_GETTOSTRING__CTOR_OFFSET UNITYSDK_OFFSET(0x1A831800)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetToString_TypeDefinitionIndex = 25234;
+	inline static constexpr unsigned int GetToString_TypeDefinitionIndex = 27542;
 
 	class GetToString : public ::NodeCanvas::Framework::ActionTask
 	{

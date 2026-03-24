@@ -6,11 +6,11 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIABYSSS2EQUIPMENTSELECTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD3A9390)
+#define MOLEMOLE_UIABYSSS2EQUIPMENTSELECTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDEC58F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssS2EquipmentSelectDialogContext_TypeDefinitionIndex = 76170;
+	inline static constexpr unsigned int UIAbyssS2EquipmentSelectDialogContext_TypeDefinitionIndex = 61718;
 
 	class UIAbyssS2EquipmentSelectDialogContext : public ::MoleMole::UIControllerContextBase
 	{

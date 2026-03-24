@@ -5,9 +5,9 @@
 #include "unitysdk/Struct_2_A1A45D8655270887.h"
 #include "unitysdk/UnityEngine/Events/UnityEvent_4.h"
 
-#define CLASS_2_0C0DB953EBA46390_CLASS_3_A6DA15ED429B5E88_1__CTOR_OFFSET UNITYSDK_OFFSET(0x8DE7DD0)
+#define CLASS_2_0C0DB953EBA46390_CLASS_3_A6DA15ED429B5E88_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBDFD270)
 
-inline static constexpr unsigned int Class_2_0C0DB953EBA46390_Class_3_A6DA15ED429B5E88_1_TypeDefinitionIndex = 77175;
+inline static constexpr unsigned int Class_2_0C0DB953EBA46390_Class_3_A6DA15ED429B5E88_1_TypeDefinitionIndex = 73401;
 
 class Class_2_0C0DB953EBA46390_Class_3_A6DA15ED429B5E88_1 : public ::UnityEngine::Events::UnityEvent_4<::Struct_2_A1A45D8655270887, ::MoleMole::HollowChessboard::HollowCell, ::MoleMole::HollowChessboard::HollowCell, ::Enum_3_747AE3BA43CDD61B>
 {

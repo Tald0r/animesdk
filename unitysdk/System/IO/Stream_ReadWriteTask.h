@@ -10,10 +10,10 @@ namespace System::Threading { class ContextCallback; }
 namespace System::Threading { class ExecutionContext; }
 namespace System::Threading::Tasks { class Task; }
 
-#define SYSTEM_IO_STREAM_READWRITETASK_CLEARBEGINSTATE_OFFSET UNITYSDK_OFFSET(0x1913CFF0)
-#define SYSTEM_IO_STREAM_READWRITETASK_INVOKEASYNCCALLBACK_OFFSET UNITYSDK_OFFSET(0x1913D120)
-#define SYSTEM_IO_STREAM_READWRITETASK_SYSTEM_THREADING_TASKS_ITASKCOMPLETIONACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1913D190)
-#define SYSTEM_IO_STREAM_READWRITETASK__CTOR_OFFSET UNITYSDK_OFFSET(0x1913D010)
+#define SYSTEM_IO_STREAM_READWRITETASK_CLEARBEGINSTATE_OFFSET UNITYSDK_OFFSET(0x194E2940)
+#define SYSTEM_IO_STREAM_READWRITETASK_INVOKEASYNCCALLBACK_OFFSET UNITYSDK_OFFSET(0x194E2A70)
+#define SYSTEM_IO_STREAM_READWRITETASK_SYSTEM_THREADING_TASKS_ITASKCOMPLETIONACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x194E2AE0)
+#define SYSTEM_IO_STREAM_READWRITETASK__CTOR_OFFSET UNITYSDK_OFFSET(0x194E2960)
 
 namespace System::IO
 {
@@ -26,13 +26,13 @@ namespace System::IO
 		{
 			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(Stream_ReadWriteTask_TypeDefinitionIndex)->GetStaticField(0xD40);
 		}
-		::Il2CppArray<::System::Byte>* _buffer; // 0x50
-		::System::AsyncCallback* _callback; // 0x58
-		::System::Threading::ExecutionContext* _context; // 0x60
-		::System::IO::Stream* _stream; // 0x68
+		::System::Threading::ExecutionContext* _context; // 0x50
+		::System::IO::Stream* _stream; // 0x58
+		::System::AsyncCallback* _callback; // 0x60
+		::Il2CppArray<::System::Byte>* _buffer; // 0x68
 		::System::Int32 _count; // 0x70
-		::System::Int32 _offset; // 0x74
-		::System::Boolean _isRead; // 0x78
+		::System::Boolean _isRead; // 0x74
+		::System::Int32 _offset; // 0x78
 
 		::System::Void _ctor(::System::Boolean isRead, ::System::Func_2<::System::Object*, ::System::Int32>* function, ::System::Object* state, ::System::IO::Stream* stream, ::Il2CppArray<::System::Byte>* buffer, ::System::Int32 offset, ::System::Int32 count, ::System::AsyncCallback* callback)
 		{

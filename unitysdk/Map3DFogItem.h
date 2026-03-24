@@ -3,16 +3,16 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Bounds.h"
 
-#define MAP3DFOGITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x89D7680)
+#define MAP3DFOGITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xB376FD0)
 
-inline static constexpr unsigned int Map3DFogItem_TypeDefinitionIndex = 74449;
+inline static constexpr unsigned int Map3DFogItem_TypeDefinitionIndex = 54369;
 
 class Map3DFogItem : public ::System::Object
 {
 public:
-	::System::Single lifeTime; // 0x10
-	::System::Single intensity; // 0x14
-	::UnityEngine::Bounds fogBounds; // 0x18
+	::UnityEngine::Bounds fogBounds; // 0x10
+	::System::Single lifeTime; // 0x28
+	::System::Single intensity; // 0x2C
 
 	::System::Void _ctor()
 	{

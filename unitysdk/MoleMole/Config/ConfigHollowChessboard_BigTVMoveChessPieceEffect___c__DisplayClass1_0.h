@@ -6,18 +6,18 @@ namespace MoleMole::Config { class ConfigHollowChessboard_BigTVMoveChessPieceEff
 namespace MoleMole::Config { class ConfigHollowChessboard_ChessEffectBase; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_BIGTVMOVECHESSPIECEEFFECT___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC348330)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_BIGTVMOVECHESSPIECEEFFECT___C__DISPLAYCLASS1_0__RUN_B__0_OFFSET UNITYSDK_OFFSET(0xC348340)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_BIGTVMOVECHESSPIECEEFFECT___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xEC41B00)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_BIGTVMOVECHESSPIECEEFFECT___C__DISPLAYCLASS1_0__RUN_B__0_OFFSET UNITYSDK_OFFSET(0xEC41B10)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_BigTVMoveChessPieceEffect___c__DisplayClass1_0_TypeDefinitionIndex = 59129;
+	inline static constexpr unsigned int ConfigHollowChessboard_BigTVMoveChessPieceEffect___c__DisplayClass1_0_TypeDefinitionIndex = 79822;
 
 	class ConfigHollowChessboard_BigTVMoveChessPieceEffect___c__DisplayClass1_0 : public ::System::Object
 	{
 	public:
-		::System::Action_1<::MoleMole::Config::ConfigHollowChessboard_ChessEffectBase*>* endCallback; // 0x10
-		::MoleMole::Config::ConfigHollowChessboard_BigTVMoveChessPieceEffect* __4__this; // 0x18
+		::MoleMole::Config::ConfigHollowChessboard_BigTVMoveChessPieceEffect* __4__this; // 0x10
+		::System::Action_1<::MoleMole::Config::ConfigHollowChessboard_ChessEffectBase*>* endCallback; // 0x18
 
 		::System::Void _ctor()
 		{

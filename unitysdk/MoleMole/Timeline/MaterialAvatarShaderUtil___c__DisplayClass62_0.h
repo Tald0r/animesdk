@@ -8,12 +8,12 @@ namespace UnityEngine { class Material; }
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialAvatarShaderUtil___c__DisplayClass62_0_TypeDefinitionIndex = 29137;
+	inline static constexpr unsigned int MaterialAvatarShaderUtil___c__DisplayClass62_0_TypeDefinitionIndex = 30090;
 
 	struct alignas(8) MaterialAvatarShaderUtil___c__DisplayClass62_0
 	{
-		::UnityEngine::Material* material; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* avatar_shader_pass; // 0x18
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* avatar_keywords_enable; // 0x20
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* avatar_shader_pass; // 0x10
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* avatar_keywords_enable; // 0x18
+		::UnityEngine::Material* material; // 0x20
 	};
 }

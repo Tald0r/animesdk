@@ -5,29 +5,29 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x17B89C80)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x17B89CC0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__UPDATEOCEANFLOATOBJS_B__60_0_OFFSET UNITYSDK_OFFSET(0x17B89CD0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__UPDATEOCEANFLOATOBJS_B__60_1_OFFSET UNITYSDK_OFFSET(0x17B89D70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x17824E80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x17824EC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__UPDATEOCEANFLOATOBJS_B__60_0_OFFSET UNITYSDK_OFFSET(0x17824ED0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER___C__UPDATEOCEANFLOATOBJS_B__60_1_OFFSET UNITYSDK_OFFSET(0x17824F70)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapOceanManager___c_TypeDefinitionIndex = 28469;
+	inline static constexpr unsigned int NapOceanManager___c_TypeDefinitionIndex = 29412;
 
 	class NapOceanManager___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>** StaticGet___9__60_1()
 		{
-			return (::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager___c_TypeDefinitionIndex)->GetStaticField(0x21490);
-		}
-		static ::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>** StaticGet___9__60_0()
-		{
-			return (::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager___c_TypeDefinitionIndex)->GetStaticField(0x21498);
+			return (::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager___c_TypeDefinitionIndex)->GetStaticField(0x22DD0);
 		}
 		static ::UnityEngine::Rendering::Universal::NapOceanManager___c** StaticGet___9()
 		{
-			return (::UnityEngine::Rendering::Universal::NapOceanManager___c**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager___c_TypeDefinitionIndex)->GetStaticField(0x214A0);
+			return (::UnityEngine::Rendering::Universal::NapOceanManager___c**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager___c_TypeDefinitionIndex)->GetStaticField(0x22DD8);
+		}
+		static ::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>** StaticGet___9__60_0()
+		{
+			return (::System::Action_1<::UnityEngine::Rendering::AsyncGPUReadbackRequest>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager___c_TypeDefinitionIndex)->GetStaticField(0x22DE0);
 		}
 
 		static ::System::Void _cctor()

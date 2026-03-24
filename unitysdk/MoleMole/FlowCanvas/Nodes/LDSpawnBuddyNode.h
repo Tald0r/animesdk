@@ -11,46 +11,46 @@ namespace System { class String; }
 namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE47B6A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE_TRYSETENTITYAICOMPONENTACTIVETAG_OFFSET UNITYSDK_OFFSET(0xE47BFA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE47CE80)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__ONBUDDYREADY_OFFSET UNITYSDK_OFFSET(0xE47B9B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_0_OFFSET UNITYSDK_OFFSET(0xE47CF60)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_1_OFFSET UNITYSDK_OFFSET(0xE47CF70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_2_OFFSET UNITYSDK_OFFSET(0xE47D8A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_3_OFFSET UNITYSDK_OFFSET(0xE47D720)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SETBUDDYPOS_DEPRECATED_OFFSET UNITYSDK_OFFSET(0xE47C120)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SETBUDDYPOS_NEW_OFFSET UNITYSDK_OFFSET(0xE47BAA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SETBUDDYPOS_OFFSET UNITYSDK_OFFSET(0xE47BA10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SPAWNONANCHOR_OFFSET UNITYSDK_OFFSET(0xE47C4E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SYNMODELTRANSFORM_OFFSET UNITYSDK_OFFSET(0xE47BED0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__TRYCALLOUTPUT_OFFSET UNITYSDK_OFFSET(0xE47B910)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xD8036D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE_TRYSETENTITYAICOMPONENTACTIVETAG_OFFSET UNITYSDK_OFFSET(0xD803FC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xD804EA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__ONBUDDYREADY_OFFSET UNITYSDK_OFFSET(0xD8039E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_0_OFFSET UNITYSDK_OFFSET(0xD804F80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_1_OFFSET UNITYSDK_OFFSET(0xD804F90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_2_OFFSET UNITYSDK_OFFSET(0xD8058C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__REGISTERPORTS_B__14_3_OFFSET UNITYSDK_OFFSET(0xD805740)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SETBUDDYPOS_DEPRECATED_OFFSET UNITYSDK_OFFSET(0xD804140)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SETBUDDYPOS_NEW_OFFSET UNITYSDK_OFFSET(0xD803AD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SETBUDDYPOS_OFFSET UNITYSDK_OFFSET(0xD803A40)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SPAWNONANCHOR_OFFSET UNITYSDK_OFFSET(0xD804500)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__SYNMODELTRANSFORM_OFFSET UNITYSDK_OFFSET(0xD803EF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSPAWNBUDDYNODE__TRYCALLOUTPUT_OFFSET UNITYSDK_OFFSET(0xD803940)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSpawnBuddyNode_TypeDefinitionIndex = 43509;
+	inline static constexpr unsigned int LDSpawnBuddyNode_TypeDefinitionIndex = 54285;
 
 	class LDSpawnBuddyNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		// static const ::System::String* BuddyAIActiveStateTag; // 0x0
-		::MoleMole::Battle::Entity* _CreatedBuddy; // 0xA8
-		::System::String* ZoneTag; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* IsSpawnOnAnchor; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Int32>* buddyID; // 0xB0
 		::FlowCanvas::ValueInput_1<::System::Single>* radiusInput; // 0xB8
-		::FlowCanvas::ValueInput_1<::System::Single>* minimumInput; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* IsSpawnOnAnchor; // 0xC8
-		::FlowCanvas::ValueInput_1<::System::String*>* anchorPosPrefixInput; // 0xD0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* banMuteBeSelectedZone; // 0xD8
-		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* _spawnPosExtractXYZ; // 0xE0
-		::FlowCanvas::ValueInput_1<::System::Int32>* buddyID; // 0xE8
-		::System::Collections::Generic::HashSet_1<::System::Int32>* alreadySearchedSet; // 0xF0
-		::FlowCanvas::ValueInput_1<::System::Single>* angleRangeInput; // 0xF8
-		::FlowCanvas::FlowOutput* _output; // 0x100
-		::UnityEngine::Vector3 _curExtractPosV3; // 0x108
-		::System::Boolean IsEnableAI; // 0x114
-		::System::Boolean lastChooseLeft; // 0x115
-		::System::Boolean isOutputCalled; // 0x116
-		::System::Single facdeDirDuration; // 0x118
+		::MoleMole::Battle::Entity* _CreatedBuddy; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* banMuteBeSelectedZone; // 0xC8
+		::System::String* ZoneTag; // 0xD0
+		::System::Collections::Generic::HashSet_1<::System::Int32>* alreadySearchedSet; // 0xD8
+		::FlowCanvas::ValueInput_1<::System::String*>* anchorPosPrefixInput; // 0xE0
+		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* _spawnPosExtractXYZ; // 0xE8
+		::FlowCanvas::ValueInput_1<::System::Single>* angleRangeInput; // 0xF0
+		::FlowCanvas::FlowOutput* _output; // 0xF8
+		::FlowCanvas::ValueInput_1<::System::Single>* minimumInput; // 0x100
+		::System::Single facdeDirDuration; // 0x108
+		::UnityEngine::Vector3 _curExtractPosV3; // 0x10C
+		::System::Boolean isOutputCalled; // 0x118
+		::System::Boolean IsEnableAI; // 0x119
+		::System::Boolean lastChooseLeft; // 0x11A
 
 		::System::Void _ctor()
 		{

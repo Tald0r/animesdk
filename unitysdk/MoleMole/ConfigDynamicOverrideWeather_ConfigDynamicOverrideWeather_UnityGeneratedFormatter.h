@@ -11,26 +11,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9715F10)
-#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9715F20)
-#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9716120)
-#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x97162E0)
-#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x97162A0)
+#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB0A50C0)
+#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB0A50D0)
+#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB0A52D0)
+#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB0A5490)
+#define MOLEMOLE_CONFIGDYNAMICOVERRIDEWEATHER_CONFIGDYNAMICOVERRIDEWEATHER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB0A5450)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter_TypeDefinitionIndex = 38736;
+	inline static constexpr unsigned int ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter_TypeDefinitionIndex = 39208;
 
 	class ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigDynamicOverrideWeather*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherV2Entry>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherV2Entry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C500);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherEntry>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherEntry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C508);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherEntry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DBD0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherV2Entry>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::DynamicOverrideWeatherV2Entry>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigDynamicOverrideWeather_ConfigDynamicOverrideWeather_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DBD8);
 		}
 
 		::System::Void _ctor()

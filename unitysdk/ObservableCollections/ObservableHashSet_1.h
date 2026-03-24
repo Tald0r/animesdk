@@ -14,7 +14,7 @@ namespace System::Collections::Generic { template <typename T> class IEqualityCo
 
 namespace ObservableCollections
 {
-	inline static constexpr unsigned int ObservableHashSet_1_TypeDefinitionIndex = 24315;
+	inline static constexpr unsigned int ObservableHashSet_1_TypeDefinitionIndex = 25060;
 
 	template <typename T>
 	class ObservableHashSet_1 : public ::System::Object

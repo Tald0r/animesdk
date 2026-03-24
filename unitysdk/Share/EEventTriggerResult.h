@@ -3,14 +3,14 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EEventTriggerResult_TypeDefinitionIndex = 16153;
+	inline static constexpr unsigned int EEventTriggerResult_TypeDefinitionIndex = 14759;
 
 	enum class EEventTriggerResult : ::System::Int16
 	{
-		NotFinish = -1,
+		All = 3,
 		Finish = 2,
 		NotTrigger = 0,
-		All = 3,
+		NotFinish = -1,
 		Trigger = 1,
 	};
 }

@@ -7,23 +7,23 @@ namespace MoleMole { class UIHollowItemCollectWidgetController; }
 namespace MoleMole::Config { class ConfigHollowChessboard_ItemCollectLayerConfig; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7A74FF0)
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_0__SHOWEFFECTATPOS_G__GETEFFECLAYERCONFIG_0_OFFSET UNITYSDK_OFFSET(0x7A75000)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAD5AEC0)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_0__SHOWEFFECTATPOS_G__GETEFFECLAYERCONFIG_0_OFFSET UNITYSDK_OFFSET(0xAD5AED0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowItemCollectWidgetController___c__DisplayClass14_0_TypeDefinitionIndex = 62668;
+	inline static constexpr unsigned int UIHollowItemCollectWidgetController___c__DisplayClass14_0_TypeDefinitionIndex = 60076;
 
 	class UIHollowItemCollectWidgetController___c__DisplayClass14_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHollowItemCollectWidgetController* __4__this; // 0x10
-		::System::Action* localCopy; // 0x18
-		::System::Int32 waitCount; // 0x20
+		::System::Action* localCopy; // 0x10
+		::MoleMole::UIHollowItemCollectWidgetController* __4__this; // 0x18
+		::System::Single B; // 0x20
 		::System::Int32 localType; // 0x24
-		::System::Int32 showCount; // 0x28
-		::System::Single B; // 0x2C
-		::System::Single A; // 0x30
+		::System::Single A; // 0x28
+		::System::Int32 waitCount; // 0x2C
+		::System::Int32 showCount; // 0x30
 
 		::System::Void _ctor()
 		{

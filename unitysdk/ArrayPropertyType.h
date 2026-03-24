@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int ArrayPropertyType_TypeDefinitionIndex = 28128;
+inline static constexpr unsigned int ArrayPropertyType_TypeDefinitionIndex = 29068;
 
 enum class ArrayPropertyType : ::System::Int32
 {

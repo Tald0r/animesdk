@@ -8,13 +8,13 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETCLOSERGAMEOBJECTINLIST_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A08A8D0)
-#define NODECANVAS_TASKS_ACTIONS_GETCLOSERGAMEOBJECTINLIST_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A08AB20)
-#define NODECANVAS_TASKS_ACTIONS_GETCLOSERGAMEOBJECTINLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1A08AEA0)
+#define NODECANVAS_TASKS_ACTIONS_GETCLOSERGAMEOBJECTINLIST_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A65D4F0)
+#define NODECANVAS_TASKS_ACTIONS_GETCLOSERGAMEOBJECTINLIST_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A65D740)
+#define NODECANVAS_TASKS_ACTIONS_GETCLOSERGAMEOBJECTINLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65DAC0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetCloserGameObjectInList_TypeDefinitionIndex = 26468;
+	inline static constexpr unsigned int GetCloserGameObjectInList_TypeDefinitionIndex = 25945;
 
 	class GetCloserGameObjectInList : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{

@@ -6,31 +6,31 @@
 namespace Foundation::ViewObject { class ViewObject; }
 namespace System { template <typename T> class Func_1; }
 
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA0375E0)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA037620)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__DORELOADALLGROUP_B__112_0_OFFSET UNITYSDK_OFFSET(0xA037630)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__DORELOADGROUPSUITE_B__113_0_OFFSET UNITYSDK_OFFSET(0xA0376F0)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C___CCTOR_B__161_0_OFFSET UNITYSDK_OFFSET(0xA0377B0)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C___CCTOR_B__161_1_OFFSET UNITYSDK_OFFSET(0xA037830)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x97775D0)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9777610)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__DORELOADALLGROUP_B__112_0_OFFSET UNITYSDK_OFFSET(0x9777620)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C__DORELOADGROUPSUITE_B__113_0_OFFSET UNITYSDK_OFFSET(0x97776E0)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C___CCTOR_B__161_0_OFFSET UNITYSDK_OFFSET(0x97777A0)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER___C___CCTOR_B__161_1_OFFSET UNITYSDK_OFFSET(0x9777820)
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectManager___c_TypeDefinitionIndex = 49682;
+	inline static constexpr unsigned int ViewObjectManager___c_TypeDefinitionIndex = 74559;
 
 	class ViewObjectManager___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_1<::System::Boolean>** StaticGet___9__113_0()
 		{
-			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ViewObjectManager___c_TypeDefinitionIndex)->GetStaticField(0x40B30);
-		}
-		static ::System::Func_1<::System::Boolean>** StaticGet___9__112_0()
-		{
-			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ViewObjectManager___c_TypeDefinitionIndex)->GetStaticField(0x40B38);
+			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ViewObjectManager___c_TypeDefinitionIndex)->GetStaticField(0x449B0);
 		}
 		static ::Foundation::ViewObject::ViewObjectManager___c** StaticGet___9()
 		{
-			return (::Foundation::ViewObject::ViewObjectManager___c**)Il2CppClass::FromTypeDefinitionIndex(ViewObjectManager___c_TypeDefinitionIndex)->GetStaticField(0x40B40);
+			return (::Foundation::ViewObject::ViewObjectManager___c**)Il2CppClass::FromTypeDefinitionIndex(ViewObjectManager___c_TypeDefinitionIndex)->GetStaticField(0x449B8);
+		}
+		static ::System::Func_1<::System::Boolean>** StaticGet___9__112_0()
+		{
+			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ViewObjectManager___c_TypeDefinitionIndex)->GetStaticField(0x449C0);
 		}
 
 		static ::System::Void _cctor()

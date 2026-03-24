@@ -12,26 +12,26 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE4548F0)
-#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE454900)
-#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE454B00)
-#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE454CC0)
-#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE454C80)
+#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xD7DB4D0)
+#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xD7DB4E0)
+#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xD7DB6E0)
+#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xD7DB8A0)
+#define MOLEMOLE_CONFIGUIACTIVITYRHYTHMCLICK_CONFIGUIACTIVITYRHYTHMCLICK_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xD7DB860)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter_TypeDefinitionIndex = 37760;
+	inline static constexpr unsigned int ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter_TypeDefinitionIndex = 66179;
 
 	class ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigUIActivityRhythmClick*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ActivityRhythmClickCurveParamsStruct>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ActivityRhythmClickCurveParamsStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D380);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigCameraNoise*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigCameraNoise*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D388);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigCameraNoise*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40300);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ActivityRhythmClickCurveParamsStruct>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ActivityRhythmClickCurveParamsStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIActivityRhythmClick_ConfigUIActivityRhythmClick_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40308);
 		}
 
 		::System::Void _ctor()

@@ -5,19 +5,19 @@
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define FLOWCANVAS_NODES_EXTRACTORNODE_GETEXTRACTORTYPE_OFFSET UNITYSDK_OFFSET(0x19DAC6A0)
-#define FLOWCANVAS_NODES_EXTRACTORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x19DACCD0)
+#define FLOWCANVAS_NODES_EXTRACTORNODE_GETEXTRACTORTYPE_OFFSET UNITYSDK_OFFSET(0x1A39D8C0)
+#define FLOWCANVAS_NODES_EXTRACTORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A39DEF0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ExtractorNode_TypeDefinitionIndex = 26718;
+	inline static constexpr unsigned int ExtractorNode_TypeDefinitionIndex = 27458;
 
 	class ExtractorNode : public ::FlowCanvas::Nodes::SimplexNode
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Type*>** StaticGet__extractors()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(ExtractorNode_TypeDefinitionIndex)->GetStaticField(0x1F220);
+			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(ExtractorNode_TypeDefinitionIndex)->GetStaticField(0x1FEC0);
 		}
 
 		::System::Void _ctor()

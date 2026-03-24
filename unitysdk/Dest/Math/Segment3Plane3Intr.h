@@ -6,7 +6,7 @@
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int Segment3Plane3Intr_TypeDefinitionIndex = 31674;
+	inline static constexpr unsigned int Segment3Plane3Intr_TypeDefinitionIndex = 32628;
 
 	struct alignas(4) Segment3Plane3Intr
 	{

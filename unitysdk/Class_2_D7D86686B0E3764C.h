@@ -9,20 +9,20 @@ namespace UnityEngine::UI { class LayoutElement; }
 namespace UnityEngine::UI { class VerticalLayoutGroup; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_D7D86686B0E3764C_METHOD_2_9A4D8B3D924EA81A_OFFSET UNITYSDK_OFFSET(0xAB167E0)
-#define CLASS_2_D7D86686B0E3764C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xAB16950)
-#define CLASS_2_D7D86686B0E3764C__CTOR_OFFSET UNITYSDK_OFFSET(0xAB16940)
+#define CLASS_2_D7D86686B0E3764C_METHOD_2_9A4D8B3D924EA81A_OFFSET UNITYSDK_OFFSET(0x84CF6A0)
+#define CLASS_2_D7D86686B0E3764C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x84CF810)
+#define CLASS_2_D7D86686B0E3764C__CTOR_OFFSET UNITYSDK_OFFSET(0x84CF800)
 
-inline static constexpr unsigned int Class_2_D7D86686B0E3764C_TypeDefinitionIndex = 39768;
+inline static constexpr unsigned int Class_2_D7D86686B0E3764C_TypeDefinitionIndex = 61867;
 
 class Class_2_D7D86686B0E3764C : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_9E3E3CDA608A4F58* Field_2_1; // 0x18
-	::UnityEngine::UI::VerticalLayoutGroup* Field_2_2; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x28
-	::Class_2_9E3E3CDA608A4F58* Field_2_4; // 0x30
-	::UnityEngine::UI::LayoutElement* Field_2_3; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x18
+	::Class_2_9E3E3CDA608A4F58* Field_2_1; // 0x20
+	::Class_2_9E3E3CDA608A4F58* Field_2_4; // 0x28
+	::UnityEngine::UI::LayoutElement* Field_2_3; // 0x30
+	::UnityEngine::UI::VerticalLayoutGroup* Field_2_2; // 0x38
 
 	::System::Void _ctor()
 	{

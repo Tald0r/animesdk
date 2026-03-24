@@ -6,13 +6,13 @@
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_CAMERACAPTUREACTION_EQUALS_OFFSET UNITYSDK_OFFSET(0x1842F8A0)
-#define UNITYENGINE_RENDERING_CAMERACAPTUREACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1842F940)
-#define UNITYENGINE_RENDERING_CAMERACAPTUREACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1842F890)
+#define UNITYENGINE_RENDERING_CAMERACAPTUREACTION_EQUALS_OFFSET UNITYSDK_OFFSET(0x18A34A80)
+#define UNITYENGINE_RENDERING_CAMERACAPTUREACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x18A34B20)
+#define UNITYENGINE_RENDERING_CAMERACAPTUREACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x18A34A70)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int CameraCaptureAction_TypeDefinitionIndex = 9580;
+	inline static constexpr unsigned int CameraCaptureAction_TypeDefinitionIndex = 9582;
 
 	class CameraCaptureAction : public ::System::Object
 	{

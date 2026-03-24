@@ -3,7 +3,7 @@
 
 namespace Unity::IL2CPP::CompilerServices
 {
-	inline static constexpr unsigned int NAPOption_TypeDefinitionIndex = 9487;
+	inline static constexpr unsigned int NAPOption_TypeDefinitionIndex = 9489;
 
 	enum class NAPOption : ::System::Int32
 	{

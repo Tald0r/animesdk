@@ -7,12 +7,12 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Material; }
 
-#define MOLEMOLE_CONFIG_CONFIGACTIVITYLIVEHOUSELEVELSCENE_GETFLOORMATERIAL_OFFSET UNITYSDK_OFFSET(0x9B5C180)
-#define MOLEMOLE_CONFIG_CONFIGACTIVITYLIVEHOUSELEVELSCENE__CTOR_OFFSET UNITYSDK_OFFSET(0x9B5C2A0)
+#define MOLEMOLE_CONFIG_CONFIGACTIVITYLIVEHOUSELEVELSCENE_GETFLOORMATERIAL_OFFSET UNITYSDK_OFFSET(0xB46BF70)
+#define MOLEMOLE_CONFIG_CONFIGACTIVITYLIVEHOUSELEVELSCENE__CTOR_OFFSET UNITYSDK_OFFSET(0xB46C090)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigActivityLiveHouseLevelScene_TypeDefinitionIndex = 71521;
+	inline static constexpr unsigned int ConfigActivityLiveHouseLevelScene_TypeDefinitionIndex = 54845;
 
 	class ConfigActivityLiveHouseLevelScene : public ::Foundation::MihoyoSerializedScriptableObject
 	{

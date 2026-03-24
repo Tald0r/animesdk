@@ -4,11 +4,11 @@
 
 namespace MoleMole::FlowCanvas::Nodes { class ChessboardIconAnimAdditive_AdditiveParam; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDICONANIMADDITIVE___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xF19D6A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDICONANIMADDITIVE___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xEC7F550)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardIconAnimAdditive___c__DisplayClass1_0_TypeDefinitionIndex = 50870;
+	inline static constexpr unsigned int ChessboardIconAnimAdditive___c__DisplayClass1_0_TypeDefinitionIndex = 63983;
 
 	class ChessboardIconAnimAdditive___c__DisplayClass1_0 : public ::System::Object
 	{

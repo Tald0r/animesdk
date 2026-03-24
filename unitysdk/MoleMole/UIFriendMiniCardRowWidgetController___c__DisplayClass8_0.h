@@ -5,18 +5,18 @@
 namespace MoleMole { class UIFriendMiniCardRowWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CLICKSHAREBTN_B__0_OFFSET UNITYSDK_OFFSET(0xBF0F060)
-#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF0F050)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CLICKSHAREBTN_B__0_OFFSET UNITYSDK_OFFSET(0xA976200)
+#define MOLEMOLE_UIFRIENDMINICARDROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA9761F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendMiniCardRowWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 58456;
+	inline static constexpr unsigned int UIFriendMiniCardRowWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 74091;
 
 	class UIFriendMiniCardRowWidgetController___c__DisplayClass8_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIFriendMiniCardRowWidgetController* __4__this; // 0x10
-		::System::Action* onSuccessClick; // 0x18
+		::System::Action* onSuccessClick; // 0x10
+		::MoleMole::UIFriendMiniCardRowWidgetController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

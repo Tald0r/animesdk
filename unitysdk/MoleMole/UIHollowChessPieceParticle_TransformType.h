@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowChessPieceParticle_TransformType_TypeDefinitionIndex = 39893;
+	inline static constexpr unsigned int UIHollowChessPieceParticle_TransformType_TypeDefinitionIndex = 49741;
 
 	enum class UIHollowChessPieceParticle_TransformType : ::System::Int32
 	{

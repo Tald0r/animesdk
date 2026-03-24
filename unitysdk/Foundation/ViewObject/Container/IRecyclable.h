@@ -3,7 +3,7 @@
 
 namespace Foundation::ViewObject::Container
 {
-	inline static constexpr unsigned int IRecyclable_TypeDefinitionIndex = 46501;
+	inline static constexpr unsigned int IRecyclable_TypeDefinitionIndex = 63055;
 
 	class IRecyclable
 	{

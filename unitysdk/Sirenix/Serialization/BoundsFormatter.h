@@ -8,21 +8,21 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B142150)
-#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B142280)
-#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B142410)
-#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1423B0)
+#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B75EF30)
+#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B75F060)
+#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B75F1F0)
+#define SIRENIX_SERIALIZATION_BOUNDSFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B75F190)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int BoundsFormatter_TypeDefinitionIndex = 7436;
+	inline static constexpr unsigned int BoundsFormatter_TypeDefinitionIndex = 7441;
 
 	class BoundsFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::UnityEngine::Bounds>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::Vector3>** StaticGet_Vector3Serializer()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(BoundsFormatter_TypeDefinitionIndex)->GetStaticField(0x63C0);
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(BoundsFormatter_TypeDefinitionIndex)->GetStaticField(0x6400);
 		}
 
 		::System::Void _ctor()

@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS30_0__CTOR_OFFSET UNITYSDK_OFFSET(0xF0C3790)
-#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS30_0__UPDATETIPINFO_B__0_OFFSET UNITYSDK_OFFSET(0xF0C7750)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS30_0__CTOR_OFFSET UNITYSDK_OFFSET(0xEA3B250)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS30_0__UPDATETIPINFO_B__0_OFFSET UNITYSDK_OFFSET(0xEA3F1F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int VOPerformSubSystem___c__DisplayClass30_0_TypeDefinitionIndex = 62439;
+	inline static constexpr unsigned int VOPerformSubSystem___c__DisplayClass30_0_TypeDefinitionIndex = 55337;
 
 	class VOPerformSubSystem___c__DisplayClass30_0 : public ::System::Object
 	{

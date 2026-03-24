@@ -3,20 +3,20 @@
 #include "unitysdk/FlowCanvas/Flow.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTARTSHOOTBEATMAP___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC21CC10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTARTSHOOTBEATMAP___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC21CC50)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTARTSHOOTBEATMAP___C__REGISTERPORTS_G__STOP_5_0_OFFSET UNITYSDK_OFFSET(0xC21CC60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTARTSHOOTBEATMAP___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB833380)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTARTSHOOTBEATMAP___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB8333C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTARTSHOOTBEATMAP___C__REGISTERPORTS_G__STOP_5_0_OFFSET UNITYSDK_OFFSET(0xB8333D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDStartShootBeatMap___c_TypeDefinitionIndex = 55023;
+	inline static constexpr unsigned int LDStartShootBeatMap___c_TypeDefinitionIndex = 48258;
 
 	class LDStartShootBeatMap___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::FlowCanvas::Nodes::LDStartShootBeatMap___c** StaticGet___9()
 		{
-			return (::MoleMole::FlowCanvas::Nodes::LDStartShootBeatMap___c**)Il2CppClass::FromTypeDefinitionIndex(LDStartShootBeatMap___c_TypeDefinitionIndex)->GetStaticField(0x32180);
+			return (::MoleMole::FlowCanvas::Nodes::LDStartShootBeatMap___c**)Il2CppClass::FromTypeDefinitionIndex(LDStartShootBeatMap___c_TypeDefinitionIndex)->GetStaticField(0x33FF0);
 		}
 
 		static ::System::Void _cctor()

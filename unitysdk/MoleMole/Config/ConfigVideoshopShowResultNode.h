@@ -5,12 +5,12 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGVIDEOSHOPSHOWRESULTNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x8060BC0)
-#define MOLEMOLE_CONFIG_CONFIGVIDEOSHOPSHOWRESULTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x8060C50)
+#define MOLEMOLE_CONFIG_CONFIGVIDEOSHOPSHOWRESULTNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x9D13D00)
+#define MOLEMOLE_CONFIG_CONFIGVIDEOSHOPSHOWRESULTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9D13D90)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigVideoshopShowResultNode_TypeDefinitionIndex = 71498;
+	inline static constexpr unsigned int ConfigVideoshopShowResultNode_TypeDefinitionIndex = 63966;
 
 	class ConfigVideoshopShowResultNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

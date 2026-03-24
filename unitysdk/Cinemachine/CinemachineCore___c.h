@@ -5,24 +5,24 @@
 namespace Cinemachine { class CinemachineVirtualCameraBase; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define CINEMACHINE_CINEMACHINECORE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AF5DD30)
-#define CINEMACHINE_CINEMACHINECORE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF5DD60)
-#define CINEMACHINE_CINEMACHINECORE___C__GETVIRTUALCAMERA_B__30_0_OFFSET UNITYSDK_OFFSET(0x1AF5DD70)
+#define CINEMACHINE_CINEMACHINECORE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B581B20)
+#define CINEMACHINE_CINEMACHINECORE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B581B50)
+#define CINEMACHINE_CINEMACHINECORE___C__GETVIRTUALCAMERA_B__30_0_OFFSET UNITYSDK_OFFSET(0x1B581B60)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineCore___c_TypeDefinitionIndex = 31077;
+	inline static constexpr unsigned int CinemachineCore___c_TypeDefinitionIndex = 32029;
 
 	class CinemachineCore___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::Cinemachine::CinemachineVirtualCameraBase*>** StaticGet___9__30_0()
-		{
-			return (::System::Comparison_1<::Cinemachine::CinemachineVirtualCameraBase*>**)Il2CppClass::FromTypeDefinitionIndex(CinemachineCore___c_TypeDefinitionIndex)->GetStaticField(0x23820);
-		}
 		static ::Cinemachine::CinemachineCore___c** StaticGet___9()
 		{
-			return (::Cinemachine::CinemachineCore___c**)Il2CppClass::FromTypeDefinitionIndex(CinemachineCore___c_TypeDefinitionIndex)->GetStaticField(0x23828);
+			return (::Cinemachine::CinemachineCore___c**)Il2CppClass::FromTypeDefinitionIndex(CinemachineCore___c_TypeDefinitionIndex)->GetStaticField(0x25140);
+		}
+		static ::System::Comparison_1<::Cinemachine::CinemachineVirtualCameraBase*>** StaticGet___9__30_0()
+		{
+			return (::System::Comparison_1<::Cinemachine::CinemachineVirtualCameraBase*>**)Il2CppClass::FromTypeDefinitionIndex(CinemachineCore___c_TypeDefinitionIndex)->GetStaticField(0x25148);
 		}
 
 		static ::System::Void _cctor()

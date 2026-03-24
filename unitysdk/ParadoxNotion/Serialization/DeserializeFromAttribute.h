@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define PARADOXNOTION_SERIALIZATION_DESERIALIZEFROMATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19763D40)
+#define PARADOXNOTION_SERIALIZATION_DESERIALIZEFROMATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19C31BD0)
 
 namespace ParadoxNotion::Serialization
 {
-	inline static constexpr unsigned int DeserializeFromAttribute_TypeDefinitionIndex = 26445;
+	inline static constexpr unsigned int DeserializeFromAttribute_TypeDefinitionIndex = 26583;
 
 	class DeserializeFromAttribute : public ::System::Attribute
 	{

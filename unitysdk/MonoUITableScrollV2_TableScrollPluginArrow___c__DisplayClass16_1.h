@@ -3,7 +3,7 @@
 #include "unitysdk/NAPScrollView/DataStruct/ScrollFloat.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1_TypeDefinitionIndex = 43881;
+inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1_TypeDefinitionIndex = 64421;
 
 struct alignas(4) MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass16_1
 {

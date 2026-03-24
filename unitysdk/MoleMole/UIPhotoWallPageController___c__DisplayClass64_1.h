@@ -5,12 +5,12 @@
 
 namespace MoleMole { class UIPhotoWallPageController___c__DisplayClass64_0; }
 
-#define MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAB82A60)
-#define MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_1__LATEUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xAB82A70)
+#define MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA2334A0)
+#define MOLEMOLE_UIPHOTOWALLPAGECONTROLLER___C__DISPLAYCLASS64_1__LATEUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xA2334B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoWallPageController___c__DisplayClass64_1_TypeDefinitionIndex = 36590;
+	inline static constexpr unsigned int UIPhotoWallPageController___c__DisplayClass64_1_TypeDefinitionIndex = 78392;
 
 	class UIPhotoWallPageController___c__DisplayClass64_1 : public ::System::Object
 	{

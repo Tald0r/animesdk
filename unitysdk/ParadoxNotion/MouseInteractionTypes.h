@@ -3,7 +3,7 @@
 
 namespace ParadoxNotion
 {
-	inline static constexpr unsigned int MouseInteractionTypes_TypeDefinitionIndex = 26726;
+	inline static constexpr unsigned int MouseInteractionTypes_TypeDefinitionIndex = 27141;
 
 	enum class MouseInteractionTypes : ::System::Int32
 	{

@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CheckPathToTarget_TargetType_TypeDefinitionIndex = 70256;
+	inline static constexpr unsigned int CheckPathToTarget_TargetType_TypeDefinitionIndex = 45880;
 
 	enum class CheckPathToTarget_TargetType : ::System::Int32
 	{

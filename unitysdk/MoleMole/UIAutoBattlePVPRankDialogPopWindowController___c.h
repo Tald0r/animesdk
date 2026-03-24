@@ -5,44 +5,44 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBAF0A20)
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBAF0A60)
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_0_OFFSET UNITYSDK_OFFSET(0xBAF0A70)
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_1_OFFSET UNITYSDK_OFFSET(0xBAF0A80)
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_2_OFFSET UNITYSDK_OFFSET(0xBAF0A90)
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_3_OFFSET UNITYSDK_OFFSET(0xBAF0AA0)
-#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_4_OFFSET UNITYSDK_OFFSET(0xBAF0AB0)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBFBD4A0)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBFBD4E0)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_0_OFFSET UNITYSDK_OFFSET(0xBFBD4F0)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_1_OFFSET UNITYSDK_OFFSET(0xBFBD500)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_2_OFFSET UNITYSDK_OFFSET(0xBFBD510)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_3_OFFSET UNITYSDK_OFFSET(0xBFBD520)
+#define MOLEMOLE_UIAUTOBATTLEPVPRANKDIALOGPOPWINDOWCONTROLLER___C__REFRESHLIST_B__10_4_OFFSET UNITYSDK_OFFSET(0xBFBD530)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex = 38739;
+	inline static constexpr unsigned int UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex = 56749;
 
 	class UIAutoBattlePVPRankDialogPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_0()
+		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_4()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D670);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x405D0);
 		}
 		static ::MoleMole::UIAutoBattlePVPRankDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIAutoBattlePVPRankDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D678);
-		}
-		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_4()
-		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D680);
-		}
-		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_2()
-		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D688);
+			return (::MoleMole::UIAutoBattlePVPRankDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x405D8);
 		}
 		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_3()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D690);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x405E0);
 		}
 		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_1()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D698);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x405E8);
+		}
+		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_2()
+		{
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x405F0);
+		}
+		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>** StaticGet___9__10_0()
+		{
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIAutoBattlePVPRankDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x405F8);
 		}
 
 		static ::System::Void _cctor()

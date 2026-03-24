@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int FilmGrainLookup_TypeDefinitionIndex = 28651;
+	inline static constexpr unsigned int FilmGrainLookup_TypeDefinitionIndex = 29594;
 
 	enum class FilmGrainLookup : ::System::Int32
 	{

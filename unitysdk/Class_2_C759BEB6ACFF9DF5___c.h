@@ -6,22 +6,22 @@
 namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_2_C759BEB6ACFF9DF5___C_METHOD_1_6150939D7C57528A_OFFSET UNITYSDK_OFFSET(0x7C734D0)
-#define CLASS_2_C759BEB6ACFF9DF5___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7C73480)
-#define CLASS_2_C759BEB6ACFF9DF5___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7C734C0)
+#define CLASS_2_C759BEB6ACFF9DF5___C_METHOD_1_6150939D7C57528A_OFFSET UNITYSDK_OFFSET(0xCBD2B40)
+#define CLASS_2_C759BEB6ACFF9DF5___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCBD2AF0)
+#define CLASS_2_C759BEB6ACFF9DF5___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCBD2B30)
 
-inline static constexpr unsigned int Class_2_C759BEB6ACFF9DF5___c_TypeDefinitionIndex = 74756;
+inline static constexpr unsigned int Class_2_C759BEB6ACFF9DF5___c_TypeDefinitionIndex = 73522;
 
 class Class_2_C759BEB6ACFF9DF5___c : public ::System::Object
 {
 public:
 	static ::Class_2_C759BEB6ACFF9DF5___c** StaticGet___9()
 	{
-		return (::Class_2_C759BEB6ACFF9DF5___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_C759BEB6ACFF9DF5___c_TypeDefinitionIndex)->GetStaticField(0x43710);
+		return (::Class_2_C759BEB6ACFF9DF5___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_C759BEB6ACFF9DF5___c_TypeDefinitionIndex)->GetStaticField(0x36130);
 	}
 	static ::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>** StaticGet___9__53_2()
 	{
-		return (::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_C759BEB6ACFF9DF5___c_TypeDefinitionIndex)->GetStaticField(0x43718);
+		return (::System::Action_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_C759BEB6ACFF9DF5___c_TypeDefinitionIndex)->GetStaticField(0x36138);
 	}
 
 	static ::System::Void _cctor()

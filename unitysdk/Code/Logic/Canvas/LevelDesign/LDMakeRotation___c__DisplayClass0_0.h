@@ -5,19 +5,19 @@
 
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define CODE_LOGIC_CANVAS_LEVELDESIGN_LDMAKEROTATION___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9068460)
-#define CODE_LOGIC_CANVAS_LEVELDESIGN_LDMAKEROTATION___C__DISPLAYCLASS0_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x9068470)
+#define CODE_LOGIC_CANVAS_LEVELDESIGN_LDMAKEROTATION___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6F6C590)
+#define CODE_LOGIC_CANVAS_LEVELDESIGN_LDMAKEROTATION___C__DISPLAYCLASS0_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x6F6C5A0)
 
 namespace Code::Logic::Canvas::LevelDesign
 {
-	inline static constexpr unsigned int LDMakeRotation___c__DisplayClass0_0_TypeDefinitionIndex = 59986;
+	inline static constexpr unsigned int LDMakeRotation___c__DisplayClass0_0_TypeDefinitionIndex = 47917;
 
 	class LDMakeRotation___c__DisplayClass0_0 : public ::System::Object
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::System::Single>* roll; // 0x10
+		::FlowCanvas::ValueInput_1<::System::Single>* yaw; // 0x10
 		::FlowCanvas::ValueInput_1<::System::Single>* pitch; // 0x18
-		::FlowCanvas::ValueInput_1<::System::Single>* yaw; // 0x20
+		::FlowCanvas::ValueInput_1<::System::Single>* roll; // 0x20
 
 		::System::Void _ctor()
 		{

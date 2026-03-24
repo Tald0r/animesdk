@@ -13,29 +13,29 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_B8D773E60C5A8DA9_3_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0x7CA4990)
-#define CLASS_2_B8D773E60C5A8DA9_3_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x7CA46E0)
-#define CLASS_2_B8D773E60C5A8DA9_3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7CA4AD0)
-#define CLASS_2_B8D773E60C5A8DA9_3__CTOR_OFFSET UNITYSDK_OFFSET(0x7CA4AC0)
+#define CLASS_2_B8D773E60C5A8DA9_3_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0xAC93C00)
+#define CLASS_2_B8D773E60C5A8DA9_3_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xAC93950)
+#define CLASS_2_B8D773E60C5A8DA9_3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xAC93D40)
+#define CLASS_2_B8D773E60C5A8DA9_3__CTOR_OFFSET UNITYSDK_OFFSET(0xAC93D30)
 
-inline static constexpr unsigned int Class_2_B8D773E60C5A8DA9_3_TypeDefinitionIndex = 69872;
+inline static constexpr unsigned int Class_2_B8D773E60C5A8DA9_3_TypeDefinitionIndex = 72692;
 
 class Class_2_B8D773E60C5A8DA9_3 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Transform* Field_2_6; // 0x18
-	::UnityEngine::RectTransform* Field_2_12; // 0x20
-	::UnityEngine::Transform* Field_2_3; // 0x28
-	::UnityEngine::GameObject* Field_2_9; // 0x30
-	::UnityEngine::CanvasGroup* Field_2_5; // 0x38
-	::UnityEngine::CanvasGroup* Field_2_11; // 0x40
-	::UnityEngine::RectTransform* Field_2_7; // 0x48
-	::UnityEngine::RectTransform* Field_2_8; // 0x50
-	::UnityEngine::Animator* Field_2_1; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x60
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x68
-	::UnityEngine::Animation* Field_2_2; // 0x70
-	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x78
+	::UnityEngine::GameObject* Field_2_9; // 0x18
+	::UnityEngine::CanvasGroup* Field_2_5; // 0x20
+	::UnityEngine::Animator* Field_2_1; // 0x28
+	::UnityEngine::CanvasGroup* Field_2_11; // 0x30
+	::UnityEngine::RectTransform* Field_2_8; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x48
+	::UnityEngine::RectTransform* Field_2_7; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x58
+	::UnityEngine::RectTransform* Field_2_12; // 0x60
+	::UnityEngine::Transform* Field_2_6; // 0x68
+	::UnityEngine::Transform* Field_2_3; // 0x70
+	::UnityEngine::Animation* Field_2_2; // 0x78
 
 	::System::Void _ctor()
 	{

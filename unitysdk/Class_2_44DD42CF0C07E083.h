@@ -10,24 +10,24 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define CLASS_2_44DD42CF0C07E083_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x7310200)
-#define CLASS_2_44DD42CF0C07E083_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x7310420)
-#define CLASS_2_44DD42CF0C07E083_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7310530)
-#define CLASS_2_44DD42CF0C07E083__CTOR_OFFSET UNITYSDK_OFFSET(0x7310520)
+#define CLASS_2_44DD42CF0C07E083_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0xBC72C90)
+#define CLASS_2_44DD42CF0C07E083_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xBC72EB0)
+#define CLASS_2_44DD42CF0C07E083_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xBC72FC0)
+#define CLASS_2_44DD42CF0C07E083__CTOR_OFFSET UNITYSDK_OFFSET(0xBC72FB0)
 
-inline static constexpr unsigned int Class_2_44DD42CF0C07E083_TypeDefinitionIndex = 50381;
+inline static constexpr unsigned int Class_2_44DD42CF0C07E083_TypeDefinitionIndex = 56386;
 
 class Class_2_44DD42CF0C07E083 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_0D31A1661D004892<::Class_2_44DD42CF0C07E083_Class_2_6CEAD264EB4E87E7*>* Field_2_4; // 0x18
-	::UnityEngine::GameObject* Field_2_2; // 0x20
-	::UnityEngine::RectTransform* Field_2_6; // 0x28
-	::UnityEngine::RectTransform* Field_2_1; // 0x30
-	::Class_2_0D31A1661D004892<::Class_2_44DD42CF0C07E083_Class_2_6CEAD264EB4E87E7*>* Field_2_5; // 0x38
-	::MonoUITableScrollV2* Field_2_3; // 0x40
-	::UnityEngine::RectTransform* Field_2_0; // 0x48
-	::UnityEngine::RectTransform* Field_2_7; // 0x50
+	::Class_2_0D31A1661D004892<::Class_2_44DD42CF0C07E083_Class_2_6CEAD264EB4E87E7*>* Field_2_5; // 0x18
+	::UnityEngine::RectTransform* Field_2_1; // 0x20
+	::MonoUITableScrollV2* Field_2_3; // 0x28
+	::UnityEngine::GameObject* Field_2_2; // 0x30
+	::Class_2_0D31A1661D004892<::Class_2_44DD42CF0C07E083_Class_2_6CEAD264EB4E87E7*>* Field_2_4; // 0x38
+	::UnityEngine::RectTransform* Field_2_7; // 0x40
+	::UnityEngine::RectTransform* Field_2_6; // 0x48
+	::UnityEngine::RectTransform* Field_2_0; // 0x50
 
 	::System::Void _ctor()
 	{

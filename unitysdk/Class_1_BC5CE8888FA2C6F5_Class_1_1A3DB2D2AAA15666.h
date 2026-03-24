@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-template <typename T> class Class_1_C9A001AF75A8D68C;
+template <typename T> class Class_1_9C51B68CF7E8F959;
 
-#define CLASS_1_BC5CE8888FA2C6F5_CLASS_1_1A3DB2D2AAA15666_METHOD_1_62593EE2FE331D20_OFFSET UNITYSDK_OFFSET(0x90C5670)
-#define CLASS_1_BC5CE8888FA2C6F5_CLASS_1_1A3DB2D2AAA15666__CTOR_OFFSET UNITYSDK_OFFSET(0x90C5660)
+#define CLASS_1_BC5CE8888FA2C6F5_CLASS_1_1A3DB2D2AAA15666_METHOD_1_62593EE2FE331D20_OFFSET UNITYSDK_OFFSET(0x69ABB40)
+#define CLASS_1_BC5CE8888FA2C6F5_CLASS_1_1A3DB2D2AAA15666__CTOR_OFFSET UNITYSDK_OFFSET(0x69ABB30)
 
-inline static constexpr unsigned int Class_1_BC5CE8888FA2C6F5_Class_1_1A3DB2D2AAA15666_TypeDefinitionIndex = 61003;
+inline static constexpr unsigned int Class_1_BC5CE8888FA2C6F5_Class_1_1A3DB2D2AAA15666_TypeDefinitionIndex = 47651;
 
 class Class_1_BC5CE8888FA2C6F5_Class_1_1A3DB2D2AAA15666 : public ::System::Object
 {
 public:
-	::Class_1_C9A001AF75A8D68C<::System::Boolean>* Field_1_0; // 0x10
+	::Class_1_9C51B68CF7E8F959<::System::Boolean>* Field_1_0; // 0x10
 
 	::System::Void _ctor()
 	{

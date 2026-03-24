@@ -4,11 +4,11 @@
 
 class Class_1_0A16B249216FA488;
 
-#define MOLEMOLE_ACTIVITYAVATARWDIGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x89D7C50)
+#define MOLEMOLE_ACTIVITYAVATARWDIGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB377590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ActivityAvatarWdigetContext_TypeDefinitionIndex = 49907;
+	inline static constexpr unsigned int ActivityAvatarWdigetContext_TypeDefinitionIndex = 47474;
 
 	class ActivityAvatarWdigetContext : public ::MoleMole::UIControllerContextBase
 	{

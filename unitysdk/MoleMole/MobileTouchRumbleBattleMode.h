@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MobileTouchRumbleBattleMode_TypeDefinitionIndex = 58580;
+	inline static constexpr unsigned int MobileTouchRumbleBattleMode_TypeDefinitionIndex = 38399;
 
 	enum class MobileTouchRumbleBattleMode : ::System::Int32
 	{

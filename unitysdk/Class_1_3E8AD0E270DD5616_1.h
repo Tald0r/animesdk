@@ -1,20 +1,19 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_AE1972D98541A9AF.h"
+#include "unitysdk/Enum_3_016039B84BEA53F4.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_00D9F8D189C6D68A;
+class Class_3_85654BFA8514445B;
 
-#define CLASS_1_3E8AD0E270DD5616_1__CTOR_OFFSET UNITYSDK_OFFSET(0x65F6B70)
+#define CLASS_1_3E8AD0E270DD5616_1__CTOR_OFFSET UNITYSDK_OFFSET(0x67C8F70)
 
-inline static constexpr unsigned int Class_1_3E8AD0E270DD5616_1_TypeDefinitionIndex = 46684;
+inline static constexpr unsigned int Class_1_3E8AD0E270DD5616_1_TypeDefinitionIndex = 74266;
 
 class Class_1_3E8AD0E270DD5616_1 : public ::System::Object
 {
 public:
-	::Class_3_00D9F8D189C6D68A* Field_1_0; // 0x10
-	::Class_3_00D9F8D189C6D68A* Field_1_1; // 0x18
-	::Enum_3_AE1972D98541A9AF Field_1_2; // 0x20
+	::Class_3_85654BFA8514445B* Field_1_0; // 0x10
+	::Enum_3_016039B84BEA53F4 Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

@@ -10,21 +10,21 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_82D825AD3611631A_METHOD_1_2E04E911EC2F4E81_OFFSET UNITYSDK_OFFSET(0x8D24E80)
-#define CLASS_1_82D825AD3611631A_METHOD_1_4BFE4240535C31C9_OFFSET UNITYSDK_OFFSET(0x8D24D70)
-#define CLASS_1_82D825AD3611631A_METHOD_1_706F2AA3533CAA3A_OFFSET UNITYSDK_OFFSET(0x8D246F0)
-#define CLASS_1_82D825AD3611631A_METHOD_1_9EF79C7F57F65C28_OFFSET UNITYSDK_OFFSET(0x8D245C0)
-#define CLASS_1_82D825AD3611631A_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0x8D24530)
-#define CLASS_1_82D825AD3611631A__CCTOR_OFFSET UNITYSDK_OFFSET(0x8D24520)
+#define CLASS_1_82D825AD3611631A_METHOD_1_2E04E911EC2F4E81_OFFSET UNITYSDK_OFFSET(0x7000B10)
+#define CLASS_1_82D825AD3611631A_METHOD_1_4BFE4240535C31C9_OFFSET UNITYSDK_OFFSET(0x7000A00)
+#define CLASS_1_82D825AD3611631A_METHOD_1_706F2AA3533CAA3A_OFFSET UNITYSDK_OFFSET(0x7000E40)
+#define CLASS_1_82D825AD3611631A_METHOD_1_9EF79C7F57F65C28_OFFSET UNITYSDK_OFFSET(0x70014C0)
+#define CLASS_1_82D825AD3611631A_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0x7000DB0)
+#define CLASS_1_82D825AD3611631A__CCTOR_OFFSET UNITYSDK_OFFSET(0x70009F0)
 
-inline static constexpr unsigned int Class_1_82D825AD3611631A_TypeDefinitionIndex = 60132;
+inline static constexpr unsigned int Class_1_82D825AD3611631A_TypeDefinitionIndex = 42161;
 
 class Class_1_82D825AD3611631A : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigHitData*>** StaticGet_Field_1_0()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigHitData*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_82D825AD3611631A_TypeDefinitionIndex)->GetStaticField(0x2A9E0);
+		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigHitData*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_82D825AD3611631A_TypeDefinitionIndex)->GetStaticField(0x45650);
 	}
 
 	static ::System::Void _cctor()
@@ -32,14 +32,19 @@ public:
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A__CCTOR_OFFSET))();
 	}
 
+	static ::System::Void Method_1_4BFE4240535C31C9(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
+	{
+		return ((::System::Void(*)(::System::Single, ::System::Action_1<::System::Single>*, ::System::Action_1<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_4BFE4240535C31C9_OFFSET))(a1, a2, a3, a4);
+	}
+
 	static ::System::Void Method_1_F8C7231308CD2C82()
 	{
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_F8C7231308CD2C82_OFFSET))();
 	}
 
-	static ::MoleMole::Config::ConfigHitData* Method_1_9EF79C7F57F65C28(::System::String* a1)
+	static ::System::Void Method_1_2E04E911EC2F4E81(::System::Boolean a1, ::System::Action* a2)
 	{
-		return ((::MoleMole::Config::ConfigHitData*(*)(::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_9EF79C7F57F65C28_OFFSET))(a1);
+		return ((::System::Void(*)(::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_2E04E911EC2F4E81_OFFSET))(a1, a2);
 	}
 
 	static ::System::Void Method_1_706F2AA3533CAA3A(::System::Collections::Generic::List_1<::MoleMole::Config::ConfigHitDatas*>* a1)
@@ -47,13 +52,8 @@ public:
 		return ((::System::Void(*)(::System::Collections::Generic::List_1<::MoleMole::Config::ConfigHitDatas*>*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_706F2AA3533CAA3A_OFFSET))(a1);
 	}
 
-	static ::System::Void Method_1_4BFE4240535C31C9(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
+	static ::MoleMole::Config::ConfigHitData* Method_1_9EF79C7F57F65C28(::System::String* a1)
 	{
-		return ((::System::Void(*)(::System::Single, ::System::Action_1<::System::Single>*, ::System::Action_1<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_4BFE4240535C31C9_OFFSET))(a1, a2, a3, a4);
-	}
-
-	static ::System::Void Method_1_2E04E911EC2F4E81(::System::Boolean a1, ::System::Action* a2)
-	{
-		return ((::System::Void(*)(::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_2E04E911EC2F4E81_OFFSET))(a1, a2);
+		return ((::MoleMole::Config::ConfigHitData*(*)(::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_82D825AD3611631A_METHOD_1_9EF79C7F57F65C28_OFFSET))(a1);
 	}
 };

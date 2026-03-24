@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonsterHatredLineSubSystem_HatredLineState_TypeDefinitionIndex = 74872;
+	inline static constexpr unsigned int MonsterHatredLineSubSystem_HatredLineState_TypeDefinitionIndex = 77311;
 
 	enum class MonsterHatredLineSubSystem_HatredLineState : ::System::Int32
 	{

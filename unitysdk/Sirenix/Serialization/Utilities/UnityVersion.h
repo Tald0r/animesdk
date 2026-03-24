@@ -2,22 +2,22 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SIRENIX_SERIALIZATION_UTILITIES_UNITYVERSION_ENSURELOADED_OFFSET UNITYSDK_OFFSET(0x1A2043C0)
-#define SIRENIX_SERIALIZATION_UTILITIES_UNITYVERSION_ISVERSIONORGREATER_OFFSET UNITYSDK_OFFSET(0x1A2043D0)
-#define SIRENIX_SERIALIZATION_UTILITIES_UNITYVERSION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A203FC0)
+#define SIRENIX_SERIALIZATION_UTILITIES_UNITYVERSION_ENSURELOADED_OFFSET UNITYSDK_OFFSET(0x1A7A3C40)
+#define SIRENIX_SERIALIZATION_UTILITIES_UNITYVERSION_ISVERSIONORGREATER_OFFSET UNITYSDK_OFFSET(0x1A7A3C50)
+#define SIRENIX_SERIALIZATION_UTILITIES_UNITYVERSION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A7A3840)
 
 namespace Sirenix::Serialization::Utilities
 {
-	inline static constexpr unsigned int UnityVersion_TypeDefinitionIndex = 7524;
+	inline static constexpr unsigned int UnityVersion_TypeDefinitionIndex = 7529;
 
 	class UnityVersion : public ::System::Object
 	{
 	public:
-		static ::System::Int32* StaticGet_Major()
+		static ::System::Int32* StaticGet_Minor()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UnityVersion_TypeDefinitionIndex)->GetStaticField(0x3280);
 		}
-		static ::System::Int32* StaticGet_Minor()
+		static ::System::Int32* StaticGet_Major()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(UnityVersion_TypeDefinitionIndex)->GetStaticField(0x3284);
 		}

@@ -7,21 +7,21 @@ class Class_1_EC682544DE1271C8;
 namespace MoleMole { class UIPhotoWallEditModeWidgetController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS63_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAF6C750)
-#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS63_0__STARTDRAGNEWOBJECT_B__0_OFFSET UNITYSDK_OFFSET(0xAF6F830)
-#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS63_0__STARTDRAGNEWOBJECT_B__1_OFFSET UNITYSDK_OFFSET(0xAF6F8C0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS63_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB420500)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS63_0__STARTDRAGNEWOBJECT_B__0_OFFSET UNITYSDK_OFFSET(0xB4235E0)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS63_0__STARTDRAGNEWOBJECT_B__1_OFFSET UNITYSDK_OFFSET(0xB423670)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoWallEditModeWidgetController___c__DisplayClass63_0_TypeDefinitionIndex = 63200;
+	inline static constexpr unsigned int UIPhotoWallEditModeWidgetController___c__DisplayClass63_0_TypeDefinitionIndex = 44708;
 
 	class UIPhotoWallEditModeWidgetController___c__DisplayClass63_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIPhotoWallEditModeWidgetController* __4__this; // 0x10
 		::System::Action_1<::Class_1_EC682544DE1271C8*>* __9__1; // 0x18
-		::UnityEngine::Vector2 screenPos; // 0x20
-		::System::Int32 itemConfigId; // 0x28
+		::System::Int32 itemConfigId; // 0x20
+		::UnityEngine::Vector2 screenPos; // 0x24
 
 		::System::Void _ctor()
 		{

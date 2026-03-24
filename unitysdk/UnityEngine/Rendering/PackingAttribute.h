@@ -5,23 +5,23 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_RENDERING_PACKINGATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18440B20)
-#define UNITYENGINE_RENDERING_PACKINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x18440A80)
+#define UNITYENGINE_RENDERING_PACKINGATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18A45D30)
+#define UNITYENGINE_RENDERING_PACKINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x18A45C90)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int PackingAttribute_TypeDefinitionIndex = 9569;
+	inline static constexpr unsigned int PackingAttribute_TypeDefinitionIndex = 9571;
 
 	class PackingAttribute : public ::System::Attribute
 	{
 	public:
 		::Il2CppArray<::System::String*>* displayNames; // 0x10
 		::Il2CppArray<::System::Single>* range; // 0x18
-		::System::Boolean sRGBDisplay; // 0x20
-		::System::Boolean isDirection; // 0x21
+		::UnityEngine::Rendering::FieldPacking packingScheme; // 0x20
 		::System::Int32 sizeInBits; // 0x24
-		::UnityEngine::Rendering::FieldPacking packingScheme; // 0x28
-		::System::Int32 offsetInSource; // 0x2C
+		::System::Int32 offsetInSource; // 0x28
+		::System::Boolean isDirection; // 0x2C
+		::System::Boolean sRGBDisplay; // 0x2D
 
 		::System::Void _ctor(::Il2CppArray<::System::String*>* displayNames, ::UnityEngine::Rendering::FieldPacking packingScheme, ::System::Int32 bitSize, ::System::Int32 offsetInSource, ::System::Single minValue, ::System::Single maxValue, ::System::Boolean isDirection, ::System::Boolean sRGBDisplay)
 		{

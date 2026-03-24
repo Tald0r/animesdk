@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_2.h"
 #include "unitysdk/MoleMole/Vector2Int.h"
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0xC9BA050)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xC9BA240)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0xB9FEA30)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xB9FEC20)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardTranslationAction_TypeDefinitionIndex = 60103;
+	inline static constexpr unsigned int ChessboardTranslationAction_TypeDefinitionIndex = 38944;
 
 	class ChessboardTranslationAction : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_2<::MoleMole::Vector2Int, ::System::Boolean>
 	{

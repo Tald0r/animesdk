@@ -6,12 +6,12 @@ namespace MoleMole::HollowChessboard { class PieceMaterialChangeEntry; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_PIECEMATERIALCHANGECONFIG_GETCHANGEENTRY_OFFSET UNITYSDK_OFFSET(0x7F100F0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_PIECEMATERIALCHANGECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7F10290)
+#define MOLEMOLE_HOLLOWCHESSBOARD_PIECEMATERIALCHANGECONFIG_GETCHANGEENTRY_OFFSET UNITYSDK_OFFSET(0xCD5A780)
+#define MOLEMOLE_HOLLOWCHESSBOARD_PIECEMATERIALCHANGECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCD5A920)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int PieceMaterialChangeConfig_TypeDefinitionIndex = 54358;
+	inline static constexpr unsigned int PieceMaterialChangeConfig_TypeDefinitionIndex = 79711;
 
 	class PieceMaterialChangeConfig : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

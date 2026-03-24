@@ -2,24 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPSECONDARYBLOOMPASS_SHADERCONSTANTS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E3B460)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPSECONDARYBLOOMPASS_SHADERCONSTANTS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A4041C0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex = 5827;
+	inline static constexpr unsigned int NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex = 5829;
 
 	class NapSecondaryBloomPass_ShaderConstants : public ::System::Object
 	{
 	public:
-		static ::System::Int32* StaticGet_NapBloomTex()
+		static ::System::Int32* StaticGet_NapGaussScaler()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex)->GetStaticField(0x2750);
 		}
-		static ::System::Int32* StaticGet__NapBloomPacked1()
+		static ::System::Int32* StaticGet_NapBloomSecondaryContrast()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex)->GetStaticField(0x2754);
 		}
-		static ::System::Int32* StaticGet_SecondaryBloomTex()
+		static ::System::Int32* StaticGet_NapBloomTex()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex)->GetStaticField(0x2758);
 		}
@@ -27,11 +27,11 @@ namespace UnityEngine::NAPRenderPipeline0
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex)->GetStaticField(0x275C);
 		}
-		static ::System::Int32* StaticGet_NapBloomSecondaryContrast()
+		static ::System::Int32* StaticGet_SecondaryBloomTex()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex)->GetStaticField(0x2760);
 		}
-		static ::System::Int32* StaticGet_NapGaussScaler()
+		static ::System::Int32* StaticGet__NapBloomPacked1()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapSecondaryBloomPass_ShaderConstants_TypeDefinitionIndex)->GetStaticField(0x2764);
 		}

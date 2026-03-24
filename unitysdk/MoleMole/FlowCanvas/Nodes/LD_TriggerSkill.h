@@ -8,25 +8,25 @@ class Class_3_B9D5951434CC70FD;
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_BEGIN_OFFSET UNITYSDK_OFFSET(0xC2CE440)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_INTERNALTRIGGERSKILL_OFFSET UNITYSDK_OFFSET(0xC2CE500)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC2CE2D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_UPDATESKILLINFO_OFFSET UNITYSDK_OFFSET(0xC2CEB30)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL__CTOR_OFFSET UNITYSDK_OFFSET(0xC2CEBD0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xC2CEBF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_BEGIN_OFFSET UNITYSDK_OFFSET(0xB8A9EE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_INTERNALTRIGGERSKILL_OFFSET UNITYSDK_OFFSET(0xB8A9FA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB8A9D70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL_UPDATESKILLINFO_OFFSET UNITYSDK_OFFSET(0xB8AA5D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL__CTOR_OFFSET UNITYSDK_OFFSET(0xB8AA670)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_TRIGGERSKILL__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xB8AA690)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_TriggerSkill_TypeDefinitionIndex = 36476;
+	inline static constexpr unsigned int LD_TriggerSkill_TypeDefinitionIndex = 60132;
 
 	class LD_TriggerSkill : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::System::Boolean>* ForceTriggerSkill; // 0xA8
-		::FlowCanvas::FlowOutput* Output; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Int32>* SkillBtnIndex; // 0xB8
-		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* Entity; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* ForceUpdateCD; // 0xC8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* ForceUpdateCD; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* ForceTriggerSkill; // 0xB0
+		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* Entity; // 0xB8
+		::FlowCanvas::FlowOutput* Output; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::Int32>* SkillBtnIndex; // 0xC8
 
 		::System::Void _ctor()
 		{

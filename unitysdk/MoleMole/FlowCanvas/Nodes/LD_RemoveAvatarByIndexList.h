@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEXLIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xF1B0E10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEXLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B0E80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEXLIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xB98ACB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEXLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xB98AD20)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_RemoveAvatarByIndexList_TypeDefinitionIndex = 56119;
+	inline static constexpr unsigned int LD_RemoveAvatarByIndexList_TypeDefinitionIndex = 48800;
 
 	class LD_RemoveAvatarByIndexList : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Collections::Generic::List_1<::System::Int32>*>
 	{

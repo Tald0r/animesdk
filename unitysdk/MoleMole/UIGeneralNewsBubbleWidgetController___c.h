@@ -5,24 +5,24 @@
 namespace MoleMole { class UIGeneralNewsBubbleRowWidgetController; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIGENERALNEWSBUBBLEWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBFAF5B0)
-#define MOLEMOLE_UIGENERALNEWSBUBBLEWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBFAF5F0)
-#define MOLEMOLE_UIGENERALNEWSBUBBLEWIDGETCONTROLLER___C__UPDATEPOSITION_B__37_0_OFFSET UNITYSDK_OFFSET(0xBFAF600)
+#define MOLEMOLE_UIGENERALNEWSBUBBLEWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9BEAF20)
+#define MOLEMOLE_UIGENERALNEWSBUBBLEWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9BEAF60)
+#define MOLEMOLE_UIGENERALNEWSBUBBLEWIDGETCONTROLLER___C__UPDATEPOSITION_B__37_0_OFFSET UNITYSDK_OFFSET(0x9BEAF70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralNewsBubbleWidgetController___c_TypeDefinitionIndex = 75081;
+	inline static constexpr unsigned int UIGeneralNewsBubbleWidgetController___c_TypeDefinitionIndex = 68358;
 
 	class UIGeneralNewsBubbleWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::MoleMole::UIGeneralNewsBubbleRowWidgetController*>** StaticGet___9__37_0()
 		{
-			return (::System::Comparison_1<::MoleMole::UIGeneralNewsBubbleRowWidgetController*>**)Il2CppClass::FromTypeDefinitionIndex(UIGeneralNewsBubbleWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2D040);
+			return (::System::Comparison_1<::MoleMole::UIGeneralNewsBubbleRowWidgetController*>**)Il2CppClass::FromTypeDefinitionIndex(UIGeneralNewsBubbleWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E430);
 		}
 		static ::MoleMole::UIGeneralNewsBubbleWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIGeneralNewsBubbleWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGeneralNewsBubbleWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2D048);
+			return (::MoleMole::UIGeneralNewsBubbleWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGeneralNewsBubbleWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E438);
 		}
 
 		static ::System::Void _cctor()

@@ -3,7 +3,7 @@
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int ICameraSequenceCollection_1_TypeDefinitionIndex = 34768;
+	inline static constexpr unsigned int ICameraSequenceCollection_1_TypeDefinitionIndex = 35770;
 
 	template <typename T>
 	class ICameraSequenceCollection_1

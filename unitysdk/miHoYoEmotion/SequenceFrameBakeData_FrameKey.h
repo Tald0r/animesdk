@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Texture2D; }
 
-#define MIHOYOEMOTION_SEQUENCEFRAMEBAKEDATA_FRAMEKEY__CTOR_OFFSET UNITYSDK_OFFSET(0x18AF6E10)
+#define MIHOYOEMOTION_SEQUENCEFRAMEBAKEDATA_FRAMEKEY__CTOR_OFFSET UNITYSDK_OFFSET(0x18FE1780)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int SequenceFrameBakeData_FrameKey_TypeDefinitionIndex = 36194;
+	inline static constexpr unsigned int SequenceFrameBakeData_FrameKey_TypeDefinitionIndex = 37214;
 
 	class SequenceFrameBakeData_FrameKey : public ::System::Object
 	{

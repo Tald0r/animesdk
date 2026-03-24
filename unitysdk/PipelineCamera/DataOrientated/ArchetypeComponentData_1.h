@@ -7,7 +7,7 @@
 
 namespace PipelineCamera::DataOrientated
 {
-	inline static constexpr unsigned int ArchetypeComponentData_1_TypeDefinitionIndex = 34583;
+	inline static constexpr unsigned int ArchetypeComponentData_1_TypeDefinitionIndex = 35585;
 
 	template <typename TScope>
 	struct ArchetypeComponentData_1

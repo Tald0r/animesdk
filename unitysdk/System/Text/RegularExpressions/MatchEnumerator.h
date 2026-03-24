@@ -5,10 +5,10 @@
 namespace System::Text::RegularExpressions { class Match; }
 namespace System::Text::RegularExpressions { class MatchCollection; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1824E960)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1824E910)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1824E9D0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1824E8B0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x187E8DA0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x187E8D50)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x187E8E10)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_MATCHENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x187E8CF0)
 
 namespace System::Text::RegularExpressions
 {
@@ -19,8 +19,8 @@ namespace System::Text::RegularExpressions
 	public:
 		::System::Text::RegularExpressions::Match* _match; // 0x10
 		::System::Text::RegularExpressions::MatchCollection* _matchcoll; // 0x18
-		::System::Boolean _done; // 0x20
-		::System::Int32 _curindex; // 0x24
+		::System::Int32 _curindex; // 0x20
+		::System::Boolean _done; // 0x24
 
 		::System::Void _ctor(::System::Text::RegularExpressions::MatchCollection* matchcoll)
 		{

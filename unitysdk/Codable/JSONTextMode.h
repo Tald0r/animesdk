@@ -3,7 +3,7 @@
 
 namespace Codable
 {
-	inline static constexpr unsigned int JSONTextMode_TypeDefinitionIndex = 33398;
+	inline static constexpr unsigned int JSONTextMode_TypeDefinitionIndex = 34352;
 
 	enum class JSONTextMode : ::System::Int32
 	{

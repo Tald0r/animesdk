@@ -3,13 +3,13 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphSplineConfig_PathGraphPointRegionType_TypeDefinitionIndex = 74092;
+	inline static constexpr unsigned int PathGraphSplineConfig_PathGraphPointRegionType_TypeDefinitionIndex = 62032;
 
 	enum class PathGraphSplineConfig_PathGraphPointRegionType : ::System::Int32
 	{
-		Stair = 1,
 		Slope = 2,
-		FlatGround = 0,
 		StairTransition = 3,
+		Stair = 1,
+		FlatGround = 0,
 	};
 }

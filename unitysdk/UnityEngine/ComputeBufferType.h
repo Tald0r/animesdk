@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ComputeBufferType_TypeDefinitionIndex = 5215;
+	inline static constexpr unsigned int ComputeBufferType_TypeDefinitionIndex = 5216;
 
 	enum class ComputeBufferType : ::System::Int32
 	{

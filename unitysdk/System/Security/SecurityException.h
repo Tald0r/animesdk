@@ -14,12 +14,12 @@ namespace System::Reflection { class MethodInfo; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 namespace System::Security { class IPermission; }
 
-#define SYSTEM_SECURITY_SECURITYEXCEPTION_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x17FEC600)
-#define SYSTEM_SECURITY_SECURITYEXCEPTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x17FEC740)
-#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17FEC250)
-#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x17FEC430)
-#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x17FEC590)
-#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17FEC390)
+#define SYSTEM_SECURITY_SECURITYEXCEPTION_GETOBJECTDATA_OFFSET UNITYSDK_OFFSET(0x1861FFF0)
+#define SYSTEM_SECURITY_SECURITYEXCEPTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18620130)
+#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1861FC40)
+#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1861FE20)
+#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1861FF80)
+#define SYSTEM_SECURITY_SECURITYEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1861FD80)
 
 namespace System::Security
 {
@@ -28,17 +28,17 @@ namespace System::Security
 	class SecurityException : public ::System::SystemException
 	{
 	public:
-		::System::String* _url; // 0x88
-		::System::String* permissionState; // 0x90
-		::System::Type* permissionType; // 0x98
-		::System::Object* _denyset; // 0xA0
-		::System::Reflection::MethodInfo* _method; // 0xA8
+		::System::String* _granted; // 0x88
+		::System::Reflection::AssemblyName* _assembly; // 0x90
+		::System::Reflection::MethodInfo* _method; // 0x98
+		::System::Object* _permitset; // 0xA0
+		::System::Object* _denyset; // 0xA8
 		::System::Object* _demanded; // 0xB0
-		::System::Security::IPermission* _firstperm; // 0xB8
-		::System::String* _refused; // 0xC0
-		::System::Reflection::AssemblyName* _assembly; // 0xC8
-		::System::String* _granted; // 0xD0
-		::System::Object* _permitset; // 0xD8
+		::System::String* permissionState; // 0xB8
+		::System::Security::IPermission* _firstperm; // 0xC0
+		::System::String* _refused; // 0xC8
+		::System::Type* permissionType; // 0xD0
+		::System::String* _url; // 0xD8
 		::System::Security::SecurityZone _zone; // 0xE0
 		::System::Security::Permissions::SecurityAction _action; // 0xE4
 

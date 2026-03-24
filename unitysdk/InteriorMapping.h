@@ -12,48 +12,48 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine { class MeshRenderer; }
 namespace UnityEngine { class Shader; }
 
-#define INTERIORMAPPING_APPLYLOD_OFFSET UNITYSDK_OFFSET(0x1B0C52D0)
-#define INTERIORMAPPING_APPLYMATERIALPROPS_OFFSET UNITYSDK_OFFSET(0x1B0C59F0)
-#define INTERIORMAPPING_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1B0C4E10)
-#define INTERIORMAPPING_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1B0C6DD0)
-#define INTERIORMAPPING_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1B0C5140)
-#define INTERIORMAPPING_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B0C3C20)
-#define INTERIORMAPPING_START_OFFSET UNITYSDK_OFFSET(0x1B0C4470)
-#define INTERIORMAPPING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0C71C0)
-#define INTERIORMAPPING__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0C6F50)
+#define INTERIORMAPPING_APPLYLOD_OFFSET UNITYSDK_OFFSET(0x1B6D33A0)
+#define INTERIORMAPPING_APPLYMATERIALPROPS_OFFSET UNITYSDK_OFFSET(0x1B6D3AC0)
+#define INTERIORMAPPING_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1B6D2EE0)
+#define INTERIORMAPPING_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1B6D4EA0)
+#define INTERIORMAPPING_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1B6D3210)
+#define INTERIORMAPPING_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B6D1CF0)
+#define INTERIORMAPPING_START_OFFSET UNITYSDK_OFFSET(0x1B6D2540)
+#define INTERIORMAPPING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6D5290)
+#define INTERIORMAPPING__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6D5020)
 
-inline static constexpr unsigned int InteriorMapping_TypeDefinitionIndex = 31595;
+inline static constexpr unsigned int InteriorMapping_TypeDefinitionIndex = 32549;
 
 class InteriorMapping : public ::UnityEngine::MonoBehaviour
 {
 public:
-	static ::System::Int32* StaticGet_s_RoomMetallicGlossMap()
+	static ::System::Int32* StaticGet_s_RoomTextures()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C20);
-	}
-	static ::System::Int32* StaticGet_s_LODFadeFromDistance()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C24);
-	}
-	static ::System::Int32* StaticGet_s_RoomNightTextures()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C28);
-	}
-	static ::System::Int32* StaticGet_s_RoomBumpMap()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C2C);
-	}
-	static ::System::Int32* StaticGet_s_LODFadeDistance()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C30);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F50);
 	}
 	static ::System::Int32* StaticGet_s_RoomParams()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C34);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F54);
 	}
-	static ::System::Int32* StaticGet_s_RoomTextures()
+	static ::System::Int32* StaticGet_s_RoomNightTextures()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7C38);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F58);
+	}
+	static ::System::Int32* StaticGet_s_RoomBumpMap()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F5C);
+	}
+	static ::System::Int32* StaticGet_s_LODFadeFromDistance()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F60);
+	}
+	static ::System::Int32* StaticGet_s_RoomMetallicGlossMap()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F64);
+	}
+	static ::System::Int32* StaticGet_s_LODFadeDistance()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(InteriorMapping_TypeDefinitionIndex)->GetStaticField(0x7F68);
 	}
 	::System::Int32 level; // 0x18
 	::System::Single LOD0FadeFromDistance; // 0x1C

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9424350)
+#define MOLEMOLE_UIHOUSERHYTHMSTAGEINFOWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x99E7F20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHouseRhythmStageInfoWidgetController_Context_TypeDefinitionIndex = 38065;
+	inline static constexpr unsigned int UIHouseRhythmStageInfoWidgetController_Context_TypeDefinitionIndex = 61498;
 
 	class UIHouseRhythmStageInfoWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

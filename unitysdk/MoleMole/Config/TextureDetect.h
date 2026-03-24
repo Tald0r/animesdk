@@ -4,25 +4,25 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0xCD21DA0)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0xCD21E80)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD21F10)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xCD21F40)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_ATTACHPATTERNMETHOD_OFFSET UNITYSDK_OFFSET(0xE37AC60)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_TOSTRING_OFFSET UNITYSDK_OFFSET(0xE37AD40)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0xE37ADD0)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xE37AE00)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TextureDetect_TypeDefinitionIndex = 75840;
+	inline static constexpr unsigned int TextureDetect_TypeDefinitionIndex = 43961;
 
 	class TextureDetect : public ::MoleMole::Config::CollisionDetect
 	{
 	public:
 		::Il2CppArray<::System::Byte>* data; // 0x80
-		::System::Int32 textureHeight; // 0x88
+		::System::Single distance; // 0x88
 		::System::Int32 textureWidth; // 0x8C
 		::System::Single width; // 0x90
-		::System::Single distance; // 0x94
-		::System::Single height; // 0x98
-		::System::Single hitRatio; // 0x9C
+		::System::Single height; // 0x94
+		::System::Single hitRatio; // 0x98
+		::System::Int32 textureHeight; // 0x9C
 
 		::System::Void _ctor()
 		{

@@ -3,21 +3,21 @@
 #include "unitysdk/System/Nullable_1.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_5D856BDA788FAB47_Class_1_0DB3AC4CDCDDE59C;
+class Class_2_5D856BDA788FAB47_Class_1_0DB3AC4CDCDDE59C_1;
 namespace System { class Random; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_5D856BDA788FAB47_CLASS_1_B7155BF1E62718C3_METHOD_1_3A117FEF9BB2D2A4_OFFSET UNITYSDK_OFFSET(0x16809F90)
-#define CLASS_2_5D856BDA788FAB47_CLASS_1_B7155BF1E62718C3__CTOR_OFFSET UNITYSDK_OFFSET(0x16809E90)
+#define CLASS_2_5D856BDA788FAB47_CLASS_1_B7155BF1E62718C3_METHOD_1_3A117FEF9BB2D2A4_OFFSET UNITYSDK_OFFSET(0x12CF6880)
+#define CLASS_2_5D856BDA788FAB47_CLASS_1_B7155BF1E62718C3__CTOR_OFFSET UNITYSDK_OFFSET(0x12CF6780)
 
-inline static constexpr unsigned int Class_2_5D856BDA788FAB47_Class_1_B7155BF1E62718C3_TypeDefinitionIndex = 14567;
+inline static constexpr unsigned int Class_2_5D856BDA788FAB47_Class_1_B7155BF1E62718C3_TypeDefinitionIndex = 16945;
 
 class Class_2_5D856BDA788FAB47_Class_1_B7155BF1E62718C3 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::Class_2_5D856BDA788FAB47_Class_1_0DB3AC4CDCDDE59C*>* Field_1_0; // 0x10
+	::System::Collections::Generic::List_1<::Class_2_5D856BDA788FAB47_Class_1_0DB3AC4CDCDDE59C_1*>* Field_1_0; // 0x10
 	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* Field_1_1; // 0x18
 	::System::Int32 Field_1_2; // 0x20
 

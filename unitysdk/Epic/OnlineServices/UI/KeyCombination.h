@@ -3,7 +3,7 @@
 
 namespace Epic::OnlineServices::UI
 {
-	inline static constexpr unsigned int KeyCombination_TypeDefinitionIndex = 31866;
+	inline static constexpr unsigned int KeyCombination_TypeDefinitionIndex = 32820;
 
 	enum class KeyCombination : ::System::Int32
 	{

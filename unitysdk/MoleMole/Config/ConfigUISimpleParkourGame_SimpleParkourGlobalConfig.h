@@ -6,11 +6,11 @@
 namespace MoleMole::Config { class ConfigUISimpleParkourGame_SerializableJudgmentConfig; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGUISIMPLEPARKOURGAME_SIMPLEPARKOURGLOBALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE438440)
+#define MOLEMOLE_CONFIG_CONFIGUISIMPLEPARKOURGAME_SIMPLEPARKOURGLOBALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x950F8C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUISimpleParkourGame_SimpleParkourGlobalConfig_TypeDefinitionIndex = 57775;
+	inline static constexpr unsigned int ConfigUISimpleParkourGame_SimpleParkourGlobalConfig_TypeDefinitionIndex = 58200;
 
 	class ConfigUISimpleParkourGame_SimpleParkourGlobalConfig : public ::System::Object
 	{

@@ -1,9 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace MoleMole { class UIInLevelPauseDialogContext; }
+namespace UnityEngine { class Animator; }
+namespace UnityEngine { class GameObject; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_637_TypeDefinitionIndex = 65570;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_637_TypeDefinitionIndex = 68132;
 
 class Class_0_16E4307DCC419505_637
 {

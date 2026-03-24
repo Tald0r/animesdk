@@ -3,7 +3,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int EasingFunc_TypeDefinitionIndex = 34518;
+	inline static constexpr unsigned int EasingFunc_TypeDefinitionIndex = 35520;
 
 	enum class EasingFunc : ::System::Int32
 	{

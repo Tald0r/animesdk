@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_CONFIG_CONFIGCAMERACOLLIDERBLOCKFILTER_VALUEPASS_OFFSET UNITYSDK_OFFSET(0x84A1E70)
-#define MOLEMOLE_CONFIG_CONFIGCAMERACOLLIDERBLOCKFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x84A2130)
+#define MOLEMOLE_CONFIG_CONFIGCAMERACOLLIDERBLOCKFILTER_VALUEPASS_OFFSET UNITYSDK_OFFSET(0x94F9C30)
+#define MOLEMOLE_CONFIG_CONFIGCAMERACOLLIDERBLOCKFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x94F9EF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigCameraColliderBlockFilter_TypeDefinitionIndex = 56726;
+	inline static constexpr unsigned int ConfigCameraColliderBlockFilter_TypeDefinitionIndex = 41862;
 
 	class ConfigCameraColliderBlockFilter : public ::MoleMole::Config::ConfigEntityFilter
 	{

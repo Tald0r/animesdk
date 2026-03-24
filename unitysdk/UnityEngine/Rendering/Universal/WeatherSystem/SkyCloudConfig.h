@@ -6,12 +6,12 @@
 namespace UnityEngine { class Gradient; }
 namespace UnityEngine { class Texture; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SKYCLOUDCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x19340270)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SKYCLOUDCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x19340510)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SKYCLOUDCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x197F3830)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_SKYCLOUDCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x197F3AD0)
 
 namespace UnityEngine::Rendering::Universal::WeatherSystem
 {
-	inline static constexpr unsigned int SkyCloudConfig_TypeDefinitionIndex = 28824;
+	inline static constexpr unsigned int SkyCloudConfig_TypeDefinitionIndex = 29773;
 
 	class SkyCloudConfig : public ::UnityEngine::Rendering::Universal::WeatherSystem::WeatherPropertiesBase_1<::UnityEngine::Rendering::Universal::WeatherSystem::SkyCloudConfig*>
 	{

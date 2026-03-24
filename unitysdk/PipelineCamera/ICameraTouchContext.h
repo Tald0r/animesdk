@@ -3,7 +3,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int ICameraTouchContext_TypeDefinitionIndex = 34404;
+	inline static constexpr unsigned int ICameraTouchContext_TypeDefinitionIndex = 35406;
 
 	class ICameraTouchContext
 	{

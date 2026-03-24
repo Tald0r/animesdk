@@ -5,28 +5,28 @@
 
 namespace System { class String; }
 
-#define EXPRESSIONV2_TOKEN_INIT_1_OFFSET UNITYSDK_OFFSET(0xAA46FC0)
-#define EXPRESSIONV2_TOKEN_INIT_2_OFFSET UNITYSDK_OFFSET(0xAA47040)
-#define EXPRESSIONV2_TOKEN_INIT_3_OFFSET UNITYSDK_OFFSET(0xAA470C0)
-#define EXPRESSIONV2_TOKEN_INIT_4_OFFSET UNITYSDK_OFFSET(0xAA47140)
-#define EXPRESSIONV2_TOKEN_INIT_OFFSET UNITYSDK_OFFSET(0xAA46F50)
-#define EXPRESSIONV2_TOKEN__CTOR_OFFSET UNITYSDK_OFFSET(0xAA46F40)
+#define EXPRESSIONV2_TOKEN_INIT_1_OFFSET UNITYSDK_OFFSET(0x8FF1760)
+#define EXPRESSIONV2_TOKEN_INIT_2_OFFSET UNITYSDK_OFFSET(0x8FF17E0)
+#define EXPRESSIONV2_TOKEN_INIT_3_OFFSET UNITYSDK_OFFSET(0x8FF1860)
+#define EXPRESSIONV2_TOKEN_INIT_4_OFFSET UNITYSDK_OFFSET(0x8FF18E0)
+#define EXPRESSIONV2_TOKEN_INIT_OFFSET UNITYSDK_OFFSET(0x8FF16F0)
+#define EXPRESSIONV2_TOKEN__CTOR_OFFSET UNITYSDK_OFFSET(0x8FF16E0)
 
 namespace ExpressionV2
 {
-	inline static constexpr unsigned int Token_TypeDefinitionIndex = 71951;
+	inline static constexpr unsigned int Token_TypeDefinitionIndex = 77044;
 
 	class Token : public ::System::Object
 	{
 	public:
 		::System::String* Value; // 0x10
 		::System::Int32 ArgCount; // 0x18
-		::ExpressionV2::TokenType Type; // 0x1C
-		::System::UInt16 OperatorOpCode; // 0x20
-		::System::Boolean IsUnary; // 0x22
-		::System::Int32 OperatorPrecedence; // 0x24
-		::System::Int32 StringHashCode; // 0x28
-		::System::Double NumberValue; // 0x30
+		::System::Int32 StringHashCode; // 0x1C
+		::System::Double NumberValue; // 0x20
+		::System::Int32 OperatorPrecedence; // 0x28
+		::ExpressionV2::TokenType Type; // 0x2C
+		::System::UInt16 OperatorOpCode; // 0x30
+		::System::Boolean IsUnary; // 0x32
 
 		::System::Void _ctor()
 		{

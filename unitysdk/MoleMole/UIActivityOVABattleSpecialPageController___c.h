@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8ABC330)
-#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8ABC370)
-#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___C__ONUIINIT_B__10_3_OFFSET UNITYSDK_OFFSET(0x8ABC380)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8CC9DF0)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8CC9E30)
+#define MOLEMOLE_UIACTIVITYOVABATTLESPECIALPAGECONTROLLER___C__ONUIINIT_B__10_3_OFFSET UNITYSDK_OFFSET(0x8CC9E40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityOVABattleSpecialPageController___c_TypeDefinitionIndex = 76297;
+	inline static constexpr unsigned int UIActivityOVABattleSpecialPageController___c_TypeDefinitionIndex = 68714;
 
 	class UIActivityOVABattleSpecialPageController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIActivityOVABattleSpecialPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIActivityOVABattleSpecialPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityOVABattleSpecialPageController___c_TypeDefinitionIndex)->GetStaticField(0x2CE10);
+			return (::MoleMole::UIActivityOVABattleSpecialPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityOVABattleSpecialPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E210);
 		}
 		static ::System::Action** StaticGet___9__10_3()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityOVABattleSpecialPageController___c_TypeDefinitionIndex)->GetStaticField(0x2CE18);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityOVABattleSpecialPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E218);
 		}
 
 		static ::System::Void _cctor()

@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xE476D20)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xE476D60)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C___TRYPLAYDYNAMICENDPERFORMS_B__18_2_OFFSET UNITYSDK_OFFSET(0xE476D70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD7FECB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FECF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C___TRYPLAYDYNAMICENDPERFORMS_B__18_2_OFFSET UNITYSDK_OFFSET(0xD7FED00)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDLevelEndNode___c_TypeDefinitionIndex = 56073;
+	inline static constexpr unsigned int LDLevelEndNode___c_TypeDefinitionIndex = 68173;
 
 	class LDLevelEndNode___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::FlowCanvas::Nodes::LDLevelEndNode___c** StaticGet___9()
-		{
-			return (::MoleMole::FlowCanvas::Nodes::LDLevelEndNode___c**)Il2CppClass::FromTypeDefinitionIndex(LDLevelEndNode___c_TypeDefinitionIndex)->GetStaticField(0x32140);
-		}
 		static ::System::Action** StaticGet___9__18_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(LDLevelEndNode___c_TypeDefinitionIndex)->GetStaticField(0x32148);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(LDLevelEndNode___c_TypeDefinitionIndex)->GetStaticField(0x33FB0);
+		}
+		static ::MoleMole::FlowCanvas::Nodes::LDLevelEndNode___c** StaticGet___9()
+		{
+			return (::MoleMole::FlowCanvas::Nodes::LDLevelEndNode___c**)Il2CppClass::FromTypeDefinitionIndex(LDLevelEndNode___c_TypeDefinitionIndex)->GetStaticField(0x33FB8);
 		}
 
 		static ::System::Void _cctor()

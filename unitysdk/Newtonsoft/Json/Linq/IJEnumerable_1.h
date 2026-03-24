@@ -7,7 +7,7 @@ namespace System { class Object; }
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int IJEnumerable_1_TypeDefinitionIndex = 7032;
+	inline static constexpr unsigned int IJEnumerable_1_TypeDefinitionIndex = 7036;
 
 	template <typename T>
 	class IJEnumerable_1

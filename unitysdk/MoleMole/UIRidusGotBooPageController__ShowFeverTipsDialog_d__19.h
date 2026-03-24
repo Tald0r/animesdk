@@ -7,21 +7,21 @@
 namespace MoleMole { class UIRidusGotBooPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWFEVERTIPSDIALOG_D__19_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37F230)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWFEVERTIPSDIALOG_D__19_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWFEVERTIPSDIALOG_D__19_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37ADA0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__SHOWFEVERTIPSDIALOG_D__19_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController__ShowFeverTipsDialog_d__19_TypeDefinitionIndex = 66323;
+	inline static constexpr unsigned int UIRidusGotBooPageController__ShowFeverTipsDialog_d__19_TypeDefinitionIndex = 44107;
 
 	struct alignas(8) UIRidusGotBooPageController__ShowFeverTipsDialog_d__19
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
-		::MoleMole::UIRidusGotBooPageController* __4__this; // 0x20
+		::MoleMole::UIRidusGotBooPageController* __4__this; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x18
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x28
-		::System::Boolean show; // 0x38
-		::System::Int32 __1__state; // 0x3C
-		::System::Single delayTime; // 0x40
+		::System::Single delayTime; // 0x38
+		::System::Boolean show; // 0x3C
+		::System::Int32 __1__state; // 0x40
 
 		::System::Void MoveNext()
 		{

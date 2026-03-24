@@ -3,16 +3,16 @@
 #include "unitysdk/Class_2_2CEE0D523FB0327D_Enum_3_405FB39DEF830BDF.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_2_2CEE0D523FB0327D_CLASS_1_4CED3B633CACA2CF__CTOR_OFFSET UNITYSDK_OFFSET(0x9E16F80)
+#define CLASS_2_2CEE0D523FB0327D_CLASS_1_4CED3B633CACA2CF__CTOR_OFFSET UNITYSDK_OFFSET(0x9D94E00)
 
-inline static constexpr unsigned int Class_2_2CEE0D523FB0327D_Class_1_4CED3B633CACA2CF_TypeDefinitionIndex = 56530;
+inline static constexpr unsigned int Class_2_2CEE0D523FB0327D_Class_1_4CED3B633CACA2CF_TypeDefinitionIndex = 39004;
 
 class Class_2_2CEE0D523FB0327D_Class_1_4CED3B633CACA2CF : public ::System::Object
 {
 public:
-	::Class_2_2CEE0D523FB0327D_Enum_3_405FB39DEF830BDF Field_1_1; // 0x10
-	::Class_2_2CEE0D523FB0327D_Enum_3_405FB39DEF830BDF Field_1_0; // 0x14
-	::System::Boolean Field_1_2; // 0x18
+	::System::Boolean Field_1_2; // 0x10
+	::Class_2_2CEE0D523FB0327D_Enum_3_405FB39DEF830BDF Field_1_1; // 0x14
+	::Class_2_2CEE0D523FB0327D_Enum_3_405FB39DEF830BDF Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

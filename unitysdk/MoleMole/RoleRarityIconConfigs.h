@@ -5,11 +5,11 @@
 namespace MoleMole { class RoleRarityIconItemConfig; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_ROLERARITYICONCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xB8C60B0)
+#define MOLEMOLE_ROLERARITYICONCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xB933E20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RoleRarityIconConfigs_TypeDefinitionIndex = 42452;
+	inline static constexpr unsigned int RoleRarityIconConfigs_TypeDefinitionIndex = 41812;
 
 	class RoleRarityIconConfigs : public ::System::Object
 	{

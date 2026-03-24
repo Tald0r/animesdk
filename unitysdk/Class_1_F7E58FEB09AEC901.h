@@ -5,18 +5,18 @@
 
 namespace System { class String; }
 
-#define CLASS_1_F7E58FEB09AEC901__CTOR_OFFSET UNITYSDK_OFFSET(0x6A83DF0)
+#define CLASS_1_F7E58FEB09AEC901__CTOR_OFFSET UNITYSDK_OFFSET(0x80746C0)
 
-inline static constexpr unsigned int Class_1_F7E58FEB09AEC901_TypeDefinitionIndex = 42344;
+inline static constexpr unsigned int Class_1_F7E58FEB09AEC901_TypeDefinitionIndex = 74472;
 
 class Class_1_F7E58FEB09AEC901 : public ::System::Object
 {
 public:
 	::System::String* Field_1_3; // 0x10
-	::System::Boolean Field_1_0; // 0x18
-	::MoleMole::Config::ScreenEffectType Field_1_2; // 0x1C
+	::System::Int32 Field_1_1; // 0x18
+	::System::Boolean Field_1_0; // 0x1C
 	::System::UInt32 Field_1_4; // 0x20
-	::System::Int32 Field_1_1; // 0x24
+	::MoleMole::Config::ScreenEffectType Field_1_2; // 0x24
 
 	::System::Void _ctor()
 	{

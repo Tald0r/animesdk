@@ -6,8 +6,8 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System::Xml { class XmlAttribute; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEEVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A4DFF10)
-#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4DFEB0)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEEVENTARGS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AA924C0)
+#define SYSTEM_XML_SERIALIZATION_XMLATTRIBUTEEVENTARGS__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA92460)
 
 namespace System::Xml::Serialization
 {
@@ -17,8 +17,8 @@ namespace System::Xml::Serialization
 	{
 	public:
 		::System::Xml::XmlAttribute* attr; // 0x10
-		::System::Object* o; // 0x18
-		::System::String* qnames; // 0x20
+		::System::String* qnames; // 0x18
+		::System::Object* o; // 0x20
 		::System::Int32 lineNumber; // 0x28
 		::System::Int32 linePosition; // 0x2C
 

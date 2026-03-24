@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIACTIVITYRHYTHMINTERACTWIDGETCONTROLLER_ANIMSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5E4EA0)
+#define MOLEMOLE_UIACTIVITYRHYTHMINTERACTWIDGETCONTROLLER_ANIMSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0xDD8AC20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityRhythmInteractWidgetController_AnimState_TypeDefinitionIndex = 60468;
+	inline static constexpr unsigned int UIActivityRhythmInteractWidgetController_AnimState_TypeDefinitionIndex = 64230;
 
 	class UIActivityRhythmInteractWidgetController_AnimState : public ::System::Object
 	{

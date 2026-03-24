@@ -3,7 +3,7 @@
 
 namespace Utf8Json
 {
-	inline static constexpr unsigned int CollectionDeserializeToBehaviour_TypeDefinitionIndex = 81730;
+	inline static constexpr unsigned int CollectionDeserializeToBehaviour_TypeDefinitionIndex = 83771;
 
 	enum class CollectionDeserializeToBehaviour : ::System::Int32
 	{

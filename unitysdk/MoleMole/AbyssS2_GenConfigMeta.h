@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_ABYSSS2_GENCONFIGMETA_ONVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x366550)
-#define MOLEMOLE_ABYSSS2_GENCONFIGMETA_VALIDATE_OFFSET UNITYSDK_OFFSET(0x3665B0)
+#define MOLEMOLE_ABYSSS2_GENCONFIGMETA_ONVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x3A7020)
+#define MOLEMOLE_ABYSSS2_GENCONFIGMETA_VALIDATE_OFFSET UNITYSDK_OFFSET(0x3A7080)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AbyssS2_GenConfigMeta_TypeDefinitionIndex = 68782;
+	inline static constexpr unsigned int AbyssS2_GenConfigMeta_TypeDefinitionIndex = 77511;
 
 	struct alignas(4) AbyssS2_GenConfigMeta
 	{

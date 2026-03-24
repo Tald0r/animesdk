@@ -10,21 +10,21 @@
 
 namespace NPCCrowd::Ability { class NPCAbilityRuntimeData; }
 
-#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR_EXECUTE_1_OFFSET UNITYSDK_OFFSET(0xA1096A0)
-#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR_EXECUTE_OFFSET UNITYSDK_OFFSET(0xA108710)
-#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR__CCTOR_OFFSET UNITYSDK_OFFSET(0xA109910)
-#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0xA109900)
+#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR_EXECUTE_1_OFFSET UNITYSDK_OFFSET(0x76CFD40)
+#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR_EXECUTE_OFFSET UNITYSDK_OFFSET(0x76CEDB0)
+#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR__CCTOR_OFFSET UNITYSDK_OFFSET(0x76CFFB0)
+#define NPCCROWD_ABILITY_NPCAPPLYMOVEMENTPROCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0x76CFFA0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int NPCApplyMovementProcessor_TypeDefinitionIndex = 53642;
+	inline static constexpr unsigned int NPCApplyMovementProcessor_TypeDefinitionIndex = 79153;
 
 	class NPCApplyMovementProcessor : public ::System::Object
 	{
 	public:
 		static ::System::Boolean* StaticGet_bIsFreezeMovement()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NPCApplyMovementProcessor_TypeDefinitionIndex)->GetStaticField(0x102A0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NPCApplyMovementProcessor_TypeDefinitionIndex)->GetStaticField(0x118E0);
 		}
 
 		::System::Void _ctor()

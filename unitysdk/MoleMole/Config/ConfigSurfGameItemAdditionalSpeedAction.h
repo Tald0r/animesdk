@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMADDITIONALSPEEDACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x6250AE0)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMADDITIONALSPEEDACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x6250D90)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMADDITIONALSPEEDACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0xC23E4A0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMADDITIONALSPEEDACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xC23E750)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemAdditionalSpeedAction_TypeDefinitionIndex = 45861;
+	inline static constexpr unsigned int ConfigSurfGameItemAdditionalSpeedAction_TypeDefinitionIndex = 61869;
 
 	class ConfigSurfGameItemAdditionalSpeedAction : public ::MoleMole::Config::ConfigSurfGameItemAction
 	{

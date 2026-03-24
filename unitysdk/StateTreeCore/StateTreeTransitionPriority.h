@@ -3,14 +3,14 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeTransitionPriority_TypeDefinitionIndex = 26979;
+	inline static constexpr unsigned int StateTreeTransitionPriority_TypeDefinitionIndex = 27893;
 
-	enum class StateTreeTransitionPriority : ::System::Int32
+	enum class StateTreeTransitionPriority : ::System::Byte
 	{
-		None = 0,
-		Normal = 1,
-		Medium = 2,
-		High = 3,
-		Critical = 4,
+		None = 0x0,
+		Normal = 0x1,
+		Medium = 0x2,
+		High = 0x3,
+		Critical = 0x4,
 	};
 }

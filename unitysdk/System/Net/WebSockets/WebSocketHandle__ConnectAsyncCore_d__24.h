@@ -17,8 +17,8 @@ namespace System::Net::WebSockets { class ClientWebSocketOptions; }
 namespace System::Net::WebSockets { class WebSocketHandle; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__CONNECTASYNCCORE_D__24_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x867EB0)
-#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__CONNECTASYNCCORE_D__24_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x867EC0)
+#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__CONNECTASYNCCORE_D__24_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x896650)
+#define SYSTEM_NET_WEBSOCKETS_WEBSOCKETHANDLE__CONNECTASYNCCORE_D__24_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x4C1EB0)
 
 namespace System::Net::WebSockets
 {
@@ -26,18 +26,18 @@ namespace System::Net::WebSockets
 
 	struct alignas(8) WebSocketHandle__ConnectAsyncCore_d__24
 	{
-		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::System::String*> __u__3; // 0x10
-		::System::Net::WebSockets::ClientWebSocketOptions* options; // 0x20
-		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::System::Net::Sockets::Socket*> __u__1; // 0x28
-		::System::Net::WebSockets::WebSocketHandle* __4__this; // 0x38
-		::System::IO::Stream* _stream_5__2; // 0x40
-		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter __u__2; // 0x48
+		::System::Net::WebSockets::ClientWebSocketOptions* options; // 0x10
+		::System::Threading::CancellationTokenRegistration _registration_5__4; // 0x18
+		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::System::String*> __u__3; // 0x30
+		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x40
 		::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*> _secKeyAndSecWebSocketAccept_5__3; // 0x58
-		::System::Threading::CancellationToken cancellationToken; // 0x68
-		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x70
-		::System::Threading::CancellationTokenRegistration _registration_5__4; // 0x88
-		::System::Net::Security::SslStream* _sslStream_5__1; // 0xA0
-		::System::Uri* uri; // 0xA8
+		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter __u__2; // 0x68
+		::System::Uri* uri; // 0x78
+		::System::Net::WebSockets::WebSocketHandle* __4__this; // 0x80
+		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<::System::Net::Sockets::Socket*> __u__1; // 0x88
+		::System::Net::Security::SslStream* _sslStream_5__1; // 0x98
+		::System::Threading::CancellationToken cancellationToken; // 0xA0
+		::System::IO::Stream* _stream_5__2; // 0xA8
 		::System::Int32 __1__state; // 0xB0
 
 		::System::Void MoveNext()

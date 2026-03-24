@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MONO_SECURITY_X509_X520__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0DD5B0)
+#define MONO_SECURITY_X509_X520__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6EE150)
 
 namespace Mono::Security::X509
 {

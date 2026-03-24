@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7F524E0)
-#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7F52520)
-#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___C__ONCLICKMAINCITY_B__34_0_OFFSET UNITYSDK_OFFSET(0x7F52530)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8BA5C00)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8BA5C40)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALPAGECONTROLLER___C__ONCLICKMAINCITY_B__34_0_OFFSET UNITYSDK_OFFSET(0x8BA5C50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityTeamTrialPageController___c_TypeDefinitionIndex = 63911;
+	inline static constexpr unsigned int UIActivityTeamTrialPageController___c_TypeDefinitionIndex = 79106;
 
 	class UIActivityTeamTrialPageController___c : public ::System::Object
 	{
 	public:
 		static ::System::Action** StaticGet___9__34_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTeamTrialPageController___c_TypeDefinitionIndex)->GetStaticField(0x40190);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTeamTrialPageController___c_TypeDefinitionIndex)->GetStaticField(0x46D80);
 		}
 		static ::MoleMole::UIActivityTeamTrialPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIActivityTeamTrialPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTeamTrialPageController___c_TypeDefinitionIndex)->GetStaticField(0x40198);
+			return (::MoleMole::UIActivityTeamTrialPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTeamTrialPageController___c_TypeDefinitionIndex)->GetStaticField(0x46D88);
 		}
 
 		static ::System::Void _cctor()

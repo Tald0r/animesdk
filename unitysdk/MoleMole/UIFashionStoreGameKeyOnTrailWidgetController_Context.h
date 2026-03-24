@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC62B750)
+#define MOLEMOLE_UIFASHIONSTOREGAMEKEYONTRAILWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDF966A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFashionStoreGameKeyOnTrailWidgetController_Context_TypeDefinitionIndex = 57278;
+	inline static constexpr unsigned int UIFashionStoreGameKeyOnTrailWidgetController_Context_TypeDefinitionIndex = 56892;
 
 	class UIFashionStoreGameKeyOnTrailWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

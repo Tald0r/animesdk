@@ -11,40 +11,40 @@ namespace PipelineCamera::CameraSequence { class CameraSequenceContext; }
 namespace PipelineCamera::CameraSequence { class FramePivotInCore_DataProvider; }
 namespace System { template <typename T1, typename T2, typename T3, typename T4> class Func_4; }
 
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_BUILDRUNTIMEDATAPROVIDERDATAPATH_OFFSET UNITYSDK_OFFSET(0x1A5C76B0)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_COLLECTVARIABLE_OFFSET UNITYSDK_OFFSET(0x1A5C7740)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_FETCH_ACTIVECHANNEL_OFFSET UNITYSDK_OFFSET(0x1A5C79A0)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_FETCH_RESAMPLEEACHTIME_OFFSET UNITYSDK_OFFSET(0x1A5C78C0)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GETRATESCALE_OFFSET UNITYSDK_OFFSET(0x1A5C7AE0)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GETSEQUENCEDATAINTERNAL_OFFSET UNITYSDK_OFFSET(0x1A5C7BC0)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GETSEQUENCELENGTH_OFFSET UNITYSDK_OFFSET(0x1A5C7A80)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x1A5C7BB0)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_ISLOOP_OFFSET UNITYSDK_OFFSET(0x1A5C7B50)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A5C8410)
-#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5C83D0)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_BUILDRUNTIMEDATAPROVIDERDATAPATH_OFFSET UNITYSDK_OFFSET(0x1AB91480)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_COLLECTVARIABLE_OFFSET UNITYSDK_OFFSET(0x1AB91510)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_FETCH_ACTIVECHANNEL_OFFSET UNITYSDK_OFFSET(0x1AB91770)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_FETCH_RESAMPLEEACHTIME_OFFSET UNITYSDK_OFFSET(0x1AB91690)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GETRATESCALE_OFFSET UNITYSDK_OFFSET(0x1AB918B0)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GETSEQUENCEDATAINTERNAL_OFFSET UNITYSDK_OFFSET(0x1AB91990)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GETSEQUENCELENGTH_OFFSET UNITYSDK_OFFSET(0x1AB91850)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x1AB91980)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE_ISLOOP_OFFSET UNITYSDK_OFFSET(0x1AB91920)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB921E0)
+#define PIPELINECAMERA_CAMERASEQUENCE_FRAMEPIVOTINCORE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB921A0)
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int FramePivotInCore_TypeDefinitionIndex = 34814;
+	inline static constexpr unsigned int FramePivotInCore_TypeDefinitionIndex = 35816;
 
 	class FramePivotInCore : public ::PipelineCamera::CameraSequence::CoreDataSequence
 	{
 	public:
 		static ::System::Func_4<::PipelineCamera::CameraSequence::FramePivotInCore_DataProvider*, ::System::Single, ::PipelineCamera::CameraSequence::CameraSequenceContext*, ::PipelineCamera::CameraSequence::FramePivotDataInCore>** StaticGet_GetDataInternal()
 		{
-			return (::System::Func_4<::PipelineCamera::CameraSequence::FramePivotInCore_DataProvider*, ::System::Single, ::PipelineCamera::CameraSequence::CameraSequenceContext*, ::PipelineCamera::CameraSequence::FramePivotDataInCore>**)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x24B10);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_resampleEachTime()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x83D0);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_activeChannel()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x83D8);
+			return (::System::Func_4<::PipelineCamera::CameraSequence::FramePivotInCore_DataProvider*, ::System::Single, ::PipelineCamera::CameraSequence::CameraSequenceContext*, ::PipelineCamera::CameraSequence::FramePivotDataInCore>**)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x26540);
 		}
 		static ::Foundation::Unreal::FName* StaticGet__cacheId()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x83E0);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x8730);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_resampleEachTime()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x8738);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_activeChannel()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FramePivotInCore_TypeDefinitionIndex)->GetStaticField(0x8740);
 		}
 		::PipelineCamera::CameraSequence::FramePivotInCore_DataProvider* runtimeDataProvider; // 0x18
 		::System::Single playLength; // 0x20

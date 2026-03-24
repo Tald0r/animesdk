@@ -10,23 +10,23 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_ECCEC4DD7813147F_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xB930B20)
-#define CLASS_2_ECCEC4DD7813147F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB930C70)
-#define CLASS_2_ECCEC4DD7813147F__CTOR_OFFSET UNITYSDK_OFFSET(0xB930C60)
+#define CLASS_2_ECCEC4DD7813147F_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xBE08230)
+#define CLASS_2_ECCEC4DD7813147F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xBE08380)
+#define CLASS_2_ECCEC4DD7813147F__CTOR_OFFSET UNITYSDK_OFFSET(0xBE08370)
 
-inline static constexpr unsigned int Class_2_ECCEC4DD7813147F_TypeDefinitionIndex = 67024;
+inline static constexpr unsigned int Class_2_ECCEC4DD7813147F_TypeDefinitionIndex = 59222;
 
 class Class_2_ECCEC4DD7813147F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_7; // 0x18
-	::UnityEngine::GameObject* Field_2_0; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x30
-	::UnityEngine::UI::Text* Field_2_2; // 0x38
-	::MonoUITableScrollV2* Field_2_1; // 0x40
-	::UnityEngine::Animation* Field_2_6; // 0x48
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x50
+	::UnityEngine::UI::Text* Field_2_2; // 0x18
+	::UnityEngine::Animation* Field_2_6; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x28
+	::MonoUITableScrollV2* Field_2_1; // 0x30
+	::UnityEngine::GameObject* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x48
+	::UnityEngine::GameObject* Field_2_0; // 0x50
 
 	::System::Void _ctor()
 	{

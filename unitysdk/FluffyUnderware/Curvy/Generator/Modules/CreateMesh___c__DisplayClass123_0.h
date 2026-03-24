@@ -5,12 +5,12 @@
 
 namespace FluffyUnderware::Curvy::Generator::Modules { class CreateMesh; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_CREATEMESH___C__DISPLAYCLASS123_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE6EB40)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_CREATEMESH___C__DISPLAYCLASS123_0__UPDATECOLLIDERS_B__0_OFFSET UNITYSDK_OFFSET(0x1AE6EB50)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_CREATEMESH___C__DISPLAYCLASS123_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B488010)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_CREATEMESH___C__DISPLAYCLASS123_0__UPDATECOLLIDERS_B__0_OFFSET UNITYSDK_OFFSET(0x1B488020)
 
 namespace FluffyUnderware::Curvy::Generator::Modules
 {
-	inline static constexpr unsigned int CreateMesh___c__DisplayClass123_0_TypeDefinitionIndex = 35842;
+	inline static constexpr unsigned int CreateMesh___c__DisplayClass123_0_TypeDefinitionIndex = 36862;
 
 	class CreateMesh___c__DisplayClass123_0 : public ::System::Object
 	{

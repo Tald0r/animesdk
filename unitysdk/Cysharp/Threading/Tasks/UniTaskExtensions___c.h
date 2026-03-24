@@ -4,24 +4,24 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define CYSHARP_THREADING_TASKS_UNITASKEXTENSIONS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0845D0)
-#define CYSHARP_THREADING_TASKS_UNITASKEXTENSIONS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B084610)
-#define CYSHARP_THREADING_TASKS_UNITASKEXTENSIONS___C__FORGET_B__41_0_OFFSET UNITYSDK_OFFSET(0x1B084620)
+#define CYSHARP_THREADING_TASKS_UNITASKEXTENSIONS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B692B80)
+#define CYSHARP_THREADING_TASKS_UNITASKEXTENSIONS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B692BC0)
+#define CYSHARP_THREADING_TASKS_UNITASKEXTENSIONS___C__FORGET_B__41_0_OFFSET UNITYSDK_OFFSET(0x1B692BD0)
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int UniTaskExtensions___c_TypeDefinitionIndex = 27183;
+	inline static constexpr unsigned int UniTaskExtensions___c_TypeDefinitionIndex = 28123;
 
 	class UniTaskExtensions___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::System::Object*>** StaticGet___9__41_0()
 		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(UniTaskExtensions___c_TypeDefinitionIndex)->GetStaticField(0x1FC30);
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(UniTaskExtensions___c_TypeDefinitionIndex)->GetStaticField(0x21290);
 		}
 		static ::Cysharp::Threading::Tasks::UniTaskExtensions___c** StaticGet___9()
 		{
-			return (::Cysharp::Threading::Tasks::UniTaskExtensions___c**)Il2CppClass::FromTypeDefinitionIndex(UniTaskExtensions___c_TypeDefinitionIndex)->GetStaticField(0x1FC38);
+			return (::Cysharp::Threading::Tasks::UniTaskExtensions___c**)Il2CppClass::FromTypeDefinitionIndex(UniTaskExtensions___c_TypeDefinitionIndex)->GetStaticField(0x21298);
 		}
 
 		static ::System::Void _cctor()

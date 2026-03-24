@@ -5,30 +5,35 @@
 #include "unitysdk/NPCCrowd/Ability/NPCAbilityPathFollowProcessor_NearestData.h"
 #include "unitysdk/StateTreeCore/BaseFragment.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x7224F80)
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x320560)
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x320500)
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x2C3E30)
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x7224DE0)
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_SET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x320490)
-#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x7225100)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x37FC90)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x37FB10)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x9AF9750)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x37FAF0)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x37FDE0)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x37FA90)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x37FE40)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x37FD00)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x37FBD0)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_RESET_OFFSET UNITYSDK_OFFSET(0x37FD70)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x37FEA0)
+#define NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x9AF9CC0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int FNPCAIBlackboardFragment_TypeDefinitionIndex = 44125;
+	inline static constexpr unsigned int FNPCAIBlackboardFragment_TypeDefinitionIndex = 68541;
 
 	struct alignas(4) FNPCAIBlackboardFragment
 	{
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(FNPCAIBlackboardFragment_TypeDefinitionIndex)->GetStaticField(0x11760);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(FNPCAIBlackboardFragment_TypeDefinitionIndex)->GetStaticField(0x445D0);
 		}
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(FNPCAIBlackboardFragment_TypeDefinitionIndex)->GetStaticField(0x11764);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xF227D30B; // 0x0
 		::StateTreeCore::BaseFragment Base; // 0x10
 		::NPCCrowd::Ability::ENPCNavigateState navigateState; // 0x14
 		::NPCCrowd::Ability::MinPathQueryResult minPathQueryResult; // 0x18
@@ -46,34 +51,59 @@ namespace NPCCrowd::Ability
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT__CCTOR_OFFSET))();
 		}
 
-		::UnrealTypes::FStructHandle get_TypeInfo()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_TYPEINFO_OFFSET))(this);
-		}
-
-		::System::Void set_TypeInfo(::UnrealTypes::FStructHandle value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FStructHandle))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_SET_TYPEINFO_OFFSET))(this, value);
-		}
-
-		::System::UInt32 get_TypeId()
-		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_TYPEID_OFFSET))(this);
-		}
-
-		::UnrealTypes::FStructHandle get_StaticStruct()
-		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
-		}
-
-		static ::System::Void RegisterType()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_REGISTERTYPE_OFFSET))();
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
 		static ::NPCCrowd::Ability::FNPCAIBlackboardFragment Create()
 		{
 			return ((::NPCCrowd::Ability::FNPCAIBlackboardFragment(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_CREATE_OFFSET))();
+		}
+
+		::NPCCrowd::Ability::FNPCAIBlackboardFragment DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCAIBlackboardFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FNPCAIBlackboardFragment CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCAIBlackboardFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FNPCAIBlackboardFragment MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCAIBlackboardFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::FNPCAIBlackboardFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCAIBlackboardFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::FNPCAIBlackboardFragment& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCAIBlackboardFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_FNPCAIBlackboardFragment__CopyAssign(::NPCCrowd::Ability::FNPCAIBlackboardFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCAIBlackboardFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FNPCAIBLACKBOARDFRAGMENT__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

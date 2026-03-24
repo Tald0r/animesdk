@@ -6,11 +6,11 @@ class Class_1_30B5FE4AA7ABAB8C_1;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CAMERAPROPERTYLIBRARY__CTOR_OFFSET UNITYSDK_OFFSET(0x1398F390)
+#define MOLEMOLE_CONFIG_CAMERAPROPERTYLIBRARY__CTOR_OFFSET UNITYSDK_OFFSET(0x9181790)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CameraPropertyLibrary_TypeDefinitionIndex = 67503;
+	inline static constexpr unsigned int CameraPropertyLibrary_TypeDefinitionIndex = 48883;
 
 	class CameraPropertyLibrary : public ::Foundation::MihoyoSerializedScriptableObject
 	{

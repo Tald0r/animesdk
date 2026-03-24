@@ -6,24 +6,24 @@
 
 namespace MoleMole::Config { class ScreenEffectFloat; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0x9707760)
-#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN_GETRESPONSE_OFFSET UNITYSDK_OFFSET(0x9707800)
-#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN_GETTYPE_OFFSET UNITYSDK_OFFSET(0x97076D0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN__CTOR_OFFSET UNITYSDK_OFFSET(0x97078A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0xB0961B0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN_GETRESPONSE_OFFSET UNITYSDK_OFFSET(0xB096250)
+#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN_GETTYPE_OFFSET UNITYSDK_OFFSET(0xB096120)
+#define MOLEMOLE_CONFIG_CONFIGENTITYFILMGRAIN__CTOR_OFFSET UNITYSDK_OFFSET(0xB0962F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityFilmGrain_TypeDefinitionIndex = 67331;
+	inline static constexpr unsigned int ConfigEntityFilmGrain_TypeDefinitionIndex = 53310;
 
 	class ConfigEntityFilmGrain : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{
 	public:
-		::MoleMole::Config::ScreenEffectFloat* intensity; // 0x40
-		::MoleMole::Config::ScreenEffectFloat* response; // 0x48
+		::MoleMole::Config::ScreenEffectFloat* response; // 0x40
+		::MoleMole::Config::ScreenEffectFloat* intensity; // 0x48
 		::UnityEngine::Rendering::Universal::FilmGrainLookup type; // 0x50
 		::MoleMole::Config::ScreenEffectFieldHandleType typeHandleType; // 0x54
-		::MoleMole::Config::ScreenEffectFieldHandleType responseHandleType; // 0x58
-		::MoleMole::Config::ScreenEffectFieldHandleType intensityHandleType; // 0x5C
+		::MoleMole::Config::ScreenEffectFieldHandleType intensityHandleType; // 0x58
+		::MoleMole::Config::ScreenEffectFieldHandleType responseHandleType; // 0x5C
 
 		::System::Void _ctor()
 		{

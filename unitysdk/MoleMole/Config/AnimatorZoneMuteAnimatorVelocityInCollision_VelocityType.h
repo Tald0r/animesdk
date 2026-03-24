@@ -3,12 +3,12 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneMuteAnimatorVelocityInCollision_VelocityType_TypeDefinitionIndex = 74404;
+	inline static constexpr unsigned int AnimatorZoneMuteAnimatorVelocityInCollision_VelocityType_TypeDefinitionIndex = 53279;
 
 	enum class AnimatorZoneMuteAnimatorVelocityInCollision_VelocityType : ::System::Int32
 	{
 		All = 1,
-		None = 2,
 		XZ = 0,
+		None = 2,
 	};
 }

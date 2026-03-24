@@ -1,11 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+class Class_0_16E4307DCC419505_99;
+class Class_3_D92ADC48CDFCC09B_1;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_112_TypeDefinitionIndex = 31493;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_112_TypeDefinitionIndex = 32435;
 
-template <typename TKey, typename TValue>
+template <typename TDrived>
 class Class_0_16E4307DCC419505_112
 {
 public:

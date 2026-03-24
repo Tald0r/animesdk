@@ -6,12 +6,12 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Reflection { class MethodInfo; }
 
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONUTILS___C__DISPLAYCLASS43_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC4AB60)
-#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONUTILS___C__DISPLAYCLASS43_0__ISMETHODOVERRIDDEN_B__0_OFFSET UNITYSDK_OFFSET(0x1AC4AB70)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONUTILS___C__DISPLAYCLASS43_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B24CF90)
+#define NEWTONSOFT_JSON_UTILITIES_REFLECTIONUTILS___C__DISPLAYCLASS43_0__ISMETHODOVERRIDDEN_B__0_OFFSET UNITYSDK_OFFSET(0x1B24CFA0)
 
 namespace Newtonsoft::Json::Utilities
 {
-	inline static constexpr unsigned int ReflectionUtils___c__DisplayClass43_0_TypeDefinitionIndex = 6947;
+	inline static constexpr unsigned int ReflectionUtils___c__DisplayClass43_0_TypeDefinitionIndex = 6951;
 
 	class ReflectionUtils___c__DisplayClass43_0 : public ::System::Object
 	{

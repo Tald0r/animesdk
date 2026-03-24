@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define MOLEMOLE_CONFIG_UITRUSTDEGREEITEMCOLORCONFIG_COLORCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCCACDD0)
+#define MOLEMOLE_CONFIG_UITRUSTDEGREEITEMCOLORCONFIG_COLORCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xACDBCC0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UITrustDegreeItemColorConfig_ColorConfig_TypeDefinitionIndex = 58586;
+	inline static constexpr unsigned int UITrustDegreeItemColorConfig_ColorConfig_TypeDefinitionIndex = 53366;
 
 	class UITrustDegreeItemColorConfig_ColorConfig : public ::System::Object
 	{

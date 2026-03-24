@@ -11,36 +11,36 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF4B70A0)
-#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF4B70B0)
-#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF4B74D0)
-#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF4B7790)
-#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF4B7750)
+#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xFB143E0)
+#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xFB143F0)
+#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xFB14810)
+#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xFB14AD0)
+#define UICONTROLLEREXTENSIONDATA_UICONTROLLEREXTENSIONDATA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xFB14A90)
 
-inline static constexpr unsigned int UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex = 57678;
+inline static constexpr unsigned int UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex = 76996;
 
 class UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::UIControllerExtensionData*>
 {
 public:
-	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>** StaticGet_CachedSerializer2()
+	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Color>*>** StaticGet_CachedSerializer4()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3DE90);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Color>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40C00);
 	}
 	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>*>** StaticGet_CachedSerializer3()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3DE98);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40C08);
 	}
-	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Color>*>** StaticGet_CachedSerializer4()
+	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>** StaticGet_CachedSerializer2()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::Color>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3DEA0);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40C10);
 	}
 	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>** StaticGet_CachedSerializer0()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3DEA8);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40C18);
 	}
 	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*>** StaticGet_CachedSerializer1()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3DEB0);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(UIControllerExtensionData_UIControllerExtensionData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40C20);
 	}
 
 	::System::Void _ctor()

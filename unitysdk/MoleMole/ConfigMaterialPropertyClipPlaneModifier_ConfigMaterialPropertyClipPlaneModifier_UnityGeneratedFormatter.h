@@ -14,54 +14,54 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE82BD30)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE82BD40)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE82D030)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE82DB50)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE82DB10)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB480620)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB480630)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB481930)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB482460)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_CONFIGMATERIALPROPERTYCLIPPLANEMODIFIER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB482420)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex = 52045;
+	inline static constexpr unsigned int ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex = 49294;
 
 	class ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigMaterialPropertyClipPlaneModifier*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer3()
+		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41450);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41458);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>** StaticGet_CachedSerializer8()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41460);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41468);
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477C0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>** StaticGet_CachedSerializer7()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41470);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41478);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41480);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41488);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477C8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueBool>** StaticGet_CachedSerializer6()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueBool>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41490);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueBool>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477D0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477D8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477E0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>** StaticGet_CachedSerializer8()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477E8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477F0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>** StaticGet_CachedSerializer5()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x477F8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyClipPlaneModifier_ConfigMaterialPropertyClipPlaneModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47800);
 		}
 
 		::System::Void _ctor()

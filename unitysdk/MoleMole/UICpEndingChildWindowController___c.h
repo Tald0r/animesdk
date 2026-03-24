@@ -6,25 +6,25 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A8E3B60)
-#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8E3BA0)
-#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C__SETITEMLISTINFO_B__19_0_OFFSET UNITYSDK_OFFSET(0x1A8E3BB0)
-#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C___CCTOR_B__33_0_OFFSET UNITYSDK_OFFSET(0x1A8E3BD0)
+#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18DE38F0)
+#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18DE3930)
+#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C__SETITEMLISTINFO_B__19_0_OFFSET UNITYSDK_OFFSET(0x18DE3940)
+#define MOLEMOLE_UICPENDINGCHILDWINDOWCONTROLLER___C___CCTOR_B__33_0_OFFSET UNITYSDK_OFFSET(0x18DE3960)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICpEndingChildWindowController___c_TypeDefinitionIndex = 81496;
+	inline static constexpr unsigned int UICpEndingChildWindowController___c_TypeDefinitionIndex = 83608;
 
 	class UICpEndingChildWindowController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UICpEndingChildWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UICpEndingChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UICpEndingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x46880);
-		}
 		static ::System::Comparison_1<::MoleMole::UICpEndingChildWindowController_CpItemInfo>** StaticGet___9__19_0()
 		{
-			return (::System::Comparison_1<::MoleMole::UICpEndingChildWindowController_CpItemInfo>**)Il2CppClass::FromTypeDefinitionIndex(UICpEndingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x46888);
+			return (::System::Comparison_1<::MoleMole::UICpEndingChildWindowController_CpItemInfo>**)Il2CppClass::FromTypeDefinitionIndex(UICpEndingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x48250);
+		}
+		static ::MoleMole::UICpEndingChildWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UICpEndingChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UICpEndingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x48258);
 		}
 
 		static ::System::Void _cctor()

@@ -6,37 +6,37 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_3BFE3B9EF8374F61_OFFSET UNITYSDK_OFFSET(0x75AC7A0)
-#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_602A336CBD30C930_OFFSET UNITYSDK_OFFSET(0x75AC800)
-#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x75AC810)
-#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_EC00644AF39B5DED_OFFSET UNITYSDK_OFFSET(0x75AC820)
-#define CLASS_2_80AC63F59C5E376B___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x75AC750)
-#define CLASS_2_80AC63F59C5E376B___C__CTOR_OFFSET UNITYSDK_OFFSET(0x75AC790)
+#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_3BFE3B9EF8374F61_OFFSET UNITYSDK_OFFSET(0x67F07C0)
+#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_602A336CBD30C930_OFFSET UNITYSDK_OFFSET(0x67F0820)
+#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0x67F0830)
+#define CLASS_2_80AC63F59C5E376B___C_METHOD_1_EC00644AF39B5DED_OFFSET UNITYSDK_OFFSET(0x67F0700)
+#define CLASS_2_80AC63F59C5E376B___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x67F06B0)
+#define CLASS_2_80AC63F59C5E376B___C__CTOR_OFFSET UNITYSDK_OFFSET(0x67F06F0)
 
-inline static constexpr unsigned int Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex = 51474;
+inline static constexpr unsigned int Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex = 66493;
 
 class Class_2_80AC63F59C5E376B___c : public ::System::Object
 {
 public:
 	static ::System::Action_1<::Struct_2_9EC844EFE0300763>** StaticGet___9__73_1()
 	{
-		return (::System::Action_1<::Struct_2_9EC844EFE0300763>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x30940);
-	}
-	static ::System::Action** StaticGet___9__72_0()
-	{
-		return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x30948);
+		return (::System::Action_1<::Struct_2_9EC844EFE0300763>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x2F110);
 	}
 	static ::Class_2_80AC63F59C5E376B___c** StaticGet___9()
 	{
-		return (::Class_2_80AC63F59C5E376B___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x30950);
+		return (::Class_2_80AC63F59C5E376B___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x2F118);
 	}
-	static ::System::Action** StaticGet___9__68_0()
+	static ::System::Action** StaticGet___9__72_0()
 	{
-		return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x30958);
+		return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x2F120);
 	}
 	static ::System::Action** StaticGet___9__73_0()
 	{
-		return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x30960);
+		return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x2F128);
+	}
+	static ::System::Action** StaticGet___9__68_0()
+	{
+		return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(Class_2_80AC63F59C5E376B___c_TypeDefinitionIndex)->GetStaticField(0x2F130);
 	}
 
 	static ::System::Void _cctor()
@@ -47,6 +47,11 @@ public:
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_80AC63F59C5E376B___C__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_1_EC00644AF39B5DED()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_80AC63F59C5E376B___C_METHOD_1_EC00644AF39B5DED_OFFSET))(this);
 	}
 
 	::System::Void Method_1_3BFE3B9EF8374F61()
@@ -62,10 +67,5 @@ public:
 	::System::Void Method_1_832295EC279E5994()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_80AC63F59C5E376B___C_METHOD_1_832295EC279E5994_OFFSET))(this);
-	}
-
-	::System::Void Method_1_EC00644AF39B5DED()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_80AC63F59C5E376B___C_METHOD_1_EC00644AF39B5DED_OFFSET))(this);
 	}
 };

@@ -3,7 +3,7 @@
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::Math
 {
-	inline static constexpr unsigned int RandomFloat_FractionPrecision_TypeDefinitionIndex = 30641;
+	inline static constexpr unsigned int RandomFloat_FractionPrecision_TypeDefinitionIndex = 31593;
 
 	enum class RandomFloat_FractionPrecision : ::System::Int32
 	{

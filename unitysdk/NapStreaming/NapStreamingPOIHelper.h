@@ -6,14 +6,14 @@
 #include "unitysdk/UnityEngine/Bounds.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define NAPSTREAMING_NAPSTREAMINGPOIHELPER_CONTAINSBOUNDS_OFFSET UNITYSDK_OFFSET(0x6B69830)
-#define NAPSTREAMING_NAPSTREAMINGPOIHELPER_ISBOUNDSCONTAINED_OFFSET UNITYSDK_OFFSET(0x6B69650)
-#define NAPSTREAMING_NAPSTREAMINGPOIHELPER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x6B69490)
-#define NAPSTREAMING_NAPSTREAMINGPOIHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x6B69E70)
+#define NAPSTREAMING_NAPSTREAMINGPOIHELPER_CONTAINSBOUNDS_OFFSET UNITYSDK_OFFSET(0x781D470)
+#define NAPSTREAMING_NAPSTREAMINGPOIHELPER_ISBOUNDSCONTAINED_OFFSET UNITYSDK_OFFSET(0x781D290)
+#define NAPSTREAMING_NAPSTREAMINGPOIHELPER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x781D0D0)
+#define NAPSTREAMING_NAPSTREAMINGPOIHELPER__CTOR_OFFSET UNITYSDK_OFFSET(0x781DCD0)
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NapStreamingPOIHelper_TypeDefinitionIndex = 66118;
+	inline static constexpr unsigned int NapStreamingPOIHelper_TypeDefinitionIndex = 63272;
 
 	class NapStreamingPOIHelper : public ::UnityEngine::MonoBehaviour
 	{
@@ -37,9 +37,9 @@ namespace NapStreaming
 			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Bounds, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + NAPSTREAMING_NAPSTREAMINGPOIHELPER_ISBOUNDSCONTAINED_OFFSET))(this, outer, inner);
 		}
 
-		::System::Boolean ContainsBounds(::UnityEngine::Bounds b)
+		::System::Boolean ContainsBounds(::UnityEngine::Bounds b, ::System::Boolean checkCenter)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Bounds))((::PBYTE)hIl2Cpp + NAPSTREAMING_NAPSTREAMINGPOIHELPER_CONTAINSBOUNDS_OFFSET))(this, b);
+			return ((::System::Boolean(*)(::PVOID, ::UnityEngine::Bounds, ::System::Boolean))((::PBYTE)hIl2Cpp + NAPSTREAMING_NAPSTREAMINGPOIHELPER_CONTAINSBOUNDS_OFFSET))(this, b, checkCenter);
 		}
 	};
 }

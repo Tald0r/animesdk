@@ -1,11 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NodeGraph/VariantUnion.h"
+#include "unitysdk/Struct_2_FE667B282E242C72.h"
 
-class Class_1_79526D80B8F6897C;
-namespace System { template <typename T> class Action_1; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_292_TypeDefinitionIndex = 41286;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_292_TypeDefinitionIndex = 78755;
 
 class Class_0_16E4307DCC419505_292
 {

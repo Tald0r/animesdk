@@ -6,7 +6,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int ICameraDebugger3D_TypeDefinitionIndex = 34433;
+	inline static constexpr unsigned int ICameraDebugger3D_TypeDefinitionIndex = 35435;
 
 	class ICameraDebugger3D
 	{

@@ -10,7 +10,7 @@
 
 namespace UnityEngine::Experimental::GlobalIllumination
 {
-	inline static constexpr unsigned int SpotLight_TypeDefinitionIndex = 6284;
+	inline static constexpr unsigned int SpotLight_TypeDefinitionIndex = 6288;
 
 	struct alignas(4) SpotLight
 	{

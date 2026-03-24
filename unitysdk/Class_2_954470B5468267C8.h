@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_34.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_54.h"
 #include "unitysdk/MoleMole/UICameraAtom.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
@@ -9,13 +9,13 @@ class Class_1_F356FCA60006484C;
 namespace MoleMole::Config { class ConfigHollowCameraEasing; }
 namespace System { class Object; }
 
-#define CLASS_2_954470B5468267C8_METHOD_2_7A8AC8365BFD8B87_OFFSET UNITYSDK_OFFSET(0x6583EE0)
-#define CLASS_2_954470B5468267C8_METHOD_2_B0DB84599FBD1FA0_OFFSET UNITYSDK_OFFSET(0x6584090)
-#define CLASS_2_954470B5468267C8__CTOR_OFFSET UNITYSDK_OFFSET(0x65841E0)
+#define CLASS_2_954470B5468267C8_METHOD_2_7A8AC8365BFD8B87_OFFSET UNITYSDK_OFFSET(0xAEF35A0)
+#define CLASS_2_954470B5468267C8_METHOD_2_B0DB84599FBD1FA0_OFFSET UNITYSDK_OFFSET(0xAEF3750)
+#define CLASS_2_954470B5468267C8__CTOR_OFFSET UNITYSDK_OFFSET(0xAEF38A0)
 
-inline static constexpr unsigned int Class_2_954470B5468267C8_TypeDefinitionIndex = 38901;
+inline static constexpr unsigned int Class_2_954470B5468267C8_TypeDefinitionIndex = 43292;
 
-class Class_2_954470B5468267C8 : public ::Class_1_43BD383C98B4C0C5_34
+class Class_2_954470B5468267C8 : public ::Class_1_43BD383C98B4C0C5_54
 {
 public:
 	::System::Void _ctor()

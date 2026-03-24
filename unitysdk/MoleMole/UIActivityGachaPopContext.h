@@ -4,20 +4,20 @@
 
 class Class_1_4865323EE33E9248;
 class Class_1_D375C91CCE5D3999;
-class Class_2_208CC9941471731A_190;
+class Class_2_208CC9941471731A_962;
 
-#define MOLEMOLE_UIACTIVITYGACHAPOPCONTEXT_INITPOPCONTEXT_OFFSET UNITYSDK_OFFSET(0x8AB9C50)
-#define MOLEMOLE_UIACTIVITYGACHAPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8AB9DA0)
+#define MOLEMOLE_UIACTIVITYGACHAPOPCONTEXT_INITPOPCONTEXT_OFFSET UNITYSDK_OFFSET(0x8CC2A00)
+#define MOLEMOLE_UIACTIVITYGACHAPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8CC2B50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityGachaPopContext_TypeDefinitionIndex = 69092;
+	inline static constexpr unsigned int UIActivityGachaPopContext_TypeDefinitionIndex = 58638;
 
 	class UIActivityGachaPopContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_1_D375C91CCE5D3999* relateActivity; // 0x28
-		::Class_2_208CC9941471731A_190* template_; // 0x30
+		::Class_2_208CC9941471731A_962* template_; // 0x28
+		::Class_1_D375C91CCE5D3999* relateActivity; // 0x30
 		::Class_1_4865323EE33E9248* popData; // 0x38
 		::System::Boolean isLoginMessage; // 0x40
 		::System::Int32 popID; // 0x44

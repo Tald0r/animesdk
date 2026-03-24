@@ -6,12 +6,12 @@ namespace NPCCrowd::Accessories { class NpcAccessoryItem; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYMAPCONFIG_GETNPCACCITEM_OFFSET UNITYSDK_OFFSET(0x7645BF0)
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYMAPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7645CF0)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYMAPCONFIG_GETNPCACCITEM_OFFSET UNITYSDK_OFFSET(0x8628050)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYMAPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8628150)
 
 namespace NPCCrowd::Accessories
 {
-	inline static constexpr unsigned int NPCAccessoryMapConfig_TypeDefinitionIndex = 76234;
+	inline static constexpr unsigned int NPCAccessoryMapConfig_TypeDefinitionIndex = 41813;
 
 	class NPCAccessoryMapConfig : public ::System::Object
 	{

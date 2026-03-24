@@ -9,24 +9,24 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UIDynamicNumberLabel; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_1D20A72B5058791B_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0xC307350)
-#define CLASS_2_1D20A72B5058791B_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xC307560)
-#define CLASS_2_1D20A72B5058791B_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC307630)
-#define CLASS_2_1D20A72B5058791B__CTOR_OFFSET UNITYSDK_OFFSET(0xC307620)
+#define CLASS_2_1D20A72B5058791B_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0xB3ADD70)
+#define CLASS_2_1D20A72B5058791B_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xB3ADF80)
+#define CLASS_2_1D20A72B5058791B_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB3AE050)
+#define CLASS_2_1D20A72B5058791B__CTOR_OFFSET UNITYSDK_OFFSET(0xB3AE040)
 
-inline static constexpr unsigned int Class_2_1D20A72B5058791B_TypeDefinitionIndex = 47097;
+inline static constexpr unsigned int Class_2_1D20A72B5058791B_TypeDefinitionIndex = 80853;
 
 class Class_2_1D20A72B5058791B : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_3; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x20
-	::UnityEngine::RectTransform* Field_2_2; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x30
-	::UnityEngine::RectTransform* Field_2_7; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x50
+	::UnityEngine::RectTransform* Field_2_2; // 0x18
+	::UnityEngine::RectTransform* Field_2_7; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x40
+	::UnityEngine::UI::Extension::UIDynamicNumberLabel* Field_2_3; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x50
 
 	::System::Void _ctor()
 	{

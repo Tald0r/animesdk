@@ -9,22 +9,22 @@ namespace System { class Type; }
 namespace System { template <typename T1, typename T2> class Tuple_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_CREATEDEFAULTPROVIDERIMPL_OFFSET UNITYSDK_OFFSET(0x18FAA0C0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_DEBUG_OFFSET UNITYSDK_OFFSET(0x18FAB2E0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDERINTERNAL_OFFSET UNITYSDK_OFFSET(0x18FA9450)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_1_OFFSET UNITYSDK_OFFSET(0x18FAB5E0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_OFFSET UNITYSDK_OFFSET(0x18FAB3B0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GET_ISINITIALIZED_OFFSET UNITYSDK_OFFSET(0x18FAB640)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEDEBUG_OFFSET UNITYSDK_OFFSET(0x18FAB1E0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_1_OFFSET UNITYSDK_OFFSET(0x18FAA1E0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_OFFSET UNITYSDK_OFFSET(0x18FA9580)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEPROVIDERREGISTRATION_OFFSET UNITYSDK_OFFSET(0x18FA9A90)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_1_OFFSET UNITYSDK_OFFSET(0x18FAB7C0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x18FAB760)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_ISPROVIDERSUPPORTED_OFFSET UNITYSDK_OFFSET(0x18FAB440)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDERTYPE_OFFSET UNITYSDK_OFFSET(0x18FAACF0)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDER_OFFSET UNITYSDK_OFFSET(0x18FAA400)
-#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FAB820)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_CREATEDEFAULTPROVIDERIMPL_OFFSET UNITYSDK_OFFSET(0x19396480)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_DEBUG_OFFSET UNITYSDK_OFFSET(0x193976A0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDERINTERNAL_OFFSET UNITYSDK_OFFSET(0x19395820)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_1_OFFSET UNITYSDK_OFFSET(0x193979A0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GETPROVIDER_OFFSET UNITYSDK_OFFSET(0x19397770)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_GET_ISINITIALIZED_OFFSET UNITYSDK_OFFSET(0x19397A00)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEDEBUG_OFFSET UNITYSDK_OFFSET(0x193975A0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_1_OFFSET UNITYSDK_OFFSET(0x193965A0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEINTERNAL_OFFSET UNITYSDK_OFFSET(0x19395950)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZEPROVIDERREGISTRATION_OFFSET UNITYSDK_OFFSET(0x19395E60)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_1_OFFSET UNITYSDK_OFFSET(0x19397B80)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x19397B20)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_ISPROVIDERSUPPORTED_OFFSET UNITYSDK_OFFSET(0x19397800)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDERTYPE_OFFSET UNITYSDK_OFFSET(0x193970B0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY_LOOKUPPROVIDER_OFFSET UNITYSDK_OFFSET(0x193967C0)
+#define MONO_NET_SECURITY_MONOTLSPROVIDERFACTORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19397BE0)
 
 namespace Mono::Net::Security
 {
@@ -37,37 +37,37 @@ namespace Mono::Net::Security
 		{
 			return (::Mono::Security::Interface::MonoTlsProvider**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28A0);
 		}
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>** StaticGet_providerRegistration()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28A8);
+		}
 		static ::System::Object** StaticGet_locker()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28A8);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28B0);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>** StaticGet_providerCache()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28B0);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>** StaticGet_providerRegistration()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Tuple_2<::System::Guid, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28B8);
-		}
-		static ::System::Guid* StaticGet_UnityTlsId()
-		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10A0);
-		}
-		static ::System::Guid* StaticGet_AppleTlsId()
-		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10B0);
-		}
-		static ::System::Guid* StaticGet_LegacyId()
-		{
-			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10C0);
-		}
-		static ::System::Boolean* StaticGet_initialized()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10D0);
+			return (::System::Collections::Generic::Dictionary_2<::System::Guid, ::Mono::Security::Interface::MonoTlsProvider*>**)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x28B8);
 		}
 		static ::System::Boolean* StaticGet_enableDebug()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10D1);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10A0);
+		}
+		static ::System::Boolean* StaticGet_initialized()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10A1);
+		}
+		static ::System::Guid* StaticGet_UnityTlsId()
+		{
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10A4);
+		}
+		static ::System::Guid* StaticGet_LegacyId()
+		{
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10B4);
+		}
+		static ::System::Guid* StaticGet_AppleTlsId()
+		{
+			return (::System::Guid*)Il2CppClass::FromTypeDefinitionIndex(MonoTlsProviderFactory_TypeDefinitionIndex)->GetStaticField(0x10C4);
 		}
 		static ::System::Guid* StaticGet_BtlsId()
 		{

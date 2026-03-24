@@ -3,11 +3,11 @@
 #include "unitysdk/Foundation/AssetPath.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYMDBPOSE__CTOR_OFFSET UNITYSDK_OFFSET(0x743CD70)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYMDBPOSE__CTOR_OFFSET UNITYSDK_OFFSET(0x6F9C090)
 
 namespace NPCCrowd::Accessories
 {
-	inline static constexpr unsigned int NPCAccessoryMDBPose_TypeDefinitionIndex = 57499;
+	inline static constexpr unsigned int NPCAccessoryMDBPose_TypeDefinitionIndex = 78127;
 
 	class NPCAccessoryMDBPose : public ::System::Object
 	{

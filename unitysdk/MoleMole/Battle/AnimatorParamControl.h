@@ -6,22 +6,22 @@ class Class_3_F33F9DC5F4112336;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_ADDBOOLEAN_OFFSET UNITYSDK_OFFSET(0x9B30710)
-#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_ADDINTEGER_OFFSET UNITYSDK_OFFSET(0x9B305F0)
-#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_ADDTRIGGER_OFFSET UNITYSDK_OFFSET(0x9B304D0)
-#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_PROCESS_OFFSET UNITYSDK_OFFSET(0x9B30830)
-#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL__CTOR_OFFSET UNITYSDK_OFFSET(0x9B30200)
+#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_ADDBOOLEAN_OFFSET UNITYSDK_OFFSET(0xB43EE60)
+#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_ADDINTEGER_OFFSET UNITYSDK_OFFSET(0xB43ED40)
+#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_ADDTRIGGER_OFFSET UNITYSDK_OFFSET(0xB43EC20)
+#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL_PROCESS_OFFSET UNITYSDK_OFFSET(0xB43EF80)
+#define MOLEMOLE_BATTLE_ANIMATORPARAMCONTROL__CTOR_OFFSET UNITYSDK_OFFSET(0xB43E950)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int AnimatorParamControl_TypeDefinitionIndex = 62499;
+	inline static constexpr unsigned int AnimatorParamControl_TypeDefinitionIndex = 69586;
 
 	class AnimatorParamControl : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* booleanDict; // 0x10
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* integerDict; // 0x10
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* triggerDict; // 0x18
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* integerDict; // 0x20
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* booleanDict; // 0x20
 
 		::System::Void _ctor()
 		{

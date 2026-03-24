@@ -8,49 +8,49 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9468030)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9468070)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__INITSTICKER_B__30_1_OFFSET UNITYSDK_OFFSET(0x94680C0)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__INITSTICKER_B__30_2_OFFSET UNITYSDK_OFFSET(0x94681E0)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHSELFIEMOTIONDATA_B__8_1_OFFSET UNITYSDK_OFFSET(0x9468080)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHSELFIEMOTIONDATA_B__8_2_OFFSET UNITYSDK_OFFSET(0x94680A0)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHVOLUMEDATA_B__67_0_OFFSET UNITYSDK_OFFSET(0x94682D0)
-#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHVOLUMEDATA_B__67_1_OFFSET UNITYSDK_OFFSET(0x94682F0)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA430390)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA4303D0)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__INITSTICKER_B__30_1_OFFSET UNITYSDK_OFFSET(0xA430420)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__INITSTICKER_B__30_2_OFFSET UNITYSDK_OFFSET(0xA430530)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHSELFIEMOTIONDATA_B__8_1_OFFSET UNITYSDK_OFFSET(0xA4303E0)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHSELFIEMOTIONDATA_B__8_2_OFFSET UNITYSDK_OFFSET(0xA430400)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHVOLUMEDATA_B__67_0_OFFSET UNITYSDK_OFFSET(0xA430620)
+#define MOLEMOLE_UIPHOTOSETTINGCHILDWINDOWCONTROLLER___C__REFRESHVOLUMEDATA_B__67_1_OFFSET UNITYSDK_OFFSET(0xA430640)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoSettingChildWindowController___c_TypeDefinitionIndex = 76829;
+	inline static constexpr unsigned int UIPhotoSettingChildWindowController___c_TypeDefinitionIndex = 81134;
 
 	class UIPhotoSettingChildWindowController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIPhotoSettingChildWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIPhotoSettingChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32920);
-		}
 		static ::System::Func_2<::Class_1_03687BAE461D2A08*, ::System::Boolean>** StaticGet___9__67_0()
 		{
-			return (::System::Func_2<::Class_1_03687BAE461D2A08*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32928);
-		}
-		static ::System::Func_2<::Class_1_730A101C592B37EC*, ::System::Boolean>** StaticGet___9__8_1()
-		{
-			return (::System::Func_2<::Class_1_730A101C592B37EC*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32930);
-		}
-		static ::System::Func_1<::System::String*>** StaticGet___9__30_1()
-		{
-			return (::System::Func_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32938);
-		}
-		static ::System::Func_1<::System::String*>** StaticGet___9__30_2()
-		{
-			return (::System::Func_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32940);
+			return (::System::Func_2<::Class_1_03687BAE461D2A08*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34850);
 		}
 		static ::System::Func_2<::Class_1_03687BAE461D2A08*, ::System::UInt32>** StaticGet___9__67_1()
 		{
-			return (::System::Func_2<::Class_1_03687BAE461D2A08*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32948);
+			return (::System::Func_2<::Class_1_03687BAE461D2A08*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34858);
+		}
+		static ::System::Func_1<::System::String*>** StaticGet___9__30_2()
+		{
+			return (::System::Func_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34860);
 		}
 		static ::System::Func_2<::Class_1_730A101C592B37EC*, ::System::UInt32>** StaticGet___9__8_2()
 		{
-			return (::System::Func_2<::Class_1_730A101C592B37EC*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32950);
+			return (::System::Func_2<::Class_1_730A101C592B37EC*, ::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34868);
+		}
+		static ::System::Func_2<::Class_1_730A101C592B37EC*, ::System::Boolean>** StaticGet___9__8_1()
+		{
+			return (::System::Func_2<::Class_1_730A101C592B37EC*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34870);
+		}
+		static ::MoleMole::UIPhotoSettingChildWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIPhotoSettingChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34878);
+		}
+		static ::System::Func_1<::System::String*>** StaticGet___9__30_1()
+		{
+			return (::System::Func_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIPhotoSettingChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34880);
 		}
 
 		static ::System::Void _cctor()

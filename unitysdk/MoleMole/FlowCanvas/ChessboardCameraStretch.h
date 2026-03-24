@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_1.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCameraStretch_ParaInfo.h"
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCH_INVOKE_OFFSET UNITYSDK_OFFSET(0xE0E98F0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCH__CTOR_OFFSET UNITYSDK_OFFSET(0xE0E9BB0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCH_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A4E570)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDCAMERASTRETCH__CTOR_OFFSET UNITYSDK_OFFSET(0x7A4E830)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardCameraStretch_TypeDefinitionIndex = 71730;
+	inline static constexpr unsigned int ChessboardCameraStretch_TypeDefinitionIndex = 74383;
 
 	class ChessboardCameraStretch : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_1<::MoleMole::FlowCanvas::ChessboardCameraStretch_ParaInfo>
 	{

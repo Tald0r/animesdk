@@ -3,19 +3,19 @@
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
 namespace System { template <typename T> class Action_1; }
-template <typename T> class Class_0_16E4307DCC419505_102;
+template <typename T> class Class_0_16E4307DCC419505_95;
 
-#define MOLEMOLE_UISOCIALCIRCLEINTERKNOTDIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xACB21E0)
+#define MOLEMOLE_UISOCIALCIRCLEINTERKNOTDIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8690650)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISocialCircleInterknotDialogPopWindowController_Context_TypeDefinitionIndex = 54277;
+	inline static constexpr unsigned int UISocialCircleInterknotDialogPopWindowController_Context_TypeDefinitionIndex = 78890;
 
 	class UISocialCircleInterknotDialogPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_0_16E4307DCC419505_102<::System::Int32>* CurrentSelect; // 0x28
-		::System::Action_1<::System::Int32>* OnConfirmCallback; // 0x30
+		::System::Action_1<::System::Int32>* OnConfirmCallback; // 0x28
+		::Class_0_16E4307DCC419505_95<::System::Int32>* CurrentSelect; // 0x30
 
 		::System::Void _ctor()
 		{

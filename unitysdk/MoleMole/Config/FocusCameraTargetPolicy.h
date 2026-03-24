@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int FocusCameraTargetPolicy_TypeDefinitionIndex = 78131;
+	inline static constexpr unsigned int FocusCameraTargetPolicy_TypeDefinitionIndex = 76559;
 
 	enum class FocusCameraTargetPolicy : ::System::Int32
 	{

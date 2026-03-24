@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_1_EEA0111A28582B57.h"
 
-class Class_2_3B0594C973D57E5F_Class_2_2B4A80331696625A_2;
+class Class_2_3B0594C973D57E5F_Class_2_2B4A80331696625A_3;
 class Class_2_60DDD9C206686F44;
 class Class_2_777A5D016ADC7368;
 class Class_2_A8F5ABF31E066ED4;
@@ -13,30 +13,30 @@ namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define CLASS_2_3B0594C973D57E5F_METHOD_2_52607DE4C357D269_OFFSET UNITYSDK_OFFSET(0xB074170)
-#define CLASS_2_3B0594C973D57E5F_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xB073E60)
-#define CLASS_2_3B0594C973D57E5F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB0742E0)
-#define CLASS_2_3B0594C973D57E5F__CTOR_OFFSET UNITYSDK_OFFSET(0xB0742D0)
+#define CLASS_2_3B0594C973D57E5F_METHOD_2_52607DE4C357D269_OFFSET UNITYSDK_OFFSET(0x61F9490)
+#define CLASS_2_3B0594C973D57E5F_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x61F9180)
+#define CLASS_2_3B0594C973D57E5F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x61F9600)
+#define CLASS_2_3B0594C973D57E5F__CTOR_OFFSET UNITYSDK_OFFSET(0x61F95F0)
 
-inline static constexpr unsigned int Class_2_3B0594C973D57E5F_TypeDefinitionIndex = 50011;
+inline static constexpr unsigned int Class_2_3B0594C973D57E5F_TypeDefinitionIndex = 68747;
 
 class Class_2_3B0594C973D57E5F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_2; // 0x18
-	::MonoUITableScrollV2* Field_2_11; // 0x20
-	::Class_2_A8F5ABF31E066ED4* Field_2_13; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x40
-	::Class_2_0D31A1661D004892<::Class_2_3B0594C973D57E5F_Class_2_2B4A80331696625A_2*>* Field_2_4; // 0x48
-	::MoleMole::NotificationBadge* Field_2_6; // 0x50
-	::UnityEngine::UI::Extension::UITimeWidget* Field_2_9; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x60
-	::Class_2_60DDD9C206686F44* Field_2_10; // 0x68
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x70
-	::MoleMole::NotificationBadge* Field_2_12; // 0x78
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x80
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x20
+	::Class_2_0D31A1661D004892<::Class_2_3B0594C973D57E5F_Class_2_2B4A80331696625A_3*>* Field_2_4; // 0x28
+	::MoleMole::NotificationBadge* Field_2_6; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x38
+	::MoleMole::NotificationBadge* Field_2_12; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UITimeWidget* Field_2_9; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x58
+	::Class_2_A8F5ABF31E066ED4* Field_2_13; // 0x60
+	::MonoUITableScrollV2* Field_2_11; // 0x68
+	::Class_2_60DDD9C206686F44* Field_2_10; // 0x70
+	::MonoUITableScrollV2* Field_2_2; // 0x78
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x80
 
 	::System::Void _ctor()
 	{

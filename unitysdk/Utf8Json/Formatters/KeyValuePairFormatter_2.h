@@ -9,7 +9,7 @@ namespace Utf8Json { class IJsonFormatterResolver; }
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int KeyValuePairFormatter_2_TypeDefinitionIndex = 82036;
+	inline static constexpr unsigned int KeyValuePairFormatter_2_TypeDefinitionIndex = 84077;
 
 	template <typename TKey, typename TValue>
 	class KeyValuePairFormatter_2 : public ::System::Object

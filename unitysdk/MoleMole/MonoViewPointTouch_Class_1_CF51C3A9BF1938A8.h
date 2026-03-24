@@ -5,22 +5,22 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_MONOVIEWPOINTTOUCH_CLASS_1_CF51C3A9BF1938A8_METHOD_1_128774387667156B_OFFSET UNITYSDK_OFFSET(0x830C490)
-#define MOLEMOLE_MONOVIEWPOINTTOUCH_CLASS_1_CF51C3A9BF1938A8_TOSTRING_OFFSET UNITYSDK_OFFSET(0x830C100)
-#define MOLEMOLE_MONOVIEWPOINTTOUCH_CLASS_1_CF51C3A9BF1938A8__CTOR_OFFSET UNITYSDK_OFFSET(0x830C480)
+#define MOLEMOLE_MONOVIEWPOINTTOUCH_CLASS_1_CF51C3A9BF1938A8_METHOD_1_128774387667156B_OFFSET UNITYSDK_OFFSET(0xC7D2670)
+#define MOLEMOLE_MONOVIEWPOINTTOUCH_CLASS_1_CF51C3A9BF1938A8_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC7D22E0)
+#define MOLEMOLE_MONOVIEWPOINTTOUCH_CLASS_1_CF51C3A9BF1938A8__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D2660)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoViewPointTouch_Class_1_CF51C3A9BF1938A8_TypeDefinitionIndex = 72033;
+	inline static constexpr unsigned int MonoViewPointTouch_Class_1_CF51C3A9BF1938A8_TypeDefinitionIndex = 37867;
 
 	class MonoViewPointTouch_Class_1_CF51C3A9BF1938A8 : public ::System::Object
 	{
 	public:
-		::System::Int32 Field_1_0; // 0x10
+		::System::Boolean Field_1_1; // 0x10
+		::System::Boolean Field_1_2; // 0x11
 		::UnityEngine::Vector2 Field_1_3; // 0x14
-		::UnityEngine::Vector2 Field_1_4; // 0x1C
-		::System::Boolean Field_1_2; // 0x24
-		::System::Boolean Field_1_1; // 0x25
+		::System::Int32 Field_1_0; // 0x1C
+		::UnityEngine::Vector2 Field_1_4; // 0x20
 
 		::System::Void _ctor()
 		{

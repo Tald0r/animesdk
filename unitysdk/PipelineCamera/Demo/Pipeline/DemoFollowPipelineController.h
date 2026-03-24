@@ -7,12 +7,12 @@ namespace PipelineCamera::Demo::Pipeline { class DemoFollowPipelineConfig; }
 namespace PipelineCamera::Demo::Pipeline { class DemoFollowPlayerController; }
 namespace UnityEngine { class Camera; }
 
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONTROLLER_GET_CONTROLLER_OFFSET UNITYSDK_OFFSET(0x1A039360)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A039370)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONTROLLER_GET_CONTROLLER_OFFSET UNITYSDK_OFFSET(0x1A619430)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A619440)
 
 namespace PipelineCamera::Demo::Pipeline
 {
-	inline static constexpr unsigned int DemoFollowPipelineController_TypeDefinitionIndex = 34619;
+	inline static constexpr unsigned int DemoFollowPipelineController_TypeDefinitionIndex = 35621;
 
 	class DemoFollowPipelineController : public ::UnityEngine::MonoBehaviour
 	{

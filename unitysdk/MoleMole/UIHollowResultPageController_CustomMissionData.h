@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIHOLLOWRESULTPAGECONTROLLER_CUSTOMMISSIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x7D15A50)
+#define MOLEMOLE_UIHOLLOWRESULTPAGECONTROLLER_CUSTOMMISSIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x91450D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowResultPageController_CustomMissionData_TypeDefinitionIndex = 39285;
+	inline static constexpr unsigned int UIHollowResultPageController_CustomMissionData_TypeDefinitionIndex = 61271;
 
 	class UIHollowResultPageController_CustomMissionData : public ::System::Object
 	{
@@ -17,8 +17,8 @@ namespace MoleMole
 		::System::String* Text; // 0x10
 		::System::String* NumText; // 0x18
 		::UnityEngine::Color NumTextColor; // 0x20
-		::UnityEngine::Color TextColor; // 0x30
-		::System::Boolean IsComplete; // 0x40
+		::System::Boolean IsComplete; // 0x30
+		::UnityEngine::Color TextColor; // 0x34
 
 		::System::Void _ctor()
 		{

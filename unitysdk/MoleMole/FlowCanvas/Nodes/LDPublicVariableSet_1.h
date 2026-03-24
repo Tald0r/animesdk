@@ -10,7 +10,7 @@ namespace System { class String; }
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDPublicVariableSet_1_TypeDefinitionIndex = 63100;
+	inline static constexpr unsigned int LDPublicVariableSet_1_TypeDefinitionIndex = 52594;
 
 	template <typename T>
 	class LDPublicVariableSet_1 : public ::FlowCanvas::Nodes::FlowControlNode

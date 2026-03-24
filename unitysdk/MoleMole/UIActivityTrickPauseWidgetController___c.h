@@ -7,49 +7,49 @@ namespace MoleMole { class UIBabeltowerTrickTechRowWidgetController; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC8E4720)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC8E4760)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__GETNESTEDLISTDELEGATEGOLIST_B__13_0_OFFSET UNITYSDK_OFFSET(0xC8E4950)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__GETNESTEDLISTDELEGATEGOLIST_B__13_1_OFFSET UNITYSDK_OFFSET(0xC8E4A30)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__GETNESTEDLISTDELEGATEGOLIST_B__13_2_OFFSET UNITYSDK_OFFSET(0xC8E4A50)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__REFRESHVIEW_B__10_2_OFFSET UNITYSDK_OFFSET(0xC8E4770)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__REFRESHVIEW_B__10_3_OFFSET UNITYSDK_OFFSET(0xC8E4810)
-#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__REFRESHVIEW_B__10_4_OFFSET UNITYSDK_OFFSET(0xC8E48B0)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x988FDC0)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x988FE00)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__GETNESTEDLISTDELEGATEGOLIST_B__13_0_OFFSET UNITYSDK_OFFSET(0x988FFF0)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__GETNESTEDLISTDELEGATEGOLIST_B__13_1_OFFSET UNITYSDK_OFFSET(0x9890010)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__GETNESTEDLISTDELEGATEGOLIST_B__13_2_OFFSET UNITYSDK_OFFSET(0x9890030)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__REFRESHVIEW_B__10_2_OFFSET UNITYSDK_OFFSET(0x988FE10)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__REFRESHVIEW_B__10_3_OFFSET UNITYSDK_OFFSET(0x988FEB0)
+#define MOLEMOLE_UIACTIVITYTRICKPAUSEWIDGETCONTROLLER___C__REFRESHVIEW_B__10_4_OFFSET UNITYSDK_OFFSET(0x988FF50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex = 52684;
+	inline static constexpr unsigned int UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex = 79662;
 
 	class UIActivityTrickPauseWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>** StaticGet___9__10_2()
+		static ::MoleMole::UIActivityTrickPauseWidgetController___c** StaticGet___9()
 		{
-			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE40);
-		}
-		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>** StaticGet___9__10_3()
-		{
-			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE48);
-		}
-		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>** StaticGet___9__13_0()
-		{
-			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE50);
-		}
-		static ::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::UnityEngine::GameObject*>** StaticGet___9__10_4()
-		{
-			return (::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE58);
-		}
-		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>** StaticGet___9__13_1()
-		{
-			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE60);
+			return (::MoleMole::UIActivityTrickPauseWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E240);
 		}
 		static ::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::System::Boolean>** StaticGet___9__13_2()
 		{
-			return (::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE68);
+			return (::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E248);
 		}
-		static ::MoleMole::UIActivityTrickPauseWidgetController___c** StaticGet___9()
+		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>** StaticGet___9__13_0()
 		{
-			return (::MoleMole::UIActivityTrickPauseWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CE70);
+			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E250);
+		}
+		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>** StaticGet___9__10_2()
+		{
+			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E258);
+		}
+		static ::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::UnityEngine::GameObject*>** StaticGet___9__10_4()
+		{
+			return (::System::Func_2<::MoleMole::UIBabeltowerTrickTechRowWidgetController*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E260);
+		}
+		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>** StaticGet___9__13_1()
+		{
+			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E268);
+		}
+		static ::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>** StaticGet___9__10_3()
+		{
+			return (::System::Func_2<::MoleMole::UIBabeltowerTrickScoreRowWidgetController*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIActivityTrickPauseWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E270);
 		}
 
 		static ::System::Void _cctor()

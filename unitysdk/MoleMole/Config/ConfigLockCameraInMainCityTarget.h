@@ -8,12 +8,12 @@ namespace System { template <typename T1, typename T2, typename T3, typename T4,
 namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_CONFIG_CONFIGLOCKCAMERAINMAINCITYTARGET_METHOD_2_8463EDA2EF4F67A9_OFFSET UNITYSDK_OFFSET(0x13F97140)
-#define MOLEMOLE_CONFIG_CONFIGLOCKCAMERAINMAINCITYTARGET__CTOR_OFFSET UNITYSDK_OFFSET(0x13F97240)
+#define MOLEMOLE_CONFIG_CONFIGLOCKCAMERAINMAINCITYTARGET_METHOD_2_8463EDA2EF4F67A9_OFFSET UNITYSDK_OFFSET(0xF2D0CE0)
+#define MOLEMOLE_CONFIG_CONFIGLOCKCAMERAINMAINCITYTARGET__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D0DE0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLockCameraInMainCityTarget_TypeDefinitionIndex = 49644;
+	inline static constexpr unsigned int ConfigLockCameraInMainCityTarget_TypeDefinitionIndex = 71253;
 
 	class ConfigLockCameraInMainCityTarget : public ::MoleMole::Config::ConfigLockTarget
 	{

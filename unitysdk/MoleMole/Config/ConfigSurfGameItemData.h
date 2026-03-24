@@ -6,11 +6,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xE436EF0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x950E340)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemData_TypeDefinitionIndex = 48130;
+	inline static constexpr unsigned int ConfigSurfGameItemData_TypeDefinitionIndex = 57364;
 
 	class ConfigSurfGameItemData : public ::Foundation::MihoyoSerializedScriptableObject
 	{

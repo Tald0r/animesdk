@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int GraphicsTier_TypeDefinitionIndex = 6163;
+	inline static constexpr unsigned int GraphicsTier_TypeDefinitionIndex = 6167;
 
 	enum class GraphicsTier : ::System::Int32
 	{

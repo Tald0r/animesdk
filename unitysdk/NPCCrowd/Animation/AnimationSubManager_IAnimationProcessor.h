@@ -8,7 +8,7 @@ namespace System { class String; }
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_IAnimationProcessor_TypeDefinitionIndex = 71150;
+	inline static constexpr unsigned int AnimationSubManager_IAnimationProcessor_TypeDefinitionIndex = 59647;
 
 	class AnimationSubManager_IAnimationProcessor
 	{

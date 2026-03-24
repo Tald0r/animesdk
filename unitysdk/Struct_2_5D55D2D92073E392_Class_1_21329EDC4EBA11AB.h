@@ -5,17 +5,17 @@
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define STRUCT_2_5D55D2D92073E392_CLASS_1_21329EDC4EBA11AB_METHOD_1_C79F69409BEF20E8_OFFSET UNITYSDK_OFFSET(0x9523490)
-#define STRUCT_2_5D55D2D92073E392_CLASS_1_21329EDC4EBA11AB__CTOR_OFFSET UNITYSDK_OFFSET(0x9523480)
+#define STRUCT_2_5D55D2D92073E392_CLASS_1_21329EDC4EBA11AB_METHOD_1_C79F69409BEF20E8_OFFSET UNITYSDK_OFFSET(0x7344AD0)
+#define STRUCT_2_5D55D2D92073E392_CLASS_1_21329EDC4EBA11AB__CTOR_OFFSET UNITYSDK_OFFSET(0x7344AC0)
 
-inline static constexpr unsigned int Struct_2_5D55D2D92073E392_Class_1_21329EDC4EBA11AB_TypeDefinitionIndex = 37257;
+inline static constexpr unsigned int Struct_2_5D55D2D92073E392_Class_1_21329EDC4EBA11AB_TypeDefinitionIndex = 46027;
 
 class Struct_2_5D55D2D92073E392_Class_1_21329EDC4EBA11AB : public ::System::Object
 {
 public:
-	::UnityEngine::Vector3 Field_1_2; // 0x10
-	::UnityEngine::Vector2 Field_1_0; // 0x1C
-	::System::Single Field_1_1; // 0x24
+	::System::Single Field_1_1; // 0x10
+	::UnityEngine::Vector3 Field_1_2; // 0x14
+	::UnityEngine::Vector2 Field_1_0; // 0x20
 
 	::System::Void _ctor()
 	{

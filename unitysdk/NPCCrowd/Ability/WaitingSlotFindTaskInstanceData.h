@@ -1,46 +1,94 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2CC1A0)
-#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x2CC140)
-#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x60A7790)
-#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x60A7850)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_CREATE_OFFSET UNITYSDK_OFFSET(0x639A670)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2F7ED0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x2F7F30)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_RESET_OFFSET UNITYSDK_OFFSET(0x2F1E90)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2F7F90)
+#define NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x639A7A0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int WaitingSlotFindTaskInstanceData_TypeDefinitionIndex = 58836;
+	inline static constexpr unsigned int WaitingSlotFindTaskInstanceData_TypeDefinitionIndex = 61323;
 
 	struct alignas(1) WaitingSlotFindTaskInstanceData
 	{
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(WaitingSlotFindTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xDC10);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(WaitingSlotFindTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0x39C70);
 		}
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
-		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(WaitingSlotFindTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xDC14);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0x4F6B9121; // 0x0
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA__CCTOR_OFFSET))();
 		}
 
-		::System::UInt32 get_TypeId()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_TYPEID_OFFSET))(this);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_StaticStruct()
+		static ::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData Create()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
+			return ((::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_CREATE_OFFSET))();
 		}
 
-		static ::System::Void RegisterType()
+		::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData DefaultCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_REGISTERTYPE_OFFSET))();
+			return ((::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_WaitingSlotFindTaskInstanceData__CopyAssign(::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::WaitingSlotFindTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_WAITINGSLOTFINDTASKINSTANCEDATA__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

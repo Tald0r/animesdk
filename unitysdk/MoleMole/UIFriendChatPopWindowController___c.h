@@ -4,29 +4,29 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAC1C50)
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAC1C90)
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__ONINITFRIENDPANEL_B__62_1_OFFSET UNITYSDK_OFFSET(0xCAC1CA0)
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__ONINITFRIENDPANEL_B__62_2_OFFSET UNITYSDK_OFFSET(0xCAC1EC0)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCB48040)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCB48080)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__ONINITFRIENDPANEL_B__62_1_OFFSET UNITYSDK_OFFSET(0xCB48090)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__ONINITFRIENDPANEL_B__62_2_OFFSET UNITYSDK_OFFSET(0xCB482B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendChatPopWindowController___c_TypeDefinitionIndex = 39141;
+	inline static constexpr unsigned int UIFriendChatPopWindowController___c_TypeDefinitionIndex = 63192;
 
 	class UIFriendChatPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIFriendChatPopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIFriendChatPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFriendChatPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FE90);
-		}
 		static ::System::Action** StaticGet___9__62_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFriendChatPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FE98);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFriendChatPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31A50);
 		}
 		static ::System::Action** StaticGet___9__62_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFriendChatPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FEA0);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFriendChatPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31A58);
+		}
+		static ::MoleMole::UIFriendChatPopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIFriendChatPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFriendChatPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31A60);
 		}
 
 		static ::System::Void _cctor()

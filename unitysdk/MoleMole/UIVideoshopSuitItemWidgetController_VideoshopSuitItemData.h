@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVideoshopSuitItemWidgetController_VideoshopSuitItemData_TypeDefinitionIndex = 60002;
+	inline static constexpr unsigned int UIVideoshopSuitItemWidgetController_VideoshopSuitItemData_TypeDefinitionIndex = 55140;
 
 	struct alignas(4) UIVideoshopSuitItemWidgetController_VideoshopSuitItemData
 	{

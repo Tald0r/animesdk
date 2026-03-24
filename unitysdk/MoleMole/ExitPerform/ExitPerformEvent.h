@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_EXITPERFORM_EXITPERFORMEVENT_GET_CUREVENTNAME_OFFSET UNITYSDK_OFFSET(0xE46D840)
-#define MOLEMOLE_EXITPERFORM_EXITPERFORMEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xE46D910)
+#define MOLEMOLE_EXITPERFORM_EXITPERFORMEVENT_GET_CUREVENTNAME_OFFSET UNITYSDK_OFFSET(0xD7F5800)
+#define MOLEMOLE_EXITPERFORM_EXITPERFORMEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xD7F58D0)
 
 namespace MoleMole::ExitPerform
 {
-	inline static constexpr unsigned int ExitPerformEvent_TypeDefinitionIndex = 72345;
+	inline static constexpr unsigned int ExitPerformEvent_TypeDefinitionIndex = 49702;
 
 	class ExitPerformEvent : public ::System::Object
 	{
 	public:
-		::System::String* eventName; // 0x10
-		::MoleMole::ExitPerform::ExitPerformEvent* parent; // 0x18
+		::MoleMole::ExitPerform::ExitPerformEvent* parent; // 0x10
+		::System::String* eventName; // 0x18
 
 		::System::Void _ctor()
 		{

@@ -6,11 +6,11 @@ namespace NPCCrowd { class GraphSpawnRangeConfig; }
 namespace NPCCrowd { class SpawnRangeConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_NPCSPAWNCONFIGSO__CTOR_OFFSET UNITYSDK_OFFSET(0x9EC0830)
+#define NPCCROWD_NPCSPAWNCONFIGSO__CTOR_OFFSET UNITYSDK_OFFSET(0x63B1DF0)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int NPCSpawnConfigSO_TypeDefinitionIndex = 51417;
+	inline static constexpr unsigned int NPCSpawnConfigSO_TypeDefinitionIndex = 41535;
 
 	class NPCSpawnConfigSO : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

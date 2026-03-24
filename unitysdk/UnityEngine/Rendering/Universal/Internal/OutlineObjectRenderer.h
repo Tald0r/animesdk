@@ -2,7 +2,8 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
-#include "unitysdk/UnityEngine/Rendering/Universal/Internal/OutlineObjectRenderer_OutlineRendererConfig.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/Internal/EOutlineRenderType.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/Internal/OutlineRendererConfig.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
@@ -10,117 +11,35 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Gradient; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Renderer; }
-namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_CLEANRENDERERS_OFFSET UNITYSDK_OFFSET(0x19FB06B0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_CLEARBOXCLIPBOUNDS_OFFSET UNITYSDK_OFFSET(0x19FB27C0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GETOUTLINEPASS_OFFSET UNITYSDK_OFFSET(0x19FB1540)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GETOUTLINETHICKNESS_OFFSET UNITYSDK_OFFSET(0x19FAFA20)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_OUTLINETHICKNESS_OFFSET UNITYSDK_OFFSET(0x19FAFAA0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x19FB0270)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x19FAFB60)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_RESETGLOBALOUTLINEPARAMS_OFFSET UNITYSDK_OFFSET(0x19FB0840)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SETBOXCLIPBOUNDS_OFFSET UNITYSDK_OFFSET(0x19FB2750)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SETOUTLINETHICKNESS_OFFSET UNITYSDK_OFFSET(0x19FAF990)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SETUPSCREENSPACEOUTLINE_OFFSET UNITYSDK_OFFSET(0x19FB08E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SET_OUTLINETHICKNESS_OFFSET UNITYSDK_OFFSET(0x19FAFB00)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_TRYBLITSCREENSPACEOUTLINE_OFFSET UNITYSDK_OFFSET(0x19FB11B0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_UPDATE_OFFSET UNITYSDK_OFFSET(0x19FB1580)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19FB2A60)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x19FB2800)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_CLEANRENDERERS_OFFSET UNITYSDK_OFFSET(0x1A2EBE80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_CLEARBOXCLIPBOUNDS_OFFSET UNITYSDK_OFFSET(0x1A2ED290)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GETOUTLINEPASS_OFFSET UNITYSDK_OFFSET(0x1A2EC010)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GETOUTLINERENDERTYPE_OFFSET UNITYSDK_OFFSET(0x1A2ED2D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_DISABLEOUTLINE_OFFSET UNITYSDK_OFFSET(0x1A2EBCA0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_FILLINNERBEHINDSCENE_OFFSET UNITYSDK_OFFSET(0x1A2EBD60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_FILLINNER_OFFSET UNITYSDK_OFFSET(0x1A2EBD00)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_INNERCOLORINTENSITY_OFFSET UNITYSDK_OFFSET(0x1A2EBE20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_INNERCOLOR_OFFSET UNITYSDK_OFFSET(0x1A2EBDC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_OUTLINETHICKNESS_OFFSET UNITYSDK_OFFSET(0x1A2EBC40)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x1A2EB740)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1A2EB000)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x1A2EBB80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1A2EBBE0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONREALDISABLE_OFFSET UNITYSDK_OFFSET(0x1A2EB7E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONREALENABLE_OFFSET UNITYSDK_OFFSET(0x1A2EB0A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SETBOXCLIPBOUNDS_OFFSET UNITYSDK_OFFSET(0x1A2ED220)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A2EC050)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2ED310)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int OutlineObjectRenderer_TypeDefinitionIndex = 28911;
+	inline static constexpr unsigned int OutlineObjectRenderer_TypeDefinitionIndex = 29861;
 
 	class OutlineObjectRenderer : public ::UnityEngine::MonoBehaviour
 	{
 	public:
-		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::UnityEngine::Renderer*, ::UnityEngine::Rendering::Universal::Internal::OutlineObjectRenderer_OutlineRendererConfig>*>** StaticGet_OutlineObjRendererMaterials()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::UnityEngine::Renderer*, ::UnityEngine::Rendering::Universal::Internal::OutlineObjectRenderer_OutlineRendererConfig>*>**)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x22140);
-		}
-		static ::System::Int32* StaticGet__WindParam1()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A00);
-		}
-		static ::System::Int32* StaticGet__OutlineThickness()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A04);
-		}
-		static ::System::Int32* StaticGet__SingleColorParams()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A08);
-		}
-		static ::System::Int32* StaticGet__BaseColor()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A0C);
-		}
-		static ::System::Single* StaticGet_InnerColorIntensity()
-		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A10);
-		}
-		static ::System::Int32* StaticGet__InnerColor()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A14);
-		}
-		static ::System::Int32* StaticGet__WindParam4()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A18);
-		}
-		static ::System::Int32* StaticGet__WindParam3()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A1C);
-		}
-		static ::System::Int32* StaticGet__BaseMap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A20);
-		}
-		static ::System::Int32* StaticGet_uiCameraOutlineCount()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A24);
-		}
-		static ::System::Single* StaticGet_outlineThickness()
-		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A28);
-		}
-		static ::System::Int32* StaticGet__WindParam2()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A2C);
-		}
-		static ::System::Int32* StaticGet__Cutoff()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A30);
-		}
-		static ::System::Boolean* StaticGet_RequireOutlinePass()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A34);
-		}
-		static ::System::Boolean* StaticGet_DisableOutline()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A35);
-		}
-		static ::System::Boolean* StaticGet_FillInnerBehindScene()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A36);
-		}
-		static ::System::Boolean* StaticGet_FillInner()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A37);
-		}
-		static ::System::Int32* StaticGet__IsAvatarUI()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A38);
-		}
-		static ::System::Int32* StaticGet__EnableFlicker()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A3C);
-		}
-		static ::UnityEngine::Color* StaticGet_InnerColor()
-		{
-			return (::UnityEngine::Color*)Il2CppClass::FromTypeDefinitionIndex(OutlineObjectRenderer_TypeDefinitionIndex)->GetStaticField(0x6A40);
-		}
-		::System::Collections::Generic::Dictionary_2<::UnityEngine::Renderer*, ::UnityEngine::Rendering::Universal::Internal::OutlineObjectRenderer_OutlineRendererConfig>* rendererMaterial; // 0x18
+		::System::Collections::Generic::Dictionary_2<::UnityEngine::Renderer*, ::UnityEngine::Rendering::Universal::Internal::OutlineRendererConfig>* rendererMaterial; // 0x18
 		::UnityEngine::Gradient* OutlineColorGradient; // 0x20
 		::System::Single OutlineColorIntensity; // 0x28
 		::System::Single OutlineAnimLifetime; // 0x2C
@@ -147,31 +66,6 @@ namespace UnityEngine::Rendering::Universal::Internal
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER__CTOR_OFFSET))(this);
 		}
 
-		static ::System::Void _cctor()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER__CCTOR_OFFSET))();
-		}
-
-		static ::System::Void SetOutlineThickness(::System::Single thickness)
-		{
-			return ((::System::Void(*)(::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SETOUTLINETHICKNESS_OFFSET))(thickness);
-		}
-
-		static ::System::Single GetOutlineThickness()
-		{
-			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GETOUTLINETHICKNESS_OFFSET))();
-		}
-
-		::System::Single get_OutlineThickness()
-		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_OUTLINETHICKNESS_OFFSET))(this);
-		}
-
-		::System::Void set_OutlineThickness(::System::Single value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SET_OUTLINETHICKNESS_OFFSET))(this, value);
-		}
-
 		::System::Void OnEnable()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONENABLE_OFFSET))(this);
@@ -182,19 +76,54 @@ namespace UnityEngine::Rendering::Universal::Internal
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONDISABLE_OFFSET))(this);
 		}
 
-		static ::System::Void ResetGlobalOutlineParams()
+		::System::Void OnLightweightActive()
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_RESETGLOBALOUTLINEPARAMS_OFFSET))();
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
 		}
 
-		::System::Void SetupScreenSpaceOutline(::System::Boolean& outlineActive, ::System::Boolean& outlineBeforeTransparent)
+		::System::Void OnLightweightDeactive()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean&, ::System::Boolean&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_SETUPSCREENSPACEOUTLINE_OFFSET))(this, outlineActive, outlineBeforeTransparent);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONLIGHTWEIGHTDEACTIVE_OFFSET))(this);
 		}
 
-		::System::Void TryBlitScreenSpaceOutline(::UnityEngine::Rendering::CommandBuffer* cmd)
+		::System::Single get_OutlineThickness()
 		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::CommandBuffer*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_TRYBLITSCREENSPACEOUTLINE_OFFSET))(this, cmd);
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_OUTLINETHICKNESS_OFFSET))(this);
+		}
+
+		static ::System::Boolean get_DisableOutline()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_DISABLEOUTLINE_OFFSET))();
+		}
+
+		static ::System::Boolean get_FillInner()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_FILLINNER_OFFSET))();
+		}
+
+		static ::System::Boolean get_FillInnerBehindScene()
+		{
+			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_FILLINNERBEHINDSCENE_OFFSET))();
+		}
+
+		static ::UnityEngine::Color get_InnerColor()
+		{
+			return ((::UnityEngine::Color(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_INNERCOLOR_OFFSET))();
+		}
+
+		static ::System::Single get_InnerColorIntensity()
+		{
+			return ((::System::Single(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GET_INNERCOLORINTENSITY_OFFSET))();
+		}
+
+		::System::Void OnRealEnable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONREALENABLE_OFFSET))(this);
+		}
+
+		::System::Void OnRealDisable()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_ONREALDISABLE_OFFSET))(this);
 		}
 
 		::System::Int32 GetOutlinePass()
@@ -220,6 +149,11 @@ namespace UnityEngine::Rendering::Universal::Internal
 		::System::Void ClearBoxClipBounds()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_CLEARBOXCLIPBOUNDS_OFFSET))(this);
+		}
+
+		::UnityEngine::Rendering::Universal::Internal::EOutlineRenderType GetOutlineRenderType()
+		{
+			return ((::UnityEngine::Rendering::Universal::Internal::EOutlineRenderType(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_OUTLINEOBJECTRENDERER_GETOUTLINERENDERTYPE_OFFSET))(this);
 		}
 	};
 }

@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController_RidusGotBooEntityIndex_TypeDefinitionIndex = 66324;
+	inline static constexpr unsigned int UIRidusGotBooPageController_RidusGotBooEntityIndex_TypeDefinitionIndex = 44137;
 
 	enum class UIRidusGotBooPageController_RidusGotBooEntityIndex : ::System::Int32
 	{

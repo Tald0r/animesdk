@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/Config/HollowEffectCamera.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_HOLLOWEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x139A55B0)
+#define MOLEMOLE_CONFIG_HOLLOWEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9197940)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowEffectConfig_TypeDefinitionIndex = 61142;
+	inline static constexpr unsigned int HollowEffectConfig_TypeDefinitionIndex = 45759;
 
 	class HollowEffectConfig : public ::System::Object
 	{

@@ -4,11 +4,11 @@
 
 namespace MoleMole::Battle { class CurveMoveComponent_Config; }
 
-#define MOLEMOLE_MONOMOVEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8A7E3E0)
+#define MOLEMOLE_MONOMOVEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8C86F90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoMoveData_TypeDefinitionIndex = 68936;
+	inline static constexpr unsigned int MonoMoveData_TypeDefinitionIndex = 50565;
 
 	class MonoMoveData : public ::UnityEngine::MonoBehaviour
 	{

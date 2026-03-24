@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int IInputInteraction_TypeDefinitionIndex = 27409;
+	inline static constexpr unsigned int IInputInteraction_TypeDefinitionIndex = 28349;
 
 	class IInputInteraction
 	{

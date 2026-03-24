@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_166;
+class Class_0_16E4307DCC419505_290;
 namespace MoleMole::HollowChessboard { class IEffectExpressionConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG_CREATEEFFECTEXPRESSIONCONFIG_OFFSET UNITYSDK_OFFSET(0xF1B5810)
-#define MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B58B0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG_CREATEEFFECTEXPRESSIONCONFIG_OFFSET UNITYSDK_OFFSET(0xB98F6D0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB98F770)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int AnyEffectExpressionConfig_TypeDefinitionIndex = 79003;
+	inline static constexpr unsigned int AnyEffectExpressionConfig_TypeDefinitionIndex = 61847;
 
 	class AnyEffectExpressionConfig : public ::System::Object
 	{
@@ -23,9 +23,9 @@ namespace MoleMole::HollowChessboard
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG__CTOR_OFFSET))(this);
 		}
 
-		::Class_0_16E4307DCC419505_166* CreateEffectExpressionConfig()
+		::Class_0_16E4307DCC419505_290* CreateEffectExpressionConfig()
 		{
-			return ((::Class_0_16E4307DCC419505_166*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG_CREATEEFFECTEXPRESSIONCONFIG_OFFSET))(this);
+			return ((::Class_0_16E4307DCC419505_290*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_HOLLOWCHESSBOARD_ANYEFFECTEXPRESSIONCONFIG_CREATEEFFECTEXPRESSIONCONFIG_OFFSET))(this);
 		}
 	};
 }

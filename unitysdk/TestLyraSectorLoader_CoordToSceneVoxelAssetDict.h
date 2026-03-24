@@ -5,9 +5,9 @@
 
 namespace LyraSector { class LyraSceneVoxelAsset; }
 
-#define TESTLYRASECTORLOADER_COORDTOSCENEVOXELASSETDICT__CTOR_OFFSET UNITYSDK_OFFSET(0x1923C1B0)
+#define TESTLYRASECTORLOADER_COORDTOSCENEVOXELASSETDICT__CTOR_OFFSET UNITYSDK_OFFSET(0x19660F90)
 
-inline static constexpr unsigned int TestLyraSectorLoader_CoordToSceneVoxelAssetDict_TypeDefinitionIndex = 28101;
+inline static constexpr unsigned int TestLyraSectorLoader_CoordToSceneVoxelAssetDict_TypeDefinitionIndex = 29041;
 
 class TestLyraSectorLoader_CoordToSceneVoxelAssetDict : public ::UnityEngine::Rendering::SerializedDictionary_2<::LyraSector::LyraSectorCoord, ::LyraSector::LyraSceneVoxelAsset*>
 {

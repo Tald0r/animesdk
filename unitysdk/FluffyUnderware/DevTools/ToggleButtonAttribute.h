@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_TOGGLEBUTTONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A248140)
+#define FLUFFYUNDERWARE_DEVTOOLS_TOGGLEBUTTONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A80FA60)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int ToggleButtonAttribute_TypeDefinitionIndex = 24522;
+	inline static constexpr unsigned int ToggleButtonAttribute_TypeDefinitionIndex = 25347;
 
 	class ToggleButtonAttribute : public ::FluffyUnderware::DevTools::DTPropertyAttribute
 	{

@@ -3,12 +3,12 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeStateChangeType_TypeDefinitionIndex = 26937;
+	inline static constexpr unsigned int StateTreeStateChangeType_TypeDefinitionIndex = 27767;
 
-	enum class StateTreeStateChangeType : ::System::Int32
+	enum class StateTreeStateChangeType : ::System::Byte
 	{
-		None = 0,
-		Changed = 1,
-		Sustained = 2,
+		None = 0x0,
+		Changed = 0x1,
+		Sustained = 0x2,
 	};
 }

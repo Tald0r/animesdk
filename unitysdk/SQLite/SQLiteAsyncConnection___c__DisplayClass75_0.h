@@ -7,12 +7,12 @@ namespace SQLite { class SQLiteConnection_ColumnInfo; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS75_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0687D0)
-#define SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS75_0__GETTABLEINFOASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x1A06D3C0)
+#define SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS75_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6345F0)
+#define SQLITE_SQLITEASYNCCONNECTION___C__DISPLAYCLASS75_0__GETTABLEINFOASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x1A6391D0)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int SQLiteAsyncConnection___c__DisplayClass75_0_TypeDefinitionIndex = 35310;
+	inline static constexpr unsigned int SQLiteAsyncConnection___c__DisplayClass75_0_TypeDefinitionIndex = 36312;
 
 	class SQLiteAsyncConnection___c__DisplayClass75_0 : public ::System::Object
 	{

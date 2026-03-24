@@ -5,24 +5,24 @@
 class Class_3_F2DAD7F45F518868;
 namespace System { template <typename T> class Action_1; }
 
-#define NPCCROWD_LOD_NPCACCESSORYATTACHEDMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA111110)
-#define NPCCROWD_LOD_NPCACCESSORYATTACHEDMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA111150)
-#define NPCCROWD_LOD_NPCACCESSORYATTACHEDMANAGER___C__UPDATE_B__2_0_OFFSET UNITYSDK_OFFSET(0xA111160)
+#define NPCCROWD_LOD_NPCACCESSORYATTACHEDMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x76D9830)
+#define NPCCROWD_LOD_NPCACCESSORYATTACHEDMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x76D9870)
+#define NPCCROWD_LOD_NPCACCESSORYATTACHEDMANAGER___C__UPDATE_B__2_0_OFFSET UNITYSDK_OFFSET(0x76D9880)
 
 namespace NPCCrowd::Lod
 {
-	inline static constexpr unsigned int NPCAccessoryAttachedManager___c_TypeDefinitionIndex = 68047;
+	inline static constexpr unsigned int NPCAccessoryAttachedManager___c_TypeDefinitionIndex = 65574;
 
 	class NPCAccessoryAttachedManager___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::Class_3_F2DAD7F45F518868*>** StaticGet___9__2_0()
 		{
-			return (::System::Action_1<::Class_3_F2DAD7F45F518868*>**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAttachedManager___c_TypeDefinitionIndex)->GetStaticField(0x41990);
+			return (::System::Action_1<::Class_3_F2DAD7F45F518868*>**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAttachedManager___c_TypeDefinitionIndex)->GetStaticField(0x45480);
 		}
 		static ::NPCCrowd::Lod::NPCAccessoryAttachedManager___c** StaticGet___9()
 		{
-			return (::NPCCrowd::Lod::NPCAccessoryAttachedManager___c**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAttachedManager___c_TypeDefinitionIndex)->GetStaticField(0x41998);
+			return (::NPCCrowd::Lod::NPCAccessoryAttachedManager___c**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAttachedManager___c_TypeDefinitionIndex)->GetStaticField(0x45488);
 		}
 
 		static ::System::Void _cctor()

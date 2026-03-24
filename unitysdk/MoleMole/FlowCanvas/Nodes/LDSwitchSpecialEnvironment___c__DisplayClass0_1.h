@@ -7,18 +7,18 @@ namespace MoleMole::FlowCanvas::Nodes { class LDSwitchSpecialEnvironment___c__Di
 namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHSPECIALENVIRONMENT___C__DISPLAYCLASS0_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C97A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHSPECIALENVIRONMENT___C__DISPLAYCLASS0_1__INVOKE_B__0_OFFSET UNITYSDK_OFFSET(0xC2C97B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHSPECIALENVIRONMENT___C__DISPLAYCLASS0_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A5240)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHSPECIALENVIRONMENT___C__DISPLAYCLASS0_1__INVOKE_B__0_OFFSET UNITYSDK_OFFSET(0xB8A5250)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSwitchSpecialEnvironment___c__DisplayClass0_1_TypeDefinitionIndex = 44684;
+	inline static constexpr unsigned int LDSwitchSpecialEnvironment___c__DisplayClass0_1_TypeDefinitionIndex = 79145;
 
 	class LDSwitchSpecialEnvironment___c__DisplayClass0_1 : public ::System::Object
 	{
 	public:
-		::System::String* path; // 0x10
-		::MoleMole::FlowCanvas::Nodes::LDSwitchSpecialEnvironment___c__DisplayClass0_0* CS___8__locals1; // 0x18
+		::MoleMole::FlowCanvas::Nodes::LDSwitchSpecialEnvironment___c__DisplayClass0_0* CS___8__locals1; // 0x10
+		::System::String* path; // 0x18
 
 		::System::Void _ctor()
 		{

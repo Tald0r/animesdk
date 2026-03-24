@@ -3,23 +3,23 @@
 #include "unitysdk/FlowCanvas/Nodes/CallableFunctionNode_9.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-class Class_1_534AF681CC2BD5FD_183_Class_1_481A253ED6F79F1A;
+class Class_1_534AF681CC2BD5FD_233_Class_1_E94508B0188204C3;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2C8160)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xC2C8330)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C83A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xC2C83C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB8A3C20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xB8A3DF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A3E60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETAREAUINODE___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xB8A3E80)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowTargetAreaUINode_TypeDefinitionIndex = 37533;
+	inline static constexpr unsigned int LDShowTargetAreaUINode_TypeDefinitionIndex = 53187;
 
 	class LDShowTargetAreaUINode : public ::FlowCanvas::Nodes::CallableFunctionNode_9<::System::Collections::Generic::List_1<::System::Int32>*, ::System::Collections::Generic::List_1<::System::String*>*, ::System::Collections::Generic::List_1<::System::String*>*, ::System::Single, ::System::Single, ::System::Boolean, ::System::Boolean, ::UnityEngine::Vector3, ::System::Boolean>
 	{
 	public:
-		::Class_1_534AF681CC2BD5FD_183_Class_1_481A253ED6F79F1A* runtimeData; // 0x40
+		::Class_1_534AF681CC2BD5FD_233_Class_1_E94508B0188204C3* runtimeData; // 0x40
 
 		::System::Void _ctor()
 		{

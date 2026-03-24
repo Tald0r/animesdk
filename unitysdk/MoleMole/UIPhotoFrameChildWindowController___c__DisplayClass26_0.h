@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIPHOTOFRAMECHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC1F3A0)
-#define MOLEMOLE_UIPHOTOFRAMECHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__REFRESHPLAYERINFO_B__0_OFFSET UNITYSDK_OFFSET(0xAC1F3B0)
+#define MOLEMOLE_UIPHOTOFRAMECHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA6E730)
+#define MOLEMOLE_UIPHOTOFRAMECHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__REFRESHPLAYERINFO_B__0_OFFSET UNITYSDK_OFFSET(0xCA6E740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoFrameChildWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 47847;
+	inline static constexpr unsigned int UIPhotoFrameChildWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 45742;
 
 	class UIPhotoFrameChildWindowController___c__DisplayClass26_0 : public ::System::Object
 	{

@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDABILITYBYLEVELABILITYCONFIGIDLIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2105B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDADDABILITYBYLEVELABILITYCONFIGIDLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xC2106F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDABILITYBYLEVELABILITYCONFIGIDLIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xB826E90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDADDABILITYBYLEVELABILITYCONFIGIDLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xB826FD0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAddAbilityByLevelAbilityConfigIDList_TypeDefinitionIndex = 64636;
+	inline static constexpr unsigned int LDAddAbilityByLevelAbilityConfigIDList_TypeDefinitionIndex = 72877;
 
 	class LDAddAbilityByLevelAbilityConfigIDList : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Collections::Generic::List_1<::System::Int32>*>
 	{

@@ -6,11 +6,11 @@ namespace MoleMole { class LanguageVideo; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGLANGUAGEVIDEO__CTOR_OFFSET UNITYSDK_OFFSET(0xE0C4AB0)
+#define MOLEMOLE_CONFIGLANGUAGEVIDEO__CTOR_OFFSET UNITYSDK_OFFSET(0x10AABA20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigLanguageVideo_TypeDefinitionIndex = 53257;
+	inline static constexpr unsigned int ConfigLanguageVideo_TypeDefinitionIndex = 67127;
 
 	class ConfigLanguageVideo : public ::Foundation::MihoyoSerializedScriptableObject
 	{

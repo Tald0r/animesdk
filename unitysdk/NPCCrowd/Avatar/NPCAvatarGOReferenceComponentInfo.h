@@ -17,28 +17,28 @@ namespace UnityEngine { class SkinnedMeshRenderer; }
 template <typename T> class NPCSoftAssetPathList_1;
 template <typename T> class NPCSoftAssetPath_1;
 
-#define NPCCROWD_AVATAR_NPCAVATARGOREFERENCECOMPONENTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x77DA310)
+#define NPCCROWD_AVATAR_NPCAVATARGOREFERENCECOMPONENTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xC2FB970)
 
 namespace NPCCrowd::Avatar
 {
-	inline static constexpr unsigned int NPCAvatarGOReferenceComponentInfo_TypeDefinitionIndex = 40831;
+	inline static constexpr unsigned int NPCAvatarGOReferenceComponentInfo_TypeDefinitionIndex = 50244;
 
 	class NPCAvatarGOReferenceComponentInfo : public ::System::Object
 	{
 	public:
-		::UnityEngine::GameObject* cpuGo; // 0x10
-		::UnityEngine::MeshRenderer* gpuMR; // 0x18
-		::UnityEngine::MeshFilter* gpuMF; // 0x20
-		::NPCSoftAssetPath_1<::UnityEngine::Mesh*>* lodMeshAssetRef; // 0x28
-		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::ValueTuple_2<::NapMaterialProperty, ::UnityEngine::Color32>>*>* overridePropertyColorsList; // 0x30
+		::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::ValueTuple_2<::NapMaterialProperty, ::UnityEngine::Color32>>*>* overridePropertyColorsList; // 0x10
+		::UnityEngine::GameObject* cpuGo; // 0x18
+		::System::String* smrMeshName; // 0x20
+		::UnityEngine::GameObject* gpuGo; // 0x28
+		::UnityEngine::MeshFilter* gpuMF; // 0x30
 		::NPCSoftAssetPathList_1<::UnityEngine::Material*>* materialAssetRef; // 0x38
-		::System::String* smrMeshName; // 0x40
-		::UnityEngine::SkinnedMeshRenderer* smr; // 0x48
-		::UnityEngine::GameObject* gpuGo; // 0x50
-		::Il2CppArray<::UnityEngine::Material*>* gpuMaterials; // 0x58
-		::System::Int32 currentPartID; // 0x60
-		::System::Boolean hasBlendShape; // 0x64
-		::ENPCAvatarBodyPart part; // 0x68
+		::NPCSoftAssetPath_1<::UnityEngine::Mesh*>* lodMeshAssetRef; // 0x40
+		::Il2CppArray<::UnityEngine::Material*>* gpuMaterials; // 0x48
+		::UnityEngine::SkinnedMeshRenderer* smr; // 0x50
+		::UnityEngine::MeshRenderer* gpuMR; // 0x58
+		::ENPCAvatarBodyPart part; // 0x60
+		::System::Int32 currentPartID; // 0x64
+		::System::Boolean hasBlendShape; // 0x68
 
 		::System::Void _ctor()
 		{

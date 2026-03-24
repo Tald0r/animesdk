@@ -5,11 +5,11 @@
 class Class_3_3A52EAC73CDA79F0;
 namespace MoleMole { class UIThreeDMapElement_QuestShowAreaContext; }
 
-#define MOLEMOLE_UIURBANMAPPOINTQUESTSHOWAREAWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7538260)
+#define MOLEMOLE_UIURBANMAPPOINTQUESTSHOWAREAWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9913080)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapPointQuestShowAreaWidgetController_TypeDefinitionIndex = 41961;
+	inline static constexpr unsigned int UIUrbanMapPointQuestShowAreaWidgetController_TypeDefinitionIndex = 60755;
 
 	class UIUrbanMapPointQuestShowAreaWidgetController : public ::MoleMole::UIUrbanMapPointWidgetController_2<::Class_3_3A52EAC73CDA79F0*, ::MoleMole::UIThreeDMapElement_QuestShowAreaContext*>
 	{

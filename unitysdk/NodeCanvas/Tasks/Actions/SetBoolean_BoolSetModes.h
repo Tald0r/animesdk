@@ -3,12 +3,12 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int SetBoolean_BoolSetModes_TypeDefinitionIndex = 25490;
+	inline static constexpr unsigned int SetBoolean_BoolSetModes_TypeDefinitionIndex = 27254;
 
 	enum class SetBoolean_BoolSetModes : ::System::Int32
 	{
 		False = 0,
-		Toggle = 2,
 		True = 1,
+		Toggle = 2,
 	};
 }

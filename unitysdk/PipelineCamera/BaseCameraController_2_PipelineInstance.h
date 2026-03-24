@@ -6,7 +6,7 @@ namespace PipelineCamera { class ICameraDataBlenderBuilder; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int BaseCameraController_2_PipelineInstance_TypeDefinitionIndex = 34343;
+	inline static constexpr unsigned int BaseCameraController_2_PipelineInstance_TypeDefinitionIndex = 35345;
 
 	template <typename TController, typename TPostPipeline>
 	struct BaseCameraController_2_PipelineInstance

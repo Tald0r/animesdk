@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int NapSceneEffectLodProxy_SceneEffectRenderType_TypeDefinitionIndex = 28088;
+inline static constexpr unsigned int NapSceneEffectLodProxy_SceneEffectRenderType_TypeDefinitionIndex = 29028;
 
 enum class NapSceneEffectLodProxy_SceneEffectRenderType : ::System::Int32
 {

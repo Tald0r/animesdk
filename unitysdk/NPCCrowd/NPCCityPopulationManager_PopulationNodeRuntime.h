@@ -6,17 +6,17 @@
 class Class_3_F2DAD7F45F518868;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_NPCCITYPOPULATIONMANAGER_POPULATIONNODERUNTIME__CTOR_OFFSET UNITYSDK_OFFSET(0x9BCDEF0)
+#define NPCCROWD_NPCCITYPOPULATIONMANAGER_POPULATIONNODERUNTIME__CTOR_OFFSET UNITYSDK_OFFSET(0x84902B0)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int NPCCityPopulationManager_PopulationNodeRuntime_TypeDefinitionIndex = 67650;
+	inline static constexpr unsigned int NPCCityPopulationManager_PopulationNodeRuntime_TypeDefinitionIndex = 80920;
 
 	class NPCCityPopulationManager_PopulationNodeRuntime : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::System::Int32>* npcTagPool; // 0x10
-		::NPCCrowd::AI::FNodeRuntime graphNodeInfo; // 0x18
+		::NPCCrowd::AI::FNodeRuntime graphNodeInfo; // 0x10
+		::System::Collections::Generic::List_1<::System::Int32>* npcTagPool; // 0x28
 		::System::Collections::Generic::List_1<::Class_3_F2DAD7F45F518868*>* spawnedNPC; // 0x30
 		::System::Single leftTimeToSpawn; // 0x38
 

@@ -4,38 +4,41 @@
 
 class Class_2_60DDD9C206686F44;
 class Class_2_777A5D016ADC7368;
-class Class_2_9E3E3CDA608A4F58;
+class Class_2_A8F5ABF31E066ED4;
 namespace MoleMole { class UIControlCollection; }
-namespace MoleMole { class UIMusicBattleInLevelFeverTipsWidgetController; }
 namespace UnityEngine { class GameObject; }
-namespace UnityEngine { class RectTransform; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+namespace UnityEngine { class Transform; }
+namespace UnityEngine::UI { class Text; }
+namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_79AE422BA06F6D26_44_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xB993F80)
-#define CLASS_2_79AE422BA06F6D26_44_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xB994290)
-#define CLASS_2_79AE422BA06F6D26_44_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB994360)
-#define CLASS_2_79AE422BA06F6D26_44__CTOR_OFFSET UNITYSDK_OFFSET(0xB994350)
+#define CLASS_2_79AE422BA06F6D26_44_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x961DDB0)
+#define CLASS_2_79AE422BA06F6D26_44_METHOD_2_8D61BE16C9463302_OFFSET UNITYSDK_OFFSET(0x961E110)
+#define CLASS_2_79AE422BA06F6D26_44_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x961E2B0)
+#define CLASS_2_79AE422BA06F6D26_44__CTOR_OFFSET UNITYSDK_OFFSET(0x961E2A0)
 
-inline static constexpr unsigned int Class_2_79AE422BA06F6D26_44_TypeDefinitionIndex = 50995;
+inline static constexpr unsigned int Class_2_79AE422BA06F6D26_44_TypeDefinitionIndex = 65757;
 
 class Class_2_79AE422BA06F6D26_44 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_7; // 0x18
-	::UnityEngine::RectTransform* Field_2_14; // 0x20
-	::UnityEngine::RectTransform* Field_2_3; // 0x28
-	::UnityEngine::RectTransform* Field_2_4; // 0x30
-	::UnityEngine::RectTransform* Field_2_2; // 0x38
-	::UnityEngine::RectTransform* Field_2_9; // 0x40
-	::UnityEngine::RectTransform* Field_2_6; // 0x48
-	::Class_2_9E3E3CDA608A4F58* Field_2_12; // 0x50
-	::UnityEngine::RectTransform* Field_2_8; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x60
+	::Class_2_A8F5ABF31E066ED4* Field_2_14; // 0x18
+	::UnityEngine::GameObject* Field_2_3; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x30
+	::UnityEngine::GameObject* Field_2_4; // 0x38
+	::UnityEngine::GameObject* Field_2_10; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x48
+	::UnityEngine::GameObject* Field_2_9; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x58
+	::UnityEngine::GameObject* Field_2_13; // 0x60
 	::UnityEngine::GameObject* Field_2_1; // 0x68
-	::UnityEngine::RectTransform* Field_2_5; // 0x70
-	::UnityEngine::GameObject* Field_2_10; // 0x78
-	::UnityEngine::RectTransform* Field_2_13; // 0x80
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIMusicBattleInLevelFeverTipsWidgetController*>* Field_2_11; // 0x88
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_12; // 0x70
+	::Class_2_A8F5ABF31E066ED4* Field_2_8; // 0x78
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_16; // 0x80
+	::UnityEngine::GameObject* Field_2_2; // 0x88
+	::Class_2_A8F5ABF31E066ED4* Field_2_17; // 0x90
+	::UnityEngine::Transform* Field_2_15; // 0x98
+	::UnityEngine::UI::Text* Field_2_11; // 0xA0
 
 	::System::Void _ctor()
 	{
@@ -52,8 +55,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_79AE422BA06F6D26_44_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_2_9FA85F81BF5EE3CA()
+	::System::Void Method_2_8D61BE16C9463302()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_79AE422BA06F6D26_44_METHOD_2_9FA85F81BF5EE3CA_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_79AE422BA06F6D26_44_METHOD_2_8D61BE16C9463302_OFFSET))(this);
 	}
 };

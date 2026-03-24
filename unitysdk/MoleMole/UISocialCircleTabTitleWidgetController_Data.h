@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UISOCIALCIRCLETABTITLEWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA4025C0)
+#define MOLEMOLE_UISOCIALCIRCLETABTITLEWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x96FD510)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISocialCircleTabTitleWidgetController_Data_TypeDefinitionIndex = 46978;
+	inline static constexpr unsigned int UISocialCircleTabTitleWidgetController_Data_TypeDefinitionIndex = 80257;
 
 	class UISocialCircleTabTitleWidgetController_Data : public ::System::Object
 	{
 	public:
 		::System::String* Title; // 0x10
-		::System::Int32 CurrentNum; // 0x18
-		::System::Int32 MaxNum; // 0x1C
+		::System::Int32 MaxNum; // 0x18
+		::System::Int32 CurrentNum; // 0x1C
 
 		::System::Void _ctor()
 		{

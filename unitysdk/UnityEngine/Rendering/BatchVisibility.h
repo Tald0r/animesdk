@@ -4,7 +4,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int BatchVisibility_TypeDefinitionIndex = 6190;
+	inline static constexpr unsigned int BatchVisibility_TypeDefinitionIndex = 6194;
 
 	struct alignas(4) BatchVisibility
 	{

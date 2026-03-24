@@ -11,26 +11,26 @@ namespace System { template <typename T> class Action_1; }
 namespace UnityEngine::EventSystems { class PointerEventData; }
 namespace UnityEngine::UI::Extension { class UICurveSlider; }
 
-#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x19C2A840)
-#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x19C2A850)
-#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x19C2AB20)
-#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C2AD40)
-#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x19C2AD00)
+#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x1B343F00)
+#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x1B343F10)
+#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B3441E0)
+#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B344400)
+#define UNITYENGINE_UI_EXTENSION_UICURVESLIDER_UICURVESLIDER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3443C0)
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UICurveSlider_UICurveSlider_UnityGeneratedFormatter_TypeDefinitionIndex = 75268;
+	inline static constexpr unsigned int UICurveSlider_UICurveSlider_UnityGeneratedFormatter_TypeDefinitionIndex = 39168;
 
 	class UICurveSlider_UICurveSlider_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::UnityEngine::UI::Extension::UICurveSlider*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(UICurveSlider_UICurveSlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x353A0);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(UICurveSlider_UICurveSlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x37CC0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Action_1<::UnityEngine::EventSystems::PointerEventData*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Action_1<::UnityEngine::EventSystems::PointerEventData*>*>**)Il2CppClass::FromTypeDefinitionIndex(UICurveSlider_UICurveSlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x353A8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Action_1<::UnityEngine::EventSystems::PointerEventData*>*>**)Il2CppClass::FromTypeDefinitionIndex(UICurveSlider_UICurveSlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x37CC8);
 		}
 
 		::System::Void _ctor()

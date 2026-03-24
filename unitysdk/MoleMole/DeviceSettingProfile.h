@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_DEVICESETTINGPROFILE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4FBC0)
+#define MOLEMOLE_DEVICESETTINGPROFILE__CTOR_OFFSET UNITYSDK_OFFSET(0xCB0CBD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int DeviceSettingProfile_TypeDefinitionIndex = 62944;
+	inline static constexpr unsigned int DeviceSettingProfile_TypeDefinitionIndex = 51427;
 
 	class DeviceSettingProfile : public ::System::Object
 	{

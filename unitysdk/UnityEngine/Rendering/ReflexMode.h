@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int ReflexMode_TypeDefinitionIndex = 6126;
+	inline static constexpr unsigned int ReflexMode_TypeDefinitionIndex = 6129;
 
 	enum class ReflexMode : ::System::Int32
 	{

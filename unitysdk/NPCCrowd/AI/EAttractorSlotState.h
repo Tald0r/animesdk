@@ -3,13 +3,13 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int EAttractorSlotState_TypeDefinitionIndex = 51387;
+	inline static constexpr unsigned int EAttractorSlotState_TypeDefinitionIndex = 79698;
 
 	enum class EAttractorSlotState : ::System::Int32
 	{
 		Occupied = 3,
-		Claimed = 2,
 		InValid = 0,
+		Claimed = 2,
 		Valid = 1,
 	};
 }

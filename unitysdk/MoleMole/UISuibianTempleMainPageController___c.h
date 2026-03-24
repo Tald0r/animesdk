@@ -4,24 +4,24 @@
 
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEMAINPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC3CA390)
-#define MOLEMOLE_UISUIBIANTEMPLEMAINPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC3CA3D0)
-#define MOLEMOLE_UISUIBIANTEMPLEMAINPAGECONTROLLER___C__REFRESHTRACK_B__43_0_OFFSET UNITYSDK_OFFSET(0xC3CA3E0)
+#define MOLEMOLE_UISUIBIANTEMPLEMAINPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA4623D0)
+#define MOLEMOLE_UISUIBIANTEMPLEMAINPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA462410)
+#define MOLEMOLE_UISUIBIANTEMPLEMAINPAGECONTROLLER___C__REFRESHTRACK_B__43_0_OFFSET UNITYSDK_OFFSET(0xA462420)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleMainPageController___c_TypeDefinitionIndex = 38921;
+	inline static constexpr unsigned int UISuibianTempleMainPageController___c_TypeDefinitionIndex = 79172;
 
 	class UISuibianTempleMainPageController___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_1<::System::Boolean>** StaticGet___9__43_0()
 		{
-			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x32A70);
+			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x34990);
 		}
 		static ::MoleMole::UISuibianTempleMainPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISuibianTempleMainPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x32A78);
+			return (::MoleMole::UISuibianTempleMainPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x34998);
 		}
 
 		static ::System::Void _cctor()

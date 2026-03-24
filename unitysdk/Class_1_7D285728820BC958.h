@@ -4,7 +4,7 @@
 
 namespace System { class String; }
 
-inline static constexpr unsigned int Class_1_7D285728820BC958_TypeDefinitionIndex = 57206;
+inline static constexpr unsigned int Class_1_7D285728820BC958_TypeDefinitionIndex = 55700;
 
 template <typename T>
 class Class_1_7D285728820BC958 : public ::System::Object

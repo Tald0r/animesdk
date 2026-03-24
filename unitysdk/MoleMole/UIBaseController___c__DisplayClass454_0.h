@@ -6,18 +6,18 @@ namespace MoleMole { class UIBaseController; }
 namespace System { class Action; }
 namespace System { class EventArgs; }
 
-#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS454_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC5F7050)
-#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS454_0__DOACTIONAFTERGENERALPOPWINDOW_B__0_OFFSET UNITYSDK_OFFSET(0xC5F7060)
+#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS454_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8BB7F20)
+#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS454_0__DOACTIONAFTERGENERALPOPWINDOW_B__0_OFFSET UNITYSDK_OFFSET(0x8BB7F30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBaseController___c__DisplayClass454_0_TypeDefinitionIndex = 37242;
+	inline static constexpr unsigned int UIBaseController___c__DisplayClass454_0_TypeDefinitionIndex = 58436;
 
 	class UIBaseController___c__DisplayClass454_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIBaseController* __4__this; // 0x10
-		::System::Action* action; // 0x18
+		::System::Action* action; // 0x10
+		::MoleMole::UIBaseController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

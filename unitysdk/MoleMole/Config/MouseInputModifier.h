@@ -3,11 +3,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define MOLEMOLE_CONFIG_MOUSEINPUTMODIFIER_MAKEDEFAULT_OFFSET UNITYSDK_OFFSET(0xCD1D7A0)
+#define MOLEMOLE_CONFIG_MOUSEINPUTMODIFIER_MAKEDEFAULT_OFFSET UNITYSDK_OFFSET(0xE376430)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int MouseInputModifier_TypeDefinitionIndex = 66708;
+	inline static constexpr unsigned int MouseInputModifier_TypeDefinitionIndex = 70409;
 
 	struct alignas(4) MouseInputModifier
 	{

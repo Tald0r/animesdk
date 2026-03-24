@@ -3,11 +3,11 @@
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Remapper_RemapStatus_TypeDefinitionIndex = 25180;
+	inline static constexpr unsigned int Remapper_RemapStatus_TypeDefinitionIndex = 27103;
 
 	enum class Remapper_RemapStatus : ::System::Int32
 	{
-		Success = 1,
 		Failure = 0,
+		Success = 1,
 	};
 }

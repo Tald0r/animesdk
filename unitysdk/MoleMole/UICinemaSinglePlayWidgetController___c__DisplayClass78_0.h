@@ -9,27 +9,27 @@ namespace MoleMole { class UICinemaSinglePlayWidgetController; }
 namespace System { class Action; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC601AC0)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__1_OFFSET UNITYSDK_OFFSET(0xC601AD0)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__2_OFFSET UNITYSDK_OFFSET(0xC601D00)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__3_OFFSET UNITYSDK_OFFSET(0xC601C90)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__4_OFFSET UNITYSDK_OFFSET(0xC601F20)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8BC4160)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__1_OFFSET UNITYSDK_OFFSET(0x8BC4170)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__2_OFFSET UNITYSDK_OFFSET(0x8BC43A0)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__3_OFFSET UNITYSDK_OFFSET(0x8BC4330)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS78_0__SHOWBADBUBBLE_B__4_OFFSET UNITYSDK_OFFSET(0x8BC45C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass78_0_TypeDefinitionIndex = 64983;
+	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass78_0_TypeDefinitionIndex = 38062;
 
 	class UICinemaSinglePlayWidgetController___c__DisplayClass78_0 : public ::System::Object
 	{
 	public:
-		::Class_2_7341BF3E408F4DA8_Class_2_5F3C14FED1CE4C5F* locationView; // 0x10
-		::System::Func_1<::System::Int32>* onClick; // 0x18
-		::MoleMole::UICinemaSingleBadBubbleWidgetController* bubbleWidget; // 0x20
+		::System::Action* __9__4; // 0x10
+		::Class_2_7341BF3E408F4DA8_Class_2_5F3C14FED1CE4C5F* locationView; // 0x18
+		::System::Action* __9__3; // 0x20
 		::MoleMole::UICinemaSinglePlayWidgetController* __4__this; // 0x28
-		::System::Action* __9__4; // 0x30
-		::System::Action* __9__3; // 0x38
-		::MoleMole::CinemaSingleBeatMapConfig_BeatMap_BeatItem item; // 0x40
-		::System::Int32 bubbleLocation; // 0x50
+		::MoleMole::UICinemaSingleBadBubbleWidgetController* bubbleWidget; // 0x30
+		::System::Func_1<::System::Int32>* onClick; // 0x38
+		::System::Int32 bubbleLocation; // 0x40
+		::MoleMole::CinemaSingleBeatMapConfig_BeatMap_BeatItem item; // 0x44
 
 		::System::Void _ctor()
 		{

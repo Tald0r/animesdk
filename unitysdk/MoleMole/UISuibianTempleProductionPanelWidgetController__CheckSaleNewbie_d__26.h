@@ -6,17 +6,17 @@
 
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEPRODUCTIONPANELWIDGETCONTROLLER__CHECKSALENEWBIE_D__26_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37F350)
-#define MOLEMOLE_UISUIBIANTEMPLEPRODUCTIONPANELWIDGETCONTROLLER__CHECKSALENEWBIE_D__26_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UISUIBIANTEMPLEPRODUCTIONPANELWIDGETCONTROLLER__CHECKSALENEWBIE_D__26_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37AEC0)
+#define MOLEMOLE_UISUIBIANTEMPLEPRODUCTIONPANELWIDGETCONTROLLER__CHECKSALENEWBIE_D__26_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleProductionPanelWidgetController__CheckSaleNewbie_d__26_TypeDefinitionIndex = 77462;
+	inline static constexpr unsigned int UISuibianTempleProductionPanelWidgetController__CheckSaleNewbie_d__26_TypeDefinitionIndex = 58129;
 
 	struct alignas(8) UISuibianTempleProductionPanelWidgetController__CheckSaleNewbie_d__26
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x20
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x20
 		::System::Int32 __1__state; // 0x30
 
 		::System::Void MoveNext()

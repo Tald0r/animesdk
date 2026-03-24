@@ -9,26 +9,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x139A6A70)
-#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x139A6A80)
-#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x139A6C80)
-#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x139A6E40)
-#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x139A6E00)
+#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9198E00)
+#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9198E10)
+#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9199010)
+#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x91991D0)
+#define MOLEMOLE_CONFIG_SOUNDACTIONWITHWEIGHT_SOUNDACTIONWITHWEIGHT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9199190)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter_TypeDefinitionIndex = 65745;
+	inline static constexpr unsigned int SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter_TypeDefinitionIndex = 53428;
 
 	class SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::SoundActionWithWeight*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A330);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A338);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D0A0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(SoundActionWithWeight_SoundActionWithWeight_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D0A8);
 		}
 
 		::System::Void _ctor()

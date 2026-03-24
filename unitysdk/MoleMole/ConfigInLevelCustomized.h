@@ -6,12 +6,12 @@ namespace MoleMole { class InLevelCustomizedData; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGINLEVELCUSTOMIZED__AUTOSYNC_OFFSET UNITYSDK_OFFSET(0xE448860)
-#define MOLEMOLE_CONFIGINLEVELCUSTOMIZED__CTOR_OFFSET UNITYSDK_OFFSET(0xE448A10)
+#define MOLEMOLE_CONFIGINLEVELCUSTOMIZED__AUTOSYNC_OFFSET UNITYSDK_OFFSET(0xD7CF5A0)
+#define MOLEMOLE_CONFIGINLEVELCUSTOMIZED__CTOR_OFFSET UNITYSDK_OFFSET(0xD7CF750)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigInLevelCustomized_TypeDefinitionIndex = 58699;
+	inline static constexpr unsigned int ConfigInLevelCustomized_TypeDefinitionIndex = 57228;
 
 	class ConfigInLevelCustomized : public ::Foundation::MihoyoSerializedScriptableObject
 	{

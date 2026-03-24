@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGADDITIONALDATA_SCENEBLOOMCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x19257850)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGADDITIONALDATA_SCENEBLOOMCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1967D2E0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int WeatherConfigAdditionalData_SceneBloomConfig_TypeDefinitionIndex = 28497;
+	inline static constexpr unsigned int WeatherConfigAdditionalData_SceneBloomConfig_TypeDefinitionIndex = 29440;
 
 	class WeatherConfigAdditionalData_SceneBloomConfig : public ::System::Object
 	{

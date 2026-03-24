@@ -3,7 +3,7 @@
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int TVTextureSheetBehaviour_DisplayEnum_TypeDefinitionIndex = 78457;
+	inline static constexpr unsigned int TVTextureSheetBehaviour_DisplayEnum_TypeDefinitionIndex = 40221;
 
 	enum class TVTextureSheetBehaviour_DisplayEnum : ::System::Int32
 	{

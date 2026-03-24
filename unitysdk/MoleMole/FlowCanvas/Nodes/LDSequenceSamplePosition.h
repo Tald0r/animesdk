@@ -12,28 +12,28 @@ namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Coroutine; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_BREAK_OFFSET UNITYSDK_OFFSET(0x82D0520)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x82D0350)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_SEQUENCESAMPE_OFFSET UNITYSDK_OFFSET(0x82D0740)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_START_OFFSET UNITYSDK_OFFSET(0x82D05C0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x82D07E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION__REGISTERPORTS_B__8_0_OFFSET UNITYSDK_OFFSET(0x82D0800)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_BREAK_OFFSET UNITYSDK_OFFSET(0xA38A760)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA38A590)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_SEQUENCESAMPE_OFFSET UNITYSDK_OFFSET(0xA38A980)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION_START_OFFSET UNITYSDK_OFFSET(0xA38A800)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0xA38AA20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSEQUENCESAMPLEPOSITION__REGISTERPORTS_B__8_0_OFFSET UNITYSDK_OFFSET(0xA38AA40)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSequenceSamplePosition_TypeDefinitionIndex = 38793;
+	inline static constexpr unsigned int LDSequenceSamplePosition_TypeDefinitionIndex = 78660;
 
 	class LDSequenceSamplePosition : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::UnityEngine::Coroutine* handle; // 0xA8
-		::FlowCanvas::FlowOutput* _flowOutputFinish; // 0xB0
-		::FlowCanvas::FlowOutput* _flowOutputDo; // 0xB8
-		::FlowCanvas::FlowOutput* _flowOutputOut; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Collections::Generic::List_1<::Class_1_B229BC73065D28E3*>*>* _inputAnchors; // 0xC8
-		::FlowCanvas::ValueOutput_1<::UnityEngine::Vector3>* _outputPosition; // 0xD0
-		::UnityEngine::Vector3 outPosition; // 0xD8
-		::System::Single leftTime; // 0xE4
+		::FlowCanvas::FlowOutput* _flowOutputOut; // 0xB0
+		::FlowCanvas::FlowOutput* _flowOutputFinish; // 0xB8
+		::FlowCanvas::ValueOutput_1<::UnityEngine::Vector3>* _outputPosition; // 0xC0
+		::FlowCanvas::FlowOutput* _flowOutputDo; // 0xC8
+		::FlowCanvas::ValueInput_1<::System::Collections::Generic::List_1<::Class_1_B229BC73065D28E3*>*>* _inputAnchors; // 0xD0
+		::System::Single leftTime; // 0xD8
+		::UnityEngine::Vector3 outPosition; // 0xDC
 
 		::System::Void _ctor()
 		{

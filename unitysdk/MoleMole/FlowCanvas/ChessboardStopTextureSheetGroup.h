@@ -5,12 +5,12 @@
 namespace MoleMole::HollowChessboard { class HollowEntity; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSTOPTEXTURESHEETGROUP_INVOKE_OFFSET UNITYSDK_OFFSET(0x6AD5D70)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSTOPTEXTURESHEETGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x6AD5FC0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSTOPTEXTURESHEETGROUP_INVOKE_OFFSET UNITYSDK_OFFSET(0xB5C5060)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSTOPTEXTURESHEETGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0xB5C52A0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardStopTextureSheetGroup_TypeDefinitionIndex = 48659;
+	inline static constexpr unsigned int ChessboardStopTextureSheetGroup_TypeDefinitionIndex = 72311;
 
 	class ChessboardStopTextureSheetGroup : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntity*>*>
 	{

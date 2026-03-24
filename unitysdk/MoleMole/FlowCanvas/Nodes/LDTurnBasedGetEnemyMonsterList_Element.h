@@ -5,11 +5,11 @@
 namespace MoleMole::Project::Config { class EnemyWaveInformTemplateExt; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETENEMYMONSTERLIST_ELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x2C36D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETENEMYMONSTERLIST_ELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x2F3C70)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDTurnBasedGetEnemyMonsterList_Element_TypeDefinitionIndex = 41227;
+	inline static constexpr unsigned int LDTurnBasedGetEnemyMonsterList_Element_TypeDefinitionIndex = 63154;
 
 	struct alignas(8) LDTurnBasedGetEnemyMonsterList_Element
 	{

@@ -6,19 +6,19 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Camera; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINE_PROFILING_TRYGETORADDCAMERASAMPLER_OFFSET UNITYSDK_OFFSET(0x17BFB870)
-#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINE_PROFILING__CCTOR_OFFSET UNITYSDK_OFFSET(0x17BFBA90)
+#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINE_PROFILING_TRYGETORADDCAMERASAMPLER_OFFSET UNITYSDK_OFFSET(0x182E3EB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINE_PROFILING__CCTOR_OFFSET UNITYSDK_OFFSET(0x182E40D0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int UniversalRenderPipeline_Profiling_TypeDefinitionIndex = 28786;
+	inline static constexpr unsigned int UniversalRenderPipeline_Profiling_TypeDefinitionIndex = 29732;
 
 	class UniversalRenderPipeline_Profiling : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>** StaticGet_s_HashSamplerCache()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UniversalRenderPipeline_Profiling_TypeDefinitionIndex)->GetStaticField(0x22270);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UniversalRenderPipeline_Profiling_TypeDefinitionIndex)->GetStaticField(0x23CB0);
 		}
 
 		static ::System::Void _cctor()

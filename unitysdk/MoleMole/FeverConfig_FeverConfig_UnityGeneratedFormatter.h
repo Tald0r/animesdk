@@ -12,26 +12,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8AEA150)
-#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8AEA160)
-#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8AEA360)
-#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8AEA520)
-#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8AEA4E0)
+#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x11640E90)
+#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x11640EA0)
+#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x116410A0)
+#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x11641260)
+#define MOLEMOLE_FEVERCONFIG_FEVERCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x11641220)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FeverConfig_FeverConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 66990;
+	inline static constexpr unsigned int FeverConfig_FeverConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 64814;
 
 	class FeverConfig_FeverConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::FeverConfig*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::FeverSoundType, ::System::Int32>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::FeverSoundType, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(FeverConfig_FeverConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A450);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::InspireZoneOperationType, ::MoleMole::Config::ConfigInspireZoneOperation*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::InspireZoneOperationType, ::MoleMole::Config::ConfigInspireZoneOperation*>*>**)Il2CppClass::FromTypeDefinitionIndex(FeverConfig_FeverConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A458);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::InspireZoneOperationType, ::MoleMole::Config::ConfigInspireZoneOperation*>*>**)Il2CppClass::FromTypeDefinitionIndex(FeverConfig_FeverConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D1C0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::FeverSoundType, ::System::Int32>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::FeverSoundType, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(FeverConfig_FeverConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D1C8);
 		}
 
 		::System::Void _ctor()

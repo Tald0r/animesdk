@@ -4,10 +4,10 @@
 
 namespace System { class String; }
 
-#define STRUCT_2_55AD8E2146FD678C__CTOR_1_OFFSET UNITYSDK_OFFSET(0x358FC0)
-#define STRUCT_2_55AD8E2146FD678C__CTOR_OFFSET UNITYSDK_OFFSET(0x358FA0)
+#define STRUCT_2_55AD8E2146FD678C__CTOR_1_OFFSET UNITYSDK_OFFSET(0x31F150)
+#define STRUCT_2_55AD8E2146FD678C__CTOR_OFFSET UNITYSDK_OFFSET(0x31F130)
 
-inline static constexpr unsigned int Struct_2_55AD8E2146FD678C_TypeDefinitionIndex = 57547;
+inline static constexpr unsigned int Struct_2_55AD8E2146FD678C_TypeDefinitionIndex = 51345;
 
 struct alignas(8) Struct_2_55AD8E2146FD678C
 {

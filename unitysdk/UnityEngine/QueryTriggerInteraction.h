@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int QueryTriggerInteraction_TypeDefinitionIndex = 7653;
+	inline static constexpr unsigned int QueryTriggerInteraction_TypeDefinitionIndex = 7660;
 
 	enum class QueryTriggerInteraction : ::System::Int32
 	{

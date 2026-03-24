@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ShaderFeatureMapping_TypeDefinitionIndex = 6112;
+	inline static constexpr unsigned int ShaderFeatureMapping_TypeDefinitionIndex = 6115;
 
 	struct alignas(8) ShaderFeatureMapping
 	{

@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int UIConstants_OverseaBindAccountActionParam_TypeDefinitionIndex = 34084;
+	inline static constexpr unsigned int UIConstants_OverseaBindAccountActionParam_TypeDefinitionIndex = 35086;
 
 	class UIConstants_OverseaBindAccountActionParam : public ::System::Object
 	{

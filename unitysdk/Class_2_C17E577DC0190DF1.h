@@ -8,23 +8,23 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIHollowCardItemBtnWidgetController; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_C17E577DC0190DF1_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x89CEEE0)
-#define CLASS_2_C17E577DC0190DF1_METHOD_2_A52A279C28A2006E_OFFSET UNITYSDK_OFFSET(0x89CECF0)
-#define CLASS_2_C17E577DC0190DF1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x89CEFF0)
-#define CLASS_2_C17E577DC0190DF1__CTOR_OFFSET UNITYSDK_OFFSET(0x89CEFE0)
+#define CLASS_2_C17E577DC0190DF1_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xAF25DD0)
+#define CLASS_2_C17E577DC0190DF1_METHOD_2_A52A279C28A2006E_OFFSET UNITYSDK_OFFSET(0xAF25BE0)
+#define CLASS_2_C17E577DC0190DF1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xAF25EE0)
+#define CLASS_2_C17E577DC0190DF1__CTOR_OFFSET UNITYSDK_OFFSET(0xAF25ED0)
 
-inline static constexpr unsigned int Class_2_C17E577DC0190DF1_TypeDefinitionIndex = 44669;
+inline static constexpr unsigned int Class_2_C17E577DC0190DF1_TypeDefinitionIndex = 75622;
 
 class Class_2_C17E577DC0190DF1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIHollowCardItemBtnWidgetController*>* Field_2_0; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
+	::UnityEngine::RectTransform* Field_2_4; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIHollowCardItemBtnWidgetController*>* Field_2_0; // 0x28
 	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x30
-	::UnityEngine::RectTransform* Field_2_4; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x38
 
 	::System::Void _ctor()
 	{

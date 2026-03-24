@@ -3,7 +3,7 @@
 
 namespace UnityEngine { class Material; }
 
-inline static constexpr unsigned int IPerObjectShadowMaterial_TypeDefinitionIndex = 28160;
+inline static constexpr unsigned int IPerObjectShadowMaterial_TypeDefinitionIndex = 29101;
 
 class IPerObjectShadowMaterial
 {

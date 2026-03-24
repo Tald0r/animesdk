@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace Foundation
+{
+	inline static constexpr unsigned int LowLevelUtils_TypeDefinitionIndex = 9074;
+
+	class LowLevelUtils : public ::System::Object
+	{
+	public:
+	};
+}

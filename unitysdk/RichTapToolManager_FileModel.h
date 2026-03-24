@@ -5,16 +5,16 @@
 
 namespace System { class String; }
 
-#define RICHTAPTOOLMANAGER_FILEMODEL_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1A7B36E0)
-#define RICHTAPTOOLMANAGER_FILEMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7B32D0)
+#define RICHTAPTOOLMANAGER_FILEMODEL_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1AD95380)
+#define RICHTAPTOOLMANAGER_FILEMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD94F70)
 
-inline static constexpr unsigned int RichTapToolManager_FileModel_TypeDefinitionIndex = 34924;
+inline static constexpr unsigned int RichTapToolManager_FileModel_TypeDefinitionIndex = 35926;
 
 class RichTapToolManager_FileModel : public ::System::Object
 {
 public:
-	::System::String* FileName; // 0x10
-	::System::String* FileContent; // 0x18
+	::System::String* FileContent; // 0x10
+	::System::String* FileName; // 0x18
 	::System::DateTime LastModified; // 0x20
 
 	::System::Void _ctor()

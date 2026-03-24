@@ -7,24 +7,24 @@
 namespace System { class String; }
 template <typename T> class Class_4_179456445C225AB4;
 
-#define CLASS_4_67B3CC9A9753ED38_METHOD_4_25DEA5C65A602671_OFFSET UNITYSDK_OFFSET(0xD754180)
-#define CLASS_4_67B3CC9A9753ED38_METHOD_4_28EB11670A8E5A86_OFFSET UNITYSDK_OFFSET(0xD753480)
-#define CLASS_4_67B3CC9A9753ED38_METHOD_4_47125C76AFDB961E_OFFSET UNITYSDK_OFFSET(0xD753900)
-#define CLASS_4_67B3CC9A9753ED38__CTOR_OFFSET UNITYSDK_OFFSET(0xD753F30)
+#define CLASS_4_67B3CC9A9753ED38_METHOD_4_25DEA5C65A602671_OFFSET UNITYSDK_OFFSET(0x9C37C90)
+#define CLASS_4_67B3CC9A9753ED38_METHOD_4_28EB11670A8E5A86_OFFSET UNITYSDK_OFFSET(0x9C36FA0)
+#define CLASS_4_67B3CC9A9753ED38_METHOD_4_47125C76AFDB961E_OFFSET UNITYSDK_OFFSET(0x9C37420)
+#define CLASS_4_67B3CC9A9753ED38__CTOR_OFFSET UNITYSDK_OFFSET(0x9C37A40)
 
-inline static constexpr unsigned int Class_4_67B3CC9A9753ED38_TypeDefinitionIndex = 79100;
+inline static constexpr unsigned int Class_4_67B3CC9A9753ED38_TypeDefinitionIndex = 47637;
 
 class Class_4_67B3CC9A9753ED38 : public ::Class_3_F3948D237059FA7A
 {
 public:
-	::Class_4_179456445C225AB4<::System::String*>* Field_4_5; // 0x28
-	::Class_4_179456445C225AB4<::System::String*>* Field_4_0; // 0x30
-	::Class_4_179456445C225AB4<::System::Single>* Field_4_6; // 0x38
-	::Class_4_179456445C225AB4<::UnityEngine::Vector3>* Field_4_1; // 0x40
-	::Class_4_179456445C225AB4<::UnityEngine::Vector3>* Field_4_2; // 0x48
-	::Class_4_179456445C225AB4<::System::Single>* Field_4_4; // 0x50
-	::Class_4_179456445C225AB4<::System::Single>* Field_4_3; // 0x58
-	::Class_4_179456445C225AB4<::System::String*>* Field_4_7; // 0x60
+	::Class_4_179456445C225AB4<::System::String*>* Field_4_7; // 0x28
+	::Class_4_179456445C225AB4<::System::Single>* Field_4_3; // 0x30
+	::Class_4_179456445C225AB4<::System::Single>* Field_4_4; // 0x38
+	::Class_4_179456445C225AB4<::System::Single>* Field_4_6; // 0x40
+	::Class_4_179456445C225AB4<::UnityEngine::Vector3>* Field_4_1; // 0x48
+	::Class_4_179456445C225AB4<::System::String*>* Field_4_0; // 0x50
+	::Class_4_179456445C225AB4<::System::String*>* Field_4_5; // 0x58
+	::Class_4_179456445C225AB4<::UnityEngine::Vector3>* Field_4_2; // 0x60
 
 	::System::Void _ctor()
 	{

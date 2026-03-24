@@ -1,0 +1,115 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/ScrollViewItemWidgetController.h"
+
+class Class_2_FB4F9B067D2C7951;
+namespace MoleMole { class UIActivityHotPotCollectDishTabBtnRowWidgetController_Data; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+namespace System { class String; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_GETTABBUTTON_OFFSET UNITYSDK_OFFSET(0xB960610)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB960010)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB960190)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB9600B0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB95FEC0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB95FF60)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_REFRESHLOCK_OFFSET UNITYSDK_OFFSET(0xB960720)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_REFRESHTEXT_OFFSET UNITYSDK_OFFSET(0xB960680)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xB9602E0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB9607D0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB9607E0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET UNITYSDK_OFFSET(0xB960850)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB9608D0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB960950)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB9609B0)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityHotPotCollectDishTabBtnRowWidgetController_TypeDefinitionIndex = 56265;
+
+	class UIActivityHotPotCollectDishTabBtnRowWidgetController : public ::MoleMole::ScrollViewItemWidgetController
+	{
+	public:
+		::Class_2_FB4F9B067D2C7951* _view; // 0x2D0
+		::System::String* lockParam; // 0x2D8
+		::System::Boolean isUnlock; // 0x2E0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void OnScrollItemUpdate(::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_ONSCROLLITEMUPDATE_OFFSET))(this, index, data, init);
+		}
+
+		::UnityEngine::UI::Extension::UITabButton* GetTabButton()
+		{
+			return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_GETTABBUTTON_OFFSET))(this);
+		}
+
+		::System::Void RefreshView(::MoleMole::UIActivityHotPotCollectDishTabBtnRowWidgetController_Data* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityHotPotCollectDishTabBtnRowWidgetController_Data*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this, data);
+		}
+
+		::System::Void RefreshLock(::MoleMole::UIActivityHotPotCollectDishTabBtnRowWidgetController_Data* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityHotPotCollectDishTabBtnRowWidgetController_Data*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_REFRESHLOCK_OFFSET))(this, data);
+		}
+
+		::System::Void RefreshText(::MoleMole::UIActivityHotPotCollectDishTabBtnRowWidgetController_Data* data)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIActivityHotPotCollectDishTabBtnRowWidgetController_Data*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER_REFRESHTEXT_OFFSET))(this, data);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnScrollItemUpdate(::System::Int32 P0, ::System::Object* P1, ::System::Boolean P2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONSCROLLITEMUPDATE_OFFSET))(this, P0, P1, P2);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTDISHTABBTNROWWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

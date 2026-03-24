@@ -8,24 +8,24 @@ namespace System { class Action; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB601BF0)
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__SETLEVELUPANIMATION_B__0_OFFSET UNITYSDK_OFFSET(0xB609AC0)
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__SETLEVELUPANIMATION_B__1_OFFSET UNITYSDK_OFFSET(0xB609CA0)
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__SETLEVELUPANIMATION_B__2_OFFSET UNITYSDK_OFFSET(0xB609E20)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDDA7900)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__SETLEVELUPANIMATION_B__0_OFFSET UNITYSDK_OFFSET(0xDDAF7F0)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__SETLEVELUPANIMATION_B__1_OFFSET UNITYSDK_OFFSET(0xDDAF9C0)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS24_0__SETLEVELUPANIMATION_B__2_OFFSET UNITYSDK_OFFSET(0xDDAFB40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBabeltowerPageController___c__DisplayClass24_0_TypeDefinitionIndex = 37467;
+	inline static constexpr unsigned int UIBabeltowerPageController___c__DisplayClass24_0_TypeDefinitionIndex = 73535;
 
 	class UIBabeltowerPageController___c__DisplayClass24_0 : public ::System::Object
 	{
 	public:
-		::Class_2_60DDD9C206686F44* btn; // 0x10
-		::UnityEngine::Animation* rootAnim; // 0x18
+		::MoleMole::UIBabeltowerPageController* __4__this; // 0x10
+		::UnityEngine::Events::UnityAction* __9__1; // 0x18
 		::System::Action* __9__2; // 0x20
-		::Class_2_60DDD9C206686F44* startConsoleBtn; // 0x28
-		::MoleMole::UIBabeltowerPageController* __4__this; // 0x30
-		::UnityEngine::Events::UnityAction* __9__1; // 0x38
+		::UnityEngine::Animation* rootAnim; // 0x28
+		::Class_2_60DDD9C206686F44* startConsoleBtn; // 0x30
+		::Class_2_60DDD9C206686F44* btn; // 0x38
 		::System::Int32 curPhase; // 0x40
 		::System::Int32 lastPhase; // 0x44
 

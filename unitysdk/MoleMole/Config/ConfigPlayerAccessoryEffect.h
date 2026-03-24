@@ -7,11 +7,11 @@ namespace MoleMole { class ConfigOutlineObjectRenderer_Global; }
 namespace MoleMole { class ConfigOutlineObjectRenderer_Local; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGPLAYERACCESSORYEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x13F9B870)
+#define MOLEMOLE_CONFIG_CONFIGPLAYERACCESSORYEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D5420)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPlayerAccessoryEffect_TypeDefinitionIndex = 69399;
+	inline static constexpr unsigned int ConfigPlayerAccessoryEffect_TypeDefinitionIndex = 51577;
 
 	class ConfigPlayerAccessoryEffect : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define FOUNDATION_SDKMGR_INIT_OFFSET UNITYSDK_OFFSET(0x9659D10)
-#define FOUNDATION_SDKMGR__CCTOR_OFFSET UNITYSDK_OFFSET(0x9659DB0)
-#define FOUNDATION_SDKMGR__CTOR_OFFSET UNITYSDK_OFFSET(0x9659DA0)
+#define FOUNDATION_SDKMGR_INIT_OFFSET UNITYSDK_OFFSET(0x6D168B0)
+#define FOUNDATION_SDKMGR__CCTOR_OFFSET UNITYSDK_OFFSET(0x6D16950)
+#define FOUNDATION_SDKMGR__CTOR_OFFSET UNITYSDK_OFFSET(0x6D16940)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int SDKMgr_TypeDefinitionIndex = 50358;
+	inline static constexpr unsigned int SDKMgr_TypeDefinitionIndex = 43378;
 
 	class SDKMgr : public ::System::Object
 	{
 	public:
 		static ::System::Boolean* StaticGet_isInit()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SDKMgr_TypeDefinitionIndex)->GetStaticField(0x10410);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SDKMgr_TypeDefinitionIndex)->GetStaticField(0x103F0);
 		}
 
 		::System::Void _ctor()

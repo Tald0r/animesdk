@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AnimatorRandomIntType_TypeDefinitionIndex = 62708;
+	inline static constexpr unsigned int AnimatorRandomIntType_TypeDefinitionIndex = 80112;
 
 	enum class AnimatorRandomIntType : ::System::Int32
 	{
-		Avatar = 0,
 		Camera = 1,
+		Avatar = 0,
 	};
 }

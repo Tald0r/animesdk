@@ -1,5 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/GalGame/ChatSetAvatarVisible.h"
 #include "unitysdk/ProtoScript/ModTimeType.h"
 #include "unitysdk/ProtoScript/TimePeriodType.h"
 #include "unitysdk/Struct_2_086C0AADB113D5D4.h"
@@ -14,13 +15,13 @@ namespace MoleMole::GalGame { class TagStringPair; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_TRANSITIONWITHACTIONSCFG_CREATTIMECFG_OFFSET UNITYSDK_OFFSET(0xE1082F0)
-#define MOLEMOLE_GALGAME_TRANSITIONWITHACTIONSCFG_POSTSOUNDEVENT_OFFSET UNITYSDK_OFFSET(0xE108390)
-#define MOLEMOLE_GALGAME_TRANSITIONWITHACTIONSCFG__CTOR_OFFSET UNITYSDK_OFFSET(0xE1083F0)
+#define MOLEMOLE_GALGAME_TRANSITIONWITHACTIONSCFG_CREATTIMECFG_OFFSET UNITYSDK_OFFSET(0x7A6C810)
+#define MOLEMOLE_GALGAME_TRANSITIONWITHACTIONSCFG_POSTSOUNDEVENT_OFFSET UNITYSDK_OFFSET(0x7A6C8B0)
+#define MOLEMOLE_GALGAME_TRANSITIONWITHACTIONSCFG__CTOR_OFFSET UNITYSDK_OFFSET(0x7A6C910)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int TransitionWithActionsCfg_TypeDefinitionIndex = 43303;
+	inline static constexpr unsigned int TransitionWithActionsCfg_TypeDefinitionIndex = 46707;
 
 	class TransitionWithActionsCfg : public ::System::Object
 	{
@@ -33,7 +34,8 @@ namespace MoleMole::GalGame
 		::System::String* DialogueKey; // 0x28
 		::System::Int32 DialogueDelay; // 0x30
 		::System::Int32 TransitionID; // 0x34
-		::System::Boolean SetTagVisible; // 0x38
+		::MoleMole::GalGame::ChatSetAvatarVisible SetAvatarVisible; // 0x38
+		::System::Boolean SetTagVisible; // 0x3C
 		::System::Collections::Generic::List_1<::MoleMole::GalGame::TagBoolPair*>* Params; // 0x40
 		::System::Int32 avatarId; // 0x48
 		::System::String* avatarShowingKey; // 0x50

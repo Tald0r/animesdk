@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Utf8Json/Internal/ArrayPool_1.h"
 
-#define UTF8JSON_INTERNAL_BUFFERPOOL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AEC6810)
-#define UTF8JSON_INTERNAL_BUFFERPOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEC67C0)
+#define UTF8JSON_INTERNAL_BUFFERPOOL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B4E56D0)
+#define UTF8JSON_INTERNAL_BUFFERPOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1B4E5680)
 
 namespace Utf8Json::Internal
 {
-	inline static constexpr unsigned int BufferPool_TypeDefinitionIndex = 81879;
+	inline static constexpr unsigned int BufferPool_TypeDefinitionIndex = 83920;
 
 	class BufferPool : public ::Utf8Json::Internal::ArrayPool_1<::System::Byte>
 	{
 	public:
 		static ::Utf8Json::Internal::BufferPool** StaticGet_Default()
 		{
-			return (::Utf8Json::Internal::BufferPool**)Il2CppClass::FromTypeDefinitionIndex(BufferPool_TypeDefinitionIndex)->GetStaticField(0x474A0);
+			return (::Utf8Json::Internal::BufferPool**)Il2CppClass::FromTypeDefinitionIndex(BufferPool_TypeDefinitionIndex)->GetStaticField(0x48EB0);
 		}
 
 		::System::Void _ctor(::System::Int32 bufferLength)

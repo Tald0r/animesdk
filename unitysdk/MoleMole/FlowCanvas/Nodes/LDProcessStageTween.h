@@ -11,27 +11,27 @@ namespace System { class String; }
 namespace System::Collections { class IEnumerator; }
 namespace UnityEngine { class Coroutine; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_LOOKTWEENSTATE_OFFSET UNITYSDK_OFFSET(0x8AF92D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x8AF9370)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8AF8670)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_START_OFFSET UNITYSDK_OFFSET(0x8AF88E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF93F0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0x8AF9410)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0x8AF9440)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_LOOKTWEENSTATE_OFFSET UNITYSDK_OFFSET(0xB17E6A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xB17E740)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB17DA50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN_START_OFFSET UNITYSDK_OFFSET(0xB17DCC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN__CTOR_OFFSET UNITYSDK_OFFSET(0xB17E7C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0xB17E7E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPROCESSSTAGETWEEN___BASE_ONGRAPHSTOPED_OFFSET UNITYSDK_OFFSET(0xB17E810)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDProcessStageTween_TypeDefinitionIndex = 41171;
+	inline static constexpr unsigned int LDProcessStageTween_TypeDefinitionIndex = 63678;
 
 	class LDProcessStageTween : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::Enum_3_DE640DFFEF87126B>* OperatorTypeInput; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::String*>* DatanameInput; // 0xB0
-		::FlowCanvas::FlowOutput* _finishOutput; // 0xB8
-		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* entityValueInput; // 0xC0
-		::UnityEngine::Coroutine* listenHandle; // 0xC8
-		::FlowCanvas::FlowOutput* _output; // 0xD0
+		::UnityEngine::Coroutine* listenHandle; // 0xA8
+		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* entityValueInput; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::String*>* DatanameInput; // 0xB8
+		::FlowCanvas::ValueInput_1<::Enum_3_DE640DFFEF87126B>* OperatorTypeInput; // 0xC0
+		::FlowCanvas::FlowOutput* _output; // 0xC8
+		::FlowCanvas::FlowOutput* _finishOutput; // 0xD0
 
 		::System::Void _ctor()
 		{

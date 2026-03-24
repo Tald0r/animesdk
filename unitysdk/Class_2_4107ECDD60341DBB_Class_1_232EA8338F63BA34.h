@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_5B421F8FFABD4CA3_2.h"
+#include "unitysdk/Struct_2_5B421F8FFABD4CA3_3.h"
 #include "unitysdk/Struct_2_ABC67D4EFBF3BD9A_3.h"
 #include "unitysdk/System/Object.h"
 
@@ -9,18 +9,18 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_2_4107ECDD60341DBB_CLASS_1_232EA8338F63BA34_METHOD_1_FA383E53DEC53851_OFFSET UNITYSDK_OFFSET(0x99C7940)
-#define CLASS_2_4107ECDD60341DBB_CLASS_1_232EA8338F63BA34__CTOR_OFFSET UNITYSDK_OFFSET(0x99C7930)
+#define CLASS_2_4107ECDD60341DBB_CLASS_1_232EA8338F63BA34_METHOD_1_FA383E53DEC53851_OFFSET UNITYSDK_OFFSET(0x926AB20)
+#define CLASS_2_4107ECDD60341DBB_CLASS_1_232EA8338F63BA34__CTOR_OFFSET UNITYSDK_OFFSET(0x926AB10)
 
-inline static constexpr unsigned int Class_2_4107ECDD60341DBB_Class_1_232EA8338F63BA34_TypeDefinitionIndex = 55405;
+inline static constexpr unsigned int Class_2_4107ECDD60341DBB_Class_1_232EA8338F63BA34_TypeDefinitionIndex = 78490;
 
 class Class_2_4107ECDD60341DBB_Class_1_232EA8338F63BA34 : public ::System::Object
 {
 public:
-	::Class_2_4107ECDD60341DBB* Field_1_0; // 0x10
-	::System::Action* Field_1_2; // 0x18
-	::Struct_2_ABC67D4EFBF3BD9A_3 Field_1_1; // 0x20
-	::System::Action_1<::Struct_2_5B421F8FFABD4CA3_2>* Field_1_3; // 0x70
+	::System::Action_1<::Struct_2_5B421F8FFABD4CA3_3>* Field_1_3; // 0x10
+	::Struct_2_ABC67D4EFBF3BD9A_3 Field_1_1; // 0x18
+	::Class_2_4107ECDD60341DBB* Field_1_0; // 0x68
+	::System::Action* Field_1_2; // 0x70
 
 	::System::Void _ctor()
 	{

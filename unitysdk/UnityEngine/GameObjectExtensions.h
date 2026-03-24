@@ -1,21 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/LayerMaskStatic_Enum_3_BA21CC391326FDD3.h"
+#include "unitysdk/MoleMole/LayerMaskStatic_Enum_3_C3BBA2B066959E6E.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 
-#define UNITYENGINE_GAMEOBJECTEXTENSIONS_CONTAINCAMTRANSPARENTTAG_OFFSET UNITYSDK_OFFSET(0x13891730)
-#define UNITYENGINE_GAMEOBJECTEXTENSIONS_GETSCENEPATH_OFFSET UNITYSDK_OFFSET(0x13890DD0)
-#define UNITYENGINE_GAMEOBJECTEXTENSIONS_SAFESETACTIVE_OFFSET UNITYSDK_OFFSET(0x1385FE50)
-#define UNITYENGINE_GAMEOBJECTEXTENSIONS_SAFESETLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x138910A0)
-#define UNITYENGINE_GAMEOBJECTEXTENSIONS_SETSUBLAYER_OFFSET UNITYSDK_OFFSET(0x138915E0)
-#define UNITYENGINE_GAMEOBJECTEXTENSIONS_TRYGETSUBLAYER_OFFSET UNITYSDK_OFFSET(0x13891360)
+#define UNITYENGINE_GAMEOBJECTEXTENSIONS_CONTAINCAMTRANSPARENTTAG_OFFSET UNITYSDK_OFFSET(0x191A3390)
+#define UNITYENGINE_GAMEOBJECTEXTENSIONS_GETSCENEPATH_OFFSET UNITYSDK_OFFSET(0x191A2860)
+#define UNITYENGINE_GAMEOBJECTEXTENSIONS_SAFESETACTIVE_OFFSET UNITYSDK_OFFSET(0x191A2B30)
+#define UNITYENGINE_GAMEOBJECTEXTENSIONS_SAFESETLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x191A2D00)
+#define UNITYENGINE_GAMEOBJECTEXTENSIONS_SETSUBLAYER_OFFSET UNITYSDK_OFFSET(0x191A3240)
+#define UNITYENGINE_GAMEOBJECTEXTENSIONS_TRYGETSUBLAYER_OFFSET UNITYSDK_OFFSET(0x191A2FC0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GameObjectExtensions_TypeDefinitionIndex = 68514;
+	inline static constexpr unsigned int GameObjectExtensions_TypeDefinitionIndex = 54811;
 
 	class GameObjectExtensions : public ::System::Object
 	{
@@ -35,14 +35,14 @@ namespace UnityEngine
 			return ((::System::Void(*)(::UnityEngine::GameObject*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + UNITYENGINE_GAMEOBJECTEXTENSIONS_SAFESETLIGHTWEIGHTACTIVE_OFFSET))(obj, enable, outputError);
 		}
 
-		static ::System::Boolean TryGetSubLayer(::UnityEngine::GameObject* gameObject, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3& subLayer)
+		static ::System::Boolean TryGetSubLayer(::UnityEngine::GameObject* gameObject, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E& subLayer)
 		{
-			return ((::System::Boolean(*)(::UnityEngine::GameObject*, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3&))((::PBYTE)hIl2Cpp + UNITYENGINE_GAMEOBJECTEXTENSIONS_TRYGETSUBLAYER_OFFSET))(gameObject, subLayer);
+			return ((::System::Boolean(*)(::UnityEngine::GameObject*, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E&))((::PBYTE)hIl2Cpp + UNITYENGINE_GAMEOBJECTEXTENSIONS_TRYGETSUBLAYER_OFFSET))(gameObject, subLayer);
 		}
 
-		static ::System::Void SetSubLayer(::UnityEngine::GameObject* gameObject, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer)
+		static ::System::Void SetSubLayer(::UnityEngine::GameObject* gameObject, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer)
 		{
-			return ((::System::Void(*)(::UnityEngine::GameObject*, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3))((::PBYTE)hIl2Cpp + UNITYENGINE_GAMEOBJECTEXTENSIONS_SETSUBLAYER_OFFSET))(gameObject, subLayer);
+			return ((::System::Void(*)(::UnityEngine::GameObject*, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E))((::PBYTE)hIl2Cpp + UNITYENGINE_GAMEOBJECTEXTENSIONS_SETSUBLAYER_OFFSET))(gameObject, subLayer);
 		}
 
 		static ::System::Boolean ContainCamTransparentTag(::UnityEngine::GameObject* gameObject)

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ComponentMask_TypeDefinitionIndex = 28411;
+	inline static constexpr unsigned int ComponentMask_TypeDefinitionIndex = 29354;
 
 	enum class ComponentMask : ::System::Int32
 	{

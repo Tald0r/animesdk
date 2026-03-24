@@ -6,29 +6,29 @@ namespace FluffyUnderware::Curvy { class CurvySplineSegment; }
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
 namespace System { template <typename T> class Predicate_1; }
 
-#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A9A0160)
-#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9A01A0)
-#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C__SYNCHRONIZESPLINESWITHNULLCPS_B__39_0_OFFSET UNITYSDK_OFFSET(0x1A9A0270)
-#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C___CTOR_B__21_0_OFFSET UNITYSDK_OFFSET(0x1A9A01B0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AF6C160)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF6C1A0)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C__SYNCHRONIZESPLINESWITHNULLCPS_B__39_0_OFFSET UNITYSDK_OFFSET(0x1AF6C270)
+#define FLUFFYUNDERWARE_CURVY_CURVYSPLINE_DIRTINESSMANAGER___C___CTOR_B__21_0_OFFSET UNITYSDK_OFFSET(0x1AF6C1B0)
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int CurvySpline_DirtinessManager___c_TypeDefinitionIndex = 35654;
+	inline static constexpr unsigned int CurvySpline_DirtinessManager___c_TypeDefinitionIndex = 36674;
 
 	class CurvySpline_DirtinessManager___c : public ::System::Object
 	{
 	public:
-		static ::System::Action_3<::FluffyUnderware::Curvy::CurvySplineSegment*, ::System::Int32, ::System::Int32>** StaticGet___9__21_0()
-		{
-			return (::System::Action_3<::FluffyUnderware::Curvy::CurvySplineSegment*, ::System::Int32, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvySpline_DirtinessManager___c_TypeDefinitionIndex)->GetStaticField(0x25070);
-		}
 		static ::System::Predicate_1<::FluffyUnderware::Curvy::CurvySplineSegment*>** StaticGet___9__39_0()
 		{
-			return (::System::Predicate_1<::FluffyUnderware::Curvy::CurvySplineSegment*>**)Il2CppClass::FromTypeDefinitionIndex(CurvySpline_DirtinessManager___c_TypeDefinitionIndex)->GetStaticField(0x25078);
+			return (::System::Predicate_1<::FluffyUnderware::Curvy::CurvySplineSegment*>**)Il2CppClass::FromTypeDefinitionIndex(CurvySpline_DirtinessManager___c_TypeDefinitionIndex)->GetStaticField(0x26AA0);
+		}
+		static ::System::Action_3<::FluffyUnderware::Curvy::CurvySplineSegment*, ::System::Int32, ::System::Int32>** StaticGet___9__21_0()
+		{
+			return (::System::Action_3<::FluffyUnderware::Curvy::CurvySplineSegment*, ::System::Int32, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvySpline_DirtinessManager___c_TypeDefinitionIndex)->GetStaticField(0x26AA8);
 		}
 		static ::FluffyUnderware::Curvy::CurvySpline_DirtinessManager___c** StaticGet___9()
 		{
-			return (::FluffyUnderware::Curvy::CurvySpline_DirtinessManager___c**)Il2CppClass::FromTypeDefinitionIndex(CurvySpline_DirtinessManager___c_TypeDefinitionIndex)->GetStaticField(0x25080);
+			return (::FluffyUnderware::Curvy::CurvySpline_DirtinessManager___c**)Il2CppClass::FromTypeDefinitionIndex(CurvySpline_DirtinessManager___c_TypeDefinitionIndex)->GetStaticField(0x26AB0);
 		}
 
 		static ::System::Void _cctor()

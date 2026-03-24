@@ -7,21 +7,21 @@ class Class_2_9E3E3CDA608A4F58;
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIMainCityMiniMenuButtonWidgetController; }
 namespace UnityEngine { class GameObject; }
-template <typename T> class Class_3_95EF0285C16C5E7C;
+template <typename T> class Class_3_CA832D813F452AD6;
 
-#define CLASS_2_DD0BEC19545FD166_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x8E85EC0)
-#define CLASS_2_DD0BEC19545FD166_METHOD_2_37917191637BFFF4_OFFSET UNITYSDK_OFFSET(0x8E85D00)
-#define CLASS_2_DD0BEC19545FD166_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8E85F70)
-#define CLASS_2_DD0BEC19545FD166__CTOR_OFFSET UNITYSDK_OFFSET(0x8E85F60)
+#define CLASS_2_DD0BEC19545FD166_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x808F860)
+#define CLASS_2_DD0BEC19545FD166_METHOD_2_37917191637BFFF4_OFFSET UNITYSDK_OFFSET(0x808F6A0)
+#define CLASS_2_DD0BEC19545FD166_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x808F910)
+#define CLASS_2_DD0BEC19545FD166__CTOR_OFFSET UNITYSDK_OFFSET(0x808F900)
 
-inline static constexpr unsigned int Class_2_DD0BEC19545FD166_TypeDefinitionIndex = 64995;
+inline static constexpr unsigned int Class_2_DD0BEC19545FD166_TypeDefinitionIndex = 53802;
 
 class Class_2_DD0BEC19545FD166 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::GameObject* Field_2_1; // 0x18
 	::Class_2_9E3E3CDA608A4F58* Field_2_0; // 0x20
-	::Class_3_95EF0285C16C5E7C<::MoleMole::UIMainCityMiniMenuButtonWidgetController*>* Field_2_2; // 0x28
+	::Class_3_CA832D813F452AD6<::MoleMole::UIMainCityMiniMenuButtonWidgetController*>* Field_2_2; // 0x28
 
 	::System::Void _ctor()
 	{

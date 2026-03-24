@@ -4,11 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIURBANMAPPOINTGROUPWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC3F3F80)
+#define MOLEMOLE_UIURBANMAPPOINTGROUPWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA121B80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapPointGroupWidgetContext_TypeDefinitionIndex = 47533;
+	inline static constexpr unsigned int UIUrbanMapPointGroupWidgetContext_TypeDefinitionIndex = 60365;
 
 	class UIUrbanMapPointGroupWidgetContext : public ::MoleMole::UIUrbanMapPointWidgetContext
 	{

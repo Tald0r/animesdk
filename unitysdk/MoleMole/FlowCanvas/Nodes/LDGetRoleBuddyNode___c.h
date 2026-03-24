@@ -5,24 +5,24 @@
 namespace FlowCanvas { template <typename T> class ValueHandler_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETROLEBUDDYNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xF1A0EF0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETROLEBUDDYNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xF1A0F30)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETROLEBUDDYNODE___C__REGISTERPORTS_B__1_0_OFFSET UNITYSDK_OFFSET(0xF1A0F40)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETROLEBUDDYNODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xEC82DB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETROLEBUDDYNODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xEC82DF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETROLEBUDDYNODE___C__REGISTERPORTS_B__1_0_OFFSET UNITYSDK_OFFSET(0xEC82E00)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetRoleBuddyNode___c_TypeDefinitionIndex = 38168;
+	inline static constexpr unsigned int LDGetRoleBuddyNode___c_TypeDefinitionIndex = 38353;
 
 	class LDGetRoleBuddyNode___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::FlowCanvas::Nodes::LDGetRoleBuddyNode___c** StaticGet___9()
-		{
-			return (::MoleMole::FlowCanvas::Nodes::LDGetRoleBuddyNode___c**)Il2CppClass::FromTypeDefinitionIndex(LDGetRoleBuddyNode___c_TypeDefinitionIndex)->GetStaticField(0x423E0);
-		}
 		static ::FlowCanvas::ValueHandler_1<::MoleMole::Battle::Entity*>** StaticGet___9__1_0()
 		{
-			return (::FlowCanvas::ValueHandler_1<::MoleMole::Battle::Entity*>**)Il2CppClass::FromTypeDefinitionIndex(LDGetRoleBuddyNode___c_TypeDefinitionIndex)->GetStaticField(0x423E8);
+			return (::FlowCanvas::ValueHandler_1<::MoleMole::Battle::Entity*>**)Il2CppClass::FromTypeDefinitionIndex(LDGetRoleBuddyNode___c_TypeDefinitionIndex)->GetStaticField(0x42E90);
+		}
+		static ::MoleMole::FlowCanvas::Nodes::LDGetRoleBuddyNode___c** StaticGet___9()
+		{
+			return (::MoleMole::FlowCanvas::Nodes::LDGetRoleBuddyNode___c**)Il2CppClass::FromTypeDefinitionIndex(LDGetRoleBuddyNode___c_TypeDefinitionIndex)->GetStaticField(0x42E98);
 		}
 
 		static ::System::Void _cctor()

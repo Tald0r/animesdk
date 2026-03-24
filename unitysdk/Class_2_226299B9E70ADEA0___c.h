@@ -5,27 +5,27 @@
 namespace System { template <typename T> class Func_1; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define CLASS_2_226299B9E70ADEA0___C_METHOD_1_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0xCF1D1B0)
-#define CLASS_2_226299B9E70ADEA0___C_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0xCF1D1C0)
-#define CLASS_2_226299B9E70ADEA0___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCF1D160)
-#define CLASS_2_226299B9E70ADEA0___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCF1D1A0)
+#define CLASS_2_226299B9E70ADEA0___C_METHOD_1_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x95CD460)
+#define CLASS_2_226299B9E70ADEA0___C_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0x95CD470)
+#define CLASS_2_226299B9E70ADEA0___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x95CD410)
+#define CLASS_2_226299B9E70ADEA0___C__CTOR_OFFSET UNITYSDK_OFFSET(0x95CD450)
 
-inline static constexpr unsigned int Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex = 77301;
+inline static constexpr unsigned int Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex = 38908;
 
 class Class_2_226299B9E70ADEA0___c : public ::System::Object
 {
 public:
 	static ::System::Func_1<::System::Boolean>** StaticGet___9__18_14()
 	{
-		return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex)->GetStaticField(0x3E560);
+		return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex)->GetStaticField(0x3F380);
 	}
 	static ::Class_2_226299B9E70ADEA0___c** StaticGet___9()
 	{
-		return (::Class_2_226299B9E70ADEA0___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex)->GetStaticField(0x3E568);
+		return (::Class_2_226299B9E70ADEA0___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex)->GetStaticField(0x3F388);
 	}
 	static ::UnityEngine::Events::UnityAction** StaticGet___9__18_17()
 	{
-		return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex)->GetStaticField(0x3E570);
+		return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(Class_2_226299B9E70ADEA0___c_TypeDefinitionIndex)->GetStaticField(0x3F390);
 	}
 
 	static ::System::Void _cctor()

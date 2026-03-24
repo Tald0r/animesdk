@@ -6,11 +6,11 @@
 namespace MoleMole::Cameras { class OverShoulderCameraConfig; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_HACKERDRONECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8061B90)
+#define MOLEMOLE_CONFIG_HACKERDRONECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9D14CD0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HackerDroneConfig_TypeDefinitionIndex = 62091;
+	inline static constexpr unsigned int HackerDroneConfig_TypeDefinitionIndex = 58807;
 
 	class HackerDroneConfig : public ::System::Object
 	{

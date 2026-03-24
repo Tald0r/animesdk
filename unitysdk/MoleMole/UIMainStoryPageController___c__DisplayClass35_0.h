@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS35_0__CTOR_OFFSET UNITYSDK_OFFSET(0x870C130)
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS35_0__ITEMSFADEOUT_B__1_OFFSET UNITYSDK_OFFSET(0x870C140)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS35_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9AAF5A0)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS35_0__ITEMSFADEOUT_B__1_OFFSET UNITYSDK_OFFSET(0x9AAF5B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass35_0_TypeDefinitionIndex = 71451;
+	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass35_0_TypeDefinitionIndex = 40422;
 
 	class UIMainStoryPageController___c__DisplayClass35_0 : public ::System::Object
 	{

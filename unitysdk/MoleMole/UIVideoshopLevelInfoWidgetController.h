@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIGeneralShopLevelInfoWidgetController.h"
 
-class Class_2_208CC9941471731A_576;
+class Class_2_208CC9941471731A_966;
 namespace System { class Object; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET UNITYSDK_OFFSET(0x9A312C0)
-#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETUPDESCTEXT_OFFSET UNITYSDK_OFFSET(0x9A31A00)
-#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9A31DA0)
-#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER___BASE_SETBYTEMPLATE_OFFSET UNITYSDK_OFFSET(0x9A31E20)
+#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET UNITYSDK_OFFSET(0x888E920)
+#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETUPDESCTEXT_OFFSET UNITYSDK_OFFSET(0x888F060)
+#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x888F400)
+#define MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER___BASE_SETBYTEMPLATE_OFFSET UNITYSDK_OFFSET(0x888F480)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVideoshopLevelInfoWidgetController_TypeDefinitionIndex = 50727;
+	inline static constexpr unsigned int UIVideoshopLevelInfoWidgetController_TypeDefinitionIndex = 73784;
 
 	class UIVideoshopLevelInfoWidgetController : public ::MoleMole::UIGeneralShopLevelInfoWidgetController
 	{
@@ -28,9 +28,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID, ::System::Object*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET))(this, template_, curLevelData);
 		}
 
-		static ::System::Void SetupDescText(::UnityEngine::UI::Extension::UILocalizationText* text, ::Class_2_208CC9941471731A_576* template_, ::System::Single curLevelData)
+		static ::System::Void SetupDescText(::UnityEngine::UI::Extension::UILocalizationText* text, ::Class_2_208CC9941471731A_966* template_, ::System::Single curLevelData)
 		{
-			return ((::System::Void(*)(::UnityEngine::UI::Extension::UILocalizationText*, ::Class_2_208CC9941471731A_576*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETUPDESCTEXT_OFFSET))(text, template_, curLevelData);
+			return ((::System::Void(*)(::UnityEngine::UI::Extension::UILocalizationText*, ::Class_2_208CC9941471731A_966*, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVIDEOSHOPLEVELINFOWIDGETCONTROLLER_SETUPDESCTEXT_OFFSET))(text, template_, curLevelData);
 		}
 
 		::System::Void __base_SetByTemplate(::System::Object* P0, ::System::Single P1)

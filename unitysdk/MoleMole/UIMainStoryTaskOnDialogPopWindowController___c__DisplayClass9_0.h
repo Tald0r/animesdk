@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7D50090)
-#define MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__PLAYCLOSE_B__0_OFFSET UNITYSDK_OFFSET(0x7D500A0)
+#define MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8ECC250)
+#define MOLEMOLE_UIMAINSTORYTASKONDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__PLAYCLOSE_B__0_OFFSET UNITYSDK_OFFSET(0x8ECC260)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainStoryTaskOnDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 68055;
+	inline static constexpr unsigned int UIMainStoryTaskOnDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 77524;
 
 	class UIMainStoryTaskOnDialogPopWindowController___c__DisplayClass9_0 : public ::System::Object
 	{

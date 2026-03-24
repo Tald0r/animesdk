@@ -6,26 +6,32 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_INITLOGMODULECOLOR_OFFSET UNITYSDK_OFFSET(0x1ABC69E0)
-#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_INITLOGMODULEHELPER_OFFSET UNITYSDK_OFFSET(0x1ABC6900)
-#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_RESETLOGMODULEHELPER_OFFSET UNITYSDK_OFFSET(0x1ABC6680)
-#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ABC6CC0)
+#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_GET_SWITCHKEYARRAY_OFFSET UNITYSDK_OFFSET(0x1B2195A0)
+#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_INITLOGMODULECOLOR_OFFSET UNITYSDK_OFFSET(0x1B219A90)
+#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_INITLOGMODULEHELPER_OFFSET UNITYSDK_OFFSET(0x1B2199D0)
+#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_INITSWITCHKEYARRAY_OFFSET UNITYSDK_OFFSET(0x1B2195E0)
+#define MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_RESETLOGMODULEHELPER_OFFSET UNITYSDK_OFFSET(0x1B219750)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SuperDebug_LogModuleHelper_TypeDefinitionIndex = 8238;
+	inline static constexpr unsigned int SuperDebug_LogModuleHelper_TypeDefinitionIndex = 8157;
 
 	class SuperDebug_LogModuleHelper : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::System::String*>** StaticGet_SwitchKeyArray()
+		static ::System::Collections::Generic::List_1<::System::String*>** StaticGet__switchKeyArray()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SuperDebug_LogModuleHelper_TypeDefinitionIndex)->GetStaticField(0x67A0);
+			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SuperDebug_LogModuleHelper_TypeDefinitionIndex)->GetStaticField(0x7070);
 		}
 
-		static ::System::Void _cctor()
+		static ::System::Collections::Generic::List_1<::System::String*>* get_SwitchKeyArray()
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER__CCTOR_OFFSET))();
+			return ((::System::Collections::Generic::List_1<::System::String*>*(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_GET_SWITCHKEYARRAY_OFFSET))();
+		}
+
+		static ::System::Void InitSwitchKeyArray()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_SUPERDEBUG_LOGMODULEHELPER_INITSWITCHKEYARRAY_OFFSET))();
 		}
 
 		static ::System::Void ResetLogModuleHelper()

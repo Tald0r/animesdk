@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class CullingBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_CULLINGCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xA4A2B20)
-#define MOLEMOLE_TIMELINE_CULLINGCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xA4A2B10)
-#define MOLEMOLE_TIMELINE_CULLINGCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xA4A2D20)
+#define MOLEMOLE_TIMELINE_CULLINGCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x7AA5E20)
+#define MOLEMOLE_TIMELINE_CULLINGCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x7AA5E10)
+#define MOLEMOLE_TIMELINE_CULLINGCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x7AA6020)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int CullingClip_TypeDefinitionIndex = 52021;
+	inline static constexpr unsigned int CullingClip_TypeDefinitionIndex = 45184;
 
 	class CullingClip : public ::UnityEngine::Playables::PlayableAsset
 	{

@@ -1,5 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
 #include "unitysdk/NPCCrowd/Lod/ConditionData.h"
 #include "unitysdk/NPCCrowd/Lod/CrowdLODDistanceSetting.h"
 #include "unitysdk/NPCCrowd/Lod/LODItem.h"
@@ -13,37 +14,38 @@ namespace System::Collections::Generic { template <typename T> class HashSet_1; 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Collections::Generic { template <typename T> class Stack_1; }
 
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_ADDLODPARAMS_1_OFFSET UNITYSDK_OFFSET(0x5E15680)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_ADDLODPARAMS_OFFSET UNITYSDK_OFFSET(0x5E15550)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DICTFROMPOOL_OFFSET UNITYSDK_OFFSET(0x5E16A10)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DICTTOPOOL_OFFSET UNITYSDK_OFFSET(0x5E17700)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DISTANCECALLBACK_OFFSET UNITYSDK_OFFSET(0x5E17AA0)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_GETLODINDEX_OFFSET UNITYSDK_OFFSET(0x5E17FD0)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REFRESHLODPARAMS_1_OFFSET UNITYSDK_OFFSET(0x5E15FB0)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REFRESHLODPARAMS_OFFSET UNITYSDK_OFFSET(0x5E157B0)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REFRESHREGISTRY_OFFSET UNITYSDK_OFFSET(0x5E15C50)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REGISTERDISTANCEPAIR_OFFSET UNITYSDK_OFFSET(0x5E16B30)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REGISTERLODITEM_OFFSET UNITYSDK_OFFSET(0x5E16770)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REGISTERLODREFPOINT_OFFSET UNITYSDK_OFFSET(0x5E170C0)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_SETLODPARAMENABLE_OFFSET UNITYSDK_OFFSET(0x5E15730)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_UNREGISTERLODITEM_OFFSET UNITYSDK_OFFSET(0x5E173E0)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_UNREGISTERLODREFPOINT_OFFSET UNITYSDK_OFFSET(0x5E17820)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_UPDATELODITEMBIAS_OFFSET UNITYSDK_OFFSET(0x5E16460)
-#define NPCCROWD_LOD_NPCCROWDLODINSTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x5E15250)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_ADDLODPARAMS_1_OFFSET UNITYSDK_OFFSET(0x6356FD0)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_ADDLODPARAMS_OFFSET UNITYSDK_OFFSET(0x6356EA0)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DELAYUNREGISTERLODREFPOINT_OFFSET UNITYSDK_OFFSET(0x6359160)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DICTFROMPOOL_OFFSET UNITYSDK_OFFSET(0x6358350)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DICTTOPOOL_OFFSET UNITYSDK_OFFSET(0x6359040)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_DISTANCECALLBACK_OFFSET UNITYSDK_OFFSET(0x6359480)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_GETLODINDEX_OFFSET UNITYSDK_OFFSET(0x63599B0)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REFRESHLODPARAMS_1_OFFSET UNITYSDK_OFFSET(0x6357900)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REFRESHLODPARAMS_OFFSET UNITYSDK_OFFSET(0x6357100)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REFRESHREGISTRY_OFFSET UNITYSDK_OFFSET(0x63575A0)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REGISTERDISTANCEPAIR_OFFSET UNITYSDK_OFFSET(0x6358470)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REGISTERLODITEM_OFFSET UNITYSDK_OFFSET(0x63580B0)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_REGISTERLODREFPOINT_OFFSET UNITYSDK_OFFSET(0x6358A00)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_SETLODPARAMENABLE_OFFSET UNITYSDK_OFFSET(0x6357080)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_UNREGISTERLODITEM_OFFSET UNITYSDK_OFFSET(0x6358D20)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_UNREGISTERLODREFPOINT_OFFSET UNITYSDK_OFFSET(0x6359200)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE_UPDATELODITEMBIAS_OFFSET UNITYSDK_OFFSET(0x6357DA0)
+#define NPCCROWD_LOD_NPCCROWDLODINSTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x6356BB0)
 
 namespace NPCCrowd::Lod
 {
-	inline static constexpr unsigned int NPCCrowdLODInstance_TypeDefinitionIndex = 39898;
+	inline static constexpr unsigned int NPCCrowdLODInstance_TypeDefinitionIndex = 77368;
 
 	class NPCCrowdLODInstance : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::NPCCrowd::Lod::LODItem>* lodItems; // 0x10
-		::System::Collections::Generic::HashSet_1<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*>* lodRefPoints; // 0x18
-		::System::Collections::Generic::Stack_1<::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::System::Int32>>*>* listCache; // 0x20
-		::System::Collections::Generic::Stack_1<::System::Collections::Generic::Dictionary_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::System::Int32>*>* dictPool; // 0x28
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::NPCCrowd::Lod::CrowdLODDistanceSetting>* lodParams; // 0x10
+		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::NPCCrowd::Lod::LODItem>* lodItems; // 0x18
+		::System::Collections::Generic::HashSet_1<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*>* lodRefPoints; // 0x20
+		::System::Collections::Generic::Stack_1<::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::System::Int32>>*>* listCache; // 0x28
 		::System::Collections::Generic::Dictionary_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::System::Int32>>*>* entity2Handlers; // 0x30
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::NPCCrowd::Lod::CrowdLODDistanceSetting>* lodParams; // 0x38
+		::System::Collections::Generic::Stack_1<::System::Collections::Generic::Dictionary_2<::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*, ::System::Int32>*>* dictPool; // 0x38
 		::NPCCrowd::Lod::NPCCrowdDistanceManager_NpcCrowdDistanceCheck* callback; // 0x40
 		::System::Int32 curValidParam; // 0x48
 
@@ -100,6 +102,11 @@ namespace NPCCrowd::Lod
 		::System::Void UnRegisterLODItem(::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface* i)
 		{
 			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*))((::PBYTE)hIl2Cpp + NPCCROWD_LOD_NPCCROWDLODINSTANCE_UNREGISTERLODITEM_OFFSET))(this, i);
+		}
+
+		::Cysharp::Threading::Tasks::UniTaskVoid DelayUnRegisterLODRefPoint(::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface* refPoint)
+		{
+			return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID, ::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface*))((::PBYTE)hIl2Cpp + NPCCROWD_LOD_NPCCROWDLODINSTANCE_DELAYUNREGISTERLODREFPOINT_OFFSET))(this, refPoint);
 		}
 
 		::System::Void UnRegisterLODRefPoint(::NPCCrowd::Lod::INPCCrowdDistanceCheckInterface* refPoint)

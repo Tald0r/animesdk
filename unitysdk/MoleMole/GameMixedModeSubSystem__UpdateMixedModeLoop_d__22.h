@@ -7,17 +7,17 @@
 namespace MoleMole { class GameMixedModeSubSystem; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_GAMEMIXEDMODESUBSYSTEM__UPDATEMIXEDMODELOOP_D__22_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x346640)
-#define MOLEMOLE_GAMEMIXEDMODESUBSYSTEM__UPDATEMIXEDMODELOOP_D__22_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_GAMEMIXEDMODESUBSYSTEM__UPDATEMIXEDMODELOOP_D__22_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x38AC80)
+#define MOLEMOLE_GAMEMIXEDMODESUBSYSTEM__UPDATEMIXEDMODELOOP_D__22_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GameMixedModeSubSystem__UpdateMixedModeLoop_d__22_TypeDefinitionIndex = 44482;
+	inline static constexpr unsigned int GameMixedModeSubSystem__UpdateMixedModeLoop_d__22_TypeDefinitionIndex = 43946;
 
 	struct alignas(8) GameMixedModeSubSystem__UpdateMixedModeLoop_d__22
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
-		::MoleMole::GameMixedModeSubSystem* __4__this; // 0x20
+		::MoleMole::GameMixedModeSubSystem* __4__this; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x18
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x28
 		::System::Int32 __1__state; // 0x38
 

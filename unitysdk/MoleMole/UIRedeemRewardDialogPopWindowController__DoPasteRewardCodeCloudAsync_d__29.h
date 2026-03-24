@@ -8,18 +8,18 @@ namespace MoleMole { class UIRedeemRewardDialogPopWindowController; }
 namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER__DOPASTEREWARDCODECLOUDASYNC_D__29_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3F03F0)
-#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER__DOPASTEREWARDCODECLOUDASYNC_D__29_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x310210)
+#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER__DOPASTEREWARDCODECLOUDASYNC_D__29_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x448310)
+#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER__DOPASTEREWARDCODECLOUDASYNC_D__29_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x301A90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRedeemRewardDialogPopWindowController__DoPasteRewardCodeCloudAsync_d__29_TypeDefinitionIndex = 41583;
+	inline static constexpr unsigned int UIRedeemRewardDialogPopWindowController__DoPasteRewardCodeCloudAsync_d__29_TypeDefinitionIndex = 64274;
 
 	struct alignas(8) UIRedeemRewardDialogPopWindowController__DoPasteRewardCodeCloudAsync_d__29
 	{
 		::MoleMole::UIRedeemRewardDialogPopWindowController* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::String*> __u__1; // 0x18
-		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x30
+		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x18
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::String*> __u__1; // 0x38
 		::System::Int32 __1__state; // 0x50
 
 		::System::Void MoveNext()

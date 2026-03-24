@@ -3,7 +3,7 @@
 
 namespace Epic::OnlineServices::Lobby
 {
-	inline static constexpr unsigned int LobbyPermissionLevel_TypeDefinitionIndex = 32649;
+	inline static constexpr unsigned int LobbyPermissionLevel_TypeDefinitionIndex = 33603;
 
 	enum class LobbyPermissionLevel : ::System::Int32
 	{

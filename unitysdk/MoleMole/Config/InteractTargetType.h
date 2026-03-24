@@ -3,12 +3,12 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int InteractTargetType_TypeDefinitionIndex = 72446;
+	inline static constexpr unsigned int InteractTargetType_TypeDefinitionIndex = 51623;
 
 	enum class InteractTargetType : ::System::Int32
 	{
-		All = 3,
-		Piece = 1,
 		Other = 2,
+		Piece = 1,
+		All = 3,
 	};
 }

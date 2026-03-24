@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Quaternion.h"
-#include "unitysdk/UnityEngine/Vector3.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_479_TypeDefinitionIndex = 63633;
+namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
+inline static constexpr unsigned int Class_0_16E4307DCC419505_479_TypeDefinitionIndex = 70695;
+
+template <typename TKey, typename TValue>
 class Class_0_16E4307DCC419505_479
 {
 public:

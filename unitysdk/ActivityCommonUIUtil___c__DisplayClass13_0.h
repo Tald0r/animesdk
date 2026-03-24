@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_147;
+class Class_2_208CC9941471731A_859;
 
-#define ACTIVITYCOMMONUIUTIL___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x96B6D40)
-#define ACTIVITYCOMMONUIUTIL___C__DISPLAYCLASS13_0__OPENGOAVATARACTIVITYSTORYINFOPOP_B__0_OFFSET UNITYSDK_OFFSET(0x96B6D50)
+#define ACTIVITYCOMMONUIUTIL___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6FF3260)
+#define ACTIVITYCOMMONUIUTIL___C__DISPLAYCLASS13_0__OPENGOAVATARACTIVITYSTORYINFOPOP_B__0_OFFSET UNITYSDK_OFFSET(0x6FF3270)
 
-inline static constexpr unsigned int ActivityCommonUIUtil___c__DisplayClass13_0_TypeDefinitionIndex = 42395;
+inline static constexpr unsigned int ActivityCommonUIUtil___c__DisplayClass13_0_TypeDefinitionIndex = 57670;
 
 class ActivityCommonUIUtil___c__DisplayClass13_0 : public ::System::Object
 {
 public:
-	::Class_2_208CC9941471731A_147* aSAStoryDisplayConfig; // 0x10
+	::Class_2_208CC9941471731A_859* aSAStoryDisplayConfig; // 0x10
 
 	::System::Void _ctor()
 	{

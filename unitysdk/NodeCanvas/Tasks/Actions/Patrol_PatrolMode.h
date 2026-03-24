@@ -3,7 +3,7 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int Patrol_PatrolMode_TypeDefinitionIndex = 25996;
+	inline static constexpr unsigned int Patrol_PatrolMode_TypeDefinitionIndex = 27500;
 
 	enum class Patrol_PatrolMode : ::System::Int32
 	{

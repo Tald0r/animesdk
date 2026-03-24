@@ -6,11 +6,11 @@ namespace Foundation { class ConfigInfoGroup; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define FOUNDATION_APPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x193F1B70)
+#define FOUNDATION_APPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x19973C70)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AppConfig_TypeDefinitionIndex = 7772;
+	inline static constexpr unsigned int AppConfig_TypeDefinitionIndex = 8005;
 
 	class AppConfig : public ::System::Object
 	{

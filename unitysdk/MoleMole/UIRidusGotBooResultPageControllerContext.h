@@ -3,28 +3,28 @@
 #include "unitysdk/MoleMole/Level/RatingType.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_2_208CC9941471731A_483;
+class Class_2_208CC9941471731A_810;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLERCONTEXT_BUILD_OFFSET UNITYSDK_OFFSET(0x9EB9BF0)
-#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9EB9B40)
+#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLERCONTEXT_BUILD_OFFSET UNITYSDK_OFFSET(0xB6E2CD0)
+#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB6E2C20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooResultPageControllerContext_TypeDefinitionIndex = 70313;
+	inline static constexpr unsigned int UIRidusGotBooResultPageControllerContext_TypeDefinitionIndex = 75927;
 
 	class UIRidusGotBooResultPageControllerContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Boolean>* CurLevelTaskFinishedDict; // 0x28
-		::System::String* NpcPotrait; // 0x30
-		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_483*>* Challenges; // 0x38
-		::System::String* NpcName; // 0x40
-		::MoleMole::Level::RatingType RatingType; // 0x48
-		::System::Int32 NpcScore; // 0x4C
-		::System::Int32 MyScore; // 0x50
+		::System::String* NpcPotrait; // 0x28
+		::System::String* NpcName; // 0x30
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Boolean>* CurLevelTaskFinishedDict; // 0x38
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_810*>* Challenges; // 0x40
+		::System::Int32 NpcScore; // 0x48
+		::System::Int32 MyScore; // 0x4C
+		::MoleMole::Level::RatingType RatingType; // 0x50
 
 		::System::Void _ctor()
 		{

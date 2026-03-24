@@ -7,36 +7,37 @@
 namespace System { class String; }
 namespace System::Collections { class IEnumerable; }
 
-#define MOLEMOLE_CUSTOMPROPERTYUIAUTOGENPARAMS_GETALLAVATARIDS_OFFSET UNITYSDK_OFFSET(0xE8336B0)
-#define MOLEMOLE_CUSTOMPROPERTYUIAUTOGENPARAMS_ONAVATARIDCHANGED_OFFSET UNITYSDK_OFFSET(0xE833730)
-#define MOLEMOLE_CUSTOMPROPERTYUIAUTOGENPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0xE833790)
+#define MOLEMOLE_CUSTOMPROPERTYUIAUTOGENPARAMS_GETALLAVATARIDS_OFFSET UNITYSDK_OFFSET(0xB487FC0)
+#define MOLEMOLE_CUSTOMPROPERTYUIAUTOGENPARAMS_ONAVATARIDCHANGED_OFFSET UNITYSDK_OFFSET(0xB488040)
+#define MOLEMOLE_CUSTOMPROPERTYUIAUTOGENPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0xB4880A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CustomPropertyUIAutoGenParams_TypeDefinitionIndex = 50340;
+	inline static constexpr unsigned int CustomPropertyUIAutoGenParams_TypeDefinitionIndex = 46483;
 
 	class CustomPropertyUIAutoGenParams : public ::System::Object
 	{
 	public:
-		::System::String* RoleHPUILogic_CustomPropertyUI_Path; // 0x10
-		::System::String* LineEF; // 0x18
-		::System::String* CtrlName; // 0x20
-		::System::String* Progress; // 0x28
-		::System::String* EffAnim; // 0x30
+		::System::String* PlaceHolderKey_MaxChargePoint; // 0x10
+		::System::String* BulletFadeIn; // 0x18
+		::System::String* InLevelMainPage_CustomPropertyUI_Path; // 0x20
+		::System::String* BulletFadeOut; // 0x28
+		::System::String* PlaceHolderKey_CurChargePoint; // 0x30
 		::System::String* PlaceHolderKey_Threshold; // 0x38
 		::System::String* LineEFParent; // 0x40
 		::System::String* PlaceHolderKey_IsEnhance; // 0x48
-		::System::String* BulletFadeOut; // 0x50
-		::System::String* ExportDir; // 0x58
-		::System::String* Fill; // 0x60
-		::System::String* PlaceHolderKey_CurChargePoint; // 0x68
-		::System::String* InLevelMainPage_CustomPropertyUI_Path; // 0x70
-		::System::String* BulletLoop; // 0x78
-		::System::String* BulletFadeIn; // 0x80
-		::System::String* PlaceHolderKey_MaxChargePoint; // 0x88
-		::System::Int32 AvatarID; // 0x90
-		::MoleMole::CustomPropertyUIAutoGenParams_CustomPropertyUIType UIType; // 0x94
-		::MoleMole::UIControlReference_UICtrlType CtrlType; // 0x98
+		::System::String* ProgressFullAnimClip; // 0x50
+		::System::String* BulletLoop; // 0x58
+		::System::String* LineEF; // 0x60
+		::System::String* ExportDir; // 0x68
+		::System::String* Fill; // 0x70
+		::System::String* CtrlName; // 0x78
+		::System::String* RoleHPUILogic_CustomPropertyUI_Path; // 0x80
+		::System::String* Progress; // 0x88
+		::System::String* EffAnim; // 0x90
+		::System::Int32 AvatarID; // 0x98
+		::MoleMole::UIControlReference_UICtrlType CtrlType; // 0x9C
+		::MoleMole::CustomPropertyUIAutoGenParams_CustomPropertyUIType UIType; // 0xA0
 
 		::System::Void _ctor()
 		{

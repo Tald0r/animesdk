@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IReaderWriterLock_TypeDefinitionIndex = 9053;
+	inline static constexpr unsigned int IReaderWriterLock_TypeDefinitionIndex = 8790;
 
 	class IReaderWriterLock
 	{

@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_8A0D924C14430663_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x5E28410)
-#define CLASS_1_8A0D924C14430663__CTOR_OFFSET UNITYSDK_OFFSET(0x5E28400)
+#define CLASS_1_8A0D924C14430663_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x63EE3A0)
+#define CLASS_1_8A0D924C14430663__CTOR_OFFSET UNITYSDK_OFFSET(0x63EE390)
 
-inline static constexpr unsigned int Class_1_8A0D924C14430663_TypeDefinitionIndex = 51324;
+inline static constexpr unsigned int Class_1_8A0D924C14430663_TypeDefinitionIndex = 70265;
 
 class Class_1_8A0D924C14430663 : public ::System::Object
 {
 public:
-	::System::Boolean Field_1_1; // 0x10
-	::System::Boolean Field_1_0; // 0x11
-	::System::Boolean Field_1_5; // 0x12
-	::System::Boolean Field_1_2; // 0x13
-	::System::Single Field_1_6; // 0x14
+	::System::Single Field_1_6; // 0x10
+	::System::Boolean Field_1_2; // 0x14
+	::System::Boolean Field_1_1; // 0x15
+	::System::Boolean Field_1_5; // 0x16
+	::System::Boolean Field_1_0; // 0x17
 	::System::Single Field_1_4; // 0x18
 	::System::Single Field_1_7; // 0x1C
 	::System::Single Field_1_3; // 0x20

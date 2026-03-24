@@ -5,12 +5,12 @@
 namespace BinaryTracingCore::Source::TracingTools { class LogTagDefine_LogTag; }
 namespace System { class String; }
 
-#define BINARYTRACINGCORE_SOURCE_TRACINGTOOLS_LOGTAGDEFINE_DEFINELOGTAG_OFFSET UNITYSDK_OFFSET(0x1ABAA7B0)
-#define BINARYTRACINGCORE_SOURCE_TRACINGTOOLS_LOGTAGDEFINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABAA830)
+#define BINARYTRACINGCORE_SOURCE_TRACINGTOOLS_LOGTAGDEFINE_DEFINELOGTAG_OFFSET UNITYSDK_OFFSET(0x1B1D1C80)
+#define BINARYTRACINGCORE_SOURCE_TRACINGTOOLS_LOGTAGDEFINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1D1D00)
 
 namespace BinaryTracingCore::Source::TracingTools
 {
-	inline static constexpr unsigned int LogTagDefine_TypeDefinitionIndex = 30929;
+	inline static constexpr unsigned int LogTagDefine_TypeDefinitionIndex = 31881;
 
 	class LogTagDefine : public ::System::Object
 	{

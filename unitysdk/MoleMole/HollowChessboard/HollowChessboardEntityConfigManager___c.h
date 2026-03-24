@@ -5,24 +5,24 @@
 class Class_1_C902C5428A21466B_1;
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDENTITYCONFIGMANAGER___C_METHOD_1_3B935EDF35B815B0_OFFSET UNITYSDK_OFFSET(0xE486800)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDENTITYCONFIGMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xE4867B0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDENTITYCONFIGMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xE4867F0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDENTITYCONFIGMANAGER___C_METHOD_1_3B935EDF35B815B0_OFFSET UNITYSDK_OFFSET(0xD80E8B0)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDENTITYCONFIGMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD80E860)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDENTITYCONFIGMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD80E8A0)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int HollowChessboardEntityConfigManager___c_TypeDefinitionIndex = 56537;
+	inline static constexpr unsigned int HollowChessboardEntityConfigManager___c_TypeDefinitionIndex = 75776;
 
 	class HollowChessboardEntityConfigManager___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::HollowChessboard::HollowChessboardEntityConfigManager___c** StaticGet___9()
-		{
-			return (::MoleMole::HollowChessboard::HollowChessboardEntityConfigManager___c**)Il2CppClass::FromTypeDefinitionIndex(HollowChessboardEntityConfigManager___c_TypeDefinitionIndex)->GetStaticField(0x36610);
-		}
 		static ::System::Action_1<::Class_1_C902C5428A21466B_1*>** StaticGet___9__7_0()
 		{
-			return (::System::Action_1<::Class_1_C902C5428A21466B_1*>**)Il2CppClass::FromTypeDefinitionIndex(HollowChessboardEntityConfigManager___c_TypeDefinitionIndex)->GetStaticField(0x36618);
+			return (::System::Action_1<::Class_1_C902C5428A21466B_1*>**)Il2CppClass::FromTypeDefinitionIndex(HollowChessboardEntityConfigManager___c_TypeDefinitionIndex)->GetStaticField(0x31740);
+		}
+		static ::MoleMole::HollowChessboard::HollowChessboardEntityConfigManager___c** StaticGet___9()
+		{
+			return (::MoleMole::HollowChessboard::HollowChessboardEntityConfigManager___c**)Il2CppClass::FromTypeDefinitionIndex(HollowChessboardEntityConfigManager___c_TypeDefinitionIndex)->GetStaticField(0x31748);
 		}
 
 		static ::System::Void _cctor()

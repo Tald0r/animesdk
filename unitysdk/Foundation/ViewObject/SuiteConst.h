@@ -4,7 +4,7 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int SuiteConst_TypeDefinitionIndex = 72272;
+	inline static constexpr unsigned int SuiteConst_TypeDefinitionIndex = 68744;
 
 	class SuiteConst : public ::System::Object
 	{

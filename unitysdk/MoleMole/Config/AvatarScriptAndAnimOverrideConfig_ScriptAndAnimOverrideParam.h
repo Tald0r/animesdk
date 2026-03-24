@@ -3,11 +3,11 @@
 #include "unitysdk/Foundation/AssetPath.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_AVATARSCRIPTANDANIMOVERRIDECONFIG_SCRIPTANDANIMOVERRIDEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x8046DA0)
+#define MOLEMOLE_CONFIG_AVATARSCRIPTANDANIMOVERRIDECONFIG_SCRIPTANDANIMOVERRIDEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x9CF9070)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AvatarScriptAndAnimOverrideConfig_ScriptAndAnimOverrideParam_TypeDefinitionIndex = 63182;
+	inline static constexpr unsigned int AvatarScriptAndAnimOverrideConfig_ScriptAndAnimOverrideParam_TypeDefinitionIndex = 71700;
 
 	class AvatarScriptAndAnimOverrideConfig_ScriptAndAnimOverrideParam : public ::System::Object
 	{

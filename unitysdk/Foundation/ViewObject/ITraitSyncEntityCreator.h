@@ -5,7 +5,7 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ITraitSyncEntityCreator_TypeDefinitionIndex = 41282;
+	inline static constexpr unsigned int ITraitSyncEntityCreator_TypeDefinitionIndex = 38596;
 
 	class ITraitSyncEntityCreator
 	{

@@ -10,44 +10,44 @@ namespace UnityEngine { class Sprite; }
 namespace UnityEngine::Timeline { class ImageBehaviour; }
 namespace UnityEngine::UI { class Image; }
 
-#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x1ADEBAF0)
-#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x1ADEB4E0)
-#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR_RESET_OFFSET UNITYSDK_OFFSET(0x1ADEB4C0)
-#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADEBD30)
-#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADEBD20)
+#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x1B40C290)
+#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x1B40BC70)
+#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR_RESET_OFFSET UNITYSDK_OFFSET(0x1B40BC50)
+#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B40C4E0)
+#define UNITYENGINE_TIMELINE_IMAGEMIXERBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B40C4D0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int ImageMixerBehaviour_TypeDefinitionIndex = 29352;
+	inline static constexpr unsigned int ImageMixerBehaviour_TypeDefinitionIndex = 30305;
 
 	class ImageMixerBehaviour : public ::UnityEngine::Playables::PlayableBehaviour
 	{
 	public:
+		static ::System::Boolean* StaticGet_allowProcessImg()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7A90);
+		}
 		static ::System::Int32* StaticGet_color1()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7760);
-		}
-		static ::System::Int32* StaticGet_color2()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7764);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7A94);
 		}
 		static ::System::Int32* StaticGet_secondTex()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7768);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7A98);
 		}
-		static ::System::Boolean* StaticGet_allowProcessImg()
+		static ::System::Int32* StaticGet_color2()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x776C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ImageMixerBehaviour_TypeDefinitionIndex)->GetStaticField(0x7A9C);
 		}
-		::UnityEngine::Sprite* defaultSprite; // 0x10
-		::UnityEngine::Material* _material; // 0x18
-		::UnityEngine::UI::Image* trackBinding; // 0x20
-		::UnityEngine::Timeline::ImageBehaviour* _behaviour1; // 0x28
-		::UnityEngine::Timeline::ImageBehaviour* _behaviour2; // 0x30
-		::System::Single _weight2; // 0x38
-		::System::Boolean firstFrameHappend; // 0x3C
-		::System::Single _weight1; // 0x40
-		::System::Int32 _handleBehaviorCount; // 0x44
+		::UnityEngine::Timeline::ImageBehaviour* _behaviour2; // 0x10
+		::UnityEngine::Sprite* defaultSprite; // 0x18
+		::UnityEngine::Timeline::ImageBehaviour* _behaviour1; // 0x20
+		::UnityEngine::UI::Image* trackBinding; // 0x28
+		::UnityEngine::Material* _material; // 0x30
+		::System::Int32 _handleBehaviorCount; // 0x38
+		::System::Single _weight2; // 0x3C
+		::System::Boolean firstFrameHappend; // 0x40
+		::System::Single _weight1; // 0x44
 
 		::System::Void _ctor()
 		{

@@ -6,11 +6,11 @@ namespace NPCCrowd::AI { class AIActionRefItem; }
 namespace NPCCrowd::AI { class CrowdConditionBase; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_AI_CONDITIONACTIONITEM_CHECKCONDITIONS_OFFSET UNITYSDK_OFFSET(0x2D4300)
+#define NPCCROWD_AI_CONDITIONACTIONITEM_CHECKCONDITIONS_OFFSET UNITYSDK_OFFSET(0x34F4E0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int ConditionActionItem_TypeDefinitionIndex = 69795;
+	inline static constexpr unsigned int ConditionActionItem_TypeDefinitionIndex = 78453;
 
 	struct alignas(8) ConditionActionItem
 	{

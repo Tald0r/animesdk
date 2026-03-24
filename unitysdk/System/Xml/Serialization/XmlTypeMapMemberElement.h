@@ -8,10 +8,10 @@ namespace System::Xml::Serialization { class TypeData; }
 namespace System::Xml::Serialization { class XmlTypeMapElementInfo; }
 namespace System::Xml::Serialization { class XmlTypeMapElementInfoList; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT_FINDELEMENT_OFFSET UNITYSDK_OFFSET(0x1A689070)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT_GET_ELEMENTINFO_OFFSET UNITYSDK_OFFSET(0x1A688FD0)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT_SETCHOICE_OFFSET UNITYSDK_OFFSET(0x1A6898E0)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A688F80)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT_FINDELEMENT_OFFSET UNITYSDK_OFFSET(0x1AC34350)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT_GET_ELEMENTINFO_OFFSET UNITYSDK_OFFSET(0x1AC342B0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT_SETCHOICE_OFFSET UNITYSDK_OFFSET(0x1AC34BC0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEMAPMEMBERELEMENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC34260)
 
 namespace System::Xml::Serialization
 {
@@ -20,9 +20,9 @@ namespace System::Xml::Serialization
 	class XmlTypeMapMemberElement : public ::System::Xml::Serialization::XmlTypeMapMember
 	{
 	public:
-		::System::Xml::Serialization::TypeData* _choiceTypeData; // 0x50
-		::System::Xml::Serialization::XmlTypeMapElementInfoList* _elementInfo; // 0x58
-		::System::String* _choiceMember; // 0x60
+		::System::String* _choiceMember; // 0x50
+		::System::Xml::Serialization::TypeData* _choiceTypeData; // 0x58
+		::System::Xml::Serialization::XmlTypeMapElementInfoList* _elementInfo; // 0x60
 		::System::Boolean _isTextCollector; // 0x68
 
 		::System::Void _ctor()

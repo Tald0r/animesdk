@@ -8,14 +8,14 @@ namespace MoleMole { class ChessEntity; }
 namespace MoleMole { class ChessEntityCollection; }
 namespace MoleMole { class HackerGameBaseDamage; }
 
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE_APPLYLASERDAMAGE_OFFSET UNITYSDK_OFFSET(0xEC6E550)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC6CC10)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE_ISINLASERAREA_OFFSET UNITYSDK_OFFSET(0xEC6E4B0)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC6E630)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE_APPLYLASERDAMAGE_OFFSET UNITYSDK_OFFSET(0x756D050)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0x756B720)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE_ISINLASERAREA_OFFSET UNITYSDK_OFFSET(0x756CFB0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMELASERNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x756D130)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int HackerGameLaserNode_TypeDefinitionIndex = 41095;
+	inline static constexpr unsigned int HackerGameLaserNode_TypeDefinitionIndex = 61617;
 
 	class HackerGameLaserNode : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_5<::MoleMole::ChessEntityCollection*, ::MoleMole::ChessEntityCollection*, ::MoleMole::HackerGameBaseDamage*, ::MoleMole::HollowChessboard::HollowCell, ::MoleMole::HollowChessboard::HollowCell>
 	{

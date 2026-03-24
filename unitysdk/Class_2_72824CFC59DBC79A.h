@@ -12,31 +12,31 @@ namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UIImgText; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_72824CFC59DBC79A_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xB569950)
-#define CLASS_2_72824CFC59DBC79A_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xB569C20)
-#define CLASS_2_72824CFC59DBC79A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB569CF0)
-#define CLASS_2_72824CFC59DBC79A__CTOR_OFFSET UNITYSDK_OFFSET(0xB569CE0)
+#define CLASS_2_72824CFC59DBC79A_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x6619D00)
+#define CLASS_2_72824CFC59DBC79A_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x6619FD0)
+#define CLASS_2_72824CFC59DBC79A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x661A0A0)
+#define CLASS_2_72824CFC59DBC79A__CTOR_OFFSET UNITYSDK_OFFSET(0x661A090)
 
-inline static constexpr unsigned int Class_2_72824CFC59DBC79A_TypeDefinitionIndex = 77315;
+inline static constexpr unsigned int Class_2_72824CFC59DBC79A_TypeDefinitionIndex = 63143;
 
 class Class_2_72824CFC59DBC79A : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x20
-	::UnityEngine::RectTransform* Field_2_9; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x30
-	::UnityEngine::UI::Text* Field_2_1; // 0x38
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIActivityTeamTrialInLevelPauseBuffInfoWidgetController*>* Field_2_11; // 0x40
-	::Class_2_9E3E3CDA608A4F58* Field_2_0; // 0x48
-	::UnityEngine::Transform* Field_2_2; // 0x50
-	::UnityEngine::RectTransform* Field_2_6; // 0x58
-	::UnityEngine::RectTransform* Field_2_10; // 0x60
-	::UnityEngine::RectTransform* Field_2_8; // 0x68
-	::UnityEngine::RectTransform* Field_2_5; // 0x70
-	::UnityEngine::UI::Extension::UIImgText* Field_2_12; // 0x78
+	::UnityEngine::RectTransform* Field_2_5; // 0x18
+	::UnityEngine::RectTransform* Field_2_10; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x28
+	::UnityEngine::RectTransform* Field_2_8; // 0x30
+	::UnityEngine::Transform* Field_2_2; // 0x38
+	::UnityEngine::RectTransform* Field_2_6; // 0x40
+	::UnityEngine::UI::Text* Field_2_1; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x50
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x58
+	::UnityEngine::RectTransform* Field_2_9; // 0x60
+	::Class_2_9E3E3CDA608A4F58* Field_2_0; // 0x68
+	::UnityEngine::UI::Extension::UIImgText* Field_2_12; // 0x70
+	::Class_3_647A206587033F4E<::MoleMole::UIActivityTeamTrialInLevelPauseBuffInfoWidgetController*>* Field_2_11; // 0x78
 
 	::System::Void _ctor()
 	{

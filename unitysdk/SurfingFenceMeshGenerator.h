@@ -13,9 +13,9 @@ namespace FluffyUnderware::Curvy::Shapes { class CSRectangle; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Mesh; }
 
-#define SURFINGFENCEMESHGENERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1817A7E0)
+#define SURFINGFENCEMESHGENERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x15346F20)
 
-inline static constexpr unsigned int SurfingFenceMeshGenerator_TypeDefinitionIndex = 76225;
+inline static constexpr unsigned int SurfingFenceMeshGenerator_TypeDefinitionIndex = 79266;
 
 class SurfingFenceMeshGenerator : public ::UnityEngine::MonoBehaviour
 {

@@ -4,7 +4,7 @@
 
 namespace PipelineCamera::DataOrientated
 {
-	inline static constexpr unsigned int ChunkComponentData_1___componentOffset_e__FixedBuffer_TypeDefinitionIndex = 34582;
+	inline static constexpr unsigned int ChunkComponentData_1___componentOffset_e__FixedBuffer_TypeDefinitionIndex = 35584;
 
 	template <typename TScope>
 	struct ChunkComponentData_1___componentOffset_e__FixedBuffer

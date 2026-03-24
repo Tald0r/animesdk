@@ -5,12 +5,12 @@
 namespace MoleMole { class CameraPositionData; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_PERFORMERPOSITIONDATA_GET_CAMERADATAS_OFFSET UNITYSDK_OFFSET(0x8F9AB30)
-#define MOLEMOLE_PERFORMERPOSITIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8F9AB40)
+#define MOLEMOLE_PERFORMERPOSITIONDATA_GET_CAMERADATAS_OFFSET UNITYSDK_OFFSET(0xC326ED0)
+#define MOLEMOLE_PERFORMERPOSITIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC326EE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PerformerPositionData_TypeDefinitionIndex = 64574;
+	inline static constexpr unsigned int PerformerPositionData_TypeDefinitionIndex = 70999;
 
 	class PerformerPositionData : public ::System::Object
 	{

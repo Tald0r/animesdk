@@ -4,12 +4,12 @@
 
 namespace BehaviorDesigner::Runtime { class GenericVariable; }
 
-#define BEHAVIORDESIGNER_RUNTIME_SHAREDGENERICVARIABLE_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1AE2C380)
-#define BEHAVIORDESIGNER_RUNTIME_SHAREDGENERICVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE2C2C0)
+#define BEHAVIORDESIGNER_RUNTIME_SHAREDGENERICVARIABLE_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1B445EB0)
+#define BEHAVIORDESIGNER_RUNTIME_SHAREDGENERICVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B445DF0)
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int SharedGenericVariable_TypeDefinitionIndex = 30251;
+	inline static constexpr unsigned int SharedGenericVariable_TypeDefinitionIndex = 31203;
 
 	class SharedGenericVariable : public ::BehaviorDesigner::Runtime::SharedVariable_1<::BehaviorDesigner::Runtime::GenericVariable*>
 	{

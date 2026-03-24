@@ -5,12 +5,12 @@
 namespace QWER { class COctStream; }
 namespace QWER { class IPropertySerializerOctData; }
 
-#define QWER_CPROPERTYOCTSTREAMEXT_POP_OFFSET UNITYSDK_OFFSET(0x1B138AB0)
-#define QWER_CPROPERTYOCTSTREAMEXT_PUSH_OFFSET UNITYSDK_OFFSET(0x1B1389D0)
+#define QWER_CPROPERTYOCTSTREAMEXT_POP_OFFSET UNITYSDK_OFFSET(0x1B755120)
+#define QWER_CPROPERTYOCTSTREAMEXT_PUSH_OFFSET UNITYSDK_OFFSET(0x1B755040)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CPropertyOctStreamExt_TypeDefinitionIndex = 9673;
+	inline static constexpr unsigned int CPropertyOctStreamExt_TypeDefinitionIndex = 9675;
 
 	class CPropertyOctStreamExt : public ::System::Object
 	{

@@ -9,7 +9,7 @@ namespace System::Reflection { class MemberInfo; }
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ParamDef_TypeDefinitionIndex = 26044;
+	inline static constexpr unsigned int ParamDef_TypeDefinitionIndex = 27574;
 
 	struct alignas(8) ParamDef
 	{

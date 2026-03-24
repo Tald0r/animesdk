@@ -5,18 +5,18 @@
 namespace MoleMole { class UICpRoleSelectChildWindowController; }
 namespace MoleMole { class UICpRoleSelectDifficultyScript; }
 
-#define MOLEMOLE_UICPROLESELECTCHILDWINDOWCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A99EFC0)
-#define MOLEMOLE_UICPROLESELECTCHILDWINDOWCONTROLLER___C__DISPLAYCLASS18_0__ONENABLE_B__0_OFFSET UNITYSDK_OFFSET(0x1A99EFD0)
+#define MOLEMOLE_UICPROLESELECTCHILDWINDOWCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE82120)
+#define MOLEMOLE_UICPROLESELECTCHILDWINDOWCONTROLLER___C__DISPLAYCLASS18_0__ONENABLE_B__0_OFFSET UNITYSDK_OFFSET(0x1AE82130)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICpRoleSelectChildWindowController___c__DisplayClass18_0_TypeDefinitionIndex = 81451;
+	inline static constexpr unsigned int UICpRoleSelectChildWindowController___c__DisplayClass18_0_TypeDefinitionIndex = 83564;
 
 	class UICpRoleSelectChildWindowController___c__DisplayClass18_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UICpRoleSelectDifficultyScript* sc; // 0x10
-		::MoleMole::UICpRoleSelectChildWindowController* __4__this; // 0x18
+		::MoleMole::UICpRoleSelectChildWindowController* __4__this; // 0x10
+		::MoleMole::UICpRoleSelectDifficultyScript* sc; // 0x18
 
 		::System::Void _ctor()
 		{

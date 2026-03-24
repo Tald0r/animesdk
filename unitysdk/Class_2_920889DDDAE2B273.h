@@ -7,16 +7,16 @@ namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_920889DDDAE2B273_METHOD_2_13A24B87A78C90C7_OFFSET UNITYSDK_OFFSET(0x7606A50)
-#define CLASS_2_920889DDDAE2B273__CTOR_OFFSET UNITYSDK_OFFSET(0x76067C0)
+#define CLASS_2_920889DDDAE2B273_METHOD_2_13A24B87A78C90C7_OFFSET UNITYSDK_OFFSET(0xB491730)
+#define CLASS_2_920889DDDAE2B273__CTOR_OFFSET UNITYSDK_OFFSET(0xB4914A0)
 
-inline static constexpr unsigned int Class_2_920889DDDAE2B273_TypeDefinitionIndex = 47780;
+inline static constexpr unsigned int Class_2_920889DDDAE2B273_TypeDefinitionIndex = 59544;
 
 class Class_2_920889DDDAE2B273 : public ::Class_1_3002EE73D986F5EA
 {
 public:
-	::System::Collections::Generic::HashSet_1<::System::Int32>* Field_2_0; // 0x18
-	::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* Field_2_1; // 0x20
+	::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* Field_2_1; // 0x18
+	::System::Collections::Generic::HashSet_1<::System::Int32>* Field_2_0; // 0x20
 	::System::Int32 Field_2_2; // 0x28
 
 	::System::Void _ctor(::System::Int32 a1, ::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* a2)

@@ -5,15 +5,16 @@
 #include "unitysdk/UnityEngine/Vector3.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
+namespace UnityEngine { class Texture; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_PASSUTIL_SCENEWEATHERPARAMS_FLUSH_OFFSET UNITYSDK_OFFSET(0x7BC2C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_PASSUTIL_SCENEWEATHERPARAMS_FLUSH_OFFSET UNITYSDK_OFFSET(0x7EF170)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int PassUtil_SceneWeatherParams_TypeDefinitionIndex = 29040;
+	inline static constexpr unsigned int PassUtil_SceneWeatherParams_TypeDefinitionIndex = 29991;
 
-	struct alignas(4) PassUtil_SceneWeatherParams
+	struct alignas(8) PassUtil_SceneWeatherParams
 	{
 		::UnityEngine::Vector4 _HeightMapResolution; // 0x10
 		::UnityEngine::Vector4 _SceneWaterPoolBoundBox; // 0x20
@@ -45,6 +46,7 @@ namespace UnityEngine::Rendering::Universal::Internal
 		::UnityEngine::Vector4 global_unity_SHBg; // 0x180
 		::UnityEngine::Vector4 global_unity_SHBb; // 0x190
 		::UnityEngine::Vector4 global_unity_SHC; // 0x1A0
+		::UnityEngine::Texture* sceneSpecialPPSSaturationLut; // 0x1B0
 
 		::System::Void Flush(::UnityEngine::Rendering::CommandBuffer* cmd)
 		{

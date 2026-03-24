@@ -5,19 +5,19 @@
 
 class Class_1_8A5136246E588D6D;
 
-#define MOLEMOLE_AVATARSTORYSTYLEBTNCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6BD6760)
+#define MOLEMOLE_AVATARSTORYSTYLEBTNCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xACA57F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AvatarStoryStyleBtnContext_TypeDefinitionIndex = 42216;
+	inline static constexpr unsigned int AvatarStoryStyleBtnContext_TypeDefinitionIndex = 65555;
 
 	class AvatarStoryStyleBtnContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::Class_1_8A5136246E588D6D* data; // 0x28
-		::System::Int32 ID; // 0x30
+		::System::Int32 CurrencyID; // 0x30
 		::Enum_3_98B056E8DC285A6E StyleType; // 0x34
-		::System::Int32 CurrencyID; // 0x38
+		::System::Int32 ID; // 0x38
 
 		::System::Void _ctor(::Class_1_8A5136246E588D6D* data, ::System::Int32 currencyID)
 		{

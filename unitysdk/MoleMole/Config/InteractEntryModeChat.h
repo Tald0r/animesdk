@@ -6,18 +6,18 @@ class Class_1_35D50070BC469EAB;
 namespace MoleMole::Config { class InteractEntry; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_INTERACTENTRYMODECHAT_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x15EC68E0)
-#define MOLEMOLE_CONFIG_INTERACTENTRYMODECHAT__CTOR_OFFSET UNITYSDK_OFFSET(0x15EC6990)
+#define MOLEMOLE_CONFIG_INTERACTENTRYMODECHAT_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0xE2D9250)
+#define MOLEMOLE_CONFIG_INTERACTENTRYMODECHAT__CTOR_OFFSET UNITYSDK_OFFSET(0xE2D9300)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int InteractEntryModeChat_TypeDefinitionIndex = 64517;
+	inline static constexpr unsigned int InteractEntryModeChat_TypeDefinitionIndex = 43165;
 
 	class InteractEntryModeChat : public ::MoleMole::Config::InteractEntryMode
 	{
 	public:
-		::System::String* Speaker; // 0x20
-		::System::String* storyModuleID; // 0x28
+		::System::String* storyModuleID; // 0x20
+		::System::String* Speaker; // 0x28
 		::System::Int32 performID; // 0x30
 
 		::System::Void _ctor()

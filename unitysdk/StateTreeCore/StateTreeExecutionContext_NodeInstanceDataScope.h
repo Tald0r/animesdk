@@ -1,21 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeRawPtr_1.h"
 #include "unitysdk/StateTreeCore/StateTreeDataHandle.h"
 #include "unitysdk/StateTreeCore/StateTreeDataView.h"
 #include "unitysdk/StateTreeCore/StateTreeExecutionContext.h"
 #include "unitysdk/System/ValueType.h"
+#include "unitysdk/UnrealTypes/RawPtr_1.h"
 
-#define STATETREECORE_STATETREEEXECUTIONCONTEXT_NODEINSTANCEDATASCOPE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8EBA30)
-#define STATETREECORE_STATETREEEXECUTIONCONTEXT_NODEINSTANCEDATASCOPE__CTOR_OFFSET UNITYSDK_OFFSET(0x8EB9F0)
+#define STATETREECORE_STATETREEEXECUTIONCONTEXT_NODEINSTANCEDATASCOPE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x9AC8A0)
+#define STATETREECORE_STATETREEEXECUTIONCONTEXT_NODEINSTANCEDATASCOPE__CTOR_OFFSET UNITYSDK_OFFSET(0x9AC830)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeExecutionContext_NodeInstanceDataScope_TypeDefinitionIndex = 26927;
+	inline static constexpr unsigned int StateTreeExecutionContext_NodeInstanceDataScope_TypeDefinitionIndex = 27762;
 
 	struct alignas(8) StateTreeExecutionContext_NodeInstanceDataScope
 	{
-		::NativeTypes::NativeRawPtr_1<::StateTreeCore::StateTreeExecutionContext> _context; // 0x10
+		::UnrealTypes::RawPtr_1<::StateTreeCore::StateTreeExecutionContext> _context; // 0x10
 		::StateTreeCore::StateTreeDataHandle _savedNodeDataHandle; // 0x18
 		::StateTreeCore::StateTreeDataView _savedNodeInstanceData; // 0x20
 

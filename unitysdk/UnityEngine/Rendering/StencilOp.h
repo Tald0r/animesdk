@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int StencilOp_TypeDefinitionIndex = 6151;
+	inline static constexpr unsigned int StencilOp_TypeDefinitionIndex = 6155;
 
 	enum class StencilOp : ::System::Int32
 	{

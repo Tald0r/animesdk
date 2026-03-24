@@ -7,20 +7,20 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_OPERATECOUNTUPUINODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6AF51A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_OPERATECOUNTUPUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0x6AF5360)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_OPERATECOUNTUPUINODE__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x6AF5380)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_OPERATECOUNTUPUINODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB5E4390)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_OPERATECOUNTUPUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5E4550)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_OPERATECOUNTUPUINODE__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xB5E4570)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_OperateCountUpUINode_TypeDefinitionIndex = 55890;
+	inline static constexpr unsigned int LD_OperateCountUpUINode_TypeDefinitionIndex = 67147;
 
 	class LD_OperateCountUpUINode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _output; // 0xA8
-		::FlowCanvas::ValueOutput_1<::System::Single>* _countUpTimeValue; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* _showOrHide; // 0xB8
+		::FlowCanvas::ValueOutput_1<::System::Single>* _countUpTimeValue; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* _showOrHide; // 0xB0
+		::FlowCanvas::FlowOutput* _output; // 0xB8
 
 		::System::Void _ctor()
 		{

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-inline static constexpr unsigned int __f__AnonymousType5_2_TypeDefinitionIndex = 39874;
+inline static constexpr unsigned int __f__AnonymousType5_2_TypeDefinitionIndex = 65411;
 
-template <typename _r_j__TPar, typename _mat_j__TPar>
+template <typename _list_j__TPar, typename _item_j__TPar>
 class __f__AnonymousType5_2 : public ::System::Object
 {
 public:
-	_r_j__TPar _r_i__Field; // 0x0
-	_mat_j__TPar _mat_i__Field; // 0x0
+	_list_j__TPar _list_i__Field; // 0x0
+	_item_j__TPar _item_i__Field; // 0x0
 };

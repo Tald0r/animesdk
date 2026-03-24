@@ -2,24 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_2_A48F3719AA1CF200.h"
 
-class Class_1_43BD383C98B4C0C5_5;
+class Class_1_43BD383C98B4C0C5_9;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_3_7A7850D3F76D630A__CTOR_OFFSET UNITYSDK_OFFSET(0x1A961390)
+#define CLASS_3_7A7850D3F76D630A__CTOR_OFFSET UNITYSDK_OFFSET(0x1B124070)
 
-inline static constexpr unsigned int Class_3_7A7850D3F76D630A_TypeDefinitionIndex = 79283;
+inline static constexpr unsigned int Class_3_7A7850D3F76D630A_TypeDefinitionIndex = 81282;
 
 class Class_3_7A7850D3F76D630A : public ::Class_2_A48F3719AA1CF200
 {
 public:
-	::Class_1_43BD383C98B4C0C5_5* Field_3_7; // 0x10
+	::Class_1_43BD383C98B4C0C5_9* Field_3_7; // 0x10
 	::System::Collections::Generic::List_1<::System::UInt32>* Field_3_6; // 0x18
-	::System::UInt32 Field_3_1; // 0x20
+	::System::UInt32 Field_3_3; // 0x20
 	::System::UInt32 Field_3_4; // 0x24
 	::System::UInt32 Field_3_2; // 0x28
-	::System::UInt32 Field_3_3; // 0x2C
-	::System::UInt32 Field_3_5; // 0x30
-	::System::UInt32 Field_3_0; // 0x34
+	::System::UInt32 Field_3_5; // 0x2C
+	::System::UInt32 Field_3_0; // 0x30
+	::System::UInt32 Field_3_1; // 0x34
 
 	::System::Void _ctor()
 	{

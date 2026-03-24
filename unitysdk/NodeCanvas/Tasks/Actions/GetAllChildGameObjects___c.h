@@ -6,24 +6,24 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETALLCHILDGAMEOBJECTS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E0C820)
-#define NODECANVAS_TASKS_ACTIONS_GETALLCHILDGAMEOBJECTS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19E0C860)
-#define NODECANVAS_TASKS_ACTIONS_GETALLCHILDGAMEOBJECTS___C__ONEXECUTE_B__4_0_OFFSET UNITYSDK_OFFSET(0x19E0C870)
+#define NODECANVAS_TASKS_ACTIONS_GETALLCHILDGAMEOBJECTS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3FB0A0)
+#define NODECANVAS_TASKS_ACTIONS_GETALLCHILDGAMEOBJECTS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3FB0E0)
+#define NODECANVAS_TASKS_ACTIONS_GETALLCHILDGAMEOBJECTS___C__ONEXECUTE_B__4_0_OFFSET UNITYSDK_OFFSET(0x1A3FB0F0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetAllChildGameObjects___c_TypeDefinitionIndex = 25153;
+	inline static constexpr unsigned int GetAllChildGameObjects___c_TypeDefinitionIndex = 26056;
 
 	class GetAllChildGameObjects___c : public ::System::Object
 	{
 	public:
-		static ::NodeCanvas::Tasks::Actions::GetAllChildGameObjects___c** StaticGet___9()
-		{
-			return (::NodeCanvas::Tasks::Actions::GetAllChildGameObjects___c**)Il2CppClass::FromTypeDefinitionIndex(GetAllChildGameObjects___c_TypeDefinitionIndex)->GetStaticField(0x1E470);
-		}
 		static ::System::Func_2<::UnityEngine::Transform*, ::UnityEngine::GameObject*>** StaticGet___9__4_0()
 		{
-			return (::System::Func_2<::UnityEngine::Transform*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(GetAllChildGameObjects___c_TypeDefinitionIndex)->GetStaticField(0x1E478);
+			return (::System::Func_2<::UnityEngine::Transform*, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(GetAllChildGameObjects___c_TypeDefinitionIndex)->GetStaticField(0x1EF40);
+		}
+		static ::NodeCanvas::Tasks::Actions::GetAllChildGameObjects___c** StaticGet___9()
+		{
+			return (::NodeCanvas::Tasks::Actions::GetAllChildGameObjects___c**)Il2CppClass::FromTypeDefinitionIndex(GetAllChildGameObjects___c_TypeDefinitionIndex)->GetStaticField(0x1EF48);
 		}
 
 		static ::System::Void _cctor()

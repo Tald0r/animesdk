@@ -5,7 +5,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ArrayValueTypeX_TypeDefinitionIndex = 8097;
+	inline static constexpr unsigned int ArrayValueTypeX_TypeDefinitionIndex = 7812;
 
 	class ArrayValueTypeX : public ::System::Object
 	{

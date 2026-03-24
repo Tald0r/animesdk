@@ -7,18 +7,23 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_C72EFEEE926A8E9E_3_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x9FF34B0)
-#define CLASS_2_C72EFEEE926A8E9E_3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9FF3580)
-#define CLASS_2_C72EFEEE926A8E9E_3__CTOR_OFFSET UNITYSDK_OFFSET(0x9FF3570)
+#define CLASS_2_C72EFEEE926A8E9E_3_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x83306B0)
+#define CLASS_2_C72EFEEE926A8E9E_3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8330800)
+#define CLASS_2_C72EFEEE926A8E9E_3__CTOR_OFFSET UNITYSDK_OFFSET(0x83307F0)
 
-inline static constexpr unsigned int Class_2_C72EFEEE926A8E9E_3_TypeDefinitionIndex = 65805;
+inline static constexpr unsigned int Class_2_C72EFEEE926A8E9E_3_TypeDefinitionIndex = 49743;
 
 class Class_2_C72EFEEE926A8E9E_3 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Animation* Field_2_2; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
+	::UnityEngine::Animation* Field_2_6; // 0x18
+	::UnityEngine::Animation* Field_2_5; // 0x20
+	::UnityEngine::Animation* Field_2_4; // 0x28
+	::UnityEngine::Animation* Field_2_0; // 0x30
+	::UnityEngine::Animation* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x50
 
 	::System::Void _ctor()
 	{

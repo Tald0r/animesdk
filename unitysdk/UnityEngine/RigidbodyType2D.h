@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RigidbodyType2D_TypeDefinitionIndex = 7621;
+	inline static constexpr unsigned int RigidbodyType2D_TypeDefinitionIndex = 7627;
 
 	enum class RigidbodyType2D : ::System::Int32
 	{

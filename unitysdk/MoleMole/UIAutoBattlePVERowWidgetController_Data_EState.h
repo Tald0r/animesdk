@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattlePVERowWidgetController_Data_EState_TypeDefinitionIndex = 42100;
+	inline static constexpr unsigned int UIAutoBattlePVERowWidgetController_Data_EState_TypeDefinitionIndex = 63990;
 
 	enum class UIAutoBattlePVERowWidgetController_Data_EState : ::System::Int32
 	{
-		Empty = 0,
-		Lock = 1,
 		NotFinished = 2,
 		Finished = 3,
+		Lock = 1,
+		Empty = 0,
 	};
 }

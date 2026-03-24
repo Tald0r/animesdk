@@ -5,34 +5,34 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9386220)
-#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9386260)
-#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__ONSTART_B__14_1_OFFSET UNITYSDK_OFFSET(0x9386270)
-#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__REFRESHDETAIL_B__24_1_OFFSET UNITYSDK_OFFSET(0x9386280)
-#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__REFRESHLEVELLIST_B__28_1_OFFSET UNITYSDK_OFFSET(0x9386480)
+#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x95371E0)
+#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9537220)
+#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__ONSTART_B__14_1_OFFSET UNITYSDK_OFFSET(0x9537230)
+#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__REFRESHDETAIL_B__24_1_OFFSET UNITYSDK_OFFSET(0x9537240)
+#define MOLEMOLE_UITOWERDEFENSELEVELPAGECONTROLLER___C__REFRESHLEVELLIST_B__28_1_OFFSET UNITYSDK_OFFSET(0x9537440)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITowerDefenseLevelPageController___c_TypeDefinitionIndex = 73971;
+	inline static constexpr unsigned int UITowerDefenseLevelPageController___c_TypeDefinitionIndex = 70545;
 
 	class UITowerDefenseLevelPageController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UITowerDefenseLevelPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UITowerDefenseLevelPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C630);
-		}
-		static ::System::Comparison_1<::System::Int32>** StaticGet___9__24_1()
-		{
-			return (::System::Comparison_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C638);
-		}
-		static ::System::Action** StaticGet___9__14_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C640);
+			return (::MoleMole::UITowerDefenseLevelPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F340);
 		}
 		static ::System::Action** StaticGet___9__28_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C648);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F348);
+		}
+		static ::System::Action** StaticGet___9__14_1()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F350);
+		}
+		static ::System::Comparison_1<::System::Int32>** StaticGet___9__24_1()
+		{
+			return (::System::Comparison_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UITowerDefenseLevelPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F358);
 		}
 
 		static ::System::Void _cctor()

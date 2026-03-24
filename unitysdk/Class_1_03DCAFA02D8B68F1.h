@@ -3,11 +3,13 @@
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
+namespace UnityEngine { class GameObject; }
 
-#define CLASS_1_03DCAFA02D8B68F1_METHOD_1_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x628BBA0)
-#define CLASS_1_03DCAFA02D8B68F1__CTOR_OFFSET UNITYSDK_OFFSET(0x628BBB0)
+#define CLASS_1_03DCAFA02D8B68F1_GET_SOUNDACTIONSOURCEHINT_OFFSET UNITYSDK_OFFSET(0x993AFD0)
+#define CLASS_1_03DCAFA02D8B68F1_GET_SOUNDGAMEOBJECT_OFFSET UNITYSDK_OFFSET(0x993AFC0)
+#define CLASS_1_03DCAFA02D8B68F1__CTOR_OFFSET UNITYSDK_OFFSET(0x993AFE0)
 
-inline static constexpr unsigned int Class_1_03DCAFA02D8B68F1_TypeDefinitionIndex = 46766;
+inline static constexpr unsigned int Class_1_03DCAFA02D8B68F1_TypeDefinitionIndex = 46040;
 
 class Class_1_03DCAFA02D8B68F1 : public ::System::Object
 {
@@ -17,8 +19,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_03DCAFA02D8B68F1__CTOR_OFFSET))(this);
 	}
 
-	::System::String* Method_1_126AB3935214AA22()
+	::UnityEngine::GameObject* get_soundGameObject()
 	{
-		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_03DCAFA02D8B68F1_METHOD_1_126AB3935214AA22_OFFSET))(this);
+		return ((::UnityEngine::GameObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_03DCAFA02D8B68F1_GET_SOUNDGAMEOBJECT_OFFSET))(this);
+	}
+
+	::System::String* get_soundActionSourceHint()
+	{
+		return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_03DCAFA02D8B68F1_GET_SOUNDACTIONSOURCEHINT_OFFSET))(this);
 	}
 };

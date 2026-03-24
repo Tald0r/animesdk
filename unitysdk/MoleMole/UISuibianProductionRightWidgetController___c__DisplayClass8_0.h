@@ -5,12 +5,12 @@
 class Class_2_A5B92B06961D21AB;
 namespace MoleMole { class UISuibianProductionRightWidgetController; }
 
-#define MOLEMOLE_UISUIBIANPRODUCTIONRIGHTWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBEB7F20)
-#define MOLEMOLE_UISUIBIANPRODUCTIONRIGHTWIDGETCONTROLLER___C__DISPLAYCLASS8_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0xBEB7F30)
+#define MOLEMOLE_UISUIBIANPRODUCTIONRIGHTWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA6ACBF0)
+#define MOLEMOLE_UISUIBIANPRODUCTIONRIGHTWIDGETCONTROLLER___C__DISPLAYCLASS8_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0xA6ACC00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianProductionRightWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 38589;
+	inline static constexpr unsigned int UISuibianProductionRightWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 39150;
 
 	class UISuibianProductionRightWidgetController___c__DisplayClass8_0 : public ::System::Object
 	{

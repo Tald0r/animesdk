@@ -4,7 +4,7 @@
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnCanvasGroupChangedHandler_TypeDefinitionIndex = 27230;
+	inline static constexpr unsigned int IAsyncOnCanvasGroupChangedHandler_TypeDefinitionIndex = 28170;
 
 	class IAsyncOnCanvasGroupChangedHandler
 	{

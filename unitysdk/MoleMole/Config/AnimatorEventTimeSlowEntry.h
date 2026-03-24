@@ -5,19 +5,19 @@
 namespace MoleMole::Config { class AnimatorEvent; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTTIMESLOWENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x89E7B70)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTTIMESLOWENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x89E7C10)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTTIMESLOWENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x10A80530)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTTIMESLOWENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x10A805D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventTimeSlowEntry_TypeDefinitionIndex = 62102;
+	inline static constexpr unsigned int AnimatorEventTimeSlowEntry_TypeDefinitionIndex = 54336;
 
 	class AnimatorEventTimeSlowEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
 		::System::String* TimeSlowKey; // 0x58
-		::System::Boolean IsSelf; // 0x60
-		::System::Int32 targetting; // 0x64
+		::System::Int32 targetting; // 0x60
+		::System::Boolean IsSelf; // 0x64
 
 		::System::Void _ctor()
 		{

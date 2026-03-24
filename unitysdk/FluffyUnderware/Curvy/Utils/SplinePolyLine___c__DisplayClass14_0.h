@@ -4,12 +4,12 @@
 #include "unitysdk/ToolBuddy/Pooling/Collections/SubArrayList_1.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define FLUFFYUNDERWARE_CURVY_UTILS_SPLINEPOLYLINE___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABE54E0)
-#define FLUFFYUNDERWARE_CURVY_UTILS_SPLINEPOLYLINE___C__DISPLAYCLASS14_0__GETPOLYGON_B__0_OFFSET UNITYSDK_OFFSET(0x1ABE54F0)
+#define FLUFFYUNDERWARE_CURVY_UTILS_SPLINEPOLYLINE___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1F63A0)
+#define FLUFFYUNDERWARE_CURVY_UTILS_SPLINEPOLYLINE___C__DISPLAYCLASS14_0__GETPOLYGON_B__0_OFFSET UNITYSDK_OFFSET(0x1B1F63B0)
 
 namespace FluffyUnderware::Curvy::Utils
 {
-	inline static constexpr unsigned int SplinePolyLine___c__DisplayClass14_0_TypeDefinitionIndex = 35695;
+	inline static constexpr unsigned int SplinePolyLine___c__DisplayClass14_0_TypeDefinitionIndex = 36715;
 
 	class SplinePolyLine___c__DisplayClass14_0 : public ::System::Object
 	{

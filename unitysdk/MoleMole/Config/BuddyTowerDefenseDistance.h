@@ -6,12 +6,12 @@ class Class_3_C0D5B1A036ED00F0;
 namespace MoleMole::Battle { class Entity; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEDISTANCE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x13F890F0)
-#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEDISTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x13F893F0)
+#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEDISTANCE_EVALUATE_OFFSET UNITYSDK_OFFSET(0xF2C2B70)
+#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEDISTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0xF2C2E70)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int BuddyTowerDefenseDistance_TypeDefinitionIndex = 49555;
+	inline static constexpr unsigned int BuddyTowerDefenseDistance_TypeDefinitionIndex = 50064;
 
 	class BuddyTowerDefenseDistance : public ::MoleMole::Config::TargetValueModuleBase
 	{

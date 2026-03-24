@@ -10,13 +10,11 @@ namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class ParticleSystem; }
 namespace UnityEngine { class Transform; }
 
-#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_RESET_OFFSET UNITYSDK_OFFSET(0x7559740)
-#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_SETCURVE_OFFSET UNITYSDK_OFFSET(0x7559C20)
-#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_START_OFFSET UNITYSDK_OFFSET(0x7559680)
-#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_UPDATE_OFFSET UNITYSDK_OFFSET(0x75596E0)
-#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x7559D00)
+#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_RESET_OFFSET UNITYSDK_OFFSET(0x9934300)
+#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_SETCURVE_OFFSET UNITYSDK_OFFSET(0x99347E0)
+#define MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x99348C0)
 
-inline static constexpr unsigned int MonoSpecialDamageTextBakeAnimationTool_TypeDefinitionIndex = 47721;
+inline static constexpr unsigned int MonoSpecialDamageTextBakeAnimationTool_TypeDefinitionIndex = 57996;
 
 class MonoSpecialDamageTextBakeAnimationTool : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 {
@@ -29,16 +27,6 @@ public:
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL__CTOR_OFFSET))(this);
-	}
-
-	::System::Void Start()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_START_OFFSET))(this);
-	}
-
-	::System::Void Update()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONOSPECIALDAMAGETEXTBAKEANIMATIONTOOL_UPDATE_OFFSET))(this);
 	}
 
 	::System::Void Reset()

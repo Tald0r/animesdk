@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_SERIALIZATION_ALWAYSFORMATSSELFATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B113F10)
+#define SIRENIX_SERIALIZATION_ALWAYSFORMATSSELFATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B72B290)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int AlwaysFormatsSelfAttribute_TypeDefinitionIndex = 7355;
+	inline static constexpr unsigned int AlwaysFormatsSelfAttribute_TypeDefinitionIndex = 7360;
 
 	class AlwaysFormatsSelfAttribute : public ::System::Attribute
 	{

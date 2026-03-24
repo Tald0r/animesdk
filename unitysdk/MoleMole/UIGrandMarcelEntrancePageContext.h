@@ -4,17 +4,17 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIGRANDMARCELENTRANCEPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9D90510)
+#define MOLEMOLE_UIGRANDMARCELENTRANCEPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD57CA90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelEntrancePageContext_TypeDefinitionIndex = 61067;
+	inline static constexpr unsigned int UIGrandMarcelEntrancePageContext_TypeDefinitionIndex = 54280;
 
 	class UIGrandMarcelEntrancePageContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Action* CancelAction; // 0x28
-		::System::Action* ConfirmAction; // 0x30
+		::System::Action* ConfirmAction; // 0x28
+		::System::Action* CancelAction; // 0x30
 		::System::Int32 BangbooPlatformerID; // 0x38
 
 		::System::Void _ctor()

@@ -6,10 +6,10 @@ namespace System::Net::Cache { class RequestCache; }
 namespace System::Net::Cache { class RequestCachePolicy; }
 namespace System::Net::Cache { class RequestCacheValidator; }
 
-#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING_GET_CACHE_OFFSET UNITYSDK_OFFSET(0x19FDB680)
-#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING_GET_POLICY_OFFSET UNITYSDK_OFFSET(0x19FDB6A0)
-#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING_GET_VALIDATOR_OFFSET UNITYSDK_OFFSET(0x19FDB690)
-#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING__CTOR_OFFSET UNITYSDK_OFFSET(0x19FDB670)
+#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING_GET_CACHE_OFFSET UNITYSDK_OFFSET(0x1A5F46C0)
+#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING_GET_POLICY_OFFSET UNITYSDK_OFFSET(0x1A5F46E0)
+#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING_GET_VALIDATOR_OFFSET UNITYSDK_OFFSET(0x1A5F46D0)
+#define SYSTEM_NET_CACHE_REQUESTCACHEBINDING__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5F46B0)
 
 namespace System::Net::Cache
 {
@@ -18,9 +18,9 @@ namespace System::Net::Cache
 	class RequestCacheBinding : public ::System::Object
 	{
 	public:
-		::System::Net::Cache::RequestCacheValidator* m_CacheValidator; // 0x10
-		::System::Net::Cache::RequestCachePolicy* m_Policy; // 0x18
-		::System::Net::Cache::RequestCache* m_RequestCache; // 0x20
+		::System::Net::Cache::RequestCache* m_RequestCache; // 0x10
+		::System::Net::Cache::RequestCacheValidator* m_CacheValidator; // 0x18
+		::System::Net::Cache::RequestCachePolicy* m_Policy; // 0x20
 
 		::System::Void _ctor(::System::Net::Cache::RequestCache* requestCache, ::System::Net::Cache::RequestCacheValidator* cacheValidator, ::System::Net::Cache::RequestCachePolicy* policy)
 		{

@@ -1,46 +1,94 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x32CFA0)
-#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x32CF40)
-#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x77C95C0)
-#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x77C9680)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_CREATE_OFFSET UNITYSDK_OFFSET(0xC2E9B80)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x3C19F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x3C1A50)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_RESET_OFFSET UNITYSDK_OFFSET(0x2F1E90)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x3C1AB0)
+#define NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0xC2E9CB0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int LookAtIKTaskInstanceData_TypeDefinitionIndex = 39415;
+	inline static constexpr unsigned int LookAtIKTaskInstanceData_TypeDefinitionIndex = 58650;
 
 	struct alignas(1) LookAtIKTaskInstanceData
 	{
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(LookAtIKTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xFEC0);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(LookAtIKTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0x46EB0);
 		}
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(LookAtIKTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xFEC4);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0x1E89F9; // 0x0
 
 		static ::System::Void _cctor()
 		{
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA__CCTOR_OFFSET))();
 		}
 
-		::System::UInt32 get_TypeId()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_TYPEID_OFFSET))(this);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_StaticStruct()
+		static ::NPCCrowd::Ability::LookAtIKTaskInstanceData Create()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
+			return ((::NPCCrowd::Ability::LookAtIKTaskInstanceData(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_CREATE_OFFSET))();
 		}
 
-		static ::System::Void RegisterType()
+		::NPCCrowd::Ability::LookAtIKTaskInstanceData DefaultCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_REGISTERTYPE_OFFSET))();
+			return ((::NPCCrowd::Ability::LookAtIKTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::LookAtIKTaskInstanceData CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::LookAtIKTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::LookAtIKTaskInstanceData MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::LookAtIKTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::LookAtIKTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::LookAtIKTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::LookAtIKTaskInstanceData& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::LookAtIKTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_LookAtIKTaskInstanceData__CopyAssign(::NPCCrowd::Ability::LookAtIKTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::LookAtIKTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_LOOKATIKTASKINSTANCEDATA__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

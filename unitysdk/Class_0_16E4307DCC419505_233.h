@@ -1,13 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
-#include "unitysdk/System/Threading/CancellationToken.h"
-#include "unitysdk/System/ValueTuple_2.h"
 
-namespace System { class String; }
-namespace System { template <typename T1, typename T2> class Func_2; }
+class Class_0_16E4307DCC419505_234;
+namespace System { template <typename T> class Action_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_233_TypeDefinitionIndex = 39103;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_233_TypeDefinitionIndex = 40607;
 
 class Class_0_16E4307DCC419505_233
 {

@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGUIAVATAR_ROLETWEAKCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x139A48A0)
+#define MOLEMOLE_CONFIG_CONFIGUIAVATAR_ROLETWEAKCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x9196C20)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIAvatar_RoleTweakColor_TypeDefinitionIndex = 59392;
+	inline static constexpr unsigned int ConfigUIAvatar_RoleTweakColor_TypeDefinitionIndex = 37429;
 
 	class ConfigUIAvatar_RoleTweakColor : public ::System::Object
 	{

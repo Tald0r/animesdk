@@ -4,11 +4,11 @@
 
 namespace MoleMole::Cameras { class CameraTrackBlending; }
 
-#define MOLEMOLE_CAMERAS_TACTICALCOMBATCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x13F7D480)
+#define MOLEMOLE_CAMERAS_TACTICALCOMBATCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xF2B5A30)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int TacticalCombatCameraConfig_TypeDefinitionIndex = 64194;
+	inline static constexpr unsigned int TacticalCombatCameraConfig_TypeDefinitionIndex = 40764;
 
 	class TacticalCombatCameraConfig : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int IColorCurves_TypeDefinitionIndex = 28640;
+	inline static constexpr unsigned int IColorCurves_TypeDefinitionIndex = 29583;
 
 	class IColorCurves
 	{

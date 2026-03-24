@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITYENGINE_EXPERIMENTAL_TERRAINAPI_TERRAINUTILITY_TERRAINMAP_TILECOORD__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3730)
+#define UNITYENGINE_EXPERIMENTAL_TERRAINAPI_TERRAINUTILITY_TERRAINMAP_TILECOORD__CTOR_OFFSET UNITYSDK_OFFSET(0x2F3C30)
 
 namespace UnityEngine::Experimental::TerrainAPI
 {
-	inline static constexpr unsigned int TerrainUtility_TerrainMap_TileCoord_TypeDefinitionIndex = 29452;
+	inline static constexpr unsigned int TerrainUtility_TerrainMap_TileCoord_TypeDefinitionIndex = 30405;
 
 	struct alignas(4) TerrainUtility_TerrainMap_TileCoord
 	{

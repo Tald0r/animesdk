@@ -3,9 +3,9 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeQueue_1_ParallelWriter.h"
 
-#define CLASS_3_DC5CBD5626D4C7C3_STRUCT_2_3EE68E3AB4258EB6_EXECUTE_OFFSET UNITYSDK_OFFSET(0x394520)
+#define CLASS_3_DC5CBD5626D4C7C3_STRUCT_2_3EE68E3AB4258EB6_EXECUTE_OFFSET UNITYSDK_OFFSET(0x35A420)
 
-inline static constexpr unsigned int Class_3_DC5CBD5626D4C7C3_Struct_2_3EE68E3AB4258EB6_TypeDefinitionIndex = 38280;
+inline static constexpr unsigned int Class_3_DC5CBD5626D4C7C3_Struct_2_3EE68E3AB4258EB6_TypeDefinitionIndex = 76505;
 
 struct alignas(8) Class_3_DC5CBD5626D4C7C3_Struct_2_3EE68E3AB4258EB6
 {

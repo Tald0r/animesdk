@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIHADALZONE_BGVIDEOCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA928510)
+#define MOLEMOLE_UIHADALZONE_BGVIDEOCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA94FE40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_BgVideoConfig_TypeDefinitionIndex = 39676;
+	inline static constexpr unsigned int UIHadalZone_BgVideoConfig_TypeDefinitionIndex = 69294;
 
 	class UIHadalZone_BgVideoConfig : public ::UnityEngine::MonoBehaviour
 	{

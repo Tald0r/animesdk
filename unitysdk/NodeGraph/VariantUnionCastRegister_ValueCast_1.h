@@ -6,7 +6,7 @@ namespace NodeGraph { template <typename T> class IVariantUnionCaster_1; }
 
 namespace NodeGraph
 {
-	inline static constexpr unsigned int VariantUnionCastRegister_ValueCast_1_TypeDefinitionIndex = 37991;
+	inline static constexpr unsigned int VariantUnionCastRegister_ValueCast_1_TypeDefinitionIndex = 47409;
 
 	template <typename T>
 	class VariantUnionCastRegister_ValueCast_1 : public ::System::Object

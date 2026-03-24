@@ -13,7 +13,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace Foundation::ViewObject::Container
 {
-	inline static constexpr unsigned int TSparseList_1_TypeDefinitionIndex = 39651;
+	inline static constexpr unsigned int TSparseList_1_TypeDefinitionIndex = 49669;
 
 	template <typename T>
 	class TSparseList_1 : public ::System::Object

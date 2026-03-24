@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIQUESTIONSANSWERSCREENSETTLECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x946CA10)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENSETTLECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA434D70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerScreenSettleContext_TypeDefinitionIndex = 61755;
+	inline static constexpr unsigned int UIQuestionsAnswerScreenSettleContext_TypeDefinitionIndex = 44233;
 
 	class UIQuestionsAnswerScreenSettleContext : public ::MoleMole::UIControllerContextBase
 	{

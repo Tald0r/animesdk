@@ -4,11 +4,11 @@
 
 namespace MoleMole::Config { class PhotoCameraModeOverride; }
 
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERAMODEOVERRIDE__CTOR_OFFSET UNITYSDK_OFFSET(0xE8221E0)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERAMODEOVERRIDE__CTOR_OFFSET UNITYSDK_OFFSET(0xB476490)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPhotoCameraModeOverride_TypeDefinitionIndex = 50291;
+	inline static constexpr unsigned int ConfigPhotoCameraModeOverride_TypeDefinitionIndex = 47813;
 
 	class ConfigPhotoCameraModeOverride : public ::Foundation::MihoyoSerializedScriptableObject
 	{

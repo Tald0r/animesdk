@@ -5,21 +5,21 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSPEEDCURVEACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0xF16E890)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSPEEDCURVEACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xF16E9E0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSPEEDCURVEACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0xEC4D240)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSPEEDCURVEACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4D390)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemSpeedCurveAction_TypeDefinitionIndex = 41621;
+	inline static constexpr unsigned int ConfigSurfGameItemSpeedCurveAction_TypeDefinitionIndex = 67250;
 
 	class ConfigSurfGameItemSpeedCurveAction : public ::MoleMole::Config::ConfigSurfGameItemAction
 	{
 	public:
 		::UnityEngine::AnimationCurve* SpeedCurve; // 0x10
-		::MoleMole::Config::ConfigSurfGameItemSpeedCurveType SpeedCurveType; // 0x18
+		::System::Single MinSpeed; // 0x18
 		::System::Single Duration; // 0x1C
-		::System::Single MinSpeed; // 0x20
-		::System::Single MaxSpeed; // 0x24
+		::System::Single MaxSpeed; // 0x20
+		::MoleMole::Config::ConfigSurfGameItemSpeedCurveType SpeedCurveType; // 0x24
 
 		::System::Void _ctor()
 		{

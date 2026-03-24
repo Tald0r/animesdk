@@ -5,12 +5,12 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define BEHAVIORDESIGNER_RUNTIME_SHAREDGAMEOBJECTLIST_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1AA236B0)
-#define BEHAVIORDESIGNER_RUNTIME_SHAREDGAMEOBJECTLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA23750)
+#define BEHAVIORDESIGNER_RUNTIME_SHAREDGAMEOBJECTLIST_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1B031A30)
+#define BEHAVIORDESIGNER_RUNTIME_SHAREDGAMEOBJECTLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B031AD0)
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int SharedGameObjectList_TypeDefinitionIndex = 30249;
+	inline static constexpr unsigned int SharedGameObjectList_TypeDefinitionIndex = 31201;
 
 	class SharedGameObjectList : public ::BehaviorDesigner::Runtime::SharedVariable_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>
 	{

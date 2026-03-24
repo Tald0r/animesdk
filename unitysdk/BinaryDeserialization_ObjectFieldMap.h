@@ -4,15 +4,15 @@
 
 namespace System::Reflection { class FieldInfo; }
 
-#define BINARYDESERIALIZATION_OBJECTFIELDMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x1A637C30)
+#define BINARYDESERIALIZATION_OBJECTFIELDMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABE2E40)
 
-inline static constexpr unsigned int BinaryDeserialization_ObjectFieldMap_TypeDefinitionIndex = 30176;
+inline static constexpr unsigned int BinaryDeserialization_ObjectFieldMap_TypeDefinitionIndex = 31129;
 
 class BinaryDeserialization_ObjectFieldMap : public ::System::Object
 {
 public:
-	::System::Object* obj; // 0x10
-	::System::Reflection::FieldInfo* fieldInfo; // 0x18
+	::System::Reflection::FieldInfo* fieldInfo; // 0x10
+	::System::Object* obj; // 0x18
 
 	::System::Void _ctor(::System::Object* o, ::System::Reflection::FieldInfo* f)
 	{

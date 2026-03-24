@@ -6,7 +6,7 @@ namespace UnityEngine::EventSystems { class AxisEventData; }
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnMoveHandler_TypeDefinitionIndex = 27336;
+	inline static constexpr unsigned int IAsyncOnMoveHandler_TypeDefinitionIndex = 28276;
 
 	class IAsyncOnMoveHandler
 	{

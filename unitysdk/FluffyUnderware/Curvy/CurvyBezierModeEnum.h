@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int CurvyBezierModeEnum_TypeDefinitionIndex = 35616;
+	inline static constexpr unsigned int CurvyBezierModeEnum_TypeDefinitionIndex = 36636;
 
 	enum class CurvyBezierModeEnum : ::System::Int32
 	{

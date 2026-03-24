@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_267;
+class Class_2_208CC9941471731A_539;
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A0FA00)
-#define MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A0FA40)
-#define MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__ONUIOPEN_B__6_0_OFFSET UNITYSDK_OFFSET(0x9A0FA50)
+#define MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB6F68B0)
+#define MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB6F68F0)
+#define MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__ONUIOPEN_B__6_0_OFFSET UNITYSDK_OFFSET(0xB6F6900)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISocialCircleTagDialogPopWindowController___c_TypeDefinitionIndex = 37619;
+	inline static constexpr unsigned int UISocialCircleTagDialogPopWindowController___c_TypeDefinitionIndex = 39425;
 
 	class UISocialCircleTagDialogPopWindowController___c : public ::System::Object
 	{
 	public:
+		static ::System::Func_2<::System::Int32, ::Class_2_208CC9941471731A_539*>** StaticGet___9__6_0()
+		{
+			return (::System::Func_2<::System::Int32, ::Class_2_208CC9941471731A_539*>**)Il2CppClass::FromTypeDefinitionIndex(UISocialCircleTagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2E8C0);
+		}
 		static ::MoleMole::UISocialCircleTagDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISocialCircleTagDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISocialCircleTagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2D440);
-		}
-		static ::System::Func_2<::System::Int32, ::Class_2_208CC9941471731A_267*>** StaticGet___9__6_0()
-		{
-			return (::System::Func_2<::System::Int32, ::Class_2_208CC9941471731A_267*>**)Il2CppClass::FromTypeDefinitionIndex(UISocialCircleTagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2D448);
+			return (::MoleMole::UISocialCircleTagDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UISocialCircleTagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2E8C8);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +35,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::Class_2_208CC9941471731A_267* _OnUIOpen_b__6_0(::System::Int32 value)
+		::Class_2_208CC9941471731A_539* _OnUIOpen_b__6_0(::System::Int32 value)
 		{
-			return ((::Class_2_208CC9941471731A_267*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__ONUIOPEN_B__6_0_OFFSET))(this, value);
+			return ((::Class_2_208CC9941471731A_539*(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UISOCIALCIRCLETAGDIALOGPOPWINDOWCONTROLLER___C__ONUIOPEN_B__6_0_OFFSET))(this, value);
 		}
 	};
 }

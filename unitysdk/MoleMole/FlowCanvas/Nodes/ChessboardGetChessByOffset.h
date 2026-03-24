@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardPureFunctionNode_3.h"
 #include "unitysdk/MoleMole/Vector2Int.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYOFFSET_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC71C00)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYOFFSET__CTOR_OFFSET UNITYSDK_OFFSET(0xEC71EA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYOFFSET_INVOKE_OFFSET UNITYSDK_OFFSET(0x75706F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDGETCHESSBYOFFSET__CTOR_OFFSET UNITYSDK_OFFSET(0x7570990)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardGetChessByOffset_TypeDefinitionIndex = 77709;
+	inline static constexpr unsigned int ChessboardGetChessByOffset_TypeDefinitionIndex = 60272;
 
 	class ChessboardGetChessByOffset : public ::MoleMole::FlowCanvas::ChessboardPureFunctionNode_3<::System::Int32, ::System::Int32, ::MoleMole::Vector2Int>
 	{

@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIFISHINGCONTESTLEVELWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBF92A60)
-#define MOLEMOLE_UIFISHINGCONTESTLEVELWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBF92AA0)
-#define MOLEMOLE_UIFISHINGCONTESTLEVELWIDGETCONTROLLER___C__PLAYLEVELUPANIMATION_B__15_1_OFFSET UNITYSDK_OFFSET(0xBF92AB0)
+#define MOLEMOLE_UIFISHINGCONTESTLEVELWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9BCDAD0)
+#define MOLEMOLE_UIFISHINGCONTESTLEVELWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9BCDB10)
+#define MOLEMOLE_UIFISHINGCONTESTLEVELWIDGETCONTROLLER___C__PLAYLEVELUPANIMATION_B__15_1_OFFSET UNITYSDK_OFFSET(0x9BCDB20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFishingContestLevelWidgetController___c_TypeDefinitionIndex = 55299;
+	inline static constexpr unsigned int UIFishingContestLevelWidgetController___c_TypeDefinitionIndex = 45770;
 
 	class UIFishingContestLevelWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIFishingContestLevelWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIFishingContestLevelWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFishingContestLevelWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2D000);
+			return (::MoleMole::UIFishingContestLevelWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFishingContestLevelWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E400);
 		}
 		static ::System::Action** StaticGet___9__15_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFishingContestLevelWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2D008);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFishingContestLevelWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E408);
 		}
 
 		static ::System::Void _cctor()

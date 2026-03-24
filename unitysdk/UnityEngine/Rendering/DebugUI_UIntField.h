@@ -4,19 +4,19 @@
 
 namespace System { template <typename T> class Func_1; }
 
-#define UNITYENGINE_RENDERING_DEBUGUI_UINTFIELD_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x1843F410)
-#define UNITYENGINE_RENDERING_DEBUGUI_UINTFIELD__CTOR_OFFSET UNITYSDK_OFFSET(0x1843F4B0)
-#define UNITYENGINE_RENDERING_DEBUGUI_UINTFIELD___BASE_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x1843F4C0)
+#define UNITYENGINE_RENDERING_DEBUGUI_UINTFIELD_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x18A44610)
+#define UNITYENGINE_RENDERING_DEBUGUI_UINTFIELD__CTOR_OFFSET UNITYSDK_OFFSET(0x18A446B0)
+#define UNITYENGINE_RENDERING_DEBUGUI_UINTFIELD___BASE_VALIDATEVALUE_OFFSET UNITYSDK_OFFSET(0x18A446C0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DebugUI_UIntField_TypeDefinitionIndex = 9541;
+	inline static constexpr unsigned int DebugUI_UIntField_TypeDefinitionIndex = 9543;
 
 	class DebugUI_UIntField : public ::UnityEngine::Rendering::DebugUI_Field_1<::System::UInt32>
 	{
 	public:
-		::System::Func_1<::System::UInt32>* max; // 0x50
-		::System::Func_1<::System::UInt32>* min; // 0x58
+		::System::Func_1<::System::UInt32>* min; // 0x50
+		::System::Func_1<::System::UInt32>* max; // 0x58
 		::System::UInt32 incStep; // 0x60
 		::System::UInt32 intStepMult; // 0x64
 

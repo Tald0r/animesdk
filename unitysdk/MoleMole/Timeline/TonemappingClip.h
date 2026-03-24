@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class TonemappingBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_TONEMAPPINGCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xBD682E0)
-#define MOLEMOLE_TIMELINE_TONEMAPPINGCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xBD682D0)
-#define MOLEMOLE_TIMELINE_TONEMAPPINGCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xBD684E0)
+#define MOLEMOLE_TIMELINE_TONEMAPPINGCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xBEF8C70)
+#define MOLEMOLE_TIMELINE_TONEMAPPINGCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xBEF8C60)
+#define MOLEMOLE_TIMELINE_TONEMAPPINGCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xBEF8E70)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int TonemappingClip_TypeDefinitionIndex = 75972;
+	inline static constexpr unsigned int TonemappingClip_TypeDefinitionIndex = 80588;
 
 	class TonemappingClip : public ::UnityEngine::Playables::PlayableAsset
 	{

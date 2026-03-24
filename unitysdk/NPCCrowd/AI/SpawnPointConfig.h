@@ -5,11 +5,11 @@
 namespace NPCCrowd::AI { class SpawnPointGroup; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_AI_SPAWNPOINTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7EEFB80)
+#define NPCCROWD_AI_SPAWNPOINTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6B9E570)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int SpawnPointConfig_TypeDefinitionIndex = 55102;
+	inline static constexpr unsigned int SpawnPointConfig_TypeDefinitionIndex = 45980;
 
 	class SpawnPointConfig : public ::System::Object
 	{

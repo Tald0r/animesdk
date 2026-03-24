@@ -4,12 +4,12 @@
 
 class Class_3_10F339609BE79763_1;
 
-#define MOLEMOLE_SURFLOGSUBSYSTEM___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x99474D0)
-#define MOLEMOLE_SURFLOGSUBSYSTEM___C__DISPLAYCLASS4_0__RECORDITEM_B__0_OFFSET UNITYSDK_OFFSET(0x99474E0)
+#define MOLEMOLE_SURFLOGSUBSYSTEM___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC7DA210)
+#define MOLEMOLE_SURFLOGSUBSYSTEM___C__DISPLAYCLASS4_0__RECORDITEM_B__0_OFFSET UNITYSDK_OFFSET(0xC7DA220)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SurfLogSubsystem___c__DisplayClass4_0_TypeDefinitionIndex = 55672;
+	inline static constexpr unsigned int SurfLogSubsystem___c__DisplayClass4_0_TypeDefinitionIndex = 54502;
 
 	class SurfLogSubsystem___c__DisplayClass4_0 : public ::System::Object
 	{

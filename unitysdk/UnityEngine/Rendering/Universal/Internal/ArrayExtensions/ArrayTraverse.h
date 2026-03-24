@@ -4,18 +4,18 @@
 
 namespace System { class Array; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ARRAYEXTENSIONS_ARRAYTRAVERSE_STEP_OFFSET UNITYSDK_OFFSET(0x16F629A0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ARRAYEXTENSIONS_ARRAYTRAVERSE__CTOR_OFFSET UNITYSDK_OFFSET(0x16F627A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ARRAYEXTENSIONS_ARRAYTRAVERSE_STEP_OFFSET UNITYSDK_OFFSET(0x17636C40)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ARRAYEXTENSIONS_ARRAYTRAVERSE__CTOR_OFFSET UNITYSDK_OFFSET(0x17636A40)
 
 namespace UnityEngine::Rendering::Universal::Internal::ArrayExtensions
 {
-	inline static constexpr unsigned int ArrayTraverse_TypeDefinitionIndex = 29072;
+	inline static constexpr unsigned int ArrayTraverse_TypeDefinitionIndex = 30025;
 
 	class ArrayTraverse : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Int32>* maxLengths; // 0x10
-		::Il2CppArray<::System::Int32>* Position; // 0x18
+		::Il2CppArray<::System::Int32>* Position; // 0x10
+		::Il2CppArray<::System::Int32>* maxLengths; // 0x18
 
 		::System::Void _ctor(::System::Array* array)
 		{

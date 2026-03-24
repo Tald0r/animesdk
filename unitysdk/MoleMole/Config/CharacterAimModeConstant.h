@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CHARACTERAIMMODECONSTANT_METHOD_1_C5F9823D509784CD_OFFSET UNITYSDK_OFFSET(0xCC8B650)
-#define MOLEMOLE_CONFIG_CHARACTERAIMMODECONSTANT__CTOR_OFFSET UNITYSDK_OFFSET(0xCC8B620)
+#define MOLEMOLE_CONFIG_CHARACTERAIMMODECONSTANT_METHOD_1_C5F9823D509784CD_OFFSET UNITYSDK_OFFSET(0xACB9560)
+#define MOLEMOLE_CONFIG_CHARACTERAIMMODECONSTANT__CTOR_OFFSET UNITYSDK_OFFSET(0xACB9530)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CharacterAimModeConstant_TypeDefinitionIndex = 49246;
+	inline static constexpr unsigned int CharacterAimModeConstant_TypeDefinitionIndex = 50959;
 
 	class CharacterAimModeConstant : public ::System::Object
 	{

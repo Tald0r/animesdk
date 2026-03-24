@@ -5,22 +5,22 @@
 namespace MoleMole { class UIMusicGameGeneralCalibrationPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB7A3D0)
-#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__SWITCHSTAGE_B__0_OFFSET UNITYSDK_OFFSET(0xAB7A3E0)
-#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__SWITCHSTAGE_B__1_OFFSET UNITYSDK_OFFSET(0xAB7A480)
-#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__SWITCHSTAGE_B__2_OFFSET UNITYSDK_OFFSET(0xAB7A630)
+#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA22AE10)
+#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__SWITCHSTAGE_B__0_OFFSET UNITYSDK_OFFSET(0xA22AE20)
+#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__SWITCHSTAGE_B__1_OFFSET UNITYSDK_OFFSET(0xA22AEC0)
+#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONPAGECONTROLLER___C__DISPLAYCLASS14_0__SWITCHSTAGE_B__2_OFFSET UNITYSDK_OFFSET(0xA22B070)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicGameGeneralCalibrationPageController___c__DisplayClass14_0_TypeDefinitionIndex = 50530;
+	inline static constexpr unsigned int UIMusicGameGeneralCalibrationPageController___c__DisplayClass14_0_TypeDefinitionIndex = 42562;
 
 	class UIMusicGameGeneralCalibrationPageController___c__DisplayClass14_0 : public ::System::Object
 	{
 	public:
-		::System::Action* onCompletelyBlackCallback; // 0x10
-		::System::Action* __9__2; // 0x18
-		::System::Action* __9__1; // 0x20
-		::MoleMole::UIMusicGameGeneralCalibrationPageController* __4__this; // 0x28
+		::System::Action* __9__2; // 0x10
+		::System::Action* onCompletelyBlackCallback; // 0x18
+		::MoleMole::UIMusicGameGeneralCalibrationPageController* __4__this; // 0x20
+		::System::Action* __9__1; // 0x28
 
 		::System::Void _ctor()
 		{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_F38CDF01078C7A80_METHOD_1_797B0DC3D00A8877_1_OFFSET UNITYSDK_OFFSET(0x8902F80)
-#define CLASS_1_F38CDF01078C7A80_METHOD_1_797B0DC3D00A8877_OFFSET UNITYSDK_OFFSET(0x8902F20)
-#define CLASS_1_F38CDF01078C7A80__CTOR_OFFSET UNITYSDK_OFFSET(0x8902F10)
+#define CLASS_1_F38CDF01078C7A80_METHOD_1_797B0DC3D00A8877_1_OFFSET UNITYSDK_OFFSET(0x92F8C70)
+#define CLASS_1_F38CDF01078C7A80_METHOD_1_797B0DC3D00A8877_OFFSET UNITYSDK_OFFSET(0x92F8C10)
+#define CLASS_1_F38CDF01078C7A80__CTOR_OFFSET UNITYSDK_OFFSET(0x92F8C00)
 
-inline static constexpr unsigned int Class_1_F38CDF01078C7A80_TypeDefinitionIndex = 54284;
+inline static constexpr unsigned int Class_1_F38CDF01078C7A80_TypeDefinitionIndex = 77814;
 
 class Class_1_F38CDF01078C7A80 : public ::System::Object
 {
@@ -46,6 +46,7 @@ public:
 	// static const ::System::Int32 Field_1_32 = 0x18A50; // 0x0
 	// static const ::System::Int32 Field_1_33 = 0x1B6; // 0x0
 	// static const ::System::Int32 Field_1_34 = 0x2C0; // 0x0
+	// static const ::System::Int32 Field_1_35 = 0x1B6; // 0x0
 
 	::System::Void _ctor()
 	{

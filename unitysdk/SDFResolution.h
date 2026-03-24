@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int SDFResolution_TypeDefinitionIndex = 28136;
+inline static constexpr unsigned int SDFResolution_TypeDefinitionIndex = 29076;
 
 enum class SDFResolution : ::System::Int32
 {

@@ -5,12 +5,12 @@
 namespace MoleMole { class UICinemaSinglePlayWidgetController; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS70_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA52A630)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GENERATEBADBUBBLECONTEXT_B__0_OFFSET UNITYSDK_OFFSET(0xA52A640)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS70_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADC16A0)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS70_0__GENERATEBADBUBBLECONTEXT_B__0_OFFSET UNITYSDK_OFFSET(0xADC16B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass70_0_TypeDefinitionIndex = 64971;
+	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass70_0_TypeDefinitionIndex = 38061;
 
 	class UICinemaSinglePlayWidgetController___c__DisplayClass70_0 : public ::System::Object
 	{

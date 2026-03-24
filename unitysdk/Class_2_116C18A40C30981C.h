@@ -11,28 +11,28 @@ namespace MoleMole { class UIGeneralRewardListBtnWidgetController; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_116C18A40C30981C_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0xD771900)
-#define CLASS_2_116C18A40C30981C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD771A80)
-#define CLASS_2_116C18A40C30981C_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0xD771660)
-#define CLASS_2_116C18A40C30981C__CTOR_OFFSET UNITYSDK_OFFSET(0xD771A70)
+#define CLASS_2_116C18A40C30981C_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0x83D7AB0)
+#define CLASS_2_116C18A40C30981C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x83D7C30)
+#define CLASS_2_116C18A40C30981C_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x83D7810)
+#define CLASS_2_116C18A40C30981C__CTOR_OFFSET UNITYSDK_OFFSET(0x83D7C20)
 
-inline static constexpr unsigned int Class_2_116C18A40C30981C_TypeDefinitionIndex = 66133;
+inline static constexpr unsigned int Class_2_116C18A40C30981C_TypeDefinitionIndex = 72173;
 
 class Class_2_116C18A40C30981C : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_9; // 0x20
-	::MonoUITableScrollV2* Field_2_5; // 0x28
-	::UnityEngine::Animation* Field_2_0; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x40
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x48
+	::MonoUITableScrollV2* Field_2_5; // 0x18
+	::Class_2_60DDD9C206686F44* Field_2_8; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
+	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x30
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_9; // 0x40
+	::UnityEngine::Animation* Field_2_0; // 0x48
 	::UnityEngine::Transform* Field_2_2; // 0x50
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralRewardListBtnWidgetController*>* Field_2_6; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x60
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x58
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralRewardListBtnWidgetController*>* Field_2_6; // 0x60
 
 	::System::Void _ctor()
 	{

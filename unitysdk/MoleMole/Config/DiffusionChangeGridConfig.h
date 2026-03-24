@@ -4,7 +4,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int DiffusionChangeGridConfig_TypeDefinitionIndex = 55083;
+	inline static constexpr unsigned int DiffusionChangeGridConfig_TypeDefinitionIndex = 78332;
 
 	struct alignas(4) DiffusionChangeGridConfig
 	{

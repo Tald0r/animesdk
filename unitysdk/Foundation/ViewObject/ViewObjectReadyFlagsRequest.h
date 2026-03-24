@@ -3,11 +3,11 @@
 #include "unitysdk/Foundation/ViewObject/EViewObjectComponentFeatureEvent.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTREADYFLAGSREQUEST_EQUALS_OFFSET UNITYSDK_OFFSET(0x332090)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTREADYFLAGSREQUEST_EQUALS_OFFSET UNITYSDK_OFFSET(0x391400)
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectReadyFlagsRequest_TypeDefinitionIndex = 43916;
+	inline static constexpr unsigned int ViewObjectReadyFlagsRequest_TypeDefinitionIndex = 38138;
 
 	struct alignas(4) ViewObjectReadyFlagsRequest
 	{

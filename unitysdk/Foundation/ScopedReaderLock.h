@@ -6,7 +6,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ScopedReaderLock_TypeDefinitionIndex = 8853;
+	inline static constexpr unsigned int ScopedReaderLock_TypeDefinitionIndex = 9096;
 
 	class ScopedReaderLock : public ::System::Object
 	{

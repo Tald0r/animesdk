@@ -9,15 +9,15 @@ namespace MoleMole::HollowChessboard { class HollowEntity; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_23BBA11A2EB8E89D_OFFSET UNITYSDK_OFFSET(0xA6DBFE0)
-#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_2A202D88FC4C292F_OFFSET UNITYSDK_OFFSET(0xA6DC300)
-#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_32C8FC0DB2BB1DB5_OFFSET UNITYSDK_OFFSET(0xA6DC280)
-#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_37D0382D0C30A2DC_OFFSET UNITYSDK_OFFSET(0xA6DBBA0)
-#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_65D50051007BF6D1_OFFSET UNITYSDK_OFFSET(0xA6DBD10)
-#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_F52588958242F29E_OFFSET UNITYSDK_OFFSET(0xA6DBC30)
-#define CLASS_1_16EA9862B8D2E5C9__CTOR_OFFSET UNITYSDK_OFFSET(0xA6DBAB0)
+#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_23BBA11A2EB8E89D_OFFSET UNITYSDK_OFFSET(0x936A470)
+#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_2A202D88FC4C292F_OFFSET UNITYSDK_OFFSET(0x936A360)
+#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_32C8FC0DB2BB1DB5_OFFSET UNITYSDK_OFFSET(0x936A710)
+#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_37D0382D0C30A2DC_OFFSET UNITYSDK_OFFSET(0x936A3E0)
+#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_65D50051007BF6D1_OFFSET UNITYSDK_OFFSET(0x9369FB0)
+#define CLASS_1_16EA9862B8D2E5C9_METHOD_1_F52588958242F29E_OFFSET UNITYSDK_OFFSET(0x936A280)
+#define CLASS_1_16EA9862B8D2E5C9__CTOR_OFFSET UNITYSDK_OFFSET(0x9369EC0)
 
-inline static constexpr unsigned int Class_1_16EA9862B8D2E5C9_TypeDefinitionIndex = 42611;
+inline static constexpr unsigned int Class_1_16EA9862B8D2E5C9_TypeDefinitionIndex = 72342;
 
 class Class_1_16EA9862B8D2E5C9 : public ::System::Object
 {
@@ -31,19 +31,19 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9__CTOR_OFFSET))(this, a1);
 	}
 
-	::System::Int32 Method_1_37D0382D0C30A2DC()
-	{
-		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_37D0382D0C30A2DC_OFFSET))(this);
-	}
-
-	::System::Boolean Method_1_F52588958242F29E(::System::Int32 a1)
-	{
-		return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_F52588958242F29E_OFFSET))(this, a1);
-	}
-
 	::System::Boolean Method_1_65D50051007BF6D1(::System::Int32 a1, ::System::String* a2, ::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntity*>*& a3, ::System::String*& a4)
 	{
 		return ((::System::Boolean(*)(::PVOID, ::System::Int32, ::System::String*, ::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntity*>*&, ::System::String*&))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_65D50051007BF6D1_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::System::Collections::Generic::List_1<::System::Int32>* Method_1_2A202D88FC4C292F()
+	{
+		return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_2A202D88FC4C292F_OFFSET))(this);
+	}
+
+	::System::Int32 Method_1_37D0382D0C30A2DC()
+	{
+		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_37D0382D0C30A2DC_OFFSET))(this);
 	}
 
 	::System::Boolean Method_1_23BBA11A2EB8E89D(::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntity*>*& a1)
@@ -56,8 +56,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowChessboardUID, ::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowCell>*))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_32C8FC0DB2BB1DB5_OFFSET))(this, a1, a2);
 	}
 
-	::System::Collections::Generic::List_1<::System::Int32>* Method_1_2A202D88FC4C292F()
+	::System::Boolean Method_1_F52588958242F29E(::System::Int32 a1)
 	{
-		return ((::System::Collections::Generic::List_1<::System::Int32>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_2A202D88FC4C292F_OFFSET))(this);
+		return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_16EA9862B8D2E5C9_METHOD_1_F52588958242F29E_OFFSET))(this, a1);
 	}
 };

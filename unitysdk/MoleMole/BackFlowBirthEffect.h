@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_BACKFLOWBIRTHEFFECT_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xC309ED0)
-#define MOLEMOLE_BACKFLOWBIRTHEFFECT_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xC309EE0)
-#define MOLEMOLE_BACKFLOWBIRTHEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xC30A060)
+#define MOLEMOLE_BACKFLOWBIRTHEFFECT_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x9B92410)
+#define MOLEMOLE_BACKFLOWBIRTHEFFECT_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x9B92420)
+#define MOLEMOLE_BACKFLOWBIRTHEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x9B925A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BackFlowBirthEffect_TypeDefinitionIndex = 50758;
+	inline static constexpr unsigned int BackFlowBirthEffect_TypeDefinitionIndex = 80488;
 
 	class BackFlowBirthEffect : public ::MoleMole::DisplayMessageBase
 	{

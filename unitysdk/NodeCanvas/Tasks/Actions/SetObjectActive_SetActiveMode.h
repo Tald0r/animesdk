@@ -3,12 +3,12 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int SetObjectActive_SetActiveMode_TypeDefinitionIndex = 26860;
+	inline static constexpr unsigned int SetObjectActive_SetActiveMode_TypeDefinitionIndex = 27320;
 
 	enum class SetObjectActive_SetActiveMode : ::System::Int32
 	{
+		Deactivate = 0,
 		Toggle = 2,
 		Activate = 1,
-		Deactivate = 0,
 	};
 }

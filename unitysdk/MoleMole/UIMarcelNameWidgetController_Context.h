@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 #include "unitysdk/MoleMole/UIMarcelNameWidgetController_Display.h"
 
-#define MOLEMOLE_UIMARCELNAMEWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB243360)
+#define MOLEMOLE_UIMARCELNAMEWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7478210)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMarcelNameWidgetController_Context_TypeDefinitionIndex = 63865;
+	inline static constexpr unsigned int UIMarcelNameWidgetController_Context_TypeDefinitionIndex = 53783;
 
 	class UIMarcelNameWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

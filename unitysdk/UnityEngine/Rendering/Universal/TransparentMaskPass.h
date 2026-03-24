@@ -12,32 +12,32 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19B2A890)
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19B2B740)
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_GET_MAT_OFFSET UNITYSDK_OFFSET(0x19B2A760)
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x19B2A840)
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19B2B820)
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19B2A790)
-#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19B2B880)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19EDD790)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19EDE640)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_GET_MAT_OFFSET UNITYSDK_OFFSET(0x19EDD660)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x19EDD740)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19EDE720)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19EDD690)
+#define UNITYENGINE_RENDERING_UNIVERSAL_TRANSPARENTMASKPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19EDE780)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int TransparentMaskPass_TypeDefinitionIndex = 28742;
+	inline static constexpr unsigned int TransparentMaskPass_TypeDefinitionIndex = 29688;
 
 	class TransparentMaskPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::System::Int32* StaticGet__OffScreenParticlesRT()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TransparentMaskPass_TypeDefinitionIndex)->GetStaticField(0x6B70);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TransparentMaskPass_TypeDefinitionIndex)->GetStaticField(0x72C0);
 		}
 		static ::System::Int32* StaticGet__CameraNormalTexture()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TransparentMaskPass_TypeDefinitionIndex)->GetStaticField(0x6B74);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TransparentMaskPass_TypeDefinitionIndex)->GetStaticField(0x72C4);
 		}
 		static ::System::Int32* StaticGet__GBuffer3SizeAndInvSize()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TransparentMaskPass_TypeDefinitionIndex)->GetStaticField(0x6B78);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TransparentMaskPass_TypeDefinitionIndex)->GetStaticField(0x72C8);
 		}
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_Sampler; // 0xA8
 		::System::Boolean m_UseOffScreenParticles; // 0xB0

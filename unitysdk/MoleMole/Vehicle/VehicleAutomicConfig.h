@@ -8,7 +8,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Vehicle
 {
-	inline static constexpr unsigned int VehicleAutomicConfig_TypeDefinitionIndex = 78793;
+	inline static constexpr unsigned int VehicleAutomicConfig_TypeDefinitionIndex = 71857;
 
 	struct alignas(8) VehicleAutomicConfig
 	{

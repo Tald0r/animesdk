@@ -9,7 +9,7 @@ namespace Sirenix::Serialization { class IDataWriter; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int EmptyList_1_EmptyList_1_UnityGeneratedFormatter_TypeDefinitionIndex = 68324;
+	inline static constexpr unsigned int EmptyList_1_EmptyList_1_UnityGeneratedFormatter_TypeDefinitionIndex = 43506;
 
 	template <typename T>
 	class EmptyList_1_EmptyList_1_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::EmptyList_1<T>*>

@@ -3,7 +3,7 @@
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int EMoveBehaviours_TypeDefinitionIndex = 69341;
+	inline static constexpr unsigned int EMoveBehaviours_TypeDefinitionIndex = 60873;
 
 	enum class EMoveBehaviours : ::System::Int32
 	{

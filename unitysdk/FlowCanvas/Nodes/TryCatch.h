@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
 
-#define FLOWCANVAS_NODES_TRYCATCH_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19FE9B20)
-#define FLOWCANVAS_NODES_TRYCATCH__CTOR_OFFSET UNITYSDK_OFFSET(0x19FE9C00)
+#define FLOWCANVAS_NODES_TRYCATCH_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A602BC0)
+#define FLOWCANVAS_NODES_TRYCATCH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A602CA0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int TryCatch_TypeDefinitionIndex = 26798;
+	inline static constexpr unsigned int TryCatch_TypeDefinitionIndex = 26103;
 
 	class TryCatch : public ::FlowCanvas::Nodes::FlowControlNode
 	{

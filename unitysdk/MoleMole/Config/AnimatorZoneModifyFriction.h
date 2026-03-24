@@ -9,26 +9,26 @@ class Class_1_BDDDDB46A99CFF4C;
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x803B330)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x803B680)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION__CTOR_OFFSET UNITYSDK_OFFSET(0x803B9C0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION___BASE_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x803B9D0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION___BASE_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x803BA60)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x9CEDCF0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x9CEE040)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION__CTOR_OFFSET UNITYSDK_OFFSET(0x9CEE380)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION___BASE_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x9CEE390)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMODIFYFRICTION___BASE_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x9CEE420)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneModifyFriction_TypeDefinitionIndex = 76839;
+	inline static constexpr unsigned int AnimatorZoneModifyFriction_TypeDefinitionIndex = 59113;
 
 	class AnimatorZoneModifyFriction : public ::MoleMole::Config::AnimatorZone
 	{
 	public:
 		// static const ::System::String* DefaultControlTag; // 0x0
 		::System::String* Tag; // 0x50
-		::System::Boolean isOverrideFrictionType; // 0x58
-		::System::Single StaticFriction; // 0x5C
-		::MoleMole::Config::AnimatorZoneModifyFriction_ColliderType ColliderKind; // 0x60
-		::System::Single DynamicFriction; // 0x64
-		::UnityEngine::PhysicMaterialCombine overrideFrictionCombine; // 0x68
+		::UnityEngine::PhysicMaterialCombine overrideFrictionCombine; // 0x58
+		::System::Boolean isOverrideFrictionType; // 0x5C
+		::System::Single DynamicFriction; // 0x60
+		::MoleMole::Config::AnimatorZoneModifyFriction_ColliderType ColliderKind; // 0x64
+		::System::Single StaticFriction; // 0x68
 
 		::System::Void _ctor()
 		{

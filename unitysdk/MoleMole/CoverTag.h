@@ -7,13 +7,13 @@
 namespace MoleMole { class SharedGameEntity; }
 namespace System { class String; }
 
-#define MOLEMOLE_COVERTAG_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xE0D82E0)
-#define MOLEMOLE_COVERTAG__CTOR_OFFSET UNITYSDK_OFFSET(0xE0D87C0)
-#define MOLEMOLE_COVERTAG___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xE0D8800)
+#define MOLEMOLE_COVERTAG_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x10ABF4F0)
+#define MOLEMOLE_COVERTAG__CTOR_OFFSET UNITYSDK_OFFSET(0x10ABF9D0)
+#define MOLEMOLE_COVERTAG___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x10ABFA10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CoverTag_TypeDefinitionIndex = 63820;
+	inline static constexpr unsigned int CoverTag_TypeDefinitionIndex = 42495;
 
 	class CoverTag : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{

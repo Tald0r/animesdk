@@ -4,9 +4,9 @@
 
 namespace System { class String; }
 
-#define MONOVHSSTOREWIDGET03CONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xEE72500)
+#define MONOVHSSTOREWIDGET03CONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xAA99430)
 
-inline static constexpr unsigned int MonoVHSStoreWidget03Config_TypeDefinitionIndex = 76420;
+inline static constexpr unsigned int MonoVHSStoreWidget03Config_TypeDefinitionIndex = 38946;
 
 class MonoVHSStoreWidget03Config : public ::UnityEngine::MonoBehaviour
 {

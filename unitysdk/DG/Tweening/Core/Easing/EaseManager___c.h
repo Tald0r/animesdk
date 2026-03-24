@@ -4,199 +4,199 @@
 
 namespace DG::Tweening { class EaseFunction; }
 
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B105DE0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B105E20)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B105E30)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_10_OFFSET UNITYSDK_OFFSET(0x1B106010)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_11_OFFSET UNITYSDK_OFFSET(0x1B106030)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_12_OFFSET UNITYSDK_OFFSET(0x1B106060)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_13_OFFSET UNITYSDK_OFFSET(0x1B1060C0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_14_OFFSET UNITYSDK_OFFSET(0x1B1060E0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_15_OFFSET UNITYSDK_OFFSET(0x1B106110)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_16_OFFSET UNITYSDK_OFFSET(0x1B106180)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_17_OFFSET UNITYSDK_OFFSET(0x1B1061D0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_18_OFFSET UNITYSDK_OFFSET(0x1B106220)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_19_OFFSET UNITYSDK_OFFSET(0x1B1062D0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_1_OFFSET UNITYSDK_OFFSET(0x1B105E40)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_20_OFFSET UNITYSDK_OFFSET(0x1B106310)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_21_OFFSET UNITYSDK_OFFSET(0x1B106340)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_22_OFFSET UNITYSDK_OFFSET(0x1B1063D0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_23_OFFSET UNITYSDK_OFFSET(0x1B106540)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_24_OFFSET UNITYSDK_OFFSET(0x1B1066A0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_25_OFFSET UNITYSDK_OFFSET(0x1B1068B0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_26_OFFSET UNITYSDK_OFFSET(0x1B1068E0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_27_OFFSET UNITYSDK_OFFSET(0x1B106910)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_28_OFFSET UNITYSDK_OFFSET(0x1B106990)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_29_OFFSET UNITYSDK_OFFSET(0x1B106A70)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_2_OFFSET UNITYSDK_OFFSET(0x1B105E80)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_30_OFFSET UNITYSDK_OFFSET(0x1B106B10)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_31_OFFSET UNITYSDK_OFFSET(0x1B106D00)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_32_OFFSET UNITYSDK_OFFSET(0x1B106D20)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_33_OFFSET UNITYSDK_OFFSET(0x1B106D40)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_34_OFFSET UNITYSDK_OFFSET(0x1B106D60)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_35_OFFSET UNITYSDK_OFFSET(0x1B106D80)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_3_OFFSET UNITYSDK_OFFSET(0x1B105EB0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_4_OFFSET UNITYSDK_OFFSET(0x1B105EF0)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_5_OFFSET UNITYSDK_OFFSET(0x1B105F00)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_6_OFFSET UNITYSDK_OFFSET(0x1B105F20)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_7_OFFSET UNITYSDK_OFFSET(0x1B105F80)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_8_OFFSET UNITYSDK_OFFSET(0x1B105F90)
-#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_9_OFFSET UNITYSDK_OFFSET(0x1B105FB0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B71D8D0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B71D910)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B71D920)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_10_OFFSET UNITYSDK_OFFSET(0x1B71DB00)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_11_OFFSET UNITYSDK_OFFSET(0x1B71DB20)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_12_OFFSET UNITYSDK_OFFSET(0x1B71DB50)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_13_OFFSET UNITYSDK_OFFSET(0x1B71DBB0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_14_OFFSET UNITYSDK_OFFSET(0x1B71DBD0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_15_OFFSET UNITYSDK_OFFSET(0x1B71DC00)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_16_OFFSET UNITYSDK_OFFSET(0x1B71DC70)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_17_OFFSET UNITYSDK_OFFSET(0x1B71DCC0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_18_OFFSET UNITYSDK_OFFSET(0x1B71DD10)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_19_OFFSET UNITYSDK_OFFSET(0x1B71DDC0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_1_OFFSET UNITYSDK_OFFSET(0x1B71D930)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_20_OFFSET UNITYSDK_OFFSET(0x1B71DE00)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_21_OFFSET UNITYSDK_OFFSET(0x1B71DE30)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_22_OFFSET UNITYSDK_OFFSET(0x1B71DEC0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_23_OFFSET UNITYSDK_OFFSET(0x1B71E030)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_24_OFFSET UNITYSDK_OFFSET(0x1B71E190)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_25_OFFSET UNITYSDK_OFFSET(0x1B71E3A0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_26_OFFSET UNITYSDK_OFFSET(0x1B71E3D0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_27_OFFSET UNITYSDK_OFFSET(0x1B71E400)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_28_OFFSET UNITYSDK_OFFSET(0x1B71E480)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_29_OFFSET UNITYSDK_OFFSET(0x1B71E560)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_2_OFFSET UNITYSDK_OFFSET(0x1B71D970)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_30_OFFSET UNITYSDK_OFFSET(0x1B71E600)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_31_OFFSET UNITYSDK_OFFSET(0x1B71E7F0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_32_OFFSET UNITYSDK_OFFSET(0x1B71E810)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_33_OFFSET UNITYSDK_OFFSET(0x1B71E830)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_34_OFFSET UNITYSDK_OFFSET(0x1B71E850)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_35_OFFSET UNITYSDK_OFFSET(0x1B71E870)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_3_OFFSET UNITYSDK_OFFSET(0x1B71D9A0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_4_OFFSET UNITYSDK_OFFSET(0x1B71D9E0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_5_OFFSET UNITYSDK_OFFSET(0x1B71D9F0)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_6_OFFSET UNITYSDK_OFFSET(0x1B71DA10)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_7_OFFSET UNITYSDK_OFFSET(0x1B71DA70)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_8_OFFSET UNITYSDK_OFFSET(0x1B71DA80)
+#define DG_TWEENING_CORE_EASING_EASEMANAGER___C__TOEASEFUNCTION_B__4_9_OFFSET UNITYSDK_OFFSET(0x1B71DAA0)
 
 namespace DG::Tweening::Core::Easing
 {
-	inline static constexpr unsigned int EaseManager___c_TypeDefinitionIndex = 24174;
+	inline static constexpr unsigned int EaseManager___c_TypeDefinitionIndex = 24998;
 
 	class EaseManager___c : public ::System::Object
 	{
 	public:
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_33()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8C0);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_22()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8C8);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_23()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8D0);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_19()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8D8);
-		}
 		static ::DG::Tweening::EaseFunction** StaticGet___9__4_25()
 		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8E0);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_17()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8E8);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_14()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8F0);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_18()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D8F8);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_8()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D900);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_4()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D908);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_31()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D910);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_12()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D918);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_11()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D920);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_27()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D928);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_10()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D930);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_13()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D938);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_5()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D940);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_6()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D948);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_34()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D950);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_1()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D958);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_26()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D960);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_2()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D968);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_28()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D970);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_0()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D978);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_30()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D980);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_32()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D988);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_21()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D990);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_35()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D998);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_29()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9A0);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_24()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9A8);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_16()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9B0);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_3()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9B8);
-		}
-		static ::DG::Tweening::EaseFunction** StaticGet___9__4_7()
-		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9C0);
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E390);
 		}
 		static ::DG::Tweening::EaseFunction** StaticGet___9__4_9()
 		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9C8);
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E398);
 		}
-		static ::DG::Tweening::Core::Easing::EaseManager___c** StaticGet___9()
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_34()
 		{
-			return (::DG::Tweening::Core::Easing::EaseManager___c**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9D0);
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3A0);
 		}
 		static ::DG::Tweening::EaseFunction** StaticGet___9__4_15()
 		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9D8);
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3A8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_16()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3B0);
 		}
 		static ::DG::Tweening::EaseFunction** StaticGet___9__4_20()
 		{
-			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1D9E0);
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3B8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_10()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3C0);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_17()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3C8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_29()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3D0);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_31()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3D8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_12()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3E0);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_8()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3E8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_22()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3F0);
+		}
+		static ::DG::Tweening::Core::Easing::EaseManager___c** StaticGet___9()
+		{
+			return (::DG::Tweening::Core::Easing::EaseManager___c**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E3F8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_0()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E400);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_33()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E408);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_30()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E410);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_7()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E418);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_6()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E420);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_14()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E428);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_13()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E430);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_19()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E438);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_32()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E440);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_26()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E448);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_28()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E450);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_23()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E458);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_4()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E460);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_18()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E468);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_27()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E470);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_2()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E478);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_3()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E480);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_1()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E488);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_35()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E490);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_11()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E498);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_5()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E4A0);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_21()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E4A8);
+		}
+		static ::DG::Tweening::EaseFunction** StaticGet___9__4_24()
+		{
+			return (::DG::Tweening::EaseFunction**)Il2CppClass::FromTypeDefinitionIndex(EaseManager___c_TypeDefinitionIndex)->GetStaticField(0x1E4B0);
 		}
 
 		static ::System::Void _cctor()

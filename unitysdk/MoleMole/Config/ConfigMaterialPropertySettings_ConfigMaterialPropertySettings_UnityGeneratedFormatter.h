@@ -13,30 +13,30 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Material; }
 
-#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x13F97280)
-#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x13F97290)
-#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x13F97550)
-#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x13F97760)
-#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x13F97720)
+#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF2D0E20)
+#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF2D0E30)
+#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF2D10F0)
+#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF2D1300)
+#define MOLEMOLE_CONFIG_CONFIGMATERIALPROPERTYSETTINGS_CONFIGMATERIALPROPERTYSETTINGS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D12C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex = 57264;
+	inline static constexpr unsigned int ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex = 46569;
 
 	class ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigMaterialPropertySettings*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::System::String*>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEE0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::UnityEngine::Material*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::UnityEngine::Material*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEE8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::UnityEngine::Material*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EC10);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::MoleMole::Config::MatPropertySetting>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::MoleMole::Config::MatPropertySetting>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEF0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::MoleMole::Config::MatPropertySetting>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EC18);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::System::String*>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::MaterialPropertyType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertySettings_ConfigMaterialPropertySettings_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EC20);
 		}
 
 		::System::Void _ctor()

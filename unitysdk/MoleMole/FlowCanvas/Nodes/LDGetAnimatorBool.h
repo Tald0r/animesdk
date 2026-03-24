@@ -7,13 +7,13 @@ namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETANIMATORBOOL_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC9BCCA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETANIMATORBOOL__CTOR_OFFSET UNITYSDK_OFFSET(0xC9BCDC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETANIMATORBOOL__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xC9BCDE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETANIMATORBOOL_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xBA01690)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETANIMATORBOOL__CTOR_OFFSET UNITYSDK_OFFSET(0xBA017B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETANIMATORBOOL__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xBA017D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetAnimatorBool_TypeDefinitionIndex = 36454;
+	inline static constexpr unsigned int LDGetAnimatorBool_TypeDefinitionIndex = 61598;
 
 	class LDGetAnimatorBool : public ::FlowCanvas::Nodes::FlowControlNode
 	{

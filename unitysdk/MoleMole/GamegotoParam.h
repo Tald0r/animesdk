@@ -4,13 +4,13 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_GAMEGOTOPARAM_METHOD_1_0AF278B86D0A237C_OFFSET UNITYSDK_OFFSET(0x8B138D0)
-#define MOLEMOLE_GAMEGOTOPARAM_METHOD_1_4A0CFEBE0C9DF506_OFFSET UNITYSDK_OFFSET(0x8B13A50)
-#define MOLEMOLE_GAMEGOTOPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x8B138C0)
+#define MOLEMOLE_GAMEGOTOPARAM_METHOD_1_0AF278B86D0A237C_OFFSET UNITYSDK_OFFSET(0xB198AC0)
+#define MOLEMOLE_GAMEGOTOPARAM_METHOD_1_4A0CFEBE0C9DF506_OFFSET UNITYSDK_OFFSET(0xB198770)
+#define MOLEMOLE_GAMEGOTOPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xB198760)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GamegotoParam_TypeDefinitionIndex = 77009;
+	inline static constexpr unsigned int GamegotoParam_TypeDefinitionIndex = 41915;
 
 	class GamegotoParam : public ::System::Object
 	{
@@ -29,14 +29,14 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEGOTOPARAM__CTOR_OFFSET))(this);
 		}
 
-		static ::MoleMole::GamegotoParam* Method_1_0AF278B86D0A237C(::System::String* a1)
-		{
-			return ((::MoleMole::GamegotoParam*(*)(::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEGOTOPARAM_METHOD_1_0AF278B86D0A237C_OFFSET))(a1);
-		}
-
 		::System::Void Method_1_4A0CFEBE0C9DF506(::System::String* a1)
 		{
 			return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEGOTOPARAM_METHOD_1_4A0CFEBE0C9DF506_OFFSET))(this, a1);
+		}
+
+		static ::MoleMole::GamegotoParam* Method_1_0AF278B86D0A237C(::System::String* a1)
+		{
+			return ((::MoleMole::GamegotoParam*(*)(::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_GAMEGOTOPARAM_METHOD_1_0AF278B86D0A237C_OFFSET))(a1);
 		}
 	};
 }

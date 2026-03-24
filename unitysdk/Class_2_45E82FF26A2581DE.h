@@ -11,24 +11,24 @@ namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define CLASS_2_45E82FF26A2581DE_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0xE6F21B0)
-#define CLASS_2_45E82FF26A2581DE_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0xE6F2410)
-#define CLASS_2_45E82FF26A2581DE_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xE6F2590)
-#define CLASS_2_45E82FF26A2581DE__CTOR_OFFSET UNITYSDK_OFFSET(0xE6F2580)
+#define CLASS_2_45E82FF26A2581DE_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0x8E1A090)
+#define CLASS_2_45E82FF26A2581DE_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0x8E1A2F0)
+#define CLASS_2_45E82FF26A2581DE_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8E1A470)
+#define CLASS_2_45E82FF26A2581DE__CTOR_OFFSET UNITYSDK_OFFSET(0x8E1A460)
 
-inline static constexpr unsigned int Class_2_45E82FF26A2581DE_TypeDefinitionIndex = 62714;
+inline static constexpr unsigned int Class_2_45E82FF26A2581DE_TypeDefinitionIndex = 69613;
 
 class Class_2_45E82FF26A2581DE : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::NotificationBadge* Field_2_2; // 0x18
-	::Class_2_0D31A1661D004892<::Class_2_45E82FF26A2581DE_Class_2_CF8584E3AEFF65E2*>* Field_2_7; // 0x20
-	::Class_2_0D31A1661D004892<::Class_2_45E82FF26A2581DE_Class_2_CF8584E3AEFF65E2*>* Field_2_6; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x40
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x48
-	::UnityEngine::UI::Extension::UITabButton* Field_2_0; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x18
+	::MoleMole::NotificationBadge* Field_2_2; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x38
+	::Class_2_0D31A1661D004892<::Class_2_45E82FF26A2581DE_Class_2_CF8584E3AEFF65E2*>* Field_2_7; // 0x40
+	::UnityEngine::UI::Extension::UITabButton* Field_2_0; // 0x48
+	::Class_2_0D31A1661D004892<::Class_2_45E82FF26A2581DE_Class_2_CF8584E3AEFF65E2*>* Field_2_6; // 0x50
 
 	::System::Void _ctor()
 	{

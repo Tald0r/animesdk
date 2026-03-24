@@ -5,18 +5,18 @@
 class Class_1_80DF1DB3FC47B2D6;
 namespace MoleMole { class UIHandBookProxyQuestItemWidgetController; }
 
-#define MOLEMOLE_UIHANDBOOKPROXYQUESTITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x80995D0)
-#define MOLEMOLE_UIHANDBOOKPROXYQUESTITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__REFRESHBUTTON_B__2_OFFSET UNITYSDK_OFFSET(0x80995E0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC777D0)
+#define MOLEMOLE_UIHANDBOOKPROXYQUESTITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__REFRESHBUTTON_B__2_OFFSET UNITYSDK_OFFSET(0xAC777E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookProxyQuestItemWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 58616;
+	inline static constexpr unsigned int UIHandBookProxyQuestItemWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 79313;
 
 	class UIHandBookProxyQuestItemWidgetController___c__DisplayClass10_0 : public ::System::Object
 	{
 	public:
-		::Class_1_80DF1DB3FC47B2D6* accessData; // 0x10
-		::MoleMole::UIHandBookProxyQuestItemWidgetController* __4__this; // 0x18
+		::MoleMole::UIHandBookProxyQuestItemWidgetController* __4__this; // 0x10
+		::Class_1_80DF1DB3FC47B2D6* accessData; // 0x18
 
 		::System::Void _ctor()
 		{

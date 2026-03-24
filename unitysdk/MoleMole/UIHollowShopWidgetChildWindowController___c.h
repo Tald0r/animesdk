@@ -5,39 +5,39 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC078E80)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC078EC0)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REALGOTOSHOP_B__61_4_OFFSET UNITYSDK_OFFSET(0xC078ED0)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REFRESHGOODS_B__62_1_OFFSET UNITYSDK_OFFSET(0xC078EE0)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REFRESHGOODS_B__62_2_OFFSET UNITYSDK_OFFSET(0xC078EF0)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REFRESHGOODS_B__62_3_OFFSET UNITYSDK_OFFSET(0xC078F00)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8735F70)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8735FB0)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REALGOTOSHOP_B__61_4_OFFSET UNITYSDK_OFFSET(0x8735FC0)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REFRESHGOODS_B__62_1_OFFSET UNITYSDK_OFFSET(0x8735FD0)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REFRESHGOODS_B__62_2_OFFSET UNITYSDK_OFFSET(0x8735FE0)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__REFRESHGOODS_B__62_3_OFFSET UNITYSDK_OFFSET(0x8735FF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex = 75951;
+	inline static constexpr unsigned int UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex = 48588;
 
 	class UIHollowShopWidgetChildWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__61_4()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38CB0);
-		}
 		static ::MoleMole::UIHollowShopWidgetChildWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHollowShopWidgetChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38CB8);
-		}
-		static ::System::Action_1<::System::Boolean>** StaticGet___9__62_1()
-		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38CC0);
-		}
-		static ::System::Action_1<::System::Boolean>** StaticGet___9__62_3()
-		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38CC8);
+			return (::MoleMole::UIHollowShopWidgetChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8D0);
 		}
 		static ::System::Action_1<::System::Boolean>** StaticGet___9__62_2()
 		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38CD0);
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8D8);
+		}
+		static ::System::Action_1<::System::Boolean>** StaticGet___9__62_1()
+		{
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8E0);
+		}
+		static ::System::Action_1<::System::Boolean>** StaticGet___9__62_3()
+		{
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8E8);
+		}
+		static ::System::Action** StaticGet___9__61_4()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowShopWidgetChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8F0);
 		}
 
 		static ::System::Void _cctor()

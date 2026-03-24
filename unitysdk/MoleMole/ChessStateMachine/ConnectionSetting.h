@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CHESSSTATEMACHINE_CONNECTIONSETTING_GETTRANSITIONTIME_OFFSET UNITYSDK_OFFSET(0x89E38D0)
-#define MOLEMOLE_CHESSSTATEMACHINE_CONNECTIONSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x89E3930)
+#define MOLEMOLE_CHESSSTATEMACHINE_CONNECTIONSETTING_GETTRANSITIONTIME_OFFSET UNITYSDK_OFFSET(0x10A7C2B0)
+#define MOLEMOLE_CHESSSTATEMACHINE_CONNECTIONSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x10A7C310)
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int ConnectionSetting_TypeDefinitionIndex = 58284;
+	inline static constexpr unsigned int ConnectionSetting_TypeDefinitionIndex = 58467;
 
 	class ConnectionSetting : public ::System::Object
 	{

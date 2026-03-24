@@ -4,12 +4,12 @@
 
 namespace UnityEngine::XR::WSA { class WorldAnchor_OnTrackingChangedDelegate; }
 
-#define UNITYENGINE_XR_WSA_WORLDANCHOR_INTERNAL_TRIGGEREVENTONTRACKINGLOST_OFFSET UNITYSDK_OFFSET(0x1B1492A0)
-#define UNITYENGINE_XR_WSA_WORLDANCHOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B149280)
+#define UNITYENGINE_XR_WSA_WORLDANCHOR_INTERNAL_TRIGGEREVENTONTRACKINGLOST_OFFSET UNITYSDK_OFFSET(0x1B7672D0)
+#define UNITYENGINE_XR_WSA_WORLDANCHOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B7672B0)
 
 namespace UnityEngine::XR::WSA
 {
-	inline static constexpr unsigned int WorldAnchor_TypeDefinitionIndex = 8543;
+	inline static constexpr unsigned int WorldAnchor_TypeDefinitionIndex = 8554;
 
 	class WorldAnchor : public ::UnityEngine::Component
 	{

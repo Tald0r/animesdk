@@ -10,30 +10,30 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF1B2BC0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF1B2BD0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF1B2E90)
-#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF1B30A0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B3060)
+#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB98CA50)
+#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB98CA60)
+#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB98CD20)
+#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB98CF30)
+#define MOLEMOLE_GALGAME_MAINCITYCHATNPCENTERACTION_MAINCITYCHATNPCENTERACTION_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB98CEF0)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex = 57119;
+	inline static constexpr unsigned int MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex = 60048;
 
 	class MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::MainCityChatNPCEnterAction*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42410);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatNPCLocation>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatNPCLocation>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42418);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatNPCLocation>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42EC0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42EC8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42420);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatNPCEnterAction_MainCityChatNPCEnterAction_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42ED0);
 		}
 
 		::System::Void _ctor()

@@ -5,20 +5,20 @@
 
 namespace MoleMole { class UIPlayerSkinSwitchWidgetController; }
 
-#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9EAF460)
-#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS11_0__SWITCHTOSKIN_B__0_OFFSET UNITYSDK_OFFSET(0x9EAF470)
-#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS11_0__SWITCHTOSKIN_B__1_OFFSET UNITYSDK_OFFSET(0x9EAF480)
+#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB6D8550)
+#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS11_0__SWITCHTOSKIN_B__0_OFFSET UNITYSDK_OFFSET(0xB6D8560)
+#define MOLEMOLE_UIPLAYERSKINSWITCHWIDGETCONTROLLER___C__DISPLAYCLASS11_0__SWITCHTOSKIN_B__1_OFFSET UNITYSDK_OFFSET(0xB6D8570)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerSkinSwitchWidgetController___c__DisplayClass11_0_TypeDefinitionIndex = 59060;
+	inline static constexpr unsigned int UIPlayerSkinSwitchWidgetController___c__DisplayClass11_0_TypeDefinitionIndex = 45055;
 
 	class UIPlayerSkinSwitchWidgetController___c__DisplayClass11_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIPlayerSkinSwitchWidgetController* __4__this; // 0x10
-		::System::Int32 avatarID; // 0x18
-		::System::Int32 skinID; // 0x1C
+		::System::Int32 skinID; // 0x18
+		::System::Int32 avatarID; // 0x1C
 
 		::System::Void _ctor()
 		{

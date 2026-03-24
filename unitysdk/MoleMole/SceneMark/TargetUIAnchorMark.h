@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_SCENEMARK_TARGETUIANCHORMARK__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3DB60)
+#define MOLEMOLE_SCENEMARK_TARGETUIANCHORMARK__CTOR_OFFSET UNITYSDK_OFFSET(0x98539E0)
 
 namespace MoleMole::SceneMark
 {
-	inline static constexpr unsigned int TargetUIAnchorMark_TypeDefinitionIndex = 50977;
+	inline static constexpr unsigned int TargetUIAnchorMark_TypeDefinitionIndex = 59505;
 
 	class TargetUIAnchorMark : public ::MoleMole::SceneMark::SceneMarkData_1<::MoleMole::SceneMark::TargetUIAnchorMark*>
 	{

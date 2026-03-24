@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MONOTIMELINECAMERAEXTRAINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6060050)
+#define MONOTIMELINECAMERAEXTRAINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x7BF5240)
 
-inline static constexpr unsigned int MonoTimelineCameraExtraInfo_TypeDefinitionIndex = 40829;
+inline static constexpr unsigned int MonoTimelineCameraExtraInfo_TypeDefinitionIndex = 54882;
 
 class MonoTimelineCameraExtraInfo : public ::UnityEngine::MonoBehaviour
 {

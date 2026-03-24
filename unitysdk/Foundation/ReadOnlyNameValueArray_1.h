@@ -7,7 +7,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ReadOnlyNameValueArray_1_TypeDefinitionIndex = 9120;
+	inline static constexpr unsigned int ReadOnlyNameValueArray_1_TypeDefinitionIndex = 8881;
 
 	template <typename T>
 	struct ReadOnlyNameValueArray_1

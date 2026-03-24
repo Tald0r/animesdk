@@ -5,7 +5,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NativeMemoryRefEnumerator_1_TypeDefinitionIndex = 8790;
+	inline static constexpr unsigned int NativeMemoryRefEnumerator_1_TypeDefinitionIndex = 9024;
 
 	template <typename T>
 	struct NativeMemoryRefEnumerator_1

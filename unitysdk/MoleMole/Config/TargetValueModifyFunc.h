@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TargetValueModifyFunc_TypeDefinitionIndex = 78811;
+	inline static constexpr unsigned int TargetValueModifyFunc_TypeDefinitionIndex = 52164;
 
 	enum class TargetValueModifyFunc : ::System::Int32
 	{
-		Mul = 2,
-		Unknow = 0,
 		Add = 1,
 		Replace = 3,
+		Unknow = 0,
+		Mul = 2,
 	};
 }

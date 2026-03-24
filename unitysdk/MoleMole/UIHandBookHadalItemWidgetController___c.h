@@ -7,29 +7,29 @@ namespace MoleMole { class ScrollViewItemWidgetController; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9D9EF10)
-#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9D9EF50)
-#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__REFRESHGAMEPADLIST_B__15_0_OFFSET UNITYSDK_OFFSET(0x9D9EF60)
-#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__REFRESHGAMEPADLIST_B__15_1_OFFSET UNITYSDK_OFFSET(0x9D9EF80)
+#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD58B490)
+#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD58B4D0)
+#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__REFRESHGAMEPADLIST_B__15_0_OFFSET UNITYSDK_OFFSET(0xD58B4E0)
+#define MOLEMOLE_UIHANDBOOKHADALITEMWIDGETCONTROLLER___C__REFRESHGAMEPADLIST_B__15_1_OFFSET UNITYSDK_OFFSET(0xD58B500)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex = 47136;
+	inline static constexpr unsigned int UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex = 61251;
 
 	class UIHandBookHadalItemWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIHandBookHadalItemWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHandBookHadalItemWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x43620);
+			return (::MoleMole::UIHandBookHadalItemWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45290);
 		}
 		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::UnityEngine::GameObject*, ::MoleMole::ScrollViewItemWidgetController*>, ::System::Int32>** StaticGet___9__15_0()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::UnityEngine::GameObject*, ::MoleMole::ScrollViewItemWidgetController*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x43628);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::UnityEngine::GameObject*, ::MoleMole::ScrollViewItemWidgetController*>, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45298);
 		}
 		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::UnityEngine::GameObject*, ::MoleMole::ScrollViewItemWidgetController*>, ::UnityEngine::GameObject*>** StaticGet___9__15_1()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::UnityEngine::GameObject*, ::MoleMole::ScrollViewItemWidgetController*>, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x43630);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::UnityEngine::GameObject*, ::MoleMole::ScrollViewItemWidgetController*>, ::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookHadalItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x452A0);
 		}
 
 		static ::System::Void _cctor()

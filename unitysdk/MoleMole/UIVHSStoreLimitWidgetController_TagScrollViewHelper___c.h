@@ -5,24 +5,24 @@
 namespace MoleMole { class UIVHSStoreTagWidgetController_Data; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_TAGSCROLLVIEWHELPER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xACDDB80)
-#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_TAGSCROLLVIEWHELPER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xACDDBC0)
-#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_TAGSCROLLVIEWHELPER___C__REFRESHTAGLIST_B__4_0_OFFSET UNITYSDK_OFFSET(0xACDDBD0)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_TAGSCROLLVIEWHELPER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A10050)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_TAGSCROLLVIEWHELPER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A10090)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_TAGSCROLLVIEWHELPER___C__REFRESHTAGLIST_B__4_0_OFFSET UNITYSDK_OFFSET(0x9A100A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreLimitWidgetController_TagScrollViewHelper___c_TypeDefinitionIndex = 42289;
+	inline static constexpr unsigned int UIVHSStoreLimitWidgetController_TagScrollViewHelper___c_TypeDefinitionIndex = 43520;
 
 	class UIVHSStoreLimitWidgetController_TagScrollViewHelper___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::MoleMole::UIVHSStoreTagWidgetController_Data*>** StaticGet___9__4_0()
-		{
-			return (::System::Comparison_1<::MoleMole::UIVHSStoreTagWidgetController_Data*>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_TagScrollViewHelper___c_TypeDefinitionIndex)->GetStaticField(0x34EE0);
-		}
 		static ::MoleMole::UIVHSStoreLimitWidgetController_TagScrollViewHelper___c** StaticGet___9()
 		{
-			return (::MoleMole::UIVHSStoreLimitWidgetController_TagScrollViewHelper___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_TagScrollViewHelper___c_TypeDefinitionIndex)->GetStaticField(0x34EE8);
+			return (::MoleMole::UIVHSStoreLimitWidgetController_TagScrollViewHelper___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_TagScrollViewHelper___c_TypeDefinitionIndex)->GetStaticField(0x37830);
+		}
+		static ::System::Comparison_1<::MoleMole::UIVHSStoreTagWidgetController_Data*>** StaticGet___9__4_0()
+		{
+			return (::System::Comparison_1<::MoleMole::UIVHSStoreTagWidgetController_Data*>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_TagScrollViewHelper___c_TypeDefinitionIndex)->GetStaticField(0x37838);
 		}
 
 		static ::System::Void _cctor()

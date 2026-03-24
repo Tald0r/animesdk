@@ -5,11 +5,11 @@
 
 namespace System { class Object; }
 
-#define MOLEMOLE_GENERALBUFFROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC223A60)
+#define MOLEMOLE_GENERALBUFFROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB83A1D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GeneralBuffRowContext_TypeDefinitionIndex = 69172;
+	inline static constexpr unsigned int GeneralBuffRowContext_TypeDefinitionIndex = 77020;
 
 	class GeneralBuffRowContext : public ::MoleMole::UIControllerContextBase
 	{

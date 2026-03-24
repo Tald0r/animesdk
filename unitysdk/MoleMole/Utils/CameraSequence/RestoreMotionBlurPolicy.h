@@ -3,12 +3,12 @@
 
 namespace MoleMole::Utils::CameraSequence
 {
-	inline static constexpr unsigned int RestoreMotionBlurPolicy_TypeDefinitionIndex = 36637;
+	inline static constexpr unsigned int RestoreMotionBlurPolicy_TypeDefinitionIndex = 37632;
 
 	enum class RestoreMotionBlurPolicy : ::System::Int32
 	{
-		Restore = 0,
-		Active = 1,
 		Inactive = 2,
+		Active = 1,
+		Restore = 0,
 	};
 }

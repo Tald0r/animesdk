@@ -6,23 +6,23 @@
 namespace MoleMole::Config { class ScenePeformAnimatorParam; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_SCENEENTITYCUTSCENECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC1E2460)
+#define MOLEMOLE_CONFIG_SCENEENTITYCUTSCENECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x81F8CC0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SceneEntityCutSceneConfig_TypeDefinitionIndex = 37794;
+	inline static constexpr unsigned int SceneEntityCutSceneConfig_TypeDefinitionIndex = 46011;
 
 	class SceneEntityCutSceneConfig : public ::System::Object
 	{
 	public:
 		::System::String* CameraShotKey; // 0x10
 		::Il2CppArray<::MoleMole::Config::ScenePeformAnimatorParam*>* AnimParams; // 0x18
-		::System::Single FlowCanvasDelayTime; // 0x20
-		::System::Single ShowUIDelayTime; // 0x24
-		::System::Single InputMuteDelayTime; // 0x28
-		::System::Boolean EntityVisible; // 0x2C
-		::System::Boolean IsGroupShotData; // 0x2D
-		::MoleMole::Config::CutSceneEndMode finishMode; // 0x2E
+		::System::Single InputMuteDelayTime; // 0x20
+		::MoleMole::Config::CutSceneEndMode finishMode; // 0x24
+		::System::Boolean EntityVisible; // 0x25
+		::System::Boolean IsGroupShotData; // 0x26
+		::System::Single FlowCanvasDelayTime; // 0x28
+		::System::Single ShowUIDelayTime; // 0x2C
 
 		::System::Void _ctor()
 		{

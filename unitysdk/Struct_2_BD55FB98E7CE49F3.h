@@ -4,10 +4,10 @@
 #include "unitysdk/MoleMole/Config/PropertyModifyFunction.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_BD55FB98E7CE49F3_METHOD_2_0D02AF7002A6B470_OFFSET UNITYSDK_OFFSET(0x34F8C0)
-#define STRUCT_2_BD55FB98E7CE49F3_METHOD_2_A814B9D584A0EFCC_OFFSET UNITYSDK_OFFSET(0x34F7C0)
+#define STRUCT_2_BD55FB98E7CE49F3_METHOD_2_0D02AF7002A6B470_OFFSET UNITYSDK_OFFSET(0x332890)
+#define STRUCT_2_BD55FB98E7CE49F3_METHOD_2_A814B9D584A0EFCC_OFFSET UNITYSDK_OFFSET(0x3329B0)
 
-inline static constexpr unsigned int Struct_2_BD55FB98E7CE49F3_TypeDefinitionIndex = 57332;
+inline static constexpr unsigned int Struct_2_BD55FB98E7CE49F3_TypeDefinitionIndex = 47687;
 
 struct alignas(8) Struct_2_BD55FB98E7CE49F3
 {
@@ -23,13 +23,13 @@ struct alignas(8) Struct_2_BD55FB98E7CE49F3
 	::System::Double Field_2_9; // 0x30
 	::System::Boolean Field_2_10; // 0x38
 
-	::System::Void Method_2_A814B9D584A0EFCC(::MoleMole::Config::PropertyModifyFunction a1, ::System::Single a2, ::System::Double a3, ::Enum_3_8431ED11DDFEB049 a4, ::System::Boolean a5, ::System::UInt32 a6, ::System::Boolean a7)
-	{
-		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::PropertyModifyFunction, ::System::Single, ::System::Double, ::Enum_3_8431ED11DDFEB049, ::System::Boolean, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + STRUCT_2_BD55FB98E7CE49F3_METHOD_2_A814B9D584A0EFCC_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7);
-	}
-
 	::System::Void Method_2_0D02AF7002A6B470(::MoleMole::Config::PropertyModifyFunction a1, ::System::Single a2, ::System::Single a3, ::System::Boolean a4, ::System::Boolean a5, ::System::Boolean a6, ::Enum_3_8431ED11DDFEB049 a7, ::System::UInt32 a8)
 	{
 		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::PropertyModifyFunction, ::System::Single, ::System::Single, ::System::Boolean, ::System::Boolean, ::System::Boolean, ::Enum_3_8431ED11DDFEB049, ::System::UInt32))((::PBYTE)hIl2Cpp + STRUCT_2_BD55FB98E7CE49F3_METHOD_2_0D02AF7002A6B470_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7, a8);
+	}
+
+	::System::Void Method_2_A814B9D584A0EFCC(::MoleMole::Config::PropertyModifyFunction a1, ::System::Single a2, ::System::Double a3, ::Enum_3_8431ED11DDFEB049 a4, ::System::Boolean a5, ::System::UInt32 a6, ::System::Boolean a7)
+	{
+		return ((::System::Void(*)(::PVOID, ::MoleMole::Config::PropertyModifyFunction, ::System::Single, ::System::Double, ::Enum_3_8431ED11DDFEB049, ::System::Boolean, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + STRUCT_2_BD55FB98E7CE49F3_METHOD_2_A814B9D584A0EFCC_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7);
 	}
 };

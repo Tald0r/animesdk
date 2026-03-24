@@ -15,31 +15,31 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
 template <typename T> class Class_2_0D31A1661D004892;
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_84B907587CB5E8B8_METHOD_2_8B7E7695FC17D6DD_OFFSET UNITYSDK_OFFSET(0xB03DBD0)
-#define CLASS_2_84B907587CB5E8B8_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xB03DDE0)
-#define CLASS_2_84B907587CB5E8B8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB03DED0)
-#define CLASS_2_84B907587CB5E8B8_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0xB03D8D0)
-#define CLASS_2_84B907587CB5E8B8__CTOR_OFFSET UNITYSDK_OFFSET(0xB03DEC0)
+#define CLASS_2_84B907587CB5E8B8_METHOD_2_8B7E7695FC17D6DD_OFFSET UNITYSDK_OFFSET(0x967A550)
+#define CLASS_2_84B907587CB5E8B8_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x967A760)
+#define CLASS_2_84B907587CB5E8B8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x967A850)
+#define CLASS_2_84B907587CB5E8B8_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x967A250)
+#define CLASS_2_84B907587CB5E8B8__CTOR_OFFSET UNITYSDK_OFFSET(0x967A840)
 
-inline static constexpr unsigned int Class_2_84B907587CB5E8B8_TypeDefinitionIndex = 39473;
+inline static constexpr unsigned int Class_2_84B907587CB5E8B8_TypeDefinitionIndex = 73632;
 
 class Class_2_84B907587CB5E8B8 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x18
-	::UnityEngine::RectTransform* Field_2_4; // 0x20
-	::MonoUITableScrollV2* Field_2_3; // 0x28
+	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_2; // 0x18
+	::Class_2_9E3E3CDA608A4F58* Field_2_11; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x28
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_9; // 0x38
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIActivityCompWeekRewardBtnWidgetController*>* Field_2_8; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x48
-	::System::Collections::Generic::List_1<::Class_2_0D31A1661D004892<::Class_2_84B907587CB5E8B8_Class_2_2DE458045BB7B79A*>*>* Field_2_1; // 0x50
-	::Class_2_9E3E3CDA608A4F58* Field_2_11; // 0x58
+	::UnityEngine::RectTransform* Field_2_4; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_2_9; // 0x40
+	::Class_3_647A206587033F4E<::MoleMole::UIActivityCompWeekRewardBtnWidgetController*>* Field_2_8; // 0x48
+	::MonoUITableScrollV2* Field_2_3; // 0x50
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x58
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_10; // 0x60
-	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_2; // 0x68
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x70
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x68
+	::System::Collections::Generic::List_1<::Class_2_0D31A1661D004892<::Class_2_84B907587CB5E8B8_Class_2_2DE458045BB7B79A*>*>* Field_2_1; // 0x70
 
 	::System::Void _ctor()
 	{

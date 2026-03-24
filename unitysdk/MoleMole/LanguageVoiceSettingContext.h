@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/LanguageVoiceType.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_LANGUAGEVOICESETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xE487640)
+#define MOLEMOLE_LANGUAGEVOICESETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD80F570)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LanguageVoiceSettingContext_TypeDefinitionIndex = 36670;
+	inline static constexpr unsigned int LanguageVoiceSettingContext_TypeDefinitionIndex = 61649;
 
 	class LanguageVoiceSettingContext : public ::MoleMole::SystemSettingContextBase
 	{

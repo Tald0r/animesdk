@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIFORBIDDENAREACOLLECTPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBF03A50)
+#define MOLEMOLE_UIFORBIDDENAREACOLLECTPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA974050)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIForbiddenAreaCollectPageContext_TypeDefinitionIndex = 45803;
+	inline static constexpr unsigned int UIForbiddenAreaCollectPageContext_TypeDefinitionIndex = 59313;
 
 	class UIForbiddenAreaCollectPageContext : public ::MoleMole::UIControllerContextBase
 	{

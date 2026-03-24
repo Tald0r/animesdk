@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINEEDITORRESOURCES_COLLIDERPREVIEWCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x196F3370)
+#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINEEDITORRESOURCES_COLLIDERPREVIEWCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x19B6FD10)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int UniversalRenderPipelineEditorResources_ColliderPreviewConfig_TypeDefinitionIndex = 28372;
+	inline static constexpr unsigned int UniversalRenderPipelineEditorResources_ColliderPreviewConfig_TypeDefinitionIndex = 29313;
 
 	class UniversalRenderPipelineEditorResources_ColliderPreviewConfig : public ::System::Object
 	{
@@ -21,6 +21,7 @@ namespace UnityEngine::Rendering::Universal
 		::UnityEngine::Color s_Collider_WireframeColor; // 0x70
 		::UnityEngine::Color s_Other_WireframeColor; // 0x80
 		::UnityEngine::Color s_TransparentColor; // 0x90
+		::System::Boolean s_EnableColliderPreviewOffset; // 0xA0
 
 		::System::Void _ctor()
 		{

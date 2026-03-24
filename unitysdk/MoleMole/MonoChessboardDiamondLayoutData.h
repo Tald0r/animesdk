@@ -4,11 +4,11 @@
 #include "unitysdk/UnityEngine/TextAnchor.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define MOLEMOLE_MONOCHESSBOARDDIAMONDLAYOUTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x67B0CB0)
+#define MOLEMOLE_MONOCHESSBOARDDIAMONDLAYOUTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x75AE7C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoChessboardDiamondLayoutData_TypeDefinitionIndex = 49658;
+	inline static constexpr unsigned int MonoChessboardDiamondLayoutData_TypeDefinitionIndex = 70590;
 
 	class MonoChessboardDiamondLayoutData : public ::UnityEngine::MonoBehaviour
 	{

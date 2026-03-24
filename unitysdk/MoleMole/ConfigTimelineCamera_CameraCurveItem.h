@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIGTIMELINECAMERA_CAMERACURVEITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xCDCCF10)
+#define MOLEMOLE_CONFIGTIMELINECAMERA_CAMERACURVEITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xD0B1EB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigTimelineCamera_CameraCurveItem_TypeDefinitionIndex = 52506;
+	inline static constexpr unsigned int ConfigTimelineCamera_CameraCurveItem_TypeDefinitionIndex = 50525;
 
 	class ConfigTimelineCamera_CameraCurveItem : public ::System::Object
 	{

@@ -4,12 +4,12 @@
 
 namespace UnityEngine::UI { class Text; }
 
-#define MOLEMOLE_UISCREENINFOHANDLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xB274CD0)
-#define MOLEMOLE_UISCREENINFOHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB275240)
+#define MOLEMOLE_UISCREENINFOHANDLER_UPDATE_OFFSET UNITYSDK_OFFSET(0x957FE80)
+#define MOLEMOLE_UISCREENINFOHANDLER__CTOR_OFFSET UNITYSDK_OFFSET(0x95803F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIScreenInfoHandler_TypeDefinitionIndex = 77472;
+	inline static constexpr unsigned int UIScreenInfoHandler_TypeDefinitionIndex = 53036;
 
 	class UIScreenInfoHandler : public ::UnityEngine::MonoBehaviour
 	{

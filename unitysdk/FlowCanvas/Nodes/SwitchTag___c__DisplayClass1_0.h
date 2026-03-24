@@ -8,19 +8,19 @@ namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace FlowCanvas::Nodes { class SwitchTag; }
 namespace UnityEngine { class GameObject; }
 
-#define FLOWCANVAS_NODES_SWITCHTAG___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19E03AF0)
-#define FLOWCANVAS_NODES_SWITCHTAG___C__DISPLAYCLASS1_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x19E03B00)
+#define FLOWCANVAS_NODES_SWITCHTAG___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3F2360)
+#define FLOWCANVAS_NODES_SWITCHTAG___C__DISPLAYCLASS1_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A3F2370)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SwitchTag___c__DisplayClass1_0_TypeDefinitionIndex = 25488;
+	inline static constexpr unsigned int SwitchTag___c__DisplayClass1_0_TypeDefinitionIndex = 27137;
 
 	class SwitchTag___c__DisplayClass1_0 : public ::System::Object
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::UnityEngine::GameObject*>* selector; // 0x10
+		::Il2CppArray<::FlowCanvas::FlowOutput*>* cases; // 0x10
 		::FlowCanvas::Nodes::SwitchTag* __4__this; // 0x18
-		::Il2CppArray<::FlowCanvas::FlowOutput*>* cases; // 0x20
+		::FlowCanvas::ValueInput_1<::UnityEngine::GameObject*>* selector; // 0x20
 
 		::System::Void _ctor()
 		{

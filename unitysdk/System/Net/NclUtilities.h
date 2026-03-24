@@ -9,18 +9,18 @@ namespace System::Net { class IPAddress; }
 namespace System::Net { class IPHostEntry; }
 namespace System::Threading { class ContextCallback; }
 
-#define SYSTEM_NET_NCLUTILITIES_DEMANDCALLBACK_OFFSET UNITYSDK_OFFSET(0x190137F0)
-#define SYSTEM_NET_NCLUTILITIES_GETLOCALHOST_OFFSET UNITYSDK_OFFSET(0x19013E20)
-#define SYSTEM_NET_NCLUTILITIES_GET_CONTEXTRELATIVEDEMANDCALLBACK_OFFSET UNITYSDK_OFFSET(0x19013750)
-#define SYSTEM_NET_NCLUTILITIES_GET_HASSHUTDOWNSTARTED_OFFSET UNITYSDK_OFFSET(0x19013680)
-#define SYSTEM_NET_NCLUTILITIES_GET_LOCALADDRESSESLOCK_OFFSET UNITYSDK_OFFSET(0x19013E40)
-#define SYSTEM_NET_NCLUTILITIES_GET_LOCALADDRESSES_OFFSET UNITYSDK_OFFSET(0x190139D0)
-#define SYSTEM_NET_NCLUTILITIES_GUESSWHETHERHOSTISLOOPBACK_OFFSET UNITYSDK_OFFSET(0x19013800)
-#define SYSTEM_NET_NCLUTILITIES_ISADDRESSLOCAL_OFFSET UNITYSDK_OFFSET(0x19013940)
-#define SYSTEM_NET_NCLUTILITIES_ISCLIENTFAULT_OFFSET UNITYSDK_OFFSET(0x19013730)
-#define SYSTEM_NET_NCLUTILITIES_ISCREDENTIALFAILURE_OFFSET UNITYSDK_OFFSET(0x19013710)
-#define SYSTEM_NET_NCLUTILITIES_ISFATAL_OFFSET UNITYSDK_OFFSET(0x190138F0)
-#define SYSTEM_NET_NCLUTILITIES_ISTHREADPOOLLOW_OFFSET UNITYSDK_OFFSET(0x19013640)
+#define SYSTEM_NET_NCLUTILITIES_DEMANDCALLBACK_OFFSET UNITYSDK_OFFSET(0x194296A0)
+#define SYSTEM_NET_NCLUTILITIES_GETLOCALHOST_OFFSET UNITYSDK_OFFSET(0x19429CC0)
+#define SYSTEM_NET_NCLUTILITIES_GET_CONTEXTRELATIVEDEMANDCALLBACK_OFFSET UNITYSDK_OFFSET(0x19429600)
+#define SYSTEM_NET_NCLUTILITIES_GET_HASSHUTDOWNSTARTED_OFFSET UNITYSDK_OFFSET(0x19429530)
+#define SYSTEM_NET_NCLUTILITIES_GET_LOCALADDRESSESLOCK_OFFSET UNITYSDK_OFFSET(0x19429CE0)
+#define SYSTEM_NET_NCLUTILITIES_GET_LOCALADDRESSES_OFFSET UNITYSDK_OFFSET(0x19429880)
+#define SYSTEM_NET_NCLUTILITIES_GUESSWHETHERHOSTISLOOPBACK_OFFSET UNITYSDK_OFFSET(0x194296B0)
+#define SYSTEM_NET_NCLUTILITIES_ISADDRESSLOCAL_OFFSET UNITYSDK_OFFSET(0x194297F0)
+#define SYSTEM_NET_NCLUTILITIES_ISCLIENTFAULT_OFFSET UNITYSDK_OFFSET(0x194295E0)
+#define SYSTEM_NET_NCLUTILITIES_ISCREDENTIALFAILURE_OFFSET UNITYSDK_OFFSET(0x194295C0)
+#define SYSTEM_NET_NCLUTILITIES_ISFATAL_OFFSET UNITYSDK_OFFSET(0x194297A0)
+#define SYSTEM_NET_NCLUTILITIES_ISTHREADPOOLLOW_OFFSET UNITYSDK_OFFSET(0x194294F0)
 
 namespace System::Net
 {
@@ -29,21 +29,21 @@ namespace System::Net
 	class NclUtilities : public ::System::Object
 	{
 	public:
-		static ::System::Object** StaticGet__LocalAddressesLock()
+		static ::System::Threading::ContextCallback** StaticGet_s_ContextRelativeDemandCallback()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33C0);
-		}
-		static ::System::String** StaticGet__LocalDomainName()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33C8);
+			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33C0);
 		}
 		static ::Il2CppArray<::System::Net::IPAddress*>** StaticGet__LocalAddresses()
 		{
-			return (::Il2CppArray<::System::Net::IPAddress*>**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33D0);
+			return (::Il2CppArray<::System::Net::IPAddress*>**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33C8);
 		}
-		static ::System::Threading::ContextCallback** StaticGet_s_ContextRelativeDemandCallback()
+		static ::System::String** StaticGet__LocalDomainName()
 		{
-			return (::System::Threading::ContextCallback**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33D8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33D0);
+		}
+		static ::System::Object** StaticGet__LocalAddressesLock()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(NclUtilities_TypeDefinitionIndex)->GetStaticField(0x33D8);
 		}
 		// static const ::System::Int32 HostNameBufferLength = 0x100; // 0x0
 

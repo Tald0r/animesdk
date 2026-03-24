@@ -7,12 +7,12 @@ class Class_3_C0D5B1A036ED00F0;
 namespace MoleMole::Battle { class Entity; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEPROPERTYMODULE_EVALUATE_OFFSET UNITYSDK_OFFSET(0xCC8B140)
-#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEPROPERTYMODULE__CTOR_OFFSET UNITYSDK_OFFSET(0xCC8B300)
+#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEPROPERTYMODULE_EVALUATE_OFFSET UNITYSDK_OFFSET(0xACB90D0)
+#define MOLEMOLE_CONFIG_BUDDYTOWERDEFENSEPROPERTYMODULE__CTOR_OFFSET UNITYSDK_OFFSET(0xACB9210)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int BuddyTowerDefensePropertyModule_TypeDefinitionIndex = 69098;
+	inline static constexpr unsigned int BuddyTowerDefensePropertyModule_TypeDefinitionIndex = 40580;
 
 	class BuddyTowerDefensePropertyModule : public ::MoleMole::Config::TargetValueModuleBase
 	{

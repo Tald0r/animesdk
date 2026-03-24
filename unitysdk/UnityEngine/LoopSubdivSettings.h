@@ -4,7 +4,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LoopSubdivSettings_TypeDefinitionIndex = 5259;
+	inline static constexpr unsigned int LoopSubdivSettings_TypeDefinitionIndex = 5260;
 
 	struct alignas(4) LoopSubdivSettings
 	{

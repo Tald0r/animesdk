@@ -5,7 +5,7 @@ namespace UnityEngine::Timeline { class AnimationTrack; }
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialTrackInterface_TypeDefinitionIndex = 29161;
+	inline static constexpr unsigned int MaterialTrackInterface_TypeDefinitionIndex = 30114;
 
 	class MaterialTrackInterface
 	{

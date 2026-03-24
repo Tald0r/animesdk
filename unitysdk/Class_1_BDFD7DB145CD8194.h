@@ -5,10 +5,10 @@
 namespace UnityEngine { class Animator; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_1_BDFD7DB145CD8194_METHOD_1_8386C9F150870F55_OFFSET UNITYSDK_OFFSET(0x967CBD0)
-#define CLASS_1_BDFD7DB145CD8194__CTOR_OFFSET UNITYSDK_OFFSET(0x967CF10)
+#define CLASS_1_BDFD7DB145CD8194_METHOD_1_8386C9F150870F55_OFFSET UNITYSDK_OFFSET(0xB66E3C0)
+#define CLASS_1_BDFD7DB145CD8194__CTOR_OFFSET UNITYSDK_OFFSET(0xB66E700)
 
-inline static constexpr unsigned int Class_1_BDFD7DB145CD8194_TypeDefinitionIndex = 75431;
+inline static constexpr unsigned int Class_1_BDFD7DB145CD8194_TypeDefinitionIndex = 52123;
 
 class Class_1_BDFD7DB145CD8194 : public ::System::Object
 {

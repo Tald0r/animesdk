@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIQuestionsAnswerChatPlayWidgetController; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA3E4810)
-#define MOLEMOLE_UIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS19_0__REFRESHOPTION_B__0_OFFSET UNITYSDK_OFFSET(0xA3E4820)
+#define MOLEMOLE_UIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8EF7E20)
+#define MOLEMOLE_UIQUESTIONSANSWERCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS19_0__REFRESHOPTION_B__0_OFFSET UNITYSDK_OFFSET(0x8EF7E30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerChatPlayWidgetController___c__DisplayClass19_0_TypeDefinitionIndex = 43456;
+	inline static constexpr unsigned int UIQuestionsAnswerChatPlayWidgetController___c__DisplayClass19_0_TypeDefinitionIndex = 72237;
 
 	class UIQuestionsAnswerChatPlayWidgetController___c__DisplayClass19_0 : public ::System::Object
 	{

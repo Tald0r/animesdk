@@ -5,24 +5,24 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIGACHAITEMWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8083080)
-#define MOLEMOLE_UIGACHAITEMWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x80830C0)
-#define MOLEMOLE_UIGACHAITEMWIDGETCONTROLLER___C__ONPLAYANIMFINISH_B__16_0_OFFSET UNITYSDK_OFFSET(0x80830D0)
+#define MOLEMOLE_UIGACHAITEMWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAC60450)
+#define MOLEMOLE_UIGACHAITEMWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAC60490)
+#define MOLEMOLE_UIGACHAITEMWIDGETCONTROLLER___C__ONPLAYANIMFINISH_B__16_0_OFFSET UNITYSDK_OFFSET(0xAC604A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaItemWidgetController___c_TypeDefinitionIndex = 70063;
+	inline static constexpr unsigned int UIGachaItemWidgetController___c_TypeDefinitionIndex = 56486;
 
 	class UIGachaItemWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>>** StaticGet___9__16_0()
 		{
-			return (::System::Comparison_1<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>>**)Il2CppClass::FromTypeDefinitionIndex(UIGachaItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3C3B0);
+			return (::System::Comparison_1<::System::Collections::Generic::KeyValuePair_2<::System::UInt32, ::System::UInt32>>**)Il2CppClass::FromTypeDefinitionIndex(UIGachaItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3F0C0);
 		}
 		static ::MoleMole::UIGachaItemWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIGachaItemWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGachaItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3C3B8);
+			return (::MoleMole::UIGachaItemWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGachaItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3F0C8);
 		}
 
 		static ::System::Void _cctor()

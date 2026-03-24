@@ -5,7 +5,7 @@ namespace System { class String; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int IGlobalBlackboard_TypeDefinitionIndex = 25894;
+	inline static constexpr unsigned int IGlobalBlackboard_TypeDefinitionIndex = 26796;
 
 	class IGlobalBlackboard
 	{

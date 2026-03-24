@@ -6,12 +6,12 @@ class Class_1_D72537470FC2F779;
 namespace MoleMole::Config { class AnimationCurveUISpecialNum; }
 namespace MoleMole::Config { class FloatUISpecialNum; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCAMERATELEPORTCENTERNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCD00120)
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCAMERATELEPORTCENTERNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD00200)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCAMERATELEPORTCENTERNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xE3576E0)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCAMERATELEPORTCENTERNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE3577C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessboardCameraTeleportCenterNode_TypeDefinitionIndex = 50093;
+	inline static constexpr unsigned int ConfigChessboardCameraTeleportCenterNode_TypeDefinitionIndex = 56763;
 
 	class ConfigChessboardCameraTeleportCenterNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

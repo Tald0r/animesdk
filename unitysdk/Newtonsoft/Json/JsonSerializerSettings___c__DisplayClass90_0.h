@@ -4,12 +4,12 @@
 
 namespace Newtonsoft::Json::Serialization { class IReferenceResolver; }
 
-#define NEWTONSOFT_JSON_JSONSERIALIZERSETTINGS___C__DISPLAYCLASS90_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD10E30)
-#define NEWTONSOFT_JSON_JSONSERIALIZERSETTINGS___C__DISPLAYCLASS90_0__SET_REFERENCERESOLVER_B__0_OFFSET UNITYSDK_OFFSET(0x1AD10E40)
+#define NEWTONSOFT_JSON_JSONSERIALIZERSETTINGS___C__DISPLAYCLASS90_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B32B3B0)
+#define NEWTONSOFT_JSON_JSONSERIALIZERSETTINGS___C__DISPLAYCLASS90_0__SET_REFERENCERESOLVER_B__0_OFFSET UNITYSDK_OFFSET(0x1B32B3C0)
 
 namespace Newtonsoft::Json
 {
-	inline static constexpr unsigned int JsonSerializerSettings___c__DisplayClass90_0_TypeDefinitionIndex = 6875;
+	inline static constexpr unsigned int JsonSerializerSettings___c__DisplayClass90_0_TypeDefinitionIndex = 6879;
 
 	class JsonSerializerSettings___c__DisplayClass90_0 : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ConsoleVariableFlag_TypeDefinitionIndex = 5151;
+	inline static constexpr unsigned int ConsoleVariableFlag_TypeDefinitionIndex = 5152;
 
 	enum class ConsoleVariableFlag : ::System::SByte
 	{

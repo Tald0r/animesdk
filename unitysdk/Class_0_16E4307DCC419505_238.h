@@ -1,11 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
-#include "unitysdk/System/Threading/CancellationToken.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_238_TypeDefinitionIndex = 39252;
+class Class_0_16E4307DCC419505_493;
+namespace MoleMole { class UIInLevelSkillButtonBranchBaseController; }
+namespace MoleMole { class UIWindowController; }
+namespace UnityEngine { class Transform; }
 
-template <typename TPersistent, typename TTemporary>
+inline static constexpr unsigned int Class_0_16E4307DCC419505_238_TypeDefinitionIndex = 64143;
+
 class Class_0_16E4307DCC419505_238
 {
 public:

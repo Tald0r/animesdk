@@ -26,55 +26,55 @@ namespace UnityEngine { class ScriptableObject; }
 namespace UnityEngine { class Texture; }
 namespace UnityEngine::Rendering::Universal { class VREffects; }
 
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0xA5D70D0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xA5D71F0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_3622C2D1E940D3F4_OFFSET UNITYSDK_OFFSET(0xA5D71C0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xA5D7340)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xA5CF660)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_429B9EF3AD5C70EB_OFFSET UNITYSDK_OFFSET(0xA5CF560)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_43069389B18F0936_OFFSET UNITYSDK_OFFSET(0xA5CF420)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_4ED0F9748169EC7E_OFFSET UNITYSDK_OFFSET(0xA5CF940)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_4FB5F56430673EA6_1_OFFSET UNITYSDK_OFFSET(0xA5CF830)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_4FB5F56430673EA6_OFFSET UNITYSDK_OFFSET(0xA5CF7B0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_54BEE211D32F7DEF_OFFSET UNITYSDK_OFFSET(0xA5D72C0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_55D8CF5F1FB0803A_OFFSET UNITYSDK_OFFSET(0xA5D70C0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0xA5D7330)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_5BD973238595BF89_1_OFFSET UNITYSDK_OFFSET(0xA5C4840)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_5BD973238595BF89_OFFSET UNITYSDK_OFFSET(0xA5BC960)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_63D56313608AFE32_OFFSET UNITYSDK_OFFSET(0xA5CD2E0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_6B72D4EE8C6E907F_OFFSET UNITYSDK_OFFSET(0x16BE35C0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_6BA7BB45F0BA72F4_OFFSET UNITYSDK_OFFSET(0xA5D0400)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76CD9B9D1269FA90_OFFSET UNITYSDK_OFFSET(0x16BEEA80)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76ECC59BC7430042_1_OFFSET UNITYSDK_OFFSET(0xA5D36E0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76ECC59BC7430042_OFFSET UNITYSDK_OFFSET(0xA5CF9A0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0xA5D71B0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0xA5CF6C0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_88B60F3B95FAA4F1_2_OFFSET UNITYSDK_OFFSET(0xA5CF8B0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0xA5CF5D0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_8D6879CAA76F6588_OFFSET UNITYSDK_OFFSET(0xA5CC720)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A1D8CD775DEC3C21_1_OFFSET UNITYSDK_OFFSET(0xA5D7140)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0xA5CF750)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A6544B958241856F_OFFSET UNITYSDK_OFFSET(0x16BE46A0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_1_OFFSET UNITYSDK_OFFSET(0xA5D73A0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_OFFSET UNITYSDK_OFFSET(0xA5D71A0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_B2C24AFA396A3C80_OFFSET UNITYSDK_OFFSET(0xA5CD1D0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_B4596DBEA209120C_OFFSET UNITYSDK_OFFSET(0xA5D70E0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_BE3471DF7E3D4326_OFFSET UNITYSDK_OFFSET(0xA5D70F0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_C422DE9CC617B43A_OFFSET UNITYSDK_OFFSET(0x16BF2E60)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xA5D72D0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x16BE4640)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D2A9D107FA1E5A31_OFFSET UNITYSDK_OFFSET(0xA5CF4F0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D3694D678C874488_OFFSET UNITYSDK_OFFSET(0xA5B1540)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D5F190FE5CE966B3_OFFSET UNITYSDK_OFFSET(0xA5D71E0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0xA5D7260)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_1_OFFSET UNITYSDK_OFFSET(0xA5D71D0)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_OFFSET UNITYSDK_OFFSET(0xA5D7130)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_F53BAAE38A584428_OFFSET UNITYSDK_OFFSET(0x16BE5E70)
-#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0xA5D4140)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0xA7C0FC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xA7C1030)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_3622C2D1E940D3F4_OFFSET UNITYSDK_OFFSET(0xA7C10B0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xA7C0F60)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xA7B9330)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_429B9EF3AD5C70EB_OFFSET UNITYSDK_OFFSET(0xA7B9230)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_43069389B18F0936_OFFSET UNITYSDK_OFFSET(0xA7B90F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_4ED0F9748169EC7E_OFFSET UNITYSDK_OFFSET(0xA7B9610)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_4FB5F56430673EA6_1_OFFSET UNITYSDK_OFFSET(0xA7B9500)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_4FB5F56430673EA6_OFFSET UNITYSDK_OFFSET(0xA7B9480)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_54BEE211D32F7DEF_OFFSET UNITYSDK_OFFSET(0xA7C10C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_55D8CF5F1FB0803A_OFFSET UNITYSDK_OFFSET(0xA7C1020)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_581A5078A2F29034_OFFSET UNITYSDK_OFFSET(0xA7C0F40)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_5BD973238595BF89_1_OFFSET UNITYSDK_OFFSET(0xA7AE2E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_5BD973238595BF89_OFFSET UNITYSDK_OFFSET(0xA7A6240)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_63D56313608AFE32_OFFSET UNITYSDK_OFFSET(0xA7B6F60)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_6B72D4EE8C6E907F_OFFSET UNITYSDK_OFFSET(0x17530520)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_6BA7BB45F0BA72F4_OFFSET UNITYSDK_OFFSET(0xA7BA0F0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76CD9B9D1269FA90_OFFSET UNITYSDK_OFFSET(0x1753BBD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76ECC59BC7430042_1_OFFSET UNITYSDK_OFFSET(0xA7BD460)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76ECC59BC7430042_OFFSET UNITYSDK_OFFSET(0xA7B9670)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_832295EC279E5994_OFFSET UNITYSDK_OFFSET(0xA7C10A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_88B60F3B95FAA4F1_1_OFFSET UNITYSDK_OFFSET(0xA7B9390)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_88B60F3B95FAA4F1_2_OFFSET UNITYSDK_OFFSET(0xA7B9580)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0xA7B92A0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_8D6879CAA76F6588_OFFSET UNITYSDK_OFFSET(0xA7B6380)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A1D8CD775DEC3C21_1_OFFSET UNITYSDK_OFFSET(0xA7C1140)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0xA7B9420)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A6544B958241856F_OFFSET UNITYSDK_OFFSET(0x17531630)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_1_OFFSET UNITYSDK_OFFSET(0xA7C0F20)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_OFFSET UNITYSDK_OFFSET(0xA7C0EB0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_B2C24AFA396A3C80_OFFSET UNITYSDK_OFFSET(0xA7B6E50)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_B4596DBEA209120C_OFFSET UNITYSDK_OFFSET(0xA7C1010)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_BE3471DF7E3D4326_OFFSET UNITYSDK_OFFSET(0xA7C0FD0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_C422DE9CC617B43A_OFFSET UNITYSDK_OFFSET(0x17540060)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xA7C10E0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x175315D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D2A9D107FA1E5A31_OFFSET UNITYSDK_OFFSET(0xA7B91C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D3694D678C874488_OFFSET UNITYSDK_OFFSET(0xA79AC20)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D5F190FE5CE966B3_OFFSET UNITYSDK_OFFSET(0xA7C10D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_DA1BF2C227DC3D86_OFFSET UNITYSDK_OFFSET(0xA7C0EC0)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_1_OFFSET UNITYSDK_OFFSET(0xA7C0F50)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_OFFSET UNITYSDK_OFFSET(0xA7C0F30)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_F53BAAE38A584428_OFFSET UNITYSDK_OFFSET(0x17532E20)
+#define MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0xA7BDEE0)
 
 namespace MoleMole::EffectSimulate
 {
-	inline static constexpr unsigned int ESPostProcessVREffects_TypeDefinitionIndex = 58603;
+	inline static constexpr unsigned int ESPostProcessVREffects_TypeDefinitionIndex = 50068;
 
 	class ESPostProcessVREffects : public ::MoleMole::EffectSimulate::ESPostProcessBehavior_1<::UnityEngine::Rendering::Universal::VREffects*>
 	{
@@ -168,7 +168,8 @@ namespace MoleMole::EffectSimulate
 		::System::Single _VolDefault_outlineNormalThreshold; // 0x2E8
 		::System::Single _VolDefault_outlineNormalThresholdScale; // 0x2EC
 		::UnityEngine::Color _VolDefault_outlineColor; // 0x2F0
-		::System::Boolean _VolDefault_outlineDistortion; // 0x300
+		::System::Boolean _VolDefault_outlineInUberShader; // 0x300
+		::System::Boolean _VolDefault_outlineDistortion; // 0x301
 		::UnityEngine::Texture* _VolDefault_outlineDistortionTex; // 0x308
 		::UnityEngine::Vector2 _VolDefault_outlineDistortionTexTiling; // 0x310
 		::UnityEngine::Vector2 _VolDefault_outlineDistortionTexOffset; // 0x318
@@ -378,9 +379,11 @@ namespace MoleMole::EffectSimulate
 		::System::Single _VolPreVal_outlineNormalThresholdScale; // 0x740
 		::System::Boolean _VolPreVal_outlineColor_overrideState; // 0x744
 		::UnityEngine::Color _VolPreVal_outlineColor; // 0x748
-		::System::Boolean _VolPreVal_outlineDistortion_overrideState; // 0x758
-		::System::Boolean _VolPreVal_outlineDistortion; // 0x759
-		::System::Boolean _VolPreVal_outlineDistortionTex_overrideState; // 0x75A
+		::System::Boolean _VolPreVal_outlineInUberShader_overrideState; // 0x758
+		::System::Boolean _VolPreVal_outlineInUberShader; // 0x759
+		::System::Boolean _VolPreVal_outlineDistortion_overrideState; // 0x75A
+		::System::Boolean _VolPreVal_outlineDistortion; // 0x75B
+		::System::Boolean _VolPreVal_outlineDistortionTex_overrideState; // 0x75C
 		::UnityEngine::Texture* _VolPreVal_outlineDistortionTex; // 0x760
 		::System::Boolean _VolPreVal_outlineDistortionTexTiling_overrideState; // 0x768
 		::UnityEngine::Vector2 _VolPreVal_outlineDistortionTexTiling; // 0x76C
@@ -566,8 +569,10 @@ namespace MoleMole::EffectSimulate
 		::System::Single _TimelineCurveLastVal_outlineOpacity; // 0xC1C
 		::UnityEngine::Color _TimelineCurveFirstVal_outlineColor; // 0xC20
 		::UnityEngine::Color _TimelineCurveLastVal_outlineColor; // 0xC30
-		::System::Boolean _TimelineCurveFirstVal_outlineDistortion; // 0xC40
-		::System::Boolean _TimelineCurveLastVal_outlineDistortion; // 0xC41
+		::System::Boolean _TimelineCurveFirstVal_outlineInUberShader; // 0xC40
+		::System::Boolean _TimelineCurveLastVal_outlineInUberShader; // 0xC41
+		::System::Boolean _TimelineCurveFirstVal_outlineDistortion; // 0xC42
+		::System::Boolean _TimelineCurveLastVal_outlineDistortion; // 0xC43
 		::UnityEngine::Vector2 _TimelineCurveFirstVal_outlineDistortionTexTiling; // 0xC44
 		::UnityEngine::Vector2 _TimelineCurveLastVal_outlineDistortionTexTiling; // 0xC4C
 		::UnityEngine::Vector2 _TimelineCurveFirstVal_outlineDistortionTexOffset; // 0xC54
@@ -1036,182 +1041,188 @@ namespace MoleMole::EffectSimulate
 		::System::Boolean ESPP_outlineColor_EnableFade; // 0x1540
 		::System::Boolean ESPP_outlineColor_EnableOverrideDefaultValue; // 0x1541
 		::UnityEngine::Color ESPP_outlineColor_OverrideDefaultValue; // 0x1544
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortion_FieldHandleType; // 0x1554
-		::System::Boolean ESPP_outlineDistortion_UseIt; // 0x1558
-		::MoleMole::EffectSimulate::BoolKeyframeCurve* ESPP_outlineDistortion; // 0x1560
-		::System::Boolean ESPP_outlineDistortion_EnableFade; // 0x1568
-		::System::Boolean ESPP_outlineDistortion_EnableOverrideDefaultValue; // 0x1569
-		::System::Boolean ESPP_outlineDistortion_OverrideDefaultValue; // 0x156A
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionTex_FieldHandleType; // 0x156C
-		::UnityEngine::Texture* ESPP_outlineDistortionTex; // 0x1570
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionTexTiling_FieldHandleType; // 0x1578
-		::System::Boolean ESPP_outlineDistortionTexTiling_UseIt; // 0x157C
-		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionTexTiling; // 0x1580
-		::System::Boolean ESPP_outlineDistortionTexTiling_EnableFade; // 0x1588
-		::System::Boolean ESPP_outlineDistortionTexTiling_EnableOverrideDefaultValue; // 0x1589
-		::UnityEngine::Vector2 ESPP_outlineDistortionTexTiling_OverrideDefaultValue; // 0x158C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionTexOffset_FieldHandleType; // 0x1594
-		::System::Boolean ESPP_outlineDistortionTexOffset_UseIt; // 0x1598
-		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionTexOffset; // 0x15A0
-		::System::Boolean ESPP_outlineDistortionTexOffset_EnableFade; // 0x15A8
-		::System::Boolean ESPP_outlineDistortionTexOffset_EnableOverrideDefaultValue; // 0x15A9
-		::UnityEngine::Vector2 ESPP_outlineDistortionTexOffset_OverrideDefaultValue; // 0x15AC
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionUVSpeed_FieldHandleType; // 0x15B4
-		::System::Boolean ESPP_outlineDistortionUVSpeed_UseIt; // 0x15B8
-		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionUVSpeed; // 0x15C0
-		::System::Boolean ESPP_outlineDistortionUVSpeed_EnableFade; // 0x15C8
-		::System::Boolean ESPP_outlineDistortionUVSpeed_EnableOverrideDefaultValue; // 0x15C9
-		::UnityEngine::Vector2 ESPP_outlineDistortionUVSpeed_OverrideDefaultValue; // 0x15CC
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionOffset_FieldHandleType; // 0x15D4
-		::System::Boolean ESPP_outlineDistortionOffset_UseIt; // 0x15D8
-		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionOffset; // 0x15E0
-		::System::Boolean ESPP_outlineDistortionOffset_EnableFade; // 0x15E8
-		::System::Boolean ESPP_outlineDistortionOffset_EnableOverrideDefaultValue; // 0x15E9
-		::UnityEngine::Vector2 ESPP_outlineDistortionOffset_OverrideDefaultValue; // 0x15EC
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionIntensity_FieldHandleType; // 0x15F4
-		::System::Boolean ESPP_outlineDistortionIntensity_UseIt; // 0x15F8
-		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionIntensity; // 0x1600
-		::System::Boolean ESPP_outlineDistortionIntensity_EnableFade; // 0x1608
-		::System::Boolean ESPP_outlineDistortionIntensity_EnableOverrideDefaultValue; // 0x1609
-		::UnityEngine::Vector2 ESPP_outlineDistortionIntensity_OverrideDefaultValue; // 0x160C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetOn_FieldHandleType; // 0x1614
-		::System::Boolean ESPP_textureSheetOn; // 0x1618
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetTex_FieldHandleType; // 0x161C
-		::UnityEngine::Texture* ESPP_textureSheetTex; // 0x1620
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetXY_FieldHandleType; // 0x1628
-		::UnityEngine::Vector2 ESPP_textureSheetXY; // 0x162C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetIndex_FieldHandleType; // 0x1634
-		::System::Boolean ESPP_textureSheetIndex_UseIt; // 0x1638
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_textureSheetIndex; // 0x1640
-		::System::Boolean ESPP_textureSheetIndex_EnableFade; // 0x1648
-		::System::Boolean ESPP_textureSheetIndex_EnableOverrideDefaultValue; // 0x1649
-		::System::Int32 ESPP_textureSheetIndex_OverrideDefaultValue; // 0x164C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetColor_FieldHandleType; // 0x1650
-		::System::Boolean ESPP_textureSheetColor_UseIt; // 0x1654
-		::MoleMole::EffectSimulate::ColorKeyframeCurve* ESPP_textureSheetColor; // 0x1658
-		::System::Boolean ESPP_textureSheetColor_EnableFade; // 0x1660
-		::System::Boolean ESPP_textureSheetColor_EnableOverrideDefaultValue; // 0x1661
-		::UnityEngine::Color ESPP_textureSheetColor_OverrideDefaultValue; // 0x1664
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionIntensity_FieldHandleType; // 0x1674
-		::System::Boolean ESPP_lensDistortionIntensity_UseIt; // 0x1678
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionIntensity; // 0x1680
-		::System::Boolean ESPP_lensDistortionIntensity_EnableFade; // 0x1688
-		::System::Boolean ESPP_lensDistortionIntensity_EnableOverrideDefaultValue; // 0x1689
-		::System::Single ESPP_lensDistortionIntensity_OverrideDefaultValue; // 0x168C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionXMultiplier_FieldHandleType; // 0x1690
-		::System::Boolean ESPP_lensDistortionXMultiplier_UseIt; // 0x1694
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionXMultiplier; // 0x1698
-		::System::Boolean ESPP_lensDistortionXMultiplier_EnableFade; // 0x16A0
-		::System::Boolean ESPP_lensDistortionXMultiplier_EnableOverrideDefaultValue; // 0x16A1
-		::System::Single ESPP_lensDistortionXMultiplier_OverrideDefaultValue; // 0x16A4
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionYMultiplier_FieldHandleType; // 0x16A8
-		::System::Boolean ESPP_lensDistortionYMultiplier_UseIt; // 0x16AC
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionYMultiplier; // 0x16B0
-		::System::Boolean ESPP_lensDistortionYMultiplier_EnableFade; // 0x16B8
-		::System::Boolean ESPP_lensDistortionYMultiplier_EnableOverrideDefaultValue; // 0x16B9
-		::System::Single ESPP_lensDistortionYMultiplier_OverrideDefaultValue; // 0x16BC
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionCenter_FieldHandleType; // 0x16C0
-		::System::Boolean ESPP_lensDistortionCenter_UseIt; // 0x16C4
-		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_lensDistortionCenter; // 0x16C8
-		::System::Boolean ESPP_lensDistortionCenter_EnableFade; // 0x16D0
-		::System::Boolean ESPP_lensDistortionCenter_EnableOverrideDefaultValue; // 0x16D1
-		::UnityEngine::Vector2 ESPP_lensDistortionCenter_OverrideDefaultValue; // 0x16D4
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionScale_FieldHandleType; // 0x16DC
-		::System::Boolean ESPP_lensDistortionScale_UseIt; // 0x16E0
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionScale; // 0x16E8
-		::System::Boolean ESPP_lensDistortionScale_EnableFade; // 0x16F0
-		::System::Boolean ESPP_lensDistortionScale_EnableOverrideDefaultValue; // 0x16F1
-		::System::Single ESPP_lensDistortionScale_OverrideDefaultValue; // 0x16F4
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_enableDistanceDistortionColorization_FieldHandleType; // 0x16F8
-		::System::Boolean ESPP_enableDistanceDistortionColorization_UseIt; // 0x16FC
-		::MoleMole::EffectSimulate::BoolKeyframeCurve* ESPP_enableDistanceDistortionColorization; // 0x1700
-		::System::Boolean ESPP_enableDistanceDistortionColorization_EnableFade; // 0x1708
-		::System::Boolean ESPP_enableDistanceDistortionColorization_EnableOverrideDefaultValue; // 0x1709
-		::System::Boolean ESPP_enableDistanceDistortionColorization_OverrideDefaultValue; // 0x170A
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizationEffect_FieldHandleType; // 0x170C
-		::System::Boolean ESPP_distanceColorizationEffect_UseIt; // 0x1710
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceColorizationEffect; // 0x1718
-		::System::Boolean ESPP_distanceColorizationEffect_EnableFade; // 0x1720
-		::System::Boolean ESPP_distanceColorizationEffect_EnableOverrideDefaultValue; // 0x1721
-		::System::Single ESPP_distanceColorizationEffect_OverrideDefaultValue; // 0x1724
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionTexture_FieldHandleType; // 0x1728
-		::UnityEngine::Texture* ESPP_distanceDistortionTexture; // 0x1730
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizeTexture_FieldHandleType; // 0x1738
-		::UnityEngine::Texture* ESPP_distanceColorizeTexture; // 0x1740
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionStart_FieldHandleType; // 0x1748
-		::System::Boolean ESPP_distanceDistortionStart_UseIt; // 0x174C
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionStart; // 0x1750
-		::System::Boolean ESPP_distanceDistortionStart_EnableFade; // 0x1758
-		::System::Boolean ESPP_distanceDistortionStart_EnableOverrideDefaultValue; // 0x1759
-		::System::Single ESPP_distanceDistortionStart_OverrideDefaultValue; // 0x175C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionEnd_FieldHandleType; // 0x1760
-		::System::Boolean ESPP_distanceDistortionEnd_UseIt; // 0x1764
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionEnd; // 0x1768
-		::System::Boolean ESPP_distanceDistortionEnd_EnableFade; // 0x1770
-		::System::Boolean ESPP_distanceDistortionEnd_EnableOverrideDefaultValue; // 0x1771
-		::System::Single ESPP_distanceDistortionEnd_OverrideDefaultValue; // 0x1774
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionFadeRange_FieldHandleType; // 0x1778
-		::System::Boolean ESPP_distanceDistortionFadeRange_UseIt; // 0x177C
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionFadeRange; // 0x1780
-		::System::Boolean ESPP_distanceDistortionFadeRange_EnableFade; // 0x1788
-		::System::Boolean ESPP_distanceDistortionFadeRange_EnableOverrideDefaultValue; // 0x1789
-		::System::Single ESPP_distanceDistortionFadeRange_OverrideDefaultValue; // 0x178C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionHeightStart_FieldHandleType; // 0x1790
-		::System::Boolean ESPP_distanceDistortionHeightStart_UseIt; // 0x1794
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionHeightStart; // 0x1798
-		::System::Boolean ESPP_distanceDistortionHeightStart_EnableFade; // 0x17A0
-		::System::Boolean ESPP_distanceDistortionHeightStart_EnableOverrideDefaultValue; // 0x17A1
-		::System::Single ESPP_distanceDistortionHeightStart_OverrideDefaultValue; // 0x17A4
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionHeightEnd_FieldHandleType; // 0x17A8
-		::System::Boolean ESPP_distanceDistortionHeightEnd_UseIt; // 0x17AC
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionHeightEnd; // 0x17B0
-		::System::Boolean ESPP_distanceDistortionHeightEnd_EnableFade; // 0x17B8
-		::System::Boolean ESPP_distanceDistortionHeightEnd_EnableOverrideDefaultValue; // 0x17B9
-		::System::Single ESPP_distanceDistortionHeightEnd_OverrideDefaultValue; // 0x17BC
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionHeightFadeRange_FieldHandleType; // 0x17C0
-		::System::Boolean ESPP_distanceDistortionHeightFadeRange_UseIt; // 0x17C4
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionHeightFadeRange; // 0x17C8
-		::System::Boolean ESPP_distanceDistortionHeightFadeRange_EnableFade; // 0x17D0
-		::System::Boolean ESPP_distanceDistortionHeightFadeRange_EnableOverrideDefaultValue; // 0x17D1
-		::System::Single ESPP_distanceDistortionHeightFadeRange_OverrideDefaultValue; // 0x17D4
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionOffsetSpeed_FieldHandleType; // 0x17D8
-		::System::Boolean ESPP_distanceDistortionOffsetSpeed_UseIt; // 0x17DC
-		::MoleMole::EffectSimulate::Vector3KeyframeCurve* ESPP_distanceDistortionOffsetSpeed; // 0x17E0
-		::System::Boolean ESPP_distanceDistortionOffsetSpeed_EnableFade; // 0x17E8
-		::System::Boolean ESPP_distanceDistortionOffsetSpeed_EnableOverrideDefaultValue; // 0x17E9
-		::UnityEngine::Vector3 ESPP_distanceDistortionOffsetSpeed_OverrideDefaultValue; // 0x17EC
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionTiling_FieldHandleType; // 0x17F8
-		::System::Boolean ESPP_distanceDistortionTiling_UseIt; // 0x17FC
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionTiling; // 0x1800
-		::System::Boolean ESPP_distanceDistortionTiling_EnableFade; // 0x1808
-		::System::Boolean ESPP_distanceDistortionTiling_EnableOverrideDefaultValue; // 0x1809
-		::System::Single ESPP_distanceDistortionTiling_OverrideDefaultValue; // 0x180C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionIntensity_FieldHandleType; // 0x1810
-		::System::Boolean ESPP_distanceDistortionIntensity_UseIt; // 0x1814
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionIntensity; // 0x1818
-		::System::Boolean ESPP_distanceDistortionIntensity_EnableFade; // 0x1820
-		::System::Boolean ESPP_distanceDistortionIntensity_EnableOverrideDefaultValue; // 0x1821
-		::System::Single ESPP_distanceDistortionIntensity_OverrideDefaultValue; // 0x1824
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizationOffsetSpeed_FieldHandleType; // 0x1828
-		::System::Boolean ESPP_distanceColorizationOffsetSpeed_UseIt; // 0x182C
-		::MoleMole::EffectSimulate::Vector3KeyframeCurve* ESPP_distanceColorizationOffsetSpeed; // 0x1830
-		::System::Boolean ESPP_distanceColorizationOffsetSpeed_EnableFade; // 0x1838
-		::System::Boolean ESPP_distanceColorizationOffsetSpeed_EnableOverrideDefaultValue; // 0x1839
-		::UnityEngine::Vector3 ESPP_distanceColorizationOffsetSpeed_OverrideDefaultValue; // 0x183C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizationTiling_FieldHandleType; // 0x1848
-		::System::Boolean ESPP_distanceColorizationTiling_UseIt; // 0x184C
-		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceColorizationTiling; // 0x1850
-		::System::Boolean ESPP_distanceColorizationTiling_EnableFade; // 0x1858
-		::System::Boolean ESPP_distanceColorizationTiling_EnableOverrideDefaultValue; // 0x1859
-		::System::Single ESPP_distanceColorizationTiling_OverrideDefaultValue; // 0x185C
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionColor_FieldHandleType; // 0x1860
-		::System::Boolean ESPP_distanceDistortionColor_UseIt; // 0x1864
-		::MoleMole::EffectSimulate::ColorKeyframeCurve* ESPP_distanceDistortionColor; // 0x1868
-		::System::Boolean ESPP_distanceDistortionColor_EnableFade; // 0x1870
-		::System::Boolean ESPP_distanceDistortionColor_EnableOverrideDefaultValue; // 0x1871
-		::UnityEngine::Color ESPP_distanceDistortionColor_OverrideDefaultValue; // 0x1874
-		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionBlendMode_FieldHandleType; // 0x1884
-		::UnityEngine::Rendering::Universal::DistanceDistortionBlendMode ESPP_distanceDistortionBlendMode; // 0x1888
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineInUberShader_FieldHandleType; // 0x1554
+		::System::Boolean ESPP_outlineInUberShader_UseIt; // 0x1558
+		::MoleMole::EffectSimulate::BoolKeyframeCurve* ESPP_outlineInUberShader; // 0x1560
+		::System::Boolean ESPP_outlineInUberShader_EnableFade; // 0x1568
+		::System::Boolean ESPP_outlineInUberShader_EnableOverrideDefaultValue; // 0x1569
+		::System::Boolean ESPP_outlineInUberShader_OverrideDefaultValue; // 0x156A
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortion_FieldHandleType; // 0x156C
+		::System::Boolean ESPP_outlineDistortion_UseIt; // 0x1570
+		::MoleMole::EffectSimulate::BoolKeyframeCurve* ESPP_outlineDistortion; // 0x1578
+		::System::Boolean ESPP_outlineDistortion_EnableFade; // 0x1580
+		::System::Boolean ESPP_outlineDistortion_EnableOverrideDefaultValue; // 0x1581
+		::System::Boolean ESPP_outlineDistortion_OverrideDefaultValue; // 0x1582
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionTex_FieldHandleType; // 0x1584
+		::UnityEngine::Texture* ESPP_outlineDistortionTex; // 0x1588
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionTexTiling_FieldHandleType; // 0x1590
+		::System::Boolean ESPP_outlineDistortionTexTiling_UseIt; // 0x1594
+		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionTexTiling; // 0x1598
+		::System::Boolean ESPP_outlineDistortionTexTiling_EnableFade; // 0x15A0
+		::System::Boolean ESPP_outlineDistortionTexTiling_EnableOverrideDefaultValue; // 0x15A1
+		::UnityEngine::Vector2 ESPP_outlineDistortionTexTiling_OverrideDefaultValue; // 0x15A4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionTexOffset_FieldHandleType; // 0x15AC
+		::System::Boolean ESPP_outlineDistortionTexOffset_UseIt; // 0x15B0
+		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionTexOffset; // 0x15B8
+		::System::Boolean ESPP_outlineDistortionTexOffset_EnableFade; // 0x15C0
+		::System::Boolean ESPP_outlineDistortionTexOffset_EnableOverrideDefaultValue; // 0x15C1
+		::UnityEngine::Vector2 ESPP_outlineDistortionTexOffset_OverrideDefaultValue; // 0x15C4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionUVSpeed_FieldHandleType; // 0x15CC
+		::System::Boolean ESPP_outlineDistortionUVSpeed_UseIt; // 0x15D0
+		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionUVSpeed; // 0x15D8
+		::System::Boolean ESPP_outlineDistortionUVSpeed_EnableFade; // 0x15E0
+		::System::Boolean ESPP_outlineDistortionUVSpeed_EnableOverrideDefaultValue; // 0x15E1
+		::UnityEngine::Vector2 ESPP_outlineDistortionUVSpeed_OverrideDefaultValue; // 0x15E4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionOffset_FieldHandleType; // 0x15EC
+		::System::Boolean ESPP_outlineDistortionOffset_UseIt; // 0x15F0
+		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionOffset; // 0x15F8
+		::System::Boolean ESPP_outlineDistortionOffset_EnableFade; // 0x1600
+		::System::Boolean ESPP_outlineDistortionOffset_EnableOverrideDefaultValue; // 0x1601
+		::UnityEngine::Vector2 ESPP_outlineDistortionOffset_OverrideDefaultValue; // 0x1604
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_outlineDistortionIntensity_FieldHandleType; // 0x160C
+		::System::Boolean ESPP_outlineDistortionIntensity_UseIt; // 0x1610
+		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_outlineDistortionIntensity; // 0x1618
+		::System::Boolean ESPP_outlineDistortionIntensity_EnableFade; // 0x1620
+		::System::Boolean ESPP_outlineDistortionIntensity_EnableOverrideDefaultValue; // 0x1621
+		::UnityEngine::Vector2 ESPP_outlineDistortionIntensity_OverrideDefaultValue; // 0x1624
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetOn_FieldHandleType; // 0x162C
+		::System::Boolean ESPP_textureSheetOn; // 0x1630
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetTex_FieldHandleType; // 0x1634
+		::UnityEngine::Texture* ESPP_textureSheetTex; // 0x1638
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetXY_FieldHandleType; // 0x1640
+		::UnityEngine::Vector2 ESPP_textureSheetXY; // 0x1644
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetIndex_FieldHandleType; // 0x164C
+		::System::Boolean ESPP_textureSheetIndex_UseIt; // 0x1650
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_textureSheetIndex; // 0x1658
+		::System::Boolean ESPP_textureSheetIndex_EnableFade; // 0x1660
+		::System::Boolean ESPP_textureSheetIndex_EnableOverrideDefaultValue; // 0x1661
+		::System::Int32 ESPP_textureSheetIndex_OverrideDefaultValue; // 0x1664
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_textureSheetColor_FieldHandleType; // 0x1668
+		::System::Boolean ESPP_textureSheetColor_UseIt; // 0x166C
+		::MoleMole::EffectSimulate::ColorKeyframeCurve* ESPP_textureSheetColor; // 0x1670
+		::System::Boolean ESPP_textureSheetColor_EnableFade; // 0x1678
+		::System::Boolean ESPP_textureSheetColor_EnableOverrideDefaultValue; // 0x1679
+		::UnityEngine::Color ESPP_textureSheetColor_OverrideDefaultValue; // 0x167C
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionIntensity_FieldHandleType; // 0x168C
+		::System::Boolean ESPP_lensDistortionIntensity_UseIt; // 0x1690
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionIntensity; // 0x1698
+		::System::Boolean ESPP_lensDistortionIntensity_EnableFade; // 0x16A0
+		::System::Boolean ESPP_lensDistortionIntensity_EnableOverrideDefaultValue; // 0x16A1
+		::System::Single ESPP_lensDistortionIntensity_OverrideDefaultValue; // 0x16A4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionXMultiplier_FieldHandleType; // 0x16A8
+		::System::Boolean ESPP_lensDistortionXMultiplier_UseIt; // 0x16AC
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionXMultiplier; // 0x16B0
+		::System::Boolean ESPP_lensDistortionXMultiplier_EnableFade; // 0x16B8
+		::System::Boolean ESPP_lensDistortionXMultiplier_EnableOverrideDefaultValue; // 0x16B9
+		::System::Single ESPP_lensDistortionXMultiplier_OverrideDefaultValue; // 0x16BC
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionYMultiplier_FieldHandleType; // 0x16C0
+		::System::Boolean ESPP_lensDistortionYMultiplier_UseIt; // 0x16C4
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionYMultiplier; // 0x16C8
+		::System::Boolean ESPP_lensDistortionYMultiplier_EnableFade; // 0x16D0
+		::System::Boolean ESPP_lensDistortionYMultiplier_EnableOverrideDefaultValue; // 0x16D1
+		::System::Single ESPP_lensDistortionYMultiplier_OverrideDefaultValue; // 0x16D4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionCenter_FieldHandleType; // 0x16D8
+		::System::Boolean ESPP_lensDistortionCenter_UseIt; // 0x16DC
+		::MoleMole::EffectSimulate::Vector2KeyframeCurve* ESPP_lensDistortionCenter; // 0x16E0
+		::System::Boolean ESPP_lensDistortionCenter_EnableFade; // 0x16E8
+		::System::Boolean ESPP_lensDistortionCenter_EnableOverrideDefaultValue; // 0x16E9
+		::UnityEngine::Vector2 ESPP_lensDistortionCenter_OverrideDefaultValue; // 0x16EC
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_lensDistortionScale_FieldHandleType; // 0x16F4
+		::System::Boolean ESPP_lensDistortionScale_UseIt; // 0x16F8
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_lensDistortionScale; // 0x1700
+		::System::Boolean ESPP_lensDistortionScale_EnableFade; // 0x1708
+		::System::Boolean ESPP_lensDistortionScale_EnableOverrideDefaultValue; // 0x1709
+		::System::Single ESPP_lensDistortionScale_OverrideDefaultValue; // 0x170C
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_enableDistanceDistortionColorization_FieldHandleType; // 0x1710
+		::System::Boolean ESPP_enableDistanceDistortionColorization_UseIt; // 0x1714
+		::MoleMole::EffectSimulate::BoolKeyframeCurve* ESPP_enableDistanceDistortionColorization; // 0x1718
+		::System::Boolean ESPP_enableDistanceDistortionColorization_EnableFade; // 0x1720
+		::System::Boolean ESPP_enableDistanceDistortionColorization_EnableOverrideDefaultValue; // 0x1721
+		::System::Boolean ESPP_enableDistanceDistortionColorization_OverrideDefaultValue; // 0x1722
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizationEffect_FieldHandleType; // 0x1724
+		::System::Boolean ESPP_distanceColorizationEffect_UseIt; // 0x1728
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceColorizationEffect; // 0x1730
+		::System::Boolean ESPP_distanceColorizationEffect_EnableFade; // 0x1738
+		::System::Boolean ESPP_distanceColorizationEffect_EnableOverrideDefaultValue; // 0x1739
+		::System::Single ESPP_distanceColorizationEffect_OverrideDefaultValue; // 0x173C
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionTexture_FieldHandleType; // 0x1740
+		::UnityEngine::Texture* ESPP_distanceDistortionTexture; // 0x1748
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizeTexture_FieldHandleType; // 0x1750
+		::UnityEngine::Texture* ESPP_distanceColorizeTexture; // 0x1758
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionStart_FieldHandleType; // 0x1760
+		::System::Boolean ESPP_distanceDistortionStart_UseIt; // 0x1764
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionStart; // 0x1768
+		::System::Boolean ESPP_distanceDistortionStart_EnableFade; // 0x1770
+		::System::Boolean ESPP_distanceDistortionStart_EnableOverrideDefaultValue; // 0x1771
+		::System::Single ESPP_distanceDistortionStart_OverrideDefaultValue; // 0x1774
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionEnd_FieldHandleType; // 0x1778
+		::System::Boolean ESPP_distanceDistortionEnd_UseIt; // 0x177C
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionEnd; // 0x1780
+		::System::Boolean ESPP_distanceDistortionEnd_EnableFade; // 0x1788
+		::System::Boolean ESPP_distanceDistortionEnd_EnableOverrideDefaultValue; // 0x1789
+		::System::Single ESPP_distanceDistortionEnd_OverrideDefaultValue; // 0x178C
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionFadeRange_FieldHandleType; // 0x1790
+		::System::Boolean ESPP_distanceDistortionFadeRange_UseIt; // 0x1794
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionFadeRange; // 0x1798
+		::System::Boolean ESPP_distanceDistortionFadeRange_EnableFade; // 0x17A0
+		::System::Boolean ESPP_distanceDistortionFadeRange_EnableOverrideDefaultValue; // 0x17A1
+		::System::Single ESPP_distanceDistortionFadeRange_OverrideDefaultValue; // 0x17A4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionHeightStart_FieldHandleType; // 0x17A8
+		::System::Boolean ESPP_distanceDistortionHeightStart_UseIt; // 0x17AC
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionHeightStart; // 0x17B0
+		::System::Boolean ESPP_distanceDistortionHeightStart_EnableFade; // 0x17B8
+		::System::Boolean ESPP_distanceDistortionHeightStart_EnableOverrideDefaultValue; // 0x17B9
+		::System::Single ESPP_distanceDistortionHeightStart_OverrideDefaultValue; // 0x17BC
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionHeightEnd_FieldHandleType; // 0x17C0
+		::System::Boolean ESPP_distanceDistortionHeightEnd_UseIt; // 0x17C4
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionHeightEnd; // 0x17C8
+		::System::Boolean ESPP_distanceDistortionHeightEnd_EnableFade; // 0x17D0
+		::System::Boolean ESPP_distanceDistortionHeightEnd_EnableOverrideDefaultValue; // 0x17D1
+		::System::Single ESPP_distanceDistortionHeightEnd_OverrideDefaultValue; // 0x17D4
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionHeightFadeRange_FieldHandleType; // 0x17D8
+		::System::Boolean ESPP_distanceDistortionHeightFadeRange_UseIt; // 0x17DC
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionHeightFadeRange; // 0x17E0
+		::System::Boolean ESPP_distanceDistortionHeightFadeRange_EnableFade; // 0x17E8
+		::System::Boolean ESPP_distanceDistortionHeightFadeRange_EnableOverrideDefaultValue; // 0x17E9
+		::System::Single ESPP_distanceDistortionHeightFadeRange_OverrideDefaultValue; // 0x17EC
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionOffsetSpeed_FieldHandleType; // 0x17F0
+		::System::Boolean ESPP_distanceDistortionOffsetSpeed_UseIt; // 0x17F4
+		::MoleMole::EffectSimulate::Vector3KeyframeCurve* ESPP_distanceDistortionOffsetSpeed; // 0x17F8
+		::System::Boolean ESPP_distanceDistortionOffsetSpeed_EnableFade; // 0x1800
+		::System::Boolean ESPP_distanceDistortionOffsetSpeed_EnableOverrideDefaultValue; // 0x1801
+		::UnityEngine::Vector3 ESPP_distanceDistortionOffsetSpeed_OverrideDefaultValue; // 0x1804
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionTiling_FieldHandleType; // 0x1810
+		::System::Boolean ESPP_distanceDistortionTiling_UseIt; // 0x1814
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionTiling; // 0x1818
+		::System::Boolean ESPP_distanceDistortionTiling_EnableFade; // 0x1820
+		::System::Boolean ESPP_distanceDistortionTiling_EnableOverrideDefaultValue; // 0x1821
+		::System::Single ESPP_distanceDistortionTiling_OverrideDefaultValue; // 0x1824
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionIntensity_FieldHandleType; // 0x1828
+		::System::Boolean ESPP_distanceDistortionIntensity_UseIt; // 0x182C
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceDistortionIntensity; // 0x1830
+		::System::Boolean ESPP_distanceDistortionIntensity_EnableFade; // 0x1838
+		::System::Boolean ESPP_distanceDistortionIntensity_EnableOverrideDefaultValue; // 0x1839
+		::System::Single ESPP_distanceDistortionIntensity_OverrideDefaultValue; // 0x183C
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizationOffsetSpeed_FieldHandleType; // 0x1840
+		::System::Boolean ESPP_distanceColorizationOffsetSpeed_UseIt; // 0x1844
+		::MoleMole::EffectSimulate::Vector3KeyframeCurve* ESPP_distanceColorizationOffsetSpeed; // 0x1848
+		::System::Boolean ESPP_distanceColorizationOffsetSpeed_EnableFade; // 0x1850
+		::System::Boolean ESPP_distanceColorizationOffsetSpeed_EnableOverrideDefaultValue; // 0x1851
+		::UnityEngine::Vector3 ESPP_distanceColorizationOffsetSpeed_OverrideDefaultValue; // 0x1854
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceColorizationTiling_FieldHandleType; // 0x1860
+		::System::Boolean ESPP_distanceColorizationTiling_UseIt; // 0x1864
+		::MoleMole::EffectSimulate::FloatKeyframeCurve* ESPP_distanceColorizationTiling; // 0x1868
+		::System::Boolean ESPP_distanceColorizationTiling_EnableFade; // 0x1870
+		::System::Boolean ESPP_distanceColorizationTiling_EnableOverrideDefaultValue; // 0x1871
+		::System::Single ESPP_distanceColorizationTiling_OverrideDefaultValue; // 0x1874
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionColor_FieldHandleType; // 0x1878
+		::System::Boolean ESPP_distanceDistortionColor_UseIt; // 0x187C
+		::MoleMole::EffectSimulate::ColorKeyframeCurve* ESPP_distanceDistortionColor; // 0x1880
+		::System::Boolean ESPP_distanceDistortionColor_EnableFade; // 0x1888
+		::System::Boolean ESPP_distanceDistortionColor_EnableOverrideDefaultValue; // 0x1889
+		::UnityEngine::Color ESPP_distanceDistortionColor_OverrideDefaultValue; // 0x188C
+		::MoleMole::Config::ScreenEffectFieldHandleType ESPP_distanceDistortionBlendMode_FieldHandleType; // 0x189C
+		::UnityEngine::Rendering::Universal::DistanceDistortionBlendMode ESPP_distanceDistortionBlendMode; // 0x18A0
 
 		::System::Void _ctor()
 		{
@@ -1348,24 +1359,19 @@ namespace MoleMole::EffectSimulate
 			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_76ECC59BC7430042_1_OFFSET))(this, a1);
 		}
 
-		::MoleMole::Config::ScreenEffectType Method_5_55D8CF5F1FB0803A()
+		::System::Type* Method_5_A99467CE9479C990()
 		{
-			return ((::MoleMole::Config::ScreenEffectType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_55D8CF5F1FB0803A_OFFSET))(this);
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_OFFSET))(this);
 		}
 
-		::System::String* Method_5_126AB3935214AA22()
+		::System::String* Method_5_DA1BF2C227DC3D86()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_126AB3935214AA22_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_DA1BF2C227DC3D86_OFFSET))(this);
 		}
 
-		::System::Void Method_5_B4596DBEA209120C(::MoleMole::Config::ConfigEntityScreenEffectBase* a1)
+		::System::Type* Method_5_A99467CE9479C990_1()
 		{
-			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigEntityScreenEffectBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_B4596DBEA209120C_OFFSET))(this, a1);
-		}
-
-		::MoleMole::Config::ConfigEntityScreenEffectBase* Method_5_BE3471DF7E3D4326(::System::String* a1, ::System::String* a2, ::System::Single a3, ::MoleMole::Config::ConfigEntityScreenEffectBase*& a4, ::UnityEngine::ScriptableObject*& a5, ::MoleMole::Config::ConfigEntityScreenEffectBase*& a6, ::UnityEngine::ScriptableObject*& a7, ::System::String*& a8)
-		{
-			return ((::MoleMole::Config::ConfigEntityScreenEffectBase*(*)(::PVOID, ::System::String*, ::System::String*, ::System::Single, ::MoleMole::Config::ConfigEntityScreenEffectBase*&, ::UnityEngine::ScriptableObject*&, ::MoleMole::Config::ConfigEntityScreenEffectBase*&, ::UnityEngine::ScriptableObject*&, ::System::String*&))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_BE3471DF7E3D4326_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7, a8);
+			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_1_OFFSET))(this);
 		}
 
 		::System::Void Method_5_E7F1AECA7CFF8AAD(::System::Single a1)
@@ -1373,14 +1379,44 @@ namespace MoleMole::EffectSimulate
 			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_OFFSET))(this, a1);
 		}
 
-		::System::Int32 Method_5_A1D8CD775DEC3C21_1()
+		::System::String* Method_5_581A5078A2F29034()
 		{
-			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A1D8CD775DEC3C21_1_OFFSET))(this);
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_581A5078A2F29034_OFFSET))(this);
 		}
 
-		::System::Type* Method_5_A99467CE9479C990()
+		::System::Void Method_5_E7F1AECA7CFF8AAD_1(::System::Single a1)
 		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_1_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_5_391A84BCD9F51317_1()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_391A84BCD9F51317_1_OFFSET))(this);
+		}
+
+		::System::String* Method_5_126AB3935214AA22()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_126AB3935214AA22_OFFSET))(this);
+		}
+
+		::MoleMole::Config::ConfigEntityScreenEffectBase* Method_5_BE3471DF7E3D4326(::System::String* a1, ::System::String* a2, ::System::Single a3, ::MoleMole::Config::ConfigEntityScreenEffectBase*& a4, ::UnityEngine::ScriptableObject*& a5, ::MoleMole::Config::ConfigEntityScreenEffectBase*& a6, ::UnityEngine::ScriptableObject*& a7, ::System::String*& a8)
+		{
+			return ((::MoleMole::Config::ConfigEntityScreenEffectBase*(*)(::PVOID, ::System::String*, ::System::String*, ::System::Single, ::MoleMole::Config::ConfigEntityScreenEffectBase*&, ::UnityEngine::ScriptableObject*&, ::MoleMole::Config::ConfigEntityScreenEffectBase*&, ::UnityEngine::ScriptableObject*&, ::System::String*&))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_BE3471DF7E3D4326_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7, a8);
+		}
+
+		::System::Void Method_5_B4596DBEA209120C(::MoleMole::Config::ConfigEntityScreenEffectBase* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::Config::ConfigEntityScreenEffectBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_B4596DBEA209120C_OFFSET))(this, a1);
+		}
+
+		::MoleMole::Config::ScreenEffectType Method_5_55D8CF5F1FB0803A()
+		{
+			return ((::MoleMole::Config::ScreenEffectType(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_55D8CF5F1FB0803A_OFFSET))(this);
+		}
+
+		::System::Void Method_5_2685B6183E614529(::System::Single a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_2685B6183E614529_OFFSET))(this, a1);
 		}
 
 		::System::Void Method_5_832295EC279E5994()
@@ -1393,9 +1429,9 @@ namespace MoleMole::EffectSimulate
 			return ((::MoleMole::Config::ConfigEntityScreenEffectBase*(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_3622C2D1E940D3F4_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_5_E7F1AECA7CFF8AAD_1(::System::Single a1)
+		::Sirenix::OdinInspector::ValueDropdownList_1<::System::String*>* Method_5_54BEE211D32F7DEF()
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_E7F1AECA7CFF8AAD_1_OFFSET))(this, a1);
+			return ((::Sirenix::OdinInspector::ValueDropdownList_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_54BEE211D32F7DEF_OFFSET))(this);
 		}
 
 		::MoleMole::Config::ConfigEntityScreenEffectBase* Method_5_D5F190FE5CE966B3(::System::String* a1, ::System::String* a2)
@@ -1403,39 +1439,14 @@ namespace MoleMole::EffectSimulate
 			return ((::MoleMole::Config::ConfigEntityScreenEffectBase*(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_D5F190FE5CE966B3_OFFSET))(this, a1, a2);
 		}
 
-		::System::Void Method_5_2685B6183E614529(::System::Single a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_2685B6183E614529_OFFSET))(this, a1);
-		}
-
-		::System::String* Method_5_DA1BF2C227DC3D86()
-		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_DA1BF2C227DC3D86_OFFSET))(this);
-		}
-
-		::Sirenix::OdinInspector::ValueDropdownList_1<::System::String*>* Method_5_54BEE211D32F7DEF()
-		{
-			return ((::Sirenix::OdinInspector::ValueDropdownList_1<::System::String*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_54BEE211D32F7DEF_OFFSET))(this);
-		}
-
 		::System::Void Method_5_CA373AA1C7054598_1()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_CA373AA1C7054598_1_OFFSET))(this);
 		}
 
-		::System::String* Method_5_581A5078A2F29034()
+		::System::Int32 Method_5_A1D8CD775DEC3C21_1()
 		{
-			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_581A5078A2F29034_OFFSET))(this);
-		}
-
-		::System::Boolean Method_5_391A84BCD9F51317_1()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_391A84BCD9F51317_1_OFFSET))(this);
-		}
-
-		::System::Type* Method_5_A99467CE9479C990_1()
-		{
-			return ((::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A99467CE9479C990_1_OFFSET))(this);
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_EFFECTSIMULATE_ESPOSTPROCESSVREFFECTS_METHOD_5_A1D8CD775DEC3C21_1_OFFSET))(this);
 		}
 	};
 }

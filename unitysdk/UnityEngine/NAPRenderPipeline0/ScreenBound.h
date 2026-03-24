@@ -4,20 +4,20 @@
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_SCREENBOUND_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0x18033770)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SCREENBOUND_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x18033910)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SCREENBOUND__CTOR_OFFSET UNITYSDK_OFFSET(0x18033980)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SCREENBOUND_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0x18655460)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SCREENBOUND_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x18655600)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SCREENBOUND__CTOR_OFFSET UNITYSDK_OFFSET(0x18655670)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ScreenBound_TypeDefinitionIndex = 28313;
+	inline static constexpr unsigned int ScreenBound_TypeDefinitionIndex = 29254;
 
 	class ScreenBound : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::System::Boolean* StaticGet_AnyScreenBoundChanged()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ScreenBound_TypeDefinitionIndex)->GetStaticField(0x6E80);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ScreenBound_TypeDefinitionIndex)->GetStaticField(0x75D0);
 		}
 		::UnityEngine::Bounds bounds; // 0x18
 		::UnityEngine::Vector2 screenOffset; // 0x30

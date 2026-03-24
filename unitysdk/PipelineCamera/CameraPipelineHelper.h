@@ -14,7 +14,7 @@ namespace System { class String; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int CameraPipelineHelper_TypeDefinitionIndex = 34368;
+	inline static constexpr unsigned int CameraPipelineHelper_TypeDefinitionIndex = 35370;
 
 	class CameraPipelineHelper : public ::System::Object
 	{

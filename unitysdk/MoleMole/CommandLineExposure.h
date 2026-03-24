@@ -5,13 +5,13 @@
 
 namespace MoleMole { class ExposureProfileContext; }
 
-#define MOLEMOLE_COMMANDLINEEXPOSURE_METHOD_2_2CD20F10C229CD49_OFFSET UNITYSDK_OFFSET(0x13F80E60)
-#define MOLEMOLE_COMMANDLINEEXPOSURE_METHOD_2_CF01F29BF1CFE3FF_OFFSET UNITYSDK_OFFSET(0x13F80FA0)
-#define MOLEMOLE_COMMANDLINEEXPOSURE__CTOR_OFFSET UNITYSDK_OFFSET(0x13F80F60)
+#define MOLEMOLE_COMMANDLINEEXPOSURE_METHOD_2_2CD20F10C229CD49_OFFSET UNITYSDK_OFFSET(0xF2BA8D0)
+#define MOLEMOLE_COMMANDLINEEXPOSURE_METHOD_2_CF01F29BF1CFE3FF_OFFSET UNITYSDK_OFFSET(0xF2BAA10)
+#define MOLEMOLE_COMMANDLINEEXPOSURE__CTOR_OFFSET UNITYSDK_OFFSET(0xF2BA9D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CommandLineExposure_TypeDefinitionIndex = 60529;
+	inline static constexpr unsigned int CommandLineExposure_TypeDefinitionIndex = 58011;
 
 	class CommandLineExposure : public ::MoleMole::CommandLineSettingBase_2<::MoleMole::ExposureProfileContext*, ::MoleMole::CommandLineExposure*>
 	{

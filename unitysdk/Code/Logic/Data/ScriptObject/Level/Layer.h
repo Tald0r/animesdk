@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define CODE_LOGIC_DATA_SCRIPTOBJECT_LEVEL_LAYER__CTOR_OFFSET UNITYSDK_OFFSET(0xC9FF580)
+#define CODE_LOGIC_DATA_SCRIPTOBJECT_LEVEL_LAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x71F2ED0)
 
 namespace Code::Logic::Data::ScriptObject::Level
 {
-	inline static constexpr unsigned int Layer_TypeDefinitionIndex = 65184;
+	inline static constexpr unsigned int Layer_TypeDefinitionIndex = 56368;
 
 	class Layer : public ::System::Object
 	{

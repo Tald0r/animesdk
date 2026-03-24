@@ -4,11 +4,11 @@
 
 class Class_1_D375C91CCE5D3999;
 
-#define MOLEMOLE_UIACTIVITYROLESKINAWARDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBADFBD0)
+#define MOLEMOLE_UIACTIVITYROLESKINAWARDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBFAC650)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityRoleSkinAwardContext_TypeDefinitionIndex = 70614;
+	inline static constexpr unsigned int UIActivityRoleSkinAwardContext_TypeDefinitionIndex = 58462;
 
 	class UIActivityRoleSkinAwardContext : public ::MoleMole::UIControllerContextBase
 	{

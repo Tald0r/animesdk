@@ -3,7 +3,7 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EDungeonDropType_TypeDefinitionIndex = 15797;
+	inline static constexpr unsigned int EDungeonDropType_TypeDefinitionIndex = 16241;
 
 	enum class EDungeonDropType : ::System::Byte
 	{

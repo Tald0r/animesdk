@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int RTHandleSystem_ResizeMode_TypeDefinitionIndex = 6004;
+	inline static constexpr unsigned int RTHandleSystem_ResizeMode_TypeDefinitionIndex = 6007;
 
 	enum class RTHandleSystem_ResizeMode : ::System::Int32
 	{

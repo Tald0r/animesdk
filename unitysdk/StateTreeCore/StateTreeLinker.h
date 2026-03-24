@@ -1,28 +1,27 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeList_1.h"
-#include "unitysdk/NativeTypes/NativeReadonlyRawPtr_1.h"
 #include "unitysdk/StateTreeCore/StateTreeExternalDataDesc.h"
 #include "unitysdk/StateTreeCore/StateTreeExternalDataRequirement.h"
 #include "unitysdk/StateTreeCore/StateTreeLinkerStatus.h"
-#include "unitysdk/StateTreeCore/StateTreeSchema.h"
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/Allocator.h"
+#include "unitysdk/UnrealTypes/NativeStructList_1.h"
 
-#define STATETREECORE_STATETREELINKER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8EC3D0)
-#define STATETREECORE_STATETREELINKER_GET_STATUS_OFFSET UNITYSDK_OFFSET(0x2C6230)
-#define STATETREECORE_STATETREELINKER_LINKEXTERNALDATA_OFFSET UNITYSDK_OFFSET(0x8EC400)
-#define STATETREECORE_STATETREELINKER__CTOR_OFFSET UNITYSDK_OFFSET(0x8EC380)
+namespace UnrealTypes { class Struct; }
+
+#define STATETREECORE_STATETREELINKER_DISPOSE_OFFSET UNITYSDK_OFFSET(0x9B3CC0)
+#define STATETREECORE_STATETREELINKER_GET_STATUS_OFFSET UNITYSDK_OFFSET(0x2F1F70)
+#define STATETREECORE_STATETREELINKER_LINKEXTERNALDATA_OFFSET UNITYSDK_OFFSET(0x9B3CE0)
+#define STATETREECORE_STATETREELINKER__CTOR_OFFSET UNITYSDK_OFFSET(0x9B3CA0)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeLinker_TypeDefinitionIndex = 26953;
+	inline static constexpr unsigned int StateTreeLinker_TypeDefinitionIndex = 27813;
 
 	struct alignas(8) StateTreeLinker
 	{
-		::NativeTypes::NativeReadonlyRawPtr_1<::StateTreeCore::StateTreeSchema> Schema; // 0x10
-		::StateTreeCore::StateTreeLinkerStatus _status; // 0x18
-		::NativeTypes::NativeList_1<::StateTreeCore::StateTreeExternalDataDesc> ExternalDataDesc; // 0x20
+		::StateTreeCore::StateTreeLinkerStatus _status; // 0x10
+		::UnrealTypes::NativeStructList_1<::StateTreeCore::StateTreeExternalDataDesc> ExternalDataDesc; // 0x18
 
 		::System::Void _ctor(::Unity::Collections::Allocator allocator)
 		{
@@ -40,9 +39,9 @@ namespace StateTreeCore
 		}
 
 		/*
-		::System::Void LinkExternalData(::StateTreeCore::StateTreeExternalDataHandle& handle, ::UnrealTypes::FStructHandle scriptStruct, ::StateTreeCore::StateTreeExternalDataRequirement requirement)
+		::System::Void LinkExternalData(::StateTreeCore::StateTreeExternalDataHandle& handle, ::UnrealTypes::TObjectHandle_1<::UnrealTypes::Struct*> scriptStruct, ::StateTreeCore::StateTreeExternalDataRequirement requirement)
 		{
-			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeExternalDataHandle&, ::UnrealTypes::FStructHandle, ::StateTreeCore::StateTreeExternalDataRequirement))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREELINKER_LINKEXTERNALDATA_OFFSET))(this, handle, scriptStruct, requirement);
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeExternalDataHandle&, ::UnrealTypes::TObjectHandle_1<::UnrealTypes::Struct*>, ::StateTreeCore::StateTreeExternalDataRequirement))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREELINKER_LINKEXTERNALDATA_OFFSET))(this, handle, scriptStruct, requirement);
 		}
 		*/
 	};

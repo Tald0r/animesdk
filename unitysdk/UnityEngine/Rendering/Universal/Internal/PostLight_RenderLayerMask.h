@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int PostLight_RenderLayerMask_TypeDefinitionIndex = 28879;
+	inline static constexpr unsigned int PostLight_RenderLayerMask_TypeDefinitionIndex = 29829;
 
 	enum class PostLight_RenderLayerMask : ::System::Int32
 	{

@@ -13,23 +13,23 @@ namespace System::IO { class TextReader; }
 namespace System::IO { class TextWriter; }
 namespace System::Text { class Encoding; }
 
-#define SYSTEM_CONSOLE_DOCONSOLECANCELEVENT_OFFSET UNITYSDK_OFFSET(0x17F4CDE0)
-#define SYSTEM_CONSOLE_GET_ERROR_OFFSET UNITYSDK_OFFSET(0x17F4C7B0)
-#define SYSTEM_CONSOLE_OPENSTANDARDERROR_OFFSET UNITYSDK_OFFSET(0x17F4C750)
-#define SYSTEM_CONSOLE_OPENSTANDARDINPUT_OFFSET UNITYSDK_OFFSET(0x17F4C690)
-#define SYSTEM_CONSOLE_OPENSTANDARDOUTPUT_OFFSET UNITYSDK_OFFSET(0x17F4C6F0)
-#define SYSTEM_CONSOLE_OPEN_OFFSET UNITYSDK_OFFSET(0x17F4C810)
-#define SYSTEM_CONSOLE_READKEY_1_OFFSET UNITYSDK_OFFSET(0x17F4CD00)
-#define SYSTEM_CONSOLE_READKEY_OFFSET UNITYSDK_OFFSET(0x17F4CC40)
-#define SYSTEM_CONSOLE_RESETCOLOR_OFFSET UNITYSDK_OFFSET(0x17F4CD80)
-#define SYSTEM_CONSOLE_SETOUT_OFFSET UNITYSDK_OFFSET(0x17F4C900)
-#define SYSTEM_CONSOLE_SETUPSTREAMS_OFFSET UNITYSDK_OFFSET(0x17F4BFC0)
-#define SYSTEM_CONSOLE_SET_FOREGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x17F4CBE0)
-#define SYSTEM_CONSOLE_WRITELINE_1_OFFSET UNITYSDK_OFFSET(0x17F4CAB0)
-#define SYSTEM_CONSOLE_WRITELINE_2_OFFSET UNITYSDK_OFFSET(0x17F4CB40)
-#define SYSTEM_CONSOLE_WRITELINE_OFFSET UNITYSDK_OFFSET(0x17F4CA20)
-#define SYSTEM_CONSOLE_WRITE_OFFSET UNITYSDK_OFFSET(0x17F4C990)
-#define SYSTEM_CONSOLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x17F4BEB0)
+#define SYSTEM_CONSOLE_DOCONSOLECANCELEVENT_OFFSET UNITYSDK_OFFSET(0x18581000)
+#define SYSTEM_CONSOLE_GET_ERROR_OFFSET UNITYSDK_OFFSET(0x185809D0)
+#define SYSTEM_CONSOLE_OPENSTANDARDERROR_OFFSET UNITYSDK_OFFSET(0x18580970)
+#define SYSTEM_CONSOLE_OPENSTANDARDINPUT_OFFSET UNITYSDK_OFFSET(0x185808B0)
+#define SYSTEM_CONSOLE_OPENSTANDARDOUTPUT_OFFSET UNITYSDK_OFFSET(0x18580910)
+#define SYSTEM_CONSOLE_OPEN_OFFSET UNITYSDK_OFFSET(0x18580A30)
+#define SYSTEM_CONSOLE_READKEY_1_OFFSET UNITYSDK_OFFSET(0x18580F20)
+#define SYSTEM_CONSOLE_READKEY_OFFSET UNITYSDK_OFFSET(0x18580E60)
+#define SYSTEM_CONSOLE_RESETCOLOR_OFFSET UNITYSDK_OFFSET(0x18580FA0)
+#define SYSTEM_CONSOLE_SETOUT_OFFSET UNITYSDK_OFFSET(0x18580B20)
+#define SYSTEM_CONSOLE_SETUPSTREAMS_OFFSET UNITYSDK_OFFSET(0x185801E0)
+#define SYSTEM_CONSOLE_SET_FOREGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0x18580E00)
+#define SYSTEM_CONSOLE_WRITELINE_1_OFFSET UNITYSDK_OFFSET(0x18580CD0)
+#define SYSTEM_CONSOLE_WRITELINE_2_OFFSET UNITYSDK_OFFSET(0x18580D60)
+#define SYSTEM_CONSOLE_WRITELINE_OFFSET UNITYSDK_OFFSET(0x18580C40)
+#define SYSTEM_CONSOLE_WRITE_OFFSET UNITYSDK_OFFSET(0x18580BB0)
+#define SYSTEM_CONSOLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x185800D0)
 
 namespace System
 {
@@ -38,33 +38,33 @@ namespace System
 	class Console : public ::System::Object
 	{
 	public:
+		static ::System::Text::Encoding** StaticGet_outputEncoding()
+		{
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xBF0);
+		}
+		static ::System::Text::Encoding** StaticGet_inputEncoding()
+		{
+			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xBF8);
+		}
 		static ::System::IO::TextWriter** StaticGet_stdout()
 		{
-			return (::System::IO::TextWriter**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xBF0);
+			return (::System::IO::TextWriter**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC00);
 		}
 		static ::System::Console_InternalCancelHandler** StaticGet_cancel_handler()
 		{
-			return (::System::Console_InternalCancelHandler**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xBF8);
+			return (::System::Console_InternalCancelHandler**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC08);
 		}
 		static ::System::ConsoleCancelEventHandler** StaticGet_cancel_event()
 		{
-			return (::System::ConsoleCancelEventHandler**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC00);
-		}
-		static ::System::Text::Encoding** StaticGet_outputEncoding()
-		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC08);
-		}
-		static ::System::IO::TextWriter** StaticGet_stderr()
-		{
-			return (::System::IO::TextWriter**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC10);
+			return (::System::ConsoleCancelEventHandler**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC10);
 		}
 		static ::System::IO::TextReader** StaticGet_stdin()
 		{
 			return (::System::IO::TextReader**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC18);
 		}
-		static ::System::Text::Encoding** StaticGet_inputEncoding()
+		static ::System::IO::TextWriter** StaticGet_stderr()
 		{
-			return (::System::Text::Encoding**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC20);
+			return (::System::IO::TextWriter**)Il2CppClass::FromTypeDefinitionIndex(Console_TypeDefinitionIndex)->GetStaticField(0xC20);
 		}
 
 		static ::System::Void _cctor()

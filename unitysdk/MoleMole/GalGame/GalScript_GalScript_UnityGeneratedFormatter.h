@@ -11,26 +11,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x82D5A30)
-#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x82D5A40)
-#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x82D5C40)
-#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x82D5E00)
-#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x82D5DC0)
+#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xA38FD70)
+#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xA38FD80)
+#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xA38FF80)
+#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA390140)
+#define MOLEMOLE_GALGAME_GALSCRIPT_GALSCRIPT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xA390100)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalScript_GalScript_UnityGeneratedFormatter_TypeDefinitionIndex = 53015;
+	inline static constexpr unsigned int GalScript_GalScript_UnityGeneratedFormatter_TypeDefinitionIndex = 57331;
 
 	class GalScript_GalScript_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::GalScript*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::GalPlayableNodeBase*>*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::GalPlayableNodeBase*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(GalScript_GalScript_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3C060);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::GalPlayableNodeBase*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(GalScript_GalScript_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3ED80);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::GalPlayableSegment*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::GalPlayableSegment*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(GalScript_GalScript_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3C068);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::GalPlayableSegment*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(GalScript_GalScript_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3ED88);
 		}
 
 		::System::Void _ctor()

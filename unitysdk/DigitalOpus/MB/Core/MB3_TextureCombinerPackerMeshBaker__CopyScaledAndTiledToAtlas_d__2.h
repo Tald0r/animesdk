@@ -13,40 +13,40 @@ namespace DigitalOpus::MB::Core { class MeshBakerMaterialTexture; }
 namespace DigitalOpus::MB::Core { class ProgressUpdateDelegate; }
 namespace DigitalOpus::MB::Core { class ShaderTextureProperty; }
 
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1A34DF20)
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A34F010)
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A34F070)
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1A34F020)
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A34DF10)
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2__CTOR_OFFSET UNITYSDK_OFFSET(0x1A34DF00)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1A90BF60)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A90D040)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A90D0A0)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1A90D050)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A90BF50)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPACKERMESHBAKER__COPYSCALEDANDTILEDTOATLAS_D__2__CTOR_OFFSET UNITYSDK_OFFSET(0x1A90BF40)
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB3_TextureCombinerPackerMeshBaker__CopyScaledAndTiledToAtlas_d__2_TypeDefinitionIndex = 81378;
+	inline static constexpr unsigned int MB3_TextureCombinerPackerMeshBaker__CopyScaledAndTiledToAtlas_d__2_TypeDefinitionIndex = 83419;
 
 	class MB3_TextureCombinerPackerMeshBaker__CopyScaledAndTiledToAtlas_d__2 : public ::System::Object
 	{
 	public:
-		::DigitalOpus::MB::Core::ProgressUpdateDelegate* progressInfo; // 0x10
-		::DigitalOpus::MB::Core::MeshBakerMaterialTexture* source; // 0x18
-		::DigitalOpus::MB::Core::ShaderTextureProperty* shaderPropertyName; // 0x20
-		::DigitalOpus::MB::Core::MB3_TextureCombiner* combiner; // 0x28
-		::System::Object* __2__current; // 0x30
-		::Il2CppArray<::Il2CppArray<::UnityEngine::Color>*>* atlasPixels; // 0x38
-		::DigitalOpus::MB::Core::MB_TexSet* sourceMaterial; // 0x40
-		::DigitalOpus::MB::Core::MB3_TextureCombinerPipeline_TexturePipelineData* data; // 0x48
+		::DigitalOpus::MB::Core::MB3_TextureCombinerPipeline_TexturePipelineData* data; // 0x10
+		::DigitalOpus::MB::Core::ShaderTextureProperty* shaderPropertyName; // 0x18
+		::DigitalOpus::MB::Core::MeshBakerMaterialTexture* source; // 0x20
+		::DigitalOpus::MB::Core::MB_TexSet* sourceMaterial; // 0x28
+		::Il2CppArray<::Il2CppArray<::UnityEngine::Color>*>* atlasPixels; // 0x30
+		::System::Object* __2__current; // 0x38
+		::DigitalOpus::MB::Core::MB3_TextureCombiner* combiner; // 0x40
+		::DigitalOpus::MB::Core::ProgressUpdateDelegate* progressInfo; // 0x48
 		::System::Int32 _j_5__5; // 0x50
-		::System::Int32 targY; // 0x54
-		::System::Int32 targX; // 0x58
-		::System::Int32 targH; // 0x5C
-		::System::Int32 _i_5__4; // 0x60
-		::System::Int32 _h_5__3; // 0x64
+		::DigitalOpus::MB::Core::AtlasPadding padding; // 0x54
+		::System::Int32 targW; // 0x5C
+		::System::Int32 targY; // 0x60
+		::System::Int32 targH; // 0x64
 		::System::Int32 __1__state; // 0x68
-		::DigitalOpus::MB::Core::DRect srcSamplingRect; // 0x70
-		::DigitalOpus::MB::Core::AtlasPadding padding; // 0x90
-		::DigitalOpus::MB::Core::MB2_LogLevel LOG_LEVEL; // 0x98
-		::System::Int32 _w_5__2; // 0x9C
-		::System::Int32 targW; // 0xA0
+		::DigitalOpus::MB::Core::MB2_LogLevel LOG_LEVEL; // 0x6C
+		::System::Int32 targX; // 0x70
+		::System::Int32 _w_5__2; // 0x74
+		::DigitalOpus::MB::Core::DRect srcSamplingRect; // 0x78
+		::System::Int32 _h_5__3; // 0x98
+		::System::Int32 _i_5__4; // 0x9C
 
 		::System::Void _ctor(::System::Int32 __1__state)
 		{

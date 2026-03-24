@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIRoleEquipReplaceWidgetController; }
 
-#define MOLEMOLE_UIROLEWEAPONRECOMMENDPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC3C2BB0)
+#define MOLEMOLE_UIROLEWEAPONRECOMMENDPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA45AC50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleWeaponRecommendPopContext_TypeDefinitionIndex = 69718;
+	inline static constexpr unsigned int UIRoleWeaponRecommendPopContext_TypeDefinitionIndex = 68159;
 
 	class UIRoleWeaponRecommendPopContext : public ::MoleMole::UIControllerContextBase
 	{

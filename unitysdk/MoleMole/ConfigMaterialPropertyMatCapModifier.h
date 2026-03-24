@@ -8,77 +8,73 @@
 #include "unitysdk/MoleMole/MaterialPropertyModifierValueFloat.h"
 #include "unitysdk/MoleMole/MaterialPropertyModifierValueTexture.h"
 #include "unitysdk/MoleMole/MaterialPropertyModifierValueVector.h"
-#include "unitysdk/UnityEngine/Color.h"
 
 class Class_1_9610394F487FC231;
 
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_DOAFTERONENTER_OFFSET UNITYSDK_OFFSET(0xE448FA0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_DOONENTER_OFFSET UNITYSDK_OFFSET(0xE448EB0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_DOWARMUP_OFFSET UNITYSDK_OFFSET(0xE44EEF0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PREPAREONENTER_OFFSET UNITYSDK_OFFSET(0xE448B40)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PREPAREONEXIT_OFFSET UNITYSDK_OFFSET(0xE4491D0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PROCESSENTER_OFFSET UNITYSDK_OFFSET(0xE449060)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PROCESSEXIT_OFFSET UNITYSDK_OFFSET(0xE449290)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PROCESSKEEP_OFFSET UNITYSDK_OFFSET(0xE44C320)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_SYNCENABLES_OFFSET UNITYSDK_OFFSET(0xE44AB40)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_SYNCVALUES_OFFSET UNITYSDK_OFFSET(0xE4494B0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xE44F110)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_DOAFTERONENTER_OFFSET UNITYSDK_OFFSET(0xE44F130)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_DOONENTER_OFFSET UNITYSDK_OFFSET(0xE44F140)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_DOWARMUP_OFFSET UNITYSDK_OFFSET(0xE44F150)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PREPAREONENTER_OFFSET UNITYSDK_OFFSET(0xE44F1B0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PREPAREONEXIT_OFFSET UNITYSDK_OFFSET(0xE44F210)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PROCESSENTER_OFFSET UNITYSDK_OFFSET(0xE44F280)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PROCESSEXIT_OFFSET UNITYSDK_OFFSET(0xE44F330)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_DOAFTERONENTER_OFFSET UNITYSDK_OFFSET(0xD7CFB70)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_DOONENTER_OFFSET UNITYSDK_OFFSET(0xD7CFAA0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_DOWARMUP_OFFSET UNITYSDK_OFFSET(0xD7D5900)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PREPAREONENTER_OFFSET UNITYSDK_OFFSET(0xD7CF880)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PREPAREONEXIT_OFFSET UNITYSDK_OFFSET(0xD7CFD60)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PROCESSENTER_OFFSET UNITYSDK_OFFSET(0xD7CFC30)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PROCESSEXIT_OFFSET UNITYSDK_OFFSET(0xD7CFE10)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_PROCESSKEEP_OFFSET UNITYSDK_OFFSET(0xD7D2D30)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_SYNCENABLES_OFFSET UNITYSDK_OFFSET(0xD7D15F0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER_SYNCVALUES_OFFSET UNITYSDK_OFFSET(0xD7CFFF0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xD7D5B20)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_DOAFTERONENTER_OFFSET UNITYSDK_OFFSET(0xD7D5B30)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_DOONENTER_OFFSET UNITYSDK_OFFSET(0xD7D5B40)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_DOWARMUP_OFFSET UNITYSDK_OFFSET(0xD7D5B50)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PREPAREONENTER_OFFSET UNITYSDK_OFFSET(0xD7D5BB0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PREPAREONEXIT_OFFSET UNITYSDK_OFFSET(0xD7D5C10)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PROCESSENTER_OFFSET UNITYSDK_OFFSET(0xD7D5C80)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMATCAPMODIFIER___BASE_PROCESSEXIT_OFFSET UNITYSDK_OFFSET(0xD7D5D30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigMaterialPropertyMatCapModifier_TypeDefinitionIndex = 41998;
+	inline static constexpr unsigned int ConfigMaterialPropertyMatCapModifier_TypeDefinitionIndex = 43023;
 
 	class ConfigMaterialPropertyMatCapModifier : public ::MoleMole::ConfigMaterialPropertyModifier
 	{
 	public:
-		::MoleMole::MaterialPropertyModifierValueTexture _MatCapTexFx; // 0x48
-		::MoleMole::MaterialPropertyModifierValueTexture _MatCapBumpMapFx; // 0x78
-		::MoleMole::MaterialPropertyModifierValueTexture _MatCapTex; // 0xA8
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapColorBurstFx; // 0xD8
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapAlphaBurstFx; // 0xE0
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapNormalUSpeedFx; // 0xE8
-		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint5; // 0xF0
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams; // 0x104
-		::MoleMole::MaterialPropertyModifierValueVector _RefractParam5; // 0x11C
-		::MoleMole::MaterialPropertyModifierValueFloat _VertexOffset; // 0x134
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapFX; // 0x13C
-		::MoleMole::MaterialPropertyModifierValueVector _RefractParam3; // 0x144
-		::System::Single _MatCapAlphaBurstFxDefault; // 0x15C
-		::MoleMole::MaterialPropertyModifierValueVector _RefractParam; // 0x160
-		::MoleMole::MaterialPropertyModifierEnumDefine::MaterialPropertyModifierValueMatCapBlendMode _MatCapBlendModeFx; // 0x178
-		::MoleMole::MaterialPropertyModifierEnumDefine::MaterialPropertyModifierValueMatCapType _MatCap; // 0x17B
-		::MoleMole::MaterialPropertyModifierValueBool _UseMatCapMask; // 0x17E
-		::UnityEngine::Color _ColorOverrideAlbedoDefault; // 0x184
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams; // 0x194
-		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint3; // 0x1AC
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapBumpScaleFx; // 0x1C0
-		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint2; // 0x1C8
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams4; // 0x1DC
-		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint4; // 0x1F4
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapUSpeedFx; // 0x208
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams3; // 0x210
-		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTintFx; // 0x228
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams5; // 0x23C
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams5; // 0x254
-		::MoleMole::MaterialPropertyModifierValueVector _RefractParam2; // 0x26C
-		::MoleMole::MaterialPropertyModifierValueVector _RefractParam4; // 0x284
-		::MoleMole::MaterialPropertyModifierValueColor _ColorOverrideAlbedo; // 0x29C
-		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint; // 0x2B0
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapVSpeedFx; // 0x2C4
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams2; // 0x2CC
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams2; // 0x2E4
-		::MoleMole::MaterialPropertyModifierValueFloat _MatCapNormalVSpeedFx; // 0x2FC
-		::UnityEngine::Color _ColorOverrideAlbedoRef; // 0x304
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams3; // 0x314
-		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams4; // 0x32C
-		::System::Single _MatCapAlphaBurstFxRef; // 0x344
+		::MoleMole::MaterialPropertyModifierValueTexture _MatCapTex; // 0x48
+		::MoleMole::MaterialPropertyModifierValueTexture _MatCapTexFx; // 0x78
+		::MoleMole::MaterialPropertyModifierValueTexture _MatCapBumpMapFx; // 0xA8
+		::System::Single _MatCapAlphaBurstFxDefault; // 0xD8
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams3; // 0xDC
+		::MoleMole::MaterialPropertyModifierValueBool _UseMatCapMask; // 0xF4
+		::MoleMole::MaterialPropertyModifierEnumDefine::MaterialPropertyModifierValueMatCapBlendMode _MatCapBlendModeFx; // 0xF7
+		::MoleMole::MaterialPropertyModifierEnumDefine::MaterialPropertyModifierValueMatCapType _MatCap; // 0xFA
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapNormalVSpeedFx; // 0x100
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapNormalUSpeedFx; // 0x108
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams; // 0x110
+		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint3; // 0x128
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapColorBurstFx; // 0x13C
+		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint2; // 0x144
+		::MoleMole::MaterialPropertyModifierValueFloat _VertexOffset; // 0x158
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams2; // 0x160
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapAlphaBurstFx; // 0x178
+		::MoleMole::MaterialPropertyModifierValueVector _RefractParam2; // 0x180
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams4; // 0x198
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams4; // 0x1B0
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams5; // 0x1C8
+		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint4; // 0x1E0
+		::MoleMole::MaterialPropertyModifierValueVector _RefractParam3; // 0x1F4
+		::System::Single _MatCapAlphaBurstFxRef; // 0x20C
+		::MoleMole::MaterialPropertyModifierValueVector _RefractParam4; // 0x210
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapBumpScaleFx; // 0x228
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapUSpeedFx; // 0x230
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapVSpeedFx; // 0x238
+		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint5; // 0x240
+		::MoleMole::MaterialPropertyModifierValueVector _RefractParam5; // 0x254
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams5; // 0x26C
+		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTintFx; // 0x284
+		::MoleMole::MaterialPropertyModifierValueVector _RefractParam; // 0x298
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapParams2; // 0x2B0
+		::MoleMole::MaterialPropertyModifierValueColor _MatCapColorTint; // 0x2C8
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams3; // 0x2DC
+		::MoleMole::MaterialPropertyModifierValueFloat _MatCapFX; // 0x2F4
+		::MoleMole::MaterialPropertyModifierValueVector _MatCapReractParams; // 0x2FC
 
 		::System::Void _ctor()
 		{

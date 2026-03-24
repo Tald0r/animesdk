@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/ChessEntity.h"
 
-#define MOLEMOLE_REDBLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0x9943310)
+#define MOLEMOLE_REDBLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D5FD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RedBlock_TypeDefinitionIndex = 72140;
+	inline static constexpr unsigned int RedBlock_TypeDefinitionIndex = 62139;
 
 	class RedBlock : public ::MoleMole::ChessEntity
 	{

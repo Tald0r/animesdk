@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_03B9C6C413236E4D.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_BATTLEMAPSUBSYSTEM_BATTLECELLINFO_ISEMPTYINFO_OFFSET UNITYSDK_OFFSET(0x3547E0)
+#define MOLEMOLE_BATTLEMAPSUBSYSTEM_BATTLECELLINFO_ISEMPTYINFO_OFFSET UNITYSDK_OFFSET(0x3A9850)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BattleMapSubsystem_BattleCellInfo_TypeDefinitionIndex = 44205;
+	inline static constexpr unsigned int BattleMapSubsystem_BattleCellInfo_TypeDefinitionIndex = 39785;
 
 	struct alignas(1) BattleMapSubsystem_BattleCellInfo
 	{

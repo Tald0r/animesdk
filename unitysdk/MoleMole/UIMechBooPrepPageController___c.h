@@ -5,24 +5,24 @@
 class Class_2_35EE3F274435ACD1;
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIMECHBOOPREPPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCFCE450)
-#define MOLEMOLE_UIMECHBOOPREPPAGECONTROLLER___C__CLICKSCRIPTACTION_B__15_4_OFFSET UNITYSDK_OFFSET(0xCFCE4A0)
-#define MOLEMOLE_UIMECHBOOPREPPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCE490)
+#define MOLEMOLE_UIMECHBOOPREPPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBE2C730)
+#define MOLEMOLE_UIMECHBOOPREPPAGECONTROLLER___C__CLICKSCRIPTACTION_B__15_4_OFFSET UNITYSDK_OFFSET(0xBE2C780)
+#define MOLEMOLE_UIMECHBOOPREPPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBE2C770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMechBooPrepPageController___c_TypeDefinitionIndex = 44796;
+	inline static constexpr unsigned int UIMechBooPrepPageController___c_TypeDefinitionIndex = 50533;
 
 	class UIMechBooPrepPageController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIMechBooPrepPageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIMechBooPrepPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMechBooPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x300D0);
-		}
 		static ::System::Func_2<::Class_2_35EE3F274435ACD1*, ::System::Int32>** StaticGet___9__15_4()
 		{
-			return (::System::Func_2<::Class_2_35EE3F274435ACD1*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMechBooPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x300D8);
+			return (::System::Func_2<::Class_2_35EE3F274435ACD1*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMechBooPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x31C90);
+		}
+		static ::MoleMole::UIMechBooPrepPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIMechBooPrepPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMechBooPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x31C98);
 		}
 
 		static ::System::Void _cctor()

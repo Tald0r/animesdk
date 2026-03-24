@@ -4,11 +4,11 @@
 
 namespace System::Text { class StringBuilder; }
 
-#define ZXING_ONED_UPCEANEXTENSION2SUPPORT__CTOR_OFFSET UNITYSDK_OFFSET(0x17D3E930)
+#define ZXING_ONED_UPCEANEXTENSION2SUPPORT__CTOR_OFFSET UNITYSDK_OFFSET(0x18446390)
 
 namespace ZXing::OneD
 {
-	inline static constexpr unsigned int UPCEANExtension2Support_TypeDefinitionIndex = 8666;
+	inline static constexpr unsigned int UPCEANExtension2Support_TypeDefinitionIndex = 8677;
 
 	class UPCEANExtension2Support : public ::System::Object
 	{

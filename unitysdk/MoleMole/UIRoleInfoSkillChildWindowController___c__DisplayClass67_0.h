@@ -2,14 +2,14 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_161;
+class Class_2_208CC9941471731A_68;
 
-#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADFF8D0)
-#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__INTERNALREFRESHDETAILTITLE_B__0_OFFSET UNITYSDK_OFFSET(0xAE05F40)
+#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB535ED0)
+#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__INTERNALREFRESHDETAILTITLE_B__0_OFFSET UNITYSDK_OFFSET(0xB53C540)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleInfoSkillChildWindowController___c__DisplayClass67_0_TypeDefinitionIndex = 49306;
+	inline static constexpr unsigned int UIRoleInfoSkillChildWindowController___c__DisplayClass67_0_TypeDefinitionIndex = 48912;
 
 	class UIRoleInfoSkillChildWindowController___c__DisplayClass67_0 : public ::System::Object
 	{
@@ -21,9 +21,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Boolean _InternalRefreshDetailTitle_b__0(::Class_2_208CC9941471731A_161* x)
+		::System::Boolean _InternalRefreshDetailTitle_b__0(::Class_2_208CC9941471731A_68* x)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_161*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__INTERNALREFRESHDETAILTITLE_B__0_OFFSET))(this, x);
+			return ((::System::Boolean(*)(::PVOID, ::Class_2_208CC9941471731A_68*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS67_0__INTERNALREFRESHDETAILTITLE_B__0_OFFSET))(this, x);
 		}
 	};
 }

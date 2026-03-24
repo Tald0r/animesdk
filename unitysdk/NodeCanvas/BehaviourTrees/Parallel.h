@@ -9,21 +9,21 @@ namespace NodeCanvas::Framework { class IBlackboard; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Component; }
 
-#define NODECANVAS_BEHAVIOURTREES_PARALLEL_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x183EFC60)
-#define NODECANVAS_BEHAVIOURTREES_PARALLEL_ONRESET_OFFSET UNITYSDK_OFFSET(0x183F0050)
-#define NODECANVAS_BEHAVIOURTREES_PARALLEL_RESETRUNNING_OFFSET UNITYSDK_OFFSET(0x183EFFC0)
-#define NODECANVAS_BEHAVIOURTREES_PARALLEL__CTOR_OFFSET UNITYSDK_OFFSET(0x183F0090)
+#define NODECANVAS_BEHAVIOURTREES_PARALLEL_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1918C910)
+#define NODECANVAS_BEHAVIOURTREES_PARALLEL_ONRESET_OFFSET UNITYSDK_OFFSET(0x1918CD00)
+#define NODECANVAS_BEHAVIOURTREES_PARALLEL_RESETRUNNING_OFFSET UNITYSDK_OFFSET(0x1918CC70)
+#define NODECANVAS_BEHAVIOURTREES_PARALLEL__CTOR_OFFSET UNITYSDK_OFFSET(0x1918CD40)
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Parallel_TypeDefinitionIndex = 25558;
+	inline static constexpr unsigned int Parallel_TypeDefinitionIndex = 27245;
 
 	class Parallel : public ::NodeCanvas::BehaviourTrees::BTComposite
 	{
 	public:
 		::System::Collections::Generic::List_1<::NodeCanvas::Framework::Connection*>* finishedConnections; // 0x78
-		::NodeCanvas::BehaviourTrees::Parallel_ParallelPolicy policy; // 0x80
-		::System::Boolean dynamic; // 0x84
+		::System::Boolean dynamic; // 0x80
+		::NodeCanvas::BehaviourTrees::Parallel_ParallelPolicy policy; // 0x84
 
 		::System::Void _ctor()
 		{

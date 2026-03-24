@@ -7,20 +7,20 @@ namespace Mono::Security::X509 { class X509Stores; }
 namespace System { class String; }
 namespace System::Collections { class ArrayList; }
 
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_CURRENTUSERPATH_OFFSET UNITYSDK_OFFSET(0x1AFE2A60)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_CURRENTUSER_OFFSET UNITYSDK_OFFSET(0x1AFE2CE0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_INTERMEDIATECACERTIFICATES_OFFSET UNITYSDK_OFFSET(0x1AFE30E0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_INTERMEDIATECACRLS_OFFSET UNITYSDK_OFFSET(0x1AFE32F0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_LOCALMACHINEPATH_OFFSET UNITYSDK_OFFSET(0x1AFE2B00)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_LOCALMACHINE_OFFSET UNITYSDK_OFFSET(0x1AFE2DE0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWCURRENTUSERPATH_OFFSET UNITYSDK_OFFSET(0x1AFE2BA0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWCURRENTUSER_OFFSET UNITYSDK_OFFSET(0x1AFE2EE0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWLOCALMACHINEPATH_OFFSET UNITYSDK_OFFSET(0x1AFE2C40)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWLOCALMACHINE_OFFSET UNITYSDK_OFFSET(0x1AFE2FE0)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_TRUSTEDROOTCACRLS_OFFSET UNITYSDK_OFFSET(0x1AFE3740)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_TRUSTEDROOTCERTIFICATES_OFFSET UNITYSDK_OFFSET(0x1AFE3530)
-#define MONO_SECURITY_X509_X509STOREMANAGER_GET_UNTRUSTEDCERTIFICATES_OFFSET UNITYSDK_OFFSET(0x1AFE3980)
-#define MONO_SECURITY_X509_X509STOREMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFE2A50)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_CURRENTUSERPATH_OFFSET UNITYSDK_OFFSET(0x1B5F5720)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_CURRENTUSER_OFFSET UNITYSDK_OFFSET(0x1B5F59A0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_INTERMEDIATECACERTIFICATES_OFFSET UNITYSDK_OFFSET(0x1B5F5DA0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_INTERMEDIATECACRLS_OFFSET UNITYSDK_OFFSET(0x1B5F5FB0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_LOCALMACHINEPATH_OFFSET UNITYSDK_OFFSET(0x1B5F57C0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_LOCALMACHINE_OFFSET UNITYSDK_OFFSET(0x1B5F5AA0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWCURRENTUSERPATH_OFFSET UNITYSDK_OFFSET(0x1B5F5860)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWCURRENTUSER_OFFSET UNITYSDK_OFFSET(0x1B5F5BA0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWLOCALMACHINEPATH_OFFSET UNITYSDK_OFFSET(0x1B5F5900)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_NEWLOCALMACHINE_OFFSET UNITYSDK_OFFSET(0x1B5F5CA0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_TRUSTEDROOTCACRLS_OFFSET UNITYSDK_OFFSET(0x1B5F6400)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_TRUSTEDROOTCERTIFICATES_OFFSET UNITYSDK_OFFSET(0x1B5F61F0)
+#define MONO_SECURITY_X509_X509STOREMANAGER_GET_UNTRUSTEDCERTIFICATES_OFFSET UNITYSDK_OFFSET(0x1B5F6640)
+#define MONO_SECURITY_X509_X509STOREMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5F5710)
 
 namespace Mono::Security::X509
 {
@@ -29,37 +29,37 @@ namespace Mono::Security::X509
 	class X509StoreManager : public ::System::Object
 	{
 	public:
-		static ::System::String** StaticGet__localMachinePath()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x2390);
-		}
 		static ::Mono::Security::X509::X509Stores** StaticGet__userStore()
 		{
-			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x2398);
+			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x2390);
 		}
 		static ::Mono::Security::X509::X509Stores** StaticGet__machineStore()
 		{
-			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23A0);
+			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x2398);
+		}
+		static ::System::String** StaticGet__userPath()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23A0);
 		}
 		static ::System::String** StaticGet__newLocalMachinePath()
 		{
 			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23A8);
 		}
-		static ::Mono::Security::X509::X509Stores** StaticGet__newUserStore()
-		{
-			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23B0);
-		}
 		static ::System::String** StaticGet__newUserPath()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23B8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23B0);
 		}
-		static ::System::String** StaticGet__userPath()
+		static ::Mono::Security::X509::X509Stores** StaticGet__newUserStore()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23C0);
+			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23B8);
 		}
 		static ::Mono::Security::X509::X509Stores** StaticGet__newMachineStore()
 		{
-			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23C8);
+			return (::Mono::Security::X509::X509Stores**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23C0);
+		}
+		static ::System::String** StaticGet__localMachinePath()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(X509StoreManager_TypeDefinitionIndex)->GetStaticField(0x23C8);
 		}
 
 		::System::Void _ctor()

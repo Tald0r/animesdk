@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIPrivateMessageConversionWidgetController; }
 
-#define MOLEMOLE_UIPRIVATEMESSAGECONVERSIONWIDGETCONTROLLER___C__DISPLAYCLASS32_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB260800)
-#define MOLEMOLE_UIPRIVATEMESSAGECONVERSIONWIDGETCONTROLLER___C__DISPLAYCLASS32_0__SETFINISH_B__0_OFFSET UNITYSDK_OFFSET(0xB260810)
+#define MOLEMOLE_UIPRIVATEMESSAGECONVERSIONWIDGETCONTROLLER___C__DISPLAYCLASS32_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7495730)
+#define MOLEMOLE_UIPRIVATEMESSAGECONVERSIONWIDGETCONTROLLER___C__DISPLAYCLASS32_0__SETFINISH_B__0_OFFSET UNITYSDK_OFFSET(0x7495740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPrivateMessageConversionWidgetController___c__DisplayClass32_0_TypeDefinitionIndex = 55806;
+	inline static constexpr unsigned int UIPrivateMessageConversionWidgetController___c__DisplayClass32_0_TypeDefinitionIndex = 57239;
 
 	class UIPrivateMessageConversionWidgetController___c__DisplayClass32_0 : public ::System::Object
 	{

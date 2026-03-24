@@ -5,7 +5,7 @@ namespace System::IO { class Stream; }
 
 namespace ICSharpCode::SharpZipLib::Zip
 {
-	inline static constexpr unsigned int IStaticDataSource_TypeDefinitionIndex = 6741;
+	inline static constexpr unsigned int IStaticDataSource_TypeDefinitionIndex = 6745;
 
 	class IStaticDataSource
 	{

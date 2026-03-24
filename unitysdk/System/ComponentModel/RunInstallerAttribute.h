@@ -4,12 +4,12 @@
 
 namespace System { class Object; }
 
-#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x197E3DE0)
-#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x197E3E60)
-#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_GET_RUNINSTALLER_OFFSET UNITYSDK_OFFSET(0x197E3DD0)
-#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_ISDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x197E3E70)
-#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE__CCTOR_OFFSET UNITYSDK_OFFSET(0x197E3F70)
-#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x197E3DC0)
+#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x19D23160)
+#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19D231E0)
+#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_GET_RUNINSTALLER_OFFSET UNITYSDK_OFFSET(0x19D23150)
+#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE_ISDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19D231F0)
+#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19D232F0)
+#define SYSTEM_COMPONENTMODEL_RUNINSTALLERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19D23140)
 
 namespace System::ComponentModel
 {
@@ -18,15 +18,15 @@ namespace System::ComponentModel
 	class RunInstallerAttribute : public ::System::Attribute
 	{
 	public:
-		static ::System::ComponentModel::RunInstallerAttribute** StaticGet_No()
+		static ::System::ComponentModel::RunInstallerAttribute** StaticGet_Default()
 		{
 			return (::System::ComponentModel::RunInstallerAttribute**)Il2CppClass::FromTypeDefinitionIndex(RunInstallerAttribute_TypeDefinitionIndex)->GetStaticField(0x3AC0);
 		}
-		static ::System::ComponentModel::RunInstallerAttribute** StaticGet_Yes()
+		static ::System::ComponentModel::RunInstallerAttribute** StaticGet_No()
 		{
 			return (::System::ComponentModel::RunInstallerAttribute**)Il2CppClass::FromTypeDefinitionIndex(RunInstallerAttribute_TypeDefinitionIndex)->GetStaticField(0x3AC8);
 		}
-		static ::System::ComponentModel::RunInstallerAttribute** StaticGet_Default()
+		static ::System::ComponentModel::RunInstallerAttribute** StaticGet_Yes()
 		{
 			return (::System::ComponentModel::RunInstallerAttribute**)Il2CppClass::FromTypeDefinitionIndex(RunInstallerAttribute_TypeDefinitionIndex)->GetStaticField(0x3AD0);
 		}

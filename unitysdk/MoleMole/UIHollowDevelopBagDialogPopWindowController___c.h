@@ -5,24 +5,24 @@
 class Class_1_0D6706375CDAAE8C;
 namespace System { template <typename T> class Predicate_1; }
 
-#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xE239C60)
-#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xE239CA0)
-#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__GETALLCARDS_B__10_0_OFFSET UNITYSDK_OFFSET(0xE239CB0)
+#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD5B18D0)
+#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD5B1910)
+#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__GETALLCARDS_B__10_0_OFFSET UNITYSDK_OFFSET(0xD5B1920)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowDevelopBagDialogPopWindowController___c_TypeDefinitionIndex = 61351;
+	inline static constexpr unsigned int UIHollowDevelopBagDialogPopWindowController___c_TypeDefinitionIndex = 55015;
 
 	class UIHollowDevelopBagDialogPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Predicate_1<::Class_1_0D6706375CDAAE8C*>** StaticGet___9__10_0()
-		{
-			return (::System::Predicate_1<::Class_1_0D6706375CDAAE8C*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowDevelopBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32780);
-		}
 		static ::MoleMole::UIHollowDevelopBagDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHollowDevelopBagDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowDevelopBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x32788);
+			return (::MoleMole::UIHollowDevelopBagDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowDevelopBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x346B0);
+		}
+		static ::System::Predicate_1<::Class_1_0D6706375CDAAE8C*>** StaticGet___9__10_0()
+		{
+			return (::System::Predicate_1<::Class_1_0D6706375CDAAE8C*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowDevelopBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x346B8);
 		}
 
 		static ::System::Void _cctor()

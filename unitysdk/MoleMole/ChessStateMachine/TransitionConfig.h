@@ -7,18 +7,18 @@ namespace MoleMole::ChessStateMachine { class ConnectionSetting; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CHESSSTATEMACHINE_TRANSITIONCONFIG_DEEPCOPY_OFFSET UNITYSDK_OFFSET(0x65403D0)
-#define MOLEMOLE_CHESSSTATEMACHINE_TRANSITIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6540430)
+#define MOLEMOLE_CHESSSTATEMACHINE_TRANSITIONCONFIG_DEEPCOPY_OFFSET UNITYSDK_OFFSET(0x81DAAD0)
+#define MOLEMOLE_CHESSSTATEMACHINE_TRANSITIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x81DAB30)
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int TransitionConfig_TypeDefinitionIndex = 79173;
+	inline static constexpr unsigned int TransitionConfig_TypeDefinitionIndex = 70322;
 
 	class TransitionConfig : public ::MoleMole::ChessStateMachine::ConfigBase
 	{
 	public:
-		::MoleMole::ChessStateMachine::ConnectionSetting* settings; // 0x28
-		::System::Collections::Generic::List_1<::MoleMole::ChessStateMachine::ConditionGroup*>* conditionGroups; // 0x30
+		::System::Collections::Generic::List_1<::MoleMole::ChessStateMachine::ConditionGroup*>* conditionGroups; // 0x28
+		::MoleMole::ChessStateMachine::ConnectionSetting* settings; // 0x30
 		::System::String* inNodeGuid; // 0x38
 		::System::String* outNodeGuid; // 0x40
 

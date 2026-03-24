@@ -5,11 +5,11 @@
 #include "unitysdk/UnityEngine/Vector2Int.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_CACHEDGRASSRENDERITEMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x834B30)
+#define UNITYENGINE_RENDERING_UNIVERSAL_CACHEDGRASSRENDERITEMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x822EF0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CachedGrassRenderItemData_TypeDefinitionIndex = 28764;
+	inline static constexpr unsigned int CachedGrassRenderItemData_TypeDefinitionIndex = 29710;
 
 	struct alignas(4) CachedGrassRenderItemData
 	{

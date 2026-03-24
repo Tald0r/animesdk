@@ -5,10 +5,10 @@
 
 namespace NPCCrowd::Avatar { class NPCAvatarGOReferenceComponentInfo; }
 
-#define NPCAVATARUTILS___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6011B50)
-#define NPCAVATARUTILS___C__DISPLAYCLASS11_0__UPDATESHADOWPROXYLODCOMMON_B__0_OFFSET UNITYSDK_OFFSET(0x6011B60)
+#define NPCAVATARUTILS___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6B43FF0)
+#define NPCAVATARUTILS___C__DISPLAYCLASS11_0__UPDATESHADOWPROXYLODCOMMON_B__0_OFFSET UNITYSDK_OFFSET(0x6B44000)
 
-inline static constexpr unsigned int NPCAvatarUtils___c__DisplayClass11_0_TypeDefinitionIndex = 50617;
+inline static constexpr unsigned int NPCAvatarUtils___c__DisplayClass11_0_TypeDefinitionIndex = 48371;
 
 class NPCAvatarUtils___c__DisplayClass11_0 : public ::System::Object
 {

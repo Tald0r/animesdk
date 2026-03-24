@@ -3,7 +3,7 @@
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int IRenderEvent_TypeDefinitionIndex = 60978;
+	inline static constexpr unsigned int IRenderEvent_TypeDefinitionIndex = 56034;
 
 	class IRenderEvent
 	{

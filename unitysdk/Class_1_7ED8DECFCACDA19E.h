@@ -13,24 +13,24 @@ namespace MoleMole::Battle { class Entity; }
 namespace MoleMole::Config { class ConfigSurfVehicle; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_1_7ED8DECFCACDA19E_METHOD_1_3D2B77EBCAE390AB_OFFSET UNITYSDK_OFFSET(0xAD9B050)
-#define CLASS_1_7ED8DECFCACDA19E__CTOR_OFFSET UNITYSDK_OFFSET(0xAD9AFD0)
+#define CLASS_1_7ED8DECFCACDA19E_METHOD_1_3D2B77EBCAE390AB_OFFSET UNITYSDK_OFFSET(0x65FECD0)
+#define CLASS_1_7ED8DECFCACDA19E__CTOR_OFFSET UNITYSDK_OFFSET(0x65FEC50)
 
-inline static constexpr unsigned int Class_1_7ED8DECFCACDA19E_TypeDefinitionIndex = 51131;
+inline static constexpr unsigned int Class_1_7ED8DECFCACDA19E_TypeDefinitionIndex = 70092;
 
 class Class_1_7ED8DECFCACDA19E : public ::System::Object
 {
 public:
-	::UnityEngine::GameObject* Field_1_1; // 0x10
+	::MoleMole::Config::ConfigSurfVehicle* Field_1_2; // 0x10
 	::Struct_2_FEBD39112B78007F Field_1_5; // 0x18
-	::MoleMole::Config::ConfigSurfVehicle* Field_1_2; // 0x48
-	::Struct_2_7E3479235D2579FF Field_1_6; // 0x50
-	::Struct_2_36EB6F1AC5D5C0B3 Field_1_4; // 0xF0
-	::Class_1_C5F6CE4894BCA161* Field_1_9; // 0x200
-	::MoleMole::Battle::Entity* Field_1_0; // 0x208
-	::MoleMole::SurfCameraContext Field_1_7; // 0x210
-	::Struct_2_F92440AF7804F46F Field_1_8; // 0x244
-	::Struct_2_AACEDD85A6FDFBD8 Field_1_3; // 0x254
+	::Struct_2_7E3479235D2579FF Field_1_6; // 0x48
+	::Struct_2_36EB6F1AC5D5C0B3 Field_1_4; // 0xE8
+	::UnityEngine::GameObject* Field_1_1; // 0x1F8
+	::MoleMole::Battle::Entity* Field_1_0; // 0x200
+	::Class_1_C5F6CE4894BCA161* Field_1_9; // 0x208
+	::Struct_2_F92440AF7804F46F Field_1_8; // 0x210
+	::Struct_2_AACEDD85A6FDFBD8 Field_1_3; // 0x220
+	::MoleMole::SurfCameraContext Field_1_7; // 0x258
 
 	::System::Void _ctor(::MoleMole::Battle::Entity* a1, ::UnityEngine::GameObject* a2, ::MoleMole::Config::ConfigSurfVehicle* a3)
 	{

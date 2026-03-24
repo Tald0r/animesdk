@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/QTECameraBaseInfo.h"
 
-#define MOLEMOLE_QTECAMERAINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6E57270)
+#define MOLEMOLE_QTECAMERAINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6EC9980)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int QTECameraInfo_TypeDefinitionIndex = 42048;
+	inline static constexpr unsigned int QTECameraInfo_TypeDefinitionIndex = 42333;
 
 	class QTECameraInfo : public ::MoleMole::QTECameraBaseInfo
 	{

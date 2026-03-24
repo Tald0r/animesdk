@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AimAssistCrossHairMoveRatioParam_TypeDefinitionIndex = 47158;
+	inline static constexpr unsigned int AimAssistCrossHairMoveRatioParam_TypeDefinitionIndex = 62712;
 
 	struct alignas(4) AimAssistCrossHairMoveRatioParam
 	{

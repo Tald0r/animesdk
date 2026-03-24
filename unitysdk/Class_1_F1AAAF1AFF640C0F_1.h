@@ -1,24 +1,24 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_1862835F8661A21F_1161.h"
+#include "unitysdk/Struct_2_1862835F8661A21F_509.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_1038;
+class Class_2_208CC9941471731A_1079;
 namespace FlatBuffers { class ByteBuffer; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_F1AAAF1AFF640C0F_1_METHOD_1_30D1209326FA87FC_OFFSET UNITYSDK_OFFSET(0x1A062F80)
-#define CLASS_1_F1AAAF1AFF640C0F_1_METHOD_1_52F693593F7BBFE8_OFFSET UNITYSDK_OFFSET(0x1A063030)
-#define CLASS_1_F1AAAF1AFF640C0F_1_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1A062EB0)
-#define CLASS_1_F1AAAF1AFF640C0F_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1A062EF0)
+#define CLASS_1_F1AAAF1AFF640C0F_1_METHOD_1_30D1209326FA87FC_OFFSET UNITYSDK_OFFSET(0x1A7E5BC0)
+#define CLASS_1_F1AAAF1AFF640C0F_1_METHOD_1_52F693593F7BBFE8_OFFSET UNITYSDK_OFFSET(0x1A7E5C70)
+#define CLASS_1_F1AAAF1AFF640C0F_1_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x1A7E5AF0)
+#define CLASS_1_F1AAAF1AFF640C0F_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7E5B30)
 
-inline static constexpr unsigned int Class_1_F1AAAF1AFF640C0F_1_TypeDefinitionIndex = 80204;
+inline static constexpr unsigned int Class_1_F1AAAF1AFF640C0F_1_TypeDefinitionIndex = 82340;
 
 class Class_1_F1AAAF1AFF640C0F_1 : public ::System::Object
 {
 public:
-	::Struct_2_1862835F8661A21F_1161 Field_1_0; // 0x10
-	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_2_208CC9941471731A_1038*>* Field_1_1; // 0x28
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_2_208CC9941471731A_1079*>* Field_1_1; // 0x10
+	::Struct_2_1862835F8661A21F_509 Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

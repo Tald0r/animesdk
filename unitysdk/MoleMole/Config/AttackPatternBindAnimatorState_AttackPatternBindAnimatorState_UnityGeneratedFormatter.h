@@ -9,30 +9,30 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8045DE0)
-#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8045DF0)
-#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x80462B0)
-#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x80465D0)
-#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8046590)
+#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9CF80B0)
+#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9CF80C0)
+#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9CF8580)
+#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9CF88A0)
+#define MOLEMOLE_CONFIG_ATTACKPATTERNBINDANIMATORSTATE_ATTACKPATTERNBINDANIMATORSTATE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9CF8860)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex = 63055;
+	inline static constexpr unsigned int AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex = 50451;
 
 	class AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AttackPatternBindAnimatorState*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x383D0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x383D8);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AFE0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x383E0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AFE8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AttackPatternBindAnimatorState_AttackPatternBindAnimatorState_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AFF0);
 		}
 
 		::System::Void _ctor()

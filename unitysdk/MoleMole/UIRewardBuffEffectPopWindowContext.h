@@ -6,11 +6,11 @@
 class Class_1_6535CE33BDD95E74;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIREWARDBUFFEFFECTPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xADF6BA0)
+#define MOLEMOLE_UIREWARDBUFFEFFECTPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB52D330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRewardBuffEffectPopWindowContext_TypeDefinitionIndex = 46147;
+	inline static constexpr unsigned int UIRewardBuffEffectPopWindowContext_TypeDefinitionIndex = 42923;
 
 	class UIRewardBuffEffectPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{

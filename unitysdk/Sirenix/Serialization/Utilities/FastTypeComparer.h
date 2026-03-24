@@ -4,21 +4,21 @@
 
 namespace System { class Type; }
 
-#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1A7069F0)
-#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1A706A00)
-#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A706A50)
-#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A706A40)
+#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1ACB1C20)
+#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1ACB1C30)
+#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ACB1C80)
+#define SIRENIX_SERIALIZATION_UTILITIES_FASTTYPECOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACB1C70)
 
 namespace Sirenix::Serialization::Utilities
 {
-	inline static constexpr unsigned int FastTypeComparer_TypeDefinitionIndex = 7511;
+	inline static constexpr unsigned int FastTypeComparer_TypeDefinitionIndex = 7516;
 
 	class FastTypeComparer : public ::System::Object
 	{
 	public:
 		static ::Sirenix::Serialization::Utilities::FastTypeComparer** StaticGet_Instance()
 		{
-			return (::Sirenix::Serialization::Utilities::FastTypeComparer**)Il2CppClass::FromTypeDefinitionIndex(FastTypeComparer_TypeDefinitionIndex)->GetStaticField(0x6100);
+			return (::Sirenix::Serialization::Utilities::FastTypeComparer**)Il2CppClass::FromTypeDefinitionIndex(FastTypeComparer_TypeDefinitionIndex)->GetStaticField(0x6140);
 		}
 
 		::System::Void _ctor()

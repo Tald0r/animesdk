@@ -10,7 +10,7 @@ namespace Utf8Json::Internal { template <typename T> class ArrayPool_1; }
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int ArraySegmentFormatter_1_TypeDefinitionIndex = 81935;
+	inline static constexpr unsigned int ArraySegmentFormatter_1_TypeDefinitionIndex = 83976;
 
 	template <typename T>
 	class ArraySegmentFormatter_1 : public ::System::Object

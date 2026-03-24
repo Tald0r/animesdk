@@ -3,11 +3,11 @@
 #include "unitysdk/PipelineCamera/CameraSequence/CameraSequenceRuntimeDataProvider_4.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_OPENDIRECTIONSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xC2CED40)
+#define MOLEMOLE_FLOWCANVAS_NODES_OPENDIRECTIONSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xB8AA7E0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int OpenDirectionSelector_TypeDefinitionIndex = 73486;
+	inline static constexpr unsigned int OpenDirectionSelector_TypeDefinitionIndex = 78602;
 
 	class OpenDirectionSelector : public ::PipelineCamera::CameraSequence::CameraSequenceRuntimeDataProvider_4<::System::Single, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::System::Single>
 	{

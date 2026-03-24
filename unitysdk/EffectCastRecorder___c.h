@@ -7,32 +7,32 @@ class Class_3_A5AF8EA2F7094EFB;
 namespace MoleMole::Battle { class Entity; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define EFFECTCASTRECORDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB5253D0)
-#define EFFECTCASTRECORDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB525410)
-#define EFFECTCASTRECORDER___C__WRITEFILEIFNEED_B__18_0_OFFSET UNITYSDK_OFFSET(0xB525420)
-#define EFFECTCASTRECORDER___C__WRITEFILEIFNEED_B__18_1_OFFSET UNITYSDK_OFFSET(0xB525470)
-#define EFFECTCASTRECORDER___C__WRITEFILEIFNEED_B__18_2_OFFSET UNITYSDK_OFFSET(0xB525480)
+#define EFFECTCASTRECORDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB324DB0)
+#define EFFECTCASTRECORDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB324DF0)
+#define EFFECTCASTRECORDER___C__WRITEFILEIFNEED_B__18_0_OFFSET UNITYSDK_OFFSET(0xB324E00)
+#define EFFECTCASTRECORDER___C__WRITEFILEIFNEED_B__18_1_OFFSET UNITYSDK_OFFSET(0xB324E50)
+#define EFFECTCASTRECORDER___C__WRITEFILEIFNEED_B__18_2_OFFSET UNITYSDK_OFFSET(0xB324E60)
 
-inline static constexpr unsigned int EffectCastRecorder___c_TypeDefinitionIndex = 45211;
+inline static constexpr unsigned int EffectCastRecorder___c_TypeDefinitionIndex = 67639;
 
 class EffectCastRecorder___c : public ::System::Object
 {
 public:
+	static ::EffectCastRecorder___c** StaticGet___9()
+	{
+		return (::EffectCastRecorder___c**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x302B0);
+	}
 	static ::System::Func_2<::Class_3_A5AF8EA2F7094EFB*, ::System::Boolean>** StaticGet___9__18_1()
 	{
-		return (::System::Func_2<::Class_3_A5AF8EA2F7094EFB*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x2E850);
-	}
-	static ::System::Func_2<::MoleMole::Battle::Entity*, ::Class_3_A5AF8EA2F7094EFB*>** StaticGet___9__18_0()
-	{
-		return (::System::Func_2<::MoleMole::Battle::Entity*, ::Class_3_A5AF8EA2F7094EFB*>**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x2E858);
+		return (::System::Func_2<::Class_3_A5AF8EA2F7094EFB*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x302B8);
 	}
 	static ::System::Func_2<::Class_3_A5AF8EA2F7094EFB*, ::Foundation::AssetPath>** StaticGet___9__18_2()
 	{
-		return (::System::Func_2<::Class_3_A5AF8EA2F7094EFB*, ::Foundation::AssetPath>**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x2E860);
+		return (::System::Func_2<::Class_3_A5AF8EA2F7094EFB*, ::Foundation::AssetPath>**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x302C0);
 	}
-	static ::EffectCastRecorder___c** StaticGet___9()
+	static ::System::Func_2<::MoleMole::Battle::Entity*, ::Class_3_A5AF8EA2F7094EFB*>** StaticGet___9__18_0()
 	{
-		return (::EffectCastRecorder___c**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x2E868);
+		return (::System::Func_2<::MoleMole::Battle::Entity*, ::Class_3_A5AF8EA2F7094EFB*>**)Il2CppClass::FromTypeDefinitionIndex(EffectCastRecorder___c_TypeDefinitionIndex)->GetStaticField(0x302C8);
 	}
 
 	static ::System::Void _cctor()

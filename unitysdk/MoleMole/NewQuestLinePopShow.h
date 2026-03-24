@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_NEWQUESTLINEPOPSHOW_GET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0x6E4D9E0)
-#define MOLEMOLE_NEWQUESTLINEPOPSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x6E4D9D0)
-#define MOLEMOLE_NEWQUESTLINEPOPSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x6E4DA40)
-#define MOLEMOLE_NEWQUESTLINEPOPSHOW_SET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0x6E4D9F0)
-#define MOLEMOLE_NEWQUESTLINEPOPSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6E4DA00)
+#define MOLEMOLE_NEWQUESTLINEPOPSHOW_GET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0x6EBF920)
+#define MOLEMOLE_NEWQUESTLINEPOPSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x6EBF910)
+#define MOLEMOLE_NEWQUESTLINEPOPSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x6EBF980)
+#define MOLEMOLE_NEWQUESTLINEPOPSHOW_SET_ISMESSAGESENDINGQUEST_OFFSET UNITYSDK_OFFSET(0x6EBF930)
+#define MOLEMOLE_NEWQUESTLINEPOPSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6EBF940)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int NewQuestLinePopShow_TypeDefinitionIndex = 63096;
+	inline static constexpr unsigned int NewQuestLinePopShow_TypeDefinitionIndex = 45906;
 
 	class NewQuestLinePopShow : public ::MoleMole::DisplayMessageBase
 	{
 	public:
-		::System::Int32 _specialQuestId; // 0x28
-		::System::Boolean _IsMessageSendingQuest_k__BackingField; // 0x2C
+		::System::Boolean _IsMessageSendingQuest_k__BackingField; // 0x28
+		::System::Int32 _specialQuestId; // 0x2C
 
 		::System::Void _ctor(::System::Int32 id, ::System::Boolean isMessageSendingQuest)
 		{

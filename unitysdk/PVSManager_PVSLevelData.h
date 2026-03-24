@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define PVSMANAGER_PVSLEVELDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x2CA8F0)
+#define PVSMANAGER_PVSLEVELDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x37EE40)
 
-inline static constexpr unsigned int PVSManager_PVSLevelData_TypeDefinitionIndex = 34285;
+inline static constexpr unsigned int PVSManager_PVSLevelData_TypeDefinitionIndex = 35287;
 
 struct alignas(4) PVSManager_PVSLevelData
 {

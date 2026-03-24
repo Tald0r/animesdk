@@ -3,11 +3,11 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int HollowEntityPredictMove_CollisionType_TypeDefinitionIndex = 49038;
+	inline static constexpr unsigned int HollowEntityPredictMove_CollisionType_TypeDefinitionIndex = 42795;
 
 	enum class HollowEntityPredictMove_CollisionType : ::System::Int32
 	{
-		IgnoreAllCollision = 0,
 		UseEntityCollisionMask = 1,
+		IgnoreAllCollision = 0,
 	};
 }

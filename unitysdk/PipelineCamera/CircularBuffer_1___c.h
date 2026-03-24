@@ -8,7 +8,7 @@ namespace System::Reflection { class FieldInfo; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int CircularBuffer_1___c_TypeDefinitionIndex = 34486;
+	inline static constexpr unsigned int CircularBuffer_1___c_TypeDefinitionIndex = 35488;
 
 	template <typename T>
 	class CircularBuffer_1___c : public ::System::Object

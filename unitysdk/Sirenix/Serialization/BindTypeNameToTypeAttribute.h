@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SIRENIX_SERIALIZATION_BINDTYPENAMETOTYPEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7050A0)
+#define SIRENIX_SERIALIZATION_BINDTYPENAMETOTYPEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACB0300)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int BindTypeNameToTypeAttribute_TypeDefinitionIndex = 7362;
+	inline static constexpr unsigned int BindTypeNameToTypeAttribute_TypeDefinitionIndex = 7367;
 
 	class BindTypeNameToTypeAttribute : public ::System::Attribute
 	{

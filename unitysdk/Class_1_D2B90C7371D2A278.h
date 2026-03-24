@@ -5,31 +5,31 @@
 class Class_2_785FDC7D0DA58280;
 namespace MoleMole::Arcade::BallsRace { class BrConstantCfg; }
 
-#define CLASS_1_D2B90C7371D2A278_METHOD_1_5C4B0A816B8D43A1_OFFSET UNITYSDK_OFFSET(0x1A015020)
-#define CLASS_1_D2B90C7371D2A278_METHOD_1_BF30D754A7BB8E63_OFFSET UNITYSDK_OFFSET(0x1A014F10)
-#define CLASS_1_D2B90C7371D2A278_METHOD_1_F730968E2645E14B_OFFSET UNITYSDK_OFFSET(0x1A015450)
-#define CLASS_1_D2B90C7371D2A278__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A014ED0)
+#define CLASS_1_D2B90C7371D2A278_METHOD_1_5C4B0A816B8D43A1_OFFSET UNITYSDK_OFFSET(0x190AED40)
+#define CLASS_1_D2B90C7371D2A278_METHOD_1_BF30D754A7BB8E63_OFFSET UNITYSDK_OFFSET(0x190AEC30)
+#define CLASS_1_D2B90C7371D2A278_METHOD_1_F730968E2645E14B_OFFSET UNITYSDK_OFFSET(0x190AEEE0)
+#define CLASS_1_D2B90C7371D2A278__CCTOR_OFFSET UNITYSDK_OFFSET(0x190AEBF0)
 
-inline static constexpr unsigned int Class_1_D2B90C7371D2A278_TypeDefinitionIndex = 79517;
+inline static constexpr unsigned int Class_1_D2B90C7371D2A278_TypeDefinitionIndex = 81476;
 
 class Class_1_D2B90C7371D2A278 : public ::System::Object
 {
 public:
 	static ::MoleMole::Arcade::BallsRace::BrConstantCfg** StaticGet_Field_1_3()
 	{
-		return (::MoleMole::Arcade::BallsRace::BrConstantCfg**)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x44DE0);
-	}
-	static ::System::Single* StaticGet_Field_1_0()
-	{
-		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x11810);
+		return (::MoleMole::Arcade::BallsRace::BrConstantCfg**)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x47C30);
 	}
 	static ::System::Single* StaticGet_Field_1_2()
 	{
-		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x11814);
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x11920);
+	}
+	static ::System::Single* StaticGet_Field_1_0()
+	{
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x11924);
 	}
 	static ::System::Single* StaticGet_Field_1_1()
 	{
-		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x11818);
+		return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(Class_1_D2B90C7371D2A278_TypeDefinitionIndex)->GetStaticField(0x11928);
 	}
 
 	static ::System::Void _cctor()

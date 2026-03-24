@@ -3,11 +3,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define UNITYENGINE_GRADIENTCOLORKEY__CTOR_OFFSET UNITYSDK_OFFSET(0x2C4DF0)
+#define UNITYENGINE_GRADIENTCOLORKEY__CTOR_OFFSET UNITYSDK_OFFSET(0x2F62B0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int GradientColorKey_TypeDefinitionIndex = 5293;
+	inline static constexpr unsigned int GradientColorKey_TypeDefinitionIndex = 5294;
 
 	struct alignas(4) GradientColorKey
 	{

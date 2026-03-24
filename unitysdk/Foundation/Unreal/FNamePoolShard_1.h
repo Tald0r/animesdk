@@ -6,7 +6,7 @@
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int FNamePoolShard_1_TypeDefinitionIndex = 9107;
+	inline static constexpr unsigned int FNamePoolShard_1_TypeDefinitionIndex = 9015;
 
 	template <typename T>
 	struct FNamePoolShard_1

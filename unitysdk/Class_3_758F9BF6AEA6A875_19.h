@@ -5,11 +5,13 @@
 namespace MoleMole { class SystemSettingContextBase; }
 namespace MoleMole { class SystemSettingEntryBase; }
 
-#define CLASS_3_758F9BF6AEA6A875_19_METHOD_3_6001ED1983AD0FC0_OFFSET UNITYSDK_OFFSET(0x71A8510)
-#define CLASS_3_758F9BF6AEA6A875_19_METHOD_3_665904E4E791279B_OFFSET UNITYSDK_OFFSET(0x71A8280)
-#define CLASS_3_758F9BF6AEA6A875_19__CTOR_OFFSET UNITYSDK_OFFSET(0x71A8270)
+#define CLASS_3_758F9BF6AEA6A875_19_METHOD_3_04DE4FBB293DFBD6_OFFSET UNITYSDK_OFFSET(0xBF71B10)
+#define CLASS_3_758F9BF6AEA6A875_19_METHOD_3_6001ED1983AD0FC0_OFFSET UNITYSDK_OFFSET(0xBF71AA0)
+#define CLASS_3_758F9BF6AEA6A875_19_METHOD_3_665904E4E791279B_OFFSET UNITYSDK_OFFSET(0xBF71590)
+#define CLASS_3_758F9BF6AEA6A875_19_METHOD_3_9D57F61F5EFFCB83_OFFSET UNITYSDK_OFFSET(0xBF71860)
+#define CLASS_3_758F9BF6AEA6A875_19__CTOR_OFFSET UNITYSDK_OFFSET(0xBF71580)
 
-inline static constexpr unsigned int Class_3_758F9BF6AEA6A875_19_TypeDefinitionIndex = 59752;
+inline static constexpr unsigned int Class_3_758F9BF6AEA6A875_19_TypeDefinitionIndex = 57868;
 
 class Class_3_758F9BF6AEA6A875_19 : public ::Class_2_AB0C166B76D82BF6
 {
@@ -24,8 +26,18 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::SystemSettingContextBase*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_3_758F9BF6AEA6A875_19_METHOD_3_665904E4E791279B_OFFSET))(this, a1, a2);
 	}
 
+	::System::Boolean Method_3_9D57F61F5EFFCB83(::System::UInt32& a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::UInt32&))((::PBYTE)hIl2Cpp + CLASS_3_758F9BF6AEA6A875_19_METHOD_3_9D57F61F5EFFCB83_OFFSET))(this, a1);
+	}
+
 	::System::Void Method_3_6001ED1983AD0FC0(::MoleMole::SystemSettingContextBase* a1, ::System::Boolean a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::MoleMole::SystemSettingContextBase*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_3_758F9BF6AEA6A875_19_METHOD_3_6001ED1983AD0FC0_OFFSET))(this, a1, a2);
+	}
+
+	::System::Boolean Method_3_04DE4FBB293DFBD6(::System::UInt32& a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::UInt32&))((::PBYTE)hIl2Cpp + CLASS_3_758F9BF6AEA6A875_19_METHOD_3_04DE4FBB293DFBD6_OFFSET))(this, a1);
 	}
 };

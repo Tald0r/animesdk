@@ -16,249 +16,249 @@ namespace UnityEngine { class Texture3D; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 namespace UnityEngine::Rendering::Universal { class OceanFloatObject; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER_READBACK_OFFSET UNITYSDK_OFFSET(0x1924EA10)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER_SETOCEANPARAMS_OFFSET UNITYSDK_OFFSET(0x1924C650)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER_UPDATEOCEANFLOATOBJS_OFFSET UNITYSDK_OFFSET(0x1924EAE0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x192507D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER_READBACK_OFFSET UNITYSDK_OFFSET(0x196741E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER_SETOCEANPARAMS_OFFSET UNITYSDK_OFFSET(0x19671E20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER_UPDATEOCEANFLOATOBJS_OFFSET UNITYSDK_OFFSET(0x196742B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPOCEANMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19675FA0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapOceanManager_TypeDefinitionIndex = 28468;
+	inline static constexpr unsigned int NapOceanManager_TypeDefinitionIndex = 29411;
 
 	class NapOceanManager : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_normals()
-		{
-			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214B0);
-		}
-		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_outNormals()
-		{
-			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214B8);
-		}
-		static ::UnityEngine::Material** StaticGet_OceanMaterialFar()
-		{
-			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214C0);
-		}
-		static ::System::Collections::Generic::List_1<::UnityEngine::Rendering::Universal::OceanFloatObject*>** StaticGet_OceanFloatObjs()
-		{
-			return (::System::Collections::Generic::List_1<::UnityEngine::Rendering::Universal::OceanFloatObject*>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214C8);
-		}
-		static ::UnityEngine::Texture2D** StaticGet_CoastlineMap()
-		{
-			return (::UnityEngine::Texture2D**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214D0);
-		}
 		static ::System::String** StaticGet_FallBackOceanMeshPath_Lod0()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214D8);
-		}
-		static ::UnityEngine::ComputeBuffer** StaticGet_offsetBuffer()
-		{
-			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214E0);
-		}
-		static ::UnityEngine::Texture3D** StaticGet_defaultTexture3D()
-		{
-			return (::UnityEngine::Texture3D**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214E8);
-		}
-		static ::UnityEngine::Material** StaticGet_OceanMaterialNear()
-		{
-			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214F0);
-		}
-		static ::System::String** StaticGet_FallBackOceanMeshPath_Lod1()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x214F8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22DF0);
 		}
 		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_outOffsets()
 		{
-			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21500);
+			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22DF8);
 		}
-		static ::UnityEngine::ComputeBuffer** StaticGet_normalBuffer()
+		static ::UnityEngine::Texture3D** StaticGet_defaultTexture3D()
 		{
-			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21508);
+			return (::UnityEngine::Texture3D**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E00);
 		}
-		static ::UnityEngine::ComputeBuffer** StaticGet_inputPosBuffer()
+		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_outNormals()
 		{
-			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21510);
+			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E08);
+		}
+		static ::UnityEngine::Texture2D** StaticGet_CoastlineMap()
+		{
+			return (::UnityEngine::Texture2D**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E10);
+		}
+		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_normals()
+		{
+			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E18);
+		}
+		static ::UnityEngine::Material** StaticGet_OceanMaterialFar()
+		{
+			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E20);
+		}
+		static ::System::Collections::Generic::List_1<::UnityEngine::Rendering::Universal::OceanFloatObject*>** StaticGet_OceanFloatObjs()
+		{
+			return (::System::Collections::Generic::List_1<::UnityEngine::Rendering::Universal::OceanFloatObject*>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E28);
 		}
 		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_inputPos()
 		{
-			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21518);
+			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E30);
 		}
-		static ::UnityEngine::Material** StaticGet_OceanMaterialNormal()
+		static ::UnityEngine::ComputeBuffer** StaticGet_offsetBuffer()
 		{
-			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21520);
+			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E38);
 		}
 		static ::System::String** StaticGet_FallBackOceanMeshPath_Far_Lod1()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21528);
-		}
-		static ::System::String** StaticGet_FallBackOceanMeshPath_Far_Lod0()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21530);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E40);
 		}
 		static ::Il2CppArray<::UnityEngine::Vector3>** StaticGet_offsets()
 		{
-			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21538);
+			return (::Il2CppArray<::UnityEngine::Vector3>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E48);
+		}
+		static ::UnityEngine::ComputeBuffer** StaticGet_inputPosBuffer()
+		{
+			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E50);
+		}
+		static ::UnityEngine::Material** StaticGet_OceanMaterialNear()
+		{
+			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E58);
 		}
 		static ::Il2CppArray<::UnityEngine::Quaternion>** StaticGet_inputRot()
 		{
-			return (::Il2CppArray<::UnityEngine::Quaternion>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x21540);
+			return (::Il2CppArray<::UnityEngine::Quaternion>**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E60);
 		}
-		static ::System::Int32* StaticGet__CoastlineGroundMap()
+		static ::System::String** StaticGet_FallBackOceanMeshPath_Lod1()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F40);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E68);
 		}
-		static ::System::Int32* StaticGet__OceanExtraVelocity()
+		static ::UnityEngine::Material** StaticGet_OceanMaterialNormal()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F44);
+			return (::UnityEngine::Material**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E70);
 		}
-		static ::System::Int32* StaticGet__CoastlineFoamMap()
+		static ::System::String** StaticGet_FallBackOceanMeshPath_Far_Lod0()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F48);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E78);
 		}
-		static ::System::Int32* StaticGet__CoastlineParam3()
+		static ::UnityEngine::ComputeBuffer** StaticGet_normalBuffer()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F4C);
-		}
-		static ::System::Int32* StaticGet__CoastlineParam5()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F50);
-		}
-		static ::System::Single* StaticGet_OceanFrustumCullingFOVBias()
-		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F54);
-		}
-		static ::System::Single* StaticGet_OceanMeshCullThreshold()
-		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F58);
-		}
-		static ::System::Int32* StaticGet__OceanDetailNormalMap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F5C);
-		}
-		static ::System::Int32* StaticGet__CoastlineCausticsMap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F60);
-		}
-		static ::System::Int32* StaticGet__CoastlineSmoothNoiseMap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F64);
-		}
-		static ::System::Int32* StaticGet__OceanReflectionCube()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F68);
-		}
-		static ::System::Int32* StaticGet__CoastlineParam8()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F6C);
-		}
-		static ::System::Int32* StaticGet__InputPositions()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F70);
-		}
-		static ::System::Int32* StaticGet__OceanFoamNoiseTexture()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F74);
-		}
-		static ::System::Int32* StaticGet_lastDisableOceanFrameCount()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F78);
+			return (::UnityEngine::ComputeBuffer**)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x22E80);
 		}
 		static ::System::Int32* StaticGet__OceanParamsB()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F7C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6080);
 		}
-		static ::System::Int32* StaticGet__CoastlineParam7()
+		static ::System::Int32* StaticGet__CoastlineParam3()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F80);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6084);
 		}
-		static ::System::Int32* StaticGet__OceanDeepColor()
+		static ::System::Int32* StaticGet__OceanFoamNoiseTexture()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F84);
-		}
-		static ::UnityEngine::Vector3* StaticGet_OceanCenter()
-		{
-			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F88);
-		}
-		static ::System::Int32* StaticGet__OceanParamsA()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F94);
-		}
-		static ::System::Int32* StaticGet__Normals()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F98);
-		}
-		static ::System::Int32* StaticGet__CoastlineWaveProfileMap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5F9C);
-		}
-		static ::System::Int32* StaticGet__CoastlineParam4()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FA0);
-		}
-		static ::System::Int32* StaticGet__CoastlineFoamColor()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FA4);
-		}
-		static ::System::Int32* StaticGet__CoastlineParam10()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FA8);
-		}
-		static ::System::Int32* StaticGet__OceanScatteringColor()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FAC);
-		}
-		static ::System::Int32* StaticGet__OceanDisplacementMap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FB0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6088);
 		}
 		static ::System::Int32* StaticGet__CoastlineParam0()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FB4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x608C);
 		}
-		static ::System::Int32* StaticGet__OceanDisplacementNormalMap()
+		static ::System::Int32* StaticGet__CoastlineCausticsMap()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FB8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6090);
 		}
 		static ::System::Int32* StaticGet__CoastlineParam6()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FBC);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6094);
 		}
-		static ::System::Int32* StaticGet__OceanShallowColor()
+		static ::System::Int32* StaticGet__OceanDisplacementNormalMap()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FC0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6098);
 		}
-		static ::System::Single* StaticGet_OceanDepthOffset()
+		static ::System::Int32* StaticGet__CoastlineParam8()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FC4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x609C);
 		}
-		static ::System::Int32* StaticGet__CoastlineParam9()
+		static ::System::Int32* StaticGet__OceanDeepColor()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FC8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60A0);
 		}
-		static ::System::Boolean* StaticGet_EnableCoastlineWave()
+		static ::System::Int32* StaticGet__CoastlineFoamMap()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FCC);
-		}
-		static ::System::Boolean* StaticGet_EnableOcean()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FCD);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60A4);
 		}
 		static ::System::Int32* StaticGet__CoastlineParam2()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FD0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60A8);
 		}
-		static ::System::Int32* StaticGet__CoastlineParam1()
+		static ::System::Int32* StaticGet__CoastlineFoamColor()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FD4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60AC);
+		}
+		static ::UnityEngine::Vector3* StaticGet_OceanCenter()
+		{
+			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60B0);
+		}
+		static ::System::Int32* StaticGet__OceanDetailNormalMap()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60BC);
+		}
+		static ::System::Int32* StaticGet__OceanReflectionCube()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60C0);
+		}
+		static ::System::Single* StaticGet_OceanFrustumCullingFOVBias()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60C4);
+		}
+		static ::System::Int32* StaticGet_lastDisableOceanFrameCount()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60C8);
+		}
+		static ::System::Int32* StaticGet__CoastlineParam4()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60CC);
 		}
 		static ::System::Int32* StaticGet__Offsets()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FD8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60D0);
+		}
+		static ::System::Int32* StaticGet__CoastlineParam7()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60D4);
+		}
+		static ::System::Int32* StaticGet__OceanShallowColor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60D8);
+		}
+		static ::System::Int32* StaticGet__OceanParamsA()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60DC);
+		}
+		static ::System::Int32* StaticGet__CoastlineSmoothNoiseMap()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60E0);
+		}
+		static ::System::Int32* StaticGet__OceanExtraVelocity()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60E4);
+		}
+		static ::System::Single* StaticGet_OceanDepthOffset()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60E8);
+		}
+		static ::System::Int32* StaticGet__CoastlineParam9()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60EC);
+		}
+		static ::System::Int32* StaticGet__InputPositions()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60F0);
+		}
+		static ::System::Int32* StaticGet__OceanScatteringColor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60F4);
+		}
+		static ::System::Int32* StaticGet__CoastlineGroundMap()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60F8);
+		}
+		static ::System::Boolean* StaticGet_EnableOcean()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60FC);
+		}
+		static ::System::Boolean* StaticGet_EnableCoastlineWave()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x60FD);
+		}
+		static ::System::Int32* StaticGet__CoastlineParam1()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6100);
+		}
+		static ::System::Int32* StaticGet__OceanDisplacementMap()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6104);
+		}
+		static ::System::Int32* StaticGet__Normals()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6108);
+		}
+		static ::System::Int32* StaticGet__CoastlineParam5()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x610C);
+		}
+		static ::System::Single* StaticGet_OceanMeshCullThreshold()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6110);
+		}
+		static ::System::Int32* StaticGet__CoastlineWaveProfileMap()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6114);
 		}
 		static ::System::Int32* StaticGet__CoastlineMap()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x5FDC);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x6118);
+		}
+		static ::System::Int32* StaticGet__CoastlineParam10()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapOceanManager_TypeDefinitionIndex)->GetStaticField(0x611C);
 		}
 
 		static ::System::Void _cctor()

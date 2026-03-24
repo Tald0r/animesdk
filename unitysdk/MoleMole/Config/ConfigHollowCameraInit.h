@@ -7,33 +7,33 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT_GETZOOMRANGE_OFFSET UNITYSDK_OFFSET(0x13F94CD0)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT_INITCAMERAPIPELINE_OFFSET UNITYSDK_OFFSET(0x13F94920)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT_ONCHANGEUSECAMERAPIPELINE_OFFSET UNITYSDK_OFFSET(0x13F948C0)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT__CTOR_OFFSET UNITYSDK_OFFSET(0x13F94D80)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT_GETZOOMRANGE_OFFSET UNITYSDK_OFFSET(0xF2CE720)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT_INITCAMERAPIPELINE_OFFSET UNITYSDK_OFFSET(0xF2CE370)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT_ONCHANGEUSECAMERAPIPELINE_OFFSET UNITYSDK_OFFSET(0xF2CE310)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERAINIT__CTOR_OFFSET UNITYSDK_OFFSET(0xF2CE7D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowCameraInit_TypeDefinitionIndex = 40879;
+	inline static constexpr unsigned int ConfigHollowCameraInit_TypeDefinitionIndex = 77953;
 
 	class ConfigHollowCameraInit : public ::System::Object
 	{
 	public:
-		::System::String* safeAreaKey; // 0x10
-		::System::String* centerKey; // 0x18
-		::UnityEngine::Vector3 eulerAngle; // 0x20
-		::UnityEngine::Vector2 initZRange; // 0x2C
-		::System::Single zZoomChangeSpeedMouseScroll; // 0x34
-		::UnityEngine::Camera_FieldOfViewAxis foxAxis; // 0x38
-		::System::Single zZoomChangeSpeed; // 0x3C
+		::System::String* centerKey; // 0x10
+		::System::String* safeAreaKey; // 0x18
+		::UnityEngine::Vector2 initZRange; // 0x20
+		::System::Single fieldOfView; // 0x28
+		::UnityEngine::Vector3 eulerAngle; // 0x2C
+		::System::Single zZoomChangeSpeedMouseScroll; // 0x38
+		::System::Single initZ; // 0x3C
 		::System::Single zZoomChangeSpeedBtn; // 0x40
-		::System::Single initZ; // 0x44
+		::System::Boolean EnableGuiCamAnim; // 0x44
+		::System::Boolean IsEnableLog; // 0x45
+		::System::Boolean OpenPipelineFullLog; // 0x46
+		::System::Boolean UseCameraPipeline; // 0x47
 		::System::Single zZoomDumpTime; // 0x48
-		::System::Single fieldOfView; // 0x4C
-		::System::Boolean UseCameraPipeline; // 0x50
-		::System::Boolean EnableGuiCamAnim; // 0x51
-		::System::Boolean IsEnableLog; // 0x52
-		::System::Boolean OpenPipelineFullLog; // 0x53
+		::UnityEngine::Camera_FieldOfViewAxis foxAxis; // 0x4C
+		::System::Single zZoomChangeSpeed; // 0x50
 
 		::System::Void _ctor()
 		{

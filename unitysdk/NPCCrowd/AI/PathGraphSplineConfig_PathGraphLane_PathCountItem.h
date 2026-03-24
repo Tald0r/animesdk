@@ -4,11 +4,11 @@
 
 namespace NPCCrowd::AI { class CrowdConditionBase; }
 
-#define NPCCROWD_AI_PATHGRAPHSPLINECONFIG_PATHGRAPHLANE_PATHCOUNTITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x609BA40)
+#define NPCCROWD_AI_PATHGRAPHSPLINECONFIG_PATHGRAPHLANE_PATHCOUNTITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x174A7440)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphSplineConfig_PathGraphLane_PathCountItem_TypeDefinitionIndex = 74095;
+	inline static constexpr unsigned int PathGraphSplineConfig_PathGraphLane_PathCountItem_TypeDefinitionIndex = 62030;
 
 	class PathGraphSplineConfig_PathGraphLane_PathCountItem : public ::System::Object
 	{

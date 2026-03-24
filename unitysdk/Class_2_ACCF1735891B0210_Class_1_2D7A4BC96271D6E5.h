@@ -5,16 +5,16 @@
 class Class_2_ACCF1735891B0210;
 namespace MoleMole { class UILiveHouseInGamePerfectEffectWidgetController; }
 
-#define CLASS_2_ACCF1735891B0210_CLASS_1_2D7A4BC96271D6E5_METHOD_1_FEE7938AD36467E5_OFFSET UNITYSDK_OFFSET(0xA6A3CA0)
-#define CLASS_2_ACCF1735891B0210_CLASS_1_2D7A4BC96271D6E5__CTOR_OFFSET UNITYSDK_OFFSET(0xA6A3C90)
+#define CLASS_2_ACCF1735891B0210_CLASS_1_2D7A4BC96271D6E5_METHOD_1_FEE7938AD36467E5_OFFSET UNITYSDK_OFFSET(0xBDFD1E0)
+#define CLASS_2_ACCF1735891B0210_CLASS_1_2D7A4BC96271D6E5__CTOR_OFFSET UNITYSDK_OFFSET(0xBDFD1D0)
 
-inline static constexpr unsigned int Class_2_ACCF1735891B0210_Class_1_2D7A4BC96271D6E5_TypeDefinitionIndex = 53127;
+inline static constexpr unsigned int Class_2_ACCF1735891B0210_Class_1_2D7A4BC96271D6E5_TypeDefinitionIndex = 47997;
 
 class Class_2_ACCF1735891B0210_Class_1_2D7A4BC96271D6E5 : public ::System::Object
 {
 public:
-	::Class_2_ACCF1735891B0210* Field_1_0; // 0x10
-	::MoleMole::UILiveHouseInGamePerfectEffectWidgetController* Field_1_1; // 0x18
+	::MoleMole::UILiveHouseInGamePerfectEffectWidgetController* Field_1_1; // 0x10
+	::Class_2_ACCF1735891B0210* Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

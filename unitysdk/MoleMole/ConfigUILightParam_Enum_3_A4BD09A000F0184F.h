@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUILightParam_Enum_3_A4BD09A000F0184F_TypeDefinitionIndex = 62269;
+	inline static constexpr unsigned int ConfigUILightParam_Enum_3_A4BD09A000F0184F_TypeDefinitionIndex = 39353;
 
 	enum class ConfigUILightParam_Enum_3_A4BD09A000F0184F : ::System::Int32
 	{

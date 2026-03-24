@@ -7,19 +7,19 @@ namespace BehaviorDesigner::Runtime { class IVariableSource; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Object; }
 
-#define BEHAVIORDESIGNER_RUNTIME_JSONDESERIALIZECONTEXT_GET_TASKIDS_OFFSET UNITYSDK_OFFSET(0x1AA23540)
-#define BEHAVIORDESIGNER_RUNTIME_JSONDESERIALIZECONTEXT_SET_TASKIDS_OFFSET UNITYSDK_OFFSET(0x1AA23580)
-#define BEHAVIORDESIGNER_RUNTIME_JSONDESERIALIZECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA235C0)
+#define BEHAVIORDESIGNER_RUNTIME_JSONDESERIALIZECONTEXT_GET_TASKIDS_OFFSET UNITYSDK_OFFSET(0x1B0318C0)
+#define BEHAVIORDESIGNER_RUNTIME_JSONDESERIALIZECONTEXT_SET_TASKIDS_OFFSET UNITYSDK_OFFSET(0x1B031900)
+#define BEHAVIORDESIGNER_RUNTIME_JSONDESERIALIZECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B031940)
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int JsonDeserializeContext_TypeDefinitionIndex = 30223;
+	inline static constexpr unsigned int JsonDeserializeContext_TypeDefinitionIndex = 31176;
 
 	class JsonDeserializeContext : public ::System::Object
 	{
 	public:
-		::BehaviorDesigner::Runtime::IVariableSource* VariableSource; // 0x10
-		::System::Collections::Generic::List_1<::UnityEngine::Object*>* UnityObjects; // 0x18
+		::System::Collections::Generic::List_1<::UnityEngine::Object*>* UnityObjects; // 0x10
+		::BehaviorDesigner::Runtime::IVariableSource* VariableSource; // 0x18
 		::System::Boolean UpdatedSerialization; // 0x20
 
 		::System::Void _ctor()

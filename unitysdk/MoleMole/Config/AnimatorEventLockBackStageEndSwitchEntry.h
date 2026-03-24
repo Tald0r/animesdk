@@ -4,12 +4,12 @@
 
 namespace MoleMole::Config { class AnimatorEvent; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTLOCKBACKSTAGEENDSWITCHENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x629FE00)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTLOCKBACKSTAGEENDSWITCHENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x629FEA0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTLOCKBACKSTAGEENDSWITCHENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xCAD25E0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTLOCKBACKSTAGEENDSWITCHENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xCAD2680)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventLockBackStageEndSwitchEntry_TypeDefinitionIndex = 66806;
+	inline static constexpr unsigned int AnimatorEventLockBackStageEndSwitchEntry_TypeDefinitionIndex = 80563;
 
 	class AnimatorEventLockBackStageEndSwitchEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{

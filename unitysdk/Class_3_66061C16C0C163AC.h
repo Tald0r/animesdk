@@ -1,16 +1,16 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_2_532BF80753ABBBED.h"
+#include "unitysdk/Class_2_427CF9B2137C5720.h"
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/Struct_2_E147DFD2A4EE8B0B.h"
 #include "unitysdk/Struct_2_E33A8767CD3B76C6.h"
 
-#define CLASS_3_66061C16C0C163AC_METHOD_3_1102911C892F05AA_OFFSET UNITYSDK_OFFSET(0xD1F9B90)
-#define CLASS_3_66061C16C0C163AC__CTOR_OFFSET UNITYSDK_OFFSET(0xD1F9D00)
+#define CLASS_3_66061C16C0C163AC_METHOD_3_1102911C892F05AA_OFFSET UNITYSDK_OFFSET(0x88ECE90)
+#define CLASS_3_66061C16C0C163AC__CTOR_OFFSET UNITYSDK_OFFSET(0x88ED000)
 
-inline static constexpr unsigned int Class_3_66061C16C0C163AC_TypeDefinitionIndex = 56569;
+inline static constexpr unsigned int Class_3_66061C16C0C163AC_TypeDefinitionIndex = 38497;
 
-class Class_3_66061C16C0C163AC : public ::Class_2_532BF80753ABBBED<::MoleMole::EntityHandle>
+class Class_3_66061C16C0C163AC : public ::Class_2_427CF9B2137C5720<::MoleMole::EntityHandle>
 {
 public:
 	::System::Void _ctor()

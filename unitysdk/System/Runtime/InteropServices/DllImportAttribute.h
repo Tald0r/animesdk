@@ -7,8 +7,8 @@
 namespace System { class String; }
 namespace System::Reflection { class RuntimeMethodInfo; }
 
-#define SYSTEM_RUNTIME_INTEROPSERVICES_DLLIMPORTATTRIBUTE_GETCUSTOMATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19889D30)
-#define SYSTEM_RUNTIME_INTEROPSERVICES_DLLIMPORTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19889E20)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_DLLIMPORTATTRIBUTE_GETCUSTOMATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19DD24D0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_DLLIMPORTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19DD25B0)
 
 namespace System::Runtime::InteropServices
 {
@@ -20,11 +20,11 @@ namespace System::Runtime::InteropServices
 		::System::String* _val; // 0x10
 		::System::String* EntryPoint; // 0x18
 		::System::Runtime::InteropServices::CharSet CharSet; // 0x20
-		::System::Boolean ThrowOnUnmappableChar; // 0x24
-		::System::Boolean ExactSpelling; // 0x25
-		::System::Boolean BestFitMapping; // 0x26
-		::System::Boolean PreserveSig; // 0x27
-		::System::Boolean SetLastError; // 0x28
+		::System::Boolean BestFitMapping; // 0x24
+		::System::Boolean ThrowOnUnmappableChar; // 0x25
+		::System::Boolean ExactSpelling; // 0x26
+		::System::Boolean SetLastError; // 0x27
+		::System::Boolean PreserveSig; // 0x28
 		::System::Runtime::InteropServices::CallingConvention CallingConvention; // 0x2C
 
 		::System::Void _ctor(::System::String* dllName, ::System::String* entryPoint, ::System::Runtime::InteropServices::CharSet charSet, ::System::Boolean exactSpelling, ::System::Boolean setLastError, ::System::Boolean preserveSig, ::System::Runtime::InteropServices::CallingConvention callingConvention, ::System::Boolean bestFitMapping, ::System::Boolean throwOnUnmappableChar)

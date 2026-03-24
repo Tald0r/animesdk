@@ -7,17 +7,18 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class RectTransform; }
 
-#define CLASS_2_E4E0EC1B1950CE94_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x762C9C0)
-#define CLASS_2_E4E0EC1B1950CE94_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x762CA80)
-#define CLASS_2_E4E0EC1B1950CE94__CTOR_OFFSET UNITYSDK_OFFSET(0x762CA70)
+#define CLASS_2_E4E0EC1B1950CE94_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xD5FC3C0)
+#define CLASS_2_E4E0EC1B1950CE94_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD5FC490)
+#define CLASS_2_E4E0EC1B1950CE94__CTOR_OFFSET UNITYSDK_OFFSET(0xD5FC480)
 
-inline static constexpr unsigned int Class_2_E4E0EC1B1950CE94_TypeDefinitionIndex = 62297;
+inline static constexpr unsigned int Class_2_E4E0EC1B1950CE94_TypeDefinitionIndex = 44719;
 
 class Class_2_E4E0EC1B1950CE94 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::CanvasGroup* Field_2_1; // 0x18
-	::UnityEngine::RectTransform* Field_2_0; // 0x20
+	::UnityEngine::RectTransform* Field_2_0; // 0x18
+	::UnityEngine::RectTransform* Field_2_1; // 0x20
+	::UnityEngine::CanvasGroup* Field_2_2; // 0x28
 
 	::System::Void _ctor()
 	{

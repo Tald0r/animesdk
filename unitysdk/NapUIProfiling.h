@@ -7,26 +7,26 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Transform; }
 
-#define NAPUIPROFILING_BEGINSAMPLE_OFFSET UNITYSDK_OFFSET(0x1B1260B0)
-#define NAPUIPROFILING_ENDSAMPLE_OFFSET UNITYSDK_OFFSET(0x1B126140)
-#define NAPUIPROFILING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B1261B0)
+#define NAPUIPROFILING_BEGINSAMPLE_OFFSET UNITYSDK_OFFSET(0x1B73D420)
+#define NAPUIPROFILING_ENDSAMPLE_OFFSET UNITYSDK_OFFSET(0x1B73D4B0)
+#define NAPUIPROFILING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B73D520)
 
-inline static constexpr unsigned int NapUIProfiling_TypeDefinitionIndex = 8314;
+inline static constexpr unsigned int NapUIProfiling_TypeDefinitionIndex = 8324;
 
 class NapUIProfiling : public ::System::Object
 {
 public:
-	static ::System::Collections::Generic::Dictionary_2<::NapUIProfiling_UIFuncionType, ::System::String*>** StaticGet_TypeToStringMap()
-	{
-		return (::System::Collections::Generic::Dictionary_2<::NapUIProfiling_UIFuncionType, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(NapUIProfiling_TypeDefinitionIndex)->GetStaticField(0x75C0);
-	}
 	static ::System::Collections::Generic::Dictionary_2<::System::String*, ::NapUIProfiling_UIFuncionType>** StaticGet_StringToTypeMap()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::NapUIProfiling_UIFuncionType>**)Il2CppClass::FromTypeDefinitionIndex(NapUIProfiling_TypeDefinitionIndex)->GetStaticField(0x75C8);
+		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::NapUIProfiling_UIFuncionType>**)Il2CppClass::FromTypeDefinitionIndex(NapUIProfiling_TypeDefinitionIndex)->GetStaticField(0x7600);
+	}
+	static ::System::Collections::Generic::Dictionary_2<::NapUIProfiling_UIFuncionType, ::System::String*>** StaticGet_TypeToStringMap()
+	{
+		return (::System::Collections::Generic::Dictionary_2<::NapUIProfiling_UIFuncionType, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(NapUIProfiling_TypeDefinitionIndex)->GetStaticField(0x7608);
 	}
 	static ::System::Boolean* StaticGet_EnableUIProfile()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapUIProfiling_TypeDefinitionIndex)->GetStaticField(0x3B10);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapUIProfiling_TypeDefinitionIndex)->GetStaticField(0x3B30);
 	}
 
 	static ::System::Void _cctor()

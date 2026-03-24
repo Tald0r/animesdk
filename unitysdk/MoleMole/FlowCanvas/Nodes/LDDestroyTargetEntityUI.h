@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETENTITYUI_INVOKE_OFFSET UNITYSDK_OFFSET(0x82C7820)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETENTITYUI__CTOR_OFFSET UNITYSDK_OFFSET(0x82C79C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETENTITYUI_INVOKE_OFFSET UNITYSDK_OFFSET(0xA381890)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETENTITYUI__CTOR_OFFSET UNITYSDK_OFFSET(0xA381A30)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDDestroyTargetEntityUI_TypeDefinitionIndex = 41417;
+	inline static constexpr unsigned int LDDestroyTargetEntityUI_TypeDefinitionIndex = 37416;
 
 	class LDDestroyTargetEntityUI : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::System::Boolean, ::MoleMole::Battle::Entity*>
 	{

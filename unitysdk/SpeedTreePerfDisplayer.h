@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define SPEEDTREEPERFDISPLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x124A80A0)
+#define SPEEDTREEPERFDISPLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x11B25BD0)
 
-inline static constexpr unsigned int SpeedTreePerfDisplayer_TypeDefinitionIndex = 82137;
+inline static constexpr unsigned int SpeedTreePerfDisplayer_TypeDefinitionIndex = 84202;
 
 class SpeedTreePerfDisplayer : public ::UnityEngine::MonoBehaviour
 {

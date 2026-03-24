@@ -5,12 +5,12 @@
 
 namespace MoleMole::Config { class ConfigShootingGroundBulletType; }
 
-#define MOLEMOLE_SHOOTINGGROUNDSUBSYSTEM___C__DISPLAYCLASS65_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB3005F0)
-#define MOLEMOLE_SHOOTINGGROUNDSUBSYSTEM___C__DISPLAYCLASS65_0__INITIALIZEBULLET_B__0_OFFSET UNITYSDK_OFFSET(0xB300600)
+#define MOLEMOLE_SHOOTINGGROUNDSUBSYSTEM___C__DISPLAYCLASS65_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB874D40)
+#define MOLEMOLE_SHOOTINGGROUNDSUBSYSTEM___C__DISPLAYCLASS65_0__INITIALIZEBULLET_B__0_OFFSET UNITYSDK_OFFSET(0xB874D50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ShootingGroundSubsystem___c__DisplayClass65_0_TypeDefinitionIndex = 75423;
+	inline static constexpr unsigned int ShootingGroundSubsystem___c__DisplayClass65_0_TypeDefinitionIndex = 78946;
 
 	class ShootingGroundSubsystem___c__DisplayClass65_0 : public ::System::Object
 	{

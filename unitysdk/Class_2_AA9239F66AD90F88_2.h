@@ -1,11 +1,17 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_627A5A7833BA1936.h"
+#include "unitysdk/Class_1_7D285728820BC958.h"
+#include "unitysdk/UnityEngine/Vector4.h"
 
-inline static constexpr unsigned int Class_2_AA9239F66AD90F88_2_TypeDefinitionIndex = 56017;
+#define CLASS_2_AA9239F66AD90F88_2__CTOR_OFFSET UNITYSDK_OFFSET(0x8A82ED0)
 
-template <typename T>
-class Class_2_AA9239F66AD90F88_2 : public ::Class_1_627A5A7833BA1936
+inline static constexpr unsigned int Class_2_AA9239F66AD90F88_2_TypeDefinitionIndex = 42160;
+
+class Class_2_AA9239F66AD90F88_2 : public ::Class_1_7D285728820BC958<::UnityEngine::Vector4>
 {
 public:
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_AA9239F66AD90F88_2__CTOR_OFFSET))(this);
+	}
 };

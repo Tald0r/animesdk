@@ -5,12 +5,12 @@
 
 namespace System { template <typename T> class Func_1; }
 
-#define CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__ACTION_B__0_OFFSET UNITYSDK_OFFSET(0x1AFA3880)
-#define CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFA3870)
+#define CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__ACTION_B__0_OFFSET UNITYSDK_OFFSET(0x1B5B8EB0)
+#define CYSHARP_THREADING_TASKS_UNITASK___C__DISPLAYCLASS41_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5B8EA0)
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int UniTask___c__DisplayClass41_0_TypeDefinitionIndex = 27153;
+	inline static constexpr unsigned int UniTask___c__DisplayClass41_0_TypeDefinitionIndex = 28093;
 
 	class UniTask___c__DisplayClass41_0 : public ::System::Object
 	{

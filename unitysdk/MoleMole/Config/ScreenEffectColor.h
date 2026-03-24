@@ -5,22 +5,22 @@
 
 class NapGradient;
 
-#define MOLEMOLE_CONFIG_SCREENEFFECTCOLOR_GETVALUE_OFFSET UNITYSDK_OFFSET(0x8063A70)
-#define MOLEMOLE_CONFIG_SCREENEFFECTCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x8063B50)
+#define MOLEMOLE_CONFIG_SCREENEFFECTCOLOR_GETVALUE_OFFSET UNITYSDK_OFFSET(0x9D16BC0)
+#define MOLEMOLE_CONFIG_SCREENEFFECTCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x9D16CA0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ScreenEffectColor_TypeDefinitionIndex = 67290;
+	inline static constexpr unsigned int ScreenEffectColor_TypeDefinitionIndex = 40716;
 
 	class ScreenEffectColor : public ::System::Object
 	{
 	public:
 		::NapGradient* Curve; // 0x10
 		::UnityEngine::Color FixedValue; // 0x18
-		::UnityEngine::Color OverrideDefaultValue; // 0x28
-		::System::Boolean EnableFade; // 0x38
-		::System::Boolean EnableOverrideDefaultValue; // 0x39
-		::System::Boolean UseCurve; // 0x3A
+		::System::Boolean UseCurve; // 0x28
+		::System::Boolean EnableOverrideDefaultValue; // 0x29
+		::System::Boolean EnableFade; // 0x2A
+		::UnityEngine::Color OverrideDefaultValue; // 0x2C
 
 		::System::Void _ctor()
 		{

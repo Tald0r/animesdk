@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_3_3E672E4E1397449B.h"
 
-#define CLASS_4_D719B19388CDBB0F__CTOR_OFFSET UNITYSDK_OFFSET(0x90E5F10)
+#define CLASS_4_D719B19388CDBB0F__CTOR_OFFSET UNITYSDK_OFFSET(0x8E77A40)
 
-inline static constexpr unsigned int Class_4_D719B19388CDBB0F_TypeDefinitionIndex = 53409;
+inline static constexpr unsigned int Class_4_D719B19388CDBB0F_TypeDefinitionIndex = 72373;
 
 class Class_4_D719B19388CDBB0F : public ::Class_3_3E672E4E1397449B
 {

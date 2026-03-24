@@ -3,15 +3,15 @@
 #include "unitysdk/Class_2_A48F3719AA1CF200.h"
 #include "unitysdk/Struct_2_E614D3B245F96744_1.h"
 
-#define CLASS_3_AB8E9ECB82311BD6__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9C9AE0)
+#define CLASS_3_AB8E9ECB82311BD6__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0AF4C0)
 
-inline static constexpr unsigned int Class_3_AB8E9ECB82311BD6_TypeDefinitionIndex = 79250;
+inline static constexpr unsigned int Class_3_AB8E9ECB82311BD6_TypeDefinitionIndex = 81328;
 
 class Class_3_AB8E9ECB82311BD6 : public ::Class_2_A48F3719AA1CF200
 {
 public:
-	::System::UInt32 Field_3_0; // 0x10
-	::Struct_2_E614D3B245F96744_1 Field_3_1; // 0x14
+	::Struct_2_E614D3B245F96744_1 Field_3_1; // 0x10
+	::System::UInt32 Field_3_0; // 0x18
 
 	::System::Void _ctor()
 	{

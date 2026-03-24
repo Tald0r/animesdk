@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIWISHLISTSWITCHPLANPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x938FCD0)
+#define MOLEMOLE_UIWISHLISTSWITCHPLANPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9540CA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWishlistSwitchPlanPopWindowContext_TypeDefinitionIndex = 39094;
+	inline static constexpr unsigned int UIWishlistSwitchPlanPopWindowContext_TypeDefinitionIndex = 76345;
 
 	class UIWishlistSwitchPlanPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{

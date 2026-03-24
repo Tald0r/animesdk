@@ -17,46 +17,46 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 namespace UnityEngine::Rendering::Universal { class AmplifyOcclusion; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_EXECUTE_OFFSET UNITYSDK_OFFSET(0x187BB0D0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x187BBDA0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_PREPARESSAO_OFFSET UNITYSDK_OFFSET(0x187B9590)
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_SETUP_OFFSET UNITYSDK_OFFSET(0x187B9490)
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE__CCTOR_OFFSET UNITYSDK_OFFSET(0x187BBE50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x187B9370)
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x187BBED0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18D19E40)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18D1AB10)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_PREPARESSAO_OFFSET UNITYSDK_OFFSET(0x18D182F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE_SETUP_OFFSET UNITYSDK_OFFSET(0x18D181F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D1ABC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x18D180D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSIONPASS_NOTNATIVE___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18D1AC40)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int AmplifyOcclusionPass_NotNative_TypeDefinitionIndex = 28712;
+	inline static constexpr unsigned int AmplifyOcclusionPass_NotNative_TypeDefinitionIndex = 29658;
 
 	class AmplifyOcclusionPass_NotNative : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
+		static ::System::Int32* StaticGet__GTAO0()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x74C0);
+		}
 		static ::System::Int32* StaticGet__TempHalfAngleTex()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x6D70);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x74C4);
 		}
 		static ::System::Int32* StaticGet__GTAO1()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x6D74);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x74C8);
 		}
 		static ::System::Int32* StaticGet__TempHalfResultTex()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x6D78);
-		}
-		static ::System::Int32* StaticGet__GTAO0()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x6D7C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(AmplifyOcclusionPass_NotNative_TypeDefinitionIndex)->GetStaticField(0x74CC);
 		}
 		// static const ::System::String* k_ProfilerTag; // 0x0
 		::UnityEngine::Rendering::Universal::AmplifyOcclusion* m_AmplifyOcclusionConfig; // 0xA8
-		::System::Single m_OneOverDepthScale; // 0xB0
-		::System::Boolean m_IsLowQualityPlatform; // 0xB4
-		::System::Boolean switchRT; // 0xB5
-		::System::Boolean m_IsSupportRTFormatRFloat; // 0xB6
-		::System::Boolean m_ForceLowQuality; // 0xB7
-		::UnityEngine::RenderTextureDescriptor m_RenderTextureDescriptor; // 0xB8
-		::UnityEngine::Experimental::Rendering::GraphicsFormat m_OcclusionRtFormatForEasySSAO; // 0xF0
+		::UnityEngine::RenderTextureDescriptor m_RenderTextureDescriptor; // 0xB0
+		::UnityEngine::Experimental::Rendering::GraphicsFormat m_OcclusionRtFormatForEasySSAO; // 0xE8
+		::System::Single m_OneOverDepthScale; // 0xEC
+		::System::Boolean switchRT; // 0xF0
+		::System::Boolean m_ForceLowQuality; // 0xF1
+		::System::Boolean m_IsLowQualityPlatform; // 0xF2
+		::System::Boolean m_IsSupportRTFormatRFloat; // 0xF3
 
 		::System::Void _ctor(::System::String* profilerTag, ::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent>* renderPassEventConfig)
 		{

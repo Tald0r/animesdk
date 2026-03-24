@@ -8,7 +8,7 @@
 
 namespace UnityEngine::ParticleSystemJobs
 {
-	inline static constexpr unsigned int ParticleSystemJobData_TypeDefinitionIndex = 23722;
+	inline static constexpr unsigned int ParticleSystemJobData_TypeDefinitionIndex = 24405;
 
 	struct alignas(8) ParticleSystemJobData
 	{

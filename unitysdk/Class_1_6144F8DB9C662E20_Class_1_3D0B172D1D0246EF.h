@@ -6,16 +6,16 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-#define CLASS_1_6144F8DB9C662E20_CLASS_1_3D0B172D1D0246EF_METHOD_1_37C1101E3ADF889F_OFFSET UNITYSDK_OFFSET(0x80CCE80)
-#define CLASS_1_6144F8DB9C662E20_CLASS_1_3D0B172D1D0246EF__CTOR_OFFSET UNITYSDK_OFFSET(0x80CCE70)
+#define CLASS_1_6144F8DB9C662E20_CLASS_1_3D0B172D1D0246EF_METHOD_1_37C1101E3ADF889F_OFFSET UNITYSDK_OFFSET(0x9F65A90)
+#define CLASS_1_6144F8DB9C662E20_CLASS_1_3D0B172D1D0246EF__CTOR_OFFSET UNITYSDK_OFFSET(0x9F65A80)
 
-inline static constexpr unsigned int Class_1_6144F8DB9C662E20_Class_1_3D0B172D1D0246EF_TypeDefinitionIndex = 76284;
+inline static constexpr unsigned int Class_1_6144F8DB9C662E20_Class_1_3D0B172D1D0246EF_TypeDefinitionIndex = 59319;
 
 class Class_1_6144F8DB9C662E20_Class_1_3D0B172D1D0246EF : public ::System::Object
 {
 public:
-	::System::Collections::Generic::IEnumerable_1<::System::String*>* Field_1_1; // 0x10
-	::System::String* Field_1_0; // 0x18
+	::System::String* Field_1_0; // 0x10
+	::System::Collections::Generic::IEnumerable_1<::System::String*>* Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

@@ -6,12 +6,12 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1B14FE00)
-#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x1B14FF80)
+#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1B76EDB0)
+#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x1B76EF30)
 
 namespace PipelineCamera::CameraSequence::Timeline
 {
-	inline static constexpr unsigned int SectionClip_TypeDefinitionIndex = 81145;
+	inline static constexpr unsigned int SectionClip_TypeDefinitionIndex = 83186;
 
 	class SectionClip : public ::UnityEngine::Playables::PlayableAsset
 	{

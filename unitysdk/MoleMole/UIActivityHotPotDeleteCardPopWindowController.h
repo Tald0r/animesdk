@@ -1,0 +1,132 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIWindowController.h"
+
+class Class_1_7807B2B04302CD7B;
+class Class_2_CA475E4A850C2837;
+namespace MoleMole { class ScrollViewItemWidgetController; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class Object; }
+namespace System { template <typename T> class Func_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class GameObject; }
+
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_CREATECARDITEMROW_OFFSET UNITYSDK_OFFSET(0xB733650)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0xB732920)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONCONFIRMBTNCLICK_OFFSET UNITYSDK_OFFSET(0xB7340B0)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB733520)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONITEMCLICK_OFFSET UNITYSDK_OFFSET(0xB733790)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONSWITCHBTNCLICK_OFFSET UNITYSDK_OFFSET(0xB733EB0)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB7335C0)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB732930)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB732D40)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONWIDGETUPDATE_OFFSET UNITYSDK_OFFSET(0xB733C10)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xB733120)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_SETSWITCHBTNSTATE_OFFSET UNITYSDK_OFFSET(0xB733480)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xB7344B0)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xB7344F0)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xB734560)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xB734570)
+#define MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xB734580)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityHotPotDeleteCardPopWindowController_TypeDefinitionIndex = 49441;
+
+	class UIActivityHotPotDeleteCardPopWindowController : public ::MoleMole::UIWindowController
+	{
+	public:
+		::Class_2_CA475E4A850C2837* _view; // 0x2F8
+		::System::Collections::Generic::List_1<::System::Int32>* _currentSelectCardIDsIndex; // 0x300
+		::System::Boolean _isSwitchBtnOn; // 0x308
+		::System::Int32 _toDeleteNum; // 0x30C
+		::System::Collections::Generic::List_1<::Class_1_7807B2B04302CD7B*>* _orderedList; // 0x310
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::MoleMole::ScrollViewItemWidgetController* CreateCardItemRow(::System::Func_1<::MoleMole::UIControlReference*>* arg)
+		{
+			return ((::MoleMole::ScrollViewItemWidgetController*(*)(::PVOID, ::System::Func_1<::MoleMole::UIControlReference*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_CREATECARDITEMROW_OFFSET))(this, arg);
+		}
+
+		::System::Void OnItemClick(::System::Int32 index)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONITEMCLICK_OFFSET))(this, index);
+		}
+
+		::System::Void OnWidgetUpdate(::UnityEngine::GameObject* go, ::System::Int32 index, ::System::Object* data, ::System::Boolean init)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::GameObject*, ::System::Int32, ::System::Object*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONWIDGETUPDATE_OFFSET))(this, go, index, data, init);
+		}
+
+		::System::Void SetSwitchBtnState()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_SETSWITCHBTNSTATE_OFFSET))(this);
+		}
+
+		::System::Void OnSwitchBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONSWITCHBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void OnConfirmBtnClick()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER_ONCONFIRMBTNCLICK_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTDELETECARDPOPWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

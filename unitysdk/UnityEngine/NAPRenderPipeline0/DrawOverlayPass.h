@@ -14,12 +14,12 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_DRAWOVERLAYPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19E3A530)
-#define UNITYENGINE_NAPRENDERPIPELINE0_DRAWOVERLAYPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19E3A230)
+#define UNITYENGINE_NAPRENDERPIPELINE0_DRAWOVERLAYPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1A403290)
+#define UNITYENGINE_NAPRENDERPIPELINE0_DRAWOVERLAYPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A402F90)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int DrawOverlayPass_TypeDefinitionIndex = 5822;
+	inline static constexpr unsigned int DrawOverlayPass_TypeDefinitionIndex = 5824;
 
 	class DrawOverlayPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{

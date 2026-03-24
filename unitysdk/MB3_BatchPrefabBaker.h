@@ -6,10 +6,10 @@
 class MB3_BatchPrefabBaker_MB3_PrefabBakerRow;
 namespace System { class String; }
 
-#define MB3_BATCHPREFABBAKER_CREATESOURCEANDRESULTPREFABINSTANCES_OFFSET UNITYSDK_OFFSET(0x1B0DFBC0)
-#define MB3_BATCHPREFABBAKER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0DFC70)
+#define MB3_BATCHPREFABBAKER_CREATESOURCEANDRESULTPREFABINSTANCES_OFFSET UNITYSDK_OFFSET(0x1B6F2290)
+#define MB3_BATCHPREFABBAKER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6F2340)
 
-inline static constexpr unsigned int MB3_BatchPrefabBaker_TypeDefinitionIndex = 81192;
+inline static constexpr unsigned int MB3_BatchPrefabBaker_TypeDefinitionIndex = 83233;
 
 class MB3_BatchPrefabBaker : public ::UnityEngine::MonoBehaviour
 {

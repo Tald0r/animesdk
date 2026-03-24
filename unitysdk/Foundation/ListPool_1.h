@@ -9,7 +9,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ListPool_1_TypeDefinitionIndex = 8098;
+	inline static constexpr unsigned int ListPool_1_TypeDefinitionIndex = 7903;
 
 	template <typename T>
 	class ListPool_1 : public ::System::Object

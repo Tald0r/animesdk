@@ -8,20 +8,20 @@
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYGETCANMOVENEIGHBORPOSITION_INVOKE_OFFSET UNITYSDK_OFFSET(0xE0EC120)
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYGETCANMOVENEIGHBORPOSITION__CCTOR_OFFSET UNITYSDK_OFFSET(0xE0EC670)
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYGETCANMOVENEIGHBORPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0xE0EC5C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYGETCANMOVENEIGHBORPOSITION_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A50D80)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYGETCANMOVENEIGHBORPOSITION__CCTOR_OFFSET UNITYSDK_OFFSET(0x7A512D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYGETCANMOVENEIGHBORPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x7A51220)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int HollowEntityGetCanMoveNeighborPosition_TypeDefinitionIndex = 48306;
+	inline static constexpr unsigned int HollowEntityGetCanMoveNeighborPosition_TypeDefinitionIndex = 58525;
 
 	class HollowEntityGetCanMoveNeighborPosition : public ::MoleMole::FlowCanvas::ChessboardPureFunctionNode_3<::System::Collections::Generic::IList_1<::MoleMole::Vector2Int>*, ::System::UInt32, ::MoleMole::FlowCanvas::Nodes::HollowEntityGetCanMoveNeighborPosition_Param>
 	{
 	public:
 		static ::Il2CppArray<::Share::GridDir>** StaticGet_GRID_DIR_FOUR()
 		{
-			return (::Il2CppArray<::Share::GridDir>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityGetCanMoveNeighborPosition_TypeDefinitionIndex)->GetStaticField(0x3FFA0);
+			return (::Il2CppArray<::Share::GridDir>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityGetCanMoveNeighborPosition_TypeDefinitionIndex)->GetStaticField(0x46BE0);
 		}
 		::System::Collections::Generic::List_1<::MoleMole::Vector2Int>* _canMoveNeighborIndex; // 0x30
 

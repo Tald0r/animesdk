@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define PIPELINECAMERA_ONSCREENMESSAGESWITCHATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A44C9F0)
+#define PIPELINECAMERA_ONSCREENMESSAGESWITCHATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA47EF0)
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int OnScreenMessageSwitchAttribute_TypeDefinitionIndex = 34480;
+	inline static constexpr unsigned int OnScreenMessageSwitchAttribute_TypeDefinitionIndex = 35482;
 
 	class OnScreenMessageSwitchAttribute : public ::System::Attribute
 	{

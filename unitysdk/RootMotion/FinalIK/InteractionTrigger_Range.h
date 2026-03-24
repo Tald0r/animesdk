@@ -9,12 +9,12 @@ namespace RootMotion::FinalIK { class InteractionTrigger_Range_Interaction; }
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_FINALIK_INTERACTIONTRIGGER_RANGE_ISINRANGE_OFFSET UNITYSDK_OFFSET(0x1ADD8350)
-#define ROOTMOTION_FINALIK_INTERACTIONTRIGGER_RANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADD8420)
+#define ROOTMOTION_FINALIK_INTERACTIONTRIGGER_RANGE_ISINRANGE_OFFSET UNITYSDK_OFFSET(0x1B3ECF20)
+#define ROOTMOTION_FINALIK_INTERACTIONTRIGGER_RANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3ECFF0)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int InteractionTrigger_Range_TypeDefinitionIndex = 35121;
+	inline static constexpr unsigned int InteractionTrigger_Range_TypeDefinitionIndex = 36123;
 
 	class InteractionTrigger_Range : public ::System::Object
 	{

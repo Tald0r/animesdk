@@ -4,11 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MAPLAYERORDERINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x8F195F0)
+#define MOLEMOLE_MAPLAYERORDERINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xA02AC30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MapLayerOrderInfo_TypeDefinitionIndex = 74337;
+	inline static constexpr unsigned int MapLayerOrderInfo_TypeDefinitionIndex = 47608;
 
 	class MapLayerOrderInfo : public ::System::Object
 	{

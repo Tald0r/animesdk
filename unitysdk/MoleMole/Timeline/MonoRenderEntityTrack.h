@@ -7,15 +7,15 @@
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xB30E9D0)
-#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0xB30E850)
-#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_652F102150AC9967_OFFSET UNITYSDK_OFFSET(0xB30EC30)
-#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET UNITYSDK_OFFSET(0xB30EC70)
-#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xB30EC00)
+#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xB70CDB0)
+#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_CREATETRACKMIXER_OFFSET UNITYSDK_OFFSET(0xB70CC30)
+#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_652F102150AC9967_OFFSET UNITYSDK_OFFSET(0xB70D0B0)
+#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET UNITYSDK_OFFSET(0xB70D010)
+#define MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xB70CFE0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MonoRenderEntityTrack_TypeDefinitionIndex = 56083;
+	inline static constexpr unsigned int MonoRenderEntityTrack_TypeDefinitionIndex = 70568;
 
 	class MonoRenderEntityTrack : public ::UnityEngine::Timeline::TrackAsset
 	{
@@ -35,14 +35,14 @@ namespace MoleMole::Timeline
 			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_CREATEPLAYABLE_OFFSET))(this, a1, a2, a3);
 		}
 
-		::UnityEngine::Playables::Playable Method_5_652F102150AC9967(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::UnityEngine::Timeline::TimelineClip* a3)
-		{
-			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_652F102150AC9967_OFFSET))(this, a1, a2, a3);
-		}
-
 		::UnityEngine::Playables::Playable Method_5_6CBA94B39B120DE0(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::System::Int32 a3)
 		{
 			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_6CBA94B39B120DE0_OFFSET))(this, a1, a2, a3);
+		}
+
+		::UnityEngine::Playables::Playable Method_5_652F102150AC9967(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::GameObject* a2, ::UnityEngine::Timeline::TimelineClip* a3)
+		{
+			return ((::UnityEngine::Playables::Playable(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::GameObject*, ::UnityEngine::Timeline::TimelineClip*))((::PBYTE)hIl2Cpp + MOLEMOLE_TIMELINE_MONORENDERENTITYTRACK_METHOD_5_652F102150AC9967_OFFSET))(this, a1, a2, a3);
 		}
 	};
 }

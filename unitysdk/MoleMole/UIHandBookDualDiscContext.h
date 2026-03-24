@@ -5,20 +5,20 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHANDBOOKDUALDISCCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x89265C0)
+#define MOLEMOLE_UIHANDBOOKDUALDISCCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDFCECD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookDualDiscContext_TypeDefinitionIndex = 66602;
+	inline static constexpr unsigned int UIHandBookDualDiscContext_TypeDefinitionIndex = 47904;
 
 	class UIHandBookDualDiscContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Action_1<::System::Int32>* OnSelectConfirm; // 0x28
-		::System::ValueTuple_2<::System::Int32, ::System::Int32> DiscSuitPair; // 0x30
-		::System::UInt32 DefaultCheckedAvatarID; // 0x38
-		::System::Boolean isCanSelect; // 0x3C
-		::System::Boolean isShowTarget; // 0x3D
+		::System::Boolean isShowTarget; // 0x30
+		::System::Boolean isCanSelect; // 0x31
+		::System::ValueTuple_2<::System::Int32, ::System::Int32> DiscSuitPair; // 0x34
+		::System::UInt32 DefaultCheckedAvatarID; // 0x3C
 
 		::System::Void _ctor()
 		{

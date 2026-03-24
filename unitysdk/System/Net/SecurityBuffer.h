@@ -6,10 +6,10 @@
 namespace System::Runtime::InteropServices { class SafeHandle; }
 namespace System::Security::Authentication::ExtendedProtection { class ChannelBinding; }
 
-#define SYSTEM_NET_SECURITYBUFFER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18F59EF0)
-#define SYSTEM_NET_SECURITYBUFFER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x18F59F30)
-#define SYSTEM_NET_SECURITYBUFFER__CTOR_3_OFFSET UNITYSDK_OFFSET(0x18F59F60)
-#define SYSTEM_NET_SECURITYBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x18F59E70)
+#define SYSTEM_NET_SECURITYBUFFER__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1932A090)
+#define SYSTEM_NET_SECURITYBUFFER__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1932A0D0)
+#define SYSTEM_NET_SECURITYBUFFER__CTOR_3_OFFSET UNITYSDK_OFFSET(0x1932A100)
+#define SYSTEM_NET_SECURITYBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x1932A010)
 
 namespace System::Net
 {
@@ -18,8 +18,8 @@ namespace System::Net
 	class SecurityBuffer : public ::System::Object
 	{
 	public:
-		::System::Runtime::InteropServices::SafeHandle* unmanagedToken; // 0x10
-		::Il2CppArray<::System::Byte>* token; // 0x18
+		::Il2CppArray<::System::Byte>* token; // 0x10
+		::System::Runtime::InteropServices::SafeHandle* unmanagedToken; // 0x18
 		::System::Int32 size; // 0x20
 		::System::Int32 offset; // 0x24
 		::System::Net::BufferType type; // 0x28

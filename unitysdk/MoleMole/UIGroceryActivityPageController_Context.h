@@ -1,18 +1,18 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_A850FEC42C5E8043.h"
+#include "unitysdk/Enum_3_A843FEC42C53F62F.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7A584B0)
+#define MOLEMOLE_UIGROCERYACTIVITYPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA9AF690)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGroceryActivityPageController_Context_TypeDefinitionIndex = 77253;
+	inline static constexpr unsigned int UIGroceryActivityPageController_Context_TypeDefinitionIndex = 67056;
 
 	class UIGroceryActivityPageController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Enum_3_A850FEC42C5E8043 activityType; // 0x28
+		::Enum_3_A843FEC42C53F62F activityType; // 0x28
 
 		::System::Void _ctor()
 		{

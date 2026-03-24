@@ -5,11 +5,11 @@
 namespace MoleMole { class UIMindscapeWidgetController___c__DisplayClass100_0; }
 namespace MoleMole { class UserLocalDataItem; }
 
-#define MOLEMOLE_UIMINDSCAPEWIDGETCONTROLLER___C__DISPLAYCLASS100_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCEAA0)
+#define MOLEMOLE_UIMINDSCAPEWIDGETCONTROLLER___C__DISPLAYCLASS100_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBE2CF40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMindscapeWidgetController___c__DisplayClass100_1_TypeDefinitionIndex = 74113;
+	inline static constexpr unsigned int UIMindscapeWidgetController___c__DisplayClass100_1_TypeDefinitionIndex = 73435;
 
 	class UIMindscapeWidgetController___c__DisplayClass100_1 : public ::System::Object
 	{

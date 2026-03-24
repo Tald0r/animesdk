@@ -3,7 +3,7 @@
 #include "unitysdk/MoleMole/Config/BaseProperty.h"
 #include "unitysdk/MoleMole/Config/ConfigAttackPatternType.h"
 #include "unitysdk/MoleMole/Config/TeamProperty.h"
-#include "unitysdk/MoleMole/LayerMaskStatic_Enum_3_BA21CC391326FDD3.h"
+#include "unitysdk/MoleMole/LayerMaskStatic_Enum_3_C3BBA2B066959E6E.h"
 #include "unitysdk/Struct_2_B76C9DBDAECC6C19.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/LayerMask.h"
@@ -29,57 +29,57 @@ namespace System::Collections::Generic { template <typename T> class IReadOnlyLi
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_BEGINCONTINUOUSATTACKPATTERNLISTDRAW_OFFSET UNITYSDK_OFFSET(0xCD03D80)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_CHECKATTACKPATTERNLISTSHOW_OFFSET UNITYSDK_OFFSET(0xCD03CA0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_CHECKATTACKPATTERNSHOW_OFFSET UNITYSDK_OFFSET(0xCD03C30)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_CHECKCONTINUOUSATTACKPATTERNLISTSHOW_OFFSET UNITYSDK_OFFSET(0xCD03D10)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_GETPATTERNEVENT_OFFSET UNITYSDK_OFFSET(0xCD03490)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLISTWITHOVERRIDEPARAM_OFFSET UNITYSDK_OFFSET(0xCD03360)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLIST_OFFSET UNITYSDK_OFFSET(0xCD017C0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERN_OFFSET UNITYSDK_OFFSET(0xCD01430)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLISTWITHOVERRIDEPOSANDROT_OFFSET UNITYSDK_OFFSET(0xCD03780)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLIST_OFFSET UNITYSDK_OFFSET(0xCD02530)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xCD04180)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0xCD04080)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_PROCESSDEADFORHITRELATEDANIMEVENTS_OFFSET UNITYSDK_OFFSET(0xCD027A0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_RUNTIMETOSERIALIZED_OFFSET UNITYSDK_OFFSET(0xCD04120)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_SERIALIZEDTORUNTIME_OFFSET UNITYSDK_OFFSET(0xCD03E30)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_TRIGGERATTACKPATTERN_OFFSET UNITYSDK_OFFSET(0xCD01170)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD041F0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD03E20)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_BEGINCONTINUOUSATTACKPATTERNLISTDRAW_OFFSET UNITYSDK_OFFSET(0xE35B340)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_CHECKATTACKPATTERNLISTSHOW_OFFSET UNITYSDK_OFFSET(0xE35B260)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_CHECKATTACKPATTERNSHOW_OFFSET UNITYSDK_OFFSET(0xE35B1F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_CHECKCONTINUOUSATTACKPATTERNLISTSHOW_OFFSET UNITYSDK_OFFSET(0xE35B2D0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_GETPATTERNEVENT_OFFSET UNITYSDK_OFFSET(0xE35AA50)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLISTWITHOVERRIDEPARAM_OFFSET UNITYSDK_OFFSET(0xE35A920)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLIST_OFFSET UNITYSDK_OFFSET(0xE358D80)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERN_OFFSET UNITYSDK_OFFSET(0xE3589F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLISTWITHOVERRIDEPOSANDROT_OFFSET UNITYSDK_OFFSET(0xE35AD40)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLIST_OFFSET UNITYSDK_OFFSET(0xE359AF0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0xE35B730)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0xE35B630)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_PROCESSDEADFORHITRELATEDANIMEVENTS_OFFSET UNITYSDK_OFFSET(0xE359D60)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_RUNTIMETOSERIALIZED_OFFSET UNITYSDK_OFFSET(0xE35B6D0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_SERIALIZEDTORUNTIME_OFFSET UNITYSDK_OFFSET(0xE35B3F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_TRIGGERATTACKPATTERN_OFFSET UNITYSDK_OFFSET(0xE358730)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT__CCTOR_OFFSET UNITYSDK_OFFSET(0xE35B7A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xE35B3E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityAnimEvent_TypeDefinitionIndex = 59812;
+	inline static constexpr unsigned int ConfigEntityAnimEvent_TypeDefinitionIndex = 39240;
 
 	class ConfigEntityAnimEvent : public ::System::Object
 	{
 	public:
 		static ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::String*>** StaticGet_RelatedAnimEvents_Default()
 		{
-			return (::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigEntityAnimEvent_TypeDefinitionIndex)->GetStaticField(0x2F6D0);
+			return (::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigEntityAnimEvent_TypeDefinitionIndex)->GetStaticField(0x31210);
 		}
 		static ::System::UInt32* StaticGet_CONTINUOUS_ATTACK_PATTERN_LIST_COUNTER()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(ConfigEntityAnimEvent_TypeDefinitionIndex)->GetStaticField(0xB500);
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(ConfigEntityAnimEvent_TypeDefinitionIndex)->GetStaticField(0xC190);
 		}
-		::System::Collections::Generic::List_1<::MoleMole::Config::ContinueAttackDetect*>* ContinuousAttackPatternList; // 0x10
-		::System::Collections::Generic::Dictionary_2<::MoleMole::Config::BaseProperty, ::System::Single>* RecoverProperties; // 0x18
-		::Il2CppArray<::System::String*>* RelatedAnimEventsV2; // 0x20
+		::MoleMole::Config::ConfigEntityCameraZoom* CameraZoom; // 0x10
+		::System::Collections::Generic::IReadOnlyList_1<::System::String*>* RelatedAnimEventsInRuntime; // 0x18
+		::System::Collections::Generic::Dictionary_2<::MoleMole::Config::BaseProperty, ::System::Single>* RecoverProperties; // 0x20
 		::System::Collections::Generic::Dictionary_2<::MoleMole::Config::TeamProperty, ::System::Single>* TeamEntityRecoverProperties; // 0x28
 		::MoleMole::Config::ConfigEntityAttackEffect* AttackEffect; // 0x30
-		::MoleMole::Config::ConfigAttackActiveFrameDynamicProp* ActiveDynamicProp; // 0x38
-		::MoleMole::Config::ConfigEntityAttackPattern* AttackPattern; // 0x40
-		::MoleMole::Config::ConfigEntityCameraStretch* CameraStretch; // 0x48
-		::MoleMole::Config::ConfigEntityAttackProperty* AttackProperty; // 0x50
-		::System::Collections::Generic::List_1<::MoleMole::Config::CollisionDetect*>* AttackPatternList; // 0x58
-		::MoleMole::Config::ConfigEntityCameraZoom* CameraZoom; // 0x60
-		::System::Collections::Generic::IReadOnlyList_1<::System::String*>* RelatedAnimEventsInRuntime; // 0x68
-		::MoleMole::Config::ConfigEntityAttackCameraShake* CameraShake; // 0x70
-		::System::Single RecoverHP; // 0x78
+		::MoleMole::Config::ConfigEntityAttackCameraShake* CameraShake; // 0x38
+		::System::Collections::Generic::List_1<::MoleMole::Config::CollisionDetect*>* AttackPatternList; // 0x40
+		::MoleMole::Config::ConfigEntityAttackPattern* AttackPattern; // 0x48
+		::MoleMole::Config::ConfigEntityCameraStretch* CameraStretch; // 0x50
+		::Il2CppArray<::System::String*>* RelatedAnimEventsV2; // 0x58
+		::MoleMole::Config::ConfigAttackActiveFrameDynamicProp* ActiveDynamicProp; // 0x60
+		::System::Collections::Generic::List_1<::MoleMole::Config::ContinueAttackDetect*>* ContinuousAttackPatternList; // 0x68
+		::MoleMole::Config::ConfigEntityAttackProperty* AttackProperty; // 0x70
+		::System::Boolean IsDiffTimeHitRecoverProperties_FirstTime; // 0x78
+		::System::Boolean IsSameTimeHitRecoverProperties_NTimes; // 0x79
 		::MoleMole::Config::ConfigAttackPatternType AttackPatternType; // 0x7C
-		::System::Boolean IsSameTimeHitRecoverProperties_NTimes; // 0x80
-		::System::Boolean IsDiffTimeHitRecoverProperties_FirstTime; // 0x81
+		::System::Single RecoverHP; // 0x80
 
 		::System::Void _ctor()
 		{
@@ -91,34 +91,34 @@ namespace MoleMole::Config
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT__CCTOR_OFFSET))();
 		}
 
-		::System::Boolean TriggerAttackPattern(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Boolean overridePosRot, ::UnityEngine::Vector3 centerPos, ::UnityEngine::Quaternion rotation, ::System::UInt32 overrideCenterEntityID, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean removeWithFollowEntity)
+		::System::Boolean TriggerAttackPattern(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Boolean overridePosRot, ::UnityEngine::Vector3 centerPos, ::UnityEngine::Quaternion rotation, ::System::UInt32 overrideCenterEntityID, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean removeWithFollowEntity)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Boolean, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_TRIGGERATTACKPATTERN_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overridePosRot, centerPos, rotation, overrideCenterEntityID, overrideParams, removeWithFollowEntity);
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Boolean, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_TRIGGERATTACKPATTERN_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overridePosRot, centerPos, rotation, overrideCenterEntityID, overrideParams, removeWithFollowEntity);
 		}
 
-		::System::Boolean HandleAttackPattern(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Boolean overridePosAndRot, ::UnityEngine::Vector3 overrideCenterPos, ::UnityEngine::Quaternion overrideRotation, ::System::UInt32 overrideCenterEntityID, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean autoRemoveWithFollowEntity)
+		::System::Boolean HandleAttackPattern(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Boolean overridePosAndRot, ::UnityEngine::Vector3 overrideCenterPos, ::UnityEngine::Quaternion overrideRotation, ::System::UInt32 overrideCenterEntityID, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean autoRemoveWithFollowEntity)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Boolean, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERN_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overridePosAndRot, overrideCenterPos, overrideRotation, overrideCenterEntityID, overrideParams, autoRemoveWithFollowEntity);
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Boolean, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::System::UInt32, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERN_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overridePosAndRot, overrideCenterPos, overrideRotation, overrideCenterEntityID, overrideParams, autoRemoveWithFollowEntity);
 		}
 
-		::System::Boolean HandleAttackPatternListWithOverrideParam(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean useOverridePosRot, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* overridePositionList, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>* overrideRotationList)
+		::System::Boolean HandleAttackPatternListWithOverrideParam(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean useOverridePosRot, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* overridePositionList, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>* overrideRotationList)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLISTWITHOVERRIDEPARAM_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overrideParams, useOverridePosRot, overridePositionList, overrideRotationList);
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLISTWITHOVERRIDEPARAM_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overrideParams, useOverridePosRot, overridePositionList, overrideRotationList);
 		}
 
-		::System::Boolean HandleAttackPatternList(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean useOverridePosRot, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* overridePositionList, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>* overrideRotationList, ::System::Boolean autoRemoveWithFollowEntity)
+		::System::Boolean HandleAttackPatternList(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::Struct_2_B76C9DBDAECC6C19 overrideParams, ::System::Boolean useOverridePosRot, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* overridePositionList, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>* overrideRotationList, ::System::Boolean autoRemoveWithFollowEntity)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLIST_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overrideParams, useOverridePosRot, overridePositionList, overrideRotationList, autoRemoveWithFollowEntity);
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::Struct_2_B76C9DBDAECC6C19, ::System::Boolean, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLEATTACKPATTERNLIST_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overrideParams, useOverridePosRot, overridePositionList, overrideRotationList, autoRemoveWithFollowEntity);
 		}
 
-		::System::Boolean HandleContinuousAttackPatternList(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Boolean autoRemoveWithFollowEntity)
+		::System::Boolean HandleContinuousAttackPatternList(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Boolean autoRemoveWithFollowEntity)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLIST_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, autoRemoveWithFollowEntity);
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLIST_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, autoRemoveWithFollowEntity);
 		}
 
-		::System::Boolean HandleContinuousAttackPatternListWithOverridePosAndRot(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3 subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* overridePositions, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>* overrideRotations, ::System::Collections::Generic::List_1<::System::UInt32>* overrideCenterEntityList, ::System::Boolean autoRemoveWithFollowEntity)
+		::System::Boolean HandleContinuousAttackPatternListWithOverridePosAndRot(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::UnityEngine::LayerMask layerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E subLayer, ::System::Boolean withHit, ::Il2CppArray<::System::String*>* tags, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* overridePositions, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>* overrideRotations, ::System::Collections::Generic::List_1<::System::UInt32>* overrideCenterEntityList, ::System::Boolean autoRemoveWithFollowEntity)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_BA21CC391326FDD3, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>*, ::System::Collections::Generic::List_1<::System::UInt32>*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLISTWITHOVERRIDEPOSANDROT_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overridePositions, overrideRotations, overrideCenterEntityList, autoRemoveWithFollowEntity);
+			return ((::System::Boolean(*)(::PVOID, ::Class_1_1CDA382D823F8E80*, ::MoleMole::Battle::Entity*, ::UnityEngine::LayerMask, ::MoleMole::LayerMaskStatic_Enum_3_C3BBA2B066959E6E, ::System::Boolean, ::Il2CppArray<::System::String*>*, ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*, ::System::Collections::Generic::List_1<::UnityEngine::Quaternion>*, ::System::Collections::Generic::List_1<::System::UInt32>*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_CONFIGENTITYANIMEVENT_HANDLECONTINUOUSATTACKPATTERNLISTWITHOVERRIDEPOSANDROT_OFFSET))(this, animatorAtkSource, attacker, layerMask, subLayer, withHit, tags, overridePositions, overrideRotations, overrideCenterEntityList, autoRemoveWithFollowEntity);
 		}
 
 		::System::Void ProcessDeadForHitRelatedAnimEvents(::Class_1_1CDA382D823F8E80* animatorAtkSource, ::MoleMole::Battle::Entity* attacker, ::System::Collections::Generic::List_1<::Class_1_560B23058CA4940C*>* hitResults)

@@ -1,35 +1,35 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Enum_3_4BD503641116BB32_TypeDefinitionIndex = 54555;
+inline static constexpr unsigned int Enum_3_4BD503641116BB32_TypeDefinitionIndex = 56396;
 
 enum class Enum_3_4BD503641116BB32 : ::System::Int32
 {
-	Perform = 5,
 	GeneralTip = 8,
-	HollowResult = 16,
-	General3DModel = 15,
-	MonsterCard = 20,
+	Loading = 2,
 	PrepareExitHollow = 18,
-	EnteringBattle = 13,
+	ChangeChessboardInPlace = 24,
 	GetHollowItem = 10,
-	LevelResult = 4,
+	Perform = 5,
+	ChangeChessboard = 12,
 	Move = 0,
 	HollowEntityNetInput = 17,
+	Overload = 1,
 	CardReward = 14,
-	DevelopBagDialogPop = 25,
-	HollowInfoDialog = 21,
+	General3DModel = 15,
+	HollowResult = 16,
 	Teleport = 9,
+	InitPerformance = 6,
+	PreHollowPushBack = 23,
 	NpcDrop = 22,
+	LevelResult = 4,
+	Number = 26,
+	EnteringBattle = 13,
+	DevelopBagDialogPop = 25,
+	MonsterCard = 20,
+	BattleResult = 3,
+	HollowPushBack = 11,
 	ChallengePanel = 7,
 	UpgradeCard = 19,
-	ChangeChessboard = 12,
-	PreHollowPushBack = 23,
-	Number = 26,
-	HollowPushBack = 11,
-	InitPerformance = 6,
-	BattleResult = 3,
-	Overload = 1,
-	Loading = 2,
-	ChangeChessboardInPlace = 24,
+	HollowInfoDialog = 21,
 };

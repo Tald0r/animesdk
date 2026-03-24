@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_READONLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB09860)
+#define SIRENIX_ODININSPECTOR_READONLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115980)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int ReadOnlyAttribute_TypeDefinitionIndex = 7210;
+	inline static constexpr unsigned int ReadOnlyAttribute_TypeDefinitionIndex = 7215;
 
 	class ReadOnlyAttribute : public ::System::Attribute
 	{

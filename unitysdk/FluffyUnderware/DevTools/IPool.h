@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int IPool_TypeDefinitionIndex = 24512;
+	inline static constexpr unsigned int IPool_TypeDefinitionIndex = 25337;
 
 	class IPool
 	{

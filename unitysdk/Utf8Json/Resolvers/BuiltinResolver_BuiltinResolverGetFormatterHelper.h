@@ -5,19 +5,19 @@
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define UTF8JSON_RESOLVERS_BUILTINRESOLVER_BUILTINRESOLVERGETFORMATTERHELPER_GETFORMATTER_OFFSET UNITYSDK_OFFSET(0x1B00A930)
-#define UTF8JSON_RESOLVERS_BUILTINRESOLVER_BUILTINRESOLVERGETFORMATTERHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B00AA30)
+#define UTF8JSON_RESOLVERS_BUILTINRESOLVER_BUILTINRESOLVERGETFORMATTERHELPER_GETFORMATTER_OFFSET UNITYSDK_OFFSET(0x1B61CAE0)
+#define UTF8JSON_RESOLVERS_BUILTINRESOLVER_BUILTINRESOLVERGETFORMATTERHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B61CBE0)
 
 namespace Utf8Json::Resolvers
 {
-	inline static constexpr unsigned int BuiltinResolver_BuiltinResolverGetFormatterHelper_TypeDefinitionIndex = 81763;
+	inline static constexpr unsigned int BuiltinResolver_BuiltinResolverGetFormatterHelper_TypeDefinitionIndex = 83804;
 
 	class BuiltinResolver_BuiltinResolverGetFormatterHelper : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Object*>** StaticGet_formatterMap()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(BuiltinResolver_BuiltinResolverGetFormatterHelper_TypeDefinitionIndex)->GetStaticField(0x47160);
+			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(BuiltinResolver_BuiltinResolverGetFormatterHelper_TypeDefinitionIndex)->GetStaticField(0x48B70);
 		}
 
 		static ::System::Void _cctor()

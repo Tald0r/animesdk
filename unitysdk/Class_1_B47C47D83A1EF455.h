@@ -5,9 +5,9 @@
 class Class_1_5AA2BE468EDCE452;
 namespace MoleMole { class MonoSteer; }
 
-#define CLASS_1_B47C47D83A1EF455__CTOR_OFFSET UNITYSDK_OFFSET(0xB1E2230)
+#define CLASS_1_B47C47D83A1EF455__CTOR_OFFSET UNITYSDK_OFFSET(0x88FABA0)
 
-inline static constexpr unsigned int Class_1_B47C47D83A1EF455_TypeDefinitionIndex = 70219;
+inline static constexpr unsigned int Class_1_B47C47D83A1EF455_TypeDefinitionIndex = 72265;
 
 class Class_1_B47C47D83A1EF455 : public ::System::Object
 {

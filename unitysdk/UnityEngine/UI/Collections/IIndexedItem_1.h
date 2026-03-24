@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UI::Collections
 {
-	inline static constexpr unsigned int IIndexedItem_1_TypeDefinitionIndex = 8469;
+	inline static constexpr unsigned int IIndexedItem_1_TypeDefinitionIndex = 8479;
 
 	template <typename K>
 	class IIndexedItem_1

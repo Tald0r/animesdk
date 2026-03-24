@@ -3,20 +3,20 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookSpecialTrainItemRowWidgetController_HandBookSpecialTrainItemRowType_TypeDefinitionIndex = 57461;
+	inline static constexpr unsigned int UIHandBookSpecialTrainItemRowWidgetController_HandBookSpecialTrainItemRowType_TypeDefinitionIndex = 40237;
 
 	enum class UIHandBookSpecialTrainItemRowWidgetController_HandBookSpecialTrainItemRowType : ::System::Int32
 	{
-		AvatarCoin = 4,
-		EquipDoubleElite = 10,
-		SkillLevelUp = 5,
-		AvatarLevelUp = 0,
-		SkillCoreLittle = 6,
-		WeaponLevelUp = 2,
-		WeaponBreakThrough = 3,
-		SkillCore = 7,
 		SkillCoin = 8,
-		AvatarBreakThrough = 1,
+		SkillCore = 7,
+		WeaponBreakThrough = 3,
+		EquipDoubleElite = 10,
+		SkillCoreLittle = 6,
+		AvatarLevelUp = 0,
+		SkillLevelUp = 5,
 		EquipLevelUp = 9,
+		AvatarBreakThrough = 1,
+		WeaponLevelUp = 2,
+		AvatarCoin = 4,
 	};
 }

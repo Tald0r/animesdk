@@ -16,7 +16,7 @@ namespace System::Text { class StringBuilder; }
 
 namespace SQLite
 {
-	inline static constexpr unsigned int FastColumnSetter___c__1_1_TypeDefinitionIndex = 35255;
+	inline static constexpr unsigned int FastColumnSetter___c__1_1_TypeDefinitionIndex = 36257;
 
 	template <typename T>
 	class FastColumnSetter___c__1_1 : public ::System::Object

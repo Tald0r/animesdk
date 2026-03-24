@@ -4,11 +4,11 @@
 
 class Class_2_DF2C726EEEEC912D;
 
-#define MOLEMOLE_UISOCIALCIRCLETABROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC3C8790)
+#define MOLEMOLE_UISOCIALCIRCLETABROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA4607F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISocialCircleTabRowWidgetController_Data_TypeDefinitionIndex = 76378;
+	inline static constexpr unsigned int UISocialCircleTabRowWidgetController_Data_TypeDefinitionIndex = 47470;
 
 	class UISocialCircleTabRowWidgetController_Data : public ::System::Object
 	{

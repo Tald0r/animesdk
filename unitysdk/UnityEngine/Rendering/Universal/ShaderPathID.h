@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ShaderPathID_TypeDefinitionIndex = 28753;
+	inline static constexpr unsigned int ShaderPathID_TypeDefinitionIndex = 29699;
 
 	enum class ShaderPathID : ::System::Int32
 	{

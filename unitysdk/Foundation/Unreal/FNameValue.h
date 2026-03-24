@@ -4,11 +4,11 @@
 #include "unitysdk/System/ReadOnlySpan_1.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_UNREAL_FNAMEVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x96F010)
+#define FOUNDATION_UNREAL_FNAMEVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x9905F0)
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int FNameValue_TypeDefinitionIndex = 8933;
+	inline static constexpr unsigned int FNameValue_TypeDefinitionIndex = 9032;
 
 	struct alignas(8) FNameValue
 	{

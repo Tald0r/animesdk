@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AttackMarkerType_TypeDefinitionIndex = 73451;
+	inline static constexpr unsigned int AttackMarkerType_TypeDefinitionIndex = 57758;
 
 	enum class AttackMarkerType : ::System::Int32
 	{
-		SendEventToFCMarker = 1,
 		SendAbilityCustomEventMarker = 0,
-		MusicBattleHintMarker = 2,
+		SendEventToFCMarker = 1,
 		MusicBattleBonusTimeMarker = 3,
+		MusicBattleHintMarker = 2,
 	};
 }

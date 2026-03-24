@@ -6,11 +6,11 @@ namespace DigitalOpus::MB::Core { class MB3_MeshCombinerSingle_MBBlendShapeFrame
 namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 
-#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_MBBLENDSHAPE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0DE510)
+#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_MBBLENDSHAPE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6F0BD0)
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB3_MeshCombinerSingle_MBBlendShape_TypeDefinitionIndex = 81296;
+	inline static constexpr unsigned int MB3_MeshCombinerSingle_MBBlendShape_TypeDefinitionIndex = 83337;
 
 	class MB3_MeshCombinerSingle_MBBlendShape : public ::System::Object
 	{

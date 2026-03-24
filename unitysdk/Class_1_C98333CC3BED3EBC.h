@@ -7,20 +7,20 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_1_C98333CC3BED3EBC_METHOD_1_2EFBBD3750E76EFE_OFFSET UNITYSDK_OFFSET(0xA14C630)
-#define CLASS_1_C98333CC3BED3EBC_METHOD_1_A8D19485AA054B2A_OFFSET UNITYSDK_OFFSET(0xA14C9D0)
-#define CLASS_1_C98333CC3BED3EBC_METHOD_1_B2CC0A9E38D06238_OFFSET UNITYSDK_OFFSET(0xA14C160)
-#define CLASS_1_C98333CC3BED3EBC__CCTOR_OFFSET UNITYSDK_OFFSET(0xA14C150)
-#define CLASS_1_C98333CC3BED3EBC__CTOR_OFFSET UNITYSDK_OFFSET(0xA14C0C0)
+#define CLASS_1_C98333CC3BED3EBC_METHOD_1_2EFBBD3750E76EFE_OFFSET UNITYSDK_OFFSET(0x6653B30)
+#define CLASS_1_C98333CC3BED3EBC_METHOD_1_A8D19485AA054B2A_OFFSET UNITYSDK_OFFSET(0x6653ED0)
+#define CLASS_1_C98333CC3BED3EBC_METHOD_1_B2CC0A9E38D06238_OFFSET UNITYSDK_OFFSET(0x6653660)
+#define CLASS_1_C98333CC3BED3EBC__CCTOR_OFFSET UNITYSDK_OFFSET(0x6653650)
+#define CLASS_1_C98333CC3BED3EBC__CTOR_OFFSET UNITYSDK_OFFSET(0x66535C0)
 
-inline static constexpr unsigned int Class_1_C98333CC3BED3EBC_TypeDefinitionIndex = 73240;
+inline static constexpr unsigned int Class_1_C98333CC3BED3EBC_TypeDefinitionIndex = 78404;
 
 class Class_1_C98333CC3BED3EBC : public ::System::Object
 {
 public:
 	static ::Class_1_C98333CC3BED3EBC** StaticGet_Field_1_0()
 	{
-		return (::Class_1_C98333CC3BED3EBC**)Il2CppClass::FromTypeDefinitionIndex(Class_1_C98333CC3BED3EBC_TypeDefinitionIndex)->GetStaticField(0x42EB0);
+		return (::Class_1_C98333CC3BED3EBC**)Il2CppClass::FromTypeDefinitionIndex(Class_1_C98333CC3BED3EBC_TypeDefinitionIndex)->GetStaticField(0x413D0);
 	}
 	::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Action*>*>* Field_1_1; // 0x10
 	::System::Boolean Field_1_2; // 0x18

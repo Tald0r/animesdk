@@ -2,12 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_785FDC7D0DA58280;
-class Class_2_7EFA707053000D12;
+class Class_0_16E4307DCC419505_73;
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_43BD383C98B4C0C5_8__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF68460)
+#define CLASS_1_43BD383C98B4C0C5_8__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0231E0)
 
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_8_TypeDefinitionIndex = 24831;
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_8_TypeDefinitionIndex = 25649;
 
 class Class_1_43BD383C98B4C0C5_8 : public ::System::Object
 {

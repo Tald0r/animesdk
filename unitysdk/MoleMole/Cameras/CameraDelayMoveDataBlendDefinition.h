@@ -5,24 +5,24 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION_CREATESTANDARDCURVES_OFFSET UNITYSDK_OFFSET(0x319300)
-#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION_GET_BLENDCURVE_OFFSET UNITYSDK_OFFSET(0x319310)
-#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION__CCTOR_OFFSET UNITYSDK_OFFSET(0x6FBB0F0)
-#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION__CTOR_OFFSET UNITYSDK_OFFSET(0x3192E0)
+#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION_CREATESTANDARDCURVES_OFFSET UNITYSDK_OFFSET(0x36B220)
+#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION_GET_BLENDCURVE_OFFSET UNITYSDK_OFFSET(0x36B230)
+#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION__CCTOR_OFFSET UNITYSDK_OFFSET(0x9169A10)
+#define MOLEMOLE_CAMERAS_CAMERADELAYMOVEDATABLENDDEFINITION__CTOR_OFFSET UNITYSDK_OFFSET(0x36B200)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int CameraDelayMoveDataBlendDefinition_TypeDefinitionIndex = 58655;
+	inline static constexpr unsigned int CameraDelayMoveDataBlendDefinition_TypeDefinitionIndex = 51076;
 
 	struct alignas(8) CameraDelayMoveDataBlendDefinition
 	{
-		static ::MoleMole::Cameras::CameraDelayMoveDataBlendDefinition* StaticGet_DefaultBlendDefinition()
-		{
-			return (::MoleMole::Cameras::CameraDelayMoveDataBlendDefinition*)Il2CppClass::FromTypeDefinitionIndex(CameraDelayMoveDataBlendDefinition_TypeDefinitionIndex)->GetStaticField(0x381E0);
-		}
 		static ::Il2CppArray<::UnityEngine::AnimationCurve*>** StaticGet_sStandardCurves()
 		{
-			return (::Il2CppArray<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(CameraDelayMoveDataBlendDefinition_TypeDefinitionIndex)->GetStaticField(0x381F8);
+			return (::Il2CppArray<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(CameraDelayMoveDataBlendDefinition_TypeDefinitionIndex)->GetStaticField(0x3ADF0);
+		}
+		static ::MoleMole::Cameras::CameraDelayMoveDataBlendDefinition* StaticGet_DefaultBlendDefinition()
+		{
+			return (::MoleMole::Cameras::CameraDelayMoveDataBlendDefinition*)Il2CppClass::FromTypeDefinitionIndex(CameraDelayMoveDataBlendDefinition_TypeDefinitionIndex)->GetStaticField(0x3ADF8);
 		}
 		::MoleMole::Cameras::CameraDelayMoveDataBlendDefinition_Style m_Style; // 0x10
 		::System::Single m_Time; // 0x14

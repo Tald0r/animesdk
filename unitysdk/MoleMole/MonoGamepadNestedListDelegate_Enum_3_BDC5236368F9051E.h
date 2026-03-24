@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoGamepadNestedListDelegate_Enum_3_BDC5236368F9051E_TypeDefinitionIndex = 44885;
+	inline static constexpr unsigned int MonoGamepadNestedListDelegate_Enum_3_BDC5236368F9051E_TypeDefinitionIndex = 50734;
 
 	enum class MonoGamepadNestedListDelegate_Enum_3_BDC5236368F9051E : ::System::Int32
 	{

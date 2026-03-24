@@ -5,12 +5,12 @@
 namespace MoleMole { class UIBaseController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS453_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC5F6F80)
-#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS453_0__PLAYANIMANDBLOCKINPUT_B__0_OFFSET UNITYSDK_OFFSET(0xC5F6F90)
+#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS453_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8BB7E50)
+#define MOLEMOLE_UIBASECONTROLLER___C__DISPLAYCLASS453_0__PLAYANIMANDBLOCKINPUT_B__0_OFFSET UNITYSDK_OFFSET(0x8BB7E60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBaseController___c__DisplayClass453_0_TypeDefinitionIndex = 37233;
+	inline static constexpr unsigned int UIBaseController___c__DisplayClass453_0_TypeDefinitionIndex = 58447;
 
 	class UIBaseController___c__DisplayClass453_0 : public ::System::Object
 	{

@@ -4,20 +4,20 @@
 
 namespace MoleMole { class UIGalgamePageController___c__DisplayClass15_1; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS15_2__CTOR_OFFSET UNITYSDK_OFFSET(0xD5634E0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS15_2__PLAYSWITCHSCENENODE_INNER_B__11_OFFSET UNITYSDK_OFFSET(0xD5634F0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS15_2__PLAYSWITCHSCENENODE_INNER_B__12_OFFSET UNITYSDK_OFFSET(0xD5635D0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS15_2__CTOR_OFFSET UNITYSDK_OFFSET(0xC10BC90)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS15_2__PLAYSWITCHSCENENODE_INNER_B__11_OFFSET UNITYSDK_OFFSET(0xC10BCA0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS15_2__PLAYSWITCHSCENENODE_INNER_B__12_OFFSET UNITYSDK_OFFSET(0xC10BD80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass15_2_TypeDefinitionIndex = 54656;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass15_2_TypeDefinitionIndex = 58882;
 
 	class UIGalgamePageController___c__DisplayClass15_2 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIGalgamePageController___c__DisplayClass15_1* CS___8__locals2; // 0x10
-		::System::Int64 stopTimeStampMs; // 0x18
-		::System::Int64 startTimeStampMs; // 0x20
+		::System::Int64 startTimeStampMs; // 0x18
+		::System::Int64 stopTimeStampMs; // 0x20
 		::System::Int32 voiceLengthMs; // 0x28
 
 		::System::Void _ctor()

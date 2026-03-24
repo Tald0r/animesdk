@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_XR_HASHCODEHELPER_COMBINE_OFFSET UNITYSDK_OFFSET(0x1B08A140)
+#define UNITYENGINE_XR_HASHCODEHELPER_COMBINE_OFFSET UNITYSDK_OFFSET(0x1B698900)
 
 namespace UnityEngine::XR
 {
-	inline static constexpr unsigned int HashCodeHelper_TypeDefinitionIndex = 23974;
+	inline static constexpr unsigned int HashCodeHelper_TypeDefinitionIndex = 24657;
 
 	class HashCodeHelper : public ::System::Object
 	{

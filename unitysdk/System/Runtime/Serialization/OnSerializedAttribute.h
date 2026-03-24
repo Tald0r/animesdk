@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SYSTEM_RUNTIME_SERIALIZATION_ONSERIALIZEDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x192BEEB0)
+#define SYSTEM_RUNTIME_SERIALIZATION_ONSERIALIZEDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x197A6D70)
 
 namespace System::Runtime::Serialization
 {

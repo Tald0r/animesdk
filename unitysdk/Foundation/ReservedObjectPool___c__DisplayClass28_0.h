@@ -7,13 +7,13 @@ namespace Foundation { class ReservedObjectPool; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Object; }
 
-#define FOUNDATION_RESERVEDOBJECTPOOL___C__DISPLAYCLASS28_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6DAE7F0)
-#define FOUNDATION_RESERVEDOBJECTPOOL___C__DISPLAYCLASS28_0__INIT_B__0_OFFSET UNITYSDK_OFFSET(0x6DAE800)
-#define FOUNDATION_RESERVEDOBJECTPOOL___C__DISPLAYCLASS28_0__INIT_B__1_OFFSET UNITYSDK_OFFSET(0x6DAE940)
+#define FOUNDATION_RESERVEDOBJECTPOOL___C__DISPLAYCLASS28_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8B533A0)
+#define FOUNDATION_RESERVEDOBJECTPOOL___C__DISPLAYCLASS28_0__INIT_B__0_OFFSET UNITYSDK_OFFSET(0x8B533B0)
+#define FOUNDATION_RESERVEDOBJECTPOOL___C__DISPLAYCLASS28_0__INIT_B__1_OFFSET UNITYSDK_OFFSET(0x8B53500)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ReservedObjectPool___c__DisplayClass28_0_TypeDefinitionIndex = 64175;
+	inline static constexpr unsigned int ReservedObjectPool___c__DisplayClass28_0_TypeDefinitionIndex = 44184;
 
 	class ReservedObjectPool___c__DisplayClass28_0 : public ::System::Object
 	{

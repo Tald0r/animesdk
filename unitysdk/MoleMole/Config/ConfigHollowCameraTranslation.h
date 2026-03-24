@@ -7,12 +7,12 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERATRANSLATION_TRIGGERZONE_OFFSET UNITYSDK_OFFSET(0xC3481C0)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERATRANSLATION__CTOR_OFFSET UNITYSDK_OFFSET(0xC348320)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERATRANSLATION_TRIGGERZONE_OFFSET UNITYSDK_OFFSET(0xEC41990)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCAMERATRANSLATION__CTOR_OFFSET UNITYSDK_OFFSET(0xEC41AF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowCameraTranslation_TypeDefinitionIndex = 77195;
+	inline static constexpr unsigned int ConfigHollowCameraTranslation_TypeDefinitionIndex = 66834;
 
 	class ConfigHollowCameraTranslation : public ::System::Object
 	{

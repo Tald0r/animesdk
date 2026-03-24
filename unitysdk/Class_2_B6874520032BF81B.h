@@ -4,9 +4,9 @@
 
 namespace System { class String; }
 
-#define CLASS_2_B6874520032BF81B__CTOR_OFFSET UNITYSDK_OFFSET(0x6A419C0)
+#define CLASS_2_B6874520032BF81B__CTOR_OFFSET UNITYSDK_OFFSET(0x80D2670)
 
-inline static constexpr unsigned int Class_2_B6874520032BF81B_TypeDefinitionIndex = 74280;
+inline static constexpr unsigned int Class_2_B6874520032BF81B_TypeDefinitionIndex = 61675;
 
 class Class_2_B6874520032BF81B : public ::MoleMole::ExitPerform::ExitPerformEvent
 {

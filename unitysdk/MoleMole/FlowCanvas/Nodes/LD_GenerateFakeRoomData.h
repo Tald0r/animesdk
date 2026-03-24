@@ -6,19 +6,19 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GENERATEFAKEROOMDATA_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA5EE010)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GENERATEFAKEROOMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA5EE120)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GENERATEFAKEROOMDATA__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xA5EE140)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GENERATEFAKEROOMDATA_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA7D7DD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GENERATEFAKEROOMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA7D7EE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GENERATEFAKEROOMDATA__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xA7D7F00)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_GenerateFakeRoomData_TypeDefinitionIndex = 39879;
+	inline static constexpr unsigned int LD_GenerateFakeRoomData_TypeDefinitionIndex = 47648;
 
 	class LD_GenerateFakeRoomData : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _output; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Int32>* rootID; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Int32>* rootID; // 0xA8
+		::FlowCanvas::FlowOutput* _output; // 0xB0
 
 		::System::Void _ctor()
 		{

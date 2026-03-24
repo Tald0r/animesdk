@@ -6,7 +6,7 @@ namespace UnityEngine { class GameObject; }
 
 namespace ParadoxNotion
 {
-	inline static constexpr unsigned int IEventData_TypeDefinitionIndex = 25477;
+	inline static constexpr unsigned int IEventData_TypeDefinitionIndex = 27445;
 
 	class IEventData
 	{

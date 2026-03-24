@@ -5,7 +5,7 @@
 
 namespace PipelineCamera::DataOrientated
 {
-	inline static constexpr unsigned int ComponentTraits_1_TypeDefinitionIndex = 34592;
+	inline static constexpr unsigned int ComponentTraits_1_TypeDefinitionIndex = 35594;
 
 	template <typename TScope>
 	struct ComponentTraits_1

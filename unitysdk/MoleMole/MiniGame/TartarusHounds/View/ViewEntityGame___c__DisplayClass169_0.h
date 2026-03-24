@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME___C__DISPLAYCLASS169_0__CREATEWOOLBLOCK_B__0_OFFSET UNITYSDK_OFFSET(0xC2E1220)
-#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME___C__DISPLAYCLASS169_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC2E1210)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME___C__DISPLAYCLASS169_0__CREATEWOOLBLOCK_B__0_OFFSET UNITYSDK_OFFSET(0xB8BD440)
+#define MOLEMOLE_MINIGAME_TARTARUSHOUNDS_VIEW_VIEWENTITYGAME___C__DISPLAYCLASS169_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB8BD430)
 
 namespace MoleMole::MiniGame::TartarusHounds::View
 {
-	inline static constexpr unsigned int ViewEntityGame___c__DisplayClass169_0_TypeDefinitionIndex = 59452;
+	inline static constexpr unsigned int ViewEntityGame___c__DisplayClass169_0_TypeDefinitionIndex = 73071;
 
 	class ViewEntityGame___c__DisplayClass169_0 : public ::System::Object
 	{

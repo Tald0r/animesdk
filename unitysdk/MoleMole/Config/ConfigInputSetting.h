@@ -16,12 +16,12 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGINPUTSETTING_GET_SYSTEMSETTINGTYPE_OFFSET UNITYSDK_OFFSET(0xCDADF10)
-#define MOLEMOLE_CONFIG_CONFIGINPUTSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xCDADF20)
+#define MOLEMOLE_CONFIG_CONFIGINPUTSETTING_GET_SYSTEMSETTINGTYPE_OFFSET UNITYSDK_OFFSET(0xB91A550)
+#define MOLEMOLE_CONFIG_CONFIGINPUTSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xB91A560)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigInputSetting_TypeDefinitionIndex = 41110;
+	inline static constexpr unsigned int ConfigInputSetting_TypeDefinitionIndex = 78835;
 
 	class ConfigInputSetting : public ::MoleMole::Config::ConfigSubSystemSettingBase
 	{

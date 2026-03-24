@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UICoopHistoryTabWidgetController; }
 
-#define MOLEMOLE_UICOOPHISTORYTABWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x95D7320)
-#define MOLEMOLE_UICOOPHISTORYTABWIDGETCONTROLLER___C__DISPLAYCLASS6_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0x95D7330)
+#define MOLEMOLE_UICOOPHISTORYTABWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD552510)
+#define MOLEMOLE_UICOOPHISTORYTABWIDGETCONTROLLER___C__DISPLAYCLASS6_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xD552520)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopHistoryTabWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 37340;
+	inline static constexpr unsigned int UICoopHistoryTabWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 68376;
 
 	class UICoopHistoryTabWidgetController___c__DisplayClass6_0 : public ::System::Object
 	{

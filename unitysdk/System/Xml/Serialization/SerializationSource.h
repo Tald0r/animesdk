@@ -5,8 +5,8 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_XML_SERIALIZATION_SERIALIZATIONSOURCE_BASEEQUALS_OFFSET UNITYSDK_OFFSET(0x18C7E500)
-#define SYSTEM_XML_SERIALIZATION_SERIALIZATIONSOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0x18C7E4F0)
+#define SYSTEM_XML_SERIALIZATION_SERIALIZATIONSOURCE_BASEEQUALS_OFFSET UNITYSDK_OFFSET(0x1913FBE0)
+#define SYSTEM_XML_SERIALIZATION_SERIALIZATIONSOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1913FBD0)
 
 namespace System::Xml::Serialization
 {
@@ -15,8 +15,8 @@ namespace System::Xml::Serialization
 	class SerializationSource : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Type*>* includedTypes; // 0x10
-		::System::String* namspace; // 0x18
+		::System::String* namspace; // 0x10
+		::Il2CppArray<::System::Type*>* includedTypes; // 0x18
 		::System::Boolean canBeGenerated; // 0x20
 
 		::System::Void _ctor(::System::String* namspace, ::Il2CppArray<::System::Type*>* includedTypes)

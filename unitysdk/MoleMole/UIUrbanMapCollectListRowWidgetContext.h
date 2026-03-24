@@ -4,20 +4,20 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIURBANMAPCOLLECTLISTROWWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCA83720)
+#define MOLEMOLE_UIURBANMAPCOLLECTLISTROWWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7909EE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapCollectListRowWidgetContext_TypeDefinitionIndex = 52099;
+	inline static constexpr unsigned int UIUrbanMapCollectListRowWidgetContext_TypeDefinitionIndex = 80483;
 
 	class UIUrbanMapCollectListRowWidgetContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::String* DescText; // 0x28
-		::System::String* Icon; // 0x30
-		::System::Int32 LeftNum; // 0x38
-		::System::Int32 RightNum; // 0x3C
-		::System::Int32 SpecialId; // 0x40
+		::System::String* Icon; // 0x28
+		::System::String* DescText; // 0x30
+		::System::Int32 SpecialId; // 0x38
+		::System::Int32 LeftNum; // 0x3C
+		::System::Int32 RightNum; // 0x40
 
 		::System::Void _ctor()
 		{

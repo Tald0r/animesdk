@@ -10,7 +10,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace NodeCanvas::DialogueTrees
 {
-	inline static constexpr unsigned int DTNodeNested_1_TypeDefinitionIndex = 25548;
+	inline static constexpr unsigned int DTNodeNested_1_TypeDefinitionIndex = 26368;
 
 	template <typename T>
 	class DTNodeNested_1 : public ::NodeCanvas::DialogueTrees::DTNode

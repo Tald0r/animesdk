@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define NPCCROWD_AI_WPGRAPHDATASTATEASSETSO_NODESTATEOVERRIDEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9361990)
+#define NPCCROWD_AI_WPGRAPHDATASTATEASSETSO_NODESTATEOVERRIDEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x783D6D0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int WPGraphDataStateAssetSO_NodeStateOverrideData_TypeDefinitionIndex = 43110;
+	inline static constexpr unsigned int WPGraphDataStateAssetSO_NodeStateOverrideData_TypeDefinitionIndex = 52343;
 
 	class WPGraphDataStateAssetSO_NodeStateOverrideData : public ::System::Object
 	{

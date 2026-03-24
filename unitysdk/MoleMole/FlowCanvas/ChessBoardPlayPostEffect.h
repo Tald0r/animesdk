@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/FlowCanvas/ChessBoardPlayPostEffect_Config.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYPOSTEFFECT_INVOKE_OFFSET UNITYSDK_OFFSET(0x6E0F9C0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYPOSTEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x6E0FBC0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYPOSTEFFECT_INVOKE_OFFSET UNITYSDK_OFFSET(0xC25EF30)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYPOSTEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xC25F130)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessBoardPlayPostEffect_TypeDefinitionIndex = 70477;
+	inline static constexpr unsigned int ChessBoardPlayPostEffect_TypeDefinitionIndex = 64620;
 
 	class ChessBoardPlayPostEffect : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_1<::MoleMole::FlowCanvas::ChessBoardPlayPostEffect_Config>
 	{

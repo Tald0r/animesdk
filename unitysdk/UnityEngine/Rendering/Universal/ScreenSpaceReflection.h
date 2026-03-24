@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/ScreenSpaceReflection_NativeSRP.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEREFLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x16FA58A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCREENSPACEREFLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0x17677C80)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ScreenSpaceReflection_TypeDefinitionIndex = 28700;
+	inline static constexpr unsigned int ScreenSpaceReflection_TypeDefinitionIndex = 29643;
 
 	class ScreenSpaceReflection : public ::UnityEngine::NAPRenderPipeline0::ScreenSpaceReflection_NativeSRP
 	{

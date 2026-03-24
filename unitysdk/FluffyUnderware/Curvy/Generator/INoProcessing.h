@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int INoProcessing_TypeDefinitionIndex = 35802;
+	inline static constexpr unsigned int INoProcessing_TypeDefinitionIndex = 36822;
 
 	class INoProcessing
 	{

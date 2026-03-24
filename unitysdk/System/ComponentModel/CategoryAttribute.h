@@ -5,27 +5,27 @@
 namespace System { class Object; }
 namespace System { class String; }
 
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x1822DA10)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1822DB20)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GETLOCALIZEDSTRING_OFFSET UNITYSDK_OFFSET(0x1822DBD0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_ACTION_OFFSET UNITYSDK_OFFSET(0x1822D310)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_APPEARANCE_OFFSET UNITYSDK_OFFSET(0x1822D390)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_ASYNCHRONOUS_OFFSET UNITYSDK_OFFSET(0x1822D400)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_BEHAVIOR_OFFSET UNITYSDK_OFFSET(0x1822D490)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_CATEGORY_OFFSET UNITYSDK_OFFSET(0x1822D9D0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DATA_OFFSET UNITYSDK_OFFSET(0x1822D500)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DEFAULT_OFFSET UNITYSDK_OFFSET(0x1822D570)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DESIGN_OFFSET UNITYSDK_OFFSET(0x1822D5F0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DRAGDROP_OFFSET UNITYSDK_OFFSET(0x1822D660)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_FOCUS_OFFSET UNITYSDK_OFFSET(0x1822D6F0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x1822D760)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_KEY_OFFSET UNITYSDK_OFFSET(0x1822D7F0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_LAYOUT_OFFSET UNITYSDK_OFFSET(0x1822D860)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_MOUSE_OFFSET UNITYSDK_OFFSET(0x1822D8D0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_WINDOWSTYLE_OFFSET UNITYSDK_OFFSET(0x1822D940)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_ISDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1822DED0)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1822D380)
-#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1822D5E0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x187C7E00)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x187C7F10)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GETLOCALIZEDSTRING_OFFSET UNITYSDK_OFFSET(0x187C7FC0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_ACTION_OFFSET UNITYSDK_OFFSET(0x187C7700)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_APPEARANCE_OFFSET UNITYSDK_OFFSET(0x187C7780)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_ASYNCHRONOUS_OFFSET UNITYSDK_OFFSET(0x187C77F0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_BEHAVIOR_OFFSET UNITYSDK_OFFSET(0x187C7880)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_CATEGORY_OFFSET UNITYSDK_OFFSET(0x187C7DC0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DATA_OFFSET UNITYSDK_OFFSET(0x187C78F0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DEFAULT_OFFSET UNITYSDK_OFFSET(0x187C7960)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DESIGN_OFFSET UNITYSDK_OFFSET(0x187C79E0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_DRAGDROP_OFFSET UNITYSDK_OFFSET(0x187C7A50)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_FOCUS_OFFSET UNITYSDK_OFFSET(0x187C7AE0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x187C7B50)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_KEY_OFFSET UNITYSDK_OFFSET(0x187C7BE0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_LAYOUT_OFFSET UNITYSDK_OFFSET(0x187C7C50)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_MOUSE_OFFSET UNITYSDK_OFFSET(0x187C7CC0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_GET_WINDOWSTYLE_OFFSET UNITYSDK_OFFSET(0x187C7D30)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE_ISDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x187C82C0)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x187C7770)
+#define SYSTEM_COMPONENTMODEL_CATEGORYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x187C79D0)
 
 namespace System::ComponentModel
 {
@@ -34,43 +34,43 @@ namespace System::ComponentModel
 	class CategoryAttribute : public ::System::Attribute
 	{
 	public:
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_action()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_design()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2AE0);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_focus()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_asynchronous()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2AE8);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_key()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_action()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2AF0);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_behavior()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_mouse()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2AF8);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_mouse()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_appearance()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B00);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_format()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_focus()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B08);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_windowStyle()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_defAttr()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B10);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_data()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_layout()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B18);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_asynchronous()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_key()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B20);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_defAttr()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_behavior()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B28);
 		}
@@ -78,15 +78,15 @@ namespace System::ComponentModel
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B30);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_design()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_windowStyle()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B38);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_appearance()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_data()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B40);
 		}
-		static ::System::ComponentModel::CategoryAttribute** StaticGet_layout()
+		static ::System::ComponentModel::CategoryAttribute** StaticGet_format()
 		{
 			return (::System::ComponentModel::CategoryAttribute**)Il2CppClass::FromTypeDefinitionIndex(CategoryAttribute_TypeDefinitionIndex)->GetStaticField(0x2B48);
 		}

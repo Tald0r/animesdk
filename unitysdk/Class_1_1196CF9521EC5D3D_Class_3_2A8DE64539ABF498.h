@@ -6,33 +6,33 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0x968FF50)
-#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x968FEF0)
-#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_4DA6D4A624E42CAB_OFFSET UNITYSDK_OFFSET(0x968F8F0)
-#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x968FC60)
-#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0x968FAA0)
-#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498__CTOR_OFFSET UNITYSDK_OFFSET(0x968F5B0)
+#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_391A84BCD9F51317_1_OFFSET UNITYSDK_OFFSET(0xB131280)
+#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xB131220)
+#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_4DA6D4A624E42CAB_OFFSET UNITYSDK_OFFSET(0xB130EB0)
+#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0xB1312E0)
+#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0xB131060)
+#define CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498__CTOR_OFFSET UNITYSDK_OFFSET(0xB130B70)
 
-inline static constexpr unsigned int Class_1_1196CF9521EC5D3D_Class_3_2A8DE64539ABF498_TypeDefinitionIndex = 65890;
+inline static constexpr unsigned int Class_1_1196CF9521EC5D3D_Class_3_2A8DE64539ABF498_TypeDefinitionIndex = 71229;
 
 class Class_1_1196CF9521EC5D3D_Class_3_2A8DE64539ABF498 : public ::Class_1_1196CF9521EC5D3D_Class_2_C65DCB8ACCB88EAD
 {
 public:
-	::System::Action_1<::System::Single>* Field_3_8; // 0x88
-	::System::Action* Field_3_9; // 0x90
-	::System::Action* Field_3_11; // 0x98
-	::System::Action* Field_3_10; // 0xA0
-	::System::Action_1<::System::Single>* Field_3_12; // 0xA8
-	::System::Action* Field_3_13; // 0xB0
-	::System::Action* Field_3_6; // 0xB8
-	::System::Action* Field_3_14; // 0xC0
-	::System::Action_1<::System::Single>* Field_3_7; // 0xC8
-	::System::Single Field_3_4; // 0xD0
-	::System::Single Field_3_1; // 0xD4
-	::System::Single Field_3_0; // 0xD8
-	::System::Single Field_3_3; // 0xDC
+	::System::Action_1<::System::Single>* Field_3_7; // 0x88
+	::System::Action* Field_3_13; // 0x90
+	::System::Action* Field_3_9; // 0x98
+	::System::Action* Field_3_6; // 0xA0
+	::System::Action* Field_3_14; // 0xA8
+	::System::Action_1<::System::Single>* Field_3_12; // 0xB0
+	::System::Action* Field_3_10; // 0xB8
+	::System::Action_1<::System::Single>* Field_3_8; // 0xC0
+	::System::Action* Field_3_11; // 0xC8
+	::System::Single Field_3_0; // 0xD0
+	::System::Single Field_3_4; // 0xD4
+	::System::Single Field_3_1; // 0xD8
+	::System::Single Field_3_2; // 0xDC
 	::System::Single Field_3_5; // 0xE0
-	::System::Single Field_3_2; // 0xE4
+	::System::Single Field_3_3; // 0xE4
 
 	::System::Void _ctor(::MoleMole::ActivityRhythmClickBeatmapConfig_BeatMap_RhythmEventStruct a1, ::System::Single a2, ::System::Single a3, ::System::Single a4, ::System::Single a5, ::System::Single a6, ::System::Single a7, ::System::Single a8, ::System::Action* a9, ::System::Action_1<::System::Single>* a10, ::System::Action_1<::System::Single>* a11, ::System::Action* a12, ::System::Action* a13, ::System::Action* a14, ::System::Action_1<::System::Single>* a15, ::System::Action* a16, ::System::Action* a17)
 	{
@@ -49,11 +49,6 @@ public:
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_A3FAE12D7B6ACD62_OFFSET))(this);
 	}
 
-	::System::Void Method_3_9681042564541CD6()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_9681042564541CD6_OFFSET))(this);
-	}
-
 	::System::Boolean Method_3_391A84BCD9F51317()
 	{
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_391A84BCD9F51317_OFFSET))(this);
@@ -62,5 +57,10 @@ public:
 	::System::Boolean Method_3_391A84BCD9F51317_1()
 	{
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_391A84BCD9F51317_1_OFFSET))(this);
+	}
+
+	::System::Void Method_3_9681042564541CD6()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_1196CF9521EC5D3D_CLASS_3_2A8DE64539ABF498_METHOD_3_9681042564541CD6_OFFSET))(this);
 	}
 };

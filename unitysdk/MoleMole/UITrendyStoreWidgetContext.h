@@ -4,11 +4,11 @@
 
 class Class_1_FD161B8AFE00CB2F;
 
-#define MOLEMOLE_UITRENDYSTOREWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA761170)
+#define MOLEMOLE_UITRENDYSTOREWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAB08730)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITrendyStoreWidgetContext_TypeDefinitionIndex = 76243;
+	inline static constexpr unsigned int UITrendyStoreWidgetContext_TypeDefinitionIndex = 70058;
 
 	class UITrendyStoreWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

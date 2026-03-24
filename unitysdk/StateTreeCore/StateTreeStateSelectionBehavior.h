@@ -3,13 +3,13 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeStateSelectionBehavior_TypeDefinitionIndex = 26976;
+	inline static constexpr unsigned int StateTreeStateSelectionBehavior_TypeDefinitionIndex = 27891;
 
-	enum class StateTreeStateSelectionBehavior : ::System::Int32
+	enum class StateTreeStateSelectionBehavior : ::System::Byte
 	{
-		None = 0,
-		TryEnterState = 1,
-		TrySelectChildrenInOrder = 2,
-		TryFollowTransitions = 3,
+		None = 0x0,
+		TryEnterState = 0x1,
+		TrySelectChildrenInOrder = 0x2,
+		TryFollowTransitions = 0x3,
 	};
 }

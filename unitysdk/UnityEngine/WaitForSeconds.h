@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/YieldInstruction.h"
 
-#define UNITYENGINE_WAITFORSECONDS__CTOR_OFFSET UNITYSDK_OFFSET(0x19BC5560)
+#define UNITYENGINE_WAITFORSECONDS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1A9C70)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int WaitForSeconds_TypeDefinitionIndex = 5371;
+	inline static constexpr unsigned int WaitForSeconds_TypeDefinitionIndex = 5373;
 
 	class WaitForSeconds : public ::UnityEngine::YieldInstruction
 	{

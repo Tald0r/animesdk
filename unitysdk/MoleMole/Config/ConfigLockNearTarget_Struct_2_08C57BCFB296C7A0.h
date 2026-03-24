@@ -7,7 +7,7 @@ class Class_1_CB7F0487F7A6164A;
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLockNearTarget_Struct_2_08C57BCFB296C7A0_TypeDefinitionIndex = 40399;
+	inline static constexpr unsigned int ConfigLockNearTarget_Struct_2_08C57BCFB296C7A0_TypeDefinitionIndex = 66614;
 
 	struct alignas(8) ConfigLockNearTarget_Struct_2_08C57BCFB296C7A0
 	{

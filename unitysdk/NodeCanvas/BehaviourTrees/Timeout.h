@@ -7,12 +7,12 @@ namespace NodeCanvas::Framework { class IBlackboard; }
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace UnityEngine { class Component; }
 
-#define NODECANVAS_BEHAVIOURTREES_TIMEOUT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19DB6340)
-#define NODECANVAS_BEHAVIOURTREES_TIMEOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x19DB64D0)
+#define NODECANVAS_BEHAVIOURTREES_TIMEOUT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A3A75A0)
+#define NODECANVAS_BEHAVIOURTREES_TIMEOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3A7730)
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Timeout_TypeDefinitionIndex = 25348;
+	inline static constexpr unsigned int Timeout_TypeDefinitionIndex = 27386;
 
 	class Timeout : public ::NodeCanvas::BehaviourTrees::BTDecorator
 	{

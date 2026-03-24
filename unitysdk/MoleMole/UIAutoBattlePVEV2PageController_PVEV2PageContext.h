@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIAUTOBATTLEPVEV2PAGECONTROLLER_PVEV2PAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBAF0A10)
+#define MOLEMOLE_UIAUTOBATTLEPVEV2PAGECONTROLLER_PVEV2PAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBFBD490)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattlePVEV2PageController_PVEV2PageContext_TypeDefinitionIndex = 75789;
+	inline static constexpr unsigned int UIAutoBattlePVEV2PageController_PVEV2PageContext_TypeDefinitionIndex = 69940;
 
 	class UIAutoBattlePVEV2PageController_PVEV2PageContext : public ::MoleMole::UIControllerContextBase
 	{

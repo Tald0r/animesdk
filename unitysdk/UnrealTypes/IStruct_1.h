@@ -1,10 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
+
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
 
 namespace UnrealTypes
 {
-	inline static constexpr unsigned int IStruct_1_TypeDefinitionIndex = 23983;
+	inline static constexpr unsigned int IStruct_1_TypeDefinitionIndex = 24699;
 
 	template <typename T>
 	class IStruct_1

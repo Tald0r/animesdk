@@ -5,12 +5,12 @@
 namespace System { class IFormatProvider; }
 namespace System { class Type; }
 
-#define SYSTEM_DATA_AUTOINCREMENTVALUE_CLONE_OFFSET UNITYSDK_OFFSET(0x1AAD7D80)
-#define SYSTEM_DATA_AUTOINCREMENTVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD7F60)
+#define SYSTEM_DATA_AUTOINCREMENTVALUE_CLONE_OFFSET UNITYSDK_OFFSET(0x1B117510)
+#define SYSTEM_DATA_AUTOINCREMENTVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1176F0)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int AutoIncrementValue_TypeDefinitionIndex = 35384;
+	inline static constexpr unsigned int AutoIncrementValue_TypeDefinitionIndex = 36404;
 
 	class AutoIncrementValue : public ::System::Object
 	{

@@ -9,39 +9,39 @@ namespace System { class Action; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__BINDEVENT_BUTTON_B__11_1_OFFSET UNITYSDK_OFFSET(0x9A385B0)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__BUILDPARTNERDATA_B__20_0_OFFSET UNITYSDK_OFFSET(0x9A387A0)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A38560)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A385A0)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__INITPARTNERCAMPDATA_B__16_0_OFFSET UNITYSDK_OFFSET(0x9A38670)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__INITPARTNERCAMPDATA_B__16_1_OFFSET UNITYSDK_OFFSET(0x9A386C0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__BINDEVENT_BUTTON_B__11_1_OFFSET UNITYSDK_OFFSET(0x8895C10)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__BUILDPARTNERDATA_B__20_0_OFFSET UNITYSDK_OFFSET(0x8895E00)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8895BC0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8895C00)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__INITPARTNERCAMPDATA_B__16_0_OFFSET UNITYSDK_OFFSET(0x8895CD0)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__INITPARTNERCAMPDATA_B__16_1_OFFSET UNITYSDK_OFFSET(0x8895D20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex = 64169;
+	inline static constexpr unsigned int UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex = 80397;
 
 	class UIWorkBenchTrustDegreePageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::Class_2_CEF0D076577A9E4E*>** StaticGet___9__20_0()
-		{
-			return (::System::Comparison_1<::Class_2_CEF0D076577A9E4E*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x41870);
-		}
 		static ::System::Comparison_1<::Class_2_6D99A03C58ED2B6E_2*>** StaticGet___9__16_0()
 		{
-			return (::System::Comparison_1<::Class_2_6D99A03C58ED2B6E_2*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x41878);
+			return (::System::Comparison_1<::Class_2_6D99A03C58ED2B6E_2*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x43400);
+		}
+		static ::System::Comparison_1<::Class_2_CEF0D076577A9E4E*>** StaticGet___9__20_0()
+		{
+			return (::System::Comparison_1<::Class_2_CEF0D076577A9E4E*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x43408);
 		}
 		static ::MoleMole::UIWorkBenchTrustDegreePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIWorkBenchTrustDegreePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x41880);
-		}
-		static ::System::Action** StaticGet___9__11_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x41888);
+			return (::MoleMole::UIWorkBenchTrustDegreePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x43410);
 		}
 		static ::System::Func_2<::Class_2_6D99A03C58ED2B6E_2*, ::MoleMole::UIWorkBenchTrustDegreePageController_PartnerCampTemplateData*>** StaticGet___9__16_1()
 		{
-			return (::System::Func_2<::Class_2_6D99A03C58ED2B6E_2*, ::MoleMole::UIWorkBenchTrustDegreePageController_PartnerCampTemplateData*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x41890);
+			return (::System::Func_2<::Class_2_6D99A03C58ED2B6E_2*, ::MoleMole::UIWorkBenchTrustDegreePageController_PartnerCampTemplateData*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x43418);
+		}
+		static ::System::Action** StaticGet___9__11_1()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchTrustDegreePageController___c_TypeDefinitionIndex)->GetStaticField(0x43420);
 		}
 
 		static ::System::Void _cctor()

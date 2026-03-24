@@ -4,11 +4,11 @@
 
 namespace IFix::Core { class WrappersManager; }
 
-#define IFIX_CORE_PATCHMANAGER___C__DISPLAYCLASS7_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19919990)
+#define IFIX_CORE_PATCHMANAGER___C__DISPLAYCLASS7_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19EB39D0)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int PatchManager___c__DisplayClass7_1_TypeDefinitionIndex = 6785;
+	inline static constexpr unsigned int PatchManager___c__DisplayClass7_1_TypeDefinitionIndex = 6789;
 
 	class PatchManager___c__DisplayClass7_1 : public ::System::Object
 	{

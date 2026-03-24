@@ -5,7 +5,7 @@
 namespace System::Xml::Schema { class KeySequence; }
 namespace System::Xml::Schema { class LocatedActiveAxis; }
 
-#define SYSTEM_XML_SCHEMA_KSSTRUCT__CTOR_OFFSET UNITYSDK_OFFSET(0x1960FC50)
+#define SYSTEM_XML_SCHEMA_KSSTRUCT__CTOR_OFFSET UNITYSDK_OFFSET(0x19AD0000)
 
 namespace System::Xml::Schema
 {
@@ -14,8 +14,8 @@ namespace System::Xml::Schema
 	class KSStruct : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Xml::Schema::LocatedActiveAxis*>* fields; // 0x10
-		::System::Xml::Schema::KeySequence* ks; // 0x18
+		::System::Xml::Schema::KeySequence* ks; // 0x10
+		::Il2CppArray<::System::Xml::Schema::LocatedActiveAxis*>* fields; // 0x18
 		::System::Int32 depth; // 0x20
 
 		::System::Void _ctor(::System::Xml::Schema::KeySequence* ks, ::System::Int32 dim)

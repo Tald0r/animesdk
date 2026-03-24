@@ -4,11 +4,11 @@
 
 class Class_1_D375C91CCE5D3999;
 
-#define MOLEMOLE_UIBOTTLELOGINCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC294C20)
+#define MOLEMOLE_UIBOTTLELOGINCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C6780)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBottleLoginContext_TypeDefinitionIndex = 41580;
+	inline static constexpr unsigned int UIBottleLoginContext_TypeDefinitionIndex = 38577;
 
 	class UIBottleLoginContext : public ::MoleMole::UIControllerContextBase
 	{

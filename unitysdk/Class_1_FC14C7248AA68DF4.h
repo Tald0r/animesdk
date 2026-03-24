@@ -4,17 +4,17 @@
 
 namespace MoleMole { class UIInLevelPauseChallengeRowWidgetController; }
 
-#define CLASS_1_FC14C7248AA68DF4_METHOD_1_4A8318AB1A6064AF_OFFSET UNITYSDK_OFFSET(0xAFF4860)
-#define CLASS_1_FC14C7248AA68DF4__CTOR_OFFSET UNITYSDK_OFFSET(0xAFF4C10)
+#define CLASS_1_FC14C7248AA68DF4_METHOD_1_4A8318AB1A6064AF_OFFSET UNITYSDK_OFFSET(0xB633A50)
+#define CLASS_1_FC14C7248AA68DF4__CTOR_OFFSET UNITYSDK_OFFSET(0xB633E00)
 
-inline static constexpr unsigned int Class_1_FC14C7248AA68DF4_TypeDefinitionIndex = 54112;
+inline static constexpr unsigned int Class_1_FC14C7248AA68DF4_TypeDefinitionIndex = 50235;
 
 class Class_1_FC14C7248AA68DF4 : public ::System::Object
 {
 public:
-	::System::Boolean Field_1_0; // 0x10
-	::System::Int32 Field_1_1; // 0x14
-	::System::Int32 Field_1_2; // 0x18
+	::System::Int32 Field_1_1; // 0x10
+	::System::Int32 Field_1_2; // 0x14
+	::System::Boolean Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

@@ -18,31 +18,31 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine::Experimental::Rendering::Universal { class RenderObjects_CustomCameraSettings; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x16F61900)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_GET_OVERRIDEMATERIALPASSINDEX_OFFSET UNITYSDK_OFFSET(0x16F61480)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_GET_OVERRIDEMATERIAL_OFFSET UNITYSDK_OFFSET(0x16F61460)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SETDETPHSTATE_OFFSET UNITYSDK_OFFSET(0x16F614A0)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SETSTENCILSTATE_OFFSET UNITYSDK_OFFSET(0x16F61510)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SET_OVERRIDEMATERIALPASSINDEX_OFFSET UNITYSDK_OFFSET(0x16F61490)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SET_OVERRIDEMATERIAL_OFFSET UNITYSDK_OFFSET(0x16F61470)
-#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x16F615D0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x17635BA0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_GET_OVERRIDEMATERIALPASSINDEX_OFFSET UNITYSDK_OFFSET(0x17635720)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_GET_OVERRIDEMATERIAL_OFFSET UNITYSDK_OFFSET(0x17635700)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SETDETPHSTATE_OFFSET UNITYSDK_OFFSET(0x17635740)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SETSTENCILSTATE_OFFSET UNITYSDK_OFFSET(0x176357B0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SET_OVERRIDEMATERIALPASSINDEX_OFFSET UNITYSDK_OFFSET(0x17635730)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS_SET_OVERRIDEMATERIAL_OFFSET UNITYSDK_OFFSET(0x17635710)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_UNIVERSAL_RENDEROBJECTSPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x17635870)
 
 namespace UnityEngine::Experimental::Rendering::Universal
 {
-	inline static constexpr unsigned int RenderObjectsPass_TypeDefinitionIndex = 28269;
+	inline static constexpr unsigned int RenderObjectsPass_TypeDefinitionIndex = 29210;
 
 	class RenderObjectsPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xA8
-		::System::String* m_ProfilerTag; // 0xB0
-		::UnityEngine::Material* _overrideMaterial_k__BackingField; // 0xB8
-		::UnityEngine::Experimental::Rendering::Universal::RenderObjects_CustomCameraSettings* m_CameraSettings; // 0xC0
-		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_ShaderTagIdList; // 0xC8
+		::UnityEngine::Experimental::Rendering::Universal::RenderObjects_CustomCameraSettings* m_CameraSettings; // 0xB0
+		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_ShaderTagIdList; // 0xB8
+		::UnityEngine::Material* _overrideMaterial_k__BackingField; // 0xC0
+		::System::String* m_ProfilerTag; // 0xC8
 		::UnityEngine::Experimental::Rendering::Universal::RenderQueueType renderQueueType; // 0xD0
-		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlock; // 0xD4
-		::System::Int32 _overrideMaterialPassIndex_k__BackingField; // 0x140
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettings; // 0x144
+		::System::Int32 _overrideMaterialPassIndex_k__BackingField; // 0xD4
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettings; // 0xD8
+		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlock; // 0xF4
 
 		::System::Void _ctor(::System::String* profilerTag, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent renderPassEvent, ::Il2CppArray<::System::String*>* shaderTags, ::UnityEngine::Experimental::Rendering::Universal::RenderQueueType renderQueueType, ::System::Int32 layerMask, ::UnityEngine::Experimental::Rendering::Universal::RenderObjects_CustomCameraSettings* cameraSettings)
 		{

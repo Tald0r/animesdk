@@ -3,7 +3,7 @@
 
 namespace Epic::OnlineServices
 {
-	inline static constexpr unsigned int ComparisonOp_TypeDefinitionIndex = 31809;
+	inline static constexpr unsigned int ComparisonOp_TypeDefinitionIndex = 32763;
 
 	enum class ComparisonOp : ::System::Int32
 	{

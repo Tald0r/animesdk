@@ -4,11 +4,11 @@
 
 namespace MoleMole::Config { class AudioBasePath; }
 
-#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH__CTOR_OFFSET UNITYSDK_OFFSET(0x84A1910)
+#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH__CTOR_OFFSET UNITYSDK_OFFSET(0x94F96D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigAudioBasePath_TypeDefinitionIndex = 40927;
+	inline static constexpr unsigned int ConfigAudioBasePath_TypeDefinitionIndex = 61083;
 
 	class ConfigAudioBasePath : public ::Foundation::MihoyoSerializedScriptableObject
 	{

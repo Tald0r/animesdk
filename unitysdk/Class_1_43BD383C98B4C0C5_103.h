@@ -1,20 +1,32 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_3_248DACE3BB3053DD_Enum_3_208B758CC2D6E4CF.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_14986121AA61AD99;
-class Class_3_248DACE3BB3053DD;
-class Class_3_F35B080B137ECC46;
-namespace MoleMole::Battle { class Entity; }
+#define CLASS_1_43BD383C98B4C0C5_103__CTOR_OFFSET UNITYSDK_OFFSET(0xEB2CE60)
 
-#define CLASS_1_43BD383C98B4C0C5_103__CTOR_OFFSET UNITYSDK_OFFSET(0x6D506F0)
-
-inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_103_TypeDefinitionIndex = 66904;
+inline static constexpr unsigned int Class_1_43BD383C98B4C0C5_103_TypeDefinitionIndex = 60928;
 
 class Class_1_43BD383C98B4C0C5_103 : public ::System::Object
 {
 public:
+	// static const ::System::Int32 Field_1_0 = 0x1; // 0x0
+	// static const ::System::Int32 Field_1_1 = 0xB; // 0x0
+	// static const ::System::Int32 Field_1_2 = 0xC; // 0x0
+	// static const ::System::Int32 Field_1_3 = 0xD; // 0x0
+	// static const ::System::Int32 Field_1_4 = 0xE; // 0x0
+	// static const ::System::Int32 Field_1_5 = 0xF; // 0x0
+	// static const ::System::Int32 Field_1_6 = 0x10; // 0x0
+	// static const ::System::Int32 Field_1_7 = 0x11; // 0x0
+	// static const ::System::Int32 Field_1_8 = 0x12; // 0x0
+	// static const ::System::Int32 Field_1_9 = 0x13; // 0x0
+	// static const ::System::Int32 Field_1_10 = 0x14; // 0x0
+	// static const ::System::Int32 Field_1_11 = 0x15; // 0x0
+	// static const ::System::Int32 Field_1_12 = 0x16; // 0x0
+	// static const ::System::Int32 Field_1_13 = 0x17; // 0x0
+	// static const ::System::Int32 Field_1_14 = 0x19; // 0x0
+	// static const ::System::Int32 Field_1_15 = 0x1A; // 0x0
+	// static const ::System::Int32 Field_1_16 = 0x1B; // 0x0
+
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_43BD383C98B4C0C5_103__CTOR_OFFSET))(this);

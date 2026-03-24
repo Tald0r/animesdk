@@ -4,33 +4,33 @@
 #include "unitysdk/System/NumberBuffer.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_NUMBER_DECIMALTONUMBER_OFFSET UNITYSDK_OFFSET(0x1A7DFE10)
-#define SYSTEM_NUMBER_NUMBERBUFFERTODECIMAL_OFFSET UNITYSDK_OFFSET(0x1A7E2AC0)
-#define SYSTEM_NUMBER_ROUNDNUMBER_OFFSET UNITYSDK_OFFSET(0x1A7E0D00)
-#define SYSTEM_NUMBER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A7E3910)
+#define SYSTEM_NUMBER_DECIMALTONUMBER_OFFSET UNITYSDK_OFFSET(0x1ADB2F20)
+#define SYSTEM_NUMBER_NUMBERBUFFERTODECIMAL_OFFSET UNITYSDK_OFFSET(0x1ADB5BD0)
+#define SYSTEM_NUMBER_ROUNDNUMBER_OFFSET UNITYSDK_OFFSET(0x1ADB3E10)
+#define SYSTEM_NUMBER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADB6B10)
 
 namespace System
 {
-	inline static constexpr unsigned int Number_TypeDefinitionIndex = 7535;
+	inline static constexpr unsigned int Number_TypeDefinitionIndex = 7540;
 
 	class Number : public ::System::Object
 	{
 	public:
+		static ::Il2CppArray<::System::UInt64>** StaticGet_s_rgval64Power10By16()
+		{
+			return (::Il2CppArray<::System::UInt64>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x65C0);
+		}
 		static ::Il2CppArray<::System::SByte>** StaticGet_s_rgexp64Power10()
 		{
-			return (::Il2CppArray<::System::SByte>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x6580);
-		}
-		static ::Il2CppArray<::System::Int16>** StaticGet_s_rgexp64Power10By16()
-		{
-			return (::Il2CppArray<::System::Int16>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x6588);
+			return (::Il2CppArray<::System::SByte>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x65C8);
 		}
 		static ::Il2CppArray<::System::UInt64>** StaticGet_s_rgval64Power10()
 		{
-			return (::Il2CppArray<::System::UInt64>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x6590);
+			return (::Il2CppArray<::System::UInt64>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x65D0);
 		}
-		static ::Il2CppArray<::System::UInt64>** StaticGet_s_rgval64Power10By16()
+		static ::Il2CppArray<::System::Int16>** StaticGet_s_rgexp64Power10By16()
 		{
-			return (::Il2CppArray<::System::UInt64>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x6598);
+			return (::Il2CppArray<::System::Int16>**)Il2CppClass::FromTypeDefinitionIndex(Number_TypeDefinitionIndex)->GetStaticField(0x65D8);
 		}
 
 		static ::System::Void _cctor()

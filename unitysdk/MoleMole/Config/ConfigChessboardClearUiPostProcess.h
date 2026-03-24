@@ -6,12 +6,12 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCLEARUIPOSTPROCESS_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCC900E0)
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCLEARUIPOSTPROCESS__CTOR_OFFSET UNITYSDK_OFFSET(0xCC901C0)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCLEARUIPOSTPROCESS_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xACBDFE0)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDCLEARUIPOSTPROCESS__CTOR_OFFSET UNITYSDK_OFFSET(0xACBE0C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessboardClearUiPostProcess_TypeDefinitionIndex = 68703;
+	inline static constexpr unsigned int ConfigChessboardClearUiPostProcess_TypeDefinitionIndex = 74803;
 
 	class ConfigChessboardClearUiPostProcess : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

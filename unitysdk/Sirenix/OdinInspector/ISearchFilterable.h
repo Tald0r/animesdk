@@ -5,7 +5,7 @@ namespace System { class String; }
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int ISearchFilterable_TypeDefinitionIndex = 7253;
+	inline static constexpr unsigned int ISearchFilterable_TypeDefinitionIndex = 7258;
 
 	class ISearchFilterable
 	{

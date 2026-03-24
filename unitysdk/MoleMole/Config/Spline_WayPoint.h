@@ -3,21 +3,51 @@
 #include "unitysdk/System/ValueType.h"
 
 class Class_1_236FD73ABC492E3F;
+namespace System { class Object; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x75ADE0)
-#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_FROMFLX_OFFSET UNITYSDK_OFFSET(0x75AD50)
-#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_D4DA1493472613E6_OFFSET UNITYSDK_OFFSET(0x75AE50)
-#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_F777B3BEDBE68D53_OFFSET UNITYSDK_OFFSET(0x75AE40)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x4D1A10)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_EQUALS_OFFSET UNITYSDK_OFFSET(0x4D1950)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x4D1BA0)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_FROMFLX_OFFSET UNITYSDK_OFFSET(0x4D1B10)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x4D1A20)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_GET_EMPTY_OFFSET UNITYSDK_OFFSET(0xE2DC4D0)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_217BB3FC4AC50D8F_OFFSET UNITYSDK_OFFSET(0x4D1C00)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_6D0360BD23602584_OFFSET UNITYSDK_OFFSET(0x4D1D20)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_74D2DB51E1B704B6_1_OFFSET UNITYSDK_OFFSET(0xE2DD160)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_74D2DB51E1B704B6_OFFSET UNITYSDK_OFFSET(0xE2DCF70)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_95780ED94B90ED36_OFFSET UNITYSDK_OFFSET(0x4D1CB0)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_D4DA1493472613E6_OFFSET UNITYSDK_OFFSET(0x4D1D90)
+#define MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_F777B3BEDBE68D53_OFFSET UNITYSDK_OFFSET(0x4D1D10)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int Spline_WayPoint_TypeDefinitionIndex = 42533;
+	inline static constexpr unsigned int Spline_WayPoint_TypeDefinitionIndex = 42690;
 
 	struct alignas(8) Spline_WayPoint
 	{
 		::System::String* Name; // 0x10
 		::System::Int32 Index; // 0x18
+
+		static ::MoleMole::Config::Spline_WayPoint get_Empty()
+		{
+			return ((::MoleMole::Config::Spline_WayPoint(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_GET_EMPTY_OFFSET))();
+		}
+
+		::System::Boolean Equals(::MoleMole::Config::Spline_WayPoint a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Config::Spline_WayPoint))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_EQUALS_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Equals_1(::System::Object* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_EQUALS_1_OFFSET))(this, a1);
+		}
+
+		::System::Int32 GetHashCode()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_GETHASHCODE_OFFSET))(this);
+		}
 
 		/*
 		::System::Boolean FromFlx(::FlexBuffers::FlxValue a1)
@@ -31,9 +61,29 @@ namespace MoleMole::Config
 			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_FROMBINARY_OFFSET))(this, a1, a2);
 		}
 
+		::System::Boolean Method_2_217BB3FC4AC50D8F(::MoleMole::Config::Spline_WayPoint& a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::MoleMole::Config::Spline_WayPoint&))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_217BB3FC4AC50D8F_OFFSET))(this, a1);
+		}
+
+		static ::System::Boolean Method_2_74D2DB51E1B704B6(::MoleMole::Config::Spline_WayPoint a1, ::MoleMole::Config::Spline_WayPoint a2)
+		{
+			return ((::System::Boolean(*)(::MoleMole::Config::Spline_WayPoint, ::MoleMole::Config::Spline_WayPoint))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_74D2DB51E1B704B6_OFFSET))(a1, a2);
+		}
+
+		::System::Int32 Method_2_95780ED94B90ED36()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_95780ED94B90ED36_OFFSET))(this);
+		}
+
 		::System::Boolean Method_2_F777B3BEDBE68D53(::Class_1_236FD73ABC492E3F* a1, ::System::Int32 a2)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::Class_1_236FD73ABC492E3F*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_F777B3BEDBE68D53_OFFSET))(this, a1, a2);
+		}
+
+		::System::Boolean Method_2_6D0360BD23602584(::System::Object* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_6D0360BD23602584_OFFSET))(this, a1);
 		}
 
 		/*
@@ -42,5 +92,10 @@ namespace MoleMole::Config
 			return ((::System::Boolean(*)(::PVOID, ::FlexBuffers::FlxMap))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_D4DA1493472613E6_OFFSET))(this, a1);
 		}
 		*/
+
+		static ::System::Boolean Method_2_74D2DB51E1B704B6_1(::MoleMole::Config::Spline_WayPoint a1, ::MoleMole::Config::Spline_WayPoint a2)
+		{
+			return ((::System::Boolean(*)(::MoleMole::Config::Spline_WayPoint, ::MoleMole::Config::Spline_WayPoint))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_SPLINE_WAYPOINT_METHOD_2_74D2DB51E1B704B6_1_OFFSET))(a1, a2);
+		}
 	};
 }

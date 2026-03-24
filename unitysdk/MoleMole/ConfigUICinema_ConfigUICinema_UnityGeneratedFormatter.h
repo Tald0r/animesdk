@@ -19,50 +19,50 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x15ED6510)
-#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x15ED6520)
-#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x15ED6B50)
-#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15ED6F30)
-#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15ED6EF0)
+#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB5A3090)
+#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB5A30A0)
+#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB5A36D0)
+#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB5A3AB0)
+#define MOLEMOLE_CONFIGUICINEMA_CONFIGUICINEMA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB5A3A70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex = 66846;
+	inline static constexpr unsigned int ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex = 37422;
 
 	class ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigUICinema*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaDistanceRatioRotationStruct>*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaDistanceRatioRotationStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x320E0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::CinemaSingleClickCurveParamsStruct>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::CinemaSingleClickCurveParamsStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x320E8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::System::Collections::Generic::List_1<::System::Int32>*>*>** StaticGet_CachedSerializer7()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::System::Collections::Generic::List_1<::System::Int32>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x320F0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaProjectorStruct>*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaProjectorStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x320F8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaDepthOfFieldParam>*>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaDepthOfFieldParam>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x32100);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaFogParam>*>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaFogParam>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x32108);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaMoveCurve*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaMoveCurve*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x32110);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaMoveCurve*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F50);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigCameraNoise*>** StaticGet_CachedSerializer6()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigCameraNoise*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x32118);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigCameraNoise*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F58);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaDepthOfFieldParam>*>** StaticGet_CachedSerializer5()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaDepthOfFieldParam>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F60);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaProjectorStruct>*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaProjectorStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F68);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaDistanceRatioRotationStruct>*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::CinemaDistanceRatioRotationStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F70);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaFogParam>*>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::MoleMole::ConfigCinemaFogParam>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F78);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::System::Collections::Generic::List_1<::System::Int32>*>*>** StaticGet_CachedSerializer7()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::CinemaCameraPosEnum, ::System::Collections::Generic::List_1<::System::Int32>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F80);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::CinemaSingleClickCurveParamsStruct>*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::CinemaSingleClickCurveParamsStruct>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICinema_ConfigUICinema_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33F88);
 		}
 
 		::System::Void _ctor()

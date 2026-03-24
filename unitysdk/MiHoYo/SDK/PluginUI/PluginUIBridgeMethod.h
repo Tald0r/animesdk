@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int PluginUIBridgeMethod_TypeDefinitionIndex = 18794;
+	inline static constexpr unsigned int PluginUIBridgeMethod_TypeDefinitionIndex = 19393;
 
 	class PluginUIBridgeMethod : public ::System::Object
 	{

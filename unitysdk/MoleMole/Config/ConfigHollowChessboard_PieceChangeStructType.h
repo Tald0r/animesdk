@@ -3,15 +3,15 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_PieceChangeStructType_TypeDefinitionIndex = 59155;
+	inline static constexpr unsigned int ConfigHollowChessboard_PieceChangeStructType_TypeDefinitionIndex = 79814;
 
 	enum class ConfigHollowChessboard_PieceChangeStructType : ::System::Int32
 	{
-		BubbleByMove = 1,
-		BubbleByEvent = 2,
-		BubbleByLight = 3,
-		Ghost = 4,
-		Default = 0,
 		TimeRewind = 5,
+		BubbleByEvent = 2,
+		Default = 0,
+		BubbleByLight = 3,
+		BubbleByMove = 1,
+		Ghost = 4,
 	};
 }

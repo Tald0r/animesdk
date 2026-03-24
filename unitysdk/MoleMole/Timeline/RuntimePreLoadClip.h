@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class RuntimePreLoadBehavior; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_RUNTIMEPRELOADCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xD83F780)
-#define MOLEMOLE_TIMELINE_RUNTIMEPRELOADCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xD83F770)
-#define MOLEMOLE_TIMELINE_RUNTIMEPRELOADCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xD83F970)
+#define MOLEMOLE_TIMELINE_RUNTIMEPRELOADCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xB9C9CD0)
+#define MOLEMOLE_TIMELINE_RUNTIMEPRELOADCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xB9C9CC0)
+#define MOLEMOLE_TIMELINE_RUNTIMEPRELOADCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xB9C9EC0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int RuntimePreLoadClip_TypeDefinitionIndex = 74861;
+	inline static constexpr unsigned int RuntimePreLoadClip_TypeDefinitionIndex = 61240;
 
 	class RuntimePreLoadClip : public ::UnityEngine::Playables::PlayableAsset
 	{

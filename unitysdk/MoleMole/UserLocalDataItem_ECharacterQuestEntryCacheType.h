@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UserLocalDataItem_ECharacterQuestEntryCacheType_TypeDefinitionIndex = 60257;
+	inline static constexpr unsigned int UserLocalDataItem_ECharacterQuestEntryCacheType_TypeDefinitionIndex = 45276;
 
 	enum class UserLocalDataItem_ECharacterQuestEntryCacheType : ::System::Int32
 	{
-		New = 1,
 		Tip = 0,
+		New = 1,
 	};
 }

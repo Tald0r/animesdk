@@ -3,7 +3,7 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EDungeonType_TypeDefinitionIndex = 9831;
+	inline static constexpr unsigned int EDungeonType_TypeDefinitionIndex = 14149;
 
 	enum class EDungeonType : ::System::Int16
 	{

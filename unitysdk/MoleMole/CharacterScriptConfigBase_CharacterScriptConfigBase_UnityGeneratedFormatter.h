@@ -15,38 +15,38 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x6294F60)
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x6294F70)
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x62958F0)
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x6295EA0)
-#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x6295E60)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCAC7760)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCAC7770)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCAC80F0)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAC86A0)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIGBASE_CHARACTERSCRIPTCONFIGBASE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCAC8660)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex = 37849;
+	inline static constexpr unsigned int CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex = 61933;
 
 	class CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::CharacterScriptConfigBase*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigPosRot*>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigPosRot*>*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x430F0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::DitherConfig*>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::DitherConfig*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x430F8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43100);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::QTECameraInfo*>*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::QTECameraInfo*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43108);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::QTECameraInfo*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45AD0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::QTECameraBaseInfo*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::QTECameraBaseInfo*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43110);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::QTECameraBaseInfo*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45AD8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45AE0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigPosRot*>*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigPosRot*>*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45AE8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::DitherConfig*>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::DitherConfig*>**)Il2CppClass::FromTypeDefinitionIndex(CharacterScriptConfigBase_CharacterScriptConfigBase_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45AF0);
 		}
 
 		::System::Void _ctor()

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/PropertyAttribute.h"
 
-#define CINEMACHINE_NAPAXISSTATEPROPERTYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD0BC20)
+#define CINEMACHINE_NAPAXISSTATEPROPERTYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B326190)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int NapAxisStatePropertyAttribute_TypeDefinitionIndex = 31112;
+	inline static constexpr unsigned int NapAxisStatePropertyAttribute_TypeDefinitionIndex = 32064;
 
 	class NapAxisStatePropertyAttribute : public ::UnityEngine::PropertyAttribute
 	{

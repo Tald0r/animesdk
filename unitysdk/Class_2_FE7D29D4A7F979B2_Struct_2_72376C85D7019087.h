@@ -4,7 +4,7 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_2_FE7D29D4A7F979B2_Struct_2_72376C85D7019087_TypeDefinitionIndex = 65064;
+inline static constexpr unsigned int Class_2_FE7D29D4A7F979B2_Struct_2_72376C85D7019087_TypeDefinitionIndex = 39048;
 
 struct alignas(8) Class_2_FE7D29D4A7F979B2_Struct_2_72376C85D7019087
 {

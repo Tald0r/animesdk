@@ -7,12 +7,12 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class Expression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_GET_BODY_OFFSET UNITYSDK_OFFSET(0x1AD4D170)
-#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_GET_TESTVALUES_OFFSET UNITYSDK_OFFSET(0x1AD4D160)
-#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1AD4D180)
-#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AD4D190)
-#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AD4D220)
-#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD4D150)
+#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_GET_BODY_OFFSET UNITYSDK_OFFSET(0x1B3647A0)
+#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_GET_TESTVALUES_OFFSET UNITYSDK_OFFSET(0x1B364790)
+#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1B3647B0)
+#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B3647C0)
+#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B364850)
+#define SYSTEM_LINQ_EXPRESSIONS_SWITCHCASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B364780)
 
 namespace System::Linq::Expressions
 {
@@ -21,8 +21,8 @@ namespace System::Linq::Expressions
 	class SwitchCase : public ::System::Object
 	{
 	public:
-		::System::Linq::Expressions::Expression* _Body_k__BackingField; // 0x10
-		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* _TestValues_k__BackingField; // 0x18
+		::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* _TestValues_k__BackingField; // 0x10
+		::System::Linq::Expressions::Expression* _Body_k__BackingField; // 0x18
 
 		::System::Void _ctor(::System::Linq::Expressions::Expression* body, ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* testValues)
 		{

@@ -1,12 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/InputActionEvent.h"
-#include "unitysdk/Struct_2_61D95EB9B5A93E74.h"
 
-namespace MoleMole { class UITowerDefenseMainPageController; }
-namespace UnityEngine { class GameObject; }
+class Class_1_8D68BB826C7B7E2E;
+class Class_1_B7C41BE725AAED79;
+class Class_2_4BF2ECB2D94E7F27_1;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_177_TypeDefinitionIndex = 46510;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_177_TypeDefinitionIndex = 80714;
 
 class Class_0_16E4307DCC419505_177
 {

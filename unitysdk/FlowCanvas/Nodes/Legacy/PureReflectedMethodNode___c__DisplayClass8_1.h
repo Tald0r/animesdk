@@ -6,12 +6,12 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas::Nodes::Legacy { class PureReflectedMethodNode___c__DisplayClass8_0; }
 
-#define FLOWCANVAS_NODES_LEGACY_PUREREFLECTEDMETHODNODE___C__DISPLAYCLASS8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x199FF680)
-#define FLOWCANVAS_NODES_LEGACY_PUREREFLECTEDMETHODNODE___C__DISPLAYCLASS8_1__REGISTERPORTS_B__2_OFFSET UNITYSDK_OFFSET(0x199FF690)
+#define FLOWCANVAS_NODES_LEGACY_PUREREFLECTEDMETHODNODE___C__DISPLAYCLASS8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19FEF3B0)
+#define FLOWCANVAS_NODES_LEGACY_PUREREFLECTEDMETHODNODE___C__DISPLAYCLASS8_1__REGISTERPORTS_B__2_OFFSET UNITYSDK_OFFSET(0x19FEF3C0)
 
 namespace FlowCanvas::Nodes::Legacy
 {
-	inline static constexpr unsigned int PureReflectedMethodNode___c__DisplayClass8_1_TypeDefinitionIndex = 25430;
+	inline static constexpr unsigned int PureReflectedMethodNode___c__DisplayClass8_1_TypeDefinitionIndex = 26620;
 
 	class PureReflectedMethodNode___c__DisplayClass8_1 : public ::System::Object
 	{

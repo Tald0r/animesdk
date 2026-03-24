@@ -6,17 +6,17 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_3_0C3B79CC11AF28C3_METHOD_3_18982EFD3B740683_OFFSET UNITYSDK_OFFSET(0xB924220)
-#define CLASS_3_0C3B79CC11AF28C3_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB9243F0)
-#define CLASS_3_0C3B79CC11AF28C3__CTOR_OFFSET UNITYSDK_OFFSET(0xB9240F0)
+#define CLASS_3_0C3B79CC11AF28C3_METHOD_3_18982EFD3B740683_OFFSET UNITYSDK_OFFSET(0x737CD50)
+#define CLASS_3_0C3B79CC11AF28C3_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x737CF20)
+#define CLASS_3_0C3B79CC11AF28C3__CTOR_OFFSET UNITYSDK_OFFSET(0x737CC30)
 
-inline static constexpr unsigned int Class_3_0C3B79CC11AF28C3_TypeDefinitionIndex = 74635;
+inline static constexpr unsigned int Class_3_0C3B79CC11AF28C3_TypeDefinitionIndex = 51272;
 
 class Class_3_0C3B79CC11AF28C3 : public ::Class_2_BCA32DB678A03168
 {
 public:
-	::System::Int32 Field_3_2; // 0x38
-	::System::Int32 Field_3_0; // 0x3C
+	::System::Int32 Field_3_0; // 0x38
+	::System::Int32 Field_3_2; // 0x3C
 	::System::Int32 Field_3_1; // 0x40
 
 	::System::Void _ctor(::System::Int32 a1, ::Enum_3_316FC8E376D95053 a2, ::System::Int32 a3, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* a4)

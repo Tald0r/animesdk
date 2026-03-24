@@ -10,30 +10,30 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x19F53770)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_GETPROPERTYHASH_OFFSET UNITYSDK_OFFSET(0x19F53D80)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_GETTYPERUNTIMEHASH_OFFSET UNITYSDK_OFFSET(0x19F53FD0)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_ISSHOULDHANDLEPROPERTY_OFFSET UNITYSDK_OFFSET(0x19F53990)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_LOGERROR_OFFSET UNITYSDK_OFFSET(0x19F54660)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_LOGWARN_OFFSET UNITYSDK_OFFSET(0x19F545B0)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_LOG_OFFSET UNITYSDK_OFFSET(0x19F54490)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_TRYUSERESERVEDFORMATTERSERIALIZE_OFFSET UNITYSDK_OFFSET(0x19F54320)
-#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19F54760)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A564580)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_GETPROPERTYHASH_OFFSET UNITYSDK_OFFSET(0x1A564B90)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_GETTYPERUNTIMEHASH_OFFSET UNITYSDK_OFFSET(0x1A564DE0)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_ISSHOULDHANDLEPROPERTY_OFFSET UNITYSDK_OFFSET(0x1A5647A0)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_LOGERROR_OFFSET UNITYSDK_OFFSET(0x1A565470)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_LOGWARN_OFFSET UNITYSDK_OFFSET(0x1A5653C0)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_LOG_OFFSET UNITYSDK_OFFSET(0x1A5652A0)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS_TRYUSERESERVEDFORMATTERSERIALIZE_OFFSET UNITYSDK_OFFSET(0x1A565130)
+#define MESSAGEPACK_FORMATTERS_GRAPHBINARYUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A565570)
 
 namespace MessagePack::Formatters
 {
-	inline static constexpr unsigned int GraphBinaryUtils_TypeDefinitionIndex = 25352;
+	inline static constexpr unsigned int GraphBinaryUtils_TypeDefinitionIndex = 26468;
 
 	class GraphBinaryUtils : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_s_PropertyTypeBlackList()
-		{
-			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(GraphBinaryUtils_TypeDefinitionIndex)->GetStaticField(0x1F870);
-		}
 		static ::System::Collections::Generic::List_1<::System::String*>** StaticGet_s_NodeKeepPropEvenIgnore()
 		{
-			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(GraphBinaryUtils_TypeDefinitionIndex)->GetStaticField(0x1F878);
+			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(GraphBinaryUtils_TypeDefinitionIndex)->GetStaticField(0x20340);
+		}
+		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_s_PropertyTypeBlackList()
+		{
+			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(GraphBinaryUtils_TypeDefinitionIndex)->GetStaticField(0x20348);
 		}
 
 		static ::System::Void _cctor()

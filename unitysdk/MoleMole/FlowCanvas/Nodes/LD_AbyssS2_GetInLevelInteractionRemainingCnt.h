@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINLEVELINTERACTIONREMAININGCNT_INVOKE_OFFSET UNITYSDK_OFFSET(0x8B07030)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINLEVELINTERACTIONREMAININGCNT__CTOR_OFFSET UNITYSDK_OFFSET(0x8B071D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINLEVELINTERACTIONREMAININGCNT_INVOKE_OFFSET UNITYSDK_OFFSET(0xB18BE10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINLEVELINTERACTIONREMAININGCNT__CTOR_OFFSET UNITYSDK_OFFSET(0xB18BFB0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_GetInLevelInteractionRemainingCnt_TypeDefinitionIndex = 42983;
+	inline static constexpr unsigned int LD_AbyssS2_GetInLevelInteractionRemainingCnt_TypeDefinitionIndex = 39535;
 
 	class LD_AbyssS2_GetInLevelInteractionRemainingCnt : public ::FlowCanvas::Nodes::PureFunctionNode_2<::System::Int32, ::MoleMole::Battle::Entity*>
 	{

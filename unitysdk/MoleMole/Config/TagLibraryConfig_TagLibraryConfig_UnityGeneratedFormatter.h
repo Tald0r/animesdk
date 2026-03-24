@@ -11,22 +11,22 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xEC48C30)
-#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xEC48C40)
-#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xEC48E40)
-#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xEC49000)
-#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xEC48FC0)
+#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCB05DB0)
+#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCB05DC0)
+#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCB05FC0)
+#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCB06180)
+#define MOLEMOLE_CONFIG_TAGLIBRARYCONFIG_TAGLIBRARYCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCB06140)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TagLibraryConfig_TagLibraryConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 52542;
+	inline static constexpr unsigned int TagLibraryConfig_TagLibraryConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 41217;
 
 	class TagLibraryConfig_TagLibraryConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::TagLibraryConfig*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::String*>*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::String*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(TagLibraryConfig_TagLibraryConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43400);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::String*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(TagLibraryConfig_TagLibraryConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45DD0);
 		}
 
 		::System::Void _ctor()

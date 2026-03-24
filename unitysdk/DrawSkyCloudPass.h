@@ -11,12 +11,12 @@ namespace System { class String; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define DRAWSKYCLOUDPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19B1BFC0)
-#define DRAWSKYCLOUDPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19B1C790)
-#define DRAWSKYCLOUDPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19B1BEE0)
-#define DRAWSKYCLOUDPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19B1C7E0)
+#define DRAWSKYCLOUDPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19ECD650)
+#define DRAWSKYCLOUDPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19ECDE20)
+#define DRAWSKYCLOUDPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19ECD570)
+#define DRAWSKYCLOUDPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19ECDE70)
 
-inline static constexpr unsigned int DrawSkyCloudPass_TypeDefinitionIndex = 28148;
+inline static constexpr unsigned int DrawSkyCloudPass_TypeDefinitionIndex = 29089;
 
 class DrawSkyCloudPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 {

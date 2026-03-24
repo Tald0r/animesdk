@@ -5,18 +5,18 @@
 
 namespace MoleMole::Config { class AnimatorEvent; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPERFECTSWITCHCHARGEVALUEENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x96F6C50)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPERFECTSWITCHCHARGEVALUEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x96F6CF0)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPERFECTSWITCHCHARGEVALUEENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xB085F30)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTMODIFYPERFECTSWITCHCHARGEVALUEENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xB085FD0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventModifyPerfectSwitchChargeValueEntry_TypeDefinitionIndex = 53791;
+	inline static constexpr unsigned int AnimatorEventModifyPerfectSwitchChargeValueEntry_TypeDefinitionIndex = 44313;
 
 	class AnimatorEventModifyPerfectSwitchChargeValueEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
-		::MoleMole::Config::PropertyModifyFunction ModifyFunction; // 0x58
-		::System::Single Amount; // 0x5C
+		::System::Single Amount; // 0x58
+		::MoleMole::Config::PropertyModifyFunction ModifyFunction; // 0x5C
 
 		::System::Void _ctor()
 		{

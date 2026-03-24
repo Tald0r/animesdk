@@ -5,7 +5,7 @@
 
 namespace PipelineCamera::Module
 {
-	inline static constexpr unsigned int InPlaceBlenderConfig_TypeDefinitionIndex = 34847;
+	inline static constexpr unsigned int InPlaceBlenderConfig_TypeDefinitionIndex = 35849;
 
 	struct alignas(4) InPlaceBlenderConfig
 	{

@@ -13,21 +13,21 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Mesh; }
 
-#define NPCAVATARUTILS__LOADMESHCPULODASYNC_D__17_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x30B7C0)
-#define NPCAVATARUTILS__LOADMESHCPULODASYNC_D__17_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCAVATARUTILS__LOADMESHCPULODASYNC_D__17_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x338CF0)
+#define NPCAVATARUTILS__LOADMESHCPULODASYNC_D__17_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int NPCAvatarUtils__LoadMeshCPULODAsync_d__17_TypeDefinitionIndex = 50623;
+inline static constexpr unsigned int NPCAvatarUtils__LoadMeshCPULODAsync_d__17_TypeDefinitionIndex = 48386;
 
 struct alignas(8) NPCAvatarUtils__LoadMeshCPULODAsync_d__17
 {
-	::NPCCrowd::Avatar::NPCAvatarGOReference* goInfo; // 0x10
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x18
-	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Il2CppArray<::UnityEngine::Mesh*>*> __u__1; // 0x28
-	::System::Collections::Generic::List_1<::Cysharp::Threading::Tasks::UniTask_1<::UnityEngine::Mesh*>>* _tasks_5__2; // 0x40
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
+	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Il2CppArray<::UnityEngine::Mesh*>*> __u__1; // 0x20
+	::System::Collections::Generic::List_1<::Cysharp::Threading::Tasks::UniTask_1<::UnityEngine::Mesh*>>* _tasks_5__2; // 0x38
+	::NPCCrowd::Avatar::NPCAvatarGOReference* goInfo; // 0x40
 	::NPCAvatarMeshAssetsSO* assetSo; // 0x48
 	::System::Threading::CancellationToken cancellationToken; // 0x50
-	::System::Int32 __1__state; // 0x58
-	::NPCCrowd::Lod::ELODLevel lod; // 0x5C
+	::NPCCrowd::Lod::ELODLevel lod; // 0x58
+	::System::Int32 __1__state; // 0x5C
 
 	::System::Void MoveNext()
 	{

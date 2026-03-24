@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int NapRendererFlags_TypeDefinitionIndex = 28134;
+inline static constexpr unsigned int NapRendererFlags_TypeDefinitionIndex = 29074;
 
 enum class NapRendererFlags : ::System::UInt32
 {

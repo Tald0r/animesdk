@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/BehaviorDesigner/Runtime/Tasks/ObjectDrawerAttribute.h"
 
-#define BEHAVIORDESIGNER_RUNTIME_OBJECTDRAWERS_INTSLIDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65A170)
+#define BEHAVIORDESIGNER_RUNTIME_OBJECTDRAWERS_INTSLIDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC05410)
 
 namespace BehaviorDesigner::Runtime::ObjectDrawers
 {
-	inline static constexpr unsigned int IntSliderAttribute_TypeDefinitionIndex = 30271;
+	inline static constexpr unsigned int IntSliderAttribute_TypeDefinitionIndex = 31223;
 
 	class IntSliderAttribute : public ::BehaviorDesigner::Runtime::Tasks::ObjectDrawerAttribute
 	{
 	public:
-		::System::Int32 max; // 0x10
-		::System::Int32 min; // 0x14
+		::System::Int32 min; // 0x10
+		::System::Int32 max; // 0x14
 
 		::System::Void _ctor(::System::Int32 min, ::System::Int32 max)
 		{

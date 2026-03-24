@@ -13,70 +13,70 @@
 namespace PipelineCamera::CameraSequence { class AspectRatioPolicy; }
 namespace PipelineCamera::CameraSequence { class CameraSequenceContext; }
 
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_COLLECTVARIABLE_OFFSET UNITYSDK_OFFSET(0x9703650)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_GETDATA_OFFSET UNITYSDK_OFFSET(0x9703820)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x9703810)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_METHOD_3_439B588EB4881570_OFFSET UNITYSDK_OFFSET(0x9703D20)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_METHOD_3_47ABBFA84E9D76E4_OFFSET UNITYSDK_OFFSET(0x9703D90)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_METHOD_3_5A60CCF7370A1875_OFFSET UNITYSDK_OFFSET(0x9703E90)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_SETPATH_OFFSET UNITYSDK_OFFSET(0x9703590)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE__CCTOR_OFFSET UNITYSDK_OFFSET(0x9703AD0)
-#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0x9703AA0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_COLLECTVARIABLE_OFFSET UNITYSDK_OFFSET(0xB0929A0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_GETDATA_OFFSET UNITYSDK_OFFSET(0xB092B70)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0xB092B60)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_METHOD_3_439B588EB4881570_OFFSET UNITYSDK_OFFSET(0xB093070)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_METHOD_3_47ABBFA84E9D76E4_OFFSET UNITYSDK_OFFSET(0xB0930E0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_METHOD_3_5A60CCF7370A1875_OFFSET UNITYSDK_OFFSET(0xB0931E0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE_SETPATH_OFFSET UNITYSDK_OFFSET(0xB0928E0)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE__CCTOR_OFFSET UNITYSDK_OFFSET(0xB092E20)
+#define MOLEMOLE_CONFIG_CAMERASEQUENCE_UTILS_FRAMEMULTIPLEPOINTSINCOREPOLICY_CHATBYSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0xB092DF0)
 
 namespace MoleMole::Config::CameraSequence::Utils
 {
-	inline static constexpr unsigned int FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex = 44686;
+	inline static constexpr unsigned int FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex = 42778;
 
 	class FrameMultiplePointsInCorePolicy_ChatByScore : public ::PipelineCamera::CameraSequence::FrameMultiplePointsInCorePolicy
 	{
 	public:
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_maxAngle()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F60);
-		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_variancePenalty()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F68);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_BeginCameraData()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F70);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_fieldOfView()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F78);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_sampleStep()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F80);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_horizontalRatio()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F88);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_heightOffset()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F90);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA500);
 		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_minRadius()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9F98);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_pitch()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9FA0);
-		}
-		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_minAngle()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9FA8);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA508);
 		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_overlapPenalty()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9FB0);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA510);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_BeginCameraData()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA518);
 		}
 		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_deviationPenalty()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0x9FB8);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA520);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_heightOffset()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA528);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_minAngle()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA530);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_fieldOfView()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA538);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_horizontalRatio()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA540);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_sampleStep()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA548);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_maxAngle()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA550);
+		}
+		static ::Foundation::Unreal::FName* StaticGet___some_prefix_to_avoid_conflict_pitch()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(FrameMultiplePointsInCorePolicy_ChatByScore_TypeDefinitionIndex)->GetStaticField(0xA558);
 		}
 		// static const ::System::Single TargetRadius; // 0x0
 		::System::Single minRadius; // 0x40

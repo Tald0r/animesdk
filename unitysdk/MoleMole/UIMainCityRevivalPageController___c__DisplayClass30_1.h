@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIMainCityRevivalPageController___c__DisplayClass30_0; }
 
-#define MOLEMOLE_UIMAINCITYREVIVALPAGECONTROLLER___C__DISPLAYCLASS30_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCD180)
-#define MOLEMOLE_UIMAINCITYREVIVALPAGECONTROLLER___C__DISPLAYCLASS30_1__REFRESHMATERIALPROGRESSVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xCFCD190)
+#define MOLEMOLE_UIMAINCITYREVIVALPAGECONTROLLER___C__DISPLAYCLASS30_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBE2B460)
+#define MOLEMOLE_UIMAINCITYREVIVALPAGECONTROLLER___C__DISPLAYCLASS30_1__REFRESHMATERIALPROGRESSVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBE2B470)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityRevivalPageController___c__DisplayClass30_1_TypeDefinitionIndex = 53386;
+	inline static constexpr unsigned int UIMainCityRevivalPageController___c__DisplayClass30_1_TypeDefinitionIndex = 71998;
 
 	class UIMainCityRevivalPageController___c__DisplayClass30_1 : public ::System::Object
 	{

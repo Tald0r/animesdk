@@ -5,19 +5,19 @@
 namespace MoleMole { class UIYorozuyaPageController; }
 namespace MoleMole { class UIYorozuyaSphereItemWidgetController; }
 
-#define MOLEMOLE_UIYOROZUYAPAGECONTROLLER___C__DISPLAYCLASS151_0__CTOR_OFFSET UNITYSDK_OFFSET(0x73F1290)
-#define MOLEMOLE_UIYOROZUYAPAGECONTROLLER___C__DISPLAYCLASS151_0__ONCLICKSPHERE_B__0_OFFSET UNITYSDK_OFFSET(0x73F12A0)
-#define MOLEMOLE_UIYOROZUYAPAGECONTROLLER___C__DISPLAYCLASS151_0__ONCLICKSPHERE_B__1_OFFSET UNITYSDK_OFFSET(0x73F1350)
+#define MOLEMOLE_UIYOROZUYAPAGECONTROLLER___C__DISPLAYCLASS151_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7BE7BB0)
+#define MOLEMOLE_UIYOROZUYAPAGECONTROLLER___C__DISPLAYCLASS151_0__ONCLICKSPHERE_B__0_OFFSET UNITYSDK_OFFSET(0x7BE7BC0)
+#define MOLEMOLE_UIYOROZUYAPAGECONTROLLER___C__DISPLAYCLASS151_0__ONCLICKSPHERE_B__1_OFFSET UNITYSDK_OFFSET(0x7BE7C70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaPageController___c__DisplayClass151_0_TypeDefinitionIndex = 45376;
+	inline static constexpr unsigned int UIYorozuyaPageController___c__DisplayClass151_0_TypeDefinitionIndex = 39321;
 
 	class UIYorozuyaPageController___c__DisplayClass151_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIYorozuyaSphereItemWidgetController* sphereBody; // 0x10
-		::MoleMole::UIYorozuyaPageController* __4__this; // 0x18
+		::MoleMole::UIYorozuyaPageController* __4__this; // 0x10
+		::MoleMole::UIYorozuyaSphereItemWidgetController* sphereBody; // 0x18
 		::System::Int32 questID; // 0x20
 
 		::System::Void _ctor()

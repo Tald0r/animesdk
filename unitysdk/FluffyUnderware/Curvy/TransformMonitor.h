@@ -6,29 +6,29 @@
 
 namespace UnityEngine { class Transform; }
 
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_CHECKFORCHANGES_OFFSET UNITYSDK_OFFSET(0x1ABE1E90)
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_GET_HASCHANGED_OFFSET UNITYSDK_OFFSET(0x1ABE5190)
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_HAVEGLOBALCOORDINATESCHANGED_OFFSET UNITYSDK_OFFSET(0x1ABE5280)
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_MARKCURRENTTRANSFORMASCHECKED_OFFSET UNITYSDK_OFFSET(0x1ABE51B0)
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_RESETMONITORING_OFFSET UNITYSDK_OFFSET(0x1ABE2AD0)
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_SET_HASCHANGED_OFFSET UNITYSDK_OFFSET(0x1ABE51A0)
-#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABE0EF0)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_CHECKFORCHANGES_OFFSET UNITYSDK_OFFSET(0x1B1F2D60)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_GET_HASCHANGED_OFFSET UNITYSDK_OFFSET(0x1B1F6050)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_HAVEGLOBALCOORDINATESCHANGED_OFFSET UNITYSDK_OFFSET(0x1B1F6140)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_MARKCURRENTTRANSFORMASCHECKED_OFFSET UNITYSDK_OFFSET(0x1B1F6070)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_RESETMONITORING_OFFSET UNITYSDK_OFFSET(0x1B1F39A0)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR_SET_HASCHANGED_OFFSET UNITYSDK_OFFSET(0x1B1F6060)
+#define FLUFFYUNDERWARE_CURVY_TRANSFORMMONITOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1F1DC0)
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int TransformMonitor_TypeDefinitionIndex = 35629;
+	inline static constexpr unsigned int TransformMonitor_TypeDefinitionIndex = 36649;
 
 	class TransformMonitor : public ::System::Object
 	{
 	public:
 		::UnityEngine::Transform* transform; // 0x10
-		::UnityEngine::Vector3 lastCheckedScale; // 0x18
-		::UnityEngine::Quaternion lastCheckedRotation; // 0x24
-		::System::Boolean monitorScale; // 0x34
-		::System::Boolean monitorPosition; // 0x35
-		::System::Boolean monitorRotation; // 0x36
-		::System::Boolean _HasChanged_k__BackingField; // 0x37
-		::UnityEngine::Vector3 lastCheckedPosition; // 0x38
+		::System::Boolean _HasChanged_k__BackingField; // 0x18
+		::System::Boolean monitorPosition; // 0x19
+		::System::Boolean monitorScale; // 0x1A
+		::System::Boolean monitorRotation; // 0x1B
+		::UnityEngine::Quaternion lastCheckedRotation; // 0x1C
+		::UnityEngine::Vector3 lastCheckedPosition; // 0x2C
+		::UnityEngine::Vector3 lastCheckedScale; // 0x38
 
 		::System::Void _ctor(::UnityEngine::Transform* transformToTrack, ::System::Boolean monitorPosition, ::System::Boolean monitorRotation, ::System::Boolean monitorScale)
 		{

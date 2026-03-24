@@ -3,15 +3,15 @@
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int CompareType_TypeDefinitionIndex = 54121;
+	inline static constexpr unsigned int CompareType_TypeDefinitionIndex = 53216;
 
 	enum class CompareType : ::System::Int32
 	{
-		Greater = 0,
-		GreaterEqual = 3,
-		Equal = 2,
-		Less = 1,
 		NotEqual = 5,
+		Equal = 2,
 		LessEquals = 4,
+		GreaterEqual = 3,
+		Greater = 0,
+		Less = 1,
 	};
 }

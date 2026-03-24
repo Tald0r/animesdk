@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTEROPENTREASURE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA5EA8B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTEROPENTREASURE__CTOR_OFFSET UNITYSDK_OFFSET(0xA5EA950)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTEROPENTREASURE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA7D46B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTEROPENTREASURE__CTOR_OFFSET UNITYSDK_OFFSET(0xA7D4750)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDStylishRegisterOpenTreasure_TypeDefinitionIndex = 65029;
+	inline static constexpr unsigned int LDStylishRegisterOpenTreasure_TypeDefinitionIndex = 74135;
 
 	class LDStylishRegisterOpenTreasure : public ::FlowCanvas::Nodes::CallableActionNode
 	{

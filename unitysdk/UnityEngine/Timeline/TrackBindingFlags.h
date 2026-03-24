@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TrackBindingFlags_TypeDefinitionIndex = 29376;
+	inline static constexpr unsigned int TrackBindingFlags_TypeDefinitionIndex = 30329;
 
 	enum class TrackBindingFlags : ::System::Int32
 	{

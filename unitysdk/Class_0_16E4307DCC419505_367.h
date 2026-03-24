@@ -1,12 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_B6B482D5E3A4F997.h"
 
-class Class_2_5DB5AF92324729C9;
-namespace System { class Exception; }
-namespace System { class TimeoutException; }
-namespace System::Runtime::Serialization { class SerializationException; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_367_TypeDefinitionIndex = 43988;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_367_TypeDefinitionIndex = 45445;
 
 class Class_0_16E4307DCC419505_367
 {

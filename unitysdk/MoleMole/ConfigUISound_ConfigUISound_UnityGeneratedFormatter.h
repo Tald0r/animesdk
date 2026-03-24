@@ -12,30 +12,30 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x16BBC750)
-#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x16BBC760)
-#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x16BBCA20)
-#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x16BBCC30)
-#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x16BBCBF0)
+#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x17509D20)
+#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x17509D30)
+#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x17509FF0)
+#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1750A200)
+#define MOLEMOLE_CONFIGUISOUND_CONFIGUISOUND_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1750A1C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex = 69991;
+	inline static constexpr unsigned int ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex = 57702;
 
 	class ConfigUISound_ConfigUISound_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigUISound*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::Int32>*>*>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::Int32>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38690);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::UInt32>*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::UInt32>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38698);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::System::UInt32>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B2A0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::Int32>*>*>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::System::Int32>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B2A8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ConfigUISound_StateTriggerConfig*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ConfigUISound_StateTriggerConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x386A0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::ConfigUISound_StateTriggerConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUISound_ConfigUISound_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B2B0);
 		}
 
 		::System::Void _ctor()

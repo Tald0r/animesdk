@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/EnumVolumeParameter_1.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/SimulatingPlatform.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SIMULATINGPLATFORMPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x19255E20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SIMULATINGPLATFORMPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x1967B8B0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SimulatingPlatformParameter_TypeDefinitionIndex = 28664;
+	inline static constexpr unsigned int SimulatingPlatformParameter_TypeDefinitionIndex = 29607;
 
 	class SimulatingPlatformParameter : public ::UnityEngine::NAPRenderPipeline0::EnumVolumeParameter_1<::UnityEngine::Rendering::Universal::SimulatingPlatform>
 	{

@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Bounds.h"
 
-#define MOLEMOLE_MAPOVERRIDEBOUNDS__CTOR_OFFSET UNITYSDK_OFFSET(0xC229480)
+#define MOLEMOLE_MAPOVERRIDEBOUNDS__CTOR_OFFSET UNITYSDK_OFFSET(0xB83FC00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MapOverrideBounds_TypeDefinitionIndex = 67641;
+	inline static constexpr unsigned int MapOverrideBounds_TypeDefinitionIndex = 54852;
 
 	class MapOverrideBounds : public ::System::Object
 	{

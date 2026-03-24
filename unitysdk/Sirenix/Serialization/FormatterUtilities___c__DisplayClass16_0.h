@@ -4,12 +4,12 @@
 
 namespace System::Reflection { class MemberInfo; }
 
-#define SIRENIX_SERIALIZATION_FORMATTERUTILITIES___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B068F00)
-#define SIRENIX_SERIALIZATION_FORMATTERUTILITIES___C__DISPLAYCLASS16_0__FINDSERIALIZABLEMEMBERS_B__1_OFFSET UNITYSDK_OFFSET(0x1B068F10)
+#define SIRENIX_SERIALIZATION_FORMATTERUTILITIES___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B676C10)
+#define SIRENIX_SERIALIZATION_FORMATTERUTILITIES___C__DISPLAYCLASS16_0__FINDSERIALIZABLEMEMBERS_B__1_OFFSET UNITYSDK_OFFSET(0x1B676C20)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int FormatterUtilities___c__DisplayClass16_0_TypeDefinitionIndex = 7372;
+	inline static constexpr unsigned int FormatterUtilities___c__DisplayClass16_0_TypeDefinitionIndex = 7377;
 
 	class FormatterUtilities___c__DisplayClass16_0 : public ::System::Object
 	{

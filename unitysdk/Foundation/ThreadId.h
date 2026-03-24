@@ -3,22 +3,22 @@
 #include "unitysdk/System/Nullable_1.h"
 #include "unitysdk/System/Object.h"
 
-#define FOUNDATION_THREADID_GET_ISINMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x1ABB6AE0)
-#define FOUNDATION_THREADID_GET_MAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1ABB6860)
-#define FOUNDATION_THREADID_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x1ABB65A0)
-#define FOUNDATION_THREADID_INITIALIZEMAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1ABB6490)
-#define FOUNDATION_THREADID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ABB6B70)
+#define FOUNDATION_THREADID_GET_ISINMAINTHREAD_OFFSET UNITYSDK_OFFSET(0x1AEE39F0)
+#define FOUNDATION_THREADID_GET_MAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1AEE3770)
+#define FOUNDATION_THREADID_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x1AEE34B0)
+#define FOUNDATION_THREADID_INITIALIZEMAINTHREADID_OFFSET UNITYSDK_OFFSET(0x1AEE33A0)
+#define FOUNDATION_THREADID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AEE3A80)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ThreadId_TypeDefinitionIndex = 8198;
+	inline static constexpr unsigned int ThreadId_TypeDefinitionIndex = 8167;
 
 	class ThreadId : public ::System::Object
 	{
 	public:
 		static ::System::Int32* StaticGet__mainThreadId()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ThreadId_TypeDefinitionIndex)->GetStaticField(0x37C0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ThreadId_TypeDefinitionIndex)->GetStaticField(0x3980);
 		}
 		static ::System::Nullable_1<::System::Int32>* StaticGet__mainThreadIdCache()
 		{

@@ -7,23 +7,23 @@
 namespace UnityEngine::Windows::Speech { class PhraseRecognitionSystem_ErrorDelegate; }
 namespace UnityEngine::Windows::Speech { class PhraseRecognitionSystem_StatusDelegate; }
 
-#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNITIONSYSTEM_PHRASERECOGNITIONSYSTEM_INVOKEERROREVENT_OFFSET UNITYSDK_OFFSET(0x1981AA80)
-#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNITIONSYSTEM_PHRASERECOGNITIONSYSTEM_INVOKESTATUSCHANGEDEVENT_OFFSET UNITYSDK_OFFSET(0x1981ADD0)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNITIONSYSTEM_PHRASERECOGNITIONSYSTEM_INVOKEERROREVENT_OFFSET UNITYSDK_OFFSET(0x19CF35E0)
+#define UNITYENGINE_WINDOWS_SPEECH_PHRASERECOGNITIONSYSTEM_PHRASERECOGNITIONSYSTEM_INVOKESTATUSCHANGEDEVENT_OFFSET UNITYSDK_OFFSET(0x19CF3930)
 
 namespace UnityEngine::Windows::Speech
 {
-	inline static constexpr unsigned int PhraseRecognitionSystem_TypeDefinitionIndex = 5442;
+	inline static constexpr unsigned int PhraseRecognitionSystem_TypeDefinitionIndex = 5445;
 
 	class PhraseRecognitionSystem : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::Windows::Speech::PhraseRecognitionSystem_StatusDelegate** StaticGet_OnStatusChanged()
-		{
-			return (::UnityEngine::Windows::Speech::PhraseRecognitionSystem_StatusDelegate**)Il2CppClass::FromTypeDefinitionIndex(PhraseRecognitionSystem_TypeDefinitionIndex)->GetStaticField(0x5170);
-		}
 		static ::UnityEngine::Windows::Speech::PhraseRecognitionSystem_ErrorDelegate** StaticGet_OnError()
 		{
-			return (::UnityEngine::Windows::Speech::PhraseRecognitionSystem_ErrorDelegate**)Il2CppClass::FromTypeDefinitionIndex(PhraseRecognitionSystem_TypeDefinitionIndex)->GetStaticField(0x5178);
+			return (::UnityEngine::Windows::Speech::PhraseRecognitionSystem_ErrorDelegate**)Il2CppClass::FromTypeDefinitionIndex(PhraseRecognitionSystem_TypeDefinitionIndex)->GetStaticField(0x51A0);
+		}
+		static ::UnityEngine::Windows::Speech::PhraseRecognitionSystem_StatusDelegate** StaticGet_OnStatusChanged()
+		{
+			return (::UnityEngine::Windows::Speech::PhraseRecognitionSystem_StatusDelegate**)Il2CppClass::FromTypeDefinitionIndex(PhraseRecognitionSystem_TypeDefinitionIndex)->GetStaticField(0x51A8);
 		}
 
 		static ::System::Void PhraseRecognitionSystem_InvokeErrorEvent(::UnityEngine::Windows::Speech::SpeechError errorCode)

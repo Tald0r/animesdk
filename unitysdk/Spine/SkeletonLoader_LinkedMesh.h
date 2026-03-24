@@ -5,11 +5,11 @@
 namespace Spine { class MeshAttachment; }
 namespace System { class String; }
 
-#define SPINE_SKELETONLOADER_LINKEDMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1B090E10)
+#define SPINE_SKELETONLOADER_LINKEDMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1B69F5F0)
 
 namespace Spine
 {
-	inline static constexpr unsigned int SkeletonLoader_LinkedMesh_TypeDefinitionIndex = 29867;
+	inline static constexpr unsigned int SkeletonLoader_LinkedMesh_TypeDefinitionIndex = 30820;
 
 	class SkeletonLoader_LinkedMesh : public ::System::Object
 	{

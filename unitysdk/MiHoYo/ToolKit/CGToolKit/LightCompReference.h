@@ -7,13 +7,13 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::Rendering::Universal { class UniversalAdditionalLightData; }
 
-#define MIHOYO_TOOLKIT_CGTOOLKIT_LIGHTCOMPREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x8E90CC0)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_LIGHTCOMPREFERENCE_RELOAD_OFFSET UNITYSDK_OFFSET(0x8E90C30)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_LIGHTCOMPREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x8E90B40)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_LIGHTCOMPREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x78DF030)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_LIGHTCOMPREFERENCE_RELOAD_OFFSET UNITYSDK_OFFSET(0x78DEFA0)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_LIGHTCOMPREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x78DEEB0)
 
 namespace MiHoYo::ToolKit::CGToolKit
 {
-	inline static constexpr unsigned int LightCompReference_TypeDefinitionIndex = 54854;
+	inline static constexpr unsigned int LightCompReference_TypeDefinitionIndex = 57574;
 
 	class LightCompReference : public ::System::Object
 	{

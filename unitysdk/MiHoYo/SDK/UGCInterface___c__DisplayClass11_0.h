@@ -8,13 +8,13 @@ namespace MiHoYo::SDK { class UGCInterface_UgcResponseModel; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18F42840)
-#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__0_OFFSET UNITYSDK_OFFSET(0x18F42850)
-#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__1_OFFSET UNITYSDK_OFFSET(0x18F428E0)
+#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1928B360)
+#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__0_OFFSET UNITYSDK_OFFSET(0x1928B370)
+#define MIHOYO_SDK_UGCINTERFACE___C__DISPLAYCLASS11_0__HTTPGETCARRYTOKEN_B__1_OFFSET UNITYSDK_OFFSET(0x1928B400)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int UGCInterface___c__DisplayClass11_0_TypeDefinitionIndex = 33748;
+	inline static constexpr unsigned int UGCInterface___c__DisplayClass11_0_TypeDefinitionIndex = 34721;
 
 	class UGCInterface___c__DisplayClass11_0 : public ::System::Object
 	{

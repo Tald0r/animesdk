@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_FLOWCANVAS_HOLLOWENTITYMOVEEVENT_PARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x2CA8F0)
+#define MOLEMOLE_FLOWCANVAS_HOLLOWENTITYMOVEEVENT_PARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x37EE40)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int HollowEntityMoveEvent_Param_TypeDefinitionIndex = 52759;
+	inline static constexpr unsigned int HollowEntityMoveEvent_Param_TypeDefinitionIndex = 73867;
 
 	struct alignas(4) HollowEntityMoveEvent_Param
 	{

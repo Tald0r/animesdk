@@ -3,27 +3,27 @@
 #include "unitysdk/System/IO/BinaryReader.h"
 #include "unitysdk/System/Reflection/Emit/OpCode.h"
 
-#define UTF8JSON_INTERNAL_ILSTREAMREADER_GET_CURRENTPOSITION_OFFSET UNITYSDK_OFFSET(0x1AB5F050)
-#define UTF8JSON_INTERNAL_ILSTREAMREADER_GET_ENDOFSTREAM_OFFSET UNITYSDK_OFFSET(0x1AB5F080)
-#define UTF8JSON_INTERNAL_ILSTREAMREADER_READMETADATATOKEN_OFFSET UNITYSDK_OFFSET(0x1AB5F5A0)
-#define UTF8JSON_INTERNAL_ILSTREAMREADER_READOPCODE_OFFSET UNITYSDK_OFFSET(0x1AB5F440)
-#define UTF8JSON_INTERNAL_ILSTREAMREADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB5F0B0)
-#define UTF8JSON_INTERNAL_ILSTREAMREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB5F350)
+#define UTF8JSON_INTERNAL_ILSTREAMREADER_GET_CURRENTPOSITION_OFFSET UNITYSDK_OFFSET(0x1B18FA50)
+#define UTF8JSON_INTERNAL_ILSTREAMREADER_GET_ENDOFSTREAM_OFFSET UNITYSDK_OFFSET(0x1B18FA80)
+#define UTF8JSON_INTERNAL_ILSTREAMREADER_READMETADATATOKEN_OFFSET UNITYSDK_OFFSET(0x1B18FFA0)
+#define UTF8JSON_INTERNAL_ILSTREAMREADER_READOPCODE_OFFSET UNITYSDK_OFFSET(0x1B18FE40)
+#define UTF8JSON_INTERNAL_ILSTREAMREADER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B18FAB0)
+#define UTF8JSON_INTERNAL_ILSTREAMREADER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B18FD50)
 
 namespace Utf8Json::Internal
 {
-	inline static constexpr unsigned int ILStreamReader_TypeDefinitionIndex = 81893;
+	inline static constexpr unsigned int ILStreamReader_TypeDefinitionIndex = 83934;
 
 	class ILStreamReader : public ::System::IO::BinaryReader
 	{
 	public:
 		static ::Il2CppArray<::System::Reflection::Emit::OpCode>** StaticGet_twoByteOpCodes()
 		{
-			return (::Il2CppArray<::System::Reflection::Emit::OpCode>**)Il2CppClass::FromTypeDefinitionIndex(ILStreamReader_TypeDefinitionIndex)->GetStaticField(0x473E0);
+			return (::Il2CppArray<::System::Reflection::Emit::OpCode>**)Il2CppClass::FromTypeDefinitionIndex(ILStreamReader_TypeDefinitionIndex)->GetStaticField(0x48DF0);
 		}
 		static ::Il2CppArray<::System::Reflection::Emit::OpCode>** StaticGet_oneByteOpCodes()
 		{
-			return (::Il2CppArray<::System::Reflection::Emit::OpCode>**)Il2CppClass::FromTypeDefinitionIndex(ILStreamReader_TypeDefinitionIndex)->GetStaticField(0x473E8);
+			return (::Il2CppArray<::System::Reflection::Emit::OpCode>**)Il2CppClass::FromTypeDefinitionIndex(ILStreamReader_TypeDefinitionIndex)->GetStaticField(0x48DF8);
 		}
 		::System::Int32 endPosition; // 0x48
 

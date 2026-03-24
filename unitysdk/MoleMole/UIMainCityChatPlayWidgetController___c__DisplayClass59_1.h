@@ -5,20 +5,20 @@
 namespace MoleMole { class UIMainCityChatPlayWidgetController___c__DisplayClass59_0; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS59_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC126660)
-#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS59_1__PLAYSTORYNODE_B__1_OFFSET UNITYSDK_OFFSET(0xC126670)
-#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS59_1__PLAYSTORYNODE_B__2_OFFSET UNITYSDK_OFFSET(0xC1266C0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS59_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD76EB00)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS59_1__PLAYSTORYNODE_B__1_OFFSET UNITYSDK_OFFSET(0xD76EB10)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS59_1__PLAYSTORYNODE_B__2_OFFSET UNITYSDK_OFFSET(0xD76EB60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityChatPlayWidgetController___c__DisplayClass59_1_TypeDefinitionIndex = 53849;
+	inline static constexpr unsigned int UIMainCityChatPlayWidgetController___c__DisplayClass59_1_TypeDefinitionIndex = 69006;
 
 	class UIMainCityChatPlayWidgetController___c__DisplayClass59_1 : public ::System::Object
 	{
 	public:
-		::System::String* voiceKey; // 0x10
-		::MoleMole::UIMainCityChatPlayWidgetController___c__DisplayClass59_0* CS___8__locals1; // 0x18
-		::System::String* showSettingKey; // 0x20
+		::System::String* showSettingKey; // 0x10
+		::System::String* voiceKey; // 0x18
+		::MoleMole::UIMainCityChatPlayWidgetController___c__DisplayClass59_0* CS___8__locals1; // 0x20
 
 		::System::Void _ctor()
 		{

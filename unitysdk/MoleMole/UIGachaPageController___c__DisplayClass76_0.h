@@ -2,15 +2,15 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_7;
+class Class_0_16E4307DCC419505_5;
 namespace MoleMole { class ActivityDemoTrialContext; }
 
-#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA361650)
-#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__ONAVATARSCROLLVIEWCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xA361660)
+#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD12B370)
+#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__ONAVATARSCROLLVIEWCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xD12B380)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaPageController___c__DisplayClass76_0_TypeDefinitionIndex = 39397;
+	inline static constexpr unsigned int UIGachaPageController___c__DisplayClass76_0_TypeDefinitionIndex = 55232;
 
 	class UIGachaPageController___c__DisplayClass76_0 : public ::System::Object
 	{
@@ -22,9 +22,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _OnAvatarScrollViewClick_b__0(::Class_0_16E4307DCC419505_7* msg)
+		::System::Void _OnAvatarScrollViewClick_b__0(::Class_0_16E4307DCC419505_5* msg)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__ONAVATARSCROLLVIEWCLICK_B__0_OFFSET))(this, msg);
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_5*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS76_0__ONAVATARSCROLLVIEWCLICK_B__0_OFFSET))(this, msg);
 		}
 	};
 }

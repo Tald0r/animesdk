@@ -3,12 +3,12 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneLockTarget_TargetType_TypeDefinitionIndex = 60113;
+	inline static constexpr unsigned int AnimatorZoneLockTarget_TargetType_TypeDefinitionIndex = 63912;
 
 	enum class AnimatorZoneLockTarget_TargetType : ::System::Int32
 	{
-		CustomPosRot = 2,
-		GuideTargetPosition = 1,
 		Target = 0,
+		GuideTargetPosition = 1,
+		CustomPosRot = 2,
 	};
 }

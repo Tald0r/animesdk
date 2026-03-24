@@ -2,29 +2,29 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_7;
+class Class_0_16E4307DCC419505_5;
 namespace System { class Action; }
 namespace System { template <typename T1, typename T2> class Tuple_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB_METHOD_1_79CFC1BF134BCDB5_OFFSET UNITYSDK_OFFSET(0x758E6A0)
-#define CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB__CTOR_OFFSET UNITYSDK_OFFSET(0x758E690)
+#define CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB_METHOD_1_79CFC1BF134BCDB5_OFFSET UNITYSDK_OFFSET(0x8A254C0)
+#define CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB__CTOR_OFFSET UNITYSDK_OFFSET(0x8A254B0)
 
-inline static constexpr unsigned int Class_2_A7165A858F83C5DB_Class_1_57EBCD4F0FAA97DB_TypeDefinitionIndex = 67114;
+inline static constexpr unsigned int Class_2_A7165A858F83C5DB_Class_1_57EBCD4F0FAA97DB_TypeDefinitionIndex = 64732;
 
 class Class_2_A7165A858F83C5DB_Class_1_57EBCD4F0FAA97DB : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::System::Tuple_2<::System::Int32, ::System::Int32>*>* Field_1_0; // 0x10
-	::System::Action* Field_1_1; // 0x18
+	::System::Action* Field_1_1; // 0x10
+	::System::Collections::Generic::List_1<::System::Tuple_2<::System::Int32, ::System::Int32>*>* Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_79CFC1BF134BCDB5(::Class_0_16E4307DCC419505_7* a1)
+	::System::Void Method_1_79CFC1BF134BCDB5(::Class_0_16E4307DCC419505_5* a1)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB_METHOD_1_79CFC1BF134BCDB5_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_5*))((::PBYTE)hIl2Cpp + CLASS_2_A7165A858F83C5DB_CLASS_1_57EBCD4F0FAA97DB_METHOD_1_79CFC1BF134BCDB5_OFFSET))(this, a1);
 	}
 };

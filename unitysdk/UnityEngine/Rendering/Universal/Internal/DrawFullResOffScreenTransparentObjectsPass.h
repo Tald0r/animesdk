@@ -22,40 +22,40 @@ namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 namespace UnityEngine::Rendering::Universal { class VREffects; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19242720)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19243DE0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_POSTPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x19243D50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_PREPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x192436D0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x19242530)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19242060)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19243E90)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19667540)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19668BB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_POSTPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x19668B20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_PREPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x196684A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x19667330)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19666E60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DRAWFULLRESOFFSCREENTRANSPARENTOBJECTSPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x19668C60)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int DrawFullResOffScreenTransparentObjectsPass_TypeDefinitionIndex = 29002;
+	inline static constexpr unsigned int DrawFullResOffScreenTransparentObjectsPass_TypeDefinitionIndex = 29953;
 
 	class DrawFullResOffScreenTransparentObjectsPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::System::Int32* StaticGet_PassPropertyId()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(DrawFullResOffScreenTransparentObjectsPass_TypeDefinitionIndex)->GetStaticField(0x69E0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(DrawFullResOffScreenTransparentObjectsPass_TypeDefinitionIndex)->GetStaticField(0x7170);
 		}
-		::System::String* m_ProfilerTag; // 0xA8
-		::UnityEngine::Rendering::Universal::VREffects* _vrEffects; // 0xB0
+		::UnityEngine::Rendering::Universal::VREffects* _vrEffects; // 0xA8
+		::System::String* m_ProfilerTag; // 0xB0
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xB8
 		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_TransparentShaderTagIdListForOffScreenParticle; // 0xC0
-		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlock; // 0xC8
-		::UnityEngine::Rendering::DrawingSettings m_DrawSetting; // 0x134
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForDecal; // 0x26C
-		::System::Boolean m_OutlineProcessPassActiveHear; // 0x288
-		::System::Boolean m_IsOffScreenParticlePass; // 0x289
-		::System::Boolean m_OutlineBeforeTransparent; // 0x28A
-		::System::Boolean m_DrawParticleDecalAndOnTransparentPass; // 0x28B
-		::UnityEngine::Rendering::RenderTargetIdentifier m_ActiveDepthIdentifier; // 0x290
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettings; // 0x2B8
-		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlockForAlphaBlend; // 0x2D4
-		::UnityEngine::Rendering::RenderTargetIdentifier m_ActiveColorIdentifier; // 0x340
+		::UnityEngine::Rendering::DrawingSettings m_DrawSetting; // 0xC8
+		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlock; // 0x200
+		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlockForAlphaBlend; // 0x26C
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForDecal; // 0x2D8
+		::UnityEngine::Rendering::RenderTargetIdentifier m_ActiveDepthIdentifier; // 0x2F8
+		::UnityEngine::Rendering::RenderTargetIdentifier m_ActiveColorIdentifier; // 0x320
+		::System::Boolean m_OutlineProcessPassActiveHear; // 0x348
+		::System::Boolean m_DrawParticleDecalAndOnTransparentPass; // 0x349
+		::System::Boolean m_OutlineBeforeTransparent; // 0x34A
+		::System::Boolean m_IsOffScreenParticlePass; // 0x34B
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettings; // 0x34C
 
 		::System::Void _ctor(::System::String* profilerTag, ::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent>* renderPassEventConfig, ::UnityEngine::Rendering::RenderQueueRange renderQueueRange, ::UnityEngine::LayerMask layerMask, ::UnityEngine::Rendering::StencilState stencilState, ::System::Int32 stencilReference)
 		{

@@ -3,7 +3,7 @@
 
 namespace Foundation::Geometry
 {
-	inline static constexpr unsigned int IBezierControlPointPolicy_1_TypeDefinitionIndex = 9042;
+	inline static constexpr unsigned int IBezierControlPointPolicy_1_TypeDefinitionIndex = 8820;
 
 	template <typename T>
 	class IBezierControlPointPolicy_1

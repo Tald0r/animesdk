@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 template <typename T> class Class_1_C7B69AD07BC85C90;
 template <typename T> class Class_1_D59556891F60A761;
 
-inline static constexpr unsigned int Class_1_D59556891F60A761_Class_1_FD2D84A76CB13B0F_TypeDefinitionIndex = 24372;
+inline static constexpr unsigned int Class_1_D59556891F60A761_Class_1_FD2D84A76CB13B0F_TypeDefinitionIndex = 25297;
 
 template <typename TVertex>
 class Class_1_D59556891F60A761_Class_1_FD2D84A76CB13B0F : public ::System::Object

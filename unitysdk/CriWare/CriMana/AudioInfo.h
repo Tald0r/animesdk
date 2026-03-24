@@ -4,7 +4,7 @@
 
 namespace CriWare::CriMana
 {
-	inline static constexpr unsigned int AudioInfo_TypeDefinitionIndex = 31363;
+	inline static constexpr unsigned int AudioInfo_TypeDefinitionIndex = 32315;
 
 	struct alignas(4) AudioInfo
 	{

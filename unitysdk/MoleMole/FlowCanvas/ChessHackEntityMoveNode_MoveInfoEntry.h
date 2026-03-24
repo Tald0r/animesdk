@@ -4,11 +4,11 @@
 #include "unitysdk/Share/GridDir.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_FLOWCANVAS_CHESSHACKENTITYMOVENODE_MOVEINFOENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x3105E0)
+#define MOLEMOLE_FLOWCANVAS_CHESSHACKENTITYMOVENODE_MOVEINFOENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x3C0B50)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessHackEntityMoveNode_MoveInfoEntry_TypeDefinitionIndex = 45352;
+	inline static constexpr unsigned int ChessHackEntityMoveNode_MoveInfoEntry_TypeDefinitionIndex = 40903;
 
 	struct alignas(4) ChessHackEntityMoveNode_MoveInfoEntry
 	{

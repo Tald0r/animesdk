@@ -6,25 +6,25 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS_CALLBACK_OFFSET UNITYSDK_OFFSET(0x1B07C6E0)
-#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS_DISPOSECALLBACK_OFFSET UNITYSDK_OFFSET(0x1B07C8F0)
-#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS_REGISTERWITHOUTCAPTUREEXECUTIONCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B07C730)
-#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B07C9E0)
+#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS_CALLBACK_OFFSET UNITYSDK_OFFSET(0x1B68A420)
+#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS_DISPOSECALLBACK_OFFSET UNITYSDK_OFFSET(0x1B68A630)
+#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS_REGISTERWITHOUTCAPTUREEXECUTIONCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B68A470)
+#define CYSHARP_THREADING_TASKS_CANCELLATIONTOKENEXTENSIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B68A720)
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int CancellationTokenExtensions_TypeDefinitionIndex = 27067;
+	inline static constexpr unsigned int CancellationTokenExtensions_TypeDefinitionIndex = 28007;
 
 	class CancellationTokenExtensions : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::System::Object*>** StaticGet_cancellationTokenCallback()
 		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(CancellationTokenExtensions_TypeDefinitionIndex)->GetStaticField(0x1FB30);
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(CancellationTokenExtensions_TypeDefinitionIndex)->GetStaticField(0x21190);
 		}
 		static ::System::Action_1<::System::Object*>** StaticGet_disposeCallback()
 		{
-			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(CancellationTokenExtensions_TypeDefinitionIndex)->GetStaticField(0x1FB38);
+			return (::System::Action_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(CancellationTokenExtensions_TypeDefinitionIndex)->GetStaticField(0x21198);
 		}
 
 		static ::System::Void _cctor()

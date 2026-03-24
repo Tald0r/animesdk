@@ -4,7 +4,7 @@
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TMP_SpriteInfo_TypeDefinitionIndex = 36053;
+	inline static constexpr unsigned int TMP_SpriteInfo_TypeDefinitionIndex = 37073;
 
 	struct alignas(4) TMP_SpriteInfo
 	{

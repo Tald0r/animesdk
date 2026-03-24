@@ -13,11 +13,11 @@ namespace System { template <typename T> class Func_1; }
 namespace UnityEngine { class Animator; }
 namespace UnityEngine { class Component; }
 
-#define BEHAVIORDESIGNER_RUNTIME_VARIABLESYNCHRONIZER_SYNCHRONIZEDVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA33220)
+#define BEHAVIORDESIGNER_RUNTIME_VARIABLESYNCHRONIZER_SYNCHRONIZEDVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B041580)
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int VariableSynchronizer_SynchronizedVariable_TypeDefinitionIndex = 30240;
+	inline static constexpr unsigned int VariableSynchronizer_SynchronizedVariable_TypeDefinitionIndex = 31192;
 
 	class VariableSynchronizer_SynchronizedVariable : public ::System::Object
 	{

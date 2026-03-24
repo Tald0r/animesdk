@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define SRDYNAMICSCALE__CTOR_OFFSET UNITYSDK_OFFSET(0x124A8080)
+#define SRDYNAMICSCALE__CTOR_OFFSET UNITYSDK_OFFSET(0x11B25BB0)
 
-inline static constexpr unsigned int SRDynamicScale_TypeDefinitionIndex = 82141;
+inline static constexpr unsigned int SRDynamicScale_TypeDefinitionIndex = 84219;
 
 class SRDynamicScale : public ::UnityEngine::MonoBehaviour
 {

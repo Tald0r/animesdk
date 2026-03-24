@@ -12,7 +12,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int PriorityQueue_2_TypeDefinitionIndex = 81308;
+	inline static constexpr unsigned int PriorityQueue_2_TypeDefinitionIndex = 83349;
 
 	template <typename TPriority, typename TValue>
 	class PriorityQueue_2 : public ::System::Object

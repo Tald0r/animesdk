@@ -6,32 +6,32 @@ class Class_1_451D4E871590D41E;
 namespace MoleMole::Project::Config { class BabelFloorInfoTemplateExt; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define CLASS_2_6D76DA05D1963D8B___C_METHOD_1_BF523663C5477DEB_1_OFFSET UNITYSDK_OFFSET(0xD09E0F0)
-#define CLASS_2_6D76DA05D1963D8B___C_METHOD_1_BF523663C5477DEB_OFFSET UNITYSDK_OFFSET(0xD09E0C0)
-#define CLASS_2_6D76DA05D1963D8B___C_METHOD_1_FCC0E97470E808C5_OFFSET UNITYSDK_OFFSET(0xD09E080)
-#define CLASS_2_6D76DA05D1963D8B___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD09E030)
-#define CLASS_2_6D76DA05D1963D8B___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD09E070)
+#define CLASS_2_6D76DA05D1963D8B___C_METHOD_1_BF523663C5477DEB_1_OFFSET UNITYSDK_OFFSET(0xB7F3BC0)
+#define CLASS_2_6D76DA05D1963D8B___C_METHOD_1_BF523663C5477DEB_OFFSET UNITYSDK_OFFSET(0xB7F3B90)
+#define CLASS_2_6D76DA05D1963D8B___C_METHOD_1_FCC0E97470E808C5_OFFSET UNITYSDK_OFFSET(0xB7F3B50)
+#define CLASS_2_6D76DA05D1963D8B___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB7F3B00)
+#define CLASS_2_6D76DA05D1963D8B___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB7F3B40)
 
-inline static constexpr unsigned int Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex = 37307;
+inline static constexpr unsigned int Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex = 77846;
 
 class Class_2_6D76DA05D1963D8B___c : public ::System::Object
 {
 public:
 	static ::Class_2_6D76DA05D1963D8B___c** StaticGet___9()
 	{
-		return (::Class_2_6D76DA05D1963D8B___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x2EF30);
-	}
-	static ::System::Comparison_1<::MoleMole::Project::Config::BabelFloorInfoTemplateExt*>** StaticGet___9__2_0()
-	{
-		return (::System::Comparison_1<::MoleMole::Project::Config::BabelFloorInfoTemplateExt*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x2EF38);
+		return (::Class_2_6D76DA05D1963D8B___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x42790);
 	}
 	static ::System::Comparison_1<::Class_1_451D4E871590D41E*>** StaticGet___9__6_0()
 	{
-		return (::System::Comparison_1<::Class_1_451D4E871590D41E*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x2EF40);
+		return (::System::Comparison_1<::Class_1_451D4E871590D41E*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x42798);
+	}
+	static ::System::Comparison_1<::MoleMole::Project::Config::BabelFloorInfoTemplateExt*>** StaticGet___9__2_0()
+	{
+		return (::System::Comparison_1<::MoleMole::Project::Config::BabelFloorInfoTemplateExt*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x427A0);
 	}
 	static ::System::Comparison_1<::Class_1_451D4E871590D41E*>** StaticGet___9__6_1()
 	{
-		return (::System::Comparison_1<::Class_1_451D4E871590D41E*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x2EF48);
+		return (::System::Comparison_1<::Class_1_451D4E871590D41E*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_6D76DA05D1963D8B___c_TypeDefinitionIndex)->GetStaticField(0x427A8);
 	}
 
 	static ::System::Void _cctor()

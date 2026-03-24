@@ -4,11 +4,11 @@
 
 namespace MoleMole::Utils { class CloseUpDataTableEntry; }
 
-#define MOLEMOLE_UTILS_CLOSEUPDATATABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x65C80A0)
+#define MOLEMOLE_UTILS_CLOSEUPDATATABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x9F15CE0)
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int CloseUpDataTable_TypeDefinitionIndex = 74809;
+	inline static constexpr unsigned int CloseUpDataTable_TypeDefinitionIndex = 45919;
 
 	class CloseUpDataTable : public ::MoleMole::Utils::NapDictionaryBasedDataTable_1<::MoleMole::Utils::CloseUpDataTableEntry*>
 	{

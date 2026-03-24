@@ -12,25 +12,25 @@ namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
 
-#define CLASS_2_A6415ACD2BAEC3D4_METHOD_2_63BBC99244640EE0_OFFSET UNITYSDK_OFFSET(0x835CDB0)
-#define CLASS_2_A6415ACD2BAEC3D4_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x835CFD0)
-#define CLASS_2_A6415ACD2BAEC3D4_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x835D0E0)
-#define CLASS_2_A6415ACD2BAEC3D4__CTOR_OFFSET UNITYSDK_OFFSET(0x835D0D0)
+#define CLASS_2_A6415ACD2BAEC3D4_METHOD_2_63BBC99244640EE0_OFFSET UNITYSDK_OFFSET(0xD628FE0)
+#define CLASS_2_A6415ACD2BAEC3D4_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xD629200)
+#define CLASS_2_A6415ACD2BAEC3D4_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD629310)
+#define CLASS_2_A6415ACD2BAEC3D4__CTOR_OFFSET UNITYSDK_OFFSET(0xD629300)
 
-inline static constexpr unsigned int Class_2_A6415ACD2BAEC3D4_TypeDefinitionIndex = 38189;
+inline static constexpr unsigned int Class_2_A6415ACD2BAEC3D4_TypeDefinitionIndex = 70630;
 
 class Class_2_A6415ACD2BAEC3D4 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::MonoGamepadNestedListDelegate* Field_2_8; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x20
-	::MonoUITableScrollV2* Field_2_6; // 0x28
-	::MoleMole::UIGeneralButtonController* Field_2_3; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x38
-	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_5; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x48
+	::UnityEngine::Transform* Field_2_7; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x30
+	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_5; // 0x38
+	::MoleMole::UIGeneralButtonController* Field_2_3; // 0x40
+	::MoleMole::MonoGamepadNestedListDelegate* Field_2_8; // 0x48
 	::Class_2_60DDD9C206686F44* Field_2_0; // 0x50
-	::UnityEngine::Transform* Field_2_7; // 0x58
+	::MonoUITableScrollV2* Field_2_6; // 0x58
 
 	::System::Void _ctor()
 	{

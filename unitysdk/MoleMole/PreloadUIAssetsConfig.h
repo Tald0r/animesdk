@@ -5,12 +5,12 @@
 namespace MoleMole { class PreloadObject; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_PRELOADUIASSETSCONFIG_REMOVEREPEATEDS_OFFSET UNITYSDK_OFFSET(0x9942730)
-#define MOLEMOLE_PRELOADUIASSETSCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9942920)
+#define MOLEMOLE_PRELOADUIASSETSCONFIG_REMOVEREPEATEDS_OFFSET UNITYSDK_OFFSET(0xC7D53F0)
+#define MOLEMOLE_PRELOADUIASSETSCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D55E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PreloadUIAssetsConfig_TypeDefinitionIndex = 40215;
+	inline static constexpr unsigned int PreloadUIAssetsConfig_TypeDefinitionIndex = 58591;
 
 	class PreloadUIAssetsConfig : public ::Foundation::MihoyoSerializedScriptableObject
 	{

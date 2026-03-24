@@ -5,7 +5,7 @@
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int GasBakeVolume_Struct_2_69E606C7FA677E19_TypeDefinitionIndex = 46351;
+	inline static constexpr unsigned int GasBakeVolume_Struct_2_69E606C7FA677E19_TypeDefinitionIndex = 69884;
 
 	struct alignas(4) GasBakeVolume_Struct_2_69E606C7FA677E19
 	{

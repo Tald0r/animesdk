@@ -5,11 +5,11 @@
 namespace NPCCrowd::AI { class SpawnGroupRefList; }
 namespace System { class String; }
 
-#define NPCCROWD_AI_PATHGRAPHSTATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7DF2A70)
+#define NPCCROWD_AI_PATHGRAPHSTATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6512660)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphStateConfig_TypeDefinitionIndex = 65916;
+	inline static constexpr unsigned int PathGraphStateConfig_TypeDefinitionIndex = 80573;
 
 	class PathGraphStateConfig : public ::System::Object
 	{

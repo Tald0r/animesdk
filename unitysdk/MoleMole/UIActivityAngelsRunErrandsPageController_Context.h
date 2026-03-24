@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIACTIVITYANGELSRUNERRANDSPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7F45EB0)
+#define MOLEMOLE_UIACTIVITYANGELSRUNERRANDSPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8B98330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityAngelsRunErrandsPageController_Context_TypeDefinitionIndex = 72053;
+	inline static constexpr unsigned int UIActivityAngelsRunErrandsPageController_Context_TypeDefinitionIndex = 53411;
 
 	class UIActivityAngelsRunErrandsPageController_Context : public ::MoleMole::UIControllerContextBase
 	{

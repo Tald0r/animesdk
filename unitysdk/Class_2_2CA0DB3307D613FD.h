@@ -8,19 +8,19 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_2CA0DB3307D613FD_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xBDCBAF0)
-#define CLASS_2_2CA0DB3307D613FD_METHOD_2_AB195FC75502CC36_OFFSET UNITYSDK_OFFSET(0xBDCBBC0)
-#define CLASS_2_2CA0DB3307D613FD_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xBDCBD40)
-#define CLASS_2_2CA0DB3307D613FD__CTOR_OFFSET UNITYSDK_OFFSET(0xBDCBD30)
+#define CLASS_2_2CA0DB3307D613FD_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xA775580)
+#define CLASS_2_2CA0DB3307D613FD_METHOD_2_AB195FC75502CC36_OFFSET UNITYSDK_OFFSET(0xA775650)
+#define CLASS_2_2CA0DB3307D613FD_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA7757D0)
+#define CLASS_2_2CA0DB3307D613FD__CTOR_OFFSET UNITYSDK_OFFSET(0xA7757C0)
 
-inline static constexpr unsigned int Class_2_2CA0DB3307D613FD_TypeDefinitionIndex = 61644;
+inline static constexpr unsigned int Class_2_2CA0DB3307D613FD_TypeDefinitionIndex = 62294;
 
 class Class_2_2CA0DB3307D613FD : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::Transform* Field_2_1; // 0x18
-	::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Field_2_2; // 0x20
-	::UnityEngine::Transform* Field_2_0; // 0x28
+	::UnityEngine::Transform* Field_2_0; // 0x20
+	::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Field_2_2; // 0x28
 
 	::System::Void _ctor()
 	{

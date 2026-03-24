@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFA4060)
-#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS39_0__PLAYBLUEPRINT_B__0_OFFSET UNITYSDK_OFFSET(0xBFA4070)
+#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9BDF730)
+#define MOLEMOLE_UIGACHASTAGE3DMODELCONTROLLERBASE___C__DISPLAYCLASS39_0__PLAYBLUEPRINT_B__0_OFFSET UNITYSDK_OFFSET(0x9BDF740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaStage3DModelControllerBase___c__DisplayClass39_0_TypeDefinitionIndex = 60226;
+	inline static constexpr unsigned int UIGachaStage3DModelControllerBase___c__DisplayClass39_0_TypeDefinitionIndex = 45127;
 
 	class UIGachaStage3DModelControllerBase___c__DisplayClass39_0 : public ::System::Object
 	{

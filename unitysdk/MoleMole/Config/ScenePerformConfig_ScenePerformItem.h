@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class IScenePerformConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x15EC9A00)
+#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xE2DC380)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ScenePerformConfig_ScenePerformItem_TypeDefinitionIndex = 78782;
+	inline static constexpr unsigned int ScenePerformConfig_ScenePerformItem_TypeDefinitionIndex = 55545;
 
 	class ScenePerformConfig_ScenePerformItem : public ::System::Object
 	{

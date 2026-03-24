@@ -3,7 +3,7 @@
 
 namespace Spine::Unity
 {
-	inline static constexpr unsigned int ENapSkeletonGraphicFrame_TypeDefinitionIndex = 36253;
+	inline static constexpr unsigned int ENapSkeletonGraphicFrame_TypeDefinitionIndex = 37273;
 
 	enum class ENapSkeletonGraphicFrame : ::System::Int32
 	{

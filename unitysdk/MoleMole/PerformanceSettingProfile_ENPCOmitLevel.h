@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PerformanceSettingProfile_ENPCOmitLevel_TypeDefinitionIndex = 54146;
+	inline static constexpr unsigned int PerformanceSettingProfile_ENPCOmitLevel_TypeDefinitionIndex = 72084;
 
 	enum class PerformanceSettingProfile_ENPCOmitLevel : ::System::Int32
 	{
-		OnlyNecessary = 3,
-		None = 0,
 		Slight = 1,
+		None = 0,
 		Aggressive = 2,
+		OnlyNecessary = 3,
 	};
 }

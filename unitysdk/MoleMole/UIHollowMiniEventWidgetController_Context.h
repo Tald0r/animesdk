@@ -5,17 +5,17 @@
 class Class_2_A0A794221FA2FC25;
 namespace MoleMole::Config { class HollowPopInteractInfo; }
 
-#define MOLEMOLE_UIHOLLOWMINIEVENTWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6C97F40)
+#define MOLEMOLE_UIHOLLOWMINIEVENTWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6C8E510)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMiniEventWidgetController_Context_TypeDefinitionIndex = 46832;
+	inline static constexpr unsigned int UIHollowMiniEventWidgetController_Context_TypeDefinitionIndex = 37889;
 
 	class UIHollowMiniEventWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_2_A0A794221FA2FC25* PopInteractNetInfo; // 0x28
-		::MoleMole::Config::HollowPopInteractInfo* PopInteractAssetInfo; // 0x30
+		::MoleMole::Config::HollowPopInteractInfo* PopInteractAssetInfo; // 0x28
+		::Class_2_A0A794221FA2FC25* PopInteractNetInfo; // 0x30
 
 		::System::Void _ctor()
 		{

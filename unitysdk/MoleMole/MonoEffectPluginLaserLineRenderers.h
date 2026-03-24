@@ -5,11 +5,11 @@
 namespace MoleMole { class LaserSegments; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOEFFECTPLUGINLASERLINERENDERERS__CTOR_OFFSET UNITYSDK_OFFSET(0x82E8EB0)
+#define MOLEMOLE_MONOEFFECTPLUGINLASERLINERENDERERS__CTOR_OFFSET UNITYSDK_OFFSET(0xA3A3760)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginLaserLineRenderers_TypeDefinitionIndex = 48647;
+	inline static constexpr unsigned int MonoEffectPluginLaserLineRenderers_TypeDefinitionIndex = 50368;
 
 	class MonoEffectPluginLaserLineRenderers : public ::MoleMole::MonoEffectPluginBase
 	{

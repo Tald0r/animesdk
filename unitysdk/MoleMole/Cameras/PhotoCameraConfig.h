@@ -5,12 +5,12 @@
 
 namespace MoleMole::Cameras { class CameraTrackBlending; }
 
-#define MOLEMOLE_CAMERAS_PHOTOCAMERACONFIG__CTOR_1_OFFSET UNITYSDK_OFFSET(0x89E0E40)
-#define MOLEMOLE_CAMERAS_PHOTOCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x89E0DF0)
+#define MOLEMOLE_CAMERAS_PHOTOCAMERACONFIG__CTOR_1_OFFSET UNITYSDK_OFFSET(0xB380D80)
+#define MOLEMOLE_CAMERAS_PHOTOCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB380D30)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int PhotoCameraConfig_TypeDefinitionIndex = 78120;
+	inline static constexpr unsigned int PhotoCameraConfig_TypeDefinitionIndex = 73273;
 
 	class PhotoCameraConfig : public ::System::Object
 	{

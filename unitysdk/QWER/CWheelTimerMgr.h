@@ -8,35 +8,35 @@ namespace QWER { class CTimerMgr; }
 namespace QWER { class DOnTimer; }
 namespace System::Collections::Generic { template <typename T> class LinkedList_1; }
 
-#define QWER_CWHEELTIMERMGR_GETNEXTPOLLTIME_OFFSET UNITYSDK_OFFSET(0x1B03AD10)
-#define QWER_CWHEELTIMERMGR_GET_CURTIME_OFFSET UNITYSDK_OFFSET(0x1B03AD20)
-#define QWER_CWHEELTIMERMGR_GET_TIMESCALE_OFFSET UNITYSDK_OFFSET(0x1B03AD40)
-#define QWER_CWHEELTIMERMGR_POLL_OFFSET UNITYSDK_OFFSET(0x1B03A610)
-#define QWER_CWHEELTIMERMGR_SET_CURTIME_OFFSET UNITYSDK_OFFSET(0x1B03AD30)
-#define QWER_CWHEELTIMERMGR_STARTTIMER_OFFSET UNITYSDK_OFFSET(0x1B03ABA0)
-#define QWER_CWHEELTIMERMGR__ADDTIMERINFO_OFFSET UNITYSDK_OFFSET(0x1B03BD00)
-#define QWER_CWHEELTIMERMGR__ADDTIMER_OFFSET UNITYSDK_OFFSET(0x1B03AF70)
-#define QWER_CWHEELTIMERMGR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B03BF20)
-#define QWER_CWHEELTIMERMGR__EXECTIMER_OFFSET UNITYSDK_OFFSET(0x1B03AD50)
-#define QWER_CWHEELTIMERMGR__TICK_OFFSET UNITYSDK_OFFSET(0x1B03B980)
+#define QWER_CWHEELTIMERMGR_GETNEXTPOLLTIME_OFFSET UNITYSDK_OFFSET(0x1B64AD90)
+#define QWER_CWHEELTIMERMGR_GET_CURTIME_OFFSET UNITYSDK_OFFSET(0x1B64ADA0)
+#define QWER_CWHEELTIMERMGR_GET_TIMESCALE_OFFSET UNITYSDK_OFFSET(0x1B64ADC0)
+#define QWER_CWHEELTIMERMGR_POLL_OFFSET UNITYSDK_OFFSET(0x1B64A6A0)
+#define QWER_CWHEELTIMERMGR_SET_CURTIME_OFFSET UNITYSDK_OFFSET(0x1B64ADB0)
+#define QWER_CWHEELTIMERMGR_STARTTIMER_OFFSET UNITYSDK_OFFSET(0x1B64AC30)
+#define QWER_CWHEELTIMERMGR__ADDTIMERINFO_OFFSET UNITYSDK_OFFSET(0x1B64BD70)
+#define QWER_CWHEELTIMERMGR__ADDTIMER_OFFSET UNITYSDK_OFFSET(0x1B64AFF0)
+#define QWER_CWHEELTIMERMGR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B64BF90)
+#define QWER_CWHEELTIMERMGR__EXECTIMER_OFFSET UNITYSDK_OFFSET(0x1B64ADD0)
+#define QWER_CWHEELTIMERMGR__TICK_OFFSET UNITYSDK_OFFSET(0x1B64B9F0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CWheelTimerMgr_TypeDefinitionIndex = 80475;
+	inline static constexpr unsigned int CWheelTimerMgr_TypeDefinitionIndex = 82517;
 
 	class CWheelTimerMgr : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::UInt64>** StaticGet_m_aTimeOffsets()
 		{
-			return (::Il2CppArray<::System::UInt64>**)Il2CppClass::FromTypeDefinitionIndex(CWheelTimerMgr_TypeDefinitionIndex)->GetStaticField(0x45150);
+			return (::Il2CppArray<::System::UInt64>**)Il2CppClass::FromTypeDefinitionIndex(CWheelTimerMgr_TypeDefinitionIndex)->GetStaticField(0x47FC0);
 		}
 		::QWER::CTimerMgr* m_oTimerMgr; // 0x10
 		::System::Collections::Generic::LinkedList_1<::QWER::CTimer*>* m_poExtTimers; // 0x18
 		::Il2CppArray<::QWER::CExecTimerInfoList*>* m_aTimers; // 0x20
-		::System::Double _TimeScale_k__BackingField; // 0x28
+		::System::UInt64 _CurTime_k__BackingField; // 0x28
 		::System::Double m_dDeltaTime; // 0x30
-		::System::UInt64 _CurTime_k__BackingField; // 0x38
+		::System::Double _TimeScale_k__BackingField; // 0x38
 
 		static ::System::Void _cctor()
 		{

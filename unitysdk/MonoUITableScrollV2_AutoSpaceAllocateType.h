@@ -1,14 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int MonoUITableScrollV2_AutoSpaceAllocateType_TypeDefinitionIndex = 43869;
+inline static constexpr unsigned int MonoUITableScrollV2_AutoSpaceAllocateType_TypeDefinitionIndex = 64399;
 
 enum class MonoUITableScrollV2_AutoSpaceAllocateType : ::System::Int32
 {
-	KeepOriginSpace = 1,
-	CenterWithViewRectAdjust = 4,
-	SpaceAndPadding = 0,
 	Center = 3,
-	CenterOnlyKeepOriginSpace = 5,
 	KeepOriginPadding = 2,
+	CenterWithViewRectAdjust = 4,
+	KeepOriginSpace = 1,
+	SpaceAndPadding = 0,
+	CenterOnlyKeepOriginSpace = 5,
 };

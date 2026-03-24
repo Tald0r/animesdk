@@ -6,20 +6,20 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2ENDSUDDENEVENT_ENDSUDDENEVENT_OFFSET UNITYSDK_OFFSET(0x6ADA380)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2ENDSUDDENEVENT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6ADA250)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2ENDSUDDENEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x6ADA6B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2ENDSUDDENEVENT_ENDSUDDENEVENT_OFFSET UNITYSDK_OFFSET(0xB5C9630)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2ENDSUDDENEVENT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB5C9500)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2ENDSUDDENEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xB5C9960)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAbyssS2EndSuddenEvent_TypeDefinitionIndex = 59411;
+	inline static constexpr unsigned int LDAbyssS2EndSuddenEvent_TypeDefinitionIndex = 68114;
 
 	class LDAbyssS2EndSuddenEvent : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::System::Int32>* _resultKey; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Int32>* _suddenEventID; // 0xB0
-		::FlowCanvas::FlowOutput* _out; // 0xB8
+		::FlowCanvas::FlowOutput* _out; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Int32>* _resultKey; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Int32>* _suddenEventID; // 0xB8
 
 		::System::Void _ctor()
 		{

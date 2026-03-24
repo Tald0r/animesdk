@@ -9,12 +9,14 @@
 
 namespace UnityEngine::Rendering { class DLSSViewPort; }
 
-#define UNITYENGINE_RENDERING_DLSSCONTEXT_DLSSSUPPORTED_OFFSET UNITYSDK_OFFSET(0x19DE2F30)
-#define UNITYENGINE_RENDERING_DLSSCONTEXT_SET_VP_OFFSET UNITYSDK_OFFSET(0x8FA1F0)
+#define UNITYENGINE_RENDERING_DLSSCONTEXT_DLSSSUPPORTED_OFFSET UNITYSDK_OFFSET(0x1A36D8A0)
+#define UNITYENGINE_RENDERING_DLSSCONTEXT_GETOPTIMALSETTINGS_INJECTED_OFFSET UNITYSDK_OFFSET(0x1A36D900)
+#define UNITYENGINE_RENDERING_DLSSCONTEXT_GETOPTIMALSETTINGS_OFFSET UNITYSDK_OFFSET(0x1A36D8B0)
+#define UNITYENGINE_RENDERING_DLSSCONTEXT_SET_VP_OFFSET UNITYSDK_OFFSET(0x922200)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DLSSContext_TypeDefinitionIndex = 6129;
+	inline static constexpr unsigned int DLSSContext_TypeDefinitionIndex = 6133;
 
 	struct alignas(8) DLSSContext
 	{
@@ -46,9 +48,23 @@ namespace UnityEngine::Rendering
 			return ((::System::Boolean(*)())((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DLSSCONTEXT_DLSSSUPPORTED_OFFSET))();
 		}
 
+		/*
+		static ::UnityEngine::Rendering::DLSSOptimalSettings GetOptimalSettings(::UnityEngine::Rendering::DLSSQualityMode mode, ::System::Int32 displayWidth, ::System::Int32 displayHeight)
+		{
+			return ((::UnityEngine::Rendering::DLSSOptimalSettings(*)(::UnityEngine::Rendering::DLSSQualityMode, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DLSSCONTEXT_GETOPTIMALSETTINGS_OFFSET))(mode, displayWidth, displayHeight);
+		}
+		*/
+
 		::System::Void set_vp(::UnityEngine::Rendering::DLSSViewPort* value)
 		{
 			return ((::System::Void(*)(::PVOID, ::UnityEngine::Rendering::DLSSViewPort*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DLSSCONTEXT_SET_VP_OFFSET))(this, value);
 		}
+
+		/*
+		static ::System::Void GetOptimalSettings_Injected(::UnityEngine::Rendering::DLSSQualityMode mode, ::System::Int32 displayWidth, ::System::Int32 displayHeight, ::UnityEngine::Rendering::DLSSOptimalSettings& ret)
+		{
+			return ((::System::Void(*)(::UnityEngine::Rendering::DLSSQualityMode, ::System::Int32, ::System::Int32, ::UnityEngine::Rendering::DLSSOptimalSettings&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_DLSSCONTEXT_GETOPTIMALSETTINGS_INJECTED_OFFSET))(mode, displayWidth, displayHeight, ret);
+		}
+		*/
 	};
 }

@@ -11,26 +11,29 @@ namespace MoleMole { class MonoGamepadCustomList; }
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIGeneralToggleWidgetController; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_3EE9E219E96FD648_METHOD_2_8AF27F640869EFF7_OFFSET UNITYSDK_OFFSET(0x795B4F0)
-#define CLASS_2_3EE9E219E96FD648_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x795B780)
-#define CLASS_2_3EE9E219E96FD648_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x795B870)
-#define CLASS_2_3EE9E219E96FD648__CTOR_OFFSET UNITYSDK_OFFSET(0x795B860)
+#define CLASS_2_3EE9E219E96FD648_METHOD_2_8AF27F640869EFF7_OFFSET UNITYSDK_OFFSET(0xC5434C0)
+#define CLASS_2_3EE9E219E96FD648_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xC543790)
+#define CLASS_2_3EE9E219E96FD648_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC543880)
+#define CLASS_2_3EE9E219E96FD648__CTOR_OFFSET UNITYSDK_OFFSET(0xC543870)
 
-inline static constexpr unsigned int Class_2_3EE9E219E96FD648_TypeDefinitionIndex = 47815;
+inline static constexpr unsigned int Class_2_3EE9E219E96FD648_TypeDefinitionIndex = 41542;
 
 class Class_2_3EE9E219E96FD648 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralToggleWidgetController*>* Field_2_5; // 0x20
-	::Class_2_1F76884FC39FD584* Field_2_4; // 0x28
-	::MoleMole::MonoGamepadCustomList* Field_2_6; // 0x30
-	::MonoUITableScrollV2* Field_2_3; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
-	::MonoUITableScrollV2* Field_2_7; // 0x48
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x50
+	::MoleMole::MonoGamepadCustomList* Field_2_6; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_10; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_9; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x40
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralToggleWidgetController*>* Field_2_5; // 0x48
+	::MonoUITableScrollV2* Field_2_3; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x58
+	::MonoUITableScrollV2* Field_2_7; // 0x60
+	::Class_2_1F76884FC39FD584* Field_2_4; // 0x68
 
 	::System::Void _ctor()
 	{

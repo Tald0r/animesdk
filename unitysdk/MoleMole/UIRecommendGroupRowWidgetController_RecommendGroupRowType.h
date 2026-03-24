@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRecommendGroupRowWidgetController_RecommendGroupRowType_TypeDefinitionIndex = 57729;
+	inline static constexpr unsigned int UIRecommendGroupRowWidgetController_RecommendGroupRowType_TypeDefinitionIndex = 79321;
 
 	enum class UIRecommendGroupRowWidgetController_RecommendGroupRowType : ::System::Byte
 	{

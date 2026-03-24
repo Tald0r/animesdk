@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINFOBOSSCARDWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD85FD20)
+#define MOLEMOLE_UIACTIVITYTEAMTRIALFIGHTINFOBOSSCARDWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD001110)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityTeamTrialFightInfoBossCardWidgetController_Context_TypeDefinitionIndex = 40868;
+	inline static constexpr unsigned int UIActivityTeamTrialFightInfoBossCardWidgetController_Context_TypeDefinitionIndex = 44039;
 
 	class UIActivityTeamTrialFightInfoBossCardWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

@@ -5,18 +5,18 @@
 namespace MoleMole { class UIMainCityMissionWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAINCITYMISSIONWIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB23BC20)
-#define MOLEMOLE_UIMAINCITYMISSIONWIDGETCONTROLLER___C__DISPLAYCLASS9_0__SHOWCURRENTMISSIONFINISHANDSWITCH_B__0_OFFSET UNITYSDK_OFFSET(0xB23BC30)
+#define MOLEMOLE_UIMAINCITYMISSIONWIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7470AE0)
+#define MOLEMOLE_UIMAINCITYMISSIONWIDGETCONTROLLER___C__DISPLAYCLASS9_0__SHOWCURRENTMISSIONFINISHANDSWITCH_B__0_OFFSET UNITYSDK_OFFSET(0x7470AF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityMissionWidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 64038;
+	inline static constexpr unsigned int UIMainCityMissionWidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 53703;
 
 	class UIMainCityMissionWidgetController___c__DisplayClass9_0 : public ::System::Object
 	{
 	public:
-		::System::Action* callback; // 0x10
-		::MoleMole::UIMainCityMissionWidgetController* __4__this; // 0x18
+		::MoleMole::UIMainCityMissionWidgetController* __4__this; // 0x10
+		::System::Action* callback; // 0x18
 		::System::Boolean playSound; // 0x20
 		::System::Int32 questId; // 0x24
 

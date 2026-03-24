@@ -4,9 +4,9 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeList_1.h"
 
-#define CLASS_3_F753AC2D295AF468_STRUCT_2_B48E974450D309CE_1_EXECUTE_OFFSET UNITYSDK_OFFSET(0x3259C0)
+#define CLASS_3_F753AC2D295AF468_STRUCT_2_B48E974450D309CE_1_EXECUTE_OFFSET UNITYSDK_OFFSET(0x3257D0)
 
-inline static constexpr unsigned int Class_3_F753AC2D295AF468_Struct_2_B48E974450D309CE_1_TypeDefinitionIndex = 79221;
+inline static constexpr unsigned int Class_3_F753AC2D295AF468_Struct_2_B48E974450D309CE_1_TypeDefinitionIndex = 40898;
 
 struct alignas(8) Class_3_F753AC2D295AF468_Struct_2_B48E974450D309CE_1
 {

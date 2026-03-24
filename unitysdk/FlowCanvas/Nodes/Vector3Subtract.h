@@ -3,12 +3,12 @@
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_3.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define FLOWCANVAS_NODES_VECTOR3SUBTRACT_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A178870)
-#define FLOWCANVAS_NODES_VECTOR3SUBTRACT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1788A0)
+#define FLOWCANVAS_NODES_VECTOR3SUBTRACT_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A7210E0)
+#define FLOWCANVAS_NODES_VECTOR3SUBTRACT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A721110)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int Vector3Subtract_TypeDefinitionIndex = 25608;
+	inline static constexpr unsigned int Vector3Subtract_TypeDefinitionIndex = 26688;
 
 	class Vector3Subtract : public ::FlowCanvas::Nodes::PureFunctionNode_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3>
 	{

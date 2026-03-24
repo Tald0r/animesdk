@@ -13,38 +13,38 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE455380)
-#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE455390)
-#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE4557B0)
-#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE455A70)
-#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE455A30)
+#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xD7DBF60)
+#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xD7DBF70)
+#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xD7DC390)
+#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xD7DC650)
+#define MOLEMOLE_CONFIGUIMAINCITY_CONFIGUIMAINCITY_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xD7DC610)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex = 45765;
+	inline static constexpr unsigned int ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex = 45452;
 
 	class ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigUIMainCity*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_OngoingConfig*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_OngoingConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D390);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_MissionTipsConfig*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_MissionTipsConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D398);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_MissionTipsConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40310);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_InteractConfig*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_InteractConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D3A0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ChallengeTipsConfig*>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ChallengeTipsConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D3A8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_InteractConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40318);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ViceCharacterConfig*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ViceCharacterConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D3B0);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ViceCharacterConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40320);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ChallengeTipsConfig*>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_ChallengeTipsConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40328);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_OngoingConfig*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::ConfigUIMainCity_OngoingConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUIMainCity_ConfigUIMainCity_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x40330);
 		}
 
 		::System::Void _ctor()

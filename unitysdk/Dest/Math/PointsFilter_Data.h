@@ -7,29 +7,29 @@
 namespace Dest::Math { class Rand; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define DEST_MATH_POINTSFILTER_DATA_BINARYSEARCH_1_OFFSET UNITYSDK_OFFSET(0x1A9DCF90)
-#define DEST_MATH_POINTSFILTER_DATA_BINARYSEARCH_OFFSET UNITYSDK_OFFSET(0x1A9DCEF0)
-#define DEST_MATH_POINTSFILTER_DATA_CALCGRIDINDICES_OFFSET UNITYSDK_OFFSET(0x1A9DD020)
-#define DEST_MATH_POINTSFILTER_DATA_FILTER_OFFSET UNITYSDK_OFFSET(0x1A9DD070)
-#define DEST_MATH_POINTSFILTER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9DCDD0)
+#define DEST_MATH_POINTSFILTER_DATA_BINARYSEARCH_1_OFFSET UNITYSDK_OFFSET(0x1AFCCC90)
+#define DEST_MATH_POINTSFILTER_DATA_BINARYSEARCH_OFFSET UNITYSDK_OFFSET(0x1AFCCBF0)
+#define DEST_MATH_POINTSFILTER_DATA_CALCGRIDINDICES_OFFSET UNITYSDK_OFFSET(0x1AFCCD20)
+#define DEST_MATH_POINTSFILTER_DATA_FILTER_OFFSET UNITYSDK_OFFSET(0x1AFCCD70)
+#define DEST_MATH_POINTSFILTER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFCCAB0)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int PointsFilter_Data_TypeDefinitionIndex = 31749;
+	inline static constexpr unsigned int PointsFilter_Data_TypeDefinitionIndex = 32703;
 
 	class PointsFilter_Data : public ::System::Object
 	{
 	public:
-		::Dest::Math::Rand* _rand; // 0x10
+		::Il2CppArray<::System::Collections::Generic::List_1<::System::Int32>*>* _grid; // 0x10
 		::Il2CppArray<::UnityEngine::Vector3>* _points; // 0x18
-		::Il2CppArray<::System::Collections::Generic::List_1<::System::Int32>*>* _grid; // 0x20
-		::System::Single _cellSize; // 0x28
-		::System::Int32 _cellsY; // 0x2C
-		::UnityEngine::Vector3 _min; // 0x30
-		::System::Int32 _cellsZ; // 0x3C
-		::System::Single _radius; // 0x40
-		::System::Int32 _cellsX; // 0x44
-		::UnityEngine::Vector3 _max; // 0x48
+		::Dest::Math::Rand* _rand; // 0x20
+		::System::Single _radius; // 0x28
+		::System::Int32 _cellsZ; // 0x2C
+		::System::Int32 _cellsY; // 0x30
+		::System::Single _cellSize; // 0x34
+		::UnityEngine::Vector3 _min; // 0x38
+		::UnityEngine::Vector3 _max; // 0x44
+		::System::Int32 _cellsX; // 0x50
 
 		::System::Void _ctor(::Il2CppArray<::UnityEngine::Vector3>* points, ::System::Single radius, ::Dest::Math::Rand* rand, ::Dest::Math::AAB3 aab)
 		{

@@ -4,12 +4,12 @@
 
 namespace PipelineCamera { class TimeBasedAlphaGenerator; }
 namespace System { template <typename T> class Func_1; }
-template <typename T> class Class_3_B60F6C2F126D2E26_10;
-template <typename T> class Class_3_B60F6C2F126D2E26_11;
+template <typename T> class Class_3_B60F6C2F126D2E26_6;
+template <typename T> class Class_3_B60F6C2F126D2E26_7;
 template <typename T> class Class_3_B60F6C2F126D2E26_8;
 template <typename T> class Class_3_B60F6C2F126D2E26_9;
 
-inline static constexpr unsigned int Class_1_9D53A6D74131DECD_TypeDefinitionIndex = 36520;
+inline static constexpr unsigned int Class_1_9D53A6D74131DECD_TypeDefinitionIndex = 51850;
 
 template <typename T>
 class Class_1_9D53A6D74131DECD : public ::System::Object

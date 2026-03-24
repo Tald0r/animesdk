@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigTempleLevelUpEventType_TypeDefinitionIndex = 58750;
+	inline static constexpr unsigned int ConfigTempleLevelUpEventType_TypeDefinitionIndex = 48507;
 
 	enum class ConfigTempleLevelUpEventType : ::System::Int32
 	{

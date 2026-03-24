@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/GraphicSettingProfileContextBase.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/AntialiasingMode.h"
 
-#define MOLEMOLE_ANTIALIASPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCD8B9D0)
+#define MOLEMOLE_ANTIALIASPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB8F8FB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AntiAliasProfileContext_TypeDefinitionIndex = 56680;
+	inline static constexpr unsigned int AntiAliasProfileContext_TypeDefinitionIndex = 44016;
 
 	class AntiAliasProfileContext : public ::MoleMole::GraphicSettingProfileContextBase
 	{

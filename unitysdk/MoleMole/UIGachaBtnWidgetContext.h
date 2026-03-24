@@ -4,23 +4,23 @@
 
 class Class_1_1DB8237DEAE11F14;
 
-#define MOLEMOLE_UIGACHABTNWIDGETCONTEXT__CTOR_1_OFFSET UNITYSDK_OFFSET(0xA9110A0)
-#define MOLEMOLE_UIGACHABTNWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA911090)
+#define MOLEMOLE_UIGACHABTNWIDGETCONTEXT__CTOR_1_OFFSET UNITYSDK_OFFSET(0xA937540)
+#define MOLEMOLE_UIGACHABTNWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA937530)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaBtnWidgetContext_TypeDefinitionIndex = 54208;
+	inline static constexpr unsigned int UIGachaBtnWidgetContext_TypeDefinitionIndex = 74507;
 
 	class UIGachaBtnWidgetContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::Class_1_1DB8237DEAE11F14* LoopTimer; // 0x28
 		::Il2CppArray<::MoleMole::UIGachaBtnWidgetContext*>* UIGroup; // 0x30
-		::System::Int32 GachaID; // 0x38
-		::System::Int32 GachaScheduleID; // 0x3C
-		::System::Int32 UIID; // 0x40
-		::System::Boolean IsUIGroup; // 0x44
-		::System::Int32 UIGroupID; // 0x48
+		::System::Int32 UIID; // 0x38
+		::System::Int32 GachaID; // 0x3C
+		::System::Int32 UIGroupID; // 0x40
+		::System::Int32 GachaScheduleID; // 0x44
+		::System::Boolean IsUIGroup; // 0x48
 
 		::System::Void _ctor(::System::Int32 gachaID, ::System::Int32 gachaScheduleID, ::System::Int32 uiID)
 		{

@@ -7,19 +7,19 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_012731B9818C2301_OFFSET UNITYSDK_OFFSET(0x7BFEB0)
-#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_B40AC10910D7B05A_OFFSET UNITYSDK_OFFSET(0x7BFDF0)
-#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_D8DECFDA79E64038_OFFSET UNITYSDK_OFFSET(0x7BFEA0)
-#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC__CCTOR_OFFSET UNITYSDK_OFFSET(0x18172720)
-#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC__CTOR_OFFSET UNITYSDK_OFFSET(0x7BFD50)
+#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_012731B9818C2301_OFFSET UNITYSDK_OFFSET(0x38FDD0)
+#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_B40AC10910D7B05A_OFFSET UNITYSDK_OFFSET(0x38FF10)
+#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_D8DECFDA79E64038_OFFSET UNITYSDK_OFFSET(0x38FDC0)
+#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC__CCTOR_OFFSET UNITYSDK_OFFSET(0xA7011C0)
+#define CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC__CTOR_OFFSET UNITYSDK_OFFSET(0x38FD20)
 
-inline static constexpr unsigned int Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC_TypeDefinitionIndex = 57253;
+inline static constexpr unsigned int Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC_TypeDefinitionIndex = 38469;
 
 struct alignas(4) Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC
 {
 	static ::UnityEngine::Color* StaticGet_Field_2_0()
 	{
-		return (::UnityEngine::Color*)Il2CppClass::FromTypeDefinitionIndex(Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC_TypeDefinitionIndex)->GetStaticField(0xE3A0);
+		return (::UnityEngine::Color*)Il2CppClass::FromTypeDefinitionIndex(Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC_TypeDefinitionIndex)->GetStaticField(0x109B0);
 	}
 	// static const ::System::Single Field_2_1; // 0x0
 	::Struct_2_028911ED0AD7AF8F Field_2_2; // 0x10
@@ -40,11 +40,6 @@ struct alignas(4) Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC__CCTOR_OFFSET))();
 	}
 
-	::System::Void Method_2_B40AC10910D7B05A(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_B40AC10910D7B05A_OFFSET))(this, a1, a2);
-	}
-
 	::System::Void Method_2_D8DECFDA79E64038(::MoleMole::Battle::Entity* a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_D8DECFDA79E64038_OFFSET))(this, a1);
@@ -53,5 +48,10 @@ struct alignas(4) Class_1_18722F4876563038_Struct_2_E076C6FF31662BFC
 	::System::Void Method_2_012731B9818C2301(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2, ::UnityEngine::Vector3 a3, ::UnityEngine::Vector3 a4, ::UnityEngine::Vector3 a5, ::UnityEngine::Vector3 a6, ::UnityEngine::Vector3 a7, ::UnityEngine::Vector3 a8)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_012731B9818C2301_OFFSET))(this, a1, a2, a3, a4, a5, a6, a7, a8);
+	}
+
+	::System::Void Method_2_B40AC10910D7B05A(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CLASS_1_18722F4876563038_STRUCT_2_E076C6FF31662BFC_METHOD_2_B40AC10910D7B05A_OFFSET))(this, a1, a2);
 	}
 };

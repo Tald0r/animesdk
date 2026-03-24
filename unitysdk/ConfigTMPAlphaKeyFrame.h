@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/ConfigTMPKeyFrameBase.h"
 
-#define CONFIGTMPALPHAKEYFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x9068E10)
+#define CONFIGTMPALPHAKEYFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x6F6CF40)
 
-inline static constexpr unsigned int ConfigTMPAlphaKeyFrame_TypeDefinitionIndex = 71366;
+inline static constexpr unsigned int ConfigTMPAlphaKeyFrame_TypeDefinitionIndex = 41521;
 
 class ConfigTMPAlphaKeyFrame : public ::ConfigTMPKeyFrameBase
 {

@@ -7,24 +7,24 @@ namespace MoleMole { class UIBabeltowerFightingBuffItemWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIDailyChallengeCardRowWidgetController; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_95EF0285C16C5E7C;
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
+template <typename T> class Class_3_CA832D813F452AD6;
 
-#define CLASS_2_6C576119380E31D1_METHOD_2_6C558EE56523ECD4_OFFSET UNITYSDK_OFFSET(0x79D2730)
-#define CLASS_2_6C576119380E31D1_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x79D2930)
-#define CLASS_2_6C576119380E31D1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x79D2A50)
-#define CLASS_2_6C576119380E31D1__CTOR_OFFSET UNITYSDK_OFFSET(0x79D2A40)
+#define CLASS_2_6C576119380E31D1_METHOD_2_6C558EE56523ECD4_OFFSET UNITYSDK_OFFSET(0x97853F0)
+#define CLASS_2_6C576119380E31D1_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x97855F0)
+#define CLASS_2_6C576119380E31D1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9785710)
+#define CLASS_2_6C576119380E31D1__CTOR_OFFSET UNITYSDK_OFFSET(0x9785700)
 
-inline static constexpr unsigned int Class_2_6C576119380E31D1_TypeDefinitionIndex = 49194;
+inline static constexpr unsigned int Class_2_6C576119380E31D1_TypeDefinitionIndex = 47554;
 
 class Class_2_6C576119380E31D1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_3_95EF0285C16C5E7C<::MoleMole::UIDailyChallengeCardRowWidgetController*>* Field_2_3; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x20
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIBabeltowerFightingBuffItemWidgetController*>* Field_2_0; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIBabeltowerFightingBuffItemWidgetController*>* Field_2_1; // 0x30
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIBabeltowerFightingBuffItemWidgetController*>* Field_2_2; // 0x38
+	::Class_3_647A206587033F4E<::MoleMole::UIBabeltowerFightingBuffItemWidgetController*>* Field_2_2; // 0x18
+	::Class_3_647A206587033F4E<::MoleMole::UIBabeltowerFightingBuffItemWidgetController*>* Field_2_0; // 0x20
+	::Class_3_CA832D813F452AD6<::MoleMole::UIDailyChallengeCardRowWidgetController*>* Field_2_3; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x30
+	::Class_3_647A206587033F4E<::MoleMole::UIBabeltowerFightingBuffItemWidgetController*>* Field_2_1; // 0x38
 
 	::System::Void _ctor()
 	{

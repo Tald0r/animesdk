@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityCombatPausePageController_PageState_TypeDefinitionIndex = 49611;
+	inline static constexpr unsigned int UIActivityCombatPausePageController_PageState_TypeDefinitionIndex = 72046;
 
 	enum class UIActivityCombatPausePageController_PageState : ::System::Int32
 	{

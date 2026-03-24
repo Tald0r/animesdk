@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_DISABLEINPLAYMODEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB082A0)
+#define SIRENIX_ODININSPECTOR_DISABLEINPLAYMODEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B114320)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int DisableInPlayModeAttribute_TypeDefinitionIndex = 7146;
+	inline static constexpr unsigned int DisableInPlayModeAttribute_TypeDefinitionIndex = 7150;
 
 	class DisableInPlayModeAttribute : public ::System::Attribute
 	{

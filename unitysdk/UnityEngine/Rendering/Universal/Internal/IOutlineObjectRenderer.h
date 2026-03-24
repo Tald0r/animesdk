@@ -1,11 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-
-namespace UnityEngine::Rendering { class CommandBuffer; }
+#include "unitysdk/UnityEngine/Rendering/Universal/Internal/EOutlineRenderType.h"
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int IOutlineObjectRenderer_TypeDefinitionIndex = 28914;
+	inline static constexpr unsigned int IOutlineObjectRenderer_TypeDefinitionIndex = 29865;
 
 	class IOutlineObjectRenderer
 	{

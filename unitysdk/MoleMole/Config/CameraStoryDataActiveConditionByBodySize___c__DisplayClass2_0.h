@@ -4,12 +4,12 @@
 #include "unitysdk/MoleMole/Config/CameraStoryDataActiveConditionByBodySize_BodySizePair.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_CAMERASTORYDATAACTIVECONDITIONBYBODYSIZE___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x654D940)
-#define MOLEMOLE_CONFIG_CAMERASTORYDATAACTIVECONDITIONBYBODYSIZE___C__DISPLAYCLASS2_0__PASS_B__0_OFFSET UNITYSDK_OFFSET(0x654D950)
+#define MOLEMOLE_CONFIG_CAMERASTORYDATAACTIVECONDITIONBYBODYSIZE___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x81E94B0)
+#define MOLEMOLE_CONFIG_CAMERASTORYDATAACTIVECONDITIONBYBODYSIZE___C__DISPLAYCLASS2_0__PASS_B__0_OFFSET UNITYSDK_OFFSET(0x81E94C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CameraStoryDataActiveConditionByBodySize___c__DisplayClass2_0_TypeDefinitionIndex = 49382;
+	inline static constexpr unsigned int CameraStoryDataActiveConditionByBodySize___c__DisplayClass2_0_TypeDefinitionIndex = 48944;
 
 	class CameraStoryDataActiveConditionByBodySize___c__DisplayClass2_0 : public ::System::Object
 	{

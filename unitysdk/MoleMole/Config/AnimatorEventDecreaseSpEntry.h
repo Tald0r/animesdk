@@ -4,18 +4,18 @@
 
 namespace MoleMole::Config { class AnimatorEvent; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTDECREASESPENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x9B518B0)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTDECREASESPENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x9B51950)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTDECREASESPENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xB460C10)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTDECREASESPENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xB460CB0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventDecreaseSpEntry_TypeDefinitionIndex = 58307;
+	inline static constexpr unsigned int AnimatorEventDecreaseSpEntry_TypeDefinitionIndex = 52853;
 
 	class AnimatorEventDecreaseSpEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{
 	public:
-		::System::Single Amount; // 0x58
-		::System::Single Percentage; // 0x5C
+		::System::Single Percentage; // 0x58
+		::System::Single Amount; // 0x5C
 
 		::System::Void _ctor()
 		{

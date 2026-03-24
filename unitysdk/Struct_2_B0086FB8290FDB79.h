@@ -2,22 +2,22 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_0_16E4307DCC419505_211;
+class Class_0_16E4307DCC419505_162;
 class Class_1_A312CF7E24F3D126;
-class Class_1_FD893FD36F6A3A6D_1;
+class Class_1_FD893FD36F6A3A6D_2;
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define STRUCT_2_B0086FB8290FDB79_METHOD_2_016E85CEDEE00FF4_OFFSET UNITYSDK_OFFSET(0x33F5B0)
-#define STRUCT_2_B0086FB8290FDB79_METHOD_2_60BD0FBACAB1137B_OFFSET UNITYSDK_OFFSET(0x7FDAC10)
-#define STRUCT_2_B0086FB8290FDB79__CTOR_OFFSET UNITYSDK_OFFSET(0x33F4D0)
+#define STRUCT_2_B0086FB8290FDB79_METHOD_2_016E85CEDEE00FF4_OFFSET UNITYSDK_OFFSET(0x3898A0)
+#define STRUCT_2_B0086FB8290FDB79_METHOD_2_60BD0FBACAB1137B_OFFSET UNITYSDK_OFFSET(0xA267760)
+#define STRUCT_2_B0086FB8290FDB79__CTOR_OFFSET UNITYSDK_OFFSET(0x3897C0)
 
-inline static constexpr unsigned int Struct_2_B0086FB8290FDB79_TypeDefinitionIndex = 65324;
+inline static constexpr unsigned int Struct_2_B0086FB8290FDB79_TypeDefinitionIndex = 76462;
 
 struct alignas(8) Struct_2_B0086FB8290FDB79
 {
 	::Class_1_A312CF7E24F3D126* Field_2_0; // 0x10
-	::System::Collections::Generic::List_1<::Class_1_FD893FD36F6A3A6D_1*>* Field_2_1; // 0x18
+	::System::Collections::Generic::List_1<::Class_1_FD893FD36F6A3A6D_2*>* Field_2_1; // 0x18
 	::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::Int32>* Field_2_2; // 0x20
 	::System::Boolean Field_2_3; // 0x28
 
@@ -31,8 +31,8 @@ struct alignas(8) Struct_2_B0086FB8290FDB79
 		return ((::Struct_2_B0086FB8290FDB79(*)(::Class_1_A312CF7E24F3D126*))((::PBYTE)hIl2Cpp + STRUCT_2_B0086FB8290FDB79_METHOD_2_60BD0FBACAB1137B_OFFSET))(a1);
 	}
 
-	::Class_0_16E4307DCC419505_211* Method_2_016E85CEDEE00FF4()
+	::Class_0_16E4307DCC419505_162* Method_2_016E85CEDEE00FF4()
 	{
-		return ((::Class_0_16E4307DCC419505_211*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_B0086FB8290FDB79_METHOD_2_016E85CEDEE00FF4_OFFSET))(this);
+		return ((::Class_0_16E4307DCC419505_162*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_B0086FB8290FDB79_METHOD_2_016E85CEDEE00FF4_OFFSET))(this);
 	}
 };

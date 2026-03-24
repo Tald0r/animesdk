@@ -4,7 +4,7 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-inline static constexpr unsigned int Class_3_0AECE78A0888504E_Struct_2_CD6C81A54E1E6EBF_TypeDefinitionIndex = 77688;
+inline static constexpr unsigned int Class_3_0AECE78A0888504E_Struct_2_CD6C81A54E1E6EBF_TypeDefinitionIndex = 65742;
 
 struct alignas(8) Class_3_0AECE78A0888504E_Struct_2_CD6C81A54E1E6EBF
 {

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define FLATBUFFERS_FLATBUFFERCONSTANTS_FLATBUFFERS_2_0_0_OFFSET UNITYSDK_OFFSET(0x1ABD19C0)
+#define FLATBUFFERS_FLATBUFFERCONSTANTS_FLATBUFFERS_2_0_0_OFFSET UNITYSDK_OFFSET(0x1B1D9F70)
 
 namespace FlatBuffers
 {
-	inline static constexpr unsigned int FlatBufferConstants_TypeDefinitionIndex = 8719;
+	inline static constexpr unsigned int FlatBufferConstants_TypeDefinitionIndex = 8730;
 
 	class FlatBufferConstants : public ::System::Object
 	{

@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/FlowCanvas/MonsterPositionDuty.h"
 #include "unitysdk/MoleMole/FlowCanvas/Nodes/MonsterCreateData.h"
 
-#define MOLEMOLE_FLOWCANVAS_LEVELZEROMONSTERCREATEDATABASE__CTOR_OFFSET UNITYSDK_OFFSET(0xA5DED00)
+#define MOLEMOLE_FLOWCANVAS_LEVELZEROMONSTERCREATEDATABASE__CTOR_OFFSET UNITYSDK_OFFSET(0xA7C8B50)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int LevelZeroMonsterCreateDataBase_TypeDefinitionIndex = 55101;
+	inline static constexpr unsigned int LevelZeroMonsterCreateDataBase_TypeDefinitionIndex = 78290;
 
 	class LevelZeroMonsterCreateDataBase : public ::MoleMole::FlowCanvas::Nodes::MonsterCreateData
 	{

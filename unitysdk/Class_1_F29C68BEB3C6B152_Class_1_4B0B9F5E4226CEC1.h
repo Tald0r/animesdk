@@ -6,7 +6,7 @@
 namespace System { template <typename T1, typename T2> class Action_2; }
 template <typename T> class Class_2_75527B5277EE1A90;
 
-inline static constexpr unsigned int Class_1_F29C68BEB3C6B152_Class_1_4B0B9F5E4226CEC1_TypeDefinitionIndex = 74242;
+inline static constexpr unsigned int Class_1_F29C68BEB3C6B152_Class_1_4B0B9F5E4226CEC1_TypeDefinitionIndex = 75418;
 
 template <typename TWidget, typename TValue>
 class Class_1_F29C68BEB3C6B152_Class_1_4B0B9F5E4226CEC1 : public ::System::Object

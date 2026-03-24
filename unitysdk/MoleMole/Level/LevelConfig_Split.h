@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_759B08C41000F376.h"
+#include "unitysdk/Enum_3_7590C8C40FF831C9.h"
 #include "unitysdk/Foundation/AssetPath.h"
 #include "unitysdk/MoleMole/Config/TerrainMatType.h"
 #include "unitysdk/MoleMole/GameplayTag.h"
@@ -30,17 +30,17 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT_ONCONVERTTOSPLIT_OFFSET UNITYSDK_OFFSET(0xE1101A0)
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT_ONMERGESPLIT_OFFSET UNITYSDK_OFFSET(0xE1103B0)
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT_ONRUNTIMEPREPARE_OFFSET UNITYSDK_OFFSET(0xE10F840)
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT__CTOR_OFFSET UNITYSDK_OFFSET(0xE1150A0)
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT___BASE_ONCONVERTTOSPLIT_OFFSET UNITYSDK_OFFSET(0xE115A50)
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT___BASE_ONMERGESPLIT_OFFSET UNITYSDK_OFFSET(0xE115A60)
-#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT___BASE_ONRUNTIMEPREPARE_OFFSET UNITYSDK_OFFSET(0xE115AD0)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT_ONCONVERTTOSPLIT_OFFSET UNITYSDK_OFFSET(0x7A74C00)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT_ONMERGESPLIT_OFFSET UNITYSDK_OFFSET(0x7A74E10)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT_ONRUNTIMEPREPARE_OFFSET UNITYSDK_OFFSET(0x7A742A0)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT__CTOR_OFFSET UNITYSDK_OFFSET(0x7A79AB0)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT___BASE_ONCONVERTTOSPLIT_OFFSET UNITYSDK_OFFSET(0x7A7A460)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT___BASE_ONMERGESPLIT_OFFSET UNITYSDK_OFFSET(0x7A7A470)
+#define MOLEMOLE_LEVEL_LEVELCONFIG_SPLIT___BASE_ONRUNTIMEPREPARE_OFFSET UNITYSDK_OFFSET(0x7A7A4E0)
 
 namespace MoleMole::Level
 {
-	inline static constexpr unsigned int LevelConfig_Split_TypeDefinitionIndex = 69050;
+	inline static constexpr unsigned int LevelConfig_Split_TypeDefinitionIndex = 76327;
 
 	class LevelConfig_Split : public ::MoleMole::NapSplitSerialized_BranchScriptableObject
 	{
@@ -51,7 +51,7 @@ namespace MoleMole::Level
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Level::LevelConfig_SceneMoveGroup*>* sceneMoveGroup; // 0x70
 		::System::Collections::Generic::List_1<::MoleMole::Level::LevelConfig_RankingItemConfig>* resultRankingItemConfig; // 0x78
 		::System::Collections::Generic::Dictionary_2<::MoleMole::MissionResult, ::System::Int32>* LongFightMissionResultTypeReflect; // 0x80
-		::System::Collections::Generic::List_1<::Enum_3_759B08C41000F376>* ApplyRatingQuestTypes; // 0x88
+		::System::Collections::Generic::List_1<::Enum_3_7590C8C40FF831C9>* ApplyRatingQuestTypes; // 0x88
 		::System::Collections::Generic::Dictionary_2<::MoleMole::MissionResult, ::System::Int32>* LongFightMissionResultWithFinish; // 0x90
 		::System::Collections::Generic::List_1<::System::Int32>* SupportAreaCullingBattleEventIDs; // 0x98
 		::System::Collections::Generic::List_1<::MoleMole::GameplayTag>* NotSupportAreaCullingEntityTags; // 0xA0

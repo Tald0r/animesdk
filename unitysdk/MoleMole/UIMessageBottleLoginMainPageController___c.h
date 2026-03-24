@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMESSAGEBOTTLELOGINMAINPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC13DBA0)
-#define MOLEMOLE_UIMESSAGEBOTTLELOGINMAINPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC13DBE0)
-#define MOLEMOLE_UIMESSAGEBOTTLELOGINMAINPAGECONTROLLER___C__TRIGGERQUESTPROGRESSKICK_B__13_0_OFFSET UNITYSDK_OFFSET(0xC13DBF0)
+#define MOLEMOLE_UIMESSAGEBOTTLELOGINMAINPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD785BF0)
+#define MOLEMOLE_UIMESSAGEBOTTLELOGINMAINPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD785C30)
+#define MOLEMOLE_UIMESSAGEBOTTLELOGINMAINPAGECONTROLLER___C__TRIGGERQUESTPROGRESSKICK_B__13_0_OFFSET UNITYSDK_OFFSET(0xD785C40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMessageBottleLoginMainPageController___c_TypeDefinitionIndex = 45940;
+	inline static constexpr unsigned int UIMessageBottleLoginMainPageController___c_TypeDefinitionIndex = 55027;
 
 	class UIMessageBottleLoginMainPageController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIMessageBottleLoginMainPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIMessageBottleLoginMainPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMessageBottleLoginMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x3AB10);
+			return (::MoleMole::UIMessageBottleLoginMainPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMessageBottleLoginMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x3D860);
 		}
 		static ::System::Action** StaticGet___9__13_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMessageBottleLoginMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x3AB18);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMessageBottleLoginMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x3D868);
 		}
 
 		static ::System::Void _cctor()

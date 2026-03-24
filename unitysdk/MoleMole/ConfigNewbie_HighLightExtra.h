@@ -4,11 +4,11 @@
 #include "unitysdk/MoleMole/ConfigNewbie_TargetPath_ExtraType.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIGNEWBIE_HIGHLIGHTEXTRA__CTOR_OFFSET UNITYSDK_OFFSET(0xE82DF60)
+#define MOLEMOLE_CONFIGNEWBIE_HIGHLIGHTEXTRA__CTOR_OFFSET UNITYSDK_OFFSET(0xB482870)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigNewbie_HighLightExtra_TypeDefinitionIndex = 54130;
+	inline static constexpr unsigned int ConfigNewbie_HighLightExtra_TypeDefinitionIndex = 73600;
 
 	class ConfigNewbie_HighLightExtra : public ::System::Object
 	{

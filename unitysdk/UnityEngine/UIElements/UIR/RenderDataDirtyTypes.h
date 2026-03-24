@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UIElements::UIR
 {
-	inline static constexpr unsigned int RenderDataDirtyTypes_TypeDefinitionIndex = 23910;
+	inline static constexpr unsigned int RenderDataDirtyTypes_TypeDefinitionIndex = 24593;
 
 	enum class RenderDataDirtyTypes : ::System::Int32
 	{

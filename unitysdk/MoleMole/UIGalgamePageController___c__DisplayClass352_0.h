@@ -5,12 +5,12 @@
 namespace MoleMole { class UIGalgamePageController; }
 namespace UnityEngine { class CanvasGroup; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS352_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFA40F0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS352_0__PLAYFADEINSWITCHSCENE_B__1_OFFSET UNITYSDK_OFFSET(0xBFA4100)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS352_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9BDF7C0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS352_0__PLAYFADEINSWITCHSCENE_B__1_OFFSET UNITYSDK_OFFSET(0x9BDF7D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass352_0_TypeDefinitionIndex = 54663;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass352_0_TypeDefinitionIndex = 58910;
 
 	class UIGalgamePageController___c__DisplayClass352_0 : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ParticleSystemVertexStreams_TypeDefinitionIndex = 23714;
+	inline static constexpr unsigned int ParticleSystemVertexStreams_TypeDefinitionIndex = 24397;
 
 	enum class ParticleSystemVertexStreams : ::System::Int32
 	{

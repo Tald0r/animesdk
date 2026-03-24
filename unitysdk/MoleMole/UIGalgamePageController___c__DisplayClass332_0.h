@@ -6,12 +6,12 @@ namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Object; }
 namespace UnityEngine { class Sprite; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS332_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFA4080)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS332_0__LOADIMAGE_B__0_OFFSET UNITYSDK_OFFSET(0xBFA4090)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS332_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9BDF750)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS332_0__LOADIMAGE_B__0_OFFSET UNITYSDK_OFFSET(0x9BDF760)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass332_0_TypeDefinitionIndex = 54673;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass332_0_TypeDefinitionIndex = 58922;
 
 	class UIGalgamePageController___c__DisplayClass332_0 : public ::System::Object
 	{

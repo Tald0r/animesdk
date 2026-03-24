@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LongPressTriggerStateType_TypeDefinitionIndex = 47429;
+	inline static constexpr unsigned int LongPressTriggerStateType_TypeDefinitionIndex = 61693;
 
 	enum class LongPressTriggerStateType : ::System::Int32
 	{

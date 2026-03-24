@@ -7,20 +7,20 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTINTERACTIONRPC_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6E1D5D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTINTERACTIONRPC__CTOR_OFFSET UNITYSDK_OFFSET(0x6E1D700)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTINTERACTIONRPC__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x6E1D720)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTINTERACTIONRPC_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6E87CC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTINTERACTIONRPC__CTOR_OFFSET UNITYSDK_OFFSET(0x6E87DF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_MANUALSTARTINTERACTIONRPC__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x6E87E10)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_ManualStartInteractionRpc_TypeDefinitionIndex = 40560;
+	inline static constexpr unsigned int LD_AbyssS2_ManualStartInteractionRpc_TypeDefinitionIndex = 68165;
 
 	class LD_AbyssS2_ManualStartInteractionRpc : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _error; // 0xA8
-		::FlowCanvas::FlowOutput* _output; // 0xB0
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* _interactionObject; // 0xB8
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* _interactionObject; // 0xA8
+		::FlowCanvas::FlowOutput* _error; // 0xB0
+		::FlowCanvas::FlowOutput* _output; // 0xB8
 
 		::System::Void _ctor()
 		{

@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAINCITYSWITCHROLEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x92AB000)
-#define MOLEMOLE_UIMAINCITYSWITCHROLEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x92AB040)
-#define MOLEMOLE_UIMAINCITYSWITCHROLEPAGECONTROLLER___C__ONPRECHECKSWITCHAVATAR_B__28_0_OFFSET UNITYSDK_OFFSET(0x92AB050)
+#define MOLEMOLE_UIMAINCITYSWITCHROLEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAF73E30)
+#define MOLEMOLE_UIMAINCITYSWITCHROLEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAF73E70)
+#define MOLEMOLE_UIMAINCITYSWITCHROLEPAGECONTROLLER___C__ONPRECHECKSWITCHAVATAR_B__28_0_OFFSET UNITYSDK_OFFSET(0xAF73E80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCitySwitchRolePageController___c_TypeDefinitionIndex = 72643;
+	inline static constexpr unsigned int UIMainCitySwitchRolePageController___c_TypeDefinitionIndex = 74938;
 
 	class UIMainCitySwitchRolePageController___c : public ::System::Object
 	{
 	public:
 		static ::System::Action** StaticGet___9__28_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMainCitySwitchRolePageController___c_TypeDefinitionIndex)->GetStaticField(0x36C80);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMainCitySwitchRolePageController___c_TypeDefinitionIndex)->GetStaticField(0x39920);
 		}
 		static ::MoleMole::UIMainCitySwitchRolePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIMainCitySwitchRolePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMainCitySwitchRolePageController___c_TypeDefinitionIndex)->GetStaticField(0x36C88);
+			return (::MoleMole::UIMainCitySwitchRolePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMainCitySwitchRolePageController___c_TypeDefinitionIndex)->GetStaticField(0x39928);
 		}
 
 		static ::System::Void _cctor()

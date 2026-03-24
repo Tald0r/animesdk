@@ -6,20 +6,20 @@ namespace MiHoYo::SDK { class ConfirmWithJoypad; }
 namespace MiHoYo::SDK { class ConfirmWithJoypad_OnConfirmDelegate; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_CONFIRMWITHJOYPAD___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18873F30)
-#define MIHOYO_SDK_CONFIRMWITHJOYPAD___C__DISPLAYCLASS39_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18873F40)
+#define MIHOYO_SDK_CONFIRMWITHJOYPAD___C__DISPLAYCLASS39_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18A8D840)
+#define MIHOYO_SDK_CONFIRMWITHJOYPAD___C__DISPLAYCLASS39_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18A8D850)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ConfirmWithJoypad___c__DisplayClass39_0_TypeDefinitionIndex = 18014;
+	inline static constexpr unsigned int ConfirmWithJoypad___c__DisplayClass39_0_TypeDefinitionIndex = 18525;
 
 	class ConfirmWithJoypad___c__DisplayClass39_0 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::ConfirmWithJoypad_OnConfirmDelegate* callback; // 0x10
-		::System::String* strAcceptBtnText; // 0x18
-		::System::String* strCancelButtonText; // 0x20
-		::System::String* strContent; // 0x28
+		::System::String* strAcceptBtnText; // 0x10
+		::System::String* strContent; // 0x18
+		::MiHoYo::SDK::ConfirmWithJoypad_OnConfirmDelegate* callback; // 0x20
+		::System::String* strCancelButtonText; // 0x28
 
 		::System::Void _ctor()
 		{

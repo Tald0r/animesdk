@@ -4,11 +4,11 @@
 
 namespace NodeGraph { class NodeGraphBase; }
 
-#define NODEGRAPH_GRAPHNODEFLOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6ED9E80)
+#define NODEGRAPH_GRAPHNODEFLOW__CTOR_OFFSET UNITYSDK_OFFSET(0x7862C20)
 
 namespace NodeGraph
 {
-	inline static constexpr unsigned int GraphNodeFlow_TypeDefinitionIndex = 77149;
+	inline static constexpr unsigned int GraphNodeFlow_TypeDefinitionIndex = 72764;
 
 	class GraphNodeFlow : public ::NodeGraph::GraphNodeBase
 	{

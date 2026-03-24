@@ -7,19 +7,19 @@ class Class_1_3D452FA003157C19_Class_1_3B777373E9B193FC;
 class Class_1_663AFC2250EC21C9;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGAVATARDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0xE448760)
-#define MOLEMOLE_CONFIGAVATARDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE448810)
+#define MOLEMOLE_CONFIGAVATARDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0xD7CF4A0)
+#define MOLEMOLE_CONFIGAVATARDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xD7CF550)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigAvatarDynamicCheckTreeNode_TypeDefinitionIndex = 46443;
+	inline static constexpr unsigned int ConfigAvatarDynamicCheckTreeNode_TypeDefinitionIndex = 59388;
 
 	class ConfigAvatarDynamicCheckTreeNode : public ::MoleMole::ConfigBaseDynamicCheckTreeNode
 	{
 	public:
 		::Il2CppArray<::System::String*>* AnimatorZoneTags; // 0x10
-		::MoleMole::AvatarDynamicCheckType CheckType; // 0x18
-		::System::Int32 AvatarCount; // 0x1C
+		::System::Int32 AvatarCount; // 0x18
+		::MoleMole::AvatarDynamicCheckType CheckType; // 0x1C
 
 		::System::Void _ctor()
 		{

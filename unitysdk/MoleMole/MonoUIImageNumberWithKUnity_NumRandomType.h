@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoUIImageNumberWithKUnity_NumRandomType_TypeDefinitionIndex = 48604;
+	inline static constexpr unsigned int MonoUIImageNumberWithKUnity_NumRandomType_TypeDefinitionIndex = 71395;
 
 	enum class MonoUIImageNumberWithKUnity_NumRandomType : ::System::Int32
 	{

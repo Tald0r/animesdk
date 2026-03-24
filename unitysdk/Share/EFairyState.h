@@ -3,12 +3,12 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EFairyState_TypeDefinitionIndex = 11701;
+	inline static constexpr unsigned int EFairyState_TypeDefinitionIndex = 12156;
 
 	enum class EFairyState : ::System::Byte
 	{
+		Close = 0x1,
 		EnumCount = 0x2,
 		Unlock = 0x0,
-		Close = 0x1,
 	};
 }

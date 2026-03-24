@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IHashUpdater_TypeDefinitionIndex = 69351;
+	inline static constexpr unsigned int IHashUpdater_TypeDefinitionIndex = 48512;
 
 	class IHashUpdater
 	{

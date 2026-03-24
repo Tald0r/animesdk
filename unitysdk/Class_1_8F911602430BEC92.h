@@ -3,19 +3,19 @@
 #include "unitysdk/Struct_2_46F3CFD626EFE3F5.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_8F911602430BEC92_METHOD_1_6249445325A6227E_OFFSET UNITYSDK_OFFSET(0x917B870)
-#define CLASS_1_8F911602430BEC92__CTOR_OFFSET UNITYSDK_OFFSET(0x917BE80)
+#define CLASS_1_8F911602430BEC92_METHOD_1_6249445325A6227E_OFFSET UNITYSDK_OFFSET(0xB3D1760)
+#define CLASS_1_8F911602430BEC92__CTOR_OFFSET UNITYSDK_OFFSET(0xB3D1D70)
 
-inline static constexpr unsigned int Class_1_8F911602430BEC92_TypeDefinitionIndex = 38646;
+inline static constexpr unsigned int Class_1_8F911602430BEC92_TypeDefinitionIndex = 39857;
 
 class Class_1_8F911602430BEC92 : public ::System::Object
 {
 public:
-	::System::Int32 Field_1_2; // 0x10
+	::System::Int32 Field_1_4; // 0x10
 	::System::Int32 Field_1_3; // 0x14
 	::System::Int16 Field_1_0; // 0x18
 	::System::Int16 Field_1_1; // 0x1A
-	::System::Int32 Field_1_4; // 0x1C
+	::System::Int32 Field_1_2; // 0x1C
 
 	::System::Void _ctor()
 	{

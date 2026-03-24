@@ -7,34 +7,34 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__ADDLOCKTAB_B__40_1_OFFSET UNITYSDK_OFFSET(0x1664CF10)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__ADDLOCKTAB_B__40_3_OFFSET UNITYSDK_OFFSET(0x1664CF20)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1664CEC0)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1664CF00)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__GETORDEREDENABLEDTABS_B__69_1_OFFSET UNITYSDK_OFFSET(0x1664CF30)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__ADDLOCKTAB_B__40_1_OFFSET UNITYSDK_OFFSET(0x1853B150)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__ADDLOCKTAB_B__40_3_OFFSET UNITYSDK_OFFSET(0x1853B160)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1853B100)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1853B140)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP___C__GETORDEREDENABLEDTABS_B__69_1_OFFSET UNITYSDK_OFFSET(0x1853B170)
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UITabButtonGroup___c_TypeDefinitionIndex = 70751;
+	inline static constexpr unsigned int UITabButtonGroup___c_TypeDefinitionIndex = 42576;
 
 	class UITabButtonGroup___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::System::Int32>** StaticGet___9__40_1()
 		{
-			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x37040);
-		}
-		static ::UnityEngine::UI::Extension::UITabButtonGroup___c** StaticGet___9()
-		{
-			return (::UnityEngine::UI::Extension::UITabButtonGroup___c**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x37048);
-		}
-		static ::System::Func_2<::UnityEngine::UI::Extension::UITabButton*, ::System::Boolean>** StaticGet___9__69_1()
-		{
-			return (::System::Func_2<::UnityEngine::UI::Extension::UITabButton*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x37050);
+			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x39EC0);
 		}
 		static ::System::Action** StaticGet___9__40_3()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x37058);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x39EC8);
+		}
+		static ::System::Func_2<::UnityEngine::UI::Extension::UITabButton*, ::System::Boolean>** StaticGet___9__69_1()
+		{
+			return (::System::Func_2<::UnityEngine::UI::Extension::UITabButton*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x39ED0);
+		}
+		static ::UnityEngine::UI::Extension::UITabButtonGroup___c** StaticGet___9()
+		{
+			return (::UnityEngine::UI::Extension::UITabButtonGroup___c**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup___c_TypeDefinitionIndex)->GetStaticField(0x39ED8);
 		}
 
 		static ::System::Void _cctor()

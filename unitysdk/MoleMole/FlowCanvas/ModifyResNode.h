@@ -4,19 +4,19 @@
 
 namespace MoleMole::FlowCanvas { class ModifyItem; }
 
-#define MOLEMOLE_FLOWCANVAS_MODIFYRESNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA5DED60)
-#define MOLEMOLE_FLOWCANVAS_MODIFYRESNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA5DEDD0)
+#define MOLEMOLE_FLOWCANVAS_MODIFYRESNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA7C8BB0)
+#define MOLEMOLE_FLOWCANVAS_MODIFYRESNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA7C8C20)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ModifyResNode_TypeDefinitionIndex = 73697;
+	inline static constexpr unsigned int ModifyResNode_TypeDefinitionIndex = 38323;
 
 	class ModifyResNode : public ::FlowCanvas::Nodes::CallableActionNode_2<::System::Boolean, ::MoleMole::FlowCanvas::ModifyItem*>
 	{
 	public:
 		static ::System::Boolean* StaticGet_globalShowTips()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ModifyResNode_TypeDefinitionIndex)->GetStaticField(0x11EB0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(ModifyResNode_TypeDefinitionIndex)->GetStaticField(0x11E80);
 		}
 
 		::System::Void _ctor()

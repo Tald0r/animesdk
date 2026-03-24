@@ -8,21 +8,21 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE476930)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE4767E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE__CTOR_OFFSET UNITYSDK_OFFSET(0xE476CD0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xE476CF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FE8C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xD7FE770)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FEC60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDISENTITYALIVE__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xD7FEC80)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDIsEntityAlive_TypeDefinitionIndex = 63329;
+	inline static constexpr unsigned int LDIsEntityAlive_TypeDefinitionIndex = 49244;
 
 	class LDIsEntityAlive : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::FlowOutput* trueOutput; // 0xA8
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* inputValue; // 0xB0
-		::FlowCanvas::FlowOutput* output; // 0xB8
+		::FlowCanvas::FlowOutput* output; // 0xB0
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* inputValue; // 0xB8
 		::FlowCanvas::FlowInput* input; // 0xC0
 		::FlowCanvas::FlowOutput* falseOutput; // 0xC8
 

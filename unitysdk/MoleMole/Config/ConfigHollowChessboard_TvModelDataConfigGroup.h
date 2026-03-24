@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_TvModelDataConfigGroup_TypeDefinitionIndex = 59137;
+	inline static constexpr unsigned int ConfigHollowChessboard_TvModelDataConfigGroup_TypeDefinitionIndex = 79817;
 
 	struct alignas(8) ConfigHollowChessboard_TvModelDataConfigGroup
 	{

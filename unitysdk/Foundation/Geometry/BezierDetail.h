@@ -6,12 +6,12 @@
 
 namespace Foundation::Geometry { template <typename T> class IBezierControlPointPolicy_1; }
 
-#define FOUNDATION_GEOMETRY_BEZIERDETAIL_BERNSTEIN_OFFSET UNITYSDK_OFFSET(0x1B119500)
-#define FOUNDATION_GEOMETRY_BEZIERDETAIL_BREAKPARAM_OFFSET UNITYSDK_OFFSET(0x1B1195F0)
+#define FOUNDATION_GEOMETRY_BEZIERDETAIL_BERNSTEIN_OFFSET UNITYSDK_OFFSET(0x1B730880)
+#define FOUNDATION_GEOMETRY_BEZIERDETAIL_BREAKPARAM_OFFSET UNITYSDK_OFFSET(0x1B730970)
 
 namespace Foundation::Geometry
 {
-	inline static constexpr unsigned int BezierDetail_TypeDefinitionIndex = 9131;
+	inline static constexpr unsigned int BezierDetail_TypeDefinitionIndex = 8864;
 
 	class BezierDetail : public ::System::Object
 	{

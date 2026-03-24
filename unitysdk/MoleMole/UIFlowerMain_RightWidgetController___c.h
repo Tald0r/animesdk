@@ -10,69 +10,69 @@ namespace System { template <typename T> class Func_1; }
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 template <typename T1, typename T2> class Class_1_ABDEC71785FA04E7_Class_3_B6136C2F127116DF_5;
 
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__BUILDDATABINDING_B__9_13_OFFSET UNITYSDK_OFFSET(0xA356D10)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA356CC0)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA356D00)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_0_OFFSET UNITYSDK_OFFSET(0xA3573F0)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_1_OFFSET UNITYSDK_OFFSET(0xA356E70)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_2_OFFSET UNITYSDK_OFFSET(0xA356F60)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_3_OFFSET UNITYSDK_OFFSET(0xA3570B0)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_4_OFFSET UNITYSDK_OFFSET(0xA357150)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_5_OFFSET UNITYSDK_OFFSET(0xA357240)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_6_OFFSET UNITYSDK_OFFSET(0xA357390)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_7_OFFSET UNITYSDK_OFFSET(0xA357700)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_8_OFFSET UNITYSDK_OFFSET(0xA357850)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__BUILDDATABINDING_B__9_13_OFFSET UNITYSDK_OFFSET(0xD120CE0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD120C90)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD120CD0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_0_OFFSET UNITYSDK_OFFSET(0xD1213C0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_1_OFFSET UNITYSDK_OFFSET(0xD120E40)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_2_OFFSET UNITYSDK_OFFSET(0xD120F30)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_3_OFFSET UNITYSDK_OFFSET(0xD121080)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_4_OFFSET UNITYSDK_OFFSET(0xD121120)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_5_OFFSET UNITYSDK_OFFSET(0xD121210)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_6_OFFSET UNITYSDK_OFFSET(0xD121360)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_7_OFFSET UNITYSDK_OFFSET(0xD1216D0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__INITFILTER_B__24_8_OFFSET UNITYSDK_OFFSET(0xD121820)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex = 57317;
+	inline static constexpr unsigned int UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex = 50331;
 
 	class UIFlowerMain_RightWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__24_7()
+		static ::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>** StaticGet___9__24_3()
 		{
-			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40270);
-		}
-		static ::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>** StaticGet___9__24_6()
-		{
-			return (::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40278);
-		}
-		static ::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>** StaticGet___9__24_1()
-		{
-			return (::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40280);
-		}
-		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__24_2()
-		{
-			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40288);
-		}
-		static ::MoleMole::UIFlowerMain_RightWidgetController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIFlowerMain_RightWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40290);
-		}
-		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__24_5()
-		{
-			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40298);
-		}
-		static ::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>** StaticGet___9__24_0()
-		{
-			return (::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x402A0);
-		}
-		static ::Class_1_ABDEC71785FA04E7_Class_3_B6136C2F127116DF_5<::System::UInt32, ::Class_2_AF4036FBC298303A*>** StaticGet___9__9_13()
-		{
-			return (::Class_1_ABDEC71785FA04E7_Class_3_B6136C2F127116DF_5<::System::UInt32, ::Class_2_AF4036FBC298303A*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x402A8);
-		}
-		static ::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>** StaticGet___9__24_4()
-		{
-			return (::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x402B0);
+			return (::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45210);
 		}
 		static ::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>** StaticGet___9__24_8()
 		{
-			return (::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x402B8);
+			return (::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45218);
 		}
-		static ::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>** StaticGet___9__24_3()
+		static ::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>** StaticGet___9__24_6()
 		{
-			return (::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x402C0);
+			return (::System::Func_1<::System::Collections::Generic::IList_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45220);
+		}
+		static ::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>** StaticGet___9__24_1()
+		{
+			return (::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45228);
+		}
+		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__24_2()
+		{
+			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45230);
+		}
+		static ::Class_1_ABDEC71785FA04E7_Class_3_B6136C2F127116DF_5<::System::UInt32, ::Class_2_AF4036FBC298303A*>** StaticGet___9__9_13()
+		{
+			return (::Class_1_ABDEC71785FA04E7_Class_3_B6136C2F127116DF_5<::System::UInt32, ::Class_2_AF4036FBC298303A*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45238);
+		}
+		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__24_5()
+		{
+			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45240);
+		}
+		static ::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>** StaticGet___9__24_4()
+		{
+			return (::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45248);
+		}
+		static ::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>** StaticGet___9__24_0()
+		{
+			return (::System::Func_2<::MoleMole::UIFlowerMainListWidgetController_Data*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45250);
+		}
+		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__24_7()
+		{
+			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45258);
+		}
+		static ::MoleMole::UIFlowerMain_RightWidgetController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIFlowerMain_RightWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFlowerMain_RightWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x45260);
 		}
 
 		static ::System::Void _cctor()

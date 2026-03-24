@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int CurvyOrientation_TypeDefinitionIndex = 35620;
+	inline static constexpr unsigned int CurvyOrientation_TypeDefinitionIndex = 36640;
 
 	enum class CurvyOrientation : ::System::Int32
 	{

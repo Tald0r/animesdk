@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CGRuntimeUnitLoadType_TypeDefinitionIndex = 40259;
+	inline static constexpr unsigned int CGRuntimeUnitLoadType_TypeDefinitionIndex = 78809;
 
 	enum class CGRuntimeUnitLoadType : ::System::Int32
 	{
-		Model = 1,
 		Default = 0,
+		Model = 1,
 	};
 }

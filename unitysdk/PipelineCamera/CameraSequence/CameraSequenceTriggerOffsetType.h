@@ -3,7 +3,7 @@
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int CameraSequenceTriggerOffsetType_TypeDefinitionIndex = 34670;
+	inline static constexpr unsigned int CameraSequenceTriggerOffsetType_TypeDefinitionIndex = 35672;
 
 	enum class CameraSequenceTriggerOffsetType : ::System::Int32
 	{

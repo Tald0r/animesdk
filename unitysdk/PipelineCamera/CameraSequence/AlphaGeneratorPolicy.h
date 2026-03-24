@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/PipelineCamera/CameraSequence/CameraSequenceRuntimeDataProvider_2.h"
 
-#define PIPELINECAMERA_CAMERASEQUENCE_ALPHAGENERATORPOLICY__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF3EB00)
+#define PIPELINECAMERA_CAMERASEQUENCE_ALPHAGENERATORPOLICY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B564EE0)
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int AlphaGeneratorPolicy_TypeDefinitionIndex = 34761;
+	inline static constexpr unsigned int AlphaGeneratorPolicy_TypeDefinitionIndex = 35763;
 
 	class AlphaGeneratorPolicy : public ::PipelineCamera::CameraSequence::CameraSequenceRuntimeDataProvider_2<::System::Single, ::System::Single>
 	{

@@ -5,18 +5,18 @@
 class Class_1_877AA22B04AFB81F_1;
 namespace MoleMole { class UIMainCityMenuPageController; }
 
-#define MOLEMOLE_UIMAINCITYMENUPAGECONTROLLER___C__DISPLAYCLASS47_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCC9E0)
-#define MOLEMOLE_UIMAINCITYMENUPAGECONTROLLER___C__DISPLAYCLASS47_0__ONOPENACTIVITYCAROUSEL_B__0_OFFSET UNITYSDK_OFFSET(0xCFCC9F0)
+#define MOLEMOLE_UIMAINCITYMENUPAGECONTROLLER___C__DISPLAYCLASS47_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBE2ACB0)
+#define MOLEMOLE_UIMAINCITYMENUPAGECONTROLLER___C__DISPLAYCLASS47_0__ONOPENACTIVITYCAROUSEL_B__0_OFFSET UNITYSDK_OFFSET(0xBE2ACC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityMenuPageController___c__DisplayClass47_0_TypeDefinitionIndex = 60951;
+	inline static constexpr unsigned int UIMainCityMenuPageController___c__DisplayClass47_0_TypeDefinitionIndex = 59233;
 
 	class UIMainCityMenuPageController___c__DisplayClass47_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIMainCityMenuPageController* __4__this; // 0x10
-		::Class_1_877AA22B04AFB81F_1* uiCarouselData; // 0x18
+		::Class_1_877AA22B04AFB81F_1* uiCarouselData; // 0x10
+		::MoleMole::UIMainCityMenuPageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

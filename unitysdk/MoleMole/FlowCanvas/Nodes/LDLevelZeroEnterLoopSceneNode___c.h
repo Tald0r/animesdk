@@ -5,24 +5,24 @@
 
 namespace FlowCanvas { class FlowHandler; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROENTERLOOPSCENENODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6AE3260)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROENTERLOOPSCENENODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6AE32A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROENTERLOOPSCENENODE___C__REGISTERPORTS_B__7_1_OFFSET UNITYSDK_OFFSET(0x6AE32B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROENTERLOOPSCENENODE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB5D24D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROENTERLOOPSCENENODE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB5D2510)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROENTERLOOPSCENENODE___C__REGISTERPORTS_B__7_1_OFFSET UNITYSDK_OFFSET(0xB5D2520)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDLevelZeroEnterLoopSceneNode___c_TypeDefinitionIndex = 78807;
+	inline static constexpr unsigned int LDLevelZeroEnterLoopSceneNode___c_TypeDefinitionIndex = 69324;
 
 	class LDLevelZeroEnterLoopSceneNode___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::FlowCanvas::Nodes::LDLevelZeroEnterLoopSceneNode___c** StaticGet___9()
-		{
-			return (::MoleMole::FlowCanvas::Nodes::LDLevelZeroEnterLoopSceneNode___c**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroEnterLoopSceneNode___c_TypeDefinitionIndex)->GetStaticField(0x32150);
-		}
 		static ::FlowCanvas::FlowHandler** StaticGet___9__7_1()
 		{
-			return (::FlowCanvas::FlowHandler**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroEnterLoopSceneNode___c_TypeDefinitionIndex)->GetStaticField(0x32158);
+			return (::FlowCanvas::FlowHandler**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroEnterLoopSceneNode___c_TypeDefinitionIndex)->GetStaticField(0x33FC0);
+		}
+		static ::MoleMole::FlowCanvas::Nodes::LDLevelZeroEnterLoopSceneNode___c** StaticGet___9()
+		{
+			return (::MoleMole::FlowCanvas::Nodes::LDLevelZeroEnterLoopSceneNode___c**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroEnterLoopSceneNode___c_TypeDefinitionIndex)->GetStaticField(0x33FC8);
 		}
 
 		static ::System::Void _cctor()

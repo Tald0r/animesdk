@@ -6,13 +6,13 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace System::Collections { class IList; }
 
-#define NODECANVAS_TASKS_ACTIONS_CLEARLIST_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19A0B1D0)
-#define NODECANVAS_TASKS_ACTIONS_CLEARLIST_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19A0B240)
-#define NODECANVAS_TASKS_ACTIONS_CLEARLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x19A0B370)
+#define NODECANVAS_TASKS_ACTIONS_CLEARLIST_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19FFB1B0)
+#define NODECANVAS_TASKS_ACTIONS_CLEARLIST_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19FFB220)
+#define NODECANVAS_TASKS_ACTIONS_CLEARLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x19FFB350)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int ClearList_TypeDefinitionIndex = 26265;
+	inline static constexpr unsigned int ClearList_TypeDefinitionIndex = 27699;
 
 	class ClearList : public ::NodeCanvas::Framework::ActionTask
 	{

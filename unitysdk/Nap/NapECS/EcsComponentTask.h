@@ -4,7 +4,7 @@
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsComponentTask_TypeDefinitionIndex = 34139;
+	inline static constexpr unsigned int EcsComponentTask_TypeDefinitionIndex = 35188;
 
 	struct alignas(1) EcsComponentTask
 	{

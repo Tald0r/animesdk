@@ -4,12 +4,12 @@
 
 namespace NPCCrowd::AI { class PathGraphSpawnGroupRuntime; }
 
-#define NPCCROWD_AI_PATHGRAPHSTATERUNTIME___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x694C610)
-#define NPCCROWD_AI_PATHGRAPHSTATERUNTIME___C__DISPLAYCLASS16_0__GETSPAWNGROUP_B__0_OFFSET UNITYSDK_OFFSET(0x694C620)
+#define NPCCROWD_AI_PATHGRAPHSTATERUNTIME___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x62CFD50)
+#define NPCCROWD_AI_PATHGRAPHSTATERUNTIME___C__DISPLAYCLASS16_0__GETSPAWNGROUP_B__0_OFFSET UNITYSDK_OFFSET(0x62CFD60)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphStateRuntime___c__DisplayClass16_0_TypeDefinitionIndex = 50438;
+	inline static constexpr unsigned int PathGraphStateRuntime___c__DisplayClass16_0_TypeDefinitionIndex = 70436;
 
 	class PathGraphStateRuntime___c__DisplayClass16_0 : public ::System::Object
 	{

@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_025FF4981524A424_375;
+class Class_3_025FF4981524A424_594;
 namespace MoleMole { class UIHadalZone_ImpactBattle_LineupWidgetController; }
 namespace System { class Action; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__0_OFFSET UNITYSDK_OFFSET(0x89261F0)
-#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__1_OFFSET UNITYSDK_OFFSET(0x89264C0)
-#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x89261E0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__0_OFFSET UNITYSDK_OFFSET(0xDFCE9F0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__1_OFFSET UNITYSDK_OFFSET(0xDFCECC0)
+#define MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDFCE9E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_ImpactBattle_LineupWidgetController___c__DisplayClass36_0_TypeDefinitionIndex = 58624;
+	inline static constexpr unsigned int UIHadalZone_ImpactBattle_LineupWidgetController___c__DisplayClass36_0_TypeDefinitionIndex = 54349;
 
 	class UIHadalZone_ImpactBattle_LineupWidgetController___c__DisplayClass36_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHadalZone_ImpactBattle_LineupWidgetController* __4__this; // 0x10
-		::System::Action* onPassCheck; // 0x18
-		::System::Collections::Generic::List_1<::System::Int32>* needResetSubLayers; // 0x20
-		::System::Action_2<::System::Boolean, ::Class_3_025FF4981524A424_375*>* __9__1; // 0x28
+		::System::Collections::Generic::List_1<::System::Int32>* needResetSubLayers; // 0x10
+		::System::Action_2<::System::Boolean, ::Class_3_025FF4981524A424_594*>* __9__1; // 0x18
+		::System::Action* onPassCheck; // 0x20
+		::MoleMole::UIHadalZone_ImpactBattle_LineupWidgetController* __4__this; // 0x28
 
 		::System::Void _ctor()
 		{
@@ -34,9 +34,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__0_OFFSET))(this);
 		}
 
-		::System::Void _CheckLayerRecordWeaponEquipWithTips_b__1(::System::Boolean b, ::Class_3_025FF4981524A424_375* rsp)
+		::System::Void _CheckLayerRecordWeaponEquipWithTips_b__1(::System::Boolean b, ::Class_3_025FF4981524A424_594* rsp)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_3_025FF4981524A424_375*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__1_OFFSET))(this, b, rsp);
+			return ((::System::Void(*)(::PVOID, ::System::Boolean, ::Class_3_025FF4981524A424_594*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_IMPACTBATTLE_LINEUPWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CHECKLAYERRECORDWEAPONEQUIPWITHTIPS_B__1_OFFSET))(this, b, rsp);
 		}
 	};
 }

@@ -5,24 +5,24 @@
 namespace MoleMole::Battle { class MusicBattleSubSystem_LevelPressInfo; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_BATTLE_MUSICBATTLESUBSYSTEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB49B250)
-#define MOLEMOLE_BATTLE_MUSICBATTLESUBSYSTEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB49B290)
-#define MOLEMOLE_BATTLE_MUSICBATTLESUBSYSTEM___C__PREDEALTRACKNEW_B__77_0_OFFSET UNITYSDK_OFFSET(0xB49B2A0)
+#define MOLEMOLE_BATTLE_MUSICBATTLESUBSYSTEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xE2A4C70)
+#define MOLEMOLE_BATTLE_MUSICBATTLESUBSYSTEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0xE2A4CB0)
+#define MOLEMOLE_BATTLE_MUSICBATTLESUBSYSTEM___C__PREDEALTRACKNEW_B__77_0_OFFSET UNITYSDK_OFFSET(0xE2A4CC0)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int MusicBattleSubSystem___c_TypeDefinitionIndex = 64003;
+	inline static constexpr unsigned int MusicBattleSubSystem___c_TypeDefinitionIndex = 46837;
 
 	class MusicBattleSubSystem___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::MoleMole::Battle::MusicBattleSubSystem_LevelPressInfo*>** StaticGet___9__77_0()
-		{
-			return (::System::Comparison_1<::MoleMole::Battle::MusicBattleSubSystem_LevelPressInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MusicBattleSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x31D60);
-		}
 		static ::MoleMole::Battle::MusicBattleSubSystem___c** StaticGet___9()
 		{
-			return (::MoleMole::Battle::MusicBattleSubSystem___c**)Il2CppClass::FromTypeDefinitionIndex(MusicBattleSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x31D68);
+			return (::MoleMole::Battle::MusicBattleSubSystem___c**)Il2CppClass::FromTypeDefinitionIndex(MusicBattleSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x33BE0);
+		}
+		static ::System::Comparison_1<::MoleMole::Battle::MusicBattleSubSystem_LevelPressInfo*>** StaticGet___9__77_0()
+		{
+			return (::System::Comparison_1<::MoleMole::Battle::MusicBattleSubSystem_LevelPressInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MusicBattleSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x33BE8);
 		}
 
 		static ::System::Void _cctor()

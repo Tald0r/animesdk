@@ -5,12 +5,12 @@
 namespace System { class Object; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDRANDOMSELECTBYLISTNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2C5190)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDRANDOMSELECTBYLISTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C5450)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDRANDOMSELECTBYLISTNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB8A0C50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDRANDOMSELECTBYLISTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A0F10)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDRandomSelectByListNode_TypeDefinitionIndex = 71489;
+	inline static constexpr unsigned int LDRandomSelectByListNode_TypeDefinitionIndex = 47664;
 
 	class LDRandomSelectByListNode : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::System::Collections::Generic::List_1<::System::Int32>*, ::System::Collections::Generic::List_1<::System::Object*>*, ::System::Int32>
 	{

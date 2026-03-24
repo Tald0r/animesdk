@@ -5,10 +5,10 @@
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define DYNAMICBONECOLLIDERBASE_COLLIDE_OFFSET UNITYSDK_OFFSET(0x1AB692D0)
-#define DYNAMICBONECOLLIDERBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB69280)
+#define DYNAMICBONECOLLIDERBASE_COLLIDE_OFFSET UNITYSDK_OFFSET(0x1B1763B0)
+#define DYNAMICBONECOLLIDERBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B176360)
 
-inline static constexpr unsigned int DynamicBoneColliderBase_TypeDefinitionIndex = 31578;
+inline static constexpr unsigned int DynamicBoneColliderBase_TypeDefinitionIndex = 32532;
 
 class DynamicBoneColliderBase : public ::UnityEngine::MonoBehaviour
 {

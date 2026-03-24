@@ -28,11 +28,11 @@ namespace System::Collections::Generic { template <typename T> class HashSet_1; 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CHARACTERSCRIPTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x848E2B0)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x94E5860)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CharacterScriptConfig_TypeDefinitionIndex = 47303;
+	inline static constexpr unsigned int CharacterScriptConfig_TypeDefinitionIndex = 58765;
 
 	class CharacterScriptConfig : public ::MoleMole::SkillCharacterScriptConfig
 	{

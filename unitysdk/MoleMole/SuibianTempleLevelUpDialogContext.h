@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_SUIBIANTEMPLELEVELUPDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA1CA0)
+#define MOLEMOLE_SUIBIANTEMPLELEVELUPDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC32E040)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SuibianTempleLevelUpDialogContext_TypeDefinitionIndex = 43497;
+	inline static constexpr unsigned int SuibianTempleLevelUpDialogContext_TypeDefinitionIndex = 46033;
 
 	class SuibianTempleLevelUpDialogContext : public ::MoleMole::UIControllerContextBase
 	{

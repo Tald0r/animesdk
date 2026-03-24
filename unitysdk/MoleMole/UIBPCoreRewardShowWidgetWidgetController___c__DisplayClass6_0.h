@@ -5,12 +5,12 @@
 namespace MoleMole { class UIBPCoreRewardShowWidgetWidgetController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIBPCOREREWARDSHOWWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA9CA30)
-#define MOLEMOLE_UIBPCOREREWARDSHOWWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__SETCLICKACTION_B__0_OFFSET UNITYSDK_OFFSET(0xCA9CA40)
+#define MOLEMOLE_UIBPCOREREWARDSHOWWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCB22DD0)
+#define MOLEMOLE_UIBPCOREREWARDSHOWWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS6_0__SETCLICKACTION_B__0_OFFSET UNITYSDK_OFFSET(0xCB22DE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBPCoreRewardShowWidgetWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 37615;
+	inline static constexpr unsigned int UIBPCoreRewardShowWidgetWidgetController___c__DisplayClass6_0_TypeDefinitionIndex = 72884;
 
 	class UIBPCoreRewardShowWidgetWidgetController___c__DisplayClass6_0 : public ::System::Object
 	{

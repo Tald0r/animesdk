@@ -9,41 +9,43 @@
 #include "unitysdk/UnityEngine/Rendering/ScriptableRenderContext.h"
 
 namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_DELAYRELEASECAPTURESOURCE_OFFSET UNITYSDK_OFFSET(0x19FB5DA0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19FB5640)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_ISCAPTURESOURCE_OFFSET UNITYSDK_OFFSET(0x19FB5D20)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_SETNEXTCAPTURESOURCE_OFFSET UNITYSDK_OFFSET(0x19FB5C90)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x19FB55E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19FB5570)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_DELAYRELEASECAPTURESOURCE_OFFSET UNITYSDK_OFFSET(0x1A2F0930)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1A2EFFB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_ISCAPTURESOURCE_OFFSET UNITYSDK_OFFSET(0x1A2F08B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_SETNEXTCAPTURESOURCE_OFFSET UNITYSDK_OFFSET(0x1A2F0820)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x1A2EFF50)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTUREPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2EFEB0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapCapturePass_TypeDefinitionIndex = 28728;
+	inline static constexpr unsigned int NapCapturePass_TypeDefinitionIndex = 29674;
 
 	class NapCapturePass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
-		static ::UnityEngine::Rendering::RenderTargetIdentifier* StaticGet_m_CaptureSource()
+		static ::System::Int32* StaticGet_m_CaptureSourceID()
 		{
-			return (::UnityEngine::Rendering::RenderTargetIdentifier*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7010);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7820);
 		}
 		static ::System::Boolean* StaticGet_m_ReleaseAfterCapture()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7038);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7824);
 		}
 		static ::System::Boolean* StaticGet_m_ReplaceCaptureSource()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7039);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7825);
 		}
-		static ::System::Int32* StaticGet_m_CaptureSourceID()
+		static ::UnityEngine::Rendering::RenderTargetIdentifier* StaticGet_m_CaptureSource()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x703C);
+			return (::UnityEngine::Rendering::RenderTargetIdentifier*)Il2CppClass::FromTypeDefinitionIndex(NapCapturePass_TypeDefinitionIndex)->GetStaticField(0x7828);
 		}
 		::System::String* profilerTag; // 0xA8
-		::System::Int32 captureIndex; // 0xB0
-		::UnityEngine::NAPRenderPipeline0::RenderTargetHandle m_CameraDepthHandle; // 0xB4
-		::UnityEngine::NAPRenderPipeline0::RenderTargetHandle m_CameraColorHandle; // 0xB8
+		::System::Collections::Generic::List_1<::System::Int32>* m_NeedRemovedCaptureIds; // 0xB0
+		::UnityEngine::NAPRenderPipeline0::RenderTargetHandle m_CameraDepthHandle; // 0xB8
+		::UnityEngine::NAPRenderPipeline0::RenderTargetHandle m_CameraColorHandle; // 0xBC
+		::System::Int32 captureIndex; // 0xC0
 
 		::System::Void _ctor(::System::String* profilerTag, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent renderPassEvent)
 		{

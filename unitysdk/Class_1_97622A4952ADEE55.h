@@ -7,24 +7,29 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_97622A4952ADEE55_METHOD_1_0BE1846AC20D43BE_OFFSET UNITYSDK_OFFSET(0xC530970)
-#define CLASS_1_97622A4952ADEE55_METHOD_1_90ABE4467DF36859_OFFSET UNITYSDK_OFFSET(0xC530BC0)
-#define CLASS_1_97622A4952ADEE55_METHOD_1_A8AE4A9A45E37F95_OFFSET UNITYSDK_OFFSET(0xC530C00)
-#define CLASS_1_97622A4952ADEE55__CTOR_OFFSET UNITYSDK_OFFSET(0xC530960)
+#define CLASS_1_97622A4952ADEE55_METHOD_1_0BE1846AC20D43BE_OFFSET UNITYSDK_OFFSET(0xB4A5B30)
+#define CLASS_1_97622A4952ADEE55_METHOD_1_90ABE4467DF36859_OFFSET UNITYSDK_OFFSET(0xB4A5D70)
+#define CLASS_1_97622A4952ADEE55_METHOD_1_A8AE4A9A45E37F95_OFFSET UNITYSDK_OFFSET(0xB4A5A20)
+#define CLASS_1_97622A4952ADEE55__CTOR_OFFSET UNITYSDK_OFFSET(0xB4A5A10)
 
-inline static constexpr unsigned int Class_1_97622A4952ADEE55_TypeDefinitionIndex = 63622;
+inline static constexpr unsigned int Class_1_97622A4952ADEE55_TypeDefinitionIndex = 78522;
 
 class Class_1_97622A4952ADEE55 : public ::System::Object
 {
 public:
 	static ::MoleMole::Config::ConfigFlowerShopActivityScriptableObject** StaticGet_Field_1_0()
 	{
-		return (::MoleMole::Config::ConfigFlowerShopActivityScriptableObject**)Il2CppClass::FromTypeDefinitionIndex(Class_1_97622A4952ADEE55_TypeDefinitionIndex)->GetStaticField(0x3AFF0);
+		return (::MoleMole::Config::ConfigFlowerShopActivityScriptableObject**)Il2CppClass::FromTypeDefinitionIndex(Class_1_97622A4952ADEE55_TypeDefinitionIndex)->GetStaticField(0x32C90);
 	}
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_97622A4952ADEE55__CTOR_OFFSET))(this);
+	}
+
+	static ::System::Void Method_1_A8AE4A9A45E37F95(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
+	{
+		return ((::System::Void(*)(::System::Single, ::System::Action_1<::System::Single>*, ::System::Action_1<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_97622A4952ADEE55_METHOD_1_A8AE4A9A45E37F95_OFFSET))(a1, a2, a3, a4);
 	}
 
 	static ::System::Void Method_1_0BE1846AC20D43BE(::System::Boolean a1, ::System::Action* a2)
@@ -35,10 +40,5 @@ public:
 	static ::MoleMole::Config::ConfigFlowerShopActivityScriptableObject* Method_1_90ABE4467DF36859()
 	{
 		return ((::MoleMole::Config::ConfigFlowerShopActivityScriptableObject*(*)())((::PBYTE)hIl2Cpp + CLASS_1_97622A4952ADEE55_METHOD_1_90ABE4467DF36859_OFFSET))();
-	}
-
-	static ::System::Void Method_1_A8AE4A9A45E37F95(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
-	{
-		return ((::System::Void(*)(::System::Single, ::System::Action_1<::System::Single>*, ::System::Action_1<::System::String*>*, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_97622A4952ADEE55_METHOD_1_A8AE4A9A45E37F95_OFFSET))(a1, a2, a3, a4);
 	}
 };

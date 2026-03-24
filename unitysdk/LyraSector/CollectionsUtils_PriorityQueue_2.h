@@ -11,7 +11,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace LyraSector
 {
-	inline static constexpr unsigned int CollectionsUtils_PriorityQueue_2_TypeDefinitionIndex = 28212;
+	inline static constexpr unsigned int CollectionsUtils_PriorityQueue_2_TypeDefinitionIndex = 29153;
 
 	template <typename TElement, typename TPriority>
 	class CollectionsUtils_PriorityQueue_2 : public ::System::Object

@@ -10,7 +10,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int BTNodeNested_1_TypeDefinitionIndex = 26730;
+	inline static constexpr unsigned int BTNodeNested_1_TypeDefinitionIndex = 26269;
 
 	template <typename T>
 	class BTNodeNested_1 : public ::NodeCanvas::BehaviourTrees::BTNode

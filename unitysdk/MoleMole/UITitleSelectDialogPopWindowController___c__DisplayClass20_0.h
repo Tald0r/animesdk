@@ -5,18 +5,18 @@
 namespace MoleMole { class UITitleSelectDialogPopWindowController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7C4D420)
-#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_0__ONCLICKAPPLYMEDALSETTINGBTN_B__2_OFFSET UNITYSDK_OFFSET(0x7C50380)
+#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA6C33C0)
+#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_0__ONCLICKAPPLYMEDALSETTINGBTN_B__2_OFFSET UNITYSDK_OFFSET(0xA6C6B80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITitleSelectDialogPopWindowController___c__DisplayClass20_0_TypeDefinitionIndex = 73041;
+	inline static constexpr unsigned int UITitleSelectDialogPopWindowController___c__DisplayClass20_0_TypeDefinitionIndex = 79602;
 
 	class UITitleSelectDialogPopWindowController___c__DisplayClass20_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UITitleSelectDialogPopWindowController* __4__this; // 0x10
-		::System::Collections::Generic::List_1<::System::Int32>* recommendSelectList; // 0x18
+		::System::Collections::Generic::List_1<::System::Int32>* recommendSelectList; // 0x10
+		::MoleMole::UITitleSelectDialogPopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

@@ -15,11 +15,11 @@ namespace UnityEngine { class Mesh; }
 namespace UnityEngine { class MeshFilter; }
 namespace UnityEngine { class MeshRenderer; }
 
-#define PATHCREATION_EXAMPLES_PATHPLACER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A517C70)
+#define PATHCREATION_EXAMPLES_PATHPLACER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD1610)
 
 namespace PathCreation::Examples
 {
-	inline static constexpr unsigned int PathPlacer_TypeDefinitionIndex = 34306;
+	inline static constexpr unsigned int PathPlacer_TypeDefinitionIndex = 35308;
 
 	class PathPlacer : public ::PathCreation::Examples::PathSceneTool
 	{

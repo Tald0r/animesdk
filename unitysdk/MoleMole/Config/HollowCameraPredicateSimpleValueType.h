@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowCameraPredicateSimpleValueType_TypeDefinitionIndex = 51256;
+	inline static constexpr unsigned int HollowCameraPredicateSimpleValueType_TypeDefinitionIndex = 53452;
 
 	enum class HollowCameraPredicateSimpleValueType : ::System::Int32
 	{
-		DeltaZ = 2,
-		Distance = 1,
 		DeltaZAbsolute = 3,
+		Distance = 1,
+		DeltaZ = 2,
 		None = 0,
 	};
 }

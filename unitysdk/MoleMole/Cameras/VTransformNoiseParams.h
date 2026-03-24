@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/Cameras/VNoiseParams.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_CAMERAS_VTRANSFORMNOISEPARAMS_METHOD_2_9ED920BA288AD875_OFFSET UNITYSDK_OFFSET(0x2CFC90)
+#define MOLEMOLE_CAMERAS_VTRANSFORMNOISEPARAMS_METHOD_2_9ED920BA288AD875_OFFSET UNITYSDK_OFFSET(0x352180)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int VTransformNoiseParams_TypeDefinitionIndex = 43386;
+	inline static constexpr unsigned int VTransformNoiseParams_TypeDefinitionIndex = 51271;
 
 	struct alignas(4) VTransformNoiseParams
 	{

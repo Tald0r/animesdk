@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_CUSTOMLISTMERGEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB08170)
+#define SIRENIX_ODININSPECTOR_CUSTOMLISTMERGEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1141F0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int CustomListMergeAttribute_TypeDefinitionIndex = 7134;
+	inline static constexpr unsigned int CustomListMergeAttribute_TypeDefinitionIndex = 7138;
 
 	class CustomListMergeAttribute : public ::System::Attribute
 	{

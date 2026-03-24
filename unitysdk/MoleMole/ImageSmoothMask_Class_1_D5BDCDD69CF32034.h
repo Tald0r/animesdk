@@ -6,27 +6,27 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_12835C8B3F75CD39_OFFSET UNITYSDK_OFFSET(0xC2D62A0)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_1DC16C1417001FFF_OFFSET UNITYSDK_OFFSET(0xC2D58A0)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_45538755B2515353_OFFSET UNITYSDK_OFFSET(0xC2D4B10)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_1_OFFSET UNITYSDK_OFFSET(0xC2D64E0)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_OFFSET UNITYSDK_OFFSET(0xC2D5DD0)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_6E3468F4AA82E117_OFFSET UNITYSDK_OFFSET(0xC2D5100)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_71C49FFE372991EA_OFFSET UNITYSDK_OFFSET(0xC2D4A70)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034__CTOR_1_OFFSET UNITYSDK_OFFSET(0xC2D4A20)
-#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034__CTOR_OFFSET UNITYSDK_OFFSET(0xC2D49F0)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_12835C8B3F75CD39_OFFSET UNITYSDK_OFFSET(0xB8B0E90)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_1DC16C1417001FFF_OFFSET UNITYSDK_OFFSET(0xB8B2320)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_45538755B2515353_OFFSET UNITYSDK_OFFSET(0xB8B10C0)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_1_OFFSET UNITYSDK_OFFSET(0xB8B16B0)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_OFFSET UNITYSDK_OFFSET(0xB8B09C0)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_6E3468F4AA82E117_OFFSET UNITYSDK_OFFSET(0xB8B1B80)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_71C49FFE372991EA_OFFSET UNITYSDK_OFFSET(0xB8B2850)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034__CTOR_1_OFFSET UNITYSDK_OFFSET(0xB8B0970)
+#define MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034__CTOR_OFFSET UNITYSDK_OFFSET(0xB8B0940)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ImageSmoothMask_Class_1_D5BDCDD69CF32034_TypeDefinitionIndex = 45287;
+	inline static constexpr unsigned int ImageSmoothMask_Class_1_D5BDCDD69CF32034_TypeDefinitionIndex = 74487;
 
 	class ImageSmoothMask_Class_1_D5BDCDD69CF32034 : public ::System::Object
 	{
 	public:
-		::UnityEngine::Vector2 Field_1_3; // 0x10
+		::UnityEngine::Vector2 Field_1_0; // 0x10
 		::UnityEngine::Vector2 Field_1_5; // 0x18
-		::UnityEngine::Vector2 Field_1_0; // 0x20
-		::UnityEngine::Vector2 Field_1_4; // 0x28
+		::UnityEngine::Vector2 Field_1_4; // 0x20
+		::UnityEngine::Vector2 Field_1_3; // 0x28
 		::UnityEngine::Vector2 Field_1_1; // 0x30
 		::UnityEngine::Vector2 Field_1_2; // 0x38
 
@@ -40,21 +40,6 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID, ::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034__CTOR_1_OFFSET))(this, a1);
 		}
 
-		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_71C49FFE372991EA(::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* a1, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>* a2)
-		{
-			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_71C49FFE372991EA_OFFSET))(this, a1, a2);
-		}
-
-		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_6E3468F4AA82E117(::System::Single a1, ::System::Single a2, ::System::Int32 a3)
-		{
-			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::System::Single, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_6E3468F4AA82E117_OFFSET))(this, a1, a2, a3);
-		}
-
-		::Il2CppArray<::UnityEngine::UIVertex>* Method_1_1DC16C1417001FFF(::UnityEngine::UIVertex a1, ::Il2CppArray<::UnityEngine::UIVertex>*& a2)
-		{
-			return ((::Il2CppArray<::UnityEngine::UIVertex>*(*)(::PVOID, ::UnityEngine::UIVertex, ::Il2CppArray<::UnityEngine::UIVertex>*&))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_1DC16C1417001FFF_OFFSET))(this, a1, a2);
-		}
-
 		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_5D9797926F7DF67E(::System::Single a1, ::System::Single a2, ::System::Int32 a3)
 		{
 			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::System::Single, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_OFFSET))(this, a1, a2, a3);
@@ -65,14 +50,29 @@ namespace MoleMole
 			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_12835C8B3F75CD39_OFFSET))(this, a1, a2);
 		}
 
-		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_5D9797926F7DF67E_1(::System::Single a1, ::System::Single a2, ::System::Int32 a3)
-		{
-			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::System::Single, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_1_OFFSET))(this, a1, a2, a3);
-		}
-
 		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_45538755B2515353(::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* a1, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>* a2, ::System::Int32 a3)
 		{
 			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>*, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_45538755B2515353_OFFSET))(this, a1, a2, a3);
+		}
+
+		::Il2CppArray<::UnityEngine::UIVertex>* Method_1_1DC16C1417001FFF(::UnityEngine::UIVertex a1, ::Il2CppArray<::UnityEngine::UIVertex>*& a2)
+		{
+			return ((::Il2CppArray<::UnityEngine::UIVertex>*(*)(::PVOID, ::UnityEngine::UIVertex, ::Il2CppArray<::UnityEngine::UIVertex>*&))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_1DC16C1417001FFF_OFFSET))(this, a1, a2);
+		}
+
+		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_6E3468F4AA82E117(::System::Single a1, ::System::Single a2, ::System::Int32 a3)
+		{
+			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::System::Single, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_6E3468F4AA82E117_OFFSET))(this, a1, a2, a3);
+		}
+
+		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_71C49FFE372991EA(::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* a1, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>* a2)
+		{
+			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*, ::System::Collections::Generic::List_1<::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_71C49FFE372991EA_OFFSET))(this, a1, a2);
+		}
+
+		::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034* Method_1_5D9797926F7DF67E_1(::System::Single a1, ::System::Single a2, ::System::Int32 a3)
+		{
+			return ((::MoleMole::ImageSmoothMask_Class_1_D5BDCDD69CF32034*(*)(::PVOID, ::System::Single, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_IMAGESMOOTHMASK_CLASS_1_D5BDCDD69CF32034_METHOD_1_5D9797926F7DF67E_1_OFFSET))(this, a1, a2, a3);
 		}
 	};
 }

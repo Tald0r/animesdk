@@ -6,20 +6,20 @@ namespace MoleMole::GalGame { class AudioEventItem; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC221AE0)
+#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB838250)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalPlayNoAvatarStoryNode_TypeDefinitionIndex = 42981;
+	inline static constexpr unsigned int GalPlayNoAvatarStoryNode_TypeDefinitionIndex = 50395;
 
 	class GalPlayNoAvatarStoryNode : public ::MoleMole::GalGame::GalPlayableNodeBase
 	{
 	public:
 		::System::String* externalVoiceKey; // 0x20
-		::System::String* dialogueKey; // 0x28
-		::System::String* avatarName; // 0x30
+		::System::String* soundKey; // 0x28
+		::System::String* dialogueKey; // 0x30
 		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioEventItems; // 0x38
-		::System::String* soundKey; // 0x40
+		::System::String* avatarName; // 0x40
 
 		::System::Void _ctor()
 		{

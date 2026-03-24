@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIHADALZONE_REWARDV3_POPWINDOWCONTROLLER_REWARDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBFC7B70)
+#define MOLEMOLE_UIHADALZONE_REWARDV3_POPWINDOWCONTROLLER_REWARDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9C03670)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_RewardV3_PopWindowController_RewardContext_TypeDefinitionIndex = 46784;
+	inline static constexpr unsigned int UIHadalZone_RewardV3_PopWindowController_RewardContext_TypeDefinitionIndex = 61632;
 
 	class UIHadalZone_RewardV3_PopWindowController_RewardContext : public ::MoleMole::UIControllerContextBase
 	{

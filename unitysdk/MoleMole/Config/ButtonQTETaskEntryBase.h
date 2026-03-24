@@ -7,11 +7,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_BUTTONQTETASKENTRYBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1417EC10)
+#define MOLEMOLE_CONFIG_BUTTONQTETASKENTRYBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xBAEB3B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ButtonQTETaskEntryBase_TypeDefinitionIndex = 66697;
+	inline static constexpr unsigned int ButtonQTETaskEntryBase_TypeDefinitionIndex = 80939;
 
 	class ButtonQTETaskEntryBase : public ::MoleMole::Config::RealtimeQTETaskEntryBase
 	{

@@ -7,27 +7,27 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace Utf8Json { class IJsonFormatterResolver; }
 namespace Utf8Json { template <typename T> class IJsonFormatter_1; }
 
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTRESOLVERALLOWPRIVATETRUEEXCLUDENULLTRUENAMEMUTATESNAKECASE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0CB600)
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTRESOLVERALLOWPRIVATETRUEEXCLUDENULLTRUENAMEMUTATESNAKECASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0CB5F0)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTRESOLVERALLOWPRIVATETRUEEXCLUDENULLTRUENAMEMUTATESNAKECASE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6D96D0)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTRESOLVERALLOWPRIVATETRUEEXCLUDENULLTRUENAMEMUTATESNAKECASE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6D96C0)
 
 namespace Utf8Json::Resolvers::Internal
 {
-	inline static constexpr unsigned int DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex = 81796;
+	inline static constexpr unsigned int DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex = 83837;
 
 	class DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::System::String*, ::System::String*>** StaticGet_nameMutator()
 		{
-			return (::System::Func_2<::System::String*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex)->GetStaticField(0x46BD0);
+			return (::System::Func_2<::System::String*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex)->GetStaticField(0x485E0);
 		}
 		static ::Utf8Json::IJsonFormatterResolver** StaticGet_Instance()
 		{
-			return (::Utf8Json::IJsonFormatterResolver**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex)->GetStaticField(0x46BD8);
+			return (::Utf8Json::IJsonFormatterResolver**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex)->GetStaticField(0x485E8);
 		}
 		static ::System::Boolean* StaticGet_excludeNull()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex)->GetStaticField(0x11BA0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectResolverAllowPrivateTrueExcludeNullTrueNameMutateSnakeCase_TypeDefinitionIndex)->GetStaticField(0x11CB0);
 		}
 
 		::System::Void _ctor()

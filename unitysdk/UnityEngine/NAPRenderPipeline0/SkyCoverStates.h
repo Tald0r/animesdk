@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class MaterialPropertyBlock; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_SKYCOVERSTATES__CTOR_OFFSET UNITYSDK_OFFSET(0x19966760)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SKYCOVERSTATES__CTOR_OFFSET UNITYSDK_OFFSET(0x19EA65A0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SkyCoverStates_TypeDefinitionIndex = 5972;
+	inline static constexpr unsigned int SkyCoverStates_TypeDefinitionIndex = 5975;
 
 	class SkyCoverStates : public ::System::Object
 	{

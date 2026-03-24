@@ -5,20 +5,20 @@
 #include "unitysdk/MoleMole/ButtonPressType.h"
 #include "unitysdk/MoleMole/LogicButtonInputType.h"
 
-#define MOLEMOLE_BUTTONINPUTACTIONEVENTCONFIG_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0xC30D770)
-#define MOLEMOLE_BUTTONINPUTACTIONEVENTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC30D780)
+#define MOLEMOLE_BUTTONINPUTACTIONEVENTCONFIG_GET_DATATYPE_OFFSET UNITYSDK_OFFSET(0x9B95C80)
+#define MOLEMOLE_BUTTONINPUTACTIONEVENTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9B95C90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ButtonInputActionEventConfig_TypeDefinitionIndex = 45666;
+	inline static constexpr unsigned int ButtonInputActionEventConfig_TypeDefinitionIndex = 80753;
 
 	class ButtonInputActionEventConfig : public ::MoleMole::BaseInputActionEventConfig
 	{
 	public:
-		::MoleMole::ButtonPressType pressType; // 0x18
+		::System::Boolean IgnoreCursorHide; // 0x18
+		::System::Boolean handleAllPressTypes; // 0x19
 		::MoleMole::LogicButtonInputType logicButtonInputType; // 0x1C
-		::System::Boolean handleAllPressTypes; // 0x20
-		::System::Boolean IgnoreCursorHide; // 0x21
+		::MoleMole::ButtonPressType pressType; // 0x20
 
 		::System::Void _ctor()
 		{

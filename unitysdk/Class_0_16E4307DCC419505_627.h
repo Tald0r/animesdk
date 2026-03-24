@@ -1,8 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_D57A57246A9544D0.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_627_TypeDefinitionIndex = 64032;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_627_TypeDefinitionIndex = 65992;
 
+template <typename TPose, typename TIntrinsics>
 class Class_0_16E4307DCC419505_627
 {
 public:

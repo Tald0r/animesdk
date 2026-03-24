@@ -5,30 +5,30 @@
 
 namespace MoleMole::Config { class ScreenEffectFloat; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETAMOUNT_OFFSET UNITYSDK_OFFSET(0xEC2A2C0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETENABLE_OFFSET UNITYSDK_OFFSET(0xEC2A190)
-#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETRADIUS_OFFSET UNITYSDK_OFFSET(0xEC2A220)
-#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETSAMPLECOUNT_OFFSET UNITYSDK_OFFSET(0xEC2A360)
-#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETTHRESHOLD_OFFSET UNITYSDK_OFFSET(0xEC2A400)
-#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xEC2A4A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETAMOUNT_OFFSET UNITYSDK_OFFSET(0xCAE60A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETENABLE_OFFSET UNITYSDK_OFFSET(0xCAE5F70)
+#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETRADIUS_OFFSET UNITYSDK_OFFSET(0xCAE6000)
+#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETSAMPLECOUNT_OFFSET UNITYSDK_OFFSET(0xCAE6140)
+#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT_GETTHRESHOLD_OFFSET UNITYSDK_OFFSET(0xCAE61E0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYUNSHARPMASKEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xCAE6280)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityUnsharpMaskEffect_TypeDefinitionIndex = 78079;
+	inline static constexpr unsigned int ConfigEntityUnsharpMaskEffect_TypeDefinitionIndex = 54723;
 
 	class ConfigEntityUnsharpMaskEffect : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{
 	public:
-		::MoleMole::Config::ScreenEffectFloat* sampleCount; // 0x40
+		::MoleMole::Config::ScreenEffectFloat* radius; // 0x40
 		::MoleMole::Config::ScreenEffectFloat* threshold; // 0x48
-		::MoleMole::Config::ScreenEffectFloat* amount; // 0x50
-		::MoleMole::Config::ScreenEffectFloat* radius; // 0x58
-		::MoleMole::Config::ScreenEffectFieldHandleType enableHandleType; // 0x60
-		::MoleMole::Config::ScreenEffectFieldHandleType thresholdHandleType; // 0x64
-		::MoleMole::Config::ScreenEffectFieldHandleType radiusHandleType; // 0x68
-		::MoleMole::Config::ScreenEffectFieldHandleType amountHandleType; // 0x6C
-		::System::Boolean enable; // 0x70
-		::MoleMole::Config::ScreenEffectFieldHandleType sampleCountHandleType; // 0x74
+		::MoleMole::Config::ScreenEffectFloat* sampleCount; // 0x50
+		::MoleMole::Config::ScreenEffectFloat* amount; // 0x58
+		::MoleMole::Config::ScreenEffectFieldHandleType sampleCountHandleType; // 0x60
+		::MoleMole::Config::ScreenEffectFieldHandleType radiusHandleType; // 0x64
+		::System::Boolean enable; // 0x68
+		::MoleMole::Config::ScreenEffectFieldHandleType enableHandleType; // 0x6C
+		::MoleMole::Config::ScreenEffectFieldHandleType thresholdHandleType; // 0x70
+		::MoleMole::Config::ScreenEffectFieldHandleType amountHandleType; // 0x74
 
 		::System::Void _ctor()
 		{

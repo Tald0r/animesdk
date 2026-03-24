@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_COMICSPLITSCREENINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF86830)
+#define MOLEMOLE_COMICSPLITSCREENINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B599CE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ComicSplitScreenInfo_TypeDefinitionIndex = 29093;
+	inline static constexpr unsigned int ComicSplitScreenInfo_TypeDefinitionIndex = 30046;
 
 	class ComicSplitScreenInfo : public ::System::Object
 	{
 	public:
 		::System::String* styleKey; // 0x10
-		::System::Double time; // 0x18
-		::System::Int32 animIndex; // 0x20
+		::System::Int32 animIndex; // 0x18
+		::System::Double time; // 0x20
 
 		::System::Void _ctor()
 		{

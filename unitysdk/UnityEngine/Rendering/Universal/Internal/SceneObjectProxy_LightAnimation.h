@@ -5,23 +5,23 @@
 namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine::Rendering::Universal::Internal { class SceneObjectProxy; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTPROXY_LIGHTANIMATION_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x196EFA50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTPROXY_LIGHTANIMATION_PLAYANIM_OFFSET UNITYSDK_OFFSET(0x196EFB50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTPROXY_LIGHTANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x196EFA40)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTPROXY_LIGHTANIMATION_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x19B6C3E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTPROXY_LIGHTANIMATION_PLAYANIM_OFFSET UNITYSDK_OFFSET(0x19B6C4E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTPROXY_LIGHTANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x19B6C3D0)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int SceneObjectProxy_LightAnimation_TypeDefinitionIndex = 28944;
+	inline static constexpr unsigned int SceneObjectProxy_LightAnimation_TypeDefinitionIndex = 29895;
 
 	class SceneObjectProxy_LightAnimation : public ::System::Object
 	{
 	public:
-		::UnityEngine::Rendering::Universal::Internal::SceneObjectProxy* holder; // 0x10
-		::UnityEngine::AnimationCurve* curve; // 0x18
-		::System::Boolean isOn; // 0x20
-		::System::Single endTime; // 0x24
-		::System::Single startTime; // 0x28
-		::System::Single lifeTime; // 0x2C
+		::UnityEngine::AnimationCurve* curve; // 0x10
+		::UnityEngine::Rendering::Universal::Internal::SceneObjectProxy* holder; // 0x18
+		::System::Single startTime; // 0x20
+		::System::Boolean isOn; // 0x24
+		::System::Single lifeTime; // 0x28
+		::System::Single endTime; // 0x2C
 
 		::System::Void _ctor()
 		{

@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Camera; }
 
-#define UPDATEUICAMERA_AWAKE_OFFSET UNITYSDK_OFFSET(0x138973C0)
-#define UPDATEUICAMERA_UPDATE_OFFSET UNITYSDK_OFFSET(0x13897490)
-#define UPDATEUICAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0x13897650)
+#define UPDATEUICAMERA_AWAKE_OFFSET UNITYSDK_OFFSET(0x191A9000)
+#define UPDATEUICAMERA_UPDATE_OFFSET UNITYSDK_OFFSET(0x191A90D0)
+#define UPDATEUICAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0x191A9290)
 
-inline static constexpr unsigned int UpdateUICamera_TypeDefinitionIndex = 77188;
+inline static constexpr unsigned int UpdateUICamera_TypeDefinitionIndex = 56183;
 
 class UpdateUICamera : public ::UnityEngine::MonoBehaviour
 {

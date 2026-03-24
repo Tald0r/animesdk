@@ -5,18 +5,18 @@
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define IFIX_ADDITIONALBRIDGE__CCTOR_OFFSET UNITYSDK_OFFSET(0x7A9AED0)
+#define IFIX_ADDITIONALBRIDGE__CCTOR_OFFSET UNITYSDK_OFFSET(0x670E410)
 
 namespace IFix
 {
-	inline static constexpr unsigned int AdditionalBridge_TypeDefinitionIndex = 68499;
+	inline static constexpr unsigned int AdditionalBridge_TypeDefinitionIndex = 66156;
 
 	class AdditionalBridge : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_bridge()
 		{
-			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AdditionalBridge_TypeDefinitionIndex)->GetStaticField(0x31880);
+			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AdditionalBridge_TypeDefinitionIndex)->GetStaticField(0x33780);
 		}
 
 		static ::System::Void _cctor()

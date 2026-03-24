@@ -6,12 +6,12 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define FLOWCANVAS_NODES_EXTRACTANIMATIONCURVE_INVOKE_OFFSET UNITYSDK_OFFSET(0x183DBA30)
-#define FLOWCANVAS_NODES_EXTRACTANIMATIONCURVE__CTOR_OFFSET UNITYSDK_OFFSET(0x183DBAA0)
+#define FLOWCANVAS_NODES_EXTRACTANIMATIONCURVE_INVOKE_OFFSET UNITYSDK_OFFSET(0x19178B00)
+#define FLOWCANVAS_NODES_EXTRACTANIMATIONCURVE__CTOR_OFFSET UNITYSDK_OFFSET(0x19178B70)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ExtractAnimationCurve_TypeDefinitionIndex = 25275;
+	inline static constexpr unsigned int ExtractAnimationCurve_TypeDefinitionIndex = 26134;
 
 	class ExtractAnimationCurve : public ::FlowCanvas::Nodes::ExtractorNode_5<::UnityEngine::AnimationCurve*, ::Il2CppArray<::UnityEngine::Keyframe>*, ::System::Single, ::UnityEngine::WrapMode, ::UnityEngine::WrapMode>
 	{

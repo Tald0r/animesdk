@@ -4,7 +4,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int PBDDeformConstraintAngleLimit_TypeDefinitionIndex = 23654;
+	inline static constexpr unsigned int PBDDeformConstraintAngleLimit_TypeDefinitionIndex = 24337;
 
 	struct alignas(4) PBDDeformConstraintAngleLimit
 	{

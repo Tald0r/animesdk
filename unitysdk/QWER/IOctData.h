@@ -5,7 +5,7 @@ namespace QWER { class COctStream; }
 
 namespace QWER
 {
-	inline static constexpr unsigned int IOctData_TypeDefinitionIndex = 8569;
+	inline static constexpr unsigned int IOctData_TypeDefinitionIndex = 8580;
 
 	class IOctData
 	{

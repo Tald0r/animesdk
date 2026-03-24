@@ -6,19 +6,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_GALGAMENPCFADEACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x9910520)
+#define MOLEMOLE_GALGAME_GALGAMENPCFADEACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xA50B550)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalGameNPCFadeAction_TypeDefinitionIndex = 69338;
+	inline static constexpr unsigned int GalGameNPCFadeAction_TypeDefinitionIndex = 60053;
 
 	class GalGameNPCFadeAction : public ::MoleMole::GalGame::GalGameNPCActionBase
 	{
 	public:
 		::System::String* backgroundKey; // 0x38
-		::MoleMole::GalGame::GalGameNPCFadeAction_FadeType fadeActionType; // 0x40
-		::System::Boolean useMainCityTimeBackGround; // 0x41
-		::MoleMole::GalGame::GalgameFilterType filterType; // 0x44
+		::MoleMole::GalGame::GalgameFilterType filterType; // 0x40
+		::System::Boolean useMainCityTimeBackGround; // 0x44
+		::MoleMole::GalGame::GalGameNPCFadeAction_FadeType fadeActionType; // 0x45
 
 		::System::Void _ctor()
 		{

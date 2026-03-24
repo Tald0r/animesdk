@@ -8,22 +8,22 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x13F8C060)
-#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x13F8C070)
-#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x13F8C330)
-#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x13F8C540)
-#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x13F8C500)
+#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF2C5640)
+#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF2C5650)
+#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF2C5910)
+#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF2C5B20)
+#define MOLEMOLE_CONFIG_CONFIGBOXCOLLIDER_CONFIGBOXCOLLIDER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF2C5AE0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigBoxCollider_ConfigBoxCollider_UnityGeneratedFormatter_TypeDefinitionIndex = 74412;
+	inline static constexpr unsigned int ConfigBoxCollider_ConfigBoxCollider_UnityGeneratedFormatter_TypeDefinitionIndex = 39783;
 
 	class ConfigBoxCollider_ConfigBoxCollider_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigBoxCollider*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigBoxCollider_ConfigBoxCollider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE00);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigBoxCollider_ConfigBoxCollider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EB20);
 		}
 
 		::System::Void _ctor()

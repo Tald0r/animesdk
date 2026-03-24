@@ -5,7 +5,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int UberPostScreenEffectsBaseCBuffer_TypeDefinitionIndex = 28928;
+	inline static constexpr unsigned int UberPostScreenEffectsBaseCBuffer_TypeDefinitionIndex = 29879;
 
 	struct alignas(4) UberPostScreenEffectsBaseCBuffer
 	{

@@ -5,7 +5,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AssetWarmupConfig_TypeDefinitionIndex = 49476;
+	inline static constexpr unsigned int AssetWarmupConfig_TypeDefinitionIndex = 45696;
 
 	struct alignas(8) AssetWarmupConfig
 	{

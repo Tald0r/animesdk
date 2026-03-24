@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTREGISTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABAD310)
+#define BINARYTRACINGFRAMEWORK_SERIALIZE_SERIALIZEOBJECTREGISTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1D47D0)
 
 namespace BinaryTracingFramework::Serialize
 {
-	inline static constexpr unsigned int SerializeObjectRegister_TypeDefinitionIndex = 30954;
+	inline static constexpr unsigned int SerializeObjectRegister_TypeDefinitionIndex = 31906;
 
 	class SerializeObjectRegister : public ::System::Object
 	{

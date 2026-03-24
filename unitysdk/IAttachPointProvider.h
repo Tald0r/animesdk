@@ -4,7 +4,7 @@
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-inline static constexpr unsigned int IAttachPointProvider_TypeDefinitionIndex = 28107;
+inline static constexpr unsigned int IAttachPointProvider_TypeDefinitionIndex = 29052;
 
 class IAttachPointProvider
 {

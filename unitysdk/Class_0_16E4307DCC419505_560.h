@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_A8AA65B75807FFC4.h"
 
-namespace System { class String; }
-namespace UnityEngine { class Transform; }
+namespace System { template <typename T1, typename T2> class Func_2; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_560_TypeDefinitionIndex = 66765;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_560_TypeDefinitionIndex = 59999;
 
 class Class_0_16E4307DCC419505_560
 {

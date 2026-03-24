@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class DistortionBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_DISTORTIONCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8A99EB0)
-#define MOLEMOLE_TIMELINE_DISTORTIONCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8A99EA0)
-#define MOLEMOLE_TIMELINE_DISTORTIONCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8A9A0B0)
+#define MOLEMOLE_TIMELINE_DISTORTIONCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8CA2940)
+#define MOLEMOLE_TIMELINE_DISTORTIONCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8CA2930)
+#define MOLEMOLE_TIMELINE_DISTORTIONCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8CA2B40)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int DistortionClip_TypeDefinitionIndex = 44904;
+	inline static constexpr unsigned int DistortionClip_TypeDefinitionIndex = 75080;
 
 	class DistortionClip : public ::UnityEngine::Playables::PlayableAsset
 	{

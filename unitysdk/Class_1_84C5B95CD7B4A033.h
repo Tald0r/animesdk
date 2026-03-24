@@ -8,11 +8,11 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-#define CLASS_1_84C5B95CD7B4A033_METHOD_1_280420BEEA6A12AD_OFFSET UNITYSDK_OFFSET(0xB06AE10)
-#define CLASS_1_84C5B95CD7B4A033_METHOD_1_30D1209326FA87FC_OFFSET UNITYSDK_OFFSET(0xB06AD50)
-#define CLASS_1_84C5B95CD7B4A033__CTOR_OFFSET UNITYSDK_OFFSET(0xB06ACC0)
+#define CLASS_1_84C5B95CD7B4A033_METHOD_1_280420BEEA6A12AD_OFFSET UNITYSDK_OFFSET(0x9C48F60)
+#define CLASS_1_84C5B95CD7B4A033_METHOD_1_30D1209326FA87FC_OFFSET UNITYSDK_OFFSET(0x9C48EA0)
+#define CLASS_1_84C5B95CD7B4A033__CTOR_OFFSET UNITYSDK_OFFSET(0x9C48E10)
 
-inline static constexpr unsigned int Class_1_84C5B95CD7B4A033_TypeDefinitionIndex = 65751;
+inline static constexpr unsigned int Class_1_84C5B95CD7B4A033_TypeDefinitionIndex = 38580;
 
 class Class_1_84C5B95CD7B4A033 : public ::System::Object
 {

@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CheckObstacle_ShapeType_TypeDefinitionIndex = 37632;
+	inline static constexpr unsigned int CheckObstacle_ShapeType_TypeDefinitionIndex = 47987;
 
 	enum class CheckObstacle_ShapeType : ::System::Int32
 	{
-		Box = 1,
 		FanCollision = 0,
+		Box = 1,
 	};
 }

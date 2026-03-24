@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/EnumVolumeParameter_1.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/HQBloomMode.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_HQBLOOMMODEPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x16DA1840)
+#define UNITYENGINE_RENDERING_UNIVERSAL_HQBLOOMMODEPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x17407E00)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int HQBloomModeParameter_TypeDefinitionIndex = 28673;
+	inline static constexpr unsigned int HQBloomModeParameter_TypeDefinitionIndex = 29616;
 
 	class HQBloomModeParameter : public ::UnityEngine::NAPRenderPipeline0::EnumVolumeParameter_1<::UnityEngine::Rendering::Universal::HQBloomMode>
 	{

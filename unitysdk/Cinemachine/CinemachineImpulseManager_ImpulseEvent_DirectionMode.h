@@ -3,7 +3,7 @@
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineImpulseManager_ImpulseEvent_DirectionMode_TypeDefinitionIndex = 31152;
+	inline static constexpr unsigned int CinemachineImpulseManager_ImpulseEvent_DirectionMode_TypeDefinitionIndex = 32104;
 
 	enum class CinemachineImpulseManager_ImpulseEvent_DirectionMode : ::System::Int32
 	{

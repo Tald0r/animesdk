@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_10C1E1662BD0781C_Class_1_025C70E19F82BF2F_1;
+class Class_2_10C1E1662BD0781C_2_Class_1_025C70E19F82BF2F_1;
 namespace MoleMole { class UIVoidFrontDetailBattleWidgetController; }
 
-#define MOLEMOLE_UIVOIDFRONTDETAILBATTLEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xEE5A210)
-#define MOLEMOLE_UIVOIDFRONTDETAILBATTLEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__ONCLICKITEM_B__0_OFFSET UNITYSDK_OFFSET(0xEE5B040)
+#define MOLEMOLE_UIVOIDFRONTDETAILBATTLEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA80FB0)
+#define MOLEMOLE_UIVOIDFRONTDETAILBATTLEWIDGETCONTROLLER___C__DISPLAYCLASS20_0__ONCLICKITEM_B__0_OFFSET UNITYSDK_OFFSET(0xAA81DE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVoidFrontDetailBattleWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 66231;
+	inline static constexpr unsigned int UIVoidFrontDetailBattleWidgetController___c__DisplayClass20_0_TypeDefinitionIndex = 48709;
 
 	class UIVoidFrontDetailBattleWidgetController___c__DisplayClass20_0 : public ::System::Object
 	{
 	public:
-		::Class_2_10C1E1662BD0781C_Class_1_025C70E19F82BF2F_1* data; // 0x10
+		::Class_2_10C1E1662BD0781C_2_Class_1_025C70E19F82BF2F_1* data; // 0x10
 		::MoleMole::UIVoidFrontDetailBattleWidgetController* __4__this; // 0x18
 
 		::System::Void _ctor()

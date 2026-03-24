@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_TRAFFIC_AREA__CTOR_OFFSET UNITYSDK_OFFSET(0xB3EB3A0)
+#define MOLEMOLE_TRAFFIC_AREA__CTOR_OFFSET UNITYSDK_OFFSET(0xA684120)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int Traffic_Area_TypeDefinitionIndex = 43178;
+	inline static constexpr unsigned int Traffic_Area_TypeDefinitionIndex = 58115;
 
 	class Traffic_Area : public ::System::Object
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableFunctionNode_2.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERLEVELFROMCARD_INVOKE_OFFSET UNITYSDK_OFFSET(0xE0F1010)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERLEVELFROMCARD__CTOR_OFFSET UNITYSDK_OFFSET(0xE0F13F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERLEVELFROMCARD_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A55D40)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERLEVELFROMCARD__CTOR_OFFSET UNITYSDK_OFFSET(0x7A56110)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetMonsterLevelFromCard_TypeDefinitionIndex = 71471;
+	inline static constexpr unsigned int LDGetMonsterLevelFromCard_TypeDefinitionIndex = 74187;
 
 	class LDGetMonsterLevelFromCard : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::System::Int32, ::System::Int32>
 	{

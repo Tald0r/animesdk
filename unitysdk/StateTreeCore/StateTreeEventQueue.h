@@ -1,39 +1,51 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeList_1.h"
 #include "unitysdk/StateTreeCore/StateTreeEvent.h"
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/Allocator.h"
+#include "unitysdk/UnrealTypes/NativeStructList_1.h"
 
-#define STATETREECORE_STATETREEEVENTQUEUE_CLEAR_OFFSET UNITYSDK_OFFSET(0x474550)
-#define STATETREECORE_STATETREEEVENTQUEUE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x474440)
-#define STATETREECORE_STATETREEEVENTQUEUE_GETEVENTS_OFFSET UNITYSDK_OFFSET(0x475170)
-#define STATETREECORE_STATETREEEVENTQUEUE_SENDEVENT_OFFSET UNITYSDK_OFFSET(0x8EB3E0)
-#define STATETREECORE_STATETREEEVENTQUEUE__CTOR_OFFSET UNITYSDK_OFFSET(0x8EB3A0)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define STATETREECORE_STATETREEEVENTQUEUE_CLEAR_OFFSET UNITYSDK_OFFSET(0x9869F0)
+#define STATETREECORE_STATETREEEVENTQUEUE_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x7DDC20)
+#define STATETREECORE_STATETREEEVENTQUEUE_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x7DDAD0)
+#define STATETREECORE_STATETREEEVENTQUEUE_CREATE_OFFSET UNITYSDK_OFFSET(0x1B0C6440)
+#define STATETREECORE_STATETREEEVENTQUEUE_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x986A00)
+#define STATETREECORE_STATETREEEVENTQUEUE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x7DDEB0)
+#define STATETREECORE_STATETREEEVENTQUEUE_GETEVENTS_OFFSET UNITYSDK_OFFSET(0x7DE7B0)
+#define STATETREECORE_STATETREEEVENTQUEUE_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2F75F0)
+#define STATETREECORE_STATETREEEVENTQUEUE_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x986AA0)
+#define STATETREECORE_STATETREEEVENTQUEUE_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x986A80)
+#define STATETREECORE_STATETREEEVENTQUEUE_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x7DDB50)
+#define STATETREECORE_STATETREEEVENTQUEUE_RESET_OFFSET UNITYSDK_OFFSET(0x986A90)
+#define STATETREECORE_STATETREEEVENTQUEUE_SENDEVENT_OFFSET UNITYSDK_OFFSET(0x9869C0)
+#define STATETREECORE_STATETREEEVENTQUEUE_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEEVENTQUEUE__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x7DDC20)
+#define STATETREECORE_STATETREEEVENTQUEUE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0C6820)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeEventQueue_TypeDefinitionIndex = 26923;
+	inline static constexpr unsigned int StateTreeEventQueue_TypeDefinitionIndex = 27757;
 
 	struct alignas(8) StateTreeEventQueue
 	{
-		// static const ::System::Int32 MaxActiveEvents = 0x40; // 0x0
-		::NativeTypes::NativeList_1<::StateTreeCore::StateTreeEvent> _events; // 0x10
-
-		::System::Void _ctor(::Unity::Collections::Allocator allocator)
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return ((::System::Void(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE__CTOR_OFFSET))(this, allocator);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(StateTreeEventQueue_TypeDefinitionIndex)->GetStaticField(0x20C80);
 		}
+		// static const ::System::Int32 MaxActiveEvents = 0x40; // 0x0
+		::UnrealTypes::NativeStructList_1<::StateTreeCore::StateTreeEvent> _events; // 0x10
 
-		::System::Void Dispose()
+		static ::System::Void _cctor()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_DISPOSE_OFFSET))(this);
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE__CCTOR_OFFSET))();
 		}
 
 		/*
-		::System::Void SendEvent(::Foundation::Unreal::FGameplayTag tag)
+		::System::Void SendEvent(::Foundation::Unreal::FGameplayTag& tag)
 		{
-			return ((::System::Void(*)(::PVOID, ::Foundation::Unreal::FGameplayTag))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_SENDEVENT_OFFSET))(this, tag);
+			return ((::System::Void(*)(::PVOID, ::Foundation::Unreal::FGameplayTag&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_SENDEVENT_OFFSET))(this, tag);
 		}
 		*/
 
@@ -43,10 +55,65 @@ namespace StateTreeCore
 		}
 
 		/*
-		::NativeTypes::NativeListView_1<::StateTreeCore::StateTreeEvent> GetEvents()
+		::UnrealTypes::ReadOnlyNativeListView_1<::StateTreeCore::StateTreeEvent> GetEvents()
 		{
-			return ((::NativeTypes::NativeListView_1<::StateTreeCore::StateTreeEvent>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_GETEVENTS_OFFSET))(this);
+			return ((::UnrealTypes::ReadOnlyNativeListView_1<::StateTreeCore::StateTreeEvent>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_GETEVENTS_OFFSET))(this);
 		}
 		*/
+
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
+		{
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_GET_STATICSTRUCT_OFFSET))(this);
+		}
+
+		static ::StateTreeCore::StateTreeEventQueue Create(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeEventQueue(*)(::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_CREATE_OFFSET))(allocator);
+		}
+
+		::StateTreeCore::StateTreeEventQueue DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeEventQueue(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::StateTreeCore::StateTreeEventQueue CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeEventQueue(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::StateTreeCore::StateTreeEventQueue MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeEventQueue(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::StateTreeCore::StateTreeEventQueue& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeEventQueue&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::StateTreeCore::StateTreeEventQueue& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeEventQueue&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_StateTreeCore_StateTreeEventQueue__CopyAssign(::StateTreeCore::StateTreeEventQueue& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeEventQueue&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEVENTQUEUE_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEEVENTQUEUE__COPYASSIGN_OFFSET))(this, other);
+		}
 	};
 }

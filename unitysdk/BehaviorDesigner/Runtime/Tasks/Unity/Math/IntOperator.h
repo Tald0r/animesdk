@@ -6,22 +6,22 @@
 
 namespace BehaviorDesigner::Runtime { class SharedInt; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR_ONRESET_OFFSET UNITYSDK_OFFSET(0x19E7EC30)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x19E7E540)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x19E7EE10)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x19E7EE50)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x19E7EEE0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A4A2A50)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A4A2360)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4A2C30)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A4A2C70)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_INTOPERATOR___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A4A2D00)
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::Math
 {
-	inline static constexpr unsigned int IntOperator_TypeDefinitionIndex = 30633;
+	inline static constexpr unsigned int IntOperator_TypeDefinitionIndex = 31585;
 
 	class IntOperator : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedInt* storeResult; // 0x58
-		::BehaviorDesigner::Runtime::SharedInt* integer2; // 0x60
-		::BehaviorDesigner::Runtime::SharedInt* integer1; // 0x68
+		::BehaviorDesigner::Runtime::SharedInt* integer2; // 0x58
+		::BehaviorDesigner::Runtime::SharedInt* integer1; // 0x60
+		::BehaviorDesigner::Runtime::SharedInt* storeResult; // 0x68
 		::BehaviorDesigner::Runtime::Tasks::Unity::Math::IntOperator_Operation operation; // 0x70
 
 		::System::Void _ctor()

@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_ITEMCOLLECTTVPARTICLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1418F200)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_ITEMCOLLECTTVPARTICLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xBAFC900)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_ItemCollectTVParticleConfig_TypeDefinitionIndex = 59105;
+	inline static constexpr unsigned int ConfigHollowChessboard_ItemCollectTVParticleConfig_TypeDefinitionIndex = 79838;
 
 	class ConfigHollowChessboard_ItemCollectTVParticleConfig : public ::System::Object
 	{

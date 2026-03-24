@@ -9,24 +9,24 @@ namespace UnityEngine { class Animation; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_D6646C12B5D25CB4_1_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x87FC2E0)
-#define CLASS_2_D6646C12B5D25CB4_1_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x87FC4E0)
-#define CLASS_2_D6646C12B5D25CB4_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x87FC5D0)
-#define CLASS_2_D6646C12B5D25CB4_1__CTOR_OFFSET UNITYSDK_OFFSET(0x87FC5C0)
+#define CLASS_2_D6646C12B5D25CB4_1_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0xA2A0620)
+#define CLASS_2_D6646C12B5D25CB4_1_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0xA2A0820)
+#define CLASS_2_D6646C12B5D25CB4_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA2A0910)
+#define CLASS_2_D6646C12B5D25CB4_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA2A0900)
 
-inline static constexpr unsigned int Class_2_D6646C12B5D25CB4_1_TypeDefinitionIndex = 41881;
+inline static constexpr unsigned int Class_2_D6646C12B5D25CB4_1_TypeDefinitionIndex = 72827;
 
 class Class_2_D6646C12B5D25CB4_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_7; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x40
-	::UnityEngine::Animation* Field_2_0; // 0x48
-	::UnityEngine::Animation* Field_2_2; // 0x50
+	::UnityEngine::RectTransform* Field_2_6; // 0x18
+	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x20
+	::UnityEngine::Animation* Field_2_4; // 0x28
+	::UnityEngine::RectTransform* Field_2_3; // 0x30
+	::UnityEngine::RectTransform* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x40
+	::UnityEngine::RectTransform* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x50
 
 	::System::Void _ctor()
 	{

@@ -3,13 +3,13 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EListenedPropertyType_TypeDefinitionIndex = 12821;
+	inline static constexpr unsigned int EListenedPropertyType_TypeDefinitionIndex = 14496;
 
 	enum class EListenedPropertyType : ::System::Int16
 	{
-		SceneProperty = 3,
+		None = 0,
 		Property = 2,
 		All = 1,
-		None = 0,
+		SceneProperty = 3,
 	};
 }

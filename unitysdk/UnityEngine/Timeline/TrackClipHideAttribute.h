@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define UNITYENGINE_TIMELINE_TRACKCLIPHIDEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEDCCA0)
+#define UNITYENGINE_TIMELINE_TRACKCLIPHIDEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B500460)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TrackClipHideAttribute_TypeDefinitionIndex = 29375;
+	inline static constexpr unsigned int TrackClipHideAttribute_TypeDefinitionIndex = 30328;
 
 	class TrackClipHideAttribute : public ::System::Attribute
 	{

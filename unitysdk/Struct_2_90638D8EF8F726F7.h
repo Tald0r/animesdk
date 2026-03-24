@@ -4,14 +4,14 @@
 #include "unitysdk/Struct_2_6402D4A3EAB8BDC8.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_90638D8EF8F726F7_METHOD_2_759665772358223D_OFFSET UNITYSDK_OFFSET(0x3AB8B0)
-#define STRUCT_2_90638D8EF8F726F7_METHOD_2_C45C877399AC1AC1_OFFSET UNITYSDK_OFFSET(0x3AB850)
-#define STRUCT_2_90638D8EF8F726F7_METHOD_2_F0088C88851A7DFB_1_OFFSET UNITYSDK_OFFSET(0x317CB0)
-#define STRUCT_2_90638D8EF8F726F7_METHOD_2_F0088C88851A7DFB_2_OFFSET UNITYSDK_OFFSET(0x317CA0)
-#define STRUCT_2_90638D8EF8F726F7_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x317CC0)
-#define STRUCT_2_90638D8EF8F726F7__CTOR_OFFSET UNITYSDK_OFFSET(0x3AB820)
+#define STRUCT_2_90638D8EF8F726F7_METHOD_2_759665772358223D_OFFSET UNITYSDK_OFFSET(0x379580)
+#define STRUCT_2_90638D8EF8F726F7_METHOD_2_C45C877399AC1AC1_OFFSET UNITYSDK_OFFSET(0x379630)
+#define STRUCT_2_90638D8EF8F726F7_METHOD_2_F0088C88851A7DFB_1_OFFSET UNITYSDK_OFFSET(0x33CF10)
+#define STRUCT_2_90638D8EF8F726F7_METHOD_2_F0088C88851A7DFB_2_OFFSET UNITYSDK_OFFSET(0x33CF00)
+#define STRUCT_2_90638D8EF8F726F7_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x33CF20)
+#define STRUCT_2_90638D8EF8F726F7__CTOR_OFFSET UNITYSDK_OFFSET(0x379550)
 
-inline static constexpr unsigned int Struct_2_90638D8EF8F726F7_TypeDefinitionIndex = 61280;
+inline static constexpr unsigned int Struct_2_90638D8EF8F726F7_TypeDefinitionIndex = 50267;
 
 struct alignas(4) Struct_2_90638D8EF8F726F7
 {
@@ -29,6 +29,13 @@ struct alignas(4) Struct_2_90638D8EF8F726F7
 	{
 		return ((::System::Void(*)(::PVOID, ::Struct_2_6402D4A3EAB8BDC8, ::Struct_2_6402D4A3EAB8BDC8, ::Struct_2_6402D4A3EAB8BDC8, ::System::Single, ::System::Single, ::MoleMole::Photo::AnimationTwoBoneIKFlag))((::PBYTE)hIl2Cpp + STRUCT_2_90638D8EF8F726F7__CTOR_OFFSET))(this, a1, a2, a3, a4, a5, a6);
 	}
+
+	/*
+	::System::Void Method_2_759665772358223D(::NPCCrowd::Animation::FRefPose a1, ::UnityEngine::NapTransformData a2, ::UnityEngine::Vector3 a3, ::System::Single a4)
+	{
+		return ((::System::Void(*)(::PVOID, ::NPCCrowd::Animation::FRefPose, ::UnityEngine::NapTransformData, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_90638D8EF8F726F7_METHOD_2_759665772358223D_OFFSET))(this, a1, a2, a3, a4);
+	}
+	*/
 
 	::System::Boolean Method_2_F0088C88851A7DFB()
 	{
@@ -49,13 +56,6 @@ struct alignas(4) Struct_2_90638D8EF8F726F7
 	::System::Void Method_2_C45C877399AC1AC1(::Struct_2_63DDC2FA7A3D55CD& a1, ::Foundation::Unreal::FTransform3D a2, ::UnityEngine::Vector3 a3, ::System::Single a4)
 	{
 		return ((::System::Void(*)(::PVOID, ::Struct_2_63DDC2FA7A3D55CD&, ::Foundation::Unreal::FTransform3D, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_90638D8EF8F726F7_METHOD_2_C45C877399AC1AC1_OFFSET))(this, a1, a2, a3, a4);
-	}
-	*/
-
-	/*
-	::System::Void Method_2_759665772358223D(::NPCCrowd::Animation::FRefPose a1, ::UnityEngine::NapTransformData a2, ::UnityEngine::Vector3 a3, ::System::Single a4)
-	{
-		return ((::System::Void(*)(::PVOID, ::NPCCrowd::Animation::FRefPose, ::UnityEngine::NapTransformData, ::UnityEngine::Vector3, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_90638D8EF8F726F7_METHOD_2_759665772358223D_OFFSET))(this, a1, a2, a3, a4);
 	}
 	*/
 };

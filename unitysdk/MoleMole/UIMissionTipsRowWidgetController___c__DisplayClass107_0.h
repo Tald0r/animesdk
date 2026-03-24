@@ -6,21 +6,21 @@ namespace DG::Tweening { class Tweener; }
 namespace MoleMole { class UIMissionTipsRowWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8714290)
-#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__PLAYLAYOUTFADEIN_B__0_OFFSET UNITYSDK_OFFSET(0x87142A0)
-#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__PLAYLAYOUTFADEIN_B__1_OFFSET UNITYSDK_OFFSET(0x87142F0)
-#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__PLAYLAYOUTFADEIN_B__2_OFFSET UNITYSDK_OFFSET(0x8714340)
+#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9AB7680)
+#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__PLAYLAYOUTFADEIN_B__0_OFFSET UNITYSDK_OFFSET(0x9AB7690)
+#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__PLAYLAYOUTFADEIN_B__1_OFFSET UNITYSDK_OFFSET(0x9AB76E0)
+#define MOLEMOLE_UIMISSIONTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS107_0__PLAYLAYOUTFADEIN_B__2_OFFSET UNITYSDK_OFFSET(0x9AB7730)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMissionTipsRowWidgetController___c__DisplayClass107_0_TypeDefinitionIndex = 58134;
+	inline static constexpr unsigned int UIMissionTipsRowWidgetController___c__DisplayClass107_0_TypeDefinitionIndex = 70852;
 
 	class UIMissionTipsRowWidgetController___c__DisplayClass107_0 : public ::System::Object
 	{
 	public:
 		::DG::Tweening::Tweener* tweener; // 0x10
-		::MoleMole::UIMissionTipsRowWidgetController* __4__this; // 0x18
-		::System::Action* callback; // 0x20
+		::System::Action* callback; // 0x18
+		::MoleMole::UIMissionTipsRowWidgetController* __4__this; // 0x20
 
 		::System::Void _ctor()
 		{

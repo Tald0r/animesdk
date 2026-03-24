@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_2_BCA32DB678A03168.h"
 #include "unitysdk/Enum_3_316FC8E376D95053.h"
-#include "unitysdk/Enum_3_B90C1A15EA6E3C2B.h"
+#include "unitysdk/Enum_3_340DE32BA097F66C.h"
 
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_3_DDF5DA8CCC2DE668_METHOD_3_4EA6B1791DACA9CC_OFFSET UNITYSDK_OFFSET(0xD415D70)
-#define CLASS_3_DDF5DA8CCC2DE668_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xD415F80)
-#define CLASS_3_DDF5DA8CCC2DE668__CTOR_OFFSET UNITYSDK_OFFSET(0xD415CB0)
+#define CLASS_3_DDF5DA8CCC2DE668_METHOD_3_4EA6B1791DACA9CC_OFFSET UNITYSDK_OFFSET(0xEB2CBF0)
+#define CLASS_3_DDF5DA8CCC2DE668_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xEB2CE00)
+#define CLASS_3_DDF5DA8CCC2DE668__CTOR_OFFSET UNITYSDK_OFFSET(0xEB2CB30)
 
-inline static constexpr unsigned int Class_3_DDF5DA8CCC2DE668_TypeDefinitionIndex = 62187;
+inline static constexpr unsigned int Class_3_DDF5DA8CCC2DE668_TypeDefinitionIndex = 37890;
 
 class Class_3_DDF5DA8CCC2DE668 : public ::Class_2_BCA32DB678A03168
 {
 public:
-	::Enum_3_B90C1A15EA6E3C2B Field_3_0; // 0x38
+	::Enum_3_340DE32BA097F66C Field_3_0; // 0x38
 
 	::System::Void _ctor(::System::Int32 a1, ::Enum_3_316FC8E376D95053 a2, ::System::Int32 a3, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* a4)
 	{

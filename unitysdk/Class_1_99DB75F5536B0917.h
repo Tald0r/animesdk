@@ -7,9 +7,9 @@
 namespace System::Collections::Generic { template <typename T> class IEqualityComparer_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_99DB75F5536B0917_METHOD_1_005163E5F9A34BC8_OFFSET UNITYSDK_OFFSET(0xB6A4B30)
+#define CLASS_1_99DB75F5536B0917_METHOD_1_005163E5F9A34BC8_OFFSET UNITYSDK_OFFSET(0xD681080)
 
-inline static constexpr unsigned int Class_1_99DB75F5536B0917_TypeDefinitionIndex = 42438;
+inline static constexpr unsigned int Class_1_99DB75F5536B0917_TypeDefinitionIndex = 39405;
 
 class Class_1_99DB75F5536B0917 : public ::System::Object
 {

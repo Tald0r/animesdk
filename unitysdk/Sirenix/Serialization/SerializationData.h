@@ -8,13 +8,13 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Object; }
 
-#define SIRENIX_SERIALIZATION_SERIALIZATIONDATA_GET_CONTAINSDATA_OFFSET UNITYSDK_OFFSET(0x97A500)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONDATA_GET_HASEDITORDATA_OFFSET UNITYSDK_OFFSET(0x97A4F0)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONDATA_RESET_OFFSET UNITYSDK_OFFSET(0x97A530)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONDATA_GET_CONTAINSDATA_OFFSET UNITYSDK_OFFSET(0x9ADF70)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONDATA_GET_HASEDITORDATA_OFFSET UNITYSDK_OFFSET(0x9ADF60)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONDATA_RESET_OFFSET UNITYSDK_OFFSET(0x9ADFA0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int SerializationData_TypeDefinitionIndex = 7470;
+	inline static constexpr unsigned int SerializationData_TypeDefinitionIndex = 7475;
 
 	struct alignas(8) SerializationData
 	{

@@ -8,21 +8,21 @@
 namespace NPCCrowd::Accessories { class NPCAccessory; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETACCESSORYMDBLOD_D__7_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2CC240)
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETACCESSORYMDBLOD_D__7_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETACCESSORYMDBLOD_D__7_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2F8040)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYUTILS__SETACCESSORYMDBLOD_D__7_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace NPCCrowd::Accessories
 {
-	inline static constexpr unsigned int NPCAccessoryUtils__SetAccessoryMdbLOD_d__7_TypeDefinitionIndex = 75209;
+	inline static constexpr unsigned int NPCAccessoryUtils__SetAccessoryMdbLOD_d__7_TypeDefinitionIndex = 44656;
 
 	struct alignas(8) NPCAccessoryUtils__SetAccessoryMdbLOD_d__7
 	{
-		::NPCCrowd::Accessories::NPCAccessory* acc; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x18
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
+		::NPCCrowd::Accessories::NPCAccessory* acc; // 0x20
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x28
-		::NPCCrowd::Lod::ELODLevel lod; // 0x30
-		::System::Int32 __1__state; // 0x34
-		::NPCCrowd::Lod::ELODLevel oldLod; // 0x38
+		::System::Int32 __1__state; // 0x30
+		::NPCCrowd::Lod::ELODLevel oldLod; // 0x34
+		::NPCCrowd::Lod::ELODLevel lod; // 0x38
 
 		::System::Void MoveNext()
 		{

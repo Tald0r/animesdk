@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/InputSystem/XR/XRHMD.h"
 
-#define UNITY_XR_GOOGLEVR_DAYDREAMHMD__CTOR_OFFSET UNITYSDK_OFFSET(0x19F5EFC0)
+#define UNITY_XR_GOOGLEVR_DAYDREAMHMD__CTOR_OFFSET UNITYSDK_OFFSET(0x1A56FE10)
 
 namespace Unity::XR::GoogleVr
 {
-	inline static constexpr unsigned int DaydreamHMD_TypeDefinitionIndex = 27402;
+	inline static constexpr unsigned int DaydreamHMD_TypeDefinitionIndex = 28342;
 
 	class DaydreamHMD : public ::UnityEngine::InputSystem::XR::XRHMD
 	{

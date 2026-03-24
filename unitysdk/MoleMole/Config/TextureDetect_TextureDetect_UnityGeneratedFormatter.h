@@ -16,66 +16,66 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCD21F80)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCD21F90)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCD235F0)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD24280)
-#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD24240)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE37AE40)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE37AE50)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE37C4B0)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE37D140)
+#define MOLEMOLE_CONFIG_TEXTUREDETECT_TEXTUREDETECT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE37D100)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex = 75841;
+	inline static constexpr unsigned int TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex = 43962;
 
 	class TextureDetect_TextureDetect_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::TextureDetect*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F830);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::String*>*>** StaticGet_CachedSerializer8()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F838);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>** StaticGet_CachedSerializer9()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F840);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F848);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F850);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>** StaticGet_CachedSerializer7()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F858);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::Byte>*>** StaticGet_CachedSerializer11()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::Byte>*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F860);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F868);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F870);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F878);
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31390);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>** StaticGet_CachedSerializer6()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F880);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31398);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>** StaticGet_CachedSerializer9()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313A0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313A8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313B0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>** StaticGet_CachedSerializer7()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313B8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313C0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313C8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::Byte>*>** StaticGet_CachedSerializer11()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::Byte>*>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313D0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313D8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer10()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F888);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313E0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>** StaticGet_CachedSerializer5()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>**)Il2CppClass::FromTypeDefinitionIndex(TextureDetect_TextureDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x313E8);
 		}
 
 		::System::Void _ctor()

@@ -11,7 +11,7 @@ namespace Foundation::ViewObject { class ViewObject; }
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int BaseViewObjectComponent_1_TypeDefinitionIndex = 76130;
+	inline static constexpr unsigned int BaseViewObjectComponent_1_TypeDefinitionIndex = 58101;
 
 	template <typename T>
 	class BaseViewObjectComponent_1 : public ::System::Object

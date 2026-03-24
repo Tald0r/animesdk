@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimMoveState_TypeDefinitionIndex = 78240;
+	inline static constexpr unsigned int AnimMoveState_TypeDefinitionIndex = 53803;
 
 	enum class AnimMoveState : ::System::Int32
 	{

@@ -6,11 +6,11 @@ namespace MoleMole { class ActivityUnityAnimationReference; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_ACTIVITBGANIMATIONSEQUENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x6BD2D30)
+#define MOLEMOLE_ACTIVITBGANIMATIONSEQUENCE__CTOR_OFFSET UNITYSDK_OFFSET(0xACA23E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ActivitBGAnimationSequence_TypeDefinitionIndex = 69887;
+	inline static constexpr unsigned int ActivitBGAnimationSequence_TypeDefinitionIndex = 49639;
 
 	class ActivitBGAnimationSequence : public ::System::Object
 	{

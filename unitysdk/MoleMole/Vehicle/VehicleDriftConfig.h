@@ -6,7 +6,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Vehicle
 {
-	inline static constexpr unsigned int VehicleDriftConfig_TypeDefinitionIndex = 70616;
+	inline static constexpr unsigned int VehicleDriftConfig_TypeDefinitionIndex = 59958;
 
 	struct alignas(8) VehicleDriftConfig
 	{

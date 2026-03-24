@@ -14,84 +14,68 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Collections::Generic { template <typename T> class Stack_1; }
 
-#define DG_TWEENING_CORE_TWEENMANAGER_ADDACTIVETWEENTOSEQUENCE_OFFSET UNITYSDK_OFFSET(0x1AC3CE10)
-#define DG_TWEENING_CORE_TWEENMANAGER_ADDACTIVETWEEN_OFFSET UNITYSDK_OFFSET(0x1AC3C840)
-#define DG_TWEENING_CORE_TWEENMANAGER_CLEARTWEENARRAY_OFFSET UNITYSDK_OFFSET(0x1AC3DBA0)
-#define DG_TWEENING_CORE_TWEENMANAGER_COMPLETE_OFFSET UNITYSDK_OFFSET(0x1AC3FDD0)
-#define DG_TWEENING_CORE_TWEENMANAGER_DESPAWNALL_OFFSET UNITYSDK_OFFSET(0x1AC3D2D0)
-#define DG_TWEENING_CORE_TWEENMANAGER_DESPAWNTWEENS_OFFSET UNITYSDK_OFFSET(0x1AC3E770)
-#define DG_TWEENING_CORE_TWEENMANAGER_DESPAWN_OFFSET UNITYSDK_OFFSET(0x1AC3D4B0)
-#define DG_TWEENING_CORE_TWEENMANAGER_FILTEREDOPERATION_OFFSET UNITYSDK_OFFSET(0x1AC3F120)
-#define DG_TWEENING_CORE_TWEENMANAGER_FLIP_OFFSET UNITYSDK_OFFSET(0x1AC3FE90)
-#define DG_TWEENING_CORE_TWEENMANAGER_FORCEINIT_OFFSET UNITYSDK_OFFSET(0x1AC40750)
-#define DG_TWEENING_CORE_TWEENMANAGER_GETACTIVETWEENS_OFFSET UNITYSDK_OFFSET(0x1AC40970)
-#define DG_TWEENING_CORE_TWEENMANAGER_GETSEQUENCE_OFFSET UNITYSDK_OFFSET(0x1AC3C530)
-#define DG_TWEENING_CORE_TWEENMANAGER_GETTWEENSBYID_OFFSET UNITYSDK_OFFSET(0x1AC40C40)
-#define DG_TWEENING_CORE_TWEENMANAGER_GETTWEENSBYTARGET_OFFSET UNITYSDK_OFFSET(0x1AC41090)
-#define DG_TWEENING_CORE_TWEENMANAGER_GOTO_OFFSET UNITYSDK_OFFSET(0x1AC3FEB0)
-#define DG_TWEENING_CORE_TWEENMANAGER_INCREASECAPACITIES_OFFSET UNITYSDK_OFFSET(0x1AC3CAB0)
-#define DG_TWEENING_CORE_TWEENMANAGER_MARKFORKILLING_OFFSET UNITYSDK_OFFSET(0x1AC3E6E0)
-#define DG_TWEENING_CORE_TWEENMANAGER_PAUSE_OFFSET UNITYSDK_OFFSET(0x1AC3FFA0)
-#define DG_TWEENING_CORE_TWEENMANAGER_PLAYBACKWARDS_OFFSET UNITYSDK_OFFSET(0x1AC40060)
-#define DG_TWEENING_CORE_TWEENMANAGER_PLAYFORWARD_OFFSET UNITYSDK_OFFSET(0x1AC401B0)
-#define DG_TWEENING_CORE_TWEENMANAGER_PLAY_OFFSET UNITYSDK_OFFSET(0x1AC3FFE0)
-#define DG_TWEENING_CORE_TWEENMANAGER_PURGEALL_OFFSET UNITYSDK_OFFSET(0x1AC3DBE0)
-#define DG_TWEENING_CORE_TWEENMANAGER_PURGEPOOLS_OFFSET UNITYSDK_OFFSET(0x1AC3DDA0)
-#define DG_TWEENING_CORE_TWEENMANAGER_REMOVEACTIVETWEEN_OFFSET UNITYSDK_OFFSET(0x1AC3CE40)
-#define DG_TWEENING_CORE_TWEENMANAGER_REORGANIZEACTIVETWEENS_OFFSET UNITYSDK_OFFSET(0x1AC3E3E0)
-#define DG_TWEENING_CORE_TWEENMANAGER_RESETCAPACITIES_OFFSET UNITYSDK_OFFSET(0x1AC3DEA0)
-#define DG_TWEENING_CORE_TWEENMANAGER_RESTART_OFFSET UNITYSDK_OFFSET(0x1AC402F0)
-#define DG_TWEENING_CORE_TWEENMANAGER_REWIND_OFFSET UNITYSDK_OFFSET(0x1AC40400)
-#define DG_TWEENING_CORE_TWEENMANAGER_SETCAPACITIES_OFFSET UNITYSDK_OFFSET(0x1AC3DED0)
-#define DG_TWEENING_CORE_TWEENMANAGER_SETUPDATETYPE_OFFSET UNITYSDK_OFFSET(0x1AC3CCC0)
-#define DG_TWEENING_CORE_TWEENMANAGER_SMOOTHREWIND_OFFSET UNITYSDK_OFFSET(0x1AC404F0)
-#define DG_TWEENING_CORE_TWEENMANAGER_TOGGLEPAUSE_OFFSET UNITYSDK_OFFSET(0x1AC40670)
-#define DG_TWEENING_CORE_TWEENMANAGER_TOTALPLAYINGTWEENS_OFFSET UNITYSDK_OFFSET(0x1AC40820)
-#define DG_TWEENING_CORE_TWEENMANAGER_TOTALPOOLEDTWEENS_OFFSET UNITYSDK_OFFSET(0x1AC407F0)
-#define DG_TWEENING_CORE_TWEENMANAGER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AC3E810)
-#define DG_TWEENING_CORE_TWEENMANAGER_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1AC3DFA0)
-#define DG_TWEENING_CORE_TWEENMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AC414C0)
+#define DG_TWEENING_CORE_TWEENMANAGER_ADDACTIVETWEENTOSEQUENCE_OFFSET UNITYSDK_OFFSET(0x1B23F1E0)
+#define DG_TWEENING_CORE_TWEENMANAGER_ADDACTIVETWEEN_OFFSET UNITYSDK_OFFSET(0x1B23EC10)
+#define DG_TWEENING_CORE_TWEENMANAGER_CLEARTWEENARRAY_OFFSET UNITYSDK_OFFSET(0x1B23FF70)
+#define DG_TWEENING_CORE_TWEENMANAGER_COMPLETE_OFFSET UNITYSDK_OFFSET(0x1B2421B0)
+#define DG_TWEENING_CORE_TWEENMANAGER_DESPAWNALL_OFFSET UNITYSDK_OFFSET(0x1B23F6A0)
+#define DG_TWEENING_CORE_TWEENMANAGER_DESPAWNTWEENS_OFFSET UNITYSDK_OFFSET(0x1B240B50)
+#define DG_TWEENING_CORE_TWEENMANAGER_DESPAWN_OFFSET UNITYSDK_OFFSET(0x1B23F880)
+#define DG_TWEENING_CORE_TWEENMANAGER_FILTEREDOPERATION_OFFSET UNITYSDK_OFFSET(0x1B241500)
+#define DG_TWEENING_CORE_TWEENMANAGER_FLIP_OFFSET UNITYSDK_OFFSET(0x1B242270)
+#define DG_TWEENING_CORE_TWEENMANAGER_FORCEINIT_OFFSET UNITYSDK_OFFSET(0x1B242B30)
+#define DG_TWEENING_CORE_TWEENMANAGER_GETACTIVETWEENS_OFFSET UNITYSDK_OFFSET(0x1B242D50)
+#define DG_TWEENING_CORE_TWEENMANAGER_GETSEQUENCE_OFFSET UNITYSDK_OFFSET(0x1B23E900)
+#define DG_TWEENING_CORE_TWEENMANAGER_GETTWEENSBYID_OFFSET UNITYSDK_OFFSET(0x1B243020)
+#define DG_TWEENING_CORE_TWEENMANAGER_GETTWEENSBYTARGET_OFFSET UNITYSDK_OFFSET(0x1B243470)
+#define DG_TWEENING_CORE_TWEENMANAGER_GOTO_OFFSET UNITYSDK_OFFSET(0x1B242290)
+#define DG_TWEENING_CORE_TWEENMANAGER_INCREASECAPACITIES_OFFSET UNITYSDK_OFFSET(0x1B23EE80)
+#define DG_TWEENING_CORE_TWEENMANAGER_MARKFORKILLING_OFFSET UNITYSDK_OFFSET(0x1B240AC0)
+#define DG_TWEENING_CORE_TWEENMANAGER_PAUSE_OFFSET UNITYSDK_OFFSET(0x1B242380)
+#define DG_TWEENING_CORE_TWEENMANAGER_PLAYBACKWARDS_OFFSET UNITYSDK_OFFSET(0x1B242440)
+#define DG_TWEENING_CORE_TWEENMANAGER_PLAYFORWARD_OFFSET UNITYSDK_OFFSET(0x1B242590)
+#define DG_TWEENING_CORE_TWEENMANAGER_PLAY_OFFSET UNITYSDK_OFFSET(0x1B2423C0)
+#define DG_TWEENING_CORE_TWEENMANAGER_PURGEALL_OFFSET UNITYSDK_OFFSET(0x1B23FFB0)
+#define DG_TWEENING_CORE_TWEENMANAGER_PURGEPOOLS_OFFSET UNITYSDK_OFFSET(0x1B240170)
+#define DG_TWEENING_CORE_TWEENMANAGER_REMOVEACTIVETWEEN_OFFSET UNITYSDK_OFFSET(0x1B23F210)
+#define DG_TWEENING_CORE_TWEENMANAGER_REORGANIZEACTIVETWEENS_OFFSET UNITYSDK_OFFSET(0x1B2407C0)
+#define DG_TWEENING_CORE_TWEENMANAGER_RESETCAPACITIES_OFFSET UNITYSDK_OFFSET(0x1B240280)
+#define DG_TWEENING_CORE_TWEENMANAGER_RESTART_OFFSET UNITYSDK_OFFSET(0x1B2426D0)
+#define DG_TWEENING_CORE_TWEENMANAGER_REWIND_OFFSET UNITYSDK_OFFSET(0x1B2427E0)
+#define DG_TWEENING_CORE_TWEENMANAGER_SETCAPACITIES_OFFSET UNITYSDK_OFFSET(0x1B2402B0)
+#define DG_TWEENING_CORE_TWEENMANAGER_SETUPDATETYPE_OFFSET UNITYSDK_OFFSET(0x1B23F090)
+#define DG_TWEENING_CORE_TWEENMANAGER_SMOOTHREWIND_OFFSET UNITYSDK_OFFSET(0x1B2428D0)
+#define DG_TWEENING_CORE_TWEENMANAGER_TOGGLEPAUSE_OFFSET UNITYSDK_OFFSET(0x1B242A50)
+#define DG_TWEENING_CORE_TWEENMANAGER_TOTALPLAYINGTWEENS_OFFSET UNITYSDK_OFFSET(0x1B242C00)
+#define DG_TWEENING_CORE_TWEENMANAGER_TOTALPOOLEDTWEENS_OFFSET UNITYSDK_OFFSET(0x1B242BD0)
+#define DG_TWEENING_CORE_TWEENMANAGER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B240BF0)
+#define DG_TWEENING_CORE_TWEENMANAGER_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1B240380)
+#define DG_TWEENING_CORE_TWEENMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B2438C0)
 
 namespace DG::Tweening::Core
 {
-	inline static constexpr unsigned int TweenManager_TypeDefinitionIndex = 24163;
+	inline static constexpr unsigned int TweenManager_TypeDefinitionIndex = 24987;
 
 	class TweenManager : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::DG::Tweening::Tween*>** StaticGet__pooledTweeners()
+		static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>** StaticGet__KillList()
 		{
-			return (::Il2CppArray<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1D840);
+			return (::System::Collections::Generic::List_1<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1E310);
 		}
 		static ::System::Collections::Generic::Stack_1<::DG::Tweening::Tween*>** StaticGet__PooledSequences()
 		{
-			return (::System::Collections::Generic::Stack_1<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1D848);
+			return (::System::Collections::Generic::Stack_1<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1E318);
 		}
-		static ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>** StaticGet__KillList()
+		static ::Il2CppArray<::DG::Tweening::Tween*>** StaticGet__pooledTweeners()
 		{
-			return (::System::Collections::Generic::List_1<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1D850);
+			return (::Il2CppArray<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1E320);
 		}
 		static ::Il2CppArray<::DG::Tweening::Tween*>** StaticGet__activeTweens()
 		{
-			return (::Il2CppArray<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1D858);
+			return (::Il2CppArray<::DG::Tweening::Tween*>**)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x1E328);
 		}
-		static ::System::Int32* StaticGet_totPooledSequences()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4770);
-		}
-		static ::System::Int32* StaticGet__maxActiveLookupId()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4774);
-		}
-		static ::System::Int32* StaticGet_totActiveFixedTweens()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4778);
-		}
-		static ::System::Int32* StaticGet_maxSequences()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x477C);
-		}
-		static ::System::Int32* StaticGet_totActiveLateTweens()
+		static ::System::Int32* StaticGet_maxActive()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4780);
 		}
@@ -99,77 +83,93 @@ namespace DG::Tweening::Core
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4784);
 		}
-		static ::System::Int32* StaticGet_maxTweeners()
+		static ::System::Int32* StaticGet_totActiveDefaultTweens()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4788);
 		}
-		static ::System::Boolean* StaticGet_hasActiveFixedTweens()
+		static ::System::Int32* StaticGet_maxSequences()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x478C);
-		}
-		static ::System::Boolean* StaticGet_hasActiveDefaultTweens()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x478D);
-		}
-		static ::System::Boolean* StaticGet__requiresActiveReorganization()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x478E);
-		}
-		static ::System::Boolean* StaticGet_isUpdateLoop()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x478F);
-		}
-		static ::System::Int32* StaticGet_totTweeners()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4790);
-		}
-		static ::System::Int32* StaticGet_totActiveTweeners()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4794);
-		}
-		static ::System::Int32* StaticGet_totActiveDefaultTweens()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4798);
-		}
-		static ::System::Int32* StaticGet_totActiveTweens()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x479C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x478C);
 		}
 		static ::System::Int32* StaticGet_totSequences()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4790);
 		}
-		static ::System::Boolean* StaticGet_hasActiveTweens()
+		static ::System::Int32* StaticGet_maxTweeners()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4794);
 		}
-		static ::System::Boolean* StaticGet__despawnAllCalledFromUpdateLoopCallback()
+		static ::System::Int32* StaticGet_totPooledSequences()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A5);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x4798);
+		}
+		static ::System::Int32* StaticGet_totActiveTweeners()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x479C);
+		}
+		static ::System::Boolean* StaticGet__requiresActiveReorganization()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A0);
+		}
+		static ::System::Boolean* StaticGet_isUpdateLoop()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A1);
+		}
+		static ::System::Boolean* StaticGet_hasActiveFixedTweens()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A2);
 		}
 		static ::System::Boolean* StaticGet_hasActiveLateTweens()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A6);
-		}
-		static ::System::Int32* StaticGet__reorganizeFromId()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A8);
-		}
-		static ::System::Int32* StaticGet_totActiveSequences()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47AC);
-		}
-		static ::System::Int32* StaticGet_totPooledTweeners()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47B0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A3);
 		}
 		static ::System::Int32* StaticGet__maxPooledTweenerId()
 		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A4);
+		}
+		static ::System::Boolean* StaticGet__despawnAllCalledFromUpdateLoopCallback()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A8);
+		}
+		static ::System::Boolean* StaticGet_hasActiveTweens()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47A9);
+		}
+		static ::System::Boolean* StaticGet_hasActiveDefaultTweens()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47AA);
+		}
+		static ::System::Int32* StaticGet__reorganizeFromId()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47AC);
+		}
+		static ::System::Int32* StaticGet_totActiveFixedTweens()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47B0);
+		}
+		static ::System::Int32* StaticGet_totActiveTweens()
+		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47B4);
 		}
-		static ::System::Int32* StaticGet_maxActive()
+		static ::System::Int32* StaticGet_totPooledTweeners()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47B8);
+		}
+		static ::System::Int32* StaticGet_totActiveSequences()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47BC);
+		}
+		static ::System::Int32* StaticGet_totActiveLateTweens()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47C0);
+		}
+		static ::System::Int32* StaticGet_totTweeners()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47C4);
+		}
+		static ::System::Int32* StaticGet__maxActiveLookupId()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TweenManager_TypeDefinitionIndex)->GetStaticField(0x47C8);
 		}
 		// static const ::System::Int32 _DefaultMaxTweeners = 0xC8; // 0x0
 		// static const ::System::Int32 _DefaultMaxSequences = 0x32; // 0x0

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/FlowNode.h"
 
-#define FLOWCANVAS_NODES_SIMPLEXNODEWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x19DADF40)
+#define FLOWCANVAS_NODES_SIMPLEXNODEWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A39F170)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SimplexNodeWrapper_TypeDefinitionIndex = 25893;
+	inline static constexpr unsigned int SimplexNodeWrapper_TypeDefinitionIndex = 26923;
 
 	class SimplexNodeWrapper : public ::FlowCanvas::FlowNode
 	{

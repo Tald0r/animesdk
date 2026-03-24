@@ -9,12 +9,12 @@ class Class_1_D72537470FC2F779;
 namespace MoleMole::Config { class ListCellUISpecialNum; }
 namespace MoleMole::Config { class ListIntUISpecialNum; }
 
-#define MOLEMOLE_CONFIG_CONFIGSETCHESSBOARDNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCD122A0)
-#define MOLEMOLE_CONFIG_CONFIGSETCHESSBOARDNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD12380)
+#define MOLEMOLE_CONFIG_CONFIGSETCHESSBOARDNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xE36A7C0)
+#define MOLEMOLE_CONFIG_CONFIGSETCHESSBOARDNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE36A8A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSetChessboardNode_TypeDefinitionIndex = 64714;
+	inline static constexpr unsigned int ConfigSetChessboardNode_TypeDefinitionIndex = 70475;
 
 	class ConfigSetChessboardNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
@@ -22,9 +22,9 @@ namespace MoleMole::Config
 		::MoleMole::Config::ListIntUISpecialNum* PieceIndexList; // 0x18
 		::MoleMole::Config::ListCellUISpecialNum* PieceCellList; // 0x20
 		::ProtoScript::NodeState NodeState; // 0x28
-		::Enum_3_C6E8F7731271F88A SubState; // 0x2C
+		::System::Int32 EventID; // 0x2C
 		::ProtoScript::NodeVisible NodeVisible; // 0x30
-		::System::Int32 EventID; // 0x34
+		::Enum_3_C6E8F7731271F88A SubState; // 0x34
 
 		::System::Void _ctor()
 		{

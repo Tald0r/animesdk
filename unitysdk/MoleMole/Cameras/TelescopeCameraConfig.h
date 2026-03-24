@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CAMERAS_TELESCOPECAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDD520)
+#define MOLEMOLE_CAMERAS_TELESCOPECAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xACABE80)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int TelescopeCameraConfig_TypeDefinitionIndex = 58067;
+	inline static constexpr unsigned int TelescopeCameraConfig_TypeDefinitionIndex = 46197;
 
 	class TelescopeCameraConfig : public ::System::Object
 	{

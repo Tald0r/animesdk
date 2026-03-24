@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::UI
 {
-	inline static constexpr unsigned int UIPointerBehavior_TypeDefinitionIndex = 27652;
+	inline static constexpr unsigned int UIPointerBehavior_TypeDefinitionIndex = 28592;
 
 	enum class UIPointerBehavior : ::System::Int32
 	{

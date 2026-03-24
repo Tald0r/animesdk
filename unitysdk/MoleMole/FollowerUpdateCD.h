@@ -5,13 +5,13 @@
 
 namespace BehaviorDesigner::Runtime { class SharedFloat; }
 
-#define MOLEMOLE_FOLLOWERUPDATECD_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xE102EC0)
-#define MOLEMOLE_FOLLOWERUPDATECD__CTOR_OFFSET UNITYSDK_OFFSET(0xE102F40)
-#define MOLEMOLE_FOLLOWERUPDATECD___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xE102F90)
+#define MOLEMOLE_FOLLOWERUPDATECD_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7A673E0)
+#define MOLEMOLE_FOLLOWERUPDATECD__CTOR_OFFSET UNITYSDK_OFFSET(0x7A67460)
+#define MOLEMOLE_FOLLOWERUPDATECD___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7A674B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FollowerUpdateCD_TypeDefinitionIndex = 42946;
+	inline static constexpr unsigned int FollowerUpdateCD_TypeDefinitionIndex = 57259;
 
 	class FollowerUpdateCD : public ::MoleMole::UpdateCD
 	{

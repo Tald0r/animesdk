@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int VisualEnvironmentE_ResolutionOption_TypeDefinitionIndex = 28453;
+	inline static constexpr unsigned int VisualEnvironmentE_ResolutionOption_TypeDefinitionIndex = 29396;
 
 	enum class VisualEnvironmentE_ResolutionOption : ::System::Int32
 	{

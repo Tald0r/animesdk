@@ -5,7 +5,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISelectMonsterCardWidgetController_ItemRootTurningState_TypeDefinitionIndex = 46680;
+	inline static constexpr unsigned int UISelectMonsterCardWidgetController_ItemRootTurningState_TypeDefinitionIndex = 70704;
 
 	struct alignas(4) UISelectMonsterCardWidgetController_ItemRootTurningState
 	{

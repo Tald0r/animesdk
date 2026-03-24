@@ -8,11 +8,11 @@ namespace UnityEngine { class GUIContent; }
 namespace UnityEngine { class GUIStyle; }
 namespace UnityEngine { class TouchScreenKeyboard; }
 
-#define UNITYENGINE_TEXTEDITOR__CTOR_OFFSET UNITYSDK_OFFSET(0x19C48700)
+#define UNITYENGINE_TEXTEDITOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2013E0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int TextEditor_TypeDefinitionIndex = 6384;
+	inline static constexpr unsigned int TextEditor_TypeDefinitionIndex = 6388;
 
 	class TextEditor : public ::System::Object
 	{

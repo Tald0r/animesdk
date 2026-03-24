@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define BATTLERECORDGMUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0xA2BCCC0)
+#define BATTLERECORDGMUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x98C08E0)
 
-inline static constexpr unsigned int BattleRecordGMUtils_TypeDefinitionIndex = 53217;
+inline static constexpr unsigned int BattleRecordGMUtils_TypeDefinitionIndex = 53267;
 
 class BattleRecordGMUtils : public ::UnityEngine::MonoBehaviour
 {

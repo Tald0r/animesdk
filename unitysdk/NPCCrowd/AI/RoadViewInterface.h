@@ -3,7 +3,7 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int RoadViewInterface_TypeDefinitionIndex = 57633;
+	inline static constexpr unsigned int RoadViewInterface_TypeDefinitionIndex = 67391;
 
 	class RoadViewInterface
 	{

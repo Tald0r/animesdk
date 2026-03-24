@@ -7,31 +7,31 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define UNITYENGINE_XR_INPUTTRACKING_INVOKETRACKINGEVENT_OFFSET UNITYSDK_OFFSET(0x1B08A4B0)
-#define UNITYENGINE_XR_INPUTTRACKING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B08A660)
+#define UNITYENGINE_XR_INPUTTRACKING_INVOKETRACKINGEVENT_OFFSET UNITYSDK_OFFSET(0x1B698C70)
+#define UNITYENGINE_XR_INPUTTRACKING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B698E20)
 
 namespace UnityEngine::XR
 {
-	inline static constexpr unsigned int InputTracking_TypeDefinitionIndex = 23951;
+	inline static constexpr unsigned int InputTracking_TypeDefinitionIndex = 24634;
 
 	class InputTracking : public ::System::Object
 	{
 	public:
-		static ::System::Action_1<::UnityEngine::XR::XRNodeState>** StaticGet_nodeRemoved()
-		{
-			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1D7F0);
-		}
 		static ::System::Action_1<::UnityEngine::XR::XRNodeState>** StaticGet_trackingLost()
 		{
-			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1D7F8);
+			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1DFA0);
+		}
+		static ::System::Action_1<::UnityEngine::XR::XRNodeState>** StaticGet_nodeRemoved()
+		{
+			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1DFA8);
 		}
 		static ::System::Action_1<::UnityEngine::XR::XRNodeState>** StaticGet_trackingAcquired()
 		{
-			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1D800);
+			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1DFB0);
 		}
 		static ::System::Action_1<::UnityEngine::XR::XRNodeState>** StaticGet_nodeAdded()
 		{
-			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1D808);
+			return (::System::Action_1<::UnityEngine::XR::XRNodeState>**)Il2CppClass::FromTypeDefinitionIndex(InputTracking_TypeDefinitionIndex)->GetStaticField(0x1DFB8);
 		}
 
 		static ::System::Void _cctor()

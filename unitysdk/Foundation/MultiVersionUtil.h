@@ -7,28 +7,28 @@ namespace Foundation { class MultiVersionInfo; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define FOUNDATION_MULTIVERSIONUTIL_GETSUFFIXKEY_OFFSET UNITYSDK_OFFSET(0x193820E0)
-#define FOUNDATION_MULTIVERSIONUTIL_RELOADFROMFILE_1_OFFSET UNITYSDK_OFFSET(0x19381BC0)
-#define FOUNDATION_MULTIVERSIONUTIL_RELOADFROMFILE_OFFSET UNITYSDK_OFFSET(0x19381B30)
-#define FOUNDATION_MULTIVERSIONUTIL_TRYGETMULTIVERPATHBYHASH_OFFSET UNITYSDK_OFFSET(0x19381E10)
-#define FOUNDATION_MULTIVERSIONUTIL_TRYGETMULTIVERPATHBYPATH_OFFSET UNITYSDK_OFFSET(0x19381C50)
-#define FOUNDATION_MULTIVERSIONUTIL_TRYGETMULTIVERPATH_OFFSET UNITYSDK_OFFSET(0x19381F20)
-#define FOUNDATION_MULTIVERSIONUTIL__CTOR_OFFSET UNITYSDK_OFFSET(0x19382160)
+#define FOUNDATION_MULTIVERSIONUTIL_GETSUFFIXKEY_OFFSET UNITYSDK_OFFSET(0x1976F6A0)
+#define FOUNDATION_MULTIVERSIONUTIL_RELOADFROMFILE_1_OFFSET UNITYSDK_OFFSET(0x1976F180)
+#define FOUNDATION_MULTIVERSIONUTIL_RELOADFROMFILE_OFFSET UNITYSDK_OFFSET(0x1976F0F0)
+#define FOUNDATION_MULTIVERSIONUTIL_TRYGETMULTIVERPATHBYHASH_OFFSET UNITYSDK_OFFSET(0x1976F3D0)
+#define FOUNDATION_MULTIVERSIONUTIL_TRYGETMULTIVERPATHBYPATH_OFFSET UNITYSDK_OFFSET(0x1976F210)
+#define FOUNDATION_MULTIVERSIONUTIL_TRYGETMULTIVERPATH_OFFSET UNITYSDK_OFFSET(0x1976F4E0)
+#define FOUNDATION_MULTIVERSIONUTIL__CTOR_OFFSET UNITYSDK_OFFSET(0x1976F720)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int MultiVersionUtil_TypeDefinitionIndex = 7839;
+	inline static constexpr unsigned int MultiVersionUtil_TypeDefinitionIndex = 8197;
 
 	class MultiVersionUtil : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::Foundation::MultiVersionInfo*>** StaticGet__datas()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::Foundation::MultiVersionInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MultiVersionUtil_TypeDefinitionIndex)->GetStaticField(0x71E0);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::Foundation::MultiVersionInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MultiVersionUtil_TypeDefinitionIndex)->GetStaticField(0x7270);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::UInt64, ::Foundation::MultiVersionInfo*>** StaticGet__hashDatas()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::UInt64, ::Foundation::MultiVersionInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MultiVersionUtil_TypeDefinitionIndex)->GetStaticField(0x71E8);
+			return (::System::Collections::Generic::Dictionary_2<::System::UInt64, ::Foundation::MultiVersionInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MultiVersionUtil_TypeDefinitionIndex)->GetStaticField(0x7278);
 		}
 
 		::System::Void _ctor()

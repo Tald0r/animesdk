@@ -5,18 +5,18 @@
 class Class_1_7D02A4FBAD99FB31;
 namespace MoleMole { class UITheGunGoBattlePopWindowController; }
 
-#define MOLEMOLE_UITHEGUNGOBATTLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS27_0__CTOR_OFFSET UNITYSDK_OFFSET(0x73E51A0)
-#define MOLEMOLE_UITHEGUNGOBATTLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS27_0__SETHEAD_B__0_OFFSET UNITYSDK_OFFSET(0x73E51B0)
+#define MOLEMOLE_UITHEGUNGOBATTLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS27_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7BDB730)
+#define MOLEMOLE_UITHEGUNGOBATTLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS27_0__SETHEAD_B__0_OFFSET UNITYSDK_OFFSET(0x7BDB740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITheGunGoBattlePopWindowController___c__DisplayClass27_0_TypeDefinitionIndex = 43216;
+	inline static constexpr unsigned int UITheGunGoBattlePopWindowController___c__DisplayClass27_0_TypeDefinitionIndex = 43486;
 
 	class UITheGunGoBattlePopWindowController___c__DisplayClass27_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UITheGunGoBattlePopWindowController* __4__this; // 0x10
-		::Class_1_7D02A4FBAD99FB31* slotData; // 0x18
+		::Class_1_7D02A4FBAD99FB31* slotData; // 0x10
+		::MoleMole::UITheGunGoBattlePopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

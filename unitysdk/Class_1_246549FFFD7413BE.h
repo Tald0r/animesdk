@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_246549FFFD7413BE_Struct_2_A89D9FEEC8FE463A.h"
+#include "unitysdk/Class_1_246549FFFD7413BE_Struct_2_A89D9FEEC8FE463A_1.h"
 #include "unitysdk/Struct_2_31CE9F74ED7EF316.h"
 #include "unitysdk/System/Nullable_1.h"
 #include "unitysdk/System/Object.h"
@@ -15,39 +15,39 @@ namespace PipelineCamera { template <typename T> class CircularBuffer_1; }
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define CLASS_1_246549FFFD7413BE_METHOD_1_0DAB6E47AE48F43F_OFFSET UNITYSDK_OFFSET(0x61FE770)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_126388F06D886138_OFFSET UNITYSDK_OFFSET(0x61FE9C0)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0x7EA2930)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_3FD5ECDD3789889D_OFFSET UNITYSDK_OFFSET(0x7EA2AF0)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_1_OFFSET UNITYSDK_OFFSET(0x61FE800)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_2_OFFSET UNITYSDK_OFFSET(0x61FEF10)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_OFFSET UNITYSDK_OFFSET(0x61FE660)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_7CB484237D76BD68_OFFSET UNITYSDK_OFFSET(0x7EA2F80)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_BBA7B48D3918837D_OFFSET UNITYSDK_OFFSET(0x61FE910)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_C910D6DB718B5ED2_OFFSET UNITYSDK_OFFSET(0x7EA2A70)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_D64FD9A228A1C4E0_OFFSET UNITYSDK_OFFSET(0x7EA29D0)
-#define CLASS_1_246549FFFD7413BE_METHOD_1_E6CCFB6FCCF03701_OFFSET UNITYSDK_OFFSET(0x61FF020)
-#define CLASS_1_246549FFFD7413BE__CCTOR_OFFSET UNITYSDK_OFFSET(0x61FE620)
-#define CLASS_1_246549FFFD7413BE__CTOR_OFFSET UNITYSDK_OFFSET(0x61FE5D0)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_0DAB6E47AE48F43F_OFFSET UNITYSDK_OFFSET(0xBDF9520)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_126388F06D886138_OFFSET UNITYSDK_OFFSET(0xBDF8FD0)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_2685B6183E614529_OFFSET UNITYSDK_OFFSET(0xBDF62F0)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_3FD5ECDD3789889D_OFFSET UNITYSDK_OFFSET(0xBDF6940)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_1_OFFSET UNITYSDK_OFFSET(0xBDF8EC0)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_2_OFFSET UNITYSDK_OFFSET(0xBDF95B0)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_OFFSET UNITYSDK_OFFSET(0xBDF8D00)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_7CB484237D76BD68_OFFSET UNITYSDK_OFFSET(0xBDF6DD0)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_BBA7B48D3918837D_OFFSET UNITYSDK_OFFSET(0xBDF8E10)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_C910D6DB718B5ED2_OFFSET UNITYSDK_OFFSET(0xBDF6430)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_D64FD9A228A1C4E0_OFFSET UNITYSDK_OFFSET(0xBDF6390)
+#define CLASS_1_246549FFFD7413BE_METHOD_1_E6CCFB6FCCF03701_OFFSET UNITYSDK_OFFSET(0xBDF8C40)
+#define CLASS_1_246549FFFD7413BE__CCTOR_OFFSET UNITYSDK_OFFSET(0xBDF8C00)
+#define CLASS_1_246549FFFD7413BE__CTOR_OFFSET UNITYSDK_OFFSET(0xBDF8BB0)
 
-inline static constexpr unsigned int Class_1_246549FFFD7413BE_TypeDefinitionIndex = 55267;
+inline static constexpr unsigned int Class_1_246549FFFD7413BE_TypeDefinitionIndex = 43072;
 
 class Class_1_246549FFFD7413BE : public ::System::Object
 {
 public:
-	static ::UnityEngine::Color32* StaticGet_Field_1_2()
+	static ::UnityEngine::Color32* StaticGet_Field_1_0()
 	{
-		return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_246549FFFD7413BE_TypeDefinitionIndex)->GetStaticField(0x11650);
+		return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_246549FFFD7413BE_TypeDefinitionIndex)->GetStaticField(0xFA40);
 	}
 	static ::UnityEngine::Color32* StaticGet_Field_1_1()
 	{
-		return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_246549FFFD7413BE_TypeDefinitionIndex)->GetStaticField(0x11654);
+		return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_246549FFFD7413BE_TypeDefinitionIndex)->GetStaticField(0xFA44);
 	}
-	static ::UnityEngine::Color32* StaticGet_Field_1_0()
+	static ::UnityEngine::Color32* StaticGet_Field_1_2()
 	{
-		return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_246549FFFD7413BE_TypeDefinitionIndex)->GetStaticField(0x11658);
+		return (::UnityEngine::Color32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_246549FFFD7413BE_TypeDefinitionIndex)->GetStaticField(0xFA48);
 	}
-	::PipelineCamera::CircularBuffer_1<::Class_1_246549FFFD7413BE_Struct_2_A89D9FEEC8FE463A>* Field_1_3; // 0x10
+	::PipelineCamera::CircularBuffer_1<::Class_1_246549FFFD7413BE_Struct_2_A89D9FEEC8FE463A_1>* Field_1_3; // 0x10
 	::System::Single Field_1_4; // 0x18
 
 	::System::Void _ctor()
@@ -85,19 +85,14 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_1_273278230A48923F*, ::System::Int32, ::System::Single, ::System::Single, ::System::Single, ::System::Nullable_1<::System::ValueTuple_2<::UnityEngine::Quaternion, ::UnityEngine::Quaternion>>))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_7CB484237D76BD68_OFFSET))(this, a1, a2, a3, a4, a5, a6);
 	}
 
+	::System::Void Method_1_E6CCFB6FCCF03701(::UnityEngine::Quaternion& a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_E6CCFB6FCCF03701_OFFSET))(this, a1);
+	}
+
 	static ::System::String* Method_1_6826B142C4E0ADCA(::System::Single a1, ::System::Boolean a2)
 	{
 		return ((::System::String*(*)(::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_OFFSET))(a1, a2);
-	}
-
-	::System::Void Method_1_0DAB6E47AE48F43F(::System::Single a1, ::UnityEngine::Quaternion& a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Single, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_0DAB6E47AE48F43F_OFFSET))(this, a1, a2);
-	}
-
-	static ::System::String* Method_1_6826B142C4E0ADCA_1(::System::Single a1, ::System::Boolean a2)
-	{
-		return ((::System::String*(*)(::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_1_OFFSET))(a1, a2);
 	}
 
 	static ::System::Void Method_1_BBA7B48D3918837D(::System::Single& a1, ::System::Single& a2)
@@ -105,18 +100,23 @@ public:
 		return ((::System::Void(*)(::System::Single&, ::System::Single&))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_BBA7B48D3918837D_OFFSET))(a1, a2);
 	}
 
+	static ::System::String* Method_1_6826B142C4E0ADCA_1(::System::Single a1, ::System::Boolean a2)
+	{
+		return ((::System::String*(*)(::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_1_OFFSET))(a1, a2);
+	}
+
 	::System::Int32 Method_1_126388F06D886138(::System::Span_1<::Struct_2_31CE9F74ED7EF316> a1, ::System::Single a2, ::System::Single a3, ::System::Func_2<::UnityEngine::Vector3, ::System::Single>* a4, ::System::Single& a5, ::System::Single& a6)
 	{
 		return ((::System::Int32(*)(::PVOID, ::System::Span_1<::Struct_2_31CE9F74ED7EF316>, ::System::Single, ::System::Single, ::System::Func_2<::UnityEngine::Vector3, ::System::Single>*, ::System::Single&, ::System::Single&))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_126388F06D886138_OFFSET))(this, a1, a2, a3, a4, a5, a6);
 	}
 
+	::System::Void Method_1_0DAB6E47AE48F43F(::System::Single a1, ::UnityEngine::Quaternion& a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Single, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_0DAB6E47AE48F43F_OFFSET))(this, a1, a2);
+	}
+
 	static ::System::String* Method_1_6826B142C4E0ADCA_2(::System::Single a1, ::System::Boolean a2)
 	{
 		return ((::System::String*(*)(::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_6826B142C4E0ADCA_2_OFFSET))(a1, a2);
-	}
-
-	::System::Void Method_1_E6CCFB6FCCF03701(::UnityEngine::Quaternion& a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Quaternion&))((::PBYTE)hIl2Cpp + CLASS_1_246549FFFD7413BE_METHOD_1_E6CCFB6FCCF03701_OFFSET))(this, a1);
 	}
 };

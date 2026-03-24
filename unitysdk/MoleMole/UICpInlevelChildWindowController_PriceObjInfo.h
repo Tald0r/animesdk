@@ -5,11 +5,11 @@
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UICPINLEVELCHILDWINDOWCONTROLLER_PRICEOBJINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACCB930)
+#define MOLEMOLE_UICPINLEVELCHILDWINDOWCONTROLLER_PRICEOBJINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B045770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICpInlevelChildWindowController_PriceObjInfo_TypeDefinitionIndex = 81445;
+	inline static constexpr unsigned int UICpInlevelChildWindowController_PriceObjInfo_TypeDefinitionIndex = 83485;
 
 	class UICpInlevelChildWindowController_PriceObjInfo : public ::System::Object
 	{

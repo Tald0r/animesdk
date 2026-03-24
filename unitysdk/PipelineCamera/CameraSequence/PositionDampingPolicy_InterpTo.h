@@ -6,21 +6,21 @@
 
 namespace PipelineCamera::CameraSequence { class CameraSequenceContext; }
 
-#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO_GETDATA_OFFSET UNITYSDK_OFFSET(0x17C70260)
-#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x17C70870)
-#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO__CCTOR_OFFSET UNITYSDK_OFFSET(0x17C708A0)
-#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO__CTOR_OFFSET UNITYSDK_OFFSET(0x17C70880)
+#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO_GETDATA_OFFSET UNITYSDK_OFFSET(0x18358960)
+#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO_GET_ISCONTEXTDEPENDENT_OFFSET UNITYSDK_OFFSET(0x18358F70)
+#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO__CCTOR_OFFSET UNITYSDK_OFFSET(0x18358FA0)
+#define PIPELINECAMERA_CAMERASEQUENCE_POSITIONDAMPINGPOLICY_INTERPTO__CTOR_OFFSET UNITYSDK_OFFSET(0x18358F80)
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int PositionDampingPolicy_InterpTo_TypeDefinitionIndex = 34747;
+	inline static constexpr unsigned int PositionDampingPolicy_InterpTo_TypeDefinitionIndex = 35749;
 
 	class PositionDampingPolicy_InterpTo : public ::PipelineCamera::CameraSequence::PositionDampingPolicy
 	{
 	public:
 		static ::Foundation::Unreal::FName* StaticGet_DampingTime()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(PositionDampingPolicy_InterpTo_TypeDefinitionIndex)->GetStaticField(0x8210);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(PositionDampingPolicy_InterpTo_TypeDefinitionIndex)->GetStaticField(0x8570);
 		}
 		::UnityEngine::Vector3 interpToSpeed; // 0x48
 

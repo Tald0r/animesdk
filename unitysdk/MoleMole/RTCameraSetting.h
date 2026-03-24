@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/CameraSetting.h"
 
-#define MOLEMOLE_RTCAMERASETTING_METHOD_2_66C34EBC49CE3FFF_OFFSET UNITYSDK_OFFSET(0xB8C5220)
-#define MOLEMOLE_RTCAMERASETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xB8C5210)
+#define MOLEMOLE_RTCAMERASETTING_METHOD_2_66C34EBC49CE3FFF_OFFSET UNITYSDK_OFFSET(0xB932F70)
+#define MOLEMOLE_RTCAMERASETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xB932F60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RTCameraSetting_TypeDefinitionIndex = 39093;
+	inline static constexpr unsigned int RTCameraSetting_TypeDefinitionIndex = 37610;
 
 	class RTCameraSetting : public ::MoleMole::CameraSetting
 	{

@@ -7,13 +7,15 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine { class MeshRenderer; }
 namespace UnityEngine { class TextMesh; }
 
-#define NAP3DFONTMODIFIER_INIT_OFFSET UNITYSDK_OFFSET(0x187AA1E0)
-#define NAP3DFONTMODIFIER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x187AA9B0)
-#define NAP3DFONTMODIFIER_START_OFFSET UNITYSDK_OFFSET(0x187AA190)
-#define NAP3DFONTMODIFIER_UPDATE_OFFSET UNITYSDK_OFFSET(0x187AAA40)
-#define NAP3DFONTMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x187AAF50)
+#define NAP3DFONTMODIFIER_INIT_OFFSET UNITYSDK_OFFSET(0x18D09100)
+#define NAP3DFONTMODIFIER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x18D08E20)
+#define NAP3DFONTMODIFIER_ONLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x18D08FF0)
+#define NAP3DFONTMODIFIER_ONREALDISABLE_OFFSET UNITYSDK_OFFSET(0x18D08F60)
+#define NAP3DFONTMODIFIER_START_OFFSET UNITYSDK_OFFSET(0x18D090B0)
+#define NAP3DFONTMODIFIER_UPDATE_OFFSET UNITYSDK_OFFSET(0x18D098D0)
+#define NAP3DFONTMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x18D09DE0)
 
-inline static constexpr unsigned int Nap3DFontModifier_TypeDefinitionIndex = 28013;
+inline static constexpr unsigned int Nap3DFontModifier_TypeDefinitionIndex = 28953;
 
 class Nap3DFontModifier : public ::UnityEngine::MonoBehaviour
 {
@@ -30,6 +32,16 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER__CTOR_OFFSET))(this);
 	}
 
+	::System::Void OnDisable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER_ONDISABLE_OFFSET))(this);
+	}
+
+	::System::Void OnLightweightDeactive()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER_ONLIGHTWEIGHTDEACTIVE_OFFSET))(this);
+	}
+
 	::System::Void Start()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER_START_OFFSET))(this);
@@ -40,9 +52,9 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER_INIT_OFFSET))(this);
 	}
 
-	::System::Void OnDisable()
+	::System::Void OnRealDisable()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER_ONDISABLE_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NAP3DFONTMODIFIER_ONREALDISABLE_OFFSET))(this);
 	}
 
 	::System::Void Update()

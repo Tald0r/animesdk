@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_IDGENERATOR_GENID_OFFSET UNITYSDK_OFFSET(0x7585AE0)
-#define NPCCROWD_IDGENERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x7585B50)
+#define NPCCROWD_IDGENERATOR_GENID_OFFSET UNITYSDK_OFFSET(0x7525110)
+#define NPCCROWD_IDGENERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x7525180)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int IdGenerator_TypeDefinitionIndex = 62253;
+	inline static constexpr unsigned int IdGenerator_TypeDefinitionIndex = 49376;
 
 	class IdGenerator : public ::System::Object
 	{

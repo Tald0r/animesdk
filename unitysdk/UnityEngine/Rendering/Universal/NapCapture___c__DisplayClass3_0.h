@@ -11,24 +11,24 @@ namespace UnityEngine::Rendering { class CommandBuffer; }
 namespace UnityEngine::Rendering::Universal { class NapCapture; }
 namespace UnityEngine::Rendering::Universal { class UniversalAdditionalCameraData; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTURE___C__DISPLAYCLASS3_0__CAPTURE_B__0_OFFSET UNITYSDK_OFFSET(0x19B27180)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTURE___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19B27170)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTURE___C__DISPLAYCLASS3_0__CAPTURE_B__0_OFFSET UNITYSDK_OFFSET(0x19EDA060)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCAPTURE___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19EDA050)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapCapture___c__DisplayClass3_0_TypeDefinitionIndex = 28725;
+	inline static constexpr unsigned int NapCapture___c__DisplayClass3_0_TypeDefinitionIndex = 29671;
 
 	class NapCapture___c__DisplayClass3_0 : public ::System::Object
 	{
 	public:
 		::UnityEngine::Rendering::Universal::NapCapture_CaptureData captureData; // 0x10
-		::System::Action* finishedAction; // 0x28
+		::UnityEngine::Rendering::Universal::UniversalAdditionalCameraData* cameraData; // 0x28
 		::UnityEngine::Rendering::Universal::NapCapture* __4__this; // 0x30
-		::UnityEngine::Rendering::Universal::UniversalAdditionalCameraData* cameraData; // 0x38
-		::System::Boolean srgb; // 0x40
-		::System::Int32 downSample; // 0x44
-		::System::Single blurRadius; // 0x48
-		::System::Int32 propertyID; // 0x4C
+		::System::Action* finishedAction; // 0x38
+		::System::Int32 propertyID; // 0x40
+		::System::Single blurRadius; // 0x44
+		::System::Int32 downSample; // 0x48
+		::System::Boolean srgb; // 0x4C
 
 		::System::Void _ctor()
 		{

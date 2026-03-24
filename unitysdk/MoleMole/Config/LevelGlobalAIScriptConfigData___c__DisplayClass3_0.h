@@ -5,12 +5,12 @@
 namespace MoleMole::Config { class LevelGlobalAIScriptConfig; }
 namespace System { class Action; }
 
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCD1D6F0)
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS3_0__RELOADFROMFILE_B__0_OFFSET UNITYSDK_OFFSET(0xCD1D700)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xE376380)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS3_0__RELOADFROMFILE_B__0_OFFSET UNITYSDK_OFFSET(0xE376390)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LevelGlobalAIScriptConfigData___c__DisplayClass3_0_TypeDefinitionIndex = 63669;
+	inline static constexpr unsigned int LevelGlobalAIScriptConfigData___c__DisplayClass3_0_TypeDefinitionIndex = 76292;
 
 	class LevelGlobalAIScriptConfigData___c__DisplayClass3_0 : public ::System::Object
 	{

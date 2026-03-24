@@ -6,7 +6,7 @@
 
 namespace FlatBuffers
 {
-	inline static constexpr unsigned int UnmanagedMemoryManager_1_TypeDefinitionIndex = 8726;
+	inline static constexpr unsigned int UnmanagedMemoryManager_1_TypeDefinitionIndex = 8737;
 
 	template <typename T>
 	class UnmanagedMemoryManager_1 : public ::System::Buffers::MemoryManager_1<T>

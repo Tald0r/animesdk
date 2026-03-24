@@ -3,12 +3,12 @@
 #include "unitysdk/Enum_3_A3F38457E644339A.h"
 #include "unitysdk/MoleMole/UILevelResultV2_VR_PageController.h"
 
-#define MOLEMOLE_UILEVELRESULTV2_VR_DOUBLEELITE_PAGECONTROLLER_GET_REWARDBUFFGAMETAG_OFFSET UNITYSDK_OFFSET(0x68B7C20)
-#define MOLEMOLE_UILEVELRESULTV2_VR_DOUBLEELITE_PAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x68B7C30)
+#define MOLEMOLE_UILEVELRESULTV2_VR_DOUBLEELITE_PAGECONTROLLER_GET_REWARDBUFFGAMETAG_OFFSET UNITYSDK_OFFSET(0x7FAD740)
+#define MOLEMOLE_UILEVELRESULTV2_VR_DOUBLEELITE_PAGECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7FAD750)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILevelResultV2_VR_DoubleElite_PageController_TypeDefinitionIndex = 41084;
+	inline static constexpr unsigned int UILevelResultV2_VR_DoubleElite_PageController_TypeDefinitionIndex = 73083;
 
 	class UILevelResultV2_VR_DoubleElite_PageController : public ::MoleMole::UILevelResultV2_VR_PageController
 	{

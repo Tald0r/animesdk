@@ -3,7 +3,7 @@
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::Math
 {
-	inline static constexpr unsigned int FloatComparison_Operation_TypeDefinitionIndex = 30626;
+	inline static constexpr unsigned int FloatComparison_Operation_TypeDefinitionIndex = 31578;
 
 	enum class FloatComparison_Operation : ::System::Int32
 	{

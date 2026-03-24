@@ -4,11 +4,11 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONAUDIOVIDEODELAYWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA840930)
+#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONAUDIOVIDEODELAYWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8F53460)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicGameGeneralCalibrationAudioVideoDelayWidgetController_Context_TypeDefinitionIndex = 72482;
+	inline static constexpr unsigned int UIMusicGameGeneralCalibrationAudioVideoDelayWidgetController_Context_TypeDefinitionIndex = 54481;
 
 	class UIMusicGameGeneralCalibrationAudioVideoDelayWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

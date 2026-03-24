@@ -3,7 +3,7 @@
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int IBaseMarker_TypeDefinitionIndex = 36171;
+	inline static constexpr unsigned int IBaseMarker_TypeDefinitionIndex = 37191;
 
 	class IBaseMarker
 	{

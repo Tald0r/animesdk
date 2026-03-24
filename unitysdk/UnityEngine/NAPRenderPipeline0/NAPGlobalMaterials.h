@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int NAPGlobalMaterials_TypeDefinitionIndex = 5700;
+	inline static constexpr unsigned int NAPGlobalMaterials_TypeDefinitionIndex = 5703;
 
 	enum class NAPGlobalMaterials : ::System::Int32
 	{

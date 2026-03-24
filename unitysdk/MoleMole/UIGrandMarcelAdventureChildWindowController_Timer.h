@@ -6,12 +6,12 @@ class Class_2_A8F5ABF31E066ED4;
 namespace MoleMole::MiniGame::BangbooPartyGame { class MonoDigitConfig; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER_TIMER_SAFESETACTIVE_OFFSET UNITYSDK_OFFSET(0x3B6850)
-#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER_TIMER_SETTIME_OFFSET UNITYSDK_OFFSET(0x3B68D0)
+#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER_TIMER_SAFESETACTIVE_OFFSET UNITYSDK_OFFSET(0x3578D0)
+#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER_TIMER_SETTIME_OFFSET UNITYSDK_OFFSET(0x357950)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelAdventureChildWindowController_Timer_TypeDefinitionIndex = 55729;
+	inline static constexpr unsigned int UIGrandMarcelAdventureChildWindowController_Timer_TypeDefinitionIndex = 74044;
 
 	struct alignas(8) UIGrandMarcelAdventureChildWindowController_Timer
 	{

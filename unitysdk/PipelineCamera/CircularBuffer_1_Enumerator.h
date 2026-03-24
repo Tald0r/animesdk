@@ -7,7 +7,7 @@ namespace System { class Object; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int CircularBuffer_1_Enumerator_TypeDefinitionIndex = 34485;
+	inline static constexpr unsigned int CircularBuffer_1_Enumerator_TypeDefinitionIndex = 35487;
 
 	template <typename T>
 	struct CircularBuffer_1_Enumerator

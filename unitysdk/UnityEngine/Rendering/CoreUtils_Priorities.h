@@ -4,7 +4,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int CoreUtils_Priorities_TypeDefinitionIndex = 9584;
+	inline static constexpr unsigned int CoreUtils_Priorities_TypeDefinitionIndex = 9586;
 
 	class CoreUtils_Priorities : public ::System::Object
 	{

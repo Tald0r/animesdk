@@ -4,24 +4,24 @@
 
 namespace FlowCanvas { template <typename T> class ValueHandler_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROGETROOMISIMMEDIATEFIGHT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6E18C80)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROGETROOMISIMMEDIATEFIGHT___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6E18CC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROGETROOMISIMMEDIATEFIGHT___C__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x6E18CD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROGETROOMISIMMEDIATEFIGHT___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC2681E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROGETROOMISIMMEDIATEFIGHT___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC268220)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELZEROGETROOMISIMMEDIATEFIGHT___C__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0xC268230)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDLevelZeroGetRoomIsImmediateFight___c_TypeDefinitionIndex = 70228;
+	inline static constexpr unsigned int LDLevelZeroGetRoomIsImmediateFight___c_TypeDefinitionIndex = 71513;
 
 	class LDLevelZeroGetRoomIsImmediateFight___c : public ::System::Object
 	{
 	public:
-		static ::FlowCanvas::ValueHandler_1<::System::Boolean>** StaticGet___9__0_0()
-		{
-			return (::FlowCanvas::ValueHandler_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroGetRoomIsImmediateFight___c_TypeDefinitionIndex)->GetStaticField(0x43F30);
-		}
 		static ::MoleMole::FlowCanvas::Nodes::LDLevelZeroGetRoomIsImmediateFight___c** StaticGet___9()
 		{
-			return (::MoleMole::FlowCanvas::Nodes::LDLevelZeroGetRoomIsImmediateFight___c**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroGetRoomIsImmediateFight___c_TypeDefinitionIndex)->GetStaticField(0x43F38);
+			return (::MoleMole::FlowCanvas::Nodes::LDLevelZeroGetRoomIsImmediateFight___c**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroGetRoomIsImmediateFight___c_TypeDefinitionIndex)->GetStaticField(0x440E0);
+		}
+		static ::FlowCanvas::ValueHandler_1<::System::Boolean>** StaticGet___9__0_0()
+		{
+			return (::FlowCanvas::ValueHandler_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(LDLevelZeroGetRoomIsImmediateFight___c_TypeDefinitionIndex)->GetStaticField(0x440E8);
 		}
 
 		static ::System::Void _cctor()

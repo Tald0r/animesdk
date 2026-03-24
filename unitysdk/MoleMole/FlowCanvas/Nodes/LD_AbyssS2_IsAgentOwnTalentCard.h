@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_ISAGENTOWNTALENTCARD_INVOKE_OFFSET UNITYSDK_OFFSET(0xF1AE920)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_ISAGENTOWNTALENTCARD__CTOR_OFFSET UNITYSDK_OFFSET(0xF1AEA00)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_ISAGENTOWNTALENTCARD_INVOKE_OFFSET UNITYSDK_OFFSET(0xB9887E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_ISAGENTOWNTALENTCARD__CTOR_OFFSET UNITYSDK_OFFSET(0xB9888C0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_IsAgentOwnTalentCard_TypeDefinitionIndex = 50724;
+	inline static constexpr unsigned int LD_AbyssS2_IsAgentOwnTalentCard_TypeDefinitionIndex = 45107;
 
 	class LD_AbyssS2_IsAgentOwnTalentCard : public ::FlowCanvas::Nodes::PureFunctionNode_2<::System::Boolean, ::MoleMole::Battle::Entity*>
 	{

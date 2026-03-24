@@ -7,13 +7,13 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace System { class String; }
 
-#define SIRENIX_SERIALIZATION_DECIMALSERIALIZER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1B077520)
-#define SIRENIX_SERIALIZATION_DECIMALSERIALIZER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1B077A60)
-#define SIRENIX_SERIALIZATION_DECIMALSERIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B077B20)
+#define SIRENIX_SERIALIZATION_DECIMALSERIALIZER_READVALUE_OFFSET UNITYSDK_OFFSET(0x1B685280)
+#define SIRENIX_SERIALIZATION_DECIMALSERIALIZER_WRITEVALUE_OFFSET UNITYSDK_OFFSET(0x1B6857C0)
+#define SIRENIX_SERIALIZATION_DECIMALSERIALIZER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B685880)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int DecimalSerializer_TypeDefinitionIndex = 7404;
+	inline static constexpr unsigned int DecimalSerializer_TypeDefinitionIndex = 7409;
 
 	class DecimalSerializer : public ::Sirenix::Serialization::Serializer_1<::System::Decimal>
 	{

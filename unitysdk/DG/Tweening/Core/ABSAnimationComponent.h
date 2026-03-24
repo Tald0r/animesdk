@@ -6,11 +6,11 @@
 namespace DG::Tweening { class Tween; }
 namespace UnityEngine::Events { class UnityEvent; }
 
-#define DG_TWEENING_CORE_ABSANIMATIONCOMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B02BF30)
+#define DG_TWEENING_CORE_ABSANIMATIONCOMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B63BF30)
 
 namespace DG::Tweening::Core
 {
-	inline static constexpr unsigned int ABSAnimationComponent_TypeDefinitionIndex = 31452;
+	inline static constexpr unsigned int ABSAnimationComponent_TypeDefinitionIndex = 32404;
 
 	class ABSAnimationComponent : public ::UnityEngine::MonoBehaviour
 	{

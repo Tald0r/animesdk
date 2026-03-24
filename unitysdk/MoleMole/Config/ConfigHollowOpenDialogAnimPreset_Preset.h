@@ -4,17 +4,17 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWOPENDIALOGANIMPRESET_PRESET__CTOR_OFFSET UNITYSDK_OFFSET(0x13F95170)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWOPENDIALOGANIMPRESET_PRESET__CTOR_OFFSET UNITYSDK_OFFSET(0xF2CEBC0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowOpenDialogAnimPreset_Preset_TypeDefinitionIndex = 59332;
+	inline static constexpr unsigned int ConfigHollowOpenDialogAnimPreset_Preset_TypeDefinitionIndex = 67306;
 
 	class ConfigHollowOpenDialogAnimPreset_Preset : public ::System::Object
 	{
 	public:
-		::System::String* StartAnim; // 0x10
-		::System::String* EndAnim; // 0x18
+		::System::String* EndAnim; // 0x10
+		::System::String* StartAnim; // 0x18
 		::System::String* LoopAnim; // 0x20
 
 		::System::Void _ctor()

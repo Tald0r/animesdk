@@ -15,38 +15,38 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x96FF140)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x96FF150)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x96FF620)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x96FF940)
-#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x96FF900)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB08E420)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB08E430)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB08E900)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB08EC20)
+#define MOLEMOLE_CONFIG_ANIMATORZONEFORBIDELEMENTABNORMAL_ANIMATORZONEFORBIDELEMENTABNORMAL_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB08EBE0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex = 66485;
+	inline static constexpr unsigned int AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex = 45921;
 
 	class AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneForbidElementAbnormal*>
 	{
 	public:
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DamageElementType>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DamageElementType>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DA60);
+		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C290);
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DA68);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C298);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DamageElementType>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::DamageElementType>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C2A0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DA70);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C2A8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DA78);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C2B0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneForbidElementAbnormal_AnimatorZoneForbidElementAbnormal_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DA80);
 		}
 
 		::System::Void _ctor()

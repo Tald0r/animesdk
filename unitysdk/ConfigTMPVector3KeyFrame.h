@@ -3,9 +3,9 @@
 #include "unitysdk/ConfigTMPKeyFrameBase.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CONFIGTMPVECTOR3KEYFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x84FBAA0)
+#define CONFIGTMPVECTOR3KEYFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x65D8820)
 
-inline static constexpr unsigned int ConfigTMPVector3KeyFrame_TypeDefinitionIndex = 39881;
+inline static constexpr unsigned int ConfigTMPVector3KeyFrame_TypeDefinitionIndex = 55066;
 
 class ConfigTMPVector3KeyFrame : public ::ConfigTMPKeyFrameBase
 {

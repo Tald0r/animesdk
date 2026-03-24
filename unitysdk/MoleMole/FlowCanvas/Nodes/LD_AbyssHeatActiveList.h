@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSHEATACTIVELIST_INVOKE_OFFSET UNITYSDK_OFFSET(0x8B05590)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSHEATACTIVELIST__CTOR_OFFSET UNITYSDK_OFFSET(0x8B05830)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSHEATACTIVELIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xB18A380)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSHEATACTIVELIST__CTOR_OFFSET UNITYSDK_OFFSET(0xB18A610)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssHeatActiveList_TypeDefinitionIndex = 40794;
+	inline static constexpr unsigned int LD_AbyssHeatActiveList_TypeDefinitionIndex = 44982;
 
 	class LD_AbyssHeatActiveList : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Collections::Generic::List_1<::System::Int32>*>
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define SCENETOOLSET_DESIGNTOOL_MONOOBJECTREF__CTOR_OFFSET UNITYSDK_OFFSET(0x1815E9F0)
+#define SCENETOOLSET_DESIGNTOOL_MONOOBJECTREF__CTOR_OFFSET UNITYSDK_OFFSET(0x1826EF30)
 
 namespace SceneToolSet::DesignTool
 {
-	inline static constexpr unsigned int MonoObjectRef_TypeDefinitionIndex = 53365;
+	inline static constexpr unsigned int MonoObjectRef_TypeDefinitionIndex = 43526;
 
 	class MonoObjectRef : public ::UnityEngine::MonoBehaviour
 	{

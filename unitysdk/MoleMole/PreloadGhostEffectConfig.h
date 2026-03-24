@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_PRELOADGHOSTEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8A89840)
+#define MOLEMOLE_PRELOADGHOSTEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8C91DD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PreloadGhostEffectConfig_TypeDefinitionIndex = 52625;
+	inline static constexpr unsigned int PreloadGhostEffectConfig_TypeDefinitionIndex = 52940;
 
 	class PreloadGhostEffectConfig : public ::System::Object
 	{

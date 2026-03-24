@@ -3,22 +3,22 @@
 #include "unitysdk/Class_1_F57C3EEEB03201AF.h"
 
 namespace System { template <typename T> class Action_1; }
-template <typename T> class Class_0_16E4307DCC419505_103;
 template <typename T> class Class_0_16E4307DCC41950C_12;
+template <typename T> class Class_0_16E4307DCC41950C_13;
 
-#define CLASS_2_279AB55CDC9A1BDB_METHOD_2_B991AA5072E9A99A_OFFSET UNITYSDK_OFFSET(0x6E615E0)
-#define CLASS_2_279AB55CDC9A1BDB_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x6E613C0)
-#define CLASS_2_279AB55CDC9A1BDB__CTOR_OFFSET UNITYSDK_OFFSET(0x6E61560)
+#define CLASS_2_279AB55CDC9A1BDB_METHOD_2_B991AA5072E9A99A_OFFSET UNITYSDK_OFFSET(0x10D54C10)
+#define CLASS_2_279AB55CDC9A1BDB_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x10D549F0)
+#define CLASS_2_279AB55CDC9A1BDB__CTOR_OFFSET UNITYSDK_OFFSET(0x10D54B90)
 
-inline static constexpr unsigned int Class_2_279AB55CDC9A1BDB_TypeDefinitionIndex = 52301;
+inline static constexpr unsigned int Class_2_279AB55CDC9A1BDB_TypeDefinitionIndex = 80390;
 
 class Class_2_279AB55CDC9A1BDB : public ::Class_1_F57C3EEEB03201AF
 {
 public:
-	::Class_0_16E4307DCC419505_103<::System::Int32>* Field_2_0; // 0x60
-	::Class_0_16E4307DCC41950C_12<::System::Boolean>* Field_2_3; // 0x68
-	::System::Action_1<::System::Int32>* Field_2_1; // 0x70
-	::Class_0_16E4307DCC419505_103<::System::Boolean>* Field_2_2; // 0x78
+	::Class_0_16E4307DCC41950C_12<::System::Boolean>* Field_2_3; // 0x60
+	::System::Action_1<::System::Int32>* Field_2_1; // 0x68
+	::Class_0_16E4307DCC41950C_13<::System::Boolean>* Field_2_2; // 0x70
+	::Class_0_16E4307DCC41950C_13<::System::Int32>* Field_2_0; // 0x78
 
 	::System::Void _ctor()
 	{

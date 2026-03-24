@@ -5,7 +5,7 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class Queue_1; }
 
-inline static constexpr unsigned int Class_1_C82B4453622A05D9_TypeDefinitionIndex = 25086;
+inline static constexpr unsigned int Class_1_C82B4453622A05D9_TypeDefinitionIndex = 25885;
 
 template <typename T>
 class Class_1_C82B4453622A05D9 : public ::System::Object

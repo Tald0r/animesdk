@@ -8,24 +8,24 @@ namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_9DA61E8AA0D43E51_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xBB79900)
-#define CLASS_2_9DA61E8AA0D43E51_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xBB79A70)
-#define CLASS_2_9DA61E8AA0D43E51__CTOR_OFFSET UNITYSDK_OFFSET(0xBB79A60)
+#define CLASS_2_9DA61E8AA0D43E51_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x8E0EF90)
+#define CLASS_2_9DA61E8AA0D43E51_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8E0F100)
+#define CLASS_2_9DA61E8AA0D43E51__CTOR_OFFSET UNITYSDK_OFFSET(0x8E0F0F0)
 
-inline static constexpr unsigned int Class_2_9DA61E8AA0D43E51_TypeDefinitionIndex = 58200;
+inline static constexpr unsigned int Class_2_9DA61E8AA0D43E51_TypeDefinitionIndex = 48064;
 
 class Class_2_9DA61E8AA0D43E51 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::CanvasGroup* Field_2_8; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x30
-	::UnityEngine::RectTransform* Field_2_7; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x28
+	::UnityEngine::RectTransform* Field_2_7; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x48
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x50
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x58
+	::UnityEngine::CanvasGroup* Field_2_8; // 0x58
 
 	::System::Void _ctor()
 	{

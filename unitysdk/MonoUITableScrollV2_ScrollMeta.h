@@ -4,7 +4,7 @@
 
 class MonoUITableScrollV2;
 
-inline static constexpr unsigned int MonoUITableScrollV2_ScrollMeta_TypeDefinitionIndex = 43846;
+inline static constexpr unsigned int MonoUITableScrollV2_ScrollMeta_TypeDefinitionIndex = 64502;
 
 struct alignas(8) MonoUITableScrollV2_ScrollMeta
 {

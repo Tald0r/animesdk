@@ -7,13 +7,13 @@ namespace UnityEngine::NAPRenderPipeline0 { class ClampedFloatParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class ColorParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class Vector2Parameter; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_VIGNETTE_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x16DC40A0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_VIGNETTE_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x16DC4100)
-#define UNITYENGINE_RENDERING_UNIVERSAL_VIGNETTE__CTOR_OFFSET UNITYSDK_OFFSET(0x16DC4140)
+#define UNITYENGINE_RENDERING_UNIVERSAL_VIGNETTE_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x1742C930)
+#define UNITYENGINE_RENDERING_UNIVERSAL_VIGNETTE_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x1742C990)
+#define UNITYENGINE_RENDERING_UNIVERSAL_VIGNETTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1742C9D0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int Vignette_TypeDefinitionIndex = 28705;
+	inline static constexpr unsigned int Vignette_TypeDefinitionIndex = 29648;
 
 	class Vignette : public ::UnityEngine::NAPRenderPipeline0::VolumeComponent
 	{

@@ -3,13 +3,13 @@
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalgameFilterType_TypeDefinitionIndex = 41338;
+	inline static constexpr unsigned int GalgameFilterType_TypeDefinitionIndex = 69737;
 
 	enum class GalgameFilterType : ::System::Int32
 	{
-		None = 0,
 		Recalling = 1,
-		WhiteScreenShaking = 3,
+		None = 0,
 		Connecting = 2,
+		WhiteScreenShaking = 3,
 	};
 }

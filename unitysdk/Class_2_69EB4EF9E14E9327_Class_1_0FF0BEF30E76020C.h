@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_69EB4EF9E14E9327_Class_1_F1AD72368E0D7BE3_11;
+class Class_2_69EB4EF9E14E9327_Class_1_F1AD72368E0D7BE3_9;
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_69EB4EF9E14E9327_CLASS_1_0FF0BEF30E76020C_METHOD_1_B18C2FB6E18FCDD7_OFFSET UNITYSDK_OFFSET(0x7E99920)
-#define CLASS_2_69EB4EF9E14E9327_CLASS_1_0FF0BEF30E76020C__CTOR_OFFSET UNITYSDK_OFFSET(0x7E99910)
+#define CLASS_2_69EB4EF9E14E9327_CLASS_1_0FF0BEF30E76020C_METHOD_1_B18C2FB6E18FCDD7_OFFSET UNITYSDK_OFFSET(0x9940360)
+#define CLASS_2_69EB4EF9E14E9327_CLASS_1_0FF0BEF30E76020C__CTOR_OFFSET UNITYSDK_OFFSET(0x9940350)
 
-inline static constexpr unsigned int Class_2_69EB4EF9E14E9327_Class_1_0FF0BEF30E76020C_TypeDefinitionIndex = 71038;
+inline static constexpr unsigned int Class_2_69EB4EF9E14E9327_Class_1_0FF0BEF30E76020C_TypeDefinitionIndex = 61098;
 
 class Class_2_69EB4EF9E14E9327_Class_1_0FF0BEF30E76020C : public ::System::Object
 {
 public:
-	::Class_2_69EB4EF9E14E9327_Class_1_F1AD72368E0D7BE3_11* Field_1_1; // 0x10
-	::System::Collections::Generic::List_1<::System::String*>* Field_1_0; // 0x18
+	::System::Collections::Generic::List_1<::System::String*>* Field_1_0; // 0x10
+	::Class_2_69EB4EF9E14E9327_Class_1_F1AD72368E0D7BE3_9* Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

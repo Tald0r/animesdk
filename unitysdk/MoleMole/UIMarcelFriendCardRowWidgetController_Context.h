@@ -5,11 +5,11 @@
 
 class Class_1_BE6BF7909AD9D940;
 
-#define MOLEMOLE_UIMARCELFRIENDCARDROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x92AE6D0)
+#define MOLEMOLE_UIMARCELFRIENDCARDROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAF774E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMarcelFriendCardRowWidgetController_Context_TypeDefinitionIndex = 53407;
+	inline static constexpr unsigned int UIMarcelFriendCardRowWidgetController_Context_TypeDefinitionIndex = 68186;
 
 	class UIMarcelFriendCardRowWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/ToolBuddy/ThirdParty/VectorGraphics/Matrix2D.h"
 
-#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGDOCUMENT_GRADIENTEXDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x193B9B30)
+#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGDOCUMENT_GRADIENTEXDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1983C3C0)
 
 namespace ToolBuddy::ThirdParty::VectorGraphics
 {
-	inline static constexpr unsigned int SVGDocument_GradientExData_TypeDefinitionIndex = 27012;
+	inline static constexpr unsigned int SVGDocument_GradientExData_TypeDefinitionIndex = 27952;
 
 	class SVGDocument_GradientExData : public ::System::Object
 	{

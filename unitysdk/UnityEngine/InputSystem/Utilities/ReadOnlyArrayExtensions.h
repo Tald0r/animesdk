@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IReadOnlyLi
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int ReadOnlyArrayExtensions_TypeDefinitionIndex = 27966;
+	inline static constexpr unsigned int ReadOnlyArrayExtensions_TypeDefinitionIndex = 28906;
 
 	class ReadOnlyArrayExtensions : public ::System::Object
 	{

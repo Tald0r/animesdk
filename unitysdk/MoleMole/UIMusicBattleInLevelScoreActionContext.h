@@ -3,17 +3,17 @@
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 #include "unitysdk/System/ValueTuple_3.h"
 
-#define MOLEMOLE_UIMUSICBATTLEINLEVELSCOREACTIONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA3D8A00)
+#define MOLEMOLE_UIMUSICBATTLEINLEVELSCOREACTIONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8EEC7F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicBattleInLevelScoreActionContext_TypeDefinitionIndex = 52349;
+	inline static constexpr unsigned int UIMusicBattleInLevelScoreActionContext_TypeDefinitionIndex = 45248;
 
 	class UIMusicBattleInLevelScoreActionContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::ValueTuple_3<::System::Int32, ::System::Int32, ::System::Int32> Template; // 0x28
-		::System::Int32 InitScore; // 0x34
+		::System::Int32 InitScore; // 0x28
+		::System::ValueTuple_3<::System::Int32, ::System::Int32, ::System::Int32> Template; // 0x2C
 
 		::System::Void _ctor()
 		{

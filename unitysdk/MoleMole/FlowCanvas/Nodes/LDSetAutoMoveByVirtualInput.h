@@ -5,12 +5,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETAUTOMOVEBYVIRTUALINPUT_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCE59B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETAUTOMOVEBYVIRTUALINPUT__CTOR_OFFSET UNITYSDK_OFFSET(0xCCE5C20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETAUTOMOVEBYVIRTUALINPUT_INVOKE_OFFSET UNITYSDK_OFFSET(0xA014F60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETAUTOMOVEBYVIRTUALINPUT__CTOR_OFFSET UNITYSDK_OFFSET(0xA0151D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSetAutoMoveByVirtualInput_TypeDefinitionIndex = 66037;
+	inline static constexpr unsigned int LDSetAutoMoveByVirtualInput_TypeDefinitionIndex = 66328;
 
 	class LDSetAutoMoveByVirtualInput : public ::FlowCanvas::Nodes::CallableFunctionNode_4<::System::Boolean, ::MoleMole::Battle::Entity*, ::System::Boolean, ::UnityEngine::Vector2>
 	{

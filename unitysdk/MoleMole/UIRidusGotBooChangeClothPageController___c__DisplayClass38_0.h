@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIRidusGotBooChangeClothPageController; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC2FAD0)
-#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__SHOWTAB_B__1_OFFSET UNITYSDK_OFFSET(0xAC33380)
+#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA7EFD0)
+#define MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__SHOWTAB_B__2_OFFSET UNITYSDK_OFFSET(0xCA82890)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooChangeClothPageController___c__DisplayClass38_0_TypeDefinitionIndex = 66428;
+	inline static constexpr unsigned int UIRidusGotBooChangeClothPageController___c__DisplayClass38_0_TypeDefinitionIndex = 68244;
 
 	class UIRidusGotBooChangeClothPageController___c__DisplayClass38_0 : public ::System::Object
 	{
@@ -22,9 +22,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ShowTab_b__1()
+		::System::Void _ShowTab_b__2()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__SHOWTAB_B__1_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIRIDUSGOTBOOCHANGECLOTHPAGECONTROLLER___C__DISPLAYCLASS38_0__SHOWTAB_B__2_OFFSET))(this);
 		}
 	};
 }

@@ -5,22 +5,22 @@
 namespace MoleMole { class UIHollowMainPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA615360)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__PLAYOVERLOADANIMATION_B__0_OFFSET UNITYSDK_OFFSET(0xA615370)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__PLAYOVERLOADANIMATION_B__1_OFFSET UNITYSDK_OFFSET(0xA615410)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__PLAYOVERLOADANIMATION_B__2_OFFSET UNITYSDK_OFFSET(0xA6154A0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC1337C0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__PLAYOVERLOADANIMATION_B__0_OFFSET UNITYSDK_OFFSET(0xC1337D0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__PLAYOVERLOADANIMATION_B__1_OFFSET UNITYSDK_OFFSET(0xC133870)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS255_0__PLAYOVERLOADANIMATION_B__2_OFFSET UNITYSDK_OFFSET(0xC133900)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass255_0_TypeDefinitionIndex = 52587;
+	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass255_0_TypeDefinitionIndex = 49555;
 
 	class UIHollowMainPageController___c__DisplayClass255_0 : public ::System::Object
 	{
 	public:
-		::System::Action* __9__2; // 0x10
-		::System::Action* __9__1; // 0x18
-		::MoleMole::UIHollowMainPageController* __4__this; // 0x20
-		::System::Action* callback; // 0x28
+		::System::Action* callback; // 0x10
+		::MoleMole::UIHollowMainPageController* __4__this; // 0x18
+		::System::Action* __9__2; // 0x20
+		::System::Action* __9__1; // 0x28
 
 		::System::Void _ctor()
 		{

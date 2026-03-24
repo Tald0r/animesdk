@@ -8,12 +8,12 @@ namespace PipelineCamera::CameraSequence { class CameraSequenceContext; }
 namespace PipelineCamera::CameraSequence { class CameraSequenceEvent; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define PIPELINECAMERA_CAMERASEQUENCE_CAMERASEQUENCEEVENTQUEUE___C__DISPLAYCLASS6_0__CONSUMEACTIVESTATES_B__0_OFFSET UNITYSDK_OFFSET(0x1A1A3920)
-#define PIPELINECAMERA_CAMERASEQUENCE_CAMERASEQUENCEEVENTQUEUE___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1A3910)
+#define PIPELINECAMERA_CAMERASEQUENCE_CAMERASEQUENCEEVENTQUEUE___C__DISPLAYCLASS6_0__CONSUMEACTIVESTATES_B__0_OFFSET UNITYSDK_OFFSET(0x1A7317D0)
+#define PIPELINECAMERA_CAMERASEQUENCE_CAMERASEQUENCEEVENTQUEUE___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7317C0)
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int CameraSequenceEventQueue___c__DisplayClass6_0_TypeDefinitionIndex = 34685;
+	inline static constexpr unsigned int CameraSequenceEventQueue___c__DisplayClass6_0_TypeDefinitionIndex = 35687;
 
 	class CameraSequenceEventQueue___c__DisplayClass6_0 : public ::System::Object
 	{

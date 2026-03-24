@@ -17,23 +17,23 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Mesh; }
 
-#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS_ISSAMEMATERIALINTEXTUREBAKERESULT_OFFSET UNITYSDK_OFFSET(0x1A8F6750)
-#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS_MAPSHAREDMATERIALSTOATLASRECTS_OFFSET UNITYSDK_OFFSET(0x1A8F5650)
-#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS_TRYMAPMATERIALTOUVRECT_OFFSET UNITYSDK_OFFSET(0x1A8F69C0)
-#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8F51A0)
+#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS_ISSAMEMATERIALINTEXTUREBAKERESULT_OFFSET UNITYSDK_OFFSET(0x1AECFAF0)
+#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS_MAPSHAREDMATERIALSTOATLASRECTS_OFFSET UNITYSDK_OFFSET(0x1AECE9F0)
+#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS_TRYMAPMATERIALTOUVRECT_OFFSET UNITYSDK_OFFSET(0x1AECFD60)
+#define DIGITALOPUS_MB_CORE_MB3_MESHCOMBINERSINGLE_UVADJUSTER_ATLAS__CTOR_OFFSET UNITYSDK_OFFSET(0x1AECE540)
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB3_MeshCombinerSingle_UVAdjuster_Atlas_TypeDefinitionIndex = 81302;
+	inline static constexpr unsigned int MB3_MeshCombinerSingle_UVAdjuster_Atlas_TypeDefinitionIndex = 83343;
 
 	class MB3_MeshCombinerSingle_UVAdjuster_Atlas : public ::System::Object
 	{
 	public:
-		::MB2_TextureBakeResults* textureBakeResults; // 0x10
-		::Il2CppArray<::MB_MaterialAndUVRect*>* matsAndSrcUVRect; // 0x18
+		::Il2CppArray<::MB_MaterialAndUVRect*>* matsAndSrcUVRect; // 0x10
+		::MB2_TextureBakeResults* textureBakeResults; // 0x18
 		::Il2CppArray<::System::Int32>* numTimesMatAppearsInAtlas; // 0x20
-		::System::Boolean compareNamesWhenComparingMaterials; // 0x28
-		::DigitalOpus::MB::Core::MB2_LogLevel LOG_LEVEL; // 0x2C
+		::DigitalOpus::MB::Core::MB2_LogLevel LOG_LEVEL; // 0x28
+		::System::Boolean compareNamesWhenComparingMaterials; // 0x2C
 
 		::System::Void _ctor(::MB2_TextureBakeResults* tbr, ::DigitalOpus::MB::Core::MB2_LogLevel ll)
 		{

@@ -7,11 +7,11 @@
 namespace System { class String; }
 namespace UnityEngine::InputSystem { class InputActionMap; }
 
-#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONMAP_WRITEMAPJSON_FROMMAP_OFFSET UNITYSDK_OFFSET(0x1A68F530)
+#define UNITYENGINE_INPUTSYSTEM_INPUTACTIONMAP_WRITEMAPJSON_FROMMAP_OFFSET UNITYSDK_OFFSET(0x1AC3A810)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputActionMap_WriteMapJson_TypeDefinitionIndex = 27429;
+	inline static constexpr unsigned int InputActionMap_WriteMapJson_TypeDefinitionIndex = 28369;
 
 	struct alignas(8) InputActionMap_WriteMapJson
 	{

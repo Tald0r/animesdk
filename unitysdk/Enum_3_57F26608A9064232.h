@@ -1,14 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Enum_3_57F26608A9064232_TypeDefinitionIndex = 63470;
+inline static constexpr unsigned int Enum_3_57F26608A9064232_TypeDefinitionIndex = 75197;
 
 enum class Enum_3_57F26608A9064232 : ::System::Int32
 {
-	KillMonsterTimes = 3,
-	PassAreaTimes = 4,
 	PassTime = 1,
-	PassTimes = 2,
-	Max = 5,
 	None = 0,
+	PassAreaTimes = 4,
+	Max = 5,
+	KillMonsterTimes = 3,
+	PassTimes = 2,
 };

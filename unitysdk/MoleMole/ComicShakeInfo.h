@@ -4,17 +4,17 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define MOLEMOLE_COMICSHAKEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC909E0)
+#define MOLEMOLE_COMICSHAKEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2AC510)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ComicShakeInfo_TypeDefinitionIndex = 29108;
+	inline static constexpr unsigned int ComicShakeInfo_TypeDefinitionIndex = 30061;
 
 	class ComicShakeInfo : public ::System::Object
 	{
 	public:
-		::UnityEngine::Vector2 shakePivot; // 0x10
-		::MoleMole::ComicImgPart imgTarget; // 0x18
+		::MoleMole::ComicImgPart imgTarget; // 0x10
+		::UnityEngine::Vector2 shakePivot; // 0x14
 
 		::System::Void _ctor()
 		{

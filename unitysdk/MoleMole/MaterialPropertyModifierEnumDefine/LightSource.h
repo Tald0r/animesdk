@@ -3,12 +3,12 @@
 
 namespace MoleMole::MaterialPropertyModifierEnumDefine
 {
-	inline static constexpr unsigned int LightSource_TypeDefinitionIndex = 62598;
+	inline static constexpr unsigned int LightSource_TypeDefinitionIndex = 68368;
 
 	enum class LightSource : ::System::Byte
 	{
-		CameraView = 0x1,
-		MainLight = 0x0,
 		Point = 0x2,
+		MainLight = 0x0,
+		CameraView = 0x1,
 	};
 }

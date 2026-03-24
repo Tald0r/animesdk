@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/MessageTaskBase.h"
 
-#define MOLEMOLE_LOGICMESSAGEBASE_GET_ISTRIGGERINLOADING_OFFSET UNITYSDK_OFFSET(0x8F18B10)
-#define MOLEMOLE_LOGICMESSAGEBASE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x8F18B00)
-#define MOLEMOLE_LOGICMESSAGEBASE__CTOR_OFFSET UNITYSDK_OFFSET(0x8F18B20)
+#define MOLEMOLE_LOGICMESSAGEBASE_GET_ISTRIGGERINLOADING_OFFSET UNITYSDK_OFFSET(0xA02A160)
+#define MOLEMOLE_LOGICMESSAGEBASE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xA02A150)
+#define MOLEMOLE_LOGICMESSAGEBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xA02A170)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LogicMessageBase_TypeDefinitionIndex = 71916;
+	inline static constexpr unsigned int LogicMessageBase_TypeDefinitionIndex = 64102;
 
 	class LogicMessageBase : public ::MoleMole::MessageTaskBase
 	{

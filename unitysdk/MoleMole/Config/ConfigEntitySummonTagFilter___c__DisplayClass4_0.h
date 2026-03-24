@@ -8,7 +8,7 @@ namespace MoleMole::Config { class ConfigEntitySummonTagFilter; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntitySummonTagFilter___c__DisplayClass4_0_TypeDefinitionIndex = 62749;
+	inline static constexpr unsigned int ConfigEntitySummonTagFilter___c__DisplayClass4_0_TypeDefinitionIndex = 61821;
 
 	struct alignas(8) ConfigEntitySummonTagFilter___c__DisplayClass4_0
 	{

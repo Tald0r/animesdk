@@ -6,25 +6,25 @@ namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 namespace MoleMole::Battle { class Entity; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATAR1_OFFSET UNITYSDK_OFFSET(0xC217BE0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATAR2_OFFSET UNITYSDK_OFFSET(0xC217FE0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATAR3_OFFSET UNITYSDK_OFFSET(0xC218130)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATARBYPEERID_OFFSET UNITYSDK_OFFSET(0xC217DD0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETONLINEAVATARLIST_OFFSET UNITYSDK_OFFSET(0xC218280)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC217A10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC218550)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATAR1_OFFSET UNITYSDK_OFFSET(0xB82E480)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATAR2_OFFSET UNITYSDK_OFFSET(0xB82E770)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATAR3_OFFSET UNITYSDK_OFFSET(0xB82E8B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETAVATARBYPEERID_OFFSET UNITYSDK_OFFSET(0xB82E670)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_GETONLINEAVATARLIST_OFFSET UNITYSDK_OFFSET(0xB82E9F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB82E2B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMPGETALLLOCALAVATARNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB82ECC0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDMpGetAllLocalAvatarNode_TypeDefinitionIndex = 51158;
+	inline static constexpr unsigned int LDMpGetAllLocalAvatarNode_TypeDefinitionIndex = 51934;
 
 	class LDMpGetAllLocalAvatarNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* valueOutputAvatar2; // 0xA8
-		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* valueOutputAvatar1; // 0xB0
-		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* valueOutputAvatar3; // 0xB8
-		::FlowCanvas::ValueOutput_1<::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>*>* valueOutputOnlineAvatarList; // 0xC0
+		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* valueOutputAvatar3; // 0xA8
+		::FlowCanvas::ValueOutput_1<::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>*>* valueOutputOnlineAvatarList; // 0xB0
+		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* valueOutputAvatar1; // 0xB8
+		::FlowCanvas::ValueOutput_1<::MoleMole::Battle::Entity*>* valueOutputAvatar2; // 0xC0
 
 		::System::Void _ctor()
 		{

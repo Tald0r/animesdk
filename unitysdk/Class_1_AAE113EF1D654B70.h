@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_AAE113EF1D654B70_Enum_3_C780BFBFED223F30_3.h"
+#include "unitysdk/Class_1_AAE113EF1D654B70_Enum_3_C780BFBFED223F30_5.h"
 #include "unitysdk/Cysharp/Threading/Tasks/UniTaskVoid.h"
 #include "unitysdk/Foundation/Unreal/FName.h"
 #include "unitysdk/MoleMole/InLevelCustomCameraSequenceType.h"
@@ -21,32 +21,32 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_1290EA767C459179_OFFSET UNITYSDK_OFFSET(0x7728720)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_2FA8AE0519AC7829_OFFSET UNITYSDK_OFFSET(0x7728690)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_60DC879ACE99CF48_OFFSET UNITYSDK_OFFSET(0x7728BD0)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_6F4D783C62E9D0A7_OFFSET UNITYSDK_OFFSET(0x7728D00)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x77290B0)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_999A32A2294435FF_OFFSET UNITYSDK_OFFSET(0x7728390)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_DFEAB96CD1BCA51D_OFFSET UNITYSDK_OFFSET(0x77287F0)
-#define CLASS_1_AAE113EF1D654B70_METHOD_1_EF3D19C357AD772F_OFFSET UNITYSDK_OFFSET(0x7728C70)
-#define CLASS_1_AAE113EF1D654B70__CCTOR_OFFSET UNITYSDK_OFFSET(0x77289C0)
-#define CLASS_1_AAE113EF1D654B70__CTOR_1_OFFSET UNITYSDK_OFFSET(0x77281E0)
-#define CLASS_1_AAE113EF1D654B70__CTOR_OFFSET UNITYSDK_OFFSET(0x7728170)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_1290EA767C459179_OFFSET UNITYSDK_OFFSET(0xFAEE210)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_2FA8AE0519AC7829_OFFSET UNITYSDK_OFFSET(0xFAEE180)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_60DC879ACE99CF48_OFFSET UNITYSDK_OFFSET(0xFAEE750)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_6F4D783C62E9D0A7_OFFSET UNITYSDK_OFFSET(0xFAEE7F0)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0xFAEEBA0)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_999A32A2294435FF_OFFSET UNITYSDK_OFFSET(0xFAEDE80)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_DFEAB96CD1BCA51D_OFFSET UNITYSDK_OFFSET(0xFAEE2E0)
+#define CLASS_1_AAE113EF1D654B70_METHOD_1_EF3D19C357AD772F_OFFSET UNITYSDK_OFFSET(0xFAEE6C0)
+#define CLASS_1_AAE113EF1D654B70__CCTOR_OFFSET UNITYSDK_OFFSET(0xFAEE4B0)
+#define CLASS_1_AAE113EF1D654B70__CTOR_1_OFFSET UNITYSDK_OFFSET(0xFAEDCD0)
+#define CLASS_1_AAE113EF1D654B70__CTOR_OFFSET UNITYSDK_OFFSET(0xFAEDC60)
 
-inline static constexpr unsigned int Class_1_AAE113EF1D654B70_TypeDefinitionIndex = 64852;
+inline static constexpr unsigned int Class_1_AAE113EF1D654B70_TypeDefinitionIndex = 70978;
 
 class Class_1_AAE113EF1D654B70 : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::MoleMole::InLevelCustomCameraSequenceType, ::System::Func_2<::Class_1_AAE113EF1D654B70*, ::Class_1_AAE113EF1D654B70_Class_1_18BFEAD82BA3C5E8_1*>*>** StaticGet_Field_1_0()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::MoleMole::InLevelCustomCameraSequenceType, ::System::Func_2<::Class_1_AAE113EF1D654B70*, ::Class_1_AAE113EF1D654B70_Class_1_18BFEAD82BA3C5E8_1*>*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_AAE113EF1D654B70_TypeDefinitionIndex)->GetStaticField(0x40740);
+		return (::System::Collections::Generic::Dictionary_2<::MoleMole::InLevelCustomCameraSequenceType, ::System::Func_2<::Class_1_AAE113EF1D654B70*, ::Class_1_AAE113EF1D654B70_Class_1_18BFEAD82BA3C5E8_1*>*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_AAE113EF1D654B70_TypeDefinitionIndex)->GetStaticField(0x40B80);
 	}
-	::MoleMole::LevelPerform::LevelPerformConfig_InLevelCameraSequenceConfig Field_1_3; // 0x10
-	::PipelineCamera::SubModule::CameraSequenceCollectionPlayer_1<::PipelineCamera::WorldBasicCameraData>* Field_1_5; // 0x28
-	::Class_1_AAE113EF1D654B70_Class_1_18BFEAD82BA3C5E8_1* Field_1_2; // 0x30
-	::System::Collections::Generic::List_1<::Class_1_AAE113EF1D654B70_Enum_3_C780BFBFED223F30_3>* Field_1_7; // 0x38
-	::MoleMole::Utils::TaskBasedEventCollection_1<::Class_1_AAE113EF1D654B70_Enum_3_C780BFBFED223F30_3>* Field_1_8; // 0x40
+	::PipelineCamera::SubModule::CameraSequenceCollectionPlayer_1<::PipelineCamera::WorldBasicCameraData>* Field_1_5; // 0x10
+	::Class_1_AAE113EF1D654B70_Class_1_18BFEAD82BA3C5E8_1* Field_1_2; // 0x18
+	::System::Collections::Generic::List_1<::Class_1_AAE113EF1D654B70_Enum_3_C780BFBFED223F30_5>* Field_1_7; // 0x20
+	::MoleMole::Utils::TaskBasedEventCollection_1<::Class_1_AAE113EF1D654B70_Enum_3_C780BFBFED223F30_5>* Field_1_8; // 0x28
+	::MoleMole::LevelPerform::LevelPerformConfig_InLevelCameraSequenceConfig Field_1_3; // 0x30
 	::MoleMole::InLevelCustomPerformerRunnerEnvironment Field_1_1; // 0x48
 	::Foundation::Unreal::FName Field_1_4; // 0x50
 	::System::Boolean Field_1_6; // 0x58
@@ -81,9 +81,9 @@ public:
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AAE113EF1D654B70_METHOD_1_DFEAB96CD1BCA51D_OFFSET))(this);
 	}
 
-	::System::Void Method_1_60DC879ACE99CF48(::System::String* a1)
+	::Cysharp::Threading::Tasks::UniTaskVoid Method_1_2FA8AE0519AC7829()
 	{
-		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_AAE113EF1D654B70_METHOD_1_60DC879ACE99CF48_OFFSET))(this, a1);
+		return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AAE113EF1D654B70_METHOD_1_2FA8AE0519AC7829_OFFSET))(this);
 	}
 
 	::System::Void Method_1_EF3D19C357AD772F(::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>* a1)
@@ -91,9 +91,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*))((::PBYTE)hIl2Cpp + CLASS_1_AAE113EF1D654B70_METHOD_1_EF3D19C357AD772F_OFFSET))(this, a1);
 	}
 
-	::Cysharp::Threading::Tasks::UniTaskVoid Method_1_2FA8AE0519AC7829()
+	::System::Void Method_1_60DC879ACE99CF48(::System::String* a1)
 	{
-		return ((::Cysharp::Threading::Tasks::UniTaskVoid(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AAE113EF1D654B70_METHOD_1_2FA8AE0519AC7829_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_AAE113EF1D654B70_METHOD_1_60DC879ACE99CF48_OFFSET))(this, a1);
 	}
 
 	::System::Boolean Method_1_6F4D783C62E9D0A7(::MoleMole::Cameras::NapVirtualPipelineCamera* a1, ::PipelineCamera::CameraCommandSpawnSubModules*& a2, ::PipelineCamera::CameraCommandUnSpawnSubModules*& a3)

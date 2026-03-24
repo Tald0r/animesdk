@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int DefaultInputActions_IUIActions_TypeDefinitionIndex = 27585;
+	inline static constexpr unsigned int DefaultInputActions_IUIActions_TypeDefinitionIndex = 28525;
 
 	class DefaultInputActions_IUIActions
 	{

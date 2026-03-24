@@ -4,13 +4,13 @@
 
 namespace System { class String; }
 
-#define NAPPROFILER_FPSCALC_START_OFFSET UNITYSDK_OFFSET(0x7454FA0)
-#define NAPPROFILER_FPSCALC_UPDATE_OFFSET UNITYSDK_OFFSET(0x7455050)
-#define NAPPROFILER_FPSCALC__CTOR_OFFSET UNITYSDK_OFFSET(0x7455170)
+#define NAPPROFILER_FPSCALC_START_OFFSET UNITYSDK_OFFSET(0x6FB2FD0)
+#define NAPPROFILER_FPSCALC_UPDATE_OFFSET UNITYSDK_OFFSET(0x6FB3080)
+#define NAPPROFILER_FPSCALC__CTOR_OFFSET UNITYSDK_OFFSET(0x6FB31A0)
 
 namespace NapProfiler
 {
-	inline static constexpr unsigned int FpsCalc_TypeDefinitionIndex = 52630;
+	inline static constexpr unsigned int FpsCalc_TypeDefinitionIndex = 39059;
 
 	class FpsCalc : public ::UnityEngine::MonoBehaviour
 	{

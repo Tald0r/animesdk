@@ -4,7 +4,7 @@
 
 namespace FluffyUnderware::Curvy::ThirdParty::LibTessDotNet
 {
-	inline static constexpr unsigned int PriorityQueue_1_StackItem_TypeDefinitionIndex = 24601;
+	inline static constexpr unsigned int PriorityQueue_1_StackItem_TypeDefinitionIndex = 25426;
 
 	template <typename TValue>
 	class PriorityQueue_1_StackItem : public ::System::Object

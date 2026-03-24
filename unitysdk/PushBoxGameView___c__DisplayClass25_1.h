@@ -6,11 +6,11 @@ class PushBoxGameView___c__DisplayClass25_0;
 class PushBoxTileView;
 namespace System { class Action; }
 
-#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS25_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1815E480)
-#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS25_1__PLAYRESETANIM_B__2_OFFSET UNITYSDK_OFFSET(0x1815E490)
-#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS25_1__PLAYRESETANIM_B__3_OFFSET UNITYSDK_OFFSET(0x1815E580)
+#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS25_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1826E9C0)
+#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS25_1__PLAYRESETANIM_B__2_OFFSET UNITYSDK_OFFSET(0x1826E9D0)
+#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS25_1__PLAYRESETANIM_B__3_OFFSET UNITYSDK_OFFSET(0x1826EAC0)
 
-inline static constexpr unsigned int PushBoxGameView___c__DisplayClass25_1_TypeDefinitionIndex = 38293;
+inline static constexpr unsigned int PushBoxGameView___c__DisplayClass25_1_TypeDefinitionIndex = 71314;
 
 class PushBoxGameView___c__DisplayClass25_1 : public ::System::Object
 {

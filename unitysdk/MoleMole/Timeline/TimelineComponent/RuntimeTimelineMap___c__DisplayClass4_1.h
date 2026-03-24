@@ -5,12 +5,12 @@
 class Class_1_F5001838B73D62A7;
 namespace MoleMole { class CGRuntimeUnit; }
 
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEMAP___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA4870)
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEMAP___C__DISPLAYCLASS4_1__REBIND_B__1_OFFSET UNITYSDK_OFFSET(0x8FA4880)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEMAP___C__DISPLAYCLASS4_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC331440)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEMAP___C__DISPLAYCLASS4_1__REBIND_B__1_OFFSET UNITYSDK_OFFSET(0xC331450)
 
 namespace MoleMole::Timeline::TimelineComponent
 {
-	inline static constexpr unsigned int RuntimeTimelineMap___c__DisplayClass4_1_TypeDefinitionIndex = 36897;
+	inline static constexpr unsigned int RuntimeTimelineMap___c__DisplayClass4_1_TypeDefinitionIndex = 58613;
 
 	class RuntimeTimelineMap___c__DisplayClass4_1 : public ::System::Object
 	{

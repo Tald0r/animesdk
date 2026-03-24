@@ -5,24 +5,24 @@
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Reflection { class MethodInfo; }
 
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSSERIALIZER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E107E0)
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSSERIALIZER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19E10820)
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSSERIALIZER___C__TRYDESERIALIZEMIGRATION_B__58_0_OFFSET UNITYSDK_OFFSET(0x19E10830)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSSERIALIZER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3FF060)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSSERIALIZER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3FF0A0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSSERIALIZER___C__TRYDESERIALIZEMIGRATION_B__58_0_OFFSET UNITYSDK_OFFSET(0x1A3FF0B0)
 
 namespace ParadoxNotion::Serialization::FullSerializer
 {
-	inline static constexpr unsigned int fsSerializer___c_TypeDefinitionIndex = 25273;
+	inline static constexpr unsigned int fsSerializer___c_TypeDefinitionIndex = 27222;
 
 	class fsSerializer___c : public ::System::Object
 	{
 	public:
 		static ::ParadoxNotion::Serialization::FullSerializer::fsSerializer___c** StaticGet___9()
 		{
-			return (::ParadoxNotion::Serialization::FullSerializer::fsSerializer___c**)Il2CppClass::FromTypeDefinitionIndex(fsSerializer___c_TypeDefinitionIndex)->GetStaticField(0x1E4C0);
+			return (::ParadoxNotion::Serialization::FullSerializer::fsSerializer___c**)Il2CppClass::FromTypeDefinitionIndex(fsSerializer___c_TypeDefinitionIndex)->GetStaticField(0x1EF90);
 		}
 		static ::System::Func_2<::System::Reflection::MethodInfo*, ::System::Boolean>** StaticGet___9__58_0()
 		{
-			return (::System::Func_2<::System::Reflection::MethodInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(fsSerializer___c_TypeDefinitionIndex)->GetStaticField(0x1E4C8);
+			return (::System::Func_2<::System::Reflection::MethodInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(fsSerializer___c_TypeDefinitionIndex)->GetStaticField(0x1EF98);
 		}
 
 		static ::System::Void _cctor()

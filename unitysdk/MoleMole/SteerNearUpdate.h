@@ -10,28 +10,28 @@ namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 namespace MoleMole::Battle { class MonoSteerNear; }
 
-#define MOLEMOLE_STEERNEARUPDATE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA49DB30)
-#define MOLEMOLE_STEERNEARUPDATE_ONSTART_OFFSET UNITYSDK_OFFSET(0xA49DE10)
-#define MOLEMOLE_STEERNEARUPDATE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA49E270)
-#define MOLEMOLE_STEERNEARUPDATE__CTOR_OFFSET UNITYSDK_OFFSET(0xA49E2D0)
-#define MOLEMOLE_STEERNEARUPDATE___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA49E340)
-#define MOLEMOLE_STEERNEARUPDATE___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0xA49E3D0)
-#define MOLEMOLE_STEERNEARUPDATE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA49E460)
+#define MOLEMOLE_STEERNEARUPDATE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x7AA10C0)
+#define MOLEMOLE_STEERNEARUPDATE_ONSTART_OFFSET UNITYSDK_OFFSET(0x7AA13B0)
+#define MOLEMOLE_STEERNEARUPDATE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7AA17F0)
+#define MOLEMOLE_STEERNEARUPDATE__CTOR_OFFSET UNITYSDK_OFFSET(0x7AA1850)
+#define MOLEMOLE_STEERNEARUPDATE___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x7AA18C0)
+#define MOLEMOLE_STEERNEARUPDATE___BASE_ONSTART_OFFSET UNITYSDK_OFFSET(0x7AA1950)
+#define MOLEMOLE_STEERNEARUPDATE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7AA19E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SteerNearUpdate_TypeDefinitionIndex = 41814;
+	inline static constexpr unsigned int SteerNearUpdate_TypeDefinitionIndex = 61999;
 
 	class SteerNearUpdate : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::Class_3_AA6DF3A878195D3F* steerComponent; // 0x58
+		::BehaviorDesigner::Runtime::SharedFloat* MaxDistance; // 0x58
 		::BehaviorDesigner::Runtime::SharedFloat* MinDistance; // 0x60
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x68
-		::MoleMole::Battle::Entity* ownerEntity; // 0x70
-		::BehaviorDesigner::Runtime::SharedFloat* MaxDistance; // 0x78
-		::Class_3_F35B080B137ECC46* modelComponent; // 0x80
-		::MoleMole::Battle::MonoSteerNear* monoSteer; // 0x88
+		::Class_3_AA6DF3A878195D3F* steerComponent; // 0x68
+		::MoleMole::Battle::MonoSteerNear* monoSteer; // 0x70
+		::Class_3_F35B080B137ECC46* modelComponent; // 0x78
+		::MoleMole::Battle::Entity* ownerEntity; // 0x80
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x88
 		::System::Boolean Enable; // 0x90
 
 		::System::Void _ctor()

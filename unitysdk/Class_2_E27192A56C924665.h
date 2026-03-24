@@ -9,26 +9,26 @@ namespace UnityEngine { class Animation; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_E27192A56C924665_METHOD_2_7879E8D5956B4E2C_OFFSET UNITYSDK_OFFSET(0x7854780)
-#define CLASS_2_E27192A56C924665_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0x78549E0)
-#define CLASS_2_E27192A56C924665_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7854B60)
-#define CLASS_2_E27192A56C924665__CTOR_OFFSET UNITYSDK_OFFSET(0x7854B50)
+#define CLASS_2_E27192A56C924665_METHOD_2_7879E8D5956B4E2C_OFFSET UNITYSDK_OFFSET(0xB655400)
+#define CLASS_2_E27192A56C924665_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0xB655660)
+#define CLASS_2_E27192A56C924665_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB6557E0)
+#define CLASS_2_E27192A56C924665__CTOR_OFFSET UNITYSDK_OFFSET(0xB6557D0)
 
-inline static constexpr unsigned int Class_2_E27192A56C924665_TypeDefinitionIndex = 72821;
+inline static constexpr unsigned int Class_2_E27192A56C924665_TypeDefinitionIndex = 74192;
 
 class Class_2_E27192A56C924665 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x28
-	::UnityEngine::GameObject* Field_2_3; // 0x30
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x38
-	::UnityEngine::GameObject* Field_2_8; // 0x40
-	::UnityEngine::Animation* Field_2_6; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_9; // 0x50
-	::UnityEngine::Transform* Field_2_2; // 0x58
-	::UnityEngine::GameObject* Field_2_7; // 0x60
+	::UnityEngine::GameObject* Field_2_7; // 0x18
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x30
+	::UnityEngine::Transform* Field_2_2; // 0x38
+	::UnityEngine::GameObject* Field_2_3; // 0x40
+	::UnityEngine::GameObject* Field_2_8; // 0x48
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x50
+	::Class_2_60DDD9C206686F44* Field_2_9; // 0x58
+	::UnityEngine::Animation* Field_2_6; // 0x60
 
 	::System::Void _ctor()
 	{

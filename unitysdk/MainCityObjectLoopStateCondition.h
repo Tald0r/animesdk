@@ -2,15 +2,15 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MAINCITYOBJECTLOOPSTATECONDITION__CTOR_OFFSET UNITYSDK_OFFSET(0x620F4E0)
+#define MAINCITYOBJECTLOOPSTATECONDITION__CTOR_OFFSET UNITYSDK_OFFSET(0x84E2E90)
 
-inline static constexpr unsigned int MainCityObjectLoopStateCondition_TypeDefinitionIndex = 36548;
+inline static constexpr unsigned int MainCityObjectLoopStateCondition_TypeDefinitionIndex = 55063;
 
 class MainCityObjectLoopStateCondition : public ::System::Object
 {
 public:
-	::System::Int32 stateID; // 0x10
-	::System::Int32 nextTime; // 0x14
+	::System::Int32 nextTime; // 0x10
+	::System::Int32 stateID; // 0x14
 	::System::Int32 nextStateID; // 0x18
 
 	::System::Void _ctor()

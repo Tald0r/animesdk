@@ -5,27 +5,27 @@
 namespace MoleMole { class UICloudController_UIRTCItem; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define CLASS_2_4F54F4E183D70E5D_1___C_METHOD_1_F0174252490A3C43_1_OFFSET UNITYSDK_OFFSET(0x738A710)
-#define CLASS_2_4F54F4E183D70E5D_1___C_METHOD_1_F0174252490A3C43_OFFSET UNITYSDK_OFFSET(0x738A6F0)
-#define CLASS_2_4F54F4E183D70E5D_1___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x738A6A0)
-#define CLASS_2_4F54F4E183D70E5D_1___C__CTOR_OFFSET UNITYSDK_OFFSET(0x738A6E0)
+#define CLASS_2_4F54F4E183D70E5D_1___C_METHOD_1_F0174252490A3C43_1_OFFSET UNITYSDK_OFFSET(0x619DC10)
+#define CLASS_2_4F54F4E183D70E5D_1___C_METHOD_1_F0174252490A3C43_OFFSET UNITYSDK_OFFSET(0x619DBF0)
+#define CLASS_2_4F54F4E183D70E5D_1___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x619DBA0)
+#define CLASS_2_4F54F4E183D70E5D_1___C__CTOR_OFFSET UNITYSDK_OFFSET(0x619DBE0)
 
-inline static constexpr unsigned int Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex = 74128;
+inline static constexpr unsigned int Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex = 68690;
 
 class Class_2_4F54F4E183D70E5D_1___c : public ::System::Object
 {
 public:
-	static ::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>** StaticGet___9__12_1()
+	static ::Class_2_4F54F4E183D70E5D_1___c** StaticGet___9()
 	{
-		return (::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex)->GetStaticField(0x3E080);
+		return (::Class_2_4F54F4E183D70E5D_1___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex)->GetStaticField(0x3C2B0);
 	}
 	static ::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>** StaticGet___9__12_0()
 	{
-		return (::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex)->GetStaticField(0x3E088);
+		return (::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex)->GetStaticField(0x3C2B8);
 	}
-	static ::Class_2_4F54F4E183D70E5D_1___c** StaticGet___9()
+	static ::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>** StaticGet___9__12_1()
 	{
-		return (::Class_2_4F54F4E183D70E5D_1___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex)->GetStaticField(0x3E090);
+		return (::System::Func_2<::MoleMole::UICloudController_UIRTCItem*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_4F54F4E183D70E5D_1___c_TypeDefinitionIndex)->GetStaticField(0x3C2C0);
 	}
 
 	static ::System::Void _cctor()

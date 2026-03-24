@@ -1,0 +1,146 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Cysharp/Threading/Tasks/UniTask.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_F1842E4D13729459;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System::Threading { class CancellationTokenSource; }
+
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_CANCELOLDANIM_OFFSET UNITYSDK_OFFSET(0xC28D700)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xC28D120)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC28D8D0)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC28D390)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC28D970)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC28D140)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC28D2E0)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIREUSE_OFFSET UNITYSDK_OFFSET(0xC28D1E0)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_PLAYANIMANDCLOSE_OFFSET UNITYSDK_OFFSET(0xC28D650)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_SETCOUNTDOWN_OFFSET UNITYSDK_OFFSET(0xC28D7A0)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_SET_NEEDCACHE_OFFSET UNITYSDK_OFFSET(0xC28D130)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_UPDATE_OFFSET UNITYSDK_OFFSET(0xC28D820)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC28DB10)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER__PLAYANIMANDCLOSE_B__11_0_OFFSET UNITYSDK_OFFSET(0xC28DB50)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC28DB60)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC28DBD0)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC28DC40)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC28DCC0)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC28DD20)
+#define MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIREUSE_OFFSET UNITYSDK_OFFSET(0xC28DD90)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityHotpotBubbleWidgetController_TypeDefinitionIndex = 77173;
+
+	class UIActivityHotpotBubbleWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_F1842E4D13729459* _view; // 0x2A0
+		::System::Boolean _NeedCache_k__BackingField; // 0x2A8
+		::System::Int32 _playTimes; // 0x2AC
+		::System::Threading::CancellationTokenSource* _cancelSource; // 0x2B0
+		::System::Boolean _animPlaying; // 0x2B8
+		::System::Single _countDown; // 0x2BC
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_NeedCache()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_GET_NEEDCACHE_OFFSET))(this);
+		}
+
+		::System::Void set_NeedCache(::System::Boolean value)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_SET_NEEDCACHE_OFFSET))(this, value);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIReuse()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIREUSE_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::Cysharp::Threading::Tasks::UniTask PlayAnimAndClose()
+		{
+			return ((::Cysharp::Threading::Tasks::UniTask(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_PLAYANIMANDCLOSE_OFFSET))(this);
+		}
+
+		::System::Void CancelOldAnim()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_CANCELOLDANIM_OFFSET))(this);
+		}
+
+		::System::Void SetCountDown(::System::Single duration)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_SETCOUNTDOWN_OFFSET))(this, duration);
+		}
+
+		::System::Void Update()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_UPDATE_OFFSET))(this);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Boolean _PlayAnimAndClose_b__11_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER__PLAYANIMANDCLOSE_B__11_0_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIReuse()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTBUBBLEWIDGETCONTROLLER___BASE_ONUIREUSE_OFFSET))(this);
+		}
+	};
+}

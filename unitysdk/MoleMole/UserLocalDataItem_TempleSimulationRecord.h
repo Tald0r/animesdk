@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_USERLOCALDATAITEM_TEMPLESIMULATIONRECORD__CTOR_OFFSET UNITYSDK_OFFSET(0x9A438C0)
+#define MOLEMOLE_USERLOCALDATAITEM_TEMPLESIMULATIONRECORD__CTOR_OFFSET UNITYSDK_OFFSET(0x889F7A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UserLocalDataItem_TempleSimulationRecord_TypeDefinitionIndex = 60255;
+	inline static constexpr unsigned int UserLocalDataItem_TempleSimulationRecord_TypeDefinitionIndex = 45278;
 
 	class UserLocalDataItem_TempleSimulationRecord : public ::System::Object
 	{

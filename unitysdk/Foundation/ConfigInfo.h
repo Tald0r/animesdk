@@ -4,19 +4,19 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_CONFIGINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD30AF0)
+#define FOUNDATION_CONFIGINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B433D90)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ConfigInfo_TypeDefinitionIndex = 7761;
+	inline static constexpr unsigned int ConfigInfo_TypeDefinitionIndex = 8200;
 
 	class ConfigInfo : public ::System::Object
 	{
 	public:
-		::System::String* GameResUrl; // 0x10
-		::System::String* DesignDataUrl; // 0x18
-		::System::String* ServerListUrl; // 0x20
-		::System::String* LatestVersion; // 0x28
+		::System::String* ServerListUrl; // 0x10
+		::System::String* GameResUrl; // 0x18
+		::System::String* LatestVersion; // 0x20
+		::System::String* DesignDataUrl; // 0x28
 		::System::String* MinVersion; // 0x30
 
 		::System::Void _ctor()

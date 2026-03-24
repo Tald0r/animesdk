@@ -6,32 +6,32 @@
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_SHOOTINGGROUNDSUBSYSTEM_BULLETSTATS__CTOR_OFFSET UNITYSDK_OFFSET(0xB3C2C60)
+#define MOLEMOLE_SHOOTINGGROUNDSUBSYSTEM_BULLETSTATS__CTOR_OFFSET UNITYSDK_OFFSET(0xA65B0E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ShootingGroundSubsystem_BulletStats_TypeDefinitionIndex = 75421;
+	inline static constexpr unsigned int ShootingGroundSubsystem_BulletStats_TypeDefinitionIndex = 78948;
 
 	class ShootingGroundSubsystem_BulletStats : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::String*>* HitEffectPatterns; // 0x10
-		::UnityEngine::AnimationCurve* RecoilToRadXRandomCurve; // 0x18
-		::UnityEngine::AnimationCurve* RecoilToRadYMaxCurve; // 0x20
-		::UnityEngine::AnimationCurve* SpreadToRadYCurve; // 0x28
-		::UnityEngine::AnimationCurve* RecoilToRadXBaseCurve; // 0x30
-		::UnityEngine::AnimationCurve* SpreadToRadXCurve; // 0x38
-		::UnityEngine::AnimationCurve* RecoilToRadYBaseCurve; // 0x40
-		::UnityEngine::AnimationCurve* RecoilToRadYRandomCurve; // 0x48
-		::UnityEngine::AnimationCurve* RecoilToRadXMaxCurve; // 0x50
-		::System::Int32 HeadshotDamage; // 0x58
-		::System::Int32 ShieldDamage; // 0x5C
-		::System::Single Spread; // 0x60
-		::System::Int32 AmmoCost; // 0x64
-		::System::Int32 BaseDamage; // 0x68
-		::System::Boolean CanPierce; // 0x6C
-		::System::Single Recoil; // 0x70
-		::UnityEngine::Color DebugColor; // 0x74
+		::UnityEngine::AnimationCurve* RecoilToRadXBaseCurve; // 0x10
+		::UnityEngine::AnimationCurve* RecoilToRadYMaxCurve; // 0x18
+		::UnityEngine::AnimationCurve* SpreadToRadYCurve; // 0x20
+		::UnityEngine::AnimationCurve* RecoilToRadYRandomCurve; // 0x28
+		::Il2CppArray<::System::String*>* HitEffectPatterns; // 0x30
+		::UnityEngine::AnimationCurve* RecoilToRadXMaxCurve; // 0x38
+		::UnityEngine::AnimationCurve* RecoilToRadXRandomCurve; // 0x40
+		::UnityEngine::AnimationCurve* SpreadToRadXCurve; // 0x48
+		::UnityEngine::AnimationCurve* RecoilToRadYBaseCurve; // 0x50
+		::UnityEngine::Color DebugColor; // 0x58
+		::System::Int32 AmmoCost; // 0x68
+		::System::Single Recoil; // 0x6C
+		::System::Int32 ShieldDamage; // 0x70
+		::System::Single Spread; // 0x74
+		::System::Int32 BaseDamage; // 0x78
+		::System::Boolean CanPierce; // 0x7C
+		::System::Int32 HeadshotDamage; // 0x80
 
 		::System::Void _ctor()
 		{

@@ -8,25 +8,23 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_64787C73229A04B0_4_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x93BF1B0)
-#define CLASS_2_64787C73229A04B0_4_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x93BEF90)
-#define CLASS_2_64787C73229A04B0_4_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x93BF260)
-#define CLASS_2_64787C73229A04B0_4__CTOR_OFFSET UNITYSDK_OFFSET(0x93BF250)
+#define CLASS_2_64787C73229A04B0_4_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x648B190)
+#define CLASS_2_64787C73229A04B0_4_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x648AF80)
+#define CLASS_2_64787C73229A04B0_4_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x648B2B0)
+#define CLASS_2_64787C73229A04B0_4__CTOR_OFFSET UNITYSDK_OFFSET(0x648B2A0)
 
-inline static constexpr unsigned int Class_2_64787C73229A04B0_4_TypeDefinitionIndex = 50268;
+inline static constexpr unsigned int Class_2_64787C73229A04B0_4_TypeDefinitionIndex = 78031;
 
 class Class_2_64787C73229A04B0_4 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x20
-	::UnityEngine::RectTransform* Field_2_6; // 0x28
-	::UnityEngine::RectTransform* Field_2_0; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x38
-	::UnityEngine::RectTransform* Field_2_8; // 0x40
-	::UnityEngine::RectTransform* Field_2_1; // 0x48
-	::UnityEngine::RectTransform* Field_2_3; // 0x50
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x58
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x18
+	::UnityEngine::RectTransform* Field_2_1; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x38
+	::UnityEngine::RectTransform* Field_2_0; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x48
 
 	::System::Void _ctor()
 	{
@@ -43,8 +41,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_64787C73229A04B0_4_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_2_1B167429A8B82AD3()
+	::System::Void Method_2_737220D2233A9067()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_64787C73229A04B0_4_METHOD_2_1B167429A8B82AD3_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_64787C73229A04B0_4_METHOD_2_737220D2233A9067_OFFSET))(this);
 	}
 };

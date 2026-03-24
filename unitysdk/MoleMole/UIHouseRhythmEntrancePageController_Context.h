@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIHOUSERHYTHMENTRANCEPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8A3A4C0)
+#define MOLEMOLE_UIHOUSERHYTHMENTRANCEPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x893A2E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHouseRhythmEntrancePageController_Context_TypeDefinitionIndex = 54794;
+	inline static constexpr unsigned int UIHouseRhythmEntrancePageController_Context_TypeDefinitionIndex = 42850;
 
 	class UIHouseRhythmEntrancePageController_Context : public ::MoleMole::UIControllerContextBase
 	{

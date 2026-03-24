@@ -2,23 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_9FEE7E7D3F46814D_3;
+class Class_3_9FEE7E7D3F46814D;
 namespace MoleMole { class UIAbyssArpeggioRowWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9AE6110)
-#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__REFRESHSTATE_B__3_OFFSET UNITYSDK_OFFSET(0x9AE6120)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA55AA30)
+#define MOLEMOLE_UIABYSSARPEGGIOROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__REFRESHSTATE_B__3_OFFSET UNITYSDK_OFFSET(0xA55AA40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssArpeggioRowWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 69205;
+	inline static constexpr unsigned int UIAbyssArpeggioRowWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 71112;
 
 	class UIAbyssArpeggioRowWidgetController___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIAbyssArpeggioRowWidgetController* __4__this; // 0x10
 		::System::Action* __9__3; // 0x18
-		::Class_3_9FEE7E7D3F46814D_3* chapterData; // 0x20
+		::Class_3_9FEE7E7D3F46814D* chapterData; // 0x20
 		::System::Boolean isUnlock; // 0x28
 
 		::System::Void _ctor()

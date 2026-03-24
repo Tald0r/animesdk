@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-template <typename T> class Class_0_16E4307DCC419505_32;
+template <typename T> class Class_0_16E4307DCC41950C;
 
-inline static constexpr unsigned int Class_1_B40FB169D1647C91_TypeDefinitionIndex = 24272;
+inline static constexpr unsigned int Class_1_B40FB169D1647C91_TypeDefinitionIndex = 25284;
 
 template <typename TVertex>
 class Class_1_B40FB169D1647C91 : public ::System::Object

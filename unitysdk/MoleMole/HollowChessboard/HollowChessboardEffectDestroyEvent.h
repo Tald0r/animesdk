@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/HollowChessboard/HollowChessboardEffectEventBase.h"
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDEFFECTDESTROYEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x8B16C20)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWCHESSBOARDEFFECTDESTROYEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xB19BAC0)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int HollowChessboardEffectDestroyEvent_TypeDefinitionIndex = 56520;
+	inline static constexpr unsigned int HollowChessboardEffectDestroyEvent_TypeDefinitionIndex = 73690;
 
 	class HollowChessboardEffectDestroyEvent : public ::MoleMole::HollowChessboard::HollowChessboardEffectEventBase
 	{

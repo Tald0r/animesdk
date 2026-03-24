@@ -2,25 +2,25 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_C3F0E3B5AB5977AE_40;
+class Class_3_C3F0E3B5AB5977AE;
 namespace MoleMole { class UIRecommendTypePropertyRowWidgetController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9EB5A00)
-#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_B__3_OFFSET UNITYSDK_OFFSET(0x9EB5A10)
-#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__ISCANSELECT_2_OFFSET UNITYSDK_OFFSET(0x9EB5CB0)
-#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__ONPROPERTYROWCLICK_0_OFFSET UNITYSDK_OFFSET(0x9EB5A40)
+#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB6DEAF0)
+#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_B__3_OFFSET UNITYSDK_OFFSET(0xB6DEB00)
+#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__ISCANSELECT_2_OFFSET UNITYSDK_OFFSET(0xB6DEDA0)
+#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHVIEW_G__ONPROPERTYROWCLICK_0_OFFSET UNITYSDK_OFFSET(0xB6DEB30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRecommendTypePropertyRowWidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 75175;
+	inline static constexpr unsigned int UIRecommendTypePropertyRowWidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 62930;
 
 	class UIRecommendTypePropertyRowWidgetController___c__DisplayClass9_0 : public ::System::Object
 	{
 	public:
-		::Class_3_C3F0E3B5AB5977AE_40* data; // 0x10
-		::MoleMole::UIRecommendTypePropertyRowWidgetController* __4__this; // 0x18
-		::System::Collections::Generic::List_1<::System::UInt32>* propertyIdList; // 0x20
+		::System::Collections::Generic::List_1<::System::UInt32>* propertyIdList; // 0x10
+		::Class_3_C3F0E3B5AB5977AE* data; // 0x18
+		::MoleMole::UIRecommendTypePropertyRowWidgetController* __4__this; // 0x20
 
 		::System::Void _ctor()
 		{

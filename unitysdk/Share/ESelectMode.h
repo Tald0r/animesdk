@@ -3,7 +3,7 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int ESelectMode_TypeDefinitionIndex = 11009;
+	inline static constexpr unsigned int ESelectMode_TypeDefinitionIndex = 11933;
 
 	enum class ESelectMode : ::System::Int16
 	{

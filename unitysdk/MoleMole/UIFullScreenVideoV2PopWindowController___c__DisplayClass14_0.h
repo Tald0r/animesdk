@@ -6,20 +6,20 @@ namespace MoleMole { class MultipleVideoPlayerManager; }
 namespace MoleMole { class UIFullScreenVideoV2PopWindowController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIFULLSCREENVIDEOV2POPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCAC2C90)
-#define MOLEMOLE_UIFULLSCREENVIDEOV2POPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__INITVIDEOPLAYER_B__0_OFFSET UNITYSDK_OFFSET(0xCAC2CA0)
-#define MOLEMOLE_UIFULLSCREENVIDEOV2POPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__INITVIDEOPLAYER_B__1_OFFSET UNITYSDK_OFFSET(0xCAC2D90)
+#define MOLEMOLE_UIFULLSCREENVIDEOV2POPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCB49090)
+#define MOLEMOLE_UIFULLSCREENVIDEOV2POPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__INITVIDEOPLAYER_B__0_OFFSET UNITYSDK_OFFSET(0xCB490A0)
+#define MOLEMOLE_UIFULLSCREENVIDEOV2POPWINDOWCONTROLLER___C__DISPLAYCLASS14_0__INITVIDEOPLAYER_B__1_OFFSET UNITYSDK_OFFSET(0xCB49190)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFullScreenVideoV2PopWindowController___c__DisplayClass14_0_TypeDefinitionIndex = 44034;
+	inline static constexpr unsigned int UIFullScreenVideoV2PopWindowController___c__DisplayClass14_0_TypeDefinitionIndex = 58869;
 
 	class UIFullScreenVideoV2PopWindowController___c__DisplayClass14_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIFullScreenVideoV2PopWindowController* __4__this; // 0x10
+		::System::Action_1<::MoleMole::MultipleVideoPlayerManager*>* onEnd; // 0x10
 		::System::Action_1<::MoleMole::MultipleVideoPlayerManager*>* onPrepare; // 0x18
-		::System::Action_1<::MoleMole::MultipleVideoPlayerManager*>* onEnd; // 0x20
+		::MoleMole::UIFullScreenVideoV2PopWindowController* __4__this; // 0x20
 
 		::System::Void _ctor()
 		{

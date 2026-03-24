@@ -9,29 +9,29 @@
 
 namespace Cinemachine { class ISignalSource6D; }
 
-#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_CANCEL_OFFSET UNITYSDK_OFFSET(0x1B02A0F0)
-#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_CLEAR_OFFSET UNITYSDK_OFFSET(0x1B02A8E0)
-#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_DISTANCEDECAY_OFFSET UNITYSDK_OFFSET(0x1B02A140)
-#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_GETDECAYEDSIGNAL_OFFSET UNITYSDK_OFFSET(0x1B02A200)
-#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_GET_EXPIRED_OFFSET UNITYSDK_OFFSET(0x1B029FA0)
-#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B02A930)
+#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_CANCEL_OFFSET UNITYSDK_OFFSET(0x1B63B510)
+#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_CLEAR_OFFSET UNITYSDK_OFFSET(0x1B63BD00)
+#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_DISTANCEDECAY_OFFSET UNITYSDK_OFFSET(0x1B63B560)
+#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_GETDECAYEDSIGNAL_OFFSET UNITYSDK_OFFSET(0x1B63B620)
+#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT_GET_EXPIRED_OFFSET UNITYSDK_OFFSET(0x1B63B3C0)
+#define CINEMACHINE_CINEMACHINEIMPULSEMANAGER_IMPULSEEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B63BD50)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineImpulseManager_ImpulseEvent_TypeDefinitionIndex = 31151;
+	inline static constexpr unsigned int CinemachineImpulseManager_ImpulseEvent_TypeDefinitionIndex = 32103;
 
 	class CinemachineImpulseManager_ImpulseEvent : public ::System::Object
 	{
 	public:
-		::Cinemachine::ISignalSource6D* m_SignalSource; // 0x10
-		::Cinemachine::CinemachineImpulseManager_EnvelopeDefinition m_Envelope; // 0x18
-		::System::Int32 m_Channel; // 0x38
-		::UnityEngine::Vector3 m_Position; // 0x3C
-		::System::Single m_PropagationSpeed; // 0x48
-		::Cinemachine::CinemachineImpulseManager_ImpulseEvent_DissipationMode m_DissipationMode; // 0x4C
-		::Cinemachine::CinemachineImpulseManager_ImpulseEvent_DirectionMode m_DirectionMode; // 0x50
-		::System::Single m_DissipationDistance; // 0x54
-		::System::Single m_Radius; // 0x58
+		::Cinemachine::CinemachineImpulseManager_EnvelopeDefinition m_Envelope; // 0x10
+		::Cinemachine::ISignalSource6D* m_SignalSource; // 0x30
+		::System::Single m_PropagationSpeed; // 0x38
+		::System::Int32 m_Channel; // 0x3C
+		::Cinemachine::CinemachineImpulseManager_ImpulseEvent_DirectionMode m_DirectionMode; // 0x40
+		::System::Single m_Radius; // 0x44
+		::Cinemachine::CinemachineImpulseManager_ImpulseEvent_DissipationMode m_DissipationMode; // 0x48
+		::UnityEngine::Vector3 m_Position; // 0x4C
+		::System::Single m_DissipationDistance; // 0x58
 		::System::Single m_StartTime; // 0x5C
 
 		::System::Void _ctor()

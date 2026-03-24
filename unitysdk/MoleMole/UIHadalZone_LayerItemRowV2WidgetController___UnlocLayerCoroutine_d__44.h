@@ -1,0 +1,59 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/Object.h"
+
+namespace MoleMole { class UIHadalZone_LayerItemRowV2WidgetController; }
+namespace MoleMole { class UIHadalZone_LayerItemRowV2WidgetController___c__DisplayClass44_0; }
+
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_MOVENEXT_OFFSET UNITYSDK_OFFSET(0xA9B4920)
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xA9B4E10)
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xA9B4E70)
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0xA9B4E20)
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0xA9B4910)
+#define MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44__CTOR_OFFSET UNITYSDK_OFFSET(0xA9B4900)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIHadalZone_LayerItemRowV2WidgetController___UnlocLayerCoroutine_d__44_TypeDefinitionIndex = 70364;
+
+	class UIHadalZone_LayerItemRowV2WidgetController___UnlocLayerCoroutine_d__44 : public ::System::Object
+	{
+	public:
+		::MoleMole::UIHadalZone_LayerItemRowV2WidgetController___c__DisplayClass44_0* __8__1; // 0x10
+		::MoleMole::UIHadalZone_LayerItemRowV2WidgetController* __4__this; // 0x18
+		::System::Int32 __1__state; // 0x20
+		::System::Single __2__current; // 0x24
+		::System::Single _start_5__3; // 0x28
+		::System::Int32 _max_wait_5__2; // 0x2C
+
+		::System::Void _ctor(::System::Int32 __1__state)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44__CTOR_OFFSET))(this, __1__state);
+		}
+
+		::System::Void System_IDisposable_Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_MOVENEXT_OFFSET))(this);
+		}
+
+		::System::Single System_Collections_Generic_IEnumerator_System_Single__get_Current()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_SINGLE__GET_CURRENT_OFFSET))(this);
+		}
+
+		::System::Void System_Collections_IEnumerator_Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET))(this);
+		}
+
+		::System::Object* System_Collections_IEnumerator_get_Current()
+		{
+			return ((::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHADALZONE_LAYERITEMROWV2WIDGETCONTROLLER___UNLOCLAYERCOROUTINE_D__44_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET))(this);
+		}
+	};
+}

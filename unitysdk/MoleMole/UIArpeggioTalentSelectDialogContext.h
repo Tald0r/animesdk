@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_3_7E21E2F8DEAA5F4C_9;
+class Class_3_7E21E2F8DEAA5F4C_11;
 
-#define MOLEMOLE_UIARPEGGIOTALENTSELECTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBF2C7D0)
+#define MOLEMOLE_UIARPEGGIOTALENTSELECTDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xE933840)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIArpeggioTalentSelectDialogContext_TypeDefinitionIndex = 47059;
+	inline static constexpr unsigned int UIArpeggioTalentSelectDialogContext_TypeDefinitionIndex = 70314;
 
 	class UIArpeggioTalentSelectDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_3_7E21E2F8DEAA5F4C_9* serverTalentReq; // 0x28
+		::Class_3_7E21E2F8DEAA5F4C_11* serverTalentReq; // 0x28
 		::System::Int32 slotIndex; // 0x30
 		::System::Int32 chapterIndex; // 0x34
 

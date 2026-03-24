@@ -5,19 +5,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGDYNAMICACCESSORYSKINNINGDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9706A50)
+#define MOLEMOLE_CONFIG_CONFIGDYNAMICACCESSORYSKINNINGDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB0954A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigDynamicAccessorySkinningData_TypeDefinitionIndex = 55151;
+	inline static constexpr unsigned int ConfigDynamicAccessorySkinningData_TypeDefinitionIndex = 68634;
 
 	class ConfigDynamicAccessorySkinningData : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::String*>* BoneAttachpoints; // 0x10
+		::System::String* RootBoneAttachPoint; // 0x10
 		::System::String* DebugName; // 0x18
 		::System::String* FollowAttachPoint; // 0x20
-		::System::String* RootBoneAttachPoint; // 0x28
+		::Il2CppArray<::System::String*>* BoneAttachpoints; // 0x28
 		::Enum_3_DD1A5F02CCB29BE7 BindMode; // 0x30
 
 		::System::Void _ctor()

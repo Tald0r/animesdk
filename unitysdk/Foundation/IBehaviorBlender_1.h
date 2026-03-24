@@ -7,7 +7,7 @@ namespace Foundation { template <typename T> class BehaviorInstance_1; }
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IBehaviorBlender_1_TypeDefinitionIndex = 8967;
+	inline static constexpr unsigned int IBehaviorBlender_1_TypeDefinitionIndex = 9181;
 
 	template <typename TData>
 	class IBehaviorBlender_1

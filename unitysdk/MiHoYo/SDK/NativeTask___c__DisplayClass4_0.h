@@ -6,12 +6,12 @@ namespace MiHoYo::SDK { class NativeTask; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_NATIVETASK___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18206990)
-#define MIHOYO_SDK_NATIVETASK___C__DISPLAYCLASS4_0__NATIVEINVOKE_B__0_OFFSET UNITYSDK_OFFSET(0x182069A0)
+#define MIHOYO_SDK_NATIVETASK___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18776EA0)
+#define MIHOYO_SDK_NATIVETASK___C__DISPLAYCLASS4_0__NATIVEINVOKE_B__0_OFFSET UNITYSDK_OFFSET(0x18776EB0)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int NativeTask___c__DisplayClass4_0_TypeDefinitionIndex = 18005;
+	inline static constexpr unsigned int NativeTask___c__DisplayClass4_0_TypeDefinitionIndex = 18516;
 
 	class NativeTask___c__DisplayClass4_0 : public ::System::Object
 	{

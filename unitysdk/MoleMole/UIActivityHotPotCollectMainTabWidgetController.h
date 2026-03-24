@@ -1,0 +1,80 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+
+class Class_2_989B2E952320ACB1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace UnityEngine::UI::Extension { class UITabButton; }
+
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_GETTAB_OFFSET UNITYSDK_OFFSET(0xC35B4C0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC35B680)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC35B720)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC35B530)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC35B5D0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC35B800)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC35B830)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC35B8A0)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC35B920)
+#define MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC35B980)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityHotPotCollectMainTabWidgetController_TypeDefinitionIndex = 72438;
+
+	class UIActivityHotPotCollectMainTabWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		::Class_2_989B2E952320ACB1* _view; // 0x2A0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::UnityEngine::UI::Extension::UITabButton* GetTab()
+		{
+			return ((::UnityEngine::UI::Extension::UITabButton*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_GETTAB_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTCOLLECTMAINTABWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

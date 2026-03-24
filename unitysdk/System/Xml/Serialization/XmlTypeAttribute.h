@@ -5,9 +5,9 @@
 namespace System { class String; }
 namespace System::Text { class StringBuilder; }
 
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x1911DE70)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEATTRIBUTE_GET_TYPENAME_OFFSET UNITYSDK_OFFSET(0x1911DE50)
-#define SYSTEM_XML_SERIALIZATION_XMLTYPEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1911DE40)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEATTRIBUTE_ADDKEYHASH_OFFSET UNITYSDK_OFFSET(0x194914F0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEATTRIBUTE_GET_TYPENAME_OFFSET UNITYSDK_OFFSET(0x194914D0)
+#define SYSTEM_XML_SERIALIZATION_XMLTYPEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x194914C0)
 
 namespace System::Xml::Serialization
 {
@@ -16,8 +16,8 @@ namespace System::Xml::Serialization
 	class XmlTypeAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* typeName; // 0x10
-		::System::String* ns; // 0x18
+		::System::String* ns; // 0x10
+		::System::String* typeName; // 0x18
 		::System::Boolean includeInSchema; // 0x20
 
 		::System::Void _ctor()

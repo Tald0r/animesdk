@@ -9,20 +9,20 @@ namespace NodeCanvas::Framework { class Graph; }
 namespace System { class Action; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define NODECANVAS_FRAMEWORK_GRAPH__LOADOVERWRITEASYNC_D__166_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x901BF0)
-#define NODECANVAS_FRAMEWORK_GRAPH__LOADOVERWRITEASYNC_D__166_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x8434F0)
+#define NODECANVAS_FRAMEWORK_GRAPH__LOADOVERWRITEASYNC_D__166_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x92D570)
+#define NODECANVAS_FRAMEWORK_GRAPH__LOADOVERWRITEASYNC_D__166_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x92D580)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Graph__LoadOverwriteAsync_d__166_TypeDefinitionIndex = 26033;
+	inline static constexpr unsigned int Graph__LoadOverwriteAsync_d__166_TypeDefinitionIndex = 27307;
 
 	struct alignas(8) Graph__LoadOverwriteAsync_d__166
 	{
-		::System::Action* callback; // 0x10
-		::NodeCanvas::Framework::Internal::GraphLoadData data; // 0x18
-		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x48
-		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x50
-		::NodeCanvas::Framework::Graph* __4__this; // 0x70
+		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x10
+		::NodeCanvas::Framework::Graph* __4__this; // 0x18
+		::System::Action* callback; // 0x20
+		::NodeCanvas::Framework::Internal::GraphLoadData data; // 0x28
+		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x58
 		::System::Int32 __1__state; // 0x78
 
 		::System::Void MoveNext()

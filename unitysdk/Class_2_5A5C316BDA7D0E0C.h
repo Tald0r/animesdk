@@ -3,21 +3,22 @@
 #include "unitysdk/Class_1_7B58A293E5CB41D5.h"
 #include "unitysdk/Struct_2_9E4D1804C70A9D58.h"
 
-class Class_2_79F6D62CE30E3F8E_9;
+class Class_2_79AE422BA06F6D26_25;
 namespace System { class String; }
 
-#define CLASS_2_5A5C316BDA7D0E0C__CTOR_OFFSET UNITYSDK_OFFSET(0x6783330)
+#define CLASS_2_5A5C316BDA7D0E0C__CTOR_OFFSET UNITYSDK_OFFSET(0xF4622B0)
 
-inline static constexpr unsigned int Class_2_5A5C316BDA7D0E0C_TypeDefinitionIndex = 68971;
+inline static constexpr unsigned int Class_2_5A5C316BDA7D0E0C_TypeDefinitionIndex = 49070;
 
-class Class_2_5A5C316BDA7D0E0C : public ::Class_1_7B58A293E5CB41D5<::Class_2_79F6D62CE30E3F8E_9*>
+class Class_2_5A5C316BDA7D0E0C : public ::Class_1_7B58A293E5CB41D5<::Class_2_79AE422BA06F6D26_25*>
 {
 public:
 	// static const ::System::String* Field_2_0; // 0x0
 	// static const ::System::String* Field_2_1; // 0x0
+	// static const ::System::String* Field_2_2; // 0x0
 
-	::System::Void _ctor(::Class_2_79F6D62CE30E3F8E_9* a1)
+	::System::Void _ctor(::Class_2_79AE422BA06F6D26_25* a1)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_2_79F6D62CE30E3F8E_9*))((::PBYTE)hIl2Cpp + CLASS_2_5A5C316BDA7D0E0C__CTOR_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::Class_2_79AE422BA06F6D26_25*))((::PBYTE)hIl2Cpp + CLASS_2_5A5C316BDA7D0E0C__CTOR_OFFSET))(this, a1);
 	}
 };

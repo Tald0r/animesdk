@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UILIVEHOUSEMULTIPLELINEWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCA080)
+#define MOLEMOLE_UILIVEHOUSEMULTIPLELINEWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBE28330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILiveHouseMultipleLineWidgetController_Context_TypeDefinitionIndex = 48274;
+	inline static constexpr unsigned int UILiveHouseMultipleLineWidgetController_Context_TypeDefinitionIndex = 72419;
 
 	class UILiveHouseMultipleLineWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

@@ -8,28 +8,28 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define POSTPROCESS_MKGLOW_RENDERTARGETCONTEXT_SETRENDERTARGETCONTEXT_1_OFFSET UNITYSDK_OFFSET(0x187B7D00)
-#define POSTPROCESS_MKGLOW_RENDERTARGETCONTEXT_SETRENDERTARGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x187B7960)
-#define POSTPROCESS_MKGLOW_RENDERTARGETCONTEXT__CCTOR_OFFSET UNITYSDK_OFFSET(0x187B8130)
+#define POSTPROCESS_MKGLOW_RENDERTARGETCONTEXT_SETRENDERTARGETCONTEXT_1_OFFSET UNITYSDK_OFFSET(0x18D16A60)
+#define POSTPROCESS_MKGLOW_RENDERTARGETCONTEXT_SETRENDERTARGETCONTEXT_OFFSET UNITYSDK_OFFSET(0x18D166C0)
+#define POSTPROCESS_MKGLOW_RENDERTARGETCONTEXT__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D16E90)
 
 namespace PostProcess::MKGlow
 {
-	inline static constexpr unsigned int RenderTargetContext_TypeDefinitionIndex = 28209;
+	inline static constexpr unsigned int RenderTargetContext_TypeDefinitionIndex = 29150;
 
 	class RenderTargetContext : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::UnityEngine::Rendering::RenderTargetBinding>** StaticGet__mrtBindingsSRP()
-		{
-			return (::Il2CppArray<::UnityEngine::Rendering::RenderTargetBinding>**)Il2CppClass::FromTypeDefinitionIndex(RenderTargetContext_TypeDefinitionIndex)->GetStaticField(0x22350);
-		}
 		static ::Il2CppArray<::UnityEngine::RenderTargetSetup>** StaticGet__mrtBindingsLegacy()
 		{
-			return (::Il2CppArray<::UnityEngine::RenderTargetSetup>**)Il2CppClass::FromTypeDefinitionIndex(RenderTargetContext_TypeDefinitionIndex)->GetStaticField(0x22358);
+			return (::Il2CppArray<::UnityEngine::RenderTargetSetup>**)Il2CppClass::FromTypeDefinitionIndex(RenderTargetContext_TypeDefinitionIndex)->GetStaticField(0x23D70);
+		}
+		static ::Il2CppArray<::UnityEngine::Rendering::RenderTargetBinding>** StaticGet__mrtBindingsSRP()
+		{
+			return (::Il2CppArray<::UnityEngine::Rendering::RenderTargetBinding>**)Il2CppClass::FromTypeDefinitionIndex(RenderTargetContext_TypeDefinitionIndex)->GetStaticField(0x23D78);
 		}
 		static ::System::Int32* StaticGet__renderTargetCount()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(RenderTargetContext_TypeDefinitionIndex)->GetStaticField(0x6D60);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(RenderTargetContext_TypeDefinitionIndex)->GetStaticField(0x74B0);
 		}
 
 		static ::System::Void _cctor()

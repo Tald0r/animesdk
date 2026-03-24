@@ -7,20 +7,20 @@ namespace MoleMole::GalGame { class AudioEventItem; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS17_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD5642A0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS17_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC10CA70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass17_1_TypeDefinitionIndex = 54677;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass17_1_TypeDefinitionIndex = 58916;
 
 	class UIGalgamePageController___c__DisplayClass17_1 : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioEventItemList; // 0x10
-		::System::String* voiceKey; // 0x18
-		::MoleMole::UIGalgamePageController___c__DisplayClass17_0* CS___8__locals1; // 0x20
-		::System::Boolean isTypeWriter; // 0x28
-		::System::Single textSpeed; // 0x2C
+		::MoleMole::UIGalgamePageController___c__DisplayClass17_0* CS___8__locals1; // 0x10
+		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioEventItemList; // 0x18
+		::System::String* voiceKey; // 0x20
+		::System::Single textSpeed; // 0x28
+		::System::Boolean isTypeWriter; // 0x2C
 
 		::System::Void _ctor()
 		{

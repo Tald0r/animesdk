@@ -5,12 +5,12 @@
 namespace NPCCrowd::Ability { class NPCAbilityMovementMoveStyleParameters; }
 namespace System { class String; }
 
-#define NPCCROWD_NPCCITYPOPULATIONMANAGER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6ED7D30)
-#define NPCCROWD_NPCCITYPOPULATIONMANAGER___C__DISPLAYCLASS14_0__SPAWNNPCFORNODE_B__0_OFFSET UNITYSDK_OFFSET(0x6ED7D40)
+#define NPCCROWD_NPCCITYPOPULATIONMANAGER___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x785CE00)
+#define NPCCROWD_NPCCITYPOPULATIONMANAGER___C__DISPLAYCLASS14_0__SPAWNNPCFORNODE_B__0_OFFSET UNITYSDK_OFFSET(0x785CE10)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int NPCCityPopulationManager___c__DisplayClass14_0_TypeDefinitionIndex = 67651;
+	inline static constexpr unsigned int NPCCityPopulationManager___c__DisplayClass14_0_TypeDefinitionIndex = 80919;
 
 	class NPCCityPopulationManager___c__DisplayClass14_0 : public ::System::Object
 	{

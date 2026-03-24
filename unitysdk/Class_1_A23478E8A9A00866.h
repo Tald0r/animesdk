@@ -8,20 +8,30 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_A23478E8A9A00866_METHOD_1_0947F577F1E5AE4F_OFFSET UNITYSDK_OFFSET(0x5E8CF50)
-#define CLASS_1_A23478E8A9A00866_METHOD_1_8E2C129DE4FC3609_OFFSET UNITYSDK_OFFSET(0x5E8D060)
-#define CLASS_1_A23478E8A9A00866_METHOD_1_D1FBCAD743FC3A4E_OFFSET UNITYSDK_OFFSET(0x5E8D280)
-#define CLASS_1_A23478E8A9A00866_METHOD_1_F1F1D769B66396C2_OFFSET UNITYSDK_OFFSET(0x5E8CD10)
-#define CLASS_1_A23478E8A9A00866_METHOD_1_FC56462587B8A6D8_OFFSET UNITYSDK_OFFSET(0x5E8D240)
+#define CLASS_1_A23478E8A9A00866_METHOD_1_0947F577F1E5AE4F_OFFSET UNITYSDK_OFFSET(0xB3A6BE0)
+#define CLASS_1_A23478E8A9A00866_METHOD_1_8E2C129DE4FC3609_OFFSET UNITYSDK_OFFSET(0xB3A6CF0)
+#define CLASS_1_A23478E8A9A00866_METHOD_1_D1FBCAD743FC3A4E_OFFSET UNITYSDK_OFFSET(0xB3A6920)
+#define CLASS_1_A23478E8A9A00866_METHOD_1_F1F1D769B66396C2_OFFSET UNITYSDK_OFFSET(0xB3A69A0)
+#define CLASS_1_A23478E8A9A00866_METHOD_1_FC56462587B8A6D8_OFFSET UNITYSDK_OFFSET(0xB3A6960)
 
-inline static constexpr unsigned int Class_1_A23478E8A9A00866_TypeDefinitionIndex = 47881;
+inline static constexpr unsigned int Class_1_A23478E8A9A00866_TypeDefinitionIndex = 74498;
 
 class Class_1_A23478E8A9A00866 : public ::System::Object
 {
 public:
 	static ::MoleMole::Config::ConfigSpecialEffectHitWall** StaticGet_Field_1_0()
 	{
-		return (::MoleMole::Config::ConfigSpecialEffectHitWall**)Il2CppClass::FromTypeDefinitionIndex(Class_1_A23478E8A9A00866_TypeDefinitionIndex)->GetStaticField(0x33BB0);
+		return (::MoleMole::Config::ConfigSpecialEffectHitWall**)Il2CppClass::FromTypeDefinitionIndex(Class_1_A23478E8A9A00866_TypeDefinitionIndex)->GetStaticField(0x3C950);
+	}
+
+	static ::MoleMole::Config::ConfigSpecialEffectHitWall* Method_1_D1FBCAD743FC3A4E()
+	{
+		return ((::MoleMole::Config::ConfigSpecialEffectHitWall*(*)())((::PBYTE)hIl2Cpp + CLASS_1_A23478E8A9A00866_METHOD_1_D1FBCAD743FC3A4E_OFFSET))();
+	}
+
+	static ::System::Void Method_1_FC56462587B8A6D8(::MoleMole::Config::ConfigSpecialEffectHitWall* a1)
+	{
+		return ((::System::Void(*)(::MoleMole::Config::ConfigSpecialEffectHitWall*))((::PBYTE)hIl2Cpp + CLASS_1_A23478E8A9A00866_METHOD_1_FC56462587B8A6D8_OFFSET))(a1);
 	}
 
 	static ::System::Boolean Method_1_F1F1D769B66396C2(::System::String* a1, ::MoleMole::Config::DamageDecalData& a2)
@@ -37,15 +47,5 @@ public:
 	static ::System::Void Method_1_8E2C129DE4FC3609(::System::Boolean a1, ::System::Action* a2)
 	{
 		return ((::System::Void(*)(::System::Boolean, ::System::Action*))((::PBYTE)hIl2Cpp + CLASS_1_A23478E8A9A00866_METHOD_1_8E2C129DE4FC3609_OFFSET))(a1, a2);
-	}
-
-	static ::System::Void Method_1_FC56462587B8A6D8(::MoleMole::Config::ConfigSpecialEffectHitWall* a1)
-	{
-		return ((::System::Void(*)(::MoleMole::Config::ConfigSpecialEffectHitWall*))((::PBYTE)hIl2Cpp + CLASS_1_A23478E8A9A00866_METHOD_1_FC56462587B8A6D8_OFFSET))(a1);
-	}
-
-	static ::MoleMole::Config::ConfigSpecialEffectHitWall* Method_1_D1FBCAD743FC3A4E()
-	{
-		return ((::MoleMole::Config::ConfigSpecialEffectHitWall*(*)())((::PBYTE)hIl2Cpp + CLASS_1_A23478E8A9A00866_METHOD_1_D1FBCAD743FC3A4E_OFFSET))();
 	}
 };

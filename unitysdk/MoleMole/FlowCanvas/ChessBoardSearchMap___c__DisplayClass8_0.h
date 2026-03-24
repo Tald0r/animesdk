@@ -6,20 +6,20 @@
 namespace MoleMole::FlowCanvas { class ChessBoardSearchMap; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8AEAB50)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__DOFILTER_B__2_OFFSET UNITYSDK_OFFSET(0x8AEAC10)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__DOFILTER_G__FILTERDISTANCE_1_OFFSET UNITYSDK_OFFSET(0x8AEADB0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__DOFILTER_G__FILTERTAGS_0_OFFSET UNITYSDK_OFFSET(0x8AEAB60)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x11641890)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__DOFILTER_B__2_OFFSET UNITYSDK_OFFSET(0x11641950)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__DOFILTER_G__FILTERDISTANCE_1_OFFSET UNITYSDK_OFFSET(0x11641AF0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDSEARCHMAP___C__DISPLAYCLASS8_0__DOFILTER_G__FILTERTAGS_0_OFFSET UNITYSDK_OFFSET(0x116418A0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessBoardSearchMap___c__DisplayClass8_0_TypeDefinitionIndex = 60840;
+	inline static constexpr unsigned int ChessBoardSearchMap___c__DisplayClass8_0_TypeDefinitionIndex = 79097;
 
 	class ChessBoardSearchMap___c__DisplayClass8_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::FlowCanvas::ChessBoardSearchMap* __4__this; // 0x10
-		::MoleMole::FlowCanvas::ChessBoardSearchMap_FilterParams filterParams; // 0x18
+		::MoleMole::FlowCanvas::ChessBoardSearchMap_FilterParams filterParams; // 0x10
+		::MoleMole::FlowCanvas::ChessBoardSearchMap* __4__this; // 0x20
 		::System::Int32 configCol; // 0x28
 		::System::Int32 configRow; // 0x2C
 

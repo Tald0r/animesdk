@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define QWER_CFUTEX_POST_OFFSET UNITYSDK_OFFSET(0x1AA1C0B0)
-#define QWER_CFUTEX_WAIT_OFFSET UNITYSDK_OFFSET(0x1AA1CCC0)
-#define QWER_CFUTEX__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA1CFA0)
+#define QWER_CFUTEX_POST_OFFSET UNITYSDK_OFFSET(0x1B00BDF0)
+#define QWER_CFUTEX_WAIT_OFFSET UNITYSDK_OFFSET(0x1B00CA00)
+#define QWER_CFUTEX__CTOR_OFFSET UNITYSDK_OFFSET(0x1B00CCE0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CFutex_TypeDefinitionIndex = 82079;
+	inline static constexpr unsigned int CFutex_TypeDefinitionIndex = 84120;
 
 	class CFutex : public ::System::Object
 	{

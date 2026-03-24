@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int EffectType_TypeDefinitionIndex = 66047;
+	inline static constexpr unsigned int EffectType_TypeDefinitionIndex = 50097;
 
 	enum class EffectType : ::System::Int32
 	{

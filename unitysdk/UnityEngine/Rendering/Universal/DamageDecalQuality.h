@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int DamageDecalQuality_TypeDefinitionIndex = 28362;
+	inline static constexpr unsigned int DamageDecalQuality_TypeDefinitionIndex = 29303;
 
 	enum class DamageDecalQuality : ::System::Int32
 	{

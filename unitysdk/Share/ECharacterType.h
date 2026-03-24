@@ -3,15 +3,15 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int ECharacterType_TypeDefinitionIndex = 11630;
+	inline static constexpr unsigned int ECharacterType_TypeDefinitionIndex = 15451;
 
 	enum class ECharacterType : ::System::Int16
 	{
-		Exchange = 2,
-		Vice = 4,
 		Female = 1,
-		Male = 0,
-		EnumCount = 5,
+		Vice = 4,
 		Main = 3,
+		Male = 0,
+		Exchange = 2,
+		EnumCount = 5,
 	};
 }

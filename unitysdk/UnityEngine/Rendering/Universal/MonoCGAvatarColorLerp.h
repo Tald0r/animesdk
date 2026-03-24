@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCGAVATARCOLORLERP__CTOR_OFFSET UNITYSDK_OFFSET(0x17BF6100)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MONOCGAVATARCOLORLERP__CTOR_OFFSET UNITYSDK_OFFSET(0x182DE470)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int MonoCGAvatarColorLerp_TypeDefinitionIndex = 28593;
+	inline static constexpr unsigned int MonoCGAvatarColorLerp_TypeDefinitionIndex = 29536;
 
 	class MonoCGAvatarColorLerp : public ::UnityEngine::MonoBehaviour
 	{

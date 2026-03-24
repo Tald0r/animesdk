@@ -4,19 +4,19 @@
 
 namespace MoleMole { class UIHollowRelicOptionItemWidgetController; }
 
-#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9422440)
-#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__DISPLAYCLASS16_0__REFRESHINITIALRELICVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x9422450)
+#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x99E56D0)
+#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__DISPLAYCLASS16_0__REFRESHINITIALRELICVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x99E56E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowRelicOptionItemWidgetController___c__DisplayClass16_0_TypeDefinitionIndex = 58908;
+	inline static constexpr unsigned int UIHollowRelicOptionItemWidgetController___c__DisplayClass16_0_TypeDefinitionIndex = 76450;
 
 	class UIHollowRelicOptionItemWidgetController___c__DisplayClass16_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIHollowRelicOptionItemWidgetController* __4__this; // 0x10
-		::System::Boolean canUnlock; // 0x18
-		::System::Boolean unlockd; // 0x19
+		::System::Boolean unlockd; // 0x18
+		::System::Boolean canUnlock; // 0x19
 
 		::System::Void _ctor()
 		{

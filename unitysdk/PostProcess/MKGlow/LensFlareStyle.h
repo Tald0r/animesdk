@@ -3,7 +3,7 @@
 
 namespace PostProcess::MKGlow
 {
-	inline static constexpr unsigned int LensFlareStyle_TypeDefinitionIndex = 28182;
+	inline static constexpr unsigned int LensFlareStyle_TypeDefinitionIndex = 29123;
 
 	enum class LensFlareStyle : ::System::Int32
 	{

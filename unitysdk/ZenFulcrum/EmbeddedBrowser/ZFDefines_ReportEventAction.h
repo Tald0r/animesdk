@@ -3,7 +3,7 @@
 
 namespace ZenFulcrum::EmbeddedBrowser
 {
-	inline static constexpr unsigned int ZFDefines_ReportEventAction_TypeDefinitionIndex = 29727;
+	inline static constexpr unsigned int ZFDefines_ReportEventAction_TypeDefinitionIndex = 30680;
 
 	enum class ZFDefines_ReportEventAction : ::System::Int32
 	{

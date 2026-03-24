@@ -11,18 +11,18 @@ namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Mesh; }
 template <typename T> class NPCSoftAssetPath_1;
 
-#define NPCAVATARUTILS__GETPARTCPUMESHASYNC_D__28_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2FF260)
-#define NPCAVATARUTILS__GETPARTCPUMESHASYNC_D__28_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCAVATARUTILS__GETPARTCPUMESHASYNC_D__28_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2F93B0)
+#define NPCAVATARUTILS__GETPARTCPUMESHASYNC_D__28_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int NPCAvatarUtils__GetPartCPUMeshAsync_d__28_TypeDefinitionIndex = 50620;
+inline static constexpr unsigned int NPCAvatarUtils__GetPartCPUMeshAsync_d__28_TypeDefinitionIndex = 48382;
 
 struct alignas(8) NPCAvatarUtils__GetPartCPUMeshAsync_d__28
 {
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::UnityEngine::Mesh*> __t__builder; // 0x10
+	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::UnityEngine::Mesh*> __u__1; // 0x10
 	::NPCAvatarMeshAssetsSO_FNPCAvatarLodMeshAssets* meshAss; // 0x28
-	::NPCSoftAssetPath_1<::UnityEngine::Mesh*>* assetRef; // 0x30
-	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::UnityEngine::Mesh*> __u__1; // 0x38
-	::System::Threading::CancellationToken cancellationToken; // 0x50
+	::System::Threading::CancellationToken cancellationToken; // 0x30
+	::NPCSoftAssetPath_1<::UnityEngine::Mesh*>* assetRef; // 0x38
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::UnityEngine::Mesh*> __t__builder; // 0x40
 	::NPCCrowd::Lod::ELODLevel lodLevel; // 0x58
 	::System::Int32 __1__state; // 0x5C
 

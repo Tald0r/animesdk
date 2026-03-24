@@ -3,7 +3,7 @@
 
 namespace ProtoScript
 {
-	inline static constexpr unsigned int AimRectColor_TypeDefinitionIndex = 20952;
+	inline static constexpr unsigned int AimRectColor_TypeDefinitionIndex = 20380;
 
 	enum class AimRectColor : ::System::Int32
 	{

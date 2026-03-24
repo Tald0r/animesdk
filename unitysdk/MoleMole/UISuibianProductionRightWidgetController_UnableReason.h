@@ -3,14 +3,14 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianProductionRightWidgetController_UnableReason_TypeDefinitionIndex = 38592;
+	inline static constexpr unsigned int UISuibianProductionRightWidgetController_UnableReason_TypeDefinitionIndex = 39145;
 
 	enum class UISuibianProductionRightWidgetController_UnableReason : ::System::Int32
 	{
-		None = 0,
-		BuddyEnergyNotEnough = 2,
 		MaterialNotEnough = 3,
 		UnResearch = 4,
+		BuddyEnergyNotEnough = 2,
 		NeedBuddy = 1,
+		None = 0,
 	};
 }

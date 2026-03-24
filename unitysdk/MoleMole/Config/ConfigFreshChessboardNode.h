@@ -6,12 +6,12 @@ class Class_1_D72537470FC2F779;
 namespace MoleMole::Config { class ListCellUISpecialNum; }
 namespace MoleMole::Config { class ListIntUISpecialNum; }
 
-#define MOLEMOLE_CONFIG_CONFIGFRESHCHESSBOARDNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x84A75D0)
-#define MOLEMOLE_CONFIG_CONFIGFRESHCHESSBOARDNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x84A76B0)
+#define MOLEMOLE_CONFIG_CONFIGFRESHCHESSBOARDNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x94FF400)
+#define MOLEMOLE_CONFIG_CONFIGFRESHCHESSBOARDNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x94FF4E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigFreshChessboardNode_TypeDefinitionIndex = 69011;
+	inline static constexpr unsigned int ConfigFreshChessboardNode_TypeDefinitionIndex = 41489;
 
 	class ConfigFreshChessboardNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

@@ -5,38 +5,38 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class ComputeBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA_ALLOCATERESOLUTIONDEPENDENTBUFFERS_OFFSET UNITYSDK_OFFSET(0x1A11D570)
-#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA_CLEANUP_OFFSET UNITYSDK_OFFSET(0x1A11DD90)
-#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1A11D400)
-#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A11E9E0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A11E980)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA_ALLOCATERESOLUTIONDEPENDENTBUFFERS_OFFSET UNITYSDK_OFFSET(0x1A6947B0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA_CLEANUP_OFFSET UNITYSDK_OFFSET(0x1A694FD0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x1A694640)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A695C00)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTLOOP_TILEANDCLUSTERDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A695BA0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int LightLoop_TileAndClusterData_TypeDefinitionIndex = 5991;
+	inline static constexpr unsigned int LightLoop_TileAndClusterData_TypeDefinitionIndex = 5994;
 
 	class LightLoop_TileAndClusterData : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>** StaticGet_s_CachedPerVoxelOffset()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5650);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5690);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>** StaticGet_s_CachedPerTileLogBaseTweak()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5658);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>** StaticGet_s_CachedPunctualLightList()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5660);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5698);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>** StaticGet_s_CachedFeatureFlags()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5668);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x56A0);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>** StaticGet_s_CachedPerVoxelLightLists()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x5670);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x56A8);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>** StaticGet_s_CachedPunctualLightList()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::ComputeBuffer*>**)Il2CppClass::FromTypeDefinitionIndex(LightLoop_TileAndClusterData_TypeDefinitionIndex)->GetStaticField(0x56B0);
 		}
 		::UnityEngine::ComputeBuffer* LightVolumeDataBuffer; // 0x10
 		::UnityEngine::ComputeBuffer* AABBBoundsBuffer; // 0x18

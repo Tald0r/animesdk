@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IEqualityCo
 
 namespace Foundation::DataStructures
 {
-	inline static constexpr unsigned int HashSetEqualityComparer_1_TypeDefinitionIndex = 7997;
+	inline static constexpr unsigned int HashSetEqualityComparer_1_TypeDefinitionIndex = 7877;
 
 	template <typename T>
 	class HashSetEqualityComparer_1 : public ::System::Object

@@ -8,7 +8,7 @@ namespace UnityEngine::NAPRenderPipeline0 { template <typename T> class ConsoleV
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ConsoleVariableT_1_TypeDefinitionIndex = 5681;
+	inline static constexpr unsigned int ConsoleVariableT_1_TypeDefinitionIndex = 5684;
 
 	template <typename T>
 	class ConsoleVariableT_1 : public ::UnityEngine::ConsoleVariable

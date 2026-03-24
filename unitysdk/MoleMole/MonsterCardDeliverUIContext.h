@@ -2,21 +2,21 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_1_B2C060183F4E5398;
+class Class_1_86AA8F306FA75018;
 namespace MoleMole { class PopMonsterCardDeliverShow; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONSTERCARDDELIVERUICONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x993FB90)
+#define MOLEMOLE_MONSTERCARDDELIVERUICONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D3030)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonsterCardDeliverUIContext_TypeDefinitionIndex = 51738;
+	inline static constexpr unsigned int MonsterCardDeliverUIContext_TypeDefinitionIndex = 49665;
 
 	class MonsterCardDeliverUIContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::MoleMole::PopMonsterCardDeliverShow* showObj; // 0x28
-		::System::Collections::Generic::List_1<::Class_1_B2C060183F4E5398*>* CardList; // 0x30
+		::System::Collections::Generic::List_1<::Class_1_86AA8F306FA75018*>* CardList; // 0x30
 
 		::System::Void _ctor()
 		{

@@ -7,10 +7,10 @@
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace System::Threading::Tasks { template <typename T> class TaskCompletionSource_1; }
 
-#define TASKTREETEST__SETTASK_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x7664B0)
-#define TASKTREETEST__SETTASK_D__4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2C3CA0)
+#define TASKTREETEST__SETTASK_D__4_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x7E8AB0)
+#define TASKTREETEST__SETTASK_D__4_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x301A90)
 
-inline static constexpr unsigned int TaskTreeTest__SetTask_d__4_TypeDefinitionIndex = 78727;
+inline static constexpr unsigned int TaskTreeTest__SetTask_d__4_TypeDefinitionIndex = 63224;
 
 struct alignas(8) TaskTreeTest__SetTask_d__4
 {

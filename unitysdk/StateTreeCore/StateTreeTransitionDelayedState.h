@@ -1,60 +1,98 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeReadonlyRawPtr_1.h"
 #include "unitysdk/StateTreeCore/StateTree.h"
 #include "unitysdk/System/ValueType.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
+#include "unitysdk/UnrealTypes/ReadOnlyRawPtr_1.h"
 
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_STATETREE_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_TIMELEFT_OFFSET UNITYSDK_OFFSET(0x2D8630)
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_TRANSITIONINDEX_OFFSET UNITYSDK_OFFSET(0x2FBED0)
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_RESET_OFFSET UNITYSDK_OFFSET(0x8ED1C0)
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_SET_STATETREE_OFFSET UNITYSDK_OFFSET(0x2C3980)
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_SET_TIMELEFT_OFFSET UNITYSDK_OFFSET(0x33FDA0)
-#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_SET_TRANSITIONINDEX_OFFSET UNITYSDK_OFFSET(0x2FBEE0)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x9994F0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x9994C0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_CREATE_OFFSET UNITYSDK_OFFSET(0x1B473800)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x9994A0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2F75F0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x999530)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x9994F0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x9994C0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_RESET_OFFSET UNITYSDK_OFFSET(0x999510)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREETRANSITIONDELAYEDSTATE__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x9994F0)
+#define STATETREECORE_STATETREETRANSITIONDELAYEDSTATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B4739C0)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeTransitionDelayedState_TypeDefinitionIndex = 26932;
+	inline static constexpr unsigned int StateTreeTransitionDelayedState_TypeDefinitionIndex = 27783;
 
 	struct alignas(8) StateTreeTransitionDelayedState
 	{
-		::NativeTypes::NativeReadonlyRawPtr_1<::StateTreeCore::StateTree> _StateTree_k__BackingField; // 0x10
-		::System::UInt16 _TransitionIndex_k__BackingField; // 0x18
-		::System::Single _TimeLeft_k__BackingField; // 0x1C
-
-		::NativeTypes::NativeReadonlyRawPtr_1<::StateTreeCore::StateTree> get_StateTree()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return ((::NativeTypes::NativeReadonlyRawPtr_1<::StateTreeCore::StateTree>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_STATETREE_OFFSET))(this);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(StateTreeTransitionDelayedState_TypeDefinitionIndex)->GetStaticField(0x20650);
+		}
+		::UnrealTypes::ReadOnlyRawPtr_1<::StateTreeCore::StateTree> StateTree; // 0x10
+		::System::UInt16 TransitionIndex; // 0x18
+		::System::Single TimeLeft; // 0x1C
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE__CCTOR_OFFSET))();
 		}
 
-		::System::Void set_StateTree(::NativeTypes::NativeReadonlyRawPtr_1<::StateTreeCore::StateTree> value)
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::Void(*)(::PVOID, ::NativeTypes::NativeReadonlyRawPtr_1<::StateTreeCore::StateTree>))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_SET_STATETREE_OFFSET))(this, value);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
-		::System::UInt16 get_TransitionIndex()
+		static ::StateTreeCore::StateTreeTransitionDelayedState Create()
 		{
-			return ((::System::UInt16(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_TRANSITIONINDEX_OFFSET))(this);
+			return ((::StateTreeCore::StateTreeTransitionDelayedState(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_CREATE_OFFSET))();
 		}
 
-		::System::Void set_TransitionIndex(::System::UInt16 value)
+		::StateTreeCore::StateTreeTransitionDelayedState DefaultCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt16))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_SET_TRANSITIONINDEX_OFFSET))(this, value);
+			return ((::StateTreeCore::StateTreeTransitionDelayedState(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_DEFAULTCREATE_OFFSET))(this, allocator);
 		}
 
-		::System::Single get_TimeLeft()
+		::StateTreeCore::StateTreeTransitionDelayedState CopyCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_TIMELEFT_OFFSET))(this);
+			return ((::StateTreeCore::StateTreeTransitionDelayedState(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_COPYCREATE_OFFSET))(this, allocator);
 		}
 
-		::System::Void set_TimeLeft(::System::Single value)
+		::StateTreeCore::StateTreeTransitionDelayedState MoveCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_SET_TIMELEFT_OFFSET))(this, value);
+			return ((::StateTreeCore::StateTreeTransitionDelayedState(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::StateTreeCore::StateTreeTransitionDelayedState& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeTransitionDelayedState&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::StateTreeCore::StateTreeTransitionDelayedState& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeTransitionDelayedState&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_MOVEASSIGN_OFFSET))(this, temp);
 		}
 
 		::System::Void Reset()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_StateTreeCore_StateTreeTransitionDelayedState__CopyAssign(::StateTreeCore::StateTreeTransitionDelayedState& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeTransitionDelayedState&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREETRANSITIONDELAYEDSTATE_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREETRANSITIONDELAYEDSTATE__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

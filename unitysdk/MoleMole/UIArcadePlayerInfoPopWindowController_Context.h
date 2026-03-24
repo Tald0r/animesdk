@@ -6,11 +6,11 @@ class Class_1_B61C4EDDF0AF60D0;
 namespace MoleMole { class UIGeneralToggleWidgetController_OnClickCallback; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIARCADEPLAYERINFOPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBAF0480)
+#define MOLEMOLE_UIARCADEPLAYERINFOPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBFBCF00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIArcadePlayerInfoPopWindowController_Context_TypeDefinitionIndex = 53376;
+	inline static constexpr unsigned int UIArcadePlayerInfoPopWindowController_Context_TypeDefinitionIndex = 49157;
 
 	class UIArcadePlayerInfoPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{

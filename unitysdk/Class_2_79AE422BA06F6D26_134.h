@@ -8,38 +8,34 @@ class Class_2_A8F5ABF31E066ED4;
 namespace MoleMole { class NotificationBadgeEx; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
-namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_79AE422BA06F6D26_134_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x93CF0C0)
-#define CLASS_2_79AE422BA06F6D26_134_METHOD_2_8D61BE16C9463302_OFFSET UNITYSDK_OFFSET(0x93CF430)
-#define CLASS_2_79AE422BA06F6D26_134_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x93CF5D0)
-#define CLASS_2_79AE422BA06F6D26_134__CTOR_OFFSET UNITYSDK_OFFSET(0x93CF5C0)
+#define CLASS_2_79AE422BA06F6D26_134_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0xA097C30)
+#define CLASS_2_79AE422BA06F6D26_134_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xA097920)
+#define CLASS_2_79AE422BA06F6D26_134_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA097D50)
+#define CLASS_2_79AE422BA06F6D26_134__CTOR_OFFSET UNITYSDK_OFFSET(0xA097D40)
 
-inline static constexpr unsigned int Class_2_79AE422BA06F6D26_134_TypeDefinitionIndex = 49449;
+inline static constexpr unsigned int Class_2_79AE422BA06F6D26_134_TypeDefinitionIndex = 62223;
 
 class Class_2_79AE422BA06F6D26_134 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_15; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_16; // 0x20
-	::Class_2_A8F5ABF31E066ED4* Field_2_13; // 0x28
-	::UnityEngine::RectTransform* Field_2_14; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_18; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x48
-	::MoleMole::NotificationBadgeEx* Field_2_5; // 0x50
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x58
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x60
-	::Class_2_60DDD9C206686F44* Field_2_10; // 0x68
-	::UnityEngine::GameObject* Field_2_0; // 0x70
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_17; // 0x78
-	::UnityEngine::GameObject* Field_2_2; // 0x80
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_11; // 0x88
-	::Class_2_A8F5ABF31E066ED4* Field_2_12; // 0x90
-	::UnityEngine::GameObject* Field_2_1; // 0x98
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0xA0
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_9; // 0xA8
+	::UnityEngine::GameObject* Field_2_11; // 0x18
+	::UnityEngine::GameObject* Field_2_13; // 0x20
+	::UnityEngine::GameObject* Field_2_8; // 0x28
+	::UnityEngine::GameObject* Field_2_4; // 0x30
+	::MoleMole::NotificationBadgeEx* Field_2_14; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_12; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x48
+	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x58
+	::UnityEngine::GameObject* Field_2_2; // 0x60
+	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x68
+	::UnityEngine::GameObject* Field_2_3; // 0x70
+	::UnityEngine::GameObject* Field_2_15; // 0x78
+	::UnityEngine::GameObject* Field_2_7; // 0x80
+	::Class_2_60DDD9C206686F44* Field_2_6; // 0x88
+	::UnityEngine::GameObject* Field_2_9; // 0x90
 
 	::System::Void _ctor()
 	{
@@ -56,8 +52,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_79AE422BA06F6D26_134_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_2_8D61BE16C9463302()
+	::System::Void Method_2_737220D2233A9067()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_79AE422BA06F6D26_134_METHOD_2_8D61BE16C9463302_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_79AE422BA06F6D26_134_METHOD_2_737220D2233A9067_OFFSET))(this);
 	}
 };

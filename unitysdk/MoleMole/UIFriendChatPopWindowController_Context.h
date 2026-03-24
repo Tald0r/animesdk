@@ -5,11 +5,11 @@
 class Class_1_BE6BF7909AD9D940;
 class Class_2_DF2C726EEEEC912D;
 
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC63DDE0)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDFA8C60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendChatPopWindowController_Context_TypeDefinitionIndex = 39144;
+	inline static constexpr unsigned int UIFriendChatPopWindowController_Context_TypeDefinitionIndex = 63191;
 
 	class UIFriendChatPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{

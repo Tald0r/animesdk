@@ -3,7 +3,7 @@
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int EmoStateManager_EmoState_TypeDefinitionIndex = 36164;
+	inline static constexpr unsigned int EmoStateManager_EmoState_TypeDefinitionIndex = 37184;
 
 	enum class EmoStateManager_EmoState : ::System::Int32
 	{

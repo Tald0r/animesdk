@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIMailDialogPopWindowController; }
 
-#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA8072F0)
-#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS16_0__ONSCROLLMOVE_B__0_OFFSET UNITYSDK_OFFSET(0xA807300)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8F19DD0)
+#define MOLEMOLE_UIMAILDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS16_0__ONSCROLLMOVE_B__0_OFFSET UNITYSDK_OFFSET(0x8F19DE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMailDialogPopWindowController___c__DisplayClass16_0_TypeDefinitionIndex = 46588;
+	inline static constexpr unsigned int UIMailDialogPopWindowController___c__DisplayClass16_0_TypeDefinitionIndex = 69847;
 
 	class UIMailDialogPopWindowController___c__DisplayClass16_0 : public ::System::Object
 	{

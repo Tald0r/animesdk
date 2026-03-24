@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_CONFIGSHOOTINGGROUNDRECOIL__CTOR_OFFSET UNITYSDK_OFFSET(0xF16CAB0)
+#define MOLEMOLE_CONFIG_CONFIGSHOOTINGGROUNDRECOIL__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4B430)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigShootingGroundRecoil_TypeDefinitionIndex = 77575;
+	inline static constexpr unsigned int ConfigShootingGroundRecoil_TypeDefinitionIndex = 63735;
 
 	class ConfigShootingGroundRecoil : public ::System::Object
 	{

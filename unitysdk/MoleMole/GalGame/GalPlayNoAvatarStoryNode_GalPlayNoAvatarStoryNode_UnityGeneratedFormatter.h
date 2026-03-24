@@ -12,34 +12,34 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8B0B9C0)
-#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8B0B9D0)
-#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8B0BFE0)
-#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8B0C3B0)
-#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8B0C370)
+#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB190750)
+#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB190760)
+#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB190D70)
+#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB191140)
+#define MOLEMOLE_GALGAME_GALPLAYNOAVATARSTORYNODE_GALPLAYNOAVATARSTORYNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB191100)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex = 42982;
+	inline static constexpr unsigned int GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex = 50396;
 
 	class GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::GalPlayNoAvatarStoryNode*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>*>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A4E0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A4E8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A4F0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D250);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::GalPlayableNodeType>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::GalPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A4F8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::GalPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D258);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D260);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>*>**)Il2CppClass::FromTypeDefinitionIndex(GalPlayNoAvatarStoryNode_GalPlayNoAvatarStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D268);
 		}
 
 		::System::Void _ctor()

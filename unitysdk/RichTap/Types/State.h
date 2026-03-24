@@ -3,7 +3,7 @@
 
 namespace RichTap::Types
 {
-	inline static constexpr unsigned int State_TypeDefinitionIndex = 34928;
+	inline static constexpr unsigned int State_TypeDefinitionIndex = 35930;
 
 	enum class State : ::System::Int32
 	{

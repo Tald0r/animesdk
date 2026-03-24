@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int EarlyUpdate_ScriptRunDelayedStartupFrame_TypeDefinitionIndex = 5553;
+	inline static constexpr unsigned int EarlyUpdate_ScriptRunDelayedStartupFrame_TypeDefinitionIndex = 5556;
 
 	struct alignas(1) EarlyUpdate_ScriptRunDelayedStartupFrame
 	{

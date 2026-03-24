@@ -5,11 +5,11 @@
 class Class_1_D375C91CCE5D3999;
 namespace System { class String; }
 
-#define MOLEMOLE_UIACTIVITYWALLPAPERAWARDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBF233E0)
+#define MOLEMOLE_UIACTIVITYWALLPAPERAWARDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xE92A450)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityWallpaperAwardContext_TypeDefinitionIndex = 52216;
+	inline static constexpr unsigned int UIActivityWallpaperAwardContext_TypeDefinitionIndex = 73343;
 
 	class UIActivityWallpaperAwardContext : public ::MoleMole::UIControllerContextBase
 	{

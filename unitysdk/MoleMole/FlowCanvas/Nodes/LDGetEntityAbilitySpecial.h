@@ -7,12 +7,12 @@ namespace MoleMole::Battle { class Entity; }
 namespace System { class Object; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETENTITYABILITYSPECIAL_INVOKE_OFFSET UNITYSDK_OFFSET(0x6ADE840)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETENTITYABILITYSPECIAL__CTOR_OFFSET UNITYSDK_OFFSET(0x6ADEB60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETENTITYABILITYSPECIAL_INVOKE_OFFSET UNITYSDK_OFFSET(0xB5CDAC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETENTITYABILITYSPECIAL__CTOR_OFFSET UNITYSDK_OFFSET(0xB5CDDE0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetEntityAbilitySpecial_TypeDefinitionIndex = 75780;
+	inline static constexpr unsigned int LDGetEntityAbilitySpecial_TypeDefinitionIndex = 80768;
 
 	class LDGetEntityAbilitySpecial : public ::FlowCanvas::Nodes::CallableFunctionNode_5<::System::Object*, ::MoleMole::Battle::Entity*, ::System::String*, ::System::String*, ::MoleMole::Config::AbilitySpecialParamType>
 	{

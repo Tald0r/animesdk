@@ -5,20 +5,20 @@
 namespace MoleMole { class UIHollowMainBottomWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS49_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7A765A0)
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS49_0__PLAYGETCOINANIM_B__3_OFFSET UNITYSDK_OFFSET(0x7A765B0)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS49_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAD5C470)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS49_0__PLAYGETCOINANIM_B__3_OFFSET UNITYSDK_OFFSET(0xAD5C480)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass49_0_TypeDefinitionIndex = 78268;
+	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass49_0_TypeDefinitionIndex = 76052;
 
 	class UIHollowMainBottomWidgetController___c__DisplayClass49_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIHollowMainBottomWidgetController* __4__this; // 0x10
 		::System::Boolean add; // 0x18
-		::System::Int32 count; // 0x1C
-		::System::Int32 itemid; // 0x20
+		::System::Int32 itemid; // 0x1C
+		::System::Int32 count; // 0x20
 
 		::System::Void _ctor()
 		{

@@ -5,9 +5,9 @@
 namespace System { class Action; }
 namespace System { class Object; }
 
-#define FRAMEENDREFRESHMANAGER_QUEUEDACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define FRAMEENDREFRESHMANAGER_QUEUEDACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x301710)
 
-inline static constexpr unsigned int FrameEndRefreshManager_QueuedAction_TypeDefinitionIndex = 54491;
+inline static constexpr unsigned int FrameEndRefreshManager_QueuedAction_TypeDefinitionIndex = 68155;
 
 struct alignas(8) FrameEndRefreshManager_QueuedAction
 {

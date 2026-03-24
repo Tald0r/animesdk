@@ -11,27 +11,27 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
 
-#define CLASS_2_B33D4DBECC9805C8_1_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x95287E0)
-#define CLASS_2_B33D4DBECC9805C8_1_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x9528A50)
-#define CLASS_2_B33D4DBECC9805C8_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9528B40)
-#define CLASS_2_B33D4DBECC9805C8_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9528B30)
+#define CLASS_2_B33D4DBECC9805C8_1_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xA586B60)
+#define CLASS_2_B33D4DBECC9805C8_1_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xA586DD0)
+#define CLASS_2_B33D4DBECC9805C8_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA586EC0)
+#define CLASS_2_B33D4DBECC9805C8_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA586EB0)
 
-inline static constexpr unsigned int Class_2_B33D4DBECC9805C8_1_TypeDefinitionIndex = 68378;
+inline static constexpr unsigned int Class_2_B33D4DBECC9805C8_1_TypeDefinitionIndex = 76959;
 
 class Class_2_B33D4DBECC9805C8_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_9; // 0x18
-	::UnityEngine::GameObject* Field_2_1; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x28
-	::UnityEngine::GameObject* Field_2_0; // 0x30
-	::UnityEngine::GameObject* Field_2_5; // 0x38
-	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x40
-	::UnityEngine::GameObject* Field_2_2; // 0x48
+	::UnityEngine::UI::Extension::UITimeWidget* Field_2_7; // 0x18
+	::UnityEngine::GameObject* Field_2_2; // 0x20
+	::UnityEngine::GameObject* Field_2_5; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x30
+	::UnityEngine::GameObject* Field_2_1; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
+	::MoleMole::NotificationBadgeEx* Field_2_8; // 0x48
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x50
-	::UnityEngine::UI::Extension::UITimeWidget* Field_2_7; // 0x58
-	::MoleMole::NotificationBadgeEx* Field_2_8; // 0x60
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x68
+	::Class_2_60DDD9C206686F44* Field_2_9; // 0x58
+	::Class_2_A8F5ABF31E066ED4* Field_2_10; // 0x60
+	::UnityEngine::GameObject* Field_2_0; // 0x68
 
 	::System::Void _ctor()
 	{

@@ -5,29 +5,29 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8069CB0)
-#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8069CF0)
-#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__INITSORT_B__50_0_OFFSET UNITYSDK_OFFSET(0x8069D00)
-#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__INITSORT_B__50_2_OFFSET UNITYSDK_OFFSET(0x8069E20)
+#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAC47830)
+#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAC47870)
+#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__INITSORT_B__50_0_OFFSET UNITYSDK_OFFSET(0xAC47880)
+#define MOLEMOLE_UICOOPEQUIPMENTSELECTPOPWINDOWCONTROLLER___C__INITSORT_B__50_2_OFFSET UNITYSDK_OFFSET(0xAC479A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex = 69377;
+	inline static constexpr unsigned int UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex = 51784;
 
 	class UICoopEquipmentSelectPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__50_0()
-		{
-			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3C360);
-		}
 		static ::MoleMole::UICoopEquipmentSelectPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UICoopEquipmentSelectPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3C368);
+			return (::MoleMole::UICoopEquipmentSelectPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3F070);
+		}
+		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__50_0()
+		{
+			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3F078);
 		}
 		static ::System::Func_2<::System::Int32, ::System::String*>** StaticGet___9__50_2()
 		{
-			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3C370);
+			return (::System::Func_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(UICoopEquipmentSelectPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3F080);
 		}
 
 		static ::System::Void _cctor()

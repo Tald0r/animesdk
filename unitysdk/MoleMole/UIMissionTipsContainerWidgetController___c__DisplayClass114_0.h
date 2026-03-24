@@ -6,19 +6,19 @@ namespace MoleMole { class UIMissionTipsContainerWidgetController; }
 namespace MoleMole { class UIMissionTipsRowMultiWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS114_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9E85D10)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS114_0__FORCEFADEOUTRECOMMENDTIP_B__0_OFFSET UNITYSDK_OFFSET(0x9E85D20)
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS114_0__FORCEFADEOUTRECOMMENDTIP_B__1_OFFSET UNITYSDK_OFFSET(0x9E85DB0)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS114_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB6AE500)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS114_0__FORCEFADEOUTRECOMMENDTIP_B__0_OFFSET UNITYSDK_OFFSET(0xB6AE510)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER___C__DISPLAYCLASS114_0__FORCEFADEOUTRECOMMENDTIP_B__1_OFFSET UNITYSDK_OFFSET(0xB6AE5A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass114_0_TypeDefinitionIndex = 75689;
+	inline static constexpr unsigned int UIMissionTipsContainerWidgetController___c__DisplayClass114_0_TypeDefinitionIndex = 70955;
 
 	class UIMissionTipsContainerWidgetController___c__DisplayClass114_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIMissionTipsContainerWidgetController* __4__this; // 0x10
-		::System::Action* __9__1; // 0x18
+		::System::Action* __9__1; // 0x10
+		::MoleMole::UIMissionTipsContainerWidgetController* __4__this; // 0x18
 		::MoleMole::UIMissionTipsRowMultiWidgetController* trackWidget; // 0x20
 
 		::System::Void _ctor()

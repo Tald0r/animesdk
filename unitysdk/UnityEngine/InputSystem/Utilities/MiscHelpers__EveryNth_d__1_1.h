@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int MiscHelpers__EveryNth_d__1_1_TypeDefinitionIndex = 27945;
+	inline static constexpr unsigned int MiscHelpers__EveryNth_d__1_1_TypeDefinitionIndex = 28885;
 
 	template <typename TValue>
 	class MiscHelpers__EveryNth_d__1_1 : public ::System::Object

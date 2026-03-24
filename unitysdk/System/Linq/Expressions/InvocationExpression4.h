@@ -7,11 +7,11 @@ namespace System { class Type; }
 namespace System::Collections::ObjectModel { template <typename T> class ReadOnlyCollection_1; }
 namespace System::Linq::Expressions { class Expression; }
 
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1AD4C0C0)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_GETORMAKEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1AD4C0B0)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1AD4C170)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_REWRITE_OFFSET UNITYSDK_OFFSET(0x1AD4C180)
-#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD4C020)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_GETARGUMENT_OFFSET UNITYSDK_OFFSET(0x1B3636F0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_GETORMAKEARGUMENTS_OFFSET UNITYSDK_OFFSET(0x1B3636E0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_GET_ARGUMENTCOUNT_OFFSET UNITYSDK_OFFSET(0x1B3637A0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4_REWRITE_OFFSET UNITYSDK_OFFSET(0x1B3637B0)
+#define SYSTEM_LINQ_EXPRESSIONS_INVOCATIONEXPRESSION4__CTOR_OFFSET UNITYSDK_OFFSET(0x1B363650)
 
 namespace System::Linq::Expressions
 {
@@ -20,10 +20,10 @@ namespace System::Linq::Expressions
 	class InvocationExpression4 : public ::System::Linq::Expressions::InvocationExpression
 	{
 	public:
-		::System::Object* _arg0; // 0x20
-		::System::Linq::Expressions::Expression* _arg2; // 0x28
-		::System::Linq::Expressions::Expression* _arg1; // 0x30
-		::System::Linq::Expressions::Expression* _arg3; // 0x38
+		::System::Linq::Expressions::Expression* _arg2; // 0x20
+		::System::Linq::Expressions::Expression* _arg1; // 0x28
+		::System::Linq::Expressions::Expression* _arg3; // 0x30
+		::System::Object* _arg0; // 0x38
 
 		::System::Void _ctor(::System::Linq::Expressions::Expression* lambda, ::System::Type* returnType, ::System::Linq::Expressions::Expression* arg0, ::System::Linq::Expressions::Expression* arg1, ::System::Linq::Expressions::Expression* arg2, ::System::Linq::Expressions::Expression* arg3)
 		{

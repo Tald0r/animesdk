@@ -4,7 +4,7 @@
 
 namespace System { class String; }
 
-inline static constexpr unsigned int Class_1_1D2D64B0F11327DE_TypeDefinitionIndex = 24271;
+inline static constexpr unsigned int Class_1_1D2D64B0F11327DE_TypeDefinitionIndex = 25187;
 
 template <typename TVertex>
 class Class_1_1D2D64B0F11327DE : public ::System::Object

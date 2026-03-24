@@ -2,24 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_93CE87EFEB76C6D7;
+class Class_3_4A628DAD59F70BCB_9;
 namespace MoleMole { class UINyakichiPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UINYAKICHIPAGECONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBE73680)
-#define MOLEMOLE_UINYAKICHIPAGECONTROLLER___C__DISPLAYCLASS10_0__ONTAKEREWARD_B__0_OFFSET UNITYSDK_OFFSET(0xBE73690)
-#define MOLEMOLE_UINYAKICHIPAGECONTROLLER___C__DISPLAYCLASS10_0__ONTAKEREWARD_B__1_OFFSET UNITYSDK_OFFSET(0xBE73B20)
+#define MOLEMOLE_UINYAKICHIPAGECONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCFC1BF0)
+#define MOLEMOLE_UINYAKICHIPAGECONTROLLER___C__DISPLAYCLASS10_0__ONTAKEREWARD_B__0_OFFSET UNITYSDK_OFFSET(0xCFC1C00)
+#define MOLEMOLE_UINYAKICHIPAGECONTROLLER___C__DISPLAYCLASS10_0__ONTAKEREWARD_B__1_OFFSET UNITYSDK_OFFSET(0xCFC2090)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UINyakichiPageController___c__DisplayClass10_0_TypeDefinitionIndex = 67990;
+	inline static constexpr unsigned int UINyakichiPageController___c__DisplayClass10_0_TypeDefinitionIndex = 42825;
 
 	class UINyakichiPageController___c__DisplayClass10_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UINyakichiPageController* __4__this; // 0x10
-		::System::Action* __9__1; // 0x18
-		::Class_3_93CE87EFEB76C6D7* value; // 0x20
+		::Class_3_4A628DAD59F70BCB_9* value; // 0x18
+		::System::Action* __9__1; // 0x20
 
 		::System::Void _ctor()
 		{

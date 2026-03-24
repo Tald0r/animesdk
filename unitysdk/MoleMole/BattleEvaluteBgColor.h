@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define MOLEMOLE_BATTLEEVALUTEBGCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0x8E9DDE0)
+#define MOLEMOLE_BATTLEEVALUTEBGCOLOR__CTOR_OFFSET UNITYSDK_OFFSET(0xF2A46D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BattleEvaluteBgColor_TypeDefinitionIndex = 56558;
+	inline static constexpr unsigned int BattleEvaluteBgColor_TypeDefinitionIndex = 62581;
 
 	class BattleEvaluteBgColor : public ::System::Object
 	{

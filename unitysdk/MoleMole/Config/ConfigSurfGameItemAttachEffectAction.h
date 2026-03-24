@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMATTACHEFFECTACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x8A0BE90)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMATTACHEFFECTACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x8A0C2B0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMATTACHEFFECTACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x10AA4B80)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMATTACHEFFECTACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x10AA4FA0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemAttachEffectAction_TypeDefinitionIndex = 56350;
+	inline static constexpr unsigned int ConfigSurfGameItemAttachEffectAction_TypeDefinitionIndex = 50638;
 
 	class ConfigSurfGameItemAttachEffectAction : public ::MoleMole::Config::ConfigSurfGameItemAction
 	{

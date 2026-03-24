@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaTvResultGroupEffects_TypeDefinitionIndex = 63240;
+	inline static constexpr unsigned int ConfigGachaTvResultGroupEffects_TypeDefinitionIndex = 43738;
 
 	struct alignas(8) ConfigGachaTvResultGroupEffects
 	{

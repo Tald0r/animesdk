@@ -3,7 +3,7 @@
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int HollowConstant_AimHudProperty_TypeDefinitionIndex = 60908;
+	inline static constexpr unsigned int HollowConstant_AimHudProperty_TypeDefinitionIndex = 57136;
 
 	enum class HollowConstant_AimHudProperty : ::System::Int32
 	{

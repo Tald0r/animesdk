@@ -6,12 +6,12 @@ namespace MiHoYo::SDK::PluginUI { class MiHoYoSDKUIContainer; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_PLUGINUI_MIHOYOSDKUICONTAINER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19A93FB0)
-#define MIHOYO_SDK_PLUGINUI_MIHOYOSDKUICONTAINER___C__DISPLAYCLASS19_0__DOLISTITEMACTION_B__0_OFFSET UNITYSDK_OFFSET(0x19A93FC0)
+#define MIHOYO_SDK_PLUGINUI_MIHOYOSDKUICONTAINER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19FD6140)
+#define MIHOYO_SDK_PLUGINUI_MIHOYOSDKUICONTAINER___C__DISPLAYCLASS19_0__DOLISTITEMACTION_B__0_OFFSET UNITYSDK_OFFSET(0x19FD6150)
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int MiHoYoSDKUIContainer___c__DisplayClass19_0_TypeDefinitionIndex = 34102;
+	inline static constexpr unsigned int MiHoYoSDKUIContainer___c__DisplayClass19_0_TypeDefinitionIndex = 35104;
 
 	class MiHoYoSDKUIContainer___c__DisplayClass19_0 : public ::System::Object
 	{

@@ -8,20 +8,20 @@ namespace MoleMole { class VOPerformSubSystem; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9A44370)
-#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS13_0___CLOSEBLACKCURTAIN_B__0_OFFSET UNITYSDK_OFFSET(0x9A44380)
-#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS13_0___CLOSEBLACKCURTAIN_B__1_OFFSET UNITYSDK_OFFSET(0x9A444B0)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x88A0250)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS13_0___CLOSEBLACKCURTAIN_B__0_OFFSET UNITYSDK_OFFSET(0x88A0260)
+#define MOLEMOLE_VOPERFORMSUBSYSTEM___C__DISPLAYCLASS13_0___CLOSEBLACKCURTAIN_B__1_OFFSET UNITYSDK_OFFSET(0x88A0390)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int VOPerformSubSystem___c__DisplayClass13_0_TypeDefinitionIndex = 62434;
+	inline static constexpr unsigned int VOPerformSubSystem___c__DisplayClass13_0_TypeDefinitionIndex = 55332;
 
 	class VOPerformSubSystem___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::VOPerformSubSystem* __4__this; // 0x10
-		::System::String* pendingCurtainName; // 0x18
-		::System::Action_1<::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF>* callback; // 0x20
+		::System::Action_1<::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF>* callback; // 0x10
+		::MoleMole::VOPerformSubSystem* __4__this; // 0x18
+		::System::String* pendingCurtainName; // 0x20
 
 		::System::Void _ctor()
 		{

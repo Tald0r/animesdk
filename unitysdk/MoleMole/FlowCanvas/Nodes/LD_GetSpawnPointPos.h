@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETSPAWNPOINTPOS_INVOKE_OFFSET UNITYSDK_OFFSET(0x82D2C90)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETSPAWNPOINTPOS__CTOR_OFFSET UNITYSDK_OFFSET(0x82D2EE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETSPAWNPOINTPOS_INVOKE_OFFSET UNITYSDK_OFFSET(0xA38CEB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETSPAWNPOINTPOS__CTOR_OFFSET UNITYSDK_OFFSET(0xA38D0F0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_GetSpawnPointPos_TypeDefinitionIndex = 37629;
+	inline static constexpr unsigned int LD_GetSpawnPointPos_TypeDefinitionIndex = 80735;
 
 	class LD_GetSpawnPointPos : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::UnityEngine::Vector3, ::System::String*>
 	{

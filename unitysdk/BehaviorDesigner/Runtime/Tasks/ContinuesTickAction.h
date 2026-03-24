@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/BehaviorDesigner/Runtime/Tasks/Action.h"
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_CONTINUESTICKACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65B520)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_CONTINUESTICKACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC067C0)
 
 namespace BehaviorDesigner::Runtime::Tasks
 {
-	inline static constexpr unsigned int ContinuesTickAction_TypeDefinitionIndex = 30301;
+	inline static constexpr unsigned int ContinuesTickAction_TypeDefinitionIndex = 31253;
 
 	class ContinuesTickAction : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{

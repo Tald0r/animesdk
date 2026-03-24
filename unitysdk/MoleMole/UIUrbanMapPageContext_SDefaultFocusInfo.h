@@ -4,11 +4,11 @@
 
 namespace System { class Type; }
 
-#define MOLEMOLE_UIURBANMAPPAGECONTEXT_SDEFAULTFOCUSINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x361530)
+#define MOLEMOLE_UIURBANMAPPAGECONTEXT_SDEFAULTFOCUSINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x376A60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapPageContext_SDefaultFocusInfo_TypeDefinitionIndex = 40011;
+	inline static constexpr unsigned int UIUrbanMapPageContext_SDefaultFocusInfo_TypeDefinitionIndex = 43398;
 
 	struct alignas(8) UIUrbanMapPageContext_SDefaultFocusInfo
 	{

@@ -3,7 +3,7 @@
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int BinaryEntryType_TypeDefinitionIndex = 7284;
+	inline static constexpr unsigned int BinaryEntryType_TypeDefinitionIndex = 7289;
 
 	enum class BinaryEntryType : ::System::Byte
 	{

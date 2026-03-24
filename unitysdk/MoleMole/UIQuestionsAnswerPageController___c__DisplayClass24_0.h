@@ -6,21 +6,21 @@
 namespace MoleMole { class UIQuestionsAnswerPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC8398E0)
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__STARTGAME_B__0_OFFSET UNITYSDK_OFFSET(0xC8398F0)
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__STARTGAME_B__1_OFFSET UNITYSDK_OFFSET(0xC839A80)
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__STARTGAME_B__2_OFFSET UNITYSDK_OFFSET(0xC83A600)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD3A1390)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__STARTGAME_B__0_OFFSET UNITYSDK_OFFSET(0xD3A13A0)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__STARTGAME_B__1_OFFSET UNITYSDK_OFFSET(0xD3A1530)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS24_0__STARTGAME_B__2_OFFSET UNITYSDK_OFFSET(0xD3A20A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerPageController___c__DisplayClass24_0_TypeDefinitionIndex = 56219;
+	inline static constexpr unsigned int UIQuestionsAnswerPageController___c__DisplayClass24_0_TypeDefinitionIndex = 78274;
 
 	class UIQuestionsAnswerPageController___c__DisplayClass24_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIQuestionsAnswerPageController* __4__this; // 0x10
-		::System::Action* __9__1; // 0x18
-		::System::Action* __9__2; // 0x20
+		::System::Action* __9__1; // 0x10
+		::System::Action* __9__2; // 0x18
+		::MoleMole::UIQuestionsAnswerPageController* __4__this; // 0x20
 		::System::Boolean restart; // 0x28
 		::System::Int32 stageId; // 0x2C
 

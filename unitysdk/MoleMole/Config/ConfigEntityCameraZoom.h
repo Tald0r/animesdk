@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYCAMERAZOOM__CTOR_OFFSET UNITYSDK_OFFSET(0x13F91810)
+#define MOLEMOLE_CONFIG_CONFIGENTITYCAMERAZOOM__CTOR_OFFSET UNITYSDK_OFFSET(0xF2CB250)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityCameraZoom_TypeDefinitionIndex = 69753;
+	inline static constexpr unsigned int ConfigEntityCameraZoom_TypeDefinitionIndex = 72585;
 
 	class ConfigEntityCameraZoom : public ::System::Object
 	{

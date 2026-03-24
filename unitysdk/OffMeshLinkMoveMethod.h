@@ -1,12 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int OffMeshLinkMoveMethod_TypeDefinitionIndex = 61781;
+inline static constexpr unsigned int OffMeshLinkMoveMethod_TypeDefinitionIndex = 70428;
 
 enum class OffMeshLinkMoveMethod : ::System::Int32
 {
-	Curve = 3,
-	NormalSpeed = 1,
 	Teleport = 0,
+	NormalSpeed = 1,
+	Curve = 3,
 	Parabola = 2,
 };

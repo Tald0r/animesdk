@@ -3,10 +3,10 @@
 #include "unitysdk/Foundation/Unreal/FName.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_BCA142A597102245_GET_NAME_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define STRUCT_2_BCA142A597102245_RESET_OFFSET UNITYSDK_OFFSET(0x359420)
+#define STRUCT_2_BCA142A597102245_GET_NAME_OFFSET UNITYSDK_OFFSET(0x223870)
+#define STRUCT_2_BCA142A597102245_RESET_OFFSET UNITYSDK_OFFSET(0x324D90)
 
-inline static constexpr unsigned int Struct_2_BCA142A597102245_TypeDefinitionIndex = 75186;
+inline static constexpr unsigned int Struct_2_BCA142A597102245_TypeDefinitionIndex = 59258;
 
 struct alignas(4) Struct_2_BCA142A597102245
 {

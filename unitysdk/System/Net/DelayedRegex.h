@@ -5,10 +5,10 @@
 namespace System { class String; }
 namespace System::Text::RegularExpressions { class Regex; }
 
-#define SYSTEM_NET_DELAYEDREGEX_GET_ASREGEX_OFFSET UNITYSDK_OFFSET(0x18B733C0)
-#define SYSTEM_NET_DELAYEDREGEX_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18B73460)
-#define SYSTEM_NET_DELAYEDREGEX__CTOR_1_OFFSET UNITYSDK_OFFSET(0x18B73350)
-#define SYSTEM_NET_DELAYEDREGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x18B732E0)
+#define SYSTEM_NET_DELAYEDREGEX_GET_ASREGEX_OFFSET UNITYSDK_OFFSET(0x19067C90)
+#define SYSTEM_NET_DELAYEDREGEX_TOSTRING_OFFSET UNITYSDK_OFFSET(0x19067D30)
+#define SYSTEM_NET_DELAYEDREGEX__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19067C20)
+#define SYSTEM_NET_DELAYEDREGEX__CTOR_OFFSET UNITYSDK_OFFSET(0x19067BB0)
 
 namespace System::Net
 {
@@ -17,8 +17,8 @@ namespace System::Net
 	class DelayedRegex : public ::System::Object
 	{
 	public:
-		::System::String* _AsString; // 0x10
-		::System::Text::RegularExpressions::Regex* _AsRegex; // 0x18
+		::System::Text::RegularExpressions::Regex* _AsRegex; // 0x10
+		::System::String* _AsString; // 0x18
 
 		::System::Void _ctor(::System::String* regexString)
 		{

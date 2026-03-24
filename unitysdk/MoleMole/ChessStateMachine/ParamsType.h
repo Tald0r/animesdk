@@ -3,15 +3,15 @@
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int ParamsType_TypeDefinitionIndex = 38546;
+	inline static constexpr unsigned int ParamsType_TypeDefinitionIndex = 37865;
 
 	enum class ParamsType : ::System::Int32
 	{
-		Bool = 0,
-		Float = 1,
 		Int = 2,
-		Trigger = 3,
-		NULL = 5,
+		Bool = 0,
 		OnceTrigger = 4,
+		NULL = 5,
+		Trigger = 3,
+		Float = 1,
 	};
 }

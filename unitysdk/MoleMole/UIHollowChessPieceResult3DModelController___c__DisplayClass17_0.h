@@ -5,11 +5,11 @@
 
 namespace MoleMole { class UIHollowChessPieceResult3DModelController; }
 
-#define MOLEMOLE_UIHOLLOWCHESSPIECERESULT3DMODELCONTROLLER___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7D10A60)
+#define MOLEMOLE_UIHOLLOWCHESSPIECERESULT3DMODELCONTROLLER___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0x913F8A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowChessPieceResult3DModelController___c__DisplayClass17_0_TypeDefinitionIndex = 59520;
+	inline static constexpr unsigned int UIHollowChessPieceResult3DModelController___c__DisplayClass17_0_TypeDefinitionIndex = 60773;
 
 	class UIHollowChessPieceResult3DModelController___c__DisplayClass17_0 : public ::System::Object
 	{

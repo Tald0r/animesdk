@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int CursorMode_TypeDefinitionIndex = 5282;
+	inline static constexpr unsigned int CursorMode_TypeDefinitionIndex = 5283;
 
 	enum class CursorMode : ::System::Int32
 	{

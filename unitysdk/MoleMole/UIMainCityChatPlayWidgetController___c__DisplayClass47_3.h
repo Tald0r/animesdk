@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS47_3__CTOR_OFFSET UNITYSDK_OFFSET(0xC126600)
-#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS47_3__SHOWTRANSITION_B__4_OFFSET UNITYSDK_OFFSET(0xC126610)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS47_3__CTOR_OFFSET UNITYSDK_OFFSET(0xD76EAA0)
+#define MOLEMOLE_UIMAINCITYCHATPLAYWIDGETCONTROLLER___C__DISPLAYCLASS47_3__SHOWTRANSITION_B__4_OFFSET UNITYSDK_OFFSET(0xD76EAB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityChatPlayWidgetController___c__DisplayClass47_3_TypeDefinitionIndex = 53840;
+	inline static constexpr unsigned int UIMainCityChatPlayWidgetController___c__DisplayClass47_3_TypeDefinitionIndex = 69001;
 
 	class UIMainCityChatPlayWidgetController___c__DisplayClass47_3 : public ::System::Object
 	{

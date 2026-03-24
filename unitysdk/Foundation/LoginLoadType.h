@@ -3,11 +3,11 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int LoginLoadType_TypeDefinitionIndex = 7701;
+	inline static constexpr unsigned int LoginLoadType_TypeDefinitionIndex = 7733;
 
 	enum class LoginLoadType : ::System::Byte
 	{
-		IEnumeratorLoader = 0x1,
 		Normal = 0x0,
+		IEnumeratorLoader = 0x1,
 	};
 }

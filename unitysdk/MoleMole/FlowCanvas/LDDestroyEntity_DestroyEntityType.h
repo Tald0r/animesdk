@@ -3,7 +3,7 @@
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int LDDestroyEntity_DestroyEntityType_TypeDefinitionIndex = 37859;
+	inline static constexpr unsigned int LDDestroyEntity_DestroyEntityType_TypeDefinitionIndex = 45029;
 
 	enum class LDDestroyEntity_DestroyEntityType : ::System::Int32
 	{

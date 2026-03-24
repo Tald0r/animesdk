@@ -7,44 +7,44 @@ namespace NPCCrowd::AI { class PathGraphNodeConfig; }
 namespace NPCCrowd::AI { class PathGraphSplineConfig_PathGraphLane; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7223A70)
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7223AB0)
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_0_OFFSET UNITYSDK_OFFSET(0x7223AC0)
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_2_OFFSET UNITYSDK_OFFSET(0x7223AE0)
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_3_OFFSET UNITYSDK_OFFSET(0x7223B00)
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_4_OFFSET UNITYSDK_OFFSET(0x7223B20)
-#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_5_OFFSET UNITYSDK_OFFSET(0x7223B40)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9AF8440)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9AF8480)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_0_OFFSET UNITYSDK_OFFSET(0x9AF8490)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_2_OFFSET UNITYSDK_OFFSET(0x9AF84B0)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_3_OFFSET UNITYSDK_OFFSET(0x9AF84D0)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_4_OFFSET UNITYSDK_OFFSET(0x9AF84F0)
+#define NPCCROWD_AI_PATHFINDINGGRAPH___C__INITPATHFINDINGNODES_B__3_5_OFFSET UNITYSDK_OFFSET(0x9AF8510)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathFindingGraph___c_TypeDefinitionIndex = 46324;
+	inline static constexpr unsigned int PathFindingGraph___c_TypeDefinitionIndex = 57146;
 
 	class PathFindingGraph___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>** StaticGet___9__3_3()
+		static ::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>** StaticGet___9__3_4()
 		{
-			return (::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x40480);
-		}
-		static ::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>** StaticGet___9__3_2()
-		{
-			return (::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x40488);
-		}
-		static ::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>** StaticGet___9__3_5()
-		{
-			return (::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x40490);
+			return (::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x44590);
 		}
 		static ::System::Func_2<::NPCCrowd::AI::PathGraphNodeConfig*, ::System::Int32>** StaticGet___9__3_0()
 		{
-			return (::System::Func_2<::NPCCrowd::AI::PathGraphNodeConfig*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x40498);
+			return (::System::Func_2<::NPCCrowd::AI::PathGraphNodeConfig*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x44598);
 		}
-		static ::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>** StaticGet___9__3_4()
+		static ::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>** StaticGet___9__3_3()
 		{
-			return (::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x404A0);
+			return (::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x445A0);
+		}
+		static ::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>** StaticGet___9__3_5()
+		{
+			return (::System::Func_2<::NPCCrowd::AI::PathGraphConnectorConfig_PathGraphConnection*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x445A8);
+		}
+		static ::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>** StaticGet___9__3_2()
+		{
+			return (::System::Func_2<::NPCCrowd::AI::PathGraphSplineConfig_PathGraphLane*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x445B0);
 		}
 		static ::NPCCrowd::AI::PathFindingGraph___c** StaticGet___9()
 		{
-			return (::NPCCrowd::AI::PathFindingGraph___c**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x404A8);
+			return (::NPCCrowd::AI::PathFindingGraph___c**)Il2CppClass::FromTypeDefinitionIndex(PathFindingGraph___c_TypeDefinitionIndex)->GetStaticField(0x445B8);
 		}
 
 		static ::System::Void _cctor()

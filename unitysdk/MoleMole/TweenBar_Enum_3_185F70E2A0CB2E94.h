@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TweenBar_Enum_3_185F70E2A0CB2E94_TypeDefinitionIndex = 60532;
+	inline static constexpr unsigned int TweenBar_Enum_3_185F70E2A0CB2E94_TypeDefinitionIndex = 39590;
 
 	enum class TweenBar_Enum_3_185F70E2A0CB2E94 : ::System::Int32
 	{
-		ImageSlider = 1,
-		ImageBar = 0,
-		RectTransformWidth = 3,
 		ImageMaskSlider = 2,
+		ImageSlider = 1,
+		RectTransformWidth = 3,
+		ImageBar = 0,
 	};
 }

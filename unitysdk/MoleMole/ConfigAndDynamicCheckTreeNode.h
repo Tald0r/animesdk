@@ -5,12 +5,12 @@
 class Class_1_3D452FA003157C19_Class_1_3B777373E9B193FC;
 class Class_1_663AFC2250EC21C9;
 
-#define MOLEMOLE_CONFIGANDDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0x15ECA840)
-#define MOLEMOLE_CONFIGANDDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x15ECA9E0)
+#define MOLEMOLE_CONFIGANDDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0xE2DDA60)
+#define MOLEMOLE_CONFIGANDDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5978A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigAndDynamicCheckTreeNode_TypeDefinitionIndex = 39493;
+	inline static constexpr unsigned int ConfigAndDynamicCheckTreeNode_TypeDefinitionIndex = 59548;
 
 	class ConfigAndDynamicCheckTreeNode : public ::MoleMole::ConfigCompositeDynamicCheckTreeNode
 	{

@@ -6,11 +6,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGUIMAINPAGESHOWSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x15ED76C0)
+#define MOLEMOLE_CONFIGUIMAINPAGESHOWSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xB5A4240)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIMainPageShowSetting_TypeDefinitionIndex = 43328;
+	inline static constexpr unsigned int ConfigUIMainPageShowSetting_TypeDefinitionIndex = 54573;
 
 	class ConfigUIMainPageShowSetting : public ::System::Object
 	{

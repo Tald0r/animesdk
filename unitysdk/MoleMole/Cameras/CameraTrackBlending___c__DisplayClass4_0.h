@@ -8,20 +8,20 @@ namespace MoleMole::Cameras { class CameraTrackBlending; }
 namespace PipelineCamera { class ICameraDataBlender; }
 namespace System { class String; }
 
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8023700)
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING___C__DISPLAYCLASS4_0__GENERATEBLENDERBUILDER_B__0_OFFSET UNITYSDK_OFFSET(0x8023710)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9CD75B0)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING___C__DISPLAYCLASS4_0__GENERATEBLENDERBUILDER_B__0_OFFSET UNITYSDK_OFFSET(0x9CD75C0)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int CameraTrackBlending___c__DisplayClass4_0_TypeDefinitionIndex = 51033;
+	inline static constexpr unsigned int CameraTrackBlending___c__DisplayClass4_0_TypeDefinitionIndex = 79642;
 
 	class CameraTrackBlending___c__DisplayClass4_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::Cameras::CameraTrackBlending* __4__this; // 0x10
 		::System::String* debugName; // 0x18
-		::System::Nullable_1<::System::Single> overriddenDuration; // 0x20
-		::PipelineCamera::WorldBasicCameraDataDeltaFlag flag; // 0x28
+		::PipelineCamera::WorldBasicCameraDataDeltaFlag flag; // 0x20
+		::System::Nullable_1<::System::Single> overriddenDuration; // 0x24
 
 		::System::Void _ctor()
 		{

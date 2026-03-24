@@ -8,11 +8,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeArray_1.h"
 
-#define NPCCROWD_ABILITY_NPCNAVMESHPROCESSOR_APPLYQUERYJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x326BC0)
+#define NPCCROWD_ABILITY_NPCNAVMESHPROCESSOR_APPLYQUERYJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x32DFE0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int NPCNavmeshProcessor_ApplyQueryJob_TypeDefinitionIndex = 40805;
+	inline static constexpr unsigned int NPCNavmeshProcessor_ApplyQueryJob_TypeDefinitionIndex = 67612;
 
 	struct alignas(8) NPCNavmeshProcessor_ApplyQueryJob
 	{

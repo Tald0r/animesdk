@@ -5,7 +5,7 @@ namespace System { class String; }
 
 namespace ICSharpCode::SharpZipLib::Core
 {
-	inline static constexpr unsigned int IScanFilter_TypeDefinitionIndex = 6652;
+	inline static constexpr unsigned int IScanFilter_TypeDefinitionIndex = 6656;
 
 	class IScanFilter
 	{

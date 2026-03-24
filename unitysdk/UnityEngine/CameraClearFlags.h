@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int CameraClearFlags_TypeDefinitionIndex = 5227;
+	inline static constexpr unsigned int CameraClearFlags_TypeDefinitionIndex = 5228;
 
 	enum class CameraClearFlags : ::System::Int32
 	{

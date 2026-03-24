@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/ScriptableObject.h"
 
-#define SIRENIX_UTILITIES_PROJECTPATHFINDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8EF240)
+#define SIRENIX_UTILITIES_PROJECTPATHFINDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEC8610)
 
 namespace Sirenix::Utilities
 {
-	inline static constexpr unsigned int ProjectPathFinder_TypeDefinitionIndex = 6456;
+	inline static constexpr unsigned int ProjectPathFinder_TypeDefinitionIndex = 6460;
 
 	class ProjectPathFinder : public ::UnityEngine::ScriptableObject
 	{

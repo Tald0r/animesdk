@@ -6,20 +6,20 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define LIGHTINGTOOLS_LIGHTPROBESVOLUMES_LIGHTPROBESFILTER_REMOVECONFLICTPROBES_OFFSET UNITYSDK_OFFSET(0x1B156360)
-#define LIGHTINGTOOLS_LIGHTPROBESVOLUMES_LIGHTPROBESFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B156370)
+#define LIGHTINGTOOLS_LIGHTPROBESVOLUMES_LIGHTPROBESFILTER_REMOVECONFLICTPROBES_OFFSET UNITYSDK_OFFSET(0x1B775010)
+#define LIGHTINGTOOLS_LIGHTPROBESVOLUMES_LIGHTPROBESFILTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B775020)
 
 namespace LightingTools::LightProbesVolumes
 {
-	inline static constexpr unsigned int LightProbesFilter_TypeDefinitionIndex = 81168;
+	inline static constexpr unsigned int LightProbesFilter_TypeDefinitionIndex = 83209;
 
 	class LightProbesFilter : public ::System::Object
 	{
 	public:
 		::System::Collections::Generic::List_1<::UnityEngine::Vector3>* probePositions; // 0x10
-		::UnityEngine::Bounds bounds; // 0x18
-		::UnityEngine::Vector3 filterStep; // 0x30
-		::UnityEngine::Vector3 conflicedRange; // 0x3C
+		::UnityEngine::Vector3 conflicedRange; // 0x18
+		::UnityEngine::Vector3 filterStep; // 0x24
+		::UnityEngine::Bounds bounds; // 0x30
 
 		::System::Void _ctor()
 		{

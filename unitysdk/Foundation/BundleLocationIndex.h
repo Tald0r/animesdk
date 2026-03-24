@@ -3,14 +3,14 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int BundleLocationIndex_TypeDefinitionIndex = 8001;
+	inline static constexpr unsigned int BundleLocationIndex_TypeDefinitionIndex = 8133;
 
 	enum class BundleLocationIndex : ::System::Byte
 	{
-		InBuildBlock = 0x2,
-		InBuildBundle = 0x4,
-		PersistentBundle = 0x3,
-		PersistentBlock = 0x1,
 		None = 0x0,
+		InBuildBlock = 0x2,
+		PersistentBlock = 0x1,
+		PersistentBundle = 0x3,
+		InBuildBundle = 0x4,
 	};
 }

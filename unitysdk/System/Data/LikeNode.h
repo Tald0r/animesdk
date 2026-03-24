@@ -9,13 +9,13 @@ namespace System::Data { class DataRow; }
 namespace System::Data { class DataTable; }
 namespace System::Data { class ExpressionNode; }
 
-#define SYSTEM_DATA_LIKENODE_ANALYZEPATTERN_OFFSET UNITYSDK_OFFSET(0x1A2DFF50)
-#define SYSTEM_DATA_LIKENODE_EVAL_OFFSET UNITYSDK_OFFSET(0x1A2DF850)
-#define SYSTEM_DATA_LIKENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2DE9E0)
+#define SYSTEM_DATA_LIKENODE_ANALYZEPATTERN_OFFSET UNITYSDK_OFFSET(0x1A8A9D50)
+#define SYSTEM_DATA_LIKENODE_EVAL_OFFSET UNITYSDK_OFFSET(0x1A8A9650)
+#define SYSTEM_DATA_LIKENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8A87E0)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int LikeNode_TypeDefinitionIndex = 35449;
+	inline static constexpr unsigned int LikeNode_TypeDefinitionIndex = 36469;
 
 	class LikeNode : public ::System::Data::BinaryNode
 	{

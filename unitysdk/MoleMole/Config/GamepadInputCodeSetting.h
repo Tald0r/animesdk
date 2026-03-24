@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/InputSystem/LowLevel/GamepadButton.h"
 
-#define MOLEMOLE_CONFIG_GAMEPADINPUTCODESETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x139A55A0)
+#define MOLEMOLE_CONFIG_GAMEPADINPUTCODESETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x9197930)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int GamepadInputCodeSetting_TypeDefinitionIndex = 65384;
+	inline static constexpr unsigned int GamepadInputCodeSetting_TypeDefinitionIndex = 40432;
 
 	class GamepadInputCodeSetting : public ::System::Object
 	{

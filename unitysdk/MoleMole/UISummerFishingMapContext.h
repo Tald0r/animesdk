@@ -4,18 +4,18 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UISUMMERFISHINGMAPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC3DAF90)
+#define MOLEMOLE_UISUMMERFISHINGMAPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA1081D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISummerFishingMapContext_TypeDefinitionIndex = 56356;
+	inline static constexpr unsigned int UISummerFishingMapContext_TypeDefinitionIndex = 74808;
 
 	class UISummerFishingMapContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Action* goFishingAction; // 0x28
-		::System::Boolean showMainBtn; // 0x30
-		::System::Boolean isOpenByNpc; // 0x31
+		::System::Boolean isOpenByNpc; // 0x30
+		::System::Boolean showMainBtn; // 0x31
 
 		::System::Void _ctor()
 		{

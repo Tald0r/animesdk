@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralTabBtnWidgetController_Data_1_TypeDefinitionIndex = 41127;
+	inline static constexpr unsigned int UIGeneralTabBtnWidgetController_Data_1_TypeDefinitionIndex = 53971;
 
 	template <typename T>
 	class UIGeneralTabBtnWidgetController_Data_1 : public ::MoleMole::UIGeneralTabBtnWidgetController_Data

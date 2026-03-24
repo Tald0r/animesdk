@@ -4,24 +4,24 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define FOUNDATION_STRINGX___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A5A0DF0)
-#define FOUNDATION_STRINGX___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5A0E30)
-#define FOUNDATION_STRINGX___C__INVERTCASE_B__21_0_OFFSET UNITYSDK_OFFSET(0x1A5A0E40)
+#define FOUNDATION_STRINGX___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB79090)
+#define FOUNDATION_STRINGX___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB790D0)
+#define FOUNDATION_STRINGX___C__INVERTCASE_B__21_0_OFFSET UNITYSDK_OFFSET(0x1AB790E0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int StringX___c_TypeDefinitionIndex = 7942;
+	inline static constexpr unsigned int StringX___c_TypeDefinitionIndex = 7768;
 
 	class StringX___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::System::Char, ::System::Char>** StaticGet___9__21_0()
 		{
-			return (::System::Func_2<::System::Char, ::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(StringX___c_TypeDefinitionIndex)->GetStaticField(0x69E0);
+			return (::System::Func_2<::System::Char, ::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(StringX___c_TypeDefinitionIndex)->GetStaticField(0x6A00);
 		}
 		static ::Foundation::StringX___c** StaticGet___9()
 		{
-			return (::Foundation::StringX___c**)Il2CppClass::FromTypeDefinitionIndex(StringX___c_TypeDefinitionIndex)->GetStaticField(0x69E8);
+			return (::Foundation::StringX___c**)Il2CppClass::FromTypeDefinitionIndex(StringX___c_TypeDefinitionIndex)->GetStaticField(0x6A08);
 		}
 
 		static ::System::Void _cctor()

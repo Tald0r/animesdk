@@ -5,17 +5,17 @@
 namespace NodeCanvas::Framework::Internal { class BBObjectParameter; }
 namespace System { class String; }
 
-#define CHECKENUMFLAG_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A07DE40)
-#define CHECKENUMFLAG_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A07DEB0)
-#define CHECKENUMFLAG__CTOR_OFFSET UNITYSDK_OFFSET(0x1A07DFC0)
+#define CHECKENUMFLAG_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A6509A0)
+#define CHECKENUMFLAG_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A650A10)
+#define CHECKENUMFLAG__CTOR_OFFSET UNITYSDK_OFFSET(0x1A650B20)
 
-inline static constexpr unsigned int CheckEnumFlag_TypeDefinitionIndex = 26610;
+inline static constexpr unsigned int CheckEnumFlag_TypeDefinitionIndex = 26787;
 
 class CheckEnumFlag : public ::NodeCanvas::Framework::ConditionTask
 {
 public:
-	::NodeCanvas::Framework::Internal::BBObjectParameter* Flag; // 0x60
-	::NodeCanvas::Framework::Internal::BBObjectParameter* Variable; // 0x68
+	::NodeCanvas::Framework::Internal::BBObjectParameter* Variable; // 0x60
+	::NodeCanvas::Framework::Internal::BBObjectParameter* Flag; // 0x68
 
 	::System::Void _ctor()
 	{

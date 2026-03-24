@@ -6,11 +6,11 @@ namespace QWER { class CTimer; }
 namespace System::Collections::Generic { template <typename T> class LinkedList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define QWER_CEXECTIMERINFOLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B039710)
+#define QWER_CEXECTIMERINFOLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6497A0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CExecTimerInfoList_TypeDefinitionIndex = 80471;
+	inline static constexpr unsigned int CExecTimerInfoList_TypeDefinitionIndex = 82513;
 
 	class CExecTimerInfoList : public ::System::Object
 	{

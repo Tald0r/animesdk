@@ -8,27 +8,27 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x18207A10)
-#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18207B00)
-#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18207B60)
-#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x18207B10)
-#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18207A00)
-#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18__CTOR_OFFSET UNITYSDK_OFFSET(0x182079F0)
+#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x18777F40)
+#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18778030)
+#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x18778090)
+#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x18778040)
+#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x18777F30)
+#define MIHOYO_SDK_NETWORKMANAGER__POST_D__18__CTOR_OFFSET UNITYSDK_OFFSET(0x18777F20)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int NetworkManager__Post_d__18_TypeDefinitionIndex = 18158;
+	inline static constexpr unsigned int NetworkManager__Post_d__18_TypeDefinitionIndex = 18666;
 
 	class NetworkManager__Post_d__18 : public ::System::Object
 	{
 	public:
 		::MiHoYo::SDK::NetworkManager* __4__this; // 0x10
-		::System::String* bodyString; // 0x18
-		::System::Action_1<::System::String*>* callback; // 0x20
-		::System::String* requestUrl; // 0x28
+		::System::String* requestUrl; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* headers; // 0x20
+		::System::Action_1<::System::String*>* callback; // 0x28
 		::System::Object* __2__current; // 0x30
 		::System::Action* timeoutCallback; // 0x38
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* headers; // 0x40
+		::System::String* bodyString; // 0x40
 		::System::Int32 __1__state; // 0x48
 
 		::System::Void _ctor(::System::Int32 __1__state)

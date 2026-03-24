@@ -5,6 +5,7 @@
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/RenderTargetHandle.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/RenderingData.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/ScriptableRenderPass.h"
+#include "unitysdk/UnityEngine/Rendering/RenderTargetIdentifier.h"
 #include "unitysdk/UnityEngine/Rendering/ScriptableRenderContext.h"
 
 namespace System { class String; }
@@ -13,36 +14,52 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18B3EFD0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18B3FD10)
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_GET_MAT_OFFSET UNITYSDK_OFFSET(0x18B3EEA0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x18B3EF80)
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x18B3FDC0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18B3EED0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18B3FE40)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18EFFC20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18F00ED0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_GET_MAT_OFFSET UNITYSDK_OFFSET(0x18EFFAF0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x18EFFBD0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x18F00FE0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18EFFB20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_BLENDUICOLORPASS___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18F010D0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int BlendUIColorPass_TypeDefinitionIndex = 28707;
+	inline static constexpr unsigned int BlendUIColorPass_TypeDefinitionIndex = 29651;
 
 	class BlendUIColorPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
-		static ::System::Int32* StaticGet__DLSSColorOut()
+		static ::System::Int32* StaticGet__FlipPreUIBackBuffer()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6600);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D20);
+		}
+		static ::System::Int32* StaticGet__UITexture()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D24);
 		}
 		static ::System::Int32* StaticGet__OffScreenUI()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6604);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D28);
 		}
-		static ::System::Int32* StaticGet__BlendedUICameraColor()
+		static ::System::Int32* StaticGet__FlipUITexture()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6608);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D2C);
 		}
-		static ::System::Int32* StaticGet__SceneColorAfterPostProcess()
+		static ::System::Int32* StaticGet__FrameGenHudless()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x660C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D30);
+		}
+		static ::System::Int32* StaticGet__FrameGenUI()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D34);
+		}
+		static ::System::Int32* StaticGet__PreUIBackBuffer()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D38);
+		}
+		static ::UnityEngine::Rendering::RenderTargetIdentifier* StaticGet__FrameGenUIRTID()
+		{
+			return (::UnityEngine::Rendering::RenderTargetIdentifier*)Il2CppClass::FromTypeDefinitionIndex(BlendUIColorPass_TypeDefinitionIndex)->GetStaticField(0x6D40);
 		}
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_Sampler; // 0xA8
 

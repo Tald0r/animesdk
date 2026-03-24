@@ -1,14 +1,8 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_91B42685BFC9BFDB.h"
-#include "unitysdk/Struct_2_116A9A94052105E7.h"
-#include "unitysdk/UnityEngine/Vector3.h"
+#include "unitysdk/Enum_3_2AF7E83C052FB69A.h"
 
-namespace MoleMole { class MonoInteractionPoint; }
-namespace MoleMole::Battle { class Entity; }
-namespace System { class Action; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_399_TypeDefinitionIndex = 59378;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_399_TypeDefinitionIndex = 70361;
 
 class Class_0_16E4307DCC419505_399
 {

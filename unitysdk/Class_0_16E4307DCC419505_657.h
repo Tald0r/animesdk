@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_0_16E4307DCC419505_382;
-namespace UnityEngine::EventSystems { class PointerEventData; }
-namespace UnityEngine::Events { class UnityAction; }
+class Class_0_16E4307DCC419505_499;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_657_TypeDefinitionIndex = 79127;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_657_TypeDefinitionIndex = 80260;
 
 class Class_0_16E4307DCC419505_657
 {

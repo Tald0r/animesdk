@@ -3,7 +3,7 @@
 
 namespace FlowCanvas
 {
-	inline static constexpr unsigned int Port_BindStatus_TypeDefinitionIndex = 25925;
+	inline static constexpr unsigned int Port_BindStatus_TypeDefinitionIndex = 27513;
 
 	enum class Port_BindStatus : ::System::Int32
 	{

@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SurfSubsystem_GameState_TypeDefinitionIndex = 65489;
+	inline static constexpr unsigned int SurfSubsystem_GameState_TypeDefinitionIndex = 44798;
 
 	enum class SurfSubsystem_GameState : ::System::Int32
 	{
 		None = 0,
-		Running = 2,
 		Ready = 1,
+		Running = 2,
 		Finish = 3,
 	};
 }

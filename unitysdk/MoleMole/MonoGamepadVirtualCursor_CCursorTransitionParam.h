@@ -1,21 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_4A9562DD0E29E3C8.h"
+#include "unitysdk/Enum_3_5E4E353D2E48BBA8.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
 namespace System { class String; }
 
-#define MOLEMOLE_MONOGAMEPADVIRTUALCURSOR_CCURSORTRANSITIONPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x8A74F50)
+#define MOLEMOLE_MONOGAMEPADVIRTUALCURSOR_CCURSORTRANSITIONPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xBA2E690)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoGamepadVirtualCursor_CCursorTransitionParam_TypeDefinitionIndex = 46111;
+	inline static constexpr unsigned int MonoGamepadVirtualCursor_CCursorTransitionParam_TypeDefinitionIndex = 38371;
 
 	class MonoGamepadVirtualCursor_CCursorTransitionParam : public ::System::Object
 	{
 	public:
-		::Enum_3_4A9562DD0E29E3C8 CursorTransitionStyle; // 0x10
+		::Enum_3_5E4E353D2E48BBA8 CursorTransitionStyle; // 0x10
 		::UnityEngine::Color NormalColor; // 0x14
 		::UnityEngine::Color SelectColor; // 0x24
 		::System::String* FadeToSelectAnimation; // 0x38

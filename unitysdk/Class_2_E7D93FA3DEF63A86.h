@@ -11,24 +11,24 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_E7D93FA3DEF63A86_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x9509300)
-#define CLASS_2_E7D93FA3DEF63A86_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x9509520)
-#define CLASS_2_E7D93FA3DEF63A86_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9509610)
-#define CLASS_2_E7D93FA3DEF63A86__CTOR_OFFSET UNITYSDK_OFFSET(0x9509600)
+#define CLASS_2_E7D93FA3DEF63A86_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x739EAF0)
+#define CLASS_2_E7D93FA3DEF63A86_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x739ED10)
+#define CLASS_2_E7D93FA3DEF63A86_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x739EE00)
+#define CLASS_2_E7D93FA3DEF63A86__CTOR_OFFSET UNITYSDK_OFFSET(0x739EDF0)
 
-inline static constexpr unsigned int Class_2_E7D93FA3DEF63A86_TypeDefinitionIndex = 41026;
+inline static constexpr unsigned int Class_2_E7D93FA3DEF63A86_TypeDefinitionIndex = 64644;
 
 class Class_2_E7D93FA3DEF63A86 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_4; // 0x18
-	::UnityEngine::RectTransform* Field_2_1; // 0x20
-	::MoleMole::MonoGamepadSelectable* Field_2_6; // 0x28
-	::UnityEngine::GameObject* Field_2_7; // 0x30
-	::UnityEngine::GameObject* Field_2_5; // 0x38
-	::MoleMole::NotificationBadgeEx* Field_2_3; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x48
-	::UnityEngine::GameObject* Field_2_2; // 0x50
+	::UnityEngine::GameObject* Field_2_7; // 0x18
+	::UnityEngine::GameObject* Field_2_5; // 0x20
+	::UnityEngine::RectTransform* Field_2_4; // 0x28
+	::UnityEngine::GameObject* Field_2_2; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x38
+	::UnityEngine::RectTransform* Field_2_1; // 0x40
+	::MoleMole::MonoGamepadSelectable* Field_2_6; // 0x48
+	::MoleMole::NotificationBadgeEx* Field_2_3; // 0x50
 	::Class_2_60DDD9C206686F44* Field_2_0; // 0x58
 
 	::System::Void _ctor()

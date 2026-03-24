@@ -5,7 +5,7 @@
 
 namespace Foundation::Geometry
 {
-	inline static constexpr unsigned int ConicSection2D_1_TypeDefinitionIndex = 9069;
+	inline static constexpr unsigned int ConicSection2D_1_TypeDefinitionIndex = 8926;
 
 	template <typename TShape>
 	struct ConicSection2D_1

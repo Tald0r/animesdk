@@ -9,12 +9,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAUPDATECLIPMAPPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19245830)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAUPDATECLIPMAPPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x192457A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAUPDATECLIPMAPPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19669F80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAUPDATECLIPMAPPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19669EF0)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int LyraUpdateClipmapPass_TypeDefinitionIndex = 29030;
+	inline static constexpr unsigned int LyraUpdateClipmapPass_TypeDefinitionIndex = 29981;
 
 	class LyraUpdateClipmapPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{

@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UITowerBangbooItemWidgetController_TowerBangbooItem; }
 
-#define MOLEMOLE_UITOWERBANGBOOITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA4188E0)
-#define MOLEMOLE_UITOWERBANGBOOITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xA4188F0)
+#define MOLEMOLE_UITOWERBANGBOOITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9713990)
+#define MOLEMOLE_UITOWERBANGBOOITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0x97139A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITowerBangbooItemWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 58980;
+	inline static constexpr unsigned int UITowerBangbooItemWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 55417;
 
 	class UITowerBangbooItemWidgetController___c__DisplayClass7_0 : public ::System::Object
 	{

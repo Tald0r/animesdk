@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUICommon_Input_PanelPositionType_TypeDefinitionIndex = 46457;
+	inline static constexpr unsigned int ConfigUICommon_Input_PanelPositionType_TypeDefinitionIndex = 63108;
 
 	enum class ConfigUICommon_Input_PanelPositionType : ::System::Int32
 	{

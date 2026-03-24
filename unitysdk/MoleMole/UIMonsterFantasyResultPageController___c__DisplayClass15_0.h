@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC102A0)
-#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS15_0__REFRESHCHAPTERTITLE_B__0_OFFSET UNITYSDK_OFFSET(0xAC10B70)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA606F0)
+#define MOLEMOLE_UIMONSTERFANTASYRESULTPAGECONTROLLER___C__DISPLAYCLASS15_0__REFRESHCHAPTERTITLE_B__0_OFFSET UNITYSDK_OFFSET(0xCA60700)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyResultPageController___c__DisplayClass15_0_TypeDefinitionIndex = 42428;
+	inline static constexpr unsigned int UIMonsterFantasyResultPageController___c__DisplayClass15_0_TypeDefinitionIndex = 43261;
 
 	class UIMonsterFantasyResultPageController___c__DisplayClass15_0 : public ::System::Object
 	{

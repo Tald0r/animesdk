@@ -3,17 +3,17 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_4780554EDDCA538F_Class_1_AF9D59ECC5F59460;
-class Class_3_00D9F8D189C6D68A;
+class Class_3_00D9F8D189C6D68A_2;
 
-#define CLASS_1_4780554EDDCA538F_CLASS_1_91597CDD1AE0159E_2__CTOR_OFFSET UNITYSDK_OFFSET(0x6476990)
+#define CLASS_1_4780554EDDCA538F_CLASS_1_91597CDD1AE0159E_2__CTOR_OFFSET UNITYSDK_OFFSET(0x9AE06E0)
 
-inline static constexpr unsigned int Class_1_4780554EDDCA538F_Class_1_91597CDD1AE0159E_2_TypeDefinitionIndex = 63145;
+inline static constexpr unsigned int Class_1_4780554EDDCA538F_Class_1_91597CDD1AE0159E_2_TypeDefinitionIndex = 74107;
 
 class Class_1_4780554EDDCA538F_Class_1_91597CDD1AE0159E_2 : public ::System::Object
 {
 public:
-	::Class_3_00D9F8D189C6D68A* Field_1_2; // 0x10
-	::Class_1_4780554EDDCA538F_Class_1_AF9D59ECC5F59460* Field_1_3; // 0x18
+	::Class_1_4780554EDDCA538F_Class_1_AF9D59ECC5F59460* Field_1_3; // 0x10
+	::Class_3_00D9F8D189C6D68A_2* Field_1_2; // 0x18
 	::System::UInt32 Field_1_1; // 0x20
 	::System::UInt32 Field_1_0; // 0x24
 

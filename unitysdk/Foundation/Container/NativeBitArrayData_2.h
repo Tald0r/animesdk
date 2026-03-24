@@ -6,7 +6,7 @@
 
 namespace Foundation::Container
 {
-	inline static constexpr unsigned int NativeBitArrayData_2_TypeDefinitionIndex = 8958;
+	inline static constexpr unsigned int NativeBitArrayData_2_TypeDefinitionIndex = 9060;
 
 	template <typename TUserData, typename TPointer>
 	struct NativeBitArrayData_2

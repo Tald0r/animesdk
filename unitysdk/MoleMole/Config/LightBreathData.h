@@ -4,18 +4,18 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_LIGHTBREATHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x13FA0C10)
+#define MOLEMOLE_CONFIG_LIGHTBREATHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xF2DA7B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LightBreathData_TypeDefinitionIndex = 66790;
+	inline static constexpr unsigned int LightBreathData_TypeDefinitionIndex = 38685;
 
 	class LightBreathData : public ::System::Object
 	{
 	public:
 		::UnityEngine::AnimationCurve* BreathCurve; // 0x10
-		::System::Single BreathTime; // 0x18
-		::System::Single BreathRange; // 0x1C
+		::System::Single BreathRange; // 0x18
+		::System::Single BreathTime; // 0x1C
 
 		::System::Void _ctor()
 		{

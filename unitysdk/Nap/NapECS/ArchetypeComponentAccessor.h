@@ -5,12 +5,12 @@
 
 namespace Nap::NapECS { class EcsWorld; }
 
-#define NAP_NAPECS_ARCHETYPECOMPONENTACCESSOR_ENTERCRITICALSECTION_OFFSET UNITYSDK_OFFSET(0x841AB0)
-#define NAP_NAPECS_ARCHETYPECOMPONENTACCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0x841A70)
+#define NAP_NAPECS_ARCHETYPECOMPONENTACCESSOR_ENTERCRITICALSECTION_OFFSET UNITYSDK_OFFSET(0x86C860)
+#define NAP_NAPECS_ARCHETYPECOMPONENTACCESSOR__CTOR_OFFSET UNITYSDK_OFFSET(0x86C820)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int ArchetypeComponentAccessor_TypeDefinitionIndex = 34188;
+	inline static constexpr unsigned int ArchetypeComponentAccessor_TypeDefinitionIndex = 35135;
 
 	struct alignas(8) ArchetypeComponentAccessor
 	{

@@ -6,11 +6,11 @@
 namespace MoleMole::Config { class UICameraTransformInfo; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_UICAMERASETTINGDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xEC49070)
+#define MOLEMOLE_CONFIG_UICAMERASETTINGDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xCB061F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UICameraSettingData_TypeDefinitionIndex = 60246;
+	inline static constexpr unsigned int UICameraSettingData_TypeDefinitionIndex = 43031;
 
 	class UICameraSettingData : public ::System::Object
 	{

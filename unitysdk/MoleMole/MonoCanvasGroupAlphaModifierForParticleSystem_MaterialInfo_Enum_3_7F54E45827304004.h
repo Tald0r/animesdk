@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoCanvasGroupAlphaModifierForParticleSystem_MaterialInfo_Enum_3_7F54E45827304004_TypeDefinitionIndex = 47081;
+	inline static constexpr unsigned int MonoCanvasGroupAlphaModifierForParticleSystem_MaterialInfo_Enum_3_7F54E45827304004_TypeDefinitionIndex = 49929;
 
 	enum class MonoCanvasGroupAlphaModifierForParticleSystem_MaterialInfo_Enum_3_7F54E45827304004 : ::System::Int32
 	{

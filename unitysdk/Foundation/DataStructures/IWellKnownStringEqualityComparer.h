@@ -5,7 +5,7 @@ namespace System::Collections { class IEqualityComparer; }
 
 namespace Foundation::DataStructures
 {
-	inline static constexpr unsigned int IWellKnownStringEqualityComparer_TypeDefinitionIndex = 7945;
+	inline static constexpr unsigned int IWellKnownStringEqualityComparer_TypeDefinitionIndex = 8095;
 
 	class IWellKnownStringEqualityComparer
 	{

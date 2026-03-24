@@ -9,22 +9,22 @@ namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine { class Collider; }
 
-#define CLASS_2_C759BEB6ACFF9DF5_CLASS_1_B16CC7BFA1426DCD_METHOD_1_13F2D92E5B022E7E_OFFSET UNITYSDK_OFFSET(0x64543B0)
-#define CLASS_2_C759BEB6ACFF9DF5_CLASS_1_B16CC7BFA1426DCD_METHOD_1_68D3C9BCD843A33F_OFFSET UNITYSDK_OFFSET(0x6454790)
-#define CLASS_2_C759BEB6ACFF9DF5_CLASS_1_B16CC7BFA1426DCD__CTOR_OFFSET UNITYSDK_OFFSET(0x64543A0)
+#define CLASS_2_C759BEB6ACFF9DF5_CLASS_1_B16CC7BFA1426DCD_METHOD_1_13F2D92E5B022E7E_OFFSET UNITYSDK_OFFSET(0x6681470)
+#define CLASS_2_C759BEB6ACFF9DF5_CLASS_1_B16CC7BFA1426DCD_METHOD_1_68D3C9BCD843A33F_OFFSET UNITYSDK_OFFSET(0x6681850)
+#define CLASS_2_C759BEB6ACFF9DF5_CLASS_1_B16CC7BFA1426DCD__CTOR_OFFSET UNITYSDK_OFFSET(0x6681460)
 
-inline static constexpr unsigned int Class_2_C759BEB6ACFF9DF5_Class_1_B16CC7BFA1426DCD_TypeDefinitionIndex = 74755;
+inline static constexpr unsigned int Class_2_C759BEB6ACFF9DF5_Class_1_B16CC7BFA1426DCD_TypeDefinitionIndex = 73523;
 
 class Class_2_C759BEB6ACFF9DF5_Class_1_B16CC7BFA1426DCD : public ::System::Object
 {
 public:
-	::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>* Field_1_0; // 0x10
+	::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>* Field_1_4; // 0x10
 	::Il2CppArray<::UnityEngine::Collider*>* Field_1_1; // 0x18
-	::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>* Field_1_4; // 0x20
-	::Il2CppArray<::UnityEngine::Collider*>* Field_1_2; // 0x28
-	::System::Single Field_1_6; // 0x30
-	::System::Single Field_1_5; // 0x34
-	::UnityEngine::LayerMask Field_1_3; // 0x38
+	::Il2CppArray<::UnityEngine::Collider*>* Field_1_2; // 0x20
+	::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>* Field_1_0; // 0x28
+	::System::Single Field_1_5; // 0x30
+	::UnityEngine::LayerMask Field_1_3; // 0x34
+	::System::Single Field_1_6; // 0x38
 
 	::System::Void _ctor()
 	{

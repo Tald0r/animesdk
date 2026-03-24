@@ -4,7 +4,7 @@
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int BrentsRoot_TypeDefinitionIndex = 31696;
+	inline static constexpr unsigned int BrentsRoot_TypeDefinitionIndex = 32650;
 
 	struct alignas(4) BrentsRoot
 	{

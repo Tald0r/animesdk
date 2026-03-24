@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_UIGALGAMECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x139A7290)
+#define MOLEMOLE_CONFIG_UIGALGAMECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9199620)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UIGalgameConfig_TypeDefinitionIndex = 65626;
+	inline static constexpr unsigned int UIGalgameConfig_TypeDefinitionIndex = 68954;
 
 	class UIGalgameConfig : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

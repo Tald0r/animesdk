@@ -3,13 +3,13 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EAffixLevel_TypeDefinitionIndex = 9844;
+	inline static constexpr unsigned int EAffixLevel_TypeDefinitionIndex = 15292;
 
 	enum class EAffixLevel : ::System::Int16
 	{
-		SR = 2,
-		EnumCount = 4,
 		SSR = 3,
+		EnumCount = 4,
 		R = 1,
+		SR = 2,
 	};
 }

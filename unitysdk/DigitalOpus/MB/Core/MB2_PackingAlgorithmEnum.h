@@ -3,7 +3,7 @@
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB2_PackingAlgorithmEnum_TypeDefinitionIndex = 81258;
+	inline static constexpr unsigned int MB2_PackingAlgorithmEnum_TypeDefinitionIndex = 83299;
 
 	enum class MB2_PackingAlgorithmEnum : ::System::Int32
 	{

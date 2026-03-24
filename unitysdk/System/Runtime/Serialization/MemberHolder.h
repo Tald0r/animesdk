@@ -6,9 +6,9 @@
 namespace System { class Type; }
 namespace System::Reflection { class MemberInfo; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_MEMBERHOLDER_EQUALS_OFFSET UNITYSDK_OFFSET(0x19B7B3F0)
-#define SYSTEM_RUNTIME_SERIALIZATION_MEMBERHOLDER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19B7B3B0)
-#define SYSTEM_RUNTIME_SERIALIZATION_MEMBERHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x19B7B3A0)
+#define SYSTEM_RUNTIME_SERIALIZATION_MEMBERHOLDER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1A13FCE0)
+#define SYSTEM_RUNTIME_SERIALIZATION_MEMBERHOLDER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1A13FCA0)
+#define SYSTEM_RUNTIME_SERIALIZATION_MEMBERHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A13FC90)
 
 namespace System::Runtime::Serialization
 {
@@ -18,8 +18,8 @@ namespace System::Runtime::Serialization
 	{
 	public:
 		::System::Runtime::Serialization::StreamingContext context; // 0x10
-		::Il2CppArray<::System::Reflection::MemberInfo*>* members; // 0x20
-		::System::Type* memberType; // 0x28
+		::System::Type* memberType; // 0x20
+		::Il2CppArray<::System::Reflection::MemberInfo*>* members; // 0x28
 
 		::System::Void _ctor(::System::Type* type, ::System::Runtime::Serialization::StreamingContext ctx)
 		{

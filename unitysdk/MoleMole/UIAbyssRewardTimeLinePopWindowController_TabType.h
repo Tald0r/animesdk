@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssRewardTimeLinePopWindowController_TabType_TypeDefinitionIndex = 78145;
+	inline static constexpr unsigned int UIAbyssRewardTimeLinePopWindowController_TabType_TypeDefinitionIndex = 46228;
 
 	enum class UIAbyssRewardTimeLinePopWindowController_TabType : ::System::Int32
 	{
-		Task = 1,
 		Reward = 0,
+		Task = 1,
 	};
 }

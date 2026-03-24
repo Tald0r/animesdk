@@ -6,23 +6,23 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_CHECKBUDDYALLOWATTACK_CHECKCONDITION_OFFSET UNITYSDK_OFFSET(0x6BDEB50)
-#define MOLEMOLE_CHECKBUDDYALLOWATTACK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x6BDE8B0)
-#define MOLEMOLE_CHECKBUDDYALLOWATTACK__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDECF0)
-#define MOLEMOLE_CHECKBUDDYALLOWATTACK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x6BDED40)
+#define MOLEMOLE_CHECKBUDDYALLOWATTACK_CHECKCONDITION_OFFSET UNITYSDK_OFFSET(0xACAD4C0)
+#define MOLEMOLE_CHECKBUDDYALLOWATTACK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xACAD220)
+#define MOLEMOLE_CHECKBUDDYALLOWATTACK__CTOR_OFFSET UNITYSDK_OFFSET(0xACAD660)
+#define MOLEMOLE_CHECKBUDDYALLOWATTACK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xACAD6B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CheckBuddyAllowAttack_TypeDefinitionIndex = 40248;
+	inline static constexpr unsigned int CheckBuddyAllowAttack_TypeDefinitionIndex = 68083;
 
 	class CheckBuddyAllowAttack : public ::BehaviorDesigner::Runtime::Tasks::Conditional
 	{
 	public:
 		::System::String* ExtraTargetSharedValName; // 0x50
 		::System::String* TargetSharedValName; // 0x58
-		::System::Int32 TargetSharedValValue; // 0x60
-		::System::Boolean UseExtraCondition; // 0x64
-		::System::Int32 ExtraTargetSharedValValue; // 0x68
+		::System::Boolean UseExtraCondition; // 0x60
+		::System::Int32 ExtraTargetSharedValValue; // 0x64
+		::System::Int32 TargetSharedValValue; // 0x68
 		::System::Int32 CheckNum; // 0x6C
 
 		::System::Void _ctor()

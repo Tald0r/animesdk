@@ -5,11 +5,11 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Sprite; }
 
-#define MOLEMOLE_COMIC_COMICBUBBLEIMGTYPEPICCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC908F0)
+#define MOLEMOLE_COMIC_COMICBUBBLEIMGTYPEPICCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2AC420)
 
 namespace MoleMole::Comic
 {
-	inline static constexpr unsigned int ComicBubbleImgTypePicConfig_TypeDefinitionIndex = 29119;
+	inline static constexpr unsigned int ComicBubbleImgTypePicConfig_TypeDefinitionIndex = 30072;
 
 	class ComicBubbleImgTypePicConfig : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

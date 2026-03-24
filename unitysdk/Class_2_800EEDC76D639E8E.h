@@ -11,22 +11,22 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
 
-#define CLASS_2_800EEDC76D639E8E_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x79F8830)
-#define CLASS_2_800EEDC76D639E8E_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0x79F8A30)
-#define CLASS_2_800EEDC76D639E8E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x79F8B70)
-#define CLASS_2_800EEDC76D639E8E__CTOR_OFFSET UNITYSDK_OFFSET(0x79F8B60)
+#define CLASS_2_800EEDC76D639E8E_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0xD3E2550)
+#define CLASS_2_800EEDC76D639E8E_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0xD3E2750)
+#define CLASS_2_800EEDC76D639E8E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD3E2890)
+#define CLASS_2_800EEDC76D639E8E__CTOR_OFFSET UNITYSDK_OFFSET(0xD3E2880)
 
-inline static constexpr unsigned int Class_2_800EEDC76D639E8E_TypeDefinitionIndex = 37175;
+inline static constexpr unsigned int Class_2_800EEDC76D639E8E_TypeDefinitionIndex = 41373;
 
 class Class_2_800EEDC76D639E8E : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x18
+	::MonoUITableScrollV2* Field_2_4; // 0x18
 	::UnityEngine::UI::Extension::UITimeWidget* Field_2_0; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x28
-	::MoleMole::NotificationBadgeEx* Field_2_2; // 0x30
-	::MonoUITableScrollV2* Field_2_4; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x40
+	::MoleMole::NotificationBadgeEx* Field_2_2; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x40
 
 	::System::Void _ctor()
 	{

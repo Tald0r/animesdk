@@ -3,10 +3,16 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreePropertyAccessType_TypeDefinitionIndex = 26965;
+	inline static constexpr unsigned int StateTreePropertyAccessType_TypeDefinitionIndex = 27832;
 
-	enum class StateTreePropertyAccessType : ::System::Int32
+	enum class StateTreePropertyAccessType : ::System::Byte
 	{
-		Offset = 0,
+		Offset = 0x0,
+		Object = 0x1,
+		WeakObject = 0x2,
+		SoftObject = 0x3,
+		ObjectInstance = 0x4,
+		StructInstance = 0x5,
+		IndexArray = 0x6,
 	};
 }

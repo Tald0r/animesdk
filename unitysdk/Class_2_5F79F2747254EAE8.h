@@ -12,26 +12,26 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
 
-#define CLASS_2_5F79F2747254EAE8_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x64C2260)
-#define CLASS_2_5F79F2747254EAE8_METHOD_2_8AE01EFA7526266A_OFFSET UNITYSDK_OFFSET(0x64C2030)
-#define CLASS_2_5F79F2747254EAE8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x64C2310)
-#define CLASS_2_5F79F2747254EAE8__CTOR_OFFSET UNITYSDK_OFFSET(0x64C2300)
+#define CLASS_2_5F79F2747254EAE8_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x615D7C0)
+#define CLASS_2_5F79F2747254EAE8_METHOD_2_8AE01EFA7526266A_OFFSET UNITYSDK_OFFSET(0x615D590)
+#define CLASS_2_5F79F2747254EAE8_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x615D870)
+#define CLASS_2_5F79F2747254EAE8__CTOR_OFFSET UNITYSDK_OFFSET(0x615D860)
 
-inline static constexpr unsigned int Class_2_5F79F2747254EAE8_TypeDefinitionIndex = 43073;
+inline static constexpr unsigned int Class_2_5F79F2747254EAE8_TypeDefinitionIndex = 50446;
 
 class Class_2_5F79F2747254EAE8 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_4; // 0x18
-	::UnityEngine::GameObject* Field_2_9; // 0x20
-	::MoleMole::MonoGamepadTabButtonGroup* Field_2_6; // 0x28
-	::UnityEngine::RectTransform* Field_2_7; // 0x30
-	::UnityEngine::UI::Text* Field_2_2; // 0x38
-	::UnityEngine::RectTransform* Field_2_0; // 0x40
-	::UnityEngine::GameObject* Field_2_8; // 0x48
-	::UnityEngine::UI::Text* Field_2_3; // 0x50
-	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_1; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x60
+	::UnityEngine::UI::Text* Field_2_3; // 0x18
+	::UnityEngine::GameObject* Field_2_8; // 0x20
+	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_1; // 0x28
+	::UnityEngine::RectTransform* Field_2_0; // 0x30
+	::MoleMole::MonoGamepadTabButtonGroup* Field_2_6; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x40
+	::MonoUITableScrollV2* Field_2_4; // 0x48
+	::UnityEngine::RectTransform* Field_2_7; // 0x50
+	::UnityEngine::GameObject* Field_2_9; // 0x58
+	::UnityEngine::UI::Text* Field_2_2; // 0x60
 
 	::System::Void _ctor()
 	{

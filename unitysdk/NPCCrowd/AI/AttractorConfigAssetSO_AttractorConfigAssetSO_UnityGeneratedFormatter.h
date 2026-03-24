@@ -14,34 +14,34 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x688F020)
-#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x688F030)
-#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x688F3B0)
-#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x688F620)
-#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x688F5E0)
+#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8558B70)
+#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8558B80)
+#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8558F00)
+#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8559170)
+#define NPCCROWD_AI_ATTRACTORCONFIGASSETSO_ATTRACTORCONFIGASSETSO_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8559130)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex = 63700;
+	inline static constexpr unsigned int AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex = 75188;
 
 	class AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::NPCCrowd::AI::AttractorConfigAssetSO*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorLinkConfig*>*>*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorLinkConfig*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39270);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorClusterConfig*>*>*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorClusterConfig*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39278);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorInstance*>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorInstance*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39280);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorClusterConfig*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BD40);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorTemplate*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorTemplate*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39288);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorTemplate*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BD48);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorInstance*>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorInstance*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BD50);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorLinkConfig*>*>*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::NPCCrowd::AI::AttractorLinkConfig*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AttractorConfigAssetSO_AttractorConfigAssetSO_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BD58);
 		}
 
 		::System::Void _ctor()

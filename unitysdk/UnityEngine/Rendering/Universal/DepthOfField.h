@@ -9,13 +9,13 @@ namespace UnityEngine::NAPRenderPipeline0 { class MinFloatParameter; }
 namespace UnityEngine::Rendering::Universal { class DepthOfFieldModeParameter; }
 namespace UnityEngine::Rendering::Universal { class DofDebugModeParameter; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_DEPTHOFFIELD_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x17B6C610)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DEPTHOFFIELD_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x17B6C770)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DEPTHOFFIELD__CTOR_OFFSET UNITYSDK_OFFSET(0x17B6C7B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEPTHOFFIELD_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x17802C10)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEPTHOFFIELD_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x17802D70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEPTHOFFIELD__CTOR_OFFSET UNITYSDK_OFFSET(0x17802DB0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int DepthOfField_TypeDefinitionIndex = 28646;
+	inline static constexpr unsigned int DepthOfField_TypeDefinitionIndex = 29589;
 
 	class DepthOfField : public ::UnityEngine::NAPRenderPipeline0::VolumeComponent
 	{
@@ -35,7 +35,8 @@ namespace UnityEngine::Rendering::Universal
 		::UnityEngine::NAPRenderPipeline0::ClampedFloatParameter* bladeRotation; // 0x98
 		::UnityEngine::NAPRenderPipeline0::BoolParameter* forceNoDefaultDof; // 0xA0
 		::UnityEngine::NAPRenderPipeline0::BoolParameter* doDofBeforeTransparent; // 0xA8
-		::UnityEngine::Rendering::Universal::DofDebugModeParameter* debugMode; // 0xB0
+		::UnityEngine::NAPRenderPipeline0::BoolParameter* doDofBeforeTransparentAfterVolumetricFog; // 0xB0
+		::UnityEngine::Rendering::Universal::DofDebugModeParameter* debugMode; // 0xB8
 
 		::System::Void _ctor()
 		{

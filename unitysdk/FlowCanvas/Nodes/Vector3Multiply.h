@@ -3,12 +3,12 @@
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_3.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define FLOWCANVAS_NODES_VECTOR3MULTIPLY_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A178830)
-#define FLOWCANVAS_NODES_VECTOR3MULTIPLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1A178850)
+#define FLOWCANVAS_NODES_VECTOR3MULTIPLY_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A7210A0)
+#define FLOWCANVAS_NODES_VECTOR3MULTIPLY__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7210C0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int Vector3Multiply_TypeDefinitionIndex = 25150;
+	inline static constexpr unsigned int Vector3Multiply_TypeDefinitionIndex = 26556;
 
 	class Vector3Multiply : public ::FlowCanvas::Nodes::PureFunctionNode_3<::UnityEngine::Vector3, ::UnityEngine::Vector3, ::System::Single>
 	{

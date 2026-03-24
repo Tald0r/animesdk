@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/PlanarReflectionCubeProbe_NativeSRP.h"
 
-#define PLANARREFLECTIONCUBEPROBE__CTOR_OFFSET UNITYSDK_OFFSET(0x19B1CAE0)
+#define PLANARREFLECTIONCUBEPROBE__CTOR_OFFSET UNITYSDK_OFFSET(0x19ECE170)
 
-inline static constexpr unsigned int PlanarReflectionCubeProbe_TypeDefinitionIndex = 28021;
+inline static constexpr unsigned int PlanarReflectionCubeProbe_TypeDefinitionIndex = 28961;
 
 class PlanarReflectionCubeProbe : public ::UnityEngine::NAPRenderPipeline0::PlanarReflectionCubeProbe_NativeSRP
 {

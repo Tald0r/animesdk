@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Config/ConfigPageCamera.h"
 
-#define MOLEMOLE_CONFIG_YOROZUYACONFIGPAGECAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0xEC491E0)
+#define MOLEMOLE_CONFIG_YOROZUYACONFIGPAGECAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0xCB06360)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int YorozuyaConfigPageCamera_TypeDefinitionIndex = 40756;
+	inline static constexpr unsigned int YorozuyaConfigPageCamera_TypeDefinitionIndex = 44555;
 
 	class YorozuyaConfigPageCamera : public ::MoleMole::Config::ConfigPageCamera
 	{

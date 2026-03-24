@@ -6,21 +6,21 @@ class Class_1_D72537470FC2F779;
 namespace MoleMole::Config { class BoolUISpecialNum; }
 namespace MoleMole::Config { class FloatUISpecialNum; }
 
-#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x139A5130)
-#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x139A51F0)
-#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x139A52B0)
-#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x139A5310)
+#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x91974B0)
+#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE_ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x9197570)
+#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE_ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x9197630)
+#define MOLEMOLE_CONFIG_CONFIGWAITACTIONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9197690)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigWaitActionNode_TypeDefinitionIndex = 73584;
+	inline static constexpr unsigned int ConfigWaitActionNode_TypeDefinitionIndex = 68760;
 
 	class ConfigWaitActionNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
-		::MoleMole::Config::FloatUISpecialNum* WaitSeconds; // 0x18
+		::MoleMole::Config::BoolUISpecialNum* EnableRandomOffset; // 0x18
 		::MoleMole::Config::FloatUISpecialNum* RandomOffsetMax; // 0x20
-		::MoleMole::Config::BoolUISpecialNum* EnableRandomOffset; // 0x28
+		::MoleMole::Config::FloatUISpecialNum* WaitSeconds; // 0x28
 
 		::System::Void _ctor()
 		{

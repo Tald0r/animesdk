@@ -6,19 +6,19 @@
 namespace MoleMole { class UIQuestionsAnswerPageController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS26_0__BACKTOSELECT_B__0_OFFSET UNITYSDK_OFFSET(0xC83A950)
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS26_0__BACKTOSELECT_B__1_OFFSET UNITYSDK_OFFSET(0xC83B670)
-#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC83A940)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS26_0__BACKTOSELECT_B__0_OFFSET UNITYSDK_OFFSET(0xD3A23E0)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS26_0__BACKTOSELECT_B__1_OFFSET UNITYSDK_OFFSET(0xD3A3100)
+#define MOLEMOLE_UIQUESTIONSANSWERPAGECONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD3A23D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerPageController___c__DisplayClass26_0_TypeDefinitionIndex = 56220;
+	inline static constexpr unsigned int UIQuestionsAnswerPageController___c__DisplayClass26_0_TypeDefinitionIndex = 78273;
 
 	class UIQuestionsAnswerPageController___c__DisplayClass26_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIQuestionsAnswerPageController* __4__this; // 0x10
-		::System::Action_1<::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF>* __9__1; // 0x18
+		::System::Action_1<::Class_1_FC3A9C07FC781527_Enum_3_6E0E8267CDDC65CF>* __9__1; // 0x10
+		::MoleMole::UIQuestionsAnswerPageController* __4__this; // 0x18
 		::System::Boolean isFinish; // 0x20
 
 		::System::Void _ctor()

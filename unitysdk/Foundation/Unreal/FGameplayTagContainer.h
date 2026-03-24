@@ -9,21 +9,21 @@
 
 namespace Foundation::Unreal { class IGameplayTagContainerVisitor; }
 
-#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER_NEW_OFFSET UNITYSDK_OFFSET(0x19713230)
-#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x19713330)
-#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER_VISITGAMEPLAYTAG_OFFSET UNITYSDK_OFFSET(0x8A7390)
-#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER__CCTOR_OFFSET UNITYSDK_OFFSET(0x197135B0)
-#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A72A0)
+#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER_NEW_OFFSET UNITYSDK_OFFSET(0x19C5BFB0)
+#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER_OP_EQUALITY_OFFSET UNITYSDK_OFFSET(0x19C5C0B0)
+#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER_VISITGAMEPLAYTAG_OFFSET UNITYSDK_OFFSET(0x8D5DD0)
+#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C5C330)
+#define FOUNDATION_UNREAL_FGAMEPLAYTAGCONTAINER__CTOR_OFFSET UNITYSDK_OFFSET(0x8D5CE0)
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int FGameplayTagContainer_TypeDefinitionIndex = 9165;
+	inline static constexpr unsigned int FGameplayTagContainer_TypeDefinitionIndex = 8951;
 
 	struct alignas(8) FGameplayTagContainer
 	{
 		static ::Foundation::Unreal::FGameplayTagContainer* StaticGet_Empty()
 		{
-			return (::Foundation::Unreal::FGameplayTagContainer*)Il2CppClass::FromTypeDefinitionIndex(FGameplayTagContainer_TypeDefinitionIndex)->GetStaticField(0x7D20);
+			return (::Foundation::Unreal::FGameplayTagContainer*)Il2CppClass::FromTypeDefinitionIndex(FGameplayTagContainer_TypeDefinitionIndex)->GetStaticField(0x7D60);
 		}
 		::Foundation::InlineList_2<::Foundation::Unreal::FGameplayTag, ::Foundation::FixedArray2_1<::Foundation::Unreal::FGameplayTag>> GameplayTags; // 0x10
 		::Foundation::InlineList_2<::Foundation::Unreal::FGameplayTag, ::Foundation::FixedArray8_1<::Foundation::Unreal::FGameplayTag>> ParentTags; // 0x30

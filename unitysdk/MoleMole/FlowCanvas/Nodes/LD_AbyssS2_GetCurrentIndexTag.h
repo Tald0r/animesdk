@@ -3,12 +3,12 @@
 #include "unitysdk/FlowCanvas/Nodes/CallableFunctionNode_1.h"
 #include "unitysdk/MoleMole/FlowCanvas/Nodes/AreaIDTag.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETCURRENTINDEXTAG_INVOKE_OFFSET UNITYSDK_OFFSET(0x8B06EC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETCURRENTINDEXTAG__CTOR_OFFSET UNITYSDK_OFFSET(0x8B07010)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETCURRENTINDEXTAG_INVOKE_OFFSET UNITYSDK_OFFSET(0xB18BCA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETCURRENTINDEXTAG__CTOR_OFFSET UNITYSDK_OFFSET(0xB18BDF0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_GetCurrentIndexTag_TypeDefinitionIndex = 61284;
+	inline static constexpr unsigned int LD_AbyssS2_GetCurrentIndexTag_TypeDefinitionIndex = 46037;
 
 	class LD_AbyssS2_GetCurrentIndexTag : public ::FlowCanvas::Nodes::CallableFunctionNode_1<::MoleMole::FlowCanvas::Nodes::AreaIDTag>
 	{

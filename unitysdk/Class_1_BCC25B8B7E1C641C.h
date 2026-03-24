@@ -4,9 +4,9 @@
 
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_1_BCC25B8B7E1C641C_METHOD_1_043414DB6790BCB3_OFFSET UNITYSDK_OFFSET(0xA21CA80)
+#define CLASS_1_BCC25B8B7E1C641C_METHOD_1_043414DB6790BCB3_OFFSET UNITYSDK_OFFSET(0x74ABF10)
 
-inline static constexpr unsigned int Class_1_BCC25B8B7E1C641C_TypeDefinitionIndex = 61904;
+inline static constexpr unsigned int Class_1_BCC25B8B7E1C641C_TypeDefinitionIndex = 75506;
 
 class Class_1_BCC25B8B7E1C641C : public ::System::Object
 {

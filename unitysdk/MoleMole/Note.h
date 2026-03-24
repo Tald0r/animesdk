@@ -9,13 +9,13 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_NOTE_GET_HASEND_OFFSET UNITYSDK_OFFSET(0x8F3B570)
-#define MOLEMOLE_NOTE_GET_TIMEOFFSETSECONDS_OFFSET UNITYSDK_OFFSET(0x8F3B560)
-#define MOLEMOLE_NOTE__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3B590)
+#define MOLEMOLE_NOTE_GET_HASEND_OFFSET UNITYSDK_OFFSET(0x9851400)
+#define MOLEMOLE_NOTE_GET_TIMEOFFSETSECONDS_OFFSET UNITYSDK_OFFSET(0x98513F0)
+#define MOLEMOLE_NOTE__CTOR_OFFSET UNITYSDK_OFFSET(0x9851420)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int Note_TypeDefinitionIndex = 57176;
+	inline static constexpr unsigned int Note_TypeDefinitionIndex = 43474;
 
 	class Note : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB2_LogLevel_TypeDefinitionIndex = 81264;
+	inline static constexpr unsigned int MB2_LogLevel_TypeDefinitionIndex = 83305;
 
 	enum class MB2_LogLevel : ::System::Int32
 	{

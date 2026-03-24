@@ -2,215 +2,215 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAAPPLYPASS_LYRAAPPLYPASSSHADERIDS__CCTOR_OFFSET UNITYSDK_OFFSET(0x17B73C70)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAAPPLYPASS_LYRAAPPLYPASSSHADERIDS__CTOR_OFFSET UNITYSDK_OFFSET(0x17B73C60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAAPPLYPASS_LYRAAPPLYPASSSHADERIDS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1780A4A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_LYRAAPPLYPASS_LYRAAPPLYPASSSHADERIDS__CTOR_OFFSET UNITYSDK_OFFSET(0x1780A490)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex = 29025;
+	inline static constexpr unsigned int LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex = 29976;
 
 	class LyraApplyPass_LyraApplyPassShaderIDs : public ::System::Object
 	{
 	public:
-		static ::System::Int32* StaticGet_MaxOcclusionDistance()
+		static ::System::Int32* StaticGet_SSBent()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56D0);
-		}
-		static ::System::Int32* StaticGet__FullSizeAndInvSize()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56D4);
-		}
-		static ::System::Int32* StaticGet_Result()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56D8);
-		}
-		static ::System::Int32* StaticGet__ConeTracedBentNormal()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56DC);
-		}
-		static ::System::Int32* StaticGet_RWQuadResult()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56E0);
-		}
-		static ::System::Int32* StaticGet_HistoryQuadLum()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56E4);
-		}
-		static ::System::Int32* StaticGet_TanConeHalfAngle()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56E8);
-		}
-		static ::System::Int32* StaticGet_AOBufferBilinearUVMax()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56EC);
-		}
-		static ::System::Int32* StaticGet_ceneDepthTexture()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56F0);
-		}
-		static ::System::Int32* StaticGet__OutHalfResDepth()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56F4);
-		}
-		static ::System::Int32* StaticGet_EnableContactGI()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56F8);
-		}
-		static ::System::Int32* StaticGet_SampleDirections()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x56FC);
-		}
-		static ::System::Int32* StaticGet_AOMaxViewDistance()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5700);
-		}
-		static ::System::Int32* StaticGet_RWLyraProbeIndirectionTexture()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5704);
-		}
-		static ::System::Int32* StaticGet__EnableLyraGI()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5708);
-		}
-		static ::System::Int32* StaticGet_SSAOStrength()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x570C);
-		}
-		static ::System::Int32* StaticGet_GIFade()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5710);
-		}
-		static ::System::Int32* StaticGet_OutConeTracedBentNormal()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5714);
-		}
-		static ::System::Int32* StaticGet_LowResViewSize()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5718);
-		}
-		static ::System::Int32* StaticGet__QuadResDiffuseIndirect()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x571C);
-		}
-		static ::System::Int32* StaticGet_BentNormalAOTexture()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5720);
-		}
-		static ::System::Int32* StaticGet__DiffuseIndirect()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5724);
-		}
-		static ::System::Int32* StaticGet_HalfResCheckerboardDepth()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5728);
-		}
-		static ::System::Int32* StaticGet_RWQuadLum()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x572C);
-		}
-		static ::System::Int32* StaticGet_LyraLightmapIntensity()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5730);
-		}
-		static ::System::Int32* StaticGet_HalfResCheckerboardNormal()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5734);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57B0);
 		}
 		static ::System::Int32* StaticGet_SceneDepthTextureHistory()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5738);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57B4);
 		}
-		static ::System::Int32* StaticGet_ScaleRadiusInWorldSpace()
+		static ::System::Int32* StaticGet__ConeTracedBentNormal()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x573C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57B8);
 		}
-		static ::System::Int32* StaticGet_DistanceFadeScale()
+		static ::System::Int32* StaticGet_HalfResCheckerboardNormal()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5740);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57BC);
 		}
 		static ::System::Int32* StaticGet__QuadResLum()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5744);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57C0);
 		}
-		static ::System::Int32* StaticGet_SkyPassThrough()
+		static ::System::Int32* StaticGet_ScaleRadiusInWorldSpace()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5748);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57C4);
 		}
-		static ::System::Int32* StaticGet_OutTextureSize()
+		static ::System::Int32* StaticGet__FullSizeAndInvSize()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x574C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57C8);
 		}
-		static ::System::Int32* StaticGet_QuadResult()
+		static ::System::Int32* StaticGet_HalfResCheckerboardDepth()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5750);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57CC);
 		}
-		static ::System::Int32* StaticGet_BentNormalNormalizeFactor()
+		static ::System::Int32* StaticGet_TanConeHalfAngle()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5754);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57D0);
 		}
-		static ::System::Int32* StaticGet_CharacterGILuminance()
+		static ::System::Int32* StaticGet_EnableContactGI()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5758);
-		}
-		static ::System::Int32* StaticGet_PreUVScale()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x575C);
-		}
-		static ::System::Int32* StaticGet_JitterOffset()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5760);
-		}
-		static ::System::Int32* StaticGet_RWHalfResult()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5764);
-		}
-		static ::System::Int32* StaticGet_SSBent()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5768);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57D4);
 		}
 		static ::System::Int32* StaticGet_LyraGIBoost()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x576C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57D8);
 		}
-		static ::System::Int32* StaticGet__HalfResDiffuseIndirect()
+		static ::System::Int32* StaticGet_AOMaxViewDistance()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5770);
-		}
-		static ::System::Int32* StaticGet_CharacterUseConstantGI()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5774);
-		}
-		static ::System::Int32* StaticGet_LightmapGBufferTexture()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5778);
-		}
-		static ::System::Int32* StaticGet__OutHalfResNormal()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x577C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57DC);
 		}
 		static ::System::Int32* StaticGet_SceneNormalTexture()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5780);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57E0);
 		}
-		static ::System::Int32* StaticGet_HistoryHalfResult()
+		static ::System::Int32* StaticGet_LyraLightmapIntensity()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5784);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57E4);
 		}
-		static ::System::Int32* StaticGet_SDFAOStrength()
+		static ::System::Int32* StaticGet_SampleDirections()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5788);
-		}
-		static ::System::Int32* StaticGet_TemporalParams()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x578C);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57E8);
 		}
 		static ::System::Int32* StaticGet_SceneDepthTexture()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5790);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57EC);
+		}
+		static ::System::Int32* StaticGet_TemporalParams()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57F0);
+		}
+		static ::System::Int32* StaticGet_BentNormalAOTexture()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57F4);
+		}
+		static ::System::Int32* StaticGet_OutTextureSize()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57F8);
+		}
+		static ::System::Int32* StaticGet_RWHalfResult()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x57FC);
+		}
+		static ::System::Int32* StaticGet_BentNormalNormalizeFactor()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5800);
+		}
+		static ::System::Int32* StaticGet_JitterOffset()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5804);
+		}
+		static ::System::Int32* StaticGet_LowResViewSize()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5808);
+		}
+		static ::System::Int32* StaticGet_HistoryHalfResult()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x580C);
+		}
+		static ::System::Int32* StaticGet_ceneDepthTexture()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5810);
+		}
+		static ::System::Int32* StaticGet_HistoryQuadLum()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5814);
+		}
+		static ::System::Int32* StaticGet_LightmapGBufferTexture()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5818);
+		}
+		static ::System::Int32* StaticGet_RWQuadResult()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x581C);
+		}
+		static ::System::Int32* StaticGet__HalfResDiffuseIndirect()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5820);
+		}
+		static ::System::Int32* StaticGet__DiffuseIndirect()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5824);
+		}
+		static ::System::Int32* StaticGet_GIFade()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5828);
+		}
+		static ::System::Int32* StaticGet_OutConeTracedBentNormal()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x582C);
+		}
+		static ::System::Int32* StaticGet_DistanceFadeScale()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5830);
+		}
+		static ::System::Int32* StaticGet_SkyPassThrough()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5834);
+		}
+		static ::System::Int32* StaticGet__OutHalfResNormal()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5838);
+		}
+		static ::System::Int32* StaticGet_SDFAOStrength()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x583C);
+		}
+		static ::System::Int32* StaticGet_RWLyraProbeIndirectionTexture()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5840);
 		}
 		static ::System::Int32* StaticGet_LyraProbeIndirectionTexture()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5794);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5844);
+		}
+		static ::System::Int32* StaticGet_SSAOStrength()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5848);
+		}
+		static ::System::Int32* StaticGet_RWQuadLum()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x584C);
+		}
+		static ::System::Int32* StaticGet__OutHalfResDepth()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5850);
+		}
+		static ::System::Int32* StaticGet_AOBufferBilinearUVMax()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5854);
+		}
+		static ::System::Int32* StaticGet_MaxOcclusionDistance()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5858);
+		}
+		static ::System::Int32* StaticGet_PreUVScale()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x585C);
+		}
+		static ::System::Int32* StaticGet_CharacterGILuminance()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5860);
+		}
+		static ::System::Int32* StaticGet_Result()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5864);
+		}
+		static ::System::Int32* StaticGet_CharacterUseConstantGI()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5868);
+		}
+		static ::System::Int32* StaticGet__EnableLyraGI()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x586C);
+		}
+		static ::System::Int32* StaticGet__QuadResDiffuseIndirect()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5870);
+		}
+		static ::System::Int32* StaticGet_QuadResult()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(LyraApplyPass_LyraApplyPassShaderIDs_TypeDefinitionIndex)->GetStaticField(0x5874);
 		}
 
 		::System::Void _ctor()

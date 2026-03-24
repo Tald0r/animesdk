@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SummonByTagAbilityTarget_Enum_3_0279FF9E64F7A691_TypeDefinitionIndex = 60021;
+	inline static constexpr unsigned int SummonByTagAbilityTarget_Enum_3_0279FF9E64F7A691_TypeDefinitionIndex = 50184;
 
 	enum class SummonByTagAbilityTarget_Enum_3_0279FF9E64F7A691 : ::System::Int32
 	{

@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy::Controllers
 {
-	inline static constexpr unsigned int SplineControllerConnectionBehavior_TypeDefinitionIndex = 35718;
+	inline static constexpr unsigned int SplineControllerConnectionBehavior_TypeDefinitionIndex = 36738;
 
 	enum class SplineControllerConnectionBehavior : ::System::Int32
 	{

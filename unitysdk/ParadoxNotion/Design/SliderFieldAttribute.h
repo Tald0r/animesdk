@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/ParadoxNotion/Design/DrawerAttribute.h"
 
-#define PARADOXNOTION_DESIGN_SLIDERFIELDATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19DBD1B0)
-#define PARADOXNOTION_DESIGN_SLIDERFIELDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19DBD1A0)
+#define PARADOXNOTION_DESIGN_SLIDERFIELDATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A3AE410)
+#define PARADOXNOTION_DESIGN_SLIDERFIELDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3AE400)
 
 namespace ParadoxNotion::Design
 {
-	inline static constexpr unsigned int SliderFieldAttribute_TypeDefinitionIndex = 26704;
+	inline static constexpr unsigned int SliderFieldAttribute_TypeDefinitionIndex = 27149;
 
 	class SliderFieldAttribute : public ::ParadoxNotion::Design::DrawerAttribute
 	{

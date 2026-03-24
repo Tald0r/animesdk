@@ -5,9 +5,9 @@
 
 namespace UnityEngine { class Texture2D; }
 
-#define DAMAGEDECALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x185B5360)
+#define DAMAGEDECALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18B1D340)
 
-inline static constexpr unsigned int DamageDecalConfig_TypeDefinitionIndex = 27997;
+inline static constexpr unsigned int DamageDecalConfig_TypeDefinitionIndex = 28937;
 
 class DamageDecalConfig : public ::UnityEngine::ScriptableObject
 {

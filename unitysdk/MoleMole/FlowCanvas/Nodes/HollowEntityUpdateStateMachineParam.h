@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/ChessStateMachine/StateMachineParamsWrapper.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_2.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYUPDATESTATEMACHINEPARAM_INVOKE_OFFSET UNITYSDK_OFFSET(0xE0ECD50)
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYUPDATESTATEMACHINEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xE0ED890)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYUPDATESTATEMACHINEPARAM_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A519B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYUPDATESTATEMACHINEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x7A524F0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int HollowEntityUpdateStateMachineParam_TypeDefinitionIndex = 71945;
+	inline static constexpr unsigned int HollowEntityUpdateStateMachineParam_TypeDefinitionIndex = 72198;
 
 	class HollowEntityUpdateStateMachineParam : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_2<::System::UInt32, ::MoleMole::ChessStateMachine::StateMachineParamsWrapper>
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_VF_BATTLESORCERATIO_INVOKE_OFFSET UNITYSDK_OFFSET(0xF1B21E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_VF_BATTLESORCERATIO__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B2340)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_VF_BATTLESORCERATIO_INVOKE_OFFSET UNITYSDK_OFFSET(0xB98C070)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_VF_BATTLESORCERATIO__CTOR_OFFSET UNITYSDK_OFFSET(0xB98C1D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_VF_BattleSorceRatio_TypeDefinitionIndex = 45875;
+	inline static constexpr unsigned int LD_VF_BattleSorceRatio_TypeDefinitionIndex = 53269;
 
 	class LD_VF_BattleSorceRatio : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Single>
 	{

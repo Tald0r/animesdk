@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/LyraSector/LyraAssetData.h"
 
-#define LYRASECTOR_LYRASCENEVOXELASSET_SETOFFSET_OFFSET UNITYSDK_OFFSET(0x1931A5F0)
-#define LYRASECTOR_LYRASCENEVOXELASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x1931A5C0)
+#define LYRASECTOR_LYRASCENEVOXELASSET_SETOFFSET_OFFSET UNITYSDK_OFFSET(0x197CD9E0)
+#define LYRASECTOR_LYRASCENEVOXELASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x197CD9B0)
 
 namespace LyraSector
 {
-	inline static constexpr unsigned int LyraSceneVoxelAsset_TypeDefinitionIndex = 28221;
+	inline static constexpr unsigned int LyraSceneVoxelAsset_TypeDefinitionIndex = 29162;
 
 	class LyraSceneVoxelAsset : public ::LyraSector::LyraAssetData
 	{

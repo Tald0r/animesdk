@@ -4,7 +4,7 @@
 
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 
-inline static constexpr unsigned int NullHelper_TypeDefinitionIndex = 41148;
+inline static constexpr unsigned int NullHelper_TypeDefinitionIndex = 55071;
 
 class NullHelper : public ::System::Object
 {

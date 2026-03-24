@@ -7,29 +7,29 @@ namespace System { template <typename T> class Comparison_1; }
 namespace UnityEngine::Timeline { class Frame; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AC97130)
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC97160)
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__GET_END_B__59_0_OFFSET UNITYSDK_OFFSET(0x1AC97170)
-#define UNITYENGINE_TIMELINE_TRACKASSET___C__SORTCLIPS_B__153_0_OFFSET UNITYSDK_OFFSET(0x1AC97190)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B2B2C50)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2B2C80)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__GET_END_B__59_0_OFFSET UNITYSDK_OFFSET(0x1B2B2C90)
+#define UNITYENGINE_TIMELINE_TRACKASSET___C__SORTCLIPS_B__153_0_OFFSET UNITYSDK_OFFSET(0x1B2B2CB0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TrackAsset___c_TypeDefinitionIndex = 29248;
+	inline static constexpr unsigned int TrackAsset___c_TypeDefinitionIndex = 30201;
 
 	class TrackAsset___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>** StaticGet___9__153_0()
 		{
-			return (::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x22A90);
+			return (::System::Comparison_1<::UnityEngine::Timeline::TimelineClip*>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x243B0);
 		}
 		static ::UnityEngine::Timeline::TrackAsset___c** StaticGet___9()
 		{
-			return (::UnityEngine::Timeline::TrackAsset___c**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x22A98);
+			return (::UnityEngine::Timeline::TrackAsset___c**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x243B8);
 		}
 		static ::System::Func_2<::UnityEngine::Timeline::Frame*, ::System::Single>** StaticGet___9__59_0()
 		{
-			return (::System::Func_2<::UnityEngine::Timeline::Frame*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x22AA0);
+			return (::System::Func_2<::UnityEngine::Timeline::Frame*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(TrackAsset___c_TypeDefinitionIndex)->GetStaticField(0x243C0);
 		}
 
 		static ::System::Void _cctor()

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_EFFECTFORUISCALE_GETDURATION_OFFSET UNITYSDK_OFFSET(0xCD34450)
-#define MOLEMOLE_EFFECTFORUISCALE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD344C0)
+#define MOLEMOLE_EFFECTFORUISCALE_GETDURATION_OFFSET UNITYSDK_OFFSET(0xE38D330)
+#define MOLEMOLE_EFFECTFORUISCALE__CTOR_OFFSET UNITYSDK_OFFSET(0xE38D3A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int EffectForUIScale_TypeDefinitionIndex = 49899;
+	inline static constexpr unsigned int EffectForUIScale_TypeDefinitionIndex = 49704;
 
 	class EffectForUIScale : public ::UnityEngine::MonoBehaviour
 	{

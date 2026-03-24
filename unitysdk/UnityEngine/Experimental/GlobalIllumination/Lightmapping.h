@@ -5,26 +5,26 @@
 namespace UnityEngine { class Light; }
 namespace UnityEngine::Experimental::GlobalIllumination { class Lightmapping_RequestLightsDelegate; }
 
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_GETDELEGATE_OFFSET UNITYSDK_OFFSET(0x19BC5A50)
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_REQUESTLIGHTS_OFFSET UNITYSDK_OFFSET(0x19BC5AC0)
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_RESETDELEGATE_OFFSET UNITYSDK_OFFSET(0x19BC5A80)
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_SETDELEGATE_OFFSET UNITYSDK_OFFSET(0x19BC59F0)
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BC5B40)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_GETDELEGATE_OFFSET UNITYSDK_OFFSET(0x1A273BE0)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_REQUESTLIGHTS_OFFSET UNITYSDK_OFFSET(0x1A273C50)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_RESETDELEGATE_OFFSET UNITYSDK_OFFSET(0x1A273C10)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING_SETDELEGATE_OFFSET UNITYSDK_OFFSET(0x1A273B80)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LIGHTMAPPING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A273CD0)
 
 namespace UnityEngine::Experimental::GlobalIllumination
 {
-	inline static constexpr unsigned int Lightmapping_TypeDefinitionIndex = 6289;
+	inline static constexpr unsigned int Lightmapping_TypeDefinitionIndex = 6293;
 
 	class Lightmapping : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate** StaticGet_s_DefaultDelegate()
-		{
-			return (::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate**)Il2CppClass::FromTypeDefinitionIndex(Lightmapping_TypeDefinitionIndex)->GetStaticField(0x52F0);
-		}
 		static ::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate** StaticGet_s_RequestLightsDelegate()
 		{
-			return (::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate**)Il2CppClass::FromTypeDefinitionIndex(Lightmapping_TypeDefinitionIndex)->GetStaticField(0x52F8);
+			return (::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate**)Il2CppClass::FromTypeDefinitionIndex(Lightmapping_TypeDefinitionIndex)->GetStaticField(0x5320);
+		}
+		static ::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate** StaticGet_s_DefaultDelegate()
+		{
+			return (::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate**)Il2CppClass::FromTypeDefinitionIndex(Lightmapping_TypeDefinitionIndex)->GetStaticField(0x5328);
 		}
 
 		static ::System::Void _cctor()

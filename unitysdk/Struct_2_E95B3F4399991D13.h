@@ -6,9 +6,9 @@
 namespace MoleMole::Config { class ConfigTeleportSelectionTrait; }
 namespace System { class String; }
 
-#define STRUCT_2_E95B3F4399991D13_METHOD_2_2A0B59DC0FFB23E8_OFFSET UNITYSDK_OFFSET(0xB03DF40)
+#define STRUCT_2_E95B3F4399991D13_METHOD_2_2A0B59DC0FFB23E8_OFFSET UNITYSDK_OFFSET(0x9759300)
 
-inline static constexpr unsigned int Struct_2_E95B3F4399991D13_TypeDefinitionIndex = 59309;
+inline static constexpr unsigned int Struct_2_E95B3F4399991D13_TypeDefinitionIndex = 63632;
 
 struct alignas(8) Struct_2_E95B3F4399991D13
 {

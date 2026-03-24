@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class MeshFilter; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_DUPLICATEEDITORMESH_GET_FILTER_OFFSET UNITYSDK_OFFSET(0x1A240390)
-#define FLUFFYUNDERWARE_DEVTOOLS_DUPLICATEEDITORMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A240410)
+#define FLUFFYUNDERWARE_DEVTOOLS_DUPLICATEEDITORMESH_GET_FILTER_OFFSET UNITYSDK_OFFSET(0x1A807CA0)
+#define FLUFFYUNDERWARE_DEVTOOLS_DUPLICATEEDITORMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A807D20)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int DuplicateEditorMesh_TypeDefinitionIndex = 24556;
+	inline static constexpr unsigned int DuplicateEditorMesh_TypeDefinitionIndex = 25381;
 
 	class DuplicateEditorMesh : public ::FluffyUnderware::DevTools::DTVersionedMonoBehaviour
 	{

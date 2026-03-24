@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSMASHBROMAXSCORE_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCDD380)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSMASHBROMAXSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0xCCDD690)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSMASHBROMAXSCORE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA00CE20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETSMASHBROMAXSCORE__CTOR_OFFSET UNITYSDK_OFFSET(0xA00D130)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetSmashBroMaxScore_TypeDefinitionIndex = 74523;
+	inline static constexpr unsigned int LDGetSmashBroMaxScore_TypeDefinitionIndex = 49149;
 
 	class LDGetSmashBroMaxScore : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Int32>
 	{

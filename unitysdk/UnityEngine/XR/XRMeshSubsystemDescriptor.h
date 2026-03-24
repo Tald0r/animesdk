@@ -4,11 +4,11 @@
 
 namespace UnityEngine::XR { class XRMeshSubsystem; }
 
-#define UNITYENGINE_XR_XRMESHSUBSYSTEMDESCRIPTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B08ADC0)
+#define UNITYENGINE_XR_XRMESHSUBSYSTEMDESCRIPTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B699580)
 
 namespace UnityEngine::XR
 {
-	inline static constexpr unsigned int XRMeshSubsystemDescriptor_TypeDefinitionIndex = 23978;
+	inline static constexpr unsigned int XRMeshSubsystemDescriptor_TypeDefinitionIndex = 24661;
 
 	class XRMeshSubsystemDescriptor : public ::UnityEngine::IntegratedSubsystemDescriptor_1<::UnityEngine::XR::XRMeshSubsystem*>
 	{

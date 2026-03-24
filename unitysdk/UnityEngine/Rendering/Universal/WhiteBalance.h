@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/WhiteBalance_NativeSRP.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WHITEBALANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x16DC5D30)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WHITEBALANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1742E5C0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int WhiteBalance_TypeDefinitionIndex = 28706;
+	inline static constexpr unsigned int WhiteBalance_TypeDefinitionIndex = 29649;
 
 	class WhiteBalance : public ::UnityEngine::NAPRenderPipeline0::WhiteBalance_NativeSRP
 	{

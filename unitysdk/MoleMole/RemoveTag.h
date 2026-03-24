@@ -10,24 +10,24 @@ namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_REMOVETAG_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x6B1DB00)
-#define MOLEMOLE_REMOVETAG_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x6B1DD90)
-#define MOLEMOLE_REMOVETAG__CTOR_OFFSET UNITYSDK_OFFSET(0x6B1E010)
-#define MOLEMOLE_REMOVETAG___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x6B1E050)
-#define MOLEMOLE_REMOVETAG___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x6B1E0E0)
+#define MOLEMOLE_REMOVETAG_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xD4469B0)
+#define MOLEMOLE_REMOVETAG_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xD446C40)
+#define MOLEMOLE_REMOVETAG__CTOR_OFFSET UNITYSDK_OFFSET(0xD446EB0)
+#define MOLEMOLE_REMOVETAG___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xD446EF0)
+#define MOLEMOLE_REMOVETAG___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xD446F80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RemoveTag_TypeDefinitionIndex = 51963;
+	inline static constexpr unsigned int RemoveTag_TypeDefinitionIndex = 38785;
 
 	class RemoveTag : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::MoleMole::Battle::Entity* ownerEntity; // 0x58
-		::Class_3_B19369CC4AB45FA4* attackTargetComponent; // 0x60
+		::Class_3_B19369CC4AB45FA4* attackTargetComponent; // 0x58
+		::Class_3_F97B015544BE936B* characterData; // 0x60
 		::System::String* TagName; // 0x68
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x70
-		::Class_3_F97B015544BE936B* characterData; // 0x78
+		::MoleMole::Battle::Entity* ownerEntity; // 0x70
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x78
 		::MoleMole::AITargetType TargetType; // 0x80
 
 		::System::Void _ctor()

@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_EXPEDITIONAREANAVCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xEC6B0F0)
+#define MOLEMOLE_EXPEDITIONAREANAVCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7569C00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ExpeditionAreaNavConfig_TypeDefinitionIndex = 60470;
+	inline static constexpr unsigned int ExpeditionAreaNavConfig_TypeDefinitionIndex = 80957;
 
 	class ExpeditionAreaNavConfig : public ::System::Object
 	{
 	public:
 		::System::Int32 Up; // 0x10
-		::System::Int32 Left; // 0x14
-		::System::Int32 Right; // 0x18
-		::System::Int32 Down; // 0x1C
+		::System::Int32 Right; // 0x14
+		::System::Int32 Down; // 0x18
+		::System::Int32 Left; // 0x1C
 
 		::System::Void _ctor()
 		{

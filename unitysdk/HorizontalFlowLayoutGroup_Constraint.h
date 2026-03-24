@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int HorizontalFlowLayoutGroup_Constraint_TypeDefinitionIndex = 48559;
+inline static constexpr unsigned int HorizontalFlowLayoutGroup_Constraint_TypeDefinitionIndex = 72477;
 
 enum class HorizontalFlowLayoutGroup_Constraint : ::System::Int32
 {

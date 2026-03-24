@@ -5,17 +5,17 @@
 namespace MoleMole { class UIBangbooModGaragePageController; }
 namespace MoleMole { class UserLocalDataItem; }
 
-#define MOLEMOLE_UIBANGBOOMODGARAGEPAGECONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB919410)
+#define MOLEMOLE_UIBANGBOOMODGARAGEPAGECONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC39B20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBangbooModGaragePageController___c__DisplayClass16_0_TypeDefinitionIndex = 76274;
+	inline static constexpr unsigned int UIBangbooModGaragePageController___c__DisplayClass16_0_TypeDefinitionIndex = 51474;
 
 	class UIBangbooModGaragePageController___c__DisplayClass16_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIBangbooModGaragePageController* __4__this; // 0x10
-		::MoleMole::UserLocalDataItem* localData; // 0x18
+		::MoleMole::UserLocalDataItem* localData; // 0x10
+		::MoleMole::UIBangbooModGaragePageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

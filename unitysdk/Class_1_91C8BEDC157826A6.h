@@ -7,18 +7,18 @@ class Class_1_BB6D76999072F2AC;
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_91C8BEDC157826A6_METHOD_1_89D1F247B9D324EE_OFFSET UNITYSDK_OFFSET(0x7610650)
-#define CLASS_1_91C8BEDC157826A6_METHOD_1_CFE5D2FE9AFDE05F_OFFSET UNITYSDK_OFFSET(0x7610330)
-#define CLASS_1_91C8BEDC157826A6_METHOD_1_E14A7FCF78650419_OFFSET UNITYSDK_OFFSET(0x76106F0)
-#define CLASS_1_91C8BEDC157826A6__CTOR_OFFSET UNITYSDK_OFFSET(0x76102B0)
+#define CLASS_1_91C8BEDC157826A6_METHOD_1_89D1F247B9D324EE_OFFSET UNITYSDK_OFFSET(0xBCEA170)
+#define CLASS_1_91C8BEDC157826A6_METHOD_1_CFE5D2FE9AFDE05F_OFFSET UNITYSDK_OFFSET(0xBCE9E50)
+#define CLASS_1_91C8BEDC157826A6_METHOD_1_E14A7FCF78650419_OFFSET UNITYSDK_OFFSET(0xBCEA210)
+#define CLASS_1_91C8BEDC157826A6__CTOR_OFFSET UNITYSDK_OFFSET(0xBCE9DD0)
 
-inline static constexpr unsigned int Class_1_91C8BEDC157826A6_TypeDefinitionIndex = 42588;
+inline static constexpr unsigned int Class_1_91C8BEDC157826A6_TypeDefinitionIndex = 63584;
 
 class Class_1_91C8BEDC157826A6 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::Class_1_BB6D76999072F2AC*>* Field_1_1; // 0x10
-	::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowCell>* Field_1_0; // 0x18
+	::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowCell>* Field_1_0; // 0x10
+	::System::Collections::Generic::List_1<::Class_1_BB6D76999072F2AC*>* Field_1_1; // 0x18
 	::System::Action* Field_1_2; // 0x20
 
 	::System::Void _ctor()

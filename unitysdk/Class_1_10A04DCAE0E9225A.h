@@ -6,20 +6,20 @@ namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Reflection { class Assembly; }
 
-#define CLASS_1_10A04DCAE0E9225A_METHOD_1_50F0C5297A76EECB_OFFSET UNITYSDK_OFFSET(0xD748C80)
-#define CLASS_1_10A04DCAE0E9225A_METHOD_1_58FEF6897BE13DD2_OFFSET UNITYSDK_OFFSET(0xD748DE0)
-#define CLASS_1_10A04DCAE0E9225A_METHOD_1_86026B47A3027B67_OFFSET UNITYSDK_OFFSET(0xD7493B0)
-#define CLASS_1_10A04DCAE0E9225A__CCTOR_OFFSET UNITYSDK_OFFSET(0xD748BE0)
-#define CLASS_1_10A04DCAE0E9225A__CTOR_OFFSET UNITYSDK_OFFSET(0xD70F740)
+#define CLASS_1_10A04DCAE0E9225A_METHOD_1_50F0C5297A76EECB_OFFSET UNITYSDK_OFFSET(0x8E8DF10)
+#define CLASS_1_10A04DCAE0E9225A_METHOD_1_58FEF6897BE13DD2_OFFSET UNITYSDK_OFFSET(0x8E8E070)
+#define CLASS_1_10A04DCAE0E9225A_METHOD_1_86026B47A3027B67_OFFSET UNITYSDK_OFFSET(0x8E8E630)
+#define CLASS_1_10A04DCAE0E9225A__CCTOR_OFFSET UNITYSDK_OFFSET(0x8E8DE70)
+#define CLASS_1_10A04DCAE0E9225A__CTOR_OFFSET UNITYSDK_OFFSET(0x8E8DE60)
 
-inline static constexpr unsigned int Class_1_10A04DCAE0E9225A_TypeDefinitionIndex = 41284;
+inline static constexpr unsigned int Class_1_10A04DCAE0E9225A_TypeDefinitionIndex = 38755;
 
 class Class_1_10A04DCAE0E9225A : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::UInt16>** StaticGet_Field_1_2()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_10A04DCAE0E9225A_TypeDefinitionIndex)->GetStaticField(0x39CB0);
+		return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::UInt16>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_10A04DCAE0E9225A_TypeDefinitionIndex)->GetStaticField(0x388B0);
 	}
 	::System::Type* Field_1_0; // 0x10
 	::System::UInt16 Field_1_1; // 0x18

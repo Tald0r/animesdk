@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardCollectWidgetController_FilterGroupIndex_TypeDefinitionIndex = 72094;
+	inline static constexpr unsigned int UIHollowCardCollectWidgetController_FilterGroupIndex_TypeDefinitionIndex = 75062;
 
 	enum class UIHollowCardCollectWidgetController_FilterGroupIndex : ::System::Int32
 	{

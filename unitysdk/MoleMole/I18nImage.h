@@ -8,7 +8,7 @@ namespace UnityEngine { class Texture2D; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int I18nImage_TypeDefinitionIndex = 42960;
+	inline static constexpr unsigned int I18nImage_TypeDefinitionIndex = 57857;
 
 	struct alignas(8) I18nImage
 	{

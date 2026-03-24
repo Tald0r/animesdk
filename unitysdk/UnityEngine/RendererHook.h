@@ -9,34 +9,34 @@ namespace UnityEngine { class ComputeBuffer; }
 namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class Renderer; }
 
-#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETENABLED_OFFSET UNITYSDK_OFFSET(0x19F40640)
-#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETNAPCB_OFFSET UNITYSDK_OFFSET(0x19F406B0)
-#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETPROPERTYBLOCKMATERIALINDEX_OFFSET UNITYSDK_OFFSET(0x19F407A0)
-#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETPROPERTYBLOCK_OFFSET UNITYSDK_OFFSET(0x19F40730)
-#define UNITYENGINE_RENDERERHOOK__CTOR_OFFSET UNITYSDK_OFFSET(0x19F40820)
+#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETENABLED_OFFSET UNITYSDK_OFFSET(0x1A538550)
+#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETNAPCB_OFFSET UNITYSDK_OFFSET(0x1A5385C0)
+#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETPROPERTYBLOCKMATERIALINDEX_OFFSET UNITYSDK_OFFSET(0x1A5386B0)
+#define UNITYENGINE_RENDERERHOOK_INVOKE_ONHOOKRENDERERSETPROPERTYBLOCK_OFFSET UNITYSDK_OFFSET(0x1A538640)
+#define UNITYENGINE_RENDERERHOOK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A538730)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RendererHook_TypeDefinitionIndex = 5345;
+	inline static constexpr unsigned int RendererHook_TypeDefinitionIndex = 5346;
 
 	class RendererHook : public ::System::Object
 	{
 	public:
-		static ::System::Action_2<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*>** StaticGet_onHookSetPropertyBlock()
-		{
-			return (::System::Action_2<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5620);
-		}
-		static ::System::Action_4<::UnityEngine::Renderer*, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::System::Int32>** StaticGet_onHookSetNapCB()
-		{
-			return (::System::Action_4<::UnityEngine::Renderer*, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5628);
-		}
 		static ::System::Action_3<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*, ::System::Int32>** StaticGet_onHookSetPropertyBlockMaterialIndex()
 		{
-			return (::System::Action_3<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5630);
+			return (::System::Action_3<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5650);
+		}
+		static ::System::Action_2<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*>** StaticGet_onHookSetPropertyBlock()
+		{
+			return (::System::Action_2<::UnityEngine::Renderer*, ::UnityEngine::MaterialPropertyBlock*>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5658);
 		}
 		static ::System::Action_2<::UnityEngine::Renderer*, ::System::Boolean>** StaticGet_onHookSetEnabled()
 		{
-			return (::System::Action_2<::UnityEngine::Renderer*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5638);
+			return (::System::Action_2<::UnityEngine::Renderer*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5660);
+		}
+		static ::System::Action_4<::UnityEngine::Renderer*, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::System::Int32>** StaticGet_onHookSetNapCB()
+		{
+			return (::System::Action_4<::UnityEngine::Renderer*, ::UnityEngine::ComputeBuffer*, ::System::Int32, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(RendererHook_TypeDefinitionIndex)->GetStaticField(0x5668);
 		}
 
 		::System::Void _ctor()

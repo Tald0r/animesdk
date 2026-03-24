@@ -11,32 +11,32 @@ namespace MoleMole { class UIDoubleTipsInfoWidgetController; }
 namespace MoleMole { class UIWishlistTargetAvatarPopupWidgetController; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_95EF0285C16C5E7C;
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
+template <typename T> class Class_3_CA832D813F452AD6;
 
-#define CLASS_2_B59A5BC3EDB05A2C_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x74BB7F0)
-#define CLASS_2_B59A5BC3EDB05A2C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x74BBCB0)
-#define CLASS_2_B59A5BC3EDB05A2C_METHOD_2_DE52BD42C4B0B772_OFFSET UNITYSDK_OFFSET(0x74BBB20)
-#define CLASS_2_B59A5BC3EDB05A2C__CTOR_OFFSET UNITYSDK_OFFSET(0x74BBCA0)
+#define CLASS_2_B59A5BC3EDB05A2C_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x7540D60)
+#define CLASS_2_B59A5BC3EDB05A2C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7541220)
+#define CLASS_2_B59A5BC3EDB05A2C_METHOD_2_DE52BD42C4B0B772_OFFSET UNITYSDK_OFFSET(0x7541090)
+#define CLASS_2_B59A5BC3EDB05A2C__CTOR_OFFSET UNITYSDK_OFFSET(0x7541210)
 
-inline static constexpr unsigned int Class_2_B59A5BC3EDB05A2C_TypeDefinitionIndex = 72225;
+inline static constexpr unsigned int Class_2_B59A5BC3EDB05A2C_TypeDefinitionIndex = 49028;
 
 class Class_2_B59A5BC3EDB05A2C : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIDoubleTipsInfoWidgetController*>* Field_2_11; // 0x18
-	::UnityEngine::Transform* Field_2_3; // 0x20
-	::UnityEngine::Transform* Field_2_4; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIWishlistTargetAvatarPopupWidgetController*>* Field_2_10; // 0x30
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x38
+	::Class_3_647A206587033F4E<::MoleMole::UIWishlistTargetAvatarPopupWidgetController*>* Field_2_10; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIDoubleTipsInfoWidgetController*>* Field_2_11; // 0x28
+	::Class_3_647A206587033F4E<::MoleMole::UIDoubleTipsInfoWidgetController*>* Field_2_12; // 0x30
+	::Class_3_CA832D813F452AD6<::MoleMole::UIDailyChallengeCardRowWidgetController*>* Field_2_6; // 0x38
 	::UnityEngine::Transform* Field_2_1; // 0x40
-	::UnityEngine::Transform* Field_2_2; // 0x48
-	::MoleMole::NotificationBadge* Field_2_7; // 0x50
-	::Class_3_95EF0285C16C5E7C<::MoleMole::UIDailyChallengeCardRowWidgetController*>* Field_2_6; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x60
-	::Class_2_60DDD9C206686F44* Field_2_9; // 0x68
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIDoubleTipsInfoWidgetController*>* Field_2_12; // 0x70
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x78
+	::UnityEngine::Transform* Field_2_4; // 0x48
+	::Class_2_60DDD9C206686F44* Field_2_8; // 0x50
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x58
+	::Class_2_60DDD9C206686F44* Field_2_9; // 0x60
+	::UnityEngine::Transform* Field_2_3; // 0x68
+	::MoleMole::NotificationBadge* Field_2_7; // 0x70
+	::UnityEngine::Transform* Field_2_2; // 0x78
 
 	::System::Void _ctor()
 	{

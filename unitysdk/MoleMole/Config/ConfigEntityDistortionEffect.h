@@ -7,30 +7,30 @@
 namespace MoleMole::Config { class ScreenEffectBool; }
 namespace MoleMole::Config { class ScreenEffectFloat; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETDOWNSCALEFACTOR_OFFSET UNITYSDK_OFFSET(0xC345B10)
-#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETFORCEACTIVE_OFFSET UNITYSDK_OFFSET(0xC345D90)
-#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0xC345BA0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETRGBSHIFT_OFFSET UNITYSDK_OFFSET(0xC345C40)
-#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETSEPARATERGBINTENSITY_OFFSET UNITYSDK_OFFSET(0xC345CF0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xC345E30)
+#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETDOWNSCALEFACTOR_OFFSET UNITYSDK_OFFSET(0xEC3F2A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETFORCEACTIVE_OFFSET UNITYSDK_OFFSET(0xEC3F520)
+#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0xEC3F330)
+#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETRGBSHIFT_OFFSET UNITYSDK_OFFSET(0xEC3F3D0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT_GETSEPARATERGBINTENSITY_OFFSET UNITYSDK_OFFSET(0xEC3F480)
+#define MOLEMOLE_CONFIG_CONFIGENTITYDISTORTIONEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xEC3F5C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityDistortionEffect_TypeDefinitionIndex = 58644;
+	inline static constexpr unsigned int ConfigEntityDistortionEffect_TypeDefinitionIndex = 51218;
 
 	class ConfigEntityDistortionEffect : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{
 	public:
-		::MoleMole::Config::ScreenEffectFloat* intensity; // 0x40
-		::MoleMole::Config::ScreenEffectBool* forceActive; // 0x48
-		::MoleMole::Config::ScreenEffectFloat* separateRGBIntensity; // 0x50
-		::UnityEngine::Vector3 rgbShift; // 0x58
-		::System::Int32 downScaleFactor; // 0x64
-		::MoleMole::Config::ScreenEffectFieldHandleType downScaleFactorHandleType; // 0x68
+		::MoleMole::Config::ScreenEffectFloat* separateRGBIntensity; // 0x40
+		::MoleMole::Config::ScreenEffectFloat* intensity; // 0x48
+		::MoleMole::Config::ScreenEffectBool* forceActive; // 0x50
+		::MoleMole::Config::ScreenEffectFieldHandleType forceActiveHandleType; // 0x58
+		::MoleMole::Config::ScreenEffectFieldHandleType intensityHandleType; // 0x5C
+		::UnityEngine::Vector3 rgbShift; // 0x60
 		::MoleMole::Config::ScreenEffectFieldHandleType rgbShiftHandleType; // 0x6C
-		::MoleMole::Config::ScreenEffectFieldHandleType separateRGBIntensityHandleType; // 0x70
-		::MoleMole::Config::ScreenEffectFieldHandleType intensityHandleType; // 0x74
-		::MoleMole::Config::ScreenEffectFieldHandleType forceActiveHandleType; // 0x78
+		::System::Int32 downScaleFactor; // 0x70
+		::MoleMole::Config::ScreenEffectFieldHandleType downScaleFactorHandleType; // 0x74
+		::MoleMole::Config::ScreenEffectFieldHandleType separateRGBIntensityHandleType; // 0x78
 
 		::System::Void _ctor()
 		{

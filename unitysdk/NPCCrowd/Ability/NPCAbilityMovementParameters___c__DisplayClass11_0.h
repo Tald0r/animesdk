@@ -5,12 +5,12 @@
 namespace NPCCrowd::Ability { class NPCAbilityMovementMoveStyleParameters; }
 namespace System { class String; }
 
-#define NPCCROWD_ABILITY_NPCABILITYMOVEMENTPARAMETERS___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6A01450)
-#define NPCCROWD_ABILITY_NPCABILITYMOVEMENTPARAMETERS___C__DISPLAYCLASS11_0__RANDDESIREDMOVESPEED_B__0_OFFSET UNITYSDK_OFFSET(0x6A01460)
+#define NPCCROWD_ABILITY_NPCABILITYMOVEMENTPARAMETERS___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x63FD430)
+#define NPCCROWD_ABILITY_NPCABILITYMOVEMENTPARAMETERS___C__DISPLAYCLASS11_0__RANDDESIREDMOVESPEED_B__0_OFFSET UNITYSDK_OFFSET(0x63FD440)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int NPCAbilityMovementParameters___c__DisplayClass11_0_TypeDefinitionIndex = 36954;
+	inline static constexpr unsigned int NPCAbilityMovementParameters___c__DisplayClass11_0_TypeDefinitionIndex = 65833;
 
 	class NPCAbilityMovementParameters___c__DisplayClass11_0 : public ::System::Object
 	{

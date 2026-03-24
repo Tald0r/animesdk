@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_D57A57246A9544D0.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_653_TypeDefinitionIndex = 67460;
+class Class_1_EEA0111A28582B57;
+namespace MoleMole { class UITabBtn05RowWidgetController; }
 
-template <typename TPose, typename TIntrinsics>
+inline static constexpr unsigned int Class_0_16E4307DCC419505_653_TypeDefinitionIndex = 70530;
+
 class Class_0_16E4307DCC419505_653
 {
 public:

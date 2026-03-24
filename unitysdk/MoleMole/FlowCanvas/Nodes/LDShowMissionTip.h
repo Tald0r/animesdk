@@ -3,12 +3,12 @@
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_3.h"
 #include "unitysdk/MoleMole/FlowCanvas/Nodes/InLevelMissionTipSourceType.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWMISSIONTIP_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2C80D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWMISSIONTIP__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C8140)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWMISSIONTIP_INVOKE_OFFSET UNITYSDK_OFFSET(0xB8A3B90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWMISSIONTIP__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A3C00)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowMissionTip_TypeDefinitionIndex = 76080;
+	inline static constexpr unsigned int LDShowMissionTip_TypeDefinitionIndex = 60804;
 
 	class LDShowMissionTip : public ::FlowCanvas::Nodes::CallableActionNode_3<::System::Boolean, ::MoleMole::FlowCanvas::Nodes::InLevelMissionTipSourceType, ::System::Int32>
 	{

@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelLinkZoneInfoPanelChildWindowController_LinkZoneEnergyOperateDataModify_EType_TypeDefinitionIndex = 59971;
+	inline static constexpr unsigned int UIInLevelLinkZoneInfoPanelChildWindowController_LinkZoneEnergyOperateDataModify_EType_TypeDefinitionIndex = 64908;
 
 	enum class UIInLevelLinkZoneInfoPanelChildWindowController_LinkZoneEnergyOperateDataModify_EType : ::System::Int32
 	{
-		RemoveFirst = 1,
 		Add = 0,
+		RemoveFirst = 1,
 	};
 }

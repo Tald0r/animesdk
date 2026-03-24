@@ -4,10 +4,10 @@
 
 namespace UnityEngine { class Material; }
 
-#define WEAPONTRANSMATMODIFIER_SETUPWEAPONTRANSPARENTMATERIAL_OFFSET UNITYSDK_OFFSET(0x187D4180)
-#define WEAPONTRANSMATMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x187D4460)
+#define WEAPONTRANSMATMODIFIER_SETUPWEAPONTRANSPARENTMATERIAL_OFFSET UNITYSDK_OFFSET(0x18D32FD0)
+#define WEAPONTRANSMATMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x18D332B0)
 
-inline static constexpr unsigned int WeaponTransMatModifier_TypeDefinitionIndex = 28060;
+inline static constexpr unsigned int WeaponTransMatModifier_TypeDefinitionIndex = 29000;
 
 class WeaponTransMatModifier : public ::UnityEngine::MonoBehaviour
 {

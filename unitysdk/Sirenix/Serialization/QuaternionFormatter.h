@@ -7,21 +7,21 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1AEBB090)
-#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1AEBB1C0)
-#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AEBB350)
-#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEBB310)
+#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B4CF160)
+#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B4CF290)
+#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B4CF420)
+#define SIRENIX_SERIALIZATION_QUATERNIONFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B4CF3E0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int QuaternionFormatter_TypeDefinitionIndex = 7450;
+	inline static constexpr unsigned int QuaternionFormatter_TypeDefinitionIndex = 7455;
 
 	class QuaternionFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::UnityEngine::Quaternion>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_FloatSerializer()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(QuaternionFormatter_TypeDefinitionIndex)->GetStaticField(0x64C0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(QuaternionFormatter_TypeDefinitionIndex)->GetStaticField(0x6500);
 		}
 
 		::System::Void _ctor()

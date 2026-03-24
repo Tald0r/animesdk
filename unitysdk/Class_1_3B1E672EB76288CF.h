@@ -4,10 +4,10 @@
 
 namespace MoleMole { class ComicScreenInfo; }
 
-#define CLASS_1_3B1E672EB76288CF_COMPARE_OFFSET UNITYSDK_OFFSET(0xB7E9CC0)
-#define CLASS_1_3B1E672EB76288CF__CTOR_OFFSET UNITYSDK_OFFSET(0xB7E9D60)
+#define CLASS_1_3B1E672EB76288CF_COMPARE_OFFSET UNITYSDK_OFFSET(0xB556230)
+#define CLASS_1_3B1E672EB76288CF__CTOR_OFFSET UNITYSDK_OFFSET(0xB5562D0)
 
-inline static constexpr unsigned int Class_1_3B1E672EB76288CF_TypeDefinitionIndex = 51687;
+inline static constexpr unsigned int Class_1_3B1E672EB76288CF_TypeDefinitionIndex = 62325;
 
 class Class_1_3B1E672EB76288CF : public ::System::Object
 {

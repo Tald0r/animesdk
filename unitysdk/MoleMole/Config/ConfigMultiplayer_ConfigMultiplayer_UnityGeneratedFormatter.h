@@ -11,26 +11,26 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x1399D100)
-#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x1399D110)
-#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1399D540)
-#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1399D810)
-#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1399D7D0)
+#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x918F490)
+#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x918F4A0)
+#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x918F8D0)
+#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x918FBA0)
+#define MOLEMOLE_CONFIG_CONFIGMULTIPLAYER_CONFIGMULTIPLAYER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x918FB60)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter_TypeDefinitionIndex = 53478;
+	inline static constexpr unsigned int ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter_TypeDefinitionIndex = 72203;
 
 	class ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigMultiplayer*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigMultiplayer_GameplayTagSetting*>*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigMultiplayer_GameplayTagSetting*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A2C0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Single>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A2C8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D030);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigMultiplayer_GameplayTagSetting*>*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigMultiplayer_GameplayTagSetting*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMultiplayer_ConfigMultiplayer_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D038);
 		}
 
 		::System::Void _ctor()

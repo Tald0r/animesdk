@@ -8,13 +8,13 @@ namespace MoleMole::Battle { class Entity; }
 namespace MoleMole::FlowCanvas::Nodes { class LDShowTargetEntityUINode_GuideEntityTargetCameraViewChecker; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xC21B2B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC21B650)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE__INVOKE_B__2_0_OFFSET UNITYSDK_OFFSET(0xC21B6A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB831A10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB831DB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSHOWTARGETENTITYUINODE__INVOKE_B__2_0_OFFSET UNITYSDK_OFFSET(0xB831E00)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowTargetEntityUINode_TypeDefinitionIndex = 59655;
+	inline static constexpr unsigned int LDShowTargetEntityUINode_TypeDefinitionIndex = 79736;
 
 	class LDShowTargetEntityUINode : public ::FlowCanvas::Nodes::CallableFunctionNode_5<::System::UInt32, ::MoleMole::Config::CampType, ::MoleMole::Battle::Entity*, ::System::String*, ::System::Boolean>
 	{

@@ -5,12 +5,12 @@
 
 class Class_3_5A46B9360F369125;
 
-#define MOLEMOLE_CHESSSTATEMACHINE_GRIDVISIBLEACTION_RUN_OFFSET UNITYSDK_OFFSET(0x6FBE810)
-#define MOLEMOLE_CHESSSTATEMACHINE_GRIDVISIBLEACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x6FBECE0)
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDVISIBLEACTION_RUN_OFFSET UNITYSDK_OFFSET(0x916CDB0)
+#define MOLEMOLE_CHESSSTATEMACHINE_GRIDVISIBLEACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x916D280)
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int GridVisibleAction_TypeDefinitionIndex = 72522;
+	inline static constexpr unsigned int GridVisibleAction_TypeDefinitionIndex = 55643;
 
 	class GridVisibleAction : public ::MoleMole::ChessStateMachine::StateMachineGeometryEntityAction_1<::MoleMole::ChessStateMachine::GridVisibleAction_RuntimeData>
 	{

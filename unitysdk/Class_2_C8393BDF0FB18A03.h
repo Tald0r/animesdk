@@ -12,27 +12,27 @@ namespace MoleMole { class UIMainCitySwitchRoleSwitchPanelWidgetController; }
 namespace MoleMole { class UIMainCitySwitchRoleTimePanelWidgetController; }
 namespace MoleMole { class UIPlayerSkinSwitchWidgetController; }
 namespace UnityEngine { class Transform; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_C8393BDF0FB18A03_METHOD_2_44B69BBA3A965CE1_OFFSET UNITYSDK_OFFSET(0x75CA170)
-#define CLASS_2_C8393BDF0FB18A03_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x75CA490)
-#define CLASS_2_C8393BDF0FB18A03_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x75CA5B0)
-#define CLASS_2_C8393BDF0FB18A03__CTOR_OFFSET UNITYSDK_OFFSET(0x75CA5A0)
+#define CLASS_2_C8393BDF0FB18A03_METHOD_2_44B69BBA3A965CE1_OFFSET UNITYSDK_OFFSET(0x8ADCE00)
+#define CLASS_2_C8393BDF0FB18A03_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x8ADD120)
+#define CLASS_2_C8393BDF0FB18A03_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8ADD240)
+#define CLASS_2_C8393BDF0FB18A03__CTOR_OFFSET UNITYSDK_OFFSET(0x8ADD230)
 
-inline static constexpr unsigned int Class_2_C8393BDF0FB18A03_TypeDefinitionIndex = 68089;
+inline static constexpr unsigned int Class_2_C8393BDF0FB18A03_TypeDefinitionIndex = 73887;
 
 class Class_2_C8393BDF0FB18A03 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIMainCitySwitchRoleSwitchPanelWidgetController*>* Field_2_2; // 0x18
-	::Class_2_9E3E3CDA608A4F58* Field_2_4; // 0x20
-	::Class_2_9E3E3CDA608A4F58* Field_2_5; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIPlayerSkinSwitchWidgetController*>* Field_2_6; // 0x30
+	::Class_3_647A206587033F4E<::MoleMole::UIPlayerSkinSwitchWidgetController*>* Field_2_6; // 0x18
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x20
+	::UnityEngine::Transform* Field_2_8; // 0x28
+	::Class_3_647A206587033F4E<::MoleMole::UIMainCitySwitchRoleSwitchPanelWidgetController*>* Field_2_2; // 0x30
 	::Class_2_1F76884FC39FD584* Field_2_0; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x40
-	::UnityEngine::Transform* Field_2_8; // 0x48
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIMainCitySwitchRoleTimePanelWidgetController*>* Field_2_1; // 0x50
-	::MoleMole::NotificationBadgeEx* Field_2_7; // 0x58
+	::Class_2_9E3E3CDA608A4F58* Field_2_5; // 0x40
+	::Class_2_9E3E3CDA608A4F58* Field_2_4; // 0x48
+	::MoleMole::NotificationBadgeEx* Field_2_7; // 0x50
+	::Class_3_647A206587033F4E<::MoleMole::UIMainCitySwitchRoleTimePanelWidgetController*>* Field_2_1; // 0x58
 
 	::System::Void _ctor()
 	{

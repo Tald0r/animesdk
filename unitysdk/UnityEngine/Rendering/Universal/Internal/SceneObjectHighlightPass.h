@@ -10,20 +10,20 @@ namespace System { class String; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering::Universal::Internal { class SceneToFindObjectInfo; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTHIGHLIGHTPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1795C470)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTHIGHLIGHTPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1795CA50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTHIGHLIGHTPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1795C3E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTHIGHLIGHTPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x177841A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTHIGHLIGHTPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x17784780)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_SCENEOBJECTHIGHLIGHTPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x17784110)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int SceneObjectHighlightPass_TypeDefinitionIndex = 29057;
+	inline static constexpr unsigned int SceneObjectHighlightPass_TypeDefinitionIndex = 30010;
 
 	class SceneObjectHighlightPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::UnityEngine::Rendering::Universal::Internal::SceneToFindObjectInfo** StaticGet_SceneToFindObjectInfoCache()
 		{
-			return (::UnityEngine::Rendering::Universal::Internal::SceneToFindObjectInfo**)Il2CppClass::FromTypeDefinitionIndex(SceneObjectHighlightPass_TypeDefinitionIndex)->GetStaticField(0x20E50);
+			return (::UnityEngine::Rendering::Universal::Internal::SceneToFindObjectInfo**)Il2CppClass::FromTypeDefinitionIndex(SceneObjectHighlightPass_TypeDefinitionIndex)->GetStaticField(0x224C0);
 		}
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xA8
 		::System::String* m_ProfilerTag; // 0xB0

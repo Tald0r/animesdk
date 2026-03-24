@@ -1,14 +1,13 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/UnityEngine/Color.h"
+#include "unitysdk/Enum_3_3A1DCD22526CC6D0.h"
 
-namespace System { class String; }
-namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
-namespace System { template <typename T1, typename T2> class Func_2; }
+namespace System::Collections::Generic { template <typename T> class IList_1; }
+namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC41950C_23_TypeDefinitionIndex = 78570;
+inline static constexpr unsigned int Class_0_16E4307DCC41950C_23_TypeDefinitionIndex = 64548;
 
-template <typename T, typename TFilter>
+template <typename TItemType>
 class Class_0_16E4307DCC41950C_23
 {
 public:

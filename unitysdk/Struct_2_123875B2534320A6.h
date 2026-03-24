@@ -3,9 +3,9 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Bounds.h"
 
-#define STRUCT_2_123875B2534320A6_EQUALS_OFFSET UNITYSDK_OFFSET(0x37ECF0)
+#define STRUCT_2_123875B2534320A6_EQUALS_OFFSET UNITYSDK_OFFSET(0x5205B0)
 
-inline static constexpr unsigned int Struct_2_123875B2534320A6_TypeDefinitionIndex = 60776;
+inline static constexpr unsigned int Struct_2_123875B2534320A6_TypeDefinitionIndex = 50700;
 
 struct alignas(4) Struct_2_123875B2534320A6
 {

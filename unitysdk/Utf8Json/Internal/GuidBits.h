@@ -3,26 +3,26 @@
 #include "unitysdk/System/Guid.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UTF8JSON_INTERNAL_GUIDBITS_PARSE_OFFSET UNITYSDK_OFFSET(0x1ABFFD20)
-#define UTF8JSON_INTERNAL_GUIDBITS_SWITCHPARSE_OFFSET UNITYSDK_OFFSET(0x1ABFFEB0)
-#define UTF8JSON_INTERNAL_GUIDBITS_WRITE_OFFSET UNITYSDK_OFFSET(0x95DE40)
-#define UTF8JSON_INTERNAL_GUIDBITS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AC01260)
-#define UTF8JSON_INTERNAL_GUIDBITS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x95DE30)
-#define UTF8JSON_INTERNAL_GUIDBITS__CTOR_OFFSET UNITYSDK_OFFSET(0x87C230)
+#define UTF8JSON_INTERNAL_GUIDBITS_PARSE_OFFSET UNITYSDK_OFFSET(0x1B211040)
+#define UTF8JSON_INTERNAL_GUIDBITS_SWITCHPARSE_OFFSET UNITYSDK_OFFSET(0x1B2111D0)
+#define UTF8JSON_INTERNAL_GUIDBITS_WRITE_OFFSET UNITYSDK_OFFSET(0x98F960)
+#define UTF8JSON_INTERNAL_GUIDBITS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B212580)
+#define UTF8JSON_INTERNAL_GUIDBITS__CTOR_1_OFFSET UNITYSDK_OFFSET(0x98F950)
+#define UTF8JSON_INTERNAL_GUIDBITS__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF160)
 
 namespace Utf8Json::Internal
 {
-	inline static constexpr unsigned int GuidBits_TypeDefinitionIndex = 81894;
+	inline static constexpr unsigned int GuidBits_TypeDefinitionIndex = 83935;
 
 	struct alignas(1) GuidBits
 	{
-		static ::Il2CppArray<::System::Byte>** StaticGet_byteToHexStringLow()
-		{
-			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(GuidBits_TypeDefinitionIndex)->GetStaticField(0x47580);
-		}
 		static ::Il2CppArray<::System::Byte>** StaticGet_byteToHexStringHigh()
 		{
-			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(GuidBits_TypeDefinitionIndex)->GetStaticField(0x47588);
+			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(GuidBits_TypeDefinitionIndex)->GetStaticField(0x48F90);
+		}
+		static ::Il2CppArray<::System::Byte>** StaticGet_byteToHexStringLow()
+		{
+			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(GuidBits_TypeDefinitionIndex)->GetStaticField(0x48F98);
 		}
 		::System::Guid Value; // 0x10
 		::System::Byte Byte0; // 0x10

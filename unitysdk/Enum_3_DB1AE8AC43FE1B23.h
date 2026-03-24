@@ -1,18 +1,18 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Enum_3_DB1AE8AC43FE1B23_TypeDefinitionIndex = 49635;
+inline static constexpr unsigned int Enum_3_DB1AE8AC43FE1B23_TypeDefinitionIndex = 52036;
 
 enum class Enum_3_DB1AE8AC43FE1B23 : ::System::Int32
 {
-	EntityTimeIgnoreWorld = 5,
-	WitchIgnoreWorld = 2,
-	EntityTimeIgnoreWorldAndWitch = 7,
-	WorldTimeUnscaled = 3,
-	WorldTimeIgnoreWitch = 1,
-	Invalid = 8,
 	WorldTime = 0,
-	MaxCount = 8,
+	WitchIgnoreWorld = 2,
+	WorldTimeUnscaled = 3,
 	EntityTimeIgnoreWitch = 6,
+	EntityTimeIgnoreWorld = 5,
+	Invalid = 8,
 	EntityTime = 4,
+	MaxCount = 8,
+	EntityTimeIgnoreWorldAndWitch = 7,
+	WorldTimeIgnoreWitch = 1,
 };

@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_620;
+class Class_2_208CC9941471731A_213;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__BUILDDESCRIPTION_B__30_1_OFFSET UNITYSDK_OFFSET(0xA1A43E0)
-#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA1A4390)
-#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA1A43D0)
+#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__BUILDDESCRIPTION_B__30_1_OFFSET UNITYSDK_OFFSET(0x9D36800)
+#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9D367B0)
+#define MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9D367F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowRelicOptionItemWidgetController___c_TypeDefinitionIndex = 58906;
+	inline static constexpr unsigned int UIHollowRelicOptionItemWidgetController___c_TypeDefinitionIndex = 76451;
 
 	class UIHollowRelicOptionItemWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIHollowRelicOptionItemWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHollowRelicOptionItemWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRelicOptionItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x38CA0);
+			return (::MoleMole::UIHollowRelicOptionItemWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRelicOptionItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3B8C0);
 		}
-		static ::System::Comparison_1<::Class_2_208CC9941471731A_620*>** StaticGet___9__30_1()
+		static ::System::Comparison_1<::Class_2_208CC9941471731A_213*>** StaticGet___9__30_1()
 		{
-			return (::System::Comparison_1<::Class_2_208CC9941471731A_620*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRelicOptionItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x38CA8);
+			return (::System::Comparison_1<::Class_2_208CC9941471731A_213*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRelicOptionItemWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3B8C8);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +35,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _BuildDescription_b__30_1(::Class_2_208CC9941471731A_620* l, ::Class_2_208CC9941471731A_620* r)
+		::System::Int32 _BuildDescription_b__30_1(::Class_2_208CC9941471731A_213* l, ::Class_2_208CC9941471731A_213* r)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_620*, ::Class_2_208CC9941471731A_620*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__BUILDDESCRIPTION_B__30_1_OFFSET))(this, l, r);
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_213*, ::Class_2_208CC9941471731A_213*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWRELICOPTIONITEMWIDGETCONTROLLER___C__BUILDDESCRIPTION_B__30_1_OFFSET))(this, l, r);
 		}
 	};
 }

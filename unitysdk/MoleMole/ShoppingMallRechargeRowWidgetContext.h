@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_SHOPPINGMALLRECHARGEROWWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB300620)
+#define MOLEMOLE_SHOPPINGMALLRECHARGEROWWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB874D70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ShoppingMallRechargeRowWidgetContext_TypeDefinitionIndex = 40735;
+	inline static constexpr unsigned int ShoppingMallRechargeRowWidgetContext_TypeDefinitionIndex = 78186;
 
 	class ShoppingMallRechargeRowWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

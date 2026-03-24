@@ -6,11 +6,11 @@
 class Class_1_57F7F2BF8C55D6B6;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIPHOTOWALLCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x68D3AC0)
+#define MOLEMOLE_UIPHOTOWALLCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x866DC40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoWallContext_TypeDefinitionIndex = 49258;
+	inline static constexpr unsigned int UIPhotoWallContext_TypeDefinitionIndex = 62411;
 
 	class UIPhotoWallContext : public ::MoleMole::UIControllerContextBase
 	{

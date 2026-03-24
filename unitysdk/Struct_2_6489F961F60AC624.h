@@ -5,9 +5,9 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeList_1.h"
 
-#define STRUCT_2_6489F961F60AC624_EXECUTE_OFFSET UNITYSDK_OFFSET(0x32CA10)
+#define STRUCT_2_6489F961F60AC624_EXECUTE_OFFSET UNITYSDK_OFFSET(0x308E50)
 
-inline static constexpr unsigned int Struct_2_6489F961F60AC624_TypeDefinitionIndex = 68358;
+inline static constexpr unsigned int Struct_2_6489F961F60AC624_TypeDefinitionIndex = 72938;
 
 struct alignas(8) Struct_2_6489F961F60AC624
 {

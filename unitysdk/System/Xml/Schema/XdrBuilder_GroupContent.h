@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_XML_SCHEMA_XDRBUILDER_GROUPCONTENT_COPY_1_OFFSET UNITYSDK_OFFSET(0x199AC670)
-#define SYSTEM_XML_SCHEMA_XDRBUILDER_GROUPCONTENT_COPY_OFFSET UNITYSDK_OFFSET(0x199B2CB0)
-#define SYSTEM_XML_SCHEMA_XDRBUILDER_GROUPCONTENT__CTOR_OFFSET UNITYSDK_OFFSET(0x199AAD10)
+#define SYSTEM_XML_SCHEMA_XDRBUILDER_GROUPCONTENT_COPY_1_OFFSET UNITYSDK_OFFSET(0x19FA33F0)
+#define SYSTEM_XML_SCHEMA_XDRBUILDER_GROUPCONTENT_COPY_OFFSET UNITYSDK_OFFSET(0x19FA9B00)
+#define SYSTEM_XML_SCHEMA_XDRBUILDER_GROUPCONTENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19FA1AA0)
 
 namespace System::Xml::Schema
 {
@@ -13,10 +13,10 @@ namespace System::Xml::Schema
 	class XdrBuilder_GroupContent : public ::System::Object
 	{
 	public:
-		::System::UInt32 _MaxVal; // 0x10
-		::System::Int32 _Order; // 0x14
-		::System::Boolean _HasMinAttr; // 0x18
-		::System::Boolean _HasMaxAttr; // 0x19
+		::System::Int32 _Order; // 0x10
+		::System::UInt32 _MaxVal; // 0x14
+		::System::Boolean _HasMaxAttr; // 0x18
+		::System::Boolean _HasMinAttr; // 0x19
 		::System::UInt32 _MinVal; // 0x1C
 
 		::System::Void _ctor()

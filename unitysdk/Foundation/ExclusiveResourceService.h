@@ -9,13 +9,13 @@ namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class IComparer_1; }
 namespace System::Collections::Generic { template <typename T> class IEqualityComparer_1; }
 
-#define FOUNDATION_EXCLUSIVERESOURCESERVICE_FOUNDATION_IGAMESERVICE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1A792FE0)
-#define FOUNDATION_EXCLUSIVERESOURCESERVICE_FOUNDATION_IGAMESERVICE_ONREADYTODESTROY_OFFSET UNITYSDK_OFFSET(0x1A792FF0)
-#define FOUNDATION_EXCLUSIVERESOURCESERVICE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A793010)
+#define FOUNDATION_EXCLUSIVERESOURCESERVICE_FOUNDATION_IGAMESERVICE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1AD75E00)
+#define FOUNDATION_EXCLUSIVERESOURCESERVICE_FOUNDATION_IGAMESERVICE_ONREADYTODESTROY_OFFSET UNITYSDK_OFFSET(0x1AD75E10)
+#define FOUNDATION_EXCLUSIVERESOURCESERVICE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD75E30)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ExclusiveResourceService_TypeDefinitionIndex = 9087;
+	inline static constexpr unsigned int ExclusiveResourceService_TypeDefinitionIndex = 9076;
 
 	class ExclusiveResourceService : public ::System::Object
 	{

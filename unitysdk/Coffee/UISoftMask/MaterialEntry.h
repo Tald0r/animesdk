@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class Material; }
 
-#define COFFEE_UISOFTMASK_MATERIALENTRY_RELEASE_OFFSET UNITYSDK_OFFSET(0x1AE5E5F0)
-#define COFFEE_UISOFTMASK_MATERIALENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE5E370)
+#define COFFEE_UISOFTMASK_MATERIALENTRY_RELEASE_OFFSET UNITYSDK_OFFSET(0x1B477AE0)
+#define COFFEE_UISOFTMASK_MATERIALENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B477860)
 
 namespace Coffee::UISoftMask
 {
-	inline static constexpr unsigned int MaterialEntry_TypeDefinitionIndex = 81156;
+	inline static constexpr unsigned int MaterialEntry_TypeDefinitionIndex = 83197;
 
 	class MaterialEntry : public ::System::Object
 	{

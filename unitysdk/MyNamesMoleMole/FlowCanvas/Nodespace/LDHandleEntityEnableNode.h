@@ -7,20 +7,20 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MYNAMESMOLEMOLE_FLOWCANVAS_NODESPACE_LDHANDLEENTITYENABLENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xAACD290)
-#define MYNAMESMOLEMOLE_FLOWCANVAS_NODESPACE_LDHANDLEENTITYENABLENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xAACD3C0)
-#define MYNAMESMOLEMOLE_FLOWCANVAS_NODESPACE_LDHANDLEENTITYENABLENODE__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0xAACD3E0)
+#define MYNAMESMOLEMOLE_FLOWCANVAS_NODESPACE_LDHANDLEENTITYENABLENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x95CCCC0)
+#define MYNAMESMOLEMOLE_FLOWCANVAS_NODESPACE_LDHANDLEENTITYENABLENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x95CCDF0)
+#define MYNAMESMOLEMOLE_FLOWCANVAS_NODESPACE_LDHANDLEENTITYENABLENODE__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x95CCE10)
 
 namespace MyNamesMoleMole::FlowCanvas::Nodespace
 {
-	inline static constexpr unsigned int LDHandleEntityEnableNode_TypeDefinitionIndex = 45092;
+	inline static constexpr unsigned int LDHandleEntityEnableNode_TypeDefinitionIndex = 65811;
 
 	class LDHandleEntityEnableNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* outPut; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Boolean>* enableStateInput; // 0xB0
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* entityInput; // 0xB8
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* entityInput; // 0xA8
+		::FlowCanvas::FlowOutput* outPut; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* enableStateInput; // 0xB8
 
 		::System::Void _ctor()
 		{

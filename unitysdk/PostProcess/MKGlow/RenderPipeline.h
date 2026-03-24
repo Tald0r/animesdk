@@ -3,7 +3,7 @@
 
 namespace PostProcess::MKGlow
 {
-	inline static constexpr unsigned int RenderPipeline_TypeDefinitionIndex = 28185;
+	inline static constexpr unsigned int RenderPipeline_TypeDefinitionIndex = 29126;
 
 	enum class RenderPipeline : ::System::Int32
 	{

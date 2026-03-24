@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelSwitchBtnPanelChildWindowController_DragType_TypeDefinitionIndex = 48346;
+	inline static constexpr unsigned int UIInLevelSwitchBtnPanelChildWindowController_DragType_TypeDefinitionIndex = 44617;
 
 	enum class UIInLevelSwitchBtnPanelChildWindowController_DragType : ::System::Int32
 	{
-		DragByEdge = 1,
 		NoDragable = 0,
 		DragByStartPoint = 2,
+		DragByEdge = 1,
 	};
 }

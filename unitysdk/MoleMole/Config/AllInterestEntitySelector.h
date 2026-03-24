@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ALLINTERESTENTITYSELECTOR_METHOD_2_1418E9B6808528A4_OFFSET UNITYSDK_OFFSET(0x6D3D910)
-#define MOLEMOLE_CONFIG_ALLINTERESTENTITYSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3DA40)
+#define MOLEMOLE_CONFIG_ALLINTERESTENTITYSELECTOR_METHOD_2_1418E9B6808528A4_OFFSET UNITYSDK_OFFSET(0xBADEA70)
+#define MOLEMOLE_CONFIG_ALLINTERESTENTITYSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xBADEBA0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AllInterestEntitySelector_TypeDefinitionIndex = 52234;
+	inline static constexpr unsigned int AllInterestEntitySelector_TypeDefinitionIndex = 72327;
 
 	class AllInterestEntitySelector : public ::MoleMole::Config::ConfigTargetSelector
 	{

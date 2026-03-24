@@ -3,18 +3,18 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/InputSystem/Utilities/FourCC.h"
 
-#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x902F10)
-#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT__CCTOR_OFFSET UNITYSDK_OFFSET(0x19F6FB50)
+#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x92E8A0)
+#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A580940)
 
 namespace UnityEngine::InputSystem::DualShock::LowLevel
 {
-	inline static constexpr unsigned int DualSenseHIDInputReport_TypeDefinitionIndex = 27715;
+	inline static constexpr unsigned int DualSenseHIDInputReport_TypeDefinitionIndex = 28655;
 
 	struct alignas(1) DualSenseHIDInputReport
 	{
 		static ::UnityEngine::InputSystem::Utilities::FourCC* StaticGet_Format()
 		{
-			return (::UnityEngine::InputSystem::Utilities::FourCC*)Il2CppClass::FromTypeDefinitionIndex(DualSenseHIDInputReport_TypeDefinitionIndex)->GetStaticField(0x4C70);
+			return (::UnityEngine::InputSystem::Utilities::FourCC*)Il2CppClass::FromTypeDefinitionIndex(DualSenseHIDInputReport_TypeDefinitionIndex)->GetStaticField(0x4C20);
 		}
 		::System::Byte leftStickX; // 0x10
 		::System::Byte leftStickY; // 0x11

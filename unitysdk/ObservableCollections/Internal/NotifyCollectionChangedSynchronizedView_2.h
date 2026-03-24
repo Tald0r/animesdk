@@ -18,7 +18,7 @@ namespace System::ComponentModel { class PropertyChangedEventHandler; }
 
 namespace ObservableCollections::Internal
 {
-	inline static constexpr unsigned int NotifyCollectionChangedSynchronizedView_2_TypeDefinitionIndex = 24457;
+	inline static constexpr unsigned int NotifyCollectionChangedSynchronizedView_2_TypeDefinitionIndex = 25221;
 
 	template <typename T, typename TView>
 	class NotifyCollectionChangedSynchronizedView_2 : public ::System::Object

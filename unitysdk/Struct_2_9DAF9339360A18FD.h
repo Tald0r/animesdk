@@ -4,17 +4,17 @@
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_9DAF9339360A18FD_METHOD_2_9F84D1FF74319152_OFFSET UNITYSDK_OFFSET(0x364400)
-#define STRUCT_2_9DAF9339360A18FD__CCTOR_OFFSET UNITYSDK_OFFSET(0x9547000)
-#define STRUCT_2_9DAF9339360A18FD__CTOR_OFFSET UNITYSDK_OFFSET(0x3644A0)
+#define STRUCT_2_9DAF9339360A18FD_METHOD_2_9F84D1FF74319152_OFFSET UNITYSDK_OFFSET(0x3326C0)
+#define STRUCT_2_9DAF9339360A18FD__CCTOR_OFFSET UNITYSDK_OFFSET(0x76653D0)
+#define STRUCT_2_9DAF9339360A18FD__CTOR_OFFSET UNITYSDK_OFFSET(0x332760)
 
-inline static constexpr unsigned int Struct_2_9DAF9339360A18FD_TypeDefinitionIndex = 76704;
+inline static constexpr unsigned int Struct_2_9DAF9339360A18FD_TypeDefinitionIndex = 58710;
 
 struct alignas(8) Struct_2_9DAF9339360A18FD
 {
 	static ::System::Int32* StaticGet_Field_2_0()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_9DAF9339360A18FD_TypeDefinitionIndex)->GetStaticField(0xF850);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_9DAF9339360A18FD_TypeDefinitionIndex)->GetStaticField(0xCB20);
 	}
 	::MoleMole::EntityHandle Field_2_1; // 0x10
 	::Foundation::Unreal::FTransform Field_2_2; // 0x20

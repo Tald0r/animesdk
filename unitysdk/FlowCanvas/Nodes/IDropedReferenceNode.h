@@ -5,7 +5,7 @@ namespace UnityEngine { class Object; }
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int IDropedReferenceNode_TypeDefinitionIndex = 25515;
+	inline static constexpr unsigned int IDropedReferenceNode_TypeDefinitionIndex = 26309;
 
 	class IDropedReferenceNode
 	{

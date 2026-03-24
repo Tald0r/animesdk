@@ -3,33 +3,33 @@
 #include "unitysdk/UnityEngine/InputSystem/Controls/AxisControl_Clamp.h"
 #include "unitysdk/UnityEngine/InputSystem/InputControl_1.h"
 
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_COMPAREVALUE_OFFSET UNITYSDK_OFFSET(0x19F5FBB0)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_EVALUATEMAGNITUDE_OFFSET UNITYSDK_OFFSET(0x19F5FCD0)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_FINISHSETUP_OFFSET UNITYSDK_OFFSET(0x19F5FA50)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_PREPROCESS_OFFSET UNITYSDK_OFFSET(0x19F5F820)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_READUNPROCESSEDVALUEFROMSTATE_OFFSET UNITYSDK_OFFSET(0x19F5FAC0)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_UNPREPROCESS_OFFSET UNITYSDK_OFFSET(0x19F5F960)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_WRITEVALUEINTOSTATE_OFFSET UNITYSDK_OFFSET(0x19F5FAF0)
-#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL__CTOR_OFFSET UNITYSDK_OFFSET(0x19F5FA00)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_COMPAREVALUE_OFFSET UNITYSDK_OFFSET(0x1A570A00)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_EVALUATEMAGNITUDE_OFFSET UNITYSDK_OFFSET(0x1A570B20)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_FINISHSETUP_OFFSET UNITYSDK_OFFSET(0x1A5708A0)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_PREPROCESS_OFFSET UNITYSDK_OFFSET(0x1A570670)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_READUNPROCESSEDVALUEFROMSTATE_OFFSET UNITYSDK_OFFSET(0x1A570910)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_UNPREPROCESS_OFFSET UNITYSDK_OFFSET(0x1A5707B0)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL_WRITEVALUEINTOSTATE_OFFSET UNITYSDK_OFFSET(0x1A570940)
+#define UNITYENGINE_INPUTSYSTEM_CONTROLS_AXISCONTROL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A570850)
 
 namespace UnityEngine::InputSystem::Controls
 {
-	inline static constexpr unsigned int AxisControl_TypeDefinitionIndex = 27893;
+	inline static constexpr unsigned int AxisControl_TypeDefinitionIndex = 28833;
 
 	class AxisControl : public ::UnityEngine::InputSystem::InputControl_1<::System::Single>
 	{
 	public:
-		::System::Boolean scale; // 0xF0
-		::System::Boolean normalize; // 0xF1
-		::System::Boolean invert; // 0xF2
-		::System::Single clampConstant; // 0xF4
-		::System::Single clampMax; // 0xF8
-		::System::Single scaleFactor; // 0xFC
-		::System::Single normalizeMin; // 0x100
+		::System::Single normalizeMax; // 0xF0
+		::System::Single normalizeZero; // 0xF4
+		::UnityEngine::InputSystem::Controls::AxisControl_Clamp clamp; // 0xF8
+		::System::Single normalizeMin; // 0xFC
+		::System::Single clampMax; // 0x100
 		::System::Single clampMin; // 0x104
-		::UnityEngine::InputSystem::Controls::AxisControl_Clamp clamp; // 0x108
-		::System::Single normalizeZero; // 0x10C
-		::System::Single normalizeMax; // 0x110
+		::System::Single clampConstant; // 0x108
+		::System::Boolean scale; // 0x10C
+		::System::Boolean normalize; // 0x10D
+		::System::Boolean invert; // 0x10E
+		::System::Single scaleFactor; // 0x110
 
 		::System::Void _ctor()
 		{

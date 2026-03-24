@@ -3,7 +3,7 @@
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Switch_OutOfRangeMode_TypeDefinitionIndex = 25453;
+	inline static constexpr unsigned int Switch_OutOfRangeMode_TypeDefinitionIndex = 26545;
 
 	enum class Switch_OutOfRangeMode : ::System::Int32
 	{

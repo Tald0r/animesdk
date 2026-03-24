@@ -9,23 +9,23 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole { class ChessEntity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCHESSENTITYMOVERESULT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x141CF090)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCHESSENTITYMOVERESULT__CTOR_OFFSET UNITYSDK_OFFSET(0x141CF200)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCHESSENTITYMOVERESULT__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0x141CF220)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCHESSENTITYMOVERESULT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA4F5220)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCHESSENTITYMOVERESULT__CTOR_OFFSET UNITYSDK_OFFSET(0xA4F5390)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDCHESSENTITYMOVERESULT__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0xA4F53B0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardChessEntityMoveResult_TypeDefinitionIndex = 51772;
+	inline static constexpr unsigned int ChessboardChessEntityMoveResult_TypeDefinitionIndex = 39232;
 
 	class ChessboardChessEntityMoveResult : public ::FlowCanvas::FlowNode
 	{
 	public:
 		::FlowCanvas::FlowInput* input; // 0xA8
-		::FlowCanvas::FlowOutput* output; // 0xB0
+		::FlowCanvas::FlowOutput* success; // 0xB0
 		::FlowCanvas::ValueInput_1<::MoleMole::ChessEntity*>* chessEntity; // 0xB8
-		::FlowCanvas::FlowOutput* failure; // 0xC0
-		::FlowCanvas::FlowOutput* success; // 0xC8
-		::FlowCanvas::ValueInput_1<::Share::GridDir>* dir; // 0xD0
+		::FlowCanvas::FlowOutput* output; // 0xC0
+		::FlowCanvas::ValueInput_1<::Share::GridDir>* dir; // 0xC8
+		::FlowCanvas::FlowOutput* failure; // 0xD0
 
 		::System::Void _ctor()
 		{

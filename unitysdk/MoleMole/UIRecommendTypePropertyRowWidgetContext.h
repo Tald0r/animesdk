@@ -3,19 +3,19 @@
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
 class Class_2_12BDE7300F0E061C;
-class Class_3_C3F0E3B5AB5977AE_40;
+class Class_3_C3F0E3B5AB5977AE;
 namespace MoleMole { template <typename T> class UIRoleEquipRecommendPopContext_1; }
 
-#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA3EA7F0)
+#define MOLEMOLE_UIRECOMMENDTYPEPROPERTYROWWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x96E7410)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRecommendTypePropertyRowWidgetContext_TypeDefinitionIndex = 53410;
+	inline static constexpr unsigned int UIRecommendTypePropertyRowWidgetContext_TypeDefinitionIndex = 70467;
 
 	class UIRecommendTypePropertyRowWidgetContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_3_C3F0E3B5AB5977AE_40* avatarRecommendPropertyData; // 0x28
+		::Class_3_C3F0E3B5AB5977AE* avatarRecommendPropertyData; // 0x28
 		::MoleMole::UIRoleEquipRecommendPopContext_1<::Class_2_12BDE7300F0E061C*>* RoleEquipRecommendPopContext; // 0x30
 
 		::System::Void _ctor()

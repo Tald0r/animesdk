@@ -10,7 +10,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int BehaviorInstance_1_TypeDefinitionIndex = 9104;
+	inline static constexpr unsigned int BehaviorInstance_1_TypeDefinitionIndex = 9086;
 
 	template <typename TData>
 	class BehaviorInstance_1 : public ::System::Object

@@ -12,19 +12,19 @@ namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Animation; }
 
-#define CLASS_1_1F219549AE9B7C82_STRUCT_2_B2DA1EAC5A5FC7F2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2C6A40)
-#define CLASS_1_1F219549AE9B7C82_STRUCT_2_B2DA1EAC5A5FC7F2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_1F219549AE9B7C82_STRUCT_2_B2DA1EAC5A5FC7F2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x742590)
+#define CLASS_1_1F219549AE9B7C82_STRUCT_2_B2DA1EAC5A5FC7F2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Struct_2_B2DA1EAC5A5FC7F2_TypeDefinitionIndex = 57037;
+inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Struct_2_B2DA1EAC5A5FC7F2_TypeDefinitionIndex = 62864;
 
 struct alignas(8) Class_1_1F219549AE9B7C82_Struct_2_B2DA1EAC5A5FC7F2
 {
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_6; // 0x10
-	::System::Nullable_1<::System::Threading::CancellationTokenRegistration> Field_2_5; // 0x20
+	::System::Nullable_1<::System::Threading::CancellationTokenRegistration> Field_2_5; // 0x10
+	::UnityEngine::Animation* Field_2_2; // 0x30
+	::System::String* Field_2_3; // 0x38
 	::Class_1_1F219549AE9B7C82_Struct_2_864D927135D66FAE Field_2_4; // 0x40
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> Field_2_1; // 0x50
-	::System::String* Field_2_3; // 0x68
-	::UnityEngine::Animation* Field_2_2; // 0x70
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_6; // 0x50
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> Field_2_1; // 0x60
 	::System::Int32 Field_2_0; // 0x78
 
 	::System::Void MoveNext()

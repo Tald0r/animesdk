@@ -6,19 +6,19 @@ class Class_1_7ECB9691B142D586;
 namespace MoleMole { class MultipleVideoPlayerManager; }
 namespace MoleMole { class UILoadingTransferPopWindowController___c__DisplayClass48_0; }
 
-#define MOLEMOLE_UILOADINGTRANSFERPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9E76020)
-#define MOLEMOLE_UILOADINGTRANSFERPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__INITVIDEOPLAYER_B__2_OFFSET UNITYSDK_OFFSET(0x9E76030)
-#define MOLEMOLE_UILOADINGTRANSFERPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__INITVIDEOPLAYER_B__3_OFFSET UNITYSDK_OFFSET(0x9E76060)
+#define MOLEMOLE_UILOADINGTRANSFERPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__CTOR_OFFSET UNITYSDK_OFFSET(0x984C090)
+#define MOLEMOLE_UILOADINGTRANSFERPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__INITVIDEOPLAYER_B__2_OFFSET UNITYSDK_OFFSET(0x984C0A0)
+#define MOLEMOLE_UILOADINGTRANSFERPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_1__INITVIDEOPLAYER_B__3_OFFSET UNITYSDK_OFFSET(0x984C0D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILoadingTransferPopWindowController___c__DisplayClass48_1_TypeDefinitionIndex = 66949;
+	inline static constexpr unsigned int UILoadingTransferPopWindowController___c__DisplayClass48_1_TypeDefinitionIndex = 41103;
 
 	class UILoadingTransferPopWindowController___c__DisplayClass48_1 : public ::System::Object
 	{
 	public:
-		::MoleMole::UILoadingTransferPopWindowController___c__DisplayClass48_0* CS___8__locals1; // 0x10
-		::MoleMole::MultipleVideoPlayerManager* mpm; // 0x18
+		::MoleMole::MultipleVideoPlayerManager* mpm; // 0x10
+		::MoleMole::UILoadingTransferPopWindowController___c__DisplayClass48_0* CS___8__locals1; // 0x18
 
 		::System::Void _ctor()
 		{

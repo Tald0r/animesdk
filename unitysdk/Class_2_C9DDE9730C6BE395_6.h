@@ -9,23 +9,25 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x6C3CCA0)
-#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x6C3CEB0)
-#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6C3CFC0)
-#define CLASS_2_C9DDE9730C6BE395_6__CTOR_OFFSET UNITYSDK_OFFSET(0x6C3CFB0)
+#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0xE0F65E0)
+#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xE0F67F0)
+#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_7850A759D7FB02C1_OFFSET UNITYSDK_OFFSET(0xE0F68F0)
+#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xE0F6990)
+#define CLASS_2_C9DDE9730C6BE395_6_METHOD_2_F9D756242E9FCFE7_OFFSET UNITYSDK_OFFSET(0xE0F6A00)
+#define CLASS_2_C9DDE9730C6BE395_6__CTOR_OFFSET UNITYSDK_OFFSET(0xE0F6980)
 
-inline static constexpr unsigned int Class_2_C9DDE9730C6BE395_6_TypeDefinitionIndex = 47019;
+inline static constexpr unsigned int Class_2_C9DDE9730C6BE395_6_TypeDefinitionIndex = 54206;
 
 class Class_2_C9DDE9730C6BE395_6 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
-	::UnityEngine::GameObject* Field_2_6; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x30
-	::UnityEngine::GameObject* Field_2_5; // 0x38
-	::UnityEngine::GameObject* Field_2_1; // 0x40
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x48
+	::UnityEngine::GameObject* Field_2_0; // 0x18
+	::UnityEngine::GameObject* Field_2_4; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x30
+	::UnityEngine::GameObject* Field_2_1; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x40
+	::UnityEngine::GameObject* Field_2_5; // 0x48
 
 	::System::Void _ctor()
 	{
@@ -37,6 +39,11 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_C9DDE9730C6BE395_6_METHOD_2_2DE91FCAEB146CF9_OFFSET))(this, a1, a2);
 	}
 
+	::System::Boolean Method_2_7850A759D7FB02C1(::MoleMole::UIControlCollection* a1, ::Class_2_777A5D016ADC7368* a2)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIControlCollection*, ::Class_2_777A5D016ADC7368*))((::PBYTE)hIl2Cpp + CLASS_2_C9DDE9730C6BE395_6_METHOD_2_7850A759D7FB02C1_OFFSET))(this, a1, a2);
+	}
+
 	::System::Void Method_2_C8903A36ECBA4078(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_C9DDE9730C6BE395_6_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
@@ -45,5 +52,10 @@ public:
 	::System::Void Method_2_77EA5BCD93BD96AE()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_C9DDE9730C6BE395_6_METHOD_2_77EA5BCD93BD96AE_OFFSET))(this);
+	}
+
+	::System::Boolean Method_2_F9D756242E9FCFE7(::MoleMole::UIControlCollection* a1, ::Class_2_777A5D016ADC7368* a2)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::MoleMole::UIControlCollection*, ::Class_2_777A5D016ADC7368*))((::PBYTE)hIl2Cpp + CLASS_2_C9DDE9730C6BE395_6_METHOD_2_F9D756242E9FCFE7_OFFSET))(this, a1, a2);
 	}
 };

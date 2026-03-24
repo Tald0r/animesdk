@@ -5,11 +5,11 @@
 namespace MoleMole { class DepositoryTabConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_DEPOSITORYPAGETABCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xE833E50)
+#define MOLEMOLE_DEPOSITORYPAGETABCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xB488830)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int DepositoryPageTabConfigs_TypeDefinitionIndex = 52497;
+	inline static constexpr unsigned int DepositoryPageTabConfigs_TypeDefinitionIndex = 48075;
 
 	class DepositoryPageTabConfigs : public ::System::Object
 	{

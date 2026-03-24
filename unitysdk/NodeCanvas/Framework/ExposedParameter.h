@@ -7,12 +7,12 @@ namespace NodeCanvas::Framework { class Variable; }
 namespace System { class String; }
 namespace System { class Type; }
 
-#define NODECANVAS_FRAMEWORK_EXPOSEDPARAMETER_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A17EBB0)
-#define NODECANVAS_FRAMEWORK_EXPOSEDPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A17ED70)
+#define NODECANVAS_FRAMEWORK_EXPOSEDPARAMETER_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A727430)
+#define NODECANVAS_FRAMEWORK_EXPOSEDPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7275F0)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int ExposedParameter_TypeDefinitionIndex = 26585;
+	inline static constexpr unsigned int ExposedParameter_TypeDefinitionIndex = 26266;
 
 	class ExposedParameter : public ::System::Object
 	{

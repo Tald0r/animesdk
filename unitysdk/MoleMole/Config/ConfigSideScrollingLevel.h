@@ -10,11 +10,11 @@ namespace MoleMole::Config { class ConfigSideScrollingCamera; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0xCDB8940)
+#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0xD09D9B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSideScrollingLevel_TypeDefinitionIndex = 70517;
+	inline static constexpr unsigned int ConfigSideScrollingLevel_TypeDefinitionIndex = 53999;
 
 	class ConfigSideScrollingLevel : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -8,18 +8,18 @@ class Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF;
 class Class_2_A598F7625AE8DE78_Class_1_8F12D9B476B6889D;
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_2_A598F7625AE8DE78_CLASS_1_8F12D9B476B6889D_STRUCT_2_C878B320970D3117_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x373F00)
-#define CLASS_2_A598F7625AE8DE78_CLASS_1_8F12D9B476B6889D_STRUCT_2_C878B320970D3117_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_A598F7625AE8DE78_CLASS_1_8F12D9B476B6889D_STRUCT_2_C878B320970D3117_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3371A0)
+#define CLASS_2_A598F7625AE8DE78_CLASS_1_8F12D9B476B6889D_STRUCT_2_C878B320970D3117_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_A598F7625AE8DE78_Class_1_8F12D9B476B6889D_Struct_2_C878B320970D3117_TypeDefinitionIndex = 74301;
+inline static constexpr unsigned int Class_2_A598F7625AE8DE78_Class_1_8F12D9B476B6889D_Struct_2_C878B320970D3117_TypeDefinitionIndex = 71348;
 
 struct alignas(8) Class_2_A598F7625AE8DE78_Class_1_8F12D9B476B6889D_Struct_2_C878B320970D3117
 {
-	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF*> Field_2_4; // 0x10
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x28
-	::Class_2_A598F7625AE8DE78_Class_1_8F12D9B476B6889D* Field_2_2; // 0x38
-	::System::Int32 Field_2_0; // 0x40
-	::System::Boolean Field_2_3; // 0x44
+	::Class_2_A598F7625AE8DE78_Class_1_8F12D9B476B6889D* Field_2_2; // 0x10
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x18
+	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF*> Field_2_4; // 0x28
+	::System::Boolean Field_2_3; // 0x40
+	::System::Int32 Field_2_0; // 0x44
 
 	::System::Void MoveNext()
 	{

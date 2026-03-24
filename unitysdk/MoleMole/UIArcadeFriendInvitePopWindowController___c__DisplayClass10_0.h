@@ -6,12 +6,12 @@
 class Class_2_DF2C726EEEEC912D;
 namespace MoleMole { class UIArcadeFriendInvitePopWindowController; }
 
-#define MOLEMOLE_UIARCADEFRIENDINVITEPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB9026F0)
-#define MOLEMOLE_UIARCADEFRIENDINVITEPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__ONCIRCLETABCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xB902700)
+#define MOLEMOLE_UIARCADEFRIENDINVITEPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB972E90)
+#define MOLEMOLE_UIARCADEFRIENDINVITEPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__ONCIRCLETABCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xB972EA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIArcadeFriendInvitePopWindowController___c__DisplayClass10_0_TypeDefinitionIndex = 76206;
+	inline static constexpr unsigned int UIArcadeFriendInvitePopWindowController___c__DisplayClass10_0_TypeDefinitionIndex = 67532;
 
 	class UIArcadeFriendInvitePopWindowController___c__DisplayClass10_0 : public ::System::Object
 	{

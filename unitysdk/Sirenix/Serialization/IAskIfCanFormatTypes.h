@@ -5,7 +5,7 @@ namespace System { class Type; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int IAskIfCanFormatTypes_TypeDefinitionIndex = 7373;
+	inline static constexpr unsigned int IAskIfCanFormatTypes_TypeDefinitionIndex = 7378;
 
 	class IAskIfCanFormatTypes
 	{

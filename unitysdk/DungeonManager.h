@@ -4,10 +4,10 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define DUNGEONMANAGER_AWAKE_OFFSET UNITYSDK_OFFSET(0xA218240)
-#define DUNGEONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0xA218830)
+#define DUNGEONMANAGER_AWAKE_OFFSET UNITYSDK_OFFSET(0x9321C90)
+#define DUNGEONMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x9322280)
 
-inline static constexpr unsigned int DungeonManager_TypeDefinitionIndex = 74431;
+inline static constexpr unsigned int DungeonManager_TypeDefinitionIndex = 68718;
 
 class DungeonManager : public ::UnityEngine::MonoBehaviour
 {

@@ -7,9 +7,9 @@
 class Class_2_4ADEE7902DEBF73B;
 namespace UnityEngine { class Material; }
 
-#define CLASS_1_D0E19F04396CEF85_METHOD_1_2DEC40483D6D1BED_OFFSET UNITYSDK_OFFSET(0x1014E1E0)
+#define CLASS_1_D0E19F04396CEF85_METHOD_1_2DEC40483D6D1BED_OFFSET UNITYSDK_OFFSET(0xB373600)
 
-inline static constexpr unsigned int Class_1_D0E19F04396CEF85_TypeDefinitionIndex = 58149;
+inline static constexpr unsigned int Class_1_D0E19F04396CEF85_TypeDefinitionIndex = 64379;
 
 class Class_1_D0E19F04396CEF85 : public ::System::Object
 {

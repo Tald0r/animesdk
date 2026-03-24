@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SHOWWIDGETLISTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x16EB22E0)
+#define SHOWWIDGETLISTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x6A83530)
 
-inline static constexpr unsigned int ShowWidgetListData_TypeDefinitionIndex = 63504;
+inline static constexpr unsigned int ShowWidgetListData_TypeDefinitionIndex = 73557;
 
 class ShowWidgetListData : public ::System::Object
 {

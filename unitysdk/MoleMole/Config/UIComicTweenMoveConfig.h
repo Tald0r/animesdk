@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_UICOMICTWEENMOVECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x80647D0)
+#define MOLEMOLE_CONFIG_UICOMICTWEENMOVECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9D17920)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UIComicTweenMoveConfig_TypeDefinitionIndex = 76552;
+	inline static constexpr unsigned int UIComicTweenMoveConfig_TypeDefinitionIndex = 65324;
 
 	class UIComicTweenMoveConfig : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

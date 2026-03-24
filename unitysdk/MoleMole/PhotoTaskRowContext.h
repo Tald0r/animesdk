@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_PHOTOTASKROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6E53200)
+#define MOLEMOLE_PHOTOTASKROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6EC5920)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PhotoTaskRowContext_TypeDefinitionIndex = 50821;
+	inline static constexpr unsigned int PhotoTaskRowContext_TypeDefinitionIndex = 39711;
 
 	class PhotoTaskRowContext : public ::MoleMole::UIControllerContextBase
 	{

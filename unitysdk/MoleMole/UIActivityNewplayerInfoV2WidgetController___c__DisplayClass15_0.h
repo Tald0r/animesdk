@@ -5,12 +5,12 @@
 class Class_1_1D6B384C0B7DC7C3;
 namespace MoleMole { class UIActivityNewplayerInfoV2WidgetController; }
 
-#define MOLEMOLE_UIACTIVITYNEWPLAYERINFOV2WIDGETCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA96DA0)
-#define MOLEMOLE_UIACTIVITYNEWPLAYERINFOV2WIDGETCONTROLLER___C__DISPLAYCLASS15_0__ONCLICKTASK_B__0_OFFSET UNITYSDK_OFFSET(0xCA96DB0)
+#define MOLEMOLE_UIACTIVITYNEWPLAYERINFOV2WIDGETCONTROLLER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCB1D150)
+#define MOLEMOLE_UIACTIVITYNEWPLAYERINFOV2WIDGETCONTROLLER___C__DISPLAYCLASS15_0__ONCLICKTASK_B__0_OFFSET UNITYSDK_OFFSET(0xCB1D160)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityNewplayerInfoV2WidgetController___c__DisplayClass15_0_TypeDefinitionIndex = 56977;
+	inline static constexpr unsigned int UIActivityNewplayerInfoV2WidgetController___c__DisplayClass15_0_TypeDefinitionIndex = 46803;
 
 	class UIActivityNewplayerInfoV2WidgetController___c__DisplayClass15_0 : public ::System::Object
 	{

@@ -4,11 +4,11 @@
 
 namespace UnityEngine::AI { class NavMeshLink; }
 
-#define MOLEMOLE_SCENEMARK_NAVMESHLINKMARK__CTOR_OFFSET UNITYSDK_OFFSET(0xD81F710)
+#define MOLEMOLE_SCENEMARK_NAVMESHLINKMARK__CTOR_OFFSET UNITYSDK_OFFSET(0xB9AFD20)
 
 namespace MoleMole::SceneMark
 {
-	inline static constexpr unsigned int NavmeshLinkMark_TypeDefinitionIndex = 65540;
+	inline static constexpr unsigned int NavmeshLinkMark_TypeDefinitionIndex = 61995;
 
 	class NavmeshLinkMark : public ::MoleMole::SceneMark::SceneMarkData_1<::MoleMole::SceneMark::NavmeshLinkMark*>
 	{

@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AggregateObject_1_ComponentDependency_TypeDefinitionIndex = 9050;
+	inline static constexpr unsigned int AggregateObject_1_ComponentDependency_TypeDefinitionIndex = 9184;
 
 	template <typename TEvent>
 	class AggregateObject_1_ComponentDependency : public ::System::Object

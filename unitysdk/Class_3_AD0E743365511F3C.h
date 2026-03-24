@@ -5,9 +5,9 @@
 class Class_3_AD0E743365511F3C_1;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_3_AD0E743365511F3C__CTOR_OFFSET UNITYSDK_OFFSET(0x18E651E0)
+#define CLASS_3_AD0E743365511F3C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B06F860)
 
-inline static constexpr unsigned int Class_3_AD0E743365511F3C_TypeDefinitionIndex = 24926;
+inline static constexpr unsigned int Class_3_AD0E743365511F3C_TypeDefinitionIndex = 25657;
 
 class Class_3_AD0E743365511F3C : public ::Class_2_A48F3719AA1CF200
 {

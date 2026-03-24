@@ -5,19 +5,19 @@
 
 namespace System { class EventArgs; }
 
-#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOL_GET_QUEUEBLOCKPOOL_OFFSET UNITYSDK_OFFSET(0x1B111F30)
-#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOL_ONDOMAINUNLOAD_OFFSET UNITYSDK_OFFSET(0x1B1120D0)
+#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOL_GET_QUEUEBLOCKPOOL_OFFSET UNITYSDK_OFFSET(0x1B728C30)
+#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOL_ONDOMAINUNLOAD_OFFSET UNITYSDK_OFFSET(0x1B728DD0)
 
 namespace Unity::Collections
 {
-	inline static constexpr unsigned int NativeQueueBlockPool_TypeDefinitionIndex = 19203;
+	inline static constexpr unsigned int NativeQueueBlockPool_TypeDefinitionIndex = 19801;
 
 	class NativeQueueBlockPool : public ::System::Object
 	{
 	public:
 		static ::Unity::Collections::NativeQueueBlockPoolData** StaticGet_pData()
 		{
-			return (::Unity::Collections::NativeQueueBlockPoolData**)Il2CppClass::FromTypeDefinitionIndex(NativeQueueBlockPool_TypeDefinitionIndex)->GetStaticField(0x4610);
+			return (::Unity::Collections::NativeQueueBlockPoolData**)Il2CppClass::FromTypeDefinitionIndex(NativeQueueBlockPool_TypeDefinitionIndex)->GetStaticField(0x4640);
 		}
 
 		static ::Unity::Collections::NativeQueueBlockPoolData* get_QueueBlockPool()

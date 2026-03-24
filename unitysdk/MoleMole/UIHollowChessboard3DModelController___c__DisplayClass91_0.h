@@ -9,21 +9,21 @@ class Class_5_AF65C3A968E836D2;
 namespace MoleMole { class UIHollowChessboard3DModelController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS91_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA236D0)
-#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS91_0__TRYGENCHESSBOARD_B__0_OFFSET UNITYSDK_OFFSET(0xAA236E0)
+#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS91_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7F6FB40)
+#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS91_0__TRYGENCHESSBOARD_B__0_OFFSET UNITYSDK_OFFSET(0x7F6FB50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowChessboard3DModelController___c__DisplayClass91_0_TypeDefinitionIndex = 75062;
+	inline static constexpr unsigned int UIHollowChessboard3DModelController___c__DisplayClass91_0_TypeDefinitionIndex = 42997;
 
 	class UIHollowChessboard3DModelController___c__DisplayClass91_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIHollowChessboard3DModelController* __4__this; // 0x10
 		::System::Action_1<::Class_5_AF65C3A968E836D2*>* buildCallBack; // 0x18
-		::Class_2_CB2509659DB8C6AA_Class_1_835CE1B9F952177D_Enum_3_E7F2C0F6C689EC3E directType; // 0x20
-		::Class_2_CB2509659DB8C6AA_Class_1_835CE1B9F952177D_Enum_3_A8C63FEEE87BCF3E boardType; // 0x24
-		::MoleMole::HollowChessboard::HollowChessboardUID chessboardUid; // 0x28
+		::Class_2_CB2509659DB8C6AA_Class_1_835CE1B9F952177D_Enum_3_A8C63FEEE87BCF3E boardType; // 0x20
+		::MoleMole::HollowChessboard::HollowChessboardUID chessboardUid; // 0x24
+		::Class_2_CB2509659DB8C6AA_Class_1_835CE1B9F952177D_Enum_3_E7F2C0F6C689EC3E directType; // 0x2C
 
 		::System::Void _ctor()
 		{

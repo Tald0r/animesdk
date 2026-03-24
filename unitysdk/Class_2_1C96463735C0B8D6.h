@@ -6,20 +6,20 @@ class Class_2_777A5D016ADC7368;
 class UIControllerExtensionData;
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIWorkBenchAppBgForTransitionWidgetController; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_1C96463735C0B8D6_METHOD_2_37917191637BFFF4_OFFSET UNITYSDK_OFFSET(0xA21E7B0)
-#define CLASS_2_1C96463735C0B8D6_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0xA21E920)
-#define CLASS_2_1C96463735C0B8D6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA21EA10)
-#define CLASS_2_1C96463735C0B8D6__CTOR_OFFSET UNITYSDK_OFFSET(0xA21EA00)
+#define CLASS_2_1C96463735C0B8D6_METHOD_2_37917191637BFFF4_OFFSET UNITYSDK_OFFSET(0x6605BE0)
+#define CLASS_2_1C96463735C0B8D6_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x6605D50)
+#define CLASS_2_1C96463735C0B8D6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6605E40)
+#define CLASS_2_1C96463735C0B8D6__CTOR_OFFSET UNITYSDK_OFFSET(0x6605E30)
 
-inline static constexpr unsigned int Class_2_1C96463735C0B8D6_TypeDefinitionIndex = 50178;
+inline static constexpr unsigned int Class_2_1C96463735C0B8D6_TypeDefinitionIndex = 66306;
 
 class Class_2_1C96463735C0B8D6 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UIControllerExtensionData* Field_2_1; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIWorkBenchAppBgForTransitionWidgetController*>* Field_2_0; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIWorkBenchAppBgForTransitionWidgetController*>* Field_2_0; // 0x18
+	::UIControllerExtensionData* Field_2_1; // 0x20
 
 	::System::Void _ctor()
 	{

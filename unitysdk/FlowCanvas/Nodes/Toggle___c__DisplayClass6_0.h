@@ -6,22 +6,22 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas::Nodes { class Toggle; }
 
-#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A178500)
-#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A178510)
-#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__1_OFFSET UNITYSDK_OFFSET(0x1A178570)
-#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__2_OFFSET UNITYSDK_OFFSET(0x1A178590)
-#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__3_OFFSET UNITYSDK_OFFSET(0x1A1785B0)
+#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A720D70)
+#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A720D80)
+#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__1_OFFSET UNITYSDK_OFFSET(0x1A720DE0)
+#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__2_OFFSET UNITYSDK_OFFSET(0x1A720E00)
+#define FLOWCANVAS_NODES_TOGGLE___C__DISPLAYCLASS6_0__REGISTERPORTS_B__3_OFFSET UNITYSDK_OFFSET(0x1A720E20)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int Toggle___c__DisplayClass6_0_TypeDefinitionIndex = 25389;
+	inline static constexpr unsigned int Toggle___c__DisplayClass6_0_TypeDefinitionIndex = 26926;
 
 	class Toggle___c__DisplayClass6_0 : public ::System::Object
 	{
 	public:
-		::FlowCanvas::Nodes::Toggle* __4__this; // 0x10
-		::FlowCanvas::FlowOutput* fOn; // 0x18
-		::FlowCanvas::FlowOutput* fOff; // 0x20
+		::FlowCanvas::FlowOutput* fOn; // 0x10
+		::FlowCanvas::FlowOutput* fOff; // 0x18
+		::FlowCanvas::Nodes::Toggle* __4__this; // 0x20
 
 		::System::Void _ctor()
 		{

@@ -6,7 +6,7 @@
 
 namespace MoleMole::Arcade::BallsRace::Client
 {
-	inline static constexpr unsigned int BrChangeColorEvent_TypeDefinitionIndex = 80154;
+	inline static constexpr unsigned int BrChangeColorEvent_TypeDefinitionIndex = 82180;
 
 	struct alignas(8) BrChangeColorEvent
 	{

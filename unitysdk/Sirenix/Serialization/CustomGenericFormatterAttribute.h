@@ -4,11 +4,11 @@
 
 namespace System { class Type; }
 
-#define SIRENIX_SERIALIZATION_CUSTOMGENERICFORMATTERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEB5D80)
+#define SIRENIX_SERIALIZATION_CUSTOMGENERICFORMATTERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B4C9E60)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int CustomGenericFormatterAttribute_TypeDefinitionIndex = 7360;
+	inline static constexpr unsigned int CustomGenericFormatterAttribute_TypeDefinitionIndex = 7365;
 
 	class CustomGenericFormatterAttribute : public ::Sirenix::Serialization::CustomFormatterAttribute
 	{

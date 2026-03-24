@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int GamepadButton_TypeDefinitionIndex = 27759;
+	inline static constexpr unsigned int GamepadButton_TypeDefinitionIndex = 28699;
 
 	enum class GamepadButton : ::System::Int32
 	{

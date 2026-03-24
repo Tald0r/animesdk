@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UISUMMEREVENTTASKDIALOGPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7C47710)
+#define MOLEMOLE_UISUMMEREVENTTASKDIALOGPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA6BC910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISummerEventTaskDialogPopWindowContext_TypeDefinitionIndex = 47146;
+	inline static constexpr unsigned int UISummerEventTaskDialogPopWindowContext_TypeDefinitionIndex = 51018;
 
 	class UISummerEventTaskDialogPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{

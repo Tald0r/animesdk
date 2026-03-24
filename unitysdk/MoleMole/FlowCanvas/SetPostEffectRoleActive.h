@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_SETPOSTEFFECTROLEACTIVE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE482800)
-#define MOLEMOLE_FLOWCANVAS_SETPOSTEFFECTROLEACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0xE482870)
+#define MOLEMOLE_FLOWCANVAS_SETPOSTEFFECTROLEACTIVE_INVOKE_OFFSET UNITYSDK_OFFSET(0xD80A830)
+#define MOLEMOLE_FLOWCANVAS_SETPOSTEFFECTROLEACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0xD80A8A0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int SetPostEffectRoleActive_TypeDefinitionIndex = 65983;
+	inline static constexpr unsigned int SetPostEffectRoleActive_TypeDefinitionIndex = 56941;
 
 	class SetPostEffectRoleActive : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_1<::System::Boolean>
 	{

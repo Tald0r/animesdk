@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/LayerMask.h"
 
-#define MOLEMOLE_CAMERAS_BANGBOOADJUSTMENTCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x96E6950)
+#define MOLEMOLE_CAMERAS_BANGBOOADJUSTMENTCAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB075D10)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int BangbooAdjustmentCameraConfig_TypeDefinitionIndex = 58566;
+	inline static constexpr unsigned int BangbooAdjustmentCameraConfig_TypeDefinitionIndex = 45888;
 
 	class BangbooAdjustmentCameraConfig : public ::System::Object
 	{

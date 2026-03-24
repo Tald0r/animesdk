@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/LogicButtonInputType.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIGENERALVIRTUALPLAYEMPTYBTNCHILDWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x96010D0)
+#define MOLEMOLE_UIGENERALVIRTUALPLAYEMPTYBTNCHILDWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C25DC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralVirtualPlayEmptyBtnChildWindowController_Context_TypeDefinitionIndex = 60128;
+	inline static constexpr unsigned int UIGeneralVirtualPlayEmptyBtnChildWindowController_Context_TypeDefinitionIndex = 39009;
 
 	class UIGeneralVirtualPlayEmptyBtnChildWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{

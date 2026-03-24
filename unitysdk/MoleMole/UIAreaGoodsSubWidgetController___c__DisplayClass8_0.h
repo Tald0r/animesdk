@@ -5,12 +5,12 @@
 class Class_1_0D6706375CDAAE8C;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIAREAGOODSSUBWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC8F10F0)
-#define MOLEMOLE_UIAREAGOODSSUBWIDGETCONTROLLER___C__DISPLAYCLASS8_0__REFRESHCARDNUM_B__1_OFFSET UNITYSDK_OFFSET(0xC8F1100)
+#define MOLEMOLE_UIAREAGOODSSUBWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x989C630)
+#define MOLEMOLE_UIAREAGOODSSUBWIDGETCONTROLLER___C__DISPLAYCLASS8_0__REFRESHCARDNUM_B__1_OFFSET UNITYSDK_OFFSET(0x989C640)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAreaGoodsSubWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 48268;
+	inline static constexpr unsigned int UIAreaGoodsSubWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 52641;
 
 	class UIAreaGoodsSubWidgetController___c__DisplayClass8_0 : public ::System::Object
 	{

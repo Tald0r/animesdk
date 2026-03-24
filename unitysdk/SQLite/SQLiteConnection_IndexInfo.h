@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace SQLite
 {
-	inline static constexpr unsigned int SQLiteConnection_IndexInfo_TypeDefinitionIndex = 35212;
+	inline static constexpr unsigned int SQLiteConnection_IndexInfo_TypeDefinitionIndex = 36214;
 
 	struct alignas(8) SQLiteConnection_IndexInfo
 	{

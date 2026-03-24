@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define FOUNDATION_CONTAINER_DEFAULTNATIVEBITARRAYDATAPOLICY_CALCULATECAPACITYFORRESERVE_OFFSET UNITYSDK_OFFSET(0x1ADDB2A0)
-#define FOUNDATION_CONTAINER_DEFAULTNATIVEBITARRAYDATAPOLICY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADDB380)
+#define FOUNDATION_CONTAINER_DEFAULTNATIVEBITARRAYDATAPOLICY_CALCULATECAPACITYFORRESERVE_OFFSET UNITYSDK_OFFSET(0x1B3ABDE0)
+#define FOUNDATION_CONTAINER_DEFAULTNATIVEBITARRAYDATAPOLICY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B3ABE70)
 
 namespace Foundation::Container
 {
-	inline static constexpr unsigned int DefaultNativeBitArrayDataPolicy_TypeDefinitionIndex = 8889;
+	inline static constexpr unsigned int DefaultNativeBitArrayDataPolicy_TypeDefinitionIndex = 9140;
 
 	class DefaultNativeBitArrayDataPolicy : public ::System::Object
 	{
 	public:
 		static ::System::Int64* StaticGet_MinWordCapacity()
 		{
-			return (::System::Int64*)Il2CppClass::FromTypeDefinitionIndex(DefaultNativeBitArrayDataPolicy_TypeDefinitionIndex)->GetStaticField(0x3CA0);
+			return (::System::Int64*)Il2CppClass::FromTypeDefinitionIndex(DefaultNativeBitArrayDataPolicy_TypeDefinitionIndex)->GetStaticField(0x3CC0);
 		}
 
 		static ::System::Void _cctor()

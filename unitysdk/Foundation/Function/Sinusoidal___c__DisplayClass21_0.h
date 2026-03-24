@@ -4,7 +4,7 @@
 
 namespace Foundation::Function
 {
-	inline static constexpr unsigned int Sinusoidal___c__DisplayClass21_0_TypeDefinitionIndex = 9058;
+	inline static constexpr unsigned int Sinusoidal___c__DisplayClass21_0_TypeDefinitionIndex = 8935;
 
 	struct alignas(8) Sinusoidal___c__DisplayClass21_0
 	{

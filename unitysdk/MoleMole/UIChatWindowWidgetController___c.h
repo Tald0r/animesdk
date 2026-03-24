@@ -6,44 +6,44 @@ class Class_1_B1CC8F53861C28C2;
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAA9840)
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAA9880)
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__INITEMPTYCIRCLECONTENT_B__77_1_OFFSET UNITYSDK_OFFSET(0xCAA98B0)
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEEMOJI_B__82_0_OFFSET UNITYSDK_OFFSET(0xCAA98D0)
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEMSG_B__81_2_OFFSET UNITYSDK_OFFSET(0xCAA98C0)
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDFRIENDEMOJI_B__52_1_OFFSET UNITYSDK_OFFSET(0xCAA98A0)
-#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDFRIENDMSG_B__46_2_OFFSET UNITYSDK_OFFSET(0xCAA9890)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCB2FC00)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCB2FC40)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__INITEMPTYCIRCLECONTENT_B__77_1_OFFSET UNITYSDK_OFFSET(0xCB2FC70)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEEMOJI_B__83_0_OFFSET UNITYSDK_OFFSET(0xCB2FC90)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEMSG_B__82_2_OFFSET UNITYSDK_OFFSET(0xCB2FC80)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDFRIENDEMOJI_B__52_1_OFFSET UNITYSDK_OFFSET(0xCB2FC60)
+#define MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDFRIENDMSG_B__46_2_OFFSET UNITYSDK_OFFSET(0xCB2FC50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIChatWindowWidgetController___c_TypeDefinitionIndex = 57448;
+	inline static constexpr unsigned int UIChatWindowWidgetController___c_TypeDefinitionIndex = 44644;
 
 	class UIChatWindowWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__82_0()
+		static ::System::Action** StaticGet___9__77_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2FE00);
-		}
-		static ::MoleMole::UIChatWindowWidgetController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIChatWindowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2FE08);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x319C0);
 		}
 		static ::System::Action_1<::Class_1_B1CC8F53861C28C2*>** StaticGet___9__46_2()
 		{
-			return (::System::Action_1<::Class_1_B1CC8F53861C28C2*>**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2FE10);
+			return (::System::Action_1<::Class_1_B1CC8F53861C28C2*>**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x319C8);
+		}
+		static ::System::Action** StaticGet___9__83_0()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x319D0);
+		}
+		static ::System::Action** StaticGet___9__82_2()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x319D8);
+		}
+		static ::MoleMole::UIChatWindowWidgetController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIChatWindowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x319E0);
 		}
 		static ::System::Action_1<::Class_1_B1CC8F53861C28C2*>** StaticGet___9__52_1()
 		{
-			return (::System::Action_1<::Class_1_B1CC8F53861C28C2*>**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2FE18);
-		}
-		static ::System::Action** StaticGet___9__81_2()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2FE20);
-		}
-		static ::System::Action** StaticGet___9__77_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2FE28);
+			return (::System::Action_1<::Class_1_B1CC8F53861C28C2*>**)Il2CppClass::FromTypeDefinitionIndex(UIChatWindowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x319E8);
 		}
 
 		static ::System::Void _cctor()
@@ -71,14 +71,14 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__INITEMPTYCIRCLECONTENT_B__77_1_OFFSET))(this);
 		}
 
-		::System::Void _OnClickSendCircleMsg_b__81_2()
+		::System::Void _OnClickSendCircleMsg_b__82_2()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEMSG_B__81_2_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEMSG_B__82_2_OFFSET))(this);
 		}
 
-		::System::Void _OnClickSendCircleEmoji_b__82_0()
+		::System::Void _OnClickSendCircleEmoji_b__83_0()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEEMOJI_B__82_0_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UICHATWINDOWWIDGETCONTROLLER___C__ONCLICKSENDCIRCLEEMOJI_B__83_0_OFFSET))(this);
 		}
 	};
 }

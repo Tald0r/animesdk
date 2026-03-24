@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/EventArgs.h"
 
-class Class_0_16E4307DCC419505_312;
+class Class_0_16E4307DCC419505_178;
 
-inline static constexpr unsigned int Class_2_7AC003C73A89428A_TypeDefinitionIndex = 61575;
+inline static constexpr unsigned int Class_2_7AC003C73A89428A_TypeDefinitionIndex = 79747;
 
 template <typename T>
 class Class_2_7AC003C73A89428A : public ::System::EventArgs

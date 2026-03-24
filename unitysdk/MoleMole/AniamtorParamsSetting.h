@@ -5,21 +5,21 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_ANIAMTORPARAMSSETTING_TOSTRING_OFFSET UNITYSDK_OFFSET(0x8482C40)
-#define MOLEMOLE_ANIAMTORPARAMSSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x8482A70)
-#define MOLEMOLE_ANIAMTORPARAMSSETTING___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x8482D30)
+#define MOLEMOLE_ANIAMTORPARAMSSETTING_TOSTRING_OFFSET UNITYSDK_OFFSET(0x94DB140)
+#define MOLEMOLE_ANIAMTORPARAMSSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x94DAF70)
+#define MOLEMOLE_ANIAMTORPARAMSSETTING___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x94DB230)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AniamtorParamsSetting_TypeDefinitionIndex = 53269;
+	inline static constexpr unsigned int AniamtorParamsSetting_TypeDefinitionIndex = 71560;
 
 	class AniamtorParamsSetting : public ::System::Object
 	{
 	public:
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* BooleanDict; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* IntegerDict; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>* FloatDict; // 0x18
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* TriggerDict; // 0x20
-		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>* FloatDict; // 0x28
+		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* IntegerDict; // 0x28
 
 		::System::Void _ctor()
 		{

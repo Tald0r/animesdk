@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int DownSampleLevel_TypeDefinitionIndex = 28682;
+	inline static constexpr unsigned int DownSampleLevel_TypeDefinitionIndex = 29625;
 
 	enum class DownSampleLevel : ::System::Int32
 	{

@@ -3,12 +3,12 @@
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Parallel_ParallelPolicy_TypeDefinitionIndex = 25559;
+	inline static constexpr unsigned int Parallel_ParallelPolicy_TypeDefinitionIndex = 27246;
 
 	enum class Parallel_ParallelPolicy : ::System::Int32
 	{
-		FirstSuccess = 1,
-		FirstFailure = 0,
 		FirstSuccessOrFailure = 2,
+		FirstFailure = 0,
+		FirstSuccess = 1,
 	};
 }

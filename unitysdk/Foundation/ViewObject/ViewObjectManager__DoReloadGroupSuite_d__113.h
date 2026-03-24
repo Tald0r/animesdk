@@ -6,26 +6,26 @@
 #include "unitysdk/System/Threading/CancellationToken.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_3_3EC97B498E0B85D2_1;
+class Class_3_3EC97B498E0B85D2;
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADGROUPSUITE_D__113_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x378C40)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADGROUPSUITE_D__113_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADGROUPSUITE_D__113_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37BCB0)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADGROUPSUITE_D__113_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectManager__DoReloadGroupSuite_d__113_TypeDefinitionIndex = 49688;
+	inline static constexpr unsigned int ViewObjectManager__DoReloadGroupSuite_d__113_TypeDefinitionIndex = 74584;
 
 	struct alignas(8) ViewObjectManager__DoReloadGroupSuite_d__113
 	{
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x10
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x20
-		::Class_3_3EC97B498E0B85D2_1* reason; // 0x30
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::Int32> __u__1; // 0x38
-		::System::Threading::CancellationToken token; // 0x48
+		::Class_3_3EC97B498E0B85D2* reason; // 0x10
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x18
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
+		::System::Threading::CancellationToken token; // 0x38
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::Int32> __u__1; // 0x40
 		::System::UInt32 suiteIndex; // 0x50
-		::System::Int32 __1__state; // 0x54
-		::System::UInt32 groupID; // 0x58
+		::System::UInt32 groupID; // 0x54
+		::System::Int32 __1__state; // 0x58
 
 		::System::Void MoveNext()
 		{

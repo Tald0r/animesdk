@@ -1,11 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/Config/BaseProperty.h"
+#include "unitysdk/System/Nullable_1.h"
 
-namespace System { class String; }
+inline static constexpr unsigned int Class_0_16E4307DCC419505_337_TypeDefinitionIndex = 43893;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_337_TypeDefinitionIndex = 58359;
-
+template <typename TCustomAction>
 class Class_0_16E4307DCC419505_337
 {
 public:

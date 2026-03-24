@@ -8,7 +8,7 @@ namespace System::Linq::Expressions { template <typename T> class Expression_1; 
 
 namespace SQLite
 {
-	inline static constexpr unsigned int SQLiteAsyncConnection___c__DisplayClass70_0_1_TypeDefinitionIndex = 35305;
+	inline static constexpr unsigned int SQLiteAsyncConnection___c__DisplayClass70_0_1_TypeDefinitionIndex = 36307;
 
 	template <typename T>
 	class SQLiteAsyncConnection___c__DisplayClass70_0_1 : public ::System::Object

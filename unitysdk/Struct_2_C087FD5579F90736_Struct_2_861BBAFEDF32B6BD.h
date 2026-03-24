@@ -6,9 +6,9 @@
 #include "unitysdk/Foundation/Unreal/FTransform3D.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_C087FD5579F90736_STRUCT_2_861BBAFEDF32B6BD_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x2F7B90)
+#define STRUCT_2_C087FD5579F90736_STRUCT_2_861BBAFEDF32B6BD_METHOD_2_C74CF020AA42ED85_OFFSET UNITYSDK_OFFSET(0x36D470)
 
-inline static constexpr unsigned int Struct_2_C087FD5579F90736_Struct_2_861BBAFEDF32B6BD_TypeDefinitionIndex = 62757;
+inline static constexpr unsigned int Struct_2_C087FD5579F90736_Struct_2_861BBAFEDF32B6BD_TypeDefinitionIndex = 61611;
 
 struct alignas(8) Struct_2_C087FD5579F90736_Struct_2_861BBAFEDF32B6BD
 {

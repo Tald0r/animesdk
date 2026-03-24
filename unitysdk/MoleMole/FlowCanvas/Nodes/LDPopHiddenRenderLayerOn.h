@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPHIDDENRENDERLAYERON_INVOKE_OFFSET UNITYSDK_OFFSET(0xF1A6A10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPHIDDENRENDERLAYERON__CTOR_OFFSET UNITYSDK_OFFSET(0xF1A6B90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPHIDDENRENDERLAYERON_INVOKE_OFFSET UNITYSDK_OFFSET(0xB980940)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDPOPHIDDENRENDERLAYERON__CTOR_OFFSET UNITYSDK_OFFSET(0xB980AC0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDPopHiddenRenderLayerOn_TypeDefinitionIndex = 39160;
+	inline static constexpr unsigned int LDPopHiddenRenderLayerOn_TypeDefinitionIndex = 69696;
 
 	class LDPopHiddenRenderLayerOn : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::String*>
 	{

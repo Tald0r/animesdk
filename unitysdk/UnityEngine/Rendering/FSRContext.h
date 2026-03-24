@@ -8,7 +8,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int FSRContext_TypeDefinitionIndex = 6135;
+	inline static constexpr unsigned int FSRContext_TypeDefinitionIndex = 6139;
 
 	struct alignas(8) FSRContext
 	{
@@ -23,10 +23,16 @@ namespace UnityEngine::Rendering
 		::System::Boolean indicatorInvertAxisX; // 0x2D
 		::System::Boolean indicatorInvertAxisY; // 0x2E
 		::System::Boolean useAutoExposure; // 0x2F
-		::UnityEngine::Rendering::FSRConstants constants; // 0x30
-		::UnityEngine::Rendering::RenderTargetIdentifier colorIn; // 0x1D8
-		::UnityEngine::Rendering::RenderTargetIdentifier colorOut; // 0x200
-		::UnityEngine::Rendering::RenderTargetIdentifier depth; // 0x228
-		::UnityEngine::Rendering::RenderTargetIdentifier motion; // 0x250
+		::System::Boolean useHudlessColor; // 0x30
+		::System::Boolean useOffScreenUI; // 0x31
+		::UnityEngine::Rendering::FSRConstants constants; // 0x34
+		::UnityEngine::Rendering::RenderTargetIdentifier colorIn; // 0x1E0
+		::UnityEngine::Rendering::RenderTargetIdentifier colorOut; // 0x208
+		::UnityEngine::Rendering::RenderTargetIdentifier depth; // 0x230
+		::UnityEngine::Rendering::RenderTargetIdentifier motion; // 0x258
+		::UnityEngine::Rendering::RenderTargetIdentifier frameGenDepth; // 0x280
+		::UnityEngine::Rendering::RenderTargetIdentifier frameGenMotion; // 0x2A8
+		::UnityEngine::Rendering::RenderTargetIdentifier hudlessColor; // 0x2D0
+		::UnityEngine::Rendering::RenderTargetIdentifier offScreenUI; // 0x2F8
 	};
 }

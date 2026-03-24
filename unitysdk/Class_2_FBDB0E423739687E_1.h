@@ -4,9 +4,9 @@
 
 namespace System { class Action; }
 
-#define CLASS_2_FBDB0E423739687E_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBB5FCC0)
+#define CLASS_2_FBDB0E423739687E_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD48F850)
 
-inline static constexpr unsigned int Class_2_FBDB0E423739687E_1_TypeDefinitionIndex = 71493;
+inline static constexpr unsigned int Class_2_FBDB0E423739687E_1_TypeDefinitionIndex = 72118;
 
 class Class_2_FBDB0E423739687E_1 : public ::ResourceModeBase
 {

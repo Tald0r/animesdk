@@ -4,24 +4,24 @@
 
 namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 
-#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x71E2570)
-#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA___C__CTOR_OFFSET UNITYSDK_OFFSET(0x71E25B0)
-#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA___C__GET_CURTAGWITHOUTHIDING_B__13_0_OFFSET UNITYSDK_OFFSET(0x71E25C0)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAB1930)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAB1970)
+#define MOLEMOLE_UIVHSSTORELIMITWIDGETCONTROLLER_CONTEXT_DATA___C__GET_CURTAGWITHOUTHIDING_B__13_0_OFFSET UNITYSDK_OFFSET(0xCAB1980)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreLimitWidgetController_Context_Data___c_TypeDefinitionIndex = 42287;
+	inline static constexpr unsigned int UIVHSStoreLimitWidgetController_Context_Data___c_TypeDefinitionIndex = 43523;
 
 	class UIVHSStoreLimitWidgetController_Context_Data___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_3<::System::UInt32, ::System::Int32, ::System::Boolean>** StaticGet___9__13_0()
-		{
-			return (::System::Func_3<::System::UInt32, ::System::Int32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_Context_Data___c_TypeDefinitionIndex)->GetStaticField(0x44140);
-		}
 		static ::MoleMole::UIVHSStoreLimitWidgetController_Context_Data___c** StaticGet___9()
 		{
-			return (::MoleMole::UIVHSStoreLimitWidgetController_Context_Data___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_Context_Data___c_TypeDefinitionIndex)->GetStaticField(0x44148);
+			return (::MoleMole::UIVHSStoreLimitWidgetController_Context_Data___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_Context_Data___c_TypeDefinitionIndex)->GetStaticField(0x444E0);
+		}
+		static ::System::Func_3<::System::UInt32, ::System::Int32, ::System::Boolean>** StaticGet___9__13_0()
+		{
+			return (::System::Func_3<::System::UInt32, ::System::Int32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreLimitWidgetController_Context_Data___c_TypeDefinitionIndex)->GetStaticField(0x444E8);
 		}
 
 		static ::System::Void _cctor()

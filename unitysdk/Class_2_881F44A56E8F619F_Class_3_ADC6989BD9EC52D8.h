@@ -17,28 +17,28 @@ namespace UnityEngine { class RenderTexture; }
 template <typename T> class Class_2_000597E145D7A42A;
 template <typename T> class Class_2_75527B5277EE1A90;
 
-#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8_METHOD_3_2B45EBE62D53D449_OFFSET UNITYSDK_OFFSET(0xB67EA00)
-#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8_METHOD_3_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0xB67E960)
-#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0xB67E900)
-#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8__CTOR_OFFSET UNITYSDK_OFFSET(0xB67E890)
+#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8_METHOD_3_2B45EBE62D53D449_OFFSET UNITYSDK_OFFSET(0x9B3CCF0)
+#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8_METHOD_3_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x9B3CC50)
+#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x9B3CBF0)
+#define CLASS_2_881F44A56E8F619F_CLASS_3_ADC6989BD9EC52D8__CTOR_OFFSET UNITYSDK_OFFSET(0x9B3CB80)
 
-inline static constexpr unsigned int Class_2_881F44A56E8F619F_Class_3_ADC6989BD9EC52D8_TypeDefinitionIndex = 44566;
+inline static constexpr unsigned int Class_2_881F44A56E8F619F_Class_3_ADC6989BD9EC52D8_TypeDefinitionIndex = 48969;
 
 class Class_2_881F44A56E8F619F_Class_3_ADC6989BD9EC52D8 : public ::Class_2_7F2D530A061B6231
 {
 public:
-	::Class_2_000597E145D7A42A<::System::Collections::Generic::List_1<::MoleMole::UIUrbanMapPointWidgetContext*>*>* Field_3_6; // 0xA8
-	::Class_2_75527B5277EE1A90<::System::Boolean>* Field_3_0; // 0xB0
-	::Class_2_000597E145D7A42A<::MoleMole::UIUrbanMapRightTastListWidget02WidgetContext*>* Field_3_4; // 0xB8
-	::Class_2_000597E145D7A42A<::UnityEngine::Vector2>* Field_3_9; // 0xC0
+	::Class_2_000597E145D7A42A<::UnityEngine::Vector2>* Field_3_9; // 0xA8
+	::Class_2_000597E145D7A42A<::UnityEngine::Bounds>* Field_3_7; // 0xB0
+	::Class_2_000597E145D7A42A<::MoleMole::UIUrbanMapPointWidgetContext*>* Field_3_11; // 0xB8
+	::Class_2_000597E145D7A42A<::MoleMole::UIUrbanMapRightTastListWidget02WidgetContext*>* Field_3_4; // 0xC0
 	::Class_2_000597E145D7A42A<::MoleMole::MonoGamepadVirtualCursor*>* Field_3_10; // 0xC8
-	::Class_2_000597E145D7A42A<::MoleMole::UIUrbanMapRightTastListWidget02WidgetContext*>* Field_3_5; // 0xD0
-	::Class_2_000597E145D7A42A<::UnityEngine::RenderTexture*>* Field_3_1; // 0xD8
-	::Class_2_000597E145D7A42A<::UnityEngine::Bounds>* Field_3_7; // 0xE0
-	::Class_2_000597E145D7A42A<::UnityEngine::Rect>* Field_3_8; // 0xE8
-	::Class_2_000597E145D7A42A<::MoleMole::UIUrbanMapPointWidgetContext*>* Field_3_11; // 0xF0
-	::Class_2_000597E145D7A42A<::System::Nullable_1<::UnityEngine::Vector3>>* Field_3_3; // 0xF8
-	::Class_2_000597E145D7A42A<::System::Int32>* Field_3_2; // 0x100
+	::Class_2_000597E145D7A42A<::System::Int32>* Field_3_2; // 0xD0
+	::Class_2_000597E145D7A42A<::System::Nullable_1<::UnityEngine::Vector3>>* Field_3_3; // 0xD8
+	::Class_2_000597E145D7A42A<::MoleMole::UIUrbanMapRightTastListWidget02WidgetContext*>* Field_3_5; // 0xE0
+	::Class_2_000597E145D7A42A<::System::Collections::Generic::List_1<::MoleMole::UIUrbanMapPointWidgetContext*>*>* Field_3_6; // 0xE8
+	::Class_2_75527B5277EE1A90<::System::Boolean>* Field_3_0; // 0xF0
+	::Class_2_000597E145D7A42A<::UnityEngine::Rect>* Field_3_8; // 0xF8
+	::Class_2_000597E145D7A42A<::UnityEngine::RenderTexture*>* Field_3_1; // 0x100
 
 	::System::Void _ctor()
 	{

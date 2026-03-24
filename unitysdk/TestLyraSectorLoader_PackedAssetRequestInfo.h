@@ -5,9 +5,9 @@
 
 namespace LyraSector { class LyraPackedAsset; }
 
-#define TESTLYRASECTORLOADER_PACKEDASSETREQUESTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1923C230)
+#define TESTLYRASECTORLOADER_PACKEDASSETREQUESTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x19661010)
 
-inline static constexpr unsigned int TestLyraSectorLoader_PackedAssetRequestInfo_TypeDefinitionIndex = 28106;
+inline static constexpr unsigned int TestLyraSectorLoader_PackedAssetRequestInfo_TypeDefinitionIndex = 29046;
 
 class TestLyraSectorLoader_PackedAssetRequestInfo : public ::System::Object
 {

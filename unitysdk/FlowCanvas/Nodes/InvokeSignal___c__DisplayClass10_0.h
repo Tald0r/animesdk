@@ -6,12 +6,12 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas::Nodes { class InvokeSignal; }
 
-#define FLOWCANVAS_NODES_INVOKESIGNAL___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19E8E660)
-#define FLOWCANVAS_NODES_INVOKESIGNAL___C__DISPLAYCLASS10_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x19E8E670)
+#define FLOWCANVAS_NODES_INVOKESIGNAL___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A47BE40)
+#define FLOWCANVAS_NODES_INVOKESIGNAL___C__DISPLAYCLASS10_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A47BE50)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int InvokeSignal___c__DisplayClass10_0_TypeDefinitionIndex = 26534;
+	inline static constexpr unsigned int InvokeSignal___c__DisplayClass10_0_TypeDefinitionIndex = 27449;
 
 	class InvokeSignal___c__DisplayClass10_0 : public ::System::Object
 	{

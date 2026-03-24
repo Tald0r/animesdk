@@ -8,11 +8,11 @@
 namespace MoleMole::Config { class ICharacterAssistAimConfig; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CHARACTERAIMCONTROLCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x89F0700)
+#define MOLEMOLE_CONFIG_CHARACTERAIMCONTROLCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x10A88A10)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CharacterAimControlConfig_TypeDefinitionIndex = 74331;
+	inline static constexpr unsigned int CharacterAimControlConfig_TypeDefinitionIndex = 72573;
 
 	class CharacterAimControlConfig : public ::System::Object
 	{

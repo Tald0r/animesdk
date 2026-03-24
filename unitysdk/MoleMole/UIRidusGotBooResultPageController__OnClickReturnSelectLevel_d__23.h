@@ -6,12 +6,12 @@
 namespace MoleMole { class UIRidusGotBooResultPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLER__ONCLICKRETURNSELECTLEVEL_D__23_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3857A0)
-#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLER__ONCLICKRETURNSELECTLEVEL_D__23_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2C7C30)
+#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLER__ONCLICKRETURNSELECTLEVEL_D__23_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x39B880)
+#define MOLEMOLE_UIRIDUSGOTBOORESULTPAGECONTROLLER__ONCLICKRETURNSELECTLEVEL_D__23_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2EA620)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooResultPageController__OnClickReturnSelectLevel_d__23_TypeDefinitionIndex = 70955;
+	inline static constexpr unsigned int UIRidusGotBooResultPageController__OnClickReturnSelectLevel_d__23_TypeDefinitionIndex = 47125;
 
 	struct alignas(8) UIRidusGotBooResultPageController__OnClickReturnSelectLevel_d__23
 	{

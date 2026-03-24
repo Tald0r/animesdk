@@ -6,28 +6,28 @@ namespace TapTap::Sdk { class UIElement; }
 namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class RectTransform; }
 
-#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1A7CBBC0)
-#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A7CC120)
-#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1A7CC180)
-#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1A7CC130)
-#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A7CBBB0)
-#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7CB550)
+#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1ADAD890)
+#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_COLLECTIONS_GENERIC_IENUMERATOR_SYSTEM_OBJECT__GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1ADADDF0)
+#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1ADADE50)
+#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x1ADADE00)
+#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21_SYSTEM_IDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1ADAD880)
+#define TAPTAP_SDK_UIELEMENT__PLAYEXIT_D__21__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADAD220)
 
 namespace TapTap::Sdk
 {
-	inline static constexpr unsigned int UIElement__PlayExit_d__21_TypeDefinitionIndex = 9457;
+	inline static constexpr unsigned int UIElement__PlayExit_d__21_TypeDefinitionIndex = 9459;
 
 	class UIElement__PlayExit_d__21 : public ::System::Object
 	{
 	public:
-		::System::Object* __2__current; // 0x10
-		::UnityEngine::RectTransform* _rectTransform_5__5; // 0x18
-		::UnityEngine::CanvasGroup* _canvasGroup_5__4; // 0x20
-		::TapTap::Sdk::UIElement* __4__this; // 0x28
-		::System::Single _startTime_5__2; // 0x30
-		::System::Single _targetX_5__6; // 0x34
-		::System::Single _endTime_5__3; // 0x38
-		::System::Int32 __1__state; // 0x3C
+		::UnityEngine::CanvasGroup* _canvasGroup_5__4; // 0x10
+		::System::Object* __2__current; // 0x18
+		::TapTap::Sdk::UIElement* __4__this; // 0x20
+		::UnityEngine::RectTransform* _rectTransform_5__5; // 0x28
+		::System::Single _endTime_5__3; // 0x30
+		::System::Int32 __1__state; // 0x34
+		::System::Single _startTime_5__2; // 0x38
+		::System::Single _targetX_5__6; // 0x3C
 
 		::System::Void _ctor(::System::Int32 __1__state)
 		{

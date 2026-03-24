@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UICOOPROULETTSETTINGROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xBEEB4E0)
+#define MOLEMOLE_UICOOPROULETTSETTINGROWWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA95BAA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopRoulettSettingRowWidgetController_Data_TypeDefinitionIndex = 70384;
+	inline static constexpr unsigned int UICoopRoulettSettingRowWidgetController_Data_TypeDefinitionIndex = 51254;
 
 	class UICoopRoulettSettingRowWidgetController_Data : public ::System::Object
 	{

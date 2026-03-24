@@ -5,24 +5,24 @@
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Reflection { class CustomAttributeData; }
 
-#define SQLITE_ENUMCACHEINFO___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A063F40)
-#define SQLITE_ENUMCACHEINFO___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A063F80)
-#define SQLITE_ENUMCACHEINFO___C___CTOR_B__0_0_OFFSET UNITYSDK_OFFSET(0x1A063F90)
+#define SQLITE_ENUMCACHEINFO___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A62FD60)
+#define SQLITE_ENUMCACHEINFO___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A62FDA0)
+#define SQLITE_ENUMCACHEINFO___C___CTOR_B__0_0_OFFSET UNITYSDK_OFFSET(0x1A62FDB0)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int EnumCacheInfo___c_TypeDefinitionIndex = 35245;
+	inline static constexpr unsigned int EnumCacheInfo___c_TypeDefinitionIndex = 36247;
 
 	class EnumCacheInfo___c : public ::System::Object
 	{
 	public:
 		static ::SQLite::EnumCacheInfo___c** StaticGet___9()
 		{
-			return (::SQLite::EnumCacheInfo___c**)Il2CppClass::FromTypeDefinitionIndex(EnumCacheInfo___c_TypeDefinitionIndex)->GetStaticField(0x24D00);
+			return (::SQLite::EnumCacheInfo___c**)Il2CppClass::FromTypeDefinitionIndex(EnumCacheInfo___c_TypeDefinitionIndex)->GetStaticField(0x26730);
 		}
 		static ::System::Func_2<::System::Reflection::CustomAttributeData*, ::System::Boolean>** StaticGet___9__0_0()
 		{
-			return (::System::Func_2<::System::Reflection::CustomAttributeData*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(EnumCacheInfo___c_TypeDefinitionIndex)->GetStaticField(0x24D08);
+			return (::System::Func_2<::System::Reflection::CustomAttributeData*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(EnumCacheInfo___c_TypeDefinitionIndex)->GetStaticField(0x26738);
 		}
 
 		static ::System::Void _cctor()

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define ICSHARPCODE_SHARPZIPLIB_CORE_WINDOWSPATHUTILS_DROPPATHROOT_OFFSET UNITYSDK_OFFSET(0x1AD953D0)
-#define ICSHARPCODE_SHARPZIPLIB_CORE_WINDOWSPATHUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD953C0)
+#define ICSHARPCODE_SHARPZIPLIB_CORE_WINDOWSPATHUTILS_DROPPATHROOT_OFFSET UNITYSDK_OFFSET(0x1B39D920)
+#define ICSHARPCODE_SHARPZIPLIB_CORE_WINDOWSPATHUTILS__CTOR_OFFSET UNITYSDK_OFFSET(0x1B39D910)
 
 namespace ICSharpCode::SharpZipLib::Core
 {
-	inline static constexpr unsigned int WindowsPathUtils_TypeDefinitionIndex = 6658;
+	inline static constexpr unsigned int WindowsPathUtils_TypeDefinitionIndex = 6662;
 
 	class WindowsPathUtils : public ::System::Object
 	{

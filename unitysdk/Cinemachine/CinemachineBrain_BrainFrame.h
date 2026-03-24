@@ -5,12 +5,12 @@
 namespace Cinemachine { class BlendSourceVirtualCamera; }
 namespace Cinemachine { class CinemachineBlend; }
 
-#define CINEMACHINE_CINEMACHINEBRAIN_BRAINFRAME_GET_ACTIVE_OFFSET UNITYSDK_OFFSET(0x1B096150)
-#define CINEMACHINE_CINEMACHINEBRAIN_BRAINFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x1B096170)
+#define CINEMACHINE_CINEMACHINEBRAIN_BRAINFRAME_GET_ACTIVE_OFFSET UNITYSDK_OFFSET(0x1B6A25F0)
+#define CINEMACHINE_CINEMACHINEBRAIN_BRAINFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6A2610)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int CinemachineBrain_BrainFrame_TypeDefinitionIndex = 30980;
+	inline static constexpr unsigned int CinemachineBrain_BrainFrame_TypeDefinitionIndex = 31932;
 
 	class CinemachineBrain_BrainFrame : public ::System::Object
 	{

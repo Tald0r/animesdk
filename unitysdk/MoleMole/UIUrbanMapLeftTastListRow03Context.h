@@ -6,11 +6,11 @@ class Class_1_8459E51EACDDD3EF;
 namespace System { template <typename T> class Action_1; }
 template <typename T> class Class_1_634159F7561ADAA0;
 
-#define MOLEMOLE_UIURBANMAPLEFTTASTLISTROW03CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAAA7510)
+#define MOLEMOLE_UIURBANMAPLEFTTASTLISTROW03CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x95A7350)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapLeftTastListRow03Context_TypeDefinitionIndex = 49831;
+	inline static constexpr unsigned int UIUrbanMapLeftTastListRow03Context_TypeDefinitionIndex = 69225;
 
 	class UIUrbanMapLeftTastListRow03Context : public ::MoleMole::UIControllerContextBase
 	{

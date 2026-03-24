@@ -8,7 +8,7 @@ namespace UnityEngine { class GameObject; }
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int SelectOnTag_1___c__DisplayClass1_0_TypeDefinitionIndex = 25141;
+	inline static constexpr unsigned int SelectOnTag_1___c__DisplayClass1_0_TypeDefinitionIndex = 27179;
 
 	template <typename T>
 	class SelectOnTag_1___c__DisplayClass1_0 : public ::System::Object

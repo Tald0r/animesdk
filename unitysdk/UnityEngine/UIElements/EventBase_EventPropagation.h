@@ -3,7 +3,7 @@
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int EventBase_EventPropagation_TypeDefinitionIndex = 23805;
+	inline static constexpr unsigned int EventBase_EventPropagation_TypeDefinitionIndex = 24488;
 
 	enum class EventBase_EventPropagation : ::System::Int32
 	{

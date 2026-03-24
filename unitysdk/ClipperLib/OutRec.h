@@ -5,22 +5,22 @@
 namespace ClipperLib { class OutPt; }
 namespace ClipperLib { class PolyNode; }
 
-#define CLIPPERLIB_OUTREC__CTOR_OFFSET UNITYSDK_OFFSET(0x19BB2C50)
+#define CLIPPERLIB_OUTREC__CTOR_OFFSET UNITYSDK_OFFSET(0x1A197350)
 
 namespace ClipperLib
 {
-	inline static constexpr unsigned int OutRec_TypeDefinitionIndex = 29753;
+	inline static constexpr unsigned int OutRec_TypeDefinitionIndex = 30706;
 
 	class OutRec : public ::System::Object
 	{
 	public:
-		::ClipperLib::PolyNode* PolyNode; // 0x10
+		::ClipperLib::OutRec* FirstLeft; // 0x10
 		::ClipperLib::OutPt* BottomPt; // 0x18
-		::ClipperLib::OutRec* FirstLeft; // 0x20
-		::ClipperLib::OutPt* Pts; // 0x28
-		::System::Boolean IsOpen; // 0x30
-		::System::Boolean IsHole; // 0x31
-		::System::Int32 Idx; // 0x34
+		::ClipperLib::OutPt* Pts; // 0x20
+		::ClipperLib::PolyNode* PolyNode; // 0x28
+		::System::Int32 Idx; // 0x30
+		::System::Boolean IsHole; // 0x34
+		::System::Boolean IsOpen; // 0x35
 
 		::System::Void _ctor()
 		{

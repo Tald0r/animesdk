@@ -9,22 +9,22 @@
 
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADALLGROUP_D__112_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x345800)
-#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADALLGROUP_D__112_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADALLGROUP_D__112_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B2C70)
+#define FOUNDATION_VIEWOBJECT_VIEWOBJECTMANAGER__DORELOADALLGROUP_D__112_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectManager__DoReloadAllGroup_d__112_TypeDefinitionIndex = 49691;
+	inline static constexpr unsigned int ViewObjectManager__DoReloadAllGroup_d__112_TypeDefinitionIndex = 74567;
 
 	struct alignas(8) ViewObjectManager__DoReloadAllGroup_d__112
 	{
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x10
 		::System::Threading::CancellationToken token; // 0x20
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::Int32> __u__1; // 0x28
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x38
-		::UnityEngine::Vector3 targetRotation; // 0x48
-		::UnityEngine::Vector3 targetPosition; // 0x54
-		::System::Int32 __1__state; // 0x60
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::Int32> __u__1; // 0x38
+		::System::Int32 __1__state; // 0x48
+		::UnityEngine::Vector3 targetRotation; // 0x4C
+		::UnityEngine::Vector3 targetPosition; // 0x58
 
 		::System::Void MoveNext()
 		{

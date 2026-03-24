@@ -11,26 +11,26 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define CLASS_2_43FA4FF0D1457215_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0xB112D80)
-#define CLASS_2_43FA4FF0D1457215_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0xB112FC0)
-#define CLASS_2_43FA4FF0D1457215_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB113090)
-#define CLASS_2_43FA4FF0D1457215__CTOR_OFFSET UNITYSDK_OFFSET(0xB113080)
+#define CLASS_2_43FA4FF0D1457215_METHOD_2_87DF7AD2E0AB49C9_OFFSET UNITYSDK_OFFSET(0x6B87CC0)
+#define CLASS_2_43FA4FF0D1457215_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x6B87F00)
+#define CLASS_2_43FA4FF0D1457215_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6B87FD0)
+#define CLASS_2_43FA4FF0D1457215__CTOR_OFFSET UNITYSDK_OFFSET(0x6B87FC0)
 
-inline static constexpr unsigned int Class_2_43FA4FF0D1457215_TypeDefinitionIndex = 50131;
+inline static constexpr unsigned int Class_2_43FA4FF0D1457215_TypeDefinitionIndex = 56412;
 
 class Class_2_43FA4FF0D1457215 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x18
-	::UnityEngine::RectTransform* Field_2_0; // 0x20
-	::UnityEngine::UI::Extension::UITabButton* Field_2_8; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x38
-	::UnityEngine::RectTransform* Field_2_2; // 0x40
-	::MoleMole::NotificationBadgeEx* Field_2_9; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x50
-	::UnityEngine::RectTransform* Field_2_1; // 0x58
-	::MoleMole::NotificationBadge* Field_2_7; // 0x60
+	::UnityEngine::UI::Extension::UITabButton* Field_2_8; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x28
+	::UnityEngine::RectTransform* Field_2_0; // 0x30
+	::MoleMole::NotificationBadgeEx* Field_2_9; // 0x38
+	::MoleMole::NotificationBadge* Field_2_7; // 0x40
+	::UnityEngine::RectTransform* Field_2_2; // 0x48
+	::UnityEngine::RectTransform* Field_2_1; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x58
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x60
 
 	::System::Void _ctor()
 	{

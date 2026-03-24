@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace MoleMole::Config::DisplayCase
 {
-	inline static constexpr unsigned int DisplayCaseCfgData_TypeDefinitionIndex = 62850;
+	inline static constexpr unsigned int DisplayCaseCfgData_TypeDefinitionIndex = 52158;
 
 	struct alignas(8) DisplayCaseCfgData
 	{

@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_RESOURCEVARIABLES__CCTOR_OFFSET UNITYSDK_OFFSET(0xA036FF0)
+#define FOUNDATION_RESOURCEVARIABLES__CCTOR_OFFSET UNITYSDK_OFFSET(0x9776FE0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ResourceVariables_TypeDefinitionIndex = 63000;
+	inline static constexpr unsigned int ResourceVariables_TypeDefinitionIndex = 57719;
 
 	class ResourceVariables : public ::System::Object
 	{
 	public:
 		static ::System::String** StaticGet_Scene_Level_Zero_Loop_Path()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(ResourceVariables_TypeDefinitionIndex)->GetStaticField(0x43740);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(ResourceVariables_TypeDefinitionIndex)->GetStaticField(0x449A0);
 		}
 
 		static ::System::Void _cctor()

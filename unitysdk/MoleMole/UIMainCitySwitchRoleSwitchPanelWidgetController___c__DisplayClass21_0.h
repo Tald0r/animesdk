@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIMAINCITYSWITCHROLESWITCHPANELWIDGETCONTROLLER___C__DISPLAYCLASS21_0__CLOSEANDCHANGEMODEL_B__0_OFFSET UNITYSDK_OFFSET(0x9E7B760)
-#define MOLEMOLE_UIMAINCITYSWITCHROLESWITCHPANELWIDGETCONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9E7B750)
+#define MOLEMOLE_UIMAINCITYSWITCHROLESWITCHPANELWIDGETCONTROLLER___C__DISPLAYCLASS21_0__CLOSEANDCHANGEMODEL_B__0_OFFSET UNITYSDK_OFFSET(0xB6A38A0)
+#define MOLEMOLE_UIMAINCITYSWITCHROLESWITCHPANELWIDGETCONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB6A3890)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCitySwitchRoleSwitchPanelWidgetController___c__DisplayClass21_0_TypeDefinitionIndex = 39073;
+	inline static constexpr unsigned int UIMainCitySwitchRoleSwitchPanelWidgetController___c__DisplayClass21_0_TypeDefinitionIndex = 70251;
 
 	class UIMainCitySwitchRoleSwitchPanelWidgetController___c__DisplayClass21_0 : public ::System::Object
 	{

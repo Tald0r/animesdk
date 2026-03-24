@@ -6,7 +6,7 @@
 #include "unitysdk/DG/Tweening/LoopType.h"
 #include "unitysdk/DG/Tweening/RotateMode.h"
 #include "unitysdk/DG/Tweening/ScrambleMode.h"
-#include "unitysdk/Struct_2_DCB43F73A1CE4CEA.h"
+#include "unitysdk/Struct_2_585AD5687A2E3B86.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/Rect.h"
@@ -14,6 +14,7 @@
 #include "unitysdk/UnityEngine/Vector3.h"
 
 namespace DG::Tweening { class Tween; }
+namespace DG::Tweening { class TweenCallback; }
 namespace System { class String; }
 namespace System { class Type; }
 namespace UnityEngine { class AnimationCurve; }
@@ -21,16 +22,18 @@ namespace UnityEngine { class Component; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEENHANDLE_OFFSET UNITYSDK_OFFSET(0xBD4E4F0)
-#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEEN_OFFSET UNITYSDK_OFFSET(0xBD4CFC0)
-#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_GETCOMPONENT_OFFSET UNITYSDK_OFFSET(0xBD4CF20)
-#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_GET_TRANSFORM_OFFSET UNITYSDK_OFFSET(0xBD4CBE0)
-#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_TYPETODOTARGETTYPE_OFFSET UNITYSDK_OFFSET(0xBD4CCC0)
-#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xBD4E550)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEENHANDLE_OFFSET UNITYSDK_OFFSET(0xB1BF040)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEEN_OFFSET UNITYSDK_OFFSET(0xB1BDA00)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_GETCOMPONENT_OFFSET UNITYSDK_OFFSET(0xB1BD960)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_GET_TRANSFORM_OFFSET UNITYSDK_OFFSET(0xB1BD620)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_GET__ONTWEENFINISHED_OFFSET UNITYSDK_OFFSET(0xB1BEF80)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_ONTWEENFINISHED_OFFSET UNITYSDK_OFFSET(0xB1BF0A0)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_TYPETODOTARGETTYPE_OFFSET UNITYSDK_OFFSET(0xB1BD700)
+#define MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB1BF110)
 
 namespace MoleMole::SceneMark
 {
-	inline static constexpr unsigned int StageTweenAnimData_TypeDefinitionIndex = 62854;
+	inline static constexpr unsigned int StageTweenAnimData_TypeDefinitionIndex = 43568;
 
 	class StageTweenAnimData : public ::System::Object
 	{
@@ -69,6 +72,7 @@ namespace MoleMole::SceneMark
 		::System::Boolean _tweenCreated; // 0xC8
 		::System::Int32 _playCount; // 0xCC
 		::DG::Tweening::Tween* tween; // 0xD0
+		::DG::Tweening::TweenCallback* __OnTweenFinished; // 0xD8
 
 		::System::Void _ctor()
 		{
@@ -95,9 +99,19 @@ namespace MoleMole::SceneMark
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEEN_OFFSET))(this);
 		}
 
-		::Struct_2_DCB43F73A1CE4CEA CreateTweenHandle()
+		::Struct_2_585AD5687A2E3B86 CreateTweenHandle()
 		{
-			return ((::Struct_2_DCB43F73A1CE4CEA(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEENHANDLE_OFFSET))(this);
+			return ((::Struct_2_585AD5687A2E3B86(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_CREATETWEENHANDLE_OFFSET))(this);
+		}
+
+		::DG::Tweening::TweenCallback* get__OnTweenFinished()
+		{
+			return ((::DG::Tweening::TweenCallback*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_GET__ONTWEENFINISHED_OFFSET))(this);
+		}
+
+		::System::Void OnTweenFinished()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SCENEMARK_STAGETWEENANIMDATA_ONTWEENFINISHED_OFFSET))(this);
 		}
 	};
 }

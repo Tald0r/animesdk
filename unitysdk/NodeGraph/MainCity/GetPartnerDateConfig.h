@@ -9,22 +9,22 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG_ONNODEACTIVE_OFFSET UNITYSDK_OFFSET(0x758A220)
-#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x758A170)
-#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7589FB0)
-#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG___BASE_ONNODEACTIVE_OFFSET UNITYSDK_OFFSET(0x758A840)
-#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG___BASE_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x758A850)
+#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG_ONNODEACTIVE_OFFSET UNITYSDK_OFFSET(0x752B840)
+#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x752B790)
+#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x752B5D0)
+#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG___BASE_ONNODEACTIVE_OFFSET UNITYSDK_OFFSET(0x752BE60)
+#define NODEGRAPH_MAINCITY_GETPARTNERDATECONFIG___BASE_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x752BE70)
 
 namespace NodeGraph::MainCity
 {
-	inline static constexpr unsigned int GetPartnerDateConfig_TypeDefinitionIndex = 58384;
+	inline static constexpr unsigned int GetPartnerDateConfig_TypeDefinitionIndex = 67643;
 
 	class GetPartnerDateConfig : public ::NodeGraph::GraphNodeFlow
 	{
 	public:
 		::NodeGraph::GraphOutputValuePort* _fairyList; // 0x58
-		::NodeGraph::GraphOutputValuePort* _hasTurnAni; // 0x60
-		::NodeGraph::GraphOutputValuePort* _centerHeight; // 0x68
+		::NodeGraph::GraphOutputValuePort* _centerHeight; // 0x60
+		::NodeGraph::GraphOutputValuePort* _hasTurnAni; // 0x68
 
 		::System::Void _ctor(::NodeGraph::NodeGraphBase* nodeGraphBase)
 		{

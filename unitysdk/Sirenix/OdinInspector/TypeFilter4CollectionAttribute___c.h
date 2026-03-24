@@ -6,24 +6,24 @@ namespace System { class String; }
 namespace System { class Type; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define SIRENIX_ODININSPECTOR_TYPEFILTER4COLLECTIONATTRIBUTE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB0AF10)
-#define SIRENIX_ODININSPECTOR_TYPEFILTER4COLLECTIONATTRIBUTE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB0AF50)
-#define SIRENIX_ODININSPECTOR_TYPEFILTER4COLLECTIONATTRIBUTE___C___CTOR_B__1_0_OFFSET UNITYSDK_OFFSET(0x1AB0AF60)
+#define SIRENIX_ODININSPECTOR_TYPEFILTER4COLLECTIONATTRIBUTE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B117040)
+#define SIRENIX_ODININSPECTOR_TYPEFILTER4COLLECTIONATTRIBUTE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B117080)
+#define SIRENIX_ODININSPECTOR_TYPEFILTER4COLLECTIONATTRIBUTE___C___CTOR_B__1_0_OFFSET UNITYSDK_OFFSET(0x1B117090)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int TypeFilter4CollectionAttribute___c_TypeDefinitionIndex = 7239;
+	inline static constexpr unsigned int TypeFilter4CollectionAttribute___c_TypeDefinitionIndex = 7244;
 
 	class TypeFilter4CollectionAttribute___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::System::Type*, ::System::String*>** StaticGet___9__1_0()
 		{
-			return (::System::Func_2<::System::Type*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TypeFilter4CollectionAttribute___c_TypeDefinitionIndex)->GetStaticField(0x6000);
+			return (::System::Func_2<::System::Type*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TypeFilter4CollectionAttribute___c_TypeDefinitionIndex)->GetStaticField(0x6040);
 		}
 		static ::Sirenix::OdinInspector::TypeFilter4CollectionAttribute___c** StaticGet___9()
 		{
-			return (::Sirenix::OdinInspector::TypeFilter4CollectionAttribute___c**)Il2CppClass::FromTypeDefinitionIndex(TypeFilter4CollectionAttribute___c_TypeDefinitionIndex)->GetStaticField(0x6008);
+			return (::Sirenix::OdinInspector::TypeFilter4CollectionAttribute___c**)Il2CppClass::FromTypeDefinitionIndex(TypeFilter4CollectionAttribute___c_TypeDefinitionIndex)->GetStaticField(0x6048);
 		}
 
 		static ::System::Void _cctor()

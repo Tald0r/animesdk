@@ -5,24 +5,24 @@
 class Class_3_F2DAD7F45F518868;
 namespace System { template <typename T> class Action_1; }
 
-#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKCONTAINERSUBSYSTEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7E06B60)
-#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKCONTAINERSUBSYSTEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7E06B90)
-#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKCONTAINERSUBSYSTEM___C__UPDATE_B__2_0_OFFSET UNITYSDK_OFFSET(0x7E06BA0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKCONTAINERSUBSYSTEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x65267A0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKCONTAINERSUBSYSTEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x65267D0)
+#define NPCCROWD_GAMEPLAYTASK_NPCGAMEPLAYTASKCONTAINERSUBSYSTEM___C__UPDATE_B__2_0_OFFSET UNITYSDK_OFFSET(0x65267E0)
 
 namespace NPCCrowd::GameplayTask
 {
-	inline static constexpr unsigned int NPCGameplayTaskContainerSubSystem___c_TypeDefinitionIndex = 54546;
+	inline static constexpr unsigned int NPCGameplayTaskContainerSubSystem___c_TypeDefinitionIndex = 39668;
 
 	class NPCGameplayTaskContainerSubSystem___c : public ::System::Object
 	{
 	public:
 		static ::NPCCrowd::GameplayTask::NPCGameplayTaskContainerSubSystem___c** StaticGet___9()
 		{
-			return (::NPCCrowd::GameplayTask::NPCGameplayTaskContainerSubSystem___c**)Il2CppClass::FromTypeDefinitionIndex(NPCGameplayTaskContainerSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x3F2B0);
+			return (::NPCCrowd::GameplayTask::NPCGameplayTaskContainerSubSystem___c**)Il2CppClass::FromTypeDefinitionIndex(NPCGameplayTaskContainerSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x42090);
 		}
 		static ::System::Action_1<::Class_3_F2DAD7F45F518868*>** StaticGet___9__2_0()
 		{
-			return (::System::Action_1<::Class_3_F2DAD7F45F518868*>**)Il2CppClass::FromTypeDefinitionIndex(NPCGameplayTaskContainerSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x3F2B8);
+			return (::System::Action_1<::Class_3_F2DAD7F45F518868*>**)Il2CppClass::FromTypeDefinitionIndex(NPCGameplayTaskContainerSubSystem___c_TypeDefinitionIndex)->GetStaticField(0x42098);
 		}
 
 		static ::System::Void _cctor()

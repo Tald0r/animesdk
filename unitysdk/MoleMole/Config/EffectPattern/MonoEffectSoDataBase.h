@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_EFFECTPATTERN_MONOEFFECTSODATABASE__CTOR_OFFSET UNITYSDK_OFFSET(0xF171020)
+#define MOLEMOLE_CONFIG_EFFECTPATTERN_MONOEFFECTSODATABASE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4FA00)
 
 namespace MoleMole::Config::EffectPattern
 {
-	inline static constexpr unsigned int MonoEffectSoDataBase_TypeDefinitionIndex = 42895;
+	inline static constexpr unsigned int MonoEffectSoDataBase_TypeDefinitionIndex = 76972;
 
 	class MonoEffectSoDataBase : public ::System::Object
 	{

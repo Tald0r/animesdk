@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIACTIVITYBATTLEYCLMISSIONROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDC2EFB0)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLMISSIONROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC355FA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityBattleYCLMissionRowWidgetController_Context_TypeDefinitionIndex = 43550;
+	inline static constexpr unsigned int UIActivityBattleYCLMissionRowWidgetController_Context_TypeDefinitionIndex = 67750;
 
 	class UIActivityBattleYCLMissionRowWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Int32 index; // 0x28
-		::System::Int32 questID; // 0x2C
+		::System::Int32 questID; // 0x28
+		::System::Int32 index; // 0x2C
 
 		::System::Void _ctor()
 		{

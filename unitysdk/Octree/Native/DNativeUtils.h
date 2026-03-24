@@ -4,18 +4,18 @@
 
 namespace Octree::Native { class INativeUtils; }
 
-#define OCTREE_NATIVE_DNATIVEUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x99E2280)
+#define OCTREE_NATIVE_DNATIVEUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0xD5EC710)
 
 namespace Octree::Native
 {
-	inline static constexpr unsigned int DNativeUtils_TypeDefinitionIndex = 76948;
+	inline static constexpr unsigned int DNativeUtils_TypeDefinitionIndex = 50145;
 
 	class DNativeUtils : public ::System::Object
 	{
 	public:
 		static ::Octree::Native::INativeUtils** StaticGet_utilInstance()
 		{
-			return (::Octree::Native::INativeUtils**)Il2CppClass::FromTypeDefinitionIndex(DNativeUtils_TypeDefinitionIndex)->GetStaticField(0x30970);
+			return (::Octree::Native::INativeUtils**)Il2CppClass::FromTypeDefinitionIndex(DNativeUtils_TypeDefinitionIndex)->GetStaticField(0x32910);
 		}
 
 		static ::System::Void _cctor()

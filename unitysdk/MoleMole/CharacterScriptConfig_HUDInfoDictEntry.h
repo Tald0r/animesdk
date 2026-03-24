@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CHARACTERSCRIPTCONFIG_HUDINFODICTENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDD8A0)
+#define MOLEMOLE_CHARACTERSCRIPTCONFIG_HUDINFODICTENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xACAC200)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CharacterScriptConfig_HUDInfoDictEntry_TypeDefinitionIndex = 47304;
+	inline static constexpr unsigned int CharacterScriptConfig_HUDInfoDictEntry_TypeDefinitionIndex = 58779;
 
 	class CharacterScriptConfig_HUDInfoDictEntry : public ::MoleMole::DataStructures::Lists::EasySerializeDictionaryEntry_2<::System::String*, ::MoleMole::CharacterHUDInfo>
 	{

@@ -9,7 +9,7 @@ namespace System
 	class AppContextSwitches : public ::System::Object
 	{
 	public:
-		static ::System::Boolean* StaticGet_NoAsyncCurrentCulture()
+		static ::System::Boolean* StaticGet_ThrowExceptionIfDisposedCancellationTokenSource()
 		{
 			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AppContextSwitches_TypeDefinitionIndex)->GetStaticField(0x1B0);
 		}
@@ -17,7 +17,7 @@ namespace System
 		{
 			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AppContextSwitches_TypeDefinitionIndex)->GetStaticField(0x1B1);
 		}
-		static ::System::Boolean* StaticGet_ThrowExceptionIfDisposedCancellationTokenSource()
+		static ::System::Boolean* StaticGet_NoAsyncCurrentCulture()
 		{
 			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(AppContextSwitches_TypeDefinitionIndex)->GetStaticField(0x1B2);
 		}

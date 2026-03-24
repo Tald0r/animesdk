@@ -1,9 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class IDisposable; }
+class Class_3_D92ADC48CDFCC09B_1;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_100_TypeDefinitionIndex = 31551;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_100_TypeDefinitionIndex = 32481;
 
 class Class_0_16E4307DCC419505_100
 {

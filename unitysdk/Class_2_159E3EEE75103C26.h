@@ -8,23 +8,23 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIGeneralPopUpHintWidgetController; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UIToggleButton; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_159E3EEE75103C26_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x74701B0)
-#define CLASS_2_159E3EEE75103C26_METHOD_2_A52A279C28A2006E_OFFSET UNITYSDK_OFFSET(0x746FFC0)
-#define CLASS_2_159E3EEE75103C26_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x74702C0)
-#define CLASS_2_159E3EEE75103C26__CTOR_OFFSET UNITYSDK_OFFSET(0x74702B0)
+#define CLASS_2_159E3EEE75103C26_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xA762CF0)
+#define CLASS_2_159E3EEE75103C26_METHOD_2_A52A279C28A2006E_OFFSET UNITYSDK_OFFSET(0xA762B00)
+#define CLASS_2_159E3EEE75103C26_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA762E00)
+#define CLASS_2_159E3EEE75103C26__CTOR_OFFSET UNITYSDK_OFFSET(0xA762DF0)
 
-inline static constexpr unsigned int Class_2_159E3EEE75103C26_TypeDefinitionIndex = 56296;
+inline static constexpr unsigned int Class_2_159E3EEE75103C26_TypeDefinitionIndex = 55411;
 
 class Class_2_159E3EEE75103C26 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x18
-	::UnityEngine::GameObject* Field_2_1; // 0x20
-	::UnityEngine::GameObject* Field_2_2; // 0x28
+	::UnityEngine::GameObject* Field_2_2; // 0x20
+	::UnityEngine::GameObject* Field_2_1; // 0x28
 	::UnityEngine::UI::Extension::UIToggleButton* Field_2_0; // 0x30
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralPopUpHintWidgetController*>* Field_2_4; // 0x38
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralPopUpHintWidgetController*>* Field_2_4; // 0x38
 
 	::System::Void _ctor()
 	{

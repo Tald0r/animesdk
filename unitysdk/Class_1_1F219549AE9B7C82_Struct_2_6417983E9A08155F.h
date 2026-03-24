@@ -4,11 +4,11 @@
 
 class Class_1_EFA6AA5AA832852E;
 
-inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Struct_2_6417983E9A08155F_TypeDefinitionIndex = 57093;
+inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Struct_2_6417983E9A08155F_TypeDefinitionIndex = 62859;
 
 struct alignas(8) Class_1_1F219549AE9B7C82_Struct_2_6417983E9A08155F
 {
 	::Class_1_EFA6AA5AA832852E* Field_2_0; // 0x10
-	::System::Int32 Field_2_1; // 0x18
-	::System::UInt32 Field_2_2; // 0x1C
+	::System::UInt32 Field_2_2; // 0x18
+	::System::Int32 Field_2_1; // 0x1C
 };

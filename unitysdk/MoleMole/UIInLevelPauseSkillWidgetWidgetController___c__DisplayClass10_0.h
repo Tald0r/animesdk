@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIInLevelPauseSkillRowWidgetController; }
 
-#define MOLEMOLE_UIINLEVELPAUSESKILLWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7A8DDE0)
-#define MOLEMOLE_UIINLEVELPAUSESKILLWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS10_0__REFRESHAVATARSKILLINFO_B__0_OFFSET UNITYSDK_OFFSET(0x7A8DDF0)
+#define MOLEMOLE_UIINLEVELPAUSESKILLWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAD742F0)
+#define MOLEMOLE_UIINLEVELPAUSESKILLWIDGETWIDGETCONTROLLER___C__DISPLAYCLASS10_0__REFRESHAVATARSKILLINFO_B__0_OFFSET UNITYSDK_OFFSET(0xAD74300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelPauseSkillWidgetWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 67326;
+	inline static constexpr unsigned int UIInLevelPauseSkillWidgetWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 61552;
 
 	class UIInLevelPauseSkillWidgetWidgetController___c__DisplayClass10_0 : public ::System::Object
 	{

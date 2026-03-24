@@ -3,14 +3,14 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphCrossingPointComponent_StopMode_TypeDefinitionIndex = 40626;
+	inline static constexpr unsigned int PathGraphCrossingPointComponent_StopMode_TypeDefinitionIndex = 41566;
 
 	enum class PathGraphCrossingPointComponent_StopMode : ::System::Int32
 	{
-		OnStartNodeEnter = 1,
-		OnStartNodeImmediately = 3,
-		OnStopNodeImmediately = 2,
 		OnBothImmediately = 4,
+		OnStopNodeImmediately = 2,
+		OnStartNodeImmediately = 3,
 		OnStopNodeExit = 0,
+		OnStartNodeEnter = 1,
 	};
 }

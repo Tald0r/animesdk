@@ -5,28 +5,28 @@
 
 namespace MoleMole::Config { class ScreenEffectFloat; }
 
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETGLAREINTENSITY_OFFSET UNITYSDK_OFFSET(0x6554F90)
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETGLARESCALER_OFFSET UNITYSDK_OFFSET(0x6554E50)
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETGLARETHRESHOLD_OFFSET UNITYSDK_OFFSET(0x6554EF0)
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETXBLURINTENSITY_OFFSET UNITYSDK_OFFSET(0x6555030)
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETYBLURINTENSITY_OFFSET UNITYSDK_OFFSET(0x65550D0)
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM__CTOR_OFFSET UNITYSDK_OFFSET(0x6555170)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETGLAREINTENSITY_OFFSET UNITYSDK_OFFSET(0x81F0B00)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETGLARESCALER_OFFSET UNITYSDK_OFFSET(0x81F09C0)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETGLARETHRESHOLD_OFFSET UNITYSDK_OFFSET(0x81F0A60)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETXBLURINTENSITY_OFFSET UNITYSDK_OFFSET(0x81F0BA0)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM_GETYBLURINTENSITY_OFFSET UNITYSDK_OFFSET(0x81F0C40)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOM__CTOR_OFFSET UNITYSDK_OFFSET(0x81F0CE0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigNapBloom_TypeDefinitionIndex = 65242;
+	inline static constexpr unsigned int ConfigNapBloom_TypeDefinitionIndex = 40581;
 
 	class ConfigNapBloom : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{
 	public:
-		::MoleMole::Config::ScreenEffectFloat* yBlurIntensity; // 0x40
-		::MoleMole::Config::ScreenEffectFloat* xBlurIntensity; // 0x48
-		::MoleMole::Config::ScreenEffectFloat* glareThreshold; // 0x50
-		::MoleMole::Config::ScreenEffectFloat* glareScaler; // 0x58
-		::MoleMole::Config::ScreenEffectFloat* glareIntensity; // 0x60
+		::MoleMole::Config::ScreenEffectFloat* glareIntensity; // 0x40
+		::MoleMole::Config::ScreenEffectFloat* yBlurIntensity; // 0x48
+		::MoleMole::Config::ScreenEffectFloat* glareScaler; // 0x50
+		::MoleMole::Config::ScreenEffectFloat* glareThreshold; // 0x58
+		::MoleMole::Config::ScreenEffectFloat* xBlurIntensity; // 0x60
 		::MoleMole::Config::ScreenEffectFieldHandleType glareScalerHandleType; // 0x68
-		::MoleMole::Config::ScreenEffectFieldHandleType glareIntensityHandleType; // 0x6C
-		::MoleMole::Config::ScreenEffectFieldHandleType yBlurIntensityHandleType; // 0x70
+		::MoleMole::Config::ScreenEffectFieldHandleType yBlurIntensityHandleType; // 0x6C
+		::MoleMole::Config::ScreenEffectFieldHandleType glareIntensityHandleType; // 0x70
 		::MoleMole::Config::ScreenEffectFieldHandleType xBlurIntensityHandleType; // 0x74
 		::MoleMole::Config::ScreenEffectFieldHandleType glareThresholdHandleType; // 0x78
 

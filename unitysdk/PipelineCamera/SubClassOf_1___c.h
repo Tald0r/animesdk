@@ -12,7 +12,7 @@ template <typename T1, typename T2> class __f__AnonymousType0_2;
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int SubClassOf_1___c_TypeDefinitionIndex = 34552;
+	inline static constexpr unsigned int SubClassOf_1___c_TypeDefinitionIndex = 35554;
 
 	template <typename T>
 	class SubClassOf_1___c : public ::System::Object

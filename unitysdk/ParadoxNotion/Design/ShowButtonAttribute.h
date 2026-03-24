@@ -4,19 +4,19 @@
 
 namespace System { class String; }
 
-#define PARADOXNOTION_DESIGN_SHOWBUTTONATTRIBUTE_GET_ISDECORATOR_OFFSET UNITYSDK_OFFSET(0x19E0E230)
-#define PARADOXNOTION_DESIGN_SHOWBUTTONATTRIBUTE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x19E0E240)
-#define PARADOXNOTION_DESIGN_SHOWBUTTONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19E0E250)
+#define PARADOXNOTION_DESIGN_SHOWBUTTONATTRIBUTE_GET_ISDECORATOR_OFFSET UNITYSDK_OFFSET(0x1A3FCAC0)
+#define PARADOXNOTION_DESIGN_SHOWBUTTONATTRIBUTE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x1A3FCAD0)
+#define PARADOXNOTION_DESIGN_SHOWBUTTONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3FCAE0)
 
 namespace ParadoxNotion::Design
 {
-	inline static constexpr unsigned int ShowButtonAttribute_TypeDefinitionIndex = 26015;
+	inline static constexpr unsigned int ShowButtonAttribute_TypeDefinitionIndex = 27682;
 
 	class ShowButtonAttribute : public ::ParadoxNotion::Design::DrawerAttribute
 	{
 	public:
-		::System::String* methodName; // 0x10
-		::System::String* buttonTitle; // 0x18
+		::System::String* buttonTitle; // 0x10
+		::System::String* methodName; // 0x18
 
 		::System::Void _ctor(::System::String* buttonTitle, ::System::String* methodnameCallback)
 		{

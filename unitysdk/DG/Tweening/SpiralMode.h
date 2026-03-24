@@ -3,7 +3,7 @@
 
 namespace DG::Tweening
 {
-	inline static constexpr unsigned int SpiralMode_TypeDefinitionIndex = 31449;
+	inline static constexpr unsigned int SpiralMode_TypeDefinitionIndex = 32401;
 
 	enum class SpiralMode : ::System::Int32
 	{

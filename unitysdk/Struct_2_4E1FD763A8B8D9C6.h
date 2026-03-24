@@ -6,19 +6,19 @@
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_1_OFFSET UNITYSDK_OFFSET(0x37E770)
-#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_2_OFFSET UNITYSDK_OFFSET(0x37E820)
-#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_OFFSET UNITYSDK_OFFSET(0x37E6C0)
-#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_B1C07CF4ADD1F8DA_OFFSET UNITYSDK_OFFSET(0xA2ADDE0)
-#define STRUCT_2_4E1FD763A8B8D9C6__CCTOR_OFFSET UNITYSDK_OFFSET(0xA2ADCF0)
+#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_1_OFFSET UNITYSDK_OFFSET(0x2ECBD0)
+#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_2_OFFSET UNITYSDK_OFFSET(0x2ECC80)
+#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_OFFSET UNITYSDK_OFFSET(0x2ECB20)
+#define STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_B1C07CF4ADD1F8DA_OFFSET UNITYSDK_OFFSET(0x6266C80)
+#define STRUCT_2_4E1FD763A8B8D9C6__CCTOR_OFFSET UNITYSDK_OFFSET(0x6266C30)
 
-inline static constexpr unsigned int Struct_2_4E1FD763A8B8D9C6_TypeDefinitionIndex = 66217;
+inline static constexpr unsigned int Struct_2_4E1FD763A8B8D9C6_TypeDefinitionIndex = 65942;
 
 struct alignas(8) Struct_2_4E1FD763A8B8D9C6
 {
 	static ::UnityEngine::AnimationCurve** StaticGet_Field_2_4()
 	{
-		return (::UnityEngine::AnimationCurve**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_4E1FD763A8B8D9C6_TypeDefinitionIndex)->GetStaticField(0x3B190);
+		return (::UnityEngine::AnimationCurve**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_4E1FD763A8B8D9C6_TypeDefinitionIndex)->GetStaticField(0x3C210);
 	}
 	::System::String* Field_2_0; // 0x10
 	::System::String* Field_2_1; // 0x18
@@ -30,14 +30,14 @@ struct alignas(8) Struct_2_4E1FD763A8B8D9C6
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + STRUCT_2_4E1FD763A8B8D9C6__CCTOR_OFFSET))();
 	}
 
-	::UnityEngine::AnimationCurve* Method_2_037FB9129FA6685E()
-	{
-		return ((::UnityEngine::AnimationCurve*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_OFFSET))(this);
-	}
-
 	static ::UnityEngine::AnimationCurve* Method_2_B1C07CF4ADD1F8DA(::System::String* a1)
 	{
 		return ((::UnityEngine::AnimationCurve*(*)(::System::String*))((::PBYTE)hIl2Cpp + STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_B1C07CF4ADD1F8DA_OFFSET))(a1);
+	}
+
+	::UnityEngine::AnimationCurve* Method_2_037FB9129FA6685E()
+	{
+		return ((::UnityEngine::AnimationCurve*(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_4E1FD763A8B8D9C6_METHOD_2_037FB9129FA6685E_OFFSET))(this);
 	}
 
 	::UnityEngine::AnimationCurve* Method_2_037FB9129FA6685E_1()

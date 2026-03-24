@@ -7,34 +7,34 @@ namespace System { template <typename T1, typename T2, typename T3, typename T4,
 namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCC87D50)
-#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCC87D80)
-#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__ONZONEENTER_B__13_0_OFFSET UNITYSDK_OFFSET(0xCC87D90)
-#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__ONZONEENTER_B__13_1_OFFSET UNITYSDK_OFFSET(0xCC87F80)
-#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__ONZONEENTER_B__13_2_OFFSET UNITYSDK_OFFSET(0xCC88170)
+#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xACB5CC0)
+#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__CTOR_OFFSET UNITYSDK_OFFSET(0xACB5CF0)
+#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__ONZONEENTER_B__13_0_OFFSET UNITYSDK_OFFSET(0xACB5D00)
+#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__ONZONEENTER_B__13_1_OFFSET UNITYSDK_OFFSET(0xACB5EF0)
+#define MOLEMOLE_CONFIG_ANIMATORZONELOOKIKINMAINCITY___C__ONZONEENTER_B__13_2_OFFSET UNITYSDK_OFFSET(0xACB60E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex = 47352;
+	inline static constexpr unsigned int AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex = 64187;
 
 	class AnimatorZoneLookIKInMainCity___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Config::AnimatorZoneLookIKInMainCity___c** StaticGet___9()
 		{
-			return (::MoleMole::Config::AnimatorZoneLookIKInMainCity___c**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x36320);
-		}
-		static ::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>** StaticGet___9__13_1()
-		{
-			return (::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x36328);
+			return (::MoleMole::Config::AnimatorZoneLookIKInMainCity___c**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x38FB0);
 		}
 		static ::System::Func_3<::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single>** StaticGet___9__13_2()
 		{
-			return (::System::Func_3<::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x36330);
+			return (::System::Func_3<::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x38FB8);
+		}
+		static ::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>** StaticGet___9__13_1()
+		{
+			return (::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x38FC0);
 		}
 		static ::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>** StaticGet___9__13_0()
 		{
-			return (::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x36338);
+			return (::System::Func_5<::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::UnityEngine::GameObject*, ::System::Single, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneLookIKInMainCity___c_TypeDefinitionIndex)->GetStaticField(0x38FC8);
 		}
 
 		static ::System::Void _cctor()

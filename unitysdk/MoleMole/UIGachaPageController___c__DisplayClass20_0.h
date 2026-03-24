@@ -5,21 +5,21 @@
 namespace MoleMole { class UIGachaPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA28E0E0)
-#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS20_0__SHOWGACHAQUICK_B__0_OFFSET UNITYSDK_OFFSET(0xA28E0F0)
+#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9114080)
+#define MOLEMOLE_UIGACHAPAGECONTROLLER___C__DISPLAYCLASS20_0__SHOWGACHAQUICK_B__0_OFFSET UNITYSDK_OFFSET(0x9114090)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaPageController___c__DisplayClass20_0_TypeDefinitionIndex = 39385;
+	inline static constexpr unsigned int UIGachaPageController___c__DisplayClass20_0_TypeDefinitionIndex = 55217;
 
 	class UIGachaPageController___c__DisplayClass20_0 : public ::System::Object
 	{
 	public:
 		::System::Action* onSuccess; // 0x10
-		::System::Action* onFailed; // 0x18
-		::MoleMole::UIGachaPageController* __4__this; // 0x20
-		::System::UInt32 materialID; // 0x28
-		::System::UInt32 num; // 0x2C
+		::MoleMole::UIGachaPageController* __4__this; // 0x18
+		::System::Action* onFailed; // 0x20
+		::System::UInt32 num; // 0x28
+		::System::UInt32 materialID; // 0x2C
 
 		::System::Void _ctor()
 		{

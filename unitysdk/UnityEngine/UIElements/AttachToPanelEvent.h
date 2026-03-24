@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/UIElements/PanelChangedEventBase_1.h"
 
-#define UNITYENGINE_UIELEMENTS_ATTACHTOPANELEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x189137B0)
+#define UNITYENGINE_UIELEMENTS_ATTACHTOPANELEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18E6B770)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int AttachToPanelEvent_TypeDefinitionIndex = 23849;
+	inline static constexpr unsigned int AttachToPanelEvent_TypeDefinitionIndex = 24532;
 
 	class AttachToPanelEvent : public ::UnityEngine::UIElements::PanelChangedEventBase_1<::UnityEngine::UIElements::AttachToPanelEvent*>
 	{

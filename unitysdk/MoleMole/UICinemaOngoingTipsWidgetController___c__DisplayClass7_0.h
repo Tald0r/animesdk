@@ -5,18 +5,18 @@
 namespace MoleMole { class UICinemaOngoingTipsWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CLOSECHAT_B__0_OFFSET UNITYSDK_OFFSET(0xA3335A0)
-#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA333590)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CLOSECHAT_B__0_OFFSET UNITYSDK_OFFSET(0xD0FA3F0)
+#define MOLEMOLE_UICINEMAONGOINGTIPSWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD0FA3E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaOngoingTipsWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 47766;
+	inline static constexpr unsigned int UICinemaOngoingTipsWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 75133;
 
 	class UICinemaOngoingTipsWidgetController___c__DisplayClass7_0 : public ::System::Object
 	{
 	public:
-		::System::Action* onEnd; // 0x10
-		::MoleMole::UICinemaOngoingTipsWidgetController* __4__this; // 0x18
+		::MoleMole::UICinemaOngoingTipsWidgetController* __4__this; // 0x10
+		::System::Action* onEnd; // 0x18
 
 		::System::Void _ctor()
 		{

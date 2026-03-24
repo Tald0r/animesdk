@@ -4,23 +4,23 @@
 #include "unitysdk/Share/ESceneType.h"
 #include "unitysdk/System/Object.h"
 
-#define SHARE_CSCENEHELPER_GETDEFAULTPACKAGE_OFFSET UNITYSDK_OFFSET(0x182B9EA0)
-#define SHARE_CSCENEHELPER_GETFRESHDUNGEONID_OFFSET UNITYSDK_OFFSET(0x182B9E80)
-#define SHARE_CSCENEHELPER_GETFRESHSCENEID_OFFSET UNITYSDK_OFFSET(0x182B9E90)
-#define SHARE_CSCENEHELPER_GETHALLDUNGEONID_OFFSET UNITYSDK_OFFSET(0x182B9E60)
-#define SHARE_CSCENEHELPER_GETHALLSCENEID_OFFSET UNITYSDK_OFFSET(0x182B9E70)
-#define SHARE_CSCENEHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x182B9DC0)
+#define SHARE_CSCENEHELPER_GETDEFAULTPACKAGE_OFFSET UNITYSDK_OFFSET(0x19C767F0)
+#define SHARE_CSCENEHELPER_GETFRESHDUNGEONID_OFFSET UNITYSDK_OFFSET(0x19C767D0)
+#define SHARE_CSCENEHELPER_GETFRESHSCENEID_OFFSET UNITYSDK_OFFSET(0x19C767E0)
+#define SHARE_CSCENEHELPER_GETHALLDUNGEONID_OFFSET UNITYSDK_OFFSET(0x19C767B0)
+#define SHARE_CSCENEHELPER_GETHALLSCENEID_OFFSET UNITYSDK_OFFSET(0x19C767C0)
+#define SHARE_CSCENEHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C76710)
 
 namespace Share
 {
-	inline static constexpr unsigned int CSceneHelper_TypeDefinitionIndex = 11562;
+	inline static constexpr unsigned int CSceneHelper_TypeDefinitionIndex = 15079;
 
 	class CSceneHelper : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::Share::EPackageType>** StaticGet_m_oDefaultPackage()
 		{
-			return (::Il2CppArray<::Share::EPackageType>**)Il2CppClass::FromTypeDefinitionIndex(CSceneHelper_TypeDefinitionIndex)->GetStaticField(0x8E50);
+			return (::Il2CppArray<::Share::EPackageType>**)Il2CppClass::FromTypeDefinitionIndex(CSceneHelper_TypeDefinitionIndex)->GetStaticField(0x8E90);
 		}
 
 		static ::System::Void _cctor()

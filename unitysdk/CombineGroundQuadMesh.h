@@ -5,9 +5,9 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class MeshRenderer; }
 
-#define COMBINEGROUNDQUADMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x19237F00)
+#define COMBINEGROUNDQUADMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1965CCE0)
 
-inline static constexpr unsigned int CombineGroundQuadMesh_TypeDefinitionIndex = 28175;
+inline static constexpr unsigned int CombineGroundQuadMesh_TypeDefinitionIndex = 29116;
 
 class CombineGroundQuadMesh : public ::UnityEngine::MonoBehaviour
 {

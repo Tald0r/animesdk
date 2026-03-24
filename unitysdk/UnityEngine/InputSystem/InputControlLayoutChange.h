@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputControlLayoutChange_TypeDefinitionIndex = 27500;
+	inline static constexpr unsigned int InputControlLayoutChange_TypeDefinitionIndex = 28440;
 
 	enum class InputControlLayoutChange : ::System::Int32
 	{

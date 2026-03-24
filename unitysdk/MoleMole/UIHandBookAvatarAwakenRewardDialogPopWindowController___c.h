@@ -4,24 +4,24 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIHANDBOOKAVATARAWAKENREWARDDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAE8B00)
-#define MOLEMOLE_UIHANDBOOKAVATARAWAKENREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAE8B40)
-#define MOLEMOLE_UIHANDBOOKAVATARAWAKENREWARDDIALOGPOPWINDOWCONTROLLER___C__ONUIINIT_B__5_1_OFFSET UNITYSDK_OFFSET(0xCAE8B50)
+#define MOLEMOLE_UIHANDBOOKAVATARAWAKENREWARDDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBB178C0)
+#define MOLEMOLE_UIHANDBOOKAVATARAWAKENREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBB17900)
+#define MOLEMOLE_UIHANDBOOKAVATARAWAKENREWARDDIALOGPOPWINDOWCONTROLLER___C__ONUIINIT_B__5_1_OFFSET UNITYSDK_OFFSET(0xBB17910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookAvatarAwakenRewardDialogPopWindowController___c_TypeDefinitionIndex = 54981;
+	inline static constexpr unsigned int UIHandBookAvatarAwakenRewardDialogPopWindowController___c_TypeDefinitionIndex = 47287;
 
 	class UIHandBookAvatarAwakenRewardDialogPopWindowController___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__5_1()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookAvatarAwakenRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FF10);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookAvatarAwakenRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31AD0);
 		}
 		static ::MoleMole::UIHandBookAvatarAwakenRewardDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHandBookAvatarAwakenRewardDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookAvatarAwakenRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FF18);
+			return (::MoleMole::UIHandBookAvatarAwakenRewardDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHandBookAvatarAwakenRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31AD8);
 		}
 
 		static ::System::Void _cctor()

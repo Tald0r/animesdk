@@ -2,23 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_908;
-class Class_3_41BA658AB33F544B_2;
+class Class_2_208CC9941471731A_375;
+class Class_3_41BA658AB33F544B;
 namespace MoleMole { class UIAbyssS2TurntablePopWindowController___c__DisplayClass20_0; }
 
-#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA503560)
-#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_1__ONCLICKPAYBTN_B__2_OFFSET UNITYSDK_OFFSET(0xA503570)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_1__CTOR_OFFSET UNITYSDK_OFFSET(0xA4C4C60)
+#define MOLEMOLE_UIABYSSS2TURNTABLEPOPWINDOWCONTROLLER___C__DISPLAYCLASS20_1__ONCLICKPAYBTN_B__2_OFFSET UNITYSDK_OFFSET(0xA4C4C70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssS2TurntablePopWindowController___c__DisplayClass20_1_TypeDefinitionIndex = 78402;
+	inline static constexpr unsigned int UIAbyssS2TurntablePopWindowController___c__DisplayClass20_1_TypeDefinitionIndex = 48125;
 
 	class UIAbyssS2TurntablePopWindowController___c__DisplayClass20_1 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIAbyssS2TurntablePopWindowController___c__DisplayClass20_0* CS___8__locals1; // 0x10
-		::Class_2_208CC9941471731A_908* targetConfig; // 0x18
-		::Class_3_41BA658AB33F544B_2* turntableData; // 0x20
+		::Class_2_208CC9941471731A_375* targetConfig; // 0x18
+		::Class_3_41BA658AB33F544B* turntableData; // 0x20
 
 		::System::Void _ctor()
 		{

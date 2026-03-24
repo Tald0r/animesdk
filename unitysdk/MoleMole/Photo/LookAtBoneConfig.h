@@ -6,7 +6,7 @@
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int LookAtBoneConfig_TypeDefinitionIndex = 48626;
+	inline static constexpr unsigned int LookAtBoneConfig_TypeDefinitionIndex = 80934;
 
 	struct alignas(8) LookAtBoneConfig
 	{

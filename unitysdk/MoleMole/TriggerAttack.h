@@ -11,29 +11,29 @@ namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 namespace System::Collections { class IEnumerator; }
 
-#define MOLEMOLE_TRIGGERATTACK_ONATTACKTRIGGERED_OFFSET UNITYSDK_OFFSET(0xA4DFFA0)
-#define MOLEMOLE_TRIGGERATTACK_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA4DFBA0)
-#define MOLEMOLE_TRIGGERATTACK_ONRESET_OFFSET UNITYSDK_OFFSET(0xA4E00A0)
-#define MOLEMOLE_TRIGGERATTACK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA4DFE40)
-#define MOLEMOLE_TRIGGERATTACK_RESETVALUE_OFFSET UNITYSDK_OFFSET(0xA4E0000)
-#define MOLEMOLE_TRIGGERATTACK__CTOR_OFFSET UNITYSDK_OFFSET(0xA4E0180)
-#define MOLEMOLE_TRIGGERATTACK___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA4E01C0)
-#define MOLEMOLE_TRIGGERATTACK___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0xA4E0250)
-#define MOLEMOLE_TRIGGERATTACK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA4E02E0)
+#define MOLEMOLE_TRIGGERATTACK_ONATTACKTRIGGERED_OFFSET UNITYSDK_OFFSET(0xA4A1200)
+#define MOLEMOLE_TRIGGERATTACK_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA4A0E10)
+#define MOLEMOLE_TRIGGERATTACK_ONRESET_OFFSET UNITYSDK_OFFSET(0xA4A1300)
+#define MOLEMOLE_TRIGGERATTACK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA4A10A0)
+#define MOLEMOLE_TRIGGERATTACK_RESETVALUE_OFFSET UNITYSDK_OFFSET(0xA4A1260)
+#define MOLEMOLE_TRIGGERATTACK__CTOR_OFFSET UNITYSDK_OFFSET(0xA4A13E0)
+#define MOLEMOLE_TRIGGERATTACK___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA4A1420)
+#define MOLEMOLE_TRIGGERATTACK___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0xA4A14B0)
+#define MOLEMOLE_TRIGGERATTACK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA4A1540)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TriggerAttack_TypeDefinitionIndex = 72054;
+	inline static constexpr unsigned int TriggerAttack_TypeDefinitionIndex = 43121;
 
 	class TriggerAttack : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::Class_3_BD1C1745FBC83F51* inputComponent; // 0x58
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x60
-		::MoleMole::Battle::Entity* ownerEntity; // 0x68
-		::BehaviorDesigner::Runtime::SharedString* paramaterName; // 0x70
-		::BehaviorDesigner::Runtime::SharedInt* intValue; // 0x78
-		::Class_3_F33F9DC5F4112336* animatorComponent; // 0x80
+		::MoleMole::Battle::Entity* ownerEntity; // 0x58
+		::Class_3_F33F9DC5F4112336* animatorComponent; // 0x60
+		::BehaviorDesigner::Runtime::SharedInt* intValue; // 0x68
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x70
+		::Class_3_BD1C1745FBC83F51* inputComponent; // 0x78
+		::BehaviorDesigner::Runtime::SharedString* paramaterName; // 0x80
 		::System::Boolean setOnce; // 0x88
 		::System::Int32 hashID; // 0x8C
 

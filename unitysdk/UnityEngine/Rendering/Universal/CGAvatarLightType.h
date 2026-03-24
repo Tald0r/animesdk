@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CGAvatarLightType_TypeDefinitionIndex = 28545;
+	inline static constexpr unsigned int CGAvatarLightType_TypeDefinitionIndex = 29488;
 
 	enum class CGAvatarLightType : ::System::UInt32
 	{

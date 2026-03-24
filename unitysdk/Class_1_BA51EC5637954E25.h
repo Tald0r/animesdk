@@ -1,12 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Struct_2_52A902145F5BE51A_8.h"
-#include "unitysdk/Struct_2_58901CE2D08669AE_1.h"
+#include "unitysdk/Struct_2_9AA91ED72374AEA8.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_BA51EC5637954E25_METHOD_1_3D78D2E0F9F95F07_OFFSET UNITYSDK_OFFSET(0x84DF650)
+#define CLASS_1_BA51EC5637954E25_METHOD_1_3D78D2E0F9F95F07_OFFSET UNITYSDK_OFFSET(0x956E550)
 
-inline static constexpr unsigned int Class_1_BA51EC5637954E25_TypeDefinitionIndex = 57344;
+inline static constexpr unsigned int Class_1_BA51EC5637954E25_TypeDefinitionIndex = 55266;
 
 class Class_1_BA51EC5637954E25 : public ::System::Object
 {

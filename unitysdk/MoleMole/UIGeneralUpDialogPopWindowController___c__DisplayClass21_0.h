@@ -5,18 +5,18 @@
 class Class_1_0D6706375CDAAE8C;
 namespace MoleMole { class UIGeneralUpDialogPopWindowController; }
 
-#define MOLEMOLE_UIGENERALUPDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFB39C0)
-#define MOLEMOLE_UIGENERALUPDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS21_0__OPENEQUIPDETAIL_B__0_OFFSET UNITYSDK_OFFSET(0xBFB39D0)
+#define MOLEMOLE_UIGENERALUPDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9BEF2B0)
+#define MOLEMOLE_UIGENERALUPDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS21_0__OPENEQUIPDETAIL_B__0_OFFSET UNITYSDK_OFFSET(0x9BEF2C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralUpDialogPopWindowController___c__DisplayClass21_0_TypeDefinitionIndex = 75634;
+	inline static constexpr unsigned int UIGeneralUpDialogPopWindowController___c__DisplayClass21_0_TypeDefinitionIndex = 71415;
 
 	class UIGeneralUpDialogPopWindowController___c__DisplayClass21_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIGeneralUpDialogPopWindowController* __4__this; // 0x10
-		::Class_1_0D6706375CDAAE8C* itemData; // 0x18
+		::Class_1_0D6706375CDAAE8C* itemData; // 0x10
+		::MoleMole::UIGeneralUpDialogPopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

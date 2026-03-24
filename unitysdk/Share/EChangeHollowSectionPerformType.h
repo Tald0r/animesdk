@@ -3,12 +3,12 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EChangeHollowSectionPerformType_TypeDefinitionIndex = 10206;
+	inline static constexpr unsigned int EChangeHollowSectionPerformType_TypeDefinitionIndex = 9774;
 
 	enum class EChangeHollowSectionPerformType : ::System::Int16
 	{
-		Type3 = 3,
 		Type1 = 1,
+		Type3 = 3,
 		Type2 = 2,
 		None = 0,
 	};

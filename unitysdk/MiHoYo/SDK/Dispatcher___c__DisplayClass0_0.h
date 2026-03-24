@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MIHOYO_SDK_DISPATCHER___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18F37F70)
-#define MIHOYO_SDK_DISPATCHER___C__DISPLAYCLASS0_0__RUNASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x18F37F80)
+#define MIHOYO_SDK_DISPATCHER___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19280210)
+#define MIHOYO_SDK_DISPATCHER___C__DISPLAYCLASS0_0__RUNASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x19280220)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int Dispatcher___c__DisplayClass0_0_TypeDefinitionIndex = 33604;
+	inline static constexpr unsigned int Dispatcher___c__DisplayClass0_0_TypeDefinitionIndex = 34577;
 
 	class Dispatcher___c__DisplayClass0_0 : public ::System::Object
 	{

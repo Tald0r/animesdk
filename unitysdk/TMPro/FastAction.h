@@ -7,20 +7,20 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class LinkedListNode_1; }
 namespace System::Collections::Generic { template <typename T> class LinkedList_1; }
 
-#define TMPRO_FASTACTION_ADD_OFFSET UNITYSDK_OFFSET(0x1B1250D0)
-#define TMPRO_FASTACTION_CALL_OFFSET UNITYSDK_OFFSET(0x1B1252F0)
-#define TMPRO_FASTACTION_REMOVE_OFFSET UNITYSDK_OFFSET(0x1B1251E0)
-#define TMPRO_FASTACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B125350)
+#define TMPRO_FASTACTION_ADD_OFFSET UNITYSDK_OFFSET(0x1B73C440)
+#define TMPRO_FASTACTION_CALL_OFFSET UNITYSDK_OFFSET(0x1B73C660)
+#define TMPRO_FASTACTION_REMOVE_OFFSET UNITYSDK_OFFSET(0x1B73C550)
+#define TMPRO_FASTACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B73C6C0)
 
 namespace TMPro
 {
-	inline static constexpr unsigned int FastAction_TypeDefinitionIndex = 35902;
+	inline static constexpr unsigned int FastAction_TypeDefinitionIndex = 36922;
 
 	class FastAction : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::LinkedList_1<::System::Action*>* delegates; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>* lookup; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>* lookup; // 0x10
+		::System::Collections::Generic::LinkedList_1<::System::Action*>* delegates; // 0x18
 
 		::System::Void _ctor()
 		{

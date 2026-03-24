@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MIHOYO_SDK_MHYSDKC__CTOR_OFFSET UNITYSDK_OFFSET(0x196090B0)
+#define MIHOYO_SDK_MHYSDKC__CTOR_OFFSET UNITYSDK_OFFSET(0x19412A80)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int MHYSDKC_TypeDefinitionIndex = 33470;
+	inline static constexpr unsigned int MHYSDKC_TypeDefinitionIndex = 34424;
 
 	class MHYSDKC : public ::System::Object
 	{

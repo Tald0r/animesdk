@@ -3,11 +3,11 @@
 #include "unitysdk/Class_4_D06919D0930604DE_Enum_3_05BF65C41833FF20.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIACTIVITYBATTLEYCLFIGHTINGWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB5D5640)
+#define MOLEMOLE_UIACTIVITYBATTLEYCLFIGHTINGWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC80E240)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityBattleYCLFightingWidgetController_Context_TypeDefinitionIndex = 70997;
+	inline static constexpr unsigned int UIActivityBattleYCLFightingWidgetController_Context_TypeDefinitionIndex = 40445;
 
 	class UIActivityBattleYCLFightingWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

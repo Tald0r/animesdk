@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_DIAGNOSTICS_PROCESSINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x18F4C820)
+#define SYSTEM_DIAGNOSTICS_PROCESSINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1931C990)
 
 namespace System::Diagnostics
 {

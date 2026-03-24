@@ -7,24 +7,24 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace ToolBuddy::ThirdParty::VectorGraphics { class SVGPropertySheet; }
 
-#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGSTYLESHEET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x193BC190)
-#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGSTYLESHEET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x193BC1D0)
-#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGSTYLESHEET___C__GET_SELECTORS_B__5_0_OFFSET UNITYSDK_OFFSET(0x193BC1E0)
+#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGSTYLESHEET___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1983EA10)
+#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGSTYLESHEET___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1983EA50)
+#define TOOLBUDDY_THIRDPARTY_VECTORGRAPHICS_SVGSTYLESHEET___C__GET_SELECTORS_B__5_0_OFFSET UNITYSDK_OFFSET(0x1983EA60)
 
 namespace ToolBuddy::ThirdParty::VectorGraphics
 {
-	inline static constexpr unsigned int SVGStyleSheet___c_TypeDefinitionIndex = 27036;
+	inline static constexpr unsigned int SVGStyleSheet___c_TypeDefinitionIndex = 27976;
 
 	class SVGStyleSheet___c : public ::System::Object
 	{
 	public:
-		static ::ToolBuddy::ThirdParty::VectorGraphics::SVGStyleSheet___c** StaticGet___9()
-		{
-			return (::ToolBuddy::ThirdParty::VectorGraphics::SVGStyleSheet___c**)Il2CppClass::FromTypeDefinitionIndex(SVGStyleSheet___c_TypeDefinitionIndex)->GetStaticField(0x1F8F0);
-		}
 		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::ToolBuddy::ThirdParty::VectorGraphics::SVGPropertySheet*>, ::System::String*>** StaticGet___9__5_0()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::ToolBuddy::ThirdParty::VectorGraphics::SVGPropertySheet*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SVGStyleSheet___c_TypeDefinitionIndex)->GetStaticField(0x1F8F8);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::ToolBuddy::ThirdParty::VectorGraphics::SVGPropertySheet*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SVGStyleSheet___c_TypeDefinitionIndex)->GetStaticField(0x20F50);
+		}
+		static ::ToolBuddy::ThirdParty::VectorGraphics::SVGStyleSheet___c** StaticGet___9()
+		{
+			return (::ToolBuddy::ThirdParty::VectorGraphics::SVGStyleSheet___c**)Il2CppClass::FromTypeDefinitionIndex(SVGStyleSheet___c_TypeDefinitionIndex)->GetStaticField(0x20F58);
 		}
 
 		static ::System::Void _cctor()

@@ -3,7 +3,7 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int SetObjectVisibility_SetVisibleMode_TypeDefinitionIndex = 26874;
+	inline static constexpr unsigned int SetObjectVisibility_SetVisibleMode_TypeDefinitionIndex = 27463;
 
 	enum class SetObjectVisibility_SetVisibleMode : ::System::Int32
 	{

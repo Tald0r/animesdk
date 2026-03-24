@@ -4,19 +4,19 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CLASS_1_82DB4DCE7147BB58_METHOD_1_07D85B0E6DD64F49_OFFSET UNITYSDK_OFFSET(0x7B90180)
-#define CLASS_1_82DB4DCE7147BB58_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x7B90440)
-#define CLASS_1_82DB4DCE7147BB58__CTOR_OFFSET UNITYSDK_OFFSET(0x7B90170)
+#define CLASS_1_82DB4DCE7147BB58_METHOD_1_07D85B0E6DD64F49_OFFSET UNITYSDK_OFFSET(0x66F08D0)
+#define CLASS_1_82DB4DCE7147BB58_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x66F0B90)
+#define CLASS_1_82DB4DCE7147BB58__CTOR_OFFSET UNITYSDK_OFFSET(0x66F08C0)
 
-inline static constexpr unsigned int Class_1_82DB4DCE7147BB58_TypeDefinitionIndex = 52370;
+inline static constexpr unsigned int Class_1_82DB4DCE7147BB58_TypeDefinitionIndex = 45752;
 
 class Class_1_82DB4DCE7147BB58 : public ::System::Object
 {
 public:
-	::System::Nullable_1<::UnityEngine::Vector3> Field_1_2; // 0x10
-	::System::Single Field_1_0; // 0x20
-	::System::Single Field_1_1; // 0x24
-	::System::Nullable_1<::UnityEngine::Vector3> Field_1_3; // 0x28
+	::System::Nullable_1<::UnityEngine::Vector3> Field_1_3; // 0x10
+	::System::Single Field_1_1; // 0x20
+	::System::Nullable_1<::UnityEngine::Vector3> Field_1_2; // 0x24
+	::System::Single Field_1_0; // 0x34
 
 	::System::Void _ctor()
 	{

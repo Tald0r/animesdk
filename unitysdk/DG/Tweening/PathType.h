@@ -3,7 +3,7 @@
 
 namespace DG::Tweening
 {
-	inline static constexpr unsigned int PathType_TypeDefinitionIndex = 24015;
+	inline static constexpr unsigned int PathType_TypeDefinitionIndex = 24839;
 
 	enum class PathType : ::System::Int32
 	{

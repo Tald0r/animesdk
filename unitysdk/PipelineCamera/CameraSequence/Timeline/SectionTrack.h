@@ -4,12 +4,12 @@
 
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONTRACK_ONDELETECLIP_OFFSET UNITYSDK_OFFSET(0x1B14FFD0)
-#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1B14FFE0)
+#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONTRACK_ONDELETECLIP_OFFSET UNITYSDK_OFFSET(0x1B76EF80)
+#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SECTIONTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1B76EF90)
 
 namespace PipelineCamera::CameraSequence::Timeline
 {
-	inline static constexpr unsigned int SectionTrack_TypeDefinitionIndex = 81147;
+	inline static constexpr unsigned int SectionTrack_TypeDefinitionIndex = 83188;
 
 	class SectionTrack : public ::UnityEngine::Timeline::TrackAsset
 	{

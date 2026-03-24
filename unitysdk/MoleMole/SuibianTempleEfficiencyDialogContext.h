@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_3_472679C84451629A_19;
+class Class_3_7E6E8DD3EAC12A67_7;
 
-#define MOLEMOLE_SUIBIANTEMPLEEFFICIENCYDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3E750)
+#define MOLEMOLE_SUIBIANTEMPLEEFFICIENCYDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9855C60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SuibianTempleEfficiencyDialogContext_TypeDefinitionIndex = 67289;
+	inline static constexpr unsigned int SuibianTempleEfficiencyDialogContext_TypeDefinitionIndex = 50289;
 
 	class SuibianTempleEfficiencyDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_3_472679C84451629A_19* ServerProgressData; // 0x28
+		::Class_3_7E6E8DD3EAC12A67_7* ServerProgressData; // 0x28
 
 		::System::Void _ctor()
 		{

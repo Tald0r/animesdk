@@ -5,12 +5,12 @@
 
 class Class_2_5DF25B7A40A1031E;
 
-#define MOLEMOLE_CHESSSTATEMACHINE_SETENTITYLIFESTATETODIEEND_RUN_OFFSET UNITYSDK_OFFSET(0x15E9BD10)
-#define MOLEMOLE_CHESSSTATEMACHINE_SETENTITYLIFESTATETODIEEND__CTOR_OFFSET UNITYSDK_OFFSET(0x15E9BE80)
+#define MOLEMOLE_CHESSSTATEMACHINE_SETENTITYLIFESTATETODIEEND_RUN_OFFSET UNITYSDK_OFFSET(0xE2ADB50)
+#define MOLEMOLE_CHESSSTATEMACHINE_SETENTITYLIFESTATETODIEEND__CTOR_OFFSET UNITYSDK_OFFSET(0xE2ADCC0)
 
 namespace MoleMole::ChessStateMachine
 {
-	inline static constexpr unsigned int SetEntityLifeStateToDieEnd_TypeDefinitionIndex = 39689;
+	inline static constexpr unsigned int SetEntityLifeStateToDieEnd_TypeDefinitionIndex = 44177;
 
 	class SetEntityLifeStateToDieEnd : public ::MoleMole::ChessStateMachine::StateMachineNormalEntityAction_1<::MoleMole::ChessStateMachine::SetEntityLifeStateToDieEnd_RuntimeData>
 	{

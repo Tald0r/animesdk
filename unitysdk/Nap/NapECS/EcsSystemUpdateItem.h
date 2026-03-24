@@ -6,7 +6,7 @@ namespace Nap::NapECS { class EcsSystem; }
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsSystemUpdateItem_TypeDefinitionIndex = 34213;
+	inline static constexpr unsigned int EcsSystemUpdateItem_TypeDefinitionIndex = 35163;
 
 	struct alignas(8) EcsSystemUpdateItem
 	{

@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDSCENETAG_INVOKE_OFFSET UNITYSDK_OFFSET(0x67875A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDSCENETAG__CTOR_OFFSET UNITYSDK_OFFSET(0x6787650)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDSCENETAG_INVOKE_OFFSET UNITYSDK_OFFSET(0x7583E80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ADDSCENETAG__CTOR_OFFSET UNITYSDK_OFFSET(0x7583F30)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AddSceneTag_TypeDefinitionIndex = 56148;
+	inline static constexpr unsigned int LD_AddSceneTag_TypeDefinitionIndex = 66456;
 
 	class LD_AddSceneTag : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Collections::Generic::List_1<::System::String*>*>
 	{

@@ -3,13 +3,13 @@
 #include "unitysdk/FlowCanvas/Flow.h"
 #include "unitysdk/FlowCanvas/Nodes/FlowControlNode.h"
 
-#define FLOWCANVAS_NODES_BREAK_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19E8E1F0)
-#define FLOWCANVAS_NODES_BREAK__CTOR_OFFSET UNITYSDK_OFFSET(0x19E8E260)
-#define FLOWCANVAS_NODES_BREAK__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x19E8E280)
+#define FLOWCANVAS_NODES_BREAK_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A47B9D0)
+#define FLOWCANVAS_NODES_BREAK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A47BA40)
+#define FLOWCANVAS_NODES_BREAK__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x1A47BA60)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int Break_TypeDefinitionIndex = 26139;
+	inline static constexpr unsigned int Break_TypeDefinitionIndex = 26984;
 
 	class Break : public ::FlowCanvas::Nodes::FlowControlNode
 	{

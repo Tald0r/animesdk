@@ -3,14 +3,14 @@
 
 namespace MoleMole::Level
 {
-	inline static constexpr unsigned int BangbooPlayHUDType_TypeDefinitionIndex = 40810;
+	inline static constexpr unsigned int BangbooPlayHUDType_TypeDefinitionIndex = 59994;
 
 	enum class BangbooPlayHUDType : ::System::Int32
 	{
 		OnlyBangboo = 1,
-		BangbooAndRoleHud = 3,
-		HideAll = 4,
-		None = 0,
 		OnlyRoleHud = 2,
+		None = 0,
+		HideAll = 4,
+		BangbooAndRoleHud = 3,
 	};
 }

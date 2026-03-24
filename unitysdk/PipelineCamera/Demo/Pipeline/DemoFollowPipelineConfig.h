@@ -19,43 +19,43 @@ namespace PipelineCamera::Module { class WorldBasicCameraDataModifier; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Transform; }
 
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_GET_COREDATASUBMODULES_OFFSET UNITYSDK_OFFSET(0x1A1A6B40)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_GET_FOLLOWTARGETSUBMODULES_OFFSET UNITYSDK_OFFSET(0x1A1A6820)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_INITPIPELINE_OFFSET UNITYSDK_OFFSET(0x1A1A8030)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_1_OFFSET UNITYSDK_OFFSET(0x1A1A6E90)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_2_OFFSET UNITYSDK_OFFSET(0x1A1A71A0)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_3_OFFSET UNITYSDK_OFFSET(0x1A1A7530)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_4_OFFSET UNITYSDK_OFFSET(0x1A1A7B80)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_OFFSET UNITYSDK_OFFSET(0x1A1A6BE0)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A1A8160)
-#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1A8140)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_GET_COREDATASUBMODULES_OFFSET UNITYSDK_OFFSET(0x1A734A00)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_GET_FOLLOWTARGETSUBMODULES_OFFSET UNITYSDK_OFFSET(0x1A7346E0)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_INITPIPELINE_OFFSET UNITYSDK_OFFSET(0x1A735EF0)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_1_OFFSET UNITYSDK_OFFSET(0x1A734D50)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_2_OFFSET UNITYSDK_OFFSET(0x1A735060)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_3_OFFSET UNITYSDK_OFFSET(0x1A7353F0)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_4_OFFSET UNITYSDK_OFFSET(0x1A735A40)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG_PIPELINECAMERA_ICAM_OFFSET UNITYSDK_OFFSET(0x1A734AA0)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A736020)
+#define PIPELINECAMERA_DEMO_PIPELINE_DEMOFOLLOWPIPELINECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1A736000)
 
 namespace PipelineCamera::Demo::Pipeline
 {
-	inline static constexpr unsigned int DemoFollowPipelineConfig_TypeDefinitionIndex = 34615;
+	inline static constexpr unsigned int DemoFollowPipelineConfig_TypeDefinitionIndex = 35617;
 
 	class DemoFollowPipelineConfig : public ::System::Object
 	{
 	public:
+		static ::Foundation::Unreal::FName* StaticGet_PipelineStageSetting()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x86A0);
+		}
 		static ::Foundation::Unreal::FName* StaticGet_PipelineStageTarget()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x8340);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x86A8);
 		}
 		static ::Foundation::Unreal::FName* StaticGet_PipelineStageModifier()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x8348);
-		}
-		static ::Foundation::Unreal::FName* StaticGet_PipelineStageInput()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x8350);
-		}
-		static ::Foundation::Unreal::FName* StaticGet_PipelineStageSetting()
-		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x8358);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x86B0);
 		}
 		static ::Foundation::Unreal::FName* StaticGet_PipelineStageInitializer()
 		{
-			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x8360);
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x86B8);
+		}
+		static ::Foundation::Unreal::FName* StaticGet_PipelineStageInput()
+		{
+			return (::Foundation::Unreal::FName*)Il2CppClass::FromTypeDefinitionIndex(DemoFollowPipelineConfig_TypeDefinitionIndex)->GetStaticField(0x86C0);
 		}
 		::PipelineCamera::Demo::Pipeline::DemoFollowPipelineSetting* defaultSetting; // 0x10
 		::System::Single defaultPitch; // 0x18

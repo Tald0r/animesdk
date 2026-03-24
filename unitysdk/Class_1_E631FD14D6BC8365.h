@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_9CBBB791D0978B97_2.h"
+#include "unitysdk/Enum_3_9CBBB791D0978B97_1.h"
 #include "unitysdk/Enum_3_B42D3B4769D5C848.h"
 #include "unitysdk/Enum_3_E08203B0D6ACEDCE.h"
 #include "unitysdk/FlexBuffers/FlxMap.h"
@@ -12,13 +12,13 @@ class Class_1_4708064C2D9D131C;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_E631FD14D6BC8365_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xAA8F560)
-#define CLASS_1_E631FD14D6BC8365_FROMFLX_OFFSET UNITYSDK_OFFSET(0xAA8EBC0)
-#define CLASS_1_E631FD14D6BC8365_METHOD_1_14DF275FDD6E920A_OFFSET UNITYSDK_OFFSET(0xAA8EC40)
-#define CLASS_1_E631FD14D6BC8365_METHOD_1_E8FBF00074801DA0_OFFSET UNITYSDK_OFFSET(0xAA8F5C0)
-#define CLASS_1_E631FD14D6BC8365__CTOR_OFFSET UNITYSDK_OFFSET(0xAA8F990)
+#define CLASS_1_E631FD14D6BC8365_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x15658BE0)
+#define CLASS_1_E631FD14D6BC8365_FROMFLX_OFFSET UNITYSDK_OFFSET(0x15658240)
+#define CLASS_1_E631FD14D6BC8365_METHOD_1_14DF275FDD6E920A_OFFSET UNITYSDK_OFFSET(0x156582C0)
+#define CLASS_1_E631FD14D6BC8365_METHOD_1_E8FBF00074801DA0_OFFSET UNITYSDK_OFFSET(0x15658C40)
+#define CLASS_1_E631FD14D6BC8365__CTOR_OFFSET UNITYSDK_OFFSET(0x15659010)
 
-inline static constexpr unsigned int Class_1_E631FD14D6BC8365_TypeDefinitionIndex = 78122;
+inline static constexpr unsigned int Class_1_E631FD14D6BC8365_TypeDefinitionIndex = 49022;
 
 class Class_1_E631FD14D6BC8365 : public ::System::Object
 {
@@ -26,9 +26,9 @@ public:
 	::System::Collections::Generic::List_1<::Class_1_4708064C2D9D131C*>* Field_1_5; // 0x10
 	::System::String* Field_1_3; // 0x18
 	::Enum_3_B42D3B4769D5C848 Field_1_1; // 0x20
-	::Enum_3_9CBBB791D0978B97_2 Field_1_4; // 0x24
-	::Enum_3_E08203B0D6ACEDCE Field_1_0; // 0x28
-	::System::Int32 Field_1_2; // 0x2C
+	::System::Int32 Field_1_2; // 0x24
+	::Enum_3_9CBBB791D0978B97_1 Field_1_4; // 0x28
+	::Enum_3_E08203B0D6ACEDCE Field_1_0; // 0x2C
 
 	::System::Void _ctor()
 	{

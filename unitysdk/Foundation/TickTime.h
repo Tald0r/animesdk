@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_TICKTIME_NEW_1_OFFSET UNITYSDK_OFFSET(0x1AA8CB50)
-#define FOUNDATION_TICKTIME_NEW_OFFSET UNITYSDK_OFFSET(0x1AA8CB30)
-#define FOUNDATION_TICKTIME__CTOR_OFFSET UNITYSDK_OFFSET(0x951720)
+#define FOUNDATION_TICKTIME_NEW_1_OFFSET UNITYSDK_OFFSET(0x1B0DE9B0)
+#define FOUNDATION_TICKTIME_NEW_OFFSET UNITYSDK_OFFSET(0x1B0DE990)
+#define FOUNDATION_TICKTIME__CTOR_OFFSET UNITYSDK_OFFSET(0x9872F0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int TickTime_TypeDefinitionIndex = 8936;
+	inline static constexpr unsigned int TickTime_TypeDefinitionIndex = 9053;
 
 	struct alignas(8) TickTime
 	{

@@ -5,12 +5,12 @@
 namespace MoleMole { class UIHollowChessboard3DModelController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS99_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA23B90)
-#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS99_0__UIANIMPERFORM_B__0_OFFSET UNITYSDK_OFFSET(0xAA23BA0)
+#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS99_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7F70010)
+#define MOLEMOLE_UIHOLLOWCHESSBOARD3DMODELCONTROLLER___C__DISPLAYCLASS99_0__UIANIMPERFORM_B__0_OFFSET UNITYSDK_OFFSET(0x7F70020)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowChessboard3DModelController___c__DisplayClass99_0_TypeDefinitionIndex = 75060;
+	inline static constexpr unsigned int UIHollowChessboard3DModelController___c__DisplayClass99_0_TypeDefinitionIndex = 42998;
 
 	class UIHollowChessboard3DModelController___c__DisplayClass99_0 : public ::System::Object
 	{

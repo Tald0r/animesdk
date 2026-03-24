@@ -4,12 +4,12 @@
 
 namespace MoleMole::Project::Config { class EnemyWaveInformTemplateExt; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETENEMYMONSTERLIST___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0xF1AB740)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETENEMYMONSTERLIST___C__DISPLAYCLASS2_0__ONGRAPHSTARTED_B__0_OFFSET UNITYSDK_OFFSET(0xF1AB750)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETENEMYMONSTERLIST___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB985650)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDTURNBASEDGETENEMYMONSTERLIST___C__DISPLAYCLASS2_0__ONGRAPHSTARTED_B__0_OFFSET UNITYSDK_OFFSET(0xB985660)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDTurnBasedGetEnemyMonsterList___c__DisplayClass2_0_TypeDefinitionIndex = 41228;
+	inline static constexpr unsigned int LDTurnBasedGetEnemyMonsterList___c__DisplayClass2_0_TypeDefinitionIndex = 63155;
 
 	class LDTurnBasedGetEnemyMonsterList___c__DisplayClass2_0 : public ::System::Object
 	{

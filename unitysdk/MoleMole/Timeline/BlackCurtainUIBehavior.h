@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/Color.h"
 #include "unitysdk/UnityEngine/Playables/PlayableBehaviour.h"
 
-#define MOLEMOLE_TIMELINE_BLACKCURTAINUIBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0x8A999D0)
+#define MOLEMOLE_TIMELINE_BLACKCURTAINUIBEHAVIOR__CTOR_OFFSET UNITYSDK_OFFSET(0x8CA2460)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int BlackCurtainUIBehavior_TypeDefinitionIndex = 44501;
+	inline static constexpr unsigned int BlackCurtainUIBehavior_TypeDefinitionIndex = 62695;
 
 	class BlackCurtainUIBehavior : public ::UnityEngine::Playables::PlayableBehaviour
 	{

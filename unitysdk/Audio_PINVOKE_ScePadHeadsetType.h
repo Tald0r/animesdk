@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Audio_PINVOKE_ScePadHeadsetType_TypeDefinitionIndex = 70689;
+inline static constexpr unsigned int Audio_PINVOKE_ScePadHeadsetType_TypeDefinitionIndex = 59824;
 
 enum class Audio_PINVOKE_ScePadHeadsetType : ::System::Int32
 {

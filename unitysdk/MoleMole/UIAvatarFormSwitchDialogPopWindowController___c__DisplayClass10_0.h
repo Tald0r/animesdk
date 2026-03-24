@@ -3,12 +3,12 @@
 #include "unitysdk/Struct_2_BD9D83395C3D28CB.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIAVATARFORMSWITCHDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDC52A10)
-#define MOLEMOLE_UIAVATARFORMSWITCHDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__RESETCONTEXTS_B__0_OFFSET UNITYSDK_OFFSET(0xDC52A20)
+#define MOLEMOLE_UIAVATARFORMSWITCHDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC094970)
+#define MOLEMOLE_UIAVATARFORMSWITCHDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__RESETCONTEXTS_B__0_OFFSET UNITYSDK_OFFSET(0xC094980)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAvatarFormSwitchDialogPopWindowController___c__DisplayClass10_0_TypeDefinitionIndex = 63186;
+	inline static constexpr unsigned int UIAvatarFormSwitchDialogPopWindowController___c__DisplayClass10_0_TypeDefinitionIndex = 74983;
 
 	class UIAvatarFormSwitchDialogPopWindowController___c__DisplayClass10_0 : public ::System::Object
 	{

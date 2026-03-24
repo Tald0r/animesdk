@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaEntrustInfoRowWidgetController_EChallengeType_TypeDefinitionIndex = 65049;
+	inline static constexpr unsigned int UIYorozuyaEntrustInfoRowWidgetController_EChallengeType_TypeDefinitionIndex = 52621;
 
 	enum class UIYorozuyaEntrustInfoRowWidgetController_EChallengeType : ::System::Int32
 	{
-		Hollow = 0,
 		Rally = 1,
+		Hollow = 0,
 	};
 }

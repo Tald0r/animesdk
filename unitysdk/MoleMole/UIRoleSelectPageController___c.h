@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__BINDBTNS_B__82_5_OFFSET UNITYSDK_OFFSET(0xCA50660)
-#define MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCA50610)
-#define MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCA50650)
+#define MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__BINDBTNS_B__84_5_OFFSET UNITYSDK_OFFSET(0xD7B0FD0)
+#define MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD7B0F80)
+#define MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD7B0FC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleSelectPageController___c_TypeDefinitionIndex = 51298;
+	inline static constexpr unsigned int UIRoleSelectPageController___c_TypeDefinitionIndex = 79378;
 
 	class UIRoleSelectPageController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIRoleSelectPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIRoleSelectPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIRoleSelectPageController___c_TypeDefinitionIndex)->GetStaticField(0x32A30);
+			return (::MoleMole::UIRoleSelectPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIRoleSelectPageController___c_TypeDefinitionIndex)->GetStaticField(0x34950);
 		}
-		static ::System::Action** StaticGet___9__82_5()
+		static ::System::Action** StaticGet___9__84_5()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRoleSelectPageController___c_TypeDefinitionIndex)->GetStaticField(0x32A38);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIRoleSelectPageController___c_TypeDefinitionIndex)->GetStaticField(0x34958);
 		}
 
 		static ::System::Void _cctor()
@@ -34,9 +34,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _BindBtns_b__82_5()
+		::System::Void _BindBtns_b__84_5()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__BINDBTNS_B__82_5_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIROLESELECTPAGECONTROLLER___C__BINDBTNS_B__84_5_OFFSET))(this);
 		}
 	};
 }

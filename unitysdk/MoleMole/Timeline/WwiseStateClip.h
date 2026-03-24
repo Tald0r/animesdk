@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class WwiseStateBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_WWISESTATECLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xA4AE520)
-#define MOLEMOLE_TIMELINE_WWISESTATECLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xA4AE510)
-#define MOLEMOLE_TIMELINE_WWISESTATECLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xA4AE720)
+#define MOLEMOLE_TIMELINE_WWISESTATECLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xD224570)
+#define MOLEMOLE_TIMELINE_WWISESTATECLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xD224560)
+#define MOLEMOLE_TIMELINE_WWISESTATECLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xD224770)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int WwiseStateClip_TypeDefinitionIndex = 77903;
+	inline static constexpr unsigned int WwiseStateClip_TypeDefinitionIndex = 71104;
 
 	class WwiseStateClip : public ::UnityEngine::Playables::PlayableAsset
 	{

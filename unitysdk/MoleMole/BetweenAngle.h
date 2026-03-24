@@ -15,43 +15,43 @@ namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_BETWEENANGLE_CLAMPANGLEBETWEENABSPI_OFFSET UNITYSDK_OFFSET(0x6BDA460)
-#define MOLEMOLE_BETWEENANGLE_GETMIRRORANGLE_OFFSET UNITYSDK_OFFSET(0x6BDC050)
-#define MOLEMOLE_BETWEENANGLE_GETSELFDIRANDPOS_OFFSET UNITYSDK_OFFSET(0x6BDAA10)
-#define MOLEMOLE_BETWEENANGLE_GETTARGETENTITYBYTARGETTYPE_OFFSET UNITYSDK_OFFSET(0x6BDC0F0)
-#define MOLEMOLE_BETWEENANGLE_GETTARGETPOSITION_OFFSET UNITYSDK_OFFSET(0x6BDB540)
-#define MOLEMOLE_BETWEENANGLE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x6BD9E80)
-#define MOLEMOLE_BETWEENANGLE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x6BDA5B0)
-#define MOLEMOLE_BETWEENANGLE__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDC730)
-#define MOLEMOLE_BETWEENANGLE___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x6BDC850)
-#define MOLEMOLE_BETWEENANGLE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x6BDC8E0)
+#define MOLEMOLE_BETWEENANGLE_CLAMPANGLEBETWEENABSPI_OFFSET UNITYSDK_OFFSET(0xACA92F0)
+#define MOLEMOLE_BETWEENANGLE_GETMIRRORANGLE_OFFSET UNITYSDK_OFFSET(0xACAAEE0)
+#define MOLEMOLE_BETWEENANGLE_GETSELFDIRANDPOS_OFFSET UNITYSDK_OFFSET(0xACA98A0)
+#define MOLEMOLE_BETWEENANGLE_GETTARGETENTITYBYTARGETTYPE_OFFSET UNITYSDK_OFFSET(0xACAAF80)
+#define MOLEMOLE_BETWEENANGLE_GETTARGETPOSITION_OFFSET UNITYSDK_OFFSET(0xACAA3D0)
+#define MOLEMOLE_BETWEENANGLE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xACA8D00)
+#define MOLEMOLE_BETWEENANGLE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xACA9440)
+#define MOLEMOLE_BETWEENANGLE__CTOR_OFFSET UNITYSDK_OFFSET(0xACAB5C0)
+#define MOLEMOLE_BETWEENANGLE___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xACAB6F0)
+#define MOLEMOLE_BETWEENANGLE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xACAB780)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BetweenAngle_TypeDefinitionIndex = 53605;
+	inline static constexpr unsigned int BetweenAngle_TypeDefinitionIndex = 79279;
 
 	class BetweenAngle : public ::BehaviorDesigner::Runtime::Tasks::Conditional
 	{
 	public:
 		// static const ::System::Single MAX_ANGLE; // 0x0
 		// static const ::System::Single MIN_ANGLE; // 0x0
-		::Class_3_B19369CC4AB45FA4* attackTargetComponent; // 0x50
+		::System::String* Type1AttachPoint; // 0x50
 		::BehaviorDesigner::Runtime::SharedString* TargetAnchorName1; // 0x58
-		::BehaviorDesigner::Runtime::SharedFloat* AngleMax; // 0x60
+		::BehaviorDesigner::Runtime::SharedString* TargetAnchorName2; // 0x60
 		::BehaviorDesigner::Runtime::SharedBool* IsSymmetry; // 0x68
-		::BehaviorDesigner::Runtime::SharedFloat* AngleMin; // 0x70
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x78
-		::System::String* TargetTypeCustomKey2; // 0x80
-		::System::String* Type1AttachPoint; // 0x88
-		::Class_3_F35B080B137ECC46* modelComponent; // 0x90
-		::BehaviorDesigner::Runtime::SharedFloat* StoreResult; // 0x98
-		::System::String* Type2AttachPoint; // 0xA0
-		::BehaviorDesigner::Runtime::SharedString* TargetAnchorName2; // 0xA8
-		::System::String* TargetTypeCustomKey1; // 0xB0
-		::MoleMole::AIMoveTargetType TargetType2; // 0xB8
+		::BehaviorDesigner::Runtime::SharedFloat* AngleMax; // 0x70
+		::System::String* TargetTypeCustomKey2; // 0x78
+		::Class_3_F35B080B137ECC46* modelComponent; // 0x80
+		::System::String* Type2AttachPoint; // 0x88
+		::BehaviorDesigner::Runtime::SharedFloat* StoreResult; // 0x90
+		::BehaviorDesigner::Runtime::SharedFloat* AngleMin; // 0x98
+		::System::String* TargetTypeCustomKey1; // 0xA0
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0xA8
+		::Class_3_B19369CC4AB45FA4* attackTargetComponent; // 0xB0
+		::MoleMole::AIMoveTargetType TargetType1; // 0xB8
 		::System::Single _angleMax; // 0xBC
-		::MoleMole::AIMoveTargetType TargetType1; // 0xC0
-		::System::Single _angleMin; // 0xC4
+		::System::Single _angleMin; // 0xC0
+		::MoleMole::AIMoveTargetType TargetType2; // 0xC4
 
 		::System::Void _ctor()
 		{

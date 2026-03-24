@@ -7,12 +7,12 @@ namespace RootMotion::FinalIK { class InteractionObject_Message; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::Events { class UnityEvent; }
 
-#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_INTERACTIONEVENT_ACTIVATE_OFFSET UNITYSDK_OFFSET(0x1AF007F0)
-#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_INTERACTIONEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF008E0)
+#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_INTERACTIONEVENT_ACTIVATE_OFFSET UNITYSDK_OFFSET(0x1B51DD60)
+#define ROOTMOTION_FINALIK_INTERACTIONOBJECT_INTERACTIONEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B51DE50)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int InteractionObject_InteractionEvent_TypeDefinitionIndex = 35106;
+	inline static constexpr unsigned int InteractionObject_InteractionEvent_TypeDefinitionIndex = 36108;
 
 	class InteractionObject_InteractionEvent : public ::System::Object
 	{

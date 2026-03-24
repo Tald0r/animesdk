@@ -15,34 +15,34 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCD06920)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCD06930)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCD06CA0)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD06F10)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD06ED0)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE35EE00)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE35EE10)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE35F180)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE35F3F0)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHTS_CONFIGGACHAPERFORMANCELIGHTS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE35F3B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex = 56328;
+	inline static constexpr unsigned int ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex = 61249;
 
 	class ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigGachaPerformanceLights*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::UnityEngine::Color>*>** StaticGet_CachedSerializer3()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::MoleMole::Config::ConfigCGCustomGlobalAnimation>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::UnityEngine::Color>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F750);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::System::String*>*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F758);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::MoleMole::Config::ConfigCGCustomGlobalAnimation>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31290);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigGachaPerformanceLight*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigGachaPerformanceLight*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F760);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigGachaPerformanceLight*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31298);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::MoleMole::Config::ConfigCGCustomGlobalAnimation>*>** StaticGet_CachedSerializer1()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::UnityEngine::Color>*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::MoleMole::Config::ConfigCGCustomGlobalAnimation>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F768);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ConfigGachaPerformMisc_ItemRarity, ::UnityEngine::Color>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x312A0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::System::String*>*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::UIGachaPerformance3DModelController_GachaStageType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigGachaPerformanceLights_ConfigGachaPerformanceLights_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x312A8);
 		}
 
 		::System::Void _ctor()

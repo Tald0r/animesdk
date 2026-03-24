@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class WwiseMusicBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_WWISEMUSICCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xA4AE2B0)
-#define MOLEMOLE_TIMELINE_WWISEMUSICCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xA4AE2A0)
-#define MOLEMOLE_TIMELINE_WWISEMUSICCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xA4AE4B0)
+#define MOLEMOLE_TIMELINE_WWISEMUSICCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xD224300)
+#define MOLEMOLE_TIMELINE_WWISEMUSICCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xD2242F0)
+#define MOLEMOLE_TIMELINE_WWISEMUSICCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xD224500)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int WwiseMusicClip_TypeDefinitionIndex = 75288;
+	inline static constexpr unsigned int WwiseMusicClip_TypeDefinitionIndex = 45414;
 
 	class WwiseMusicClip : public ::UnityEngine::Playables::PlayableAsset
 	{

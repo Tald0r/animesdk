@@ -5,21 +5,21 @@
 namespace System { class Object; }
 namespace System { class String; }
 
-#define UNITYENGINE_XR_MESHID_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x978880)
-#define UNITYENGINE_XR_MESHID_EQUALS_OFFSET UNITYSDK_OFFSET(0x978820)
-#define UNITYENGINE_XR_MESHID_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8E7B80)
-#define UNITYENGINE_XR_MESHID_TOSTRING_OFFSET UNITYSDK_OFFSET(0x978770)
-#define UNITYENGINE_XR_MESHID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B08AAC0)
+#define UNITYENGINE_XR_MESHID_EQUALS_1_OFFSET UNITYSDK_OFFSET(0x9ABDE0)
+#define UNITYENGINE_XR_MESHID_EQUALS_OFFSET UNITYSDK_OFFSET(0x9ABD80)
+#define UNITYENGINE_XR_MESHID_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x915B80)
+#define UNITYENGINE_XR_MESHID_TOSTRING_OFFSET UNITYSDK_OFFSET(0x9ABCD0)
+#define UNITYENGINE_XR_MESHID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B699280)
 
 namespace UnityEngine::XR
 {
-	inline static constexpr unsigned int MeshId_TypeDefinitionIndex = 23972;
+	inline static constexpr unsigned int MeshId_TypeDefinitionIndex = 24655;
 
 	struct alignas(8) MeshId
 	{
 		static ::UnityEngine::XR::MeshId* StaticGet_s_InvalidId()
 		{
-			return (::UnityEngine::XR::MeshId*)Il2CppClass::FromTypeDefinitionIndex(MeshId_TypeDefinitionIndex)->GetStaticField(0x4720);
+			return (::UnityEngine::XR::MeshId*)Il2CppClass::FromTypeDefinitionIndex(MeshId_TypeDefinitionIndex)->GetStaticField(0x4750);
 		}
 		::System::UInt64 m_SubId1; // 0x10
 		::System::UInt64 m_SubId2; // 0x18

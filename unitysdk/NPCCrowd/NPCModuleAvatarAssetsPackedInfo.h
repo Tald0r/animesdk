@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_NPCMODULEAVATARASSETSPACKEDINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x764AE80)
+#define NPCCROWD_NPCMODULEAVATARASSETSPACKEDINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x862D270)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int NPCModuleAvatarAssetsPackedInfo_TypeDefinitionIndex = 74990;
+	inline static constexpr unsigned int NPCModuleAvatarAssetsPackedInfo_TypeDefinitionIndex = 53054;
 
 	class NPCModuleAvatarAssetsPackedInfo : public ::System::Object
 	{

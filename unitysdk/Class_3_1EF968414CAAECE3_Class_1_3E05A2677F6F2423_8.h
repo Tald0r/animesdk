@@ -4,9 +4,9 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define CLASS_3_1EF968414CAAECE3_CLASS_1_3E05A2677F6F2423_8__CTOR_OFFSET UNITYSDK_OFFSET(0x7495BE0)
+#define CLASS_3_1EF968414CAAECE3_CLASS_1_3E05A2677F6F2423_8__CTOR_OFFSET UNITYSDK_OFFSET(0x6C55170)
 
-inline static constexpr unsigned int Class_3_1EF968414CAAECE3_Class_1_3E05A2677F6F2423_8_TypeDefinitionIndex = 66443;
+inline static constexpr unsigned int Class_3_1EF968414CAAECE3_Class_1_3E05A2677F6F2423_8_TypeDefinitionIndex = 61194;
 
 class Class_3_1EF968414CAAECE3_Class_1_3E05A2677F6F2423_8 : public ::System::Object
 {

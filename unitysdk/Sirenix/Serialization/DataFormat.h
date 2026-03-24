@@ -3,7 +3,7 @@
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int DataFormat_TypeDefinitionIndex = 6490;
+	inline static constexpr unsigned int DataFormat_TypeDefinitionIndex = 6494;
 
 	enum class DataFormat : ::System::Int32
 	{

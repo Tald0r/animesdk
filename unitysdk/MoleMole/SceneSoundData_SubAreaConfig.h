@@ -4,11 +4,11 @@
 
 namespace MoleMole::Config { class ConfigSoundActionGeneral; }
 
-#define MOLEMOLE_SCENESOUNDDATA_SUBAREACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA60F4F0)
+#define MOLEMOLE_SCENESOUNDDATA_SUBAREACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA7F98E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SceneSoundData_SubAreaConfig_TypeDefinitionIndex = 59683;
+	inline static constexpr unsigned int SceneSoundData_SubAreaConfig_TypeDefinitionIndex = 70914;
 
 	class SceneSoundData_SubAreaConfig : public ::System::Object
 	{

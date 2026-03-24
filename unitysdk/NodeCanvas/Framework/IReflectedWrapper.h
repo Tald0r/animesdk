@@ -5,7 +5,7 @@ namespace ParadoxNotion::Serialization { class ISerializedReflectedInfo; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int IReflectedWrapper_TypeDefinitionIndex = 25318;
+	inline static constexpr unsigned int IReflectedWrapper_TypeDefinitionIndex = 26335;
 
 	class IReflectedWrapper
 	{

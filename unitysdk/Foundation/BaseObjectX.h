@@ -6,29 +6,29 @@ namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Reflection { class MethodInfo; }
 
-#define FOUNDATION_BASEOBJECTX_GETPROFILERMEMORYSIZEINTERNAL_OFFSET UNITYSDK_OFFSET(0x1A597C70)
-#define FOUNDATION_BASEOBJECTX_GETPROFILERMEMORYSIZE_OFFSET UNITYSDK_OFFSET(0x1A597FC0)
-#define FOUNDATION_BASEOBJECTX_ISPUREVALUETYPE_OFFSET UNITYSDK_OFFSET(0x1A598BA0)
-#define FOUNDATION_BASEOBJECTX__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A598F00)
+#define FOUNDATION_BASEOBJECTX_GETPROFILERMEMORYSIZEINTERNAL_OFFSET UNITYSDK_OFFSET(0x1AB6FF10)
+#define FOUNDATION_BASEOBJECTX_GETPROFILERMEMORYSIZE_OFFSET UNITYSDK_OFFSET(0x1AB70260)
+#define FOUNDATION_BASEOBJECTX_ISPUREVALUETYPE_OFFSET UNITYSDK_OFFSET(0x1AB70E40)
+#define FOUNDATION_BASEOBJECTX__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB711A0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int BaseObjectX_TypeDefinitionIndex = 8023;
+	inline static constexpr unsigned int BaseObjectX_TypeDefinitionIndex = 8067;
 
 	class BaseObjectX : public ::System::Object
 	{
 	public:
-		static ::System::Reflection::MethodInfo** StaticGet_getObjectMemorySizeMethod()
-		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(BaseObjectX_TypeDefinitionIndex)->GetStaticField(0x7240);
-		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Boolean>** StaticGet__pureValueTypeCache()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(BaseObjectX_TypeDefinitionIndex)->GetStaticField(0x7248);
+			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(BaseObjectX_TypeDefinitionIndex)->GetStaticField(0x7340);
+		}
+		static ::System::Reflection::MethodInfo** StaticGet_getObjectMemorySizeMethod()
+		{
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(BaseObjectX_TypeDefinitionIndex)->GetStaticField(0x7348);
 		}
 		static ::System::Boolean* StaticGet_initialized()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BaseObjectX_TypeDefinitionIndex)->GetStaticField(0x3980);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BaseObjectX_TypeDefinitionIndex)->GetStaticField(0x3990);
 		}
 
 		static ::System::Void _cctor()

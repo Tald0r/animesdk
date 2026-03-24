@@ -6,18 +6,18 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATALPHANODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x14182E80)
-#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATALPHANODE__CTOR_OFFSET UNITYSDK_OFFSET(0x14182F10)
+#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATALPHANODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xBAEF7D0)
+#define MOLEMOLE_CONFIG_CONFIGCURVECTRLMATALPHANODE__CTOR_OFFSET UNITYSDK_OFFSET(0xBAEF860)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigCurveCtrlMatAlphaNode_TypeDefinitionIndex = 44143;
+	inline static constexpr unsigned int ConfigCurveCtrlMatAlphaNode_TypeDefinitionIndex = 67811;
 
 	class ConfigCurveCtrlMatAlphaNode : public ::MoleMole::Config::ConfigCurveCtrlBaseNode
 	{
 	public:
-		::System::String* MatProperty; // 0x48
-		::System::String* TargetMats; // 0x50
+		::System::String* TargetMats; // 0x48
+		::System::String* MatProperty; // 0x50
 		::MoleMole::Config::ConfigCurveCtrlMatAlphaNode_MatAlphaCtrlType CtrlType; // 0x58
 
 		::System::Void _ctor()

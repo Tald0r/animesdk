@@ -6,11 +6,11 @@ namespace MoleMole { class AvatarShowSetting; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGGALGAMEAVATARSHOWSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4A180)
+#define MOLEMOLE_CONFIGGALGAMEAVATARSHOWSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0xCB07300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigGalGameAvatarShowSettings_TypeDefinitionIndex = 39966;
+	inline static constexpr unsigned int ConfigGalGameAvatarShowSettings_TypeDefinitionIndex = 59581;
 
 	class ConfigGalGameAvatarShowSettings : public ::Foundation::MihoyoSerializedScriptableObject
 	{

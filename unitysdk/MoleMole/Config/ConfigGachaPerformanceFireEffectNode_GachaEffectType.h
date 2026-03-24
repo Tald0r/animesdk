@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformanceFireEffectNode_GachaEffectType_TypeDefinitionIndex = 45193;
+	inline static constexpr unsigned int ConfigGachaPerformanceFireEffectNode_GachaEffectType_TypeDefinitionIndex = 60596;
 
 	enum class ConfigGachaPerformanceFireEffectNode_GachaEffectType : ::System::Int32
 	{

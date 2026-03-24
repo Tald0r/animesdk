@@ -8,10 +8,10 @@ namespace System { class Uri; }
 namespace System::Xml { class XmlAttribute; }
 namespace System::Xml::Schema { class XmlSchema; }
 
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL_GET_IDATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19459640)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL_SETUNHANDLEDATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x19459660)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL_SET_IDATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19459650)
-#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL__CTOR_OFFSET UNITYSDK_OFFSET(0x19459670)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL_GET_IDATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x198716C0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL_SETUNHANDLEDATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x198716E0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL_SET_IDATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x198716D0)
+#define SYSTEM_XML_SCHEMA_XMLSCHEMAEXTERNAL__CTOR_OFFSET UNITYSDK_OFFSET(0x198716F0)
 
 namespace System::Xml::Schema
 {
@@ -20,11 +20,11 @@ namespace System::Xml::Schema
 	class XmlSchemaExternal : public ::System::Xml::Schema::XmlSchemaObject
 	{
 	public:
-		::System::Xml::Schema::XmlSchema* schema; // 0x38
-		::Il2CppArray<::System::Xml::XmlAttribute*>* moreAttributes; // 0x40
-		::System::String* location; // 0x48
-		::System::String* id; // 0x50
-		::System::Uri* baseUri; // 0x58
+		::Il2CppArray<::System::Xml::XmlAttribute*>* moreAttributes; // 0x38
+		::System::String* id; // 0x40
+		::System::Uri* baseUri; // 0x48
+		::System::String* location; // 0x50
+		::System::Xml::Schema::XmlSchema* schema; // 0x58
 		::System::Xml::Schema::Compositor compositor; // 0x60
 
 		::System::Void _ctor()

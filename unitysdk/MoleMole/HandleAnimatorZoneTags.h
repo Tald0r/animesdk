@@ -9,25 +9,25 @@ namespace BehaviorDesigner::Runtime { class SharedString; }
 namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_HANDLEANIMATORZONETAGS_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x82DCB70)
-#define MOLEMOLE_HANDLEANIMATORZONETAGS_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x82DCCB0)
-#define MOLEMOLE_HANDLEANIMATORZONETAGS__CTOR_OFFSET UNITYSDK_OFFSET(0x82DD440)
-#define MOLEMOLE_HANDLEANIMATORZONETAGS___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x82DD480)
-#define MOLEMOLE_HANDLEANIMATORZONETAGS___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x82DD510)
+#define MOLEMOLE_HANDLEANIMATORZONETAGS_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA397610)
+#define MOLEMOLE_HANDLEANIMATORZONETAGS_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA397740)
+#define MOLEMOLE_HANDLEANIMATORZONETAGS__CTOR_OFFSET UNITYSDK_OFFSET(0xA397D40)
+#define MOLEMOLE_HANDLEANIMATORZONETAGS___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xA397D80)
+#define MOLEMOLE_HANDLEANIMATORZONETAGS___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA397E10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int HandleAnimatorZoneTags_TypeDefinitionIndex = 38427;
+	inline static constexpr unsigned int HandleAnimatorZoneTags_TypeDefinitionIndex = 60679;
 
 	class HandleAnimatorZoneTags : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::MoleMole::Battle::Entity* _ownerEntity; // 0x58
+		::Il2CppArray<::BehaviorDesigner::Runtime::SharedString*>* SharedZoneTags; // 0x58
 		::BehaviorDesigner::Runtime::SharedString* CustomTargetKey; // 0x60
-		::Il2CppArray<::BehaviorDesigner::Runtime::SharedString*>* SharedZoneTags; // 0x68
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x70
-		::BehaviorDesigner::Runtime::Tasks::Basic::UnityAnimator::EntityTargetType TargetType; // 0x78
-		::MoleMole::HandleAnimatorZoneTags_TagHandleType HandleType; // 0x7C
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x68
+		::MoleMole::Battle::Entity* _ownerEntity; // 0x70
+		::MoleMole::HandleAnimatorZoneTags_TagHandleType HandleType; // 0x78
+		::BehaviorDesigner::Runtime::Tasks::Basic::UnityAnimator::EntityTargetType TargetType; // 0x7C
 
 		::System::Void _ctor()
 		{

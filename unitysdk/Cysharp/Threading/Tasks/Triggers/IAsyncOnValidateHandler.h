@@ -4,7 +4,7 @@
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnValidateHandler_TypeDefinitionIndex = 27314;
+	inline static constexpr unsigned int IAsyncOnValidateHandler_TypeDefinitionIndex = 28254;
 
 	class IAsyncOnValidateHandler
 	{

@@ -4,7 +4,7 @@
 
 namespace MeshDecimator::Collections
 {
-	inline static constexpr unsigned int ResizableArray_1_TypeDefinitionIndex = 31777;
+	inline static constexpr unsigned int ResizableArray_1_TypeDefinitionIndex = 32731;
 
 	template <typename T>
 	class ResizableArray_1 : public ::System::Object

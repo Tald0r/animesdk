@@ -3,19 +3,19 @@
 #include "unitysdk/MoleMole/Config/ConfigSurfGameItemPredicate.h"
 #include "unitysdk/MoleMole/Config/ValueCompareType.h"
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMPREDICATEBYHORIZONTALSPEED_PREDICATE_OFFSET UNITYSDK_OFFSET(0x139A4130)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMPREDICATEBYHORIZONTALSPEED__CTOR_OFFSET UNITYSDK_OFFSET(0x139A42C0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMPREDICATEBYHORIZONTALSPEED_PREDICATE_OFFSET UNITYSDK_OFFSET(0x91964B0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMPREDICATEBYHORIZONTALSPEED__CTOR_OFFSET UNITYSDK_OFFSET(0x9196640)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemPredicateByHorizontalSpeed_TypeDefinitionIndex = 52862;
+	inline static constexpr unsigned int ConfigSurfGameItemPredicateByHorizontalSpeed_TypeDefinitionIndex = 42906;
 
 	class ConfigSurfGameItemPredicateByHorizontalSpeed : public ::MoleMole::Config::ConfigSurfGameItemPredicate
 	{
 	public:
-		::System::Single SpeedArg1; // 0x10
+		::System::Single SpeedArg2; // 0x10
 		::MoleMole::Config::ValueCompareType CompareType; // 0x14
-		::System::Single SpeedArg2; // 0x18
+		::System::Single SpeedArg1; // 0x18
 
 		::System::Void _ctor()
 		{

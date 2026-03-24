@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UISuibianTempleResolvePageController; }
 
-#define MOLEMOLE_UISUIBIANTEMPLERESOLVEPAGECONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC86F280)
-#define MOLEMOLE_UISUIBIANTEMPLERESOLVEPAGECONTROLLER___C__DISPLAYCLASS19_0__INITTAB_B__0_OFFSET UNITYSDK_OFFSET(0xC86F290)
+#define MOLEMOLE_UISUIBIANTEMPLERESOLVEPAGECONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD3D6610)
+#define MOLEMOLE_UISUIBIANTEMPLERESOLVEPAGECONTROLLER___C__DISPLAYCLASS19_0__INITTAB_B__0_OFFSET UNITYSDK_OFFSET(0xD3D6620)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleResolvePageController___c__DisplayClass19_0_TypeDefinitionIndex = 44695;
+	inline static constexpr unsigned int UISuibianTempleResolvePageController___c__DisplayClass19_0_TypeDefinitionIndex = 60581;
 
 	class UISuibianTempleResolvePageController___c__DisplayClass19_0 : public ::System::Object
 	{

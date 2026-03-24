@@ -8,12 +8,12 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System::Reflection { class MethodInfo; }
 
-#define FLUFFYUNDERWARE_DEVTOOLS_ACTIONATTRIBUTE_CALLBACK_OFFSET UNITYSDK_OFFSET(0x1A238460)
-#define FLUFFYUNDERWARE_DEVTOOLS_ACTIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A238420)
+#define FLUFFYUNDERWARE_DEVTOOLS_ACTIONATTRIBUTE_CALLBACK_OFFSET UNITYSDK_OFFSET(0x1A7FFD80)
+#define FLUFFYUNDERWARE_DEVTOOLS_ACTIONATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7FFD40)
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int ActionAttribute_TypeDefinitionIndex = 24480;
+	inline static constexpr unsigned int ActionAttribute_TypeDefinitionIndex = 25305;
 
 	class ActionAttribute : public ::FluffyUnderware::DevTools::DTAttribute
 	{

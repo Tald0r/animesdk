@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7A74F50)
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS12_0__TRYTRIGGEREFFECT_B__0_OFFSET UNITYSDK_OFFSET(0x7A74F60)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAD5AE20)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS12_0__TRYTRIGGEREFFECT_B__0_OFFSET UNITYSDK_OFFSET(0xAD5AE30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowItemCollectWidgetController___c__DisplayClass12_0_TypeDefinitionIndex = 62667;
+	inline static constexpr unsigned int UIHollowItemCollectWidgetController___c__DisplayClass12_0_TypeDefinitionIndex = 60073;
 
 	class UIHollowItemCollectWidgetController___c__DisplayClass12_0 : public ::System::Object
 	{

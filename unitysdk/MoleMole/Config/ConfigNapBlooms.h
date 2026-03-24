@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigNapBloom; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGNAPBLOOMS__CTOR_OFFSET UNITYSDK_OFFSET(0x624F710)
+#define MOLEMOLE_CONFIG_CONFIGNAPBLOOMS__CTOR_OFFSET UNITYSDK_OFFSET(0xC23CA80)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigNapBlooms_TypeDefinitionIndex = 44348;
+	inline static constexpr unsigned int ConfigNapBlooms_TypeDefinitionIndex = 75113;
 
 	class ConfigNapBlooms : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -4,12 +4,12 @@
 
 class Class_1_D35B5D4865AF7021;
 
-#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___C__DISPLAYCLASS74_0__CTOR_OFFSET UNITYSDK_OFFSET(0xEE3A2D0)
-#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___C__DISPLAYCLASS74_0__UPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xEE3A2E0)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___C__DISPLAYCLASS74_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA60D60)
+#define MOLEMOLE_UITOWERDEFENSEMAINPAGECONTROLLER___C__DISPLAYCLASS74_0__UPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xAA60D70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITowerDefenseMainPageController___c__DisplayClass74_0_TypeDefinitionIndex = 41841;
+	inline static constexpr unsigned int UITowerDefenseMainPageController___c__DisplayClass74_0_TypeDefinitionIndex = 70830;
 
 	class UITowerDefenseMainPageController___c__DisplayClass74_0 : public ::System::Object
 	{

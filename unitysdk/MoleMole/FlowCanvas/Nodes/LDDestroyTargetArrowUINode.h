@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETARROWUINODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCDC940)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETARROWUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCCDCA90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETARROWUINODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA00C3E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDDESTROYTARGETARROWUINODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA00C530)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDDestroyTargetArrowUINode_TypeDefinitionIndex = 49143;
+	inline static constexpr unsigned int LDDestroyTargetArrowUINode_TypeDefinitionIndex = 37449;
 
 	class LDDestroyTargetArrowUINode : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::String*>
 	{

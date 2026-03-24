@@ -10,21 +10,21 @@ namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define CLASS_2_FEDA610FD7101723_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x64B90C0)
-#define CLASS_2_FEDA610FD7101723_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x64B8F70)
-#define CLASS_2_FEDA610FD7101723__CTOR_OFFSET UNITYSDK_OFFSET(0x64B90B0)
+#define CLASS_2_FEDA610FD7101723_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x86FDA80)
+#define CLASS_2_FEDA610FD7101723_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x86FD930)
+#define CLASS_2_FEDA610FD7101723__CTOR_OFFSET UNITYSDK_OFFSET(0x86FDA70)
 
-inline static constexpr unsigned int Class_2_FEDA610FD7101723_TypeDefinitionIndex = 38964;
+inline static constexpr unsigned int Class_2_FEDA610FD7101723_TypeDefinitionIndex = 49620;
 
 class Class_2_FEDA610FD7101723 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_1; // 0x18
-	::UnityEngine::UI::Extension::UITabButton* Field_2_0; // 0x20
+	::UnityEngine::UI::Extension::UITabButton* Field_2_0; // 0x18
+	::UnityEngine::UI::Text* Field_2_4; // 0x20
 	::MoleMole::NotificationBadge* Field_2_5; // 0x28
-	::UnityEngine::UI::Text* Field_2_3; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x38
-	::UnityEngine::UI::Text* Field_2_4; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
+	::UnityEngine::RectTransform* Field_2_1; // 0x38
+	::UnityEngine::UI::Text* Field_2_3; // 0x40
 
 	::System::Void _ctor()
 	{

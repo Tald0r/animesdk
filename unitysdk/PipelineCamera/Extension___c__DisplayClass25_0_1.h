@@ -7,7 +7,7 @@ namespace PipelineCamera::CameraSequence { class CameraSequenceRuntimeDataProvid
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int Extension___c__DisplayClass25_0_1_TypeDefinitionIndex = 34419;
+	inline static constexpr unsigned int Extension___c__DisplayClass25_0_1_TypeDefinitionIndex = 35421;
 
 	template <typename T>
 	class Extension___c__DisplayClass25_0_1 : public ::System::Object

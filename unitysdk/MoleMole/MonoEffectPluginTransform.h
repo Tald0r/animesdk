@@ -12,51 +12,50 @@ namespace System { class String; }
 namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class Renderer; }
 
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_DOUPDATETRANSFORMLIST_OFFSET UNITYSDK_OFFSET(0x8F8F530)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_GET_RENDERERS_OFFSET UNITYSDK_OFFSET(0x8F8ECE0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_07280B24DFAC0CA9_OFFSET UNITYSDK_OFFSET(0x8F8ED60)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_0E3D8071A5930FA8_OFFSET UNITYSDK_OFFSET(0x8F916C0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_56CE4AFC5339F746_OFFSET UNITYSDK_OFFSET(0x8F915C0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_924FB2174018B69E_OFFSET UNITYSDK_OFFSET(0x8F8FE00)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_D0C3AE61288C85E9_OFFSET UNITYSDK_OFFSET(0x8F8F9E0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_D1A3D5439FF4CA78_OFFSET UNITYSDK_OFFSET(0x8F909A0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x8F8F7A0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x8F8F5A0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONENABLE_OFFSET UNITYSDK_OFFSET(0x8F8F340)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x8F8F6D0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x8F8FB20)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_SET_RENDERERS_OFFSET UNITYSDK_OFFSET(0x8F8ECF0)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F8FD70)
-#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0x8F8FD50)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_DOUPDATETRANSFORMLIST_OFFSET UNITYSDK_OFFSET(0xD0EEB00)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_GET_RENDERERS_OFFSET UNITYSDK_OFFSET(0xD0EE2B0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_07280B24DFAC0CA9_OFFSET UNITYSDK_OFFSET(0xD0EE330)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_0E3D8071A5930FA8_OFFSET UNITYSDK_OFFSET(0xD0EF3E0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_56CE4AFC5339F746_OFFSET UNITYSDK_OFFSET(0xD0F05E0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_924FB2174018B69E_OFFSET UNITYSDK_OFFSET(0xD0EFA40)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_D0C3AE61288C85E9_OFFSET UNITYSDK_OFFSET(0xD0EEFC0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_D1A3D5439FF4CA78_OFFSET UNITYSDK_OFFSET(0xD0F06E0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xD0EED80)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xD0EEB70)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONENABLE_OFFSET UNITYSDK_OFFSET(0xD0EE910)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xD0EECA0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0xD0EF100)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_SET_RENDERERS_OFFSET UNITYSDK_OFFSET(0xD0EE2C0)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0EF350)
+#define MOLEMOLE_MONOEFFECTPLUGINTRANSFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xD0EF330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginTransform_TypeDefinitionIndex = 55568;
+	inline static constexpr unsigned int MonoEffectPluginTransform_TypeDefinitionIndex = 77759;
 
 	class MonoEffectPluginTransform : public ::MoleMole::MonoEffectPluginBase
 	{
 	public:
-		static ::System::Int32* StaticGet_Field_6_16()
+		static ::System::Int32* StaticGet_Field_6_18()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xF8F0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xFCB0);
 		}
 		static ::System::Int32* StaticGet_Field_6_19()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xF8F4);
-		}
-		static ::System::Int32* StaticGet_Field_6_18()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xF8F8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xFCB4);
 		}
 		static ::System::Int32* StaticGet_Field_6_20()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xF8FC);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xFCB8);
+		}
+		static ::System::Int32* StaticGet_Field_6_21()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xFCBC);
 		}
 		static ::System::Int32* StaticGet_Field_6_17()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xF900);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginTransform_TypeDefinitionIndex)->GetStaticField(0xFCC0);
 		}
-		// static const ::System::String* Field_6_7; // 0x0
 		// static const ::System::String* Field_6_8; // 0x0
 		// static const ::System::String* Field_6_9; // 0x0
 		// static const ::System::String* Field_6_10; // 0x0
@@ -65,16 +64,18 @@ namespace MoleMole
 		// static const ::System::String* Field_6_13; // 0x0
 		// static const ::System::String* Field_6_14; // 0x0
 		// static const ::System::String* Field_6_15; // 0x0
+		// static const ::System::String* Field_6_16; // 0x0
 		::MoleMole::MonoEffectPluginTransform_Enum_3_7E226242B470B21D strategy; // 0x18
 		::System::Boolean isSceneEffect; // 0x1C
-		::Il2CppArray<::UnityEngine::Renderer*>* Field_6_2; // 0x20
+		::System::Boolean tickMuted; // 0x1D
+		::Il2CppArray<::UnityEngine::Renderer*>* Field_6_3; // 0x20
 		::MoleMole::MonoEffect* monoEffect; // 0x28
-		::UnityEngine::Vector3 Field_6_4; // 0x30
-		::UnityEngine::Quaternion Field_6_5; // 0x3C
-		::UnityEngine::Vector3 Field_6_6; // 0x4C
-		::Il2CppArray<::MoleMole::MonoEffectPluginTransform_Class_1_D15846DA6A50C310*>* Field_6_21; // 0x58
+		::UnityEngine::Vector3 Field_6_5; // 0x30
+		::UnityEngine::Quaternion Field_6_6; // 0x3C
+		::UnityEngine::Vector3 Field_6_7; // 0x4C
+		::Il2CppArray<::MoleMole::MonoEffectPluginTransform_Class_1_D15846DA6A50C310*>* Field_6_22; // 0x58
 		::Il2CppArray<::MoleMole::MonoEffectPluginTransform_SyncDataStruct>* _syncDataStructs; // 0x60
-		::UnityEngine::MaterialPropertyBlock* Field_6_23; // 0x68
+		::UnityEngine::MaterialPropertyBlock* Field_6_24; // 0x68
 
 		::System::Void _ctor()
 		{
@@ -126,24 +127,19 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_ONVALIDATE_OFFSET))(this);
 		}
 
+		::System::Void Method_6_0E3D8071A5930FA8()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_0E3D8071A5930FA8_OFFSET))(this);
+		}
+
 		::System::Void Method_6_924FB2174018B69E(::MoleMole::MonoEffectPluginTransform_Class_1_D15846DA6A50C310* a1)
 		{
 			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoEffectPluginTransform_Class_1_D15846DA6A50C310*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_924FB2174018B69E_OFFSET))(this, a1);
 		}
 
-		::System::Void Method_6_D0C3AE61288C85E9(::UnityEngine::MaterialPropertyBlock*& a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnityEngine::MaterialPropertyBlock*&))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_D0C3AE61288C85E9_OFFSET))(this, a1);
-		}
-
 		::System::Void Method_6_56CE4AFC5339F746()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_56CE4AFC5339F746_OFFSET))(this);
-		}
-
-		::System::Void Method_6_0E3D8071A5930FA8()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_0E3D8071A5930FA8_OFFSET))(this);
 		}
 
 		static ::System::Void Method_6_D1A3D5439FF4CA78(::MoleMole::MonoEffectPluginTransform_SyncDataStruct& a1, ::UnityEngine::MaterialPropertyBlock*& a2)
@@ -154,6 +150,11 @@ namespace MoleMole
 		::System::Void Method_6_07280B24DFAC0CA9()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_07280B24DFAC0CA9_OFFSET))(this);
+		}
+
+		::System::Void Method_6_D0C3AE61288C85E9(::UnityEngine::MaterialPropertyBlock*& a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnityEngine::MaterialPropertyBlock*&))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOEFFECTPLUGINTRANSFORM_METHOD_6_D0C3AE61288C85E9_OFFSET))(this, a1);
 		}
 	};
 }

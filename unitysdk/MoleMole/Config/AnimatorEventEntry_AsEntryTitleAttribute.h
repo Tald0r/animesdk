@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTENTRY_ASENTRYTITLEATTRIBUTE_GET_ORDER_OFFSET UNITYSDK_OFFSET(0xCD977F0)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTENTRY_ASENTRYTITLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD97800)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTENTRY_ASENTRYTITLEATTRIBUTE_GET_ORDER_OFFSET UNITYSDK_OFFSET(0xB903D50)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTENTRY_ASENTRYTITLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0xB903D60)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventEntry_AsEntryTitleAttribute_TypeDefinitionIndex = 56105;
+	inline static constexpr unsigned int AnimatorEventEntry_AsEntryTitleAttribute_TypeDefinitionIndex = 41186;
 
 	class AnimatorEventEntry_AsEntryTitleAttribute : public ::System::Attribute
 	{

@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneHitWallEffect_RayMethod_TypeDefinitionIndex = 77993;
+	inline static constexpr unsigned int AnimatorZoneHitWallEffect_RayMethod_TypeDefinitionIndex = 44462;
 
 	enum class AnimatorZoneHitWallEffect_RayMethod : ::System::Int32
 	{

@@ -11,24 +11,24 @@ namespace MoleMole { class UIMonsterFantasyRoleItemWidgetController; }
 namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEOUTANIMATION_D__38_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x36AA40)
-#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEOUTANIMATION_D__38_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEOUTANIMATION_D__38_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A1EE0)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEOUTANIMATION_D__38_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyRoleItemWidgetController__PlayFadeOutAnimation_d__38_TypeDefinitionIndex = 45164;
+	inline static constexpr unsigned int UIMonsterFantasyRoleItemWidgetController__PlayFadeOutAnimation_d__38_TypeDefinitionIndex = 42513;
 
 	struct alignas(8) UIMonsterFantasyRoleItemWidgetController__PlayFadeOutAnimation_d__38
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
-		::System::String* key; // 0x20
-		::MoleMole::UIMonsterFantasyRoleItemWidgetController* __4__this; // 0x28
-		::MoleMole::FadeAnimationData _fadeConfig_5__2; // 0x30
-		::System::Threading::CancellationToken token; // 0x40
-		::System::Single _timeLeft_5__3; // 0x48
-		::Cysharp::Threading::Tasks::PlayerLoopTiming timing; // 0x4C
+		::System::String* key; // 0x10
+		::System::Threading::CancellationToken token; // 0x18
+		::MoleMole::FadeAnimationData _fadeConfig_5__2; // 0x20
+		::MoleMole::UIMonsterFantasyRoleItemWidgetController* __4__this; // 0x30
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x38
+		::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter __u__1; // 0x48
+		::System::Single _timeLeft_5__3; // 0x4C
 		::System::Int32 __1__state; // 0x50
-		::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter __u__1; // 0x54
+		::Cysharp::Threading::Tasks::PlayerLoopTiming timing; // 0x54
 
 		::System::Void MoveNext()
 		{

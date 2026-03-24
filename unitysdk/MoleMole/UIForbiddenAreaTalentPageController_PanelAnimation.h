@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIForbiddenAreaTalentPageController_PanelAnimation_TypeDefinitionIndex = 44641;
+	inline static constexpr unsigned int UIForbiddenAreaTalentPageController_PanelAnimation_TypeDefinitionIndex = 43978;
 
 	enum class UIForbiddenAreaTalentPageController_PanelAnimation : ::System::Int32
 	{
-		Refresh = 3,
 		FadeIn = 1,
-		FadeOut = 2,
 		None = 0,
+		Refresh = 3,
+		FadeOut = 2,
 	};
 }

@@ -3,7 +3,7 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int RandomSelectType_TypeDefinitionIndex = 46344;
+	inline static constexpr unsigned int RandomSelectType_TypeDefinitionIndex = 79723;
 
 	enum class RandomSelectType : ::System::Int32
 	{

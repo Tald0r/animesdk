@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIIconMount_UIName_TypeDefinitionIndex = 62989;
+	inline static constexpr unsigned int ConfigUIIconMount_UIName_TypeDefinitionIndex = 59135;
 
 	struct alignas(1) ConfigUIIconMount_UIName
 	{

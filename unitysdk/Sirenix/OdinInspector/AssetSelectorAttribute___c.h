@@ -5,24 +5,24 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define SIRENIX_ODININSPECTOR_ASSETSELECTORATTRIBUTE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB07B80)
-#define SIRENIX_ODININSPECTOR_ASSETSELECTORATTRIBUTE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB07BC0)
-#define SIRENIX_ODININSPECTOR_ASSETSELECTORATTRIBUTE___C__SET_PATHS_B__12_0_OFFSET UNITYSDK_OFFSET(0x1AB07BD0)
+#define SIRENIX_ODININSPECTOR_ASSETSELECTORATTRIBUTE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B113C00)
+#define SIRENIX_ODININSPECTOR_ASSETSELECTORATTRIBUTE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B113C40)
+#define SIRENIX_ODININSPECTOR_ASSETSELECTORATTRIBUTE___C__SET_PATHS_B__12_0_OFFSET UNITYSDK_OFFSET(0x1B113C50)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int AssetSelectorAttribute___c_TypeDefinitionIndex = 7125;
+	inline static constexpr unsigned int AssetSelectorAttribute___c_TypeDefinitionIndex = 7129;
 
 	class AssetSelectorAttribute___c : public ::System::Object
 	{
 	public:
 		static ::Sirenix::OdinInspector::AssetSelectorAttribute___c** StaticGet___9()
 		{
-			return (::Sirenix::OdinInspector::AssetSelectorAttribute___c**)Il2CppClass::FromTypeDefinitionIndex(AssetSelectorAttribute___c_TypeDefinitionIndex)->GetStaticField(0x5FE0);
+			return (::Sirenix::OdinInspector::AssetSelectorAttribute___c**)Il2CppClass::FromTypeDefinitionIndex(AssetSelectorAttribute___c_TypeDefinitionIndex)->GetStaticField(0x6020);
 		}
 		static ::System::Func_2<::System::String*, ::System::String*>** StaticGet___9__12_0()
 		{
-			return (::System::Func_2<::System::String*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(AssetSelectorAttribute___c_TypeDefinitionIndex)->GetStaticField(0x5FE8);
+			return (::System::Func_2<::System::String*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(AssetSelectorAttribute___c_TypeDefinitionIndex)->GetStaticField(0x6028);
 		}
 
 		static ::System::Void _cctor()

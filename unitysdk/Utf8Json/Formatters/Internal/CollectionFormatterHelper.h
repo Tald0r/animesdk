@@ -4,22 +4,22 @@
 
 namespace Utf8Json::Internal { class AutomataDictionary; }
 
-#define UTF8JSON_FORMATTERS_INTERNAL_COLLECTIONFORMATTERHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B12CD80)
+#define UTF8JSON_FORMATTERS_INTERNAL_COLLECTIONFORMATTERHELPER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B747970)
 
 namespace Utf8Json::Formatters::Internal
 {
-	inline static constexpr unsigned int CollectionFormatterHelper_TypeDefinitionIndex = 82040;
+	inline static constexpr unsigned int CollectionFormatterHelper_TypeDefinitionIndex = 84081;
 
 	class CollectionFormatterHelper : public ::System::Object
 	{
 	public:
 		static ::Utf8Json::Internal::AutomataDictionary** StaticGet_groupingAutomata()
 		{
-			return (::Utf8Json::Internal::AutomataDictionary**)Il2CppClass::FromTypeDefinitionIndex(CollectionFormatterHelper_TypeDefinitionIndex)->GetStaticField(0x47460);
+			return (::Utf8Json::Internal::AutomataDictionary**)Il2CppClass::FromTypeDefinitionIndex(CollectionFormatterHelper_TypeDefinitionIndex)->GetStaticField(0x48E70);
 		}
 		static ::Il2CppArray<::Il2CppArray<::System::Byte>*>** StaticGet_groupingName()
 		{
-			return (::Il2CppArray<::Il2CppArray<::System::Byte>*>**)Il2CppClass::FromTypeDefinitionIndex(CollectionFormatterHelper_TypeDefinitionIndex)->GetStaticField(0x47468);
+			return (::Il2CppArray<::Il2CppArray<::System::Byte>*>**)Il2CppClass::FromTypeDefinitionIndex(CollectionFormatterHelper_TypeDefinitionIndex)->GetStaticField(0x48E78);
 		}
 
 		static ::System::Void _cctor()

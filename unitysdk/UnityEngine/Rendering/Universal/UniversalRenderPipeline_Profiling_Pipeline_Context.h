@@ -5,18 +5,18 @@
 namespace System { class String; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINE_PROFILING_PIPELINE_CONTEXT__CCTOR_OFFSET UNITYSDK_OFFSET(0x183A5E60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_UNIVERSALRENDERPIPELINE_PROFILING_PIPELINE_CONTEXT__CCTOR_OFFSET UNITYSDK_OFFSET(0x189FC1B0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int UniversalRenderPipeline_Profiling_Pipeline_Context_TypeDefinitionIndex = 28789;
+	inline static constexpr unsigned int UniversalRenderPipeline_Profiling_Pipeline_Context_TypeDefinitionIndex = 29735;
 
 	class UniversalRenderPipeline_Profiling_Pipeline_Context : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::NAPRenderPipeline0::ProfilingSampler** StaticGet_submit()
 		{
-			return (::UnityEngine::NAPRenderPipeline0::ProfilingSampler**)Il2CppClass::FromTypeDefinitionIndex(UniversalRenderPipeline_Profiling_Pipeline_Context_TypeDefinitionIndex)->GetStaticField(0x218B0);
+			return (::UnityEngine::NAPRenderPipeline0::ProfilingSampler**)Il2CppClass::FromTypeDefinitionIndex(UniversalRenderPipeline_Profiling_Pipeline_Context_TypeDefinitionIndex)->GetStaticField(0x23200);
 		}
 		// static const ::System::String* k_Name; // 0x0
 

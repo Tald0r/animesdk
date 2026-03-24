@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define SYSTEM_NUMERICS_BITOPERATIONS_ROTATELEFT_OFFSET UNITYSDK_OFFSET(0x19F5EED0)
+#define SYSTEM_NUMERICS_BITOPERATIONS_ROTATELEFT_OFFSET UNITYSDK_OFFSET(0x1A56FD20)
 
 namespace System::Numerics
 {
-	inline static constexpr unsigned int BitOperations_TypeDefinitionIndex = 26292;
+	inline static constexpr unsigned int BitOperations_TypeDefinitionIndex = 26805;
 
 	class BitOperations : public ::System::Object
 	{

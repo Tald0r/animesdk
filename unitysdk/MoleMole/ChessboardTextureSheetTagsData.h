@@ -6,13 +6,13 @@ namespace MoleMole { class ChessboardTextureTagConfig; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CHESSBOARDTEXTURESHEETTAGSDATA_ADDTAGS_OFFSET UNITYSDK_OFFSET(0x6BE0D10)
-#define MOLEMOLE_CHESSBOARDTEXTURESHEETTAGSDATA_GETTAGS_OFFSET UNITYSDK_OFFSET(0x6BE0F80)
-#define MOLEMOLE_CHESSBOARDTEXTURESHEETTAGSDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x6BE1110)
+#define MOLEMOLE_CHESSBOARDTEXTURESHEETTAGSDATA_ADDTAGS_OFFSET UNITYSDK_OFFSET(0xACAF690)
+#define MOLEMOLE_CHESSBOARDTEXTURESHEETTAGSDATA_GETTAGS_OFFSET UNITYSDK_OFFSET(0xACAF900)
+#define MOLEMOLE_CHESSBOARDTEXTURESHEETTAGSDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xACAFA90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ChessboardTextureSheetTagsData_TypeDefinitionIndex = 38950;
+	inline static constexpr unsigned int ChessboardTextureSheetTagsData_TypeDefinitionIndex = 63311;
 
 	class ChessboardTextureSheetTagsData : public ::Foundation::MihoyoSerializedScriptableObject
 	{

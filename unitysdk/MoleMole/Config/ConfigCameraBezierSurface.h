@@ -5,11 +5,11 @@
 namespace MoleMole::Cameras { class BezierSurfaceCameraConfig; }
 namespace MoleMole::Config { class BezierSurfaceCameraConfigInput; }
 
-#define MOLEMOLE_CONFIG_CONFIGCAMERABEZIERSURFACE__CTOR_OFFSET UNITYSDK_OFFSET(0x141814A0)
+#define MOLEMOLE_CONFIG_CONFIGCAMERABEZIERSURFACE__CTOR_OFFSET UNITYSDK_OFFSET(0xBAEDD80)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigCameraBezierSurface_TypeDefinitionIndex = 63899;
+	inline static constexpr unsigned int ConfigCameraBezierSurface_TypeDefinitionIndex = 64690;
 
 	class ConfigCameraBezierSurface : public ::Foundation::MihoyoSerializedScriptableObject
 	{

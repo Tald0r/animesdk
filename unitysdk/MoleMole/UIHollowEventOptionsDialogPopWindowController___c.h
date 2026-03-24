@@ -5,49 +5,49 @@
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xE23C690)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xE23C6D0)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_2_OFFSET UNITYSDK_OFFSET(0xE23C6E0)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_3_OFFSET UNITYSDK_OFFSET(0xE23C6F0)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_4_OFFSET UNITYSDK_OFFSET(0xE23C700)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_5_OFFSET UNITYSDK_OFFSET(0xE23C710)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_6_OFFSET UNITYSDK_OFFSET(0xE23C720)
-#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__ONCHOICERESPONSE_B__10_1_OFFSET UNITYSDK_OFFSET(0xE23C730)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD5B4300)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD5B4340)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_2_OFFSET UNITYSDK_OFFSET(0xD5B4350)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_3_OFFSET UNITYSDK_OFFSET(0xD5B4360)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_4_OFFSET UNITYSDK_OFFSET(0xD5B4370)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_5_OFFSET UNITYSDK_OFFSET(0xD5B4380)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__INITCHOICEOBJ_B__9_6_OFFSET UNITYSDK_OFFSET(0xD5B4390)
+#define MOLEMOLE_UIHOLLOWEVENTOPTIONSDIALOGPOPWINDOWCONTROLLER___C__ONCHOICERESPONSE_B__10_1_OFFSET UNITYSDK_OFFSET(0xD5B43A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex = 74594;
+	inline static constexpr unsigned int UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex = 75643;
 
 	class UIHollowEventOptionsDialogPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIHollowEventOptionsDialogPopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIHollowEventOptionsDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42730);
-		}
-		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_3()
-		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42738);
-		}
 		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_6()
 		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42740);
-		}
-		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_4()
-		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42748);
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x43280);
 		}
 		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_2()
 		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42750);
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x43288);
 		}
 		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_5()
 		{
-			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42758);
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x43290);
+		}
+		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_4()
+		{
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x43298);
 		}
 		static ::System::Action** StaticGet___9__10_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x42760);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x432A0);
+		}
+		static ::System::Action_1<::System::Boolean>** StaticGet___9__9_3()
+		{
+			return (::System::Action_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x432A8);
+		}
+		static ::MoleMole::UIHollowEventOptionsDialogPopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIHollowEventOptionsDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowEventOptionsDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x432B0);
 		}
 
 		static ::System::Void _cctor()

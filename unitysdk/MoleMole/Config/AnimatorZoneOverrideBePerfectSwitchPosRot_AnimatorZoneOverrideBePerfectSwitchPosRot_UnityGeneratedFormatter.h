@@ -16,38 +16,38 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xC33D0D0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xC33D0E0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xC33D5B0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC33D8D0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xC33D890)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xEC367D0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xEC367E0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xEC36CB0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xEC36FD0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_ANIMATORZONEOVERRIDEBEPERFECTSWITCHPOSROT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xEC36F90)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex = 58151;
+	inline static constexpr unsigned int AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex = 68743;
 
 	class AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneOverrideBePerfectSwitchPosRot*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x422A0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::AidAttackType, ::MoleMole::Config::ConfigPosRot*>*>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::AidAttackType, ::MoleMole::Config::ConfigPosRot*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x422A8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::AidAttackType, ::MoleMole::Config::ConfigPosRot*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42D60);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x422B0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x422B8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42D68);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x422C0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42D70);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42D78);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneOverrideBePerfectSwitchPosRot_AnimatorZoneOverrideBePerfectSwitchPosRot_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x42D80);
 		}
 
 		::System::Void _ctor()

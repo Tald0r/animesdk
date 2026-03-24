@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define EXPRESSIONV2_OPERATORCODE__CTOR_OFFSET UNITYSDK_OFFSET(0x8CD8E10)
+#define EXPRESSIONV2_OPERATORCODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEB3A650)
 
 namespace ExpressionV2
 {
-	inline static constexpr unsigned int OperatorCode_TypeDefinitionIndex = 49203;
+	inline static constexpr unsigned int OperatorCode_TypeDefinitionIndex = 39719;
 
 	class OperatorCode : public ::System::Object
 	{

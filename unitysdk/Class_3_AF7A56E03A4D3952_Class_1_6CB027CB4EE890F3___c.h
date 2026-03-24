@@ -5,27 +5,27 @@
 namespace MoleMole::Battle { class ColliderEventDispatcher; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C_METHOD_1_A3A7D20E3C95F34D_1_OFFSET UNITYSDK_OFFSET(0x934DFA0)
-#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C_METHOD_1_A3A7D20E3C95F34D_OFFSET UNITYSDK_OFFSET(0x934DEF0)
-#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x934DEA0)
-#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C__CTOR_OFFSET UNITYSDK_OFFSET(0x934DEE0)
+#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C_METHOD_1_A3A7D20E3C95F34D_1_OFFSET UNITYSDK_OFFSET(0x7638720)
+#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C_METHOD_1_A3A7D20E3C95F34D_OFFSET UNITYSDK_OFFSET(0x7638670)
+#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7638620)
+#define CLASS_3_AF7A56E03A4D3952_CLASS_1_6CB027CB4EE890F3___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7638660)
 
-inline static constexpr unsigned int Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex = 47735;
+inline static constexpr unsigned int Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex = 48754;
 
 class Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c : public ::System::Object
 {
 public:
-	static ::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>** StaticGet___9__5_1()
-	{
-		return (::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>**)Il2CppClass::FromTypeDefinitionIndex(Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex)->GetStaticField(0x40440);
-	}
 	static ::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>** StaticGet___9__5_0()
 	{
-		return (::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>**)Il2CppClass::FromTypeDefinitionIndex(Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex)->GetStaticField(0x40448);
+		return (::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>**)Il2CppClass::FromTypeDefinitionIndex(Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex)->GetStaticField(0x3A550);
 	}
 	static ::Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c** StaticGet___9()
 	{
-		return (::Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c**)Il2CppClass::FromTypeDefinitionIndex(Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex)->GetStaticField(0x40450);
+		return (::Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c**)Il2CppClass::FromTypeDefinitionIndex(Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex)->GetStaticField(0x3A558);
+	}
+	static ::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>** StaticGet___9__5_1()
+	{
+		return (::System::Action_1<::MoleMole::Battle::ColliderEventDispatcher*>**)Il2CppClass::FromTypeDefinitionIndex(Class_3_AF7A56E03A4D3952_Class_1_6CB027CB4EE890F3___c_TypeDefinitionIndex)->GetStaticField(0x3A560);
 	}
 
 	static ::System::Void _cctor()

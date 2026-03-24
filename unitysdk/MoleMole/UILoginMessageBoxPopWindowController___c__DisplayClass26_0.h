@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UILoginMessageBoxPopWindowController; }
 
-#define MOLEMOLE_UILOGINMESSAGEBOXPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__BTNCONFIRM_B__0_OFFSET UNITYSDK_OFFSET(0x92A4D30)
-#define MOLEMOLE_UILOGINMESSAGEBOXPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0x92A4D20)
+#define MOLEMOLE_UILOGINMESSAGEBOXPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__BTNCONFIRM_B__0_OFFSET UNITYSDK_OFFSET(0xAF6DB50)
+#define MOLEMOLE_UILOGINMESSAGEBOXPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAF6DB40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILoginMessageBoxPopWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 59625;
+	inline static constexpr unsigned int UILoginMessageBoxPopWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 79876;
 
 	class UILoginMessageBoxPopWindowController___c__DisplayClass26_0 : public ::System::Object
 	{

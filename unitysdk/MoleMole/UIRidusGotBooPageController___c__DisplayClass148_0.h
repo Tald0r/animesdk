@@ -5,21 +5,21 @@
 namespace MoleMole { class UIRidusGotBooPageController; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB8C090)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__PLAYTIMELINE_B__0_OFFSET UNITYSDK_OFFSET(0xAB8C0A0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__PLAYTIMELINE_B__1_OFFSET UNITYSDK_OFFSET(0xAB8C140)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__PLAYTIMELINE_B__3_OFFSET UNITYSDK_OFFSET(0xAB8C1F0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA23CAA0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__PLAYTIMELINE_B__0_OFFSET UNITYSDK_OFFSET(0xA23CAB0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__PLAYTIMELINE_B__1_OFFSET UNITYSDK_OFFSET(0xA23CB50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER___C__DISPLAYCLASS148_0__PLAYTIMELINE_B__3_OFFSET UNITYSDK_OFFSET(0xA23CC00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController___c__DisplayClass148_0_TypeDefinitionIndex = 66320;
+	inline static constexpr unsigned int UIRidusGotBooPageController___c__DisplayClass148_0_TypeDefinitionIndex = 44112;
 
 	class UIRidusGotBooPageController___c__DisplayClass148_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIRidusGotBooPageController* __4__this; // 0x10
-		::System::Boolean finished; // 0x18
-		::System::Boolean withInputBlock; // 0x19
+		::System::Boolean withInputBlock; // 0x18
+		::System::Boolean finished; // 0x19
 
 		::System::Void _ctor()
 		{

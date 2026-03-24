@@ -3,13 +3,13 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSound_TargetType_TypeDefinitionIndex = 68397;
+	inline static constexpr unsigned int LDSound_TargetType_TypeDefinitionIndex = 63137;
 
 	enum class LDSound_TargetType : ::System::Int32
 	{
-		Entity = 1,
-		Key = 2,
 		Anchor = 0,
+		Key = 2,
 		Global = 3,
+		Entity = 1,
 	};
 }

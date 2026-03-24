@@ -3,7 +3,7 @@
 
 namespace RootMotion
 {
-	inline static constexpr unsigned int BipedNaming_BoneType_TypeDefinitionIndex = 34979;
+	inline static constexpr unsigned int BipedNaming_BoneType_TypeDefinitionIndex = 35981;
 
 	enum class BipedNaming_BoneType : ::System::Int32
 	{

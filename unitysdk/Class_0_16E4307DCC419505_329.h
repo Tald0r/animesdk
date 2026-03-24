@@ -1,12 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/Battle/EntityBodySize.h"
 
-class Class_0_16E4307DCC419505_234;
-namespace MoleMole { class UIInLevelSkillButtonBranchBaseController; }
-namespace MoleMole { class UIWindowController; }
-namespace UnityEngine { class Transform; }
+namespace Nap::NapECS { class EcsWorld; }
+namespace UnityEngine { class Collider; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_329_TypeDefinitionIndex = 42798;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_329_TypeDefinitionIndex = 48127;
 
 class Class_0_16E4307DCC419505_329
 {

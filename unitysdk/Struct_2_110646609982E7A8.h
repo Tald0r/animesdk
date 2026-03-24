@@ -1,21 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_121CF606CB7E9CD1_5.h"
+#include "unitysdk/Enum_3_121CF606CB7E9CD1.h"
 #include "unitysdk/System/ValueType.h"
 
 namespace System { class String; }
 
-#define STRUCT_2_110646609982E7A8__CCTOR_OFFSET UNITYSDK_OFFSET(0xBAAF2D0)
+#define STRUCT_2_110646609982E7A8__CCTOR_OFFSET UNITYSDK_OFFSET(0xC48F740)
 
-inline static constexpr unsigned int Struct_2_110646609982E7A8_TypeDefinitionIndex = 63002;
+inline static constexpr unsigned int Struct_2_110646609982E7A8_TypeDefinitionIndex = 37573;
 
 struct alignas(8) Struct_2_110646609982E7A8
 {
 	static ::Struct_2_110646609982E7A8* StaticGet_Field_2_0()
 	{
-		return (::Struct_2_110646609982E7A8*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_110646609982E7A8_TypeDefinitionIndex)->GetStaticField(0x36070);
+		return (::Struct_2_110646609982E7A8*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_110646609982E7A8_TypeDefinitionIndex)->GetStaticField(0x37BF0);
 	}
-	::Enum_3_121CF606CB7E9CD1_5 Field_2_1; // 0x10
+	::Enum_3_121CF606CB7E9CD1 Field_2_1; // 0x10
 	::System::String* Field_2_2; // 0x18
 	::System::Single Field_2_3; // 0x20
 	::System::Single Field_2_4; // 0x24

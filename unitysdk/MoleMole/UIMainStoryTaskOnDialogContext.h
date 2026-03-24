@@ -4,11 +4,11 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAINSTORYTASKONDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB2403A0)
+#define MOLEMOLE_UIMAINSTORYTASKONDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7475260)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainStoryTaskOnDialogContext_TypeDefinitionIndex = 70900;
+	inline static constexpr unsigned int UIMainStoryTaskOnDialogContext_TypeDefinitionIndex = 69385;
 
 	class UIMainStoryTaskOnDialogContext : public ::MoleMole::UIControllerContextBase
 	{

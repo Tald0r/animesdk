@@ -12,7 +12,7 @@ namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
 namespace SQLite
 {
-	inline static constexpr unsigned int AsyncTableQuery_1_TypeDefinitionIndex = 35324;
+	inline static constexpr unsigned int AsyncTableQuery_1_TypeDefinitionIndex = 36326;
 
 	template <typename T>
 	class AsyncTableQuery_1 : public ::System::Object

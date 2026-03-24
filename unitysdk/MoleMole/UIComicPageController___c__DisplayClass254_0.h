@@ -5,18 +5,18 @@
 namespace MoleMole { class UIComicPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS254_0__CLOSEMENU_B__0_OFFSET UNITYSDK_OFFSET(0xCC7C5A0)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS254_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCC65E00)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS254_0__CLOSEMENU_B__0_OFFSET UNITYSDK_OFFSET(0xD9DC840)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS254_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD9C6070)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicPageController___c__DisplayClass254_0_TypeDefinitionIndex = 45648;
+	inline static constexpr unsigned int UIComicPageController___c__DisplayClass254_0_TypeDefinitionIndex = 62535;
 
 	class UIComicPageController___c__DisplayClass254_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIComicPageController* __4__this; // 0x10
-		::System::Action* finishCB; // 0x18
+		::System::Action* finishCB; // 0x10
+		::MoleMole::UIComicPageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

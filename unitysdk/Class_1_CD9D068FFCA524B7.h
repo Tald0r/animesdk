@@ -3,16 +3,16 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/Text/RegularExpressions/RegexOptions.h"
 
-#define CLASS_1_CD9D068FFCA524B7__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AE15070)
+#define CLASS_1_CD9D068FFCA524B7__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AF8E660)
 
-inline static constexpr unsigned int Class_1_CD9D068FFCA524B7_TypeDefinitionIndex = 9352;
+inline static constexpr unsigned int Class_1_CD9D068FFCA524B7_TypeDefinitionIndex = 9422;
 
 class Class_1_CD9D068FFCA524B7 : public ::System::Object
 {
 public:
 	static ::System::Text::RegularExpressions::RegexOptions* StaticGet_Field_1_0()
 	{
-		return (::System::Text::RegularExpressions::RegexOptions*)Il2CppClass::FromTypeDefinitionIndex(Class_1_CD9D068FFCA524B7_TypeDefinitionIndex)->GetStaticField(0x3FE0);
+		return (::System::Text::RegularExpressions::RegexOptions*)Il2CppClass::FromTypeDefinitionIndex(Class_1_CD9D068FFCA524B7_TypeDefinitionIndex)->GetStaticField(0x40C0);
 	}
 
 	static ::System::Void _cctor()

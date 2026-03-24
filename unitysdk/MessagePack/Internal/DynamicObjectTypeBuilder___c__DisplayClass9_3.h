@@ -7,20 +7,20 @@
 namespace MessagePack::Internal { class DynamicObjectTypeBuilder___c__DisplayClass9_2; }
 namespace System { class String; }
 
-#define MESSAGEPACK_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS9_3__BUILDDESERIALIZE_B__6_OFFSET UNITYSDK_OFFSET(0x19E96C10)
-#define MESSAGEPACK_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS9_3__BUILDDESERIALIZE_B__7_OFFSET UNITYSDK_OFFSET(0x19E96E20)
-#define MESSAGEPACK_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS9_3__CTOR_OFFSET UNITYSDK_OFFSET(0x19E96B00)
+#define MESSAGEPACK_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS9_3__BUILDDESERIALIZE_B__6_OFFSET UNITYSDK_OFFSET(0x1A484390)
+#define MESSAGEPACK_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS9_3__BUILDDESERIALIZE_B__7_OFFSET UNITYSDK_OFFSET(0x1A4845A0)
+#define MESSAGEPACK_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS9_3__CTOR_OFFSET UNITYSDK_OFFSET(0x1A484280)
 
 namespace MessagePack::Internal
 {
-	inline static constexpr unsigned int DynamicObjectTypeBuilder___c__DisplayClass9_3_TypeDefinitionIndex = 25211;
+	inline static constexpr unsigned int DynamicObjectTypeBuilder___c__DisplayClass9_3_TypeDefinitionIndex = 26356;
 
 	class DynamicObjectTypeBuilder___c__DisplayClass9_3 : public ::System::Object
 	{
 	public:
 		::MessagePack::Internal::DynamicObjectTypeBuilder___c__DisplayClass9_2* CS___8__locals3; // 0x10
-		::System::Reflection::Emit::Label loopEnd; // 0x18
-		::System::Reflection::Emit::Label readNext; // 0x1C
+		::System::Reflection::Emit::Label readNext; // 0x18
+		::System::Reflection::Emit::Label loopEnd; // 0x1C
 
 		::System::Void _ctor()
 		{

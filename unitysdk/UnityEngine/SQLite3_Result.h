@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SQLite3_Result_TypeDefinitionIndex = 5389;
+	inline static constexpr unsigned int SQLite3_Result_TypeDefinitionIndex = 5392;
 
 	enum class SQLite3_Result : ::System::Int32
 	{

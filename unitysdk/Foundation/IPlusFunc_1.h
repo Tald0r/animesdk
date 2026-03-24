@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IPlusFunc_1_TypeDefinitionIndex = 9029;
+	inline static constexpr unsigned int IPlusFunc_1_TypeDefinitionIndex = 8882;
 
 	template <typename T>
 	class IPlusFunc_1

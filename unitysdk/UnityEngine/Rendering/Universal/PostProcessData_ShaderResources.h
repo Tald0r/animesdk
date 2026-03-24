@@ -5,11 +5,11 @@
 namespace UnityEngine { class ComputeShader; }
 namespace UnityEngine { class Shader; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSDATA_SHADERRESOURCES__CTOR_OFFSET UNITYSDK_OFFSET(0x18042090)
+#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSDATA_SHADERRESOURCES__CTOR_OFFSET UNITYSDK_OFFSET(0x18664110)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int PostProcessData_ShaderResources_TypeDefinitionIndex = 28353;
+	inline static constexpr unsigned int PostProcessData_ShaderResources_TypeDefinitionIndex = 29294;
 
 	class PostProcessData_ShaderResources : public ::System::Object
 	{

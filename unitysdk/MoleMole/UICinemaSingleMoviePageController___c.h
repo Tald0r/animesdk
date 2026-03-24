@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UICINEMASINGLEMOVIEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBB12370)
-#define MOLEMOLE_UICINEMASINGLEMOVIEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBB123B0)
-#define MOLEMOLE_UICINEMASINGLEMOVIEPAGECONTROLLER___C__EXITPREPPAGE_B__23_0_OFFSET UNITYSDK_OFFSET(0xBB123C0)
+#define MOLEMOLE_UICINEMASINGLEMOVIEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBFDF050)
+#define MOLEMOLE_UICINEMASINGLEMOVIEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBFDF090)
+#define MOLEMOLE_UICINEMASINGLEMOVIEPAGECONTROLLER___C__EXITPREPPAGE_B__23_0_OFFSET UNITYSDK_OFFSET(0xBFDF0A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaSingleMoviePageController___c_TypeDefinitionIndex = 59523;
+	inline static constexpr unsigned int UICinemaSingleMoviePageController___c_TypeDefinitionIndex = 52092;
 
 	class UICinemaSingleMoviePageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__23_0()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UICinemaSingleMoviePageController___c_TypeDefinitionIndex)->GetStaticField(0x3D700);
-		}
 		static ::MoleMole::UICinemaSingleMoviePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UICinemaSingleMoviePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UICinemaSingleMoviePageController___c_TypeDefinitionIndex)->GetStaticField(0x3D708);
+			return (::MoleMole::UICinemaSingleMoviePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UICinemaSingleMoviePageController___c_TypeDefinitionIndex)->GetStaticField(0x40660);
+		}
+		static ::System::Action** StaticGet___9__23_0()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UICinemaSingleMoviePageController___c_TypeDefinitionIndex)->GetStaticField(0x40668);
 		}
 
 		static ::System::Void _cctor()

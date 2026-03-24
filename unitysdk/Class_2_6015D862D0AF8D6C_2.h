@@ -8,26 +8,28 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_6015D862D0AF8D6C_2_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x75CDA00)
-#define CLASS_2_6015D862D0AF8D6C_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x75CDBA0)
-#define CLASS_2_6015D862D0AF8D6C_2__CTOR_OFFSET UNITYSDK_OFFSET(0x75CDB90)
+#define CLASS_2_6015D862D0AF8D6C_2_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x77DCEA0)
+#define CLASS_2_6015D862D0AF8D6C_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x77DD070)
+#define CLASS_2_6015D862D0AF8D6C_2__CTOR_OFFSET UNITYSDK_OFFSET(0x77DD060)
 
-inline static constexpr unsigned int Class_2_6015D862D0AF8D6C_2_TypeDefinitionIndex = 50014;
+inline static constexpr unsigned int Class_2_6015D862D0AF8D6C_2_TypeDefinitionIndex = 56551;
 
 class Class_2_6015D862D0AF8D6C_2 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_7; // 0x18
-	::UnityEngine::UI::Text* Field_2_2; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x28
-	::UnityEngine::RectTransform* Field_2_1; // 0x30
-	::UnityEngine::RectTransform* Field_2_10; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x48
-	::UnityEngine::RectTransform* Field_2_3; // 0x50
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_9; // 0x58
-	::UnityEngine::RectTransform* Field_2_0; // 0x60
-	::UnityEngine::RectTransform* Field_2_6; // 0x68
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_12; // 0x18
+	::UnityEngine::UI::Text* Field_2_4; // 0x20
+	::UnityEngine::UI::Text* Field_2_5; // 0x28
+	::UnityEngine::UI::Text* Field_2_3; // 0x30
+	::UnityEngine::UI::Text* Field_2_6; // 0x38
+	::UnityEngine::UI::Text* Field_2_0; // 0x40
+	::UnityEngine::UI::Text* Field_2_1; // 0x48
+	::UnityEngine::RectTransform* Field_2_9; // 0x50
+	::UnityEngine::RectTransform* Field_2_8; // 0x58
+	::UnityEngine::UI::Text* Field_2_2; // 0x60
+	::UnityEngine::RectTransform* Field_2_11; // 0x68
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x70
+	::UnityEngine::RectTransform* Field_2_10; // 0x78
 
 	::System::Void _ctor()
 	{

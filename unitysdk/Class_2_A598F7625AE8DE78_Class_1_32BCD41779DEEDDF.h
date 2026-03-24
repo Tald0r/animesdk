@@ -6,17 +6,17 @@
 namespace System { class Exception; }
 namespace System { class String; }
 
-#define CLASS_2_A598F7625AE8DE78_CLASS_1_32BCD41779DEEDDF__CTOR_OFFSET UNITYSDK_OFFSET(0x781F980)
+#define CLASS_2_A598F7625AE8DE78_CLASS_1_32BCD41779DEEDDF__CTOR_OFFSET UNITYSDK_OFFSET(0x9334150)
 
-inline static constexpr unsigned int Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF_TypeDefinitionIndex = 74303;
+inline static constexpr unsigned int Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF_TypeDefinitionIndex = 71357;
 
 class Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF : public ::System::Object
 {
 public:
-	::System::String* Field_1_0; // 0x10
-	::System::String* Field_1_1; // 0x18
-	::System::Exception* Field_1_5; // 0x20
-	::System::String* Field_1_4; // 0x28
+	::System::Exception* Field_1_5; // 0x10
+	::System::String* Field_1_4; // 0x18
+	::System::String* Field_1_1; // 0x20
+	::System::String* Field_1_0; // 0x28
 	::System::Int64 Field_1_3; // 0x30
 	::System::Net::HttpStatusCode Field_1_2; // 0x38
 

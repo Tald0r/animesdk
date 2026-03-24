@@ -5,20 +5,20 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MONOHOLLOWRESULTPAGECONFIG_RESUTLLIGHTS__CTOR_OFFSET UNITYSDK_OFFSET(0x6856CF0)
+#define MONOHOLLOWRESULTPAGECONFIG_RESUTLLIGHTS__CTOR_OFFSET UNITYSDK_OFFSET(0x852C110)
 
-inline static constexpr unsigned int MonoHollowResultPageConfig_ResutlLights_TypeDefinitionIndex = 66974;
+inline static constexpr unsigned int MonoHollowResultPageConfig_ResutlLights_TypeDefinitionIndex = 65497;
 
 class MonoHollowResultPageConfig_ResutlLights : public ::System::Object
 {
 public:
 	::UnityEngine::AnimationCurve* startToPeakCurve; // 0x10
 	::UnityEngine::AnimationCurve* peakToEndCurve; // 0x18
-	::System::Single peakToEndDuration; // 0x20
+	::System::Single startToPeakDuration; // 0x20
 	::MonoHollowResultPageConfig_LightConfig start; // 0x24
-	::MonoHollowResultPageConfig_LightConfig end; // 0x6C
-	::MonoHollowResultPageConfig_LightConfig peakVal; // 0xB4
-	::System::Single startToPeakDuration; // 0xFC
+	::System::Single peakToEndDuration; // 0x6C
+	::MonoHollowResultPageConfig_LightConfig peakVal; // 0x70
+	::MonoHollowResultPageConfig_LightConfig end; // 0xB8
 
 	::System::Void _ctor()
 	{

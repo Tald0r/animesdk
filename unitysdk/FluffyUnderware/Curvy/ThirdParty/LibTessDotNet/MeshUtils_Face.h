@@ -4,24 +4,24 @@
 
 namespace FluffyUnderware::Curvy::ThirdParty::LibTessDotNet { class MeshUtils_Edge; }
 
-#define FLUFFYUNDERWARE_CURVY_THIRDPARTY_LIBTESSDOTNET_MESHUTILS_FACE_GET_VERTSCOUNT_OFFSET UNITYSDK_OFFSET(0x1A63EA90)
-#define FLUFFYUNDERWARE_CURVY_THIRDPARTY_LIBTESSDOTNET_MESHUTILS_FACE_RESET_OFFSET UNITYSDK_OFFSET(0x1A63EEB0)
-#define FLUFFYUNDERWARE_CURVY_THIRDPARTY_LIBTESSDOTNET_MESHUTILS_FACE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A63EED0)
+#define FLUFFYUNDERWARE_CURVY_THIRDPARTY_LIBTESSDOTNET_MESHUTILS_FACE_GET_VERTSCOUNT_OFFSET UNITYSDK_OFFSET(0x1ABE9CC0)
+#define FLUFFYUNDERWARE_CURVY_THIRDPARTY_LIBTESSDOTNET_MESHUTILS_FACE_RESET_OFFSET UNITYSDK_OFFSET(0x1ABEA0E0)
+#define FLUFFYUNDERWARE_CURVY_THIRDPARTY_LIBTESSDOTNET_MESHUTILS_FACE__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABEA100)
 
 namespace FluffyUnderware::Curvy::ThirdParty::LibTessDotNet
 {
-	inline static constexpr unsigned int MeshUtils_Face_TypeDefinitionIndex = 24593;
+	inline static constexpr unsigned int MeshUtils_Face_TypeDefinitionIndex = 25418;
 
 	class MeshUtils_Face : public ::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Pooled_1<::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face*>
 	{
 	public:
-		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face* _next; // 0x10
-		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face* _prev; // 0x18
-		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Edge* _anEdge; // 0x20
-		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face* _trail; // 0x28
-		::System::Boolean _marked; // 0x30
-		::System::Boolean _inside; // 0x31
-		::System::Int32 _n; // 0x34
+		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Edge* _anEdge; // 0x10
+		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face* _next; // 0x18
+		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face* _trail; // 0x20
+		::FluffyUnderware::Curvy::ThirdParty::LibTessDotNet::MeshUtils_Face* _prev; // 0x28
+		::System::Int32 _n; // 0x30
+		::System::Boolean _marked; // 0x34
+		::System::Boolean _inside; // 0x35
 
 		::System::Void _ctor()
 		{

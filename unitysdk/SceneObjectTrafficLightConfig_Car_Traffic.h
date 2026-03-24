@@ -8,9 +8,9 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define SCENEOBJECTTRAFFICLIGHTCONFIG_CAR_TRAFFIC__CTOR_OFFSET UNITYSDK_OFFSET(0x15F5C410)
+#define SCENEOBJECTTRAFFICLIGHTCONFIG_CAR_TRAFFIC__CTOR_OFFSET UNITYSDK_OFFSET(0x15ABF810)
 
-inline static constexpr unsigned int SceneObjectTrafficLightConfig_Car_Traffic_TypeDefinitionIndex = 43532;
+inline static constexpr unsigned int SceneObjectTrafficLightConfig_Car_Traffic_TypeDefinitionIndex = 60603;
 
 class SceneObjectTrafficLightConfig_Car_Traffic : public ::System::Object
 {

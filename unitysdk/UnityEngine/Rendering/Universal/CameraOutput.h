@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CameraOutput_TypeDefinitionIndex = 28778;
+	inline static constexpr unsigned int CameraOutput_TypeDefinitionIndex = 29724;
 
 	enum class CameraOutput : ::System::Int32
 	{

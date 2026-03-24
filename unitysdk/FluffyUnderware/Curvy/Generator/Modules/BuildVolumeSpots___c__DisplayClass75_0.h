@@ -4,11 +4,11 @@
 
 namespace FluffyUnderware::Curvy::Generator::Modules { class BuildVolumeSpots_EndGroupData; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_BUILDVOLUMESPOTS___C__DISPLAYCLASS75_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A368A40)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_BUILDVOLUMESPOTS___C__DISPLAYCLASS75_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A92C450)
 
 namespace FluffyUnderware::Curvy::Generator::Modules
 {
-	inline static constexpr unsigned int BuildVolumeSpots___c__DisplayClass75_0_TypeDefinitionIndex = 35835;
+	inline static constexpr unsigned int BuildVolumeSpots___c__DisplayClass75_0_TypeDefinitionIndex = 36855;
 
 	class BuildVolumeSpots___c__DisplayClass75_0 : public ::System::Object
 	{

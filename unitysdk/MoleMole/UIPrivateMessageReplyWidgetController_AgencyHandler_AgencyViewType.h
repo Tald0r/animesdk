@@ -3,14 +3,14 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPrivateMessageReplyWidgetController_AgencyHandler_AgencyViewType_TypeDefinitionIndex = 48095;
+	inline static constexpr unsigned int UIPrivateMessageReplyWidgetController_AgencyHandler_AgencyViewType_TypeDefinitionIndex = 57808;
 
 	enum class UIPrivateMessageReplyWidgetController_AgencyHandler_AgencyViewType : ::System::Int32
 	{
-		View = 2,
 		Expired = 4,
-		Finish = 3,
 		None = 0,
+		Finish = 3,
 		Join = 1,
+		View = 2,
 	};
 }

@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int SubdivisionMode_TypeDefinitionIndex = 59693;
+inline static constexpr unsigned int SubdivisionMode_TypeDefinitionIndex = 67650;
 
 enum class SubdivisionMode : ::System::Int32
 {
-	Distance = 0,
 	Count = 1,
+	Distance = 0,
 };

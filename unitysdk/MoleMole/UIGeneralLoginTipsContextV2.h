@@ -7,11 +7,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIGENERALLOGINTIPSCONTEXTV2__CTOR_OFFSET UNITYSDK_OFFSET(0x8A16560)
+#define MOLEMOLE_UIGENERALLOGINTIPSCONTEXTV2__CTOR_OFFSET UNITYSDK_OFFSET(0xB2BC900)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralLoginTipsContextV2_TypeDefinitionIndex = 54881;
+	inline static constexpr unsigned int UIGeneralLoginTipsContextV2_TypeDefinitionIndex = 69303;
 
 	class UIGeneralLoginTipsContextV2 : public ::MoleMole::UIControllerContextBase
 	{

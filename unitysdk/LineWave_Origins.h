@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int LineWave_Origins_TypeDefinitionIndex = 31607;
+inline static constexpr unsigned int LineWave_Origins_TypeDefinitionIndex = 32561;
 
 enum class LineWave_Origins : ::System::Int32
 {

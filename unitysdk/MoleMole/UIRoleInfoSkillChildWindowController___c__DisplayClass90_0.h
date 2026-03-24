@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC350A0)
-#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__ONGOTOTUTORIAL_B__0_OFFSET UNITYSDK_OFFSET(0xAC350B0)
+#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA845B0)
+#define MOLEMOLE_UIROLEINFOSKILLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS90_0__ONGOTOTUTORIAL_B__0_OFFSET UNITYSDK_OFFSET(0xCA845C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleInfoSkillChildWindowController___c__DisplayClass90_0_TypeDefinitionIndex = 49309;
+	inline static constexpr unsigned int UIRoleInfoSkillChildWindowController___c__DisplayClass90_0_TypeDefinitionIndex = 48913;
 
 	class UIRoleInfoSkillChildWindowController___c__DisplayClass90_0 : public ::System::Object
 	{

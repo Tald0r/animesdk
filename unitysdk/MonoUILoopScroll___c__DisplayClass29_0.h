@@ -5,10 +5,10 @@
 class MonoUILoopScroll;
 namespace UnityEngine { class GameObject; }
 
-#define MONOUILOOPSCROLL___C__DISPLAYCLASS29_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA0982B0)
-#define MONOUILOOPSCROLL___C__DISPLAYCLASS29_0__INIT_B__0_OFFSET UNITYSDK_OFFSET(0xA09A580)
+#define MONOUILOOPSCROLL___C__DISPLAYCLASS29_0__CTOR_OFFSET UNITYSDK_OFFSET(0x972B9C0)
+#define MONOUILOOPSCROLL___C__DISPLAYCLASS29_0__INIT_B__0_OFFSET UNITYSDK_OFFSET(0x972DC30)
 
-inline static constexpr unsigned int MonoUILoopScroll___c__DisplayClass29_0_TypeDefinitionIndex = 57496;
+inline static constexpr unsigned int MonoUILoopScroll___c__DisplayClass29_0_TypeDefinitionIndex = 51984;
 
 class MonoUILoopScroll___c__DisplayClass29_0 : public ::System::Object
 {

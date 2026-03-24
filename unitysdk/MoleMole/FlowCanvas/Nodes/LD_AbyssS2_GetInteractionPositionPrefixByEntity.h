@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINTERACTIONPOSITIONPREFIXBYENTITY_INVOKE_OFFSET UNITYSDK_OFFSET(0xE47F360)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINTERACTIONPOSITIONPREFIXBYENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0xE47F4D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINTERACTIONPOSITIONPREFIXBYENTITY_INVOKE_OFFSET UNITYSDK_OFFSET(0xD807380)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETINTERACTIONPOSITIONPREFIXBYENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0xD8074F0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_GetInteractionPositionPrefixByEntity_TypeDefinitionIndex = 38935;
+	inline static constexpr unsigned int LD_AbyssS2_GetInteractionPositionPrefixByEntity_TypeDefinitionIndex = 52016;
 
 	class LD_AbyssS2_GetInteractionPositionPrefixByEntity : public ::FlowCanvas::Nodes::PureFunctionNode_3<::System::String*, ::MoleMole::Battle::Entity*, ::System::Int32>
 	{

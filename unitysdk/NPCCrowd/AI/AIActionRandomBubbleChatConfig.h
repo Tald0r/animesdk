@@ -6,19 +6,19 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NPCCROWD_AI_AIACTIONRANDOMBUBBLECHATCONFIG_GETBASEACTIONCONFIG_OFFSET UNITYSDK_OFFSET(0x3201B0)
-#define NPCCROWD_AI_AIACTIONRANDOMBUBBLECHATCONFIG_ISMULTITHREAD_OFFSET UNITYSDK_OFFSET(0x320220)
-#define NPCCROWD_AI_AIACTIONRANDOMBUBBLECHATCONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x721F390)
+#define NPCCROWD_AI_AIACTIONRANDOMBUBBLECHATCONFIG_GETBASEACTIONCONFIG_OFFSET UNITYSDK_OFFSET(0x37F7C0)
+#define NPCCROWD_AI_AIACTIONRANDOMBUBBLECHATCONFIG_ISMULTITHREAD_OFFSET UNITYSDK_OFFSET(0x37F830)
+#define NPCCROWD_AI_AIACTIONRANDOMBUBBLECHATCONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x9AF3D80)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int AIActionRandomBubbleChatConfig_TypeDefinitionIndex = 64237;
+	inline static constexpr unsigned int AIActionRandomBubbleChatConfig_TypeDefinitionIndex = 37450;
 
 	struct alignas(8) AIActionRandomBubbleChatConfig
 	{
 		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>** StaticGet_Speakers()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(AIActionRandomBubbleChatConfig_TypeDefinitionIndex)->GetStaticField(0x306C0);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(AIActionRandomBubbleChatConfig_TypeDefinitionIndex)->GetStaticField(0x32490);
 		}
 		// static const ::System::String* SpeakerA; // 0x0
 		// static const ::System::String* SpeakerB; // 0x0

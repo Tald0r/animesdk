@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SQLITE_NOTNULLATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A064270)
+#define SQLITE_NOTNULLATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A630090)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int NotNullAttribute_TypeDefinitionIndex = 35233;
+	inline static constexpr unsigned int NotNullAttribute_TypeDefinitionIndex = 36235;
 
 	class NotNullAttribute : public ::System::Attribute
 	{

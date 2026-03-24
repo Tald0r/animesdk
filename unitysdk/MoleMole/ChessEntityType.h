@@ -3,16 +3,16 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ChessEntityType_TypeDefinitionIndex = 42391;
+	inline static constexpr unsigned int ChessEntityType_TypeDefinitionIndex = 47347;
 
 	enum class ChessEntityType : ::System::Int32
 	{
-		Coin = 0,
+		DefenseSceneTrap = 5,
 		DefenseSceneVirus = 3,
+		Coin = 0,
+		RedAlert = 2,
 		DefenseSceneAntivirus = 4,
 		Normal = 6,
-		RedAlert = 2,
-		DefenseSceneTrap = 5,
 		RedBlock = 1,
 	};
 }

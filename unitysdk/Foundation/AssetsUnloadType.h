@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AssetsUnloadType_TypeDefinitionIndex = 8049;
+	inline static constexpr unsigned int AssetsUnloadType_TypeDefinitionIndex = 7979;
 
 	enum class AssetsUnloadType : ::System::Int32
 	{

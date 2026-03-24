@@ -4,11 +4,11 @@
 
 namespace System::Reflection { class TypeInfo; }
 
-#define SYSTEM_REFLECTION_REFLECTIONEXTENSIONS_ISCONSTRUCTEDGENERICTYPE_OFFSET UNITYSDK_OFFSET(0x1AB5C670)
+#define SYSTEM_REFLECTION_REFLECTIONEXTENSIONS_ISCONSTRUCTEDGENERICTYPE_OFFSET UNITYSDK_OFFSET(0x1B18D070)
 
 namespace System::Reflection
 {
-	inline static constexpr unsigned int ReflectionExtensions_TypeDefinitionIndex = 81721;
+	inline static constexpr unsigned int ReflectionExtensions_TypeDefinitionIndex = 83762;
 
 	class ReflectionExtensions : public ::System::Object
 	{

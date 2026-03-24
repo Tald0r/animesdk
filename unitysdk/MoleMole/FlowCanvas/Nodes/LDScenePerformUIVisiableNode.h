@@ -4,21 +4,21 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE_CHECKHAVEPERFORM_OFFSET UNITYSDK_OFFSET(0xF1A7AF0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xF1A7930)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE__CCTOR_OFFSET UNITYSDK_OFFSET(0xF1A7BC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xF1A7BA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE_CHECKHAVEPERFORM_OFFSET UNITYSDK_OFFSET(0xB981A30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB981870)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE__CCTOR_OFFSET UNITYSDK_OFFSET(0xB981B00)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSCENEPERFORMUIVISIABLENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB981AE0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDScenePerformUIVisiableNode_TypeDefinitionIndex = 78439;
+	inline static constexpr unsigned int LDScenePerformUIVisiableNode_TypeDefinitionIndex = 40278;
 
 	class LDScenePerformUIVisiableNode : public ::FlowCanvas::Nodes::CallableFunctionNode_4<::System::Boolean, ::System::String*, ::Il2CppArray<::System::String*>*, ::System::Boolean>
 	{
 	public:
 		static ::System::String** StaticGet_setupTag()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(LDScenePerformUIVisiableNode_TypeDefinitionIndex)->GetStaticField(0x2DCA0);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(LDScenePerformUIVisiableNode_TypeDefinitionIndex)->GetStaticField(0x2FA90);
 		}
 
 		::System::Void _ctor()

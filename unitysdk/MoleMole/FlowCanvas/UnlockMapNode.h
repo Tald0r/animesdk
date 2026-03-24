@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_2.h"
 
-#define MOLEMOLE_FLOWCANVAS_UNLOCKMAPNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xC2CEE90)
-#define MOLEMOLE_FLOWCANVAS_UNLOCKMAPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC2CEF00)
+#define MOLEMOLE_FLOWCANVAS_UNLOCKMAPNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB8AA930)
+#define MOLEMOLE_FLOWCANVAS_UNLOCKMAPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB8AA9A0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int UnlockMapNode_TypeDefinitionIndex = 48459;
+	inline static constexpr unsigned int UnlockMapNode_TypeDefinitionIndex = 50958;
 
 	class UnlockMapNode : public ::FlowCanvas::Nodes::CallableActionNode_2<::System::Boolean, ::System::Int32>
 	{

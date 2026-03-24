@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_1_F57C3EEEB03201AF.h"
 
-template <typename T> class Class_0_16E4307DCC41950C_11;
+template <typename T> class Class_0_16E4307DCC419505_118;
 
-#define CLASS_2_94A48E46CF6A15AF_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x80FCA80)
-#define CLASS_2_94A48E46CF6A15AF__CTOR_OFFSET UNITYSDK_OFFSET(0x80FCB20)
+#define CLASS_2_94A48E46CF6A15AF_ONCREATEPROPERTY_OFFSET UNITYSDK_OFFSET(0x61FFA50)
+#define CLASS_2_94A48E46CF6A15AF__CTOR_OFFSET UNITYSDK_OFFSET(0x61FFAF0)
 
-inline static constexpr unsigned int Class_2_94A48E46CF6A15AF_TypeDefinitionIndex = 70049;
+inline static constexpr unsigned int Class_2_94A48E46CF6A15AF_TypeDefinitionIndex = 40193;
 
 class Class_2_94A48E46CF6A15AF : public ::Class_1_F57C3EEEB03201AF
 {
 public:
-	::Class_0_16E4307DCC41950C_11<::System::Int32>* Field_2_0; // 0x60
+	::Class_0_16E4307DCC419505_118<::System::Int32>* Field_2_0; // 0x60
 
 	::System::Void _ctor()
 	{

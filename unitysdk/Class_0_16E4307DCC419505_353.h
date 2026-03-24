@@ -1,9 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_353_TypeDefinitionIndex = 43440;
+class Class_1_0E5778BB52E10271;
 
-template <typename TSelf>
+inline static constexpr unsigned int Class_0_16E4307DCC419505_353_TypeDefinitionIndex = 44686;
+
 class Class_0_16E4307DCC419505_353
 {
 public:

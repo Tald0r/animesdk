@@ -8,22 +8,22 @@ class Class_3_B537A0AA78803363;
 class Class_3_DCB7F8B839F0C44B_4;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 template <typename T> class Class_4_179456445C225AB4;
-template <typename T> class Class_4_AF61EEC11F34483C;
+template <typename T> class Class_4_D0B094D0B900A9F0;
 
-#define CLASS_3_90A9282E67BFF064_METHOD_3_41A074549EF25F63_OFFSET UNITYSDK_OFFSET(0x6F292A0)
-#define CLASS_3_90A9282E67BFF064_METHOD_3_B5CEF7C539A7DC9B_OFFSET UNITYSDK_OFFSET(0x6F29500)
-#define CLASS_3_90A9282E67BFF064_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x6F299E0)
-#define CLASS_3_90A9282E67BFF064__CTOR_OFFSET UNITYSDK_OFFSET(0x6F29880)
+#define CLASS_3_90A9282E67BFF064_METHOD_3_41A074549EF25F63_OFFSET UNITYSDK_OFFSET(0xC8B0CC0)
+#define CLASS_3_90A9282E67BFF064_METHOD_3_B5CEF7C539A7DC9B_OFFSET UNITYSDK_OFFSET(0xC8B0F20)
+#define CLASS_3_90A9282E67BFF064_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xC8B1400)
+#define CLASS_3_90A9282E67BFF064__CTOR_OFFSET UNITYSDK_OFFSET(0xC8B12A0)
 
-inline static constexpr unsigned int Class_3_90A9282E67BFF064_TypeDefinitionIndex = 42716;
+inline static constexpr unsigned int Class_3_90A9282E67BFF064_TypeDefinitionIndex = 45886;
 
 class Class_3_90A9282E67BFF064 : public ::Class_2_52F82E04F7FEE529
 {
 public:
-	::Class_3_B537A0AA78803363* Field_3_3; // 0x18
-	::Class_4_AF61EEC11F34483C<::System::Collections::Generic::List_1<::Foundation::ViewObject::ViewObjectHandle>*>* Field_3_2; // 0x20
-	::Class_3_DCB7F8B839F0C44B_4* Field_3_0; // 0x28
-	::Class_4_179456445C225AB4<::Foundation::ViewObject::ViewObjectHandle>* Field_3_1; // 0x30
+	::Class_4_D0B094D0B900A9F0<::System::Collections::Generic::List_1<::Foundation::ViewObject::ViewObjectHandle>*>* Field_3_2; // 0x18
+	::Class_4_179456445C225AB4<::Foundation::ViewObject::ViewObjectHandle>* Field_3_1; // 0x20
+	::Class_3_B537A0AA78803363* Field_3_3; // 0x28
+	::Class_3_DCB7F8B839F0C44B_4* Field_3_0; // 0x30
 
 	::System::Void _ctor()
 	{

@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUNAPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19393B30)
+#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUNAPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19781800)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int CustomContextMenuNapAttribute_TypeDefinitionIndex = 8114;
+	inline static constexpr unsigned int CustomContextMenuNapAttribute_TypeDefinitionIndex = 7942;
 
 	class CustomContextMenuNapAttribute : public ::System::Attribute
 	{
 	public:
 		::System::String* MethodName; // 0x10
-		::System::String* VisibleMethod; // 0x18
-		::System::String* MenuItem; // 0x20
+		::System::String* MenuItem; // 0x18
+		::System::String* VisibleMethod; // 0x20
 		::System::Boolean IsVisible; // 0x28
 
 		::System::Void _ctor(::System::String* menuItem, ::System::String* methodName, ::System::String* visibleMethod)

@@ -3,19 +3,19 @@
 #include "unitysdk/Foundation/NativeMemoryView_1.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_READONLYNATIVEMEMORYBLOB_GET_ISNULL_OFFSET UNITYSDK_OFFSET(0x2C3A90)
-#define FOUNDATION_READONLYNATIVEMEMORYBLOB__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD056E0)
-#define FOUNDATION_READONLYNATIVEMEMORYBLOB__CTOR_OFFSET UNITYSDK_OFFSET(0x960E40)
+#define FOUNDATION_READONLYNATIVEMEMORYBLOB_GET_ISNULL_OFFSET UNITYSDK_OFFSET(0x314B50)
+#define FOUNDATION_READONLYNATIVEMEMORYBLOB__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B31FC50)
+#define FOUNDATION_READONLYNATIVEMEMORYBLOB__CTOR_OFFSET UNITYSDK_OFFSET(0x9915F0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ReadOnlyNativeMemoryBlob_TypeDefinitionIndex = 8757;
+	inline static constexpr unsigned int ReadOnlyNativeMemoryBlob_TypeDefinitionIndex = 8770;
 
 	struct alignas(8) ReadOnlyNativeMemoryBlob
 	{
 		static ::Foundation::ReadOnlyNativeMemoryBlob* StaticGet_Null()
 		{
-			return (::Foundation::ReadOnlyNativeMemoryBlob*)Il2CppClass::FromTypeDefinitionIndex(ReadOnlyNativeMemoryBlob_TypeDefinitionIndex)->GetStaticField(0x3E60);
+			return (::Foundation::ReadOnlyNativeMemoryBlob*)Il2CppClass::FromTypeDefinitionIndex(ReadOnlyNativeMemoryBlob_TypeDefinitionIndex)->GetStaticField(0x3E80);
 		}
 		::Foundation::NativeMemoryView_1<::System::Byte> _handle; // 0x10
 

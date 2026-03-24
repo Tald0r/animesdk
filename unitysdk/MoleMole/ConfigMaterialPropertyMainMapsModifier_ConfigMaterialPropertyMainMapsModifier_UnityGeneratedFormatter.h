@@ -16,62 +16,62 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x16BAC380)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x16BAC390)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x16BB14B0)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x16BB4350)
-#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x16BB4310)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9D19BD0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9D19BE0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x174FE9E0)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x17501880)
+#define MOLEMOLE_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_CONFIGMATERIALPROPERTYMAINMAPSMODIFIER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x17501840)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex = 59048;
+	inline static constexpr unsigned int ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex = 51933;
 
 	class ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigMaterialPropertyMainMapsModifier*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueTexture>** StaticGet_CachedSerializer8()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueTexture>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38540);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueVector>** StaticGet_CachedSerializer10()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueVector>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38548);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38550);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>** StaticGet_CachedSerializer7()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38558);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38560);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38568);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>** StaticGet_CachedSerializer6()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38570);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>** StaticGet_CachedSerializer9()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38578);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38580);
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B150);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>** StaticGet_CachedSerializer5()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38588);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::MatPropertySetting>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B158);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38590);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B160);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B168);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B170);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>** StaticGet_CachedSerializer6()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::UnityEngine::Color>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B178);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueVector>** StaticGet_CachedSerializer10()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueVector>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B180);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B188);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>** StaticGet_CachedSerializer7()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueColor>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B190);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueTexture>** StaticGet_CachedSerializer8()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueTexture>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B198);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>** StaticGet_CachedSerializer9()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::MaterialPropertyModifierValueFloat>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMaterialPropertyMainMapsModifier_ConfigMaterialPropertyMainMapsModifier_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B1A0);
 		}
 
 		::System::Void _ctor()

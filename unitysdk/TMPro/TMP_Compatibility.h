@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/TMPro/TextAlignmentOptions.h"
 
-#define TMPRO_TMP_COMPATIBILITY_CONVERTTEXTALIGNMENTENUMVALUES_OFFSET UNITYSDK_OFFSET(0x1B109C40)
+#define TMPRO_TMP_COMPATIBILITY_CONVERTTEXTALIGNMENTENUMVALUES_OFFSET UNITYSDK_OFFSET(0x1B721710)
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TMP_Compatibility_TypeDefinitionIndex = 35918;
+	inline static constexpr unsigned int TMP_Compatibility_TypeDefinitionIndex = 36938;
 
 	class TMP_Compatibility : public ::System::Object
 	{

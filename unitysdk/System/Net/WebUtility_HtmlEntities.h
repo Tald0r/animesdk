@@ -4,9 +4,9 @@
 
 namespace System { class String; }
 
-#define SYSTEM_NET_WEBUTILITY_HTMLENTITIES_CALCULATEKEYVALUE_OFFSET UNITYSDK_OFFSET(0x197F9DC0)
-#define SYSTEM_NET_WEBUTILITY_HTMLENTITIES_LOOKUP_OFFSET UNITYSDK_OFFSET(0x197F9AF0)
-#define SYSTEM_NET_WEBUTILITY_HTMLENTITIES__CCTOR_OFFSET UNITYSDK_OFFSET(0x197F9F00)
+#define SYSTEM_NET_WEBUTILITY_HTMLENTITIES_CALCULATEKEYVALUE_OFFSET UNITYSDK_OFFSET(0x19D39190)
+#define SYSTEM_NET_WEBUTILITY_HTMLENTITIES_LOOKUP_OFFSET UNITYSDK_OFFSET(0x19D38EC0)
+#define SYSTEM_NET_WEBUTILITY_HTMLENTITIES__CCTOR_OFFSET UNITYSDK_OFFSET(0x19D392D0)
 
 namespace System::Net
 {
@@ -15,13 +15,13 @@ namespace System::Net
 	class WebUtility_HtmlEntities : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::System::Int64>** StaticGet_entities()
-		{
-			return (::Il2CppArray<::System::Int64>**)Il2CppClass::FromTypeDefinitionIndex(WebUtility_HtmlEntities_TypeDefinitionIndex)->GetStaticField(0x3B40);
-		}
 		static ::Il2CppArray<::System::Char>** StaticGet_entities_values()
 		{
-			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(WebUtility_HtmlEntities_TypeDefinitionIndex)->GetStaticField(0x3B48);
+			return (::Il2CppArray<::System::Char>**)Il2CppClass::FromTypeDefinitionIndex(WebUtility_HtmlEntities_TypeDefinitionIndex)->GetStaticField(0x3B40);
+		}
+		static ::Il2CppArray<::System::Int64>** StaticGet_entities()
+		{
+			return (::Il2CppArray<::System::Int64>**)Il2CppClass::FromTypeDefinitionIndex(WebUtility_HtmlEntities_TypeDefinitionIndex)->GetStaticField(0x3B48);
 		}
 
 		static ::System::Void _cctor()

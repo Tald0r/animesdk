@@ -5,24 +5,24 @@
 namespace MoleMole::Timeline::ZNet { class ZNetGroupTrack; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_TIMELINE_ZNET_ZNETCAMERASUPPORTTRACK___C_METHOD_1_735B19F2BDC753A9_OFFSET UNITYSDK_OFFSET(0xD3904D0)
-#define MOLEMOLE_TIMELINE_ZNET_ZNETCAMERASUPPORTTRACK___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD390480)
-#define MOLEMOLE_TIMELINE_ZNET_ZNETCAMERASUPPORTTRACK___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD3904C0)
+#define MOLEMOLE_TIMELINE_ZNET_ZNETCAMERASUPPORTTRACK___C_METHOD_1_735B19F2BDC753A9_OFFSET UNITYSDK_OFFSET(0xD471BA0)
+#define MOLEMOLE_TIMELINE_ZNET_ZNETCAMERASUPPORTTRACK___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD471B50)
+#define MOLEMOLE_TIMELINE_ZNET_ZNETCAMERASUPPORTTRACK___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD471B90)
 
 namespace MoleMole::Timeline::ZNet
 {
-	inline static constexpr unsigned int ZNetCameraSupportTrack___c_TypeDefinitionIndex = 50106;
+	inline static constexpr unsigned int ZNetCameraSupportTrack___c_TypeDefinitionIndex = 47226;
 
 	class ZNetCameraSupportTrack___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Timeline::ZNet::ZNetCameraSupportTrack___c** StaticGet___9()
 		{
-			return (::MoleMole::Timeline::ZNet::ZNetCameraSupportTrack___c**)Il2CppClass::FromTypeDefinitionIndex(ZNetCameraSupportTrack___c_TypeDefinitionIndex)->GetStaticField(0x32330);
+			return (::MoleMole::Timeline::ZNet::ZNetCameraSupportTrack___c**)Il2CppClass::FromTypeDefinitionIndex(ZNetCameraSupportTrack___c_TypeDefinitionIndex)->GetStaticField(0x34180);
 		}
 		static ::System::Func_2<::MoleMole::Timeline::ZNet::ZNetGroupTrack*, ::System::Boolean>** StaticGet___9__0_1()
 		{
-			return (::System::Func_2<::MoleMole::Timeline::ZNet::ZNetGroupTrack*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ZNetCameraSupportTrack___c_TypeDefinitionIndex)->GetStaticField(0x32338);
+			return (::System::Func_2<::MoleMole::Timeline::ZNet::ZNetGroupTrack*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ZNetCameraSupportTrack___c_TypeDefinitionIndex)->GetStaticField(0x34188);
 		}
 
 		static ::System::Void _cctor()

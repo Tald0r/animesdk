@@ -5,20 +5,20 @@
 
 namespace System { class String; }
 
-#define STRUCT_2_C023D18BB1011CB9__CCTOR_OFFSET UNITYSDK_OFFSET(0x82AD790)
-#define STRUCT_2_C023D18BB1011CB9__CTOR_OFFSET UNITYSDK_OFFSET(0x346430)
+#define STRUCT_2_C023D18BB1011CB9__CCTOR_OFFSET UNITYSDK_OFFSET(0x8090800)
+#define STRUCT_2_C023D18BB1011CB9__CTOR_OFFSET UNITYSDK_OFFSET(0x34AB40)
 
-inline static constexpr unsigned int Struct_2_C023D18BB1011CB9_TypeDefinitionIndex = 39925;
+inline static constexpr unsigned int Struct_2_C023D18BB1011CB9_TypeDefinitionIndex = 38224;
 
 struct alignas(8) Struct_2_C023D18BB1011CB9
 {
 	static ::System::String** StaticGet_Field_2_5()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_C023D18BB1011CB9_TypeDefinitionIndex)->GetStaticField(0x35AA0);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_C023D18BB1011CB9_TypeDefinitionIndex)->GetStaticField(0x29170);
 	}
 	static ::System::UInt32* StaticGet_Field_2_6()
 	{
-		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_C023D18BB1011CB9_TypeDefinitionIndex)->GetStaticField(0xD630);
+		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_C023D18BB1011CB9_TypeDefinitionIndex)->GetStaticField(0x9390);
 	}
 	::Struct_2_FA5F50563E60AFBA Field_2_0; // 0x10
 	::System::Int32 Field_2_1; // 0x28

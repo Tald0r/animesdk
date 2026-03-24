@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int Audio_PINVOKE_ScePadVolumeGain_TypeDefinitionIndex = 70686;
+inline static constexpr unsigned int Audio_PINVOKE_ScePadVolumeGain_TypeDefinitionIndex = 59817;
 
 struct alignas(1) Audio_PINVOKE_ScePadVolumeGain
 {

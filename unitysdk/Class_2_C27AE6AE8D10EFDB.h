@@ -1,20 +1,20 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_30.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_40.h"
 #include "unitysdk/MoleMole/HollowChessboard/HollowCell.h"
 #include "unitysdk/Struct_2_6360A90B871D0DD8.h"
 
-#define CLASS_2_C27AE6AE8D10EFDB__CTOR_OFFSET UNITYSDK_OFFSET(0xC4E8F40)
+#define CLASS_2_C27AE6AE8D10EFDB__CTOR_OFFSET UNITYSDK_OFFSET(0xCE739A0)
 
-inline static constexpr unsigned int Class_2_C27AE6AE8D10EFDB_TypeDefinitionIndex = 38714;
+inline static constexpr unsigned int Class_2_C27AE6AE8D10EFDB_TypeDefinitionIndex = 64191;
 
-class Class_2_C27AE6AE8D10EFDB : public ::Class_1_43BD383C98B4C0C5_30
+class Class_2_C27AE6AE8D10EFDB : public ::Class_1_43BD383C98B4C0C5_40
 {
 public:
-	::MoleMole::HollowChessboard::HollowCell Field_2_0; // 0x10
-	::Struct_2_6360A90B871D0DD8 Field_2_3; // 0x1C
-	::System::Boolean Field_2_1; // 0x2C
-	::System::Boolean Field_2_2; // 0x2D
+	::Struct_2_6360A90B871D0DD8 Field_2_3; // 0x10
+	::System::Boolean Field_2_1; // 0x20
+	::System::Boolean Field_2_2; // 0x21
+	::MoleMole::HollowChessboard::HollowCell Field_2_0; // 0x24
 
 	::System::Void _ctor(::MoleMole::HollowChessboard::HollowCell a1)
 	{

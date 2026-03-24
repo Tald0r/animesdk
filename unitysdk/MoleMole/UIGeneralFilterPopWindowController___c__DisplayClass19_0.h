@@ -5,19 +5,19 @@
 namespace MoleMole { class UIGeneralFilterPopContext; }
 namespace MoleMole { class UIGeneralFilterPopWindowController; }
 
-#define MOLEMOLE_UIGENERALFILTERPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8086320)
-#define MOLEMOLE_UIGENERALFILTERPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0x8089580)
-#define MOLEMOLE_UIGENERALFILTERPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0x80895C0)
+#define MOLEMOLE_UIGENERALFILTERPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC63700)
+#define MOLEMOLE_UIGENERALFILTERPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0xAC66930)
+#define MOLEMOLE_UIGENERALFILTERPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0xAC66970)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralFilterPopWindowController___c__DisplayClass19_0_TypeDefinitionIndex = 76659;
+	inline static constexpr unsigned int UIGeneralFilterPopWindowController___c__DisplayClass19_0_TypeDefinitionIndex = 42816;
 
 	class UIGeneralFilterPopWindowController___c__DisplayClass19_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIGeneralFilterPopWindowController* __4__this; // 0x10
-		::MoleMole::UIGeneralFilterPopContext* popContext; // 0x18
+		::MoleMole::UIGeneralFilterPopContext* popContext; // 0x10
+		::MoleMole::UIGeneralFilterPopWindowController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

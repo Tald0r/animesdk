@@ -5,18 +5,18 @@
 namespace MoleMole { class UIGalgameReviewRowWidgetController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA362A10)
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__INITVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xA362A20)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD12C700)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS13_0__INITVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xD12C710)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgameReviewRowWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 63948;
+	inline static constexpr unsigned int UIGalgameReviewRowWidgetController___c__DisplayClass13_0_TypeDefinitionIndex = 71887;
 
 	class UIGalgameReviewRowWidgetController___c__DisplayClass13_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIGalgameReviewRowWidgetController* __4__this; // 0x10
-		::System::Action* bindAction; // 0x18
+		::System::Action* bindAction; // 0x10
+		::MoleMole::UIGalgameReviewRowWidgetController* __4__this; // 0x18
 		::System::Boolean isButtonInteractable; // 0x20
 
 		::System::Void _ctor()

@@ -5,17 +5,17 @@
 class Class_1_9631DA8CB6F86BD4;
 namespace MoleMole { class UIShoppingMallCasperPageController; }
 
-#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___C__DISPLAYCLASS52_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD6C6280)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___C__DISPLAYCLASS52_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDF35460)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallCasperPageController___c__DisplayClass52_0_TypeDefinitionIndex = 38984;
+	inline static constexpr unsigned int UIShoppingMallCasperPageController___c__DisplayClass52_0_TypeDefinitionIndex = 70805;
 
 	class UIShoppingMallCasperPageController___c__DisplayClass52_0 : public ::System::Object
 	{
 	public:
-		::Class_1_9631DA8CB6F86BD4* param; // 0x10
-		::MoleMole::UIShoppingMallCasperPageController* __4__this; // 0x18
+		::MoleMole::UIShoppingMallCasperPageController* __4__this; // 0x10
+		::Class_1_9631DA8CB6F86BD4* param; // 0x18
 
 		::System::Void _ctor()
 		{

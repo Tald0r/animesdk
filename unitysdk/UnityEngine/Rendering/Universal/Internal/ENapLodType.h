@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int ENapLodType_TypeDefinitionIndex = 28962;
+	inline static constexpr unsigned int ENapLodType_TypeDefinitionIndex = 29913;
 
 	enum class ENapLodType : ::System::Int32
 	{

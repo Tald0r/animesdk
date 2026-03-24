@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/BehaviorDesigner/Runtime/Tasks/ObjectDrawerAttribute.h"
 
-#define BEHAVIORDESIGNER_RUNTIME_OBJECTDRAWERS_FLOATSLIDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD14C10)
+#define BEHAVIORDESIGNER_RUNTIME_OBJECTDRAWERS_FLOATSLIDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B32F190)
 
 namespace BehaviorDesigner::Runtime::ObjectDrawers
 {
-	inline static constexpr unsigned int FloatSliderAttribute_TypeDefinitionIndex = 30270;
+	inline static constexpr unsigned int FloatSliderAttribute_TypeDefinitionIndex = 31222;
 
 	class FloatSliderAttribute : public ::BehaviorDesigner::Runtime::Tasks::ObjectDrawerAttribute
 	{

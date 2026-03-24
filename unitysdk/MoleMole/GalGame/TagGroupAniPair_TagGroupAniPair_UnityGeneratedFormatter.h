@@ -9,22 +9,22 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8B0FFF0)
-#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8B10000)
-#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8B10200)
-#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8B103C0)
-#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8B10380)
+#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB194D80)
+#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB194D90)
+#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB194F90)
+#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB195150)
+#define MOLEMOLE_GALGAME_TAGGROUPANIPAIR_TAGGROUPANIPAIR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB195110)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int TagGroupAniPair_TagGroupAniPair_UnityGeneratedFormatter_TypeDefinitionIndex = 56195;
+	inline static constexpr unsigned int TagGroupAniPair_TagGroupAniPair_UnityGeneratedFormatter_TypeDefinitionIndex = 67016;
 
 	class TagGroupAniPair_TagGroupAniPair_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::TagGroupAniPair*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TagGroupAniPair_TagGroupAniPair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3A5F0);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TagGroupAniPair_TagGroupAniPair_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3D360);
 		}
 
 		::System::Void _ctor()

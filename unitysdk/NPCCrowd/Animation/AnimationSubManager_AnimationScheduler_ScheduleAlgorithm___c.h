@@ -7,21 +7,21 @@
 
 namespace NPCCrowd::Animation { class AnimationSubManager_AnimationScheduler_OperationBufferBuilder; }
 
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x5E07D30)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x5E07D70)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C___CCTOR_B__22_0_OFFSET UNITYSDK_OFFSET(0x5E07D80)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C___CCTOR_B__22_1_OFFSET UNITYSDK_OFFSET(0x5E07DA0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6349510)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6349550)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C___CCTOR_B__22_0_OFFSET UNITYSDK_OFFSET(0x6349560)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_ANIMATIONSCHEDULER_SCHEDULEALGORITHM___C___CCTOR_B__22_1_OFFSET UNITYSDK_OFFSET(0x6349580)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c_TypeDefinitionIndex = 71179;
+	inline static constexpr unsigned int AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c_TypeDefinitionIndex = 59675;
 
 	class AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c : public ::System::Object
 	{
 	public:
 		static ::NPCCrowd::Animation::AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c** StaticGet___9()
 		{
-			return (::NPCCrowd::Animation::AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c**)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c_TypeDefinitionIndex)->GetStaticField(0x41960);
+			return (::NPCCrowd::Animation::AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c**)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_AnimationScheduler_ScheduleAlgorithm___c_TypeDefinitionIndex)->GetStaticField(0x45460);
 		}
 
 		static ::System::Void _cctor()

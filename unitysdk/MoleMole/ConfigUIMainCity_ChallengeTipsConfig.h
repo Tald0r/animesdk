@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGUIMAINCITY_CHALLENGETIPSCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCCB1A30)
+#define MOLEMOLE_CONFIGUIMAINCITY_CHALLENGETIPSCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xACE0920)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIMainCity_ChallengeTipsConfig_TypeDefinitionIndex = 45768;
+	inline static constexpr unsigned int ConfigUIMainCity_ChallengeTipsConfig_TypeDefinitionIndex = 45457;
 
 	class ConfigUIMainCity_ChallengeTipsConfig : public ::System::Object
 	{

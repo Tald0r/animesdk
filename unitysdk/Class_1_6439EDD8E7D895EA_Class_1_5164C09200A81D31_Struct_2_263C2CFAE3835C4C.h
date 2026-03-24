@@ -12,21 +12,21 @@ class Class_3_402121D94A91AFBA;
 namespace MoleMole { class TextureSheetData; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_1_6439EDD8E7D895EA_CLASS_1_5164C09200A81D31_STRUCT_2_263C2CFAE3835C4C_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x457C20)
-#define CLASS_1_6439EDD8E7D895EA_CLASS_1_5164C09200A81D31_STRUCT_2_263C2CFAE3835C4C_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_6439EDD8E7D895EA_CLASS_1_5164C09200A81D31_STRUCT_2_263C2CFAE3835C4C_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x398920)
+#define CLASS_1_6439EDD8E7D895EA_CLASS_1_5164C09200A81D31_STRUCT_2_263C2CFAE3835C4C_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_6439EDD8E7D895EA_Class_1_5164C09200A81D31_Struct_2_263C2CFAE3835C4C_TypeDefinitionIndex = 65288;
+inline static constexpr unsigned int Class_1_6439EDD8E7D895EA_Class_1_5164C09200A81D31_Struct_2_263C2CFAE3835C4C_TypeDefinitionIndex = 46360;
 
 struct alignas(8) Class_1_6439EDD8E7D895EA_Class_1_5164C09200A81D31_Struct_2_263C2CFAE3835C4C
 {
-	::Cysharp::Threading::Tasks::UniTask Field_2_7; // 0x10
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x20
-	::Class_3_402121D94A91AFBA* Field_2_5; // 0x30
-	::MoleMole::TextureSheetData* Field_2_6; // 0x38
-	::Class_1_6439EDD8E7D895EA_Class_1_5164C09200A81D31* Field_2_2; // 0x40
-	::Class_1_6439EDD8E7D895EA_Class_1_FC6FB51631C10798* Field_2_4; // 0x48
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_8; // 0x50
-	::Class_1_F5B35B1B6669CF16* Field_2_3; // 0x60
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_8; // 0x10
+	::Cysharp::Threading::Tasks::UniTask Field_2_7; // 0x20
+	::Class_1_6439EDD8E7D895EA_Class_1_5164C09200A81D31* Field_2_2; // 0x30
+	::Class_1_F5B35B1B6669CF16* Field_2_3; // 0x38
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x40
+	::Class_1_6439EDD8E7D895EA_Class_1_FC6FB51631C10798* Field_2_4; // 0x50
+	::Class_3_402121D94A91AFBA* Field_2_5; // 0x58
+	::MoleMole::TextureSheetData* Field_2_6; // 0x60
 	::System::Int32 Field_2_0; // 0x68
 
 	::System::Void MoveNext()

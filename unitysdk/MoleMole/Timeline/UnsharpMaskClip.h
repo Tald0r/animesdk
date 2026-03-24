@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class UnsharpMaskBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_UNSHARPMASKCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8F4C1B0)
-#define MOLEMOLE_TIMELINE_UNSHARPMASKCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8F4C1A0)
-#define MOLEMOLE_TIMELINE_UNSHARPMASKCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8F4C3B0)
+#define MOLEMOLE_TIMELINE_UNSHARPMASKCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x9864110)
+#define MOLEMOLE_TIMELINE_UNSHARPMASKCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x9864100)
+#define MOLEMOLE_TIMELINE_UNSHARPMASKCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x9864310)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int UnsharpMaskClip_TypeDefinitionIndex = 38327;
+	inline static constexpr unsigned int UnsharpMaskClip_TypeDefinitionIndex = 55154;
 
 	class UnsharpMaskClip : public ::UnityEngine::Playables::PlayableAsset
 	{

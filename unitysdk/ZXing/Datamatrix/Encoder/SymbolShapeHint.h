@@ -3,7 +3,7 @@
 
 namespace ZXing::Datamatrix::Encoder
 {
-	inline static constexpr unsigned int SymbolShapeHint_TypeDefinitionIndex = 8625;
+	inline static constexpr unsigned int SymbolShapeHint_TypeDefinitionIndex = 8636;
 
 	enum class SymbolShapeHint : ::System::Int32
 	{

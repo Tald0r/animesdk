@@ -8,23 +8,23 @@ class MonoUITableScrollV2;
 namespace MoleMole { class UIAntiqueCollectWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIGeneralBtn03WidgetController; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_FEED8F28D34F9161_METHOD_2_5200FEEACE882DF3_OFFSET UNITYSDK_OFFSET(0x737C5B0)
-#define CLASS_2_FEED8F28D34F9161_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x737C7D0)
-#define CLASS_2_FEED8F28D34F9161_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x737C8C0)
-#define CLASS_2_FEED8F28D34F9161__CTOR_OFFSET UNITYSDK_OFFSET(0x737C8B0)
+#define CLASS_2_FEED8F28D34F9161_METHOD_2_5200FEEACE882DF3_OFFSET UNITYSDK_OFFSET(0x83AE010)
+#define CLASS_2_FEED8F28D34F9161_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x83AE230)
+#define CLASS_2_FEED8F28D34F9161_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x83AE320)
+#define CLASS_2_FEED8F28D34F9161__CTOR_OFFSET UNITYSDK_OFFSET(0x83AE310)
 
-inline static constexpr unsigned int Class_2_FEED8F28D34F9161_TypeDefinitionIndex = 53315;
+inline static constexpr unsigned int Class_2_FEED8F28D34F9161_TypeDefinitionIndex = 65234;
 
 class Class_2_FEED8F28D34F9161 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIAntiqueCollectWidgetController*>* Field_2_4; // 0x20
-	::MonoUITableScrollV2* Field_2_3; // 0x28
-	::MonoUITableScrollV2* Field_2_2; // 0x30
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralBtn03WidgetController*>* Field_2_1; // 0x38
+	::MonoUITableScrollV2* Field_2_3; // 0x18
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralBtn03WidgetController*>* Field_2_1; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIAntiqueCollectWidgetController*>* Field_2_4; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x30
+	::MonoUITableScrollV2* Field_2_2; // 0x38
 
 	::System::Void _ctor()
 	{

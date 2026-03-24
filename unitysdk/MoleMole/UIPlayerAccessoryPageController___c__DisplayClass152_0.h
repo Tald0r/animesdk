@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS152_0__CTOR_OFFSET UNITYSDK_OFFSET(0x98FA550)
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS152_0__SHOWEFFECT_B__0_OFFSET UNITYSDK_OFFSET(0x98FA560)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS152_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAE33940)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS152_0__SHOWEFFECT_B__0_OFFSET UNITYSDK_OFFSET(0xAE33950)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryPageController___c__DisplayClass152_0_TypeDefinitionIndex = 77135;
+	inline static constexpr unsigned int UIPlayerAccessoryPageController___c__DisplayClass152_0_TypeDefinitionIndex = 39873;
 
 	class UIPlayerAccessoryPageController___c__DisplayClass152_0 : public ::System::Object
 	{

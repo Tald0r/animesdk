@@ -4,24 +4,24 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEMANAGEPAGECONTROLLER___C__BIND_B__16_0_OFFSET UNITYSDK_OFFSET(0xA4034F0)
-#define MOLEMOLE_UISUIBIANTEMPLEMANAGEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA4034A0)
-#define MOLEMOLE_UISUIBIANTEMPLEMANAGEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA4034E0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEPAGECONTROLLER___C__BIND_B__16_0_OFFSET UNITYSDK_OFFSET(0x96FE430)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x96FE3E0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x96FE420)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleManagePageController___c_TypeDefinitionIndex = 67963;
+	inline static constexpr unsigned int UISuibianTempleManagePageController___c_TypeDefinitionIndex = 49049;
 
 	class UISuibianTempleManagePageController___c : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::Events::UnityAction** StaticGet___9__16_0()
-		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x38F40);
-		}
 		static ::MoleMole::UISuibianTempleManagePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISuibianTempleManagePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x38F48);
+			return (::MoleMole::UISuibianTempleManagePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x3BB70);
+		}
+		static ::UnityEngine::Events::UnityAction** StaticGet___9__16_0()
+		{
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x3BB78);
 		}
 
 		static ::System::Void _cctor()

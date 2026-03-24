@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int SDoubleKeyValue_3_TypeDefinitionIndex = 7851;
+	inline static constexpr unsigned int SDoubleKeyValue_3_TypeDefinitionIndex = 8134;
 
 	template <typename TKey, typename TSubKey, typename TValue>
 	struct SDoubleKeyValue_3

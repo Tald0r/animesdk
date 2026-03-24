@@ -5,13 +5,13 @@
 namespace MoleMole { class MonoScoreStar; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOIMAGERATE_SETSTAR_OFFSET UNITYSDK_OFFSET(0xB3B7D80)
-#define MOLEMOLE_MONOIMAGERATE_SETTOTALSTAR_OFFSET UNITYSDK_OFFSET(0xB3B7FA0)
-#define MOLEMOLE_MONOIMAGERATE__CTOR_OFFSET UNITYSDK_OFFSET(0xB3B80E0)
+#define MOLEMOLE_MONOIMAGERATE_SETSTAR_OFFSET UNITYSDK_OFFSET(0xA64FBF0)
+#define MOLEMOLE_MONOIMAGERATE_SETTOTALSTAR_OFFSET UNITYSDK_OFFSET(0xA64FE10)
+#define MOLEMOLE_MONOIMAGERATE__CTOR_OFFSET UNITYSDK_OFFSET(0xA64FF50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoImageRate_TypeDefinitionIndex = 54807;
+	inline static constexpr unsigned int MonoImageRate_TypeDefinitionIndex = 55327;
 
 	class MonoImageRate : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

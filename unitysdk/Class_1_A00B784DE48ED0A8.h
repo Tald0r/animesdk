@@ -6,23 +6,23 @@ namespace System { class String; }
 namespace System::Threading { class CancellationTokenSource; }
 namespace UnityEngine::AI { class NavMeshQueryAsyncOperation; }
 
-#define CLASS_1_A00B784DE48ED0A8_METHOD_1_128774387667156B_OFFSET UNITYSDK_OFFSET(0x88C0760)
-#define CLASS_1_A00B784DE48ED0A8_METHOD_1_358A144584A5DBFC_OFFSET UNITYSDK_OFFSET(0x88C0670)
-#define CLASS_1_A00B784DE48ED0A8_TOSTRING_OFFSET UNITYSDK_OFFSET(0x88C05E0)
-#define CLASS_1_A00B784DE48ED0A8__CCTOR_OFFSET UNITYSDK_OFFSET(0x88C0660)
-#define CLASS_1_A00B784DE48ED0A8__CTOR_OFFSET UNITYSDK_OFFSET(0x88C0650)
+#define CLASS_1_A00B784DE48ED0A8_METHOD_1_128774387667156B_OFFSET UNITYSDK_OFFSET(0x72138A0)
+#define CLASS_1_A00B784DE48ED0A8_METHOD_1_358A144584A5DBFC_OFFSET UNITYSDK_OFFSET(0x72137B0)
+#define CLASS_1_A00B784DE48ED0A8_TOSTRING_OFFSET UNITYSDK_OFFSET(0x7213720)
+#define CLASS_1_A00B784DE48ED0A8__CCTOR_OFFSET UNITYSDK_OFFSET(0x72137A0)
+#define CLASS_1_A00B784DE48ED0A8__CTOR_OFFSET UNITYSDK_OFFSET(0x7213790)
 
-inline static constexpr unsigned int Class_1_A00B784DE48ED0A8_TypeDefinitionIndex = 37016;
+inline static constexpr unsigned int Class_1_A00B784DE48ED0A8_TypeDefinitionIndex = 47100;
 
 class Class_1_A00B784DE48ED0A8 : public ::System::Object
 {
 public:
 	static ::System::Int32* StaticGet_Field_1_2()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_A00B784DE48ED0A8_TypeDefinitionIndex)->GetStaticField(0xB260);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(Class_1_A00B784DE48ED0A8_TypeDefinitionIndex)->GetStaticField(0x111C0);
 	}
-	::UnityEngine::AI::NavMeshQueryAsyncOperation* Field_1_0; // 0x10
-	::System::Threading::CancellationTokenSource* Field_1_1; // 0x18
+	::System::Threading::CancellationTokenSource* Field_1_1; // 0x10
+	::UnityEngine::AI::NavMeshQueryAsyncOperation* Field_1_0; // 0x18
 	::System::Int32 Field_1_3; // 0x20
 
 	::System::Void _ctor()

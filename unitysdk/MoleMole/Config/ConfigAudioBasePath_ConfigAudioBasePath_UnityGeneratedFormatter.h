@@ -9,26 +9,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9B5C360)
-#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9B5C370)
-#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9B5C570)
-#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9B5C730)
-#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9B5C6F0)
+#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB46C150)
+#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB46C160)
+#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB46C360)
+#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB46C520)
+#define MOLEMOLE_CONFIG_CONFIGAUDIOBASEPATH_CONFIGAUDIOBASEPATH_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB46C4E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter_TypeDefinitionIndex = 40928;
+	inline static constexpr unsigned int ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter_TypeDefinitionIndex = 61084;
 
 	class ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigAudioBasePath*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AudioBasePath*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AudioBasePath*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41290);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AudioBasePath*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47600);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::AudioBasePath*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::AudioBasePath*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41298);
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::AudioBasePath*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAudioBasePath_ConfigAudioBasePath_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47608);
 		}
 
 		::System::Void _ctor()

@@ -7,21 +7,21 @@ namespace MoleMole::GalGame { class AudioEventItem; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_GALWHITESWITCHSCENENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7F0CAA0)
+#define MOLEMOLE_GALGAME_GALWHITESWITCHSCENENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD57120)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalWhiteSwitchSceneNode_TypeDefinitionIndex = 78592;
+	inline static constexpr unsigned int GalWhiteSwitchSceneNode_TypeDefinitionIndex = 73999;
 
 	class GalWhiteSwitchSceneNode : public ::MoleMole::GalGame::GalPlayableNodeBase
 	{
 	public:
-		::System::String* audioKey; // 0x20
+		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioEventItems; // 0x20
 		::System::String* dialogueKey; // 0x28
-		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioEventItems; // 0x30
+		::System::String* audioKey; // 0x30
 		::System::String* voiceKey; // 0x38
-		::MoleMole::GalGame::GalSwitchSceneNode_AnimLength fadeAnimLength; // 0x40
-		::System::Boolean isTypeWritter; // 0x44
+		::System::Boolean isTypeWritter; // 0x40
+		::MoleMole::GalGame::GalSwitchSceneNode_AnimLength fadeAnimLength; // 0x44
 
 		::System::Void _ctor()
 		{

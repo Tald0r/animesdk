@@ -6,7 +6,7 @@ namespace UnityEngine::UIElements { class IEventHandler; }
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int PointerCaptureEventBase_1_TypeDefinitionIndex = 23785;
+	inline static constexpr unsigned int PointerCaptureEventBase_1_TypeDefinitionIndex = 24468;
 
 	template <typename T>
 	class PointerCaptureEventBase_1 : public ::UnityEngine::UIElements::EventBase_1<T>

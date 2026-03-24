@@ -7,7 +7,7 @@ namespace System { class Action; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianProductionRightWidgetController_CheckBuddyData_TypeDefinitionIndex = 38590;
+	inline static constexpr unsigned int UISuibianProductionRightWidgetController_CheckBuddyData_TypeDefinitionIndex = 39146;
 
 	struct alignas(8) UISuibianProductionRightWidgetController_CheckBuddyData
 	{

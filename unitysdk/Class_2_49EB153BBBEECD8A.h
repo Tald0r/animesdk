@@ -10,28 +10,28 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_49EB153BBBEECD8A_METHOD_2_65367CC4DD011F4E_OFFSET UNITYSDK_OFFSET(0x91B7B40)
-#define CLASS_2_49EB153BBBEECD8A_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x91B7CB0)
-#define CLASS_2_49EB153BBBEECD8A_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x91B7910)
-#define CLASS_2_49EB153BBBEECD8A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x91B7D80)
-#define CLASS_2_49EB153BBBEECD8A__CTOR_OFFSET UNITYSDK_OFFSET(0x91B7D70)
+#define CLASS_2_49EB153BBBEECD8A_METHOD_2_65367CC4DD011F4E_OFFSET UNITYSDK_OFFSET(0x64E1F20)
+#define CLASS_2_49EB153BBBEECD8A_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x64E2090)
+#define CLASS_2_49EB153BBBEECD8A_METHOD_2_B6EEC4B10357AB73_OFFSET UNITYSDK_OFFSET(0x64E1CF0)
+#define CLASS_2_49EB153BBBEECD8A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x64E2160)
+#define CLASS_2_49EB153BBBEECD8A__CTOR_OFFSET UNITYSDK_OFFSET(0x64E2150)
 
-inline static constexpr unsigned int Class_2_49EB153BBBEECD8A_TypeDefinitionIndex = 39102;
+inline static constexpr unsigned int Class_2_49EB153BBBEECD8A_TypeDefinitionIndex = 72396;
 
 class Class_2_49EB153BBBEECD8A : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_3; // 0x18
-	::System::Collections::Generic::List_1<::UnityEngine::Transform*>* Field_2_2; // 0x20
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralPhaseProgressWidgetController*>* Field_2_8; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x30
-	::UnityEngine::UI::Extension::UITimeWidget* Field_2_5; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x48
-	::UnityEngine::RectTransform* Field_2_1; // 0x50
-	::UnityEngine::RectTransform* Field_2_4; // 0x58
+	::UnityEngine::UI::Extension::UITimeWidget* Field_2_5; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x20
+	::System::Collections::Generic::List_1<::UnityEngine::Transform*>* Field_2_2; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x30
+	::UnityEngine::RectTransform* Field_2_1; // 0x38
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralPhaseProgressWidgetController*>* Field_2_8; // 0x40
+	::UnityEngine::RectTransform* Field_2_4; // 0x48
+	::UnityEngine::RectTransform* Field_2_3; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x58
 
 	::System::Void _ctor()
 	{
@@ -43,9 +43,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_49EB153BBBEECD8A_METHOD_2_B6EEC4B10357AB73_OFFSET))(this, a1, a2);
 	}
 
-	::System::Collections::Generic::List_1<::UnityEngine::Transform*>* Method_2_65367CC4DD011F4E(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
+	::System::Void Method_2_9FA85F81BF5EE3CA()
 	{
-		return ((::System::Collections::Generic::List_1<::UnityEngine::Transform*>*(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_49EB153BBBEECD8A_METHOD_2_65367CC4DD011F4E_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_49EB153BBBEECD8A_METHOD_2_9FA85F81BF5EE3CA_OFFSET))(this);
 	}
 
 	::System::Void Method_2_C8903A36ECBA4078(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
@@ -53,8 +53,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_49EB153BBBEECD8A_METHOD_2_C8903A36ECBA4078_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_2_9FA85F81BF5EE3CA()
+	::System::Collections::Generic::List_1<::UnityEngine::Transform*>* Method_2_65367CC4DD011F4E(::Class_2_777A5D016ADC7368* a1, ::MoleMole::UIControlCollection* a2)
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_49EB153BBBEECD8A_METHOD_2_9FA85F81BF5EE3CA_OFFSET))(this);
+		return ((::System::Collections::Generic::List_1<::UnityEngine::Transform*>*(*)(::PVOID, ::Class_2_777A5D016ADC7368*, ::MoleMole::UIControlCollection*))((::PBYTE)hIl2Cpp + CLASS_2_49EB153BBBEECD8A_METHOD_2_65367CC4DD011F4E_OFFSET))(this, a1, a2);
 	}
 };

@@ -3,14 +3,14 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaPerformance3DModelController_GachaStageType_TypeDefinitionIndex = 40465;
+	inline static constexpr unsigned int UIGachaPerformance3DModelController_GachaStageType_TypeDefinitionIndex = 42438;
 
 	enum class UIGachaPerformance3DModelController_GachaStageType : ::System::Int32
 	{
-		Bangboo = 2,
-		Avatar = 1,
+		Weapon = 3,
 		Unknown = 0,
 		Tv = 100,
-		Weapon = 3,
+		Avatar = 1,
+		Bangboo = 2,
 	};
 }

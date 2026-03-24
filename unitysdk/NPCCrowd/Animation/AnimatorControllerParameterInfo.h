@@ -5,7 +5,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimatorControllerParameterInfo_TypeDefinitionIndex = 50859;
+	inline static constexpr unsigned int AnimatorControllerParameterInfo_TypeDefinitionIndex = 80808;
 
 	struct alignas(4) AnimatorControllerParameterInfo
 	{

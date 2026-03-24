@@ -5,12 +5,12 @@
 namespace FluffyUnderware::Curvy::Generator { class CGModuleInputSlot; }
 namespace FluffyUnderware::Curvy::Generator { class CGModuleOutputSlot; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH_REFRESH_OFFSET UNITYSDK_OFFSET(0x1A774DE0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A775190)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH_REFRESH_OFFSET UNITYSDK_OFFSET(0x1AD136F0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERTRSMESH__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD13A90)
 
 namespace FluffyUnderware::Curvy::Generator::Modules
 {
-	inline static constexpr unsigned int ModifierTRSMesh_TypeDefinitionIndex = 35866;
+	inline static constexpr unsigned int ModifierTRSMesh_TypeDefinitionIndex = 36886;
 
 	class ModifierTRSMesh : public ::FluffyUnderware::Curvy::Generator::TRSModuleBase
 	{

@@ -3,7 +3,7 @@
 #include "unitysdk/Foundation/ViewObject/GroupMemberIdentifier.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int Struct_2_026C21403829850A_TypeDefinitionIndex = 67653;
+inline static constexpr unsigned int Struct_2_026C21403829850A_TypeDefinitionIndex = 75984;
 
 struct alignas(4) Struct_2_026C21403829850A
 {

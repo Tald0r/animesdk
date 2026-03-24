@@ -5,12 +5,12 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class Renderer; }
 
-#define DIGITALOPUS_MB_CORE_MB3_MESHBAKERGROUPERBEHAVIOUR___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6490C0)
-#define DIGITALOPUS_MB_CORE_MB3_MESHBAKERGROUPERBEHAVIOUR___C__DISPLAYCLASS2_0__DOCLUSTERING_B__0_OFFSET UNITYSDK_OFFSET(0x1A6490D0)
+#define DIGITALOPUS_MB_CORE_MB3_MESHBAKERGROUPERBEHAVIOUR___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABF4320)
+#define DIGITALOPUS_MB_CORE_MB3_MESHBAKERGROUPERBEHAVIOUR___C__DISPLAYCLASS2_0__DOCLUSTERING_B__0_OFFSET UNITYSDK_OFFSET(0x1ABF4330)
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB3_MeshBakerGrouperBehaviour___c__DisplayClass2_0_TypeDefinitionIndex = 81225;
+	inline static constexpr unsigned int MB3_MeshBakerGrouperBehaviour___c__DisplayClass2_0_TypeDefinitionIndex = 83266;
 
 	class MB3_MeshBakerGrouperBehaviour___c__DisplayClass2_0 : public ::System::Object
 	{

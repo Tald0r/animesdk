@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_5.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREARANDOMNOWITHJUMPANDRANGE_INVOKE_OFFSET UNITYSDK_OFFSET(0x6AEFF40)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREARANDOMNOWITHJUMPANDRANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x6AF03E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREARANDOMNOWITHJUMPANDRANGE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB5DF150)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ABYSSS2_GETAREARANDOMNOWITHJUMPANDRANGE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5DF5F0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_AbyssS2_GetAreaRandomNoWithJumpAndRange_TypeDefinitionIndex = 53525;
+	inline static constexpr unsigned int LD_AbyssS2_GetAreaRandomNoWithJumpAndRange_TypeDefinitionIndex = 69783;
 
 	class LD_AbyssS2_GetAreaRandomNoWithJumpAndRange : public ::FlowCanvas::Nodes::PureFunctionNode_5<::System::Int32, ::System::Boolean, ::System::Int32, ::System::Int32, ::System::Int32>
 	{

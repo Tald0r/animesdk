@@ -4,19 +4,19 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_MULTIPLEVIDEOPLAYERMANAGER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7F1F970)
-#define MOLEMOLE_MULTIPLEVIDEOPLAYERMANAGER___C__DISPLAYCLASS8_0__PLAYBYINDEX_B__0_OFFSET UNITYSDK_OFFSET(0x7F1F980)
-#define MOLEMOLE_MULTIPLEVIDEOPLAYERMANAGER___C__DISPLAYCLASS8_0__PLAYBYINDEX_B__1_OFFSET UNITYSDK_OFFSET(0x7F1F990)
+#define MOLEMOLE_MULTIPLEVIDEOPLAYERMANAGER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8B71D00)
+#define MOLEMOLE_MULTIPLEVIDEOPLAYERMANAGER___C__DISPLAYCLASS8_0__PLAYBYINDEX_B__0_OFFSET UNITYSDK_OFFSET(0x8B71D10)
+#define MOLEMOLE_MULTIPLEVIDEOPLAYERMANAGER___C__DISPLAYCLASS8_0__PLAYBYINDEX_B__1_OFFSET UNITYSDK_OFFSET(0x8B71D20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MultipleVideoPlayerManager___c__DisplayClass8_0_TypeDefinitionIndex = 45551;
+	inline static constexpr unsigned int MultipleVideoPlayerManager___c__DisplayClass8_0_TypeDefinitionIndex = 49503;
 
 	class MultipleVideoPlayerManager___c__DisplayClass8_0 : public ::System::Object
 	{
 	public:
-		::System::Action* onVideoEnd; // 0x10
-		::System::Action* onFinished; // 0x18
+		::System::Action* onFinished; // 0x10
+		::System::Action* onVideoEnd; // 0x18
 
 		::System::Void _ctor()
 		{

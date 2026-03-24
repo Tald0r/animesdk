@@ -7,7 +7,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int BatchRendererCullingOutput_TypeDefinitionIndex = 6192;
+	inline static constexpr unsigned int BatchRendererCullingOutput_TypeDefinitionIndex = 6196;
 
 	struct alignas(8) BatchRendererCullingOutput
 	{

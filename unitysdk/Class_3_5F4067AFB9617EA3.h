@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_2_534AF681CC2BD5FD_174.h"
+#include "unitysdk/Class_2_C6AB2643BC630D64.h"
 #include "unitysdk/Enum_3_AF4D3A3041939147.h"
 #include "unitysdk/MoleMole/EntityHandle.h"
 #include "unitysdk/UnityEngine/Vector3.h"
@@ -12,34 +12,34 @@ namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_3_5F4067AFB9617EA3_METHOD_3_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x9179EF0)
-#define CLASS_3_5F4067AFB9617EA3_METHOD_3_48FE5A4C8416B858_OFFSET UNITYSDK_OFFSET(0x9179AA0)
-#define CLASS_3_5F4067AFB9617EA3_METHOD_3_6EC85C0A198B825E_OFFSET UNITYSDK_OFFSET(0x9179D30)
-#define CLASS_3_5F4067AFB9617EA3_METHOD_3_AB156C9AD7E862FC_OFFSET UNITYSDK_OFFSET(0x91796E0)
-#define CLASS_3_5F4067AFB9617EA3_METHOD_3_BE8A1D0F6D838666_OFFSET UNITYSDK_OFFSET(0x917A070)
-#define CLASS_3_5F4067AFB9617EA3__CTOR_OFFSET UNITYSDK_OFFSET(0x917A030)
+#define CLASS_3_5F4067AFB9617EA3_METHOD_3_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0xB58B3C0)
+#define CLASS_3_5F4067AFB9617EA3_METHOD_3_48FE5A4C8416B858_OFFSET UNITYSDK_OFFSET(0xB58AF70)
+#define CLASS_3_5F4067AFB9617EA3_METHOD_3_6EC85C0A198B825E_OFFSET UNITYSDK_OFFSET(0xB58B200)
+#define CLASS_3_5F4067AFB9617EA3_METHOD_3_AB156C9AD7E862FC_OFFSET UNITYSDK_OFFSET(0xB58ABB0)
+#define CLASS_3_5F4067AFB9617EA3_METHOD_3_BE8A1D0F6D838666_OFFSET UNITYSDK_OFFSET(0xB58B540)
+#define CLASS_3_5F4067AFB9617EA3__CTOR_OFFSET UNITYSDK_OFFSET(0xB58B500)
 
-inline static constexpr unsigned int Class_3_5F4067AFB9617EA3_TypeDefinitionIndex = 66462;
+inline static constexpr unsigned int Class_3_5F4067AFB9617EA3_TypeDefinitionIndex = 56547;
 
-class Class_3_5F4067AFB9617EA3 : public ::Class_2_534AF681CC2BD5FD_174<::Class_3_5F4067AFB9617EA3*>
+class Class_3_5F4067AFB9617EA3 : public ::Class_2_C6AB2643BC630D64<::Class_3_5F4067AFB9617EA3*>
 {
 public:
-	::MoleMole::EntityHandle Field_3_11; // 0x10
-	::UnityEngine::AnimationCurve* Field_3_10; // 0x20
-	::UnityEngine::AnimationCurve* Field_3_8; // 0x28
+	::System::String* Field_3_4; // 0x10
+	::MoleMole::EntityHandle Field_3_0; // 0x18
+	::Class_3_F35B080B137ECC46* Field_3_12; // 0x28
 	::UnityEngine::AnimationCurve* Field_3_9; // 0x30
-	::MoleMole::EntityHandle Field_3_0; // 0x38
-	::System::String* Field_3_3; // 0x48
-	::System::String* Field_3_2; // 0x50
-	::MoleMole::EntityHandle Field_3_1; // 0x58
-	::System::String* Field_3_4; // 0x68
-	::Class_3_F35B080B137ECC46* Field_3_12; // 0x70
+	::System::String* Field_3_3; // 0x38
+	::UnityEngine::AnimationCurve* Field_3_10; // 0x40
+	::System::String* Field_3_2; // 0x48
+	::MoleMole::EntityHandle Field_3_1; // 0x50
+	::MoleMole::EntityHandle Field_3_11; // 0x60
+	::UnityEngine::AnimationCurve* Field_3_8; // 0x70
 	::UnityEngine::Vector3 Field_3_15; // 0x78
-	::UnityEngine::Vector3 Field_3_13; // 0x84
-	::System::Single Field_3_5; // 0x90
-	::UnityEngine::Vector3 Field_3_14; // 0x94
-	::System::Single Field_3_6; // 0xA0
-	::Enum_3_AF4D3A3041939147 Field_3_7; // 0xA4
+	::UnityEngine::Vector3 Field_3_14; // 0x84
+	::System::Single Field_3_6; // 0x90
+	::System::Single Field_3_5; // 0x94
+	::Enum_3_AF4D3A3041939147 Field_3_7; // 0x98
+	::UnityEngine::Vector3 Field_3_13; // 0x9C
 
 	::System::Void _ctor()
 	{
@@ -61,13 +61,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_5F4067AFB9617EA3_METHOD_3_4343F372F34C05BF_OFFSET))(this);
 	}
 
-	::UnityEngine::Vector3 Method_3_48FE5A4C8416B858(::System::Single a1)
-	{
-		return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_3_5F4067AFB9617EA3_METHOD_3_48FE5A4C8416B858_OFFSET))(this, a1);
-	}
-
 	::System::Void Method_3_BE8A1D0F6D838666(::Class_3_248DACE3BB3053DD* a1, ::MoleMole::Battle::Entity* a2, ::MoleMole::Battle::Entity* a3, ::Class_2_14986121AA61AD99* a4)
 	{
 		return ((::System::Void(*)(::PVOID, ::Class_3_248DACE3BB3053DD*, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*, ::Class_2_14986121AA61AD99*))((::PBYTE)hIl2Cpp + CLASS_3_5F4067AFB9617EA3_METHOD_3_BE8A1D0F6D838666_OFFSET))(this, a1, a2, a3, a4);
+	}
+
+	::UnityEngine::Vector3 Method_3_48FE5A4C8416B858(::System::Single a1)
+	{
+		return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_3_5F4067AFB9617EA3_METHOD_3_48FE5A4C8416B858_OFFSET))(this, a1);
 	}
 };

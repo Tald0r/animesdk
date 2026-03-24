@@ -5,28 +5,28 @@
 namespace MoleMole { class UIInterKnotLevelWidgetController___c__DisplayClass7_0; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__CTOR_OFFSET UNITYSDK_OFFSET(0xA636370)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__2_OFFSET UNITYSDK_OFFSET(0xA637410)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__3_OFFSET UNITYSDK_OFFSET(0xA6374D0)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__4_OFFSET UNITYSDK_OFFSET(0xA637BD0)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__5_OFFSET UNITYSDK_OFFSET(0xA637990)
-#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__6_OFFSET UNITYSDK_OFFSET(0xA637A40)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__CTOR_OFFSET UNITYSDK_OFFSET(0xBD2ACB0)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__2_OFFSET UNITYSDK_OFFSET(0xBD2BD50)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__3_OFFSET UNITYSDK_OFFSET(0xBD2BE10)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__4_OFFSET UNITYSDK_OFFSET(0xBD2C510)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__5_OFFSET UNITYSDK_OFFSET(0xBD2C2D0)
+#define MOLEMOLE_UIINTERKNOTLEVELWIDGETCONTROLLER___C__DISPLAYCLASS7_2__REFRESHLEVELTXTVIEW_B__6_OFFSET UNITYSDK_OFFSET(0xBD2C380)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotLevelWidgetController___c__DisplayClass7_2_TypeDefinitionIndex = 48999;
+	inline static constexpr unsigned int UIInterKnotLevelWidgetController___c__DisplayClass7_2_TypeDefinitionIndex = 71779;
 
 	class UIInterKnotLevelWidgetController___c__DisplayClass7_2 : public ::System::Object
 	{
 	public:
 		::System::Action* __9__6; // 0x10
-		::MoleMole::UIInterKnotLevelWidgetController___c__DisplayClass7_0* CS___8__locals2; // 0x18
-		::System::Action* __9__5; // 0x20
-		::System::Single remainExpRatio; // 0x28
-		::System::Single timer; // 0x2C
-		::System::Single realExpProgressDuration_1; // 0x30
-		::System::Single realExpProgressDuration_2; // 0x34
-		::System::Single prvExpRatio; // 0x38
+		::System::Action* __9__5; // 0x18
+		::MoleMole::UIInterKnotLevelWidgetController___c__DisplayClass7_0* CS___8__locals2; // 0x20
+		::System::Single realExpProgressDuration_2; // 0x28
+		::System::Single remainExpRatio; // 0x2C
+		::System::Single timer; // 0x30
+		::System::Single prvExpRatio; // 0x34
+		::System::Single realExpProgressDuration_1; // 0x38
 
 		::System::Void _ctor()
 		{

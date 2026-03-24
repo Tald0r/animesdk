@@ -5,12 +5,12 @@
 
 namespace NPCCrowd::Ability { class InteractSlot; }
 
-#define NPCCROWD_ABILITY_INTERACTWAITINGSLOT___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA107390)
-#define NPCCROWD_ABILITY_INTERACTWAITINGSLOT___C__DISPLAYCLASS14_0__TRYOCCUPYVALIDSLOT_B__0_OFFSET UNITYSDK_OFFSET(0xA1073A0)
+#define NPCCROWD_ABILITY_INTERACTWAITINGSLOT___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x76CDA30)
+#define NPCCROWD_ABILITY_INTERACTWAITINGSLOT___C__DISPLAYCLASS14_0__TRYOCCUPYVALIDSLOT_B__0_OFFSET UNITYSDK_OFFSET(0x76CDA40)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int InteractWaitingSlot___c__DisplayClass14_0_TypeDefinitionIndex = 68884;
+	inline static constexpr unsigned int InteractWaitingSlot___c__DisplayClass14_0_TypeDefinitionIndex = 73686;
 
 	class InteractWaitingSlot___c__DisplayClass14_0 : public ::System::Object
 	{

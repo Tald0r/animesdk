@@ -5,9 +5,9 @@
 
 namespace System { class String; }
 
-#define SYSTEM_NET_MONOHTTPDATE_PARSE_OFFSET UNITYSDK_OFFSET(0x182DDF70)
-#define SYSTEM_NET_MONOHTTPDATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x182DE090)
-#define SYSTEM_NET_MONOHTTPDATE__CTOR_OFFSET UNITYSDK_OFFSET(0x182DE080)
+#define SYSTEM_NET_MONOHTTPDATE_PARSE_OFFSET UNITYSDK_OFFSET(0x188F2C90)
+#define SYSTEM_NET_MONOHTTPDATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x188F2DB0)
+#define SYSTEM_NET_MONOHTTPDATE__CTOR_OFFSET UNITYSDK_OFFSET(0x188F2DA0)
 
 namespace System::Net
 {
@@ -16,19 +16,19 @@ namespace System::Net
 	class MonoHttpDate : public ::System::Object
 	{
 	public:
-		static ::System::String** StaticGet_rfc850_date()
+		static ::Il2CppArray<::System::String*>** StaticGet_formats()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MonoHttpDate_TypeDefinitionIndex)->GetStaticField(0x3790);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MonoHttpDate_TypeDefinitionIndex)->GetStaticField(0x3790);
 		}
-		static ::System::String** StaticGet_rfc1123_date()
+		static ::System::String** StaticGet_asctime_date()
 		{
 			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MonoHttpDate_TypeDefinitionIndex)->GetStaticField(0x3798);
 		}
-		static ::Il2CppArray<::System::String*>** StaticGet_formats()
+		static ::System::String** StaticGet_rfc850_date()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MonoHttpDate_TypeDefinitionIndex)->GetStaticField(0x37A0);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MonoHttpDate_TypeDefinitionIndex)->GetStaticField(0x37A0);
 		}
-		static ::System::String** StaticGet_asctime_date()
+		static ::System::String** StaticGet_rfc1123_date()
 		{
 			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MonoHttpDate_TypeDefinitionIndex)->GetStaticField(0x37A8);
 		}

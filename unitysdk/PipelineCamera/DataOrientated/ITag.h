@@ -3,7 +3,7 @@
 
 namespace PipelineCamera::DataOrientated
 {
-	inline static constexpr unsigned int ITag_TypeDefinitionIndex = 34568;
+	inline static constexpr unsigned int ITag_TypeDefinitionIndex = 35570;
 
 	class ITag
 	{

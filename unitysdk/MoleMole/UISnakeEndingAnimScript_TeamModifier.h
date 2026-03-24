@@ -9,7 +9,7 @@ namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISnakeEndingAnimScript_TeamModifier_TypeDefinitionIndex = 81638;
+	inline static constexpr unsigned int UISnakeEndingAnimScript_TeamModifier_TypeDefinitionIndex = 83690;
 
 	struct alignas(8) UISnakeEndingAnimScript_TeamModifier
 	{

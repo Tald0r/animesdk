@@ -5,12 +5,12 @@
 namespace MiHoYo::SDK { class NetworkResponseModel; }
 namespace MiHoYo::SDK::Console::CN { class LoginManagerPS; }
 
-#define MIHOYO_SDK_CONSOLE_CN_LOGINMANAGERPS___C__DISPLAYCLASS7_0__CHECKAGREEMENT_B__0_OFFSET UNITYSDK_OFFSET(0x18873FF0)
-#define MIHOYO_SDK_CONSOLE_CN_LOGINMANAGERPS___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18873FE0)
+#define MIHOYO_SDK_CONSOLE_CN_LOGINMANAGERPS___C__DISPLAYCLASS7_0__CHECKAGREEMENT_B__0_OFFSET UNITYSDK_OFFSET(0x18A8D910)
+#define MIHOYO_SDK_CONSOLE_CN_LOGINMANAGERPS___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18A8D900)
 
 namespace MiHoYo::SDK::Console::CN
 {
-	inline static constexpr unsigned int LoginManagerPS___c__DisplayClass7_0_TypeDefinitionIndex = 18744;
+	inline static constexpr unsigned int LoginManagerPS___c__DisplayClass7_0_TypeDefinitionIndex = 19343;
 
 	class LoginManagerPS___c__DisplayClass7_0 : public ::System::Object
 	{

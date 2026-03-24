@@ -6,19 +6,19 @@
 
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_MONOSTAGEAREABVSMANAGER_CLASS_1_4263C06BC7ECF6EB_METHOD_1_A3EF4ED894EBFFC3_OFFSET UNITYSDK_OFFSET(0x6E4B6A0)
-#define MOLEMOLE_MONOSTAGEAREABVSMANAGER_CLASS_1_4263C06BC7ECF6EB__CTOR_OFFSET UNITYSDK_OFFSET(0x6E4B5B0)
+#define MOLEMOLE_MONOSTAGEAREABVSMANAGER_CLASS_1_4263C06BC7ECF6EB_METHOD_1_A3EF4ED894EBFFC3_OFFSET UNITYSDK_OFFSET(0xCD67550)
+#define MOLEMOLE_MONOSTAGEAREABVSMANAGER_CLASS_1_4263C06BC7ECF6EB__CTOR_OFFSET UNITYSDK_OFFSET(0xCD67460)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoStageAreaBVSManager_Class_1_4263C06BC7ECF6EB_TypeDefinitionIndex = 56615;
+	inline static constexpr unsigned int MonoStageAreaBVSManager_Class_1_4263C06BC7ECF6EB_TypeDefinitionIndex = 52145;
 
 	class MonoStageAreaBVSManager_Class_1_4263C06BC7ECF6EB : public ::System::Object
 	{
 	public:
 		::UnityEngine::Quaternion Field_1_1; // 0x10
-		::UnityEngine::Vector3 Field_1_2; // 0x20
-		::UnityEngine::Vector3 Field_1_0; // 0x2C
+		::UnityEngine::Vector3 Field_1_0; // 0x20
+		::UnityEngine::Vector3 Field_1_2; // 0x2C
 
 		::System::Void _ctor(::UnityEngine::Transform* a1)
 		{

@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class HollowPopInteractOption; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_HOLLOWPOPINTERACTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xCCA6520)
+#define MOLEMOLE_CONFIG_HOLLOWPOPINTERACTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xACD53F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowPopInteractInfo_TypeDefinitionIndex = 43712;
+	inline static constexpr unsigned int HollowPopInteractInfo_TypeDefinitionIndex = 44352;
 
 	class HollowPopInteractInfo : public ::System::Object
 	{

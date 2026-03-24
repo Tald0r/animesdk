@@ -9,7 +9,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace ObservableCollections
 {
-	inline static constexpr unsigned int ObservableStack_1_View_1__GetEnumerator_d__23_TypeDefinitionIndex = 24198;
+	inline static constexpr unsigned int ObservableStack_1_View_1__GetEnumerator_d__23_TypeDefinitionIndex = 25043;
 
 	template <typename T, typename TView>
 	class ObservableStack_1_View_1__GetEnumerator_d__23 : public ::System::Object

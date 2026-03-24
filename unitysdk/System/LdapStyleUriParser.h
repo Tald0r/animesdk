@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/UriParser.h"
 
-#define SYSTEM_LDAPSTYLEURIPARSER__CTOR_OFFSET UNITYSDK_OFFSET(0x196850B0)
+#define SYSTEM_LDAPSTYLEURIPARSER__CTOR_OFFSET UNITYSDK_OFFSET(0x19B23A30)
 
 namespace System
 {

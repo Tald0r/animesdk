@@ -6,12 +6,12 @@
 
 namespace UnityEngine { class Collider; }
 
-#define STRUCT_2_72A065C071D070A0_METHOD_2_5E68CD0C84F148D0_OFFSET UNITYSDK_OFFSET(0x44C4A0)
-#define STRUCT_2_72A065C071D070A0_METHOD_2_CA2A4507B7503F96_OFFSET UNITYSDK_OFFSET(0xD40D530)
-#define STRUCT_2_72A065C071D070A0_METHOD_2_EFBDA17C7FDA4DD3_OFFSET UNITYSDK_OFFSET(0x44C4B0)
-#define STRUCT_2_72A065C071D070A0__CTOR_OFFSET UNITYSDK_OFFSET(0x44C440)
+#define STRUCT_2_72A065C071D070A0_METHOD_2_5E68CD0C84F148D0_OFFSET UNITYSDK_OFFSET(0x36EF10)
+#define STRUCT_2_72A065C071D070A0_METHOD_2_CA2A4507B7503F96_OFFSET UNITYSDK_OFFSET(0x938D460)
+#define STRUCT_2_72A065C071D070A0_METHOD_2_EFBDA17C7FDA4DD3_OFFSET UNITYSDK_OFFSET(0x36EF20)
+#define STRUCT_2_72A065C071D070A0__CTOR_OFFSET UNITYSDK_OFFSET(0x36EEB0)
 
-inline static constexpr unsigned int Struct_2_72A065C071D070A0_TypeDefinitionIndex = 58408;
+inline static constexpr unsigned int Struct_2_72A065C071D070A0_TypeDefinitionIndex = 79645;
 
 struct alignas(8) Struct_2_72A065C071D070A0
 {
@@ -22,6 +22,11 @@ struct alignas(8) Struct_2_72A065C071D070A0
 	::System::Void _ctor(::UnityEngine::Collider* a1, ::Struct_2_72A065C071D070A0_Enum_3_6CCB89F329770712 a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Collider*, ::Struct_2_72A065C071D070A0_Enum_3_6CCB89F329770712))((::PBYTE)hIl2Cpp + STRUCT_2_72A065C071D070A0__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	static ::System::Boolean Method_2_CA2A4507B7503F96(::UnityEngine::Collider* a1, ::Struct_2_72A065C071D070A0& a2)
+	{
+		return ((::System::Boolean(*)(::UnityEngine::Collider*, ::Struct_2_72A065C071D070A0&))((::PBYTE)hIl2Cpp + STRUCT_2_72A065C071D070A0_METHOD_2_CA2A4507B7503F96_OFFSET))(a1, a2);
 	}
 
 	::System::Void Method_2_5E68CD0C84F148D0(::UnityEngine::Matrix4x4& a1)
@@ -35,9 +40,4 @@ struct alignas(8) Struct_2_72A065C071D070A0
 		return ((::System::Boolean(*)(::PVOID, ::UnityEngine::RaycastHit&, ::UnityEngine::Matrix4x4&, ::UnityEngine::Vector3, ::System::Single, ::System::Int32))((::PBYTE)hIl2Cpp + STRUCT_2_72A065C071D070A0_METHOD_2_EFBDA17C7FDA4DD3_OFFSET))(this, a1, a2, a3, a4, a5);
 	}
 	*/
-
-	static ::System::Boolean Method_2_CA2A4507B7503F96(::UnityEngine::Collider* a1, ::Struct_2_72A065C071D070A0& a2)
-	{
-		return ((::System::Boolean(*)(::UnityEngine::Collider*, ::Struct_2_72A065C071D070A0&))((::PBYTE)hIl2Cpp + STRUCT_2_72A065C071D070A0_METHOD_2_CA2A4507B7503F96_OFFSET))(a1, a2);
-	}
 };

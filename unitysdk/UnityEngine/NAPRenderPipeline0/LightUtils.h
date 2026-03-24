@@ -5,11 +5,11 @@
 
 namespace UnityEngine { class Light; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTUTILS_CALCULATELIGHTMATRIX_OFFSET UNITYSDK_OFFSET(0x199598B0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_LIGHTUTILS_CALCULATELIGHTMATRIX_OFFSET UNITYSDK_OFFSET(0x19E99710)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int LightUtils_TypeDefinitionIndex = 5970;
+	inline static constexpr unsigned int LightUtils_TypeDefinitionIndex = 5973;
 
 	class LightUtils : public ::System::Object
 	{

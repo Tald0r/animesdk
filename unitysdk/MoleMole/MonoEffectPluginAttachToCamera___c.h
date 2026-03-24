@@ -5,24 +5,24 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_MONOEFFECTPLUGINATTACHTOCAMERA___C_METHOD_1_41F2B3FE3FB78FC7_OFFSET UNITYSDK_OFFSET(0xC2EC2F0)
-#define MOLEMOLE_MONOEFFECTPLUGINATTACHTOCAMERA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC2EC2B0)
-#define MOLEMOLE_MONOEFFECTPLUGINATTACHTOCAMERA___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC2EC2E0)
+#define MOLEMOLE_MONOEFFECTPLUGINATTACHTOCAMERA___C_METHOD_1_41F2B3FE3FB78FC7_OFFSET UNITYSDK_OFFSET(0xB8C8810)
+#define MOLEMOLE_MONOEFFECTPLUGINATTACHTOCAMERA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB8C87D0)
+#define MOLEMOLE_MONOEFFECTPLUGINATTACHTOCAMERA___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB8C8800)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginAttachToCamera___c_TypeDefinitionIndex = 62232;
+	inline static constexpr unsigned int MonoEffectPluginAttachToCamera___c_TypeDefinitionIndex = 40387;
 
 	class MonoEffectPluginAttachToCamera___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::MonoEffectPluginAttachToCamera___c** StaticGet___9()
-		{
-			return (::MoleMole::MonoEffectPluginAttachToCamera___c**)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginAttachToCamera___c_TypeDefinitionIndex)->GetStaticField(0x2FC60);
-		}
 		static ::System::Comparison_1<::MoleMole::MonoEffectPluginAttachToCamera_AspectOffset>** StaticGet___9__28_0()
 		{
-			return (::System::Comparison_1<::MoleMole::MonoEffectPluginAttachToCamera_AspectOffset>**)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginAttachToCamera___c_TypeDefinitionIndex)->GetStaticField(0x2FC68);
+			return (::System::Comparison_1<::MoleMole::MonoEffectPluginAttachToCamera_AspectOffset>**)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginAttachToCamera___c_TypeDefinitionIndex)->GetStaticField(0x317C0);
+		}
+		static ::MoleMole::MonoEffectPluginAttachToCamera___c** StaticGet___9()
+		{
+			return (::MoleMole::MonoEffectPluginAttachToCamera___c**)Il2CppClass::FromTypeDefinitionIndex(MonoEffectPluginAttachToCamera___c_TypeDefinitionIndex)->GetStaticField(0x317C8);
 		}
 
 		static ::System::Void _cctor()

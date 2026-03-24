@@ -3,13 +3,13 @@
 #include "unitysdk/UnityEngine/AI/NavMeshBuildSourceShape.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_BATTLE_NAVMESHOBJECT_GET_SHAPE_OFFSET UNITYSDK_OFFSET(0x6532AC0)
-#define MOLEMOLE_BATTLE_NAVMESHOBJECT_METHOD_5_FA3C1CCB55854D63_OFFSET UNITYSDK_OFFSET(0x6532AF0)
-#define MOLEMOLE_BATTLE_NAVMESHOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x6532AD0)
+#define MOLEMOLE_BATTLE_NAVMESHOBJECT_GET_SHAPE_OFFSET UNITYSDK_OFFSET(0x81CCF40)
+#define MOLEMOLE_BATTLE_NAVMESHOBJECT_METHOD_5_FA3C1CCB55854D63_OFFSET UNITYSDK_OFFSET(0x81CCF70)
+#define MOLEMOLE_BATTLE_NAVMESHOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x81CCF50)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int NavmeshObject_TypeDefinitionIndex = 42670;
+	inline static constexpr unsigned int NavmeshObject_TypeDefinitionIndex = 74075;
 
 	class NavmeshObject : public ::UnityEngine::MonoBehaviour
 	{

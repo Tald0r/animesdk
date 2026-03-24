@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MessagePack/MessagePackReader.h"
 #include "unitysdk/MessagePack/MessagePackWriter.h"
-#include "unitysdk/Struct_2_00CDCC1C68AC93EE_1.h"
+#include "unitysdk/Struct_2_D19F1A95B589BD6B.h"
 #include "unitysdk/System/Object.h"
 
 namespace MessagePack { class MessagePackSerializerOptions; }
 
-#define CLASS_1_0848C6B16921C6FC_2_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x731B1C0)
-#define CLASS_1_0848C6B16921C6FC_2_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x731B120)
-#define CLASS_1_0848C6B16921C6FC_2__CTOR_OFFSET UNITYSDK_OFFSET(0x731B250)
+#define CLASS_1_0848C6B16921C6FC_2_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x63CA400)
+#define CLASS_1_0848C6B16921C6FC_2_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x63CA360)
+#define CLASS_1_0848C6B16921C6FC_2__CTOR_OFFSET UNITYSDK_OFFSET(0x63CA4B0)
 
-inline static constexpr unsigned int Class_1_0848C6B16921C6FC_2_TypeDefinitionIndex = 74509;
+inline static constexpr unsigned int Class_1_0848C6B16921C6FC_2_TypeDefinitionIndex = 57062;
 
 class Class_1_0848C6B16921C6FC_2 : public ::System::Object
 {
@@ -21,13 +21,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_0848C6B16921C6FC_2__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Serialize(::MessagePack::MessagePackWriter& a1, ::Struct_2_00CDCC1C68AC93EE_1 a2, ::MessagePack::MessagePackSerializerOptions* a3)
+	::System::Void Serialize(::MessagePack::MessagePackWriter& a1, ::Struct_2_D19F1A95B589BD6B a2, ::MessagePack::MessagePackSerializerOptions* a3)
 	{
-		return ((::System::Void(*)(::PVOID, ::MessagePack::MessagePackWriter&, ::Struct_2_00CDCC1C68AC93EE_1, ::MessagePack::MessagePackSerializerOptions*))((::PBYTE)hIl2Cpp + CLASS_1_0848C6B16921C6FC_2_SERIALIZE_OFFSET))(this, a1, a2, a3);
+		return ((::System::Void(*)(::PVOID, ::MessagePack::MessagePackWriter&, ::Struct_2_D19F1A95B589BD6B, ::MessagePack::MessagePackSerializerOptions*))((::PBYTE)hIl2Cpp + CLASS_1_0848C6B16921C6FC_2_SERIALIZE_OFFSET))(this, a1, a2, a3);
 	}
 
-	::Struct_2_00CDCC1C68AC93EE_1 Deserialize(::MessagePack::MessagePackReader& a1, ::MessagePack::MessagePackSerializerOptions* a2)
+	::Struct_2_D19F1A95B589BD6B Deserialize(::MessagePack::MessagePackReader& a1, ::MessagePack::MessagePackSerializerOptions* a2)
 	{
-		return ((::Struct_2_00CDCC1C68AC93EE_1(*)(::PVOID, ::MessagePack::MessagePackReader&, ::MessagePack::MessagePackSerializerOptions*))((::PBYTE)hIl2Cpp + CLASS_1_0848C6B16921C6FC_2_DESERIALIZE_OFFSET))(this, a1, a2);
+		return ((::Struct_2_D19F1A95B589BD6B(*)(::PVOID, ::MessagePack::MessagePackReader&, ::MessagePack::MessagePackSerializerOptions*))((::PBYTE)hIl2Cpp + CLASS_1_0848C6B16921C6FC_2_DESERIALIZE_OFFSET))(this, a1, a2);
 	}
 };

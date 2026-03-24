@@ -9,12 +9,12 @@ namespace System::IO { class Stream; }
 namespace System::Net { class HttpWebRequest; }
 namespace System::Net { class WebHeaderCollection; }
 
-#define SYSTEM_NET_WEBCONNECTIONDATA_GET_READSTATE_OFFSET UNITYSDK_OFFSET(0x1824D190)
-#define SYSTEM_NET_WEBCONNECTIONDATA_GET_REQUEST_OFFSET UNITYSDK_OFFSET(0x1824D170)
-#define SYSTEM_NET_WEBCONNECTIONDATA_SET_READSTATE_OFFSET UNITYSDK_OFFSET(0x1824D1A0)
-#define SYSTEM_NET_WEBCONNECTIONDATA_SET_REQUEST_OFFSET UNITYSDK_OFFSET(0x1824D180)
-#define SYSTEM_NET_WEBCONNECTIONDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1824D160)
-#define SYSTEM_NET_WEBCONNECTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1824D150)
+#define SYSTEM_NET_WEBCONNECTIONDATA_GET_READSTATE_OFFSET UNITYSDK_OFFSET(0x187E75D0)
+#define SYSTEM_NET_WEBCONNECTIONDATA_GET_REQUEST_OFFSET UNITYSDK_OFFSET(0x187E75B0)
+#define SYSTEM_NET_WEBCONNECTIONDATA_SET_READSTATE_OFFSET UNITYSDK_OFFSET(0x187E75E0)
+#define SYSTEM_NET_WEBCONNECTIONDATA_SET_REQUEST_OFFSET UNITYSDK_OFFSET(0x187E75C0)
+#define SYSTEM_NET_WEBCONNECTIONDATA__CTOR_1_OFFSET UNITYSDK_OFFSET(0x187E75A0)
+#define SYSTEM_NET_WEBCONNECTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x187E7590)
 
 namespace System::Net
 {
@@ -23,15 +23,15 @@ namespace System::Net
 	class WebConnectionData : public ::System::Object
 	{
 	public:
-		::System::Version* Version; // 0x10
+		::System::Net::HttpWebRequest* _request; // 0x10
 		::System::Version* ProxyVersion; // 0x18
-		::System::Net::HttpWebRequest* _request; // 0x20
+		::Il2CppArray<::System::String*>* Challenge; // 0x20
 		::System::IO::Stream* stream; // 0x28
-		::Il2CppArray<::System::String*>* Challenge; // 0x30
-		::System::Net::WebHeaderCollection* Headers; // 0x38
+		::System::Net::WebHeaderCollection* Headers; // 0x30
+		::System::Version* Version; // 0x38
 		::System::String* StatusDescription; // 0x40
-		::System::Int32 StatusCode; // 0x48
-		::System::Net::ReadState _readState; // 0x4C
+		::System::Net::ReadState _readState; // 0x48
+		::System::Int32 StatusCode; // 0x4C
 
 		::System::Void _ctor()
 		{

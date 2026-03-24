@@ -6,11 +6,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UITEXTLINK_CLASS_1_82AA3D510AE3F83B__CTOR_OFFSET UNITYSDK_OFFSET(0x9A25B90)
+#define MOLEMOLE_UITEXTLINK_CLASS_1_82AA3D510AE3F83B__CTOR_OFFSET UNITYSDK_OFFSET(0x7903640)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITextLink_Class_1_82AA3D510AE3F83B_TypeDefinitionIndex = 52861;
+	inline static constexpr unsigned int UITextLink_Class_1_82AA3D510AE3F83B_TypeDefinitionIndex = 44052;
 
 	class UITextLink_Class_1_82AA3D510AE3F83B : public ::System::Object
 	{

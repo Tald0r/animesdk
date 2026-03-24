@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Runtime::Serialization { class SerializationInfo; }
 
-#define SYSTEM_DATA_DUPLICATENAMEEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AADC220)
-#define SYSTEM_DATA_DUPLICATENAMEEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1AADC2C0)
-#define SYSTEM_DATA_DUPLICATENAMEEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AADC1D0)
+#define SYSTEM_DATA_DUPLICATENAMEEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B11B9B0)
+#define SYSTEM_DATA_DUPLICATENAMEEXCEPTION__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1B11BA50)
+#define SYSTEM_DATA_DUPLICATENAMEEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B11B960)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int DuplicateNameException_TypeDefinitionIndex = 35396;
+	inline static constexpr unsigned int DuplicateNameException_TypeDefinitionIndex = 36416;
 
 	class DuplicateNameException : public ::System::Data::DataException
 	{

@@ -8,25 +8,25 @@
 namespace Utf8Json { class IJsonFormatterResolver; }
 namespace Utf8Json { template <typename T> class IJsonFormatter_1; }
 
-#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B06E5F0)
-#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B06E0D0)
-#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B06EFB0)
-#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B06EFA0)
+#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B67C300)
+#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B67BDE0)
+#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B67CCC0)
+#define UTF8JSON_FORMATTERS_ISO8601TIMESPANFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B67CCB0)
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int ISO8601TimeSpanFormatter_TypeDefinitionIndex = 81966;
+	inline static constexpr unsigned int ISO8601TimeSpanFormatter_TypeDefinitionIndex = 84007;
 
 	class ISO8601TimeSpanFormatter : public ::System::Object
 	{
 	public:
-		static ::Utf8Json::IJsonFormatter_1<::System::TimeSpan>** StaticGet_Default()
-		{
-			return (::Utf8Json::IJsonFormatter_1<::System::TimeSpan>**)Il2CppClass::FromTypeDefinitionIndex(ISO8601TimeSpanFormatter_TypeDefinitionIndex)->GetStaticField(0x47230);
-		}
 		static ::Il2CppArray<::System::Byte>** StaticGet_minValue()
 		{
-			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(ISO8601TimeSpanFormatter_TypeDefinitionIndex)->GetStaticField(0x47238);
+			return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(ISO8601TimeSpanFormatter_TypeDefinitionIndex)->GetStaticField(0x48C40);
+		}
+		static ::Utf8Json::IJsonFormatter_1<::System::TimeSpan>** StaticGet_Default()
+		{
+			return (::Utf8Json::IJsonFormatter_1<::System::TimeSpan>**)Il2CppClass::FromTypeDefinitionIndex(ISO8601TimeSpanFormatter_TypeDefinitionIndex)->GetStaticField(0x48C48);
 		}
 
 		::System::Void _ctor()

@@ -5,12 +5,12 @@
 namespace System { template <typename T1, typename T2, typename T3> class Func_3; }
 namespace UnityEngine { class ScriptableObject; }
 
-#define UNITYENGINE_TIMELINE_TIMELINEASSET___C__DISPLAYCLASS61_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6CFD10)
-#define UNITYENGINE_TIMELINE_TIMELINEASSET___C__DISPLAYCLASS61_0__SORTTRACKS_B__0_OFFSET UNITYSDK_OFFSET(0x1A6D3E10)
+#define UNITYENGINE_TIMELINE_TIMELINEASSET___C__DISPLAYCLASS61_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC7AF60)
+#define UNITYENGINE_TIMELINE_TIMELINEASSET___C__DISPLAYCLASS61_0__SORTTRACKS_B__0_OFFSET UNITYSDK_OFFSET(0x1AC7F050)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimelineAsset___c__DisplayClass61_0_TypeDefinitionIndex = 29243;
+	inline static constexpr unsigned int TimelineAsset___c__DisplayClass61_0_TypeDefinitionIndex = 30196;
 
 	class TimelineAsset___c__DisplayClass61_0 : public ::System::Object
 	{

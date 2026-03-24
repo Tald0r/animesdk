@@ -5,7 +5,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int IAnimationLib_TypeDefinitionIndex = 49481;
+	inline static constexpr unsigned int IAnimationLib_TypeDefinitionIndex = 60095;
 
 	class IAnimationLib
 	{

@@ -11,20 +11,20 @@ namespace MoleMole { class UIMonsterFantasyRoleItemWidgetController; }
 namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEINANIMATION_D__36_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3F03D0)
-#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEINANIMATION_D__36_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEINANIMATION_D__36_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37F1C0)
+#define MOLEMOLE_UIMONSTERFANTASYROLEITEMWIDGETCONTROLLER__PLAYFADEINANIMATION_D__36_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyRoleItemWidgetController__PlayFadeInAnimation_d__36_TypeDefinitionIndex = 45160;
+	inline static constexpr unsigned int UIMonsterFantasyRoleItemWidgetController__PlayFadeInAnimation_d__36_TypeDefinitionIndex = 42508;
 
 	struct alignas(8) UIMonsterFantasyRoleItemWidgetController__PlayFadeInAnimation_d__36
 	{
-		::MoleMole::UIMonsterFantasyRoleItemWidgetController* __4__this; // 0x10
-		::System::String* key; // 0x18
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
+		::MoleMole::FadeAnimationData _fadeConfig_5__2; // 0x20
 		::System::Threading::CancellationToken token; // 0x30
-		::MoleMole::FadeAnimationData _fadeConfig_5__2; // 0x38
+		::MoleMole::UIMonsterFantasyRoleItemWidgetController* __4__this; // 0x38
+		::System::String* key; // 0x40
 		::System::Single _timeLeft_5__3; // 0x48
 		::Cysharp::Threading::Tasks::PlayerLoopTiming timing; // 0x4C
 		::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter __u__1; // 0x50

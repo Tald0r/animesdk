@@ -29,96 +29,96 @@ namespace System::Security::Cryptography { class SHA1; }
 namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class Object; }
 
-#define BINARYDESERIALIZATION_BYTESTOANIMATIONCURVE_OFFSET UNITYSDK_OFFSET(0x19E8D540)
-#define BINARYDESERIALIZATION_BYTESTOBOOL_OFFSET UNITYSDK_OFFSET(0x19E8CBB0)
-#define BINARYDESERIALIZATION_BYTESTOBYTE_OFFSET UNITYSDK_OFFSET(0x19E8CC00)
-#define BINARYDESERIALIZATION_BYTESTOCOLOR_OFFSET UNITYSDK_OFFSET(0x19E8D0D0)
-#define BINARYDESERIALIZATION_BYTESTODOUBLE_OFFSET UNITYSDK_OFFSET(0x19E8C9F0)
-#define BINARYDESERIALIZATION_BYTESTOFLOAT_OFFSET UNITYSDK_OFFSET(0x19E8C8E0)
-#define BINARYDESERIALIZATION_BYTESTOINT_OFFSET UNITYSDK_OFFSET(0x19E8C0C0)
-#define BINARYDESERIALIZATION_BYTESTOLAYERMASK_OFFSET UNITYSDK_OFFSET(0x19E8D7A0)
-#define BINARYDESERIALIZATION_BYTESTOLONG_OFFSET UNITYSDK_OFFSET(0x19E8CB00)
-#define BINARYDESERIALIZATION_BYTESTOMATRIX4X4_OFFSET UNITYSDK_OFFSET(0x19E8D280)
-#define BINARYDESERIALIZATION_BYTESTOQUATERNION_OFFSET UNITYSDK_OFFSET(0x19E8CFF0)
-#define BINARYDESERIALIZATION_BYTESTORECT_OFFSET UNITYSDK_OFFSET(0x19E8D1B0)
-#define BINARYDESERIALIZATION_BYTESTOSHAREDVARIABLE_OFFSET UNITYSDK_OFFSET(0x19E87520)
-#define BINARYDESERIALIZATION_BYTESTOSTRING_OFFSET UNITYSDK_OFFSET(0x19E8C240)
-#define BINARYDESERIALIZATION_BYTESTOUINT_OFFSET UNITYSDK_OFFSET(0x19E8C5E0)
-#define BINARYDESERIALIZATION_BYTESTOULONG_OFFSET UNITYSDK_OFFSET(0x19E8C6F0)
-#define BINARYDESERIALIZATION_BYTESTOUSHORT_OFFSET UNITYSDK_OFFSET(0x19E8C800)
-#define BINARYDESERIALIZATION_BYTESTOVECTOR2INT_OFFSET UNITYSDK_OFFSET(0x19E8CD10)
-#define BINARYDESERIALIZATION_BYTESTOVECTOR2_OFFSET UNITYSDK_OFFSET(0x19E8CC70)
-#define BINARYDESERIALIZATION_BYTESTOVECTOR3INT_OFFSET UNITYSDK_OFFSET(0x19E8CE60)
-#define BINARYDESERIALIZATION_BYTESTOVECTOR3_OFFSET UNITYSDK_OFFSET(0x19E8CD90)
-#define BINARYDESERIALIZATION_BYTESTOVECTOR4_OFFSET UNITYSDK_OFFSET(0x19E8CF10)
-#define BINARYDESERIALIZATION_CRC32_OFFSET UNITYSDK_OFFSET(0x19E8D810)
-#define BINARYDESERIALIZATION_GETFIELDSIZE_OFFSET UNITYSDK_OFFSET(0x19E8C1A0)
-#define BINARYDESERIALIZATION_GET_BIGENDIANEIGHTBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x19E87370)
-#define BINARYDESERIALIZATION_GET_BIGENDIANFOURBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x19E87240)
-#define BINARYDESERIALIZATION_INDEXTOUNITYOBJECT_OFFSET UNITYSDK_OFFSET(0x19E8C4A0)
-#define BINARYDESERIALIZATION_LOADFIELDS_OFFSET UNITYSDK_OFFSET(0x19E8B820)
-#define BINARYDESERIALIZATION_LOADFIELD_OFFSET UNITYSDK_OFFSET(0x19E894A0)
-#define BINARYDESERIALIZATION_LOADTASK_OFFSET UNITYSDK_OFFSET(0x19E87ED0)
-#define BINARYDESERIALIZATION_LOAD_1_OFFSET UNITYSDK_OFFSET(0x19E74870)
-#define BINARYDESERIALIZATION_LOAD_2_OFFSET UNITYSDK_OFFSET(0x19E88A10)
-#define BINARYDESERIALIZATION_LOAD_OFFSET UNITYSDK_OFFSET(0x19E874A0)
-#define BINARYDESERIALIZATION_SET_BIGENDIANEIGHTBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x19E87460)
-#define BINARYDESERIALIZATION_SET_BIGENDIANFOURBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x19E87330)
-#define BINARYDESERIALIZATION_STRINGHASH_OFFSET UNITYSDK_OFFSET(0x19E8BD90)
-#define BINARYDESERIALIZATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E8D990)
+#define BINARYDESERIALIZATION_BYTESTOANIMATIONCURVE_OFFSET UNITYSDK_OFFSET(0x1A4B1360)
+#define BINARYDESERIALIZATION_BYTESTOBOOL_OFFSET UNITYSDK_OFFSET(0x1A4B09D0)
+#define BINARYDESERIALIZATION_BYTESTOBYTE_OFFSET UNITYSDK_OFFSET(0x1A4B0A20)
+#define BINARYDESERIALIZATION_BYTESTOCOLOR_OFFSET UNITYSDK_OFFSET(0x1A4B0EF0)
+#define BINARYDESERIALIZATION_BYTESTODOUBLE_OFFSET UNITYSDK_OFFSET(0x1A4B0810)
+#define BINARYDESERIALIZATION_BYTESTOFLOAT_OFFSET UNITYSDK_OFFSET(0x1A4B0700)
+#define BINARYDESERIALIZATION_BYTESTOINT_OFFSET UNITYSDK_OFFSET(0x1A4AFEE0)
+#define BINARYDESERIALIZATION_BYTESTOLAYERMASK_OFFSET UNITYSDK_OFFSET(0x1A4B15C0)
+#define BINARYDESERIALIZATION_BYTESTOLONG_OFFSET UNITYSDK_OFFSET(0x1A4B0920)
+#define BINARYDESERIALIZATION_BYTESTOMATRIX4X4_OFFSET UNITYSDK_OFFSET(0x1A4B10A0)
+#define BINARYDESERIALIZATION_BYTESTOQUATERNION_OFFSET UNITYSDK_OFFSET(0x1A4B0E10)
+#define BINARYDESERIALIZATION_BYTESTORECT_OFFSET UNITYSDK_OFFSET(0x1A4B0FD0)
+#define BINARYDESERIALIZATION_BYTESTOSHAREDVARIABLE_OFFSET UNITYSDK_OFFSET(0x1A4AB340)
+#define BINARYDESERIALIZATION_BYTESTOSTRING_OFFSET UNITYSDK_OFFSET(0x1A4B0060)
+#define BINARYDESERIALIZATION_BYTESTOUINT_OFFSET UNITYSDK_OFFSET(0x1A4B0400)
+#define BINARYDESERIALIZATION_BYTESTOULONG_OFFSET UNITYSDK_OFFSET(0x1A4B0510)
+#define BINARYDESERIALIZATION_BYTESTOUSHORT_OFFSET UNITYSDK_OFFSET(0x1A4B0620)
+#define BINARYDESERIALIZATION_BYTESTOVECTOR2INT_OFFSET UNITYSDK_OFFSET(0x1A4B0B30)
+#define BINARYDESERIALIZATION_BYTESTOVECTOR2_OFFSET UNITYSDK_OFFSET(0x1A4B0A90)
+#define BINARYDESERIALIZATION_BYTESTOVECTOR3INT_OFFSET UNITYSDK_OFFSET(0x1A4B0C80)
+#define BINARYDESERIALIZATION_BYTESTOVECTOR3_OFFSET UNITYSDK_OFFSET(0x1A4B0BB0)
+#define BINARYDESERIALIZATION_BYTESTOVECTOR4_OFFSET UNITYSDK_OFFSET(0x1A4B0D30)
+#define BINARYDESERIALIZATION_CRC32_OFFSET UNITYSDK_OFFSET(0x1A4B1630)
+#define BINARYDESERIALIZATION_GETFIELDSIZE_OFFSET UNITYSDK_OFFSET(0x1A4AFFC0)
+#define BINARYDESERIALIZATION_GET_BIGENDIANEIGHTBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x1A4AB190)
+#define BINARYDESERIALIZATION_GET_BIGENDIANFOURBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x1A4AB060)
+#define BINARYDESERIALIZATION_INDEXTOUNITYOBJECT_OFFSET UNITYSDK_OFFSET(0x1A4B02C0)
+#define BINARYDESERIALIZATION_LOADFIELDS_OFFSET UNITYSDK_OFFSET(0x1A4AF640)
+#define BINARYDESERIALIZATION_LOADFIELD_OFFSET UNITYSDK_OFFSET(0x1A4AD2C0)
+#define BINARYDESERIALIZATION_LOADTASK_OFFSET UNITYSDK_OFFSET(0x1A4ABCF0)
+#define BINARYDESERIALIZATION_LOAD_1_OFFSET UNITYSDK_OFFSET(0x1A4986B0)
+#define BINARYDESERIALIZATION_LOAD_2_OFFSET UNITYSDK_OFFSET(0x1A4AC830)
+#define BINARYDESERIALIZATION_LOAD_OFFSET UNITYSDK_OFFSET(0x1A4AB2C0)
+#define BINARYDESERIALIZATION_SET_BIGENDIANEIGHTBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x1A4AB280)
+#define BINARYDESERIALIZATION_SET_BIGENDIANFOURBYTEARRAY_OFFSET UNITYSDK_OFFSET(0x1A4AB150)
+#define BINARYDESERIALIZATION_STRINGHASH_OFFSET UNITYSDK_OFFSET(0x1A4AFBB0)
+#define BINARYDESERIALIZATION__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A4B17B0)
 
-inline static constexpr unsigned int BinaryDeserialization_TypeDefinitionIndex = 30174;
+inline static constexpr unsigned int BinaryDeserialization_TypeDefinitionIndex = 31127;
 
 class BinaryDeserialization : public ::System::Object
 {
 public:
-	static ::Il2CppArray<::System::Byte>** StaticGet_sBigEndianFourByteArray()
+	static ::Il2CppArray<::System::Byte>** StaticGet_sBigEndianEightByteArray()
 	{
-		return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23620);
-	}
-	static ::System::Security::Cryptography::SHA1** StaticGet_shaHash()
-	{
-		return (::System::Security::Cryptography::SHA1**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23628);
-	}
-	static ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::String*>** StaticGet_stringCache()
-	{
-		return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23630);
+		return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F40);
 	}
 	static ::BehaviorDesigner::Runtime::GlobalVariables** StaticGet_globalVariables()
 	{
-		return (::BehaviorDesigner::Runtime::GlobalVariables**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23638);
+		return (::BehaviorDesigner::Runtime::GlobalVariables**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F48);
 	}
 	static ::Il2CppArray<::System::UInt32>** StaticGet_crcTable()
 	{
-		return (::Il2CppArray<::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23640);
+		return (::Il2CppArray<::System::UInt32>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F50);
 	}
 	static ::System::Collections::Generic::Dictionary_2<::BinaryDeserialization_ObjectFieldMap*, ::System::Collections::Generic::List_1<::System::Int32>*>** StaticGet_taskIDs()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::BinaryDeserialization_ObjectFieldMap*, ::System::Collections::Generic::List_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23648);
+		return (::System::Collections::Generic::Dictionary_2<::BinaryDeserialization_ObjectFieldMap*, ::System::Collections::Generic::List_1<::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F58);
 	}
-	static ::Il2CppArray<::System::Byte>** StaticGet_sBigEndianEightByteArray()
+	static ::Il2CppArray<::System::Byte>** StaticGet_sBigEndianFourByteArray()
 	{
-		return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x23650);
+		return (::Il2CppArray<::System::Byte>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F60);
+	}
+	static ::System::Security::Cryptography::SHA1** StaticGet_shaHash()
+	{
+		return (::System::Security::Cryptography::SHA1**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F68);
+	}
+	static ::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::String*>** StaticGet_stringCache()
+	{
+		return (::System::Collections::Generic::Dictionary_2<::System::UInt32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x24F70);
 	}
 	static ::System::Int32* StaticGet_animationCurveAdvance()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7970);
-	}
-	static ::System::Boolean* StaticGet_enumSerialization()
-	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7974);
-	}
-	static ::System::Boolean* StaticGet_strHashSerialization()
-	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7975);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7CA0);
 	}
 	static ::System::Boolean* StaticGet_updatedSerialization()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7976);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7CA4);
+	}
+	static ::System::Boolean* StaticGet_strHashSerialization()
+	{
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7CA5);
 	}
 	static ::System::Boolean* StaticGet_shaHashSerialization()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7977);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7CA6);
+	}
+	static ::System::Boolean* StaticGet_enumSerialization()
+	{
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(BinaryDeserialization_TypeDefinitionIndex)->GetStaticField(0x7CA7);
 	}
 
 	static ::System::Void _cctor()

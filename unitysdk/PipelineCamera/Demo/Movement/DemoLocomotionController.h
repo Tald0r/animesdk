@@ -11,11 +11,11 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace UnityEngine { class Camera; }
 namespace UnityEngine { class CharacterController; }
 
-#define PIPELINECAMERA_DEMO_MOVEMENT_DEMOLOCOMOTIONCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF3F690)
+#define PIPELINECAMERA_DEMO_MOVEMENT_DEMOLOCOMOTIONCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B565A70)
 
 namespace PipelineCamera::Demo::Movement
 {
-	inline static constexpr unsigned int DemoLocomotionController_TypeDefinitionIndex = 34606;
+	inline static constexpr unsigned int DemoLocomotionController_TypeDefinitionIndex = 35608;
 
 	class DemoLocomotionController : public ::UnityEngine::MonoBehaviour
 	{

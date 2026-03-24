@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIUrbanMapRightWidgetController.h"
 
-#define MOLEMOLE_UIGRANDMARCELMAPRIGHTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7CFDC80)
+#define MOLEMOLE_UIGRANDMARCELMAPRIGHTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x912C950)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelMapRightWidgetController_TypeDefinitionIndex = 51548;
+	inline static constexpr unsigned int UIGrandMarcelMapRightWidgetController_TypeDefinitionIndex = 59956;
 
 	class UIGrandMarcelMapRightWidgetController : public ::MoleMole::UIUrbanMapRightWidgetController
 	{

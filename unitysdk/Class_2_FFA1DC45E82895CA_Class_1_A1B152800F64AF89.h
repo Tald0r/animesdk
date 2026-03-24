@@ -7,16 +7,16 @@ namespace MoleMole { class UIControllerContextBase; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_2_FFA1DC45E82895CA_CLASS_1_A1B152800F64AF89__CTOR_OFFSET UNITYSDK_OFFSET(0x8CA1FE0)
+#define CLASS_2_FFA1DC45E82895CA_CLASS_1_A1B152800F64AF89__CTOR_OFFSET UNITYSDK_OFFSET(0xAC9F790)
 
-inline static constexpr unsigned int Class_2_FFA1DC45E82895CA_Class_1_A1B152800F64AF89_TypeDefinitionIndex = 68250;
+inline static constexpr unsigned int Class_2_FFA1DC45E82895CA_Class_1_A1B152800F64AF89_TypeDefinitionIndex = 57743;
 
 class Class_2_FFA1DC45E82895CA_Class_1_A1B152800F64AF89 : public ::System::Object
 {
 public:
 	::MoleMole::UIControllerContextBase* Field_1_1; // 0x10
-	::System::String* Field_1_0; // 0x18
-	::System::Action_1<::MoleMole::UIBaseController*>* Field_1_2; // 0x20
+	::System::Action_1<::MoleMole::UIBaseController*>* Field_1_2; // 0x18
+	::System::String* Field_1_0; // 0x20
 
 	::System::Void _ctor()
 	{

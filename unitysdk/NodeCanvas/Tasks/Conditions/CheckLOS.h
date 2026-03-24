@@ -10,20 +10,20 @@ namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19C873E0)
-#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19C87440)
-#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x19C87890)
-#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS__CTOR_OFFSET UNITYSDK_OFFSET(0x19C87B00)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A228BB0)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A228C10)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1A229060)
+#define NODECANVAS_TASKS_CONDITIONS_CHECKLOS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2292D0)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int CheckLOS_TypeDefinitionIndex = 26215;
+	inline static constexpr unsigned int CheckLOS_TypeDefinitionIndex = 27548;
 
 	class CheckLOS : public ::NodeCanvas::Framework::ConditionTask_1<::UnityEngine::Transform*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* LOSTarget; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* saveDistanceAs; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* saveDistanceAs; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* LOSTarget; // 0x68
 		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::LayerMask>* layerMask; // 0x70
 		::UnityEngine::Vector3 offset; // 0x78
 		::UnityEngine::RaycastHit hit; // 0x84

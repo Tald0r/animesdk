@@ -6,18 +6,18 @@ namespace MoleMole { class UIComicPageController; }
 namespace MoleMole::Comic { class MonoComicBubble; }
 namespace MoleMole::Comic { class MonoComicEventBase; }
 
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA336DD0)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_0__HIDEEVENT_B__0_OFFSET UNITYSDK_OFFSET(0xA336DE0)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD0FDC00)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_0__HIDEEVENT_B__0_OFFSET UNITYSDK_OFFSET(0xD0FDC10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicPageController___c__DisplayClass387_0_TypeDefinitionIndex = 45651;
+	inline static constexpr unsigned int UIComicPageController___c__DisplayClass387_0_TypeDefinitionIndex = 62542;
 
 	class UIComicPageController___c__DisplayClass387_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIComicPageController* __4__this; // 0x10
-		::MoleMole::Comic::MonoComicEventBase* curEvent; // 0x18
+		::MoleMole::Comic::MonoComicEventBase* curEvent; // 0x10
+		::MoleMole::UIComicPageController* __4__this; // 0x18
 		::MoleMole::Comic::MonoComicBubble* bubbleEvent; // 0x20
 
 		::System::Void _ctor()

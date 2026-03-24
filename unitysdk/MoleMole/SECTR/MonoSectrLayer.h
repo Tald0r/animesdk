@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_73954AF3A8FEBBA4.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_SECTR_MONOSECTRLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0xB2FD990)
+#define MOLEMOLE_SECTR_MONOSECTRLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0xB872360)
 
 namespace MoleMole::SECTR
 {
-	inline static constexpr unsigned int MonoSectrLayer_TypeDefinitionIndex = 40984;
+	inline static constexpr unsigned int MonoSectrLayer_TypeDefinitionIndex = 40127;
 
 	class MonoSectrLayer : public ::UnityEngine::MonoBehaviour
 	{

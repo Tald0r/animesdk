@@ -7,13 +7,13 @@ namespace Mono::Security::Protocol::Tls { class Context; }
 namespace System { class String; }
 namespace System::Collections { class Hashtable; }
 
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_ADD_OFFSET UNITYSDK_OFFSET(0x1AFE0990)
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_FROMCONTEXT_OFFSET UNITYSDK_OFFSET(0x1AFE1410)
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_FROMHOST_OFFSET UNITYSDK_OFFSET(0x1AFE0D90)
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_SETCONTEXTFROMCACHE_OFFSET UNITYSDK_OFFSET(0x1AFE1840)
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_SETCONTEXTINCACHE_OFFSET UNITYSDK_OFFSET(0x1AFE16D0)
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AFE08F0)
-#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFE19B0)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_ADD_OFFSET UNITYSDK_OFFSET(0x1B5F3660)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_FROMCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B5F40D0)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_FROMHOST_OFFSET UNITYSDK_OFFSET(0x1B5F3A50)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_SETCONTEXTFROMCACHE_OFFSET UNITYSDK_OFFSET(0x1B5F4500)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE_SETCONTEXTINCACHE_OFFSET UNITYSDK_OFFSET(0x1B5F4390)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B5F35C0)
+#define MONO_SECURITY_PROTOCOL_TLS_CLIENTSESSIONCACHE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5F4670)
 
 namespace Mono::Security::Protocol::Tls
 {
@@ -22,13 +22,13 @@ namespace Mono::Security::Protocol::Tls
 	class ClientSessionCache : public ::System::Object
 	{
 	public:
-		static ::System::Object** StaticGet_locker()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(ClientSessionCache_TypeDefinitionIndex)->GetStaticField(0x2370);
-		}
 		static ::System::Collections::Hashtable** StaticGet_cache()
 		{
-			return (::System::Collections::Hashtable**)Il2CppClass::FromTypeDefinitionIndex(ClientSessionCache_TypeDefinitionIndex)->GetStaticField(0x2378);
+			return (::System::Collections::Hashtable**)Il2CppClass::FromTypeDefinitionIndex(ClientSessionCache_TypeDefinitionIndex)->GetStaticField(0x2370);
+		}
+		static ::System::Object** StaticGet_locker()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(ClientSessionCache_TypeDefinitionIndex)->GetStaticField(0x2378);
 		}
 
 		static ::System::Void _cctor()

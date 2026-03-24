@@ -5,12 +5,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCHANGEENTITYROTATION_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC74B20)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCHANGEENTITYROTATION__CTOR_OFFSET UNITYSDK_OFFSET(0xEC74D30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCHANGEENTITYROTATION_INVOKE_OFFSET UNITYSDK_OFFSET(0x7573610)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCHANGEENTITYROTATION__CTOR_OFFSET UNITYSDK_OFFSET(0x7573820)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDChangeEntityRotation_TypeDefinitionIndex = 67699;
+	inline static constexpr unsigned int LDChangeEntityRotation_TypeDefinitionIndex = 39335;
 
 	class LDChangeEntityRotation : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::System::Boolean, ::MoleMole::Battle::Entity*, ::UnityEngine::Vector3>
 	{

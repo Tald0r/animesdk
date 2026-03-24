@@ -6,12 +6,12 @@
 class Class_2_777A5D016ADC7368;
 namespace UnityEngine::UI { class Image; }
 
-#define MOLEMOLE_MONOSURFSINGLEDIGIT_SETVALUE_OFFSET UNITYSDK_OFFSET(0xB3BC620)
-#define MOLEMOLE_MONOSURFSINGLEDIGIT__CTOR_OFFSET UNITYSDK_OFFSET(0xB3BC6F0)
+#define MOLEMOLE_MONOSURFSINGLEDIGIT_SETVALUE_OFFSET UNITYSDK_OFFSET(0xA6540C0)
+#define MOLEMOLE_MONOSURFSINGLEDIGIT__CTOR_OFFSET UNITYSDK_OFFSET(0xA654190)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoSurfSingleDigit_TypeDefinitionIndex = 73744;
+	inline static constexpr unsigned int MonoSurfSingleDigit_TypeDefinitionIndex = 68807;
 
 	class MonoSurfSingleDigit : public ::UnityEngine::MonoBehaviour
 	{

@@ -5,18 +5,18 @@
 namespace MoleMole { class UIGeneralToggleWidgetController; }
 namespace MoleMole { class UISuibianTempleHiveBoxPageController; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER___C__DISPLAYCLASS21_0__BIND_B__0_OFFSET UNITYSDK_OFFSET(0xBEC0030)
-#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBEC0020)
+#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER___C__DISPLAYCLASS21_0__BIND_B__0_OFFSET UNITYSDK_OFFSET(0xA6B4CD0)
+#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA6B4CC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleHiveBoxPageController___c__DisplayClass21_0_TypeDefinitionIndex = 46565;
+	inline static constexpr unsigned int UISuibianTempleHiveBoxPageController___c__DisplayClass21_0_TypeDefinitionIndex = 45253;
 
 	class UISuibianTempleHiveBoxPageController___c__DisplayClass21_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIGeneralToggleWidgetController* toggle; // 0x10
-		::MoleMole::UISuibianTempleHiveBoxPageController* __4__this; // 0x18
+		::MoleMole::UISuibianTempleHiveBoxPageController* __4__this; // 0x10
+		::MoleMole::UIGeneralToggleWidgetController* toggle; // 0x18
 
 		::System::Void _ctor()
 		{

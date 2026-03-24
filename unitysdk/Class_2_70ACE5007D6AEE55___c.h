@@ -5,22 +5,22 @@
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class RectTransform; }
 
-#define CLASS_2_70ACE5007D6AEE55___C_METHOD_1_40229E55B18360C7_OFFSET UNITYSDK_OFFSET(0x7FE0B30)
-#define CLASS_2_70ACE5007D6AEE55___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7FE0AE0)
-#define CLASS_2_70ACE5007D6AEE55___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7FE0B20)
+#define CLASS_2_70ACE5007D6AEE55___C_METHOD_1_40229E55B18360C7_OFFSET UNITYSDK_OFFSET(0x75FFB40)
+#define CLASS_2_70ACE5007D6AEE55___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x75FFAF0)
+#define CLASS_2_70ACE5007D6AEE55___C__CTOR_OFFSET UNITYSDK_OFFSET(0x75FFB30)
 
-inline static constexpr unsigned int Class_2_70ACE5007D6AEE55___c_TypeDefinitionIndex = 67505;
+inline static constexpr unsigned int Class_2_70ACE5007D6AEE55___c_TypeDefinitionIndex = 57866;
 
 class Class_2_70ACE5007D6AEE55___c : public ::System::Object
 {
 public:
 	static ::Class_2_70ACE5007D6AEE55___c** StaticGet___9()
 	{
-		return (::Class_2_70ACE5007D6AEE55___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_70ACE5007D6AEE55___c_TypeDefinitionIndex)->GetStaticField(0x2DBF0);
+		return (::Class_2_70ACE5007D6AEE55___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_70ACE5007D6AEE55___c_TypeDefinitionIndex)->GetStaticField(0x37C70);
 	}
 	static ::System::Action_1<::UnityEngine::RectTransform*>** StaticGet___9__12_0()
 	{
-		return (::System::Action_1<::UnityEngine::RectTransform*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_70ACE5007D6AEE55___c_TypeDefinitionIndex)->GetStaticField(0x2DBF8);
+		return (::System::Action_1<::UnityEngine::RectTransform*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_70ACE5007D6AEE55___c_TypeDefinitionIndex)->GetStaticField(0x37C78);
 	}
 
 	static ::System::Void _cctor()

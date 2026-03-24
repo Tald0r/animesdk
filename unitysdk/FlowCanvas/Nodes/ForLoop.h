@@ -4,22 +4,22 @@
 
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define FLOWCANVAS_NODES_FORLOOP_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A261190)
-#define FLOWCANVAS_NODES_FORLOOP__CTOR_OFFSET UNITYSDK_OFFSET(0x1A261360)
+#define FLOWCANVAS_NODES_FORLOOP_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A828AC0)
+#define FLOWCANVAS_NODES_FORLOOP__CTOR_OFFSET UNITYSDK_OFFSET(0x1A828CA0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ForLoop_TypeDefinitionIndex = 26455;
+	inline static constexpr unsigned int ForLoop_TypeDefinitionIndex = 26450;
 
 	class ForLoop : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::ValueInput_1<::System::Int32>* first; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Int32>* last; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Int32>* step; // 0xB8
-		::System::Boolean broken; // 0xC0
-		::System::Boolean reverse; // 0xC1
-		::System::Int32 current; // 0xC4
+		::FlowCanvas::ValueInput_1<::System::Int32>* step; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Int32>* last; // 0xB8
+		::System::Int32 current; // 0xC0
+		::System::Boolean reverse; // 0xC4
+		::System::Boolean broken; // 0xC5
 
 		::System::Void _ctor()
 		{

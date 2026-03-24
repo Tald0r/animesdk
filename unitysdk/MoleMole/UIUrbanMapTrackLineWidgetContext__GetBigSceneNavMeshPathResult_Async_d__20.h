@@ -10,19 +10,19 @@ namespace MoleMole { class UIUrbanMapTrackLineWidgetContext; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIURBANMAPTRACKLINEWIDGETCONTEXT__GETBIGSCENENAVMESHPATHRESULT_ASYNC_D__20_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x36E150)
-#define MOLEMOLE_UIURBANMAPTRACKLINEWIDGETCONTEXT__GETBIGSCENENAVMESHPATHRESULT_ASYNC_D__20_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIURBANMAPTRACKLINEWIDGETCONTEXT__GETBIGSCENENAVMESHPATHRESULT_ASYNC_D__20_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x358570)
+#define MOLEMOLE_UIURBANMAPTRACKLINEWIDGETCONTEXT__GETBIGSCENENAVMESHPATHRESULT_ASYNC_D__20_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapTrackLineWidgetContext__GetBigSceneNavMeshPathResult_Async_d__20_TypeDefinitionIndex = 62892;
+	inline static constexpr unsigned int UIUrbanMapTrackLineWidgetContext__GetBigSceneNavMeshPathResult_Async_d__20_TypeDefinitionIndex = 45728;
 
 	struct alignas(8) UIUrbanMapTrackLineWidgetContext__GetBigSceneNavMeshPathResult_Async_d__20
 	{
 		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::Boolean> __u__1; // 0x10
-		::System::Collections::Generic::List_1<::UnityEngine::Vector3>* paths; // 0x20
-		::Foundation::ObjectArrayPool_1_ObjectHandler_1<::UnityEngine::Vector3, ::UnityEngine::Vector3> _tempCornersHandle_5__2; // 0x28
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::Boolean> __t__builder; // 0x30
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::System::Boolean> __t__builder; // 0x20
+		::Foundation::ObjectArrayPool_1_ObjectHandler_1<::UnityEngine::Vector3, ::UnityEngine::Vector3> _tempCornersHandle_5__2; // 0x38
+		::System::Collections::Generic::List_1<::UnityEngine::Vector3>* paths; // 0x40
 		::MoleMole::UIUrbanMapTrackLineWidgetContext* __4__this; // 0x48
 		::UnityEngine::Vector3 targetPos; // 0x50
 		::UnityEngine::Vector3 playerPosVal; // 0x5C

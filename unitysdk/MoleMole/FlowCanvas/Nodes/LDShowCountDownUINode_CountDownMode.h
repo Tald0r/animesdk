@@ -3,7 +3,7 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDShowCountDownUINode_CountDownMode_TypeDefinitionIndex = 39343;
+	inline static constexpr unsigned int LDShowCountDownUINode_CountDownMode_TypeDefinitionIndex = 41143;
 
 	enum class LDShowCountDownUINode_CountDownMode : ::System::Int32
 	{

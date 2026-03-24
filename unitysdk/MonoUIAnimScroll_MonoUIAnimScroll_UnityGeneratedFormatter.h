@@ -10,28 +10,28 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class Action; }
 
-#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7C706F0)
-#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7C70700)
-#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7C70C80)
-#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7C71010)
-#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7C70FD0)
+#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xA6E62D0)
+#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xA6E62E0)
+#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xA6E6860)
+#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xA6E6BF0)
+#define MONOUIANIMSCROLL_MONOUIANIMSCROLL_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xA6E6BB0)
 
-inline static constexpr unsigned int MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex = 44084;
+inline static constexpr unsigned int MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex = 51770;
 
 class MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MonoUIAnimScroll*>
 {
 public:
-	static ::Sirenix::Serialization::Serializer_1<::System::Action*>** StaticGet_CachedSerializer0()
+	static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Action*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x436F0);
+		return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46140);
 	}
 	static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>** StaticGet_CachedSerializer2()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x436F8);
+		return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46148);
 	}
-	static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
+	static ::Sirenix::Serialization::Serializer_1<::System::Action*>** StaticGet_CachedSerializer0()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43700);
+		return (::Sirenix::Serialization::Serializer_1<::System::Action*>**)Il2CppClass::FromTypeDefinitionIndex(MonoUIAnimScroll_MonoUIAnimScroll_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46150);
 	}
 
 	::System::Void _ctor()

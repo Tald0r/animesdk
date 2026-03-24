@@ -7,12 +7,12 @@ namespace MoleMole::Config { class AnimatorEventTriggerAbilityEntry_AbilitySpeci
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERABILITYENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0x9B51BF0)
-#define MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERABILITYENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x9B51C90)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERABILITYENTRY_CREATEANIMATIONEVENT_OFFSET UNITYSDK_OFFSET(0xB460F50)
+#define MOLEMOLE_CONFIG_ANIMATOREVENTTRIGGERABILITYENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xB460FF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorEventTriggerAbilityEntry_TypeDefinitionIndex = 66737;
+	inline static constexpr unsigned int AnimatorEventTriggerAbilityEntry_TypeDefinitionIndex = 70403;
 
 	class AnimatorEventTriggerAbilityEntry : public ::MoleMole::Config::AnimatorEventEntry
 	{

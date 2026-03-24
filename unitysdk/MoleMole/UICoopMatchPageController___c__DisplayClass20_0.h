@@ -6,18 +6,18 @@
 namespace MoleMole { class UICoopMatchPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UICOOPMATCHPAGECONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA33C6D0)
-#define MOLEMOLE_UICOOPMATCHPAGECONTROLLER___C__DISPLAYCLASS20_0__REFRESHTABANIM_B__0_OFFSET UNITYSDK_OFFSET(0xA33F220)
+#define MOLEMOLE_UICOOPMATCHPAGECONTROLLER___C__DISPLAYCLASS20_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD1066F0)
+#define MOLEMOLE_UICOOPMATCHPAGECONTROLLER___C__DISPLAYCLASS20_0__REFRESHTABANIM_B__0_OFFSET UNITYSDK_OFFSET(0xD109210)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopMatchPageController___c__DisplayClass20_0_TypeDefinitionIndex = 58239;
+	inline static constexpr unsigned int UICoopMatchPageController___c__DisplayClass20_0_TypeDefinitionIndex = 74030;
 
 	class UICoopMatchPageController___c__DisplayClass20_0 : public ::System::Object
 	{
 	public:
-		::System::Action* fadeOutCallBack; // 0x10
-		::MoleMole::UICoopMatchPageController* __4__this; // 0x18
+		::MoleMole::UICoopMatchPageController* __4__this; // 0x10
+		::System::Action* fadeOutCallBack; // 0x18
 		::MoleMole::UICoopMatchPageController_LevelTabStatus newSubType; // 0x20
 
 		::System::Void _ctor()

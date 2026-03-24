@@ -25,7 +25,7 @@ namespace System::Linq::Expressions { template <typename T> class Expression_1; 
 
 namespace SQLite
 {
-	inline static constexpr unsigned int ISQLiteConnection_TypeDefinitionIndex = 35209;
+	inline static constexpr unsigned int ISQLiteConnection_TypeDefinitionIndex = 36211;
 
 	class ISQLiteConnection
 	{

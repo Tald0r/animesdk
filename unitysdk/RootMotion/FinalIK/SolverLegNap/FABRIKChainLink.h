@@ -5,7 +5,7 @@
 
 namespace RootMotion::FinalIK::SolverLegNap
 {
-	inline static constexpr unsigned int FABRIKChainLink_TypeDefinitionIndex = 35196;
+	inline static constexpr unsigned int FABRIKChainLink_TypeDefinitionIndex = 36198;
 
 	struct alignas(4) FABRIKChainLink
 	{

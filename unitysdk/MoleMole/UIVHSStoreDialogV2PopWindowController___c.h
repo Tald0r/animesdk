@@ -5,24 +5,24 @@
 namespace MoleMole { class UIVHSStorePicBtnWidgetController_Data; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xACDBF70)
-#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xACDBFB0)
-#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___C__INITDATA_B__21_0_OFFSET UNITYSDK_OFFSET(0xACDBFC0)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A0E410)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A0E450)
+#define MOLEMOLE_UIVHSSTOREDIALOGV2POPWINDOWCONTROLLER___C__INITDATA_B__21_0_OFFSET UNITYSDK_OFFSET(0x9A0E460)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreDialogV2PopWindowController___c_TypeDefinitionIndex = 74539;
+	inline static constexpr unsigned int UIVHSStoreDialogV2PopWindowController___c_TypeDefinitionIndex = 77183;
 
 	class UIVHSStoreDialogV2PopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::MoleMole::UIVHSStorePicBtnWidgetController_Data*>** StaticGet___9__21_0()
-		{
-			return (::System::Comparison_1<::MoleMole::UIVHSStorePicBtnWidgetController_Data*>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34ED0);
-		}
 		static ::MoleMole::UIVHSStoreDialogV2PopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIVHSStoreDialogV2PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x34ED8);
+			return (::MoleMole::UIVHSStoreDialogV2PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37820);
+		}
+		static ::System::Comparison_1<::MoleMole::UIVHSStorePicBtnWidgetController_Data*>** StaticGet___9__21_0()
+		{
+			return (::System::Comparison_1<::MoleMole::UIVHSStorePicBtnWidgetController_Data*>**)Il2CppClass::FromTypeDefinitionIndex(UIVHSStoreDialogV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x37828);
 		}
 
 		static ::System::Void _cctor()

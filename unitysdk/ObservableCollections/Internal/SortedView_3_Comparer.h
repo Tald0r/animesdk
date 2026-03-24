@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IComparer_1
 
 namespace ObservableCollections::Internal
 {
-	inline static constexpr unsigned int SortedView_3_Comparer_TypeDefinitionIndex = 24426;
+	inline static constexpr unsigned int SortedView_3_Comparer_TypeDefinitionIndex = 25149;
 
 	template <typename T, typename TKey, typename TView>
 	class SortedView_3_Comparer : public ::System::Object

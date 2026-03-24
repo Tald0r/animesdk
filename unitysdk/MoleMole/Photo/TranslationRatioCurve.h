@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Foundation/NativeMemoryRequestHandle.h"
-#include "unitysdk/Struct_2_AAD4F4215611A948.h"
+#include "unitysdk/Struct_2_AAD4F4215611A948_2.h"
 #include "unitysdk/Struct_2_ACD0EF80A5330786.h"
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/ReadOnlySpan_1.h"
@@ -15,14 +15,14 @@ namespace MoleMole::Photo { class Skeleton; }
 namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class Animator; }
 
-#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_CREATE_OFFSET UNITYSDK_OFFSET(0x67CA780)
-#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_GET_DYNAMICMEMORYCOUNT_OFFSET UNITYSDK_OFFSET(0x67CAEB0)
-#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_REQUEST_OFFSET UNITYSDK_OFFSET(0x67CAEC0)
-#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE__CTOR_OFFSET UNITYSDK_OFFSET(0x67CB020)
+#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_CREATE_OFFSET UNITYSDK_OFFSET(0xA47DF30)
+#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_GET_DYNAMICMEMORYCOUNT_OFFSET UNITYSDK_OFFSET(0xA47E660)
+#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_REQUEST_OFFSET UNITYSDK_OFFSET(0xA47E670)
+#define MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE__CTOR_OFFSET UNITYSDK_OFFSET(0xA47E7D0)
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int TranslationRatioCurve_TypeDefinitionIndex = 61195;
+	inline static constexpr unsigned int TranslationRatioCurve_TypeDefinitionIndex = 49595;
 
 	class TranslationRatioCurve : public ::System::Object
 	{
@@ -37,9 +37,9 @@ namespace MoleMole::Photo
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE__CTOR_OFFSET))(this);
 		}
 
-		::Struct_2_AAD4F4215611A948 Create(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::Animator* a2, ::Struct_2_ACD0EF80A5330786& a3, ::Foundation::NativeMemory* a4, ::System::ReadOnlySpan_1<::Foundation::NativeMemoryRequestHandle> a5)
+		::Struct_2_AAD4F4215611A948_2 Create(::UnityEngine::Playables::PlayableGraph a1, ::UnityEngine::Animator* a2, ::Struct_2_ACD0EF80A5330786& a3, ::Foundation::NativeMemory* a4, ::System::ReadOnlySpan_1<::Foundation::NativeMemoryRequestHandle> a5)
 		{
-			return ((::Struct_2_AAD4F4215611A948(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::Animator*, ::Struct_2_ACD0EF80A5330786&, ::Foundation::NativeMemory*, ::System::ReadOnlySpan_1<::Foundation::NativeMemoryRequestHandle>))((::PBYTE)hIl2Cpp + MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_CREATE_OFFSET))(this, a1, a2, a3, a4, a5);
+			return ((::Struct_2_AAD4F4215611A948_2(*)(::PVOID, ::UnityEngine::Playables::PlayableGraph, ::UnityEngine::Animator*, ::Struct_2_ACD0EF80A5330786&, ::Foundation::NativeMemory*, ::System::ReadOnlySpan_1<::Foundation::NativeMemoryRequestHandle>))((::PBYTE)hIl2Cpp + MOLEMOLE_PHOTO_TRANSLATIONRATIOCURVE_CREATE_OFFSET))(this, a1, a2, a3, a4, a5);
 		}
 
 		::System::Int32 get_DynamicMemoryCount()

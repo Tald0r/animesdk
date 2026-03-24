@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYOEMOTION_BASESHAPE_GETELEMENTNAME_OFFSET UNITYSDK_OFFSET(0x18AD2400)
-#define MIHOYOEMOTION_BASESHAPE__CTOR_OFFSET UNITYSDK_OFFSET(0x18AD2460)
+#define MIHOYOEMOTION_BASESHAPE_GETELEMENTNAME_OFFSET UNITYSDK_OFFSET(0x18FBCAC0)
+#define MIHOYOEMOTION_BASESHAPE__CTOR_OFFSET UNITYSDK_OFFSET(0x18FBCB20)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int BaseShape_TypeDefinitionIndex = 36199;
+	inline static constexpr unsigned int BaseShape_TypeDefinitionIndex = 37219;
 
 	class BaseShape : public ::System::Object
 	{

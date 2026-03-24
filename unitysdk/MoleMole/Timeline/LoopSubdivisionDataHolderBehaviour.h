@@ -4,11 +4,11 @@
 
 namespace MoleMole::Timeline { class LoopSubdivisionDataHolderParams; }
 
-#define MOLEMOLE_TIMELINE_LOOPSUBDIVISIONDATAHOLDERBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xB30E760)
+#define MOLEMOLE_TIMELINE_LOOPSUBDIVISIONDATAHOLDERBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xB70CB40)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int LoopSubdivisionDataHolderBehaviour_TypeDefinitionIndex = 36496;
+	inline static constexpr unsigned int LoopSubdivisionDataHolderBehaviour_TypeDefinitionIndex = 39069;
 
 	class LoopSubdivisionDataHolderBehaviour : public ::UnityEngine::Playables::PlayableBehaviour
 	{

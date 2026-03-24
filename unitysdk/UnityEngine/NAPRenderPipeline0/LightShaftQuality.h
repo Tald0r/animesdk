@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int LightShaftQuality_TypeDefinitionIndex = 5871;
+	inline static constexpr unsigned int LightShaftQuality_TypeDefinitionIndex = 5873;
 
 	enum class LightShaftQuality : ::System::Int32
 	{

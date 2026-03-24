@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int MaterialDebugMode_TypeDefinitionIndex = 5893;
+	inline static constexpr unsigned int MaterialDebugMode_TypeDefinitionIndex = 5895;
 
 	enum class MaterialDebugMode : ::System::Int32
 	{

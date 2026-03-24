@@ -4,12 +4,12 @@
 
 namespace MoleMole { class LevelSectionGroupData; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_HADALROOMSECTIONDATA_INVOKE_OFFSET UNITYSDK_OFFSET(0x990CCA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_HADALROOMSECTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x990CF10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_HADALROOMSECTIONDATA_INVOKE_OFFSET UNITYSDK_OFFSET(0xA507AE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_HADALROOMSECTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA507D50)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_HadalRoomSectionData_TypeDefinitionIndex = 57265;
+	inline static constexpr unsigned int LD_HadalRoomSectionData_TypeDefinitionIndex = 74635;
 
 	class LD_HadalRoomSectionData : public ::FlowCanvas::Nodes::CallableFunctionNode_1<::MoleMole::LevelSectionGroupData*>
 	{

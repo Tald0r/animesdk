@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_SPAWNRANGECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6B69120)
+#define NPCCROWD_SPAWNRANGECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x781C310)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int SpawnRangeConfig_TypeDefinitionIndex = 54379;
+	inline static constexpr unsigned int SpawnRangeConfig_TypeDefinitionIndex = 53861;
 
 	class SpawnRangeConfig : public ::System::Object
 	{

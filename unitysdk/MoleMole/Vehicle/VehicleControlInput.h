@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_VEHICLE_VEHICLECONTROLINPUT_GET_NOINPUT_OFFSET UNITYSDK_OFFSET(0x2D3D30)
+#define MOLEMOLE_VEHICLE_VEHICLECONTROLINPUT_GET_NOINPUT_OFFSET UNITYSDK_OFFSET(0x33DF50)
 
 namespace MoleMole::Vehicle
 {
-	inline static constexpr unsigned int VehicleControlInput_TypeDefinitionIndex = 40972;
+	inline static constexpr unsigned int VehicleControlInput_TypeDefinitionIndex = 80764;
 
 	struct alignas(4) VehicleControlInput
 	{

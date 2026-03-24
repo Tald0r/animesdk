@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_ABILITY_NPCABILITYDITHERPARAMETERS__CTOR_OFFSET UNITYSDK_OFFSET(0x6950530)
+#define NPCCROWD_ABILITY_NPCABILITYDITHERPARAMETERS__CTOR_OFFSET UNITYSDK_OFFSET(0x62D46B0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int NPCAbilityDitherParameters_TypeDefinitionIndex = 48535;
+	inline static constexpr unsigned int NPCAbilityDitherParameters_TypeDefinitionIndex = 51385;
 
 	class NPCAbilityDitherParameters : public ::System::Object
 	{

@@ -5,13 +5,13 @@
 namespace System { class String; }
 namespace System::Text::RegularExpressions { class Match; }
 
-#define FOUNDATION_EMAILVALIDATOR_DOMAINMAPPER_OFFSET UNITYSDK_OFFSET(0x194009E0)
-#define FOUNDATION_EMAILVALIDATOR_ISVALIDEMAIL_OFFSET UNITYSDK_OFFSET(0x194007E0)
-#define FOUNDATION_EMAILVALIDATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x19400C40)
+#define FOUNDATION_EMAILVALIDATOR_DOMAINMAPPER_OFFSET UNITYSDK_OFFSET(0x19982AF0)
+#define FOUNDATION_EMAILVALIDATOR_ISVALIDEMAIL_OFFSET UNITYSDK_OFFSET(0x199828F0)
+#define FOUNDATION_EMAILVALIDATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x19982D50)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int EmailValidator_TypeDefinitionIndex = 8219;
+	inline static constexpr unsigned int EmailValidator_TypeDefinitionIndex = 8301;
 
 	class EmailValidator : public ::System::Object
 	{

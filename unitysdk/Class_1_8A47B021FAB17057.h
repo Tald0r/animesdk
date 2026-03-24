@@ -3,10 +3,10 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CLASS_1_8A47B021FAB17057_METHOD_1_D7DDA895983CCCB2_OFFSET UNITYSDK_OFFSET(0x8872210)
-#define CLASS_1_8A47B021FAB17057__CTOR_OFFSET UNITYSDK_OFFSET(0x8872200)
+#define CLASS_1_8A47B021FAB17057_METHOD_1_D7DDA895983CCCB2_OFFSET UNITYSDK_OFFSET(0xAA1E750)
+#define CLASS_1_8A47B021FAB17057__CTOR_OFFSET UNITYSDK_OFFSET(0xAA1E740)
 
-inline static constexpr unsigned int Class_1_8A47B021FAB17057_TypeDefinitionIndex = 53426;
+inline static constexpr unsigned int Class_1_8A47B021FAB17057_TypeDefinitionIndex = 75832;
 
 class Class_1_8A47B021FAB17057 : public ::System::Object
 {

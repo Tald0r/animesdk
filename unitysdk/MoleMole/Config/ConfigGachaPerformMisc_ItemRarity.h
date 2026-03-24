@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformMisc_ItemRarity_TypeDefinitionIndex = 70601;
+	inline static constexpr unsigned int ConfigGachaPerformMisc_ItemRarity_TypeDefinitionIndex = 43146;
 
 	enum class ConfigGachaPerformMisc_ItemRarity : ::System::Int32
 	{
-		B = 2,
-		Unknown = -1,
-		S = 4,
 		A = 3,
+		B = 2,
+		S = 4,
+		Unknown = -1,
 	};
 }

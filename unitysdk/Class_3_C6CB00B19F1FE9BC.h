@@ -9,7 +9,7 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-inline static constexpr unsigned int Class_3_C6CB00B19F1FE9BC_TypeDefinitionIndex = 12962;
+inline static constexpr unsigned int Class_3_C6CB00B19F1FE9BC_TypeDefinitionIndex = 14847;
 
 template <typename T>
 class Class_3_C6CB00B19F1FE9BC : public ::Class_2_534AF681CC2BD5F4<T>

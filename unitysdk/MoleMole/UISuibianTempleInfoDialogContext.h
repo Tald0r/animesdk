@@ -4,17 +4,17 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEINFODIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD6CF000)
+#define MOLEMOLE_UISUIBIANTEMPLEINFODIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xDF3E220)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleInfoDialogContext_TypeDefinitionIndex = 58343;
+	inline static constexpr unsigned int UISuibianTempleInfoDialogContext_TypeDefinitionIndex = 45933;
 
 	class UISuibianTempleInfoDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::String* Title; // 0x28
-		::System::String* Message; // 0x30
+		::System::String* Message; // 0x28
+		::System::String* Title; // 0x30
 
 		::System::Void _ctor()
 		{

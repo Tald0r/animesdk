@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass14_0_TypeDefinitionIndex = 43882;
+inline static constexpr unsigned int MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass14_0_TypeDefinitionIndex = 64423;
 
 struct alignas(1) MonoUITableScrollV2_TableScrollPluginArrow___c__DisplayClass14_0
 {

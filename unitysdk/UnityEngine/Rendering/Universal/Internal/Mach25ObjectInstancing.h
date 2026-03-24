@@ -8,32 +8,32 @@
 namespace UnityEngine::NAPRenderPipeline0 { class ScopedCommandBuffer; }
 namespace UnityEngine::Rendering::Universal::Internal { class Mach25ObjectInstancing_Mach25SceneObjInfo; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_CLEARMATRIXLIST_OFFSET UNITYSDK_OFFSET(0x185D5AF0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_DESTROY_OFFSET UNITYSDK_OFFSET(0x185D5A50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_DRAWMACH25SCENEOBJECTS_OFFSET UNITYSDK_OFFSET(0x185D5FC0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_DRAWMACH25SCENE_OFFSET UNITYSDK_OFFSET(0x185D5D10)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x185D5860)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_INIT_OFFSET UNITYSDK_OFFSET(0x185D58E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_REVERSEMATRIXLIST_OFFSET UNITYSDK_OFFSET(0x185D5C00)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING__CTOR_OFFSET UNITYSDK_OFFSET(0x185D58D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_CLEARMATRIXLIST_OFFSET UNITYSDK_OFFSET(0x18B3E3D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_DESTROY_OFFSET UNITYSDK_OFFSET(0x18B3E330)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_DRAWMACH25SCENEOBJECTS_OFFSET UNITYSDK_OFFSET(0x18B3E8A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_DRAWMACH25SCENE_OFFSET UNITYSDK_OFFSET(0x18B3E5F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x18B3E140)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_INIT_OFFSET UNITYSDK_OFFSET(0x18B3E1C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING_REVERSEMATRIXLIST_OFFSET UNITYSDK_OFFSET(0x18B3E4E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MACH25OBJECTINSTANCING__CTOR_OFFSET UNITYSDK_OFFSET(0x18B3E1B0)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int Mach25ObjectInstancing_TypeDefinitionIndex = 28894;
+	inline static constexpr unsigned int Mach25ObjectInstancing_TypeDefinitionIndex = 29844;
 
 	class Mach25ObjectInstancing : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing** StaticGet_instance()
 		{
-			return (::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing**)Il2CppClass::FromTypeDefinitionIndex(Mach25ObjectInstancing_TypeDefinitionIndex)->GetStaticField(0x21D60);
+			return (::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing**)Il2CppClass::FromTypeDefinitionIndex(Mach25ObjectInstancing_TypeDefinitionIndex)->GetStaticField(0x236B0);
 		}
-		::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing_Mach25SceneObjInfo* tileInfo; // 0x10
-		::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing_Mach25SceneObjInfo* pillarInfo; // 0x18
-		::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing_Mach25SceneObjInfo* arrowInfo; // 0x20
-		::Il2CppArray<::UnityEngine::Matrix4x4>* matricesForInstancing; // 0x28
-		::System::Boolean drawMach25Scene; // 0x30
-		::System::Boolean isMach25Cam; // 0x31
+		::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing_Mach25SceneObjInfo* arrowInfo; // 0x10
+		::Il2CppArray<::UnityEngine::Matrix4x4>* matricesForInstancing; // 0x18
+		::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing_Mach25SceneObjInfo* tileInfo; // 0x20
+		::UnityEngine::Rendering::Universal::Internal::Mach25ObjectInstancing_Mach25SceneObjInfo* pillarInfo; // 0x28
+		::System::Boolean isMach25Cam; // 0x30
+		::System::Boolean drawMach25Scene; // 0x31
 
 		::System::Void _ctor()
 		{

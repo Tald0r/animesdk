@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/ConsoleObjectType.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_CONSOLEOBJECTTYPETOENUM__CCTOR_OFFSET UNITYSDK_OFFSET(0x19D19FB0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_CONSOLEOBJECTTYPETOENUM__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A300600)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ConsoleObjectTypeToEnum_TypeDefinitionIndex = 5682;
+	inline static constexpr unsigned int ConsoleObjectTypeToEnum_TypeDefinitionIndex = 5685;
 
 	class ConsoleObjectTypeToEnum : public ::System::Object
 	{

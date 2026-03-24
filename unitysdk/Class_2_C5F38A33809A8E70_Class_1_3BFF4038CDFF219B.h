@@ -6,16 +6,16 @@ class Class_2_C5F38A33809A8E70;
 namespace MoleMole { class UIInLevelMainPageController; }
 namespace System::Threading::Tasks { template <typename T> class TaskCompletionSource_1; }
 
-#define CLASS_2_C5F38A33809A8E70_CLASS_1_3BFF4038CDFF219B_METHOD_1_5DDFC28E3C30F5A5_OFFSET UNITYSDK_OFFSET(0x835D280)
-#define CLASS_2_C5F38A33809A8E70_CLASS_1_3BFF4038CDFF219B__CTOR_OFFSET UNITYSDK_OFFSET(0x835D270)
+#define CLASS_2_C5F38A33809A8E70_CLASS_1_3BFF4038CDFF219B_METHOD_1_5DDFC28E3C30F5A5_OFFSET UNITYSDK_OFFSET(0x7440FC0)
+#define CLASS_2_C5F38A33809A8E70_CLASS_1_3BFF4038CDFF219B__CTOR_OFFSET UNITYSDK_OFFSET(0x7440FB0)
 
-inline static constexpr unsigned int Class_2_C5F38A33809A8E70_Class_1_3BFF4038CDFF219B_TypeDefinitionIndex = 72310;
+inline static constexpr unsigned int Class_2_C5F38A33809A8E70_Class_1_3BFF4038CDFF219B_TypeDefinitionIndex = 49332;
 
 class Class_2_C5F38A33809A8E70_Class_1_3BFF4038CDFF219B : public ::System::Object
 {
 public:
-	::System::Threading::Tasks::TaskCompletionSource_1<::System::Boolean>* Field_1_1; // 0x10
-	::Class_2_C5F38A33809A8E70* Field_1_0; // 0x18
+	::Class_2_C5F38A33809A8E70* Field_1_0; // 0x10
+	::System::Threading::Tasks::TaskCompletionSource_1<::System::Boolean>* Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

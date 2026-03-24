@@ -3,7 +3,7 @@
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriFsBinder_Status_TypeDefinitionIndex = 31276;
+	inline static constexpr unsigned int CriFsBinder_Status_TypeDefinitionIndex = 32228;
 
 	enum class CriFsBinder_Status : ::System::Int32
 	{

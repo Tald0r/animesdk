@@ -8,43 +8,43 @@ namespace Dest::Math { class PoissonDiskSampler_PointDelegate; }
 namespace Dest::Math { class Rand; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define DEST_MATH_POISSONDISKSAMPLER_ADDPOINT_OFFSET UNITYSDK_OFFSET(0x1B01A770)
-#define DEST_MATH_POISSONDISKSAMPLER_CALCGRIDINDICES_OFFSET UNITYSDK_OFFSET(0x1B01A6A0)
-#define DEST_MATH_POISSONDISKSAMPLER_GET_MAXPOINTS_OFFSET UNITYSDK_OFFSET(0x1B01A450)
-#define DEST_MATH_POISSONDISKSAMPLER_INSERTINTOGRID_OFFSET UNITYSDK_OFFSET(0x1B01A6D0)
-#define DEST_MATH_POISSONDISKSAMPLER_SAMPLE_OFFSET UNITYSDK_OFFSET(0x1B01ACD0)
-#define DEST_MATH_POISSONDISKSAMPLER_SET_MAXPOINTS_OFFSET UNITYSDK_OFFSET(0x1B01A460)
-#define DEST_MATH_POISSONDISKSAMPLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B01A470)
-#define DEST_MATH_POISSONDISKSAMPLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B01A4B0)
+#define DEST_MATH_POISSONDISKSAMPLER_ADDPOINT_OFFSET UNITYSDK_OFFSET(0x1B628BC0)
+#define DEST_MATH_POISSONDISKSAMPLER_CALCGRIDINDICES_OFFSET UNITYSDK_OFFSET(0x1B628AF0)
+#define DEST_MATH_POISSONDISKSAMPLER_GET_MAXPOINTS_OFFSET UNITYSDK_OFFSET(0x1B6288A0)
+#define DEST_MATH_POISSONDISKSAMPLER_INSERTINTOGRID_OFFSET UNITYSDK_OFFSET(0x1B628B20)
+#define DEST_MATH_POISSONDISKSAMPLER_SAMPLE_OFFSET UNITYSDK_OFFSET(0x1B629120)
+#define DEST_MATH_POISSONDISKSAMPLER_SET_MAXPOINTS_OFFSET UNITYSDK_OFFSET(0x1B6288B0)
+#define DEST_MATH_POISSONDISKSAMPLER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6288C0)
+#define DEST_MATH_POISSONDISKSAMPLER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B628900)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int PoissonDiskSampler_TypeDefinitionIndex = 31750;
+	inline static constexpr unsigned int PoissonDiskSampler_TypeDefinitionIndex = 32704;
 
 	class PoissonDiskSampler : public ::System::Object
 	{
 	public:
 		static ::System::Single* StaticGet_one_div_sqrtTwo()
 		{
-			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PoissonDiskSampler_TypeDefinitionIndex)->GetStaticField(0x7CD0);
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(PoissonDiskSampler_TypeDefinitionIndex)->GetStaticField(0x8000);
 		}
-		::Dest::Math::Rand* _rand; // 0x10
-		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* _points; // 0x18
-		::System::Collections::Generic::List_1<::System::Int32>* _activeList; // 0x20
-		::Il2CppArray<::System::Nullable_1<::System::Int32>>* _grid; // 0x28
-		::Dest::Math::PoissonDiskSampler_PointDelegate* DistanceFilter; // 0x30
-		::UnityEngine::Vector2 _size; // 0x38
-		::System::Int32 _cellsY; // 0x40
-		::UnityEngine::Vector2 _max; // 0x44
-		::System::Int32 _cellsX; // 0x4C
-		::System::Single _r; // 0x50
-		::System::Int32 PointsPerStep; // 0x54
-		::System::Single _rTwo; // 0x58
-		::System::Single _rMin; // 0x5C
-		::System::Int32 _MaxPoints_k__BackingField; // 0x60
-		::UnityEngine::Vector2 _min; // 0x64
-		::System::Single _cellSize; // 0x6C
-		::System::Single _rSquared; // 0x70
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* _points; // 0x10
+		::Dest::Math::Rand* _rand; // 0x18
+		::Dest::Math::PoissonDiskSampler_PointDelegate* DistanceFilter; // 0x20
+		::System::Collections::Generic::List_1<::System::Int32>* _activeList; // 0x28
+		::Il2CppArray<::System::Nullable_1<::System::Int32>>* _grid; // 0x30
+		::System::Int32 PointsPerStep; // 0x38
+		::UnityEngine::Vector2 _min; // 0x3C
+		::System::Int32 _cellsX; // 0x44
+		::System::Single _rMin; // 0x48
+		::System::Single _rSquared; // 0x4C
+		::UnityEngine::Vector2 _size; // 0x50
+		::System::Single _cellSize; // 0x58
+		::UnityEngine::Vector2 _max; // 0x5C
+		::System::Int32 _cellsY; // 0x64
+		::System::Single _r; // 0x68
+		::System::Single _rTwo; // 0x6C
+		::System::Int32 _MaxPoints_k__BackingField; // 0x70
 
 		static ::System::Void _cctor()
 		{

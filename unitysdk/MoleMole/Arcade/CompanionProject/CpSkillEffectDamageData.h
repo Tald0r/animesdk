@@ -6,11 +6,11 @@
 
 namespace MoleMole::Arcade::CompanionProject { class CpAoeAreaParam; }
 
-#define MOLEMOLE_ARCADE_COMPANIONPROJECT_CPSKILLEFFECTDAMAGEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19227C70)
+#define MOLEMOLE_ARCADE_COMPANIONPROJECT_CPSKILLEFFECTDAMAGEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A384040)
 
 namespace MoleMole::Arcade::CompanionProject
 {
-	inline static constexpr unsigned int CpSkillEffectDamageData_TypeDefinitionIndex = 80055;
+	inline static constexpr unsigned int CpSkillEffectDamageData_TypeDefinitionIndex = 82011;
 
 	class CpSkillEffectDamageData : public ::MoleMole::Arcade::CompanionProject::CpSkillEffectData
 	{

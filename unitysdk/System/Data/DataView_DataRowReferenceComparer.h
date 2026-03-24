@@ -4,21 +4,21 @@
 
 namespace System::Data { class DataRow; }
 
-#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1A881A30)
-#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1A881A40)
-#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A881A60)
-#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A881A20)
+#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER_EQUALS_OFFSET UNITYSDK_OFFSET(0x1AE4C3D0)
+#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x1AE4C3E0)
+#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AE4C400)
+#define SYSTEM_DATA_DATAVIEW_DATAROWREFERENCECOMPARER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE4C3C0)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int DataView_DataRowReferenceComparer_TypeDefinitionIndex = 35436;
+	inline static constexpr unsigned int DataView_DataRowReferenceComparer_TypeDefinitionIndex = 36456;
 
 	class DataView_DataRowReferenceComparer : public ::System::Object
 	{
 	public:
 		static ::System::Data::DataView_DataRowReferenceComparer** StaticGet_s_default()
 		{
-			return (::System::Data::DataView_DataRowReferenceComparer**)Il2CppClass::FromTypeDefinitionIndex(DataView_DataRowReferenceComparer_TypeDefinitionIndex)->GetStaticField(0x24EE0);
+			return (::System::Data::DataView_DataRowReferenceComparer**)Il2CppClass::FromTypeDefinitionIndex(DataView_DataRowReferenceComparer_TypeDefinitionIndex)->GetStaticField(0x26910);
 		}
 
 		::System::Void _ctor()

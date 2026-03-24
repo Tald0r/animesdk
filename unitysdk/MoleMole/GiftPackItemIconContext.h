@@ -2,34 +2,34 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_0_16E4307DCC419505_187;
+class Class_0_16E4307DCC419505_133;
 
-#define MOLEMOLE_GIFTPACKITEMICONCONTEXT_GET_GOODSDATA_OFFSET UNITYSDK_OFFSET(0xF1B55A0)
-#define MOLEMOLE_GIFTPACKITEMICONCONTEXT_SET_GOODSDATA_OFFSET UNITYSDK_OFFSET(0xF1B55B0)
-#define MOLEMOLE_GIFTPACKITEMICONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B55C0)
+#define MOLEMOLE_GIFTPACKITEMICONCONTEXT_GET_GOODSDATA_OFFSET UNITYSDK_OFFSET(0xB98F460)
+#define MOLEMOLE_GIFTPACKITEMICONCONTEXT_SET_GOODSDATA_OFFSET UNITYSDK_OFFSET(0xB98F470)
+#define MOLEMOLE_GIFTPACKITEMICONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB98F480)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GiftPackItemIconContext_TypeDefinitionIndex = 64851;
+	inline static constexpr unsigned int GiftPackItemIconContext_TypeDefinitionIndex = 68901;
 
 	class GiftPackItemIconContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_0_16E4307DCC419505_187* _GoodsData_k__BackingField; // 0x28
+		::Class_0_16E4307DCC419505_133* _GoodsData_k__BackingField; // 0x28
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GIFTPACKITEMICONCONTEXT__CTOR_OFFSET))(this);
 		}
 
-		::Class_0_16E4307DCC419505_187* get_GoodsData()
+		::Class_0_16E4307DCC419505_133* get_GoodsData()
 		{
-			return ((::Class_0_16E4307DCC419505_187*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GIFTPACKITEMICONCONTEXT_GET_GOODSDATA_OFFSET))(this);
+			return ((::Class_0_16E4307DCC419505_133*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GIFTPACKITEMICONCONTEXT_GET_GOODSDATA_OFFSET))(this);
 		}
 
-		::System::Void set_GoodsData(::Class_0_16E4307DCC419505_187* value)
+		::System::Void set_GoodsData(::Class_0_16E4307DCC419505_133* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_187*))((::PBYTE)hIl2Cpp + MOLEMOLE_GIFTPACKITEMICONCONTEXT_SET_GOODSDATA_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_133*))((::PBYTE)hIl2Cpp + MOLEMOLE_GIFTPACKITEMICONCONTEXT_SET_GOODSDATA_OFFSET))(this, value);
 		}
 	};
 }

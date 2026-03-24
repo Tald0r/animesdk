@@ -10,24 +10,24 @@ namespace RootMotion::FinalIK { class LookController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_3_F61947B841A40F75_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x714A360)
-#define CLASS_3_F61947B841A40F75_METHOD_3_792AB6C2A2B589B3_OFFSET UNITYSDK_OFFSET(0x714A4F0)
-#define CLASS_3_F61947B841A40F75_METHOD_3_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x714A640)
-#define CLASS_3_F61947B841A40F75_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x714A150)
-#define CLASS_3_F61947B841A40F75__CCTOR_OFFSET UNITYSDK_OFFSET(0x714A3C0)
-#define CLASS_3_F61947B841A40F75__CTOR_OFFSET UNITYSDK_OFFSET(0x714A440)
+#define CLASS_3_F61947B841A40F75_GETCLASSID_OFFSET UNITYSDK_OFFSET(0x8555890)
+#define CLASS_3_F61947B841A40F75_METHOD_3_792AB6C2A2B589B3_OFFSET UNITYSDK_OFFSET(0x8555A20)
+#define CLASS_3_F61947B841A40F75_METHOD_3_A1D8CD775DEC3C21_OFFSET UNITYSDK_OFFSET(0x8555B70)
+#define CLASS_3_F61947B841A40F75_ONCLEAN_OFFSET UNITYSDK_OFFSET(0x8555680)
+#define CLASS_3_F61947B841A40F75__CCTOR_OFFSET UNITYSDK_OFFSET(0x85558F0)
+#define CLASS_3_F61947B841A40F75__CTOR_OFFSET UNITYSDK_OFFSET(0x8555970)
 
-inline static constexpr unsigned int Class_3_F61947B841A40F75_TypeDefinitionIndex = 45237;
+inline static constexpr unsigned int Class_3_F61947B841A40F75_TypeDefinitionIndex = 56577;
 
 class Class_3_F61947B841A40F75 : public ::Class_2_F3CFF1AFF7EE7DCD
 {
 public:
 	// static const ::System::Int32 Field_3_7 = 0x1B; // 0x0
-	::RootMotion::FinalIK::LookAtIK* Field_3_5; // 0x48
-	::System::Collections::Generic::List_1<::RootMotion::FinalIK::LookController*>* Field_3_4; // 0x50
-	::System::Collections::Generic::List_1<::Class_3_F61947B841A40F75_Struct_2_5FF1D5EFE167C656>* Field_3_6; // 0x58
-	::UnityEngine::Transform* Field_3_3; // 0x60
-	::Class_1_35528E1B62C23E1D* Field_3_2; // 0x68
+	::Class_1_35528E1B62C23E1D* Field_3_2; // 0x48
+	::RootMotion::FinalIK::LookAtIK* Field_3_5; // 0x50
+	::System::Collections::Generic::List_1<::RootMotion::FinalIK::LookController*>* Field_3_4; // 0x58
+	::System::Collections::Generic::List_1<::Class_3_F61947B841A40F75_Struct_2_5FF1D5EFE167C656>* Field_3_6; // 0x60
+	::UnityEngine::Transform* Field_3_3; // 0x68
 	::MoleMole::Battle::Entity* Field_3_1; // 0x70
 	::System::Boolean Field_3_0; // 0x78
 

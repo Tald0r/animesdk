@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Config/ConfigEntityAttackPattern.h"
 
-#define MOLEMOLE_CONFIG_COLLISIONDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0xC341350)
+#define MOLEMOLE_CONFIG_COLLISIONDETECT__CTOR_OFFSET UNITYSDK_OFFSET(0xEC3AA40)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CollisionDetect_TypeDefinitionIndex = 65068;
+	inline static constexpr unsigned int CollisionDetect_TypeDefinitionIndex = 68734;
 
 	class CollisionDetect : public ::MoleMole::Config::ConfigEntityAttackPattern
 	{

@@ -5,11 +5,11 @@
 namespace UnityEngine { class MaterialPropertyBlock; }
 namespace UnityEngine { class Renderer; }
 
-#define MOLEMOLE_RENDERERFADER__CTOR_OFFSET UNITYSDK_OFFSET(0xB2FD0B0)
+#define MOLEMOLE_RENDERERFADER__CTOR_OFFSET UNITYSDK_OFFSET(0xB871A90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int RendererFader_TypeDefinitionIndex = 42178;
+	inline static constexpr unsigned int RendererFader_TypeDefinitionIndex = 75215;
 
 	class RendererFader : public ::System::Object
 	{

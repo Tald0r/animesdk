@@ -5,12 +5,12 @@
 namespace MoleMole { class UIPhotoWallSwitchItemWidgetController; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC831470)
-#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__ONCLICKEDITNAMECALLBACK_G__ONEDITNAME_1_OFFSET UNITYSDK_OFFSET(0xC831480)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD398E90)
+#define MOLEMOLE_UIPHOTOWALLSWITCHITEMWIDGETCONTROLLER___C__DISPLAYCLASS10_0__ONCLICKEDITNAMECALLBACK_G__ONEDITNAME_1_OFFSET UNITYSDK_OFFSET(0xD398EA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoWallSwitchItemWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 52036;
+	inline static constexpr unsigned int UIPhotoWallSwitchItemWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 40461;
 
 	class UIPhotoWallSwitchItemWidgetController___c__DisplayClass10_0 : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace RichTap::Types
 {
-	inline static constexpr unsigned int TriggerIndex_TypeDefinitionIndex = 34930;
+	inline static constexpr unsigned int TriggerIndex_TypeDefinitionIndex = 35932;
 
 	enum class TriggerIndex : ::System::Int32
 	{

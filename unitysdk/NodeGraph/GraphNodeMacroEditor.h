@@ -6,17 +6,17 @@ namespace NodeGraph { class GraphNodeMacroInput; }
 namespace NodeGraph { class GraphNodeMacroOutput; }
 namespace NodeGraph { class NodeGraphBase; }
 
-#define NODEGRAPH_GRAPHNODEMACROEDITOR__CTOR_OFFSET UNITYSDK_OFFSET(0x7589A60)
+#define NODEGRAPH_GRAPHNODEMACROEDITOR__CTOR_OFFSET UNITYSDK_OFFSET(0x752B080)
 
 namespace NodeGraph
 {
-	inline static constexpr unsigned int GraphNodeMacroEditor_TypeDefinitionIndex = 41443;
+	inline static constexpr unsigned int GraphNodeMacroEditor_TypeDefinitionIndex = 45425;
 
 	class GraphNodeMacroEditor : public ::NodeGraph::GraphNodeBase
 	{
 	public:
-		::NodeGraph::GraphNodeMacroInput* _input; // 0x58
-		::NodeGraph::GraphNodeMacroOutput* _output; // 0x60
+		::NodeGraph::GraphNodeMacroOutput* _output; // 0x58
+		::NodeGraph::GraphNodeMacroInput* _input; // 0x60
 
 		::System::Void _ctor(::NodeGraph::NodeGraphBase* nodeGraphBase)
 		{

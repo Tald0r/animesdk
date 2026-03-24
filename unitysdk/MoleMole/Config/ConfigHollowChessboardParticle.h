@@ -10,11 +10,11 @@ namespace MoleMole::Config { class VirtualSpaceLineEffectConfig; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x84A8900)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDPARTICLE__CTOR_OFFSET UNITYSDK_OFFSET(0x9500720)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboardParticle_TypeDefinitionIndex = 57740;
+	inline static constexpr unsigned int ConfigHollowChessboardParticle_TypeDefinitionIndex = 66195;
 
 	class ConfigHollowChessboardParticle : public ::Foundation::MihoyoSerializedScriptableObject
 	{

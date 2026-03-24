@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define NPCCROWD_ANIMATION_NPCANIMATIONLIB_ANIMATIONID_GET_ISNULL_OFFSET UNITYSDK_OFFSET(0x2FE250)
-#define NPCCROWD_ANIMATION_NPCANIMATIONLIB_ANIMATIONID__CCTOR_OFFSET UNITYSDK_OFFSET(0x6971BD0)
-#define NPCCROWD_ANIMATION_NPCANIMATIONLIB_ANIMATIONID__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3730)
+#define NPCCROWD_ANIMATION_NPCANIMATIONLIB_ANIMATIONID_GET_ISNULL_OFFSET UNITYSDK_OFFSET(0x2F3C40)
+#define NPCCROWD_ANIMATION_NPCANIMATIONLIB_ANIMATIONID__CCTOR_OFFSET UNITYSDK_OFFSET(0x62F5FE0)
+#define NPCCROWD_ANIMATION_NPCANIMATIONLIB_ANIMATIONID__CTOR_OFFSET UNITYSDK_OFFSET(0x2F3C30)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCAnimationLib_AnimationId_TypeDefinitionIndex = 74734;
+	inline static constexpr unsigned int NPCAnimationLib_AnimationId_TypeDefinitionIndex = 54263;
 
 	struct alignas(4) NPCAnimationLib_AnimationId
 	{
 		static ::NPCCrowd::Animation::NPCAnimationLib_AnimationId* StaticGet_Null()
 		{
-			return (::NPCCrowd::Animation::NPCAnimationLib_AnimationId*)Il2CppClass::FromTypeDefinitionIndex(NPCAnimationLib_AnimationId_TypeDefinitionIndex)->GetStaticField(0xBB40);
+			return (::NPCCrowd::Animation::NPCAnimationLib_AnimationId*)Il2CppClass::FromTypeDefinitionIndex(NPCAnimationLib_AnimationId_TypeDefinitionIndex)->GetStaticField(0xC780);
 		}
 		::System::Int32 AvatarId; // 0x10
 		::System::Int32 ClipId; // 0x14

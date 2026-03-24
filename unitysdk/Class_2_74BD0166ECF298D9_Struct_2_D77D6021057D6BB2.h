@@ -9,19 +9,19 @@ class Class_2_74BD0166ECF298D9;
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_2_74BD0166ECF298D9_STRUCT_2_D77D6021057D6BB2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x315B60)
-#define CLASS_2_74BD0166ECF298D9_STRUCT_2_D77D6021057D6BB2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_74BD0166ECF298D9_STRUCT_2_D77D6021057D6BB2_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3428A0)
+#define CLASS_2_74BD0166ECF298D9_STRUCT_2_D77D6021057D6BB2_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_74BD0166ECF298D9_Struct_2_D77D6021057D6BB2_TypeDefinitionIndex = 74706;
+inline static constexpr unsigned int Class_2_74BD0166ECF298D9_Struct_2_D77D6021057D6BB2_TypeDefinitionIndex = 51455;
 
 struct alignas(8) Class_2_74BD0166ECF298D9_Struct_2_D77D6021057D6BB2
 {
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x10
-	::Class_2_74BD0166ECF298D9* Field_2_3; // 0x20
-	::Foundation::ViewObject::ViewObjectHandle Field_2_4; // 0x28
-	::System::Collections::Generic::IEnumerable_1<::System::UInt32>* Field_2_2; // 0x38
-	::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter Field_2_5; // 0x40
-	::System::Int32 Field_2_0; // 0x44
+	::Foundation::ViewObject::ViewObjectHandle Field_2_4; // 0x10
+	::System::Collections::Generic::IEnumerable_1<::System::UInt32>* Field_2_2; // 0x20
+	::Class_2_74BD0166ECF298D9* Field_2_3; // 0x28
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x30
+	::System::Int32 Field_2_0; // 0x40
+	::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter Field_2_5; // 0x44
 
 	::System::Void MoveNext()
 	{

@@ -6,21 +6,21 @@
 namespace NPCCrowd::AI { class Node; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCCROWD_AI_WPPATHFINDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7578660)
-#define NPCCROWD_AI_WPPATHFINDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7578690)
-#define NPCCROWD_AI_WPPATHFINDER___C___CCTOR_B__19_0_OFFSET UNITYSDK_OFFSET(0x75786A0)
-#define NPCCROWD_AI_WPPATHFINDER___C___CCTOR_B__19_1_OFFSET UNITYSDK_OFFSET(0x7578780)
+#define NPCCROWD_AI_WPPATHFINDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7515AA0)
+#define NPCCROWD_AI_WPPATHFINDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7515AD0)
+#define NPCCROWD_AI_WPPATHFINDER___C___CCTOR_B__19_0_OFFSET UNITYSDK_OFFSET(0x7515AE0)
+#define NPCCROWD_AI_WPPATHFINDER___C___CCTOR_B__19_1_OFFSET UNITYSDK_OFFSET(0x7515BC0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int WPPathFinder___c_TypeDefinitionIndex = 74367;
+	inline static constexpr unsigned int WPPathFinder___c_TypeDefinitionIndex = 57863;
 
 	class WPPathFinder___c : public ::System::Object
 	{
 	public:
 		static ::NPCCrowd::AI::WPPathFinder___c** StaticGet___9()
 		{
-			return (::NPCCrowd::AI::WPPathFinder___c**)Il2CppClass::FromTypeDefinitionIndex(WPPathFinder___c_TypeDefinitionIndex)->GetStaticField(0x2D8B0);
+			return (::NPCCrowd::AI::WPPathFinder___c**)Il2CppClass::FromTypeDefinitionIndex(WPPathFinder___c_TypeDefinitionIndex)->GetStaticField(0x2ED10);
 		}
 
 		static ::System::Void _cctor()

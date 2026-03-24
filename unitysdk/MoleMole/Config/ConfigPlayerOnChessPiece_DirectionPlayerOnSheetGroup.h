@@ -4,11 +4,11 @@
 #include "unitysdk/MoleMole/PlayerOnViewState.h"
 #include "unitysdk/System/ValueType.h"
 
-#define MOLEMOLE_CONFIG_CONFIGPLAYERONCHESSPIECE_DIRECTIONPLAYERONSHEETGROUP_GETCONFIGBYDIRECTION_OFFSET UNITYSDK_OFFSET(0x366BA0)
+#define MOLEMOLE_CONFIG_CONFIGPLAYERONCHESSPIECE_DIRECTIONPLAYERONSHEETGROUP_GETCONFIGBYDIRECTION_OFFSET UNITYSDK_OFFSET(0x3A7540)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPlayerOnChessPiece_DirectionPlayerOnSheetGroup_TypeDefinitionIndex = 47268;
+	inline static constexpr unsigned int ConfigPlayerOnChessPiece_DirectionPlayerOnSheetGroup_TypeDefinitionIndex = 64086;
 
 	struct alignas(8) ConfigPlayerOnChessPiece_DirectionPlayerOnSheetGroup
 	{

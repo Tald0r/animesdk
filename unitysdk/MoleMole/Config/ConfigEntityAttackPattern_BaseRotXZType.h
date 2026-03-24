@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityAttackPattern_BaseRotXZType_TypeDefinitionIndex = 63358;
+	inline static constexpr unsigned int ConfigEntityAttackPattern_BaseRotXZType_TypeDefinitionIndex = 53376;
 
 	enum class ConfigEntityAttackPattern_BaseRotXZType : ::System::Int32
 	{

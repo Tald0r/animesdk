@@ -3,11 +3,11 @@
 
 namespace NodeGraph
 {
-	inline static constexpr unsigned int GraphPortDirection_TypeDefinitionIndex = 49346;
+	inline static constexpr unsigned int GraphPortDirection_TypeDefinitionIndex = 48906;
 
 	enum class GraphPortDirection : ::System::Int32
 	{
-		In = 0,
 		Out = 1,
+		In = 0,
 	};
 }

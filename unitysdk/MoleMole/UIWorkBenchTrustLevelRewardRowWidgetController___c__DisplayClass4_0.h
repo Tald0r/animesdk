@@ -3,12 +3,12 @@
 #include "unitysdk/Class_1_C4CB11A2FD957208_Struct_2_98E057419FFAAB00.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIWORKBENCHTRUSTLEVELREWARDROWWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA91990)
-#define MOLEMOLE_UIWORKBENCHTRUSTLEVELREWARDROWWIDGETCONTROLLER___C__DISPLAYCLASS4_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xCA919A0)
+#define MOLEMOLE_UIWORKBENCHTRUSTLEVELREWARDROWWIDGETCONTROLLER___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7918200)
+#define MOLEMOLE_UIWORKBENCHTRUSTLEVELREWARDROWWIDGETCONTROLLER___C__DISPLAYCLASS4_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x7918210)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchTrustLevelRewardRowWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 50066;
+	inline static constexpr unsigned int UIWorkBenchTrustLevelRewardRowWidgetController___c__DisplayClass4_0_TypeDefinitionIndex = 69988;
 
 	class UIWorkBenchTrustLevelRewardRowWidgetController___c__DisplayClass4_0 : public ::System::Object
 	{

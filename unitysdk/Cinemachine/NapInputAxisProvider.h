@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define CINEMACHINE_NAPINPUTAXISPROVIDER_GETAXISVALUE_OFFSET UNITYSDK_OFFSET(0x1AAEC640)
-#define CINEMACHINE_NAPINPUTAXISPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAEC680)
+#define CINEMACHINE_NAPINPUTAXISPROVIDER_GETAXISVALUE_OFFSET UNITYSDK_OFFSET(0x1B135FF0)
+#define CINEMACHINE_NAPINPUTAXISPROVIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B136030)
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int NapInputAxisProvider_TypeDefinitionIndex = 31054;
+	inline static constexpr unsigned int NapInputAxisProvider_TypeDefinitionIndex = 32006;
 
 	class NapInputAxisProvider : public ::UnityEngine::MonoBehaviour
 	{

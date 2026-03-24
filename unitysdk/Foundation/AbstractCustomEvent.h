@@ -4,13 +4,13 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_ABSTRACTCUSTOMEVENT_CLEAR_OFFSET UNITYSDK_OFFSET(0x1A498470)
-#define FOUNDATION_ABSTRACTCUSTOMEVENT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1A4983B0)
-#define FOUNDATION_ABSTRACTCUSTOMEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A498350)
+#define FOUNDATION_ABSTRACTCUSTOMEVENT_CLEAR_OFFSET UNITYSDK_OFFSET(0x1AA13AD0)
+#define FOUNDATION_ABSTRACTCUSTOMEVENT_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1AA13A10)
+#define FOUNDATION_ABSTRACTCUSTOMEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA139B0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AbstractCustomEvent_TypeDefinitionIndex = 7978;
+	inline static constexpr unsigned int AbstractCustomEvent_TypeDefinitionIndex = 8110;
 
 	class AbstractCustomEvent : public ::System::Object
 	{

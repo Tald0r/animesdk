@@ -5,22 +5,22 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define CLASS_2_BB20F8FCAFB0DAC7___C_METHOD_1_7FA76793F3BD81CC_OFFSET UNITYSDK_OFFSET(0x9959B20)
-#define CLASS_2_BB20F8FCAFB0DAC7___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9959AD0)
-#define CLASS_2_BB20F8FCAFB0DAC7___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9959B10)
+#define CLASS_2_BB20F8FCAFB0DAC7___C_METHOD_1_7FA76793F3BD81CC_OFFSET UNITYSDK_OFFSET(0x998FE10)
+#define CLASS_2_BB20F8FCAFB0DAC7___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x998FDC0)
+#define CLASS_2_BB20F8FCAFB0DAC7___C__CTOR_OFFSET UNITYSDK_OFFSET(0x998FE00)
 
-inline static constexpr unsigned int Class_2_BB20F8FCAFB0DAC7___c_TypeDefinitionIndex = 75020;
+inline static constexpr unsigned int Class_2_BB20F8FCAFB0DAC7___c_TypeDefinitionIndex = 47891;
 
 class Class_2_BB20F8FCAFB0DAC7___c : public ::System::Object
 {
 public:
-	static ::System::Comparison_1<::MoleMole::Battle::Entity*>** StaticGet___9__75_0()
-	{
-		return (::System::Comparison_1<::MoleMole::Battle::Entity*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_BB20F8FCAFB0DAC7___c_TypeDefinitionIndex)->GetStaticField(0x39A00);
-	}
 	static ::Class_2_BB20F8FCAFB0DAC7___c** StaticGet___9()
 	{
-		return (::Class_2_BB20F8FCAFB0DAC7___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_BB20F8FCAFB0DAC7___c_TypeDefinitionIndex)->GetStaticField(0x39A08);
+		return (::Class_2_BB20F8FCAFB0DAC7___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_BB20F8FCAFB0DAC7___c_TypeDefinitionIndex)->GetStaticField(0x3CC20);
+	}
+	static ::System::Comparison_1<::MoleMole::Battle::Entity*>** StaticGet___9__75_0()
+	{
+		return (::System::Comparison_1<::MoleMole::Battle::Entity*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_BB20F8FCAFB0DAC7___c_TypeDefinitionIndex)->GetStaticField(0x3CC28);
 	}
 
 	static ::System::Void _cctor()

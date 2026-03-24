@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System::IO { class Stream; }
 
-#define ICSHARPCODE_SHARPZIPLIB_ZIP_STATICDISKDATASOURCE_GETSOURCE_OFFSET UNITYSDK_OFFSET(0x1B104A80)
-#define ICSHARPCODE_SHARPZIPLIB_ZIP_STATICDISKDATASOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B104A70)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_STATICDISKDATASOURCE_GETSOURCE_OFFSET UNITYSDK_OFFSET(0x1B71C570)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_STATICDISKDATASOURCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B71C560)
 
 namespace ICSharpCode::SharpZipLib::Zip
 {
-	inline static constexpr unsigned int StaticDiskDataSource_TypeDefinitionIndex = 6743;
+	inline static constexpr unsigned int StaticDiskDataSource_TypeDefinitionIndex = 6747;
 
 	class StaticDiskDataSource : public ::System::Object
 	{

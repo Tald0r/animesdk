@@ -4,21 +4,21 @@
 
 namespace System { class Action; }
 
-#define CLASS_1_3BBFBFA80E3DB6CF__CTOR_OFFSET UNITYSDK_OFFSET(0x719EAF0)
+#define CLASS_1_3BBFBFA80E3DB6CF__CTOR_OFFSET UNITYSDK_OFFSET(0x88EF360)
 
-inline static constexpr unsigned int Class_1_3BBFBFA80E3DB6CF_TypeDefinitionIndex = 49700;
+inline static constexpr unsigned int Class_1_3BBFBFA80E3DB6CF_TypeDefinitionIndex = 47011;
 
 class Class_1_3BBFBFA80E3DB6CF : public ::System::Object
 {
 public:
 	::System::Action* Field_1_7; // 0x10
-	::System::UInt32 Field_1_0; // 0x18
-	::System::Int32 Field_1_1; // 0x1C
-	::System::Boolean Field_1_6; // 0x20
-	::System::Boolean Field_1_5; // 0x21
+	::System::Int32 Field_1_1; // 0x18
+	::System::UInt32 Field_1_0; // 0x1C
+	::System::Boolean Field_1_5; // 0x20
+	::System::Boolean Field_1_2; // 0x21
 	::System::Boolean Field_1_4; // 0x22
-	::System::Boolean Field_1_3; // 0x23
-	::System::Boolean Field_1_2; // 0x24
+	::System::Boolean Field_1_6; // 0x23
+	::System::Boolean Field_1_3; // 0x24
 
 	::System::Void _ctor()
 	{

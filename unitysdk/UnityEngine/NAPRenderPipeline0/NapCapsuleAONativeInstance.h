@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAONATIVEINSTANCE_CLEANUP_OFFSET UNITYSDK_OFFSET(0x19DDA940)
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAONATIVEINSTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x19DDA950)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAONATIVEINSTANCE_CLEANUP_OFFSET UNITYSDK_OFFSET(0x1A3652C0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAONATIVEINSTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3652D0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int NapCapsuleAONativeInstance_TypeDefinitionIndex = 5703;
+	inline static constexpr unsigned int NapCapsuleAONativeInstance_TypeDefinitionIndex = 5706;
 
 	class NapCapsuleAONativeInstance : public ::System::Object
 	{

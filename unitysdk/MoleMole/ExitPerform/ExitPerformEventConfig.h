@@ -6,11 +6,11 @@ namespace MoleMole::ExitPerform { class KillTypeExitPerformEventGroup; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_EXITPERFORM_EXITPERFORMEVENTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6AD37F0)
+#define MOLEMOLE_EXITPERFORM_EXITPERFORMEVENTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB5C2AE0)
 
 namespace MoleMole::ExitPerform
 {
-	inline static constexpr unsigned int ExitPerformEventConfig_TypeDefinitionIndex = 77003;
+	inline static constexpr unsigned int ExitPerformEventConfig_TypeDefinitionIndex = 39410;
 
 	class ExitPerformEventConfig : public ::System::Object
 	{

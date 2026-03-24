@@ -6,19 +6,19 @@
 
 namespace UnityEngine { class Transform; }
 
-#define PATHCREATION_UTILITY_MATHUTILITY_POSROTSCALE_SETTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1A51CA00)
-#define PATHCREATION_UTILITY_MATHUTILITY_POSROTSCALE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A51C940)
+#define PATHCREATION_UTILITY_MATHUTILITY_POSROTSCALE_SETTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1AAD63A0)
+#define PATHCREATION_UTILITY_MATHUTILITY_POSROTSCALE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD62E0)
 
 namespace PathCreation::Utility
 {
-	inline static constexpr unsigned int MathUtility_PosRotScale_TypeDefinitionIndex = 34301;
+	inline static constexpr unsigned int MathUtility_PosRotScale_TypeDefinitionIndex = 35303;
 
 	class MathUtility_PosRotScale : public ::System::Object
 	{
 	public:
-		::UnityEngine::Quaternion rotation; // 0x10
-		::UnityEngine::Vector3 position; // 0x20
-		::UnityEngine::Vector3 scale; // 0x2C
+		::UnityEngine::Vector3 scale; // 0x10
+		::UnityEngine::Vector3 position; // 0x1C
+		::UnityEngine::Quaternion rotation; // 0x28
 
 		::System::Void _ctor(::UnityEngine::Transform* t)
 		{

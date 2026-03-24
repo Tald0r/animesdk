@@ -4,21 +4,21 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGINSPIREZONEOPERATION__CTOR_OFFSET UNITYSDK_OFFSET(0x89FF530)
+#define MOLEMOLE_CONFIG_CONFIGINSPIREZONEOPERATION__CTOR_OFFSET UNITYSDK_OFFSET(0x10A98190)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigInspireZoneOperation_TypeDefinitionIndex = 41851;
+	inline static constexpr unsigned int ConfigInspireZoneOperation_TypeDefinitionIndex = 64804;
 
 	class ConfigInspireZoneOperation : public ::System::Object
 	{
 	public:
-		::System::String* UIShowTextKey; // 0x10
-		::System::String* IconResPath; // 0x18
-		::System::String* Name; // 0x20
+		::System::String* Name; // 0x10
+		::System::String* UIShowTextKey; // 0x18
+		::System::String* IconResPath; // 0x20
 		::System::Single FeverRecovery; // 0x28
-		::System::Int32 Priority; // 0x2C
-		::System::Single HoldTime; // 0x30
+		::System::Single HoldTime; // 0x2C
+		::System::Int32 Priority; // 0x30
 
 		::System::Void _ctor()
 		{

@@ -9,23 +9,23 @@ namespace MoleMole { class UIActivityCompWeekRewardBtnWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine { class Transform; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_BA30EE5D91DB6889_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x16632EA0)
-#define CLASS_2_BA30EE5D91DB6889_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x166330A0)
-#define CLASS_2_BA30EE5D91DB6889_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x166331B0)
-#define CLASS_2_BA30EE5D91DB6889__CTOR_OFFSET UNITYSDK_OFFSET(0x166331A0)
+#define CLASS_2_BA30EE5D91DB6889_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0xB143AB0)
+#define CLASS_2_BA30EE5D91DB6889_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xB143CB0)
+#define CLASS_2_BA30EE5D91DB6889_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB143DC0)
+#define CLASS_2_BA30EE5D91DB6889__CTOR_OFFSET UNITYSDK_OFFSET(0xB143DB0)
 
-inline static constexpr unsigned int Class_2_BA30EE5D91DB6889_TypeDefinitionIndex = 58581;
+inline static constexpr unsigned int Class_2_BA30EE5D91DB6889_TypeDefinitionIndex = 66685;
 
 class Class_2_BA30EE5D91DB6889 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::Animation* Field_2_5; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x20
-	::UnityEngine::Transform* Field_2_1; // 0x28
+	::UnityEngine::Transform* Field_2_1; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x28
 	::MonoUITableScrollV2* Field_2_2; // 0x30
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIActivityCompWeekRewardBtnWidgetController*>* Field_2_4; // 0x38
+	::Class_3_647A206587033F4E<::MoleMole::UIActivityCompWeekRewardBtnWidgetController*>* Field_2_4; // 0x38
 	::UnityEngine::Transform* Field_2_3; // 0x40
 
 	::System::Void _ctor()

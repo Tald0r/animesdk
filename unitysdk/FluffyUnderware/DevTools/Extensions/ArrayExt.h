@@ -4,7 +4,7 @@
 
 namespace FluffyUnderware::DevTools::Extensions
 {
-	inline static constexpr unsigned int ArrayExt_TypeDefinitionIndex = 24577;
+	inline static constexpr unsigned int ArrayExt_TypeDefinitionIndex = 25402;
 
 	class ArrayExt : public ::System::Object
 	{

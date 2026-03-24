@@ -7,18 +7,18 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::AI { class NavMeshAgent; }
 
-#define NODECANVAS_TASKS_CONDITIONS_PATHEXISTS_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A183F60)
-#define NODECANVAS_TASKS_CONDITIONS_PATHEXISTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1840E0)
+#define NODECANVAS_TASKS_CONDITIONS_PATHEXISTS_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A72C7E0)
+#define NODECANVAS_TASKS_CONDITIONS_PATHEXISTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A72C960)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int PathExists_TypeDefinitionIndex = 25321;
+	inline static constexpr unsigned int PathExists_TypeDefinitionIndex = 27059;
 
 	class PathExists : public ::NodeCanvas::Framework::ConditionTask_1<::UnityEngine::AI::NavMeshAgent*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Vector3>* targetPosition; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>* savePathAs; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::Vector3>*>* savePathAs; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Vector3>* targetPosition; // 0x68
 
 		::System::Void _ctor()
 		{

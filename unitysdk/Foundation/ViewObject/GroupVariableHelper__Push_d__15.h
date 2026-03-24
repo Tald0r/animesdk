@@ -5,29 +5,29 @@
 #include "unitysdk/Cysharp/Threading/Tasks/YieldAwaitable_Awaiter.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_0_16E4307DCC419505_4;
-class Class_3_3EC97B498E0B85D2_1;
+class Class_0_16E4307DCC419505_3;
+class Class_3_3EC97B498E0B85D2;
 namespace Cysharp::Threading::Tasks { template <typename T> class UniTaskCompletionSource_1; }
 namespace Foundation::ViewObject { class GroupVariableHelper; }
 namespace Foundation::ViewObject { class GroupVariableHelper___c__DisplayClass15_0; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER__PUSH_D__15_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B0AC0)
-#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER__PUSH_D__15_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER__PUSH_D__15_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x32AB80)
+#define FOUNDATION_VIEWOBJECT_GROUPVARIABLEHELPER__PUSH_D__15_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int GroupVariableHelper__Push_d__15_TypeDefinitionIndex = 68077;
+	inline static constexpr unsigned int GroupVariableHelper__Push_d__15_TypeDefinitionIndex = 41678;
 
 	struct alignas(8) GroupVariableHelper__Push_d__15
 	{
-		::Foundation::ViewObject::GroupVariableHelper* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::UniTaskCompletionSource_1<::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_0_16E4307DCC419505_4*>*>* resultTcs; // 0x18
-		::Class_3_3EC97B498E0B85D2_1* reason; // 0x20
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
-		::Foundation::ViewObject::GroupVariableHelper___c__DisplayClass15_0* __8__1; // 0x38
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x40
+		::Cysharp::Threading::Tasks::UniTaskCompletionSource_1<::System::Collections::Generic::Dictionary_2<::System::UInt32, ::Class_0_16E4307DCC419505_3*>*>* resultTcs; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x18
+		::Class_3_3EC97B498E0B85D2* reason; // 0x28
+		::Foundation::ViewObject::GroupVariableHelper___c__DisplayClass15_0* __8__1; // 0x30
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x38
+		::Foundation::ViewObject::GroupVariableHelper* __4__this; // 0x48
 		::System::Int32 __1__state; // 0x50
 		::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter __u__1; // 0x54
 

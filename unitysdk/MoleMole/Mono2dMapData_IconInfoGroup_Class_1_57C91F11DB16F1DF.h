@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_525;
+class Class_2_208CC9941471731A_248;
 namespace MoleMole { class Mono2dMapData_IconInfo; }
 
-#define MOLEMOLE_MONO2DMAPDATA_ICONINFOGROUP_CLASS_1_57C91F11DB16F1DF_METHOD_1_B37A116E85904A23_OFFSET UNITYSDK_OFFSET(0x8B1E360)
-#define MOLEMOLE_MONO2DMAPDATA_ICONINFOGROUP_CLASS_1_57C91F11DB16F1DF__CTOR_OFFSET UNITYSDK_OFFSET(0x8B1E350)
+#define MOLEMOLE_MONO2DMAPDATA_ICONINFOGROUP_CLASS_1_57C91F11DB16F1DF_METHOD_1_B37A116E85904A23_OFFSET UNITYSDK_OFFSET(0x7A8B370)
+#define MOLEMOLE_MONO2DMAPDATA_ICONINFOGROUP_CLASS_1_57C91F11DB16F1DF__CTOR_OFFSET UNITYSDK_OFFSET(0x7A8B360)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int Mono2dMapData_IconInfoGroup_Class_1_57C91F11DB16F1DF_TypeDefinitionIndex = 63989;
+	inline static constexpr unsigned int Mono2dMapData_IconInfoGroup_Class_1_57C91F11DB16F1DF_TypeDefinitionIndex = 38115;
 
 	class Mono2dMapData_IconInfoGroup_Class_1_57C91F11DB16F1DF : public ::System::Object
 	{
 	public:
-		::Class_2_208CC9941471731A_525* Field_1_0; // 0x10
+		::Class_2_208CC9941471731A_248* Field_1_0; // 0x10
 
 		::System::Void _ctor()
 		{

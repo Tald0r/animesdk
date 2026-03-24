@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/PipelineCamera/CameraSequence/Timeline/SequenceCompositeTrack.h"
 
-#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SEQUENCEADDITIVETRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1B150010)
+#define PIPELINECAMERA_CAMERASEQUENCE_TIMELINE_SEQUENCEADDITIVETRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1B76EFC0)
 
 namespace PipelineCamera::CameraSequence::Timeline
 {
-	inline static constexpr unsigned int SequenceAdditiveTrack_TypeDefinitionIndex = 81148;
+	inline static constexpr unsigned int SequenceAdditiveTrack_TypeDefinitionIndex = 83189;
 
 	class SequenceAdditiveTrack : public ::PipelineCamera::CameraSequence::Timeline::SequenceCompositeTrack
 	{

@@ -3,19 +3,19 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformanceSendCmdWithoutParamsNode_GachaPerformanceCmdType_TypeDefinitionIndex = 76505;
+	inline static constexpr unsigned int ConfigGachaPerformanceSendCmdWithoutParamsNode_GachaPerformanceCmdType_TypeDefinitionIndex = 59418;
 
 	enum class ConfigGachaPerformanceSendCmdWithoutParamsNode_GachaPerformanceCmdType : ::System::Int32
 	{
-		PlaySummonsBornAnimation = 9,
 		PlayItemShake = 3,
-		ItemStageRaritySPerform = 1,
-		ResetGaussianBlurParams = 2,
-		ItemStageRarityPerform = 7,
 		PlayStageRotateScreenEffects = 5,
+		ItemStageRaritySPerform = 1,
 		PlayStageRotateEffect = 6,
-		SetTvMatProperty = 4,
+		PlaySummonsBornAnimation = 9,
 		PlayTextShotTimeline = 8,
 		TvRaritySPerform = 0,
+		SetTvMatProperty = 4,
+		ResetGaussianBlurParams = 2,
+		ItemStageRarityPerform = 7,
 	};
 }

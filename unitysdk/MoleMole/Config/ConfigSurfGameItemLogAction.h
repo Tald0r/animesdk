@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMLOGACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x13F9F510)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMLOGACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x13F9F570)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMLOGACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0xF2D90C0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMLOGACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D9120)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemLogAction_TypeDefinitionIndex = 69523;
+	inline static constexpr unsigned int ConfigSurfGameItemLogAction_TypeDefinitionIndex = 45418;
 
 	class ConfigSurfGameItemLogAction : public ::MoleMole::Config::ConfigSurfGameItemAction
 	{

@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGDYNAMICCHECKTREE__CTOR_OFFSET UNITYSDK_OFFSET(0xCCACEC0)
+#define MOLEMOLE_CONFIGDYNAMICCHECKTREE__CTOR_OFFSET UNITYSDK_OFFSET(0xACDBDB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigDynamicCheckTree_TypeDefinitionIndex = 68416;
+	inline static constexpr unsigned int ConfigDynamicCheckTree_TypeDefinitionIndex = 37501;
 
 	class ConfigDynamicCheckTree : public ::Foundation::MihoyoSerializedScriptableObject
 	{

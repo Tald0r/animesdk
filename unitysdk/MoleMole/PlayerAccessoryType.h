@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PlayerAccessoryType_TypeDefinitionIndex = 40214;
+	inline static constexpr unsigned int PlayerAccessoryType_TypeDefinitionIndex = 47087;
 
 	enum class PlayerAccessoryType : ::System::Int32
 	{
-		Chest = 3,
 		Back = 4,
+		Chest = 3,
 		Head = 2,
 		All = 1,
 	};

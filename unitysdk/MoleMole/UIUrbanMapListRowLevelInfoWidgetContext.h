@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIURBANMAPLISTROWLEVELINFOWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA7676F0)
+#define MOLEMOLE_UIURBANMAPLISTROWLEVELINFOWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAB0EC50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapListRowLevelInfoWidgetContext_TypeDefinitionIndex = 48158;
+	inline static constexpr unsigned int UIUrbanMapListRowLevelInfoWidgetContext_TypeDefinitionIndex = 69631;
 
 	class UIUrbanMapListRowLevelInfoWidgetContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Int32 WorldLevel; // 0x28
-		::System::Int32 CurrentExp; // 0x2C
+		::System::Int32 CurrentExp; // 0x28
+		::System::Int32 WorldLevel; // 0x2C
 		::System::Int32 PlayerLevel; // 0x30
 
 		::System::Void _ctor()

@@ -4,10 +4,10 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define SCENEOBJECTSTATECLIENTSERVER_REQUESTSCENEOBJECTSWITCHSTATE_OFFSET UNITYSDK_OFFSET(0x1815E800)
-#define SCENEOBJECTSTATECLIENTSERVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1815E990)
+#define SCENEOBJECTSTATECLIENTSERVER_REQUESTSCENEOBJECTSWITCHSTATE_OFFSET UNITYSDK_OFFSET(0x1826ED40)
+#define SCENEOBJECTSTATECLIENTSERVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1826EED0)
 
-inline static constexpr unsigned int SceneObjectStateClientServer_TypeDefinitionIndex = 52638;
+inline static constexpr unsigned int SceneObjectStateClientServer_TypeDefinitionIndex = 67504;
 
 class SceneObjectStateClientServer : public ::Class_1_C974D9B5A2874893
 {

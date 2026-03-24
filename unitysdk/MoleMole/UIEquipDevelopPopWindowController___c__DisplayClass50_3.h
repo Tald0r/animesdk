@@ -2,26 +2,26 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_9F091E965E210217_18;
+class Class_3_9F091E965E210217_4;
 class MatAnimation;
 namespace MoleMole { class UIEquipDevelopPopWindowController___c__DisplayClass50_2; }
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_UIEQUIPDEVELOPPOPWINDOWCONTROLLER___C__DISPLAYCLASS50_3__CTOR_OFFSET UNITYSDK_OFFSET(0xA8F0B60)
-#define MOLEMOLE_UIEQUIPDEVELOPPOPWINDOWCONTROLLER___C__DISPLAYCLASS50_3__ONCLICKEQUIPLEVELBTN_B__3_OFFSET UNITYSDK_OFFSET(0xA8F0B70)
-#define MOLEMOLE_UIEQUIPDEVELOPPOPWINDOWCONTROLLER___C__DISPLAYCLASS50_3__ONCLICKEQUIPLEVELBTN_B__4_OFFSET UNITYSDK_OFFSET(0xA8F0C30)
+#define MOLEMOLE_UIEQUIPDEVELOPPOPWINDOWCONTROLLER___C__DISPLAYCLASS50_3__CTOR_OFFSET UNITYSDK_OFFSET(0xA91A7D0)
+#define MOLEMOLE_UIEQUIPDEVELOPPOPWINDOWCONTROLLER___C__DISPLAYCLASS50_3__ONCLICKEQUIPLEVELBTN_B__3_OFFSET UNITYSDK_OFFSET(0xA91A7E0)
+#define MOLEMOLE_UIEQUIPDEVELOPPOPWINDOWCONTROLLER___C__DISPLAYCLASS50_3__ONCLICKEQUIPLEVELBTN_B__4_OFFSET UNITYSDK_OFFSET(0xA91A8A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIEquipDevelopPopWindowController___c__DisplayClass50_3_TypeDefinitionIndex = 53584;
+	inline static constexpr unsigned int UIEquipDevelopPopWindowController___c__DisplayClass50_3_TypeDefinitionIndex = 71926;
 
 	class UIEquipDevelopPopWindowController___c__DisplayClass50_3 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIEquipDevelopPopWindowController___c__DisplayClass50_2* CS___8__locals1; // 0x10
-		::UnityEngine::Animation* anim; // 0x18
+		::UnityEngine::Animation* anim; // 0x10
+		::Class_3_9F091E965E210217_4* newInfo; // 0x18
 		::MatAnimation* matAnim; // 0x20
-		::Class_3_9F091E965E210217_18* newInfo; // 0x28
+		::MoleMole::UIEquipDevelopPopWindowController___c__DisplayClass50_2* CS___8__locals1; // 0x28
 		::System::Int32 canMaxLevel; // 0x30
 
 		::System::Void _ctor()

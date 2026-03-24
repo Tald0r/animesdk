@@ -6,11 +6,11 @@ namespace Sirenix::Serialization { class IUnityGeneratedFormatter; }
 namespace System { class Type; }
 namespace UnityEngine { class Object; }
 
-#define SIRENIX_SERIALIZATION_UNITYSERIALIZATIONUTILITY_UNITYOBJECTCACHEDATA_GET_OFFSET UNITYSDK_OFFSET(0x928EE0)
+#define SIRENIX_SERIALIZATION_UNITYSERIALIZATIONUTILITY_UNITYOBJECTCACHEDATA_GET_OFFSET UNITYSDK_OFFSET(0x9562E0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int UnitySerializationUtility_UnityObjectCacheData_TypeDefinitionIndex = 7463;
+	inline static constexpr unsigned int UnitySerializationUtility_UnityObjectCacheData_TypeDefinitionIndex = 7468;
 
 	struct alignas(8) UnitySerializationUtility_UnityObjectCacheData
 	{

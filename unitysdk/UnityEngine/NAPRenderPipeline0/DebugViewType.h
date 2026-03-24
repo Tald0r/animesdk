@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int DebugViewType_TypeDefinitionIndex = 5854;
+	inline static constexpr unsigned int DebugViewType_TypeDefinitionIndex = 5856;
 
 	enum class DebugViewType : ::System::Int32
 	{

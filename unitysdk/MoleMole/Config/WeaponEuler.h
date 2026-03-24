@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int WeaponEuler_TypeDefinitionIndex = 59244;
+	inline static constexpr unsigned int WeaponEuler_TypeDefinitionIndex = 65340;
 
 	struct alignas(4) WeaponEuler
 	{

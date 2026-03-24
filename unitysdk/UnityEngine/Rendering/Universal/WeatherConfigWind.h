@@ -4,22 +4,22 @@
 
 namespace UnityEngine::Rendering::Universal { class SingleWeatherConfigWind; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND_DEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x16FA8520)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND_GETINDEX_OFFSET UNITYSDK_OFFSET(0x16FA8420)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND_LERP_OFFSET UNITYSDK_OFFSET(0x16FA8580)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND__CCTOR_OFFSET UNITYSDK_OFFSET(0x16FA8910)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND__CTOR_OFFSET UNITYSDK_OFFSET(0x16FA88C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND_DEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x1767A920)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND_GETINDEX_OFFSET UNITYSDK_OFFSET(0x1767A820)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND_LERP_OFFSET UNITYSDK_OFFSET(0x1767A980)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND__CCTOR_OFFSET UNITYSDK_OFFSET(0x1767AD10)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWIND__CTOR_OFFSET UNITYSDK_OFFSET(0x1767ACC0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int WeatherConfigWind_TypeDefinitionIndex = 28351;
+	inline static constexpr unsigned int WeatherConfigWind_TypeDefinitionIndex = 29292;
 
 	class WeatherConfigWind : public ::UnityEngine::ScriptableObject
 	{
 	public:
 		static ::UnityEngine::Rendering::Universal::SingleWeatherConfigWind** StaticGet_s_CachedWindConfig()
 		{
-			return (::UnityEngine::Rendering::Universal::SingleWeatherConfigWind**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfigWind_TypeDefinitionIndex)->GetStaticField(0x22750);
+			return (::UnityEngine::Rendering::Universal::SingleWeatherConfigWind**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfigWind_TypeDefinitionIndex)->GetStaticField(0x23900);
 		}
 		::Il2CppArray<::UnityEngine::Rendering::Universal::SingleWeatherConfigWind*>* configs; // 0x18
 

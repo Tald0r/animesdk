@@ -10,24 +10,24 @@ namespace UnityEngine { class Animation; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::Video { class VideoPlayer; }
 
-#define CLASS_2_5F3C3489C387373C_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x91C0EC0)
-#define CLASS_2_5F3C3489C387373C_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x91C10D0)
-#define CLASS_2_5F3C3489C387373C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x91C11E0)
-#define CLASS_2_5F3C3489C387373C__CTOR_OFFSET UNITYSDK_OFFSET(0x91C11D0)
+#define CLASS_2_5F3C3489C387373C_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x75B8390)
+#define CLASS_2_5F3C3489C387373C_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x75B85A0)
+#define CLASS_2_5F3C3489C387373C_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x75B86B0)
+#define CLASS_2_5F3C3489C387373C__CTOR_OFFSET UNITYSDK_OFFSET(0x75B86A0)
 
-inline static constexpr unsigned int Class_2_5F3C3489C387373C_TypeDefinitionIndex = 72200;
+inline static constexpr unsigned int Class_2_5F3C3489C387373C_TypeDefinitionIndex = 42952;
 
 class Class_2_5F3C3489C387373C : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Video::VideoPlayer* Field_2_7; // 0x18
-	::MoleMole::ImgTextParserBase* Field_2_5; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x30
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x18
+	::UnityEngine::Animation* Field_2_4; // 0x20
+	::UnityEngine::Animation* Field_2_6; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x30
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x38
-	::UnityEngine::Animation* Field_2_6; // 0x40
-	::UnityEngine::Animation* Field_2_4; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x40
+	::UnityEngine::Video::VideoPlayer* Field_2_7; // 0x48
+	::MoleMole::ImgTextParserBase* Field_2_5; // 0x50
 
 	::System::Void _ctor()
 	{

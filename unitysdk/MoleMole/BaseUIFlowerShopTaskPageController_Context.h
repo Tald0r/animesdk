@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x65322C0)
+#define MOLEMOLE_BASEUIFLOWERSHOPTASKPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x81CAA80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BaseUIFlowerShopTaskPageController_Context_TypeDefinitionIndex = 68275;
+	inline static constexpr unsigned int BaseUIFlowerShopTaskPageController_Context_TypeDefinitionIndex = 58107;
 
 	class BaseUIFlowerShopTaskPageController_Context : public ::MoleMole::UIControllerContextBase
 	{

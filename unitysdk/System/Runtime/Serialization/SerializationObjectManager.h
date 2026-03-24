@@ -6,10 +6,10 @@
 namespace System::Collections { class Hashtable; }
 namespace System::Runtime::Serialization { class SerializationEventHandler; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER_ADDONSERIALIZED_OFFSET UNITYSDK_OFFSET(0x1914A060)
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER_RAISEONSERIALIZEDEVENT_OFFSET UNITYSDK_OFFSET(0x1914A0E0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER_REGISTEROBJECT_OFFSET UNITYSDK_OFFSET(0x19149EF0)
-#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x19149E30)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER_ADDONSERIALIZED_OFFSET UNITYSDK_OFFSET(0x194EF9F0)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER_RAISEONSERIALIZEDEVENT_OFFSET UNITYSDK_OFFSET(0x194EFA70)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER_REGISTEROBJECT_OFFSET UNITYSDK_OFFSET(0x194EF880)
+#define SYSTEM_RUNTIME_SERIALIZATION_SERIALIZATIONOBJECTMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x194EF7C0)
 
 namespace System::Runtime::Serialization
 {
@@ -18,9 +18,9 @@ namespace System::Runtime::Serialization
 	class SerializationObjectManager : public ::System::Object
 	{
 	public:
-		::System::Runtime::Serialization::SerializationEventHandler* m_onSerializedHandler; // 0x10
-		::System::Collections::Hashtable* m_objectSeenTable; // 0x18
-		::System::Runtime::Serialization::StreamingContext m_context; // 0x20
+		::System::Runtime::Serialization::StreamingContext m_context; // 0x10
+		::System::Collections::Hashtable* m_objectSeenTable; // 0x20
+		::System::Runtime::Serialization::SerializationEventHandler* m_onSerializedHandler; // 0x28
 
 		::System::Void _ctor(::System::Runtime::Serialization::StreamingContext context)
 		{

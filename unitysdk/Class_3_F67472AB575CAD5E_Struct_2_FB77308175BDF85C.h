@@ -8,27 +8,27 @@
 
 class Class_3_07AAFA6F7F79BEB3;
 class Class_3_F67472AB575CAD5E;
-class Class_3_F67472AB575CAD5E_Class_1_2DCCD7109DCE33A1;
+class Class_3_F67472AB575CAD5E_Class_1_2DCCD7109DCE33A1_1;
 namespace MoleMole::Battle { class Entity; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_3_F67472AB575CAD5E_STRUCT_2_FB77308175BDF85C_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x356810)
-#define CLASS_3_F67472AB575CAD5E_STRUCT_2_FB77308175BDF85C_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_3_F67472AB575CAD5E_STRUCT_2_FB77308175BDF85C_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x33D460)
+#define CLASS_3_F67472AB575CAD5E_STRUCT_2_FB77308175BDF85C_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_3_F67472AB575CAD5E_Struct_2_FB77308175BDF85C_TypeDefinitionIndex = 52059;
+inline static constexpr unsigned int Class_3_F67472AB575CAD5E_Struct_2_FB77308175BDF85C_TypeDefinitionIndex = 40872;
 
 struct alignas(8) Class_3_F67472AB575CAD5E_Struct_2_FB77308175BDF85C
 {
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_9; // 0x10
-	::Class_3_07AAFA6F7F79BEB3* Field_2_2; // 0x20
-	::Class_3_F67472AB575CAD5E_Class_1_2DCCD7109DCE33A1* Field_2_4; // 0x28
-	::MoleMole::Battle::Entity* Field_2_7; // 0x30
-	::Class_3_F67472AB575CAD5E* Field_2_3; // 0x38
-	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::MoleMole::Battle::Entity*> Field_2_8; // 0x40
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x58
-	::System::Int32 Field_2_0; // 0x68
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x10
+	::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::MoleMole::Battle::Entity*> Field_2_8; // 0x20
+	::Class_3_07AAFA6F7F79BEB3* Field_2_2; // 0x38
+	::MoleMole::Battle::Entity* Field_2_7; // 0x40
+	::Class_3_F67472AB575CAD5E_Class_1_2DCCD7109DCE33A1_1* Field_2_4; // 0x48
+	::Class_3_F67472AB575CAD5E* Field_2_3; // 0x50
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_9; // 0x58
+	::System::Boolean Field_2_6; // 0x68
 	::UnityEngine::Vector3 Field_2_5; // 0x6C
-	::System::Boolean Field_2_6; // 0x78
+	::System::Int32 Field_2_0; // 0x78
 
 	::System::Void MoveNext()
 	{

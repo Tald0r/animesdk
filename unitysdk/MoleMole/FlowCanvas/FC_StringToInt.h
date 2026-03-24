@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_FC_STRINGTOINT_INVOKE_OFFSET UNITYSDK_OFFSET(0xC20CED0)
-#define MOLEMOLE_FLOWCANVAS_FC_STRINGTOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xC20CFB0)
+#define MOLEMOLE_FLOWCANVAS_FC_STRINGTOINT_INVOKE_OFFSET UNITYSDK_OFFSET(0xB8237C0)
+#define MOLEMOLE_FLOWCANVAS_FC_STRINGTOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xB8238A0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int FC_StringToInt_TypeDefinitionIndex = 46313;
+	inline static constexpr unsigned int FC_StringToInt_TypeDefinitionIndex = 72197;
 
 	class FC_StringToInt : public ::MoleMole::FlowCanvas::ChessboardPureFunctionNode_2<::System::Int32, ::System::String*>
 	{

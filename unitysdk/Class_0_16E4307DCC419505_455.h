@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_4_AC6D98911872E0CE;
-namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace System { class String; }
+namespace UnityEngine { class Material; }
+namespace UnityEngine { class Transform; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_455_TypeDefinitionIndex = 48360;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_455_TypeDefinitionIndex = 50673;
 
 class Class_0_16E4307DCC419505_455
 {

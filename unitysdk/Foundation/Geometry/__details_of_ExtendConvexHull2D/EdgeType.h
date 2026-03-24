@@ -3,12 +3,12 @@
 
 namespace Foundation::Geometry::__details_of_ExtendConvexHull2D
 {
-	inline static constexpr unsigned int EdgeType_TypeDefinitionIndex = 8985;
+	inline static constexpr unsigned int EdgeType_TypeDefinitionIndex = 8832;
 
 	enum class EdgeType : ::System::Int32
 	{
-		None = 0,
-		EllipseArc = 2,
 		Segment = 1,
+		EllipseArc = 2,
+		None = 0,
 	};
 }

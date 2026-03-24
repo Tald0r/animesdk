@@ -1,41 +1,41 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
+#include "unitysdk/MoleMole/GetItemListShow_GoBtnData.h"
 
 class Class_1_0D6706375CDAAE8C;
 class Class_1_61B3BCD70D19C820;
 namespace System { class Action; }
 namespace System { class String; }
+namespace System { template <typename T> class Func_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GETITEMLISTSHOW_DIRECTSHOW_OFFSET UNITYSDK_OFFSET(0xC223EF0)
-#define MOLEMOLE_GETITEMLISTSHOW_DOPROCESS_OFFSET UNITYSDK_OFFSET(0xC223F60)
-#define MOLEMOLE_GETITEMLISTSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xC223A90)
-#define MOLEMOLE_GETITEMLISTSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xC223E80)
-#define MOLEMOLE_GETITEMLISTSHOW_SETDETAILANDTTITLE_OFFSET UNITYSDK_OFFSET(0xC224360)
-#define MOLEMOLE_GETITEMLISTSHOW_SETGOBTN_OFFSET UNITYSDK_OFFSET(0xC2242E0)
-#define MOLEMOLE_GETITEMLISTSHOW_SETMESSAGECONFIG_OFFSET UNITYSDK_OFFSET(0xC223E10)
-#define MOLEMOLE_GETITEMLISTSHOW_SHOWREWARDWINDOW_OFFSET UNITYSDK_OFFSET(0xC223FD0)
-#define MOLEMOLE_GETITEMLISTSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xC223AA0)
-#define MOLEMOLE_GETITEMLISTSHOW___BASE_SETMESSAGECONFIG_OFFSET UNITYSDK_OFFSET(0xC2243E0)
+#define MOLEMOLE_GETITEMLISTSHOW_DIRECTSHOW_OFFSET UNITYSDK_OFFSET(0xB83A660)
+#define MOLEMOLE_GETITEMLISTSHOW_DOPROCESS_OFFSET UNITYSDK_OFFSET(0xB83A6D0)
+#define MOLEMOLE_GETITEMLISTSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xB83A200)
+#define MOLEMOLE_GETITEMLISTSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xB83A5F0)
+#define MOLEMOLE_GETITEMLISTSHOW_SETDETAILANDTTITLE_OFFSET UNITYSDK_OFFSET(0xB83AAF0)
+#define MOLEMOLE_GETITEMLISTSHOW_SETGOBTN_OFFSET UNITYSDK_OFFSET(0xB83AA60)
+#define MOLEMOLE_GETITEMLISTSHOW_SETMESSAGECONFIG_OFFSET UNITYSDK_OFFSET(0xB83A580)
+#define MOLEMOLE_GETITEMLISTSHOW_SHOWREWARDWINDOW_OFFSET UNITYSDK_OFFSET(0xB83A740)
+#define MOLEMOLE_GETITEMLISTSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xB83A210)
+#define MOLEMOLE_GETITEMLISTSHOW___BASE_SETMESSAGECONFIG_OFFSET UNITYSDK_OFFSET(0xB83AB70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GetItemListShow_TypeDefinitionIndex = 57494;
+	inline static constexpr unsigned int GetItemListShow_TypeDefinitionIndex = 69504;
 
 	class GetItemListShow : public ::MoleMole::DisplayMessageBase
 	{
 	public:
 		::System::String* detail; // 0x28
-		::System::String* GainTitle; // 0x30
-		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* items; // 0x38
-		::Class_1_61B3BCD70D19C820* _context; // 0x40
-		::System::String* title; // 0x48
-		::System::String* goText; // 0x50
-		::System::Action* goCallback; // 0x58
-		::System::Boolean ShowCustomGainText; // 0x60
-		::System::Boolean showGoBtn; // 0x61
-		::System::Boolean showCustomDetailTitle; // 0x62
+		::Class_1_61B3BCD70D19C820* _context; // 0x30
+		::System::String* title; // 0x38
+		::System::String* GainTitle; // 0x40
+		::System::Collections::Generic::List_1<::Class_1_0D6706375CDAAE8C*>* items; // 0x48
+		::MoleMole::GetItemListShow_GoBtnData GoData; // 0x50
+		::System::Boolean showCustomDetailTitle; // 0x70
+		::System::Boolean ShowCustomGainText; // 0x71
 
 		::System::Void _ctor(::Class_1_61B3BCD70D19C820* context)
 		{
@@ -72,9 +72,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_GETITEMLISTSHOW_SHOWREWARDWINDOW_OFFSET))(this);
 		}
 
-		::System::Void SetGoBtn(::System::String* key, ::System::Action* callback)
+		::System::Void SetGoBtn(::System::String* key, ::System::Action* callback, ::System::Func_1<::System::Boolean>* showGoPredicate)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Action*))((::PBYTE)hIl2Cpp + MOLEMOLE_GETITEMLISTSHOW_SETGOBTN_OFFSET))(this, key, callback);
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Action*, ::System::Func_1<::System::Boolean>*))((::PBYTE)hIl2Cpp + MOLEMOLE_GETITEMLISTSHOW_SETGOBTN_OFFSET))(this, key, callback, showGoPredicate);
 		}
 
 		::System::Void SetDetailAndTtitle(::System::String* title, ::System::String* detail)

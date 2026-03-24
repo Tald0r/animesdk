@@ -6,24 +6,24 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_NAMEANDPARAMETERS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A58CB30)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_NAMEANDPARAMETERS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A58CB70)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_NAMEANDPARAMETERS___C__TOSTRING_B__8_0_OFFSET UNITYSDK_OFFSET(0x1A58CB80)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_NAMEANDPARAMETERS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AB30340)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_NAMEANDPARAMETERS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB30380)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_NAMEANDPARAMETERS___C__TOSTRING_B__8_0_OFFSET UNITYSDK_OFFSET(0x1AB30390)
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int NameAndParameters___c_TypeDefinitionIndex = 27947;
+	inline static constexpr unsigned int NameAndParameters___c_TypeDefinitionIndex = 28887;
 
 	class NameAndParameters___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::UnityEngine::InputSystem::Utilities::NamedValue, ::System::String*>** StaticGet___9__8_0()
-		{
-			return (::System::Func_2<::UnityEngine::InputSystem::Utilities::NamedValue, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(NameAndParameters___c_TypeDefinitionIndex)->GetStaticField(0x205D0);
-		}
 		static ::UnityEngine::InputSystem::Utilities::NameAndParameters___c** StaticGet___9()
 		{
-			return (::UnityEngine::InputSystem::Utilities::NameAndParameters___c**)Il2CppClass::FromTypeDefinitionIndex(NameAndParameters___c_TypeDefinitionIndex)->GetStaticField(0x205D8);
+			return (::UnityEngine::InputSystem::Utilities::NameAndParameters___c**)Il2CppClass::FromTypeDefinitionIndex(NameAndParameters___c_TypeDefinitionIndex)->GetStaticField(0x21C30);
+		}
+		static ::System::Func_2<::UnityEngine::InputSystem::Utilities::NamedValue, ::System::String*>** StaticGet___9__8_0()
+		{
+			return (::System::Func_2<::UnityEngine::InputSystem::Utilities::NamedValue, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(NameAndParameters___c_TypeDefinitionIndex)->GetStaticField(0x21C38);
 		}
 
 		static ::System::Void _cctor()

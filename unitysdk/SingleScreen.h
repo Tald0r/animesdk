@@ -4,9 +4,9 @@
 
 class ScreenPlayData;
 
-#define SINGLESCREEN__CTOR_OFFSET UNITYSDK_OFFSET(0x16C5B160)
+#define SINGLESCREEN__CTOR_OFFSET UNITYSDK_OFFSET(0xAEA4F20)
 
-inline static constexpr unsigned int SingleScreen_TypeDefinitionIndex = 59778;
+inline static constexpr unsigned int SingleScreen_TypeDefinitionIndex = 50147;
 
 class SingleScreen : public ::System::Object
 {

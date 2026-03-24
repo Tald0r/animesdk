@@ -3,7 +3,7 @@
 
 namespace NPCCrowd::Animation::CurveGenerator
 {
-	inline static constexpr unsigned int ICurveGenerator_TypeDefinitionIndex = 78904;
+	inline static constexpr unsigned int ICurveGenerator_TypeDefinitionIndex = 61595;
 
 	class ICurveGenerator
 	{

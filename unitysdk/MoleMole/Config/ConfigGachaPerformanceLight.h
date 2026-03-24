@@ -7,33 +7,33 @@
 #include "unitysdk/UnityEngine/Vector2.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHT_ISSHOWSHADOWPARAMS_OFFSET UNITYSDK_OFFSET(0x84A7830)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHT_ISSPOTLIGHT_OFFSET UNITYSDK_OFFSET(0x84A77C0)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHT__CTOR_OFFSET UNITYSDK_OFFSET(0x84A78A0)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHT_ISSHOWSHADOWPARAMS_OFFSET UNITYSDK_OFFSET(0x94FF660)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHT_ISSPOTLIGHT_OFFSET UNITYSDK_OFFSET(0x94FF5F0)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCELIGHT__CTOR_OFFSET UNITYSDK_OFFSET(0x94FF6D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformanceLight_TypeDefinitionIndex = 77793;
+	inline static constexpr unsigned int ConfigGachaPerformanceLight_TypeDefinitionIndex = 60230;
 
 	class ConfigGachaPerformanceLight : public ::System::Object
 	{
 	public:
-		::System::Single Range; // 0x10
-		::UnityEngine::Color AvatarLightColor; // 0x14
-		::System::Single Intensity; // 0x24
-		::MoleMole::Config::ConfigGachaPerformanceLight_GachaPerformanceLightType Type; // 0x28
-		::UnityEngine::LightShadows ShadowType; // 0x2C
-		::System::Single ShadowStrength; // 0x30
-		::System::Single FogRange; // 0x34
-		::System::Single ShadowNearPlane; // 0x38
-		::UnityEngine::Color LightColor; // 0x3C
-		::UnityEngine::Vector3 LocalRot; // 0x4C
-		::System::Single AvatarLightMultiplier; // 0x58
-		::System::Boolean HasVolumetricFog; // 0x5C
-		::System::Single FogIntensity; // 0x60
-		::UnityEngine::Vector3 LocalPos; // 0x64
-		::UnityEngine::Vector2 InnerOuterSpotAngle; // 0x70
-		::System::Single FogZOffset; // 0x78
+		::MoleMole::Config::ConfigGachaPerformanceLight_GachaPerformanceLightType Type; // 0x10
+		::System::Single AvatarLightMultiplier; // 0x14
+		::System::Single FogZOffset; // 0x18
+		::UnityEngine::Vector2 InnerOuterSpotAngle; // 0x1C
+		::System::Single FogRange; // 0x24
+		::System::Single FogIntensity; // 0x28
+		::System::Single ShadowStrength; // 0x2C
+		::UnityEngine::Vector3 LocalRot; // 0x30
+		::System::Single ShadowNearPlane; // 0x3C
+		::System::Single Range; // 0x40
+		::System::Single Intensity; // 0x44
+		::System::Boolean HasVolumetricFog; // 0x48
+		::UnityEngine::Color AvatarLightColor; // 0x4C
+		::UnityEngine::Vector3 LocalPos; // 0x5C
+		::UnityEngine::LightShadows ShadowType; // 0x68
+		::UnityEngine::Color LightColor; // 0x6C
 
 		::System::Void _ctor()
 		{

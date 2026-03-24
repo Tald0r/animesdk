@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_EXPERIMENTAL_U2D_SPRITERENDERERGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x19BC5BE0)
+#define UNITYENGINE_EXPERIMENTAL_U2D_SPRITERENDERERGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0x1A273D70)
 
 namespace UnityEngine::Experimental::U2D
 {
-	inline static constexpr unsigned int SpriteRendererGroup_TypeDefinitionIndex = 6276;
+	inline static constexpr unsigned int SpriteRendererGroup_TypeDefinitionIndex = 6280;
 
 	class SpriteRendererGroup : public ::System::Object
 	{

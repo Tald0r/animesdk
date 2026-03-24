@@ -7,21 +7,21 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define SIRENIX_SERIALIZATION_RECTFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B122DB0)
-#define SIRENIX_SERIALIZATION_RECTFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B122EE0)
-#define SIRENIX_SERIALIZATION_RECTFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B123070)
-#define SIRENIX_SERIALIZATION_RECTFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B123030)
+#define SIRENIX_SERIALIZATION_RECTFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B73A120)
+#define SIRENIX_SERIALIZATION_RECTFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B73A250)
+#define SIRENIX_SERIALIZATION_RECTFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B73A3E0)
+#define SIRENIX_SERIALIZATION_RECTFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B73A3A0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int RectFormatter_TypeDefinitionIndex = 7451;
+	inline static constexpr unsigned int RectFormatter_TypeDefinitionIndex = 7456;
 
 	class RectFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::UnityEngine::Rect>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_FloatSerializer()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(RectFormatter_TypeDefinitionIndex)->GetStaticField(0x63B0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(RectFormatter_TypeDefinitionIndex)->GetStaticField(0x63F0);
 		}
 
 		::System::Void _ctor()

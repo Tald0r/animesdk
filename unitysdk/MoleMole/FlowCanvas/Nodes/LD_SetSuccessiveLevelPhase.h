@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETSUCCESSIVELEVELPHASE_INVOKE_OFFSET UNITYSDK_OFFSET(0x6AF58E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETSUCCESSIVELEVELPHASE__CTOR_OFFSET UNITYSDK_OFFSET(0x6AF5A70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETSUCCESSIVELEVELPHASE_INVOKE_OFFSET UNITYSDK_OFFSET(0xB5E4AC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETSUCCESSIVELEVELPHASE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5E4C50)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_SetSuccessiveLevelPhase_TypeDefinitionIndex = 44920;
+	inline static constexpr unsigned int LD_SetSuccessiveLevelPhase_TypeDefinitionIndex = 49494;
 
 	class LD_SetSuccessiveLevelPhase : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Int32>
 	{

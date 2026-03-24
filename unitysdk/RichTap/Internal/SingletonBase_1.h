@@ -4,7 +4,7 @@
 
 namespace RichTap::Internal
 {
-	inline static constexpr unsigned int SingletonBase_1_TypeDefinitionIndex = 34945;
+	inline static constexpr unsigned int SingletonBase_1_TypeDefinitionIndex = 35947;
 
 	template <typename T>
 	class SingletonBase_1 : public ::System::Object

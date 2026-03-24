@@ -6,24 +6,24 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine::InputSystem { class InputDevice; }
 
-#define UNITYENGINE_INPUTSYSTEM_INPUTMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A788370)
-#define UNITYENGINE_INPUTSYSTEM_INPUTMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7883A0)
-#define UNITYENGINE_INPUTSYSTEM_INPUTMANAGER___C__MAKEDEVICENAMEUNIQUE_B__155_0_OFFSET UNITYSDK_OFFSET(0x1A7883B0)
+#define UNITYENGINE_INPUTSYSTEM_INPUTMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD38500)
+#define UNITYENGINE_INPUTSYSTEM_INPUTMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD38530)
+#define UNITYENGINE_INPUTSYSTEM_INPUTMANAGER___C__MAKEDEVICENAMEUNIQUE_B__155_0_OFFSET UNITYSDK_OFFSET(0x1AD38540)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputManager___c_TypeDefinitionIndex = 27576;
+	inline static constexpr unsigned int InputManager___c_TypeDefinitionIndex = 28516;
 
 	class InputManager___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::InputSystem::InputManager___c** StaticGet___9()
 		{
-			return (::UnityEngine::InputSystem::InputManager___c**)Il2CppClass::FromTypeDefinitionIndex(InputManager___c_TypeDefinitionIndex)->GetStaticField(0x205E0);
+			return (::UnityEngine::InputSystem::InputManager___c**)Il2CppClass::FromTypeDefinitionIndex(InputManager___c_TypeDefinitionIndex)->GetStaticField(0x21C40);
 		}
 		static ::System::Func_2<::UnityEngine::InputSystem::InputDevice*, ::System::String*>** StaticGet___9__155_0()
 		{
-			return (::System::Func_2<::UnityEngine::InputSystem::InputDevice*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(InputManager___c_TypeDefinitionIndex)->GetStaticField(0x205E8);
+			return (::System::Func_2<::UnityEngine::InputSystem::InputDevice*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(InputManager___c_TypeDefinitionIndex)->GetStaticField(0x21C48);
 		}
 
 		static ::System::Void _cctor()

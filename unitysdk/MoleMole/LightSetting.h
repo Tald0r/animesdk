@@ -3,20 +3,20 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define MOLEMOLE_LIGHTSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x6E2C6D0)
+#define MOLEMOLE_LIGHTSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x6E98D00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LightSetting_TypeDefinitionIndex = 70584;
+	inline static constexpr unsigned int LightSetting_TypeDefinitionIndex = 67377;
 
 	class LightSetting : public ::System::Object
 	{
 	public:
-		::UnityEngine::Color color; // 0x10
-		::System::Single intensity; // 0x20
-		::System::Single avatarLightMultiplier; // 0x24
-		::UnityEngine::Color avatarLightColor; // 0x28
-		::System::Single range; // 0x38
+		::System::Single intensity; // 0x10
+		::UnityEngine::Color avatarLightColor; // 0x14
+		::UnityEngine::Color color; // 0x24
+		::System::Single range; // 0x34
+		::System::Single avatarLightMultiplier; // 0x38
 
 		::System::Void _ctor()
 		{

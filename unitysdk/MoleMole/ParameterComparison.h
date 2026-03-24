@@ -12,28 +12,28 @@ namespace BehaviorDesigner::Runtime { class SharedInt; }
 namespace BehaviorDesigner::Runtime { class SharedString; }
 namespace MoleMole { class SharedGameEntity; }
 
-#define MOLEMOLE_PARAMETERCOMPARISON_COMPAREBOOL_OFFSET UNITYSDK_OFFSET(0x830D4A0)
-#define MOLEMOLE_PARAMETERCOMPARISON_COMPAREFLOAT_OFFSET UNITYSDK_OFFSET(0x830D070)
-#define MOLEMOLE_PARAMETERCOMPARISON_COMPAREINT_OFFSET UNITYSDK_OFFSET(0x830D280)
-#define MOLEMOLE_PARAMETERCOMPARISON_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x830CBF0)
-#define MOLEMOLE_PARAMETERCOMPARISON_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x830CE80)
-#define MOLEMOLE_PARAMETERCOMPARISON_PARAMCHECK_OFFSET UNITYSDK_OFFSET(0x830CF50)
-#define MOLEMOLE_PARAMETERCOMPARISON__CTOR_OFFSET UNITYSDK_OFFSET(0x830D690)
-#define MOLEMOLE_PARAMETERCOMPARISON___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x830D6E0)
-#define MOLEMOLE_PARAMETERCOMPARISON___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x830D770)
+#define MOLEMOLE_PARAMETERCOMPARISON_COMPAREBOOL_OFFSET UNITYSDK_OFFSET(0xB92B410)
+#define MOLEMOLE_PARAMETERCOMPARISON_COMPAREFLOAT_OFFSET UNITYSDK_OFFSET(0xB92AFE0)
+#define MOLEMOLE_PARAMETERCOMPARISON_COMPAREINT_OFFSET UNITYSDK_OFFSET(0xB92B1F0)
+#define MOLEMOLE_PARAMETERCOMPARISON_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB92AB60)
+#define MOLEMOLE_PARAMETERCOMPARISON_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB92ADF0)
+#define MOLEMOLE_PARAMETERCOMPARISON_PARAMCHECK_OFFSET UNITYSDK_OFFSET(0xB92AEC0)
+#define MOLEMOLE_PARAMETERCOMPARISON__CTOR_OFFSET UNITYSDK_OFFSET(0xB92B600)
+#define MOLEMOLE_PARAMETERCOMPARISON___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0xB92B650)
+#define MOLEMOLE_PARAMETERCOMPARISON___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB92B6E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ParameterComparison_TypeDefinitionIndex = 60681;
+	inline static constexpr unsigned int ParameterComparison_TypeDefinitionIndex = 75848;
 
 	class ParameterComparison : public ::BehaviorDesigner::Runtime::Tasks::Conditional
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedString* ParameterName; // 0x50
-		::BehaviorDesigner::Runtime::SharedInt* IntValue; // 0x58
-		::BehaviorDesigner::Runtime::SharedBool* BoolValue; // 0x60
-		::Class_3_F33F9DC5F4112336* characterAnimatorComponent; // 0x68
-		::BehaviorDesigner::Runtime::SharedFloat* FloatValue; // 0x70
+		::BehaviorDesigner::Runtime::SharedFloat* FloatValue; // 0x50
+		::Class_3_F33F9DC5F4112336* characterAnimatorComponent; // 0x58
+		::BehaviorDesigner::Runtime::SharedString* ParameterName; // 0x60
+		::BehaviorDesigner::Runtime::SharedInt* IntValue; // 0x68
+		::BehaviorDesigner::Runtime::SharedBool* BoolValue; // 0x70
 		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x78
 		::MoleMole::AIAnimatorParamType ParameterType; // 0x80
 		::MoleMole::AICompareType CompareType; // 0x84

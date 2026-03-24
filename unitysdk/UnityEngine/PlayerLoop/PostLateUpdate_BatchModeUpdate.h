@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int PostLateUpdate_BatchModeUpdate_TypeDefinitionIndex = 5642;
+	inline static constexpr unsigned int PostLateUpdate_BatchModeUpdate_TypeDefinitionIndex = 5645;
 
 	struct alignas(1) PostLateUpdate_BatchModeUpdate
 	{

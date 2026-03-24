@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/NPCCrowd/AI/PathGraphConfigComponent.h"
 
-#define NPCCROWD_AI_PATHGRAPHLOCATORCOMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x763F3E0)
+#define NPCCROWD_AI_PATHGRAPHLOCATORCOMPONENT__CTOR_OFFSET UNITYSDK_OFFSET(0x861EDD0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphLocatorComponent_TypeDefinitionIndex = 43159;
+	inline static constexpr unsigned int PathGraphLocatorComponent_TypeDefinitionIndex = 65423;
 
 	class PathGraphLocatorComponent : public ::NPCCrowd::AI::PathGraphConfigComponent
 	{

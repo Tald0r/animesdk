@@ -3,15 +3,12 @@
 #include "unitysdk/System/Object.h"
 
 namespace MoleMole::Battle { class Entity; }
-namespace UnityEngine { class Transform; }
+namespace MoleMole::MiniGame::BangbooPartyGame { class MonoBangbooPartyAIPathPoint; }
 
-#define CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_6D5F59BCE8B4A09A_OFFSET UNITYSDK_OFFSET(0x67069B0)
-#define CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_7A0D5FDBC5C9186C_OFFSET UNITYSDK_OFFSET(0x6706560)
-#define CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_99D60EF23C904C6D_OFFSET UNITYSDK_OFFSET(0x6706AF0)
-#define CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_B86122B0EE4F8679_OFFSET UNITYSDK_OFFSET(0x6706A60)
-#define CLASS_1_AE8977CC8DFA35ED_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6706550)
+#define CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_F529FE43CE7C9911_OFFSET UNITYSDK_OFFSET(0x88D47F0)
+#define CLASS_1_AE8977CC8DFA35ED_1__CTOR_OFFSET UNITYSDK_OFFSET(0x88D47E0)
 
-inline static constexpr unsigned int Class_1_AE8977CC8DFA35ED_1_TypeDefinitionIndex = 58705;
+inline static constexpr unsigned int Class_1_AE8977CC8DFA35ED_1_TypeDefinitionIndex = 53867;
 
 class Class_1_AE8977CC8DFA35ED_1 : public ::System::Object
 {
@@ -23,23 +20,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_1__CTOR_OFFSET))(this, a1);
 	}
 
-	::System::Boolean Method_1_7A0D5FDBC5C9186C()
+	::Il2CppArray<::MoleMole::MiniGame::BangbooPartyGame::MonoBangbooPartyAIPathPoint*>* Method_1_F529FE43CE7C9911()
 	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_7A0D5FDBC5C9186C_OFFSET))(this);
-	}
-
-	::System::Void Method_1_B86122B0EE4F8679(::System::Single a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_B86122B0EE4F8679_OFFSET))(this, a1);
-	}
-
-	::UnityEngine::Transform* Method_1_6D5F59BCE8B4A09A()
-	{
-		return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_6D5F59BCE8B4A09A_OFFSET))(this);
-	}
-
-	::System::Void Method_1_99D60EF23C904C6D()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_99D60EF23C904C6D_OFFSET))(this);
+		return ((::Il2CppArray<::MoleMole::MiniGame::BangbooPartyGame::MonoBangbooPartyAIPathPoint*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_AE8977CC8DFA35ED_1_METHOD_1_F529FE43CE7C9911_OFFSET))(this);
 	}
 };

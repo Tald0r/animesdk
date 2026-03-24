@@ -4,18 +4,18 @@
 
 namespace MoleMole { class UIActivityDemoTrialBGEffectWidgetController; }
 
-#define MOLEMOLE_UIACTIVITYRETURNDEMOINFOWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA50DA00)
-#define MOLEMOLE_UIACTIVITYRETURNDEMOINFOWIDGETCONTROLLER___C__DISPLAYCLASS7_0__STARTEXCHANGEROLEANIM_B__0_OFFSET UNITYSDK_OFFSET(0xA50DA10)
+#define MOLEMOLE_UIACTIVITYRETURNDEMOINFOWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADA64B0)
+#define MOLEMOLE_UIACTIVITYRETURNDEMOINFOWIDGETCONTROLLER___C__DISPLAYCLASS7_0__STARTEXCHANGEROLEANIM_B__0_OFFSET UNITYSDK_OFFSET(0xADA64C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityReturnDemoInfoWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 48463;
+	inline static constexpr unsigned int UIActivityReturnDemoInfoWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 46744;
 
 	class UIActivityReturnDemoInfoWidgetController___c__DisplayClass7_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIActivityDemoTrialBGEffectWidgetController* targetWidget; // 0x10
-		::MoleMole::UIActivityDemoTrialBGEffectWidgetController* nextWidget; // 0x18
+		::MoleMole::UIActivityDemoTrialBGEffectWidgetController* nextWidget; // 0x10
+		::MoleMole::UIActivityDemoTrialBGEffectWidgetController* targetWidget; // 0x18
 
 		::System::Void _ctor()
 		{

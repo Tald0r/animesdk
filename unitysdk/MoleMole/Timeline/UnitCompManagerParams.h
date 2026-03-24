@@ -4,12 +4,12 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_UNITCOMPMANAGERPARAMS_METHOD_1_959C32CB8485C4B1_OFFSET UNITYSDK_OFFSET(0xD1AD480)
-#define MOLEMOLE_TIMELINE_UNITCOMPMANAGERPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0xD1AD470)
+#define MOLEMOLE_TIMELINE_UNITCOMPMANAGERPARAMS_METHOD_1_959C32CB8485C4B1_OFFSET UNITYSDK_OFFSET(0x6EE23B0)
+#define MOLEMOLE_TIMELINE_UNITCOMPMANAGERPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0x6EE23A0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int UnitCompManagerParams_TypeDefinitionIndex = 45676;
+	inline static constexpr unsigned int UnitCompManagerParams_TypeDefinitionIndex = 46624;
 
 	class UnitCompManagerParams : public ::System::Object
 	{

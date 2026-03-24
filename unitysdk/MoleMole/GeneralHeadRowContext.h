@@ -5,11 +5,11 @@
 
 class Class_1_DD4EF16B0F76A8E1;
 
-#define MOLEMOLE_GENERALHEADROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x99133E0)
+#define MOLEMOLE_GENERALHEADROWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA50E410)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GeneralHeadRowContext_TypeDefinitionIndex = 48168;
+	inline static constexpr unsigned int GeneralHeadRowContext_TypeDefinitionIndex = 73004;
 
 	class GeneralHeadRowContext : public ::MoleMole::UIControllerContextBase
 	{

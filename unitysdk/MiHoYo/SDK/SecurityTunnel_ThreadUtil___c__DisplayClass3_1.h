@@ -4,18 +4,18 @@
 
 namespace MiHoYo::SDK { class SecurityTunnel_ThreadUtil___c__DisplayClass3_0; }
 
-#define MIHOYO_SDK_SECURITYTUNNEL_THREADUTIL___C__DISPLAYCLASS3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19AFB900)
-#define MIHOYO_SDK_SECURITYTUNNEL_THREADUTIL___C__DISPLAYCLASS3_1__ENQUEUE_B__2_OFFSET UNITYSDK_OFFSET(0x19AFB910)
+#define MIHOYO_SDK_SECURITYTUNNEL_THREADUTIL___C__DISPLAYCLASS3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1A084550)
+#define MIHOYO_SDK_SECURITYTUNNEL_THREADUTIL___C__DISPLAYCLASS3_1__ENQUEUE_B__2_OFFSET UNITYSDK_OFFSET(0x1A084560)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int SecurityTunnel_ThreadUtil___c__DisplayClass3_1_TypeDefinitionIndex = 33727;
+	inline static constexpr unsigned int SecurityTunnel_ThreadUtil___c__DisplayClass3_1_TypeDefinitionIndex = 34700;
 
 	class SecurityTunnel_ThreadUtil___c__DisplayClass3_1 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::SecurityTunnel_ThreadUtil___c__DisplayClass3_0* CS___8__locals1; // 0x10
-		::System::Object* state; // 0x18
+		::System::Object* state; // 0x10
+		::MiHoYo::SDK::SecurityTunnel_ThreadUtil___c__DisplayClass3_0* CS___8__locals1; // 0x18
 
 		::System::Void _ctor()
 		{

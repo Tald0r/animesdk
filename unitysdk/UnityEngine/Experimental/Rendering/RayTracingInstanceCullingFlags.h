@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Experimental::Rendering
 {
-	inline static constexpr unsigned int RayTracingInstanceCullingFlags_TypeDefinitionIndex = 6307;
+	inline static constexpr unsigned int RayTracingInstanceCullingFlags_TypeDefinitionIndex = 6311;
 
 	enum class RayTracingInstanceCullingFlags : ::System::Int32
 	{

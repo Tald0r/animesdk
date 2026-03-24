@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Config/ConfigSurfGameItemAction.h"
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSUPERSTARACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x14192E20)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSUPERSTARACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x14192FD0)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSUPERSTARACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0xBB00520)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEITEMSUPERSTARACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xBB006D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameItemSuperStarAction_TypeDefinitionIndex = 38217;
+	inline static constexpr unsigned int ConfigSurfGameItemSuperStarAction_TypeDefinitionIndex = 69624;
 
 	class ConfigSurfGameItemSuperStarAction : public ::MoleMole::Config::ConfigSurfGameItemAction
 	{

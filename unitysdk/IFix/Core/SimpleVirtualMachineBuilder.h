@@ -4,12 +4,12 @@
 
 namespace IFix::Core { class VirtualMachine; }
 
-#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER_CREATEVIRTUALMACHINE_OFFSET UNITYSDK_OFFSET(0x1991B9B0)
-#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1991C000)
+#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER_CREATEVIRTUALMACHINE_OFFSET UNITYSDK_OFFSET(0x19EB5A00)
+#define IFIX_CORE_SIMPLEVIRTUALMACHINEBUILDER__CTOR_OFFSET UNITYSDK_OFFSET(0x19EB6060)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int SimpleVirtualMachineBuilder_TypeDefinitionIndex = 6787;
+	inline static constexpr unsigned int SimpleVirtualMachineBuilder_TypeDefinitionIndex = 6791;
 
 	class SimpleVirtualMachineBuilder : public ::System::Object
 	{

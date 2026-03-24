@@ -8,7 +8,7 @@ namespace System { class Type; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int MinimalBaseFormatter_1_TypeDefinitionIndex = 7334;
+	inline static constexpr unsigned int MinimalBaseFormatter_1_TypeDefinitionIndex = 7339;
 
 	template <typename T>
 	class MinimalBaseFormatter_1 : public ::System::Object

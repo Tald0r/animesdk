@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_RENDERING_LWRP_LWRPADDITIONALCAMERADATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19322EF0)
+#define UNITYENGINE_RENDERING_LWRP_LWRPADDITIONALCAMERADATA__CTOR_OFFSET UNITYSDK_OFFSET(0x197D64D0)
 
 namespace UnityEngine::Rendering::LWRP
 {
-	inline static constexpr unsigned int LWRPAdditionalCameraData_TypeDefinitionIndex = 28344;
+	inline static constexpr unsigned int LWRPAdditionalCameraData_TypeDefinitionIndex = 29285;
 
 	class LWRPAdditionalCameraData : public ::System::Object
 	{

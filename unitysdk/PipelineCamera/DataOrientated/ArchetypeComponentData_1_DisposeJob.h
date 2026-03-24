@@ -5,7 +5,7 @@
 
 namespace PipelineCamera::DataOrientated
 {
-	inline static constexpr unsigned int ArchetypeComponentData_1_DisposeJob_TypeDefinitionIndex = 34584;
+	inline static constexpr unsigned int ArchetypeComponentData_1_DisposeJob_TypeDefinitionIndex = 35586;
 
 	template <typename TScope>
 	struct ArchetypeComponentData_1_DisposeJob

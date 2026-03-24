@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Animations
 {
-	inline static constexpr unsigned int BlendTarget_TypeDefinitionIndex = 6593;
+	inline static constexpr unsigned int BlendTarget_TypeDefinitionIndex = 6597;
 
 	enum class BlendTarget : ::System::Int32
 	{

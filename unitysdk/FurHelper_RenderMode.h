@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int FurHelper_RenderMode_TypeDefinitionIndex = 28077;
+inline static constexpr unsigned int FurHelper_RenderMode_TypeDefinitionIndex = 29017;
 
 enum class FurHelper_RenderMode : ::System::Int32
 {

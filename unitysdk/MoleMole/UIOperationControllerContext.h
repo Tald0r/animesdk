@@ -4,18 +4,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIOPERATIONCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB252620)
+#define MOLEMOLE_UIOPERATIONCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x74873E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOperationControllerContext_TypeDefinitionIndex = 70226;
+	inline static constexpr unsigned int UIOperationControllerContext_TypeDefinitionIndex = 49223;
 
 	class UIOperationControllerContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::String* AvatarName; // 0x28
-		::System::Int32 QuestID; // 0x30
-		::System::Boolean ToShowAnimation; // 0x34
+		::System::Boolean ToShowAnimation; // 0x30
+		::System::Int32 QuestID; // 0x34
 
 		::System::Void _ctor()
 		{

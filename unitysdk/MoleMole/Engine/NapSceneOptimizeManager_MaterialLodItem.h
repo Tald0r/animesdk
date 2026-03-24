@@ -6,12 +6,12 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class MeshRenderer; }
 
-#define MOLEMOLE_ENGINE_NAPSCENEOPTIMIZEMANAGER_MATERIALLODITEM_METHOD_1_B3B932CB2664D69F_OFFSET UNITYSDK_OFFSET(0xEC686F0)
-#define MOLEMOLE_ENGINE_NAPSCENEOPTIMIZEMANAGER_MATERIALLODITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xEC68470)
+#define MOLEMOLE_ENGINE_NAPSCENEOPTIMIZEMANAGER_MATERIALLODITEM_METHOD_1_B3B932CB2664D69F_OFFSET UNITYSDK_OFFSET(0x7566FE0)
+#define MOLEMOLE_ENGINE_NAPSCENEOPTIMIZEMANAGER_MATERIALLODITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x7566D60)
 
 namespace MoleMole::Engine
 {
-	inline static constexpr unsigned int NapSceneOptimizeManager_MaterialLodItem_TypeDefinitionIndex = 37055;
+	inline static constexpr unsigned int NapSceneOptimizeManager_MaterialLodItem_TypeDefinitionIndex = 40155;
 
 	class NapSceneOptimizeManager_MaterialLodItem : public ::System::Object
 	{

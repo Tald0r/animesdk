@@ -4,12 +4,12 @@
 
 namespace FlowCanvas::Nodes { class CustomFunctionEvent; }
 
-#define FLOWCANVAS_NODES_CUSTOMFUNCTIONEVENT___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19E01F50)
-#define FLOWCANVAS_NODES_CUSTOMFUNCTIONEVENT___C__DISPLAYCLASS19_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x19E01F60)
+#define FLOWCANVAS_NODES_CUSTOMFUNCTIONEVENT___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3F07C0)
+#define FLOWCANVAS_NODES_CUSTOMFUNCTIONEVENT___C__DISPLAYCLASS19_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A3F07D0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int CustomFunctionEvent___c__DisplayClass19_0_TypeDefinitionIndex = 25326;
+	inline static constexpr unsigned int CustomFunctionEvent___c__DisplayClass19_0_TypeDefinitionIndex = 27164;
 
 	class CustomFunctionEvent___c__DisplayClass19_0 : public ::System::Object
 	{

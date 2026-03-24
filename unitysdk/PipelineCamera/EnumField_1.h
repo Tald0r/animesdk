@@ -5,7 +5,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int EnumField_1_TypeDefinitionIndex = 34488;
+	inline static constexpr unsigned int EnumField_1_TypeDefinitionIndex = 35490;
 
 	template <typename TEnum>
 	class EnumField_1 : public ::System::Object

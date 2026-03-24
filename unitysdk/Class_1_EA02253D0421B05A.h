@@ -9,10 +9,10 @@ class Class_1_F3A9F1BD884780F6;
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_1_EA02253D0421B05A_METHOD_1_FA845D4A135DA69D_OFFSET UNITYSDK_OFFSET(0x6C7D240)
-#define CLASS_1_EA02253D0421B05A__CTOR_OFFSET UNITYSDK_OFFSET(0x6C7D230)
+#define CLASS_1_EA02253D0421B05A_METHOD_1_FA845D4A135DA69D_OFFSET UNITYSDK_OFFSET(0x88D80E0)
+#define CLASS_1_EA02253D0421B05A__CTOR_OFFSET UNITYSDK_OFFSET(0x88D80D0)
 
-inline static constexpr unsigned int Class_1_EA02253D0421B05A_TypeDefinitionIndex = 41917;
+inline static constexpr unsigned int Class_1_EA02253D0421B05A_TypeDefinitionIndex = 72367;
 
 class Class_1_EA02253D0421B05A : public ::System::Object
 {

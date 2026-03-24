@@ -4,11 +4,11 @@
 
 class Class_1_8F5A10ECD132BF05;
 
-#define MOLEMOLE_PHOTO_SCOPEDFRONTCAMERACONTROLANIMATIONCLIPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB2FC3A0)
+#define MOLEMOLE_PHOTO_SCOPEDFRONTCAMERACONTROLANIMATIONCLIPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB870D80)
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int ScopedFrontCameraControlAnimationClipConfig_TypeDefinitionIndex = 64066;
+	inline static constexpr unsigned int ScopedFrontCameraControlAnimationClipConfig_TypeDefinitionIndex = 66900;
 
 	class ScopedFrontCameraControlAnimationClipConfig : public ::MoleMole::Photo::PlayAnimationClipSubGraphConfig_1<::Class_1_8F5A10ECD132BF05*>
 	{

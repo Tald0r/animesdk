@@ -7,13 +7,13 @@ namespace System { class Type; }
 namespace System::ComponentModel { class ITypeDescriptorContext; }
 namespace System::Globalization { class CultureInfo; }
 
-#define SYSTEM_DATA_CONSTRAINTCONVERTER_CANCONVERTTO_OFFSET UNITYSDK_OFFSET(0x18A5F5C0)
-#define SYSTEM_DATA_CONSTRAINTCONVERTER_CONVERTTO_OFFSET UNITYSDK_OFFSET(0x18A5F630)
-#define SYSTEM_DATA_CONSTRAINTCONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18A5F5B0)
+#define SYSTEM_DATA_CONSTRAINTCONVERTER_CANCONVERTTO_OFFSET UNITYSDK_OFFSET(0x18F7AA10)
+#define SYSTEM_DATA_CONSTRAINTCONVERTER_CONVERTTO_OFFSET UNITYSDK_OFFSET(0x18F7AA80)
+#define SYSTEM_DATA_CONSTRAINTCONVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18F7AA00)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int ConstraintConverter_TypeDefinitionIndex = 35378;
+	inline static constexpr unsigned int ConstraintConverter_TypeDefinitionIndex = 36398;
 
 	class ConstraintConverter : public ::System::ComponentModel::ExpandableObjectConverter
 	{

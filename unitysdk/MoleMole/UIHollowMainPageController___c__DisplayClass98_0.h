@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS98_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBFD51C0)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS98_0__REFRESHBOTTOMTIPSTEXT_B__0_OFFSET UNITYSDK_OFFSET(0xBFD51D0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS98_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9C10C90)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS98_0__REFRESHBOTTOMTIPSTEXT_B__0_OFFSET UNITYSDK_OFFSET(0x9C10CA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass98_0_TypeDefinitionIndex = 52592;
+	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass98_0_TypeDefinitionIndex = 49565;
 
 	class UIHollowMainPageController___c__DisplayClass98_0 : public ::System::Object
 	{

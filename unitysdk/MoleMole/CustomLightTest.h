@@ -6,13 +6,13 @@
 namespace UnityEngine { class Cubemap; }
 namespace UnityEngine { class Material; }
 
-#define MOLEMOLE_CUSTOMLIGHTTEST_ONENABLE_OFFSET UNITYSDK_OFFSET(0x1419E800)
-#define MOLEMOLE_CUSTOMLIGHTTEST_UPDATE_OFFSET UNITYSDK_OFFSET(0x1419E910)
-#define MOLEMOLE_CUSTOMLIGHTTEST__CTOR_OFFSET UNITYSDK_OFFSET(0x1419EBD0)
+#define MOLEMOLE_CUSTOMLIGHTTEST_ONENABLE_OFFSET UNITYSDK_OFFSET(0xBB0C040)
+#define MOLEMOLE_CUSTOMLIGHTTEST_UPDATE_OFFSET UNITYSDK_OFFSET(0xBB0C150)
+#define MOLEMOLE_CUSTOMLIGHTTEST__CTOR_OFFSET UNITYSDK_OFFSET(0xBB0C410)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CustomLightTest_TypeDefinitionIndex = 36702;
+	inline static constexpr unsigned int CustomLightTest_TypeDefinitionIndex = 59829;
 
 	class CustomLightTest : public ::UnityEngine::MonoBehaviour
 	{

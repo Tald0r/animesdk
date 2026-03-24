@@ -8,19 +8,19 @@ namespace NodeCanvas::Framework { class Node; }
 namespace System { class String; }
 namespace UnityEngine { class Component; }
 
-#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A089730)
-#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A0896D0)
-#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A0897A0)
+#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A65C340)
+#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A65C2E0)
+#define NODECANVAS_BEHAVIOURTREES_ROOTSWITCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65C3B0)
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int RootSwitcher_TypeDefinitionIndex = 26435;
+	inline static constexpr unsigned int RootSwitcher_TypeDefinitionIndex = 26977;
 
 	class RootSwitcher : public ::NodeCanvas::BehaviourTrees::BTNode
 	{
 	public:
-		::System::String* targetNodeTag; // 0x78
-		::NodeCanvas::Framework::Node* targetNode; // 0x80
+		::NodeCanvas::Framework::Node* targetNode; // 0x78
+		::System::String* targetNodeTag; // 0x80
 
 		::System::Void _ctor()
 		{

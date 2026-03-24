@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ChessboardChangeGridType_TypeDefinitionIndex = 74180;
+	inline static constexpr unsigned int ChessboardChangeGridType_TypeDefinitionIndex = 71078;
 
 	enum class ChessboardChangeGridType : ::System::Int32
 	{
-		ResetGrid = 0,
-		ChangeGridDirectly = 1,
 		Diffusion = 3,
+		ChangeGridDirectly = 1,
+		ResetGrid = 0,
 		SinkAllThenRiseAll = 2,
 	};
 }

@@ -3,21 +3,21 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_5A6771CD0CA2718D;
-class Class_5_2169ABC757988FED;
+class Class_5_0B648F1F8F6AC84A;
 namespace MoleMole::FlowCanvas::Nodes { class ChessboardIconAnimAdditive___c__DisplayClass1_0; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDICONANIMADDITIVE___C__DISPLAYCLASS1_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC20E3A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDICONANIMADDITIVE___C__DISPLAYCLASS1_1__INVOKE_B__0_OFFSET UNITYSDK_OFFSET(0xC20E3B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDICONANIMADDITIVE___C__DISPLAYCLASS1_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB824C80)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDICONANIMADDITIVE___C__DISPLAYCLASS1_1__INVOKE_B__0_OFFSET UNITYSDK_OFFSET(0xB824C90)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardIconAnimAdditive___c__DisplayClass1_1_TypeDefinitionIndex = 50872;
+	inline static constexpr unsigned int ChessboardIconAnimAdditive___c__DisplayClass1_1_TypeDefinitionIndex = 63982;
 
 	class ChessboardIconAnimAdditive___c__DisplayClass1_1 : public ::System::Object
 	{
 	public:
-		::MoleMole::FlowCanvas::Nodes::ChessboardIconAnimAdditive___c__DisplayClass1_0* CS___8__locals1; // 0x10
-		::Class_5_2169ABC757988FED* chessPieceProxy; // 0x18
+		::Class_5_0B648F1F8F6AC84A* chessPieceProxy; // 0x10
+		::MoleMole::FlowCanvas::Nodes::ChessboardIconAnimAdditive___c__DisplayClass1_0* CS___8__locals1; // 0x18
 
 		::System::Void _ctor()
 		{

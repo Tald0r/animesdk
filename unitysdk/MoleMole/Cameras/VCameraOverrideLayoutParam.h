@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CAMERAS_VCAMERAOVERRIDELAYOUTPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xCCEBAC0)
+#define MOLEMOLE_CAMERAS_VCAMERAOVERRIDELAYOUTPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x7BB8470)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int VCameraOverrideLayoutParam_TypeDefinitionIndex = 55906;
+	inline static constexpr unsigned int VCameraOverrideLayoutParam_TypeDefinitionIndex = 37536;
 
 	class VCameraOverrideLayoutParam : public ::System::Object
 	{

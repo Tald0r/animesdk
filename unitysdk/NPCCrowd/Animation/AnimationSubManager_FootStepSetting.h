@@ -7,19 +7,19 @@
 #include "unitysdk/UnityEngine/LayerMask.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FOOTSTEPSETTING_GETFOOTINDEX_OFFSET UNITYSDK_OFFSET(0x3176F0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FOOTSTEPSETTING_GETTOEINDEX_OFFSET UNITYSDK_OFFSET(0x317700)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FOOTSTEPSETTING__CCTOR_OFFSET UNITYSDK_OFFSET(0x6ECC520)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FOOTSTEPSETTING_GETFOOTINDEX_OFFSET UNITYSDK_OFFSET(0x33C970)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FOOTSTEPSETTING_GETTOEINDEX_OFFSET UNITYSDK_OFFSET(0x33C980)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_FOOTSTEPSETTING__CCTOR_OFFSET UNITYSDK_OFFSET(0x7851610)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_FootStepSetting_TypeDefinitionIndex = 71176;
+	inline static constexpr unsigned int AnimationSubManager_FootStepSetting_TypeDefinitionIndex = 59730;
 
 	struct alignas(8) AnimationSubManager_FootStepSetting
 	{
 		static ::NPCCrowd::Animation::AnimationSubManager_FootStepSetting* StaticGet_Default()
 		{
-			return (::NPCCrowd::Animation::AnimationSubManager_FootStepSetting*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_FootStepSetting_TypeDefinitionIndex)->GetStaticField(0xE870);
+			return (::NPCCrowd::Animation::AnimationSubManager_FootStepSetting*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_FootStepSetting_TypeDefinitionIndex)->GetStaticField(0xF040);
 		}
 		::System::Single BlendTime; // 0x10
 		::Struct_2_6402D4A3EAB8BDC8 LeftFootIndex; // 0x14

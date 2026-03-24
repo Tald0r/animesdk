@@ -6,13 +6,13 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace System::Collections { class IList; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETLISTCOUNT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19166D30)
-#define NODECANVAS_TASKS_ACTIONS_GETLISTCOUNT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19166DA0)
-#define NODECANVAS_TASKS_ACTIONS_GETLISTCOUNT__CTOR_OFFSET UNITYSDK_OFFSET(0x19166EF0)
+#define NODECANVAS_TASKS_ACTIONS_GETLISTCOUNT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19558E70)
+#define NODECANVAS_TASKS_ACTIONS_GETLISTCOUNT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19558EE0)
+#define NODECANVAS_TASKS_ACTIONS_GETLISTCOUNT__CTOR_OFFSET UNITYSDK_OFFSET(0x19559030)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetListCount_TypeDefinitionIndex = 25253;
+	inline static constexpr unsigned int GetListCount_TypeDefinitionIndex = 26018;
 
 	class GetListCount : public ::NodeCanvas::Framework::ActionTask
 	{

@@ -5,12 +5,12 @@
 namespace FluffyUnderware::Curvy::Generator { class CGPath; }
 namespace FluffyUnderware::Curvy::Generator::Modules { class ModifierPathRelativeTranslation; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERPATHRELATIVETRANSLATION___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A774D80)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERPATHRELATIVETRANSLATION___C__DISPLAYCLASS16_0__ONSLOTDATAREQUEST_B__0_OFFSET UNITYSDK_OFFSET(0x1A774D90)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERPATHRELATIVETRANSLATION___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD13690)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_MODULES_MODIFIERPATHRELATIVETRANSLATION___C__DISPLAYCLASS16_0__ONSLOTDATAREQUEST_B__0_OFFSET UNITYSDK_OFFSET(0x1AD136A0)
 
 namespace FluffyUnderware::Curvy::Generator::Modules
 {
-	inline static constexpr unsigned int ModifierPathRelativeTranslation___c__DisplayClass16_0_TypeDefinitionIndex = 35865;
+	inline static constexpr unsigned int ModifierPathRelativeTranslation___c__DisplayClass16_0_TypeDefinitionIndex = 36885;
 
 	class ModifierPathRelativeTranslation___c__DisplayClass16_0 : public ::System::Object
 	{

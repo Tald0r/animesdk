@@ -8,18 +8,18 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 
-#define CLASS_2_E5B6798F8C52E39C_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x968ED80)
-#define CLASS_2_E5B6798F8C52E39C_1_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x968EC80)
-#define CLASS_2_E5B6798F8C52E39C_1__CTOR_OFFSET UNITYSDK_OFFSET(0x968ED70)
+#define CLASS_2_E5B6798F8C52E39C_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB4D9E40)
+#define CLASS_2_E5B6798F8C52E39C_1_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0xB4D9D40)
+#define CLASS_2_E5B6798F8C52E39C_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB4D9E30)
 
-inline static constexpr unsigned int Class_2_E5B6798F8C52E39C_1_TypeDefinitionIndex = 75777;
+inline static constexpr unsigned int Class_2_E5B6798F8C52E39C_1_TypeDefinitionIndex = 81183;
 
 class Class_2_E5B6798F8C52E39C_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x18
-	::UnityEngine::UI::Extension::UITabButton* Field_2_1; // 0x20
-	::MoleMole::NotificationBadge* Field_2_2; // 0x28
+	::UnityEngine::UI::Extension::UITabButton* Field_2_1; // 0x18
+	::MoleMole::NotificationBadge* Field_2_2; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x28
 
 	::System::Void _ctor()
 	{

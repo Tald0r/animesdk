@@ -6,24 +6,24 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_TYPETABLE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A78C9E0)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_TYPETABLE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A78CA20)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_TYPETABLE___C__GET_NAMES_B__2_0_OFFSET UNITYSDK_OFFSET(0x1A78CA30)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_TYPETABLE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD3CB30)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_TYPETABLE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD3CB70)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_TYPETABLE___C__GET_NAMES_B__2_0_OFFSET UNITYSDK_OFFSET(0x1AD3CB80)
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int TypeTable___c_TypeDefinitionIndex = 27976;
+	inline static constexpr unsigned int TypeTable___c_TypeDefinitionIndex = 28916;
 
 	class TypeTable___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString, ::System::String*>** StaticGet___9__2_0()
-		{
-			return (::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TypeTable___c_TypeDefinitionIndex)->GetStaticField(0x20600);
-		}
 		static ::UnityEngine::InputSystem::Utilities::TypeTable___c** StaticGet___9()
 		{
-			return (::UnityEngine::InputSystem::Utilities::TypeTable___c**)Il2CppClass::FromTypeDefinitionIndex(TypeTable___c_TypeDefinitionIndex)->GetStaticField(0x20608);
+			return (::UnityEngine::InputSystem::Utilities::TypeTable___c**)Il2CppClass::FromTypeDefinitionIndex(TypeTable___c_TypeDefinitionIndex)->GetStaticField(0x21C60);
+		}
+		static ::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString, ::System::String*>** StaticGet___9__2_0()
+		{
+			return (::System::Func_2<::UnityEngine::InputSystem::Utilities::InternedString, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(TypeTable___c_TypeDefinitionIndex)->GetStaticField(0x21C68);
 		}
 
 		static ::System::Void _cctor()

@@ -5,9 +5,9 @@
 namespace MoleMole { class RidusGotBooSkillEx; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_E4EFD54D633BB1EB__CTOR_OFFSET UNITYSDK_OFFSET(0x6704E60)
+#define CLASS_1_E4EFD54D633BB1EB__CTOR_OFFSET UNITYSDK_OFFSET(0x87AE030)
 
-inline static constexpr unsigned int Class_1_E4EFD54D633BB1EB_TypeDefinitionIndex = 48930;
+inline static constexpr unsigned int Class_1_E4EFD54D633BB1EB_TypeDefinitionIndex = 61095;
 
 class Class_1_E4EFD54D633BB1EB : public ::System::Object
 {

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int GIConfig_BrightnessFetchType_TypeDefinitionIndex = 28502;
+	inline static constexpr unsigned int GIConfig_BrightnessFetchType_TypeDefinitionIndex = 29445;
 
 	enum class GIConfig_BrightnessFetchType : ::System::Int32
 	{

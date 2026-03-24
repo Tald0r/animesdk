@@ -1,0 +1,171 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/MoleMole/UIWidgetController.h"
+#include "unitysdk/UnityEngine/Vector2.h"
+#include "unitysdk/UnityEngine/Vector3.h"
+
+class Class_2_79AE422BA06F6D26_126;
+class Class_2_C806D582A5D61934;
+namespace MoleMole { class UIActivityHotpotFoodItemRightWidgetControllerContext; }
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace System { class String; }
+namespace UnityEngine { class Transform; }
+
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_CHANGEFOOD_OFFSET UNITYSDK_OFFSET(0xC28EAC0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_CHANGESCORE_OFFSET UNITYSDK_OFFSET(0xC28E610)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_GETSCREENPOSITION_OFFSET UNITYSDK_OFFSET(0xC28EB40)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_GET_POSITION_OFFSET UNITYSDK_OFFSET(0xC28DF30)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_GET_TRANSEFFROOT_OFFSET UNITYSDK_OFFSET(0xC28DDF0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC28EC50)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC28E4A0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC28ECF0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC28E400)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC28EBA0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_PLAYANIMEMIT_OFFSET UNITYSDK_OFFSET(0xC28E110)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_PLAYANIMFADEIN_OFFSET UNITYSDK_OFFSET(0xC28E2E0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_PLAYANIMRECEIVE_OFFSET UNITYSDK_OFFSET(0xC28DFA0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_REFRESHVIEW_OFFSET UNITYSDK_OFFSET(0xC28E810)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_SETENABLE_OFFSET UNITYSDK_OFFSET(0xC28E240)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC28EE50)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC28EDD0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0xC28EEA0)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC28EF10)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0xC28EF80)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0xC28F000)
+#define MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0xC28F060)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIActivityHotpotFoodItemRightWidgetController_TypeDefinitionIndex = 49427;
+
+	class UIActivityHotpotFoodItemRightWidgetController : public ::MoleMole::UIWidgetController
+	{
+	public:
+		static ::System::String** StaticGet_ShowFoodNameAndIdPrefKey()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(UIActivityHotpotFoodItemRightWidgetController_TypeDefinitionIndex)->GetStaticField(0x3B640);
+		}
+		static ::System::Single* StaticGet_FadeInInterval()
+		{
+			return (::System::Single*)Il2CppClass::FromTypeDefinitionIndex(UIActivityHotpotFoodItemRightWidgetController_TypeDefinitionIndex)->GetStaticField(0xE6F0);
+		}
+		::Class_2_79AE422BA06F6D26_126* _view; // 0x2A0
+		::System::String* AnimEmit; // 0x2A8
+		::System::String* AnimReceive; // 0x2B0
+		::System::String* AnimFadeIn; // 0x2B8
+		::Class_2_C806D582A5D61934* _foodCfg; // 0x2C0
+		::MoleMole::UIActivityHotpotFoodItemRightWidgetControllerContext* _ctx; // 0x2C8
+		::System::Single oldScore; // 0x2D0
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		static ::System::Void _cctor()
+		{
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER__CCTOR_OFFSET))();
+		}
+
+		::UnityEngine::Transform* get_TransEffRoot()
+		{
+			return ((::UnityEngine::Transform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_GET_TRANSEFFROOT_OFFSET))(this);
+		}
+
+		::UnityEngine::Vector3 get_Position()
+		{
+			return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_GET_POSITION_OFFSET))(this);
+		}
+
+		::System::Single PlayAnimReceive(::System::Boolean useHigh)
+		{
+			return ((::System::Single(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_PLAYANIMRECEIVE_OFFSET))(this, useHigh);
+		}
+
+		::System::Single PlayAnimEmit()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_PLAYANIMEMIT_OFFSET))(this);
+		}
+
+		::System::Void SetEnable(::System::Boolean enable)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_SETENABLE_OFFSET))(this, enable);
+		}
+
+		::System::Void PlayAnimFadeIn()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_PLAYANIMFADEIN_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnShow(::MoleMole::UIControllerContextBase* showCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONSHOW_OFFSET))(this, showCtrlContext);
+		}
+
+		::System::Void RefreshView()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_REFRESHVIEW_OFFSET))(this);
+		}
+
+		::System::Void ChangeFood(::Class_2_C806D582A5D61934* cfg)
+		{
+			return ((::System::Void(*)(::PVOID, ::Class_2_C806D582A5D61934*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_CHANGEFOOD_OFFSET))(this, cfg);
+		}
+
+		::System::Void ChangeScore(::System::Single newScore, ::System::Boolean playAnim)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Single, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_CHANGESCORE_OFFSET))(this, newScore, playAnim);
+		}
+
+		::UnityEngine::Vector2 GetScreenPosition()
+		{
+			return ((::UnityEngine::Vector2(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_GETSCREENPOSITION_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnShow(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONSHOW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIACTIVITYHOTPOTFOODITEMRIGHTWIDGETCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

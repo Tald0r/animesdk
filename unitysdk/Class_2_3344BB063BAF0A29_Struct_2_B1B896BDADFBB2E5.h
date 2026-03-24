@@ -7,9 +7,9 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_3344BB063BAF0A29_STRUCT_2_B1B896BDADFBB2E5__CTOR_OFFSET UNITYSDK_OFFSET(0x33FB90)
+#define CLASS_2_3344BB063BAF0A29_STRUCT_2_B1B896BDADFBB2E5__CTOR_OFFSET UNITYSDK_OFFSET(0x3C2AF0)
 
-inline static constexpr unsigned int Class_2_3344BB063BAF0A29_Struct_2_B1B896BDADFBB2E5_TypeDefinitionIndex = 47491;
+inline static constexpr unsigned int Class_2_3344BB063BAF0A29_Struct_2_B1B896BDADFBB2E5_TypeDefinitionIndex = 76566;
 
 struct alignas(8) Class_2_3344BB063BAF0A29_Struct_2_B1B896BDADFBB2E5
 {

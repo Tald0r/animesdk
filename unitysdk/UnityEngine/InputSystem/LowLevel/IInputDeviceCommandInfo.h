@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int IInputDeviceCommandInfo_TypeDefinitionIndex = 27733;
+	inline static constexpr unsigned int IInputDeviceCommandInfo_TypeDefinitionIndex = 28673;
 
 	class IInputDeviceCommandInfo
 	{

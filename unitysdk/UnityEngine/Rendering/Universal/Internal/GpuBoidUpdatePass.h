@@ -12,21 +12,21 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace UnityEngine { class ComputeShader; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x179574C0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x179572E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x17957580)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x17957220)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1777F1E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS_SETUP_OFFSET UNITYSDK_OFFSET(0x1777F000)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1777F2A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_GPUBOIDUPDATEPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1777EF40)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int GpuBoidUpdatePass_TypeDefinitionIndex = 28959;
+	inline static constexpr unsigned int GpuBoidUpdatePass_TypeDefinitionIndex = 29910;
 
 	class GpuBoidUpdatePass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::System::Boolean* StaticGet_s_GPUBoidActive()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GpuBoidUpdatePass_TypeDefinitionIndex)->GetStaticField(0x56B0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GpuBoidUpdatePass_TypeDefinitionIndex)->GetStaticField(0x5790);
 		}
 		::System::String* m_ProfilerTag; // 0xA8
 		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xB0

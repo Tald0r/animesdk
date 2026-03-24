@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UITRANSITIONPANELPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x71DF550)
+#define MOLEMOLE_UITRANSITIONPANELPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCAAE910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITransitionPanelPopWindowContext_TypeDefinitionIndex = 60178;
+	inline static constexpr unsigned int UITransitionPanelPopWindowContext_TypeDefinitionIndex = 38354;
 
 	class UITransitionPanelPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{

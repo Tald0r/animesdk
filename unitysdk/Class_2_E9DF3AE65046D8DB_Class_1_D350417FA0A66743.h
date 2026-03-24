@@ -10,17 +10,17 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_1_OFFSET UNITYSDK_OFFSET(0x8CACD20)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_2_OFFSET UNITYSDK_OFFSET(0x8CACDA0)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_OFFSET UNITYSDK_OFFSET(0x8CACCA0)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_4E5D82D8CB501751_OFFSET UNITYSDK_OFFSET(0x8CAC830)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_D71F7960725D2CAD_OFFSET UNITYSDK_OFFSET(0x8CACB20)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_1_OFFSET UNITYSDK_OFFSET(0x8CACAA0)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_2_OFFSET UNITYSDK_OFFSET(0x8CACC20)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_OFFSET UNITYSDK_OFFSET(0x8CACA20)
-#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743__CTOR_OFFSET UNITYSDK_OFFSET(0x8CAC820)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_1_OFFSET UNITYSDK_OFFSET(0x6596090)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_2_OFFSET UNITYSDK_OFFSET(0x6596190)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_OFFSET UNITYSDK_OFFSET(0x6595E90)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_4E5D82D8CB501751_OFFSET UNITYSDK_OFFSET(0x6596210)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_D71F7960725D2CAD_OFFSET UNITYSDK_OFFSET(0x6595F90)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_1_OFFSET UNITYSDK_OFFSET(0x6595F10)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_2_OFFSET UNITYSDK_OFFSET(0x6596110)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_OFFSET UNITYSDK_OFFSET(0x6595E10)
+#define CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743__CTOR_OFFSET UNITYSDK_OFFSET(0x6595E00)
 
-inline static constexpr unsigned int Class_2_E9DF3AE65046D8DB_Class_1_D350417FA0A66743_TypeDefinitionIndex = 51005;
+inline static constexpr unsigned int Class_2_E9DF3AE65046D8DB_Class_1_D350417FA0A66743_TypeDefinitionIndex = 53067;
 
 class Class_2_E9DF3AE65046D8DB_Class_1_D350417FA0A66743 : public ::System::Object
 {
@@ -35,14 +35,14 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_4E5D82D8CB501751(::System::Int32 a1, ::System::Collections::Generic::List_1<::System::Exception*>* a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Collections::Generic::List_1<::System::Exception*>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_4E5D82D8CB501751_OFFSET))(this, a1, a2);
-	}
-
 	::System::Void Method_1_E4ADF4C027C10531(::Foundation::AssetRequestHandle a1, ::System::Action_1<::Foundation::AssetRequestHandle>* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_1_2B6110CA984517A3(::Foundation::AssetPath a1, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_OFFSET))(this, a1, a2);
 	}
 
 	::System::Void Method_1_E4ADF4C027C10531_1(::Foundation::AssetRequestHandle a1, ::System::Action_1<::Foundation::AssetRequestHandle>* a2)
@@ -55,23 +55,23 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_D71F7960725D2CAD_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_1_E4ADF4C027C10531_2(::Foundation::AssetRequestHandle a1, ::System::Action_1<::Foundation::AssetRequestHandle>* a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_2_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_1_2B6110CA984517A3(::Foundation::AssetPath a1, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>* a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_OFFSET))(this, a1, a2);
-	}
-
 	::System::Void Method_1_2B6110CA984517A3_1(::Foundation::AssetPath a1, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_1_OFFSET))(this, a1, a2);
 	}
 
+	::System::Void Method_1_E4ADF4C027C10531_2(::Foundation::AssetRequestHandle a1, ::System::Action_1<::Foundation::AssetRequestHandle>* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Foundation::AssetRequestHandle, ::System::Action_1<::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_E4ADF4C027C10531_2_OFFSET))(this, a1, a2);
+	}
+
 	::System::Void Method_1_2B6110CA984517A3_2(::Foundation::AssetPath a1, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::Foundation::AssetPath, ::System::Func_2<::Foundation::AssetPath, ::Foundation::AssetRequestHandle>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_2B6110CA984517A3_2_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_1_4E5D82D8CB501751(::System::Int32 a1, ::System::Collections::Generic::List_1<::System::Exception*>* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32, ::System::Collections::Generic::List_1<::System::Exception*>*))((::PBYTE)hIl2Cpp + CLASS_2_E9DF3AE65046D8DB_CLASS_1_D350417FA0A66743_METHOD_1_4E5D82D8CB501751_OFFSET))(this, a1, a2);
 	}
 };

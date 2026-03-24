@@ -5,7 +5,7 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeExternalDataHandle_1_TypeDefinitionIndex = 26944;
+	inline static constexpr unsigned int StateTreeExternalDataHandle_1_TypeDefinitionIndex = 27771;
 
 	template <typename T>
 	struct StateTreeExternalDataHandle_1

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UITRANINGREWARDDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x75344E0)
+#define MOLEMOLE_UITRANINGREWARDDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x990F300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITraningRewardDialogContext_TypeDefinitionIndex = 43423;
+	inline static constexpr unsigned int UITraningRewardDialogContext_TypeDefinitionIndex = 64581;
 
 	class UITraningRewardDialogContext : public ::MoleMole::UIControllerContextBase
 	{

@@ -4,24 +4,24 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIINTERKNOTPOSTROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8A63380)
-#define MOLEMOLE_UIINTERKNOTPOSTROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8A633C0)
-#define MOLEMOLE_UIINTERKNOTPOSTROWWIDGETCONTROLLER___C__REFRESHINTERKNOT_B__30_0_OFFSET UNITYSDK_OFFSET(0x8A633D0)
+#define MOLEMOLE_UIINTERKNOTPOSTROWWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x89649D0)
+#define MOLEMOLE_UIINTERKNOTPOSTROWWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8964A10)
+#define MOLEMOLE_UIINTERKNOTPOSTROWWIDGETCONTROLLER___C__REFRESHINTERKNOT_B__30_0_OFFSET UNITYSDK_OFFSET(0x8964A20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotPostRowWidgetController___c_TypeDefinitionIndex = 73992;
+	inline static constexpr unsigned int UIInterKnotPostRowWidgetController___c_TypeDefinitionIndex = 70756;
 
 	class UIInterKnotPostRowWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIInterKnotPostRowWidgetController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIInterKnotPostRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x417A0);
-		}
 		static ::System::Action_1<::System::Int32>** StaticGet___9__30_0()
 		{
-			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x417A8);
+			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x443F0);
+		}
+		static ::MoleMole::UIInterKnotPostRowWidgetController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIInterKnotPostRowWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostRowWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x443F8);
 		}
 
 		static ::System::Void _cctor()

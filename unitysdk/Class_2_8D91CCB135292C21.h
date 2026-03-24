@@ -11,23 +11,23 @@ namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define CLASS_2_8D91CCB135292C21_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0x720ACF0)
-#define CLASS_2_8D91CCB135292C21_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x720AF40)
-#define CLASS_2_8D91CCB135292C21_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x720B030)
-#define CLASS_2_8D91CCB135292C21__CTOR_OFFSET UNITYSDK_OFFSET(0x720B020)
+#define CLASS_2_8D91CCB135292C21_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0x70843D0)
+#define CLASS_2_8D91CCB135292C21_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x7084620)
+#define CLASS_2_8D91CCB135292C21_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7084710)
+#define CLASS_2_8D91CCB135292C21__CTOR_OFFSET UNITYSDK_OFFSET(0x7084700)
 
-inline static constexpr unsigned int Class_2_8D91CCB135292C21_TypeDefinitionIndex = 52558;
+inline static constexpr unsigned int Class_2_8D91CCB135292C21_TypeDefinitionIndex = 39263;
 
 class Class_2_8D91CCB135292C21 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::Class_2_0D31A1661D004892<::Class_2_8D91CCB135292C21_Class_2_3DD13681DECC4A27*>* Field_2_5; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x20
-	::UnityEngine::UI::Text* Field_2_0; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x38
-	::UnityEngine::UI::Text* Field_2_2; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x48
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x28
+	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x30
+	::UnityEngine::UI::Text* Field_2_0; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x40
+	::UnityEngine::UI::Text* Field_2_2; // 0x48
 
 	::System::Void _ctor()
 	{

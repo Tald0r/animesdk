@@ -9,15 +9,15 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION_RAYCASTTOGROUND_OFFSET UNITYSDK_OFFSET(0x141D44E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x141D4370)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0x141D4650)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION__REGISTERPORTS_B__13_0_OFFSET UNITYSDK_OFFSET(0x141D4690)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION__REGISTERPORTS_B__13_1_OFFSET UNITYSDK_OFFSET(0x141D4D10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION_RAYCASTTOGROUND_OFFSET UNITYSDK_OFFSET(0xA4FA670)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA4FA500)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION__CTOR_OFFSET UNITYSDK_OFFSET(0xA4FA7E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION__REGISTERPORTS_B__13_0_OFFSET UNITYSDK_OFFSET(0xA4FA820)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETRHOMBUSOFFSETPOSITION__REGISTERPORTS_B__13_1_OFFSET UNITYSDK_OFFSET(0xA4FAEA0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetRhombusOffsetPosition_TypeDefinitionIndex = 67536;
+	inline static constexpr unsigned int LDGetRhombusOffsetPosition_TypeDefinitionIndex = 38446;
 
 	class LDGetRhombusOffsetPosition : public ::FlowCanvas::Nodes::FlowControlNode
 	{
@@ -25,13 +25,13 @@ namespace MoleMole::FlowCanvas::Nodes
 		::FlowCanvas::FlowOutput* _output; // 0xA8
 		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* inputDstV3; // 0xB0
 		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* inputSrcV3; // 0xB8
-		::System::Single offsetRatio; // 0xC0
-		::System::Single RhombusWidth; // 0xC4
+		::System::Single RhombusWidth; // 0xC0
+		::System::Single offsetFixed; // 0xC4
 		::MoleMole::FlowCanvas::Nodes::LDGetRhombusOffsetPosition_RhombusMType rhombusMType; // 0xC8
-		::System::Boolean IsPreferLeft; // 0xCC
-		::System::Boolean SkipRaycastToGround; // 0xCD
-		::UnityEngine::Vector3 _final; // 0xD0
-		::System::Single offsetFixed; // 0xDC
+		::UnityEngine::Vector3 _final; // 0xCC
+		::System::Single offsetRatio; // 0xD8
+		::System::Boolean IsPreferLeft; // 0xDC
+		::System::Boolean SkipRaycastToGround; // 0xDD
 		::MoleMole::FlowCanvas::Nodes::LDGetRhombusOffsetPosition_RhombusFType rhombusFType; // 0xE0
 
 		::System::Void _ctor()

@@ -4,12 +4,12 @@
 #include "unitysdk/Foundation/NativeMemoryRequest.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_NATIVETEMPMEMORYBUILDER2_REQUESTINTERNAL_OFFSET UNITYSDK_OFFSET(0x969740)
-#define FOUNDATION_NATIVETEMPMEMORYBUILDER2__CTOR_OFFSET UNITYSDK_OFFSET(0x969680)
+#define FOUNDATION_NATIVETEMPMEMORYBUILDER2_REQUESTINTERNAL_OFFSET UNITYSDK_OFFSET(0x99B740)
+#define FOUNDATION_NATIVETEMPMEMORYBUILDER2__CTOR_OFFSET UNITYSDK_OFFSET(0x99B680)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NativeTempMemoryBuilder2_TypeDefinitionIndex = 9021;
+	inline static constexpr unsigned int NativeTempMemoryBuilder2_TypeDefinitionIndex = 9163;
 
 	struct alignas(8) NativeTempMemoryBuilder2
 	{

@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace QWER
 {
-	inline static constexpr unsigned int CVector_1_TypeDefinitionIndex = 8562;
+	inline static constexpr unsigned int CVector_1_TypeDefinitionIndex = 8573;
 
 	template <typename T>
 	class CVector_1 : public ::System::Object

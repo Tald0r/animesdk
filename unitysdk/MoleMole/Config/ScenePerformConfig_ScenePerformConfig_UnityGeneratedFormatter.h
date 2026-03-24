@@ -15,38 +15,38 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x15EC9120)
-#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x15EC9130)
-#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x15EC9600)
-#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x15EC9920)
-#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x15EC98E0)
+#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE2DBAA0)
+#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE2DBAB0)
+#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE2DBF80)
+#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE2DC2A0)
+#define MOLEMOLE_CONFIG_SCENEPERFORMCONFIG_SCENEPERFORMCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE2DC260)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 78783;
+	inline static constexpr unsigned int ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 55544;
 
 	class ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ScenePerformConfig*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::CutScenePerformConfig*>*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::CutScenePerformConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31F60);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::BlackMaskFadeConfig*>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::BlackMaskFadeConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31F68);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::CutScenePerformConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33DD0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ScenePerformConfig_ScenePerformItem*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ScenePerformConfig_ScenePerformItem*>*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31F70);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ScenePerformConfig_ScenePerformItem*>*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33DD8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::SceneEntityCutSceneConfig*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::SceneEntityCutSceneConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31F78);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::SceneEntityCutSceneConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33DE0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::BlackMaskFadeConfig*>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::BlackMaskFadeConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33DE8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ChessBoardCutSceneKeyConfig*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ChessBoardCutSceneKeyConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31F80);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ChessBoardCutSceneKeyConfig*>**)Il2CppClass::FromTypeDefinitionIndex(ScenePerformConfig_ScenePerformConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x33DF0);
 		}
 
 		::System::Void _ctor()

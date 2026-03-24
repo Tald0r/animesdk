@@ -6,12 +6,12 @@
 namespace MoleMole::HollowChessboard { class HollowTipItem; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWTIPCONFIG_GETHOLLOWTIPITEM_OFFSET UNITYSDK_OFFSET(0x82DDE60)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWTIPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x82DDF80)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWTIPCONFIG_GETHOLLOWTIPITEM_OFFSET UNITYSDK_OFFSET(0xA398760)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWTIPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA398870)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int HollowTipConfig_TypeDefinitionIndex = 71653;
+	inline static constexpr unsigned int HollowTipConfig_TypeDefinitionIndex = 38962;
 
 	class HollowTipConfig : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCD1D670)
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS2_0__RELOADFROMFILEASYNC_B__0_OFFSET UNITYSDK_OFFSET(0xCD1D680)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0xE376300)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIGDATA___C__DISPLAYCLASS2_0__RELOADFROMFILEASYNC_B__0_OFFSET UNITYSDK_OFFSET(0xE376310)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LevelGlobalAIScriptConfigData___c__DisplayClass2_0_TypeDefinitionIndex = 63668;
+	inline static constexpr unsigned int LevelGlobalAIScriptConfigData___c__DisplayClass2_0_TypeDefinitionIndex = 76291;
 
 	class LevelGlobalAIScriptConfigData___c__DisplayClass2_0 : public ::System::Object
 	{

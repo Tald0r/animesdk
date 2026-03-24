@@ -5,7 +5,7 @@
 
 namespace MoleMole { class ActivityQuestRedDotRecord; }
 namespace MoleMole { class BackFlowLocalData; }
-namespace MoleMole { class UserLocalDataItem_Class_1_1A520E7D82BE4A56_6; }
+namespace MoleMole { class UserLocalDataItem_Class_1_1A520E7D82BE4A56_3; }
 namespace MoleMole { class UserLocalDataItem_Class_1_AA89291CA9B11FFB; }
 namespace MoleMole { class UserLocalDataItem_Class_1_F68D4DB0B1BEFC7A; }
 namespace MoleMole { class UserLocalDataItem_Class_2_588D89253017A5FC; }
@@ -20,41 +20,41 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T1, typename T2> class IDictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_USERLOCALDATAITEM_GET_CONFIGMOBILEBUTTONS_OFFSET UNITYSDK_OFFSET(0xA0904E0)
-#define MOLEMOLE_USERLOCALDATAITEM_GET_OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0xA08FEF0)
-#define MOLEMOLE_USERLOCALDATAITEM_GET_OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0xA08F900)
-#define MOLEMOLE_USERLOCALDATAITEM_GET__CONFIGMOBILEBUTTONPANELSWRAPPER_OFFSET UNITYSDK_OFFSET(0xA08FF00)
-#define MOLEMOLE_USERLOCALDATAITEM_GET__CONFIGMOBILEBUTTONSWRAPPER_OFFSET UNITYSDK_OFFSET(0xA08F910)
-#define MOLEMOLE_USERLOCALDATAITEM_GET__OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0xA090330)
-#define MOLEMOLE_USERLOCALDATAITEM_GET__OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0xA08FD40)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_03C4CB4B9DB65DCB_OFFSET UNITYSDK_OFFSET(0xA093570)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_0FE39D68D3BAEC10_OFFSET UNITYSDK_OFFSET(0xA093880)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_4DE866BD1F83957B_OFFSET UNITYSDK_OFFSET(0xA093750)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_611142A6ECF0D805_OFFSET UNITYSDK_OFFSET(0xA093480)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_7DC5D7F6533DC9A6_OFFSET UNITYSDK_OFFSET(0xA093D10)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_8E3D7350119AC13D_OFFSET UNITYSDK_OFFSET(0xA093630)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xA094230)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xA0936F0)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_E8C07C74D3D8F211_OFFSET UNITYSDK_OFFSET(0xA093810)
-#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_EAEF1F66025D59F9_OFFSET UNITYSDK_OFFSET(0xA093DD0)
-#define MOLEMOLE_USERLOCALDATAITEM_SET_CONFIGMOBILEBUTTONS_OFFSET UNITYSDK_OFFSET(0xA0904F0)
-#define MOLEMOLE_USERLOCALDATAITEM_SET_OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0xA08FFB0)
-#define MOLEMOLE_USERLOCALDATAITEM_SET_OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0xA08F9C0)
-#define MOLEMOLE_USERLOCALDATAITEM_SET__OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0xA090340)
-#define MOLEMOLE_USERLOCALDATAITEM_SET__OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0xA08FD50)
-#define MOLEMOLE_USERLOCALDATAITEM__CCTOR_OFFSET UNITYSDK_OFFSET(0xA092AB0)
-#define MOLEMOLE_USERLOCALDATAITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xA0906D0)
+#define MOLEMOLE_USERLOCALDATAITEM_GET_CONFIGMOBILEBUTTONS_OFFSET UNITYSDK_OFFSET(0x9723C60)
+#define MOLEMOLE_USERLOCALDATAITEM_GET_OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0x9723680)
+#define MOLEMOLE_USERLOCALDATAITEM_GET_OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0x97230A0)
+#define MOLEMOLE_USERLOCALDATAITEM_GET__CONFIGMOBILEBUTTONPANELSWRAPPER_OFFSET UNITYSDK_OFFSET(0x9723690)
+#define MOLEMOLE_USERLOCALDATAITEM_GET__CONFIGMOBILEBUTTONSWRAPPER_OFFSET UNITYSDK_OFFSET(0x97230B0)
+#define MOLEMOLE_USERLOCALDATAITEM_GET__OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0x9723AC0)
+#define MOLEMOLE_USERLOCALDATAITEM_GET__OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0x97234E0)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_03C4CB4B9DB65DCB_OFFSET UNITYSDK_OFFSET(0x97272B0)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_0FE39D68D3BAEC10_OFFSET UNITYSDK_OFFSET(0x9726CA0)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_4DE866BD1F83957B_OFFSET UNITYSDK_OFFSET(0x9727370)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_611142A6ECF0D805_OFFSET UNITYSDK_OFFSET(0x9727560)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_7DC5D7F6533DC9A6_OFFSET UNITYSDK_OFFSET(0x9727430)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_8E3D7350119AC13D_OFFSET UNITYSDK_OFFSET(0x9727130)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x9727250)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x97271F0)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_E8C07C74D3D8F211_OFFSET UNITYSDK_OFFSET(0x97274F0)
+#define MOLEMOLE_USERLOCALDATAITEM_METHOD_1_EAEF1F66025D59F9_OFFSET UNITYSDK_OFFSET(0x9727650)
+#define MOLEMOLE_USERLOCALDATAITEM_SET_CONFIGMOBILEBUTTONS_OFFSET UNITYSDK_OFFSET(0x9723C70)
+#define MOLEMOLE_USERLOCALDATAITEM_SET_OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0x9723740)
+#define MOLEMOLE_USERLOCALDATAITEM_SET_OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0x9723160)
+#define MOLEMOLE_USERLOCALDATAITEM_SET__OVERRIDEMOBILEBUTTONPANELS_OFFSET UNITYSDK_OFFSET(0x9723AD0)
+#define MOLEMOLE_USERLOCALDATAITEM_SET__OVERRIDEMOBILEBUTTONPOSITIONS_OFFSET UNITYSDK_OFFSET(0x97234F0)
+#define MOLEMOLE_USERLOCALDATAITEM__CCTOR_OFFSET UNITYSDK_OFFSET(0x97262E0)
+#define MOLEMOLE_USERLOCALDATAITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x9723E50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UserLocalDataItem_TypeDefinitionIndex = 60250;
+	inline static constexpr unsigned int UserLocalDataItem_TypeDefinitionIndex = 45269;
 
 	class UserLocalDataItem : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPosition*>** StaticGet__defaultConfigMobileButtons()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPosition*>**)Il2CppClass::FromTypeDefinitionIndex(UserLocalDataItem_TypeDefinitionIndex)->GetStaticField(0x403D0);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPosition*>**)Il2CppClass::FromTypeDefinitionIndex(UserLocalDataItem_TypeDefinitionIndex)->GetStaticField(0x43430);
 		}
 		// static const ::System::String* Field_1_0; // 0x0
 		::System::UInt64 playerUID; // 0x10
@@ -122,7 +122,7 @@ namespace MoleMole
 		::System::Collections::Generic::List_1<::System::Int32>* HadalUnlockZoneAnims; // 0x218
 		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::List_1<::System::Int32>*>* HadalUnlockZoneLayersAnims; // 0x220
 		::System::Int64 RewardTime; // 0x228
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_Class_1_1A520E7D82BE4A56_6*>* WorldLevelRecords; // 0x230
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_Class_1_1A520E7D82BE4A56_3*>* WorldLevelRecords; // 0x230
 		::System::Collections::Generic::List_1<::System::Int32>* RecordedPostGirlIDs; // 0x238
 		::System::Boolean roleSelectMultiSelectOn; // 0x240
 		::System::Boolean roleSelectUpgradeOn; // 0x241
@@ -238,27 +238,31 @@ namespace MoleMole
 		::System::Collections::Generic::List_1<::System::Int32>* MusicBattleNotificationReceived; // 0x540
 		::System::Boolean AbyssS2LevelDetailDesc; // 0x548
 		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::MusicGame::MusicCalibrationData*>* MusicGameCalibrationDataDict; // 0x550
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPosition*>* _configMobileButtons; // 0x558
-		::MoleMole::UserLocalDataItem_Class_1_F68D4DB0B1BEFC7A* __configMobileButtonsWrapper; // 0x560
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPanel*>* _configMobileButtonPanels; // 0x568
-		::MoleMole::UserLocalDataItem_Class_1_AA89291CA9B11FFB* __configMobileButtonPanelsWrapper; // 0x570
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_ConfigMobileButton*>* _configMobileButtonsOld; // 0x578
-		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_Battle; // 0x580
-		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_MainCity; // 0x588
-		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_Hollow; // 0x590
-		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_Bangboo; // 0x598
-		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_TriggerTPS; // 0x5A0
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* FrontCameraQuestTipBadge; // 0x5A8
-		::System::Collections::Generic::List_1<::System::Int32>* unlockedOverlordFeastGames; // 0x5B0
-		::System::Collections::Generic::List_1<::System::Int32>* unlockedOverlordFeastTodoQuests; // 0x5B8
-		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastPromotionShowed; // 0x5C0
-		::System::Collections::Generic::List_1<::System::Int32>* unlockedOverlordFeastDevItem; // 0x5C8
-		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastDevItemWithTips; // 0x5D0
-		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastHiddenGuestWithTips; // 0x5D8
-		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastTodoQuestsWithTips; // 0x5E0
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* overlordGameStars; // 0x5E8
-		::System::Int32 miniscapeCacheLevel; // 0x5F0
-		::System::Int64 miniscapeTaskRefreshTimeStamp; // 0x5F8
+		::System::Collections::Generic::List_1<::System::Int32>* SquadToolNewZoneRecords; // 0x558
+		::System::Boolean ShowHotpotSkipTips; // 0x560
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Boolean>* HotpotFoodList; // 0x568
+		::System::Collections::Generic::List_1<::System::Int32>* HotpotLevelList; // 0x570
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPosition*>* _configMobileButtons; // 0x578
+		::MoleMole::UserLocalDataItem_Class_1_F68D4DB0B1BEFC7A* __configMobileButtonsWrapper; // 0x580
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_OverrideMobileButtonPanel*>* _configMobileButtonPanels; // 0x588
+		::MoleMole::UserLocalDataItem_Class_1_AA89291CA9B11FFB* __configMobileButtonPanelsWrapper; // 0x590
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_ConfigMobileButton*>* _configMobileButtonsOld; // 0x598
+		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_Battle; // 0x5A0
+		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_MainCity; // 0x5A8
+		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_Hollow; // 0x5B0
+		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_Bangboo; // 0x5B8
+		::MoleMole::UserLocalDataItem_ConfigMobileButtonGlobal* configMobileButtonGlobal_TriggerTPS; // 0x5C0
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* FrontCameraQuestTipBadge; // 0x5C8
+		::System::Collections::Generic::List_1<::System::Int32>* unlockedOverlordFeastGames; // 0x5D0
+		::System::Collections::Generic::List_1<::System::Int32>* unlockedOverlordFeastTodoQuests; // 0x5D8
+		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastPromotionShowed; // 0x5E0
+		::System::Collections::Generic::List_1<::System::Int32>* unlockedOverlordFeastDevItem; // 0x5E8
+		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastDevItemWithTips; // 0x5F0
+		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastHiddenGuestWithTips; // 0x5F8
+		::System::Collections::Generic::List_1<::System::Int32>* overlordFeastTodoQuestsWithTips; // 0x600
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* overlordGameStars; // 0x608
+		::System::Int32 miniscapeCacheLevel; // 0x610
+		::System::Int64 miniscapeTaskRefreshTimeStamp; // 0x618
 
 		::System::Void _ctor()
 		{
@@ -330,14 +334,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::UserLocalDataItem_ConfigMobileButton*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_SET_CONFIGMOBILEBUTTONS_OFFSET))(this, a1);
 		}
 
-		::System::Boolean Method_1_611142A6ECF0D805(::System::String* a1)
+		static ::MoleMole::UserLocalDataItem* Method_1_0FE39D68D3BAEC10(::System::String* a1)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_611142A6ECF0D805_OFFSET))(this, a1);
-		}
-
-		::System::Void Method_1_03C4CB4B9DB65DCB(::System::String* a1, ::System::Boolean a2)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_03C4CB4B9DB65DCB_OFFSET))(this, a1, a2);
+			return ((::MoleMole::UserLocalDataItem*(*)(::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_0FE39D68D3BAEC10_OFFSET))(a1);
 		}
 
 		::System::Boolean Method_1_8E3D7350119AC13D(::System::UInt64 a1)
@@ -350,19 +349,19 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_OFFSET))(this);
 		}
 
+		::System::Void Method_1_CA373AA1C7054598_1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_1_OFFSET))(this);
+		}
+
+		::System::Void Method_1_03C4CB4B9DB65DCB(::System::String* a1, ::System::Boolean a2)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_03C4CB4B9DB65DCB_OFFSET))(this, a1, a2);
+		}
+
 		::System::Boolean Method_1_4DE866BD1F83957B(::System::UInt32 a1)
 		{
 			return ((::System::Boolean(*)(::PVOID, ::System::UInt32))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_4DE866BD1F83957B_OFFSET))(this, a1);
-		}
-
-		::System::Void Method_1_E8C07C74D3D8F211(::System::UInt64 a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_E8C07C74D3D8F211_OFFSET))(this, a1);
-		}
-
-		static ::MoleMole::UserLocalDataItem* Method_1_0FE39D68D3BAEC10(::System::String* a1)
-		{
-			return ((::MoleMole::UserLocalDataItem*(*)(::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_0FE39D68D3BAEC10_OFFSET))(a1);
 		}
 
 		::System::Void Method_1_7DC5D7F6533DC9A6(::System::UInt32 a1, ::System::Boolean a2)
@@ -370,14 +369,19 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID, ::System::UInt32, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_7DC5D7F6533DC9A6_OFFSET))(this, a1, a2);
 		}
 
+		::System::Void Method_1_E8C07C74D3D8F211(::System::UInt64 a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::UInt64))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_E8C07C74D3D8F211_OFFSET))(this, a1);
+		}
+
+		::System::Boolean Method_1_611142A6ECF0D805(::System::String* a1)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_611142A6ECF0D805_OFFSET))(this, a1);
+		}
+
 		static ::System::String* Method_1_EAEF1F66025D59F9(::MoleMole::UserLocalDataItem* a1)
 		{
 			return ((::System::String*(*)(::MoleMole::UserLocalDataItem*))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_EAEF1F66025D59F9_OFFSET))(a1);
-		}
-
-		::System::Void Method_1_CA373AA1C7054598_1()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_USERLOCALDATAITEM_METHOD_1_CA373AA1C7054598_1_OFFSET))(this);
 		}
 	};
 }

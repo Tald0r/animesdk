@@ -6,11 +6,11 @@ namespace FluffyUnderware::Curvy { class CurvyConnection; }
 namespace FluffyUnderware::Curvy { class CurvySplineSegment; }
 namespace FluffyUnderware::Curvy::Controllers { class SplineController; }
 
-#define FLUFFYUNDERWARE_CURVY_CONTROLLERS_CONNECTEDCONTROLPOINTSSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEDCE80)
+#define FLUFFYUNDERWARE_CURVY_CONTROLLERS_CONNECTEDCONTROLPOINTSSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B504C10)
 
 namespace FluffyUnderware::Curvy::Controllers
 {
-	inline static constexpr unsigned int ConnectedControlPointsSelector_TypeDefinitionIndex = 35703;
+	inline static constexpr unsigned int ConnectedControlPointsSelector_TypeDefinitionIndex = 36723;
 
 	class ConnectedControlPointsSelector : public ::FluffyUnderware::DevTools::DTVersionedMonoBehaviour
 	{

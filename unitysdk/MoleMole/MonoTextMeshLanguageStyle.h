@@ -7,13 +7,13 @@ namespace MoleMole { class TextMeshStyle; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class TextMesh; }
 
-#define MOLEMOLE_MONOTEXTMESHLANGUAGESTYLE_AWAKE_OFFSET UNITYSDK_OFFSET(0x8A81A60)
-#define MOLEMOLE_MONOTEXTMESHLANGUAGESTYLE_METHOD_5_DF3C54A5ADEABAF1_OFFSET UNITYSDK_OFFSET(0x8A81B80)
-#define MOLEMOLE_MONOTEXTMESHLANGUAGESTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x8A81F30)
+#define MOLEMOLE_MONOTEXTMESHLANGUAGESTYLE_AWAKE_OFFSET UNITYSDK_OFFSET(0x8C8A170)
+#define MOLEMOLE_MONOTEXTMESHLANGUAGESTYLE_METHOD_5_DF3C54A5ADEABAF1_OFFSET UNITYSDK_OFFSET(0x8C8A290)
+#define MOLEMOLE_MONOTEXTMESHLANGUAGESTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x8C8A640)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoTextMeshLanguageStyle_TypeDefinitionIndex = 54364;
+	inline static constexpr unsigned int MonoTextMeshLanguageStyle_TypeDefinitionIndex = 44044;
 
 	class MonoTextMeshLanguageStyle : public ::UnityEngine::MonoBehaviour
 	{

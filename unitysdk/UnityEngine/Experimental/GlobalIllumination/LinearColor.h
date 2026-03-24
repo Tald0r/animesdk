@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LINEARCOLOR_BLACK_OFFSET UNITYSDK_OFFSET(0x19BB7CF0)
-#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LINEARCOLOR_CONVERT_OFFSET UNITYSDK_OFFSET(0x19BB7BE0)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LINEARCOLOR_BLACK_OFFSET UNITYSDK_OFFSET(0x1A19C400)
+#define UNITYENGINE_EXPERIMENTAL_GLOBALILLUMINATION_LINEARCOLOR_CONVERT_OFFSET UNITYSDK_OFFSET(0x1A19C2F0)
 
 namespace UnityEngine::Experimental::GlobalIllumination
 {
-	inline static constexpr unsigned int LinearColor_TypeDefinitionIndex = 6281;
+	inline static constexpr unsigned int LinearColor_TypeDefinitionIndex = 6285;
 
 	struct alignas(4) LinearColor
 	{

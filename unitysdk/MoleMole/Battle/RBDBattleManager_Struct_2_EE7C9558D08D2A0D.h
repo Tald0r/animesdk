@@ -5,11 +5,11 @@
 #include "unitysdk/Unity/Collections/NativeArray_1.h"
 #include "unitysdk/UnityEngine/PhysicsScene.h"
 
-#define MOLEMOLE_BATTLE_RBDBATTLEMANAGER_STRUCT_2_EE7C9558D08D2A0D_EXECUTE_OFFSET UNITYSDK_OFFSET(0x366640)
+#define MOLEMOLE_BATTLE_RBDBATTLEMANAGER_STRUCT_2_EE7C9558D08D2A0D_EXECUTE_OFFSET UNITYSDK_OFFSET(0x36B1F0)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int RBDBattleManager_Struct_2_EE7C9558D08D2A0D_TypeDefinitionIndex = 70873;
+	inline static constexpr unsigned int RBDBattleManager_Struct_2_EE7C9558D08D2A0D_TypeDefinitionIndex = 79130;
 
 	struct alignas(8) RBDBattleManager_Struct_2_EE7C9558D08D2A0D
 	{

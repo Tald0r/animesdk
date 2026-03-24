@@ -4,7 +4,7 @@
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnMouseDownHandler_TypeDefinitionIndex = 27260;
+	inline static constexpr unsigned int IAsyncOnMouseDownHandler_TypeDefinitionIndex = 28200;
 
 	class IAsyncOnMouseDownHandler
 	{

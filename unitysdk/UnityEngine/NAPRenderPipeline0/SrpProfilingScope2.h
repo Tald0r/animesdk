@@ -4,12 +4,12 @@
 
 namespace UnityEngine::Profiling { class CustomSampler; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_SRPPROFILINGSCOPE2_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8C0FC0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SRPPROFILINGSCOPE2__CTOR_OFFSET UNITYSDK_OFFSET(0x8C0FA0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SRPPROFILINGSCOPE2_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8EDA60)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SRPPROFILINGSCOPE2__CTOR_OFFSET UNITYSDK_OFFSET(0x8EDA40)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SrpProfilingScope2_TypeDefinitionIndex = 5936;
+	inline static constexpr unsigned int SrpProfilingScope2_TypeDefinitionIndex = 5939;
 
 	struct alignas(8) SrpProfilingScope2
 	{

@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int SceneViewCameraSync_SyncMode_TypeDefinitionIndex = 34892;
+inline static constexpr unsigned int SceneViewCameraSync_SyncMode_TypeDefinitionIndex = 35894;
 
 enum class SceneViewCameraSync_SyncMode : ::System::Int32
 {

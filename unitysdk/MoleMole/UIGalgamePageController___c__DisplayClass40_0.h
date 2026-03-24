@@ -7,23 +7,23 @@ namespace MoleMole { class UIGalgamePageController_AvatarDisplaySetting; }
 namespace MoleMole::GalGame { class GalPlaySubStoryNode; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9D84820)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__PLAYSUBSTORYNODE_B__0_OFFSET UNITYSDK_OFFSET(0x9D84C60)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__PLAYSUBSTORYNODE_B__1_OFFSET UNITYSDK_OFFSET(0x9D84830)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__PLAYSUBSTORYNODE_B__2_OFFSET UNITYSDK_OFFSET(0x9D84B10)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADF02F0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__PLAYSUBSTORYNODE_B__0_OFFSET UNITYSDK_OFFSET(0xADF0740)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__PLAYSUBSTORYNODE_B__1_OFFSET UNITYSDK_OFFSET(0xADF0300)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS40_0__PLAYSUBSTORYNODE_B__2_OFFSET UNITYSDK_OFFSET(0xADF05F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass40_0_TypeDefinitionIndex = 54665;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass40_0_TypeDefinitionIndex = 58911;
 
 	class UIGalgamePageController___c__DisplayClass40_0 : public ::System::Object
 	{
 	public:
-		::System::String* facialKey; // 0x10
-		::MoleMole::UIGalgamePageController* __4__this; // 0x18
-		::MoleMole::UIGalgamePageController_AvatarDisplaySetting* avatarSetting; // 0x20
-		::MoleMole::GalGame::GalPlaySubStoryNode* galConfigNode; // 0x28
-		::System::String* poseKey; // 0x30
+		::MoleMole::UIGalgamePageController_AvatarDisplaySetting* avatarSetting; // 0x10
+		::MoleMole::GalGame::GalPlaySubStoryNode* galConfigNode; // 0x18
+		::System::String* poseKey; // 0x20
+		::MoleMole::UIGalgamePageController* __4__this; // 0x28
+		::System::String* facialKey; // 0x30
 		::System::Int32 locationKey; // 0x38
 
 		::System::Void _ctor()

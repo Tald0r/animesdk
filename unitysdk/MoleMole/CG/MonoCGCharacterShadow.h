@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Sirenix/OdinInspector/SerializedMonoBehaviour.h"
 
-#define MOLEMOLE_CG_MONOCGCHARACTERSHADOW__CTOR_OFFSET UNITYSDK_OFFSET(0x6533F80)
+#define MOLEMOLE_CG_MONOCGCHARACTERSHADOW__CTOR_OFFSET UNITYSDK_OFFSET(0x81CE3F0)
 
 namespace MoleMole::CG
 {
-	inline static constexpr unsigned int MonoCGCharacterShadow_TypeDefinitionIndex = 68836;
+	inline static constexpr unsigned int MonoCGCharacterShadow_TypeDefinitionIndex = 37523;
 
 	class MonoCGCharacterShadow : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

@@ -5,12 +5,12 @@
 
 namespace MoleMole::FlowCanvas::Nodes { class LD_CreateInteractMonster; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEINTERACTMONSTER___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6AF1EA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEINTERACTMONSTER___C__DISPLAYCLASS1_0__REGISTERPORTS_B__1_OFFSET UNITYSDK_OFFSET(0x6AF2000)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEINTERACTMONSTER___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB5E10A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATEINTERACTMONSTER___C__DISPLAYCLASS1_0__REGISTERPORTS_B__1_OFFSET UNITYSDK_OFFSET(0xB5E1200)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_CreateInteractMonster___c__DisplayClass1_0_TypeDefinitionIndex = 70258;
+	inline static constexpr unsigned int LD_CreateInteractMonster___c__DisplayClass1_0_TypeDefinitionIndex = 54591;
 
 	class LD_CreateInteractMonster___c__DisplayClass1_0 : public ::System::Object
 	{

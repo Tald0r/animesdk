@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int SceneType_TypeDefinitionIndex = 18097;
+	inline static constexpr unsigned int SceneType_TypeDefinitionIndex = 18605;
 
 	enum class SceneType : ::System::Int32
 	{

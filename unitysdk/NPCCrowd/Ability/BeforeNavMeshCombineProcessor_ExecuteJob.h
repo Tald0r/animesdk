@@ -21,11 +21,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeArray_1.h"
 
-#define NPCCROWD_ABILITY_BEFORENAVMESHCOMBINEPROCESSOR_EXECUTEJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x2C95D0)
+#define NPCCROWD_ABILITY_BEFORENAVMESHCOMBINEPROCESSOR_EXECUTEJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x310870)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int BeforeNavMeshCombineProcessor_ExecuteJob_TypeDefinitionIndex = 75360;
+	inline static constexpr unsigned int BeforeNavMeshCombineProcessor_ExecuteJob_TypeDefinitionIndex = 68304;
 
 	struct alignas(8) BeforeNavMeshCombineProcessor_ExecuteJob
 	{

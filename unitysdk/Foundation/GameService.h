@@ -7,26 +7,26 @@ namespace System { class Action; }
 namespace System { class Type; }
 namespace UnityEngine { class Coroutine; }
 
-#define FOUNDATION_GAMESERVICE_GETGAMESERVICE_OFFSET UNITYSDK_OFFSET(0x1AF85C80)
-#define FOUNDATION_GAMESERVICE_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x1AF860F0)
-#define FOUNDATION_GAMESERVICE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1AF863A0)
-#define FOUNDATION_GAMESERVICE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1AF85D90)
-#define FOUNDATION_GAMESERVICE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF864B0)
+#define FOUNDATION_GAMESERVICE_GETGAMESERVICE_OFFSET UNITYSDK_OFFSET(0x1B2F42C0)
+#define FOUNDATION_GAMESERVICE_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x1B2F4730)
+#define FOUNDATION_GAMESERVICE_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1B2F49E0)
+#define FOUNDATION_GAMESERVICE_UPDATE_OFFSET UNITYSDK_OFFSET(0x1B2F43D0)
+#define FOUNDATION_GAMESERVICE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2F4AF0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int GameService_TypeDefinitionIndex = 8805;
+	inline static constexpr unsigned int GameService_TypeDefinitionIndex = 8894;
 
 	class GameService : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::Foundation::GameService** StaticGet__instance()
 		{
-			return (::Foundation::GameService**)Il2CppClass::FromTypeDefinitionIndex(GameService_TypeDefinitionIndex)->GetStaticField(0x7D90);
+			return (::Foundation::GameService**)Il2CppClass::FromTypeDefinitionIndex(GameService_TypeDefinitionIndex)->GetStaticField(0x7DD0);
 		}
 		static ::System::Boolean* StaticGet__isInit()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GameService_TypeDefinitionIndex)->GetStaticField(0x3C90);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(GameService_TypeDefinitionIndex)->GetStaticField(0x3CB0);
 		}
 		::UnityEngine::Coroutine* _endOfFrameCoroutine; // 0x18
 		::Foundation::TickService* _tickService; // 0x20

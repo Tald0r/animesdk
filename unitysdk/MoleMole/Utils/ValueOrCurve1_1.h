@@ -7,7 +7,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int ValueOrCurve1_1_TypeDefinitionIndex = 55723;
+	inline static constexpr unsigned int ValueOrCurve1_1_TypeDefinitionIndex = 73555;
 
 	template <typename T>
 	class ValueOrCurve1_1 : public ::System::Object

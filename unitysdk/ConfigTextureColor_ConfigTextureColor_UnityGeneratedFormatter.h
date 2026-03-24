@@ -11,24 +11,24 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x714D8E0)
-#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x714D8F0)
-#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x714DC60)
-#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x714DED0)
-#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x714DE90)
+#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x73DDBA0)
+#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x73DDBB0)
+#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x73DDF20)
+#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x73DE190)
+#define CONFIGTEXTURECOLOR_CONFIGTEXTURECOLOR_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x73DE150)
 
-inline static constexpr unsigned int ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter_TypeDefinitionIndex = 57816;
+inline static constexpr unsigned int ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter_TypeDefinitionIndex = 63970;
 
 class ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::ConfigTextureColor*>
 {
 public:
-	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::TextureSheetType, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>*>** StaticGet_CachedSerializer1()
-	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::TextureSheetType, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x29350);
-	}
 	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>** StaticGet_CachedSerializer0()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x29358);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2AFF0);
+	}
+	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::TextureSheetType, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>*>** StaticGet_CachedSerializer1()
+	{
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::TextureSheetType, ::System::Collections::Generic::Dictionary_2<::System::Int32, ::VideoFrameColor*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTextureColor_ConfigTextureColor_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2AFF8);
 	}
 
 	::System::Void _ctor()

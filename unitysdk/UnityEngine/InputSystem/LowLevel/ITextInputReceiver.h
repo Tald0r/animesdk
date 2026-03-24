@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int ITextInputReceiver_TypeDefinitionIndex = 27765;
+	inline static constexpr unsigned int ITextInputReceiver_TypeDefinitionIndex = 28705;
 
 	class ITextInputReceiver
 	{

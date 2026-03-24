@@ -3,19 +3,19 @@
 #include "unitysdk/Foundation/AssetPath.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_0CDF082B369A0DD8_Class_1_F6CF446D65DF58A2_3;
+class Class_1_0CDF082B369A0DD8_Class_1_F6CF446D65DF58A2;
 namespace MoleMole::Config { class ConfigMaterialPropertyModifierMap; }
 
-#define CLASS_1_0CDF082B369A0DD8_CLASS_1_2961277102F810F9_METHOD_1_8CE1B81864ACB0B1_OFFSET UNITYSDK_OFFSET(0x7ED6FB0)
-#define CLASS_1_0CDF082B369A0DD8_CLASS_1_2961277102F810F9__CTOR_OFFSET UNITYSDK_OFFSET(0x7ED6FA0)
+#define CLASS_1_0CDF082B369A0DD8_CLASS_1_2961277102F810F9_METHOD_1_8CE1B81864ACB0B1_OFFSET UNITYSDK_OFFSET(0x702D230)
+#define CLASS_1_0CDF082B369A0DD8_CLASS_1_2961277102F810F9__CTOR_OFFSET UNITYSDK_OFFSET(0x702D220)
 
-inline static constexpr unsigned int Class_1_0CDF082B369A0DD8_Class_1_2961277102F810F9_TypeDefinitionIndex = 55195;
+inline static constexpr unsigned int Class_1_0CDF082B369A0DD8_Class_1_2961277102F810F9_TypeDefinitionIndex = 39516;
 
 class Class_1_0CDF082B369A0DD8_Class_1_2961277102F810F9 : public ::System::Object
 {
 public:
-	::Class_1_0CDF082B369A0DD8_Class_1_F6CF446D65DF58A2_3* Field_1_1; // 0x10
-	::Foundation::AssetPath Field_1_0; // 0x18
+	::Foundation::AssetPath Field_1_0; // 0x10
+	::Class_1_0CDF082B369A0DD8_Class_1_F6CF446D65DF58A2* Field_1_1; // 0x20
 
 	::System::Void _ctor()
 	{

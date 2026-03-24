@@ -4,12 +4,12 @@
 #include "unitysdk/UnityEngine/Rect.h"
 #include "unitysdk/UnityEngine/Rendering/RenderTargetIdentifier.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSWEIGHTEDSAMPLESUM_NAPSCREENPASSTEXTURE_ISVALID_OFFSET UNITYSDK_OFFSET(0x7ECF50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSWEIGHTEDSAMPLESUM_NAPSCREENPASSTEXTURE__CTOR_OFFSET UNITYSDK_OFFSET(0x7ECF10)
+#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSWEIGHTEDSAMPLESUM_NAPSCREENPASSTEXTURE_ISVALID_OFFSET UNITYSDK_OFFSET(0x81D7F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSWEIGHTEDSAMPLESUM_NAPSCREENPASSTEXTURE__CTOR_OFFSET UNITYSDK_OFFSET(0x81D7B0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int PostProcessWeightedSampleSum_NapScreenPassTexture_TypeDefinitionIndex = 28775;
+	inline static constexpr unsigned int PostProcessWeightedSampleSum_NapScreenPassTexture_TypeDefinitionIndex = 29721;
 
 	struct alignas(8) PostProcessWeightedSampleSum_NapScreenPassTexture
 	{

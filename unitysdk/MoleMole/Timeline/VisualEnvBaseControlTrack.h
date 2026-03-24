@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Timeline/TrackAsset.h"
 
-#define MOLEMOLE_TIMELINE_VISUALENVBASECONTROLTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xD844600)
+#define MOLEMOLE_TIMELINE_VISUALENVBASECONTROLTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xB9CEB40)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int VisualEnvBaseControlTrack_TypeDefinitionIndex = 49935;
+	inline static constexpr unsigned int VisualEnvBaseControlTrack_TypeDefinitionIndex = 80086;
 
 	class VisualEnvBaseControlTrack : public ::UnityEngine::Timeline::TrackAsset
 	{

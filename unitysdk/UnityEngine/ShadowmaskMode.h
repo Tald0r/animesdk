@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ShadowmaskMode_TypeDefinitionIndex = 5226;
+	inline static constexpr unsigned int ShadowmaskMode_TypeDefinitionIndex = 5227;
 
 	enum class ShadowmaskMode : ::System::Int32
 	{

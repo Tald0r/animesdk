@@ -10,7 +10,7 @@ namespace NPCCrowd::Animation { class AnimationSubManager_IAnimationProcessor; }
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_AnimationScheduler_ExecuteContext_TypeDefinitionIndex = 71182;
+	inline static constexpr unsigned int AnimationSubManager_AnimationScheduler_ExecuteContext_TypeDefinitionIndex = 59678;
 
 	struct alignas(8) AnimationSubManager_AnimationScheduler_ExecuteContext
 	{

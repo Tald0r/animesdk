@@ -6,10 +6,10 @@ namespace System::Collections { class Hashtable; }
 namespace System::Net { class CredentialCache; }
 namespace System::Net { class ICredentials; }
 
-#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x182DC470)
-#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR_SYSTEM_COLLECTIONS_IENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x182DC550)
-#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x182DC5F0)
-#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x182DC240)
+#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR_SYSTEM_COLLECTIONS_IENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x188F1180)
+#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR_SYSTEM_COLLECTIONS_IENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x188F1260)
+#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR_SYSTEM_COLLECTIONS_IENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x188F1300)
+#define SYSTEM_NET_CREDENTIALCACHE_CREDENTIALENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x188F0F50)
 
 namespace System::Net
 {
@@ -18,10 +18,10 @@ namespace System::Net
 	class CredentialCache_CredentialEnumerator : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::Net::ICredentials*>* m_array; // 0x10
-		::System::Net::CredentialCache* m_cache; // 0x18
-		::System::Int32 m_version; // 0x20
-		::System::Int32 m_index; // 0x24
+		::System::Net::CredentialCache* m_cache; // 0x10
+		::Il2CppArray<::System::Net::ICredentials*>* m_array; // 0x18
+		::System::Int32 m_index; // 0x20
+		::System::Int32 m_version; // 0x24
 
 		::System::Void _ctor(::System::Net::CredentialCache* cache, ::System::Collections::Hashtable* table, ::System::Collections::Hashtable* hostTable, ::System::Int32 version)
 		{

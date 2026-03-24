@@ -4,7 +4,7 @@
 
 namespace Utf8Json::Internal::DoubleConversion
 {
-	inline static constexpr unsigned int UnionFloatUInt_TypeDefinitionIndex = 81923;
+	inline static constexpr unsigned int UnionFloatUInt_TypeDefinitionIndex = 83964;
 
 	struct alignas(1) UnionFloatUInt
 	{

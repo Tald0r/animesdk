@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int BlendShapeSampleData_TypeDefinitionIndex = 51360;
+	inline static constexpr unsigned int BlendShapeSampleData_TypeDefinitionIndex = 49187;
 
 	struct alignas(4) BlendShapeSampleData
 	{

@@ -4,23 +4,23 @@
 
 namespace Dest::Math { class ILogger; }
 
-#define DEST_MATH_LOGGER_LOGERROR_OFFSET UNITYSDK_OFFSET(0x1ADEEB00)
-#define DEST_MATH_LOGGER_LOGINFO_OFFSET UNITYSDK_OFFSET(0x1ADF0390)
-#define DEST_MATH_LOGGER_LOGWARNING_OFFSET UNITYSDK_OFFSET(0x1ADEEC30)
-#define DEST_MATH_LOGGER_SETLOGGER_OFFSET UNITYSDK_OFFSET(0x1ADF04B0)
-#define DEST_MATH_LOGGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ADF0350)
-#define DEST_MATH_LOGGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADF0530)
+#define DEST_MATH_LOGGER_LOGERROR_OFFSET UNITYSDK_OFFSET(0x1B40F2A0)
+#define DEST_MATH_LOGGER_LOGINFO_OFFSET UNITYSDK_OFFSET(0x1B410B30)
+#define DEST_MATH_LOGGER_LOGWARNING_OFFSET UNITYSDK_OFFSET(0x1B40F3D0)
+#define DEST_MATH_LOGGER_SETLOGGER_OFFSET UNITYSDK_OFFSET(0x1B410C50)
+#define DEST_MATH_LOGGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B410AF0)
+#define DEST_MATH_LOGGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B410CD0)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int Logger_TypeDefinitionIndex = 31684;
+	inline static constexpr unsigned int Logger_TypeDefinitionIndex = 32638;
 
 	class Logger : public ::System::Object
 	{
 	public:
 		static ::Dest::Math::ILogger** StaticGet__instance()
 		{
-			return (::Dest::Math::ILogger**)Il2CppClass::FromTypeDefinitionIndex(Logger_TypeDefinitionIndex)->GetStaticField(0x23C60);
+			return (::Dest::Math::ILogger**)Il2CppClass::FromTypeDefinitionIndex(Logger_TypeDefinitionIndex)->GetStaticField(0x25580);
 		}
 
 		static ::System::Void _cctor()

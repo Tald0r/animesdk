@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define SR_FORMAT_1_OFFSET UNITYSDK_OFFSET(0x1AAD7CE0)
-#define SR_FORMAT_2_OFFSET UNITYSDK_OFFSET(0x1AAD7D30)
-#define SR_FORMAT_OFFSET UNITYSDK_OFFSET(0x1AAD7C90)
-#define SR_GETSTRING_OFFSET UNITYSDK_OFFSET(0x1AAD7C80)
+#define SR_FORMAT_1_OFFSET UNITYSDK_OFFSET(0x1B117470)
+#define SR_FORMAT_2_OFFSET UNITYSDK_OFFSET(0x1B1174C0)
+#define SR_FORMAT_OFFSET UNITYSDK_OFFSET(0x1B117420)
+#define SR_GETSTRING_OFFSET UNITYSDK_OFFSET(0x1B117410)
 
-inline static constexpr unsigned int SR_TypeDefinitionIndex = 35370;
+inline static constexpr unsigned int SR_TypeDefinitionIndex = 36390;
 
 class SR : public ::System::Object
 {

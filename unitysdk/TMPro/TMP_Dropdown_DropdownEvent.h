@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Events/UnityEvent_1.h"
 
-#define TMPRO_TMP_DROPDOWN_DROPDOWNEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0B07D0)
+#define TMPRO_TMP_DROPDOWN_DROPDOWNEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6BD150)
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TMP_Dropdown_DropdownEvent_TypeDefinitionIndex = 35934;
+	inline static constexpr unsigned int TMP_Dropdown_DropdownEvent_TypeDefinitionIndex = 36954;
 
 	class TMP_Dropdown_DropdownEvent : public ::UnityEngine::Events::UnityEvent_1<::System::Int32>
 	{

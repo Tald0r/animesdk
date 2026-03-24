@@ -4,7 +4,7 @@
 
 namespace UnityEngine::Animations
 {
-	inline static constexpr unsigned int ProcessAnimationJobStruct_1_TypeDefinitionIndex = 6583;
+	inline static constexpr unsigned int ProcessAnimationJobStruct_1_TypeDefinitionIndex = 6587;
 
 	template <typename T>
 	struct ProcessAnimationJobStruct_1

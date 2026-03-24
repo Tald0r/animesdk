@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK::PluginUI
 {
-	inline static constexpr unsigned int ListItemActionParam_TypeDefinitionIndex = 34013;
+	inline static constexpr unsigned int ListItemActionParam_TypeDefinitionIndex = 35015;
 
 	class ListItemActionParam : public ::System::Object
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Nap/NapECS/EcsSystem.h"
 
-#define NAP_NAPECS_ECSSYSTEMMETA_DUMMYECSCLASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18836200)
+#define NAP_NAPECS_ECSSYSTEMMETA_DUMMYECSCLASS__CTOR_OFFSET UNITYSDK_OFFSET(0x18D95550)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsSystemMeta_DummyEcsClass_TypeDefinitionIndex = 34185;
+	inline static constexpr unsigned int EcsSystemMeta_DummyEcsClass_TypeDefinitionIndex = 35131;
 
 	class EcsSystemMeta_DummyEcsClass : public ::Nap::NapECS::EcsSystem
 	{

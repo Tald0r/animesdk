@@ -3,7 +3,7 @@
 
 namespace System::Data
 {
-	inline static constexpr unsigned int Tokens_TypeDefinitionIndex = 35457;
+	inline static constexpr unsigned int Tokens_TypeDefinitionIndex = 36477;
 
 	enum class Tokens : ::System::Int32
 	{

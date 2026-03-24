@@ -8,21 +8,21 @@ namespace System { class Version; }
 namespace Utf8Json { class IJsonFormatterResolver; }
 namespace Utf8Json { template <typename T> class IJsonFormatter_1; }
 
-#define UTF8JSON_FORMATTERS_VERSIONFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B0F1700)
-#define UTF8JSON_FORMATTERS_VERSIONFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B0F1670)
-#define UTF8JSON_FORMATTERS_VERSIONFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0F17A0)
-#define UTF8JSON_FORMATTERS_VERSIONFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0F1790)
+#define UTF8JSON_FORMATTERS_VERSIONFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B708210)
+#define UTF8JSON_FORMATTERS_VERSIONFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B708180)
+#define UTF8JSON_FORMATTERS_VERSIONFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B7082B0)
+#define UTF8JSON_FORMATTERS_VERSIONFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B7082A0)
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int VersionFormatter_TypeDefinitionIndex = 82035;
+	inline static constexpr unsigned int VersionFormatter_TypeDefinitionIndex = 84076;
 
 	class VersionFormatter : public ::System::Object
 	{
 	public:
 		static ::Utf8Json::IJsonFormatter_1<::System::Version*>** StaticGet_Default()
 		{
-			return (::Utf8Json::IJsonFormatter_1<::System::Version*>**)Il2CppClass::FromTypeDefinitionIndex(VersionFormatter_TypeDefinitionIndex)->GetStaticField(0x47280);
+			return (::Utf8Json::IJsonFormatter_1<::System::Version*>**)Il2CppClass::FromTypeDefinitionIndex(VersionFormatter_TypeDefinitionIndex)->GetStaticField(0x48C90);
 		}
 
 		::System::Void _ctor()

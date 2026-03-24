@@ -4,12 +4,12 @@
 
 namespace FluffyUnderware::Curvy { class CurvySplineSegment; }
 
-#define FLUFFYUNDERWARE_CURVY_CURVYCONNECTION___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE822E0)
-#define FLUFFYUNDERWARE_CURVY_CURVYCONNECTION___C__DISPLAYCLASS21_0__OTHERCONTROLPOINTS_B__0_OFFSET UNITYSDK_OFFSET(0x1AE822F0)
+#define FLUFFYUNDERWARE_CURVY_CURVYCONNECTION___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B49D340)
+#define FLUFFYUNDERWARE_CURVY_CURVYCONNECTION___C__DISPLAYCLASS21_0__OTHERCONTROLPOINTS_B__0_OFFSET UNITYSDK_OFFSET(0x1B49D350)
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int CurvyConnection___c__DisplayClass21_0_TypeDefinitionIndex = 35644;
+	inline static constexpr unsigned int CurvyConnection___c__DisplayClass21_0_TypeDefinitionIndex = 36664;
 
 	class CurvyConnection___c__DisplayClass21_0 : public ::System::Object
 	{

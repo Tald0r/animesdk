@@ -15,11 +15,11 @@ namespace MoleMole { class RoleRarityIconConfigs; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGUICOMMON_MISC__CTOR_OFFSET UNITYSDK_OFFSET(0x13FAF890)
+#define MOLEMOLE_CONFIGUICOMMON_MISC__CTOR_OFFSET UNITYSDK_OFFSET(0xF2E95C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUICommon_Misc_TypeDefinitionIndex = 54621;
+	inline static constexpr unsigned int ConfigUICommon_Misc_TypeDefinitionIndex = 42280;
 
 	class ConfigUICommon_Misc : public ::Foundation::MihoyoSerializedScriptableObject
 	{

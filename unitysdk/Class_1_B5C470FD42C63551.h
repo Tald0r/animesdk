@@ -5,9 +5,9 @@
 namespace System { class String; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_1_B5C470FD42C63551_METHOD_1_4FD935F03940FBA9_OFFSET UNITYSDK_OFFSET(0xACA7FD0)
+#define CLASS_1_B5C470FD42C63551_METHOD_1_4FD935F03940FBA9_OFFSET UNITYSDK_OFFSET(0x8258560)
 
-inline static constexpr unsigned int Class_1_B5C470FD42C63551_TypeDefinitionIndex = 74005;
+inline static constexpr unsigned int Class_1_B5C470FD42C63551_TypeDefinitionIndex = 77210;
 
 class Class_1_B5C470FD42C63551 : public ::System::Object
 {

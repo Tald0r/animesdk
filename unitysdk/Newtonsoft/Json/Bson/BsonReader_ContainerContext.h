@@ -3,18 +3,18 @@
 #include "unitysdk/Newtonsoft/Json/Bson/BsonType.h"
 #include "unitysdk/System/Object.h"
 
-#define NEWTONSOFT_JSON_BSON_BSONREADER_CONTAINERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A983B40)
+#define NEWTONSOFT_JSON_BSON_BSONREADER_CONTAINERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF50260)
 
 namespace Newtonsoft::Json::Bson
 {
-	inline static constexpr unsigned int BsonReader_ContainerContext_TypeDefinitionIndex = 7099;
+	inline static constexpr unsigned int BsonReader_ContainerContext_TypeDefinitionIndex = 7103;
 
 	class BsonReader_ContainerContext : public ::System::Object
 	{
 	public:
-		::Newtonsoft::Json::Bson::BsonType Type; // 0x10
-		::System::Int32 Position; // 0x14
-		::System::Int32 Length; // 0x18
+		::System::Int32 Length; // 0x10
+		::Newtonsoft::Json::Bson::BsonType Type; // 0x14
+		::System::Int32 Position; // 0x18
 
 		::System::Void _ctor(::Newtonsoft::Json::Bson::BsonType type)
 		{

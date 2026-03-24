@@ -3,7 +3,7 @@
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int ScopedOverlookCameraMode_Enum_3_F9E481BF72336112_TypeDefinitionIndex = 74550;
+	inline static constexpr unsigned int ScopedOverlookCameraMode_Enum_3_F9E481BF72336112_TypeDefinitionIndex = 56951;
 
 	enum class ScopedOverlookCameraMode_Enum_3_F9E481BF72336112 : ::System::Int32
 	{

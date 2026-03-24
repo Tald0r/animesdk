@@ -3,7 +3,7 @@
 
 namespace DG::Tweening::Plugins::Options
 {
-	inline static constexpr unsigned int OrientType_TypeDefinitionIndex = 24125;
+	inline static constexpr unsigned int OrientType_TypeDefinitionIndex = 24949;
 
 	enum class OrientType : ::System::Int32
 	{

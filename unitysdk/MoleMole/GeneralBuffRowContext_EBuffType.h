@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GeneralBuffRowContext_EBuffType_TypeDefinitionIndex = 69173;
+	inline static constexpr unsigned int GeneralBuffRowContext_EBuffType_TypeDefinitionIndex = 77021;
 
 	enum class GeneralBuffRowContext_EBuffType : ::System::Int32
 	{
-		PairUp = 2,
 		Coffee = 1,
+		PairUp = 2,
 		Ramen = 0,
 	};
 }

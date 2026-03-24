@@ -4,25 +4,25 @@
 
 namespace ICSharpCode::SharpZipLib::Zip::Compression::Streams { class StreamManipulator; }
 
-#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE_BUILDTREE_OFFSET UNITYSDK_OFFSET(0x1AEC2590)
-#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE_GETSYMBOL_OFFSET UNITYSDK_OFFSET(0x1AEC2D40)
-#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AEC1E50)
-#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AEC2580)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE_BUILDTREE_OFFSET UNITYSDK_OFFSET(0x1B4E1430)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE_GETSYMBOL_OFFSET UNITYSDK_OFFSET(0x1B4E1BE0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B4E0CF0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_INFLATERHUFFMANTREE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B4E1420)
 
 namespace ICSharpCode::SharpZipLib::Zip::Compression
 {
-	inline static constexpr unsigned int InflaterHuffmanTree_TypeDefinitionIndex = 6700;
+	inline static constexpr unsigned int InflaterHuffmanTree_TypeDefinitionIndex = 6704;
 
 	class InflaterHuffmanTree : public ::System::Object
 	{
 	public:
 		static ::ICSharpCode::SharpZipLib::Zip::Compression::InflaterHuffmanTree** StaticGet_defLitLenTree()
 		{
-			return (::ICSharpCode::SharpZipLib::Zip::Compression::InflaterHuffmanTree**)Il2CppClass::FromTypeDefinitionIndex(InflaterHuffmanTree_TypeDefinitionIndex)->GetStaticField(0x5B10);
+			return (::ICSharpCode::SharpZipLib::Zip::Compression::InflaterHuffmanTree**)Il2CppClass::FromTypeDefinitionIndex(InflaterHuffmanTree_TypeDefinitionIndex)->GetStaticField(0x5B50);
 		}
 		static ::ICSharpCode::SharpZipLib::Zip::Compression::InflaterHuffmanTree** StaticGet_defDistTree()
 		{
-			return (::ICSharpCode::SharpZipLib::Zip::Compression::InflaterHuffmanTree**)Il2CppClass::FromTypeDefinitionIndex(InflaterHuffmanTree_TypeDefinitionIndex)->GetStaticField(0x5B18);
+			return (::ICSharpCode::SharpZipLib::Zip::Compression::InflaterHuffmanTree**)Il2CppClass::FromTypeDefinitionIndex(InflaterHuffmanTree_TypeDefinitionIndex)->GetStaticField(0x5B58);
 		}
 		// static const ::System::Int32 MAX_BITLEN = 0xF; // 0x0
 		::Il2CppArray<::System::Int16>* tree; // 0x10

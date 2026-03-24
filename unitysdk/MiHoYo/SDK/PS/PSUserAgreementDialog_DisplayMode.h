@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::PS
 {
-	inline static constexpr unsigned int PSUserAgreementDialog_DisplayMode_TypeDefinitionIndex = 18582;
+	inline static constexpr unsigned int PSUserAgreementDialog_DisplayMode_TypeDefinitionIndex = 19181;
 
 	enum class PSUserAgreementDialog_DisplayMode : ::System::Int32
 	{

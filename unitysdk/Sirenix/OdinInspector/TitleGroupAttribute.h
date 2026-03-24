@@ -5,21 +5,21 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_TITLEGROUPATTRIBUTE_COMBINEVALUESWITH_OFFSET UNITYSDK_OFFSET(0x1AB0A8A0)
-#define SIRENIX_ODININSPECTOR_TITLEGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB0A7E0)
+#define SIRENIX_ODININSPECTOR_TITLEGROUPATTRIBUTE_COMBINEVALUESWITH_OFFSET UNITYSDK_OFFSET(0x1B1169D0)
+#define SIRENIX_ODININSPECTOR_TITLEGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B116910)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int TitleGroupAttribute_TypeDefinitionIndex = 7234;
+	inline static constexpr unsigned int TitleGroupAttribute_TypeDefinitionIndex = 7239;
 
 	class TitleGroupAttribute : public ::Sirenix::OdinInspector::PropertyGroupAttribute
 	{
 	public:
 		::System::String* Subtitle; // 0x30
 		::Sirenix::OdinInspector::TitleAlignments Alignment; // 0x38
-		::System::Boolean HorizontalLine; // 0x3C
+		::System::Boolean BoldTitle; // 0x3C
 		::System::Boolean Indent; // 0x3D
-		::System::Boolean BoldTitle; // 0x3E
+		::System::Boolean HorizontalLine; // 0x3E
 
 		::System::Void _ctor(::System::String* title, ::System::String* subtitle, ::Sirenix::OdinInspector::TitleAlignments alignment, ::System::Boolean horizontalLine, ::System::Boolean boldTitle, ::System::Boolean indent, ::System::Single order)
 		{

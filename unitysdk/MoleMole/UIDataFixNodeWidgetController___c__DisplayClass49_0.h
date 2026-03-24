@@ -7,22 +7,22 @@ namespace System { class String; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UIDATAFIXNODEWIDGETCONTROLLER___C__DISPLAYCLASS49_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2C8FA0)
-#define MOLEMOLE_UIDATAFIXNODEWIDGETCONTROLLER___C__DISPLAYCLASS49_0__TOGGLENODEACTIVE_B__0_OFFSET UNITYSDK_OFFSET(0xB2C8FB0)
+#define MOLEMOLE_UIDATAFIXNODEWIDGETCONTROLLER___C__DISPLAYCLASS49_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAD02760)
+#define MOLEMOLE_UIDATAFIXNODEWIDGETCONTROLLER___C__DISPLAYCLASS49_0__TOGGLENODEACTIVE_B__0_OFFSET UNITYSDK_OFFSET(0xAD02770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDataFixNodeWidgetController___c__DisplayClass49_0_TypeDefinitionIndex = 77782;
+	inline static constexpr unsigned int UIDataFixNodeWidgetController___c__DisplayClass49_0_TypeDefinitionIndex = 60148;
 
 	class UIDataFixNodeWidgetController___c__DisplayClass49_0 : public ::System::Object
 	{
 	public:
-		::UnityEngine::Transform* lightGroup; // 0x10
-		::UnityEngine::Transform* otherGroup; // 0x18
-		::System::String* fadein; // 0x20
-		::MoleMole::UIDataFixNodeWidgetController* __4__this; // 0x28
-		::UnityEngine::Transform* targetGroup; // 0x30
-		::UnityEngine::Animation* lgAnim; // 0x38
+		::UnityEngine::Transform* targetGroup; // 0x10
+		::UnityEngine::Animation* lgAnim; // 0x18
+		::UnityEngine::Transform* lightGroup; // 0x20
+		::System::String* fadein; // 0x28
+		::UnityEngine::Transform* otherGroup; // 0x30
+		::MoleMole::UIDataFixNodeWidgetController* __4__this; // 0x38
 
 		::System::Void _ctor()
 		{

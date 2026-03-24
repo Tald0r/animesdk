@@ -11,7 +11,7 @@
 
 namespace Foundation::Container
 {
-	inline static constexpr unsigned int HierarchicalHashGrid2DView_2_TypeDefinitionIndex = 8989;
+	inline static constexpr unsigned int HierarchicalHashGrid2DView_2_TypeDefinitionIndex = 9048;
 
 	template <typename T, typename TEqualsFunc>
 	struct HierarchicalHashGrid2DView_2

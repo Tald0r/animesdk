@@ -5,9 +5,9 @@
 #include "unitysdk/Unity/Collections/NativeHashMap_2.h"
 #include "unitysdk/Unity/Collections/NativeList_1.h"
 
-#define CLASS_3_F753AC2D295AF468_STRUCT_2_129166A7AD0D2457_EXECUTE_OFFSET UNITYSDK_OFFSET(0x35BC00)
+#define CLASS_3_F753AC2D295AF468_STRUCT_2_129166A7AD0D2457_EXECUTE_OFFSET UNITYSDK_OFFSET(0x3257C0)
 
-inline static constexpr unsigned int Class_3_F753AC2D295AF468_Struct_2_129166A7AD0D2457_TypeDefinitionIndex = 79220;
+inline static constexpr unsigned int Class_3_F753AC2D295AF468_Struct_2_129166A7AD0D2457_TypeDefinitionIndex = 40897;
 
 struct alignas(8) Class_3_F753AC2D295AF468_Struct_2_129166A7AD0D2457
 {

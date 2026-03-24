@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define LITJSON_TEMPCHESSBOARDINDEXHELPER_GETXPOSFROMCOMBINEINDEX_OFFSET UNITYSDK_OFFSET(0x19F12770)
-#define LITJSON_TEMPCHESSBOARDINDEXHELPER_GETYPOSFROMCOMBINEINDEX_OFFSET UNITYSDK_OFFSET(0x19F12780)
+#define LITJSON_TEMPCHESSBOARDINDEXHELPER_GETXPOSFROMCOMBINEINDEX_OFFSET UNITYSDK_OFFSET(0x1A67DBE0)
+#define LITJSON_TEMPCHESSBOARDINDEXHELPER_GETYPOSFROMCOMBINEINDEX_OFFSET UNITYSDK_OFFSET(0x1A67DBF0)
 
 namespace LitJson
 {
-	inline static constexpr unsigned int TempChessboardIndexHelper_TypeDefinitionIndex = 8189;
+	inline static constexpr unsigned int TempChessboardIndexHelper_TypeDefinitionIndex = 8240;
 
 	class TempChessboardIndexHelper : public ::System::Object
 	{

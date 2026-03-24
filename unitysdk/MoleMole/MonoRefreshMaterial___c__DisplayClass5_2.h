@@ -9,25 +9,25 @@ namespace MoleMole { class ItemIconTweenConfig; }
 namespace MoleMole { class MonoRefreshMaterial___c__DisplayClass5_0; }
 namespace UnityEngine { class RectTransform; }
 
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__CTOR_OFFSET UNITYSDK_OFFSET(0xA4902E0)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__PLAYITEMICONADDANI_B__3_OFFSET UNITYSDK_OFFSET(0xA4902F0)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__PLAYITEMICONADDANI_B__4_OFFSET UNITYSDK_OFFSET(0xA490580)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__PLAYITEMICONADDANI_B__5_OFFSET UNITYSDK_OFFSET(0xA4905C0)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__CTOR_OFFSET UNITYSDK_OFFSET(0x7A93930)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__PLAYITEMICONADDANI_B__3_OFFSET UNITYSDK_OFFSET(0x7A93940)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__PLAYITEMICONADDANI_B__4_OFFSET UNITYSDK_OFFSET(0x7A93BE0)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_2__PLAYITEMICONADDANI_B__5_OFFSET UNITYSDK_OFFSET(0x7A93C20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoRefreshMaterial___c__DisplayClass5_2_TypeDefinitionIndex = 77816;
+	inline static constexpr unsigned int MonoRefreshMaterial___c__DisplayClass5_2_TypeDefinitionIndex = 40029;
 
 	class MonoRefreshMaterial___c__DisplayClass5_2 : public ::System::Object
 	{
 	public:
-		::UnityEngine::RectTransform* rect0; // 0x10
-		::DG::Tweening::Core::DOSetter_1<::System::Single>* __9__5; // 0x18
+		::DG::Tweening::Core::DOSetter_1<::System::Single>* __9__5; // 0x10
+		::MoleMole::ItemIconTweenConfig* tweenConfig; // 0x18
 		::MoleMole::MonoRefreshMaterial___c__DisplayClass5_0* CS___8__locals2; // 0x20
-		::DG::Tweening::Core::DOGetter_1<::System::Single>* __9__4; // 0x28
-		::MoleMole::ItemIconTweenConfig* tweenConfig; // 0x30
-		::System::Single duration; // 0x38
-		::UnityEngine::Vector2 posEnd; // 0x3C
+		::UnityEngine::RectTransform* rect0; // 0x28
+		::DG::Tweening::Core::DOGetter_1<::System::Single>* __9__4; // 0x30
+		::UnityEngine::Vector2 posEnd; // 0x38
+		::System::Single duration; // 0x40
 
 		::System::Void _ctor()
 		{

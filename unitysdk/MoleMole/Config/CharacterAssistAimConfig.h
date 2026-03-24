@@ -6,19 +6,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CHARACTERASSISTAIMCONFIG_MOLEMOLE_CONFIG_ICHARACTERASSISTAIMCONFIG_GET_LABEL_OFFSET UNITYSDK_OFFSET(0x1417FFC0)
-#define MOLEMOLE_CONFIG_CHARACTERASSISTAIMCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x14180050)
+#define MOLEMOLE_CONFIG_CHARACTERASSISTAIMCONFIG_MOLEMOLE_CONFIG_ICHARACTERASSISTAIMCONFIG_GET_LABEL_OFFSET UNITYSDK_OFFSET(0xBAEC760)
+#define MOLEMOLE_CONFIG_CHARACTERASSISTAIMCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xBAEC7F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CharacterAssistAimConfig_TypeDefinitionIndex = 59821;
+	inline static constexpr unsigned int CharacterAssistAimConfig_TypeDefinitionIndex = 46010;
 
 	class CharacterAssistAimConfig : public ::System::Object
 	{
 	public:
-		::System::String* aimAssistTargetKey; // 0x10
-		::MoleMole::Config::CharacterAimAutoTargeting aimAutoTargeting; // 0x18
-		::MoleMole::Config::CharacterAimSlowdown aimSlowdown; // 0x30
+		::MoleMole::Config::CharacterAimSlowdown aimSlowdown; // 0x10
+		::System::String* aimAssistTargetKey; // 0x30
+		::MoleMole::Config::CharacterAimAutoTargeting aimAutoTargeting; // 0x38
 
 		::System::Void _ctor()
 		{

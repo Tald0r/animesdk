@@ -2,26 +2,26 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Class_3_3F156B807355F183.h"
 
-class Class_0_16E4307DCC419505_31;
-class Class_0_16E4307DCC419505_35;
+class Class_0_16E4307DCC419505_32;
+class Class_0_16E4307DCC419505_42;
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class IDictionary_2; }
-template <typename T1, typename T2> class Class_0_16E4307DCC41950C_2;
-template <typename T1, typename T2> class Class_3_B60F6C2F126D2E26_3;
-template <typename T> class Class_3_B60F6C2F126D2E26_2;
+template <typename T1, typename T2> class Class_0_16E4307DCC41950C_5;
+template <typename T1, typename T2> class Class_3_B60F6C2F126D2E26_2;
+template <typename T> class Class_3_B60F6C2F126D2E26_1;
 
-inline static constexpr unsigned int Class_4_C54E22A58D056913_TypeDefinitionIndex = 24189;
+inline static constexpr unsigned int Class_4_C54E22A58D056913_TypeDefinitionIndex = 25083;
 
 template <typename TVertex, typename TEdge>
-class Class_4_C54E22A58D056913 : public ::Class_3_3F156B807355F183<TVertex, TEdge, ::Class_0_16E4307DCC41950C_2<TVertex, TEdge>*>
+class Class_4_C54E22A58D056913 : public ::Class_3_3F156B807355F183<TVertex, TEdge, ::Class_0_16E4307DCC41950C_5<TVertex, TEdge>*>
 {
 public:
 	::System::Collections::Generic::Dictionary_2<TVertex, TVertex>* Field_4_0; // 0x0
 	::System::Boolean Field_4_1; // 0x0
-	::Class_3_B60F6C2F126D2E26_2<TVertex>* Field_4_2; // 0x0
-	::Class_3_B60F6C2F126D2E26_3<TVertex, TEdge>* Field_4_3; // 0x0
-	::Class_3_B60F6C2F126D2E26_3<TVertex, TEdge>* Field_4_4; // 0x0
-	::Class_3_B60F6C2F126D2E26_3<TVertex, TEdge>* Field_4_5; // 0x0
-	::Class_3_B60F6C2F126D2E26_3<TVertex, TEdge>* Field_4_6; // 0x0
+	::Class_3_B60F6C2F126D2E26_1<TVertex>* Field_4_2; // 0x0
+	::Class_3_B60F6C2F126D2E26_2<TVertex, TEdge>* Field_4_3; // 0x0
+	::Class_3_B60F6C2F126D2E26_2<TVertex, TEdge>* Field_4_4; // 0x0
+	::Class_3_B60F6C2F126D2E26_2<TVertex, TEdge>* Field_4_5; // 0x0
+	::Class_3_B60F6C2F126D2E26_2<TVertex, TEdge>* Field_4_6; // 0x0
 };

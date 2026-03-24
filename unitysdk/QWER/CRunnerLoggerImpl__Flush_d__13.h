@@ -9,22 +9,22 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace System::Threading::Tasks { class Task; }
 
-#define QWER_CRUNNERLOGGERIMPL__FLUSH_D__13_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1AA216F0)
-#define QWER_CRUNNERLOGGERIMPL__FLUSH_D__13_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1AA21A90)
-#define QWER_CRUNNERLOGGERIMPL__FLUSH_D__13__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA21640)
+#define QWER_CRUNNERLOGGERIMPL__FLUSH_D__13_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1B011420)
+#define QWER_CRUNNERLOGGERIMPL__FLUSH_D__13_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1B0117C0)
+#define QWER_CRUNNERLOGGERIMPL__FLUSH_D__13__CTOR_OFFSET UNITYSDK_OFFSET(0x1B011370)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CRunnerLoggerImpl__Flush_d__13_TypeDefinitionIndex = 82091;
+	inline static constexpr unsigned int CRunnerLoggerImpl__Flush_d__13_TypeDefinitionIndex = 84132;
 
 	class CRunnerLoggerImpl__Flush_d__13 : public ::System::Object
 	{
 	public:
 		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x10
-		::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>* _oTasks_5__1; // 0x28
-		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x30
-		::QWER::CRunnerLoggerImpl* __4__this; // 0x38
-		::System::Threading::Tasks::Task* _oTask_5__3; // 0x40
+		::System::Runtime::CompilerServices::TaskAwaiter __u__1; // 0x28
+		::QWER::CRunnerLoggerImpl* __4__this; // 0x30
+		::System::Threading::Tasks::Task* _oTask_5__3; // 0x38
+		::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>* _oTasks_5__1; // 0x40
 		::System::Int32 _i_5__2; // 0x48
 		::System::Int32 __1__state; // 0x4C
 

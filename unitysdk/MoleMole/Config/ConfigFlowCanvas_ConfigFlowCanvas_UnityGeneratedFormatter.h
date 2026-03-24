@@ -12,26 +12,26 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCD05640)
-#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCD05650)
-#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCD05850)
-#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCD05A10)
-#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD059D0)
+#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE35DB20)
+#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE35DB30)
+#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE35DD30)
+#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE35DEF0)
+#define MOLEMOLE_CONFIG_CONFIGFLOWCANVAS_CONFIGFLOWCANVAS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE35DEB0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter_TypeDefinitionIndex = 71096;
+	inline static constexpr unsigned int ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter_TypeDefinitionIndex = 76344;
 
 	class ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigFlowCanvas*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigFlowCanvasData*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigFlowCanvasData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F710);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigFlowCanvasData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31250);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigFlowCanvasLevelData*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigFlowCanvasLevelData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F718);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::MoleMole::Config::ConfigFlowCanvasLevelData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigFlowCanvas_ConfigFlowCanvas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31258);
 		}
 
 		::System::Void _ctor()

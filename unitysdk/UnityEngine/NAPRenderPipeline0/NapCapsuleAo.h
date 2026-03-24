@@ -9,25 +9,25 @@ namespace System::Collections::Generic { template <typename T> class HashSet_1; 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class ComputeBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO_CLEANUP_OFFSET UNITYSDK_OFFSET(0x19BBD000)
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x19BBCE50)
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BBD180)
-#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO__CTOR_OFFSET UNITYSDK_OFFSET(0x19BBCF40)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO_CLEANUP_OFFSET UNITYSDK_OFFSET(0x1A1A1710)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x1A1A1560)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A1A1890)
+#define UNITYENGINE_NAPRENDERPIPELINE0_NAPCAPSULEAO__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1A1650)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int NapCapsuleAo_TypeDefinitionIndex = 6002;
+	inline static constexpr unsigned int NapCapsuleAo_TypeDefinitionIndex = 6005;
 
 	class NapCapsuleAo : public ::System::Object
 	{
 	public:
-		static ::UnityEngine::NAPRenderPipeline0::NapCapsuleAo** StaticGet__instance()
-		{
-			return (::UnityEngine::NAPRenderPipeline0::NapCapsuleAo**)Il2CppClass::FromTypeDefinitionIndex(NapCapsuleAo_TypeDefinitionIndex)->GetStaticField(0x4B60);
-		}
 		static ::System::Collections::Generic::HashSet_1<::Il2CppArray<::UnityEngine::NAPRenderPipeline0::NapCapsuleAoNodeBinding>*>** StaticGet_m_Containers()
 		{
-			return (::System::Collections::Generic::HashSet_1<::Il2CppArray<::UnityEngine::NAPRenderPipeline0::NapCapsuleAoNodeBinding>*>**)Il2CppClass::FromTypeDefinitionIndex(NapCapsuleAo_TypeDefinitionIndex)->GetStaticField(0x4B68);
+			return (::System::Collections::Generic::HashSet_1<::Il2CppArray<::UnityEngine::NAPRenderPipeline0::NapCapsuleAoNodeBinding>*>**)Il2CppClass::FromTypeDefinitionIndex(NapCapsuleAo_TypeDefinitionIndex)->GetStaticField(0x4B60);
+		}
+		static ::UnityEngine::NAPRenderPipeline0::NapCapsuleAo** StaticGet__instance()
+		{
+			return (::UnityEngine::NAPRenderPipeline0::NapCapsuleAo**)Il2CppClass::FromTypeDefinitionIndex(NapCapsuleAo_TypeDefinitionIndex)->GetStaticField(0x4B68);
 		}
 		::System::Collections::Generic::List_1<::UnityEngine::NAPRenderPipeline0::NapCapsuleAoLightData>* lightListForCapAO; // 0x10
 		::System::Int32 m_Kernel; // 0x18

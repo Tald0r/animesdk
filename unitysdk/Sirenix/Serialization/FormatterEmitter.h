@@ -7,11 +7,11 @@ namespace Sirenix::Serialization { class ISerializationPolicy; }
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SIRENIX_SERIALIZATION_FORMATTEREMITTER_GETEMITTEDFORMATTER_OFFSET UNITYSDK_OFFSET(0x1AE27A30)
+#define SIRENIX_SERIALIZATION_FORMATTEREMITTER_GETEMITTEDFORMATTER_OFFSET UNITYSDK_OFFSET(0x1B441320)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int FormatterEmitter_TypeDefinitionIndex = 7322;
+	inline static constexpr unsigned int FormatterEmitter_TypeDefinitionIndex = 7327;
 
 	class FormatterEmitter : public ::System::Object
 	{

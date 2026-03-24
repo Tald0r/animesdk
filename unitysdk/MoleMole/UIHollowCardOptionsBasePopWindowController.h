@@ -4,11 +4,11 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSBASEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xA192830)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSBASEPOPWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x9D24CE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardOptionsBasePopWindowController_TypeDefinitionIndex = 72198;
+	inline static constexpr unsigned int UIHollowCardOptionsBasePopWindowController_TypeDefinitionIndex = 67923;
 
 	class UIHollowCardOptionsBasePopWindowController : public ::MoleMole::UIWindowController
 	{

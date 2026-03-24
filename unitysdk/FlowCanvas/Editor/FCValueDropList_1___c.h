@@ -8,7 +8,7 @@ namespace System { class String; }
 
 namespace FlowCanvas::Editor
 {
-	inline static constexpr unsigned int FCValueDropList_1___c_TypeDefinitionIndex = 25968;
+	inline static constexpr unsigned int FCValueDropList_1___c_TypeDefinitionIndex = 26258;
 
 	template <typename T>
 	class FCValueDropList_1___c : public ::System::Object

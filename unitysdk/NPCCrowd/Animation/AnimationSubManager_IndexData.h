@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INDEXDATA_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x329AD0)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INDEXDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x7645F60)
-#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INDEXDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x329B50)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INDEXDATA_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x355B60)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INDEXDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x86283C0)
+#define NPCCROWD_ANIMATION_ANIMATIONSUBMANAGER_INDEXDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x355BE0)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_IndexData_TypeDefinitionIndex = 71126;
+	inline static constexpr unsigned int AnimationSubManager_IndexData_TypeDefinitionIndex = 59722;
 
 	struct alignas(2) AnimationSubManager_IndexData
 	{
 		static ::NPCCrowd::Animation::AnimationSubManager_IndexData* StaticGet_Invalid()
 		{
-			return (::NPCCrowd::Animation::AnimationSubManager_IndexData*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_IndexData_TypeDefinitionIndex)->GetStaticField(0xCF90);
+			return (::NPCCrowd::Animation::AnimationSubManager_IndexData*)Il2CppClass::FromTypeDefinitionIndex(AnimationSubManager_IndexData_TypeDefinitionIndex)->GetStaticField(0xDA70);
 		}
 		::System::UInt16 StateMachineArchetypeIndex; // 0x10
 		::System::UInt16 AvatarArchetypeIndex; // 0x12

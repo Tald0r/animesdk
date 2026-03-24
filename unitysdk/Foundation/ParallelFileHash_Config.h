@@ -4,22 +4,22 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_PARALLELFILEHASH_CONFIG_TOSTRING_OFFSET UNITYSDK_OFFSET(0x630F8F0)
-#define FOUNDATION_PARALLELFILEHASH_CONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x630FC30)
-#define FOUNDATION_PARALLELFILEHASH_CONFIG___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x630FC50)
+#define FOUNDATION_PARALLELFILEHASH_CONFIG_TOSTRING_OFFSET UNITYSDK_OFFSET(0x14EFB5A0)
+#define FOUNDATION_PARALLELFILEHASH_CONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x14EFB8E0)
+#define FOUNDATION_PARALLELFILEHASH_CONFIG___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x14EFB900)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ParallelFileHash_Config_TypeDefinitionIndex = 77636;
+	inline static constexpr unsigned int ParallelFileHash_Config_TypeDefinitionIndex = 73489;
 
 	class ParallelFileHash_Config : public ::System::Object
 	{
 	public:
 		::System::Int32 chunkSize; // 0x10
 		::System::Int32 hashThreadCount; // 0x14
-		::System::Int32 initialChunks; // 0x18
+		::System::Int32 ioThreadCount; // 0x18
 		::System::Int32 timeSlice; // 0x1C
-		::System::Int32 ioThreadCount; // 0x20
+		::System::Int32 initialChunks; // 0x20
 
 		::System::Void _ctor()
 		{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOLDATA_ALLOCATEBLOCK_OFFSET UNITYSDK_OFFSET(0x97B910)
-#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOLDATA_FREEBLOCK_OFFSET UNITYSDK_OFFSET(0x97B980)
+#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOLDATA_ALLOCATEBLOCK_OFFSET UNITYSDK_OFFSET(0x9B0560)
+#define UNITY_COLLECTIONS_NATIVEQUEUEBLOCKPOOLDATA_FREEBLOCK_OFFSET UNITYSDK_OFFSET(0x9B05D0)
 
 namespace Unity::Collections
 {
-	inline static constexpr unsigned int NativeQueueBlockPoolData_TypeDefinitionIndex = 19202;
+	inline static constexpr unsigned int NativeQueueBlockPoolData_TypeDefinitionIndex = 19800;
 
 	struct alignas(8) NativeQueueBlockPoolData
 	{

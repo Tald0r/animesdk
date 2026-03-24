@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopMatchPageController_LevelTabStatus_TypeDefinitionIndex = 58242;
+	inline static constexpr unsigned int UICoopMatchPageController_LevelTabStatus_TypeDefinitionIndex = 74033;
 
 	enum class UICoopMatchPageController_LevelTabStatus : ::System::Int32
 	{
-		LEVEL_NORMAL = 0,
 		LEVEL_NIGHTMARE = 1,
+		LEVEL_NORMAL = 0,
 	};
 }

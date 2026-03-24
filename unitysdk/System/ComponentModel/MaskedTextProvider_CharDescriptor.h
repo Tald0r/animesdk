@@ -6,8 +6,8 @@
 
 namespace System { class String; }
 
-#define SYSTEM_COMPONENTMODEL_MASKEDTEXTPROVIDER_CHARDESCRIPTOR_TOSTRING_OFFSET UNITYSDK_OFFSET(0x18231A90)
-#define SYSTEM_COMPONENTMODEL_MASKEDTEXTPROVIDER_CHARDESCRIPTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x18231A80)
+#define SYSTEM_COMPONENTMODEL_MASKEDTEXTPROVIDER_CHARDESCRIPTOR_TOSTRING_OFFSET UNITYSDK_OFFSET(0x187CBEA0)
+#define SYSTEM_COMPONENTMODEL_MASKEDTEXTPROVIDER_CHARDESCRIPTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x187CBE90)
 
 namespace System::ComponentModel
 {
@@ -16,10 +16,10 @@ namespace System::ComponentModel
 	class MaskedTextProvider_CharDescriptor : public ::System::Object
 	{
 	public:
-		::System::Int32 MaskPosition; // 0x10
-		::System::ComponentModel::MaskedTextProvider_CaseConversion CaseConversion; // 0x14
-		::System::ComponentModel::MaskedTextProvider_CharType CharType; // 0x18
-		::System::Boolean IsAssigned; // 0x1C
+		::System::ComponentModel::MaskedTextProvider_CharType CharType; // 0x10
+		::System::Int32 MaskPosition; // 0x14
+		::System::Boolean IsAssigned; // 0x18
+		::System::ComponentModel::MaskedTextProvider_CaseConversion CaseConversion; // 0x1C
 
 		::System::Void _ctor(::System::Int32 maskPos, ::System::ComponentModel::MaskedTextProvider_CharType charType)
 		{

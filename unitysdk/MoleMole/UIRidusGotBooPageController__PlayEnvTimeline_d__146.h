@@ -6,12 +6,12 @@
 namespace MoleMole { class UIRidusGotBooPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYENVTIMELINE_D__146_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x396FD0)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYENVTIMELINE_D__146_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYENVTIMELINE_D__146_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x329E90)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__PLAYENVTIMELINE_D__146_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController__PlayEnvTimeline_d__146_TypeDefinitionIndex = 66290;
+	inline static constexpr unsigned int UIRidusGotBooPageController__PlayEnvTimeline_d__146_TypeDefinitionIndex = 44122;
 
 	struct alignas(8) UIRidusGotBooPageController__PlayEnvTimeline_d__146
 	{

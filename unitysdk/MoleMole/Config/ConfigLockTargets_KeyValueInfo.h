@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGLOCKTARGETS_KEYVALUEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6554680)
+#define MOLEMOLE_CONFIG_CONFIGLOCKTARGETS_KEYVALUEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x81F01F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLockTargets_KeyValueInfo_TypeDefinitionIndex = 50418;
+	inline static constexpr unsigned int ConfigLockTargets_KeyValueInfo_TypeDefinitionIndex = 64664;
 
 	class ConfigLockTargets_KeyValueInfo : public ::System::Object
 	{

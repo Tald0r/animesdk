@@ -6,12 +6,12 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define FLOWCANVAS_NODES_EXTRACTRAYCASTHIT_INVOKE_OFFSET UNITYSDK_OFFSET(0x183DBAC0)
-#define FLOWCANVAS_NODES_EXTRACTRAYCASTHIT__CTOR_OFFSET UNITYSDK_OFFSET(0x183DBC80)
+#define FLOWCANVAS_NODES_EXTRACTRAYCASTHIT_INVOKE_OFFSET UNITYSDK_OFFSET(0x19178B90)
+#define FLOWCANVAS_NODES_EXTRACTRAYCASTHIT__CTOR_OFFSET UNITYSDK_OFFSET(0x19178D50)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ExtractRaycastHit_TypeDefinitionIndex = 26118;
+	inline static constexpr unsigned int ExtractRaycastHit_TypeDefinitionIndex = 26719;
 
 	class ExtractRaycastHit : public ::FlowCanvas::Nodes::ExtractorNode_5<::UnityEngine::RaycastHit, ::UnityEngine::GameObject*, ::System::Single, ::UnityEngine::Vector3, ::UnityEngine::Vector3>
 	{

@@ -7,12 +7,12 @@
 #include "unitysdk/UnityEngine/Experimental/AI/NavMeshQuery.h"
 #include "unitysdk/UnityEngine/Experimental/AI/PolygonId.h"
 
-#define NPCCROWD_ABILITY_FNPCNAVMESHDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x30BCB0)
-#define NPCCROWD_ABILITY_FNPCNAVMESHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x30BCA0)
+#define NPCCROWD_ABILITY_FNPCNAVMESHDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x339250)
+#define NPCCROWD_ABILITY_FNPCNAVMESHDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x339240)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int FNPCNavmeshData_TypeDefinitionIndex = 58864;
+	inline static constexpr unsigned int FNPCNavmeshData_TypeDefinitionIndex = 75945;
 
 	struct alignas(8) FNPCNavmeshData
 	{

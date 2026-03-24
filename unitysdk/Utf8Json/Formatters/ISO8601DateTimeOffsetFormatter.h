@@ -8,21 +8,21 @@
 namespace Utf8Json { class IJsonFormatterResolver; }
 namespace Utf8Json { template <typename T> class IJsonFormatter_1; }
 
-#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B0A2230)
-#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B0A1980)
-#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0A31B0)
-#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0A31A0)
+#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER_DESERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B6B0090)
+#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER_SERIALIZE_OFFSET UNITYSDK_OFFSET(0x1B6AF7E0)
+#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6B1010)
+#define UTF8JSON_FORMATTERS_ISO8601DATETIMEOFFSETFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6B1000)
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int ISO8601DateTimeOffsetFormatter_TypeDefinitionIndex = 81963;
+	inline static constexpr unsigned int ISO8601DateTimeOffsetFormatter_TypeDefinitionIndex = 84004;
 
 	class ISO8601DateTimeOffsetFormatter : public ::System::Object
 	{
 	public:
 		static ::Utf8Json::IJsonFormatter_1<::System::DateTimeOffset>** StaticGet_Default()
 		{
-			return (::Utf8Json::IJsonFormatter_1<::System::DateTimeOffset>**)Il2CppClass::FromTypeDefinitionIndex(ISO8601DateTimeOffsetFormatter_TypeDefinitionIndex)->GetStaticField(0x47240);
+			return (::Utf8Json::IJsonFormatter_1<::System::DateTimeOffset>**)Il2CppClass::FromTypeDefinitionIndex(ISO8601DateTimeOffsetFormatter_TypeDefinitionIndex)->GetStaticField(0x48C50);
 		}
 
 		::System::Void _ctor()

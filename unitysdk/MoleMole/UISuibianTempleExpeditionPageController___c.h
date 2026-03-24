@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCA75520)
-#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCA75560)
-#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__ONUIINIT_B__18_4_OFFSET UNITYSDK_OFFSET(0xCA75570)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x78FADD0)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x78FAE10)
+#define MOLEMOLE_UISUIBIANTEMPLEEXPEDITIONPAGECONTROLLER___C__ONUIINIT_B__18_4_OFFSET UNITYSDK_OFFSET(0x78FAE20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleExpeditionPageController___c_TypeDefinitionIndex = 37769;
+	inline static constexpr unsigned int UISuibianTempleExpeditionPageController___c_TypeDefinitionIndex = 58231;
 
 	class UISuibianTempleExpeditionPageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__18_4()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleExpeditionPageController___c_TypeDefinitionIndex)->GetStaticField(0x30280);
-		}
 		static ::MoleMole::UISuibianTempleExpeditionPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UISuibianTempleExpeditionPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleExpeditionPageController___c_TypeDefinitionIndex)->GetStaticField(0x30288);
+			return (::MoleMole::UISuibianTempleExpeditionPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleExpeditionPageController___c_TypeDefinitionIndex)->GetStaticField(0x31E50);
+		}
+		static ::System::Action** StaticGet___9__18_4()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleExpeditionPageController___c_TypeDefinitionIndex)->GetStaticField(0x31E58);
 		}
 
 		static ::System::Void _cctor()

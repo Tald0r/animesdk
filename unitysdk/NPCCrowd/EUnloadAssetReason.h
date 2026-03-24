@@ -3,7 +3,7 @@
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int EUnloadAssetReason_TypeDefinitionIndex = 43104;
+	inline static constexpr unsigned int EUnloadAssetReason_TypeDefinitionIndex = 79122;
 
 	enum class EUnloadAssetReason : ::System::Int32
 	{

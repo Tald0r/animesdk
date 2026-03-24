@@ -6,20 +6,20 @@
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_ACTIONS_DECOMPOSEVECTOR_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A08A6E0)
-#define NODECANVAS_TASKS_ACTIONS_DECOMPOSEVECTOR_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A08A7C0)
-#define NODECANVAS_TASKS_ACTIONS_DECOMPOSEVECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A08A8C0)
+#define NODECANVAS_TASKS_ACTIONS_DECOMPOSEVECTOR_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A65D300)
+#define NODECANVAS_TASKS_ACTIONS_DECOMPOSEVECTOR_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A65D3E0)
+#define NODECANVAS_TASKS_ACTIONS_DECOMPOSEVECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65D4E0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int DecomposeVector_TypeDefinitionIndex = 25550;
+	inline static constexpr unsigned int DecomposeVector_TypeDefinitionIndex = 27234;
 
 	class DecomposeVector : public ::NodeCanvas::Framework::ActionTask
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Vector3>* targetVector; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* y; // 0x60
 		::NodeCanvas::Framework::BBParameter_1<::System::Single>* z; // 0x68
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* y; // 0x70
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Vector3>* targetVector; // 0x70
 		::NodeCanvas::Framework::BBParameter_1<::System::Single>* x; // 0x78
 
 		::System::Void _ctor()

@@ -3,7 +3,7 @@
 
 namespace Utf8Json
 {
-	inline static constexpr unsigned int IJsonFormatter_TypeDefinitionIndex = 81726;
+	inline static constexpr unsigned int IJsonFormatter_TypeDefinitionIndex = 83767;
 
 	class IJsonFormatter
 	{

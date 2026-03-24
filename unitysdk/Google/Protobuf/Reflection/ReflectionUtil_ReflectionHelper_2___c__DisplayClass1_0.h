@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_4;
+class Class_0_16E4307DCC419505_3;
 namespace System { template <typename T> class Action_1; }
 
 namespace Google::Protobuf::Reflection
 {
-	inline static constexpr unsigned int ReflectionUtil_ReflectionHelper_2___c__DisplayClass1_0_TypeDefinitionIndex = 9369;
+	inline static constexpr unsigned int ReflectionUtil_ReflectionHelper_2___c__DisplayClass1_0_TypeDefinitionIndex = 9434;
 
 	template <typename T1, typename T2>
 	class ReflectionUtil_ReflectionHelper_2___c__DisplayClass1_0 : public ::System::Object

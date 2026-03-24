@@ -8,49 +8,49 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Reflection { class ConstructorInfo; }
 namespace Utf8Json::Internal::Emit { class MetaMember; }
 
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B06FBE0)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B06FC20)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_0_OFFSET UNITYSDK_OFFSET(0x1B06FC30)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_1_OFFSET UNITYSDK_OFFSET(0x1B06FC60)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_2_OFFSET UNITYSDK_OFFSET(0x1B06FCB0)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_3_OFFSET UNITYSDK_OFFSET(0x1B06FCE0)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_4_OFFSET UNITYSDK_OFFSET(0x1B06FD10)
-#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_5_OFFSET UNITYSDK_OFFSET(0x1B06FD20)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B67D8F0)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B67D930)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_0_OFFSET UNITYSDK_OFFSET(0x1B67D940)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_1_OFFSET UNITYSDK_OFFSET(0x1B67D970)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_2_OFFSET UNITYSDK_OFFSET(0x1B67D9C0)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_3_OFFSET UNITYSDK_OFFSET(0x1B67D9F0)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_4_OFFSET UNITYSDK_OFFSET(0x1B67DA20)
+#define UTF8JSON_INTERNAL_EMIT_METATYPE___C___CTOR_B__26_5_OFFSET UNITYSDK_OFFSET(0x1B67DA30)
 
 namespace Utf8Json::Internal::Emit
 {
-	inline static constexpr unsigned int MetaType___c_TypeDefinitionIndex = 81915;
+	inline static constexpr unsigned int MetaType___c_TypeDefinitionIndex = 83956;
 
 	class MetaType___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>** StaticGet___9__26_0()
-		{
-			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473A0);
-		}
-		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::String*>** StaticGet___9__26_4()
-		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473A8);
-		}
-		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>** StaticGet___9__26_2()
-		{
-			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473B0);
-		}
 		static ::Utf8Json::Internal::Emit::MetaType___c** StaticGet___9()
 		{
-			return (::Utf8Json::Internal::Emit::MetaType___c**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473B8);
-		}
-		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>>** StaticGet___9__26_5()
-		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473C0);
-		}
-		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>** StaticGet___9__26_1()
-		{
-			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473C8);
+			return (::Utf8Json::Internal::Emit::MetaType___c**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DB0);
 		}
 		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Int32>** StaticGet___9__26_3()
 		{
-			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x473D0);
+			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DB8);
+		}
+		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>** StaticGet___9__26_0()
+		{
+			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DC0);
+		}
+		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>>** StaticGet___9__26_5()
+		{
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DC8);
+		}
+		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>** StaticGet___9__26_1()
+		{
+			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DD0);
+		}
+		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::String*>** StaticGet___9__26_4()
+		{
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::Utf8Json::Internal::Emit::MetaMember*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DD8);
+		}
+		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>** StaticGet___9__26_2()
+		{
+			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MetaType___c_TypeDefinitionIndex)->GetStaticField(0x48DE0);
 		}
 
 		static ::System::Void _cctor()

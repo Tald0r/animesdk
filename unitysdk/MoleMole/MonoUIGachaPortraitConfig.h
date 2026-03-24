@@ -6,11 +6,11 @@ namespace MoleMole { class MonoUIPortraitConfig; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOUIGACHAPORTRAITCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB3BCC60)
+#define MOLEMOLE_MONOUIGACHAPORTRAITCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA654700)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoUIGachaPortraitConfig_TypeDefinitionIndex = 50560;
+	inline static constexpr unsigned int MonoUIGachaPortraitConfig_TypeDefinitionIndex = 52352;
 
 	class MonoUIGachaPortraitConfig : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

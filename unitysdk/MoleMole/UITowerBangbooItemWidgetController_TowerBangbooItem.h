@@ -4,11 +4,11 @@
 
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
 
-#define MOLEMOLE_UITOWERBANGBOOITEMWIDGETCONTROLLER_TOWERBANGBOOITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x71DF110)
+#define MOLEMOLE_UITOWERBANGBOOITEMWIDGETCONTROLLER_TOWERBANGBOOITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xCAAE4D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITowerBangbooItemWidgetController_TowerBangbooItem_TypeDefinitionIndex = 58981;
+	inline static constexpr unsigned int UITowerBangbooItemWidgetController_TowerBangbooItem_TypeDefinitionIndex = 55416;
 
 	class UITowerBangbooItemWidgetController_TowerBangbooItem : public ::System::Object
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONSINGLECONFIG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x96EB5B0)
-#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONSINGLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x96EB690)
+#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONSINGLECONFIG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0xB07A840)
+#define MOLEMOLE_CAMERAS_OVERLOOKCAMERAFOCUSONSINGLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB07A920)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int OverlookCameraFocusOnSingleConfig_TypeDefinitionIndex = 63705;
+	inline static constexpr unsigned int OverlookCameraFocusOnSingleConfig_TypeDefinitionIndex = 58039;
 
 	class OverlookCameraFocusOnSingleConfig : public ::System::Object
 	{

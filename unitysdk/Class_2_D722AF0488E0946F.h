@@ -5,13 +5,13 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_2_D722AF0488E0946F_METHOD_2_3EA6838F27BFE8C5_OFFSET UNITYSDK_OFFSET(0x657AD10)
-#define CLASS_2_D722AF0488E0946F_METHOD_2_40E490E2772D5D75_OFFSET UNITYSDK_OFFSET(0x657AEF0)
-#define CLASS_2_D722AF0488E0946F_METHOD_2_953E5349B3BD8FFD_OFFSET UNITYSDK_OFFSET(0x657AC20)
-#define CLASS_2_D722AF0488E0946F_METHOD_2_E5340AA01F92592A_OFFSET UNITYSDK_OFFSET(0x657AAC0)
-#define CLASS_2_D722AF0488E0946F__CTOR_OFFSET UNITYSDK_OFFSET(0x657AA60)
+#define CLASS_2_D722AF0488E0946F_METHOD_2_3EA6838F27BFE8C5_OFFSET UNITYSDK_OFFSET(0x9E20770)
+#define CLASS_2_D722AF0488E0946F_METHOD_2_40E490E2772D5D75_OFFSET UNITYSDK_OFFSET(0x9E206F0)
+#define CLASS_2_D722AF0488E0946F_METHOD_2_953E5349B3BD8FFD_OFFSET UNITYSDK_OFFSET(0x9E20950)
+#define CLASS_2_D722AF0488E0946F_METHOD_2_E5340AA01F92592A_OFFSET UNITYSDK_OFFSET(0x9E20590)
+#define CLASS_2_D722AF0488E0946F__CTOR_OFFSET UNITYSDK_OFFSET(0x9E20530)
 
-inline static constexpr unsigned int Class_2_D722AF0488E0946F_TypeDefinitionIndex = 41381;
+inline static constexpr unsigned int Class_2_D722AF0488E0946F_TypeDefinitionIndex = 48534;
 
 class Class_2_D722AF0488E0946F : public ::Class_1_30F59ECD344F611F
 {
@@ -30,9 +30,9 @@ public:
 		return ((::UnityEngine::Vector3(*)(::PVOID, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_2_D722AF0488E0946F_METHOD_2_E5340AA01F92592A_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_2_953E5349B3BD8FFD(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2, ::System::Single a3, ::UnityEngine::AnimationCurve* a4)
+	::System::Void Method_2_40E490E2772D5D75(::UnityEngine::Vector3 a1)
 	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::System::Single, ::UnityEngine::AnimationCurve*))((::PBYTE)hIl2Cpp + CLASS_2_D722AF0488E0946F_METHOD_2_953E5349B3BD8FFD_OFFSET))(this, a1, a2, a3, a4);
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CLASS_2_D722AF0488E0946F_METHOD_2_40E490E2772D5D75_OFFSET))(this, a1);
 	}
 
 	::UnityEngine::Vector3 Method_2_3EA6838F27BFE8C5(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2, ::UnityEngine::AnimationCurve* a3, ::System::Single a4, ::System::Single a5)
@@ -40,8 +40,8 @@ public:
 		return ((::UnityEngine::Vector3(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::UnityEngine::AnimationCurve*, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_2_D722AF0488E0946F_METHOD_2_3EA6838F27BFE8C5_OFFSET))(this, a1, a2, a3, a4, a5);
 	}
 
-	::System::Void Method_2_40E490E2772D5D75(::UnityEngine::Vector3 a1)
+	::System::Void Method_2_953E5349B3BD8FFD(::UnityEngine::Vector3 a1, ::UnityEngine::Vector3 a2, ::System::Single a3, ::UnityEngine::AnimationCurve* a4)
 	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3))((::PBYTE)hIl2Cpp + CLASS_2_D722AF0488E0946F_METHOD_2_40E490E2772D5D75_OFFSET))(this, a1);
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Vector3, ::UnityEngine::Vector3, ::System::Single, ::UnityEngine::AnimationCurve*))((::PBYTE)hIl2Cpp + CLASS_2_D722AF0488E0946F_METHOD_2_953E5349B3BD8FFD_OFFSET))(this, a1, a2, a3, a4);
 	}
 };

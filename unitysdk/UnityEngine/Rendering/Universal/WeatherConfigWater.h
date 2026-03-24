@@ -5,22 +5,22 @@
 namespace UnityEngine::Rendering::Universal { class SingleWeatherConfigWater; }
 namespace UnityEngine::Rendering::Universal { class WaterResources; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER_DEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x183B0B90)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER_GETINDEX_OFFSET UNITYSDK_OFFSET(0x183B0BF0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER_LERP_OFFSET UNITYSDK_OFFSET(0x183B0DA0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER__CCTOR_OFFSET UNITYSDK_OFFSET(0x183B1090)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER__CTOR_OFFSET UNITYSDK_OFFSET(0x183B1040)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER_DEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x18A06EB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER_GETINDEX_OFFSET UNITYSDK_OFFSET(0x18A06F10)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER_LERP_OFFSET UNITYSDK_OFFSET(0x18A070C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18A073B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERCONFIGWATER__CTOR_OFFSET UNITYSDK_OFFSET(0x18A07360)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int WeatherConfigWater_TypeDefinitionIndex = 28349;
+	inline static constexpr unsigned int WeatherConfigWater_TypeDefinitionIndex = 29290;
 
 	class WeatherConfigWater : public ::UnityEngine::ScriptableObject
 	{
 	public:
 		static ::UnityEngine::Rendering::Universal::SingleWeatherConfigWater** StaticGet_s_CachedSingleWaterConfig()
 		{
-			return (::UnityEngine::Rendering::Universal::SingleWeatherConfigWater**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfigWater_TypeDefinitionIndex)->GetStaticField(0x21930);
+			return (::UnityEngine::Rendering::Universal::SingleWeatherConfigWater**)Il2CppClass::FromTypeDefinitionIndex(WeatherConfigWater_TypeDefinitionIndex)->GetStaticField(0x23280);
 		}
 		::UnityEngine::Rendering::Universal::WaterResources* waterResources; // 0x18
 		::Il2CppArray<::UnityEngine::Rendering::Universal::SingleWeatherConfigWater*>* configs; // 0x20

@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_602E5926BBE69120.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UISDKLOGINCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAC35560)
+#define MOLEMOLE_UISDKLOGINCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCA84B50)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISDKLoginContext_TypeDefinitionIndex = 76952;
+	inline static constexpr unsigned int UISDKLoginContext_TypeDefinitionIndex = 67329;
 
 	class UISDKLoginContext : public ::MoleMole::UIControllerContextBase
 	{

@@ -8,33 +8,33 @@ class Class_2_A8F5ABF31E066ED4;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL_CAROUSELNEXT_OFFSET UNITYSDK_OFFSET(0xBADCB30)
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL_STARTCAROUSEL_OFFSET UNITYSDK_OFFSET(0xBADC5E0)
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL_STOPCAROUSEL_OFFSET UNITYSDK_OFFSET(0xBADC800)
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL__CAROUSELNEXT_B__16_0_OFFSET UNITYSDK_OFFSET(0xBADCE60)
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL__CTOR_OFFSET UNITYSDK_OFFSET(0xBADCC80)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL_CAROUSELNEXT_OFFSET UNITYSDK_OFFSET(0xBFA6830)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL_STARTCAROUSEL_OFFSET UNITYSDK_OFFSET(0xBFA62E0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL_STOPCAROUSEL_OFFSET UNITYSDK_OFFSET(0xBFA6500)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL__CAROUSELNEXT_B__16_0_OFFSET UNITYSDK_OFFSET(0xBFA6B60)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER_CAROUSEL__CTOR_OFFSET UNITYSDK_OFFSET(0xBFA6980)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityFishMainPageController_Carousel_TypeDefinitionIndex = 78559;
+	inline static constexpr unsigned int UIActivityFishMainPageController_Carousel_TypeDefinitionIndex = 38653;
 
 	class UIActivityFishMainPageController_Carousel : public ::System::Object
 	{
 	public:
-		::Class_2_9E3E3CDA608A4F58* _animation; // 0x10
-		::System::Collections::Generic::List_1<::System::String*>* _iconList; // 0x18
-		::Class_2_A8F5ABF31E066ED4* _image1; // 0x20
+		::Class_2_A8F5ABF31E066ED4* _image1; // 0x10
+		::Class_2_9E3E3CDA608A4F58* _animation; // 0x18
+		::System::Collections::Generic::List_1<::System::String*>* _iconList; // 0x20
 		::System::String* _fadeOutClip; // 0x28
 		::System::String* _fadeInClip; // 0x30
-		::System::Single _fadeInClipLength; // 0x38
-		::System::Single _carouselTime; // 0x3C
-		::System::Int32 _curNum; // 0x40
-		::System::Int32 _maxNum; // 0x44
-		::System::Single _fadeOutClipLength; // 0x48
+		::Foundation::Coroutine::CoroutineHandle _waitFadeCarouselHandle; // 0x38
+		::System::Single _fadeInClipLength; // 0x3C
+		::System::Single _firstCarouselTime; // 0x40
+		::System::Single _fadeOutClipLength; // 0x44
+		::System::Int32 _curNum; // 0x48
 		::System::Boolean _isAvatar; // 0x4C
 		::Foundation::Coroutine::CoroutineHandle _carouselHandle; // 0x50
-		::Foundation::Coroutine::CoroutineHandle _waitFadeCarouselHandle; // 0x54
-		::System::Single _firstCarouselTime; // 0x58
+		::System::Single _carouselTime; // 0x54
+		::System::Int32 _maxNum; // 0x58
 
 		::System::Void _ctor()
 		{

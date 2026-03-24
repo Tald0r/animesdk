@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Playables/PlayableBehaviour.h"
 
-#define MOLEMOLE_TIMELINE_PLAYSPEEDBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0x994BA00)
+#define MOLEMOLE_TIMELINE_PLAYSPEEDBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xC7DF1E0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int PlaySpeedBehaviour_TypeDefinitionIndex = 58211;
+	inline static constexpr unsigned int PlaySpeedBehaviour_TypeDefinitionIndex = 61564;
 
 	class PlaySpeedBehaviour : public ::UnityEngine::Playables::PlayableBehaviour
 	{

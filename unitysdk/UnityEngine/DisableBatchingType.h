@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int DisableBatchingType_TypeDefinitionIndex = 5385;
+	inline static constexpr unsigned int DisableBatchingType_TypeDefinitionIndex = 5388;
 
 	enum class DisableBatchingType : ::System::Int32
 	{

@@ -5,24 +5,24 @@
 namespace MoleMole { class UIWorkbenchMainPageSmallBtnWidgetController_Context; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x71E7550)
-#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x71E7590)
-#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__INITAPPICONSDATA_B__25_0_OFFSET UNITYSDK_OFFSET(0x71E75A0)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAB6870)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCAB68B0)
+#define MOLEMOLE_UIWORKBENCHMAINPAGECONTROLLER___C__INITAPPICONSDATA_B__25_0_OFFSET UNITYSDK_OFFSET(0xCAB68C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchMainPageController___c_TypeDefinitionIndex = 39756;
+	inline static constexpr unsigned int UIWorkBenchMainPageController___c_TypeDefinitionIndex = 55972;
 
 	class UIWorkBenchMainPageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::MoleMole::UIWorkbenchMainPageSmallBtnWidgetController_Context*>** StaticGet___9__25_0()
-		{
-			return (::System::Comparison_1<::MoleMole::UIWorkbenchMainPageSmallBtnWidgetController_Context*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x44150);
-		}
 		static ::MoleMole::UIWorkBenchMainPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIWorkBenchMainPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x44158);
+			return (::MoleMole::UIWorkBenchMainPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x444F0);
+		}
+		static ::System::Comparison_1<::MoleMole::UIWorkbenchMainPageSmallBtnWidgetController_Context*>** StaticGet___9__25_0()
+		{
+			return (::System::Comparison_1<::MoleMole::UIWorkbenchMainPageSmallBtnWidgetController_Context*>**)Il2CppClass::FromTypeDefinitionIndex(UIWorkBenchMainPageController___c_TypeDefinitionIndex)->GetStaticField(0x444F8);
 		}
 
 		static ::System::Void _cctor()

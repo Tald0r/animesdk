@@ -5,24 +5,24 @@
 namespace MoleMole { class UITape3DModelController; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7C48750)
-#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7C48790)
-#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__FILTERCENTERTAPE_B__54_0_OFFSET UNITYSDK_OFFSET(0x7C487A0)
+#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA6BE470)
+#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA6BE4B0)
+#define MOLEMOLE_UITAPESGROUP3DMODELCONTROLLER___C__FILTERCENTERTAPE_B__54_0_OFFSET UNITYSDK_OFFSET(0xA6BE4C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITapesGroup3DModelController___c_TypeDefinitionIndex = 69983;
+	inline static constexpr unsigned int UITapesGroup3DModelController___c_TypeDefinitionIndex = 53122;
 
 	class UITapesGroup3DModelController___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::MoleMole::UITape3DModelController*>** StaticGet___9__54_0()
 		{
-			return (::System::Comparison_1<::MoleMole::UITape3DModelController*>**)Il2CppClass::FromTypeDefinitionIndex(UITapesGroup3DModelController___c_TypeDefinitionIndex)->GetStaticField(0x32AF0);
+			return (::System::Comparison_1<::MoleMole::UITape3DModelController*>**)Il2CppClass::FromTypeDefinitionIndex(UITapesGroup3DModelController___c_TypeDefinitionIndex)->GetStaticField(0x34A10);
 		}
 		static ::MoleMole::UITapesGroup3DModelController___c** StaticGet___9()
 		{
-			return (::MoleMole::UITapesGroup3DModelController___c**)Il2CppClass::FromTypeDefinitionIndex(UITapesGroup3DModelController___c_TypeDefinitionIndex)->GetStaticField(0x32AF8);
+			return (::MoleMole::UITapesGroup3DModelController___c**)Il2CppClass::FromTypeDefinitionIndex(UITapesGroup3DModelController___c_TypeDefinitionIndex)->GetStaticField(0x34A18);
 		}
 
 		static ::System::Void _cctor()

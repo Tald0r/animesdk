@@ -8,7 +8,7 @@
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessBoardSearchMap_SearchParams_TypeDefinitionIndex = 60844;
+	inline static constexpr unsigned int ChessBoardSearchMap_SearchParams_TypeDefinitionIndex = 79091;
 
 	struct alignas(8) ChessBoardSearchMap_SearchParams
 	{

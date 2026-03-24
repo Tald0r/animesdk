@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define UNITYENGINE_CONTROLPARAMHANDLEWRAPPER_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x1B153210)
-#define UNITYENGINE_CONTROLPARAMHANDLEWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x987F00)
+#define UNITYENGINE_CONTROLPARAMHANDLEWRAPPER_INTERNAL_CREATE_OFFSET UNITYSDK_OFFSET(0x1B7720E0)
+#define UNITYENGINE_CONTROLPARAMHANDLEWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x9BDF90)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ControlParamHandleWrapper_TypeDefinitionIndex = 36093;
+	inline static constexpr unsigned int ControlParamHandleWrapper_TypeDefinitionIndex = 37113;
 
 	struct alignas(8) ControlParamHandleWrapper
 	{

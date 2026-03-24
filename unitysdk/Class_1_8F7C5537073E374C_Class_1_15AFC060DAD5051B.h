@@ -6,9 +6,9 @@ namespace MoleMole::Config { class ConfigAbilityTargetData; }
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_8F7C5537073E374C_CLASS_1_15AFC060DAD5051B__CTOR_OFFSET UNITYSDK_OFFSET(0x7C39DC0)
+#define CLASS_1_8F7C5537073E374C_CLASS_1_15AFC060DAD5051B__CTOR_OFFSET UNITYSDK_OFFSET(0xB7D5CC0)
 
-inline static constexpr unsigned int Class_1_8F7C5537073E374C_Class_1_15AFC060DAD5051B_TypeDefinitionIndex = 67309;
+inline static constexpr unsigned int Class_1_8F7C5537073E374C_Class_1_15AFC060DAD5051B_TypeDefinitionIndex = 70820;
 
 class Class_1_8F7C5537073E374C_Class_1_15AFC060DAD5051B : public ::System::Object
 {

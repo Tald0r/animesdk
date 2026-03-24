@@ -10,11 +10,11 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NAPSTREAMING_NAPSTREAMINGGENERATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA116830)
+#define NAPSTREAMING_NAPSTREAMINGGENERATECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x76DCD60)
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NapStreamingGenerateConfig_TypeDefinitionIndex = 65552;
+	inline static constexpr unsigned int NapStreamingGenerateConfig_TypeDefinitionIndex = 38694;
 
 	class NapStreamingGenerateConfig : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{
@@ -30,6 +30,9 @@ namespace NapStreaming
 		::System::Boolean splitExtraHeight; // 0x91
 		::System::Boolean splitLowMemory; // 0x92
 		::System::Boolean generateLowPrefab; // 0x93
+		::System::Boolean convertLODGroupToLODMesh; // 0x94
+		::System::Boolean splitSmallShadowProxy; // 0x95
+		::System::Single smallShadowProxySize; // 0x98
 
 		::System::Void _ctor()
 		{

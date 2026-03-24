@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_D0F9C106E2DD0573;
+class Class_2_4521B631ACA75155;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_0F138252A5783001_CLASS_1_5F24E73807DBCDB3_1_METHOD_1_C450A961450309C9_OFFSET UNITYSDK_OFFSET(0xB83F7A0)
-#define CLASS_2_0F138252A5783001_CLASS_1_5F24E73807DBCDB3_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB83F790)
+#define CLASS_2_0F138252A5783001_CLASS_1_5F24E73807DBCDB3_1_METHOD_1_C450A961450309C9_OFFSET UNITYSDK_OFFSET(0x66BE110)
+#define CLASS_2_0F138252A5783001_CLASS_1_5F24E73807DBCDB3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x66BE100)
 
-inline static constexpr unsigned int Class_2_0F138252A5783001_Class_1_5F24E73807DBCDB3_1_TypeDefinitionIndex = 49076;
+inline static constexpr unsigned int Class_2_0F138252A5783001_Class_1_5F24E73807DBCDB3_1_TypeDefinitionIndex = 70226;
 
 class Class_2_0F138252A5783001_Class_1_5F24E73807DBCDB3_1 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::Class_2_D0F9C106E2DD0573*>*>* Field_1_0; // 0x10
+	::System::Collections::Generic::List_1<::System::Collections::Generic::List_1<::Class_2_4521B631ACA75155*>*>* Field_1_0; // 0x10
 
 	::System::Void _ctor()
 	{

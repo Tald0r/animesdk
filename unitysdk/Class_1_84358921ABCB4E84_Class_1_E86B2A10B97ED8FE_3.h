@@ -1,14 +1,14 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Foundation/DualQuaternion.h"
 #include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/Vector3.h"
 
 namespace UnityEngine { class Transform; }
 
-#define CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3_METHOD_1_FD68C66EACD6313C_OFFSET UNITYSDK_OFFSET(0x7662270)
-#define CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3__CTOR_OFFSET UNITYSDK_OFFSET(0x7662260)
+#define CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3_METHOD_1_A7C25C16DAF12EC1_OFFSET UNITYSDK_OFFSET(0x826C440)
+#define CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3__CTOR_OFFSET UNITYSDK_OFFSET(0x826C430)
 
-inline static constexpr unsigned int Class_1_84358921ABCB4E84_Class_1_E86B2A10B97ED8FE_3_TypeDefinitionIndex = 75407;
+inline static constexpr unsigned int Class_1_84358921ABCB4E84_Class_1_E86B2A10B97ED8FE_3_TypeDefinitionIndex = 71966;
 
 class Class_1_84358921ABCB4E84_Class_1_E86B2A10B97ED8FE_3 : public ::System::Object
 {
@@ -20,8 +20,8 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3__CTOR_OFFSET))(this);
 	}
 
-	::Foundation::DualQuaternion Method_1_FD68C66EACD6313C()
+	::UnityEngine::Vector3 Method_1_A7C25C16DAF12EC1()
 	{
-		return ((::Foundation::DualQuaternion(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3_METHOD_1_FD68C66EACD6313C_OFFSET))(this);
+		return ((::UnityEngine::Vector3(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_84358921ABCB4E84_CLASS_1_E86B2A10B97ED8FE_3_METHOD_1_A7C25C16DAF12EC1_OFFSET))(this);
 	}
 };

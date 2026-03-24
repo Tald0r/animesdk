@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::Controls
 {
-	inline static constexpr unsigned int DiscreteButtonControl_WriteMode_TypeDefinitionIndex = 27897;
+	inline static constexpr unsigned int DiscreteButtonControl_WriteMode_TypeDefinitionIndex = 28837;
 
 	enum class DiscreteButtonControl_WriteMode : ::System::Int32
 	{

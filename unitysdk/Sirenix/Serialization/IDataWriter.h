@@ -11,7 +11,7 @@ namespace System::IO { class Stream; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int IDataWriter_TypeDefinitionIndex = 7286;
+	inline static constexpr unsigned int IDataWriter_TypeDefinitionIndex = 7291;
 
 	class IDataWriter
 	{

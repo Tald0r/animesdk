@@ -7,12 +7,12 @@
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define MOLEMOLE_TIMELINE_MESHRENDERERTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1A6C86E0)
-#define MOLEMOLE_TIMELINE_MESHRENDERERTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6C8900)
+#define MOLEMOLE_TIMELINE_MESHRENDERERTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1AC73940)
+#define MOLEMOLE_TIMELINE_MESHRENDERERTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC73B60)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MeshRendererTrack_TypeDefinitionIndex = 29184;
+	inline static constexpr unsigned int MeshRendererTrack_TypeDefinitionIndex = 30137;
 
 	class MeshRendererTrack : public ::UnityEngine::Timeline::TrackAsset
 	{

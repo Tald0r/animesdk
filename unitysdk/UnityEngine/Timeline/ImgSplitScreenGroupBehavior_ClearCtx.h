@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITYENGINE_TIMELINE_IMGSPLITSCREENGROUPBEHAVIOR_CLEARCTX__CTOR_OFFSET UNITYSDK_OFFSET(0x96A5D0)
+#define UNITYENGINE_TIMELINE_IMGSPLITSCREENGROUPBEHAVIOR_CLEARCTX__CTOR_OFFSET UNITYSDK_OFFSET(0x99CF00)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int ImgSplitScreenGroupBehavior_ClearCtx_TypeDefinitionIndex = 29310;
+	inline static constexpr unsigned int ImgSplitScreenGroupBehavior_ClearCtx_TypeDefinitionIndex = 30263;
 
 	struct alignas(8) ImgSplitScreenGroupBehavior_ClearCtx
 	{

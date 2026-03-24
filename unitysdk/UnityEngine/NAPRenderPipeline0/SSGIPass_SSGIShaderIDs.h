@@ -2,45 +2,45 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSGIPASS_SSGISHADERIDS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19812E40)
-#define UNITYENGINE_NAPRENDERPIPELINE0_SSGIPASS_SSGISHADERIDS__CTOR_OFFSET UNITYSDK_OFFSET(0x19812E30)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSGIPASS_SSGISHADERIDS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19CEB950)
+#define UNITYENGINE_NAPRENDERPIPELINE0_SSGIPASS_SSGISHADERIDS__CTOR_OFFSET UNITYSDK_OFFSET(0x19CEB940)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int SSGIPass_SSGIShaderIDs_TypeDefinitionIndex = 5813;
+	inline static constexpr unsigned int SSGIPass_SSGIShaderIDs_TypeDefinitionIndex = 5815;
 
 	class SSGIPass_SSGIShaderIDs : public ::System::Object
 	{
 	public:
-		static ::System::Int32* StaticGet__SSGIHistorySceneColor()
+		static ::System::Int32* StaticGet__SSGISceneColor()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2920);
 		}
-		static ::System::Int32* StaticGet__SSGIReprojectionWeight()
+		static ::System::Int32* StaticGet__SSGISceneColorTemp()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2924);
 		}
-		static ::System::Int32* StaticGet__SSGISceneColorTemp()
+		static ::System::Int32* StaticGet__SSGISceneNormal()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2928);
 		}
-		static ::System::Int32* StaticGet__SSGIHistory()
+		static ::System::Int32* StaticGet__SSGIHistorySceneColor()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x292C);
 		}
-		static ::System::Int32* StaticGet__SSGISceneDepth()
+		static ::System::Int32* StaticGet__SSGI()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2930);
 		}
-		static ::System::Int32* StaticGet__SSGIHistorySceneNormal()
+		static ::System::Int32* StaticGet__SSGITemp()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2934);
 		}
-		static ::System::Int32* StaticGet__SSGITemp()
+		static ::System::Int32* StaticGet__SSGIReprojectionWeightTemp()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2938);
 		}
-		static ::System::Int32* StaticGet__SSGIReprojectionWeightTemp()
+		static ::System::Int32* StaticGet__SSGISceneDepth()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x293C);
 		}
@@ -48,15 +48,15 @@ namespace UnityEngine::NAPRenderPipeline0
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2940);
 		}
-		static ::System::Int32* StaticGet__SSGISceneColor()
+		static ::System::Int32* StaticGet__SSGIHistory()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2944);
 		}
-		static ::System::Int32* StaticGet__SSGISceneNormal()
+		static ::System::Int32* StaticGet__SSGIHistorySceneNormal()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x2948);
 		}
-		static ::System::Int32* StaticGet__SSGI()
+		static ::System::Int32* StaticGet__SSGIReprojectionWeight()
 		{
 			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(SSGIPass_SSGIShaderIDs_TypeDefinitionIndex)->GetStaticField(0x294C);
 		}

@@ -4,7 +4,7 @@
 
 namespace RVO
 {
-	inline static constexpr unsigned int KdTree_AgentTreeNode_TypeDefinitionIndex = 34909;
+	inline static constexpr unsigned int KdTree_AgentTreeNode_TypeDefinitionIndex = 35911;
 
 	struct alignas(4) KdTree_AgentTreeNode
 	{

@@ -1,19 +1,19 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_ABC67D4EFBF3BD9A_1.h"
+#include "unitysdk/Struct_2_ABC67D4EFBF3BD9A_2.h"
 #include "unitysdk/System/Object.h"
 
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define BIGSCENEGROUPCHALLENGEUTIL_CHECKCURRENTTEAMAVATARISINAREA_OFFSET UNITYSDK_OFFSET(0xA69EBA0)
-#define BIGSCENEGROUPCHALLENGEUTIL_CHECKTELEPROTANDREGISTERDYNAMICGROUP_OFFSET UNITYSDK_OFFSET(0xA69EDD0)
-#define BIGSCENEGROUPCHALLENGEUTIL_OPENMONSTERCARDPOPUIBYGROUPCHALLENGE_OFFSET UNITYSDK_OFFSET(0xA69EF60)
-#define BIGSCENEGROUPCHALLENGEUTIL_REGISTERDYNAMICGROUPCHALLENGE_OFFSET UNITYSDK_OFFSET(0xA69EA30)
-#define BIGSCENEGROUPCHALLENGEUTIL_SETSTARTGROUPCHALLENGE_OFFSET UNITYSDK_OFFSET(0xA69E7B0)
-#define BIGSCENEGROUPCHALLENGEUTIL__CTOR_OFFSET UNITYSDK_OFFSET(0xA69F1D0)
+#define BIGSCENEGROUPCHALLENGEUTIL_CHECKCURRENTTEAMAVATARISINAREA_OFFSET UNITYSDK_OFFSET(0xC3A5640)
+#define BIGSCENEGROUPCHALLENGEUTIL_CHECKTELEPROTANDREGISTERDYNAMICGROUP_OFFSET UNITYSDK_OFFSET(0xC3A5870)
+#define BIGSCENEGROUPCHALLENGEUTIL_OPENMONSTERCARDPOPUIBYGROUPCHALLENGE_OFFSET UNITYSDK_OFFSET(0xC3A5A00)
+#define BIGSCENEGROUPCHALLENGEUTIL_REGISTERDYNAMICGROUPCHALLENGE_OFFSET UNITYSDK_OFFSET(0xC3A54D0)
+#define BIGSCENEGROUPCHALLENGEUTIL_SETSTARTGROUPCHALLENGE_OFFSET UNITYSDK_OFFSET(0xC3A5250)
+#define BIGSCENEGROUPCHALLENGEUTIL__CTOR_OFFSET UNITYSDK_OFFSET(0xC3A5C70)
 
-inline static constexpr unsigned int BigSceneGroupChallengeUtil_TypeDefinitionIndex = 71019;
+inline static constexpr unsigned int BigSceneGroupChallengeUtil_TypeDefinitionIndex = 41585;
 
 class BigSceneGroupChallengeUtil : public ::System::Object
 {
@@ -28,9 +28,9 @@ public:
 		return ((::System::Void(*)(::System::UInt32, ::System::UInt32, ::System::Action_1<::System::Boolean>*, ::System::Boolean))((::PBYTE)hIl2Cpp + BIGSCENEGROUPCHALLENGEUTIL_SETSTARTGROUPCHALLENGE_OFFSET))(groupID, challengeID, ret, isDynamic);
 	}
 
-	static ::System::Void RegisterDynamicGroupChallenge(::Struct_2_ABC67D4EFBF3BD9A_1 levelInfo, ::System::Action_1<::System::Boolean>* ret, ::System::Boolean isDynamic, ::System::Boolean forceResetTeamData)
+	static ::System::Void RegisterDynamicGroupChallenge(::Struct_2_ABC67D4EFBF3BD9A_2 levelInfo, ::System::Action_1<::System::Boolean>* ret, ::System::Boolean isDynamic, ::System::Boolean forceResetTeamData)
 	{
-		return ((::System::Void(*)(::Struct_2_ABC67D4EFBF3BD9A_1, ::System::Action_1<::System::Boolean>*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + BIGSCENEGROUPCHALLENGEUTIL_REGISTERDYNAMICGROUPCHALLENGE_OFFSET))(levelInfo, ret, isDynamic, forceResetTeamData);
+		return ((::System::Void(*)(::Struct_2_ABC67D4EFBF3BD9A_2, ::System::Action_1<::System::Boolean>*, ::System::Boolean, ::System::Boolean))((::PBYTE)hIl2Cpp + BIGSCENEGROUPCHALLENGEUTIL_REGISTERDYNAMICGROUPCHALLENGE_OFFSET))(levelInfo, ret, isDynamic, forceResetTeamData);
 	}
 
 	static ::System::Boolean CheckCurrentTeamAvatarIsInArea(::System::String* areaID)
@@ -38,9 +38,9 @@ public:
 		return ((::System::Boolean(*)(::System::String*))((::PBYTE)hIl2Cpp + BIGSCENEGROUPCHALLENGEUTIL_CHECKCURRENTTEAMAVATARISINAREA_OFFSET))(areaID);
 	}
 
-	static ::System::Void CheckTeleprotAndRegisterDynamicGroup(::Struct_2_ABC67D4EFBF3BD9A_1 levelInfo, ::System::Action_1<::System::Boolean>* ret)
+	static ::System::Void CheckTeleprotAndRegisterDynamicGroup(::Struct_2_ABC67D4EFBF3BD9A_2 levelInfo, ::System::Action_1<::System::Boolean>* ret)
 	{
-		return ((::System::Void(*)(::Struct_2_ABC67D4EFBF3BD9A_1, ::System::Action_1<::System::Boolean>*))((::PBYTE)hIl2Cpp + BIGSCENEGROUPCHALLENGEUTIL_CHECKTELEPROTANDREGISTERDYNAMICGROUP_OFFSET))(levelInfo, ret);
+		return ((::System::Void(*)(::Struct_2_ABC67D4EFBF3BD9A_2, ::System::Action_1<::System::Boolean>*))((::PBYTE)hIl2Cpp + BIGSCENEGROUPCHALLENGEUTIL_CHECKTELEPROTANDREGISTERDYNAMICGROUP_OFFSET))(levelInfo, ret);
 	}
 
 	static ::System::Void OpenMonsterCardPopUIByGroupChallenge(::System::Int32 groupID)

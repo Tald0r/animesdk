@@ -9,7 +9,7 @@ namespace UnityEngine::Timeline { class TrackAsset; }
 
 namespace MoleMole::Timeline::ZNet
 {
-	inline static constexpr unsigned int ZNetExQTETagSupportBehavior_Class_1_17DB49E9F08920F8_TypeDefinitionIndex = 37544;
+	inline static constexpr unsigned int ZNetExQTETagSupportBehavior_Class_1_17DB49E9F08920F8_TypeDefinitionIndex = 38136;
 
 	template <typename T>
 	class ZNetExQTETagSupportBehavior_Class_1_17DB49E9F08920F8 : public ::System::Object

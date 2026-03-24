@@ -2,6 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Sirenix/OdinInspector/SerializedMonoBehaviour.h"
 
+namespace MiHoYo::ToolKit::CGToolKit { class BatchActivationReference; }
 namespace MiHoYo::ToolKit::CGToolKit { class BehaviorCompReference; }
 namespace MiHoYo::ToolKit::CGToolKit { class FullScreenQfMReference; }
 namespace MiHoYo::ToolKit::CGToolKit { class GasBakeVolumeReference; }
@@ -20,12 +21,12 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class ScriptableObject; }
 namespace UnityEngine::Playables { class PlayableDirector; }
 
-#define MIHOYO_TOOLKIT_CGTOOLKIT_MONOCGTIMELINEREFERENCEMANAGER_GET__PLAYABLEDIRECTOR_OFFSET UNITYSDK_OFFSET(0x6715CD0)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_MONOCGTIMELINEREFERENCEMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x6715D50)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_MONOCGTIMELINEREFERENCEMANAGER_GET__PLAYABLEDIRECTOR_OFFSET UNITYSDK_OFFSET(0xB8E35E0)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_MONOCGTIMELINEREFERENCEMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0xB8E3660)
 
 namespace MiHoYo::ToolKit::CGToolKit
 {
-	inline static constexpr unsigned int MonoCGTimelineReferenceManager_TypeDefinitionIndex = 57482;
+	inline static constexpr unsigned int MonoCGTimelineReferenceManager_TypeDefinitionIndex = 69767;
 
 	class MonoCGTimelineReferenceManager : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{
@@ -46,7 +47,8 @@ namespace MiHoYo::ToolKit::CGToolKit
 		::System::Collections::Generic::List_1<::MiHoYo::ToolKit::CGToolKit::FullScreenQfMReference*>* FsQfMReferences; // 0xC0
 		::System::Collections::Generic::List_1<::MiHoYo::ToolKit::CGToolKit::PsCompReference*>* ParticleSystemReferences; // 0xC8
 		::System::Collections::Generic::List_1<::MiHoYo::ToolKit::CGToolKit::MultiReference*>* MultiReferences; // 0xD0
-		::UnityEngine::ScriptableObject* referenceObj; // 0xD8
+		::System::Collections::Generic::List_1<::MiHoYo::ToolKit::CGToolKit::BatchActivationReference*>* BatchActivationReferences; // 0xD8
+		::UnityEngine::ScriptableObject* referenceObj; // 0xE0
 
 		::System::Void _ctor()
 		{

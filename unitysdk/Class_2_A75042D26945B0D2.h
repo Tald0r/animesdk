@@ -12,27 +12,27 @@ namespace MoleMole { class UIGeneralSortWidgetController; }
 namespace MoleMole { class UIVideoSetDetailWidgetController; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_A75042D26945B0D2_METHOD_2_8AF27F640869EFF7_OFFSET UNITYSDK_OFFSET(0x905CF30)
-#define CLASS_2_A75042D26945B0D2_METHOD_2_AAD864A9DF964170_OFFSET UNITYSDK_OFFSET(0x905D1E0)
-#define CLASS_2_A75042D26945B0D2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x905D340)
-#define CLASS_2_A75042D26945B0D2__CTOR_OFFSET UNITYSDK_OFFSET(0x905D330)
+#define CLASS_2_A75042D26945B0D2_METHOD_2_8AF27F640869EFF7_OFFSET UNITYSDK_OFFSET(0x1531FDF0)
+#define CLASS_2_A75042D26945B0D2_METHOD_2_AAD864A9DF964170_OFFSET UNITYSDK_OFFSET(0x153200A0)
+#define CLASS_2_A75042D26945B0D2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x15320200)
+#define CLASS_2_A75042D26945B0D2__CTOR_OFFSET UNITYSDK_OFFSET(0x153201F0)
 
-inline static constexpr unsigned int Class_2_A75042D26945B0D2_TypeDefinitionIndex = 75376;
+inline static constexpr unsigned int Class_2_A75042D26945B0D2_TypeDefinitionIndex = 67751;
 
 class Class_2_A75042D26945B0D2 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::MonoGamepadNavigatableList* Field_2_3; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x20
-	::UnityEngine::Transform* Field_2_4; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x30
-	::MonoUITableScrollV2* Field_2_1; // 0x38
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIVideoSetDetailWidgetController*>* Field_2_8; // 0x40
-	::UnityEngine::GameObject* Field_2_0; // 0x48
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralSortWidgetController*>* Field_2_7; // 0x50
-	::UnityEngine::Transform* Field_2_2; // 0x58
+	::UnityEngine::GameObject* Field_2_0; // 0x18
+	::UnityEngine::Transform* Field_2_2; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x28
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x30
+	::UnityEngine::Transform* Field_2_4; // 0x38
+	::Class_3_647A206587033F4E<::MoleMole::UIVideoSetDetailWidgetController*>* Field_2_8; // 0x40
+	::MonoUITableScrollV2* Field_2_1; // 0x48
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralSortWidgetController*>* Field_2_7; // 0x50
+	::MoleMole::MonoGamepadNavigatableList* Field_2_3; // 0x58
 
 	::System::Void _ctor()
 	{

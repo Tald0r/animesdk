@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/ChessEntity.h"
 
-#define MOLEMOLE_COIN__CTOR_OFFSET UNITYSDK_OFFSET(0x96F38F0)
+#define MOLEMOLE_COIN__CTOR_OFFSET UNITYSDK_OFFSET(0xB082960)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int Coin_TypeDefinitionIndex = 67639;
+	inline static constexpr unsigned int Coin_TypeDefinitionIndex = 67188;
 
 	class Coin : public ::MoleMole::ChessEntity
 	{

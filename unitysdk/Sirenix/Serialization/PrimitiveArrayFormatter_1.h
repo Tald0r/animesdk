@@ -7,7 +7,7 @@ namespace Sirenix::Serialization { class IDataWriter; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int PrimitiveArrayFormatter_1_TypeDefinitionIndex = 7343;
+	inline static constexpr unsigned int PrimitiveArrayFormatter_1_TypeDefinitionIndex = 7348;
 
 	template <typename T>
 	class PrimitiveArrayFormatter_1 : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::Il2CppArray<T>*>

@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/Config/ConfigSubSystemSettingBase.h"
 #include "unitysdk/MoleMole/ESystemSettingType.h"
 
-#define MOLEMOLE_CONFIG_CONFIGLANGUAGESETTING_GET_SYSTEMSETTINGTYPE_OFFSET UNITYSDK_OFFSET(0x15EB4790)
-#define MOLEMOLE_CONFIG_CONFIGLANGUAGESETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x15EB47A0)
+#define MOLEMOLE_CONFIG_CONFIGLANGUAGESETTING_GET_SYSTEMSETTINGTYPE_OFFSET UNITYSDK_OFFSET(0xE2C6240)
+#define MOLEMOLE_CONFIG_CONFIGLANGUAGESETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xE2C6250)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLanguageSetting_TypeDefinitionIndex = 78960;
+	inline static constexpr unsigned int ConfigLanguageSetting_TypeDefinitionIndex = 52839;
 
 	class ConfigLanguageSetting : public ::MoleMole::Config::ConfigSubSystemSettingBase
 	{

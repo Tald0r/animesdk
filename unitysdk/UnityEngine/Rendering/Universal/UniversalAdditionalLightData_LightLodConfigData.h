@@ -8,7 +8,7 @@ namespace UnityEngine { class Transform; }
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int UniversalAdditionalLightData_LightLodConfigData_TypeDefinitionIndex = 28782;
+	inline static constexpr unsigned int UniversalAdditionalLightData_LightLodConfigData_TypeDefinitionIndex = 29728;
 
 	struct alignas(8) UniversalAdditionalLightData_LightLodConfigData
 	{

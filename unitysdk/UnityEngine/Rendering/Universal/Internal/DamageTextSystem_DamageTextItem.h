@@ -10,57 +10,57 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 namespace UnityEngine { class Transform; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM_GET_TEXTLENGTH_OFFSET UNITYSDK_OFFSET(0x17B727F0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM_RESET_OFFSET UNITYSDK_OFFSET(0x17B72860)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM_SET_TEXTLENGTH_OFFSET UNITYSDK_OFFSET(0x17B72850)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x17B72900)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM_GET_TEXTLENGTH_OFFSET UNITYSDK_OFFSET(0x178090A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM_RESET_OFFSET UNITYSDK_OFFSET(0x17809110)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM_SET_TEXTLENGTH_OFFSET UNITYSDK_OFFSET(0x17809100)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x178091C0)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int DamageTextSystem_DamageTextItem_TypeDefinitionIndex = 28851;
+	inline static constexpr unsigned int DamageTextSystem_DamageTextItem_TypeDefinitionIndex = 29801;
 
 	class DamageTextSystem_DamageTextItem : public ::System::Object
 	{
 	public:
-		::UnityEngine::Transform* refTransform; // 0x10
-		::System::String* text; // 0x18
-		::System::Action_2<::System::UInt32, ::System::Single>* onEnd; // 0x20
+		::System::Action_2<::System::UInt32, ::System::Single>* onEnd; // 0x10
+		::UnityEngine::Transform* refTransform; // 0x18
+		::System::String* text; // 0x20
 		::System::Single randomChangeTime; // 0x28
-		::System::Single flash; // 0x2C
-		::UnityEngine::Vector2 posScreenOffset; // 0x30
-		::System::Int32 blockIndex; // 0x38
-		::System::UInt32 isSkipDefAttack; // 0x3C
-		::UnityEngine::Vector3 posWorldOffset; // 0x40
-		::System::Single combineTextAddScale; // 0x4C
-		::System::Single fadeoutInterval; // 0x50
-		::System::Int32 blockOffset; // 0x54
-		::UnityEngine::Matrix4x4 posXOffsets; // 0x58
-		::System::UInt32 animType; // 0x98
-		::UnityEngine::Matrix4x4 uvOffsets; // 0x9C
-		::System::UInt32 isCombineDamageText; // 0xDC
-		::UnityEngine::Vector3 refTransformInitPos; // 0xE0
-		::System::Single fadeinTime; // 0xEC
-		::System::Single startTime; // 0xF0
-		::System::Single scale; // 0xF4
-		::System::Int32 refTransformFollowType; // 0xF8
-		::System::Single faceIndex; // 0xFC
-		::System::Int32 bitCount; // 0x100
-		::System::Single _textLength; // 0x104
-		::UnityEngine::Vector3 curWorldPos; // 0x108
-		::System::Single fadeinInterval; // 0x114
-		::System::Single combineTextRootScale; // 0x118
-		::System::Single charWidthOffset; // 0x11C
-		::UnityEngine::Matrix4x4 trs; // 0x120
-		::UnityEngine::Vector4 color; // 0x160
-		::System::Single combineTextFadeOutStartTime; // 0x170
-		::System::Single showTime; // 0x174
-		::System::UInt32 entityId; // 0x178
-		::System::Single endTime; // 0x17C
-		::System::Single fadeoutTime; // 0x180
-		::System::Boolean isCombineDamageTextDestroyed; // 0x184
-		::System::Boolean isOnTop; // 0x185
-		::System::Boolean isRandomChange; // 0x186
-		::System::Boolean isInPool; // 0x187
+		::UnityEngine::Vector3 curWorldPos; // 0x2C
+		::System::Int32 refTransformFollowType; // 0x38
+		::System::Int32 bitCount; // 0x3C
+		::UnityEngine::Matrix4x4 uvOffsets; // 0x40
+		::System::Single fadeoutTime; // 0x80
+		::System::Single scale; // 0x84
+		::System::Single fadeinTime; // 0x88
+		::UnityEngine::Vector3 refTransformInitPos; // 0x8C
+		::System::Single flash; // 0x98
+		::System::Int32 blockOffset; // 0x9C
+		::System::Single combineTextRootScale; // 0xA0
+		::System::Single endTime; // 0xA4
+		::System::Single fadeinInterval; // 0xA8
+		::System::UInt32 isCombineDamageText; // 0xAC
+		::System::Single _textLength; // 0xB0
+		::System::UInt32 entityId; // 0xB4
+		::System::Single fadeoutInterval; // 0xB8
+		::System::Int32 blockIndex; // 0xBC
+		::UnityEngine::Matrix4x4 trs; // 0xC0
+		::UnityEngine::Matrix4x4 posXOffsets; // 0x100
+		::System::UInt32 isSkipDefAttack; // 0x140
+		::UnityEngine::Vector2 posScreenOffset; // 0x144
+		::System::Single combineTextFadeOutStartTime; // 0x14C
+		::System::Single faceIndex; // 0x150
+		::System::Single startTime; // 0x154
+		::System::Single showTime; // 0x158
+		::UnityEngine::Vector3 posWorldOffset; // 0x15C
+		::UnityEngine::Vector4 color; // 0x168
+		::System::UInt32 animType; // 0x178
+		::System::Single charWidthOffset; // 0x17C
+		::System::Boolean isOnTop; // 0x180
+		::System::Boolean isInPool; // 0x181
+		::System::Boolean isCombineDamageTextDestroyed; // 0x182
+		::System::Boolean isRandomChange; // 0x183
+		::System::Single combineTextAddScale; // 0x184
 
 		::System::Void _ctor()
 		{

@@ -7,21 +7,21 @@
 namespace MoleMole::Timeline { class VisualEnvConfig; }
 namespace System { class Object; }
 
-#define CLASS_2_C3D11448385FE0CD_METHOD_2_324AEE341AAA7A1B_1_OFFSET UNITYSDK_OFFSET(0x77F3880)
-#define CLASS_2_C3D11448385FE0CD_METHOD_2_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0x77F3870)
-#define CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_1_OFFSET UNITYSDK_OFFSET(0x77F3840)
-#define CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_2_OFFSET UNITYSDK_OFFSET(0x77F3850)
-#define CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_OFFSET UNITYSDK_OFFSET(0x77F3830)
-#define CLASS_2_C3D11448385FE0CD_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x77F3860)
-#define CLASS_2_C3D11448385FE0CD_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x77F2750)
-#define CLASS_2_C3D11448385FE0CD_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x77F26B0)
-#define CLASS_2_C3D11448385FE0CD_ONGRAPHSTOP_OFFSET UNITYSDK_OFFSET(0x77F2640)
-#define CLASS_2_C3D11448385FE0CD_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x77F2800)
-#define CLASS_2_C3D11448385FE0CD_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x77F2890)
-#define CLASS_2_C3D11448385FE0CD_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x77F2930)
-#define CLASS_2_C3D11448385FE0CD__CTOR_OFFSET UNITYSDK_OFFSET(0x77F3820)
+#define CLASS_2_C3D11448385FE0CD_METHOD_2_324AEE341AAA7A1B_1_OFFSET UNITYSDK_OFFSET(0x6454570)
+#define CLASS_2_C3D11448385FE0CD_METHOD_2_324AEE341AAA7A1B_OFFSET UNITYSDK_OFFSET(0x6454550)
+#define CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_1_OFFSET UNITYSDK_OFFSET(0x6454580)
+#define CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_2_OFFSET UNITYSDK_OFFSET(0x6454590)
+#define CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_OFFSET UNITYSDK_OFFSET(0x6454560)
+#define CLASS_2_C3D11448385FE0CD_METHOD_2_E5E342154D4EA5F5_OFFSET UNITYSDK_OFFSET(0x6454540)
+#define CLASS_2_C3D11448385FE0CD_ONBEHAVIOURPAUSE_OFFSET UNITYSDK_OFFSET(0x6453460)
+#define CLASS_2_C3D11448385FE0CD_ONBEHAVIOURPLAY_OFFSET UNITYSDK_OFFSET(0x64533C0)
+#define CLASS_2_C3D11448385FE0CD_ONGRAPHSTOP_OFFSET UNITYSDK_OFFSET(0x6453350)
+#define CLASS_2_C3D11448385FE0CD_ONPLAYABLEDESTROY_OFFSET UNITYSDK_OFFSET(0x6453510)
+#define CLASS_2_C3D11448385FE0CD_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x64535A0)
+#define CLASS_2_C3D11448385FE0CD_PROCESSFRAME_OFFSET UNITYSDK_OFFSET(0x6453640)
+#define CLASS_2_C3D11448385FE0CD__CTOR_OFFSET UNITYSDK_OFFSET(0x6454530)
 
-inline static constexpr unsigned int Class_2_C3D11448385FE0CD_TypeDefinitionIndex = 78575;
+inline static constexpr unsigned int Class_2_C3D11448385FE0CD_TypeDefinitionIndex = 50134;
 
 class Class_2_C3D11448385FE0CD : public ::UnityEngine::Playables::PlayableBehaviour
 {
@@ -64,21 +64,6 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_PROCESSFRAME_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Void Method_2_79ED6854413CA2F4(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_2_79ED6854413CA2F4_1(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_1_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_2_79ED6854413CA2F4_2(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_2_OFFSET))(this, a1, a2);
-	}
-
 	::System::Void Method_2_E5E342154D4EA5F5(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2, ::System::Object* a3)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_E5E342154D4EA5F5_OFFSET))(this, a1, a2, a3);
@@ -89,8 +74,23 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_324AEE341AAA7A1B_OFFSET))(this, a1);
 	}
 
+	::System::Void Method_2_79ED6854413CA2F4(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_OFFSET))(this, a1, a2);
+	}
+
 	::System::Void Method_2_324AEE341AAA7A1B_1(::UnityEngine::Playables::Playable a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_324AEE341AAA7A1B_1_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_79ED6854413CA2F4_1(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_1_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_79ED6854413CA2F4_2(::UnityEngine::Playables::Playable a1, ::UnityEngine::Playables::FrameData a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Playables::Playable, ::UnityEngine::Playables::FrameData))((::PBYTE)hIl2Cpp + CLASS_2_C3D11448385FE0CD_METHOD_2_79ED6854413CA2F4_2_OFFSET))(this, a1, a2);
 	}
 };

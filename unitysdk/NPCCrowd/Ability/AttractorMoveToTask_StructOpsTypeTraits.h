@@ -1,0 +1,25 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnrealTypes/StructOpsTraitsBase.h"
+
+#define NPCCROWD_ABILITY_ATTRACTORMOVETOTASK_STRUCTOPSTYPETRAITS_GET_ISPLAINOLDDATA_OFFSET UNITYSDK_OFFSET(0x7515C50)
+#define NPCCROWD_ABILITY_ATTRACTORMOVETOTASK_STRUCTOPSTYPETRAITS__CTOR_OFFSET UNITYSDK_OFFSET(0x7515C60)
+
+namespace NPCCrowd::Ability
+{
+	inline static constexpr unsigned int AttractorMoveToTask_StructOpsTypeTraits_TypeDefinitionIndex = 56142;
+
+	class AttractorMoveToTask_StructOpsTypeTraits : public ::UnrealTypes::StructOpsTraitsBase
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORMOVETOTASK_STRUCTOPSTYPETRAITS__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsPlainOldData()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_ATTRACTORMOVETOTASK_STRUCTOPSTYPETRAITS_GET_ISPLAINOLDDATA_OFFSET))(this);
+		}
+	};
+}

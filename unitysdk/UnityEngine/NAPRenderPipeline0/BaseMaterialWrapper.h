@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Material; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_BASEMATERIALWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x19E15ED0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_BASEMATERIALWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3E5770)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int BaseMaterialWrapper_TypeDefinitionIndex = 5985;
+	inline static constexpr unsigned int BaseMaterialWrapper_TypeDefinitionIndex = 5988;
 
 	class BaseMaterialWrapper : public ::System::Object
 	{

@@ -5,7 +5,7 @@
 
 namespace ToolBuddy::ThirdParty::VectorGraphics
 {
-	inline static constexpr unsigned int SVGDocument_NodeGlobalSceneState_TypeDefinitionIndex = 27011;
+	inline static constexpr unsigned int SVGDocument_NodeGlobalSceneState_TypeDefinitionIndex = 27951;
 
 	struct alignas(4) SVGDocument_NodeGlobalSceneState
 	{

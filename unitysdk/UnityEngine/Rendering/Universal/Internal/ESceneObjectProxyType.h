@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int ESceneObjectProxyType_TypeDefinitionIndex = 28939;
+	inline static constexpr unsigned int ESceneObjectProxyType_TypeDefinitionIndex = 29890;
 
 	enum class ESceneObjectProxyType : ::System::Int32
 	{

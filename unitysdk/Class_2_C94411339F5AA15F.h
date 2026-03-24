@@ -10,25 +10,25 @@ namespace MoleMole { class MonoGamepadSelectable; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_2_C94411339F5AA15F_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x80F4580)
-#define CLASS_2_C94411339F5AA15F_METHOD_2_8CE71901D76EEEA9_OFFSET UNITYSDK_OFFSET(0x80F4340)
-#define CLASS_2_C94411339F5AA15F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x80F4690)
-#define CLASS_2_C94411339F5AA15F__CTOR_OFFSET UNITYSDK_OFFSET(0x80F4680)
+#define CLASS_2_C94411339F5AA15F_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x67CC6D0)
+#define CLASS_2_C94411339F5AA15F_METHOD_2_8CE71901D76EEEA9_OFFSET UNITYSDK_OFFSET(0x67CC490)
+#define CLASS_2_C94411339F5AA15F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x67CC7E0)
+#define CLASS_2_C94411339F5AA15F__CTOR_OFFSET UNITYSDK_OFFSET(0x67CC7D0)
 
-inline static constexpr unsigned int Class_2_C94411339F5AA15F_TypeDefinitionIndex = 49985;
+inline static constexpr unsigned int Class_2_C94411339F5AA15F_TypeDefinitionIndex = 65946;
 
 class Class_2_C94411339F5AA15F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UIControlReferenceList* Field_2_5; // 0x18
-	::UnityEngine::GameObject* Field_2_1; // 0x20
-	::UnityEngine::GameObject* Field_2_7; // 0x28
-	::UIControlReferenceList* Field_2_6; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_8; // 0x38
-	::MoleMole::MonoGamepadSelectable* Field_2_4; // 0x40
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x48
-	::UnityEngine::GameObject* Field_2_2; // 0x50
-	::UnityEngine::GameObject* Field_2_0; // 0x58
+	::UnityEngine::GameObject* Field_2_7; // 0x18
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x20
+	::UnityEngine::GameObject* Field_2_1; // 0x28
+	::UIControlReferenceList* Field_2_5; // 0x30
+	::UnityEngine::GameObject* Field_2_2; // 0x38
+	::Class_2_A8F5ABF31E066ED4* Field_2_8; // 0x40
+	::UnityEngine::GameObject* Field_2_0; // 0x48
+	::UIControlReferenceList* Field_2_6; // 0x50
+	::MoleMole::MonoGamepadSelectable* Field_2_4; // 0x58
 
 	::System::Void _ctor()
 	{

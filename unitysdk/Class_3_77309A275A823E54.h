@@ -10,17 +10,17 @@ namespace MoleMole::Config { class ConfigUIBaseScriptableAnimationNode; }
 namespace MoleMole::Config { class UISpecialNumGroup; }
 namespace MoleMole::HollowChessboard { class HollowEntity; }
 
-#define CLASS_3_77309A275A823E54_METHOD_3_6DE2A6F149064C87_OFFSET UNITYSDK_OFFSET(0xE724070)
-#define CLASS_3_77309A275A823E54_METHOD_3_E7A0AF4FF99650F8_OFFSET UNITYSDK_OFFSET(0xE723E20)
-#define CLASS_3_77309A275A823E54__CTOR_OFFSET UNITYSDK_OFFSET(0xE724060)
+#define CLASS_3_77309A275A823E54_METHOD_3_6DE2A6F149064C87_OFFSET UNITYSDK_OFFSET(0x66792E0)
+#define CLASS_3_77309A275A823E54_METHOD_3_E7A0AF4FF99650F8_OFFSET UNITYSDK_OFFSET(0x6679090)
+#define CLASS_3_77309A275A823E54__CTOR_OFFSET UNITYSDK_OFFSET(0x66792D0)
 
-inline static constexpr unsigned int Class_3_77309A275A823E54_TypeDefinitionIndex = 55941;
+inline static constexpr unsigned int Class_3_77309A275A823E54_TypeDefinitionIndex = 56129;
 
 class Class_3_77309A275A823E54 : public ::Class_2_A48F3719AA1CF200_3
 {
 public:
-	::Class_2_F5737224A0253470* Field_3_2; // 0x28
-	::MoleMole::HollowChessboard::HollowEntity* Field_3_1; // 0x30
+	::MoleMole::HollowChessboard::HollowEntity* Field_3_1; // 0x28
+	::Class_2_F5737224A0253470* Field_3_2; // 0x30
 	::Class_4_B99AA5AE371451AA* Field_3_0; // 0x38
 
 	::System::Void _ctor()

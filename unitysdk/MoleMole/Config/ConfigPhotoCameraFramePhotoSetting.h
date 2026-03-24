@@ -5,19 +5,19 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERAFRAMEPHOTOSETTING__CCTOR_OFFSET UNITYSDK_OFFSET(0x805BF10)
-#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERAFRAMEPHOTOSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x805BEF0)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERAFRAMEPHOTOSETTING__CCTOR_OFFSET UNITYSDK_OFFSET(0x9D0E960)
+#define MOLEMOLE_CONFIG_CONFIGPHOTOCAMERAFRAMEPHOTOSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x9D0E940)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPhotoCameraFramePhotoSetting_TypeDefinitionIndex = 70624;
+	inline static constexpr unsigned int ConfigPhotoCameraFramePhotoSetting_TypeDefinitionIndex = 43679;
 
 	class ConfigPhotoCameraFramePhotoSetting : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Config::ConfigPhotoCameraFramePhotoSetting** StaticGet_Default()
 		{
-			return (::MoleMole::Config::ConfigPhotoCameraFramePhotoSetting**)Il2CppClass::FromTypeDefinitionIndex(ConfigPhotoCameraFramePhotoSetting_TypeDefinitionIndex)->GetStaticField(0x30140);
+			return (::MoleMole::Config::ConfigPhotoCameraFramePhotoSetting**)Il2CppClass::FromTypeDefinitionIndex(ConfigPhotoCameraFramePhotoSetting_TypeDefinitionIndex)->GetStaticField(0x31D10);
 		}
 		::Enum_3_17C17EA0873E8BE7 SaveMode; // 0x10
 		::System::Single PhotoShowScale; // 0x14

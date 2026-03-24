@@ -3,7 +3,7 @@
 
 namespace DG::Tweening::Core::Enums
 {
-	inline static constexpr unsigned int SpecialStartupMode_TypeDefinitionIndex = 24169;
+	inline static constexpr unsigned int SpecialStartupMode_TypeDefinitionIndex = 24993;
 
 	enum class SpecialStartupMode : ::System::Int32
 	{

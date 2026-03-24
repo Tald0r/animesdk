@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LoginSettingShowState_TypeDefinitionIndex = 59707;
+	inline static constexpr unsigned int LoginSettingShowState_TypeDefinitionIndex = 65817;
 
 	enum class LoginSettingShowState : ::System::Int32
 	{

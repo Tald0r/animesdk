@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIHADALZONE_LAYERV2WIDGETCONTROLLER_HADALZONE_LAYERV2CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C20DE0)
+#define MOLEMOLE_UIHADALZONE_LAYERV2WIDGETCONTROLLER_HADALZONE_LAYERV2CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6C7B040)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_LayerV2WidgetController_HadalZone_LayerV2Context_TypeDefinitionIndex = 63870;
+	inline static constexpr unsigned int UIHadalZone_LayerV2WidgetController_HadalZone_LayerV2Context_TypeDefinitionIndex = 54093;
 
 	class UIHadalZone_LayerV2WidgetController_HadalZone_LayerV2Context : public ::MoleMole::UIControllerContextBase
 	{

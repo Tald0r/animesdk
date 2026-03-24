@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Object.h"
 
-#define UNITYENGINE_MDBAVATAR_INTERNAL_CREATEMDBAVATAR_OFFSET UNITYSDK_OFFSET(0x1B14AD00)
-#define UNITYENGINE_MDBAVATAR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B14ACD0)
+#define UNITYENGINE_MDBAVATAR_INTERNAL_CREATEMDBAVATAR_OFFSET UNITYSDK_OFFSET(0x1B768D50)
+#define UNITYENGINE_MDBAVATAR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B768D20)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int MDBAvatar_TypeDefinitionIndex = 6559;
+	inline static constexpr unsigned int MDBAvatar_TypeDefinitionIndex = 6563;
 
 	class MDBAvatar : public ::UnityEngine::Object
 	{

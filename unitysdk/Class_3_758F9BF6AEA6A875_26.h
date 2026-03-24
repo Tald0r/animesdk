@@ -4,14 +4,12 @@
 
 namespace MoleMole { class SystemSettingContextBase; }
 namespace MoleMole { class SystemSettingEntryBase; }
-namespace System::Collections { class IEnumerator; }
 
-#define CLASS_3_758F9BF6AEA6A875_26_METHOD_3_6001ED1983AD0FC0_OFFSET UNITYSDK_OFFSET(0x1385EF40)
-#define CLASS_3_758F9BF6AEA6A875_26_METHOD_3_627C7524E98F4AC5_OFFSET UNITYSDK_OFFSET(0x1385EEA0)
-#define CLASS_3_758F9BF6AEA6A875_26_METHOD_3_665904E4E791279B_OFFSET UNITYSDK_OFFSET(0x1385EC60)
-#define CLASS_3_758F9BF6AEA6A875_26__CTOR_OFFSET UNITYSDK_OFFSET(0x1385EC50)
+#define CLASS_3_758F9BF6AEA6A875_26_METHOD_3_6001ED1983AD0FC0_OFFSET UNITYSDK_OFFSET(0x7242100)
+#define CLASS_3_758F9BF6AEA6A875_26_METHOD_3_665904E4E791279B_OFFSET UNITYSDK_OFFSET(0x7241F70)
+#define CLASS_3_758F9BF6AEA6A875_26__CTOR_OFFSET UNITYSDK_OFFSET(0x7241F60)
 
-inline static constexpr unsigned int Class_3_758F9BF6AEA6A875_26_TypeDefinitionIndex = 67270;
+inline static constexpr unsigned int Class_3_758F9BF6AEA6A875_26_TypeDefinitionIndex = 64811;
 
 class Class_3_758F9BF6AEA6A875_26 : public ::Class_2_AB0C166B76D82BF6
 {
@@ -29,10 +27,5 @@ public:
 	::System::Void Method_3_6001ED1983AD0FC0(::MoleMole::SystemSettingContextBase* a1, ::System::Boolean a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::MoleMole::SystemSettingContextBase*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_3_758F9BF6AEA6A875_26_METHOD_3_6001ED1983AD0FC0_OFFSET))(this, a1, a2);
-	}
-
-	::System::Collections::IEnumerator* Method_3_627C7524E98F4AC5()
-	{
-		return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_758F9BF6AEA6A875_26_METHOD_3_627C7524E98F4AC5_OFFSET))(this);
 	}
 };

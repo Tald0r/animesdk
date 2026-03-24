@@ -3,15 +3,15 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ETickFunctionFlags_TypeDefinitionIndex = 8846;
+	inline static constexpr unsigned int ETickFunctionFlags_TypeDefinitionIndex = 9003;
 
 	enum class ETickFunctionFlags : ::System::Byte
 	{
-		VirtualTick = 0x4,
 		MergeTick = 0x1,
-		None = 0x0,
+		PartialTick = 0x2,
+		VirtualTick = 0x4,
 		Default = 0x3,
 		ImmediateTick = 0x8,
-		PartialTick = 0x2,
+		None = 0x0,
 	};
 }

@@ -9,27 +9,27 @@ namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_SETABILITYSPECIAL_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x7F22CD0)
-#define MOLEMOLE_SETABILITYSPECIAL_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7F22EC0)
-#define MOLEMOLE_SETABILITYSPECIAL__CTOR_OFFSET UNITYSDK_OFFSET(0x7F231F0)
-#define MOLEMOLE_SETABILITYSPECIAL___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x7F23230)
-#define MOLEMOLE_SETABILITYSPECIAL___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x7F232C0)
+#define MOLEMOLE_SETABILITYSPECIAL_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x8B75440)
+#define MOLEMOLE_SETABILITYSPECIAL_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x8B75630)
+#define MOLEMOLE_SETABILITYSPECIAL__CTOR_OFFSET UNITYSDK_OFFSET(0x8B75960)
+#define MOLEMOLE_SETABILITYSPECIAL___BASE_ONAWAKE_OFFSET UNITYSDK_OFFSET(0x8B759A0)
+#define MOLEMOLE_SETABILITYSPECIAL___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x8B75A30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SetAbilitySpecial_TypeDefinitionIndex = 42296;
+	inline static constexpr unsigned int SetAbilitySpecial_TypeDefinitionIndex = 75734;
 
 	class SetAbilitySpecial : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::MoleMole::Battle::Entity* ownerEntity; // 0x58
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x60
-		::BehaviorDesigner::Runtime::SharedFloat* TargetAbilitySpecialValue; // 0x68
-		::System::String* TargetAbilitySpecial; // 0x70
-		::Class_3_F41D242A20F8FE06* _abilityComponent; // 0x78
-		::System::String* SourceAbilityName; // 0x80
+		::System::String* TargetAbilitySpecial; // 0x58
+		::BehaviorDesigner::Runtime::SharedFloat* TargetAbilitySpecialValue; // 0x60
+		::Class_3_F41D242A20F8FE06* _abilityComponent; // 0x68
+		::System::String* SourceAbilityName; // 0x70
+		::System::String* TargetAbilityName; // 0x78
+		::MoleMole::Battle::Entity* ownerEntity; // 0x80
 		::System::String* SourceAbilitySpecial; // 0x88
-		::System::String* TargetAbilityName; // 0x90
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x90
 		::System::Boolean IsRefreshProperty; // 0x98
 
 		::System::Void _ctor()

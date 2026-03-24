@@ -6,22 +6,22 @@
 
 namespace BehaviorDesigner::Runtime { class SharedFloat; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC2AF10)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC2A800)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1AC2AF80)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AC2AFC0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AC2B050)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B2363B0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B235CA0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B236420)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B236460)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_UNITY_MATH_FLOATOPERATOR___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B2364F0)
 
 namespace BehaviorDesigner::Runtime::Tasks::Unity::Math
 {
-	inline static constexpr unsigned int FloatOperator_TypeDefinitionIndex = 30627;
+	inline static constexpr unsigned int FloatOperator_TypeDefinitionIndex = 31579;
 
 	class FloatOperator : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedFloat* storeResult; // 0x58
-		::BehaviorDesigner::Runtime::SharedFloat* float2; // 0x60
-		::BehaviorDesigner::Runtime::SharedFloat* float1; // 0x68
+		::BehaviorDesigner::Runtime::SharedFloat* float1; // 0x58
+		::BehaviorDesigner::Runtime::SharedFloat* storeResult; // 0x60
+		::BehaviorDesigner::Runtime::SharedFloat* float2; // 0x68
 		::BehaviorDesigner::Runtime::Tasks::Unity::Math::FloatOperator_Operation operation; // 0x70
 
 		::System::Void _ctor()

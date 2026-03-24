@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class LensDirtBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_LENSDIRTCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xBD61370)
-#define MOLEMOLE_TIMELINE_LENSDIRTCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xBD61360)
-#define MOLEMOLE_TIMELINE_LENSDIRTCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xBD61570)
+#define MOLEMOLE_TIMELINE_LENSDIRTCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xB1D7720)
+#define MOLEMOLE_TIMELINE_LENSDIRTCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xB1D7710)
+#define MOLEMOLE_TIMELINE_LENSDIRTCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xB1D7920)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int LensDirtClip_TypeDefinitionIndex = 69571;
+	inline static constexpr unsigned int LensDirtClip_TypeDefinitionIndex = 80095;
 
 	class LensDirtClip : public ::UnityEngine::Playables::PlayableAsset
 	{

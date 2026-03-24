@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaDifficultyListWidgetWidgetController_PointRootState_TypeDefinitionIndex = 70155;
+	inline static constexpr unsigned int UIYorozuyaDifficultyListWidgetWidgetController_PointRootState_TypeDefinitionIndex = 56565;
 
 	enum class UIYorozuyaDifficultyListWidgetWidgetController_PointRootState : ::System::Int32
 	{

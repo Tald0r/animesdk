@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_HIDEDUPLICATEREFERENCEBOXATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB086C0)
+#define SIRENIX_ODININSPECTOR_HIDEDUPLICATEREFERENCEBOXATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B114740)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int HideDuplicateReferenceBoxAttribute_TypeDefinitionIndex = 7165;
+	inline static constexpr unsigned int HideDuplicateReferenceBoxAttribute_TypeDefinitionIndex = 7169;
 
 	class HideDuplicateReferenceBoxAttribute : public ::System::Attribute
 	{

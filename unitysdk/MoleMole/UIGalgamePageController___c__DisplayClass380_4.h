@@ -8,22 +8,22 @@ namespace UnityEngine { class Animation; }
 namespace UnityEngine { class RectTransform; }
 namespace miHoYoEmotion { class EmoSync; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__CTOR_OFFSET UNITYSDK_OFFSET(0x8A0F8A0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__PLAYNPCFADEACTIONS_B__6_OFFSET UNITYSDK_OFFSET(0x8A0F8B0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__PLAYNPCFADEACTIONS_B__7_OFFSET UNITYSDK_OFFSET(0x8A0F920)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__PLAYNPCFADEACTIONS_B__8_OFFSET UNITYSDK_OFFSET(0x8A0F9D0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__CTOR_OFFSET UNITYSDK_OFFSET(0xB2B5D90)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__PLAYNPCFADEACTIONS_B__6_OFFSET UNITYSDK_OFFSET(0xB2B5DA0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__PLAYNPCFADEACTIONS_B__7_OFFSET UNITYSDK_OFFSET(0xB2B5E10)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_4__PLAYNPCFADEACTIONS_B__8_OFFSET UNITYSDK_OFFSET(0xB2B5EC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass380_4_TypeDefinitionIndex = 54674;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass380_4_TypeDefinitionIndex = 58904;
 
 	class UIGalgamePageController___c__DisplayClass380_4 : public ::System::Object
 	{
 	public:
-		::UnityEngine::RectTransform* stageNodeRoot; // 0x10
+		::miHoYoEmotion::EmoSync* emoSync; // 0x10
 		::MoleMole::UIGalgamePageController___c__DisplayClass380_3* CS___8__locals4; // 0x18
-		::miHoYoEmotion::EmoSync* emoSync; // 0x20
-		::MoleMole::UIGalgamePageController_AvatarDisplaySetting* avatarSetting; // 0x28
+		::MoleMole::UIGalgamePageController_AvatarDisplaySetting* avatarSetting; // 0x20
+		::UnityEngine::RectTransform* stageNodeRoot; // 0x28
 		::UnityEngine::Animation* moveOutStageAnim; // 0x30
 
 		::System::Void _ctor()

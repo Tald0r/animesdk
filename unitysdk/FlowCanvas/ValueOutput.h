@@ -10,12 +10,12 @@ namespace System { class Object; }
 namespace System { class String; }
 namespace System { class Type; }
 
-#define FLOWCANVAS_VALUEOUTPUT_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A263A70)
-#define FLOWCANVAS_VALUEOUTPUT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A263A60)
+#define FLOWCANVAS_VALUEOUTPUT_CREATEINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A82B3E0)
+#define FLOWCANVAS_VALUEOUTPUT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A82B3D0)
 
 namespace FlowCanvas
 {
-	inline static constexpr unsigned int ValueOutput_TypeDefinitionIndex = 25688;
+	inline static constexpr unsigned int ValueOutput_TypeDefinitionIndex = 26791;
 
 	class ValueOutput : public ::FlowCanvas::Port
 	{

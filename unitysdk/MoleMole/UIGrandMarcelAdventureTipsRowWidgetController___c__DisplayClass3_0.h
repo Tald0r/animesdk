@@ -6,20 +6,20 @@ namespace MoleMole { class UIGrandMarcelAdventureTipsRowWidgetController; }
 namespace System { class Action; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIGRANDMARCELADVENTURETIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9601E50)
-#define MOLEMOLE_UIGRANDMARCELADVENTURETIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__0_OFFSET UNITYSDK_OFFSET(0x9601E60)
-#define MOLEMOLE_UIGRANDMARCELADVENTURETIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__1_OFFSET UNITYSDK_OFFSET(0x9601EB0)
+#define MOLEMOLE_UIGRANDMARCELADVENTURETIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8C26B30)
+#define MOLEMOLE_UIGRANDMARCELADVENTURETIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__0_OFFSET UNITYSDK_OFFSET(0x8C26B40)
+#define MOLEMOLE_UIGRANDMARCELADVENTURETIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__1_OFFSET UNITYSDK_OFFSET(0x8C26B90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelAdventureTipsRowWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 60853;
+	inline static constexpr unsigned int UIGrandMarcelAdventureTipsRowWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 69918;
 
 	class UIGrandMarcelAdventureTipsRowWidgetController___c__DisplayClass3_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIGrandMarcelAdventureTipsRowWidgetController* __4__this; // 0x10
+		::System::Action* overHandle; // 0x10
 		::System::String* fadeOutAni; // 0x18
-		::System::Action* overHandle; // 0x20
+		::MoleMole::UIGrandMarcelAdventureTipsRowWidgetController* __4__this; // 0x20
 
 		::System::Void _ctor()
 		{

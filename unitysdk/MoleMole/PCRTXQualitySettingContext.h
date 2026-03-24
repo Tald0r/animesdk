@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_PCRTXQUALITYSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA607450)
+#define MOLEMOLE_PCRTXQUALITYSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA7F1810)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PCRTXQualitySettingContext_TypeDefinitionIndex = 45012;
+	inline static constexpr unsigned int PCRTXQualitySettingContext_TypeDefinitionIndex = 68784;
 
 	class PCRTXQualitySettingContext : public ::MoleMole::SystemSettingContextBase
 	{

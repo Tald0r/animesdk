@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int SceneMaterialParameterRewriterAnimated_MaterialAnimationOverrideElement_Type_TypeDefinitionIndex = 28032;
+inline static constexpr unsigned int SceneMaterialParameterRewriterAnimated_MaterialAnimationOverrideElement_Type_TypeDefinitionIndex = 28972;
 
 enum class SceneMaterialParameterRewriterAnimated_MaterialAnimationOverrideElement_Type : ::System::Int32
 {

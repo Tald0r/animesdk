@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_8A4D97143C80812C;
+class Class_3_8A4D97143C80812C_1;
 namespace System { class Action; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_1_8F6F43710765B0C1_CLASS_1_CFBA14A993F54355__CTOR_OFFSET UNITYSDK_OFFSET(0x782C7F0)
+#define CLASS_1_8F6F43710765B0C1_CLASS_1_CFBA14A993F54355__CTOR_OFFSET UNITYSDK_OFFSET(0xC50C620)
 
-inline static constexpr unsigned int Class_1_8F6F43710765B0C1_Class_1_CFBA14A993F54355_TypeDefinitionIndex = 54058;
+inline static constexpr unsigned int Class_1_8F6F43710765B0C1_Class_1_CFBA14A993F54355_TypeDefinitionIndex = 44509;
 
 class Class_1_8F6F43710765B0C1_Class_1_CFBA14A993F54355 : public ::System::Object
 {
 public:
-	::System::Action_1<::Class_3_8A4D97143C80812C*>* Field_1_2; // 0x10
-	::System::Action* Field_1_1; // 0x18
-	::System::Action* Field_1_3; // 0x20
+	::System::Action* Field_1_3; // 0x10
+	::System::Action_1<::Class_3_8A4D97143C80812C_1*>* Field_1_2; // 0x18
+	::System::Action* Field_1_1; // 0x20
 	::System::UInt32 Field_1_0; // 0x28
 
 	::System::Void _ctor()

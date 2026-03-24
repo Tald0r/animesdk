@@ -3,14 +3,14 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EOptionIconState_TypeDefinitionIndex = 17548;
+	inline static constexpr unsigned int EOptionIconState_TypeDefinitionIndex = 10944;
 
 	enum class EOptionIconState : ::System::Int16
 	{
-		Add = 1,
 		Reduce = 3,
+		Add = 1,
+		None = 0,
 		Replace = 2,
 		EnumCount = 4,
-		None = 0,
 	};
 }

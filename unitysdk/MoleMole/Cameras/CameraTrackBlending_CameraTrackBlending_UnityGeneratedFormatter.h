@@ -9,26 +9,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCCEA080)
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCCEA090)
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCCEA290)
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCCEA450)
-#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCCEA410)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7BB6A70)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7BB6A80)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7BB6C80)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7BB6E40)
+#define MOLEMOLE_CAMERAS_CAMERATRACKBLENDING_CAMERATRACKBLENDING_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7BB6E00)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter_TypeDefinitionIndex = 51034;
+	inline static constexpr unsigned int CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter_TypeDefinitionIndex = 79640;
 
 	class CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Cameras::CameraTrackBlending*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F560);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2F568);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31090);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(CameraTrackBlending_CameraTrackBlending_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31098);
 		}
 
 		::System::Void _ctor()

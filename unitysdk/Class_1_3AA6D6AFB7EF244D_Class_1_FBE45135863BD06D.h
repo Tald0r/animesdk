@@ -9,16 +9,16 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Object; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_1_3AA6D6AFB7EF244D_CLASS_1_FBE45135863BD06D_METHOD_1_A8C9BB9577EBDB48_OFFSET UNITYSDK_OFFSET(0x8BC1600)
-#define CLASS_1_3AA6D6AFB7EF244D_CLASS_1_FBE45135863BD06D__CTOR_OFFSET UNITYSDK_OFFSET(0x8BC15F0)
+#define CLASS_1_3AA6D6AFB7EF244D_CLASS_1_FBE45135863BD06D_METHOD_1_A8C9BB9577EBDB48_OFFSET UNITYSDK_OFFSET(0xE7759A0)
+#define CLASS_1_3AA6D6AFB7EF244D_CLASS_1_FBE45135863BD06D__CTOR_OFFSET UNITYSDK_OFFSET(0xE775990)
 
-inline static constexpr unsigned int Class_1_3AA6D6AFB7EF244D_Class_1_FBE45135863BD06D_TypeDefinitionIndex = 75907;
+inline static constexpr unsigned int Class_1_3AA6D6AFB7EF244D_Class_1_FBE45135863BD06D_TypeDefinitionIndex = 59952;
 
 class Class_1_3AA6D6AFB7EF244D_Class_1_FBE45135863BD06D : public ::System::Object
 {
 public:
-	::Foundation::AssetPath Field_1_2; // 0x10
-	::UnityEngine::Transform* Field_1_0; // 0x20
+	::UnityEngine::Transform* Field_1_0; // 0x10
+	::Foundation::AssetPath Field_1_2; // 0x18
 	::System::Action_2<::Foundation::AssetPath, ::UnityEngine::GameObject*>* Field_1_1; // 0x28
 
 	::System::Void _ctor()

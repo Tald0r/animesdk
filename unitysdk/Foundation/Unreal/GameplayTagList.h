@@ -1,19 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Sirenix/OdinInspector/SerializedScriptableObject.h"
+#include "unitysdk/Sirenix/Serialization/DataFormat.h"
 
 namespace Foundation::Unreal { class GameplayTagNode; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST_COLLECT_OFFSET UNITYSDK_OFFSET(0x1ADDD8C0)
-#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1ADDD3F0)
-#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADDDC30)
+#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST_COLLECT_OFFSET UNITYSDK_OFFSET(0x1B3AE280)
+#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST_GETFORMATTOSERIALIZEAS_OFFSET UNITYSDK_OFFSET(0x1B3AE5F0)
+#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1B3ADDB0)
+#define FOUNDATION_UNREAL_GAMEPLAYTAGLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3AE600)
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int GameplayTagList_TypeDefinitionIndex = 8772;
+	inline static constexpr unsigned int GameplayTagList_TypeDefinitionIndex = 9075;
 
 	class GameplayTagList : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{
@@ -34,6 +36,11 @@ namespace Foundation::Unreal
 		::System::Collections::Generic::List_1<::System::String*>* Collect(::System::Collections::Generic::List_1<::System::String*>* buffer)
 		{
 			return ((::System::Collections::Generic::List_1<::System::String*>*(*)(::PVOID, ::System::Collections::Generic::List_1<::System::String*>*))((::PBYTE)hIl2Cpp + FOUNDATION_UNREAL_GAMEPLAYTAGLIST_COLLECT_OFFSET))(this, buffer);
+		}
+
+		::Sirenix::Serialization::DataFormat GetFormatToSerializeAs(::System::Boolean isPlayer)
+		{
+			return ((::Sirenix::Serialization::DataFormat(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + FOUNDATION_UNREAL_GAMEPLAYTAGLIST_GETFORMATTOSERIALIZEAS_OFFSET))(this, isPlayer);
 		}
 	};
 }

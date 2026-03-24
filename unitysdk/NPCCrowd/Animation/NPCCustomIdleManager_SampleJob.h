@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_SAMPLEJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x36F8A0)
-#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_SAMPLEJOB__CTOR_OFFSET UNITYSDK_OFFSET(0x36F890)
+#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_SAMPLEJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x351440)
+#define NPCCROWD_ANIMATION_NPCCUSTOMIDLEMANAGER_SAMPLEJOB__CTOR_OFFSET UNITYSDK_OFFSET(0x351430)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int NPCCustomIdleManager_SampleJob_TypeDefinitionIndex = 47435;
+	inline static constexpr unsigned int NPCCustomIdleManager_SampleJob_TypeDefinitionIndex = 69746;
 
 	struct alignas(8) NPCCustomIdleManager_SampleJob
 	{

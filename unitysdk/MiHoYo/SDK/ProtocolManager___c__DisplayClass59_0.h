@@ -1,32 +1,44 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MiHoYo/SDK/UniWebViewMessage.h"
 #include "unitysdk/System/Object.h"
 
 namespace MiHoYo::SDK { class ProtocolManager; }
-namespace MiHoYo::SDK { class Web; }
+namespace System { class String; }
+namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18284DB0)
-#define MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__SHOWTEENAGERUSERAGREEMENT_B__0_OFFSET UNITYSDK_OFFSET(0x18284DC0)
+#define MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CHECKSHOWLAUNCHPROTOCOLCOMPLIANCE_B__0_OFFSET UNITYSDK_OFFSET(0x18703FE0)
+#define MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CHECKSHOWLAUNCHPROTOCOLCOMPLIANCE_B__1_OFFSET UNITYSDK_OFFSET(0x18704010)
+#define MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CHECKSHOWLAUNCHPROTOCOLCOMPLIANCE_B__2_OFFSET UNITYSDK_OFFSET(0x18704040)
+#define MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18703FD0)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ProtocolManager___c__DisplayClass59_0_TypeDefinitionIndex = 18067;
+	inline static constexpr unsigned int ProtocolManager___c__DisplayClass59_0_TypeDefinitionIndex = 18578;
 
 	class ProtocolManager___c__DisplayClass59_0 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::ProtocolManager* __4__this; // 0x10
-		::MiHoYo::SDK::Web* webView; // 0x18
+		::System::Action_1<::System::String*>* callback; // 0x10
+		::MiHoYo::SDK::ProtocolManager* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _ShowTeenagerUserAgreement_b__0(::MiHoYo::SDK::Web* web, ::MiHoYo::SDK::UniWebViewMessage message)
+		::System::Void _CheckShowLaunchProtocolCompliance_b__0()
 		{
-			return ((::System::Void(*)(::PVOID, ::MiHoYo::SDK::Web*, ::MiHoYo::SDK::UniWebViewMessage))((::PBYTE)hIl2Cpp + MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__SHOWTEENAGERUSERAGREEMENT_B__0_OFFSET))(this, web, message);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CHECKSHOWLAUNCHPROTOCOLCOMPLIANCE_B__0_OFFSET))(this);
+		}
+
+		::System::Void _CheckShowLaunchProtocolCompliance_b__1()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CHECKSHOWLAUNCHPROTOCOLCOMPLIANCE_B__1_OFFSET))(this);
+		}
+
+		::System::Void _CheckShowLaunchProtocolCompliance_b__2()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MIHOYO_SDK_PROTOCOLMANAGER___C__DISPLAYCLASS59_0__CHECKSHOWLAUNCHPROTOCOLCOMPLIANCE_B__2_OFFSET))(this);
 		}
 	};
 }

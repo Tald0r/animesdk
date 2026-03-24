@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int AMLegIK_RayCastHeightState_TypeDefinitionIndex = 75576;
+inline static constexpr unsigned int AMLegIK_RayCastHeightState_TypeDefinitionIndex = 43336;
 
 enum class AMLegIK_RayCastHeightState : ::System::Int32
 {

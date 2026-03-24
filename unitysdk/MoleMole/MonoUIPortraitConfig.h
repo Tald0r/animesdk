@@ -5,13 +5,13 @@
 namespace MoleMole::Config { class ConfigUIPortrait; }
 namespace System { class String; }
 
-#define MOLEMOLE_MONOUIPORTRAITCONFIG_GET_REALKEY_OFFSET UNITYSDK_OFFSET(0xA4927E0)
-#define MOLEMOLE_MONOUIPORTRAITCONFIG_SETUPIMAGECONFIG_OFFSET UNITYSDK_OFFSET(0xA4929C0)
-#define MOLEMOLE_MONOUIPORTRAITCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA492D10)
+#define MOLEMOLE_MONOUIPORTRAITCONFIG_GET_REALKEY_OFFSET UNITYSDK_OFFSET(0x7A95E40)
+#define MOLEMOLE_MONOUIPORTRAITCONFIG_SETUPIMAGECONFIG_OFFSET UNITYSDK_OFFSET(0x7A96020)
+#define MOLEMOLE_MONOUIPORTRAITCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7A96370)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoUIPortraitConfig_TypeDefinitionIndex = 47920;
+	inline static constexpr unsigned int MonoUIPortraitConfig_TypeDefinitionIndex = 61369;
 
 	class MonoUIPortraitConfig : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

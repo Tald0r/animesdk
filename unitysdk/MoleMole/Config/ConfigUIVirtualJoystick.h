@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class ConfigVirtualJoystickParam; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGUIVIRTUALJOYSTICK__CTOR_OFFSET UNITYSDK_OFFSET(0xE438830)
+#define MOLEMOLE_CONFIG_CONFIGUIVIRTUALJOYSTICK__CTOR_OFFSET UNITYSDK_OFFSET(0x950FCB0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIVirtualJoystick_TypeDefinitionIndex = 62008;
+	inline static constexpr unsigned int ConfigUIVirtualJoystick_TypeDefinitionIndex = 70162;
 
 	class ConfigUIVirtualJoystick : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_TEMPOCHANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x9947510)
+#define MOLEMOLE_TEMPOCHANGE__CTOR_OFFSET UNITYSDK_OFFSET(0xC7DB020)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TempoChange_TypeDefinitionIndex = 78387;
+	inline static constexpr unsigned int TempoChange_TypeDefinitionIndex = 59257;
 
 	class TempoChange : public ::System::Object
 	{

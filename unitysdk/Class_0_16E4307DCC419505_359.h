@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_D97372C4EB93BA22.h"
 
-namespace System { template <typename T> class Action_1; }
+namespace System { class String; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_359_TypeDefinitionIndex = 43609;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_359_TypeDefinitionIndex = 79182;
 
 class Class_0_16E4307DCC419505_359
 {

@@ -13,26 +13,26 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9EC5500)
-#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9EC5510)
-#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9EC5710)
-#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9EC58D0)
-#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9EC5890)
+#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x63B5760)
+#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x63B5770)
+#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x63B5970)
+#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x63B5B30)
+#define NAPSTREAMING_NAPSTREAMINGPVSFIXCONFIG_NAPSTREAMINGPVSFIXCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x63B5AF0)
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 69778;
+	inline static constexpr unsigned int NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 39486;
 
 	class NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::NapStreaming::NapStreamingPVSFixConfig*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::UnityEngine::Bounds>*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::UnityEngine::Bounds>*>*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36E90);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::UnityEngine::Bounds>*>*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39CB0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::NapStreaming::PVSUnloadData>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::NapStreaming::PVSUnloadData>*>*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36E98);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::NapStreaming::PVSUnloadData>*>*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingPVSFixConfig_NapStreamingPVSFixConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39CB8);
 		}
 
 		::System::Void _ctor()

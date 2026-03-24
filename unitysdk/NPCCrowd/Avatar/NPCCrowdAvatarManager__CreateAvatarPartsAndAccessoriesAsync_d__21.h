@@ -19,28 +19,28 @@ namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARPARTSANDACCESSORIESASYNC_D__21_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2CA0C0)
-#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARPARTSANDACCESSORIESASYNC_D__21_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARPARTSANDACCESSORIESASYNC_D__21_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x311BA0)
+#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__CREATEAVATARPARTSANDACCESSORIESASYNC_D__21_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace NPCCrowd::Avatar
 {
-	inline static constexpr unsigned int NPCCrowdAvatarManager__CreateAvatarPartsAndAccessoriesAsync_d__21_TypeDefinitionIndex = 75877;
+	inline static constexpr unsigned int NPCCrowdAvatarManager__CreateAvatarPartsAndAccessoriesAsync_d__21_TypeDefinitionIndex = 51687;
 
 	struct alignas(8) NPCCrowdAvatarManager__CreateAvatarPartsAndAccessoriesAsync_d__21
 	{
-		::NPCCrowd::Animation::NPCUnionAnimator* unionAnimator; // 0x10
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x10
 		::NPCAvatarMeshAssetsSO* assetSo; // 0x18
-		::NPCCrowd::Avatar::NPCAvatarGOReference* goRef; // 0x20
-		::System::Collections::Generic::List_1<::FNpcAvatarGenericParams_AccessoryInfo>* accessoryInfos; // 0x28
-		::Class_3_F2DAD7F45F518868* npcComp; // 0x30
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::ValueTuple_2<::System::Collections::Generic::List_1<::NPCCrowd::Avatar::NPCAvatarGOReferenceComponentInfo*>*, ::System::Collections::Generic::List_1<::NPCCrowd::Accessories::NPCAccessory*>*>> __u__1; // 0x38
-		::System::Threading::CancellationToken cancellationToken; // 0x58
-		::System::Action* callback; // 0x60
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x68
-		::NPCCrowd::Avatar::NPCCrowdAvatarManager* __4__this; // 0x70
-		::Il2CppArray<::FNpcAvatarGenericParams_PartInfo*>* partInfos; // 0x78
-		::System::Boolean enableGPULod; // 0x80
-		::System::Int32 __1__state; // 0x84
+		::NPCCrowd::Animation::NPCUnionAnimator* unionAnimator; // 0x20
+		::NPCCrowd::Avatar::NPCCrowdAvatarManager* __4__this; // 0x28
+		::System::Threading::CancellationToken cancellationToken; // 0x30
+		::NPCCrowd::Avatar::NPCAvatarGOReference* goRef; // 0x38
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::System::ValueTuple_2<::System::Collections::Generic::List_1<::NPCCrowd::Avatar::NPCAvatarGOReferenceComponentInfo*>*, ::System::Collections::Generic::List_1<::NPCCrowd::Accessories::NPCAccessory*>*>> __u__1; // 0x40
+		::System::Collections::Generic::List_1<::FNpcAvatarGenericParams_AccessoryInfo>* accessoryInfos; // 0x60
+		::Il2CppArray<::FNpcAvatarGenericParams_PartInfo*>* partInfos; // 0x68
+		::Class_3_F2DAD7F45F518868* npcComp; // 0x70
+		::System::Action* callback; // 0x78
+		::System::Int32 __1__state; // 0x80
+		::System::Boolean enableGPULod; // 0x84
 
 		::System::Void MoveNext()
 		{

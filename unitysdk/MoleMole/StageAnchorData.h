@@ -6,11 +6,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_STAGEANCHORDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB3C7990)
+#define MOLEMOLE_STAGEANCHORDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA65FDC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int StageAnchorData_TypeDefinitionIndex = 59199;
+	inline static constexpr unsigned int StageAnchorData_TypeDefinitionIndex = 60533;
 
 	class StageAnchorData : public ::System::Object
 	{

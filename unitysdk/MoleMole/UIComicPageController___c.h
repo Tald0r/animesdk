@@ -6,34 +6,34 @@ namespace System { class Action; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA52C280)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA52C2C0)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__PLAYBLACKMASKFADEIN_B__290_0_OFFSET UNITYSDK_OFFSET(0xA52C480)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__PLAYSPECIALBLACKMASKFADEIN_B__289_0_OFFSET UNITYSDK_OFFSET(0xA52C340)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__RESURRECTTIMELINEINFO_B__236_0_OFFSET UNITYSDK_OFFSET(0xA52C2D0)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xADC32E0)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xADC3320)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__PLAYBLACKMASKFADEIN_B__290_0_OFFSET UNITYSDK_OFFSET(0xADC34D0)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__PLAYSPECIALBLACKMASKFADEIN_B__289_0_OFFSET UNITYSDK_OFFSET(0xADC33A0)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__RESURRECTTIMELINEINFO_B__236_0_OFFSET UNITYSDK_OFFSET(0xADC3330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicPageController___c_TypeDefinitionIndex = 45636;
+	inline static constexpr unsigned int UIComicPageController___c_TypeDefinitionIndex = 62531;
 
 	class UIComicPageController___c : public ::System::Object
 	{
 	public:
+		static ::MoleMole::UIComicPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIComicPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E370);
+		}
 		static ::System::Action** StaticGet___9__290_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2CF70);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E378);
 		}
 		static ::System::Func_2<::UnityEngine::Timeline::TimelineClip*, ::System::Boolean>** StaticGet___9__236_0()
 		{
-			return (::System::Func_2<::UnityEngine::Timeline::TimelineClip*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2CF78);
+			return (::System::Func_2<::UnityEngine::Timeline::TimelineClip*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E380);
 		}
 		static ::System::Action** StaticGet___9__289_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2CF80);
-		}
-		static ::MoleMole::UIComicPageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIComicPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2CF88);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIComicPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E388);
 		}
 
 		static ::System::Void _cctor()

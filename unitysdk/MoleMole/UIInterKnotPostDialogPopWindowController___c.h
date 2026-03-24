@@ -4,24 +4,24 @@
 
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8A63320)
-#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8A63360)
-#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__INITVIEW_B__22_0_OFFSET UNITYSDK_OFFSET(0x8A63370)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8964970)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x89649B0)
+#define MOLEMOLE_UIINTERKNOTPOSTDIALOGPOPWINDOWCONTROLLER___C__INITVIEW_B__22_0_OFFSET UNITYSDK_OFFSET(0x89649C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotPostDialogPopWindowController___c_TypeDefinitionIndex = 44217;
+	inline static constexpr unsigned int UIInterKnotPostDialogPopWindowController___c_TypeDefinitionIndex = 79621;
 
 	class UIInterKnotPostDialogPopWindowController___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::System::Int32>** StaticGet___9__22_0()
 		{
-			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x440C0);
+			return (::System::Action_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x443E0);
 		}
 		static ::MoleMole::UIInterKnotPostDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIInterKnotPostDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x440C8);
+			return (::MoleMole::UIInterKnotPostDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInterKnotPostDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x443E8);
 		}
 
 		static ::System::Void _cctor()

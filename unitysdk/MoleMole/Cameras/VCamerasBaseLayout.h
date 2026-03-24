@@ -5,12 +5,12 @@
 
 namespace Cinemachine { class CinemachineVirtualCamera; }
 
-#define MOLEMOLE_CAMERAS_VCAMERASBASELAYOUT_SETTLELAYOUT_OFFSET UNITYSDK_OFFSET(0x62226F0)
-#define MOLEMOLE_CAMERAS_VCAMERASBASELAYOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x62227B0)
+#define MOLEMOLE_CAMERAS_VCAMERASBASELAYOUT_SETTLELAYOUT_OFFSET UNITYSDK_OFFSET(0x84F7A70)
+#define MOLEMOLE_CAMERAS_VCAMERASBASELAYOUT__CTOR_OFFSET UNITYSDK_OFFSET(0x84F7B30)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int VCamerasBaseLayout_TypeDefinitionIndex = 63324;
+	inline static constexpr unsigned int VCamerasBaseLayout_TypeDefinitionIndex = 53227;
 
 	class VCamerasBaseLayout : public ::System::Object
 	{

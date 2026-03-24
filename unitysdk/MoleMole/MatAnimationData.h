@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_MATANIMATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x82E1060)
+#define MOLEMOLE_MATANIMATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA39B940)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MatAnimationData_TypeDefinitionIndex = 57442;
+	inline static constexpr unsigned int MatAnimationData_TypeDefinitionIndex = 62899;
 
 	class MatAnimationData : public ::System::Object
 	{

@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStoreWidgetWidgetController_CollectPanelState_TypeDefinitionIndex = 46259;
+	inline static constexpr unsigned int UIVHSStoreWidgetWidgetController_CollectPanelState_TypeDefinitionIndex = 64639;
 
 	enum class UIVHSStoreWidgetWidgetController_CollectPanelState : ::System::Int32
 	{
+		Collect = 1,
 		Recommand = 2,
 		BeginSale = 0,
-		Collect = 1,
 		Limit = 3,
 	};
 }

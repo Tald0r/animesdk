@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/HollowChessboard/HollowCell.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_065F1C4D9F2600E5_METHOD_1_248F2887B0C2212A_OFFSET UNITYSDK_OFFSET(0xFDD37D0)
-#define CLASS_1_065F1C4D9F2600E5_METHOD_1_944725D8BEE125D5_OFFSET UNITYSDK_OFFSET(0xFDD3850)
-#define CLASS_1_065F1C4D9F2600E5_METHOD_1_AF081070273CE162_OFFSET UNITYSDK_OFFSET(0xFDD3860)
-#define CLASS_1_065F1C4D9F2600E5__CTOR_OFFSET UNITYSDK_OFFSET(0xFDD37C0)
+#define CLASS_1_065F1C4D9F2600E5_METHOD_1_248F2887B0C2212A_OFFSET UNITYSDK_OFFSET(0x9F85140)
+#define CLASS_1_065F1C4D9F2600E5_METHOD_1_944725D8BEE125D5_OFFSET UNITYSDK_OFFSET(0x9F85130)
+#define CLASS_1_065F1C4D9F2600E5_METHOD_1_AF081070273CE162_OFFSET UNITYSDK_OFFSET(0x9F85110)
+#define CLASS_1_065F1C4D9F2600E5__CTOR_OFFSET UNITYSDK_OFFSET(0x9F85100)
 
-inline static constexpr unsigned int Class_1_065F1C4D9F2600E5_TypeDefinitionIndex = 78071;
+inline static constexpr unsigned int Class_1_065F1C4D9F2600E5_TypeDefinitionIndex = 53271;
 
 class Class_1_065F1C4D9F2600E5 : public ::System::Object
 {
@@ -20,9 +20,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowCell))((::PBYTE)hIl2Cpp + CLASS_1_065F1C4D9F2600E5__CTOR_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_1_248F2887B0C2212A(::MoleMole::HollowChessboard::HollowCell a1)
+	::MoleMole::HollowChessboard::HollowCell Method_1_AF081070273CE162()
 	{
-		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowCell))((::PBYTE)hIl2Cpp + CLASS_1_065F1C4D9F2600E5_METHOD_1_248F2887B0C2212A_OFFSET))(this, a1);
+		return ((::MoleMole::HollowChessboard::HollowCell(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_065F1C4D9F2600E5_METHOD_1_AF081070273CE162_OFFSET))(this);
 	}
 
 	::System::Void Method_1_944725D8BEE125D5(::MoleMole::HollowChessboard::HollowCell a1)
@@ -30,8 +30,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowCell))((::PBYTE)hIl2Cpp + CLASS_1_065F1C4D9F2600E5_METHOD_1_944725D8BEE125D5_OFFSET))(this, a1);
 	}
 
-	::MoleMole::HollowChessboard::HollowCell Method_1_AF081070273CE162()
+	::System::Void Method_1_248F2887B0C2212A(::MoleMole::HollowChessboard::HollowCell a1)
 	{
-		return ((::MoleMole::HollowChessboard::HollowCell(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_065F1C4D9F2600E5_METHOD_1_AF081070273CE162_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::HollowCell))((::PBYTE)hIl2Cpp + CLASS_1_065F1C4D9F2600E5_METHOD_1_248F2887B0C2212A_OFFSET))(this, a1);
 	}
 };

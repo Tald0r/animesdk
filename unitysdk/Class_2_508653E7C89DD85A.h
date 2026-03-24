@@ -1,0 +1,65 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Class_1_1EB8C469AAE7B7DE.h"
+#include "unitysdk/Struct_2_575273D27F02957E.h"
+
+class Class_2_E87F1D15F1D4AC72;
+namespace MoleMole { class UIActivityHotPotChallengeRowPageController_Context; }
+template <typename T> class Class_0_16E4307DCC41950C_13;
+
+#define CLASS_2_508653E7C89DD85A_METHOD_2_0486E796BABC24A5_OFFSET UNITYSDK_OFFSET(0xB4A8650)
+#define CLASS_2_508653E7C89DD85A_METHOD_2_43D99DDD80B1E30C_OFFSET UNITYSDK_OFFSET(0xB4A8450)
+#define CLASS_2_508653E7C89DD85A_METHOD_2_8B017280D44683F6_OFFSET UNITYSDK_OFFSET(0xB4A86C0)
+#define CLASS_2_508653E7C89DD85A_METHOD_2_9D768FB7C06C1DF3_OFFSET UNITYSDK_OFFSET(0xB4A83E0)
+#define CLASS_2_508653E7C89DD85A_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xB4A85F0)
+#define CLASS_2_508653E7C89DD85A_METHOD_2_CA373AA1C7054598_2_OFFSET UNITYSDK_OFFSET(0xB4A8660)
+#define CLASS_2_508653E7C89DD85A_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xB4A8540)
+#define CLASS_2_508653E7C89DD85A__CTOR_OFFSET UNITYSDK_OFFSET(0xB4A85A0)
+
+inline static constexpr unsigned int Class_2_508653E7C89DD85A_TypeDefinitionIndex = 45962;
+
+class Class_2_508653E7C89DD85A : public ::Class_1_1EB8C469AAE7B7DE
+{
+public:
+	::Class_0_16E4307DCC41950C_13<::MoleMole::UIActivityHotPotChallengeRowPageController_Context*>* Field_2_0; // 0x50
+
+	::System::Void _ctor()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A__CTOR_OFFSET))(this);
+	}
+
+	::System::Void Method_2_9D768FB7C06C1DF3(::Struct_2_575273D27F02957E& a1, ::Class_2_E87F1D15F1D4AC72* a2)
+	{
+		return ((::System::Void(*)(::PVOID, ::Struct_2_575273D27F02957E&, ::Class_2_E87F1D15F1D4AC72*))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_9D768FB7C06C1DF3_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Method_2_43D99DDD80B1E30C()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_43D99DDD80B1E30C_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_CA373AA1C7054598_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_1()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_CA373AA1C7054598_1_OFFSET))(this);
+	}
+
+	::Class_0_16E4307DCC41950C_13<::MoleMole::UIActivityHotPotChallengeRowPageController_Context*>* Method_2_0486E796BABC24A5()
+	{
+		return ((::Class_0_16E4307DCC41950C_13<::MoleMole::UIActivityHotPotChallengeRowPageController_Context*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_0486E796BABC24A5_OFFSET))(this);
+	}
+
+	::System::Void Method_2_CA373AA1C7054598_2()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_CA373AA1C7054598_2_OFFSET))(this);
+	}
+
+	::System::Void Method_2_8B017280D44683F6(::Class_0_16E4307DCC41950C_13<::MoleMole::UIActivityHotPotChallengeRowPageController_Context*>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC41950C_13<::MoleMole::UIActivityHotPotChallengeRowPageController_Context*>*))((::PBYTE)hIl2Cpp + CLASS_2_508653E7C89DD85A_METHOD_2_8B017280D44683F6_OFFSET))(this, a1);
+	}
+};

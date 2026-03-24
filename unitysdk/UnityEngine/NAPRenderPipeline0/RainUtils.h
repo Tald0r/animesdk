@@ -11,42 +11,42 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Mesh; }
 namespace UnityEngine::NAPRenderPipeline0 { class IWeatherConfig; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_DRAWRAINDEPTH_OFFSET UNITYSDK_OFFSET(0x19DDB210)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_DRAWRAINDROPANDRAINSPLASH_OFFSET UNITYSDK_OFFSET(0x19DDBC80)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_DRAWRAINDROP_OFFSET UNITYSDK_OFFSET(0x19DDB290)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_ENSUREASSETS_OFFSET UNITYSDK_OFFSET(0x19DDAF50)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19DDC630)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_DRAWRAINDEPTH_OFFSET UNITYSDK_OFFSET(0x1A365B90)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_DRAWRAINDROPANDRAINSPLASH_OFFSET UNITYSDK_OFFSET(0x1A366600)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_DRAWRAINDROP_OFFSET UNITYSDK_OFFSET(0x1A365C10)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS_ENSUREASSETS_OFFSET UNITYSDK_OFFSET(0x1A3658D0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RAINUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A366FB0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int RainUtils_TypeDefinitionIndex = 5971;
+	inline static constexpr unsigned int RainUtils_TypeDefinitionIndex = 5974;
 
 	class RainUtils : public ::System::Object
 	{
 	public:
+		static ::UnityEngine::Mesh** StaticGet_s_RainSplashQuadMesh()
+		{
+			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5520);
+		}
 		static ::Il2CppArray<::UnityEngine::Matrix4x4>** StaticGet_rainMeshVertices()
 		{
-			return (::Il2CppArray<::UnityEngine::Matrix4x4>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x54F0);
-		}
-		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_RainSplashRandomSeed()
-		{
-			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x54F8);
+			return (::Il2CppArray<::UnityEngine::Matrix4x4>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5528);
 		}
 		static ::UnityEngine::NAPRenderPipeline0::IWeatherConfig** StaticGet_preWeatherConfig()
 		{
-			return (::UnityEngine::NAPRenderPipeline0::IWeatherConfig**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5500);
-		}
-		static ::UnityEngine::Mesh** StaticGet_s_RainSplashQuadMesh()
-		{
-			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5508);
+			return (::UnityEngine::NAPRenderPipeline0::IWeatherConfig**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5530);
 		}
 		static ::System::Collections::Generic::List_1<::System::Int32>** StaticGet_instanceToVertexId()
 		{
-			return (::System::Collections::Generic::List_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5510);
+			return (::System::Collections::Generic::List_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5538);
 		}
 		static ::System::Collections::Generic::List_1<::Il2CppArray<::UnityEngine::Matrix4x4>*>** StaticGet_s_QuadToWorld()
 		{
-			return (::System::Collections::Generic::List_1<::Il2CppArray<::UnityEngine::Matrix4x4>*>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5518);
+			return (::System::Collections::Generic::List_1<::Il2CppArray<::UnityEngine::Matrix4x4>*>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5540);
+		}
+		static ::Il2CppArray<::UnityEngine::Vector4>** StaticGet_s_RainSplashRandomSeed()
+		{
+			return (::Il2CppArray<::UnityEngine::Vector4>**)Il2CppClass::FromTypeDefinitionIndex(RainUtils_TypeDefinitionIndex)->GetStaticField(0x5548);
 		}
 		static ::System::Int32* StaticGet_s_RainSplashQuadMeshID()
 		{

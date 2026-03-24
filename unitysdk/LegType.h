@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int LegType_TypeDefinitionIndex = 49809;
+inline static constexpr unsigned int LegType_TypeDefinitionIndex = 65281;
 
 enum class LegType : ::System::Int32
 {

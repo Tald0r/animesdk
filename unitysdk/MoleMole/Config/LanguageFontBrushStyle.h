@@ -7,26 +7,26 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE_METHOD_1_6932CF12B1F1BB8D_OFFSET UNITYSDK_OFFSET(0x15EC6AD0)
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE_METHOD_1_D617C2B7615DDDC7_OFFSET UNITYSDK_OFFSET(0x15EC6BB0)
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE_METHOD_1_E11AC65AA0DC2249_OFFSET UNITYSDK_OFFSET(0x15EC6DD0)
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x15EC6A70)
-#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x15EC69B0)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE_METHOD_1_6932CF12B1F1BB8D_OFFSET UNITYSDK_OFFSET(0xE2D9430)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE_METHOD_1_D617C2B7615DDDC7_OFFSET UNITYSDK_OFFSET(0xE2D9510)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE_METHOD_1_E11AC65AA0DC2249_OFFSET UNITYSDK_OFFSET(0xE2D9730)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE__CCTOR_OFFSET UNITYSDK_OFFSET(0xE2D93E0)
+#define MOLEMOLE_CONFIG_LANGUAGEFONTBRUSHSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0xE2D9320)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LanguageFontBrushStyle_TypeDefinitionIndex = 53815;
+	inline static constexpr unsigned int LanguageFontBrushStyle_TypeDefinitionIndex = 47013;
 
 	class LanguageFontBrushStyle : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::MoleMole::Config::LanguageSizeFontBrushStyle>** StaticGet_Empty()
 		{
-			return (::Il2CppArray<::MoleMole::Config::LanguageSizeFontBrushStyle>**)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle_TypeDefinitionIndex)->GetStaticField(0x31F40);
+			return (::Il2CppArray<::MoleMole::Config::LanguageSizeFontBrushStyle>**)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle_TypeDefinitionIndex)->GetStaticField(0x33DB0);
 		}
 		static ::System::ValueTuple_2<::System::Single, ::System::Single>* StaticGet_DefaultStyle()
 		{
-			return (::System::ValueTuple_2<::System::Single, ::System::Single>*)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle_TypeDefinitionIndex)->GetStaticField(0xC320);
+			return (::System::ValueTuple_2<::System::Single, ::System::Single>*)Il2CppClass::FromTypeDefinitionIndex(LanguageFontBrushStyle_TypeDefinitionIndex)->GetStaticField(0xCE50);
 		}
 		::Il2CppArray<::MoleMole::LanguageType>* fontBrushEnabledLanguages; // 0x10
 		::Il2CppArray<::MoleMole::Config::LanguageSizeFontBrushStyle>* sizeStyles; // 0x18

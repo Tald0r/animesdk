@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define PIPELINECAMERA_FALSETYPE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x2FB060)
+#define PIPELINECAMERA_FALSETYPE_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x2F75F0)
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int FalseType_TypeDefinitionIndex = 34545;
+	inline static constexpr unsigned int FalseType_TypeDefinitionIndex = 35547;
 
 	struct alignas(1) FalseType
 	{

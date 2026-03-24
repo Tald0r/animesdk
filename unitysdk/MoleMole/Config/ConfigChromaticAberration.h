@@ -7,23 +7,23 @@
 namespace MoleMole::Config { class ScreenEffectFloat; }
 namespace MoleMole::Config { class ScreenEffectVector2; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION_GETCENTER_OFFSET UNITYSDK_OFFSET(0x9706650)
-#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0x97065B0)
-#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION_GETPOWER_OFFSET UNITYSDK_OFFSET(0x97066F0)
-#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION__CTOR_OFFSET UNITYSDK_OFFSET(0x9706790)
+#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION_GETCENTER_OFFSET UNITYSDK_OFFSET(0xB0950A0)
+#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0xB095000)
+#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION_GETPOWER_OFFSET UNITYSDK_OFFSET(0xB095140)
+#define MOLEMOLE_CONFIG_CONFIGCHROMATICABERRATION__CTOR_OFFSET UNITYSDK_OFFSET(0xB0951E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChromaticAberration_TypeDefinitionIndex = 51976;
+	inline static constexpr unsigned int ConfigChromaticAberration_TypeDefinitionIndex = 64266;
 
 	class ConfigChromaticAberration : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{
 	public:
 		::MoleMole::Config::ScreenEffectFloat* intensity; // 0x40
-		::MoleMole::Config::ScreenEffectFloat* power; // 0x48
-		::MoleMole::Config::ScreenEffectVector2* center; // 0x50
-		::MoleMole::Config::ScreenEffectFieldHandleType centerHandleType; // 0x58
-		::MoleMole::Config::ScreenEffectFieldHandleType intensityHandleType; // 0x5C
+		::MoleMole::Config::ScreenEffectVector2* center; // 0x48
+		::MoleMole::Config::ScreenEffectFloat* power; // 0x50
+		::MoleMole::Config::ScreenEffectFieldHandleType intensityHandleType; // 0x58
+		::MoleMole::Config::ScreenEffectFieldHandleType centerHandleType; // 0x5C
 		::MoleMole::Config::ScreenEffectFieldHandleType powerHandleType; // 0x60
 
 		::System::Void _ctor()

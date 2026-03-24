@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy::Generator::Modules
 {
-	inline static constexpr unsigned int BuildShapeExtrusion_CrossShiftModeEnum_TypeDefinitionIndex = 35824;
+	inline static constexpr unsigned int BuildShapeExtrusion_CrossShiftModeEnum_TypeDefinitionIndex = 36844;
 
 	enum class BuildShapeExtrusion_CrossShiftModeEnum : ::System::Int32
 	{

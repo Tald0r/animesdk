@@ -7,12 +7,12 @@ namespace Sirenix::Serialization { class IFormatter; }
 namespace Sirenix::Serialization { class ISerializationPolicy; }
 namespace System { class Type; }
 
-#define SIRENIX_SERIALIZATION_SELFFORMATTERLOCATOR_TRYGETFORMATTER_OFFSET UNITYSDK_OFFSET(0x1A707F90)
-#define SIRENIX_SERIALIZATION_SELFFORMATTERLOCATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7081F0)
+#define SIRENIX_SERIALIZATION_SELFFORMATTERLOCATOR_TRYGETFORMATTER_OFFSET UNITYSDK_OFFSET(0x1ACB2F90)
+#define SIRENIX_SERIALIZATION_SELFFORMATTERLOCATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACB31F0)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int SelfFormatterLocator_TypeDefinitionIndex = 7305;
+	inline static constexpr unsigned int SelfFormatterLocator_TypeDefinitionIndex = 7310;
 
 	class SelfFormatterLocator : public ::System::Object
 	{

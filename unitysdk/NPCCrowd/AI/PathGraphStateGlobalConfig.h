@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NPCCROWD_AI_PATHGRAPHSTATEGLOBALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9361980)
+#define NPCCROWD_AI_PATHGRAPHSTATEGLOBALCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x783D6C0)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphStateGlobalConfig_TypeDefinitionIndex = 43274;
+	inline static constexpr unsigned int PathGraphStateGlobalConfig_TypeDefinitionIndex = 41938;
 
 	class PathGraphStateGlobalConfig : public ::System::Object
 	{

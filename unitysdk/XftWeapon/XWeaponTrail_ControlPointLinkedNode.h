@@ -7,21 +7,21 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE_CLEAR_OFFSET UNITYSDK_OFFSET(0x19FD1D00)
-#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE_GET_OFFSET UNITYSDK_OFFSET(0x19FC7DF0)
-#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE_RETURN_OFFSET UNITYSDK_OFFSET(0x19FC76E0)
-#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x19FD1DA0)
+#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE_CLEAR_OFFSET UNITYSDK_OFFSET(0x1A5EAD20)
+#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE_GET_OFFSET UNITYSDK_OFFSET(0x1A5E0C90)
+#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE_RETURN_OFFSET UNITYSDK_OFFSET(0x1A5E0580)
+#define XFTWEAPON_XWEAPONTRAIL_CONTROLPOINTLINKEDNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5EADC0)
 
 namespace XftWeapon
 {
-	inline static constexpr unsigned int XWeaponTrail_ControlPointLinkedNode_TypeDefinitionIndex = 36115;
+	inline static constexpr unsigned int XWeaponTrail_ControlPointLinkedNode_TypeDefinitionIndex = 37135;
 
 	class XWeaponTrail_ControlPointLinkedNode : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::UnityEngine::Color>* Colors_List; // 0x10
+		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* UVs_List; // 0x10
 		::System::Collections::Generic::List_1<::UnityEngine::Vector3>* Vertices_List; // 0x18
-		::System::Collections::Generic::List_1<::UnityEngine::Vector2>* UVs_List; // 0x20
+		::System::Collections::Generic::List_1<::UnityEngine::Color>* Colors_List; // 0x20
 
 		::System::Void _ctor()
 		{

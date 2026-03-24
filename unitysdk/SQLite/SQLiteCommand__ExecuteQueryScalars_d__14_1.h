@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerator
 
 namespace SQLite
 {
-	inline static constexpr unsigned int SQLiteCommand__ExecuteQueryScalars_d__14_1_TypeDefinitionIndex = 35252;
+	inline static constexpr unsigned int SQLiteCommand__ExecuteQueryScalars_d__14_1_TypeDefinitionIndex = 36254;
 
 	template <typename T>
 	class SQLiteCommand__ExecuteQueryScalars_d__14_1 : public ::System::Object

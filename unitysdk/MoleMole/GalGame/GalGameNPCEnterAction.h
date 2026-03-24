@@ -5,18 +5,18 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_GALGAMENPCENTERACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x8F10DA0)
+#define MOLEMOLE_GALGAME_GALGAMENPCENTERACTION__CTOR_OFFSET UNITYSDK_OFFSET(0xA022920)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int GalGameNPCEnterAction_TypeDefinitionIndex = 56778;
+	inline static constexpr unsigned int GalGameNPCEnterAction_TypeDefinitionIndex = 64997;
 
 	class GalGameNPCEnterAction : public ::MoleMole::GalGame::GalGameNPCActionBase
 	{
 	public:
 		::System::String* backgroundKey; // 0x38
-		::MoleMole::GalGame::GalgameFilterType filterType; // 0x40
-		::System::Boolean useMainCityTimeBackGround; // 0x44
+		::System::Boolean useMainCityTimeBackGround; // 0x40
+		::MoleMole::GalGame::GalgameFilterType filterType; // 0x44
 
 		::System::Void _ctor()
 		{

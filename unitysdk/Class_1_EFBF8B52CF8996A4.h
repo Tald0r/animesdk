@@ -13,16 +13,16 @@ namespace System::Collections::Generic { template <typename T> class Queue_1; }
 namespace System::Net::Sockets { class Socket; }
 namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_1B9CC121BDC8766D_OFFSET UNITYSDK_OFFSET(0xD234350)
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_2192C24A535CCDCB_OFFSET UNITYSDK_OFFSET(0xD2339D0)
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_6A81A01A1BE5DBC6_OFFSET UNITYSDK_OFFSET(0xD233B50)
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_94EAF81A8AF2C7F6_OFFSET UNITYSDK_OFFSET(0xD233D00)
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_A033A26FC9F7CD1C_OFFSET UNITYSDK_OFFSET(0xD234480)
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_B387E1AED8A8F880_OFFSET UNITYSDK_OFFSET(0xD234580)
-#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_CB4ED266BC3FBD93_OFFSET UNITYSDK_OFFSET(0xD234410)
-#define CLASS_1_EFBF8B52CF8996A4__CTOR_OFFSET UNITYSDK_OFFSET(0xD233850)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_1B9CC121BDC8766D_OFFSET UNITYSDK_OFFSET(0xAA01EE0)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_2192C24A535CCDCB_OFFSET UNITYSDK_OFFSET(0xAA02010)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_6A81A01A1BE5DBC6_OFFSET UNITYSDK_OFFSET(0xAA02190)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_94EAF81A8AF2C7F6_OFFSET UNITYSDK_OFFSET(0xAA02610)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_A033A26FC9F7CD1C_OFFSET UNITYSDK_OFFSET(0xAA02340)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_B387E1AED8A8F880_OFFSET UNITYSDK_OFFSET(0xAA02440)
+#define CLASS_1_EFBF8B52CF8996A4_METHOD_1_CB4ED266BC3FBD93_OFFSET UNITYSDK_OFFSET(0xAA01FA0)
+#define CLASS_1_EFBF8B52CF8996A4__CTOR_OFFSET UNITYSDK_OFFSET(0xAA01D60)
 
-inline static constexpr unsigned int Class_1_EFBF8B52CF8996A4_TypeDefinitionIndex = 73946;
+inline static constexpr unsigned int Class_1_EFBF8B52CF8996A4_TypeDefinitionIndex = 63973;
 
 class Class_1_EFBF8B52CF8996A4 : public ::System::Object
 {
@@ -38,16 +38,6 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_2192C24A535CCDCB(::Class_1_9545B07472DE9BFD* a1, ::System::Action_1<::System::Int32>* a2)
-	{
-		return ((::System::Void(*)(::PVOID, ::Class_1_9545B07472DE9BFD*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_2192C24A535CCDCB_OFFSET))(this, a1, a2);
-	}
-
-	::System::Void Method_1_94EAF81A8AF2C7F6(::System::Object* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_94EAF81A8AF2C7F6_OFFSET))(this, a1);
-	}
-
 	::System::Void Method_1_1B9CC121BDC8766D(::System::Boolean a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_1B9CC121BDC8766D_OFFSET))(this, a1);
@@ -58,9 +48,9 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Net::Sockets::Socket*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_CB4ED266BC3FBD93_OFFSET))(this, a1);
 	}
 
-	::System::Threading::Tasks::Task_1<::System::Int32>* Method_1_A033A26FC9F7CD1C(::System::Net::Sockets::Socket* a1, ::Class_1_79B32D340B0895B6* a2)
+	::System::Void Method_1_2192C24A535CCDCB(::Class_1_9545B07472DE9BFD* a1, ::System::Action_1<::System::Int32>* a2)
 	{
-		return ((::System::Threading::Tasks::Task_1<::System::Int32>*(*)(::PVOID, ::System::Net::Sockets::Socket*, ::Class_1_79B32D340B0895B6*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_A033A26FC9F7CD1C_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::Class_1_9545B07472DE9BFD*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_2192C24A535CCDCB_OFFSET))(this, a1, a2);
 	}
 
 	::System::Void Method_1_6A81A01A1BE5DBC6(::Class_1_9545B07472DE9BFD* a1, ::System::Action_2<::System::Int32, ::System::Exception*>* a2)
@@ -68,8 +58,18 @@ public:
 		return ((::System::Void(*)(::PVOID, ::Class_1_9545B07472DE9BFD*, ::System::Action_2<::System::Int32, ::System::Exception*>*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_6A81A01A1BE5DBC6_OFFSET))(this, a1, a2);
 	}
 
+	::System::Threading::Tasks::Task_1<::System::Int32>* Method_1_A033A26FC9F7CD1C(::System::Net::Sockets::Socket* a1, ::Class_1_79B32D340B0895B6* a2)
+	{
+		return ((::System::Threading::Tasks::Task_1<::System::Int32>*(*)(::PVOID, ::System::Net::Sockets::Socket*, ::Class_1_79B32D340B0895B6*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_A033A26FC9F7CD1C_OFFSET))(this, a1, a2);
+	}
+
 	::System::Void Method_1_B387E1AED8A8F880()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_B387E1AED8A8F880_OFFSET))(this);
+	}
+
+	::System::Void Method_1_94EAF81A8AF2C7F6(::System::Object* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Object*))((::PBYTE)hIl2Cpp + CLASS_1_EFBF8B52CF8996A4_METHOD_1_94EAF81A8AF2C7F6_OFFSET))(this, a1);
 	}
 };

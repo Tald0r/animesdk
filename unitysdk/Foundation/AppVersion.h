@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_APPVERSION_ONVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x1A498500)
-#define FOUNDATION_APPVERSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4988C0)
+#define FOUNDATION_APPVERSION_ONVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x1AA13B60)
+#define FOUNDATION_APPVERSION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA13F20)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int AppVersion_TypeDefinitionIndex = 7803;
+	inline static constexpr unsigned int AppVersion_TypeDefinitionIndex = 7807;
 
 	class AppVersion : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

@@ -11,26 +11,26 @@ namespace System { template <typename T> class Action_1; }
 namespace UnityEngine::EventSystems { class PointerEventData; }
 namespace UnityEngine::UI::Extension { class UISlider; }
 
-#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x18182330)
-#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x18182340)
-#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x18182610)
-#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18182830)
-#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x181827F0)
+#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x1534EA80)
+#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x1534EA90)
+#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1534ED60)
+#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1534EF80)
+#define UNITYENGINE_UI_EXTENSION_UISLIDER_UISLIDER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1534EF40)
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UISlider_UISlider_UnityGeneratedFormatter_TypeDefinitionIndex = 70149;
+	inline static constexpr unsigned int UISlider_UISlider_UnityGeneratedFormatter_TypeDefinitionIndex = 73501;
 
 	class UISlider_UISlider_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::UnityEngine::UI::Extension::UISlider*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(UISlider_UISlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39530);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundActionGeneral*>**)Il2CppClass::FromTypeDefinitionIndex(UISlider_UISlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3C190);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Action_1<::UnityEngine::EventSystems::PointerEventData*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Action_1<::UnityEngine::EventSystems::PointerEventData*>*>**)Il2CppClass::FromTypeDefinitionIndex(UISlider_UISlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39538);
+			return (::Sirenix::Serialization::Serializer_1<::System::Action_1<::UnityEngine::EventSystems::PointerEventData*>*>**)Il2CppClass::FromTypeDefinitionIndex(UISlider_UISlider_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3C198);
 		}
 
 		::System::Void _ctor()

@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigShootingGroundCameraAxis_TypeDefinitionIndex = 52094;
+	inline static constexpr unsigned int ConfigShootingGroundCameraAxis_TypeDefinitionIndex = 73306;
 
 	struct alignas(4) ConfigShootingGroundCameraAxis
 	{

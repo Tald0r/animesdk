@@ -5,11 +5,11 @@
 namespace System { class Object; }
 namespace System::Threading { class SendOrPostCallback; }
 
-#define QWER_SSENDORPOOSTCALLBACKINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define QWER_SSENDORPOOSTCALLBACKINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x301710)
 
 namespace QWER
 {
-	inline static constexpr unsigned int SSendOrPoostCallbackInfo_TypeDefinitionIndex = 82080;
+	inline static constexpr unsigned int SSendOrPoostCallbackInfo_TypeDefinitionIndex = 84121;
 
 	struct alignas(8) SSendOrPoostCallbackInfo
 	{

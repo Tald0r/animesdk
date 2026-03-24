@@ -6,7 +6,7 @@ namespace UnityEngine { class Gradient; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int WeatherConfigSkyLutGradParams_TypeDefinitionIndex = 5913;
+	inline static constexpr unsigned int WeatherConfigSkyLutGradParams_TypeDefinitionIndex = 5915;
 
 	struct alignas(8) WeatherConfigSkyLutGradParams
 	{

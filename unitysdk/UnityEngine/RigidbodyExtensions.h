@@ -5,11 +5,11 @@
 
 namespace UnityEngine { class Rigidbody; }
 
-#define UNITYENGINE_RIGIDBODYEXTENSIONS_HANDLECONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x196FA2B0)
+#define UNITYENGINE_RIGIDBODYEXTENSIONS_HANDLECONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x15680520)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RigidbodyExtensions_TypeDefinitionIndex = 45285;
+	inline static constexpr unsigned int RigidbodyExtensions_TypeDefinitionIndex = 51699;
 
 	class RigidbodyExtensions : public ::System::Object
 	{

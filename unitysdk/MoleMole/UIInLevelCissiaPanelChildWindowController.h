@@ -1,0 +1,146 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_3EDF246633A325B0.h"
+#include "unitysdk/MoleMole/UIInLevelLightUpPointsPanelControllerBase.h"
+
+class Class_2_53FDDB62C05D7434_1;
+namespace MoleMole { class UIControlReference; }
+namespace MoleMole { class UIControllerContextBase; }
+namespace MoleMole { class UIInLevelLightUpPointsItemControllerBase; }
+namespace System { class String; }
+namespace UnityEngine { class RectTransform; }
+
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET UNITYSDK_OFFSET(0x914E4F0)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_CREATEITEMCONTROLLER_OFFSET UNITYSDK_OFFSET(0x914E420)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_CONTENT_OFFSET UNITYSDK_OFFSET(0x914E1B0)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_PLACEHOLDERKEY_CURPOINT_OFFSET UNITYSDK_OFFSET(0x914E130)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_PLACEHOLDERKEY_MAXPOINT_OFFSET UNITYSDK_OFFSET(0x914E170)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET UNITYSDK_OFFSET(0x914E120)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET UNITYSDK_OFFSET(0x914E550)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET UNITYSDK_OFFSET(0x914E670)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_HANDLEENHANCEMODE_OFFSET UNITYSDK_OFFSET(0x914E770)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x914E2F0)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x914E390)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x914E1D0)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x914E240)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x914E900)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET UNITYSDK_OFFSET(0x914E9E0)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_HANDLECUSTOMPROPERTY_OFFSET UNITYSDK_OFFSET(0x914E9F0)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET UNITYSDK_OFFSET(0x914EA00)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET UNITYSDK_OFFSET(0x914EA70)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET UNITYSDK_OFFSET(0x914EA80)
+#define MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET UNITYSDK_OFFSET(0x914EA90)
+
+namespace MoleMole
+{
+	inline static constexpr unsigned int UIInLevelCissiaPanelChildWindowController_TypeDefinitionIndex = 79471;
+
+	class UIInLevelCissiaPanelChildWindowController : public ::MoleMole::UIInLevelLightUpPointsPanelControllerBase
+	{
+	public:
+		::System::String* Placeholder_EnhanceMode; // 0x348
+		::Class_2_53FDDB62C05D7434_1* _view; // 0x350
+		::System::String* CissiaPanelBgGlowFadeIn; // 0x358
+		::System::String* CissiaPanelBgGlowFadeOut; // 0x360
+
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER__CTOR_OFFSET))(this);
+		}
+
+		::Enum_3_3EDF246633A325B0 get_windowType()
+		{
+			return ((::Enum_3_3EDF246633A325B0(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_WINDOWTYPE_OFFSET))(this);
+		}
+
+		::System::String* get_PlaceHolderKey_CurPoint()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_PLACEHOLDERKEY_CURPOINT_OFFSET))(this);
+		}
+
+		::System::String* get_PlaceHolderKey_MaxPoint()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_PLACEHOLDERKEY_MAXPOINT_OFFSET))(this);
+		}
+
+		::UnityEngine::RectTransform* get_Content()
+		{
+			return ((::UnityEngine::RectTransform*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_GET_CONTENT_OFFSET))(this);
+		}
+
+		::System::Void OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void OnUIOpen(::MoleMole::UIControllerContextBase* openCtrlContext)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONUIOPEN_OFFSET))(this, openCtrlContext);
+		}
+
+		::System::Void OnCreateView(::MoleMole::UIControlReference* controlReference)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONCREATEVIEW_OFFSET))(this, controlReference);
+		}
+
+		::System::Void OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::MoleMole::UIInLevelLightUpPointsItemControllerBase* CreateItemController()
+		{
+			return ((::MoleMole::UIInLevelLightUpPointsItemControllerBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_CREATEITEMCONTROLLER_OFFSET))(this);
+		}
+
+		::System::Void CollectAllAnimationComponents()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_COLLECTALLANIMATIONCOMPONENTS_OFFSET))(this);
+		}
+
+		::System::Void HandleAllCustomPropertiesOnShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET))(this);
+		}
+
+		::System::Void HandleCustomProperty(::System::String* customTypePlaceholder, ::System::Double oldValue, ::System::Double newValue, ::System::Boolean ignoreAnimation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_HANDLECUSTOMPROPERTY_OFFSET))(this, customTypePlaceholder, oldValue, newValue, ignoreAnimation);
+		}
+
+		::System::Void HandleEnhanceMode(::System::Double newValue, ::System::Boolean ignoreAnimation)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::Double, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER_HANDLEENHANCEMODE_OFFSET))(this, newValue, ignoreAnimation);
+		}
+
+		::System::Void __base_HandleAllCustomPropertiesOnShow()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_HANDLEALLCUSTOMPROPERTIESONSHOW_OFFSET))(this);
+		}
+
+		::System::Void __base_HandleCustomProperty(::System::String* P0, ::System::Double P1, ::System::Double P2, ::System::Boolean P3)
+		{
+			return ((::System::Void(*)(::PVOID, ::System::String*, ::System::Double, ::System::Double, ::System::Boolean))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_HANDLECUSTOMPROPERTY_OFFSET))(this, P0, P1, P2, P3);
+		}
+
+		::System::Void __base_OnCreateView(::MoleMole::UIControlReference* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControlReference*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONCREATEVIEW_OFFSET))(this, P0);
+		}
+
+		::System::Void __base_OnUIDestroy()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONUIDESTROY_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIInit()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONUIINIT_OFFSET))(this);
+		}
+
+		::System::Void __base_OnUIOpen(::MoleMole::UIControllerContextBase* P0)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::UIControllerContextBase*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIINLEVELCISSIAPANELCHILDWINDOWCONTROLLER___BASE_ONUIOPEN_OFFSET))(this, P0);
+		}
+	};
+}

@@ -4,12 +4,12 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIROLEEQUIPREPLACEWIDGETCONTROLLER___C__DISPLAYCLASS122_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC3AD6D0)
-#define MOLEMOLE_UIROLEEQUIPREPLACEWIDGETCONTROLLER___C__DISPLAYCLASS122_0__DOTRIGGEREQUIPREPLACE_B__0_OFFSET UNITYSDK_OFFSET(0xC3AD6E0)
+#define MOLEMOLE_UIROLEEQUIPREPLACEWIDGETCONTROLLER___C__DISPLAYCLASS122_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA445710)
+#define MOLEMOLE_UIROLEEQUIPREPLACEWIDGETCONTROLLER___C__DISPLAYCLASS122_0__DOTRIGGEREQUIPREPLACE_B__0_OFFSET UNITYSDK_OFFSET(0xA445720)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleEquipReplaceWidgetController___c__DisplayClass122_0_TypeDefinitionIndex = 70968;
+	inline static constexpr unsigned int UIRoleEquipReplaceWidgetController___c__DisplayClass122_0_TypeDefinitionIndex = 57497;
 
 	class UIRoleEquipReplaceWidgetController___c__DisplayClass122_0 : public ::System::Object
 	{

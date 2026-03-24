@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_2_B5A08814C9C2DFB7;
+class Class_2_4E7D4B0E2476C0A5;
 
-#define MOLEMOLE_UIHOUSERHYTHMREWARDPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7D1D2C0)
+#define MOLEMOLE_UIHOUSERHYTHMREWARDPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x914C930)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHouseRhythmRewardPageController_Context_TypeDefinitionIndex = 70566;
+	inline static constexpr unsigned int UIHouseRhythmRewardPageController_Context_TypeDefinitionIndex = 67249;
 
 	class UIHouseRhythmRewardPageController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_2_B5A08814C9C2DFB7* HouseRhythmData; // 0x28
+		::Class_2_4E7D4B0E2476C0A5* HouseRhythmData; // 0x28
 		::System::Boolean ShowGetBtn; // 0x30
 
 		::System::Void _ctor()

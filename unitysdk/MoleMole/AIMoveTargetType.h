@@ -3,20 +3,20 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AIMoveTargetType_TypeDefinitionIndex = 62837;
+	inline static constexpr unsigned int AIMoveTargetType_TypeDefinitionIndex = 65332;
 
 	enum class AIMoveTargetType : ::System::Int32
 	{
 		GroupPoint = 8,
-		FloorPoint = 9,
-		GuideTargetPosition = 4,
-		SavePoint = 10,
-		LocalAvatar = 2,
-		Self = 3,
-		LockTarget = 0,
 		Custom = 5,
+		SavePoint = 10,
+		LockTarget = 0,
 		Camera = 6,
 		AnchorTarget = 1,
+		Self = 3,
+		FloorPoint = 9,
 		SelfBornPosition = 7,
+		LocalAvatar = 2,
+		GuideTargetPosition = 4,
 	};
 }

@@ -7,12 +7,12 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_BUDDYFASHIONPREVIEWTEST_CLASS_1_12D68DDEB6758ECB_METHOD_1_4B90B3D58DCF8D2D_OFFSET UNITYSDK_OFFSET(0x6BDC980)
-#define MOLEMOLE_BUDDYFASHIONPREVIEWTEST_CLASS_1_12D68DDEB6758ECB__CTOR_OFFSET UNITYSDK_OFFSET(0x6BDC970)
+#define MOLEMOLE_BUDDYFASHIONPREVIEWTEST_CLASS_1_12D68DDEB6758ECB_METHOD_1_4B90B3D58DCF8D2D_OFFSET UNITYSDK_OFFSET(0x94E50E0)
+#define MOLEMOLE_BUDDYFASHIONPREVIEWTEST_CLASS_1_12D68DDEB6758ECB__CTOR_OFFSET UNITYSDK_OFFSET(0x94E50D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BuddyFashionPreviewTest_Class_1_12D68DDEB6758ECB_TypeDefinitionIndex = 42584;
+	inline static constexpr unsigned int BuddyFashionPreviewTest_Class_1_12D68DDEB6758ECB_TypeDefinitionIndex = 38843;
 
 	class BuddyFashionPreviewTest_Class_1_12D68DDEB6758ECB : public ::System::Object
 	{

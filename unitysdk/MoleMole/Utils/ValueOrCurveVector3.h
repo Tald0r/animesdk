@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/Utils/ValueOrCurve3_1.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define MOLEMOLE_UTILS_VALUEORCURVEVECTOR3_SAMPLECURVE_OFFSET UNITYSDK_OFFSET(0xEE6F300)
-#define MOLEMOLE_UTILS_VALUEORCURVEVECTOR3__CTOR_OFFSET UNITYSDK_OFFSET(0xEE6F420)
+#define MOLEMOLE_UTILS_VALUEORCURVEVECTOR3_SAMPLECURVE_OFFSET UNITYSDK_OFFSET(0xAA96230)
+#define MOLEMOLE_UTILS_VALUEORCURVEVECTOR3__CTOR_OFFSET UNITYSDK_OFFSET(0xAA96350)
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int ValueOrCurveVector3_TypeDefinitionIndex = 73312;
+	inline static constexpr unsigned int ValueOrCurveVector3_TypeDefinitionIndex = 65014;
 
 	class ValueOrCurveVector3 : public ::MoleMole::Utils::ValueOrCurve3_1<::UnityEngine::Vector3>
 	{

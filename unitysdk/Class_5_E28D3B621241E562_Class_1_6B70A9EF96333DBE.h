@@ -4,9 +4,9 @@
 
 namespace MoleMole { class UIHollowEventWidgetChildWindowController; }
 
-#define CLASS_5_E28D3B621241E562_CLASS_1_6B70A9EF96333DBE__CTOR_OFFSET UNITYSDK_OFFSET(0xC55F420)
+#define CLASS_5_E28D3B621241E562_CLASS_1_6B70A9EF96333DBE__CTOR_OFFSET UNITYSDK_OFFSET(0x7042A30)
 
-inline static constexpr unsigned int Class_5_E28D3B621241E562_Class_1_6B70A9EF96333DBE_TypeDefinitionIndex = 59805;
+inline static constexpr unsigned int Class_5_E28D3B621241E562_Class_1_6B70A9EF96333DBE_TypeDefinitionIndex = 56053;
 
 class Class_5_E28D3B621241E562_Class_1_6B70A9EF96333DBE : public ::System::Object
 {

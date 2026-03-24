@@ -14,38 +14,38 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8F859C0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8F859D0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8F85DF0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F860B0)
-#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8F86070)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xD0E5F50)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xD0E5F60)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xD0E6380)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0E6640)
+#define MOLEMOLE_HOLLOWCHESSBOARD_HOLLOWENTITYRENDERTRACK_HOLLOWENTITYRENDERTRACK_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xD0E6600)
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex = 70524;
+	inline static constexpr unsigned int HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex = 68766;
 
 	class HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::HollowChessboard::HollowEntityRenderTrack*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IRenderEvent*>*>** StaticGet_CachedSerializer3()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::ICondition*>*>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IRenderEvent*>*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EDD0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::ICondition*>*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41A50);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EDD8);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41A58);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IHollowEntitySection*>*>** StaticGet_CachedSerializer2()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IRenderEvent*>*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IHollowEntitySection*>*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EDE0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IRenderEvent*>*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41A60);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::HollowChessboard::RenderSequenceSectionType>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::HollowChessboard::RenderSequenceSectionType>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EDE8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::HollowChessboard::RenderSequenceSectionType>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41A68);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::ICondition*>*>** StaticGet_CachedSerializer4()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IHollowEntitySection*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::ICondition*>*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EDF0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::IHollowEntitySection*>*>**)Il2CppClass::FromTypeDefinitionIndex(HollowEntityRenderTrack_HollowEntityRenderTrack_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41A70);
 		}
 
 		::System::Void _ctor()

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int ComputeQueueType_TypeDefinitionIndex = 6180;
+	inline static constexpr unsigned int ComputeQueueType_TypeDefinitionIndex = 6184;
 
 	enum class ComputeQueueType : ::System::Int32
 	{

@@ -9,22 +9,22 @@ namespace System::Collections { class IEnumerator; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Coroutine; }
 
-#define FLOWCANVAS_NODES_RANDOM_GET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x19FE8E20)
-#define FLOWCANVAS_NODES_RANDOM_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19FE8E40)
-#define FLOWCANVAS_NODES_RANDOM_SET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x19FE8E30)
-#define FLOWCANVAS_NODES_RANDOM_STARTCOROUTINEWRAP_OFFSET UNITYSDK_OFFSET(0x19FE9020)
-#define FLOWCANVAS_NODES_RANDOM__CTOR_OFFSET UNITYSDK_OFFSET(0x19FE9060)
+#define FLOWCANVAS_NODES_RANDOM_GET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x1A601EC0)
+#define FLOWCANVAS_NODES_RANDOM_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A601EE0)
+#define FLOWCANVAS_NODES_RANDOM_SET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x1A601ED0)
+#define FLOWCANVAS_NODES_RANDOM_STARTCOROUTINEWRAP_OFFSET UNITYSDK_OFFSET(0x1A6020C0)
+#define FLOWCANVAS_NODES_RANDOM__CTOR_OFFSET UNITYSDK_OFFSET(0x1A602100)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int Random_TypeDefinitionIndex = 26365;
+	inline static constexpr unsigned int Random_TypeDefinitionIndex = 27592;
 
 	class Random : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		static ::System::Func_5<::FlowCanvas::Nodes::Random*, ::FlowCanvas::Flow, ::System::Collections::Generic::List_1<::FlowCanvas::FlowOutput*>*, ::System::Int32, ::System::Boolean>** StaticGet_OnCall()
 		{
-			return (::System::Func_5<::FlowCanvas::Nodes::Random*, ::FlowCanvas::Flow, ::System::Collections::Generic::List_1<::FlowCanvas::FlowOutput*>*, ::System::Int32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Random_TypeDefinitionIndex)->GetStaticField(0x1ECF0);
+			return (::System::Func_5<::FlowCanvas::Nodes::Random*, ::FlowCanvas::Flow, ::System::Collections::Generic::List_1<::FlowCanvas::FlowOutput*>*, ::System::Int32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(Random_TypeDefinitionIndex)->GetStaticField(0x1F7C0);
 		}
 		::UnityEngine::Coroutine* coroutine; // 0xA8
 		::System::Int32 _portCount; // 0xB0

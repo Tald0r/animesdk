@@ -7,16 +7,16 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_1_670407D8BF6E118E_CLASS_1_76A3BECDF1AF89E3_METHOD_1_5A9D890764EF4CA1_OFFSET UNITYSDK_OFFSET(0x7FC87B0)
-#define CLASS_1_670407D8BF6E118E_CLASS_1_76A3BECDF1AF89E3__CTOR_OFFSET UNITYSDK_OFFSET(0x7FC87A0)
+#define CLASS_1_670407D8BF6E118E_CLASS_1_76A3BECDF1AF89E3_METHOD_1_5A9D890764EF4CA1_OFFSET UNITYSDK_OFFSET(0x6451730)
+#define CLASS_1_670407D8BF6E118E_CLASS_1_76A3BECDF1AF89E3__CTOR_OFFSET UNITYSDK_OFFSET(0x6451720)
 
-inline static constexpr unsigned int Class_1_670407D8BF6E118E_Class_1_76A3BECDF1AF89E3_TypeDefinitionIndex = 69202;
+inline static constexpr unsigned int Class_1_670407D8BF6E118E_Class_1_76A3BECDF1AF89E3_TypeDefinitionIndex = 47784;
 
 class Class_1_670407D8BF6E118E_Class_1_76A3BECDF1AF89E3 : public ::System::Object
 {
 public:
-	::System::Action_2<::UnityEngine::GameObject*, ::Foundation::AssetPath>* Field_1_1; // 0x10
-	::System::Action_1<::Foundation::AssetPath>* Field_1_0; // 0x18
+	::System::Action_1<::Foundation::AssetPath>* Field_1_0; // 0x10
+	::System::Action_2<::UnityEngine::GameObject*, ::Foundation::AssetPath>* Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

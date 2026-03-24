@@ -4,12 +4,12 @@
 
 namespace MoleMole::Cameras { class SideScrollingCameraRuntimeParam; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDENTERSIDESCROLLINGCAMERAMODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xC9BCA70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDENTERSIDESCROLLINGCAMERAMODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC9BCBB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDENTERSIDESCROLLINGCAMERAMODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xBA01460)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDENTERSIDESCROLLINGCAMERAMODE__CTOR_OFFSET UNITYSDK_OFFSET(0xBA015A0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDEnterSideScrollingCameraMode_TypeDefinitionIndex = 77965;
+	inline static constexpr unsigned int LDEnterSideScrollingCameraMode_TypeDefinitionIndex = 43959;
 
 	class LDEnterSideScrollingCameraMode : public ::FlowCanvas::Nodes::CallableFunctionNode_2<::System::Boolean, ::MoleMole::Cameras::SideScrollingCameraRuntimeParam*>
 	{

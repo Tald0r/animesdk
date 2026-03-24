@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDisplayCasePageController_Mode_TypeDefinitionIndex = 64833;
+	inline static constexpr unsigned int UIDisplayCasePageController_Mode_TypeDefinitionIndex = 45010;
 
 	enum class UIDisplayCasePageController_Mode : ::System::Int32
 	{
-		None = 0,
-		Preview = 1,
 		Edit = 2,
+		Preview = 1,
+		None = 0,
 	};
 }

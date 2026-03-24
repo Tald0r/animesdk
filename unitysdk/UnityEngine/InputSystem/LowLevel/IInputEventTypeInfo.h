@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int IInputEventTypeInfo_TypeDefinitionIndex = 27791;
+	inline static constexpr unsigned int IInputEventTypeInfo_TypeDefinitionIndex = 28731;
 
 	class IInputEventTypeInfo
 	{

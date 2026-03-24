@@ -5,19 +5,19 @@
 class Class_1_5002A338EA6818A8;
 namespace MoleMole { class UIOverlordFeastServePageController; }
 
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS79_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBE761C0)
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS79_0__ISGUESTHAVESPECIFICDISHID_B__0_OFFSET UNITYSDK_OFFSET(0xBE761D0)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS79_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCFC4730)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS79_0__ISGUESTHAVESPECIFICDISHID_B__0_OFFSET UNITYSDK_OFFSET(0xCFC4740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass79_0_TypeDefinitionIndex = 78931;
+	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass79_0_TypeDefinitionIndex = 47736;
 
 	class UIOverlordFeastServePageController___c__DisplayClass79_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIOverlordFeastServePageController* __4__this; // 0x10
-		::System::Int32 guestId; // 0x18
-		::System::Int32 specificDishID; // 0x1C
+		::System::Int32 specificDishID; // 0x18
+		::System::Int32 guestId; // 0x1C
 
 		::System::Void _ctor()
 		{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int RemoteConfigSettingsHelper_Tag_TypeDefinitionIndex = 80453;
+	inline static constexpr unsigned int RemoteConfigSettingsHelper_Tag_TypeDefinitionIndex = 82495;
 
 	enum class RemoteConfigSettingsHelper_Tag : ::System::Int32
 	{

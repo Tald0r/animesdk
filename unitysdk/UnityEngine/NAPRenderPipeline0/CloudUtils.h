@@ -6,28 +6,28 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Mesh; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_CLOUDUTILS_CREATECLOUDQUADMESH_OFFSET UNITYSDK_OFFSET(0x19F47DE0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_CLOUDUTILS_ENSURECLOUDUTILASSETS_OFFSET UNITYSDK_OFFSET(0x19F47C30)
-#define UNITYENGINE_NAPRENDERPIPELINE0_CLOUDUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x19F48160)
+#define UNITYENGINE_NAPRENDERPIPELINE0_CLOUDUTILS_CREATECLOUDQUADMESH_OFFSET UNITYSDK_OFFSET(0x1A524AB0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_CLOUDUTILS_ENSURECLOUDUTILASSETS_OFFSET UNITYSDK_OFFSET(0x1A524900)
+#define UNITYENGINE_NAPRENDERPIPELINE0_CLOUDUTILS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A524E30)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int CloudUtils_TypeDefinitionIndex = 5974;
+	inline static constexpr unsigned int CloudUtils_TypeDefinitionIndex = 5977;
 
 	class CloudUtils : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::List_1<::System::Int32>** StaticGet_instanceToVertexId()
 		{
-			return (::System::Collections::Generic::List_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CloudUtils_TypeDefinitionIndex)->GetStaticField(0x5440);
+			return (::System::Collections::Generic::List_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CloudUtils_TypeDefinitionIndex)->GetStaticField(0x5460);
 		}
 		static ::System::Collections::Generic::List_1<::Il2CppArray<::UnityEngine::Matrix4x4>*>** StaticGet_s_QuadToWorld()
 		{
-			return (::System::Collections::Generic::List_1<::Il2CppArray<::UnityEngine::Matrix4x4>*>**)Il2CppClass::FromTypeDefinitionIndex(CloudUtils_TypeDefinitionIndex)->GetStaticField(0x5448);
+			return (::System::Collections::Generic::List_1<::Il2CppArray<::UnityEngine::Matrix4x4>*>**)Il2CppClass::FromTypeDefinitionIndex(CloudUtils_TypeDefinitionIndex)->GetStaticField(0x5468);
 		}
 		static ::UnityEngine::Mesh** StaticGet_s_CloudQuadMesh()
 		{
-			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(CloudUtils_TypeDefinitionIndex)->GetStaticField(0x5450);
+			return (::UnityEngine::Mesh**)Il2CppClass::FromTypeDefinitionIndex(CloudUtils_TypeDefinitionIndex)->GetStaticField(0x5470);
 		}
 		static ::System::Int32* StaticGet_s_CloudQuadMeshID()
 		{

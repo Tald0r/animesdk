@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IsAssignable_2_TypeDefinitionIndex = 8911;
+	inline static constexpr unsigned int IsAssignable_2_TypeDefinitionIndex = 8828;
 
 	template <typename T, typename TFrom>
 	class IsAssignable_2 : public ::System::Object

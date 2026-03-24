@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::UI::OS
 {
-	inline static constexpr unsigned int GooglePCOAuthState_TypeDefinitionIndex = 18432;
+	inline static constexpr unsigned int GooglePCOAuthState_TypeDefinitionIndex = 18966;
 
 	enum class GooglePCOAuthState : ::System::Int32
 	{

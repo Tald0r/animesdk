@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SQLITE_AUTOINCREMENTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A063440)
+#define SQLITE_AUTOINCREMENTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A62F260)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int AutoIncrementAttribute_TypeDefinitionIndex = 35226;
+	inline static constexpr unsigned int AutoIncrementAttribute_TypeDefinitionIndex = 36228;
 
 	class AutoIncrementAttribute : public ::System::Attribute
 	{

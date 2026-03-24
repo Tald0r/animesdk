@@ -2,24 +2,24 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_240;
+class Class_2_208CC9941471731A_53;
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS62_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8936580)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS62_0__REFRESHGOODS_B__0_OFFSET UNITYSDK_OFFSET(0x8936590)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS62_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9800370)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS62_0__REFRESHGOODS_B__0_OFFSET UNITYSDK_OFFSET(0x9800380)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowShopWidgetChildWindowController___c__DisplayClass62_0_TypeDefinitionIndex = 75954;
+	inline static constexpr unsigned int UIHollowShopWidgetChildWindowController___c__DisplayClass62_0_TypeDefinitionIndex = 48601;
 
 	class UIHollowShopWidgetChildWindowController___c__DisplayClass62_0 : public ::System::Object
 	{
 	public:
-		::UnityEngine::Transform* cardEffect; // 0x10
-		::Class_2_208CC9941471731A_240* template_; // 0x18
-		::UnityEngine::GameObject* specialGo; // 0x20
-		::UnityEngine::Transform* itemEffect; // 0x28
+		::Class_2_208CC9941471731A_53* template_; // 0x10
+		::UnityEngine::GameObject* specialGo; // 0x18
+		::UnityEngine::Transform* itemEffect; // 0x20
+		::UnityEngine::Transform* cardEffect; // 0x28
 
 		::System::Void _ctor()
 		{

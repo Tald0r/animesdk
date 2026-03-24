@@ -6,7 +6,7 @@ namespace UnityEngine::Timeline { class IPropertyCollector; }
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int IPropertyPreview_TypeDefinitionIndex = 29401;
+	inline static constexpr unsigned int IPropertyPreview_TypeDefinitionIndex = 30354;
 
 	class IPropertyPreview
 	{

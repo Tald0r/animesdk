@@ -5,12 +5,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONEVENT_GET_EVENTNAME_OFFSET UNITYSDK_OFFSET(0x6AD6050)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x6AD60B0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONEVENT_GET_EVENTNAME_OFFSET UNITYSDK_OFFSET(0xB5C5330)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDTRANSLATIONEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xB5C5390)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardTranslationEvent_TypeDefinitionIndex = 46822;
+	inline static constexpr unsigned int ChessboardTranslationEvent_TypeDefinitionIndex = 78420;
 
 	class ChessboardTranslationEvent : public ::MoleMole::FlowCanvas::ChessboardEventNode_1<::MoleMole::Vector2Int>
 	{

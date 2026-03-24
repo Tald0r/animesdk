@@ -4,13 +4,13 @@
 #include "unitysdk/MoleMole/GraphicEnumSettingEntryBase.h"
 #include "unitysdk/MoleMole/GraphicSettingProfileType.h"
 
-#define MOLEMOLE_ANTIALIASSETTINGENTRY_GET_PROFILETYPE_OFFSET UNITYSDK_OFFSET(0x8E93820)
-#define MOLEMOLE_ANTIALIASSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x8E93810)
-#define MOLEMOLE_ANTIALIASSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x8E93830)
+#define MOLEMOLE_ANTIALIASSETTINGENTRY_GET_PROFILETYPE_OFFSET UNITYSDK_OFFSET(0x78E1BB0)
+#define MOLEMOLE_ANTIALIASSETTINGENTRY_GET_SETTINGCONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x78E1BA0)
+#define MOLEMOLE_ANTIALIASSETTINGENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x78E1BC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AntiAliasSettingEntry_TypeDefinitionIndex = 67316;
+	inline static constexpr unsigned int AntiAliasSettingEntry_TypeDefinitionIndex = 52485;
 
 	class AntiAliasSettingEntry : public ::MoleMole::GraphicEnumSettingEntryBase
 	{

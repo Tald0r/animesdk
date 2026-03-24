@@ -3,11 +3,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Color32.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCHARACTERGILAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x8DCBB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPCHARACTERGILAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x8EF2B0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapCharacterGILayer_TypeDefinitionIndex = 28586;
+	inline static constexpr unsigned int NapCharacterGILayer_TypeDefinitionIndex = 29529;
 
 	struct alignas(4) NapCharacterGILayer
 	{

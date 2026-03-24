@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_TABLECOLUMNWIDTHATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB0A5B0)
+#define SIRENIX_ODININSPECTOR_TABLECOLUMNWIDTHATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1166D0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int TableColumnWidthAttribute_TypeDefinitionIndex = 7230;
+	inline static constexpr unsigned int TableColumnWidthAttribute_TypeDefinitionIndex = 7235;
 
 	class TableColumnWidthAttribute : public ::System::Attribute
 	{

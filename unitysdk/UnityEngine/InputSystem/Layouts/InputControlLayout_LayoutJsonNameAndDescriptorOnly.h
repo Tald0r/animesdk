@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace UnityEngine::InputSystem::Layouts
 {
-	inline static constexpr unsigned int InputControlLayout_LayoutJsonNameAndDescriptorOnly_TypeDefinitionIndex = 27869;
+	inline static constexpr unsigned int InputControlLayout_LayoutJsonNameAndDescriptorOnly_TypeDefinitionIndex = 28809;
 
 	struct alignas(8) InputControlLayout_LayoutJsonNameAndDescriptorOnly
 	{

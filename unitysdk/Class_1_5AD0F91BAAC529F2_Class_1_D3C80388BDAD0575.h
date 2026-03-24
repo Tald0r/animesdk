@@ -5,16 +5,16 @@
 
 namespace Cysharp::Threading::Tasks { template <typename T> class UniTaskCompletionSource_1; }
 
-#define CLASS_1_5AD0F91BAAC529F2_CLASS_1_D3C80388BDAD0575_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0x658DC80)
-#define CLASS_1_5AD0F91BAAC529F2_CLASS_1_D3C80388BDAD0575__CTOR_OFFSET UNITYSDK_OFFSET(0x658DC70)
+#define CLASS_1_5AD0F91BAAC529F2_CLASS_1_D3C80388BDAD0575_METHOD_1_F8C7231308CD2C82_OFFSET UNITYSDK_OFFSET(0xABF1430)
+#define CLASS_1_5AD0F91BAAC529F2_CLASS_1_D3C80388BDAD0575__CTOR_OFFSET UNITYSDK_OFFSET(0xABF1420)
 
-inline static constexpr unsigned int Class_1_5AD0F91BAAC529F2_Class_1_D3C80388BDAD0575_TypeDefinitionIndex = 68660;
+inline static constexpr unsigned int Class_1_5AD0F91BAAC529F2_Class_1_D3C80388BDAD0575_TypeDefinitionIndex = 40695;
 
 class Class_1_5AD0F91BAAC529F2_Class_1_D3C80388BDAD0575 : public ::System::Object
 {
 public:
-	::Cysharp::Threading::Tasks::UniTaskCompletionSource_1<::System::Int32>* Field_1_0; // 0x10
-	::System::Threading::CancellationToken Field_1_1; // 0x18
+	::System::Threading::CancellationToken Field_1_1; // 0x10
+	::Cysharp::Threading::Tasks::UniTaskCompletionSource_1<::System::Int32>* Field_1_0; // 0x18
 
 	::System::Void _ctor()
 	{

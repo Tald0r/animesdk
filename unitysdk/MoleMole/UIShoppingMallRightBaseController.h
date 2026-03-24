@@ -6,13 +6,13 @@ namespace MoleMole { class MonoGamepadModule; }
 namespace MoleMole { class ShoppingMallBaseContextBase; }
 namespace MoleMole { class UIControllerContextBase; }
 
-#define MOLEMOLE_UISHOPPINGMALLRIGHTBASECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC84D4D0)
-#define MOLEMOLE_UISHOPPINGMALLRIGHTBASECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xC84D6E0)
-#define MOLEMOLE_UISHOPPINGMALLRIGHTBASECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xC84D710)
+#define MOLEMOLE_UISHOPPINGMALLRIGHTBASECONTROLLER_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD3B4F30)
+#define MOLEMOLE_UISHOPPINGMALLRIGHTBASECONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xD3B5140)
+#define MOLEMOLE_UISHOPPINGMALLRIGHTBASECONTROLLER___BASE_ONSHOW_OFFSET UNITYSDK_OFFSET(0xD3B5170)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallRightBaseController_TypeDefinitionIndex = 53153;
+	inline static constexpr unsigned int UIShoppingMallRightBaseController_TypeDefinitionIndex = 51707;
 
 	class UIShoppingMallRightBaseController : public ::MoleMole::UIWidgetController
 	{

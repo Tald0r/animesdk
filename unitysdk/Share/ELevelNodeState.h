@@ -3,13 +3,13 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int ELevelNodeState_TypeDefinitionIndex = 11034;
+	inline static constexpr unsigned int ELevelNodeState_TypeDefinitionIndex = 16029;
 
 	enum class ELevelNodeState : ::System::Int16
 	{
+		Finish = 1,
 		EnumCount = 6,
 		RunningAndNotUnlockByServer = 4,
-		Finish = 1,
 		WaitingServer = 5,
 		Running = 2,
 		GiveUp = 3,

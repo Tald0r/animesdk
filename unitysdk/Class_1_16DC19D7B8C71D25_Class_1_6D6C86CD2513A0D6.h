@@ -7,11 +7,11 @@
 class Class_1_16DC19D7B8C71D25;
 namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
 
-#define CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_8BAD958FE908067B_OFFSET UNITYSDK_OFFSET(0x94E55E0)
-#define CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_A9B2EF3C627CFC34_OFFSET UNITYSDK_OFFSET(0x94E5480)
-#define CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6__CTOR_OFFSET UNITYSDK_OFFSET(0x94E5470)
+#define CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_8BAD958FE908067B_OFFSET UNITYSDK_OFFSET(0x8B1A950)
+#define CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_A9B2EF3C627CFC34_OFFSET UNITYSDK_OFFSET(0x8B1A9F0)
+#define CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6__CTOR_OFFSET UNITYSDK_OFFSET(0x8B1A940)
 
-inline static constexpr unsigned int Class_1_16DC19D7B8C71D25_Class_1_6D6C86CD2513A0D6_TypeDefinitionIndex = 67285;
+inline static constexpr unsigned int Class_1_16DC19D7B8C71D25_Class_1_6D6C86CD2513A0D6_TypeDefinitionIndex = 72341;
 
 class Class_1_16DC19D7B8C71D25_Class_1_6D6C86CD2513A0D6 : public ::System::Object
 {
@@ -24,13 +24,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6__CTOR_OFFSET))(this);
 	}
 
-	::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>* Method_1_A9B2EF3C627CFC34()
-	{
-		return ((::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_A9B2EF3C627CFC34_OFFSET))(this);
-	}
-
 	::System::Void Method_1_8BAD958FE908067B(::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>* a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*))((::PBYTE)hIl2Cpp + CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_8BAD958FE908067B_OFFSET))(this, a1);
+	}
+
+	::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>* Method_1_A9B2EF3C627CFC34()
+	{
+		return ((::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_16DC19D7B8C71D25_CLASS_1_6D6C86CD2513A0D6_METHOD_1_A9B2EF3C627CFC34_OFFSET))(this);
 	}
 };

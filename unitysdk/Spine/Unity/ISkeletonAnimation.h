@@ -8,7 +8,7 @@ namespace Spine::Unity { class UpdateBonesDelegate; }
 
 namespace Spine::Unity
 {
-	inline static constexpr unsigned int ISkeletonAnimation_TypeDefinitionIndex = 36305;
+	inline static constexpr unsigned int ISkeletonAnimation_TypeDefinitionIndex = 37325;
 
 	class ISkeletonAnimation
 	{

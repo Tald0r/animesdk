@@ -10,27 +10,27 @@ namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_11D16508921A658D_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x6C109C0)
-#define CLASS_2_11D16508921A658D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6C10B70)
-#define CLASS_2_11D16508921A658D__CTOR_OFFSET UNITYSDK_OFFSET(0x6C10B60)
+#define CLASS_2_11D16508921A658D_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x92A0F10)
+#define CLASS_2_11D16508921A658D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x92A10C0)
+#define CLASS_2_11D16508921A658D__CTOR_OFFSET UNITYSDK_OFFSET(0x92A10B0)
 
-inline static constexpr unsigned int Class_2_11D16508921A658D_TypeDefinitionIndex = 46867;
+inline static constexpr unsigned int Class_2_11D16508921A658D_TypeDefinitionIndex = 51583;
 
 class Class_2_11D16508921A658D : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_4; // 0x18
-	::UnityEngine::Transform* Field_2_8; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_10; // 0x28
-	::UnityEngine::Transform* Field_2_6; // 0x30
-	::MonoUITableScrollV2* Field_2_7; // 0x38
-	::UnityEngine::Transform* Field_2_2; // 0x40
-	::UnityEngine::Transform* Field_2_9; // 0x48
-	::UnityEngine::Transform* Field_2_5; // 0x50
-	::UnityEngine::UI::Text* Field_2_3; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_11; // 0x60
-	::UnityEngine::UI::Text* Field_2_1; // 0x68
-	::UnityEngine::RectTransform* Field_2_0; // 0x70
+	::UnityEngine::UI::Text* Field_2_1; // 0x18
+	::UnityEngine::UI::Text* Field_2_3; // 0x20
+	::UnityEngine::Transform* Field_2_6; // 0x28
+	::UnityEngine::Transform* Field_2_9; // 0x30
+	::UnityEngine::Transform* Field_2_2; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_10; // 0x40
+	::MonoUITableScrollV2* Field_2_7; // 0x48
+	::UnityEngine::Transform* Field_2_8; // 0x50
+	::UnityEngine::Transform* Field_2_5; // 0x58
+	::UnityEngine::UI::Text* Field_2_4; // 0x60
+	::UnityEngine::RectTransform* Field_2_0; // 0x68
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_11; // 0x70
 
 	::System::Void _ctor()
 	{

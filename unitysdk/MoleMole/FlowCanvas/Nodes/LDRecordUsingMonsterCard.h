@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDRECORDUSINGMONSTERCARD_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC806E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDRECORDUSINGMONSTERCARD__CTOR_OFFSET UNITYSDK_OFFSET(0xEC80A90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDRECORDUSINGMONSTERCARD_INVOKE_OFFSET UNITYSDK_OFFSET(0x757F030)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDRECORDUSINGMONSTERCARD__CTOR_OFFSET UNITYSDK_OFFSET(0x757F3E0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDRecordUsingMonsterCard_TypeDefinitionIndex = 77346;
+	inline static constexpr unsigned int LDRecordUsingMonsterCard_TypeDefinitionIndex = 80259;
 
 	class LDRecordUsingMonsterCard : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Int32>
 	{

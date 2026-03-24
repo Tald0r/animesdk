@@ -4,21 +4,21 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_ONVALUECHANGEDATTRIBUTE_GET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1AB09290)
-#define SIRENIX_ODININSPECTOR_ONVALUECHANGEDATTRIBUTE_SET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1AB092A0)
-#define SIRENIX_ODININSPECTOR_ONVALUECHANGEDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB092B0)
+#define SIRENIX_ODININSPECTOR_ONVALUECHANGEDATTRIBUTE_GET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1B1153C0)
+#define SIRENIX_ODININSPECTOR_ONVALUECHANGEDATTRIBUTE_SET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1B1153D0)
+#define SIRENIX_ODININSPECTOR_ONVALUECHANGEDATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1153E0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int OnValueChangedAttribute_TypeDefinitionIndex = 7201;
+	inline static constexpr unsigned int OnValueChangedAttribute_TypeDefinitionIndex = 7206;
 
 	class OnValueChangedAttribute : public ::System::Attribute
 	{
 	public:
 		::System::String* Action; // 0x10
 		::System::Boolean InvokeOnUndoRedo; // 0x18
-		::System::Boolean IncludeChildren; // 0x19
-		::System::Boolean InvokeOnInitialize; // 0x1A
+		::System::Boolean InvokeOnInitialize; // 0x19
+		::System::Boolean IncludeChildren; // 0x1A
 
 		::System::Void _ctor(::System::String* action, ::System::Boolean includeChildren)
 		{

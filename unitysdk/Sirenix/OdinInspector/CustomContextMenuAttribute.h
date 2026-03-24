@@ -4,19 +4,19 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUATTRIBUTE_GET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1AB08140)
-#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUATTRIBUTE_SET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1AB08150)
-#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB08160)
+#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUATTRIBUTE_GET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1B1141C0)
+#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUATTRIBUTE_SET_METHODNAME_OFFSET UNITYSDK_OFFSET(0x1B1141D0)
+#define SIRENIX_ODININSPECTOR_CUSTOMCONTEXTMENUATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1141E0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int CustomContextMenuAttribute_TypeDefinitionIndex = 7133;
+	inline static constexpr unsigned int CustomContextMenuAttribute_TypeDefinitionIndex = 7137;
 
 	class CustomContextMenuAttribute : public ::System::Attribute
 	{
 	public:
-		::System::String* MenuItem; // 0x10
-		::System::String* Action; // 0x18
+		::System::String* Action; // 0x10
+		::System::String* MenuItem; // 0x18
 
 		::System::Void _ctor(::System::String* menuItem, ::System::String* action)
 		{

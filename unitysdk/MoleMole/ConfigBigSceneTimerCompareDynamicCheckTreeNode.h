@@ -7,19 +7,19 @@ class Class_1_663AFC2250EC21C9;
 namespace MoleMole::Config { class DynamicFloat; }
 namespace MoleMole::Config { class DynamicString; }
 
-#define MOLEMOLE_CONFIGBIGSCENETIMERCOMPAREDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0x6DFB720)
-#define MOLEMOLE_CONFIGBIGSCENETIMERCOMPAREDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x6DFB870)
+#define MOLEMOLE_CONFIGBIGSCENETIMERCOMPAREDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0xC248CE0)
+#define MOLEMOLE_CONFIGBIGSCENETIMERCOMPAREDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC248E30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigBigSceneTimerCompareDynamicCheckTreeNode_TypeDefinitionIndex = 58833;
+	inline static constexpr unsigned int ConfigBigSceneTimerCompareDynamicCheckTreeNode_TypeDefinitionIndex = 67756;
 
 	class ConfigBigSceneTimerCompareDynamicCheckTreeNode : public ::MoleMole::ConfigBaseDynamicCheckTreeNode
 	{
 	public:
-		::MoleMole::Config::DynamicFloat* CompareArg; // 0x10
-		::MoleMole::Config::DynamicString* CompareType; // 0x18
-		::MoleMole::Config::DynamicString* TimerName; // 0x20
+		::MoleMole::Config::DynamicString* CompareType; // 0x10
+		::MoleMole::Config::DynamicString* TimerName; // 0x18
+		::MoleMole::Config::DynamicFloat* CompareArg; // 0x20
 
 		::System::Void _ctor()
 		{

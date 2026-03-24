@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_MONOLOGINANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x6B0D090)
+#define MOLEMOLE_MONOLOGINANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0xD436600)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoLoginAnimation_TypeDefinitionIndex = 59749;
+	inline static constexpr unsigned int MonoLoginAnimation_TypeDefinitionIndex = 46771;
 
 	class MonoLoginAnimation : public ::UnityEngine::MonoBehaviour
 	{

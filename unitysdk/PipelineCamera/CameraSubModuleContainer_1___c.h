@@ -8,7 +8,7 @@ namespace System { template <typename T> class Predicate_1; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int CameraSubModuleContainer_1___c_TypeDefinitionIndex = 34382;
+	inline static constexpr unsigned int CameraSubModuleContainer_1___c_TypeDefinitionIndex = 35384;
 
 	template <typename T>
 	class CameraSubModuleContainer_1___c : public ::System::Object

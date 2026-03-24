@@ -1,12 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MoleMole/ESystemSettingType.h"
-#include "unitysdk/MoleMole/InLevelPauseLevelTab.h"
 
-namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
-namespace System::Collections::Generic { template <typename T> class List_1; }
+class Class_0_16E4307DCC419505_158;
+class Class_0_16E4307DCC419505_162;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_600_TypeDefinitionIndex = 61410;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_600_TypeDefinitionIndex = 63933;
 
 class Class_0_16E4307DCC419505_600
 {

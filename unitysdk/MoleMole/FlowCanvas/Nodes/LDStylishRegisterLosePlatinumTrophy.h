@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTERLOSEPLATINUMTROPHY_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC83520)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTERLOSEPLATINUMTROPHY__CTOR_OFFSET UNITYSDK_OFFSET(0xEC83600)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTERLOSEPLATINUMTROPHY_INVOKE_OFFSET UNITYSDK_OFFSET(0x7581E60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSTYLISHREGISTERLOSEPLATINUMTROPHY__CTOR_OFFSET UNITYSDK_OFFSET(0x7581F40)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDStylishRegisterLosePlatinumTrophy_TypeDefinitionIndex = 59443;
+	inline static constexpr unsigned int LDStylishRegisterLosePlatinumTrophy_TypeDefinitionIndex = 50193;
 
 	class LDStylishRegisterLosePlatinumTrophy : public ::FlowCanvas::Nodes::CallableActionNode
 	{

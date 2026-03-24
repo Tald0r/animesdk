@@ -1,22 +1,22 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_20.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_22.h"
 
 namespace MoleMole::HollowChessboard { class HollowEntity; }
 namespace System { class String; }
 
-#define CLASS_2_5DF25B7A40A1031E_METHOD_2_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0x64CD300)
-#define CLASS_2_5DF25B7A40A1031E_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x64CD2A0)
-#define CLASS_2_5DF25B7A40A1031E_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x64CD240)
-#define CLASS_2_5DF25B7A40A1031E__CTOR_OFFSET UNITYSDK_OFFSET(0x64CD360)
+#define CLASS_2_5DF25B7A40A1031E_METHOD_2_391A84BCD9F51317_OFFSET UNITYSDK_OFFSET(0xA7200E0)
+#define CLASS_2_5DF25B7A40A1031E_METHOD_2_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xA720080)
+#define CLASS_2_5DF25B7A40A1031E_METHOD_2_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xA720020)
+#define CLASS_2_5DF25B7A40A1031E__CTOR_OFFSET UNITYSDK_OFFSET(0xA720140)
 
-inline static constexpr unsigned int Class_2_5DF25B7A40A1031E_TypeDefinitionIndex = 73908;
+inline static constexpr unsigned int Class_2_5DF25B7A40A1031E_TypeDefinitionIndex = 73627;
 
-class Class_2_5DF25B7A40A1031E : public ::Class_1_43BD383C98B4C0C5_20
+class Class_2_5DF25B7A40A1031E : public ::Class_1_43BD383C98B4C0C5_22
 {
 public:
-	::MoleMole::HollowChessboard::HollowEntity* Field_2_0; // 0x10
-	::System::String* Field_2_1; // 0x18
+	::System::String* Field_2_1; // 0x10
+	::MoleMole::HollowChessboard::HollowEntity* Field_2_0; // 0x18
 
 	::System::Void _ctor()
 	{

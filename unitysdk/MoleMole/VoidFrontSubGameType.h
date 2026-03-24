@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int VoidFrontSubGameType_TypeDefinitionIndex = 55865;
+	inline static constexpr unsigned int VoidFrontSubGameType_TypeDefinitionIndex = 77099;
 
 	enum class VoidFrontSubGameType : ::System::Int32
 	{
-		Main = 1,
 		None = 0,
-		SmallLevel = 2,
 		BuffLevel = 3,
+		SmallLevel = 2,
+		Main = 1,
 	};
 }

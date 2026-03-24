@@ -5,11 +5,11 @@
 
 namespace MoleMole { class ExpeditionAreaNavConfig; }
 
-#define MOLEMOLE_AREAPOSITIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x8E938D0)
+#define MOLEMOLE_AREAPOSITIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x78E1C60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AreaPositionConfig_TypeDefinitionIndex = 52622;
+	inline static constexpr unsigned int AreaPositionConfig_TypeDefinitionIndex = 46423;
 
 	class AreaPositionConfig : public ::System::Object
 	{

@@ -3,12 +3,12 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigShaderCustomBase_ShaderCustomState_TypeDefinitionIndex = 54812;
+	inline static constexpr unsigned int ConfigShaderCustomBase_ShaderCustomState_TypeDefinitionIndex = 65609;
 
 	enum class ConfigShaderCustomBase_ShaderCustomState : ::System::Int32
 	{
-		Enter = 0,
-		Exit = 2,
 		Keep = 1,
+		Exit = 2,
+		Enter = 0,
 	};
 }

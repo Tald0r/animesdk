@@ -9,10 +9,10 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Text::RegularExpressions { class RegexBoyerMoore; }
 namespace System::Text::RegularExpressions { class RegexPrefix; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE_MAKEEXCEPTION_OFFSET UNITYSDK_OFFSET(0x18B89420)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE_OPCODEBACKTRACKS_OFFSET UNITYSDK_OFFSET(0x18B89340)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE_OPCODESIZE_OFFSET UNITYSDK_OFFSET(0x18B89360)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE__CTOR_OFFSET UNITYSDK_OFFSET(0x18B89280)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE_MAKEEXCEPTION_OFFSET UNITYSDK_OFFSET(0x1907DD20)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE_OPCODEBACKTRACKS_OFFSET UNITYSDK_OFFSET(0x1907DC40)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE_OPCODESIZE_OFFSET UNITYSDK_OFFSET(0x1907DC60)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXCODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1907DB80)
 
 namespace System::Text::RegularExpressions
 {
@@ -70,10 +70,10 @@ namespace System::Text::RegularExpressions
 		// static const ::System::Int32 Back2 = 0x100; // 0x0
 		// static const ::System::Int32 Ci = 0x200; // 0x0
 		::System::Text::RegularExpressions::RegexPrefix* _fcPrefix; // 0x10
-		::Il2CppArray<::System::Int32>* _codes; // 0x18
+		::Il2CppArray<::System::String*>* _strings; // 0x18
 		::System::Text::RegularExpressions::RegexBoyerMoore* _bmPrefix; // 0x20
-		::System::Collections::Hashtable* _caps; // 0x28
-		::Il2CppArray<::System::String*>* _strings; // 0x30
+		::Il2CppArray<::System::Int32>* _codes; // 0x28
+		::System::Collections::Hashtable* _caps; // 0x30
 		::System::Int32 _anchors; // 0x38
 		::System::Boolean _rightToLeft; // 0x3C
 		::System::Int32 _trackcount; // 0x40

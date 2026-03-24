@@ -4,7 +4,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int NapAnimator_BatchSampleCurveJobRequest_TypeDefinitionIndex = 6566;
+	inline static constexpr unsigned int NapAnimator_BatchSampleCurveJobRequest_TypeDefinitionIndex = 6570;
 
 	struct alignas(8) NapAnimator_BatchSampleCurveJobRequest
 	{

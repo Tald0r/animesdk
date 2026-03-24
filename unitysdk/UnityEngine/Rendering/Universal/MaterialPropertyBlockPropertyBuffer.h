@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/MaterialPropertyBlockProperty_1.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_MATERIALPROPERTYBLOCKPROPERTYBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x1933DED0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_MATERIALPROPERTYBLOCKPROPERTYBUFFER__CTOR_OFFSET UNITYSDK_OFFSET(0x197F1490)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int MaterialPropertyBlockPropertyBuffer_TypeDefinitionIndex = 28399;
+	inline static constexpr unsigned int MaterialPropertyBlockPropertyBuffer_TypeDefinitionIndex = 29342;
 
 	class MaterialPropertyBlockPropertyBuffer : public ::UnityEngine::Rendering::Universal::MaterialPropertyBlockProperty_1<::System::Boolean>
 	{

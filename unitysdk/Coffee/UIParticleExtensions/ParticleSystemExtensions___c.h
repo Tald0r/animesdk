@@ -5,24 +5,24 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class ParticleSystem; }
 
-#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A1CE170)
-#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1CE1B0)
-#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__EXEC_B__9_0_OFFSET UNITYSDK_OFFSET(0x1A1CE1C0)
+#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A74B680)
+#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A74B6C0)
+#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__EXEC_B__9_0_OFFSET UNITYSDK_OFFSET(0x1A74B6D0)
 
 namespace Coffee::UIParticleExtensions
 {
-	inline static constexpr unsigned int ParticleSystemExtensions___c_TypeDefinitionIndex = 31182;
+	inline static constexpr unsigned int ParticleSystemExtensions___c_TypeDefinitionIndex = 32134;
 
 	class ParticleSystemExtensions___c : public ::System::Object
 	{
 	public:
-		static ::Coffee::UIParticleExtensions::ParticleSystemExtensions___c** StaticGet___9()
-		{
-			return (::Coffee::UIParticleExtensions::ParticleSystemExtensions___c**)Il2CppClass::FromTypeDefinitionIndex(ParticleSystemExtensions___c_TypeDefinitionIndex)->GetStaticField(0x23A00);
-		}
 		static ::System::Predicate_1<::UnityEngine::ParticleSystem*>** StaticGet___9__9_0()
 		{
-			return (::System::Predicate_1<::UnityEngine::ParticleSystem*>**)Il2CppClass::FromTypeDefinitionIndex(ParticleSystemExtensions___c_TypeDefinitionIndex)->GetStaticField(0x23A08);
+			return (::System::Predicate_1<::UnityEngine::ParticleSystem*>**)Il2CppClass::FromTypeDefinitionIndex(ParticleSystemExtensions___c_TypeDefinitionIndex)->GetStaticField(0x25320);
+		}
+		static ::Coffee::UIParticleExtensions::ParticleSystemExtensions___c** StaticGet___9()
+		{
+			return (::Coffee::UIParticleExtensions::ParticleSystemExtensions___c**)Il2CppClass::FromTypeDefinitionIndex(ParticleSystemExtensions___c_TypeDefinitionIndex)->GetStaticField(0x25328);
 		}
 
 		static ::System::Void _cctor()

@@ -8,7 +8,7 @@ namespace System { template <typename T1, typename T2, typename T3, typename T4>
 
 namespace PipelineCamera::SubModule
 {
-	inline static constexpr unsigned int CameraSequenceCollectionPlayerConfig_1_TypeDefinitionIndex = 34873;
+	inline static constexpr unsigned int CameraSequenceCollectionPlayerConfig_1_TypeDefinitionIndex = 35875;
 
 	template <typename T>
 	struct CameraSequenceCollectionPlayerConfig_1

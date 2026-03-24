@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace MoleMole { class UIControllerContextBase; }
+inline static constexpr unsigned int Class_0_16E4307DCC419505_444_TypeDefinitionIndex = 50036;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_444_TypeDefinitionIndex = 48006;
-
+template <typename TKey, typename TItem>
 class Class_0_16E4307DCC419505_444
 {
 public:

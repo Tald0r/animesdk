@@ -6,10 +6,10 @@ namespace NodeCanvas::Framework { class Graph; }
 namespace NodeCanvas::Framework { class IBlackboard; }
 namespace NodeCanvas::Framework { class Node; }
 
-#define CLASS_1_6DFFC6C08791855D_METHOD_1_1D321948F5DCF902_OFFSET UNITYSDK_OFFSET(0x6C3C310)
-#define CLASS_1_6DFFC6C08791855D_METHOD_1_9371E718992F00A0_OFFSET UNITYSDK_OFFSET(0x6C3C420)
+#define CLASS_1_6DFFC6C08791855D_METHOD_1_1D321948F5DCF902_OFFSET UNITYSDK_OFFSET(0xA2925C0)
+#define CLASS_1_6DFFC6C08791855D_METHOD_1_9371E718992F00A0_OFFSET UNITYSDK_OFFSET(0xA2926D0)
 
-inline static constexpr unsigned int Class_1_6DFFC6C08791855D_TypeDefinitionIndex = 44253;
+inline static constexpr unsigned int Class_1_6DFFC6C08791855D_TypeDefinitionIndex = 40472;
 
 class Class_1_6DFFC6C08791855D : public ::System::Object
 {

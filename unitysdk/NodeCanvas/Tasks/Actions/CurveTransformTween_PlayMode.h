@@ -3,7 +3,7 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int CurveTransformTween_PlayMode_TypeDefinitionIndex = 26006;
+	inline static constexpr unsigned int CurveTransformTween_PlayMode_TypeDefinitionIndex = 27692;
 
 	enum class CurveTransformTween_PlayMode : ::System::Int32
 	{

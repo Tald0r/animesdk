@@ -4,12 +4,12 @@
 
 namespace MoleMole { class MonoGamepadScrollView; }
 
-#define MOLEMOLE_UIAUTOBATTLEPVECHALLENGEROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC269280)
-#define MOLEMOLE_UIAUTOBATTLEPVECHALLENGEROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__ONUIINIT_B__0_OFFSET UNITYSDK_OFFSET(0xC269290)
+#define MOLEMOLE_UIAUTOBATTLEPVECHALLENGEROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC29A8C0)
+#define MOLEMOLE_UIAUTOBATTLEPVECHALLENGEROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__ONUIINIT_B__0_OFFSET UNITYSDK_OFFSET(0xC29A8D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattlePVEChallengeRowWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 74133;
+	inline static constexpr unsigned int UIAutoBattlePVEChallengeRowWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 75901;
 
 	class UIAutoBattlePVEChallengeRowWidgetController___c__DisplayClass3_0 : public ::System::Object
 	{

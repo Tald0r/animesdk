@@ -6,7 +6,7 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int TransformTR_TypeDefinitionIndex = 62811;
+	inline static constexpr unsigned int TransformTR_TypeDefinitionIndex = 44992;
 
 	struct alignas(4) TransformTR
 	{

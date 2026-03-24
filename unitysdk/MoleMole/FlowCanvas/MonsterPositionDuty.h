@@ -3,7 +3,7 @@
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int MonsterPositionDuty_TypeDefinitionIndex = 71387;
+	inline static constexpr unsigned int MonsterPositionDuty_TypeDefinitionIndex = 73571;
 
 	enum class MonsterPositionDuty : ::System::Int32
 	{

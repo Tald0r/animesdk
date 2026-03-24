@@ -5,20 +5,20 @@
 
 namespace MoleMole { class UIBabeltowerList02WidgetController; }
 
-#define MOLEMOLE_UIBABELTOWERLIST02WIDGETCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBED3EC0)
-#define MOLEMOLE_UIBABELTOWERLIST02WIDGETCONTROLLER___C__DISPLAYCLASS12_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBED3ED0)
-#define MOLEMOLE_UIBABELTOWERLIST02WIDGETCONTROLLER___C__DISPLAYCLASS12_0__REFRESHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xBED3F40)
+#define MOLEMOLE_UIBABELTOWERLIST02WIDGETCONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF365B0)
+#define MOLEMOLE_UIBABELTOWERLIST02WIDGETCONTROLLER___C__DISPLAYCLASS12_0__REFRESHVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xBF365C0)
+#define MOLEMOLE_UIBABELTOWERLIST02WIDGETCONTROLLER___C__DISPLAYCLASS12_0__REFRESHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xBF36630)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBabeltowerList02WidgetController___c__DisplayClass12_0_TypeDefinitionIndex = 69470;
+	inline static constexpr unsigned int UIBabeltowerList02WidgetController___c__DisplayClass12_0_TypeDefinitionIndex = 62113;
 
 	class UIBabeltowerList02WidgetController___c__DisplayClass12_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIBabeltowerList02WidgetController* __4__this; // 0x10
-		::Struct_2_BF6B29D18B16113B data; // 0x18
-		::System::Int32 index; // 0x30
+		::System::Int32 index; // 0x18
+		::Struct_2_BF6B29D18B16113B data; // 0x1C
 
 		::System::Void _ctor()
 		{

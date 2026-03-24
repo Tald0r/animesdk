@@ -5,17 +5,17 @@
 class Class_2_0633E1F7FECC3DFD;
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UISOCIALCIRCLEMAINTAGWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC84E700)
+#define MOLEMOLE_UISOCIALCIRCLEMAINTAGWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0xD3B6160)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISocialCircleMainTagWidgetController_Data_TypeDefinitionIndex = 78229;
+	inline static constexpr unsigned int UISocialCircleMainTagWidgetController_Data_TypeDefinitionIndex = 60832;
 
 	class UISocialCircleMainTagWidgetController_Data : public ::System::Object
 	{
 	public:
-		::System::Action_1<::MoleMole::UISocialCircleMainTagWidgetController_Data*>* OnClick; // 0x10
-		::Class_2_0633E1F7FECC3DFD* templateExt; // 0x18
+		::Class_2_0633E1F7FECC3DFD* templateExt; // 0x10
+		::System::Action_1<::MoleMole::UISocialCircleMainTagWidgetController_Data*>* OnClick; // 0x18
 
 		::System::Void _ctor()
 		{

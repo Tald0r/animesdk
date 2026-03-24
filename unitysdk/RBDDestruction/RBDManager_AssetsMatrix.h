@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define RBDDESTRUCTION_RBDMANAGER_ASSETSMATRIX__CTOR_OFFSET UNITYSDK_OFFSET(0x183B4A90)
+#define RBDDESTRUCTION_RBDMANAGER_ASSETSMATRIX__CTOR_OFFSET UNITYSDK_OFFSET(0x18910010)
 
 namespace RBDDestruction
 {
-	inline static constexpr unsigned int RBDManager_AssetsMatrix_TypeDefinitionIndex = 28252;
+	inline static constexpr unsigned int RBDManager_AssetsMatrix_TypeDefinitionIndex = 29193;
 
 	class RBDManager_AssetsMatrix : public ::System::Object
 	{

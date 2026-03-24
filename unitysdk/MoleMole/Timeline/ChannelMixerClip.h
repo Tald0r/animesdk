@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class ChannelMixerBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_CHANNELMIXERCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x67CD530)
-#define MOLEMOLE_TIMELINE_CHANNELMIXERCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x67CD520)
-#define MOLEMOLE_TIMELINE_CHANNELMIXERCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x67CD730)
+#define MOLEMOLE_TIMELINE_CHANNELMIXERCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xA481240)
+#define MOLEMOLE_TIMELINE_CHANNELMIXERCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xA481230)
+#define MOLEMOLE_TIMELINE_CHANNELMIXERCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xA481440)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int ChannelMixerClip_TypeDefinitionIndex = 39348;
+	inline static constexpr unsigned int ChannelMixerClip_TypeDefinitionIndex = 43497;
 
 	class ChannelMixerClip : public ::UnityEngine::Playables::PlayableAsset
 	{

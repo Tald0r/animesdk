@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class IDisposable; }
+inline static constexpr unsigned int Class_0_16E4307DCC419505_45_TypeDefinitionIndex = 25056;
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_45_TypeDefinitionIndex = 24254;
-
-template <typename TAlgorithm>
+template <typename TVertex, typename TEdge>
 class Class_0_16E4307DCC419505_45
 {
 public:

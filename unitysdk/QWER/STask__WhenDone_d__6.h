@@ -8,22 +8,22 @@
 namespace System { class Exception; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define QWER_STASK__WHENDONE_D__6_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1AA22D60)
-#define QWER_STASK__WHENDONE_D__6_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1AA22FE0)
-#define QWER_STASK__WHENDONE_D__6__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA22C70)
+#define QWER_STASK__WHENDONE_D__6_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x1B012A90)
+#define QWER_STASK__WHENDONE_D__6_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x1B012D10)
+#define QWER_STASK__WHENDONE_D__6__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0129A0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int STask__WhenDone_d__6_TypeDefinitionIndex = 82096;
+	inline static constexpr unsigned int STask__WhenDone_d__6_TypeDefinitionIndex = 84137;
 
 	class STask__WhenDone_d__6 : public ::System::Object
 	{
 	public:
-		::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Exception*> __u__1; // 0x10
-		::QWER::STask __4__this; // 0x18
-		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x28
-		::System::Exception* _o_5__1; // 0x40
-		::System::Exception* __s__2; // 0x48
+		::System::Exception* __s__2; // 0x10
+		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x18
+		::System::Exception* _o_5__1; // 0x30
+		::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Exception*> __u__1; // 0x38
+		::QWER::STask __4__this; // 0x40
 		::System::Int32 __1__state; // 0x50
 
 		::System::Void _ctor()

@@ -4,10 +4,10 @@
 
 namespace System { class String; }
 
-#define FRAMETIMINGUTILS_END_OFFSET UNITYSDK_OFFSET(0xAA7E5B0)
-#define FRAMETIMINGUTILS_START_OFFSET UNITYSDK_OFFSET(0xAA7E530)
+#define FRAMETIMINGUTILS_END_OFFSET UNITYSDK_OFFSET(0x979BE90)
+#define FRAMETIMINGUTILS_START_OFFSET UNITYSDK_OFFSET(0x979BE10)
 
-inline static constexpr unsigned int FrameTimingUtils_TypeDefinitionIndex = 55415;
+inline static constexpr unsigned int FrameTimingUtils_TypeDefinitionIndex = 75322;
 
 class FrameTimingUtils : public ::System::Object
 {

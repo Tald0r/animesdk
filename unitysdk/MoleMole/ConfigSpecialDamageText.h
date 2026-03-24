@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGSPECIALDAMAGETEXT_ISVALID_OFFSET UNITYSDK_OFFSET(0x367040)
+#define MOLEMOLE_CONFIGSPECIALDAMAGETEXT_ISVALID_OFFSET UNITYSDK_OFFSET(0x3A7860)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigSpecialDamageText_TypeDefinitionIndex = 37789;
+	inline static constexpr unsigned int ConfigSpecialDamageText_TypeDefinitionIndex = 72361;
 
 	struct alignas(8) ConfigSpecialDamageText
 	{

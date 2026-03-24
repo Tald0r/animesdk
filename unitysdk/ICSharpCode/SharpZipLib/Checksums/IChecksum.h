@@ -3,7 +3,7 @@
 
 namespace ICSharpCode::SharpZipLib::Checksums
 {
-	inline static constexpr unsigned int IChecksum_TypeDefinitionIndex = 6636;
+	inline static constexpr unsigned int IChecksum_TypeDefinitionIndex = 6640;
 
 	class IChecksum
 	{

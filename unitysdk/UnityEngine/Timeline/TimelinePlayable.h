@@ -17,54 +17,54 @@ namespace UnityEngine::Timeline { class RuntimeElement; }
 namespace UnityEngine::Timeline { class TrackAsset; }
 namespace UnityEngine::Timeline { template <typename T> class IntervalTree_1; }
 
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CACHETRACK_OFFSET UNITYSDK_OFFSET(0x1A746C00)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILETRACKLIST_OFFSET UNITYSDK_OFFSET(0x1A745360)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILE_OFFSET UNITYSDK_OFFSET(0x1A7450F0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATEPLAYABLEGRAPH_OFFSET UNITYSDK_OFFSET(0x1A746B90)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A745F20)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1A7457D0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1A744E20)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEANIMATIONPREVIEWUPDATECALLBACK_OFFSET UNITYSDK_OFFSET(0x1A746B10)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEWEIGHTSFORANIMATIONPLAYABLEOUTPUT_OFFSET UNITYSDK_OFFSET(0x1A746950)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x1A746CD0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_FORAOTCOMPILATIONONLY_OFFSET UNITYSDK_OFFSET(0x1A747450)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_GET_JUSTCOMPILECHANGEDASSET_OFFSET UNITYSDK_OFFSET(0x1A7457C0)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x1A746C80)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A747600)
-#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7474D0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CACHETRACK_OFFSET UNITYSDK_OFFSET(0x1ACEA910)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILETRACKLIST_OFFSET UNITYSDK_OFFSET(0x1ACE9070)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_COMPILE_OFFSET UNITYSDK_OFFSET(0x1ACE8E00)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATEPLAYABLEGRAPH_OFFSET UNITYSDK_OFFSET(0x1ACEA8A0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKOUTPUT_OFFSET UNITYSDK_OFFSET(0x1ACE9C30)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATETRACKPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1ACE94E0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_CREATE_OFFSET UNITYSDK_OFFSET(0x1ACE8B30)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEANIMATIONPREVIEWUPDATECALLBACK_OFFSET UNITYSDK_OFFSET(0x1ACEA820)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATEWEIGHTSFORANIMATIONPLAYABLEOUTPUT_OFFSET UNITYSDK_OFFSET(0x1ACEA660)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_EVALUATE_OFFSET UNITYSDK_OFFSET(0x1ACEA9E0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_FORAOTCOMPILATIONONLY_OFFSET UNITYSDK_OFFSET(0x1ACEB160)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_GET_JUSTCOMPILECHANGEDASSET_OFFSET UNITYSDK_OFFSET(0x1ACE94D0)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE_PREPAREFRAME_OFFSET UNITYSDK_OFFSET(0x1ACEA990)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ACEB310)
+#define UNITYENGINE_TIMELINE_TIMELINEPLAYABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACEB1E0)
 
 namespace UnityEngine::Timeline
 {
-	inline static constexpr unsigned int TimelinePlayable_TypeDefinitionIndex = 29393;
+	inline static constexpr unsigned int TimelinePlayable_TypeDefinitionIndex = 30346;
 
 	class TimelinePlayable : public ::UnityEngine::Playables::PlayableBehaviour
 	{
 	public:
 		static ::UnityEngine::Object** StaticGet_CompileObject()
 		{
-			return (::UnityEngine::Object**)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x228E0);
-		}
-		static ::System::Boolean* StaticGet_justThisTrack()
-		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7610);
+			return (::UnityEngine::Object**)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x24200);
 		}
 		static ::System::Boolean* StaticGet_muteAudioScrubbing()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7611);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7940);
+		}
+		static ::System::Boolean* StaticGet_justThisTrack()
+		{
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7941);
 		}
 		static ::System::Int32* StaticGet_ControlPlayableIndex()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7614);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7944);
 		}
 		static ::System::Int32* StaticGet_CompileTrackInstanceId()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7618);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TimelinePlayable_TypeDefinitionIndex)->GetStaticField(0x7948);
 		}
 		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_ActiveClips; // 0x10
-		::System::Collections::Generic::List_1<::UnityEngine::Timeline::ITimelineEvaluateCallback*>* m_EvaluateCallbacks; // 0x18
-		::UnityEngine::Timeline::IntervalTree_1<::UnityEngine::Timeline::RuntimeElement*>* m_IntervalTree; // 0x20
+		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_CurrentListOfActiveClips; // 0x18
+		::System::Collections::Generic::List_1<::UnityEngine::Timeline::ITimelineEvaluateCallback*>* m_EvaluateCallbacks; // 0x20
 		::System::Collections::Generic::Dictionary_2<::UnityEngine::Timeline::TrackAsset*, ::UnityEngine::Playables::Playable>* m_PlayableCache; // 0x28
-		::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>* m_CurrentListOfActiveClips; // 0x30
+		::UnityEngine::Timeline::IntervalTree_1<::UnityEngine::Timeline::RuntimeElement*>* m_IntervalTree; // 0x30
 		::System::Int32 m_ActiveBit; // 0x38
 
 		::System::Void _ctor()

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MESSAGEPACK_TINYJSONEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x19E9A720)
+#define MESSAGEPACK_TINYJSONEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A487EA0)
 
 namespace MessagePack
 {
-	inline static constexpr unsigned int TinyJsonException_TypeDefinitionIndex = 25738;
+	inline static constexpr unsigned int TinyJsonException_TypeDefinitionIndex = 27098;
 
 	class TinyJsonException : public ::MessagePack::MessagePackSerializationException
 	{

@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_D6447AB8997A24FD_1;
+class Class_3_54614A5B3DB56801;
 
-#define MOLEMOLE_UIAUTOBATTLEPVPPAGECONTROLLER___C__DISPLAYCLASS63_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF2E300)
-#define MOLEMOLE_UIAUTOBATTLEPVPPAGECONTROLLER___C__DISPLAYCLASS63_0__ONGETHISTORYINFOHANDLE_B__0_OFFSET UNITYSDK_OFFSET(0xBF2E310)
+#define MOLEMOLE_UIAUTOBATTLEPVPPAGECONTROLLER___C__DISPLAYCLASS63_0__CTOR_OFFSET UNITYSDK_OFFSET(0xE935370)
+#define MOLEMOLE_UIAUTOBATTLEPVPPAGECONTROLLER___C__DISPLAYCLASS63_0__ONGETHISTORYINFOHANDLE_B__0_OFFSET UNITYSDK_OFFSET(0xE935380)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattlePVPPageController___c__DisplayClass63_0_TypeDefinitionIndex = 57521;
+	inline static constexpr unsigned int UIAutoBattlePVPPageController___c__DisplayClass63_0_TypeDefinitionIndex = 57657;
 
 	class UIAutoBattlePVPPageController___c__DisplayClass63_0 : public ::System::Object
 	{
 	public:
-		::Class_3_D6447AB8997A24FD_1* rsp; // 0x10
+		::Class_3_54614A5B3DB56801* rsp; // 0x10
 
 		::System::Void _ctor()
 		{

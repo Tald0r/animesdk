@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIOverlordFeastServePageController; }
 
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS65_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA84A220)
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS65_0__ONCLICKOBJECT_B__0_OFFSET UNITYSDK_OFFSET(0xA84A230)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS65_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD27B2B0)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS65_0__ONCLICKOBJECT_B__0_OFFSET UNITYSDK_OFFSET(0xD27B2C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass65_0_TypeDefinitionIndex = 78938;
+	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass65_0_TypeDefinitionIndex = 47738;
 
 	class UIOverlordFeastServePageController___c__DisplayClass65_0 : public ::System::Object
 	{

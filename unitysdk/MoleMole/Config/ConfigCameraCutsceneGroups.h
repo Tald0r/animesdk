@@ -6,11 +6,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGCAMERACUTSCENEGROUPS__CTOR_OFFSET UNITYSDK_OFFSET(0x13995980)
+#define MOLEMOLE_CONFIG_CONFIGCAMERACUTSCENEGROUPS__CTOR_OFFSET UNITYSDK_OFFSET(0x9187CB0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigCameraCutsceneGroups_TypeDefinitionIndex = 43926;
+	inline static constexpr unsigned int ConfigCameraCutsceneGroups_TypeDefinitionIndex = 79027;
 
 	class ConfigCameraCutsceneGroups : public ::Foundation::MihoyoSerializedScriptableObject
 	{

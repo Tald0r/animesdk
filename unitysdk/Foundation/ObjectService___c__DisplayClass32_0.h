@@ -9,7 +9,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ObjectService___c__DisplayClass32_0_TypeDefinitionIndex = 8778;
+	inline static constexpr unsigned int ObjectService___c__DisplayClass32_0_TypeDefinitionIndex = 9108;
 
 	struct alignas(8) ObjectService___c__DisplayClass32_0
 	{

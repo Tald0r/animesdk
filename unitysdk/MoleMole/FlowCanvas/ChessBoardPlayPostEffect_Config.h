@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessBoardPlayPostEffect_Config_TypeDefinitionIndex = 70478;
+	inline static constexpr unsigned int ChessBoardPlayPostEffect_Config_TypeDefinitionIndex = 64621;
 
 	struct alignas(8) ChessBoardPlayPostEffect_Config
 	{

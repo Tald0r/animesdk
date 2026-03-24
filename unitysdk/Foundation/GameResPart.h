@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_GAMERESPART__CTOR_OFFSET UNITYSDK_OFFSET(0x1A498E40)
+#define FOUNDATION_GAMERESPART__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA14520)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int GameResPart_TypeDefinitionIndex = 8065;
+	inline static constexpr unsigned int GameResPart_TypeDefinitionIndex = 8185;
 
 	class GameResPart : public ::System::Object
 	{

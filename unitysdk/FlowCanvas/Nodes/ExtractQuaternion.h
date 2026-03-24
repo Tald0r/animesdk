@@ -4,12 +4,12 @@
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define FLOWCANVAS_NODES_EXTRACTQUATERNION_INVOKE_OFFSET UNITYSDK_OFFSET(0x19749DB0)
-#define FLOWCANVAS_NODES_EXTRACTQUATERNION__CTOR_OFFSET UNITYSDK_OFFSET(0x19749EC0)
+#define FLOWCANVAS_NODES_EXTRACTQUATERNION_INVOKE_OFFSET UNITYSDK_OFFSET(0x19C17C40)
+#define FLOWCANVAS_NODES_EXTRACTQUATERNION__CTOR_OFFSET UNITYSDK_OFFSET(0x19C17D50)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ExtractQuaternion_TypeDefinitionIndex = 25938;
+	inline static constexpr unsigned int ExtractQuaternion_TypeDefinitionIndex = 27536;
 
 	class ExtractQuaternion : public ::FlowCanvas::Nodes::ExtractorNode_6<::UnityEngine::Quaternion, ::System::Single, ::System::Single, ::System::Single, ::System::Single, ::UnityEngine::Vector3>
 	{

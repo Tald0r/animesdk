@@ -3,7 +3,7 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDApplyDataToGameVariable_DataType_TypeDefinitionIndex = 38946;
+	inline static constexpr unsigned int LDApplyDataToGameVariable_DataType_TypeDefinitionIndex = 58089;
 
 	enum class LDApplyDataToGameVariable_DataType : ::System::Int32
 	{

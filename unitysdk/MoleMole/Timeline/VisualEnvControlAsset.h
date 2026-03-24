@@ -16,31 +16,31 @@ namespace System::Reflection { class FieldInfo; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Texture; }
 
-#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8F4C4A0)
-#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_GET_FOGUSEOLDVERSION_OFFSET UNITYSDK_OFFSET(0x8F4C420)
-#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_METHOD_4_C242374E179247ED_OFFSET UNITYSDK_OFFSET(0x8F4CB00)
-#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_SET_FOGUSEOLDVERSION_OFFSET UNITYSDK_OFFSET(0x8F4C430)
-#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F4CAF0)
-#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x8F4C980)
+#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x9864400)
+#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_GET_FOGUSEOLDVERSION_OFFSET UNITYSDK_OFFSET(0x9864380)
+#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_METHOD_4_C242374E179247ED_OFFSET UNITYSDK_OFFSET(0x9864A70)
+#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET_SET_FOGUSEOLDVERSION_OFFSET UNITYSDK_OFFSET(0x9864390)
+#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET__CCTOR_OFFSET UNITYSDK_OFFSET(0x9864A60)
+#define MOLEMOLE_TIMELINE_VISUALENVCONTROLASSET__CTOR_OFFSET UNITYSDK_OFFSET(0x98648F0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int VisualEnvControlAsset_TypeDefinitionIndex = 43207;
+	inline static constexpr unsigned int VisualEnvControlAsset_TypeDefinitionIndex = 55748;
 
 	class VisualEnvControlAsset : public ::UnityEngine::Playables::PlayableAsset
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>** StaticGet_weatherFieldsDic()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>**)Il2CppClass::FromTypeDefinitionIndex(VisualEnvControlAsset_TypeDefinitionIndex)->GetStaticField(0x47740);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>** StaticGet_behaviorFieldDic()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>**)Il2CppClass::FromTypeDefinitionIndex(VisualEnvControlAsset_TypeDefinitionIndex)->GetStaticField(0x47748);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>**)Il2CppClass::FromTypeDefinitionIndex(VisualEnvControlAsset_TypeDefinitionIndex)->GetStaticField(0x49230);
 		}
 		static ::System::Collections::Generic::List_1<::System::Reflection::FieldInfo*>** StaticGet_selfFields()
 		{
-			return (::System::Collections::Generic::List_1<::System::Reflection::FieldInfo*>**)Il2CppClass::FromTypeDefinitionIndex(VisualEnvControlAsset_TypeDefinitionIndex)->GetStaticField(0x47750);
+			return (::System::Collections::Generic::List_1<::System::Reflection::FieldInfo*>**)Il2CppClass::FromTypeDefinitionIndex(VisualEnvControlAsset_TypeDefinitionIndex)->GetStaticField(0x49238);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>** StaticGet_behaviorFieldDic()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::FieldInfo*>**)Il2CppClass::FromTypeDefinitionIndex(VisualEnvControlAsset_TypeDefinitionIndex)->GetStaticField(0x49240);
 		}
 		::System::Boolean UnInit; // 0x18
 		::System::Boolean fogUseNewVerion; // 0x19

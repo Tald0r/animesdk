@@ -5,7 +5,7 @@
 
 namespace QWER
 {
-	inline static constexpr unsigned int CPropertyType_1_TypeDefinitionIndex = 9670;
+	inline static constexpr unsigned int CPropertyType_1_TypeDefinitionIndex = 9672;
 
 	template <typename T>
 	class CPropertyType_1 : public ::System::Object

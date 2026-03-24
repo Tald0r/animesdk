@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYO_SDK_EOSPARAMETERSMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x17E8A980)
+#define MIHOYO_SDK_EOSPARAMETERSMODEL__CTOR_OFFSET UNITYSDK_OFFSET(0x1846F640)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int EOSParametersModel_TypeDefinitionIndex = 17912;
+	inline static constexpr unsigned int EOSParametersModel_TypeDefinitionIndex = 18419;
 
 	class EOSParametersModel : public ::System::Object
 	{

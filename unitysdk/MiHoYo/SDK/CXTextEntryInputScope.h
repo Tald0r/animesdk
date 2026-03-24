@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int CXTextEntryInputScope_TypeDefinitionIndex = 18134;
+	inline static constexpr unsigned int CXTextEntryInputScope_TypeDefinitionIndex = 18642;
 
 	enum class CXTextEntryInputScope : ::System::Int32
 	{

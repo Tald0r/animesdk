@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_FIRSTPERSONSCALE__CTOR_OFFSET UNITYSDK_OFFSET(0x14196110)
+#define MOLEMOLE_CONFIG_FIRSTPERSONSCALE__CTOR_OFFSET UNITYSDK_OFFSET(0xBB03820)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int FirstPersonScale_TypeDefinitionIndex = 51521;
+	inline static constexpr unsigned int FirstPersonScale_TypeDefinitionIndex = 59050;
 
 	class FirstPersonScale : public ::System::Object
 	{

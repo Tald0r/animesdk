@@ -7,22 +7,22 @@ class Class_3_C0D5B1A036ED00F0;
 class Class_3_F33F9DC5F4112336;
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
 
-#define CLASS_3_B396A732EBD0E33F___C_METHOD_1_187CF17ADC55E89F_OFFSET UNITYSDK_OFFSET(0xB966B70)
-#define CLASS_3_B396A732EBD0E33F___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB966B20)
-#define CLASS_3_B396A732EBD0E33F___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB966B60)
+#define CLASS_3_B396A732EBD0E33F___C_METHOD_1_187CF17ADC55E89F_OFFSET UNITYSDK_OFFSET(0x87C4950)
+#define CLASS_3_B396A732EBD0E33F___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x87C4900)
+#define CLASS_3_B396A732EBD0E33F___C__CTOR_OFFSET UNITYSDK_OFFSET(0x87C4940)
 
-inline static constexpr unsigned int Class_3_B396A732EBD0E33F___c_TypeDefinitionIndex = 73211;
+inline static constexpr unsigned int Class_3_B396A732EBD0E33F___c_TypeDefinitionIndex = 60247;
 
 class Class_3_B396A732EBD0E33F___c : public ::System::Object
 {
 public:
-	static ::System::Action_3<::Class_3_09C6D749A1B6BB3E*, ::Class_3_C0D5B1A036ED00F0*, ::Class_3_F33F9DC5F4112336*>** StaticGet___9__2_0()
-	{
-		return (::System::Action_3<::Class_3_09C6D749A1B6BB3E*, ::Class_3_C0D5B1A036ED00F0*, ::Class_3_F33F9DC5F4112336*>**)Il2CppClass::FromTypeDefinitionIndex(Class_3_B396A732EBD0E33F___c_TypeDefinitionIndex)->GetStaticField(0x399A0);
-	}
 	static ::Class_3_B396A732EBD0E33F___c** StaticGet___9()
 	{
-		return (::Class_3_B396A732EBD0E33F___c**)Il2CppClass::FromTypeDefinitionIndex(Class_3_B396A732EBD0E33F___c_TypeDefinitionIndex)->GetStaticField(0x399A8);
+		return (::Class_3_B396A732EBD0E33F___c**)Il2CppClass::FromTypeDefinitionIndex(Class_3_B396A732EBD0E33F___c_TypeDefinitionIndex)->GetStaticField(0x2FD50);
+	}
+	static ::System::Action_3<::Class_3_09C6D749A1B6BB3E*, ::Class_3_C0D5B1A036ED00F0*, ::Class_3_F33F9DC5F4112336*>** StaticGet___9__2_0()
+	{
+		return (::System::Action_3<::Class_3_09C6D749A1B6BB3E*, ::Class_3_C0D5B1A036ED00F0*, ::Class_3_F33F9DC5F4112336*>**)Il2CppClass::FromTypeDefinitionIndex(Class_3_B396A732EBD0E33F___c_TypeDefinitionIndex)->GetStaticField(0x2FD58);
 	}
 
 	static ::System::Void _cctor()

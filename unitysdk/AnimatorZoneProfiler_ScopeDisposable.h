@@ -4,10 +4,10 @@
 
 namespace System { class String; }
 
-#define ANIMATORZONEPROFILER_SCOPEDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x5E85E0)
-#define ANIMATORZONEPROFILER_SCOPEDISPOSABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x5E8570)
+#define ANIMATORZONEPROFILER_SCOPEDISPOSABLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x34AF00)
+#define ANIMATORZONEPROFILER_SCOPEDISPOSABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x34AE90)
 
-inline static constexpr unsigned int AnimatorZoneProfiler_ScopeDisposable_TypeDefinitionIndex = 63715;
+inline static constexpr unsigned int AnimatorZoneProfiler_ScopeDisposable_TypeDefinitionIndex = 46849;
 
 struct alignas(1) AnimatorZoneProfiler_ScopeDisposable
 {

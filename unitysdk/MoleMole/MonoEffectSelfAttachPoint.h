@@ -6,13 +6,13 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_MONOEFFECTSELFATTACHPOINT_SETATTACHPOINT_OFFSET UNITYSDK_OFFSET(0xD810930)
-#define MOLEMOLE_MONOEFFECTSELFATTACHPOINT_TRYGETATTACHPOINT_OFFSET UNITYSDK_OFFSET(0xD810820)
-#define MOLEMOLE_MONOEFFECTSELFATTACHPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xD810B00)
+#define MOLEMOLE_MONOEFFECTSELFATTACHPOINT_SETATTACHPOINT_OFFSET UNITYSDK_OFFSET(0xB99E4D0)
+#define MOLEMOLE_MONOEFFECTSELFATTACHPOINT_TRYGETATTACHPOINT_OFFSET UNITYSDK_OFFSET(0xB99E3C0)
+#define MOLEMOLE_MONOEFFECTSELFATTACHPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xB99E6A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectSelfAttachPoint_TypeDefinitionIndex = 65802;
+	inline static constexpr unsigned int MonoEffectSelfAttachPoint_TypeDefinitionIndex = 54629;
 
 	class MonoEffectSelfAttachPoint : public ::MoleMole::MonoEffectSerializedPluginBase
 	{

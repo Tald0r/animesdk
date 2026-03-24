@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/NodeCanvas/Framework/ConditionTask.h"
 
-#define NODECANVAS_TASKS_CONDITIONS_DEBUGCONDITION_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19F5CCF0)
-#define NODECANVAS_TASKS_CONDITIONS_DEBUGCONDITION__CTOR_OFFSET UNITYSDK_OFFSET(0x19F5CD00)
+#define NODECANVAS_TASKS_CONDITIONS_DEBUGCONDITION_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A56DB30)
+#define NODECANVAS_TASKS_CONDITIONS_DEBUGCONDITION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A56DB40)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int DebugCondition_TypeDefinitionIndex = 26157;
+	inline static constexpr unsigned int DebugCondition_TypeDefinitionIndex = 27668;
 
 	class DebugCondition : public ::NodeCanvas::Framework::ConditionTask
 	{

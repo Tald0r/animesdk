@@ -7,7 +7,7 @@ namespace UnityEngine::Networking::PlayerConnection { class MessageEventArgs; }
 
 namespace UnityEngine::Networking::PlayerConnection
 {
-	inline static constexpr unsigned int IEditorPlayerConnection_TypeDefinitionIndex = 5667;
+	inline static constexpr unsigned int IEditorPlayerConnection_TypeDefinitionIndex = 5670;
 
 	class IEditorPlayerConnection
 	{

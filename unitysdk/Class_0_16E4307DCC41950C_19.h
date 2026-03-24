@@ -1,19 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Struct_2_D57A57246A9544D0.h"
 
-class Class_0_16E4307DCC419505_143;
-namespace System { class Action; }
-namespace System { class Exception; }
-namespace System { class String; }
-namespace System { template <typename T1, typename T2> class Func_2; }
-namespace System { template <typename T> class Action_1; }
-namespace System { template <typename T> class Func_1; }
-namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
-template <typename T> class Class_0_16E4307DCC41950C_19;
+inline static constexpr unsigned int Class_0_16E4307DCC41950C_19_TypeDefinitionIndex = 66378;
 
-inline static constexpr unsigned int Class_0_16E4307DCC41950C_19_TypeDefinitionIndex = 78390;
-
-template <typename PromisedT>
+template <typename TPose, typename TIntrinsics, typename TOuterCtx>
 class Class_0_16E4307DCC41950C_19
 {
 public:

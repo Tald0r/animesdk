@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define DEBUGFORCP__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA38350)
+#define DEBUGFORCP__CTOR_OFFSET UNITYSDK_OFFSET(0x1B556000)
 
-inline static constexpr unsigned int DebugForCP_TypeDefinitionIndex = 81548;
+inline static constexpr unsigned int DebugForCP_TypeDefinitionIndex = 83495;
 
 class DebugForCP : public ::UnityEngine::MonoBehaviour
 {

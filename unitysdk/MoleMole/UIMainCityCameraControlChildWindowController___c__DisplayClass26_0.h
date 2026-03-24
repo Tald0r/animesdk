@@ -5,12 +5,12 @@
 namespace MoleMole { class UIMainCityCameraControlChildWindowController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0x94493F0)
-#define MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__PLAYFLASHFADEOUT_B__0_OFFSET UNITYSDK_OFFSET(0x9449400)
+#define MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA410D80)
+#define MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__PLAYFLASHFADEIN_B__0_OFFSET UNITYSDK_OFFSET(0xA410D90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityCameraControlChildWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 37060;
+	inline static constexpr unsigned int UIMainCityCameraControlChildWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 79719;
 
 	class UIMainCityCameraControlChildWindowController___c__DisplayClass26_0 : public ::System::Object
 	{
@@ -23,9 +23,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _PlayFlashFadeOut_b__0()
+		::System::Void _PlayFlashFadeIn_b__0()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__PLAYFLASHFADEOUT_B__0_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIMAINCITYCAMERACONTROLCHILDWINDOWCONTROLLER___C__DISPLAYCLASS26_0__PLAYFLASHFADEIN_B__0_OFFSET))(this);
 		}
 	};
 }

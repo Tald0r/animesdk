@@ -6,7 +6,7 @@ namespace UnityEngine::EventSystems { class BaseEventData; }
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnCancelHandler_TypeDefinitionIndex = 27324;
+	inline static constexpr unsigned int IAsyncOnCancelHandler_TypeDefinitionIndex = 28264;
 
 	class IAsyncOnCancelHandler
 	{

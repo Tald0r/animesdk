@@ -8,30 +8,30 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class IList_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE_COMBINEVALUESWITH_OFFSET UNITYSDK_OFFSET(0x1AB09F00)
-#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE_SIRENIX_ODININSPECTOR_INTERNAL_ISUBGROUPPROVIDERATTRIBUTE_GETSUBGROUPATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x1AB0A0E0)
-#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE_SIRENIX_ODININSPECTOR_INTERNAL_ISUBGROUPPROVIDERATTRIBUTE_REPATHMEMBERATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1AB0A450)
-#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AB09DC0)
-#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1AB09ED0)
-#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB09D60)
+#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE_COMBINEVALUESWITH_OFFSET UNITYSDK_OFFSET(0x1B116020)
+#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE_SIRENIX_ODININSPECTOR_INTERNAL_ISUBGROUPPROVIDERATTRIBUTE_GETSUBGROUPATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x1B116200)
+#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE_SIRENIX_ODININSPECTOR_INTERNAL_ISUBGROUPPROVIDERATTRIBUTE_REPATHMEMBERATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x1B116570)
+#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B115EE0)
+#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE__CTOR_2_OFFSET UNITYSDK_OFFSET(0x1B115FF0)
+#define SIRENIX_ODININSPECTOR_TABGROUPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115E80)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int TabGroupAttribute_TypeDefinitionIndex = 7226;
+	inline static constexpr unsigned int TabGroupAttribute_TypeDefinitionIndex = 7231;
 
 	class TabGroupAttribute : public ::Sirenix::OdinInspector::PropertyGroupAttribute
 	{
 	public:
 		// static const ::System::String* DEFAULT_NAME; // 0x0
-		::System::String* TextColor; // 0x30
-		::System::String* TabName; // 0x38
+		::System::String* TabName; // 0x30
+		::System::String* TextColor; // 0x38
 		::System::String* TabId; // 0x40
 		::System::Collections::Generic::List_1<::Sirenix::OdinInspector::TabGroupAttribute*>* Tabs; // 0x48
 		::Sirenix::OdinInspector::TabLayouting TabLayouting; // 0x50
-		::Sirenix::OdinInspector::SdfIconType Icon; // 0x54
-		::System::Boolean UseFixedHeight; // 0x58
-		::System::Boolean Paddingless; // 0x59
-		::System::Boolean HideTabGroupIfTabGroupOnlyHasOneTab; // 0x5A
+		::System::Boolean Paddingless; // 0x54
+		::System::Boolean HideTabGroupIfTabGroupOnlyHasOneTab; // 0x55
+		::System::Boolean UseFixedHeight; // 0x56
+		::Sirenix::OdinInspector::SdfIconType Icon; // 0x58
 
 		::System::Void _ctor(::System::String* tab, ::System::Boolean useFixedHeight, ::System::Single order)
 		{

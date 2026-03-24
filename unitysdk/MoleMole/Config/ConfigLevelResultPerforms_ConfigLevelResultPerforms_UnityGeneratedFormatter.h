@@ -16,70 +16,70 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x13F95750)
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x13F95760)
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x13F966C0)
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x13F96F90)
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x13F96F50)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF2CF2F0)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF2CF300)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF2D0260)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF2D0B30)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTPERFORMS_CONFIGLEVELRESULTPERFORMS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D0AF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex = 46850;
+	inline static constexpr unsigned int ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex = 46275;
 
 	class ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigLevelResultPerforms*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>** StaticGet_CachedSerializer8()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE70);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>*>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE78);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::Config::ConfigLevelResultPerform*>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::Config::ConfigLevelResultPerform*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE80);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>** StaticGet_CachedSerializer11()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE88);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>** StaticGet_CachedSerializer9()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE90);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BE98);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>*>** StaticGet_CachedSerializer7()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEA0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEA8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>** StaticGet_CachedSerializer12()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEB0);
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBA0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::ELocalPlayType>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::ELocalPlayType>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEB8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>** StaticGet_CachedSerializer6()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEC0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Utils::CameraSequence::CameraSequence_VideoItem_ComposeObject*>*>** StaticGet_CachedSerializer10()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Utils::CameraSequence::CameraSequence_VideoItem_ComposeObject*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BEC8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::ELocalPlayType>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBA8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BED0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBB0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>*>** StaticGet_CachedSerializer7()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBB8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>** StaticGet_CachedSerializer12()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBC0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>** StaticGet_CachedSerializer9()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBC8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>** StaticGet_CachedSerializer6()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingFogEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBD0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>** StaticGet_CachedSerializer8()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBD8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Utils::CameraSequence::CameraSequence_VideoItem_ComposeObject*>*>** StaticGet_CachedSerializer10()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Utils::CameraSequence::CameraSequence_VideoItem_ComposeObject*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBE0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBE8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::Config::ConfigLevelResultPerform*>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::ELocalPlayType, ::MoleMole::Config::ConfigLevelResultPerform*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBF0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>*>** StaticGet_CachedSerializer5()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::Il2CppArray<::MoleMole::Config::ConfigLevelResultPerforms_RatingScreenEffect>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EBF8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Level::RatingType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLevelResultPerforms_ConfigLevelResultPerforms_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EC00);
 		}
 
 		::System::Void _ctor()

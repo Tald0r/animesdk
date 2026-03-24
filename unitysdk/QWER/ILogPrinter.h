@@ -7,7 +7,7 @@ namespace System::Threading::Tasks { class Task; }
 
 namespace QWER
 {
-	inline static constexpr unsigned int ILogPrinter_TypeDefinitionIndex = 82109;
+	inline static constexpr unsigned int ILogPrinter_TypeDefinitionIndex = 84150;
 
 	class ILogPrinter
 	{

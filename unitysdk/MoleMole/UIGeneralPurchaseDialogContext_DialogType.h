@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralPurchaseDialogContext_DialogType_TypeDefinitionIndex = 44470;
+	inline static constexpr unsigned int UIGeneralPurchaseDialogContext_DialogType_TypeDefinitionIndex = 53147;
 
 	enum class UIGeneralPurchaseDialogContext_DialogType : ::System::Int32
 	{

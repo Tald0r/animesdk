@@ -10,25 +10,25 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_2_A83F0BD817A71056_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x6D93A30)
-#define CLASS_2_A83F0BD817A71056_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6D93B50)
-#define CLASS_2_A83F0BD817A71056_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x6D937A0)
-#define CLASS_2_A83F0BD817A71056__CTOR_OFFSET UNITYSDK_OFFSET(0x6D93B40)
+#define CLASS_2_A83F0BD817A71056_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0xB669B70)
+#define CLASS_2_A83F0BD817A71056_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB669C90)
+#define CLASS_2_A83F0BD817A71056_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0xB6698E0)
+#define CLASS_2_A83F0BD817A71056__CTOR_OFFSET UNITYSDK_OFFSET(0xB669C80)
 
-inline static constexpr unsigned int Class_2_A83F0BD817A71056_TypeDefinitionIndex = 63057;
+inline static constexpr unsigned int Class_2_A83F0BD817A71056_TypeDefinitionIndex = 44602;
 
 class Class_2_A83F0BD817A71056 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_0; // 0x18
-	::Class_2_CA67A9CEB871FFD3* Field_2_2; // 0x20
+	::UnityEngine::GameObject* Field_2_8; // 0x18
+	::UnityEngine::CanvasGroup* Field_2_5; // 0x20
 	::UnityEngine::GameObject* Field_2_1; // 0x28
-	::Class_2_CA67A9CEB871FFD3* Field_2_3; // 0x30
-	::Class_2_60DDD9C206686F44* Field_2_7; // 0x38
-	::Class_2_9E3E3CDA608A4F58* Field_2_6; // 0x40
-	::UnityEngine::CanvasGroup* Field_2_5; // 0x48
-	::UnityEngine::GameObject* Field_2_8; // 0x50
-	::Class_2_CA67A9CEB871FFD3* Field_2_4; // 0x58
+	::Class_2_CA67A9CEB871FFD3* Field_2_4; // 0x30
+	::Class_2_CA67A9CEB871FFD3* Field_2_3; // 0x38
+	::Class_2_CA67A9CEB871FFD3* Field_2_2; // 0x40
+	::Class_2_60DDD9C206686F44* Field_2_7; // 0x48
+	::Class_2_9E3E3CDA608A4F58* Field_2_6; // 0x50
+	::UnityEngine::GameObject* Field_2_0; // 0x58
 
 	::System::Void _ctor()
 	{

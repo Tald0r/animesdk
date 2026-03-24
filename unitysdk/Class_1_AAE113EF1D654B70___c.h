@@ -6,22 +6,22 @@
 namespace PipelineCamera { template <typename T> class ICameraSubModule_1; }
 namespace System { template <typename T> class Func_1; }
 
-#define CLASS_1_AAE113EF1D654B70___C_METHOD_1_E661BAEFA63CDC37_OFFSET UNITYSDK_OFFSET(0x9023860)
-#define CLASS_1_AAE113EF1D654B70___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9023810)
-#define CLASS_1_AAE113EF1D654B70___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9023850)
+#define CLASS_1_AAE113EF1D654B70___C_METHOD_1_E661BAEFA63CDC37_OFFSET UNITYSDK_OFFSET(0xD5FE830)
+#define CLASS_1_AAE113EF1D654B70___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD5FE7E0)
+#define CLASS_1_AAE113EF1D654B70___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD5FE820)
 
-inline static constexpr unsigned int Class_1_AAE113EF1D654B70___c_TypeDefinitionIndex = 64856;
+inline static constexpr unsigned int Class_1_AAE113EF1D654B70___c_TypeDefinitionIndex = 70986;
 
 class Class_1_AAE113EF1D654B70___c : public ::System::Object
 {
 public:
-	static ::System::Func_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>** StaticGet___9__19_0()
-	{
-		return (::System::Func_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_AAE113EF1D654B70___c_TypeDefinitionIndex)->GetStaticField(0x3C920);
-	}
 	static ::Class_1_AAE113EF1D654B70___c** StaticGet___9()
 	{
-		return (::Class_1_AAE113EF1D654B70___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_AAE113EF1D654B70___c_TypeDefinitionIndex)->GetStaticField(0x3C928);
+		return (::Class_1_AAE113EF1D654B70___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_AAE113EF1D654B70___c_TypeDefinitionIndex)->GetStaticField(0x40B90);
+	}
+	static ::System::Func_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>** StaticGet___9__19_0()
+	{
+		return (::System::Func_1<::PipelineCamera::ICameraSubModule_1<::PipelineCamera::WorldBasicCameraData>*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_AAE113EF1D654B70___c_TypeDefinitionIndex)->GetStaticField(0x40B98);
 	}
 
 	static ::System::Void _cctor()

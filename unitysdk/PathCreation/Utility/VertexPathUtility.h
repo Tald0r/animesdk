@@ -5,12 +5,12 @@
 namespace PathCreation { class BezierPath; }
 namespace PathCreation::Utility { class VertexPathUtility_PathSplitData; }
 
-#define PATHCREATION_UTILITY_VERTEXPATHUTILITY_SPLITBEZIERPATHBYANGLEERROR_OFFSET UNITYSDK_OFFSET(0x1A51D720)
-#define PATHCREATION_UTILITY_VERTEXPATHUTILITY_SPLITBEZIERPATHEVENLY_OFFSET UNITYSDK_OFFSET(0x1A51E8B0)
+#define PATHCREATION_UTILITY_VERTEXPATHUTILITY_SPLITBEZIERPATHBYANGLEERROR_OFFSET UNITYSDK_OFFSET(0x1AAD70C0)
+#define PATHCREATION_UTILITY_VERTEXPATHUTILITY_SPLITBEZIERPATHEVENLY_OFFSET UNITYSDK_OFFSET(0x1AAD8250)
 
 namespace PathCreation::Utility
 {
-	inline static constexpr unsigned int VertexPathUtility_TypeDefinitionIndex = 34302;
+	inline static constexpr unsigned int VertexPathUtility_TypeDefinitionIndex = 35304;
 
 	class VertexPathUtility : public ::System::Object
 	{

@@ -4,18 +4,18 @@
 #include "unitysdk/UnityEngine/Bounds.h"
 #include "unitysdk/UnityEngine/Color.h"
 
-#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19A54130)
-#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS23_0__DRAWBOUNDS_B__0_OFFSET UNITYSDK_OFFSET(0x19A54140)
+#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS23_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A026020)
+#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS23_0__DRAWBOUNDS_B__0_OFFSET UNITYSDK_OFFSET(0x1A026030)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int MyLogger___c__DisplayClass23_0_TypeDefinitionIndex = 8145;
+	inline static constexpr unsigned int MyLogger___c__DisplayClass23_0_TypeDefinitionIndex = 8048;
 
 	class MyLogger___c__DisplayClass23_0 : public ::System::Object
 	{
 	public:
-		::UnityEngine::Bounds bounds; // 0x10
-		::UnityEngine::Color color; // 0x28
+		::UnityEngine::Color color; // 0x10
+		::UnityEngine::Bounds bounds; // 0x20
 
 		::System::Void _ctor()
 		{

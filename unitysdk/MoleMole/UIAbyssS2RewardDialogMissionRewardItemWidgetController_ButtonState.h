@@ -3,14 +3,14 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssS2RewardDialogMissionRewardItemWidgetController_ButtonState_TypeDefinitionIndex = 48933;
+	inline static constexpr unsigned int UIAbyssS2RewardDialogMissionRewardItemWidgetController_ButtonState_TypeDefinitionIndex = 74244;
 
 	enum class UIAbyssS2RewardDialogMissionRewardItemWidgetController_ButtonState : ::System::Int32
 	{
-		ClickToGet = 1,
 		Done = 2,
-		Finished = 3,
 		Proceeding = 0,
+		ClickToGet = 1,
 		Max = 4,
+		Finished = 3,
 	};
 }

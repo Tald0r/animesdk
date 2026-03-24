@@ -9,7 +9,7 @@ namespace System { class String; }
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UITableView_Data_TypeDefinitionIndex = 38197;
+	inline static constexpr unsigned int UITableView_Data_TypeDefinitionIndex = 81245;
 
 	struct alignas(8) UITableView_Data
 	{

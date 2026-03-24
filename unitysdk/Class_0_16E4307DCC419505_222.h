@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-class Class_1_9159F6FE46573B6F;
-class Class_5_AF65C3A968E836D2;
+namespace MoleMole { class UIOnEnableAndDisableHandler; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_222_TypeDefinitionIndex = 39483;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_222_TypeDefinitionIndex = 40312;
 
 class Class_0_16E4307DCC419505_222
 {

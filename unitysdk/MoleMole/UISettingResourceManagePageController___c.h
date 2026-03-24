@@ -10,74 +10,74 @@ namespace System { template <typename T> class Comparison_1; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAE07830)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAE07870)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0xAE07880)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_10_OFFSET UNITYSDK_OFFSET(0xAE07AA0)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_11_OFFSET UNITYSDK_OFFSET(0xAE07AC0)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_12_OFFSET UNITYSDK_OFFSET(0xAE07AE0)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_13_OFFSET UNITYSDK_OFFSET(0xAE07B00)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_14_OFFSET UNITYSDK_OFFSET(0xAE07B20)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_15_OFFSET UNITYSDK_OFFSET(0xAE07B40)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_6_OFFSET UNITYSDK_OFFSET(0xAE079A0)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_8_OFFSET UNITYSDK_OFFSET(0xAE07A60)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_9_OFFSET UNITYSDK_OFFSET(0xAE07A80)
-#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__REFRESHVIEW_B__15_0_OFFSET UNITYSDK_OFFSET(0xAE07B60)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB53E0A0)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB53E0E0)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0xB53E0F0)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_10_OFFSET UNITYSDK_OFFSET(0xB53E310)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_11_OFFSET UNITYSDK_OFFSET(0xB53E330)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_12_OFFSET UNITYSDK_OFFSET(0xB53E350)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_13_OFFSET UNITYSDK_OFFSET(0xB53E370)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_14_OFFSET UNITYSDK_OFFSET(0xB53E390)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_15_OFFSET UNITYSDK_OFFSET(0xB53E3B0)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_6_OFFSET UNITYSDK_OFFSET(0xB53E210)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_8_OFFSET UNITYSDK_OFFSET(0xB53E2D0)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__ONUIINIT_B__4_9_OFFSET UNITYSDK_OFFSET(0xB53E2F0)
+#define MOLEMOLE_UISETTINGRESOURCEMANAGEPAGECONTROLLER___C__REFRESHVIEW_B__15_0_OFFSET UNITYSDK_OFFSET(0xB53E3D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISettingResourceManagePageController___c_TypeDefinitionIndex = 58372;
+	inline static constexpr unsigned int UISettingResourceManagePageController___c_TypeDefinitionIndex = 59207;
 
 	class UISettingResourceManagePageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>** StaticGet___9__4_14()
-		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D3E0);
-		}
-		static ::UnityEngine::Events::UnityAction** StaticGet___9__4_0()
-		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D3E8);
-		}
-		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>** StaticGet___9__4_15()
-		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D3F0);
-		}
-		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>** StaticGet___9__4_11()
-		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D3F8);
-		}
 		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>** StaticGet___9__4_13()
 		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D400);
-		}
-		static ::System::Comparison_1<::Class_1_5B20F63BF0FAF658*>** StaticGet___9__15_0()
-		{
-			return (::System::Comparison_1<::Class_1_5B20F63BF0FAF658*>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D408);
-		}
-		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>** StaticGet___9__4_9()
-		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D410);
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E860);
 		}
 		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>** StaticGet___9__4_10()
 		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D418);
-		}
-		static ::System::Action** StaticGet___9__4_6()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D420);
-		}
-		static ::MoleMole::UISettingResourceManagePageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UISettingResourceManagePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D428);
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E868);
 		}
 		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>** StaticGet___9__4_12()
 		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D430);
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E870);
+		}
+		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>** StaticGet___9__4_15()
+		{
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E878);
+		}
+		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>** StaticGet___9__4_11()
+		{
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Collections::Generic::IEnumerable_1<::Enum_3_41536F26CBEE8D4C>*>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E880);
+		}
+		static ::UnityEngine::Events::UnityAction** StaticGet___9__4_0()
+		{
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E888);
+		}
+		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>** StaticGet___9__4_14()
+		{
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E890);
+		}
+		static ::System::Action** StaticGet___9__4_6()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E898);
+		}
+		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>** StaticGet___9__4_9()
+		{
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E8A0);
 		}
 		static ::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>** StaticGet___9__4_8()
 		{
-			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2D438);
+			return (::System::Func_2<::Class_1_5B20F63BF0FAF658*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E8A8);
+		}
+		static ::System::Comparison_1<::Class_1_5B20F63BF0FAF658*>** StaticGet___9__15_0()
+		{
+			return (::System::Comparison_1<::Class_1_5B20F63BF0FAF658*>**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E8B0);
+		}
+		static ::MoleMole::UISettingResourceManagePageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UISettingResourceManagePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISettingResourceManagePageController___c_TypeDefinitionIndex)->GetStaticField(0x2E8B8);
 		}
 
 		static ::System::Void _cctor()

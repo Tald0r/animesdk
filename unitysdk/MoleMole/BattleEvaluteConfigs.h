@@ -5,11 +5,11 @@
 namespace MoleMole { class BattleEvaluteBgColor; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_BATTLEEVALUTECONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0x8E9DDF0)
+#define MOLEMOLE_BATTLEEVALUTECONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xF2A46E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BattleEvaluteConfigs_TypeDefinitionIndex = 41442;
+	inline static constexpr unsigned int BattleEvaluteConfigs_TypeDefinitionIndex = 63182;
 
 	class BattleEvaluteConfigs : public ::System::Object
 	{

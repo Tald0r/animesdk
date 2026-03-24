@@ -7,20 +7,20 @@
 namespace MoleMole { class UIRidusGotBooPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__TRYPOPWINDOW_D__187_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37F240)
-#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__TRYPOPWINDOW_D__187_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__TRYPOPWINDOW_D__187_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37ADB0)
+#define MOLEMOLE_UIRIDUSGOTBOOPAGECONTROLLER__TRYPOPWINDOW_D__187_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController__TryPopWindow_d__187_TypeDefinitionIndex = 66325;
+	inline static constexpr unsigned int UIRidusGotBooPageController__TryPopWindow_d__187_TypeDefinitionIndex = 44147;
 
 	struct alignas(8) UIRidusGotBooPageController__TryPopWindow_d__187
 	{
-		::MoleMole::UIRidusGotBooPageController* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x18
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
+		::MoleMole::UIRidusGotBooPageController* __4__this; // 0x20
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
-		::System::Int32 popID; // 0x38
-		::System::Int32 __1__state; // 0x3C
+		::System::Int32 __1__state; // 0x38
+		::System::Int32 popID; // 0x3C
 
 		::System::Void MoveNext()
 		{

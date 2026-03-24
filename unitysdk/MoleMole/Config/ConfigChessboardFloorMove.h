@@ -4,19 +4,19 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDFLOORMOVE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xC343290)
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDFLOORMOVE__CTOR_OFFSET UNITYSDK_OFFSET(0xC343330)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDFLOORMOVE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xEC3C960)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDFLOORMOVE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC3CA00)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessboardFloorMove_TypeDefinitionIndex = 37570;
+	inline static constexpr unsigned int ConfigChessboardFloorMove_TypeDefinitionIndex = 39014;
 
 	class ConfigChessboardFloorMove : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
-		::System::Single FadeDistance; // 0x18
-		::System::Single Duration; // 0x1C
-		::System::Boolean InsertChessboard; // 0x20
+		::System::Single Duration; // 0x18
+		::System::Boolean InsertChessboard; // 0x1C
+		::System::Single FadeDistance; // 0x20
 
 		::System::Void _ctor()
 		{

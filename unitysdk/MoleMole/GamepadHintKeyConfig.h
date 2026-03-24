@@ -14,7 +14,7 @@ namespace UnityEngine::UI::Extension { class UIButtonEx; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GamepadHintKeyConfig_TypeDefinitionIndex = 62816;
+	inline static constexpr unsigned int GamepadHintKeyConfig_TypeDefinitionIndex = 54118;
 
 	struct alignas(8) GamepadHintKeyConfig
 	{

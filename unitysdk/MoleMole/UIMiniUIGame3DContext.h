@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_2271A294FCCB3EAE.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIMINIUIGAME3DCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9E82DA0)
+#define MOLEMOLE_UIMINIUIGAME3DCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB6AB590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMiniUIGame3DContext_TypeDefinitionIndex = 42510;
+	inline static constexpr unsigned int UIMiniUIGame3DContext_TypeDefinitionIndex = 40819;
 
 	class UIMiniUIGame3DContext : public ::MoleMole::UIControllerContextBase
 	{

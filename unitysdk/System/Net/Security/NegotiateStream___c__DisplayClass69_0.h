@@ -10,8 +10,8 @@ namespace System { class String; }
 namespace System::Net { class NetworkCredential; }
 namespace System::Net::Security { class NegotiateStream; }
 
-#define SYSTEM_NET_SECURITY_NEGOTIATESTREAM___C__DISPLAYCLASS69_0__AUTHENTICATEASCLIENTASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x19016580)
-#define SYSTEM_NET_SECURITY_NEGOTIATESTREAM___C__DISPLAYCLASS69_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19016570)
+#define SYSTEM_NET_SECURITY_NEGOTIATESTREAM___C__DISPLAYCLASS69_0__AUTHENTICATEASCLIENTASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x1942C420)
+#define SYSTEM_NET_SECURITY_NEGOTIATESTREAM___C__DISPLAYCLASS69_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1942C410)
 
 namespace System::Net::Security
 {
@@ -23,8 +23,8 @@ namespace System::Net::Security
 		::System::Net::NetworkCredential* credential; // 0x10
 		::System::String* targetName; // 0x18
 		::System::Net::Security::NegotiateStream* __4__this; // 0x20
-		::System::Net::Security::ProtectionLevel requiredProtectionLevel; // 0x28
-		::System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel; // 0x2C
+		::System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel; // 0x28
+		::System::Net::Security::ProtectionLevel requiredProtectionLevel; // 0x2C
 
 		::System::Void _ctor()
 		{

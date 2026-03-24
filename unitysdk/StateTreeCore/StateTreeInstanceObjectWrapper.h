@@ -6,7 +6,7 @@ namespace System { class Object; }
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeInstanceObjectWrapper_TypeDefinitionIndex = 26946;
+	inline static constexpr unsigned int StateTreeInstanceObjectWrapper_TypeDefinitionIndex = 27800;
 
 	struct alignas(8) StateTreeInstanceObjectWrapper
 	{

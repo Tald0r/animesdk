@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int FontStyle_TypeDefinitionIndex = 6329;
+	inline static constexpr unsigned int FontStyle_TypeDefinitionIndex = 6333;
 
 	enum class FontStyle : ::System::Int32
 	{

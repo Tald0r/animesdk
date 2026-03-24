@@ -7,17 +7,17 @@
 
 namespace MoleMole { class ConfigAnimationCurveGroup; }
 
-#define CLASS_3_A62EF186B82BF468_METHOD_3_8E1A362AB2A5826A_OFFSET UNITYSDK_OFFSET(0xA308B20)
-#define CLASS_3_A62EF186B82BF468_METHOD_3_CB34CEEE3338453A_OFFSET UNITYSDK_OFFSET(0x80C0470)
-#define CLASS_3_A62EF186B82BF468__CTOR_OFFSET UNITYSDK_OFFSET(0xA307EE0)
+#define CLASS_3_A62EF186B82BF468_METHOD_3_8E1A362AB2A5826A_OFFSET UNITYSDK_OFFSET(0x6F806F0)
+#define CLASS_3_A62EF186B82BF468_METHOD_3_CB34CEEE3338453A_OFFSET UNITYSDK_OFFSET(0x6F81100)
+#define CLASS_3_A62EF186B82BF468__CTOR_OFFSET UNITYSDK_OFFSET(0x6F80660)
 
-inline static constexpr unsigned int Class_3_A62EF186B82BF468_TypeDefinitionIndex = 77071;
+inline static constexpr unsigned int Class_3_A62EF186B82BF468_TypeDefinitionIndex = 55036;
 
 class Class_3_A62EF186B82BF468 : public ::Class_2_AD2DCA69807FE773
 {
 public:
-	::UnityEngine::Vector3 Field_3_0; // 0x70
-	::UnityEngine::Vector3 Field_3_1; // 0x7C
+	::UnityEngine::Vector3 Field_3_1; // 0x70
+	::UnityEngine::Vector3 Field_3_0; // 0x7C
 
 	::System::Void _ctor(::System::Boolean a1, ::System::Boolean a2, ::Foundation::Unreal::FTransform3D a3, ::MoleMole::ConfigAnimationCurveGroup* a4, ::System::Boolean a5, ::UnityEngine::Vector3 a6, ::UnityEngine::Vector3 a7)
 	{

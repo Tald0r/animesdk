@@ -7,29 +7,29 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19DA8F20)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19DA8F60)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__TOSTRING_B__11_0_OFFSET UNITYSDK_OFFSET(0x19DA8F70)
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__TOSTRING_B__11_1_OFFSET UNITYSDK_OFFSET(0x19DA8F80)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A55F740)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A55F780)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__TOSTRING_B__11_0_OFFSET UNITYSDK_OFFSET(0x1A55F790)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_JSONPARSER_JSONVALUE___C__TOSTRING_B__11_1_OFFSET UNITYSDK_OFFSET(0x1A55F7A0)
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int JsonParser_JsonValue___c_TypeDefinitionIndex = 27941;
+	inline static constexpr unsigned int JsonParser_JsonValue___c_TypeDefinitionIndex = 28881;
 
 	class JsonParser_JsonValue___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue, ::System::String*>** StaticGet___9__11_0()
+		static ::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue___c** StaticGet___9()
 		{
-			return (::System::Func_2<::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JsonParser_JsonValue___c_TypeDefinitionIndex)->GetStaticField(0x20590);
+			return (::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue___c**)Il2CppClass::FromTypeDefinitionIndex(JsonParser_JsonValue___c_TypeDefinitionIndex)->GetStaticField(0x21BF0);
 		}
 		static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue>, ::System::String*>** StaticGet___9__11_1()
 		{
-			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JsonParser_JsonValue___c_TypeDefinitionIndex)->GetStaticField(0x20598);
+			return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JsonParser_JsonValue___c_TypeDefinitionIndex)->GetStaticField(0x21BF8);
 		}
-		static ::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue___c** StaticGet___9()
+		static ::System::Func_2<::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue, ::System::String*>** StaticGet___9__11_0()
 		{
-			return (::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue___c**)Il2CppClass::FromTypeDefinitionIndex(JsonParser_JsonValue___c_TypeDefinitionIndex)->GetStaticField(0x205A0);
+			return (::System::Func_2<::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(JsonParser_JsonValue___c_TypeDefinitionIndex)->GetStaticField(0x21C00);
 		}
 
 		static ::System::Void _cctor()

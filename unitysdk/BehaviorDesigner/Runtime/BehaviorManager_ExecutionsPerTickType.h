@@ -3,7 +3,7 @@
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int BehaviorManager_ExecutionsPerTickType_TypeDefinitionIndex = 30190;
+	inline static constexpr unsigned int BehaviorManager_ExecutionsPerTickType_TypeDefinitionIndex = 31143;
 
 	enum class BehaviorManager_ExecutionsPerTickType : ::System::Int32
 	{

@@ -1,6 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/CommandLineSettingBase_2.h"
+#include "unitysdk/MoleMole/Config/ConfigViewObjectMisc_EntityCreate.h"
 #include "unitysdk/MoleMole/ECrowdShadowFineness.h"
 #include "unitysdk/MoleMole/FrameRateInterpolateType.h"
 #include "unitysdk/MoleMole/InLevelNPCCrowdLevel.h"
@@ -17,17 +18,18 @@
 #include "unitysdk/UnityEngine/Rendering/Universal/EWaterInteractQuality.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/GpuGrassShadowType.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/LightLodQuality.h"
+#include "unitysdk/UnityEngine/Rendering/Universal/RTXAOQuality.h"
 #include "unitysdk/UnityEngine/Vector4.h"
 
 namespace MoleMole { class PerformanceSettingProfile; }
 
-#define MOLEMOLE_COMMANDLINEPERFORMANCESETTING_METHOD_2_9FC70C958B16100F_OFFSET UNITYSDK_OFFSET(0x6D3A860)
-#define MOLEMOLE_COMMANDLINEPERFORMANCESETTING_METHOD_2_C4A0A4F718FBF3A3_OFFSET UNITYSDK_OFFSET(0x6D3B400)
-#define MOLEMOLE_COMMANDLINEPERFORMANCESETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3B3C0)
+#define MOLEMOLE_COMMANDLINEPERFORMANCESETTING_METHOD_2_9FC70C958B16100F_OFFSET UNITYSDK_OFFSET(0xBADB800)
+#define MOLEMOLE_COMMANDLINEPERFORMANCESETTING_METHOD_2_C4A0A4F718FBF3A3_OFFSET UNITYSDK_OFFSET(0xBADC3C0)
+#define MOLEMOLE_COMMANDLINEPERFORMANCESETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xBADC380)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CommandLinePerformanceSetting_TypeDefinitionIndex = 52359;
+	inline static constexpr unsigned int CommandLinePerformanceSetting_TypeDefinitionIndex = 67433;
 
 	class CommandLinePerformanceSetting : public ::MoleMole::CommandLineSettingBase_2<::MoleMole::PerformanceSettingProfile*, ::MoleMole::CommandLinePerformanceSetting*>
 	{
@@ -153,8 +155,9 @@ namespace MoleMole
 		::System::Nullable_1<::UnityEngine::Rendering::Universal::GpuGrassShadowType> gpuGrassShadowType; // 0x30C
 		::System::Nullable_1<::System::Boolean> needExtraDownSampleForFrostedGlass; // 0x314
 		::System::Nullable_1<::System::Boolean> enableParticleLightCountOptimize; // 0x316
-		::System::Nullable_1<::System::Single> VoEntityDelayCreateGridSize; // 0x318
-		::System::Nullable_1<::UnityEngine::NAPRenderPipeline0::SSAOQuality> ssaoMaxQuality; // 0x320
+		::System::Nullable_1<::MoleMole::Config::ConfigViewObjectMisc_EntityCreate> Vo_EntityCreate; // 0x318
+		::System::Nullable_1<::UnityEngine::NAPRenderPipeline0::SSAOQuality> ssaoMaxQuality; // 0x328
+		::System::Nullable_1<::UnityEngine::Rendering::Universal::RTXAOQuality> rtxAOQuality; // 0x330
 
 		::System::Void _ctor()
 		{

@@ -9,19 +9,19 @@
 namespace MoleMole { class UIMusicBattleInLevelToolBarBossWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIMUSICBATTLEINLEVELTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__32_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2FBDD0)
-#define MOLEMOLE_UIMUSICBATTLEINLEVELTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__32_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIMUSICBATTLEINLEVELTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__32_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x356C50)
+#define MOLEMOLE_UIMUSICBATTLEINLEVELTOOLBARBOSSWIDGETCONTROLLER__SETACTIVEINTERNAL_D__32_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicBattleInLevelToolBarBossWidgetController__SetActiveInternal_d__32_TypeDefinitionIndex = 64878;
+	inline static constexpr unsigned int UIMusicBattleInLevelToolBarBossWidgetController__SetActiveInternal_d__32_TypeDefinitionIndex = 61899;
 
 	struct alignas(8) UIMusicBattleInLevelToolBarBossWidgetController__SetActiveInternal_d__32
 	{
-		::MoleMole::UIMusicBattleInLevelToolBarBossWidgetController* __4__this; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x18
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x38
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x10
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__2; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x30
+		::MoleMole::UIMusicBattleInLevelToolBarBossWidgetController* __4__this; // 0x40
 		::System::Boolean _cacheValue_5__2; // 0x48
 		::System::Boolean value; // 0x49
 		::System::Int32 __1__state; // 0x4C

@@ -4,20 +4,20 @@
 
 namespace System { class AssemblyLoadEventArgs; }
 
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0D51B0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0D51E0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER___C___CCTOR_B__12_0_OFFSET UNITYSDK_OFFSET(0x1B0D51F0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6E6DD0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6E6E00)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER___C___CCTOR_B__12_0_OFFSET UNITYSDK_OFFSET(0x1B6E6E10)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int DefaultSerializationBinder___c_TypeDefinitionIndex = 7364;
+	inline static constexpr unsigned int DefaultSerializationBinder___c_TypeDefinitionIndex = 7369;
 
 	class DefaultSerializationBinder___c : public ::System::Object
 	{
 	public:
 		static ::Sirenix::Serialization::DefaultSerializationBinder___c** StaticGet___9()
 		{
-			return (::Sirenix::Serialization::DefaultSerializationBinder___c**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder___c_TypeDefinitionIndex)->GetStaticField(0x6110);
+			return (::Sirenix::Serialization::DefaultSerializationBinder___c**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder___c_TypeDefinitionIndex)->GetStaticField(0x6150);
 		}
 
 		static ::System::Void _cctor()

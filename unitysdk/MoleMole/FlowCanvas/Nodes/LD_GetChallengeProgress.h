@@ -11,28 +11,28 @@ namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 namespace MoleMole::Battle { class ChallengeSubTypeItem; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x990C740)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0x990C900)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_0_OFFSET UNITYSDK_OFFSET(0x990C930)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_1_OFFSET UNITYSDK_OFFSET(0x990C940)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_2_OFFSET UNITYSDK_OFFSET(0x990C950)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA507580)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__CTOR_OFFSET UNITYSDK_OFFSET(0xA507740)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_0_OFFSET UNITYSDK_OFFSET(0xA507770)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_1_OFFSET UNITYSDK_OFFSET(0xA507780)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_GETCHALLENGEPROGRESS__REGISTERPORTS_B__9_2_OFFSET UNITYSDK_OFFSET(0xA507790)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_GetChallengeProgress_TypeDefinitionIndex = 59635;
+	inline static constexpr unsigned int LD_GetChallengeProgress_TypeDefinitionIndex = 45624;
 
 	class LD_GetChallengeProgress : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* onChangeProgress; // 0xA8
-		::FlowCanvas::FlowInput* updateProgress; // 0xB0
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::ChallengeSubTypeItem*>* challengeSubTypeItem; // 0xB8
-		::FlowCanvas::ValueInput_1<::Class_1_A26009A270D71B3D*>* challengeItem; // 0xC0
-		::FlowCanvas::ValueOutput_1<::System::String*>* stringProgressOutput; // 0xC8
+		::FlowCanvas::ValueInput_1<::Class_1_A26009A270D71B3D*>* challengeItem; // 0xA8
+		::FlowCanvas::FlowOutput* onChangeProgress; // 0xB0
+		::FlowCanvas::ValueOutput_1<::System::String*>* stringProgressOutput; // 0xB8
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::ChallengeSubTypeItem*>* challengeSubTypeItem; // 0xC0
+		::FlowCanvas::FlowInput* updateProgress; // 0xC8
 		::System::String* _cacheStrProg; // 0xD0
-		::System::Single _preProg; // 0xD8
-		::System::Boolean _hasFirstCall; // 0xDC
-		::System::Single _cacheProg; // 0xE0
+		::System::Boolean _hasFirstCall; // 0xD8
+		::System::Single _cacheProg; // 0xDC
+		::System::Single _preProg; // 0xE0
 
 		::System::Void _ctor()
 		{

@@ -5,7 +5,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int UnsharpMaskCBuffer_TypeDefinitionIndex = 28925;
+	inline static constexpr unsigned int UnsharpMaskCBuffer_TypeDefinitionIndex = 29876;
 
 	struct alignas(4) UnsharpMaskCBuffer
 	{

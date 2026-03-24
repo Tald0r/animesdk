@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDWaveTreasure___c__DisplayClass10_1_TypeDefinitionIndex = 69040;
+	inline static constexpr unsigned int LDWaveTreasure___c__DisplayClass10_1_TypeDefinitionIndex = 79755;
 
 	struct alignas(8) LDWaveTreasure___c__DisplayClass10_1
 	{

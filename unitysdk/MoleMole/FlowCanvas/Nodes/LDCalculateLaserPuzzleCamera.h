@@ -11,35 +11,35 @@ namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA_CALCULATECAMERA_OFFSET UNITYSDK_OFFSET(0xEC72BD0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xEC72880)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0xEC74620)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__REGISTERPORTS_B__15_0_OFFSET UNITYSDK_OFFSET(0xEC74640)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__REGISTERPORTS_B__15_1_OFFSET UNITYSDK_OFFSET(0xEC74660)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__REGISTERPORTS_B__15_2_OFFSET UNITYSDK_OFFSET(0xEC74680)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA_CALCULATECAMERA_OFFSET UNITYSDK_OFFSET(0x75716C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7571370)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0x7573110)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__REGISTERPORTS_B__15_0_OFFSET UNITYSDK_OFFSET(0x7573130)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__REGISTERPORTS_B__15_1_OFFSET UNITYSDK_OFFSET(0x7573150)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCALCULATELASERPUZZLECAMERA__REGISTERPORTS_B__15_2_OFFSET UNITYSDK_OFFSET(0x7573170)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCalculateLaserPuzzleCamera_TypeDefinitionIndex = 59836;
+	inline static constexpr unsigned int LDCalculateLaserPuzzleCamera_TypeDefinitionIndex = 66557;
 
 	class LDCalculateLaserPuzzleCamera : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		// static const ::System::Single AspectRatio; // 0x0
-		::FlowCanvas::ValueInput_1<::System::Single>* yawOffset; // 0xA8
-		::FlowCanvas::ValueOutput_1<::UnityEngine::Vector3>* cameraRotation; // 0xB0
-		::FlowCanvas::ValueOutput_1<::UnityEngine::Vector3>* cameraLocation; // 0xB8
-		::FlowCanvas::ValueInput_1<::System::Single>* frameTop; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Single>* fieldOfView; // 0xC8
-		::FlowCanvas::ValueInput_1<::System::Single>* frameRight; // 0xD0
+		::FlowCanvas::ValueInput_1<::System::Collections::Generic::List_1<::System::String*>*>* targetTagList; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::Single>* frameTop; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Single>* fieldOfView; // 0xB8
+		::FlowCanvas::ValueOutput_1<::UnityEngine::Vector3>* cameraLocation; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::Single>* frameLeft; // 0xC8
+		::FlowCanvas::ValueInput_1<::System::Single>* frameBottom; // 0xD0
 		::FlowCanvas::ValueInput_1<::System::Single>* height; // 0xD8
-		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* baseEntity; // 0xE0
-		::FlowCanvas::ValueInput_1<::System::Single>* frameLeft; // 0xE8
-		::FlowCanvas::ValueInput_1<::System::Collections::Generic::List_1<::System::String*>*>* targetTagList; // 0xF0
-		::FlowCanvas::ValueInput_1<::System::Single>* frameBottom; // 0xF8
-		::FlowCanvas::FlowOutput* _output; // 0x100
-		::UnityEngine::Vector3 _cameraLocation; // 0x108
-		::UnityEngine::Vector3 _cameraRotation; // 0x114
+		::FlowCanvas::ValueInput_1<::System::Single>* frameRight; // 0xE0
+		::FlowCanvas::ValueOutput_1<::UnityEngine::Vector3>* cameraRotation; // 0xE8
+		::FlowCanvas::FlowOutput* _output; // 0xF0
+		::FlowCanvas::ValueInput_1<::System::Single>* yawOffset; // 0xF8
+		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* baseEntity; // 0x100
+		::UnityEngine::Vector3 _cameraRotation; // 0x108
+		::UnityEngine::Vector3 _cameraLocation; // 0x114
 
 		::System::Void _ctor()
 		{

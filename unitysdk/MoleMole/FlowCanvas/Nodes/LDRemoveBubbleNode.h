@@ -7,19 +7,19 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVEBUBBLENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC9C58D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVEBUBBLENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC9C59E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVEBUBBLENODE__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xC9C5A00)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVEBUBBLENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xBA0A320)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVEBUBBLENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xBA0A430)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDREMOVEBUBBLENODE__REGISTERPORTS_B__2_0_OFFSET UNITYSDK_OFFSET(0xBA0A450)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDRemoveBubbleNode_TypeDefinitionIndex = 76074;
+	inline static constexpr unsigned int LDRemoveBubbleNode_TypeDefinitionIndex = 47318;
 
 	class LDRemoveBubbleNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* entity; // 0xA8
-		::FlowCanvas::FlowOutput* output; // 0xB0
+		::FlowCanvas::FlowOutput* output; // 0xA8
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* entity; // 0xB0
 
 		::System::Void _ctor()
 		{

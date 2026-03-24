@@ -6,12 +6,12 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGCLOSEPREPAREDFULLSCREENVIDEONODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x9706990)
-#define MOLEMOLE_CONFIG_CONFIGCLOSEPREPAREDFULLSCREENVIDEONODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9706A20)
+#define MOLEMOLE_CONFIG_CONFIGCLOSEPREPAREDFULLSCREENVIDEONODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xB0953E0)
+#define MOLEMOLE_CONFIG_CONFIGCLOSEPREPAREDFULLSCREENVIDEONODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB095470)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigClosePreparedFullScreenVideoNode_TypeDefinitionIndex = 70317;
+	inline static constexpr unsigned int ConfigClosePreparedFullScreenVideoNode_TypeDefinitionIndex = 53298;
 
 	class ConfigClosePreparedFullScreenVideoNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

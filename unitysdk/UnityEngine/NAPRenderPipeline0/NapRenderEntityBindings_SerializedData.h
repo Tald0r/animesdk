@@ -9,7 +9,7 @@ namespace UnityEngine { class Transform; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int NapRenderEntityBindings_SerializedData_TypeDefinitionIndex = 6109;
+	inline static constexpr unsigned int NapRenderEntityBindings_SerializedData_TypeDefinitionIndex = 6112;
 
 	struct alignas(8) NapRenderEntityBindings_SerializedData
 	{
@@ -36,7 +36,8 @@ namespace UnityEngine::NAPRenderPipeline0
 		::UnityEngine::Vector3 customLightDirection; // 0x64
 		::System::Single customBlendedDirectionalLightSize; // 0x70
 		::System::Single rootBoneClipOffset; // 0x74
-		::System::Int32 lodIndexedRenderersCount; // 0x78
+		::System::Single perObjectShadowResolveAlpha; // 0x78
+		::System::Int32 lodIndexedRenderersCount; // 0x7C
 		::Il2CppArray<::UnityEngine::Renderer*>* lodIndexedRenderers; // 0x80
 		::System::Int32 lodRenderersCount; // 0x88
 		::Il2CppArray<::UnityEngine::Renderer*>* lodRenderers; // 0x90

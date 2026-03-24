@@ -1,27 +1,30 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/UnrealTypes/TObjectHandle_1.h"
 
-#define UNREALTYPES_FSTRUCTVIEW_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x8EB380)
-#define UNREALTYPES_FSTRUCTVIEW_GET_MEMORY_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define UNREALTYPES_FSTRUCTVIEW_GET_POINTER_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define UNREALTYPES_FSTRUCTVIEW_GET_SCRIPTSTRUCT_OFFSET UNITYSDK_OFFSET(0x2C6230)
-#define UNREALTYPES_FSTRUCTVIEW_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1AFC3BB0)
-#define UNREALTYPES_FSTRUCTVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x973490)
+namespace UnrealTypes { class ScriptStruct; }
+
+#define UNREALTYPES_FSTRUCTVIEW_EQUALS_OFFSET UNITYSDK_OFFSET(0x91CD50)
+#define UNREALTYPES_FSTRUCTVIEW_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x91CC50)
+#define UNREALTYPES_FSTRUCTVIEW_GET_MEMORY_OFFSET UNITYSDK_OFFSET(0x223870)
+#define UNREALTYPES_FSTRUCTVIEW_GET_POINTER_OFFSET UNITYSDK_OFFSET(0x223870)
+#define UNREALTYPES_FSTRUCTVIEW_GET_SCRIPTSTRUCT_OFFSET UNITYSDK_OFFSET(0x2EC6E0)
+#define UNREALTYPES_FSTRUCTVIEW_OP_IMPLICIT_OFFSET UNITYSDK_OFFSET(0x1A205C40)
+#define UNREALTYPES_FSTRUCTVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x91CC70)
 
 namespace UnrealTypes
 {
-	inline static constexpr unsigned int FStructView_TypeDefinitionIndex = 23995;
+	inline static constexpr unsigned int FStructView_TypeDefinitionIndex = 24821;
 
 	struct alignas(8) FStructView
 	{
 		::System::Void* _structMemory; // 0x10
-		::UnrealTypes::FStructHandle _scriptStruct; // 0x18
+		::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*> _scriptStruct; // 0x18
 
-		::System::Void _ctor(::UnrealTypes::FStructHandle& scriptStruct, ::System::Void* structMemory)
+		::System::Void _ctor(::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*>& scriptStruct, ::System::Void* structMemory)
 		{
-			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FStructHandle&, ::System::Void*))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW__CTOR_OFFSET))(this, scriptStruct, structMemory);
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*>&, ::System::Void*))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW__CTOR_OFFSET))(this, scriptStruct, structMemory);
 		}
 
 		::System::Void* get_Memory()
@@ -34,9 +37,9 @@ namespace UnrealTypes
 			return ((::System::IntPtr(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW_GET_POINTER_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_ScriptStruct()
+		::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*> get_ScriptStruct()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW_GET_SCRIPTSTRUCT_OFFSET))(this);
+			return ((::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*>(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW_GET_SCRIPTSTRUCT_OFFSET))(this);
 		}
 
 		::System::Boolean get_IsValid()
@@ -50,5 +53,10 @@ namespace UnrealTypes
 			return ((::UnrealTypes::FStructView(*)(::UnrealTypes::FInstancedStruct&))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW_OP_IMPLICIT_OFFSET))(instancedStruct);
 		}
 		*/
+
+		::System::Boolean Equals(::UnrealTypes::FStructView other)
+		{
+			return ((::System::Boolean(*)(::PVOID, ::UnrealTypes::FStructView))((::PBYTE)hIl2Cpp + UNREALTYPES_FSTRUCTVIEW_EQUALS_OFFSET))(this, other);
+		}
 	};
 }

@@ -5,17 +5,17 @@
 
 class Class_3_C24316E73A7EDF3D;
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
-template <typename T> class Class_1_B81AB3851AD916CA;
+template <typename T> class Class_1_4109B64C3CE1B638;
 
-#define CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41_METHOD_1_0866A3CCE03C8ECA_OFFSET UNITYSDK_OFFSET(0xB87FA60)
-#define CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41__CTOR_OFFSET UNITYSDK_OFFSET(0xB87FA50)
+#define CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41_METHOD_1_0866A3CCE03C8ECA_OFFSET UNITYSDK_OFFSET(0x6131EB0)
+#define CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41__CTOR_OFFSET UNITYSDK_OFFSET(0x6131EA0)
 
-inline static constexpr unsigned int Class_2_2F3C7D4EFC74D485_Class_1_6C3688D36AA16B41_TypeDefinitionIndex = 45994;
+inline static constexpr unsigned int Class_2_2F3C7D4EFC74D485_Class_1_6C3688D36AA16B41_TypeDefinitionIndex = 52235;
 
 class Class_2_2F3C7D4EFC74D485_Class_1_6C3688D36AA16B41 : public ::System::Object
 {
 public:
-	::System::Action_3<::Class_1_B81AB3851AD916CA<::Class_3_C24316E73A7EDF3D*>*, ::System::Boolean, ::System::Boolean>* Field_1_0; // 0x10
+	::System::Action_3<::Class_1_4109B64C3CE1B638<::Class_3_C24316E73A7EDF3D*>*, ::System::Boolean, ::System::Boolean>* Field_1_0; // 0x10
 	::Struct_2_1A84C744BF703CC0 Field_1_1; // 0x18
 
 	::System::Void _ctor()
@@ -23,8 +23,8 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41__CTOR_OFFSET))(this);
 	}
 
-	::System::Void Method_1_0866A3CCE03C8ECA(::Class_1_B81AB3851AD916CA<::Class_3_C24316E73A7EDF3D*>* a1, ::System::Boolean a2)
+	::System::Void Method_1_0866A3CCE03C8ECA(::Class_1_4109B64C3CE1B638<::Class_3_C24316E73A7EDF3D*>* a1, ::System::Boolean a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_1_B81AB3851AD916CA<::Class_3_C24316E73A7EDF3D*>*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41_METHOD_1_0866A3CCE03C8ECA_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::Class_1_4109B64C3CE1B638<::Class_3_C24316E73A7EDF3D*>*, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_2F3C7D4EFC74D485_CLASS_1_6C3688D36AA16B41_METHOD_1_0866A3CCE03C8ECA_OFFSET))(this, a1, a2);
 	}
 };

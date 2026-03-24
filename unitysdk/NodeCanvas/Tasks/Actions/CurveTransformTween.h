@@ -10,26 +10,26 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_CURVETRANSFORMTWEEN_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19F59210)
-#define NODECANVAS_TASKS_ACTIONS_CURVETRANSFORMTWEEN_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x19F595C0)
-#define NODECANVAS_TASKS_ACTIONS_CURVETRANSFORMTWEEN__CTOR_OFFSET UNITYSDK_OFFSET(0x19F599D0)
+#define NODECANVAS_TASKS_ACTIONS_CURVETRANSFORMTWEEN_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A56A040)
+#define NODECANVAS_TASKS_ACTIONS_CURVETRANSFORMTWEEN_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A56A3F0)
+#define NODECANVAS_TASKS_ACTIONS_CURVETRANSFORMTWEEN__CTOR_OFFSET UNITYSDK_OFFSET(0x1A56A800)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int CurveTransformTween_TypeDefinitionIndex = 26004;
+	inline static constexpr unsigned int CurveTransformTween_TypeDefinitionIndex = 27691;
 
 	class CurveTransformTween : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{
 	public:
 		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::AnimationCurve*>* curve; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Vector3>* targetPosition; // 0x68
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* time; // 0x70
-		::UnityEngine::Vector3 original; // 0x78
-		::NodeCanvas::Tasks::Actions::CurveTransformTween_PlayMode playMode; // 0x84
-		::UnityEngine::Vector3 final; // 0x88
-		::System::Boolean ponging; // 0x94
-		::NodeCanvas::Tasks::Actions::CurveTransformTween_TweenMode mode; // 0x98
-		::NodeCanvas::Tasks::Actions::CurveTransformTween_TransformMode transformMode; // 0x9C
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* time; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::Vector3>* targetPosition; // 0x70
+		::NodeCanvas::Tasks::Actions::CurveTransformTween_PlayMode playMode; // 0x78
+		::UnityEngine::Vector3 original; // 0x7C
+		::NodeCanvas::Tasks::Actions::CurveTransformTween_TweenMode mode; // 0x88
+		::NodeCanvas::Tasks::Actions::CurveTransformTween_TransformMode transformMode; // 0x8C
+		::System::Boolean ponging; // 0x90
+		::UnityEngine::Vector3 final; // 0x94
 
 		::System::Void _ctor()
 		{

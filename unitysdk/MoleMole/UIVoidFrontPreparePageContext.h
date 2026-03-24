@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIVOIDFRONTPREPAREPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7C5CE90)
+#define MOLEMOLE_UIVOIDFRONTPREPAREPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA6D36C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVoidFrontPreparePageContext_TypeDefinitionIndex = 75335;
+	inline static constexpr unsigned int UIVoidFrontPreparePageContext_TypeDefinitionIndex = 50263;
 
 	class UIVoidFrontPreparePageContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Int32 battleId; // 0x28
-		::System::Boolean showMainBtn; // 0x2C
+		::System::Boolean showMainBtn; // 0x28
+		::System::Int32 battleId; // 0x2C
 
 		::System::Void _ctor()
 		{

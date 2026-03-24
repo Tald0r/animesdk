@@ -14,12 +14,12 @@ namespace UnityEngine::Rendering::Universal::WeatherSystem { class GIConfig; }
 namespace UnityEngine::Rendering::Universal::WeatherSystem { class MainLightConfig; }
 namespace UnityEngine::Rendering::Universal::WeatherSystem { class VolumetricFogConfig; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_OVERRIDEWEATHERCONFIGSCRIPTABLEOBJECT_APPLY_OFFSET UNITYSDK_OFFSET(0x183BDCC0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_OVERRIDEWEATHERCONFIGSCRIPTABLEOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x183BF6A0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_OVERRIDEWEATHERCONFIGSCRIPTABLEOBJECT_APPLY_OFFSET UNITYSDK_OFFSET(0x18919BB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_OVERRIDEWEATHERCONFIGSCRIPTABLEOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x1891B590)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int OverrideWeatherConfigScriptableObject_TypeDefinitionIndex = 28517;
+	inline static constexpr unsigned int OverrideWeatherConfigScriptableObject_TypeDefinitionIndex = 29460;
 
 	class OverrideWeatherConfigScriptableObject : public ::UnityEngine::ScriptableObject
 	{

@@ -3,7 +3,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int InterpCurveMode_TypeDefinitionIndex = 34527;
+	inline static constexpr unsigned int InterpCurveMode_TypeDefinitionIndex = 35529;
 
 	enum class InterpCurveMode : ::System::Byte
 	{

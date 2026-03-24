@@ -3,17 +3,17 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationPassEvent_TypeDefinitionIndex = 75763;
+	inline static constexpr unsigned int AnimationPassEvent_TypeDefinitionIndex = 44815;
 
 	enum class AnimationPassEvent : ::System::Int32
 	{
 		BeforeForwardKinematics = 100,
-		AfterInverseKinematics = 600,
 		BeforeInverseKinematics = 400,
-		InverseKinematics = 500,
-		BeforeAnimation = 0,
-		AfterForwardKinematics = 300,
 		ForwardKinematics = 200,
 		AfterAnimation = 1000,
+		AfterForwardKinematics = 300,
+		InverseKinematics = 500,
+		AfterInverseKinematics = 600,
+		BeforeAnimation = 0,
 	};
 }

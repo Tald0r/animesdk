@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_ENTITYDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xE868320)
+#define MOLEMOLE_FLOWCANVAS_NODES_ENTITYDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xCD37220)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int EntityData_TypeDefinitionIndex = 73035;
+	inline static constexpr unsigned int EntityData_TypeDefinitionIndex = 53555;
 
 	class EntityData : public ::System::Object
 	{

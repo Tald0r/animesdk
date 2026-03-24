@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/EnumVolumeParameter_1.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/OtherLightShadowResolution.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_OTHERLIGHTSHADOWQUALITYPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x185E6660)
+#define UNITYENGINE_RENDERING_UNIVERSAL_OTHERLIGHTSHADOWQUALITYPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x18B4EEB0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int OtherLightShadowQualityParameter_TypeDefinitionIndex = 28662;
+	inline static constexpr unsigned int OtherLightShadowQualityParameter_TypeDefinitionIndex = 29605;
 
 	class OtherLightShadowQualityParameter : public ::UnityEngine::NAPRenderPipeline0::EnumVolumeParameter_1<::UnityEngine::NAPRenderPipeline0::OtherLightShadowResolution>
 	{

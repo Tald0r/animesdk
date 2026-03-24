@@ -5,7 +5,7 @@
 
 namespace MoleMole { class UIPerformPageController; }
 
-inline static constexpr unsigned int Struct_2_DA3A109C3E0BFF6B_TypeDefinitionIndex = 63413;
+inline static constexpr unsigned int Struct_2_DA3A109C3E0BFF6B_TypeDefinitionIndex = 76925;
 
 struct alignas(8) Struct_2_DA3A109C3E0BFF6B
 {

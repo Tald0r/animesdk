@@ -3,18 +3,18 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LogicAxis2DInputType_TypeDefinitionIndex = 50464;
+	inline static constexpr unsigned int LogicAxis2DInputType_TypeDefinitionIndex = 46139;
 
 	enum class LogicAxis2DInputType : ::System::Int32
 	{
-		GamepadDpad = 7,
 		GamepadLeftStick = 0,
-		MousePosition = 6,
-		None = -1,
+		MouseScroll = 3,
 		MousePositionDeltaRaw = 5,
+		None = -1,
+		MousePosition = 6,
 		GamepadRightStick = 1,
 		InLevelCameraMousePositionDelta = 2,
 		PhotoModeZoom = 4,
-		MouseScroll = 3,
+		GamepadDpad = 7,
 	};
 }

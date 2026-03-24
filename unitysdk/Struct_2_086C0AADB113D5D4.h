@@ -4,7 +4,7 @@
 #include "unitysdk/ProtoScript/TimePeriodType.h"
 #include "unitysdk/System/ValueType.h"
 
-inline static constexpr unsigned int Struct_2_086C0AADB113D5D4_TypeDefinitionIndex = 36867;
+inline static constexpr unsigned int Struct_2_086C0AADB113D5D4_TypeDefinitionIndex = 72539;
 
 struct alignas(4) Struct_2_086C0AADB113D5D4
 {

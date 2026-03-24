@@ -6,19 +6,19 @@
 
 namespace System { class String; }
 
-#define BINARYTRACINGCORE_SOURCE_TRACINGREAD_LOGPROPERTYVIEW_GET_PROPERTYKEY_OFFSET UNITYSDK_OFFSET(0x1ABA7070)
-#define BINARYTRACINGCORE_SOURCE_TRACINGREAD_LOGPROPERTYVIEW_GET_PROPERTYVALUE_OFFSET UNITYSDK_OFFSET(0x1ABA7080)
-#define BINARYTRACINGCORE_SOURCE_TRACINGREAD_LOGPROPERTYVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABA7130)
+#define BINARYTRACINGCORE_SOURCE_TRACINGREAD_LOGPROPERTYVIEW_GET_PROPERTYKEY_OFFSET UNITYSDK_OFFSET(0x1B1CE550)
+#define BINARYTRACINGCORE_SOURCE_TRACINGREAD_LOGPROPERTYVIEW_GET_PROPERTYVALUE_OFFSET UNITYSDK_OFFSET(0x1B1CE560)
+#define BINARYTRACINGCORE_SOURCE_TRACINGREAD_LOGPROPERTYVIEW__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1CE610)
 
 namespace BinaryTracingCore::Source::TracingRead
 {
-	inline static constexpr unsigned int LogPropertyView_TypeDefinitionIndex = 30935;
+	inline static constexpr unsigned int LogPropertyView_TypeDefinitionIndex = 31887;
 
 	class LogPropertyView : public ::System::Object
 	{
 	public:
-		::BinaryTracingCore::Source::TracingTools::LogProperty LogProperty; // 0x10
-		::BinaryTracingCore::Source::TracingRead::LogPropertyUnionValue Value; // 0x20
+		::BinaryTracingCore::Source::TracingRead::LogPropertyUnionValue Value; // 0x10
+		::BinaryTracingCore::Source::TracingTools::LogProperty LogProperty; // 0x20
 
 		::System::Void _ctor()
 		{

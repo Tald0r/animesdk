@@ -4,12 +4,12 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define NPCCROWD_AI_PATHGRAPHSPLINECONFIG_PATHGRAPHPOINT_DEEPCOPY_OFFSET UNITYSDK_OFFSET(0xA0FD4E0)
-#define NPCCROWD_AI_PATHGRAPHSPLINECONFIG_PATHGRAPHPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xA0FD5D0)
+#define NPCCROWD_AI_PATHGRAPHSPLINECONFIG_PATHGRAPHPOINT_DEEPCOPY_OFFSET UNITYSDK_OFFSET(0x76C4340)
+#define NPCCROWD_AI_PATHGRAPHSPLINECONFIG_PATHGRAPHPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0x76C4430)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int PathGraphSplineConfig_PathGraphPoint_TypeDefinitionIndex = 74091;
+	inline static constexpr unsigned int PathGraphSplineConfig_PathGraphPoint_TypeDefinitionIndex = 62031;
 
 	class PathGraphSplineConfig_PathGraphPoint : public ::System::Object
 	{

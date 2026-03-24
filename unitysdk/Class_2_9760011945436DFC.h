@@ -6,17 +6,17 @@ class Class_2_777A5D016ADC7368;
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_9760011945436DFC_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x7AF0750)
-#define CLASS_2_9760011945436DFC_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7AF0810)
-#define CLASS_2_9760011945436DFC__CTOR_OFFSET UNITYSDK_OFFSET(0x7AF0800)
+#define CLASS_2_9760011945436DFC_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x84DE2D0)
+#define CLASS_2_9760011945436DFC_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x84DE390)
+#define CLASS_2_9760011945436DFC__CTOR_OFFSET UNITYSDK_OFFSET(0x84DE380)
 
-inline static constexpr unsigned int Class_2_9760011945436DFC_TypeDefinitionIndex = 38119;
+inline static constexpr unsigned int Class_2_9760011945436DFC_TypeDefinitionIndex = 65533;
 
 class Class_2_9760011945436DFC : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_0; // 0x18
-	::UnityEngine::UI::Text* Field_2_1; // 0x20
+	::UnityEngine::UI::Text* Field_2_1; // 0x18
+	::UnityEngine::UI::Text* Field_2_0; // 0x20
 
 	::System::Void _ctor()
 	{

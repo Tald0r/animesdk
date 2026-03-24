@@ -4,9 +4,10 @@
 
 namespace System { class String; }
 
-#define STRUCT_2_DB31062B5932CACE_1__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define STRUCT_2_DB31062B5932CACE_1_DISPOSE_OFFSET UNITYSDK_OFFSET(0x360080)
+#define STRUCT_2_DB31062B5932CACE_1__CTOR_OFFSET UNITYSDK_OFFSET(0x301710)
 
-inline static constexpr unsigned int Struct_2_DB31062B5932CACE_1_TypeDefinitionIndex = 61199;
+inline static constexpr unsigned int Struct_2_DB31062B5932CACE_1_TypeDefinitionIndex = 75000;
 
 struct alignas(8) Struct_2_DB31062B5932CACE_1
 {
@@ -16,5 +17,10 @@ struct alignas(8) Struct_2_DB31062B5932CACE_1
 	::System::Void _ctor(::System::String* a1, ::System::String* a2)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::String*, ::System::String*))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_1__CTOR_OFFSET))(this, a1, a2);
+	}
+
+	::System::Void Dispose()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_DB31062B5932CACE_1_DISPOSE_OFFSET))(this);
 	}
 };

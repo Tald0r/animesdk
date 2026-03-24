@@ -4,12 +4,12 @@
 
 namespace MoleMole::Vehicle { class VehicleConfig; }
 
-#define STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_1_OFFSET UNITYSDK_OFFSET(0x2C4B30)
-#define STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_2_OFFSET UNITYSDK_OFFSET(0x2C4AF0)
-#define STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_OFFSET UNITYSDK_OFFSET(0x2C4B10)
-#define STRUCT_2_EFC517AD0B056245_METHOD_2_AEFCC100FA014813_OFFSET UNITYSDK_OFFSET(0x473E30)
+#define STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_1_OFFSET UNITYSDK_OFFSET(0x2F60A0)
+#define STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_2_OFFSET UNITYSDK_OFFSET(0x2F60C0)
+#define STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_OFFSET UNITYSDK_OFFSET(0x2F60E0)
+#define STRUCT_2_EFC517AD0B056245_METHOD_2_AEFCC100FA014813_OFFSET UNITYSDK_OFFSET(0x31BC20)
 
-inline static constexpr unsigned int Struct_2_EFC517AD0B056245_TypeDefinitionIndex = 78744;
+inline static constexpr unsigned int Struct_2_EFC517AD0B056245_TypeDefinitionIndex = 45649;
 
 struct alignas(4) Struct_2_EFC517AD0B056245
 {
@@ -24,13 +24,6 @@ struct alignas(4) Struct_2_EFC517AD0B056245
 		return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_OFFSET))(this);
 	}
 
-	/*
-	::System::Single Method_2_AEFCC100FA014813(::MoleMole::Vehicle::VehicleConfig* a1, ::Struct_2_BA49C0837CB7956A& a2, ::Struct_2_BA76FAC59DBCB80D& a3, ::System::Single a4, ::System::Single a5, ::System::Single a6)
-	{
-		return ((::System::Single(*)(::PVOID, ::MoleMole::Vehicle::VehicleConfig*, ::Struct_2_BA49C0837CB7956A&, ::Struct_2_BA76FAC59DBCB80D&, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_EFC517AD0B056245_METHOD_2_AEFCC100FA014813_OFFSET))(this, a1, a2, a3, a4, a5, a6);
-	}
-	*/
-
 	::System::Single Method_2_5323F2DF46A044DA_1()
 	{
 		return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_1_OFFSET))(this);
@@ -40,4 +33,11 @@ struct alignas(4) Struct_2_EFC517AD0B056245
 	{
 		return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + STRUCT_2_EFC517AD0B056245_METHOD_2_5323F2DF46A044DA_2_OFFSET))(this);
 	}
+
+	/*
+	::System::Single Method_2_AEFCC100FA014813(::MoleMole::Vehicle::VehicleConfig* a1, ::Struct_2_BA49C0837CB7956A& a2, ::Struct_2_BA76FAC59DBCB80D& a3, ::System::Single a4, ::System::Single a5, ::System::Single a6)
+	{
+		return ((::System::Single(*)(::PVOID, ::MoleMole::Vehicle::VehicleConfig*, ::Struct_2_BA49C0837CB7956A&, ::Struct_2_BA76FAC59DBCB80D&, ::System::Single, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + STRUCT_2_EFC517AD0B056245_METHOD_2_AEFCC100FA014813_OFFSET))(this, a1, a2, a3, a4, a5, a6);
+	}
+	*/
 };

@@ -3,13 +3,13 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLevelResultPerforms_ConfigLevelResultPerformEffectType_TypeDefinitionIndex = 46855;
+	inline static constexpr unsigned int ConfigLevelResultPerforms_ConfigLevelResultPerformEffectType_TypeDefinitionIndex = 46273;
 
 	enum class ConfigLevelResultPerforms_ConfigLevelResultPerformEffectType : ::System::Int32
 	{
-		Other = 2,
 		UnLoop = 3,
 		UI = 1,
 		Glitch = 0,
+		Other = 2,
 	};
 }

@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIMainCityClockWidgetController; }
 
-#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER___C__DISPLAYCLASS43_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7D493E0)
-#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER___C__DISPLAYCLASS43_0__DOREFRESHTIME_B__1_OFFSET UNITYSDK_OFFSET(0x7D493F0)
+#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER___C__DISPLAYCLASS43_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8EC5580)
+#define MOLEMOLE_UIMAINCITYCLOCKWIDGETCONTROLLER___C__DISPLAYCLASS43_0__DOREFRESHTIME_B__1_OFFSET UNITYSDK_OFFSET(0x8EC5590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityClockWidgetController___c__DisplayClass43_0_TypeDefinitionIndex = 68088;
+	inline static constexpr unsigned int UIMainCityClockWidgetController___c__DisplayClass43_0_TypeDefinitionIndex = 42190;
 
 	class UIMainCityClockWidgetController___c__DisplayClass43_0 : public ::System::Object
 	{

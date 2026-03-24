@@ -4,11 +4,11 @@
 
 class Class_2_CEF0D076577A9E4E;
 
-#define MOLEMOLE_UIWORKBENCHROLEINFODIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC408520)
+#define MOLEMOLE_UIWORKBENCHROLEINFODIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA136200)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchRoleInfoDialogPopWindowController_Context_TypeDefinitionIndex = 60911;
+	inline static constexpr unsigned int UIWorkBenchRoleInfoDialogPopWindowController_Context_TypeDefinitionIndex = 48853;
 
 	class UIWorkBenchRoleInfoDialogPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{

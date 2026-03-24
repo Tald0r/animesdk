@@ -11,26 +11,26 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_DBC51CF79F50022E_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0xB69C160)
-#define CLASS_2_DBC51CF79F50022E_METHOD_2_8AE01EFA7526266A_OFFSET UNITYSDK_OFFSET(0xB69BF30)
-#define CLASS_2_DBC51CF79F50022E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB69C210)
-#define CLASS_2_DBC51CF79F50022E__CTOR_OFFSET UNITYSDK_OFFSET(0xB69C200)
+#define CLASS_2_DBC51CF79F50022E_METHOD_2_1B167429A8B82AD3_OFFSET UNITYSDK_OFFSET(0x82BB3E0)
+#define CLASS_2_DBC51CF79F50022E_METHOD_2_8AE01EFA7526266A_OFFSET UNITYSDK_OFFSET(0x82BB1B0)
+#define CLASS_2_DBC51CF79F50022E_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x82BB490)
+#define CLASS_2_DBC51CF79F50022E__CTOR_OFFSET UNITYSDK_OFFSET(0x82BB480)
 
-inline static constexpr unsigned int Class_2_DBC51CF79F50022E_TypeDefinitionIndex = 57017;
+inline static constexpr unsigned int Class_2_DBC51CF79F50022E_TypeDefinitionIndex = 42979;
 
 class Class_2_DBC51CF79F50022E : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x18
-	::LevelUpProgressWidget* Field_2_7; // 0x20
-	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x38
-	::UnityEngine::GameObject* Field_2_6; // 0x40
-	::MoleMole::MonoInputKey* Field_2_8; // 0x48
-	::MoleMole::MonoInputKey* Field_2_9; // 0x50
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x58
-	::UnityEngine::Transform* Field_2_5; // 0x60
+	::UnityEngine::GameObject* Field_2_6; // 0x18
+	::UnityEngine::Transform* Field_2_5; // 0x20
+	::MoleMole::MonoInputKey* Field_2_8; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x38
+	::MoleMole::MonoInputKey* Field_2_9; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x50
+	::LevelUpProgressWidget* Field_2_7; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x60
 
 	::System::Void _ctor()
 	{

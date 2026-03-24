@@ -7,7 +7,7 @@ namespace System { class String; }
 namespace System::Collections { class Hashtable; }
 namespace System::Text::RegularExpressions { class RegexNode; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXTREE__CTOR_OFFSET UNITYSDK_OFFSET(0x19695F60)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXTREE__CTOR_OFFSET UNITYSDK_OFFSET(0x19B34960)
 
 namespace System::Text::RegularExpressions
 {
@@ -16,13 +16,13 @@ namespace System::Text::RegularExpressions
 	class RegexTree : public ::System::Object
 	{
 	public:
-		::System::Text::RegularExpressions::RegexNode* _root; // 0x10
-		::System::Collections::Hashtable* _caps; // 0x18
-		::Il2CppArray<::System::String*>* _capslist; // 0x20
-		::Il2CppArray<::System::Int32>* _capnumlist; // 0x28
-		::System::Collections::Hashtable* _capnames; // 0x30
-		::System::Int32 _captop; // 0x38
-		::System::Text::RegularExpressions::RegexOptions _options; // 0x3C
+		::Il2CppArray<::System::Int32>* _capnumlist; // 0x10
+		::System::Collections::Hashtable* _capnames; // 0x18
+		::System::Collections::Hashtable* _caps; // 0x20
+		::System::Text::RegularExpressions::RegexNode* _root; // 0x28
+		::Il2CppArray<::System::String*>* _capslist; // 0x30
+		::System::Text::RegularExpressions::RegexOptions _options; // 0x38
+		::System::Int32 _captop; // 0x3C
 
 		::System::Void _ctor(::System::Text::RegularExpressions::RegexNode* root, ::System::Collections::Hashtable* caps, ::Il2CppArray<::System::Int32>* capnumlist, ::System::Int32 captop, ::System::Collections::Hashtable* capnames, ::Il2CppArray<::System::String*>* capslist, ::System::Text::RegularExpressions::RegexOptions opts)
 		{

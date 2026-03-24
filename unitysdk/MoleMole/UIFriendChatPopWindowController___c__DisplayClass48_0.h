@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIFriendChatPopWindowController; }
 
-#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF0EF40)
+#define MOLEMOLE_UIFRIENDCHATPOPWINDOWCONTROLLER___C__DISPLAYCLASS48_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA9760E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendChatPopWindowController___c__DisplayClass48_0_TypeDefinitionIndex = 39147;
+	inline static constexpr unsigned int UIFriendChatPopWindowController___c__DisplayClass48_0_TypeDefinitionIndex = 63190;
 
 	class UIFriendChatPopWindowController___c__DisplayClass48_0 : public ::System::Object
 	{

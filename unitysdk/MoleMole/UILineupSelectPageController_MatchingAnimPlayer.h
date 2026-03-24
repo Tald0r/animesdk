@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UILineupSelectPageController; }
 
-#define MOLEMOLE_UILINEUPSELECTPAGECONTROLLER_MATCHINGANIMPLAYER_UPDATEANIMSTATE_OFFSET UNITYSDK_OFFSET(0x9440350)
-#define MOLEMOLE_UILINEUPSELECTPAGECONTROLLER_MATCHINGANIMPLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x9440630)
+#define MOLEMOLE_UILINEUPSELECTPAGECONTROLLER_MATCHINGANIMPLAYER_UPDATEANIMSTATE_OFFSET UNITYSDK_OFFSET(0x9A04B10)
+#define MOLEMOLE_UILINEUPSELECTPAGECONTROLLER_MATCHINGANIMPLAYER__CTOR_OFFSET UNITYSDK_OFFSET(0x9A04DF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILineupSelectPageController_MatchingAnimPlayer_TypeDefinitionIndex = 57362;
+	inline static constexpr unsigned int UILineupSelectPageController_MatchingAnimPlayer_TypeDefinitionIndex = 78700;
 
 	class UILineupSelectPageController_MatchingAnimPlayer : public ::System::Object
 	{

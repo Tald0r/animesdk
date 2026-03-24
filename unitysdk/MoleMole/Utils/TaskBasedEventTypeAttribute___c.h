@@ -5,29 +5,29 @@
 namespace MoleMole::Utils { class ITypeErasedCompletionSource; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6856AD0)
-#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6856B00)
-#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C___CTOR_B__3_0_OFFSET UNITYSDK_OFFSET(0x6856B10)
-#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C___CTOR_B__3_1_OFFSET UNITYSDK_OFFSET(0x6856BC0)
+#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x852BEF0)
+#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x852BF20)
+#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C___CTOR_B__3_0_OFFSET UNITYSDK_OFFSET(0x852BF30)
+#define MOLEMOLE_UTILS_TASKBASEDEVENTTYPEATTRIBUTE___C___CTOR_B__3_1_OFFSET UNITYSDK_OFFSET(0x852BFE0)
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int TaskBasedEventTypeAttribute___c_TypeDefinitionIndex = 42132;
+	inline static constexpr unsigned int TaskBasedEventTypeAttribute___c_TypeDefinitionIndex = 40009;
 
 	class TaskBasedEventTypeAttribute___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_1<::System::Func_1<::MoleMole::Utils::ITypeErasedCompletionSource*>*>** StaticGet___9__3_0()
 		{
-			return (::System::Func_1<::System::Func_1<::MoleMole::Utils::ITypeErasedCompletionSource*>*>**)Il2CppClass::FromTypeDefinitionIndex(TaskBasedEventTypeAttribute___c_TypeDefinitionIndex)->GetStaticField(0x39040);
+			return (::System::Func_1<::System::Func_1<::MoleMole::Utils::ITypeErasedCompletionSource*>*>**)Il2CppClass::FromTypeDefinitionIndex(TaskBasedEventTypeAttribute___c_TypeDefinitionIndex)->GetStaticField(0x3BC70);
 		}
 		static ::System::Func_1<::MoleMole::Utils::ITypeErasedCompletionSource*>** StaticGet___9__3_1()
 		{
-			return (::System::Func_1<::MoleMole::Utils::ITypeErasedCompletionSource*>**)Il2CppClass::FromTypeDefinitionIndex(TaskBasedEventTypeAttribute___c_TypeDefinitionIndex)->GetStaticField(0x39048);
+			return (::System::Func_1<::MoleMole::Utils::ITypeErasedCompletionSource*>**)Il2CppClass::FromTypeDefinitionIndex(TaskBasedEventTypeAttribute___c_TypeDefinitionIndex)->GetStaticField(0x3BC78);
 		}
 		static ::MoleMole::Utils::TaskBasedEventTypeAttribute___c** StaticGet___9()
 		{
-			return (::MoleMole::Utils::TaskBasedEventTypeAttribute___c**)Il2CppClass::FromTypeDefinitionIndex(TaskBasedEventTypeAttribute___c_TypeDefinitionIndex)->GetStaticField(0x39050);
+			return (::MoleMole::Utils::TaskBasedEventTypeAttribute___c**)Il2CppClass::FromTypeDefinitionIndex(TaskBasedEventTypeAttribute___c_TypeDefinitionIndex)->GetStaticField(0x3BC80);
 		}
 
 		static ::System::Void _cctor()

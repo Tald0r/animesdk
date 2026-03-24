@@ -8,13 +8,13 @@ namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class Texture2D; }
 namespace UnityEngine { class Texture; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_RAINCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x16DC4610)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_RAINCONFIG_GENERATERAINANIMTEXTURE_OFFSET UNITYSDK_OFFSET(0x16DC4410)
-#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_RAINCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x16DC5050)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_RAINCONFIG_DOLERP_OFFSET UNITYSDK_OFFSET(0x1742CEA0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_RAINCONFIG_GENERATERAINANIMTEXTURE_OFFSET UNITYSDK_OFFSET(0x1742CCA0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_WEATHERSYSTEM_RAINCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1742D8E0)
 
 namespace UnityEngine::Rendering::Universal::WeatherSystem
 {
-	inline static constexpr unsigned int RainConfig_TypeDefinitionIndex = 28830;
+	inline static constexpr unsigned int RainConfig_TypeDefinitionIndex = 29779;
 
 	class RainConfig : public ::UnityEngine::Rendering::Universal::WeatherSystem::WeatherPropertiesBase_1<::UnityEngine::Rendering::Universal::WeatherSystem::RainConfig*>
 	{

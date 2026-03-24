@@ -6,29 +6,29 @@ namespace System { class Action; }
 namespace System { template <typename T> class EventHandler_1; }
 namespace System::Threading::Tasks { class UnobservedTaskExceptionEventArgs; }
 
-#define MOLEMOLE_GAMEENGINE___C_METHOD_1_361C06486F56B4E7_OFFSET UNITYSDK_OFFSET(0xC223990)
-#define MOLEMOLE_GAMEENGINE___C_METHOD_1_9E37F2FEADEE1288_OFFSET UNITYSDK_OFFSET(0xC223A10)
-#define MOLEMOLE_GAMEENGINE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC223950)
-#define MOLEMOLE_GAMEENGINE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC223980)
+#define MOLEMOLE_GAMEENGINE___C_METHOD_1_361C06486F56B4E7_OFFSET UNITYSDK_OFFSET(0xB83A100)
+#define MOLEMOLE_GAMEENGINE___C_METHOD_1_9E37F2FEADEE1288_OFFSET UNITYSDK_OFFSET(0xB83A180)
+#define MOLEMOLE_GAMEENGINE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB83A0C0)
+#define MOLEMOLE_GAMEENGINE___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB83A0F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GameEngine___c_TypeDefinitionIndex = 54638;
+	inline static constexpr unsigned int GameEngine___c_TypeDefinitionIndex = 56889;
 
 	class GameEngine___c : public ::System::Object
 	{
 	public:
-		static ::System::EventHandler_1<::System::Threading::Tasks::UnobservedTaskExceptionEventArgs*>** StaticGet___9__81_0()
+		static ::MoleMole::GameEngine___c** StaticGet___9()
 		{
-			return (::System::EventHandler_1<::System::Threading::Tasks::UnobservedTaskExceptionEventArgs*>**)Il2CppClass::FromTypeDefinitionIndex(GameEngine___c_TypeDefinitionIndex)->GetStaticField(0x434B0);
+			return (::MoleMole::GameEngine___c**)Il2CppClass::FromTypeDefinitionIndex(GameEngine___c_TypeDefinitionIndex)->GetStaticField(0x450D0);
 		}
 		static ::System::Action** StaticGet___9__104_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(GameEngine___c_TypeDefinitionIndex)->GetStaticField(0x434B8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(GameEngine___c_TypeDefinitionIndex)->GetStaticField(0x450D8);
 		}
-		static ::MoleMole::GameEngine___c** StaticGet___9()
+		static ::System::EventHandler_1<::System::Threading::Tasks::UnobservedTaskExceptionEventArgs*>** StaticGet___9__81_0()
 		{
-			return (::MoleMole::GameEngine___c**)Il2CppClass::FromTypeDefinitionIndex(GameEngine___c_TypeDefinitionIndex)->GetStaticField(0x434C0);
+			return (::System::EventHandler_1<::System::Threading::Tasks::UnobservedTaskExceptionEventArgs*>**)Il2CppClass::FromTypeDefinitionIndex(GameEngine___c_TypeDefinitionIndex)->GetStaticField(0x450E0);
 		}
 
 		static ::System::Void _cctor()

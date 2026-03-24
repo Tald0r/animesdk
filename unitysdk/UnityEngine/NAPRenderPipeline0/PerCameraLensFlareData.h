@@ -4,18 +4,18 @@
 
 namespace UnityEngine { class ComputeBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_PERCAMERALENSFLAREDATA_RELEASE_OFFSET UNITYSDK_OFFSET(0x1B0CD440)
-#define UNITYENGINE_NAPRENDERPIPELINE0_PERCAMERALENSFLAREDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0CD2D0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PERCAMERALENSFLAREDATA_RELEASE_OFFSET UNITYSDK_OFFSET(0x1B6DB500)
+#define UNITYENGINE_NAPRENDERPIPELINE0_PERCAMERALENSFLAREDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6DB390)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int PerCameraLensFlareData_TypeDefinitionIndex = 23502;
+	inline static constexpr unsigned int PerCameraLensFlareData_TypeDefinitionIndex = 24185;
 
 	class PerCameraLensFlareData : public ::System::Object
 	{
 	public:
-		::UnityEngine::ComputeBuffer* occlusionTestOut; // 0x10
-		::UnityEngine::ComputeBuffer* occlusionTestIn; // 0x18
+		::UnityEngine::ComputeBuffer* occlusionTestIn; // 0x10
+		::UnityEngine::ComputeBuffer* occlusionTestOut; // 0x18
 		::System::Single lastInScreenTime; // 0x20
 
 		::System::Void _ctor()

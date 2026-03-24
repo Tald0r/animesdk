@@ -7,18 +7,18 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI { class Text; }
 
-#define CLASS_2_CB16B2445EEE09CD_2_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x762DA40)
-#define CLASS_2_CB16B2445EEE09CD_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x762DB10)
-#define CLASS_2_CB16B2445EEE09CD_2__CTOR_OFFSET UNITYSDK_OFFSET(0x762DB00)
+#define CLASS_2_CB16B2445EEE09CD_2_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x70CB590)
+#define CLASS_2_CB16B2445EEE09CD_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x70CB660)
+#define CLASS_2_CB16B2445EEE09CD_2__CTOR_OFFSET UNITYSDK_OFFSET(0x70CB650)
 
-inline static constexpr unsigned int Class_2_CB16B2445EEE09CD_2_TypeDefinitionIndex = 63773;
+inline static constexpr unsigned int Class_2_CB16B2445EEE09CD_2_TypeDefinitionIndex = 57420;
 
 class Class_2_CB16B2445EEE09CD_2 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Text* Field_2_1; // 0x18
+	::UnityEngine::RectTransform* Field_2_2; // 0x18
 	::UnityEngine::UI::Text* Field_2_0; // 0x20
-	::UnityEngine::RectTransform* Field_2_2; // 0x28
+	::UnityEngine::UI::Text* Field_2_1; // 0x28
 
 	::System::Void _ctor()
 	{

@@ -5,7 +5,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputRemoting_Message_TypeDefinitionIndex = 27529;
+	inline static constexpr unsigned int InputRemoting_Message_TypeDefinitionIndex = 28469;
 
 	struct alignas(8) InputRemoting_Message
 	{

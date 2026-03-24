@@ -6,12 +6,12 @@ namespace MoleMole { class UIInterKnotQuestRowWidgetController; }
 namespace System { class Action; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9295B80)
-#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__PLAYANIM_B__0_OFFSET UNITYSDK_OFFSET(0x9295E00)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAF5D010)
+#define MOLEMOLE_UIINTERKNOTQUESTROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__PLAYANIM_B__0_OFFSET UNITYSDK_OFFSET(0xAF5D280)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInterKnotQuestRowWidgetController___c__DisplayClass18_0_TypeDefinitionIndex = 51262;
+	inline static constexpr unsigned int UIInterKnotQuestRowWidgetController___c__DisplayClass18_0_TypeDefinitionIndex = 61967;
 
 	class UIInterKnotQuestRowWidgetController___c__DisplayClass18_0 : public ::System::Object
 	{

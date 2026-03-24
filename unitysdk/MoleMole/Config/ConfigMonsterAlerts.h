@@ -8,11 +8,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGMONSTERALERTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1399C8B0)
+#define MOLEMOLE_CONFIG_CONFIGMONSTERALERTS__CTOR_OFFSET UNITYSDK_OFFSET(0x918EC30)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigMonsterAlerts_TypeDefinitionIndex = 49251;
+	inline static constexpr unsigned int ConfigMonsterAlerts_TypeDefinitionIndex = 58851;
 
 	class ConfigMonsterAlerts : public ::Foundation::MihoyoSerializedScriptableObject
 	{

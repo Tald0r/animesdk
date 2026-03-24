@@ -5,20 +5,20 @@
 class Class_1_D72537470FC2F779;
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGMAINSTORYPUSHCENTERTAPENODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x9B63470)
-#define MOLEMOLE_CONFIG_CONFIGMAINSTORYPUSHCENTERTAPENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9B63500)
+#define MOLEMOLE_CONFIG_CONFIGMAINSTORYPUSHCENTERTAPENODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xB4735A0)
+#define MOLEMOLE_CONFIG_CONFIGMAINSTORYPUSHCENTERTAPENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB473630)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigMainStoryPushCenterTapeNode_TypeDefinitionIndex = 52201;
+	inline static constexpr unsigned int ConfigMainStoryPushCenterTapeNode_TypeDefinitionIndex = 47654;
 
 	class ConfigMainStoryPushCenterTapeNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
 		::UnityEngine::AnimationCurve* ScaleCurve; // 0x18
-		::System::Single Scale; // 0x20
-		::System::Single Duration; // 0x24
-		::System::Single ScaleDelayTime; // 0x28
+		::System::Single Duration; // 0x20
+		::System::Single ScaleDelayTime; // 0x24
+		::System::Single Scale; // 0x28
 
 		::System::Void _ctor()
 		{

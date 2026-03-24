@@ -12,15 +12,15 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections { class IEnumerator; }
 namespace UnityEngine { class Coroutine; }
 
-#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_9275F47A24A5718D_OFFSET UNITYSDK_OFFSET(0x67B20B0)
-#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_AFB6F6055EEF24B1_OFFSET UNITYSDK_OFFSET(0x67B1E30)
-#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x67B1EE0)
-#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_ONENABLE_OFFSET UNITYSDK_OFFSET(0x67B1C80)
-#define MOLEMOLE_MONODYNAMICOBJECTVOXEL__CTOR_OFFSET UNITYSDK_OFFSET(0x67B2090)
+#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_9275F47A24A5718D_OFFSET UNITYSDK_OFFSET(0x75AFE40)
+#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_AFB6F6055EEF24B1_OFFSET UNITYSDK_OFFSET(0x75AFBC0)
+#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x75AFC70)
+#define MOLEMOLE_MONODYNAMICOBJECTVOXEL_ONENABLE_OFFSET UNITYSDK_OFFSET(0x75AFA10)
+#define MOLEMOLE_MONODYNAMICOBJECTVOXEL__CTOR_OFFSET UNITYSDK_OFFSET(0x75AFE20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoDynamicObjectVoxel_TypeDefinitionIndex = 69573;
+	inline static constexpr unsigned int MonoDynamicObjectVoxel_TypeDefinitionIndex = 60864;
 
 	class MonoDynamicObjectVoxel : public ::UnityEngine::MonoBehaviour
 	{
@@ -48,14 +48,14 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONODYNAMICOBJECTVOXEL_ONDISABLE_OFFSET))(this);
 		}
 
-		::System::Void Method_5_9275F47A24A5718D(::MoleMole::MonoTerrainZoneVoxel* a1)
-		{
-			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoTerrainZoneVoxel*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_9275F47A24A5718D_OFFSET))(this, a1);
-		}
-
 		::System::Collections::IEnumerator* Method_5_AFB6F6055EEF24B1(::System::Action_1<::MoleMole::MonoTerrainZoneVoxel*>* a1)
 		{
 			return ((::System::Collections::IEnumerator*(*)(::PVOID, ::System::Action_1<::MoleMole::MonoTerrainZoneVoxel*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_AFB6F6055EEF24B1_OFFSET))(this, a1);
+		}
+
+		::System::Void Method_5_9275F47A24A5718D(::MoleMole::MonoTerrainZoneVoxel* a1)
+		{
+			return ((::System::Void(*)(::PVOID, ::MoleMole::MonoTerrainZoneVoxel*))((::PBYTE)hIl2Cpp + MOLEMOLE_MONODYNAMICOBJECTVOXEL_METHOD_5_9275F47A24A5718D_OFFSET))(this, a1);
 		}
 	};
 }

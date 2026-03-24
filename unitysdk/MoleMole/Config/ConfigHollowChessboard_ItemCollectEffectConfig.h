@@ -7,20 +7,20 @@
 namespace MoleMole::Config { class ConfigHollowChessboard_GeneralRange2RangeGroupConfig; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_ITEMCOLLECTEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x13998E90)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_ITEMCOLLECTEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x918B1D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_ItemCollectEffectConfig_TypeDefinitionIndex = 59158;
+	inline static constexpr unsigned int ConfigHollowChessboard_ItemCollectEffectConfig_TypeDefinitionIndex = 79829;
 
 	class ConfigHollowChessboard_ItemCollectEffectConfig : public ::System::Object
 	{
 	public:
 		::MoleMole::Config::ConfigHollowChessboard_GeneralRange2RangeGroupConfig* EffectCount; // 0x10
 		::System::String* EffectTextureSheetKey; // 0x18
-		::MoleMole::ItemCollectEffectType ItemCollectEffectType; // 0x20
-		::UnityEngine::Color FadeOutColor; // 0x24
-		::System::Int32 EffectSize; // 0x34
+		::UnityEngine::Color FadeOutColor; // 0x20
+		::System::Int32 EffectSize; // 0x30
+		::MoleMole::ItemCollectEffectType ItemCollectEffectType; // 0x34
 
 		::System::Void _ctor()
 		{

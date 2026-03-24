@@ -4,12 +4,12 @@
 
 namespace System::Reflection { class FieldInfo; }
 
-#define SIRENIX_SERIALIZATION_UTILITIES_EMITUTILITIES___C__DISPLAYCLASS4_0__CREATEWEAKINSTANCEFIELDSETTER_B__0_OFFSET UNITYSDK_OFFSET(0x1B103400)
-#define SIRENIX_SERIALIZATION_UTILITIES_EMITUTILITIES___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1033F0)
+#define SIRENIX_SERIALIZATION_UTILITIES_EMITUTILITIES___C__DISPLAYCLASS4_0__CREATEWEAKINSTANCEFIELDSETTER_B__0_OFFSET UNITYSDK_OFFSET(0x1B71AEE0)
+#define SIRENIX_SERIALIZATION_UTILITIES_EMITUTILITIES___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B71AED0)
 
 namespace Sirenix::Serialization::Utilities
 {
-	inline static constexpr unsigned int EmitUtilities___c__DisplayClass4_0_TypeDefinitionIndex = 7506;
+	inline static constexpr unsigned int EmitUtilities___c__DisplayClass4_0_TypeDefinitionIndex = 7511;
 
 	class EmitUtilities___c__DisplayClass4_0 : public ::System::Object
 	{

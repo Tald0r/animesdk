@@ -4,12 +4,12 @@
 
 namespace System { class Object; }
 
-#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x18B5CE90)
-#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x18B5CEF0)
-#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_GET_ISDESIGNONLY_OFFSET UNITYSDK_OFFSET(0x18B5CDE0)
-#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_ISDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x18B5CDF0)
-#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE__CCTOR_OFFSET UNITYSDK_OFFSET(0x18B5CF00)
-#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x18B5CDD0)
+#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_EQUALS_OFFSET UNITYSDK_OFFSET(0x19051720)
+#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x19051780)
+#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_GET_ISDESIGNONLY_OFFSET UNITYSDK_OFFSET(0x19051670)
+#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE_ISDEFAULTATTRIBUTE_OFFSET UNITYSDK_OFFSET(0x19051680)
+#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19051790)
+#define SYSTEM_COMPONENTMODEL_DESIGNONLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19051660)
 
 namespace System::ComponentModel
 {
@@ -18,15 +18,15 @@ namespace System::ComponentModel
 	class DesignOnlyAttribute : public ::System::Attribute
 	{
 	public:
-		static ::System::ComponentModel::DesignOnlyAttribute** StaticGet_Yes()
+		static ::System::ComponentModel::DesignOnlyAttribute** StaticGet_Default()
 		{
 			return (::System::ComponentModel::DesignOnlyAttribute**)Il2CppClass::FromTypeDefinitionIndex(DesignOnlyAttribute_TypeDefinitionIndex)->GetStaticField(0x3310);
 		}
-		static ::System::ComponentModel::DesignOnlyAttribute** StaticGet_No()
+		static ::System::ComponentModel::DesignOnlyAttribute** StaticGet_Yes()
 		{
 			return (::System::ComponentModel::DesignOnlyAttribute**)Il2CppClass::FromTypeDefinitionIndex(DesignOnlyAttribute_TypeDefinitionIndex)->GetStaticField(0x3318);
 		}
-		static ::System::ComponentModel::DesignOnlyAttribute** StaticGet_Default()
+		static ::System::ComponentModel::DesignOnlyAttribute** StaticGet_No()
 		{
 			return (::System::ComponentModel::DesignOnlyAttribute**)Il2CppClass::FromTypeDefinitionIndex(DesignOnlyAttribute_TypeDefinitionIndex)->GetStaticField(0x3320);
 		}

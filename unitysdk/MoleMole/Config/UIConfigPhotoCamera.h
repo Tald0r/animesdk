@@ -5,11 +5,11 @@
 namespace MoleMole::Config { class FirstPersonScale; }
 namespace MoleMole::Config { class ThirdPersonScale; }
 
-#define MOLEMOLE_CONFIG_UICONFIGPHOTOCAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0xC1E46A0)
+#define MOLEMOLE_CONFIG_UICONFIGPHOTOCAMERA__CTOR_OFFSET UNITYSDK_OFFSET(0x81FAF80)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UIConfigPhotoCamera_TypeDefinitionIndex = 39866;
+	inline static constexpr unsigned int UIConfigPhotoCamera_TypeDefinitionIndex = 59012;
 
 	class UIConfigPhotoCamera : public ::System::Object
 	{

@@ -3,11 +3,11 @@
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int CurveMoveComponent_Config_LiftSizeType_TypeDefinitionIndex = 50413;
+	inline static constexpr unsigned int CurveMoveComponent_Config_LiftSizeType_TypeDefinitionIndex = 67185;
 
 	enum class CurveMoveComponent_Config_LiftSizeType : ::System::Int32
 	{
-		Big = 1,
 		Normal = 0,
+		Big = 1,
 	};
 }

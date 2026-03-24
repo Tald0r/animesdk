@@ -9,13 +9,13 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class IDictionary_2; }
 namespace ZXing::Common { class BitMatrix; }
 
-#define ZXING_ONED_EAN13WRITER_ENCODE_1_OFFSET UNITYSDK_OFFSET(0x17D38980)
-#define ZXING_ONED_EAN13WRITER_ENCODE_OFFSET UNITYSDK_OFFSET(0x17D388D0)
-#define ZXING_ONED_EAN13WRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x17D2EBE0)
+#define ZXING_ONED_EAN13WRITER_ENCODE_1_OFFSET UNITYSDK_OFFSET(0x184403E0)
+#define ZXING_ONED_EAN13WRITER_ENCODE_OFFSET UNITYSDK_OFFSET(0x18440330)
+#define ZXING_ONED_EAN13WRITER__CTOR_OFFSET UNITYSDK_OFFSET(0x18436640)
 
 namespace ZXing::OneD
 {
-	inline static constexpr unsigned int EAN13Writer_TypeDefinitionIndex = 8618;
+	inline static constexpr unsigned int EAN13Writer_TypeDefinitionIndex = 8629;
 
 	class EAN13Writer : public ::ZXing::OneD::UPCEANWriter
 	{

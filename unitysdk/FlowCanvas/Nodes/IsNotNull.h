@@ -4,12 +4,12 @@
 
 namespace System { class Object; }
 
-#define FLOWCANVAS_NODES_ISNOTNULL_INVOKE_OFFSET UNITYSDK_OFFSET(0x19C01770)
-#define FLOWCANVAS_NODES_ISNOTNULL__CTOR_OFFSET UNITYSDK_OFFSET(0x19C017B0)
+#define FLOWCANVAS_NODES_ISNOTNULL_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A1C04C0)
+#define FLOWCANVAS_NODES_ISNOTNULL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1C0500)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int IsNotNull_TypeDefinitionIndex = 25753;
+	inline static constexpr unsigned int IsNotNull_TypeDefinitionIndex = 27150;
 
 	class IsNotNull : public ::FlowCanvas::Nodes::PureFunctionNode_2<::System::Boolean, ::System::Object*>
 	{

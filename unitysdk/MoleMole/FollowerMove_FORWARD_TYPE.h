@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FollowerMove_FORWARD_TYPE_TypeDefinitionIndex = 47262;
+	inline static constexpr unsigned int FollowerMove_FORWARD_TYPE_TypeDefinitionIndex = 78817;
 
 	enum class FollowerMove_FORWARD_TYPE : ::System::Int32
 	{
-		BACK_TO_CAMERA = 1,
 		KEEP_STATIC = 0,
+		BACK_TO_CAMERA = 1,
 		SAME_WITH_ANBI = 2,
 	};
 }

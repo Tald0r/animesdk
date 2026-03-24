@@ -4,7 +4,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int FocusCameraTargetByRotationYSetting_TypeDefinitionIndex = 58517;
+	inline static constexpr unsigned int FocusCameraTargetByRotationYSetting_TypeDefinitionIndex = 43461;
 
 	struct alignas(4) FocusCameraTargetByRotationYSetting
 	{

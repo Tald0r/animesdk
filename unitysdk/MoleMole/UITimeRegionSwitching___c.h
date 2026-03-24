@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UITIMEREGIONSWITCHING___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A26EE0)
-#define MOLEMOLE_UITIMEREGIONSWITCHING___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A26F20)
-#define MOLEMOLE_UITIMEREGIONSWITCHING___C__ONPROCESS_B__1_0_OFFSET UNITYSDK_OFFSET(0x9A26F30)
+#define MOLEMOLE_UITIMEREGIONSWITCHING___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x88840A0)
+#define MOLEMOLE_UITIMEREGIONSWITCHING___C__CTOR_OFFSET UNITYSDK_OFFSET(0x88840E0)
+#define MOLEMOLE_UITIMEREGIONSWITCHING___C__ONPROCESS_B__1_0_OFFSET UNITYSDK_OFFSET(0x88840F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITimeRegionSwitching___c_TypeDefinitionIndex = 78508;
+	inline static constexpr unsigned int UITimeRegionSwitching___c_TypeDefinitionIndex = 59160;
 
 	class UITimeRegionSwitching___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UITimeRegionSwitching___c** StaticGet___9()
-		{
-			return (::MoleMole::UITimeRegionSwitching___c**)Il2CppClass::FromTypeDefinitionIndex(UITimeRegionSwitching___c_TypeDefinitionIndex)->GetStaticField(0x3ACA0);
-		}
 		static ::System::Action** StaticGet___9__1_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITimeRegionSwitching___c_TypeDefinitionIndex)->GetStaticField(0x3ACA8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UITimeRegionSwitching___c_TypeDefinitionIndex)->GetStaticField(0x3D9F0);
+		}
+		static ::MoleMole::UITimeRegionSwitching___c** StaticGet___9()
+		{
+			return (::MoleMole::UITimeRegionSwitching___c**)Il2CppClass::FromTypeDefinitionIndex(UITimeRegionSwitching___c_TypeDefinitionIndex)->GetStaticField(0x3D9F8);
 		}
 
 		static ::System::Void _cctor()

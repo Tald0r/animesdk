@@ -8,25 +8,25 @@ namespace UnityEngine { class Animation; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_AF1529468061B28B_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x7B53250)
-#define CLASS_2_AF1529468061B28B_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7B533D0)
-#define CLASS_2_AF1529468061B28B__CTOR_OFFSET UNITYSDK_OFFSET(0x7B533C0)
+#define CLASS_2_AF1529468061B28B_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xC539850)
+#define CLASS_2_AF1529468061B28B_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC5399D0)
+#define CLASS_2_AF1529468061B28B__CTOR_OFFSET UNITYSDK_OFFSET(0xC5399C0)
 
-inline static constexpr unsigned int Class_2_AF1529468061B28B_TypeDefinitionIndex = 43490;
+inline static constexpr unsigned int Class_2_AF1529468061B28B_TypeDefinitionIndex = 47219;
 
 class Class_2_AF1529468061B28B : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_8; // 0x18
-	::UnityEngine::RectTransform* Field_2_5; // 0x20
-	::UnityEngine::RectTransform* Field_2_0; // 0x28
-	::UnityEngine::RectTransform* Field_2_9; // 0x30
-	::UnityEngine::Animation* Field_2_4; // 0x38
-	::UnityEngine::Animation* Field_2_1; // 0x40
-	::UnityEngine::Animation* Field_2_3; // 0x48
+	::UnityEngine::RectTransform* Field_2_9; // 0x18
+	::UnityEngine::Animation* Field_2_3; // 0x20
+	::UnityEngine::Animation* Field_2_1; // 0x28
+	::UnityEngine::RectTransform* Field_2_5; // 0x30
+	::UnityEngine::RectTransform* Field_2_0; // 0x38
+	::UnityEngine::Transform* Field_2_6; // 0x40
+	::UnityEngine::RectTransform* Field_2_8; // 0x48
 	::UnityEngine::Animation* Field_2_2; // 0x50
-	::UnityEngine::Transform* Field_2_6; // 0x58
-	::UnityEngine::RectTransform* Field_2_7; // 0x60
+	::UnityEngine::RectTransform* Field_2_7; // 0x58
+	::UnityEngine::Animation* Field_2_4; // 0x60
 
 	::System::Void _ctor()
 	{

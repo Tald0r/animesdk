@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_D3384FC764485EA3.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_SUIBIANTEMPLEMANAGEDETAILCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7F28130)
+#define MOLEMOLE_SUIBIANTEMPLEMANAGEDETAILCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8B7A930)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SuibianTempleManageDetailContext_TypeDefinitionIndex = 66998;
+	inline static constexpr unsigned int SuibianTempleManageDetailContext_TypeDefinitionIndex = 79292;
 
 	class SuibianTempleManageDetailContext : public ::MoleMole::UIControllerContextBase
 	{

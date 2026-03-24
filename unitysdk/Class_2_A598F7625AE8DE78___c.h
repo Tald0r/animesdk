@@ -10,37 +10,37 @@ namespace System::Net::Security { class RemoteCertificateValidationCallback; }
 namespace System::Security::Cryptography::X509Certificates { class X509Certificate; }
 namespace System::Security::Cryptography::X509Certificates { class X509Chain; }
 
-#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_82B0191197A15276_1_OFFSET UNITYSDK_OFFSET(0x75A1BA0)
-#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_82B0191197A15276_2_OFFSET UNITYSDK_OFFSET(0x75A1BC0)
-#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_82B0191197A15276_OFFSET UNITYSDK_OFFSET(0x75A1B80)
-#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_EA79D5F7C12B6F7D_OFFSET UNITYSDK_OFFSET(0x75A1B70)
-#define CLASS_2_A598F7625AE8DE78___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x75A1B20)
-#define CLASS_2_A598F7625AE8DE78___C__CTOR_OFFSET UNITYSDK_OFFSET(0x75A1B60)
+#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_82B0191197A15276_1_OFFSET UNITYSDK_OFFSET(0xE97EBD0)
+#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_82B0191197A15276_2_OFFSET UNITYSDK_OFFSET(0xE97EBF0)
+#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_82B0191197A15276_OFFSET UNITYSDK_OFFSET(0xE97EBB0)
+#define CLASS_2_A598F7625AE8DE78___C_METHOD_1_EA79D5F7C12B6F7D_OFFSET UNITYSDK_OFFSET(0xE97EBA0)
+#define CLASS_2_A598F7625AE8DE78___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xE97EB50)
+#define CLASS_2_A598F7625AE8DE78___C__CTOR_OFFSET UNITYSDK_OFFSET(0xE97EB90)
 
-inline static constexpr unsigned int Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex = 74310;
+inline static constexpr unsigned int Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex = 71359;
 
 class Class_2_A598F7625AE8DE78___c : public ::System::Object
 {
 public:
-	static ::System::Net::Security::RemoteCertificateValidationCallback** StaticGet___9__13_0()
-	{
-		return (::System::Net::Security::RemoteCertificateValidationCallback**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x351D0);
-	}
-	static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>** StaticGet___9__16_0()
-	{
-		return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x351D8);
-	}
-	static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>** StaticGet___9__17_0()
-	{
-		return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x351E0);
-	}
 	static ::Class_2_A598F7625AE8DE78___c** StaticGet___9()
 	{
-		return (::Class_2_A598F7625AE8DE78___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x351E8);
+		return (::Class_2_A598F7625AE8DE78___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x30120);
 	}
 	static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>** StaticGet___9__15_0()
 	{
-		return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x351F0);
+		return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x30128);
+	}
+	static ::System::Net::Security::RemoteCertificateValidationCallback** StaticGet___9__13_0()
+	{
+		return (::System::Net::Security::RemoteCertificateValidationCallback**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x30130);
+	}
+	static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>** StaticGet___9__17_0()
+	{
+		return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x30138);
+	}
+	static ::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>** StaticGet___9__16_0()
+	{
+		return (::System::Func_2<::System::Collections::Generic::KeyValuePair_2<::System::String*, ::System::String*>, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_A598F7625AE8DE78___c_TypeDefinitionIndex)->GetStaticField(0x30140);
 	}
 
 	static ::System::Void _cctor()

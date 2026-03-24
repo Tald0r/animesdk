@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x9435460)
+#define MOLEMOLE_UIINLEVELRANKINGSABINFOROWCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x99F9E60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelRankingSABInfoRowConfig_TypeDefinitionIndex = 77162;
+	inline static constexpr unsigned int UIInLevelRankingSABInfoRowConfig_TypeDefinitionIndex = 66297;
 
 	class UIInLevelRankingSABInfoRowConfig : public ::UnityEngine::MonoBehaviour
 	{

@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/GraphicSettingProfileContextBase.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/NAPShaderQuality.h"
 
-#define MOLEMOLE_SHADINGQUALITYPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB8C6490)
+#define MOLEMOLE_SHADINGQUALITYPROFILECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB934210)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ShadingQualityProfileContext_TypeDefinitionIndex = 78796;
+	inline static constexpr unsigned int ShadingQualityProfileContext_TypeDefinitionIndex = 45229;
 
 	class ShadingQualityProfileContext : public ::MoleMole::GraphicSettingProfileContextBase
 	{

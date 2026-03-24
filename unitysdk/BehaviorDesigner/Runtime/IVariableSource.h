@@ -7,7 +7,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace BehaviorDesigner::Runtime
 {
-	inline static constexpr unsigned int IVariableSource_TypeDefinitionIndex = 30211;
+	inline static constexpr unsigned int IVariableSource_TypeDefinitionIndex = 31164;
 
 	class IVariableSource
 	{

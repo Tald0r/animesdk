@@ -5,12 +5,12 @@
 class Class_2_80AC63F59C5E376B;
 namespace MoleMole { class UIRedeemRewardDialogPopWindowController; }
 
-#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAE51BB0)
-#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__STARTPASTEREWARDCODE_B__0_OFFSET UNITYSDK_OFFSET(0xAE51BC0)
+#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD293C80)
+#define MOLEMOLE_UIREDEEMREWARDDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS26_0__STARTPASTEREWARDCODE_B__0_OFFSET UNITYSDK_OFFSET(0xD293C90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRedeemRewardDialogPopWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 41585;
+	inline static constexpr unsigned int UIRedeemRewardDialogPopWindowController___c__DisplayClass26_0_TypeDefinitionIndex = 64276;
 
 	class UIRedeemRewardDialogPopWindowController___c__DisplayClass26_0 : public ::System::Object
 	{

@@ -5,12 +5,12 @@
 namespace QWER { class CFileLogPrinter; }
 namespace System { class String; }
 
-#define QWER_CFILELOGPRINTER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA1EA90)
-#define QWER_CFILELOGPRINTER___C__DISPLAYCLASS15_0__QWER_ILOGPRINTER_PRINT_G__TMP_0_OFFSET UNITYSDK_OFFSET(0x1AA1EC20)
+#define QWER_CFILELOGPRINTER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B00E7D0)
+#define QWER_CFILELOGPRINTER___C__DISPLAYCLASS15_0__QWER_ILOGPRINTER_PRINT_G__TMP_0_OFFSET UNITYSDK_OFFSET(0x1B00E960)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CFileLogPrinter___c__DisplayClass15_0_TypeDefinitionIndex = 82078;
+	inline static constexpr unsigned int CFileLogPrinter___c__DisplayClass15_0_TypeDefinitionIndex = 84119;
 
 	class CFileLogPrinter___c__DisplayClass15_0 : public ::System::Object
 	{

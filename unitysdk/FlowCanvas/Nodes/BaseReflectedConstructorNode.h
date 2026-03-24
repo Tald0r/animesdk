@@ -10,27 +10,27 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Reflection { class ConstructorInfo; }
 
-#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_ADD_ONGETAOTREFLECTEDCONSTRUCTORNODE_OFFSET UNITYSDK_OFFSET(0x19154280)
-#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_GETCONSTRUCTORNODE_OFFSET UNITYSDK_OFFSET(0x191543E0)
-#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_INIT_OFFSET UNITYSDK_OFFSET(0x19154740)
-#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_REMOVE_ONGETAOTREFLECTEDCONSTRUCTORNODE_OFFSET UNITYSDK_OFFSET(0x19154330)
-#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x191549F0)
+#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_ADD_ONGETAOTREFLECTEDCONSTRUCTORNODE_OFFSET UNITYSDK_OFFSET(0x195463D0)
+#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_GETCONSTRUCTORNODE_OFFSET UNITYSDK_OFFSET(0x19546530)
+#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_INIT_OFFSET UNITYSDK_OFFSET(0x19546890)
+#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE_REMOVE_ONGETAOTREFLECTEDCONSTRUCTORNODE_OFFSET UNITYSDK_OFFSET(0x19546480)
+#define FLOWCANVAS_NODES_BASEREFLECTEDCONSTRUCTORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x19546B50)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int BaseReflectedConstructorNode_TypeDefinitionIndex = 25720;
+	inline static constexpr unsigned int BaseReflectedConstructorNode_TypeDefinitionIndex = 26172;
 
 	class BaseReflectedConstructorNode : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::System::Reflection::ConstructorInfo*, ::FlowCanvas::Nodes::BaseReflectedConstructorNode*>** StaticGet_OnGetAotReflectedConstructorNode()
 		{
-			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::FlowCanvas::Nodes::BaseReflectedConstructorNode*>**)Il2CppClass::FromTypeDefinitionIndex(BaseReflectedConstructorNode_TypeDefinitionIndex)->GetStaticField(0x1F4D0);
+			return (::System::Func_2<::System::Reflection::ConstructorInfo*, ::FlowCanvas::Nodes::BaseReflectedConstructorNode*>**)Il2CppClass::FromTypeDefinitionIndex(BaseReflectedConstructorNode_TypeDefinitionIndex)->GetStaticField(0x20150);
 		}
-		::System::Collections::Generic::List_1<::FlowCanvas::Nodes::ParamDef>* paramDefinitions; // 0x10
+		::System::Reflection::ConstructorInfo* constructorInfo; // 0x10
 		::FlowCanvas::Nodes::ParamDef instanceDef; // 0x18
 		::FlowCanvas::Nodes::ParamDef resultDef; // 0x50
-		::System::Reflection::ConstructorInfo* constructorInfo; // 0x88
+		::System::Collections::Generic::List_1<::FlowCanvas::Nodes::ParamDef>* paramDefinitions; // 0x88
 		::FlowCanvas::Nodes::ReflectedMethodRegistrationOptions options; // 0x90
 
 		::System::Void _ctor()

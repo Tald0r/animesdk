@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_4A097505A5A1A069.h"
+#include "unitysdk/Enum_3_4A097505A5A1A069_1.h"
 #include "unitysdk/Enum_3_9BA2A8AEAE5EE45A.h"
 #include "unitysdk/Enum_3_DAFCB1AA7EAADD66.h"
 #include "unitysdk/Foundation/MihoyoSerializedScriptableObject.h"
@@ -9,11 +9,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_INTERACTTRAITDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xC9D5DD0)
+#define MOLEMOLE_INTERACTTRAITDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xBA1B4F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int InteractTraitData_TypeDefinitionIndex = 40017;
+	inline static constexpr unsigned int InteractTraitData_TypeDefinitionIndex = 53838;
 
 	class InteractTraitData : public ::Foundation::MihoyoSerializedScriptableObject
 	{
@@ -23,7 +23,7 @@ namespace MoleMole
 		::System::String* InteractIcon; // 0x68
 		::System::Int32 InteractionCntMax; // 0x70
 		::System::Boolean ExclusiveInteract; // 0x74
-		::Enum_3_4A097505A5A1A069 InteractPriority; // 0x75
+		::Enum_3_4A097505A5A1A069_1 InteractPriority; // 0x75
 		::Enum_3_DAFCB1AA7EAADD66 StartMode; // 0x78
 		::MoleMole::Config::ConfigInteractionFanCylinder TargetEntity; // 0x7C
 		::System::Boolean AgentTriggerEnable; // 0xA4

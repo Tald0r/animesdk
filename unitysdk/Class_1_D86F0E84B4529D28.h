@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_D86F0E84B4529D28_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0xA222250)
-#define CLASS_1_D86F0E84B4529D28_MOVENEXT_OFFSET UNITYSDK_OFFSET(0xA222260)
-#define CLASS_1_D86F0E84B4529D28_RESET_OFFSET UNITYSDK_OFFSET(0xA2222F0)
-#define CLASS_1_D86F0E84B4529D28__CTOR_OFFSET UNITYSDK_OFFSET(0xA222240)
+#define CLASS_1_D86F0E84B4529D28_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x62C07D0)
+#define CLASS_1_D86F0E84B4529D28_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x62C07E0)
+#define CLASS_1_D86F0E84B4529D28_RESET_OFFSET UNITYSDK_OFFSET(0x62C0870)
+#define CLASS_1_D86F0E84B4529D28__CTOR_OFFSET UNITYSDK_OFFSET(0x62C07C0)
 
-inline static constexpr unsigned int Class_1_D86F0E84B4529D28_TypeDefinitionIndex = 76088;
+inline static constexpr unsigned int Class_1_D86F0E84B4529D28_TypeDefinitionIndex = 75615;
 
 class Class_1_D86F0E84B4529D28 : public ::System::Object
 {
 public:
-	::System::Single Field_1_1; // 0x10
-	::System::Single Field_1_0; // 0x14
+	::System::Single Field_1_0; // 0x10
+	::System::Single Field_1_1; // 0x14
 
 	::System::Void _ctor(::System::Single a1)
 	{

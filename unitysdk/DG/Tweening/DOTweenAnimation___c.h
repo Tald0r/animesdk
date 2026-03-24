@@ -4,24 +4,24 @@
 
 namespace System { template <typename T> class Func_1; }
 
-#define DG_TWEENING_DOTWEENANIMATION___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x12447EE0)
-#define DG_TWEENING_DOTWEENANIMATION___C__CREATETWEEN_B__35_0_OFFSET UNITYSDK_OFFSET(0x12447F20)
-#define DG_TWEENING_DOTWEENANIMATION___C__CTOR_OFFSET UNITYSDK_OFFSET(0x12447F10)
+#define DG_TWEENING_DOTWEENANIMATION___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x11AC35C0)
+#define DG_TWEENING_DOTWEENANIMATION___C__CREATETWEEN_B__35_0_OFFSET UNITYSDK_OFFSET(0x11AC3600)
+#define DG_TWEENING_DOTWEENANIMATION___C__CTOR_OFFSET UNITYSDK_OFFSET(0x11AC35F0)
 
 namespace DG::Tweening
 {
-	inline static constexpr unsigned int DOTweenAnimation___c_TypeDefinitionIndex = 82120;
+	inline static constexpr unsigned int DOTweenAnimation___c_TypeDefinitionIndex = 84230;
 
 	class DOTweenAnimation___c : public ::System::Object
 	{
 	public:
-		static ::DG::Tweening::DOTweenAnimation___c** StaticGet___9()
-		{
-			return (::DG::Tweening::DOTweenAnimation___c**)Il2CppClass::FromTypeDefinitionIndex(DOTweenAnimation___c_TypeDefinitionIndex)->GetStaticField(0x47680);
-		}
 		static ::System::Func_1<::System::Boolean>** StaticGet___9__35_0()
 		{
-			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(DOTweenAnimation___c_TypeDefinitionIndex)->GetStaticField(0x47688);
+			return (::System::Func_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(DOTweenAnimation___c_TypeDefinitionIndex)->GetStaticField(0x490A0);
+		}
+		static ::DG::Tweening::DOTweenAnimation___c** StaticGet___9()
+		{
+			return (::DG::Tweening::DOTweenAnimation___c**)Il2CppClass::FromTypeDefinitionIndex(DOTweenAnimation___c_TypeDefinitionIndex)->GetStaticField(0x490A8);
 		}
 
 		static ::System::Void _cctor()

@@ -5,12 +5,12 @@
 namespace NPCCrowd::Ability { class NPCAbilityMovementMoveStyleParameters; }
 namespace System { class String; }
 
-#define NPCCROWD_NPCSPAWNPOINTRUNTIME___C__DISPLAYCLASS44_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6A29CD0)
-#define NPCCROWD_NPCSPAWNPOINTRUNTIME___C__DISPLAYCLASS44_0__STARTPATHFOLLOW_B__0_OFFSET UNITYSDK_OFFSET(0x6A29CE0)
+#define NPCCROWD_NPCSPAWNPOINTRUNTIME___C__DISPLAYCLASS44_0__CTOR_OFFSET UNITYSDK_OFFSET(0x64251A0)
+#define NPCCROWD_NPCSPAWNPOINTRUNTIME___C__DISPLAYCLASS44_0__STARTPATHFOLLOW_B__0_OFFSET UNITYSDK_OFFSET(0x64251B0)
 
 namespace NPCCrowd
 {
-	inline static constexpr unsigned int NPCSpawnPointRuntime___c__DisplayClass44_0_TypeDefinitionIndex = 53326;
+	inline static constexpr unsigned int NPCSpawnPointRuntime___c__DisplayClass44_0_TypeDefinitionIndex = 41008;
 
 	class NPCSpawnPointRuntime___c__DisplayClass44_0 : public ::System::Object
 	{

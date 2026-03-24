@@ -4,9 +4,9 @@
 
 namespace System { class String; }
 
-#define REPLAYCHANGEEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x198D2030)
+#define REPLAYCHANGEEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19E09680)
 
-inline static constexpr unsigned int ReplayChangeEvent_TypeDefinitionIndex = 31515;
+inline static constexpr unsigned int ReplayChangeEvent_TypeDefinitionIndex = 32458;
 
 class ReplayChangeEvent : public ::System::Object
 {

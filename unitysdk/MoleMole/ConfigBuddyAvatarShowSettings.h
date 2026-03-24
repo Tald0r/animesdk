@@ -7,11 +7,11 @@ namespace MoleMole { class UIAvatarShowSetting; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGBUDDYAVATARSHOWSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0xCD28490)
+#define MOLEMOLE_CONFIGBUDDYAVATARSHOWSETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0xE381350)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigBuddyAvatarShowSettings_TypeDefinitionIndex = 48521;
+	inline static constexpr unsigned int ConfigBuddyAvatarShowSettings_TypeDefinitionIndex = 64590;
 
 	class ConfigBuddyAvatarShowSettings : public ::Foundation::MihoyoSerializedScriptableObject
 	{

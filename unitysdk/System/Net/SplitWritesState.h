@@ -4,9 +4,9 @@
 
 namespace System::Net { class BufferOffsetSize; }
 
-#define SYSTEM_NET_SPLITWRITESSTATE_GETNEXTBUFFERS_OFFSET UNITYSDK_OFFSET(0x18D894C0)
-#define SYSTEM_NET_SPLITWRITESSTATE_GET_ISDONE_OFFSET UNITYSDK_OFFSET(0x18D89430)
-#define SYSTEM_NET_SPLITWRITESSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x18D89420)
+#define SYSTEM_NET_SPLITWRITESSTATE_GETNEXTBUFFERS_OFFSET UNITYSDK_OFFSET(0x191D2190)
+#define SYSTEM_NET_SPLITWRITESSTATE_GET_ISDONE_OFFSET UNITYSDK_OFFSET(0x191D2100)
+#define SYSTEM_NET_SPLITWRITESSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x191D20F0)
 
 namespace System::Net
 {
@@ -18,8 +18,8 @@ namespace System::Net
 		// static const ::System::Int32 c_SplitEncryptedBuffersSize = 0x10000; // 0x0
 		::Il2CppArray<::System::Net::BufferOffsetSize*>* _UserBuffers; // 0x10
 		::Il2CppArray<::System::Net::BufferOffsetSize*>* _RealBuffers; // 0x18
-		::System::Int32 _LastBufferConsumed; // 0x20
-		::System::Int32 _Index; // 0x24
+		::System::Int32 _Index; // 0x20
+		::System::Int32 _LastBufferConsumed; // 0x24
 
 		::System::Void _ctor(::Il2CppArray<::System::Net::BufferOffsetSize*>* buffers)
 		{

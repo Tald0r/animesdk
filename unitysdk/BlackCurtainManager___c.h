@@ -5,22 +5,22 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define BLACKCURTAINMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x73877F0)
-#define BLACKCURTAINMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7387830)
-#define BLACKCURTAINMANAGER___C__SUSPENDCURRENTMATPROPERTYMODIFIERS_B__24_0_OFFSET UNITYSDK_OFFSET(0x7387840)
+#define BLACKCURTAINMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBE07310)
+#define BLACKCURTAINMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBE07350)
+#define BLACKCURTAINMANAGER___C__SUSPENDCURRENTMATPROPERTYMODIFIERS_B__25_0_OFFSET UNITYSDK_OFFSET(0xBE07360)
 
-inline static constexpr unsigned int BlackCurtainManager___c_TypeDefinitionIndex = 60560;
+inline static constexpr unsigned int BlackCurtainManager___c_TypeDefinitionIndex = 81034;
 
 class BlackCurtainManager___c : public ::System::Object
 {
 public:
+	static ::System::Func_2<::System::String*, ::System::Boolean>** StaticGet___9__25_0()
+	{
+		return (::System::Func_2<::System::String*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(BlackCurtainManager___c_TypeDefinitionIndex)->GetStaticField(0x33060);
+	}
 	static ::BlackCurtainManager___c** StaticGet___9()
 	{
-		return (::BlackCurtainManager___c**)Il2CppClass::FromTypeDefinitionIndex(BlackCurtainManager___c_TypeDefinitionIndex)->GetStaticField(0x30E50);
-	}
-	static ::System::Func_2<::System::String*, ::System::Boolean>** StaticGet___9__24_0()
-	{
-		return (::System::Func_2<::System::String*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(BlackCurtainManager___c_TypeDefinitionIndex)->GetStaticField(0x30E58);
+		return (::BlackCurtainManager___c**)Il2CppClass::FromTypeDefinitionIndex(BlackCurtainManager___c_TypeDefinitionIndex)->GetStaticField(0x33068);
 	}
 
 	static ::System::Void _cctor()
@@ -33,8 +33,8 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BLACKCURTAINMANAGER___C__CTOR_OFFSET))(this);
 	}
 
-	::System::Boolean _SuspendCurrentMatPropertyModifiers_b__24_0(::System::String* modifierKey)
+	::System::Boolean _SuspendCurrentMatPropertyModifiers_b__25_0(::System::String* modifierKey)
 	{
-		return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + BLACKCURTAINMANAGER___C__SUSPENDCURRENTMATPROPERTYMODIFIERS_B__24_0_OFFSET))(this, modifierKey);
+		return ((::System::Boolean(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + BLACKCURTAINMANAGER___C__SUSPENDCURRENTMATPROPERTYMODIFIERS_B__25_0_OFFSET))(this, modifierKey);
 	}
 };

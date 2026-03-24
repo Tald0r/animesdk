@@ -3,19 +3,19 @@
 #include "unitysdk/System/Object.h"
 
 class Class_1_757827E019DC7C45;
-class Class_2_2DFF2C3A1B28473E;
+class Class_2_873D643B365C45E2;
 
-#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS53_5__BUILDCLIENTMONSTERINFO_B__14_OFFSET UNITYSDK_OFFSET(0x92B6040)
-#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS53_5__CTOR_OFFSET UNITYSDK_OFFSET(0x92B6030)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS53_5__BUILDCLIENTMONSTERINFO_B__14_OFFSET UNITYSDK_OFFSET(0xAF7F860)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS53_5__CTOR_OFFSET UNITYSDK_OFFSET(0xAF7F850)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyBossInfoPageController___c__DisplayClass53_5_TypeDefinitionIndex = 63390;
+	inline static constexpr unsigned int UIMonsterFantasyBossInfoPageController___c__DisplayClass53_5_TypeDefinitionIndex = 53021;
 
 	class UIMonsterFantasyBossInfoPageController___c__DisplayClass53_5 : public ::System::Object
 	{
 	public:
-		::Class_2_2DFF2C3A1B28473E* monster; // 0x10
+		::Class_2_873D643B365C45E2* monster; // 0x10
 
 		::System::Void _ctor()
 		{

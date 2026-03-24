@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace Newtonsoft::Json::Serialization
 {
-	inline static constexpr unsigned int IReferenceResolver_TypeDefinitionIndex = 6979;
+	inline static constexpr unsigned int IReferenceResolver_TypeDefinitionIndex = 6983;
 
 	class IReferenceResolver
 	{

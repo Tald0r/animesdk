@@ -3,11 +3,11 @@
 #include "unitysdk/Share/EAvatarSkillType.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIINLEVELPAUSESKILLWIDGETWIDGETCONTROLLER_SKILLITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xC879120)
+#define MOLEMOLE_UIINLEVELPAUSESKILLWIDGETWIDGETCONTROLLER_SKILLITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x9EB8F70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelPauseSkillWidgetWidgetController_SkillItem_TypeDefinitionIndex = 67324;
+	inline static constexpr unsigned int UIInLevelPauseSkillWidgetWidgetController_SkillItem_TypeDefinitionIndex = 61549;
 
 	class UIInLevelPauseSkillWidgetWidgetController_SkillItem : public ::System::Object
 	{

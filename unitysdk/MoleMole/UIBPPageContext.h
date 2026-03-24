@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIBPPAGECONTEXT_APPLYJUMPPARAS_OFFSET UNITYSDK_OFFSET(0xC273020)
-#define MOLEMOLE_UIBPPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC273090)
-#define MOLEMOLE_UIBPPAGECONTEXT___BASE_APPLYJUMPPARAS_OFFSET UNITYSDK_OFFSET(0xC2730A0)
+#define MOLEMOLE_UIBPPAGECONTEXT_APPLYJUMPPARAS_OFFSET UNITYSDK_OFFSET(0xC2A4660)
+#define MOLEMOLE_UIBPPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC2A46D0)
+#define MOLEMOLE_UIBPPAGECONTEXT___BASE_APPLYJUMPPARAS_OFFSET UNITYSDK_OFFSET(0xC2A46E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBPPageContext_TypeDefinitionIndex = 59548;
+	inline static constexpr unsigned int UIBPPageContext_TypeDefinitionIndex = 45423;
 
 	class UIBPPageContext : public ::MoleMole::UIControllerContextBase
 	{

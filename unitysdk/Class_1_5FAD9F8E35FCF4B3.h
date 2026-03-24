@@ -6,17 +6,17 @@
 namespace MoleMole::GalGame { class GalGameNPCEnterAction; }
 namespace MoleMole::GalGame { class GalGameNPCFadeAction; }
 
-#define CLASS_1_5FAD9F8E35FCF4B3__CTOR_OFFSET UNITYSDK_OFFSET(0x94AD1A0)
+#define CLASS_1_5FAD9F8E35FCF4B3__CTOR_OFFSET UNITYSDK_OFFSET(0x15674FD0)
 
-inline static constexpr unsigned int Class_1_5FAD9F8E35FCF4B3_TypeDefinitionIndex = 36804;
+inline static constexpr unsigned int Class_1_5FAD9F8E35FCF4B3_TypeDefinitionIndex = 77487;
 
 class Class_1_5FAD9F8E35FCF4B3 : public ::System::Object
 {
 public:
-	::MoleMole::GalGame::GalGameNPCEnterAction* Field_1_3; // 0x10
-	::MoleMole::GalGame::GalGameNPCFadeAction* Field_1_2; // 0x18
-	::System::Boolean Field_1_0; // 0x20
-	::Enum_3_0B8D2DA1AA023B22 Field_1_1; // 0x24
+	::MoleMole::GalGame::GalGameNPCFadeAction* Field_1_2; // 0x10
+	::MoleMole::GalGame::GalGameNPCEnterAction* Field_1_3; // 0x18
+	::Enum_3_0B8D2DA1AA023B22 Field_1_1; // 0x20
+	::System::Boolean Field_1_0; // 0x24
 
 	::System::Void _ctor(::System::Boolean a1, ::Enum_3_0B8D2DA1AA023B22 a2, ::MoleMole::GalGame::GalGameNPCFadeAction* a3, ::MoleMole::GalGame::GalGameNPCEnterAction* a4)
 	{

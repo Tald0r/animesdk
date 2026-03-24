@@ -15,33 +15,33 @@ namespace System::Net::Http::Headers { class HttpRequestHeaders; }
 namespace System::Threading { class CancellationTokenSource; }
 namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define SYSTEM_NET_HTTP_HTTPCLIENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19DF6B70)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_GETASYNC_OFFSET UNITYSDK_OFFSET(0x19DF6C50)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_POSTASYNC_OFFSET UNITYSDK_OFFSET(0x19DF6E40)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNCWORKER_OFFSET UNITYSDK_OFFSET(0x19DF7550)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNC_1_OFFSET UNITYSDK_OFFSET(0x19DF7420)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNC_2_OFFSET UNITYSDK_OFFSET(0x19DF6F70)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNC_OFFSET UNITYSDK_OFFSET(0x19DF6E00)
-#define SYSTEM_NET_HTTP_HTTPCLIENT_SET_TIMEOUT_OFFSET UNITYSDK_OFFSET(0x19DF6A80)
-#define SYSTEM_NET_HTTP_HTTPCLIENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x19DF7640)
-#define SYSTEM_NET_HTTP_HTTPCLIENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x19DF6910)
-#define SYSTEM_NET_HTTP_HTTPCLIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19DF66A0)
-#define SYSTEM_NET_HTTP_HTTPCLIENT___N__0_OFFSET UNITYSDK_OFFSET(0x19DF7680)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A3D8350)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_GETASYNC_OFFSET UNITYSDK_OFFSET(0x1A3D8430)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_POSTASYNC_OFFSET UNITYSDK_OFFSET(0x1A3D8620)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNCWORKER_OFFSET UNITYSDK_OFFSET(0x1A3D8D30)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNC_1_OFFSET UNITYSDK_OFFSET(0x1A3D8C00)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNC_2_OFFSET UNITYSDK_OFFSET(0x1A3D8750)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_SENDASYNC_OFFSET UNITYSDK_OFFSET(0x1A3D85E0)
+#define SYSTEM_NET_HTTP_HTTPCLIENT_SET_TIMEOUT_OFFSET UNITYSDK_OFFSET(0x1A3D8260)
+#define SYSTEM_NET_HTTP_HTTPCLIENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3D8E20)
+#define SYSTEM_NET_HTTP_HTTPCLIENT__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1A3D80F0)
+#define SYSTEM_NET_HTTP_HTTPCLIENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3D7E80)
+#define SYSTEM_NET_HTTP_HTTPCLIENT___N__0_OFFSET UNITYSDK_OFFSET(0x1A3D8E60)
 
 namespace System::Net::Http
 {
-	inline static constexpr unsigned int HttpClient_TypeDefinitionIndex = 23510;
+	inline static constexpr unsigned int HttpClient_TypeDefinitionIndex = 24193;
 
 	class HttpClient : public ::System::Net::Http::HttpMessageInvoker
 	{
 	public:
 		static ::System::TimeSpan* StaticGet_TimeoutDefault()
 		{
-			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(HttpClient_TypeDefinitionIndex)->GetStaticField(0x4640);
+			return (::System::TimeSpan*)Il2CppClass::FromTypeDefinitionIndex(HttpClient_TypeDefinitionIndex)->GetStaticField(0x4670);
 		}
-		::System::Net::Http::Headers::HttpRequestHeaders* headers; // 0x20
-		::System::Threading::CancellationTokenSource* cts; // 0x28
-		::System::Uri* base_address; // 0x30
+		::System::Uri* base_address; // 0x20
+		::System::Net::Http::Headers::HttpRequestHeaders* headers; // 0x28
+		::System::Threading::CancellationTokenSource* cts; // 0x30
 		::System::TimeSpan timeout; // 0x38
 		::System::Boolean disposed; // 0x40
 		::System::Int64 buffer_size; // 0x48

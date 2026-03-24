@@ -5,12 +5,12 @@
 namespace MoleMole { class UIBangbooCardItemChildWindowController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIBANGBOOCARDITEMCHILDWINDOWCONTROLLER___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF3D090)
-#define MOLEMOLE_UIBANGBOOCARDITEMCHILDWINDOWCONTROLLER___C__DISPLAYCLASS17_0__REGISTERCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0xBF3D0A0)
+#define MOLEMOLE_UIBANGBOOCARDITEMCHILDWINDOWCONTROLLER___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2738D0)
+#define MOLEMOLE_UIBANGBOOCARDITEMCHILDWINDOWCONTROLLER___C__DISPLAYCLASS17_0__REGISTERCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0xB2738E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBangbooCardItemChildWindowController___c__DisplayClass17_0_TypeDefinitionIndex = 37709;
+	inline static constexpr unsigned int UIBangbooCardItemChildWindowController___c__DisplayClass17_0_TypeDefinitionIndex = 43187;
 
 	class UIBangbooCardItemChildWindowController___c__DisplayClass17_0 : public ::System::Object
 	{

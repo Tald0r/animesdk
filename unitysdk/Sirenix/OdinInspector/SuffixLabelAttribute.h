@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_SUFFIXLABELATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB09D40)
+#define SIRENIX_ODININSPECTOR_SUFFIXLABELATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115E60)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int SuffixLabelAttribute_TypeDefinitionIndex = 7224;
+	inline static constexpr unsigned int SuffixLabelAttribute_TypeDefinitionIndex = 7229;
 
 	class SuffixLabelAttribute : public ::System::Attribute
 	{

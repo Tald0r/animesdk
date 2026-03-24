@@ -4,11 +4,11 @@
 
 namespace UnityEngine::EventSystems { class PointerEventData; }
 
-#define UNITYENGINE_UI_EXTENSION_SCROLLRECTEX_SCROLLRECTEXEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8A5F60)
+#define UNITYENGINE_UI_EXTENSION_SCROLLRECTEX_SCROLLRECTEXEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x18212AC0)
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int ScrollRectEx_ScrollRectExEvent_TypeDefinitionIndex = 40347;
+	inline static constexpr unsigned int ScrollRectEx_ScrollRectExEvent_TypeDefinitionIndex = 67917;
 
 	class ScrollRectEx_ScrollRectExEvent : public ::UnityEngine::Events::UnityEvent_1<::UnityEngine::EventSystems::PointerEventData*>
 	{

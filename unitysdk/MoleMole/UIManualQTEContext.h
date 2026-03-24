@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIMANUALQTECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6CD1EE0)
+#define MOLEMOLE_UIMANUALQTECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB5008A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIManualQTEContext_TypeDefinitionIndex = 74692;
+	inline static constexpr unsigned int UIManualQTEContext_TypeDefinitionIndex = 44395;
 
 	class UIManualQTEContext : public ::MoleMole::UIControllerContextBase
 	{

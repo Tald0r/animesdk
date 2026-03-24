@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIEquipStateController; }
 
-#define MOLEMOLE_UIEQUIPSTATECONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0x95E3A50)
-#define MOLEMOLE_UIEQUIPSTATECONTROLLER___C__DISPLAYCLASS21_0__REALDELETE_B__0_OFFSET UNITYSDK_OFFSET(0x95E3A60)
+#define MOLEMOLE_UIEQUIPSTATECONTROLLER___C__DISPLAYCLASS21_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD55EBE0)
+#define MOLEMOLE_UIEQUIPSTATECONTROLLER___C__DISPLAYCLASS21_0__REALDELETE_B__0_OFFSET UNITYSDK_OFFSET(0xD55EBF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIEquipStateController___c__DisplayClass21_0_TypeDefinitionIndex = 70496;
+	inline static constexpr unsigned int UIEquipStateController___c__DisplayClass21_0_TypeDefinitionIndex = 71096;
 
 	class UIEquipStateController___c__DisplayClass21_0 : public ::System::Object
 	{

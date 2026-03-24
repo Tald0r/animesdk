@@ -6,20 +6,20 @@ class Class_2_777A5D016ADC7368;
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UINewsStandContentWidgetController; }
 namespace MoleMole { class UINewsStandHeadLineWidgetController; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_C2C2A3C0E7CA74C3_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xCF3DDA0)
-#define CLASS_2_C2C2A3C0E7CA74C3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xCF3DEB0)
-#define CLASS_2_C2C2A3C0E7CA74C3_METHOD_2_ECD1B788BD780B17_OFFSET UNITYSDK_OFFSET(0xCF3DC00)
-#define CLASS_2_C2C2A3C0E7CA74C3__CTOR_OFFSET UNITYSDK_OFFSET(0xCF3DEA0)
+#define CLASS_2_C2C2A3C0E7CA74C3_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x74C0C00)
+#define CLASS_2_C2C2A3C0E7CA74C3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x74C0D10)
+#define CLASS_2_C2C2A3C0E7CA74C3_METHOD_2_ECD1B788BD780B17_OFFSET UNITYSDK_OFFSET(0x74C0A60)
+#define CLASS_2_C2C2A3C0E7CA74C3__CTOR_OFFSET UNITYSDK_OFFSET(0x74C0D00)
 
-inline static constexpr unsigned int Class_2_C2C2A3C0E7CA74C3_TypeDefinitionIndex = 39627;
+inline static constexpr unsigned int Class_2_C2C2A3C0E7CA74C3_TypeDefinitionIndex = 69443;
 
 class Class_2_C2C2A3C0E7CA74C3 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UINewsStandHeadLineWidgetController*>* Field_2_0; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UINewsStandContentWidgetController*>* Field_2_1; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UINewsStandHeadLineWidgetController*>* Field_2_0; // 0x18
+	::Class_3_647A206587033F4E<::MoleMole::UINewsStandContentWidgetController*>* Field_2_1; // 0x20
 
 	::System::Void _ctor()
 	{

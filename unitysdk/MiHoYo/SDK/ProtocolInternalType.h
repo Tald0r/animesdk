@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ProtocolInternalType_TypeDefinitionIndex = 17625;
+	inline static constexpr unsigned int ProtocolInternalType_TypeDefinitionIndex = 18125;
 
 	class ProtocolInternalType : public ::System::Object
 	{

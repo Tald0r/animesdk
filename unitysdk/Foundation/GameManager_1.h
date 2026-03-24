@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int GameManager_1_TypeDefinitionIndex = 8296;
+	inline static constexpr unsigned int GameManager_1_TypeDefinitionIndex = 8300;
 
 	template <typename T>
 	class GameManager_1 : public ::Foundation::SingletonDisposable_1<T>

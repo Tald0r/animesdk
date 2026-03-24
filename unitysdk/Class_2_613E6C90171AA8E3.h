@@ -11,26 +11,26 @@ namespace UnityEngine { class CanvasGroup; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_613E6C90171AA8E3_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x7127E60)
-#define CLASS_2_613E6C90171AA8E3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7127F50)
-#define CLASS_2_613E6C90171AA8E3_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x7127BB0)
-#define CLASS_2_613E6C90171AA8E3__CTOR_OFFSET UNITYSDK_OFFSET(0x7127F40)
+#define CLASS_2_613E6C90171AA8E3_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x854D730)
+#define CLASS_2_613E6C90171AA8E3_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x854D820)
+#define CLASS_2_613E6C90171AA8E3_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x854D480)
+#define CLASS_2_613E6C90171AA8E3__CTOR_OFFSET UNITYSDK_OFFSET(0x854D810)
 
-inline static constexpr unsigned int Class_2_613E6C90171AA8E3_TypeDefinitionIndex = 68664;
+inline static constexpr unsigned int Class_2_613E6C90171AA8E3_TypeDefinitionIndex = 73264;
 
 class Class_2_613E6C90171AA8E3 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::CanvasGroup* Field_2_1; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x18
 	::Class_2_60DDD9C206686F44* Field_2_2; // 0x20
-	::UnityEngine::GameObject* Field_2_10; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x30
-	::Class_2_9E3E3CDA608A4F58* Field_2_0; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x40
-	::UnityEngine::GameObject* Field_2_8; // 0x48
-	::UnityEngine::GameObject* Field_2_9; // 0x50
-	::UnityEngine::GameObject* Field_2_7; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x60
+	::UnityEngine::GameObject* Field_2_7; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x30
+	::UnityEngine::GameObject* Field_2_10; // 0x38
+	::UnityEngine::GameObject* Field_2_9; // 0x40
+	::UnityEngine::CanvasGroup* Field_2_1; // 0x48
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x50
+	::Class_2_9E3E3CDA608A4F58* Field_2_0; // 0x58
+	::UnityEngine::GameObject* Field_2_8; // 0x60
 	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x68
 
 	::System::Void _ctor()

@@ -5,22 +5,22 @@
 
 namespace System { template <typename T1, typename T2> class Converter_2; }
 
-#define CLASS_1_A461B0C88F492544___C_METHOD_1_7439D2F0DCA77B50_OFFSET UNITYSDK_OFFSET(0xD73E410)
-#define CLASS_1_A461B0C88F492544___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD73E3C0)
-#define CLASS_1_A461B0C88F492544___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD73E400)
+#define CLASS_1_A461B0C88F492544___C_METHOD_1_7439D2F0DCA77B50_OFFSET UNITYSDK_OFFSET(0xDC0FEB0)
+#define CLASS_1_A461B0C88F492544___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xDC0FE60)
+#define CLASS_1_A461B0C88F492544___C__CTOR_OFFSET UNITYSDK_OFFSET(0xDC0FEA0)
 
-inline static constexpr unsigned int Class_1_A461B0C88F492544___c_TypeDefinitionIndex = 41589;
+inline static constexpr unsigned int Class_1_A461B0C88F492544___c_TypeDefinitionIndex = 64095;
 
 class Class_1_A461B0C88F492544___c : public ::System::Object
 {
 public:
-	static ::Class_1_A461B0C88F492544___c** StaticGet___9()
-	{
-		return (::Class_1_A461B0C88F492544___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_A461B0C88F492544___c_TypeDefinitionIndex)->GetStaticField(0x39C80);
-	}
 	static ::System::Converter_2<::System::Int32, ::Enum_3_ED790DAC948A65A9_20>** StaticGet___9__58_0()
 	{
-		return (::System::Converter_2<::System::Int32, ::Enum_3_ED790DAC948A65A9_20>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_A461B0C88F492544___c_TypeDefinitionIndex)->GetStaticField(0x39C88);
+		return (::System::Converter_2<::System::Int32, ::Enum_3_ED790DAC948A65A9_20>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_A461B0C88F492544___c_TypeDefinitionIndex)->GetStaticField(0x2D130);
+	}
+	static ::Class_1_A461B0C88F492544___c** StaticGet___9()
+	{
+		return (::Class_1_A461B0C88F492544___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_A461B0C88F492544___c_TypeDefinitionIndex)->GetStaticField(0x2D138);
 	}
 
 	static ::System::Void _cctor()

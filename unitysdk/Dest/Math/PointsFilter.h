@@ -7,11 +7,11 @@
 namespace Dest::Math { class Rand; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define DEST_MATH_POINTSFILTER_DISTANCEFILTER_OFFSET UNITYSDK_OFFSET(0x1B054920)
+#define DEST_MATH_POINTSFILTER_DISTANCEFILTER_OFFSET UNITYSDK_OFFSET(0x1B663BA0)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int PointsFilter_TypeDefinitionIndex = 31748;
+	inline static constexpr unsigned int PointsFilter_TypeDefinitionIndex = 32702;
 
 	class PointsFilter : public ::System::Object
 	{

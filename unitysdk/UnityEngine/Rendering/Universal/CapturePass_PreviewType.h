@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CapturePass_PreviewType_TypeDefinitionIndex = 28709;
+	inline static constexpr unsigned int CapturePass_PreviewType_TypeDefinitionIndex = 29655;
 
 	enum class CapturePass_PreviewType : ::System::Int32
 	{

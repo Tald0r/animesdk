@@ -3,12 +3,12 @@
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int FocusCameraTargetActivePolicy_TypeDefinitionIndex = 50322;
+	inline static constexpr unsigned int FocusCameraTargetActivePolicy_TypeDefinitionIndex = 69097;
 
 	enum class FocusCameraTargetActivePolicy : ::System::Int32
 	{
 		Always = 2,
-		None = 0,
 		ByRadius2D = 1,
+		None = 0,
 	};
 }

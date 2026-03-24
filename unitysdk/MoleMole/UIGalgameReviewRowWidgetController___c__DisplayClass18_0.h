@@ -6,19 +6,19 @@ namespace MoleMole { class UIGalgameReviewRowWidgetController; }
 namespace MoleMole::GalGame { class AudioEventItem; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC643E60)
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__PLAYVOICE_B__0_OFFSET UNITYSDK_OFFSET(0xC643E70)
-#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__PLAYVOICE_G__PLAYAUDIOAFTERVO_1_OFFSET UNITYSDK_OFFSET(0xC644070)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDFAECB0)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__PLAYVOICE_B__0_OFFSET UNITYSDK_OFFSET(0xDFAECC0)
+#define MOLEMOLE_UIGALGAMEREVIEWROWWIDGETCONTROLLER___C__DISPLAYCLASS18_0__PLAYVOICE_G__PLAYAUDIOAFTERVO_1_OFFSET UNITYSDK_OFFSET(0xDFAEEC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgameReviewRowWidgetController___c__DisplayClass18_0_TypeDefinitionIndex = 63949;
+	inline static constexpr unsigned int UIGalgameReviewRowWidgetController___c__DisplayClass18_0_TypeDefinitionIndex = 71885;
 
 	class UIGalgameReviewRowWidgetController___c__DisplayClass18_0 : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioListPlayAfterVo; // 0x10
-		::MoleMole::UIGalgameReviewRowWidgetController* __4__this; // 0x18
+		::MoleMole::UIGalgameReviewRowWidgetController* __4__this; // 0x10
+		::System::Collections::Generic::List_1<::MoleMole::GalGame::AudioEventItem*>* audioListPlayAfterVo; // 0x18
 		::System::Int64 stopTimeStampMs; // 0x20
 
 		::System::Void _ctor()

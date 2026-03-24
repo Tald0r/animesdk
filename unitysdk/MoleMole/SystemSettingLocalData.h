@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_SYSTEMSETTINGLOCALDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB305030)
+#define MOLEMOLE_SYSTEMSETTINGLOCALDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB703190)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SystemSettingLocalData_TypeDefinitionIndex = 76486;
+	inline static constexpr unsigned int SystemSettingLocalData_TypeDefinitionIndex = 62115;
 
 	class SystemSettingLocalData : public ::System::Object
 	{

@@ -3,12 +3,12 @@
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GraphOwnerControl_Control_TypeDefinitionIndex = 25638;
+	inline static constexpr unsigned int GraphOwnerControl_Control_TypeDefinitionIndex = 26642;
 
 	enum class GraphOwnerControl_Control : ::System::Int32
 	{
-		PauseBehaviour = 2,
 		StopBehaviour = 1,
+		PauseBehaviour = 2,
 		StartBehaviour = 0,
 	};
 }

@@ -5,24 +5,24 @@
 class Class_3_58CFABFCA3B97E5A_1;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIGRANDMARCELSCOREDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8921EB0)
-#define MOLEMOLE_UIGRANDMARCELSCOREDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8921EF0)
-#define MOLEMOLE_UIGRANDMARCELSCOREDIALOGPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__16_0_OFFSET UNITYSDK_OFFSET(0x8921F00)
+#define MOLEMOLE_UIGRANDMARCELSCOREDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xDFCA6E0)
+#define MOLEMOLE_UIGRANDMARCELSCOREDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xDFCA720)
+#define MOLEMOLE_UIGRANDMARCELSCOREDIALOGPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__16_0_OFFSET UNITYSDK_OFFSET(0xDFCA730)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelScoreDialogPopWindowController___c_TypeDefinitionIndex = 41024;
+	inline static constexpr unsigned int UIGrandMarcelScoreDialogPopWindowController___c_TypeDefinitionIndex = 45502;
 
 	class UIGrandMarcelScoreDialogPopWindowController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIGrandMarcelScoreDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIGrandMarcelScoreDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelScoreDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3A8C0);
+			return (::MoleMole::UIGrandMarcelScoreDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelScoreDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D610);
 		}
 		static ::System::Comparison_1<::Class_3_58CFABFCA3B97E5A_1*>** StaticGet___9__16_0()
 		{
-			return (::System::Comparison_1<::Class_3_58CFABFCA3B97E5A_1*>**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelScoreDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3A8C8);
+			return (::System::Comparison_1<::Class_3_58CFABFCA3B97E5A_1*>**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelScoreDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3D618);
 		}
 
 		static ::System::Void _cctor()

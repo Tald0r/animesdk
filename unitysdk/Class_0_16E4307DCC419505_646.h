@@ -1,9 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class Action; }
+namespace MoleMole { class UIInLevelPauseDialogContext; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_646_TypeDefinitionIndex = 66376;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_646_TypeDefinitionIndex = 67915;
 
 class Class_0_16E4307DCC419505_646
 {

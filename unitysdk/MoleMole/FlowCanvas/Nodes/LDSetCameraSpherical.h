@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableFunctionNode_3.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERASPHERICAL_INVOKE_OFFSET UNITYSDK_OFFSET(0xE872DF0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERASPHERICAL__CTOR_OFFSET UNITYSDK_OFFSET(0xE872EB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERASPHERICAL_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD419D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERASPHERICAL__CTOR_OFFSET UNITYSDK_OFFSET(0xCD41A90)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSetCameraSpherical_TypeDefinitionIndex = 57385;
+	inline static constexpr unsigned int LDSetCameraSpherical_TypeDefinitionIndex = 67063;
 
 	class LDSetCameraSpherical : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::System::Boolean, ::System::Single, ::System::Single>
 	{

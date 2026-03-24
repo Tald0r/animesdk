@@ -7,7 +7,7 @@ namespace UnityEngine { class RectTransform; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISnakeEndingAnimScript_BlackBorderMapping_TypeDefinitionIndex = 81639;
+	inline static constexpr unsigned int UISnakeEndingAnimScript_BlackBorderMapping_TypeDefinitionIndex = 83689;
 
 	struct alignas(8) UISnakeEndingAnimScript_BlackBorderMapping
 	{

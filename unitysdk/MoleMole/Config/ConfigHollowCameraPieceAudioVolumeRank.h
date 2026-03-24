@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowCameraPieceAudioVolumeRank_TypeDefinitionIndex = 76848;
+	inline static constexpr unsigned int ConfigHollowCameraPieceAudioVolumeRank_TypeDefinitionIndex = 57313;
 
 	struct alignas(4) ConfigHollowCameraPieceAudioVolumeRank
 	{

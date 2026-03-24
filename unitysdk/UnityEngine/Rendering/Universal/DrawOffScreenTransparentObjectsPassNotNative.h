@@ -28,47 +28,47 @@ namespace UnityEngine::NAPRenderPipeline0 { class Distortion_NativeSRP; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_EXECUTE_OFFSET UNITYSDK_OFFSET(0x18391410)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x18392640)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_GETMSAA4XJITTEREDPROJECTIONMATRIX_OFFSET UNITYSDK_OFFSET(0x18390840)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_POSTPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x183920D0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_PREDRAWRENDERERPREPARING_OFFSET UNITYSDK_OFFSET(0x18391D50)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_PREPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x18392740)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_SETUP_OFFSET UNITYSDK_OFFSET(0x183912C0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x18390C00)
-#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x183936D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_EXECUTE_OFFSET UNITYSDK_OFFSET(0x189E7A30)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x189E8C60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_GETMSAA4XJITTEREDPROJECTIONMATRIX_OFFSET UNITYSDK_OFFSET(0x189E6E60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_POSTPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x189E86F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_PREDRAWRENDERERPREPARING_OFFSET UNITYSDK_OFFSET(0x189E8370)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_PREPROCESSOFFSCREENPARTICLES_OFFSET UNITYSDK_OFFSET(0x189E8D60)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE_SETUP_OFFSET UNITYSDK_OFFSET(0x189E78E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x189E7220)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DRAWOFFSCREENTRANSPARENTOBJECTSPASSNOTNATIVE___BASE_FRAMECLEANUP_OFFSET UNITYSDK_OFFSET(0x189E9CF0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int DrawOffScreenTransparentObjectsPassNotNative_TypeDefinitionIndex = 28717;
+	inline static constexpr unsigned int DrawOffScreenTransparentObjectsPassNotNative_TypeDefinitionIndex = 29663;
 
 	class DrawOffScreenTransparentObjectsPassNotNative : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::System::Int32* StaticGet_PassPropertyId()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(DrawOffScreenTransparentObjectsPassNotNative_TypeDefinitionIndex)->GetStaticField(0x60E0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(DrawOffScreenTransparentObjectsPassNotNative_TypeDefinitionIndex)->GetStaticField(0x6530);
 		}
-		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_TransparentShaderTagIdList; // 0xA8
-		::System::String* m_ProfilerTag; // 0xB0
+		::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>* colorBuffersStoreAction_MSAA; // 0xA8
+		::Il2CppArray<::UnityEngine::Rendering::RenderTargetIdentifier>* colorBuffers; // 0xB0
 		::Il2CppArray<::UnityEngine::Rendering::RenderBufferLoadAction>* colorBuffersLoadActions; // 0xB8
-		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xC0
-		::Il2CppArray<::UnityEngine::Rendering::RenderTargetIdentifier>* colorBuffers; // 0xC8
-		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_TransparentShaderTagIdListForOffScreenParticle; // 0xD0
-		::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>* colorBuffersStoreAction_MSAA; // 0xD8
+		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_TransparentShaderTagIdList; // 0xC0
+		::System::String* m_ProfilerTag; // 0xC8
+		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xD0
+		::System::Collections::Generic::List_1<::UnityEngine::Rendering::ShaderTagId>* m_TransparentShaderTagIdListForOffScreenParticle; // 0xD8
 		::Il2CppArray<::UnityEngine::Rendering::RenderBufferStoreAction>* colorBuffersStoreAction; // 0xE0
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForDecalBlackCanvas; // 0xE8
-		::System::Single m_DistortionIntensity; // 0x104
-		::UnityEngine::Rendering::FilteringSettings m_DrawTimeFilterSetting; // 0x108
-		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlock; // 0x124
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForBlackCanvas; // 0x190
-		::System::Boolean m_IsOffScreenParticlePass; // 0x1AC
-		::System::Boolean m_IsOffScreenParticlePassMSAA; // 0x1AD
-		::System::Boolean m_NeedResetProjectionMatrix; // 0x1AE
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForDecal; // 0x1B0
-		::UnityEngine::NAPRenderPipeline0::DistortionQueueType m_DistortionQueueType; // 0x1CC
-		::UnityEngine::Rendering::FilteringSettings m_FilteringSettings; // 0x1D0
-		::UnityEngine::Rendering::DrawingSettings m_DrawSetting; // 0x1EC
+		::System::Single m_DistortionIntensity; // 0xE8
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForBlackCanvas; // 0xEC
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettings; // 0x108
+		::UnityEngine::NAPRenderPipeline0::DistortionQueueType m_DistortionQueueType; // 0x124
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForDecalBlackCanvas; // 0x128
+		::System::Boolean m_IsOffScreenParticlePassMSAA; // 0x144
+		::System::Boolean m_NeedResetProjectionMatrix; // 0x145
+		::System::Boolean m_IsOffScreenParticlePass; // 0x146
+		::UnityEngine::Rendering::DrawingSettings m_DrawSetting; // 0x148
+		::UnityEngine::Rendering::RenderStateBlock m_RenderStateBlock; // 0x280
+		::UnityEngine::Rendering::FilteringSettings m_FilteringSettingsForDecal; // 0x2EC
+		::UnityEngine::Rendering::FilteringSettings m_DrawTimeFilterSetting; // 0x308
 
 		::System::Void _ctor(::System::String* profilerTag, ::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::NAPRenderPipeline0::RenderPassEvent>* renderPassEventConfig, ::UnityEngine::Rendering::RenderQueueRange renderQueueRange, ::UnityEngine::LayerMask layerMask, ::UnityEngine::Rendering::StencilState stencilState, ::System::Int32 stencilReference)
 		{

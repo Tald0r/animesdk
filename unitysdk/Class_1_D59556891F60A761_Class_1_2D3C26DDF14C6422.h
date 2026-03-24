@@ -10,7 +10,7 @@ template <typename T> class Class_1_B40FB169D1647C91;
 template <typename T> class Class_1_C7B69AD07BC85C90;
 template <typename T> class Class_1_D59556891F60A761;
 
-inline static constexpr unsigned int Class_1_D59556891F60A761_Class_1_2D3C26DDF14C6422_TypeDefinitionIndex = 24374;
+inline static constexpr unsigned int Class_1_D59556891F60A761_Class_1_2D3C26DDF14C6422_TypeDefinitionIndex = 25296;
 
 template <typename TVertex>
 class Class_1_D59556891F60A761_Class_1_2D3C26DDF14C6422 : public ::System::Object

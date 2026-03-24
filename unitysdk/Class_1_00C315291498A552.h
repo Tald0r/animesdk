@@ -2,22 +2,22 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_79AE422BA06F6D26_68;
+class Class_2_79AE422BA06F6D26_170;
 class Class_2_9A16BB53176B1EDB;
 namespace MoleMole { class UIInterKnowCoursePanelWidgetController; }
 namespace UnityEngine { class RectTransform; }
 
-#define CLASS_1_00C315291498A552_METHOD_1_CCEC9A98054BAF73_OFFSET UNITYSDK_OFFSET(0x6BEA800)
-#define CLASS_1_00C315291498A552__CTOR_OFFSET UNITYSDK_OFFSET(0x6BEA7F0)
+#define CLASS_1_00C315291498A552_METHOD_1_CCEC9A98054BAF73_OFFSET UNITYSDK_OFFSET(0xB376530)
+#define CLASS_1_00C315291498A552__CTOR_OFFSET UNITYSDK_OFFSET(0xB376520)
 
-inline static constexpr unsigned int Class_1_00C315291498A552_TypeDefinitionIndex = 66432;
+inline static constexpr unsigned int Class_1_00C315291498A552_TypeDefinitionIndex = 75125;
 
 class Class_1_00C315291498A552 : public ::System::Object
 {
 public:
-	::Class_2_79AE422BA06F6D26_68* Field_1_3; // 0x10
-	::UnityEngine::RectTransform* Field_1_0; // 0x18
-	::UnityEngine::RectTransform* Field_1_1; // 0x20
+	::UnityEngine::RectTransform* Field_1_1; // 0x10
+	::Class_2_79AE422BA06F6D26_170* Field_1_3; // 0x18
+	::UnityEngine::RectTransform* Field_1_0; // 0x20
 	::MoleMole::UIInterKnowCoursePanelWidgetController* Field_1_2; // 0x28
 
 	::System::Void _ctor()

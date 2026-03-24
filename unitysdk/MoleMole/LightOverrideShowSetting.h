@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIAvatarLightSetting; }
 
-#define MOLEMOLE_LIGHTOVERRIDESHOWSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x8B182F0)
+#define MOLEMOLE_LIGHTOVERRIDESHOWSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xB19CB40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LightOverrideShowSetting_TypeDefinitionIndex = 44248;
+	inline static constexpr unsigned int LightOverrideShowSetting_TypeDefinitionIndex = 72254;
 
 	class LightOverrideShowSetting : public ::System::Object
 	{

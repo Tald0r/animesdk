@@ -9,7 +9,7 @@ namespace ObservableCollections { template <typename T1, typename T2, typename T
 
 namespace ObservableCollections
 {
-	inline static constexpr unsigned int ObservableDictionary_2_View_1__GetEnumerator_d__23_TypeDefinitionIndex = 24257;
+	inline static constexpr unsigned int ObservableDictionary_2_View_1__GetEnumerator_d__23_TypeDefinitionIndex = 25245;
 
 	template <typename TKey, typename TValue, typename TView>
 	class ObservableDictionary_2_View_1__GetEnumerator_d__23 : public ::System::Object

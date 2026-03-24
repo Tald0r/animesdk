@@ -7,9 +7,9 @@
 class ParticleBaseDataType;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define PARTICLESDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1802EF50)
+#define PARTICLESDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18650C40)
 
-inline static constexpr unsigned int ParticlesData_TypeDefinitionIndex = 28046;
+inline static constexpr unsigned int ParticlesData_TypeDefinitionIndex = 28986;
 
 class ParticlesData : public ::System::Object
 {

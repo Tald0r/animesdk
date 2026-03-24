@@ -5,11 +5,11 @@
 
 namespace UnityEngine { class AnimationCurve; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SINGLEWEATHERCONFIGWIND__CTOR_OFFSET UNITYSDK_OFFSET(0x16FA5B90)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SINGLEWEATHERCONFIGWIND__CTOR_OFFSET UNITYSDK_OFFSET(0x17677F70)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SingleWeatherConfigWind_TypeDefinitionIndex = 28350;
+	inline static constexpr unsigned int SingleWeatherConfigWind_TypeDefinitionIndex = 29291;
 
 	class SingleWeatherConfigWind : public ::System::Object
 	{

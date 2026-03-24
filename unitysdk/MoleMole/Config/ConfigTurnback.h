@@ -5,20 +5,20 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGTURNBACK__CTOR_OFFSET UNITYSDK_OFFSET(0x15EBEF70)
+#define MOLEMOLE_CONFIG_CONFIGTURNBACK__CTOR_OFFSET UNITYSDK_OFFSET(0xE2D1600)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTurnback_TypeDefinitionIndex = 40570;
+	inline static constexpr unsigned int ConfigTurnback_TypeDefinitionIndex = 67723;
 
 	class ConfigTurnback : public ::System::Object
 	{
 	public:
 		::System::Collections::Generic::List_1<::System::String*>* animatorStateNameList; // 0x10
-		::System::Boolean triggerResetLogSwitch; // 0x18
-		::System::Int32 inputCmpAngle; // 0x1C
-		::System::Int32 characterCmpAngle; // 0x20
-		::System::Int32 triggerResetCounter; // 0x24
+		::System::Int32 characterCmpAngle; // 0x18
+		::System::Int32 triggerResetCounter; // 0x1C
+		::System::Boolean triggerResetLogSwitch; // 0x20
+		::System::Int32 inputCmpAngle; // 0x24
 		::System::Int32 maxCacheFrameCnt; // 0x28
 
 		::System::Void _ctor()

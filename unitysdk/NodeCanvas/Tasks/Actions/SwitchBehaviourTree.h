@@ -7,13 +7,13 @@ namespace NodeCanvas::BehaviourTrees { class BehaviourTreeOwner; }
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_ACTIONS_SWITCHBEHAVIOURTREE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19F5B360)
-#define NODECANVAS_TASKS_ACTIONS_SWITCHBEHAVIOURTREE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19F5B3D0)
-#define NODECANVAS_TASKS_ACTIONS_SWITCHBEHAVIOURTREE__CTOR_OFFSET UNITYSDK_OFFSET(0x19F5B4C0)
+#define NODECANVAS_TASKS_ACTIONS_SWITCHBEHAVIOURTREE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A56C190)
+#define NODECANVAS_TASKS_ACTIONS_SWITCHBEHAVIOURTREE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A56C200)
+#define NODECANVAS_TASKS_ACTIONS_SWITCHBEHAVIOURTREE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A56C2F0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int SwitchBehaviourTree_TypeDefinitionIndex = 25586;
+	inline static constexpr unsigned int SwitchBehaviourTree_TypeDefinitionIndex = 27609;
 
 	class SwitchBehaviourTree : public ::NodeCanvas::Framework::ActionTask_1<::NodeCanvas::BehaviourTrees::BehaviourTreeOwner*>
 	{

@@ -5,19 +5,19 @@
 namespace TapTap::Sdk { class UIElement; }
 namespace TapTap::Sdk { class UIManager; }
 
-#define TAPTAP_SDK_UIMANAGER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7CC590)
-#define TAPTAP_SDK_UIMANAGER___C__DISPLAYCLASS9_0__POPUIELEMENT_B__0_OFFSET UNITYSDK_OFFSET(0x1A7CCAA0)
+#define TAPTAP_SDK_UIMANAGER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADAE260)
+#define TAPTAP_SDK_UIMANAGER___C__DISPLAYCLASS9_0__POPUIELEMENT_B__0_OFFSET UNITYSDK_OFFSET(0x1ADAE770)
 
 namespace TapTap::Sdk
 {
-	inline static constexpr unsigned int UIManager___c__DisplayClass9_0_TypeDefinitionIndex = 9454;
+	inline static constexpr unsigned int UIManager___c__DisplayClass9_0_TypeDefinitionIndex = 9456;
 
 	class UIManager___c__DisplayClass9_0 : public ::System::Object
 	{
 	public:
 		::TapTap::Sdk::UIElement* element; // 0x10
-		::TapTap::Sdk::UIElement* lastElement; // 0x18
-		::TapTap::Sdk::UIManager* __4__this; // 0x20
+		::TapTap::Sdk::UIManager* __4__this; // 0x18
+		::TapTap::Sdk::UIElement* lastElement; // 0x20
 
 		::System::Void _ctor()
 		{

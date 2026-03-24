@@ -5,22 +5,22 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Light; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x19FB39F0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_REGISTERLIGHT_OFFSET UNITYSDK_OFFSET(0x19FB3AD0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_TRIGGERNIGHTLIGHT_OFFSET UNITYSDK_OFFSET(0x19FB3C30)
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_UNREGISTERLIGHT_OFFSET UNITYSDK_OFFSET(0x19FB3B80)
-#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x19FB3990)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x1A2EE330)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_REGISTERLIGHT_OFFSET UNITYSDK_OFFSET(0x1A2EE410)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_TRIGGERNIGHTLIGHT_OFFSET UNITYSDK_OFFSET(0x1A2EE570)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER_UNREGISTERLIGHT_OFFSET UNITYSDK_OFFSET(0x1A2EE4C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_LIGHTMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2EE2D0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int LightManager_TypeDefinitionIndex = 28391;
+	inline static constexpr unsigned int LightManager_TypeDefinitionIndex = 29334;
 
 	class LightManager : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Rendering::Universal::LightManager** StaticGet__instance()
 		{
-			return (::UnityEngine::Rendering::Universal::LightManager**)Il2CppClass::FromTypeDefinitionIndex(LightManager_TypeDefinitionIndex)->GetStaticField(0x22560);
+			return (::UnityEngine::Rendering::Universal::LightManager**)Il2CppClass::FromTypeDefinitionIndex(LightManager_TypeDefinitionIndex)->GetStaticField(0x23F90);
 		}
 		::System::Collections::Generic::List_1<::UnityEngine::Light*>* m_LightList; // 0x10
 

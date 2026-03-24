@@ -12,26 +12,26 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
 
-#define CLASS_2_83D433B570E0864F_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xA6AFCA0)
-#define CLASS_2_83D433B570E0864F_METHOD_2_929BD2659F9FA6CA_OFFSET UNITYSDK_OFFSET(0xA6AFA40)
-#define CLASS_2_83D433B570E0864F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA6AFDB0)
-#define CLASS_2_83D433B570E0864F__CTOR_OFFSET UNITYSDK_OFFSET(0xA6AFDA0)
+#define CLASS_2_83D433B570E0864F_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x9B3AE00)
+#define CLASS_2_83D433B570E0864F_METHOD_2_929BD2659F9FA6CA_OFFSET UNITYSDK_OFFSET(0x9B3ABA0)
+#define CLASS_2_83D433B570E0864F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9B3AF10)
+#define CLASS_2_83D433B570E0864F__CTOR_OFFSET UNITYSDK_OFFSET(0x9B3AF00)
 
-inline static constexpr unsigned int Class_2_83D433B570E0864F_TypeDefinitionIndex = 53663;
+inline static constexpr unsigned int Class_2_83D433B570E0864F_TypeDefinitionIndex = 49382;
 
 class Class_2_83D433B570E0864F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_8; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x20
-	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x28
-	::MonoUITableScrollV2* Field_2_4; // 0x30
-	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_7; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
-	::UnityEngine::Animation* Field_2_6; // 0x48
-	::MonoUITableScrollV2* Field_2_9; // 0x50
-	::UnityEngine::RectTransform* Field_2_5; // 0x58
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x60
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
+	::MonoUITableScrollV2* Field_2_4; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x28
+	::MonoUITableScrollV2* Field_2_8; // 0x30
+	::UnityEngine::RectTransform* Field_2_5; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
+	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_7; // 0x48
+	::Class_2_A8F5ABF31E066ED4* Field_2_1; // 0x50
+	::MonoUITableScrollV2* Field_2_9; // 0x58
+	::UnityEngine::Animation* Field_2_6; // 0x60
 
 	::System::Void _ctor()
 	{

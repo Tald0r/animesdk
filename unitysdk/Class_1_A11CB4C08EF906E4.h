@@ -7,9 +7,9 @@
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UIButtonBase; }
 
-#define CLASS_1_A11CB4C08EF906E4__CTOR_OFFSET UNITYSDK_OFFSET(0xEE74B00)
+#define CLASS_1_A11CB4C08EF906E4__CTOR_OFFSET UNITYSDK_OFFSET(0x6D5DB50)
 
-inline static constexpr unsigned int Class_1_A11CB4C08EF906E4_TypeDefinitionIndex = 39937;
+inline static constexpr unsigned int Class_1_A11CB4C08EF906E4_TypeDefinitionIndex = 52819;
 
 class Class_1_A11CB4C08EF906E4 : public ::System::Object
 {

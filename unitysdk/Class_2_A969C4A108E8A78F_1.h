@@ -11,27 +11,27 @@ namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define CLASS_2_A969C4A108E8A78F_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC306610)
-#define CLASS_2_A969C4A108E8A78F_1_METHOD_2_DE52BD42C4B0B772_OFFSET UNITYSDK_OFFSET(0xC306480)
-#define CLASS_2_A969C4A108E8A78F_1_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0xC3061A0)
-#define CLASS_2_A969C4A108E8A78F_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC306600)
+#define CLASS_2_A969C4A108E8A78F_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x92DB710)
+#define CLASS_2_A969C4A108E8A78F_1_METHOD_2_DE52BD42C4B0B772_OFFSET UNITYSDK_OFFSET(0x92DB580)
+#define CLASS_2_A969C4A108E8A78F_1_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x92DB2A0)
+#define CLASS_2_A969C4A108E8A78F_1__CTOR_OFFSET UNITYSDK_OFFSET(0x92DB700)
 
-inline static constexpr unsigned int Class_2_A969C4A108E8A78F_1_TypeDefinitionIndex = 59089;
+inline static constexpr unsigned int Class_2_A969C4A108E8A78F_1_TypeDefinitionIndex = 47266;
 
 class Class_2_A969C4A108E8A78F_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_0D31A1661D004892<::Class_2_A969C4A108E8A78F_1_Class_2_6847DA90B8436BE2*>* Field_2_4; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x20
-	::UnityEngine::RectTransform* Field_2_10; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x38
-	::Class_2_0D31A1661D004892<::Class_2_A969C4A108E8A78F_1_Class_2_6847DA90B8436BE2*>* Field_2_5; // 0x40
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x50
+	::Class_2_0D31A1661D004892<::Class_2_A969C4A108E8A78F_1_Class_2_6847DA90B8436BE2*>* Field_2_5; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x20
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x30
+	::UnityEngine::RectTransform* Field_2_10; // 0x38
+	::Class_2_0D31A1661D004892<::Class_2_A969C4A108E8A78F_1_Class_2_6847DA90B8436BE2*>* Field_2_4; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_8; // 0x50
 	::Class_2_A8F5ABF31E066ED4* Field_2_9; // 0x58
-	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x60
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x68
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x60
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x68
 
 	::System::Void _ctor()
 	{

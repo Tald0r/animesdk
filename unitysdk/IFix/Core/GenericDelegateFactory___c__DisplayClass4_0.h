@@ -4,11 +4,11 @@
 
 namespace System { class Type; }
 
-#define IFIX_CORE_GENERICDELEGATEFACTORY___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19914DF0)
+#define IFIX_CORE_GENERICDELEGATEFACTORY___C__DISPLAYCLASS4_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19EAEE20)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int GenericDelegateFactory___c__DisplayClass4_0_TypeDefinitionIndex = 6795;
+	inline static constexpr unsigned int GenericDelegateFactory___c__DisplayClass4_0_TypeDefinitionIndex = 6799;
 
 	class GenericDelegateFactory___c__DisplayClass4_0 : public ::System::Object
 	{

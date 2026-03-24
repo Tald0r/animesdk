@@ -2,7 +2,7 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/CodeDom/CodeMemberMethod.h"
 
-#define SYSTEM_CODEDOM_CODEENTRYPOINTMETHOD__CTOR_OFFSET UNITYSDK_OFFSET(0x18D65A60)
+#define SYSTEM_CODEDOM_CODEENTRYPOINTMETHOD__CTOR_OFFSET UNITYSDK_OFFSET(0x191AE750)
 
 namespace System::CodeDom
 {

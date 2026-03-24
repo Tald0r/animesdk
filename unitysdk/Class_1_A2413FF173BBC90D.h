@@ -8,22 +8,22 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_1_A2413FF173BBC90D_METHOD_1_7401696EE5DFB315_OFFSET UNITYSDK_OFFSET(0x9C363E0)
-#define CLASS_1_A2413FF173BBC90D_METHOD_1_F40AF41B962D2981_OFFSET UNITYSDK_OFFSET(0x9C365D0)
-#define CLASS_1_A2413FF173BBC90D__CTOR_OFFSET UNITYSDK_OFFSET(0x9C363D0)
+#define CLASS_1_A2413FF173BBC90D_METHOD_1_7401696EE5DFB315_OFFSET UNITYSDK_OFFSET(0x8260D10)
+#define CLASS_1_A2413FF173BBC90D_METHOD_1_F40AF41B962D2981_OFFSET UNITYSDK_OFFSET(0x8260F00)
+#define CLASS_1_A2413FF173BBC90D__CTOR_OFFSET UNITYSDK_OFFSET(0x8260D00)
 
-inline static constexpr unsigned int Class_1_A2413FF173BBC90D_TypeDefinitionIndex = 65007;
+inline static constexpr unsigned int Class_1_A2413FF173BBC90D_TypeDefinitionIndex = 57258;
 
 class Class_1_A2413FF173BBC90D : public ::System::Object
 {
 public:
 	::System::Collections::Generic::List_1<::System::Int32>* Field_1_6; // 0x10
 	::UnityEngine::AnimationCurve* Field_1_2; // 0x18
-	::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* Field_1_5; // 0x20
-	::UnityEngine::AnimationCurve* Field_1_4; // 0x28
+	::UnityEngine::AnimationCurve* Field_1_4; // 0x20
+	::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Int32>* Field_1_5; // 0x28
 	::System::Single Field_1_3; // 0x30
-	::System::Single Field_1_0; // 0x34
-	::System::Single Field_1_1; // 0x38
+	::System::Single Field_1_1; // 0x34
+	::System::Single Field_1_0; // 0x38
 
 	::System::Void _ctor()
 	{

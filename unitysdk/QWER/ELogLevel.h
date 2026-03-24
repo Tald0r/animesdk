@@ -3,7 +3,7 @@
 
 namespace QWER
 {
-	inline static constexpr unsigned int ELogLevel_TypeDefinitionIndex = 82108;
+	inline static constexpr unsigned int ELogLevel_TypeDefinitionIndex = 84149;
 
 	enum class ELogLevel : ::System::Int32
 	{

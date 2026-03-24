@@ -6,7 +6,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int VisQueryManager_QueryParam_TypeDefinitionIndex = 28794;
+	inline static constexpr unsigned int VisQueryManager_QueryParam_TypeDefinitionIndex = 29740;
 
 	struct alignas(4) VisQueryManager_QueryParam
 	{

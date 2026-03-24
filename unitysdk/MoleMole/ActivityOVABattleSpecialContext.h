@@ -5,19 +5,19 @@
 
 class Class_2_A475772D55E65B13;
 
-#define MOLEMOLE_ACTIVITYOVABATTLESPECIALCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB497940)
+#define MOLEMOLE_ACTIVITYOVABATTLESPECIALCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xE2A0130)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ActivityOVABattleSpecialContext_TypeDefinitionIndex = 50124;
+	inline static constexpr unsigned int ActivityOVABattleSpecialContext_TypeDefinitionIndex = 58812;
 
 	class ActivityOVABattleSpecialContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Foundation::AssetPath BackGroundPic; // 0x28
-		::Class_2_A475772D55E65B13* entryData; // 0x38
-		::System::Int32 selectLevel; // 0x40
-		::System::Boolean selectHard; // 0x44
+		::Class_2_A475772D55E65B13* entryData; // 0x28
+		::Foundation::AssetPath BackGroundPic; // 0x30
+		::System::Boolean selectHard; // 0x40
+		::System::Int32 selectLevel; // 0x44
 
 		::System::Void _ctor()
 		{

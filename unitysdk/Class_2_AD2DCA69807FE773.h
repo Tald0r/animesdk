@@ -8,11 +8,11 @@
 namespace MoleMole { class ConfigAnimationCurveGroup; }
 namespace System { class String; }
 
-#define CLASS_2_AD2DCA69807FE773_METHOD_2_3D91C4D19A6FCF55_OFFSET UNITYSDK_OFFSET(0x85D36D0)
-#define CLASS_2_AD2DCA69807FE773_METHOD_2_DB6118E9A8DA707E_OFFSET UNITYSDK_OFFSET(0x85D3AE0)
-#define CLASS_2_AD2DCA69807FE773__CTOR_OFFSET UNITYSDK_OFFSET(0x85D3540)
+#define CLASS_2_AD2DCA69807FE773_METHOD_2_3D91C4D19A6FCF55_OFFSET UNITYSDK_OFFSET(0xB318E70)
+#define CLASS_2_AD2DCA69807FE773_METHOD_2_DB6118E9A8DA707E_OFFSET UNITYSDK_OFFSET(0xB319280)
+#define CLASS_2_AD2DCA69807FE773__CTOR_OFFSET UNITYSDK_OFFSET(0xB318CE0)
 
-inline static constexpr unsigned int Class_2_AD2DCA69807FE773_TypeDefinitionIndex = 37818;
+inline static constexpr unsigned int Class_2_AD2DCA69807FE773_TypeDefinitionIndex = 55444;
 
 class Class_2_AD2DCA69807FE773 : public ::Class_1_5BD3EF046502B972
 {
@@ -25,11 +25,11 @@ public:
 	// static const ::System::String* Field_2_11; // 0x0
 	// static const ::System::String* Field_2_12; // 0x0
 	::MoleMole::ConfigAnimationCurveGroup* Field_2_2; // 0x20
-	::UnityEngine::Vector3 Field_2_3; // 0x28
-	::System::Boolean Field_2_0; // 0x34
-	::Foundation::Unreal::FTransform3D Field_2_1; // 0x38
-	::System::Single Field_2_5; // 0x60
-	::UnityEngine::Vector3 Field_2_4; // 0x64
+	::System::Single Field_2_5; // 0x28
+	::UnityEngine::Vector3 Field_2_4; // 0x2C
+	::UnityEngine::Vector3 Field_2_3; // 0x38
+	::Foundation::Unreal::FTransform3D Field_2_1; // 0x44
+	::System::Boolean Field_2_0; // 0x6C
 
 	::System::Void _ctor(::System::Boolean a1, ::System::Boolean a2, ::Foundation::Unreal::FTransform3D a3, ::MoleMole::ConfigAnimationCurveGroup* a4, ::System::Boolean a5)
 	{

@@ -3,10 +3,10 @@
 #include "unitysdk/MoleMole/Config/TeamProperty.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_91F712A77842FECF_EQUALS_OFFSET UNITYSDK_OFFSET(0x2C7940)
-#define STRUCT_2_91F712A77842FECF_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x2C79C0)
+#define STRUCT_2_91F712A77842FECF_EQUALS_OFFSET UNITYSDK_OFFSET(0x378120)
+#define STRUCT_2_91F712A77842FECF_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x3781A0)
 
-inline static constexpr unsigned int Struct_2_91F712A77842FECF_TypeDefinitionIndex = 69344;
+inline static constexpr unsigned int Struct_2_91F712A77842FECF_TypeDefinitionIndex = 60466;
 
 struct alignas(1) Struct_2_91F712A77842FECF
 {

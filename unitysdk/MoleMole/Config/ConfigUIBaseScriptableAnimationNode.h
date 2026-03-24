@@ -8,12 +8,12 @@ class Class_1_F50B5EAC0B6702FB;
 namespace MoleMole::Config { class BoolUISpecialNum; }
 namespace MoleMole::Config { class UISpecialNumGroup; }
 
-#define MOLEMOLE_CONFIG_CONFIGUIBASESCRIPTABLEANIMATIONNODE_CREATEUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xF16EAE0)
-#define MOLEMOLE_CONFIG_CONFIGUIBASESCRIPTABLEANIMATIONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xF16EBB0)
+#define MOLEMOLE_CONFIG_CONFIGUIBASESCRIPTABLEANIMATIONNODE_CREATEUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xEC4D490)
+#define MOLEMOLE_CONFIG_CONFIGUIBASESCRIPTABLEANIMATIONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC4D560)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIBaseScriptableAnimationNode_TypeDefinitionIndex = 51688;
+	inline static constexpr unsigned int ConfigUIBaseScriptableAnimationNode_TypeDefinitionIndex = 43405;
 
 	class ConfigUIBaseScriptableAnimationNode : public ::System::Object
 	{

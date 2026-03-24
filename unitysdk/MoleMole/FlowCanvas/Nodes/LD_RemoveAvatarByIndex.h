@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEX_INVOKE_OFFSET UNITYSDK_OFFSET(0x8F7A5C0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEX__CTOR_OFFSET UNITYSDK_OFFSET(0x8F7A660)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEX_INVOKE_OFFSET UNITYSDK_OFFSET(0xD0DA0E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_REMOVEAVATARBYINDEX__CTOR_OFFSET UNITYSDK_OFFSET(0xD0DA180)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_RemoveAvatarByIndex_TypeDefinitionIndex = 50723;
+	inline static constexpr unsigned int LD_RemoveAvatarByIndex_TypeDefinitionIndex = 53941;
 
 	class LD_RemoveAvatarByIndex : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Int32>
 	{

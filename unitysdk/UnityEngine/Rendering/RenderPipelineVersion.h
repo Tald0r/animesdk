@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int RenderPipelineVersion_TypeDefinitionIndex = 28338;
+	inline static constexpr unsigned int RenderPipelineVersion_TypeDefinitionIndex = 29279;
 
 	enum class RenderPipelineVersion : ::System::Int32
 	{

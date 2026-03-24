@@ -6,19 +6,19 @@ namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_UINPCBUBBLEPERFORM_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x9E8D970)
-#define MOLEMOLE_UINPCBUBBLEPERFORM__CTOR_OFFSET UNITYSDK_OFFSET(0x9E8D920)
+#define MOLEMOLE_UINPCBUBBLEPERFORM_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xB6B6A30)
+#define MOLEMOLE_UINPCBUBBLEPERFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xB6B69E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UINpcBubblePerform_TypeDefinitionIndex = 47888;
+	inline static constexpr unsigned int UINpcBubblePerform_TypeDefinitionIndex = 80426;
 
 	class UINpcBubblePerform : public ::MoleMole::DisplayMessageBase
 	{
 	public:
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* mapping; // 0x28
-		::System::UInt32 ownerID; // 0x30
-		::System::Int32 performId; // 0x34
+		::System::Int32 performId; // 0x30
+		::System::UInt32 ownerID; // 0x34
 		::System::Int32 interactID; // 0x38
 
 		::System::Void _ctor(::MoleMole::Battle::Entity* owner, ::System::Int32 interactID, ::System::Int32 performId, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>* mapping)

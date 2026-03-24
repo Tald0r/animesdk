@@ -3,14 +3,14 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EPerformType_TypeDefinitionIndex = 16005;
+	inline static constexpr unsigned int EPerformType_TypeDefinitionIndex = 14101;
 
 	enum class EPerformType : ::System::Int16
 	{
-		None = -1,
-		Bubble = 2,
+		Dialog = 1,
 		EnumCount = 3,
 		PlotPlay = 0,
-		Dialog = 1,
+		Bubble = 2,
+		None = -1,
 	};
 }

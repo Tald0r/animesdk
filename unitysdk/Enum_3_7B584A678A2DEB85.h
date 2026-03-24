@@ -1,22 +1,22 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Enum_3_7B584A678A2DEB85_TypeDefinitionIndex = 60537;
+inline static constexpr unsigned int Enum_3_7B584A678A2DEB85_TypeDefinitionIndex = 56768;
 
 enum class Enum_3_7B584A678A2DEB85 : ::System::Int32
 {
+	THScoreAddLifeCount = 11,
+	THGetAllHPPropInLevel = 12,
 	THTrapKill = 5,
-	THInvincibleFallDepth = 9,
-	THGetHpProp = 2,
-	THDivingFallDepth = 10,
-	THAttackUpFallingBlock = 3,
-	THLifeCount = 13,
-	THDepth = 1,
-	THColorBlockDestroy = 8,
 	THGetItem = 4,
 	THGridDeath = 7,
-	THDepthNoDie = 14,
+	THDepth = 1,
 	THDivingBlock = 6,
-	THGetAllHPPropInLevel = 12,
-	THScoreAddLifeCount = 11,
+	THGetHpProp = 2,
+	THAttackUpFallingBlock = 3,
+	THDivingFallDepth = 10,
+	THDepthNoDie = 14,
+	THColorBlockDestroy = 8,
+	THInvincibleFallDepth = 9,
+	THLifeCount = 13,
 };

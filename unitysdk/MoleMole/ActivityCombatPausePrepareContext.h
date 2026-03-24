@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_ACTIVITYCOMBATPAUSEPREPARECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x84815B0)
+#define MOLEMOLE_ACTIVITYCOMBATPAUSEPREPARECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x94D9DF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ActivityCombatPausePrepareContext_TypeDefinitionIndex = 57884;
+	inline static constexpr unsigned int ActivityCombatPausePrepareContext_TypeDefinitionIndex = 71058;
 
 	class ActivityCombatPausePrepareContext : public ::MoleMole::UIControllerContextBase
 	{

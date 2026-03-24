@@ -5,20 +5,20 @@
 namespace MoleMole { class UIActivityCheckinProgressBarWidgetController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8AB7FD0)
-#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__GETREWARD_B__0_OFFSET UNITYSDK_OFFSET(0x8AB7FE0)
-#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__GETREWARD_B__1_OFFSET UNITYSDK_OFFSET(0x8AB8010)
-#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__GETREWARD_B__2_OFFSET UNITYSDK_OFFSET(0x8AB8040)
+#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8CC0D80)
+#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__GETREWARD_B__0_OFFSET UNITYSDK_OFFSET(0x8CC0D90)
+#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__GETREWARD_B__1_OFFSET UNITYSDK_OFFSET(0x8CC0DC0)
+#define MOLEMOLE_UIACTIVITYCHECKINPROGRESSBARWIDGETCONTROLLER___C__DISPLAYCLASS10_0__GETREWARD_B__2_OFFSET UNITYSDK_OFFSET(0x8CC0DF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityCheckinProgressBarWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 43483;
+	inline static constexpr unsigned int UIActivityCheckinProgressBarWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 51706;
 
 	class UIActivityCheckinProgressBarWidgetController___c__DisplayClass10_0 : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::System::UInt32>* canGetReward; // 0x10
-		::MoleMole::UIActivityCheckinProgressBarWidgetController* __4__this; // 0x18
+		::MoleMole::UIActivityCheckinProgressBarWidgetController* __4__this; // 0x10
+		::System::Collections::Generic::List_1<::System::UInt32>* canGetReward; // 0x18
 
 		::System::Void _ctor()
 		{

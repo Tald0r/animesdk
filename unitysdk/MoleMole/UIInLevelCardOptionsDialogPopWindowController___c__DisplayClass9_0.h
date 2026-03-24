@@ -6,21 +6,21 @@
 namespace MoleMole { class UIInLevelCardOptionsDialogPopWindowController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x80B6910)
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__INITINLEVELCARDOBJ_B__0_OFFSET UNITYSDK_OFFSET(0x80B6920)
-#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__INITINLEVELCARDOBJ_B__1_OFFSET UNITYSDK_OFFSET(0x80B6AD0)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7452CA0)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__INITINLEVELCARDOBJ_B__0_OFFSET UNITYSDK_OFFSET(0x7452CB0)
+#define MOLEMOLE_UIINLEVELCARDOPTIONSDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS9_0__INITINLEVELCARDOBJ_B__1_OFFSET UNITYSDK_OFFSET(0x7452E60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelCardOptionsDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 66745;
+	inline static constexpr unsigned int UIInLevelCardOptionsDialogPopWindowController___c__DisplayClass9_0_TypeDefinitionIndex = 71076;
 
 	class UIInLevelCardOptionsDialogPopWindowController___c__DisplayClass9_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIInLevelCardOptionsDialogPopWindowController* __4__this; // 0x10
 		::System::Action* __9__1; // 0x18
-		::MoleMole::InLevelOptionsCardSelectItemData item; // 0x20
-		::System::Int32 index; // 0x28
+		::System::Int32 index; // 0x20
+		::MoleMole::InLevelOptionsCardSelectItemData item; // 0x24
 
 		::System::Void _ctor()
 		{

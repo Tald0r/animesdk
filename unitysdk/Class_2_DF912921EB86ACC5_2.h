@@ -1,20 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_C243F2A90D008B33.h"
+#include "unitysdk/Class_1_BCCD4DFEA016B7F9.h"
 
-#define CLASS_2_DF912921EB86ACC5_2_METHOD_2_19CCC07C980409E4_OFFSET UNITYSDK_OFFSET(0x81B25C0)
-#define CLASS_2_DF912921EB86ACC5_2_METHOD_2_3E7178C5ECF017DB_OFFSET UNITYSDK_OFFSET(0x81B27A0)
-#define CLASS_2_DF912921EB86ACC5_2_METHOD_2_B387E1AED8A8F880_OFFSET UNITYSDK_OFFSET(0x81B2640)
-#define CLASS_2_DF912921EB86ACC5_2__CTOR_OFFSET UNITYSDK_OFFSET(0x81B2790)
+namespace MoleMole { class PerformanceSettingPostProcessProfileBase; }
 
-inline static constexpr unsigned int Class_2_DF912921EB86ACC5_2_TypeDefinitionIndex = 65747;
+#define CLASS_2_DF912921EB86ACC5_2_METHOD_2_19CCC07C980409E4_OFFSET UNITYSDK_OFFSET(0x87ABA10)
+#define CLASS_2_DF912921EB86ACC5_2_METHOD_2_3E7178C5ECF017DB_OFFSET UNITYSDK_OFFSET(0x87ABAA0)
+#define CLASS_2_DF912921EB86ACC5_2__CTOR_OFFSET UNITYSDK_OFFSET(0x87ABA00)
 
-class Class_2_DF912921EB86ACC5_2 : public ::Class_1_C243F2A90D008B33
+inline static constexpr unsigned int Class_2_DF912921EB86ACC5_2_TypeDefinitionIndex = 65415;
+
+class Class_2_DF912921EB86ACC5_2 : public ::Class_1_BCCD4DFEA016B7F9
 {
 public:
-	::System::Void _ctor()
+	::System::Void _ctor(::MoleMole::PerformanceSettingPostProcessProfileBase* a1)
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_DF912921EB86ACC5_2__CTOR_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID, ::MoleMole::PerformanceSettingPostProcessProfileBase*))((::PBYTE)hIl2Cpp + CLASS_2_DF912921EB86ACC5_2__CTOR_OFFSET))(this, a1);
 	}
 
 	::System::Void Method_2_19CCC07C980409E4(::System::Boolean a1)
@@ -25,10 +26,5 @@ public:
 	::System::Void Method_2_3E7178C5ECF017DB(::System::Boolean a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_DF912921EB86ACC5_2_METHOD_2_3E7178C5ECF017DB_OFFSET))(this, a1);
-	}
-
-	::System::Void Method_2_B387E1AED8A8F880()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_DF912921EB86ACC5_2_METHOD_2_B387E1AED8A8F880_OFFSET))(this);
 	}
 };

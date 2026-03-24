@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UISOCIALCIRCLEMAIN_JOINWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x73C4A00)
+#define MOLEMOLE_UISOCIALCIRCLEMAIN_JOINWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x7BBA790)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISocialCircleMain_JoinWidgetController_Context_TypeDefinitionIndex = 73803;
+	inline static constexpr unsigned int UISocialCircleMain_JoinWidgetController_Context_TypeDefinitionIndex = 67722;
 
 	class UISocialCircleMain_JoinWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

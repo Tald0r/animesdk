@@ -3,12 +3,12 @@
 #include "unitysdk/Dest/Math/Segment3.h"
 #include "unitysdk/System/ValueType.h"
 
-#define DEST_MATH_CAPSULE3__CTOR_1_OFFSET UNITYSDK_OFFSET(0x975CA0)
-#define DEST_MATH_CAPSULE3__CTOR_OFFSET UNITYSDK_OFFSET(0x975CA0)
+#define DEST_MATH_CAPSULE3__CTOR_1_OFFSET UNITYSDK_OFFSET(0x9A8B50)
+#define DEST_MATH_CAPSULE3__CTOR_OFFSET UNITYSDK_OFFSET(0x9A8B50)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int Capsule3_TypeDefinitionIndex = 31722;
+	inline static constexpr unsigned int Capsule3_TypeDefinitionIndex = 32676;
 
 	struct alignas(4) Capsule3
 	{

@@ -6,29 +6,29 @@
 class NapRenderEntity;
 namespace System { template <typename T> class Comparison_1; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x185E2240)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x185E2270)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATELIGHTDATA_B__92_8_OFFSET UNITYSDK_OFFSET(0x185E22C0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATEPERFRAME_B__88_0_OFFSET UNITYSDK_OFFSET(0x185E2280)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18B4AAF0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18B4AB20)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATELIGHTDATA_B__93_8_OFFSET UNITYSDK_OFFSET(0x18B4AB70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATEPERFRAME_B__88_0_OFFSET UNITYSDK_OFFSET(0x18B4AB30)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int NapRenderEntityManager___c_TypeDefinitionIndex = 28607;
+	inline static constexpr unsigned int NapRenderEntityManager___c_TypeDefinitionIndex = 29550;
 
 	class NapRenderEntityManager___c : public ::System::Object
 	{
 	public:
+		static ::System::Comparison_1<::System::ValueTuple_2<::System::Int32, ::System::Single>>** StaticGet___9__93_8()
+		{
+			return (::System::Comparison_1<::System::ValueTuple_2<::System::Int32, ::System::Single>>**)Il2CppClass::FromTypeDefinitionIndex(NapRenderEntityManager___c_TypeDefinitionIndex)->GetStaticField(0x226D0);
+		}
 		static ::System::Comparison_1<::NapRenderEntity*>** StaticGet___9__88_0()
 		{
-			return (::System::Comparison_1<::NapRenderEntity*>**)Il2CppClass::FromTypeDefinitionIndex(NapRenderEntityManager___c_TypeDefinitionIndex)->GetStaticField(0x21060);
-		}
-		static ::System::Comparison_1<::System::ValueTuple_2<::System::Int32, ::System::Single>>** StaticGet___9__92_8()
-		{
-			return (::System::Comparison_1<::System::ValueTuple_2<::System::Int32, ::System::Single>>**)Il2CppClass::FromTypeDefinitionIndex(NapRenderEntityManager___c_TypeDefinitionIndex)->GetStaticField(0x21068);
+			return (::System::Comparison_1<::NapRenderEntity*>**)Il2CppClass::FromTypeDefinitionIndex(NapRenderEntityManager___c_TypeDefinitionIndex)->GetStaticField(0x226D8);
 		}
 		static ::UnityEngine::Rendering::Universal::NapRenderEntityManager___c** StaticGet___9()
 		{
-			return (::UnityEngine::Rendering::Universal::NapRenderEntityManager___c**)Il2CppClass::FromTypeDefinitionIndex(NapRenderEntityManager___c_TypeDefinitionIndex)->GetStaticField(0x21070);
+			return (::UnityEngine::Rendering::Universal::NapRenderEntityManager___c**)Il2CppClass::FromTypeDefinitionIndex(NapRenderEntityManager___c_TypeDefinitionIndex)->GetStaticField(0x226E0);
 		}
 
 		static ::System::Void _cctor()
@@ -46,9 +46,9 @@ namespace UnityEngine::Rendering::Universal
 			return ((::System::Int32(*)(::PVOID, ::NapRenderEntity*, ::NapRenderEntity*))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATEPERFRAME_B__88_0_OFFSET))(this, a, b);
 		}
 
-		::System::Int32 _UpdateLightData_b__92_8(::System::ValueTuple_2<::System::Int32, ::System::Single> a, ::System::ValueTuple_2<::System::Int32, ::System::Single> b)
+		::System::Int32 _UpdateLightData_b__93_8(::System::ValueTuple_2<::System::Int32, ::System::Single> a, ::System::ValueTuple_2<::System::Int32, ::System::Single> b)
 		{
-			return ((::System::Int32(*)(::PVOID, ::System::ValueTuple_2<::System::Int32, ::System::Single>, ::System::ValueTuple_2<::System::Int32, ::System::Single>))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATELIGHTDATA_B__92_8_OFFSET))(this, a, b);
+			return ((::System::Int32(*)(::PVOID, ::System::ValueTuple_2<::System::Int32, ::System::Single>, ::System::ValueTuple_2<::System::Int32, ::System::Single>))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_NAPRENDERENTITYMANAGER___C__UPDATELIGHTDATA_B__93_8_OFFSET))(this, a, b);
 		}
 	};
 }

@@ -5,19 +5,19 @@
 namespace MoleMole { class UIHollowItemCollectEffectWidgetController; }
 namespace MoleMole { class UIHollowItemCollectWidgetController___c__DisplayClass14_0; }
 
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_1__CTOR_OFFSET UNITYSDK_OFFSET(0x7A752B0)
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_1__SHOWEFFECTATPOS_B__1_OFFSET UNITYSDK_OFFSET(0x7A752C0)
-#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_1__SHOWEFFECTATPOS_B__2_OFFSET UNITYSDK_OFFSET(0x7A753C0)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAD5B180)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_1__SHOWEFFECTATPOS_B__1_OFFSET UNITYSDK_OFFSET(0xAD5B190)
+#define MOLEMOLE_UIHOLLOWITEMCOLLECTWIDGETCONTROLLER___C__DISPLAYCLASS14_1__SHOWEFFECTATPOS_B__2_OFFSET UNITYSDK_OFFSET(0xAD5B290)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowItemCollectWidgetController___c__DisplayClass14_1_TypeDefinitionIndex = 62674;
+	inline static constexpr unsigned int UIHollowItemCollectWidgetController___c__DisplayClass14_1_TypeDefinitionIndex = 60075;
 
 	class UIHollowItemCollectWidgetController___c__DisplayClass14_1 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHollowItemCollectWidgetController___c__DisplayClass14_0* CS___8__locals1; // 0x10
-		::MoleMole::UIHollowItemCollectEffectWidgetController* effect; // 0x18
+		::MoleMole::UIHollowItemCollectEffectWidgetController* effect; // 0x10
+		::MoleMole::UIHollowItemCollectWidgetController___c__DisplayClass14_0* CS___8__locals1; // 0x18
 		::System::Int32 addNum; // 0x20
 
 		::System::Void _ctor()

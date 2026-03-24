@@ -8,7 +8,7 @@ namespace PipelineCamera { class ICameraCommand; }
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int IDefaultCameraContext_1_TypeDefinitionIndex = 34330;
+	inline static constexpr unsigned int IDefaultCameraContext_1_TypeDefinitionIndex = 35332;
 
 	template <typename TController>
 	class IDefaultCameraContext_1

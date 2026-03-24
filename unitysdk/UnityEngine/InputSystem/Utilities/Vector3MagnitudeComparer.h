@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITYENGINE_INPUTSYSTEM_UTILITIES_VECTOR3MAGNITUDECOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x84A8D0)
+#define UNITYENGINE_INPUTSYSTEM_UTILITIES_VECTOR3MAGNITUDECOMPARER_COMPARE_OFFSET UNITYSDK_OFFSET(0x879220)
 
 namespace UnityEngine::InputSystem::Utilities
 {
-	inline static constexpr unsigned int Vector3MagnitudeComparer_TypeDefinitionIndex = 27928;
+	inline static constexpr unsigned int Vector3MagnitudeComparer_TypeDefinitionIndex = 28868;
 
 	struct alignas(1) Vector3MagnitudeComparer
 	{

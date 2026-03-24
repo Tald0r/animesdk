@@ -5,24 +5,24 @@
 namespace System { template <typename T> class Func_1; }
 namespace System::Threading { class CancellationTokenSource; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9A21100)
-#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9A21140)
-#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___C__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0x9A21150)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x887E360)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x887E3A0)
+#define MOLEMOLE_UISUIBIANTEMPLEBUDDYPAGECONTROLLER___C__ONUIINIT_B__4_0_OFFSET UNITYSDK_OFFSET(0x887E3B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleBuddyPageController___c_TypeDefinitionIndex = 37801;
+	inline static constexpr unsigned int UISuibianTempleBuddyPageController___c_TypeDefinitionIndex = 79682;
 
 	class UISuibianTempleBuddyPageController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UISuibianTempleBuddyPageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UISuibianTempleBuddyPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBuddyPageController___c_TypeDefinitionIndex)->GetStaticField(0x41810);
-		}
 		static ::System::Func_1<::System::Threading::CancellationTokenSource*>** StaticGet___9__4_0()
 		{
-			return (::System::Func_1<::System::Threading::CancellationTokenSource*>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBuddyPageController___c_TypeDefinitionIndex)->GetStaticField(0x41818);
+			return (::System::Func_1<::System::Threading::CancellationTokenSource*>**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBuddyPageController___c_TypeDefinitionIndex)->GetStaticField(0x46120);
+		}
+		static ::MoleMole::UISuibianTempleBuddyPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UISuibianTempleBuddyPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UISuibianTempleBuddyPageController___c_TypeDefinitionIndex)->GetStaticField(0x46128);
 		}
 
 		static ::System::Void _cctor()

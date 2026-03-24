@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_187;
+class Class_0_16E4307DCC419505_133;
 namespace MoleMole { class UIShoppingMallV2PageController; }
 
-#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC3C59D0)
+#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA45DA30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallV2PageController___c__DisplayClass38_0_TypeDefinitionIndex = 73549;
+	inline static constexpr unsigned int UIShoppingMallV2PageController___c__DisplayClass38_0_TypeDefinitionIndex = 66913;
 
 	class UIShoppingMallV2PageController___c__DisplayClass38_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIShoppingMallV2PageController* __4__this; // 0x10
-		::Class_0_16E4307DCC419505_187* curGoods; // 0x18
+		::Class_0_16E4307DCC419505_133* curGoods; // 0x10
+		::MoleMole::UIShoppingMallV2PageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

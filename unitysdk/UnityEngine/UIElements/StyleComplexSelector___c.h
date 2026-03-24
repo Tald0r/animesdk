@@ -6,24 +6,24 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace UnityEngine::UIElements { class StyleSelector; }
 
-#define UNITYENGINE_UIELEMENTS_STYLECOMPLEXSELECTOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1892BF90)
-#define UNITYENGINE_UIELEMENTS_STYLECOMPLEXSELECTOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1892BFD0)
-#define UNITYENGINE_UIELEMENTS_STYLECOMPLEXSELECTOR___C__TOSTRING_B__20_0_OFFSET UNITYSDK_OFFSET(0x1892BFE0)
+#define UNITYENGINE_UIELEMENTS_STYLECOMPLEXSELECTOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x18E83F20)
+#define UNITYENGINE_UIELEMENTS_STYLECOMPLEXSELECTOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x18E83F60)
+#define UNITYENGINE_UIELEMENTS_STYLECOMPLEXSELECTOR___C__TOSTRING_B__20_0_OFFSET UNITYSDK_OFFSET(0x18E83F70)
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int StyleComplexSelector___c_TypeDefinitionIndex = 23894;
+	inline static constexpr unsigned int StyleComplexSelector___c_TypeDefinitionIndex = 24577;
 
 	class StyleComplexSelector___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::UIElements::StyleComplexSelector___c** StaticGet___9()
 		{
-			return (::UnityEngine::UIElements::StyleComplexSelector___c**)Il2CppClass::FromTypeDefinitionIndex(StyleComplexSelector___c_TypeDefinitionIndex)->GetStaticField(0x1D6B0);
+			return (::UnityEngine::UIElements::StyleComplexSelector___c**)Il2CppClass::FromTypeDefinitionIndex(StyleComplexSelector___c_TypeDefinitionIndex)->GetStaticField(0x1DE60);
 		}
 		static ::System::Func_2<::UnityEngine::UIElements::StyleSelector*, ::System::String*>** StaticGet___9__20_0()
 		{
-			return (::System::Func_2<::UnityEngine::UIElements::StyleSelector*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(StyleComplexSelector___c_TypeDefinitionIndex)->GetStaticField(0x1D6B8);
+			return (::System::Func_2<::UnityEngine::UIElements::StyleSelector*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(StyleComplexSelector___c_TypeDefinitionIndex)->GetStaticField(0x1DE68);
 		}
 
 		static ::System::Void _cctor()

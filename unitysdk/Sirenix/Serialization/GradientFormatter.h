@@ -11,34 +11,34 @@ namespace System { class Object; }
 namespace System::Reflection { class PropertyInfo; }
 namespace UnityEngine { class Gradient; }
 
-#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER_GETUNINITIALIZEDOBJECT_OFFSET UNITYSDK_OFFSET(0x1B122600)
-#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B122630)
-#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B122970)
-#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B122C40)
-#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B122BE0)
+#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER_GETUNINITIALIZEDOBJECT_OFFSET UNITYSDK_OFFSET(0x1B739970)
+#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x1B7399A0)
+#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x1B739CE0)
+#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B739FB0)
+#define SIRENIX_SERIALIZATION_GRADIENTFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B739F50)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int GradientFormatter_TypeDefinitionIndex = 7444;
+	inline static constexpr unsigned int GradientFormatter_TypeDefinitionIndex = 7449;
 
 	class GradientFormatter : public ::Sirenix::Serialization::MinimalBaseFormatter_1<::UnityEngine::Gradient*>
 	{
 	public:
 		static ::System::Reflection::PropertyInfo** StaticGet_ModeProperty()
 		{
-			return (::System::Reflection::PropertyInfo**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x6390);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientColorKey>*>** StaticGet_ColorKeysSerializer()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientColorKey>*>**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x6398);
+			return (::System::Reflection::PropertyInfo**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x63D0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Object*>** StaticGet_EnumSerializer()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x63A0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Object*>**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x63D8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientAlphaKey>*>** StaticGet_AlphaKeysSerializer()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientAlphaKey>*>**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x63A8);
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientAlphaKey>*>**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x63E0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientColorKey>*>** StaticGet_ColorKeysSerializer()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::UnityEngine::GradientColorKey>*>**)Il2CppClass::FromTypeDefinitionIndex(GradientFormatter_TypeDefinitionIndex)->GetStaticField(0x63E8);
 		}
 
 		::System::Void _ctor()

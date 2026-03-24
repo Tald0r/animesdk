@@ -8,17 +8,17 @@ namespace MoleMole { class UICoopLevelRewardRowWidgetController; }
 namespace MoleMole { class UICoopLevelRewardRowWidgetController___c__DisplayClass11_0; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UICOOPLEVELREWARDROWWIDGETCONTROLLER__ONCLICKGETREWARD_ASYNC_D__11_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x386380)
-#define MOLEMOLE_UICOOPLEVELREWARDROWWIDGETCONTROLLER__ONCLICKGETREWARD_ASYNC_D__11_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UICOOPLEVELREWARDROWWIDGETCONTROLLER__ONCLICKGETREWARD_ASYNC_D__11_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3993B0)
+#define MOLEMOLE_UICOOPLEVELREWARDROWWIDGETCONTROLLER__ONCLICKGETREWARD_ASYNC_D__11_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopLevelRewardRowWidgetController__OnClickGetReward_Async_d__11_TypeDefinitionIndex = 59534;
+	inline static constexpr unsigned int UICoopLevelRewardRowWidgetController__OnClickGetReward_Async_d__11_TypeDefinitionIndex = 80167;
 
 	struct alignas(8) UICoopLevelRewardRowWidgetController__OnClickGetReward_Async_d__11
 	{
-		::MoleMole::UICoopLevelRewardRowWidgetController___c__DisplayClass11_0* __8__1; // 0x10
-		::MoleMole::UICoopLevelRewardRowWidgetController* __4__this; // 0x18
+		::MoleMole::UICoopLevelRewardRowWidgetController* __4__this; // 0x10
+		::MoleMole::UICoopLevelRewardRowWidgetController___c__DisplayClass11_0* __8__1; // 0x18
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x20
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x30
 		::System::Int32 __1__state; // 0x40

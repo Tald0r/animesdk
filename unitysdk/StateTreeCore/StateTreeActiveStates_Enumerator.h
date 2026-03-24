@@ -1,31 +1,32 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeArrayView_1.h"
-#include "unitysdk/StateTreeCore/StateTreeStateHandle.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x8EAED0)
-#define STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A30C0)
-#define STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x389110)
+#define STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x9B7480)
+#define STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x9B7490)
+#define STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x9B7470)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeActiveStates_Enumerator_TypeDefinitionIndex = 26936;
+	inline static constexpr unsigned int StateTreeActiveStates_Enumerator_TypeDefinitionIndex = 27777;
 
 	struct alignas(8) StateTreeActiveStates_Enumerator
 	{
-		::NativeTypes::NativeArrayView_1<::StateTreeCore::StateTreeStateHandle> _states; // 0x10
-		::System::Int32 _index; // 0x20
+		::System::UInt16* _states; // 0x10
+		::System::Int32 _numStates; // 0x18
+		::System::Int32 _index; // 0x1C
 
-		::System::Void _ctor(::NativeTypes::NativeArrayView_1<::StateTreeCore::StateTreeStateHandle>& states)
+		::System::Void _ctor(::System::UInt16* states, ::System::Int32 numStates)
 		{
-			return ((::System::Void(*)(::PVOID, ::NativeTypes::NativeArrayView_1<::StateTreeCore::StateTreeStateHandle>&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR__CTOR_OFFSET))(this, states);
+			return ((::System::Void(*)(::PVOID, ::System::UInt16*, ::System::Int32))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR__CTOR_OFFSET))(this, states, numStates);
 		}
 
+		/*
 		::StateTreeCore::StateTreeStateHandle get_Current()
 		{
 			return ((::StateTreeCore::StateTreeStateHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEACTIVESTATES_ENUMERATOR_GET_CURRENT_OFFSET))(this);
 		}
+		*/
 
 		::System::Boolean MoveNext()
 		{

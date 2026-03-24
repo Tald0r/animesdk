@@ -5,11 +5,11 @@
 namespace MoleMole { class SummerWeaponConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_SUMMERPLAYERWEAPONINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xD1A3EF0)
+#define MOLEMOLE_SUMMERPLAYERWEAPONINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6ED8120)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SummerPlayerWeaponInfo_TypeDefinitionIndex = 38096;
+	inline static constexpr unsigned int SummerPlayerWeaponInfo_TypeDefinitionIndex = 74590;
 
 	class SummerPlayerWeaponInfo : public ::System::Object
 	{

@@ -6,7 +6,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int HackerGamePlayerAttachEffectData_TypeDefinitionIndex = 37900;
+	inline static constexpr unsigned int HackerGamePlayerAttachEffectData_TypeDefinitionIndex = 74965;
 
 	struct alignas(8) HackerGamePlayerAttachEffectData
 	{

@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationSubManager_LookControllerParam_TypeDefinitionIndex = 71157;
+	inline static constexpr unsigned int AnimationSubManager_LookControllerParam_TypeDefinitionIndex = 59699;
 
 	struct alignas(4) AnimationSubManager_LookControllerParam
 	{

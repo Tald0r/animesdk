@@ -1,11 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_52.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_31.h"
 
-inline static constexpr unsigned int Class_2_BAEAAB04090DB0DF_TypeDefinitionIndex = 61226;
+inline static constexpr unsigned int Class_2_BAEAAB04090DB0DF_TypeDefinitionIndex = 71169;
 
 template <typename T1, typename T2>
-class Class_2_BAEAAB04090DB0DF : public ::Class_1_43BD383C98B4C0C5_52
+class Class_2_BAEAAB04090DB0DF : public ::Class_1_43BD383C98B4C0C5_31
 {
 public:
 	T1 Field_2_0; // 0x0

@@ -10,34 +10,34 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x13FA6220)
-#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x13FA6230)
-#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x13FA6700)
-#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x13FA6A40)
-#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x13FA6A00)
+#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF2E0000)
+#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF2E0010)
+#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF2E04E0)
+#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF2E0820)
+#define MOLEMOLE_CONFIGLINEARSLOPEDAMPER_CONFIGLINEARSLOPEDAMPER_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF2E07E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex = 67880;
+	inline static constexpr unsigned int ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex = 66956;
 
 	class ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigLinearSlopeDamper*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::ProceduralAnimDamperParam>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::ProceduralAnimDamperParam>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BF90);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Interaction::AxisSign>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Interaction::AxisSign>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BF98);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Interaction::AxisSign>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3ECC0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BFA0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3ECC8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BFA8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3ECD0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::ProceduralAnimDamperParam>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::ProceduralAnimDamperParam>**)Il2CppClass::FromTypeDefinitionIndex(ConfigLinearSlopeDamper_ConfigLinearSlopeDamper_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3ECD8);
 		}
 
 		::System::Void _ctor()

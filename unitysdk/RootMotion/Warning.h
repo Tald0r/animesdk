@@ -6,19 +6,19 @@ namespace RootMotion { class Warning_Logger; }
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_WARNING_LOG_1_OFFSET UNITYSDK_OFFSET(0x1A898D60)
-#define ROOTMOTION_WARNING_LOG_OFFSET UNITYSDK_OFFSET(0x1A89D680)
+#define ROOTMOTION_WARNING_LOG_1_OFFSET UNITYSDK_OFFSET(0x1AE5ABC0)
+#define ROOTMOTION_WARNING_LOG_OFFSET UNITYSDK_OFFSET(0x1AE5F510)
 
 namespace RootMotion
 {
-	inline static constexpr unsigned int Warning_TypeDefinitionIndex = 35002;
+	inline static constexpr unsigned int Warning_TypeDefinitionIndex = 36004;
 
 	class Warning : public ::System::Object
 	{
 	public:
 		static ::System::Boolean* StaticGet_logged()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Warning_TypeDefinitionIndex)->GetStaticField(0x84C0);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(Warning_TypeDefinitionIndex)->GetStaticField(0x8820);
 		}
 
 		static ::System::Void Log(::System::String* message, ::RootMotion::Warning_Logger* logger, ::System::Boolean logInEditMode)

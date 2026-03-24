@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int Decal_MaskBlendFlags_TypeDefinitionIndex = 28860;
+	inline static constexpr unsigned int Decal_MaskBlendFlags_TypeDefinitionIndex = 29810;
 
 	enum class Decal_MaskBlendFlags : ::System::Int32
 	{

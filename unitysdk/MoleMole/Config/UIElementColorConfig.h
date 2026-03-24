@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_UIELEMENTCOLORCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCDC0C20)
+#define MOLEMOLE_CONFIG_UIELEMENTCOLORCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A5C70)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UIElementColorConfig_TypeDefinitionIndex = 58606;
+	inline static constexpr unsigned int UIElementColorConfig_TypeDefinitionIndex = 66241;
 
 	class UIElementColorConfig : public ::UnityEngine::MonoBehaviour
 	{

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMESELECTSTRINGBYPLATFORM_INVOKE_OFFSET UNITYSDK_OFFSET(0xE472670)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMESELECTSTRINGBYPLATFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xE4727B0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMESELECTSTRINGBYPLATFORM_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FA630)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMESELECTSTRINGBYPLATFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FA770)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int HackerGameSelectStringByPlatform_TypeDefinitionIndex = 70628;
+	inline static constexpr unsigned int HackerGameSelectStringByPlatform_TypeDefinitionIndex = 68956;
 
 	class HackerGameSelectStringByPlatform : public ::FlowCanvas::Nodes::CallableFunctionNode_6<::System::String*, ::System::String*, ::System::String*, ::System::String*, ::System::String*, ::System::String*>
 	{

@@ -6,12 +6,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHITEVENT_GET_EVENTNAME_OFFSET UNITYSDK_OFFSET(0xC209CA0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHITEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xC209D00)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHITEVENT_GET_EVENTNAME_OFFSET UNITYSDK_OFFSET(0xB820590)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDHITEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xB8205F0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardHitEvent_TypeDefinitionIndex = 51563;
+	inline static constexpr unsigned int ChessboardHitEvent_TypeDefinitionIndex = 55405;
 
 	class ChessboardHitEvent : public ::MoleMole::FlowCanvas::ChessboardEventNode_1<::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HackerGameCollisionData>*>
 	{

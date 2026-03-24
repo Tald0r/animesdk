@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_LEVELCUSTOMPERFORMEND_INVOKE_OFFSET UNITYSDK_OFFSET(0x8B09280)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_LEVELCUSTOMPERFORMEND__CTOR_OFFSET UNITYSDK_OFFSET(0x8B093A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LEVELCUSTOMPERFORMEND_INVOKE_OFFSET UNITYSDK_OFFSET(0xB18E010)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_LEVELCUSTOMPERFORMEND__CTOR_OFFSET UNITYSDK_OFFSET(0xB18E130)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_LevelCustomPerformEnd_TypeDefinitionIndex = 37689;
+	inline static constexpr unsigned int LD_LevelCustomPerformEnd_TypeDefinitionIndex = 72252;
 
 	class LD_LevelCustomPerformEnd : public ::FlowCanvas::Nodes::CallableActionNode_1<::System::Int32>
 	{

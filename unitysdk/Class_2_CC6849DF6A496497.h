@@ -12,26 +12,26 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_CC6849DF6A496497_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0x8166C00)
-#define CLASS_2_CC6849DF6A496497_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x8166990)
-#define CLASS_2_CC6849DF6A496497_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x8166D40)
-#define CLASS_2_CC6849DF6A496497__CTOR_OFFSET UNITYSDK_OFFSET(0x8166D30)
+#define CLASS_2_CC6849DF6A496497_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0xB80F470)
+#define CLASS_2_CC6849DF6A496497_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0xB80F200)
+#define CLASS_2_CC6849DF6A496497_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB80F5B0)
+#define CLASS_2_CC6849DF6A496497__CTOR_OFFSET UNITYSDK_OFFSET(0xB80F5A0)
 
-inline static constexpr unsigned int Class_2_CC6849DF6A496497_TypeDefinitionIndex = 50735;
+inline static constexpr unsigned int Class_2_CC6849DF6A496497_TypeDefinitionIndex = 73121;
 
 class Class_2_CC6849DF6A496497 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Animation* Field_2_8; // 0x18
-	::UnityEngine::RectTransform* Field_2_1; // 0x20
-	::UnityEngine::GameObject* Field_2_9; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x38
-	::UnityEngine::GameObject* Field_2_3; // 0x40
-	::MoleMole::NotificationBadge* Field_2_7; // 0x48
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x50
-	::UnityEngine::GameObject* Field_2_2; // 0x58
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x60
+	::MoleMole::NotificationBadge* Field_2_7; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x28
+	::UnityEngine::GameObject* Field_2_2; // 0x30
+	::UnityEngine::RectTransform* Field_2_1; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x48
+	::UnityEngine::Animation* Field_2_8; // 0x50
+	::UnityEngine::GameObject* Field_2_3; // 0x58
+	::UnityEngine::GameObject* Field_2_9; // 0x60
 
 	::System::Void _ctor()
 	{

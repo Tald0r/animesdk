@@ -7,24 +7,24 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class MeshFilter; }
 namespace UnityEngine { class Terrain; }
 
-#define NAVMESHSOURCETAG_COLLECT_OFFSET UNITYSDK_OFFSET(0xA11B160)
-#define NAVMESHSOURCETAG_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xA11AE50)
-#define NAVMESHSOURCETAG_ONENABLE_OFFSET UNITYSDK_OFFSET(0xA11AB40)
-#define NAVMESHSOURCETAG__CCTOR_OFFSET UNITYSDK_OFFSET(0xA11B850)
-#define NAVMESHSOURCETAG__CTOR_OFFSET UNITYSDK_OFFSET(0xA11B830)
+#define NAVMESHSOURCETAG_COLLECT_OFFSET UNITYSDK_OFFSET(0x76E1660)
+#define NAVMESHSOURCETAG_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x76E1350)
+#define NAVMESHSOURCETAG_ONENABLE_OFFSET UNITYSDK_OFFSET(0x76E1040)
+#define NAVMESHSOURCETAG__CCTOR_OFFSET UNITYSDK_OFFSET(0x76E1D50)
+#define NAVMESHSOURCETAG__CTOR_OFFSET UNITYSDK_OFFSET(0x76E1D30)
 
-inline static constexpr unsigned int NavMeshSourceTag_TypeDefinitionIndex = 60046;
+inline static constexpr unsigned int NavMeshSourceTag_TypeDefinitionIndex = 40846;
 
 class NavMeshSourceTag : public ::UnityEngine::MonoBehaviour
 {
 public:
 	static ::System::Collections::Generic::List_1<::UnityEngine::MeshFilter*>** StaticGet_m_Meshes()
 	{
-		return (::System::Collections::Generic::List_1<::UnityEngine::MeshFilter*>**)Il2CppClass::FromTypeDefinitionIndex(NavMeshSourceTag_TypeDefinitionIndex)->GetStaticField(0x419A0);
+		return (::System::Collections::Generic::List_1<::UnityEngine::MeshFilter*>**)Il2CppClass::FromTypeDefinitionIndex(NavMeshSourceTag_TypeDefinitionIndex)->GetStaticField(0x47B50);
 	}
 	static ::System::Collections::Generic::List_1<::UnityEngine::Terrain*>** StaticGet_m_Terrains()
 	{
-		return (::System::Collections::Generic::List_1<::UnityEngine::Terrain*>**)Il2CppClass::FromTypeDefinitionIndex(NavMeshSourceTag_TypeDefinitionIndex)->GetStaticField(0x419A8);
+		return (::System::Collections::Generic::List_1<::UnityEngine::Terrain*>**)Il2CppClass::FromTypeDefinitionIndex(NavMeshSourceTag_TypeDefinitionIndex)->GetStaticField(0x47B58);
 	}
 
 	::System::Void _ctor()

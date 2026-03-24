@@ -15,7 +15,7 @@ namespace UnityEngine::Events { template <typename T> class UnityEvent_1; }
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int CheckUnityEventValue_1_TypeDefinitionIndex = 25561;
+	inline static constexpr unsigned int CheckUnityEventValue_1_TypeDefinitionIndex = 26854;
 
 	template <typename T>
 	class CheckUnityEventValue_1 : public ::NodeCanvas::Framework::ConditionTask

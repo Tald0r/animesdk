@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UITEXTLINK_HREFCLICKEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0xA414E90)
+#define MOLEMOLE_UITEXTLINK_HREFCLICKEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x970FE40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITextLink_HrefClickEvent_TypeDefinitionIndex = 52860;
+	inline static constexpr unsigned int UITextLink_HrefClickEvent_TypeDefinitionIndex = 44053;
 
 	class UITextLink_HrefClickEvent : public ::UnityEngine::Events::UnityEvent_1<::System::String*>
 	{

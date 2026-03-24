@@ -8,18 +8,18 @@ namespace MoleMole::HollowChessboard { class ConfigHollowChessboardBehaviorGraph
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGHOLLOWCHESSBOARDENTITYBEHAVIOR_BEHAVIORCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x15ECAA50)
+#define MOLEMOLE_CONFIGHOLLOWCHESSBOARDENTITYBEHAVIOR_BEHAVIORCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB597910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigHollowChessboardEntityBehavior_BehaviorConfig_TypeDefinitionIndex = 58873;
+	inline static constexpr unsigned int ConfigHollowChessboardEntityBehavior_BehaviorConfig_TypeDefinitionIndex = 52877;
 
 	class ConfigHollowChessboardEntityBehavior_BehaviorConfig : public ::System::Object
 	{
 	public:
-		::MoleMole::HollowChessboard::ConfigHollowChessboardBehaviorGraph* EntityBehavior; // 0x10
+		::System::String* behaviorKey; // 0x10
 		::System::Collections::Generic::List_1<::MoleMole::Config::ConfigUIBaseActionNode*>* configActions; // 0x18
-		::System::String* behaviorKey; // 0x20
+		::MoleMole::HollowChessboard::ConfigHollowChessboardBehaviorGraph* EntityBehavior; // 0x20
 		::MoleMole::ConfigHollowChessboardEntityBehavior_BehaviorConfig_ConfigType configType; // 0x28
 
 		::System::Void _ctor()

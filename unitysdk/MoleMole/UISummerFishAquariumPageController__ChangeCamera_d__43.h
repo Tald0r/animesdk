@@ -7,21 +7,21 @@
 namespace MoleMole { class UISummerFishAquariumPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UISUMMERFISHAQUARIUMPAGECONTROLLER__CHANGECAMERA_D__43_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3C41E0)
-#define MOLEMOLE_UISUMMERFISHAQUARIUMPAGECONTROLLER__CHANGECAMERA_D__43_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UISUMMERFISHAQUARIUMPAGECONTROLLER__CHANGECAMERA_D__43_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x388C60)
+#define MOLEMOLE_UISUMMERFISHAQUARIUMPAGECONTROLLER__CHANGECAMERA_D__43_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISummerFishAquariumPageController__ChangeCamera_d__43_TypeDefinitionIndex = 49157;
+	inline static constexpr unsigned int UISummerFishAquariumPageController__ChangeCamera_d__43_TypeDefinitionIndex = 51375;
 
 	struct alignas(8) UISummerFishAquariumPageController__ChangeCamera_d__43
 	{
 		::MoleMole::UISummerFishAquariumPageController* __4__this; // 0x10
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x18
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
-		::System::Int32 __1__state; // 0x38
-		::System::Boolean isRight; // 0x3C
-		::System::Boolean doLerp; // 0x3D
+		::System::Boolean isRight; // 0x38
+		::System::Boolean doLerp; // 0x39
+		::System::Int32 __1__state; // 0x3C
 
 		::System::Void MoveNext()
 		{

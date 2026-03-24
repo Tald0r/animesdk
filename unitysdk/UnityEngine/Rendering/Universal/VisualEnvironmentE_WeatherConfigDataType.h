@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int VisualEnvironmentE_WeatherConfigDataType_TypeDefinitionIndex = 28455;
+	inline static constexpr unsigned int VisualEnvironmentE_WeatherConfigDataType_TypeDefinitionIndex = 29398;
 
 	enum class VisualEnvironmentE_WeatherConfigDataType : ::System::Int32
 	{

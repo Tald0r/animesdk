@@ -5,12 +5,12 @@
 namespace MoleMole::Config { class UISpecialNumGroup; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_ANIMATIONCURVEUISPECIALNUM_GET_OFFSET UNITYSDK_OFFSET(0x13F817B0)
-#define MOLEMOLE_CONFIG_ANIMATIONCURVEUISPECIALNUM__CTOR_OFFSET UNITYSDK_OFFSET(0x13F818B0)
+#define MOLEMOLE_CONFIG_ANIMATIONCURVEUISPECIALNUM_GET_OFFSET UNITYSDK_OFFSET(0xF2BB220)
+#define MOLEMOLE_CONFIG_ANIMATIONCURVEUISPECIALNUM__CTOR_OFFSET UNITYSDK_OFFSET(0xF2BB320)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimationCurveUISpecialNum_TypeDefinitionIndex = 38966;
+	inline static constexpr unsigned int AnimationCurveUISpecialNum_TypeDefinitionIndex = 72288;
 
 	class AnimationCurveUISpecialNum : public ::MoleMole::Config::BaseObjectUISpecialNum
 	{

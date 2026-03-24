@@ -4,11 +4,11 @@
 #include "unitysdk/MoleMole/LevelTriggerShapParam_Enum_3_F9DFE8C50F0F31D9.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_LEVELTRIGGERSHAPPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xE487660)
+#define MOLEMOLE_LEVELTRIGGERSHAPPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xD80F590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LevelTriggerShapParam_TypeDefinitionIndex = 50674;
+	inline static constexpr unsigned int LevelTriggerShapParam_TypeDefinitionIndex = 44199;
 
 	class LevelTriggerShapParam : public ::System::Object
 	{

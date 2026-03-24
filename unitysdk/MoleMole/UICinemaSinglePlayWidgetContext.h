@@ -4,11 +4,11 @@
 
 class Class_2_0E3D561C72111316;
 
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8068060)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAC434A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaSinglePlayWidgetContext_TypeDefinitionIndex = 73275;
+	inline static constexpr unsigned int UICinemaSinglePlayWidgetContext_TypeDefinitionIndex = 74597;
 
 	class UICinemaSinglePlayWidgetContext : public ::MoleMole::UIControllerContextBase
 	{

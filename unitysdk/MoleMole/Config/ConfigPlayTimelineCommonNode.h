@@ -7,20 +7,20 @@ namespace MoleMole::Config { class BoolUISpecialNum; }
 namespace MoleMole::Config { class StringUISpecialNum; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGPLAYTIMELINECOMMONNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x13F9B770)
-#define MOLEMOLE_CONFIG_CONFIGPLAYTIMELINECOMMONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x13F9B800)
+#define MOLEMOLE_CONFIG_CONFIGPLAYTIMELINECOMMONNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xF2D5320)
+#define MOLEMOLE_CONFIG_CONFIGPLAYTIMELINECOMMONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D53B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPlayTimelineCommonNode_TypeDefinitionIndex = 49732;
+	inline static constexpr unsigned int ConfigPlayTimelineCommonNode_TypeDefinitionIndex = 45089;
 
 	class ConfigPlayTimelineCommonNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
-		::MoleMole::Config::BoolUISpecialNum* IsSyncLoad; // 0x18
-		::MoleMole::Config::StringUISpecialNum* TimelineKey; // 0x20
-		::MoleMole::Config::StringUISpecialNum* ParentTransKey; // 0x28
-		::System::String* TimelineKey_BlackBoard; // 0x30
+		::System::String* TimelineKey_BlackBoard; // 0x18
+		::MoleMole::Config::StringUISpecialNum* ParentTransKey; // 0x20
+		::MoleMole::Config::BoolUISpecialNum* IsSyncLoad; // 0x28
+		::MoleMole::Config::StringUISpecialNum* TimelineKey; // 0x30
 		::System::Boolean UseBlackBoard_TimelineKey; // 0x38
 
 		::System::Void _ctor()

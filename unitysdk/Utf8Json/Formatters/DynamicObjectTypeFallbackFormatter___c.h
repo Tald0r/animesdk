@@ -6,24 +6,24 @@ namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 namespace Utf8Json { class IJsonFormatterResolver; }
 
-#define UTF8JSON_FORMATTERS_DYNAMICOBJECTTYPEFALLBACKFORMATTER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0A18F0)
-#define UTF8JSON_FORMATTERS_DYNAMICOBJECTTYPEFALLBACKFORMATTER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0A1930)
-#define UTF8JSON_FORMATTERS_DYNAMICOBJECTTYPEFALLBACKFORMATTER___C__SERIALIZE_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B0A1940)
+#define UTF8JSON_FORMATTERS_DYNAMICOBJECTTYPEFALLBACKFORMATTER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6AF750)
+#define UTF8JSON_FORMATTERS_DYNAMICOBJECTTYPEFALLBACKFORMATTER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6AF790)
+#define UTF8JSON_FORMATTERS_DYNAMICOBJECTTYPEFALLBACKFORMATTER___C__SERIALIZE_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B6AF7A0)
 
 namespace Utf8Json::Formatters
 {
-	inline static constexpr unsigned int DynamicObjectTypeFallbackFormatter___c_TypeDefinitionIndex = 81979;
+	inline static constexpr unsigned int DynamicObjectTypeFallbackFormatter___c_TypeDefinitionIndex = 84020;
 
 	class DynamicObjectTypeFallbackFormatter___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::Utf8Json::IJsonFormatterResolver*, ::System::String*>** StaticGet___9__4_0()
 		{
-			return (::System::Func_2<::Utf8Json::IJsonFormatterResolver*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeFallbackFormatter___c_TypeDefinitionIndex)->GetStaticField(0x47380);
+			return (::System::Func_2<::Utf8Json::IJsonFormatterResolver*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeFallbackFormatter___c_TypeDefinitionIndex)->GetStaticField(0x48D90);
 		}
 		static ::Utf8Json::Formatters::DynamicObjectTypeFallbackFormatter___c** StaticGet___9()
 		{
-			return (::Utf8Json::Formatters::DynamicObjectTypeFallbackFormatter___c**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeFallbackFormatter___c_TypeDefinitionIndex)->GetStaticField(0x47388);
+			return (::Utf8Json::Formatters::DynamicObjectTypeFallbackFormatter___c**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeFallbackFormatter___c_TypeDefinitionIndex)->GetStaticField(0x48D98);
 		}
 
 		static ::System::Void _cctor()

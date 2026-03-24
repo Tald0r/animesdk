@@ -6,7 +6,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NameValueSortedArray_1_TypeDefinitionIndex = 9068;
+	inline static constexpr unsigned int NameValueSortedArray_1_TypeDefinitionIndex = 8974;
 
 	template <typename T>
 	struct NameValueSortedArray_1

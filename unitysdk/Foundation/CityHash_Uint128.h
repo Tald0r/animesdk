@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_CITYHASH_UINT128__CTOR_OFFSET UNITYSDK_OFFSET(0x2D6E20)
+#define FOUNDATION_CITYHASH_UINT128__CTOR_OFFSET UNITYSDK_OFFSET(0x301710)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int CityHash_Uint128_TypeDefinitionIndex = 9179;
+	inline static constexpr unsigned int CityHash_Uint128_TypeDefinitionIndex = 9072;
 
 	struct alignas(8) CityHash_Uint128
 	{

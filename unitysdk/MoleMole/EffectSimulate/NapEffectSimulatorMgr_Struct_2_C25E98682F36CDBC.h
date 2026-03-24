@@ -6,7 +6,7 @@ namespace MoleMole::EffectSimulate { class NapEffectSimulatorComponent; }
 
 namespace MoleMole::EffectSimulate
 {
-	inline static constexpr unsigned int NapEffectSimulatorMgr_Struct_2_C25E98682F36CDBC_TypeDefinitionIndex = 76972;
+	inline static constexpr unsigned int NapEffectSimulatorMgr_Struct_2_C25E98682F36CDBC_TypeDefinitionIndex = 77564;
 
 	struct alignas(8) NapEffectSimulatorMgr_Struct_2_C25E98682F36CDBC
 	{

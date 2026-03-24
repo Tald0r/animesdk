@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define PIPELINECAMERA_CAMERASEQUENCE_EXPORTTOCONTEXTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A78EAE0)
+#define PIPELINECAMERA_CAMERASEQUENCE_EXPORTTOCONTEXTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD4C570)
 
 namespace PipelineCamera::CameraSequence
 {
-	inline static constexpr unsigned int ExportToContextAttribute_TypeDefinitionIndex = 34788;
+	inline static constexpr unsigned int ExportToContextAttribute_TypeDefinitionIndex = 35790;
 
 	class ExportToContextAttribute : public ::System::Attribute
 	{

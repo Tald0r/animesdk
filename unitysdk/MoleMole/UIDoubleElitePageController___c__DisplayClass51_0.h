@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIDOUBLEELITEPAGECONTROLLER___C__DISPLAYCLASS51_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA8EE3D0)
-#define MOLEMOLE_UIDOUBLEELITEPAGECONTROLLER___C__DISPLAYCLASS51_0__REFRESHSWEEPPOPWINDOW_B__0_OFFSET UNITYSDK_OFFSET(0xA8EE3E0)
+#define MOLEMOLE_UIDOUBLEELITEPAGECONTROLLER___C__DISPLAYCLASS51_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA918040)
+#define MOLEMOLE_UIDOUBLEELITEPAGECONTROLLER___C__DISPLAYCLASS51_0__REFRESHSWEEPPOPWINDOW_B__0_OFFSET UNITYSDK_OFFSET(0xA918050)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDoubleElitePageController___c__DisplayClass51_0_TypeDefinitionIndex = 73361;
+	inline static constexpr unsigned int UIDoubleElitePageController___c__DisplayClass51_0_TypeDefinitionIndex = 64076;
 
 	class UIDoubleElitePageController___c__DisplayClass51_0 : public ::System::Object
 	{

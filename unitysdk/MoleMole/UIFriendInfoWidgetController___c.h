@@ -4,24 +4,24 @@
 
 namespace UnityEngine::Events { class UnityAction; }
 
-#define MOLEMOLE_UIFRIENDINFOWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8082ED0)
-#define MOLEMOLE_UIFRIENDINFOWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8082F10)
-#define MOLEMOLE_UIFRIENDINFOWIDGETCONTROLLER___C__INITFRIENDINFOPAGE_B__10_0_OFFSET UNITYSDK_OFFSET(0x8082F20)
+#define MOLEMOLE_UIFRIENDINFOWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAC602A0)
+#define MOLEMOLE_UIFRIENDINFOWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAC602E0)
+#define MOLEMOLE_UIFRIENDINFOWIDGETCONTROLLER___C__INITFRIENDINFOPAGE_B__10_0_OFFSET UNITYSDK_OFFSET(0xAC602F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendInfoWidgetController___c_TypeDefinitionIndex = 53909;
+	inline static constexpr unsigned int UIFriendInfoWidgetController___c_TypeDefinitionIndex = 55770;
 
 	class UIFriendInfoWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Events::UnityAction** StaticGet___9__10_0()
 		{
-			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIFriendInfoWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3C3A0);
+			return (::UnityEngine::Events::UnityAction**)Il2CppClass::FromTypeDefinitionIndex(UIFriendInfoWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3F0B0);
 		}
 		static ::MoleMole::UIFriendInfoWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIFriendInfoWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFriendInfoWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3C3A8);
+			return (::MoleMole::UIFriendInfoWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFriendInfoWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3F0B8);
 		}
 
 		static ::System::Void _cctor()

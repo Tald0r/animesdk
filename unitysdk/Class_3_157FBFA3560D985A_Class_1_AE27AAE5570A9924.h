@@ -5,18 +5,18 @@
 
 class Class_4_DF8BFBD81823365E;
 
-#define CLASS_3_157FBFA3560D985A_CLASS_1_AE27AAE5570A9924_METHOD_1_702FFC05D788B55B_OFFSET UNITYSDK_OFFSET(0x7C11F40)
-#define CLASS_3_157FBFA3560D985A_CLASS_1_AE27AAE5570A9924__CTOR_OFFSET UNITYSDK_OFFSET(0x7C11F30)
+#define CLASS_3_157FBFA3560D985A_CLASS_1_AE27AAE5570A9924_METHOD_1_702FFC05D788B55B_OFFSET UNITYSDK_OFFSET(0xE7A9A20)
+#define CLASS_3_157FBFA3560D985A_CLASS_1_AE27AAE5570A9924__CTOR_OFFSET UNITYSDK_OFFSET(0xE7A9A10)
 
-inline static constexpr unsigned int Class_3_157FBFA3560D985A_Class_1_AE27AAE5570A9924_TypeDefinitionIndex = 58878;
+inline static constexpr unsigned int Class_3_157FBFA3560D985A_Class_1_AE27AAE5570A9924_TypeDefinitionIndex = 61874;
 
 class Class_3_157FBFA3560D985A_Class_1_AE27AAE5570A9924 : public ::System::Object
 {
 public:
-	::System::Int32 Field_1_2; // 0x10
-	::System::UInt32 Field_1_0; // 0x14
-	::System::UInt32 Field_1_1; // 0x18
-	::MoleMole::HollowChessboard::HollowCell Field_1_3; // 0x1C
+	::MoleMole::HollowChessboard::HollowCell Field_1_3; // 0x10
+	::System::UInt32 Field_1_1; // 0x1C
+	::System::Int32 Field_1_2; // 0x20
+	::System::UInt32 Field_1_0; // 0x24
 
 	::System::Void _ctor()
 	{

@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_472679C84451629A_24;
+class Class_3_7E6E8DD3EAC12A67_19;
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCC2B310)
-#define MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCC2B350)
-#define MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__REFRESHVIEW_B__10_1_OFFSET UNITYSDK_OFFSET(0xCC2B360)
+#define MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD98AD80)
+#define MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD98ADC0)
+#define MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__REFRESHVIEW_B__10_1_OFFSET UNITYSDK_OFFSET(0xD98ADD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAvatarActivityCoinBrushingWidgetController___c_TypeDefinitionIndex = 69647;
+	inline static constexpr unsigned int UIAvatarActivityCoinBrushingWidgetController___c_TypeDefinitionIndex = 53161;
 
 	class UIAvatarActivityCoinBrushingWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIAvatarActivityCoinBrushingWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIAvatarActivityCoinBrushingWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarActivityCoinBrushingWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CEB0);
+			return (::MoleMole::UIAvatarActivityCoinBrushingWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarActivityCoinBrushingWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E2B0);
 		}
-		static ::System::Action_1<::Class_3_472679C84451629A_24*>** StaticGet___9__10_1()
+		static ::System::Action_1<::Class_3_7E6E8DD3EAC12A67_19*>** StaticGet___9__10_1()
 		{
-			return (::System::Action_1<::Class_3_472679C84451629A_24*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarActivityCoinBrushingWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2CEB8);
+			return (::System::Action_1<::Class_3_7E6E8DD3EAC12A67_19*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarActivityCoinBrushingWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x2E2B8);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +35,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _RefreshView_b__10_1(::Class_3_472679C84451629A_24* rsp)
+		::System::Void _RefreshView_b__10_1(::Class_3_7E6E8DD3EAC12A67_19* rsp)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_3_472679C84451629A_24*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__REFRESHVIEW_B__10_1_OFFSET))(this, rsp);
+			return ((::System::Void(*)(::PVOID, ::Class_3_7E6E8DD3EAC12A67_19*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIAVATARACTIVITYCOINBRUSHINGWIDGETCONTROLLER___C__REFRESHVIEW_B__10_1_OFFSET))(this, rsp);
 		}
 	};
 }

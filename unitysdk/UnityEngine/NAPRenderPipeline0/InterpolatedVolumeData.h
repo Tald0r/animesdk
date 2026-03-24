@@ -6,18 +6,18 @@
 
 namespace UnityEngine { class Texture; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISCAUSTICACTIVE_OFFSET UNITYSDK_OFFSET(0x19DDA4E0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISDISTORTIONACTIVE_OFFSET UNITYSDK_OFFSET(0x19DDA4C0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISGAUSSIANBLURACTIVE_OFFSET UNITYSDK_OFFSET(0x19DDA420)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISLUTOVERRIDEACTIVE_OFFSET UNITYSDK_OFFSET(0x19DDA3B0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISNAPBLOOMACTIVEFORHDR_OFFSET UNITYSDK_OFFSET(0x19DDA490)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISNAPBLOOMACTIVE_OFFSET UNITYSDK_OFFSET(0x19DDA460)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISNAPBLOOMSECONDARYGLAREACTIVE_OFFSET UNITYSDK_OFFSET(0x19DDA440)
-#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19DDA4F0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISCAUSTICACTIVE_OFFSET UNITYSDK_OFFSET(0x1A364E60)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISDISTORTIONACTIVE_OFFSET UNITYSDK_OFFSET(0x1A364E40)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISGAUSSIANBLURACTIVE_OFFSET UNITYSDK_OFFSET(0x1A364DA0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISLUTOVERRIDEACTIVE_OFFSET UNITYSDK_OFFSET(0x1A364D30)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISNAPBLOOMACTIVEFORHDR_OFFSET UNITYSDK_OFFSET(0x1A364E10)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISNAPBLOOMACTIVE_OFFSET UNITYSDK_OFFSET(0x1A364DE0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA_ISNAPBLOOMSECONDARYGLAREACTIVE_OFFSET UNITYSDK_OFFSET(0x1A364DC0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_INTERPOLATEDVOLUMEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A364E70)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int InterpolatedVolumeData_TypeDefinitionIndex = 6028;
+	inline static constexpr unsigned int InterpolatedVolumeData_TypeDefinitionIndex = 6031;
 
 	class InterpolatedVolumeData : public ::System::Object
 	{
@@ -117,6 +117,7 @@ namespace UnityEngine::NAPRenderPipeline0
 		::UnityEngine::Vector4 CharacterColorCorrection_skinShadowFadeTint; // 0x2C4
 		::UnityEngine::Vector4 CharacterColorCorrection_ambientGradient; // 0x2D4
 		::System::Boolean CharacterColorCorrection_useShadowTintAsOutline; // 0x2E4
+		::System::Boolean CharacterColorCorrection_revertSaturation; // 0x2E5
 		::UnityEngine::Vector4 CharacterColorCorrection_outlineTint; // 0x2E8
 		::System::Single CharacterColorCorrection_toeStrength; // 0x2F8
 		::System::Single CharacterColorCorrection_toeLength; // 0x2FC
@@ -191,41 +192,42 @@ namespace UnityEngine::NAPRenderPipeline0
 		::System::Object* NapBloom_flareProfile; // 0x488
 		::System::Int32 PartialBlur_downScaleFactor; // 0x490
 		::System::Single PartialBlur_radius; // 0x494
-		::System::Int32 PartialBlur_sampleCount; // 0x498
-		::System::Single PartialBlur_standardDeviation; // 0x49C
-		::System::Boolean NapCapsuleAOLighting_useMainLightDirection; // 0x4A0
-		::System::Boolean NapCapsuleAOLighting_isPointLight; // 0x4A1
-		::UnityEngine::Vector3 NapCapsuleAOLighting_lightVector; // 0x4A4
-		::System::Single NapCapsuleAOLighting_lightRange; // 0x4B0
-		::System::Single NapCapsuleAOLighting_lightAngle; // 0x4B4
-		::System::Single NapCapsuleAOLighting_shadowStrength; // 0x4B8
-		::System::Boolean NapContactShadow_enabled; // 0x4BC
-		::System::Int32 NapContactShadow_sampleCount; // 0x4C0
-		::System::Single NapContactShadow_worldSpaceLength; // 0x4C4
-		::System::UInt32 MotionBlur_mode; // 0x4C8
-		::System::UInt32 MotionBlur_direction; // 0x4CC
-		::System::Single MotionBlur_motionVectorBlendRadius; // 0x4D0
-		::System::UInt32 MotionBlur_quality; // 0x4D4
-		::System::Single MotionBlur_intensity; // 0x4D8
-		::System::Single MotionBlur_clamp; // 0x4DC
-		::System::Boolean ScreenSpaceReflection_enabled; // 0x4E0
-		::System::Single ScreenSpaceReflection_intensity; // 0x4E4
-		::System::Single ScreenSpaceReflection_depthBufferThickness; // 0x4E8
-		::System::Single ScreenSpaceReflection_screenFadeDistance; // 0x4EC
-		::System::UInt32 ScreenSpaceReflection_quality; // 0x4F0
-		::System::Boolean ScreenSpaceReflection_overrideGlobalPlanarReflectionConfig; // 0x4F4
-		::System::Single ScreenSpaceReflection_planarReflectionBlurAmount; // 0x4F8
-		::System::Boolean Caustics_Use_Caustics; // 0x4FC
-		::System::Single Caustics_Brightness; // 0x500
-		::System::Single Caustics_Speed; // 0x504
-		::System::Single Caustics_Range; // 0x508
-		::System::Single Caustics_HeightOffset; // 0x50C
-		::System::Single Caustics_MainLightScale; // 0x510
-		::System::Single Caustics_LocalLightScale; // 0x514
-		::System::Single Caustics_IndirectScale; // 0x518
-		::System::Single Caustics_Tilling; // 0x51C
-		::UnityEngine::Vector4 Caustics_Tint; // 0x520
-		::System::Single Caustics_Strength; // 0x530
+		::System::Int32 PartialBlur_sampleCountMain; // 0x498
+		::System::Int32 PartialBlur_sampleCount; // 0x49C
+		::System::Single PartialBlur_standardDeviation; // 0x4A0
+		::System::Boolean NapCapsuleAOLighting_useMainLightDirection; // 0x4A4
+		::System::Boolean NapCapsuleAOLighting_isPointLight; // 0x4A5
+		::UnityEngine::Vector3 NapCapsuleAOLighting_lightVector; // 0x4A8
+		::System::Single NapCapsuleAOLighting_lightRange; // 0x4B4
+		::System::Single NapCapsuleAOLighting_lightAngle; // 0x4B8
+		::System::Single NapCapsuleAOLighting_shadowStrength; // 0x4BC
+		::System::Boolean NapContactShadow_enabled; // 0x4C0
+		::System::Int32 NapContactShadow_sampleCount; // 0x4C4
+		::System::Single NapContactShadow_worldSpaceLength; // 0x4C8
+		::System::UInt32 MotionBlur_mode; // 0x4CC
+		::System::UInt32 MotionBlur_direction; // 0x4D0
+		::System::Single MotionBlur_motionVectorBlendRadius; // 0x4D4
+		::System::UInt32 MotionBlur_quality; // 0x4D8
+		::System::Single MotionBlur_intensity; // 0x4DC
+		::System::Single MotionBlur_clamp; // 0x4E0
+		::System::Boolean ScreenSpaceReflection_enabled; // 0x4E4
+		::System::Single ScreenSpaceReflection_intensity; // 0x4E8
+		::System::Single ScreenSpaceReflection_depthBufferThickness; // 0x4EC
+		::System::Single ScreenSpaceReflection_screenFadeDistance; // 0x4F0
+		::System::UInt32 ScreenSpaceReflection_quality; // 0x4F4
+		::System::Boolean ScreenSpaceReflection_overrideGlobalPlanarReflectionConfig; // 0x4F8
+		::System::Single ScreenSpaceReflection_planarReflectionBlurAmount; // 0x4FC
+		::System::Boolean Caustics_Use_Caustics; // 0x500
+		::System::Single Caustics_Brightness; // 0x504
+		::System::Single Caustics_Speed; // 0x508
+		::System::Single Caustics_Range; // 0x50C
+		::System::Single Caustics_HeightOffset; // 0x510
+		::System::Single Caustics_MainLightScale; // 0x514
+		::System::Single Caustics_LocalLightScale; // 0x518
+		::System::Single Caustics_IndirectScale; // 0x51C
+		::System::Single Caustics_Tilling; // 0x520
+		::UnityEngine::Vector4 Caustics_Tint; // 0x524
+		::System::Single Caustics_Strength; // 0x534
 		::UnityEngine::Texture* Caustics_Tex; // 0x538
 		::System::Boolean FXColorCorrection_scenePostExposureOverridden; // 0x540
 		::System::Boolean CapsuleAO_enableCapsuleAO; // 0x541
@@ -245,9 +247,31 @@ namespace UnityEngine::NAPRenderPipeline0
 		::System::Single RTX_multiBounceIndoorScale; // 0x578
 		::System::Single RTX_multiBounceScaleMaxDist; // 0x57C
 		::System::Single RTX_lightmapBoost; // 0x580
-		::UnityEngine::Texture* RTX_lut; // 0x588
-		::UnityEngine::Texture* RTX_roughnessLut; // 0x590
-		::UnityEngine::Texture* RTX_multiBounceAlbedoLut; // 0x598
+		::System::Single RTX_aoLength; // 0x584
+		::System::Single RTX_aoIntensity; // 0x588
+		::System::Single RTX_extraEmissionMinDist; // 0x58C
+		::System::Single RTX_extraEmissionMaxDist; // 0x590
+		::System::Single RTX_extraEmissionScale; // 0x594
+		::System::Single RTX_extraEmissionDelta; // 0x598
+		::System::Single RTX_extraEmissionInteriorMinDist; // 0x59C
+		::System::Single RTX_extraEmissionInteriorMaxDist; // 0x5A0
+		::System::Single RTX_extraEmissionInteriorScale; // 0x5A4
+		::System::Single RTX_extraEmissionInteriorDelta; // 0x5A8
+		::System::Single RTX_addLocallightMinDist; // 0x5AC
+		::System::Single RTX_addLocallightMaxDist; // 0x5B0
+		::System::Single RTX_addLocallightScale; // 0x5B4
+		::System::Single RTX_addLocallightDelta; // 0x5B8
+		::System::Single RTX_extraColorbleedingMinDist; // 0x5BC
+		::System::Single RTX_extraColorbleedingMaxDist; // 0x5C0
+		::System::Single RTX_extraColorbleedingScale; // 0x5C4
+		::System::Single RTX_extraColorbleedingDelta; // 0x5C8
+		::System::Single RTX_diffuseProxyIntensity; // 0x5CC
+		::System::Single RTX_diffuseColorValue; // 0x5D0
+		::System::Single RTX_diffuseColorSaturate; // 0x5D4
+		::UnityEngine::Vector3 RTX_diffuseColorDiffThreshold; // 0x5D8
+		::UnityEngine::Texture* RTX_lut; // 0x5E8
+		::UnityEngine::Texture* RTX_roughnessLut; // 0x5F0
+		::UnityEngine::Texture* RTX_multiBounceAlbedoLut; // 0x5F8
 
 		::System::Void _ctor()
 		{

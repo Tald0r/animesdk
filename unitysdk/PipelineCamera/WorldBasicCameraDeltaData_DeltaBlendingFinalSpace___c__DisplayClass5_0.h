@@ -4,7 +4,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int WorldBasicCameraDeltaData_DeltaBlendingFinalSpace___c__DisplayClass5_0_TypeDefinitionIndex = 34450;
+	inline static constexpr unsigned int WorldBasicCameraDeltaData_DeltaBlendingFinalSpace___c__DisplayClass5_0_TypeDefinitionIndex = 35452;
 
 	struct alignas(4) WorldBasicCameraDeltaData_DeltaBlendingFinalSpace___c__DisplayClass5_0
 	{

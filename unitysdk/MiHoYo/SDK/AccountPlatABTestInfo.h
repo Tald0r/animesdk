@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYO_SDK_ACCOUNTPLATABTESTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x186CD6F0)
+#define MIHOYO_SDK_ACCOUNTPLATABTESTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1896E850)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int AccountPlatABTestInfo_TypeDefinitionIndex = 17921;
+	inline static constexpr unsigned int AccountPlatABTestInfo_TypeDefinitionIndex = 18431;
 
 	class AccountPlatABTestInfo : public ::System::Object
 	{

@@ -9,12 +9,12 @@
 namespace NPCCrowd::AI { class AttractorTemplate; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NPCCROWD_AI_ATTRACTORINSTANCE_GETREALDEFINITION_OFFSET UNITYSDK_OFFSET(0x74392F0)
-#define NPCCROWD_AI_ATTRACTORINSTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x7439520)
+#define NPCCROWD_AI_ATTRACTORINSTANCE_GETREALDEFINITION_OFFSET UNITYSDK_OFFSET(0x6F979F0)
+#define NPCCROWD_AI_ATTRACTORINSTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x6F97C20)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int AttractorInstance_TypeDefinitionIndex = 73508;
+	inline static constexpr unsigned int AttractorInstance_TypeDefinitionIndex = 59592;
 
 	class AttractorInstance : public ::System::Object
 	{

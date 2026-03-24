@@ -3,7 +3,7 @@
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB2_TexturePacker_NodeType_TypeDefinitionIndex = 81333;
+	inline static constexpr unsigned int MB2_TexturePacker_NodeType_TypeDefinitionIndex = 83374;
 
 	enum class MB2_TexturePacker_NodeType : ::System::Int32
 	{

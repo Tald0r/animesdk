@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigShootingGroundControl_ZoomInputType_TypeDefinitionIndex = 44489;
+	inline static constexpr unsigned int ConfigShootingGroundControl_ZoomInputType_TypeDefinitionIndex = 54022;
 
 	enum class ConfigShootingGroundControl_ZoomInputType : ::System::Int32
 	{

@@ -6,19 +6,19 @@ class Class_1_659DB91BB3418704;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CONFIGENTITYJOYSTICKORDER_CHECKMATCH_OFFSET UNITYSDK_OFFSET(0x80C5400)
-#define CONFIGENTITYJOYSTICKORDER_HANDLETARGETANGLE_OFFSET UNITYSDK_OFFSET(0x80C57C0)
-#define CONFIGENTITYJOYSTICKORDER__CTOR_OFFSET UNITYSDK_OFFSET(0x80C5860)
+#define CONFIGENTITYJOYSTICKORDER_CHECKMATCH_OFFSET UNITYSDK_OFFSET(0x98DC930)
+#define CONFIGENTITYJOYSTICKORDER_HANDLETARGETANGLE_OFFSET UNITYSDK_OFFSET(0x98DCCF0)
+#define CONFIGENTITYJOYSTICKORDER__CTOR_OFFSET UNITYSDK_OFFSET(0x98DCD90)
 
-inline static constexpr unsigned int ConfigEntityJoystickOrder_TypeDefinitionIndex = 65738;
+inline static constexpr unsigned int ConfigEntityJoystickOrder_TypeDefinitionIndex = 54423;
 
 class ConfigEntityJoystickOrder : public ::System::Object
 {
 public:
-	::System::String* TriggerName; // 0x10
-	::System::Collections::Generic::List_1<::System::Single>* AngleList; // 0x18
-	::System::Int32 OneCheckFrameCount; // 0x20
-	::System::Int32 CheckFrame; // 0x24
+	::System::Collections::Generic::List_1<::System::Single>* AngleList; // 0x10
+	::System::String* TriggerName; // 0x18
+	::System::Int32 CheckFrame; // 0x20
+	::System::Int32 OneCheckFrameCount; // 0x24
 	::System::Single AngleErrorRange; // 0x28
 
 	::System::Void _ctor()

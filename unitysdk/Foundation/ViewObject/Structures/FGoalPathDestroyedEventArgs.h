@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace Foundation::ViewObject::Structures
 {
-	inline static constexpr unsigned int FGoalPathDestroyedEventArgs_TypeDefinitionIndex = 53793;
+	inline static constexpr unsigned int FGoalPathDestroyedEventArgs_TypeDefinitionIndex = 50197;
 
 	struct alignas(8) FGoalPathDestroyedEventArgs
 	{

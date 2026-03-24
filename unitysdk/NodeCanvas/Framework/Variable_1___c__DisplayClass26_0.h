@@ -7,7 +7,7 @@ namespace UnityEngine { class GameObject; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Variable_1___c__DisplayClass26_0_TypeDefinitionIndex = 26831;
+	inline static constexpr unsigned int Variable_1___c__DisplayClass26_0_TypeDefinitionIndex = 26576;
 
 	template <typename T>
 	class Variable_1___c__DisplayClass26_0 : public ::System::Object

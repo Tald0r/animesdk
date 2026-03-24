@@ -11,7 +11,7 @@ namespace System { class String; }
 
 namespace Share
 {
-	inline static constexpr unsigned int CPolymorphsimModule_1_TypeDefinitionIndex = 13267;
+	inline static constexpr unsigned int CPolymorphsimModule_1_TypeDefinitionIndex = 14133;
 
 	template <typename T>
 	class CPolymorphsimModule_1 : public ::QWER::CPropertyObjectModule

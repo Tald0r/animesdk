@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/EnumVolumeParameter_1.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/UvModes.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_UVMODESPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x179699B0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_UVMODESPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x177919F0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int UvModesParameter_TypeDefinitionIndex = 28695;
+	inline static constexpr unsigned int UvModesParameter_TypeDefinitionIndex = 29638;
 
 	class UvModesParameter : public ::UnityEngine::NAPRenderPipeline0::EnumVolumeParameter_1<::UnityEngine::Rendering::Universal::UvModes>
 	{

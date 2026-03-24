@@ -3,15 +3,15 @@
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int SideScrollingScoreGetType_TypeDefinitionIndex = 53607;
+	inline static constexpr unsigned int SideScrollingScoreGetType_TypeDefinitionIndex = 78288;
 
 	enum class SideScrollingScoreGetType : ::System::Int32
 	{
-		PerfectDodge = 4,
 		KillMonsterElite = 3,
+		ExPunch = 5,
 		None = 0,
+		PerfectDodge = 4,
 		KillMonsterNormal = 1,
 		KillMonsterNormalLevelUp = 2,
-		ExPunch = 5,
 	};
 }

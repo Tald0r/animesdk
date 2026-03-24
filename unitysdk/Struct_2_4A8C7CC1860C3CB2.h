@@ -6,11 +6,11 @@ namespace MoleMole::Cameras { class CameraMiscSetting; }
 namespace PipelineCamera { class TimeBasedAlphaGenerator; }
 namespace System { template <typename T> class Func_1; }
 
-#define STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_0318FEBC2B9D90A4_OFFSET UNITYSDK_OFFSET(0x93536F0)
-#define STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_75098065C229FA1A_OFFSET UNITYSDK_OFFSET(0x360CA0)
-#define STRUCT_2_4A8C7CC1860C3CB2__CTOR_OFFSET UNITYSDK_OFFSET(0x360C90)
+#define STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_0318FEBC2B9D90A4_OFFSET UNITYSDK_OFFSET(0x742E0B0)
+#define STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_75098065C229FA1A_OFFSET UNITYSDK_OFFSET(0x329CF0)
+#define STRUCT_2_4A8C7CC1860C3CB2__CTOR_OFFSET UNITYSDK_OFFSET(0x329CE0)
 
-inline static constexpr unsigned int Struct_2_4A8C7CC1860C3CB2_TypeDefinitionIndex = 53342;
+inline static constexpr unsigned int Struct_2_4A8C7CC1860C3CB2_TypeDefinitionIndex = 66530;
 
 struct alignas(8) Struct_2_4A8C7CC1860C3CB2
 {
@@ -26,16 +26,16 @@ struct alignas(8) Struct_2_4A8C7CC1860C3CB2
 	}
 
 	/*
-	::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2> Method_2_75098065C229FA1A(::System::Single a1, ::MoleMole::Cameras::CameraMiscSetting*& a2, ::MoleMole::Cameras::CameraMiscSetting*& a3)
+	static ::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2> Method_2_0318FEBC2B9D90A4(::MoleMole::Cameras::CameraMiscSetting* a1, ::Struct_2_455336A079B58DD3& a2)
 	{
-		return ((::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2>(*)(::PVOID, ::System::Single, ::MoleMole::Cameras::CameraMiscSetting*&, ::MoleMole::Cameras::CameraMiscSetting*&))((::PBYTE)hIl2Cpp + STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_75098065C229FA1A_OFFSET))(this, a1, a2, a3);
+		return ((::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2>(*)(::MoleMole::Cameras::CameraMiscSetting*, ::Struct_2_455336A079B58DD3&))((::PBYTE)hIl2Cpp + STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_0318FEBC2B9D90A4_OFFSET))(a1, a2);
 	}
 	*/
 
 	/*
-	static ::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2> Method_2_0318FEBC2B9D90A4(::MoleMole::Cameras::CameraMiscSetting* a1, ::Struct_2_455336A079B58DD3& a2)
+	::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2> Method_2_75098065C229FA1A(::System::Single a1, ::MoleMole::Cameras::CameraMiscSetting*& a2, ::MoleMole::Cameras::CameraMiscSetting*& a3)
 	{
-		return ((::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2>(*)(::MoleMole::Cameras::CameraMiscSetting*, ::Struct_2_455336A079B58DD3&))((::PBYTE)hIl2Cpp + STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_0318FEBC2B9D90A4_OFFSET))(a1, a2);
+		return ((::System::Nullable_1<::Struct_2_4A8C7CC1860C3CB2>(*)(::PVOID, ::System::Single, ::MoleMole::Cameras::CameraMiscSetting*&, ::MoleMole::Cameras::CameraMiscSetting*&))((::PBYTE)hIl2Cpp + STRUCT_2_4A8C7CC1860C3CB2_METHOD_2_75098065C229FA1A_OFFSET))(this, a1, a2, a3);
 	}
 	*/
 };

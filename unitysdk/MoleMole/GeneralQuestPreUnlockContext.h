@@ -5,11 +5,11 @@
 class Class_1_FD26DBB29540C9AE;
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_GENERALQUESTPREUNLOCKCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC223A80)
+#define MOLEMOLE_GENERALQUESTPREUNLOCKCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB83A1F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GeneralQuestPreUnlockContext_TypeDefinitionIndex = 67928;
+	inline static constexpr unsigned int GeneralQuestPreUnlockContext_TypeDefinitionIndex = 67681;
 
 	class GeneralQuestPreUnlockContext : public ::MoleMole::UIControllerContextBase
 	{

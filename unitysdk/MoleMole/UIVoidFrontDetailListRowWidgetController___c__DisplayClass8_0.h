@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIVOIDFRONTDETAILLISTROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7546B70)
-#define MOLEMOLE_UIVOIDFRONTDETAILLISTROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__ONARROWCLICKHANDLE_B__0_OFFSET UNITYSDK_OFFSET(0x7546B80)
+#define MOLEMOLE_UIVOIDFRONTDETAILLISTROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9921980)
+#define MOLEMOLE_UIVOIDFRONTDETAILLISTROWWIDGETCONTROLLER___C__DISPLAYCLASS8_0__ONARROWCLICKHANDLE_B__0_OFFSET UNITYSDK_OFFSET(0x9921990)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVoidFrontDetailListRowWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 77267;
+	inline static constexpr unsigned int UIVoidFrontDetailListRowWidgetController___c__DisplayClass8_0_TypeDefinitionIndex = 61642;
 
 	class UIVoidFrontDetailListRowWidgetController___c__DisplayClass8_0 : public ::System::Object
 	{

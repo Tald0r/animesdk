@@ -10,7 +10,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int ShadowProjector_SliceData_SliceDataPerFrame_TypeDefinitionIndex = 28889;
+	inline static constexpr unsigned int ShadowProjector_SliceData_SliceDataPerFrame_TypeDefinitionIndex = 29839;
 
 	struct alignas(4) ShadowProjector_SliceData_SliceDataPerFrame
 	{

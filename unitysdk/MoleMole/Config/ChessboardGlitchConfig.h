@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CHESSBOARDGLITCHCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xC340850)
+#define MOLEMOLE_CONFIG_CHESSBOARDGLITCHCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xEC39F40)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ChessboardGlitchConfig_TypeDefinitionIndex = 42914;
+	inline static constexpr unsigned int ChessboardGlitchConfig_TypeDefinitionIndex = 80750;
 
 	class ChessboardGlitchConfig : public ::System::Object
 	{

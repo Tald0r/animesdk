@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define EPIC_ONLINESERVICES_P2P_GETPACKETQUEUEINFOOPTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0x19A86880)
+#define EPIC_ONLINESERVICES_P2P_GETPACKETQUEUEINFOOPTIONS__CTOR_OFFSET UNITYSDK_OFFSET(0x19FC86C0)
 
 namespace Epic::OnlineServices::P2P
 {
-	inline static constexpr unsigned int GetPacketQueueInfoOptions_TypeDefinitionIndex = 32444;
+	inline static constexpr unsigned int GetPacketQueueInfoOptions_TypeDefinitionIndex = 33398;
 
 	class GetPacketQueueInfoOptions : public ::System::Object
 	{

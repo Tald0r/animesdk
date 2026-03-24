@@ -4,12 +4,12 @@
 
 namespace MoleMole { class ConfigUIAvatarShowData___c__DisplayClass1_0; }
 
-#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS1_1__CTOR_OFFSET UNITYSDK_OFFSET(0x971E2B0)
-#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS1_1__RELOADFROMFILE_G__ONCOMPLETE_1_OFFSET UNITYSDK_OFFSET(0x971E2C0)
+#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS1_1__CTOR_OFFSET UNITYSDK_OFFSET(0xB0AD450)
+#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS1_1__RELOADFROMFILE_G__ONCOMPLETE_1_OFFSET UNITYSDK_OFFSET(0xB0AD460)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIAvatarShowData___c__DisplayClass1_1_TypeDefinitionIndex = 44831;
+	inline static constexpr unsigned int ConfigUIAvatarShowData___c__DisplayClass1_1_TypeDefinitionIndex = 78002;
 
 	class ConfigUIAvatarShowData___c__DisplayClass1_1 : public ::System::Object
 	{

@@ -8,7 +8,7 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-inline static constexpr unsigned int Struct_2_EA9A3C1106CBD311_TypeDefinitionIndex = 70337;
+inline static constexpr unsigned int Struct_2_EA9A3C1106CBD311_TypeDefinitionIndex = 53196;
 
 struct alignas(8) Struct_2_EA9A3C1106CBD311
 {

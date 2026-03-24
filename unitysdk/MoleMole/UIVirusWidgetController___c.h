@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIVIRUSWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x938CD30)
-#define MOLEMOLE_UIVIRUSWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x938CD70)
-#define MOLEMOLE_UIVIRUSWIDGETCONTROLLER___C__ONCLICKMAINCITY_B__41_0_OFFSET UNITYSDK_OFFSET(0x938CD80)
+#define MOLEMOLE_UIVIRUSWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x953DD10)
+#define MOLEMOLE_UIVIRUSWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x953DD50)
+#define MOLEMOLE_UIVIRUSWIDGETCONTROLLER___C__ONCLICKMAINCITY_B__41_0_OFFSET UNITYSDK_OFFSET(0x953DD60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVirusWidgetController___c_TypeDefinitionIndex = 60534;
+	inline static constexpr unsigned int UIVirusWidgetController___c_TypeDefinitionIndex = 66325;
 
 	class UIVirusWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__41_0()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIVirusWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D9D0);
-		}
 		static ::MoleMole::UIVirusWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIVirusWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIVirusWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D9D8);
+			return (::MoleMole::UIVirusWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIVirusWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40920);
+		}
+		static ::System::Action** StaticGet___9__41_0()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIVirusWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40928);
 		}
 
 		static ::System::Void _cctor()

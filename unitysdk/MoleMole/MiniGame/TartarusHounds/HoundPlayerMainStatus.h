@@ -3,32 +3,32 @@
 
 namespace MoleMole::MiniGame::TartarusHounds
 {
-	inline static constexpr unsigned int HoundPlayerMainStatus_TypeDefinitionIndex = 71400;
+	inline static constexpr unsigned int HoundPlayerMainStatus_TypeDefinitionIndex = 59162;
 
 	enum class HoundPlayerMainStatus : ::System::Int32
 	{
-		Falling = 95,
-		PerformFall = 0,
-		InjuredFinish = 15,
-		Move = 100,
-		FallSlipRight = 92,
-		DivingFinish = 4,
-		None = 200,
+		FallSlipLeft = 91,
 		ClimbPre = 22,
-		Dead = 1,
+		Push = 7,
+		Respawn = 2,
+		Idle = 130,
+		ClimbStart = 21,
 		Climb = 20,
 		ProtectAttack = 106,
-		Respawn = 2,
-		FallLanding = 110,
-		ClimbStart = 21,
-		FakeJump = 108,
-		Attack = 105,
+		Move = 100,
 		Injured = 3,
-		FallSlipLeft = 91,
-		Push = 7,
+		FakeJump = 108,
+		Max = 201,
+		InjuredFinish = 15,
+		Attack = 105,
+		Falling = 95,
+		FallLanding = 110,
+		FallSlipRight = 92,
+		None = 200,
+		PerformFall = 0,
 		MoveAttack = 104,
 		Diving = 5,
-		Max = 201,
-		Idle = 130,
+		DivingFinish = 4,
+		Dead = 1,
 	};
 }

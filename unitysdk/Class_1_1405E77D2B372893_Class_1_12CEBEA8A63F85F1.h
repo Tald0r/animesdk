@@ -9,18 +9,18 @@ namespace System { template <typename T> class Action_1; }
 namespace UnityEngine { class Object; }
 namespace UnityEngine { class Sprite; }
 
-#define CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_2CA7A456F23971D0_OFFSET UNITYSDK_OFFSET(0x83F50B0)
-#define CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_93A98E249E6005CA_OFFSET UNITYSDK_OFFSET(0x83F5140)
-#define CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1__CTOR_OFFSET UNITYSDK_OFFSET(0x83F50A0)
+#define CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_2CA7A456F23971D0_OFFSET UNITYSDK_OFFSET(0x74F60E0)
+#define CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_9FD1AF5940B6E7F6_OFFSET UNITYSDK_OFFSET(0x74F6170)
+#define CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1__CTOR_OFFSET UNITYSDK_OFFSET(0x74F60D0)
 
-inline static constexpr unsigned int Class_1_1405E77D2B372893_Class_1_12CEBEA8A63F85F1_TypeDefinitionIndex = 65073;
+inline static constexpr unsigned int Class_1_1405E77D2B372893_Class_1_12CEBEA8A63F85F1_TypeDefinitionIndex = 52823;
 
 class Class_1_1405E77D2B372893_Class_1_12CEBEA8A63F85F1 : public ::System::Object
 {
 public:
-	::System::Action_1<::Foundation::AssetRequestHandle>* Field_1_1; // 0x10
-	::Class_1_1405E77D2B372893* Field_1_0; // 0x18
-	::System::Action_2<::UnityEngine::Sprite*, ::Foundation::AssetRequestHandle>* Field_1_2; // 0x20
+	::System::Action_2<::UnityEngine::Sprite*, ::Foundation::AssetRequestHandle>* Field_1_2; // 0x10
+	::System::Action_1<::UnityEngine::Sprite*>* Field_1_1; // 0x18
+	::Class_1_1405E77D2B372893* Field_1_0; // 0x20
 
 	::System::Void _ctor()
 	{
@@ -32,8 +32,8 @@ public:
 		return ((::System::Void(*)(::PVOID, ::UnityEngine::Object*, ::Foundation::AssetRequestHandle))((::PBYTE)hIl2Cpp + CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_2CA7A456F23971D0_OFFSET))(this, a1, a2);
 	}
 
-	::System::Void Method_1_93A98E249E6005CA(::UnityEngine::Sprite* a1, ::Foundation::AssetRequestHandle a2)
+	::System::Void Method_1_9FD1AF5940B6E7F6(::UnityEngine::Sprite* a1, ::Foundation::AssetRequestHandle a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::UnityEngine::Sprite*, ::Foundation::AssetRequestHandle))((::PBYTE)hIl2Cpp + CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_93A98E249E6005CA_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::UnityEngine::Sprite*, ::Foundation::AssetRequestHandle))((::PBYTE)hIl2Cpp + CLASS_1_1405E77D2B372893_CLASS_1_12CEBEA8A63F85F1_METHOD_1_9FD1AF5940B6E7F6_OFFSET))(this, a1, a2);
 	}
 };

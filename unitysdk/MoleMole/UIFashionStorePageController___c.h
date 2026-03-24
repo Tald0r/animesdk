@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIFASHIONSTOREPAGECONTROLLER___C__BUILDDATABINDING_B__13_6_OFFSET UNITYSDK_OFFSET(0xD052540)
-#define MOLEMOLE_UIFASHIONSTOREPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0524F0)
-#define MOLEMOLE_UIFASHIONSTOREPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xD052530)
+#define MOLEMOLE_UIFASHIONSTOREPAGECONTROLLER___C__BUILDDATABINDING_B__13_6_OFFSET UNITYSDK_OFFSET(0xF1E5360)
+#define MOLEMOLE_UIFASHIONSTOREPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xF1E5310)
+#define MOLEMOLE_UIFASHIONSTOREPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xF1E5350)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFashionStorePageController___c_TypeDefinitionIndex = 46442;
+	inline static constexpr unsigned int UIFashionStorePageController___c_TypeDefinitionIndex = 38085;
 
 	class UIFashionStorePageController___c : public ::System::Object
 	{
 	public:
 		static ::System::Action** StaticGet___9__13_6()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFashionStorePageController___c_TypeDefinitionIndex)->GetStaticField(0x34950);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIFashionStorePageController___c_TypeDefinitionIndex)->GetStaticField(0x372B0);
 		}
 		static ::MoleMole::UIFashionStorePageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIFashionStorePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFashionStorePageController___c_TypeDefinitionIndex)->GetStaticField(0x34958);
+			return (::MoleMole::UIFashionStorePageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIFashionStorePageController___c_TypeDefinitionIndex)->GetStaticField(0x372B8);
 		}
 
 		static ::System::Void _cctor()

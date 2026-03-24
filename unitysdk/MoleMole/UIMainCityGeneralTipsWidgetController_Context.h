@@ -6,11 +6,11 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace UnityEngine { class RectTransform; }
 
-#define MOLEMOLE_UIMAINCITYGENERALTIPSWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCC9D0)
+#define MOLEMOLE_UIMAINCITYGENERALTIPSWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBE2ACA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityGeneralTipsWidgetController_Context_TypeDefinitionIndex = 73075;
+	inline static constexpr unsigned int UIMainCityGeneralTipsWidgetController_Context_TypeDefinitionIndex = 41435;
 
 	class UIMainCityGeneralTipsWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

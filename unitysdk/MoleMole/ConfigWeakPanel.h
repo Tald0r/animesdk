@@ -5,11 +5,11 @@
 namespace MoleMole { class ConfigWeakPanel_CWeakPanelColor; }
 namespace MoleMole { class ConfigWeakPanel_CWeakPanelColorDic; }
 
-#define MOLEMOLE_CONFIGWEAKPANEL__CTOR_OFFSET UNITYSDK_OFFSET(0x139B0450)
+#define MOLEMOLE_CONFIGWEAKPANEL__CTOR_OFFSET UNITYSDK_OFFSET(0x91A2A60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigWeakPanel_TypeDefinitionIndex = 60893;
+	inline static constexpr unsigned int ConfigWeakPanel_TypeDefinitionIndex = 70901;
 
 	class ConfigWeakPanel : public ::System::Object
 	{

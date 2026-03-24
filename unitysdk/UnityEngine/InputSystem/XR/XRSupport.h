@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_INPUTSYSTEM_XR_XRSUPPORT_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x18C0C190)
+#define UNITYENGINE_INPUTSYSTEM_XR_XRSUPPORT_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x190A9470)
 
 namespace UnityEngine::InputSystem::XR
 {
-	inline static constexpr unsigned int XRSupport_TypeDefinitionIndex = 27617;
+	inline static constexpr unsigned int XRSupport_TypeDefinitionIndex = 28557;
 
 	class XRSupport : public ::System::Object
 	{

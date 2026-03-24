@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPlayLightDiffusionAnimation_DiffusionType_TypeDefinitionIndex = 49463;
+	inline static constexpr unsigned int ConfigPlayLightDiffusionAnimation_DiffusionType_TypeDefinitionIndex = 43740;
 
 	enum class ConfigPlayLightDiffusionAnimation_DiffusionType : ::System::Int32
 	{

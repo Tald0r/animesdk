@@ -4,12 +4,12 @@
 
 class MonoUILoopText;
 
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS86_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB23EFB0)
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS86_0__REFRESHPERSONALLEFTVIEW_B__0_OFFSET UNITYSDK_OFFSET(0xB23EFC0)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS86_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7473E70)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS86_0__REFRESHPERSONALLEFTVIEW_B__0_OFFSET UNITYSDK_OFFSET(0x7473E80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass86_0_TypeDefinitionIndex = 71461;
+	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass86_0_TypeDefinitionIndex = 40419;
 
 	class UIMainStoryPageController___c__DisplayClass86_0 : public ::System::Object
 	{

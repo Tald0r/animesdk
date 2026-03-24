@@ -8,7 +8,7 @@ namespace UnityEngine { class Material; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoCanvasGroupAlphaModifierForParticleSystem_MaterialInfo_TypeDefinitionIndex = 47080;
+	inline static constexpr unsigned int MonoCanvasGroupAlphaModifierForParticleSystem_MaterialInfo_TypeDefinitionIndex = 49928;
 
 	struct alignas(8) MonoCanvasGroupAlphaModifierForParticleSystem_MaterialInfo
 	{

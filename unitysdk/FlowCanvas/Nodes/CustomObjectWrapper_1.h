@@ -8,7 +8,7 @@ namespace UnityEngine { class Object; }
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int CustomObjectWrapper_1_TypeDefinitionIndex = 26587;
+	inline static constexpr unsigned int CustomObjectWrapper_1_TypeDefinitionIndex = 27161;
 
 	template <typename T>
 	class CustomObjectWrapper_1 : public ::FlowCanvas::Nodes::CustomObjectWrapper

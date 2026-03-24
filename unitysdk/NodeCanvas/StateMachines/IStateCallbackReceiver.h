@@ -5,7 +5,7 @@ namespace NodeCanvas::StateMachines { class IState; }
 
 namespace NodeCanvas::StateMachines
 {
-	inline static constexpr unsigned int IStateCallbackReceiver_TypeDefinitionIndex = 26448;
+	inline static constexpr unsigned int IStateCallbackReceiver_TypeDefinitionIndex = 27567;
 
 	class IStateCallbackReceiver
 	{

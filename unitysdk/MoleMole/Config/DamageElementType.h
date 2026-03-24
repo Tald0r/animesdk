@@ -3,17 +3,17 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int DamageElementType_TypeDefinitionIndex = 49424;
+	inline static constexpr unsigned int DamageElementType_TypeDefinitionIndex = 62920;
 
 	enum class DamageElementType : ::System::Int32
 	{
-		None = 0,
-		Ether = 205,
-		ElementAll = 210,
-		Physics = 200,
-		Ice = 202,
 		Fire = 201,
+		Ice = 202,
+		None = 0,
 		Wind = 204,
 		Elec = 203,
+		ElementAll = 210,
+		Physics = 200,
+		Ether = 205,
 	};
 }

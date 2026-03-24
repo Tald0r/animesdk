@@ -5,22 +5,22 @@
 #include "unitysdk/System/ValueType.h"
 
 class Class_1_E448A6480D65B7F5;
-class Class_5_2169ABC757988FED;
+class Class_5_0B648F1F8F6AC84A;
 namespace MoleMole::Config { class ConfigHollowChessboard_ChessEffectBigTVSwitchRunContext; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_1_E448A6480D65B7F5_STRUCT_2_4AB40BC617CBEF70_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x398CA0)
-#define CLASS_1_E448A6480D65B7F5_STRUCT_2_4AB40BC617CBEF70_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_E448A6480D65B7F5_STRUCT_2_4AB40BC617CBEF70_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3560E0)
+#define CLASS_1_E448A6480D65B7F5_STRUCT_2_4AB40BC617CBEF70_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_E448A6480D65B7F5_Struct_2_4AB40BC617CBEF70_TypeDefinitionIndex = 55642;
+inline static constexpr unsigned int Class_1_E448A6480D65B7F5_Struct_2_4AB40BC617CBEF70_TypeDefinitionIndex = 55861;
 
 struct alignas(8) Class_1_E448A6480D65B7F5_Struct_2_4AB40BC617CBEF70
 {
-	::MoleMole::Config::ConfigHollowChessboard_ChessEffectBigTVSwitchRunContext* Field_2_3; // 0x10
-	::Class_1_E448A6480D65B7F5* Field_2_2; // 0x18
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_5; // 0x20
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x30
-	::Class_5_2169ABC757988FED* Field_2_4; // 0x40
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x10
+	::MoleMole::Config::ConfigHollowChessboard_ChessEffectBigTVSwitchRunContext* Field_2_3; // 0x20
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_5; // 0x28
+	::Class_5_0B648F1F8F6AC84A* Field_2_4; // 0x38
+	::Class_1_E448A6480D65B7F5* Field_2_2; // 0x40
 	::System::Int32 Field_2_0; // 0x48
 
 	::System::Void MoveNext()

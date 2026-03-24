@@ -14,34 +14,34 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCC87520)
-#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCC87530)
-#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCC87950)
-#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCC87C10)
-#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCC87BD0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xACB5490)
+#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xACB54A0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xACB58C0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xACB5B80)
+#define MOLEMOLE_CONFIG_ANIMATORZONEKEEPJOYSTICKROTATION_ANIMATORZONEKEEPJOYSTICKROTATION_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xACB5B40)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex = 54616;
+	inline static constexpr unsigned int AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex = 38401;
 
 	class AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneKeepJoyStickRotation*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36300);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36308);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38F90);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38F98);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36310);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38FA0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36318);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneKeepJoyStickRotation_AnimatorZoneKeepJoyStickRotation_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38FA8);
 		}
 
 		::System::Void _ctor()

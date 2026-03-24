@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIUrbanMapPointWidgetController_2.h"
 
-class Class_3_008F7018E697FA4B_3;
+class Class_3_008F7018E697FA4B;
 namespace MoleMole { class UIThreeDMapElement_BigSceneStoreContext; }
 
-#define MOLEMOLE_UIURBANMAPPOINTBIGSCENESTOREWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xEE4BA00)
+#define MOLEMOLE_UIURBANMAPPOINTBIGSCENESTOREWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xAA72760)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapPointBigSceneStoreWidgetController_TypeDefinitionIndex = 44397;
+	inline static constexpr unsigned int UIUrbanMapPointBigSceneStoreWidgetController_TypeDefinitionIndex = 62671;
 
-	class UIUrbanMapPointBigSceneStoreWidgetController : public ::MoleMole::UIUrbanMapPointWidgetController_2<::Class_3_008F7018E697FA4B_3*, ::MoleMole::UIThreeDMapElement_BigSceneStoreContext*>
+	class UIUrbanMapPointBigSceneStoreWidgetController : public ::MoleMole::UIUrbanMapPointWidgetController_2<::Class_3_008F7018E697FA4B*, ::MoleMole::UIThreeDMapElement_BigSceneStoreContext*>
 	{
 	public:
 		::System::Void _ctor()

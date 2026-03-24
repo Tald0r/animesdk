@@ -3,7 +3,7 @@
 
 namespace System::Data
 {
-	inline static constexpr unsigned int ValueType_TypeDefinitionIndex = 35453;
+	inline static constexpr unsigned int ValueType_TypeDefinitionIndex = 36473;
 
 	enum class ValueType : ::System::Int32
 	{

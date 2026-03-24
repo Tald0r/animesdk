@@ -6,17 +6,17 @@
 
 class PushBoxGameView;
 
-#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15F5B6B0)
-#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS19_0__GENCHESSBOARD_B__0_OFFSET UNITYSDK_OFFSET(0x15F5B6C0)
+#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0x15ABEAB0)
+#define PUSHBOXGAMEVIEW___C__DISPLAYCLASS19_0__GENCHESSBOARD_B__0_OFFSET UNITYSDK_OFFSET(0x15ABEAC0)
 
-inline static constexpr unsigned int PushBoxGameView___c__DisplayClass19_0_TypeDefinitionIndex = 38295;
+inline static constexpr unsigned int PushBoxGameView___c__DisplayClass19_0_TypeDefinitionIndex = 71312;
 
 class PushBoxGameView___c__DisplayClass19_0 : public ::System::Object
 {
 public:
 	::PushBoxGameView* __4__this; // 0x10
-	::Struct_2_02E84E3D148EE908 sectionId; // 0x18
-	::MoleMole::HollowChessboard::HollowChessboardUID chessboardUid; // 0x20
+	::MoleMole::HollowChessboard::HollowChessboardUID chessboardUid; // 0x18
+	::Struct_2_02E84E3D148EE908 sectionId; // 0x20
 
 	::System::Void _ctor()
 	{

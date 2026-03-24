@@ -4,25 +4,25 @@
 #include "unitysdk/Cysharp/Threading/Tasks/UniTask_Awaiter.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_2_208CC9941471731A_404;
+class Class_2_208CC9941471731A_102;
 namespace MoleMole { class UISuibianTempleHiveBoxPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER__CREATEBUDDYENTITY_D__36_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3614D0)
-#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER__CREATEBUDDYENTITY_D__36_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER__CREATEBUDDYENTITY_D__36_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3896F0)
+#define MOLEMOLE_UISUIBIANTEMPLEHIVEBOXPAGECONTROLLER__CREATEBUDDYENTITY_D__36_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleHiveBoxPageController__CreateBuddyEntity_d__36_TypeDefinitionIndex = 46568;
+	inline static constexpr unsigned int UISuibianTempleHiveBoxPageController__CreateBuddyEntity_d__36_TypeDefinitionIndex = 45255;
 
 	struct alignas(8) UISuibianTempleHiveBoxPageController__CreateBuddyEntity_d__36
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x20
-		::MoleMole::UISuibianTempleHiveBoxPageController* __4__this; // 0x30
-		::Class_2_208CC9941471731A_404* _displayConfig_5__2; // 0x38
-		::System::Int32 __1__state; // 0x40
-		::System::Int32 buddyID; // 0x44
+		::Class_2_208CC9941471731A_102* _displayConfig_5__2; // 0x10
+		::MoleMole::UISuibianTempleHiveBoxPageController* __4__this; // 0x18
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x20
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x30
+		::System::Int32 buddyID; // 0x40
+		::System::Int32 __1__state; // 0x44
 
 		::System::Void MoveNext()
 		{

@@ -5,7 +5,7 @@ namespace System { class String; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ICharacterAssistAimConfig_TypeDefinitionIndex = 48927;
+	inline static constexpr unsigned int ICharacterAssistAimConfig_TypeDefinitionIndex = 46851;
 
 	class ICharacterAssistAimConfig
 	{

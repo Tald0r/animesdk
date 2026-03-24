@@ -5,18 +5,18 @@
 namespace MoleMole { class UIDataAdjustCircleWidgetController; }
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_UIDATAADJUSTCIRCLEWIDGETCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA340C40)
-#define MOLEMOLE_UIDATAADJUSTCIRCLEWIDGETCONTROLLER___C__DISPLAYCLASS18_0__TRYCLOSE_B__1_OFFSET UNITYSDK_OFFSET(0xA340C50)
+#define MOLEMOLE_UIDATAADJUSTCIRCLEWIDGETCONTROLLER___C__DISPLAYCLASS18_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD10AC50)
+#define MOLEMOLE_UIDATAADJUSTCIRCLEWIDGETCONTROLLER___C__DISPLAYCLASS18_0__TRYCLOSE_B__1_OFFSET UNITYSDK_OFFSET(0xD10AC60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDataAdjustCircleWidgetController___c__DisplayClass18_0_TypeDefinitionIndex = 73438;
+	inline static constexpr unsigned int UIDataAdjustCircleWidgetController___c__DisplayClass18_0_TypeDefinitionIndex = 65219;
 
 	class UIDataAdjustCircleWidgetController___c__DisplayClass18_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIDataAdjustCircleWidgetController* __4__this; // 0x10
-		::UnityEngine::Animation* adjustAnim; // 0x18
+		::UnityEngine::Animation* adjustAnim; // 0x10
+		::MoleMole::UIDataAdjustCircleWidgetController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

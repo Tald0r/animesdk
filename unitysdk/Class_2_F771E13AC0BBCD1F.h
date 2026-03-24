@@ -4,30 +4,30 @@
 
 class Class_2_60DDD9C206686F44;
 class Class_2_777A5D016ADC7368;
-class Class_2_F771E13AC0BBCD1F_Class_2_8AF8272AE2304074_1;
-class Class_2_F771E13AC0BBCD1F_Class_2_CEDEE32CDEEE0E54_1;
+class Class_2_F771E13AC0BBCD1F_Class_2_8AF8272AE2304074;
+class Class_2_F771E13AC0BBCD1F_Class_2_CEDEE32CDEEE0E54_2;
 namespace MoleMole { class NotificationBadgeEx; }
 namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class RectTransform; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define CLASS_2_F771E13AC0BBCD1F_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0x9FFDF30)
-#define CLASS_2_F771E13AC0BBCD1F_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x9FFE180)
-#define CLASS_2_F771E13AC0BBCD1F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9FFE270)
-#define CLASS_2_F771E13AC0BBCD1F__CTOR_OFFSET UNITYSDK_OFFSET(0x9FFE260)
+#define CLASS_2_F771E13AC0BBCD1F_METHOD_2_2D8360ADEC831C05_OFFSET UNITYSDK_OFFSET(0x98EDED0)
+#define CLASS_2_F771E13AC0BBCD1F_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0x98EE120)
+#define CLASS_2_F771E13AC0BBCD1F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x98EE210)
+#define CLASS_2_F771E13AC0BBCD1F__CTOR_OFFSET UNITYSDK_OFFSET(0x98EE200)
 
-inline static constexpr unsigned int Class_2_F771E13AC0BBCD1F_TypeDefinitionIndex = 67870;
+inline static constexpr unsigned int Class_2_F771E13AC0BBCD1F_TypeDefinitionIndex = 50922;
 
 class Class_2_F771E13AC0BBCD1F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_6; // 0x18
-	::Class_2_0D31A1661D004892<::Class_2_F771E13AC0BBCD1F_Class_2_CEDEE32CDEEE0E54_1*>* Field_2_2; // 0x20
-	::Class_2_0D31A1661D004892<::Class_2_F771E13AC0BBCD1F_Class_2_8AF8272AE2304074_1*>* Field_2_1; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x30
-	::UnityEngine::RectTransform* Field_2_5; // 0x38
-	::MoleMole::NotificationBadgeEx* Field_2_4; // 0x40
-	::MoleMole::NotificationBadgeEx* Field_2_3; // 0x48
+	::Class_2_0D31A1661D004892<::Class_2_F771E13AC0BBCD1F_Class_2_8AF8272AE2304074*>* Field_2_1; // 0x18
+	::MoleMole::NotificationBadgeEx* Field_2_3; // 0x20
+	::Class_2_0D31A1661D004892<::Class_2_F771E13AC0BBCD1F_Class_2_CEDEE32CDEEE0E54_2*>* Field_2_2; // 0x28
+	::UnityEngine::RectTransform* Field_2_6; // 0x30
+	::MoleMole::NotificationBadgeEx* Field_2_4; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
+	::UnityEngine::RectTransform* Field_2_5; // 0x48
 
 	::System::Void _ctor()
 	{

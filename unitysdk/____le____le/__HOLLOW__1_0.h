@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace МοleМοle
 {
-	inline static constexpr unsigned int __HOLLOW__1_0_TypeDefinitionIndex = 82114;
+	inline static constexpr unsigned int __HOLLOW__1_0_TypeDefinitionIndex = 84176;
 
 	class __HOLLOW__1_0 : public ::System::Object
 	{

@@ -3,12 +3,12 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EGenerateEventTypeOfManualGrid_TypeDefinitionIndex = 11602;
+	inline static constexpr unsigned int EGenerateEventTypeOfManualGrid_TypeDefinitionIndex = 10073;
 
 	enum class EGenerateEventTypeOfManualGrid : ::System::Int16
 	{
 		EnumCount = 2,
-		GroupName = 1,
 		EventList = 0,
+		GroupName = 1,
 	};
 }

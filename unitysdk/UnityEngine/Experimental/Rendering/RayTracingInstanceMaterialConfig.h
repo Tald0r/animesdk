@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace UnityEngine::Experimental::Rendering
 {
-	inline static constexpr unsigned int RayTracingInstanceMaterialConfig_TypeDefinitionIndex = 6310;
+	inline static constexpr unsigned int RayTracingInstanceMaterialConfig_TypeDefinitionIndex = 6314;
 
 	struct alignas(8) RayTracingInstanceMaterialConfig
 	{

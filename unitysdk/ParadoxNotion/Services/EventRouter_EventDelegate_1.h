@@ -9,7 +9,7 @@ namespace System { class Object; }
 
 namespace ParadoxNotion::Services
 {
-	inline static constexpr unsigned int EventRouter_EventDelegate_1_TypeDefinitionIndex = 26043;
+	inline static constexpr unsigned int EventRouter_EventDelegate_1_TypeDefinitionIndex = 26113;
 
 	template <typename T>
 	class EventRouter_EventDelegate_1 : public ::System::MulticastDelegate

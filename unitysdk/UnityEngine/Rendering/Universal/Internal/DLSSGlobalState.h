@@ -3,20 +3,20 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Rendering/DLSSContext.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DLSSGLOBALSTATE_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x18B3FCD0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DLSSGLOBALSTATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x18B4A130)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DLSSGLOBALSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x18B4A120)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DLSSGLOBALSTATE_GET_CONTEXT_OFFSET UNITYSDK_OFFSET(0x18F00E90)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DLSSGLOBALSTATE__CCTOR_OFFSET UNITYSDK_OFFSET(0x18F0D240)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DLSSGLOBALSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x18F0D230)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int DLSSGlobalState_TypeDefinitionIndex = 28849;
+	inline static constexpr unsigned int DLSSGlobalState_TypeDefinitionIndex = 29798;
 
 	class DLSSGlobalState : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::Rendering::DLSSContext* StaticGet_s_Context()
 		{
-			return (::UnityEngine::Rendering::DLSSContext*)Il2CppClass::FromTypeDefinitionIndex(DLSSGlobalState_TypeDefinitionIndex)->GetStaticField(0x6650);
+			return (::UnityEngine::Rendering::DLSSContext*)Il2CppClass::FromTypeDefinitionIndex(DLSSGlobalState_TypeDefinitionIndex)->GetStaticField(0x6DE0);
 		}
 
 		::System::Void _ctor()

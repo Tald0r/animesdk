@@ -7,13 +7,13 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace NodeCanvas::Framework::Internal { class BBObjectParameter; }
 namespace System { class String; }
 
-#define NODECANVAS_TASKS_ACTIONS_GETOTHERBLACKBOARDVARIABLE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19E0C890)
-#define NODECANVAS_TASKS_ACTIONS_GETOTHERBLACKBOARDVARIABLE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19E0C8E0)
-#define NODECANVAS_TASKS_ACTIONS_GETOTHERBLACKBOARDVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x19E0C9E0)
+#define NODECANVAS_TASKS_ACTIONS_GETOTHERBLACKBOARDVARIABLE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A3FB110)
+#define NODECANVAS_TASKS_ACTIONS_GETOTHERBLACKBOARDVARIABLE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A3FB160)
+#define NODECANVAS_TASKS_ACTIONS_GETOTHERBLACKBOARDVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3FB260)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int GetOtherBlackboardVariable_TypeDefinitionIndex = 26699;
+	inline static constexpr unsigned int GetOtherBlackboardVariable_TypeDefinitionIndex = 26466;
 
 	class GetOtherBlackboardVariable : public ::NodeCanvas::Framework::ActionTask_1<::NodeCanvas::Framework::Blackboard*>
 	{

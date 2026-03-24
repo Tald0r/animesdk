@@ -6,19 +6,19 @@
 
 namespace UnityEngine { class MaterialPropertyBlock; }
 
-#define MONOEFFECTINSTANCERENDERER_RENDERBATCH_GETSCRATCHFLOATARRAY_OFFSET UNITYSDK_OFFSET(0x13919650)
-#define MONOEFFECTINSTANCERENDERER_RENDERBATCH_GETSCRATCHVECTORARRAY_OFFSET UNITYSDK_OFFSET(0x13919770)
-#define MONOEFFECTINSTANCERENDERER_RENDERBATCH__CTOR_OFFSET UNITYSDK_OFFSET(0x13919840)
+#define MONOEFFECTINSTANCERENDERER_RENDERBATCH_GETSCRATCHFLOATARRAY_OFFSET UNITYSDK_OFFSET(0x151A08F0)
+#define MONOEFFECTINSTANCERENDERER_RENDERBATCH_GETSCRATCHVECTORARRAY_OFFSET UNITYSDK_OFFSET(0x151A0A10)
+#define MONOEFFECTINSTANCERENDERER_RENDERBATCH__CTOR_OFFSET UNITYSDK_OFFSET(0x151A0AE0)
 
-inline static constexpr unsigned int MonoEffectInstanceRenderer_RenderBatch_TypeDefinitionIndex = 28042;
+inline static constexpr unsigned int MonoEffectInstanceRenderer_RenderBatch_TypeDefinitionIndex = 28982;
 
 class MonoEffectInstanceRenderer_RenderBatch : public ::System::Object
 {
 public:
-	::UnityEngine::MaterialPropertyBlock* propertyBlock; // 0x10
-	::Il2CppArray<::UnityEngine::Matrix4x4>* worldMatrices; // 0x18
-	::Il2CppArray<::UnityEngine::Vector4>* scratchVectorArray; // 0x20
-	::Il2CppArray<::System::Single>* scratchFloatArray; // 0x28
+	::Il2CppArray<::UnityEngine::Vector4>* scratchVectorArray; // 0x10
+	::Il2CppArray<::System::Single>* scratchFloatArray; // 0x18
+	::Il2CppArray<::UnityEngine::Matrix4x4>* worldMatrices; // 0x20
+	::UnityEngine::MaterialPropertyBlock* propertyBlock; // 0x28
 	::System::Int32 count; // 0x30
 
 	::System::Void _ctor()

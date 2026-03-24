@@ -9,18 +9,18 @@ class Class_1_CD54B66100AEF2DB;
 namespace MoleMole::Config { class ConfigShootingGroundCamera; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_1_CD54B66100AEF2DB_STRUCT_2_CE9C8D81F1F0B2CB_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2C5B50)
-#define CLASS_1_CD54B66100AEF2DB_STRUCT_2_CE9C8D81F1F0B2CB_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_CD54B66100AEF2DB_STRUCT_2_CE9C8D81F1F0B2CB_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A2F10)
+#define CLASS_1_CD54B66100AEF2DB_STRUCT_2_CE9C8D81F1F0B2CB_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_CD54B66100AEF2DB_Struct_2_CE9C8D81F1F0B2CB_TypeDefinitionIndex = 52320;
+inline static constexpr unsigned int Class_1_CD54B66100AEF2DB_Struct_2_CE9C8D81F1F0B2CB_TypeDefinitionIndex = 52830;
 
 struct alignas(8) Class_1_CD54B66100AEF2DB_Struct_2_CE9C8D81F1F0B2CB
 {
-	::Class_1_CD54B66100AEF2DB* Field_2_2; // 0x10
-	::MoleMole::Config::ConfigShootingGroundCamera* Field_2_3; // 0x18
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x20
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_5; // 0x28
-	::PipelineCamera::ScopedDelegateHandle Field_2_4; // 0x38
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_5; // 0x10
+	::Class_1_CD54B66100AEF2DB* Field_2_2; // 0x20
+	::PipelineCamera::ScopedDelegateHandle Field_2_4; // 0x28
+	::MoleMole::Config::ConfigShootingGroundCamera* Field_2_3; // 0x30
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x38
 	::System::Int32 Field_2_0; // 0x40
 
 	::System::Void MoveNext()

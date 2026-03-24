@@ -1,17 +1,17 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Enum_3_A5FB87865CAEC5AF_TypeDefinitionIndex = 81586;
+inline static constexpr unsigned int Enum_3_A5FB87865CAEC5AF_TypeDefinitionIndex = 83531;
 
 enum class Enum_3_A5FB87865CAEC5AF : ::System::Int32
 {
-	ImpactReady = 7,
-	Born = 6,
-	Idle = 1,
-	Attack = 3,
 	Move = 2,
-	Die = 4,
+	Born = 6,
 	Kick = 5,
+	Idle = 1,
 	ImpactAttack = 8,
+	Die = 4,
 	None = 0,
+	Attack = 3,
+	ImpactReady = 7,
 };

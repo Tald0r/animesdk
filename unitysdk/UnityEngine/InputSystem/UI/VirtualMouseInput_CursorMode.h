@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::UI
 {
-	inline static constexpr unsigned int VirtualMouseInput_CursorMode_TypeDefinitionIndex = 27663;
+	inline static constexpr unsigned int VirtualMouseInput_CursorMode_TypeDefinitionIndex = 28603;
 
 	enum class VirtualMouseInput_CursorMode : ::System::Int32
 	{

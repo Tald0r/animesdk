@@ -3,7 +3,7 @@
 
 namespace MoleMole::MiniUIGame::SimpleParkour
 {
-	inline static constexpr unsigned int ETrackType_TypeDefinitionIndex = 51306;
+	inline static constexpr unsigned int ETrackType_TypeDefinitionIndex = 57714;
 
 	enum class ETrackType : ::System::Int32
 	{

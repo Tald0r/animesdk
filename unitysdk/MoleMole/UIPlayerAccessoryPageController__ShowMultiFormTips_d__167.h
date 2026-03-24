@@ -7,18 +7,18 @@
 namespace MoleMole { class UIPlayerAccessoryPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWMULTIFORMTIPS_D__167_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x373700)
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWMULTIFORMTIPS_D__167_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWMULTIFORMTIPS_D__167_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3AD0F0)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__SHOWMULTIFORMTIPS_D__167_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryPageController__ShowMultiFormTips_d__167_TypeDefinitionIndex = 77130;
+	inline static constexpr unsigned int UIPlayerAccessoryPageController__ShowMultiFormTips_d__167_TypeDefinitionIndex = 39880;
 
 	struct alignas(8) UIPlayerAccessoryPageController__ShowMultiFormTips_d__167
 	{
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x20
-		::MoleMole::UIPlayerAccessoryPageController* __4__this; // 0x28
+		::MoleMole::UIPlayerAccessoryPageController* __4__this; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x28
 		::System::Int32 __1__state; // 0x30
 
 		::System::Void MoveNext()

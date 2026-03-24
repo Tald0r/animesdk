@@ -10,17 +10,17 @@ namespace MoleMole { class UICinemaDatePlayWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 template <typename T> class Class_2_0D31A1661D004892;
 
-#define MOLEMOLE_UICINEMADATEPLAYWIDGETCONTROLLER__HIDEASSESSDIALOG_D__3_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B67C0)
-#define MOLEMOLE_UICINEMADATEPLAYWIDGETCONTROLLER__HIDEASSESSDIALOG_D__3_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UICINEMADATEPLAYWIDGETCONTROLLER__HIDEASSESSDIALOG_D__3_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3A8C40)
+#define MOLEMOLE_UICINEMADATEPLAYWIDGETCONTROLLER__HIDEASSESSDIALOG_D__3_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaDatePlayWidgetController__HideAssessDialog_d__3_TypeDefinitionIndex = 39213;
+	inline static constexpr unsigned int UICinemaDatePlayWidgetController__HideAssessDialog_d__3_TypeDefinitionIndex = 48516;
 
 	struct alignas(8) UICinemaDatePlayWidgetController__HideAssessDialog_d__3
 	{
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x10
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x10
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x18
 		::MoleMole::UICinemaDatePlayWidgetController* __4__this; // 0x28
 		::Class_2_0D31A1661D004892<::Class_2_D0F43E2E93E0D88C_Class_2_789DB209FB3DF9F3*>* _assess_5__2; // 0x30
 		::System::Int32 __1__state; // 0x38

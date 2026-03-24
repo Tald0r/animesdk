@@ -3,14 +3,14 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EPostEffectType_TypeDefinitionIndex = 15773;
+	inline static constexpr unsigned int EPostEffectType_TypeDefinitionIndex = 16668;
 
 	enum class EPostEffectType : ::System::Int16
 	{
-		VignetteEffect = 2,
-		EnumCount = 5,
-		ScreenEffect = 3,
-		Glitch = 1,
 		RadialBlur = 4,
+		Glitch = 1,
+		EnumCount = 5,
+		VignetteEffect = 2,
+		ScreenEffect = 3,
 	};
 }

@@ -3,12 +3,12 @@
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_2.h"
 #include "unitysdk/MoleMole/Level/RatingType.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSMASHBRORATINGTHRESHOLDVALUE_INVOKE_OFFSET UNITYSDK_OFFSET(0x9905C70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSMASHBRORATINGTHRESHOLDVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x9905FE0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSMASHBRORATINGTHRESHOLDVALUE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA500AC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSMASHBRORATINGTHRESHOLDVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0xA500E30)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSmashBroRatingThresholdValue_TypeDefinitionIndex = 50426;
+	inline static constexpr unsigned int LDSmashBroRatingThresholdValue_TypeDefinitionIndex = 69092;
 
 	class LDSmashBroRatingThresholdValue : public ::FlowCanvas::Nodes::PureFunctionNode_2<::System::Int32, ::MoleMole::Level::RatingType>
 	{

@@ -6,7 +6,7 @@ namespace UnityEngine::NAPRenderPipeline0 { class VolumeComponent; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int LerpItem_TypeDefinitionIndex = 6064;
+	inline static constexpr unsigned int LerpItem_TypeDefinitionIndex = 6067;
 
 	struct alignas(8) LerpItem
 	{

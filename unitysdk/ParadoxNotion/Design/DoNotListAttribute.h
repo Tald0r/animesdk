@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define PARADOXNOTION_DESIGN_DONOTLISTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19F5D0F0)
+#define PARADOXNOTION_DESIGN_DONOTLISTATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A56DF30)
 
 namespace ParadoxNotion::Design
 {
-	inline static constexpr unsigned int DoNotListAttribute_TypeDefinitionIndex = 25235;
+	inline static constexpr unsigned int DoNotListAttribute_TypeDefinitionIndex = 26416;
 
 	class DoNotListAttribute : public ::System::Attribute
 	{

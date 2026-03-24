@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_CONFIG_UIYOROZUYAABYSSCHALLENGEREVIEWCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE4485E0)
+#define MOLEMOLE_CONFIG_UIYOROZUYAABYSSCHALLENGEREVIEWCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xD7CF320)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int UIYorozuyaAbyssChallengeReviewConfig_TypeDefinitionIndex = 71828;
+	inline static constexpr unsigned int UIYorozuyaAbyssChallengeReviewConfig_TypeDefinitionIndex = 41519;
 
 	class UIYorozuyaAbyssChallengeReviewConfig : public ::UnityEngine::MonoBehaviour
 	{

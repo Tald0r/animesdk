@@ -3,30 +3,35 @@
 #include "unitysdk/Foundation/Container/CellLocation.h"
 #include "unitysdk/StateTreeCore/BaseFragment.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0xA105690)
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x37B320)
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x37B2C0)
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x2C3E30)
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0xA1054F0)
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_SET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x37B250)
-#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0xA1057C0)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x333C40)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x333B40)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x76CC4A0)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x333B20)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x333D90)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x333AC0)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x333DF0)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x333CB0)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x333BC0)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_RESET_OFFSET UNITYSDK_OFFSET(0x333D20)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x333E50)
+#define NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x76CC920)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int FNPCNavigationObstacleGridCellLocationFragment_TypeDefinitionIndex = 61266;
+	inline static constexpr unsigned int FNPCNavigationObstacleGridCellLocationFragment_TypeDefinitionIndex = 43596;
 
 	struct alignas(4) FNPCNavigationObstacleGridCellLocationFragment
 	{
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(FNPCNavigationObstacleGridCellLocationFragment_TypeDefinitionIndex)->GetStaticField(0x10280);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(FNPCNavigationObstacleGridCellLocationFragment_TypeDefinitionIndex)->GetStaticField(0x47AF0);
 		}
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(FNPCNavigationObstacleGridCellLocationFragment_TypeDefinitionIndex)->GetStaticField(0x10284);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xAD0542C8; // 0x0
 		::StateTreeCore::BaseFragment Base; // 0x10
 		::Foundation::Container::CellLocation Location; // 0x14
 
@@ -35,34 +40,59 @@ namespace NPCCrowd::Ability
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT__CCTOR_OFFSET))();
 		}
 
-		::UnrealTypes::FStructHandle get_TypeInfo()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_TYPEINFO_OFFSET))(this);
-		}
-
-		::System::Void set_TypeInfo(::UnrealTypes::FStructHandle value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FStructHandle))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_SET_TYPEINFO_OFFSET))(this, value);
-		}
-
-		::System::UInt32 get_TypeId()
-		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_TYPEID_OFFSET))(this);
-		}
-
-		::UnrealTypes::FStructHandle get_StaticStruct()
-		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
-		}
-
-		static ::System::Void RegisterType()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_REGISTERTYPE_OFFSET))();
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
 		static ::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment Create()
 		{
 			return ((::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_CREATE_OFFSET))();
+		}
+
+		::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_FNPCNavigationObstacleGridCellLocationFragment__CopyAssign(::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FNPCNavigationObstacleGridCellLocationFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FNPCNAVIGATIONOBSTACLEGRIDCELLLOCATIONFRAGMENT__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

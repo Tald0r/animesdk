@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/Internal/MatLodBaseData.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MATSHADOWCASTERPASSLODDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x19FAF850)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_MATSHADOWCASTERPASSLODDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2EAEC0)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int MatShadowCasterPassLodData_TypeDefinitionIndex = 28970;
+	inline static constexpr unsigned int MatShadowCasterPassLodData_TypeDefinitionIndex = 29921;
 
 	class MatShadowCasterPassLodData : public ::UnityEngine::Rendering::Universal::Internal::MatLodBaseData
 	{

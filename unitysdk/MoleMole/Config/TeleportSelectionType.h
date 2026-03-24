@@ -3,7 +3,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int TeleportSelectionType_TypeDefinitionIndex = 62039;
+	inline static constexpr unsigned int TeleportSelectionType_TypeDefinitionIndex = 56349;
 
 	enum class TeleportSelectionType : ::System::Int32
 	{

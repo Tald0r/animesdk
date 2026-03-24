@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::HID
 {
-	inline static constexpr unsigned int HIDParser_HIDItemTypeAndTag_TypeDefinitionIndex = 27689;
+	inline static constexpr unsigned int HIDParser_HIDItemTypeAndTag_TypeDefinitionIndex = 28629;
 
 	enum class HIDParser_HIDItemTypeAndTag : ::System::Int32
 	{

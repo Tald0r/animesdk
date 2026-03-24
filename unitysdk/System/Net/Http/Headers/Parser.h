@@ -4,7 +4,7 @@
 
 namespace System::Net::Http::Headers
 {
-	inline static constexpr unsigned int Parser_TypeDefinitionIndex = 23560;
+	inline static constexpr unsigned int Parser_TypeDefinitionIndex = 24243;
 
 	class Parser : public ::System::Object
 	{

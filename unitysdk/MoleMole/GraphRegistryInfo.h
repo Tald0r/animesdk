@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_GRAPHREGISTRYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x7F0F380)
+#define MOLEMOLE_GRAPHREGISTRYINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xCD59A10)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GraphRegistryInfo_TypeDefinitionIndex = 65207;
+	inline static constexpr unsigned int GraphRegistryInfo_TypeDefinitionIndex = 37947;
 
 	class GraphRegistryInfo : public ::System::Object
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/Newtonsoft/Json/Serialization/DefaultContractResolver.h"
 
-#define NEWTONSOFT_JSON_SERIALIZATION_CAMELCASEPROPERTYNAMESCONTRACTRESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1ACCE4C0)
+#define NEWTONSOFT_JSON_SERIALIZATION_CAMELCASEPROPERTYNAMESCONTRACTRESOLVER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B2F85F0)
 
 namespace Newtonsoft::Json::Serialization
 {
-	inline static constexpr unsigned int CamelCasePropertyNamesContractResolver_TypeDefinitionIndex = 6959;
+	inline static constexpr unsigned int CamelCasePropertyNamesContractResolver_TypeDefinitionIndex = 6963;
 
 	class CamelCasePropertyNamesContractResolver : public ::Newtonsoft::Json::Serialization::DefaultContractResolver
 	{

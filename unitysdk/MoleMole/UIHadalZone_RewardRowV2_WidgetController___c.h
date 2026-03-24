@@ -5,24 +5,24 @@
 namespace MoleMole { class UIItemIconBtnWidgetController; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8C21E30)
-#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8C21E70)
-#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___C___CLEARPREVS_B__16_0_OFFSET UNITYSDK_OFFSET(0x8C21E80)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6C7C080)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6C7C0C0)
+#define MOLEMOLE_UIHADALZONE_REWARDROWV2_WIDGETCONTROLLER___C___CLEARPREVS_B__16_0_OFFSET UNITYSDK_OFFSET(0x6C7C0D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHadalZone_RewardRowV2_WidgetController___c_TypeDefinitionIndex = 41648;
+	inline static constexpr unsigned int UIHadalZone_RewardRowV2_WidgetController___c_TypeDefinitionIndex = 51697;
 
 	class UIHadalZone_RewardRowV2_WidgetController___c : public ::System::Object
 	{
 	public:
 		static ::System::Action_1<::MoleMole::UIItemIconBtnWidgetController*>** StaticGet___9__16_0()
 		{
-			return (::System::Action_1<::MoleMole::UIItemIconBtnWidgetController*>**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_RewardRowV2_WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3EFD0);
+			return (::System::Action_1<::MoleMole::UIItemIconBtnWidgetController*>**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_RewardRowV2_WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x41C70);
 		}
 		static ::MoleMole::UIHadalZone_RewardRowV2_WidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHadalZone_RewardRowV2_WidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_RewardRowV2_WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3EFD8);
+			return (::MoleMole::UIHadalZone_RewardRowV2_WidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHadalZone_RewardRowV2_WidgetController___c_TypeDefinitionIndex)->GetStaticField(0x41C78);
 		}
 
 		static ::System::Void _cctor()

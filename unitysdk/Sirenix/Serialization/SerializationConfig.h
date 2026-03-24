@@ -5,25 +5,25 @@
 namespace Sirenix::Serialization { class DebugContext; }
 namespace Sirenix::Serialization { class ISerializationPolicy; }
 
-#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_GET_DEBUGCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B103200)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_GET_SERIALIZATIONPOLICY_OFFSET UNITYSDK_OFFSET(0x1B103050)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_RESETTODEFAULT_OFFSET UNITYSDK_OFFSET(0x1B102F70)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_SET_DEBUGCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B103300)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_SET_SERIALIZATIONPOLICY_OFFSET UNITYSDK_OFFSET(0x1B103150)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1B102F40)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_GET_DEBUGCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B71ACE0)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_GET_SERIALIZATIONPOLICY_OFFSET UNITYSDK_OFFSET(0x1B71AB30)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_RESETTODEFAULT_OFFSET UNITYSDK_OFFSET(0x1B71AA50)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_SET_DEBUGCONTEXT_OFFSET UNITYSDK_OFFSET(0x1B71ADE0)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG_SET_SERIALIZATIONPOLICY_OFFSET UNITYSDK_OFFSET(0x1B71AC30)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x1B71AA20)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int SerializationConfig_TypeDefinitionIndex = 7392;
+	inline static constexpr unsigned int SerializationConfig_TypeDefinitionIndex = 7397;
 
 	class SerializationConfig : public ::System::Object
 	{
 	public:
 		::System::Object* LOCK; // 0x10
-		::Sirenix::Serialization::ISerializationPolicy* serializationPolicy; // 0x18
-		::Sirenix::Serialization::DebugContext* debugContext; // 0x20
-		::System::Boolean AllowDeserializeInvalidData; // 0x28
-		::System::Boolean SharedDictionaryComparer; // 0x29
+		::Sirenix::Serialization::DebugContext* debugContext; // 0x18
+		::Sirenix::Serialization::ISerializationPolicy* serializationPolicy; // 0x20
+		::System::Boolean SharedDictionaryComparer; // 0x28
+		::System::Boolean AllowDeserializeInvalidData; // 0x29
 
 		::System::Void _ctor()
 		{

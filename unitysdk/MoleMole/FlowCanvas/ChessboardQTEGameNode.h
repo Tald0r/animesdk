@@ -9,25 +9,25 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_ONQTEFINISHED_OFFSET UNITYSDK_OFFSET(0x141CA460)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_ONQTESTARTFAILED_OFFSET UNITYSDK_OFFSET(0x141CA3D0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x141C9E80)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_START_OFFSET UNITYSDK_OFFSET(0x141C9FE0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x141CA640)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x141CA660)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_ONQTEFINISHED_OFFSET UNITYSDK_OFFSET(0xA4F0620)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_ONQTESTARTFAILED_OFFSET UNITYSDK_OFFSET(0xA4F0590)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA4F0030)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE_START_OFFSET UNITYSDK_OFFSET(0xA4F01A0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA4F0800)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDQTEGAMENODE__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0xA4F0820)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardQTEGameNode_TypeDefinitionIndex = 54199;
+	inline static constexpr unsigned int ChessboardQTEGameNode_TypeDefinitionIndex = 39989;
 
 	class ChessboardQTEGameNode : public ::FlowCanvas::FlowNode
 	{
 	public:
-		::FlowCanvas::FlowInput* _start; // 0xA8
-		::FlowCanvas::FlowOutput* _onStart; // 0xB0
-		::FlowCanvas::FlowOutput* _onFail; // 0xB8
-		::FlowCanvas::ValueInput_1<::System::String*>* _qteKey; // 0xC0
-		::FlowCanvas::FlowOutput* _onSuccess; // 0xC8
+		::FlowCanvas::FlowOutput* _onStart; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::String*>* _qteKey; // 0xB0
+		::FlowCanvas::FlowOutput* _onSuccess; // 0xB8
+		::FlowCanvas::FlowInput* _start; // 0xC0
+		::FlowCanvas::FlowOutput* _onFail; // 0xC8
 		::System::Boolean _isRunning; // 0xD0
 
 		::System::Void _ctor()

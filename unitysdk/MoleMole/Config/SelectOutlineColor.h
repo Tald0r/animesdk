@@ -6,7 +6,7 @@ namespace UnityEngine { class Gradient; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SelectOutlineColor_TypeDefinitionIndex = 55476;
+	inline static constexpr unsigned int SelectOutlineColor_TypeDefinitionIndex = 51306;
 
 	struct alignas(8) SelectOutlineColor
 	{

@@ -14,38 +14,38 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCCB0AB0)
-#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCCB0AC0)
-#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCCB1240)
-#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCCB16E0)
-#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCCB16A0)
+#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xACDF9A0)
+#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xACDF9B0)
+#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xACE0130)
+#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xACE05D0)
+#define MOLEMOLE_CONFIGUICOMMON_DAMAGETEXT_CONFIGUICOMMON_DAMAGETEXT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xACE0590)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex = 61698;
+	inline static constexpr unsigned int ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex = 78429;
 
 	class ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::ConfigUICommon_DamageText*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::MoleMole::ConfigSpecialDamageText>*>** StaticGet_CachedSerializer4()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::Single>*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::MoleMole::ConfigSpecialDamageText>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36520);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x391D0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::Foundation::AssetPath>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::Foundation::AssetPath>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36528);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::Foundation::AssetPath>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x391D8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::String*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36530);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x391E0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::MoleMole::ConfigSpecialDamageText>*>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::MoleMole::ConfigSpecialDamageText>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x391E8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::DamageElementType, ::System::String*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::DamageElementType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36538);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::Single>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::SpecialDamageTextType, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36540);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::DamageElementType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigUICommon_DamageText_ConfigUICommon_DamageText_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x391F0);
 		}
 
 		::System::Void _ctor()

@@ -6,7 +6,7 @@ namespace UnityEngine::NAPRenderPipeline0 { class ScopedCommandBuffer; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int DeferredShadingPass___c__DisplayClass27_0_TypeDefinitionIndex = 5820;
+	inline static constexpr unsigned int DeferredShadingPass___c__DisplayClass27_0_TypeDefinitionIndex = 5822;
 
 	struct alignas(8) DeferredShadingPass___c__DisplayClass27_0
 	{

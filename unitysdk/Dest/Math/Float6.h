@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define DEST_MATH_FLOAT6_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x98A1A0)
-#define DEST_MATH_FLOAT6_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x98A200)
+#define DEST_MATH_FLOAT6_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x9C0270)
+#define DEST_MATH_FLOAT6_SET_ITEM_OFFSET UNITYSDK_OFFSET(0x9C02D0)
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int Float6_TypeDefinitionIndex = 31651;
+	inline static constexpr unsigned int Float6_TypeDefinitionIndex = 32605;
 
 	struct alignas(4) Float6
 	{

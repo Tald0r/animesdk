@@ -7,7 +7,7 @@ namespace UnityEngine { class MonoBehaviour; }
 
 namespace TMPro
 {
-	inline static constexpr unsigned int TweenRunner_1_TypeDefinitionIndex = 35926;
+	inline static constexpr unsigned int TweenRunner_1_TypeDefinitionIndex = 36946;
 
 	template <typename T>
 	class TweenRunner_1 : public ::System::Object

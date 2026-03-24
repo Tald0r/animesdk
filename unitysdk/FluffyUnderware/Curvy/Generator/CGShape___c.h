@@ -5,24 +5,24 @@
 namespace FluffyUnderware::Curvy::Generator { class SamplePointsMaterialGroup; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGSHAPE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ABE40B0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGSHAPE___C__COPY_B__53_0_OFFSET UNITYSDK_OFFSET(0x1ABE4100)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGSHAPE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABE40F0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGSHAPE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B1F4F70)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGSHAPE___C__COPY_B__53_0_OFFSET UNITYSDK_OFFSET(0x1B1F4FC0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CGSHAPE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1F4FB0)
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int CGShape___c_TypeDefinitionIndex = 35774;
+	inline static constexpr unsigned int CGShape___c_TypeDefinitionIndex = 36794;
 
 	class CGShape___c : public ::System::Object
 	{
 	public:
 		static ::FluffyUnderware::Curvy::Generator::CGShape___c** StaticGet___9()
 		{
-			return (::FluffyUnderware::Curvy::Generator::CGShape___c**)Il2CppClass::FromTypeDefinitionIndex(CGShape___c_TypeDefinitionIndex)->GetStaticField(0x25270);
+			return (::FluffyUnderware::Curvy::Generator::CGShape___c**)Il2CppClass::FromTypeDefinitionIndex(CGShape___c_TypeDefinitionIndex)->GetStaticField(0x26CA0);
 		}
 		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::SamplePointsMaterialGroup*, ::FluffyUnderware::Curvy::Generator::SamplePointsMaterialGroup*>** StaticGet___9__53_0()
 		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::SamplePointsMaterialGroup*, ::FluffyUnderware::Curvy::Generator::SamplePointsMaterialGroup*>**)Il2CppClass::FromTypeDefinitionIndex(CGShape___c_TypeDefinitionIndex)->GetStaticField(0x25278);
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::SamplePointsMaterialGroup*, ::FluffyUnderware::Curvy::Generator::SamplePointsMaterialGroup*>**)Il2CppClass::FromTypeDefinitionIndex(CGShape___c_TypeDefinitionIndex)->GetStaticField(0x26CA8);
 		}
 
 		static ::System::Void _cctor()

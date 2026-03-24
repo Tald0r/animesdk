@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIHANDBOOKSPECIALTRAINITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA932150)
-#define MOLEMOLE_UIHANDBOOKSPECIALTRAINITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__SHOWINNER_B__0_OFFSET UNITYSDK_OFFSET(0xA932160)
+#define MOLEMOLE_UIHANDBOOKSPECIALTRAINITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9D1F210)
+#define MOLEMOLE_UIHANDBOOKSPECIALTRAINITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS22_0__SHOWINNER_B__0_OFFSET UNITYSDK_OFFSET(0x9D1F220)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookSpecialTrainItemRowWidgetController___c__DisplayClass22_0_TypeDefinitionIndex = 57459;
+	inline static constexpr unsigned int UIHandBookSpecialTrainItemRowWidgetController___c__DisplayClass22_0_TypeDefinitionIndex = 40238;
 
 	class UIHandBookSpecialTrainItemRowWidgetController___c__DisplayClass22_0 : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int GraphicsFenceType_TypeDefinitionIndex = 6185;
+	inline static constexpr unsigned int GraphicsFenceType_TypeDefinitionIndex = 6189;
 
 	enum class GraphicsFenceType : ::System::Int32
 	{

@@ -5,11 +5,11 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLERCONTEXT_AVATARFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xD00C580)
+#define MOLEMOLE_UIPLAYERSKINSWITCHROLECARDWIDGETCONTROLLERCONTEXT_AVATARFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xBE6ACA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerSkinSwitchRoleCardWidgetControllerContext_AvatarForm_TypeDefinitionIndex = 41590;
+	inline static constexpr unsigned int UIPlayerSkinSwitchRoleCardWidgetControllerContext_AvatarForm_TypeDefinitionIndex = 58835;
 
 	class UIPlayerSkinSwitchRoleCardWidgetControllerContext_AvatarForm : public ::MoleMole::UIControllerContextBase
 	{

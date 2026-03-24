@@ -14,32 +14,32 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 template <typename T> class Class_2_0D31A1661D004892;
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_D8C4E8DC8CCE7C83_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x9BB4480)
-#define CLASS_2_D8C4E8DC8CCE7C83_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9BB4960)
-#define CLASS_2_D8C4E8DC8CCE7C83_METHOD_2_DE52BD42C4B0B772_OFFSET UNITYSDK_OFFSET(0x9BB47D0)
-#define CLASS_2_D8C4E8DC8CCE7C83__CTOR_OFFSET UNITYSDK_OFFSET(0x9BB4950)
+#define CLASS_2_D8C4E8DC8CCE7C83_METHOD_2_78C5AA85812E15F5_OFFSET UNITYSDK_OFFSET(0x6466100)
+#define CLASS_2_D8C4E8DC8CCE7C83_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x64665E0)
+#define CLASS_2_D8C4E8DC8CCE7C83_METHOD_2_DE52BD42C4B0B772_OFFSET UNITYSDK_OFFSET(0x6466450)
+#define CLASS_2_D8C4E8DC8CCE7C83__CTOR_OFFSET UNITYSDK_OFFSET(0x64665D0)
 
-inline static constexpr unsigned int Class_2_D8C4E8DC8CCE7C83_TypeDefinitionIndex = 67726;
+inline static constexpr unsigned int Class_2_D8C4E8DC8CCE7C83_TypeDefinitionIndex = 55944;
 
 class Class_2_D8C4E8DC8CCE7C83 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::RectTransform* Field_2_8; // 0x18
-	::MoleMole::UIGeneralButtonController* Field_2_7; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_6; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UICinemaRewardLevelWidgetController*>* Field_2_12; // 0x30
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
-	::UnityEngine::RectTransform* Field_2_9; // 0x48
+	::MonoUITableScrollV2* Field_2_1; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UICinemaRewardLevelWidgetController*>* Field_2_12; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_6; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x40
+	::MoleMole::UIGeneralButtonController* Field_2_7; // 0x48
 	::Class_2_A8F5ABF31E066ED4* Field_2_13; // 0x50
-	::UnityEngine::GameObject* Field_2_10; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x60
-	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x68
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x70
-	::MonoUITableScrollV2* Field_2_1; // 0x78
-	::Class_2_0D31A1661D004892<::Class_2_D8C4E8DC8CCE7C83_Class_2_C07550350AA0D88F*>* Field_2_11; // 0x80
+	::UnityEngine::RectTransform* Field_2_9; // 0x58
+	::UnityEngine::GameObject* Field_2_10; // 0x60
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x68
+	::Class_2_0D31A1661D004892<::Class_2_D8C4E8DC8CCE7C83_Class_2_C07550350AA0D88F*>* Field_2_11; // 0x70
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x78
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x80
 
 	::System::Void _ctor()
 	{

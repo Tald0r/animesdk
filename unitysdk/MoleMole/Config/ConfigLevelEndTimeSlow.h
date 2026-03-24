@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGLEVELENDTIMESLOW__CTOR_OFFSET UNITYSDK_OFFSET(0xCC980F0)
+#define MOLEMOLE_CONFIG_CONFIGLEVELENDTIMESLOW__CTOR_OFFSET UNITYSDK_OFFSET(0xACC6080)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLevelEndTimeSlow_TypeDefinitionIndex = 49473;
+	inline static constexpr unsigned int ConfigLevelEndTimeSlow_TypeDefinitionIndex = 57290;
 
 	class ConfigLevelEndTimeSlow : public ::System::Object
 	{

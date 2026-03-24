@@ -5,18 +5,18 @@
 namespace MoleMole { class UIBuffListItemRowWidgetController; }
 namespace MoleMole { class UIBuffListItemRowWidgetController_BuffListItemData; }
 
-#define MOLEMOLE_UIBUFFLISTITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCC52ED0)
-#define MOLEMOLE_UIBUFFLISTITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS10_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xCC52EE0)
+#define MOLEMOLE_UIBUFFLISTITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD9B29C0)
+#define MOLEMOLE_UIBUFFLISTITEMROWWIDGETCONTROLLER___C__DISPLAYCLASS10_0__ONSCROLLITEMUPDATE_B__0_OFFSET UNITYSDK_OFFSET(0xD9B29D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBuffListItemRowWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 49759;
+	inline static constexpr unsigned int UIBuffListItemRowWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 69683;
 
 	class UIBuffListItemRowWidgetController___c__DisplayClass10_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIBuffListItemRowWidgetController_BuffListItemData* _data; // 0x10
-		::MoleMole::UIBuffListItemRowWidgetController* __4__this; // 0x18
+		::MoleMole::UIBuffListItemRowWidgetController* __4__this; // 0x10
+		::MoleMole::UIBuffListItemRowWidgetController_BuffListItemData* _data; // 0x18
 
 		::System::Void _ctor()
 		{

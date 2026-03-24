@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIBABELTOWERREWARDLISTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB90D600)
+#define MOLEMOLE_UIBABELTOWERREWARDLISTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAC2DD20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBabelTowerRewardListContext_TypeDefinitionIndex = 49697;
+	inline static constexpr unsigned int UIBabelTowerRewardListContext_TypeDefinitionIndex = 58507;
 
 	class UIBabelTowerRewardListContext : public ::MoleMole::UIControllerContextBase
 	{

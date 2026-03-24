@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_2_6D99A03C58ED2B6E_4;
+class Class_2_6D99A03C58ED2B6E;
 
-#define MOLEMOLE_UIWORKBENCHINFORMATIONDETAILDIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA08EB70)
+#define MOLEMOLE_UIWORKBENCHINFORMATIONDETAILDIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9721B80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchInformationDetailDialogPopWindowController_Context_TypeDefinitionIndex = 65979;
+	inline static constexpr unsigned int UIWorkBenchInformationDetailDialogPopWindowController_Context_TypeDefinitionIndex = 55121;
 
 	class UIWorkBenchInformationDetailDialogPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_2_6D99A03C58ED2B6E_4* template_; // 0x28
+		::Class_2_6D99A03C58ED2B6E* template_; // 0x28
 
 		::System::Void _ctor()
 		{

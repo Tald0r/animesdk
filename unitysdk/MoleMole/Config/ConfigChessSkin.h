@@ -9,13 +9,13 @@ namespace MoleMole::Config { class ConfigPlayerOnChessPiece; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSSKIN_GETPLAYERONSHEETCONFIG_OFFSET UNITYSDK_OFFSET(0x804A310)
-#define MOLEMOLE_CONFIG_CONFIGCHESSSKIN_ISPLAYERONSTATECONFIGUSEDEFAULT_OFFSET UNITYSDK_OFFSET(0x804A500)
-#define MOLEMOLE_CONFIG_CONFIGCHESSSKIN__CTOR_OFFSET UNITYSDK_OFFSET(0x804A620)
+#define MOLEMOLE_CONFIG_CONFIGCHESSSKIN_GETPLAYERONSHEETCONFIG_OFFSET UNITYSDK_OFFSET(0x9CFCD50)
+#define MOLEMOLE_CONFIG_CONFIGCHESSSKIN_ISPLAYERONSTATECONFIGUSEDEFAULT_OFFSET UNITYSDK_OFFSET(0x9CFCF30)
+#define MOLEMOLE_CONFIG_CONFIGCHESSSKIN__CTOR_OFFSET UNITYSDK_OFFSET(0x9CFD050)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessSkin_TypeDefinitionIndex = 40608;
+	inline static constexpr unsigned int ConfigChessSkin_TypeDefinitionIndex = 72711;
 
 	class ConfigChessSkin : public ::System::Object
 	{
@@ -23,8 +23,8 @@ namespace MoleMole::Config
 		// static const ::System::String* DefaultString; // 0x0
 		::System::String* enterSkinTextureAnimKey; // 0x10
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigPlayerOnChessPiece*>* playerOnPrevAnimDict; // 0x18
-		::MoleMole::Config::ConfigPlayerOnChessPiece* _defaultPiece; // 0x20
-		::System::String* exitSKinTextureAnimKey; // 0x28
+		::System::String* exitSKinTextureAnimKey; // 0x20
+		::MoleMole::Config::ConfigPlayerOnChessPiece* _defaultPiece; // 0x28
 
 		::System::Void _ctor()
 		{

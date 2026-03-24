@@ -5,11 +5,11 @@
 namespace ParadoxNotion { class DynamicParameterDefinition; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FLOWCANVAS_MACROS_MACRO_DERIVEDSERIALIZATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A176CC0)
+#define FLOWCANVAS_MACROS_MACRO_DERIVEDSERIALIZATIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x1A71F530)
 
 namespace FlowCanvas::Macros
 {
-	inline static constexpr unsigned int Macro_DerivedSerializationData_TypeDefinitionIndex = 25869;
+	inline static constexpr unsigned int Macro_DerivedSerializationData_TypeDefinitionIndex = 27023;
 
 	class Macro_DerivedSerializationData : public ::System::Object
 	{

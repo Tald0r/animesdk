@@ -5,11 +5,11 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_2E4E5AFB9A71CC38_METHOD_1_C7E6EA7E7C8F6152_OFFSET UNITYSDK_OFFSET(0x6D93570)
-#define CLASS_1_2E4E5AFB9A71CC38_METHOD_1_D09831639F615812_OFFSET UNITYSDK_OFFSET(0x6D93720)
-#define CLASS_1_2E4E5AFB9A71CC38__CTOR_OFFSET UNITYSDK_OFFSET(0x6D93510)
+#define CLASS_1_2E4E5AFB9A71CC38_METHOD_1_C7E6EA7E7C8F6152_OFFSET UNITYSDK_OFFSET(0xAFC6400)
+#define CLASS_1_2E4E5AFB9A71CC38_METHOD_1_D09831639F615812_OFFSET UNITYSDK_OFFSET(0xAFC6380)
+#define CLASS_1_2E4E5AFB9A71CC38__CTOR_OFFSET UNITYSDK_OFFSET(0xAFC6320)
 
-inline static constexpr unsigned int Class_1_2E4E5AFB9A71CC38_TypeDefinitionIndex = 48648;
+inline static constexpr unsigned int Class_1_2E4E5AFB9A71CC38_TypeDefinitionIndex = 38844;
 
 class Class_1_2E4E5AFB9A71CC38 : public ::System::Object
 {
@@ -21,13 +21,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_2E4E5AFB9A71CC38__CTOR_OFFSET))(this);
 	}
 
-	::System::Boolean Method_1_C7E6EA7E7C8F6152(::System::Int32 a1)
-	{
-		return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_2E4E5AFB9A71CC38_METHOD_1_C7E6EA7E7C8F6152_OFFSET))(this, a1);
-	}
-
 	::System::Void Method_1_D09831639F615812(::System::Int32 a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_2E4E5AFB9A71CC38_METHOD_1_D09831639F615812_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Method_1_C7E6EA7E7C8F6152(::System::Int32 a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_2E4E5AFB9A71CC38_METHOD_1_C7E6EA7E7C8F6152_OFFSET))(this, a1);
 	}
 };

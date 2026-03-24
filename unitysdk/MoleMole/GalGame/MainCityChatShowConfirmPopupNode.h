@@ -8,12 +8,12 @@ namespace MoleMole { class UIMainCityChatPlayContext; }
 namespace MoleMole::GalGame { class MainCityChatBranchItem; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xE106740)
-#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE1066E0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0x7A6AC60)
+#define MOLEMOLE_GALGAME_MAINCITYCHATSHOWCONFIRMPOPUPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7A6AC00)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatShowConfirmPopupNode_TypeDefinitionIndex = 40249;
+	inline static constexpr unsigned int MainCityChatShowConfirmPopupNode_TypeDefinitionIndex = 45122;
 
 	class MainCityChatShowConfirmPopupNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
 	{

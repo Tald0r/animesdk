@@ -6,18 +6,18 @@ namespace MoleMole { class UIComicPageController; }
 namespace MoleMole::Comic { class MonoComicEventBase; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS368_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8068660)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS368_0__TRIGGERCLEAREVENT_B__0_OFFSET UNITYSDK_OFFSET(0x8068670)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS368_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAC43AA0)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS368_0__TRIGGERCLEAREVENT_B__0_OFFSET UNITYSDK_OFFSET(0xAC43AB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicPageController___c__DisplayClass368_0_TypeDefinitionIndex = 45645;
+	inline static constexpr unsigned int UIComicPageController___c__DisplayClass368_0_TypeDefinitionIndex = 62528;
 
 	class UIComicPageController___c__DisplayClass368_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIComicPageController* __4__this; // 0x10
-		::System::Collections::Generic::List_1<::MoleMole::Comic::MonoComicEventBase*>* eventsToClearList; // 0x18
+		::System::Collections::Generic::List_1<::MoleMole::Comic::MonoComicEventBase*>* eventsToClearList; // 0x10
+		::MoleMole::UIComicPageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

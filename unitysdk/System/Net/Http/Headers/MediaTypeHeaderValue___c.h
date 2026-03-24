@@ -5,24 +5,24 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace System::Net::Http::Headers { class NameValueHeaderValue; }
 
-#define SYSTEM_NET_HTTP_HEADERS_MEDIATYPEHEADERVALUE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19DEFFB0)
-#define SYSTEM_NET_HTTP_HEADERS_MEDIATYPEHEADERVALUE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19DEFFF0)
-#define SYSTEM_NET_HTTP_HEADERS_MEDIATYPEHEADERVALUE___C__GET_CHARSET_B__6_0_OFFSET UNITYSDK_OFFSET(0x19DF0000)
+#define SYSTEM_NET_HTTP_HEADERS_MEDIATYPEHEADERVALUE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3D17A0)
+#define SYSTEM_NET_HTTP_HEADERS_MEDIATYPEHEADERVALUE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3D17E0)
+#define SYSTEM_NET_HTTP_HEADERS_MEDIATYPEHEADERVALUE___C__GET_CHARSET_B__6_0_OFFSET UNITYSDK_OFFSET(0x1A3D17F0)
 
 namespace System::Net::Http::Headers
 {
-	inline static constexpr unsigned int MediaTypeHeaderValue___c_TypeDefinitionIndex = 23556;
+	inline static constexpr unsigned int MediaTypeHeaderValue___c_TypeDefinitionIndex = 24239;
 
 	class MediaTypeHeaderValue___c : public ::System::Object
 	{
 	public:
-		static ::System::Net::Http::Headers::MediaTypeHeaderValue___c** StaticGet___9()
-		{
-			return (::System::Net::Http::Headers::MediaTypeHeaderValue___c**)Il2CppClass::FromTypeDefinitionIndex(MediaTypeHeaderValue___c_TypeDefinitionIndex)->GetStaticField(0x1D4D0);
-		}
 		static ::System::Predicate_1<::System::Net::Http::Headers::NameValueHeaderValue*>** StaticGet___9__6_0()
 		{
-			return (::System::Predicate_1<::System::Net::Http::Headers::NameValueHeaderValue*>**)Il2CppClass::FromTypeDefinitionIndex(MediaTypeHeaderValue___c_TypeDefinitionIndex)->GetStaticField(0x1D4D8);
+			return (::System::Predicate_1<::System::Net::Http::Headers::NameValueHeaderValue*>**)Il2CppClass::FromTypeDefinitionIndex(MediaTypeHeaderValue___c_TypeDefinitionIndex)->GetStaticField(0x1DC80);
+		}
+		static ::System::Net::Http::Headers::MediaTypeHeaderValue___c** StaticGet___9()
+		{
+			return (::System::Net::Http::Headers::MediaTypeHeaderValue___c**)Il2CppClass::FromTypeDefinitionIndex(MediaTypeHeaderValue___c_TypeDefinitionIndex)->GetStaticField(0x1DC88);
 		}
 
 		static ::System::Void _cctor()

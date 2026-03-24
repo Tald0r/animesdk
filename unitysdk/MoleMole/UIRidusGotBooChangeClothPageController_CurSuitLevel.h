@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooChangeClothPageController_CurSuitLevel_TypeDefinitionIndex = 66419;
+	inline static constexpr unsigned int UIRidusGotBooChangeClothPageController_CurSuitLevel_TypeDefinitionIndex = 68242;
 
 	enum class UIRidusGotBooChangeClothPageController_CurSuitLevel : ::System::Int32
 	{
-		None = 0,
 		IsSuitTagSet = 3,
 		HasPartSuitTag = 2,
+		None = 0,
 		IsSet = 1,
 	};
 }

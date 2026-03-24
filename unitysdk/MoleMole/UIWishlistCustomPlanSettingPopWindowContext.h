@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xEE5DF20)
+#define MOLEMOLE_UIWISHLISTCUSTOMPLANSETTINGPOPWINDOWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAA84CA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWishlistCustomPlanSettingPopWindowContext_TypeDefinitionIndex = 75942;
+	inline static constexpr unsigned int UIWishlistCustomPlanSettingPopWindowContext_TypeDefinitionIndex = 73769;
 
 	class UIWishlistCustomPlanSettingPopWindowContext : public ::MoleMole::UIControllerContextBase
 	{

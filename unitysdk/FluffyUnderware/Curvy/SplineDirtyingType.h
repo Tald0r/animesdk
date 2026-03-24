@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy
 {
-	inline static constexpr unsigned int SplineDirtyingType_TypeDefinitionIndex = 35674;
+	inline static constexpr unsigned int SplineDirtyingType_TypeDefinitionIndex = 36694;
 
 	enum class SplineDirtyingType : ::System::Int32
 	{

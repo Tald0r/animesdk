@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int ClientType_TypeDefinitionIndex = 18102;
+	inline static constexpr unsigned int ClientType_TypeDefinitionIndex = 18610;
 
 	enum class ClientType : ::System::Int32
 	{

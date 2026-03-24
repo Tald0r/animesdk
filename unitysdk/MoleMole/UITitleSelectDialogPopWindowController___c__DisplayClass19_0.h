@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UITitleSelectDialogPopWindowController; }
 
-#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA75C230)
-#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__SWITCHUSINGRECOMMENDBTNSTATE_B__0_OFFSET UNITYSDK_OFFSET(0xA75C240)
+#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB03800)
+#define MOLEMOLE_UITITLESELECTDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS19_0__SWITCHUSINGRECOMMENDBTNSTATE_B__0_OFFSET UNITYSDK_OFFSET(0xAB03810)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITitleSelectDialogPopWindowController___c__DisplayClass19_0_TypeDefinitionIndex = 73040;
+	inline static constexpr unsigned int UITitleSelectDialogPopWindowController___c__DisplayClass19_0_TypeDefinitionIndex = 79603;
 
 	class UITitleSelectDialogPopWindowController___c__DisplayClass19_0 : public ::System::Object
 	{

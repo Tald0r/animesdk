@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IDestroyable_TypeDefinitionIndex = 7771;
+	inline static constexpr unsigned int IDestroyable_TypeDefinitionIndex = 8186;
 
 	class IDestroyable
 	{

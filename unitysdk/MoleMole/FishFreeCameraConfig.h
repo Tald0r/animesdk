@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/FishCameraConfig.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_FISHFREECAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE46D920)
+#define MOLEMOLE_FISHFREECAMERACONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xD7F58E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FishFreeCameraConfig_TypeDefinitionIndex = 68828;
+	inline static constexpr unsigned int FishFreeCameraConfig_TypeDefinitionIndex = 40745;
 
 	class FishFreeCameraConfig : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CameraRotType_TypeDefinitionIndex = 39849;
+	inline static constexpr unsigned int CameraRotType_TypeDefinitionIndex = 69517;
 
 	enum class CameraRotType : ::System::Int32
 	{

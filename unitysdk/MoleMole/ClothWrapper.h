@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class TextAsset; }
 
-#define MOLEMOLE_CLOTHWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0x15E9BEA0)
+#define MOLEMOLE_CLOTHWRAPPER__CTOR_OFFSET UNITYSDK_OFFSET(0xE2ADD40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ClothWrapper_TypeDefinitionIndex = 53179;
+	inline static constexpr unsigned int ClothWrapper_TypeDefinitionIndex = 55820;
 
 	class ClothWrapper : public ::System::Object
 	{

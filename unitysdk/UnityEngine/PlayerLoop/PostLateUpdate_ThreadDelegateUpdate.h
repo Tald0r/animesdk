@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int PostLateUpdate_ThreadDelegateUpdate_TypeDefinitionIndex = 5664;
+	inline static constexpr unsigned int PostLateUpdate_ThreadDelegateUpdate_TypeDefinitionIndex = 5667;
 
 	struct alignas(1) PostLateUpdate_ThreadDelegateUpdate
 	{

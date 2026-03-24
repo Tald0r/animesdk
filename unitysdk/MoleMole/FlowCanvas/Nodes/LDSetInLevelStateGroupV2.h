@@ -9,20 +9,20 @@ namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::FlowCanvas::Nodes { class LDSetInLevelStateGroupV2_StateGroupKeyValue; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETINLEVELSTATEGROUPV2_BEGIN_OFFSET UNITYSDK_OFFSET(0xE0F49D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETINLEVELSTATEGROUPV2_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE0F48C0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETINLEVELSTATEGROUPV2__CTOR_OFFSET UNITYSDK_OFFSET(0xE0F4CF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETINLEVELSTATEGROUPV2_BEGIN_OFFSET UNITYSDK_OFFSET(0x7A596D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETINLEVELSTATEGROUPV2_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7A595C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETINLEVELSTATEGROUPV2__CTOR_OFFSET UNITYSDK_OFFSET(0x7A599E0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSetInLevelStateGroupV2_TypeDefinitionIndex = 58315;
+	inline static constexpr unsigned int LDSetInLevelStateGroupV2_TypeDefinitionIndex = 68984;
 
 	class LDSetInLevelStateGroupV2 : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::ValueInput_1<::System::Collections::Generic::List_1<::MoleMole::FlowCanvas::Nodes::LDSetInLevelStateGroupV2_StateGroupKeyValue*>*>* StateGroupSettings; // 0xA8
-		::FlowCanvas::FlowInput* input; // 0xB0
-		::FlowCanvas::FlowOutput* output; // 0xB8
+		::FlowCanvas::FlowOutput* output; // 0xB0
+		::FlowCanvas::FlowInput* input; // 0xB8
 
 		::System::Void _ctor()
 		{

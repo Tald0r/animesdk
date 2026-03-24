@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_DESIGNDATAPART__CTOR_OFFSET UNITYSDK_OFFSET(0x1A59A8D0)
+#define FOUNDATION_DESIGNDATAPART__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB72B70)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int DesignDataPart_TypeDefinitionIndex = 8175;
+	inline static constexpr unsigned int DesignDataPart_TypeDefinitionIndex = 7800;
 
 	class DesignDataPart : public ::System::Object
 	{

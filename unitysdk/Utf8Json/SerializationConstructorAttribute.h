@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define UTF8JSON_SERIALIZATIONCONSTRUCTORATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0F2A30)
+#define UTF8JSON_SERIALIZATIONCONSTRUCTORATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B709540)
 
 namespace Utf8Json
 {
-	inline static constexpr unsigned int SerializationConstructorAttribute_TypeDefinitionIndex = 81723;
+	inline static constexpr unsigned int SerializationConstructorAttribute_TypeDefinitionIndex = 83764;
 
 	class SerializationConstructorAttribute : public ::System::Attribute
 	{

@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIPhotoWallEditModeWidgetController; }
 
-#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS56_0__CTOR_OFFSET UNITYSDK_OFFSET(0x68DF210)
+#define MOLEMOLE_UIPHOTOWALLEDITMODEWIDGETCONTROLLER___C__DISPLAYCLASS56_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8679120)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhotoWallEditModeWidgetController___c__DisplayClass56_0_TypeDefinitionIndex = 63201;
+	inline static constexpr unsigned int UIPhotoWallEditModeWidgetController___c__DisplayClass56_0_TypeDefinitionIndex = 44706;
 
 	class UIPhotoWallEditModeWidgetController___c__DisplayClass56_0 : public ::System::Object
 	{

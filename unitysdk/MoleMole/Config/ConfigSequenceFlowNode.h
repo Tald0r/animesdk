@@ -4,12 +4,12 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGSEQUENCEFLOWNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xEC37660)
-#define MOLEMOLE_CONFIG_CONFIGSEQUENCEFLOWNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC37780)
+#define MOLEMOLE_CONFIG_CONFIGSEQUENCEFLOWNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCAF34E0)
+#define MOLEMOLE_CONFIG_CONFIGSEQUENCEFLOWNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCAF3600)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSequenceFlowNode_TypeDefinitionIndex = 61999;
+	inline static constexpr unsigned int ConfigSequenceFlowNode_TypeDefinitionIndex = 41429;
 
 	class ConfigSequenceFlowNode : public ::MoleMole::Config::ConfigUIBaseFlowNode
 	{

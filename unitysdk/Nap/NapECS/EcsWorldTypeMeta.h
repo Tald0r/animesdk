@@ -6,7 +6,7 @@ namespace System { class Type; }
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsWorldTypeMeta_TypeDefinitionIndex = 34189;
+	inline static constexpr unsigned int EcsWorldTypeMeta_TypeDefinitionIndex = 35200;
 
 	struct alignas(8) EcsWorldTypeMeta
 	{

@@ -4,7 +4,7 @@
 
 namespace System::Xml::Schema { class XmlSchemaSimpleType; }
 
-#define SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A375180)
+#define SYSTEM_XML_SCHEMA_XSDSIMPLEVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A938C70)
 
 namespace System::Xml::Schema
 {

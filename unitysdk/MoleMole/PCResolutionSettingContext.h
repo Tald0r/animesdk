@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_PCRESOLUTIONSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x67C8850)
+#define MOLEMOLE_PCRESOLUTIONSETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA47BD00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PCResolutionSettingContext_TypeDefinitionIndex = 41817;
+	inline static constexpr unsigned int PCResolutionSettingContext_TypeDefinitionIndex = 70712;
 
 	class PCResolutionSettingContext : public ::MoleMole::SystemSettingContextBase
 	{

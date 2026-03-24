@@ -8,22 +8,22 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE0EF2E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0xE0EF470)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xE0EF490)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT__REGISTERPORTS_B__5_1_OFFSET UNITYSDK_OFFSET(0xE0EF4A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7A53F10)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT__CTOR_OFFSET UNITYSDK_OFFSET(0x7A540A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0x7A540C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCREATEDYNAMICSPAWNPOINT__REGISTERPORTS_B__5_1_OFFSET UNITYSDK_OFFSET(0x7A540D0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCreateDynamicSpawnPoint_TypeDefinitionIndex = 52166;
+	inline static constexpr unsigned int LDCreateDynamicSpawnPoint_TypeDefinitionIndex = 49266;
 
 	class LDCreateDynamicSpawnPoint : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::System::String*>* spawnNameInput; // 0xA8
-		::FlowCanvas::FlowOutput* _output; // 0xB0
-		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* rotationInput; // 0xB8
-		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* positionInput; // 0xC0
+		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* rotationInput; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::String*>* spawnNameInput; // 0xB0
+		::FlowCanvas::ValueInput_1<::UnityEngine::Vector3>* positionInput; // 0xB8
+		::FlowCanvas::FlowOutput* _output; // 0xC0
 		::System::Boolean result; // 0xC8
 
 		::System::Void _ctor()

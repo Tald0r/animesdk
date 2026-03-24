@@ -6,12 +6,12 @@ namespace System::Data { class Constraint; }
 namespace System::Data { class DataSet; }
 namespace System::Data { class DataTable; }
 
-#define SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR_ISVALIDCANDIDATE_OFFSET UNITYSDK_OFFSET(0x1AAD7FE0)
-#define SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1AAD7F70)
+#define SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR_ISVALIDCANDIDATE_OFFSET UNITYSDK_OFFSET(0x1B117770)
+#define SYSTEM_DATA_CHILDFOREIGNKEYCONSTRAINTENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1B117700)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int ChildForeignKeyConstraintEnumerator_TypeDefinitionIndex = 35381;
+	inline static constexpr unsigned int ChildForeignKeyConstraintEnumerator_TypeDefinitionIndex = 36401;
 
 	class ChildForeignKeyConstraintEnumerator : public ::System::Data::ForeignKeyConstraintEnumerator
 	{

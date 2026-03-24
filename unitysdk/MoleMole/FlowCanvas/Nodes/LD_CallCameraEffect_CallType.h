@@ -3,7 +3,7 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_CallCameraEffect_CallType_TypeDefinitionIndex = 47441;
+	inline static constexpr unsigned int LD_CallCameraEffect_CallType_TypeDefinitionIndex = 65517;
 
 	enum class LD_CallCameraEffect_CallType : ::System::Int32
 	{

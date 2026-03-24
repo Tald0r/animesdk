@@ -8,7 +8,7 @@ namespace System { class String; }
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int SendEvent_1_TypeDefinitionIndex = 26623;
+	inline static constexpr unsigned int SendEvent_1_TypeDefinitionIndex = 27578;
 
 	template <typename T>
 	class SendEvent_1 : public ::NodeCanvas::Framework::ActionTask_1<::NodeCanvas::Framework::GraphOwner*>

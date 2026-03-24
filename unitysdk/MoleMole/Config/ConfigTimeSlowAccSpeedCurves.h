@@ -6,11 +6,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGTIMESLOWACCSPEEDCURVES__CTOR_OFFSET UNITYSDK_OFFSET(0x8A0C3C0)
+#define MOLEMOLE_CONFIG_CONFIGTIMESLOWACCSPEEDCURVES__CTOR_OFFSET UNITYSDK_OFFSET(0x10AA50B0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTimeSlowAccSpeedCurves_TypeDefinitionIndex = 39475;
+	inline static constexpr unsigned int ConfigTimeSlowAccSpeedCurves_TypeDefinitionIndex = 54658;
 
 	class ConfigTimeSlowAccSpeedCurves : public ::Foundation::MihoyoSerializedScriptableObject
 	{

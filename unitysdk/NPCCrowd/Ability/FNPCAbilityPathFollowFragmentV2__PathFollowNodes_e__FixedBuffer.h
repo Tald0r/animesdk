@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int FNPCAbilityPathFollowFragmentV2__PathFollowNodes_e__FixedBuffer_TypeDefinitionIndex = 40743;
+	inline static constexpr unsigned int FNPCAbilityPathFollowFragmentV2__PathFollowNodes_e__FixedBuffer_TypeDefinitionIndex = 54840;
 
 	struct alignas(4) FNPCAbilityPathFollowFragmentV2__PathFollowNodes_e__FixedBuffer
 	{

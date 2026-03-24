@@ -3,12 +3,12 @@
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int IntervalBoundType_TypeDefinitionIndex = 9076;
+	inline static constexpr unsigned int IntervalBoundType_TypeDefinitionIndex = 9019;
 
 	enum class IntervalBoundType : ::System::Byte
 	{
-		Open = 0x0,
-		Exclusive = 0x1,
 		Inclusive = 0x2,
+		Exclusive = 0x1,
+		Open = 0x0,
 	};
 }

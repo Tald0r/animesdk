@@ -4,18 +4,18 @@
 
 namespace MoleMole::Arcade::CompanionProject { class CpSkillEffectData; }
 
-#define CLASS_1_6D457B764181CB94___C_METHOD_1_40D9C5B02C8C45F8_OFFSET UNITYSDK_OFFSET(0x1985AB30)
-#define CLASS_1_6D457B764181CB94___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1985AAE0)
-#define CLASS_1_6D457B764181CB94___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1985AB20)
+#define CLASS_1_6D457B764181CB94___C_METHOD_1_40D9C5B02C8C45F8_OFFSET UNITYSDK_OFFSET(0x16AC07E0)
+#define CLASS_1_6D457B764181CB94___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x16AC0790)
+#define CLASS_1_6D457B764181CB94___C__CTOR_OFFSET UNITYSDK_OFFSET(0x16AC07D0)
 
-inline static constexpr unsigned int Class_1_6D457B764181CB94___c_TypeDefinitionIndex = 79753;
+inline static constexpr unsigned int Class_1_6D457B764181CB94___c_TypeDefinitionIndex = 81622;
 
 class Class_1_6D457B764181CB94___c : public ::System::Object
 {
 public:
 	static ::Class_1_6D457B764181CB94___c** StaticGet___9()
 	{
-		return (::Class_1_6D457B764181CB94___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_6D457B764181CB94___c_TypeDefinitionIndex)->GetStaticField(0x44E50);
+		return (::Class_1_6D457B764181CB94___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_6D457B764181CB94___c_TypeDefinitionIndex)->GetStaticField(0x47CA0);
 	}
 
 	static ::System::Void _cctor()

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ESupportedGIType_TypeDefinitionIndex = 5847;
+	inline static constexpr unsigned int ESupportedGIType_TypeDefinitionIndex = 5849;
 
 	enum class ESupportedGIType : ::System::Int32
 	{

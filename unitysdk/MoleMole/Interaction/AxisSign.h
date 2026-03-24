@@ -3,16 +3,16 @@
 
 namespace MoleMole::Interaction
 {
-	inline static constexpr unsigned int AxisSign_TypeDefinitionIndex = 64987;
+	inline static constexpr unsigned int AxisSign_TypeDefinitionIndex = 74419;
 
 	enum class AxisSign : ::System::Int32
 	{
-		Xp = 0,
 		Yn = 3,
-		None = -1,
 		Zp = 4,
-		Zn = 5,
 		Yp = 2,
+		Zn = 5,
+		None = -1,
 		Xn = 1,
+		Xp = 0,
 	};
 }

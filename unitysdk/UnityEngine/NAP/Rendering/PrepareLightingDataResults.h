@@ -4,7 +4,7 @@
 
 namespace UnityEngine::NAP::Rendering
 {
-	inline static constexpr unsigned int PrepareLightingDataResults_TypeDefinitionIndex = 6120;
+	inline static constexpr unsigned int PrepareLightingDataResults_TypeDefinitionIndex = 6123;
 
 	struct alignas(4) PrepareLightingDataResults
 	{

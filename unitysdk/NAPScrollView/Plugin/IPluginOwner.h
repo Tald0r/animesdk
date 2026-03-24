@@ -3,7 +3,7 @@
 
 namespace NAPScrollView::Plugin
 {
-	inline static constexpr unsigned int IPluginOwner_TypeDefinitionIndex = 54126;
+	inline static constexpr unsigned int IPluginOwner_TypeDefinitionIndex = 78202;
 
 	class IPluginOwner
 	{

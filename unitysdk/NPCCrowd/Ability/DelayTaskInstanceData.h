@@ -1,27 +1,35 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 
-#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2CBDE0)
-#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x2CBD80)
-#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x609C240)
-#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x609C300)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2F7600)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x2F1F70)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_CREATE_OFFSET UNITYSDK_OFFSET(0x638E7F0)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x2F75F0)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2F7590)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x2F7620)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x2F7600)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x2F1F70)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_RESET_OFFSET UNITYSDK_OFFSET(0x2F7610)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x2F7680)
+#define NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x638E920)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int DelayTaskInstanceData_TypeDefinitionIndex = 72083;
+	inline static constexpr unsigned int DelayTaskInstanceData_TypeDefinitionIndex = 71937;
 
 	struct alignas(4) DelayTaskInstanceData
 	{
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(DelayTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xDBC0);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(DelayTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0x39B90);
 		}
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(DelayTaskInstanceData_TypeDefinitionIndex)->GetStaticField(0xDBC4);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xEFB41EB2; // 0x0
 		::System::Single timer; // 0x10
 
 		static ::System::Void _cctor()
@@ -29,19 +37,59 @@ namespace NPCCrowd::Ability
 			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA__CCTOR_OFFSET))();
 		}
 
-		::System::UInt32 get_TypeId()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_TYPEID_OFFSET))(this);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_StaticStruct()
+		static ::NPCCrowd::Ability::DelayTaskInstanceData Create()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
+			return ((::NPCCrowd::Ability::DelayTaskInstanceData(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_CREATE_OFFSET))();
 		}
 
-		static ::System::Void RegisterType()
+		::NPCCrowd::Ability::DelayTaskInstanceData DefaultCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_REGISTERTYPE_OFFSET))();
+			return ((::NPCCrowd::Ability::DelayTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::DelayTaskInstanceData CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::DelayTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::DelayTaskInstanceData MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::DelayTaskInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::DelayTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::DelayTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::DelayTaskInstanceData& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::DelayTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_DelayTaskInstanceData__CopyAssign(::NPCCrowd::Ability::DelayTaskInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::DelayTaskInstanceData&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_DELAYTASKINSTANCEDATA__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

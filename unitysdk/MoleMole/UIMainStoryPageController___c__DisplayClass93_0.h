@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS93_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB5DEA0)
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS93_0__TRYOPENNEWTIPS_B__1_OFFSET UNITYSDK_OFFSET(0xAB5FF30)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS93_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA20E910)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS93_0__TRYOPENNEWTIPS_B__1_OFFSET UNITYSDK_OFFSET(0xA2109B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass93_0_TypeDefinitionIndex = 71465;
+	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass93_0_TypeDefinitionIndex = 40410;
 
 	class UIMainStoryPageController___c__DisplayClass93_0 : public ::System::Object
 	{

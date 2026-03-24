@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int Vector3Range_TypeDefinitionIndex = 62941;
+	inline static constexpr unsigned int Vector3Range_TypeDefinitionIndex = 37646;
 
 	struct alignas(4) Vector3Range
 	{

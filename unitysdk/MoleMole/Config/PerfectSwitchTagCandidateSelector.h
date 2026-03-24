@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_PERFECTSWITCHTAGCANDIDATESELECTOR_METHOD_2_77080AF97C54AF23_OFFSET UNITYSDK_OFFSET(0xCDC0630)
-#define MOLEMOLE_CONFIG_PERFECTSWITCHTAGCANDIDATESELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xCDC0850)
+#define MOLEMOLE_CONFIG_PERFECTSWITCHTAGCANDIDATESELECTOR_METHOD_2_77080AF97C54AF23_OFFSET UNITYSDK_OFFSET(0xD0A5680)
+#define MOLEMOLE_CONFIG_PERFECTSWITCHTAGCANDIDATESELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A58A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int PerfectSwitchTagCandidateSelector_TypeDefinitionIndex = 48365;
+	inline static constexpr unsigned int PerfectSwitchTagCandidateSelector_TypeDefinitionIndex = 75986;
 
 	class PerfectSwitchTagCandidateSelector : public ::MoleMole::Config::ConfigTargetSelector
 	{

@@ -3,7 +3,7 @@
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int TransitionType_TypeDefinitionIndex = 36169;
+	inline static constexpr unsigned int TransitionType_TypeDefinitionIndex = 37189;
 
 	enum class TransitionType : ::System::Int32
 	{

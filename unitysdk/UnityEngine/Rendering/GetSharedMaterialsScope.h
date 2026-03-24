@@ -7,24 +7,24 @@ namespace UnityEngine { class Material; }
 namespace UnityEngine { class Renderer; }
 namespace UnityEngine::Profiling { class CustomSampler; }
 
-#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8A2110)
-#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE_GET_MATERIALS_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE__CCTOR_OFFSET UNITYSDK_OFFSET(0x196E20F0)
-#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE__CTOR_OFFSET UNITYSDK_OFFSET(0x8A2100)
+#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8CD1B0)
+#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE_GET_MATERIALS_OFFSET UNITYSDK_OFFSET(0x223870)
+#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE__CCTOR_OFFSET UNITYSDK_OFFSET(0x19B5EA30)
+#define UNITYENGINE_RENDERING_GETSHAREDMATERIALSSCOPE__CTOR_OFFSET UNITYSDK_OFFSET(0x8CD1A0)
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int GetSharedMaterialsScope_TypeDefinitionIndex = 28322;
+	inline static constexpr unsigned int GetSharedMaterialsScope_TypeDefinitionIndex = 29263;
 
 	struct alignas(8) GetSharedMaterialsScope
 	{
-		static ::UnityEngine::Profiling::CustomSampler** StaticGet_m_samplerGetSharedMaterialConstructor()
-		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(GetSharedMaterialsScope_TypeDefinitionIndex)->GetStaticField(0x215C0);
-		}
 		static ::UnityEngine::Profiling::CustomSampler** StaticGet_m_samplerGetSharedMaterialDispose()
 		{
-			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(GetSharedMaterialsScope_TypeDefinitionIndex)->GetStaticField(0x215C8);
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(GetSharedMaterialsScope_TypeDefinitionIndex)->GetStaticField(0x22F00);
+		}
+		static ::UnityEngine::Profiling::CustomSampler** StaticGet_m_samplerGetSharedMaterialConstructor()
+		{
+			return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(GetSharedMaterialsScope_TypeDefinitionIndex)->GetStaticField(0x22F08);
 		}
 		::System::Collections::Generic::List_1<::UnityEngine::Material*>* _materials_k__BackingField; // 0x10
 		::UnityEngine::Renderer* m_cachedRenderer; // 0x18

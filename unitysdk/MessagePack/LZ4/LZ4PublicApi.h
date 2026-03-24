@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MESSAGEPACK_LZ4_LZ4PUBLICAPI_DECODE_OFFSET UNITYSDK_OFFSET(0x1925CFF0)
-#define MESSAGEPACK_LZ4_LZ4PUBLICAPI_ENCODE_OFFSET UNITYSDK_OFFSET(0x1925CF30)
+#define MESSAGEPACK_LZ4_LZ4PUBLICAPI_DECODE_OFFSET UNITYSDK_OFFSET(0x196D95C0)
+#define MESSAGEPACK_LZ4_LZ4PUBLICAPI_ENCODE_OFFSET UNITYSDK_OFFSET(0x196D9500)
 
 namespace MessagePack::LZ4
 {
-	inline static constexpr unsigned int LZ4PublicApi_TypeDefinitionIndex = 26377;
+	inline static constexpr unsigned int LZ4PublicApi_TypeDefinitionIndex = 26633;
 
 	class LZ4PublicApi : public ::System::Object
 	{

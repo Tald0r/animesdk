@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapRightListRowNormalContext_EBgMode_TypeDefinitionIndex = 38533;
+	inline static constexpr unsigned int UIUrbanMapRightListRowNormalContext_EBgMode_TypeDefinitionIndex = 69359;
 
 	enum class UIUrbanMapRightListRowNormalContext_EBgMode : ::System::Int32
 	{
+		Red = 2,
+		Normal = 0,
 		Purple = 1,
 		Blue = 3,
-		Normal = 0,
-		Red = 2,
 	};
 }

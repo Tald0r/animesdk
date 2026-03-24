@@ -3,16 +3,16 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AidAttackType_TypeDefinitionIndex = 76872;
+	inline static constexpr unsigned int AidAttackType_TypeDefinitionIndex = 54715;
 
 	enum class AidAttackType : ::System::Int32
 	{
+		NoEnergyPerfectSwitchAid = 4,
+		ParryAid = 1,
+		BeHitAid = 5,
 		EvadeAid = 3,
 		AssaultAid = 2,
-		NoEnergyPerfectSwitchAid = 4,
-		ChainAid = 6,
-		ParryAid = 1,
 		CommonAid = 0,
-		BeHitAid = 5,
+		ChainAid = 6,
 	};
 }

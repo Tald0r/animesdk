@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UITRIDICEORACLEREWARDLISTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9A29400)
+#define MOLEMOLE_UITRIDICEORACLEREWARDLISTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x88865D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UITriDiceOracleRewardListContext_TypeDefinitionIndex = 71070;
+	inline static constexpr unsigned int UITriDiceOracleRewardListContext_TypeDefinitionIndex = 58055;
 
 	class UITriDiceOracleRewardListContext : public ::MoleMole::UIControllerContextBase
 	{

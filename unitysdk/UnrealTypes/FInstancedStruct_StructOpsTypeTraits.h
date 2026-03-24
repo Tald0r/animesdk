@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/UnrealTypes/StructOpsTraitsBase.h"
+
+#define UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_CANMOVE_OFFSET UNITYSDK_OFFSET(0x1A208470)
+#define UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_HASALLOCATOR_OFFSET UNITYSDK_OFFSET(0x1A208480)
+#define UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_ISPLAINOLDDATA_OFFSET UNITYSDK_OFFSET(0x1A208440)
+#define UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_SHOULDCLONE_OFFSET UNITYSDK_OFFSET(0x1A208450)
+#define UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_SHOULDDISPOSE_OFFSET UNITYSDK_OFFSET(0x1A208460)
+#define UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A208420)
+
+namespace UnrealTypes
+{
+	inline static constexpr unsigned int FInstancedStruct_StructOpsTypeTraits_TypeDefinitionIndex = 24783;
+
+	class FInstancedStruct_StructOpsTypeTraits : public ::UnrealTypes::StructOpsTraitsBase
+	{
+	public:
+		::System::Void _ctor()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS__CTOR_OFFSET))(this);
+		}
+
+		::System::Boolean get_IsPlainOldData()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_ISPLAINOLDDATA_OFFSET))(this);
+		}
+
+		::System::Boolean get_ShouldClone()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_SHOULDCLONE_OFFSET))(this);
+		}
+
+		::System::Boolean get_ShouldDispose()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_SHOULDDISPOSE_OFFSET))(this);
+		}
+
+		::System::Boolean get_CanMove()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_CANMOVE_OFFSET))(this);
+		}
+
+		::System::Boolean get_HasAllocator()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDSTRUCT_STRUCTOPSTYPETRAITS_GET_HASALLOCATOR_OFFSET))(this);
+		}
+	};
+}

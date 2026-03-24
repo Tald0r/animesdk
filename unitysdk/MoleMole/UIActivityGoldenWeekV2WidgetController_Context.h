@@ -4,11 +4,11 @@
 
 class Class_1_FD161B8AFE00CB2F;
 
-#define MOLEMOLE_UIACTIVITYGOLDENWEEKV2WIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB8F16C0)
+#define MOLEMOLE_UIACTIVITYGOLDENWEEKV2WIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB95FEB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityGoldenWeekV2WidgetController_Context_TypeDefinitionIndex = 78647;
+	inline static constexpr unsigned int UIActivityGoldenWeekV2WidgetController_Context_TypeDefinitionIndex = 38967;
 
 	class UIActivityGoldenWeekV2WidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

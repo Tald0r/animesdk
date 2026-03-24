@@ -7,7 +7,7 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Graph___c__201_1_TypeDefinitionIndex = 26030;
+	inline static constexpr unsigned int Graph___c__201_1_TypeDefinitionIndex = 27316;
 
 	template <typename T>
 	class Graph___c__201_1 : public ::System::Object

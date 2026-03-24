@@ -5,22 +5,22 @@
 namespace System { template <typename T> class Predicate_1; }
 namespace UnityEngine { class GameObject; }
 
-#define MB3_TEXTUREBAKER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A387AA0)
-#define MB3_TEXTUREBAKER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A387AE0)
-#define MB3_TEXTUREBAKER___C__PURGENULLSFROMOBJECTSTOCOMBINE_B__101_0_OFFSET UNITYSDK_OFFSET(0x1A387AF0)
+#define MB3_TEXTUREBAKER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A95AAC0)
+#define MB3_TEXTUREBAKER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A95AB00)
+#define MB3_TEXTUREBAKER___C__PURGENULLSFROMOBJECTSTOCOMBINE_B__101_0_OFFSET UNITYSDK_OFFSET(0x1A95AB10)
 
-inline static constexpr unsigned int MB3_TextureBaker___c_TypeDefinitionIndex = 81209;
+inline static constexpr unsigned int MB3_TextureBaker___c_TypeDefinitionIndex = 83250;
 
 class MB3_TextureBaker___c : public ::System::Object
 {
 public:
 	static ::MB3_TextureBaker___c** StaticGet___9()
 	{
-		return (::MB3_TextureBaker___c**)Il2CppClass::FromTypeDefinitionIndex(MB3_TextureBaker___c_TypeDefinitionIndex)->GetStaticField(0x46730);
+		return (::MB3_TextureBaker___c**)Il2CppClass::FromTypeDefinitionIndex(MB3_TextureBaker___c_TypeDefinitionIndex)->GetStaticField(0x48140);
 	}
 	static ::System::Predicate_1<::UnityEngine::GameObject*>** StaticGet___9__101_0()
 	{
-		return (::System::Predicate_1<::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(MB3_TextureBaker___c_TypeDefinitionIndex)->GetStaticField(0x46738);
+		return (::System::Predicate_1<::UnityEngine::GameObject*>**)Il2CppClass::FromTypeDefinitionIndex(MB3_TextureBaker___c_TypeDefinitionIndex)->GetStaticField(0x48148);
 	}
 
 	static ::System::Void _cctor()

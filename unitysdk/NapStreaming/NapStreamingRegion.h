@@ -6,13 +6,13 @@
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define NAPSTREAMING_NAPSTREAMINGREGION_CALCLOADBOUNDS_OFFSET UNITYSDK_OFFSET(0x9BDABE0)
-#define NAPSTREAMING_NAPSTREAMINGREGION_ONENABLE_OFFSET UNITYSDK_OFFSET(0x9BDAA20)
-#define NAPSTREAMING_NAPSTREAMINGREGION__CTOR_OFFSET UNITYSDK_OFFSET(0x9BDAFA0)
+#define NAPSTREAMING_NAPSTREAMINGREGION_CALCLOADBOUNDS_OFFSET UNITYSDK_OFFSET(0x8CDFFF0)
+#define NAPSTREAMING_NAPSTREAMINGREGION_ONENABLE_OFFSET UNITYSDK_OFFSET(0x8CDFE30)
+#define NAPSTREAMING_NAPSTREAMINGREGION__CTOR_OFFSET UNITYSDK_OFFSET(0x8CE03B0)
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NapStreamingRegion_TypeDefinitionIndex = 58424;
+	inline static constexpr unsigned int NapStreamingRegion_TypeDefinitionIndex = 42222;
 
 	class NapStreamingRegion : public ::UnityEngine::MonoBehaviour
 	{

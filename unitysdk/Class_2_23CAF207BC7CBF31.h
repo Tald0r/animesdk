@@ -4,7 +4,7 @@
 
 class Class_1_CC972ED73C1D3B07;
 
-inline static constexpr unsigned int Class_2_23CAF207BC7CBF31_TypeDefinitionIndex = 63307;
+inline static constexpr unsigned int Class_2_23CAF207BC7CBF31_TypeDefinitionIndex = 41461;
 
 template <typename TPlugin>
 class Class_2_23CAF207BC7CBF31 : public ::Class_1_DD5EC22C01FA2117

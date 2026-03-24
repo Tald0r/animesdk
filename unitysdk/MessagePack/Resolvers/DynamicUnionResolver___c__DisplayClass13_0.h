@@ -7,12 +7,12 @@ namespace MessagePack { class UnionAttribute; }
 namespace System::Reflection::Emit { class ILGenerator; }
 template <typename T1, typename T2> class __f__AnonymousType0_2;
 
-#define MESSAGEPACK_RESOLVERS_DYNAMICUNIONRESOLVER___C__DISPLAYCLASS13_0__BUILDDESERIALIZE_B__0_OFFSET UNITYSDK_OFFSET(0x1A267EE0)
-#define MESSAGEPACK_RESOLVERS_DYNAMICUNIONRESOLVER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A267ED0)
+#define MESSAGEPACK_RESOLVERS_DYNAMICUNIONRESOLVER___C__DISPLAYCLASS13_0__BUILDDESERIALIZE_B__0_OFFSET UNITYSDK_OFFSET(0x1A82F870)
+#define MESSAGEPACK_RESOLVERS_DYNAMICUNIONRESOLVER___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A82F860)
 
 namespace MessagePack::Resolvers
 {
-	inline static constexpr unsigned int DynamicUnionResolver___c__DisplayClass13_0_TypeDefinitionIndex = 26592;
+	inline static constexpr unsigned int DynamicUnionResolver___c__DisplayClass13_0_TypeDefinitionIndex = 26248;
 
 	class DynamicUnionResolver___c__DisplayClass13_0 : public ::System::Object
 	{

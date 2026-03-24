@@ -5,7 +5,7 @@
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int AttributeTargetFlags_TypeDefinitionIndex = 7250;
+	inline static constexpr unsigned int AttributeTargetFlags_TypeDefinitionIndex = 7255;
 
 	class AttributeTargetFlags : public ::System::Object
 	{

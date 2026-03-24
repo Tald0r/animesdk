@@ -9,7 +9,7 @@ namespace UnityEngine { class ComputeBuffer; }
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int VisQueryManager_QuerySession_TypeDefinitionIndex = 28796;
+	inline static constexpr unsigned int VisQueryManager_QuerySession_TypeDefinitionIndex = 29742;
 
 	struct alignas(8) VisQueryManager_QuerySession
 	{

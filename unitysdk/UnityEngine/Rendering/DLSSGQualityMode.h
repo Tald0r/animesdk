@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int DLSSGQualityMode_TypeDefinitionIndex = 6125;
+	inline static constexpr unsigned int DLSSGQualityMode_TypeDefinitionIndex = 6128;
 
 	enum class DLSSGQualityMode : ::System::Int32
 	{

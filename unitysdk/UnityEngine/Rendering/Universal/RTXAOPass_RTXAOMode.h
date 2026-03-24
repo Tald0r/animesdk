@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int RTXAOPass_RTXAOMode_TypeDefinitionIndex = 28738;
+	inline static constexpr unsigned int RTXAOPass_RTXAOMode_TypeDefinitionIndex = 29684;
 
 	enum class RTXAOPass_RTXAOMode : ::System::Int32
 	{

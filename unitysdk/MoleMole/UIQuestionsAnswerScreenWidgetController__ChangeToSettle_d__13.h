@@ -10,20 +10,20 @@ namespace MoleMole { class UIQuestionsAnswerScreenSettleContext; }
 namespace MoleMole { class UIQuestionsAnswerScreenWidgetController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__CHANGETOSETTLE_D__13_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3B6740)
-#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__CHANGETOSETTLE_D__13_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__CHANGETOSETTLE_D__13_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x42F5C0)
+#define MOLEMOLE_UIQUESTIONSANSWERSCREENWIDGETCONTROLLER__CHANGETOSETTLE_D__13_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIQuestionsAnswerScreenWidgetController__ChangeToSettle_d__13_TypeDefinitionIndex = 67417;
+	inline static constexpr unsigned int UIQuestionsAnswerScreenWidgetController__ChangeToSettle_d__13_TypeDefinitionIndex = 50055;
 
 	struct alignas(8) UIQuestionsAnswerScreenWidgetController__ChangeToSettle_d__13
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x10
-		::MoleMole::UIQuestionsAnswerScreenWidgetController* __4__this; // 0x20
-		::System::Threading::CancellationToken cts; // 0x28
-		::MoleMole::UIQuestionsAnswerScreenSettleContext* context; // 0x30
-		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x38
+		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x10
+		::System::Threading::CancellationToken cts; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x28
+		::MoleMole::UIQuestionsAnswerScreenWidgetController* __4__this; // 0x38
+		::MoleMole::UIQuestionsAnswerScreenSettleContext* context; // 0x40
 		::System::Int32 __1__state; // 0x48
 
 		::System::Void MoveNext()

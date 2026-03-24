@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Object.h"
 
-#define UNITYENGINE_LOWERRESBLITTEXTURE_LOWERRESBLITTEXTUREDONTSTRIPME_OFFSET UNITYSDK_OFFSET(0x19D170D0)
-#define UNITYENGINE_LOWERRESBLITTEXTURE__CTOR_OFFSET UNITYSDK_OFFSET(0x19D170E0)
+#define UNITYENGINE_LOWERRESBLITTEXTURE_LOWERRESBLITTEXTUREDONTSTRIPME_OFFSET UNITYSDK_OFFSET(0x1A2FD6A0)
+#define UNITYENGINE_LOWERRESBLITTEXTURE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2FD6B0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LowerResBlitTexture_TypeDefinitionIndex = 5392;
+	inline static constexpr unsigned int LowerResBlitTexture_TypeDefinitionIndex = 5395;
 
 	class LowerResBlitTexture : public ::UnityEngine::Object
 	{

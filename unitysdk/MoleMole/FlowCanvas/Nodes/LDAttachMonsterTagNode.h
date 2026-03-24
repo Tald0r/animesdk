@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDATTACHMONSTERTAGNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC72700)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDATTACHMONSTERTAGNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC72860)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDATTACHMONSTERTAGNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0x75711F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDATTACHMONSTERTAGNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7571350)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAttachMonsterTagNode_TypeDefinitionIndex = 78627;
+	inline static constexpr unsigned int LDAttachMonsterTagNode_TypeDefinitionIndex = 72013;
 
 	class LDAttachMonsterTagNode : public ::FlowCanvas::Nodes::CallableActionNode_3<::MoleMole::Battle::Entity*, ::System::String*, ::System::String*>
 	{

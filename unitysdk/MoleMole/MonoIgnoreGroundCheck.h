@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_MONOIGNOREGROUNDCHECK__CTOR_OFFSET UNITYSDK_OFFSET(0x67BE6E0)
+#define MOLEMOLE_MONOIGNOREGROUNDCHECK__CTOR_OFFSET UNITYSDK_OFFSET(0xA472CF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoIgnoreGroundCheck_TypeDefinitionIndex = 66938;
+	inline static constexpr unsigned int MonoIgnoreGroundCheck_TypeDefinitionIndex = 41383;
 
 	class MonoIgnoreGroundCheck : public ::UnityEngine::MonoBehaviour
 	{

@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ParallelTimelineTimeScaleType_TypeDefinitionIndex = 37093;
+	inline static constexpr unsigned int ParallelTimelineTimeScaleType_TypeDefinitionIndex = 38760;
 
 	enum class ParallelTimelineTimeScaleType : ::System::Int32
 	{
-		WorldTimeScale = 0,
 		WorldTimeScaleIgnoreWitch = 1,
+		WorldTimeScale = 0,
 		IgnoreWorldTimeScale = 2,
 	};
 }

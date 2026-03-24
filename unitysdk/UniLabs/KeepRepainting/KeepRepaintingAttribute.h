@@ -5,19 +5,19 @@
 
 namespace System { class String; }
 
-#define UNILABS_KEEPREPAINTING_KEEPREPAINTINGATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B0E4440)
-#define UNILABS_KEEPREPAINTING_KEEPREPAINTINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0E4430)
+#define UNILABS_KEEPREPAINTING_KEEPREPAINTINGATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B6F5050)
+#define UNILABS_KEEPREPAINTING_KEEPREPAINTINGATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6F5040)
 
 namespace UniLabs::KeepRepainting
 {
-	inline static constexpr unsigned int KeepRepaintingAttribute_TypeDefinitionIndex = 82062;
+	inline static constexpr unsigned int KeepRepaintingAttribute_TypeDefinitionIndex = 84103;
 
 	class KeepRepaintingAttribute : public ::System::Attribute
 	{
 	public:
 		::System::String* RepaintIf; // 0x10
-		::System::Single RepaintInterval; // 0x18
-		::UniLabs::Utilities::EditorMode RepaintEditorMode; // 0x1C
+		::UniLabs::Utilities::EditorMode RepaintEditorMode; // 0x18
+		::System::Single RepaintInterval; // 0x1C
 
 		::System::Void _ctor()
 		{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int CubeLightBakeOnly_NamedFace_TypeDefinitionIndex = 28376;
+	inline static constexpr unsigned int CubeLightBakeOnly_NamedFace_TypeDefinitionIndex = 29319;
 
 	enum class CubeLightBakeOnly_NamedFace : ::System::Int32
 	{

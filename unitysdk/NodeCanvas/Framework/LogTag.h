@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int LogTag_TypeDefinitionIndex = 25990;
+	inline static constexpr unsigned int LogTag_TypeDefinitionIndex = 26337;
 
 	class LogTag : public ::System::Object
 	{

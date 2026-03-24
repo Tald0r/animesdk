@@ -18,71 +18,71 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x13F85C30)
-#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x13F85DE0)
-#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0x13F85C40)
-#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x13F87AD0)
-#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x13F88C00)
-#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x13F88BC0)
+#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xF2BF6B0)
+#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xF2BF860)
+#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_READ_OFFSET UNITYSDK_OFFSET(0xF2BF6C0)
+#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xF2C1550)
+#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xF2C2680)
+#define MOLEMOLE_CONFIG_BOXCOLLISIONCONTINUOUSDETECT_BOXCOLLISIONCONTINUOUSDETECT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xF2C2640)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex = 71810;
+	inline static constexpr unsigned int BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex = 80583;
 
 	class BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::BoxCollisionContinuousDetect*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::AttackPatternBindAnimatorState*>*>** StaticGet_CachedSerializer12()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BD90);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigTimeDrivenAttackCollider*>** StaticGet_CachedSerializer10()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigTimeDrivenAttackCollider*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BD98);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::AttackPatternBindAnimatorState*>*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAB0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>** StaticGet_CachedSerializer7()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDA0);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotXZType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAB8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDA8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::AttackPatternBindAnimatorState*>*>** StaticGet_CachedSerializer12()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::AttackPatternBindAnimatorState*>*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDB0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>** StaticGet_CachedSerializer9()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDB8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDC0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDC8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>** StaticGet_CachedSerializer6()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDD0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDD8);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer11()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDE0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDE8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosYType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAC0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::String*>*>** StaticGet_CachedSerializer8()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3BDF0);
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAC8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::AbilityTargetting>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAD0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer11()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAD8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>** StaticGet_CachedSerializer6()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BaseRotYType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAE0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigTimeDrivenAttackCollider*>** StaticGet_CachedSerializer10()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigTimeDrivenAttackCollider*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAE8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAF0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EAF8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EB00);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>** StaticGet_CachedSerializer9()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::GameplayTag>*>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EB08);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>** StaticGet_CachedSerializer5()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigEntityAttackPattern_BasePosXZType>**)Il2CppClass::FromTypeDefinitionIndex(BoxCollisionContinuousDetect_BoxCollisionContinuousDetect_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EB10);
 		}
 
 		::System::Void _ctor()

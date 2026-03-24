@@ -4,11 +4,11 @@
 
 namespace MoleMole::Config { class ConfigHollowChessboard_ChessEffectBaseList; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_TVSWITCHCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xCD07390)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARD_TVSWITCHCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE35F870)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboard_TvSwitchConfig_TypeDefinitionIndex = 59125;
+	inline static constexpr unsigned int ConfigHollowChessboard_TvSwitchConfig_TypeDefinitionIndex = 79809;
 
 	class ConfigHollowChessboard_TvSwitchConfig : public ::System::Object
 	{

@@ -4,7 +4,7 @@
 
 namespace ObservableCollections
 {
-	inline static constexpr unsigned int ISynchronizedViewFilter_2_TypeDefinitionIndex = 24261;
+	inline static constexpr unsigned int ISynchronizedViewFilter_2_TypeDefinitionIndex = 25106;
 
 	template <typename T, typename TView>
 	class ISynchronizedViewFilter_2

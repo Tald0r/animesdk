@@ -2,13 +2,13 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/DisplayMessageBase.h"
 
-#define MOLEMOLE_GETAVATARBANNERSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xF1B4E10)
-#define MOLEMOLE_GETAVATARBANNERSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xF1B4E60)
-#define MOLEMOLE_GETAVATARBANNERSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xF1B4E20)
+#define MOLEMOLE_GETAVATARBANNERSHOW_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0xB98ECD0)
+#define MOLEMOLE_GETAVATARBANNERSHOW_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xB98ED20)
+#define MOLEMOLE_GETAVATARBANNERSHOW__CTOR_OFFSET UNITYSDK_OFFSET(0xB98ECE0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GetAvatarBannerShow_TypeDefinitionIndex = 78574;
+	inline static constexpr unsigned int GetAvatarBannerShow_TypeDefinitionIndex = 38522;
 
 	class GetAvatarBannerShow : public ::MoleMole::DisplayMessageBase
 	{

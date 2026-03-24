@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace UnityEngine { class Material; }
 
-#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B12B8B0)
-#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS24_0__DOOFFSET_B__0_OFFSET UNITYSDK_OFFSET(0x1B12B8C0)
-#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS24_0__DOOFFSET_B__1_OFFSET UNITYSDK_OFFSET(0x1B12B910)
+#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS24_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B7451A0)
+#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS24_0__DOOFFSET_B__0_OFFSET UNITYSDK_OFFSET(0x1B7451B0)
+#define DG_TWEENING_SHORTCUTEXTENSIONS___C__DISPLAYCLASS24_0__DOOFFSET_B__1_OFFSET UNITYSDK_OFFSET(0x1B745200)
 
 namespace DG::Tweening
 {
-	inline static constexpr unsigned int ShortcutExtensions___c__DisplayClass24_0_TypeDefinitionIndex = 24046;
+	inline static constexpr unsigned int ShortcutExtensions___c__DisplayClass24_0_TypeDefinitionIndex = 24870;
 
 	class ShortcutExtensions___c__DisplayClass24_0 : public ::System::Object
 	{

@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ReservedObjectPoolConst_TypeDefinitionIndex = 69090;
+	inline static constexpr unsigned int ReservedObjectPoolConst_TypeDefinitionIndex = 70257;
 
 	class ReservedObjectPoolConst : public ::System::Object
 	{

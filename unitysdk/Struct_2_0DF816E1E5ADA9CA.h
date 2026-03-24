@@ -4,9 +4,9 @@
 #include "unitysdk/MoleMole/InputLogicEventType.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_0DF816E1E5ADA9CA__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3730)
+#define STRUCT_2_0DF816E1E5ADA9CA__CTOR_OFFSET UNITYSDK_OFFSET(0x2F3C30)
 
-inline static constexpr unsigned int Struct_2_0DF816E1E5ADA9CA_TypeDefinitionIndex = 66747;
+inline static constexpr unsigned int Struct_2_0DF816E1E5ADA9CA_TypeDefinitionIndex = 70189;
 
 struct alignas(4) Struct_2_0DF816E1E5ADA9CA
 {

@@ -5,16 +5,16 @@
 
 class DamageTextBGEffect_DamageTextItem;
 
-#define DAMAGETEXTBGEFFECT_DAMAGETEXTEFFECTITEM_UPDATETRANSFORM_OFFSET UNITYSDK_OFFSET(0x1801F260)
-#define DAMAGETEXTBGEFFECT_DAMAGETEXTEFFECTITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x1801F510)
+#define DAMAGETEXTBGEFFECT_DAMAGETEXTEFFECTITEM_UPDATETRANSFORM_OFFSET UNITYSDK_OFFSET(0x18640FA0)
+#define DAMAGETEXTBGEFFECT_DAMAGETEXTEFFECTITEM__CTOR_OFFSET UNITYSDK_OFFSET(0x18641250)
 
-inline static constexpr unsigned int DamageTextBGEffect_DamageTextEffectItem_TypeDefinitionIndex = 27999;
+inline static constexpr unsigned int DamageTextBGEffect_DamageTextEffectItem_TypeDefinitionIndex = 28939;
 
 class DamageTextBGEffect_DamageTextEffectItem : public ::System::Object
 {
 public:
-	::DamageTextBGEffect_DamageTextItem* left; // 0x10
-	::DamageTextBGEffect_DamageTextItem* right; // 0x18
+	::DamageTextBGEffect_DamageTextItem* right; // 0x10
+	::DamageTextBGEffect_DamageTextItem* left; // 0x18
 
 	::System::Void _ctor()
 	{

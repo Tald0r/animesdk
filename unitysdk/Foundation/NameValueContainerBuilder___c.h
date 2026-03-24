@@ -4,20 +4,20 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/ValueTuple_2.h"
 
-#define FOUNDATION_NAMEVALUECONTAINERBUILDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A20B2A0)
-#define FOUNDATION_NAMEVALUECONTAINERBUILDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A20B2E0)
-#define FOUNDATION_NAMEVALUECONTAINERBUILDER___C___CCTOR_B__12_0_OFFSET UNITYSDK_OFFSET(0x1A20B2F0)
+#define FOUNDATION_NAMEVALUECONTAINERBUILDER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A83BD70)
+#define FOUNDATION_NAMEVALUECONTAINERBUILDER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A83BDB0)
+#define FOUNDATION_NAMEVALUECONTAINERBUILDER___C___CCTOR_B__12_0_OFFSET UNITYSDK_OFFSET(0x1A83BDC0)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NameValueContainerBuilder___c_TypeDefinitionIndex = 9062;
+	inline static constexpr unsigned int NameValueContainerBuilder___c_TypeDefinitionIndex = 8809;
 
 	class NameValueContainerBuilder___c : public ::System::Object
 	{
 	public:
 		static ::Foundation::NameValueContainerBuilder___c** StaticGet___9()
 		{
-			return (::Foundation::NameValueContainerBuilder___c**)Il2CppClass::FromTypeDefinitionIndex(NameValueContainerBuilder___c_TypeDefinitionIndex)->GetStaticField(0x7CD0);
+			return (::Foundation::NameValueContainerBuilder___c**)Il2CppClass::FromTypeDefinitionIndex(NameValueContainerBuilder___c_TypeDefinitionIndex)->GetStaticField(0x7D10);
 		}
 
 		static ::System::Void _cctor()

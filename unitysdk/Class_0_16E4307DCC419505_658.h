@@ -1,10 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_06D1FFF0BA0C7F1C.h"
+#include "unitysdk/Struct_2_17E0E0442218CD79.h"
 
-namespace MoleMole { class UIHollowCardOptionsDialogContext; }
-namespace System { template <typename T> class Action_1; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_658_TypeDefinitionIndex = 75746;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_658_TypeDefinitionIndex = 69226;
 
 class Class_0_16E4307DCC419505_658
 {

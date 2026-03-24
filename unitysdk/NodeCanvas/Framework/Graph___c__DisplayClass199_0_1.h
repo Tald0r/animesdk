@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int Graph___c__DisplayClass199_0_1_TypeDefinitionIndex = 26025;
+	inline static constexpr unsigned int Graph___c__DisplayClass199_0_1_TypeDefinitionIndex = 27312;
 
 	template <typename T>
 	class Graph___c__DisplayClass199_0_1 : public ::System::Object

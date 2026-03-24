@@ -5,19 +5,19 @@
 namespace MoleMole { class MonoRefreshMaterial___c__DisplayClass5_0; }
 namespace UnityEngine { class RectTransform; }
 
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6E4B2E0)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_1__PLAYITEMICONADDANI_B__0_OFFSET UNITYSDK_OFFSET(0x6E4B2F0)
-#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_1__PLAYITEMICONADDANI_B__1_OFFSET UNITYSDK_OFFSET(0x6E4B330)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6EBD0A0)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_1__PLAYITEMICONADDANI_B__0_OFFSET UNITYSDK_OFFSET(0x6EBD0B0)
+#define MOLEMOLE_MONOREFRESHMATERIAL___C__DISPLAYCLASS5_1__PLAYITEMICONADDANI_B__1_OFFSET UNITYSDK_OFFSET(0x6EBD0F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoRefreshMaterial___c__DisplayClass5_1_TypeDefinitionIndex = 77817;
+	inline static constexpr unsigned int MonoRefreshMaterial___c__DisplayClass5_1_TypeDefinitionIndex = 40028;
 
 	class MonoRefreshMaterial___c__DisplayClass5_1 : public ::System::Object
 	{
 	public:
-		::MoleMole::MonoRefreshMaterial___c__DisplayClass5_0* CS___8__locals1; // 0x10
-		::UnityEngine::RectTransform* rect0; // 0x18
+		::UnityEngine::RectTransform* rect0; // 0x10
+		::MoleMole::MonoRefreshMaterial___c__DisplayClass5_0* CS___8__locals1; // 0x18
 
 		::System::Void _ctor()
 		{

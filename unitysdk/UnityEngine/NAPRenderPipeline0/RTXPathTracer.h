@@ -7,25 +7,25 @@
 
 namespace UnityEngine::NAPRenderPipeline0 { template <typename T> class ConsoleVariableT_1; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19BCD5F0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER_RTXPATHTRACERENABLED_OFFSET UNITYSDK_OFFSET(0x19BCD540)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BCE910)
-#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER__CTOR_OFFSET UNITYSDK_OFFSET(0x19BCE8C0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1A279D70)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER_RTXPATHTRACERENABLED_OFFSET UNITYSDK_OFFSET(0x1A279CC0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A27B090)
+#define UNITYENGINE_NAPRENDERPIPELINE0_RTXPATHTRACER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A27B040)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int RTXPathTracer_TypeDefinitionIndex = 5785;
+	inline static constexpr unsigned int RTXPathTracer_TypeDefinitionIndex = 5788;
 
 	class RTXPathTracer : public ::UnityEngine::NAPRenderPipeline0::RTXRenderer
 	{
 	public:
 		static ::UnityEngine::NAPRenderPipeline0::ConsoleVariableT_1<::System::Boolean>** StaticGet_EnablePathTracer()
 		{
-			return (::UnityEngine::NAPRenderPipeline0::ConsoleVariableT_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(RTXPathTracer_TypeDefinitionIndex)->GetStaticField(0x5330);
+			return (::UnityEngine::NAPRenderPipeline0::ConsoleVariableT_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(RTXPathTracer_TypeDefinitionIndex)->GetStaticField(0x5350);
 		}
 		static ::UnityEngine::NAPRenderPipeline0::ConsoleVariableT_1<::System::Boolean>** StaticGet_ResetPathTracer()
 		{
-			return (::UnityEngine::NAPRenderPipeline0::ConsoleVariableT_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(RTXPathTracer_TypeDefinitionIndex)->GetStaticField(0x5338);
+			return (::UnityEngine::NAPRenderPipeline0::ConsoleVariableT_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(RTXPathTracer_TypeDefinitionIndex)->GetStaticField(0x5358);
 		}
 
 		::System::Void _ctor()

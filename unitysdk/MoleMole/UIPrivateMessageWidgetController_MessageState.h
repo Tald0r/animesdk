@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPrivateMessageWidgetController_MessageState_TypeDefinitionIndex = 44636;
+	inline static constexpr unsigned int UIPrivateMessageWidgetController_MessageState_TypeDefinitionIndex = 47794;
 
 	enum class UIPrivateMessageWidgetController_MessageState : ::System::Int32
 	{

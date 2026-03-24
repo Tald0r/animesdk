@@ -6,9 +6,9 @@
 
 namespace System { class String; }
 
-#define PARTICLEBASEDATATYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x16D7A580)
+#define PARTICLEBASEDATATYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x173E1780)
 
-inline static constexpr unsigned int ParticleBaseDataType_TypeDefinitionIndex = 28048;
+inline static constexpr unsigned int ParticleBaseDataType_TypeDefinitionIndex = 28988;
 
 class ParticleBaseDataType : public ::System::Object
 {

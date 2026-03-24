@@ -5,7 +5,7 @@
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int DebugColor_TypeDefinitionIndex = 72008;
+	inline static constexpr unsigned int DebugColor_TypeDefinitionIndex = 49175;
 
 	struct alignas(4) DebugColor
 	{

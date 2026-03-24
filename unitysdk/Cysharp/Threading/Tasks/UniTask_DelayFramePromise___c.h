@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define CYSHARP_THREADING_TASKS_UNITASK_DELAYFRAMEPROMISE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0FD8D0)
-#define CYSHARP_THREADING_TASKS_UNITASK_DELAYFRAMEPROMISE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0FD900)
-#define CYSHARP_THREADING_TASKS_UNITASK_DELAYFRAMEPROMISE___C___CCTOR_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B0FD910)
+#define CYSHARP_THREADING_TASKS_UNITASK_DELAYFRAMEPROMISE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B716820)
+#define CYSHARP_THREADING_TASKS_UNITASK_DELAYFRAMEPROMISE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B716850)
+#define CYSHARP_THREADING_TASKS_UNITASK_DELAYFRAMEPROMISE___C___CCTOR_B__4_0_OFFSET UNITYSDK_OFFSET(0x1B716860)
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int UniTask_DelayFramePromise___c_TypeDefinitionIndex = 27129;
+	inline static constexpr unsigned int UniTask_DelayFramePromise___c_TypeDefinitionIndex = 28069;
 
 	class UniTask_DelayFramePromise___c : public ::System::Object
 	{
 	public:
 		static ::Cysharp::Threading::Tasks::UniTask_DelayFramePromise___c** StaticGet___9()
 		{
-			return (::Cysharp::Threading::Tasks::UniTask_DelayFramePromise___c**)Il2CppClass::FromTypeDefinitionIndex(UniTask_DelayFramePromise___c_TypeDefinitionIndex)->GetStaticField(0x1FB40);
+			return (::Cysharp::Threading::Tasks::UniTask_DelayFramePromise___c**)Il2CppClass::FromTypeDefinitionIndex(UniTask_DelayFramePromise___c_TypeDefinitionIndex)->GetStaticField(0x211A0);
 		}
 
 		static ::System::Void _cctor()

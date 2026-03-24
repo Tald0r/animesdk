@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BaseMonoMaterialEffectAttach_Enum_3_1AF220FD518C01B1_TypeDefinitionIndex = 53668;
+	inline static constexpr unsigned int BaseMonoMaterialEffectAttach_Enum_3_1AF220FD518C01B1_TypeDefinitionIndex = 78250;
 
 	enum class BaseMonoMaterialEffectAttach_Enum_3_1AF220FD518C01B1 : ::System::Int32
 	{

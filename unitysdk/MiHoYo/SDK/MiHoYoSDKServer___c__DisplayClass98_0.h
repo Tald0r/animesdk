@@ -4,20 +4,20 @@
 
 namespace MiHoYo::SDK { class MiHoYoSDKServer; }
 
-#define MIHOYO_SDK_MIHOYOSDKSERVER___C__DISPLAYCLASS98_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18DB3A30)
-#define MIHOYO_SDK_MIHOYOSDKSERVER___C__DISPLAYCLASS98_0__ONGETSDKEVENTCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x18DB55F0)
+#define MIHOYO_SDK_MIHOYOSDKSERVER___C__DISPLAYCLASS98_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1910F0A0)
+#define MIHOYO_SDK_MIHOYOSDKSERVER___C__DISPLAYCLASS98_0__ONGETSDKEVENTCALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x19110C60)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int MiHoYoSDKServer___c__DisplayClass98_0_TypeDefinitionIndex = 33639;
+	inline static constexpr unsigned int MiHoYoSDKServer___c__DisplayClass98_0_TypeDefinitionIndex = 34612;
 
 	class MiHoYoSDKServer___c__DisplayClass98_0 : public ::System::Object
 	{
 	public:
-		::MiHoYo::SDK::MiHoYoSDKServer* __4__this; // 0x10
-		::Il2CppArray<::System::Byte>* bytes; // 0x18
-		::System::UInt32 length; // 0x20
-		::System::Int32 evt; // 0x24
+		::Il2CppArray<::System::Byte>* bytes; // 0x10
+		::MiHoYo::SDK::MiHoYoSDKServer* __4__this; // 0x18
+		::System::Int32 evt; // 0x20
+		::System::UInt32 length; // 0x24
 
 		::System::Void _ctor()
 		{

@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem::XR::Haptics
 {
-	inline static constexpr unsigned int SendBufferedHapticCommand__buffer_e__FixedBuffer_TypeDefinitionIndex = 27624;
+	inline static constexpr unsigned int SendBufferedHapticCommand__buffer_e__FixedBuffer_TypeDefinitionIndex = 28564;
 
 	struct alignas(1) SendBufferedHapticCommand__buffer_e__FixedBuffer
 	{

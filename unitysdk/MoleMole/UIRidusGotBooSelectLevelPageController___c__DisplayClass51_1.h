@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIRidusGotBooSelectLevelPageController___c__DisplayClass51_0; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS51_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCA44AE0)
-#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS51_1__ONSELECTTAB_B__2_OFFSET UNITYSDK_OFFSET(0xCA44AF0)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS51_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD7A5480)
+#define MOLEMOLE_UIRIDUSGOTBOOSELECTLEVELPAGECONTROLLER___C__DISPLAYCLASS51_1__ONSELECTTAB_B__2_OFFSET UNITYSDK_OFFSET(0xD7A5490)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController___c__DisplayClass51_1_TypeDefinitionIndex = 43390;
+	inline static constexpr unsigned int UIRidusGotBooSelectLevelPageController___c__DisplayClass51_1_TypeDefinitionIndex = 62727;
 
 	class UIRidusGotBooSelectLevelPageController___c__DisplayClass51_1 : public ::System::Object
 	{

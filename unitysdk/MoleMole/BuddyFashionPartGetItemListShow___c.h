@@ -5,24 +5,24 @@
 class Class_1_0D6706375CDAAE8C;
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_BUDDYFASHIONPARTGETITEMLISTSHOW___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x96E68C0)
-#define MOLEMOLE_BUDDYFASHIONPARTGETITEMLISTSHOW___C__CTOR_OFFSET UNITYSDK_OFFSET(0x96E6900)
-#define MOLEMOLE_BUDDYFASHIONPARTGETITEMLISTSHOW___C__DOPROCESS_B__1_0_OFFSET UNITYSDK_OFFSET(0x96E6910)
+#define MOLEMOLE_BUDDYFASHIONPARTGETITEMLISTSHOW___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xB075C80)
+#define MOLEMOLE_BUDDYFASHIONPARTGETITEMLISTSHOW___C__CTOR_OFFSET UNITYSDK_OFFSET(0xB075CC0)
+#define MOLEMOLE_BUDDYFASHIONPARTGETITEMLISTSHOW___C__DOPROCESS_B__1_0_OFFSET UNITYSDK_OFFSET(0xB075CD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BuddyFashionPartGetItemListShow___c_TypeDefinitionIndex = 59943;
+	inline static constexpr unsigned int BuddyFashionPartGetItemListShow___c_TypeDefinitionIndex = 48812;
 
 	class BuddyFashionPartGetItemListShow___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::BuddyFashionPartGetItemListShow___c** StaticGet___9()
-		{
-			return (::MoleMole::BuddyFashionPartGetItemListShow___c**)Il2CppClass::FromTypeDefinitionIndex(BuddyFashionPartGetItemListShow___c_TypeDefinitionIndex)->GetStaticField(0x2C110);
-		}
 		static ::System::Func_2<::Class_1_0D6706375CDAAE8C*, ::System::Int32>** StaticGet___9__1_0()
 		{
-			return (::System::Func_2<::Class_1_0D6706375CDAAE8C*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(BuddyFashionPartGetItemListShow___c_TypeDefinitionIndex)->GetStaticField(0x2C118);
+			return (::System::Func_2<::Class_1_0D6706375CDAAE8C*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(BuddyFashionPartGetItemListShow___c_TypeDefinitionIndex)->GetStaticField(0x2D8F0);
+		}
+		static ::MoleMole::BuddyFashionPartGetItemListShow___c** StaticGet___9()
+		{
+			return (::MoleMole::BuddyFashionPartGetItemListShow___c**)Il2CppClass::FromTypeDefinitionIndex(BuddyFashionPartGetItemListShow___c_TypeDefinitionIndex)->GetStaticField(0x2D8F8);
 		}
 
 		static ::System::Void _cctor()

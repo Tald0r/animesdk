@@ -4,7 +4,7 @@
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int NPCAbilitySmoothOrientationProcessors_OrientationParameters_TypeDefinitionIndex = 74011;
+	inline static constexpr unsigned int NPCAbilitySmoothOrientationProcessors_OrientationParameters_TypeDefinitionIndex = 46075;
 
 	struct alignas(4) NPCAbilitySmoothOrientationProcessors_OrientationParameters
 	{

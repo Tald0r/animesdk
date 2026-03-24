@@ -4,11 +4,11 @@
 #include "unitysdk/NPCCrowd/Animation/MontageTransitionConfig.h"
 #include "unitysdk/NPCCrowd/Animation/StateMachineTransitionConfig.h"
 
-#define NPCCROWD_ANIMATION_ANIMATIONTRANSITIONCONFIGASSETSO__CTOR_OFFSET UNITYSDK_OFFSET(0x7645FA0)
+#define NPCCROWD_ANIMATION_ANIMATIONTRANSITIONCONFIGASSETSO__CTOR_OFFSET UNITYSDK_OFFSET(0x8628400)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationTransitionConfigAssetSO_TypeDefinitionIndex = 69560;
+	inline static constexpr unsigned int AnimationTransitionConfigAssetSO_TypeDefinitionIndex = 40655;
 
 	class AnimationTransitionConfigAssetSO : public ::Foundation::MihoyoSerializedScriptableObject
 	{

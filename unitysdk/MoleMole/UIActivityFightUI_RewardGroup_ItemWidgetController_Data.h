@@ -2,18 +2,18 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_477;
+class Class_2_208CC9941471731A_864;
 
-#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_ITEMWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x7F4B710)
+#define MOLEMOLE_UIACTIVITYFIGHTUI_REWARDGROUP_ITEMWIDGETCONTROLLER_DATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8B9DB90)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityFightUI_RewardGroup_ItemWidgetController_Data_TypeDefinitionIndex = 43682;
+	inline static constexpr unsigned int UIActivityFightUI_RewardGroup_ItemWidgetController_Data_TypeDefinitionIndex = 60121;
 
 	class UIActivityFightUI_RewardGroup_ItemWidgetController_Data : public ::System::Object
 	{
 	public:
-		::Class_2_208CC9941471731A_477* Template; // 0x10
+		::Class_2_208CC9941471731A_864* Template; // 0x10
 
 		::System::Void _ctor()
 		{

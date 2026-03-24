@@ -6,11 +6,11 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define NEWSBUBBLEPARAM_GETOTHERLANGUAGEDEFAULTFONTSIZE_OFFSET UNITYSDK_OFFSET(0x7E15B70)
-#define NEWSBUBBLEPARAM_GETOTHERLANGUAGETHREELINEFONTSIZE_OFFSET UNITYSDK_OFFSET(0x7E15A50)
-#define NEWSBUBBLEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x7E15C90)
+#define NEWSBUBBLEPARAM_GETOTHERLANGUAGEDEFAULTFONTSIZE_OFFSET UNITYSDK_OFFSET(0x65349A0)
+#define NEWSBUBBLEPARAM_GETOTHERLANGUAGETHREELINEFONTSIZE_OFFSET UNITYSDK_OFFSET(0x6534880)
+#define NEWSBUBBLEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x6534AC0)
 
-inline static constexpr unsigned int NewsBubbleParam_TypeDefinitionIndex = 72615;
+inline static constexpr unsigned int NewsBubbleParam_TypeDefinitionIndex = 65979;
 
 class NewsBubbleParam : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 {

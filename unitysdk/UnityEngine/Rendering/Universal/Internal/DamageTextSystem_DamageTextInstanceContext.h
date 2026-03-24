@@ -3,11 +3,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Matrix4x4.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTINSTANCECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x17B727C0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_DAMAGETEXTSYSTEM_DAMAGETEXTINSTANCECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x17809070)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int DamageTextSystem_DamageTextInstanceContext_TypeDefinitionIndex = 28853;
+	inline static constexpr unsigned int DamageTextSystem_DamageTextInstanceContext_TypeDefinitionIndex = 29803;
 
 	class DamageTextSystem_DamageTextInstanceContext : public ::System::Object
 	{

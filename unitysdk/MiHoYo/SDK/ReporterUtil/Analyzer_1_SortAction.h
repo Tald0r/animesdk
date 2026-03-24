@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::ReporterUtil
 {
-	inline static constexpr unsigned int Analyzer_1_SortAction_TypeDefinitionIndex = 33867;
+	inline static constexpr unsigned int Analyzer_1_SortAction_TypeDefinitionIndex = 34869;
 
 	enum class Analyzer_1_SortAction : ::System::Int32
 	{

@@ -5,11 +5,11 @@
 namespace System { class Delegate; }
 namespace System { class String; }
 
-#define SGF_SEVENT_STRINGPROCESSORCHAIN__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4AA3C0)
+#define SGF_SEVENT_STRINGPROCESSORCHAIN__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA25860)
 
 namespace SGF::SEvent
 {
-	inline static constexpr unsigned int StringProcessorChain_TypeDefinitionIndex = 8303;
+	inline static constexpr unsigned int StringProcessorChain_TypeDefinitionIndex = 7988;
 
 	class StringProcessorChain : public ::SGF::SEvent::DelegateChain_2<::System::Delegate*, ::System::String*>
 	{

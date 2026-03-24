@@ -6,11 +6,11 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Material; }
 
-inline static constexpr unsigned int Class_1_DD305013A2C6F0ED_Struct_2_0CE3309860B6B92E_TypeDefinitionIndex = 46553;
+inline static constexpr unsigned int Class_1_DD305013A2C6F0ED_Struct_2_0CE3309860B6B92E_TypeDefinitionIndex = 71573;
 
 struct alignas(8) Class_1_DD305013A2C6F0ED_Struct_2_0CE3309860B6B92E
 {
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* Field_2_1; // 0x10
+	::UnityEngine::Material* Field_2_0; // 0x10
 	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* Field_2_2; // 0x18
-	::UnityEngine::Material* Field_2_0; // 0x20
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>* Field_2_1; // 0x20
 };

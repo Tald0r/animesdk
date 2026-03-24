@@ -11,26 +11,26 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xEC2AF00)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xEC2AF10)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xEC2B110)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xEC2B2D0)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xEC2B290)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCAE6CE0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCAE6CF0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCAE6EF0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAE70B0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_CONFIGHOLLOWCHESSBOARDSCREENUIATLAS_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCAE7070)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter_TypeDefinitionIndex = 66401;
+	inline static constexpr unsigned int ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter_TypeDefinitionIndex = 76467;
 
 	class ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigHollowChessboardScreenUIAtlas*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenUIAtlasRectData*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenUIAtlasRectData*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43310);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::ProtoScript::ChessUIColor, ::MoleMole::Config::ScreenUIAtlasRectData*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::ProtoScript::ChessUIColor, ::MoleMole::Config::ScreenUIAtlasRectData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43318);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::ProtoScript::ChessUIColor, ::MoleMole::Config::ScreenUIAtlasRectData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45CF0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenUIAtlasRectData*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ScreenUIAtlasRectData*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigHollowChessboardScreenUIAtlas_ConfigHollowChessboardScreenUIAtlas_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45CF8);
 		}
 
 		::System::Void _ctor()

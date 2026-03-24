@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA927F20)
-#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA927F60)
-#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER___C__ONSUREBTNCLICK_G__EXITNORMAL_21_0_OFFSET UNITYSDK_OFFSET(0xA927F70)
+#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA94F850)
+#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA94F890)
+#define MOLEMOLE_UIGRANDMARCELADVENTURECHILDWINDOWCONTROLLER___C__ONSUREBTNCLICK_G__EXITNORMAL_21_0_OFFSET UNITYSDK_OFFSET(0xA94F8A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGrandMarcelAdventureChildWindowController___c_TypeDefinitionIndex = 55731;
+	inline static constexpr unsigned int UIGrandMarcelAdventureChildWindowController___c_TypeDefinitionIndex = 74046;
 
 	class UIGrandMarcelAdventureChildWindowController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIGrandMarcelAdventureChildWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIGrandMarcelAdventureChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventureChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38BB0);
+			return (::MoleMole::UIGrandMarcelAdventureChildWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIGrandMarcelAdventureChildWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B7D0);
 		}
 
 		static ::System::Void _cctor()

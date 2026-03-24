@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPageController_TimeStage_TypeDefinitionIndex = 66301;
+	inline static constexpr unsigned int UIRidusGotBooPageController_TimeStage_TypeDefinitionIndex = 44121;
 
 	enum class UIRidusGotBooPageController_TimeStage : ::System::Int32
 	{
-		Gold = 0,
 		Blue = 2,
+		Gold = 0,
 		Purple = 1,
 	};
 }

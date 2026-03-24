@@ -9,19 +9,19 @@ namespace MoleMole { class UIGeneralButtonController; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_2063C4717F520AB6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x67499C0)
-#define CLASS_2_2063C4717F520AB6_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x6749860)
-#define CLASS_2_2063C4717F520AB6__CTOR_OFFSET UNITYSDK_OFFSET(0x67499B0)
+#define CLASS_2_2063C4717F520AB6_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x961A8B0)
+#define CLASS_2_2063C4717F520AB6_METHOD_2_E9A21D244C9D6B36_OFFSET UNITYSDK_OFFSET(0x961A750)
+#define CLASS_2_2063C4717F520AB6__CTOR_OFFSET UNITYSDK_OFFSET(0x961A8A0)
 
-inline static constexpr unsigned int Class_2_2063C4717F520AB6_TypeDefinitionIndex = 77934;
+inline static constexpr unsigned int Class_2_2063C4717F520AB6_TypeDefinitionIndex = 76670;
 
 class Class_2_2063C4717F520AB6 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_5; // 0x18
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x28
-	::UnityEngine::RectTransform* Field_2_4; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x18
+	::UnityEngine::RectTransform* Field_2_5; // 0x20
+	::UnityEngine::RectTransform* Field_2_4; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
 	::MonoUITableScrollV2* Field_2_1; // 0x38
 	::MoleMole::UIGeneralButtonController* Field_2_6; // 0x40
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x48

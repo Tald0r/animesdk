@@ -9,13 +9,13 @@ class Class_1_3E7861A5123BFC05;
 namespace MoleMole::Config { class ConfigHollowInteractEffect; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWLONGPRESSINTERACT_CHECKTRIGGERONLYONCE_OFFSET UNITYSDK_OFFSET(0xEC2B350)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWLONGPRESSINTERACT_GETINTERACTINSTANCE_OFFSET UNITYSDK_OFFSET(0xEC2B3D0)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWLONGPRESSINTERACT__CTOR_OFFSET UNITYSDK_OFFSET(0xEC2B480)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWLONGPRESSINTERACT_CHECKTRIGGERONLYONCE_OFFSET UNITYSDK_OFFSET(0xCAE7130)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWLONGPRESSINTERACT_GETINTERACTINSTANCE_OFFSET UNITYSDK_OFFSET(0xCAE71B0)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWLONGPRESSINTERACT__CTOR_OFFSET UNITYSDK_OFFSET(0xCAE7260)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowLongpressInteract_TypeDefinitionIndex = 77900;
+	inline static constexpr unsigned int ConfigHollowLongpressInteract_TypeDefinitionIndex = 38538;
 
 	class ConfigHollowLongpressInteract : public ::MoleMole::Config::ConfigHollowInteractBase
 	{
@@ -23,18 +23,18 @@ namespace MoleMole::Config
 		::MoleMole::Config::ConfigHollowInteractEffect* RealLongPressStartEvent; // 0x50
 		::MoleMole::Config::ConfigHollowInteractEffect* PressStartEvent; // 0x58
 		::MoleMole::Config::ConfigHollowInteractEffect* IntervalEvent; // 0x60
-		::System::Single PressStartTime; // 0x68
-		::System::Single ClickDelta; // 0x6C
-		::System::Single QuickClickInterval; // 0x70
-		::System::Single LongAttenuation; // 0x74
-		::MoleMole::Config::DragWhenInteractingType DragInteractType; // 0x78
-		::System::Boolean UseIntervalEventAsRealLongPressStart; // 0x7C
-		::System::Boolean TriggerOnlyOnce; // 0x7D
-		::System::Boolean UseAttenuation; // 0x7E
-		::MoleMole::Config::LongPressTotalTimeType PressTimeType; // 0x80
-		::MoleMole::Config::LongPressTriggerStateType TriggerStateType; // 0x84
-		::System::Single PressTime; // 0x88
-		::System::Single LongPressInterval; // 0x8C
+		::System::Single PressTime; // 0x68
+		::System::Single QuickClickInterval; // 0x6C
+		::System::Single PressStartTime; // 0x70
+		::System::Single ClickDelta; // 0x74
+		::System::Single LongPressInterval; // 0x78
+		::MoleMole::Config::LongPressTotalTimeType PressTimeType; // 0x7C
+		::System::Boolean TriggerOnlyOnce; // 0x80
+		::System::Boolean UseIntervalEventAsRealLongPressStart; // 0x81
+		::System::Boolean UseAttenuation; // 0x82
+		::MoleMole::Config::DragWhenInteractingType DragInteractType; // 0x84
+		::System::Single LongAttenuation; // 0x88
+		::MoleMole::Config::LongPressTriggerStateType TriggerStateType; // 0x8C
 
 		::System::Void _ctor()
 		{

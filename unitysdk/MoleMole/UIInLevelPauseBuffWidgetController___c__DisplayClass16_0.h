@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIInLevelPauseBuffRowWidgetController; }
 
-#define MOLEMOLE_UIINLEVELPAUSEBUFFWIDGETCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8A459C0)
-#define MOLEMOLE_UIINLEVELPAUSEBUFFWIDGETCONTROLLER___C__DISPLAYCLASS16_0__REFRESHBUFFINFO_B__0_OFFSET UNITYSDK_OFFSET(0x8A459D0)
+#define MOLEMOLE_UIINLEVELPAUSEBUFFWIDGETCONTROLLER___C__DISPLAYCLASS16_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8946930)
+#define MOLEMOLE_UIINLEVELPAUSEBUFFWIDGETCONTROLLER___C__DISPLAYCLASS16_0__REFRESHBUFFINFO_B__0_OFFSET UNITYSDK_OFFSET(0x8946940)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelPauseBuffWidgetController___c__DisplayClass16_0_TypeDefinitionIndex = 48200;
+	inline static constexpr unsigned int UIInLevelPauseBuffWidgetController___c__DisplayClass16_0_TypeDefinitionIndex = 68424;
 
 	class UIInLevelPauseBuffWidgetController___c__DisplayClass16_0 : public ::System::Object
 	{

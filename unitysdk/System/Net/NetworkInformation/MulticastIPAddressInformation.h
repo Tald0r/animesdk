@@ -5,7 +5,7 @@
 #include "unitysdk/System/Net/NetworkInformation/PrefixOrigin.h"
 #include "unitysdk/System/Net/NetworkInformation/SuffixOrigin.h"
 
-#define SYSTEM_NET_NETWORKINFORMATION_MULTICASTIPADDRESSINFORMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x197EB1B0)
+#define SYSTEM_NET_NETWORKINFORMATION_MULTICASTIPADDRESSINFORMATION__CTOR_OFFSET UNITYSDK_OFFSET(0x19D2A520)
 
 namespace System::Net::NetworkInformation
 {

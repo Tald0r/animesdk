@@ -2,33 +2,33 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_368;
+class Class_0_16E4307DCC419505_172;
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_1_4385C14088733CE3_1_METHOD_1_FA290394C46B1A04_OFFSET UNITYSDK_OFFSET(0x79FBE60)
-#define CLASS_1_4385C14088733CE3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x79FBF50)
+#define CLASS_1_4385C14088733CE3_1_METHOD_1_FA290394C46B1A04_OFFSET UNITYSDK_OFFSET(0x75375A0)
+#define CLASS_1_4385C14088733CE3_1__CTOR_OFFSET UNITYSDK_OFFSET(0x7537690)
 
-inline static constexpr unsigned int Class_1_4385C14088733CE3_1_TypeDefinitionIndex = 49275;
+inline static constexpr unsigned int Class_1_4385C14088733CE3_1_TypeDefinitionIndex = 71084;
 
 class Class_1_4385C14088733CE3_1 : public ::System::Object
 {
 public:
 	::UnityEngine::AnimationCurve* Field_1_5; // 0x10
-	::UnityEngine::AnimationCurve* Field_1_7; // 0x18
-	::UnityEngine::AnimationCurve* Field_1_3; // 0x20
-	::UnityEngine::AnimationCurve* Field_1_1; // 0x28
+	::UnityEngine::AnimationCurve* Field_1_3; // 0x18
+	::UnityEngine::AnimationCurve* Field_1_1; // 0x20
+	::UnityEngine::AnimationCurve* Field_1_7; // 0x28
 	::System::Single Field_1_4; // 0x30
-	::System::Single Field_1_0; // 0x34
-	::System::Single Field_1_2; // 0x38
-	::System::Single Field_1_6; // 0x3C
+	::System::Single Field_1_6; // 0x34
+	::System::Single Field_1_0; // 0x38
+	::System::Single Field_1_2; // 0x3C
 
 	::System::Void _ctor()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_4385C14088733CE3_1__CTOR_OFFSET))(this);
 	}
 
-	::Class_0_16E4307DCC419505_368* Method_1_FA290394C46B1A04()
+	::Class_0_16E4307DCC419505_172* Method_1_FA290394C46B1A04()
 	{
-		return ((::Class_0_16E4307DCC419505_368*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_4385C14088733CE3_1_METHOD_1_FA290394C46B1A04_OFFSET))(this);
+		return ((::Class_0_16E4307DCC419505_172*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_4385C14088733CE3_1_METHOD_1_FA290394C46B1A04_OFFSET))(this);
 	}
 };

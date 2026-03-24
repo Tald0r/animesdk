@@ -3,7 +3,7 @@
 
 namespace Newtonsoft::Json::Linq
 {
-	inline static constexpr unsigned int LineInfoHandling_TypeDefinitionIndex = 7022;
+	inline static constexpr unsigned int LineInfoHandling_TypeDefinitionIndex = 7026;
 
 	enum class LineInfoHandling : ::System::Int32
 	{

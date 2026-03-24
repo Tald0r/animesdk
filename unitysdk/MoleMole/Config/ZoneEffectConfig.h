@@ -7,11 +7,11 @@ namespace MoleMole::Config { class ConfigPosRot; }
 namespace MoleMole::Config { class EffectAutoDynamicValue; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_ZONEEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xE0C4230)
+#define MOLEMOLE_CONFIG_ZONEEFFECTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x10AAB190)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ZoneEffectConfig_TypeDefinitionIndex = 37488;
+	inline static constexpr unsigned int ZoneEffectConfig_TypeDefinitionIndex = 71191;
 
 	class ZoneEffectConfig : public ::System::Object
 	{
@@ -20,8 +20,8 @@ namespace MoleMole::Config
 		::System::String* AttachPointName; // 0x18
 		::MoleMole::Config::EffectAutoDynamicValue* EffectAutoDynamic; // 0x20
 		::System::String* EffectPatternName; // 0x28
-		::System::Boolean EntityDeathHideEffect; // 0x30
-		::UnityEngine::Vector3 OverrideScale; // 0x34
+		::UnityEngine::Vector3 OverrideScale; // 0x30
+		::System::Boolean EntityDeathHideEffect; // 0x3C
 
 		::System::Void _ctor()
 		{

@@ -6,13 +6,13 @@
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_UISPRITENUMSYMBOL_AWAKE_OFFSET UNITYSDK_OFFSET(0xAC3DBA0)
-#define MOLEMOLE_UISPRITENUMSYMBOL_SETSYMBOL_OFFSET UNITYSDK_OFFSET(0xAC3DDC0)
-#define MOLEMOLE_UISPRITENUMSYMBOL__CTOR_OFFSET UNITYSDK_OFFSET(0xAC3E110)
+#define MOLEMOLE_UISPRITENUMSYMBOL_AWAKE_OFFSET UNITYSDK_OFFSET(0xCA8D070)
+#define MOLEMOLE_UISPRITENUMSYMBOL_SETSYMBOL_OFFSET UNITYSDK_OFFSET(0xCA8D290)
+#define MOLEMOLE_UISPRITENUMSYMBOL__CTOR_OFFSET UNITYSDK_OFFSET(0xCA8D5E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISpriteNumSymbol_TypeDefinitionIndex = 48893;
+	inline static constexpr unsigned int UISpriteNumSymbol_TypeDefinitionIndex = 64778;
 
 	class UISpriteNumSymbol : public ::UnityEngine::MonoBehaviour
 	{

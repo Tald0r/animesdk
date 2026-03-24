@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMAILWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9E763A0)
-#define MOLEMOLE_UIMAILWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9E763E0)
-#define MOLEMOLE_UIMAILWIDGETCONTROLLER___C__REFRESHVIEW_B__7_1_OFFSET UNITYSDK_OFFSET(0x9E763F0)
+#define MOLEMOLE_UIMAILWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x984C400)
+#define MOLEMOLE_UIMAILWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x984C440)
+#define MOLEMOLE_UIMAILWIDGETCONTROLLER___C__REFRESHVIEW_B__7_1_OFFSET UNITYSDK_OFFSET(0x984C450)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMailWidgetController___c_TypeDefinitionIndex = 72114;
+	inline static constexpr unsigned int UIMailWidgetController___c_TypeDefinitionIndex = 71703;
 
 	class UIMailWidgetController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIMailWidgetController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIMailWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMailWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D830);
+			return (::MoleMole::UIMailWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMailWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40780);
 		}
 		static ::System::Action** StaticGet___9__7_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMailWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D838);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIMailWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x40788);
 		}
 
 		static ::System::Void _cctor()

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define POSTPROCESS_MKGLOW_EFFECT_KEYWORD__CTOR_OFFSET UNITYSDK_OFFSET(0x2D5CF0)
+#define POSTPROCESS_MKGLOW_EFFECT_KEYWORD__CTOR_OFFSET UNITYSDK_OFFSET(0x360200)
 
 namespace PostProcess::MKGlow
 {
-	inline static constexpr unsigned int Effect_Keyword_TypeDefinitionIndex = 28194;
+	inline static constexpr unsigned int Effect_Keyword_TypeDefinitionIndex = 29135;
 
 	struct alignas(8) Effect_Keyword
 	{

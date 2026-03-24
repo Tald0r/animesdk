@@ -6,20 +6,20 @@ namespace System::Collections { class IEnumerator; }
 namespace System::Data { class Constraint; }
 namespace System::Data { class DataSet; }
 
-#define SYSTEM_DATA_CONSTRAINTENUMERATOR_GETNEXT_OFFSET UNITYSDK_OFFSET(0x1A3D9D70)
-#define SYSTEM_DATA_CONSTRAINTENUMERATOR_ISVALIDCANDIDATE_OFFSET UNITYSDK_OFFSET(0x1A3DA170)
-#define SYSTEM_DATA_CONSTRAINTENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3D9D00)
+#define SYSTEM_DATA_CONSTRAINTENUMERATOR_GETNEXT_OFFSET UNITYSDK_OFFSET(0x1A99E420)
+#define SYSTEM_DATA_CONSTRAINTENUMERATOR_ISVALIDCANDIDATE_OFFSET UNITYSDK_OFFSET(0x1A99E820)
+#define SYSTEM_DATA_CONSTRAINTENUMERATOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A99E3B0)
 
 namespace System::Data
 {
-	inline static constexpr unsigned int ConstraintEnumerator_TypeDefinitionIndex = 35379;
+	inline static constexpr unsigned int ConstraintEnumerator_TypeDefinitionIndex = 36399;
 
 	class ConstraintEnumerator : public ::System::Object
 	{
 	public:
 		::System::Data::Constraint* _currentObject; // 0x10
-		::System::Collections::IEnumerator* _tables; // 0x18
-		::System::Collections::IEnumerator* _constraints; // 0x20
+		::System::Collections::IEnumerator* _constraints; // 0x18
+		::System::Collections::IEnumerator* _tables; // 0x20
 
 		::System::Void _ctor(::System::Data::DataSet* dataSet)
 		{

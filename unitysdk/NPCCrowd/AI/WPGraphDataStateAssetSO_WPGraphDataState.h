@@ -6,11 +6,11 @@
 namespace NPCCrowd::AI { class WPGraphDataStateAssetSO_NodeStateOverrideData; }
 namespace NPCCrowd::AI { class WPGraphDataStateAssetSO_PathStateOverrideData; }
 
-#define NPCCROWD_AI_WPGRAPHDATASTATEASSETSO_WPGRAPHDATASTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x7EF0330)
+#define NPCCROWD_AI_WPGRAPHDATASTATEASSETSO_WPGRAPHDATASTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x6B9ED20)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int WPGraphDataStateAssetSO_WPGraphDataState_TypeDefinitionIndex = 43108;
+	inline static constexpr unsigned int WPGraphDataStateAssetSO_WPGraphDataState_TypeDefinitionIndex = 52345;
 
 	class WPGraphDataStateAssetSO_WPGraphDataState : public ::System::Object
 	{

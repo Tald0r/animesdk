@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering
 {
-	inline static constexpr unsigned int CullingOptions_TypeDefinitionIndex = 6202;
+	inline static constexpr unsigned int CullingOptions_TypeDefinitionIndex = 6206;
 
 	enum class CullingOptions : ::System::Int32
 	{

@@ -5,7 +5,7 @@
 
 namespace Foundation::ViewObject::Structures
 {
-	inline static constexpr unsigned int FGroupChallengeEndArgs_TypeDefinitionIndex = 74338;
+	inline static constexpr unsigned int FGroupChallengeEndArgs_TypeDefinitionIndex = 57304;
 
 	struct alignas(4) FGroupChallengeEndArgs
 	{

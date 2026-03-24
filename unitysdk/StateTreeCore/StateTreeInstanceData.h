@@ -1,6 +1,5 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeList_1.h"
 #include "unitysdk/StateTreeCore/StateTreeEventQueue.h"
 #include "unitysdk/StateTreeCore/StateTreeExecutionState.h"
 #include "unitysdk/StateTreeCore/StateTreeTemporaryInstanceData.h"
@@ -9,47 +8,58 @@
 #include "unitysdk/Unity/Collections/Allocator.h"
 #include "unitysdk/UnrealTypes/FInstancedPropertyBag.h"
 #include "unitysdk/UnrealTypes/FInstancedStructContainer.h"
+#include "unitysdk/UnrealTypes/NativeStructList_1.h"
 
-namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+namespace UnrealTypes { template <typename T> class ManagedStructList_1; }
 
-#define STATETREECORE_STATETREEINSTANCEDATA_AREALLINSTANCESVALID_OFFSET UNITYSDK_OFFSET(0x8EC270)
-#define STATETREECORE_STATETREEINSTANCEDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8EC060)
-#define STATETREECORE_STATETREEINSTANCEDATA_GETMUTABLESTRUCT_OFFSET UNITYSDK_OFFSET(0x8EC190)
-#define STATETREECORE_STATETREEINSTANCEDATA_GETSTRUCT_OFFSET UNITYSDK_OFFSET(0x8EC190)
-#define STATETREECORE_STATETREEINSTANCEDATA_GETTRANSITIONREQUESTS_OFFSET UNITYSDK_OFFSET(0x8EC1D0)
-#define STATETREECORE_STATETREEINSTANCEDATA_INITINSTANCESTRUCTS_OFFSET UNITYSDK_OFFSET(0x8EC260)
-#define STATETREECORE_STATETREEINSTANCEDATA_RESETTRANSITIONREQUESTS_OFFSET UNITYSDK_OFFSET(0x8EC250)
-#define STATETREECORE_STATETREEINSTANCEDATA_RESET_OFFSET UNITYSDK_OFFSET(0x8EC180)
-#define STATETREECORE_STATETREEINSTANCEDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8EC050)
+#define STATETREECORE_STATETREEINSTANCEDATA_ADDTEMPORARYINSTANCE_OFFSET UNITYSDK_OFFSET(0x9840C0)
+#define STATETREECORE_STATETREEINSTANCEDATA_ADDTRANSITIONREQUEST_OFFSET UNITYSDK_OFFSET(0x983F20)
+#define STATETREECORE_STATETREEINSTANCEDATA_APPEND_OFFSET UNITYSDK_OFFSET(0x9842C0)
+#define STATETREECORE_STATETREEINSTANCEDATA_AREALLINSTANCESVALID_OFFSET UNITYSDK_OFFSET(0x984040)
+#define STATETREECORE_STATETREEINSTANCEDATA_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x984BA0)
+#define STATETREECORE_STATETREEINSTANCEDATA_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x984350)
+#define STATETREECORE_STATETREEINSTANCEDATA_CREATE_OFFSET UNITYSDK_OFFSET(0x1B081200)
+#define STATETREECORE_STATETREEINSTANCEDATA_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x984330)
+#define STATETREECORE_STATETREEINSTANCEDATA_DISPOSE_OFFSET UNITYSDK_OFFSET(0x984FD0)
+#define STATETREECORE_STATETREEINSTANCEDATA_GETMUTABLESTRUCT_OFFSET UNITYSDK_OFFSET(0x983E50)
+#define STATETREECORE_STATETREEINSTANCEDATA_GETMUTABLETEMPORARYINSTANCES_OFFSET UNITYSDK_OFFSET(0x984130)
+#define STATETREECORE_STATETREEINSTANCEDATA_GETSTRUCT_OFFSET UNITYSDK_OFFSET(0x983E50)
+#define STATETREECORE_STATETREEINSTANCEDATA_GETTRANSITIONREQUESTS_OFFSET UNITYSDK_OFFSET(0x983E90)
+#define STATETREECORE_STATETREEINSTANCEDATA_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x9842D0)
+#define STATETREECORE_STATETREEINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x985090)
+#define STATETREECORE_STATETREEINSTANCEDATA_INIT_OFFSET UNITYSDK_OFFSET(0x9841B0)
+#define STATETREECORE_STATETREEINSTANCEDATA_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x984DE0)
+#define STATETREECORE_STATETREEINSTANCEDATA_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x9847A0)
+#define STATETREECORE_STATETREEINSTANCEDATA_RESETTEMPORARYINSTANCES_OFFSET UNITYSDK_OFFSET(0x984120)
+#define STATETREECORE_STATETREEINSTANCEDATA_RESETTRANSITIONREQUESTS_OFFSET UNITYSDK_OFFSET(0x984030)
+#define STATETREECORE_STATETREEINSTANCEDATA_RESET_OFFSET UNITYSDK_OFFSET(0x984ED0)
+#define STATETREECORE_STATETREEINSTANCEDATA_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEINSTANCEDATA__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x984BA0)
+#define STATETREECORE_STATETREEINSTANCEDATA__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B082150)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeInstanceData_TypeDefinitionIndex = 26948;
+	inline static constexpr unsigned int StateTreeInstanceData_TypeDefinitionIndex = 27803;
 
 	struct alignas(8) StateTreeInstanceData
 	{
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
+		{
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(StateTreeInstanceData_TypeDefinitionIndex)->GetStaticField(0x20E40);
+		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xF4DB9971; // 0x0
 		::System::Int32 DebugInstanceID; // 0x10
-		::Unity::Collections::Allocator Allocator; // 0x14
 		::StateTreeCore::StateTreeExecutionState ExecutionState; // 0x18
-		::UnrealTypes::FInstancedStructContainer InstanceStructs; // 0x68
-		::NativeTypes::NativeList_1<::StateTreeCore::StateTreeTemporaryInstanceData> TemporaryInstances; // 0x80
-		::StateTreeCore::StateTreeEventQueue EventQueue; // 0x98
-		::NativeTypes::NativeList_1<::StateTreeCore::StateTreeTransitionRequest> _transitionRequests; // 0xB0
-		::UnrealTypes::FInstancedPropertyBag GlobalParameters; // 0xC8
+		::UnrealTypes::FInstancedStructContainer InstanceStructs; // 0x58
+		::UnrealTypes::NativeStructList_1<::StateTreeCore::StateTreeTemporaryInstanceData> TemporaryInstances; // 0x70
+		::StateTreeCore::StateTreeEventQueue EventQueue; // 0x88
+		::UnrealTypes::NativeStructList_1<::StateTreeCore::StateTreeTransitionRequest> _transitionRequests; // 0xA0
+		::UnrealTypes::FInstancedPropertyBag GlobalParameters; // 0xB8
 
-		::System::Void _ctor(::Unity::Collections::Allocator allocator, ::System::Int32 debugInstanceID)
+		static ::System::Void _cctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::Unity::Collections::Allocator, ::System::Int32))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA__CTOR_OFFSET))(this, allocator, debugInstanceID);
-		}
-
-		::System::Void Dispose()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_DISPOSE_OFFSET))(this);
-		}
-
-		::System::Void Reset()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_RESET_OFFSET))(this);
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA__CCTOR_OFFSET))();
 		}
 
 		/*
@@ -60,34 +70,120 @@ namespace StateTreeCore
 		*/
 
 		/*
-		::UnrealTypes::FReadonlyStructView GetStruct(::System::Int32 index)
+		::UnrealTypes::FReadOnlyStructView GetStruct(::System::Int32 index)
 		{
-			return ((::UnrealTypes::FReadonlyStructView(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GETSTRUCT_OFFSET))(this, index);
+			return ((::UnrealTypes::FReadOnlyStructView(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GETSTRUCT_OFFSET))(this, index);
 		}
 		*/
 
 		/*
-		::NativeTypes::NativeListView_1<::StateTreeCore::StateTreeTransitionRequest> GetTransitionRequests()
+		::UnrealTypes::ReadOnlyNativeListView_1<::StateTreeCore::StateTreeTransitionRequest> GetTransitionRequests()
 		{
-			return ((::NativeTypes::NativeListView_1<::StateTreeCore::StateTreeTransitionRequest>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GETTRANSITIONREQUESTS_OFFSET))(this);
+			return ((::UnrealTypes::ReadOnlyNativeListView_1<::StateTreeCore::StateTreeTransitionRequest>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GETTRANSITIONREQUESTS_OFFSET))(this);
 		}
 		*/
+
+		::System::Void AddTransitionRequest(::StateTreeCore::StateTreeTransitionRequest& request)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeTransitionRequest&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_ADDTRANSITIONREQUEST_OFFSET))(this, request);
+		}
 
 		::System::Void ResetTransitionRequests()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_RESETTRANSITIONREQUESTS_OFFSET))(this);
 		}
 
-		/*
-		::System::Void InitInstanceStructs(::System::Collections::Generic::List_1<::UnrealTypes::FInstancedStruct>* structs)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::UnrealTypes::FInstancedStruct>*))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_INITINSTANCESTRUCTS_OFFSET))(this, structs);
-		}
-		*/
-
 		::System::Boolean AreAllInstancesValid()
 		{
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_AREALLINSTANCESVALID_OFFSET))(this);
+		}
+
+		/*
+		::UnrealTypes::FStructView AddTemporaryInstance(::StateTreeCore::StateTreeExecutionFrame& frame, ::System::UInt16 ownerNodeIndex, ::StateTreeCore::StateTreeDataHandle dataHandle, ::UnrealTypes::FReadOnlyStructView newInstanceData)
+		{
+			return ((::UnrealTypes::FStructView(*)(::PVOID, ::StateTreeCore::StateTreeExecutionFrame&, ::System::UInt16, ::StateTreeCore::StateTreeDataHandle, ::UnrealTypes::FReadOnlyStructView))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_ADDTEMPORARYINSTANCE_OFFSET))(this, frame, ownerNodeIndex, dataHandle, newInstanceData);
+		}
+		*/
+
+		::System::Void ResetTemporaryInstances()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_RESETTEMPORARYINSTANCES_OFFSET))(this);
+		}
+
+		/*
+		::UnrealTypes::NativeListView_1<::StateTreeCore::StateTreeTemporaryInstanceData> GetMutableTemporaryInstances()
+		{
+			return ((::UnrealTypes::NativeListView_1<::StateTreeCore::StateTreeTemporaryInstanceData>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GETMUTABLETEMPORARYINSTANCES_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::System::Void Init(::UnrealTypes::ManagedStructList_1<::UnrealTypes::FInstancedStruct>* structs)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::ManagedStructList_1<::UnrealTypes::FInstancedStruct>*))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_INIT_OFFSET))(this, structs);
+		}
+		*/
+
+		/*
+		::System::Void Append(::UnrealTypes::ManagedStructList_1<::UnrealTypes::FInstancedStruct>* structs)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::ManagedStructList_1<::UnrealTypes::FInstancedStruct>*))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_APPEND_OFFSET))(this, structs);
+		}
+		*/
+
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
+		{
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GET_STATICSTRUCT_OFFSET))(this);
+		}
+
+		static ::StateTreeCore::StateTreeInstanceData Create(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeInstanceData(*)(::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_CREATE_OFFSET))(allocator);
+		}
+
+		::StateTreeCore::StateTreeInstanceData DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::StateTreeCore::StateTreeInstanceData CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::StateTreeCore::StateTreeInstanceData MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::StateTreeCore::StateTreeInstanceData(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::StateTreeCore::StateTreeInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeInstanceData&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::StateTreeCore::StateTreeInstanceData& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeInstanceData&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_StateTreeCore_StateTreeInstanceData__CopyAssign(::StateTreeCore::StateTreeInstanceData& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeInstanceData&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEINSTANCEDATA_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEINSTANCEDATA__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

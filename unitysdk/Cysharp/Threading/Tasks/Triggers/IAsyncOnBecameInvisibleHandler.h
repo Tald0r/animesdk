@@ -4,7 +4,7 @@
 
 namespace Cysharp::Threading::Tasks::Triggers
 {
-	inline static constexpr unsigned int IAsyncOnBecameInvisibleHandler_TypeDefinitionIndex = 27224;
+	inline static constexpr unsigned int IAsyncOnBecameInvisibleHandler_TypeDefinitionIndex = 28164;
 
 	class IAsyncOnBecameInvisibleHandler
 	{

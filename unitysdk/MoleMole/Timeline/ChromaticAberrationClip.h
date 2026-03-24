@@ -8,13 +8,13 @@
 namespace MoleMole::Timeline { class ChromaticAberrationBehaviour; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TIMELINE_CHROMATICABERRATIONCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x8FA2970)
-#define MOLEMOLE_TIMELINE_CHROMATICABERRATIONCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0x8FA2960)
-#define MOLEMOLE_TIMELINE_CHROMATICABERRATIONCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA2B70)
+#define MOLEMOLE_TIMELINE_CHROMATICABERRATIONCLIP_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0xC32F540)
+#define MOLEMOLE_TIMELINE_CHROMATICABERRATIONCLIP_GET_CLIPCAPS_OFFSET UNITYSDK_OFFSET(0xC32F530)
+#define MOLEMOLE_TIMELINE_CHROMATICABERRATIONCLIP__CTOR_OFFSET UNITYSDK_OFFSET(0xC32F740)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int ChromaticAberrationClip_TypeDefinitionIndex = 44824;
+	inline static constexpr unsigned int ChromaticAberrationClip_TypeDefinitionIndex = 39635;
 
 	class ChromaticAberrationClip : public ::UnityEngine::Playables::PlayableAsset
 	{

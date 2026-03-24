@@ -6,18 +6,18 @@
 class Class_2_AF4036FBC298303A;
 namespace MoleMole { class UIFlowerMain_RightWidgetController; }
 
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS11_0__BUILDDATABINDING_VIEWMODEL2CONTEXT_B__1_OFFSET UNITYSDK_OFFSET(0xA3578E0)
-#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA3578D0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS11_0__BUILDDATABINDING_VIEWMODEL2CONTEXT_B__1_OFFSET UNITYSDK_OFFSET(0xD1218B0)
+#define MOLEMOLE_UIFLOWERMAIN_RIGHTWIDGETCONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD1218A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFlowerMain_RightWidgetController___c__DisplayClass11_0_TypeDefinitionIndex = 57315;
+	inline static constexpr unsigned int UIFlowerMain_RightWidgetController___c__DisplayClass11_0_TypeDefinitionIndex = 50333;
 
 	class UIFlowerMain_RightWidgetController___c__DisplayClass11_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIFlowerMain_RightWidgetController* __4__this; // 0x10
-		::Class_2_AF4036FBC298303A* currentSelectData; // 0x18
+		::Class_2_AF4036FBC298303A* currentSelectData; // 0x10
+		::MoleMole::UIFlowerMain_RightWidgetController* __4__this; // 0x18
 		::MoleMole::UI::FlowerShop::ESlotType slot; // 0x20
 
 		::System::Void _ctor()

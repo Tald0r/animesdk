@@ -3,12 +3,12 @@
 
 namespace NodeCanvas::StateMachines
 {
-	inline static constexpr unsigned int FSM_TransitionCallMode_TypeDefinitionIndex = 25933;
+	inline static constexpr unsigned int FSM_TransitionCallMode_TypeDefinitionIndex = 26385;
 
 	enum class FSM_TransitionCallMode : ::System::Int32
 	{
-		Normal = 0,
-		Clean = 2,
 		Stacked = 1,
+		Clean = 2,
+		Normal = 0,
 	};
 }

@@ -6,12 +6,12 @@ class Class_1_D72537470FC2F779;
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGPLAYFILTERPLUGINSPECIALEFFECT_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCC9A320)
-#define MOLEMOLE_CONFIG_CONFIGPLAYFILTERPLUGINSPECIALEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xCC9A400)
+#define MOLEMOLE_CONFIG_CONFIGPLAYFILTERPLUGINSPECIALEFFECT_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xACC82C0)
+#define MOLEMOLE_CONFIG_CONFIGPLAYFILTERPLUGINSPECIALEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xACC83A0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigPlayFilterPluginSpecialEffect_TypeDefinitionIndex = 59848;
+	inline static constexpr unsigned int ConfigPlayFilterPluginSpecialEffect_TypeDefinitionIndex = 57565;
 
 	class ConfigPlayFilterPluginSpecialEffect : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

@@ -6,7 +6,7 @@ class Class_1_6264A094B71D0F1E;
 class Class_1_AFB10CA68C024D1B;
 class Class_1_D5F08B6364839D11;
 
-inline static constexpr unsigned int Class_1_9FD5FAEBE7F92666_Struct_2_0D8C63B1CC32553A_1_TypeDefinitionIndex = 61640;
+inline static constexpr unsigned int Class_1_9FD5FAEBE7F92666_Struct_2_0D8C63B1CC32553A_1_TypeDefinitionIndex = 66826;
 
 struct alignas(8) Class_1_9FD5FAEBE7F92666_Struct_2_0D8C63B1CC32553A_1
 {

@@ -3,9 +3,9 @@
 #include "unitysdk/Foundation/Coroutine/CoroutineHandle.h"
 #include "unitysdk/System/Object.h"
 
-#define CLASS_1_7E0CB86557612343__CTOR_OFFSET UNITYSDK_OFFSET(0x65F3B70)
+#define CLASS_1_7E0CB86557612343__CTOR_OFFSET UNITYSDK_OFFSET(0x82A0610)
 
-inline static constexpr unsigned int Class_1_7E0CB86557612343_TypeDefinitionIndex = 37622;
+inline static constexpr unsigned int Class_1_7E0CB86557612343_TypeDefinitionIndex = 46919;
 
 class Class_1_7E0CB86557612343 : public ::System::Object
 {

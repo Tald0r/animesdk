@@ -7,22 +7,22 @@ class Class_2_777A5D016ADC7368;
 namespace MoleMole { class UIConsoleCameraBtnWidgetController; }
 namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIGeneralConsoleBtnWidgetController; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_33C955BE8D3515AB_METHOD_2_25F259344056A8EA_OFFSET UNITYSDK_OFFSET(0x765F2E0)
-#define CLASS_2_33C955BE8D3515AB_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0x765F4F0)
-#define CLASS_2_33C955BE8D3515AB_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x765F610)
-#define CLASS_2_33C955BE8D3515AB__CTOR_OFFSET UNITYSDK_OFFSET(0x765F600)
+#define CLASS_2_33C955BE8D3515AB_METHOD_2_25F259344056A8EA_OFFSET UNITYSDK_OFFSET(0xB3CC320)
+#define CLASS_2_33C955BE8D3515AB_METHOD_2_737220D2233A9067_OFFSET UNITYSDK_OFFSET(0xB3CC530)
+#define CLASS_2_33C955BE8D3515AB_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB3CC650)
+#define CLASS_2_33C955BE8D3515AB__CTOR_OFFSET UNITYSDK_OFFSET(0xB3CC640)
 
-inline static constexpr unsigned int Class_2_33C955BE8D3515AB_TypeDefinitionIndex = 39846;
+inline static constexpr unsigned int Class_2_33C955BE8D3515AB_TypeDefinitionIndex = 62696;
 
 class Class_2_33C955BE8D3515AB : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::Class_2_60DDD9C206686F44* Field_2_3; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIConsoleCameraBtnWidgetController*>* Field_2_0; // 0x20
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralConsoleBtnWidgetController*>* Field_2_1; // 0x28
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralConsoleBtnWidgetController*>* Field_2_2; // 0x30
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralConsoleBtnWidgetController*>* Field_2_2; // 0x18
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralConsoleBtnWidgetController*>* Field_2_1; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIConsoleCameraBtnWidgetController*>* Field_2_0; // 0x28
+	::Class_2_60DDD9C206686F44* Field_2_3; // 0x30
 
 	::System::Void _ctor()
 	{

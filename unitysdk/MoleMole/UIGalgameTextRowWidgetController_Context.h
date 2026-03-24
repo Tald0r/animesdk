@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIGALGAMETEXTROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBFA4220)
+#define MOLEMOLE_UIGALGAMETEXTROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9BDF8F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgameTextRowWidgetController_Context_TypeDefinitionIndex = 39013;
+	inline static constexpr unsigned int UIGalgameTextRowWidgetController_Context_TypeDefinitionIndex = 63062;
 
 	class UIGalgameTextRowWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

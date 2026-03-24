@@ -3,12 +3,12 @@
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UILocalizationText_EDeferMarkDirtyReq_TypeDefinitionIndex = 60556;
+	inline static constexpr unsigned int UILocalizationText_EDeferMarkDirtyReq_TypeDefinitionIndex = 71657;
 
 	enum class UILocalizationText_EDeferMarkDirtyReq : ::System::Int32
 	{
 		Vertices = 2,
-		Layout = 1,
 		None = 0,
+		Layout = 1,
 	};
 }

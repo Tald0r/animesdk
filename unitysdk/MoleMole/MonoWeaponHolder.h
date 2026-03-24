@@ -7,12 +7,12 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOWEAPONHOLDER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xA4946B0)
-#define MOLEMOLE_MONOWEAPONHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0xA494720)
+#define MOLEMOLE_MONOWEAPONHOLDER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x7A97D10)
+#define MOLEMOLE_MONOWEAPONHOLDER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A97D80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoWeaponHolder_TypeDefinitionIndex = 57200;
+	inline static constexpr unsigned int MonoWeaponHolder_TypeDefinitionIndex = 76442;
 
 	class MonoWeaponHolder : public ::UnityEngine::MonoBehaviour
 	{

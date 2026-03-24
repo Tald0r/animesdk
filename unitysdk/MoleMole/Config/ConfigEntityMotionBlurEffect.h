@@ -5,12 +5,12 @@
 
 namespace MoleMole::Config { class ScreenEffectFloat; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYMOTIONBLUREFFECT_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0x6248000)
-#define MOLEMOLE_CONFIG_CONFIGENTITYMOTIONBLUREFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x62480A0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYMOTIONBLUREFFECT_GETINTENSITY_OFFSET UNITYSDK_OFFSET(0xC235270)
+#define MOLEMOLE_CONFIG_CONFIGENTITYMOTIONBLUREFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xC235310)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityMotionBlurEffect_TypeDefinitionIndex = 68401;
+	inline static constexpr unsigned int ConfigEntityMotionBlurEffect_TypeDefinitionIndex = 56982;
 
 	class ConfigEntityMotionBlurEffect : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{

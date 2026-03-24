@@ -10,7 +10,7 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-inline static constexpr unsigned int Class_1_A6350609FD165F14_1_TypeDefinitionIndex = 56189;
+inline static constexpr unsigned int Class_1_A6350609FD165F14_1_TypeDefinitionIndex = 63467;
 
 template <typename T>
 class Class_1_A6350609FD165F14_1 : public ::System::Object

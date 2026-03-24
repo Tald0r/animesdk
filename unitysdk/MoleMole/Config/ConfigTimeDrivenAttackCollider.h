@@ -6,17 +6,17 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGTIMEDRIVENATTACKCOLLIDER__CTOR_OFFSET UNITYSDK_OFFSET(0xCDBBD80)
+#define MOLEMOLE_CONFIG_CONFIGTIMEDRIVENATTACKCOLLIDER__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A0DF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTimeDrivenAttackCollider_TypeDefinitionIndex = 54225;
+	inline static constexpr unsigned int ConfigTimeDrivenAttackCollider_TypeDefinitionIndex = 76984;
 
 	class ConfigTimeDrivenAttackCollider : public ::System::Object
 	{
 	public:
-		::UnityEngine::Vector3 AngleOffset; // 0x10
-		::UnityEngine::Vector3 PosOffset; // 0x1C
+		::UnityEngine::Vector3 PosOffset; // 0x10
+		::UnityEngine::Vector3 AngleOffset; // 0x1C
 
 		::System::Void _ctor()
 		{

@@ -5,18 +5,18 @@
 namespace MoleMole { class UIHollowMainBottomWidgetController___c__DisplayClass83_0; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS83_1__CTOR_OFFSET UNITYSDK_OFFSET(0xE241B70)
-#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS83_1__SHOWCHANGEAVATARANIM_B__0_OFFSET UNITYSDK_OFFSET(0xE241B80)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS83_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD5B9830)
+#define MOLEMOLE_UIHOLLOWMAINBOTTOMWIDGETCONTROLLER___C__DISPLAYCLASS83_1__SHOWCHANGEAVATARANIM_B__0_OFFSET UNITYSDK_OFFSET(0xD5B9840)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass83_1_TypeDefinitionIndex = 78257;
+	inline static constexpr unsigned int UIHollowMainBottomWidgetController___c__DisplayClass83_1_TypeDefinitionIndex = 76049;
 
 	class UIHollowMainBottomWidgetController___c__DisplayClass83_1 : public ::System::Object
 	{
 	public:
-		::UnityEngine::Transform* tran; // 0x10
-		::MoleMole::UIHollowMainBottomWidgetController___c__DisplayClass83_0* CS___8__locals1; // 0x18
+		::MoleMole::UIHollowMainBottomWidgetController___c__DisplayClass83_0* CS___8__locals1; // 0x10
+		::UnityEngine::Transform* tran; // 0x18
 
 		::System::Void _ctor()
 		{

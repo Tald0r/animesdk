@@ -33,90 +33,95 @@ namespace UnityEngine::Profiling { class CustomSampler; }
 namespace UnityEngine::Rendering::Universal { class ForwardRendererData; }
 namespace UnityEngine::Rendering::Universal { class UniversalRenderPipelineAsset; }
 
-#define MONORENDERENTITY_APPLYNATIVEBACKEND_OFFSET UNITYSDK_OFFSET(0x17BE5E60)
-#define MONORENDERENTITY_AWAKE_OFFSET UNITYSDK_OFFSET(0x17BE6A60)
-#define MONORENDERENTITY_CHECKDAMAGEDECALQUALITY_OFFSET UNITYSDK_OFFSET(0x17BE71F0)
-#define MONORENDERENTITY_CLEANUPDECAL_OFFSET UNITYSDK_OFFSET(0x17BE6D40)
-#define MONORENDERENTITY_CLEANUP_OFFSET UNITYSDK_OFFSET(0x17BE8120)
-#define MONORENDERENTITY_COLLIDERTOCAPSULE_OFFSET UNITYSDK_OFFSET(0x17BE8A50)
-#define MONORENDERENTITY_CREATENATIVEOBJECT_OFFSET UNITYSDK_OFFSET(0x17BE5BA0)
-#define MONORENDERENTITY_CREATERANDOMZROTATIONMATRIX_OFFSET UNITYSDK_OFFSET(0x17BEA180)
-#define MONORENDERENTITY_DESTROYNATIVEOBJECT_OFFSET UNITYSDK_OFFSET(0x17BE5DC0)
-#define MONORENDERENTITY_DISABLEGLOBALDAMAGEDECAL_OFFSET UNITYSDK_OFFSET(0x17BEBD40)
-#define MONORENDERENTITY_FIREDAMAGEDECAL_OFFSET UNITYSDK_OFFSET(0x17BEBAB0)
-#define MONORENDERENTITY_FORCEREFRESH_OFFSET UNITYSDK_OFFSET(0x17BE8420)
-#define MONORENDERENTITY_GETCELLINDEX_OFFSET UNITYSDK_OFFSET(0x17BEA990)
-#define MONORENDERENTITY_GET_ACTUALCONTROLLINGENTITY_OFFSET UNITYSDK_OFFSET(0x17BE5A50)
-#define MONORENDERENTITY_GET_NATIVEHANDLE_OFFSET UNITYSDK_OFFSET(0x17BE5B90)
-#define MONORENDERENTITY_GET_USENATIVEBACKEND_OFFSET UNITYSDK_OFFSET(0x17BE5AD0)
-#define MONORENDERENTITY_INITGUNEYES_OFFSET UNITYSDK_OFFSET(0x17BE7360)
-#define MONORENDERENTITY_INITIALIZEDAMAGEDECALINFO_OFFSET UNITYSDK_OFFSET(0x17BE9200)
-#define MONORENDERENTITY_KILLCELL_OFFSET UNITYSDK_OFFSET(0x17BEA730)
-#define MONORENDERENTITY_ONCUSTOMLIGHTDIRECTIONCHANGED_OFFSET UNITYSDK_OFFSET(0x17BE5990)
-#define MONORENDERENTITY_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x17BE8280)
-#define MONORENDERENTITY_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x17BE8010)
-#define MONORENDERENTITY_ONENABLE_OFFSET UNITYSDK_OFFSET(0x17BE6480)
-#define MONORENDERENTITY_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x17BE6FB0)
-#define MONORENDERENTITY_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x17BE6CC0)
-#define MONORENDERENTITY_RECALCULATECAPSULEAOARRAYS_OFFSET UNITYSDK_OFFSET(0x17BE6580)
-#define MONORENDERENTITY_RECOVERGLOBALDAMAGEDECAL_OFFSET UNITYSDK_OFFSET(0x17BEBFF0)
-#define MONORENDERENTITY_REFRESHIMPL_OFFSET UNITYSDK_OFFSET(0x17BE8380)
-#define MONORENDERENTITY_REFRESH_OFFSET UNITYSDK_OFFSET(0x17BE8330)
-#define MONORENDERENTITY_REGISTERENTITYFORCG_OFFSET UNITYSDK_OFFSET(0x17BE6F60)
-#define MONORENDERENTITY_REGISTERENTITY_OFFSET UNITYSDK_OFFSET(0x17BE6AB0)
-#define MONORENDERENTITY_SELFUPDATE_OFFSET UNITYSDK_OFFSET(0x17BE8470)
-#define MONORENDERENTITY_SETGUNEYEMATERIAL_OFFSET UNITYSDK_OFFSET(0x17BEC300)
-#define MONORENDERENTITY_SETUPNATIVE_OFFSET UNITYSDK_OFFSET(0x17BE5F10)
-#define MONORENDERENTITY_SET_USENATIVEBACKEND_OFFSET UNITYSDK_OFFSET(0x17BE5B30)
-#define MONORENDERENTITY_SHUFFLEOVERLAYINDEX_OFFSET UNITYSDK_OFFSET(0x17BEB630)
-#define MONORENDERENTITY_SPAWNDECAL_OFFSET UNITYSDK_OFFSET(0x17BEA3D0)
-#define MONORENDERENTITY_SYNCWITHMONORENDERENTITYBUTTON_OFFSET UNITYSDK_OFFSET(0x17BE5950)
-#define MONORENDERENTITY_UPDATECELLSTATE_OFFSET UNITYSDK_OFFSET(0x17BE7010)
-#define MONORENDERENTITY_UPDATEMONSTERMATERIALPARAMETERS_OFFSET UNITYSDK_OFFSET(0x17BEAA30)
-#define MONORENDERENTITY_VALIDATEENTITYVISIBILITYUPDATE_OFFSET UNITYSDK_OFFSET(0x17BE72C0)
-#define MONORENDERENTITY__CCTOR_OFFSET UNITYSDK_OFFSET(0x17BECB90)
-#define MONORENDERENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x17BEC860)
+#define MONORENDERENTITY_APPLYNATIVEBACKEND_OFFSET UNITYSDK_OFFSET(0x182CE5C0)
+#define MONORENDERENTITY_AWAKE_OFFSET UNITYSDK_OFFSET(0x182CF0C0)
+#define MONORENDERENTITY_CHECKDAMAGEDECALQUALITY_OFFSET UNITYSDK_OFFSET(0x182CF990)
+#define MONORENDERENTITY_CLEANUPDECAL_OFFSET UNITYSDK_OFFSET(0x182CF4E0)
+#define MONORENDERENTITY_CLEANUP_OFFSET UNITYSDK_OFFSET(0x182D07B0)
+#define MONORENDERENTITY_COLLIDERTOCAPSULE_OFFSET UNITYSDK_OFFSET(0x182D10E0)
+#define MONORENDERENTITY_CREATENATIVEOBJECT_OFFSET UNITYSDK_OFFSET(0x182CE300)
+#define MONORENDERENTITY_CREATERANDOMZROTATIONMATRIX_OFFSET UNITYSDK_OFFSET(0x182D2810)
+#define MONORENDERENTITY_DESTROYNATIVEOBJECT_OFFSET UNITYSDK_OFFSET(0x182CE520)
+#define MONORENDERENTITY_DISABLEGLOBALDAMAGEDECAL_OFFSET UNITYSDK_OFFSET(0x182D43D0)
+#define MONORENDERENTITY_FIREDAMAGEDECAL_OFFSET UNITYSDK_OFFSET(0x182D4140)
+#define MONORENDERENTITY_FORCEREFRESH_OFFSET UNITYSDK_OFFSET(0x182D0AB0)
+#define MONORENDERENTITY_GETCELLINDEX_OFFSET UNITYSDK_OFFSET(0x182D3020)
+#define MONORENDERENTITY_GET_ACTUALCONTROLLINGENTITY_OFFSET UNITYSDK_OFFSET(0x182CE1B0)
+#define MONORENDERENTITY_GET_NATIVEHANDLE_OFFSET UNITYSDK_OFFSET(0x182CE2F0)
+#define MONORENDERENTITY_GET_USENATIVEBACKEND_OFFSET UNITYSDK_OFFSET(0x182CE230)
+#define MONORENDERENTITY_INITGUNEYES_OFFSET UNITYSDK_OFFSET(0x182CFB00)
+#define MONORENDERENTITY_INITIALIZEDAMAGEDECALINFO_OFFSET UNITYSDK_OFFSET(0x182D1890)
+#define MONORENDERENTITY_KILLCELL_OFFSET UNITYSDK_OFFSET(0x182D2DC0)
+#define MONORENDERENTITY_ONCUSTOMLIGHTDIRECTIONCHANGED_OFFSET UNITYSDK_OFFSET(0x182CDFD0)
+#define MONORENDERENTITY_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x182D0910)
+#define MONORENDERENTITY_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x182CDD30)
+#define MONORENDERENTITY_ONENABLE_OFFSET UNITYSDK_OFFSET(0x182CDB90)
+#define MONORENDERENTITY_ONLIGHTWEIGHTACTIVE_OFFSET UNITYSDK_OFFSET(0x182CDED0)
+#define MONORENDERENTITY_ONLIGHTWEIGHTDEACTIVE_OFFSET UNITYSDK_OFFSET(0x182CDF30)
+#define MONORENDERENTITY_ONREALDISABLE_OFFSET UNITYSDK_OFFSET(0x182CDDD0)
+#define MONORENDERENTITY_ONREALENABLE_OFFSET UNITYSDK_OFFSET(0x182CDC30)
+#define MONORENDERENTITY_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x182CF750)
+#define MONORENDERENTITY_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0x182CF460)
+#define MONORENDERENTITY_RECALCULATECAPSULEAOARRAYS_OFFSET UNITYSDK_OFFSET(0x182CEBE0)
+#define MONORENDERENTITY_RECOVERGLOBALDAMAGEDECAL_OFFSET UNITYSDK_OFFSET(0x182D4680)
+#define MONORENDERENTITY_REFRESHIMPL_OFFSET UNITYSDK_OFFSET(0x182D0A10)
+#define MONORENDERENTITY_REFRESH_OFFSET UNITYSDK_OFFSET(0x182D09C0)
+#define MONORENDERENTITY_REGISTERENTITYFORCG_OFFSET UNITYSDK_OFFSET(0x182CF700)
+#define MONORENDERENTITY_REGISTERENTITY_OFFSET UNITYSDK_OFFSET(0x182CF250)
+#define MONORENDERENTITY_SELFUPDATE_OFFSET UNITYSDK_OFFSET(0x182D0B00)
+#define MONORENDERENTITY_SETGUNEYEMATERIAL_OFFSET UNITYSDK_OFFSET(0x182D4990)
+#define MONORENDERENTITY_SETUPNATIVE_OFFSET UNITYSDK_OFFSET(0x182CE670)
+#define MONORENDERENTITY_SET_USENATIVEBACKEND_OFFSET UNITYSDK_OFFSET(0x182CE290)
+#define MONORENDERENTITY_SHUFFLEOVERLAYINDEX_OFFSET UNITYSDK_OFFSET(0x182D3CC0)
+#define MONORENDERENTITY_SPAWNDECAL_OFFSET UNITYSDK_OFFSET(0x182D2A60)
+#define MONORENDERENTITY_SYNCWITHMONORENDERENTITYBUTTON_OFFSET UNITYSDK_OFFSET(0x182CDF90)
+#define MONORENDERENTITY_UPDATECELLSTATE_OFFSET UNITYSDK_OFFSET(0x182CF7B0)
+#define MONORENDERENTITY_UPDATEMONSTERMATERIALPARAMETERS_OFFSET UNITYSDK_OFFSET(0x182D30C0)
+#define MONORENDERENTITY_UPDATENATIVEPEROBJECTSHADOWRESOLVEALPHA_OFFSET UNITYSDK_OFFSET(0x182CE090)
+#define MONORENDERENTITY_VALIDATEENTITYVISIBILITYUPDATE_OFFSET UNITYSDK_OFFSET(0x182CFA60)
+#define MONORENDERENTITY__CCTOR_OFFSET UNITYSDK_OFFSET(0x182D5220)
+#define MONORENDERENTITY__CTOR_OFFSET UNITYSDK_OFFSET(0x182D4EF0)
 
-inline static constexpr unsigned int MonoRenderEntity_TypeDefinitionIndex = 28109;
+inline static constexpr unsigned int MonoRenderEntity_TypeDefinitionIndex = 29047;
 
 class MonoRenderEntity : public ::UnityEngine::MonoBehaviour
 {
 public:
+	static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_RecalculateCapsuleAOArrays()
+	{
+		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x227B0);
+	}
 	static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_InitGunEyes()
 	{
-		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x21130);
-	}
-	static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_InitializeDamageDecalInfo()
-	{
-		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x21138);
-	}
-	static ::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>** StaticGet_cachedPairs()
-	{
-		return (::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x21140);
+		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x227B8);
 	}
 	static ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::MonoRenderEntity_MonsterDecalInfo*>** StaticGet_DamageDecalTargetsInfo()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::MonoRenderEntity_MonsterDecalInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x21148);
+		return (::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::MonoRenderEntity_MonsterDecalInfo*>**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x227C0);
 	}
-	static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_RecalculateCapsuleAOArrays()
+	static ::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>** StaticGet_cachedPairs()
 	{
-		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x21150);
+		return (::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x227C8);
 	}
-	static ::System::Boolean* StaticGet_enableDamageDecalPerformanceTest()
+	static ::UnityEngine::Profiling::CustomSampler** StaticGet_sampler_InitializeDamageDecalInfo()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x5910);
+		return (::UnityEngine::Profiling::CustomSampler**)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x227D0);
 	}
 	static ::System::Boolean* StaticGet__UseNativeBackend_k__BackingField()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x5911);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x59F0);
 	}
 	static ::System::Boolean* StaticGet_modelReceiveDecal()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x5912);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x59F1);
+	}
+	static ::System::Boolean* StaticGet_enableDamageDecalPerformanceTest()
+	{
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x59F2);
 	}
 	static ::System::Int32* StaticGet_defaultDamageDecalLevel()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x5914);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MonoRenderEntity_TypeDefinitionIndex)->GetStaticField(0x59F4);
 	}
 	// static const ::System::Single DECAL_KILL_INTERVAL; // 0x0
 	::System::Boolean syncWithMonoRenderEntity; // 0x18
@@ -135,9 +140,10 @@ public:
 	::System::Boolean useCustomLightDirection; // 0x5A
 	::UnityEngine::Vector3 customLightDirection; // 0x5C
 	::System::Single perObjectShadowAlpha; // 0x68
-	::System::Boolean rayCastForCullingSphere; // 0x6C
-	::System::Boolean perObjectShadowOptimizeSize; // 0x6D
-	::System::Single perObjectShadowMaxBoundsSize; // 0x70
+	::System::Single perObjectShadowResolveAlpha; // 0x6C
+	::System::Boolean rayCastForCullingSphere; // 0x70
+	::System::Boolean perObjectShadowOptimizeSize; // 0x71
+	::System::Single perObjectShadowMaxBoundsSize; // 0x74
 	::System::Collections::Generic::List_1<::UnityEngine::Renderer*>* perObjectShadowLowPriorityRenderers; // 0x78
 	::UnityEngine::Vector4 headSphereNormalCenter; // 0x80
 	::Il2CppArray<::UnityEngine::Renderer*>* lodIndexedRenderers; // 0x90
@@ -228,6 +234,26 @@ public:
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + MONORENDERENTITY__CCTOR_OFFSET))();
 	}
 
+	::System::Void OnEnable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONENABLE_OFFSET))(this);
+	}
+
+	::System::Void OnDisable()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONDISABLE_OFFSET))(this);
+	}
+
+	::System::Void OnLightweightActive()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONLIGHTWEIGHTACTIVE_OFFSET))(this);
+	}
+
+	::System::Void OnLightweightDeactive()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONLIGHTWEIGHTDEACTIVE_OFFSET))(this);
+	}
+
 	::System::Void SyncWithMonoRenderEntityButton()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_SYNCWITHMONORENDERENTITYBUTTON_OFFSET))(this);
@@ -236,6 +262,11 @@ public:
 	::System::Void OnCustomLightDirectionChanged()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONCUSTOMLIGHTDIRECTIONCHANGED_OFFSET))(this);
+	}
+
+	::System::Void UpdateNativePerObjectShadowResolveAlpha()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_UPDATENATIVEPEROBJECTSHADOWRESOLVEALPHA_OFFSET))(this);
 	}
 
 	::System::Boolean get_ActualControllingEntity()
@@ -278,9 +309,9 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_SETUPNATIVE_OFFSET))(this);
 	}
 
-	::System::Void OnEnable()
+	::System::Void OnRealEnable()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONENABLE_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONREALENABLE_OFFSET))(this);
 	}
 
 	::System::Void Awake()
@@ -308,9 +339,9 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_REGISTERENTITY_OFFSET))(this);
 	}
 
-	::System::Void OnDisable()
+	::System::Void OnRealDisable()
 	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONDISABLE_OFFSET))(this);
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MONORENDERENTITY_ONREALDISABLE_OFFSET))(this);
 	}
 
 	::System::Void OnDestroy()

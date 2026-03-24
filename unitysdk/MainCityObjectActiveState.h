@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int MainCityObjectActiveState_TypeDefinitionIndex = 43475;
+inline static constexpr unsigned int MainCityObjectActiveState_TypeDefinitionIndex = 66794;
 
 enum class MainCityObjectActiveState : ::System::Int32
 {

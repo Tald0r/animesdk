@@ -5,24 +5,24 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_CAMERAS_NAPVIRTUALPIPELINECAMERA___C_METHOD_1_8047E14E3FC3F341_OFFSET UNITYSDK_OFFSET(0x80249A0)
-#define MOLEMOLE_CAMERAS_NAPVIRTUALPIPELINECAMERA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8024950)
-#define MOLEMOLE_CAMERAS_NAPVIRTUALPIPELINECAMERA___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8024990)
+#define MOLEMOLE_CAMERAS_NAPVIRTUALPIPELINECAMERA___C_METHOD_1_8047E14E3FC3F341_OFFSET UNITYSDK_OFFSET(0x9CD8850)
+#define MOLEMOLE_CAMERAS_NAPVIRTUALPIPELINECAMERA___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9CD8800)
+#define MOLEMOLE_CAMERAS_NAPVIRTUALPIPELINECAMERA___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9CD8840)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int NapVirtualPipelineCamera___c_TypeDefinitionIndex = 66554;
+	inline static constexpr unsigned int NapVirtualPipelineCamera___c_TypeDefinitionIndex = 77104;
 
 	class NapVirtualPipelineCamera___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::Cameras::NapVirtualPipelineCamera___c** StaticGet___9()
-		{
-			return (::MoleMole::Cameras::NapVirtualPipelineCamera___c**)Il2CppClass::FromTypeDefinitionIndex(NapVirtualPipelineCamera___c_TypeDefinitionIndex)->GetStaticField(0x2C180);
-		}
 		static ::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>** StaticGet___9__38_0()
 		{
-			return (::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(NapVirtualPipelineCamera___c_TypeDefinitionIndex)->GetStaticField(0x2C188);
+			return (::System::Func_2<::UnityEngine::RaycastHit, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(NapVirtualPipelineCamera___c_TypeDefinitionIndex)->GetStaticField(0x2D960);
+		}
+		static ::MoleMole::Cameras::NapVirtualPipelineCamera___c** StaticGet___9()
+		{
+			return (::MoleMole::Cameras::NapVirtualPipelineCamera___c**)Il2CppClass::FromTypeDefinitionIndex(NapVirtualPipelineCamera___c_TypeDefinitionIndex)->GetStaticField(0x2D968);
 		}
 
 		static ::System::Void _cctor()

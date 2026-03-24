@@ -6,7 +6,7 @@ namespace UnityEngine { class AnimationCurve; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ScreenEffectValue_1_TypeDefinitionIndex = 41728;
+	inline static constexpr unsigned int ScreenEffectValue_1_TypeDefinitionIndex = 58764;
 
 	template <typename T>
 	class ScreenEffectValue_1 : public ::System::Object

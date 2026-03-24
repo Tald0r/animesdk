@@ -5,13 +5,13 @@
 namespace System { class Exception; }
 namespace System::Threading::Tasks { template <typename T> class Task_1; }
 
-#define QWER_CTASKHELPER___C__DISPLAYCLASS0_0__CREATEPENDINGTASK_B__0_OFFSET UNITYSDK_OFFSET(0x1AA21D00)
-#define QWER_CTASKHELPER___C__DISPLAYCLASS0_0__CREATEPENDINGTASK_G__CBACTION_1_OFFSET UNITYSDK_OFFSET(0x1AA21D10)
-#define QWER_CTASKHELPER___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA21B00)
+#define QWER_CTASKHELPER___C__DISPLAYCLASS0_0__CREATEPENDINGTASK_B__0_OFFSET UNITYSDK_OFFSET(0x1B011A30)
+#define QWER_CTASKHELPER___C__DISPLAYCLASS0_0__CREATEPENDINGTASK_G__CBACTION_1_OFFSET UNITYSDK_OFFSET(0x1B011A40)
+#define QWER_CTASKHELPER___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B011830)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CTaskHelper___c__DisplayClass0_0_TypeDefinitionIndex = 82100;
+	inline static constexpr unsigned int CTaskHelper___c__DisplayClass0_0_TypeDefinitionIndex = 84141;
 
 	class CTaskHelper___c__DisplayClass0_0 : public ::System::Object
 	{

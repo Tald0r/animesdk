@@ -8,19 +8,19 @@ namespace MoleMole { class MonoGamepadModule; }
 namespace MoleMole { class MonoGamepadRegion; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_SHOPPINGMALLRECOMMENDATIONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD1A1930)
+#define MOLEMOLE_SHOPPINGMALLRECOMMENDATIONCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6ED5B60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ShoppingMallRecommendationContext_TypeDefinitionIndex = 38729;
+	inline static constexpr unsigned int ShoppingMallRecommendationContext_TypeDefinitionIndex = 67406;
 
 	class ShoppingMallRecommendationContext : public ::MoleMole::ShoppingMallBaseContextBase
 	{
 	public:
-		::Class_1_E43D938AEBE01021* tabData; // 0x58
-		::Class_2_60DDD9C206686F44* Down_PreviewBtn; // 0x60
+		::MoleMole::MonoGamepadModule* singleBuyModule; // 0x58
+		::Class_1_E43D938AEBE01021* tabData; // 0x60
 		::Class_2_60DDD9C206686F44* Down_BuyBtn; // 0x68
-		::MoleMole::MonoGamepadModule* singleBuyModule; // 0x70
+		::Class_2_60DDD9C206686F44* Down_PreviewBtn; // 0x70
 
 		::System::Void _ctor(::MoleMole::MonoGamepadModule* singleBuyButton, ::Class_1_E43D938AEBE01021* tabData, ::MoleMole::MonoGamepadRegion* region, ::Class_2_60DDD9C206686F44* Down_BuyBtn, ::Class_2_60DDD9C206686F44* Down_PreviewBtn, ::System::Action_1<::System::Int32>* onClick)
 		{

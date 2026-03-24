@@ -5,18 +5,18 @@
 namespace MoleMole { class UIMonsterFantasyBossInfoPageController; }
 namespace MoleMole { class UIMonsterFantasyBossInfoPageController_PageContext; }
 
-#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS63_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB74D40)
-#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS63_0__ONCHECKBTNCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xAB74D50)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS63_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA225780)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSINFOPAGECONTROLLER___C__DISPLAYCLASS63_0__ONCHECKBTNCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xA225790)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyBossInfoPageController___c__DisplayClass63_0_TypeDefinitionIndex = 63389;
+	inline static constexpr unsigned int UIMonsterFantasyBossInfoPageController___c__DisplayClass63_0_TypeDefinitionIndex = 53018;
 
 	class UIMonsterFantasyBossInfoPageController___c__DisplayClass63_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIMonsterFantasyBossInfoPageController* __4__this; // 0x10
-		::MoleMole::UIMonsterFantasyBossInfoPageController_PageContext* context; // 0x18
+		::MoleMole::UIMonsterFantasyBossInfoPageController_PageContext* context; // 0x10
+		::MoleMole::UIMonsterFantasyBossInfoPageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

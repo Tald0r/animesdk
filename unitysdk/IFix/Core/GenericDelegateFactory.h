@@ -10,29 +10,29 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Reflection { class MethodInfo; }
 
-#define IFIX_CORE_GENERICDELEGATEFACTORY_CREATE_OFFSET UNITYSDK_OFFSET(0x19914060)
-#define IFIX_CORE_GENERICDELEGATEFACTORY_PREVENTSTRIPPING_OFFSET UNITYSDK_OFFSET(0x19913F10)
-#define IFIX_CORE_GENERICDELEGATEFACTORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19914E30)
-#define IFIX_CORE_GENERICDELEGATEFACTORY__CTOR_OFFSET UNITYSDK_OFFSET(0x19914E20)
+#define IFIX_CORE_GENERICDELEGATEFACTORY_CREATE_OFFSET UNITYSDK_OFFSET(0x19EAE080)
+#define IFIX_CORE_GENERICDELEGATEFACTORY_PREVENTSTRIPPING_OFFSET UNITYSDK_OFFSET(0x19EADF30)
+#define IFIX_CORE_GENERICDELEGATEFACTORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x19EAEE60)
+#define IFIX_CORE_GENERICDELEGATEFACTORY__CTOR_OFFSET UNITYSDK_OFFSET(0x19EAEE50)
 
 namespace IFix::Core
 {
-	inline static constexpr unsigned int GenericDelegateFactory_TypeDefinitionIndex = 6793;
+	inline static constexpr unsigned int GenericDelegateFactory_TypeDefinitionIndex = 6797;
 
 	class GenericDelegateFactory : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::System::Reflection::MethodInfo*>** StaticGet_genericFunc()
 		{
-			return (::Il2CppArray<::System::Reflection::MethodInfo*>**)Il2CppClass::FromTypeDefinitionIndex(GenericDelegateFactory_TypeDefinitionIndex)->GetStaticField(0x5BD0);
+			return (::Il2CppArray<::System::Reflection::MethodInfo*>**)Il2CppClass::FromTypeDefinitionIndex(GenericDelegateFactory_TypeDefinitionIndex)->GetStaticField(0x5C10);
 		}
 		static ::Il2CppArray<::System::Reflection::MethodInfo*>** StaticGet_genericAction()
 		{
-			return (::Il2CppArray<::System::Reflection::MethodInfo*>**)Il2CppClass::FromTypeDefinitionIndex(GenericDelegateFactory_TypeDefinitionIndex)->GetStaticField(0x5BD8);
+			return (::Il2CppArray<::System::Reflection::MethodInfo*>**)Il2CppClass::FromTypeDefinitionIndex(GenericDelegateFactory_TypeDefinitionIndex)->GetStaticField(0x5C18);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Func_2<::IFix::Core::GenericDelegate*, ::System::Delegate*>*>** StaticGet_genericDelegateCreatorCache()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Func_2<::IFix::Core::GenericDelegate*, ::System::Delegate*>*>**)Il2CppClass::FromTypeDefinitionIndex(GenericDelegateFactory_TypeDefinitionIndex)->GetStaticField(0x5BE0);
+			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Func_2<::IFix::Core::GenericDelegate*, ::System::Delegate*>*>**)Il2CppClass::FromTypeDefinitionIndex(GenericDelegateFactory_TypeDefinitionIndex)->GetStaticField(0x5C20);
 		}
 
 		::System::Void _ctor()

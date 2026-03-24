@@ -5,17 +5,17 @@
 #include "unitysdk/System/Nullable_1.h"
 #include "unitysdk/System/ValueType.h"
 
-#define STRUCT_2_9CA189FF4A6EA6EE__CCTOR_OFFSET UNITYSDK_OFFSET(0x74EDD00)
-#define STRUCT_2_9CA189FF4A6EA6EE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x325A30)
-#define STRUCT_2_9CA189FF4A6EA6EE__CTOR_OFFSET UNITYSDK_OFFSET(0x325A10)
+#define STRUCT_2_9CA189FF4A6EA6EE__CCTOR_OFFSET UNITYSDK_OFFSET(0x8E26500)
+#define STRUCT_2_9CA189FF4A6EA6EE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x3624C0)
+#define STRUCT_2_9CA189FF4A6EA6EE__CTOR_OFFSET UNITYSDK_OFFSET(0x3624A0)
 
-inline static constexpr unsigned int Struct_2_9CA189FF4A6EA6EE_TypeDefinitionIndex = 63826;
+inline static constexpr unsigned int Struct_2_9CA189FF4A6EA6EE_TypeDefinitionIndex = 79042;
 
 struct alignas(4) Struct_2_9CA189FF4A6EA6EE
 {
 	static ::Struct_2_9CA189FF4A6EA6EE* StaticGet_Field_2_4()
 	{
-		return (::Struct_2_9CA189FF4A6EA6EE*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_9CA189FF4A6EA6EE_TypeDefinitionIndex)->GetStaticField(0xBBF0);
+		return (::Struct_2_9CA189FF4A6EA6EE*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_9CA189FF4A6EA6EE_TypeDefinitionIndex)->GetStaticField(0x99B0);
 	}
 	::System::Int32 Field_2_0; // 0x10
 	::System::Int32 Field_2_1; // 0x14

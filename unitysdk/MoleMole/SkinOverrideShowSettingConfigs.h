@@ -5,12 +5,12 @@
 namespace MoleMole { class SkinOverrideShowSetting; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_SKINOVERRIDESHOWSETTINGCONFIGS_SAVEOVERRIDESHOWSETTINGCONFIG_OFFSET UNITYSDK_OFFSET(0xB3C2DA0)
-#define MOLEMOLE_SKINOVERRIDESHOWSETTINGCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xB3C2D20)
+#define MOLEMOLE_SKINOVERRIDESHOWSETTINGCONFIGS_SAVEOVERRIDESHOWSETTINGCONFIG_OFFSET UNITYSDK_OFFSET(0xA65B220)
+#define MOLEMOLE_SKINOVERRIDESHOWSETTINGCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xA65B1A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SkinOverrideShowSettingConfigs_TypeDefinitionIndex = 42808;
+	inline static constexpr unsigned int SkinOverrideShowSettingConfigs_TypeDefinitionIndex = 43029;
 
 	class SkinOverrideShowSettingConfigs : public ::System::Object
 	{

@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneFootPrint_FrameStepOnGroundSegment_TypeDefinitionIndex = 62740;
+	inline static constexpr unsigned int AnimatorZoneFootPrint_FrameStepOnGroundSegment_TypeDefinitionIndex = 57593;
 
 	struct alignas(4) AnimatorZoneFootPrint_FrameStepOnGroundSegment
 	{

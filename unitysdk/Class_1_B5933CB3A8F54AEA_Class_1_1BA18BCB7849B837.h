@@ -7,17 +7,17 @@ class Class_1_B5933CB3A8F54AEA_Class_1_C466B1A39A0A9DF5;
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class GameObject; }
 
-#define CLASS_1_B5933CB3A8F54AEA_CLASS_1_1BA18BCB7849B837_METHOD_1_A5B1555CB84EFA34_OFFSET UNITYSDK_OFFSET(0x9A8B460)
-#define CLASS_1_B5933CB3A8F54AEA_CLASS_1_1BA18BCB7849B837__CTOR_OFFSET UNITYSDK_OFFSET(0x9A8B450)
+#define CLASS_1_B5933CB3A8F54AEA_CLASS_1_1BA18BCB7849B837_METHOD_1_A5B1555CB84EFA34_OFFSET UNITYSDK_OFFSET(0x1566E720)
+#define CLASS_1_B5933CB3A8F54AEA_CLASS_1_1BA18BCB7849B837__CTOR_OFFSET UNITYSDK_OFFSET(0x1566E710)
 
-inline static constexpr unsigned int Class_1_B5933CB3A8F54AEA_Class_1_1BA18BCB7849B837_TypeDefinitionIndex = 45826;
+inline static constexpr unsigned int Class_1_B5933CB3A8F54AEA_Class_1_1BA18BCB7849B837_TypeDefinitionIndex = 53610;
 
 class Class_1_B5933CB3A8F54AEA_Class_1_1BA18BCB7849B837 : public ::System::Object
 {
 public:
-	::UnityEngine::GameObject* Field_1_0; // 0x10
-	::Class_1_B5933CB3A8F54AEA_Class_1_C466B1A39A0A9DF5* Field_1_2; // 0x18
-	::Foundation::AssetPath Field_1_1; // 0x20
+	::Foundation::AssetPath Field_1_1; // 0x10
+	::Class_1_B5933CB3A8F54AEA_Class_1_C466B1A39A0A9DF5* Field_1_2; // 0x20
+	::UnityEngine::GameObject* Field_1_0; // 0x28
 
 	::System::Void _ctor()
 	{

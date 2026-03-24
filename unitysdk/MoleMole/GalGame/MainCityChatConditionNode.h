@@ -9,12 +9,12 @@ namespace MoleMole::GalGame { class BranchItem; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATCONDITIONNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0x9911350)
-#define MOLEMOLE_GALGAME_MAINCITYCHATCONDITIONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9911310)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCONDITIONNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xA50C380)
+#define MOLEMOLE_GALGAME_MAINCITYCHATCONDITIONNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA50C340)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatConditionNode_TypeDefinitionIndex = 70950;
+	inline static constexpr unsigned int MainCityChatConditionNode_TypeDefinitionIndex = 76667;
 
 	class MainCityChatConditionNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
 	{

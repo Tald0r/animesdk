@@ -5,7 +5,7 @@ namespace System { class String; }
 
 namespace NPCModule::Animation
 {
-	inline static constexpr unsigned int INpcAnimationPlayer_TypeDefinitionIndex = 69329;
+	inline static constexpr unsigned int INpcAnimationPlayer_TypeDefinitionIndex = 77745;
 
 	class INpcAnimationPlayer
 	{

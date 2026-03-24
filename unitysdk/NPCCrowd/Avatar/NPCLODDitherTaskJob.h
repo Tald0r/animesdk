@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define NPCCROWD_AVATAR_NPCLODDITHERTASKJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x329DD0)
+#define NPCCROWD_AVATAR_NPCLODDITHERTASKJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x355E30)
 
 namespace NPCCrowd::Avatar
 {
-	inline static constexpr unsigned int NPCLODDitherTaskJob_TypeDefinitionIndex = 63129;
+	inline static constexpr unsigned int NPCLODDitherTaskJob_TypeDefinitionIndex = 55934;
 
 	struct alignas(4) NPCLODDitherTaskJob
 	{

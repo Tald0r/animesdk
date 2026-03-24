@@ -3,18 +3,18 @@
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int EReloadGroupReason_TypeDefinitionIndex = 37761;
+	inline static constexpr unsigned int EReloadGroupReason_TypeDefinitionIndex = 52611;
 
 	enum class EReloadGroupReason : ::System::Int32
 	{
-		Default = 0,
-		GraphNode_RollbackPoint = 6,
+		ServerNotify = 1,
+		GraphNode_ReloadSuite = 8,
 		TeamAllDead_Revive = 5,
 		TeamAllDead = 4,
-		GraphNode_ReloadSuite = 8,
-		GM = 2,
+		GraphNode_RollbackPoint = 6,
 		TeamChange = 7,
-		ServerNotify = 1,
+		GM = 2,
+		Default = 0,
 		Unstuck = 3,
 	};
 }

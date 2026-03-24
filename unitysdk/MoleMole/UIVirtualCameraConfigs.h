@@ -7,11 +7,11 @@ namespace MoleMole { class UIVirtualNpcConfig; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIVIRTUALCAMERACONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xAE9C210)
+#define MOLEMOLE_UIVIRTUALCAMERACONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0x9EED520)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVirtualCameraConfigs_TypeDefinitionIndex = 61420;
+	inline static constexpr unsigned int UIVirtualCameraConfigs_TypeDefinitionIndex = 74006;
 
 	class UIVirtualCameraConfigs : public ::System::Object
 	{

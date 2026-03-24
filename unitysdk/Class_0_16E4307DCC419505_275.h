@@ -1,9 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace MoleMole { class UITabBtn03Row_IconWidgetController; }
-
-inline static constexpr unsigned int Class_0_16E4307DCC419505_275_TypeDefinitionIndex = 40616;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_275_TypeDefinitionIndex = 40712;
 
 class Class_0_16E4307DCC419505_275
 {

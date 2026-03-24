@@ -4,28 +4,28 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define CLASS_1_1D3B4D4A0A45D58A_DISPOSE_OFFSET UNITYSDK_OFFSET(0x6C36570)
-#define CLASS_1_1D3B4D4A0A45D58A_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0x6C366C0)
-#define CLASS_1_1D3B4D4A0A45D58A_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x6C36630)
-#define CLASS_1_1D3B4D4A0A45D58A__CTOR_OFFSET UNITYSDK_OFFSET(0x6C366B0)
+#define CLASS_1_1D3B4D4A0A45D58A_DISPOSE_OFFSET UNITYSDK_OFFSET(0xE8235B0)
+#define CLASS_1_1D3B4D4A0A45D58A_METHOD_1_CA373AA1C7054598_1_OFFSET UNITYSDK_OFFSET(0xE823680)
+#define CLASS_1_1D3B4D4A0A45D58A_METHOD_1_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xE823720)
+#define CLASS_1_1D3B4D4A0A45D58A__CTOR_OFFSET UNITYSDK_OFFSET(0xE823710)
 
-inline static constexpr unsigned int Class_1_1D3B4D4A0A45D58A_TypeDefinitionIndex = 57674;
+inline static constexpr unsigned int Class_1_1D3B4D4A0A45D58A_TypeDefinitionIndex = 57132;
 
 class Class_1_1D3B4D4A0A45D58A : public ::System::Object
 {
 public:
-	::MoleMole::Battle::Entity* Field_1_11; // 0x10
-	::MoleMole::Battle::Entity* Field_1_5; // 0x18
-	::MoleMole::Battle::Entity* Field_1_8; // 0x20
-	::MoleMole::Battle::Entity* Field_1_9; // 0x28
-	::MoleMole::Battle::Entity* Field_1_2; // 0x30
-	::MoleMole::Battle::Entity* Field_1_7; // 0x38
-	::MoleMole::Battle::Entity* Field_1_3; // 0x40
-	::System::Boolean Field_1_12; // 0x48
-	::System::Boolean Field_1_4; // 0x49
-	::System::Boolean Field_1_0; // 0x4A
-	::System::Int32 Field_1_1; // 0x4C
-	::System::Single Field_1_10; // 0x50
+	::MoleMole::Battle::Entity* Field_1_3; // 0x10
+	::MoleMole::Battle::Entity* Field_1_9; // 0x18
+	::MoleMole::Battle::Entity* Field_1_5; // 0x20
+	::MoleMole::Battle::Entity* Field_1_7; // 0x28
+	::MoleMole::Battle::Entity* Field_1_8; // 0x30
+	::MoleMole::Battle::Entity* Field_1_11; // 0x38
+	::MoleMole::Battle::Entity* Field_1_2; // 0x40
+	::System::Boolean Field_1_0; // 0x48
+	::System::Boolean Field_1_12; // 0x49
+	::System::Boolean Field_1_4; // 0x4A
+	::System::Single Field_1_10; // 0x4C
+	::System::Int32 Field_1_1; // 0x50
 	::System::Double Field_1_6; // 0x58
 
 	::System::Void _ctor()

@@ -6,21 +6,21 @@ namespace NodeCanvas::Framework { class SignalDefinition_SignalDefinitionProxy; 
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x19165380)
-#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT_GET_CURRENTCONTEXT_OFFSET UNITYSDK_OFFSET(0x191651B0)
-#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT_REINITRUNTIMECONTEXT_OFFSET UNITYSDK_OFFSET(0x19165220)
-#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x191652F0)
+#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x195574D0)
+#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT_GET_CURRENTCONTEXT_OFFSET UNITYSDK_OFFSET(0x19557300)
+#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT_REINITRUNTIMECONTEXT_OFFSET UNITYSDK_OFFSET(0x19557370)
+#define NODECANVAS_FRAMEWORK_NODECANVASRUNTIMECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x19557440)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int NodeCanvasRuntimeContext_TypeDefinitionIndex = 25592;
+	inline static constexpr unsigned int NodeCanvasRuntimeContext_TypeDefinitionIndex = 27075;
 
 	class NodeCanvasRuntimeContext : public ::System::Object
 	{
 	public:
 		static ::NodeCanvas::Framework::NodeCanvasRuntimeContext** StaticGet__nodeCanvasRuntimeContext()
 		{
-			return (::NodeCanvas::Framework::NodeCanvasRuntimeContext**)Il2CppClass::FromTypeDefinitionIndex(NodeCanvasRuntimeContext_TypeDefinitionIndex)->GetStaticField(0x1F530);
+			return (::NodeCanvas::Framework::NodeCanvasRuntimeContext**)Il2CppClass::FromTypeDefinitionIndex(NodeCanvasRuntimeContext_TypeDefinitionIndex)->GetStaticField(0x201B0);
 		}
 		::System::Collections::Generic::Dictionary_2<::System::String*, ::NodeCanvas::Framework::SignalDefinition_SignalDefinitionProxy*>* InvokeProxyMap; // 0x10
 

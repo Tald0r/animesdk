@@ -7,18 +7,18 @@
 namespace MoleMole { class UIOverlordFeastServePageController___c__DisplayClass36_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS36_2__CTOR_OFFSET UNITYSDK_OFFSET(0xAF5E5F0)
-#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS36_2__ONSELECTCHILD_B__0_OFFSET UNITYSDK_OFFSET(0xAF5E600)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS36_2__CTOR_OFFSET UNITYSDK_OFFSET(0xB4123B0)
+#define MOLEMOLE_UIOVERLORDFEASTSERVEPAGECONTROLLER___C__DISPLAYCLASS36_2__ONSELECTCHILD_B__0_OFFSET UNITYSDK_OFFSET(0xB4123C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass36_2_TypeDefinitionIndex = 78942;
+	inline static constexpr unsigned int UIOverlordFeastServePageController___c__DisplayClass36_2_TypeDefinitionIndex = 47743;
 
 	class UIOverlordFeastServePageController___c__DisplayClass36_2 : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::MoleMole::Vector2Int>* validGrids; // 0x10
-		::MoleMole::UIOverlordFeastServePageController___c__DisplayClass36_1* CS___8__locals2; // 0x18
+		::MoleMole::UIOverlordFeastServePageController___c__DisplayClass36_1* CS___8__locals2; // 0x10
+		::System::Collections::Generic::List_1<::MoleMole::Vector2Int>* validGrids; // 0x18
 		::UnityEngine::Vector3 pushPos; // 0x20
 
 		::System::Void _ctor()

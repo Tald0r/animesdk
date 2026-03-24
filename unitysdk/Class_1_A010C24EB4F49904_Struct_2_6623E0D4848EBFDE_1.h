@@ -6,22 +6,20 @@
 
 class Class_1_627A5A7833BA1936_1;
 class Class_1_A010C24EB4F49904;
-class Class_1_B9D6E7E76075C6E2_3;
-class Class_2_F45B22F3BBA809FA_2;
+class Class_2_FB50CDBDDEDBBCC8_5;
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
-template <typename T> class Class_2_FB50CDBDDEDBBCC8_1;
 
-#define CLASS_1_A010C24EB4F49904_STRUCT_2_6623E0D4848EBFDE_1_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x35FEB0)
-#define CLASS_1_A010C24EB4F49904_STRUCT_2_6623E0D4848EBFDE_1_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x324FD0)
+#define CLASS_1_A010C24EB4F49904_STRUCT_2_6623E0D4848EBFDE_1_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x32B130)
+#define CLASS_1_A010C24EB4F49904_STRUCT_2_6623E0D4848EBFDE_1_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2EA620)
 
-inline static constexpr unsigned int Class_1_A010C24EB4F49904_Struct_2_6623E0D4848EBFDE_1_TypeDefinitionIndex = 56894;
+inline static constexpr unsigned int Class_1_A010C24EB4F49904_Struct_2_6623E0D4848EBFDE_1_TypeDefinitionIndex = 67019;
 
 struct alignas(8) Class_1_A010C24EB4F49904_Struct_2_6623E0D4848EBFDE_1
 {
-	::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::Class_2_FB50CDBDDEDBBCC8_1<::Class_1_B9D6E7E76075C6E2_3*>*> Field_2_1; // 0x10
-	::Class_2_F45B22F3BBA809FA_2* Field_2_3; // 0x28
-	::Class_1_A010C24EB4F49904* Field_2_2; // 0x30
-	::System::Runtime::CompilerServices::TaskAwaiter_1<::Class_1_627A5A7833BA1936_1*> Field_2_4; // 0x38
+	::Class_1_A010C24EB4F49904* Field_2_2; // 0x10
+	::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::Class_1_627A5A7833BA1936_1*> Field_2_1; // 0x18
+	::System::Runtime::CompilerServices::TaskAwaiter_1<::Class_1_627A5A7833BA1936_1*> Field_2_4; // 0x30
+	::Class_2_FB50CDBDDEDBBCC8_5* Field_2_3; // 0x38
 	::System::Int32 Field_2_0; // 0x40
 
 	::System::Void MoveNext()

@@ -6,15 +6,15 @@
 class Class_1_54491056660B0A90;
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_1_54491056660B0A90_STRUCT_2_99B24E1F1BCC2A08_1_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x36BD60)
-#define CLASS_1_54491056660B0A90_STRUCT_2_99B24E1F1BCC2A08_1_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_54491056660B0A90_STRUCT_2_99B24E1F1BCC2A08_1_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37B950)
+#define CLASS_1_54491056660B0A90_STRUCT_2_99B24E1F1BCC2A08_1_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_54491056660B0A90_Struct_2_99B24E1F1BCC2A08_1_TypeDefinitionIndex = 59790;
+inline static constexpr unsigned int Class_1_54491056660B0A90_Struct_2_99B24E1F1BCC2A08_1_TypeDefinitionIndex = 66540;
 
 struct alignas(8) Class_1_54491056660B0A90_Struct_2_99B24E1F1BCC2A08_1
 {
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x10
-	::Class_1_54491056660B0A90* Field_2_2; // 0x20
+	::Class_1_54491056660B0A90* Field_2_2; // 0x10
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder Field_2_1; // 0x18
 	::System::Int32 Field_2_0; // 0x28
 
 	::System::Void MoveNext()

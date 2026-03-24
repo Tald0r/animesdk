@@ -4,12 +4,12 @@
 
 namespace miHoYoEmotion { class ClipShapeCurveCell; }
 
-#define MIHOYOEMOTION_CLIPSHAPECURVEGRP_GETLENGTH_OFFSET UNITYSDK_OFFSET(0x18ADF5E0)
-#define MIHOYOEMOTION_CLIPSHAPECURVEGRP__CTOR_OFFSET UNITYSDK_OFFSET(0x18ADFBF0)
+#define MIHOYOEMOTION_CLIPSHAPECURVEGRP_GETLENGTH_OFFSET UNITYSDK_OFFSET(0x18FC9C50)
+#define MIHOYOEMOTION_CLIPSHAPECURVEGRP__CTOR_OFFSET UNITYSDK_OFFSET(0x18FCA260)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int ClipShapeCurveGrp_TypeDefinitionIndex = 36204;
+	inline static constexpr unsigned int ClipShapeCurveGrp_TypeDefinitionIndex = 37224;
 
 	class ClipShapeCurveGrp : public ::System::Object
 	{

@@ -4,20 +4,20 @@
 
 namespace MoleMole { class UILevelResultV2_BossRush_PageController___c__DisplayClass12_0; }
 
-#define MOLEMOLE_UILEVELRESULTV2_BOSSRUSH_PAGECONTROLLER___C__DISPLAYCLASS12_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCFC5770)
-#define MOLEMOLE_UILEVELRESULTV2_BOSSRUSH_PAGECONTROLLER___C__DISPLAYCLASS12_1__REFRESHBOSSRUSHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xCFC5780)
-#define MOLEMOLE_UILEVELRESULTV2_BOSSRUSH_PAGECONTROLLER___C__DISPLAYCLASS12_1__REFRESHBOSSRUSHVIEW_B__2_OFFSET UNITYSDK_OFFSET(0xCFC5A60)
+#define MOLEMOLE_UILEVELRESULTV2_BOSSRUSH_PAGECONTROLLER___C__DISPLAYCLASS12_1__CTOR_OFFSET UNITYSDK_OFFSET(0xBE239E0)
+#define MOLEMOLE_UILEVELRESULTV2_BOSSRUSH_PAGECONTROLLER___C__DISPLAYCLASS12_1__REFRESHBOSSRUSHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0xBE239F0)
+#define MOLEMOLE_UILEVELRESULTV2_BOSSRUSH_PAGECONTROLLER___C__DISPLAYCLASS12_1__REFRESHBOSSRUSHVIEW_B__2_OFFSET UNITYSDK_OFFSET(0xBE23CD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILevelResultV2_BossRush_PageController___c__DisplayClass12_1_TypeDefinitionIndex = 76945;
+	inline static constexpr unsigned int UILevelResultV2_BossRush_PageController___c__DisplayClass12_1_TypeDefinitionIndex = 68854;
 
 	class UILevelResultV2_BossRush_PageController___c__DisplayClass12_1 : public ::System::Object
 	{
 	public:
 		::MoleMole::UILevelResultV2_BossRush_PageController___c__DisplayClass12_0* CS___8__locals1; // 0x10
-		::System::Single prvRatio; // 0x18
-		::System::Single curRatio; // 0x1C
+		::System::Single curRatio; // 0x18
+		::System::Single prvRatio; // 0x1C
 
 		::System::Void _ctor()
 		{

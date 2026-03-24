@@ -3,7 +3,7 @@
 
 namespace ParadoxNotion
 {
-	inline static constexpr unsigned int ButtonKeys_TypeDefinitionIndex = 26626;
+	inline static constexpr unsigned int ButtonKeys_TypeDefinitionIndex = 26405;
 
 	enum class ButtonKeys : ::System::Int32
 	{

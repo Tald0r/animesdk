@@ -9,11 +9,11 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Animator; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_MONOGAMESCENEOBJECTMAP__CTOR_OFFSET UNITYSDK_OFFSET(0x67B7780)
+#define MOLEMOLE_MONOGAMESCENEOBJECTMAP__CTOR_OFFSET UNITYSDK_OFFSET(0xA470100)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoGameSceneObjectMap_TypeDefinitionIndex = 48533;
+	inline static constexpr unsigned int MonoGameSceneObjectMap_TypeDefinitionIndex = 56268;
 
 	class MonoGameSceneObjectMap : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

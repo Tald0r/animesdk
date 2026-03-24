@@ -6,18 +6,18 @@ namespace MoleMole { class ImgTextParserBase; }
 namespace System { class String; }
 namespace System { template <typename T> class Func_1; }
 
-#define MOLEMOLE_IMGTEXTPARSERBASE_CLASS_1_121FD646E893BFAA_METHOD_1_3249389B928082B9_OFFSET UNITYSDK_OFFSET(0xE486EA0)
-#define MOLEMOLE_IMGTEXTPARSERBASE_CLASS_1_121FD646E893BFAA__CTOR_OFFSET UNITYSDK_OFFSET(0xE486E90)
+#define MOLEMOLE_IMGTEXTPARSERBASE_CLASS_1_121FD646E893BFAA_METHOD_1_3249389B928082B9_OFFSET UNITYSDK_OFFSET(0xB8B2900)
+#define MOLEMOLE_IMGTEXTPARSERBASE_CLASS_1_121FD646E893BFAA__CTOR_OFFSET UNITYSDK_OFFSET(0xB8B28F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ImgTextParserBase_Class_1_121FD646E893BFAA_TypeDefinitionIndex = 47709;
+	inline static constexpr unsigned int ImgTextParserBase_Class_1_121FD646E893BFAA_TypeDefinitionIndex = 72934;
 
 	class ImgTextParserBase_Class_1_121FD646E893BFAA : public ::System::Object
 	{
 	public:
-		::System::Func_1<::System::String*>* Field_1_0; // 0x10
-		::MoleMole::ImgTextParserBase* Field_1_1; // 0x18
+		::MoleMole::ImgTextParserBase* Field_1_1; // 0x10
+		::System::Func_1<::System::String*>* Field_1_0; // 0x18
 		::System::Boolean Field_1_2; // 0x20
 
 		::System::Void _ctor()

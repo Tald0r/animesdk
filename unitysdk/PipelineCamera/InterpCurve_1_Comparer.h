@@ -4,7 +4,7 @@
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int InterpCurve_1_Comparer_TypeDefinitionIndex = 34531;
+	inline static constexpr unsigned int InterpCurve_1_Comparer_TypeDefinitionIndex = 35533;
 
 	template <typename T>
 	struct InterpCurve_1_Comparer

@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Animation; }
 
-#define MOLEMOLE_MONOMAINCITYINACTIONTIPS__CTOR_OFFSET UNITYSDK_OFFSET(0xA6019F0)
+#define MOLEMOLE_MONOMAINCITYINACTIONTIPS__CTOR_OFFSET UNITYSDK_OFFSET(0xA7EBDB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoMainCityInActionTips_TypeDefinitionIndex = 44172;
+	inline static constexpr unsigned int MonoMainCityInActionTips_TypeDefinitionIndex = 79624;
 
 	class MonoMainCityInActionTips : public ::UnityEngine::MonoBehaviour
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SpritePackingRotation_TypeDefinitionIndex = 5418;
+	inline static constexpr unsigned int SpritePackingRotation_TypeDefinitionIndex = 5421;
 
 	enum class SpritePackingRotation : ::System::Int32
 	{

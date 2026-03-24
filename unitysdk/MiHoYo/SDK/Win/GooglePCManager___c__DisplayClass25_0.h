@@ -9,25 +9,25 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MIHOYO_SDK_WIN_GOOGLEPCMANAGER___C__DISPLAYCLASS25_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18799360)
-#define MIHOYO_SDK_WIN_GOOGLEPCMANAGER___C__DISPLAYCLASS25_0__PAY_B__0_OFFSET UNITYSDK_OFFSET(0x18799370)
-#define MIHOYO_SDK_WIN_GOOGLEPCMANAGER___C__DISPLAYCLASS25_0__PAY_B__1_OFFSET UNITYSDK_OFFSET(0x18799A60)
+#define MIHOYO_SDK_WIN_GOOGLEPCMANAGER___C__DISPLAYCLASS25_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18B7A990)
+#define MIHOYO_SDK_WIN_GOOGLEPCMANAGER___C__DISPLAYCLASS25_0__PAY_B__0_OFFSET UNITYSDK_OFFSET(0x18B7A9A0)
+#define MIHOYO_SDK_WIN_GOOGLEPCMANAGER___C__DISPLAYCLASS25_0__PAY_B__1_OFFSET UNITYSDK_OFFSET(0x18B7B090)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int GooglePCManager___c__DisplayClass25_0_TypeDefinitionIndex = 18965;
+	inline static constexpr unsigned int GooglePCManager___c__DisplayClass25_0_TypeDefinitionIndex = 19563;
 
 	class GooglePCManager___c__DisplayClass25_0 : public ::System::Object
 	{
 	public:
-		::System::Action_1<::System::String*>* callback; // 0x10
+		::System::String* accountId; // 0x10
 		::MiHoYo::SDK::JSONNode* payInfo; // 0x18
-		::System::String* accountId; // 0x20
-		::System::Collections::Generic::List_1<::System::String*>* goodsIdList; // 0x28
-		::System::String* token; // 0x30
-		::System::Action_1<::MiHoYo::SDK::NetworkResponseModel*>* OnGetGoogleQueryGoods; // 0x38
-		::MiHoYo::SDK::Win::GooglePCManager* __4__this; // 0x40
-		::System::String* payGoodsId; // 0x48
+		::System::String* payGoodsId; // 0x20
+		::System::String* token; // 0x28
+		::System::Collections::Generic::List_1<::System::String*>* goodsIdList; // 0x30
+		::MiHoYo::SDK::Win::GooglePCManager* __4__this; // 0x38
+		::System::Action_1<::System::String*>* callback; // 0x40
+		::System::Action_1<::MiHoYo::SDK::NetworkResponseModel*>* OnGetGoogleQueryGoods; // 0x48
 
 		::System::Void _ctor()
 		{

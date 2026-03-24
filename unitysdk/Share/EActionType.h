@@ -3,12 +3,12 @@
 
 namespace Share
 {
-	inline static constexpr unsigned int EActionType_TypeDefinitionIndex = 12288;
+	inline static constexpr unsigned int EActionType_TypeDefinitionIndex = 11964;
 
 	enum class EActionType : ::System::Int16
 	{
+		ClientServer = 2,
 		Server = 1,
 		Client = 0,
-		ClientServer = 2,
 	};
 }

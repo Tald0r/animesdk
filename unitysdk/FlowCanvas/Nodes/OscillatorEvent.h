@@ -6,24 +6,24 @@ namespace FlowCanvas { class FlowOutput; }
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define FLOWCANVAS_NODES_OSCILLATOREVENT_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A261FA0)
-#define FLOWCANVAS_NODES_OSCILLATOREVENT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A261EF0)
-#define FLOWCANVAS_NODES_OSCILLATOREVENT_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A261FB0)
-#define FLOWCANVAS_NODES_OSCILLATOREVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A261D80)
-#define FLOWCANVAS_NODES_OSCILLATOREVENT__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0x1A2620E0)
+#define FLOWCANVAS_NODES_OSCILLATOREVENT_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A8298F0)
+#define FLOWCANVAS_NODES_OSCILLATOREVENT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A829830)
+#define FLOWCANVAS_NODES_OSCILLATOREVENT_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A829900)
+#define FLOWCANVAS_NODES_OSCILLATOREVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8296C0)
+#define FLOWCANVAS_NODES_OSCILLATOREVENT__REGISTERPORTS_B__6_0_OFFSET UNITYSDK_OFFSET(0x1A829A30)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int OscillatorEvent_TypeDefinitionIndex = 26390;
+	inline static constexpr unsigned int OscillatorEvent_TypeDefinitionIndex = 27722;
 
 	class OscillatorEvent : public ::FlowCanvas::Nodes::EventNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* low; // 0xA8
-		::FlowCanvas::FlowOutput* hi; // 0xB0
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::AnimationCurve*>* curve; // 0xB8
-		::System::Single value; // 0xC0
-		::System::Single time; // 0xC4
+		::FlowCanvas::FlowOutput* hi; // 0xA8
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::AnimationCurve*>* curve; // 0xB0
+		::FlowCanvas::FlowOutput* low; // 0xB8
+		::System::Single time; // 0xC0
+		::System::Single value; // 0xC4
 
 		::System::Void _ctor()
 		{

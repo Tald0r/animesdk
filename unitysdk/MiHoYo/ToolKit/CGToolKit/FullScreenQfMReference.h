@@ -7,12 +7,12 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::Rendering::Universal::Internal { class FullScreenQuadFxMaskProxy; }
 
-#define MIHOYO_TOOLKIT_CGTOOLKIT_FULLSCREENQFMREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0xC3083B0)
-#define MIHOYO_TOOLKIT_CGTOOLKIT_FULLSCREENQFMREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0xC308310)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_FULLSCREENQFMREFERENCE_RECOVERREFERENCE_OFFSET UNITYSDK_OFFSET(0x9B90950)
+#define MIHOYO_TOOLKIT_CGTOOLKIT_FULLSCREENQFMREFERENCE__CTOR_OFFSET UNITYSDK_OFFSET(0x9B908B0)
 
 namespace MiHoYo::ToolKit::CGToolKit
 {
-	inline static constexpr unsigned int FullScreenQfMReference_TypeDefinitionIndex = 41983;
+	inline static constexpr unsigned int FullScreenQfMReference_TypeDefinitionIndex = 79893;
 
 	class FullScreenQfMReference : public ::System::Object
 	{

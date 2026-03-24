@@ -6,25 +6,25 @@
 class Class_1_BDDDDB46A99CFF4C;
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x139869F0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x139867D0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0x13986CA0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x13986CB0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS___BASE_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x13986D50)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x9178E70)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x9178C50)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS__CTOR_OFFSET UNITYSDK_OFFSET(0x91790E0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x91790F0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEOVERRIDEAMLEGIKPARAMS___BASE_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x9179190)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneOverrideAmLegIkParams_TypeDefinitionIndex = 51906;
+	inline static constexpr unsigned int AnimatorZoneOverrideAmLegIkParams_TypeDefinitionIndex = 46307;
 
 	class AnimatorZoneOverrideAmLegIkParams : public ::MoleMole::Config::AnimatorZone
 	{
 	public:
-		::System::Single StateOverrideFootOffGroundHeight; // 0x50
-		::System::Single StateOverridePelvisUpVelocityLimit; // 0x54
-		::System::Single StateOverrideFootDownVelocityLimit; // 0x58
-		::System::Boolean StateOverrideEnableStrideWrapping; // 0x5C
+		::System::Single StateOverridePelvisUpVelocityLimit; // 0x50
+		::System::Single StateOverrideFootUpVelocityLimit; // 0x54
+		::System::Single StateOverrideFootOffGroundHeight; // 0x58
+		::System::Single StateOverrideFootDownVelocityLimit; // 0x5C
 		::System::Single StateOverridePelvisDownVelocityLimit; // 0x60
-		::System::Single StateOverrideFootUpVelocityLimit; // 0x64
+		::System::Boolean StateOverrideEnableStrideWrapping; // 0x64
 		::System::Single StateOverrideFootOnGroundHeight; // 0x68
 
 		::System::Void _ctor()

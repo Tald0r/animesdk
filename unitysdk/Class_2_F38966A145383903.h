@@ -8,21 +8,21 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIGeneralButtonController; }
 namespace MoleMole { class UIInputFieldEx; }
 
-#define CLASS_2_F38966A145383903_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x7EA19B0)
-#define CLASS_2_F38966A145383903_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x7EA1B70)
-#define CLASS_2_F38966A145383903_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7EA1C80)
-#define CLASS_2_F38966A145383903__CTOR_OFFSET UNITYSDK_OFFSET(0x7EA1C70)
+#define CLASS_2_F38966A145383903_METHOD_2_2DE91FCAEB146CF9_OFFSET UNITYSDK_OFFSET(0x92E2680)
+#define CLASS_2_F38966A145383903_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x92E2840)
+#define CLASS_2_F38966A145383903_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x92E2950)
+#define CLASS_2_F38966A145383903__CTOR_OFFSET UNITYSDK_OFFSET(0x92E2940)
 
-inline static constexpr unsigned int Class_2_F38966A145383903_TypeDefinitionIndex = 68327;
+inline static constexpr unsigned int Class_2_F38966A145383903_TypeDefinitionIndex = 68636;
 
 class Class_2_F38966A145383903 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MoleMole::UIInputFieldEx* Field_2_4; // 0x18
-	::MoleMole::UIGeneralButtonController* Field_2_3; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_1; // 0x30
-	::MoleMole::UIGeneralButtonController* Field_2_2; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x18
+	::Class_2_60DDD9C206686F44* Field_2_1; // 0x20
+	::MoleMole::UIGeneralButtonController* Field_2_3; // 0x28
+	::MoleMole::UIGeneralButtonController* Field_2_2; // 0x30
+	::MoleMole::UIInputFieldEx* Field_2_4; // 0x38
 
 	::System::Void _ctor()
 	{

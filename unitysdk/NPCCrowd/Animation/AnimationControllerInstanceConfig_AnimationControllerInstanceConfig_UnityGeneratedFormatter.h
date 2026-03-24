@@ -10,26 +10,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x60AB640)
-#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x60AB650)
-#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x60AB920)
-#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x60ABB30)
-#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x60ABAF0)
+#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x639EA00)
+#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x639EA10)
+#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x639ECE0)
+#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x639EEF0)
+#define NPCCROWD_ANIMATION_ANIMATIONCONTROLLERINSTANCECONFIG_ANIMATIONCONTROLLERINSTANCECONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x639EEB0)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 62175;
+	inline static constexpr unsigned int AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 46201;
 
 	class AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::NPCCrowd::Animation::AnimationControllerInstanceConfig*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::NPCCrowd::Animation::ICPUAnimationLib*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::NPCCrowd::Animation::ICPUAnimationLib*>**)Il2CppClass::FromTypeDefinitionIndex(AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36E60);
+			return (::Sirenix::Serialization::Serializer_1<::NPCCrowd::Animation::ICPUAnimationLib*>**)Il2CppClass::FromTypeDefinitionIndex(AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39C80);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::Il2CppArray<::Il2CppArray<::NPCCrowd::Animation::AnimationSubManager_FootOnGroundSegment>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::Il2CppArray<::NPCCrowd::Animation::AnimationSubManager_FootOnGroundSegment>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x36E68);
+			return (::Sirenix::Serialization::Serializer_1<::Il2CppArray<::Il2CppArray<::NPCCrowd::Animation::AnimationSubManager_FootOnGroundSegment>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimationControllerInstanceConfig_AnimationControllerInstanceConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x39C88);
 		}
 
 		::System::Void _ctor()

@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace UnityEngine { class SkinnedMeshRenderer; }
 
-#define MOLEMOLE_PHOTO_PLAYABLEUNITBLENDSHAPECONFIG___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9941D90)
-#define MOLEMOLE_PHOTO_PLAYABLEUNITBLENDSHAPECONFIG___C__DISPLAYCLASS14_0__GETSKINNEDMESHRENDERERS_B__0_OFFSET UNITYSDK_OFFSET(0x9941DA0)
+#define MOLEMOLE_PHOTO_PLAYABLEUNITBLENDSHAPECONFIG___C__DISPLAYCLASS14_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC7D4A50)
+#define MOLEMOLE_PHOTO_PLAYABLEUNITBLENDSHAPECONFIG___C__DISPLAYCLASS14_0__GETSKINNEDMESHRENDERERS_B__0_OFFSET UNITYSDK_OFFSET(0xC7D4A60)
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int PlayableUnitBlendShapeConfig___c__DisplayClass14_0_TypeDefinitionIndex = 42786;
+	inline static constexpr unsigned int PlayableUnitBlendShapeConfig___c__DisplayClass14_0_TypeDefinitionIndex = 60495;
 
 	class PlayableUnitBlendShapeConfig___c__DisplayClass14_0 : public ::System::Object
 	{

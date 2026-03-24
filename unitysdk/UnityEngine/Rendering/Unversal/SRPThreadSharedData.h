@@ -4,11 +4,11 @@
 
 namespace UnityEngine::Rendering::Unversal { class SRPHelperExecuteContext; }
 
-#define UNITYENGINE_RENDERING_UNVERSAL_SRPTHREADSHAREDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x17C1A4A0)
+#define UNITYENGINE_RENDERING_UNVERSAL_SRPTHREADSHAREDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18302BB0)
 
 namespace UnityEngine::Rendering::Unversal
 {
-	inline static constexpr unsigned int SRPThreadSharedData_TypeDefinitionIndex = 28341;
+	inline static constexpr unsigned int SRPThreadSharedData_TypeDefinitionIndex = 29282;
 
 	class SRPThreadSharedData : public ::System::Object
 	{

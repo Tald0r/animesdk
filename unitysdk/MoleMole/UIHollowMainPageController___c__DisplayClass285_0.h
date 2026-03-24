@@ -5,12 +5,12 @@
 
 namespace MoleMole { class UIHollowMainPageController; }
 
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS285_0__CTOR_OFFSET UNITYSDK_OFFSET(0x80B11C0)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS285_0__ENTERBIGTV_B__0_OFFSET UNITYSDK_OFFSET(0x80B11D0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS285_0__CTOR_OFFSET UNITYSDK_OFFSET(0x744D530)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS285_0__ENTERBIGTV_B__0_OFFSET UNITYSDK_OFFSET(0x744D540)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass285_0_TypeDefinitionIndex = 52604;
+	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass285_0_TypeDefinitionIndex = 49581;
 
 	class UIHollowMainPageController___c__DisplayClass285_0 : public ::System::Object
 	{

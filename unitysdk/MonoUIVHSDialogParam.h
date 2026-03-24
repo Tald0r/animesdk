@@ -4,9 +4,9 @@
 
 namespace UnityEngine { class RectTransform; }
 
-#define MONOUIVHSDIALOGPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0xAACD270)
+#define MONOUIVHSDIALOGPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x95CCCA0)
 
-inline static constexpr unsigned int MonoUIVHSDialogParam_TypeDefinitionIndex = 64005;
+inline static constexpr unsigned int MonoUIVHSDialogParam_TypeDefinitionIndex = 63287;
 
 class MonoUIVHSDialogParam : public ::UnityEngine::MonoBehaviour
 {

@@ -6,12 +6,12 @@
 namespace NodeCanvas::Framework { class IBlackboard; }
 namespace UnityEngine { class Component; }
 
-#define NODECANVAS_BEHAVIOURTREES_INVERTER_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19C0FFC0)
-#define NODECANVAS_BEHAVIOURTREES_INVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x19C100B0)
+#define NODECANVAS_BEHAVIOURTREES_INVERTER_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A1CEC60)
+#define NODECANVAS_BEHAVIOURTREES_INVERTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1CED50)
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Inverter_TypeDefinitionIndex = 26566;
+	inline static constexpr unsigned int Inverter_TypeDefinitionIndex = 27681;
 
 	class Inverter : public ::NodeCanvas::BehaviourTrees::BTDecorator
 	{

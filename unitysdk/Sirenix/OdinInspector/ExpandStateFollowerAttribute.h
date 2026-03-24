@@ -4,12 +4,12 @@
 
 namespace System { class Type; }
 
-#define SIRENIX_ODININSPECTOR_EXPANDSTATEFOLLOWERATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1AB083D0)
-#define SIRENIX_ODININSPECTOR_EXPANDSTATEFOLLOWERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB083C0)
+#define SIRENIX_ODININSPECTOR_EXPANDSTATEFOLLOWERATTRIBUTE__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B114450)
+#define SIRENIX_ODININSPECTOR_EXPANDSTATEFOLLOWERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B114440)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int ExpandStateFollowerAttribute_TypeDefinitionIndex = 7160;
+	inline static constexpr unsigned int ExpandStateFollowerAttribute_TypeDefinitionIndex = 7164;
 
 	class ExpandStateFollowerAttribute : public ::System::Attribute
 	{

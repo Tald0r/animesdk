@@ -6,12 +6,12 @@ class Class_1_328B10E9F3553A0D;
 namespace MoleMole { class UIBaseChatPlayController; }
 namespace MoleMole { class UIMainCityChatPlayContext; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATEDITORLIVEHOUSEFANSUPNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xC9CFA00)
-#define MOLEMOLE_GALGAME_MAINCITYCHATEDITORLIVEHOUSEFANSUPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC9CF9F0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATEDITORLIVEHOUSEFANSUPNODE_INSTANTIATE_OFFSET UNITYSDK_OFFSET(0xBA14EE0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATEDITORLIVEHOUSEFANSUPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xBA14ED0)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatEditorLiveHouseFansUpNode_TypeDefinitionIndex = 75282;
+	inline static constexpr unsigned int MainCityChatEditorLiveHouseFansUpNode_TypeDefinitionIndex = 68443;
 
 	class MainCityChatEditorLiveHouseFansUpNode : public ::MoleMole::GalGame::MainCityChatPlayableNodeBase
 	{

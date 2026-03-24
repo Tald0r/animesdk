@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define SIRENIX_SERIALIZATION_SERIALIZATIONABORTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B078160)
-#define SIRENIX_SERIALIZATION_SERIALIZATIONABORTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B078100)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONABORTEXCEPTION__CTOR_1_OFFSET UNITYSDK_OFFSET(0x1B685EC0)
+#define SIRENIX_SERIALIZATION_SERIALIZATIONABORTEXCEPTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B685E60)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int SerializationAbortException_TypeDefinitionIndex = 7391;
+	inline static constexpr unsigned int SerializationAbortException_TypeDefinitionIndex = 7396;
 
 	class SerializationAbortException : public ::System::Exception
 	{

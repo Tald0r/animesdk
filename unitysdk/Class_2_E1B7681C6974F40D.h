@@ -9,19 +9,19 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_E1B7681C6974F40D_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x5DE51D0)
-#define CLASS_2_E1B7681C6974F40D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x5DE52C0)
-#define CLASS_2_E1B7681C6974F40D__CTOR_OFFSET UNITYSDK_OFFSET(0x5DE52B0)
+#define CLASS_2_E1B7681C6974F40D_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xC3A2F40)
+#define CLASS_2_E1B7681C6974F40D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xC3A3030)
+#define CLASS_2_E1B7681C6974F40D__CTOR_OFFSET UNITYSDK_OFFSET(0xC3A3020)
 
-inline static constexpr unsigned int Class_2_E1B7681C6974F40D_TypeDefinitionIndex = 59219;
+inline static constexpr unsigned int Class_2_E1B7681C6974F40D_TypeDefinitionIndex = 67124;
 
 class Class_2_E1B7681C6974F40D : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::MoleMole::MonoGamepadCustomList* Field_2_3; // 0x18
-	::UnityEngine::GameObject* Field_2_0; // 0x20
+	::UnityEngine::Transform* Field_2_1; // 0x20
 	::UnityEngine::RectTransform* Field_2_2; // 0x28
-	::UnityEngine::Transform* Field_2_1; // 0x30
+	::UnityEngine::GameObject* Field_2_0; // 0x30
 
 	::System::Void _ctor()
 	{

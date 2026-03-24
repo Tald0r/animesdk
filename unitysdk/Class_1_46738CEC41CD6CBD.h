@@ -5,10 +5,10 @@
 
 namespace UnityEngine { class Texture; }
 
-#define CLASS_1_46738CEC41CD6CBD__CTOR_1_OFFSET UNITYSDK_OFFSET(0x9F5CF60)
-#define CLASS_1_46738CEC41CD6CBD__CTOR_OFFSET UNITYSDK_OFFSET(0x9F5CD80)
+#define CLASS_1_46738CEC41CD6CBD__CTOR_1_OFFSET UNITYSDK_OFFSET(0xAEC5280)
+#define CLASS_1_46738CEC41CD6CBD__CTOR_OFFSET UNITYSDK_OFFSET(0xAEC50A0)
 
-inline static constexpr unsigned int Class_1_46738CEC41CD6CBD_TypeDefinitionIndex = 40131;
+inline static constexpr unsigned int Class_1_46738CEC41CD6CBD_TypeDefinitionIndex = 65111;
 
 class Class_1_46738CEC41CD6CBD : public ::System::Object
 {

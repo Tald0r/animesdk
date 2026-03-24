@@ -4,12 +4,12 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2GETCURRAREASUDDENEVENTIDLIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xF19ED70)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2GETCURRAREASUDDENEVENTIDLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xF19F110)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2GETCURRAREASUDDENEVENTIDLIST_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC80C30)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDABYSSS2GETCURRAREASUDDENEVENTIDLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xEC80FD0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDAbyssS2GetCurrAreaSuddenEventIDList_TypeDefinitionIndex = 47811;
+	inline static constexpr unsigned int LDAbyssS2GetCurrAreaSuddenEventIDList_TypeDefinitionIndex = 78746;
 
 	class LDAbyssS2GetCurrAreaSuddenEventIDList : public ::FlowCanvas::Nodes::CallableFunctionNode_1<::System::Collections::Generic::List_1<::System::Int32>*>
 	{

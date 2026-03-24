@@ -10,35 +10,35 @@
 namespace System::Collections::Generic { template <typename T> class Comparer_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_NATIVEMEMORY_ALLOCATESTORAGE_OFFSET UNITYSDK_OFFSET(0x1B0C7AE0)
-#define FOUNDATION_NATIVEMEMORY_CREATE_OFFSET UNITYSDK_OFFSET(0x1B0C7920)
-#define FOUNDATION_NATIVEMEMORY_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1B0C7F20)
-#define FOUNDATION_NATIVEMEMORY_RESOLVEREQUESTBYBINARYSEARCH_OFFSET UNITYSDK_OFFSET(0x1B0C8130)
-#define FOUNDATION_NATIVEMEMORY_RESOLVEREQUESTSEQUENTIAL_OFFSET UNITYSDK_OFFSET(0x1B0C8070)
-#define FOUNDATION_NATIVEMEMORY_RESOLVEREQUEST_OFFSET UNITYSDK_OFFSET(0x1B0C7F70)
-#define FOUNDATION_NATIVEMEMORY_RESOLVE_OFFSET UNITYSDK_OFFSET(0x1B0C7CB0)
-#define FOUNDATION_NATIVEMEMORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B0C82D0)
-#define FOUNDATION_NATIVEMEMORY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0C7990)
+#define FOUNDATION_NATIVEMEMORY_ALLOCATESTORAGE_OFFSET UNITYSDK_OFFSET(0x1B6D5BB0)
+#define FOUNDATION_NATIVEMEMORY_CREATE_OFFSET UNITYSDK_OFFSET(0x1B6D59F0)
+#define FOUNDATION_NATIVEMEMORY_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1B6D5FF0)
+#define FOUNDATION_NATIVEMEMORY_RESOLVEREQUESTBYBINARYSEARCH_OFFSET UNITYSDK_OFFSET(0x1B6D6200)
+#define FOUNDATION_NATIVEMEMORY_RESOLVEREQUESTSEQUENTIAL_OFFSET UNITYSDK_OFFSET(0x1B6D6140)
+#define FOUNDATION_NATIVEMEMORY_RESOLVEREQUEST_OFFSET UNITYSDK_OFFSET(0x1B6D6040)
+#define FOUNDATION_NATIVEMEMORY_RESOLVE_OFFSET UNITYSDK_OFFSET(0x1B6D5D80)
+#define FOUNDATION_NATIVEMEMORY__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B6D63A0)
+#define FOUNDATION_NATIVEMEMORY__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6D5A60)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int NativeMemory_TypeDefinitionIndex = 9054;
+	inline static constexpr unsigned int NativeMemory_TypeDefinitionIndex = 9165;
 
 	class NativeMemory : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryRequest>** StaticGet_RequestComparer()
-		{
-			return (::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryRequest>**)Il2CppClass::FromTypeDefinitionIndex(NativeMemory_TypeDefinitionIndex)->GetStaticField(0x7F10);
-		}
 		static ::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryAllocation>** StaticGet_InstanceComparer()
 		{
-			return (::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryAllocation>**)Il2CppClass::FromTypeDefinitionIndex(NativeMemory_TypeDefinitionIndex)->GetStaticField(0x7F18);
+			return (::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryAllocation>**)Il2CppClass::FromTypeDefinitionIndex(NativeMemory_TypeDefinitionIndex)->GetStaticField(0x7F50);
+		}
+		static ::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryRequest>** StaticGet_RequestComparer()
+		{
+			return (::System::Collections::Generic::Comparer_1<::Foundation::NativeMemoryRequest>**)Il2CppClass::FromTypeDefinitionIndex(NativeMemory_TypeDefinitionIndex)->GetStaticField(0x7F58);
 		}
 		::Il2CppArray<::Foundation::NativeMemoryAllocation>* _instances; // 0x10
-		::System::UInt64 _allocatorId; // 0x18
-		::System::Int32 _startOffset; // 0x20
-		::Unity::Collections::NativeArray_1<::System::Byte> _storage; // 0x28
+		::Unity::Collections::NativeArray_1<::System::Byte> _storage; // 0x18
+		::System::Int32 _startOffset; // 0x28
+		::System::UInt64 _allocatorId; // 0x30
 
 		::System::Void _ctor(::System::UInt64 allocatorId, ::System::Collections::Generic::List_1<::Foundation::NativeMemoryRequest>* requests, ::System::Int32 alignment)
 		{

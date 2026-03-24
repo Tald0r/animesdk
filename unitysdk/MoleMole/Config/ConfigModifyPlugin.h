@@ -4,12 +4,12 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGMODIFYPLUGIN_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xEC2C940)
-#define MOLEMOLE_CONFIG_CONFIGMODIFYPLUGIN__CTOR_OFFSET UNITYSDK_OFFSET(0xEC2CA20)
+#define MOLEMOLE_CONFIG_CONFIGMODIFYPLUGIN_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xCAE8710)
+#define MOLEMOLE_CONFIG_CONFIGMODIFYPLUGIN__CTOR_OFFSET UNITYSDK_OFFSET(0xCAE87F0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigModifyPlugin_TypeDefinitionIndex = 69318;
+	inline static constexpr unsigned int ConfigModifyPlugin_TypeDefinitionIndex = 38869;
 
 	class ConfigModifyPlugin : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

@@ -11,23 +11,23 @@ namespace MoleMole { class UIGeneralButtonController; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_D9B33E9CEA329814_METHOD_2_5B900C0AEB2813BC_OFFSET UNITYSDK_OFFSET(0x5E2FDE0)
-#define CLASS_2_D9B33E9CEA329814_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x5E2FFF0)
-#define CLASS_2_D9B33E9CEA329814_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x5E300C0)
-#define CLASS_2_D9B33E9CEA329814__CTOR_OFFSET UNITYSDK_OFFSET(0x5E300B0)
+#define CLASS_2_D9B33E9CEA329814_METHOD_2_5B900C0AEB2813BC_OFFSET UNITYSDK_OFFSET(0x90B50F0)
+#define CLASS_2_D9B33E9CEA329814_METHOD_2_9FA85F81BF5EE3CA_OFFSET UNITYSDK_OFFSET(0x90B5300)
+#define CLASS_2_D9B33E9CEA329814_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x90B53D0)
+#define CLASS_2_D9B33E9CEA329814__CTOR_OFFSET UNITYSDK_OFFSET(0x90B53C0)
 
-inline static constexpr unsigned int Class_2_D9B33E9CEA329814_TypeDefinitionIndex = 64624;
+inline static constexpr unsigned int Class_2_D9B33E9CEA329814_TypeDefinitionIndex = 65665;
 
 class Class_2_D9B33E9CEA329814 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::RectTransform* Field_2_4; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x20
-	::MonoUITableScrollV2* Field_2_0; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x38
-	::MoleMole::UIGeneralButtonController* Field_2_1; // 0x40
-	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x48
+	::MoleMole::UIGeneralButtonController* Field_2_1; // 0x18
+	::Class_2_A8F5ABF31E066ED4* Field_2_2; // 0x20
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x28
+	::UnityEngine::RectTransform* Field_2_4; // 0x30
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x38
+	::MonoUITableScrollV2* Field_2_0; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x48
 
 	::System::Void _ctor()
 	{

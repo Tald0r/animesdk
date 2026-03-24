@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define CAPTUREANIMATIONTOVAT__CTOR_OFFSET UNITYSDK_OFFSET(0x17BDEFD0)
+#define CAPTUREANIMATIONTOVAT__CTOR_OFFSET UNITYSDK_OFFSET(0x182C7210)
 
-inline static constexpr unsigned int CaptureAnimationToVAT_TypeDefinitionIndex = 27994;
+inline static constexpr unsigned int CaptureAnimationToVAT_TypeDefinitionIndex = 28934;
 
 class CaptureAnimationToVAT : public ::UnityEngine::MonoBehaviour
 {

@@ -3,12 +3,12 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define CLASS_1_82375AD700B26002_METHOD_1_18B93A5EBC8EC8C6_OFFSET UNITYSDK_OFFSET(0x6312DB0)
-#define CLASS_1_82375AD700B26002_METHOD_1_46C39C3D96BEE1EE_OFFSET UNITYSDK_OFFSET(0x6312B40)
-#define CLASS_1_82375AD700B26002_METHOD_1_905986F285E0BCF3_OFFSET UNITYSDK_OFFSET(0x6312F50)
-#define CLASS_1_82375AD700B26002_METHOD_1_D21288EA2F6FAC99_OFFSET UNITYSDK_OFFSET(0x6312EC0)
+#define CLASS_1_82375AD700B26002_METHOD_1_18B93A5EBC8EC8C6_OFFSET UNITYSDK_OFFSET(0x6649DB0)
+#define CLASS_1_82375AD700B26002_METHOD_1_46C39C3D96BEE1EE_OFFSET UNITYSDK_OFFSET(0x6649B40)
+#define CLASS_1_82375AD700B26002_METHOD_1_905986F285E0BCF3_OFFSET UNITYSDK_OFFSET(0x6649F50)
+#define CLASS_1_82375AD700B26002_METHOD_1_D21288EA2F6FAC99_OFFSET UNITYSDK_OFFSET(0x6649EC0)
 
-inline static constexpr unsigned int Class_1_82375AD700B26002_TypeDefinitionIndex = 69240;
+inline static constexpr unsigned int Class_1_82375AD700B26002_TypeDefinitionIndex = 63825;
 
 class Class_1_82375AD700B26002 : public ::System::Object
 {
@@ -16,11 +16,6 @@ public:
 	static ::System::Int64 Method_1_46C39C3D96BEE1EE(::UnityEngine::Vector3 a1, ::System::Single a2, ::System::Single a3)
 	{
 		return ((::System::Int64(*)(::UnityEngine::Vector3, ::System::Single, ::System::Single))((::PBYTE)hIl2Cpp + CLASS_1_82375AD700B26002_METHOD_1_46C39C3D96BEE1EE_OFFSET))(a1, a2, a3);
-	}
-
-	static ::System::Void Method_1_18B93A5EBC8EC8C6(::UnityEngine::Vector3 a1, ::System::Single a2, ::System::Single a3, ::System::UInt16& a4, ::System::UInt16& a5, ::System::UInt16& a6)
-	{
-		return ((::System::Void(*)(::UnityEngine::Vector3, ::System::Single, ::System::Single, ::System::UInt16&, ::System::UInt16&, ::System::UInt16&))((::PBYTE)hIl2Cpp + CLASS_1_82375AD700B26002_METHOD_1_18B93A5EBC8EC8C6_OFFSET))(a1, a2, a3, a4, a5, a6);
 	}
 
 	static ::UnityEngine::Vector3 Method_1_905986F285E0BCF3(::System::Int32 a1, ::System::Int32 a2, ::System::Int32 a3, ::System::Single a4, ::System::Single a5)
@@ -31,5 +26,10 @@ public:
 	static ::System::Int64 Method_1_D21288EA2F6FAC99(::System::UInt16 a1, ::System::UInt16 a2, ::System::UInt16 a3)
 	{
 		return ((::System::Int64(*)(::System::UInt16, ::System::UInt16, ::System::UInt16))((::PBYTE)hIl2Cpp + CLASS_1_82375AD700B26002_METHOD_1_D21288EA2F6FAC99_OFFSET))(a1, a2, a3);
+	}
+
+	static ::System::Void Method_1_18B93A5EBC8EC8C6(::UnityEngine::Vector3 a1, ::System::Single a2, ::System::Single a3, ::System::UInt16& a4, ::System::UInt16& a5, ::System::UInt16& a6)
+	{
+		return ((::System::Void(*)(::UnityEngine::Vector3, ::System::Single, ::System::Single, ::System::UInt16&, ::System::UInt16&, ::System::UInt16&))((::PBYTE)hIl2Cpp + CLASS_1_82375AD700B26002_METHOD_1_18B93A5EBC8EC8C6_OFFSET))(a1, a2, a3, a4, a5, a6);
 	}
 };

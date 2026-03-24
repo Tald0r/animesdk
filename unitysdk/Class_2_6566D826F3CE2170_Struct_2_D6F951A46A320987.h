@@ -8,18 +8,18 @@
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Animator; }
 
-#define CLASS_2_6566D826F3CE2170_STRUCT_2_D6F951A46A320987_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x2C6A30)
-#define CLASS_2_6566D826F3CE2170_STRUCT_2_D6F951A46A320987_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_6566D826F3CE2170_STRUCT_2_D6F951A46A320987_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3BD020)
+#define CLASS_2_6566D826F3CE2170_STRUCT_2_D6F951A46A320987_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_6566D826F3CE2170_Struct_2_D6F951A46A320987_TypeDefinitionIndex = 47370;
+inline static constexpr unsigned int Class_2_6566D826F3CE2170_Struct_2_D6F951A46A320987_TypeDefinitionIndex = 66105;
 
 struct alignas(8) Class_2_6566D826F3CE2170_Struct_2_D6F951A46A320987
 {
 	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder Field_2_1; // 0x10
 	::UnityEngine::Animator* Field_2_2; // 0x18
 	::System::ValueTuple_2<::System::Single, ::System::Single> Field_2_3; // 0x20
-	::System::Int32 Field_2_0; // 0x28
-	::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter Field_2_4; // 0x2C
+	::Cysharp::Threading::Tasks::YieldAwaitable_Awaiter Field_2_4; // 0x28
+	::System::Int32 Field_2_0; // 0x2C
 
 	::System::Void MoveNext()
 	{

@@ -14,34 +14,34 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x803BAF0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x803BB00)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x803BF20)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x803C1E0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x803C1A0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9CEE4B0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9CEE4C0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9CEE8E0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9CEEBA0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_ANIMATORZONEMUTECAMERAMOVEBYLOCKTARGET_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9CEEB60)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex = 63405;
+	inline static constexpr unsigned int AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex = 58166;
 
 	class AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneMuteCameraMoveByLockTarget*>
 	{
 	public:
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AED0);
+		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382C0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AED8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382C8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AEE0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382D0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x382D8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneMuteCameraMoveByLockTarget_AnimatorZoneMuteCameraMoveByLockTarget_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3AEE8);
 		}
 
 		::System::Void _ctor()

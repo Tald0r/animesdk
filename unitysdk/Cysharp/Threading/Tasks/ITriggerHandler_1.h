@@ -5,7 +5,7 @@ namespace Cysharp::Threading::Tasks { template <typename T> class ITriggerHandle
 
 namespace Cysharp::Threading::Tasks
 {
-	inline static constexpr unsigned int ITriggerHandler_1_TypeDefinitionIndex = 27118;
+	inline static constexpr unsigned int ITriggerHandler_1_TypeDefinitionIndex = 28058;
 
 	template <typename T>
 	class ITriggerHandler_1

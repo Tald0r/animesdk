@@ -11,76 +11,76 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace System::Reflection { class Assembly; }
 
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_BINDTONAME_OFFSET UNITYSDK_OFFSET(0x1A188EC0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_BINDTOTYPE_OFFSET UNITYSDK_OFFSET(0x1A189A20)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_CONTAINSTYPE_OFFSET UNITYSDK_OFFSET(0x1A189890)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PARSEGENERICANDORARRAYTYPE_OFFSET UNITYSDK_OFFSET(0x1A18A6B0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PARSENAME_OFFSET UNITYSDK_OFFSET(0x1A18AC10)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PARSETYPENAME_OFFSET UNITYSDK_OFFSET(0x1A189DB0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PEEK_OFFSET UNITYSDK_OFFSET(0x1A18B360)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_READGENERICARG_OFFSET UNITYSDK_OFFSET(0x1A18B3C0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERALLQUEUEDASSEMBLIESREPEATING_OFFSET UNITYSDK_OFFSET(0x1A188210)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERASSEMBLY_OFFSET UNITYSDK_OFFSET(0x1A1888B0)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERQUEUEDASSEMBLIES_OFFSET UNITYSDK_OFFSET(0x1A188280)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERQUEUEDASSEMBLYLOADEVENTS_OFFSET UNITYSDK_OFFSET(0x1A188570)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_TRYPARSEGENERICANDORARRAYTYPENAME_OFFSET UNITYSDK_OFFSET(0x1A18AE20)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A187B00)
-#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A18B4D0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_BINDTONAME_OFFSET UNITYSDK_OFFSET(0x1A707610)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_BINDTOTYPE_OFFSET UNITYSDK_OFFSET(0x1A708160)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_CONTAINSTYPE_OFFSET UNITYSDK_OFFSET(0x1A707FD0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PARSEGENERICANDORARRAYTYPE_OFFSET UNITYSDK_OFFSET(0x1A708DE0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PARSENAME_OFFSET UNITYSDK_OFFSET(0x1A709340)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PARSETYPENAME_OFFSET UNITYSDK_OFFSET(0x1A7084E0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_PEEK_OFFSET UNITYSDK_OFFSET(0x1A709A90)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_READGENERICARG_OFFSET UNITYSDK_OFFSET(0x1A709AF0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERALLQUEUEDASSEMBLIESREPEATING_OFFSET UNITYSDK_OFFSET(0x1A706980)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERASSEMBLY_OFFSET UNITYSDK_OFFSET(0x1A707020)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERQUEUEDASSEMBLIES_OFFSET UNITYSDK_OFFSET(0x1A7069F0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_REGISTERQUEUEDASSEMBLYLOADEVENTS_OFFSET UNITYSDK_OFFSET(0x1A706CE0)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER_TRYPARSEGENERICANDORARRAYTYPENAME_OFFSET UNITYSDK_OFFSET(0x1A709550)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A706270)
+#define SIRENIX_SERIALIZATION_DEFAULTSERIALIZATIONBINDER__CTOR_OFFSET UNITYSDK_OFFSET(0x1A709C00)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int DefaultSerializationBinder_TypeDefinitionIndex = 7363;
+	inline static constexpr unsigned int DefaultSerializationBinder_TypeDefinitionIndex = 7368;
 
 	class DefaultSerializationBinder : public ::Sirenix::Serialization::TwoWaySerializationBinder
 	{
 	public:
-		static ::System::Collections::Generic::List_1<::System::AssemblyLoadEventArgs*>** StaticGet_assemblyLoadEventsQueuedForRegister()
+		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_genericArgTypesList()
 		{
-			return (::System::Collections::Generic::List_1<::System::AssemblyLoadEventArgs*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60A0);
-		}
-		static ::System::Object** StaticGet_ASSEMBLY_REGISTER_QUEUE_LOCK()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60A8);
+			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60E0);
 		}
 		static ::System::Collections::Generic::List_1<::System::Reflection::Assembly*>** StaticGet_assembliesQueuedForRegister()
 		{
-			return (::System::Collections::Generic::List_1<::System::Reflection::Assembly*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60B0);
+			return (::System::Collections::Generic::List_1<::System::Reflection::Assembly*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60E8);
 		}
 		static ::System::Collections::Generic::List_1<::System::String*>** StaticGet_genericArgNamesList()
 		{
-			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60B8);
-		}
-		static ::System::Object** StaticGet_TYPETONAME_LOCK()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60C0);
-		}
-		static ::System::Object** StaticGet_ASSEMBLY_LOOKUP_LOCK()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60C8);
+			return (::System::Collections::Generic::List_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60F0);
 		}
 		static ::System::Object** StaticGet_NAMETOTYPE_LOCK()
 		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60D0);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60F8);
 		}
-		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>** StaticGet_typeMap()
+		static ::System::Collections::Generic::List_1<::System::AssemblyLoadEventArgs*>** StaticGet_assemblyLoadEventsQueuedForRegister()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60D8);
+			return (::System::Collections::Generic::List_1<::System::AssemblyLoadEventArgs*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6100);
 		}
-		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::Assembly*>** StaticGet_assemblyNameLookUp()
+		static ::System::Object** StaticGet_ASSEMBLY_LOOKUP_LOCK()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::Assembly*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60E0);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::String*>** StaticGet_nameMap()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60E8);
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6108);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>** StaticGet_customTypeNameToTypeBindings()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60F0);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6110);
 		}
-		static ::System::Collections::Generic::List_1<::System::Type*>** StaticGet_genericArgTypesList()
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::Assembly*>** StaticGet_assemblyNameLookUp()
 		{
-			return (::System::Collections::Generic::List_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x60F8);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Reflection::Assembly*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6118);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::String*>** StaticGet_nameMap()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6120);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>** StaticGet_typeMap()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6128);
+		}
+		static ::System::Object** StaticGet_TYPETONAME_LOCK()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6130);
+		}
+		static ::System::Object** StaticGet_ASSEMBLY_REGISTER_QUEUE_LOCK()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(DefaultSerializationBinder_TypeDefinitionIndex)->GetStaticField(0x6138);
 		}
 
 		static ::System::Void _cctor()

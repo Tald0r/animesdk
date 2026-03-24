@@ -8,22 +8,22 @@ namespace FlowCanvas { class FlowOutput; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 
-#define FLOWCANVAS_NODES_MERGEBOTH_GET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x19DAD340)
-#define FLOWCANVAS_NODES_MERGEBOTH_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19DAD360)
-#define FLOWCANVAS_NODES_MERGEBOTH_SET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x19DAD350)
-#define FLOWCANVAS_NODES_MERGEBOTH__CHECKOUT_OFFSET UNITYSDK_OFFSET(0x19DAD4C0)
-#define FLOWCANVAS_NODES_MERGEBOTH__CTOR_OFFSET UNITYSDK_OFFSET(0x19DAD6D0)
+#define FLOWCANVAS_NODES_MERGEBOTH_GET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x1A39E560)
+#define FLOWCANVAS_NODES_MERGEBOTH_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A39E580)
+#define FLOWCANVAS_NODES_MERGEBOTH_SET_PORTCOUNT_OFFSET UNITYSDK_OFFSET(0x1A39E570)
+#define FLOWCANVAS_NODES_MERGEBOTH__CHECKOUT_OFFSET UNITYSDK_OFFSET(0x1A39E6E0)
+#define FLOWCANVAS_NODES_MERGEBOTH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A39E900)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int MergeBoth_TypeDefinitionIndex = 26353;
+	inline static constexpr unsigned int MergeBoth_TypeDefinitionIndex = 26961;
 
 	class MergeBoth : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::System::Collections::Generic::Dictionary_2<::FlowCanvas::FlowInput*, ::System::Int32>* _portStatus; // 0xA8
-		::FlowCanvas::FlowOutput* _output; // 0xB0
-		::System::Collections::Generic::HashSet_1<::System::Int32>* _triggerPorts; // 0xB8
+		::FlowCanvas::FlowOutput* _output; // 0xA8
+		::System::Collections::Generic::HashSet_1<::System::Int32>* _triggerPorts; // 0xB0
+		::System::Collections::Generic::Dictionary_2<::FlowCanvas::FlowInput*, ::System::Int32>* _portStatus; // 0xB8
 		::System::Int32 _portCount; // 0xC0
 
 		::System::Void _ctor()

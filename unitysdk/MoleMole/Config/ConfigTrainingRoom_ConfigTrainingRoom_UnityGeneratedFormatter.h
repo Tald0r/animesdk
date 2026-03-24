@@ -14,30 +14,30 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8A0C460)
-#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8A0C470)
-#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8A0C740)
-#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8A0C950)
-#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A0C910)
+#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x10AA5150)
+#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x10AA5160)
+#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x10AA5430)
+#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x10AA5640)
+#define MOLEMOLE_CONFIG_CONFIGTRAININGROOM_CONFIGTRAININGROOM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x10AA5600)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex = 70596;
+	inline static constexpr unsigned int ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex = 70070;
 
 	class ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigTrainingRoom*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::AvatarInitData*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::AvatarInitData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FE90);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::AvatarInitData*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46AD0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigSpecialTraining*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigSpecialTraining*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FE98);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::Config::ConfigSpecialTraining*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46AD8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ETrainingRoomItemType, ::System::String*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ETrainingRoomItemType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FEA0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::ETrainingRoomItemType, ::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigTrainingRoom_ConfigTrainingRoom_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46AE0);
 		}
 
 		::System::Void _ctor()

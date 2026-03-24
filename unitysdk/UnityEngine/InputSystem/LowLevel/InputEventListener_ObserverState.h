@@ -8,12 +8,12 @@ namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T> class IObserver_1; }
 namespace UnityEngine::InputSystem { class InputDevice; }
 
-#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTEVENTLISTENER_OBSERVERSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x19F6B2A0)
-#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTEVENTLISTENER_OBSERVERSTATE___CTOR_B__2_0_OFFSET UNITYSDK_OFFSET(0x19F6B2F0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTEVENTLISTENER_OBSERVERSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A57C0D0)
+#define UNITYENGINE_INPUTSYSTEM_LOWLEVEL_INPUTEVENTLISTENER_OBSERVERSTATE___CTOR_B__2_0_OFFSET UNITYSDK_OFFSET(0x1A57C130)
 
 namespace UnityEngine::InputSystem::LowLevel
 {
-	inline static constexpr unsigned int InputEventListener_ObserverState_TypeDefinitionIndex = 27800;
+	inline static constexpr unsigned int InputEventListener_ObserverState_TypeDefinitionIndex = 28740;
 
 	class InputEventListener_ObserverState : public ::System::Object
 	{

@@ -3,30 +3,30 @@
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int InspireZoneOperationType_TypeDefinitionIndex = 63981;
+	inline static constexpr unsigned int InspireZoneOperationType_TypeDefinitionIndex = 76551;
 
 	enum class InspireZoneOperationType : ::System::Int32
 	{
-		ElementAbnormalBoss = 18,
-		QTE_1 = 4,
 		None = 0,
-		ElementAbnormal = 10,
-		DisorderNormal = 19,
-		Disorder = 15,
-		DisorderBoss = 21,
-		EvadeAid = 13,
-		DisorderElite = 20,
-		CounterHitOther = 1,
-		CommonAid = 14,
-		ElementAbnormalElite = 17,
-		ElementAbnormalNormal = 16,
-		BeHitAid = 3,
-		QTE_3 = 6,
-		ParryAid = 12,
 		QTE_2 = 5,
-		StunDestroy = 8,
-		Exhausted = 9,
-		PartDestroy = 11,
+		QTE_3 = 6,
 		DodgeDummySuccess = 2,
+		QTE_1 = 4,
+		CommonAid = 14,
+		BeHitAid = 3,
+		DisorderNormal = 19,
+		StunDestroy = 8,
+		DisorderBoss = 21,
+		CounterHitOther = 1,
+		PartDestroy = 11,
+		Exhausted = 9,
+		Disorder = 15,
+		ElementAbnormalNormal = 16,
+		ParryAid = 12,
+		ElementAbnormalBoss = 18,
+		EvadeAid = 13,
+		ElementAbnormalElite = 17,
+		DisorderElite = 20,
+		ElementAbnormal = 10,
 	};
 }

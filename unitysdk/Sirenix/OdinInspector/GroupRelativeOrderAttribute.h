@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_GROUPRELATIVEORDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB086B0)
+#define SIRENIX_ODININSPECTOR_GROUPRELATIVEORDERATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B114730)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int GroupRelativeOrderAttribute_TypeDefinitionIndex = 7206;
+	inline static constexpr unsigned int GroupRelativeOrderAttribute_TypeDefinitionIndex = 7211;
 
 	class GroupRelativeOrderAttribute : public ::System::Attribute
 	{

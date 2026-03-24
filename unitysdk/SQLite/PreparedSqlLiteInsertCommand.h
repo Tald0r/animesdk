@@ -5,28 +5,28 @@
 namespace SQLite { class SQLiteConnection; }
 namespace System { class String; }
 
-#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x1A066390)
-#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A066300)
-#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_EXECUTENONQUERY_OFFSET UNITYSDK_OFFSET(0x1A0658A0)
-#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1A0663F0)
-#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A0664A0)
-#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND__CTOR_OFFSET UNITYSDK_OFFSET(0x1A065890)
+#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_DISPOSE_1_OFFSET UNITYSDK_OFFSET(0x1A6321B0)
+#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_DISPOSE_OFFSET UNITYSDK_OFFSET(0x1A632120)
+#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_EXECUTENONQUERY_OFFSET UNITYSDK_OFFSET(0x1A6316C0)
+#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND_FINALIZE_OFFSET UNITYSDK_OFFSET(0x1A632210)
+#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A6322C0)
+#define SQLITE_PREPAREDSQLLITEINSERTCOMMAND__CTOR_OFFSET UNITYSDK_OFFSET(0x1A6316B0)
 
 namespace SQLite
 {
-	inline static constexpr unsigned int PreparedSqlLiteInsertCommand_TypeDefinitionIndex = 35259;
+	inline static constexpr unsigned int PreparedSqlLiteInsertCommand_TypeDefinitionIndex = 36261;
 
 	class PreparedSqlLiteInsertCommand : public ::System::Object
 	{
 	public:
 		static ::System::IntPtr* StaticGet_NullStatement()
 		{
-			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(PreparedSqlLiteInsertCommand_TypeDefinitionIndex)->GetStaticField(0x8520);
+			return (::System::IntPtr*)Il2CppClass::FromTypeDefinitionIndex(PreparedSqlLiteInsertCommand_TypeDefinitionIndex)->GetStaticField(0x8880);
 		}
 		::System::String* CommandText; // 0x10
 		::SQLite::SQLiteConnection* Connection; // 0x18
-		::System::Boolean Initialized; // 0x20
-		::System::IntPtr Statement; // 0x28
+		::System::IntPtr Statement; // 0x20
+		::System::Boolean Initialized; // 0x28
 
 		::System::Void _ctor(::SQLite::SQLiteConnection* conn, ::System::String* commandText)
 		{

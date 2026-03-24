@@ -5,8 +5,8 @@
 namespace System::Xml::Schema { class Asttree; }
 namespace System::Xml::Schema { class KeySequence; }
 
-#define SYSTEM_XML_SCHEMA_LOCATEDACTIVEAXIS_REACTIVATE_OFFSET UNITYSDK_OFFSET(0x19A18940)
-#define SYSTEM_XML_SCHEMA_LOCATEDACTIVEAXIS__CTOR_OFFSET UNITYSDK_OFFSET(0x19A18910)
+#define SYSTEM_XML_SCHEMA_LOCATEDACTIVEAXIS_REACTIVATE_OFFSET UNITYSDK_OFFSET(0x1A032B10)
+#define SYSTEM_XML_SCHEMA_LOCATEDACTIVEAXIS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A032AE0)
 
 namespace System::Xml::Schema
 {
@@ -16,8 +16,8 @@ namespace System::Xml::Schema
 	{
 	public:
 		::System::Xml::Schema::KeySequence* Ks; // 0x28
-		::System::Boolean isMatched; // 0x30
-		::System::Int32 column; // 0x34
+		::System::Int32 column; // 0x30
+		::System::Boolean isMatched; // 0x34
 
 		::System::Void _ctor(::System::Xml::Schema::Asttree* astfield, ::System::Xml::Schema::KeySequence* ks, ::System::Int32 column)
 		{

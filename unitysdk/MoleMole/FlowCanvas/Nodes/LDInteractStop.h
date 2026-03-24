@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERACTSTOP_INVOKE_OFFSET UNITYSDK_OFFSET(0xE476470)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERACTSTOP__CTOR_OFFSET UNITYSDK_OFFSET(0xE4765B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERACTSTOP_INVOKE_OFFSET UNITYSDK_OFFSET(0xD7FE400)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERACTSTOP__CTOR_OFFSET UNITYSDK_OFFSET(0xD7FE540)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDInteractStop_TypeDefinitionIndex = 63092;
+	inline static constexpr unsigned int LDInteractStop_TypeDefinitionIndex = 68922;
 
 	class LDInteractStop : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::System::Boolean, ::MoleMole::Battle::Entity*, ::System::Boolean>
 	{

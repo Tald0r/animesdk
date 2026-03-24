@@ -3,18 +3,18 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFullScreenHandler_Enum_3_FDE3C35692169540_TypeDefinitionIndex = 74026;
+	inline static constexpr unsigned int UIFullScreenHandler_Enum_3_FDE3C35692169540_TypeDefinitionIndex = 64918;
 
 	enum class UIFullScreenHandler_Enum_3_FDE3C35692169540 : ::System::Int32
 	{
-		Right = 4,
 		BothIncludeBlackEdge = 7,
-		BothAuto = 0,
-		Horizontal = 1,
-		Vertical = 2,
+		Right = 4,
 		Left = 3,
-		Bottom = 6,
 		Top = 5,
 		None = -1,
+		Vertical = 2,
+		Bottom = 6,
+		Horizontal = 1,
+		BothAuto = 0,
 	};
 }

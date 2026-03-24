@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_SCENEOBJECTSONLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB099D0)
+#define SIRENIX_ODININSPECTOR_SCENEOBJECTSONLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B115AF0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int SceneObjectsOnlyAttribute_TypeDefinitionIndex = 7213;
+	inline static constexpr unsigned int SceneObjectsOnlyAttribute_TypeDefinitionIndex = 7218;
 
 	class SceneObjectsOnlyAttribute : public ::System::Attribute
 	{

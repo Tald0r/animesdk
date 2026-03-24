@@ -4,10 +4,10 @@
 
 namespace System { class String; }
 
-#define SYSTEM_TEXT_ENCODINGINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x17F7B1F0)
-#define SYSTEM_TEXT_ENCODINGINFO_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x17F7B250)
-#define SYSTEM_TEXT_ENCODINGINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x17F7B260)
-#define SYSTEM_TEXT_ENCODINGINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x17F7B1E0)
+#define SYSTEM_TEXT_ENCODINGINFO_EQUALS_OFFSET UNITYSDK_OFFSET(0x185AF3E0)
+#define SYSTEM_TEXT_ENCODINGINFO_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x185AF440)
+#define SYSTEM_TEXT_ENCODINGINFO__CTOR_1_OFFSET UNITYSDK_OFFSET(0x185AF450)
+#define SYSTEM_TEXT_ENCODINGINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x185AF3D0)
 
 namespace System::Text
 {
@@ -16,8 +16,8 @@ namespace System::Text
 	class EncodingInfo : public ::System::Object
 	{
 	public:
-		::System::String* strEncodingName; // 0x10
-		::System::String* strDisplayName; // 0x18
+		::System::String* strDisplayName; // 0x10
+		::System::String* strEncodingName; // 0x18
 		::System::Int32 iCodePage; // 0x20
 
 		::System::Void _ctor(::System::Int32 codePage, ::System::String* name, ::System::String* displayName)

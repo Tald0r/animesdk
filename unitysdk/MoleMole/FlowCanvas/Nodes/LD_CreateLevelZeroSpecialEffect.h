@@ -14,39 +14,39 @@ namespace System::Collections { class IEnumerator; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class RenderTexture; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x990B7A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x990BC10)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__DOLOAD_OFFSET UNITYSDK_OFFSET(0x990BA00)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__REGISTERPORTS_B__18_0_OFFSET UNITYSDK_OFFSET(0x990BC30)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__REGISTERPORTS_B__18_1_OFFSET UNITYSDK_OFFSET(0x990BC40)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__UPDATEINTERNAL_OFFSET UNITYSDK_OFFSET(0x990B960)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA5065E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xA506A50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__DOLOAD_OFFSET UNITYSDK_OFFSET(0xA506840)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__REGISTERPORTS_B__18_0_OFFSET UNITYSDK_OFFSET(0xA506A70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__REGISTERPORTS_B__18_1_OFFSET UNITYSDK_OFFSET(0xA506A80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_CREATELEVELZEROSPECIALEFFECT__UPDATEINTERNAL_OFFSET UNITYSDK_OFFSET(0xA5067A0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_CreateLevelZeroSpecialEffect_TypeDefinitionIndex = 56290;
+	inline static constexpr unsigned int LD_CreateLevelZeroSpecialEffect_TypeDefinitionIndex = 48336;
 
 	class LD_CreateLevelZeroSpecialEffect : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* onFinish; // 0xA8
-		::UnityEngine::GameObject* _effGo; // 0xB0
-		::FlowCanvas::FlowOutput* output; // 0xB8
-		::MoleMole::Cameras::AsistantCameraEffect* _effInstance; // 0xC0
-		::System::String* RTKey; // 0xC8
-		::FlowCanvas::ValueInput_1<::System::String*>* extractXYZ; // 0xD0
-		::FlowCanvas::ValueOutput_1<::MoleMole::Cameras::AsistantCameraEffect*>* outputEffIns; // 0xD8
-		::FlowCanvas::ValueInput_1<::System::String*>* effectPath; // 0xE0
-		::FlowCanvas::ValueInput_1<::UnityEngine::RenderTexture*>* inTexture; // 0xE8
-		::System::String* effectInsKey; // 0xF0
-		::System::String* ValKey; // 0xF8
-		::System::Boolean _isInProgress; // 0x100
-		::System::Boolean AttachMainCamera; // 0x101
-		::System::Boolean isClearAfterDuration; // 0x102
-		::System::Single delayTime; // 0x104
-		::System::Single _dt; // 0x108
-		::System::Single effectDuration; // 0x10C
-		::UnityEngine::Vector2 rangeValue; // 0x110
-		::UnityEngine::Vector3 offset; // 0x118
+		::FlowCanvas::ValueInput_1<::System::String*>* extractXYZ; // 0xA8
+		::FlowCanvas::ValueInput_1<::System::String*>* effectPath; // 0xB0
+		::FlowCanvas::ValueInput_1<::UnityEngine::RenderTexture*>* inTexture; // 0xB8
+		::System::String* effectInsKey; // 0xC0
+		::FlowCanvas::ValueOutput_1<::MoleMole::Cameras::AsistantCameraEffect*>* outputEffIns; // 0xC8
+		::FlowCanvas::FlowOutput* output; // 0xD0
+		::FlowCanvas::FlowOutput* onFinish; // 0xD8
+		::MoleMole::Cameras::AsistantCameraEffect* _effInstance; // 0xE0
+		::System::String* ValKey; // 0xE8
+		::UnityEngine::GameObject* _effGo; // 0xF0
+		::System::String* RTKey; // 0xF8
+		::System::Single _dt; // 0x100
+		::UnityEngine::Vector3 offset; // 0x104
+		::System::Boolean isClearAfterDuration; // 0x110
+		::System::Boolean AttachMainCamera; // 0x111
+		::System::Boolean _isInProgress; // 0x112
+		::System::Single delayTime; // 0x114
+		::System::Single effectDuration; // 0x118
+		::UnityEngine::Vector2 rangeValue; // 0x11C
 
 		::System::Void _ctor()
 		{

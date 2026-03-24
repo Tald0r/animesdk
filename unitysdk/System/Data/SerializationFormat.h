@@ -3,7 +3,7 @@
 
 namespace System::Data
 {
-	inline static constexpr unsigned int SerializationFormat_TypeDefinitionIndex = 35422;
+	inline static constexpr unsigned int SerializationFormat_TypeDefinitionIndex = 36442;
 
 	enum class SerializationFormat : ::System::Int32
 	{

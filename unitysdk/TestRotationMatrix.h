@@ -4,22 +4,22 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define TESTROTATIONMATRIX_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A8A3F20)
-#define TESTROTATIONMATRIX__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A8A45D0)
-#define TESTROTATIONMATRIX__CTOR_OFFSET UNITYSDK_OFFSET(0x1A8A45B0)
+#define TESTROTATIONMATRIX_UPDATE_OFFSET UNITYSDK_OFFSET(0x18210A70)
+#define TESTROTATIONMATRIX__CCTOR_OFFSET UNITYSDK_OFFSET(0x18211120)
+#define TESTROTATIONMATRIX__CTOR_OFFSET UNITYSDK_OFFSET(0x18211100)
 
-inline static constexpr unsigned int TestRotationMatrix_TypeDefinitionIndex = 40962;
+inline static constexpr unsigned int TestRotationMatrix_TypeDefinitionIndex = 45781;
 
 class TestRotationMatrix : public ::UnityEngine::MonoBehaviour
 {
 public:
-	static ::System::Int32* StaticGet_WorldToPlaneSpace2()
-	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TestRotationMatrix_TypeDefinitionIndex)->GetStaticField(0x10320);
-	}
 	static ::System::Int32* StaticGet_WorldToPlaneSpace()
 	{
-		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TestRotationMatrix_TypeDefinitionIndex)->GetStaticField(0x10324);
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TestRotationMatrix_TypeDefinitionIndex)->GetStaticField(0x11910);
+	}
+	static ::System::Int32* StaticGet_WorldToPlaneSpace2()
+	{
+		return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(TestRotationMatrix_TypeDefinitionIndex)->GetStaticField(0x11914);
 	}
 	::UnityEngine::GameObject* characterGO; // 0x18
 	::UnityEngine::GameObject* planeGO; // 0x20

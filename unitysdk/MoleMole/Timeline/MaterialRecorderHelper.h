@@ -4,11 +4,11 @@
 
 namespace MoleMole::Timeline { class MaterialInfo; }
 
-#define MOLEMOLE_TIMELINE_MATERIALRECORDERHELPER_COPYFROM_OFFSET UNITYSDK_OFFSET(0x1A748340)
+#define MOLEMOLE_TIMELINE_MATERIALRECORDERHELPER_COPYFROM_OFFSET UNITYSDK_OFFSET(0x1ACEC050)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialRecorderHelper_TypeDefinitionIndex = 29168;
+	inline static constexpr unsigned int MaterialRecorderHelper_TypeDefinitionIndex = 30121;
 
 	class MaterialRecorderHelper : public ::System::Object
 	{

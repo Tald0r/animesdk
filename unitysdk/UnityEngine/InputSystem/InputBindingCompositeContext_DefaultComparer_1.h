@@ -4,7 +4,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputBindingCompositeContext_DefaultComparer_1_TypeDefinitionIndex = 27469;
+	inline static constexpr unsigned int InputBindingCompositeContext_DefaultComparer_1_TypeDefinitionIndex = 28409;
 
 	template <typename TValue>
 	struct InputBindingCompositeContext_DefaultComparer_1

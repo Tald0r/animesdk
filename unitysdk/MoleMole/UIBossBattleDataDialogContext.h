@@ -4,11 +4,11 @@
 
 namespace MoleMole { class UIBossBattleData; }
 
-#define MOLEMOLE_UIBOSSBATTLEDATADIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB91C1C0)
+#define MOLEMOLE_UIBOSSBATTLEDATADIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAC3C8A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBossBattleDataDialogContext_TypeDefinitionIndex = 40914;
+	inline static constexpr unsigned int UIBossBattleDataDialogContext_TypeDefinitionIndex = 78321;
 
 	class UIBossBattleDataDialogContext : public ::MoleMole::UIControllerContextBase
 	{

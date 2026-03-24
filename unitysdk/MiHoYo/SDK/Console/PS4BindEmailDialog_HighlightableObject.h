@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK::Console
 {
-	inline static constexpr unsigned int PS4BindEmailDialog_HighlightableObject_TypeDefinitionIndex = 18651;
+	inline static constexpr unsigned int PS4BindEmailDialog_HighlightableObject_TypeDefinitionIndex = 19250;
 
 	enum class PS4BindEmailDialog_HighlightableObject : ::System::Int32
 	{

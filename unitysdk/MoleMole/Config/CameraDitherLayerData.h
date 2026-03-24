@@ -5,7 +5,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CameraDitherLayerData_TypeDefinitionIndex = 37480;
+	inline static constexpr unsigned int CameraDitherLayerData_TypeDefinitionIndex = 65115;
 
 	struct alignas(4) CameraDitherLayerData
 	{

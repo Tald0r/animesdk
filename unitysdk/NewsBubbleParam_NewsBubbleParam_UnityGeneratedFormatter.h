@@ -10,20 +10,20 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x6A2B3D0)
-#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x6A2B3E0)
-#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x6A2B6B0)
-#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x6A2B8D0)
-#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x6A2B890)
+#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x64260B0)
+#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x64260C0)
+#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x6426390)
+#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x64265B0)
+#define NEWSBUBBLEPARAM_NEWSBUBBLEPARAM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x6426570)
 
-inline static constexpr unsigned int NewsBubbleParam_NewsBubbleParam_UnityGeneratedFormatter_TypeDefinitionIndex = 72616;
+inline static constexpr unsigned int NewsBubbleParam_NewsBubbleParam_UnityGeneratedFormatter_TypeDefinitionIndex = 65980;
 
 class NewsBubbleParam_NewsBubbleParam_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::NewsBubbleParam*>
 {
 public:
 	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::LanguageType, ::System::Int32>*>** StaticGet_CachedSerializer0()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::LanguageType, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(NewsBubbleParam_NewsBubbleParam_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x32EC0);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::LanguageType, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(NewsBubbleParam_NewsBubbleParam_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x34EE0);
 	}
 
 	::System::Void _ctor()

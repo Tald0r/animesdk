@@ -4,7 +4,7 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LanguageFontConfig_TypeDefinitionIndex = 47915;
+	inline static constexpr unsigned int LanguageFontConfig_TypeDefinitionIndex = 52331;
 
 	struct alignas(4) LanguageFontConfig
 	{

@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPhysicalSizeHandler_Enum_3_CC8EE595E9E2E280_TypeDefinitionIndex = 71413;
+	inline static constexpr unsigned int UIPhysicalSizeHandler_Enum_3_CC8EE595E9E2E280_TypeDefinitionIndex = 77623;
 
 	enum class UIPhysicalSizeHandler_Enum_3_CC8EE595E9E2E280 : ::System::Int32
 	{

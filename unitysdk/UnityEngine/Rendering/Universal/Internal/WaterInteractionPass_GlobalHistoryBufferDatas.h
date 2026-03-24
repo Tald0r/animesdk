@@ -7,12 +7,12 @@ namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine::NAPRenderPipeline0 { class GlobalBufferManager_HistoryBuffers; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_WATERINTERACTIONPASS_GLOBALHISTORYBUFFERDATAS_RELEASE_OFFSET UNITYSDK_OFFSET(0x17B85DC0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_WATERINTERACTIONPASS_GLOBALHISTORYBUFFERDATAS__CTOR_OFFSET UNITYSDK_OFFSET(0x17B86040)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_WATERINTERACTIONPASS_GLOBALHISTORYBUFFERDATAS_RELEASE_OFFSET UNITYSDK_OFFSET(0x17820FC0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_WATERINTERACTIONPASS_GLOBALHISTORYBUFFERDATAS__CTOR_OFFSET UNITYSDK_OFFSET(0x17821240)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int WaterInteractionPass_GlobalHistoryBufferDatas_TypeDefinitionIndex = 29062;
+	inline static constexpr unsigned int WaterInteractionPass_GlobalHistoryBufferDatas_TypeDefinitionIndex = 30015;
 
 	class WaterInteractionPass_GlobalHistoryBufferDatas : public ::System::Object
 	{

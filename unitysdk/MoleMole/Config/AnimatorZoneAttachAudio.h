@@ -9,22 +9,22 @@ namespace MoleMole::Config { class ConfigSoundActionGeneral; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x8496370)
-#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x84968A0)
-#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO__CTOR_OFFSET UNITYSDK_OFFSET(0x8496C00)
-#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO___BASE_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x8496C10)
-#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO___BASE_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x8496CA0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x94ED930)
+#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x94EDE60)
+#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO__CTOR_OFFSET UNITYSDK_OFFSET(0x94EE1C0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO___BASE_ONZONEENTER_OFFSET UNITYSDK_OFFSET(0x94EE1D0)
+#define MOLEMOLE_CONFIG_ANIMATORZONEATTACHAUDIO___BASE_ONZONEEXIT_OFFSET UNITYSDK_OFFSET(0x94EE260)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneAttachAudio_TypeDefinitionIndex = 74050;
+	inline static constexpr unsigned int AnimatorZoneAttachAudio_TypeDefinitionIndex = 75162;
 
 	class AnimatorZoneAttachAudio : public ::MoleMole::Config::AnimatorZone
 	{
 	public:
 		::System::Collections::Generic::List_1<::System::String*>* enterAudioList; // 0x50
-		::System::Collections::Generic::List_1<::System::String*>* exitAudioList; // 0x58
-		::MoleMole::Config::ConfigSoundActionGeneral* enterSoundAction; // 0x60
+		::MoleMole::Config::ConfigSoundActionGeneral* enterSoundAction; // 0x58
+		::System::Collections::Generic::List_1<::System::String*>* exitAudioList; // 0x60
 		::MoleMole::Config::ConfigSoundActionGeneral* exitSoundAction; // 0x68
 
 		::System::Void _ctor()

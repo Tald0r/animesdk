@@ -4,11 +4,11 @@
 
 class Class_2_104EA16A1BE40F83;
 
-#define MOLEMOLE_UIROLEEFFECTDIALOGPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB26BEE0)
+#define MOLEMOLE_UIROLEEFFECTDIALOGPOPCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x74A0B70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleEffectDialogPopContext_TypeDefinitionIndex = 48503;
+	inline static constexpr unsigned int UIRoleEffectDialogPopContext_TypeDefinitionIndex = 62355;
 
 	class UIRoleEffectDialogPopContext : public ::MoleMole::UIControllerContextBase
 	{

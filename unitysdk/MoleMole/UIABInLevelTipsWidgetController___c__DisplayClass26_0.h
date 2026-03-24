@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIABInLevelTipsWidgetController; }
 
-#define MOLEMOLE_UIABINLEVELTIPSWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBD73A00)
-#define MOLEMOLE_UIABINLEVELTIPSWIDGETCONTROLLER___C__DISPLAYCLASS26_0__REFRESHTIPS_B__0_OFFSET UNITYSDK_OFFSET(0xBD73A10)
+#define MOLEMOLE_UIABINLEVELTIPSWIDGETCONTROLLER___C__DISPLAYCLASS26_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF04390)
+#define MOLEMOLE_UIABINLEVELTIPSWIDGETCONTROLLER___C__DISPLAYCLASS26_0__REFRESHTIPS_B__0_OFFSET UNITYSDK_OFFSET(0xBF043A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIABInLevelTipsWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 41976;
+	inline static constexpr unsigned int UIABInLevelTipsWidgetController___c__DisplayClass26_0_TypeDefinitionIndex = 76930;
 
 	class UIABInLevelTipsWidgetController___c__DisplayClass26_0 : public ::System::Object
 	{

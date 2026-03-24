@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIRECOMMENDTYPESUITROWWIDGETCONTROLLER___C__DISPLAYCLASS13_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAC29770)
-#define MOLEMOLE_UIRECOMMENDTYPESUITROWWIDGETCONTROLLER___C__DISPLAYCLASS13_1__REFRESHVIEW_B__5_OFFSET UNITYSDK_OFFSET(0xAC29780)
+#define MOLEMOLE_UIRECOMMENDTYPESUITROWWIDGETCONTROLLER___C__DISPLAYCLASS13_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCA78B20)
+#define MOLEMOLE_UIRECOMMENDTYPESUITROWWIDGETCONTROLLER___C__DISPLAYCLASS13_1__REFRESHVIEW_B__5_OFFSET UNITYSDK_OFFSET(0xCA78B30)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRecommendTypeSuitRowWidgetController___c__DisplayClass13_1_TypeDefinitionIndex = 47924;
+	inline static constexpr unsigned int UIRecommendTypeSuitRowWidgetController___c__DisplayClass13_1_TypeDefinitionIndex = 67546;
 
 	class UIRecommendTypeSuitRowWidgetController___c__DisplayClass13_1 : public ::System::Object
 	{

@@ -5,11 +5,11 @@
 
 namespace MoleMole::Photo { class BoneSocketConfig; }
 
-#define MOLEMOLE_PHOTO_REFERENCESKELETONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB2FC380)
+#define MOLEMOLE_PHOTO_REFERENCESKELETONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xB870D60)
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int ReferenceSkeletonConfig_TypeDefinitionIndex = 78165;
+	inline static constexpr unsigned int ReferenceSkeletonConfig_TypeDefinitionIndex = 79158;
 
 	class ReferenceSkeletonConfig : public ::System::Object
 	{

@@ -5,7 +5,7 @@ namespace System { class Action; }
 
 namespace UnityEngine::UIElements
 {
-	inline static constexpr unsigned int IStylePainter_TypeDefinitionIndex = 23770;
+	inline static constexpr unsigned int IStylePainter_TypeDefinitionIndex = 24453;
 
 	class IStylePainter
 	{

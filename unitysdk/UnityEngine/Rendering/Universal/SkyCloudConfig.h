@@ -6,11 +6,11 @@
 namespace UnityEngine { class Gradient; }
 namespace UnityEngine { class Texture; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SKYCLOUDCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x18042140)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SKYCLOUDCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x186641C0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SkyCloudConfig_TypeDefinitionIndex = 28507;
+	inline static constexpr unsigned int SkyCloudConfig_TypeDefinitionIndex = 29450;
 
 	class SkyCloudConfig : public ::System::Object
 	{

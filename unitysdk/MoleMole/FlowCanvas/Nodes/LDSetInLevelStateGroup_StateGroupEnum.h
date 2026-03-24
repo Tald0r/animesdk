@@ -3,7 +3,7 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSetInLevelStateGroup_StateGroupEnum_TypeDefinitionIndex = 78541;
+	inline static constexpr unsigned int LDSetInLevelStateGroup_StateGroupEnum_TypeDefinitionIndex = 46192;
 
 	enum class LDSetInLevelStateGroup_StateGroupEnum : ::System::Int32
 	{

@@ -8,17 +8,17 @@ namespace MoleMole::Cameras { class VNoiseSettings; }
 namespace MoleMole::Config { class ConfigCameraNoise; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_2_EA61C125529DDEBD_METHOD_2_AE035F54FA1ED001_OFFSET UNITYSDK_OFFSET(0x92DEF70)
-#define CLASS_2_EA61C125529DDEBD__CTOR_OFFSET UNITYSDK_OFFSET(0x92DEE10)
+#define CLASS_2_EA61C125529DDEBD_METHOD_2_AE035F54FA1ED001_OFFSET UNITYSDK_OFFSET(0xA709530)
+#define CLASS_2_EA61C125529DDEBD__CTOR_OFFSET UNITYSDK_OFFSET(0xA7093D0)
 
-inline static constexpr unsigned int Class_2_EA61C125529DDEBD_TypeDefinitionIndex = 68846;
+inline static constexpr unsigned int Class_2_EA61C125529DDEBD_TypeDefinitionIndex = 40635;
 
 class Class_2_EA61C125529DDEBD : public ::Class_1_5BD3EF046502B972
 {
 public:
-	::MoleMole::Cameras::VNoiseSettings* Field_2_4; // 0x20
-	::UnityEngine::AnimationCurve* Field_2_2; // 0x28
-	::MoleMole::Config::ConfigCameraNoise* Field_2_3; // 0x30
+	::UnityEngine::AnimationCurve* Field_2_2; // 0x20
+	::MoleMole::Config::ConfigCameraNoise* Field_2_3; // 0x28
+	::MoleMole::Cameras::VNoiseSettings* Field_2_4; // 0x30
 	::System::Single Field_2_0; // 0x38
 	::System::Single Field_2_6; // 0x3C
 	::System::Single Field_2_1; // 0x40

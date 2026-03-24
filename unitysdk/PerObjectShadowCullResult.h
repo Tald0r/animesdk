@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int PerObjectShadowCullResult_TypeDefinitionIndex = 28156;
+inline static constexpr unsigned int PerObjectShadowCullResult_TypeDefinitionIndex = 29097;
 
 enum class PerObjectShadowCullResult : ::System::UInt32
 {
@@ -10,11 +10,12 @@ enum class PerObjectShadowCullResult : ::System::UInt32
 	EntityInvalid = 0x2,
 	EntityIsSimpleModel = 0x3,
 	EntityOutOfMaxDistance = 0x4,
-	EntityPerObjectShadowOff = 0x5,
-	EntityIsNotActive = 0x6,
-	EntityCBufferIsNull = 0x7,
-	RenderersInvisible = 0x8,
-	OutOfFrustum = 0x9,
-	OutOfMaxCount = 0xA,
-	OutOfAtlas = 0xB,
+	ReachDisableShadowDistance = 0x5,
+	EntityPerObjectShadowOff = 0x6,
+	EntityIsNotActive = 0x7,
+	EntityCBufferIsNull = 0x8,
+	RenderersInvisible = 0x9,
+	OutOfFrustum = 0xA,
+	OutOfMaxCount = 0xB,
+	OutOfAtlas = 0xC,
 };

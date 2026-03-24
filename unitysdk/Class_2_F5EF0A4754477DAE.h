@@ -7,19 +7,19 @@ class Class_1_769471637ABAF003;
 namespace Cysharp::Threading::Tasks { template <typename T> class UniTaskCompletionSource_1; }
 namespace System { template <typename T> class Func_1; }
 
-#define CLASS_2_F5EF0A4754477DAE_METHOD_2_60D4E3CEBC073B2E_OFFSET UNITYSDK_OFFSET(0x99F1100)
-#define CLASS_2_F5EF0A4754477DAE_METHOD_2_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x99F1110)
-#define CLASS_2_F5EF0A4754477DAE_METHOD_2_FB1C56FCE4ABD259_OFFSET UNITYSDK_OFFSET(0x99F0D30)
-#define CLASS_2_F5EF0A4754477DAE__CTOR_OFFSET UNITYSDK_OFFSET(0x99F0D20)
+#define CLASS_2_F5EF0A4754477DAE_METHOD_2_60D4E3CEBC073B2E_OFFSET UNITYSDK_OFFSET(0x96B1440)
+#define CLASS_2_F5EF0A4754477DAE_METHOD_2_9681042564541CD6_OFFSET UNITYSDK_OFFSET(0x96B1380)
+#define CLASS_2_F5EF0A4754477DAE_METHOD_2_FB1C56FCE4ABD259_OFFSET UNITYSDK_OFFSET(0x96B0FB0)
+#define CLASS_2_F5EF0A4754477DAE__CTOR_OFFSET UNITYSDK_OFFSET(0x96B0FA0)
 
-inline static constexpr unsigned int Class_2_F5EF0A4754477DAE_TypeDefinitionIndex = 69697;
+inline static constexpr unsigned int Class_2_F5EF0A4754477DAE_TypeDefinitionIndex = 39763;
 
 class Class_2_F5EF0A4754477DAE : public ::Class_1_0F3CBC7F3887FCE9
 {
 public:
 	::System::Func_1<::System::Boolean>* Field_2_1; // 0x28
-	::Cysharp::Threading::Tasks::UniTaskCompletionSource_1<::System::Int32>* Field_2_2; // 0x30
-	::System::Threading::CancellationToken Field_2_0; // 0x38
+	::System::Threading::CancellationToken Field_2_0; // 0x30
+	::Cysharp::Threading::Tasks::UniTaskCompletionSource_1<::System::Int32>* Field_2_2; // 0x38
 
 	::System::Void _ctor(::Class_1_769471637ABAF003* a1, ::System::Func_1<::System::Boolean>* a2, ::System::Threading::CancellationToken a3)
 	{
@@ -31,13 +31,13 @@ public:
 		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_F5EF0A4754477DAE_METHOD_2_FB1C56FCE4ABD259_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_2_60D4E3CEBC073B2E(::System::Boolean a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_F5EF0A4754477DAE_METHOD_2_60D4E3CEBC073B2E_OFFSET))(this, a1);
-	}
-
 	::System::Void Method_2_9681042564541CD6()
 	{
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F5EF0A4754477DAE_METHOD_2_9681042564541CD6_OFFSET))(this);
+	}
+
+	::System::Void Method_2_60D4E3CEBC073B2E(::System::Boolean a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_F5EF0A4754477DAE_METHOD_2_60D4E3CEBC073B2E_OFFSET))(this, a1);
 	}
 };

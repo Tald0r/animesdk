@@ -19,7 +19,7 @@ namespace UnityEngine { class Animator; }
 
 namespace MoleMole::Photo
 {
-	inline static constexpr unsigned int PlayAnimationClipSubGraphConfig_1_TypeDefinitionIndex = 48512;
+	inline static constexpr unsigned int PlayAnimationClipSubGraphConfig_1_TypeDefinitionIndex = 77527;
 
 	template <typename T>
 	class PlayAnimationClipSubGraphConfig_1 : public ::System::Object

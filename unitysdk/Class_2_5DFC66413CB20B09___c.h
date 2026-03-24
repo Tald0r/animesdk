@@ -5,37 +5,37 @@
 namespace Nap::NapECS { class EcsComponent; }
 namespace System { template <typename T> class Predicate_1; }
 
-#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_1_OFFSET UNITYSDK_OFFSET(0xA967B50)
-#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_2_OFFSET UNITYSDK_OFFSET(0xA967BC0)
-#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_3_OFFSET UNITYSDK_OFFSET(0xA967C30)
-#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_OFFSET UNITYSDK_OFFSET(0xA967AE0)
-#define CLASS_2_5DFC66413CB20B09___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA967A90)
-#define CLASS_2_5DFC66413CB20B09___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA967AD0)
+#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_1_OFFSET UNITYSDK_OFFSET(0x67E9420)
+#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_2_OFFSET UNITYSDK_OFFSET(0x67E9490)
+#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_3_OFFSET UNITYSDK_OFFSET(0x67E9500)
+#define CLASS_2_5DFC66413CB20B09___C_METHOD_1_8A429F16678BB711_OFFSET UNITYSDK_OFFSET(0x67E93B0)
+#define CLASS_2_5DFC66413CB20B09___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x67E9360)
+#define CLASS_2_5DFC66413CB20B09___C__CTOR_OFFSET UNITYSDK_OFFSET(0x67E93A0)
 
-inline static constexpr unsigned int Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex = 64461;
+inline static constexpr unsigned int Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex = 47756;
 
 class Class_2_5DFC66413CB20B09___c : public ::System::Object
 {
 public:
-	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__61_0()
-	{
-		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3F7C0);
-	}
-	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__60_1()
-	{
-		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3F7C8);
-	}
 	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__60_0()
 	{
-		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3F7D0);
-	}
-	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__61_1()
-	{
-		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3F7D8);
+		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3BF40);
 	}
 	static ::Class_2_5DFC66413CB20B09___c** StaticGet___9()
 	{
-		return (::Class_2_5DFC66413CB20B09___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3F7E0);
+		return (::Class_2_5DFC66413CB20B09___c**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3BF48);
+	}
+	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__61_1()
+	{
+		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3BF50);
+	}
+	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__61_0()
+	{
+		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3BF58);
+	}
+	static ::System::Predicate_1<::Nap::NapECS::EcsComponent*>** StaticGet___9__60_1()
+	{
+		return (::System::Predicate_1<::Nap::NapECS::EcsComponent*>**)Il2CppClass::FromTypeDefinitionIndex(Class_2_5DFC66413CB20B09___c_TypeDefinitionIndex)->GetStaticField(0x3BF60);
 	}
 
 	static ::System::Void _cctor()

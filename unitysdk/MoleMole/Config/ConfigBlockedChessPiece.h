@@ -11,39 +11,39 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class AnimationCurve; }
 namespace UnityEngine { class Texture2D; }
 
-#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE_GET_NOISETEXTURE_OFFSET UNITYSDK_OFFSET(0x15EA7E60)
-#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE_GET_SCREENMAPTEXTURE_OFFSET UNITYSDK_OFFSET(0x15EA7C30)
-#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE_ISMAPTEXTUREVALID_OFFSET UNITYSDK_OFFSET(0x15EA8090)
-#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE__CTOR_OFFSET UNITYSDK_OFFSET(0x15EA8150)
+#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE_GET_NOISETEXTURE_OFFSET UNITYSDK_OFFSET(0xE2B9870)
+#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE_GET_SCREENMAPTEXTURE_OFFSET UNITYSDK_OFFSET(0xE2B9630)
+#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE_ISMAPTEXTUREVALID_OFFSET UNITYSDK_OFFSET(0xE2B9AB0)
+#define MOLEMOLE_CONFIG_CONFIGBLOCKEDCHESSPIECE__CTOR_OFFSET UNITYSDK_OFFSET(0xE2B9B70)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigBlockedChessPiece_TypeDefinitionIndex = 41557;
+	inline static constexpr unsigned int ConfigBlockedChessPiece_TypeDefinitionIndex = 72066;
 
 	class ConfigBlockedChessPiece : public ::System::Object
 	{
 	public:
-		::System::Collections::Generic::List_1<::System::String*>* overlayEffectPathes; // 0x10
-		::System::String* BigTVresourse; // 0x18
-		::System::String* textureSheetConfigKey; // 0x20
-		::System::String* screenMapTexturePath; // 0x28
-		::UnityEngine::Texture2D* _noiseTexture; // 0x30
-		::UnityEngine::AnimationCurve* OpacityCurve; // 0x38
-		::System::String* noiseTexturePath; // 0x40
-		::UnityEngine::Texture2D* _screenMapTexture; // 0x48
-		::MoleMole::Config::ConfigBlockedChessPiece_BigTVType bigTVTpye; // 0x50
-		::System::Boolean EnableMultipleDisplay; // 0x54
-		::UnityEngine::Vector2 MultipleDisplayOpacityRange; // 0x58
-		::UnityEngine::Color screenMapColor; // 0x60
-		::System::Boolean noiseTrigger; // 0x70
-		::System::Boolean isDynamicBrightness; // 0x71
-		::System::Boolean isTextureSheet; // 0x72
-		::System::Nullable_1<::System::Boolean> overrideNoiseTrigger; // 0x73
-		::System::Single ShowAnimOpacity; // 0x78
-		::System::Nullable_1<::System::Single> overrideBrightness; // 0x7C
+		::UnityEngine::Texture2D* _screenMapTexture; // 0x10
+		::System::Collections::Generic::List_1<::System::String*>* overlayEffectPathes; // 0x18
+		::UnityEngine::AnimationCurve* OpacityCurve; // 0x20
+		::System::String* textureSheetConfigKey; // 0x28
+		::System::String* noiseTexturePath; // 0x30
+		::UnityEngine::Texture2D* _noiseTexture; // 0x38
+		::System::String* screenMapTexturePath; // 0x40
+		::System::String* BigTVresourse; // 0x48
+		::UnityEngine::Color screenMapColor; // 0x50
+		::System::Boolean isDynamicBrightness; // 0x60
+		::System::Boolean noiseTrigger; // 0x61
+		::System::Nullable_1<::System::Boolean> overrideNoiseTrigger; // 0x62
+		::System::Boolean isTextureSheet; // 0x64
+		::System::Nullable_1<::System::Single> overrideBrightness; // 0x68
+		::UnityEngine::Color noiseColor; // 0x70
+		::System::Boolean EnableMultipleDisplay; // 0x80
 		::System::Single BrightOpacity; // 0x84
-		::System::Nullable_1<::System::Single> overrideOpacity; // 0x88
-		::UnityEngine::Color noiseColor; // 0x90
+		::UnityEngine::Vector2 MultipleDisplayOpacityRange; // 0x88
+		::System::Nullable_1<::System::Single> overrideOpacity; // 0x90
+		::System::Single ShowAnimOpacity; // 0x98
+		::MoleMole::Config::ConfigBlockedChessPiece_BigTVType bigTVTpye; // 0x9C
 
 		::System::Void _ctor()
 		{

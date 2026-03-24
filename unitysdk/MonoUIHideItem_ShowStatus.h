@@ -1,10 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int MonoUIHideItem_ShowStatus_TypeDefinitionIndex = 52694;
+inline static constexpr unsigned int MonoUIHideItem_ShowStatus_TypeDefinitionIndex = 55262;
 
 enum class MonoUIHideItem_ShowStatus : ::System::Int32
 {
-	Show = 0,
 	Hide = 1,
+	Show = 0,
 };

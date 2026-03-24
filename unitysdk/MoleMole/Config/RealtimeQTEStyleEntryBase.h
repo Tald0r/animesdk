@@ -2,16 +2,16 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_43BD383C98B4C0C5_23;
+class Class_1_43BD383C98B4C0C5_85;
 class Class_2_D244C6518E0DA169;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE_GETBUTTONSTYLE_OFFSET UNITYSDK_OFFSET(0xCDC0B90)
-#define MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xCDC0C00)
+#define MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE_GETBUTTONSTYLE_OFFSET UNITYSDK_OFFSET(0xD0A5BE0)
+#define MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A5C50)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int RealtimeQTEStyleEntryBase_TypeDefinitionIndex = 36895;
+	inline static constexpr unsigned int RealtimeQTEStyleEntryBase_TypeDefinitionIndex = 77217;
 
 	class RealtimeQTEStyleEntryBase : public ::System::Object
 	{
@@ -23,9 +23,9 @@ namespace MoleMole::Config
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE__CTOR_OFFSET))(this);
 		}
 
-		::Class_1_43BD383C98B4C0C5_23* GetButtonStyle(::Class_2_D244C6518E0DA169* task)
+		::Class_1_43BD383C98B4C0C5_85* GetButtonStyle(::Class_2_D244C6518E0DA169* task)
 		{
-			return ((::Class_1_43BD383C98B4C0C5_23*(*)(::PVOID, ::Class_2_D244C6518E0DA169*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE_GETBUTTONSTYLE_OFFSET))(this, task);
+			return ((::Class_1_43BD383C98B4C0C5_85*(*)(::PVOID, ::Class_2_D244C6518E0DA169*))((::PBYTE)hIl2Cpp + MOLEMOLE_CONFIG_REALTIMEQTESTYLEENTRYBASE_GETBUTTONSTYLE_OFFSET))(this, task);
 		}
 	};
 }

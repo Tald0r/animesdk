@@ -1,0 +1,31 @@
+#pragma once
+#include "unitysdk/unitysdk.h"
+#include "unitysdk/System/ValueType.h"
+
+#define STRUCT_2_7AEA12404CD1ADA2_EQUALS_OFFSET UNITYSDK_OFFSET(0x36E530)
+#define STRUCT_2_7AEA12404CD1ADA2_METHOD_2_ADF4AD3331B4D7AD_OFFSET UNITYSDK_OFFSET(0x36E5F0)
+#define STRUCT_2_7AEA12404CD1ADA2__CTOR_OFFSET UNITYSDK_OFFSET(0x36E520)
+
+inline static constexpr unsigned int Struct_2_7AEA12404CD1ADA2_TypeDefinitionIndex = 63440;
+
+struct alignas(4) Struct_2_7AEA12404CD1ADA2
+{
+	::System::Int32 Field_2_0; // 0x10
+	::System::Int32 Field_2_1; // 0x14
+	::System::Boolean Field_2_2; // 0x18
+
+	::System::Void _ctor(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + STRUCT_2_7AEA12404CD1ADA2__CTOR_OFFSET))(this, a1);
+	}
+
+	::System::Boolean Equals(::Struct_2_7AEA12404CD1ADA2 a1)
+	{
+		return ((::System::Boolean(*)(::PVOID, ::Struct_2_7AEA12404CD1ADA2))((::PBYTE)hIl2Cpp + STRUCT_2_7AEA12404CD1ADA2_EQUALS_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_2_ADF4AD3331B4D7AD(::System::Int32 a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Int32))((::PBYTE)hIl2Cpp + STRUCT_2_7AEA12404CD1ADA2_METHOD_2_ADF4AD3331B4D7AD_OFFSET))(this, a1);
+	}
+};

@@ -4,7 +4,7 @@
 
 namespace UnityEngine::PlayerLoop
 {
-	inline static constexpr unsigned int EarlyUpdate_ProcessMouseInWindow_TypeDefinitionIndex = 5536;
+	inline static constexpr unsigned int EarlyUpdate_ProcessMouseInWindow_TypeDefinitionIndex = 5539;
 
 	struct alignas(1) EarlyUpdate_ProcessMouseInWindow
 	{

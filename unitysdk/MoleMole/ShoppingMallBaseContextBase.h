@@ -2,31 +2,31 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_0_16E4307DCC419505_187;
+class Class_0_16E4307DCC419505_133;
 class Class_1_402812A65CC3A690;
 namespace MoleMole { class MonoGamepadModule; }
 namespace MoleMole { class MonoGamepadRegion; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_ADDAUTOMODULE_OFFSET UNITYSDK_OFFSET(0xD827990)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_ADDMODULE_OFFSET UNITYSDK_OFFSET(0xD8278E0)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_AUTOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xD827840)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_GOODS_OFFSET UNITYSDK_OFFSET(0xD8277E0)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_JUMPITEMDATAPAIR_OFFSET UNITYSDK_OFFSET(0xD827820)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_MONOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xD827800)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_ONCLICK_OFFSET UNITYSDK_OFFSET(0xD8277C0)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_ONCLICKGOODS_OFFSET UNITYSDK_OFFSET(0xD827870)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_AUTOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xD827850)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_GOODS_OFFSET UNITYSDK_OFFSET(0xD8277F0)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_JUMPITEMDATAPAIR_OFFSET UNITYSDK_OFFSET(0xD827830)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_MONOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xD827810)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_ONCLICK_OFFSET UNITYSDK_OFFSET(0xD8277D0)
-#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xD827860)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_ADDAUTOMODULE_OFFSET UNITYSDK_OFFSET(0xB9B79C0)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_ADDMODULE_OFFSET UNITYSDK_OFFSET(0xB9B7910)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_AUTOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xB9B7870)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_GOODS_OFFSET UNITYSDK_OFFSET(0xB9B7810)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_JUMPITEMDATAPAIR_OFFSET UNITYSDK_OFFSET(0xB9B7850)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_MONOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xB9B7830)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_ONCLICK_OFFSET UNITYSDK_OFFSET(0xB9B77F0)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_ONCLICKGOODS_OFFSET UNITYSDK_OFFSET(0xB9B78A0)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_AUTOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xB9B7880)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_GOODS_OFFSET UNITYSDK_OFFSET(0xB9B7820)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_JUMPITEMDATAPAIR_OFFSET UNITYSDK_OFFSET(0xB9B7860)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_MONOGAMEPADREGION_OFFSET UNITYSDK_OFFSET(0xB9B7840)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_ONCLICK_OFFSET UNITYSDK_OFFSET(0xB9B7800)
+#define MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE__CTOR_OFFSET UNITYSDK_OFFSET(0xB9B7890)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ShoppingMallBaseContextBase_TypeDefinitionIndex = 71487;
+	inline static constexpr unsigned int ShoppingMallBaseContextBase_TypeDefinitionIndex = 78955;
 
 	class ShoppingMallBaseContextBase : public ::MoleMole::UIControllerContextBase
 	{
@@ -34,14 +34,14 @@ namespace MoleMole
 		::MoleMole::MonoGamepadRegion* _MonoGamepadRegion_k__BackingField; // 0x28
 		::Class_1_402812A65CC3A690* _JumpItemDataPair_k__BackingField; // 0x30
 		::MoleMole::MonoGamepadRegion* _AutoGamepadRegion_k__BackingField; // 0x38
-		::System::Action_1<::System::Int32>* _OnClick_k__BackingField; // 0x40
-		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>* _Goods_k__BackingField; // 0x48
-		::System::Boolean isAutoFocus; // 0x50
-		::System::Boolean IsResetSelect; // 0x51
+		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>* _Goods_k__BackingField; // 0x40
+		::System::Action_1<::System::Int32>* _OnClick_k__BackingField; // 0x48
+		::System::Boolean IsResetSelect; // 0x50
+		::System::Boolean isAutoFocus; // 0x51
 
-		::System::Void _ctor(::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>* goods, ::MoleMole::MonoGamepadRegion* region, ::System::Action_1<::System::Int32>* onClick)
+		::System::Void _ctor(::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>* goods, ::MoleMole::MonoGamepadRegion* region, ::System::Action_1<::System::Int32>* onClick)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>*, ::MoleMole::MonoGamepadRegion*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE__CTOR_OFFSET))(this, goods, region, onClick);
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>*, ::MoleMole::MonoGamepadRegion*, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE__CTOR_OFFSET))(this, goods, region, onClick);
 		}
 
 		::System::Action_1<::System::Int32>* get_OnClick()
@@ -54,14 +54,14 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID, ::System::Action_1<::System::Int32>*))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_ONCLICK_OFFSET))(this, value);
 		}
 
-		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>* get_Goods()
+		::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>* get_Goods()
 		{
-			return ((::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_GOODS_OFFSET))(this);
+			return ((::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_GET_GOODS_OFFSET))(this);
 		}
 
-		::System::Void set_Goods(::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>* value)
+		::System::Void set_Goods(::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>* value)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_187*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_GOODS_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::Class_0_16E4307DCC419505_133*>*))((::PBYTE)hIl2Cpp + MOLEMOLE_SHOPPINGMALLBASECONTEXTBASE_SET_GOODS_OFFSET))(this, value);
 		}
 
 		::MoleMole::MonoGamepadRegion* get_MonoGamepadRegion()

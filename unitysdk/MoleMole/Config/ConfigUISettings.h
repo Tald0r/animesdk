@@ -2,23 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CONFIG_CONFIGUISETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0xEC3A890)
+#define MOLEMOLE_CONFIG_CONFIGUISETTINGS__CTOR_OFFSET UNITYSDK_OFFSET(0xCAF6710)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUISettings_TypeDefinitionIndex = 45922;
+	inline static constexpr unsigned int ConfigUISettings_TypeDefinitionIndex = 39233;
 
 	class ConfigUISettings : public ::System::Object
 	{
 	public:
 		::System::Single DefUISceneFadeInSeconds; // 0x10
-		::System::Single HollowEventDisplayProtectedSeconds; // 0x14
-		::System::Single HollowMapFadeOutSeconds; // 0x18
-		::System::Single HollowBattleFadeoutSeconds; // 0x1C
+		::System::Single HollowBattleFadeInSeconds; // 0x14
+		::System::Single HollowEventDisplayProtectedSeconds; // 0x18
+		::System::Single DefUISceneFadeOutSeconds; // 0x1C
 		::System::Single HollowMapFadeInSeconds; // 0x20
-		::System::Single HollowBattleFadeInSeconds; // 0x24
-		::System::Single HollowBattleDieFadeoutSeconds; // 0x28
-		::System::Single DefUISceneFadeOutSeconds; // 0x2C
+		::System::Single HollowBattleDieFadeoutSeconds; // 0x24
+		::System::Single HollowBattleFadeoutSeconds; // 0x28
+		::System::Single HollowMapFadeOutSeconds; // 0x2C
 
 		::System::Void _ctor()
 		{

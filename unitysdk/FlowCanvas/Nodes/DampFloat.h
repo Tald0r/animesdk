@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_4.h"
 
-#define FLOWCANVAS_NODES_DAMPFLOAT_INVOKE_OFFSET UNITYSDK_OFFSET(0x191550D0)
-#define FLOWCANVAS_NODES_DAMPFLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x19155140)
+#define FLOWCANVAS_NODES_DAMPFLOAT_INVOKE_OFFSET UNITYSDK_OFFSET(0x19547230)
+#define FLOWCANVAS_NODES_DAMPFLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x195472A0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int DampFloat_TypeDefinitionIndex = 25587;
+	inline static constexpr unsigned int DampFloat_TypeDefinitionIndex = 26044;
 
 	class DampFloat : public ::FlowCanvas::Nodes::PureFunctionNode_4<::System::Single, ::System::Single, ::System::Single, ::System::Single>
 	{

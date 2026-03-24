@@ -8,7 +8,7 @@ namespace FluffyUnderware::Curvy::Generator { class CGModuleOutputSlot; }
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int IOnRequestProcessing_TypeDefinitionIndex = 35803;
+	inline static constexpr unsigned int IOnRequestProcessing_TypeDefinitionIndex = 36823;
 
 	class IOnRequestProcessing
 	{

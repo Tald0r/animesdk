@@ -6,20 +6,20 @@
 namespace Cysharp::Threading::Tasks { class UniTaskCompletionSource; }
 namespace DG::Tweening { class Sequence; }
 
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSABYSSS2DIALOGPOPWINDOWCONTROLLER_COMBINEANIMATIONHELPER___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0x96199F0)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSABYSSS2DIALOGPOPWINDOWCONTROLLER_COMBINEANIMATIONHELPER___C__DISPLAYCLASS17_0__PLAYCARDMERGEANIM_B__0_OFFSET UNITYSDK_OFFSET(0x9619A00)
-#define MOLEMOLE_UIHOLLOWCARDOPTIONSABYSSS2DIALOGPOPWINDOWCONTROLLER_COMBINEANIMATIONHELPER___C__DISPLAYCLASS17_0__PLAYCARDMERGEANIM_B__1_OFFSET UNITYSDK_OFFSET(0x9619A30)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSABYSSS2DIALOGPOPWINDOWCONTROLLER_COMBINEANIMATIONHELPER___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8C3E8C0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSABYSSS2DIALOGPOPWINDOWCONTROLLER_COMBINEANIMATIONHELPER___C__DISPLAYCLASS17_0__PLAYCARDMERGEANIM_B__0_OFFSET UNITYSDK_OFFSET(0x8C3E8D0)
+#define MOLEMOLE_UIHOLLOWCARDOPTIONSABYSSS2DIALOGPOPWINDOWCONTROLLER_COMBINEANIMATIONHELPER___C__DISPLAYCLASS17_0__PLAYCARDMERGEANIM_B__1_OFFSET UNITYSDK_OFFSET(0x8C3E900)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCardOptionsAbyssS2DialogPopWindowController_CombineAnimationHelper___c__DisplayClass17_0_TypeDefinitionIndex = 55094;
+	inline static constexpr unsigned int UIHollowCardOptionsAbyssS2DialogPopWindowController_CombineAnimationHelper___c__DisplayClass17_0_TypeDefinitionIndex = 71665;
 
 	class UIHollowCardOptionsAbyssS2DialogPopWindowController_CombineAnimationHelper___c__DisplayClass17_0 : public ::System::Object
 	{
 	public:
 		::DG::Tweening::Sequence* tweenSequence2; // 0x10
-		::System::Threading::CancellationToken token; // 0x18
-		::Cysharp::Threading::Tasks::UniTaskCompletionSource* tsc; // 0x20
+		::Cysharp::Threading::Tasks::UniTaskCompletionSource* tsc; // 0x18
+		::System::Threading::CancellationToken token; // 0x20
 
 		::System::Void _ctor()
 		{

@@ -16,25 +16,25 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define CHARACTERRAMPTEXPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x17BDF0C0)
-#define CHARACTERRAMPTEXPASS_RENDERRAMPTEX_OFFSET UNITYSDK_OFFSET(0x17BDF590)
-#define CHARACTERRAMPTEXPASS_UPDATERAMPMATERIALPROPERTIES_OFFSET UNITYSDK_OFFSET(0x17BDFF00)
-#define CHARACTERRAMPTEXPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x17BE1030)
-#define CHARACTERRAMPTEXPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x17BDEFF0)
-#define CHARACTERRAMPTEXPASS__UPDATERAMPMATERIALPROPERTIES_G__RECALCULATECOLOR_7_0_OFFSET UNITYSDK_OFFSET(0x17BE0FD0)
+#define CHARACTERRAMPTEXPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x182C7300)
+#define CHARACTERRAMPTEXPASS_RENDERRAMPTEX_OFFSET UNITYSDK_OFFSET(0x182C77D0)
+#define CHARACTERRAMPTEXPASS_UPDATERAMPMATERIALPROPERTIES_OFFSET UNITYSDK_OFFSET(0x182C8140)
+#define CHARACTERRAMPTEXPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x182C9270)
+#define CHARACTERRAMPTEXPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x182C7230)
+#define CHARACTERRAMPTEXPASS__UPDATERAMPMATERIALPROPERTIES_G__RECALCULATECOLOR_7_0_OFFSET UNITYSDK_OFFSET(0x182C9210)
 
-inline static constexpr unsigned int CharacterRampTexPass_TypeDefinitionIndex = 28145;
+inline static constexpr unsigned int CharacterRampTexPass_TypeDefinitionIndex = 29086;
 
 class CharacterRampTexPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 {
 public:
 	static ::System::Collections::Generic::HashSet_1<::System::Int32>** StaticGet_dependencyProperties()
 	{
-		return (::System::Collections::Generic::HashSet_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CharacterRampTexPass_TypeDefinitionIndex)->GetStaticField(0x20740);
+		return (::System::Collections::Generic::HashSet_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CharacterRampTexPass_TypeDefinitionIndex)->GetStaticField(0x21DA0);
 	}
 	static ::System::Boolean* StaticGet_logAllRampTexUpdates()
 	{
-		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(CharacterRampTexPass_TypeDefinitionIndex)->GetStaticField(0x55B0);
+		return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(CharacterRampTexPass_TypeDefinitionIndex)->GetStaticField(0x5690);
 	}
 	::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_Sampler; // 0xA8
 	::System::String* k_ProfilerTag; // 0xB0

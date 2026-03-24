@@ -5,10 +5,10 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define SPAWNPREFABONKEYDOWN_UPDATE_OFFSET UNITYSDK_OFFSET(0x16C3D080)
-#define SPAWNPREFABONKEYDOWN__CTOR_OFFSET UNITYSDK_OFFSET(0x16C3D270)
+#define SPAWNPREFABONKEYDOWN_UPDATE_OFFSET UNITYSDK_OFFSET(0x1ABB6B60)
+#define SPAWNPREFABONKEYDOWN__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABB6D50)
 
-inline static constexpr unsigned int SpawnPrefabOnKeyDown_TypeDefinitionIndex = 40579;
+inline static constexpr unsigned int SpawnPrefabOnKeyDown_TypeDefinitionIndex = 45827;
 
 class SpawnPrefabOnKeyDown : public ::UnityEngine::MonoBehaviour
 {

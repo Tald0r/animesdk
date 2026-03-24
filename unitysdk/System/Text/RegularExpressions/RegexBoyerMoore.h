@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Globalization { class CultureInfo; }
 
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_ISMATCH_OFFSET UNITYSDK_OFFSET(0x1824F3A0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_MATCHPATTERN_OFFSET UNITYSDK_OFFSET(0x1824F1F0)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_SCAN_OFFSET UNITYSDK_OFFSET(0x1824F410)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x1824F920)
-#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE__CTOR_OFFSET UNITYSDK_OFFSET(0x1824E9F0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_ISMATCH_OFFSET UNITYSDK_OFFSET(0x187E97E0)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_MATCHPATTERN_OFFSET UNITYSDK_OFFSET(0x187E9630)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_SCAN_OFFSET UNITYSDK_OFFSET(0x187E9850)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x187E9D60)
+#define SYSTEM_TEXT_REGULAREXPRESSIONS_REGEXBOYERMOORE__CTOR_OFFSET UNITYSDK_OFFSET(0x187E8E30)
 
 namespace System::Text::RegularExpressions
 {
@@ -20,10 +20,10 @@ namespace System::Text::RegularExpressions
 	public:
 		// static const ::System::Int32 infinite = 0x7FFFFFFF; // 0x0
 		::Il2CppArray<::Il2CppArray<::System::Int32>*>* _negativeUnicode; // 0x10
-		::Il2CppArray<::System::Int32>* _positive; // 0x18
-		::System::String* _pattern; // 0x20
-		::Il2CppArray<::System::Int32>* _negativeASCII; // 0x28
-		::System::Globalization::CultureInfo* _culture; // 0x30
+		::System::String* _pattern; // 0x18
+		::Il2CppArray<::System::Int32>* _positive; // 0x20
+		::System::Globalization::CultureInfo* _culture; // 0x28
+		::Il2CppArray<::System::Int32>* _negativeASCII; // 0x30
 		::System::Int32 _highASCII; // 0x38
 		::System::Boolean _caseInsensitive; // 0x3C
 		::System::Boolean _rightToLeft; // 0x3D

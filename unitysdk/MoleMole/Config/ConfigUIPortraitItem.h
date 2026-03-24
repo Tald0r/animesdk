@@ -3,12 +3,12 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/UnityEngine/Vector2.h"
 
-#define MOLEMOLE_CONFIG_CONFIGUIPORTRAITITEM__CTOR_1_OFFSET UNITYSDK_OFFSET(0xEC3A860)
-#define MOLEMOLE_CONFIG_CONFIGUIPORTRAITITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xEC3A850)
+#define MOLEMOLE_CONFIG_CONFIGUIPORTRAITITEM__CTOR_1_OFFSET UNITYSDK_OFFSET(0xCAF66E0)
+#define MOLEMOLE_CONFIG_CONFIGUIPORTRAITITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xCAF66D0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIPortraitItem_TypeDefinitionIndex = 70816;
+	inline static constexpr unsigned int ConfigUIPortraitItem_TypeDefinitionIndex = 70631;
 
 	class ConfigUIPortraitItem : public ::System::Object
 	{

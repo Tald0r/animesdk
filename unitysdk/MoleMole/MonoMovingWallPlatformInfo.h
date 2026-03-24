@@ -7,23 +7,21 @@
 
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_AWAKE_OFFSET UNITYSDK_OFFSET(0x9AB72D0)
-#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_GETBOUNDS_OFFSET UNITYSDK_OFFSET(0x9AB74C0)
-#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x9AB7420)
-#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_ONDRAWGIZMOS_OFFSET UNITYSDK_OFFSET(0x9AB7850)
-#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_UPDATE_OFFSET UNITYSDK_OFFSET(0x9AB7370)
-#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x9AB79D0)
+#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_AWAKE_OFFSET UNITYSDK_OFFSET(0xA52A2A0)
+#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_GETBOUNDS_OFFSET UNITYSDK_OFFSET(0xA52A3E0)
+#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xA52A340)
+#define MOLEMOLE_MONOMOVINGWALLPLATFORMINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xA52A770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoMovingWallPlatformInfo_TypeDefinitionIndex = 70278;
+	inline static constexpr unsigned int MonoMovingWallPlatformInfo_TypeDefinitionIndex = 77577;
 
 	class MonoMovingWallPlatformInfo : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::System::Boolean* StaticGet_Field_5_0()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoMovingWallPlatformInfo_TypeDefinitionIndex)->GetStaticField(0xB680);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(MonoMovingWallPlatformInfo_TypeDefinitionIndex)->GetStaticField(0xC310);
 		}
 		::System::Boolean Field_5_1; // 0x18
 		::UnityEngine::GameObject* platformRoot; // 0x20
@@ -42,11 +40,6 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_AWAKE_OFFSET))(this);
 		}
 
-		::System::Void Update()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_UPDATE_OFFSET))(this);
-		}
-
 		::System::Void OnDestroy()
 		{
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_ONDESTROY_OFFSET))(this);
@@ -55,11 +48,6 @@ namespace MoleMole
 		::UnityEngine::Bounds GetBounds()
 		{
 			return ((::UnityEngine::Bounds(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_GETBOUNDS_OFFSET))(this);
-		}
-
-		::System::Void OnDrawGizmos()
-		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_MONOMOVINGWALLPLATFORMINFO_ONDRAWGIZMOS_OFFSET))(this);
 		}
 	};
 }

@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/BaseConfigEnvironmentFeatureModifier.h"
 
-#define MOLEMOLE_CONFIGGROUNDPOSITIONBLENDMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x13FA5F20)
+#define MOLEMOLE_CONFIGGROUNDPOSITIONBLENDMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xF2DFD00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigGroundPositionBlendModifier_TypeDefinitionIndex = 47294;
+	inline static constexpr unsigned int ConfigGroundPositionBlendModifier_TypeDefinitionIndex = 58268;
 
 	class ConfigGroundPositionBlendModifier : public ::MoleMole::BaseConfigEnvironmentFeatureModifier
 	{
 	public:
-		::System::Single RefRootMotionVelocityMagnitude; // 0x18
-		::System::Boolean EnableGravityWhenSmooth; // 0x1C
-		::System::Single SmoothVelocityRangeMax; // 0x20
-		::System::Single RefRootMotionVelocityRatio; // 0x24
-		::System::Single SmoothVelocityRangeMin; // 0x28
+		::System::Single SmoothVelocityRangeMin; // 0x18
+		::System::Single SmoothVelocityRangeMax; // 0x1C
+		::System::Single RefRootMotionVelocityMagnitude; // 0x20
+		::System::Boolean EnableGravityWhenSmooth; // 0x24
+		::System::Single RefRootMotionVelocityRatio; // 0x28
 
 		::System::Void _ctor()
 		{

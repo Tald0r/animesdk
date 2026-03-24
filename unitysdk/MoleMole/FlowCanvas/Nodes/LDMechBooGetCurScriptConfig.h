@@ -4,12 +4,12 @@
 
 namespace MoleMole::Project::Config { class MechaConfigTemplateExt; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOGETCURSCRIPTCONFIG_INVOKE_OFFSET UNITYSDK_OFFSET(0x82CD6F0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOGETCURSCRIPTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x82CD780)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOGETCURSCRIPTCONFIG_INVOKE_OFFSET UNITYSDK_OFFSET(0xA387730)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOGETCURSCRIPTCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xA3877C0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDMechBooGetCurScriptConfig_TypeDefinitionIndex = 44093;
+	inline static constexpr unsigned int LDMechBooGetCurScriptConfig_TypeDefinitionIndex = 58120;
 
 	class LDMechBooGetCurScriptConfig : public ::FlowCanvas::Nodes::PureFunctionNode_1<::MoleMole::Project::Config::MechaConfigTemplateExt*>
 	{

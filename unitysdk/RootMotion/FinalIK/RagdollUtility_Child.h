@@ -6,20 +6,20 @@
 
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_FINALIK_RAGDOLLUTILITY_CHILD_FIXTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1AFB0DF0)
-#define ROOTMOTION_FINALIK_RAGDOLLUTILITY_CHILD_STORELOCALSTATE_OFFSET UNITYSDK_OFFSET(0x1AFB0FA0)
-#define ROOTMOTION_FINALIK_RAGDOLLUTILITY_CHILD__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFB0D60)
+#define ROOTMOTION_FINALIK_RAGDOLLUTILITY_CHILD_FIXTRANSFORM_OFFSET UNITYSDK_OFFSET(0x1B5C2680)
+#define ROOTMOTION_FINALIK_RAGDOLLUTILITY_CHILD_STORELOCALSTATE_OFFSET UNITYSDK_OFFSET(0x1B5C2830)
+#define ROOTMOTION_FINALIK_RAGDOLLUTILITY_CHILD__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5C25F0)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int RagdollUtility_Child_TypeDefinitionIndex = 35129;
+	inline static constexpr unsigned int RagdollUtility_Child_TypeDefinitionIndex = 36131;
 
 	class RagdollUtility_Child : public ::System::Object
 	{
 	public:
 		::UnityEngine::Transform* t; // 0x10
-		::UnityEngine::Vector3 localPosition; // 0x18
-		::UnityEngine::Quaternion localRotation; // 0x24
+		::UnityEngine::Quaternion localRotation; // 0x18
+		::UnityEngine::Vector3 localPosition; // 0x28
 
 		::System::Void _ctor(::UnityEngine::Transform* transform)
 		{

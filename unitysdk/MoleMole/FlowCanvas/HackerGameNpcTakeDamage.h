@@ -8,21 +8,21 @@ namespace FlowCanvas { class FlowInput; }
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x82C3F20)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE_START_OFFSET UNITYSDK_OFFSET(0x82C4030)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x82C4220)
-#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x82C4240)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA37DFA0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE_START_OFFSET UNITYSDK_OFFSET(0xA37E0B0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE__CTOR_OFFSET UNITYSDK_OFFSET(0xA37E2A0)
+#define MOLEMOLE_FLOWCANVAS_HACKERGAMENPCTAKEDAMAGE__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0xA37E2C0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int HackerGameNpcTakeDamage_TypeDefinitionIndex = 59345;
+	inline static constexpr unsigned int HackerGameNpcTakeDamage_TypeDefinitionIndex = 55166;
 
 	class HackerGameNpcTakeDamage : public ::FlowCanvas::FlowNode
 	{
 	public:
 		::FlowCanvas::ValueInput_1<::MoleMole::HackerGameDamageData>* damageData; // 0xA8
-		::FlowCanvas::FlowOutput* output; // 0xB0
-		::FlowCanvas::FlowInput* start; // 0xB8
+		::FlowCanvas::FlowInput* start; // 0xB0
+		::FlowCanvas::FlowOutput* output; // 0xB8
 
 		::System::Void _ctor()
 		{

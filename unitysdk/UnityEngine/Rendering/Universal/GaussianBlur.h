@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/GaussianBlur_NativeSRP.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_GAUSSIANBLUR__CTOR_OFFSET UNITYSDK_OFFSET(0x183B9A90)
+#define UNITYENGINE_RENDERING_UNIVERSAL_GAUSSIANBLUR__CTOR_OFFSET UNITYSDK_OFFSET(0x189155A0)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int GaussianBlur_TypeDefinitionIndex = 28655;
+	inline static constexpr unsigned int GaussianBlur_TypeDefinitionIndex = 29598;
 
 	class GaussianBlur : public ::UnityEngine::NAPRenderPipeline0::GaussianBlur_NativeSRP
 	{

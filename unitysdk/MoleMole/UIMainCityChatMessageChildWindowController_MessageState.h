@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityChatMessageChildWindowController_MessageState_TypeDefinitionIndex = 42706;
+	inline static constexpr unsigned int UIMainCityChatMessageChildWindowController_MessageState_TypeDefinitionIndex = 49232;
 
 	enum class UIMainCityChatMessageChildWindowController_MessageState : ::System::Int32
 	{

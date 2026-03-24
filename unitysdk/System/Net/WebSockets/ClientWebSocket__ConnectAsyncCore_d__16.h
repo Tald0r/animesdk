@@ -9,8 +9,8 @@ namespace System { class Uri; }
 namespace System::Net::WebSockets { class ClientWebSocket; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define SYSTEM_NET_WEBSOCKETS_CLIENTWEBSOCKET__CONNECTASYNCCORE_D__16_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x868F80)
-#define SYSTEM_NET_WEBSOCKETS_CLIENTWEBSOCKET__CONNECTASYNCCORE_D__16_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x324FD0)
+#define SYSTEM_NET_WEBSOCKETS_CLIENTWEBSOCKET__CONNECTASYNCCORE_D__16_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x8970F0)
+#define SYSTEM_NET_WEBSOCKETS_CLIENTWEBSOCKET__CONNECTASYNCCORE_D__16_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x30B2E0)
 
 namespace System::Net::WebSockets
 {
@@ -20,9 +20,9 @@ namespace System::Net::WebSockets
 	{
 		::System::Runtime::CompilerServices::AsyncTaskMethodBuilder __t__builder; // 0x10
 		::System::Net::WebSockets::ClientWebSocket* __4__this; // 0x28
-		::System::Threading::CancellationToken cancellationToken; // 0x30
+		::System::Uri* uri; // 0x30
 		::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter __u__1; // 0x38
-		::System::Uri* uri; // 0x48
+		::System::Threading::CancellationToken cancellationToken; // 0x48
 		::System::Int32 __1__state; // 0x50
 
 		::System::Void MoveNext()

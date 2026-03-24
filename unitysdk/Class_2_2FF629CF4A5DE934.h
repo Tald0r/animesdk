@@ -9,24 +9,24 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_2FF629CF4A5DE934_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0xE71E690)
-#define CLASS_2_2FF629CF4A5DE934_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0xE71E890)
-#define CLASS_2_2FF629CF4A5DE934_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xE71E980)
-#define CLASS_2_2FF629CF4A5DE934__CTOR_OFFSET UNITYSDK_OFFSET(0xE71E970)
+#define CLASS_2_2FF629CF4A5DE934_METHOD_2_30765AFAABE3B930_OFFSET UNITYSDK_OFFSET(0x66BE4E0)
+#define CLASS_2_2FF629CF4A5DE934_METHOD_2_7835DD7D7F7FF1B7_OFFSET UNITYSDK_OFFSET(0x66BE6E0)
+#define CLASS_2_2FF629CF4A5DE934_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x66BE7D0)
+#define CLASS_2_2FF629CF4A5DE934__CTOR_OFFSET UNITYSDK_OFFSET(0x66BE7C0)
 
-inline static constexpr unsigned int Class_2_2FF629CF4A5DE934_TypeDefinitionIndex = 51795;
+inline static constexpr unsigned int Class_2_2FF629CF4A5DE934_TypeDefinitionIndex = 67353;
 
 class Class_2_2FF629CF4A5DE934 : public ::Class_1_EEA0111A28582B57
 {
 public:
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_4; // 0x18
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x20
-	::UnityEngine::Transform* Field_2_1; // 0x28
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x30
-	::UnityEngine::GameObject* Field_2_3; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x48
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x50
+	::UnityEngine::Transform* Field_2_1; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x30
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_6; // 0x48
+	::UnityEngine::GameObject* Field_2_3; // 0x50
 
 	::System::Void _ctor()
 	{

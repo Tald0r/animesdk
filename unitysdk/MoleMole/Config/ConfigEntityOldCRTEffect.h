@@ -10,27 +10,27 @@ namespace System { class String; }
 namespace UnityEngine { class Texture2D; }
 namespace UnityEngine { class Texture; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETFADE_OFFSET UNITYSDK_OFFSET(0x13996FB0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETPATTERN_OFFSET UNITYSDK_OFFSET(0x13996DE0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETSCANLINEBRIGHTNESS_OFFSET UNITYSDK_OFFSET(0x13996F10)
-#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETTILING_OFFSET UNITYSDK_OFFSET(0x13996E70)
-#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GET_PATTERN_OFFSET UNITYSDK_OFFSET(0x13996BB0)
-#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x13997050)
+#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETFADE_OFFSET UNITYSDK_OFFSET(0x91892F0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETPATTERN_OFFSET UNITYSDK_OFFSET(0x9189120)
+#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETSCANLINEBRIGHTNESS_OFFSET UNITYSDK_OFFSET(0x9189250)
+#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GETTILING_OFFSET UNITYSDK_OFFSET(0x91891B0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT_GET_PATTERN_OFFSET UNITYSDK_OFFSET(0x9188EE0)
+#define MOLEMOLE_CONFIG_CONFIGENTITYOLDCRTEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0x9189390)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityOldCRTEffect_TypeDefinitionIndex = 49931;
+	inline static constexpr unsigned int ConfigEntityOldCRTEffect_TypeDefinitionIndex = 48942;
 
 	class ConfigEntityOldCRTEffect : public ::MoleMole::Config::ConfigEntityScreenEffectBase
 	{
 	public:
-		::UnityEngine::Texture2D* _pattern; // 0x40
-		::MoleMole::Config::ScreenEffectFloat* scanlineBrightness; // 0x48
-		::System::String* patternPath; // 0x50
-		::MoleMole::Config::ScreenEffectFloat* fade; // 0x58
-		::MoleMole::Config::ScreenEffectVector2* tiling; // 0x60
-		::MoleMole::Config::ScreenEffectFieldHandleType fadeHandleType; // 0x68
-		::MoleMole::Config::ScreenEffectFieldHandleType patternHandleType; // 0x6C
+		::MoleMole::Config::ScreenEffectFloat* fade; // 0x40
+		::UnityEngine::Texture2D* _pattern; // 0x48
+		::MoleMole::Config::ScreenEffectVector2* tiling; // 0x50
+		::MoleMole::Config::ScreenEffectFloat* scanlineBrightness; // 0x58
+		::System::String* patternPath; // 0x60
+		::MoleMole::Config::ScreenEffectFieldHandleType patternHandleType; // 0x68
+		::MoleMole::Config::ScreenEffectFieldHandleType fadeHandleType; // 0x6C
 		::MoleMole::Config::ScreenEffectFieldHandleType tilingHandleType; // 0x70
 		::MoleMole::Config::ScreenEffectFieldHandleType scanlineBrightnessHandleType; // 0x74
 

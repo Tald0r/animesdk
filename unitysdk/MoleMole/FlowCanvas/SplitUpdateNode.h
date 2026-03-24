@@ -7,32 +7,32 @@ namespace FlowCanvas { class FlowInput; }
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_ADVANCE_OFFSET UNITYSDK_OFFSET(0x8F10290)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8F10060)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_START_OFFSET UNITYSDK_OFFSET(0x8F105B0)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_STOP_OFFSET UNITYSDK_OFFSET(0x8F10700)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x8F10850)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x8F10870)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__REGISTERPORTS_B__0_1_OFFSET UNITYSDK_OFFSET(0x8F108A0)
-#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__REGISTERPORTS_B__0_2_OFFSET UNITYSDK_OFFSET(0x8F108D0)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_ADVANCE_OFFSET UNITYSDK_OFFSET(0xA021DD0)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA021BA0)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_START_OFFSET UNITYSDK_OFFSET(0xA0220F0)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE_STOP_OFFSET UNITYSDK_OFFSET(0xA022240)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xA022390)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0xA0223B0)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__REGISTERPORTS_B__0_1_OFFSET UNITYSDK_OFFSET(0xA0223E0)
+#define MOLEMOLE_FLOWCANVAS_SPLITUPDATENODE__REGISTERPORTS_B__0_2_OFFSET UNITYSDK_OFFSET(0xA022410)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int SplitUpdateNode_TypeDefinitionIndex = 60731;
+	inline static constexpr unsigned int SplitUpdateNode_TypeDefinitionIndex = 75216;
 
 	class SplitUpdateNode : public ::FlowCanvas::FlowNode
 	{
 	public:
-		::FlowCanvas::FlowInput* _start; // 0xA8
-		::FlowCanvas::FlowOutput* _delayedFinish; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Int32>* _feverEnergy; // 0xB8
-		::FlowCanvas::FlowOutput* _startOutput; // 0xC0
-		::FlowCanvas::FlowInput* _advance; // 0xC8
-		::FlowCanvas::FlowInput* _stop; // 0xD0
-		::FlowCanvas::FlowOutput* _update; // 0xD8
-		::FlowCanvas::ValueInput_1<::System::Int32>* _delayedFrames; // 0xE0
-		::FlowCanvas::FlowOutput* _finish; // 0xE8
-		::FlowCanvas::ValueInput_1<::System::Int32>* _updateInterval; // 0xF0
+		::FlowCanvas::FlowOutput* _update; // 0xA8
+		::FlowCanvas::FlowOutput* _startOutput; // 0xB0
+		::FlowCanvas::FlowInput* _start; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Int32>* _feverEnergy; // 0xC0
+		::FlowCanvas::FlowInput* _stop; // 0xC8
+		::FlowCanvas::FlowInput* _advance; // 0xD0
+		::FlowCanvas::ValueInput_1<::System::Int32>* _delayedFrames; // 0xD8
+		::FlowCanvas::FlowOutput* _delayedFinish; // 0xE0
+		::FlowCanvas::ValueInput_1<::System::Int32>* _updateInterval; // 0xE8
+		::FlowCanvas::FlowOutput* _finish; // 0xF0
 		::System::Int32 _curFrameCount; // 0xF8
 		::System::Int32 _delayedFrameCount; // 0xFC
 

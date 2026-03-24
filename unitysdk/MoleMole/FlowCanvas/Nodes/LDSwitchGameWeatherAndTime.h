@@ -8,22 +8,22 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xEC83610)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME_START_OFFSET UNITYSDK_OFFSET(0xEC837A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME__CTOR_OFFSET UNITYSDK_OFFSET(0xEC83B60)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME__REGISTERPORTS_B__4_0_OFFSET UNITYSDK_OFFSET(0xEC83B80)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7581F50)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME_START_OFFSET UNITYSDK_OFFSET(0x75820E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME__CTOR_OFFSET UNITYSDK_OFFSET(0x75824A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSWITCHGAMEWEATHERANDTIME__REGISTERPORTS_B__4_0_OFFSET UNITYSDK_OFFSET(0x75824C0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSwitchGameWeatherAndTime_TypeDefinitionIndex = 77229;
+	inline static constexpr unsigned int LDSwitchGameWeatherAndTime_TypeDefinitionIndex = 48044;
 
 	class LDSwitchGameWeatherAndTime : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::ValueInput_1<::MoleMole::Config::TimePeriodType>* sceneTimeInput; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Boolean>* immediatelyChangeInput; // 0xB0
-		::FlowCanvas::ValueInput_1<::MoleMole::Config::WeatherType>* sceneWeatherInput; // 0xB8
-		::FlowCanvas::FlowOutput* Output; // 0xC0
+		::FlowCanvas::FlowOutput* Output; // 0xA8
+		::FlowCanvas::ValueInput_1<::MoleMole::Config::WeatherType>* sceneWeatherInput; // 0xB0
+		::FlowCanvas::ValueInput_1<::MoleMole::Config::TimePeriodType>* sceneTimeInput; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* immediatelyChangeInput; // 0xC0
 
 		::System::Void _ctor()
 		{

@@ -5,18 +5,18 @@
 class Class_2_EA0CD9A273A6A774_Class_2_E4DA3A6ED1BC9222;
 namespace MoleMole { class UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_0; }
 
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_1__CTOR_OFFSET UNITYSDK_OFFSET(0x73EEE40)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_1__REFRESHPROGRESSBARITEMS_B__2_OFFSET UNITYSDK_OFFSET(0x73EEE50)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_1__CTOR_OFFSET UNITYSDK_OFFSET(0x7BE5760)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEDETAILSCARDBASEINFOWIDGETCONTROLLER___C__DISPLAYCLASS16_1__REFRESHPROGRESSBARITEMS_B__2_OFFSET UNITYSDK_OFFSET(0x7BE5770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_1_TypeDefinitionIndex = 60446;
+	inline static constexpr unsigned int UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_1_TypeDefinitionIndex = 53924;
 
 	class UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_1 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_0* CS___8__locals1; // 0x10
-		::Class_2_EA0CD9A273A6A774_Class_2_E4DA3A6ED1BC9222* progressPoint; // 0x18
+		::Class_2_EA0CD9A273A6A774_Class_2_E4DA3A6ED1BC9222* progressPoint; // 0x10
+		::MoleMole::UIWorkBenchTrustDegreeDetailsCardBaseInfoWidgetController___c__DisplayClass16_0* CS___8__locals1; // 0x18
 		::System::Int32 progressPointLv; // 0x20
 
 		::System::Void _ctor()

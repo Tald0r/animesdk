@@ -6,12 +6,12 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Renderer; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEINFO_GET_ENABLEPASS_OFFSET UNITYSDK_OFFSET(0x183BA0E0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x183BA110)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEINFO_GET_ENABLEPASS_OFFSET UNITYSDK_OFFSET(0x18915BE0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x18915C10)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int EtherEyeInteractableInfo_TypeDefinitionIndex = 29008;
+	inline static constexpr unsigned int EtherEyeInteractableInfo_TypeDefinitionIndex = 29959;
 
 	class EtherEyeInteractableInfo : public ::System::Object
 	{

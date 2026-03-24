@@ -3,7 +3,7 @@
 
 namespace PipelineCamera::Demo::Pipeline
 {
-	inline static constexpr unsigned int DemoFollowPipelineReverseKey_TypeDefinitionIndex = 34611;
+	inline static constexpr unsigned int DemoFollowPipelineReverseKey_TypeDefinitionIndex = 35613;
 
 	enum class DemoFollowPipelineReverseKey : ::System::Int32
 	{

@@ -8,20 +8,20 @@ class Class_3_DCB7F8B839F0C44B_4;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 template <typename T> class Class_4_179456445C225AB4;
 
-#define CLASS_3_AE75700A2BA013EB_1_METHOD_3_47125C76AFDB961E_OFFSET UNITYSDK_OFFSET(0x7FF5A80)
-#define CLASS_3_AE75700A2BA013EB_1_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0x7FF5ED0)
-#define CLASS_3_AE75700A2BA013EB_1_METHOD_3_EDFD49C942C75D6C_OFFSET UNITYSDK_OFFSET(0x7FF57A0)
-#define CLASS_3_AE75700A2BA013EB_1__CTOR_OFFSET UNITYSDK_OFFSET(0x7FF5D30)
+#define CLASS_3_AE75700A2BA013EB_1_METHOD_3_47125C76AFDB961E_OFFSET UNITYSDK_OFFSET(0xCBF5BF0)
+#define CLASS_3_AE75700A2BA013EB_1_METHOD_3_CA373AA1C7054598_OFFSET UNITYSDK_OFFSET(0xCBF6040)
+#define CLASS_3_AE75700A2BA013EB_1_METHOD_3_EDFD49C942C75D6C_OFFSET UNITYSDK_OFFSET(0xCBF5910)
+#define CLASS_3_AE75700A2BA013EB_1__CTOR_OFFSET UNITYSDK_OFFSET(0xCBF5EA0)
 
-inline static constexpr unsigned int Class_3_AE75700A2BA013EB_1_TypeDefinitionIndex = 68297;
+inline static constexpr unsigned int Class_3_AE75700A2BA013EB_1_TypeDefinitionIndex = 62410;
 
 class Class_3_AE75700A2BA013EB_1 : public ::Class_2_52F82E04F7FEE529
 {
 public:
-	::Class_4_179456445C225AB4<::System::Collections::Generic::List_1<::System::Single>*>* Field_3_3; // 0x18
-	::Class_4_179456445C225AB4<::System::Collections::Generic::List_1<::System::Int32>*>* Field_3_1; // 0x20
+	::Class_4_179456445C225AB4<::System::Single>* Field_3_2; // 0x18
+	::Class_4_179456445C225AB4<::System::Collections::Generic::List_1<::System::Single>*>* Field_3_3; // 0x20
 	::Class_3_DCB7F8B839F0C44B_4* Field_3_0; // 0x28
-	::Class_4_179456445C225AB4<::System::Single>* Field_3_2; // 0x30
+	::Class_4_179456445C225AB4<::System::Collections::Generic::List_1<::System::Int32>*>* Field_3_1; // 0x30
 	::Class_3_B537A0AA78803363* Field_3_4; // 0x38
 
 	::System::Void _ctor()

@@ -5,24 +5,24 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Converter_2; }
 
-#define MOLEMOLE_CONFIG_INDEXBUNDLEREF___C_METHOD_1_EF33F656360DF279_OFFSET UNITYSDK_OFFSET(0xC1DF440)
-#define MOLEMOLE_CONFIG_INDEXBUNDLEREF___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC1DF3F0)
-#define MOLEMOLE_CONFIG_INDEXBUNDLEREF___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC1DF430)
+#define MOLEMOLE_CONFIG_INDEXBUNDLEREF___C_METHOD_1_EF33F656360DF279_OFFSET UNITYSDK_OFFSET(0x81F5BB0)
+#define MOLEMOLE_CONFIG_INDEXBUNDLEREF___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x81F5B60)
+#define MOLEMOLE_CONFIG_INDEXBUNDLEREF___C__CTOR_OFFSET UNITYSDK_OFFSET(0x81F5BA0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int IndexBundleRef___c_TypeDefinitionIndex = 65123;
+	inline static constexpr unsigned int IndexBundleRef___c_TypeDefinitionIndex = 60826;
 
 	class IndexBundleRef___c : public ::System::Object
 	{
 	public:
 		static ::System::Converter_2<::System::Int32, ::System::String*>** StaticGet___9__0_0()
 		{
-			return (::System::Converter_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(IndexBundleRef___c_TypeDefinitionIndex)->GetStaticField(0x433E0);
+			return (::System::Converter_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(IndexBundleRef___c_TypeDefinitionIndex)->GetStaticField(0x44FE0);
 		}
 		static ::MoleMole::Config::IndexBundleRef___c** StaticGet___9()
 		{
-			return (::MoleMole::Config::IndexBundleRef___c**)Il2CppClass::FromTypeDefinitionIndex(IndexBundleRef___c_TypeDefinitionIndex)->GetStaticField(0x433E8);
+			return (::MoleMole::Config::IndexBundleRef___c**)Il2CppClass::FromTypeDefinitionIndex(IndexBundleRef___c_TypeDefinitionIndex)->GetStaticField(0x44FE8);
 		}
 
 		static ::System::Void _cctor()

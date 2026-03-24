@@ -5,22 +5,22 @@
 namespace MoleMole { class ConfigTimelineData; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define CLASS_1_F3C26C55904251F2___C_METHOD_1_71E1DE8E426E3294_OFFSET UNITYSDK_OFFSET(0x7CC8580)
-#define CLASS_1_F3C26C55904251F2___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7CC8530)
-#define CLASS_1_F3C26C55904251F2___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7CC8570)
+#define CLASS_1_F3C26C55904251F2___C_METHOD_1_71E1DE8E426E3294_OFFSET UNITYSDK_OFFSET(0x79747C0)
+#define CLASS_1_F3C26C55904251F2___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7974770)
+#define CLASS_1_F3C26C55904251F2___C__CTOR_OFFSET UNITYSDK_OFFSET(0x79747B0)
 
-inline static constexpr unsigned int Class_1_F3C26C55904251F2___c_TypeDefinitionIndex = 42907;
+inline static constexpr unsigned int Class_1_F3C26C55904251F2___c_TypeDefinitionIndex = 57058;
 
 class Class_1_F3C26C55904251F2___c : public ::System::Object
 {
 public:
-	static ::Class_1_F3C26C55904251F2___c** StaticGet___9()
-	{
-		return (::Class_1_F3C26C55904251F2___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_F3C26C55904251F2___c_TypeDefinitionIndex)->GetStaticField(0x39EC0);
-	}
 	static ::System::Comparison_1<::MoleMole::ConfigTimelineData*>** StaticGet___9__3_0()
 	{
-		return (::System::Comparison_1<::MoleMole::ConfigTimelineData*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_F3C26C55904251F2___c_TypeDefinitionIndex)->GetStaticField(0x39EC8);
+		return (::System::Comparison_1<::MoleMole::ConfigTimelineData*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_F3C26C55904251F2___c_TypeDefinitionIndex)->GetStaticField(0x3A040);
+	}
+	static ::Class_1_F3C26C55904251F2___c** StaticGet___9()
+	{
+		return (::Class_1_F3C26C55904251F2___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_F3C26C55904251F2___c_TypeDefinitionIndex)->GetStaticField(0x3A048);
 	}
 
 	static ::System::Void _cctor()

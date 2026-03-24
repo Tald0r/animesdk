@@ -4,34 +4,34 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC8E27C0)
-#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CONFRIMSELECT_B__20_1_OFFSET UNITYSDK_OFFSET(0xC8E29A0)
-#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CONFRIMSELECT_B__20_3_OFFSET UNITYSDK_OFFSET(0xC8E2990)
-#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC8E2800)
-#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__OPENPREVIEW_B__16_0_OFFSET UNITYSDK_OFFSET(0xC8E2810)
+#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x988DE60)
+#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CONFRIMSELECT_B__20_1_OFFSET UNITYSDK_OFFSET(0x988E040)
+#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CONFRIMSELECT_B__20_3_OFFSET UNITYSDK_OFFSET(0x988E030)
+#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x988DEA0)
+#define MOLEMOLE_UIACTIVITYRETURNTRIALWIDGETCONTROLLER___C__OPENPREVIEW_B__16_0_OFFSET UNITYSDK_OFFSET(0x988DEB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex = 51438;
+	inline static constexpr unsigned int UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex = 52651;
 
 	class UIActivityReturnTrialWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIActivityReturnTrialWidgetController___c** StaticGet___9()
+		static ::System::Action** StaticGet___9__16_0()
 		{
-			return (::MoleMole::UIActivityReturnTrialWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x323D0);
-		}
-		static ::System::Action** StaticGet___9__20_1()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x323D8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x34260);
 		}
 		static ::System::Action** StaticGet___9__20_3()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x323E0);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x34268);
 		}
-		static ::System::Action** StaticGet___9__16_0()
+		static ::System::Action** StaticGet___9__20_1()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x323E8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x34270);
+		}
+		static ::MoleMole::UIActivityReturnTrialWidgetController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIActivityReturnTrialWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIActivityReturnTrialWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x34278);
 		}
 
 		static ::System::Void _cctor()

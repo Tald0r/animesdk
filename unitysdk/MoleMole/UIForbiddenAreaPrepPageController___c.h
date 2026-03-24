@@ -4,34 +4,34 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xC63D7A0)
-#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xC63D7E0)
-#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__REFRESHCHALLENGEVIEW_B__15_3_OFFSET UNITYSDK_OFFSET(0xC63D7F0)
-#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__REFRESHCOLLECTVIEW_B__17_2_OFFSET UNITYSDK_OFFSET(0xC63DB30)
-#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__REFRESHTALENTVIEW_B__16_2_OFFSET UNITYSDK_OFFSET(0xC63DA00)
+#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xDFA8700)
+#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xDFA8740)
+#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__REFRESHCHALLENGEVIEW_B__15_3_OFFSET UNITYSDK_OFFSET(0xDFA8750)
+#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__REFRESHCOLLECTVIEW_B__17_2_OFFSET UNITYSDK_OFFSET(0xDFA8A90)
+#define MOLEMOLE_UIFORBIDDENAREAPREPPAGECONTROLLER___C__REFRESHTALENTVIEW_B__16_2_OFFSET UNITYSDK_OFFSET(0xDFA8960)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex = 42632;
+	inline static constexpr unsigned int UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex = 43449;
 
 	class UIForbiddenAreaPrepPageController___c : public ::System::Object
 	{
 	public:
-		static ::System::Action** StaticGet___9__16_2()
-		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C380);
-		}
-		static ::MoleMole::UIForbiddenAreaPrepPageController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIForbiddenAreaPrepPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C388);
-		}
 		static ::System::Action** StaticGet___9__15_3()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C390);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F090);
 		}
 		static ::System::Action** StaticGet___9__17_2()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3C398);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F098);
+		}
+		static ::MoleMole::UIForbiddenAreaPrepPageController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIForbiddenAreaPrepPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F0A0);
+		}
+		static ::System::Action** StaticGet___9__16_2()
+		{
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIForbiddenAreaPrepPageController___c_TypeDefinitionIndex)->GetStaticField(0x3F0A8);
 		}
 
 		static ::System::Void _cctor()

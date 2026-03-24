@@ -11,26 +11,26 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace UnityEngine::UI::Extension { class UITabButton; }
 namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
 
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x18DF6920)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x18DF6930)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x18DF6B30)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x18DF6CF0)
-#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x18DF6CB0)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x10BB31F0)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x10BB3200)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x10BB3400)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x10BB35C0)
+#define UNITYENGINE_UI_EXTENSION_UITABBUTTONGROUP_UITABBUTTONGROUP_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x10BB3580)
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter_TypeDefinitionIndex = 70752;
+	inline static constexpr unsigned int UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter_TypeDefinitionIndex = 42578;
 
 	class UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::UnityEngine::UI::Extension::UITabButtonGroup*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::UI::Extension::UITabButton*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::UI::Extension::UITabButton*>*>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3C8C0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::UI::Extension::UITabButton*>*>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3F710);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundAction_SwitchAction*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundAction_SwitchAction*>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3C8C8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigSoundAction_SwitchAction*>**)Il2CppClass::FromTypeDefinitionIndex(UITabButtonGroup_UITabButtonGroup_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3F718);
 		}
 
 		::System::Void _ctor()

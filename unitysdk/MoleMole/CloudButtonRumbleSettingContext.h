@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/CloudButtonRumbleType.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_CLOUDBUTTONRUMBLESETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6D3A840)
+#define MOLEMOLE_CLOUDBUTTONRUMBLESETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBADB7E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CloudButtonRumbleSettingContext_TypeDefinitionIndex = 77540;
+	inline static constexpr unsigned int CloudButtonRumbleSettingContext_TypeDefinitionIndex = 63221;
 
 	class CloudButtonRumbleSettingContext : public ::MoleMole::SystemSettingContextBase
 	{

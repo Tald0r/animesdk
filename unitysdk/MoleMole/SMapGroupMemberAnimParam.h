@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SMapGroupMemberAnimParam_TypeDefinitionIndex = 70626;
+	inline static constexpr unsigned int SMapGroupMemberAnimParam_TypeDefinitionIndex = 65020;
 
 	struct alignas(8) SMapGroupMemberAnimParam
 	{

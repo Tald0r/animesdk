@@ -7,18 +7,18 @@ namespace System { class String; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class MaterialPropertyBlock; }
 
-#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMATCHANGE_CLASS_1_CB7A6A4601BC0D4E_METHOD_1_3DBBE5136150B7CF_OFFSET UNITYSDK_OFFSET(0x13FB10D0)
-#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMATCHANGE_CLASS_1_CB7A6A4601BC0D4E__CTOR_OFFSET UNITYSDK_OFFSET(0x13FB10C0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMATCHANGE_CLASS_1_CB7A6A4601BC0D4E_METHOD_1_3DBBE5136150B7CF_OFFSET UNITYSDK_OFFSET(0x82008D0)
+#define MOLEMOLE_EFFECTSIMULATE_ESAVATARMATCHANGE_CLASS_1_CB7A6A4601BC0D4E__CTOR_OFFSET UNITYSDK_OFFSET(0x82008C0)
 
 namespace MoleMole::EffectSimulate
 {
-	inline static constexpr unsigned int ESAvatarMatChange_Class_1_CB7A6A4601BC0D4E_TypeDefinitionIndex = 54440;
+	inline static constexpr unsigned int ESAvatarMatChange_Class_1_CB7A6A4601BC0D4E_TypeDefinitionIndex = 51121;
 
 	class ESAvatarMatChange_Class_1_CB7A6A4601BC0D4E : public ::System::Object
 	{
 	public:
-		::System::String* Field_1_1; // 0x10
-		::MoleMole::EffectSimulate::ESAvatarMatChange* Field_1_0; // 0x18
+		::MoleMole::EffectSimulate::ESAvatarMatChange* Field_1_0; // 0x10
+		::System::String* Field_1_1; // 0x18
 		::System::Boolean Field_1_2; // 0x20
 
 		::System::Void _ctor()

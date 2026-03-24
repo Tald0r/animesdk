@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Object; }
 
-#define UNITYENGINE_ASYNCINSTANTIATEOPERATION__CTOR_OFFSET UNITYSDK_OFFSET(0x19F34EC0)
+#define UNITYENGINE_ASYNCINSTANTIATEOPERATION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A52CD80)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int AsyncInstantiateOperation_TypeDefinitionIndex = 5319;
+	inline static constexpr unsigned int AsyncInstantiateOperation_TypeDefinitionIndex = 5320;
 
 	class AsyncInstantiateOperation : public ::UnityEngine::AsyncOperation
 	{

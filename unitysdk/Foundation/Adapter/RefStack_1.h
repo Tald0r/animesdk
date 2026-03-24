@@ -5,7 +5,7 @@
 
 namespace Foundation::Adapter
 {
-	inline static constexpr unsigned int RefStack_1_TypeDefinitionIndex = 8836;
+	inline static constexpr unsigned int RefStack_1_TypeDefinitionIndex = 8768;
 
 	template <typename T>
 	struct RefStack_1

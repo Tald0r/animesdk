@@ -7,19 +7,25 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_A8CB3122F1802F2B_2_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x875BB00)
-#define CLASS_2_A8CB3122F1802F2B_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x875BBF0)
-#define CLASS_2_A8CB3122F1802F2B_2__CTOR_OFFSET UNITYSDK_OFFSET(0x875BBE0)
+#define CLASS_2_A8CB3122F1802F2B_2_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x92010C0)
+#define CLASS_2_A8CB3122F1802F2B_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9201240)
+#define CLASS_2_A8CB3122F1802F2B_2__CTOR_OFFSET UNITYSDK_OFFSET(0x9201230)
 
-inline static constexpr unsigned int Class_2_A8CB3122F1802F2B_2_TypeDefinitionIndex = 54210;
+inline static constexpr unsigned int Class_2_A8CB3122F1802F2B_2_TypeDefinitionIndex = 64100;
 
 class Class_2_A8CB3122F1802F2B_2 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::Animation* Field_2_2; // 0x18
-	::UnityEngine::Transform* Field_2_0; // 0x20
-	::UnityEngine::Transform* Field_2_1; // 0x28
-	::UnityEngine::Animation* Field_2_3; // 0x30
+	::UnityEngine::Transform* Field_2_5; // 0x18
+	::UnityEngine::Transform* Field_2_3; // 0x20
+	::UnityEngine::Transform* Field_2_4; // 0x28
+	::UnityEngine::Animation* Field_2_9; // 0x30
+	::UnityEngine::Transform* Field_2_0; // 0x38
+	::UnityEngine::Transform* Field_2_6; // 0x40
+	::UnityEngine::Transform* Field_2_2; // 0x48
+	::UnityEngine::Transform* Field_2_7; // 0x50
+	::UnityEngine::Transform* Field_2_8; // 0x58
+	::UnityEngine::Transform* Field_2_1; // 0x60
 
 	::System::Void _ctor()
 	{

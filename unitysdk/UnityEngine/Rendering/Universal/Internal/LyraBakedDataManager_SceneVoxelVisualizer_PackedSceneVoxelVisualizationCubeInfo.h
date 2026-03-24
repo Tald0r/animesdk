@@ -4,7 +4,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int LyraBakedDataManager_SceneVoxelVisualizer_PackedSceneVoxelVisualizationCubeInfo_TypeDefinitionIndex = 28978;
+	inline static constexpr unsigned int LyraBakedDataManager_SceneVoxelVisualizer_PackedSceneVoxelVisualizationCubeInfo_TypeDefinitionIndex = 29929;
 
 	struct alignas(8) LyraBakedDataManager_SceneVoxelVisualizer_PackedSceneVoxelVisualizationCubeInfo
 	{

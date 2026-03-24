@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Experimental::GlobalIllumination
 {
-	inline static constexpr unsigned int AngularFalloffType_TypeDefinitionIndex = 6280;
+	inline static constexpr unsigned int AngularFalloffType_TypeDefinitionIndex = 6284;
 
 	enum class AngularFalloffType : ::System::Byte
 	{

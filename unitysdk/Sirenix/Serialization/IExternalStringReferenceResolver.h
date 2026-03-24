@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int IExternalStringReferenceResolver_TypeDefinitionIndex = 7376;
+	inline static constexpr unsigned int IExternalStringReferenceResolver_TypeDefinitionIndex = 7381;
 
 	class IExternalStringReferenceResolver
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_EMPTYAUTOPROFILERSAMPLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x884030)
+#define FOUNDATION_EMPTYAUTOPROFILERSAMPLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8B8300)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int EmptyAutoProfilerSample_TypeDefinitionIndex = 7723;
+	inline static constexpr unsigned int EmptyAutoProfilerSample_TypeDefinitionIndex = 7885;
 
 	struct alignas(1) EmptyAutoProfilerSample
 	{

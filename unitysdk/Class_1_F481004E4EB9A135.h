@@ -6,9 +6,9 @@
 namespace MoleMole::Timeline::ZNet { class ZNetGroupTrack; }
 namespace UnityEngine::Timeline { class TimelineAsset; }
 
-#define CLASS_1_F481004E4EB9A135_METHOD_1_40153F92DF7EC6B8_OFFSET UNITYSDK_OFFSET(0xD221640)
+#define CLASS_1_F481004E4EB9A135_METHOD_1_40153F92DF7EC6B8_OFFSET UNITYSDK_OFFSET(0xD60F950)
 
-inline static constexpr unsigned int Class_1_F481004E4EB9A135_TypeDefinitionIndex = 59937;
+inline static constexpr unsigned int Class_1_F481004E4EB9A135_TypeDefinitionIndex = 46953;
 
 class Class_1_F481004E4EB9A135 : public ::System::Object
 {

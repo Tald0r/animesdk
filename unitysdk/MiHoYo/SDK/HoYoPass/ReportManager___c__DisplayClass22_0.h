@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MIHOYO_SDK_HOYOPASS_REPORTMANAGER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19286570)
-#define MIHOYO_SDK_HOYOPASS_REPORTMANAGER___C__DISPLAYCLASS22_0__WARNING_B__0_OFFSET UNITYSDK_OFFSET(0x19286580)
+#define MIHOYO_SDK_HOYOPASS_REPORTMANAGER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1934A3D0)
+#define MIHOYO_SDK_HOYOPASS_REPORTMANAGER___C__DISPLAYCLASS22_0__WARNING_B__0_OFFSET UNITYSDK_OFFSET(0x1934A3E0)
 
 namespace MiHoYo::SDK::HoYoPass
 {
-	inline static constexpr unsigned int ReportManager___c__DisplayClass22_0_TypeDefinitionIndex = 18349;
+	inline static constexpr unsigned int ReportManager___c__DisplayClass22_0_TypeDefinitionIndex = 18859;
 
 	class ReportManager___c__DisplayClass22_0 : public ::System::Object
 	{

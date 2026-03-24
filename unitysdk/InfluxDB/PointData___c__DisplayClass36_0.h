@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class SortedDictionary_2; }
 
-#define INFLUXDB_POINTDATA___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A9AD4B0)
-#define INFLUXDB_POINTDATA___C__DISPLAYCLASS36_0__EQUALS_B__0_OFFSET UNITYSDK_OFFSET(0x1A9AD4C0)
-#define INFLUXDB_POINTDATA___C__DISPLAYCLASS36_0__EQUALS_B__1_OFFSET UNITYSDK_OFFSET(0x1A9AD580)
+#define INFLUXDB_POINTDATA___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B17FF80)
+#define INFLUXDB_POINTDATA___C__DISPLAYCLASS36_0__EQUALS_B__0_OFFSET UNITYSDK_OFFSET(0x1B17FF90)
+#define INFLUXDB_POINTDATA___C__DISPLAYCLASS36_0__EQUALS_B__1_OFFSET UNITYSDK_OFFSET(0x1B180050)
 
 namespace InfluxDB
 {
-	inline static constexpr unsigned int PointData___c__DisplayClass36_0_TypeDefinitionIndex = 7864;
+	inline static constexpr unsigned int PointData___c__DisplayClass36_0_TypeDefinitionIndex = 7727;
 
 	class PointData___c__DisplayClass36_0 : public ::System::Object
 	{

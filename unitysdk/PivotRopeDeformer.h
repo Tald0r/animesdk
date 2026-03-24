@@ -5,11 +5,11 @@
 
 namespace UnityEngine { class Transform; }
 
-#define PIVOTROPEDEFORMER_UPDATEROPE_OFFSET UNITYSDK_OFFSET(0x1802F030)
-#define PIVOTROPEDEFORMER_UPDATE_OFFSET UNITYSDK_OFFSET(0x1802EFD0)
-#define PIVOTROPEDEFORMER__CTOR_OFFSET UNITYSDK_OFFSET(0x1802F8A0)
+#define PIVOTROPEDEFORMER_UPDATEROPE_OFFSET UNITYSDK_OFFSET(0x18650D20)
+#define PIVOTROPEDEFORMER_UPDATE_OFFSET UNITYSDK_OFFSET(0x18650CC0)
+#define PIVOTROPEDEFORMER__CTOR_OFFSET UNITYSDK_OFFSET(0x18651590)
 
-inline static constexpr unsigned int PivotRopeDeformer_TypeDefinitionIndex = 28019;
+inline static constexpr unsigned int PivotRopeDeformer_TypeDefinitionIndex = 28959;
 
 class PivotRopeDeformer : public ::UnityEngine::MonoBehaviour
 {

@@ -5,24 +5,24 @@
 class Class_1_0D6706375CDAAE8C;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIHOLLOWREWARDBAGDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBFD51E0)
-#define MOLEMOLE_UIHOLLOWREWARDBAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBFD5220)
-#define MOLEMOLE_UIHOLLOWREWARDBAGDIALOGPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__14_0_OFFSET UNITYSDK_OFFSET(0xBFD5230)
+#define MOLEMOLE_UIHOLLOWREWARDBAGDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9C10CB0)
+#define MOLEMOLE_UIHOLLOWREWARDBAGDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9C10CF0)
+#define MOLEMOLE_UIHOLLOWREWARDBAGDIALOGPOPWINDOWCONTROLLER___C__REFRESHVIEW_B__14_0_OFFSET UNITYSDK_OFFSET(0x9C10D00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowRewardBagDialogPopWindowController___c_TypeDefinitionIndex = 53250;
+	inline static constexpr unsigned int UIHollowRewardBagDialogPopWindowController___c_TypeDefinitionIndex = 39583;
 
 	class UIHollowRewardBagDialogPopWindowController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIHollowRewardBagDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHollowRewardBagDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRewardBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2D1C0);
+			return (::MoleMole::UIHollowRewardBagDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRewardBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2E590);
 		}
 		static ::System::Comparison_1<::Class_1_0D6706375CDAAE8C*>** StaticGet___9__14_0()
 		{
-			return (::System::Comparison_1<::Class_1_0D6706375CDAAE8C*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRewardBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2D1C8);
+			return (::System::Comparison_1<::Class_1_0D6706375CDAAE8C*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowRewardBagDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2E598);
 		}
 
 		static ::System::Void _cctor()

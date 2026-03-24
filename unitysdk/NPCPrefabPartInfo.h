@@ -4,9 +4,9 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NPCPREFABPARTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x6ED9870)
+#define NPCPREFABPARTINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x785E8F0)
 
-inline static constexpr unsigned int NPCPrefabPartInfo_TypeDefinitionIndex = 41771;
+inline static constexpr unsigned int NPCPrefabPartInfo_TypeDefinitionIndex = 41014;
 
 class NPCPrefabPartInfo : public ::System::Object
 {

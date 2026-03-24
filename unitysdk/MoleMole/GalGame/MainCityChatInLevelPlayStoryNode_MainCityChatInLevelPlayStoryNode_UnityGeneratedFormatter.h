@@ -12,46 +12,46 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xC2CFDB0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xC2CFDC0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xC2D0520)
-#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC2D09B0)
-#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xC2D0970)
+#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB8AB850)
+#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB8AB860)
+#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB8ABFC0)
+#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB8AC450)
+#define MOLEMOLE_GALGAME_MAINCITYCHATINLEVELPLAYSTORYNODE_MAINCITYCHATINLEVELPLAYSTORYNODE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB8AC410)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex = 69825;
+	inline static constexpr unsigned int MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex = 55094;
 
 	class MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::MainCityChatInLevelPlayStoryNode*>
 	{
 	public:
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31680);
+		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer4()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB30);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB38);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::InLevelChatEntitySlot>** StaticGet_CachedSerializer2()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::InLevelChatEntitySlot>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB40);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB48);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer5()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB50);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31688);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::AnimatorParamControl*>** StaticGet_CachedSerializer6()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::AnimatorParamControl*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB58);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Battle::AnimatorParamControl*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31690);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer5()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2FB60);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x31698);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::MainCityChatPlayableNodeType>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x316A0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x316A8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::InLevelChatEntitySlot>** StaticGet_CachedSerializer2()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::GalGame::InLevelChatEntitySlot>**)Il2CppClass::FromTypeDefinitionIndex(MainCityChatInLevelPlayStoryNode_MainCityChatInLevelPlayStoryNode_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x316B0);
 		}
 
 		::System::Void _ctor()

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_ANIMATIONEVENTNOTIFIER_SENDNOTIFY_OFFSET UNITYSDK_OFFSET(0x6BD3980)
-#define MOLEMOLE_ANIMATIONEVENTNOTIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0x6BD3AF0)
+#define MOLEMOLE_ANIMATIONEVENTNOTIFIER_SENDNOTIFY_OFFSET UNITYSDK_OFFSET(0xACA3020)
+#define MOLEMOLE_ANIMATIONEVENTNOTIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xACA3190)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AnimationEventNotifier_TypeDefinitionIndex = 40091;
+	inline static constexpr unsigned int AnimationEventNotifier_TypeDefinitionIndex = 46549;
 
 	class AnimationEventNotifier : public ::UnityEngine::MonoBehaviour
 	{

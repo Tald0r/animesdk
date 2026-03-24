@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_ITEMSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x82DE8D0)
+#define MOLEMOLE_ITEMSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0xA3991C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ItemStyle_TypeDefinitionIndex = 65627;
+	inline static constexpr unsigned int ItemStyle_TypeDefinitionIndex = 41845;
 
 	class ItemStyle : public ::System::Object
 	{

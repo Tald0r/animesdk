@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIPrivateMessageReplyWidgetController; }
 
-#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS29_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9469520)
-#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS29_0__SETFINISH_B__0_OFFSET UNITYSDK_OFFSET(0x9469530)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS29_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA431850)
+#define MOLEMOLE_UIPRIVATEMESSAGEREPLYWIDGETCONTROLLER___C__DISPLAYCLASS29_0__SETFINISH_B__0_OFFSET UNITYSDK_OFFSET(0xA431860)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPrivateMessageReplyWidgetController___c__DisplayClass29_0_TypeDefinitionIndex = 48100;
+	inline static constexpr unsigned int UIPrivateMessageReplyWidgetController___c__DisplayClass29_0_TypeDefinitionIndex = 57803;
 
 	class UIPrivateMessageReplyWidgetController___c__DisplayClass29_0 : public ::System::Object
 	{

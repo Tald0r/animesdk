@@ -8,40 +8,40 @@ namespace Nap::NapECS { class IPatchedList; }
 namespace System { class Type; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_CREATECOMPONENTLIST_OFFSET UNITYSDK_OFFSET(0x18821440)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_CREATEDATACOMPONENTLIST_OFFSET UNITYSDK_OFFSET(0x18819EC0)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETIDWORLDTYPEMASK_OFFSET UNITYSDK_OFFSET(0x18822BC0)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETMETAINFO_OFFSET UNITYSDK_OFFSET(0x18820590)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETSHOTCLASSID_OFFSET UNITYSDK_OFFSET(0x18822D00)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETTYPE_OFFSET UNITYSDK_OFFSET(0x18822AB0)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GET_CLASSIDCOUNT_OFFSET UNITYSDK_OFFSET(0x18822910)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_INITMETA_OFFSET UNITYSDK_OFFSET(0x18822970)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_ISWORLDTYPECOMP_OFFSET UNITYSDK_OFFSET(0x18822C20)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_SET_CLASSIDCOUNT_OFFSET UNITYSDK_OFFSET(0x18822940)
-#define NAP_NAPECS_ECSCOMPONENTMETASTATIC__CCTOR_OFFSET UNITYSDK_OFFSET(0x18822D60)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_CREATECOMPONENTLIST_OFFSET UNITYSDK_OFFSET(0x18D80790)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_CREATEDATACOMPONENTLIST_OFFSET UNITYSDK_OFFSET(0x18D791F0)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETIDWORLDTYPEMASK_OFFSET UNITYSDK_OFFSET(0x18D81F30)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETMETAINFO_OFFSET UNITYSDK_OFFSET(0x18D7F8E0)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETSHOTCLASSID_OFFSET UNITYSDK_OFFSET(0x18D82070)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GETTYPE_OFFSET UNITYSDK_OFFSET(0x18D81E20)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_GET_CLASSIDCOUNT_OFFSET UNITYSDK_OFFSET(0x18D81C80)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_INITMETA_OFFSET UNITYSDK_OFFSET(0x18D81CE0)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_ISWORLDTYPECOMP_OFFSET UNITYSDK_OFFSET(0x18D81F90)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC_SET_CLASSIDCOUNT_OFFSET UNITYSDK_OFFSET(0x18D81CB0)
+#define NAP_NAPECS_ECSCOMPONENTMETASTATIC__CCTOR_OFFSET UNITYSDK_OFFSET(0x18D820D0)
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int EcsComponentMetaStatic_TypeDefinitionIndex = 34144;
+	inline static constexpr unsigned int EcsComponentMetaStatic_TypeDefinitionIndex = 35228;
 
 	class EcsComponentMetaStatic : public ::System::Object
 	{
 	public:
-		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Int32>** StaticGet__typeToId()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x247F0);
-		}
 		static ::Il2CppArray<::System::Type*>** StaticGet__typeFromId()
 		{
-			return (::Il2CppArray<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x247F8);
+			return (::Il2CppArray<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x26220);
 		}
 		static ::Il2CppArray<::Nap::NapECS::EcsComponentMetaInfo>** StaticGet__metaInfo()
 		{
-			return (::Il2CppArray<::Nap::NapECS::EcsComponentMetaInfo>**)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x24800);
+			return (::Il2CppArray<::Nap::NapECS::EcsComponentMetaInfo>**)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x26228);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Int32>** StaticGet__typeToId()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x26230);
 		}
 		static ::System::UInt32* StaticGet__ClassIdCount_k__BackingField()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x80A0);
+			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(EcsComponentMetaStatic_TypeDefinitionIndex)->GetStaticField(0x8400);
 		}
 
 		static ::System::Void _cctor()

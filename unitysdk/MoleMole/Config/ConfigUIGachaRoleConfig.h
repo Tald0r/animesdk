@@ -5,18 +5,18 @@
 namespace MoleMole::Config { class ConfigUIPortraitItem; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGUIGACHAROLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x13F9F680)
+#define MOLEMOLE_CONFIG_CONFIGUIGACHAROLECONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xF2D9230)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIGachaRoleConfig_TypeDefinitionIndex = 38088;
+	inline static constexpr unsigned int ConfigUIGachaRoleConfig_TypeDefinitionIndex = 46079;
 
 	class ConfigUIGachaRoleConfig : public ::System::Object
 	{
 	public:
-		::MoleMole::Config::ConfigUIPortraitItem* configItem; // 0x10
+		::System::String* extraKey; // 0x10
 		::System::String* roleName; // 0x18
-		::System::String* extraKey; // 0x20
+		::MoleMole::Config::ConfigUIPortraitItem* configItem; // 0x20
 
 		::System::Void _ctor()
 		{

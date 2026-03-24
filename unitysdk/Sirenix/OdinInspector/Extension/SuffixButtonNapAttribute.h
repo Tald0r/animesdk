@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define SIRENIX_ODININSPECTOR_EXTENSION_SUFFIXBUTTONNAPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17128630)
+#define SIRENIX_ODININSPECTOR_EXTENSION_SUFFIXBUTTONNAPATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x17896570)
 
 namespace Sirenix::OdinInspector::Extension
 {
-	inline static constexpr unsigned int SuffixButtonNapAttribute_TypeDefinitionIndex = 7800;
+	inline static constexpr unsigned int SuffixButtonNapAttribute_TypeDefinitionIndex = 8062;
 
 	class SuffixButtonNapAttribute : public ::System::Attribute
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputBinding_MatchOptions_TypeDefinitionIndex = 27461;
+	inline static constexpr unsigned int InputBinding_MatchOptions_TypeDefinitionIndex = 28401;
 
 	enum class InputBinding_MatchOptions : ::System::Int32
 	{

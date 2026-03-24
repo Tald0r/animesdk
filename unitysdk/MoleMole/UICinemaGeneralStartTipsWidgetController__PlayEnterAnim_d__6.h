@@ -9,18 +9,18 @@ namespace MoleMole { class UICinemaGeneralStartTipsWidgetController; }
 namespace System { class Action; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UICINEMAGENERALSTARTTIPSWIDGETCONTROLLER__PLAYENTERANIM_D__6_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37E1E0)
-#define MOLEMOLE_UICINEMAGENERALSTARTTIPSWIDGETCONTROLLER__PLAYENTERANIM_D__6_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x310210)
+#define MOLEMOLE_UICINEMAGENERALSTARTTIPSWIDGETCONTROLLER__PLAYENTERANIM_D__6_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x4321B0)
+#define MOLEMOLE_UICINEMAGENERALSTARTTIPSWIDGETCONTROLLER__PLAYENTERANIM_D__6_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x35BE60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaGeneralStartTipsWidgetController__PlayEnterAnim_d__6_TypeDefinitionIndex = 43378;
+	inline static constexpr unsigned int UICinemaGeneralStartTipsWidgetController__PlayEnterAnim_d__6_TypeDefinitionIndex = 79117;
 
 	struct alignas(8) UICinemaGeneralStartTipsWidgetController__PlayEnterAnim_d__6
 	{
 		::Cysharp::Threading::Tasks::UniTask_1_Awaiter<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> __u__1; // 0x10
-		::System::Action* finishCallback; // 0x20
-		::MoleMole::UICinemaGeneralStartTipsWidgetController* __4__this; // 0x28
+		::MoleMole::UICinemaGeneralStartTipsWidgetController* __4__this; // 0x20
+		::System::Action* finishCallback; // 0x28
 		::System::Runtime::CompilerServices::AsyncVoidMethodBuilder __t__builder; // 0x30
 		::System::Int32 __1__state; // 0x50
 

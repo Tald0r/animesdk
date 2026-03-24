@@ -6,7 +6,7 @@ namespace System { class Object; }
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int IExternalGuidReferenceResolver_TypeDefinitionIndex = 7374;
+	inline static constexpr unsigned int IExternalGuidReferenceResolver_TypeDefinitionIndex = 7379;
 
 	class IExternalGuidReferenceResolver
 	{

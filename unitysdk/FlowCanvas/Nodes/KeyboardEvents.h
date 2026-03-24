@@ -7,21 +7,21 @@ namespace FlowCanvas { class FlowOutput; }
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 
-#define FLOWCANVAS_NODES_KEYBOARDEVENTS_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19E020F0)
-#define FLOWCANVAS_NODES_KEYBOARDEVENTS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19E021C0)
-#define FLOWCANVAS_NODES_KEYBOARDEVENTS_UPDATE_OFFSET UNITYSDK_OFFSET(0x19E02250)
-#define FLOWCANVAS_NODES_KEYBOARDEVENTS__CTOR_OFFSET UNITYSDK_OFFSET(0x19E02260)
+#define FLOWCANVAS_NODES_KEYBOARDEVENTS_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1A3F0960)
+#define FLOWCANVAS_NODES_KEYBOARDEVENTS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A3F0A30)
+#define FLOWCANVAS_NODES_KEYBOARDEVENTS_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A3F0AC0)
+#define FLOWCANVAS_NODES_KEYBOARDEVENTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3F0AD0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int KeyboardEvents_TypeDefinitionIndex = 26737;
+	inline static constexpr unsigned int KeyboardEvents_TypeDefinitionIndex = 26078;
 
 	class KeyboardEvents : public ::FlowCanvas::Nodes::EventNode
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::KeyCode>* keyCode; // 0xA8
-		::FlowCanvas::FlowOutput* pressed; // 0xB0
-		::FlowCanvas::FlowOutput* down; // 0xB8
+		::FlowCanvas::FlowOutput* down; // 0xA8
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::KeyCode>* keyCode; // 0xB0
+		::FlowCanvas::FlowOutput* pressed; // 0xB8
 		::FlowCanvas::FlowOutput* up; // 0xC0
 
 		::System::Void _ctor()

@@ -5,7 +5,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int CharacterGhostCBuffer_TypeDefinitionIndex = 28919;
+	inline static constexpr unsigned int CharacterGhostCBuffer_TypeDefinitionIndex = 29870;
 
 	struct alignas(4) CharacterGhostCBuffer
 	{

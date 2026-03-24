@@ -6,10 +6,10 @@
 namespace MoleMole::HollowChessboard { class LightRenderConfig; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_0D2F62EE0080B2A1_METHOD_1_29B768535CA8988F_OFFSET UNITYSDK_OFFSET(0x81631C0)
-#define CLASS_1_0D2F62EE0080B2A1__CTOR_OFFSET UNITYSDK_OFFSET(0x8163130)
+#define CLASS_1_0D2F62EE0080B2A1_METHOD_1_29B768535CA8988F_OFFSET UNITYSDK_OFFSET(0x7AE6300)
+#define CLASS_1_0D2F62EE0080B2A1__CTOR_OFFSET UNITYSDK_OFFSET(0x7AE6270)
 
-inline static constexpr unsigned int Class_1_0D2F62EE0080B2A1_TypeDefinitionIndex = 74336;
+inline static constexpr unsigned int Class_1_0D2F62EE0080B2A1_TypeDefinitionIndex = 65209;
 
 class Class_1_0D2F62EE0080B2A1 : public ::System::Object
 {

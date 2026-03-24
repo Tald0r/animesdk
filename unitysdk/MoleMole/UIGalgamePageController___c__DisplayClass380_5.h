@@ -7,23 +7,23 @@ namespace MoleMole { class UIGalgamePageController___c__DisplayClass380_0; }
 namespace MoleMole::GalGame { class GalGameNPCFadeAction; }
 namespace UnityEngine { class Object; }
 
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__CTOR_OFFSET UNITYSDK_OFFSET(0xA9F3370)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__PLAYNPCFADEACTIONS_B__11_OFFSET UNITYSDK_OFFSET(0xA9FB9A0)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__PLAYNPCFADEACTIONS_B__12_OFFSET UNITYSDK_OFFSET(0xA9FB340)
-#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__PLAYNPCFADEACTIONS_G__APPLYPOSENFACIALWHENFADE_10_OFFSET UNITYSDK_OFFSET(0xA9FB7C0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__CTOR_OFFSET UNITYSDK_OFFSET(0xF21BC80)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__PLAYNPCFADEACTIONS_B__11_OFFSET UNITYSDK_OFFSET(0xF222100)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__PLAYNPCFADEACTIONS_B__12_OFFSET UNITYSDK_OFFSET(0xF221AA0)
+#define MOLEMOLE_UIGALGAMEPAGECONTROLLER___C__DISPLAYCLASS380_5__PLAYNPCFADEACTIONS_G__APPLYPOSENFACIALWHENFADE_10_OFFSET UNITYSDK_OFFSET(0xF221F20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass380_5_TypeDefinitionIndex = 54676;
+	inline static constexpr unsigned int UIGalgamePageController___c__DisplayClass380_5_TypeDefinitionIndex = 58895;
 
 	class UIGalgamePageController___c__DisplayClass380_5 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIGalgamePageController___c__DisplayClass380_0* CS___8__locals5; // 0x10
-		::MoleMole::GalGame::GalGameNPCFadeAction* fadeAction; // 0x18
-		::System::Int32 currStageNodeIdx; // 0x20
-		::MoleMole::GalGame::GalNPCLocation location; // 0x24
-		::System::Int32 locationKey; // 0x28
+		::MoleMole::GalGame::GalGameNPCFadeAction* fadeAction; // 0x10
+		::MoleMole::UIGalgamePageController___c__DisplayClass380_0* CS___8__locals5; // 0x18
+		::System::Int32 locationKey; // 0x20
+		::System::Int32 currStageNodeIdx; // 0x24
+		::MoleMole::GalGame::GalNPCLocation location; // 0x28
 
 		::System::Void _ctor()
 		{

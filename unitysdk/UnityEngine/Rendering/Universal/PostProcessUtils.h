@@ -1,22 +1,29 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
+#include "unitysdk/UnityEngine/NAPRenderPipeline0/AntialiasingMode.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/UberPostAndFinalPassSharedData.h"
 
 namespace UnityEngine::NAPRenderPipeline0 { class MaterialWrapper; }
 namespace UnityEngine::Rendering::Universal { class FilmGrain; }
 namespace UnityEngine::Rendering::Universal { class PostProcessData; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_CONFIGUREDITHERING_OFFSET UNITYSDK_OFFSET(0x18B51AA0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_CONFIGUREFILMGRAIN_OFFSET UNITYSDK_OFFSET(0x18B51CB0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_CONFIGUREDITHERING_OFFSET UNITYSDK_OFFSET(0x18F14B70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_CONFIGUREFILMGRAIN_OFFSET UNITYSDK_OFFSET(0x18F14D80)
+#define UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_ISANTIALIASINGNEEDUPSAMPLE_OFFSET UNITYSDK_OFFSET(0x18F14B20)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int PostProcessUtils_TypeDefinitionIndex = 28744;
+	inline static constexpr unsigned int PostProcessUtils_TypeDefinitionIndex = 29690;
 
 	class PostProcessUtils : public ::System::Object
 	{
 	public:
+		static ::System::Boolean IsAntialiasingNeedUpSample(::UnityEngine::NAPRenderPipeline0::AntialiasingMode mode)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::NAPRenderPipeline0::AntialiasingMode))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_ISANTIALIASINGNEEDUPSAMPLE_OFFSET))(mode);
+		}
+
 		static ::System::Int32 ConfigureDithering(::UnityEngine::Rendering::Universal::PostProcessData* data, ::System::Int32 index, ::System::Int32 cameraPixelWidth, ::System::Int32 cameraPixelHeight, ::UnityEngine::NAPRenderPipeline0::MaterialWrapper* uberOrFinalPassMaterial, ::UnityEngine::Rendering::Universal::UberPostAndFinalPassSharedData& sharedData)
 		{
 			return ((::System::Int32(*)(::UnityEngine::Rendering::Universal::PostProcessData*, ::System::Int32, ::System::Int32, ::System::Int32, ::UnityEngine::NAPRenderPipeline0::MaterialWrapper*, ::UnityEngine::Rendering::Universal::UberPostAndFinalPassSharedData&))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_POSTPROCESSUTILS_CONFIGUREDITHERING_OFFSET))(data, index, cameraPixelWidth, cameraPixelHeight, uberOrFinalPassMaterial, sharedData);

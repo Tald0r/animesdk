@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ISDEVLEVEL_INVOKE_OFFSET UNITYSDK_OFFSET(0x8B091E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_ISDEVLEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0x8B09260)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ISDEVLEVEL_INVOKE_OFFSET UNITYSDK_OFFSET(0xB18DF70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_ISDEVLEVEL__CTOR_OFFSET UNITYSDK_OFFSET(0xB18DFF0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_IsDevLevel_TypeDefinitionIndex = 63888;
+	inline static constexpr unsigned int LD_IsDevLevel_TypeDefinitionIndex = 39466;
 
 	class LD_IsDevLevel : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Boolean>
 	{

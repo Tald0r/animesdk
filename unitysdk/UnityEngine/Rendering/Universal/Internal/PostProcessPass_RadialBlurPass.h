@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int PostProcessPass_RadialBlurPass_TypeDefinitionIndex = 29052;
+	inline static constexpr unsigned int PostProcessPass_RadialBlurPass_TypeDefinitionIndex = 30005;
 
 	enum class PostProcessPass_RadialBlurPass : ::System::Int32
 	{

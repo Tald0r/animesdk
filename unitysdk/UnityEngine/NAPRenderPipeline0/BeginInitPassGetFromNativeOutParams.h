@@ -5,7 +5,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int BeginInitPassGetFromNativeOutParams_TypeDefinitionIndex = 5706;
+	inline static constexpr unsigned int BeginInitPassGetFromNativeOutParams_TypeDefinitionIndex = 5709;
 
 	struct alignas(4) BeginInitPassGetFromNativeOutParams
 	{

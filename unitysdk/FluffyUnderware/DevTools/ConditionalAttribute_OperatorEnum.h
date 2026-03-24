@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::DevTools
 {
-	inline static constexpr unsigned int ConditionalAttribute_OperatorEnum_TypeDefinitionIndex = 24484;
+	inline static constexpr unsigned int ConditionalAttribute_OperatorEnum_TypeDefinitionIndex = 25309;
 
 	enum class ConditionalAttribute_OperatorEnum : ::System::Int32
 	{

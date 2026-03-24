@@ -7,7 +7,7 @@
 
 namespace UnityEngine::InputSystem::XInput
 {
-	inline static constexpr unsigned int XInputController_Capabilities_TypeDefinitionIndex = 27631;
+	inline static constexpr unsigned int XInputController_Capabilities_TypeDefinitionIndex = 28571;
 
 	struct alignas(4) XInputController_Capabilities
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/SystemSettingContextBase.h"
 
-#define MOLEMOLE_BACKENDAUDIOPAUSESETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6532190)
+#define MOLEMOLE_BACKENDAUDIOPAUSESETTINGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x81CA950)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int BackendAudioPauseSettingContext_TypeDefinitionIndex = 69786;
+	inline static constexpr unsigned int BackendAudioPauseSettingContext_TypeDefinitionIndex = 41848;
 
 	class BackendAudioPauseSettingContext : public ::MoleMole::SystemSettingContextBase
 	{

@@ -5,10 +5,10 @@
 class Class_1_254A1D88361B2006;
 namespace UnityEngine { class Animator; }
 
-#define TICKTESTSCRIPT_START_OFFSET UNITYSDK_OFFSET(0x1A554D60)
-#define TICKTESTSCRIPT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A554E80)
+#define TICKTESTSCRIPT_START_OFFSET UNITYSDK_OFFSET(0xD612D10)
+#define TICKTESTSCRIPT__CTOR_OFFSET UNITYSDK_OFFSET(0xD612E30)
 
-inline static constexpr unsigned int TickTestScript_TypeDefinitionIndex = 73460;
+inline static constexpr unsigned int TickTestScript_TypeDefinitionIndex = 57348;
 
 class TickTestScript : public ::UnityEngine::MonoBehaviour
 {

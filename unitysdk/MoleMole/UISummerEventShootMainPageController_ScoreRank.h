@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISummerEventShootMainPageController_ScoreRank_TypeDefinitionIndex = 73806;
+	inline static constexpr unsigned int UISummerEventShootMainPageController_ScoreRank_TypeDefinitionIndex = 55081;
 
 	enum class UISummerEventShootMainPageController_ScoreRank : ::System::Int32
 	{
-		RankB = 2,
-		RankA = 1,
 		RankS = 0,
+		RankA = 1,
+		RankB = 2,
 		RankC = 3,
 	};
 }

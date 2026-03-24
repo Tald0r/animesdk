@@ -5,34 +5,34 @@
 class Class_1_757827E019DC7C45;
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__BUILDCLIENTMONSTERINFO_B__47_2_OFFSET UNITYSDK_OFFSET(0xBE6C2A0)
-#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__BUILDCLIENTMONSTERINFO_B__47_3_OFFSET UNITYSDK_OFFSET(0xBE6C3C0)
-#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__BUILDCLIENTMONSTERINFO_B__47_4_OFFSET UNITYSDK_OFFSET(0xBE6C4E0)
-#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xBE6C250)
-#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xBE6C290)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__BUILDCLIENTMONSTERINFO_B__47_2_OFFSET UNITYSDK_OFFSET(0xCFBA7F0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__BUILDCLIENTMONSTERINFO_B__47_3_OFFSET UNITYSDK_OFFSET(0xCFBA910)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__BUILDCLIENTMONSTERINFO_B__47_4_OFFSET UNITYSDK_OFFSET(0xCFBAA30)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xCFBA7A0)
+#define MOLEMOLE_UIMONSTERFANTASYBOSSCULTIVATIONPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xCFBA7E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex = 41355;
+	inline static constexpr unsigned int UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex = 67718;
 
 	class UIMonsterFantasyBossCultivationPageController___c : public ::System::Object
 	{
 	public:
 		static ::MoleMole::UIMonsterFantasyBossCultivationPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIMonsterFantasyBossCultivationPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2D370);
-		}
-		static ::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>** StaticGet___9__47_4()
-		{
-			return (::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2D378);
+			return (::MoleMole::UIMonsterFantasyBossCultivationPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E7F0);
 		}
 		static ::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>** StaticGet___9__47_2()
 		{
-			return (::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2D380);
+			return (::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E7F8);
+		}
+		static ::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>** StaticGet___9__47_4()
+		{
+			return (::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E800);
 		}
 		static ::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>** StaticGet___9__47_3()
 		{
-			return (::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2D388);
+			return (::System::Func_2<::Class_1_757827E019DC7C45*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(UIMonsterFantasyBossCultivationPageController___c_TypeDefinitionIndex)->GetStaticField(0x2E808);
 		}
 
 		static ::System::Void _cctor()

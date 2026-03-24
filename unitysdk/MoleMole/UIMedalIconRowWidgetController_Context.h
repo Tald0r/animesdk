@@ -4,11 +4,11 @@
 
 class Class_1_2A0117F72708B5DF;
 
-#define MOLEMOLE_UIMEDALICONROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9E82010)
+#define MOLEMOLE_UIMEDALICONROWWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB6AA840)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMedalIconRowWidgetController_Context_TypeDefinitionIndex = 59670;
+	inline static constexpr unsigned int UIMedalIconRowWidgetController_Context_TypeDefinitionIndex = 63707;
 
 	class UIMedalIconRowWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{

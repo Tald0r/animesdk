@@ -5,19 +5,19 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGENABLEBLACKCURTAINNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x84A5E30)
-#define MOLEMOLE_CONFIG_CONFIGENABLEBLACKCURTAINNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x84A5EC0)
+#define MOLEMOLE_CONFIG_CONFIGENABLEBLACKCURTAINNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x94FDC60)
+#define MOLEMOLE_CONFIG_CONFIGENABLEBLACKCURTAINNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x94FDCF0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEnableBlackCurtainNode_TypeDefinitionIndex = 47122;
+	inline static constexpr unsigned int ConfigEnableBlackCurtainNode_TypeDefinitionIndex = 64822;
 
 	class ConfigEnableBlackCurtainNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
 		::MoleMole::Config::ConfigConditionPredicate Predicate; // 0x18
-		::System::Single Duration; // 0x28
-		::System::Boolean Enable; // 0x2C
+		::System::Boolean Enable; // 0x28
+		::System::Single Duration; // 0x2C
 
 		::System::Void _ctor()
 		{

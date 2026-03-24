@@ -8,7 +8,7 @@ namespace System::Collections::Generic { template <typename T> class Queue_1; }
 
 namespace NAPScrollView::Plugin
 {
-	inline static constexpr unsigned int Plugin_Rolling_1_TypeDefinitionIndex = 37136;
+	inline static constexpr unsigned int Plugin_Rolling_1_TypeDefinitionIndex = 47565;
 
 	template <typename T>
 	class Plugin_Rolling_1 : public ::NAPScrollView::Plugin::BasePlugin

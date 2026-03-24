@@ -3,20 +3,20 @@
 #include "unitysdk/MoleMole/FlowCanvas/Nodes/LDLevelEndNode_LevelEndPerformType.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6AE1010)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS17_0___PLAYCAMERASEQUENCEANDASCRIPT_G____ONANISCRIPT_PERFORMFINISHED_0_OFFSET UNITYSDK_OFFSET(0x6AE1020)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS17_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB5D0280)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDLEVELENDNODE___C__DISPLAYCLASS17_0___PLAYCAMERASEQUENCEANDASCRIPT_G____ONANISCRIPT_PERFORMFINISHED_0_OFFSET UNITYSDK_OFFSET(0xB5D0290)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDLevelEndNode___c__DisplayClass17_0_TypeDefinitionIndex = 56069;
+	inline static constexpr unsigned int LDLevelEndNode___c__DisplayClass17_0_TypeDefinitionIndex = 68170;
 
 	class LDLevelEndNode___c__DisplayClass17_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::FlowCanvas::Nodes::LDLevelEndNode_LevelEndPerformType performType; // 0x10
+		::System::Boolean success; // 0x10
+		::System::Boolean enableDelayExit; // 0x11
 		::System::Single delayExitTime; // 0x14
-		::System::Boolean enableDelayExit; // 0x18
-		::System::Boolean success; // 0x19
+		::MoleMole::FlowCanvas::Nodes::LDLevelEndNode_LevelEndPerformType performType; // 0x18
 
 		::System::Void _ctor()
 		{

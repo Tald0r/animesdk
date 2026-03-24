@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int InLevelOptionsCardSelectItemData_TypeDefinitionIndex = 57275;
+	inline static constexpr unsigned int InLevelOptionsCardSelectItemData_TypeDefinitionIndex = 75716;
 
 	struct alignas(4) InLevelOptionsCardSelectItemData
 	{

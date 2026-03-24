@@ -18,7 +18,7 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 
 namespace ObservableCollections::Internal
 {
-	inline static constexpr unsigned int FreezedView_2_TypeDefinitionIndex = 24418;
+	inline static constexpr unsigned int FreezedView_2_TypeDefinitionIndex = 25034;
 
 	template <typename T, typename TView>
 	class FreezedView_2 : public ::System::Object

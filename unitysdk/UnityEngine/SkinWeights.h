@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SkinWeights_TypeDefinitionIndex = 5231;
+	inline static constexpr unsigned int SkinWeights_TypeDefinitionIndex = 5232;
 
 	enum class SkinWeights : ::System::Int32
 	{

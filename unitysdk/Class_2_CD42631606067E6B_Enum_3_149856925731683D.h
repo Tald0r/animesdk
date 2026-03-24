@@ -1,21 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int Class_2_CD42631606067E6B_Enum_3_149856925731683D_TypeDefinitionIndex = 63315;
+inline static constexpr unsigned int Class_2_CD42631606067E6B_Enum_3_149856925731683D_TypeDefinitionIndex = 80302;
 
 enum class Class_2_CD42631606067E6B_Enum_3_149856925731683D : ::System::Int32
 {
-	FrontEndGame = 3,
 	None = 0,
-	RestartGame = 8,
-	FreshGame = 7,
+	FrontEndGame = 3,
 	ChessboardGame = 5,
 	UpdateGame = 6,
-	UniversalGame = 10,
-	LoginGame = 2,
-	BigSceneGame = 12,
-	LauncherGame = 1,
-	EmptyGame = 11,
-	HollowGame = 4,
+	FreshGame = 7,
+	RestartGame = 8,
 	PreloadGame = 9,
+	BigSceneGame = 12,
+	LoginGame = 2,
+	LauncherGame = 1,
+	UniversalGame = 10,
+	HollowGame = 4,
+	EmptyGame = 11,
 };

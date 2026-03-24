@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/UIMissionTipsContainerWidgetController_MissionTipData.h"
 #include "unitysdk/MoleMole/UIMissionTipsContainerWidgetController_MissionTipType.h"
 
-#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER_HDDQUESTHANGTIPDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x9E86080)
+#define MOLEMOLE_UIMISSIONTIPSCONTAINERWIDGETCONTROLLER_HDDQUESTHANGTIPDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xB6AE870)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMissionTipsContainerWidgetController_HDDQuestHangTipData_TypeDefinitionIndex = 75704;
+	inline static constexpr unsigned int UIMissionTipsContainerWidgetController_HDDQuestHangTipData_TypeDefinitionIndex = 70964;
 
 	class UIMissionTipsContainerWidgetController_HDDQuestHangTipData : public ::MoleMole::UIMissionTipsContainerWidgetController_MissionTipData
 	{

@@ -5,10 +5,10 @@
 
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CONFIGCAMERASPHERICALCOORDINATESWITCHER__ONCLICKSWITCH_D__9_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x34B4E0)
-#define CONFIGCAMERASPHERICALCOORDINATESWITCHER__ONCLICKSWITCH_D__9_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CONFIGCAMERASPHERICALCOORDINATESWITCHER__ONCLICKSWITCH_D__9_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3090D0)
+#define CONFIGCAMERASPHERICALCOORDINATESWITCHER__ONCLICKSWITCH_D__9_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int ConfigCameraSphericalCoordinateSwitcher__OnClickSwitch_d__9_TypeDefinitionIndex = 78825;
+inline static constexpr unsigned int ConfigCameraSphericalCoordinateSwitcher__OnClickSwitch_d__9_TypeDefinitionIndex = 68012;
 
 struct alignas(8) ConfigCameraSphericalCoordinateSwitcher__OnClickSwitch_d__9
 {

@@ -8,37 +8,37 @@
 class Class_1_236FD73ABC492E3F;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_OFFSETGROUP_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xCDBF450)
-#define MOLEMOLE_CONFIG_OFFSETGROUP_FROMFLX_OFFSET UNITYSDK_OFFSET(0xCDBF940)
-#define MOLEMOLE_CONFIG_OFFSETGROUP_INTERNALFROMBINARY_OFFSET UNITYSDK_OFFSET(0xCDBF4B0)
-#define MOLEMOLE_CONFIG_OFFSETGROUP_INTERNALFROMFLX_OFFSET UNITYSDK_OFFSET(0xCDBF9C0)
-#define MOLEMOLE_CONFIG_OFFSETGROUP__CCTOR_OFFSET UNITYSDK_OFFSET(0xCDBF350)
-#define MOLEMOLE_CONFIG_OFFSETGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0xCDBF440)
+#define MOLEMOLE_CONFIG_OFFSETGROUP_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xD0A44A0)
+#define MOLEMOLE_CONFIG_OFFSETGROUP_FROMFLX_OFFSET UNITYSDK_OFFSET(0xD0A4990)
+#define MOLEMOLE_CONFIG_OFFSETGROUP_INTERNALFROMBINARY_OFFSET UNITYSDK_OFFSET(0xD0A4500)
+#define MOLEMOLE_CONFIG_OFFSETGROUP_INTERNALFROMFLX_OFFSET UNITYSDK_OFFSET(0xD0A4A10)
+#define MOLEMOLE_CONFIG_OFFSETGROUP__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0A43A0)
+#define MOLEMOLE_CONFIG_OFFSETGROUP__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A4490)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int OffsetGroup_TypeDefinitionIndex = 73717;
+	inline static constexpr unsigned int OffsetGroup_TypeDefinitionIndex = 45388;
 
 	class OffsetGroup : public ::System::Object
 	{
 	public:
-		static ::MoleMole::Config::OffsetGroup** StaticGet_ZERO()
-		{
-			return (::MoleMole::Config::OffsetGroup**)Il2CppClass::FromTypeDefinitionIndex(OffsetGroup_TypeDefinitionIndex)->GetStaticField(0x357C0);
-		}
 		static ::System::Collections::Generic::List_1<::MoleMole::Config::OffsetGroup*>** StaticGet_DEFAULT_GROUPS()
 		{
-			return (::System::Collections::Generic::List_1<::MoleMole::Config::OffsetGroup*>**)Il2CppClass::FromTypeDefinitionIndex(OffsetGroup_TypeDefinitionIndex)->GetStaticField(0x357C8);
+			return (::System::Collections::Generic::List_1<::MoleMole::Config::OffsetGroup*>**)Il2CppClass::FromTypeDefinitionIndex(OffsetGroup_TypeDefinitionIndex)->GetStaticField(0x364C0);
 		}
-		::UnityEngine::Vector3 PositionOffset; // 0x10
-		::UnityEngine::Vector3 RandomAngleRange; // 0x1C
-		::UnityEngine::Vector3 BackupPositionOffset; // 0x28
-		::UnityEngine::Vector3 BackupAngleOffset; // 0x34
-		::UnityEngine::Vector3 RandomPositionRange; // 0x40
-		::UnityEngine::Vector3 AngleOffset; // 0x4C
-		::System::Boolean IsClampOffsetDistance; // 0x58
-		::System::Boolean IsUseRotationY; // 0x59
-		::System::Boolean IsUseRotationXZ; // 0x5A
+		static ::MoleMole::Config::OffsetGroup** StaticGet_ZERO()
+		{
+			return (::MoleMole::Config::OffsetGroup**)Il2CppClass::FromTypeDefinitionIndex(OffsetGroup_TypeDefinitionIndex)->GetStaticField(0x364C8);
+		}
+		::UnityEngine::Vector3 BackupPositionOffset; // 0x10
+		::UnityEngine::Vector3 AngleOffset; // 0x1C
+		::System::Boolean IsClampOffsetDistance; // 0x28
+		::System::Boolean IsUseRotationXZ; // 0x29
+		::System::Boolean IsUseRotationY; // 0x2A
+		::UnityEngine::Vector3 RandomAngleRange; // 0x2C
+		::UnityEngine::Vector3 PositionOffset; // 0x38
+		::UnityEngine::Vector3 BackupAngleOffset; // 0x44
+		::UnityEngine::Vector3 RandomPositionRange; // 0x50
 
 		static ::System::Void _cctor()
 		{

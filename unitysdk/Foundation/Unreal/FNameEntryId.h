@@ -2,25 +2,26 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define FOUNDATION_UNREAL_FNAMEENTRYID_FROMUNSTABLEINT_OFFSET UNITYSDK_OFFSET(0x1AD8EFB0)
-#define FOUNDATION_UNREAL_FNAMEENTRYID_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x963B80)
-#define FOUNDATION_UNREAL_FNAMEENTRYID_TOUNSTABLEINT_OFFSET UNITYSDK_OFFSET(0x2C3E30)
-#define FOUNDATION_UNREAL_FNAMEENTRYID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD8EFC0)
-#define FOUNDATION_UNREAL_FNAMEENTRYID__CTOR_OFFSET UNITYSDK_OFFSET(0x2D3600)
+#define FOUNDATION_UNREAL_FNAMEENTRYID_FROMUNSTABLEINT_OFFSET UNITYSDK_OFFSET(0x1B397490)
+#define FOUNDATION_UNREAL_FNAMEENTRYID_GETTYPEHASH_OFFSET UNITYSDK_OFFSET(0x1B3974A0)
+#define FOUNDATION_UNREAL_FNAMEENTRYID_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x993AE0)
+#define FOUNDATION_UNREAL_FNAMEENTRYID_TOUNSTABLEINT_OFFSET UNITYSDK_OFFSET(0x2F1F70)
+#define FOUNDATION_UNREAL_FNAMEENTRYID__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B397510)
+#define FOUNDATION_UNREAL_FNAMEENTRYID__CTOR_OFFSET UNITYSDK_OFFSET(0x302300)
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int FNameEntryId_TypeDefinitionIndex = 8865;
+	inline static constexpr unsigned int FNameEntryId_TypeDefinitionIndex = 9045;
 
 	struct alignas(4) FNameEntryId
 	{
 		static ::Foundation::Unreal::FNameEntryId* StaticGet_Invalid()
 		{
-			return (::Foundation::Unreal::FNameEntryId*)Il2CppClass::FromTypeDefinitionIndex(FNameEntryId_TypeDefinitionIndex)->GetStaticField(0x3CE0);
+			return (::Foundation::Unreal::FNameEntryId*)Il2CppClass::FromTypeDefinitionIndex(FNameEntryId_TypeDefinitionIndex)->GetStaticField(0x3D00);
 		}
 		static ::Foundation::Unreal::FNameEntryId* StaticGet_None()
 		{
-			return (::Foundation::Unreal::FNameEntryId*)Il2CppClass::FromTypeDefinitionIndex(FNameEntryId_TypeDefinitionIndex)->GetStaticField(0x3CE4);
+			return (::Foundation::Unreal::FNameEntryId*)Il2CppClass::FromTypeDefinitionIndex(FNameEntryId_TypeDefinitionIndex)->GetStaticField(0x3D04);
 		}
 		::System::UInt32 _value; // 0x10
 
@@ -47,6 +48,11 @@ namespace Foundation::Unreal
 		static ::Foundation::Unreal::FNameEntryId FromUnstableInt(::System::UInt32 value)
 		{
 			return ((::Foundation::Unreal::FNameEntryId(*)(::System::UInt32))((::PBYTE)hIl2Cpp + FOUNDATION_UNREAL_FNAMEENTRYID_FROMUNSTABLEINT_OFFSET))(value);
+		}
+
+		static ::System::UInt32 GetTypeHash(::Foundation::Unreal::FNameEntryId self)
+		{
+			return ((::System::UInt32(*)(::Foundation::Unreal::FNameEntryId))((::PBYTE)hIl2Cpp + FOUNDATION_UNREAL_FNAMEENTRYID_GETTYPEHASH_OFFSET))(self);
 		}
 	};
 }

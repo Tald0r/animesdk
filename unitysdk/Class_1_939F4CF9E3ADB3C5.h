@@ -6,22 +6,22 @@
 class Class_3_3A6272A02DE7F4E0;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_939F4CF9E3ADB3C5_METHOD_1_EC7754E974F49D4F_1_OFFSET UNITYSDK_OFFSET(0x96B5BF0)
-#define CLASS_1_939F4CF9E3ADB3C5_METHOD_1_EC7754E974F49D4F_OFFSET UNITYSDK_OFFSET(0x96B5B30)
-#define CLASS_1_939F4CF9E3ADB3C5__CTOR_OFFSET UNITYSDK_OFFSET(0x96B5B20)
+#define CLASS_1_939F4CF9E3ADB3C5_METHOD_1_EC7754E974F49D4F_1_OFFSET UNITYSDK_OFFSET(0x8259B70)
+#define CLASS_1_939F4CF9E3ADB3C5_METHOD_1_EC7754E974F49D4F_OFFSET UNITYSDK_OFFSET(0x8259AB0)
+#define CLASS_1_939F4CF9E3ADB3C5__CTOR_OFFSET UNITYSDK_OFFSET(0x8259AA0)
 
-inline static constexpr unsigned int Class_1_939F4CF9E3ADB3C5_TypeDefinitionIndex = 72018;
+inline static constexpr unsigned int Class_1_939F4CF9E3ADB3C5_TypeDefinitionIndex = 46612;
 
 class Class_1_939F4CF9E3ADB3C5 : public ::System::Object
 {
 public:
-	::System::Collections::Generic::List_1<::MoleMole::Config::TeamRelationship>* Field_1_2; // 0x10
-	::System::Collections::Generic::List_1<::MoleMole::Config::TeamRelationship>* Field_1_3; // 0x18
-	::System::Boolean Field_1_6; // 0x20
-	::System::Boolean Field_1_5; // 0x21
-	::System::Boolean Field_1_4; // 0x22
-	::MoleMole::Config::TeamRelationship Field_1_0; // 0x24
-	::MoleMole::Config::TeamRelationship Field_1_1; // 0x28
+	::System::Collections::Generic::List_1<::MoleMole::Config::TeamRelationship>* Field_1_3; // 0x10
+	::System::Collections::Generic::List_1<::MoleMole::Config::TeamRelationship>* Field_1_2; // 0x18
+	::MoleMole::Config::TeamRelationship Field_1_1; // 0x20
+	::System::Boolean Field_1_6; // 0x24
+	::System::Boolean Field_1_5; // 0x25
+	::System::Boolean Field_1_4; // 0x26
+	::MoleMole::Config::TeamRelationship Field_1_0; // 0x28
 
 	::System::Void _ctor()
 	{

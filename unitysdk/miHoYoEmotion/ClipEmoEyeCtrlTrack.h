@@ -9,26 +9,26 @@ namespace miHoYoEmotion { class ElementManager; }
 namespace miHoYoEmotion { class EyeKey; }
 namespace miHoYoEmotion { class SequenceClipBakeData_EyeCtrlData; }
 
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_ADDEYECTRLLIST_OFFSET UNITYSDK_OFFSET(0x18AD3B30)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_APPLY_OFFSET UNITYSDK_OFFSET(0x18AD40B0)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_INIT_OFFSET UNITYSDK_OFFSET(0x18AD3870)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_UPDATE_OFFSET UNITYSDK_OFFSET(0x18AD3D30)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK__CCTOR_OFFSET UNITYSDK_OFFSET(0x18AD4430)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x18AD42A0)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK___BASE_APPLY_OFFSET UNITYSDK_OFFSET(0x18AD4450)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK___BASE_INIT_OFFSET UNITYSDK_OFFSET(0x18AD4520)
-#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK___BASE_UPDATE_OFFSET UNITYSDK_OFFSET(0x18AD45C0)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_ADDEYECTRLLIST_OFFSET UNITYSDK_OFFSET(0x18FBE1E0)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_APPLY_OFFSET UNITYSDK_OFFSET(0x18FBE760)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_INIT_OFFSET UNITYSDK_OFFSET(0x18FBDF20)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK_UPDATE_OFFSET UNITYSDK_OFFSET(0x18FBE3E0)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FBEAE0)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x18FBE950)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK___BASE_APPLY_OFFSET UNITYSDK_OFFSET(0x18FBEB00)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK___BASE_INIT_OFFSET UNITYSDK_OFFSET(0x18FBEBD0)
+#define MIHOYOEMOTION_CLIPEMOEYECTRLTRACK___BASE_UPDATE_OFFSET UNITYSDK_OFFSET(0x18FBEC70)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int ClipEmoEyeCtrlTrack_TypeDefinitionIndex = 36127;
+	inline static constexpr unsigned int ClipEmoEyeCtrlTrack_TypeDefinitionIndex = 37147;
 
 	class ClipEmoEyeCtrlTrack : public ::miHoYoEmotion::EmoTrack
 	{
 	public:
 		static ::System::Int32* StaticGet_FaceBlushStrength()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ClipEmoEyeCtrlTrack_TypeDefinitionIndex)->GetStaticField(0x8F70);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(ClipEmoEyeCtrlTrack_TypeDefinitionIndex)->GetStaticField(0x92D0);
 		}
 		::miHoYoEmotion::ClipShapeManager* _clipManager; // 0x58
 		::miHoYoEmotion::SequenceClipBakeData_EyeCtrlData* _lastData; // 0x60
@@ -36,10 +36,10 @@ namespace miHoYoEmotion
 		::miHoYoEmotion::SequenceClipBakeData_EyeCtrlData* _currData; // 0x70
 		::System::Collections::Generic::List_1<::miHoYoEmotion::SequenceClipBakeData_EyeCtrlData*>* _currList; // 0x78
 		::UnityEngine::GameObject* _eyeStar; // 0x80
-		::System::Int32 _currIndex; // 0x88
+		::System::Boolean _isPlaying; // 0x88
+		::System::Boolean _isPlayAtTime; // 0x89
 		::System::Single _currTime; // 0x8C
-		::System::Boolean _isPlayAtTime; // 0x90
-		::System::Boolean _isPlaying; // 0x91
+		::System::Int32 _currIndex; // 0x90
 
 		::System::Void _ctor()
 		{

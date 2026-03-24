@@ -4,12 +4,12 @@
 
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOADDLEVELSCOREBYMONSTERSTRENGTHTYPE_INVOKE_OFFSET UNITYSDK_OFFSET(0x9902EF0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOADDLEVELSCOREBYMONSTERSTRENGTHTYPE__CTOR_OFFSET UNITYSDK_OFFSET(0x9903380)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOADDLEVELSCOREBYMONSTERSTRENGTHTYPE_INVOKE_OFFSET UNITYSDK_OFFSET(0xA4FDD60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDMECHBOOADDLEVELSCOREBYMONSTERSTRENGTHTYPE__CTOR_OFFSET UNITYSDK_OFFSET(0xA4FE1E0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDMechBooAddLevelScoreByMonsterStrengthType_TypeDefinitionIndex = 51102;
+	inline static constexpr unsigned int LDMechBooAddLevelScoreByMonsterStrengthType_TypeDefinitionIndex = 46449;
 
 	class LDMechBooAddLevelScoreByMonsterStrengthType : public ::FlowCanvas::Nodes::CallableActionNode_1<::MoleMole::Battle::Entity*>
 	{

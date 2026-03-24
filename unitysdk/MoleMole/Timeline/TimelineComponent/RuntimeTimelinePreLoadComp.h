@@ -4,12 +4,12 @@
 
 namespace MoleMole::Timeline::TimelineComponent { class PreLoadCameraData; }
 
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEPRELOADCOMP_GETPRELOADCAMERADATA_OFFSET UNITYSDK_OFFSET(0xB8D1610)
-#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEPRELOADCOMP__CTOR_OFFSET UNITYSDK_OFFSET(0xB8D1670)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEPRELOADCOMP_GETPRELOADCAMERADATA_OFFSET UNITYSDK_OFFSET(0xB93F9C0)
+#define MOLEMOLE_TIMELINE_TIMELINECOMPONENT_RUNTIMETIMELINEPRELOADCOMP__CTOR_OFFSET UNITYSDK_OFFSET(0xB93FA20)
 
 namespace MoleMole::Timeline::TimelineComponent
 {
-	inline static constexpr unsigned int RuntimeTimelinePreLoadComp_TypeDefinitionIndex = 36808;
+	inline static constexpr unsigned int RuntimeTimelinePreLoadComp_TypeDefinitionIndex = 48031;
 
 	class RuntimeTimelinePreLoadComp : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{

@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_34.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_54.h"
 #include "unitysdk/Foundation/Unreal/FTransform3D.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
@@ -8,13 +8,13 @@ class Class_1_F356FCA60006484C;
 namespace MoleMole { class ConfigAnimationCurveGroup; }
 namespace System { class Object; }
 
-#define CLASS_2_DD431253EF66FA2E_METHOD_2_61010E8FCBB2BBB7_OFFSET UNITYSDK_OFFSET(0xA307830)
-#define CLASS_2_DD431253EF66FA2E_METHOD_2_64589795D131E18E_OFFSET UNITYSDK_OFFSET(0xA307F80)
-#define CLASS_2_DD431253EF66FA2E__CTOR_OFFSET UNITYSDK_OFFSET(0xA307F70)
+#define CLASS_2_DD431253EF66FA2E_METHOD_2_61010E8FCBB2BBB7_OFFSET UNITYSDK_OFFSET(0x927CA30)
+#define CLASS_2_DD431253EF66FA2E_METHOD_2_64589795D131E18E_OFFSET UNITYSDK_OFFSET(0x927D0F0)
+#define CLASS_2_DD431253EF66FA2E__CTOR_OFFSET UNITYSDK_OFFSET(0x927D0E0)
 
-inline static constexpr unsigned int Class_2_DD431253EF66FA2E_TypeDefinitionIndex = 50557;
+inline static constexpr unsigned int Class_2_DD431253EF66FA2E_TypeDefinitionIndex = 80978;
 
-class Class_2_DD431253EF66FA2E : public ::Class_1_43BD383C98B4C0C5_34
+class Class_2_DD431253EF66FA2E : public ::Class_1_43BD383C98B4C0C5_54
 {
 public:
 	::System::Void _ctor()

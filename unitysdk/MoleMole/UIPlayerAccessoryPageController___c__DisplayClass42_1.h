@@ -2,15 +2,15 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_7;
+class Class_0_16E4307DCC419505_5;
 namespace MoleMole { class UIPlayerAccessoryPageController___c__DisplayClass42_0; }
 
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC831620)
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__SENDCHANGESKIN_B__0_OFFSET UNITYSDK_OFFSET(0xC831630)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD399040)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__SENDCHANGESKIN_B__0_OFFSET UNITYSDK_OFFSET(0xD399050)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryPageController___c__DisplayClass42_1_TypeDefinitionIndex = 77137;
+	inline static constexpr unsigned int UIPlayerAccessoryPageController___c__DisplayClass42_1_TypeDefinitionIndex = 39883;
 
 	class UIPlayerAccessoryPageController___c__DisplayClass42_1 : public ::System::Object
 	{
@@ -23,9 +23,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__CTOR_OFFSET))(this);
 		}
 
-		::System::Void _SendChangeSkin_b__0(::Class_0_16E4307DCC419505_7* rsp)
+		::System::Void _SendChangeSkin_b__0(::Class_0_16E4307DCC419505_5* rsp)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_7*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__SENDCHANGESKIN_B__0_OFFSET))(this, rsp);
+			return ((::System::Void(*)(::PVOID, ::Class_0_16E4307DCC419505_5*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS42_1__SENDCHANGESKIN_B__0_OFFSET))(this, rsp);
 		}
 	};
 }

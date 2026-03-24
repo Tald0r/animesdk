@@ -9,21 +9,21 @@ namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define BLACKCURTAINCONFIG_GETCONFIG_OFFSET UNITYSDK_OFFSET(0x7387190)
-#define BLACKCURTAINCONFIG_REALODDATA_OFFSET UNITYSDK_OFFSET(0x73872F0)
-#define BLACKCURTAINCONFIG_RELOADFROMFILEASYNC_OFFSET UNITYSDK_OFFSET(0x7387050)
-#define BLACKCURTAINCONFIG_RELOADFROMFILE_OFFSET UNITYSDK_OFFSET(0x7386E60)
-#define BLACKCURTAINCONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0x7387640)
-#define BLACKCURTAINCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7387630)
+#define BLACKCURTAINCONFIG_GETCONFIG_OFFSET UNITYSDK_OFFSET(0xBE06CC0)
+#define BLACKCURTAINCONFIG_REALODDATA_OFFSET UNITYSDK_OFFSET(0xBE06E20)
+#define BLACKCURTAINCONFIG_RELOADFROMFILEASYNC_OFFSET UNITYSDK_OFFSET(0xBE06B80)
+#define BLACKCURTAINCONFIG_RELOADFROMFILE_OFFSET UNITYSDK_OFFSET(0xBE06990)
+#define BLACKCURTAINCONFIG__CCTOR_OFFSET UNITYSDK_OFFSET(0xBE07160)
+#define BLACKCURTAINCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xBE07150)
 
-inline static constexpr unsigned int BlackCurtainConfig_TypeDefinitionIndex = 56900;
+inline static constexpr unsigned int BlackCurtainConfig_TypeDefinitionIndex = 59490;
 
 class BlackCurtainConfig : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigBlackCurtain*>** StaticGet__blackCurtainDict()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigBlackCurtain*>**)Il2CppClass::FromTypeDefinitionIndex(BlackCurtainConfig_TypeDefinitionIndex)->GetStaticField(0x3E070);
+		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigBlackCurtain*>**)Il2CppClass::FromTypeDefinitionIndex(BlackCurtainConfig_TypeDefinitionIndex)->GetStaticField(0x40DD0);
 	}
 
 	::System::Void _ctor()

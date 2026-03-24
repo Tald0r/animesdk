@@ -5,7 +5,7 @@
 class Class_3_9AE843FF905C0BDB;
 namespace MoleMole::Cameras { class OverShoulderCameraConfig; }
 
-inline static constexpr unsigned int Class_3_0AECE78A0888504E_Struct_2_231DDD174FF79ED6_TypeDefinitionIndex = 77684;
+inline static constexpr unsigned int Class_3_0AECE78A0888504E_Struct_2_231DDD174FF79ED6_TypeDefinitionIndex = 65741;
 
 struct alignas(8) Class_3_0AECE78A0888504E_Struct_2_231DDD174FF79ED6
 {

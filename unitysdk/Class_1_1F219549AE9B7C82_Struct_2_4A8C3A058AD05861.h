@@ -10,18 +10,18 @@ namespace System { class String; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Animation; }
 
-#define CLASS_1_1F219549AE9B7C82_STRUCT_2_4A8C3A058AD05861_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x37CE20)
-#define CLASS_1_1F219549AE9B7C82_STRUCT_2_4A8C3A058AD05861_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_1_1F219549AE9B7C82_STRUCT_2_4A8C3A058AD05861_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x3ABDB0)
+#define CLASS_1_1F219549AE9B7C82_STRUCT_2_4A8C3A058AD05861_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Struct_2_4A8C3A058AD05861_TypeDefinitionIndex = 57060;
+inline static constexpr unsigned int Class_1_1F219549AE9B7C82_Struct_2_4A8C3A058AD05861_TypeDefinitionIndex = 62814;
 
 struct alignas(8) Class_1_1F219549AE9B7C82_Struct_2_4A8C3A058AD05861
 {
-	::System::Threading::CancellationToken Field_2_4; // 0x10
+	::System::String* Field_2_3; // 0x10
 	::UnityEngine::Animation* Field_2_2; // 0x18
-	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_5; // 0x20
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> Field_2_1; // 0x30
-	::System::String* Field_2_3; // 0x48
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::Class_1_1F219549AE9B7C82_Enum_3_05F7423D39739F87> Field_2_1; // 0x20
+	::System::Threading::CancellationToken Field_2_4; // 0x38
+	::Cysharp::Threading::Tasks::UniTask_Awaiter Field_2_5; // 0x40
 	::System::Int32 Field_2_0; // 0x50
 
 	::System::Void MoveNext()

@@ -6,31 +6,31 @@
 #include "unitysdk/Struct_2_C70A12CE5BBC6553.h"
 #include "unitysdk/System/Object.h"
 
-class Class_0_16E4307DCC419505_161;
+class Class_0_16E4307DCC419505_249;
 class Class_1_05CB482B8638F6BA;
 class Class_1_08B34D65A9FCAAE5;
 class Class_1_562E27B325F76EB9_Class_1_EC905AE436B97AD0;
 class Class_1_DD6534260D7F9B1A;
 namespace MoleMole { class ChessboardTextureSheetTagsData; }
 
-#define CLASS_1_562E27B325F76EB9_METHOD_1_437AD0D2C6E3286F_OFFSET UNITYSDK_OFFSET(0x8141900)
-#define CLASS_1_562E27B325F76EB9_METHOD_1_67C16DDF256CF469_OFFSET UNITYSDK_OFFSET(0x8140B10)
-#define CLASS_1_562E27B325F76EB9_METHOD_1_90F0FB5DCC329F4B_OFFSET UNITYSDK_OFFSET(0x8141D90)
-#define CLASS_1_562E27B325F76EB9_METHOD_1_AE9EA39F15B7FD4E_OFFSET UNITYSDK_OFFSET(0x8140980)
-#define CLASS_1_562E27B325F76EB9_METHOD_1_E7C932FF941134BA_OFFSET UNITYSDK_OFFSET(0x8141840)
-#define CLASS_1_562E27B325F76EB9_METHOD_1_E9A575D18A0748D9_OFFSET UNITYSDK_OFFSET(0x8140AA0)
-#define CLASS_1_562E27B325F76EB9__CTOR_OFFSET UNITYSDK_OFFSET(0x8140970)
+#define CLASS_1_562E27B325F76EB9_METHOD_1_437AD0D2C6E3286F_OFFSET UNITYSDK_OFFSET(0x99502A0)
+#define CLASS_1_562E27B325F76EB9_METHOD_1_67C16DDF256CF469_OFFSET UNITYSDK_OFFSET(0x9950730)
+#define CLASS_1_562E27B325F76EB9_METHOD_1_90F0FB5DCC329F4B_OFFSET UNITYSDK_OFFSET(0x99516C0)
+#define CLASS_1_562E27B325F76EB9_METHOD_1_AE9EA39F15B7FD4E_OFFSET UNITYSDK_OFFSET(0x9951520)
+#define CLASS_1_562E27B325F76EB9_METHOD_1_E7C932FF941134BA_OFFSET UNITYSDK_OFFSET(0x9951460)
+#define CLASS_1_562E27B325F76EB9_METHOD_1_E9A575D18A0748D9_OFFSET UNITYSDK_OFFSET(0x9951650)
+#define CLASS_1_562E27B325F76EB9__CTOR_OFFSET UNITYSDK_OFFSET(0x9950290)
 
-inline static constexpr unsigned int Class_1_562E27B325F76EB9_TypeDefinitionIndex = 78207;
+inline static constexpr unsigned int Class_1_562E27B325F76EB9_TypeDefinitionIndex = 63731;
 
 class Class_1_562E27B325F76EB9 : public ::System::Object
 {
 public:
-	::Class_1_08B34D65A9FCAAE5* Field_1_2; // 0x10
-	::Class_1_DD6534260D7F9B1A* Field_1_0; // 0x18
-	::MoleMole::ChessboardTextureSheetTagsData* Field_1_4; // 0x20
-	::Struct_2_C70A12CE5BBC6553 Field_1_1; // 0x28
-	::Class_1_562E27B325F76EB9_Class_1_EC905AE436B97AD0* Field_1_5; // 0xB8
+	::Class_1_DD6534260D7F9B1A* Field_1_0; // 0x10
+	::Struct_2_C70A12CE5BBC6553 Field_1_1; // 0x18
+	::Class_1_562E27B325F76EB9_Class_1_EC905AE436B97AD0* Field_1_5; // 0xA8
+	::MoleMole::ChessboardTextureSheetTagsData* Field_1_4; // 0xB0
+	::Class_1_08B34D65A9FCAAE5* Field_1_2; // 0xB8
 	::System::Boolean Field_1_3; // 0xC0
 
 	::System::Void _ctor()
@@ -38,19 +38,19 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9__CTOR_OFFSET))(this);
 	}
 
+	::MoleMole::HollowChessboard::EffectResult Method_1_437AD0D2C6E3286F(::Class_1_05CB482B8638F6BA* a1, ::Struct_2_3959D6851A344518& a2, ::Foundation::Unreal::FGameplayTagContainer& a3)
+	{
+		return ((::MoleMole::HollowChessboard::EffectResult(*)(::PVOID, ::Class_1_05CB482B8638F6BA*, ::Struct_2_3959D6851A344518&, ::Foundation::Unreal::FGameplayTagContainer&))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_437AD0D2C6E3286F_OFFSET))(this, a1, a2, a3);
+	}
+
 	::System::Void Method_1_AE9EA39F15B7FD4E(::Class_1_DD6534260D7F9B1A* a1, ::Class_1_08B34D65A9FCAAE5* a2, ::MoleMole::ChessboardTextureSheetTagsData* a3)
 	{
 		return ((::System::Void(*)(::PVOID, ::Class_1_DD6534260D7F9B1A*, ::Class_1_08B34D65A9FCAAE5*, ::MoleMole::ChessboardTextureSheetTagsData*))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_AE9EA39F15B7FD4E_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Void Method_1_E9A575D18A0748D9(::Class_1_DD6534260D7F9B1A* a1)
+	::System::Void Method_1_90F0FB5DCC329F4B(::MoleMole::HollowChessboard::EffectResult a1, ::Class_0_16E4307DCC419505_249* a2)
 	{
-		return ((::System::Void(*)(::PVOID, ::Class_1_DD6534260D7F9B1A*))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_E9A575D18A0748D9_OFFSET))(this, a1);
-	}
-
-	::Struct_2_C70A12CE5BBC6553 Method_1_67C16DDF256CF469(::Class_1_05CB482B8638F6BA* a1, ::Struct_2_3959D6851A344518& a2, ::Foundation::Unreal::FGameplayTagContainer& a3)
-	{
-		return ((::Struct_2_C70A12CE5BBC6553(*)(::PVOID, ::Class_1_05CB482B8638F6BA*, ::Struct_2_3959D6851A344518&, ::Foundation::Unreal::FGameplayTagContainer&))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_67C16DDF256CF469_OFFSET))(this, a1, a2, a3);
+		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::EffectResult, ::Class_0_16E4307DCC419505_249*))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_90F0FB5DCC329F4B_OFFSET))(this, a1, a2);
 	}
 
 	::MoleMole::HollowChessboard::EffectResult Method_1_E7C932FF941134BA(::Struct_2_C70A12CE5BBC6553& a1, ::Struct_2_C70A12CE5BBC6553& a2)
@@ -58,13 +58,13 @@ public:
 		return ((::MoleMole::HollowChessboard::EffectResult(*)(::PVOID, ::Struct_2_C70A12CE5BBC6553&, ::Struct_2_C70A12CE5BBC6553&))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_E7C932FF941134BA_OFFSET))(this, a1, a2);
 	}
 
-	::MoleMole::HollowChessboard::EffectResult Method_1_437AD0D2C6E3286F(::Class_1_05CB482B8638F6BA* a1, ::Struct_2_3959D6851A344518& a2, ::Foundation::Unreal::FGameplayTagContainer& a3)
+	::Struct_2_C70A12CE5BBC6553 Method_1_67C16DDF256CF469(::Class_1_05CB482B8638F6BA* a1, ::Struct_2_3959D6851A344518& a2, ::Foundation::Unreal::FGameplayTagContainer& a3)
 	{
-		return ((::MoleMole::HollowChessboard::EffectResult(*)(::PVOID, ::Class_1_05CB482B8638F6BA*, ::Struct_2_3959D6851A344518&, ::Foundation::Unreal::FGameplayTagContainer&))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_437AD0D2C6E3286F_OFFSET))(this, a1, a2, a3);
+		return ((::Struct_2_C70A12CE5BBC6553(*)(::PVOID, ::Class_1_05CB482B8638F6BA*, ::Struct_2_3959D6851A344518&, ::Foundation::Unreal::FGameplayTagContainer&))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_67C16DDF256CF469_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Void Method_1_90F0FB5DCC329F4B(::MoleMole::HollowChessboard::EffectResult a1, ::Class_0_16E4307DCC419505_161* a2)
+	::System::Void Method_1_E9A575D18A0748D9(::Class_1_DD6534260D7F9B1A* a1)
 	{
-		return ((::System::Void(*)(::PVOID, ::MoleMole::HollowChessboard::EffectResult, ::Class_0_16E4307DCC419505_161*))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_90F0FB5DCC329F4B_OFFSET))(this, a1, a2);
+		return ((::System::Void(*)(::PVOID, ::Class_1_DD6534260D7F9B1A*))((::PBYTE)hIl2Cpp + CLASS_1_562E27B325F76EB9_METHOD_1_E9A575D18A0748D9_OFFSET))(this, a1);
 	}
 };

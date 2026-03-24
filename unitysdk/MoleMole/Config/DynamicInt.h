@@ -8,41 +8,41 @@ namespace MoleMole::Config { class ReadonlyDynamicInt; }
 namespace SimpleJSON { class JSONNode; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_DYNAMICINT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xCDBE170)
-#define MOLEMOLE_CONFIG_DYNAMICINT_FROMFLX_OFFSET UNITYSDK_OFFSET(0xCDBDD00)
-#define MOLEMOLE_CONFIG_DYNAMICINT_FROMJSON_OFFSET UNITYSDK_OFFSET(0xCDBDE40)
-#define MOLEMOLE_CONFIG_DYNAMICINT_GET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xCDBDCC0)
-#define MOLEMOLE_CONFIG_DYNAMICINT_GET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0xCDBDCE0)
-#define MOLEMOLE_CONFIG_DYNAMICINT_GET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0xCDBDCA0)
-#define MOLEMOLE_CONFIG_DYNAMICINT_SET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xCDBDCD0)
-#define MOLEMOLE_CONFIG_DYNAMICINT_SET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0xCDBDCF0)
-#define MOLEMOLE_CONFIG_DYNAMICINT_SET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0xCDBDCB0)
-#define MOLEMOLE_CONFIG_DYNAMICINT_TOJSON_OFFSET UNITYSDK_OFFSET(0xCDBDFC0)
-#define MOLEMOLE_CONFIG_DYNAMICINT__CCTOR_OFFSET UNITYSDK_OFFSET(0xCDBE4C0)
-#define MOLEMOLE_CONFIG_DYNAMICINT__CTOR_OFFSET UNITYSDK_OFFSET(0xCDBE4B0)
+#define MOLEMOLE_CONFIG_DYNAMICINT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xD0A31C0)
+#define MOLEMOLE_CONFIG_DYNAMICINT_FROMFLX_OFFSET UNITYSDK_OFFSET(0xD0A2D50)
+#define MOLEMOLE_CONFIG_DYNAMICINT_FROMJSON_OFFSET UNITYSDK_OFFSET(0xD0A2E90)
+#define MOLEMOLE_CONFIG_DYNAMICINT_GET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xD0A2D10)
+#define MOLEMOLE_CONFIG_DYNAMICINT_GET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0xD0A2D30)
+#define MOLEMOLE_CONFIG_DYNAMICINT_GET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0xD0A2CF0)
+#define MOLEMOLE_CONFIG_DYNAMICINT_SET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xD0A2D20)
+#define MOLEMOLE_CONFIG_DYNAMICINT_SET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0xD0A2D40)
+#define MOLEMOLE_CONFIG_DYNAMICINT_SET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0xD0A2D00)
+#define MOLEMOLE_CONFIG_DYNAMICINT_TOJSON_OFFSET UNITYSDK_OFFSET(0xD0A3010)
+#define MOLEMOLE_CONFIG_DYNAMICINT__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0A3510)
+#define MOLEMOLE_CONFIG_DYNAMICINT__CTOR_OFFSET UNITYSDK_OFFSET(0xD0A3500)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int DynamicInt_TypeDefinitionIndex = 78067;
+	inline static constexpr unsigned int DynamicInt_TypeDefinitionIndex = 48717;
 
 	class DynamicInt : public ::System::Object
 	{
 	public:
 		static ::MoleMole::Config::ReadonlyDynamicInt** StaticGet_ONE()
 		{
-			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x2E7F0);
-		}
-		static ::MoleMole::Config::ReadonlyDynamicInt** StaticGet_ZERO()
-		{
-			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x2E7F8);
-		}
-		static ::MoleMole::Config::ReadonlyDynamicInt** StaticGet_MINUSONE()
-		{
-			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x2E800);
+			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x302D0);
 		}
 		static ::MoleMole::Config::ReadonlyDynamicInt** StaticGet_SIX()
 		{
-			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x2E808);
+			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x302D8);
+		}
+		static ::MoleMole::Config::ReadonlyDynamicInt** StaticGet_ZERO()
+		{
+			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x302E0);
+		}
+		static ::MoleMole::Config::ReadonlyDynamicInt** StaticGet_MINUSONE()
+		{
+			return (::MoleMole::Config::ReadonlyDynamicInt**)Il2CppClass::FromTypeDefinitionIndex(DynamicInt_TypeDefinitionIndex)->GetStaticField(0x302E8);
 		}
 		::System::String* _dynamicKey_k__BackingField; // 0x10
 		::System::Int32 _fixedValue_k__BackingField; // 0x18

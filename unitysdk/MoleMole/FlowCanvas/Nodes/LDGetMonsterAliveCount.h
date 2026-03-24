@@ -9,24 +9,24 @@ namespace MoleMole::Battle { class Entity; }
 namespace MoleMole::FlowCanvas::Nodes { class EntitySaveDataMap; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT_COMPAREMONSTERCAMP_OFFSET UNITYSDK_OFFSET(0xA5E5170)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT_GETALIVECOUNT_OFFSET UNITYSDK_OFFSET(0xA5E53B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA5E5000)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT__CTOR_OFFSET UNITYSDK_OFFSET(0xA5E5C80)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xA5E5CF0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT_COMPAREMONSTERCAMP_OFFSET UNITYSDK_OFFSET(0xA7CEF90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT_GETALIVECOUNT_OFFSET UNITYSDK_OFFSET(0xA7CF1D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xA7CEE20)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT__CTOR_OFFSET UNITYSDK_OFFSET(0xA7CFAA0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETMONSTERALIVECOUNT__REGISTERPORTS_B__5_0_OFFSET UNITYSDK_OFFSET(0xA7CFB10)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetMonsterAliveCount_TypeDefinitionIndex = 40495;
+	inline static constexpr unsigned int LDGetMonsterAliveCount_TypeDefinitionIndex = 77087;
 
 	class LDGetMonsterAliveCount : public ::FlowCanvas::FlowNode
 	{
 	public:
 		::FlowCanvas::ValueOutput_1<::System::Int32>* outPut; // 0xA8
-		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::EntitySaveDataMap*>* input; // 0xB0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* allMonsterInput; // 0xB0
 		::System::Collections::Generic::List_1<::MoleMole::Battle::Entity*>* monstList; // 0xB8
 		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::MonsterPickType>* monsterCampInput; // 0xC0
-		::FlowCanvas::ValueInput_1<::System::Boolean>* allMonsterInput; // 0xC8
+		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::EntitySaveDataMap*>* input; // 0xC8
 
 		::System::Void _ctor()
 		{

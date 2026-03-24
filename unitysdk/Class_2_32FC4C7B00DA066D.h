@@ -12,25 +12,25 @@ namespace UnityEngine { class Transform; }
 namespace UnityEngine::UI { class Text; }
 namespace UnityEngine::UI { class VerticalLayoutGroup; }
 
-#define CLASS_2_32FC4C7B00DA066D_METHOD_2_63BBC99244640EE0_OFFSET UNITYSDK_OFFSET(0x6DAD0D0)
-#define CLASS_2_32FC4C7B00DA066D_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x6DAD2F0)
-#define CLASS_2_32FC4C7B00DA066D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6DAD400)
-#define CLASS_2_32FC4C7B00DA066D__CTOR_OFFSET UNITYSDK_OFFSET(0x6DAD3F0)
+#define CLASS_2_32FC4C7B00DA066D_METHOD_2_63BBC99244640EE0_OFFSET UNITYSDK_OFFSET(0xB812340)
+#define CLASS_2_32FC4C7B00DA066D_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xB812560)
+#define CLASS_2_32FC4C7B00DA066D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB812670)
+#define CLASS_2_32FC4C7B00DA066D__CTOR_OFFSET UNITYSDK_OFFSET(0xB812660)
 
-inline static constexpr unsigned int Class_2_32FC4C7B00DA066D_TypeDefinitionIndex = 62168;
+inline static constexpr unsigned int Class_2_32FC4C7B00DA066D_TypeDefinitionIndex = 49827;
 
 class Class_2_32FC4C7B00DA066D : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_1; // 0x18
-	::UnityEngine::Transform* Field_2_0; // 0x20
-	::Class_2_60DDD9C206686F44* Field_2_6; // 0x28
-	::MoleMole::MonoGamepadNestedListDelegate* Field_2_2; // 0x30
-	::UnityEngine::GameObject* Field_2_7; // 0x38
-	::UnityEngine::GameObject* Field_2_8; // 0x40
-	::UnityEngine::UI::Text* Field_2_4; // 0x48
-	::UnityEngine::UI::VerticalLayoutGroup* Field_2_3; // 0x50
-	::Class_2_60DDD9C206686F44* Field_2_5; // 0x58
+	::Class_2_60DDD9C206686F44* Field_2_6; // 0x18
+	::UnityEngine::UI::VerticalLayoutGroup* Field_2_3; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_5; // 0x28
+	::UnityEngine::GameObject* Field_2_8; // 0x30
+	::UnityEngine::UI::Text* Field_2_4; // 0x38
+	::MoleMole::MonoGamepadNestedListDelegate* Field_2_2; // 0x40
+	::UnityEngine::GameObject* Field_2_7; // 0x48
+	::UnityEngine::Transform* Field_2_0; // 0x50
+	::MonoUITableScrollV2* Field_2_1; // 0x58
 
 	::System::Void _ctor()
 	{

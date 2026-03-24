@@ -5,24 +5,24 @@
 class Class_1_888FE764864EE896;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7550E90)
-#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7550ED0)
-#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWPOPWINDOWCONTROLLER___C__INITTAB_B__9_0_OFFSET UNITYSDK_OFFSET(0x7550EE0)
+#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x992BCB0)
+#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x992BCF0)
+#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWPOPWINDOWCONTROLLER___C__INITTAB_B__9_0_OFFSET UNITYSDK_OFFSET(0x992BD00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c_TypeDefinitionIndex = 47148;
+	inline static constexpr unsigned int UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c_TypeDefinitionIndex = 55647;
 
 	class UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c : public ::System::Object
 	{
 	public:
-		static ::System::Comparison_1<::Class_1_888FE764864EE896*>** StaticGet___9__9_0()
-		{
-			return (::System::Comparison_1<::Class_1_888FE764864EE896*>**)Il2CppClass::FromTypeDefinitionIndex(UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x418A0);
-		}
 		static ::MoleMole::UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x418A8);
+			return (::MoleMole::UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x45320);
+		}
+		static ::System::Comparison_1<::Class_1_888FE764864EE896*>** StaticGet___9__9_0()
+		{
+			return (::System::Comparison_1<::Class_1_888FE764864EE896*>**)Il2CppClass::FromTypeDefinitionIndex(UIYorozuyaAbyssS2ChallengeReviewPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x45328);
 		}
 
 		static ::System::Void _cctor()

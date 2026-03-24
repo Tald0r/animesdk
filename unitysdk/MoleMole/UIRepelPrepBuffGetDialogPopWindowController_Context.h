@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIREPELPREPBUFFGETDIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAB8A7E0)
+#define MOLEMOLE_UIREPELPREPBUFFGETDIALOGPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA23B1F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRepelPrepBuffGetDialogPopWindowController_Context_TypeDefinitionIndex = 60829;
+	inline static constexpr unsigned int UIRepelPrepBuffGetDialogPopWindowController_Context_TypeDefinitionIndex = 67857;
 
 	class UIRepelPrepBuffGetDialogPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{

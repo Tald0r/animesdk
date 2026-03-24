@@ -9,28 +9,28 @@ namespace System { class String; }
 namespace System::Threading { class Thread; }
 namespace System::Threading::Tasks { class Task; }
 
-#define QWER_CAPPLICATION_EXIT_OFFSET UNITYSDK_OFFSET(0x1AA1C070)
-#define QWER_CAPPLICATION_GET_EXITCODE_OFFSET UNITYSDK_OFFSET(0x1AA1C060)
-#define QWER_CAPPLICATION_RUNINNEWTHREAD_OFFSET UNITYSDK_OFFSET(0x1AA1C970)
-#define QWER_CAPPLICATION_RUN_OFFSET UNITYSDK_OFFSET(0x1AA1C180)
-#define QWER_CAPPLICATION__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA1CF30)
-#define QWER_CAPPLICATION__EXIT_OFFSET UNITYSDK_OFFSET(0x1AA1CE70)
-#define QWER_CAPPLICATION__RUN_OFFSET UNITYSDK_OFFSET(0x1AA1C2E0)
+#define QWER_CAPPLICATION_EXIT_OFFSET UNITYSDK_OFFSET(0x1B00BDB0)
+#define QWER_CAPPLICATION_GET_EXITCODE_OFFSET UNITYSDK_OFFSET(0x1B00BDA0)
+#define QWER_CAPPLICATION_RUNINNEWTHREAD_OFFSET UNITYSDK_OFFSET(0x1B00C6B0)
+#define QWER_CAPPLICATION_RUN_OFFSET UNITYSDK_OFFSET(0x1B00BEC0)
+#define QWER_CAPPLICATION__CTOR_OFFSET UNITYSDK_OFFSET(0x1B00CC70)
+#define QWER_CAPPLICATION__EXIT_OFFSET UNITYSDK_OFFSET(0x1B00CBB0)
+#define QWER_CAPPLICATION__RUN_OFFSET UNITYSDK_OFFSET(0x1B00C020)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CApplication_TypeDefinitionIndex = 82070;
+	inline static constexpr unsigned int CApplication_TypeDefinitionIndex = 84111;
 
 	class CApplication : public ::System::Object
 	{
 	public:
 		::System::Action* m_cbOnExit; // 0x10
-		::QWER::CFutex* m_oFutex; // 0x18
-		::System::Threading::Tasks::Task* m_oExitTask; // 0x20
+		::System::Threading::Tasks::Task* m_oExitTask; // 0x18
+		::QWER::CFutex* m_oFutex; // 0x20
 		::QWER::CRunner* m_oRunner; // 0x28
-		::System::Boolean m_bExited; // 0x30
-		::System::Boolean m_bToExist; // 0x31
-		::System::Int32 m_dwExitCode; // 0x34
+		::System::Int32 m_dwExitCode; // 0x30
+		::System::Boolean m_bToExist; // 0x34
+		::System::Boolean m_bExited; // 0x35
 
 		::System::Void _ctor()
 		{

@@ -6,10 +6,10 @@ namespace Nap::NapECS { class EcsEntity; }
 namespace Nap::NapECS { class EcsWorld; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_2_8D6F08FF02C3F1A0__CTOR_1_OFFSET UNITYSDK_OFFSET(0x810E4B0)
-#define CLASS_2_8D6F08FF02C3F1A0__CTOR_OFFSET UNITYSDK_OFFSET(0x810E3F0)
+#define CLASS_2_8D6F08FF02C3F1A0__CTOR_1_OFFSET UNITYSDK_OFFSET(0x69C8760)
+#define CLASS_2_8D6F08FF02C3F1A0__CTOR_OFFSET UNITYSDK_OFFSET(0x69C86A0)
 
-inline static constexpr unsigned int Class_2_8D6F08FF02C3F1A0_TypeDefinitionIndex = 42739;
+inline static constexpr unsigned int Class_2_8D6F08FF02C3F1A0_TypeDefinitionIndex = 49024;
 
 class Class_2_8D6F08FF02C3F1A0 : public ::Nap::NapECS::EcsFilter
 {

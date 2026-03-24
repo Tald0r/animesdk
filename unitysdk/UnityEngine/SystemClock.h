@@ -3,13 +3,13 @@
 #include "unitysdk/System/DateTime.h"
 #include "unitysdk/System/Object.h"
 
-#define UNITYENGINE_SYSTEMCLOCK_GET_NOW_OFFSET UNITYSDK_OFFSET(0x19BD3A00)
-#define UNITYENGINE_SYSTEMCLOCK__CCTOR_OFFSET UNITYSDK_OFFSET(0x19BD3AA0)
-#define UNITYENGINE_SYSTEMCLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0x19BD3A90)
+#define UNITYENGINE_SYSTEMCLOCK_GET_NOW_OFFSET UNITYSDK_OFFSET(0x1A2801B0)
+#define UNITYENGINE_SYSTEMCLOCK__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A280250)
+#define UNITYENGINE_SYSTEMCLOCK__CTOR_OFFSET UNITYSDK_OFFSET(0x1A280240)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int SystemClock_TypeDefinitionIndex = 5397;
+	inline static constexpr unsigned int SystemClock_TypeDefinitionIndex = 5400;
 
 	class SystemClock : public ::System::Object
 	{

@@ -9,26 +9,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x89DEB30)
-#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x89DEB40)
-#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x89DEE80)
-#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x89DF0D0)
-#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x89DF070)
+#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB37E6F0)
+#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB37E700)
+#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB37EA40)
+#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB37EC90)
+#define MOLEMOLE_BATTLE_PROCEDURALANIMDAMPERPARAM_PROCEDURALANIMDAMPERPARAM_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB37EC30)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter_TypeDefinitionIndex = 61117;
+	inline static constexpr unsigned int ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter_TypeDefinitionIndex = 61736;
 
 	class ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Battle::ProceduralAnimDamperParam>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FAF0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46730);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::CustomDamperUtility_DampingType>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::CustomDamperUtility_DampingType>**)Il2CppClass::FromTypeDefinitionIndex(ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FAF8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::CustomDamperUtility_DampingType>**)Il2CppClass::FromTypeDefinitionIndex(ProceduralAnimDamperParam_ProceduralAnimDamperParam_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46738);
 		}
 
 		::System::Void _ctor()

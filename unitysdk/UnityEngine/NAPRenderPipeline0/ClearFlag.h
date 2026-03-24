@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ClearFlag_TypeDefinitionIndex = 5894;
+	inline static constexpr unsigned int ClearFlag_TypeDefinitionIndex = 5896;
 
 	enum class ClearFlag : ::System::Int32
 	{

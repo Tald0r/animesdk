@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDPIECESTOPNAPEFFECT_INVOKE_OFFSET UNITYSDK_OFFSET(0xF19D6B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDPIECESTOPNAPEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xF19D750)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDPIECESTOPNAPEFFECT_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC7F560)
+#define MOLEMOLE_FLOWCANVAS_NODES_CHESSBOARDPIECESTOPNAPEFFECT__CTOR_OFFSET UNITYSDK_OFFSET(0xEC7F600)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardPieceStopNapEffect_TypeDefinitionIndex = 59072;
+	inline static constexpr unsigned int ChessboardPieceStopNapEffect_TypeDefinitionIndex = 63470;
 
 	class ChessboardPieceStopNapEffect : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_1<::System::UInt32>
 	{

@@ -6,11 +6,11 @@ namespace MoleMole::Config { class ConfigEntityGlitchEffect; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGENTITYGLITCHEFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0x13996440)
+#define MOLEMOLE_CONFIG_CONFIGENTITYGLITCHEFFECTS__CTOR_OFFSET UNITYSDK_OFFSET(0x9188770)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigEntityGlitchEffects_TypeDefinitionIndex = 61255;
+	inline static constexpr unsigned int ConfigEntityGlitchEffects_TypeDefinitionIndex = 56986;
 
 	class ConfigEntityGlitchEffects : public ::Foundation::MihoyoSerializedScriptableObject
 	{

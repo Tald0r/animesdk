@@ -6,20 +6,20 @@ namespace MoleMole { class UIAutoBattlePVPTipsRowWidgetController; }
 namespace System { class Action; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIAUTOBATTLEPVPTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA519B40)
-#define MOLEMOLE_UIAUTOBATTLEPVPTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__0_OFFSET UNITYSDK_OFFSET(0xA519B50)
-#define MOLEMOLE_UIAUTOBATTLEPVPTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__1_OFFSET UNITYSDK_OFFSET(0xA519BA0)
+#define MOLEMOLE_UIAUTOBATTLEPVPTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xADB2600)
+#define MOLEMOLE_UIAUTOBATTLEPVPTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__0_OFFSET UNITYSDK_OFFSET(0xADB2610)
+#define MOLEMOLE_UIAUTOBATTLEPVPTIPSROWWIDGETCONTROLLER___C__DISPLAYCLASS3_0__SHOWTIP_B__1_OFFSET UNITYSDK_OFFSET(0xADB2660)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattlePVPTipsRowWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 44906;
+	inline static constexpr unsigned int UIAutoBattlePVPTipsRowWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 70542;
 
 	class UIAutoBattlePVPTipsRowWidgetController___c__DisplayClass3_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIAutoBattlePVPTipsRowWidgetController* __4__this; // 0x10
-		::System::String* fadeOutAni; // 0x18
-		::System::Action* overHandle; // 0x20
+		::System::Action* overHandle; // 0x10
+		::MoleMole::UIAutoBattlePVPTipsRowWidgetController* __4__this; // 0x18
+		::System::String* fadeOutAni; // 0x20
 
 		::System::Void _ctor()
 		{

@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_MONOEFFECTPLUGINATTACHPOINT_ATTACHINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x8F1D0F0)
+#define MOLEMOLE_MONOEFFECTPLUGINATTACHPOINT_ATTACHINFO__CTOR_OFFSET UNITYSDK_OFFSET(0xA02E6F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginAttachPoint_AttachInfo_TypeDefinitionIndex = 42043;
+	inline static constexpr unsigned int MonoEffectPluginAttachPoint_AttachInfo_TypeDefinitionIndex = 71177;
 
 	class MonoEffectPluginAttachPoint_AttachInfo : public ::System::Object
 	{

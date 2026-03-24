@@ -5,9 +5,9 @@
 class Class_1_87C7E5A87E686986_Class_1_1EA32B1BCD0B78FD;
 namespace System { template <typename T> class Func_1; }
 
-#define CLASS_1_87C7E5A87E686986_CLASS_1_3E138CC75DDC2FBB__CTOR_OFFSET UNITYSDK_OFFSET(0xB932330)
+#define CLASS_1_87C7E5A87E686986_CLASS_1_3E138CC75DDC2FBB__CTOR_OFFSET UNITYSDK_OFFSET(0x6486000)
 
-inline static constexpr unsigned int Class_1_87C7E5A87E686986_Class_1_3E138CC75DDC2FBB_TypeDefinitionIndex = 49407;
+inline static constexpr unsigned int Class_1_87C7E5A87E686986_Class_1_3E138CC75DDC2FBB_TypeDefinitionIndex = 63571;
 
 class Class_1_87C7E5A87E686986_Class_1_3E138CC75DDC2FBB : public ::System::Object
 {

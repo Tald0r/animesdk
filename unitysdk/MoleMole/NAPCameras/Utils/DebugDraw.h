@@ -5,25 +5,25 @@
 namespace MoleMole::NAPCameras::Utils { class DebugDraw_Class_1_F271B7271E55C989; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW_AWAKE_OFFSET UNITYSDK_OFFSET(0x830C5D0)
-#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW_UPDATE_OFFSET UNITYSDK_OFFSET(0x830C790)
-#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW__CCTOR_OFFSET UNITYSDK_OFFSET(0x830C980)
-#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW__CTOR_OFFSET UNITYSDK_OFFSET(0x830C960)
+#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW_AWAKE_OFFSET UNITYSDK_OFFSET(0xB92A540)
+#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW_UPDATE_OFFSET UNITYSDK_OFFSET(0xB92A700)
+#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW__CCTOR_OFFSET UNITYSDK_OFFSET(0xB92A8F0)
+#define MOLEMOLE_NAPCAMERAS_UTILS_DEBUGDRAW__CTOR_OFFSET UNITYSDK_OFFSET(0xB92A8D0)
 
 namespace MoleMole::NAPCameras::Utils
 {
-	inline static constexpr unsigned int DebugDraw_TypeDefinitionIndex = 52517;
+	inline static constexpr unsigned int DebugDraw_TypeDefinitionIndex = 78552;
 
 	class DebugDraw : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::MoleMole::NAPCameras::Utils::DebugDraw** StaticGet_Field_5_1()
 		{
-			return (::MoleMole::NAPCameras::Utils::DebugDraw**)Il2CppClass::FromTypeDefinitionIndex(DebugDraw_TypeDefinitionIndex)->GetStaticField(0x3C200);
+			return (::MoleMole::NAPCameras::Utils::DebugDraw**)Il2CppClass::FromTypeDefinitionIndex(DebugDraw_TypeDefinitionIndex)->GetStaticField(0x3EF10);
 		}
 		static ::System::Boolean* StaticGet_Enabled()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(DebugDraw_TypeDefinitionIndex)->GetStaticField(0xED40);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(DebugDraw_TypeDefinitionIndex)->GetStaticField(0xF450);
 		}
 		::UnityEngine::GameObject* Field_5_2; // 0x18
 		::Il2CppArray<::MoleMole::NAPCameras::Utils::DebugDraw_Class_1_F271B7271E55C989*>* Field_5_3; // 0x20

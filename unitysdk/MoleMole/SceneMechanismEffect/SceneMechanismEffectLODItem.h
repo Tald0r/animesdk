@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class ParticleSystem; }
 
-#define MOLEMOLE_SCENEMECHANISMEFFECT_SCENEMECHANISMEFFECTLODITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xB2FE150)
+#define MOLEMOLE_SCENEMECHANISMEFFECT_SCENEMECHANISMEFFECTLODITEM__CTOR_OFFSET UNITYSDK_OFFSET(0xB872B20)
 
 namespace MoleMole::SceneMechanismEffect
 {
-	inline static constexpr unsigned int SceneMechanismEffectLODItem_TypeDefinitionIndex = 51729;
+	inline static constexpr unsigned int SceneMechanismEffectLODItem_TypeDefinitionIndex = 43211;
 
 	class SceneMechanismEffectLODItem : public ::UnityEngine::MonoBehaviour
 	{

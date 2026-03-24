@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int RTXGI_QualityLevel_TypeDefinitionIndex = 5790;
+	inline static constexpr unsigned int RTXGI_QualityLevel_TypeDefinitionIndex = 5793;
 
 	enum class RTXGI_QualityLevel : ::System::Int32
 	{

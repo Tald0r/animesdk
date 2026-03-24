@@ -11,11 +11,11 @@ namespace System { class String; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define DRAWAFTERSKYBOXPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1794EE10)
-#define DRAWAFTERSKYBOXPASS_SETCHARACTERTRANSPARENTALPHABLEND_OFFSET UNITYSDK_OFFSET(0x1794EAB0)
-#define DRAWAFTERSKYBOXPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1794ED30)
+#define DRAWAFTERSKYBOXPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x177764C0)
+#define DRAWAFTERSKYBOXPASS_SETCHARACTERTRANSPARENTALPHABLEND_OFFSET UNITYSDK_OFFSET(0x17776160)
+#define DRAWAFTERSKYBOXPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x177763E0)
 
-inline static constexpr unsigned int DrawAfterSkyboxPass_TypeDefinitionIndex = 28147;
+inline static constexpr unsigned int DrawAfterSkyboxPass_TypeDefinitionIndex = 29088;
 
 class DrawAfterSkyboxPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 {

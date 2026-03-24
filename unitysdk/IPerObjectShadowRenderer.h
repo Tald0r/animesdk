@@ -6,7 +6,7 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class LODGroup; }
 namespace UnityEngine { class Renderer; }
 
-inline static constexpr unsigned int IPerObjectShadowRenderer_TypeDefinitionIndex = 28159;
+inline static constexpr unsigned int IPerObjectShadowRenderer_TypeDefinitionIndex = 29100;
 
 class IPerObjectShadowRenderer
 {

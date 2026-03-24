@@ -3,7 +3,7 @@
 
 namespace CriWare
 {
-	inline static constexpr unsigned int CriAtomEx_ResumeMode_TypeDefinitionIndex = 31225;
+	inline static constexpr unsigned int CriAtomEx_ResumeMode_TypeDefinitionIndex = 32177;
 
 	enum class CriAtomEx_ResumeMode : ::System::Int32
 	{

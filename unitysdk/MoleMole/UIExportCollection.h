@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIEXPORTCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xC629130)
+#define MOLEMOLE_UIEXPORTCOLLECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xDF94070)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIExportCollection_TypeDefinitionIndex = 47688;
+	inline static constexpr unsigned int UIExportCollection_TypeDefinitionIndex = 54718;
 
 	class UIExportCollection : public ::MoleMole::UIControlCollection
 	{

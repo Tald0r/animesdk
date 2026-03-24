@@ -8,23 +8,23 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xD390D80)
-#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_ONENABLE_OFFSET UNITYSDK_OFFSET(0xD390CF0)
-#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_SWITCHTEST_OFFSET UNITYSDK_OFFSET(0xD390E10)
-#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_SWITCHVISIBILITYCUSTOM_OFFSET UNITYSDK_OFFSET(0xD391070)
-#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_SWITCHVISIBILITY_OFFSET UNITYSDK_OFFSET(0xD390E80)
-#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER__CTOR_OFFSET UNITYSDK_OFFSET(0xD391410)
+#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xD471FC0)
+#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_ONENABLE_OFFSET UNITYSDK_OFFSET(0xD471F30)
+#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_SWITCHTEST_OFFSET UNITYSDK_OFFSET(0xD472050)
+#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_SWITCHVISIBILITYCUSTOM_OFFSET UNITYSDK_OFFSET(0xD4722B0)
+#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER_SWITCHVISIBILITY_OFFSET UNITYSDK_OFFSET(0xD4720C0)
+#define MOLEMOLE_TWOGROUPSVISIBILITYSWITCHER__CTOR_OFFSET UNITYSDK_OFFSET(0xD472640)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TwoGroupsVisibilitySwitcher_TypeDefinitionIndex = 42650;
+	inline static constexpr unsigned int TwoGroupsVisibilitySwitcher_TypeDefinitionIndex = 56199;
 
 	class TwoGroupsVisibilitySwitcher : public ::Sirenix::OdinInspector::SerializedMonoBehaviour
 	{
 	public:
 		static ::MoleMole::TwoGroupsVisibilitySwitcher** StaticGet_instance()
 		{
-			return (::MoleMole::TwoGroupsVisibilitySwitcher**)Il2CppClass::FromTypeDefinitionIndex(TwoGroupsVisibilitySwitcher_TypeDefinitionIndex)->GetStaticField(0x32340);
+			return (::MoleMole::TwoGroupsVisibilitySwitcher**)Il2CppClass::FromTypeDefinitionIndex(TwoGroupsVisibilitySwitcher_TypeDefinitionIndex)->GetStaticField(0x34190);
 		}
 		::System::Boolean useCustomGroups; // 0x58
 		::Il2CppArray<::UnityEngine::GameObject*>* groupA; // 0x60

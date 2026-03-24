@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_CAMERAMODULEDIRECTIONDATA_LERP_OFFSET UNITYSDK_OFFSET(0x8E9DE00)
-#define MOLEMOLE_CAMERAMODULEDIRECTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x8E9DF10)
+#define MOLEMOLE_CAMERAMODULEDIRECTIONDATA_LERP_OFFSET UNITYSDK_OFFSET(0xF2A46F0)
+#define MOLEMOLE_CAMERAMODULEDIRECTIONDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xF2A4800)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int CameraModuleDirectionData_TypeDefinitionIndex = 59793;
+	inline static constexpr unsigned int CameraModuleDirectionData_TypeDefinitionIndex = 66830;
 
 	class CameraModuleDirectionData : public ::System::Object
 	{

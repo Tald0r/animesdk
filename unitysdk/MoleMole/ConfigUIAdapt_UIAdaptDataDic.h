@@ -6,11 +6,11 @@ namespace MoleMole { class ConfigUIAdapt_UIAdaptDataDicEntry; }
 namespace MoleMole { class UIAdaptData; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGUIADAPT_UIADAPTDATADIC__CTOR_OFFSET UNITYSDK_OFFSET(0x139AED20)
+#define MOLEMOLE_CONFIGUIADAPT_UIADAPTDATADIC__CTOR_OFFSET UNITYSDK_OFFSET(0x91A1330)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIAdapt_UIAdaptDataDic_TypeDefinitionIndex = 53706;
+	inline static constexpr unsigned int ConfigUIAdapt_UIAdaptDataDic_TypeDefinitionIndex = 51530;
 
 	class ConfigUIAdapt_UIAdaptDataDic : public ::MoleMole::DataStructures::Lists::EasySerializeDictionary_3<::System::String*, ::MoleMole::UIAdaptData*, ::MoleMole::ConfigUIAdapt_UIAdaptDataDicEntry*>
 	{

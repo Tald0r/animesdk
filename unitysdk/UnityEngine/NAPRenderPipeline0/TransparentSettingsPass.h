@@ -9,12 +9,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_TRANSPARENTSETTINGSPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x19D1F5F0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_TRANSPARENTSETTINGSPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x19D1F550)
+#define UNITYENGINE_NAPRENDERPIPELINE0_TRANSPARENTSETTINGSPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1A305C30)
+#define UNITYENGINE_NAPRENDERPIPELINE0_TRANSPARENTSETTINGSPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A305B90)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int TransparentSettingsPass_TypeDefinitionIndex = 5833;
+	inline static constexpr unsigned int TransparentSettingsPass_TypeDefinitionIndex = 5835;
 
 	class TransparentSettingsPass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{

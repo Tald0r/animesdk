@@ -6,22 +6,22 @@
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19F0BD20)
-#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS15_0__DRAWCUBOID_B__0_OFFSET UNITYSDK_OFFSET(0x19F0BD30)
+#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS15_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A677D40)
+#define FOUNDATION_MYLOGGER___C__DISPLAYCLASS15_0__DRAWCUBOID_B__0_OFFSET UNITYSDK_OFFSET(0x1A677D50)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int MyLogger___c__DisplayClass15_0_TypeDefinitionIndex = 8147;
+	inline static constexpr unsigned int MyLogger___c__DisplayClass15_0_TypeDefinitionIndex = 8051;
 
 	class MyLogger___c__DisplayClass15_0 : public ::System::Object
 	{
 	public:
-		::Foundation::MyLogger_GeometryType type; // 0x10
-		::UnityEngine::Vector3 size; // 0x14
-		::UnityEngine::Color wiredColor; // 0x20
-		::UnityEngine::Color color; // 0x30
-		::UnityEngine::Quaternion rotation; // 0x40
-		::UnityEngine::Vector3 position; // 0x50
+		::UnityEngine::Vector3 position; // 0x10
+		::UnityEngine::Color color; // 0x1C
+		::UnityEngine::Color wiredColor; // 0x2C
+		::UnityEngine::Quaternion rotation; // 0x3C
+		::Foundation::MyLogger_GeometryType type; // 0x4C
+		::UnityEngine::Vector3 size; // 0x50
 
 		::System::Void _ctor()
 		{

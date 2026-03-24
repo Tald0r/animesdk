@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/ValueType.h"
 
-#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSHOCK4HIDINPUTREPORT_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x8D52D0)
+#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSHOCK4HIDINPUTREPORT_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x9077D0)
 
 namespace UnityEngine::InputSystem::DualShock::LowLevel
 {
-	inline static constexpr unsigned int DualShock4HIDInputReport_TypeDefinitionIndex = 27720;
+	inline static constexpr unsigned int DualShock4HIDInputReport_TypeDefinitionIndex = 28660;
 
 	struct alignas(1) DualShock4HIDInputReport
 	{

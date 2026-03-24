@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_3.h"
 
-#define FLOWCANVAS_NODES_FLOATDIVIDE_INVOKE_OFFSET UNITYSDK_OFFSET(0x19155460)
-#define FLOWCANVAS_NODES_FLOATDIVIDE__CTOR_OFFSET UNITYSDK_OFFSET(0x19155470)
+#define FLOWCANVAS_NODES_FLOATDIVIDE_INVOKE_OFFSET UNITYSDK_OFFSET(0x195475C0)
+#define FLOWCANVAS_NODES_FLOATDIVIDE__CTOR_OFFSET UNITYSDK_OFFSET(0x195475D0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int FloatDivide_TypeDefinitionIndex = 26834;
+	inline static constexpr unsigned int FloatDivide_TypeDefinitionIndex = 25974;
 
 	class FloatDivide : public ::FlowCanvas::Nodes::PureFunctionNode_3<::System::Single, ::System::Single, ::System::Single>
 	{

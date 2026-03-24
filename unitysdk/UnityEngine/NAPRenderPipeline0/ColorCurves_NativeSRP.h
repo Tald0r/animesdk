@@ -6,22 +6,22 @@ namespace UnityEngine::NAPRenderPipeline0 { class InterpolatedVolumeData; }
 namespace UnityEngine::NAPRenderPipeline0 { class TextureCurve; }
 namespace UnityEngine::NAPRenderPipeline0 { class TextureCurveParameter; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP_INTERPOLATEVOLUMEDATA_OFFSET UNITYSDK_OFFSET(0x19DD8E50)
-#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x19DD80E0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x19DD80F0)
-#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP__CCTOR_OFFSET UNITYSDK_OFFSET(0x19DD8D30)
-#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP__CTOR_OFFSET UNITYSDK_OFFSET(0x19DD8100)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP_INTERPOLATEVOLUMEDATA_OFFSET UNITYSDK_OFFSET(0x1A3637D0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP_ISACTIVE_OFFSET UNITYSDK_OFFSET(0x1A362A60)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP_ISTILECOMPATIBLE_OFFSET UNITYSDK_OFFSET(0x1A362A70)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3636B0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COLORCURVES_NATIVESRP__CTOR_OFFSET UNITYSDK_OFFSET(0x1A362A80)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ColorCurves_NativeSRP_TypeDefinitionIndex = 6068;
+	inline static constexpr unsigned int ColorCurves_NativeSRP_TypeDefinitionIndex = 6071;
 
 	class ColorCurves_NativeSRP : public ::UnityEngine::NAPRenderPipeline0::VolumeComponent
 	{
 	public:
 		static ::Il2CppArray<::UnityEngine::NAPRenderPipeline0::TextureCurve*>** StaticGet_tempCurves()
 		{
-			return (::Il2CppArray<::UnityEngine::NAPRenderPipeline0::TextureCurve*>**)Il2CppClass::FromTypeDefinitionIndex(ColorCurves_NativeSRP_TypeDefinitionIndex)->GetStaticField(0x54E0);
+			return (::Il2CppArray<::UnityEngine::NAPRenderPipeline0::TextureCurve*>**)Il2CppClass::FromTypeDefinitionIndex(ColorCurves_NativeSRP_TypeDefinitionIndex)->GetStaticField(0x5510);
 		}
 		::UnityEngine::NAPRenderPipeline0::TextureCurveParameter* master; // 0x38
 		::UnityEngine::NAPRenderPipeline0::TextureCurveParameter* red; // 0x40

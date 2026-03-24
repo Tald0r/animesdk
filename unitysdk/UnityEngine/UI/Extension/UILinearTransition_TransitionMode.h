@@ -3,11 +3,11 @@
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UILinearTransition_TransitionMode_TypeDefinitionIndex = 63744;
+	inline static constexpr unsigned int UILinearTransition_TransitionMode_TypeDefinitionIndex = 56972;
 
 	enum class UILinearTransition_TransitionMode : ::System::Int32
 	{
-		TransitionRate = 1,
 		InOutPositions = 0,
+		TransitionRate = 1,
 	};
 }

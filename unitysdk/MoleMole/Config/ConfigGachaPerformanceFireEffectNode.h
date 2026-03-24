@@ -7,21 +7,21 @@
 class Class_1_D72537470FC2F779;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEFIREEFFECTNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xC348060)
-#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEFIREEFFECTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xC3480F0)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEFIREEFFECTNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0xEC41830)
+#define MOLEMOLE_CONFIG_CONFIGGACHAPERFORMANCEFIREEFFECTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC418C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigGachaPerformanceFireEffectNode_TypeDefinitionIndex = 45192;
+	inline static constexpr unsigned int ConfigGachaPerformanceFireEffectNode_TypeDefinitionIndex = 60595;
 
 	class ConfigGachaPerformanceFireEffectNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
 		::System::String* FireCondition; // 0x18
 		::System::String* EffectPattern; // 0x20
-		::MoleMole::Config::ConfigGachaPerformanceFireEffectNode_GachaEffectType EffectType; // 0x28
-		::MoleMole::UIGachaPerformance3DModelController_GachaStageType StageType; // 0x2C
-		::System::Int32 TvIndex; // 0x30
+		::System::Int32 TvIndex; // 0x28
+		::MoleMole::Config::ConfigGachaPerformanceFireEffectNode_GachaEffectType EffectType; // 0x2C
+		::MoleMole::UIGachaPerformance3DModelController_GachaStageType StageType; // 0x30
 
 		::System::Void _ctor()
 		{

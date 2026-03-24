@@ -4,11 +4,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_PAYINFOPARAM_EXPEND_METHOD_2_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x33E2A0)
+#define MOLEMOLE_PAYINFOPARAM_EXPEND_METHOD_2_88B60F3B95FAA4F1_OFFSET UNITYSDK_OFFSET(0x35D610)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int PayInfoParam_Expend_TypeDefinitionIndex = 63535;
+	inline static constexpr unsigned int PayInfoParam_Expend_TypeDefinitionIndex = 48117;
 
 	struct alignas(4) PayInfoParam_Expend
 	{

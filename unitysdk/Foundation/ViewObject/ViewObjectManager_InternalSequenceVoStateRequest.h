@@ -4,14 +4,14 @@
 #include "unitysdk/Foundation/ViewObject/ViewObjectManager_InternalSequenceVoStateRequestType.h"
 #include "unitysdk/System/ValueType.h"
 
-class Class_3_3EC97B498E0B85D2_1;
+class Class_3_3EC97B498E0B85D2;
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 namespace System { template <typename T> class Action_1; }
 
 namespace Foundation::ViewObject
 {
-	inline static constexpr unsigned int ViewObjectManager_InternalSequenceVoStateRequest_TypeDefinitionIndex = 49689;
+	inline static constexpr unsigned int ViewObjectManager_InternalSequenceVoStateRequest_TypeDefinitionIndex = 74564;
 
 	struct alignas(8) ViewObjectManager_InternalSequenceVoStateRequest
 	{
@@ -22,6 +22,6 @@ namespace Foundation::ViewObject
 		::System::Int32 writeValue; // 0x30
 		::System::Action_1<::System::Boolean>* writeCallback; // 0x38
 		::System::Int32 callbackTag; // 0x40
-		::Class_3_3EC97B498E0B85D2_1* reason; // 0x48
+		::Class_3_3EC97B498E0B85D2* reason; // 0x48
 	};
 }

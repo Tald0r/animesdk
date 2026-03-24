@@ -4,22 +4,22 @@
 
 namespace System::Reflection { class MethodInfo; }
 
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER_EMITINFO_JSONFORMATTERATTR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AFF5310)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER_EMITINFO_JSONFORMATTERATTR__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B604130)
 
 namespace Utf8Json::Resolvers::Internal
 {
-	inline static constexpr unsigned int DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr_TypeDefinitionIndex = 81805;
+	inline static constexpr unsigned int DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr_TypeDefinitionIndex = 83846;
 
 	class DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr : public ::System::Object
 	{
 	public:
-		static ::System::Reflection::MethodInfo** StaticGet_FormatterType()
-		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr_TypeDefinitionIndex)->GetStaticField(0x46EA0);
-		}
 		static ::System::Reflection::MethodInfo** StaticGet_Arguments()
 		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr_TypeDefinitionIndex)->GetStaticField(0x46EA8);
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr_TypeDefinitionIndex)->GetStaticField(0x488B0);
+		}
+		static ::System::Reflection::MethodInfo** StaticGet_FormatterType()
+		{
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectTypeBuilder_EmitInfo_JsonFormatterAttr_TypeDefinitionIndex)->GetStaticField(0x488B8);
 		}
 
 		static ::System::Void _cctor()

@@ -11,28 +11,28 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIWishlistTargetAvatarPopupWidgetController; }
 namespace UnityEngine { class RectTransform; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_BA784AB3E6BD2F2F_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0xA0EA620)
-#define CLASS_2_BA784AB3E6BD2F2F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA0EA7A0)
-#define CLASS_2_BA784AB3E6BD2F2F_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0xA0EA380)
-#define CLASS_2_BA784AB3E6BD2F2F__CTOR_OFFSET UNITYSDK_OFFSET(0xA0EA790)
+#define CLASS_2_BA784AB3E6BD2F2F_METHOD_2_8BCB3191E6BEE7CB_OFFSET UNITYSDK_OFFSET(0x9E5ADA0)
+#define CLASS_2_BA784AB3E6BD2F2F_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9E5AF20)
+#define CLASS_2_BA784AB3E6BD2F2F_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x9E5AB00)
+#define CLASS_2_BA784AB3E6BD2F2F__CTOR_OFFSET UNITYSDK_OFFSET(0x9E5AF10)
 
-inline static constexpr unsigned int Class_2_BA784AB3E6BD2F2F_TypeDefinitionIndex = 44590;
+inline static constexpr unsigned int Class_2_BA784AB3E6BD2F2F_TypeDefinitionIndex = 38574;
 
 class Class_2_BA784AB3E6BD2F2F : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_3; // 0x18
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIWishlistTargetAvatarPopupWidgetController*>* Field_2_9; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x38
-	::UnityEngine::RectTransform* Field_2_5; // 0x40
-	::Class_2_60DDD9C206686F44* Field_2_0; // 0x48
-	::UnityEngine::RectTransform* Field_2_4; // 0x50
-	::MoleMole::NotificationBadge* Field_2_6; // 0x58
-	::Class_2_60DDD9C206686F44* Field_2_2; // 0x60
+	::MoleMole::NotificationBadge* Field_2_6; // 0x18
+	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x20
+	::Class_3_647A206587033F4E<::MoleMole::UIWishlistTargetAvatarPopupWidgetController*>* Field_2_9; // 0x28
+	::UnityEngine::RectTransform* Field_2_4; // 0x30
+	::Class_2_60DDD9C206686F44* Field_2_2; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_0; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x48
+	::UnityEngine::RectTransform* Field_2_5; // 0x50
+	::MonoUITableScrollV2* Field_2_3; // 0x58
+	::Class_2_60DDD9C206686F44* Field_2_8; // 0x60
 
 	::System::Void _ctor()
 	{

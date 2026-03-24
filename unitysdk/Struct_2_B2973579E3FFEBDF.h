@@ -5,9 +5,9 @@
 
 namespace Nap::NapECS { template <typename T> class QuickList_1; }
 
-#define STRUCT_2_B2973579E3FFEBDF_METHOD_2_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0x33BC20)
+#define STRUCT_2_B2973579E3FFEBDF_METHOD_2_1D4018D4200358D0_OFFSET UNITYSDK_OFFSET(0x3869A0)
 
-inline static constexpr unsigned int Struct_2_B2973579E3FFEBDF_TypeDefinitionIndex = 76021;
+inline static constexpr unsigned int Struct_2_B2973579E3FFEBDF_TypeDefinitionIndex = 61330;
 
 struct alignas(8) Struct_2_B2973579E3FFEBDF
 {

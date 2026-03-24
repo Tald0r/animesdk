@@ -3,20 +3,20 @@
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int SceneAssetDensityOverReason_TypeDefinitionIndex = 44472;
+	inline static constexpr unsigned int SceneAssetDensityOverReason_TypeDefinitionIndex = 80376;
 
 	enum class SceneAssetDensityOverReason : ::System::Int32
 	{
-		RENDERER = 128,
-		PARTICLE = 16,
+		OBJECT = 256,
+		LIGHT = 512,
 		NONE = 0,
 		SKINNED_MESH = 64,
+		RENDERER = 128,
+		TEXTURE = 2,
 		MATERIAL = 4,
 		ANIMATION_CLIP = 32,
-		OBJECT = 256,
 		VERTEX = 8,
 		TEXTURE_BITS = 1,
-		LIGHT = 512,
-		TEXTURE = 2,
+		PARTICLE = 16,
 	};
 }

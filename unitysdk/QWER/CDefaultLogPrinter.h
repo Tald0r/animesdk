@@ -7,30 +7,30 @@ namespace QWER { class CThreadGroup; }
 namespace System { class String; }
 namespace System::Threading::Tasks { class Task; }
 
-#define QWER_CDEFAULTLOGPRINTER_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x1AA1D2A0)
-#define QWER_CDEFAULTLOGPRINTER_QWER_ILOGPRINTER_FLUSH_OFFSET UNITYSDK_OFFSET(0x1AA1D9B0)
-#define QWER_CDEFAULTLOGPRINTER_QWER_ILOGPRINTER_PRINT_OFFSET UNITYSDK_OFFSET(0x1AA1DD10)
-#define QWER_CDEFAULTLOGPRINTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AA1D4A0)
-#define QWER_CDEFAULTLOGPRINTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA1D490)
+#define QWER_CDEFAULTLOGPRINTER_GET_INSTANCE_OFFSET UNITYSDK_OFFSET(0x1B00CFE0)
+#define QWER_CDEFAULTLOGPRINTER_QWER_ILOGPRINTER_FLUSH_OFFSET UNITYSDK_OFFSET(0x1B00D6F0)
+#define QWER_CDEFAULTLOGPRINTER_QWER_ILOGPRINTER_PRINT_OFFSET UNITYSDK_OFFSET(0x1B00DA50)
+#define QWER_CDEFAULTLOGPRINTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B00D1E0)
+#define QWER_CDEFAULTLOGPRINTER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B00D1D0)
 
 namespace QWER
 {
-	inline static constexpr unsigned int CDefaultLogPrinter_TypeDefinitionIndex = 82073;
+	inline static constexpr unsigned int CDefaultLogPrinter_TypeDefinitionIndex = 84114;
 
 	class CDefaultLogPrinter : public ::System::Object
 	{
 	public:
+		static ::System::Object** StaticGet_m_oMutex()
+		{
+			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(CDefaultLogPrinter_TypeDefinitionIndex)->GetStaticField(0x49040);
+		}
 		static ::QWER::CDefaultLogPrinter** StaticGet_m_oInstance()
 		{
-			return (::QWER::CDefaultLogPrinter**)Il2CppClass::FromTypeDefinitionIndex(CDefaultLogPrinter_TypeDefinitionIndex)->GetStaticField(0x47630);
+			return (::QWER::CDefaultLogPrinter**)Il2CppClass::FromTypeDefinitionIndex(CDefaultLogPrinter_TypeDefinitionIndex)->GetStaticField(0x49048);
 		}
 		static ::QWER::CThreadGroup** StaticGet_m_oThreadGroup()
 		{
-			return (::QWER::CThreadGroup**)Il2CppClass::FromTypeDefinitionIndex(CDefaultLogPrinter_TypeDefinitionIndex)->GetStaticField(0x47638);
-		}
-		static ::System::Object** StaticGet_m_oMutex()
-		{
-			return (::System::Object**)Il2CppClass::FromTypeDefinitionIndex(CDefaultLogPrinter_TypeDefinitionIndex)->GetStaticField(0x47640);
+			return (::QWER::CThreadGroup**)Il2CppClass::FromTypeDefinitionIndex(CDefaultLogPrinter_TypeDefinitionIndex)->GetStaticField(0x49050);
 		}
 
 		static ::System::Void _cctor()

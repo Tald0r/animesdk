@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class Object; }
 
-#define SIRENIX_SERIALIZATION_UTILITIES_UNITYEXTENSIONS_SAFEISUNITYNULL_OFFSET UNITYSDK_OFFSET(0x1A712AD0)
+#define SIRENIX_SERIALIZATION_UTILITIES_UNITYEXTENSIONS_SAFEISUNITYNULL_OFFSET UNITYSDK_OFFSET(0x1ACBDAD0)
 
 namespace Sirenix::Serialization::Utilities
 {
-	inline static constexpr unsigned int UnityExtensions_TypeDefinitionIndex = 7491;
+	inline static constexpr unsigned int UnityExtensions_TypeDefinitionIndex = 7496;
 
 	class UnityExtensions : public ::System::Object
 	{

@@ -10,10 +10,10 @@ namespace Foundation { class NativeMemory; }
 namespace Foundation { class NativeMemoryBuilder; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_1_D6F4F0A000B824D9_METHOD_1_94120EC4EA10370D_OFFSET UNITYSDK_OFFSET(0x74E9B00)
-#define CLASS_1_D6F4F0A000B824D9_METHOD_1_CF5D6CA4722C55D0_OFFSET UNITYSDK_OFFSET(0x74EA850)
+#define CLASS_1_D6F4F0A000B824D9_METHOD_1_94120EC4EA10370D_OFFSET UNITYSDK_OFFSET(0x7CE09C0)
+#define CLASS_1_D6F4F0A000B824D9_METHOD_1_CF5D6CA4722C55D0_OFFSET UNITYSDK_OFFSET(0x7CE1710)
 
-inline static constexpr unsigned int Class_1_D6F4F0A000B824D9_TypeDefinitionIndex = 61275;
+inline static constexpr unsigned int Class_1_D6F4F0A000B824D9_TypeDefinitionIndex = 46189;
 
 class Class_1_D6F4F0A000B824D9 : public ::System::Object
 {

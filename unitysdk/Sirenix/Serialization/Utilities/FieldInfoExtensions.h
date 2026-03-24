@@ -4,12 +4,12 @@
 
 namespace System::Reflection { class FieldInfo; }
 
-#define SIRENIX_SERIALIZATION_UTILITIES_FIELDINFOEXTENSIONS_DEALIASFIELD_OFFSET UNITYSDK_OFFSET(0x1B142680)
-#define SIRENIX_SERIALIZATION_UTILITIES_FIELDINFOEXTENSIONS_ISALIASFIELD_OFFSET UNITYSDK_OFFSET(0x1B142660)
+#define SIRENIX_SERIALIZATION_UTILITIES_FIELDINFOEXTENSIONS_DEALIASFIELD_OFFSET UNITYSDK_OFFSET(0x1B75F460)
+#define SIRENIX_SERIALIZATION_UTILITIES_FIELDINFOEXTENSIONS_ISALIASFIELD_OFFSET UNITYSDK_OFFSET(0x1B75F440)
 
 namespace Sirenix::Serialization::Utilities
 {
-	inline static constexpr unsigned int FieldInfoExtensions_TypeDefinitionIndex = 7473;
+	inline static constexpr unsigned int FieldInfoExtensions_TypeDefinitionIndex = 7478;
 
 	class FieldInfoExtensions : public ::System::Object
 	{

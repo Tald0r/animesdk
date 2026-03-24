@@ -6,11 +6,11 @@
 #include "unitysdk/System/Object.h"
 #include "unitysdk/System/ReadOnlySpan_1.h"
 
-class Class_0_16E4307DCC419505_100;
-class Class_0_16E4307DCC419505_97;
+class Class_0_16E4307DCC419505_106;
+class Class_0_16E4307DCC419505_99;
 class Class_1_6232996550E20D4E;
 class Class_3_3ACF40F7A59CD1EA;
-class Class_3_D92ADC48CDFCC09B;
+class Class_3_D92ADC48CDFCC09B_1;
 namespace ObservableCollections { template <typename T1, typename T2> class ISynchronizedView_2; }
 namespace ObservableCollections { template <typename T> class NotifyCollectionChangedEventHandler_1; }
 namespace ObservableCollections { template <typename T> class ObservableList_1; }
@@ -22,7 +22,7 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 namespace System::Collections::Generic { template <typename T> class IEnumerator_1; }
 template <typename T> class Class_1_634159F7561ADAA0;
 
-inline static constexpr unsigned int Class_1_634159F7561ADAA0_TypeDefinitionIndex = 31533;
+inline static constexpr unsigned int Class_1_634159F7561ADAA0_TypeDefinitionIndex = 32455;
 
 template <typename T>
 class Class_1_634159F7561ADAA0 : public ::System::Object
@@ -32,7 +32,7 @@ public:
 	::System::String* Field_1_1; // 0x0
 	::System::String* Field_1_2; // 0x0
 	::Class_3_3ACF40F7A59CD1EA* Field_1_3; // 0x0
-	::Class_0_16E4307DCC419505_97* Field_1_4; // 0x0
+	::Class_0_16E4307DCC419505_99* Field_1_4; // 0x0
 	::ObservableCollections::ObservableList_1<T>* Field_1_5; // 0x0
 	::System::Boolean Field_1_6; // 0x0
 	::Class_3_3ACF40F7A59CD1EA* Field_1_7; // 0x0

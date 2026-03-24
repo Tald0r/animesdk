@@ -3,11 +3,11 @@
 #include "unitysdk/MoleMole/LanguageType.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_TEXTMESHSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x7F28EE0)
+#define MOLEMOLE_TEXTMESHSTYLE__CTOR_OFFSET UNITYSDK_OFFSET(0x8B7B6F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int TextMeshStyle_TypeDefinitionIndex = 55517;
+	inline static constexpr unsigned int TextMeshStyle_TypeDefinitionIndex = 76282;
 
 	class TextMeshStyle : public ::System::Object
 	{

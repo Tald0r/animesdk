@@ -3,7 +3,7 @@
 
 namespace DG::Tweening
 {
-	inline static constexpr unsigned int UpdateType_TypeDefinitionIndex = 24106;
+	inline static constexpr unsigned int UpdateType_TypeDefinitionIndex = 24930;
 
 	enum class UpdateType : ::System::Int32
 	{

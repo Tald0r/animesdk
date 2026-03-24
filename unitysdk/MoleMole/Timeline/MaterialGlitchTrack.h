@@ -7,12 +7,12 @@
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::Timeline { class TimelineClip; }
 
-#define MOLEMOLE_TIMELINE_MATERIALGLITCHTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1AFC9C40)
-#define MOLEMOLE_TIMELINE_MATERIALGLITCHTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1AFC9DD0)
+#define MOLEMOLE_TIMELINE_MATERIALGLITCHTRACK_CREATEPLAYABLE_OFFSET UNITYSDK_OFFSET(0x1B5D5710)
+#define MOLEMOLE_TIMELINE_MATERIALGLITCHTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0x1B5D58A0)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialGlitchTrack_TypeDefinitionIndex = 29180;
+	inline static constexpr unsigned int MaterialGlitchTrack_TypeDefinitionIndex = 30133;
 
 	class MaterialGlitchTrack : public ::UnityEngine::Timeline::TrackAsset
 	{

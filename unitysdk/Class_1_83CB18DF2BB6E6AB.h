@@ -8,23 +8,23 @@
 class Class_1_236FD73ABC492E3F;
 namespace System { class String; }
 
-#define CLASS_1_83CB18DF2BB6E6AB_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xB07E850)
-#define CLASS_1_83CB18DF2BB6E6AB_FROMFLX_OFFSET UNITYSDK_OFFSET(0xB07EBC0)
-#define CLASS_1_83CB18DF2BB6E6AB_METHOD_1_4E5AC15A8307DCD8_OFFSET UNITYSDK_OFFSET(0xB07EC40)
-#define CLASS_1_83CB18DF2BB6E6AB_METHOD_1_9D3F039E4985BDFB_OFFSET UNITYSDK_OFFSET(0xB07E8B0)
-#define CLASS_1_83CB18DF2BB6E6AB__CTOR_OFFSET UNITYSDK_OFFSET(0xB07F4F0)
+#define CLASS_1_83CB18DF2BB6E6AB_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xAA11160)
+#define CLASS_1_83CB18DF2BB6E6AB_FROMFLX_OFFSET UNITYSDK_OFFSET(0xAA114D0)
+#define CLASS_1_83CB18DF2BB6E6AB_METHOD_1_4E5AC15A8307DCD8_OFFSET UNITYSDK_OFFSET(0xAA11550)
+#define CLASS_1_83CB18DF2BB6E6AB_METHOD_1_9D3F039E4985BDFB_OFFSET UNITYSDK_OFFSET(0xAA111C0)
+#define CLASS_1_83CB18DF2BB6E6AB__CTOR_OFFSET UNITYSDK_OFFSET(0xAA11E00)
 
-inline static constexpr unsigned int Class_1_83CB18DF2BB6E6AB_TypeDefinitionIndex = 75109;
+inline static constexpr unsigned int Class_1_83CB18DF2BB6E6AB_TypeDefinitionIndex = 57568;
 
 class Class_1_83CB18DF2BB6E6AB : public ::System::Object
 {
 public:
 	::System::String* Field_1_5; // 0x10
-	::System::String* Field_1_3; // 0x18
-	::System::String* Field_1_4; // 0x20
+	::System::String* Field_1_4; // 0x18
+	::System::String* Field_1_3; // 0x20
 	::MoleMole::Config::BaseProperty Field_1_2; // 0x28
-	::MoleMole::Config::BaseProperty Field_1_0; // 0x2C
-	::MoleMole::Config::BaseProperty Field_1_1; // 0x30
+	::MoleMole::Config::BaseProperty Field_1_1; // 0x2C
+	::MoleMole::Config::BaseProperty Field_1_0; // 0x30
 
 	::System::Void _ctor()
 	{

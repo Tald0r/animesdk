@@ -16,45 +16,45 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_GET_HOLDER_OFFSET UNITYSDK_OFFSET(0x6D31E80)
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_ONDISABLED_OFFSET UNITYSDK_OFFSET(0x6D31CE0)
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_ONENABLED_OFFSET UNITYSDK_OFFSET(0x6D31C80)
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_PREPARE_OFFSET UNITYSDK_OFFSET(0x6D31EA0)
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_SET_HOLDER_OFFSET UNITYSDK_OFFSET(0x6D31E90)
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT__AUTOSETENDFRAME_OFFSET UNITYSDK_OFFSET(0x6D31E20)
-#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x6D32520)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_GET_HOLDER_OFFSET UNITYSDK_OFFSET(0xBAD3A50)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_ONDISABLED_OFFSET UNITYSDK_OFFSET(0xBAD38B0)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_ONENABLED_OFFSET UNITYSDK_OFFSET(0xBAD3850)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_PREPARE_OFFSET UNITYSDK_OFFSET(0xBAD3A70)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT_SET_HOLDER_OFFSET UNITYSDK_OFFSET(0xBAD3A60)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT__AUTOSETENDFRAME_OFFSET UNITYSDK_OFFSET(0xBAD39F0)
+#define MOLEMOLE_BATTLE_SCRATCHCONFIGOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0xBAD40F0)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int ScratchConfigObject_TypeDefinitionIndex = 50366;
+	inline static constexpr unsigned int ScratchConfigObject_TypeDefinitionIndex = 47911;
 
 	class ScratchConfigObject : public ::System::Object
 	{
 	public:
-		::System::String* OverrideShakeKey; // 0x10
-		::System::Collections::Generic::List_1<::System::String*>* BeginTypeSpecialEffects; // 0x18
-		::System::Collections::Generic::List_1<::System::String*>* ScratchTypeSpecialEffects; // 0x20
-		::System::String* effRayStartName; // 0x28
-		::System::String* effRayDirName; // 0x30
-		::UnityEngine::Transform* rayDirObject; // 0x38
-		::UnityEngine::Transform* rayStopTo; // 0x40
-		::System::Collections::Generic::List_1<::MoleMole::Config::EffectTimeSegmentConfig*>* EffectSegmentList; // 0x48
+		::System::Collections::Generic::List_1<::System::String*>* ScratchTypeSpecialEffects; // 0x10
+		::UnityEngine::Transform* rayDirObject; // 0x18
+		::System::String* effRayDirName; // 0x20
+		::System::Collections::Generic::List_1<::MoleMole::Config::EffectTimeSegmentConfig*>* EffectSegmentList; // 0x28
+		::UnityEngine::Transform* rayStartFrom; // 0x30
+		::System::Collections::Generic::List_1<::System::String*>* BeginTypeSpecialEffects; // 0x38
+		::System::String* effRayStartName; // 0x40
+		::System::String* OverrideShakeKey; // 0x48
 		::UnityEngine::Transform* _Holder_k__BackingField; // 0x50
-		::UnityEngine::Transform* rayStartFrom; // 0x58
-		::System::Int32 lerpRayCount; // 0x60
-		::MoleMole::WeaponDamageDecalType CharacterDecalType; // 0x64
-		::System::Single effRayDistance; // 0x68
-		::MoleMole::Config::Vector3Range BeginTypeSpecialEffectsRange; // 0x6C
-		::UnityEngine::Vector3 oneRayEuler; // 0x84
-		::UnityEngine::Vector3 effRayEulerOffset; // 0x90
-		::System::Int32 hitRayFrameUpdateInterval; // 0x9C
-		::MoleMole::Config::AnimatorZoneHitWallEffect_RayMethod rayMethod; // 0xA0
-		::System::Boolean isSymmetryRay; // 0xA4
-		::MoleMole::Config::AnimatorZoneHitWallEffect_ScratchPreferMethod preferMethod; // 0xA8
-		::MoleMole::Config::AnimatorZoneHitWallEffect_RayAxis effRayStartDirAxis; // 0xAC
-		::MoleMole::Config::AnimatorZoneHitWallEffect_NormalMethod normalMethod; // 0xB0
-		::MoleMole::Config::Vector3Range ScratchTypeSpecialEffectsRange; // 0xB4
-		::MoleMole::Battle::DebugColor debugColor; // 0xCC
+		::UnityEngine::Transform* rayStopTo; // 0x58
+		::MoleMole::Battle::DebugColor debugColor; // 0x60
+		::MoleMole::Config::AnimatorZoneHitWallEffect_NormalMethod normalMethod; // 0x80
+		::System::Single effRayDistance; // 0x84
+		::UnityEngine::Vector3 oneRayEuler; // 0x88
+		::MoleMole::Config::AnimatorZoneHitWallEffect_ScratchPreferMethod preferMethod; // 0x94
+		::System::Boolean isSymmetryRay; // 0x98
+		::UnityEngine::Vector3 effRayEulerOffset; // 0x9C
+		::MoleMole::Config::Vector3Range BeginTypeSpecialEffectsRange; // 0xA8
+		::MoleMole::Config::AnimatorZoneHitWallEffect_RayAxis effRayStartDirAxis; // 0xC0
+		::MoleMole::Config::Vector3Range ScratchTypeSpecialEffectsRange; // 0xC4
+		::System::Int32 lerpRayCount; // 0xDC
+		::System::Int32 hitRayFrameUpdateInterval; // 0xE0
+		::MoleMole::WeaponDamageDecalType CharacterDecalType; // 0xE4
+		::MoleMole::Config::AnimatorZoneHitWallEffect_RayMethod rayMethod; // 0xE8
 		::System::Int32 totalRayCount; // 0xEC
 
 		::System::Void _ctor()

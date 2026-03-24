@@ -6,16 +6,16 @@
 namespace MoleMole::Config { class ConfigMultiplayerUI; }
 namespace System { class Action; }
 
-#define CLASS_1_FED1762D20687731_CLASS_1_DD40581FCFA0DE3C_METHOD_1_4C9D1F86769AC2FA_OFFSET UNITYSDK_OFFSET(0xD08D0E0)
-#define CLASS_1_FED1762D20687731_CLASS_1_DD40581FCFA0DE3C__CTOR_OFFSET UNITYSDK_OFFSET(0xD08D0D0)
+#define CLASS_1_FED1762D20687731_CLASS_1_DD40581FCFA0DE3C_METHOD_1_4C9D1F86769AC2FA_OFFSET UNITYSDK_OFFSET(0x63E47F0)
+#define CLASS_1_FED1762D20687731_CLASS_1_DD40581FCFA0DE3C__CTOR_OFFSET UNITYSDK_OFFSET(0x63E47E0)
 
-inline static constexpr unsigned int Class_1_FED1762D20687731_Class_1_DD40581FCFA0DE3C_TypeDefinitionIndex = 42113;
+inline static constexpr unsigned int Class_1_FED1762D20687731_Class_1_DD40581FCFA0DE3C_TypeDefinitionIndex = 46653;
 
 class Class_1_FED1762D20687731_Class_1_DD40581FCFA0DE3C : public ::System::Object
 {
 public:
-	::System::Action* Field_1_0; // 0x10
-	::Foundation::AssetPath Field_1_1; // 0x18
+	::Foundation::AssetPath Field_1_1; // 0x10
+	::System::Action* Field_1_0; // 0x20
 
 	::System::Void _ctor()
 	{

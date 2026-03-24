@@ -9,7 +9,7 @@ namespace UnityEngine { class Texture; }
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SceneColorGradingParams_TypeDefinitionIndex = 28715;
+	inline static constexpr unsigned int SceneColorGradingParams_TypeDefinitionIndex = 29661;
 
 	struct alignas(8) SceneColorGradingParams
 	{

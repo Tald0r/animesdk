@@ -1,11 +1,9 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/System/ReadOnlySpan_1.h"
 
-namespace System { template <typename T> class Action_1; }
-namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
+class Class_1_AEF92A7C1EC8C33D;
 
-inline static constexpr unsigned int Class_0_16E4307DCC41950C_11_TypeDefinitionIndex = 31568;
+inline static constexpr unsigned int Class_0_16E4307DCC41950C_11_TypeDefinitionIndex = 25916;
 
 template <typename T>
 class Class_0_16E4307DCC41950C_11

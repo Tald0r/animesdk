@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int IRendererSortingFudge_TypeDefinitionIndex = 5252;
+	inline static constexpr unsigned int IRendererSortingFudge_TypeDefinitionIndex = 5253;
 
 	class IRendererSortingFudge
 	{

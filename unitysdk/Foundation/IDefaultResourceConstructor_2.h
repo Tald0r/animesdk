@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IDefaultResourceConstructor_2_TypeDefinitionIndex = 9000;
+	inline static constexpr unsigned int IDefaultResourceConstructor_2_TypeDefinitionIndex = 9197;
 
 	template <typename TResource, typename TDefault>
 	class IDefaultResourceConstructor_2

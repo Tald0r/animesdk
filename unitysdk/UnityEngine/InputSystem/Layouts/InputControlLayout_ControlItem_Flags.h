@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem::Layouts
 {
-	inline static constexpr unsigned int InputControlLayout_ControlItem_Flags_TypeDefinitionIndex = 27864;
+	inline static constexpr unsigned int InputControlLayout_ControlItem_Flags_TypeDefinitionIndex = 28804;
 
 	enum class InputControlLayout_ControlItem_Flags : ::System::Int32
 	{

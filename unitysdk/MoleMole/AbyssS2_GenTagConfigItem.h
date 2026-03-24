@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AbyssS2_GenTagConfigItem_TypeDefinitionIndex = 68783;
+	inline static constexpr unsigned int AbyssS2_GenTagConfigItem_TypeDefinitionIndex = 77509;
 
 	struct alignas(8) AbyssS2_GenTagConfigItem
 	{

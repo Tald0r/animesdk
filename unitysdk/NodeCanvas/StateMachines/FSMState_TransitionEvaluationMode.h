@@ -3,7 +3,7 @@
 
 namespace NodeCanvas::StateMachines
 {
-	inline static constexpr unsigned int FSMState_TransitionEvaluationMode_TypeDefinitionIndex = 25395;
+	inline static constexpr unsigned int FSMState_TransitionEvaluationMode_TypeDefinitionIndex = 27114;
 
 	enum class FSMState_TransitionEvaluationMode : ::System::Int32
 	{

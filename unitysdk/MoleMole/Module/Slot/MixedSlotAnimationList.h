@@ -5,12 +5,12 @@
 namespace MoleMole::Module::Slot { class MixedSlotAnimation; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MODULE_SLOT_MIXEDSLOTANIMATIONLIST_SETUP_OFFSET UNITYSDK_OFFSET(0xA482B00)
-#define MOLEMOLE_MODULE_SLOT_MIXEDSLOTANIMATIONLIST__CTOR_OFFSET UNITYSDK_OFFSET(0xA482D20)
+#define MOLEMOLE_MODULE_SLOT_MIXEDSLOTANIMATIONLIST_SETUP_OFFSET UNITYSDK_OFFSET(0x7A89740)
+#define MOLEMOLE_MODULE_SLOT_MIXEDSLOTANIMATIONLIST__CTOR_OFFSET UNITYSDK_OFFSET(0x7A89960)
 
 namespace MoleMole::Module::Slot
 {
-	inline static constexpr unsigned int MixedSlotAnimationList_TypeDefinitionIndex = 49180;
+	inline static constexpr unsigned int MixedSlotAnimationList_TypeDefinitionIndex = 40960;
 
 	class MixedSlotAnimationList : public ::UnityEngine::MonoBehaviour
 	{

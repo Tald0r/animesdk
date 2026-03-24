@@ -1,134 +1,99 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/NativeTypes/NativeRawPtr_1.h"
 #include "unitysdk/StateTreeCore/StateTree.h"
 #include "unitysdk/StateTreeCore/StateTreeActiveStates.h"
 #include "unitysdk/StateTreeCore/StateTreeDataHandle.h"
 #include "unitysdk/StateTreeCore/StateTreeStateHandle.h"
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/Allocator.h"
+#include "unitysdk/UnrealTypes/ReadOnlyRawPtr_1.h"
 
-#define STATETREECORE_STATETREEEXECUTIONFRAME_CLONE_OFFSET UNITYSDK_OFFSET(0x8EBC10)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8EBBF0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_ACTIVEINSTANCEINDEXBASE_OFFSET UNITYSDK_OFFSET(0x5680D0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_EXTERNALDATABASEINDEX_OFFSET UNITYSDK_OFFSET(0x8EBA70)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_GLOBALINSTANCEINDEXBASE_OFFSET UNITYSDK_OFFSET(0x8EBA90)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_GLOBALPARAMETERDATAHANDLE_OFFSET UNITYSDK_OFFSET(0x53A5B0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_ISGLOBALFRAME_OFFSET UNITYSDK_OFFSET(0x8EBAE0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_NUMCURRENTLYACTIVESTATES_OFFSET UNITYSDK_OFFSET(0x8EBAC0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_STATEPARAMETERDATAHANDLE_OFFSET UNITYSDK_OFFSET(0x379DB0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_STATETREE_OFFSET UNITYSDK_OFFSET(0x21C7C0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_ISSAMEFRAME_OFFSET UNITYSDK_OFFSET(0x8EBCF0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_ACTIVEINSTANCEINDEXBASE_OFFSET UNITYSDK_OFFSET(0x5680E0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_EXTERNALDATABASEINDEX_OFFSET UNITYSDK_OFFSET(0x8EBA80)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_GLOBALINSTANCEINDEXBASE_OFFSET UNITYSDK_OFFSET(0x8EBAA0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_GLOBALPARAMETERDATAHANDLE_OFFSET UNITYSDK_OFFSET(0x8EBAB0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_ISGLOBALFRAME_OFFSET UNITYSDK_OFFSET(0x8EBAF0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_NUMCURRENTLYACTIVESTATES_OFFSET UNITYSDK_OFFSET(0x8EBAD0)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_STATEPARAMETERDATAHANDLE_OFFSET UNITYSDK_OFFSET(0x379D80)
-#define STATETREECORE_STATETREEEXECUTIONFRAME_SET_STATETREE_OFFSET UNITYSDK_OFFSET(0x2C3980)
-#define STATETREECORE_STATETREEEXECUTIONFRAME__CTOR_OFFSET UNITYSDK_OFFSET(0x8EBB00)
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define STATETREECORE_STATETREEEXECUTIONFRAME_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x9A5460)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x9A5400)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_CREATE_OFFSET UNITYSDK_OFFSET(0x1B5D0F50)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x9A53E0)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_DISPOSE_OFFSET UNITYSDK_OFFSET(0x2613F0)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x2F75F0)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x9A55A0)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_ISSAMEFRAME_OFFSET UNITYSDK_OFFSET(0x9A5370)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x9A5460)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x9A5400)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_RESET_OFFSET UNITYSDK_OFFSET(0x9A54C0)
+#define STATETREECORE_STATETREEEXECUTIONFRAME_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEEXECUTIONFRAME__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x9A5460)
+#define STATETREECORE_STATETREEEXECUTIONFRAME__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B5D13D0)
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeExecutionFrame_TypeDefinitionIndex = 26934;
+	inline static constexpr unsigned int StateTreeExecutionFrame_TypeDefinitionIndex = 27785;
 
 	struct alignas(8) StateTreeExecutionFrame
 	{
-		::NativeTypes::NativeRawPtr_1<::StateTreeCore::StateTree> _StateTree_k__BackingField; // 0x10
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
+		{
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(StateTreeExecutionFrame_TypeDefinitionIndex)->GetStaticField(0x20C10);
+		}
+		::UnrealTypes::ReadOnlyRawPtr_1<::StateTreeCore::StateTree> StateTree; // 0x10
 		::StateTreeCore::StateTreeStateHandle RootState; // 0x18
-		::StateTreeCore::StateTreeActiveStates ActiveStates; // 0x20
-		::System::UInt16 _ExternalDataBaseIndex_k__BackingField; // 0x40
-		::System::UInt16 _GlobalInstanceIndexBase_k__BackingField; // 0x42
-		::System::UInt16 _ActiveInstanceIndexBase_k__BackingField; // 0x44
-		::StateTreeCore::StateTreeDataHandle _StateParameterDataHandle_k__BackingField; // 0x48
-		::StateTreeCore::StateTreeDataHandle _GlobalParameterDataHandle_k__BackingField; // 0x50
-		::System::Byte _NumCurrentlyActiveStates_k__BackingField; // 0x58
-		::System::Boolean _IsGlobalFrame_k__BackingField; // 0x59
+		::StateTreeCore::StateTreeActiveStates ActiveStates; // 0x1A
+		::System::UInt16 ExternalDataBaseIndex; // 0x2C
+		::System::UInt16 GlobalInstanceIndexBase; // 0x2E
+		::System::UInt16 ActiveInstanceIndexBase; // 0x30
+		::StateTreeCore::StateTreeDataHandle StateParameterDataHandle; // 0x32
+		::StateTreeCore::StateTreeDataHandle GlobalParameterDataHandle; // 0x38
+		::System::Byte NumCurrentlyActiveStates; // 0x3E
+		::System::Boolean IsGlobalFrame; // 0x3F
 
-		::System::Void _ctor(::Unity::Collections::Allocator allocator)
+		static ::System::Void _cctor()
 		{
-			return ((::System::Void(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME__CTOR_OFFSET))(this, allocator);
+			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME__CCTOR_OFFSET))();
 		}
 
-		::NativeTypes::NativeRawPtr_1<::StateTreeCore::StateTree> get_StateTree()
+		::System::Boolean IsSameFrame(::StateTreeCore::StateTreeExecutionFrame& frame)
 		{
-			return ((::NativeTypes::NativeRawPtr_1<::StateTreeCore::StateTree>(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_STATETREE_OFFSET))(this);
+			return ((::System::Boolean(*)(::PVOID, ::StateTreeCore::StateTreeExecutionFrame&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_ISSAMEFRAME_OFFSET))(this, frame);
 		}
 
-		::System::Void set_StateTree(::NativeTypes::NativeRawPtr_1<::StateTreeCore::StateTree> value)
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::Void(*)(::PVOID, ::NativeTypes::NativeRawPtr_1<::StateTreeCore::StateTree>))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_STATETREE_OFFSET))(this, value);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
-		::System::UInt16 get_ExternalDataBaseIndex()
+		static ::StateTreeCore::StateTreeExecutionFrame Create()
 		{
-			return ((::System::UInt16(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_EXTERNALDATABASEINDEX_OFFSET))(this);
+			return ((::StateTreeCore::StateTreeExecutionFrame(*)())((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_CREATE_OFFSET))();
 		}
 
-		::System::Void set_ExternalDataBaseIndex(::System::UInt16 value)
+		::StateTreeCore::StateTreeExecutionFrame DefaultCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt16))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_EXTERNALDATABASEINDEX_OFFSET))(this, value);
+			return ((::StateTreeCore::StateTreeExecutionFrame(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_DEFAULTCREATE_OFFSET))(this, allocator);
 		}
 
-		::System::UInt16 get_GlobalInstanceIndexBase()
+		::StateTreeCore::StateTreeExecutionFrame CopyCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::UInt16(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_GLOBALINSTANCEINDEXBASE_OFFSET))(this);
+			return ((::StateTreeCore::StateTreeExecutionFrame(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_COPYCREATE_OFFSET))(this, allocator);
 		}
 
-		::System::Void set_GlobalInstanceIndexBase(::System::UInt16 value)
+		::StateTreeCore::StateTreeExecutionFrame MoveCreate(::Unity::Collections::Allocator allocator)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt16))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_GLOBALINSTANCEINDEXBASE_OFFSET))(this, value);
+			return ((::StateTreeCore::StateTreeExecutionFrame(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_MOVECREATE_OFFSET))(this, allocator);
 		}
 
-		::System::UInt16 get_ActiveInstanceIndexBase()
+		::System::Void CopyAssign(::StateTreeCore::StateTreeExecutionFrame& other)
 		{
-			return ((::System::UInt16(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_ACTIVEINSTANCEINDEXBASE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeExecutionFrame&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_COPYASSIGN_OFFSET))(this, other);
 		}
 
-		::System::Void set_ActiveInstanceIndexBase(::System::UInt16 value)
+		::System::Void MoveAssign(::StateTreeCore::StateTreeExecutionFrame& temp)
 		{
-			return ((::System::Void(*)(::PVOID, ::System::UInt16))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_ACTIVEINSTANCEINDEXBASE_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeExecutionFrame&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_MOVEASSIGN_OFFSET))(this, temp);
 		}
 
-		::StateTreeCore::StateTreeDataHandle get_StateParameterDataHandle()
+		::System::Void Reset()
 		{
-			return ((::StateTreeCore::StateTreeDataHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_STATEPARAMETERDATAHANDLE_OFFSET))(this);
-		}
-
-		::System::Void set_StateParameterDataHandle(::StateTreeCore::StateTreeDataHandle value)
-		{
-			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeDataHandle))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_STATEPARAMETERDATAHANDLE_OFFSET))(this, value);
-		}
-
-		::StateTreeCore::StateTreeDataHandle get_GlobalParameterDataHandle()
-		{
-			return ((::StateTreeCore::StateTreeDataHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_GLOBALPARAMETERDATAHANDLE_OFFSET))(this);
-		}
-
-		::System::Void set_GlobalParameterDataHandle(::StateTreeCore::StateTreeDataHandle value)
-		{
-			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeDataHandle))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_GLOBALPARAMETERDATAHANDLE_OFFSET))(this, value);
-		}
-
-		::System::Byte get_NumCurrentlyActiveStates()
-		{
-			return ((::System::Byte(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_NUMCURRENTLYACTIVESTATES_OFFSET))(this);
-		}
-
-		::System::Void set_NumCurrentlyActiveStates(::System::Byte value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Byte))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_NUMCURRENTLYACTIVESTATES_OFFSET))(this, value);
-		}
-
-		::System::Boolean get_IsGlobalFrame()
-		{
-			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_ISGLOBALFRAME_OFFSET))(this);
-		}
-
-		::System::Void set_IsGlobalFrame(::System::Boolean value)
-		{
-			return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_SET_ISGLOBALFRAME_OFFSET))(this, value);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_RESET_OFFSET))(this);
 		}
 
 		::System::Void Dispose()
@@ -136,14 +101,14 @@ namespace StateTreeCore
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_DISPOSE_OFFSET))(this);
 		}
 
-		::StateTreeCore::StateTreeExecutionFrame Clone()
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
 		{
-			return ((::StateTreeCore::StateTreeExecutionFrame(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_CLONE_OFFSET))(this);
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_GET_STRUCTOPSTRAITS_OFFSET))(this);
 		}
 
-		::System::Boolean IsSameFrame(::StateTreeCore::StateTreeExecutionFrame& frame)
+		::System::Void UnrealTypes_IStruct_StateTreeCore_StateTreeExecutionFrame__CopyAssign(::StateTreeCore::StateTreeExecutionFrame& other)
 		{
-			return ((::System::Boolean(*)(::PVOID, ::StateTreeCore::StateTreeExecutionFrame&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_ISSAMEFRAME_OFFSET))(this, frame);
+			return ((::System::Void(*)(::PVOID, ::StateTreeCore::StateTreeExecutionFrame&))((::PBYTE)hIl2Cpp + STATETREECORE_STATETREEEXECUTIONFRAME_UNREALTYPES_ISTRUCT_STATETREECORE_STATETREEEXECUTIONFRAME__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

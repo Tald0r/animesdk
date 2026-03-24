@@ -8,17 +8,17 @@ namespace System { class Action; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define CLASS_2_4107ECDD60341DBB_CLASS_1_78C235AB2515391C_METHOD_1_542A807679C6B7EB_OFFSET UNITYSDK_OFFSET(0xC4E6B30)
-#define CLASS_2_4107ECDD60341DBB_CLASS_1_78C235AB2515391C__CTOR_OFFSET UNITYSDK_OFFSET(0xC4E6B20)
+#define CLASS_2_4107ECDD60341DBB_CLASS_1_78C235AB2515391C_METHOD_1_542A807679C6B7EB_OFFSET UNITYSDK_OFFSET(0x8AE6940)
+#define CLASS_2_4107ECDD60341DBB_CLASS_1_78C235AB2515391C__CTOR_OFFSET UNITYSDK_OFFSET(0x8AE6930)
 
-inline static constexpr unsigned int Class_2_4107ECDD60341DBB_Class_1_78C235AB2515391C_TypeDefinitionIndex = 55400;
+inline static constexpr unsigned int Class_2_4107ECDD60341DBB_Class_1_78C235AB2515391C_TypeDefinitionIndex = 78469;
 
 class Class_2_4107ECDD60341DBB_Class_1_78C235AB2515391C : public ::System::Object
 {
 public:
-	::Class_2_4107ECDD60341DBB* Field_1_0; // 0x10
-	::System::Action_1<::System::ValueTuple_2<::System::Int32, ::System::String*>>* Field_1_2; // 0x18
-	::System::Action* Field_1_1; // 0x20
+	::System::Action* Field_1_1; // 0x10
+	::Class_2_4107ECDD60341DBB* Field_1_0; // 0x18
+	::System::Action_1<::System::ValueTuple_2<::System::Int32, ::System::String*>>* Field_1_2; // 0x20
 
 	::System::Void _ctor()
 	{

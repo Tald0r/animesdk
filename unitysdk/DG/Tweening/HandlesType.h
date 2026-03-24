@@ -3,7 +3,7 @@
 
 namespace DG::Tweening
 {
-	inline static constexpr unsigned int HandlesType_TypeDefinitionIndex = 31442;
+	inline static constexpr unsigned int HandlesType_TypeDefinitionIndex = 32394;
 
 	enum class HandlesType : ::System::Int32
 	{

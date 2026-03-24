@@ -3,20 +3,20 @@
 #include "unitysdk/MoleMole/UIAbyssS2RewardDialogPageController_PageType.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_2_208CC9941471731A_751;
+class Class_2_208CC9941471731A_72;
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIABYSSS2REWARDDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8AADB20)
+#define MOLEMOLE_UIABYSSS2REWARDDIALOGCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8CB68F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssS2RewardDialogContext_TypeDefinitionIndex = 79168;
+	inline static constexpr unsigned int UIAbyssS2RewardDialogContext_TypeDefinitionIndex = 51124;
 
 	class UIAbyssS2RewardDialogContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_751*>* missionTabs; // 0x28
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_72*>* missionTabs; // 0x28
 		::System::Action* CloseBtnCallBack; // 0x30
 		::System::Boolean needPlayAnim; // 0x38
 		::System::Boolean showTab; // 0x39

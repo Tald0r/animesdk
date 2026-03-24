@@ -4,7 +4,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AbyssS2_GenAreaConfigItem_TypeDefinitionIndex = 68797;
+	inline static constexpr unsigned int AbyssS2_GenAreaConfigItem_TypeDefinitionIndex = 77498;
 
 	struct alignas(4) AbyssS2_GenAreaConfigItem
 	{

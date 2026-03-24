@@ -8,24 +8,24 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A26ACE0)
-#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1A26B280)
-#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A26AD60)
-#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A26AE10)
-#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A26B440)
+#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A832690)
+#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x1A832C20)
+#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A832710)
+#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1A8327C0)
+#define NODECANVAS_TASKS_ACTIONS_SHOUTEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A832DE0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int ShoutEvent_TypeDefinitionIndex = 25833;
+	inline static constexpr unsigned int ShoutEvent_TypeDefinitionIndex = 27330;
 
 	class ShoutEvent : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* shoutRange; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::String*>* eventName; // 0x68
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* completionTime; // 0x70
-		::System::Collections::Generic::List_1<::NodeCanvas::Framework::GraphOwner*>* receivedOwners; // 0x78
-		::Il2CppArray<::NodeCanvas::Framework::GraphOwner*>* owners; // 0x80
+		::Il2CppArray<::NodeCanvas::Framework::GraphOwner*>* owners; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* completionTime; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* shoutRange; // 0x70
+		::NodeCanvas::Framework::BBParameter_1<::System::String*>* eventName; // 0x78
+		::System::Collections::Generic::List_1<::NodeCanvas::Framework::GraphOwner*>* receivedOwners; // 0x80
 		::System::Single traveledDistance; // 0x88
 
 		::System::Void _ctor()

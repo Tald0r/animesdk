@@ -9,12 +9,12 @@
 namespace MoleMole { class UIPlayerAccessoryPageController; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__WAITUNTILTIMECURSOR_D__164_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x390F50)
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__WAITUNTILTIMECURSOR_D__164_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__WAITUNTILTIMECURSOR_D__164_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x414820)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER__WAITUNTILTIMECURSOR_D__164_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryPageController__WaitUntilTimeCursor_d__164_TypeDefinitionIndex = 77133;
+	inline static constexpr unsigned int UIPlayerAccessoryPageController__WaitUntilTimeCursor_d__164_TypeDefinitionIndex = 39884;
 
 	struct alignas(8) UIPlayerAccessoryPageController__WaitUntilTimeCursor_d__164
 	{
@@ -22,8 +22,8 @@ namespace MoleMole
 		::MoleMole::UIPlayerAccessoryPageController* __4__this; // 0x18
 		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x20
 		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder __t__builder; // 0x30
-		::Cysharp::Threading::Tasks::PlayerLoopTiming timing; // 0x40
-		::System::Single resumeTime; // 0x44
+		::System::Single resumeTime; // 0x40
+		::Cysharp::Threading::Tasks::PlayerLoopTiming timing; // 0x44
 		::System::Int32 __1__state; // 0x48
 
 		::System::Void MoveNext()

@@ -5,18 +5,18 @@
 
 class Class_1_9F3D5D601B086F88;
 
-#define MOLEMOLE_ACTIVITYOVAGOMAINBATTLECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8E931D0)
+#define MOLEMOLE_ACTIVITYOVAGOMAINBATTLECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x78E1560)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ActivityOVAGOMainBattleContext_TypeDefinitionIndex = 68654;
+	inline static constexpr unsigned int ActivityOVAGOMainBattleContext_TypeDefinitionIndex = 57728;
 
 	class ActivityOVAGOMainBattleContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::Class_1_9F3D5D601B086F88* battleLevelItemData; // 0x28
-		::Enum_3_98B056E8DC285A6E type; // 0x30
-		::System::Int32 storyConfigID; // 0x34
+		::System::Int32 storyConfigID; // 0x30
+		::Enum_3_98B056E8DC285A6E type; // 0x34
 
 		::System::Void _ctor()
 		{

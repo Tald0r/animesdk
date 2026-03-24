@@ -4,9 +4,9 @@
 
 namespace MoleMole { class EventRange; }
 
-#define CLASS_4_D553E24478131817__CTOR_OFFSET UNITYSDK_OFFSET(0x80E7990)
+#define CLASS_4_D553E24478131817__CTOR_OFFSET UNITYSDK_OFFSET(0x9B89160)
 
-inline static constexpr unsigned int Class_4_D553E24478131817_TypeDefinitionIndex = 65676;
+inline static constexpr unsigned int Class_4_D553E24478131817_TypeDefinitionIndex = 50032;
 
 class Class_4_D553E24478131817 : public ::Class_3_AB79E5D347125DDE
 {

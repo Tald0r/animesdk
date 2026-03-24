@@ -5,11 +5,11 @@
 namespace MoleMole { class ConfigTempleLevelUpEvent; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIGTEMPLELEVELUPSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xCDCCF00)
+#define MOLEMOLE_CONFIGTEMPLELEVELUPSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xD0B1EA0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigTempleLevelUpSetting_TypeDefinitionIndex = 69372;
+	inline static constexpr unsigned int ConfigTempleLevelUpSetting_TypeDefinitionIndex = 40128;
 
 	class ConfigTempleLevelUpSetting : public ::System::Object
 	{

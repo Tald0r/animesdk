@@ -5,7 +5,7 @@
 namespace MoleMole::Cameras { class CameraTrackBlending; }
 namespace System { class String; }
 
-inline static constexpr unsigned int Struct_2_AC46DC1AA99F1EF4_TypeDefinitionIndex = 73617;
+inline static constexpr unsigned int Struct_2_AC46DC1AA99F1EF4_TypeDefinitionIndex = 67564;
 
 struct alignas(8) Struct_2_AC46DC1AA99F1EF4
 {

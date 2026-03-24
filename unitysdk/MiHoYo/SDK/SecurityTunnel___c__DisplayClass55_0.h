@@ -6,12 +6,12 @@ namespace MiHoYo::SDK { class SecurityTunnel; }
 namespace MiHoYo::SDK { class SecurityTunnel_Packet; }
 namespace System::Timers { class ElapsedEventArgs; }
 
-#define MIHOYO_SDK_SECURITYTUNNEL___C__DISPLAYCLASS55_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1960A590)
-#define MIHOYO_SDK_SECURITYTUNNEL___C__DISPLAYCLASS55_0__SAFEENQUEUECALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x1960A5A0)
+#define MIHOYO_SDK_SECURITYTUNNEL___C__DISPLAYCLASS55_0__CTOR_OFFSET UNITYSDK_OFFSET(0x194147F0)
+#define MIHOYO_SDK_SECURITYTUNNEL___C__DISPLAYCLASS55_0__SAFEENQUEUECALLBACK_B__0_OFFSET UNITYSDK_OFFSET(0x19414800)
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int SecurityTunnel___c__DisplayClass55_0_TypeDefinitionIndex = 33735;
+	inline static constexpr unsigned int SecurityTunnel___c__DisplayClass55_0_TypeDefinitionIndex = 34708;
 
 	class SecurityTunnel___c__DisplayClass55_0 : public ::System::Object
 	{

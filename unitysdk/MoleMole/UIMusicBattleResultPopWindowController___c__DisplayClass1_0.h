@@ -5,19 +5,19 @@
 namespace MoleMole { class UIHollowHollowLayerResultDialogContext; }
 namespace MoleMole { class UIMusicBattleResultPopWindowController; }
 
-#define MOLEMOLE_UIMUSICBATTLERESULTPOPWINDOWCONTROLLER___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA840710)
-#define MOLEMOLE_UIMUSICBATTLERESULTPOPWINDOWCONTROLLER___C__DISPLAYCLASS1_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0xA840720)
-#define MOLEMOLE_UIMUSICBATTLERESULTPOPWINDOWCONTROLLER___C__DISPLAYCLASS1_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0xA8408E0)
+#define MOLEMOLE_UIMUSICBATTLERESULTPOPWINDOWCONTROLLER___C__DISPLAYCLASS1_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8F53240)
+#define MOLEMOLE_UIMUSICBATTLERESULTPOPWINDOWCONTROLLER___C__DISPLAYCLASS1_0__ONUIOPEN_B__0_OFFSET UNITYSDK_OFFSET(0x8F53250)
+#define MOLEMOLE_UIMUSICBATTLERESULTPOPWINDOWCONTROLLER___C__DISPLAYCLASS1_0__ONUIOPEN_B__1_OFFSET UNITYSDK_OFFSET(0x8F53410)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicBattleResultPopWindowController___c__DisplayClass1_0_TypeDefinitionIndex = 37099;
+	inline static constexpr unsigned int UIMusicBattleResultPopWindowController___c__DisplayClass1_0_TypeDefinitionIndex = 75977;
 
 	class UIMusicBattleResultPopWindowController___c__DisplayClass1_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHollowHollowLayerResultDialogContext* context; // 0x10
-		::MoleMole::UIMusicBattleResultPopWindowController* __4__this; // 0x18
+		::MoleMole::UIMusicBattleResultPopWindowController* __4__this; // 0x10
+		::MoleMole::UIHollowHollowLayerResultDialogContext* context; // 0x18
 
 		::System::Void _ctor()
 		{

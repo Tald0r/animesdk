@@ -5,24 +5,24 @@
 class Class_1_7C6444A85F5ABEBB;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIURBANMAPNAVIGATIONPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA767700)
-#define MOLEMOLE_UIURBANMAPNAVIGATIONPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA767740)
-#define MOLEMOLE_UIURBANMAPNAVIGATIONPAGECONTROLLER___C__GETCHILDAREALIST_B__25_0_OFFSET UNITYSDK_OFFSET(0xA767750)
+#define MOLEMOLE_UIURBANMAPNAVIGATIONPAGECONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xAB0EC60)
+#define MOLEMOLE_UIURBANMAPNAVIGATIONPAGECONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xAB0ECA0)
+#define MOLEMOLE_UIURBANMAPNAVIGATIONPAGECONTROLLER___C__GETCHILDAREALIST_B__25_0_OFFSET UNITYSDK_OFFSET(0xAB0ECB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapNavigationPageController___c_TypeDefinitionIndex = 49959;
+	inline static constexpr unsigned int UIUrbanMapNavigationPageController___c_TypeDefinitionIndex = 38868;
 
 	class UIUrbanMapNavigationPageController___c : public ::System::Object
 	{
 	public:
 		static ::System::Comparison_1<::Class_1_7C6444A85F5ABEBB*>** StaticGet___9__25_0()
 		{
-			return (::System::Comparison_1<::Class_1_7C6444A85F5ABEBB*>**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapNavigationPageController___c_TypeDefinitionIndex)->GetStaticField(0x302D0);
+			return (::System::Comparison_1<::Class_1_7C6444A85F5ABEBB*>**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapNavigationPageController___c_TypeDefinitionIndex)->GetStaticField(0x31EA0);
 		}
 		static ::MoleMole::UIUrbanMapNavigationPageController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIUrbanMapNavigationPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapNavigationPageController___c_TypeDefinitionIndex)->GetStaticField(0x302D8);
+			return (::MoleMole::UIUrbanMapNavigationPageController___c**)Il2CppClass::FromTypeDefinitionIndex(UIUrbanMapNavigationPageController___c_TypeDefinitionIndex)->GetStaticField(0x31EA8);
 		}
 
 		static ::System::Void _cctor()

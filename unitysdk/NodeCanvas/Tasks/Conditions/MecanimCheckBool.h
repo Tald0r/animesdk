@@ -6,19 +6,19 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace UnityEngine { class Animator; }
 
-#define NODECANVAS_TASKS_CONDITIONS_MECANIMCHECKBOOL_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19EA0D30)
-#define NODECANVAS_TASKS_CONDITIONS_MECANIMCHECKBOOL_ONCHECK_OFFSET UNITYSDK_OFFSET(0x19EA0F90)
-#define NODECANVAS_TASKS_CONDITIONS_MECANIMCHECKBOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x19EA1020)
+#define NODECANVAS_TASKS_CONDITIONS_MECANIMCHECKBOOL_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A48E4B0)
+#define NODECANVAS_TASKS_CONDITIONS_MECANIMCHECKBOOL_ONCHECK_OFFSET UNITYSDK_OFFSET(0x1A48E710)
+#define NODECANVAS_TASKS_CONDITIONS_MECANIMCHECKBOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A48E7A0)
 
 namespace NodeCanvas::Tasks::Conditions
 {
-	inline static constexpr unsigned int MecanimCheckBool_TypeDefinitionIndex = 25537;
+	inline static constexpr unsigned int MecanimCheckBool_TypeDefinitionIndex = 27187;
 
 	class MecanimCheckBool : public ::NodeCanvas::Framework::ConditionTask_1<::UnityEngine::Animator*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Boolean>* value; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::String*>* parameter; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::String*>* parameter; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Boolean>* value; // 0x68
 
 		::System::Void _ctor()
 		{

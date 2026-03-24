@@ -3,7 +3,7 @@
 
 namespace Spine
 {
-	inline static constexpr unsigned int IBoneTimeline_TypeDefinitionIndex = 29770;
+	inline static constexpr unsigned int IBoneTimeline_TypeDefinitionIndex = 30723;
 
 	class IBoneTimeline
 	{

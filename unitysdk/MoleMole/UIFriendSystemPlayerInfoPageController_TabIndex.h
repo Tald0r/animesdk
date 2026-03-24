@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendSystemPlayerInfoPageController_TabIndex_TypeDefinitionIndex = 71778;
+	inline static constexpr unsigned int UIFriendSystemPlayerInfoPageController_TabIndex_TypeDefinitionIndex = 76385;
 
 	enum class UIFriendSystemPlayerInfoPageController_TabIndex : ::System::Byte
 	{

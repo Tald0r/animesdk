@@ -3,11 +3,11 @@
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int ChessboardCoordinateTransform_TransformType_TypeDefinitionIndex = 72964;
+	inline static constexpr unsigned int ChessboardCoordinateTransform_TransformType_TypeDefinitionIndex = 75612;
 
 	enum class ChessboardCoordinateTransform_TransformType : ::System::Int32
 	{
-		LocalToReal = 0,
 		RealToLocal = 1,
+		LocalToReal = 0,
 	};
 }

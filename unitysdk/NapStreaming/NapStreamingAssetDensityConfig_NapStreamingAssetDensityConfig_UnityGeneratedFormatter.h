@@ -12,26 +12,26 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7650F50)
-#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7650F60)
-#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x76512E0)
-#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7651550)
-#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7651510)
+#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8630FB0)
+#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8630FC0)
+#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8631340)
+#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x86315B0)
+#define NAPSTREAMING_NAPSTREAMINGASSETDENSITYCONFIG_NAPSTREAMINGASSETDENSITYCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8631570)
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 61664;
+	inline static constexpr unsigned int NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 40537;
 
 	class NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::NapStreaming::NapStreamingAssetDensityConfig*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::NapStreaming::SceneAssetDensityCell*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::NapStreaming::SceneAssetDensityCell*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x35120);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::NapStreaming::SceneDensityInfo>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::NapStreaming::SceneDensityInfo>*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x35128);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::NapStreaming::SceneDensityInfo>*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x37B30);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::NapStreaming::SceneAssetDensityCell*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::NapStreaming::SceneAssetDensityCell*>**)Il2CppClass::FromTypeDefinitionIndex(NapStreamingAssetDensityConfig_NapStreamingAssetDensityConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x37B38);
 		}
 
 		::System::Void _ctor()

@@ -5,12 +5,12 @@
 namespace MoleMole { class UIPerformPageController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIPERFORMPAGECONTROLLER___C__DISPLAYCLASS49_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA8524F0)
-#define MOLEMOLE_UIPERFORMPAGECONTROLLER___C__DISPLAYCLASS49_0__SETFULLSCREENCONNECTCUTSCENE_B__0_OFFSET UNITYSDK_OFFSET(0xA8533D0)
+#define MOLEMOLE_UIPERFORMPAGECONTROLLER___C__DISPLAYCLASS49_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD2832B0)
+#define MOLEMOLE_UIPERFORMPAGECONTROLLER___C__DISPLAYCLASS49_0__SETFULLSCREENCONNECTCUTSCENE_B__0_OFFSET UNITYSDK_OFFSET(0xD284180)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPerformPageController___c__DisplayClass49_0_TypeDefinitionIndex = 63755;
+	inline static constexpr unsigned int UIPerformPageController___c__DisplayClass49_0_TypeDefinitionIndex = 60589;
 
 	class UIPerformPageController___c__DisplayClass49_0 : public ::System::Object
 	{

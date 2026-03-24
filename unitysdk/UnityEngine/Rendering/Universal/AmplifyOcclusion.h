@@ -5,11 +5,11 @@
 namespace UnityEngine::NAPRenderPipeline0 { class BoolParameter; }
 namespace UnityEngine::NAPRenderPipeline0 { class ClampedFloatParameter; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17B6C130)
+#define UNITYENGINE_RENDERING_UNIVERSAL_AMPLIFYOCCLUSION__CTOR_OFFSET UNITYSDK_OFFSET(0x17802730)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int AmplifyOcclusion_TypeDefinitionIndex = 28632;
+	inline static constexpr unsigned int AmplifyOcclusion_TypeDefinitionIndex = 29575;
 
 	class AmplifyOcclusion : public ::UnityEngine::NAPRenderPipeline0::AmplifyOcclusion_NativeSRP
 	{

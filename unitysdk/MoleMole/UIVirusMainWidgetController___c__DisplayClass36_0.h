@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIVirusMainWidgetController; }
 
-#define MOLEMOLE_UIVIRUSMAINWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9A326F0)
-#define MOLEMOLE_UIVIRUSMAINWIDGETCONTROLLER___C__DISPLAYCLASS36_0__REFRESHVIRUSCOLLECTTIPS_B__0_OFFSET UNITYSDK_OFFSET(0x9A32700)
+#define MOLEMOLE_UIVIRUSMAINWIDGETCONTROLLER___C__DISPLAYCLASS36_0__CTOR_OFFSET UNITYSDK_OFFSET(0x888FD50)
+#define MOLEMOLE_UIVIRUSMAINWIDGETCONTROLLER___C__DISPLAYCLASS36_0__REFRESHVIRUSCOLLECTTIPS_B__0_OFFSET UNITYSDK_OFFSET(0x888FD60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVirusMainWidgetController___c__DisplayClass36_0_TypeDefinitionIndex = 57592;
+	inline static constexpr unsigned int UIVirusMainWidgetController___c__DisplayClass36_0_TypeDefinitionIndex = 48844;
 
 	class UIVirusMainWidgetController___c__DisplayClass36_0 : public ::System::Object
 	{

@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int CGBoundsGroup_DistributionModeEnum_TypeDefinitionIndex = 35729;
+	inline static constexpr unsigned int CGBoundsGroup_DistributionModeEnum_TypeDefinitionIndex = 36749;
 
 	enum class CGBoundsGroup_DistributionModeEnum : ::System::Int32
 	{

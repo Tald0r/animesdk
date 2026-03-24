@@ -5,29 +5,29 @@
 
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x80AB550)
-#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x80AB590)
-#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__GETMISSIONLIST_B__44_0_OFFSET UNITYSDK_OFFSET(0x80AB5A0)
-#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__REFRESHMISSIONVIEW_B__47_0_OFFSET UNITYSDK_OFFSET(0x80AB5B0)
+#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x74478C0)
+#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7447900)
+#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__GETMISSIONLIST_B__44_0_OFFSET UNITYSDK_OFFSET(0x7447910)
+#define MOLEMOLE_UIHOLLOWLAYERRESULTPAGEV2POPWINDOWCONTROLLER___C__REFRESHMISSIONVIEW_B__47_0_OFFSET UNITYSDK_OFFSET(0x7447920)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex = 49279;
+	inline static constexpr unsigned int UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex = 59211;
 
 	class UIHollowLayerResultPageV2PopWindowController___c : public ::System::Object
 	{
 	public:
+		static ::MoleMole::UIHollowLayerResultPageV2PopWindowController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIHollowLayerResultPageV2PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8A0);
+		}
 		static ::System::Comparison_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>** StaticGet___9__47_0()
 		{
-			return (::System::Comparison_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38C80);
+			return (::System::Comparison_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8A8);
 		}
 		static ::System::Comparison_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>** StaticGet___9__44_0()
 		{
-			return (::System::Comparison_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38C88);
-		}
-		static ::MoleMole::UIHollowLayerResultPageV2PopWindowController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIHollowLayerResultPageV2PopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x38C90);
+			return (::System::Comparison_1<::MoleMole::UIHollowLayerResultPageV2PopWindowController_RankDataItem>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowLayerResultPageV2PopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x3B8B0);
 		}
 
 		static ::System::Void _cctor()

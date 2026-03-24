@@ -11,22 +11,22 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8A8C250)
-#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8A8C260)
-#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8A8C3B0)
-#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8A8C510)
-#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8A8C4D0)
+#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8C94D00)
+#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x8C94D10)
+#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8C94E60)
+#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8C94FC0)
+#define MOLEMOLE_SKILLCHARACTERANIMATORZONEDATA_SKILLCHARACTERANIMATORZONEDATA_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8C94F80)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SkillCharacterAnimatorZoneData_SkillCharacterAnimatorZoneData_UnityGeneratedFormatter_TypeDefinitionIndex = 57604;
+	inline static constexpr unsigned int SkillCharacterAnimatorZoneData_SkillCharacterAnimatorZoneData_UnityGeneratedFormatter_TypeDefinitionIndex = 78950;
 
 	class SkillCharacterAnimatorZoneData_SkillCharacterAnimatorZoneData_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::SkillCharacterAnimatorZoneData*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::AnimatorZone*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::AnimatorZone*>*>**)Il2CppClass::FromTypeDefinitionIndex(SkillCharacterAnimatorZoneData_SkillCharacterAnimatorZoneData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2C910);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::AnimatorZone*>*>**)Il2CppClass::FromTypeDefinitionIndex(SkillCharacterAnimatorZoneData_SkillCharacterAnimatorZoneData_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x2DF50);
 		}
 
 		::System::Void _ctor()

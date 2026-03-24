@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_EFFECTMANAGERINSPECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x141A0A30)
+#define MOLEMOLE_EFFECTMANAGERINSPECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0xBB0E270)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int EffectManagerInspector_TypeDefinitionIndex = 55419;
+	inline static constexpr unsigned int EffectManagerInspector_TypeDefinitionIndex = 51279;
 
 	class EffectManagerInspector : public ::UnityEngine::MonoBehaviour
 	{

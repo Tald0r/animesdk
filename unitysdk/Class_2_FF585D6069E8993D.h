@@ -8,20 +8,20 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Transform; }
 
-#define CLASS_2_FF585D6069E8993D_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xA038110)
-#define CLASS_2_FF585D6069E8993D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xA038220)
-#define CLASS_2_FF585D6069E8993D__CTOR_OFFSET UNITYSDK_OFFSET(0xA038210)
+#define CLASS_2_FF585D6069E8993D_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x73B24C0)
+#define CLASS_2_FF585D6069E8993D_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x73B25D0)
+#define CLASS_2_FF585D6069E8993D__CTOR_OFFSET UNITYSDK_OFFSET(0x73B25C0)
 
-inline static constexpr unsigned int Class_2_FF585D6069E8993D_TypeDefinitionIndex = 39113;
+inline static constexpr unsigned int Class_2_FF585D6069E8993D_TypeDefinitionIndex = 47256;
 
 class Class_2_FF585D6069E8993D : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_4; // 0x18
-	::MonoUITableScrollV2* Field_2_2; // 0x20
-	::UnityEngine::Transform* Field_2_1; // 0x28
-	::UnityEngine::GameObject* Field_2_0; // 0x30
-	::MonoUITableScrollV2* Field_2_3; // 0x38
+	::UnityEngine::GameObject* Field_2_0; // 0x18
+	::UnityEngine::GameObject* Field_2_4; // 0x20
+	::MonoUITableScrollV2* Field_2_2; // 0x28
+	::MonoUITableScrollV2* Field_2_3; // 0x30
+	::UnityEngine::Transform* Field_2_1; // 0x38
 
 	::System::Void _ctor()
 	{

@@ -15,30 +15,30 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE827DA0)
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE827DB0)
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE828070)
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE828280)
-#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE828240)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB47C440)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB47C450)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB47C710)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB47C920)
+#define MOLEMOLE_CONFIG_LEVELGLOBALAISCRIPTCONFIG_LEVELGLOBALAISCRIPTCONFIG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB47C8E0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 50507;
+	inline static constexpr unsigned int LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex = 62460;
 
 	class LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::LevelGlobalAIScriptConfig*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::MoleMole::Config::LevelGlobalAIScriptConfig_AISteerParam*>*>*>** StaticGet_CachedSerializer2()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::LevelGlobalAIModule*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::MoleMole::Config::LevelGlobalAIScriptConfig_AISteerParam*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413D0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::LevelGlobalAIModule*>*>**)Il2CppClass::FromTypeDefinitionIndex(LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47740);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::AttackType, ::MoleMole::Config::LevelGlobalAIScriptConfigData_AIGroupTagWeight>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::AttackType, ::MoleMole::Config::LevelGlobalAIScriptConfigData_AIGroupTagWeight>*>**)Il2CppClass::FromTypeDefinitionIndex(LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413D8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::AttackType, ::MoleMole::Config::LevelGlobalAIScriptConfigData_AIGroupTagWeight>*>**)Il2CppClass::FromTypeDefinitionIndex(LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47748);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::LevelGlobalAIModule*>*>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::MoleMole::Config::LevelGlobalAIScriptConfig_AISteerParam*>*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::LevelGlobalAIModule*>*>**)Il2CppClass::FromTypeDefinitionIndex(LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413E0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::System::Collections::Generic::Dictionary_2<::MoleMole::Config::CharacterSize, ::MoleMole::Config::LevelGlobalAIScriptConfig_AISteerParam*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(LevelGlobalAIScriptConfig_LevelGlobalAIScriptConfig_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47750);
 		}
 
 		::System::Void _ctor()

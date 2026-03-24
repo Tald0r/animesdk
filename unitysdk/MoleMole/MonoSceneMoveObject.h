@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/MonoSceneObjectBase.h"
 
-#define MOLEMOLE_MONOSCENEMOVEOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0x9AB79F0)
+#define MOLEMOLE_MONOSCENEMOVEOBJECT__CTOR_OFFSET UNITYSDK_OFFSET(0xA52A7A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoSceneMoveObject_TypeDefinitionIndex = 60744;
+	inline static constexpr unsigned int MonoSceneMoveObject_TypeDefinitionIndex = 51494;
 
 	class MonoSceneMoveObject : public ::MoleMole::MonoSceneObjectBase
 	{

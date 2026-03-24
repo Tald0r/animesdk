@@ -6,21 +6,21 @@ class Class_1_FEB95EB7BCDEE1B8;
 namespace MoleMole { class UIInLevelQTEBtnPanelChildWindowController; }
 namespace System { class Action; }
 
-#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS72_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC87A2D0)
-#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS72_0__INITDRAGINPUTSUPPORT_B__0_OFFSET UNITYSDK_OFFSET(0xC87A2E0)
-#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS72_0__INITDRAGINPUTSUPPORT_B__1_OFFSET UNITYSDK_OFFSET(0xC87A450)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS72_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9EBA110)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS72_0__INITDRAGINPUTSUPPORT_B__0_OFFSET UNITYSDK_OFFSET(0x9EBA120)
+#define MOLEMOLE_UIINLEVELQTEBTNPANELCHILDWINDOWCONTROLLER___C__DISPLAYCLASS72_0__INITDRAGINPUTSUPPORT_B__1_OFFSET UNITYSDK_OFFSET(0x9EBA290)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelQTEBtnPanelChildWindowController___c__DisplayClass72_0_TypeDefinitionIndex = 68541;
+	inline static constexpr unsigned int UIInLevelQTEBtnPanelChildWindowController___c__DisplayClass72_0_TypeDefinitionIndex = 53101;
 
 	class UIInLevelQTEBtnPanelChildWindowController___c__DisplayClass72_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIInLevelQTEBtnPanelChildWindowController* __4__this; // 0x10
 		::System::Action* down; // 0x18
-		::Class_1_FEB95EB7BCDEE1B8* dragInputSupport; // 0x20
-		::System::Action* up; // 0x28
+		::System::Action* up; // 0x20
+		::Class_1_FEB95EB7BCDEE1B8* dragInputSupport; // 0x28
 
 		::System::Void _ctor()
 		{

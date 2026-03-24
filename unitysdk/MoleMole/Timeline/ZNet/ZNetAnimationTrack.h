@@ -4,11 +4,11 @@
 
 namespace UnityEngine::Timeline { class TrackAsset; }
 
-#define MOLEMOLE_TIMELINE_ZNET_ZNETANIMATIONTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xD390380)
+#define MOLEMOLE_TIMELINE_ZNET_ZNETANIMATIONTRACK__CTOR_OFFSET UNITYSDK_OFFSET(0xD471A50)
 
 namespace MoleMole::Timeline::ZNet
 {
-	inline static constexpr unsigned int ZNetAnimationTrack_TypeDefinitionIndex = 37669;
+	inline static constexpr unsigned int ZNetAnimationTrack_TypeDefinitionIndex = 51579;
 
 	class ZNetAnimationTrack : public ::UnityEngine::Timeline::AnimationTrack
 	{

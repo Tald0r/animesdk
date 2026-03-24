@@ -3,13 +3,13 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISkillButtonBaseController_BtnCDState_TypeDefinitionIndex = 49206;
+	inline static constexpr unsigned int UISkillButtonBaseController_BtnCDState_TypeDefinitionIndex = 66660;
 
 	enum class UISkillButtonBaseController_BtnCDState : ::System::Int32
 	{
-		CountCD = 3,
-		None = 0,
 		ForceCD = 2,
+		None = 0,
+		CountCD = 3,
 		SilentCD = 1,
 	};
 }

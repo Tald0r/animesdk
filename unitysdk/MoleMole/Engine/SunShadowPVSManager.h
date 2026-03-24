@@ -9,40 +9,40 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Renderer; }
 
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_DIR2XY_OFFSET UNITYSDK_OFFSET(0x8F68E70)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_GETBAKEDINDEX_OFFSET UNITYSDK_OFFSET(0x8F69AA0)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_GETBAKEDPVSHANDLE_OFFSET UNITYSDK_OFFSET(0x8F69BF0)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x8F69E60)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0x8F68DC0)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_REGISTER_OFFSET UNITYSDK_OFFSET(0x8F69610)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_SETUPSUNSHADOWPVSCULLPARAMETERS_OFFSET UNITYSDK_OFFSET(0x8F690F0)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_START_OFFSET UNITYSDK_OFFSET(0x8F69DF0)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_XY2DIR_OFFSET UNITYSDK_OFFSET(0x8F68F90)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8F6A020)
-#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x8F6A000)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_DIR2XY_OFFSET UNITYSDK_OFFSET(0xD0C8740)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_GETBAKEDINDEX_OFFSET UNITYSDK_OFFSET(0xD0C9370)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_GETBAKEDPVSHANDLE_OFFSET UNITYSDK_OFFSET(0xD0C94C0)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_ONDESTROY_OFFSET UNITYSDK_OFFSET(0xD0C9730)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_ONDRAWGIZMOSSELECTED_OFFSET UNITYSDK_OFFSET(0xD0C8690)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_REGISTER_OFFSET UNITYSDK_OFFSET(0xD0C8EE0)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_SETUPSUNSHADOWPVSCULLPARAMETERS_OFFSET UNITYSDK_OFFSET(0xD0C89C0)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_START_OFFSET UNITYSDK_OFFSET(0xD0C96C0)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER_XY2DIR_OFFSET UNITYSDK_OFFSET(0xD0C8860)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER__CCTOR_OFFSET UNITYSDK_OFFSET(0xD0C98F0)
+#define MOLEMOLE_ENGINE_SUNSHADOWPVSMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0xD0C98D0)
 
 namespace MoleMole::Engine
 {
-	inline static constexpr unsigned int SunShadowPVSManager_TypeDefinitionIndex = 77139;
+	inline static constexpr unsigned int SunShadowPVSManager_TypeDefinitionIndex = 73158;
 
 	class SunShadowPVSManager : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::MoleMole::Engine::SunShadowPVSManager** StaticGet_Instance()
 		{
-			return (::MoleMole::Engine::SunShadowPVSManager**)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0x345D0);
+			return (::MoleMole::Engine::SunShadowPVSManager**)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0x36F50);
 		}
 		static ::System::String** StaticGet_DataState()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0x345D8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0x36F58);
 		}
 		static ::System::Boolean* StaticGet_LogAction()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0xCC50);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0xD770);
 		}
 		static ::System::Boolean* StaticGet_HitState()
 		{
-			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0xCC51);
+			return (::System::Boolean*)Il2CppClass::FromTypeDefinitionIndex(SunShadowPVSManager_TypeDefinitionIndex)->GetStaticField(0xD771);
 		}
 		// static const ::System::String* Field_5_12; // 0x0
 		// static const ::System::String* Field_5_13; // 0x0

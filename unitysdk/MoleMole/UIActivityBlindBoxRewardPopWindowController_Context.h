@@ -4,11 +4,11 @@
 
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 
-#define MOLEMOLE_UIACTIVITYBLINDBOXREWARDPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBAD6E60)
+#define MOLEMOLE_UIACTIVITYBLINDBOXREWARDPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA694050)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityBlindBoxRewardPopWindowController_Context_TypeDefinitionIndex = 50076;
+	inline static constexpr unsigned int UIActivityBlindBoxRewardPopWindowController_Context_TypeDefinitionIndex = 64783;
 
 	class UIActivityBlindBoxRewardPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{

@@ -3,7 +3,7 @@
 
 namespace UnityEngine::Windows::WebCam
 {
-	inline static constexpr unsigned int VideoCapture_CaptureResultType_TypeDefinitionIndex = 5469;
+	inline static constexpr unsigned int VideoCapture_CaptureResultType_TypeDefinitionIndex = 5472;
 
 	enum class VideoCapture_CaptureResultType : ::System::Int32
 	{

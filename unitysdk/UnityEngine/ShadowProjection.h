@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ShadowProjection_TypeDefinitionIndex = 5223;
+	inline static constexpr unsigned int ShadowProjection_TypeDefinitionIndex = 5224;
 
 	enum class ShadowProjection : ::System::Int32
 	{

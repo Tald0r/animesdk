@@ -2,27 +2,27 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_2_208CC9941471731A_440;
+class Class_2_208CC9941471731A_789;
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xA193640)
-#define MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0xA193680)
-#define MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__SORTCFGS_B__47_0_OFFSET UNITYSDK_OFFSET(0xA193690)
+#define MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x9D25AF0)
+#define MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x9D25B30)
+#define MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__SORTCFGS_B__47_0_OFFSET UNITYSDK_OFFSET(0x9D25B40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowCollectRewardDialogPopWindowController___c_TypeDefinitionIndex = 55180;
+	inline static constexpr unsigned int UIHollowCollectRewardDialogPopWindowController___c_TypeDefinitionIndex = 71912;
 
 	class UIHollowCollectRewardDialogPopWindowController___c : public ::System::Object
 	{
 	public:
+		static ::System::Comparison_1<::Class_2_208CC9941471731A_789*>** StaticGet___9__47_0()
+		{
+			return (::System::Comparison_1<::Class_2_208CC9941471731A_789*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCollectRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31B50);
+		}
 		static ::MoleMole::UIHollowCollectRewardDialogPopWindowController___c** StaticGet___9()
 		{
-			return (::MoleMole::UIHollowCollectRewardDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCollectRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FF90);
-		}
-		static ::System::Comparison_1<::Class_2_208CC9941471731A_440*>** StaticGet___9__47_0()
-		{
-			return (::System::Comparison_1<::Class_2_208CC9941471731A_440*>**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCollectRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x2FF98);
+			return (::MoleMole::UIHollowCollectRewardDialogPopWindowController___c**)Il2CppClass::FromTypeDefinitionIndex(UIHollowCollectRewardDialogPopWindowController___c_TypeDefinitionIndex)->GetStaticField(0x31B58);
 		}
 
 		static ::System::Void _cctor()
@@ -35,9 +35,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__CTOR_OFFSET))(this);
 		}
 
-		::System::Int32 _SortCfgs_b__47_0(::Class_2_208CC9941471731A_440* x, ::Class_2_208CC9941471731A_440* y)
+		::System::Int32 _SortCfgs_b__47_0(::Class_2_208CC9941471731A_789* x, ::Class_2_208CC9941471731A_789* y)
 		{
-			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_440*, ::Class_2_208CC9941471731A_440*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__SORTCFGS_B__47_0_OFFSET))(this, x, y);
+			return ((::System::Int32(*)(::PVOID, ::Class_2_208CC9941471731A_789*, ::Class_2_208CC9941471731A_789*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIHOLLOWCOLLECTREWARDDIALOGPOPWINDOWCONTROLLER___C__SORTCFGS_B__47_0_OFFSET))(this, x, y);
 		}
 	};
 }

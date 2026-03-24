@@ -5,11 +5,11 @@
 namespace DigitalOpus::MB::Core { class ShaderTextureProperty; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPIPELINE___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0DF2F0)
+#define DIGITALOPUS_MB_CORE_MB3_TEXTURECOMBINERPIPELINE___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1B6F19B0)
 
 namespace DigitalOpus::MB::Core
 {
-	inline static constexpr unsigned int MB3_TextureCombinerPipeline___c__DisplayClass7_0_TypeDefinitionIndex = 81401;
+	inline static constexpr unsigned int MB3_TextureCombinerPipeline___c__DisplayClass7_0_TypeDefinitionIndex = 83442;
 
 	class MB3_TextureCombinerPipeline___c__DisplayClass7_0 : public ::System::Object
 	{

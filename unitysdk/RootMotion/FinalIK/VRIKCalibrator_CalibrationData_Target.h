@@ -6,12 +6,12 @@
 
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_FINALIK_VRIKCALIBRATOR_CALIBRATIONDATA_TARGET_SETTO_OFFSET UNITYSDK_OFFSET(0x1AA5FFE0)
-#define ROOTMOTION_FINALIK_VRIKCALIBRATOR_CALIBRATIONDATA_TARGET__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA5FEF0)
+#define ROOTMOTION_FINALIK_VRIKCALIBRATOR_CALIBRATIONDATA_TARGET_SETTO_OFFSET UNITYSDK_OFFSET(0x1B091950)
+#define ROOTMOTION_FINALIK_VRIKCALIBRATOR_CALIBRATIONDATA_TARGET__CTOR_OFFSET UNITYSDK_OFFSET(0x1B091860)
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int VRIKCalibrator_CalibrationData_Target_TypeDefinitionIndex = 35185;
+	inline static constexpr unsigned int VRIKCalibrator_CalibrationData_Target_TypeDefinitionIndex = 36187;
 
 	class VRIKCalibrator_CalibrationData_Target : public ::System::Object
 	{

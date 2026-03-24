@@ -6,12 +6,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYTEXTURESHEET_INVOKE_OFFSET UNITYSDK_OFFSET(0xCCD67B0)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYTEXTURESHEET__CTOR_OFFSET UNITYSDK_OFFSET(0xCCD6A30)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYTEXTURESHEET_INVOKE_OFFSET UNITYSDK_OFFSET(0xA006260)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARDPLAYTEXTURESHEET__CTOR_OFFSET UNITYSDK_OFFSET(0xA0064E0)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessboardPlayTextureSheet_TypeDefinitionIndex = 71659;
+	inline static constexpr unsigned int ChessboardPlayTextureSheet_TypeDefinitionIndex = 80493;
 
 	class ChessboardPlayTextureSheet : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_5<::MoleMole::HollowChessboard::HollowCell, ::System::String*, ::System::Int32, ::System::Int32, ::MoleMole::HollowPieceBlendMode>
 	{

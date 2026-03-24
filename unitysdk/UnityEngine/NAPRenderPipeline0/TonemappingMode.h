@@ -3,7 +3,7 @@
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int TonemappingMode_TypeDefinitionIndex = 5857;
+	inline static constexpr unsigned int TonemappingMode_TypeDefinitionIndex = 5859;
 
 	enum class TonemappingMode : ::System::Int32
 	{

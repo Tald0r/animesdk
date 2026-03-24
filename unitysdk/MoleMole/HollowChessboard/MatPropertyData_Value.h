@@ -6,7 +6,7 @@
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int MatPropertyData_Value_TypeDefinitionIndex = 53651;
+	inline static constexpr unsigned int MatPropertyData_Value_TypeDefinitionIndex = 41316;
 
 	struct alignas(4) MatPropertyData_Value
 	{

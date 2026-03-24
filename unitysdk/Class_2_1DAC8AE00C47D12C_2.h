@@ -8,24 +8,24 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_1DAC8AE00C47D12C_2_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0x1ADF9C20)
-#define CLASS_2_1DAC8AE00C47D12C_2_METHOD_2_63BBC99244640EE0_OFFSET UNITYSDK_OFFSET(0x1ADF9A20)
-#define CLASS_2_1DAC8AE00C47D12C_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x1ADF9D30)
-#define CLASS_2_1DAC8AE00C47D12C_2__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADF9D20)
+#define CLASS_2_1DAC8AE00C47D12C_2_METHOD_2_572E53F76E315839_OFFSET UNITYSDK_OFFSET(0x1AD61830)
+#define CLASS_2_1DAC8AE00C47D12C_2_METHOD_2_63BBC99244640EE0_OFFSET UNITYSDK_OFFSET(0x1AD61630)
+#define CLASS_2_1DAC8AE00C47D12C_2_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x1AD61940)
+#define CLASS_2_1DAC8AE00C47D12C_2__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD61930)
 
-inline static constexpr unsigned int Class_2_1DAC8AE00C47D12C_2_TypeDefinitionIndex = 81572;
+inline static constexpr unsigned int Class_2_1DAC8AE00C47D12C_2_TypeDefinitionIndex = 83545;
 
 class Class_2_1DAC8AE00C47D12C_2 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x18
-	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x20
+	::UnityEngine::GameObject* Field_2_7; // 0x18
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x20
 	::Class_2_A8F5ABF31E066ED4* Field_2_0; // 0x28
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
-	::UnityEngine::GameObject* Field_2_7; // 0x38
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
+	::Class_2_A8F5ABF31E066ED4* Field_2_4; // 0x38
+	::UnityEngine::GameObject* Field_2_6; // 0x40
 	::Class_2_A8F5ABF31E066ED4* Field_2_5; // 0x48
-	::UnityEngine::GameObject* Field_2_6; // 0x50
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x50
 
 	::System::Void _ctor()
 	{

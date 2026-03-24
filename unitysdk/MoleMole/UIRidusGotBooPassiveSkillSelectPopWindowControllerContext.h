@@ -2,20 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_2_208CC9941471731A_148;
+class Class_2_208CC9941471731A_49;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x750C640)
+#define MOLEMOLE_UIRIDUSGOTBOOPASSIVESKILLSELECTPOPWINDOWCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAE40BD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRidusGotBooPassiveSkillSelectPopWindowControllerContext_TypeDefinitionIndex = 60349;
+	inline static constexpr unsigned int UIRidusGotBooPassiveSkillSelectPopWindowControllerContext_TypeDefinitionIndex = 58677;
 
 	class UIRidusGotBooPassiveSkillSelectPopWindowControllerContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_148*>* AllCfgs; // 0x28
-		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_148*>* InitCfgs; // 0x30
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_49*>* AllCfgs; // 0x28
+		::System::Collections::Generic::List_1<::Class_2_208CC9941471731A_49*>* InitCfgs; // 0x30
 
 		::System::Void _ctor()
 		{

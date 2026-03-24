@@ -2,17 +2,17 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIVHSSTOREPROMOTERSELECTPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCA85440)
+#define MOLEMOLE_UIVHSSTOREPROMOTERSELECTPOPWINDOWCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x790BC00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSStorePromoterSelectPopWindowController_Context_TypeDefinitionIndex = 43640;
+	inline static constexpr unsigned int UIVHSStorePromoterSelectPopWindowController_Context_TypeDefinitionIndex = 69282;
 
 	class UIVHSStorePromoterSelectPopWindowController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::UInt32 initSelect; // 0x28
-		::System::Boolean isReadonly; // 0x2C
+		::System::Boolean isReadonly; // 0x28
+		::System::UInt32 initSelect; // 0x2C
 
 		::System::Void _ctor(::System::UInt32 initSelect, ::System::Boolean isReadonly)
 		{

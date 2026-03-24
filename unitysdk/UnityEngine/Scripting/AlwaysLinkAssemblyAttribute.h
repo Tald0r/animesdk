@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define UNITYENGINE_SCRIPTING_ALWAYSLINKASSEMBLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x19D00C60)
+#define UNITYENGINE_SCRIPTING_ALWAYSLINKASSEMBLYATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A28BE10)
 
 namespace UnityEngine::Scripting
 {
-	inline static constexpr unsigned int AlwaysLinkAssemblyAttribute_TypeDefinitionIndex = 5502;
+	inline static constexpr unsigned int AlwaysLinkAssemblyAttribute_TypeDefinitionIndex = 5505;
 
 	class AlwaysLinkAssemblyAttribute : public ::System::Attribute
 	{

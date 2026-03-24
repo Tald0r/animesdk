@@ -7,14 +7,14 @@ namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define LITJSON_EXPORTERFUNC_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1A482A40)
-#define LITJSON_EXPORTERFUNC_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1A482A80)
-#define LITJSON_EXPORTERFUNC_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A4824C0)
-#define LITJSON_EXPORTERFUNC__CTOR_OFFSET UNITYSDK_OFFSET(0x1A4824B0)
+#define LITJSON_EXPORTERFUNC_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1AA2FD50)
+#define LITJSON_EXPORTERFUNC_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1AA2FD90)
+#define LITJSON_EXPORTERFUNC_INVOKE_OFFSET UNITYSDK_OFFSET(0x1AA2F7D0)
+#define LITJSON_EXPORTERFUNC__CTOR_OFFSET UNITYSDK_OFFSET(0x1AA2F7B0)
 
 namespace LitJson
 {
-	inline static constexpr unsigned int ExporterFunc_TypeDefinitionIndex = 8093;
+	inline static constexpr unsigned int ExporterFunc_TypeDefinitionIndex = 8294;
 
 	class ExporterFunc : public ::System::MulticastDelegate
 	{

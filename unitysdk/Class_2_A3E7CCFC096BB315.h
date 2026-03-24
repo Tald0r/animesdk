@@ -9,27 +9,27 @@ namespace MoleMole { class UIControlCollection; }
 namespace MoleMole { class UIFishingContestLevelWidgetController; }
 namespace UnityEngine { class GameObject; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_A3E7CCFC096BB315_METHOD_2_8D764EEFCE1E3A5F_OFFSET UNITYSDK_OFFSET(0xD776070)
-#define CLASS_2_A3E7CCFC096BB315_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xD7762E0)
-#define CLASS_2_A3E7CCFC096BB315_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xD7763D0)
-#define CLASS_2_A3E7CCFC096BB315__CTOR_OFFSET UNITYSDK_OFFSET(0xD7763C0)
+#define CLASS_2_A3E7CCFC096BB315_METHOD_2_8D764EEFCE1E3A5F_OFFSET UNITYSDK_OFFSET(0xCE68E30)
+#define CLASS_2_A3E7CCFC096BB315_METHOD_2_9DE87B16AD0A605E_OFFSET UNITYSDK_OFFSET(0xCE690A0)
+#define CLASS_2_A3E7CCFC096BB315_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xCE69190)
+#define CLASS_2_A3E7CCFC096BB315__CTOR_OFFSET UNITYSDK_OFFSET(0xCE69180)
 
-inline static constexpr unsigned int Class_2_A3E7CCFC096BB315_TypeDefinitionIndex = 52415;
+inline static constexpr unsigned int Class_2_A3E7CCFC096BB315_TypeDefinitionIndex = 76522;
 
 class Class_2_A3E7CCFC096BB315 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x18
+	::UnityEngine::GameObject* Field_2_8; // 0x18
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x20
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIFishingContestLevelWidgetController*>* Field_2_0; // 0x28
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x28
 	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x30
-	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x38
-	::UnityEngine::GameObject* Field_2_6; // 0x40
-	::UnityEngine::GameObject* Field_2_8; // 0x48
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x50
-	::Class_2_60DDD9C206686F44* Field_2_4; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0x38
+	::Class_2_60DDD9C206686F44* Field_2_4; // 0x40
+	::Class_3_647A206587033F4E<::MoleMole::UIFishingContestLevelWidgetController*>* Field_2_0; // 0x48
+	::UnityEngine::GameObject* Field_2_6; // 0x50
+	::Class_2_A8F5ABF31E066ED4* Field_2_3; // 0x58
 
 	::System::Void _ctor()
 	{

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode_2.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETREVIVEHPRATIO_INVOKE_OFFSET UNITYSDK_OFFSET(0x6AF5720)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETREVIVEHPRATIO__CTOR_OFFSET UNITYSDK_OFFSET(0x6AF58C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETREVIVEHPRATIO_INVOKE_OFFSET UNITYSDK_OFFSET(0xB5E4900)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SETREVIVEHPRATIO__CTOR_OFFSET UNITYSDK_OFFSET(0xB5E4AA0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_SetReviveHpRatio_TypeDefinitionIndex = 45526;
+	inline static constexpr unsigned int LD_SetReviveHpRatio_TypeDefinitionIndex = 54482;
 
 	class LD_SetReviveHpRatio : public ::FlowCanvas::Nodes::CallableActionNode_2<::System::Single, ::System::Int32>
 	{

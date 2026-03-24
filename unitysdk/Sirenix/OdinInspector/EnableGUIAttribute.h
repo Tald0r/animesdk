@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_ODININSPECTOR_ENABLEGUIATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB08350)
+#define SIRENIX_ODININSPECTOR_ENABLEGUIATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B1143D0)
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int EnableGUIAttribute_TypeDefinitionIndex = 7156;
+	inline static constexpr unsigned int EnableGUIAttribute_TypeDefinitionIndex = 7160;
 
 	class EnableGUIAttribute : public ::System::Attribute
 	{

@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int CharacterAimAutoTargeting_TypeDefinitionIndex = 56052;
+	inline static constexpr unsigned int CharacterAimAutoTargeting_TypeDefinitionIndex = 55832;
 
 	struct alignas(8) CharacterAimAutoTargeting
 	{

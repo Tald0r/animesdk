@@ -9,22 +9,22 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x9EC5B10)
-#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x9EC5C80)
-#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK__CTOR_OFFSET UNITYSDK_OFFSET(0x9EC5FD0)
-#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK__ONREGISTERPARAM_B__2_0_OFFSET UNITYSDK_OFFSET(0x9EC6110)
-#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK___BASE_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x9EC6450)
-#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x9EC64C0)
+#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x63B5D70)
+#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x63B5EE0)
+#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK__CTOR_OFFSET UNITYSDK_OFFSET(0x63B6230)
+#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK__ONREGISTERPARAM_B__2_0_OFFSET UNITYSDK_OFFSET(0x63B6360)
+#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK___BASE_ONREGISTERPARAM_OFFSET UNITYSDK_OFFSET(0x63B66A0)
+#define NODEGRAPH_MAINCITY_TRIGGERGROUPTASK___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x63B6710)
 
 namespace NodeGraph::MainCity
 {
-	inline static constexpr unsigned int TriggerGroupTask_TypeDefinitionIndex = 68812;
+	inline static constexpr unsigned int TriggerGroupTask_TypeDefinitionIndex = 39531;
 
 	class TriggerGroupTask : public ::NodeGraph::GraphTask
 	{
 	public:
-		::System::Collections::Generic::List_1<::System::Int32>* triggerNodeIds; // 0x20
-		::System::Collections::Generic::List_1<::NodeGraph::MainCity::Trigger*>* _triggers; // 0x28
+		::System::Collections::Generic::List_1<::NodeGraph::MainCity::Trigger*>* _triggers; // 0x20
+		::System::Collections::Generic::List_1<::System::Int32>* triggerNodeIds; // 0x28
 
 		::System::Void _ctor()
 		{

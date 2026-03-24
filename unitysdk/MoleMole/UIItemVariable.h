@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MOLEMOLE_UIITEMVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0xB22A1E0)
+#define MOLEMOLE_UIITEMVARIABLE__CTOR_OFFSET UNITYSDK_OFFSET(0x745F0F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIItemVariable_TypeDefinitionIndex = 40266;
+	inline static constexpr unsigned int UIItemVariable_TypeDefinitionIndex = 73293;
 
 	class UIItemVariable : public ::UnityEngine::MonoBehaviour
 	{

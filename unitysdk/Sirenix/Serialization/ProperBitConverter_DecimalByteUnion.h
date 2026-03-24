@@ -5,7 +5,7 @@
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int ProperBitConverter_DecimalByteUnion_TypeDefinitionIndex = 7387;
+	inline static constexpr unsigned int ProperBitConverter_DecimalByteUnion_TypeDefinitionIndex = 7392;
 
 	struct alignas(4) ProperBitConverter_DecimalByteUnion
 	{

@@ -8,19 +8,19 @@ namespace BehaviorDesigner::Runtime { class SharedString; }
 namespace MoleMole { class SharedGameEntity; }
 namespace MoleMole { class SharedStrList; }
 
-#define MOLEMOLE_FINDANCHOR_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xC2090A0)
-#define MOLEMOLE_FINDANCHOR__CTOR_OFFSET UNITYSDK_OFFSET(0xC2099C0)
-#define MOLEMOLE_FINDANCHOR___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xC209A00)
+#define MOLEMOLE_FINDANCHOR_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB81F9B0)
+#define MOLEMOLE_FINDANCHOR__CTOR_OFFSET UNITYSDK_OFFSET(0xB8202C0)
+#define MOLEMOLE_FINDANCHOR___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xB820300)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int FindAnchor_TypeDefinitionIndex = 72030;
+	inline static constexpr unsigned int FindAnchor_TypeDefinitionIndex = 60346;
 
 	class FindAnchor : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x58
-		::MoleMole::SharedStrList* OutList; // 0x60
+		::MoleMole::SharedStrList* OutList; // 0x58
+		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x60
 		::BehaviorDesigner::Runtime::SharedString* prefix; // 0x68
 		::BehaviorDesigner::Runtime::SharedFloat* radius; // 0x70
 

@@ -3,7 +3,7 @@
 
 namespace Coffee::UISoftMask
 {
-	inline static constexpr unsigned int SoftMask_DownSamplingRate_TypeDefinitionIndex = 81159;
+	inline static constexpr unsigned int SoftMask_DownSamplingRate_TypeDefinitionIndex = 83200;
 
 	enum class SoftMask_DownSamplingRate : ::System::Int32
 	{

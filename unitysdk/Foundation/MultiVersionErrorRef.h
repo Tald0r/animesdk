@@ -5,11 +5,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define FOUNDATION_MULTIVERSIONERRORREF__CTOR_OFFSET UNITYSDK_OFFSET(0x19F0BD10)
+#define FOUNDATION_MULTIVERSIONERRORREF__CTOR_OFFSET UNITYSDK_OFFSET(0x1A677D30)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int MultiVersionErrorRef_TypeDefinitionIndex = 7801;
+	inline static constexpr unsigned int MultiVersionErrorRef_TypeDefinitionIndex = 8191;
 
 	class MultiVersionErrorRef : public ::System::Object
 	{

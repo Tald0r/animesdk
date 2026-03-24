@@ -6,12 +6,12 @@
 namespace MoleMole { class UIBabelTowerInLevelPauseBuffInfoWidgetController___c__DisplayClass3_0; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIBABELTOWERINLEVELPAUSEBUFFINFOWIDGETCONTROLLER___C__DISPLAYCLASS3_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC2732B0)
-#define MOLEMOLE_UIBABELTOWERINLEVELPAUSEBUFFINFOWIDGETCONTROLLER___C__DISPLAYCLASS3_1__REFRESHWIDGET_B__3_OFFSET UNITYSDK_OFFSET(0xC2732C0)
+#define MOLEMOLE_UIBABELTOWERINLEVELPAUSEBUFFINFOWIDGETCONTROLLER___C__DISPLAYCLASS3_1__CTOR_OFFSET UNITYSDK_OFFSET(0xC2A4900)
+#define MOLEMOLE_UIBABELTOWERINLEVELPAUSEBUFFINFOWIDGETCONTROLLER___C__DISPLAYCLASS3_1__REFRESHWIDGET_B__3_OFFSET UNITYSDK_OFFSET(0xC2A4910)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBabelTowerInLevelPauseBuffInfoWidgetController___c__DisplayClass3_1_TypeDefinitionIndex = 65248;
+	inline static constexpr unsigned int UIBabelTowerInLevelPauseBuffInfoWidgetController___c__DisplayClass3_1_TypeDefinitionIndex = 77307;
 
 	class UIBabelTowerInLevelPauseBuffInfoWidgetController___c__DisplayClass3_1 : public ::System::Object
 	{

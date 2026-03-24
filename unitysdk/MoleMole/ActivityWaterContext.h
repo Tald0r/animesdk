@@ -4,11 +4,11 @@
 
 class Class_1_D375C91CCE5D3999;
 
-#define MOLEMOLE_ACTIVITYWATERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x6D31BA0)
+#define MOLEMOLE_ACTIVITYWATERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBAD3770)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ActivityWaterContext_TypeDefinitionIndex = 72960;
+	inline static constexpr unsigned int ActivityWaterContext_TypeDefinitionIndex = 39920;
 
 	class ActivityWaterContext : public ::MoleMole::UIControllerContextBase
 	{

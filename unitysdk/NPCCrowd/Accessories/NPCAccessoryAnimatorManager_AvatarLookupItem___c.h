@@ -4,24 +4,24 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYANIMATORMANAGER_AVATARLOOKUPITEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x6A028D0)
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYANIMATORMANAGER_AVATARLOOKUPITEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x6A02910)
-#define NPCCROWD_ACCESSORIES_NPCACCESSORYANIMATORMANAGER_AVATARLOOKUPITEM___C__GETROOTINDEX_B__8_0_OFFSET UNITYSDK_OFFSET(0x6A02920)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYANIMATORMANAGER_AVATARLOOKUPITEM___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x63FE6B0)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYANIMATORMANAGER_AVATARLOOKUPITEM___C__CTOR_OFFSET UNITYSDK_OFFSET(0x63FE6F0)
+#define NPCCROWD_ACCESSORIES_NPCACCESSORYANIMATORMANAGER_AVATARLOOKUPITEM___C__GETROOTINDEX_B__8_0_OFFSET UNITYSDK_OFFSET(0x63FE700)
 
 namespace NPCCrowd::Accessories
 {
-	inline static constexpr unsigned int NPCAccessoryAnimatorManager_AvatarLookupItem___c_TypeDefinitionIndex = 75529;
+	inline static constexpr unsigned int NPCAccessoryAnimatorManager_AvatarLookupItem___c_TypeDefinitionIndex = 40919;
 
 	class NPCAccessoryAnimatorManager_AvatarLookupItem___c : public ::System::Object
 	{
 	public:
 		static ::System::Func_2<::System::Int32, ::System::Boolean>** StaticGet___9__8_0()
 		{
-			return (::System::Func_2<::System::Int32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAnimatorManager_AvatarLookupItem___c_TypeDefinitionIndex)->GetStaticField(0x32D80);
+			return (::System::Func_2<::System::Int32, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAnimatorManager_AvatarLookupItem___c_TypeDefinitionIndex)->GetStaticField(0x34DB0);
 		}
 		static ::NPCCrowd::Accessories::NPCAccessoryAnimatorManager_AvatarLookupItem___c** StaticGet___9()
 		{
-			return (::NPCCrowd::Accessories::NPCAccessoryAnimatorManager_AvatarLookupItem___c**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAnimatorManager_AvatarLookupItem___c_TypeDefinitionIndex)->GetStaticField(0x32D88);
+			return (::NPCCrowd::Accessories::NPCAccessoryAnimatorManager_AvatarLookupItem___c**)Il2CppClass::FromTypeDefinitionIndex(NPCAccessoryAnimatorManager_AvatarLookupItem___c_TypeDefinitionIndex)->GetStaticField(0x34DB8);
 		}
 
 		static ::System::Void _cctor()

@@ -8,21 +8,21 @@ namespace System { class String; }
 namespace UnityEngine { class Animator; }
 namespace UnityEngine { class GameObject; }
 
-#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19E0CF60)
-#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_ONANIMATORIK_OFFSET UNITYSDK_OFFSET(0x19E0D320)
-#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19E0D040)
-#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_ONSTOP_OFFSET UNITYSDK_OFFSET(0x19E0D1B0)
-#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT__CTOR_OFFSET UNITYSDK_OFFSET(0x19E0D470)
+#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A3FB7F0)
+#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_ONANIMATORIK_OFFSET UNITYSDK_OFFSET(0x1A3FBBB0)
+#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A3FB8D0)
+#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT_ONSTOP_OFFSET UNITYSDK_OFFSET(0x1A3FBA40)
+#define NODECANVAS_TASKS_ACTIONS_MECANIMSETLOOKAT__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3FBD00)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int MecanimSetLookAt_TypeDefinitionIndex = 26864;
+	inline static constexpr unsigned int MecanimSetLookAt_TypeDefinitionIndex = 27244;
 
 	class MecanimSetLookAt : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Animator*>
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* targetWeight; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* targetPosition; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* targetPosition; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* targetWeight; // 0x68
 
 		::System::Void _ctor()
 		{

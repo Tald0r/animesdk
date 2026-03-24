@@ -7,18 +7,18 @@ class MonoUITableScrollV2;
 namespace MoleMole { class MonoGamepadModule; }
 namespace MoleMole { class UIControlCollection; }
 
-#define CLASS_2_FF8677F800509BFA_1_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0xAC7D2A0)
-#define CLASS_2_FF8677F800509BFA_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xAC7D370)
-#define CLASS_2_FF8677F800509BFA_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAC7D360)
+#define CLASS_2_FF8677F800509BFA_1_METHOD_2_445108444CB6DC1F_OFFSET UNITYSDK_OFFSET(0x6AE3800)
+#define CLASS_2_FF8677F800509BFA_1_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x6AE38D0)
+#define CLASS_2_FF8677F800509BFA_1__CTOR_OFFSET UNITYSDK_OFFSET(0x6AE38C0)
 
-inline static constexpr unsigned int Class_2_FF8677F800509BFA_1_TypeDefinitionIndex = 78331;
+inline static constexpr unsigned int Class_2_FF8677F800509BFA_1_TypeDefinitionIndex = 73018;
 
 class Class_2_FF8677F800509BFA_1 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_1; // 0x18
-	::MoleMole::MonoGamepadModule* Field_2_2; // 0x20
-	::MonoUITableScrollV2* Field_2_0; // 0x28
+	::MoleMole::MonoGamepadModule* Field_2_2; // 0x18
+	::MonoUITableScrollV2* Field_2_0; // 0x20
+	::MonoUITableScrollV2* Field_2_1; // 0x28
 
 	::System::Void _ctor()
 	{

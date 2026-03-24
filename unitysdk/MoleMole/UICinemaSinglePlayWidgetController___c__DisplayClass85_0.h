@@ -5,12 +5,12 @@
 namespace MoleMole { class UICinemaSinglePlayWidgetController; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS85_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCC550F0)
-#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS85_0__SHOWCOMBOUI_INNER_B__0_OFFSET UNITYSDK_OFFSET(0xCC55100)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS85_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD9B53D0)
+#define MOLEMOLE_UICINEMASINGLEPLAYWIDGETCONTROLLER___C__DISPLAYCLASS85_0__SHOWCOMBOUI_INNER_B__0_OFFSET UNITYSDK_OFFSET(0xD9B53E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass85_0_TypeDefinitionIndex = 64969;
+	inline static constexpr unsigned int UICinemaSinglePlayWidgetController___c__DisplayClass85_0_TypeDefinitionIndex = 38063;
 
 	class UICinemaSinglePlayWidgetController___c__DisplayClass85_0 : public ::System::Object
 	{

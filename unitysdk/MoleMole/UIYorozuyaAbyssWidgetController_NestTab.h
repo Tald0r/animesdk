@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaAbyssWidgetController_NestTab_TypeDefinitionIndex = 76414;
+	inline static constexpr unsigned int UIYorozuyaAbyssWidgetController_NestTab_TypeDefinitionIndex = 70888;
 
 	enum class UIYorozuyaAbyssWidgetController_NestTab : ::System::Int32
 	{

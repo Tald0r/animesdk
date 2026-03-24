@@ -6,13 +6,13 @@ namespace System { class String; }
 namespace UnityEngine::NAPRenderPipeline0 { template <typename T> class ObjectPool_1; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_COMMANDBUFFERPOOL_GET_OFFSET UNITYSDK_OFFSET(0x19E16390)
-#define UNITYENGINE_NAPRENDERPIPELINE0_COMMANDBUFFERPOOL_RELEASE_OFFSET UNITYSDK_OFFSET(0x19E16410)
-#define UNITYENGINE_NAPRENDERPIPELINE0_COMMANDBUFFERPOOL__CCTOR_OFFSET UNITYSDK_OFFSET(0x19E16620)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COMMANDBUFFERPOOL_GET_OFFSET UNITYSDK_OFFSET(0x1A3E5C30)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COMMANDBUFFERPOOL_RELEASE_OFFSET UNITYSDK_OFFSET(0x1A3E5CB0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_COMMANDBUFFERPOOL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A3E5EC0)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int CommandBufferPool_TypeDefinitionIndex = 6018;
+	inline static constexpr unsigned int CommandBufferPool_TypeDefinitionIndex = 6021;
 
 	class CommandBufferPool : public ::System::Object
 	{
@@ -23,7 +23,7 @@ namespace UnityEngine::NAPRenderPipeline0
 		}
 		static ::System::Int32* StaticGet_MaxPoolSize()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CommandBufferPool_TypeDefinitionIndex)->GetStaticField(0x2370);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(CommandBufferPool_TypeDefinitionIndex)->GetStaticField(0x2360);
 		}
 
 		static ::System::Void _cctor()

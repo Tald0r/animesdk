@@ -8,13 +8,13 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOFC_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6E215B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOFC__CTOR_OFFSET UNITYSDK_OFFSET(0x6E216C0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOFC__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x6E216E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOFC_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x6E8BC60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOFC__CTOR_OFFSET UNITYSDK_OFFSET(0x6E8BD70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_SENDEVENTTOFC__REGISTERPORTS_B__3_0_OFFSET UNITYSDK_OFFSET(0x6E8BD90)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_SendEventToFC_TypeDefinitionIndex = 54832;
+	inline static constexpr unsigned int LD_SendEventToFC_TypeDefinitionIndex = 64806;
 
 	class LD_SendEventToFC : public ::FlowCanvas::Nodes::FlowControlNode
 	{

@@ -6,12 +6,12 @@ namespace MiHoYo::SDK { class NetworkResponseModel; }
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MIHOYO_SDK_PS_BINDINGMANAGERPSCN___C__DISPLAYCLASS13_0__CREATETHIRDPARTYBINDMOBILEACTIONTICKET_B__0_OFFSET UNITYSDK_OFFSET(0x18282990)
-#define MIHOYO_SDK_PS_BINDINGMANAGERPSCN___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18282980)
+#define MIHOYO_SDK_PS_BINDINGMANAGERPSCN___C__DISPLAYCLASS13_0__CREATETHIRDPARTYBINDMOBILEACTIONTICKET_B__0_OFFSET UNITYSDK_OFFSET(0x18701C60)
+#define MIHOYO_SDK_PS_BINDINGMANAGERPSCN___C__DISPLAYCLASS13_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18701C50)
 
 namespace MiHoYo::SDK::PS
 {
-	inline static constexpr unsigned int BindingManagerPSCN___c__DisplayClass13_0_TypeDefinitionIndex = 18533;
+	inline static constexpr unsigned int BindingManagerPSCN___c__DisplayClass13_0_TypeDefinitionIndex = 19132;
 
 	class BindingManagerPSCN___c__DisplayClass13_0 : public ::System::Object
 	{

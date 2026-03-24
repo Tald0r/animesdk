@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int PBDMassUseType_TypeDefinitionIndex = 23644;
+	inline static constexpr unsigned int PBDMassUseType_TypeDefinitionIndex = 24327;
 
 	enum class PBDMassUseType : ::System::Int32
 	{

@@ -7,13 +7,13 @@ namespace MoleMole::Config { class AnimatorStateTimeSegment; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_MONOEFFECTPLUGINDESTROY_GET_ANIMATORLAYERSTATEDICT_OFFSET UNITYSDK_OFFSET(0x9923BA0)
-#define MOLEMOLE_MONOEFFECTPLUGINDESTROY_ISVALID_OFFSET UNITYSDK_OFFSET(0x9923C10)
-#define MOLEMOLE_MONOEFFECTPLUGINDESTROY__CTOR_OFFSET UNITYSDK_OFFSET(0x9923D80)
+#define MOLEMOLE_MONOEFFECTPLUGINDESTROY_GET_ANIMATORLAYERSTATEDICT_OFFSET UNITYSDK_OFFSET(0xA51F8F0)
+#define MOLEMOLE_MONOEFFECTPLUGINDESTROY_ISVALID_OFFSET UNITYSDK_OFFSET(0xA51F960)
+#define MOLEMOLE_MONOEFFECTPLUGINDESTROY__CTOR_OFFSET UNITYSDK_OFFSET(0xA51FAD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginDestroy_TypeDefinitionIndex = 52978;
+	inline static constexpr unsigned int MonoEffectPluginDestroy_TypeDefinitionIndex = 56990;
 
 	class MonoEffectPluginDestroy : public ::MoleMole::MonoEffectSerializedPluginBase
 	{

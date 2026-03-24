@@ -12,17 +12,17 @@ namespace MoleMole { class CustomCollisionConfigData; }
 namespace MoleMole::Cameras { class CameraDataAccessor; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_93FB50D4049727A0_METHOD_2_634F01115BE25546_OFFSET UNITYSDK_OFFSET(0x87E4AD0)
-#define CLASS_2_93FB50D4049727A0__CTOR_OFFSET UNITYSDK_OFFSET(0x87E48E0)
+#define CLASS_2_93FB50D4049727A0_METHOD_2_634F01115BE25546_OFFSET UNITYSDK_OFFSET(0x845B750)
+#define CLASS_2_93FB50D4049727A0__CTOR_OFFSET UNITYSDK_OFFSET(0x845AC30)
 
-inline static constexpr unsigned int Class_2_93FB50D4049727A0_TypeDefinitionIndex = 59369;
+inline static constexpr unsigned int Class_2_93FB50D4049727A0_TypeDefinitionIndex = 46673;
 
 class Class_2_93FB50D4049727A0 : public ::Class_1_53A2E307D92A577A
 {
 public:
-	::System::Collections::Generic::List_1<::UnityEngine::RaycastHit>* Field_2_0; // 0x28
+	::Il2CppArray<::UnityEngine::Ray>* Field_2_1; // 0x28
 	::Class_1_8B714AED6096E68C* Field_2_2; // 0x30
-	::Il2CppArray<::UnityEngine::Ray>* Field_2_1; // 0x38
+	::System::Collections::Generic::List_1<::UnityEngine::RaycastHit>* Field_2_0; // 0x38
 
 	::System::Void _ctor(::Class_1_494697B4AB731572* a1, ::MoleMole::CustomCollisionConfigData* a2, ::MoleMole::Cameras::CameraDataAccessor* a3)
 	{

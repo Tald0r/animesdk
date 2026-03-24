@@ -8,7 +8,7 @@ namespace UnityEngine::Events { template <typename T> class UnityAction_1; }
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ObjectPool_1_TypeDefinitionIndex = 5955;
+	inline static constexpr unsigned int ObjectPool_1_TypeDefinitionIndex = 5958;
 
 	template <typename T>
 	class ObjectPool_1 : public ::System::Object

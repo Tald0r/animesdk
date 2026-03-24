@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIMECHBOOREFORMTASKROWWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA82F9E0)
+#define MOLEMOLE_UIMECHBOOREFORMTASKROWWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8F424C0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMechBooReformTaskRowWidgetControllerContext_TypeDefinitionIndex = 56422;
+	inline static constexpr unsigned int UIMechBooReformTaskRowWidgetControllerContext_TypeDefinitionIndex = 53111;
 
 	class UIMechBooReformTaskRowWidgetControllerContext : public ::MoleMole::UIControllerContextBase
 	{

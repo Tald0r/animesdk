@@ -3,11 +3,11 @@
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/EnumVolumeParameter_1.h"
 #include "unitysdk/UnityEngine/Rendering/Universal/SsrQuality.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_SSRQUALITYPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x17969910)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SSRQUALITYPARAMETER__CTOR_OFFSET UNITYSDK_OFFSET(0x17791950)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int SsrQualityParameter_TypeDefinitionIndex = 28699;
+	inline static constexpr unsigned int SsrQualityParameter_TypeDefinitionIndex = 29642;
 
 	class SsrQualityParameter : public ::UnityEngine::NAPRenderPipeline0::EnumVolumeParameter_1<::UnityEngine::Rendering::Universal::SsrQuality>
 	{

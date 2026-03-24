@@ -4,7 +4,7 @@
 
 namespace MoleMole::Config { class CharacterAimModeConstant; }
 
-inline static constexpr unsigned int Class_3_0AECE78A0888504E_Struct_2_B020A6AF6EB8EC9A_TypeDefinitionIndex = 77686;
+inline static constexpr unsigned int Class_3_0AECE78A0888504E_Struct_2_B020A6AF6EB8EC9A_TypeDefinitionIndex = 65739;
 
 struct alignas(8) Class_3_0AECE78A0888504E_Struct_2_B020A6AF6EB8EC9A
 {

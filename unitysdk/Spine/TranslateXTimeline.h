@@ -8,13 +8,13 @@ namespace Spine { class Event; }
 namespace Spine { class Skeleton; }
 namespace Spine { template <typename T> class ExposedList_1; }
 
-#define SPINE_TRANSLATEXTIMELINE_APPLY_OFFSET UNITYSDK_OFFSET(0x1B091450)
-#define SPINE_TRANSLATEXTIMELINE_GET_BONEINDEX_OFFSET UNITYSDK_OFFSET(0x1B091440)
-#define SPINE_TRANSLATEXTIMELINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B0913C0)
+#define SPINE_TRANSLATEXTIMELINE_APPLY_OFFSET UNITYSDK_OFFSET(0x1B69FC30)
+#define SPINE_TRANSLATEXTIMELINE_GET_BONEINDEX_OFFSET UNITYSDK_OFFSET(0x1B69FC20)
+#define SPINE_TRANSLATEXTIMELINE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B69FBA0)
 
 namespace Spine
 {
-	inline static constexpr unsigned int TranslateXTimeline_TypeDefinitionIndex = 29777;
+	inline static constexpr unsigned int TranslateXTimeline_TypeDefinitionIndex = 30730;
 
 	class TranslateXTimeline : public ::Spine::CurveTimeline1
 	{

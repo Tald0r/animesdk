@@ -5,18 +5,18 @@
 namespace MoleMole { class UIHollowMainPageController; }
 namespace MoleMole { class UIHollowMainPageController_AddHollowPopWindowEvent; }
 
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS220_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8C342D0)
-#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS220_0__ONADDHOLLOWPOPWINDOW_B__0_OFFSET UNITYSDK_OFFSET(0x8C342E0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS220_0__CTOR_OFFSET UNITYSDK_OFFSET(0x6C8E4D0)
+#define MOLEMOLE_UIHOLLOWMAINPAGECONTROLLER___C__DISPLAYCLASS220_0__ONADDHOLLOWPOPWINDOW_B__0_OFFSET UNITYSDK_OFFSET(0x6C8E4E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass220_0_TypeDefinitionIndex = 52578;
+	inline static constexpr unsigned int UIHollowMainPageController___c__DisplayClass220_0_TypeDefinitionIndex = 49563;
 
 	class UIHollowMainPageController___c__DisplayClass220_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIHollowMainPageController* __4__this; // 0x10
-		::MoleMole::UIHollowMainPageController_AddHollowPopWindowEvent* hollowPopWindowEvent; // 0x18
+		::MoleMole::UIHollowMainPageController_AddHollowPopWindowEvent* hollowPopWindowEvent; // 0x10
+		::MoleMole::UIHollowMainPageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

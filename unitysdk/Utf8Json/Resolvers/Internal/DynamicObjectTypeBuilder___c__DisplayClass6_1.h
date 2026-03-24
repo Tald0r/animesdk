@@ -6,19 +6,19 @@ namespace System::Reflection::Emit { class ILGenerator; }
 namespace Utf8Json::Internal::Emit { class MetaMember; }
 namespace Utf8Json::Resolvers::Internal { class DynamicObjectTypeBuilder___c__DisplayClass6_0; }
 
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_1__BUILDTYPE_B__1_OFFSET UNITYSDK_OFFSET(0x1A93FA60)
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_1__BUILDTYPE_B__2_OFFSET UNITYSDK_OFFSET(0x1A93FB90)
-#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1A938910)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_1__BUILDTYPE_B__1_OFFSET UNITYSDK_OFFSET(0x1AF206A0)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_1__BUILDTYPE_B__2_OFFSET UNITYSDK_OFFSET(0x1AF207D0)
+#define UTF8JSON_RESOLVERS_INTERNAL_DYNAMICOBJECTTYPEBUILDER___C__DISPLAYCLASS6_1__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF19570)
 
 namespace Utf8Json::Resolvers::Internal
 {
-	inline static constexpr unsigned int DynamicObjectTypeBuilder___c__DisplayClass6_1_TypeDefinitionIndex = 81810;
+	inline static constexpr unsigned int DynamicObjectTypeBuilder___c__DisplayClass6_1_TypeDefinitionIndex = 83851;
 
 	class DynamicObjectTypeBuilder___c__DisplayClass6_1 : public ::System::Object
 	{
 	public:
-		::Utf8Json::Resolvers::Internal::DynamicObjectTypeBuilder___c__DisplayClass6_0* CS___8__locals1; // 0x10
-		::System::Reflection::Emit::ILGenerator* il; // 0x18
+		::System::Reflection::Emit::ILGenerator* il; // 0x10
+		::Utf8Json::Resolvers::Internal::DynamicObjectTypeBuilder___c__DisplayClass6_0* CS___8__locals1; // 0x18
 
 		::System::Void _ctor()
 		{

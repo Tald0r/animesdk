@@ -3,17 +3,17 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int CompareConditionType_TypeDefinitionIndex = 74803;
+	inline static constexpr unsigned int CompareConditionType_TypeDefinitionIndex = 70873;
 
 	enum class CompareConditionType : ::System::Byte
 	{
+		GreaterEquals = 0x9,
 		If = 0x1,
-		Equals = 0x6,
 		IfNot = 0x2,
+		Equals = 0x6,
 		LessEquals = 0xA,
+		Greater = 0x3,
 		NotEqual = 0x7,
 		Less = 0x4,
-		Greater = 0x3,
-		GreaterEquals = 0x9,
 	};
 }

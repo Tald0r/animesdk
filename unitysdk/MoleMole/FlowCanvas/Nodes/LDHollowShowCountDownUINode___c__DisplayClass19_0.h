@@ -5,18 +5,18 @@
 
 namespace MoleMole::FlowCanvas::Nodes { class LDHollowShowCountDownUINode; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHOLLOWSHOWCOUNTDOWNUINODE___C__DISPLAYCLASS19_0__BEGIN_B__0_OFFSET UNITYSDK_OFFSET(0xC9BDB80)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHOLLOWSHOWCOUNTDOWNUINODE___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC9BDB70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHOLLOWSHOWCOUNTDOWNUINODE___C__DISPLAYCLASS19_0__BEGIN_B__0_OFFSET UNITYSDK_OFFSET(0xBA02570)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHOLLOWSHOWCOUNTDOWNUINODE___C__DISPLAYCLASS19_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBA02560)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDHollowShowCountDownUINode___c__DisplayClass19_0_TypeDefinitionIndex = 45195;
+	inline static constexpr unsigned int LDHollowShowCountDownUINode___c__DisplayClass19_0_TypeDefinitionIndex = 53476;
 
 	class LDHollowShowCountDownUINode___c__DisplayClass19_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::FlowCanvas::Nodes::LDHollowShowCountDownUINode* __4__this; // 0x10
-		::FlowCanvas::Flow f; // 0x18
+		::FlowCanvas::Flow f; // 0x10
+		::MoleMole::FlowCanvas::Nodes::LDHollowShowCountDownUINode* __4__this; // 0x38
 
 		::System::Void _ctor()
 		{

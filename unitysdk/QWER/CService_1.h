@@ -7,7 +7,7 @@ namespace System { template <typename T1, typename T2> class Func_2; }
 
 namespace QWER
 {
-	inline static constexpr unsigned int CService_1_TypeDefinitionIndex = 82093;
+	inline static constexpr unsigned int CService_1_TypeDefinitionIndex = 84134;
 
 	template <typename T>
 	class CService_1 : public ::QWER::IService

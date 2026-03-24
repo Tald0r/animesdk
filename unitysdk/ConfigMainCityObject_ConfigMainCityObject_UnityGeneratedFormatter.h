@@ -13,24 +13,24 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7B17A20)
-#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7B17A30)
-#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7B17C30)
-#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7B17DF0)
-#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7B17DB0)
+#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x6456CF0)
+#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x6456D00)
+#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x6456F00)
+#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x64570C0)
+#define CONFIGMAINCITYOBJECT_CONFIGMAINCITYOBJECT_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x6457080)
 
-inline static constexpr unsigned int ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter_TypeDefinitionIndex = 64235;
+inline static constexpr unsigned int ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter_TypeDefinitionIndex = 58061;
 
 class ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::ConfigMainCityObject*>
 {
 public:
-	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::ClientSceneObjectStateLooperConfigBase*>*>** StaticGet_CachedSerializer1()
-	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::ClientSceneObjectStateLooperConfigBase*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3CAC0);
-	}
 	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MainCityObjectState_ScriptConfig*>*>** StaticGet_CachedSerializer0()
 	{
-		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MainCityObjectState_ScriptConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3CAC8);
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MainCityObjectState_ScriptConfig*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3F930);
+	}
+	static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::ClientSceneObjectStateLooperConfigBase*>*>** StaticGet_CachedSerializer1()
+	{
+		return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::List_1<::MoleMole::ClientSceneObjectStateLooperConfigBase*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigMainCityObject_ConfigMainCityObject_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3F938);
 	}
 
 	::System::Void _ctor()

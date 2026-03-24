@@ -6,29 +6,29 @@
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD8F370)
-#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD8F3B0)
-#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__DESERIALIZE_B__8_0_OFFSET UNITYSDK_OFFSET(0x1AD8F3C0)
-#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__SERIALIZE_B__9_0_OFFSET UNITYSDK_OFFSET(0x1AD8F5A0)
+#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1B3978B0)
+#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1B3978F0)
+#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__DESERIALIZE_B__8_0_OFFSET UNITYSDK_OFFSET(0x1B397900)
+#define FOUNDATION_UNREAL_SERIALIZABLEGAMEPLAYTAGQUERY___C__SERIALIZE_B__9_0_OFFSET UNITYSDK_OFFSET(0x1B397AE0)
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int SerializableGameplayTagQuery___c_TypeDefinitionIndex = 8804;
+	inline static constexpr unsigned int SerializableGameplayTagQuery___c_TypeDefinitionIndex = 8899;
 
 	class SerializableGameplayTagQuery___c : public ::System::Object
 	{
 	public:
 		static ::Foundation::Unreal::SerializableGameplayTagQuery___c** StaticGet___9()
 		{
-			return (::Foundation::Unreal::SerializableGameplayTagQuery___c**)Il2CppClass::FromTypeDefinitionIndex(SerializableGameplayTagQuery___c_TypeDefinitionIndex)->GetStaticField(0x7EC0);
-		}
-		static ::System::Func_2<::System::String*, ::Foundation::Unreal::FGameplayTag>** StaticGet___9__8_0()
-		{
-			return (::System::Func_2<::System::String*, ::Foundation::Unreal::FGameplayTag>**)Il2CppClass::FromTypeDefinitionIndex(SerializableGameplayTagQuery___c_TypeDefinitionIndex)->GetStaticField(0x7EC8);
+			return (::Foundation::Unreal::SerializableGameplayTagQuery___c**)Il2CppClass::FromTypeDefinitionIndex(SerializableGameplayTagQuery___c_TypeDefinitionIndex)->GetStaticField(0x7F00);
 		}
 		static ::System::Func_2<::Foundation::Unreal::FGameplayTag, ::System::String*>** StaticGet___9__9_0()
 		{
-			return (::System::Func_2<::Foundation::Unreal::FGameplayTag, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SerializableGameplayTagQuery___c_TypeDefinitionIndex)->GetStaticField(0x7ED0);
+			return (::System::Func_2<::Foundation::Unreal::FGameplayTag, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(SerializableGameplayTagQuery___c_TypeDefinitionIndex)->GetStaticField(0x7F08);
+		}
+		static ::System::Func_2<::System::String*, ::Foundation::Unreal::FGameplayTag>** StaticGet___9__8_0()
+		{
+			return (::System::Func_2<::System::String*, ::Foundation::Unreal::FGameplayTag>**)Il2CppClass::FromTypeDefinitionIndex(SerializableGameplayTagQuery___c_TypeDefinitionIndex)->GetStaticField(0x7F10);
 		}
 
 		static ::System::Void _cctor()

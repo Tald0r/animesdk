@@ -6,13 +6,13 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas::Nodes { class DoOnce; }
 
-#define FLOWCANVAS_NODES_DOONCE___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1AAB60)
-#define FLOWCANVAS_NODES_DOONCE___C__DISPLAYCLASS2_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A1AAB70)
-#define FLOWCANVAS_NODES_DOONCE___C__DISPLAYCLASS2_0__REGISTERPORTS_B__1_OFFSET UNITYSDK_OFFSET(0x1A1AABD0)
+#define FLOWCANVAS_NODES_DOONCE___C__DISPLAYCLASS2_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A117F30)
+#define FLOWCANVAS_NODES_DOONCE___C__DISPLAYCLASS2_0__REGISTERPORTS_B__0_OFFSET UNITYSDK_OFFSET(0x1A117F40)
+#define FLOWCANVAS_NODES_DOONCE___C__DISPLAYCLASS2_0__REGISTERPORTS_B__1_OFFSET UNITYSDK_OFFSET(0x1A117FA0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int DoOnce___c__DisplayClass2_0_TypeDefinitionIndex = 25161;
+	inline static constexpr unsigned int DoOnce___c__DisplayClass2_0_TypeDefinitionIndex = 27633;
 
 	class DoOnce___c__DisplayClass2_0 : public ::System::Object
 	{

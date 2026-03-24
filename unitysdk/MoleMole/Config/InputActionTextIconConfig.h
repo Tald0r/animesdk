@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_INPUTACTIONTEXTICONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x13FA0860)
+#define MOLEMOLE_CONFIG_INPUTACTIONTEXTICONCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0xF2DA410)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int InputActionTextIconConfig_TypeDefinitionIndex = 50378;
+	inline static constexpr unsigned int InputActionTextIconConfig_TypeDefinitionIndex = 45408;
 
 	class InputActionTextIconConfig : public ::System::Object
 	{

@@ -2,9 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_43BD383C98B4C0C5_52;
+namespace System { template <typename T> class Action_1; }
+namespace System { template <typename T> class Predicate_1; }
+template <typename T> class Class_0_16E4307DCC419505_36;
 
-inline static constexpr unsigned int Class_1_534AF681CC2BD5FD_229_TypeDefinitionIndex = 57586;
+inline static constexpr unsigned int Class_1_534AF681CC2BD5FD_229_TypeDefinitionIndex = 25205;
 
 class Class_1_534AF681CC2BD5FD_229 : public ::System::Object
 {

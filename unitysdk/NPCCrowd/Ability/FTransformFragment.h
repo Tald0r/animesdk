@@ -2,42 +2,46 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/StateTreeCore/BaseFragment.h"
 #include "unitysdk/System/ValueType.h"
+#include "unitysdk/Unity/Collections/Allocator.h"
 #include "unitysdk/UnityEngine/Quaternion.h"
 #include "unitysdk/UnityEngine/Vector3.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
 
 namespace UnityEngine { class Transform; }
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
 
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_CREATEFROMGO_OFFSET UNITYSDK_OFFSET(0x6B3E470)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x6B3E980)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DEFAULT_OFFSET UNITYSDK_OFFSET(0x6B3E5C0)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GETLOCATION_OFFSET UNITYSDK_OFFSET(0x30BDE0)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GETROTATION_OFFSET UNITYSDK_OFFSET(0x30BE70)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_ROTATION_OFFSET UNITYSDK_OFFSET(0x30BD30)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x30C090)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x30C030)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x2C3E30)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x6B3E7E0)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SETROTATION_OFFSET UNITYSDK_OFFSET(0x30BE90)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SETTRANSLATION_OFFSET UNITYSDK_OFFSET(0x30BF20)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SET_ROTATION_OFFSET UNITYSDK_OFFSET(0x30BDC0)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SET_TYPEINFO_OFFSET UNITYSDK_OFFSET(0x30BFC0)
-#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x6B3EAD0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x339710)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x3395D0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_CREATEFROMGO_OFFSET UNITYSDK_OFFSET(0x77EDA60)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_CREATE_OFFSET UNITYSDK_OFFSET(0x77EDCF0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x3395B0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DEFAULT_OFFSET UNITYSDK_OFFSET(0x77EDBB0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DISPOSE_OFFSET UNITYSDK_OFFSET(0x339860)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GETLOCATION_OFFSET UNITYSDK_OFFSET(0x339370)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GETROTATION_OFFSET UNITYSDK_OFFSET(0x339400)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_ROTATION_OFFSET UNITYSDK_OFFSET(0x3392C0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x339550)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x3398C0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x339780)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x339670)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_RESET_OFFSET UNITYSDK_OFFSET(0x3397F0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SETROTATION_OFFSET UNITYSDK_OFFSET(0x339420)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SETTRANSLATION_OFFSET UNITYSDK_OFFSET(0x3394B0)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SET_ROTATION_OFFSET UNITYSDK_OFFSET(0x339350)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FTRANSFORMFRAGMENT__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x339920)
+#define NPCCROWD_ABILITY_FTRANSFORMFRAGMENT__CCTOR_OFFSET UNITYSDK_OFFSET(0x77EE1E0)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int FTransformFragment_TypeDefinitionIndex = 56430;
+	inline static constexpr unsigned int FTransformFragment_TypeDefinitionIndex = 52115;
 
 	struct alignas(4) FTransformFragment
 	{
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(FTransformFragment_TypeDefinitionIndex)->GetStaticField(0xEF30);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(FTransformFragment_TypeDefinitionIndex)->GetStaticField(0x3F430);
 		}
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
-		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(FTransformFragment_TypeDefinitionIndex)->GetStaticField(0xEF34);
-		}
+		// static const ::System::UInt32 PersistentTypeHash = 0xC373BEE7; // 0x0
 		::StateTreeCore::BaseFragment Base; // 0x10
 		::UnityEngine::Vector3 position; // 0x14
 		::UnityEngine::Quaternion _rotation; // 0x20
@@ -89,34 +93,59 @@ namespace NPCCrowd::Ability
 			return ((::NPCCrowd::Ability::FTransformFragment(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DEFAULT_OFFSET))();
 		}
 
-		::UnrealTypes::FStructHandle get_TypeInfo()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_TYPEINFO_OFFSET))(this);
-		}
-
-		::System::Void set_TypeInfo(::UnrealTypes::FStructHandle value)
-		{
-			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FStructHandle))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_SET_TYPEINFO_OFFSET))(this, value);
-		}
-
-		::System::UInt32 get_TypeId()
-		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_TYPEID_OFFSET))(this);
-		}
-
-		::UnrealTypes::FStructHandle get_StaticStruct()
-		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
-		}
-
-		static ::System::Void RegisterType()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_REGISTERTYPE_OFFSET))();
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_STATICSTRUCT_OFFSET))(this);
 		}
 
 		static ::NPCCrowd::Ability::FTransformFragment Create()
 		{
 			return ((::NPCCrowd::Ability::FTransformFragment(*)())((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_CREATE_OFFSET))();
+		}
+
+		::NPCCrowd::Ability::FTransformFragment DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FTransformFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FTransformFragment CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FTransformFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::NPCCrowd::Ability::FTransformFragment MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::NPCCrowd::Ability::FTransformFragment(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::NPCCrowd::Ability::FTransformFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FTransformFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::NPCCrowd::Ability::FTransformFragment& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FTransformFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_MOVEASSIGN_OFFSET))(this, temp);
+		}
+
+		::System::Void Reset()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_RESET_OFFSET))(this);
+		}
+
+		::System::Void Dispose()
+		{
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_DISPOSE_OFFSET))(this);
+		}
+
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
+		{
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_GET_STRUCTOPSTRAITS_OFFSET))(this);
+		}
+
+		::System::Void UnrealTypes_IStruct_NPCCrowd_Ability_FTransformFragment__CopyAssign(::NPCCrowd::Ability::FTransformFragment& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::NPCCrowd::Ability::FTransformFragment&))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_FTRANSFORMFRAGMENT_UNREALTYPES_ISTRUCT_NPCCROWD_ABILITY_FTRANSFORMFRAGMENT__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

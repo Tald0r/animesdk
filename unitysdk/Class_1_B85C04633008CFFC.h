@@ -9,21 +9,21 @@ namespace System { class Random; }
 namespace System::Collections::Generic { template <typename T> class Queue_1; }
 namespace System::Diagnostics { class Stopwatch; }
 
-#define CLASS_1_B85C04633008CFFC_METHOD_1_075C09BC39F27F6B_OFFSET UNITYSDK_OFFSET(0x699E600)
-#define CLASS_1_B85C04633008CFFC_METHOD_1_1808E1CF7A125519_OFFSET UNITYSDK_OFFSET(0x699E620)
-#define CLASS_1_B85C04633008CFFC_METHOD_1_80B6FFC1FC63D2BD_OFFSET UNITYSDK_OFFSET(0x699E770)
-#define CLASS_1_B85C04633008CFFC_METHOD_1_8DD8CB30C2D54F4F_OFFSET UNITYSDK_OFFSET(0x699E450)
-#define CLASS_1_B85C04633008CFFC_METHOD_1_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0x699E6C0)
-#define CLASS_1_B85C04633008CFFC__CTOR_OFFSET UNITYSDK_OFFSET(0x699E2E0)
+#define CLASS_1_B85C04633008CFFC_METHOD_1_075C09BC39F27F6B_OFFSET UNITYSDK_OFFSET(0x7385F90)
+#define CLASS_1_B85C04633008CFFC_METHOD_1_1808E1CF7A125519_OFFSET UNITYSDK_OFFSET(0x7386060)
+#define CLASS_1_B85C04633008CFFC_METHOD_1_80B6FFC1FC63D2BD_OFFSET UNITYSDK_OFFSET(0x7386100)
+#define CLASS_1_B85C04633008CFFC_METHOD_1_8DD8CB30C2D54F4F_OFFSET UNITYSDK_OFFSET(0x7385DE0)
+#define CLASS_1_B85C04633008CFFC_METHOD_1_A3FAE12D7B6ACD62_OFFSET UNITYSDK_OFFSET(0x7385FB0)
+#define CLASS_1_B85C04633008CFFC__CTOR_OFFSET UNITYSDK_OFFSET(0x7385C70)
 
-inline static constexpr unsigned int Class_1_B85C04633008CFFC_TypeDefinitionIndex = 37638;
+inline static constexpr unsigned int Class_1_B85C04633008CFFC_TypeDefinitionIndex = 67340;
 
 class Class_1_B85C04633008CFFC : public ::System::Object
 {
 public:
-	::System::Random* Field_1_2; // 0x10
-	::System::Diagnostics::Stopwatch* Field_1_1; // 0x18
-	::Struct_2_D2B8CB92F38800F6<::System::Byte> Field_1_3; // 0x20
+	::Struct_2_D2B8CB92F38800F6<::System::Byte> Field_1_3; // 0x10
+	::System::Random* Field_1_2; // 0x20
+	::System::Diagnostics::Stopwatch* Field_1_1; // 0x28
 	::System::Collections::Generic::Queue_1<::Struct_2_671573D9438268DE>* Field_1_4; // 0x30
 	::Struct_2_A4794E3F79A63BA9 Field_1_0; // 0x38
 
@@ -37,11 +37,6 @@ public:
 		return ((::System::Int32(*)(::PVOID, ::Il2CppArray<::System::Byte>*, ::System::Int32, ::System::Int32))((::PBYTE)hIl2Cpp + CLASS_1_B85C04633008CFFC_METHOD_1_8DD8CB30C2D54F4F_OFFSET))(this, a1, a2, a3);
 	}
 
-	::System::Boolean Method_1_1808E1CF7A125519()
-	{
-		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_B85C04633008CFFC_METHOD_1_1808E1CF7A125519_OFFSET))(this);
-	}
-
 	::System::Boolean Method_1_A3FAE12D7B6ACD62()
 	{
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_B85C04633008CFFC_METHOD_1_A3FAE12D7B6ACD62_OFFSET))(this);
@@ -50,6 +45,11 @@ public:
 	::System::Int64 Method_1_075C09BC39F27F6B()
 	{
 		return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_B85C04633008CFFC_METHOD_1_075C09BC39F27F6B_OFFSET))(this);
+	}
+
+	::System::Boolean Method_1_1808E1CF7A125519()
+	{
+		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_1_B85C04633008CFFC_METHOD_1_1808E1CF7A125519_OFFSET))(this);
 	}
 
 	::System::Boolean Method_1_80B6FFC1FC63D2BD(::Il2CppArray<::System::Byte>* a1, ::System::Int32 a2, ::System::Int32 a3, ::System::Int32 a4)

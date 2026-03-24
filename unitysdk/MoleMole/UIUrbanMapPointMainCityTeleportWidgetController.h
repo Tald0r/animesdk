@@ -5,11 +5,11 @@
 class Class_3_AD95A7FFAFA9A1EC;
 namespace MoleMole { class UIThreeDMapElement_MainCityTeleportContext; }
 
-#define MOLEMOLE_UIURBANMAPPOINTMAINCITYTELEPORTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x73E7F80)
+#define MOLEMOLE_UIURBANMAPPOINTMAINCITYTELEPORTWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x7BDE880)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapPointMainCityTeleportWidgetController_TypeDefinitionIndex = 65706;
+	inline static constexpr unsigned int UIUrbanMapPointMainCityTeleportWidgetController_TypeDefinitionIndex = 47433;
 
 	class UIUrbanMapPointMainCityTeleportWidgetController : public ::MoleMole::UIUrbanMapPointWidgetController_2<::Class_3_AD95A7FFAFA9A1EC*, ::MoleMole::UIThreeDMapElement_MainCityTeleportContext*>
 	{

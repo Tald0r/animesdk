@@ -18,46 +18,46 @@ namespace UnityEngine::UI::Extension { class UILocalizationText; }
 namespace UnityEngine::UI::Extension { class UITabButton; }
 namespace UnityEngine::UI::Extension { class UITabButtonGroup; }
 namespace UnityEngine::UI::Extension { class UITimeWidget; }
-template <typename T> class Class_3_A2BF74BADF6F7D16;
+template <typename T> class Class_3_647A206587033F4E;
 
-#define CLASS_2_EA1353AD6403670A_METHOD_2_52607DE4C357D269_OFFSET UNITYSDK_OFFSET(0x16EABF00)
-#define CLASS_2_EA1353AD6403670A_METHOD_2_AB195FC75502CC36_OFFSET UNITYSDK_OFFSET(0x16EABD90)
-#define CLASS_2_EA1353AD6403670A_METHOD_2_BC6A608A3D5459DC_OFFSET UNITYSDK_OFFSET(0x16EABC20)
-#define CLASS_2_EA1353AD6403670A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x16EAC070)
-#define CLASS_2_EA1353AD6403670A_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x16EAB790)
-#define CLASS_2_EA1353AD6403670A__CTOR_OFFSET UNITYSDK_OFFSET(0x16EAC060)
+#define CLASS_2_EA1353AD6403670A_METHOD_2_52607DE4C357D269_OFFSET UNITYSDK_OFFSET(0x9B0C860)
+#define CLASS_2_EA1353AD6403670A_METHOD_2_AB195FC75502CC36_OFFSET UNITYSDK_OFFSET(0x9B0C6F0)
+#define CLASS_2_EA1353AD6403670A_METHOD_2_BC6A608A3D5459DC_OFFSET UNITYSDK_OFFSET(0x9B0C580)
+#define CLASS_2_EA1353AD6403670A_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x9B0C9D0)
+#define CLASS_2_EA1353AD6403670A_METHOD_2_E117CAE09780A0EE_OFFSET UNITYSDK_OFFSET(0x9B0C0F0)
+#define CLASS_2_EA1353AD6403670A__CTOR_OFFSET UNITYSDK_OFFSET(0x9B0C9C0)
 
-inline static constexpr unsigned int Class_2_EA1353AD6403670A_TypeDefinitionIndex = 63479;
+inline static constexpr unsigned int Class_2_EA1353AD6403670A_TypeDefinitionIndex = 37377;
 
 class Class_2_EA1353AD6403670A : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::UnityEngine::GameObject* Field_2_17; // 0x18
-	::System::Collections::Generic::List_1<::UnityEngine::UI::Extension::UITabButton*>* Field_2_2; // 0x20
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0x28
-	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x30
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x38
-	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_1; // 0x40
-	::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Field_2_12; // 0x48
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_24; // 0x50
-	::UnityEngine::GameObject* Field_2_15; // 0x58
-	::UnityEngine::GameObject* Field_2_16; // 0x60
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_23; // 0x68
-	::UnityEngine::UI::Extension::UITimeWidget* Field_2_11; // 0x70
-	::UnityEngine::RectTransform* Field_2_4; // 0x78
-	::MoleMole::MonoGamepadNavigatableList* Field_2_18; // 0x80
-	::MoleMole::MonoGamepadScrollView* Field_2_13; // 0x88
-	::UnityEngine::GameObject* Field_2_21; // 0x90
-	::Class_2_60DDD9C206686F44* Field_2_19; // 0x98
-	::UnityEngine::GameObject* Field_2_10; // 0xA0
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_20; // 0xA8
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIInterKnotTrackBtnWidgetController*>* Field_2_9; // 0xB0
-	::Class_3_A2BF74BADF6F7D16<::MoleMole::UIGeneralToggleWidgetController*>* Field_2_25; // 0xB8
-	::UnityEngine::GameObject* Field_2_22; // 0xC0
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0xC8
-	::MonoUITableScrollV2* Field_2_0; // 0xD0
-	::MonoUITableScrollV2* Field_2_14; // 0xD8
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0xE0
+	::UnityEngine::GameObject* Field_2_10; // 0x18
+	::Class_2_A8F5ABF31E066ED4* Field_2_6; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_19; // 0x28
+	::UnityEngine::GameObject* Field_2_16; // 0x30
+	::UnityEngine::UI::Extension::UITimeWidget* Field_2_11; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_3; // 0x40
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_23; // 0x48
+	::UnityEngine::GameObject* Field_2_22; // 0x50
+	::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* Field_2_12; // 0x58
+	::MonoUITableScrollV2* Field_2_0; // 0x60
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_24; // 0x68
+	::MonoUITableScrollV2* Field_2_14; // 0x70
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_20; // 0x78
+	::System::Collections::Generic::List_1<::UnityEngine::UI::Extension::UITabButton*>* Field_2_2; // 0x80
+	::UnityEngine::GameObject* Field_2_15; // 0x88
+	::UnityEngine::GameObject* Field_2_17; // 0x90
+	::UnityEngine::UI::Extension::UITabButtonGroup* Field_2_1; // 0x98
+	::Class_2_60DDD9C206686F44* Field_2_8; // 0xA0
+	::UnityEngine::RectTransform* Field_2_4; // 0xA8
+	::Class_3_647A206587033F4E<::MoleMole::UIInterKnotTrackBtnWidgetController*>* Field_2_9; // 0xB0
+	::UnityEngine::GameObject* Field_2_21; // 0xB8
+	::MoleMole::MonoGamepadScrollView* Field_2_13; // 0xC0
+	::MoleMole::MonoGamepadNavigatableList* Field_2_18; // 0xC8
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_7; // 0xD0
+	::Class_3_647A206587033F4E<::MoleMole::UIGeneralToggleWidgetController*>* Field_2_25; // 0xD8
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_5; // 0xE0
 
 	::System::Void _ctor()
 	{

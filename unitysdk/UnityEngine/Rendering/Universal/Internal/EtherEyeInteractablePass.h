@@ -10,23 +10,23 @@ namespace System { class String; }
 namespace UnityEngine::NAPRenderPipeline0 { class ProfilingSampler; }
 namespace UnityEngine::Rendering::Universal::Internal { class EtherEyeInteractableInfo; }
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x139212B0)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x13921900)
-#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x13921220)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEPASS_EXECUTE_OFFSET UNITYSDK_OFFSET(0x1A2E9110)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEPASS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A2E9760)
+#define UNITYENGINE_RENDERING_UNIVERSAL_INTERNAL_ETHEREYEINTERACTABLEPASS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2E9080)
 
 namespace UnityEngine::Rendering::Universal::Internal
 {
-	inline static constexpr unsigned int EtherEyeInteractablePass_TypeDefinitionIndex = 29009;
+	inline static constexpr unsigned int EtherEyeInteractablePass_TypeDefinitionIndex = 29960;
 
 	class EtherEyeInteractablePass : public ::UnityEngine::NAPRenderPipeline0::ScriptableRenderPass
 	{
 	public:
 		static ::UnityEngine::Rendering::Universal::Internal::EtherEyeInteractableInfo** StaticGet_EtherEyeInteractableInfoCache()
 		{
-			return (::UnityEngine::Rendering::Universal::Internal::EtherEyeInteractableInfo**)Il2CppClass::FromTypeDefinitionIndex(EtherEyeInteractablePass_TypeDefinitionIndex)->GetStaticField(0x22550);
+			return (::UnityEngine::Rendering::Universal::Internal::EtherEyeInteractableInfo**)Il2CppClass::FromTypeDefinitionIndex(EtherEyeInteractablePass_TypeDefinitionIndex)->GetStaticField(0x23F70);
 		}
-		::System::String* m_ProfilerTag; // 0xA8
-		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xB0
+		::UnityEngine::NAPRenderPipeline0::ProfilingSampler* m_ProfilingSampler; // 0xA8
+		::System::String* m_ProfilerTag; // 0xB0
 
 		::System::Void _ctor(::UnityEngine::NAPRenderPipeline0::RenderPassEvent evt)
 		{

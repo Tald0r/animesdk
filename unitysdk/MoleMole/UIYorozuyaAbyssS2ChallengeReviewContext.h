@@ -4,11 +4,11 @@
 
 class Class_1_82BFA20677866509;
 
-#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x65BF7B0)
+#define MOLEMOLE_UIYOROZUYAABYSSS2CHALLENGEREVIEWCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9F09A70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaAbyssS2ChallengeReviewContext_TypeDefinitionIndex = 40527;
+	inline static constexpr unsigned int UIYorozuyaAbyssS2ChallengeReviewContext_TypeDefinitionIndex = 51921;
 
 	class UIYorozuyaAbyssS2ChallengeReviewContext : public ::MoleMole::UIControllerContextBase
 	{

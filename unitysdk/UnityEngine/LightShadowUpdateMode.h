@@ -3,7 +3,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LightShadowUpdateMode_TypeDefinitionIndex = 5208;
+	inline static constexpr unsigned int LightShadowUpdateMode_TypeDefinitionIndex = 5209;
 
 	enum class LightShadowUpdateMode : ::System::Int32
 	{

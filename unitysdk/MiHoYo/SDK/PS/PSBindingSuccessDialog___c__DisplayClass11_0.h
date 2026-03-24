@@ -5,18 +5,18 @@
 namespace MiHoYo::SDK::PS { class PSBindingSuccessDialog; }
 namespace System { class String; }
 
-#define MIHOYO_SDK_PS_PSBINDINGSUCCESSDIALOG___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18282D60)
-#define MIHOYO_SDK_PS_PSBINDINGSUCCESSDIALOG___C__DISPLAYCLASS11_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18282D70)
+#define MIHOYO_SDK_PS_PSBINDINGSUCCESSDIALOG___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18702030)
+#define MIHOYO_SDK_PS_PSBINDINGSUCCESSDIALOG___C__DISPLAYCLASS11_0__SHOW_B__0_OFFSET UNITYSDK_OFFSET(0x18702040)
 
 namespace MiHoYo::SDK::PS
 {
-	inline static constexpr unsigned int PSBindingSuccessDialog___c__DisplayClass11_0_TypeDefinitionIndex = 18575;
+	inline static constexpr unsigned int PSBindingSuccessDialog___c__DisplayClass11_0_TypeDefinitionIndex = 19174;
 
 	class PSBindingSuccessDialog___c__DisplayClass11_0 : public ::System::Object
 	{
 	public:
-		::System::String* hoyoAccount; // 0x10
-		::System::String* psnAccount; // 0x18
+		::System::String* psnAccount; // 0x10
+		::System::String* hoyoAccount; // 0x18
 
 		::System::Void _ctor()
 		{

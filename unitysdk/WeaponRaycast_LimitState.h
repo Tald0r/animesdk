@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int WeaponRaycast_LimitState_TypeDefinitionIndex = 76173;
+inline static constexpr unsigned int WeaponRaycast_LimitState_TypeDefinitionIndex = 43051;
 
 enum class WeaponRaycast_LimitState : ::System::Int32
 {

@@ -5,11 +5,11 @@
 namespace MoleMole { class WeaponAttachPoint; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_MONOWEAPON__CTOR_OFFSET UNITYSDK_OFFSET(0xA605130)
+#define MOLEMOLE_MONOWEAPON__CTOR_OFFSET UNITYSDK_OFFSET(0xA7EF4F0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoWeapon_TypeDefinitionIndex = 44652;
+	inline static constexpr unsigned int MonoWeapon_TypeDefinitionIndex = 66917;
 
 	class MonoWeapon : public ::UnityEngine::MonoBehaviour
 	{

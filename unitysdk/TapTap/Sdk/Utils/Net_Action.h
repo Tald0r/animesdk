@@ -6,14 +6,14 @@ namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-#define TAPTAP_SDK_UTILS_NET_ACTION_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1A7CFE10)
-#define TAPTAP_SDK_UTILS_NET_ACTION_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1A7CFE40)
-#define TAPTAP_SDK_UTILS_NET_ACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1A7CFB70)
-#define TAPTAP_SDK_UTILS_NET_ACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1A7CFB60)
+#define TAPTAP_SDK_UTILS_NET_ACTION_BEGININVOKE_OFFSET UNITYSDK_OFFSET(0x1ADB1AF0)
+#define TAPTAP_SDK_UTILS_NET_ACTION_ENDINVOKE_OFFSET UNITYSDK_OFFSET(0x1ADB1B20)
+#define TAPTAP_SDK_UTILS_NET_ACTION_INVOKE_OFFSET UNITYSDK_OFFSET(0x1ADB1850)
+#define TAPTAP_SDK_UTILS_NET_ACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x1ADB1830)
 
 namespace TapTap::Sdk::Utils
 {
-	inline static constexpr unsigned int Net_Action_TypeDefinitionIndex = 9477;
+	inline static constexpr unsigned int Net_Action_TypeDefinitionIndex = 9479;
 
 	class Net_Action : public ::System::MulticastDelegate
 	{

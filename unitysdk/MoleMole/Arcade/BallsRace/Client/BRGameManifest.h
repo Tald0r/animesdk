@@ -8,21 +8,21 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine::Rendering { class Volume; }
 
-#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST_AWAKE_OFFSET UNITYSDK_OFFSET(0x1AF918F0)
-#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST_GET_INS_OFFSET UNITYSDK_OFFSET(0x1AF918B0)
-#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1AF91960)
-#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF919E0)
+#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST_AWAKE_OFFSET UNITYSDK_OFFSET(0x1B139220)
+#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST_GET_INS_OFFSET UNITYSDK_OFFSET(0x1B1391E0)
+#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x1B139290)
+#define MOLEMOLE_ARCADE_BALLSRACE_CLIENT_BRGAMEMANIFEST__CTOR_OFFSET UNITYSDK_OFFSET(0x1B139310)
 
 namespace MoleMole::Arcade::BallsRace::Client
 {
-	inline static constexpr unsigned int BRGameManifest_TypeDefinitionIndex = 80196;
+	inline static constexpr unsigned int BRGameManifest_TypeDefinitionIndex = 82191;
 
 	class BRGameManifest : public ::MoleMole::MiniGame::MiniGame3DManifest
 	{
 	public:
 		static ::MoleMole::Arcade::BallsRace::Client::BRGameManifest** StaticGet_Field_7_6()
 		{
-			return (::MoleMole::Arcade::BallsRace::Client::BRGameManifest**)Il2CppClass::FromTypeDefinitionIndex(BRGameManifest_TypeDefinitionIndex)->GetStaticField(0x44F50);
+			return (::MoleMole::Arcade::BallsRace::Client::BRGameManifest**)Il2CppClass::FromTypeDefinitionIndex(BRGameManifest_TypeDefinitionIndex)->GetStaticField(0x47D90);
 		}
 		::Cinemachine::CinemachineVirtualCamera* VCam; // 0x58
 		::Cinemachine::CinemachineVirtualCamera* RoleSelectVCam; // 0x60

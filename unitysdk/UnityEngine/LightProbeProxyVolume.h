@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/Behaviour.h"
 
-#define UNITYENGINE_LIGHTPROBEPROXYVOLUME__CTOR_OFFSET UNITYSDK_OFFSET(0x19D16B30)
+#define UNITYENGINE_LIGHTPROBEPROXYVOLUME__CTOR_OFFSET UNITYSDK_OFFSET(0x1A2FD100)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LightProbeProxyVolume_TypeDefinitionIndex = 5248;
+	inline static constexpr unsigned int LightProbeProxyVolume_TypeDefinitionIndex = 5249;
 
 	class LightProbeProxyVolume : public ::UnityEngine::Behaviour
 	{

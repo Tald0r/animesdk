@@ -11,23 +11,25 @@
 #include "unitysdk/NPCCrowd/Ability/FNPCNavmeshFragment.h"
 #include "unitysdk/NPCCrowd/Ability/FTransformFragment.h"
 #include "unitysdk/NPCCrowd/Ability/NPCEntityNativeData.h"
-#include "unitysdk/NativeTypes/NativeList_1.h"
 #include "unitysdk/StateTreeCore/StateTree.h"
 #include "unitysdk/StateTreeCore/StateTreeInstanceData.h"
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/NativeArray_1.h"
+#include "unitysdk/UnrealTypes/NativeStructList_1.h"
 
-#define NPCCROWD_ABILITY_NPCSTATETREEPROCESSOR_EXECUTEJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x2C9830)
-#define NPCCROWD_ABILITY_NPCSTATETREEPROCESSOR_EXECUTEJOB_GETFRAGMENTSTRUCTVIEW_OFFSET UNITYSDK_OFFSET(0x2C9810)
+namespace UnrealTypes { class ScriptStruct; }
+
+#define NPCCROWD_ABILITY_NPCSTATETREEPROCESSOR_EXECUTEJOB_EXECUTE_OFFSET UNITYSDK_OFFSET(0x311170)
+#define NPCCROWD_ABILITY_NPCSTATETREEPROCESSOR_EXECUTEJOB_GETFRAGMENTSTRUCTVIEW_OFFSET UNITYSDK_OFFSET(0x311150)
 
 namespace NPCCrowd::Ability
 {
-	inline static constexpr unsigned int NPCStateTreeProcessor_ExecuteJob_TypeDefinitionIndex = 57855;
+	inline static constexpr unsigned int NPCStateTreeProcessor_ExecuteJob_TypeDefinitionIndex = 39110;
 
 	struct alignas(8) NPCStateTreeProcessor_ExecuteJob
 	{
 		::System::Single DeltaTime; // 0x10
-		::NativeTypes::NativeList_1<::StateTreeCore::StateTree> StateTrees; // 0x18
+		::UnrealTypes::NativeStructList_1<::StateTreeCore::StateTree> StateTrees; // 0x18
 		::Unity::Collections::NativeArray_1<::StateTreeCore::StateTreeInstanceData> StateTreeInstances; // 0x30
 		::Unity::Collections::NativeArray_1<::System::Int32> StateTreeIndices; // 0x40
 		::Unity::Collections::NativeArray_1<::NPCCrowd::Ability::FNPCBaseDataFragment> EntityInfo; // 0x50
@@ -43,9 +45,9 @@ namespace NPCCrowd::Ability
 		::Unity::Collections::NativeArray_1<::System::UInt32> EntityIds; // 0x100
 
 		/*
-		::UnrealTypes::FStructView GetFragmentStructView(::UnrealTypes::FStructHandle fragmentStruct, ::System::Int32 index)
+		::UnrealTypes::FStructView GetFragmentStructView(::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*> fragmentStruct, ::System::Int32 index)
 		{
-			return ((::UnrealTypes::FStructView(*)(::PVOID, ::UnrealTypes::FStructHandle, ::System::Int32))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_NPCSTATETREEPROCESSOR_EXECUTEJOB_GETFRAGMENTSTRUCTVIEW_OFFSET))(this, fragmentStruct, index);
+			return ((::UnrealTypes::FStructView(*)(::PVOID, ::UnrealTypes::TObjectHandle_1<::UnrealTypes::ScriptStruct*>, ::System::Int32))((::PBYTE)hIl2Cpp + NPCCROWD_ABILITY_NPCSTATETREEPROCESSOR_EXECUTEJOB_GETFRAGMENTSTRUCTVIEW_OFFSET))(this, fragmentStruct, index);
 		}
 		*/
 

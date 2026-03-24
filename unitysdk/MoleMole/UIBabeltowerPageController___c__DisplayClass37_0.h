@@ -5,22 +5,22 @@
 namespace MoleMole { class UIBabeltowerFightingInfoWidgetController; }
 namespace MoleMole { class UIBabeltowerPageController; }
 
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS37_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC2753A0)
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS37_0__OPENFIGHTINGWIDGET_G__ONCLOSE_0_OFFSET UNITYSDK_OFFSET(0xC2753B0)
-#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS37_0__OPENFIGHTINGWIDGET_G___OPENFIGHTINGWIDGET_1_OFFSET UNITYSDK_OFFSET(0xC275440)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS37_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC2A68C0)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS37_0__OPENFIGHTINGWIDGET_G__ONCLOSE_0_OFFSET UNITYSDK_OFFSET(0xC2A68D0)
+#define MOLEMOLE_UIBABELTOWERPAGECONTROLLER___C__DISPLAYCLASS37_0__OPENFIGHTINGWIDGET_G___OPENFIGHTINGWIDGET_1_OFFSET UNITYSDK_OFFSET(0xC2A6960)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBabeltowerPageController___c__DisplayClass37_0_TypeDefinitionIndex = 37463;
+	inline static constexpr unsigned int UIBabeltowerPageController___c__DisplayClass37_0_TypeDefinitionIndex = 73538;
 
 	class UIBabeltowerPageController___c__DisplayClass37_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIBabeltowerPageController* __4__this; // 0x10
-		::MoleMole::UIBabeltowerFightingInfoWidgetController* ctrl; // 0x18
-		::System::Boolean directOpen; // 0x20
+		::MoleMole::UIBabeltowerFightingInfoWidgetController* ctrl; // 0x10
+		::MoleMole::UIBabeltowerPageController* __4__this; // 0x18
+		::System::Int32 initSelectBuf; // 0x20
 		::System::UInt32 floor; // 0x24
-		::System::Int32 initSelectBuf; // 0x28
+		::System::Boolean directOpen; // 0x28
 
 		::System::Void _ctor()
 		{

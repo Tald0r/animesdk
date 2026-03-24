@@ -5,11 +5,11 @@
 class Class_1_C8489A0F22314D2F;
 class Class_1_FD161B8AFE00CB2F;
 
-#define MOLEMOLE_UIGROCERYCHILDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x96053A0)
+#define MOLEMOLE_UIGROCERYCHILDCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8C2A0E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGroceryChildContext_TypeDefinitionIndex = 73562;
+	inline static constexpr unsigned int UIGroceryChildContext_TypeDefinitionIndex = 74733;
 
 	class UIGroceryChildContext : public ::MoleMole::UIControllerContextBase
 	{

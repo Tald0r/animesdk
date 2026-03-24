@@ -11,31 +11,31 @@ namespace MoleMole::Config { class DynamicFloat; }
 namespace MoleMole::Config { class DynamicInt; }
 namespace System { class String; }
 
-#define CLASS_1_E795C5D5DDF30620_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x985BDD0)
-#define CLASS_1_E795C5D5DDF30620_FROMFLX_OFFSET UNITYSDK_OFFSET(0x985C440)
-#define CLASS_1_E795C5D5DDF30620_METHOD_1_0578713EDB32B89E_OFFSET UNITYSDK_OFFSET(0x985C4C0)
-#define CLASS_1_E795C5D5DDF30620_METHOD_1_6A03C0134352525C_OFFSET UNITYSDK_OFFSET(0x985BE30)
-#define CLASS_1_E795C5D5DDF30620__CTOR_OFFSET UNITYSDK_OFFSET(0x985DAF0)
+#define CLASS_1_E795C5D5DDF30620_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xD41CA10)
+#define CLASS_1_E795C5D5DDF30620_FROMFLX_OFFSET UNITYSDK_OFFSET(0xD41D080)
+#define CLASS_1_E795C5D5DDF30620_METHOD_1_0578713EDB32B89E_OFFSET UNITYSDK_OFFSET(0xD41D100)
+#define CLASS_1_E795C5D5DDF30620_METHOD_1_6A03C0134352525C_OFFSET UNITYSDK_OFFSET(0xD41CA70)
+#define CLASS_1_E795C5D5DDF30620__CTOR_OFFSET UNITYSDK_OFFSET(0xD41E730)
 
-inline static constexpr unsigned int Class_1_E795C5D5DDF30620_TypeDefinitionIndex = 78320;
+inline static constexpr unsigned int Class_1_E795C5D5DDF30620_TypeDefinitionIndex = 52754;
 
 class Class_1_E795C5D5DDF30620 : public ::System::Object
 {
 public:
-	::MoleMole::Config::DynamicInt* Field_1_4; // 0x10
-	::MoleMole::Config::DynamicFloat* Field_1_6; // 0x18
+	::MoleMole::Config::DynamicFloat* Field_1_10; // 0x10
+	::MoleMole::Config::DynamicFloat* Field_1_8; // 0x18
 	::MoleMole::Config::DynamicInt* Field_1_3; // 0x20
-	::MoleMole::Config::DynamicFloat* Field_1_8; // 0x28
-	::MoleMole::Config::DynamicFloat* Field_1_10; // 0x30
-	::MoleMole::Config::DynamicFloat* Field_1_2; // 0x38
-	::System::String* Field_1_13; // 0x40
-	::MoleMole::Config::DynamicFloat* Field_1_1; // 0x48
+	::MoleMole::Config::DynamicFloat* Field_1_5; // 0x28
+	::MoleMole::Config::DynamicFloat* Field_1_1; // 0x30
+	::MoleMole::Config::DynamicFloat* Field_1_7; // 0x38
+	::MoleMole::Config::DynamicFloat* Field_1_6; // 0x40
+	::MoleMole::Config::DynamicInt* Field_1_4; // 0x48
 	::MoleMole::Config::DynamicFloat* Field_1_9; // 0x50
-	::MoleMole::Config::DynamicFloat* Field_1_5; // 0x58
-	::MoleMole::Config::DynamicFloat* Field_1_7; // 0x60
-	::UnityEngine::Vector3 Field_1_12; // 0x68
-	::UnityEngine::Vector3 Field_1_11; // 0x74
-	::Enum_3_F40B865AC61AB8D7 Field_1_0; // 0x80
+	::System::String* Field_1_13; // 0x58
+	::MoleMole::Config::DynamicFloat* Field_1_2; // 0x60
+	::Enum_3_F40B865AC61AB8D7 Field_1_0; // 0x68
+	::UnityEngine::Vector3 Field_1_11; // 0x6C
+	::UnityEngine::Vector3 Field_1_12; // 0x78
 
 	::System::Void _ctor()
 	{

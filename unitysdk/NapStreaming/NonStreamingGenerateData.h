@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace NapStreaming
 {
-	inline static constexpr unsigned int NonStreamingGenerateData_TypeDefinitionIndex = 76580;
+	inline static constexpr unsigned int NonStreamingGenerateData_TypeDefinitionIndex = 50629;
 
 	struct alignas(8) NonStreamingGenerateData
 	{

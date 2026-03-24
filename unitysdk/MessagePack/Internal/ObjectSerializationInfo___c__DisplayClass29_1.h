@@ -5,12 +5,12 @@
 namespace MessagePack::Internal { class ObjectSerializationInfo_EmittableMember; }
 namespace MessagePack::Internal { class ObjectSerializationInfo_EmittableMemberAndConstructorParameter; }
 
-#define MESSAGEPACK_INTERNAL_OBJECTSERIALIZATIONINFO___C__DISPLAYCLASS29_1__CREATEORNULL_B__12_OFFSET UNITYSDK_OFFSET(0x19162390)
-#define MESSAGEPACK_INTERNAL_OBJECTSERIALIZATIONINFO___C__DISPLAYCLASS29_1__CTOR_OFFSET UNITYSDK_OFFSET(0x19162380)
+#define MESSAGEPACK_INTERNAL_OBJECTSERIALIZATIONINFO___C__DISPLAYCLASS29_1__CREATEORNULL_B__12_OFFSET UNITYSDK_OFFSET(0x195544E0)
+#define MESSAGEPACK_INTERNAL_OBJECTSERIALIZATIONINFO___C__DISPLAYCLASS29_1__CTOR_OFFSET UNITYSDK_OFFSET(0x195544D0)
 
 namespace MessagePack::Internal
 {
-	inline static constexpr unsigned int ObjectSerializationInfo___c__DisplayClass29_1_TypeDefinitionIndex = 25303;
+	inline static constexpr unsigned int ObjectSerializationInfo___c__DisplayClass29_1_TypeDefinitionIndex = 26823;
 
 	class ObjectSerializationInfo___c__DisplayClass29_1 : public ::System::Object
 	{

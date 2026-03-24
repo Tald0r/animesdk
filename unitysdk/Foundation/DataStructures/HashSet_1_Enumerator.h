@@ -7,7 +7,7 @@ namespace System { class Object; }
 
 namespace Foundation::DataStructures
 {
-	inline static constexpr unsigned int HashSet_1_Enumerator_TypeDefinitionIndex = 7949;
+	inline static constexpr unsigned int HashSet_1_Enumerator_TypeDefinitionIndex = 7908;
 
 	template <typename T>
 	struct HashSet_1_Enumerator

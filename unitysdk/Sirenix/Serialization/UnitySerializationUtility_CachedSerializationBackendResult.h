@@ -4,7 +4,7 @@
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int UnitySerializationUtility_CachedSerializationBackendResult_TypeDefinitionIndex = 7462;
+	inline static constexpr unsigned int UnitySerializationUtility_CachedSerializationBackendResult_TypeDefinitionIndex = 7467;
 
 	struct alignas(1) UnitySerializationUtility_CachedSerializationBackendResult
 	{

@@ -7,12 +7,12 @@ namespace MoleMole::Battle { class Entity; }
 namespace NPCCrowd::AI { class NPCCrowdReactionManager___c__DisplayClass24_2; }
 namespace NPCCrowd::Lod { class INPCCrowdDistanceCheckInterface; }
 
-#define NPCCROWD_AI_NPCCROWDREACTIONMANAGER___C__DISPLAYCLASS24_3__CTOR_OFFSET UNITYSDK_OFFSET(0x7223730)
-#define NPCCROWD_AI_NPCCROWDREACTIONMANAGER___C__DISPLAYCLASS24_3__HANDLEEVENTCONFIGSTIMULUSENABLE_B__1_OFFSET UNITYSDK_OFFSET(0x7223740)
+#define NPCCROWD_AI_NPCCROWDREACTIONMANAGER___C__DISPLAYCLASS24_3__CTOR_OFFSET UNITYSDK_OFFSET(0x9AF8100)
+#define NPCCROWD_AI_NPCCROWDREACTIONMANAGER___C__DISPLAYCLASS24_3__HANDLEEVENTCONFIGSTIMULUSENABLE_B__1_OFFSET UNITYSDK_OFFSET(0x9AF8110)
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int NPCCrowdReactionManager___c__DisplayClass24_3_TypeDefinitionIndex = 44998;
+	inline static constexpr unsigned int NPCCrowdReactionManager___c__DisplayClass24_3_TypeDefinitionIndex = 46746;
 
 	class NPCCrowdReactionManager___c__DisplayClass24_3 : public ::System::Object
 	{

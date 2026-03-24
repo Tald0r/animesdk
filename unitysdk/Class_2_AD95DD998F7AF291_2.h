@@ -1,40 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_E7CD69E2A848D444.h"
+#include "unitysdk/Class_1_CC972ED73C1D3B07.h"
 
-class Class_2_208CC9941471731A_280;
-class Class_2_208CC9941471731A_346;
+inline static constexpr unsigned int Class_2_AD95DD998F7AF291_2_TypeDefinitionIndex = 73210;
 
-#define CLASS_2_AD95DD998F7AF291_2_METHOD_2_43A46E5F9FAC62B8_OFFSET UNITYSDK_OFFSET(0xB149230)
-#define CLASS_2_AD95DD998F7AF291_2_METHOD_2_58BA0C8308C8127F_OFFSET UNITYSDK_OFFSET(0xB149240)
-#define CLASS_2_AD95DD998F7AF291_2_METHOD_2_80C66335F1B7C73D_OFFSET UNITYSDK_OFFSET(0xB149190)
-#define CLASS_2_AD95DD998F7AF291_2__CTOR_OFFSET UNITYSDK_OFFSET(0xB1491B0)
-
-inline static constexpr unsigned int Class_2_AD95DD998F7AF291_2_TypeDefinitionIndex = 59550;
-
-class Class_2_AD95DD998F7AF291_2 : public ::Class_1_E7CD69E2A848D444
+template <typename TPlugin, typename TData>
+class Class_2_AD95DD998F7AF291_2 : public ::Class_1_CC972ED73C1D3B07
 {
 public:
-	::Class_2_208CC9941471731A_280* Field_2_1; // 0x30
-	::Class_2_208CC9941471731A_346* Field_2_0; // 0x38
-
-	::System::Void _ctor(::Class_2_208CC9941471731A_346* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_346*))((::PBYTE)hIl2Cpp + CLASS_2_AD95DD998F7AF291_2__CTOR_OFFSET))(this, a1);
-	}
-
-	::System::Int32 Method_2_80C66335F1B7C73D()
-	{
-		return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_AD95DD998F7AF291_2_METHOD_2_80C66335F1B7C73D_OFFSET))(this);
-	}
-
-	::Class_2_208CC9941471731A_346* Method_2_43A46E5F9FAC62B8()
-	{
-		return ((::Class_2_208CC9941471731A_346*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_AD95DD998F7AF291_2_METHOD_2_43A46E5F9FAC62B8_OFFSET))(this);
-	}
-
-	::System::Void Method_2_58BA0C8308C8127F(::Class_2_208CC9941471731A_346* a1)
-	{
-		return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_346*))((::PBYTE)hIl2Cpp + CLASS_2_AD95DD998F7AF291_2_METHOD_2_58BA0C8308C8127F_OFFSET))(this, a1);
-	}
+	TData Field_2_0; // 0x0
 };

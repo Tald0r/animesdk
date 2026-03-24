@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIGachaItemNameWidgetContext; }
 
-#define MOLEMOLE_UIGACHAITEMNAMEWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA911100)
-#define MOLEMOLE_UIGACHAITEMNAMEWIDGETCONTROLLER___C__DISPLAYCLASS3_0__ONSHOW_B__0_OFFSET UNITYSDK_OFFSET(0xA911110)
+#define MOLEMOLE_UIGACHAITEMNAMEWIDGETCONTROLLER___C__DISPLAYCLASS3_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA9375A0)
+#define MOLEMOLE_UIGACHAITEMNAMEWIDGETCONTROLLER___C__DISPLAYCLASS3_0__ONSHOW_B__0_OFFSET UNITYSDK_OFFSET(0xA9375B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaItemNameWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 48015;
+	inline static constexpr unsigned int UIGachaItemNameWidgetController___c__DisplayClass3_0_TypeDefinitionIndex = 73774;
 
 	class UIGachaItemNameWidgetController___c__DisplayClass3_0 : public ::System::Object
 	{

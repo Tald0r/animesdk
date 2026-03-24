@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIPlayerAccessoryPageController; }
 
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS164_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAB82DD0)
-#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS164_0__WAITUNTILTIMECURSOR_B__0_OFFSET UNITYSDK_OFFSET(0xAB82DE0)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS164_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA233810)
+#define MOLEMOLE_UIPLAYERACCESSORYPAGECONTROLLER___C__DISPLAYCLASS164_0__WAITUNTILTIMECURSOR_B__0_OFFSET UNITYSDK_OFFSET(0xA233820)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIPlayerAccessoryPageController___c__DisplayClass164_0_TypeDefinitionIndex = 77117;
+	inline static constexpr unsigned int UIPlayerAccessoryPageController___c__DisplayClass164_0_TypeDefinitionIndex = 39874;
 
 	class UIPlayerAccessoryPageController___c__DisplayClass164_0 : public ::System::Object
 	{

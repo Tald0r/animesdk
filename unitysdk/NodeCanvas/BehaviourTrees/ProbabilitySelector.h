@@ -8,24 +8,24 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class Component; }
 
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_GETTOTAL_OFFSET UNITYSDK_OFFSET(0x1A089530)
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONCHILDCONNECTED_OFFSET UNITYSDK_OFFSET(0x1A088F10)
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONCHILDDISCONNECTED_OFFSET UNITYSDK_OFFSET(0x1A0890C0)
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A089200)
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A089140)
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A0891A0)
-#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A089690)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_GETTOTAL_OFFSET UNITYSDK_OFFSET(0x1A65C130)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONCHILDCONNECTED_OFFSET UNITYSDK_OFFSET(0x1A65BB20)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONCHILDDISCONNECTED_OFFSET UNITYSDK_OFFSET(0x1A65BCD0)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A65BE10)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONGRAPHSTARTED_OFFSET UNITYSDK_OFFSET(0x1A65BD50)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR_ONRESET_OFFSET UNITYSDK_OFFSET(0x1A65BDB0)
+#define NODECANVAS_BEHAVIOURTREES_PROBABILITYSELECTOR__CTOR_OFFSET UNITYSDK_OFFSET(0x1A65C2A0)
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int ProbabilitySelector_TypeDefinitionIndex = 26453;
+	inline static constexpr unsigned int ProbabilitySelector_TypeDefinitionIndex = 27464;
 
 	class ProbabilitySelector : public ::NodeCanvas::BehaviourTrees::BTComposite
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Single>* failChance; // 0x78
-		::System::Collections::Generic::List_1<::NodeCanvas::Framework::BBParameter_1<::System::Single>*>* childWeights; // 0x80
-		::System::Collections::Generic::List_1<::System::Int32>* failedIndeces; // 0x88
+		::System::Collections::Generic::List_1<::System::Int32>* failedIndeces; // 0x78
+		::NodeCanvas::Framework::BBParameter_1<::System::Single>* failChance; // 0x80
+		::System::Collections::Generic::List_1<::NodeCanvas::Framework::BBParameter_1<::System::Single>*>* childWeights; // 0x88
 		::System::Single probability; // 0x90
 		::System::Single currentProbability; // 0x94
 

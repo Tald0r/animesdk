@@ -4,11 +4,11 @@
 
 namespace UnityEngine::InputSystem { class PlayerInput; }
 
-#define UNITYENGINE_INPUTSYSTEM_PLAYERINPUT_CONTROLSCHANGEDEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x197A1AF0)
+#define UNITYENGINE_INPUTSYSTEM_PLAYERINPUT_CONTROLSCHANGEDEVENT__CTOR_OFFSET UNITYSDK_OFFSET(0x19C12420)
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int PlayerInput_ControlsChangedEvent_TypeDefinitionIndex = 27591;
+	inline static constexpr unsigned int PlayerInput_ControlsChangedEvent_TypeDefinitionIndex = 28531;
 
 	class PlayerInput_ControlsChangedEvent : public ::UnityEngine::Events::UnityEvent_1<::UnityEngine::InputSystem::PlayerInput*>
 	{

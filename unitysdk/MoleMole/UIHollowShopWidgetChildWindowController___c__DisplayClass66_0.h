@@ -7,18 +7,18 @@ namespace MoleMole { class UIHollowShopWidgetChildWindowController; }
 namespace System { class Action; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS66_0__BUYHOLLOWITEM_B__0_OFFSET UNITYSDK_OFFSET(0x8936670)
-#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS66_0__CTOR_OFFSET UNITYSDK_OFFSET(0x8936660)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS66_0__BUYHOLLOWITEM_B__0_OFFSET UNITYSDK_OFFSET(0x9800460)
+#define MOLEMOLE_UIHOLLOWSHOPWIDGETCHILDWINDOWCONTROLLER___C__DISPLAYCLASS66_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9800450)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowShopWidgetChildWindowController___c__DisplayClass66_0_TypeDefinitionIndex = 75949;
+	inline static constexpr unsigned int UIHollowShopWidgetChildWindowController___c__DisplayClass66_0_TypeDefinitionIndex = 48602;
 
 	class UIHollowShopWidgetChildWindowController___c__DisplayClass66_0 : public ::System::Object
 	{
 	public:
-		::System::Action* callback; // 0x10
-		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_0B54DAB695AF5065*>* dics; // 0x18
+		::System::Collections::Generic::Dictionary_2<::System::Int32, ::Class_1_0B54DAB695AF5065*>* dics; // 0x10
+		::System::Action* callback; // 0x18
 		::MoleMole::UIHollowShopWidgetChildWindowController* __4__this; // 0x20
 		::System::Int32 uid; // 0x28
 

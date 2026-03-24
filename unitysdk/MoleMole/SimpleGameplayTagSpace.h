@@ -6,11 +6,11 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_SIMPLEGAMEPLAYTAGSPACE__CTOR_OFFSET UNITYSDK_OFFSET(0x8F3E5E0)
+#define MOLEMOLE_SIMPLEGAMEPLAYTAGSPACE__CTOR_OFFSET UNITYSDK_OFFSET(0x9855AF0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SimpleGameplayTagSpace_TypeDefinitionIndex = 62447;
+	inline static constexpr unsigned int SimpleGameplayTagSpace_TypeDefinitionIndex = 43564;
 
 	class SimpleGameplayTagSpace : public ::Sirenix::OdinInspector::SerializedScriptableObject
 	{

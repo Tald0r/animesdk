@@ -7,7 +7,7 @@ namespace BinaryTracingFramework::Serialize { class BaseArchive; }
 
 namespace BinaryTracingFramework::Serialize
 {
-	inline static constexpr unsigned int BaseSerializeableObject_1_TypeDefinitionIndex = 30943;
+	inline static constexpr unsigned int BaseSerializeableObject_1_TypeDefinitionIndex = 31895;
 
 	template <typename T>
 	class BaseSerializeableObject_1 : public ::System::Object

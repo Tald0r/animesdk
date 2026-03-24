@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERAREFERENCEMOVE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE872920)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERAREFERENCEMOVE__CTOR_OFFSET UNITYSDK_OFFSET(0xE872DD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERAREFERENCEMOVE_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD41500)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDSETCAMERAREFERENCEMOVE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD419B0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDSetCameraReferenceMove_TypeDefinitionIndex = 41600;
+	inline static constexpr unsigned int LDSetCameraReferenceMove_TypeDefinitionIndex = 58791;
 
 	class LDSetCameraReferenceMove : public ::FlowCanvas::Nodes::CallableFunctionNode_4<::System::Boolean, ::System::Boolean, ::MoleMole::Battle::Entity*, ::System::String*>
 	{

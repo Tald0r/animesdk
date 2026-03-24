@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleInfoPageController_LeftLogic_TypeDefinitionIndex = 47504;
+	inline static constexpr unsigned int UIRoleInfoPageController_LeftLogic_TypeDefinitionIndex = 74629;
 
 	enum class UIRoleInfoPageController_LeftLogic : ::System::Int32
 	{
+		LoadCallback = 2,
 		NoDelay = 0,
 		Delay = 1,
-		LoadCallback = 2,
 	};
 }

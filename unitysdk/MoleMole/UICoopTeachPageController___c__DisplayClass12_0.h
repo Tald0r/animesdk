@@ -5,12 +5,12 @@
 namespace MoleMole { class UICoopTeachPageController_Context; }
 namespace MoleMole { class UICoopTeachTabWidgetController_Data; }
 
-#define MOLEMOLE_UICOOPTEACHPAGECONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2C3D50)
-#define MOLEMOLE_UICOOPTEACHPAGECONTROLLER___C__DISPLAYCLASS12_0__INITINDEX_B__0_OFFSET UNITYSDK_OFFSET(0xB2C3D60)
+#define MOLEMOLE_UICOOPTEACHPAGECONTROLLER___C__DISPLAYCLASS12_0__CTOR_OFFSET UNITYSDK_OFFSET(0xACFD520)
+#define MOLEMOLE_UICOOPTEACHPAGECONTROLLER___C__DISPLAYCLASS12_0__INITINDEX_B__0_OFFSET UNITYSDK_OFFSET(0xACFD530)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICoopTeachPageController___c__DisplayClass12_0_TypeDefinitionIndex = 78249;
+	inline static constexpr unsigned int UICoopTeachPageController___c__DisplayClass12_0_TypeDefinitionIndex = 78238;
 
 	class UICoopTeachPageController___c__DisplayClass12_0 : public ::System::Object
 	{

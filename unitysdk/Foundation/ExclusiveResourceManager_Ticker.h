@@ -5,12 +5,12 @@
 
 namespace Foundation { class ExclusiveResourceManager; }
 
-#define FOUNDATION_EXCLUSIVERESOURCEMANAGER_TICKER_DOTICK_OFFSET UNITYSDK_OFFSET(0x1AF47DF0)
-#define FOUNDATION_EXCLUSIVERESOURCEMANAGER_TICKER__CTOR_OFFSET UNITYSDK_OFFSET(0x1AF47E30)
+#define FOUNDATION_EXCLUSIVERESOURCEMANAGER_TICKER_DOTICK_OFFSET UNITYSDK_OFFSET(0x1B4C3CF0)
+#define FOUNDATION_EXCLUSIVERESOURCEMANAGER_TICKER__CTOR_OFFSET UNITYSDK_OFFSET(0x1B4C3D30)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ExclusiveResourceManager_Ticker_TypeDefinitionIndex = 8870;
+	inline static constexpr unsigned int ExclusiveResourceManager_Ticker_TypeDefinitionIndex = 8794;
 
 	class ExclusiveResourceManager_Ticker : public ::Foundation::TickFunction_1<::Foundation::ETickingGroup>
 	{

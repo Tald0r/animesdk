@@ -7,22 +7,22 @@ namespace FlowCanvas { class FlowOutput; }
 namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 
-#define FLOWCANVAS_NODES_MOUSEEVENTS_GET_NAME_OFFSET UNITYSDK_OFFSET(0x19FE8BC0)
-#define FLOWCANVAS_NODES_MOUSEEVENTS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19FE8C90)
-#define FLOWCANVAS_NODES_MOUSEEVENTS_UPDATE_OFFSET UNITYSDK_OFFSET(0x19FE8D20)
-#define FLOWCANVAS_NODES_MOUSEEVENTS__CTOR_OFFSET UNITYSDK_OFFSET(0x19FE8D30)
+#define FLOWCANVAS_NODES_MOUSEEVENTS_GET_NAME_OFFSET UNITYSDK_OFFSET(0x1A601C60)
+#define FLOWCANVAS_NODES_MOUSEEVENTS_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A601D30)
+#define FLOWCANVAS_NODES_MOUSEEVENTS_UPDATE_OFFSET UNITYSDK_OFFSET(0x1A601DC0)
+#define FLOWCANVAS_NODES_MOUSEEVENTS__CTOR_OFFSET UNITYSDK_OFFSET(0x1A601DD0)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int MouseEvents_TypeDefinitionIndex = 26784;
+	inline static constexpr unsigned int MouseEvents_TypeDefinitionIndex = 26627;
 
 	class MouseEvents : public ::FlowCanvas::Nodes::EventNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* down; // 0xA8
-		::NodeCanvas::Framework::BBParameter_1<::FlowCanvas::Nodes::MouseEvents_ButtonKeys>* buttonKey; // 0xB0
-		::FlowCanvas::FlowOutput* up; // 0xB8
-		::FlowCanvas::FlowOutput* pressed; // 0xC0
+		::NodeCanvas::Framework::BBParameter_1<::FlowCanvas::Nodes::MouseEvents_ButtonKeys>* buttonKey; // 0xA8
+		::FlowCanvas::FlowOutput* down; // 0xB0
+		::FlowCanvas::FlowOutput* pressed; // 0xB8
+		::FlowCanvas::FlowOutput* up; // 0xC0
 
 		::System::Void _ctor()
 		{

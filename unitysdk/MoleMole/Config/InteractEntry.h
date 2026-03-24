@@ -10,37 +10,37 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_INTERACTENTRY_CREATEINTERACTINSTANCE_OFFSET UNITYSDK_OFFSET(0x6253F80)
-#define MOLEMOLE_CONFIG_INTERACTENTRY_GETACTIONLIST_OFFSET UNITYSDK_OFFSET(0x62540C0)
-#define MOLEMOLE_CONFIG_INTERACTENTRY_GETEFFINTERACTRANGE_OFFSET UNITYSDK_OFFSET(0x6253EF0)
-#define MOLEMOLE_CONFIG_INTERACTENTRY_GETVALUELIST_OFFSET UNITYSDK_OFFSET(0x6254140)
-#define MOLEMOLE_CONFIG_INTERACTENTRY_GET_ISSUPPORTREPEAT_OFFSET UNITYSDK_OFFSET(0x6253E70)
-#define MOLEMOLE_CONFIG_INTERACTENTRY_TOSTRING_OFFSET UNITYSDK_OFFSET(0x6254000)
-#define MOLEMOLE_CONFIG_INTERACTENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0x62541C0)
-#define MOLEMOLE_CONFIG_INTERACTENTRY___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x62541F0)
+#define MOLEMOLE_CONFIG_INTERACTENTRY_CREATEINTERACTINSTANCE_OFFSET UNITYSDK_OFFSET(0xC2419F0)
+#define MOLEMOLE_CONFIG_INTERACTENTRY_GETACTIONLIST_OFFSET UNITYSDK_OFFSET(0xC241B30)
+#define MOLEMOLE_CONFIG_INTERACTENTRY_GETEFFINTERACTRANGE_OFFSET UNITYSDK_OFFSET(0xC241960)
+#define MOLEMOLE_CONFIG_INTERACTENTRY_GETVALUELIST_OFFSET UNITYSDK_OFFSET(0xC241BB0)
+#define MOLEMOLE_CONFIG_INTERACTENTRY_GET_ISSUPPORTREPEAT_OFFSET UNITYSDK_OFFSET(0xC2418E0)
+#define MOLEMOLE_CONFIG_INTERACTENTRY_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC241A70)
+#define MOLEMOLE_CONFIG_INTERACTENTRY__CTOR_OFFSET UNITYSDK_OFFSET(0xC241C30)
+#define MOLEMOLE_CONFIG_INTERACTENTRY___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0xC241C60)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int InteractEntry_TypeDefinitionIndex = 76148;
+	inline static constexpr unsigned int InteractEntry_TypeDefinitionIndex = 40711;
 
 	class InteractEntry : public ::System::Object
 	{
 	public:
-		::Il2CppArray<::System::String*>* fcEventArray; // 0x10
-		::System::Collections::Generic::List_1<::System::String*>* ZoneTagWhiteList; // 0x18
-		::System::String* interactName; // 0x20
-		::Il2CppArray<::System::String*>* addAbilityArray; // 0x28
-		::MoleMole::Config::InteractEntryMode* mode; // 0x30
-		::System::String* interactShowName; // 0x38
-		::System::Collections::Generic::List_1<::System::String*>* ZoneTagBlackList; // 0x40
-		::System::Single limitSourceMaxAngle; // 0x48
-		::MoleMole::Config::InteractTriggerMode triggerMode; // 0x4C
-		::System::Single excludeSourceMaxAngle; // 0x50
-		::UnityEngine::Vector3 offset; // 0x54
-		::System::Single maxAngle; // 0x60
-		::System::Single maxHeight; // 0x64
-		::System::Single interactRange; // 0x68
-		::System::Boolean limitSourceDirection; // 0x6C
+		::Il2CppArray<::System::String*>* addAbilityArray; // 0x10
+		::System::String* interactName; // 0x18
+		::System::Collections::Generic::List_1<::System::String*>* ZoneTagWhiteList; // 0x20
+		::System::String* interactShowName; // 0x28
+		::Il2CppArray<::System::String*>* fcEventArray; // 0x30
+		::System::Collections::Generic::List_1<::System::String*>* ZoneTagBlackList; // 0x38
+		::MoleMole::Config::InteractEntryMode* mode; // 0x40
+		::System::Boolean limitSourceDirection; // 0x48
+		::UnityEngine::Vector3 offset; // 0x4C
+		::System::Single excludeSourceMaxAngle; // 0x58
+		::System::Single maxHeight; // 0x5C
+		::System::Single limitSourceMaxAngle; // 0x60
+		::System::Single maxAngle; // 0x64
+		::MoleMole::Config::InteractTriggerMode triggerMode; // 0x68
+		::System::Single interactRange; // 0x6C
 		::System::Int32 interactCount; // 0x70
 
 		::System::Void _ctor()

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Config/ConfigSurfGameItemAction.h"
 
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEHITTRAPANIMATIONACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x805FE20)
-#define MOLEMOLE_CONFIG_CONFIGSURFGAMEHITTRAPANIMATIONACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x805FF30)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEHITTRAPANIMATIONACTION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x9D12F60)
+#define MOLEMOLE_CONFIG_CONFIGSURFGAMEHITTRAPANIMATIONACTION__CTOR_OFFSET UNITYSDK_OFFSET(0x9D13070)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSurfGameHitTrapAnimationAction_TypeDefinitionIndex = 58540;
+	inline static constexpr unsigned int ConfigSurfGameHitTrapAnimationAction_TypeDefinitionIndex = 68373;
 
 	class ConfigSurfGameHitTrapAnimationAction : public ::MoleMole::Config::ConfigSurfGameItemAction
 	{

@@ -3,31 +3,31 @@
 #include "unitysdk/Enum_3_CDAC16D6E8EB95EB.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-class Class_1_3CDBAA6BC10A7F83;
+class Class_1_2CCC5D7984CDCED4;
 class Class_2_D89CCC627A66D0AD;
 namespace MoleMole { class UIGeneralTokenContext; }
 namespace MoleMole { class UITokenShowConfig; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIROLEINFOPAGECONTEXT_CONSTRUCT_OFFSET UNITYSDK_OFFSET(0xA721FD0)
-#define MOLEMOLE_UIROLEINFOPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA722350)
+#define MOLEMOLE_UIROLEINFOPAGECONTEXT_CONSTRUCT_OFFSET UNITYSDK_OFFSET(0xAAC9110)
+#define MOLEMOLE_UIROLEINFOPAGECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xAAC9490)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIRoleInfoPageContext_TypeDefinitionIndex = 77527;
+	inline static constexpr unsigned int UIRoleInfoPageContext_TypeDefinitionIndex = 41236;
 
 	class UIRoleInfoPageContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Class_2_D89CCC627A66D0AD* avatarData; // 0x28
-		::System::Collections::Generic::List_1<::Class_1_3CDBAA6BC10A7F83*>* _allItems; // 0x30
-		::System::Boolean forcePreviewMode; // 0x38
-		::System::Boolean forceFriendPreviewMode; // 0x39
-		::System::Boolean IsFadeInWithBlack; // 0x3A
-		::System::Boolean forceClickWeapon; // 0x3B
-		::System::Boolean forceClickEquip; // 0x3C
-		::Enum_3_CDAC16D6E8EB95EB _usage; // 0x40
-		::System::Int32 targetSubType; // 0x44
+		::System::Collections::Generic::List_1<::Class_1_2CCC5D7984CDCED4*>* _allItems; // 0x28
+		::Class_2_D89CCC627A66D0AD* avatarData; // 0x30
+		::Enum_3_CDAC16D6E8EB95EB _usage; // 0x38
+		::System::Int32 targetSubType; // 0x3C
+		::System::Boolean forcePreviewMode; // 0x40
+		::System::Boolean forceFriendPreviewMode; // 0x41
+		::System::Boolean forceClickEquip; // 0x42
+		::System::Boolean forceClickWeapon; // 0x43
+		::System::Boolean IsFadeInWithBlack; // 0x44
 
 		::System::Void _ctor()
 		{

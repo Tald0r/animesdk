@@ -4,20 +4,20 @@
 
 namespace Foundation { class SystemReaderWriterLockSlim; }
 
-#define FOUNDATION_UNREAL_FTHREADSAFENAMEPOOL_GETINSTANCE_OFFSET UNITYSDK_OFFSET(0x1A796010)
-#define FOUNDATION_UNREAL_FTHREADSAFENAMEPOOL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A796070)
-#define FOUNDATION_UNREAL_FTHREADSAFENAMEPOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1A795F10)
+#define FOUNDATION_UNREAL_FTHREADSAFENAMEPOOL_GETINSTANCE_OFFSET UNITYSDK_OFFSET(0x1AD78ED0)
+#define FOUNDATION_UNREAL_FTHREADSAFENAMEPOOL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AD78F30)
+#define FOUNDATION_UNREAL_FTHREADSAFENAMEPOOL__CTOR_OFFSET UNITYSDK_OFFSET(0x1AD78DD0)
 
 namespace Foundation::Unreal
 {
-	inline static constexpr unsigned int FThreadSafeNamePool_TypeDefinitionIndex = 8792;
+	inline static constexpr unsigned int FThreadSafeNamePool_TypeDefinitionIndex = 8813;
 
 	class FThreadSafeNamePool : public ::Foundation::Unreal::FNamePoolBase_1<::Foundation::SystemReaderWriterLockSlim*>
 	{
 	public:
 		static ::Foundation::Unreal::FThreadSafeNamePool** StaticGet_Instance()
 		{
-			return (::Foundation::Unreal::FThreadSafeNamePool**)Il2CppClass::FromTypeDefinitionIndex(FThreadSafeNamePool_TypeDefinitionIndex)->GetStaticField(0x7DD0);
+			return (::Foundation::Unreal::FThreadSafeNamePool**)Il2CppClass::FromTypeDefinitionIndex(FThreadSafeNamePool_TypeDefinitionIndex)->GetStaticField(0x7E10);
 		}
 
 		::System::Void _ctor()

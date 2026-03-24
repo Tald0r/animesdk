@@ -3,7 +3,7 @@
 
 namespace RootMotion::FinalIK
 {
-	inline static constexpr unsigned int AimController_AimJointType_TypeDefinitionIndex = 35139;
+	inline static constexpr unsigned int AimController_AimJointType_TypeDefinitionIndex = 36141;
 
 	enum class AimController_AimJointType : ::System::Int32
 	{

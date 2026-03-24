@@ -6,15 +6,15 @@
 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_7B58B56E62248330_OFFSET UNITYSDK_OFFSET(0x681CD90)
-#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_944725D8BEE125D5_OFFSET UNITYSDK_OFFSET(0x681CDC0)
-#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_AF081070273CE162_OFFSET UNITYSDK_OFFSET(0x681CDA0)
-#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_C74E50CBD41F0264_OFFSET UNITYSDK_OFFSET(0x681CD80)
-#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_DA401FEFA3B30845_OFFSET UNITYSDK_OFFSET(0x681CD70)
-#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x681CDD0)
-#define CLASS_2_F8FDA7DB08D27C5C__CTOR_OFFSET UNITYSDK_OFFSET(0x681CCE0)
+#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_7B58B56E62248330_OFFSET UNITYSDK_OFFSET(0x82EFEC0)
+#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_944725D8BEE125D5_OFFSET UNITYSDK_OFFSET(0x82EFEA0)
+#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_AF081070273CE162_OFFSET UNITYSDK_OFFSET(0x82EFED0)
+#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_C74E50CBD41F0264_OFFSET UNITYSDK_OFFSET(0x82EFE80)
+#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_DA401FEFA3B30845_OFFSET UNITYSDK_OFFSET(0x82EFE90)
+#define CLASS_2_F8FDA7DB08D27C5C_METHOD_2_F0088C88851A7DFB_OFFSET UNITYSDK_OFFSET(0x82EFEB0)
+#define CLASS_2_F8FDA7DB08D27C5C__CTOR_OFFSET UNITYSDK_OFFSET(0x82EFDF0)
 
-inline static constexpr unsigned int Class_2_F8FDA7DB08D27C5C_TypeDefinitionIndex = 49202;
+inline static constexpr unsigned int Class_2_F8FDA7DB08D27C5C_TypeDefinitionIndex = 62037;
 
 class Class_2_F8FDA7DB08D27C5C : public ::Class_1_8A3658A741325FC2
 {
@@ -28,24 +28,14 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C__CTOR_OFFSET))(this);
 	}
 
-	::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>* Method_2_DA401FEFA3B30845()
-	{
-		return ((::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_DA401FEFA3B30845_OFFSET))(this);
-	}
-
 	::System::Void Method_2_C74E50CBD41F0264(::System::Boolean a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::Boolean))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_C74E50CBD41F0264_OFFSET))(this, a1);
 	}
 
-	::System::Void Method_2_7B58B56E62248330(::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>* a1)
+	::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>* Method_2_DA401FEFA3B30845()
 	{
-		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>*))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_7B58B56E62248330_OFFSET))(this, a1);
-	}
-
-	::MoleMole::HollowChessboard::HollowCell Method_2_AF081070273CE162()
-	{
-		return ((::MoleMole::HollowChessboard::HollowCell(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_AF081070273CE162_OFFSET))(this);
+		return ((::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>*(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_DA401FEFA3B30845_OFFSET))(this);
 	}
 
 	::System::Void Method_2_944725D8BEE125D5(::MoleMole::HollowChessboard::HollowCell a1)
@@ -56,5 +46,15 @@ public:
 	::System::Boolean Method_2_F0088C88851A7DFB()
 	{
 		return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_F0088C88851A7DFB_OFFSET))(this);
+	}
+
+	::System::Void Method_2_7B58B56E62248330(::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>* a1)
+	{
+		return ((::System::Void(*)(::PVOID, ::System::Collections::Generic::List_1<::MoleMole::HollowChessboard::HollowEntityMoveComponent_MoveCmd>*))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_7B58B56E62248330_OFFSET))(this, a1);
+	}
+
+	::MoleMole::HollowChessboard::HollowCell Method_2_AF081070273CE162()
+	{
+		return ((::MoleMole::HollowChessboard::HollowCell(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_2_F8FDA7DB08D27C5C_METHOD_2_AF081070273CE162_OFFSET))(this);
 	}
 };

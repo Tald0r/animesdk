@@ -14,38 +14,38 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Collections::Generic { template <typename T> class HashSet_1; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x62A5E60)
-#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x62A5E70)
-#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x62A6340)
-#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x62A6660)
-#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x62A6620)
+#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xCAD8640)
+#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xCAD8650)
+#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xCAD8B20)
+#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xCAD8E40)
+#define MOLEMOLE_CONFIG_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_ANIMATORZONEJOYSTICKDIRANGLEOFFSETZONE_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xCAD8E00)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex = 38479;
+	inline static constexpr unsigned int AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex = 72977;
 
 	class AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::AnimatorZoneJoyStickDirAngleOffsetZone*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43200);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::HashSet_1<::System::String*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45BE0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43208);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Collections::Generic::List_1<::MoleMole::Config::AnimatorStateTimeSegment*>*>*>*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45BE8);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Type*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43210);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer4()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43218);
+			return (::Sirenix::Serialization::Serializer_1<::System::Type*>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45BF0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x43220);
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45BF8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer4()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(AnimatorZoneJoyStickDirAngleOffsetZone_AnimatorZoneJoyStickDirAngleOffsetZone_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x45C00);
 		}
 
 		::System::Void _ctor()

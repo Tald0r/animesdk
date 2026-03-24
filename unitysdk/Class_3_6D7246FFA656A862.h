@@ -6,24 +6,24 @@ namespace MiHoYo::SDK { class JSONObject; }
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 
-#define CLASS_3_6D7246FFA656A862_METHOD_3_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0xBA4A3D0)
-#define CLASS_3_6D7246FFA656A862_METHOD_3_45AA2F5085C2C40D_OFFSET UNITYSDK_OFFSET(0xBA4A460)
-#define CLASS_3_6D7246FFA656A862_METHOD_3_5E657A2D9C0A02DF_OFFSET UNITYSDK_OFFSET(0xBA4AAE0)
-#define CLASS_3_6D7246FFA656A862_METHOD_3_7D201B4343E63821_OFFSET UNITYSDK_OFFSET(0xBA4A3E0)
-#define CLASS_3_6D7246FFA656A862_METHOD_3_D0CD9A971CA3B1CF_OFFSET UNITYSDK_OFFSET(0xBA4AAD0)
-#define CLASS_3_6D7246FFA656A862__CTOR_OFFSET UNITYSDK_OFFSET(0xBA4A3F0)
+#define CLASS_3_6D7246FFA656A862_METHOD_3_126AB3935214AA22_OFFSET UNITYSDK_OFFSET(0x69B7360)
+#define CLASS_3_6D7246FFA656A862_METHOD_3_45AA2F5085C2C40D_OFFSET UNITYSDK_OFFSET(0x69B73F0)
+#define CLASS_3_6D7246FFA656A862_METHOD_3_5E657A2D9C0A02DF_OFFSET UNITYSDK_OFFSET(0x69B7A60)
+#define CLASS_3_6D7246FFA656A862_METHOD_3_7D201B4343E63821_OFFSET UNITYSDK_OFFSET(0x69B7370)
+#define CLASS_3_6D7246FFA656A862_METHOD_3_D0CD9A971CA3B1CF_OFFSET UNITYSDK_OFFSET(0x69B7B70)
+#define CLASS_3_6D7246FFA656A862__CTOR_OFFSET UNITYSDK_OFFSET(0x69B7380)
 
-inline static constexpr unsigned int Class_3_6D7246FFA656A862_TypeDefinitionIndex = 38547;
+inline static constexpr unsigned int Class_3_6D7246FFA656A862_TypeDefinitionIndex = 70385;
 
 class Class_3_6D7246FFA656A862 : public ::Class_2_2E40794F1F3D2434
 {
 public:
-	::System::Action_2<::System::Int32, ::System::String*>* Field_3_1; // 0x30
-	::System::String* Field_3_5; // 0x38
-	::System::String* Field_3_0; // 0x40
-	::MiHoYo::SDK::JSONObject* Field_3_2; // 0x48
-	::System::Int32 Field_3_3; // 0x50
-	::System::Int32 Field_3_4; // 0x54
+	::System::String* Field_3_5; // 0x30
+	::System::String* Field_3_0; // 0x38
+	::MiHoYo::SDK::JSONObject* Field_3_2; // 0x40
+	::System::Action_2<::System::Int32, ::System::String*>* Field_3_1; // 0x48
+	::System::Int32 Field_3_4; // 0x50
+	::System::Int32 Field_3_3; // 0x54
 
 	::System::Void _ctor(::System::Action_2<::System::Int32, ::System::String*>* a1, ::MiHoYo::SDK::JSONObject* a2, ::System::Int32 a3, ::System::Int32 a4, ::System::String* a5)
 	{
@@ -45,13 +45,13 @@ public:
 		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_6D7246FFA656A862_METHOD_3_45AA2F5085C2C40D_OFFSET))(this);
 	}
 
-	::System::Void Method_3_D0CD9A971CA3B1CF()
-	{
-		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_6D7246FFA656A862_METHOD_3_D0CD9A971CA3B1CF_OFFSET))(this);
-	}
-
 	::System::Void Method_3_5E657A2D9C0A02DF(::System::String* a1)
 	{
 		return ((::System::Void(*)(::PVOID, ::System::String*))((::PBYTE)hIl2Cpp + CLASS_3_6D7246FFA656A862_METHOD_3_5E657A2D9C0A02DF_OFFSET))(this, a1);
+	}
+
+	::System::Void Method_3_D0CD9A971CA3B1CF()
+	{
+		return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + CLASS_3_6D7246FFA656A862_METHOD_3_D0CD9A971CA3B1CF_OFFSET))(this);
 	}
 };

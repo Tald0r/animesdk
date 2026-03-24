@@ -6,7 +6,7 @@
 
 namespace Dest::Math
 {
-	inline static constexpr unsigned int Ray2Circle2Intr_TypeDefinitionIndex = 31638;
+	inline static constexpr unsigned int Ray2Circle2Intr_TypeDefinitionIndex = 32592;
 
 	struct alignas(4) Ray2Circle2Intr
 	{

@@ -5,9 +5,9 @@
 namespace MoleMole { class UIWindowController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define CLASS_1_42C045EB606087D3_CLASS_1_7C5C9A1E6C79DD4D__CTOR_OFFSET UNITYSDK_OFFSET(0x9102840)
+#define CLASS_1_42C045EB606087D3_CLASS_1_7C5C9A1E6C79DD4D__CTOR_OFFSET UNITYSDK_OFFSET(0xB6537D0)
 
-inline static constexpr unsigned int Class_1_42C045EB606087D3_Class_1_7C5C9A1E6C79DD4D_TypeDefinitionIndex = 61250;
+inline static constexpr unsigned int Class_1_42C045EB606087D3_Class_1_7C5C9A1E6C79DD4D_TypeDefinitionIndex = 80230;
 
 class Class_1_42C045EB606087D3_Class_1_7C5C9A1E6C79DD4D : public ::System::Object
 {

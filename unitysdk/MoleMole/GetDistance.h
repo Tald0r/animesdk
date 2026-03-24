@@ -10,30 +10,30 @@ namespace BehaviorDesigner::Runtime { class SharedString; }
 namespace MoleMole { class SharedGameEntity; }
 namespace System { class String; }
 
-#define MOLEMOLE_GETDISTANCE_GETTARGET1POS_OFFSET UNITYSDK_OFFSET(0x9913560)
-#define MOLEMOLE_GETDISTANCE_GETTARGET2POS_OFFSET UNITYSDK_OFFSET(0x99147C0)
-#define MOLEMOLE_GETDISTANCE_GETTARGETPOSITION_OFFSET UNITYSDK_OFFSET(0x9913670)
-#define MOLEMOLE_GETDISTANCE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x99133F0)
-#define MOLEMOLE_GETDISTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0x99148D0)
-#define MOLEMOLE_GETDISTANCE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x9914920)
+#define MOLEMOLE_GETDISTANCE_GETTARGET1POS_OFFSET UNITYSDK_OFFSET(0xA50E590)
+#define MOLEMOLE_GETDISTANCE_GETTARGET2POS_OFFSET UNITYSDK_OFFSET(0xA50F7E0)
+#define MOLEMOLE_GETDISTANCE_GETTARGETPOSITION_OFFSET UNITYSDK_OFFSET(0xA50E6A0)
+#define MOLEMOLE_GETDISTANCE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA50E420)
+#define MOLEMOLE_GETDISTANCE__CTOR_OFFSET UNITYSDK_OFFSET(0xA50F8F0)
+#define MOLEMOLE_GETDISTANCE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0xA50F940)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int GetDistance_TypeDefinitionIndex = 39490;
+	inline static constexpr unsigned int GetDistance_TypeDefinitionIndex = 67731;
 
 	class GetDistance : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
 		::MoleMole::SharedGameEntity* SharedOwnerEntity; // 0x58
 		::System::String* TargetTypeCustomKey1; // 0x60
-		::BehaviorDesigner::Runtime::SharedFloat* StoreResult; // 0x68
+		::System::String* Target1AttachPoint; // 0x68
 		::BehaviorDesigner::Runtime::SharedString* TargetAnchorName1; // 0x70
-		::System::String* TargetTypeCustomKey2; // 0x78
-		::System::String* Target2AttachPoint; // 0x80
-		::System::String* Target1AttachPoint; // 0x88
-		::BehaviorDesigner::Runtime::SharedString* TargetAnchorName2; // 0x90
-		::MoleMole::AIMoveTargetType TargetType1; // 0x98
-		::MoleMole::AIMoveTargetType TargetType2; // 0x9C
+		::BehaviorDesigner::Runtime::SharedString* TargetAnchorName2; // 0x78
+		::BehaviorDesigner::Runtime::SharedFloat* StoreResult; // 0x80
+		::System::String* TargetTypeCustomKey2; // 0x88
+		::System::String* Target2AttachPoint; // 0x90
+		::MoleMole::AIMoveTargetType TargetType2; // 0x98
+		::MoleMole::AIMoveTargetType TargetType1; // 0x9C
 
 		::System::Void _ctor()
 		{

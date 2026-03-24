@@ -5,11 +5,11 @@
 class Class_3_0ECDE22EF9FEEAE2_1;
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIMAINCITYREVIVALREWARDDETAILSCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xCFCD300)
+#define MOLEMOLE_UIMAINCITYREVIVALREWARDDETAILSCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xBE2B5E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainCityRevivalRewardDetailsContext_TypeDefinitionIndex = 49334;
+	inline static constexpr unsigned int UIMainCityRevivalRewardDetailsContext_TypeDefinitionIndex = 40020;
 
 	class UIMainCityRevivalRewardDetailsContext : public ::MoleMole::UIControllerContextBase
 	{

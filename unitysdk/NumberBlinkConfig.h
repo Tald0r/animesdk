@@ -6,18 +6,18 @@ class BlinkPhase;
 class NumberBlinkInfos;
 namespace UnityEngine { class AnimationCurve; }
 
-#define NUMBERBLINKCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6B701F0)
+#define NUMBERBLINKCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x7823E70)
 
-inline static constexpr unsigned int NumberBlinkConfig_TypeDefinitionIndex = 40405;
+inline static constexpr unsigned int NumberBlinkConfig_TypeDefinitionIndex = 72249;
 
 class NumberBlinkConfig : public ::System::Object
 {
 public:
-	::BlinkPhase* FastPhase; // 0x10
-	::NumberBlinkInfos* RightInfos; // 0x18
-	::BlinkPhase* SlowPhase; // 0x20
-	::NumberBlinkInfos* LeftInfos; // 0x28
-	::UnityEngine::AnimationCurve* Curve; // 0x30
+	::NumberBlinkInfos* RightInfos; // 0x10
+	::NumberBlinkInfos* LeftInfos; // 0x18
+	::UnityEngine::AnimationCurve* Curve; // 0x20
+	::BlinkPhase* FastPhase; // 0x28
+	::BlinkPhase* SlowPhase; // 0x30
 	::System::Single BlinkFrequencyThreshold; // 0x38
 	::System::Single Duration; // 0x3C
 

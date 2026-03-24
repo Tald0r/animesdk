@@ -4,12 +4,12 @@
 
 class Class_2_6D99A03C58ED2B6E_2;
 
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__DISPLAYCLASS6_2__CTOR_OFFSET UNITYSDK_OFFSET(0x7550130)
-#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__DISPLAYCLASS6_2__ONUIOPEN_B__4_OFFSET UNITYSDK_OFFSET(0x7550140)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__DISPLAYCLASS6_2__CTOR_OFFSET UNITYSDK_OFFSET(0x992AF50)
+#define MOLEMOLE_UIWORKBENCHTRUSTDEGREEPAGECONTROLLER___C__DISPLAYCLASS6_2__ONUIOPEN_B__4_OFFSET UNITYSDK_OFFSET(0x992AF60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIWorkBenchTrustDegreePageController___c__DisplayClass6_2_TypeDefinitionIndex = 64167;
+	inline static constexpr unsigned int UIWorkBenchTrustDegreePageController___c__DisplayClass6_2_TypeDefinitionIndex = 80395;
 
 	class UIWorkBenchTrustDegreePageController___c__DisplayClass6_2 : public ::System::Object
 	{

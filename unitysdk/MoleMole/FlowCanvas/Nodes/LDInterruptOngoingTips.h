@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/CallableActionNode.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERRUPTONGOINGTIPS_INVOKE_OFFSET UNITYSDK_OFFSET(0xE0F1CC0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERRUPTONGOINGTIPS__CTOR_OFFSET UNITYSDK_OFFSET(0xE0F1E90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERRUPTONGOINGTIPS_INVOKE_OFFSET UNITYSDK_OFFSET(0x7A569E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDINTERRUPTONGOINGTIPS__CTOR_OFFSET UNITYSDK_OFFSET(0x7A56BB0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDInterruptOngoingTips_TypeDefinitionIndex = 42771;
+	inline static constexpr unsigned int LDInterruptOngoingTips_TypeDefinitionIndex = 61852;
 
 	class LDInterruptOngoingTips : public ::FlowCanvas::Nodes::CallableActionNode
 	{

@@ -4,7 +4,7 @@
 #include "unitysdk/UnityEngine/RaycastHit.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-inline static constexpr unsigned int Class_2_A22179201E71E027_Struct_2_E7B322677315A924_TypeDefinitionIndex = 53899;
+inline static constexpr unsigned int Class_2_A22179201E71E027_Struct_2_E7B322677315A924_TypeDefinitionIndex = 60891;
 
 struct alignas(4) Class_2_A22179201E71E027_Struct_2_E7B322677315A924
 {

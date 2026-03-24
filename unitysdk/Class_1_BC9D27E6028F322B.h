@@ -5,9 +5,9 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_BC9D27E6028F322B__CTOR_OFFSET UNITYSDK_OFFSET(0xA0358C0)
+#define CLASS_1_BC9D27E6028F322B__CTOR_OFFSET UNITYSDK_OFFSET(0x8BD2650)
 
-inline static constexpr unsigned int Class_1_BC9D27E6028F322B_TypeDefinitionIndex = 63873;
+inline static constexpr unsigned int Class_1_BC9D27E6028F322B_TypeDefinitionIndex = 48139;
 
 class Class_1_BC9D27E6028F322B : public ::System::Object
 {

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIABYSSS3ROLESELECTPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA4B4F80)
+#define MOLEMOLE_UIABYSSS3ROLESELECTPAGECONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD22AFC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAbyssS3RoleSelectPageController_Context_TypeDefinitionIndex = 62449;
+	inline static constexpr unsigned int UIAbyssS3RoleSelectPageController_Context_TypeDefinitionIndex = 79987;
 
 	class UIAbyssS3RoleSelectPageController_Context : public ::MoleMole::UIControllerContextBase
 	{

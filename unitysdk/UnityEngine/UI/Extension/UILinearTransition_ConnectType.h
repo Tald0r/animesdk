@@ -3,13 +3,13 @@
 
 namespace UnityEngine::UI::Extension
 {
-	inline static constexpr unsigned int UILinearTransition_ConnectType_TypeDefinitionIndex = 63745;
+	inline static constexpr unsigned int UILinearTransition_ConnectType_TypeDefinitionIndex = 56971;
 
 	enum class UILinearTransition_ConnectType : ::System::Int32
 	{
-		TwoToOne = 2,
 		OneToOne = 0,
 		OneToTwo = 1,
 		TwoToTwo = 3,
+		TwoToOne = 2,
 	};
 }

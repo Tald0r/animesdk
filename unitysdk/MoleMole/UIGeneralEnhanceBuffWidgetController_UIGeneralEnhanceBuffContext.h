@@ -2,23 +2,23 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_1_79526D80B8F6897C;
+class Class_1_5A585DEB704A07E2;
 
-#define MOLEMOLE_UIGENERALENHANCEBUFFWIDGETCONTROLLER_UIGENERALENHANCEBUFFCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8A13130)
+#define MOLEMOLE_UIGENERALENHANCEBUFFWIDGETCONTROLLER_UIGENERALENHANCEBUFFCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xB2B9610)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGeneralEnhanceBuffWidgetController_UIGeneralEnhanceBuffContext_TypeDefinitionIndex = 53949;
+	inline static constexpr unsigned int UIGeneralEnhanceBuffWidgetController_UIGeneralEnhanceBuffContext_TypeDefinitionIndex = 53132;
 
 	class UIGeneralEnhanceBuffWidgetController_UIGeneralEnhanceBuffContext : public ::System::Object
 	{
 	public:
-		::Class_1_79526D80B8F6897C* BindNode; // 0x10
-		::System::Int32 ItemId; // 0x18
-		::System::Boolean IsLock; // 0x1C
-		::System::Boolean IsEmpty; // 0x1D
-		::System::Boolean IsRecommend; // 0x1E
-		::System::Boolean IsAdd; // 0x1F
+		::Class_1_5A585DEB704A07E2* BindNode; // 0x10
+		::System::Boolean IsRecommend; // 0x18
+		::System::Boolean IsEmpty; // 0x19
+		::System::Boolean IsLock; // 0x1A
+		::System::Boolean IsAdd; // 0x1B
+		::System::Int32 ItemId; // 0x1C
 
 		::System::Void _ctor()
 		{

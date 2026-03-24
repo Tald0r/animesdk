@@ -1,21 +1,21 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_43BD383C98B4C0C5_26_Enum_3_EF803B0EBE3E5C11.h"
+#include "unitysdk/Class_1_43BD383C98B4C0C5_55_Enum_3_EF803B0EBE3E5C11.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONINPUTDELAYWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA3D8C50)
+#define MOLEMOLE_UIMUSICGAMEGENERALCALIBRATIONINPUTDELAYWIDGETCONTROLLER_CONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8EECA40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMusicGameGeneralCalibrationInputDelayWidgetController_Context_TypeDefinitionIndex = 46146;
+	inline static constexpr unsigned int UIMusicGameGeneralCalibrationInputDelayWidgetController_Context_TypeDefinitionIndex = 45547;
 
 	class UIMusicGameGeneralCalibrationInputDelayWidgetController_Context : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Action* OnFinishAllChecker; // 0x28
-		::Class_1_43BD383C98B4C0C5_26_Enum_3_EF803B0EBE3E5C11 GameType; // 0x30
+		::Class_1_43BD383C98B4C0C5_55_Enum_3_EF803B0EBE3E5C11 GameType; // 0x30
 		::System::Int32 checkerCount; // 0x34
 
 		::System::Void _ctor()

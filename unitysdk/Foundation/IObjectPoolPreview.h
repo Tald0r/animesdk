@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int IObjectPoolPreview_TypeDefinitionIndex = 7926;
+	inline static constexpr unsigned int IObjectPoolPreview_TypeDefinitionIndex = 7750;
 
 	class IObjectPoolPreview
 	{

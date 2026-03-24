@@ -5,11 +5,11 @@
 
 namespace UnityEngine::Events { template <typename T> class UnityAction_1; }
 
-#define MOLEMOLE_UIYOROZUYADIFFICULTENTRANCECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x69B5600)
+#define MOLEMOLE_UIYOROZUYADIFFICULTENTRANCECONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xA1410B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIYorozuyaDifficultEntranceContext_TypeDefinitionIndex = 46060;
+	inline static constexpr unsigned int UIYorozuyaDifficultEntranceContext_TypeDefinitionIndex = 41923;
 
 	class UIYorozuyaDifficultEntranceContext : public ::MoleMole::UIControllerContextBase
 	{

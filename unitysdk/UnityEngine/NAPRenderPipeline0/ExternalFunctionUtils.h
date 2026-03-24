@@ -6,11 +6,11 @@
 namespace UnityEngine::NAPRenderPipeline0 { class ExternalFunctionUtils_EditorDrawLightMapScaleCallback; }
 namespace UnityEngine::Rendering { class CommandBuffer; }
 
-#define UNITYENGINE_NAPRENDERPIPELINE0_EXTERNALFUNCTIONUTILS_DRAWLIGHTMAPSCALECALLBACK_OFFSET UNITYSDK_OFFSET(0x19E3ABC0)
+#define UNITYENGINE_NAPRENDERPIPELINE0_EXTERNALFUNCTIONUTILS_DRAWLIGHTMAPSCALECALLBACK_OFFSET UNITYSDK_OFFSET(0x1A403920)
 
 namespace UnityEngine::NAPRenderPipeline0
 {
-	inline static constexpr unsigned int ExternalFunctionUtils_TypeDefinitionIndex = 6026;
+	inline static constexpr unsigned int ExternalFunctionUtils_TypeDefinitionIndex = 6029;
 
 	class ExternalFunctionUtils : public ::System::Object
 	{

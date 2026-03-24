@@ -4,7 +4,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int FTuple_1_TypeDefinitionIndex = 7826;
+	inline static constexpr unsigned int FTuple_1_TypeDefinitionIndex = 7945;
 
 	template <typename T1>
 	struct FTuple_1

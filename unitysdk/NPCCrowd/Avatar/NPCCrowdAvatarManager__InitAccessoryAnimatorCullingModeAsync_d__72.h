@@ -8,19 +8,19 @@ namespace NPCCrowd::Accessories { class NPCAccessory; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 namespace UnityEngine { class Animator; }
 
-#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__INITACCESSORYANIMATORCULLINGMODEASYNC_D__72_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x36F8F0)
-#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__INITACCESSORYANIMATORCULLINGMODEASYNC_D__72_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__INITACCESSORYANIMATORCULLINGMODEASYNC_D__72_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x351490)
+#define NPCCROWD_AVATAR_NPCCROWDAVATARMANAGER__INITACCESSORYANIMATORCULLINGMODEASYNC_D__72_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
 namespace NPCCrowd::Avatar
 {
-	inline static constexpr unsigned int NPCCrowdAvatarManager__InitAccessoryAnimatorCullingModeAsync_d__72_TypeDefinitionIndex = 75879;
+	inline static constexpr unsigned int NPCCrowdAvatarManager__InitAccessoryAnimatorCullingModeAsync_d__72_TypeDefinitionIndex = 51674;
 
 	struct alignas(8) NPCCrowdAvatarManager__InitAccessoryAnimatorCullingModeAsync_d__72
 	{
-		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x10
-		::UnityEngine::Animator* _animator_5__2; // 0x18
-		::NPCCrowd::Accessories::NPCAccessory* accessory; // 0x20
-		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x28
+		::Cysharp::Threading::Tasks::UniTask_Awaiter __u__1; // 0x10
+		::UnityEngine::Animator* _animator_5__2; // 0x20
+		::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskVoidMethodBuilder __t__builder; // 0x28
+		::NPCCrowd::Accessories::NPCAccessory* accessory; // 0x30
 		::System::Int32 __1__state; // 0x38
 
 		::System::Void MoveNext()

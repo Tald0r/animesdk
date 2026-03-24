@@ -5,11 +5,11 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_EXCEPTIONINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1ABC3830)
+#define FOUNDATION_EXCEPTIONINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1B216670)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ExceptionInfo_TypeDefinitionIndex = 7768;
+	inline static constexpr unsigned int ExceptionInfo_TypeDefinitionIndex = 8308;
 
 	class ExceptionInfo : public ::System::Object
 	{

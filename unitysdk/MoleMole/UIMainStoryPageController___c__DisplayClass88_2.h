@@ -8,21 +8,21 @@ namespace MoleMole { class UIMainStoryPageController___c__DisplayClass88_1; }
 namespace System { template <typename T1, typename T2, typename T3> class Action_3; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS88_2__CTOR_OFFSET UNITYSDK_OFFSET(0xB23F090)
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS88_2__GOTOSUBITEM_B__0_OFFSET UNITYSDK_OFFSET(0xB23F0A0)
-#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS88_2__GOTOSUBITEM_B__1_OFFSET UNITYSDK_OFFSET(0xB23F420)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS88_2__CTOR_OFFSET UNITYSDK_OFFSET(0x7473F50)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS88_2__GOTOSUBITEM_B__0_OFFSET UNITYSDK_OFFSET(0x7473F60)
+#define MOLEMOLE_UIMAINSTORYPAGECONTROLLER___C__DISPLAYCLASS88_2__GOTOSUBITEM_B__1_OFFSET UNITYSDK_OFFSET(0x74742E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass88_2_TypeDefinitionIndex = 71459;
+	inline static constexpr unsigned int UIMainStoryPageController___c__DisplayClass88_2_TypeDefinitionIndex = 40425;
 
 	class UIMainStoryPageController___c__DisplayClass88_2 : public ::System::Object
 	{
 	public:
 		::System::Action_3<::System::Int32, ::System::Int32, ::Enum_3_24C014472A8CBA5E>* __9__1; // 0x10
-		::System::Collections::Generic::List_1<::System::Int32>* performIDs; // 0x18
-		::MoleMole::UIMainStoryPageController___c__DisplayClass88_1* CS___8__locals2; // 0x20
-		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>* archivePerforms; // 0x28
+		::MoleMole::UIMainStoryPageController___c__DisplayClass88_1* CS___8__locals2; // 0x18
+		::System::Collections::Generic::List_1<::System::ValueTuple_2<::System::Int32, ::System::Int32>>* archivePerforms; // 0x20
+		::System::Collections::Generic::List_1<::System::Int32>* performIDs; // 0x28
 
 		::System::Void _ctor()
 		{

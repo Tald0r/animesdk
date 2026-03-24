@@ -9,26 +9,26 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION_DO_OFFSET UNITYSDK_OFFSET(0xC2C4720)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xC2C4570)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xC2C4A00)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION__REGISTERPORTS_B__7_0_OFFSET UNITYSDK_OFFSET(0xC2C4A20)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION__REGISTERPORTS_B__7_1_OFFSET UNITYSDK_OFFSET(0xC2C4D70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION_DO_OFFSET UNITYSDK_OFFSET(0xB8A01F0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xB8A0040)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION__CTOR_OFFSET UNITYSDK_OFFSET(0xB8A04C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION__REGISTERPORTS_B__7_0_OFFSET UNITYSDK_OFFSET(0xB8A04E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDNAPCAMERASEQUENCEJUMPTOSECTION__REGISTERPORTS_B__7_1_OFFSET UNITYSDK_OFFSET(0xB8A0830)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDNapCameraSequenceJumpToSection_TypeDefinitionIndex = 40755;
+	inline static constexpr unsigned int LDNapCameraSequenceJumpToSection_TypeDefinitionIndex = 47289;
 
 	class LDNapCameraSequenceJumpToSection : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
-		::FlowCanvas::FlowOutput* _onFailed; // 0xA8
-		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::NapCameraSequenceHandle>* _handle; // 0xB0
+		::FlowCanvas::FlowInput* _in; // 0xA8
+		::FlowCanvas::FlowOutput* _onFailed; // 0xB0
 		::FlowCanvas::FlowOutput* _out; // 0xB8
 		::FlowCanvas::ValueInput_1<::System::Boolean>* _toEnd; // 0xC0
 		::FlowCanvas::ValueInput_1<::System::String*>* _section; // 0xC8
-		::FlowCanvas::FlowInput* _in; // 0xD0
-		::System::String* _errorMessage; // 0xD8
+		::System::String* _errorMessage; // 0xD0
+		::FlowCanvas::ValueInput_1<::MoleMole::FlowCanvas::Nodes::NapCameraSequenceHandle>* _handle; // 0xD8
 
 		::System::Void _ctor()
 		{

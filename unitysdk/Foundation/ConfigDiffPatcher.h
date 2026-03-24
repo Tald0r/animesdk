@@ -4,21 +4,21 @@
 
 namespace System { class String; }
 
-#define FOUNDATION_CONFIGDIFFPATCHER_GETDEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x91C8000)
-#define FOUNDATION_CONFIGDIFFPATCHER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x91C80D0)
-#define FOUNDATION_CONFIGDIFFPATCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x91C80C0)
-#define FOUNDATION_CONFIGDIFFPATCHER___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x91C81D0)
+#define FOUNDATION_CONFIGDIFFPATCHER_GETDEFAULTCONFIG_OFFSET UNITYSDK_OFFSET(0x71A4050)
+#define FOUNDATION_CONFIGDIFFPATCHER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x71A4120)
+#define FOUNDATION_CONFIGDIFFPATCHER__CTOR_OFFSET UNITYSDK_OFFSET(0x71A4110)
+#define FOUNDATION_CONFIGDIFFPATCHER___BASE_TOSTRING_OFFSET UNITYSDK_OFFSET(0x71A4220)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ConfigDiffPatcher_TypeDefinitionIndex = 65921;
+	inline static constexpr unsigned int ConfigDiffPatcher_TypeDefinitionIndex = 70302;
 
 	class ConfigDiffPatcher : public ::System::Object
 	{
 	public:
 		static ::Foundation::ConfigDiffPatcher** StaticGet__configDiffPatcher()
 		{
-			return (::Foundation::ConfigDiffPatcher**)Il2CppClass::FromTypeDefinitionIndex(ConfigDiffPatcher_TypeDefinitionIndex)->GetStaticField(0x2EA90);
+			return (::Foundation::ConfigDiffPatcher**)Il2CppClass::FromTypeDefinitionIndex(ConfigDiffPatcher_TypeDefinitionIndex)->GetStaticField(0x304E0);
 		}
 		::System::Int32 diffThreadCount; // 0x10
 		::System::Int32 timeSlice; // 0x14

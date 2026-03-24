@@ -7,22 +7,22 @@ namespace MiHoYo::SDK::Win { class LoginManager; }
 namespace System { class String; }
 namespace System { template <typename T1, typename T2> class Action_2; }
 
-#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1879FBC0)
-#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__ONREGISTERCOMPLETE_B__0_OFFSET UNITYSDK_OFFSET(0x1879FBD0)
-#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__ONREGISTERCOMPLETE_G__FAILCALLBACK_2_OFFSET UNITYSDK_OFFSET(0x187A1700)
-#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__ONREGISTERCOMPLETE_G__SUCCESSCALLBACK_1_OFFSET UNITYSDK_OFFSET(0x187A19D0)
+#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__CTOR_OFFSET UNITYSDK_OFFSET(0x18B811F0)
+#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__ONREGISTERCOMPLETE_B__0_OFFSET UNITYSDK_OFFSET(0x18B81200)
+#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__ONREGISTERCOMPLETE_G__FAILCALLBACK_2_OFFSET UNITYSDK_OFFSET(0x18B82D30)
+#define MIHOYO_SDK_WIN_LOGINMANAGER___C__DISPLAYCLASS76_0__ONREGISTERCOMPLETE_G__SUCCESSCALLBACK_1_OFFSET UNITYSDK_OFFSET(0x18B83000)
 
 namespace MiHoYo::SDK::Win
 {
-	inline static constexpr unsigned int LoginManager___c__DisplayClass76_0_TypeDefinitionIndex = 19072;
+	inline static constexpr unsigned int LoginManager___c__DisplayClass76_0_TypeDefinitionIndex = 19670;
 
 	class LoginManager___c__DisplayClass76_0 : public ::System::Object
 	{
 	public:
-		::System::String* authTicket; // 0x10
+		::MiHoYo::SDK::Win::LoginManager* __4__this; // 0x10
 		::System::String* username; // 0x18
-		::MiHoYo::SDK::Win::LoginManager* __4__this; // 0x20
-		::System::Action_2<::System::String*, ::System::Boolean>* customCallback; // 0x28
+		::System::Action_2<::System::String*, ::System::Boolean>* customCallback; // 0x20
+		::System::String* authTicket; // 0x28
 
 		::System::Void _ctor()
 		{

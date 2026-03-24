@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int AkAudioAPI_TypeDefinitionIndex = 29989;
+inline static constexpr unsigned int AkAudioAPI_TypeDefinitionIndex = 30942;
 
 enum class AkAudioAPI : ::System::Int32
 {

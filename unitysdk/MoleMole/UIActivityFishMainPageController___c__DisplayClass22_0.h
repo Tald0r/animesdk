@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_1699D6295DC3F818_3;
+class Class_3_1699D6295DC3F818;
 
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0xC8DBF30)
-#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__REFRESHWEAPONREWARD_B__0_OFFSET UNITYSDK_OFFSET(0xC8DC250)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__CTOR_OFFSET UNITYSDK_OFFSET(0x9884CA0)
+#define MOLEMOLE_UIACTIVITYFISHMAINPAGECONTROLLER___C__DISPLAYCLASS22_0__REFRESHWEAPONREWARD_B__0_OFFSET UNITYSDK_OFFSET(0x9884FC0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIActivityFishMainPageController___c__DisplayClass22_0_TypeDefinitionIndex = 78556;
+	inline static constexpr unsigned int UIActivityFishMainPageController___c__DisplayClass22_0_TypeDefinitionIndex = 38652;
 
 	class UIActivityFishMainPageController___c__DisplayClass22_0 : public ::System::Object
 	{
 	public:
-		::Class_3_1699D6295DC3F818_3* reward; // 0x10
+		::Class_3_1699D6295DC3F818* reward; // 0x10
 
 		::System::Void _ctor()
 		{

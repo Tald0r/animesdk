@@ -8,24 +8,24 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class Material; }
 
-#define CLASS_4_8D2109CF5D51E82F_METHOD_4_4343F372F34C05BF_1_OFFSET UNITYSDK_OFFSET(0x1385E5C0)
-#define CLASS_4_8D2109CF5D51E82F_METHOD_4_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x1385E140)
-#define CLASS_4_8D2109CF5D51E82F_METHOD_4_729ABA6AA3B854F7_OFFSET UNITYSDK_OFFSET(0x1385DC60)
-#define CLASS_4_8D2109CF5D51E82F_METHOD_4_936773021FAF4D21_OFFSET UNITYSDK_OFFSET(0x1385E1C0)
-#define CLASS_4_8D2109CF5D51E82F_METHOD_4_F4ADC37B63F4E9EF_OFFSET UNITYSDK_OFFSET(0x1385DBA0)
-#define CLASS_4_8D2109CF5D51E82F__CTOR_OFFSET UNITYSDK_OFFSET(0x1385E5B0)
+#define CLASS_4_8D2109CF5D51E82F_METHOD_4_4343F372F34C05BF_1_OFFSET UNITYSDK_OFFSET(0x7D06360)
+#define CLASS_4_8D2109CF5D51E82F_METHOD_4_4343F372F34C05BF_OFFSET UNITYSDK_OFFSET(0x7D05EA0)
+#define CLASS_4_8D2109CF5D51E82F_METHOD_4_729ABA6AA3B854F7_OFFSET UNITYSDK_OFFSET(0x7D059C0)
+#define CLASS_4_8D2109CF5D51E82F_METHOD_4_936773021FAF4D21_OFFSET UNITYSDK_OFFSET(0x7D05F20)
+#define CLASS_4_8D2109CF5D51E82F_METHOD_4_F4ADC37B63F4E9EF_OFFSET UNITYSDK_OFFSET(0x7D05900)
+#define CLASS_4_8D2109CF5D51E82F__CTOR_OFFSET UNITYSDK_OFFSET(0x7D06350)
 
-inline static constexpr unsigned int Class_4_8D2109CF5D51E82F_TypeDefinitionIndex = 52468;
+inline static constexpr unsigned int Class_4_8D2109CF5D51E82F_TypeDefinitionIndex = 51565;
 
 class Class_4_8D2109CF5D51E82F : public ::Class_3_BF86F633CB1E0F0F
 {
 public:
-	::Il2CppArray<::UnityEngine::Material*>* Field_4_1; // 0x48
-	::MoleMole::Config::ConfigCurveCtrlMatColorNode* Field_4_0; // 0x50
+	::MoleMole::Config::ConfigCurveCtrlMatColorNode* Field_4_0; // 0x48
+	::Il2CppArray<::UnityEngine::Material*>* Field_4_1; // 0x50
 	::System::Collections::Generic::Dictionary_2<::System::Int32, ::UnityEngine::Color>* Field_4_5; // 0x58
 	::System::String* Field_4_2; // 0x60
-	::System::Boolean Field_4_4; // 0x68
-	::UnityEngine::Color Field_4_3; // 0x6C
+	::UnityEngine::Color Field_4_3; // 0x68
+	::System::Boolean Field_4_4; // 0x78
 
 	::System::Void _ctor()
 	{

@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int ActivityCommonUIUtil_LevelChallengeStyle_TypeDefinitionIndex = 42396;
+inline static constexpr unsigned int ActivityCommonUIUtil_LevelChallengeStyle_TypeDefinitionIndex = 57669;
 
 enum class ActivityCommonUIUtil_LevelChallengeStyle : ::System::Int32
 {

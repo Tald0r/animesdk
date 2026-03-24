@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/FlowCanvas/ChessboardCallableActionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARD_UPDATEANTIVIRUSRATENUMANIMATION_INVOKE_OFFSET UNITYSDK_OFFSET(0xE864F30)
-#define MOLEMOLE_FLOWCANVAS_CHESSBOARD_UPDATEANTIVIRUSRATENUMANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0xE8650C0)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARD_UPDATEANTIVIRUSRATENUMANIMATION_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD33E00)
+#define MOLEMOLE_FLOWCANVAS_CHESSBOARD_UPDATEANTIVIRUSRATENUMANIMATION__CTOR_OFFSET UNITYSDK_OFFSET(0xCD33F90)
 
 namespace MoleMole::FlowCanvas
 {
-	inline static constexpr unsigned int ChessBoard_UpdateAntivirusRateNumAnimation_TypeDefinitionIndex = 41573;
+	inline static constexpr unsigned int ChessBoard_UpdateAntivirusRateNumAnimation_TypeDefinitionIndex = 60723;
 
 	class ChessBoard_UpdateAntivirusRateNumAnimation : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_1<::System::Boolean>
 	{

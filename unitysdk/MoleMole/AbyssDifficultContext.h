@@ -3,11 +3,11 @@
 #include "unitysdk/Enum_3_7EA3F9477E892234.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_ABYSSDIFFICULTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC3085A0)
+#define MOLEMOLE_ABYSSDIFFICULTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x9B90B40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AbyssDifficultContext_TypeDefinitionIndex = 41694;
+	inline static constexpr unsigned int AbyssDifficultContext_TypeDefinitionIndex = 72953;
 
 	class AbyssDifficultContext : public ::MoleMole::UIControllerContextBase
 	{

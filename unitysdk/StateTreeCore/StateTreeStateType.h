@@ -3,14 +3,14 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeStateType_TypeDefinitionIndex = 26975;
+	inline static constexpr unsigned int StateTreeStateType_TypeDefinitionIndex = 27890;
 
-	enum class StateTreeStateType : ::System::Int32
+	enum class StateTreeStateType : ::System::Byte
 	{
-		State = 0,
-		Group = 1,
-		Linked = 2,
-		LinkedAsset = 3,
-		Subtree = 4,
+		State = 0x0,
+		Group = 0x1,
+		Linked = 0x2,
+		LinkedAsset = 0x3,
+		Subtree = 0x4,
 	};
 }

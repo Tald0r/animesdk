@@ -7,12 +7,12 @@
 
 namespace System { class String; }
 
-#define PIPELINECAMERA_WORLDBASICCAMERADELTADATA_GET_FLAG_OFFSET UNITYSDK_OFFSET(0x90BC90)
-#define PIPELINECAMERA_WORLDBASICCAMERADELTADATA_UPDATE_OFFSET UNITYSDK_OFFSET(0x90BD00)
+#define PIPELINECAMERA_WORLDBASICCAMERADELTADATA_GET_FLAG_OFFSET UNITYSDK_OFFSET(0x937950)
+#define PIPELINECAMERA_WORLDBASICCAMERADELTADATA_UPDATE_OFFSET UNITYSDK_OFFSET(0x9379C0)
 
 namespace PipelineCamera
 {
-	inline static constexpr unsigned int WorldBasicCameraDeltaData_TypeDefinitionIndex = 34448;
+	inline static constexpr unsigned int WorldBasicCameraDeltaData_TypeDefinitionIndex = 35450;
 
 	struct alignas(4) WorldBasicCameraDeltaData
 	{

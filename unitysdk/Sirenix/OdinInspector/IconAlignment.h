@@ -3,7 +3,7 @@
 
 namespace Sirenix::OdinInspector
 {
-	inline static constexpr unsigned int IconAlignment_TypeDefinitionIndex = 7254;
+	inline static constexpr unsigned int IconAlignment_TypeDefinitionIndex = 7259;
 
 	enum class IconAlignment : ::System::Int32
 	{

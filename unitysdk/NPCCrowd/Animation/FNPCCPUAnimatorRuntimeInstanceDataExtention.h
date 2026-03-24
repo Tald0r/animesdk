@@ -4,11 +4,11 @@
 #include "unitysdk/NPCCrowd/Animation/FNPCCPUAnimatorRuntimeInstanceData.h"
 #include "unitysdk/System/Object.h"
 
-#define NPCCROWD_ANIMATION_FNPCCPUANIMATORRUNTIMEINSTANCEDATAEXTENTION_GETANIMCLIPDATA_OFFSET UNITYSDK_OFFSET(0x7646C00)
+#define NPCCROWD_ANIMATION_FNPCCPUANIMATORRUNTIMEINSTANCEDATAEXTENTION_GETANIMCLIPDATA_OFFSET UNITYSDK_OFFSET(0x8629020)
 
 namespace NPCCrowd::Animation
 {
-	inline static constexpr unsigned int FNPCCPUAnimatorRuntimeInstanceDataExtention_TypeDefinitionIndex = 61632;
+	inline static constexpr unsigned int FNPCCPUAnimatorRuntimeInstanceDataExtention_TypeDefinitionIndex = 47618;
 
 	class FNPCCPUAnimatorRuntimeInstanceDataExtention : public ::System::Object
 	{

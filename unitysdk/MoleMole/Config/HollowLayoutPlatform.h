@@ -3,15 +3,15 @@
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int HollowLayoutPlatform_TypeDefinitionIndex = 52969;
+	inline static constexpr unsigned int HollowLayoutPlatform_TypeDefinitionIndex = 41792;
 
 	enum class HollowLayoutPlatform : ::System::Int32
 	{
-		MobileConsole = 4,
-		Mobile = 1,
-		VirtualStick = 5,
 		Console = 3,
-		None = 0,
 		PC = 2,
+		None = 0,
+		VirtualStick = 5,
+		Mobile = 1,
+		MobileConsole = 4,
 	};
 }

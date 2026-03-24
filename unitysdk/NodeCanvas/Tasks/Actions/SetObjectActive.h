@@ -6,13 +6,13 @@
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define NODECANVAS_TASKS_ACTIONS_SETOBJECTACTIVE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19E9F4C0)
-#define NODECANVAS_TASKS_ACTIONS_SETOBJECTACTIVE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19E9F580)
-#define NODECANVAS_TASKS_ACTIONS_SETOBJECTACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x19E9F670)
+#define NODECANVAS_TASKS_ACTIONS_SETOBJECTACTIVE_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A48CC40)
+#define NODECANVAS_TASKS_ACTIONS_SETOBJECTACTIVE_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A48CD00)
+#define NODECANVAS_TASKS_ACTIONS_SETOBJECTACTIVE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A48CDF0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int SetObjectActive_TypeDefinitionIndex = 26859;
+	inline static constexpr unsigned int SetObjectActive_TypeDefinitionIndex = 27319;
 
 	class SetObjectActive : public ::NodeCanvas::Framework::ActionTask_1<::UnityEngine::Transform*>
 	{

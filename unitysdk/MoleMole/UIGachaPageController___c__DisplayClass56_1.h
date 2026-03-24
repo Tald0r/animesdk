@@ -6,7 +6,7 @@ namespace MoleMole { class UIGachaWidgetContextBase; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGachaPageController___c__DisplayClass56_1_TypeDefinitionIndex = 39393;
+	inline static constexpr unsigned int UIGachaPageController___c__DisplayClass56_1_TypeDefinitionIndex = 55230;
 
 	struct alignas(8) UIGachaPageController___c__DisplayClass56_1
 	{

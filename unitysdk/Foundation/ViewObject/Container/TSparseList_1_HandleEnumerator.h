@@ -7,7 +7,7 @@ namespace System { class Object; }
 
 namespace Foundation::ViewObject::Container
 {
-	inline static constexpr unsigned int TSparseList_1_HandleEnumerator_TypeDefinitionIndex = 39653;
+	inline static constexpr unsigned int TSparseList_1_HandleEnumerator_TypeDefinitionIndex = 49671;
 
 	template <typename T>
 	struct TSparseList_1_HandleEnumerator

@@ -3,7 +3,7 @@
 
 namespace MiHoYo::SDK
 {
-	inline static constexpr unsigned int SecurityTunnel_TunnelState_TypeDefinitionIndex = 33705;
+	inline static constexpr unsigned int SecurityTunnel_TunnelState_TypeDefinitionIndex = 34678;
 
 	enum class SecurityTunnel_TunnelState : ::System::Int32
 	{

@@ -1,17 +1,17 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Struct_2_5B421F8FFABD4CA3_2.h"
+#include "unitysdk/Struct_2_5B421F8FFABD4CA3_3.h"
 #include "unitysdk/System/Object.h"
 
 namespace MoleMole { class UIShoppingMallV2PageController___c__DisplayClass38_0; }
 
-#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__CTOR_OFFSET UNITYSDK_OFFSET(0x7514390)
-#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__1_OFFSET UNITYSDK_OFFSET(0x75143A0)
-#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__2_OFFSET UNITYSDK_OFFSET(0x75143E0)
+#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__CTOR_OFFSET UNITYSDK_OFFSET(0xAE48650)
+#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__1_OFFSET UNITYSDK_OFFSET(0xAE48660)
+#define MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__2_OFFSET UNITYSDK_OFFSET(0xAE486A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallV2PageController___c__DisplayClass38_2_TypeDefinitionIndex = 73546;
+	inline static constexpr unsigned int UIShoppingMallV2PageController___c__DisplayClass38_2_TypeDefinitionIndex = 66910;
 
 	class UIShoppingMallV2PageController___c__DisplayClass38_2 : public ::System::Object
 	{
@@ -29,9 +29,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__1_OFFSET))(this);
 		}
 
-		::System::Void _DoBuy_b__2(::Struct_2_5B421F8FFABD4CA3_2 e)
+		::System::Void _DoBuy_b__2(::Struct_2_5B421F8FFABD4CA3_3 e)
 		{
-			return ((::System::Void(*)(::PVOID, ::Struct_2_5B421F8FFABD4CA3_2))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__2_OFFSET))(this, e);
+			return ((::System::Void(*)(::PVOID, ::Struct_2_5B421F8FFABD4CA3_3))((::PBYTE)hIl2Cpp + MOLEMOLE_UISHOPPINGMALLV2PAGECONTROLLER___C__DISPLAYCLASS38_2__DOBUY_B__2_OFFSET))(this, e);
 		}
 	};
 }

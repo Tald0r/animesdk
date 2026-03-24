@@ -5,12 +5,12 @@
 namespace MoleMole { class MonoGamepadCustomList; }
 namespace MoleMole { class UIHollowDevelopBagDialogPopWindowController___c__DisplayClass31_0; }
 
-#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS31_2__CTOR_OFFSET UNITYSDK_OFFSET(0x892D310)
-#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS31_2__REFRESHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0x892D320)
+#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS31_2__CTOR_OFFSET UNITYSDK_OFFSET(0x97F7880)
+#define MOLEMOLE_UIHOLLOWDEVELOPBAGDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS31_2__REFRESHVIEW_B__1_OFFSET UNITYSDK_OFFSET(0x97F7890)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHollowDevelopBagDialogPopWindowController___c__DisplayClass31_2_TypeDefinitionIndex = 61354;
+	inline static constexpr unsigned int UIHollowDevelopBagDialogPopWindowController___c__DisplayClass31_2_TypeDefinitionIndex = 55011;
 
 	class UIHollowDevelopBagDialogPopWindowController___c__DisplayClass31_2 : public ::System::Object
 	{

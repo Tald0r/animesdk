@@ -9,25 +9,30 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class AnimationCurve; }
 
-#define CLASS_1_D6930CD0CD384DC5_METHOD_1_0CC1EA4372265873_OFFSET UNITYSDK_OFFSET(0x6D50550)
-#define CLASS_1_D6930CD0CD384DC5_METHOD_1_299DA8FF1D721BED_OFFSET UNITYSDK_OFFSET(0x6D4FD90)
-#define CLASS_1_D6930CD0CD384DC5_METHOD_1_D65F18E3B0189BE5_OFFSET UNITYSDK_OFFSET(0x6D50080)
-#define CLASS_1_D6930CD0CD384DC5_METHOD_1_FDDC5A41F149A0CC_OFFSET UNITYSDK_OFFSET(0x6D4FC50)
-#define CLASS_1_D6930CD0CD384DC5__CCTOR_OFFSET UNITYSDK_OFFSET(0x6D4FBB0)
+#define CLASS_1_D6930CD0CD384DC5_METHOD_1_0CC1EA4372265873_OFFSET UNITYSDK_OFFSET(0x82D4EB0)
+#define CLASS_1_D6930CD0CD384DC5_METHOD_1_299DA8FF1D721BED_OFFSET UNITYSDK_OFFSET(0x82D5180)
+#define CLASS_1_D6930CD0CD384DC5_METHOD_1_D65F18E3B0189BE5_OFFSET UNITYSDK_OFFSET(0x82D5470)
+#define CLASS_1_D6930CD0CD384DC5_METHOD_1_FDDC5A41F149A0CC_OFFSET UNITYSDK_OFFSET(0x82D5040)
+#define CLASS_1_D6930CD0CD384DC5__CCTOR_OFFSET UNITYSDK_OFFSET(0x82D4E10)
 
-inline static constexpr unsigned int Class_1_D6930CD0CD384DC5_TypeDefinitionIndex = 69071;
+inline static constexpr unsigned int Class_1_D6930CD0CD384DC5_TypeDefinitionIndex = 65016;
 
 class Class_1_D6930CD0CD384DC5 : public ::System::Object
 {
 public:
 	static ::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::AnimationCurve*>** StaticGet_Field_1_0()
 	{
-		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_D6930CD0CD384DC5_TypeDefinitionIndex)->GetStaticField(0x3B980);
+		return (::System::Collections::Generic::Dictionary_2<::System::String*, ::UnityEngine::AnimationCurve*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_D6930CD0CD384DC5_TypeDefinitionIndex)->GetStaticField(0x2CCD0);
 	}
 
 	static ::System::Void _cctor()
 	{
 		return ((::System::Void(*)())((::PBYTE)hIl2Cpp + CLASS_1_D6930CD0CD384DC5__CCTOR_OFFSET))();
+	}
+
+	static ::UnityEngine::AnimationCurve* Method_1_0CC1EA4372265873(::System::String* a1)
+	{
+		return ((::UnityEngine::AnimationCurve*(*)(::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_D6930CD0CD384DC5_METHOD_1_0CC1EA4372265873_OFFSET))(a1);
 	}
 
 	static ::System::Void Method_1_FDDC5A41F149A0CC(::System::Single a1, ::System::Action_1<::System::Single>* a2, ::System::Action_1<::System::String*>* a3, ::System::String* a4)
@@ -38,11 +43,6 @@ public:
 	static ::System::Single Method_1_D65F18E3B0189BE5(::System::String* a1, ::MoleMole::Battle::Entity* a2, ::MoleMole::Battle::Entity* a3)
 	{
 		return ((::System::Single(*)(::System::String*, ::MoleMole::Battle::Entity*, ::MoleMole::Battle::Entity*))((::PBYTE)hIl2Cpp + CLASS_1_D6930CD0CD384DC5_METHOD_1_D65F18E3B0189BE5_OFFSET))(a1, a2, a3);
-	}
-
-	static ::UnityEngine::AnimationCurve* Method_1_0CC1EA4372265873(::System::String* a1)
-	{
-		return ((::UnityEngine::AnimationCurve*(*)(::System::String*))((::PBYTE)hIl2Cpp + CLASS_1_D6930CD0CD384DC5_METHOD_1_0CC1EA4372265873_OFFSET))(a1);
 	}
 
 	static ::System::Void Method_1_299DA8FF1D721BED(::System::Boolean a1, ::System::Action* a2)

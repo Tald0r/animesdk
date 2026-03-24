@@ -6,7 +6,7 @@ namespace System { class String; }
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int SurfAttachedEffect_TypeDefinitionIndex = 68023;
+	inline static constexpr unsigned int SurfAttachedEffect_TypeDefinitionIndex = 45684;
 
 	struct alignas(8) SurfAttachedEffect
 	{

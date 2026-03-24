@@ -5,24 +5,24 @@
 namespace MoleMole::Utils { class MonsterCardUtils_CardGroup; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define MOLEMOLE_UTILS_MONSTERCARDUTILS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x73F4BF0)
-#define MOLEMOLE_UTILS_MONSTERCARDUTILS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x73F4C30)
-#define MOLEMOLE_UTILS_MONSTERCARDUTILS___C__SORTMONSTERCARD_B__3_0_OFFSET UNITYSDK_OFFSET(0x73F4C40)
+#define MOLEMOLE_UTILS_MONSTERCARDUTILS___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x7BEB500)
+#define MOLEMOLE_UTILS_MONSTERCARDUTILS___C__CTOR_OFFSET UNITYSDK_OFFSET(0x7BEB540)
+#define MOLEMOLE_UTILS_MONSTERCARDUTILS___C__SORTMONSTERCARD_B__3_0_OFFSET UNITYSDK_OFFSET(0x7BEB550)
 
 namespace MoleMole::Utils
 {
-	inline static constexpr unsigned int MonsterCardUtils___c_TypeDefinitionIndex = 44536;
+	inline static constexpr unsigned int MonsterCardUtils___c_TypeDefinitionIndex = 69819;
 
 	class MonsterCardUtils___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::Utils::MonsterCardUtils___c** StaticGet___9()
-		{
-			return (::MoleMole::Utils::MonsterCardUtils___c**)Il2CppClass::FromTypeDefinitionIndex(MonsterCardUtils___c_TypeDefinitionIndex)->GetStaticField(0x36DC0);
-		}
 		static ::System::Comparison_1<::MoleMole::Utils::MonsterCardUtils_CardGroup*>** StaticGet___9__3_0()
 		{
-			return (::System::Comparison_1<::MoleMole::Utils::MonsterCardUtils_CardGroup*>**)Il2CppClass::FromTypeDefinitionIndex(MonsterCardUtils___c_TypeDefinitionIndex)->GetStaticField(0x36DC8);
+			return (::System::Comparison_1<::MoleMole::Utils::MonsterCardUtils_CardGroup*>**)Il2CppClass::FromTypeDefinitionIndex(MonsterCardUtils___c_TypeDefinitionIndex)->GetStaticField(0x39A50);
+		}
+		static ::MoleMole::Utils::MonsterCardUtils___c** StaticGet___9()
+		{
+			return (::MoleMole::Utils::MonsterCardUtils___c**)Il2CppClass::FromTypeDefinitionIndex(MonsterCardUtils___c_TypeDefinitionIndex)->GetStaticField(0x39A58);
 		}
 
 		static ::System::Void _cctor()

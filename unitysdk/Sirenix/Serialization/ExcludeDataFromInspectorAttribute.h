@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define SIRENIX_SERIALIZATION_EXCLUDEDATAFROMINSPECTORATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B01F9C0)
+#define SIRENIX_SERIALIZATION_EXCLUDEDATAFROMINSPECTORATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B62BC20)
 
 namespace Sirenix::Serialization
 {
-	inline static constexpr unsigned int ExcludeDataFromInspectorAttribute_TypeDefinitionIndex = 7368;
+	inline static constexpr unsigned int ExcludeDataFromInspectorAttribute_TypeDefinitionIndex = 7373;
 
 	class ExcludeDataFromInspectorAttribute : public ::System::Attribute
 	{

@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Attribute.h"
 
-#define UNITYENGINE_ANIMATIONS_NOTKEYABLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B139ED0)
+#define UNITYENGINE_ANIMATIONS_NOTKEYABLEATTRIBUTE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B756430)
 
 namespace UnityEngine::Animations
 {
-	inline static constexpr unsigned int NotKeyableAttribute_TypeDefinitionIndex = 6581;
+	inline static constexpr unsigned int NotKeyableAttribute_TypeDefinitionIndex = 6585;
 
 	class NotKeyableAttribute : public ::System::Attribute
 	{

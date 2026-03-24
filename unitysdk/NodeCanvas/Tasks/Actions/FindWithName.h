@@ -6,19 +6,19 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace System { class String; }
 namespace UnityEngine { class GameObject; }
 
-#define NODECANVAS_TASKS_ACTIONS_FINDWITHNAME_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1B4D90)
-#define NODECANVAS_TASKS_ACTIONS_FINDWITHNAME_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A1B4FE0)
-#define NODECANVAS_TASKS_ACTIONS_FINDWITHNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1B5090)
+#define NODECANVAS_TASKS_ACTIONS_FINDWITHNAME_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A1221A0)
+#define NODECANVAS_TASKS_ACTIONS_FINDWITHNAME_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A1223F0)
+#define NODECANVAS_TASKS_ACTIONS_FINDWITHNAME__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1224A0)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int FindWithName_TypeDefinitionIndex = 25785;
+	inline static constexpr unsigned int FindWithName_TypeDefinitionIndex = 26979;
 
 	class FindWithName : public ::NodeCanvas::Framework::ActionTask
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* saveAs; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::String*>* gameObjectName; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::String*>* gameObjectName; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::UnityEngine::GameObject*>* saveAs; // 0x68
 
 		::System::Void _ctor()
 		{

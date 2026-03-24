@@ -8,7 +8,7 @@ namespace System { class String; }
 
 namespace MoleMole::Utils::CameraSequence
 {
-	inline static constexpr unsigned int CameraSequence_VideoItem_ComposeConfigItem_TypeDefinitionIndex = 55065;
+	inline static constexpr unsigned int CameraSequence_VideoItem_ComposeConfigItem_TypeDefinitionIndex = 46076;
 
 	struct alignas(8) CameraSequence_VideoItem_ComposeConfigItem
 	{

@@ -2,14 +2,14 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIGeneralShopDescWidgetController.h"
 
-class Class_2_208CC9941471731A_576;
+class Class_2_208CC9941471731A_966;
 
-#define MOLEMOLE_UIVHSDESCWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET UNITYSDK_OFFSET(0x88135A0)
-#define MOLEMOLE_UIVHSDESCWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0x88137D0)
+#define MOLEMOLE_UIVHSDESCWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET UNITYSDK_OFFSET(0xABC0880)
+#define MOLEMOLE_UIVHSDESCWIDGETCONTROLLER__CTOR_OFFSET UNITYSDK_OFFSET(0xABC0AB0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVHSDescWidgetController_TypeDefinitionIndex = 56172;
+	inline static constexpr unsigned int UIVHSDescWidgetController_TypeDefinitionIndex = 77889;
 
 	class UIVHSDescWidgetController : public ::MoleMole::UIGeneralShopDescWidgetController
 	{
@@ -19,9 +19,9 @@ namespace MoleMole
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSDESCWIDGETCONTROLLER__CTOR_OFFSET))(this);
 		}
 
-		::System::Void SetByTemplate(::Class_2_208CC9941471731A_576* template_)
+		::System::Void SetByTemplate(::Class_2_208CC9941471731A_966* template_)
 		{
-			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_576*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSDESCWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET))(this, template_);
+			return ((::System::Void(*)(::PVOID, ::Class_2_208CC9941471731A_966*))((::PBYTE)hIl2Cpp + MOLEMOLE_UIVHSDESCWIDGETCONTROLLER_SETBYTEMPLATE_OFFSET))(this, template_);
 		}
 	};
 }

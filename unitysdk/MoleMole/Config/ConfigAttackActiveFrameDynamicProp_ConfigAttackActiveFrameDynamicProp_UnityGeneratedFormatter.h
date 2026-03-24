@@ -9,34 +9,34 @@ namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x8048290)
-#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x80482A0)
-#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x8048FE0)
-#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x8049790)
-#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x8049750)
+#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x9CFACD0)
+#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x9CFACE0)
+#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x9CFBA20)
+#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x9CFC1D0)
+#define MOLEMOLE_CONFIG_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_CONFIGATTACKACTIVEFRAMEDYNAMICPROP_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x9CFC190)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex = 69296;
+	inline static constexpr unsigned int ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex = 49216;
 
 	class ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigAttackActiveFrameDynamicProp*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer0()
+		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer3()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x383F0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x383F8);
+			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B000);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38400);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B008);
 		}
-		static ::Sirenix::Serialization::Serializer_1<::System::String*>** StaticGet_CachedSerializer3()
+		static ::Sirenix::Serialization::Serializer_1<::System::Single>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x38408);
+			return (::Sirenix::Serialization::Serializer_1<::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B010);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(ConfigAttackActiveFrameDynamicProp_ConfigAttackActiveFrameDynamicProp_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3B018);
 		}
 
 		::System::Void _ctor()

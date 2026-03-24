@@ -6,11 +6,11 @@ namespace MoleMole { class AvatarUIElementColor; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_CONFIG_CONFIGUIAVATAR_COLORCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0xE437F00)
+#define MOLEMOLE_CONFIG_CONFIGUIAVATAR_COLORCONFIGS__CTOR_OFFSET UNITYSDK_OFFSET(0x950F380)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigUIAvatar_ColorConfigs_TypeDefinitionIndex = 59395;
+	inline static constexpr unsigned int ConfigUIAvatar_ColorConfigs_TypeDefinitionIndex = 37430;
 
 	class ConfigUIAvatar_ColorConfigs : public ::System::Object
 	{

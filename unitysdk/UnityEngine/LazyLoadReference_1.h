@@ -4,7 +4,7 @@
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int LazyLoadReference_1_TypeDefinitionIndex = 5348;
+	inline static constexpr unsigned int LazyLoadReference_1_TypeDefinitionIndex = 5350;
 
 	template <typename T>
 	struct LazyLoadReference_1

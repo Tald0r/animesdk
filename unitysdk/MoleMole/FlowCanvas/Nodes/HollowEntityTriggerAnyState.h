@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYTRIGGERANYSTATE_INVOKE_OFFSET UNITYSDK_OFFSET(0x8AEFF00)
-#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYTRIGGERANYSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF0100)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYTRIGGERANYSTATE_INVOKE_OFFSET UNITYSDK_OFFSET(0x11646C50)
+#define MOLEMOLE_FLOWCANVAS_NODES_HOLLOWENTITYTRIGGERANYSTATE__CTOR_OFFSET UNITYSDK_OFFSET(0x11646E50)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int HollowEntityTriggerAnyState_TypeDefinitionIndex = 44823;
+	inline static constexpr unsigned int HollowEntityTriggerAnyState_TypeDefinitionIndex = 72301;
 
 	class HollowEntityTriggerAnyState : public ::MoleMole::FlowCanvas::ChessboardCallableActionNode_2<::System::UInt32, ::System::String*>
 	{

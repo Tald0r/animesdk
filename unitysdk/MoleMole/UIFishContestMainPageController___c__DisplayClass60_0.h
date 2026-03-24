@@ -5,18 +5,18 @@
 namespace MoleMole { class UIFishContestMainPageController; }
 namespace System { class String; }
 
-#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___C__DISPLAYCLASS60_0__CTOR_OFFSET UNITYSDK_OFFSET(0xBF706E0)
-#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___C__DISPLAYCLASS60_0__SHOWNEWTIPS_B__0_OFFSET UNITYSDK_OFFSET(0xBF706F0)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___C__DISPLAYCLASS60_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB2A7260)
+#define MOLEMOLE_UIFISHCONTESTMAINPAGECONTROLLER___C__DISPLAYCLASS60_0__SHOWNEWTIPS_B__0_OFFSET UNITYSDK_OFFSET(0xB2A7270)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFishContestMainPageController___c__DisplayClass60_0_TypeDefinitionIndex = 37504;
+	inline static constexpr unsigned int UIFishContestMainPageController___c__DisplayClass60_0_TypeDefinitionIndex = 67673;
 
 	class UIFishContestMainPageController___c__DisplayClass60_0 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIFishContestMainPageController* __4__this; // 0x10
-		::System::String* key; // 0x18
+		::System::String* key; // 0x10
+		::MoleMole::UIFishContestMainPageController* __4__this; // 0x18
 
 		::System::Void _ctor()
 		{

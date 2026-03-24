@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/NAPRenderPipeline0/ColorCurves_NativeSRP.h"
 
-#define UNITYENGINE_RENDERING_UNIVERSAL_COLORCURVES__CTOR_OFFSET UNITYSDK_OFFSET(0x17B6C280)
+#define UNITYENGINE_RENDERING_UNIVERSAL_COLORCURVES__CTOR_OFFSET UNITYSDK_OFFSET(0x17802880)
 
 namespace UnityEngine::Rendering::Universal
 {
-	inline static constexpr unsigned int ColorCurves_TypeDefinitionIndex = 28641;
+	inline static constexpr unsigned int ColorCurves_TypeDefinitionIndex = 29584;
 
 	class ColorCurves : public ::UnityEngine::NAPRenderPipeline0::ColorCurves_NativeSRP
 	{

@@ -8,7 +8,7 @@ namespace UnityEngine { class ParticleSystemRenderer; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int MonoEffectPluginTransform_SyncDataStruct_TypeDefinitionIndex = 55569;
+	inline static constexpr unsigned int MonoEffectPluginTransform_SyncDataStruct_TypeDefinitionIndex = 77762;
 
 	struct alignas(8) MonoEffectPluginTransform_SyncDataStruct
 	{

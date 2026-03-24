@@ -4,12 +4,12 @@
 
 namespace MoleMole { class UIFriendCardRowWidgetController; }
 
-#define MOLEMOLE_UIFRIENDCARDROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x95EE300)
-#define MOLEMOLE_UIFRIENDCARDROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHUI_B__0_OFFSET UNITYSDK_OFFSET(0x95EE310)
+#define MOLEMOLE_UIFRIENDCARDROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD569440)
+#define MOLEMOLE_UIFRIENDCARDROWWIDGETCONTROLLER___C__DISPLAYCLASS9_0__REFRESHUI_B__0_OFFSET UNITYSDK_OFFSET(0xD569450)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIFriendCardRowWidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 41933;
+	inline static constexpr unsigned int UIFriendCardRowWidgetController___c__DisplayClass9_0_TypeDefinitionIndex = 37762;
 
 	class UIFriendCardRowWidgetController___c__DisplayClass9_0 : public ::System::Object
 	{

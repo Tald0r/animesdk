@@ -13,214 +13,214 @@ namespace System::Reflection { class MethodInfo; }
 namespace UnityEngine { class Material; }
 namespace UnityEngine { class Renderer; }
 
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ADDSKIPMATERIALRENDERER_OFFSET UNITYSDK_OFFSET(0x1A73A7B0)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ADDSKIPMATERIAL_OFFSET UNITYSDK_OFFSET(0x1A73AAA0)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ENABLEENUMKEYWORD_OFFSET UNITYSDK_OFFSET(0x1A73D770)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_EXISTPROPERTYCHANGED_OFFSET UNITYSDK_OFFSET(0x1A73D150)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_GETPROPERTYVALUE_OFFSET UNITYSDK_OFFSET(0x1A73D1B0)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISAVATARSHADER_OFFSET UNITYSDK_OFFSET(0x1A73CC80)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISOBJECTSCENESHADER_OFFSET UNITYSDK_OFFSET(0x1A73D630)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISSCENESHADER_OFFSET UNITYSDK_OFFSET(0x1A73D4F0)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISSTANDARDAVATARSHADER_OFFSET UNITYSDK_OFFSET(0x1A73CF00)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISUIAVATARSHADER_OFFSET UNITYSDK_OFFSET(0x1A73D010)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_LOADMATERIALCONFIG_OFFSET UNITYSDK_OFFSET(0x1A73A350)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_MATERIALCHANGED_OFFSET UNITYSDK_OFFSET(0x1A73AD90)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_PROPERTYTOGGLED_OFFSET UNITYSDK_OFFSET(0x1A73D270)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_SETFXUNCLIPKEYWORDS_OFFSET UNITYSDK_OFFSET(0x1A73A360)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A739AA0)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL__MATERIALCHANGED_G__ADDKEYWORDSENABLEANDRECORDERINIT_62_1_OFFSET UNITYSDK_OFFSET(0x1A73CDC0)
-#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL__MATERIALCHANGED_G__ADDSHADERENABLEANDRECORDERINIT_62_0_OFFSET UNITYSDK_OFFSET(0x1A73D3D0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ADDSKIPMATERIALRENDERER_OFFSET UNITYSDK_OFFSET(0x1ACDE530)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ADDSKIPMATERIAL_OFFSET UNITYSDK_OFFSET(0x1ACDE820)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ENABLEENUMKEYWORD_OFFSET UNITYSDK_OFFSET(0x1ACE14B0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_EXISTPROPERTYCHANGED_OFFSET UNITYSDK_OFFSET(0x1ACE0EA0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_GETPROPERTYVALUE_OFFSET UNITYSDK_OFFSET(0x1ACE0F00)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISAVATARSHADER_OFFSET UNITYSDK_OFFSET(0x1ACE09D0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISOBJECTSCENESHADER_OFFSET UNITYSDK_OFFSET(0x1ACE1370)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISSCENESHADER_OFFSET UNITYSDK_OFFSET(0x1ACE1230)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISSTANDARDAVATARSHADER_OFFSET UNITYSDK_OFFSET(0x1ACE0C50)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_ISUIAVATARSHADER_OFFSET UNITYSDK_OFFSET(0x1ACE0D60)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_LOADMATERIALCONFIG_OFFSET UNITYSDK_OFFSET(0x1ACDE0D0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_MATERIALCHANGED_OFFSET UNITYSDK_OFFSET(0x1ACDEB10)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_PROPERTYTOGGLED_OFFSET UNITYSDK_OFFSET(0x1ACE0FC0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL_SETFXUNCLIPKEYWORDS_OFFSET UNITYSDK_OFFSET(0x1ACDE0E0)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL__CCTOR_OFFSET UNITYSDK_OFFSET(0x1ACDD820)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL__MATERIALCHANGED_G__ADDKEYWORDSENABLEANDRECORDERINIT_62_1_OFFSET UNITYSDK_OFFSET(0x1ACE0B10)
+#define MOLEMOLE_TIMELINE_MATERIALAVATARSHADERUTIL__MATERIALCHANGED_G__ADDSHADERENABLEANDRECORDERINIT_62_0_OFFSET UNITYSDK_OFFSET(0x1ACE1110)
 
 namespace MoleMole::Timeline
 {
-	inline static constexpr unsigned int MaterialAvatarShaderUtil_TypeDefinitionIndex = 29135;
+	inline static constexpr unsigned int MaterialAvatarShaderUtil_TypeDefinitionIndex = 30088;
 
 	class MaterialAvatarShaderUtil : public ::System::Object
 	{
 	public:
-		static ::System::String** StaticGet_SecondaryEmission()
+		static ::System::String** StaticGet_AbnormalProperty()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x227E0);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_ObjectShaderNames()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x227E8);
-		}
-		static ::System::String** StaticGet_UseChanelMixer()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x227F0);
-		}
-		static ::System::String** StaticGet_PropNameRenderType()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x227F8);
-		}
-		static ::System::String** StaticGet_Outline()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22800);
-		}
-		static ::System::String** StaticGet_Transition()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22808);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_AvatarShaderNames()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22810);
-		}
-		static ::System::String** StaticGet_DitherAlpha()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22818);
-		}
-		static ::System::String** StaticGet_RimGlow()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22820);
-		}
-		static ::System::String** StaticGet_DitherAlpha2()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22828);
-		}
-		static ::System::Reflection::MethodInfo** StaticGet_addSkipMaterialRenderer()
-		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22830);
-		}
-		static ::System::Reflection::MethodInfo** StaticGet_setFxUnClipKeywords()
-		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22838);
-		}
-		static ::System::String** StaticGet_BuildingBotLight()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22840);
-		}
-		static ::System::Reflection::MethodInfo** StaticGet_addSkipMaterial()
-		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22848);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_SceneShaderNames()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22850);
-		}
-		static ::CutsceneMaterialShaderConfig** StaticGet__cutsceneSceneMaterialShaderConfig()
-		{
-			return (::CutsceneMaterialShaderConfig**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22858);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24100);
 		}
 		static ::System::String** StaticGet_UseCustomReflection()
 		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22860);
-		}
-		static ::System::String** StaticGet_Glitch()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22868);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_MatCapFXKeywordStandard()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22870);
-		}
-		static ::System::String** StaticGet_ClipPlane()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22878);
-		}
-		static ::System::String** StaticGet_AbnormalProperty()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22880);
-		}
-		static ::System::String** StaticGet_UsePlaneClip()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22888);
-		}
-		static ::System::Reflection::MethodInfo** StaticGet_ShaderSupportFeature()
-		{
-			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22890);
-		}
-		static ::System::String** StaticGet_BlurAfterChar()
-		{
-			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x22898);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24108);
 		}
 		static ::Il2CppArray<::System::String*>** StaticGet_MatCapKeywordStandard()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x228A0);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24110);
 		}
-		static ::System::Int32* StaticGet_ShadowColorFadeByZ()
+		static ::Il2CppArray<::System::String*>** StaticGet_MatCapFXKeywordStandard()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75B0);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24118);
 		}
-		static ::System::Int32* StaticGet_HalfResSrcBlend()
+		static ::Il2CppArray<::System::String*>** StaticGet_ObjectShaderNames()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75B4);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24120);
 		}
-		static ::System::Int32* StaticGet_ReceiveShadows()
+		static ::System::String** StaticGet_ClipPlane()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75B8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24128);
 		}
-		static ::System::Int32* StaticGet_OverrideOutline()
+		static ::CutsceneMaterialShaderConfig** StaticGet__cutsceneSceneMaterialShaderConfig()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75BC);
+			return (::CutsceneMaterialShaderConfig**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24130);
 		}
-		static ::System::Int32* StaticGet_VertexStretch()
+		static ::System::Reflection::MethodInfo** StaticGet_setFxUnClipKeywords()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75C0);
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24138);
 		}
-		static ::System::Int32* StaticGet_AlphaDstBlend()
+		static ::System::String** StaticGet_UseChanelMixer()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75C4);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24140);
 		}
-		static ::System::Int32* StaticGet_AlphaSrcBlend()
+		static ::System::String** StaticGet_UsePlaneClip()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75C8);
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24148);
+		}
+		static ::System::String** StaticGet_PropNameRenderType()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24150);
+		}
+		static ::System::String** StaticGet_BlurAfterChar()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24158);
+		}
+		static ::System::String** StaticGet_BuildingBotLight()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24160);
+		}
+		static ::System::String** StaticGet_SecondaryEmission()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24168);
+		}
+		static ::System::String** StaticGet_DitherAlpha2()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24170);
+		}
+		static ::System::Reflection::MethodInfo** StaticGet_addSkipMaterialRenderer()
+		{
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24178);
+		}
+		static ::System::String** StaticGet_Transition()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24180);
+		}
+		static ::System::String** StaticGet_Glitch()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24188);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_SceneShaderNames()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24190);
+		}
+		static ::System::String** StaticGet_DitherAlpha()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x24198);
+		}
+		static ::System::Reflection::MethodInfo** StaticGet_addSkipMaterial()
+		{
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x241A0);
+		}
+		static ::System::String** StaticGet_RimGlow()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x241A8);
+		}
+		static ::System::Reflection::MethodInfo** StaticGet_ShaderSupportFeature()
+		{
+			return (::System::Reflection::MethodInfo**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x241B0);
+		}
+		static ::System::String** StaticGet_Outline()
+		{
+			return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x241B8);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_AvatarShaderNames()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x241C0);
 		}
 		static ::System::Int32* StaticGet_HalfResAlphaSrcBlend()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75CC);
-		}
-		static ::System::Int32* StaticGet_CharacterStencilOp()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75D0);
-		}
-		static ::System::Int32* StaticGet_Surface()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75D4);
-		}
-		static ::System::Int32* StaticGet_DstBlend()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75D8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78E0);
 		}
 		static ::System::Int32* StaticGet_HalfResAlphaDstBlend()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75DC);
-		}
-		static ::System::Int32* StaticGet_Override()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75E0);
-		}
-		static ::System::Int32* StaticGet_SrcBlend()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75E4);
-		}
-		static ::System::Int32* StaticGet_MatCap()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75E8);
-		}
-		static ::System::Int32* StaticGet_PropIdRenderType()
-		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75EC);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78E4);
 		}
 		static ::System::Int32* StaticGet_MatCapFX()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75F0);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78E8);
+		}
+		static ::System::Int32* StaticGet_CharacterStencilOp()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78EC);
+		}
+		static ::System::Int32* StaticGet_AlphaDstBlend()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78F0);
 		}
 		static ::System::Int32* StaticGet_HalfResDstBlend()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75F4);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78F4);
 		}
-		static ::System::Int32* StaticGet_OverrideRimGlow()
+		static ::System::Int32* StaticGet_ShadowColorFadeByZ()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75F8);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78F8);
 		}
-		static ::System::Int32* StaticGet_Override2Tone()
+		static ::System::Int32* StaticGet_DstBlend()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x75FC);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x78FC);
+		}
+		static ::System::Int32* StaticGet_Override()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7900);
+		}
+		static ::System::Int32* StaticGet_AlphaSrcBlend()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7904);
 		}
 		static ::System::Int32* StaticGet_ScreenImage()
 		{
-			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7600);
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7908);
+		}
+		static ::System::Int32* StaticGet_PropIdRenderType()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x790C);
+		}
+		static ::System::Int32* StaticGet_OverrideOutline()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7910);
+		}
+		static ::System::Int32* StaticGet_HalfResSrcBlend()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7914);
+		}
+		static ::System::Int32* StaticGet_ReceiveShadows()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7918);
+		}
+		static ::System::Int32* StaticGet_Override2Tone()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x791C);
+		}
+		static ::System::Int32* StaticGet_Surface()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7920);
+		}
+		static ::System::Int32* StaticGet_VertexStretch()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7924);
+		}
+		static ::System::Int32* StaticGet_MatCap()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7928);
+		}
+		static ::System::Int32* StaticGet_OverrideRimGlow()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x792C);
+		}
+		static ::System::Int32* StaticGet_SrcBlend()
+		{
+			return (::System::Int32*)Il2CppClass::FromTypeDefinitionIndex(MaterialAvatarShaderUtil_TypeDefinitionIndex)->GetStaticField(0x7930);
 		}
 		// static const ::System::String* UnclippedFXKeyword; // 0x0
 		// static const ::System::String* ClippedFXKeyword; // 0x0

@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define MOLEMOLE_UIHANDBOOKBOSSCHALLENGEITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAA155B0)
-#define MOLEMOLE_UIHANDBOOKBOSSCHALLENGEITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__ONJUMPCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xAA155C0)
+#define MOLEMOLE_UIHANDBOOKBOSSCHALLENGEITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7F61AC0)
+#define MOLEMOLE_UIHANDBOOKBOSSCHALLENGEITEMWIDGETCONTROLLER___C__DISPLAYCLASS7_0__ONJUMPCLICK_B__0_OFFSET UNITYSDK_OFFSET(0x7F61AD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIHandBookBossChallengeItemWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 75096;
+	inline static constexpr unsigned int UIHandBookBossChallengeItemWidgetController___c__DisplayClass7_0_TypeDefinitionIndex = 79142;
 
 	class UIHandBookBossChallengeItemWidgetController___c__DisplayClass7_0 : public ::System::Object
 	{

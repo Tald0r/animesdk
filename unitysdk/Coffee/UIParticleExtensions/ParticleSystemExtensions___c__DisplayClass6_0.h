@@ -6,12 +6,12 @@ namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class ParticleSystem; }
 namespace UnityEngine { class Transform; }
 
-#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1CDB80)
-#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__DISPLAYCLASS6_0__SORTFORRENDERING_B__0_OFFSET UNITYSDK_OFFSET(0x1A1CE230)
+#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__DISPLAYCLASS6_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1A74B090)
+#define COFFEE_UIPARTICLEEXTENSIONS_PARTICLESYSTEMEXTENSIONS___C__DISPLAYCLASS6_0__SORTFORRENDERING_B__0_OFFSET UNITYSDK_OFFSET(0x1A74B740)
 
 namespace Coffee::UIParticleExtensions
 {
-	inline static constexpr unsigned int ParticleSystemExtensions___c__DisplayClass6_0_TypeDefinitionIndex = 31181;
+	inline static constexpr unsigned int ParticleSystemExtensions___c__DisplayClass6_0_TypeDefinitionIndex = 32133;
 
 	class ParticleSystemExtensions___c__DisplayClass6_0 : public ::System::Object
 	{

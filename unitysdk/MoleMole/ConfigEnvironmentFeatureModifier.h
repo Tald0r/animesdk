@@ -7,18 +7,18 @@ namespace MoleMole { class ConfigLinearSlopeDamper; }
 namespace MoleMole { class ConfigLinearStepStairDamper; }
 namespace MoleMole { class ConfigStairVelocityModifier; }
 
-#define MOLEMOLE_CONFIGENVIRONMENTFEATUREMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xCD28570)
+#define MOLEMOLE_CONFIGENVIRONMENTFEATUREMODIFIER__CTOR_OFFSET UNITYSDK_OFFSET(0xE381430)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigEnvironmentFeatureModifier_TypeDefinitionIndex = 62112;
+	inline static constexpr unsigned int ConfigEnvironmentFeatureModifier_TypeDefinitionIndex = 53274;
 
 	class ConfigEnvironmentFeatureModifier : public ::System::Object
 	{
 	public:
-		::MoleMole::ConfigStairVelocityModifier* StairVelocityModifier; // 0x10
-		::MoleMole::ConfigLinearStepStairDamper* LinearStepStairModifer; // 0x18
-		::MoleMole::ConfigGroundPositionBlendModifier* GroundPositionBlendModifier; // 0x20
+		::MoleMole::ConfigGroundPositionBlendModifier* GroundPositionBlendModifier; // 0x10
+		::MoleMole::ConfigStairVelocityModifier* StairVelocityModifier; // 0x18
+		::MoleMole::ConfigLinearStepStairDamper* LinearStepStairModifer; // 0x20
 		::MoleMole::ConfigLinearSlopeDamper* LinearSlopeModifer; // 0x28
 		::System::Boolean EnableProcess; // 0x30
 

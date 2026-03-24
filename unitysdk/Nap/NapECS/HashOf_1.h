@@ -4,7 +4,7 @@
 
 namespace Nap::NapECS
 {
-	inline static constexpr unsigned int HashOf_1_TypeDefinitionIndex = 34115;
+	inline static constexpr unsigned int HashOf_1_TypeDefinitionIndex = 35184;
 
 	template <typename T>
 	class HashOf_1 : public ::System::Object

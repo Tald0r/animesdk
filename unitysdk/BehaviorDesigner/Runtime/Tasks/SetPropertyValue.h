@@ -7,23 +7,23 @@ namespace BehaviorDesigner::Runtime { class SharedGameObject; }
 namespace BehaviorDesigner::Runtime { class SharedString; }
 namespace BehaviorDesigner::Runtime { class SharedVariable; }
 
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AE54AC0)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AE54580)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE54B10)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1AE54B50)
-#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1AE54BE0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B465E10)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B4658D0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE__CTOR_OFFSET UNITYSDK_OFFSET(0x1B465E60)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE___BASE_ONRESET_OFFSET UNITYSDK_OFFSET(0x1B465EA0)
+#define BEHAVIORDESIGNER_RUNTIME_TASKS_SETPROPERTYVALUE___BASE_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x1B465F30)
 
 namespace BehaviorDesigner::Runtime::Tasks
 {
-	inline static constexpr unsigned int SetPropertyValue_TypeDefinitionIndex = 30311;
+	inline static constexpr unsigned int SetPropertyValue_TypeDefinitionIndex = 31263;
 
 	class SetPropertyValue : public ::BehaviorDesigner::Runtime::Tasks::Action
 	{
 	public:
-		::BehaviorDesigner::Runtime::SharedString* propertyName; // 0x58
-		::BehaviorDesigner::Runtime::SharedGameObject* targetGameObject; // 0x60
+		::BehaviorDesigner::Runtime::SharedGameObject* targetGameObject; // 0x58
+		::BehaviorDesigner::Runtime::SharedVariable* propertyValue; // 0x60
 		::BehaviorDesigner::Runtime::SharedString* componentName; // 0x68
-		::BehaviorDesigner::Runtime::SharedVariable* propertyValue; // 0x70
+		::BehaviorDesigner::Runtime::SharedString* propertyName; // 0x70
 
 		::System::Void _ctor()
 		{

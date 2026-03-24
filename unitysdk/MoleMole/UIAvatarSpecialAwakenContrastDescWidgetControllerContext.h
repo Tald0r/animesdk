@@ -4,17 +4,17 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIAVATARSPECIALAWAKENCONTRASTDESCWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC8F8070)
+#define MOLEMOLE_UIAVATARSPECIALAWAKENCONTRASTDESCWIDGETCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x98A34E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAvatarSpecialAwakenContrastDescWidgetControllerContext_TypeDefinitionIndex = 52178;
+	inline static constexpr unsigned int UIAvatarSpecialAwakenContrastDescWidgetControllerContext_TypeDefinitionIndex = 52670;
 
 	class UIAvatarSpecialAwakenContrastDescWidgetControllerContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::System::String* TitleKey; // 0x28
-		::System::String* DesKey; // 0x30
+		::System::String* DesKey; // 0x28
+		::System::String* TitleKey; // 0x30
 		::System::Int32 SkillType; // 0x38
 
 		::System::Void _ctor()

@@ -3,7 +3,7 @@
 
 namespace NPCCrowd::AI
 {
-	inline static constexpr unsigned int BoolValueGetterType_TypeDefinitionIndex = 60588;
+	inline static constexpr unsigned int BoolValueGetterType_TypeDefinitionIndex = 50661;
 
 	enum class BoolValueGetterType : ::System::Int32
 	{

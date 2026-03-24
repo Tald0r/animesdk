@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-#define BLINKPHASE__CTOR_OFFSET UNITYSDK_OFFSET(0xBC78680)
+#define BLINKPHASE__CTOR_OFFSET UNITYSDK_OFFSET(0x7678A20)
 
-inline static constexpr unsigned int BlinkPhase_TypeDefinitionIndex = 47598;
+inline static constexpr unsigned int BlinkPhase_TypeDefinitionIndex = 71290;
 
 class BlinkPhase : public ::System::Object
 {

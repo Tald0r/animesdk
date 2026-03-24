@@ -5,19 +5,19 @@
 
 namespace System { class String; }
 
-#define CLASS_1_DD4EF16B0F76A8E1__CTOR_OFFSET UNITYSDK_OFFSET(0xB0B47E0)
+#define CLASS_1_DD4EF16B0F76A8E1__CTOR_OFFSET UNITYSDK_OFFSET(0x92753C0)
 
-inline static constexpr unsigned int Class_1_DD4EF16B0F76A8E1_TypeDefinitionIndex = 55305;
+inline static constexpr unsigned int Class_1_DD4EF16B0F76A8E1_TypeDefinitionIndex = 68080;
 
 class Class_1_DD4EF16B0F76A8E1 : public ::System::Object
 {
 public:
-	::Foundation::AssetPath Field_1_2; // 0x10
-	::System::String* Field_1_0; // 0x20
-	::System::String* Field_1_1; // 0x28
-	::System::UInt32 Field_1_4; // 0x30
-	::System::Boolean Field_1_3; // 0x34
-	::System::Boolean Field_1_5; // 0x35
+	::System::String* Field_1_1; // 0x10
+	::Foundation::AssetPath Field_1_2; // 0x18
+	::System::String* Field_1_0; // 0x28
+	::System::Boolean Field_1_3; // 0x30
+	::System::Boolean Field_1_5; // 0x31
+	::System::UInt32 Field_1_4; // 0x34
 
 	::System::Void _ctor()
 	{

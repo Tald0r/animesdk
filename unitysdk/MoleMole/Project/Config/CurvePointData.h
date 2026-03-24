@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/Project/Config/PointBaseData.h"
 
-#define MOLEMOLE_PROJECT_CONFIG_CURVEPOINTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x18328580)
+#define MOLEMOLE_PROJECT_CONFIG_CURVEPOINTDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x171DD410)
 
 namespace MoleMole::Project::Config
 {
-	inline static constexpr unsigned int CurvePointData_TypeDefinitionIndex = 15762;
+	inline static constexpr unsigned int CurvePointData_TypeDefinitionIndex = 15958;
 
 	class CurvePointData : public ::MoleMole::Project::Config::PointBaseData
 	{

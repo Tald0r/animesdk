@@ -3,12 +3,12 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int AICalculateType_TypeDefinitionIndex = 47287;
+	inline static constexpr unsigned int AICalculateType_TypeDefinitionIndex = 45744;
 
 	enum class AICalculateType : ::System::Int32
 	{
-		Add = 0,
 		Sub = 1,
+		Add = 0,
 		Mul = 2,
 		Div = 3,
 	};

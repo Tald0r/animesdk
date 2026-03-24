@@ -5,12 +5,12 @@
 class Class_1_7ED8DECFCACDA19E;
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_SURFSUBSYSTEM___C__DISPLAYCLASS54_0__CTOR_OFFSET UNITYSDK_OFFSET(0x67CD170)
-#define MOLEMOLE_SURFSUBSYSTEM___C__DISPLAYCLASS54_0__SETENTITYASAVATAR_B__0_OFFSET UNITYSDK_OFFSET(0x67CD180)
+#define MOLEMOLE_SURFSUBSYSTEM___C__DISPLAYCLASS54_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA480660)
+#define MOLEMOLE_SURFSUBSYSTEM___C__DISPLAYCLASS54_0__SETENTITYASAVATAR_B__0_OFFSET UNITYSDK_OFFSET(0xA480670)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SurfSubsystem___c__DisplayClass54_0_TypeDefinitionIndex = 65488;
+	inline static constexpr unsigned int SurfSubsystem___c__DisplayClass54_0_TypeDefinitionIndex = 44797;
 
 	class SurfSubsystem___c__DisplayClass54_0 : public ::System::Object
 	{

@@ -1,6 +1,6 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_4E7B8E0B6291DEBC.h"
+#include "unitysdk/Enum_3_34F6B4D6F6334A5A.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
@@ -12,21 +12,21 @@ namespace UnityEngine { class GameObject; }
 namespace UnityEngine { class LineRenderer; }
 namespace UnityEngine { class Material; }
 
-#define MINIUIGAMECURVESRENDERER_CHANGEMOVEDIRECTION_OFFSET UNITYSDK_OFFSET(0x8480DF0)
-#define MINIUIGAMECURVESRENDERER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x84806A0)
-#define MINIUIGAMECURVESRENDERER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x847FC90)
-#define MINIUIGAMECURVESRENDERER_SETUPCURVEMATERIALS_OFFSET UNITYSDK_OFFSET(0x847FD00)
-#define MINIUIGAMECURVESRENDERER_UPDATE_OFFSET UNITYSDK_OFFSET(0x84807B0)
-#define MINIUIGAMECURVESRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x8480FD0)
+#define MINIUIGAMECURVESRENDERER_CHANGEMOVEDIRECTION_OFFSET UNITYSDK_OFFSET(0x94D9630)
+#define MINIUIGAMECURVESRENDERER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x94D8EE0)
+#define MINIUIGAMECURVESRENDERER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x94D84D0)
+#define MINIUIGAMECURVESRENDERER_SETUPCURVEMATERIALS_OFFSET UNITYSDK_OFFSET(0x94D8540)
+#define MINIUIGAMECURVESRENDERER_UPDATE_OFFSET UNITYSDK_OFFSET(0x94D8FF0)
+#define MINIUIGAMECURVESRENDERER__CTOR_OFFSET UNITYSDK_OFFSET(0x94D9810)
 
-inline static constexpr unsigned int MiniUIGameCurvesRenderer_TypeDefinitionIndex = 63657;
+inline static constexpr unsigned int MiniUIGameCurvesRenderer_TypeDefinitionIndex = 56784;
 
 class MiniUIGameCurvesRenderer : public ::UnityEngine::MonoBehaviour
 {
 public:
 	::UnityEngine::LineRenderer* lr; // 0x18
 	::UnityEngine::GameObject* point; // 0x20
-	::Enum_3_4E7B8E0B6291DEBC uiType; // 0x28
+	::Enum_3_34F6B4D6F6334A5A uiType; // 0x28
 	::UnityEngine::Material* curvyMat; // 0x30
 	::System::Single overallAlpha; // 0x38
 	::System::Boolean enableDetection; // 0x3C

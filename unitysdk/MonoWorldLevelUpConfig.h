@@ -2,9 +2,9 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/UnityEngine/MonoBehaviour.h"
 
-#define MONOWORLDLEVELUPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x6453E50)
+#define MONOWORLDLEVELUPCONFIG__CTOR_OFFSET UNITYSDK_OFFSET(0x792B680)
 
-inline static constexpr unsigned int MonoWorldLevelUpConfig_TypeDefinitionIndex = 67020;
+inline static constexpr unsigned int MonoWorldLevelUpConfig_TypeDefinitionIndex = 44243;
 
 class MonoWorldLevelUpConfig : public ::UnityEngine::MonoBehaviour
 {

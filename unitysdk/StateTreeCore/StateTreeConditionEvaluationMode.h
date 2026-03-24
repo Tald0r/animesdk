@@ -3,12 +3,12 @@
 
 namespace StateTreeCore
 {
-	inline static constexpr unsigned int StateTreeConditionEvaluationMode_TypeDefinitionIndex = 26942;
+	inline static constexpr unsigned int StateTreeConditionEvaluationMode_TypeDefinitionIndex = 27768;
 
-	enum class StateTreeConditionEvaluationMode : ::System::Int32
+	enum class StateTreeConditionEvaluationMode : ::System::Byte
 	{
-		Evaluated = 0,
-		ForcedTrue = 1,
-		ForcedFalse = 2,
+		Evaluated = 0x0,
+		ForcedTrue = 0x1,
+		ForcedFalse = 0x2,
 	};
 }

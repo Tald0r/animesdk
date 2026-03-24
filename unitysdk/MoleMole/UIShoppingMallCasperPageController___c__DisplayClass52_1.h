@@ -5,18 +5,18 @@
 class Class_1_F57D00757009D1EB;
 namespace MoleMole { class UIShoppingMallCasperPageController___c__DisplayClass52_0; }
 
-#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___C__DISPLAYCLASS52_1__CTOR_OFFSET UNITYSDK_OFFSET(0x73BDB70)
-#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___C__DISPLAYCLASS52_1__DOBUY_B__0_OFFSET UNITYSDK_OFFSET(0x73BDB80)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___C__DISPLAYCLASS52_1__CTOR_OFFSET UNITYSDK_OFFSET(0xAFB1680)
+#define MOLEMOLE_UISHOPPINGMALLCASPERPAGECONTROLLER___C__DISPLAYCLASS52_1__DOBUY_B__0_OFFSET UNITYSDK_OFFSET(0xAFB1690)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIShoppingMallCasperPageController___c__DisplayClass52_1_TypeDefinitionIndex = 38991;
+	inline static constexpr unsigned int UIShoppingMallCasperPageController___c__DisplayClass52_1_TypeDefinitionIndex = 70803;
 
 	class UIShoppingMallCasperPageController___c__DisplayClass52_1 : public ::System::Object
 	{
 	public:
-		::MoleMole::UIShoppingMallCasperPageController___c__DisplayClass52_0* CS___8__locals1; // 0x10
-		::Class_1_F57D00757009D1EB* curGoods; // 0x18
+		::Class_1_F57D00757009D1EB* curGoods; // 0x10
+		::MoleMole::UIShoppingMallCasperPageController___c__DisplayClass52_0* CS___8__locals1; // 0x18
 		::System::UInt32 goodsId; // 0x20
 		::System::UInt32 tabDataId; // 0x24
 

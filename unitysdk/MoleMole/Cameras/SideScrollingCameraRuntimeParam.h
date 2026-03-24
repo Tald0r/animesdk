@@ -6,11 +6,11 @@
 
 namespace MoleMole::Cameras { class CameraTrackBlending; }
 
-#define MOLEMOLE_CAMERAS_SIDESCROLLINGCAMERARUNTIMEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x62226B0)
+#define MOLEMOLE_CAMERAS_SIDESCROLLINGCAMERARUNTIMEPARAM__CTOR_OFFSET UNITYSDK_OFFSET(0x84F7A30)
 
 namespace MoleMole::Cameras
 {
-	inline static constexpr unsigned int SideScrollingCameraRuntimeParam_TypeDefinitionIndex = 67169;
+	inline static constexpr unsigned int SideScrollingCameraRuntimeParam_TypeDefinitionIndex = 53235;
 
 	class SideScrollingCameraRuntimeParam : public ::System::Object
 	{

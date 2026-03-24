@@ -3,11 +3,11 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/UnityEngine/Vector3.h"
 
-#define UNITYENGINE_MATCHTARGETWEIGHTMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x33FDB0)
+#define UNITYENGINE_MATCHTARGETWEIGHTMASK__CTOR_OFFSET UNITYSDK_OFFSET(0x312860)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int MatchTargetWeightMask_TypeDefinitionIndex = 6540;
+	inline static constexpr unsigned int MatchTargetWeightMask_TypeDefinitionIndex = 6544;
 
 	struct alignas(4) MatchTargetWeightMask
 	{

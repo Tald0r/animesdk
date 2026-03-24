@@ -9,23 +9,23 @@ namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace MoleMole::Battle { class Entity; }
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE101020)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE1013B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__GETENTITYFIGHTERDATA_OFFSET UNITYSDK_OFFSET(0xE1011B0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__REGISTERPORTS_B__4_0_OFFSET UNITYSDK_OFFSET(0xE1013D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__REGISTERPORTS_B__4_1_OFFSET UNITYSDK_OFFSET(0xE101640)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7A659E0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x7A65D70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__GETENTITYFIGHTERDATA_OFFSET UNITYSDK_OFFSET(0x7A65B70)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__REGISTERPORTS_B__4_0_OFFSET UNITYSDK_OFFSET(0x7A65D90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_MODIFYMONSTERNORMALDROPNODE__REGISTERPORTS_B__4_1_OFFSET UNITYSDK_OFFSET(0x7A66000)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_ModifyMonsterNormalDropNode_TypeDefinitionIndex = 75893;
+	inline static constexpr unsigned int LD_ModifyMonsterNormalDropNode_TypeDefinitionIndex = 51035;
 
 	class LD_ModifyMonsterNormalDropNode : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::FlowOutput* _flowOutput; // 0xA8
-		::FlowCanvas::ValueInput_1<::System::Boolean>* _isReplace; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::String*>* _modifyNormalDrop; // 0xB8
-		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* _inputEntity; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::String*>* _modifyNormalDrop; // 0xB0
+		::FlowCanvas::ValueInput_1<::MoleMole::Battle::Entity*>* _inputEntity; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Boolean>* _isReplace; // 0xC0
 
 		::System::Void _ctor()
 		{

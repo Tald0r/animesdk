@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int DynamicBoneV2_FreezeAxis_TypeDefinitionIndex = 31588;
+inline static constexpr unsigned int DynamicBoneV2_FreezeAxis_TypeDefinitionIndex = 32542;
 
 enum class DynamicBoneV2_FreezeAxis : ::System::Int32
 {

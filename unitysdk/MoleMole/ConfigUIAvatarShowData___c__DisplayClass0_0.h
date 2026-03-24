@@ -5,12 +5,12 @@
 namespace System { class String; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0x971E130)
-#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS0_0__RELOADFROMFILEASYNC_B__0_OFFSET UNITYSDK_OFFSET(0x971E140)
+#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS0_0__CTOR_OFFSET UNITYSDK_OFFSET(0xB0AD2D0)
+#define MOLEMOLE_CONFIGUIAVATARSHOWDATA___C__DISPLAYCLASS0_0__RELOADFROMFILEASYNC_B__0_OFFSET UNITYSDK_OFFSET(0xB0AD2E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIAvatarShowData___c__DisplayClass0_0_TypeDefinitionIndex = 44832;
+	inline static constexpr unsigned int ConfigUIAvatarShowData___c__DisplayClass0_0_TypeDefinitionIndex = 78004;
 
 	class ConfigUIAvatarShowData___c__DisplayClass0_0 : public ::System::Object
 	{

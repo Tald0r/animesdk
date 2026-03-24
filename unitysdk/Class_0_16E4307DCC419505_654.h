@@ -1,10 +1,11 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
+#include "unitysdk/Enum_3_D0F2373931CC685D_1.h"
+#include "unitysdk/System/Nullable_1.h"
 
-namespace System { class String; }
-namespace System::Collections::Generic { template <typename T> class List_1; }
+namespace UnityEngine { class RectTransform; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_654_TypeDefinitionIndex = 67481;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_654_TypeDefinitionIndex = 68810;
 
 class Class_0_16E4307DCC419505_654
 {

@@ -5,8 +5,8 @@
 namespace System { class String; }
 namespace System::Xml::Schema { class XmlSchemaInfo; }
 
-#define SYSTEM_XML_ATTRIBUTEPSVIINFO_RESET_OFFSET UNITYSDK_OFFSET(0x1A5A6AD0)
-#define SYSTEM_XML_ATTRIBUTEPSVIINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1A5A6A70)
+#define SYSTEM_XML_ATTRIBUTEPSVIINFO_RESET_OFFSET UNITYSDK_OFFSET(0x1AB51A00)
+#define SYSTEM_XML_ATTRIBUTEPSVIINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1AB519A0)
 
 namespace System::Xml
 {
@@ -15,10 +15,10 @@ namespace System::Xml
 	class AttributePSVIInfo : public ::System::Object
 	{
 	public:
-		::System::Xml::Schema::XmlSchemaInfo* attributeSchemaInfo; // 0x10
+		::System::Object* typedAttributeValue; // 0x10
 		::System::String* localName; // 0x18
-		::System::String* namespaceUri; // 0x20
-		::System::Object* typedAttributeValue; // 0x28
+		::System::Xml::Schema::XmlSchemaInfo* attributeSchemaInfo; // 0x20
+		::System::String* namespaceUri; // 0x28
 
 		::System::Void _ctor()
 		{

@@ -14,34 +14,34 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE822EE0)
-#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE822EF0)
-#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE823270)
-#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE8234E0)
-#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE8234A0)
+#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xB477190)
+#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xB4771A0)
+#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xB477520)
+#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xB477790)
+#define MOLEMOLE_CONFIG_CONFIGSIDESCROLLINGLEVEL_CONFIGSIDESCROLLINGLEVEL_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xB477750)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex = 70518;
+	inline static constexpr unsigned int ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex = 54000;
 
 	class ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::Config::ConfigSideScrollingLevel*>
 	{
 	public:
 		static ::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413A0);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingScoreGetType, ::System::Single>*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingScoreGetType, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413A8);
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::Config::ConfigPosRot*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47710);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingHeatKillMonsterType, ::System::Int32>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingHeatKillMonsterType, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413B0);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingHeatKillMonsterType, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47718);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingScoreGetType, ::System::Single>*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::MoleMole::Battle::SideScrollingScoreGetType, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47720);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigSideScrollingCamera*>*>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigSideScrollingCamera*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x413B8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::MoleMole::Config::ConfigSideScrollingCamera*>*>**)Il2CppClass::FromTypeDefinitionIndex(ConfigSideScrollingLevel_ConfigSideScrollingLevel_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x47728);
 		}
 
 		::System::Void _ctor()

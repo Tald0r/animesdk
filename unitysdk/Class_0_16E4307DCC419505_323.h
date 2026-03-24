@@ -1,13 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/MessagePack/MessagePackReader.h"
-#include "unitysdk/MessagePack/MessagePackWriter.h"
-#include "unitysdk/Struct_2_E147DFD2A4EE8B0B.h"
 
-namespace MessagePack { class MessagePackSerializerOptions; }
-namespace System { class Object; }
+namespace System { class String; }
+namespace System::Collections::Generic { template <typename T> class IReadOnlyList_1; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_323_TypeDefinitionIndex = 74896;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_323_TypeDefinitionIndex = 43176;
 
 class Class_0_16E4307DCC419505_323
 {

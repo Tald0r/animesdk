@@ -5,12 +5,12 @@
 namespace ParadoxNotion { class DynamicParameterDefinition; }
 namespace System { class String; }
 
-#define NODECANVAS_FRAMEWORK_SIGNALDEFINITION___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x1975EB50)
-#define NODECANVAS_FRAMEWORK_SIGNALDEFINITION___C__DISPLAYCLASS10_0__REMOVEPARAMETER_B__0_OFFSET UNITYSDK_OFFSET(0x1975EB60)
+#define NODECANVAS_FRAMEWORK_SIGNALDEFINITION___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x19C2C9B0)
+#define NODECANVAS_FRAMEWORK_SIGNALDEFINITION___C__DISPLAYCLASS10_0__REMOVEPARAMETER_B__0_OFFSET UNITYSDK_OFFSET(0x19C2C9C0)
 
 namespace NodeCanvas::Framework
 {
-	inline static constexpr unsigned int SignalDefinition___c__DisplayClass10_0_TypeDefinitionIndex = 25522;
+	inline static constexpr unsigned int SignalDefinition___c__DisplayClass10_0_TypeDefinitionIndex = 27485;
 
 	class SignalDefinition___c__DisplayClass10_0 : public ::System::Object
 	{

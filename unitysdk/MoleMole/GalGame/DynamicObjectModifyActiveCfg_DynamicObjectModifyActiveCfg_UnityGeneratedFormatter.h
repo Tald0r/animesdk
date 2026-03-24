@@ -8,26 +8,26 @@ namespace Sirenix::Serialization { class IDataReader; }
 namespace Sirenix::Serialization { class IDataWriter; }
 namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 
-#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xE1030D0)
-#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xE1030E0)
-#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xE1032E0)
-#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xE1034A0)
-#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xE103460)
+#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0x7A675F0)
+#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0x7A67600)
+#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0x7A67800)
+#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0x7A679C0)
+#define MOLEMOLE_GALGAME_DYNAMICOBJECTMODIFYACTIVECFG_DYNAMICOBJECTMODIFYACTIVECFG_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0x7A67980)
 
 namespace MoleMole::GalGame
 {
-	inline static constexpr unsigned int DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter_TypeDefinitionIndex = 42189;
+	inline static constexpr unsigned int DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter_TypeDefinitionIndex = 67927;
 
 	class DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::GalGame::DynamicObjectModifyActiveCfg*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FFB0);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Int32>** StaticGet_CachedSerializer0()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3FFB8);
+			return (::Sirenix::Serialization::Serializer_1<::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46BF0);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Boolean>** StaticGet_CachedSerializer1()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(DynamicObjectModifyActiveCfg_DynamicObjectModifyActiveCfg_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x46BF8);
 		}
 
 		::System::Void _ctor()

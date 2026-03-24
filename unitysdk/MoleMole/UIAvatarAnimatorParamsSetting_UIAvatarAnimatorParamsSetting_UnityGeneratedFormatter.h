@@ -11,34 +11,34 @@ namespace Sirenix::Serialization { template <typename T> class Serializer_1; }
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xDC52250)
-#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xDC52260)
-#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xDC52680)
-#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xDC52940)
-#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xDC52900)
+#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER_GET_MEMBERCOUNT_OFFSET UNITYSDK_OFFSET(0xC0941B0)
+#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER_READMEMBER_OFFSET UNITYSDK_OFFSET(0xC0941C0)
+#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER_WRITE_OFFSET UNITYSDK_OFFSET(0xC0945E0)
+#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER__CCTOR_OFFSET UNITYSDK_OFFSET(0xC0948A0)
+#define MOLEMOLE_UIAVATARANIMATORPARAMSSETTING_UIAVATARANIMATORPARAMSSETTING_UNITYGENERATEDFORMATTER__CTOR_OFFSET UNITYSDK_OFFSET(0xC094860)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex = 46594;
+	inline static constexpr unsigned int UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex = 62741;
 
 	class UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter : public ::Sirenix::Serialization::BaseUnityGeneratedFormatter_1<::MoleMole::UIAvatarAnimatorParamsSetting*>
 	{
 	public:
-		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>** StaticGet_CachedSerializer0()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EF50);
-		}
-		static ::Sirenix::Serialization::Serializer_1<::MoleMole::UIAvatarAnimationSetting*>** StaticGet_CachedSerializer3()
-		{
-			return (::Sirenix::Serialization::Serializer_1<::MoleMole::UIAvatarAnimationSetting*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EF58);
-		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*>** StaticGet_CachedSerializer2()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EF60);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Single>*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41BF0);
 		}
 		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>** StaticGet_CachedSerializer1()
 		{
-			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x3EF68);
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41BF8);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::MoleMole::UIAvatarAnimationSetting*>** StaticGet_CachedSerializer3()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::MoleMole::UIAvatarAnimationSetting*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41C00);
+		}
+		static ::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>** StaticGet_CachedSerializer0()
+		{
+			return (::Sirenix::Serialization::Serializer_1<::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Boolean>*>**)Il2CppClass::FromTypeDefinitionIndex(UIAvatarAnimatorParamsSetting_UIAvatarAnimatorParamsSetting_UnityGeneratedFormatter_TypeDefinitionIndex)->GetStaticField(0x41C08);
 		}
 
 		::System::Void _ctor()

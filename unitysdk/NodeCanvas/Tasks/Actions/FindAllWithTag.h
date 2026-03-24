@@ -7,19 +7,19 @@ namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class GameObject; }
 
-#define NODECANVAS_TASKS_ACTIONS_FINDALLWITHTAG_GET_INFO_OFFSET UNITYSDK_OFFSET(0x19DB8D60)
-#define NODECANVAS_TASKS_ACTIONS_FINDALLWITHTAG_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19DB8FB0)
-#define NODECANVAS_TASKS_ACTIONS_FINDALLWITHTAG__CTOR_OFFSET UNITYSDK_OFFSET(0x19DB90A0)
+#define NODECANVAS_TASKS_ACTIONS_FINDALLWITHTAG_GET_INFO_OFFSET UNITYSDK_OFFSET(0x1A3A9FC0)
+#define NODECANVAS_TASKS_ACTIONS_FINDALLWITHTAG_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A3AA210)
+#define NODECANVAS_TASKS_ACTIONS_FINDALLWITHTAG__CTOR_OFFSET UNITYSDK_OFFSET(0x1A3AA300)
 
 namespace NodeCanvas::Tasks::Actions
 {
-	inline static constexpr unsigned int FindAllWithTag_TypeDefinitionIndex = 26909;
+	inline static constexpr unsigned int FindAllWithTag_TypeDefinitionIndex = 26253;
 
 	class FindAllWithTag : public ::NodeCanvas::Framework::ActionTask
 	{
 	public:
-		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>* saveAs; // 0x60
-		::NodeCanvas::Framework::BBParameter_1<::System::String*>* searchTag; // 0x68
+		::NodeCanvas::Framework::BBParameter_1<::System::String*>* searchTag; // 0x60
+		::NodeCanvas::Framework::BBParameter_1<::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*>* saveAs; // 0x68
 
 		::System::Void _ctor()
 		{

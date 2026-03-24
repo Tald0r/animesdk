@@ -3,40 +3,40 @@
 #include "unitysdk/System/ValueType.h"
 #include "unitysdk/Unity/Collections/Allocator.h"
 #include "unitysdk/UnrealTypes/FInstancedStruct.h"
-#include "unitysdk/UnrealTypes/FStructHandle.h"
 
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_CLONE_OFFSET UNITYSDK_OFFSET(0x972F00)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_DISPOSE_OFFSET UNITYSDK_OFFSET(0x8EA300)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GETMUTABLEVALUE_OFFSET UNITYSDK_OFFSET(0x972F30)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x8EB380)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_PROPERTYBAGSTRUCT_OFFSET UNITYSDK_OFFSET(0x2C6230)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x972FB0)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_TYPEID_OFFSET UNITYSDK_OFFSET(0x972F50)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_REGISTERTYPE_OFFSET UNITYSDK_OFFSET(0x1AFC3C90)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG_RESET_OFFSET UNITYSDK_OFFSET(0x972E90)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AFC3D10)
-#define UNREALTYPES_FINSTANCEDPROPERTYBAG__CTOR_OFFSET UNITYSDK_OFFSET(0x8EA260)
+namespace UnrealTypes { class PropertyBag; }
+namespace UnrealTypes { class ScriptStruct; }
+namespace UnrealTypes { class StructOpsTraitsBase; }
+
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x91B940)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_COPYCREATE_OFFSET UNITYSDK_OFFSET(0x91B840)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_CREATE_OFFSET UNITYSDK_OFFSET(0x1A2060C0)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_DEFAULTCREATE_OFFSET UNITYSDK_OFFSET(0x91B7C0)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_DISPOSE_OFFSET UNITYSDK_OFFSET(0x91B970)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_ISVALID_OFFSET UNITYSDK_OFFSET(0x91B690)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_MUTABLEVALUE_OFFSET UNITYSDK_OFFSET(0x91B730)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_PROPERTYBAGSTRUCT_OFFSET UNITYSDK_OFFSET(0x91B6B0)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_STATICSTRUCT_OFFSET UNITYSDK_OFFSET(0x91B760)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_STRUCTOPSTRAITS_OFFSET UNITYSDK_OFFSET(0x91B990)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x91B730)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_MIGRATETONEWBAGSTRUCT_OFFSET UNITYSDK_OFFSET(0x91B750)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_MOVEASSIGN_OFFSET UNITYSDK_OFFSET(0x91B950)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_MOVECREATE_OFFSET UNITYSDK_OFFSET(0x91B910)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_RESET_OFFSET UNITYSDK_OFFSET(0x91B960)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG_UNREALTYPES_ISTRUCT_UNREALTYPES_FINSTANCEDPROPERTYBAG__COPYASSIGN_OFFSET UNITYSDK_OFFSET(0x91B940)
+#define UNREALTYPES_FINSTANCEDPROPERTYBAG__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A2068C0)
 
 namespace UnrealTypes
 {
-	inline static constexpr unsigned int FInstancedPropertyBag_TypeDefinitionIndex = 23994;
+	inline static constexpr unsigned int FInstancedPropertyBag_TypeDefinitionIndex = 24800;
 
 	struct alignas(8) FInstancedPropertyBag
 	{
-		static ::UnrealTypes::FStructHandle* StaticGet_Struct()
+		static ::UnrealTypes::StructOpsTraitsBase** StaticGet_StaticStructOpsTraits()
 		{
-			return (::UnrealTypes::FStructHandle*)Il2CppClass::FromTypeDefinitionIndex(FInstancedPropertyBag_TypeDefinitionIndex)->GetStaticField(0x4730);
-		}
-		static ::System::UInt32* StaticGet_PersistentTypeHash()
-		{
-			return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(FInstancedPropertyBag_TypeDefinitionIndex)->GetStaticField(0x4734);
+			return (::UnrealTypes::StructOpsTraitsBase**)Il2CppClass::FromTypeDefinitionIndex(FInstancedPropertyBag_TypeDefinitionIndex)->GetStaticField(0x1E0C0);
 		}
 		::UnrealTypes::FInstancedStruct _value; // 0x10
-
-		::System::Void _ctor(::Unity::Collections::Allocator allocator)
-		{
-			return ((::System::Void(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG__CTOR_OFFSET))(this, allocator);
-		}
 
 		static ::System::Void _cctor()
 		{
@@ -48,14 +48,65 @@ namespace UnrealTypes
 			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_ISVALID_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_PropertyBagStruct()
+		/*
+		::UnrealTypes::TObjectHandle_1<::UnrealTypes::PropertyBag*> get_PropertyBagStruct()
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_PROPERTYBAGSTRUCT_OFFSET))(this);
+			return ((::UnrealTypes::TObjectHandle_1<::UnrealTypes::PropertyBag*>(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_PROPERTYBAGSTRUCT_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnrealTypes::FReadOnlyStructView get_Value()
+		{
+			return ((::UnrealTypes::FReadOnlyStructView(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_VALUE_OFFSET))(this);
+		}
+		*/
+
+		/*
+		::UnrealTypes::FStructView get_MutableValue()
+		{
+			return ((::UnrealTypes::FStructView(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_MUTABLEVALUE_OFFSET))(this);
+		}
+		*/
+
+		::System::Void MigrateToNewBagStruct(::UnrealTypes::PropertyBag* newPropertyBag)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::PropertyBag*))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_MIGRATETONEWBAGSTRUCT_OFFSET))(this, newPropertyBag);
 		}
 
-		::System::Void Dispose()
+		::UnrealTypes::ScriptStruct* get_StaticStruct()
 		{
-			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_DISPOSE_OFFSET))(this);
+			return ((::UnrealTypes::ScriptStruct*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_STATICSTRUCT_OFFSET))(this);
+		}
+
+		static ::UnrealTypes::FInstancedPropertyBag Create(::Unity::Collections::Allocator allocator)
+		{
+			return ((::UnrealTypes::FInstancedPropertyBag(*)(::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_CREATE_OFFSET))(allocator);
+		}
+
+		::UnrealTypes::FInstancedPropertyBag DefaultCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::UnrealTypes::FInstancedPropertyBag(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_DEFAULTCREATE_OFFSET))(this, allocator);
+		}
+
+		::UnrealTypes::FInstancedPropertyBag CopyCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::UnrealTypes::FInstancedPropertyBag(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_COPYCREATE_OFFSET))(this, allocator);
+		}
+
+		::UnrealTypes::FInstancedPropertyBag MoveCreate(::Unity::Collections::Allocator allocator)
+		{
+			return ((::UnrealTypes::FInstancedPropertyBag(*)(::PVOID, ::Unity::Collections::Allocator))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_MOVECREATE_OFFSET))(this, allocator);
+		}
+
+		::System::Void CopyAssign(::UnrealTypes::FInstancedPropertyBag& other)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FInstancedPropertyBag&))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_COPYASSIGN_OFFSET))(this, other);
+		}
+
+		::System::Void MoveAssign(::UnrealTypes::FInstancedPropertyBag& temp)
+		{
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FInstancedPropertyBag&))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_MOVEASSIGN_OFFSET))(this, temp);
 		}
 
 		::System::Void Reset()
@@ -63,31 +114,19 @@ namespace UnrealTypes
 			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_RESET_OFFSET))(this);
 		}
 
-		::UnrealTypes::FInstancedPropertyBag Clone()
+		::System::Void Dispose()
 		{
-			return ((::UnrealTypes::FInstancedPropertyBag(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_CLONE_OFFSET))(this);
+			return ((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_DISPOSE_OFFSET))(this);
 		}
 
-		/*
-		::UnrealTypes::FStructView GetMutableValue()
+		::UnrealTypes::StructOpsTraitsBase* get_StructOpsTraits()
 		{
-			return ((::UnrealTypes::FStructView(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GETMUTABLEVALUE_OFFSET))(this);
-		}
-		*/
-
-		::System::UInt32 get_TypeId()
-		{
-			return ((::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_TYPEID_OFFSET))(this);
+			return ((::UnrealTypes::StructOpsTraitsBase*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_STRUCTOPSTRAITS_OFFSET))(this);
 		}
 
-		::UnrealTypes::FStructHandle get_StaticStruct()
+		::System::Void UnrealTypes_IStruct_UnrealTypes_FInstancedPropertyBag__CopyAssign(::UnrealTypes::FInstancedPropertyBag& other)
 		{
-			return ((::UnrealTypes::FStructHandle(*)(::PVOID))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_GET_STATICSTRUCT_OFFSET))(this);
-		}
-
-		static ::System::Void RegisterType()
-		{
-			return ((::System::Void(*)())((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_REGISTERTYPE_OFFSET))();
+			return ((::System::Void(*)(::PVOID, ::UnrealTypes::FInstancedPropertyBag&))((::PBYTE)hIl2Cpp + UNREALTYPES_FINSTANCEDPROPERTYBAG_UNREALTYPES_ISTRUCT_UNREALTYPES_FINSTANCEDPROPERTYBAG__COPYASSIGN_OFFSET))(this, other);
 		}
 	};
 }

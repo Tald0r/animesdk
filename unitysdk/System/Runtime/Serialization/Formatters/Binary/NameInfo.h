@@ -7,10 +7,10 @@
 namespace System { class String; }
 namespace System { class Type; }
 
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO_GET_ISSEALED_OFFSET UNITYSDK_OFFSET(0x1951DD70)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO_GET_NINAME_OFFSET UNITYSDK_OFFSET(0x1951DDC0)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO_INIT_OFFSET UNITYSDK_OFFSET(0x1951DD50)
-#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x1951DD40)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO_GET_ISSEALED_OFFSET UNITYSDK_OFFSET(0x199FDB00)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO_GET_NINAME_OFFSET UNITYSDK_OFFSET(0x199FDB50)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO_INIT_OFFSET UNITYSDK_OFFSET(0x199FDAE0)
+#define SYSTEM_RUNTIME_SERIALIZATION_FORMATTERS_BINARY_NAMEINFO__CTOR_OFFSET UNITYSDK_OFFSET(0x199FDAD0)
 
 namespace System::Runtime::Serialization::Formatters::Binary
 {
@@ -22,15 +22,15 @@ namespace System::Runtime::Serialization::Formatters::Binary
 		::System::Type* NItype; // 0x10
 		::System::String* NIFullName; // 0x18
 		::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE NIprimitiveTypeEnum; // 0x20
-		::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE NIarrayEnum; // 0x24
-		::System::Int64 NIassemId; // 0x28
-		::System::Boolean NItransmitTypeOnObject; // 0x30
-		::System::Boolean NIisSealed; // 0x31
-		::System::Boolean NItransmitTypeOnMember; // 0x32
-		::System::Boolean NIisParentTypeOnObject; // 0x33
-		::System::Boolean NIsealedStatusChecked; // 0x34
-		::System::Boolean NIisArray; // 0x35
-		::System::Boolean NIisArrayItem; // 0x36
+		::System::Boolean NIsealedStatusChecked; // 0x24
+		::System::Boolean NIisParentTypeOnObject; // 0x25
+		::System::Boolean NIisArray; // 0x26
+		::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE NIarrayEnum; // 0x28
+		::System::Boolean NItransmitTypeOnMember; // 0x2C
+		::System::Boolean NItransmitTypeOnObject; // 0x2D
+		::System::Boolean NIisSealed; // 0x2E
+		::System::Boolean NIisArrayItem; // 0x2F
+		::System::Int64 NIassemId; // 0x30
 		::System::Int64 NIobjectId; // 0x38
 
 		::System::Void _ctor()

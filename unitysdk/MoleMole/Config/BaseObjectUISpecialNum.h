@@ -5,20 +5,20 @@
 namespace System { class String; }
 namespace UnityEngine { class GUIStyle; }
 
-#define MOLEMOLE_CONFIG_BASEOBJECTUISPECIALNUM_GET_TOOLBARBUTTONGUISTYLE_OFFSET UNITYSDK_OFFSET(0x15EA6F20)
-#define MOLEMOLE_CONFIG_BASEOBJECTUISPECIALNUM_TOGGLEBUTTONDRAWER_OFFSET UNITYSDK_OFFSET(0x15EA70B0)
-#define MOLEMOLE_CONFIG_BASEOBJECTUISPECIALNUM__CTOR_OFFSET UNITYSDK_OFFSET(0x15EA7160)
+#define MOLEMOLE_CONFIG_BASEOBJECTUISPECIALNUM_GET_TOOLBARBUTTONGUISTYLE_OFFSET UNITYSDK_OFFSET(0xE2B8920)
+#define MOLEMOLE_CONFIG_BASEOBJECTUISPECIALNUM_TOGGLEBUTTONDRAWER_OFFSET UNITYSDK_OFFSET(0xE2B8AB0)
+#define MOLEMOLE_CONFIG_BASEOBJECTUISPECIALNUM__CTOR_OFFSET UNITYSDK_OFFSET(0xE2B8B60)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int BaseObjectUISpecialNum_TypeDefinitionIndex = 75103;
+	inline static constexpr unsigned int BaseObjectUISpecialNum_TypeDefinitionIndex = 43141;
 
 	class BaseObjectUISpecialNum : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::GUIStyle** StaticGet__toolbarButtonGUIStyle()
 		{
-			return (::UnityEngine::GUIStyle**)Il2CppClass::FromTypeDefinitionIndex(BaseObjectUISpecialNum_TypeDefinitionIndex)->GetStaticField(0x31EB0);
+			return (::UnityEngine::GUIStyle**)Il2CppClass::FromTypeDefinitionIndex(BaseObjectUISpecialNum_TypeDefinitionIndex)->GetStaticField(0x33D20);
 		}
 		::System::String* OverrideSpecialName; // 0x10
 		::System::Boolean IsUseOverride; // 0x18

@@ -5,7 +5,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleResolvePageController_TabData_TypeDefinitionIndex = 44700;
+	inline static constexpr unsigned int UISuibianTempleResolvePageController_TabData_TypeDefinitionIndex = 60586;
 
 	struct alignas(4) UISuibianTempleResolvePageController_TabData
 	{

@@ -6,12 +6,12 @@
 namespace System { class String; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHANDLEDOORNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xE86A4C0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHANDLEDOORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xE86A860)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHANDLEDOORNODE_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD393B0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHANDLEDOORNODE__CTOR_OFFSET UNITYSDK_OFFSET(0xCD39740)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDHandleDoorNode_TypeDefinitionIndex = 63694;
+	inline static constexpr unsigned int LDHandleDoorNode_TypeDefinitionIndex = 37948;
 
 	class LDHandleDoorNode : public ::FlowCanvas::Nodes::CallableFunctionNode_3<::System::Boolean, ::System::Collections::Generic::List_1<::System::String*>*, ::MoleMole::FlowCanvas::Nodes::EDoorOperation>
 	{

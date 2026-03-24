@@ -1,14 +1,12 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Class_1_534AF681CC2BD5FD_196.h"
+#include "unitysdk/Class_1_7DAD949ADB2C670F.h"
 
-namespace System { class String; }
+#define CLASS_2_AA9239F66AD90F88_1__CTOR_OFFSET UNITYSDK_OFFSET(0x9B56FC0)
 
-#define CLASS_2_AA9239F66AD90F88_1__CTOR_OFFSET UNITYSDK_OFFSET(0x92484B0)
+inline static constexpr unsigned int Class_2_AA9239F66AD90F88_1_TypeDefinitionIndex = 40576;
 
-inline static constexpr unsigned int Class_2_AA9239F66AD90F88_1_TypeDefinitionIndex = 79199;
-
-class Class_2_AA9239F66AD90F88_1 : public ::Class_1_534AF681CC2BD5FD_196<::System::String*>
+class Class_2_AA9239F66AD90F88_1 : public ::Class_1_7DAD949ADB2C670F<::System::Int32>
 {
 public:
 	::System::Void _ctor()

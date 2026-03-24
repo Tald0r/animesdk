@@ -11,18 +11,18 @@ namespace System::Collections::Generic { template <typename T1, typename T2> cla
 namespace System::Net { class WebResponse; }
 namespace System::Runtime::CompilerServices { class IAsyncStateMachine; }
 
-#define CLASS_2_A598F7625AE8DE78_STRUCT_2_0FE7CC2285618153_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x32E5C0)
-#define CLASS_2_A598F7625AE8DE78_STRUCT_2_0FE7CC2285618153_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x259A50)
+#define CLASS_2_A598F7625AE8DE78_STRUCT_2_0FE7CC2285618153_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x35F750)
+#define CLASS_2_A598F7625AE8DE78_STRUCT_2_0FE7CC2285618153_SETSTATEMACHINE_OFFSET UNITYSDK_OFFSET(0x2613F0)
 
-inline static constexpr unsigned int Class_2_A598F7625AE8DE78_Struct_2_0FE7CC2285618153_TypeDefinitionIndex = 74305;
+inline static constexpr unsigned int Class_2_A598F7625AE8DE78_Struct_2_0FE7CC2285618153_TypeDefinitionIndex = 71361;
 
 struct alignas(8) Class_2_A598F7625AE8DE78_Struct_2_0FE7CC2285618153
 {
-	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF*> Field_2_1; // 0x10
-	::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebResponse*> Field_2_6; // 0x28
-	::System::String* Field_2_2; // 0x30
-	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* Field_2_4; // 0x38
-	::Class_2_A598F7625AE8DE78_Class_1_CF60BFEFF7CB7091* Field_2_5; // 0x40
+	::System::Collections::Generic::Dictionary_2<::System::String*, ::System::String*>* Field_2_4; // 0x10
+	::System::String* Field_2_2; // 0x18
+	::System::Runtime::CompilerServices::TaskAwaiter_1<::System::Net::WebResponse*> Field_2_6; // 0x20
+	::Class_2_A598F7625AE8DE78_Class_1_CF60BFEFF7CB7091* Field_2_5; // 0x28
+	::Cysharp::Threading::Tasks::CompilerServices::AsyncUniTaskMethodBuilder_1<::Class_2_A598F7625AE8DE78_Class_1_32BCD41779DEEDDF*> Field_2_1; // 0x30
 	::System::Single Field_2_3; // 0x48
 	::System::Int32 Field_2_0; // 0x4C
 

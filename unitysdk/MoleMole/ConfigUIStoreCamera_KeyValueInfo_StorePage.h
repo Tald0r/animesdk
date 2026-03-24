@@ -5,11 +5,11 @@
 namespace MoleMole { class UIStorePageConfig; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGUISTORECAMERA_KEYVALUEINFO_STOREPAGE__CTOR_OFFSET UNITYSDK_OFFSET(0x13FAFA10)
+#define MOLEMOLE_CONFIGUISTORECAMERA_KEYVALUEINFO_STOREPAGE__CTOR_OFFSET UNITYSDK_OFFSET(0xF2E9740)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigUIStoreCamera_KeyValueInfo_StorePage_TypeDefinitionIndex = 58912;
+	inline static constexpr unsigned int ConfigUIStoreCamera_KeyValueInfo_StorePage_TypeDefinitionIndex = 78715;
 
 	class ConfigUIStoreCamera_KeyValueInfo_StorePage : public ::System::Object
 	{

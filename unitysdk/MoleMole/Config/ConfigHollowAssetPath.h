@@ -6,12 +6,12 @@
 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWASSETPATH_GETASSETPATH_OFFSET UNITYSDK_OFFSET(0xCD07090)
-#define MOLEMOLE_CONFIG_CONFIGHOLLOWASSETPATH__CTOR_OFFSET UNITYSDK_OFFSET(0xCD07160)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWASSETPATH_GETASSETPATH_OFFSET UNITYSDK_OFFSET(0xE35F570)
+#define MOLEMOLE_CONFIG_CONFIGHOLLOWASSETPATH__CTOR_OFFSET UNITYSDK_OFFSET(0xE35F640)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigHollowAssetPath_TypeDefinitionIndex = 51069;
+	inline static constexpr unsigned int ConfigHollowAssetPath_TypeDefinitionIndex = 66245;
 
 	class ConfigHollowAssetPath : public ::Foundation::MihoyoSerializedScriptableObject
 	{

@@ -1,7 +1,7 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-inline static constexpr unsigned int BlendShapeControlSequencePlay_BlendMode_TypeDefinitionIndex = 50385;
+inline static constexpr unsigned int BlendShapeControlSequencePlay_BlendMode_TypeDefinitionIndex = 54536;
 
 enum class BlendShapeControlSequencePlay_BlendMode : ::System::Int32
 {

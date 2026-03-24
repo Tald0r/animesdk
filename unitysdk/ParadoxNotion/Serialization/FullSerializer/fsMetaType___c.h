@@ -4,24 +4,24 @@
 
 namespace ParadoxNotion::Serialization::FullSerializer { class fsMetaType_ObjectGenerator; }
 
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETATYPE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19763F20)
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETATYPE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19763F50)
-#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETATYPE___C__GETGENERATOR_B__21_3_OFFSET UNITYSDK_OFFSET(0x19763F60)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETATYPE___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C31DB0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETATYPE___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19C31DE0)
+#define PARADOXNOTION_SERIALIZATION_FULLSERIALIZER_FSMETATYPE___C__GETGENERATOR_B__21_3_OFFSET UNITYSDK_OFFSET(0x19C31DF0)
 
 namespace ParadoxNotion::Serialization::FullSerializer
 {
-	inline static constexpr unsigned int fsMetaType___c_TypeDefinitionIndex = 25858;
+	inline static constexpr unsigned int fsMetaType___c_TypeDefinitionIndex = 26072;
 
 	class fsMetaType___c : public ::System::Object
 	{
 	public:
 		static ::ParadoxNotion::Serialization::FullSerializer::fsMetaType_ObjectGenerator** StaticGet___9__21_3()
 		{
-			return (::ParadoxNotion::Serialization::FullSerializer::fsMetaType_ObjectGenerator**)Il2CppClass::FromTypeDefinitionIndex(fsMetaType___c_TypeDefinitionIndex)->GetStaticField(0x1ECC0);
+			return (::ParadoxNotion::Serialization::FullSerializer::fsMetaType_ObjectGenerator**)Il2CppClass::FromTypeDefinitionIndex(fsMetaType___c_TypeDefinitionIndex)->GetStaticField(0x1F790);
 		}
 		static ::ParadoxNotion::Serialization::FullSerializer::fsMetaType___c** StaticGet___9()
 		{
-			return (::ParadoxNotion::Serialization::FullSerializer::fsMetaType___c**)Il2CppClass::FromTypeDefinitionIndex(fsMetaType___c_TypeDefinitionIndex)->GetStaticField(0x1ECC8);
+			return (::ParadoxNotion::Serialization::FullSerializer::fsMetaType___c**)Il2CppClass::FromTypeDefinitionIndex(fsMetaType___c_TypeDefinitionIndex)->GetStaticField(0x1F798);
 		}
 
 		static ::System::Void _cctor()

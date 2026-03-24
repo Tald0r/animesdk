@@ -8,23 +8,23 @@ namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 namespace FlowCanvas { template <typename T> class ValueOutput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE_BEGIN_OFFSET UNITYSDK_OFFSET(0xE0F0CA0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0xE0F0B40)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE__CTOR_OFFSET UNITYSDK_OFFSET(0xE0F0D60)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE__REGISTERPORTS_B__4_0_OFFSET UNITYSDK_OFFSET(0xE0F0D80)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE__REGISTERPORTS_B__4_1_OFFSET UNITYSDK_OFFSET(0xE0F0E60)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE_BEGIN_OFFSET UNITYSDK_OFFSET(0x7A559D0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x7A55870)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE__CTOR_OFFSET UNITYSDK_OFFSET(0x7A55A90)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE__REGISTERPORTS_B__4_0_OFFSET UNITYSDK_OFFSET(0x7A55AB0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDGETLEVELQUESTPHASE__REGISTERPORTS_B__4_1_OFFSET UNITYSDK_OFFSET(0x7A55B90)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDGetLevelQuestPhase_TypeDefinitionIndex = 74417;
+	inline static constexpr unsigned int LDGetLevelQuestPhase_TypeDefinitionIndex = 59017;
 
 	class LDGetLevelQuestPhase : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::FlowInput* input; // 0xA8
 		::FlowCanvas::ValueOutput_1<::System::Int32>* levelPhase; // 0xB0
-		::FlowCanvas::ValueInput_1<::System::Int32>* levelQuestID; // 0xB8
-		::FlowCanvas::FlowOutput* output; // 0xC0
+		::FlowCanvas::FlowOutput* output; // 0xB8
+		::FlowCanvas::ValueInput_1<::System::Int32>* levelQuestID; // 0xC0
 
 		::System::Void _ctor()
 		{

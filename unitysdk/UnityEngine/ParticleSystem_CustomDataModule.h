@@ -4,11 +4,11 @@
 
 namespace UnityEngine { class ParticleSystem; }
 
-#define UNITYENGINE_PARTICLESYSTEM_CUSTOMDATAMODULE__CTOR_OFFSET UNITYSDK_OFFSET(0x2C3980)
+#define UNITYENGINE_PARTICLESYSTEM_CUSTOMDATAMODULE__CTOR_OFFSET UNITYSDK_OFFSET(0x3074E0)
 
 namespace UnityEngine
 {
-	inline static constexpr unsigned int ParticleSystem_CustomDataModule_TypeDefinitionIndex = 23698;
+	inline static constexpr unsigned int ParticleSystem_CustomDataModule_TypeDefinitionIndex = 24381;
 
 	struct alignas(8) ParticleSystem_CustomDataModule
 	{

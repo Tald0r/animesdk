@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHADAL_ROOMLIMITTIME_INVOKE_OFFSET UNITYSDK_OFFSET(0xE86A2D0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHADAL_ROOMLIMITTIME__CTOR_OFFSET UNITYSDK_OFFSET(0xE86A4A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHADAL_ROOMLIMITTIME_INVOKE_OFFSET UNITYSDK_OFFSET(0xCD391C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHADAL_ROOMLIMITTIME__CTOR_OFFSET UNITYSDK_OFFSET(0xCD39390)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDHadal_RoomLimitTime_TypeDefinitionIndex = 54325;
+	inline static constexpr unsigned int LDHadal_RoomLimitTime_TypeDefinitionIndex = 67515;
 
 	class LDHadal_RoomLimitTime : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::Int32>
 	{

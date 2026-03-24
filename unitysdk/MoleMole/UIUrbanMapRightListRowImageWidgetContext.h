@@ -5,17 +5,17 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIURBANMAPRIGHTLISTROWIMAGEWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x8812920)
+#define MOLEMOLE_UIURBANMAPRIGHTLISTROWIMAGEWIDGETCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xABBFC00)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIUrbanMapRightListRowImageWidgetContext_TypeDefinitionIndex = 63886;
+	inline static constexpr unsigned int UIUrbanMapRightListRowImageWidgetContext_TypeDefinitionIndex = 58176;
 
 	class UIUrbanMapRightListRowImageWidgetContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Foundation::AssetPath Icon; // 0x28
-		::System::String* Title; // 0x38
+		::System::String* Title; // 0x28
+		::Foundation::AssetPath Icon; // 0x30
 		::System::Int64 TimeCountDown; // 0x40
 
 		::System::Void _ctor()

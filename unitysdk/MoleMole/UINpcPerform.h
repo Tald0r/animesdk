@@ -5,12 +5,12 @@
 class Class_1_3A46F934F31B990A;
 namespace MoleMole::Battle { class Entity; }
 
-#define MOLEMOLE_UINPCPERFORM_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x9E8DDA0)
-#define MOLEMOLE_UINPCPERFORM__CTOR_OFFSET UNITYSDK_OFFSET(0x9E8DD60)
+#define MOLEMOLE_UINPCPERFORM_ONPROCESS_OFFSET UNITYSDK_OFFSET(0xB6B6E60)
+#define MOLEMOLE_UINPCPERFORM__CTOR_OFFSET UNITYSDK_OFFSET(0xB6B6E20)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UINpcPerform_TypeDefinitionIndex = 52972;
+	inline static constexpr unsigned int UINpcPerform_TypeDefinitionIndex = 47721;
 
 	class UINpcPerform : public ::MoleMole::DisplayMessageBase
 	{

@@ -3,7 +3,7 @@
 
 namespace System::Data
 {
-	inline static constexpr unsigned int DataSetDateTime_TypeDefinitionIndex = 35424;
+	inline static constexpr unsigned int DataSetDateTime_TypeDefinitionIndex = 36444;
 
 	enum class DataSetDateTime : ::System::Int32
 	{

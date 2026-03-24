@@ -6,12 +6,12 @@
 namespace System { class String; }
 namespace System::Text { class StringBuilder; }
 
-#define FOUNDATION_MULTIVERSIONINFO___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x170E4140)
-#define FOUNDATION_MULTIVERSIONINFO___C__DISPLAYCLASS9_0__TOSTRING_B__0_OFFSET UNITYSDK_OFFSET(0x170E4150)
+#define FOUNDATION_MULTIVERSIONINFO___C__DISPLAYCLASS9_0__CTOR_OFFSET UNITYSDK_OFFSET(0x17851500)
+#define FOUNDATION_MULTIVERSIONINFO___C__DISPLAYCLASS9_0__TOSTRING_B__0_OFFSET UNITYSDK_OFFSET(0x17851510)
 
 namespace Foundation
 {
-	inline static constexpr unsigned int MultiVersionInfo___c__DisplayClass9_0_TypeDefinitionIndex = 8076;
+	inline static constexpr unsigned int MultiVersionInfo___c__DisplayClass9_0_TypeDefinitionIndex = 8141;
 
 	class MultiVersionInfo___c__DisplayClass9_0 : public ::System::Object
 	{

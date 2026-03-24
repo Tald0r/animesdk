@@ -8,46 +8,46 @@ namespace MoleMole::Config { class ReadonlyDynamicFloat; }
 namespace SimpleJSON { class JSONNode; }
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0xC1DE640)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_FROMFLX_OFFSET UNITYSDK_OFFSET(0xC1DE1F0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_FROMJSON_OFFSET UNITYSDK_OFFSET(0xC1DE300)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_GET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xC1DE1B0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_GET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0xC1DE1D0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_GET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0xC1DE190)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_RESET_OFFSET UNITYSDK_OFFSET(0xC1DE440)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_SET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0xC1DE1C0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_SET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0xC1DE1E0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_SET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0xC1DE1A0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT_TOJSON_OFFSET UNITYSDK_OFFSET(0xC1DE4E0)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT__CCTOR_OFFSET UNITYSDK_OFFSET(0xC1DE840)
-#define MOLEMOLE_CONFIG_DYNAMICFLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0xC1DE830)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_FROMBINARY_OFFSET UNITYSDK_OFFSET(0x81F4DA0)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_FROMFLX_OFFSET UNITYSDK_OFFSET(0x81F4950)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_FROMJSON_OFFSET UNITYSDK_OFFSET(0x81F4A60)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_GET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0x81F4910)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_GET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0x81F4930)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_GET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0x81F48F0)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_RESET_OFFSET UNITYSDK_OFFSET(0x81F4BA0)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_SET_DYNAMICKEY_OFFSET UNITYSDK_OFFSET(0x81F4920)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_SET_FIXEDVALUE_OFFSET UNITYSDK_OFFSET(0x81F4940)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_SET_ISDYNAMIC_OFFSET UNITYSDK_OFFSET(0x81F4900)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT_TOJSON_OFFSET UNITYSDK_OFFSET(0x81F4C40)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT__CCTOR_OFFSET UNITYSDK_OFFSET(0x81F4FA0)
+#define MOLEMOLE_CONFIG_DYNAMICFLOAT__CTOR_OFFSET UNITYSDK_OFFSET(0x81F4F90)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int DynamicFloat_TypeDefinitionIndex = 42680;
+	inline static constexpr unsigned int DynamicFloat_TypeDefinitionIndex = 48222;
 
 	class DynamicFloat : public ::System::Object
 	{
 	public:
-		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_ZERO()
-		{
-			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2A990);
-		}
 		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_ONE()
 		{
-			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2A998);
-		}
-		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_MINUS_ONE()
-		{
-			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2A9A0);
-		}
-		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_ONEHUNDRED()
-		{
-			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2A9A8);
+			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2C0D0);
 		}
 		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_THREESIXZERO()
 		{
-			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2A9B0);
+			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2C0D8);
+		}
+		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_ZERO()
+		{
+			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2C0E0);
+		}
+		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_MINUS_ONE()
+		{
+			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2C0E8);
+		}
+		static ::MoleMole::Config::ReadonlyDynamicFloat** StaticGet_ONEHUNDRED()
+		{
+			return (::MoleMole::Config::ReadonlyDynamicFloat**)Il2CppClass::FromTypeDefinitionIndex(DynamicFloat_TypeDefinitionIndex)->GetStaticField(0x2C0F0);
 		}
 		::System::String* _dynamicKey_k__BackingField; // 0x10
 		::System::Single _fixedValue_k__BackingField; // 0x18

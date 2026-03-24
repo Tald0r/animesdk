@@ -10,12 +10,12 @@ namespace NodeCanvas::Framework { template <typename T> class BBParameter_1; }
 namespace NodeCanvas::Framework::Internal { class BBObjectParameter; }
 namespace UnityEngine { class Component; }
 
-#define NODECANVAS_BEHAVIOURTREES_SWITCH_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x19FEC990)
-#define NODECANVAS_BEHAVIOURTREES_SWITCH__CTOR_OFFSET UNITYSDK_OFFSET(0x19FECC90)
+#define NODECANVAS_BEHAVIOURTREES_SWITCH_ONEXECUTE_OFFSET UNITYSDK_OFFSET(0x1A605A30)
+#define NODECANVAS_BEHAVIOURTREES_SWITCH__CTOR_OFFSET UNITYSDK_OFFSET(0x1A605D30)
 
 namespace NodeCanvas::BehaviourTrees
 {
-	inline static constexpr unsigned int Switch_TypeDefinitionIndex = 25451;
+	inline static constexpr unsigned int Switch_TypeDefinitionIndex = 26544;
 
 	class Switch : public ::NodeCanvas::BehaviourTrees::BTComposite
 	{
@@ -25,8 +25,8 @@ namespace NodeCanvas::BehaviourTrees
 		::NodeCanvas::BehaviourTrees::Switch_CaseSelectionMode selectionMode; // 0x88
 		::System::Boolean dynamic; // 0x8C
 		::NodeCanvas::BehaviourTrees::Switch_OutOfRangeMode outOfRangeMode; // 0x90
-		::System::Int32 runningIndex; // 0x94
-		::System::Int32 current; // 0x98
+		::System::Int32 current; // 0x94
+		::System::Int32 runningIndex; // 0x98
 
 		::System::Void _ctor()
 		{

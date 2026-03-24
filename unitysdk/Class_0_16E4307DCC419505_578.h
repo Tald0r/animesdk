@@ -1,9 +1,10 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
 
-namespace System { class String; }
+class Class_1_4D65A0FCDA8137CB;
+namespace MoleMole::Config { class PhotoCameraModeOverride; }
 
-inline static constexpr unsigned int Class_0_16E4307DCC419505_578_TypeDefinitionIndex = 78394;
+inline static constexpr unsigned int Class_0_16E4307DCC419505_578_TypeDefinitionIndex = 61688;
 
 class Class_0_16E4307DCC419505_578
 {

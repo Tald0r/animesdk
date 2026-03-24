@@ -4,24 +4,24 @@
 
 namespace System { template <typename T1, typename T2> class Func_2; }
 
-#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTDEVICEMATCHER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1979D240)
-#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTDEVICEMATCHER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1979D270)
-#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTDEVICEMATCHER___C__WITH_B__11_0_OFFSET UNITYSDK_OFFSET(0x1979D280)
+#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTDEVICEMATCHER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x19C0DB70)
+#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTDEVICEMATCHER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x19C0DBA0)
+#define UNITYENGINE_INPUTSYSTEM_LAYOUTS_INPUTDEVICEMATCHER___C__WITH_B__11_0_OFFSET UNITYSDK_OFFSET(0x19C0DBB0)
 
 namespace UnityEngine::InputSystem::Layouts
 {
-	inline static constexpr unsigned int InputDeviceMatcher___c_TypeDefinitionIndex = 27891;
+	inline static constexpr unsigned int InputDeviceMatcher___c_TypeDefinitionIndex = 28831;
 
 	class InputDeviceMatcher___c : public ::System::Object
 	{
 	public:
 		static ::UnityEngine::InputSystem::Layouts::InputDeviceMatcher___c** StaticGet___9()
 		{
-			return (::UnityEngine::InputSystem::Layouts::InputDeviceMatcher___c**)Il2CppClass::FromTypeDefinitionIndex(InputDeviceMatcher___c_TypeDefinitionIndex)->GetStaticField(0x205B0);
+			return (::UnityEngine::InputSystem::Layouts::InputDeviceMatcher___c**)Il2CppClass::FromTypeDefinitionIndex(InputDeviceMatcher___c_TypeDefinitionIndex)->GetStaticField(0x21C10);
 		}
 		static ::System::Func_2<::System::Char, ::System::Boolean>** StaticGet___9__11_0()
 		{
-			return (::System::Func_2<::System::Char, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(InputDeviceMatcher___c_TypeDefinitionIndex)->GetStaticField(0x205B8);
+			return (::System::Func_2<::System::Char, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(InputDeviceMatcher___c_TypeDefinitionIndex)->GetStaticField(0x21C18);
 		}
 
 		static ::System::Void _cctor()

@@ -1,18 +1,18 @@
 #pragma once
 #include "unitysdk/unitysdk.h"
-#include "unitysdk/Enum_3_0A3761FE34514D6C_50.h"
+#include "unitysdk/Enum_3_0A3761FE34514D6C_51.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UICAMPIDLEREWARDDIALOGPOPWINDOWCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xC0CA2C0)
+#define MOLEMOLE_UICAMPIDLEREWARDDIALOGPOPWINDOWCONTROLLERCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD033C70)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UICampIdleRewardDialogPopWindowControllerContext_TypeDefinitionIndex = 60777;
+	inline static constexpr unsigned int UICampIdleRewardDialogPopWindowControllerContext_TypeDefinitionIndex = 43995;
 
 	class UICampIdleRewardDialogPopWindowControllerContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
-		::Enum_3_0A3761FE34514D6C_50 m_playType; // 0x28
+		::Enum_3_0A3761FE34514D6C_51 m_playType; // 0x28
 
 		::System::Void _ctor()
 		{

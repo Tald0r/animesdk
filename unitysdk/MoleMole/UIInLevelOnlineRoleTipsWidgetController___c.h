@@ -4,24 +4,24 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_UIINLEVELONLINEROLETIPSWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x8A3AF60)
-#define MOLEMOLE_UIINLEVELONLINEROLETIPSWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x8A3AFA0)
-#define MOLEMOLE_UIINLEVELONLINEROLETIPSWIDGETCONTROLLER___C__ONUIINIT_B__27_0_OFFSET UNITYSDK_OFFSET(0x8A3AFB0)
+#define MOLEMOLE_UIINLEVELONLINEROLETIPSWIDGETCONTROLLER___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x893BC10)
+#define MOLEMOLE_UIINLEVELONLINEROLETIPSWIDGETCONTROLLER___C__CTOR_OFFSET UNITYSDK_OFFSET(0x893BC50)
+#define MOLEMOLE_UIINLEVELONLINEROLETIPSWIDGETCONTROLLER___C__ONUIINIT_B__27_0_OFFSET UNITYSDK_OFFSET(0x893BC60)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIInLevelOnlineRoleTipsWidgetController___c_TypeDefinitionIndex = 67932;
+	inline static constexpr unsigned int UIInLevelOnlineRoleTipsWidgetController___c_TypeDefinitionIndex = 59341;
 
 	class UIInLevelOnlineRoleTipsWidgetController___c : public ::System::Object
 	{
 	public:
-		static ::MoleMole::UIInLevelOnlineRoleTipsWidgetController___c** StaticGet___9()
-		{
-			return (::MoleMole::UIInLevelOnlineRoleTipsWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelOnlineRoleTipsWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3A9A0);
-		}
 		static ::System::Action** StaticGet___9__27_0()
 		{
-			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelOnlineRoleTipsWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3A9A8);
+			return (::System::Action**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelOnlineRoleTipsWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D6F0);
+		}
+		static ::MoleMole::UIInLevelOnlineRoleTipsWidgetController___c** StaticGet___9()
+		{
+			return (::MoleMole::UIInLevelOnlineRoleTipsWidgetController___c**)Il2CppClass::FromTypeDefinitionIndex(UIInLevelOnlineRoleTipsWidgetController___c_TypeDefinitionIndex)->GetStaticField(0x3D6F8);
 		}
 
 		static ::System::Void _cctor()

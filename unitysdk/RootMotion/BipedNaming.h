@@ -7,109 +7,109 @@
 namespace System { class String; }
 namespace UnityEngine { class Transform; }
 
-#define ROOTMOTION_BIPEDNAMING_EXCLUDESNAMING_OFFSET UNITYSDK_OFFSET(0x1A8902B0)
-#define ROOTMOTION_BIPEDNAMING_FIRSTLETTER_OFFSET UNITYSDK_OFFSET(0x1A890270)
-#define ROOTMOTION_BIPEDNAMING_GETBONESIDE_OFFSET UNITYSDK_OFFSET(0x1A88F150)
-#define ROOTMOTION_BIPEDNAMING_GETBONESOFSIDE_OFFSET UNITYSDK_OFFSET(0x1A88EE70)
-#define ROOTMOTION_BIPEDNAMING_GETBONESOFTYPEANDSIDE_OFFSET UNITYSDK_OFFSET(0x1A88F1E0)
-#define ROOTMOTION_BIPEDNAMING_GETBONESOFTYPE_OFFSET UNITYSDK_OFFSET(0x1A88EAA0)
-#define ROOTMOTION_BIPEDNAMING_GETBONETYPE_OFFSET UNITYSDK_OFFSET(0x1A88ED00)
-#define ROOTMOTION_BIPEDNAMING_GETBONE_OFFSET UNITYSDK_OFFSET(0x1A890160)
-#define ROOTMOTION_BIPEDNAMING_GETFIRSTBONEOFTYPEANDSIDE_OFFSET UNITYSDK_OFFSET(0x1A88F250)
-#define ROOTMOTION_BIPEDNAMING_GETNAMINGMATCH_OFFSET UNITYSDK_OFFSET(0x1A88F340)
-#define ROOTMOTION_BIPEDNAMING_ISARM_OFFSET UNITYSDK_OFFSET(0x1A88F900)
-#define ROOTMOTION_BIPEDNAMING_ISEYE_OFFSET UNITYSDK_OFFSET(0x1A88FCF0)
-#define ROOTMOTION_BIPEDNAMING_ISHEAD_OFFSET UNITYSDK_OFFSET(0x1A88F7B0)
-#define ROOTMOTION_BIPEDNAMING_ISLEFT_OFFSET UNITYSDK_OFFSET(0x1A88FE40)
-#define ROOTMOTION_BIPEDNAMING_ISLEG_OFFSET UNITYSDK_OFFSET(0x1A88FA50)
-#define ROOTMOTION_BIPEDNAMING_ISRIGHT_OFFSET UNITYSDK_OFFSET(0x1A88FFD0)
-#define ROOTMOTION_BIPEDNAMING_ISSPINE_OFFSET UNITYSDK_OFFSET(0x1A88F660)
-#define ROOTMOTION_BIPEDNAMING_ISTAIL_OFFSET UNITYSDK_OFFSET(0x1A88FBA0)
-#define ROOTMOTION_BIPEDNAMING_ISTYPEEXCLUDE_OFFSET UNITYSDK_OFFSET(0x1A890350)
-#define ROOTMOTION_BIPEDNAMING_LASTLETTERIS_OFFSET UNITYSDK_OFFSET(0x1A8904F0)
-#define ROOTMOTION_BIPEDNAMING_LASTLETTER_OFFSET UNITYSDK_OFFSET(0x1A890230)
-#define ROOTMOTION_BIPEDNAMING_MATCHESLASTLETTER_OFFSET UNITYSDK_OFFSET(0x1A8903C0)
-#define ROOTMOTION_BIPEDNAMING_MATCHESNAMING_OFFSET UNITYSDK_OFFSET(0x1A88F4C0)
-#define ROOTMOTION_BIPEDNAMING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A890550)
+#define ROOTMOTION_BIPEDNAMING_EXCLUDESNAMING_OFFSET UNITYSDK_OFFSET(0x1AE52110)
+#define ROOTMOTION_BIPEDNAMING_FIRSTLETTER_OFFSET UNITYSDK_OFFSET(0x1AE520D0)
+#define ROOTMOTION_BIPEDNAMING_GETBONESIDE_OFFSET UNITYSDK_OFFSET(0x1AE50FB0)
+#define ROOTMOTION_BIPEDNAMING_GETBONESOFSIDE_OFFSET UNITYSDK_OFFSET(0x1AE50CD0)
+#define ROOTMOTION_BIPEDNAMING_GETBONESOFTYPEANDSIDE_OFFSET UNITYSDK_OFFSET(0x1AE51040)
+#define ROOTMOTION_BIPEDNAMING_GETBONESOFTYPE_OFFSET UNITYSDK_OFFSET(0x1AE50900)
+#define ROOTMOTION_BIPEDNAMING_GETBONETYPE_OFFSET UNITYSDK_OFFSET(0x1AE50B60)
+#define ROOTMOTION_BIPEDNAMING_GETBONE_OFFSET UNITYSDK_OFFSET(0x1AE51FC0)
+#define ROOTMOTION_BIPEDNAMING_GETFIRSTBONEOFTYPEANDSIDE_OFFSET UNITYSDK_OFFSET(0x1AE510B0)
+#define ROOTMOTION_BIPEDNAMING_GETNAMINGMATCH_OFFSET UNITYSDK_OFFSET(0x1AE511A0)
+#define ROOTMOTION_BIPEDNAMING_ISARM_OFFSET UNITYSDK_OFFSET(0x1AE51760)
+#define ROOTMOTION_BIPEDNAMING_ISEYE_OFFSET UNITYSDK_OFFSET(0x1AE51B50)
+#define ROOTMOTION_BIPEDNAMING_ISHEAD_OFFSET UNITYSDK_OFFSET(0x1AE51610)
+#define ROOTMOTION_BIPEDNAMING_ISLEFT_OFFSET UNITYSDK_OFFSET(0x1AE51CA0)
+#define ROOTMOTION_BIPEDNAMING_ISLEG_OFFSET UNITYSDK_OFFSET(0x1AE518B0)
+#define ROOTMOTION_BIPEDNAMING_ISRIGHT_OFFSET UNITYSDK_OFFSET(0x1AE51E30)
+#define ROOTMOTION_BIPEDNAMING_ISSPINE_OFFSET UNITYSDK_OFFSET(0x1AE514C0)
+#define ROOTMOTION_BIPEDNAMING_ISTAIL_OFFSET UNITYSDK_OFFSET(0x1AE51A00)
+#define ROOTMOTION_BIPEDNAMING_ISTYPEEXCLUDE_OFFSET UNITYSDK_OFFSET(0x1AE521B0)
+#define ROOTMOTION_BIPEDNAMING_LASTLETTERIS_OFFSET UNITYSDK_OFFSET(0x1AE52350)
+#define ROOTMOTION_BIPEDNAMING_LASTLETTER_OFFSET UNITYSDK_OFFSET(0x1AE52090)
+#define ROOTMOTION_BIPEDNAMING_MATCHESLASTLETTER_OFFSET UNITYSDK_OFFSET(0x1AE52220)
+#define ROOTMOTION_BIPEDNAMING_MATCHESNAMING_OFFSET UNITYSDK_OFFSET(0x1AE51320)
+#define ROOTMOTION_BIPEDNAMING__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AE523B0)
 
 namespace RootMotion
 {
-	inline static constexpr unsigned int BipedNaming_TypeDefinitionIndex = 34978;
+	inline static constexpr unsigned int BipedNaming_TypeDefinitionIndex = 35980;
 
 	class BipedNaming : public ::System::Object
 	{
 	public:
-		static ::Il2CppArray<::System::String*>** StaticGet_typeArm()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C20);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeEye()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C28);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeLeg()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C30);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeSpine()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C38);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeEye()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C40);
-		}
 		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeArm()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C48);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeHead()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C50);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26650);
 		}
 		static ::Il2CppArray<::System::String*>** StaticGet_hand()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C58);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeSpine()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C60);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeLeg()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C68);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_pelvis()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C70);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeRight()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C78);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeTail()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C80);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_foot()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C88);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeExclude()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C90);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeLeft()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24C98);
-		}
-		static ::Il2CppArray<::System::String*>** StaticGet_typeHead()
-		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24CA0);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26658);
 		}
 		static ::Il2CppArray<::System::String*>** StaticGet_typeTail()
 		{
-			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x24CA8);
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26660);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeHead()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26668);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeLeft()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26670);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_foot()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26678);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeSpine()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26680);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeHead()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26688);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeLeg()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26690);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeArm()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x26698);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeSpine()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266A0);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_pelvis()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266A8);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeLeg()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266B0);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeRight()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266B8);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeEye()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266C0);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeTail()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266C8);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeExcludeEye()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266D0);
+		}
+		static ::Il2CppArray<::System::String*>** StaticGet_typeExclude()
+		{
+			return (::Il2CppArray<::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(BipedNaming_TypeDefinitionIndex)->GetStaticField(0x266D8);
 		}
 
 		static ::System::Void _cctor()

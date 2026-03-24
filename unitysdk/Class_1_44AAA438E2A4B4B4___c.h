@@ -5,22 +5,22 @@
 namespace MoleMole { class UIYorozuyaMapTipsChildWindowController; }
 namespace System { template <typename T> class Comparison_1; }
 
-#define CLASS_1_44AAA438E2A4B4B4___C_METHOD_1_4F1D95C2E2E93BCE_OFFSET UNITYSDK_OFFSET(0xEE75F00)
-#define CLASS_1_44AAA438E2A4B4B4___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xEE75EB0)
-#define CLASS_1_44AAA438E2A4B4B4___C__CTOR_OFFSET UNITYSDK_OFFSET(0xEE75EF0)
+#define CLASS_1_44AAA438E2A4B4B4___C_METHOD_1_4F1D95C2E2E93BCE_OFFSET UNITYSDK_OFFSET(0xDA1E0E0)
+#define CLASS_1_44AAA438E2A4B4B4___C__CCTOR_OFFSET UNITYSDK_OFFSET(0xDA1E090)
+#define CLASS_1_44AAA438E2A4B4B4___C__CTOR_OFFSET UNITYSDK_OFFSET(0xDA1E0D0)
 
-inline static constexpr unsigned int Class_1_44AAA438E2A4B4B4___c_TypeDefinitionIndex = 64744;
+inline static constexpr unsigned int Class_1_44AAA438E2A4B4B4___c_TypeDefinitionIndex = 70483;
 
 class Class_1_44AAA438E2A4B4B4___c : public ::System::Object
 {
 public:
 	static ::System::Comparison_1<::MoleMole::UIYorozuyaMapTipsChildWindowController*>** StaticGet___9__4_0()
 	{
-		return (::System::Comparison_1<::MoleMole::UIYorozuyaMapTipsChildWindowController*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_44AAA438E2A4B4B4___c_TypeDefinitionIndex)->GetStaticField(0x2D7B0);
+		return (::System::Comparison_1<::MoleMole::UIYorozuyaMapTipsChildWindowController*>**)Il2CppClass::FromTypeDefinitionIndex(Class_1_44AAA438E2A4B4B4___c_TypeDefinitionIndex)->GetStaticField(0x35B50);
 	}
 	static ::Class_1_44AAA438E2A4B4B4___c** StaticGet___9()
 	{
-		return (::Class_1_44AAA438E2A4B4B4___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_44AAA438E2A4B4B4___c_TypeDefinitionIndex)->GetStaticField(0x2D7B8);
+		return (::Class_1_44AAA438E2A4B4B4___c**)Il2CppClass::FromTypeDefinitionIndex(Class_1_44AAA438E2A4B4B4___c_TypeDefinitionIndex)->GetStaticField(0x35B58);
 	}
 
 	static ::System::Void _cctor()

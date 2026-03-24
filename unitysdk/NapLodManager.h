@@ -8,26 +8,26 @@ namespace System::Collections::Generic { template <typename T> class HashSet_1; 
 namespace System::Collections::Generic { template <typename T> class List_1; }
 namespace UnityEngine { class MdbComponent; }
 
-#define NAPLODMANAGER_APPLYAVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x7FC19F0)
-#define NAPLODMANAGER_APPLYAVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1D30)
-#define NAPLODMANAGER_GET_AVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1950)
-#define NAPLODMANAGER_GET_AVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1C90)
-#define NAPLODMANAGER_REGISTERAVATARLODCONTROLLER_OFFSET UNITYSDK_OFFSET(0x7FC1F10)
-#define NAPLODMANAGER_SET_AVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1960)
-#define NAPLODMANAGER_SET_AVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x7FC1CA0)
-#define NAPLODMANAGER_UNREGISTERAVATARLODCONTROLLER_OFFSET UNITYSDK_OFFSET(0x7FC20F0)
-#define NAPLODMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x7FC2270)
+#define NAPLODMANAGER_APPLYAVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x6BC2680)
+#define NAPLODMANAGER_APPLYAVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x6BC29C0)
+#define NAPLODMANAGER_GET_AVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x6BC25E0)
+#define NAPLODMANAGER_GET_AVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x6BC2920)
+#define NAPLODMANAGER_REGISTERAVATARLODCONTROLLER_OFFSET UNITYSDK_OFFSET(0x6BC2BA0)
+#define NAPLODMANAGER_SET_AVATARBODYLEVEL_OFFSET UNITYSDK_OFFSET(0x6BC25F0)
+#define NAPLODMANAGER_SET_AVATARFACELEVEL_OFFSET UNITYSDK_OFFSET(0x6BC2930)
+#define NAPLODMANAGER_UNREGISTERAVATARLODCONTROLLER_OFFSET UNITYSDK_OFFSET(0x6BC2D70)
+#define NAPLODMANAGER__CTOR_OFFSET UNITYSDK_OFFSET(0x6BC2EF0)
 
-inline static constexpr unsigned int NapLodManager_TypeDefinitionIndex = 73047;
+inline static constexpr unsigned int NapLodManager_TypeDefinitionIndex = 73042;
 
 class NapLodManager : public ::Foundation::Singleton_1<::NapLodManager*>
 {
 public:
-	::System::Collections::Generic::List_1<::NapLodController*>* allAvatarFaceControllers; // 0x10
-	::System::Collections::Generic::List_1<::NapLodController*>* allAvatarBodyControllers; // 0x18
-	::System::Collections::Generic::HashSet_1<::UnityEngine::MdbComponent*>* allMdb; // 0x20
-	::NapLodController_NapLODLevel avatarFaceLevel; // 0x28
-	::NapLodController_NapLODLevel avatarBodyLevel; // 0x2C
+	::System::Collections::Generic::HashSet_1<::UnityEngine::MdbComponent*>* allMdb; // 0x10
+	::System::Collections::Generic::List_1<::NapLodController*>* allAvatarFaceControllers; // 0x18
+	::System::Collections::Generic::List_1<::NapLodController*>* allAvatarBodyControllers; // 0x20
+	::NapLodController_NapLODLevel avatarBodyLevel; // 0x28
+	::NapLodController_NapLODLevel avatarFaceLevel; // 0x2C
 
 	::System::Void _ctor()
 	{

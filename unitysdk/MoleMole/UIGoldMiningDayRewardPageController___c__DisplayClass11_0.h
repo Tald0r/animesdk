@@ -5,12 +5,12 @@
 namespace MoleMole { class UIGoldMiningDayRewardPageController; }
 namespace System::Collections::Generic { template <typename T> class List_1; }
 
-#define MOLEMOLE_UIGOLDMININGDAYREWARDPAGECONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0x891F2F0)
-#define MOLEMOLE_UIGOLDMININGDAYREWARDPAGECONTROLLER___C__DISPLAYCLASS11_0__ONALLRECEIVEBTNCLICK_B__0_OFFSET UNITYSDK_OFFSET(0x891F300)
+#define MOLEMOLE_UIGOLDMININGDAYREWARDPAGECONTROLLER___C__DISPLAYCLASS11_0__CTOR_OFFSET UNITYSDK_OFFSET(0xDFC7B30)
+#define MOLEMOLE_UIGOLDMININGDAYREWARDPAGECONTROLLER___C__DISPLAYCLASS11_0__ONALLRECEIVEBTNCLICK_B__0_OFFSET UNITYSDK_OFFSET(0xDFC7B40)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIGoldMiningDayRewardPageController___c__DisplayClass11_0_TypeDefinitionIndex = 75434;
+	inline static constexpr unsigned int UIGoldMiningDayRewardPageController___c__DisplayClass11_0_TypeDefinitionIndex = 76101;
 
 	class UIGoldMiningDayRewardPageController___c__DisplayClass11_0 : public ::System::Object
 	{

@@ -6,7 +6,7 @@ namespace Utf8Json { template <typename T> class IJsonFormatter_1; }
 
 namespace Utf8Json::Unity
 {
-	inline static constexpr unsigned int UnityResolver_FormatterCache_1_TypeDefinitionIndex = 81750;
+	inline static constexpr unsigned int UnityResolver_FormatterCache_1_TypeDefinitionIndex = 83791;
 
 	template <typename T>
 	class UnityResolver_FormatterCache_1 : public ::System::Object

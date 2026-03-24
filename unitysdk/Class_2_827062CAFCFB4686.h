@@ -11,25 +11,25 @@ namespace MoleMole { class UIControlCollection; }
 namespace UnityEngine { class Animation; }
 namespace UnityEngine::UI::Extension { class UILocalizationText; }
 
-#define CLASS_2_827062CAFCFB4686_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0x7A1B180)
-#define CLASS_2_827062CAFCFB4686_METHOD_2_8CE71901D76EEEA9_OFFSET UNITYSDK_OFFSET(0x7A1AF40)
-#define CLASS_2_827062CAFCFB4686_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0x7A1B290)
-#define CLASS_2_827062CAFCFB4686__CTOR_OFFSET UNITYSDK_OFFSET(0x7A1B280)
+#define CLASS_2_827062CAFCFB4686_METHOD_2_77EA5BCD93BD96AE_OFFSET UNITYSDK_OFFSET(0xB81B940)
+#define CLASS_2_827062CAFCFB4686_METHOD_2_8CE71901D76EEEA9_OFFSET UNITYSDK_OFFSET(0xB81B700)
+#define CLASS_2_827062CAFCFB4686_METHOD_2_C8903A36ECBA4078_OFFSET UNITYSDK_OFFSET(0xB81BA50)
+#define CLASS_2_827062CAFCFB4686__CTOR_OFFSET UNITYSDK_OFFSET(0xB81BA40)
 
-inline static constexpr unsigned int Class_2_827062CAFCFB4686_TypeDefinitionIndex = 41416;
+inline static constexpr unsigned int Class_2_827062CAFCFB4686_TypeDefinitionIndex = 59914;
 
 class Class_2_827062CAFCFB4686 : public ::Class_1_EEA0111A28582B57
 {
 public:
-	::MonoUITableScrollV2* Field_2_4; // 0x18
-	::UnityEngine::Animation* Field_2_3; // 0x20
-	::UnityEngine::Animation* Field_2_6; // 0x28
-	::MoleMole::ImgTextParserBase* Field_2_5; // 0x30
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x38
-	::Class_2_60DDD9C206686F44* Field_2_8; // 0x40
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x48
-	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x50
-	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x58
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_2; // 0x18
+	::MonoUITableScrollV2* Field_2_4; // 0x20
+	::Class_2_60DDD9C206686F44* Field_2_8; // 0x28
+	::UnityEngine::Animation* Field_2_3; // 0x30
+	::Class_2_A8F5ABF31E066ED4* Field_2_7; // 0x38
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_1; // 0x40
+	::MoleMole::ImgTextParserBase* Field_2_5; // 0x48
+	::UnityEngine::UI::Extension::UILocalizationText* Field_2_0; // 0x50
+	::UnityEngine::Animation* Field_2_6; // 0x58
 
 	::System::Void _ctor()
 	{

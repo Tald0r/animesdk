@@ -7,25 +7,25 @@
 namespace System { class Action; }
 namespace System { class String; }
 
-#define MOLEMOLE_UILOGINMESSAGESPOPSHOWOBJ_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x7D47780)
-#define MOLEMOLE_UILOGINMESSAGESPOPSHOWOBJ_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x7D47840)
-#define MOLEMOLE_UILOGINMESSAGESPOPSHOWOBJ__CTOR_OFFSET UNITYSDK_OFFSET(0x7D47790)
+#define MOLEMOLE_UILOGINMESSAGESPOPSHOWOBJ_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x8EC3980)
+#define MOLEMOLE_UILOGINMESSAGESPOPSHOWOBJ_ONPROCESS_OFFSET UNITYSDK_OFFSET(0x8EC3A40)
+#define MOLEMOLE_UILOGINMESSAGESPOPSHOWOBJ__CTOR_OFFSET UNITYSDK_OFFSET(0x8EC3990)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UILoginMessagesPopShowObj_TypeDefinitionIndex = 45468;
+	inline static constexpr unsigned int UILoginMessagesPopShowObj_TypeDefinitionIndex = 79409;
 
 	class UILoginMessagesPopShowObj : public ::MoleMole::DisplayMessageBase
 	{
 	public:
-		::System::Action* okBtnCb; // 0x28
-		::System::Nullable_1<::Foundation::AssetPath> okBtnIcon; // 0x30
-		::System::String* okText; // 0x48
-		::System::String* cancelText; // 0x50
+		::System::Nullable_1<::Foundation::AssetPath> cancelBtnIcon; // 0x28
+		::System::Nullable_1<::Foundation::AssetPath> okBtnIcon; // 0x40
 		::System::String* content; // 0x58
-		::System::Action* cancelBtnCb; // 0x60
-		::System::String* title; // 0x68
-		::System::Nullable_1<::Foundation::AssetPath> cancelBtnIcon; // 0x70
+		::System::String* cancelText; // 0x60
+		::System::String* okText; // 0x68
+		::System::Action* okBtnCb; // 0x70
+		::System::Action* cancelBtnCb; // 0x78
+		::System::String* title; // 0x80
 		::System::Boolean hideCancel; // 0x88
 
 		::System::Void _ctor(::System::String* title, ::System::String* content, ::System::Boolean hideCancel, ::System::String* okText, ::System::Action* okBtnCb, ::System::Nullable_1<::Foundation::AssetPath> okBtnIcon, ::System::String* cancelText, ::System::Action* cancelBtnCb, ::System::Nullable_1<::Foundation::AssetPath> cancelBtnIcon)

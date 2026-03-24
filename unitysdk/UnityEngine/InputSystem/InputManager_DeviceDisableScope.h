@@ -3,7 +3,7 @@
 
 namespace UnityEngine::InputSystem
 {
-	inline static constexpr unsigned int InputManager_DeviceDisableScope_TypeDefinitionIndex = 27569;
+	inline static constexpr unsigned int InputManager_DeviceDisableScope_TypeDefinitionIndex = 28509;
 
 	enum class InputManager_DeviceDisableScope : ::System::Int32
 	{

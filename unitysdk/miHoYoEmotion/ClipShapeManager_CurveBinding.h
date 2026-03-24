@@ -13,35 +13,35 @@ namespace UnityEngine { class Transform; }
 namespace miHoYoEmotion { class ClipShapeManager; }
 namespace miHoYoEmotion { class EyeKey; }
 
-#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_APPLY_OFFSET UNITYSDK_OFFSET(0x18AE1430)
-#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_EQUALS_OFFSET UNITYSDK_OFFSET(0x18AE4660)
-#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_GETORIGINVALUE_OFFSET UNITYSDK_OFFSET(0x18AD6AF0)
-#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_GETVALUE_OFFSET UNITYSDK_OFFSET(0x18AD6C20)
-#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING__CCTOR_OFFSET UNITYSDK_OFFSET(0x18AE4D30)
-#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING__CTOR_OFFSET UNITYSDK_OFFSET(0x18AE4D20)
+#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_APPLY_OFFSET UNITYSDK_OFFSET(0x18FCBAA0)
+#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_EQUALS_OFFSET UNITYSDK_OFFSET(0x18FCECC0)
+#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_GETORIGINVALUE_OFFSET UNITYSDK_OFFSET(0x18FC1170)
+#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING_GETVALUE_OFFSET UNITYSDK_OFFSET(0x18FC12A0)
+#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING__CCTOR_OFFSET UNITYSDK_OFFSET(0x18FCF390)
+#define MIHOYOEMOTION_CLIPSHAPEMANAGER_CURVEBINDING__CTOR_OFFSET UNITYSDK_OFFSET(0x18FCF380)
 
 namespace miHoYoEmotion
 {
-	inline static constexpr unsigned int ClipShapeManager_CurveBinding_TypeDefinitionIndex = 36139;
+	inline static constexpr unsigned int ClipShapeManager_CurveBinding_TypeDefinitionIndex = 37159;
 
 	class ClipShapeManager_CurveBinding : public ::System::Object
 	{
 	public:
 		static ::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>** StaticGet_PROP_NAME_2_PROP_ID()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x26D00);
+			return (::System::Collections::Generic::Dictionary_2<::System::String*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x28730);
 		}
 		static ::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>** StaticGet_PROP_ID_2_PROP_NAME()
 		{
-			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x26D08);
+			return (::System::Collections::Generic::Dictionary_2<::System::Int32, ::System::String*>**)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x28738);
 		}
 		static ::UnityEngine::Vector3* StaticGet__tempEuler()
 		{
-			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x8F80);
+			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x92E0);
 		}
 		static ::UnityEngine::Vector3* StaticGet__tempScale()
 		{
-			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x8F8C);
+			return (::UnityEngine::Vector3*)Il2CppClass::FromTypeDefinitionIndex(ClipShapeManager_CurveBinding_TypeDefinitionIndex)->GetStaticField(0x92EC);
 		}
 		::miHoYoEmotion::ClipShapeManager_CurveBinding_BindingType bindingType; // 0x10
 		::UnityEngine::Transform* bindingTrans; // 0x18

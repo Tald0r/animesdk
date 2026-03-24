@@ -7,7 +7,7 @@ namespace UnityEngine { class GameObject; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LiveHouseSceneSpotStruct_TypeDefinitionIndex = 41202;
+	inline static constexpr unsigned int LiveHouseSceneSpotStruct_TypeDefinitionIndex = 59969;
 
 	struct alignas(8) LiveHouseSceneSpotStruct
 	{

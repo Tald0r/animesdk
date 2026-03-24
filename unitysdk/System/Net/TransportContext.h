@@ -7,8 +7,8 @@ namespace System::Collections::Generic { template <typename T> class IEnumerable
 namespace System::Security::Authentication::ExtendedProtection { class ChannelBinding; }
 namespace System::Security::Authentication::ExtendedProtection { class TokenBinding; }
 
-#define SYSTEM_NET_TRANSPORTCONTEXT_GETTLSTOKENBINDINGS_OFFSET UNITYSDK_OFFSET(0x182E4880)
-#define SYSTEM_NET_TRANSPORTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x182E48D0)
+#define SYSTEM_NET_TRANSPORTCONTEXT_GETTLSTOKENBINDINGS_OFFSET UNITYSDK_OFFSET(0x188F95D0)
+#define SYSTEM_NET_TRANSPORTCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x188F9620)
 
 namespace System::Net
 {

@@ -5,12 +5,12 @@
 namespace MoleMole::Battle { class ColliderEventDispatcher; }
 namespace System { template <typename T> class Action_1; }
 
-#define MOLEMOLE_BATTLE_CURVEMOVECOMPONENT_TRIGGERCONFIG_CONFIGCOLLIDER_METHOD_1_1F314C19CC343C6F_OFFSET UNITYSDK_OFFSET(0x8E94B30)
-#define MOLEMOLE_BATTLE_CURVEMOVECOMPONENT_TRIGGERCONFIG_CONFIGCOLLIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x8E94B20)
+#define MOLEMOLE_BATTLE_CURVEMOVECOMPONENT_TRIGGERCONFIG_CONFIGCOLLIDER_METHOD_1_1F314C19CC343C6F_OFFSET UNITYSDK_OFFSET(0x78E3770)
+#define MOLEMOLE_BATTLE_CURVEMOVECOMPONENT_TRIGGERCONFIG_CONFIGCOLLIDER__CTOR_OFFSET UNITYSDK_OFFSET(0x78E3760)
 
 namespace MoleMole::Battle
 {
-	inline static constexpr unsigned int CurveMoveComponent_TriggerConfig_ConfigCollider_TypeDefinitionIndex = 46846;
+	inline static constexpr unsigned int CurveMoveComponent_TriggerConfig_ConfigCollider_TypeDefinitionIndex = 59126;
 
 	class CurveMoveComponent_TriggerConfig_ConfigCollider : public ::System::Object
 	{

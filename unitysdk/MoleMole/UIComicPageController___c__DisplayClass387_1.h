@@ -5,12 +5,12 @@
 namespace MoleMole { class UIComicPageController___c__DisplayClass387_0; }
 namespace MoleMole::Comic { class MonoComicDecorateEventBase; }
 
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_1__CTOR_OFFSET UNITYSDK_OFFSET(0xD046200)
-#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_1__HIDEEVENT_B__1_OFFSET UNITYSDK_OFFSET(0xD046210)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_1__CTOR_OFFSET UNITYSDK_OFFSET(0xDDD9210)
+#define MOLEMOLE_UICOMICPAGECONTROLLER___C__DISPLAYCLASS387_1__HIDEEVENT_B__1_OFFSET UNITYSDK_OFFSET(0xDDD9220)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIComicPageController___c__DisplayClass387_1_TypeDefinitionIndex = 45644;
+	inline static constexpr unsigned int UIComicPageController___c__DisplayClass387_1_TypeDefinitionIndex = 62544;
 
 	class UIComicPageController___c__DisplayClass387_1 : public ::System::Object
 	{

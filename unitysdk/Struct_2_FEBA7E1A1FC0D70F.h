@@ -6,7 +6,7 @@ class Class_2_9E3E3CDA608A4F58;
 namespace System { class Action; }
 namespace System { class String; }
 
-inline static constexpr unsigned int Struct_2_FEBA7E1A1FC0D70F_TypeDefinitionIndex = 76442;
+inline static constexpr unsigned int Struct_2_FEBA7E1A1FC0D70F_TypeDefinitionIndex = 62023;
 
 struct alignas(8) Struct_2_FEBA7E1A1FC0D70F
 {

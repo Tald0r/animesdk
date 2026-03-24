@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ReportErrorCode_TypeDefinitionIndex = 43336;
+	inline static constexpr unsigned int ReportErrorCode_TypeDefinitionIndex = 41807;
 
 	enum class ReportErrorCode : ::System::Int32
 	{

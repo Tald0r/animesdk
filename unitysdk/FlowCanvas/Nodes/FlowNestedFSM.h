@@ -5,13 +5,13 @@
 namespace NodeCanvas::StateMachines { class FSM; }
 namespace NodeCanvas::StateMachines { class IState; }
 
-#define FLOWCANVAS_NODES_FLOWNESTEDFSM_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x19C01500)
-#define FLOWCANVAS_NODES_FLOWNESTEDFSM__CTOR_OFFSET UNITYSDK_OFFSET(0x19C01590)
-#define FLOWCANVAS_NODES_FLOWNESTEDFSM__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x19C01620)
+#define FLOWCANVAS_NODES_FLOWNESTEDFSM_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1A1C0250)
+#define FLOWCANVAS_NODES_FLOWNESTEDFSM__CTOR_OFFSET UNITYSDK_OFFSET(0x1A1C02E0)
+#define FLOWCANVAS_NODES_FLOWNESTEDFSM__REGISTERPORTS_B__0_0_OFFSET UNITYSDK_OFFSET(0x1A1C0370)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int FlowNestedFSM_TypeDefinitionIndex = 26913;
+	inline static constexpr unsigned int FlowNestedFSM_TypeDefinitionIndex = 26128;
 
 	class FlowNestedFSM : public ::FlowCanvas::Nodes::FlowNestedBase_1<::NodeCanvas::StateMachines::FSM*>
 	{

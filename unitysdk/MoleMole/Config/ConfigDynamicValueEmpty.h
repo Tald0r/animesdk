@@ -3,12 +3,12 @@
 #include "unitysdk/MoleMole/Config/ConfigDynamicValue.h"
 #include "unitysdk/Struct_2_A47ACAABA9AAFE92.h"
 
-#define MOLEMOLE_CONFIG_CONFIGDYNAMICVALUEEMPTY_TOUNIONVALUE_OFFSET UNITYSDK_OFFSET(0x14182F60)
-#define MOLEMOLE_CONFIG_CONFIGDYNAMICVALUEEMPTY__CTOR_OFFSET UNITYSDK_OFFSET(0x14183030)
+#define MOLEMOLE_CONFIG_CONFIGDYNAMICVALUEEMPTY_TOUNIONVALUE_OFFSET UNITYSDK_OFFSET(0xBAEF8B0)
+#define MOLEMOLE_CONFIG_CONFIGDYNAMICVALUEEMPTY__CTOR_OFFSET UNITYSDK_OFFSET(0xBAEF980)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigDynamicValueEmpty_TypeDefinitionIndex = 61122;
+	inline static constexpr unsigned int ConfigDynamicValueEmpty_TypeDefinitionIndex = 53696;
 
 	class ConfigDynamicValueEmpty : public ::MoleMole::Config::ConfigDynamicValue
 	{

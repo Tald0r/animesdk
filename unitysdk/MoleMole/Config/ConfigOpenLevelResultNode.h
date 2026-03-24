@@ -4,20 +4,20 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGOPENLEVELRESULTNODE_COMMITVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x8A04410)
-#define MOLEMOLE_CONFIG_CONFIGOPENLEVELRESULTNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x8A04480)
-#define MOLEMOLE_CONFIG_CONFIGOPENLEVELRESULTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x8A04510)
+#define MOLEMOLE_CONFIG_CONFIGOPENLEVELRESULTNODE_COMMITVALUECHANGED_OFFSET UNITYSDK_OFFSET(0x10A9D0C0)
+#define MOLEMOLE_CONFIG_CONFIGOPENLEVELRESULTNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x10A9D130)
+#define MOLEMOLE_CONFIG_CONFIGOPENLEVELRESULTNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x10A9D1C0)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigOpenLevelResultNode_TypeDefinitionIndex = 60425;
+	inline static constexpr unsigned int ConfigOpenLevelResultNode_TypeDefinitionIndex = 39387;
 
 	class ConfigOpenLevelResultNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{
 	public:
-		::System::Boolean IsAutoCommit; // 0x18
-		::System::Boolean IsCommitLater; // 0x19
-		::System::Boolean IsWarmupUI; // 0x1A
+		::System::Boolean IsCommitLater; // 0x18
+		::System::Boolean IsWarmupUI; // 0x19
+		::System::Boolean IsAutoCommit; // 0x1A
 
 		::System::Void _ctor()
 		{

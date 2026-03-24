@@ -6,7 +6,7 @@ namespace UnityEngine { class GameObject; }
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int DiceInfo_TypeDefinitionIndex = 55150;
+	inline static constexpr unsigned int DiceInfo_TypeDefinitionIndex = 46933;
 
 	struct alignas(8) DiceInfo
 	{

@@ -6,16 +6,16 @@ namespace MoleMole::Config { class ConfigCommonEntityAnimEvents; }
 namespace System { class Action; }
 namespace System { class String; }
 
-#define CLASS_1_5E43193B7E7BBE0F_CLASS_1_26ABF817414D0836_METHOD_1_2D459E0C7BA466A7_OFFSET UNITYSDK_OFFSET(0x7ACAAE0)
-#define CLASS_1_5E43193B7E7BBE0F_CLASS_1_26ABF817414D0836__CTOR_OFFSET UNITYSDK_OFFSET(0x7ACAAD0)
+#define CLASS_1_5E43193B7E7BBE0F_CLASS_1_26ABF817414D0836_METHOD_1_2D459E0C7BA466A7_OFFSET UNITYSDK_OFFSET(0x88B3980)
+#define CLASS_1_5E43193B7E7BBE0F_CLASS_1_26ABF817414D0836__CTOR_OFFSET UNITYSDK_OFFSET(0x88B3970)
 
-inline static constexpr unsigned int Class_1_5E43193B7E7BBE0F_Class_1_26ABF817414D0836_TypeDefinitionIndex = 44930;
+inline static constexpr unsigned int Class_1_5E43193B7E7BBE0F_Class_1_26ABF817414D0836_TypeDefinitionIndex = 57376;
 
 class Class_1_5E43193B7E7BBE0F_Class_1_26ABF817414D0836 : public ::System::Object
 {
 public:
-	::System::Action* Field_1_1; // 0x10
-	::System::String* Field_1_0; // 0x18
+	::System::String* Field_1_0; // 0x10
+	::System::Action* Field_1_1; // 0x18
 
 	::System::Void _ctor()
 	{

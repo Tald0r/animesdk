@@ -6,19 +6,19 @@
 namespace MoleMole { class UISuibianTempleManageDetailPageController; }
 namespace UnityEngine { class Transform; }
 
-#define MOLEMOLE_UISUIBIANTEMPLEMANAGEDETAILPAGECONTROLLER___C__DISPLAYCLASS33_0__CTOR_OFFSET UNITYSDK_OFFSET(0xAE7D860)
-#define MOLEMOLE_UISUIBIANTEMPLEMANAGEDETAILPAGECONTROLLER___C__DISPLAYCLASS33_0__REFRESHBG_B__1_OFFSET UNITYSDK_OFFSET(0xAE7D870)
-#define MOLEMOLE_UISUIBIANTEMPLEMANAGEDETAILPAGECONTROLLER___C__DISPLAYCLASS33_0__REFRESHBG_G__PLAYFADEIN_0_OFFSET UNITYSDK_OFFSET(0xAE7D8B0)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEDETAILPAGECONTROLLER___C__DISPLAYCLASS33_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD2BF760)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEDETAILPAGECONTROLLER___C__DISPLAYCLASS33_0__REFRESHBG_B__1_OFFSET UNITYSDK_OFFSET(0xD2BF770)
+#define MOLEMOLE_UISUIBIANTEMPLEMANAGEDETAILPAGECONTROLLER___C__DISPLAYCLASS33_0__REFRESHBG_G__PLAYFADEIN_0_OFFSET UNITYSDK_OFFSET(0xD2BF7B0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISuibianTempleManageDetailPageController___c__DisplayClass33_0_TypeDefinitionIndex = 41669;
+	inline static constexpr unsigned int UISuibianTempleManageDetailPageController___c__DisplayClass33_0_TypeDefinitionIndex = 72150;
 
 	class UISuibianTempleManageDetailPageController___c__DisplayClass33_0 : public ::System::Object
 	{
 	public:
-		::UnityEngine::Transform* oldBG; // 0x10
-		::MoleMole::UISuibianTempleManageDetailPageController* __4__this; // 0x18
+		::MoleMole::UISuibianTempleManageDetailPageController* __4__this; // 0x10
+		::UnityEngine::Transform* oldBG; // 0x18
 		::Enum_3_D3384FC764485EA3 to; // 0x20
 
 		::System::Void _ctor()

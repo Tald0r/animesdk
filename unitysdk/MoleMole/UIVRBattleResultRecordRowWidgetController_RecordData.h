@@ -6,11 +6,11 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_UIVRBATTLERESULTRECORDROWWIDGETCONTROLLER_RECORDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0x7C5A8B0)
+#define MOLEMOLE_UIVRBATTLERESULTRECORDROWWIDGETCONTROLLER_RECORDDATA__CTOR_OFFSET UNITYSDK_OFFSET(0xA6D10E0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVRBattleResultRecordRowWidgetController_RecordData_TypeDefinitionIndex = 47290;
+	inline static constexpr unsigned int UIVRBattleResultRecordRowWidgetController_RecordData_TypeDefinitionIndex = 58247;
 
 	class UIVRBattleResultRecordRowWidgetController_RecordData : public ::MoleMole::UIControllerContextBase
 	{

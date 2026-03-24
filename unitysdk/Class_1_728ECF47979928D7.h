@@ -6,9 +6,9 @@
 namespace Foundation { class AssetRequestCompleteDel; }
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 
-#define CLASS_1_728ECF47979928D7__CTOR_OFFSET UNITYSDK_OFFSET(0xCE37F10)
+#define CLASS_1_728ECF47979928D7__CTOR_OFFSET UNITYSDK_OFFSET(0x75138D0)
 
-inline static constexpr unsigned int Class_1_728ECF47979928D7_TypeDefinitionIndex = 79083;
+inline static constexpr unsigned int Class_1_728ECF47979928D7_TypeDefinitionIndex = 60106;
 
 class Class_1_728ECF47979928D7 : public ::System::Object
 {

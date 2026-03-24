@@ -2,11 +2,11 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/FlowNode.h"
 
-#define FLOWCANVAS_NODES_FLOWCONTROLNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x19C79070)
+#define FLOWCANVAS_NODES_FLOWCONTROLNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x1A21A810)
 
 namespace FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int FlowControlNode_TypeDefinitionIndex = 25683;
+	inline static constexpr unsigned int FlowControlNode_TypeDefinitionIndex = 26922;
 
 	class FlowControlNode : public ::FlowCanvas::FlowNode
 	{

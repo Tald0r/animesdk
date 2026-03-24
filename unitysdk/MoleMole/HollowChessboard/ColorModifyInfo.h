@@ -9,7 +9,7 @@
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int ColorModifyInfo_TypeDefinitionIndex = 65528;
+	inline static constexpr unsigned int ColorModifyInfo_TypeDefinitionIndex = 74717;
 
 	struct alignas(4) ColorModifyInfo
 	{

@@ -2,21 +2,20 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/System/Object.h"
 
-class Class_3_CFE95B82BD52EB3B;
 namespace MoleMole { class UIVoidFrontDetailWidgetController; }
 
-#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xCA8E550)
-#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___C__DISPLAYCLASS10_0__ONLEFTARROWBTNCLICKHANDLE_B__0_OFFSET UNITYSDK_OFFSET(0xCA8E560)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0x7914DC0)
+#define MOLEMOLE_UIVOIDFRONTDETAILWIDGETCONTROLLER___C__DISPLAYCLASS10_0__ONLEFTARROWBTNCLICKHANDLE_B__0_OFFSET UNITYSDK_OFFSET(0x7914DD0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIVoidFrontDetailWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 76983;
+	inline static constexpr unsigned int UIVoidFrontDetailWidgetController___c__DisplayClass10_0_TypeDefinitionIndex = 43758;
 
 	class UIVoidFrontDetailWidgetController___c__DisplayClass10_0 : public ::System::Object
 	{
 	public:
 		::MoleMole::UIVoidFrontDetailWidgetController* __4__this; // 0x10
-		::Class_3_CFE95B82BD52EB3B* prvNode; // 0x18
+		::System::Int32 nodeId; // 0x18
 
 		::System::Void _ctor()
 		{

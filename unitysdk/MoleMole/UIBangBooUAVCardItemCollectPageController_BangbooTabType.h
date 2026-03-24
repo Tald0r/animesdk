@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIBangBooUAVCardItemCollectPageController_BangbooTabType_TypeDefinitionIndex = 62193;
+	inline static constexpr unsigned int UIBangBooUAVCardItemCollectPageController_BangbooTabType_TypeDefinitionIndex = 73612;
 
 	enum class UIBangBooUAVCardItemCollectPageController_BangbooTabType : ::System::Int32
 	{

@@ -9,89 +9,89 @@ namespace System { template <typename T> class Action_1; }
 namespace System::Collections::Generic { template <typename T> class IEnumerable_1; }
 namespace System::Linq { template <typename T1, typename T2> class IGrouping_2; }
 
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A84D490)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__CORRECTDUPLICATEMODULEIDS_B__84_0_OFFSET UNITYSDK_OFFSET(0x1A84D630)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1A84D4D0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GETMODULES_B__62_0_OFFSET UNITYSDK_OFFSET(0x1A84D5F0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_HASMODULESWITHSAMEID_B__91_0_OFFSET UNITYSDK_OFFSET(0x1A84D770)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_HASMODULESWITHSAMEID_B__91_1_OFFSET UNITYSDK_OFFSET(0x1A84D7B0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_MODULESBYID_B__35_0_OFFSET UNITYSDK_OFFSET(0x1A84D520)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_MODULESBYID_B__35_1_OFFSET UNITYSDK_OFFSET(0x1A84D560)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_M_LASTMODULEID_B__12_0_OFFSET UNITYSDK_OFFSET(0x1A84D4E0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERENDPOINTRECURSIVEINPUTS_B__87_0_OFFSET UNITYSDK_OFFSET(0x1A84D700)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERENDPOINTRECURSIVEINPUTS_B__87_1_OFFSET UNITYSDK_OFFSET(0x1A84D720)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERMODULES_B__55_0_OFFSET UNITYSDK_OFFSET(0x1A84D570)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERMODULES_B__55_1_OFFSET UNITYSDK_OFFSET(0x1A84D5C0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__RESETALLMODULELINKS_B__85_0_OFFSET UNITYSDK_OFFSET(0x1A84D670)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__SAVEALLOUTPUTMANAGEDRESOURCES_B__93_0_OFFSET UNITYSDK_OFFSET(0x1A84D7F0)
-#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__UPDATEMODULESRECURSIVEINPUTS_B__88_0_OFFSET UNITYSDK_OFFSET(0x1A84D750)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AE2D0F0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__CORRECTDUPLICATEMODULEIDS_B__84_0_OFFSET UNITYSDK_OFFSET(0x1AE2D290)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__CTOR_OFFSET UNITYSDK_OFFSET(0x1AE2D130)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GETMODULES_B__62_0_OFFSET UNITYSDK_OFFSET(0x1AE2D250)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_HASMODULESWITHSAMEID_B__91_0_OFFSET UNITYSDK_OFFSET(0x1AE2D3D0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_HASMODULESWITHSAMEID_B__91_1_OFFSET UNITYSDK_OFFSET(0x1AE2D410)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_MODULESBYID_B__35_0_OFFSET UNITYSDK_OFFSET(0x1AE2D180)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_MODULESBYID_B__35_1_OFFSET UNITYSDK_OFFSET(0x1AE2D1C0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__GET_M_LASTMODULEID_B__12_0_OFFSET UNITYSDK_OFFSET(0x1AE2D140)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERENDPOINTRECURSIVEINPUTS_B__87_0_OFFSET UNITYSDK_OFFSET(0x1AE2D360)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERENDPOINTRECURSIVEINPUTS_B__87_1_OFFSET UNITYSDK_OFFSET(0x1AE2D380)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERMODULES_B__55_0_OFFSET UNITYSDK_OFFSET(0x1AE2D1D0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__REORDERMODULES_B__55_1_OFFSET UNITYSDK_OFFSET(0x1AE2D220)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__RESETALLMODULELINKS_B__85_0_OFFSET UNITYSDK_OFFSET(0x1AE2D2D0)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__SAVEALLOUTPUTMANAGEDRESOURCES_B__93_0_OFFSET UNITYSDK_OFFSET(0x1AE2D450)
+#define FLUFFYUNDERWARE_CURVY_GENERATOR_CURVYGENERATOR___C__UPDATEMODULESRECURSIVEINPUTS_B__88_0_OFFSET UNITYSDK_OFFSET(0x1AE2D3B0)
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int CurvyGenerator___c_TypeDefinitionIndex = 35792;
+	inline static constexpr unsigned int CurvyGenerator___c_TypeDefinitionIndex = 36812;
 
 	class CurvyGenerator___c : public ::System::Object
 	{
 	public:
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>** StaticGet___9__55_1()
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>** StaticGet___9__88_0()
 		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25150);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__12_0()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25158);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>** StaticGet___9__87_1()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25160);
-		}
-		static ::System::Func_2<::System::Linq::IGrouping_2<::System::Int32, ::FluffyUnderware::Curvy::Generator::CGModule*>*, ::System::Boolean>** StaticGet___9__91_1()
-		{
-			return (::System::Func_2<::System::Linq::IGrouping_2<::System::Int32, ::FluffyUnderware::Curvy::Generator::CGModule*>*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25168);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>** StaticGet___9__93_0()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25170);
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26B80);
 		}
 		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>** StaticGet___9__87_0()
 		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25178);
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26B88);
 		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>** StaticGet___9__88_0()
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>** StaticGet___9__93_0()
 		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModuleInputSlot*, ::System::Collections::Generic::IEnumerable_1<::FluffyUnderware::Curvy::Generator::CGModule*>*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25180);
-		}
-		static ::System::Action_1<::FluffyUnderware::Curvy::Generator::CGModule*>** StaticGet___9__85_0()
-		{
-			return (::System::Action_1<::FluffyUnderware::Curvy::Generator::CGModule*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25188);
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26B90);
 		}
 		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>** StaticGet___9__55_0()
 		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25190);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__84_0()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x25198);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::FluffyUnderware::Curvy::Generator::CGModule*>** StaticGet___9__35_1()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::FluffyUnderware::Curvy::Generator::CGModule*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x251A0);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>** StaticGet___9__62_0()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x251A8);
-		}
-		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__91_0()
-		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x251B0);
-		}
-		static ::FluffyUnderware::Curvy::Generator::CurvyGenerator___c** StaticGet___9()
-		{
-			return (::FluffyUnderware::Curvy::Generator::CurvyGenerator___c**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x251B8);
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26B98);
 		}
 		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__35_0()
 		{
-			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x251C0);
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BA0);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>** StaticGet___9__87_1()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BA8);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::FluffyUnderware::Curvy::Generator::CGModule*>** StaticGet___9__35_1()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::FluffyUnderware::Curvy::Generator::CGModule*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BB0);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>** StaticGet___9__62_0()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BB8);
+		}
+		static ::System::Action_1<::FluffyUnderware::Curvy::Generator::CGModule*>** StaticGet___9__85_0()
+		{
+			return (::System::Action_1<::FluffyUnderware::Curvy::Generator::CGModule*>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BC0);
+		}
+		static ::System::Func_2<::System::Linq::IGrouping_2<::System::Int32, ::FluffyUnderware::Curvy::Generator::CGModule*>*, ::System::Boolean>** StaticGet___9__91_1()
+		{
+			return (::System::Func_2<::System::Linq::IGrouping_2<::System::Int32, ::FluffyUnderware::Curvy::Generator::CGModule*>*, ::System::Boolean>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BC8);
+		}
+		static ::FluffyUnderware::Curvy::Generator::CurvyGenerator___c** StaticGet___9()
+		{
+			return (::FluffyUnderware::Curvy::Generator::CurvyGenerator___c**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BD0);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__91_0()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BD8);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__12_0()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BE0);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>** StaticGet___9__55_1()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Single>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BE8);
+		}
+		static ::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>** StaticGet___9__84_0()
+		{
+			return (::System::Func_2<::FluffyUnderware::Curvy::Generator::CGModule*, ::System::Int32>**)Il2CppClass::FromTypeDefinitionIndex(CurvyGenerator___c_TypeDefinitionIndex)->GetStaticField(0x26BF0);
 		}
 
 		static ::System::Void _cctor()

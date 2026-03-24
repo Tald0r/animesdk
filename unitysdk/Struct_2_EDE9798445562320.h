@@ -5,21 +5,21 @@
 
 namespace System { class String; }
 
-#define STRUCT_2_EDE9798445562320_METHOD_2_9310B2948ECB8752_OFFSET UNITYSDK_OFFSET(0x6F46AD0)
-#define STRUCT_2_EDE9798445562320__CCTOR_OFFSET UNITYSDK_OFFSET(0x6F46A80)
-#define STRUCT_2_EDE9798445562320__CTOR_OFFSET UNITYSDK_OFFSET(0x318850)
+#define STRUCT_2_EDE9798445562320_METHOD_2_9310B2948ECB8752_OFFSET UNITYSDK_OFFSET(0x98D6410)
+#define STRUCT_2_EDE9798445562320__CCTOR_OFFSET UNITYSDK_OFFSET(0x98D63C0)
+#define STRUCT_2_EDE9798445562320__CTOR_OFFSET UNITYSDK_OFFSET(0x37D3D0)
 
-inline static constexpr unsigned int Struct_2_EDE9798445562320_TypeDefinitionIndex = 37416;
+inline static constexpr unsigned int Struct_2_EDE9798445562320_TypeDefinitionIndex = 67113;
 
 struct alignas(8) Struct_2_EDE9798445562320
 {
 	static ::System::String** StaticGet_Field_2_4()
 	{
-		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_EDE9798445562320_TypeDefinitionIndex)->GetStaticField(0x2D470);
+		return (::System::String**)Il2CppClass::FromTypeDefinitionIndex(Struct_2_EDE9798445562320_TypeDefinitionIndex)->GetStaticField(0x2E8F0);
 	}
 	static ::System::UInt32* StaticGet_Field_2_5()
 	{
-		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_EDE9798445562320_TypeDefinitionIndex)->GetStaticField(0xA370);
+		return (::System::UInt32*)Il2CppClass::FromTypeDefinitionIndex(Struct_2_EDE9798445562320_TypeDefinitionIndex)->GetStaticField(0xA840);
 	}
 	::System::String* Field_2_0; // 0x10
 	::System::Int32 Field_2_1; // 0x18

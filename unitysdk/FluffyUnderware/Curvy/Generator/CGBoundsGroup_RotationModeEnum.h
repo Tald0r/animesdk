@@ -3,7 +3,7 @@
 
 namespace FluffyUnderware::Curvy::Generator
 {
-	inline static constexpr unsigned int CGBoundsGroup_RotationModeEnum_TypeDefinitionIndex = 35728;
+	inline static constexpr unsigned int CGBoundsGroup_RotationModeEnum_TypeDefinitionIndex = 36748;
 
 	enum class CGBoundsGroup_RotationModeEnum : ::System::Int32
 	{

@@ -5,12 +5,12 @@
 
 namespace MoleMole { class UIAutoBattleRuleDialogPopWindowController; }
 
-#define MOLEMOLE_UIAUTOBATTLERULEDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xA4CE1B0)
-#define MOLEMOLE_UIAUTOBATTLERULEDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__SETUPTABS_B__0_OFFSET UNITYSDK_OFFSET(0xA4CF280)
+#define MOLEMOLE_UIAUTOBATTLERULEDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__CTOR_OFFSET UNITYSDK_OFFSET(0xD247660)
+#define MOLEMOLE_UIAUTOBATTLERULEDIALOGPOPWINDOWCONTROLLER___C__DISPLAYCLASS10_0__SETUPTABS_B__0_OFFSET UNITYSDK_OFFSET(0xD248720)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIAutoBattleRuleDialogPopWindowController___c__DisplayClass10_0_TypeDefinitionIndex = 55349;
+	inline static constexpr unsigned int UIAutoBattleRuleDialogPopWindowController___c__DisplayClass10_0_TypeDefinitionIndex = 50907;
 
 	class UIAutoBattleRuleDialogPopWindowController___c__DisplayClass10_0 : public ::System::Object
 	{

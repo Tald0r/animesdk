@@ -4,9 +4,9 @@
 
 namespace MoleMole::Config { class SceneConfigRuntimeData; }
 
-#define CLASS_1_71693CDEFBE890AD_METHOD_1_07F650FF3B9ECF6C_OFFSET UNITYSDK_OFFSET(0xB95FBD0)
+#define CLASS_1_71693CDEFBE890AD_METHOD_1_07F650FF3B9ECF6C_OFFSET UNITYSDK_OFFSET(0x9359110)
 
-inline static constexpr unsigned int Class_1_71693CDEFBE890AD_TypeDefinitionIndex = 47249;
+inline static constexpr unsigned int Class_1_71693CDEFBE890AD_TypeDefinitionIndex = 61468;
 
 class Class_1_71693CDEFBE890AD : public ::System::Object
 {

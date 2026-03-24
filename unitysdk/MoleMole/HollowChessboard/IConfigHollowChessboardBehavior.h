@@ -6,7 +6,7 @@ namespace MoleMole::HollowChessboard { class HollowEntity; }
 
 namespace MoleMole::HollowChessboard
 {
-	inline static constexpr unsigned int IConfigHollowChessboardBehavior_TypeDefinitionIndex = 74390;
+	inline static constexpr unsigned int IConfigHollowChessboardBehavior_TypeDefinitionIndex = 78797;
 
 	class IConfigHollowChessboardBehavior
 	{

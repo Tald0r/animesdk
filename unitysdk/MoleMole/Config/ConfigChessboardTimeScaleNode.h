@@ -5,12 +5,12 @@
 class Class_1_D72537470FC2F779;
 namespace UnityEngine { class AnimationCurve; }
 
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDTIMESCALENODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x804AA20)
-#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDTIMESCALENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x804AB00)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDTIMESCALENODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x9CFD450)
+#define MOLEMOLE_CONFIG_CONFIGCHESSBOARDTIMESCALENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9CFD530)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigChessboardTimeScaleNode_TypeDefinitionIndex = 45704;
+	inline static constexpr unsigned int ConfigChessboardTimeScaleNode_TypeDefinitionIndex = 63595;
 
 	class ConfigChessboardTimeScaleNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

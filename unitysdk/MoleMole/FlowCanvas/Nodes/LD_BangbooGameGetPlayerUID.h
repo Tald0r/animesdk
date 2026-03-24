@@ -2,12 +2,12 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/FlowCanvas/Nodes/PureFunctionNode_1.h"
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMEGETPLAYERUID_INVOKE_OFFSET UNITYSDK_OFFSET(0x82D29A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMEGETPLAYERUID__CTOR_OFFSET UNITYSDK_OFFSET(0x82D2A00)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMEGETPLAYERUID_INVOKE_OFFSET UNITYSDK_OFFSET(0xA38CBC0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LD_BANGBOOGAMEGETPLAYERUID__CTOR_OFFSET UNITYSDK_OFFSET(0xA38CC20)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LD_BangbooGameGetPlayerUID_TypeDefinitionIndex = 73266;
+	inline static constexpr unsigned int LD_BangbooGameGetPlayerUID_TypeDefinitionIndex = 63809;
 
 	class LD_BangbooGameGetPlayerUID : public ::FlowCanvas::Nodes::PureFunctionNode_1<::System::UInt32>
 	{

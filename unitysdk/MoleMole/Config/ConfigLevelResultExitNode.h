@@ -4,12 +4,12 @@
 
 class Class_1_D72537470FC2F779;
 
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTEXITNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x84A9AB0)
-#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTEXITNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x84A9B40)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTEXITNODE_GETUIANIMATIONNODE_OFFSET UNITYSDK_OFFSET(0x95018D0)
+#define MOLEMOLE_CONFIG_CONFIGLEVELRESULTEXITNODE__CTOR_OFFSET UNITYSDK_OFFSET(0x9501960)
 
 namespace MoleMole::Config
 {
-	inline static constexpr unsigned int ConfigLevelResultExitNode_TypeDefinitionIndex = 67499;
+	inline static constexpr unsigned int ConfigLevelResultExitNode_TypeDefinitionIndex = 76951;
 
 	class ConfigLevelResultExitNode : public ::MoleMole::Config::ConfigUIBaseActionNode
 	{

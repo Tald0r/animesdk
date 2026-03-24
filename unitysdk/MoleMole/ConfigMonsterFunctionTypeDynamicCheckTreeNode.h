@@ -7,19 +7,19 @@ class Class_1_3D452FA003157C19_Class_1_3B777373E9B193FC;
 class Class_1_663AFC2250EC21C9;
 namespace System { class String; }
 
-#define MOLEMOLE_CONFIGMONSTERFUNCTIONTYPEDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0x15ED55A0)
-#define MOLEMOLE_CONFIGMONSTERFUNCTIONTYPEDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0x15ED5650)
+#define MOLEMOLE_CONFIGMONSTERFUNCTIONTYPEDYNAMICCHECKTREENODE_CREATE_OFFSET UNITYSDK_OFFSET(0xB5A2160)
+#define MOLEMOLE_CONFIGMONSTERFUNCTIONTYPEDYNAMICCHECKTREENODE__CTOR_OFFSET UNITYSDK_OFFSET(0xB5A2210)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigMonsterFunctionTypeDynamicCheckTreeNode_TypeDefinitionIndex = 42325;
+	inline static constexpr unsigned int ConfigMonsterFunctionTypeDynamicCheckTreeNode_TypeDefinitionIndex = 39601;
 
 	class ConfigMonsterFunctionTypeDynamicCheckTreeNode : public ::MoleMole::ConfigBaseDynamicCheckTreeNode
 	{
 	public:
 		::Il2CppArray<::System::String*>* AnimatorZoneTags; // 0x10
-		::MoleMole::Config::MonsterFunctionType MonsterFunctionType; // 0x18
-		::System::Int32 MonsterCount; // 0x1C
+		::System::Int32 MonsterCount; // 0x18
+		::MoleMole::Config::MonsterFunctionType MonsterFunctionType; // 0x1C
 
 		::System::Void _ctor()
 		{

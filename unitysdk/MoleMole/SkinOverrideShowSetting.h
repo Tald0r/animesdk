@@ -4,11 +4,11 @@
 
 namespace MoleMole { class LightOverrideShowSetting; }
 
-#define MOLEMOLE_SKINOVERRIDESHOWSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0x8FA1130)
+#define MOLEMOLE_SKINOVERRIDESHOWSETTING__CTOR_OFFSET UNITYSDK_OFFSET(0xC32D4D0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int SkinOverrideShowSetting_TypeDefinitionIndex = 73334;
+	inline static constexpr unsigned int SkinOverrideShowSetting_TypeDefinitionIndex = 55450;
 
 	class SkinOverrideShowSetting : public ::System::Object
 	{

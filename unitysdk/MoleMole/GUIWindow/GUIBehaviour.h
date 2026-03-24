@@ -4,20 +4,20 @@
 
 namespace System { class Action; }
 
-#define MOLEMOLE_GUIWINDOW_GUIBEHAVIOUR_GET_INS_OFFSET UNITYSDK_OFFSET(0x8B0B620)
-#define MOLEMOLE_GUIWINDOW_GUIBEHAVIOUR_ONGUI_OFFSET UNITYSDK_OFFSET(0x8B0B7E0)
-#define MOLEMOLE_GUIWINDOW_GUIBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0x8B0B850)
+#define MOLEMOLE_GUIWINDOW_GUIBEHAVIOUR_GET_INS_OFFSET UNITYSDK_OFFSET(0xB1903B0)
+#define MOLEMOLE_GUIWINDOW_GUIBEHAVIOUR_ONGUI_OFFSET UNITYSDK_OFFSET(0xB190570)
+#define MOLEMOLE_GUIWINDOW_GUIBEHAVIOUR__CTOR_OFFSET UNITYSDK_OFFSET(0xB1905E0)
 
 namespace MoleMole::GUIWindow
 {
-	inline static constexpr unsigned int GUIBehaviour_TypeDefinitionIndex = 68157;
+	inline static constexpr unsigned int GUIBehaviour_TypeDefinitionIndex = 45714;
 
 	class GUIBehaviour : public ::UnityEngine::MonoBehaviour
 	{
 	public:
 		static ::MoleMole::GUIWindow::GUIBehaviour** StaticGet_Field_5_0()
 		{
-			return (::MoleMole::GUIWindow::GUIBehaviour**)Il2CppClass::FromTypeDefinitionIndex(GUIBehaviour_TypeDefinitionIndex)->GetStaticField(0x3A4D0);
+			return (::MoleMole::GUIWindow::GUIBehaviour**)Il2CppClass::FromTypeDefinitionIndex(GUIBehaviour_TypeDefinitionIndex)->GetStaticField(0x3D240);
 		}
 		::System::Action* onGUI; // 0x18
 

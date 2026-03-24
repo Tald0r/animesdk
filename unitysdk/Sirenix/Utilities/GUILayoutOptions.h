@@ -6,34 +6,34 @@ namespace Sirenix::Utilities { class GUILayoutOptions_GUILayoutOptionsInstance; 
 namespace System::Collections::Generic { template <typename T1, typename T2> class Dictionary_2; }
 namespace UnityEngine { class GUILayoutOption; }
 
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_EXPANDHEIGHT_OFFSET UNITYSDK_OFFSET(0x1A8E9E40)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_EXPANDWIDTH_OFFSET UNITYSDK_OFFSET(0x1A8E9F20)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_HEIGHT_OFFSET UNITYSDK_OFFSET(0x1A8E9AD0)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x1A8E9B80)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MAXWIDTH_OFFSET UNITYSDK_OFFSET(0x1A8E9C30)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MINHEIGHT_OFFSET UNITYSDK_OFFSET(0x1A8E9D90)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MINWIDTH_OFFSET UNITYSDK_OFFSET(0x1A8E9CE0)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_WIDTH_OFFSET UNITYSDK_OFFSET(0x1A8E9A10)
-#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1A8E9840)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_EXPANDHEIGHT_OFFSET UNITYSDK_OFFSET(0x1AEC3220)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_EXPANDWIDTH_OFFSET UNITYSDK_OFFSET(0x1AEC3300)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_HEIGHT_OFFSET UNITYSDK_OFFSET(0x1AEC2EB0)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MAXHEIGHT_OFFSET UNITYSDK_OFFSET(0x1AEC2F60)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MAXWIDTH_OFFSET UNITYSDK_OFFSET(0x1AEC3010)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MINHEIGHT_OFFSET UNITYSDK_OFFSET(0x1AEC3170)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_MINWIDTH_OFFSET UNITYSDK_OFFSET(0x1AEC30C0)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS_WIDTH_OFFSET UNITYSDK_OFFSET(0x1AEC2DF0)
+#define SIRENIX_UTILITIES_GUILAYOUTOPTIONS__CCTOR_OFFSET UNITYSDK_OFFSET(0x1AEC2C20)
 
 namespace Sirenix::Utilities
 {
-	inline static constexpr unsigned int GUILayoutOptions_TypeDefinitionIndex = 6437;
+	inline static constexpr unsigned int GUILayoutOptions_TypeDefinitionIndex = 6441;
 
 	class GUILayoutOptions : public ::System::Object
 	{
 	public:
 		static ::Il2CppArray<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*>** StaticGet_GUILayoutOptionsInstanceCache()
 		{
-			return (::Il2CppArray<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*>**)Il2CppClass::FromTypeDefinitionIndex(GUILayoutOptions_TypeDefinitionIndex)->GetStaticField(0x5900);
-		}
-		static ::System::Collections::Generic::Dictionary_2<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*>** StaticGet_GUILayoutOptionsCache()
-		{
-			return (::System::Collections::Generic::Dictionary_2<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*>**)Il2CppClass::FromTypeDefinitionIndex(GUILayoutOptions_TypeDefinitionIndex)->GetStaticField(0x5908);
+			return (::Il2CppArray<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*>**)Il2CppClass::FromTypeDefinitionIndex(GUILayoutOptions_TypeDefinitionIndex)->GetStaticField(0x5940);
 		}
 		static ::Il2CppArray<::UnityEngine::GUILayoutOption*>** StaticGet_EmptyGUIOptions()
 		{
-			return (::Il2CppArray<::UnityEngine::GUILayoutOption*>**)Il2CppClass::FromTypeDefinitionIndex(GUILayoutOptions_TypeDefinitionIndex)->GetStaticField(0x5910);
+			return (::Il2CppArray<::UnityEngine::GUILayoutOption*>**)Il2CppClass::FromTypeDefinitionIndex(GUILayoutOptions_TypeDefinitionIndex)->GetStaticField(0x5948);
+		}
+		static ::System::Collections::Generic::Dictionary_2<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*>** StaticGet_GUILayoutOptionsCache()
+		{
+			return (::System::Collections::Generic::Dictionary_2<::Sirenix::Utilities::GUILayoutOptions_GUILayoutOptionsInstance*, ::Il2CppArray<::UnityEngine::GUILayoutOption*>*>**)Il2CppClass::FromTypeDefinitionIndex(GUILayoutOptions_TypeDefinitionIndex)->GetStaticField(0x5950);
 		}
 		static ::System::Int32* StaticGet_CurrentCacheIndex()
 		{

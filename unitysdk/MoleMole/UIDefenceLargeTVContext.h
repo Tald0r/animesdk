@@ -2,19 +2,19 @@
 #include "unitysdk/unitysdk.h"
 #include "unitysdk/MoleMole/UIControllerContextBase.h"
 
-#define MOLEMOLE_UIDEFENCELARGETVCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0x95DD4E0)
+#define MOLEMOLE_UIDEFENCELARGETVCONTEXT__CTOR_OFFSET UNITYSDK_OFFSET(0xD5586A0)
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UIDefenceLargeTVContext_TypeDefinitionIndex = 68170;
+	inline static constexpr unsigned int UIDefenceLargeTVContext_TypeDefinitionIndex = 59433;
 
 	class UIDefenceLargeTVContext : public ::MoleMole::UIControllerContextBase
 	{
 	public:
 		::System::Int32 initPercent; // 0x28
-		::System::Boolean isLeftJustify; // 0x2C
-		::System::Boolean ShowNumber; // 0x2D
-		::System::Boolean needFlush; // 0x2E
+		::System::Boolean ShowNumber; // 0x2C
+		::System::Boolean needFlush; // 0x2D
+		::System::Boolean isLeftJustify; // 0x2E
 
 		::System::Void _ctor()
 		{

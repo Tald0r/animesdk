@@ -6,9 +6,9 @@ namespace System { class AsyncCallback; }
 namespace System { class IAsyncResult; }
 namespace System { class Object; }
 
-inline static constexpr unsigned int Class_3_B60F6C2F126D2E2F_5_TypeDefinitionIndex = 24464;
+inline static constexpr unsigned int Class_3_B60F6C2F126D2E2F_5_TypeDefinitionIndex = 25159;
 
-template <typename T1, typename T2, typename T3, typename T4, typename TResult>
+template <typename TVertex, typename TEdge>
 class Class_3_B60F6C2F126D2E2F_5 : public ::System::MulticastDelegate
 {
 public:

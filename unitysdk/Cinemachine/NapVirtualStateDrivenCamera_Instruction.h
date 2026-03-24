@@ -7,7 +7,7 @@ namespace System { class String; }
 
 namespace Cinemachine
 {
-	inline static constexpr unsigned int NapVirtualStateDrivenCamera_Instruction_TypeDefinitionIndex = 31026;
+	inline static constexpr unsigned int NapVirtualStateDrivenCamera_Instruction_TypeDefinitionIndex = 31978;
 
 	struct alignas(8) NapVirtualStateDrivenCamera_Instruction
 	{

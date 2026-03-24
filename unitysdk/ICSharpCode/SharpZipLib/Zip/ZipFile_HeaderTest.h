@@ -3,7 +3,7 @@
 
 namespace ICSharpCode::SharpZipLib::Zip
 {
-	inline static constexpr unsigned int ZipFile_HeaderTest_TypeDefinitionIndex = 6733;
+	inline static constexpr unsigned int ZipFile_HeaderTest_TypeDefinitionIndex = 6737;
 
 	enum class ZipFile_HeaderTest : ::System::Int32
 	{

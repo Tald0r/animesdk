@@ -3,7 +3,7 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int ConfigRhythmMoveBeatMap_BeatMap_BlockType_TypeDefinitionIndex = 58813;
+	inline static constexpr unsigned int ConfigRhythmMoveBeatMap_BeatMap_BlockType_TypeDefinitionIndex = 52948;
 
 	enum class ConfigRhythmMoveBeatMap_BeatMap_BlockType : ::System::Int32
 	{

@@ -4,12 +4,12 @@
 
 namespace System { class String; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCOUNTDOWNUI_ICONCHANGE_INVOKE_OFFSET UNITYSDK_OFFSET(0xEC754E0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDCOUNTDOWNUI_ICONCHANGE__CTOR_OFFSET UNITYSDK_OFFSET(0xEC75660)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCOUNTDOWNUI_ICONCHANGE_INVOKE_OFFSET UNITYSDK_OFFSET(0x7573FD0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDCOUNTDOWNUI_ICONCHANGE__CTOR_OFFSET UNITYSDK_OFFSET(0x7574150)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDCountDownUI_IconChange_TypeDefinitionIndex = 68959;
+	inline static constexpr unsigned int LDCountDownUI_IconChange_TypeDefinitionIndex = 69230;
 
 	class LDCountDownUI_IconChange : public ::FlowCanvas::Nodes::CallableActionNode_2<::System::String*, ::System::Boolean>
 	{

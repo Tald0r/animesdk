@@ -3,23 +3,23 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int LanguageType_TypeDefinitionIndex = 41076;
+	inline static constexpr unsigned int LanguageType_TypeDefinitionIndex = 49238;
 
 	enum class LanguageType : ::System::Int32
 	{
-		LanguageJp = 9,
-		LanguageEs = 6,
-		LanguageRu = 8,
 		LanguageTh = 11,
-		LanguageSc = 2,
-		LanguageTc = 3,
-		LanguageDe = 5,
 		LanguageId = 13,
+		LanguageTc = 3,
+		LanguageSc = 2,
+		LanguageDe = 5,
 		LanguageNone = 0,
-		LanguageKr = 10,
+		LanguageRu = 8,
 		LanguageEn = 1,
 		LanguagePt = 7,
-		LanguageFr = 4,
+		LanguageJp = 9,
 		LanguageVn = 12,
+		LanguageKr = 10,
+		LanguageEs = 6,
+		LanguageFr = 4,
 	};
 }

@@ -7,21 +7,21 @@
 namespace FlowCanvas { class FlowOutput; }
 namespace FlowCanvas { template <typename T> class ValueInput_1; }
 
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHIDEDAMAGEDISPLAY_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x8AF54A0)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHIDEDAMAGEDISPLAY_START_OFFSET UNITYSDK_OFFSET(0x8AF5610)
-#define MOLEMOLE_FLOWCANVAS_NODES_LDHIDEDAMAGEDISPLAY__CTOR_OFFSET UNITYSDK_OFFSET(0x8AF58C0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHIDEDAMAGEDISPLAY_REGISTERPORTS_OFFSET UNITYSDK_OFFSET(0x1164C1A0)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHIDEDAMAGEDISPLAY_START_OFFSET UNITYSDK_OFFSET(0x1164C310)
+#define MOLEMOLE_FLOWCANVAS_NODES_LDHIDEDAMAGEDISPLAY__CTOR_OFFSET UNITYSDK_OFFSET(0x1164C5C0)
 
 namespace MoleMole::FlowCanvas::Nodes
 {
-	inline static constexpr unsigned int LDHideDamageDisplay_TypeDefinitionIndex = 70221;
+	inline static constexpr unsigned int LDHideDamageDisplay_TypeDefinitionIndex = 60397;
 
 	class LDHideDamageDisplay : public ::FlowCanvas::Nodes::FlowControlNode
 	{
 	public:
 		::FlowCanvas::FlowOutput* _output; // 0xA8
 		::FlowCanvas::ValueInput_1<::System::Boolean>* hideBehitValueIput; // 0xB0
-		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* entityInput; // 0xB8
-		::FlowCanvas::ValueInput_1<::System::Boolean>* hideValueIput; // 0xC0
+		::FlowCanvas::ValueInput_1<::System::Boolean>* hideValueIput; // 0xB8
+		::FlowCanvas::ValueInput_1<::MoleMole::EntityHandle>* entityInput; // 0xC0
 
 		::System::Void _ctor()
 		{

@@ -3,11 +3,11 @@
 
 namespace MoleMole
 {
-	inline static constexpr unsigned int UISafeAreaHandler_Enum_3_D5D7F86936BE5D0C_TypeDefinitionIndex = 60622;
+	inline static constexpr unsigned int UISafeAreaHandler_Enum_3_D5D7F86936BE5D0C_TypeDefinitionIndex = 57785;
 
 	enum class UISafeAreaHandler_Enum_3_D5D7F86936BE5D0C : ::System::Int32
 	{
-		NoPadding = 1,
 		UseGlobalPadding = 0,
+		NoPadding = 1,
 	};
 }

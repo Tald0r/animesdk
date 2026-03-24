@@ -3,7 +3,7 @@
 
 namespace Foundation
 {
-	inline static constexpr unsigned int ICustomAction_3_TypeDefinitionIndex = 7703;
+	inline static constexpr unsigned int ICustomAction_3_TypeDefinitionIndex = 8022;
 
 	template <typename TArgs, typename TArgs2, typename TArgs3>
 	class ICustomAction_3
